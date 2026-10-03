@@ -1,22 +1,31 @@
-// Module ID: 15449
-// Function ID: 15450
+// Module ID: 15506
+// Function ID: 15507
 // Name: BackupScreen
-// Dependencies: [5, 32, 19, 21, 15447, 4841, 1115, 6549, 15442, 15448, 15445, 2]
-// Exports: default
+// Dependencies: [5, 32, 19, 21, 15504, 4886, 1126, 558, 576, 6432, 15505, 15499, 15500, 2]
 
-// Module 15449 (BackupScreen)
-import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 6549 */;
-import MfaOptionScreenDefault from "MfaOptionScreen" /* 15442 */;
-import buttonDefault from "button" /* 15445 */;
-import MFA from "MFA" /* 15447 */;
-import ClipboardCopyInputDefault from "ClipboardCopyInput" /* 15448 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 15506 (BackupScreen)
+import intl6 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 6432 */;
+import MFA from "MFA" /* 15504 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+const require = globalThis.__r;
+let c6, c7, closure_3, importDefault;
+
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let tmp4;
+const ClipboardCopyInputDefault = tmp4(15505);
+function removeDashes(str) {
+  return str.replace(/-/g, "");
+}
 function isValidClipboardCode(arg0) {
   let tmp3 = arg0.length >= MFA.BACKUP_CODE_MIN_LENGTH;
   if (tmp3) {
@@ -24,30 +33,329 @@ function isValidClipboardCode(arg0) {
   }
   return tmp3;
 }
-const jsxProd = fn(21);
-({ jsxs: metroRequire, jsx: closure_7, Fragment: closure_8 } = jsxProd);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/mfa/native/screens/BackupScreen.tsx");
-
-export default function BackupScreen(finish) {
+function getFormattedExplainer(first1) {
+  let items;
+  let items1;
+  let obj3;
+  const Text = Text_Text.Text;
+  const tmp = metroRequire;
+  if (first1 > 0) {
+    const obj = { variant: "text-md/normal", children: items };
+    const intl = tmp2(1126).intl;
+    items = [intl.string(intl6.t.RRtlLg), ];
+    const intl2 = tmp2(1126).intl;
+    const obj2 = { countdown: first1 };
+    items[1] = intl2.format(intl6.t.tsWkAE, obj2);
+    obj3 = obj;
+  } else {
+    obj3 = { variant: "text-md/normal", children: items1 };
+    const intl3 = tmp2(1126).intl;
+    items1 = [intl3.string(intl6.t.RRtlLg), ];
+    const intl4 = tmp2(1126).intl;
+    items1[1] = intl4.string(intl6.t.v3a6Pd);
+  }
+  return tmp(Text, obj3);
+}
+let _asyncToGenerator = _asyncToGenerator_mod;
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+({ jsxs: metroRequire, jsx: metroImportDefault, Fragment: metroImportAll } = Fragment);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_7;
+  let finish;
+  let first;
+  let mfaChallenge;
+  let obj3;
+  let obj4;
+  let tmp10;
+  let tmp12;
+  let tmp15;
+  let tmp16;
+  let tmp18;
+  let tmp19;
+  let tmp26;
+  let tmp27;
+  let tmp7;
+  const tmp = finish;
+  let obj = finish(576);
+  const cResult = obj.c(34);
+  ({ mfaChallenge, finish } = arg0);
+  const tmp4 = importDefault;
+  let obj2 = react;
+  const tmp5 = useWideAuthViewDefault();
+  [tmp7, importDefault] = _slicedToArray(react.useState(false), 2);
+  const tmp6 = _slicedToArray(react.useState(false), 2);
+  [dependencyMap, _asyncToGenerator] = react.useState("");
+  const tmp9 = _slicedToArray(react.useState(undefined), 2);
+  [tmp10, _slicedToArray] = tmp9;
+  const tmp11 = _slicedToArray(react.useState(false), 2);
+  [tmp12, react] = tmp11;
+  [first, closure_7] = react.useState(10);
+  if (cResult[0] !== first) {
+    const fn = function f() {
+      let closure_0;
+      if (first > 0) {
+        const _setTimeout = setTimeout;
+        const timeout = setTimeout(() => {
+          closure_1_7((arg0) => arg0 - 1);
+        }, 1000);
+        return () => clearTimeout(closure_0);
+      }
+    };
+    const items = [first];
+    cResult[0] = first;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp16 = items;
+    tmp15 = fn;
+  } else {
+    tmp15 = cResult[1];
+    tmp16 = cResult[2];
+  }
+  const effect = obj2.useEffect(tmp15, tmp16);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor(arg0) {
+        closure_3(arg0);
+        _slicedToArray(undefined);
+      }
+    }
+    cResult[3] = C;
+    tmp18 = C;
+  } else {
+    class C {
+      constructor(arg0) {
+        closure_3(arg0);
+        _slicedToArray(undefined);
+      }
+    }
+  }
+  if (cResult[4] !== finish) {
+    class C {
+      constructor(arg0) {
+        closure_3(arg0);
+        _slicedToArray(undefined);
+      }
+    }
+    let closure_0 = _asyncToGenerator(async (arg0, value) => {
+      let closure_4;
+      let message2;
+      let v0;
+      closure_0 = arg0;
+      if (c7 === 2) {
+        c7 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } else {
+        let c5;
+        try {
+          c7 = 2;
+          if (0 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              closure_3 = tmp;
+              closure_2 = tmp4;
+              closure_0 = undefined;
+              tmp28(undefined);
+              message2(true);
+              c5 = 1;
+              const obj4 = { mfaType: "backup", data: removeDashes(closure_0) };
+              c6 = 2;
+              c7 = 1;
+              const obj5 = { value: closure_0(obj4), done: false };
+              return obj5;
+            }
+          } else {
+            if (1 === c6) {
+              c5 = 0;
+              closure_0 = tmp28;
+              let message;
+              const tmp12 = tmp28;
+              if (closure_0 != null) {
+                const body = closure_0.body;
+                if (body != null) {
+                  message = body.message;
+                }
+              }
+              message2 = message;
+              if (message == null) {
+                message2 = closure_0.message;
+              }
+              tmp12(message2);
+            } else if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 0;
+              c7 = 3;
+              const obj = { value, done: true };
+              return obj;
+            } else {
+              c5(true);
+              c5 = 0;
+            }
+            message2(false);
+            c7 = 3;
+            return { value: "IconComponent", done: "IconComponent" };
+          }
+        } catch (tmp28) {
+          if (0 === c5) {
+            c7 = 3;
+            throw tmp28;
+          } else {
+            c6 = 1;
+          }
+        }
+      }
+    });
+    let fn2 = function() {
+      return closure_0(...arguments);
+    };
+    cResult[4] = finish;
+    cResult[5] = fn2;
+    tmp19 = fn2;
+  } else {
+    class C {
+      constructor(arg0) {
+        closure_3(arg0);
+        _slicedToArray(undefined);
+      }
+    }
+  }
+  fn2 = tmp19;
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor(arg0) {
+        closure_3(arg0);
+        _slicedToArray(undefined);
+      }
+    }
+    const stringResult = obj3.string(tmp(1126).t.B2T1HD);
+    const intl = tmp(1126).intl;
+    const stringResult1 = intl.string(tmp(1126).t.c5J7O0);
+    cResult[6] = stringResult;
+    cResult[7] = stringResult1;
+  } else {
+    class C {
+      constructor(arg0) {
+        closure_3(arg0);
+        _slicedToArray(undefined);
+      }
+    }
+  }
+  if (cResult[8] !== first) {
+    class C {
+      constructor(arg0) {
+        closure_3(arg0);
+        _slicedToArray(undefined);
+      }
+    }
+    const tmp25 = getFormattedExplainer(first);
+    cResult[8] = first;
+    cResult[9] = tmp25;
+  } else {
+    class C {
+      constructor(arg0) {
+        closure_3(arg0);
+        _slicedToArray(undefined);
+      }
+    }
+  }
+  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor(arg0) {
+        closure_3(arg0);
+        _slicedToArray(undefined);
+      }
+    }
+    const stringResult2 = obj4.string(tmp(1126).t["C/ZAw/"]);
+    const intl2 = tmp(1126).intl;
+    const stringResult3 = intl2.string(tmp(1126).t.fZSi1D);
+    cResult[10] = stringResult2;
+    cResult[11] = stringResult3;
+    tmp27 = stringResult3;
+    tmp26 = stringResult2;
+  } else {
+    class C {
+      constructor(arg0) {
+        closure_3(arg0);
+        _slicedToArray(undefined);
+      }
+    }
+    tmp27 = cResult[11];
+  }
+  if (cResult[12] === tmp10) {
+    class C {
+      constructor(arg0) {
+        closure_3(arg0);
+        _slicedToArray(undefined);
+      }
+    }
+  }
+  let obj5 = { label: tmp26, placeholder: tmp27, isValidClipboardCode, maxLength: tmp(15504).BACKUP_CODE_MAX_LENGTH, onChangeCode: tmp18, error: tmp10, isDisabled: tmp30, autoFocus: tmp31 };
+  const tmp4Result = ClipboardCopyInputDefault;
+  cResult[12] = tmp10;
+  cResult[13] = tmp7 || tmp12;
+  cResult[14] = !tmp5;
+  cResult[15] = closure_7(tmp4Result, obj5);
+  const tmp33 = closure_7(tmp4Result, obj5);
+}) : ((finish) => {
+  let _undefined;
+  let c1;
+  let c4;
+  let c5;
+  let closure_7;
+  let first;
+  let first1;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let obj3;
+  let obj4;
+  let tmp10;
+  let tmp18;
+  let tmp20;
+  let tmp5;
+  let tmp8;
+  let tmpResult;
   finish = finish.finish;
-  c1 = undefined;
+  importDefault = undefined;
   first = undefined;
-  closure_3 = undefined;
-  c4 = undefined;
-  c5 = undefined;
+  _asyncToGenerator = undefined;
+  _slicedToArray = undefined;
+  react = undefined;
   first1 = undefined;
   closure_7 = undefined;
-  const tmp3 = useWideAuthViewDefault();
-  [tmp5, c1] = noop.useState(false);
-  [first, closure_3] = noop.useState("");
-  const tmp4 = _slicedToArray(noop.useState(false), 2);
-  [tmp8, c4] = noop.useState(undefined);
-  const tmp7 = _slicedToArray(noop.useState(undefined), 2);
-  [tmp10, c5] = noop.useState(false);
-  [first1, closure_7] = noop.useState(10);
+  const mfaChallenge = finish.mfaChallenge;
+  const tmp = importDefault;
+  const tmp3 = require("useWideAuthView")();
+  const tmp4 = _slicedToArray(react.useState(false), 2);
+  [tmp5, c1] = tmp4;
+  [first, _asyncToGenerator] = react.useState("");
+  [tmp8, c4] = _slicedToArray(react.useState(undefined), 2);
+  const tmp7 = _slicedToArray(react.useState(undefined), 2);
+  [tmp10, c5] = _slicedToArray(react.useState(false), 2);
+  const tmp9 = _slicedToArray(react.useState(false), 2);
+  [first1, closure_7] = react.useState(10);
   const items = [first1];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
+    let closure_0;
     if (first1 > 0) {
       const _setTimeout = setTimeout;
       const timeout = setTimeout(() => {
@@ -56,120 +364,141 @@ export default function BackupScreen(finish) {
       return () => clearTimeout(closure_0);
     }
   }, items);
-  closure_0 = asyncGeneratorStep(async (arg0) => {
-    closure_3 = tmp3;
-    tmp30(undefined);
-    message(true);
-    let v0 = 1;
-    await closure_0({ mfaType: "backup", data: closure_0.replace(/-/g, "") });
-    if (1 === tmp7) {
-      v0 = 0;
-      closure_130_0 = tmp30;
-      message = undefined;
-      if (closure_130_0 != null) {
-        const body = closure_130_0.body;
-        if (body != null) {
-          message = body.message;
+  const useCallback = react.useCallback;
+  let closure_0 = _asyncToGenerator(async (arg0, value) => {
+    let closure_4;
+    let message2;
+    let v0;
+    closure_0 = arg0;
+    if (c7 === 2) {
+      c7 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: "IconComponent" };
+      }
+    } else {
+      try {
+        c7 = 2;
+        if (0 === c6) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            closure_3 = tmp;
+            let closure_2 = tmp4;
+            tmp28(undefined);
+            message2(true);
+            c5 = 1;
+            const obj4 = { mfaType: "backup", data: removeDashes(closure_0) };
+            c6 = 2;
+            c7 = 1;
+            const obj5 = { value: closure_0(obj4), done: false };
+            return obj5;
+          }
+        } else {
+          if (1 === c6) {
+            c5 = 0;
+            closure_0 = tmp28;
+            let message;
+            const tmp12 = tmp28;
+            if (closure_0 != null) {
+              const body = closure_0.body;
+              if (body != null) {
+                message = body.message;
+              }
+            }
+            message2 = message;
+            if (message == null) {
+              message2 = closure_0.message;
+            }
+            tmp12(message2);
+          } else if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 0;
+            c7 = 3;
+            const obj = { value, done: true };
+            return obj;
+          } else {
+            c5(true);
+            c5 = 0;
+          }
+          message2(false);
+          c7 = 3;
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } catch (tmp28) {
+        if (0 === c5) {
+          c7 = 3;
+          throw tmp28;
+        } else {
+          c6 = 1;
         }
       }
-      if (message == null) {
-        message = closure_130_0.message;
-      }
-      tmp30(message);
-      message(false);
-      c7 = 3;
-    } else if (arg0 === 1) {
-      c7 = 3;
-      throw arg1;
-    } else if (arg0 !== 2) {
-      v0(true);
-      v0 = 0;
     }
-    v0 = 0;
-    return arg1;
   });
   const items1 = [finish];
-  closure_8 = noop.useCallback(function() {
-    const self = this;
-    const apply = closure_0.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
-    return applyArgumentsResult;
+  let closure_8 = useCallback(function() {
+    return closure_0(...arguments);
   }, items1);
-  const obj = { headerText: null, subtitle: null, input: null, submit: null, screenProps: null, mfaMethod: "backup" };
-  const tmp9 = _slicedToArray(noop.useState(false), 2);
-  const intl = util.intl;
-  obj.headerText = intl.string(util.t.B2T1HD);
-  const intl2 = util.intl;
-  obj.subtitle = intl2.string(util.t.c5J7O0);
-  if (first1 > 0) {
-    const obj2 = { variant: "text-md/normal", children: null };
-    const intl3 = tmp16(1115).intl;
-    const items2 = [intl3.string(tmp16(1115).t.RRtlLg), ];
-    const intl4 = tmp16(1115).intl;
-    const obj3 = { countdown: first1 };
-    items2[1] = intl4.format(tmp16(1115).t.tsWkAE, obj3);
-    obj2.children = items2;
-    let obj4 = obj2;
-  } else {
-    obj4 = { variant: "text-md/normal", children: null };
-    const intl8 = tmp16(1115).intl;
-    const items3 = [intl8.string(tmp16(1115).t.RRtlLg), ];
-    const intl9 = tmp16(1115).intl;
-    items3[1] = intl9.string(tmp16(1115).t.v3a6Pd);
-    obj4.children = items3;
-  }
-  const items4 = [timestampProducer(Text_Text.Text, obj4), ];
-  const obj5 = { label: null, placeholder: null, isValidClipboardCode: null, maxLength: null, onChangeCode: null, error: null, isDisabled: null, autoFocus: null };
-  const tmp15 = MfaOptionScreenDefault;
-  const tmp18 = React6;
-  const intl5 = tmp16(1115).intl;
-  obj5.label = intl5.string(util.t["C/ZAw/"]);
-  const intl6 = tmp16(1115).intl;
-  obj5.placeholder = intl6.string(util.t.fZSi1D);
-  obj5.isValidClipboardCode = isValidClipboardCode;
-  obj5.maxLength = MFA.BACKUP_CODE_MAX_LENGTH;
-  obj5.onChangeCode = function onChangeCode(arg0) {
-    closure_3(arg0);
-    _undefined(undefined);
+  let obj = { headerText: intl.string(finish(first[6]).t.B2T1HD), subtitle: intl2.string(finish(first[6]).t.c5J7O0), input: first1(tmp18, obj3), submit: tmp14(tmpResult, obj4), screenProps: { mfaChallenge, finish }, mfaMethod: "backup" };
+  const tmp15 = require("MfaOptionScreen");
+  intl = finish(first[6]).intl;
+  intl2 = finish(first[6]).intl;
+  const items2 = [getFormattedExplainer(first1), ];
+  let obj2 = {
+    label: intl3.string(finish(first[6]).t["C/ZAw/"]),
+    placeholder: intl4.string(finish(first[6]).t.fZSi1D),
+    isValidClipboardCode,
+    maxLength: finish(first[4]).BACKUP_CODE_MAX_LENGTH,
+    onChangeCode(arg0) {
+      closure_3(arg0);
+      _undefined(undefined);
+    },
+    error: tmp8,
+    isDisabled: tmp20,
+    autoFocus: !tmp3
   };
-  obj5.error = tmp8;
-  let tmp20 = tmp5;
-  if (!tmp5) {
-    tmp20 = tmp10;
-  }
-  const obj6 = { children: null };
-  obj5.isDisabled = tmp20;
-  obj5.autoFocus = !tmp3;
-  items4[1] = React5(ClipboardCopyInputDefault, obj5);
-  obj6.children = items4;
-  obj.input = timestampProducer(tmp18, obj6);
-  const obj7 = { variant: "primary", text: null, loading: null, onPress: null, disabled: null };
-  const tmpResult = ClipboardCopyInputDefault;
-  const intl7 = tmp16(1115).intl;
-  obj7.text = intl7.string(util.t.geKm7t);
-  let tmp22 = tmp5;
-  if (!tmp5) {
-    tmp22 = tmp10;
-  }
-  obj7.loading = tmp22;
-  obj7.onPress = function onPress() {
-    return closure_8(first);
+  const tmp19 = require("ClipboardCopyInput");
+  intl3 = finish(first[6]).intl;
+  intl4 = finish(first[6]).intl;
+  obj3 = { children: items2 };
+  tmp20 = tmp5 || tmp10;
+  items2[1] = closure_7(tmp19, obj2);
+  obj4 = {
+    variant: "primary",
+    text: intl5.string(tmp16(tmp2[6]).t.geKm7t),
+    loading: tmp5 || tmp10,
+    onPress() {
+      return closure_8(first);
+    },
+    disabled: tmp5
   };
+  tmpResult = tmp(first[11]);
+  intl5 = tmp16(tmp2[6]).intl;
+  tmp18 = closure_8;
   if (!tmp5) {
     tmp5 = tmp10;
   }
   if (!tmp5) {
-    tmp5 = first.length < tmp16(15447).BACKUP_CODE_MIN_LENGTH;
+    tmp5 = first.length < tmp16(tmp2[4]).BACKUP_CODE_MIN_LENGTH;
   }
   if (!tmp5) {
     tmp5 = first1 > 0;
   }
-  obj7.disabled = tmp5;
-  obj.submit = React5(buttonDefault, obj7);
-  obj.screenProps = { mfaChallenge: finish.mfaChallenge, finish };
-  return React5(tmp15, obj);
-};
+  return closure_7(tmp15, obj);
+});
+const result = size.fileFinishedImporting("modules/mfa/native/screens/BackupScreen.tsx");
+
+export default tmp3;

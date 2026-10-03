@@ -1,77 +1,79 @@
-// Module ID: 8011
-// Function ID: 8012
+// Module ID: 8055
+// Function ID: 8056
 // Name: InstantInviteStore
-// Dependencies: [8012, 7328, 8013, 8015, 8016, 504, 573, 2]
+// Dependencies: [8056, 7226, 8057, 8059, 8060, 504, 584, 2]
 
-// Module 8011 (InstantInviteStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import headDefault from "head" /* 8013 */;
-import reverseDefault from "reverse" /* 8015 */;
-import _modDef8016 from "module_8016" /* 8016 */;
-import InviteRecord from "InviteRecord" /* 8012 */;
+// Module 8055 (InstantInviteStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 7226 */;
+import headDefault from "head" /* 8057 */;
+import reverseDefault from "reverse" /* 8059 */;
+import _modDef8060 from "module_8060" /* 8060 */;
+import InviteRecord from "InviteRecord" /* 8056 */;
+import size from "module_2" /* 2 */;
 
-const InviteTargetTypes = fn(7328).InviteTargetTypes;
-let closure_5 = {};
-const dependencyMap = {};
-const dependencyMap2 = {};
+let c2, closure_5, closure_6, closure_7;
+
+const InviteTargetTypes = Constants.InviteTargetTypes;
+const hasOwnProperty = {};
+const metroRequire = {};
+const metroImportDefault = {};
 let closure_8 = {};
 let c9 = false;
 let c10 = false;
 let c11 = false;
 let map = new Map();
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class InstantInviteStore extends Store {
+  getInvite(arg0) {
+    let targetApplicationId;
+    let targetType;
+    let targetUserId;
+    let tmp4;
+    let obj = arg1;
+    if (arg1 === undefined) {
+      obj = {};
+    }
+    ({ targetType, targetUserId, targetApplicationId } = obj);
+    const tmp = InviteTargetTypes;
+    if (targetType === InviteTargetTypes.STREAM) {
+      if (null != targetUserId) {
+        let tmp10;
+        if (closure_6[arg0] != null) {
+          tmp10 = tmp9[targetUserId];
+        }
+        tmp4 = tmp10;
+      }
+      return tmp4;
+    }
+    if (targetType === tmp.EMBEDDED_APPLICATION) {
+      if (null != targetApplicationId) {
+        let tmp7;
+        if (closure_7[arg0] != null) {
+          tmp7 = tmp6[targetApplicationId];
+        }
+        tmp4 = tmp7;
+      }
+    }
+    tmp4 = closure_5[arg0];
+  }
+  getFriendInvite() {
+    return c2;
+  }
+  getFriendInvitesFetching() {
+    return c9;
+  }
+  canRevokeFriendInvite() {
+    return null != c2 && !c10 && !c11;
+  }
+  getReceivedInstallationIdForInviteCode(result) {
+    return map.get(result.toLowerCase());
+  }
 }
 const prototype = InstantInviteStore.prototype;
-prototype["getInvite"] = function getInvite(arg0) {
-  let obj = arg1;
-  if (arg1 === undefined) {
-    obj = {};
-  }
-  ({ targetType, targetUserId, targetApplicationId } = obj);
-  if (targetType === InviteTargetTypes.STREAM) {
-    if (null != targetUserId) {
-      let tmp10;
-      if (dependencyMap[arg0] != null) {
-        tmp10 = tmp9[targetUserId];
-      }
-      let tmp4 = tmp10;
-    }
-    return tmp4;
-  }
-  if (targetType === InviteTargetTypes.EMBEDDED_APPLICATION) {
-    if (null != targetApplicationId) {
-      let tmp7;
-      if (dependencyMap2[arg0] != null) {
-        tmp7 = tmp6[targetApplicationId];
-      }
-      tmp4 = tmp7;
-    }
-  }
-  tmp4 = closure_5[arg0];
-};
-prototype["getFriendInvite"] = function getFriendInvite() {
-  return c2;
-};
-prototype["getFriendInvitesFetching"] = function getFriendInvitesFetching() {
-  return c9;
-};
-prototype["canRevokeFriendInvite"] = function canRevokeFriendInvite() {
-  let tmp = null != c2;
-  if (tmp) {
-    tmp = !c10;
-  }
-  if (tmp) {
-    tmp = !c11;
-  }
-  return tmp;
-};
-prototype["getReceivedInstallationIdForInviteCode"] = function getReceivedInstallationIdForInviteCode(result) {
-  return map.get(result.toLowerCase());
-};
 InstantInviteStore.displayName = "InstantInviteStore";
-const instantInviteStore = new InstantInviteStore(DispatcherDefault, {
+let obj = {
   CONNECTION_OPEN: function handleConnectionOpen() {
     closure_5 = {};
     closure_6 = {};
@@ -84,15 +86,16 @@ const instantInviteStore = new InstantInviteStore(DispatcherDefault, {
   },
   CHANNEL_DELETE: function handleDeleteChannel(channel) {
     channel = channel.channel;
-    delete tmp4[tmp3];
-    delete tmp4[tmp3];
-    delete tmp2[tmp];
+    delete closure_5[channel.id];
+    delete closure_6[channel.id];
+    delete closure_7[channel.id];
   },
   FRIEND_INVITE_CREATE_SUCCESS: function handleFriendInviteCreateSuccess(invite) {
     closure_8[invite.invite.code] = InviteRecord.createFromServer(invite.invite);
     const tmp = headDefault;
     const tmp2 = reverseDefault;
-    let tmpResult = tmp(tmp2(_modDef8016(Object.values(closure_8), "createdAt")));
+    const tmp3 = _modDef8060;
+    let tmpResult = tmp(tmp2(tmp3(Object.values(closure_8), "createdAt")));
     if (tmpResult == null) {
       tmpResult = null;
     }
@@ -105,16 +108,16 @@ const instantInviteStore = new InstantInviteStore(DispatcherDefault, {
   FRIEND_INVITE_REVOKE_SUCCESS: function handleFriendInviteRevokeSuccess(invites) {
     if (null != invites.invites) {
       invites = invites.invites;
-      const item = invites.forEach((code) => {
-        if (null != closure_1_8[code.code]) {
-          code = code.code;
-          delete tmp2[tmp];
+      const item = invites.forEach((item) => {
+        if (null != closure_1_8[item.code]) {
+          delete closure_1_8[item.code];
         }
       });
     }
     const tmp2 = headDefault;
     const tmp3 = reverseDefault;
-    let tmp2Result = tmp2(tmp3(_modDef8016(Object.values(closure_8), "createdAt")));
+    const tmp4 = _modDef8060;
+    let tmp2Result = tmp2(tmp3(tmp4(Object.values(closure_8), "createdAt")));
     if (tmp2Result == null) {
       tmp2Result = null;
     }
@@ -124,21 +127,22 @@ const instantInviteStore = new InstantInviteStore(DispatcherDefault, {
   INSTANT_INVITE_CREATE_SUCCESS: function handleInstantInviteCreateSuccess(channelId) {
     channelId = channelId.channelId;
     const fromServer = InviteRecord.createFromServer(channelId.invite);
+    const tmp2 = InviteTargetTypes;
     if (fromServer.targetType === InviteTargetTypes.STREAM) {
       if (null != fromServer.targetUser) {
-        if (null == dependencyMap[channelId]) {
-          dependencyMap[channelId] = {};
+        if (null == closure_6[channelId]) {
+          closure_6[channelId] = {};
         }
         const _String = String;
-        dependencyMap[channelId][String(fromServer.targetUser.id)] = fromServer;
+        closure_6[channelId][String(fromServer.targetUser.id)] = fromServer;
       }
     }
-    if (fromServer.targetType === InviteTargetTypes.EMBEDDED_APPLICATION) {
+    if (fromServer.targetType === tmp2.EMBEDDED_APPLICATION) {
       if (null != fromServer.targetApplication) {
-        if (null == dependencyMap2[channelId]) {
-          dependencyMap2[channelId] = {};
+        if (null == closure_7[channelId]) {
+          closure_7[channelId] = {};
         }
-        dependencyMap2[channelId][fromServer.targetApplication.id] = fromServer;
+        closure_7[channelId][fromServer.targetApplication.id] = fromServer;
       }
     }
     closure_5[channelId] = fromServer;
@@ -166,7 +170,8 @@ const instantInviteStore = new InstantInviteStore(DispatcherDefault, {
     });
     const tmp2 = headDefault;
     const tmp3 = reverseDefault;
-    let tmp2Result = tmp2(tmp3(_modDef8016(Object.values(closure_8), "createdAt")));
+    const tmp4 = _modDef8060;
+    let tmp2Result = tmp2(tmp3(tmp4(Object.values(closure_8), "createdAt")));
     if (tmp2Result == null) {
       tmp2Result = null;
     }
@@ -174,16 +179,20 @@ const instantInviteStore = new InstantInviteStore(DispatcherDefault, {
     c9 = false;
   },
   INSTANT_INVITE_CLEAR: function handleInstantInviteClear(arg0) {
-    delete tmp2[tmp];
+    delete closure_5[arg0.channelId];
   },
   INSTANT_INVITE_RECEIVED_INSTALLATION_ID_SET: function handleReceivedInstallationIdSet(inviteCode) {
     map = new Map(map);
-    const result = map.set(inviteCode.inviteCode.toLowerCase(), inviteCode.receivedInstallationId);
+    const str = inviteCode.inviteCode;
+    const result = map.set(str.toLowerCase(), inviteCode.receivedInstallationId);
   },
   INSTANT_INVITE_RECEIVED_INSTALLATION_ID_CLEAR: function handleReceivedInstallationIdClear(inviteCode) {
-    const formatted = inviteCode.inviteCode.toLowerCase();
+    const str = inviteCode.inviteCode;
+    const formatted = str.toLowerCase();
     if (map.has(formatted)) {
       const _Map = Map;
+      const self = this;
+      const self2 = this;
       map = new Map(map);
       map.delete(formatted);
     } else {
@@ -196,6 +205,8 @@ const instantInviteStore = new InstantInviteStore(DispatcherDefault, {
       const formatted = str.toLowerCase();
       if (map.has(formatted)) {
         const _Map = Map;
+        const self = this;
+        const self2 = this;
         map = new Map(map);
         map.delete(formatted);
       }
@@ -208,11 +219,13 @@ const instantInviteStore = new InstantInviteStore(DispatcherDefault, {
       return false;
     } else {
       const _Map = Map;
+      const self = this;
+      const self2 = this;
       map = new Map();
     }
   }
-});
-const size = fn(2);
+};
+const instantInviteStore = new InstantInviteStore(DispatcherDefault, obj);
 let result = size.fileFinishedImporting("stores/InstantInviteStore.tsx");
 
 export default instantInviteStore;

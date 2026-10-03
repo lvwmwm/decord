@@ -1,16 +1,16 @@
-// Module ID: 8513
-// Function ID: 8514
+// Module ID: 8518
+// Function ID: 8519
 // Name: OrbRedemptionOrdersExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1440, 2]
 
-// Module 8513 (OrbRedemptionOrdersExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 8518 (OrbRedemptionOrdersExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2025-12-orb-redemption-thru-orders", kind: "user", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+const obj = { name: "2025-12-orb-redemption-thru-orders", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/virtual_currency/experiments/OrbRedemptionOrdersExperiment.tsx");
 

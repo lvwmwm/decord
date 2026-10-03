@@ -1,147 +1,194 @@
-// Module ID: 15302
-// Function ID: 15303
+// Module ID: 15359
+// Function ID: 15360
 // Name: UploadDebugLogsSetting
-// Dependencies: [5, 17, 1074, 21, 560, 1248, 1364, 9841, 4557, 4796, 1115, 11215, 2]
+// Dependencies: [5, 17, 1085, 21, 570, 1259, 558, 576, 1369, 12528, 4568, 4812, 1126, 11129, 2]
 
-// Module 15302 (UploadDebugLogsSetting)
-import util from "util" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import DebugUploadManager from "DebugUploadManager" /* 9841 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+// Module 15359 (UploadDebugLogsSetting)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 576 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4812 */;
+import DebugUploadManager from "DebugUploadManager" /* 12528 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import module_570 from "module_570" /* 570 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_8 = async function _handleUploadDebugLogSettingPress(arg0, value) {
-  if (c5 === 2) {
-    c5 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp7 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj3 = { value, done: true };
-      return obj3;
-    } else {
-      return { value: "HermesInternal", done: null };
+let c4, c5, closure_2;
+
+let obj = function _handleUploadDebugLogSettingPress() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let intl;
+    let intl2;
+    let obj3;
+    function onUploadDebugLogsRequestStart() {
+      let state;
+      obj = closure_1_0(closure_1_2[5]);
+      obj.batchUpdates(() => state.setState({ isDisabled: true, isUploading: true }));
     }
-  } else {
-    try {
-      c5 = 2;
-      if (0 === c4) {
-        if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          const obj4 = { value, done: true };
-          return obj4;
-        } else {
-          closure_1 = tmp4;
-          closure_0 = tmp4;
-          (function onUploadDebugLogsRequestStart() {
-            closure_1_0(1248).batchUpdates(() => state.setState({ isDisabled: true, isUploading: true }));
-          })();
-          let uploadDebugLogFiles = DebugLogCategory;
-          if (obj8.isIOS()) {
-            let ANDROID_APP = uploadDebugLogFiles.IOS_APP;
+    function onUploadDebugLogsRequestFinish() {
+      let state;
+      obj = closure_1_0(closure_1_2[5]);
+      obj.batchUpdates(() => state.setState({ isDisabled: true, isUploading: false }));
+      const timerId = setTimeout(() => {
+        obj = closure_1_0(closure_1_2[5]);
+        return obj.batchUpdates(() => state.setState({ isDisabled: false }));
+      }, 5000);
+    }
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: "IconComponent" };
+      }
+    } else {
+      let c3;
+      try {
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
           } else {
-            ANDROID_APP = uploadDebugLogFiles.ANDROID_APP;
+            let ANDROID_APP;
+            let closure_1 = tmp;
+            let closure_0 = tmp;
+            onUploadDebugLogsRequestStart();
+            const obj8 = PlatformUtils;
+            if (obj8.isIOS()) {
+              ANDROID_APP = tmp46.IOS_APP;
+            } else {
+              ANDROID_APP = tmp46.ANDROID_APP;
+            }
+            c3 = 2;
+            c4 = 3;
+            c5 = 1;
+            const obj5 = { value: obj3.uploadDebugLogFiles(ANDROID_APP), done: false };
+            obj3 = DebugUploadManager;
+            return obj5;
           }
-          c3 = 2;
-          obj8 = PlatformUtils;
-          uploadDebugLogFiles = DebugUploadManager.uploadDebugLogFiles;
-          uploadDebugLogFiles(ANDROID_APP);
-          c4 = 3;
-          c5 = 1;
-        }
-      } else if (1 === tmp8) {
-        c3 = 0;
-        (function onUploadDebugLogsRequestFinish() {
-          closure_1_0(1248).batchUpdates(() => state.setState({ isDisabled: true, isUploading: false }));
-          const timerId = setTimeout(() => closure_1_0(dependencyMap[5]).batchUpdates(() => state.setState({ isDisabled: false })), 5000);
-        })();
-        throw dependencyMap;
-      } else {
-        if (2 === tmp8) {
-          c3 = 1;
-          const obj5 = { key: "USER_SETTINGS_CACHES_CLEARED", IconComponent: closure_129_0(closure_129_2[9]).CircleInformationIcon, content: null };
-          const intl = closure_129_0(closure_129_2[10]).intl;
-          obj5.content = intl.string(closure_129_0(closure_129_2[10]).t.VzHcSm);
-          closure_129_1(closure_129_2[8]).open(obj5);
+        } else if (1 === c4) {
           c3 = 0;
-          (function onUploadDebugLogsRequestFinish() {
-            closure_1_0(1248).batchUpdates(() => state.setState({ isDisabled: true, isUploading: false }));
-            const timerId = setTimeout(() => closure_1_0(dependencyMap[5]).batchUpdates(() => state.setState({ isDisabled: false })), 5000);
-          })();
+          onUploadDebugLogsRequestFinish();
+          throw closure_2;
+        } else {
+          if (2 === c4) {
+            c3 = 1;
+            const obj6 = { key: "USER_SETTINGS_CACHES_CLEARED", IconComponent: closure_129_0(closure_129_2[11]).CircleInformationIcon, content: intl.string(closure_129_0(closure_129_2[12]).t.VzHcSm) };
+            const open = closure_129_1(closure_129_2[10]).open;
+            const tmp10 = closure_129_1(closure_129_2[10]);
+            intl = closure_129_0(closure_129_2[12]).intl;
+            open(obj6);
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 0;
+            onUploadDebugLogsRequestFinish();
+            c5 = 3;
+            obj = { value, done: true };
+            return obj;
+          } else {
+            const obj7 = { key: "USER_SETTINGS_CACHES_CLEARED", IconComponent: closure_129_0(closure_129_2[11]).CircleInformationIcon, content: intl2.string(closure_129_0(closure_129_2[12]).t.BvyxE7) };
+            const open2 = closure_129_1(closure_129_2[10]).open;
+            const tmp35 = closure_129_1(closure_129_2[10]);
+            intl2 = closure_129_0(closure_129_2[12]).intl;
+            open2(obj7);
+            c3 = 1;
+          }
+          c3 = 0;
+          onUploadDebugLogsRequestFinish();
           c5 = 3;
-          const obj2 = closure_129_1(closure_129_2[8]);
-        } else if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 !== 2) {
-          const obj7 = { key: "USER_SETTINGS_CACHES_CLEARED", IconComponent: closure_129_0(closure_129_2[9]).CircleInformationIcon, content: null };
-          const intl2 = closure_129_0(closure_129_2[10]).intl;
-          obj7.content = intl2.string(closure_129_0(closure_129_2[10]).t.BvyxE7);
-          closure_129_1(closure_129_2[8]).open(obj7);
-          c3 = 1;
-          const obj6 = closure_129_1(closure_129_2[8]);
+          return { value: "IconComponent", done: "IconComponent" };
         }
-        c3 = 0;
-        (function onUploadDebugLogsRequestFinish() {
-          closure_1_0(1248).batchUpdates(() => state.setState({ isDisabled: true, isUploading: false }));
-          const timerId = setTimeout(() => closure_1_0(dependencyMap[5]).batchUpdates(() => state.setState({ isDisabled: false })), 5000);
-        })();
-        c5 = 3;
-        const obj = { value, done: true };
-        return obj;
-      }
-    } catch (tmp31) {
-      dependencyMap = tmp31;
-      if (tmp5 === c3) {
-        c5 = tmp3;
-        throw tmp31;
-      } else if (tmp2 === tmp33) {
-        c4 = tmp2;
-      } else {
-        c4 = tmp;
+      } catch (tmp26) {
+        closure_2 = tmp26;
+        if (0 === c3) {
+          c5 = 3;
+          throw tmp26;
+        } else if (1 === tmp28) {
+          c4 = 1;
+        } else {
+          c4 = 2;
+        }
       }
     }
-  }
+  });
+  return obj(...arguments);
 };
-const ActivityIndicator = fn(17).ActivityIndicator;
-const DebugLogCategory = fn(1074).DebugLogCategory;
-const jsx = fn(21).jsx;
-const module_560 = fn(560);
-let closure_7 = module_560.create(() => ({ isDisabled: false, isUploading: false }));
-const SettingBuilders = fn(11215);
-const pressable = SettingBuilders.createPressable({
-  useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.aY1OH2);
-  },
-  parent: null,
-  IconComponent: fn(4796).CircleInformationIcon,
-  onPress: function handleUploadDebugLogSettingPress() {
-    const self = this;
-    const apply = closure_8.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+const ActivityIndicator = react_native.ActivityIndicator;
+const DebugLogCategory = Constants.DebugLogCategory;
+const jsx = Fragment.jsx;
+let closure_7 = module_570.create(() => ({ isDisabled: false, isUploading: false }));
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating.isReactCompilerEnabled();
+const f70348 = () => {
+
+};
+ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating.isReactCompilerEnabled();
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  obj = react;
+  const cResult = obj.c(2);
+  if (typeof f70348 === "function") {
+    let tmp3;
+    const isUploading = closure_7().isUploading;
+    if (cResult[0] !== isUploading) {
+      let tmp4 = null;
+      if (isUploading) {
+        tmp4 = <ActivityIndicator />;
+      }
+      cResult[0] = isUploading;
+      cResult[1] = tmp4;
+      tmp3 = tmp4;
     } else {
-      applyArgumentsResult = apply(self, arguments);
+      tmp3 = cResult[1];
     }
-    return applyArgumentsResult;
-  },
-  useTrailing: function useUploadDebugLogsTrailing() {
-    let tmp = null;
+    return tmp3;
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+}) : (() => {
+  if (typeof f70348 === "function") {
+    let tmp2 = null;
     if (closure_7().isUploading) {
-      tmp = <ActivityIndicator />;
+      tmp2 = <ActivityIndicator />;
     }
-    return tmp;
-  },
-  useIsDisabled: function useIsUploadDebugLogsDisabled() {
-    return closure_7().isDisabled;
+    return tmp2;
+  } else {
+    throw new TypeError("Trying to call a non-function");
   }
 });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/defs/native/UploadDebugLogsSetting.tsx");
+const fn = () => closure_7().isDisabled;
+obj = {
+  useTitle() {
+    const intl = intl3.intl;
+    return intl.string(intl3.t.aY1OH2);
+  },
+  parent: null,
+  IconComponent: CircleInformationIcon.CircleInformationIcon,
+  onPress: function handleUploadDebugLogSettingPress() {
+    return obj(...arguments);
+  },
+  useTrailing: tmp4,
+  useIsDisabled: fn
+};
+const pressable = SettingBuilders.createPressable(obj);
+const result2 = size.fileFinishedImporting("modules/user_settings/defs/native/UploadDebugLogsSetting.tsx");
 
 export default pressable;

@@ -1,25 +1,28 @@
-// Module ID: 11256
-// Function ID: 11257
+// Module ID: 11170
+// Function ID: 11171
 // Name: useSortedOnboardingPrompts
-// Dependencies: [19, 6707, 563, 2]
+// Dependencies: [19, 6595, 573, 2]
 // Exports: default
 
-// Module 11256 (useSortedOnboardingPrompts)
-import noop from "module_19" /* 19 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6707 */;
+// Module 11170 (useSortedOnboardingPrompts)
+import react from "react" /* 19 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6595 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_onboarding/useSortedOnboardingPrompts.tsx");
 
 export default function useSortedOnboardingPrompts(arg0) {
+  let closure_0;
+  let stateFromStoresArray;
   _require = arg0;
+  let obj = require("useStateFromStores");
   let items = [GuildOnboardingPromptsStore];
-  stateFromStoresArray = require("useStateFromStores").useStateFromStoresArray(items, () => GuildOnboardingPromptsStore.getEnabledOnboardingPrompts(closure_0));
+  stateFromStoresArray = obj.useStateFromStoresArray(items, () => GuildOnboardingPromptsStore.getEnabledOnboardingPrompts(closure_0));
   let items1 = [stateFromStoresArray];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
     let arr5;
     const items = [];
     const items1 = [];
@@ -31,11 +34,12 @@ export default function useSortedOnboardingPrompts(arg0) {
     let num3 = 0;
     if (0 < stateFromStoresArray.length) {
       do {
+        let sum;
         arr5 = stateFromStoresArray;
         let tmp2 = stateFromStoresArray[num];
         if (tmp2.isNew) {
           let arr = items.push(tmp2);
-          let sum = num2;
+          sum = num2;
         } else if (tmp2.hasNewAnswers) {
           let arr2 = items1.push(tmp2);
           let options = tmp2.options;
@@ -53,6 +57,7 @@ export default function useSortedOnboardingPrompts(arg0) {
         tmp = arr5;
       } while (num < arr5.length);
     }
-    return { onboardingPromptsRaw: tmp, newOnboardingPrompts: items, onboardingPromptsWithNewAnswers: items1, newAnswersCount: num3, onboardingPrompts: items2.concat(items3) };
+    const obj = { onboardingPromptsRaw: tmp, newOnboardingPrompts: items, onboardingPromptsWithNewAnswers: items1, newAnswersCount: num3, onboardingPrompts: items2.concat(items3) };
+    return obj;
   }, items1);
 };

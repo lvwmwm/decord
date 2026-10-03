@@ -1,26 +1,31 @@
-// Module ID: 16563
-// Function ID: 16564
+// Module ID: 16639
+// Function ID: 16640
 // Name: trackInAppReportsFeedback
-// Dependencies: [1074, 1241, 2]
+// Dependencies: [1085, 1252, 2]
 // Exports: default
 
-// Module 16563 (trackInAppReportsFeedback)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+// Module 16639 (trackInAppReportsFeedback)
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/in_app_reports/trackInAppReportsFeedback.tsx");
 
-export default function trackInAppReportsFeedback(dont_show_again) {
-  let reportId = dont_show_again.reportId;
-  ({ problem, feedback, reportType } = dont_show_again);
+export default function trackInAppReportsFeedback(reportId) {
+  let feedback;
+  let problem;
+  let reportType;
+  reportId = reportId.reportId;
+  ({ problem, feedback, reportType } = reportId);
   if (reportId === undefined) {
     reportId = null;
   }
-  let rating = dont_show_again.rating;
+  let rating = reportId.rating;
   if (rating === undefined) {
     rating = null;
   }
-  AnalyticsUtilsDefault.track(AnalyticEvents.IAR_FEEDBACK_SUBMITTED, { reason: problem, report_type: reportType, report_id: reportId, rating, feedback, dont_show_again: dont_show_again.dontShowAgain });
+  const dontShowAgain = reportId.dontShowAgain;
+  const obj = AnalyticsUtilsDefault;
+  obj.track(AnalyticEvents.IAR_FEEDBACK_SUBMITTED, { reason: problem, report_type: reportType, report_id: reportId, rating, feedback, dont_show_again: dontShowAgain });
 };

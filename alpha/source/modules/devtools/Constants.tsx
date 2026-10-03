@@ -1,14 +1,19 @@
-// Module ID: 574
-// Function ID: 575
+// Module ID: 585
+// Function ID: 586
 // Name: Constants
-// Dependencies: [575, 2]
+// Dependencies: [586, 2]
 
-// Module 574 (Constants)
-import shims from "shims" /* 575 */;
+// Module 585 (Constants)
+import shims from "shims" /* 586 */;
 import size from "module_2" /* 2 */;
 
+const obj = { NONE: "", DCF: "DCF", EXPERIMENTS: "Experiments", EVENTS: "Events", PREMIUM: "Premium", QUESTS: "Quests", BILLING: "Billing", SHOP: "Shop", STOREFRONT: "Storefront", USERS: "Users", GUILDS: "Guilds", UI: "UI", GAMES: "Games", AUDIO_VIDEO: "Audio / Video", DEVELOPMENT: "Development", BOOSTING: "Boosting" };
+const items = [, , , , , , , , , , , , , , ];
+({ EXPERIMENTS: arr[0], DCF: arr[1], EVENTS: arr[2], PREMIUM: arr[3], QUESTS: arr[4], BILLING: arr[5], SHOP: arr[6], STOREFRONT: arr[7], USERS: arr[8], GUILDS: arr[9], UI: arr[10], GAMES: arr[11], BOOSTING: arr[12], AUDIO_VIDEO: arr[13], DEVELOPMENT: arr[14] } = obj);
 const result = 2 * shims.getRadii().xl;
 const result1 = size.fileFinishedImporting("modules/devtools/Constants.tsx");
 
 export const STORAGE_KEY_LOG_DISPATCHES = "DevToolsLogDispatches";
 export const DEV_WIDGET_SIZE = result;
+export const TabGroup = obj;
+export const TAB_GROUPS = items;

@@ -1,23 +1,57 @@
-// Module ID: 14204
-// Function ID: 14205
+// Module ID: 14272
+// Function ID: 14273
 // Name: ModalDisclaimer
-// Dependencies: [19, 17, 21, 4845, 4841, 2]
-// Exports: ModalDisclaimer
+// Dependencies: [19, 17, 21, 4890, 558, 576, 4886, 2]
 
-// Module 14204 (ModalDisclaimer)
-import Text_Text from "Text/Text" /* 4841 */;
-import noop from "module_19" /* 19 */;
+// Module 14272 (ModalDisclaimer)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
+let children;
+
+let tmp;
+const Text_Text = tmp(4886);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ container: { flexDirection: "column", alignItems: "center" }, disclaimer: { marginBottom: 12 } });
-const size = fn(2);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+  const obj = react2;
+  const cResult = obj.c(6);
+  children = children.children;
+  const tmp4 = closure_4();
+  if (cResult[0] === children) {
+    let tmp5;
+    if (cResult[1] === tmp4.disclaimer) {
+      tmp5 = cResult[2];
+    }
+    if (cResult[3] === tmp4.container) {
+      let tmp7;
+      if (cResult[4] === tmp5) {
+        tmp7 = cResult[5];
+      }
+      return tmp7;
+    }
+    const tmp10 = <View style={tmp4.container}>{tmp5}</View>;
+    cResult[3] = tmp4.container;
+    cResult[4] = tmp5;
+    cResult[5] = tmp10;
+    tmp7 = tmp10;
+  }
+  const tmp6 = jsx(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", style: tmp4.disclaimer, children });
+  cResult[0] = children;
+  cResult[1] = tmp4.disclaimer;
+  cResult[2] = tmp6;
+  tmp5 = tmp6;
+}) : ((children) => {
+  children = children.children;
+  const tmp = closure_4();
+  return <View style={tmp.container}>{null}</View>;
+});
 const result = size.fileFinishedImporting("design/components/Modal/native/ModalDisclaimer.native.tsx");
 
-export const ModalDisclaimer = function ModalDisclaimer(children) {
-  const tmp = closure_4();
-  const obj = { style: tmp.container, children: jsx(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", style: tmp.disclaimer, children: children.children }) };
-  return <View style={tmp.container}>{jsx(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", style: tmp.disclaimer, children: arg0.children })}</View>;
-};
+export const ModalDisclaimer = tmp3;

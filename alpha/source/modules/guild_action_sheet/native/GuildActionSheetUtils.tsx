@@ -1,30 +1,97 @@
-// Module ID: 13710
-// Function ID: 13711
+// Module ID: 13772
+// Function ID: 13773
 // Name: GuildActionSheetUtils
-// Dependencies: [4498, 1074, 504, 2]
-// Exports: useGuildActionSheetPermissions
+// Dependencies: [4509, 1085, 558, 576, 504, 2]
 
-// Module 13710 (GuildActionSheetUtils)
-import PermissionStore from "PermissionStore" /* 4498 */;
+// Module 13772 (GuildActionSheetUtils)
+import Constants from "Constants" /* 1085 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, obj2, tmp3;
 
-const require = fn;
-const Permissions = fn(1074).Permissions;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_action_sheet/native/GuildActionSheetUtils.tsx");
-
-export const useGuildActionSheetPermissions = function useGuildActionSheetPermissions(guild) {
-  _require = guild;
+const Permissions = Constants.Permissions;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  let tmp7;
+  _require = arg0;
+  let obj = require("react");
+  const cResult = obj.c(4);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [PermissionStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    class A {
+      constructor() {
+        tmp = closure_0;
+        if (null == closure_0) {
+          obj = { canAccessSettings: false, canEditNickname: false, canManageChannels: false };
+        } else {
+          obj = { canAccessSettings: null, canEditNickname: null, canManageChannels: null };
+          obj2 = closure_2;
+          obj.canAccessSettings = closure_2.canAccessGuildSettings(tmp);
+          tmp2 = Permissions;
+          tmp3 = closure_2.can(Permissions.CHANGE_NICKNAME, tmp) || obj2.can(tmp2.MANAGE_NICKNAMES, tmp);
+          obj.canEditNickname = tmp3;
+          obj.canManageChannels = obj2.can(tmp2.MANAGE_CHANNELS, tmp);
+        }
+        return obj;
+      }
+    }
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = A;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = A;
+  } else {
+    class A {
+      constructor() {
+        tmp = closure_0;
+        if (null == closure_0) {
+          obj = { canAccessSettings: false, canEditNickname: false, canManageChannels: false };
+        } else {
+          obj = { canAccessSettings: null, canEditNickname: null, canManageChannels: null };
+          obj2 = closure_2;
+          obj.canAccessSettings = closure_2.canAccessGuildSettings(tmp);
+          tmp2 = Permissions;
+          tmp3 = closure_2.can(Permissions.CHANGE_NICKNAME, tmp) || obj2.can(tmp2.MANAGE_NICKNAMES, tmp);
+          obj.canEditNickname = tmp3;
+          obj.canManageChannels = obj2.can(tmp2.MANAGE_CHANNELS, tmp);
+        }
+        return obj;
+      }
+    }
+    tmp7 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStoresObject(first, tmp6, tmp7);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  let obj = require("get initialized");
   const items = [PermissionStore];
-  const items1 = [guild];
-  return require("initialize").useStateFromStoresObject(items, () => {
+  const items1 = [arg0];
+  return obj.useStateFromStoresObject(items, () => {
+    let obj;
     if (null == closure_0) {
-      let obj = { canAccessSettings: false, canEditNickname: false, canManageChannels: false };
+      obj = { canAccessSettings: false, canEditNickname: false, canManageChannels: false };
     } else {
-      obj = { canAccessSettings: PermissionStore.canAccessGuildSettings(tmp), canEditNickname: PermissionStore.can(Permissions.CHANGE_NICKNAME, tmp) || PermissionStore.can(Permissions.MANAGE_NICKNAMES, tmp), canManageChannels: PermissionStore.can(Permissions.MANAGE_CHANNELS, tmp) };
-      const tmp3 = PermissionStore.can(Permissions.CHANGE_NICKNAME, tmp) || PermissionStore.can(Permissions.MANAGE_NICKNAMES, tmp);
+      obj = { canAccessSettings: PermissionStore.canAccessGuildSettings(closure_0), canEditNickname: PermissionStore.can(Permissions.CHANGE_NICKNAME, closure_0) || PermissionStore.can(Permissions.MANAGE_NICKNAMES, closure_0), canManageChannels: PermissionStore.can(Permissions.MANAGE_CHANNELS, closure_0) };
+      PermissionStore.can(Permissions.CHANGE_NICKNAME, closure_0) || PermissionStore.can(Permissions.MANAGE_NICKNAMES, closure_0);
     }
     return obj;
   }, items1);
-};
+});
+const result = size.fileFinishedImporting("modules/guild_action_sheet/native/GuildActionSheetUtils.tsx");
+
+export const useGuildActionSheetPermissions = tmp2;

@@ -1,58 +1,70 @@
-// Module ID: 5484
-// Function ID: 5485
-// Name: common/Alert
-// Dependencies: [19, 17, 21, 4845, 576, 1177, 4569, 5485, 2039, 5459, 4841, 1115, 5465, 5621, 5623, 1479, 5624, 2]
+// Module ID: 5783
+// Function ID: 5784
+// Name: Alert
+// Dependencies: [19, 17, 21, 4890, 587, 1188, 4589, 5784, 2046, 5779, 4886, 1126, 5594, 5909, 5911, 558, 576, 1484, 5912, 2]
 // Exports: getAlertButtonVariant
 
-// Module 5484 (common/Alert)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1479 */;
-import Timers from "Timers" /* 2039 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import components_Button_Button from "components/Button/Button" /* 5465 */;
-import CustomMarkupAll from "CustomMarkup" /* 5485 */;
-import Pressables from "Pressables" /* 5621 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5623 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5624 */;
-import noop from "module_19" /* 19 */;
+// Module 5783 (Alert)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
+import Timers from "Timers" /* 2046 */;
+import native2 from "native" /* 4589 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import CustomMarkupAll from "CustomMarkup" /* 5784 */;
+import Pressables from "Pressables" /* 5909 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5911 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 5912 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: hasOwnProperty, ScrollView: metroRequire, StyleSheet } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4845);
-let obj = { alert: { borderRadius: nativeDefault.radii.sm, padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, titleText: null, divider: null, body: null, buttons: null, cancelButton: null, secondaryConfirm: null, gradient: null };
-let obj3 = { borderRadius: nativeDefault.radii.sm, padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj.titleText = { marginBottom: 16, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
-let obj4 = { marginBottom: 16, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.divider = { height: StyleSheet.hairlineWidth, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
-let obj5 = { height: StyleSheet.hairlineWidth, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
-obj.body = { marginTop: 16, color: nativeDefault.colors.TEXT_STRONG };
-obj.buttons = { marginTop: 24 };
-obj.cancelButton = { marginTop: 8 };
-obj.secondaryConfirm = { marginTop: 16, alignSelf: "center" };
-let obj6 = { marginTop: 16, color: nativeDefault.colors.TEXT_STRONG };
-obj.gradient = { borderRadius: nativeDefault.radii.sm };
-let closure_10 = createStyles.createLegacyClassComponentStyles(obj);
-const PureComponent = noop.PureComponent;
+let StyleSheet;
+let c9;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+({ View: hasOwnProperty, ScrollView: metroRequire, StyleSheet } = react_native);
+({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
+let obj = { alert: obj2, titleText: obj3, divider: obj4, body: obj5, buttons: { marginTop: 24 }, cancelButton: { marginTop: 8 }, secondaryConfirm: { marginTop: 16, alignSelf: "center" }, gradient: obj6 };
+obj2 = { borderRadius: nativeDefault.radii.sm, padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+const createLegacyClassComponentStyles = createStyles.createLegacyClassComponentStyles;
+obj3 = { marginBottom: 16, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj4 = { height: StyleSheet.hairlineWidth, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
+obj5 = { marginTop: 16, color: nativeDefault.colors.TEXT_STRONG };
+obj6 = { borderRadius: nativeDefault.radii.sm };
+const authStore = createLegacyClassComponentStyles(obj);
+const PureComponent = react.PureComponent;
 class Alert extends PureComponent {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    closure_0 = applyArgumentsResult;
-    applyArgumentsResult.titleRef = closure_4.createRef();
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    applyArgumentsResult.titleRef = react.createRef();
     applyArgumentsResult.state = { confirming: false };
-    obj = closure_2(closure_3[7]);
+    const obj = CustomMarkupAll;
     applyArgumentsResult.renderContent = obj.getParser();
-    timeout = new closure_0(closure_3[8]).Timeout();
+    let timeout = new Timers.Timeout();
     applyArgumentsResult.timeout = timeout;
-    timeout1 = new closure_0(closure_3[8]).Timeout();
+    const timeout1 = new Timers.Timeout();
     applyArgumentsResult.focusTimeout = timeout1;
     applyArgumentsResult.handleConfirm = function handleConfirm() {
+      let autoCloseOnConfirm;
+      let onClose;
+      let onConfirm;
+      let state;
       if (!applyArgumentsResult.state.confirming) {
-        ({ onClose, onConfirm, autoCloseOnConfirm } = obj.props);
+        ({ onClose, onConfirm, autoCloseOnConfirm } = applyArgumentsResult.props);
         obj.setState({ confirming: true });
         const timeout = obj.timeout;
         timeout.start(500, () => {
@@ -69,6 +81,8 @@ class Alert extends PureComponent {
       }
     };
     applyArgumentsResult.handleCancel = function handleCancel() {
+      let onCancel;
+      let onClose;
       ({ onClose, onCancel } = applyArgumentsResult.props);
       if (onCancel != null) {
         onCancel();
@@ -78,6 +92,8 @@ class Alert extends PureComponent {
       }
     };
     applyArgumentsResult.handleSecondaryConfirm = function handleSecondaryConfirm() {
+      let onClose;
+      let onConfirmSecondary;
       ({ onClose, onConfirmSecondary } = applyArgumentsResult.props);
       if (onClose != null) {
         onClose();
@@ -88,226 +104,244 @@ class Alert extends PureComponent {
     };
     return applyArgumentsResult;
   }
-}
-const prototype = Alert.prototype;
-prototype["componentDidMount"] = function componentDidMount() {
-  const self = this;
-  if (null != this.titleRef.current) {
-    const _setImmediate = setImmediate;
-    setImmediate(() => {
-      const focusTimeout = self.focusTimeout;
-      focusTimeout.start(300, () => {
-        const result = self(dependencyMap[9]).setAccessibilityFocus({ ref: titleRef.titleRef });
+  componentDidMount() {
+    const self = this;
+    if (null != this.titleRef.current) {
+      const _setImmediate = setImmediate;
+      setImmediate(() => {
+        let titleRef;
+        const focusTimeout = self.focusTimeout;
+        focusTimeout.start(300, () => {
+          const obj = self(dependencyMap[9]);
+          const obj2 = { ref: titleRef.titleRef };
+          const result = obj.setAccessibilityFocus(obj2);
+        });
       });
-    });
+    }
   }
-};
-prototype["componentWillUnmount"] = function componentWillUnmount() {
-  const timeout = this.timeout;
-  timeout.stop();
-  const focusTimeout = this.focusTimeout;
-  focusTimeout.stop();
-};
-prototype["componentDidUpdate"] = function componentDidUpdate() {
-  const self = this;
-  const confirming = this.props.confirming;
-  if (null != confirming) {
-    const timeout = self.timeout;
+  componentWillUnmount() {
+    const timeout = this.timeout;
     timeout.stop();
-    const obj = { confirming };
-    self.setState(obj);
+    const focusTimeout = this.focusTimeout;
+    focusTimeout.stop();
   }
-};
-prototype["renderHeader"] = function renderHeader() {
-  const self = this;
-  const tmp = closure_10(this.context);
-  const title = this.props.title;
-  let tmp3Result = null;
-  if (null != title) {
-    tmp3Result = null;
-    if ("" !== title) {
-      const obj2 = { ref: self.titleRef, accessible: true, accessibilityRole: "header", variant: "heading-md/extrabold", color: "text-default", style: tmp.titleText, children: null };
-      let renderContentResult = title;
-      if (typeof title === "string") {
-        renderContentResult = self.renderContent(title);
+  componentDidUpdate() {
+    const self = this;
+    const confirming = this.props.confirming;
+    if (null != confirming) {
+      const timeout = self.timeout;
+      timeout.stop();
+      const obj = { confirming };
+      self.setState(obj);
+    }
+  }
+  renderHeader() {
+    let items;
+    let renderContentResult;
+    const self = this;
+    const tmp = closure_10(this.context);
+    const title = this.props.title;
+    let tmp3Result = null;
+    if (null != title) {
+      tmp3Result = null;
+      if ("" !== title) {
+        const obj2 = { ref: self.titleRef, accessible: true, accessibilityRole: "header", variant: "heading-md/extrabold", color: "text-default", style: tmp.titleText, children: renderContentResult };
+        renderContentResult = title;
+        const Text = Text_Text.Text;
+        const tmp3 = metroImportAll;
+        if (typeof title === "string") {
+          renderContentResult = self.renderContent(title);
+        }
+        const obj = { children: items };
+        items = [metroImportDefault(Text, obj2), ];
+        const obj3 = { style: tmp.divider };
+        items[1] = metroImportDefault(hasOwnProperty, obj3);
+        tmp3Result = tmp3(tmp4, obj);
       }
-      const obj = { children: null };
-      obj2.children = renderContentResult;
-      const items = [React5(Text_Text.Text, obj2), ];
-      const obj3 = { style: tmp.divider };
-      items[1] = React5(hasOwnProperty, obj3);
-      obj.children = items;
-      tmp3Result = React6(tmp4, obj);
     }
+    return tmp3Result;
   }
-  return tmp3Result;
-};
-prototype["renderBody"] = function renderBody() {
-  const self = this;
-  const props = this.props;
-  const body = props.body;
-  let tmp5Result = null;
-  if (null != body) {
-    const obj = { style: null, children: null };
-    const obj2 = { maxHeight: self.props.contentHeight };
-    obj.style = obj2;
-    const obj3 = { variant: "text-md/normal", style: tmp.body, children: null };
-    let renderContentResult = body;
-    if (typeof body === "string") {
-      renderContentResult = self.renderContent(body);
+  renderBody() {
+    let Text;
+    let items;
+    let obj2;
+    let obj3;
+    let renderContentResult;
+    const self = this;
+    const props = this.props;
+    const body = props.body;
+    let tmp5Result = null;
+    const children = props.children;
+    const tmp2 = metroImportAll;
+    const tmp3 = React4;
+    if (null != body) {
+      const obj = { style: obj2, children: metroImportDefault(Text, obj3) };
+      obj3 = { variant: "text-md/normal", style: tmp.body, children: renderContentResult };
+      renderContentResult = body;
+      obj2 = { maxHeight: self.props.contentHeight };
+      Text = Text_Text.Text;
+      const tmp6 = metroRequire;
+      if (typeof body === "string") {
+        renderContentResult = self.renderContent(body);
+      }
+      tmp5Result = tmp5(tmp6, obj);
     }
-    obj3.children = renderContentResult;
-    obj.children = React5(Text_Text.Text, obj3);
-    tmp5Result = tmp5(timestampProducer, obj);
+    const obj4 = { children: items };
+    items = [tmp5Result, children];
+    return tmp2(tmp3, obj4);
   }
-  const obj4 = { children: null };
-  const items = [tmp5Result, props.children];
-  obj4.children = items;
-  return React6(React7, obj4);
-};
-prototype["renderButtons"] = function renderButtons() {
-  const self = this;
-  const tmp = closure_10(this.context);
-  const props = this.props;
-  ({ cancelText, confirmText } = props);
-  if (undefined === confirmText) {
-    const intl = util.intl;
-    confirmText = intl.string(util.t.BddRzS);
-  }
-  ({ confirmColor, secondaryConfirmText, renderConfirmIcon, renderConfirmRightIcon, renderConfirmButton, isConfirmButtonDisabled } = props);
-  let tmp15Result = null;
-  if (!props.noDefaultButtons) {
-    let tmp6;
-    if (null != cancelText) {
-      const obj = { style: tmp.cancelButton, children: null };
-      const obj2 = { variant: "secondary", onPress: self.handleCancel, text: cancelText };
-      obj.children = React5(components_Button_Button.Button, obj2);
-      tmp6 = React5(hasOwnProperty, obj);
+  renderButtons() {
+    let cancelText;
+    let confirmColor;
+    let confirmText;
+    let isConfirmButtonDisabled;
+    let items;
+    let obj2;
+    let obj4;
+    let renderConfirmButton;
+    let renderConfirmIcon;
+    let renderConfirmIconResult;
+    let renderConfirmRightIcon;
+    let secondaryConfirmText;
+    let str2;
+    const self = this;
+    const tmp = closure_10(this.context);
+    const props = this.props;
+    ({ cancelText, confirmText } = props);
+    if (undefined === confirmText) {
+      const intl = intl2.intl;
+      confirmText = intl.string(intl2.t.BddRzS);
     }
-    let tmp11;
-    if (null != secondaryConfirmText) {
-      const obj3 = { accessibilityRole: "button", style: tmp.secondaryConfirm, onPress: self.handleSecondaryConfirm, children: null };
-      const obj4 = { variant: "text-sm/semibold", color: "text-link", children: secondaryConfirmText };
-      obj3.children = React5(Text_Text.Text, obj4);
-      tmp11 = React5(Pressables.PressableOpacity, obj3);
-    }
-    const obj5 = { style: tmp.buttons, children: null };
-    let renderConfirmButtonResult;
-    if (renderConfirmButton != null) {
-      renderConfirmButtonResult = renderConfirmButton();
-    }
-    if (renderConfirmButtonResult == null) {
-      let str = "active";
-      if (native.ButtonColors.GREEN !== confirmColor) {
-        str = "destructive";
-        if (tmp21(1177).ButtonColors.RED !== confirmColor) {
-          str = "secondary";
-          if (tmp21(1177).ButtonColors.GREY !== confirmColor) {
+    ({ confirmColor, secondaryConfirmText, renderConfirmIcon, renderConfirmRightIcon, renderConfirmButton, isConfirmButtonDisabled } = props);
+    let tmp15Result = null;
+    if (!props.noDefaultButtons) {
+      let tmp6;
+      if (null != cancelText) {
+        const obj = { style: tmp.cancelButton, children: metroImportDefault(components_Button_Button.Button, obj2) };
+        obj2 = { variant: "secondary", onPress: self.handleCancel, text: cancelText };
+        tmp6 = metroImportDefault(hasOwnProperty, obj);
+      }
+      let tmp11;
+      if (null != secondaryConfirmText) {
+        const obj3 = { accessibilityRole: "button", style: tmp.secondaryConfirm, onPress: self.handleSecondaryConfirm, children: metroImportDefault(Text_Text.Text, obj4) };
+        const PressableOpacity = Pressables.PressableOpacity;
+        obj4 = { variant: "text-sm/semibold", color: "text-link", children: secondaryConfirmText };
+        tmp11 = metroImportDefault(PressableOpacity, obj3);
+      }
+      let renderConfirmButtonResult;
+      const obj5 = { style: tmp.buttons, children: items };
+      const tmp15 = metroImportAll;
+      const tmp16 = hasOwnProperty;
+      if (renderConfirmButton != null) {
+        renderConfirmButtonResult = renderConfirmButton();
+      }
+      if (renderConfirmButtonResult == null) {
+        const Button = components_Button_Button.Button;
+        let str = "active";
+        const tmp20 = metroImportDefault;
+        if (native.ButtonColors.GREEN !== confirmColor) {
+          str = "destructive";
+          if (native.ButtonColors.RED !== confirmColor) {
             str = "secondary";
-            if (tmp21(1177).ButtonColors.LIGHTGREY !== confirmColor) {
+            if (native.ButtonColors.GREY !== confirmColor) {
               str = "secondary";
-              if (tmp21(1177).ButtonColors.TRANSPARENT !== confirmColor) {
-                str = "primary";
-                if (tmp21(1177).ButtonColors.WHITE === confirmColor) {
-                  str = "primary-overlay";
+              if (native.ButtonColors.LIGHTGREY !== confirmColor) {
+                str = "secondary";
+                if (native.ButtonColors.TRANSPARENT !== confirmColor) {
+                  str = "primary";
+                  if (native.ButtonColors.WHITE === confirmColor) {
+                    str = "primary-overlay";
+                  }
                 }
               }
             }
           }
         }
-      }
-      const obj6 = { variant: str, onPress: self.handleConfirm, text: confirmText, loading: tmp4, disabled: null, icon: null, iconPosition: null };
-      if (isConfirmButtonDisabled == null) {
-        isConfirmButtonDisabled = false;
-      }
-      obj6.disabled = isConfirmButtonDisabled;
-      let renderConfirmIconResult;
-      if (renderConfirmIcon != null) {
-        renderConfirmIconResult = renderConfirmIcon();
-      }
-      if (renderConfirmIconResult == null) {
-        let result;
-        if (renderConfirmRightIcon != null) {
-          result = renderConfirmRightIcon();
+        const obj6 = { variant: str, onPress: self.handleConfirm, text: confirmText, loading: tmp4, disabled: isConfirmButtonDisabled, icon: renderConfirmIconResult, iconPosition: str2 };
+        if (isConfirmButtonDisabled == null) {
+          isConfirmButtonDisabled = false;
         }
-        renderConfirmIconResult = result;
-      }
-      obj6.icon = renderConfirmIconResult;
-      let str2 = "start";
-      if (null == renderConfirmIcon) {
-        let str3;
-        if (null != renderConfirmRightIcon) {
-          str3 = "end";
+        renderConfirmIconResult = undefined;
+        if (renderConfirmIcon != null) {
+          renderConfirmIconResult = renderConfirmIcon();
         }
-        str2 = str3;
+        if (renderConfirmIconResult == null) {
+          let result;
+          if (renderConfirmRightIcon != null) {
+            result = renderConfirmRightIcon();
+          }
+          renderConfirmIconResult = result;
+        }
+        str2 = "start";
+        if (null == renderConfirmIcon) {
+          let str3;
+          if (null != renderConfirmRightIcon) {
+            str3 = "end";
+          }
+          str2 = str3;
+        }
+        renderConfirmButtonResult = tmp20(Button, obj6);
       }
-      obj6.iconPosition = str2;
-      renderConfirmButtonResult = React5(components_Button_Button.Button, obj6);
+      items = [renderConfirmButtonResult, tmp6, tmp11];
+      tmp15Result = tmp15(tmp16, obj5);
     }
-    const items = [renderConfirmButtonResult, tmp6, tmp11];
-    obj5.children = items;
-    tmp15Result = React6(hasOwnProperty, obj5);
+    return tmp15Result;
   }
-  return tmp15Result;
-};
-prototype["renderFooter"] = function renderFooter() {
-  const footer = this.props.footer;
-  let tmp = null;
-  if (null != footer) {
-    const obj = { children: footer };
-    tmp = React5(hasOwnProperty, obj);
+  renderFooter() {
+    const footer = this.props.footer;
+    let tmp = null;
+    if (null != footer) {
+      const obj = { children: footer };
+      tmp = metroImportDefault(hasOwnProperty, obj);
+    }
+    return tmp;
   }
-  return tmp;
-};
-prototype["render"] = function render() {
-  const tmp = closure_10(this.context);
-  const props = this.props;
-  const width = props.width;
-  const obj = { children: null };
-  ({ style, isLandscape, onClose } = props);
-  const items = [React5(ThemedGradientDefault, { absolute: true, componentStyles: tmp.gradient }), ];
-  const obj3 = { onAccessibilityEscape: onClose, style: null, children: null };
-  const items1 = [tmp.alert, style, { width }];
-  obj3.style = items1;
-  const items2 = [this.renderHeader(), this.renderBody(), this.renderButtons(), this.renderFooter()];
-  obj3.children = items2;
-  items[1] = React6(hasOwnProperty, obj3);
-  obj.children = items;
-  const tmp3 = React6(React7, obj);
-  let tmp2Result = tmp3;
-  if (isLandscape) {
-    const obj4 = { style: null, children: null };
-    const obj5 = { maxHeight: width };
-    obj4.style = obj5;
-    obj4.children = tmp3;
-    tmp2Result = React5(timestampProducer, obj4);
+  render() {
+    let isLandscape;
+    let items;
+    let items1;
+    let items2;
+    let obj5;
+    let onClose;
+    let style;
+    const tmp = closure_10(this.context);
+    const props = this.props;
+    const width = props.width;
+    const obj = { children: items };
+    ({ style, isLandscape, onClose } = props);
+    items = [, ];
+    const obj2 = { absolute: true, componentStyles: tmp.gradient };
+    items[0] = metroImportDefault(ThemedGradientDefault, obj2);
+    const obj3 = { onAccessibilityEscape: onClose, style: items1, children: items2 };
+    items1 = [tmp.alert, style, { width }];
+    items2 = [this.renderHeader(), this.renderBody(), this.renderButtons(), this.renderFooter()];
+    items[1] = metroImportAll(hasOwnProperty, obj3);
+    const tmp3 = metroImportAll(React4, obj);
+    let tmp2Result = tmp3;
+    const tmp2 = metroImportDefault;
+    if (isLandscape) {
+      const obj4 = { style: obj5, children: tmp3 };
+      obj5 = { maxHeight: width };
+      tmp2Result = tmp2(metroRequire, obj4);
+    }
+    return tmp2Result;
   }
-  return tmp2Result;
-};
-Alert.contextType = fn(4569).ThemeContext;
-const obj7 = { borderRadius: nativeDefault.radii.sm };
-Alert.defaultProps = { confirmColor: fn(1177).ButtonColors.BRAND, autoCloseOnConfirm: true };
-const memoResult = noop.memo((arg0) => {
-  const size = useWindowDimensionsDefault();
-  const isScreenLandscape = useIsScreenLandscape.useIsScreenLandscape();
-  const merged = Object.assign(arg0);
-  return React5(Alert, { width: Math.min(0.9 * Math.min(size.width, size.height), 400), contentHeight: 0.7 * size.height, isLandscape: isScreenLandscape });
-});
-memoResult.Colors = fn(1177).ButtonColors;
-let size = fn(2);
-let result = size.fileFinishedImporting("components_native/common/Alert.tsx");
-
-export default memoResult;
-export const getAlertButtonVariant = function getAlertButtonVariant(confirmColor) {
+}
+const prototype = Alert.prototype;
+Alert.contextType = native2.ThemeContext;
+Alert.defaultProps = { confirmColor: native.ButtonColors.BRAND, autoCloseOnConfirm: true };
+const memo = react.memo;
+({ confirmColor: native.ButtonColors.BRAND, autoCloseOnConfirm: true });
+function getAlertButtonVariant(confirmColor) {
   if (native.ButtonColors.GREEN === confirmColor) {
     return "active";
-  } else if (tmp(1177).ButtonColors.RED === confirmColor) {
+  } else if (native.ButtonColors.RED === confirmColor) {
     return "destructive";
   } else {
-    if (tmp(1177).ButtonColors.GREY !== confirmColor) {
-      if (tmp(1177).ButtonColors.LIGHTGREY !== confirmColor) {
-        if (tmp(1177).ButtonColors.TRANSPARENT !== confirmColor) {
-          if (tmp(1177).ButtonColors.WHITE === confirmColor) {
+    if (native.ButtonColors.GREY !== confirmColor) {
+      if (native.ButtonColors.LIGHTGREY !== confirmColor) {
+        if (native.ButtonColors.TRANSPARENT !== confirmColor) {
+          if (native.ButtonColors.WHITE === confirmColor) {
             return "primary-overlay";
           } else {
             return "primary";
@@ -317,4 +351,46 @@ export const getAlertButtonVariant = function getAlertButtonVariant(confirmColor
     }
     return "secondary";
   }
-};
+}
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const obj = react2;
+  const cResult = obj.c(5);
+  size = useWindowDimensionsDefault();
+  const obj2 = useIsScreenLandscape;
+  const isScreenLandscape = obj2.useIsScreenLandscape();
+  const bound = Math.min(0.9 * Math.min(size.width, size.height), 400);
+  const result = 0.7 * size.height;
+  if (cResult[0] === result) {
+    if (cResult[1] === isScreenLandscape) {
+      if (cResult[2] === arg0) {
+        let tmp5;
+        if (cResult[3] === bound) {
+          tmp5 = cResult[4];
+        }
+        return tmp5;
+      }
+    }
+  }
+  const obj3 = { width: bound, contentHeight: result, isLandscape: isScreenLandscape };
+  const merged = Object.assign(arg0);
+  const tmp7 = metroImportDefault(Alert, obj3);
+  cResult[0] = result;
+  cResult[1] = isScreenLandscape;
+  cResult[2] = arg0;
+  cResult[3] = bound;
+  cResult[4] = tmp7;
+  tmp5 = tmp7;
+}) : ((arg0) => {
+  size = useWindowDimensionsDefault();
+  const obj = useIsScreenLandscape;
+  const isScreenLandscape = obj.useIsScreenLandscape();
+  const obj2 = { width: Math.min(0.9 * Math.min(size.width, size.height), 400), contentHeight: 0.7 * size.height, isLandscape: isScreenLandscape };
+  const merged = Object.assign(arg0);
+  return metroImportDefault(Alert, obj2);
+}));
+memoResult.Colors = native.ButtonColors;
+let size = size_mod;
+let result = size.fileFinishedImporting("components_native/common/Alert.tsx");
+
+export default memoResult;
+export { getAlertButtonVariant };

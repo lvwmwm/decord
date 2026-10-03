@@ -1,42 +1,176 @@
-// Module ID: 16683
-// Function ID: 16684
+// Module ID: 16771
+// Function ID: 16772
 // Name: ChannelDetailsSearchBar
-// Dependencies: [19, 12032, 7475, 10572, 21, 4845, 12072, 11992, 12052, 12055, 16684, 5621, 1115, 10029, 2]
+// Dependencies: [19, 11967, 7511, 10653, 21, 4890, 12007, 558, 576, 11927, 11982, 11985, 5909, 1126, 10099, 16772, 2]
 
-// Module 16683 (ChannelDetailsSearchBar)
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12055 */;
-import noop from "module_19" /* 19 */;
-import SearchQueryStore from "SearchQueryStore" /* 12032 */;
+// Module 16771 (ChannelDetailsSearchBar)
+import Fragment from "Fragment" /* 21 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 7511 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10653 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 11985 */;
+import SearchButton from "SearchButton" /* 12007 */;
+import react from "react" /* 19 */;
+import SearchQueryStore_mod from "SearchQueryStore" /* 11967 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-let closure_5 = fn(7475).setIsChannelDetailsSearchActive;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
-let obj = { back: { justifyContent: "center", height: fn(12072).SEARCH_BAR_HEIGHT, paddingStart: fn(10572).CHANNEL_DETAILS_MARGIN, paddingEnd: 8 } };
+let channelId;
+
+let obj2;
+let SearchQueryStore = SearchQueryStore_mod;
+let closure_5 = ChannelDetailsStore.setIsChannelDetailsSearchActive;
+const CHANNEL_DETAILS_MARGIN = ChannelDetailsConstants.CHANNEL_DETAILS_MARGIN;
+const jsx = Fragment.jsx;
+let obj = { back: obj2 };
+obj2 = { justifyContent: "center", height: SearchButton.SEARCH_BAR_HEIGHT, paddingStart: CHANNEL_DETAILS_MARGIN, paddingEnd: 8 };
 let closure_7 = createStyles.createStyles(obj);
-let obj3 = { justifyContent: "center", height: fn(12072).SEARCH_BAR_HEIGHT, paddingStart: fn(10572).CHANNEL_DETAILS_MARGIN, paddingEnd: 8 };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsSearchBar.tsx");
-
-export default noop.memo(noop.forwardRef((channelId, ref) => {
+const forwardRef = react.forwardRef;
+const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId, arg1) => {
+  let channelDetailsSearchContext;
+  let closure_4;
+  let tmp12;
+  let tmp7;
+  let tmp = channelId;
+  let obj = channelId(channelDetailsSearchContext[8]);
+  const cResult = obj.c(22);
+  channelId = channelId.channelId;
+  const onBackPress = channelId.onBackPress;
+  const showBackButton = channelId.showBackButton;
+  let tmp4 = undefined === showBackButton;
+  const guildId = channelId.guildId;
+  const tmp2 = channelDetailsSearchContext;
+  if (!tmp4) {
+    tmp4 = showBackButton;
+  }
+  closure_7();
+  const tmpResult = tmp(tmp2[9]);
+  channelDetailsSearchContext = tmpResult.useChannelDetailsSearchContext(channelId, guildId);
+  if (cResult[0] !== channelDetailsSearchContext) {
+    const fn = function h() {
+      let searchContext;
+      return () => {
+        const obj = onBackPress(channelDetailsSearchContext[10]);
+        const obj2 = { searchContext };
+        obj.trackSearchClosed(obj2);
+      };
+    };
+    cResult[0] = channelDetailsSearchContext;
+    cResult[1] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[1];
+  }
+  if (cResult[2] === channelId) {
+    let tmp8;
+    if (cResult[3] === channelDetailsSearchContext) {
+      tmp8 = cResult[4];
+    }
+    const effect = C.useEffect(tmp7, tmp8);
+    if (cResult[5] !== channelDetailsSearchContext) {
+      class C {
+        constructor() {
+          const tmp = channelDetailsSearchContext;
+          if (!SearchQueryStore.isInitialSearchQuery(channelDetailsSearchContext)) {
+            const obj = SearchPlatformActionCreatorsDefault;
+            obj.updateSearchQuery(tmp, (reset) => reset.reset());
+          }
+        }
+      }
+      cResult[5] = channelDetailsSearchContext;
+      cResult[6] = C;
+    } else {
+      class C {
+        constructor() {
+          const tmp = channelDetailsSearchContext;
+          if (!SearchQueryStore.isInitialSearchQuery(channelDetailsSearchContext)) {
+            const obj = SearchPlatformActionCreatorsDefault;
+            obj.updateSearchQuery(tmp, (reset) => reset.reset());
+          }
+        }
+      }
+    }
+    C = tmp11;
+    if (cResult[7] === channelId) {
+      class C {
+        constructor() {
+          const tmp = channelDetailsSearchContext;
+          if (!SearchQueryStore.isInitialSearchQuery(channelDetailsSearchContext)) {
+            const obj = SearchPlatformActionCreatorsDefault;
+            obj.updateSearchQuery(tmp, (reset) => reset.reset());
+          }
+        }
+      }
+      SearchQueryStore = tmp12;
+      if (cResult[10] === onBackPress) {
+        class C {
+          constructor() {
+            const tmp = channelDetailsSearchContext;
+            if (!SearchQueryStore.isInitialSearchQuery(channelDetailsSearchContext)) {
+              const obj = SearchPlatformActionCreatorsDefault;
+              obj.updateSearchQuery(tmp, (reset) => reset.reset());
+            }
+          }
+        }
+      }
+      class E {
+        constructor() {
+          C();
+          if (undefined !== onBackPress) {
+            onBackPress();
+          } else {
+            tmp12();
+          }
+        }
+      }
+      cResult[10] = onBackPress;
+      cResult[11] = tmp12;
+      cResult[12] = tmp11;
+      cResult[13] = E;
+    }
+    const fn2 = function _() {
+      C();
+      closure_5(channelId, false, "action");
+    };
+    cResult[7] = channelId;
+    cResult[8] = tmp11;
+    cResult[9] = fn2;
+    tmp12 = fn2;
+  }
+  const items = [channelId, channelDetailsSearchContext];
+  cResult[2] = channelId;
+  cResult[3] = channelDetailsSearchContext;
+  cResult[4] = items;
+  tmp8 = items;
+}) : ((channelId, ref) => {
+  let intl;
   channelId = channelId.channelId;
   const onBackPress = channelId.onBackPress;
   let flag = channelId.showBackButton;
+  const guildId = channelId.guildId;
   if (flag === undefined) {
     flag = true;
   }
   let channelDetailsSearchContext;
   let callback;
-  const tmp = closure_7();
-  channelDetailsSearchContext = channelId(channelDetailsSearchContext[7]).useChannelDetailsSearchContext(channelId, channelId.guildId);
+  let tmp = closure_7();
+  let obj = channelId(channelDetailsSearchContext[9]);
+  channelDetailsSearchContext = obj.useChannelDetailsSearchContext(channelId, guildId);
   const items = [channelId, channelDetailsSearchContext];
-  const effect = callback.useEffect(() => () => {
-    onBackPress(channelDetailsSearchContext[8]).trackSearchClosed({ searchContext });
+  const effect = callback.useEffect(() => {
+    let searchContext;
+    return () => {
+      const obj = onBackPress(channelDetailsSearchContext[10]);
+      const obj2 = { searchContext };
+      obj.trackSearchClosed(obj2);
+    };
   }, items);
   const items1 = [channelDetailsSearchContext];
   callback = callback.useCallback(() => {
+    const tmp = channelDetailsSearchContext;
     if (!SearchQueryStore.isInitialSearchQuery(channelDetailsSearchContext)) {
-      SearchPlatformActionCreatorsDefault.updateSearchQuery(channelDetailsSearchContext, (reset) => reset.reset());
+      const obj = SearchPlatformActionCreatorsDefault;
+      obj.updateSearchQuery(tmp, (reset) => reset.reset());
     }
   }, items1);
   const items2 = [channelId, callback];
@@ -53,16 +187,16 @@ export default noop.memo(noop.forwardRef((channelId, ref) => {
       callback1();
     }
   }, items3);
-  const obj2 = { ref, searchContext: channelDetailsSearchContext, backButton: null };
   let tmp9Result = null;
-  let obj = channelId(channelDetailsSearchContext[7]);
+  onBackPress(channelDetailsSearchContext[15]);
   if (flag) {
-    const obj3 = { accessibilityRole: "button", onPress: callback2, style: tmp.back, accessibilityLabel: null, children: null };
-    const intl = tmp2(tmp3[12]).intl;
-    obj3.accessibilityLabel = intl.string(tmp2(tmp3[12]).t["13/7kX"]);
-    obj3.children = tmp9(tmp2(tmp3[13]).ChevronLargeLeftIcon, { size: "sm", color: "interactive-text-default" });
-    tmp9Result = tmp9(tmp2(tmp3[11]).PressableOpacity, obj3);
+    const obj3 = { accessibilityRole: "button", onPress: callback2, style: tmp.back, accessibilityLabel: intl.string(channelId(channelDetailsSearchContext[13]).t["13/7kX"]), children: null };
+    const PressableOpacity = tmp2(tmp3[12]).PressableOpacity;
+    intl = tmp2(tmp3[13]).intl;
+    tmp9Result = tmp9(PressableOpacity, obj3);
   }
-  obj2.backButton = tmp9Result;
-  return jsx(onBackPress(channelDetailsSearchContext[10]), { ref, searchContext: channelDetailsSearchContext, backButton: null });
-}));
+  return <tmp10 ref={arg1} searchContext={channelDetailsSearchContext} backButton={tmp9Result} />;
+})));
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsSearchBar.tsx");
+
+export default memoResult;

@@ -1,9 +1,39 @@
 // Module ID: 6132
 // Function ID: 6133
-// Dependencies: [1121]
+// Dependencies: [1643]
+// Exports: getKeyboardAnimationConfigs
 
 // Module 6132
-import registerAsset from "module_1121" /* 1121 */;
+import _mod1643 from "module_1643" /* 1643 */;
 
+const require = globalThis.__r;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../node_modules/.pnpm/@react-navigation+elements@2.9.34_ogrwmflqwrxbxbb3hpokpwnsgq/node_modules/@react-navigation/elements/lib/module/assets", width: 24, height: 24, scales: [1, 2, 3, 4], hash: "940453dc5cbfaa96cf907b3aa7791ece", name: "search-icon", type: "png" });
+const fn = function n(arg0, duration) {
+  let Easing;
+  let Easing2;
+  let Easing3;
+  if ("easeIn" === arg0) {
+    const obj2 = { easing: Easing3.in(_mod1643.Easing.ease), duration };
+    Easing3 = _mod1643.Easing;
+    return obj2;
+  } else if ("easeOut" === arg0) {
+    const obj3 = { easing: Easing2.out(_mod1643.Easing.ease), duration };
+    Easing2 = _mod1643.Easing;
+    return obj3;
+  } else if ("easeInEaseOut" === arg0) {
+    const obj4 = { easing: Easing.inOut(_mod1643.Easing.ease), duration };
+    Easing = _mod1643.Easing;
+    return obj4;
+  } else if ("linear" === arg0) {
+    const obj = { easing: _mod1643.Easing.linear, duration };
+    return obj;
+  } else if ("keyboard" === arg0) {
+    return { damping: 500, stiffness: 1000, mass: 3, overshootClamping: true, restDisplacementThreshold: 10, restSpeedThreshold: 10 };
+  }
+};
+let obj = { Easing: require("module_1643").Easing };
+fn.__closure = obj;
+fn.__workletHash = 10639588577824;
+fn.__initData = { code: "function pnpm_getKeyboardAnimationConfigsTs1(easing,duration){const{Easing}=this.__closure;switch(easing){case'easeIn':return{easing:Easing.in(Easing.ease),duration:duration};case'easeOut':return{easing:Easing.out(Easing.ease),duration:duration};case'easeInEaseOut':return{easing:Easing.inOut(Easing.ease),duration:duration};case'linear':return{easing:Easing.linear,duration:duration};case'keyboard':return{damping:500,stiffness:1000,mass:3,overshootClamping:true,restDisplacementThreshold:10,restSpeedThreshold:10};}}" };
+
+export const getKeyboardAnimationConfigs = fn;

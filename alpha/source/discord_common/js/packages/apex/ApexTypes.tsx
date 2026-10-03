@@ -1,16 +1,17 @@
-// Module ID: 1238
-// Function ID: 1239
+// Module ID: 1249
+// Function ID: 1250
 // Name: ApexTypes
-// Dependencies: [1239, 2]
+// Dependencies: [1250, 2]
 
-// Module 1238 (ApexTypes)
-import ExperimentsConstants from "ExperimentsConstants" /* 1239 */;
+// Module 1249 (ApexTypes)
+import ExperimentsConstants from "ExperimentsConstants" /* 1250 */;
 import size from "module_2" /* 2 */;
 
 const obj = { User: 1, [1]: "User", Installation: 2, [2]: "Installation", Guild: 3, [3]: "Guild" };
+const LOGGED_OUT_USER_ID_SENTINEL = ExperimentsConstants.LOGGED_OUT_USER_ID_SENTINEL;
 const result = size.fileFinishedImporting("../discord_common/js/packages/apex/ApexTypes.tsx");
 
 export const UnitType = obj;
 export const UnitTypeToKind = { [obj.User]: "user", [obj.Installation]: "installation", [obj.Guild]: "guild" };
 export const ExperimentFlags = { IsOverride: 1, [1]: "IsOverride", ExposureTrackingEnabled: 2, [2]: "ExposureTrackingEnabled", DependentExperiment: 4, [4]: "DependentExperiment", UseAsEligibility: 8, [8]: "UseAsEligibility" };
-export const LOGGED_OUT_USER_ID_SENTINEL = ExperimentsConstants.LOGGED_OUT_USER_ID_SENTINEL;
+export { LOGGED_OUT_USER_ID_SENTINEL };

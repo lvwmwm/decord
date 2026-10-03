@@ -1,33 +1,37 @@
-// Module ID: 14920
-// Function ID: 14921
+// Module ID: 14977
+// Function ID: 14978
 // Name: SameAsDeviceThemeUtils
-// Dependencies: [4682, 1182, 1185, 8850, 1228, 4714, 4711, 2]
+// Dependencies: [4697, 1193, 1196, 8863, 1239, 4729, 4726, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme
 
-// Module 14920 (SameAsDeviceThemeUtils)
-import ClientThemesUtils from "ClientThemesUtils" /* 1228 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 4711 */;
-import shared from "shared" /* 4714 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8850 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4682 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
+// Module 14977 (SameAsDeviceThemeUtils)
+import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 4726 */;
+import shared from "shared" /* 4729 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8863 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4697 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
+import ThemeConstants from "ThemeConstants" /* 1196 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ThemeConstants = fn(1185);
+let hasOwnProperty;
+let metroRequire;
 ({ SystemTheme: hasOwnProperty, SystemThemeState: metroRequire } = ThemeConstants);
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/appearance/SameAsDeviceThemeUtils.tsx");
 
 export const enableSameAsDeviceTheme = function enableSameAsDeviceTheme(customUserThemeSettings) {
-  const result = UserSettingsActionCreatorsDefault.setShouldSyncAppearanceSettings(false);
-  if (null == ThemeStore.getSyncedClientTheme(constants.LIGHT)) {
-    if (null == obj2.getSyncedClientTheme(tmp3.DARK)) {
+  const obj = UserSettingsActionCreatorsDefault;
+  const result = obj.setShouldSyncAppearanceSettings(false);
+  if (null == ThemeStore.getSyncedClientTheme(hasOwnProperty.LIGHT)) {
+    if (null == ThemeStore.getSyncedClientTheme(hasOwnProperty.DARK)) {
       const theme = obj2.theme;
       let customThemeBaseTheme = theme;
       if (null != customUserThemeSettings) {
-        customThemeBaseTheme = ClientThemesUtils.getCustomThemeBaseTheme(theme);
+        const obj3 = ClientThemesUtils;
+        customThemeBaseTheme = obj3.getCustomThemeBaseTheme(theme);
       }
-      const tmp8 = shared.isThemeDark(customThemeBaseTheme) ? tmp3.DARK : tmp3.LIGHT;
+      const obj4 = shared;
+      const tmp8 = obj4.isThemeDark(customThemeBaseTheme) ? hasOwnProperty.DARK : hasOwnProperty.LIGHT;
       if (!ClientThemesBackgroundStore.isPreview) {
         const gradientPreset = ClientThemesBackgroundStore.gradientPreset;
         let id;
@@ -37,27 +41,31 @@ export const enableSameAsDeviceTheme = function enableSameAsDeviceTheme(customUs
       }
       const obj5 = {};
       obj5[tmp8] = customThemeBaseTheme;
-      const result1 = ThemeActionCreators.updateThemePreferences(obj5);
+      const tmp6Result = ThemeActionCreators;
+      const result1 = tmp6Result.updateThemePreferences(obj5);
       if (null != customUserThemeSettings) {
         const obj6 = { customUserThemeSettings };
-        const result2 = tmp6(4711).updateSyncedClientTheme(tmp8, obj6);
-        const tmp6Result4 = tmp6(4711);
+        const tmp6Result4 = ThemeActionCreators;
+        const result2 = tmp6Result4.updateSyncedClientTheme(tmp8, obj6);
       } else if (null != tmp9) {
         const obj7 = { backgroundGradientPresetId: tmp9 };
-        const result3 = tmp6(4711).updateSyncedClientTheme(tmp8, obj7);
-        const tmp6Result5 = tmp6(4711);
+        const tmp6Result5 = ThemeActionCreators;
+        const result3 = tmp6Result5.updateSyncedClientTheme(tmp8, obj7);
       } else {
         const obj8 = { theme: customThemeBaseTheme };
-        const result4 = tmp6(4711).updateSyncedClientTheme(tmp8, obj8);
-        const tmp6Result6 = tmp6(4711);
+        const tmp6Result6 = ThemeActionCreators;
+        const result4 = tmp6Result6.updateSyncedClientTheme(tmp8, obj8);
       }
-      const tmp6Result = ThemeActionCreators;
     }
   }
-  const result5 = ThemeActionCreators.setSameAsDeviceThemeEnabled(true);
-  ThemeActionCreators.setUseSystemTheme(constants2.ON);
+  const obj13 = ThemeActionCreators;
+  const result5 = obj13.setSameAsDeviceThemeEnabled(true);
+  const obj14 = ThemeActionCreators;
+  obj14.setUseSystemTheme(metroRequire.ON);
 };
 export const disableSameAsDeviceTheme = function disableSameAsDeviceTheme() {
-  ThemeActionCreators.setUseSystemTheme(constants2.OFF);
-  const result = ThemeActionCreators.setSameAsDeviceThemeEnabled(false);
+  const obj = ThemeActionCreators;
+  obj.setUseSystemTheme(metroRequire.OFF);
+  const obj2 = ThemeActionCreators;
+  const result = obj2.setSameAsDeviceThemeEnabled(false);
 };

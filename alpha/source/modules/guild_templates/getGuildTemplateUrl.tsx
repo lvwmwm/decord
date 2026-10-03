@@ -1,10 +1,10 @@
-// Module ID: 17712
-// Function ID: 17713
+// Module ID: 17798
+// Function ID: 17799
 // Name: getGuildTemplateUrl
 // Dependencies: [2]
 // Exports: default
 
-// Module 17712 (getGuildTemplateUrl)
+// Module 17798 (getGuildTemplateUrl)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_templates/getGuildTemplateUrl.tsx");
@@ -24,5 +24,5 @@ export default function getGuildTemplateUrl() {
     const _HermesInternal = HermesInternal;
     str2 = "" + location.protocol;
   }
-  return "" + str2 + "//" + window.GLOBAL_ENV.GUILD_TEMPLATE_HOST + "/" + str;
+  return "" + str2 + "//" + GUILD_TEMPLATE_HOST + "/" + str;
 };

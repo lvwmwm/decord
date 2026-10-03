@@ -1,34 +1,51 @@
-// Module ID: 16531
-// Function ID: 16532
+// Module ID: 16608
+// Function ID: 16609
 // Name: useVibegrationsPublishAction
-// Dependencies: [5, 19, 5072, 7208, 2044, 4496, 2066, 4498, 12851, 8686, 1074, 5554, 5555, 16532, 16504, 6770, 8689, 8687, 16533, 16534, 1115, 3714, 573, 7808, 16535, 8688, 16467, 16502, 504, 2]
+// Dependencies: [5, 19, 5118, 7111, 2051, 4507, 2074, 4509, 12904, 8699, 1085, 6746, 6747, 16609, 16582, 6658, 8702, 8700, 16610, 16611, 1126, 3723, 584, 7852, 16612, 8701, 16544, 16580, 504, 2]
 // Exports: default, openVibegrationsPublishedApp
 
-// Module 16531 (useVibegrationsPublishAction)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import util from "util" /* 1115 */;
-import _modDef3714 from "module_3714" /* 3714 */;
-import VibegrationsUtils from "VibegrationsUtils" /* 5554 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5555 */;
-import UserActionCreators from "UserActionCreators" /* 7808 */;
-import VibegrationsActionCreators from "VibegrationsActionCreators" /* 8687 */;
-import openVibegrationsPublishDestination from "openVibegrationsPublishDestination" /* 16532 */;
-import vibegrationsFeedback from "vibegrationsFeedback" /* 16534 */;
-import vibegrationsPublishAction2 from "vibegrationsPublishAction" /* 16535 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5072 */;
-import UserProfileStore from "UserProfileStore" /* 7208 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildChannelStore from "GuildChannelStore" /* 4496 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import PermissionStore from "PermissionStore" /* 4498 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8686 */;
+// Module 16608 (useVibegrationsPublishAction)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import VibegrationsUtils from "VibegrationsUtils" /* 6746 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 6747 */;
+import UserActionCreators from "UserActionCreators" /* 7852 */;
+import VibegrationsProjectStore2 from "VibegrationsProjectStore" /* 8699 */;
+import VibegrationsActionCreators from "VibegrationsActionCreators" /* 8700 */;
+import openVibegrationsPublishDestination from "openVibegrationsPublishDestination" /* 16609 */;
+import vibegrationsFeedback from "vibegrationsFeedback" /* 16611 */;
+import vibegrationsPublishAction2 from "vibegrationsPublishAction" /* 16612 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import ApplicationStore from "ApplicationStore" /* 5118 */;
+import UserProfileStore from "UserProfileStore" /* 7111 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12904 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+const VibegrationsProjectStore = VibegrationsProjectStore2;
+let _require, c12, c13, c4, c5, closure_10;
 
-require = fn;
+let closure_12;
+let tmp;
+let unpackModuleId;
+const _modDef3723 = tmp(3723);
+const f125564 = () => {
+
+};
 function readPublishSubject(projectId, guildId) {
+  let canResult;
+  let canResult1;
+  let name;
+  let obj4;
+  let obj5;
+  let tmp21;
+  let tmp9;
   const project = VibegrationsProjectStore.getProject(projectId);
   if (null == project) {
     return null;
@@ -43,23 +60,23 @@ function readPublishSubject(projectId, guildId) {
     }
     let result = null;
     if (null != tmp2) {
-      result = VibegrationsUtils.findVibegrationChannelId(tmp2, project.application_id);
+      const obj2 = VibegrationsUtils;
+      result = obj2.findVibegrationChannelId(tmp2, project.application_id);
     }
     let guild = null;
     if (null != tmp2) {
       guild = GuildStore.getGuild(tmp2);
     }
-    const obj3 = { project, guildId: tmp2, appChannelId: result, input: null };
-    const obj4 = { installScope: project.install_scope, status: obj.getPublishStatus(projectId), integrationStatus: obj.getIntegrationStatus(projectId), guildName: null, appChannelName: null, appChannelPending: null, canManageGuild: null, canManageChannels: null, usesNativeAppChannels: null, botInGuild: null };
-    let name;
+    const obj3 = { project, guildId: tmp2, appChannelId: result, input: obj4 };
+    obj4 = { installScope: project.install_scope, status: VibegrationsProjectStore.getPublishStatus(projectId), integrationStatus: VibegrationsProjectStore.getIntegrationStatus(projectId), guildName: name, appChannelName: tmp9, appChannelPending: VibegrationsProjectStore.isAppChannelPending(projectId), canManageGuild: canResult, canManageChannels: canResult1, usesNativeAppChannels: obj5.projectUsesNativeAppChannels(project), botInGuild: tmp21 };
+    name = undefined;
     if (guild != null) {
       name = guild.name;
     }
     if (name == null) {
       name = null;
     }
-    obj4.guildName = name;
-    let tmp9 = null;
+    tmp9 = null;
     if (null != result) {
       const channel = ChannelStore.getChannel(result);
       let name1;
@@ -71,22 +88,19 @@ function readPublishSubject(projectId, guildId) {
       }
       tmp9 = name1;
     }
-    obj4.appChannelName = tmp9;
-    obj4.appChannelPending = obj.isAppChannelPending(projectId);
-    let canResult = null;
+    canResult = null;
     if (null != guild) {
       canResult = PermissionStore.can(Permissions.MANAGE_GUILD, guild);
     }
-    obj4.canManageGuild = canResult;
-    let canResult1 = null;
+    canResult1 = null;
     if (null != guild) {
       canResult1 = PermissionStore.can(Permissions.MANAGE_CHANNELS, guild);
     }
-    obj4.canManageChannels = canResult1;
-    obj4.usesNativeAppChannels = VibegrationsTypes.projectUsesNativeAppChannels(project);
     guild_id = tmp2;
-    let tmp21 = null;
+    tmp21 = null;
+    obj5 = VibegrationsTypes;
     if (null != tmp2) {
+      const getMutualGuilds = UserProfileStore.getMutualGuilds;
       const application = ApplicationStore.getApplication(project.application_id);
       let id;
       if (application != null) {
@@ -98,167 +112,170 @@ function readPublishSubject(projectId, guildId) {
       if (id == null) {
         id = project.application_id;
       }
-      const mutualGuilds = UserProfileStore.getMutualGuilds(id);
+      const mutualGuilds = getMutualGuilds(id);
       let someResult = null;
       if (null != mutualGuilds) {
         someResult = mutualGuilds.some((guild) => guild.guild.id === guild_id);
       }
       tmp21 = someResult;
     }
-    obj4.botInGuild = tmp21;
-    obj3.input = obj4;
     return obj3;
   }
 }
 function openDestinationFor(applicationId, destination, openProfile) {
-  return openVibegrationsPublishDestination.openVibegrationsPublishDestination(destination, { applicationId: applicationId.project.application_id, guildId: applicationId.guildId, appChannelId: applicationId.appChannelId, openProfile: openProfile.openProfile, openAutomodSettings: openProfile.openAutomodSettings });
+  obj = openVibegrationsPublishDestination;
+  const obj2 = { applicationId: applicationId.project.application_id, guildId: applicationId.guildId, appChannelId: applicationId.appChannelId, openProfile: openProfile.openProfile, openAutomodSettings: openProfile.openAutomodSettings };
+  return obj.openVibegrationsPublishDestination(destination, obj2);
 }
 function requestVibegrationsInstallConsent() {
-  const self = this;
-  const apply = closure_20.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 }
-let closure_20 = async function _requestVibegrationsInstallConsent(arg0, value) {
-  if (c5 === 2) {
-    c5 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp5 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj3 = { value, done: true };
-      return obj3;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c5 = 2;
-      if (0 === c4) {
-        if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          const obj4 = { value, done: true };
-          return obj4;
-        } else {
-          const guildId = tmp2;
-          const applicationId = tmp3;
-          closure_130_0 = closure_0;
-          closure_130_1 = undefined;
-          closure_130_2 = undefined;
-          closure_130_3 = undefined;
-          project = project.getProject(closure_0);
-          closure_130_1 = project;
-          let prop;
-          if (project != null) {
-            prop = project.preview_application_id;
-          }
-          closure_130_2 = prop;
-          if (null != project) {
-            if (null != prop) {
-              closure_130_3 = require("VibegrationsInstallTarget").vibegrationsInstallGuildId(project, project.getIntegrationStatus(closure_0), closure_1);
-              if (null == application.getApplication(prop)) {
-                application = require("ApplicationActionCreators").fetchApplication(prop);
-                c4 = 1;
-                c5 = 1;
-                const obj6 = {
-                  value: application.catch(() => {
-
-                                }),
-                  done: false
-                };
-                return obj6;
-              }
-              const obj9 = require("VibegrationsInstallTarget");
-            }
-          }
-          c5 = 3;
-          return { value: "HermesInternal", done: null };
-        }
-      } else if (1 === tmp6) {
-        if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          const obj7 = { value, done: true };
-          return obj7;
-        }
-      } else if (2 === tmp6) {
-        if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          const obj8 = { value, done: true };
-          return obj8;
-        } else {
-          let result = closure_131_0(closure_131_2[14]).repairVibegrationsGuildHints(closure_130_1, closure_130_3);
-          c4 = 3;
-          c5 = 1;
-          const obj10 = {
-            value: result.catch(() => {
-
-                    }),
-            done: false
-          };
-          return obj10;
-        }
-      } else if (3 === tmp6) {
-        if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          const obj12 = { value, done: true };
-          return obj12;
-        } else {
-          const project1 = closure_131_0(closure_131_2[17]).getProject(closure_130_0);
-          c4 = 4;
-          c5 = 1;
-          const obj13 = {
-            value: project1.catch(() => {
-
-                    }),
-            done: false
-          };
-          return obj13;
-        }
-      } else if (arg0 === 1) {
-        c5 = 3;
+let obj = function _requestVibegrationsInstallConsent() {
+  obj = _asyncToGenerator(async function(arg0, value) {
+    let closure_2;
+    let closure_3;
+    let closure_0 = arg0;
+    let closure_1 = value;
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        c5 = 3;
-        const obj = { value, done: true };
-        return obj;
+        const obj3 = { value, done: true };
+        return obj3;
+      } else {
+        return { value: "IconComponent", done: "IconComponent" };
       }
-      const promise = new Promise((onClose) => {
-        const obj2 = { applicationId, application: null, guildId: null, onClose: null };
-        application = application.getApplication(applicationId);
-        if (application == null) {
-          application = null;
+    } else {
+      try {
+        let guildId;
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            const applicationId = tmp2;
+            project = undefined;
+            guildId = undefined;
+            const obj15 = project;
+            project = project.getProject(closure_0);
+            let prop;
+            const tmp31 = closure_0;
+            const tmp32 = closure_1;
+            if (project != null) {
+              prop = project.preview_application_id;
+            }
+            if (null != project) {
+              if (null != prop) {
+                const obj9 = require("VibegrationsInstallTarget");
+                guildId = obj9.vibegrationsInstallGuildId(project, obj15.getIntegrationStatus(tmp31), tmp32);
+                if (null == application.getApplication(prop)) {
+                  const obj11 = require("ApplicationActionCreators");
+                  application = obj11.fetchApplication(prop);
+                  c4 = 1;
+                  c5 = 1;
+                  const obj6 = {
+                    value: application.catch(() => {
+
+                                  }),
+                    done: false
+                  };
+                  return obj6;
+                }
+              }
+            }
+            c5 = 3;
+            return { value: "IconComponent", done: "IconComponent" };
+          }
+        } else if (1 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj7 = { value, done: true };
+            return obj7;
+          }
+        } else if (2 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj8 = { value, done: true };
+            return obj8;
+          } else {
+            const obj5 = closure_131_0(closure_131_2[14]);
+            let result = obj5.repairVibegrationsGuildHints(project, guildId);
+            c4 = 3;
+            c5 = 1;
+            const obj10 = {
+              value: result.catch(() => {
+
+                      }),
+              done: false
+            };
+            return obj10;
+          }
+        } else if (3 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj12 = { value, done: true };
+            return obj12;
+          } else {
+            const obj2 = closure_131_0(closure_131_2[17]);
+            const project1 = obj2.getProject(closure_0);
+            c4 = 4;
+            c5 = 1;
+            const obj13 = {
+              value: project1.catch(() => {
+
+                      }),
+              done: false
+            };
+            return obj13;
+          }
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c5 = 3;
+          obj = { value, done: true };
+          return obj;
         }
-        obj2.application = application;
-        obj2.guildId = guildId;
-        obj2.onClose = onClose;
-        const result = closure_1(applicationId[16]).openVibegrationsAppInstallModal(obj2);
-      });
-      c4 = 2;
-      c5 = 1;
-      const obj14 = { value: promise, done: false };
-      return obj14;
-    } catch (tmp30) {
-      c5 = tmp;
-      throw tmp30;
+        const self = this;
+        const self2 = this;
+        const promise = new Promise((onClose) => {
+          obj = { applicationId, application, guildId, onClose };
+          const openVibegrationsAppInstallModal = closure_1(applicationId[16]).openVibegrationsAppInstallModal;
+          closure_1(applicationId[16]);
+          application = application.getApplication(applicationId);
+          if (application == null) {
+            application = null;
+          }
+          const result = openVibegrationsAppInstallModal(obj);
+        });
+        c4 = 2;
+        c5 = 1;
+        const obj14 = { value: promise, done: false };
+        return obj14;
+      } catch (tmp27) {
+        c5 = 3;
+        throw tmp27;
+      }
     }
-  }
+  });
+  return obj(...arguments);
 };
 function startPublish(project, navigatesOnPublish, platform) {
   project = project.project;
@@ -273,6 +290,7 @@ function startPublish(project, navigatesOnPublish, platform) {
   if ("user" !== project.install_scope) {
     tmp2 = null;
     if (null == destination) {
+      const tmp3 = closure_11;
       tmp2 = closure_11(id);
     }
   }
@@ -282,14 +300,16 @@ function startPublish(project, navigatesOnPublish, platform) {
     });
   }
   if ("channel" === destination) {
+    obj = project(platform[22]);
     let obj2 = { type: "VIBEGRATIONS_PROJECT_APP_CHANNEL_PENDING", projectId: id, pending: true };
-    project(platform[22]).dispatch(obj2);
-    let obj = project(platform[22]);
+    obj.dispatch(obj2);
   }
   let promise = closure_12(id);
-  let nextPromise = promise.then((ok) => {
+  let nextPromise = promise.then(function(ok) {
     if (true !== ok.ok) {
       const _Error = Error;
+      const self = this;
+      const self2 = this;
       const error = new Error(project(platform[18])(ok));
       throw error;
     } else {
@@ -297,17 +317,22 @@ function startPublish(project, navigatesOnPublish, platform) {
     }
   });
   promise = nextPromise.then(() => {
-    const result = VibegrationsActionCreators.refreshPublishedProject(id, { isPreview: false });
+    obj = VibegrationsActionCreators;
+    const result = obj.refreshPublishedProject(id, { isPreview: false });
     return result.catch(() => {
 
     });
   }, () => {
 
   });
-  nextPromise.then(() => {
+  let nextPromise1 = nextPromise.then(() => {
+    let projectId;
     if (null != project.guildId) {
+      const fetchProfile = UserActionCreators.fetchProfile;
+      UserActionCreators;
       const application = ApplicationStore.getApplication(project.application_id);
       id = undefined;
+      const tmp10 = project;
       if (application != null) {
         const bot = application.bot;
         if (bot != null) {
@@ -317,110 +342,54 @@ function startPublish(project, navigatesOnPublish, platform) {
       if (id == null) {
         id = tmp10.application_id;
       }
-      const profile = UserActionCreators.fetchProfile(id, { withMutualGuilds: true });
-      profile.catch(() => {
-
-      });
-      tmp10 = project;
+      const profile = fetchProfile(id, { withMutualGuilds: true });
+      profile.catch(f125564);
     }
     if (null != destination) {
       if (set.has(tmp3)) {
-        const result = vibegrationsFeedback.skipNextFeedbackForProject(id);
+        obj = vibegrationsFeedback;
+        const result = obj.skipNextFeedbackForProject(id);
       }
       const nextPromise = promise.then(() => {
+        function waitForAppChannel() {
+          return closure_1_23(...arguments);
+        }
         let tmp;
         if ("channel" === destination) {
-          tmp = (function waitForAppChannel() {
-            const self = this;
-            const apply = closure_1_23.apply;
-            if (typeof apply === "unknown") {
-              let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-            } else {
-              applyArgumentsResult = apply(self, arguments);
-            }
-            return applyArgumentsResult;
-          })(projectId, guildId);
+          tmp = waitForAppChannel(projectId, guildId);
         }
         return tmp;
       });
-      const cleanupPromise = promise.then(() => {
-        let tmp;
-        if ("channel" === destination) {
-          tmp = (function waitForAppChannel() {
-            const self = this;
-            const apply = closure_1_23.apply;
-            if (typeof apply === "unknown") {
-              let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-            } else {
-              applyArgumentsResult = apply(self, arguments);
-            }
-            return applyArgumentsResult;
-          })(projectId, guildId);
-        }
-        return tmp;
-      }).finally(() => {
-        project(platform[22]).dispatch({ type: "VIBEGRATIONS_PROJECT_APP_CHANNEL_PENDING", projectId, pending: false });
+      const cleanupPromise = nextPromise.finally(() => {
+        obj = project(platform[22]);
+        const obj2 = { type: "VIBEGRATIONS_PROJECT_APP_CHANNEL_PENDING", projectId, pending: false };
+        obj.dispatch(obj2);
       });
-      promise.then(() => {
-        let tmp;
-        if ("channel" === destination) {
-          tmp = (function waitForAppChannel() {
-            const self = this;
-            const apply = closure_1_23.apply;
-            if (typeof apply === "unknown") {
-              let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-            } else {
-              applyArgumentsResult = apply(self, arguments);
-            }
-            return applyArgumentsResult;
-          })(projectId, guildId);
-        }
-        return tmp;
-      }).finally(() => {
-        project(platform[22]).dispatch({ type: "VIBEGRATIONS_PROJECT_APP_CHANNEL_PENDING", projectId, pending: false });
-      }).then(() => {
+      const nextPromise1 = cleanupPromise.then(() => {
         let tmp = readPublishSubject(projectId, guildId);
         if (tmp == null) {
-          tmp = project;
+          tmp = closure_1_0;
         }
-        return closure_0(platform[13]).openVibegrationsPublishDestination(destination, { applicationId: tmp.project.application_id, guildId: tmp.guildId, appChannelId: tmp.appChannelId, openProfile: closure_1_2.openProfile, openAutomodSettings: closure_1_2.openAutomodSettings });
-      }).catch(() => {
+        obj = closure_0(platform[13]);
+        const obj2 = { applicationId: tmp.project.application_id, guildId: tmp.guildId, appChannelId: tmp.appChannelId, openProfile: closure_1_2.openProfile, openAutomodSettings: closure_1_2.openAutomodSettings };
+        return obj.openVibegrationsPublishDestination(destination, obj2);
+      });
+      nextPromise1.catch(() => {
 
-      });
-      const nextPromise1 = promise.then(() => {
-        let tmp;
-        if ("channel" === destination) {
-          tmp = (function waitForAppChannel() {
-            const self = this;
-            const apply = closure_1_23.apply;
-            if (typeof apply === "unknown") {
-              let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-            } else {
-              applyArgumentsResult = apply(self, arguments);
-            }
-            return applyArgumentsResult;
-          })(projectId, guildId);
-        }
-        return tmp;
-      }).finally(() => {
-        project(platform[22]).dispatch({ type: "VIBEGRATIONS_PROJECT_APP_CHANNEL_PENDING", projectId, pending: false });
-      }).then(() => {
-        let tmp = readPublishSubject(projectId, guildId);
-        if (tmp == null) {
-          tmp = project;
-        }
-        return closure_0(platform[13]).openVibegrationsPublishDestination(destination, { applicationId: tmp.project.application_id, guildId: tmp.guildId, appChannelId: tmp.appChannelId, openProfile: closure_1_2.openProfile, openAutomodSettings: closure_1_2.openAutomodSettings });
       });
     }
   }, (message) => {
-    DispatcherDefault.dispatch({ type: "VIBEGRATIONS_PROJECT_APP_CHANNEL_PENDING", projectId: id, pending: false });
+    obj = DispatcherDefault;
+    const obj2 = { type: "VIBEGRATIONS_PROJECT_APP_CHANNEL_PENDING", projectId: id, pending: false };
+    obj.dispatch(obj2);
+    const showError = platform.showError;
     if (message instanceof Error) {
       message = message.message;
     } else {
-      const intl = util.intl;
-      message = intl.string(_modDef3714.fNP6Cd);
+      const intl = intl2.intl;
+      message = intl.string(_modDef3723.fNP6Cd);
     }
-    platform.showError(message);
+    showError(message);
   });
   if (null != tmp2) {
     if (null != project.guildId) {
@@ -430,289 +399,308 @@ function startPublish(project, navigatesOnPublish, platform) {
       nextPromise2.catch(() => {
 
       });
-      const obj5 = { projectId: id, guildId: project.guildId, applicationId: null, projectName: null, publish: null, initialDraft: null };
+      const obj5 = { projectId: id, guildId: project.guildId, applicationId: null, projectName: null, publish: nextPromise2, initialDraft: tmp2 };
       ({ application_id: obj3.applicationId, name: obj3.projectName } = project);
-      obj5.publish = nextPromise2;
-      obj5.initialDraft = tmp2;
       platform.openPublishNotes(obj5);
     }
   }
 }
-let closure_23 = async function _waitForAppChannel(arg0, value) {
-  if (c5 === 2) {
-    c5 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp5 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
+obj = function _waitForAppChannel() {
+  obj = _asyncToGenerator(async function(arg0, value) {
+    let closure_0 = arg0;
+    let closure_1 = value;
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: "IconComponent" };
+      }
     } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c5 = 2;
-      if (0 === c4) {
-        if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          closure_3 = tmp2;
-          closure_2 = tmp3;
-          closure_130_0 = closure_0;
-          closure_130_1 = closure_1;
-          let appChannelId;
-          closure_130_2 = undefined;
-          const _Date3 = Date;
-          const sum = Date.now() + 5000;
-          closure_130_2 = sum;
-          const tmp34 = readPublishSubject(closure_0, closure_1);
-          if (tmp34 != null) {
-            appChannelId = tmp34.appChannelId;
-          }
-          if (null == appChannelId) {
-            const _Date = Date;
-            if (Date.now() < sum) {
-              const promise = new Promise((arg0) => setTimeout(arg0, 250));
-              c4 = 1;
-              c5 = 1;
-              const obj4 = { value: promise, done: false };
-              return obj4;
+      try {
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_3 = tmp;
+            let closure_2 = tmp2;
+            let appChannelId;
+            const _Date3 = Date;
+            const sum = Date.now() + 5000;
+            let c2 = sum;
+            const tmp30 = readPublishSubject(closure_0, closure_1);
+            if (tmp30 != null) {
+              appChannelId = tmp30.appChannelId;
+            }
+            if (null == appChannelId) {
+              const _Date = Date;
+              if (Date.now() < sum) {
+                const self = this;
+                const self2 = this;
+                const promise = new Promise((arg0) => setTimeout(arg0, 250));
+                c4 = 1;
+                c5 = 1;
+                const obj4 = { value: promise, done: false };
+                return obj4;
+              }
             }
           }
+        } else if (arg0 === 1) {
           c5 = 3;
-        }
-      } else if (arg0 === 1) {
-        c5 = 3;
-        throw value;
-      } else if (arg0 !== 2) {
-        const tmp12 = closure_131_17(closure_130_0, closure_130_1);
-        let appChannelId1;
-        if (tmp12 != null) {
-          appChannelId1 = tmp12.appChannelId;
-        }
-        if (null == appChannelId1) {
-          const _Date2 = Date;
-        }
-      }
-      c5 = 3;
-      const obj = { value, done: true };
-      return obj;
-    } catch (tmp21) {
-      c5 = tmp;
-      throw tmp21;
-    }
-  }
-};
-function runVibegrationsPublishAction() {
-  const self = this;
-  const apply = closure_26.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-}
-let closure_26 = async function _runVibegrationsPublishAction(arg0, value) {
-  if (c13 === 2) {
-    c13 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp6 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj3 = { value, done: true };
-      return obj3;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c13 = 2;
-      if (0 === c12) {
-        if (arg0 === 1) {
-          c13 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c13 = 3;
-          const obj4 = { value, done: true };
-          return obj4;
+          c5 = 3;
+          obj = { value, done: true };
+          return obj;
         } else {
-          closure_9 = tmp3;
-          closure_8 = tmp7;
-          closure_136_0 = closure_0;
-          closure_136_1 = dependencyMap;
-          closure_136_2 = undefined;
-          closure_136_3 = undefined;
-          closure_136_4 = undefined;
-          closure_136_5 = undefined;
-          const guildId = dependencyMap.guildId;
-          closure_136_2 = guildId;
-          const platform = dependencyMap.platform;
-          if (true !== dependencyMap.busy) {
-            if (!set.has(tmp83)) {
-              const tmp43 = readPublishSubject(tmp83, guildId);
-              if (null != tmp43) {
-                if (!projectPublishing.isProjectPublishing(tmp83)) {
-                  const vibegrationsPublishAction = require("vibegrationsPublishAction").resolveVibegrationsPublishAction(tmp43.input);
-                  closure_136_3 = vibegrationsPublishAction;
-                  if (null != vibegrationsPublishAction) {
-                    const obj5 = { entryPoint: tmp84, publishState: null, surface: null, installScope: null, action: null };
-                    const status2 = tmp43.input.status;
-                    let state;
-                    if (status2 != null) {
-                      state = status2.state;
-                    }
-                    let publishState = state;
-                    if (state == null) {
-                      publishState = null;
-                    }
-                    obj5.publishState = publishState;
-                    const status = tmp43.input.status;
-                    let surface;
-                    if (status != null) {
-                      surface = status.surface;
-                    }
-                    if (surface == null) {
-                      surface = null;
-                    }
-                    obj5.surface = surface;
-                    obj5.installScope = tmp43.project.install_scope;
-                    obj5.action = vibegrationsPublishAction.action;
-                    const result = require("VibegrationsAnalytics").trackVibegrationPublishActionClicked(tmp83, obj5);
-                    if ("open" !== vibegrationsPublishAction.intent) {
-                      if (null == vibegrationsPublishAction.disabledReason) {
-                        const integrationStatus = tmp43.input.integrationStatus;
-                        let preview_ready;
-                        if (integrationStatus != null) {
-                          preview_ready = integrationStatus.preview_ready;
-                        }
-                        if (true === preview_ready) {
-                          if ("consent_then_publish" !== vibegrationsPublishAction.intent) {
-                            startPublish(tmp43, vibegrationsPublishAction, tmp85);
-                          } else {
-                            set.add(tmp83);
-                            c11 = 1;
-                            const requestConsent = platform.requestConsent;
-                            let f127008 = requestConsent;
-                            if (requestConsent == null) {
-                              f127008 = (arg0) => closure_2_19(arg0, closure_1_2);
-                            }
-                            c12 = 2;
-                            c13 = 1;
-                            const obj7 = { value: f127008(tmp83), done: false };
-                            return obj7;
-                          }
-                        } else {
-                          platform.showPublishBlocked(require("vibegrationsPublishBlockedReason").VibegrationsPublishBlockedReason.NO_PREVIEW);
-                        }
+          const tmp11 = closure_131_17(closure_0, closure_1);
+          let appChannelId1;
+          if (tmp11 != null) {
+            appChannelId1 = tmp11.appChannelId;
+          }
+          if (null == appChannelId1) {
+            const _Date2 = Date;
+          }
+        }
+        c5 = 3;
+        return { value: "IconComponent", done: "IconComponent" };
+      } catch (tmp18) {
+        c5 = 3;
+        throw tmp18;
+      }
+    }
+  });
+  return obj(...arguments);
+};
+function runVibegrationsPublishAction() {
+  return obj(...arguments);
+}
+obj = function _runVibegrationsPublishAction() {
+  let projectPublishing;
+  obj = _asyncToGenerator(async (arg0, value, arg2) => {
+    let integrationInstalled;
+    let preview_ready1;
+    let prop1;
+    let publishState;
+    let closure_0 = arg0;
+    let closure_1 = value;
+    let closure_2 = arg2;
+    if (c13 === 2) {
+      c13 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj3 = { value, done: true };
+        return obj3;
+      } else {
+        return { value: "IconComponent", done: "IconComponent" };
+      }
+    } else {
+      let c11;
+      try {
+        let vibegrationsPublishAction;
+        let surface;
+        let closure_5;
+        let guildId;
+        c13 = 2;
+        if (0 === c12) {
+          if (arg0 === 1) {
+            c13 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c13 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            let closure_9 = tmp;
+            let closure_8 = tmp4;
+            closure_1 = closure_2;
+            vibegrationsPublishAction = undefined;
+            surface = undefined;
+            closure_5 = undefined;
+            guildId = closure_2.guildId;
+            const platform = closure_2.platform;
+            if (true !== closure_2.busy) {
+              if (!set.has(closure_0)) {
+                const tmp40 = readPublishSubject(closure_0, guildId);
+                if (null != tmp40) {
+                  if (!projectPublishing.isProjectPublishing(closure_0)) {
+                    const obj2 = require("vibegrationsPublishAction");
+                    vibegrationsPublishAction = obj2.resolveVibegrationsPublishAction(tmp40.input);
+                    if (null != vibegrationsPublishAction) {
+                      const obj5 = { entryPoint: tmp81, publishState, surface, installScope: tmp40.project.install_scope, action: vibegrationsPublishAction.action };
+                      const status2 = tmp40.input.status;
+                      let state;
+                      const trackVibegrationPublishActionClicked = require("VibegrationsAnalytics").trackVibegrationPublishActionClicked;
+                      const tmp87 = require("VibegrationsAnalytics");
+                      if (status2 != null) {
+                        state = status2.state;
                       }
-                    } else if (null != vibegrationsPublishAction.destination) {
-                      openDestinationFor(tmp43, vibegrationsPublishAction.destination, platform).catch(() => {
+                      publishState = state;
+                      if (state == null) {
+                        publishState = null;
+                      }
+                      const status = tmp40.input.status;
+                      surface = undefined;
+                      if (status != null) {
+                        surface = status.surface;
+                      }
+                      if (surface == null) {
+                        surface = null;
+                      }
+                      const result = trackVibegrationPublishActionClicked(tmp80, obj5);
+                      if ("open" !== vibegrationsPublishAction.intent) {
+                        if (null == vibegrationsPublishAction.disabledReason) {
+                          const integrationStatus = tmp40.input.integrationStatus;
+                          let preview_ready;
+                          if (integrationStatus != null) {
+                            preview_ready = integrationStatus.preview_ready;
+                          }
+                          if (true === preview_ready) {
+                            if ("consent_then_publish" !== vibegrationsPublishAction.intent) {
+                              startPublish(tmp40, vibegrationsPublishAction, tmp82);
+                            } else {
+                              set.add(closure_0);
+                              c11 = 1;
+                              const requestConsent = platform.requestConsent;
+                              let f153176 = requestConsent;
+                              if (requestConsent == null) {
+                                f153176 = (arg0) => closure_2_19(arg0, closure_1_2);
+                              }
+                              c12 = 2;
+                              c13 = 1;
+                              const obj6 = { value: f153176(closure_0), done: false };
+                              return obj6;
+                            }
+                          } else {
+                            platform.showPublishBlocked(require("vibegrationsPublishBlockedReason").VibegrationsPublishBlockedReason.NO_PREVIEW);
+                          }
+                        }
+                      } else if (null != vibegrationsPublishAction.destination) {
+                        const promise = openDestinationFor(tmp40, vibegrationsPublishAction.destination, platform);
+                        promise.catch(() => {
 
-                      });
-                      const promise = openDestinationFor(tmp43, vibegrationsPublishAction.destination, platform);
+                        });
+                      }
                     }
-                    const obj8 = require("VibegrationsAnalytics");
                   }
-                  const obj2 = require("vibegrationsPublishAction");
                 }
               }
             }
           }
+        } else if (1 === c12) {
+          c11 = 0;
+          closure_137_24.delete(closure_0);
+          throw closure_10;
+        } else if (arg0 === 1) {
           c13 = 3;
-        }
-      } else if (1 === tmp7) {
-        c11 = 0;
-        closure_137_24.delete(closure_136_0);
-        throw closure_10;
-      } else if (arg0 === 1) {
-        c13 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c11 = 0;
-        closure_137_24.delete(closure_136_0);
-        c13 = 3;
-        const obj = { value, done: true };
-        return obj;
-      } else {
-        c11 = 0;
-        closure_137_24.delete(closure_136_0);
-        if (closure_137_13.isProjectPublishing(closure_136_0)) {
+          throw value;
+        } else if (arg0 === 2) {
+          c11 = 0;
+          closure_137_24.delete(closure_0);
           c13 = 3;
-          return { value: "HermesInternal", done: null };
+          obj = { value, done: true };
+          return obj;
         } else {
-          closure_136_4 = closure_137_17(closure_136_0, closure_136_2);
-          let integrationStatus1;
-          if (closure_136_4 != null) {
-            integrationStatus1 = closure_136_4.input.integrationStatus;
-          }
-          c6 = integrationStatus1;
-          if (integrationStatus1 == null) {
-            c6 = null;
-          }
-          closure_136_5 = c6;
-          if (null != closure_136_4) {
-            const obj9 = { installScope: closure_136_4.project.install_scope, previewReady: null, integrationInstalled: null, botPermissionsChanged: null };
-            let preview_ready1;
-            if (closure_136_5 != null) {
-              preview_ready1 = closure_136_5.preview_ready;
+          c11 = 0;
+          closure_137_24.delete(closure_0);
+          if (closure_137_13.isProjectPublishing(closure_0)) {
+            c13 = 3;
+            return { value: "IconComponent", done: "IconComponent" };
+          } else {
+            surface = closure_137_17(closure_0, guildId);
+            let integrationStatus1;
+            if (surface != null) {
+              integrationStatus1 = surface.input.integrationStatus;
             }
-            obj9.previewReady = true === preview_ready1;
-            let prop;
-            if (closure_136_5 != null) {
-              prop = closure_136_5.integration_installed;
+            let c6 = integrationStatus1;
+            if (integrationStatus1 == null) {
+              c6 = null;
             }
-            let integrationInstalled = prop;
-            if (prop == null) {
-              integrationInstalled = null;
+            closure_5 = c6;
+            if (null != surface) {
+              const obj7 = { installScope: surface.project.install_scope, previewReady: true === preview_ready1, integrationInstalled, botPermissionsChanged: true === prop1 };
+              preview_ready1 = undefined;
+              const requiresPermissionReview = closure_137_0(closure_137_2[27]).requiresPermissionReview;
+              const tmp78 = closure_137_0(closure_137_2[27]);
+              if (closure_5 != null) {
+                preview_ready1 = closure_5.preview_ready;
+              }
+              let prop;
+              if (closure_5 != null) {
+                prop = closure_5.integration_installed;
+              }
+              integrationInstalled = prop;
+              if (prop == null) {
+                integrationInstalled = null;
+              }
+              prop1 = undefined;
+              if (closure_5 != null) {
+                prop1 = closure_5.bot_permissions_changed;
+              }
+              if (!requiresPermissionReview(obj7)) {
+                closure_137_22(surface, vibegrationsPublishAction, closure_1);
+              }
             }
-            obj9.integrationInstalled = integrationInstalled;
-            let prop1;
-            if (closure_136_5 != null) {
-              prop1 = closure_136_5.bot_permissions_changed;
-            }
-            obj9.botPermissionsChanged = true === prop1;
-            if (!obj6.requiresPermissionReview(obj9)) {
-              closure_137_22(closure_136_4, closure_136_3, closure_136_1);
-            }
-            obj6 = closure_137_0(closure_137_2[27]);
+            c13 = 3;
+            return { value: "IconComponent", done: "IconComponent" };
           }
         }
-      }
-      c13 = 3;
-      return { value: "HermesInternal", done: null };
-    } catch (tmp61) {
-      closure_10 = tmp61;
-      if (tmp4 === c11) {
-        c13 = tmp2;
-        throw tmp61;
-      } else {
-        c12 = tmp;
+        c13 = 3;
+        return { value: "IconComponent", done: "IconComponent" };
+      } catch (tmp58) {
+        closure_10 = tmp58;
+        if (0 === c11) {
+          c13 = 3;
+          throw tmp58;
+        } else {
+          c12 = 1;
+        }
       }
     }
-  }
+  });
+  return obj(...arguments);
 };
-const VibegrationsConnectionStore = fn(12851);
-({ draftPatchNotes: closure_11, publishProject: closure_12 } = VibegrationsConnectionStore);
-const canPublishProject = fn(8686).canPublishProject;
-const Permissions = fn(1074).Permissions;
-let context = noop.createContext(null);
+({ draftPatchNotes: unpackModuleId, publishProject: closure_12 } = VibegrationsConnectionStore);
+const canPublishProject = VibegrationsProjectStore2.canPublishProject;
+const Permissions = Constants.Permissions;
+let context = react.createContext(null);
 const set = new Set(["dm", "guild", "channel"]);
-const set1 = new Set();
-const size = fn(2);
+new Set();
 let result = size.fileFinishedImporting("modules/vibegrations/lib/useVibegrationsPublishAction.tsx");
 
 export default function useVibegrationsPublishAction(arg0, arg1) {
+  let appChannelId;
+  let appChannelName;
+  let appChannelPending;
+  let canPublish;
+  let closure_0;
+  let guildId;
+  let guildName;
+  let installScope;
+  let integrationStatus;
+  let project;
+  let publishing;
+  let state;
+  let status;
+  let status1;
+  let usesNativeAppChannels;
   _require = arg0;
   context = arg1;
+  obj = guildId;
   if (arg1 == null) {
     context = guildId.useContext(state);
   }
@@ -725,7 +713,12 @@ export default function useVibegrationsPublishAction(arg0, arg1) {
   }
   const items = [usesNativeAppChannels, appChannelName, guildName, integrationStatus, appChannelPending, status, installScope];
   const items1 = [arg0, guildId1];
-  const stateFromStoresObject = require("initialize").useStateFromStoresObject(items, () => {
+  const obj2 = require("get initialized");
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items, () => {
+    let appChannelId;
+    let flag;
+    let flag2;
+    let isProjectPublishingResult;
     let tmp2 = null;
     if (null != closure_0) {
       tmp2 = null;
@@ -733,11 +726,7 @@ export default function useVibegrationsPublishAction(arg0, arg1) {
         tmp2 = readPublishSubject(tmp, tmp3);
       }
     }
-    let tmp5 = null != tmp2;
-    if (tmp5) {
-      tmp5 = canPublishProject(tmp2.project);
-    }
-    const obj = { canPublish: tmp5, project: null, guildId: null, publishing: null, installScope: null, status: null, integrationStatus: null, guildName: null, appChannelName: null, appChannelPending: null, canManageGuild: null, canManageChannels: null, usesNativeAppChannels: null, botInGuild: null };
+    obj = { canPublish: null != tmp2 && canPublishProject(tmp2.project), project, guildId, appChannelId, publishing: isProjectPublishingResult, installScope, status, integrationStatus, guildName, appChannelName, appChannelPending: flag, canManageGuild, canManageChannels, usesNativeAppChannels: flag2, botInGuild };
     project = undefined;
     if (tmp2 != null) {
       project = tmp2.project;
@@ -745,7 +734,6 @@ export default function useVibegrationsPublishAction(arg0, arg1) {
     if (project == null) {
       project = null;
     }
-    obj.project = project;
     guildId = undefined;
     if (tmp2 != null) {
       guildId = tmp2.guildId;
@@ -753,20 +741,21 @@ export default function useVibegrationsPublishAction(arg0, arg1) {
     if (guildId == null) {
       guildId = null;
     }
-    obj.guildId = guildId;
-    let isProjectPublishingResult = null != tmp;
-    if (isProjectPublishingResult) {
-      isProjectPublishingResult = VibegrationsProjectStore.isProjectPublishing(tmp);
+    appChannelId = undefined;
+    if (tmp2 != null) {
+      appChannelId = tmp2.appChannelId;
     }
-    obj.publishing = isProjectPublishingResult;
+    if (appChannelId == null) {
+      appChannelId = null;
+    }
     installScope = undefined;
+    isProjectPublishingResult = null != tmp && VibegrationsProjectStore.isProjectPublishing(tmp);
     if (tmp2 != null) {
       installScope = tmp2.input.installScope;
     }
     if (installScope == null) {
       installScope = null;
     }
-    obj.installScope = installScope;
     status = undefined;
     if (tmp2 != null) {
       status = tmp2.input.status;
@@ -774,7 +763,6 @@ export default function useVibegrationsPublishAction(arg0, arg1) {
     if (status == null) {
       status = null;
     }
-    obj.status = status;
     integrationStatus = undefined;
     if (tmp2 != null) {
       integrationStatus = tmp2.input.integrationStatus;
@@ -782,7 +770,6 @@ export default function useVibegrationsPublishAction(arg0, arg1) {
     if (integrationStatus == null) {
       integrationStatus = null;
     }
-    obj.integrationStatus = integrationStatus;
     guildName = undefined;
     if (tmp2 != null) {
       guildName = tmp2.input.guildName;
@@ -790,7 +777,6 @@ export default function useVibegrationsPublishAction(arg0, arg1) {
     if (guildName == null) {
       guildName = null;
     }
-    obj.guildName = guildName;
     appChannelName = undefined;
     if (tmp2 != null) {
       appChannelName = tmp2.input.appChannelName;
@@ -798,15 +784,13 @@ export default function useVibegrationsPublishAction(arg0, arg1) {
     if (appChannelName == null) {
       appChannelName = null;
     }
-    obj.appChannelName = appChannelName;
-    let flag;
+    flag = undefined;
     if (tmp2 != null) {
       flag = tmp2.input.appChannelPending;
     }
     if (flag == null) {
       flag = false;
     }
-    obj.appChannelPending = flag;
     canManageGuild = undefined;
     if (tmp2 != null) {
       canManageGuild = tmp2.input.canManageGuild;
@@ -814,7 +798,6 @@ export default function useVibegrationsPublishAction(arg0, arg1) {
     if (canManageGuild == null) {
       canManageGuild = null;
     }
-    obj.canManageGuild = canManageGuild;
     canManageChannels = undefined;
     if (tmp2 != null) {
       canManageChannels = tmp2.input.canManageChannels;
@@ -822,15 +805,13 @@ export default function useVibegrationsPublishAction(arg0, arg1) {
     if (canManageChannels == null) {
       canManageChannels = null;
     }
-    obj.canManageChannels = canManageChannels;
-    let flag2;
+    flag2 = undefined;
     if (tmp2 != null) {
       flag2 = tmp2.input.usesNativeAppChannels;
     }
     if (flag2 == null) {
       flag2 = false;
     }
-    obj.usesNativeAppChannels = flag2;
     botInGuild = undefined;
     if (tmp2 != null) {
       botInGuild = tmp2.input.botInGuild;
@@ -838,7 +819,6 @@ export default function useVibegrationsPublishAction(arg0, arg1) {
     if (botInGuild == null) {
       botInGuild = null;
     }
-    obj.botInGuild = botInGuild;
     return obj;
   }, items1);
   ({ publishing, project } = stateFromStoresObject);
@@ -854,11 +834,12 @@ export default function useVibegrationsPublishAction(arg0, arg1) {
   usesNativeAppChannels = stateFromStoresObject.usesNativeAppChannels;
   let botInGuild = stateFromStoresObject.botInGuild;
   const items2 = [project, installScope, status, integrationStatus, guildName, appChannelName, appChannelPending, canManageGuild, canManageChannels, usesNativeAppChannels, botInGuild];
+  ({ canPublish, appChannelId } = stateFromStoresObject);
   const memo = obj.useMemo(() => {
     let tmp = null;
     if (null != project) {
-      const obj = { installScope, status, integrationStatus, guildName, appChannelName, appChannelPending, canManageGuild, canManageChannels, usesNativeAppChannels, botInGuild };
-      tmp = obj;
+      tmp = { installScope, status, integrationStatus, guildName, appChannelName, appChannelPending, canManageGuild, canManageChannels, usesNativeAppChannels, botInGuild };
+      obj = { installScope, status, integrationStatus, guildName, appChannelName, appChannelPending, canManageGuild, canManageChannels, usesNativeAppChannels, botInGuild };
     }
     return tmp;
   }, items2);
@@ -885,27 +866,18 @@ export default function useVibegrationsPublishAction(arg0, arg1) {
     }
     tmp7 = "bot" === surface;
   }
-  closure_17 = tmp7;
+  let closure_17 = tmp7;
   let id;
+  const useEffect = obj.useEffect;
   if (project != null) {
     id = project.id;
   }
   const items3 = [id, guildId, tmp7, state];
-  const effect = obj.useEffect(() => {
-    let tmp2 = null != project;
+  const effect = useEffect(() => {
+    const tmp2 = null != project && null != guildId && closure_17 && null != state && "unpublished" !== state;
     if (tmp2) {
-      tmp2 = null != guildId;
-    }
-    if (tmp2) {
-      tmp2 = closure_17;
-    }
-    if (tmp2) {
-      tmp2 = null != state;
-    }
-    if (tmp2) {
-      tmp2 = "unpublished" !== state;
-    }
-    if (tmp2) {
+      const fetchProfile = UserActionCreators.fetchProfile;
+      UserActionCreators;
       const application = ApplicationStore.getApplication(tmp.application_id);
       let id;
       if (application != null) {
@@ -917,17 +889,16 @@ export default function useVibegrationsPublishAction(arg0, arg1) {
       if (id == null) {
         id = tmp.application_id;
       }
-      const profile = UserActionCreators.fetchProfile(id, { withMutualGuilds: true });
-      profile.catch(() => {
-
-      });
+      const profile = fetchProfile(id, { withMutualGuilds: true });
+      profile.catch(f125564);
     }
   }, items3);
   const items4 = [memo];
   const memo1 = obj.useMemo(() => {
     let vibegrationsPublishAction = null;
     if (null != memo) {
-      vibegrationsPublishAction = vibegrationsPublishAction2.resolveVibegrationsPublishAction(tmp);
+      obj = vibegrationsPublishAction2;
+      vibegrationsPublishAction = obj.resolveVibegrationsPublishAction(tmp);
     }
     return vibegrationsPublishAction;
   }, items4);
@@ -935,29 +906,25 @@ export default function useVibegrationsPublishAction(arg0, arg1) {
   let tmp13 = null;
   if (null != context) {
     tmp13 = null;
-    if (stateFromStoresObject.canPublish) {
+    if (canPublish) {
       tmp13 = null;
       if (null != memo1) {
-        const obj3 = {};
+        const obj3 = { status: status1, guildId, appChannelId, publishing, disabled: publishing, run: tmp12 };
         const merged = Object.assign(memo1);
-        let status1;
+        status1 = undefined;
         if (memo != null) {
           status1 = memo.status;
         }
         if (status1 == null) {
           status1 = null;
         }
-        obj3.status = status1;
-        obj3.guildId = guildId;
-        obj3.publishing = publishing;
         if (!publishing) {
+          let flag = true;
           publishing = true === context.busy;
         }
         if (!publishing) {
           publishing = null != memo1.disabledReason;
         }
-        obj3.disabled = publishing;
-        obj3.run = tmp12;
         tmp13 = obj3;
       }
     }
@@ -967,34 +934,36 @@ export default function useVibegrationsPublishAction(arg0, arg1) {
 export const VibegrationsPublishActionContext = context;
 export { requestVibegrationsInstallConsent };
 export const openVibegrationsPublishedApp = function openVibegrationsPublishedApp(projectId, guildId) {
+  let tmp4;
   const tmp = readPublishSubject(projectId, guildId.guildId);
   if (null != tmp) {
-    const obj2 = {};
+    const obj2 = { status: tmp4 };
+    const resolveVibegrationsPublishAction = vibegrationsPublishAction2.resolveVibegrationsPublishAction;
+    vibegrationsPublishAction2;
     const merged = Object.assign(tmp.input);
-    let tmp4 = null;
+    tmp4 = null;
+    const tmp8 = require;
     if (null != tmp.input.status) {
-      const obj = {};
+      obj = { state: "up_to_date" };
       const merged1 = Object.assign(tmp.input.status);
-      obj.state = "up_to_date";
       tmp4 = obj;
     }
-    obj2.status = tmp4;
-    const vibegrationsPublishAction = vibegrationsPublishAction2.resolveVibegrationsPublishAction(obj2);
+    const vibegrationsPublishAction = resolveVibegrationsPublishAction(obj2);
     let destination;
     if (vibegrationsPublishAction != null) {
       destination = vibegrationsPublishAction.destination;
     }
     if (null != destination) {
-      const obj5 = { applicationId: tmp.project.application_id, guildId: null, appChannelId: null, openProfile: null, openAutomodSettings: null };
+      const platform = guildId.platform;
+      const obj4 = { applicationId: tmp.project.application_id, guildId: null, appChannelId: null, openProfile: null, openAutomodSettings: null };
       ({ guildId: obj3.guildId, appChannelId: obj3.appChannelId } = tmp);
-      ({ openProfile: obj3.openProfile, openAutomodSettings: obj3.openAutomodSettings } = guildId.platform);
-      const result = tmp8(16532).openVibegrationsPublishDestination(destination, obj5);
+      ({ openProfile: obj3.openProfile, openAutomodSettings: obj3.openAutomodSettings } = platform);
+      const tmp8Result = tmp8(16609);
+      const result = tmp8Result.openVibegrationsPublishDestination(destination, obj4);
       result.catch(() => {
 
       });
-      const tmp8Result = tmp8(16532);
     }
-    tmp8 = require;
   }
 };
 export { runVibegrationsPublishAction };

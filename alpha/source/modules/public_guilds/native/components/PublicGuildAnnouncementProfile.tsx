@@ -1,60 +1,211 @@
-// Module ID: 11357
-// Function ID: 11358
+// Module ID: 11272
+// Function ID: 11273
 // Name: PublicGuildAnnouncementProfile
-// Dependencies: [19, 17, 21, 4845, 576, 6757, 6085, 7661, 1177, 11358, 4841, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 7705, 5974, 1188, 11273, 1126, 4886, 6645, 2]
 
-// Module 11357 (PublicGuildAnnouncementProfile)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import FastImageDefault from "FastImage" /* 6085 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6757 */;
-import PublicGuildsUtils from "PublicGuildsUtils" /* 7661 */;
-import _modDef11358 from "module_11358" /* 11358 */;
-import noop from "module_19" /* 19 */;
+// Module 11272 (PublicGuildAnnouncementProfile)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
+import PublicGuildsUtils from "PublicGuildsUtils" /* 7705 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11273 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4845);
-let obj2 = { content: { padding: 16 }, avatar: null, nameWrapper: null, headerText: null, description: null };
-let size = { borderRadius: nativeDefault.radii.lg, height: 80, width: 80, marginVertical: 16 };
-obj2.avatar = size;
-obj2.nameWrapper = { flexDirection: "row", alignItems: "center" };
-obj2.headerText = { marginLeft: 8 };
-obj2.description = { marginTop: 8 };
-let closure_6 = createStyles.createStyles(obj2);
-size = fn(2);
+let BottomSheet;
+
+let closure_4;
+let hasOwnProperty;
+let size;
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let obj = { content: { padding: 16 }, avatar: size, nameWrapper: { flexDirection: "row", alignItems: "center" }, headerText: { marginLeft: 8 }, description: { marginTop: 8 } };
+size = { borderRadius: nativeDefault.radii.lg, height: 80, width: 80, marginVertical: 16 };
+let closure_6 = createStyles.createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let avatar;
+  let content;
+  let first;
+  let items;
+  let items1;
+  let obj8;
+  let tmp11;
+  let tmp15;
+  let tmp17;
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(22);
+  const tmp4 = closure_6();
+  ({ content, avatar } = tmp4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = PublicGuildsUtils;
+    const publicSystemMessageAvatar = tmpResult.getPublicSystemMessageAvatar();
+    cResult[0] = publicSystemMessageAvatar;
+    first = publicSystemMessageAvatar;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== tmp4.avatar) {
+    const obj2 = { style: avatar, source: first };
+    const tmp10 = React3(FastImageDefault, obj2);
+    cResult[1] = tmp4.avatar;
+    cResult[2] = tmp10;
+    tmp7 = tmp10;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const nameWrapper = tmp4.nameWrapper;
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { source: AssetRegistryDefault, disableColor: true };
+    const Icon = tmp(1188).Icon;
+    const tmp14 = React3(Icon, obj3);
+    cResult[3] = tmp14;
+    tmp11 = tmp14;
+  } else {
+    tmp11 = cResult[3];
+  }
+  const headerText = tmp4.headerText;
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(intl4.t.xfAlNx);
+    cResult[4] = stringResult;
+    tmp15 = stringResult;
+  } else {
+    tmp15 = cResult[4];
+  }
+  if (cResult[5] !== tmp4.headerText) {
+    const obj4 = { style: headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp15 };
+    const tmp19 = React3(Text_Text.Text, obj4);
+    cResult[5] = tmp4.headerText;
+    cResult[6] = tmp19;
+    tmp17 = tmp19;
+  } else {
+    tmp17 = cResult[6];
+  }
+  if (cResult[7] === tmp4.nameWrapper) {
+    let tmp20;
+    let tmp22;
+    let tmp24;
+    let tmp27;
+    let tmp29;
+    if (cResult[8] === tmp17) {
+      tmp20 = cResult[9];
+    }
+    const _Symbol = Symbol;
+    const description = tmp4.description;
+    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl2 = tmp(1126).intl;
+      const stringResult1 = intl2.string(intl4.t.BUZ0sl);
+      cResult[10] = stringResult1;
+      tmp22 = stringResult1;
+    } else {
+      tmp22 = cResult[10];
+    }
+    if (cResult[11] !== tmp4.description) {
+      const obj5 = { style: description, variant: "text-sm/medium", color: "text-default", children: tmp22 };
+      const tmp26 = React3(Text_Text.Text, obj5);
+      cResult[11] = tmp4.description;
+      cResult[12] = tmp26;
+      tmp24 = tmp26;
+    } else {
+      tmp24 = cResult[12];
+    }
+    const _Symbol2 = Symbol;
+    const description2 = tmp4.description;
+    if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl3 = tmp(1126).intl;
+      const stringResult2 = intl3.string(intl4.t.w5beJH);
+      cResult[13] = stringResult2;
+      tmp27 = stringResult2;
+    } else {
+      tmp27 = cResult[13];
+    }
+    if (cResult[14] !== tmp4.description) {
+      const obj6 = { style: description2, variant: "text-sm/medium", color: "text-default", children: tmp27 };
+      const tmp31 = React3(Text_Text.Text, obj6);
+      cResult[14] = tmp4.description;
+      cResult[15] = tmp31;
+      tmp29 = tmp31;
+    } else {
+      tmp29 = cResult[15];
+    }
+    if (cResult[16] === tmp4.content) {
+      if (cResult[17] === tmp24) {
+        if (cResult[18] === tmp29) {
+          if (cResult[19] === tmp7) {
+            let tmp32;
+            if (cResult[20] === tmp20) {
+              tmp32 = cResult[21];
+            }
+            return tmp32;
+          }
+        }
+      }
+    }
+    const obj7 = { startExpanded: true, children: hasOwnProperty(View, obj8) };
+    obj8 = { style: content, children: items };
+    items = [tmp7, tmp20, tmp24, tmp29];
+    BottomSheet = tmp(6645).BottomSheet;
+    const tmp36 = React3(BottomSheet, obj7);
+    cResult[16] = tmp4.content;
+    cResult[17] = tmp24;
+    cResult[18] = tmp29;
+    cResult[19] = tmp7;
+    cResult[20] = tmp20;
+    cResult[21] = tmp36;
+    tmp32 = tmp36;
+  }
+  const obj9 = { style: nameWrapper, children: items1 };
+  items1 = [tmp11, tmp17];
+  const tmp21 = hasOwnProperty(View, obj9);
+  cResult[7] = tmp4.nameWrapper;
+  cResult[8] = tmp17;
+  cResult[9] = tmp21;
+  tmp20 = tmp21;
+}) : (() => {
+  let intl;
+  let intl2;
+  let intl3;
+  let items;
+  let items1;
+  let obj2;
+  let obj4;
+  const tmp = closure_6();
+  const obj = { startExpanded: true, children: hasOwnProperty(View, obj2) };
+  obj2 = { style: tmp.content, children: items };
+  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const obj3 = { style: tmp.avatar, source: obj4.getPublicSystemMessageAvatar() };
+  const tmp2 = FastImageDefault;
+  obj4 = PublicGuildsUtils;
+  items = [React3(tmp2, obj3), , , ];
+  const obj5 = { style: tmp.nameWrapper, children: items1 };
+  const obj6 = { source: AssetRegistryDefault, disableColor: true };
+  const Icon = native.Icon;
+  items1 = [React3(Icon, obj6), ];
+  const obj7 = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl4.t.xfAlNx) };
+  const Text = Text_Text.Text;
+  intl = intl4.intl;
+  items1[1] = React3(Text, obj7);
+  items[1] = hasOwnProperty(View, obj5);
+  const obj8 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(intl4.t.BUZ0sl) };
+  const Text2 = Text_Text.Text;
+  intl2 = intl4.intl;
+  items[2] = React3(Text2, obj8);
+  const obj9 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl3.string(intl4.t.w5beJH) };
+  const Text3 = Text_Text.Text;
+  intl3 = intl4.intl;
+  items[3] = React3(Text3, obj9);
+  return React3(BottomSheet, obj);
+});
+size = size_mod;
 const result = size.fileFinishedImporting("modules/public_guilds/native/components/PublicGuildAnnouncementProfile.tsx");
 
-export default function PublicGuildAnnouncementProfile() {
-  const tmp = closure_6();
-  const obj = { startExpanded: true, children: null };
-  const obj2 = { style: tmp.content, children: null };
-  const obj3 = { style: tmp.avatar, source: null };
-  const tmp2 = FastImageDefault;
-  obj3.source = PublicGuildsUtils.getPublicSystemMessageAvatar();
-  const items = [React4(tmp2, obj3), , , ];
-  const obj5 = { style: tmp.nameWrapper, children: null };
-  const items1 = [React4(native.Icon, { source: _modDef11358, disableColor: true }), ];
-  const obj7 = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-  const intl = util.intl;
-  obj7.children = intl.string(util.t.xfAlNx);
-  items1[1] = React4(Text_Text.Text, obj7);
-  obj5.children = items1;
-  items[1] = hasOwnProperty(View, obj5);
-  const obj8 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl2 = util.intl;
-  obj8.children = intl2.string(util.t.BUZ0sl);
-  items[2] = React4(Text_Text.Text, obj8);
-  const obj9 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl3 = util.intl;
-  obj9.children = intl3.string(util.t.w5beJH);
-  items[3] = React4(Text_Text.Text, obj9);
-  obj2.children = items;
-  obj.children = hasOwnProperty(View, obj2);
-  return React4(Sheet_BottomSheet.BottomSheet, obj);
-};
+export default tmp4;

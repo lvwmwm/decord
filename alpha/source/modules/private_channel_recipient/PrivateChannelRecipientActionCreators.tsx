@@ -1,20 +1,23 @@
-// Module ID: 11648
-// Function ID: 11649
+// Module ID: 11568
+// Function ID: 11569
 // Name: PrivateChannelRecipientActionCreators
-// Dependencies: [1074, 1271, 2]
+// Dependencies: [1085, 1282, 2]
 
-// Module 11648 (PrivateChannelRecipientActionCreators)
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 11568 (PrivateChannelRecipientActionCreators)
+import Constants from "Constants" /* 1085 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
-const result = size.fileFinishedImporting("modules/private_channel_recipient/PrivateChannelRecipientActionCreators.tsx");
-
-export default {
+let obj = {
   updatePrivateChannelRecipientFlags(id, setFlagResult) {
+    let obj;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: Endpoints.CHANNEL_RECIPIENT_ME(id), body: { flags: setFlagResult }, rejectWithError: false };
+    const request = { url: Endpoints.CHANNEL_RECIPIENT_ME(id), body: obj, rejectWithError: false };
+    obj = { flags: setFlagResult };
     return HTTP.patch(request);
   }
 };
+const result = size.fileFinishedImporting("modules/private_channel_recipient/PrivateChannelRecipientActionCreators.tsx");
+
+export default obj;

@@ -1,28 +1,37 @@
-// Module ID: 7600
-// Function ID: 7601
+// Module ID: 7644
+// Function ID: 7645
 // Name: UserJoinSystemMessage
-// Dependencies: [2044, 2066, 1074, 7575, 7601, 7613, 7614, 7617, 1115, 7577, 7579, 2]
+// Dependencies: [2051, 2074, 1085, 7619, 7645, 7657, 7658, 7661, 1126, 7621, 7623, 2]
 // Exports: createUserJoinSystemMessage
 
-// Module 7600 (UserJoinSystemMessage)
-import util from "util" /* 1115 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7575 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7577 */;
-import SystemMessageUtilsDefault from "SystemMessageUtils" /* 7601 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildStore from "GuildStore" /* 2066 */;
+// Module 7644 (UserJoinSystemMessage)
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7619 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7621 */;
+import SystemMessageUtilsDefault from "SystemMessageUtils" /* 7645 */;
+import useIsStickerReplyEnabled from "useIsStickerReplyEnabled" /* 7657 */;
+import transformSticker2 from "transformSticker" /* 7658 */;
+import WelcomeCTAUtils from "WelcomeCTAUtils" /* 7661 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SystemChannelFlags = fn(1074).SystemChannelFlags;
-const size = fn(2);
+const SystemChannelFlags = Constants.SystemChannelFlags;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/UserJoinSystemMessage.tsx");
 
-export const createUserJoinSystemMessage = function createUserJoinSystemMessage(roleStyle) {
-  const message = roleStyle.message;
-  const messageAuthorWithProcessedColor = useAuthorWithProcessedColor.getMessageAuthorWithProcessedColor(message);
+export const createUserJoinSystemMessage = function createUserJoinSystemMessage(message) {
+  let formatToParts;
+  let intl2;
+  let obj4;
+  message = message.message;
+  const roleStyle = message.roleStyle;
+  const obj = useAuthorWithProcessedColor;
+  const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
   const channel = ChannelStore.getChannel(message.getChannelId());
   let guildId;
-  const systemMessageUserJoinMobile = SystemMessageUtilsDefault.getSystemMessageUserJoinMobile(message.id);
+  const obj3 = SystemMessageUtilsDefault;
+  const systemMessageUserJoinMobile = obj3.getSystemMessageUserJoinMobile(message.id);
   if (channel != null) {
     guildId = channel.getGuildId();
   }
@@ -30,24 +39,21 @@ export const createUserJoinSystemMessage = function createUserJoinSystemMessage(
   if (null != guildId) {
     if (null != channel) {
       const guild = GuildStore.getGuild(guildId);
-      let tmp10 = null != guild;
-      if (tmp10) {
-        tmp10 = !(guild.systemChannelFlags & SystemChannelFlags.SUPPRESS_JOIN_NOTIFICATION_REPLIES);
-      }
-      const tmpResult = tmp(7613);
+      const tmp10 = null != guild && !(guild.systemChannelFlags & SystemChannelFlags.SUPPRESS_JOIN_NOTIFICATION_REPLIES);
+      const tmpResult = useIsStickerReplyEnabled;
       if (tmpResult.computeIsStickerReplyEnabled(guildId, channel, message, tmp10)) {
-        const tmpResult3 = tmp(7614);
-        transformStickerResult = tmpResult3.transformSticker(tmp(7617).pickWelcomeSticker(message.id));
-        const tmpResult4 = tmp(7617);
+        const transformSticker = transformSticker2.transformSticker;
+        transformSticker2;
+        const tmpResult4 = WelcomeCTAUtils;
+        transformStickerResult = transformSticker(tmpResult4.pickWelcomeSticker(message.id));
       }
     }
   }
-  const obj2 = { content: null, sticker: null, stickerLabel: null };
-  const intl = tmp(1115).intl;
-  obj2.content = intl.formatToParts(systemMessageUserJoinMobile, { username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) });
-  obj2.sticker = transformStickerResult;
-  const intl2 = tmp(1115).intl;
-  obj2.stickerLabel = intl2.string(util.t["7Tj6HT"]);
-  const merged = Object.assign(tmp4(7579)(roleStyle));
+  const obj2 = { content: formatToParts(systemMessageUserJoinMobile, obj4), sticker: transformStickerResult, stickerLabel: intl2.string(intl3.t["7Tj6HT"]) };
+  const intl = tmp(1126).intl;
+  formatToParts = intl.formatToParts;
+  obj4 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle }) };
+  intl2 = tmp(1126).intl;
+  const merged = Object.assign(tmp4(7623)(message));
   return obj2;
 };

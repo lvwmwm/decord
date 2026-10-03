@@ -1,9 +1,0 @@
-// Module ID: 3934
-// Function ID: 3935
-// Dependencies: [1121]
-
-// Module 3934
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRlbGxpZ2VuY2VfbGF5ZXIvc2VhcmNo", scales: [1], hash: "a9065c0149c7d621f29fbab3b9a7fe9d", name: "sv-SE.messages.a9065c0149c7d621f29fbab3b9a7fe9d.compiled.messages", type: "jsona" });

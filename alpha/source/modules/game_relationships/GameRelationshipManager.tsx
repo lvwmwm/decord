@@ -1,43 +1,50 @@
-// Module ID: 14315
-// Function ID: 14316
+// Module ID: 14383
+// Function ID: 14384
 // Name: GameRelationshipManager
-// Dependencies: [7244, 1074, 1983, 573, 6770, 2]
+// Dependencies: [7142, 1085, 1989, 584, 6658, 2]
 
-// Module 14315 (GameRelationshipManager)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7244 */;
-import LifecycleManager from "LifecycleManager" /* 1983 */;
+// Module 14383 (GameRelationshipManager)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7142 */;
+import LifecycleManager from "LifecycleManager" /* 1989 */;
+import size from "module_2" /* 2 */;
 
-const RelationshipTypes = fn(1074).RelationshipTypes;
-class GameRelationshipManager extends tmp2 {
+let gameRelationships, set;
+
+const RelationshipTypes = Constants.RelationshipTypes;
+class GameRelationshipManager extends LifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     applyArgumentsResult.handlePostConnectionOpen = function handlePostConnectionOpen() {
       gameRelationships = gameRelationships.getGameRelationships();
-      const set = new Set();
+      set = new Set();
       const values = gameRelationships.values();
       const item = values.forEach((type) => {
         if (type.type === constants.PENDING_INCOMING) {
           set.add(type.applicationId);
         }
       });
-      const applications = set(closure_1[4]).fetchApplications(Array.from(set));
+      const obj2 = set(closure_1[4]);
+      const applications = obj2.fetchApplications(Array.from(set));
     };
     return applyArgumentsResult;
   }
+  _initialize() {
+    const obj = DispatcherDefault;
+    const subscription = obj.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
+  }
+  _terminate() {
+    const obj = DispatcherDefault;
+    obj.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
+  }
+  destroy() {
+    const obj = DispatcherDefault;
+    obj.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
+  }
 }
 const prototype = GameRelationshipManager.prototype;
-prototype["_initialize"] = function _initialize() {
-  const subscription = DispatcherDefault.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
-};
-prototype["_terminate"] = function _terminate() {
-  DispatcherDefault.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
-};
-prototype["destroy"] = function destroy() {
-  DispatcherDefault.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
-};
 const gameRelationshipManager = new GameRelationshipManager();
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_relationships/GameRelationshipManager.tsx");
 
 export default gameRelationshipManager;

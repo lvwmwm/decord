@@ -1,109 +1,177 @@
-// Module ID: 13729
-// Function ID: 13730
+// Module ID: 13794
+// Function ID: 13795
 // Name: openActivityDMLauncher
-// Dependencies: [5, 1484, 6770, 4858, 12707, 10946, 6789, 7131, 4730, 1611, 2]
+// Dependencies: [5, 1489, 6658, 4903, 12743, 10946, 6681, 7034, 4745, 1616, 2]
 // Exports: default
 
-// Module 13729 (openActivityDMLauncher)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+// Module 13794 (openActivityDMLauncher)
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-let closure_5 = async function _openActivityDMLauncher(arg0, value) {
-  closure_6 = tmp2;
-  closure_133_0 = closure_0;
-  closure_133_1 = closure_1;
-  closure_133_2 = closure_2;
-  closure_133_3 = closure_3;
-  let flag = closure_4;
-  if (closure_4 === undefined) {
-    flag = false;
-  }
-  closure_133_4 = flag;
-  await "flex";
-  await closure_134_1(closure_134_2[2]).fetchApplication(closure_133_0);
-  if (2 === tmp5) {
-    if (arg0 === 1) {
-      c8 = 3;
-      throw value;
-    } else if (arg0 === 2) {
-      c8 = 3;
-      return { value, done: true };
-    } else {
-      closure_133_5 = value;
-      const bot = closure_133_5.bot;
-      let id;
-      if (bot != null) {
-        id = bot.id;
-      }
-      closure_133_6 = id;
-      if (null != closure_133_5) {
-        if (null != closure_133_6) {
-          c7 = 3;
-          c8 = 1;
-          return { value: closure_134_1(closure_134_2[3]).openPrivateChannel({ recipientIds: closure_133_6 }), done: false };
+let application, channelId, closure_6;
+
+let obj = function _openActivityDMLauncher() {
+  obj = _asyncToGenerator(async (targetApplicationId, referrerId, arg2, arg3) => {
+    let closure_2 = arg2;
+    let closure_3 = arg3;
+    let closure_4 = arg4;
+    let c7 = 0;
+    let c8 = 0;
+    const iter = (async (arg0, value, arg2, arg3) => {
+      let items;
+      let obj13;
+      let obj17;
+      let obj6;
+      let obj9;
+      if (c8 === 2) {
+        c8 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: "IconComponent" };
         }
-      }
-      c8 = 3;
-    }
-  } else if (3 === tmp5) {
-    if (arg0 === 1) {
-      c8 = 3;
-      throw value;
-    } else if (arg0 === 2) {
-      c8 = 3;
-      return { value, done: true };
-    } else {
-      closure_133_7 = value;
-      c7 = 4;
-      c8 = 1;
-      return { value: closure_134_0(closure_134_2[4]).getCustomActivityLinkParams(closure_133_0, closure_133_3, closure_133_2), done: false };
-    }
-  } else if (4 === tmp5) {
-    if (arg0 === 1) {
-      c8 = 3;
-      throw value;
-    } else if (arg0 !== 2) {
-      const customId = value.customId;
-      if (closure_133_4) {
-        const bestActiveInput = closure_134_0(closure_134_2[8]).getBestActiveInput();
-        if (bestActiveInput != null) {
-          const obj15 = { type: closure_134_0(closure_134_2[9]).KeyboardTypes.APP_LAUNCHER, context: null };
-          obj15.context = { application: closure_133_5, initialRouteName: closure_134_4.APPLICATION_VIEW, customId, referrerId: closure_133_1 };
-          bestActiveInput.openCustomKeyboard(obj15);
-        }
-        closure_134_0(closure_134_2[8]);
       } else {
-        const obj17 = { targetApplicationId: closure_133_0, locationObject: {}, channelId: closure_133_7, analyticsLocations: null, commandOrigin: null, referrerId: null, customId: null };
-        const items = [closure_134_1(closure_134_2[6]).ACTIVITY_BOOKMARK];
-        obj17.analyticsLocations = items;
-        obj17.commandOrigin = closure_134_0(closure_134_2[7]).CommandOrigin.ACTIVITY_BOOKMARK_EMBED;
-        obj17.referrerId = closure_133_1;
-        obj17.customId = customId;
-        c7 = 5;
-        c8 = 1;
-        return { value: closure_134_1(closure_134_2[5])(obj17), done: false };
+        try {
+          let flag;
+          let id;
+          let customId;
+          c8 = 2;
+          if (0 === c7) {
+            if (arg0 === 1) {
+              c8 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              return { value, done: true };
+            } else {
+              closure_6 = tmp;
+              application = tmp4;
+              flag = closure_4;
+              if (closure_4 === undefined) {
+                flag = false;
+              }
+              application = undefined;
+              id = undefined;
+              channelId = undefined;
+              customId = undefined;
+              c7 = 1;
+              c8 = 1;
+              return { value: "Reflect", done: true };
+            }
+          } else if (1 === c7) {
+            if (arg0 === 1) {
+              c8 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              return { value, done: true };
+            } else {
+              c7 = 2;
+              c8 = 1;
+              const obj7 = { value: obj13.fetchApplication(targetApplicationId), done: false };
+              obj13 = closure_134_1(closure_134_2[2]);
+              return obj7;
+            }
+          } else {
+            if (2 === c7) {
+              if (arg0 === 1) {
+                c8 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c8 = 3;
+                return { value, done: true };
+              } else {
+                application = value;
+                const bot = application.bot;
+                id = undefined;
+                if (bot != null) {
+                  id = bot.id;
+                }
+                if (null != application) {
+                  if (null != id) {
+                    c7 = 3;
+                    c8 = 1;
+                    const obj10 = { recipientIds: id };
+                    const obj11 = { value: obj9.openPrivateChannel(obj10), done: false };
+                    obj9 = closure_134_1(closure_134_2[3]);
+                    return obj11;
+                  }
+                }
+              }
+            } else if (3 === c7) {
+              if (arg0 === 1) {
+                c8 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c8 = 3;
+                return { value, done: true };
+              } else {
+                channelId = value;
+                c7 = 4;
+                c8 = 1;
+                const obj14 = { value: obj6.getCustomActivityLinkParams(targetApplicationId, closure_3, closure_2), done: false };
+                obj6 = closure_134_0(closure_134_2[4]);
+                return obj14;
+              }
+            } else if (4 === c7) {
+              if (arg0 === 1) {
+                c8 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c8 = 3;
+                return { value, done: true };
+              } else {
+                customId = value.customId;
+                const tmp54 = flag;
+                if (tmp54) {
+                  const obj4 = closure_134_0(closure_134_2[8]);
+                  const bestActiveInput = obj4.getBestActiveInput();
+                  if (bestActiveInput != null) {
+                    const openCustomKeyboard = bestActiveInput.openCustomKeyboard;
+                    const obj16 = { type: closure_134_0(closure_134_2[9]).KeyboardTypes.APP_LAUNCHER, context: obj17 };
+                    obj17 = { application, initialRouteName: closure_134_4.APPLICATION_VIEW, customId, referrerId };
+                    openCustomKeyboard(obj16);
+                  }
+                } else {
+                  const obj18 = { targetApplicationId, locationObject: {}, channelId, analyticsLocations: items, commandOrigin: closure_134_0(closure_134_2[7]).CommandOrigin.ACTIVITY_BOOKMARK_EMBED, referrerId, customId };
+                  items = [];
+                  const tmp9 = closure_134_1(closure_134_2[5]);
+                  items[0] = closure_134_1(closure_134_2[6]).ACTIVITY_BOOKMARK;
+                  c7 = 5;
+                  c8 = 1;
+                  const obj19 = { value: tmp9(obj18), done: false };
+                  return obj19;
+                }
+              }
+            } else if (arg0 === 1) {
+              c8 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              return { value, done: true };
+            }
+            c8 = 3;
+            return { value: "IconComponent", done: "IconComponent" };
+          }
+        } catch (tmp49) {
+          c8 = 3;
+          throw tmp49;
+        }
       }
-    }
-  } else if (arg0 === 1) {
-    c8 = 3;
-    throw value;
-  } else if (arg0 === 2) {
-    c8 = 3;
-    return { value, done: true };
-  }
-  return value;
+    })();
+    iter.next();
+    return iter;
+  });
+  return obj(...arguments);
 };
-const AppLauncherRouteName = fn(1484).AppLauncherRouteName;
-const size = fn(2);
+const AppLauncherRouteName = AppLauncherNativeConstants.AppLauncherRouteName;
 const result = size.fileFinishedImporting("modules/activities/native/openActivityDMLauncher.tsx");
 
 export default function openActivityDMLauncher() {
-  const self = this;
-  const apply = closure_5.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };

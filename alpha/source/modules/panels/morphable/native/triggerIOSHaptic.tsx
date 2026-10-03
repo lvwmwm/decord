@@ -1,19 +1,21 @@
-// Module ID: 17090
-// Function ID: 17091
+// Module ID: 17151
+// Function ID: 17152
 // Name: triggerIOSHaptic
-// Dependencies: [11966, 4810, 2]
+// Dependencies: [11903, 4855, 2]
 // Exports: default
 
-// Module 17090 (triggerIOSHaptic)
-import HapticUtils from "HapticUtils" /* 4810 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11966 */;
+// Module 17151 (triggerIOSHaptic)
+import HapticUtils from "HapticUtils" /* 4855 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11903 */;
 import size from "module_2" /* 2 */;
 
 const IS_IOS = MorphablePanelConstants.IS_IOS;
 let result = size.fileFinishedImporting("modules/panels/morphable/native/triggerIOSHaptic.tsx");
 
 export default function triggerIOSHaptic() {
-  if (IS_IOS) {
-    const result = HapticUtils.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
+  const tmp = IS_IOS;
+  if (tmp) {
+    const obj = HapticUtils;
+    const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
   }
 };

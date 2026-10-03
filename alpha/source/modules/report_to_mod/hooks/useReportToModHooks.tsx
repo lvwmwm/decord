@@ -1,29 +1,69 @@
-// Module ID: 11374
-// Function ID: 11375
+// Module ID: 11289
+// Function ID: 11290
 // Name: useReportToModHooks
-// Dependencies: [19, 2066, 5065, 504, 6871, 6895, 6881, 7064, 7808, 2]
-// Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel, useIsReportToModEnabled, useLoadReportedMessage, useReportToModChannelId
+// Dependencies: [19, 2074, 5110, 558, 576, 6769, 6793, 504, 6779, 6965, 7852, 2]
+// Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel
 
-// Module 11374 (useReportToModHooks)
-import _mod19 from "module_19" /* 19 */;
-import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 6871 */;
-import ReportToModUtils from "ReportToModUtils" /* 6881 */;
-import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 6895 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7064 */;
-import UserActionCreators from "UserActionCreators" /* 7808 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import MessageStore from "MessageStore" /* 5065 */;
+// Module 11289 (useReportToModHooks)
+import react from "react" /* 19 */;
+import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 6769 */;
+import ReportToModUtils from "ReportToModUtils" /* 6779 */;
+import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 6793 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 6965 */;
+import UserActionCreators from "UserActionCreators" /* 7852 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import MessageStore from "MessageStore" /* 5110 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, messageReference;
 
-const useEffect = _mod19.useEffect;
-const result = size.fileFinishedImporting("modules/report_to_mod/hooks/useReportToModHooks.tsx");
-
-export const useIsReportToModEnabled = function useIsReportToModEnabled(arg0) {
+const useEffect = react.useEffect;
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  _require = arg0;
+  const tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function l() {
+      if (null == closure_0) {
+        return false;
+      } else {
+        const guild = GuildStore.getGuild(tmp);
+        let tmp4 = null != guild;
+        if (tmp4) {
+          tmp4 = getGuildModeratorReportingEnabledDefault(guild) && null != getGuildModeratorReportChannelIdDefault(guild);
+          getGuildModeratorReportingEnabledDefault(guild) && null != getGuildModeratorReportChannelIdDefault(guild);
+        }
+        return tmp4;
+      }
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6);
+}) : ((arg0) => {
+  let closure_0;
   _require = arg0;
   const items = [GuildStore];
-  return require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
     if (null == closure_0) {
       return false;
     } else {
@@ -31,16 +71,58 @@ export const useIsReportToModEnabled = function useIsReportToModEnabled(arg0) {
       let tmp4 = null != guild;
       if (tmp4) {
         tmp4 = getGuildModeratorReportingEnabledDefault(guild) && null != getGuildModeratorReportChannelIdDefault(guild);
-        const tmp7 = getGuildModeratorReportingEnabledDefault(guild) && null != getGuildModeratorReportChannelIdDefault(guild);
+        getGuildModeratorReportingEnabledDefault(guild) && null != getGuildModeratorReportChannelIdDefault(guild);
       }
       return tmp4;
     }
   });
-};
-export const useReportToModChannelId = function useReportToModChannelId(arg0) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  _require = arg0;
+  const tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function l() {
+      let guild = null;
+      if (null != closure_0) {
+        guild = GuildStore.getGuild(tmp);
+      }
+      let tmp4 = null;
+      if (null != guild) {
+        let tmp7 = getGuildModeratorReportChannelIdDefault(guild);
+        if (tmp7 == null) {
+          tmp7 = null;
+        }
+        tmp4 = tmp7;
+      }
+      return tmp4;
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6);
+}) : ((arg0) => {
+  let closure_0;
   _require = arg0;
   const items = [GuildStore];
-  return require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
     let guild = null;
     if (null != closure_0) {
       guild = GuildStore.getGuild(tmp);
@@ -55,17 +137,69 @@ export const useReportToModChannelId = function useReportToModChannelId(arg0) {
     }
     return tmp4;
   });
-};
-export const useIsModeratorReportOrPostChannel = function useIsModeratorReportOrPostChannel(isModeratorReportChannel) {
-  return ReportToModUtils.isModeratorReportOrPostChannel(isModeratorReportChannel);
-};
-export const useIsModeratorReportPostChannel = function useIsModeratorReportPostChannel(isModeratorReportChannel) {
-  return ReportToModUtils.isModeratorReportPostChannel(isModeratorReportChannel);
-};
-export const useLoadReportedMessage = function useLoadReportedMessage(messageReference) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((messageReference) => {
+  let first;
+  let tmp6;
+  let tmp = messageReference;
+  let obj = messageReference(576);
+  const cResult = obj.c(7);
   messageReference = messageReference.messageReference;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [MessageStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== messageReference) {
+    const fn = function s() {
+      let message = null;
+      if (null != messageReference) {
+        message = MessageStore.getMessage(tmp.channel_id, tmp.message_id);
+      }
+      return message;
+    };
+    cResult[1] = messageReference;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  if (cResult[3] === messageReference) {
+    let tmp8;
+    let tmp9;
+    if (cResult[4] === stateFromStores) {
+      tmp8 = cResult[5];
+      tmp9 = cResult[6];
+    }
+    useEffect(tmp8, tmp9);
+  }
+  const fn2 = function h() {
+    let obj3;
+    const tmp = null == stateFromStores && null != messageReference;
+    if (tmp) {
+      const obj2 = { channelId: messageReference.channel_id, jump: obj3, limit: 10 };
+      obj3 = { messageId: messageReference.message_id };
+      const obj = MessageActionCreatorsDefault;
+      const messages = obj.fetchMessages(obj2);
+    }
+  };
+  const items1 = [stateFromStores, messageReference];
+  cResult[3] = messageReference;
+  cResult[4] = stateFromStores;
+  cResult[5] = fn2;
+  cResult[6] = items1;
+  tmp9 = items1;
+  tmp8 = fn2;
+}) : ((messageReference) => {
+  messageReference = messageReference.messageReference;
+  let obj = messageReference(504);
   const items = [MessageStore];
-  const stateFromStores = messageReference(504).useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
     let message = null;
     if (null != messageReference) {
       message = MessageStore.getMessage(tmp.channel_id, tmp.message_id);
@@ -74,18 +208,29 @@ export const useLoadReportedMessage = function useLoadReportedMessage(messageRef
   });
   const items1 = [stateFromStores, messageReference];
   useEffect(() => {
-    let tmp = null == stateFromStores;
+    let obj3;
+    const tmp = null == stateFromStores && null != messageReference;
     if (tmp) {
-      tmp = null != messageReference;
-    }
-    if (tmp) {
-      const obj2 = { channelId: messageReference.channel_id, jump: null, limit: 10 };
-      const obj3 = { messageId: messageReference.message_id };
-      obj2.jump = obj3;
-      const messages = MessageActionCreatorsDefault.fetchMessages(obj2);
+      const obj2 = { channelId: messageReference.channel_id, jump: obj3, limit: 10 };
+      obj3 = { messageId: messageReference.message_id };
+      const obj = MessageActionCreatorsDefault;
+      const messages = obj.fetchMessages(obj2);
     }
   }, items1);
+});
+const result = size.fileFinishedImporting("modules/report_to_mod/hooks/useReportToModHooks.tsx");
+
+export const useIsReportToModEnabled = tmp2;
+export const useReportToModChannelId = tmp3;
+export const useIsModeratorReportOrPostChannel = function useIsModeratorReportOrPostChannel(isModeratorReportChannel) {
+  const obj = ReportToModUtils;
+  return obj.isModeratorReportOrPostChannel(isModeratorReportChannel);
 };
+export const useIsModeratorReportPostChannel = function useIsModeratorReportPostChannel(isModeratorReportChannel) {
+  const obj = ReportToModUtils;
+  return obj.isModeratorReportPostChannel(isModeratorReportChannel);
+};
+export const useLoadReportedMessage = tmp4;
 export const loadOriginalAuthorFromSnapshot = function loadOriginalAuthorFromSnapshot(arg0) {
   let reported_user_id;
   if (arg0 != null) {
@@ -98,6 +243,7 @@ export const loadOriginalAuthorFromSnapshot = function loadOriginalAuthorFromSna
     }
   }
   if (null != reported_user_id) {
-    const user = UserActionCreators.getUser(reported_user_id);
+    const obj = UserActionCreators;
+    const user = obj.getUser(reported_user_id);
   }
 };

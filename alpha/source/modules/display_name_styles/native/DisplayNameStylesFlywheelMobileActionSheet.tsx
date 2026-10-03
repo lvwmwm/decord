@@ -1,69 +1,287 @@
-// Module ID: 17002
-// Function ID: 17003
+// Module ID: 17091
+// Function ID: 17092
 // Name: DisplayNameStylesFlywheelMobileActionSheet
-// Dependencies: [19, 17, 1372, 1074, 2041, 21, 4579, 4714, 4776, 6586, 504, 4517, 1115, 2876, 6987, 6645, 4683, 2029, 6757, 6730, 6761, 17003, 1364, 6085, 17005, 8459, 4841, 5465, 4845, 576, 2]
-// Exports: default
+// Dependencies: [19, 17, 1377, 1085, 2048, 21, 558, 576, 4596, 4729, 4791, 6469, 504, 4528, 1126, 2883, 6885, 6534, 4698, 2036, 6649, 17092, 1369, 5974, 17094, 8464, 4886, 5594, 6619, 6645, 4890, 587, 2]
 
-// Module 17002 (DisplayNameStylesFlywheelMobileActionSheet)
-import nativeDefault from "native" /* 576 */;
-import openUserSettings from "openUserSettings" /* 6987 */;
-import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 17091 (DisplayNameStylesFlywheelMobileActionSheet)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 587 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import openUserSettings from "openUserSettings" /* 6885 */;
+import react from "react" /* 19 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
+import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 4890 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const Constants = fn(1074);
-({ UserSettingsSections: metroRequire, Fonts: closure_7 } = Constants);
-const ContentDismissActionType = fn(2041).ContentDismissActionType;
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4845);
-let closure_11 = createStyles.createStyles(() => {
-  const obj = { content: { alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16 }, imageContainer: null, image: null, title: null, subtitle: null, actions: null };
-  const size = { width: "100%", height: 162, alignItems: "center", justifyContent: "center", marginVertical: nativeDefault.space.PX_24 };
-  obj.imageContainer = size;
-  obj.image = { width: "100%", height: "100%" };
-  const obj2 = { alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16 };
-  obj.title = { textAlign: "center", fontFamily: constants.GINTO_NORD_EXTRA_BOLD, textTransform: "uppercase", marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12 };
-  const obj3 = { textAlign: "center", fontFamily: constants.GINTO_NORD_EXTRA_BOLD, textTransform: "uppercase", marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12 };
-  obj.subtitle = { textAlign: "center", marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_32 };
-  const obj4 = { textAlign: "center", marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_32 };
-  obj.actions = { gap: nativeDefault.space.PX_12, width: "100%" };
-  return obj;
-});
-let size = fn(2);
-let result = size.fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesFlywheelMobileActionSheet.tsx");
+let BottomSheet, dependencyMap, markAsDismissed, openUserSettingsResult;
 
-export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismissed) {
+let c10;
+let c9;
+let metroImportDefault;
+let metroRequire;
+const View = react_native.View;
+({ UserSettingsSections: metroRequire, Fonts: metroImportDefault } = Constants);
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+({ jsx: c9, jsxs: c10 } = Fragment);
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
+  let closure_2;
+  let currentUser;
+  let items1;
+  let tmp10;
+  let tmp13;
+  let tmp24;
+  let tmp9;
+  const tmp = markAsDismissed;
+  let tmp2 = dependencyMap;
+  let obj = markAsDismissed(576);
+  const cResult = obj.c(55);
   markAsDismissed = markAsDismissed.markAsDismissed;
-  const ref = noop.useRef(null);
-  const enabled = noop.useContext(markAsDismissed(4579).AccessibilityPreferencesContext).reducedMotion.enabled;
-  const isThemeDarkResult = markAsDismissed(4714).isThemeDark(ref(4776)());
+  const ref = react.useRef(null);
+  const enabled = react.useContext(markAsDismissed(4596).AccessibilityPreferencesContext).reducedMotion.enabled;
+  let obj2 = markAsDismissed(4729);
+  obj2.isThemeDark(ref(4791)());
+  const tmp7 = closure_11();
+  const obj3 = markAsDismissed(6469);
+  const typeConsolidationTextTransform = obj3.useTypeConsolidationTextTransform("DisplayNameStylesFlywheel");
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function _() {
+      return currentUser.getCurrentUser();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp10 = fn;
+    tmp9 = items;
+  } else {
+    [tmp9, tmp10] = cResult;
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp9, tmp10);
+  if (cResult[2] !== stateFromStores) {
+    const tmp5Result = ref(4528);
+    let result = tmp5Result.canUsePremiumProfileCustomization(stateFromStores);
+    cResult[2] = stateFromStores;
+    cResult[3] = result;
+    tmp13 = result;
+  } else {
+    tmp13 = cResult[3];
+  }
+  dependencyMap = tmp13;
+  if (cResult[4] !== tmp13) {
+    let stringResult;
+    const intl = tmp(1126).intl;
+    const string = intl.string;
+    const tmp5Result3 = ref(2883);
+    if (tmp13) {
+      stringResult = string(tmp5Result3.TyUdka);
+    } else {
+      stringResult = string(tmp5Result3.dluV0R);
+    }
+    cResult[4] = tmp13;
+    cResult[5] = stringResult;
+  }
+  if (cResult[6] === tmp13) {
+    if (cResult[9] !== markAsDismissed) {
+      const fn2 = function f() {
+        markAsDismissed(ContentDismissActionType.USER_DISMISS);
+      };
+      cResult[9] = markAsDismissed;
+      cResult[10] = fn2;
+    }
+    if (cResult[11] !== markAsDismissed) {
+      class N {
+        constructor() {
+          markAsDismissed(ContentDismissActionType.USER_DISMISS);
+        }
+      }
+      cResult[11] = markAsDismissed;
+      cResult[12] = N;
+    } else {
+      class N {
+        constructor() {
+          markAsDismissed(ContentDismissActionType.USER_DISMISS);
+        }
+      }
+    }
+    const content = tmp7.content;
+    if (cResult[13] !== markAsDismissed) {
+      class N {
+        constructor() {
+          markAsDismissed(ContentDismissActionType.USER_DISMISS);
+        }
+      }
+      const obj4 = {
+        onPress() {
+              const current = ref.current;
+              if (current != null) {
+                current.closeActionSheet();
+              }
+              markAsDismissed(ContentDismissActionType.USER_DISMISS);
+            }
+      };
+      cResult[13] = markAsDismissed;
+      cResult[14] = closure_9(tmp(6649).ActionSheetHeaderBar, obj4);
+      const tmp22 = closure_9(tmp(6649).ActionSheetHeaderBar, obj4);
+    } else {
+      class N {
+        constructor() {
+          markAsDismissed(ContentDismissActionType.USER_DISMISS);
+        }
+      }
+    }
+    if (cResult[15] !== enabled) {
+      class N {
+        constructor() {
+          markAsDismissed(ContentDismissActionType.USER_DISMISS);
+        }
+      }
+      if (tmp24) {
+        class N {
+          constructor() {
+            markAsDismissed(ContentDismissActionType.USER_DISMISS);
+          }
+        }
+        tmp24 = closure_9(tmp(17092).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
+      }
+      cResult[15] = enabled;
+      cResult[16] = tmp24;
+    } else {
+      class N {
+        constructor() {
+          markAsDismissed(ContentDismissActionType.USER_DISMISS);
+        }
+      }
+    }
+    if (cResult[17] === enabled) {
+      class N {
+        constructor() {
+          markAsDismissed(ContentDismissActionType.USER_DISMISS);
+        }
+      }
+      if (cResult[20] === tmp7.imageContainer) {
+        class N {
+          constructor() {
+            markAsDismissed(ContentDismissActionType.USER_DISMISS);
+          }
+        }
+      }
+      const obj5 = { style: tmp7.imageContainer, children: items1 };
+      items1 = [tmp23, tmp25];
+      cResult[20] = tmp7.imageContainer;
+      cResult[21] = tmp23;
+      cResult[22] = tmp25;
+      cResult[23] = closure_10(View, obj5);
+      const tmp35 = closure_10(View, obj5);
+    }
+    let tmp26 = !enabled;
+    if (tmp26) {
+      let tmp27Result;
+      class N {
+        constructor() {
+          markAsDismissed(ContentDismissActionType.USER_DISMISS);
+        }
+      }
+      if (obj7.isIOS()) {
+        class N {
+          constructor() {
+            markAsDismissed(ContentDismissActionType.USER_DISMISS);
+          }
+        }
+        const obj6 = { uri: ref(17094) };
+        tmp31[0] = obj6;
+        tmp31[1] = tmp7.image;
+        tmp31[3] = !enabled;
+        const tmp5Result4 = ref(5974);
+        tmp27Result = tmp27(tmp5Result4, tmp31);
+      } else {
+        class N {
+          constructor() {
+            markAsDismissed(ContentDismissActionType.USER_DISMISS);
+          }
+        }
+        const APNGPlayer = tmp(8464).APNGPlayer;
+        tmp28[0] = ref(17094);
+        tmp28[1] = tmp7.image;
+        tmp27Result = tmp27(APNGPlayer, tmp28);
+      }
+      tmp26 = tmp27Result;
+    }
+    cResult[17] = enabled;
+    cResult[18] = tmp7.image;
+    cResult[19] = tmp26;
+  }
+  class O {
+    constructor() {
+      tmp = UserSettingsSections;
+      tmp2 = closure_2 ? tmp.PROFILE_CUSTOMIZATION : tmp.PROFILE_CUSTOMIZATION_TRY_IT_OUT;
+      obj = closure_0(closure_2[16]);
+      openUserSettingsResult = obj.openUserSettings({ screen: tmp2 }, () => {
+        let obj = markAsDismissed(closure_2[17]);
+        obj.runAfterInteractions(() => { /* body not rendered: F153326 */ });
+      });
+      return;
+    }
+  }
+  cResult[6] = tmp13;
+  cResult[7] = markAsDismissed;
+  cResult[8] = O;
+}) : ((markAsDismissed) => {
+  let SafeAreaPaddingView;
+  let c2;
+  let currentUser;
+  let intl2;
+  let intl3;
+  let intl4;
+  let items4;
+  let items5;
+  let items6;
+  let items7;
+  let obj11;
+  let obj15;
+  let str2;
+  let stringResult;
+  markAsDismissed = markAsDismissed.markAsDismissed;
+  let obj = react;
+  const ref = react.useRef(null);
+  let tmp2 = markAsDismissed;
+  const enabled = react.useContext(markAsDismissed(4596).AccessibilityPreferencesContext).reducedMotion.enabled;
+  let obj2 = markAsDismissed(4729);
+  const isThemeDarkResult = obj2.isThemeDark(ref(4791)());
   const tmp6 = closure_11();
-  const obj2 = markAsDismissed(4714);
-  const typeConsolidationTextTransform = markAsDismissed(6586).useTypeConsolidationTextTransform("DisplayNameStylesFlywheel");
-  const obj3 = markAsDismissed(6586);
+  const obj3 = markAsDismissed(6469);
+  const typeConsolidationTextTransform = obj3.useTypeConsolidationTextTransform("DisplayNameStylesFlywheel");
   const items = [UserStore];
-  const stateFromStores = markAsDismissed(504).useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj4 = markAsDismissed(504);
-  let result = ref(4517).canUsePremiumProfileCustomization(stateFromStores);
+  const stateFromStores = obj4.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const obj5 = ref(4528);
+  let result = obj5.canUsePremiumProfileCustomization(stateFromStores);
   dependencyMap = result;
-  const intl = markAsDismissed(1115).intl;
+  const intl = markAsDismissed(1126).intl;
   const string = intl.string;
-  const tmp10 = ref(2876);
+  const tmp10 = ref(2883);
   if (result) {
-    let stringResult = string(tmp10.TyUdka);
+    stringResult = string(tmp10.TyUdka);
   } else {
     stringResult = string(tmp10.dluV0R);
   }
   const items1 = [result, markAsDismissed];
   const items2 = [markAsDismissed];
   const callback = obj.useCallback(() => {
-    openUserSettings.openUserSettings({ screen: c2 ? timestampProducer.PROFILE_CUSTOMIZATION : timestampProducer.PROFILE_CUSTOMIZATION_TRY_IT_OUT }, () => {
-      markAsDismissed(6645).runAfterInteractions(() => {
-        markAsDismissed(6987).openUserSettings({ screen: constants.DISPLAY_NAME_STYLES }, () => {
+    const tmp2 = c2 ? metroRequire.PROFILE_CUSTOMIZATION : metroRequire.PROFILE_CUSTOMIZATION_TRY_IT_OUT;
+    let obj = openUserSettings;
+    obj.openUserSettings({ screen: tmp2 }, () => {
+      let obj = markAsDismissed(c2[17]);
+      obj.runAfterInteractions(() => {
+        let obj = markAsDismissed(closure_2_2[16]);
+        let obj2 = { screen: constants.DISPLAY_NAME_STYLES };
+        obj.openUserSettings(obj2, () => {
           closure_1_0(constants.TAKE_ACTION);
-          const result = closure_2_0(4683).UNSAFE_markDismissibleContentAsDismissed(closure_2_0(2029).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK, { dismissAction: constants.INDIRECT_ACTION });
+          const obj = closure_2_0(closure_2_2[18]);
+          const obj2 = { dismissAction: constants.INDIRECT_ACTION };
+          const result = obj.UNSAFE_markDismissibleContentAsDismissed(closure_2_0(closure_2_2[19]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK, obj2);
         });
       });
     });
@@ -75,83 +293,81 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   const callback2 = obj.useCallback(() => {
     markAsDismissed(ContentDismissActionType.USER_DISMISS);
   }, items3);
-  const obj6 = { ref, onDismiss: callback2, startExpanded: true, handleDisabled: true, children: null };
-  const obj7 = { style: tmp6.content, children: null };
-  const items4 = [
-    closure_9(markAsDismissed(6761).ActionSheetHeaderBar, {
-      onPress() {
-        const current = ref.current;
-        if (current != null) {
-          current.closeActionSheet();
-        }
-        markAsDismissed(ContentDismissActionType.USER_DISMISS);
+  const obj6 = { ref, onDismiss: callback2, startExpanded: true, handleDisabled: true, children: closure_9(SafeAreaPaddingView, obj15) };
+  BottomSheet = tmp2(6645).BottomSheet;
+  const obj7 = { style: tmp6.content, children: items4 };
+  SafeAreaPaddingView = tmp2(6619).SafeAreaPaddingView;
+  items4 = [, , , , ];
+  const obj8 = {
+    onPress() {
+      const current = ref.current;
+      if (current != null) {
+        current.closeActionSheet();
       }
-    }),
-  ,
-  ,
-  ,
-
-  ];
-  const obj9 = { style: tmp6.imageContainer, children: null };
-  let tmp15Result = enabled;
-  if (enabled) {
-    tmp15Result = tmp15(tmp2(17003).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
-  }
-  const items5 = [tmp15Result, ];
-  if (enabled) {
-    items5[1] = !enabled;
-    obj9.children = items5;
-    items4[1] = tmp16(tmp17, obj9);
-    const obj10 = { variant: "display-md", style: null, color: null, children: null };
-    const items6 = [tmp6.title, typeConsolidationTextTransform];
-    obj10.style = items6;
-    let str = "text-overlay-dark";
-    let str2 = "text-overlay-dark";
-    if (isThemeDarkResult) {
-      str2 = "text-overlay-light";
+      markAsDismissed(ContentDismissActionType.USER_DISMISS);
     }
-    obj10.color = str2;
-    const intl2 = tmp2(1115).intl;
-    obj10.children = intl2.string(tmp4(2876).Uzms61);
-    items4[2] = tmp15(tmp2(4841).Text, obj10);
-    const obj11 = { variant: "text-lg/medium", style: tmp6.subtitle, color: null, children: null };
-    if (isThemeDarkResult) {
-      str = "text-overlay-light";
-    }
-    const obj12 = { bottom: true, children: null };
-    obj11.color = str;
-    obj11.children = stringResult;
-    items4[3] = tmp15(tmp2(4841).Text, obj11);
-    const obj13 = { style: tmp6.actions, children: null };
-    const obj14 = { text: null, variant: "primary", size: "lg", onPress: null };
-    const intl3 = tmp2(1115).intl;
-    obj14.text = intl3.string(tmp2(1115).t["4P5I8V"]);
-    obj14.onPress = callback;
-    const items7 = [tmp15(tmp2(5465).Button, obj14), ];
-    const obj15 = { text: null, variant: "secondary", size: "lg", onPress: null };
-    const intl4 = tmp2(1115).intl;
-    obj15.text = intl4.string(tmp2(1115).t.TulDPl);
-    obj15.onPress = callback1;
-    items7[1] = tmp15(tmp2(5465).Button, obj15);
-    obj13.children = items7;
-    items4[4] = tmp16(tmp17, obj13);
-    obj7.children = items4;
-    obj12.children = tmp16(tmp17, obj7);
-    obj6.children = tmp15(tmp2(6730).SafeAreaPaddingView, obj12);
-    return tmp15(tmp2(6757).BottomSheet, obj6);
-  } else {
+  };
+  items4[0] = closure_9(tmp2(6649).ActionSheetHeaderBar, obj8);
+  const obj9 = { style: tmp6.imageContainer, children: items5 };
+  items5 = [enabled && closure_9(tmp2(17092).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" }), ];
+  let tmp19 = !enabled;
+  enabled && closure_9(tmp2(17092).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
+  if (tmp19) {
+    let tmp15Result;
+    const tmp2Result = tmp2(1369);
     if (tmp2Result.isIOS()) {
-      const obj16 = { source: null, style: null, resizeMode: "contain", enableAnimation: null };
-      const obj17 = { uri: tmp4(17005) };
-      obj16.source = obj17;
-      obj16.style = tmp6.image;
-      obj16.enableAnimation = !enabled;
-      let tmp15Result2 = tmp15(tmp4(6085), obj16);
-      const tmp4Result = tmp4(6085);
+      const obj10 = { source: obj11, style: tmp6.image, resizeMode: "contain", enableAnimation: !enabled };
+      obj11 = { uri: ref(17094) };
+      const tmp4Result = ref(5974);
+      tmp15Result = tmp15(tmp4Result, obj10);
     } else {
-      const obj18 = { url: tmp4(17005), style: tmp6.image, autoplay: true };
-      tmp15Result2 = tmp15(tmp2(8459).APNGPlayer, obj18);
+      const obj12 = { url: ref(17094), style: tmp6.image, autoplay: true };
+      const APNGPlayer = tmp2(8464).APNGPlayer;
+      tmp15Result = tmp15(APNGPlayer, obj12);
     }
-    tmp2Result = tmp2(1364);
+    tmp19 = tmp15Result;
   }
-};
+  items5[1] = tmp19;
+  items4[1] = closure_10(View, obj9);
+  const obj13 = { variant: "display-md", style: items6, color: str2, children: intl2.string(ref(2883).Uzms61) };
+  items6 = [tmp6.title, typeConsolidationTextTransform];
+  let str = "text-overlay-dark";
+  str2 = "text-overlay-dark";
+  const Text = tmp2(4886).Text;
+  if (isThemeDarkResult) {
+    str2 = "text-overlay-light";
+  }
+  intl2 = tmp2(1126).intl;
+  items4[2] = closure_9(Text, obj13);
+  const obj14 = { variant: "text-lg/medium", style: tmp6.subtitle, color: str, children: stringResult };
+  const Text2 = tmp2(4886).Text;
+  if (isThemeDarkResult) {
+    str = "text-overlay-light";
+  }
+  obj15 = { bottom: true, children: closure_10(View, obj7) };
+  items4[3] = closure_9(Text2, obj14);
+  const obj16 = { style: tmp6.actions, children: items7 };
+  const obj17 = { text: intl3.string(tmp2(1126).t["4P5I8V"]), variant: "primary", size: "lg", onPress: callback };
+  const Button = tmp2(5594).Button;
+  intl3 = tmp2(1126).intl;
+  items7 = [closure_9(Button, obj17), ];
+  const obj18 = { text: intl4.string(tmp2(1126).t.TulDPl), variant: "secondary", size: "lg", onPress: callback1 };
+  const Button2 = tmp2(5594).Button;
+  intl4 = tmp2(1126).intl;
+  items7[1] = closure_9(Button2, obj18);
+  items4[4] = closure_10(View, obj16);
+  return closure_9(BottomSheet, obj6);
+});
+let closure_11 = createStyles.createStyles(() => {
+  const obj = { content: { alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16 }, imageContainer: size, image: { width: "100%", height: "100%" }, title: { textAlign: "center", fontFamily: metroImportDefault.GINTO_NORD_EXTRA_BOLD, textTransform: "uppercase", marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12 }, subtitle: { textAlign: "center", marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_32 }, actions: { gap: nativeDefault.space.PX_12, width: "100%" } };
+  ({ alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16 });
+  size = { width: "100%", height: 162, alignItems: "center", justifyContent: "center", marginVertical: nativeDefault.space.PX_24 };
+  ({ textAlign: "center", fontFamily: metroImportDefault.GINTO_NORD_EXTRA_BOLD, textTransform: "uppercase", marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12 });
+  ({ textAlign: "center", marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_32 });
+  ({ gap: nativeDefault.space.PX_12, width: "100%" });
+  return obj;
+});
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesFlywheelMobileActionSheet.tsx");
+
+export default tmp4;

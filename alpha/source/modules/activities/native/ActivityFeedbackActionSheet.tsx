@@ -1,29 +1,163 @@
-// Module ID: 16555
-// Function ID: 16556
+// Module ID: 16632
+// Function ID: 16633
 // Name: ActivityFeedbackActionSheet
-// Dependencies: [19, 2005, 1074, 11334, 21, 1241, 16556, 11355, 1115, 11337, 4556, 16557, 2]
-// Exports: default
+// Dependencies: [19, 2011, 1085, 11249, 21, 1252, 558, 576, 16633, 11252, 4567, 16634, 1126, 11270, 2]
 
-// Module 16555 (ActivityFeedbackActionSheet)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ToastUtils from "ToastUtils" /* 4556 */;
-import FeedbackUtils from "FeedbackUtils" /* 11337 */;
-import FeedbackActionSheetDefault from "FeedbackActionSheet" /* 11355 */;
-import getActivityReportOptionsDefault from "getActivityReportOptions" /* 16556 */;
-import trackActivityProblemDefault from "trackActivityProblem" /* 16557 */;
-import noop from "module_19" /* 19 */;
+// Module 16632 (ActivityFeedbackActionSheet)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import Constants2 from "Constants" /* 2011 */;
+import ToastUtils from "ToastUtils" /* 4567 */;
+import Constants3 from "Constants" /* 11249 */;
+import FeedbackUtils from "FeedbackUtils" /* 11252 */;
+import FeedbackActionSheetDefault from "FeedbackActionSheet" /* 11270 */;
+import getActivityReportOptionsDefault from "getActivityReportOptions" /* 16633 */;
+import trackActivityProblemDefault from "trackActivityProblem" /* 16634 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ActivityFeedbackReasons = fn(2005).ActivityFeedbackReasons;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const FeedbackType = fn(11334).FeedbackType;
-const jsx = fn(21).jsx;
+let activityApplication;
+
+const ActivityFeedbackReasons = Constants2.ActivityFeedbackReasons;
+const AnalyticEvents = Constants.AnalyticEvents;
+const FeedbackType = Constants3.FeedbackType;
+const jsx = Fragment.jsx;
 const items = [, , ];
 ({ OTHER: arr[0], ADS: arr[1], NOT_FUN: arr[2] } = ActivityFeedbackReasons);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/activities/native/ActivityFeedbackActionSheet.tsx");
-
-export default function ActivityFeedbackActionSheet(activityApplication) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((activityApplication) => {
+  let embeddedActivityLocation;
+  let tmp6;
+  let obj = activityApplication(embeddedActivityLocation[7]);
+  const cResult = obj.c(18);
+  activityApplication = activityApplication.activityApplication;
+  const channel = activityApplication.channel;
+  embeddedActivityLocation = activityApplication.embeddedActivityLocation;
+  const analyticsData = activityApplication.analyticsData;
+  const embeddedActivityConfig = activityApplication.embeddedActivityConfig;
+  let prop;
+  if (embeddedActivityConfig != null) {
+    prop = embeddedActivityConfig.displays_advertisements;
+  }
+  if (cResult[0] !== (true === prop)) {
+    const tmp8 = channel(embeddedActivityLocation[8])(true, true === prop);
+    cResult[0] = true === prop;
+    cResult[1] = tmp8;
+    tmp6 = tmp8;
+  } else {
+    tmp6 = cResult[1];
+  }
+  if (cResult[2] === activityApplication) {
+    if (cResult[3] === analyticsData) {
+      if (cResult[4] === channel) {
+        let tmp9;
+        let tmp10;
+        let tmp14;
+        let tmp13;
+        if (cResult[5] === embeddedActivityLocation) {
+          tmp9 = cResult[6];
+        }
+        if (cResult[7] !== activityApplication.name) {
+          const intl = tmp(tmp2[12]).intl;
+          let obj2 = { applicationName: activityApplication.name };
+          const formatToPlainStringResult = intl.formatToPlainString(activityApplication(embeddedActivityLocation[12]).t.QXYwoD, obj2);
+          cResult[7] = activityApplication.name;
+          cResult[8] = formatToPlainStringResult;
+          tmp10 = formatToPlainStringResult;
+        } else {
+          tmp10 = cResult[8];
+        }
+        const _Symbol = Symbol;
+        if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+          const intl2 = tmp(tmp2[12]).intl;
+          const stringResult = intl2.string(activityApplication(embeddedActivityLocation[12]).t["9hk2KF"]);
+          const intl3 = tmp(tmp2[12]).intl;
+          const stringResult1 = intl3.string(activityApplication(embeddedActivityLocation[12]).t.g1q5fr);
+          cResult[9] = stringResult;
+          cResult[10] = stringResult1;
+          tmp14 = stringResult1;
+          tmp13 = stringResult;
+        } else {
+          tmp13 = cResult[9];
+          tmp14 = cResult[10];
+        }
+        if (cResult[11] !== activityApplication) {
+          class S {
+            constructor() {
+              const obj = AnalyticsUtilsDefault;
+              const obj2 = { type: "Activity Feedback Sheet", application_id: activityApplication.id, application_name: activityApplication.name, game_id: activityApplication.id, source: "Activity End" };
+              obj.track(AnalyticEvents.OPEN_POPOUT, obj2);
+            }
+          }
+          cResult[11] = activityApplication;
+          cResult[12] = S;
+        } else {
+          class S {
+            constructor() {
+              const obj = AnalyticsUtilsDefault;
+              const obj2 = { type: "Activity Feedback Sheet", application_id: activityApplication.id, application_name: activityApplication.name, game_id: activityApplication.id, source: "Activity End" };
+              obj.track(AnalyticEvents.OPEN_POPOUT, obj2);
+            }
+          }
+        }
+        if (cResult[13] === tmp6) {
+          class S {
+            constructor() {
+              const obj = AnalyticsUtilsDefault;
+              const obj2 = { type: "Activity Feedback Sheet", application_id: activityApplication.id, application_name: activityApplication.name, game_id: activityApplication.id, source: "Activity End" };
+              obj.track(AnalyticEvents.OPEN_POPOUT, obj2);
+            }
+          }
+        }
+        const tmp23 = jsx(channel(embeddedActivityLocation[13]), { headerLabel: tmp10, showHeaderCloseButton: true, ratingsBodyLabel: tmp13, reasonsHeaderLabel: tmp14, reasons: tmp6, feedbackReasons: items, otherKey: analyticsData.OTHER, trackOpen: tmp17, trackReport: tmp9 });
+        cResult[13] = tmp6;
+        cResult[14] = tmp10;
+        cResult[15] = tmp17;
+        cResult[16] = tmp9;
+        cResult[17] = tmp23;
+      }
+    }
+  }
+  const fn = function f(dontShowAgain) {
+    let feedback;
+    let rating;
+    let reason;
+    ({ rating, reason, feedback } = dontShowAgain);
+    let value = null;
+    dontShowAgain = dontShowAgain.dontShowAgain;
+    if (null != reason) {
+      value = reason.value;
+    }
+    if (dontShowAgain) {
+      const obj2 = { application_id: activityApplication.id, rating };
+      const obj = AnalyticsUtilsDefault;
+      obj.track(AnalyticEvents.ACTIVITY_REPORT_DONT_SHOW, obj2);
+      const obj4 = { feedbackType: FeedbackType.ACTIVITY, location: "ActivityFeedbackActionSheet" };
+      const obj3 = FeedbackUtils;
+      obj3.processOptOut(obj4);
+    }
+    if (null != rating) {
+      const obj5 = ToastUtils;
+      obj5.presentFeedbackSent();
+      const obj6 = { problem: value, channel, embeddedActivityLocation, feedback, activityApplication, analyticsData, location: "Activity End", rating };
+      const tmp16 = trackActivityProblemDefault;
+      if (feedback == null) {
+        feedback = "";
+      }
+      tmp16(obj6);
+    }
+  };
+  cResult[2] = activityApplication;
+  cResult[3] = analyticsData;
+  cResult[4] = channel;
+  cResult[5] = embeddedActivityLocation;
+  cResult[6] = fn;
+  tmp9 = fn;
+}) : ((activityApplication) => {
+  let analyticsData;
+  let channel;
+  let embeddedActivityLocation;
   activityApplication = activityApplication.activityApplication;
   ({ channel: importDefault, embeddedActivityLocation: dependencyMap, analyticsData: ActivityFeedbackReasons } = activityApplication);
   const embeddedActivityConfig = activityApplication.embeddedActivityConfig;
@@ -31,44 +165,46 @@ export default function ActivityFeedbackActionSheet(activityApplication) {
   if (embeddedActivityConfig != null) {
     prop = embeddedActivityConfig.displays_advertisements;
   }
-  let obj = { headerLabel: null, showHeaderCloseButton: true, ratingsBodyLabel: null, reasonsHeaderLabel: null, reasons: null, feedbackReasons: null, otherKey: null, trackOpen: null, trackReport: null };
   const tmp2 = getActivityReportOptionsDefault(true, true === prop);
-  const intl = activityApplication(1115).intl;
-  obj.headerLabel = intl.formatToPlainString(activityApplication(1115).t.QXYwoD, { applicationName: activityApplication.name });
-  const intl2 = activityApplication(1115).intl;
-  obj.ratingsBodyLabel = intl2.string(activityApplication(1115).t["9hk2KF"]);
-  const intl3 = activityApplication(1115).intl;
-  obj.reasonsHeaderLabel = intl3.string(activityApplication(1115).t.g1q5fr);
-  obj.reasons = tmp2;
-  obj.feedbackReasons = items;
-  obj.otherKey = ActivityFeedbackReasons.OTHER;
-  obj.trackOpen = function trackOpen() {
-    AnalyticsUtilsDefault.track(AnalyticEvents.OPEN_POPOUT, { type: "Activity Feedback Sheet", application_id: activityApplication.id, application_name: activityApplication.name, game_id: activityApplication.id, source: "Activity End" });
-  };
-  obj.trackReport = function trackReport(dontShowAgain) {
+  FeedbackActionSheetDefault;
+  const intl = activityApplication(1126).intl;
+  let obj2 = { applicationName: activityApplication.name };
+  const intl2 = activityApplication(1126).intl;
+  const intl3 = activityApplication(1126).intl;
+  return <tmp3 headerLabel={intl.formatToPlainString(activityApplication(1126).t.QXYwoD, obj2)} showHeaderCloseButton ratingsBodyLabel={intl2.string(activityApplication(1126).t["9hk2KF"])} reasonsHeaderLabel={intl3.string(activityApplication(1126).t.g1q5fr)} reasons={tmp2} feedbackReasons={items} otherKey={ActivityFeedbackReasons.OTHER} trackOpen={function trackOpen() {
+    const obj = AnalyticsUtilsDefault;
+    const obj2 = { type: "Activity Feedback Sheet", application_id: activityApplication.id, application_name: activityApplication.name, game_id: activityApplication.id, source: "Activity End" };
+    obj.track(AnalyticEvents.OPEN_POPOUT, obj2);
+  }} trackReport={function trackReport(dontShowAgain) {
+    let feedback;
+    let rating;
+    let reason;
     ({ rating, reason, feedback } = dontShowAgain);
-    value = null;
+    let value = null;
+    dontShowAgain = dontShowAgain.dontShowAgain;
     if (null != reason) {
       value = reason.value;
     }
-    if (dontShowAgain.dontShowAgain) {
+    if (dontShowAgain) {
       const obj2 = { application_id: activityApplication.id, rating };
-      AnalyticsUtilsDefault.track(AnalyticEvents.ACTIVITY_REPORT_DONT_SHOW, obj2);
+      const obj = AnalyticsUtilsDefault;
+      obj.track(AnalyticEvents.ACTIVITY_REPORT_DONT_SHOW, obj2);
       const obj4 = { feedbackType: FeedbackType.ACTIVITY, location: "ActivityFeedbackActionSheet" };
-      FeedbackUtils.processOptOut(obj4);
+      const obj3 = FeedbackUtils;
+      obj3.processOptOut(obj4);
     }
     if (null != rating) {
-      ToastUtils.presentFeedbackSent();
-      const obj6 = { problem: value, channel, embeddedActivityLocation, feedback: null, activityApplication: null, analyticsData: null, location: "Activity End", rating: null };
+      const obj5 = ToastUtils;
+      obj5.presentFeedbackSent();
+      const obj6 = { problem: value, channel: importDefault, embeddedActivityLocation: dependencyMap, feedback, activityApplication, analyticsData: ActivityFeedbackReasons, location: "Activity End", rating };
+      const tmp16 = trackActivityProblemDefault;
       if (feedback == null) {
         feedback = "";
       }
-      obj6.feedback = feedback;
-      obj6.activityApplication = activityApplication;
-      obj6.analyticsData = analyticsData;
-      obj6.rating = rating;
-      trackActivityProblemDefault(obj6);
+      tmp16(obj6);
     }
-  };
-  return jsx(FeedbackActionSheetDefault, { headerLabel: null, showHeaderCloseButton: true, ratingsBodyLabel: null, reasonsHeaderLabel: null, reasons: null, feedbackReasons: null, otherKey: null, trackOpen: null, trackReport: null });
-};
+  }} />;
+});
+const result = size.fileFinishedImporting("modules/activities/native/ActivityFeedbackActionSheet.tsx");
+
+export default tmp3;

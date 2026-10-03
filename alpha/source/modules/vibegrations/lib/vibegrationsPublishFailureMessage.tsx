@@ -1,12 +1,12 @@
-// Module ID: 16533
-// Function ID: 16534
+// Module ID: 16610
+// Function ID: 16611
 // Name: vibegrationsPublishFailureMessage
-// Dependencies: [1115, 3714, 2]
+// Dependencies: [1126, 3723, 2]
 // Exports: default
 
-// Module 16533 (vibegrationsPublishFailureMessage)
-import util from "util" /* 1115 */;
-import _modDef3714 from "module_3714" /* 3714 */;
+// Module 16610 (vibegrationsPublishFailureMessage)
+import intl3 from "intl" /* 1126 */;
+import _modDef3723 from "module_3723" /* 3723 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/vibegrationsPublishFailureMessage.tsx");
@@ -17,13 +17,14 @@ export default function vibegrationsPublishFailureMessage(detail) {
     trimmed = str.trim();
   }
   if (null != trimmed) {
+    let formatToPlainStringResult;
     if ("" !== trimmed) {
-      const intl2 = util.intl;
+      const intl2 = intl3.intl;
       const obj = { reason: trimmed };
-      let formatToPlainStringResult = intl2.formatToPlainString(_modDef3714.xTlB8O, obj);
+      formatToPlainStringResult = intl2.formatToPlainString(_modDef3723.xTlB8O, obj);
     }
     return formatToPlainStringResult;
   }
-  const intl = util.intl;
-  formatToPlainStringResult = intl.string(_modDef3714.fNP6Cd);
+  const intl = intl3.intl;
+  formatToPlainStringResult = intl.string(_modDef3723.fNP6Cd);
 };

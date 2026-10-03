@@ -1,34 +1,57 @@
-// Module ID: 15173
-// Function ID: 15174
+// Module ID: 15230
+// Function ID: 15231
 // Name: ReduceSaturationSetting
-// Dependencies: [19, 4834, 7590, 21, 14207, 15071, 10983, 11215, 1115, 1177, 2]
+// Dependencies: [19, 4879, 7634, 21, 558, 576, 14275, 15128, 10983, 11129, 1126, 1188, 2]
 
-// Module 15173 (ReduceSaturationSetting)
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
+// Module 15230 (ReduceSaturationSetting)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
 import CirclePlusIcon from "CirclePlusIcon" /* 10983 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14207 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 15071 */;
-import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4834 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14275 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 15128 */;
+import react from "react" /* 19 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const SettingBuilders = fn(11215);
-const slider = SettingBuilders.createSlider({
-  useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["5PWWCY"]);
-  },
-  parent: fn(7590).MobileUserSettings.ACCESSIBILITY,
-  useTrailing() {
-    return jsx(native.BetaTag, { size: native.BetaSizes.SMALL });
-  },
-  useProps: function useSaturationSettingProps() {
-    return noop.useMemo(() => ({ value: saturation.saturation, onSlidingComplete: AccessibilityActionCreators.setSaturation, minimumValue: 0, maximumValue: 1, step: 0.05, startIcon: jsx(CircleMinusIcon.CircleMinusIcon, {}), endIcon: jsx(CirclePlusIcon.CirclePlusIcon, {}) }), []);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { value: AccessibilityStore.saturation, onSlidingComplete: AccessibilityActionCreators.setSaturation, minimumValue: 0, maximumValue: 1, step: 0.05, startIcon: jsx(CircleMinusIcon.CircleMinusIcon, {}), endIcon: jsx(CirclePlusIcon.CirclePlusIcon, {}) };
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
   }
+  return first;
+}) : (() => {
+  let saturation;
+  return react.useMemo(() => {
+    const obj = { value: saturation.saturation, onSlidingComplete: AccessibilityActionCreators.setSaturation, minimumValue: 0, maximumValue: 1, step: 0.05, startIcon: jsx(CircleMinusIcon.CircleMinusIcon, {}), endIcon: jsx(CirclePlusIcon.CirclePlusIcon, {}) };
+    return obj;
+  }, []);
 });
-const size = fn(2);
+let obj = {
+  useTitle() {
+    const intl = intl2.intl;
+    return intl.string(intl2.t["5PWWCY"]);
+  },
+  parent: MobileUserSettings.ACCESSIBILITY,
+  useTrailing() {
+    const BetaTag = native.BetaTag;
+    return <BetaTag size={native.BetaSizes.SMALL} />;
+  },
+  useProps: tmp2
+};
+const slider = SettingBuilders.createSlider(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/ReduceSaturationSetting.tsx");
 
 export default slider;

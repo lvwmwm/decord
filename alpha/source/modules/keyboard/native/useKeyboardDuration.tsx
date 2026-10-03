@@ -1,12 +1,13 @@
-// Module ID: 6078
-// Function ID: 6079
+// Module ID: 6472
+// Function ID: 6473
 // Name: useKeyboardDuration
-// Dependencies: [1482, 1364, 1483, 2]
+// Dependencies: [1487, 1369, 1488, 2]
 // Exports: getKeyboardDuration
 
-// Module 6078 (useKeyboardDuration)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1482 */;
-import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1483 */;
+// Module 6472 (useKeyboardDuration)
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1487 */;
+import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1488 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/keyboard/native/useKeyboardDuration.tsx");
@@ -17,8 +18,10 @@ export const getKeyboardDuration = function getKeyboardDuration() {
     DEFAULT_APP_ENTRY_KEY = AppEntryKeyContext.DEFAULT_APP_ENTRY_KEY;
   }
   let num = 300;
+  const obj = PlatformUtils;
   if (!obj.isAndroid()) {
-    num = KeyboardUIStoreDefault.getState().byAppEntry[DEFAULT_APP_ENTRY_KEY].keyboardDuration;
+    const obj2 = KeyboardUIStoreDefault;
+    num = obj2.getState().byAppEntry[DEFAULT_APP_ENTRY_KEY].keyboardDuration;
   }
   return num;
 };

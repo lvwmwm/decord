@@ -1,9 +1,0 @@
-// Module ID: 3021
-// Function ID: 3022
-// Dependencies: [1121]
-
-// Module 3021
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jaGVja3BvaW50", scales: [1], hash: "f670e6259e2e5b11d06689ec6c4d48a1", name: "lt.messages.f670e6259e2e5b11d06689ec6c4d48a1.compiled.messages", type: "jsona" });

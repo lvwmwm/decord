@@ -1,9 +1,9 @@
-// Module ID: 6901
-// Function ID: 6902
+// Module ID: 6799
+// Function ID: 6800
 // Name: ObscureMediaModels
 // Dependencies: [2]
 
-// Module 6901 (ObscureMediaModels)
+// Module 6799 (ObscureMediaModels)
 import size from "module_2" /* 2 */;
 
 const obj = { SPOILER: "spoiler", EXPLICIT_CONTENT: "explicit_content", POTENTIAL_EXPLICIT_CONTENT: "potential_explicit_content", GORE_CONTENT: "gore_content", SELF_HARM_CONTENT: "self_harm_content" };
@@ -12,8 +12,9 @@ const items = [, , , ];
 const items1 = [, , ];
 ({ EXPLICIT_CONTENT: arr2[0], GORE_CONTENT: arr2[1], SELF_HARM_CONTENT: arr2[2] } = obj);
 const set = new Set(items);
+const set1 = new Set(items1);
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/ObscureMediaModels.tsx");
 
 export const ObscureReason = obj;
 export const SENSITIVE_CONTENT_OBSCURABLE_REASONS = set;
-export const AGE_VERIFICATION_OBSCURABLE_REASONS = new Set(items1);
+export const AGE_VERIFICATION_OBSCURABLE_REASONS = set1;

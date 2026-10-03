@@ -1,66 +1,197 @@
-// Module ID: 8892
-// Function ID: 8893
+// Module ID: 8920
+// Function ID: 8921
 // Name: ExplicitMediaSenderFalsePositiveActionSheet
-// Dependencies: [19, 6898, 7207, 21, 563, 8893, 8894, 8891, 8897, 4809, 7206, 2]
-// Exports: default
+// Dependencies: [19, 6796, 7110, 21, 558, 576, 573, 8921, 8919, 8924, 8925, 4854, 7109, 2]
 
-// Module 8892 (ExplicitMediaSenderFalsePositiveActionSheet)
-import ExplicitMediaFalsePositiveActionCreatorsDefault from "ExplicitMediaFalsePositiveActionCreators" /* 8891 */;
-import ExplicitMediaFalsePositiveActionSheet from "ExplicitMediaFalsePositiveActionSheet" /* 8894 */;
-import ExplicitMediaRedactionActionCreators from "ExplicitMediaRedactionActionCreators" /* 8897 */;
-import noop from "module_19" /* 19 */;
-import ExplicitMediaStore from "ExplicitMediaStore" /* 6898 */;
+// Module 8920 (ExplicitMediaSenderFalsePositiveActionSheet)
+import Fragment from "Fragment" /* 21 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7110 */;
+import ExplicitMediaFalsePositiveActionCreatorsDefault from "ExplicitMediaFalsePositiveActionCreators" /* 8919 */;
+import ExplicitMediaFalsePositiveActionSheet2 from "ExplicitMediaFalsePositiveActionSheet" /* 8921 */;
+import ExplicitMediaRedactionActionCreators from "ExplicitMediaRedactionActionCreators" /* 8924 */;
+import react_mod from "react" /* 19 */;
+import ExplicitMediaStore from "ExplicitMediaStore" /* 6796 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_5 = fn(7207).EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_ACTION_SHEET_KEY;
-const jsx = fn(21).jsx;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/explicit_media_redaction/native/false_positive_reporting/ExplicitMediaSenderFalsePositiveActionSheet.tsx");
+let channelId, dependencyMap;
 
-export default function ExplicitMediaObscuredFalsePositiveActionSheet(channelId) {
+let react = react_mod;
+let closure_5 = ExplicitMediaRedactionConstants.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_ACTION_SHEET_KEY;
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  let closure_2;
+  let first;
+  let tmp6;
+  let tmp8;
+  let obj = channelId(576);
+  const cResult = obj.c(28);
+  const tmp = channelId;
+  channelId = channelId.channelId;
+  const messageId = channelId.messageId;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ExplicitMediaStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== messageId) {
+    const fn = function l() {
+      return ExplicitMediaStore.getFpMessageInfo(messageId);
+    };
+    cResult[1] = messageId;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(573);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  if (cResult[3] !== stateFromStores.attachments) {
+    let tmp9;
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn2 = function p(id) {
+        return id.id;
+      };
+      cResult[5] = fn2;
+      tmp9 = fn2;
+    } else {
+      tmp9 = cResult[5];
+    }
+    const attachments = stateFromStores.attachments;
+    const mapped = attachments.map(tmp9);
+    cResult[3] = stateFromStores.attachments;
+    cResult[4] = mapped;
+    tmp8 = mapped;
+  } else {
+    tmp8 = cResult[4];
+  }
+  dependencyMap = tmp8;
+  if (cResult[6] !== stateFromStores.attachments) {
+    let tmp12;
+    const _Symbol2 = Symbol;
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+      class F {
+        constructor(filename) {
+          return filename.filename;
+        }
+      }
+      cResult[8] = F;
+      tmp12 = F;
+    } else {
+      class F {
+        constructor(filename) {
+          return filename.filename;
+        }
+      }
+    }
+    const attachments1 = stateFromStores.attachments;
+    let mapped1 = attachments1.map(tmp12);
+    cResult[6] = stateFromStores.attachments;
+    cResult[7] = mapped1;
+  } else {
+    class F {
+      constructor(filename) {
+        return filename.filename;
+      }
+    }
+  }
+  mapped1 = tmp11;
+  if (cResult[9] === channelId) {
+    class F {
+      constructor(filename) {
+        return filename.filename;
+      }
+    }
+    const _Symbol3 = Symbol;
+    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+      class F {
+        constructor(filename) {
+          return filename.filename;
+        }
+      }
+      cResult[12] = tmp15;
+    } else {
+      class F {
+        constructor(filename) {
+          return filename.filename;
+        }
+      }
+    }
+    if (cResult[13] === tmp11) {
+      class F {
+        constructor(filename) {
+          return filename.filename;
+        }
+      }
+    }
+    class A {
+      constructor() {
+        const obj = ExplicitMediaRedactionActionCreators;
+        return obj.reportFailedSendFalsePositive(channelId, messageId, closure_2, mapped1);
+      }
+    }
+    cResult[13] = tmp11;
+    cResult[14] = tmp8;
+    cResult[15] = channelId;
+    cResult[16] = messageId;
+    cResult[17] = A;
+  }
+  const fn3 = function u() {
+    const obj = ExplicitMediaFalsePositiveActionSheet2;
+    obj.handleSuccess(closure_5);
+    const obj2 = ExplicitMediaFalsePositiveActionCreatorsDefault;
+    const result = obj2.disableFalsePositiveButton(channelId, messageId);
+  };
+  cResult[9] = channelId;
+  cResult[10] = messageId;
+  cResult[11] = fn3;
+}) : ((channelId) => {
+  let closure_2;
+  let closure_3;
   channelId = channelId.channelId;
   const messageId = channelId.messageId;
   let reportFalsePositive;
+  let obj = channelId(573);
   const items = [reportFalsePositive];
-  const stateFromStores = channelId(563).useStateFromStores(items, () => ExplicitMediaStore.getFpMessageInfo(messageId));
+  const stateFromStores = obj.useStateFromStores(items, () => ExplicitMediaStore.getFpMessageInfo(messageId));
   const attachments = stateFromStores.attachments;
   dependencyMap = attachments.map((id) => id.id);
   const attachments1 = stateFromStores.attachments;
-  noop = attachments1.map((filename) => filename.filename);
-  let obj = channelId(563);
-  const explicitMediaActions = channelId(8893).useExplicitMediaActions({
-    onSuccess() {
-      ExplicitMediaFalsePositiveActionSheet.handleSuccess(closure_5);
-      const result = ExplicitMediaFalsePositiveActionCreatorsDefault.disableFalsePositiveButton(channelId, messageId);
-    },
-    onError() {
-      return channelId(closure_2[6]).handleError();
-    },
-    report() {
-      return ExplicitMediaRedactionActionCreators.reportFailedSendFalsePositive(channelId, messageId, closure_2, closure_3);
-    }
-  });
-  reportFalsePositive = explicitMediaActions.reportFalsePositive;
-  if (stateFromStores.attachments.length <= 0) {
-    messageId(4809).hideActionSheet();
-    const obj4 = messageId(4809);
-  }
-  const items1 = [reportFalsePositive];
-  const callback = noop.useCallback(() => {
-    reportFalsePositive();
-  }, items1);
-  const obj2 = channelId(8893);
+  react = attachments1.map((filename) => filename.filename);
+  let obj2 = channelId(8925);
   const obj3 = {
     onSuccess() {
-      ExplicitMediaFalsePositiveActionSheet.handleSuccess(closure_5);
-      const result = ExplicitMediaFalsePositiveActionCreatorsDefault.disableFalsePositiveButton(channelId, messageId);
+      const obj = ExplicitMediaFalsePositiveActionSheet2;
+      obj.handleSuccess(closure_5);
+      const obj2 = ExplicitMediaFalsePositiveActionCreatorsDefault;
+      const result = obj2.disableFalsePositiveButton(channelId, messageId);
     },
     onError() {
-      return channelId(closure_2[6]).handleError();
+      const obj = channelId(closure_2[7]);
+      return obj.handleError();
     },
     report() {
-      return ExplicitMediaRedactionActionCreators.reportFailedSendFalsePositive(channelId, messageId, closure_2, closure_3);
+      const obj = ExplicitMediaRedactionActionCreators;
+      return obj.reportFailedSendFalsePositive(channelId, messageId, closure_2, closure_3);
     }
   };
-  return jsx(channelId(8894).ExplicitMediaFalsePositiveActionSheet, { channelId, messageId, isReportFalsePositiveLoading: explicitMediaActions.isReportFalsePositiveLoading, onConfirmPress: callback, analyticsContext: channelId(7206).TrackMediaRedactionContext.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW });
-};
+  const explicitMediaActions = obj2.useExplicitMediaActions(obj3);
+  reportFalsePositive = explicitMediaActions.reportFalsePositive;
+  const isReportFalsePositiveLoading = explicitMediaActions.isReportFalsePositiveLoading;
+  if (stateFromStores.attachments.length <= 0) {
+    const obj4 = messageId(4854);
+    obj4.hideActionSheet();
+  }
+  const items1 = [reportFalsePositive];
+  const callback = react.useCallback(() => {
+    reportFalsePositive();
+  }, items1);
+  const ExplicitMediaFalsePositiveActionSheet = tmp(8921).ExplicitMediaFalsePositiveActionSheet;
+  return <ExplicitMediaFalsePositiveActionSheet channelId={channelId} messageId={messageId} isReportFalsePositiveLoading={isReportFalsePositiveLoading} onConfirmPress={callback} analyticsContext={channelId(7109).TrackMediaRedactionContext.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW} />;
+});
+let result = size.fileFinishedImporting("modules/explicit_media_redaction/native/false_positive_reporting/ExplicitMediaSenderFalsePositiveActionSheet.tsx");
+
+export default tmp2;

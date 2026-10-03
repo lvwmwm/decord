@@ -1,149 +1,375 @@
-// Module ID: 16995
-// Function ID: 16996
+// Module ID: 17084
+// Function ID: 17085
 // Name: GiftingPromotionCoachmark
-// Dependencies: [19, 17, 4834, 10321, 1074, 2041, 21, 4845, 576, 504, 10411, 10395, 10412, 7902, 4809, 6769, 6789, 10317, 6757, 1364, 8459, 6085, 10415, 4841, 5465, 10695, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 4879, 10396, 1085, 2048, 21, 4890, 587, 558, 576, 504, 10485, 10469, 10486, 7946, 4854, 6657, 6681, 10392, 1369, 8464, 5974, 10487, 4886, 10766, 1126, 5594, 6645, 2]
 
-// Module 16995 (GiftingPromotionCoachmark)
-import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6769 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6789 */;
-import usePreviousDefault from "usePrevious" /* 7902 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10317 */;
-import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4834 */;
-import PromotionsStore from "PromotionsStore" /* 10321 */;
+// Module 17084 (GiftingPromotionCoachmark)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 587 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6657 */;
+import usePreviousDefault from "usePrevious" /* 7946 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10392 */;
+import react_mod from "react" /* 19 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import PromotionsStore from "PromotionsStore" /* 10396 */;
+import Constants from "Constants" /* 1085 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const Constants = fn(1074);
-({ AnalyticsSections: closure_7, AnalyticsObjects: closure_8, AnalyticsPages: closure_9 } = Constants);
-const ContentDismissActionType = fn(2041).ContentDismissActionType;
-const jsxProd = fn(21);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4845);
-let obj2 = { container: { alignItems: "center", padding: nativeDefault.space.PX_16 }, textContainer: null, text: null, countdownBadge: null, imageShared: null, imageWrapperAndroid: null };
-let obj3 = { alignItems: "center", padding: nativeDefault.space.PX_16 };
-obj2.textContainer = { gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_24 };
-obj2.text = { textAlign: "center" };
-let obj4 = { gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_24 };
-obj2.countdownBadge = { alignSelf: "center", marginTop: nativeDefault.space.PX_24 };
-let size = { height: 188, width: 335, borderRadius: nativeDefault.radii.sm };
-obj2.imageShared = size;
-obj2.imageWrapperAndroid = { overflow: "hidden" };
-let closure_13 = createStyles.createStyles(obj2);
-size = fn(2);
-const result = size.fileFinishedImporting("modules/premium/gifting/native/views/promotions/GiftingPromotionCoachmark.tsx");
+let BottomSheet, dependencyMap, importDefault;
 
-export default function GiftingPromotionCoachmarkActionSheet(arg0) {
-  ({ coachmarkComponent, markAsDismissed } = arg0);
-  importDefault = undefined;
-  dependencyMap = undefined;
-  noop = undefined;
-  closure_4 = undefined;
+let c9;
+let closure_12;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let obj3;
+let obj4;
+let size;
+let tmp21;
+let unpackModuleId;
+const AnalyticsLocationDefault = tmp21(6681);
+let react = react_mod;
+const View = react_native.View;
+({ AnalyticsSections: metroImportDefault, AnalyticsObjects: metroImportAll, AnalyticsPages: c9 } = Constants);
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, textContainer: obj3, text: { textAlign: "center" }, countdownBadge: obj4, imageShared: size, imageWrapperAndroid: { overflow: "hidden" } };
+obj2 = { alignItems: "center", padding: nativeDefault.space.PX_16 };
+createStyles = createStyles.createStyles;
+obj3 = { gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_24 };
+obj4 = { alignSelf: "center", marginTop: nativeDefault.space.PX_24 };
+size = { height: 188, width: 335, borderRadius: nativeDefault.radii.sm };
+let closure_13 = createStyles(obj);
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let analyticsLocations;
-  const tmp = closure_13();
-  const items = [analyticsLocations];
-  const stateFromStores = markAsDismissed(504).useStateFromStores(items, () => analyticsLocations.useReducedMotion);
-  let obj = markAsDismissed(504);
+  let closure_1;
+  let closure_2;
+  let closure_3;
+  let coachmarkComponent;
+  let giftPromotion;
+  let markAsDismissed;
+  let tmp12;
+  let tmp13;
+  let tmp14;
+  let tmp5;
+  let tmp6;
+  let tmp = markAsDismissed;
+  let tmp2 = dependencyMap;
+  let obj = markAsDismissed(576);
+  const cResult = obj.c(49);
+  ({ coachmarkComponent, markAsDismissed } = arg0);
+  const tmp4 = closure_13();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [analyticsLocations];
+    const fn = function x() {
+      return analyticsLocations.useReducedMotion;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp6 = fn;
+    tmp5 = items;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   let asset;
+  const useThemeAndReducedMotionAwareAssetUrl = tmp(10485).useThemeAndReducedMotionAwareAssetUrl;
+  tmp(10485);
   if (coachmarkComponent != null) {
     asset = coachmarkComponent.asset;
   }
-  const themeAndReducedMotionAwareAssetUrl = markAsDismissed(10411).useThemeAndReducedMotionAwareAssetUrl(asset);
-  const GiftPromotionReminderExperiment = tmp2(10395).GiftPromotionReminderExperiment;
-  let enabled = GiftPromotionReminderExperiment.useConfig({ location: "GiftingPromotionCoachmarkActionSheet" }).enabled;
-  let obj2 = markAsDismissed(10411);
-  const items1 = [PromotionsStore];
-  const stateFromStores1 = markAsDismissed(504).useStateFromStores(items1, () => giftPromotion.getGiftPromotion());
-  const tmp2Result = markAsDismissed(504);
+  const themeAndReducedMotionAwareAssetUrl = useThemeAndReducedMotionAwareAssetUrl(asset);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj2 = { location: "GiftingPromotionCoachmarkActionSheet" };
+    cResult[2] = obj2;
+    tmp12 = obj2;
+  } else {
+    tmp12 = cResult[2];
+  }
+  const GiftPromotionReminderExperiment = tmp(10469).GiftPromotionReminderExperiment;
+  const enabled = GiftPromotionReminderExperiment.useConfig(tmp12).enabled;
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [PromotionsStore];
+    class M {
+      constructor() {
+        return giftPromotion.getGiftPromotion();
+      }
+    }
+    cResult[3] = items1;
+    cResult[4] = M;
+    tmp14 = M;
+    tmp13 = items1;
+  } else {
+    tmp13 = cResult[3];
+    tmp14 = cResult[4];
+  }
+  const tmpResult5 = tmp(504);
+  const stateFromStores1 = tmpResult5.useStateFromStores(tmp13, tmp14);
   let endDate;
+  const useTickingFormattedLimitedOfferTimeLeft = tmp(10486).useTickingFormattedLimitedOfferTimeLeft;
+  tmp(10486);
   if (stateFromStores1 != null) {
     endDate = stateFromStores1.endDate;
   }
-  const tickingFormattedLimitedOfferTimeLeft = markAsDismissed(10412).useTickingFormattedLimitedOfferTimeLeft(endDate);
-  importDefault = tmp10;
-  const tmp12 = usePreviousDefault(null != stateFromStores1);
-  dependencyMap = tmp12;
-  noop = tmp13;
-  const tmp14 = usePreviousDefault(null != tickingFormattedLimitedOfferTimeLeft);
-  closure_4 = tmp14;
-  const items2 = [tmp14, null != tickingFormattedLimitedOfferTimeLeft, null != stateFromStores1, tmp12, markAsDismissed];
-  const effect = noop.useEffect(() => {
-    if (closure_2) {
-      if (!closure_1) {
-        ActionSheetActionCreatorsDefault.hideActionSheet();
+  const tickingFormattedLimitedOfferTimeLeft = useTickingFormattedLimitedOfferTimeLeft(endDate);
+  importDefault = tmp20;
+  const tmp22 = usePreviousDefault(null != stateFromStores1);
+  dependencyMap = tmp22;
+  react = tmp23;
+  const tmp24 = usePreviousDefault(null != tickingFormattedLimitedOfferTimeLeft);
+  let closure_4 = tmp24;
+  if (cResult[5] === tmp22) {
+    if (cResult[6] === tmp24) {
+      if (cResult[7] === null != stateFromStores1) {
+        if (cResult[8] === null != tickingFormattedLimitedOfferTimeLeft) {
+          let tmp25;
+          let tmp26;
+          if (cResult[9] === markAsDismissed) {
+            tmp25 = cResult[10];
+            tmp26 = cResult[11];
+          }
+          const effect = react.useEffect(tmp25, tmp26);
+          class M {
+            constructor() {
+              return giftPromotion.getGiftPromotion();
+            }
+          }
+          analyticsLocations = tmp29(AnalyticsLocationDefault.GIFTING_PROMOTION_COACHMARK).analyticsLocations;
+          if (cResult[12] === analyticsLocations) {
+            if (null == coachmarkComponent) {
+              return null;
+            } else {
+              if (cResult[15] !== markAsDismissed) {
+                class H {
+                  constructor() {
+                    return markAsDismissed(ContentDismissActionType.USER_DISMISS);
+                  }
+                }
+                cResult[15] = markAsDismissed;
+                class M {
+                  constructor() {
+                    return giftPromotion.getGiftPromotion();
+                  }
+                }
+                cResult[16] = H;
+              } else {
+                class H {
+                  constructor() {
+                    return markAsDismissed(ContentDismissActionType.USER_DISMISS);
+                  }
+                }
+              }
+              if (cResult[17] === themeAndReducedMotionAwareAssetUrl) {
+                class H {
+                  constructor() {
+                    return markAsDismissed(ContentDismissActionType.USER_DISMISS);
+                  }
+                }
+              }
+              class M {
+                constructor() {
+                  return giftPromotion.getGiftPromotion();
+                }
+              }
+              cResult[17] = themeAndReducedMotionAwareAssetUrl;
+              class D {
+                constructor() {
+                  let obj4;
+                  const obj = ActionSheetActionCreatorsDefault;
+                  obj.hideActionSheet();
+                  markAsDismissed(ContentDismissActionType.TAKE_ACTION);
+                  const obj3 = { analyticsLocation: obj4, analyticsLocations };
+                  obj4 = { page: constants.PREMUIM_UPSELL_GIFTING_PROMOTION, section: metroImportDefault.FOOTER, object: metroImportAll.BUTTON_CTA };
+                  const obj2 = utils_openGiftModal;
+                  obj2.openGiftModal(obj3);
+                }
+              }
+              cResult[19] = tmp4.imageWrapperAndroid;
+              cResult[20] = stateFromStores;
+              cResult[21] = null != themeAndReducedMotionAwareAssetUrl;
+            }
+          }
+          class D {
+            constructor() {
+              let obj4;
+              const obj = ActionSheetActionCreatorsDefault;
+              obj.hideActionSheet();
+              markAsDismissed(ContentDismissActionType.TAKE_ACTION);
+              const obj3 = { analyticsLocation: obj4, analyticsLocations };
+              obj4 = { page: constants.PREMUIM_UPSELL_GIFTING_PROMOTION, section: metroImportDefault.FOOTER, object: metroImportAll.BUTTON_CTA };
+              const obj2 = utils_openGiftModal;
+              obj2.openGiftModal(obj3);
+            }
+          }
+          cResult[12] = analyticsLocations;
+          cResult[13] = markAsDismissed;
+          cResult[14] = D;
+        }
       }
     }
-    let tmp5 = closure_4;
-    if (closure_4) {
-      tmp5 = !closure_3;
+  }
+  class E {
+    constructor() {
+      const tmp = closure_2;
+      if (tmp) {
+        const tmp2 = closure_1;
+        if (!tmp2) {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet();
+        }
+      }
+      const tmp6 = closure_4 && !closure_3;
+      if (tmp6) {
+        const obj2 = ActionSheetActionCreatorsDefault;
+        obj2.hideActionSheet();
+        markAsDismissed(ContentDismissActionType.AUTO_DISMISS);
+      }
     }
-    if (tmp5) {
-      ActionSheetActionCreatorsDefault.hideActionSheet();
+  }
+  const items2 = [tmp24, null != tickingFormattedLimitedOfferTimeLeft, null != stateFromStores1, tmp22, markAsDismissed];
+  cResult[5] = tmp22;
+  cResult[6] = tmp24;
+  cResult[7] = null != stateFromStores1;
+  cResult[8] = null != tickingFormattedLimitedOfferTimeLeft;
+  cResult[9] = markAsDismissed;
+  cResult[10] = E;
+  cResult[11] = items2;
+  tmp26 = items2;
+  tmp25 = E;
+}) : ((arg0) => {
+  let GiftIcon;
+  let closure_1;
+  let closure_2;
+  let closure_3;
+  let coachmarkComponent;
+  let giftPromotion;
+  let intl;
+  let items4;
+  let items5;
+  let items6;
+  let markAsDismissed;
+  let obj13;
+  let obj3;
+  let obj5;
+  let obj7;
+  ({ coachmarkComponent, markAsDismissed } = arg0);
+  importDefault = undefined;
+  dependencyMap = undefined;
+  react = undefined;
+  let closure_4;
+  let analyticsLocations;
+  let tmp = closure_13();
+  let tmp2 = markAsDismissed;
+  let obj = markAsDismissed(504);
+  const items = [analyticsLocations];
+  const stateFromStores = obj.useStateFromStores(items, () => analyticsLocations.useReducedMotion);
+  let asset;
+  const useThemeAndReducedMotionAwareAssetUrl = markAsDismissed(10485).useThemeAndReducedMotionAwareAssetUrl;
+  markAsDismissed(10485);
+  if (coachmarkComponent != null) {
+    asset = coachmarkComponent.asset;
+  }
+  const themeAndReducedMotionAwareAssetUrl = useThemeAndReducedMotionAwareAssetUrl(asset);
+  const GiftPromotionReminderExperiment = tmp2(10469).GiftPromotionReminderExperiment;
+  let enabled = GiftPromotionReminderExperiment.useConfig({ location: "GiftingPromotionCoachmarkActionSheet" }).enabled;
+  const items1 = [PromotionsStore];
+  const tmp2Result = tmp2(504);
+  const stateFromStores1 = tmp2Result.useStateFromStores(items1, () => giftPromotion.getGiftPromotion());
+  let endDate;
+  const useTickingFormattedLimitedOfferTimeLeft = tmp2(10486).useTickingFormattedLimitedOfferTimeLeft;
+  tmp2(10486);
+  if (stateFromStores1 != null) {
+    endDate = stateFromStores1.endDate;
+  }
+  const tickingFormattedLimitedOfferTimeLeft = useTickingFormattedLimitedOfferTimeLeft(endDate);
+  importDefault = tmp12;
+  const tmp14 = usePreviousDefault(null != stateFromStores1);
+  dependencyMap = tmp14;
+  react = tmp15;
+  const tmp16 = usePreviousDefault(null != tickingFormattedLimitedOfferTimeLeft);
+  closure_4 = tmp16;
+  const items2 = [tmp16, null != tickingFormattedLimitedOfferTimeLeft, tmp12, tmp14, markAsDismissed];
+  const effect = react.useEffect(() => {
+    const tmp = closure_2;
+    if (tmp) {
+      const tmp2 = closure_1;
+      if (!tmp2) {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet();
+      }
+    }
+    const tmp6 = closure_4 && !closure_3;
+    if (tmp6) {
+      const obj2 = ActionSheetActionCreatorsDefault;
+      obj2.hideActionSheet();
       markAsDismissed(ContentDismissActionType.AUTO_DISMISS);
     }
   }, items2);
-  const tmp2Result3 = markAsDismissed(10412);
-  analyticsLocations = useAnalyticsLocationsDefault(AnalyticsLocationDefault.GIFTING_PROMOTION_COACHMARK).analyticsLocations;
+  const tmp18 = useAnalyticsLocationsDefault;
+  analyticsLocations = tmp18(AnalyticsLocationDefault.GIFTING_PROMOTION_COACHMARK).analyticsLocations;
   const items3 = [analyticsLocations, markAsDismissed];
-  let tmp19Result = null;
+  let tmp21Result2 = null;
   if (null != coachmarkComponent) {
-    let obj3 = {
+    let obj2 = {
       startExpanded: true,
       onDismiss() {
           return markAsDismissed(ContentDismissActionType.USER_DISMISS);
         },
-      children: null
+      children: closure_12(closure_4, obj3)
     };
-    const obj4 = { style: tmp.container, children: null };
-    if (null == themeAndReducedMotionAwareAssetUrl) {
-      const items4 = [tmp23, , , ];
-      if (enabled) {
-        enabled = null != tickingFormattedLimitedOfferTimeLeft;
-      }
-      if (enabled) {
-        const obj5 = { text: tickingFormattedLimitedOfferTimeLeft, style: tmp.countdownBadge };
-        enabled = tmp19(tmp11(10415), obj5);
-      }
-      items4[1] = enabled;
-      const obj6 = { style: tmp.textContainer, children: null };
-      const obj7 = { style: tmp.text, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: coachmarkComponent.header };
-      const items5 = [tmp19(tmp2(4841).Heading, obj7), ];
-      const obj8 = { style: tmp.text, variant: "text-md/normal", color: "text-default", children: coachmarkComponent.body };
-      items5[1] = tmp19(tmp2(4841).Text, obj8);
-      obj6.children = items5;
-      items4[2] = tmp21(tmp22, obj6);
-      const obj9 = { grow: true, icon: null, text: null, onPress: null };
-      const obj10 = { size: "sm", color: tmp11(576).colors.WHITE };
-      obj9.icon = tmp19(tmp2(10695).GiftIcon, obj10);
-      const intl = tmp2(1115).intl;
-      obj9.text = intl.string(tmp2(1115).t.Ve9Ge6);
-      obj9.onPress = tmp17;
-      items4[3] = tmp19(tmp2(5465).Button, obj9);
-      obj4.children = items4;
-      obj3.children = tmp21(tmp22, obj4);
-      tmp19Result = tmp19(tmp20, obj3);
-    } else {
+    obj3 = { style: tmp.container, children: items5 };
+    let tmp24 = null != themeAndReducedMotionAwareAssetUrl;
+    BottomSheet = tmp2(6645).BottomSheet;
+    if (tmp24) {
+      const tmp2Result4 = tmp2(1369);
       if (tmp2Result4.isAndroid()) {
+        let tmp21Result;
         if (!stateFromStores) {
-          const obj11 = { style: null, children: null };
-          const items6 = [, ];
+          let obj4 = { style: items4, children: closure_11(tmp2(8464).APNGPlayer, obj5) };
+          items4 = [, ];
           ({ imageShared: arr5[0], imageWrapperAndroid: arr5[1] } = tmp);
-          obj11.style = items6;
-          const obj12 = { url: themeAndReducedMotionAwareAssetUrl, style: tmp.imageShared, autoplay: true };
-          obj11.children = tmp19(tmp2(8459).APNGPlayer, obj12);
-          let tmp19Result2 = tmp19(tmp22, obj11);
+          obj5 = { url: themeAndReducedMotionAwareAssetUrl, style: tmp.imageShared, autoplay: true };
+          tmp21Result = tmp21(tmp23, obj4);
         }
+        tmp24 = tmp21Result;
       }
-      const obj13 = { source: null, style: null };
-      const obj14 = { uri: themeAndReducedMotionAwareAssetUrl };
-      obj13.source = obj14;
-      obj13.style = tmp.imageShared;
-      tmp19Result2 = tmp19(tmp11(6085), obj13);
-      tmp2Result4 = tmp2(1364);
+      const obj6 = { source: obj7, style: tmp.imageShared };
+      obj7 = { uri: themeAndReducedMotionAwareAssetUrl };
+      tmp21Result = tmp21(tmp13(5974), obj6);
     }
+    items5 = [tmp24, , , ];
+    if (enabled) {
+      enabled = null != tickingFormattedLimitedOfferTimeLeft;
+    }
+    if (enabled) {
+      const obj8 = { text: tickingFormattedLimitedOfferTimeLeft, style: tmp.countdownBadge };
+      enabled = tmp21(tmp13(10487), obj8);
+    }
+    items5[1] = enabled;
+    const obj10 = { style: tmp.text, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: coachmarkComponent.header };
+    const obj9 = { style: tmp.textContainer, children: items6 };
+    items6 = [closure_11(tmp2(4886).Heading, obj10), ];
+    const obj11 = { style: tmp.text, variant: "text-md/normal", color: "text-default", children: coachmarkComponent.body };
+    items6[1] = closure_11(tmp2(4886).Text, obj11);
+    items5[2] = closure_12(closure_4, obj9);
+    const obj12 = { grow: true, icon: closure_11(GiftIcon, obj13), text: intl.string(tmp2(1126).t.Ve9Ge6), onPress: tmp19 };
+    const Button = tmp2(5594).Button;
+    obj13 = { size: "sm", color: nativeDefault.colors.WHITE };
+    GiftIcon = tmp2(10766).GiftIcon;
+    intl = tmp2(1126).intl;
+    items5[3] = closure_11(Button, obj12);
+    tmp21Result2 = tmp21(BottomSheet, obj2);
   }
-  return tmp19Result;
-};
+  return tmp21Result2;
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/premium/gifting/native/views/promotions/GiftingPromotionCoachmark.tsx");
+
+export default tmp5;

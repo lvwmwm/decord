@@ -1,21 +1,24 @@
-// Module ID: 17666
-// Function ID: 17667
+// Module ID: 17754
+// Function ID: 17755
 // Name: GuildSettingsRoleCreateModalActionCreators
-// Dependencies: [5048, 17667, 1981, 2]
+// Dependencies: [5093, 17755, 1987, 2]
 
-// Module 17666 (GuildSettingsRoleCreateModalActionCreators)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5048 */;
+// Module 17754 (GuildSettingsRoleCreateModalActionCreators)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
 import size from "module_2" /* 2 */;
 
 const GUILD_SETTINGS_ROLE_CREATE_MODAL_KEY = "GUILD_SETTINGS_ROLE_CREATE_MODAL_KEY";
-const result = size.fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRoleCreateModalActionCreators.tsx");
-
-export default {
+let obj = {
   open() {
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(17667, dependencyMap.paths), undefined, GUILD_SETTINGS_ROLE_CREATE_MODAL_KEY);
+    const obj = ModalActionCreatorsDefault;
+    obj.pushLazy(asyncRequire(17755, dependencyMap.paths), undefined, GUILD_SETTINGS_ROLE_CREATE_MODAL_KEY);
   },
   close() {
-    ModalActionCreatorsDefault.popWithKey(GUILD_SETTINGS_ROLE_CREATE_MODAL_KEY);
+    const obj = ModalActionCreatorsDefault;
+    obj.popWithKey(GUILD_SETTINGS_ROLE_CREATE_MODAL_KEY);
   }
 };
+const result = size.fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRoleCreateModalActionCreators.tsx");
+
+export default obj;

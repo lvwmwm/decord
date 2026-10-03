@@ -1,131 +1,130 @@
-// Module ID: 11645
-// Function ID: 11646
+// Module ID: 11565
+// Function ID: 11566
 // Name: isNewMessageGroup
-// Dependencies: [1074, 1091, 6875, 11, 4541, 2]
+// Dependencies: [1085, 1102, 6773, 11, 4552, 2]
 // Exports: isNewGroupItem
 
-// Module 11645 (isNewMessageGroup)
-import DurationsDefault from "Durations" /* 1091 */;
-import DateUtils from "DateUtils" /* 4541 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6875 */;
-import Constants from "Constants" /* 1074 */;
+// Module 11565 (isNewMessageGroup)
+import DurationsDefault from "Durations" /* 1102 */;
+import DateUtils from "DateUtils" /* 4552 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6773 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
+let c3;
+let closure_4;
+let hasOwnProperty;
 function isNewMessageGroup(isForumPost, content, hasFlag) {
-  let type = hasFlag;
-  const hasFlagResult = hasFlag.hasFlag(constants3.HAS_THREAD);
-  let tmp3 = !hasFlagResult;
-  if (!hasFlagResult) {
-    tmp3 = !type.isCommandType();
-  }
+  const hasFlagResult = hasFlag.hasFlag(hasOwnProperty.HAS_THREAD);
+  const tmp3 = !hasFlagResult && !hasFlag.isCommandType();
   let tmp4 = !tmp3;
   if (tmp3) {
-    if (content.blocked !== type.blocked || content.ignored !== type.ignored) {
-      tmp4 = tmp6;
-    } else {
-      let REPLY = constants;
-      if (type.type > constants.DEFAULT) {
-        const tmp37 = isSystemMessageDefault(content);
-        let tmp38 = !tmp37;
-        if (tmp37) {
-          type = type.type;
-          REPLY = REPLY.REPLY;
-          tmp38 = type === REPLY;
+    let tmp6 = content.blocked !== hasFlag.blocked || content.ignored !== hasFlag.ignored;
+    if (!tmp6) {
+      let tmp35;
+      if (hasFlag.type > constants.DEFAULT) {
+        const tmp38 = isSystemMessageDefault(content);
+        let tmp39 = !tmp38;
+        if (tmp38) {
+          tmp39 = hasFlag.type === tmp7.REPLY;
         }
-        let tmp34 = tmp38;
+        tmp35 = tmp39;
       } else {
-        tmp34 = isSystemMessageDefault(content);
-        if (!tmp34) {
-          let tmp7 = content.author.id !== type.author.id;
-          if (!tmp7) {
-            let tmp9 = content.hasFlag(tmp.EPHEMERAL) !== type.hasFlag(tmp.EPHEMERAL);
-            if (!tmp9) {
-              let tmp11 = content.hasFlag(tmp.IS_SCHEDULED) !== type.hasFlag(tmp.IS_SCHEDULED);
-              if (!tmp11) {
-                let tmp13 = null != type.webhookId && content.author.username !== type.author.username;
-                if (!tmp13) {
+        tmp35 = isSystemMessageDefault(content);
+        const tmp40 = importDefault;
+        if (!tmp35) {
+          let tmp8 = content.author.id !== hasFlag.author.id;
+          if (!tmp8) {
+            const hasFlagResult1 = content.hasFlag(hasOwnProperty.EPHEMERAL);
+            let tmp10 = hasFlagResult1 !== hasFlag.hasFlag(tmp.EPHEMERAL);
+            if (!tmp10) {
+              const hasFlagResult2 = content.hasFlag(hasOwnProperty.IS_SCHEDULED);
+              let tmp12 = hasFlagResult2 !== hasFlag.hasFlag(tmp.IS_SCHEDULED);
+              if (!tmp12) {
+                let tmp14 = null != hasFlag.webhookId && content.author.username !== hasFlag.author.username;
+                if (!tmp14) {
                   let isForumPostResult;
                   if (isForumPost != null) {
                     isForumPostResult = isForumPost.isForumPost();
                   }
-                  let tmp16 = !isForumPostResult;
+                  let tmp17 = !isForumPostResult;
                   if (isForumPostResult) {
-                    tmp16 = content.id !== tmp40(11).castChannelIdAsMessageId(isForumPost.id);
+                    const id = content.id;
                     const tmp40Result = tmp40(11);
+                    tmp17 = id !== tmp40Result.castChannelIdAsMessageId(isForumPost.id);
                   }
-                  let tmp17 = !tmp16;
-                  if (tmp16) {
-                    const isSameDayResult = DateUtils.isSameDay(content.timestamp, type.timestamp);
-                    let tmp20 = !isSameDayResult;
+                  let tmp18 = !tmp17;
+                  if (tmp17) {
+                    const obj2 = DateUtils;
+                    const isSameDayResult = obj2.isSameDay(content.timestamp, hasFlag.timestamp);
+                    let tmp21 = !isSameDayResult;
+                    const tmp19 = require;
                     if (isSameDayResult) {
-                      const isWithinIntervalResult = tmp18(4541).isWithinInterval(content.timestamp, type.timestamp, closure_6);
-                      let tmp23 = !isWithinIntervalResult;
+                      const tmp19Result = tmp19(4552);
+                      const isWithinIntervalResult = tmp19Result.isWithinInterval(content.timestamp, hasFlag.timestamp, closure_6);
+                      let tmp24 = !isWithinIntervalResult;
                       if (isWithinIntervalResult) {
-                        const hasFlagResult3 = type.hasFlag(tmp.SUPPRESS_NOTIFICATIONS);
+                        const hasFlagResult3 = hasFlag.hasFlag(hasOwnProperty.SUPPRESS_NOTIFICATIONS);
                         let hasFlagResult4 = !hasFlagResult3;
                         if (hasFlagResult3) {
                           hasFlagResult4 = content.hasFlag(tmp.SUPPRESS_NOTIFICATIONS);
                         }
-                        let tmp26 = !hasFlagResult4;
+                        let tmp27 = !hasFlagResult4;
                         if (hasFlagResult4) {
-                          const hasFlagResult5 = content.hasFlag(tmp.SUPPRESS_NOTIFICATIONS);
+                          const hasFlagResult5 = content.hasFlag(hasOwnProperty.SUPPRESS_NOTIFICATIONS);
                           let hasFlagResult6 = !hasFlagResult5;
                           if (hasFlagResult5) {
-                            hasFlagResult6 = type.hasFlag(tmp.SUPPRESS_NOTIFICATIONS);
+                            hasFlagResult6 = hasFlag.hasFlag(tmp.SUPPRESS_NOTIFICATIONS);
                           }
                           if (!hasFlagResult6) {
-                            hasFlagResult6 = !(type.mentions.length > 0 || type.mentionRoles.length > 0 || type.mentionEveryone);
-                            const tmp29 = type.mentions.length > 0 || type.mentionRoles.length > 0 || type.mentionEveryone;
+                            hasFlagResult6 = !(hasFlag.mentions.length > 0 || hasFlag.mentionRoles.length > 0 || hasFlag.mentionEveryone);
                           }
-                          let tmp30 = !hasFlagResult6;
+                          let tmp31 = !hasFlagResult6;
                           if (hasFlagResult6) {
-                            let tmp31 = type.applicationId !== content.applicationId;
-                            if (!tmp31) {
-                              const additionalName = type.additionalName;
-                              let tmp32 = null;
+                            let tmp32 = hasFlag.applicationId !== content.applicationId;
+                            if (!tmp32) {
+                              const additionalName = hasFlag.additionalName;
+                              let tmp33 = null;
                               if (null != additionalName) {
-                                tmp32 = null;
+                                tmp33 = null;
                                 if ("" !== additionalName) {
-                                  tmp32 = additionalName;
+                                  tmp33 = additionalName;
                                 }
                               }
                               const additionalName2 = content.additionalName;
-                              let tmp33 = null;
+                              let tmp34 = null;
                               if (null != additionalName2) {
-                                tmp33 = null;
+                                tmp34 = null;
                                 if ("" !== additionalName2) {
-                                  tmp33 = additionalName2;
+                                  tmp34 = additionalName2;
                                 }
                               }
-                              tmp31 = tmp32 !== tmp33;
+                              tmp32 = tmp33 !== tmp34;
                             }
-                            tmp30 = tmp31;
+                            tmp31 = tmp32;
                           }
-                          tmp26 = tmp30;
+                          tmp27 = tmp31;
                         }
-                        tmp23 = tmp26;
+                        tmp24 = tmp27;
                       }
-                      tmp20 = tmp23;
-                      const tmp18Result = tmp18(4541);
+                      tmp21 = tmp24;
                     }
-                    tmp17 = tmp20;
-                    tmp18 = require;
+                    tmp18 = tmp21;
                   }
-                  tmp13 = tmp17;
+                  tmp14 = tmp18;
                 }
-                tmp11 = tmp13;
+                tmp12 = tmp14;
               }
-              tmp9 = tmp11;
-              const hasFlagResult2 = content.hasFlag(tmp.IS_SCHEDULED);
+              tmp10 = tmp12;
             }
-            tmp7 = tmp9;
-            const hasFlagResult1 = content.hasFlag(tmp.EPHEMERAL);
+            tmp8 = tmp10;
           }
-          tmp34 = tmp7;
+          tmp35 = tmp8;
         }
-        tmp40 = importDefault;
       }
+      tmp6 = tmp35;
     }
+    tmp4 = tmp6;
   }
   return tmp4;
 }
@@ -139,11 +138,8 @@ export const isNewGroupItem = function isNewGroupItem(isForumPost, type, hasFlag
   if (!tmp) {
     let tmp3 = type.type === constants2.MESSAGE && type.content.id === type.content.channel_id;
     if (!tmp3) {
-      let tmp4 = type.type !== tmp2.MESSAGE && type.type !== tmp2.THREAD_STARTER_MESSAGE;
-      if (!tmp4) {
-        tmp4 = isNewMessageGroup(isForumPost, type.content, hasFlag);
-      }
-      tmp3 = tmp4;
+      tmp3 = type.type !== tmp2.MESSAGE && type.type !== tmp2.THREAD_STARTER_MESSAGE || isNewMessageGroup(isForumPost, type.content, hasFlag);
+      const tmp4 = type.type !== tmp2.MESSAGE && type.type !== tmp2.THREAD_STARTER_MESSAGE || isNewMessageGroup(isForumPost, type.content, hasFlag);
     }
     tmp = tmp3;
   }

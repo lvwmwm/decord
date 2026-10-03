@@ -1,57 +1,113 @@
-// Module ID: 11989
-// Function ID: 11990
+// Module ID: 11924
+// Function ID: 11925
 // Name: NewBadge
-// Dependencies: [19, 17, 21, 4845, 1364, 576, 4714, 7472, 4776, 4841, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4890, 1369, 587, 4729, 558, 576, 7508, 4791, 1126, 4886, 2]
 
-// Module 11989 (NewBadge)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import useThemeDefault from "useTheme" /* 4776 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7472 */;
-import noop from "module_19" /* 19 */;
+// Module 11924 (NewBadge)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import useThemeDefault from "useTheme" /* 4791 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7508 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
+let tmp;
+const shared = tmp(4729);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles((arg0, arg1) => {
   let num = 0;
+  const obj = PlatformUtils;
   if (obj.isIOS()) {
     num = 1;
   }
   const obj2 = { text: { textAlign: "center", textTransform: "uppercase", marginTop: num }, base: null };
   const obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round, paddingHorizontal: 6, paddingVertical: 3, backgroundColor: null };
-  obj = PlatformUtils;
+  const tmpResult = shared;
   if (tmpResult.isThemeLight(arg1)) {
-    if (!arg0) {
-      let MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(576).colors.BACKGROUND_BRAND;
+    let MOBILE_TOAST_BACKGROUND_DEFAULT;
+    const tmp4 = arg0;
+    if (!tmp4) {
+      MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(587).colors.BACKGROUND_BRAND;
     }
     obj3.backgroundColor = MOBILE_TOAST_BACKGROUND_DEFAULT;
     obj2.base = obj3;
     return obj2;
   }
-  MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(576).colors.MOBILE_TOAST_BACKGROUND_DEFAULT;
+  MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(587).colors.MOBILE_TOAST_BACKGROUND_DEFAULT;
 });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/channel_list_v2/native/components/NewBadge.tsx");
-
-export default function NewBadge() {
-  const tmp2 = useIsUsingClientThemeDefault();
-  const tmp3 = useThemeDefault();
-  const tmp4 = closure_5(tmp2, tmp3);
-  const obj = { style: tmp4.base, children: null };
-  const obj2 = { variant: "text-xxs/bold", style: tmp4.text, color: null, children: null };
-  if (obj3.isThemeLight(tmp3)) {
-    let str = "text-overlay-light";
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let base;
+  let first;
+  let str;
+  let text;
+  const obj = react2;
+  const cResult = obj.c(7);
+  const tmp4 = useIsUsingClientThemeDefault();
+  const tmp5 = useThemeDefault();
+  const tmp6 = closure_5(tmp4, tmp5);
+  ({ base, text } = tmp6);
+  const obj2 = shared;
+  if (obj2.isThemeLight(tmp5)) {
+    str = "text-overlay-light";
   } else {
     str = "text-brand";
   }
-  obj2.color = str;
-  const intl = tmp7(1115).intl;
-  obj2.children = intl.string(util.t.y2b7CA);
-  obj.children = jsx(Text_Text.Text, { variant: "text-xxs/bold", style: tmp4.text, color: null, children: null });
-  return <View style={tmp4.base}>{null}</View>;
-};
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(intl2.t.y2b7CA);
+    cResult[0] = stringResult;
+    first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === tmp6.text) {
+    let tmp9;
+    if (cResult[2] === str) {
+      tmp9 = cResult[3];
+    }
+    if (cResult[4] === tmp6.base) {
+      let tmp11;
+      if (cResult[5] === tmp9) {
+        tmp11 = cResult[6];
+      }
+      return tmp11;
+    }
+    const tmp14 = <View style={base}>{tmp9}</View>;
+    cResult[4] = tmp6.base;
+    cResult[5] = tmp9;
+    cResult[6] = tmp14;
+    tmp11 = tmp14;
+  }
+  const tmp10 = jsx(Text_Text.Text, { variant: "text-xxs/bold", style: text, color: str, children: first });
+  cResult[1] = tmp6.text;
+  cResult[2] = str;
+  cResult[3] = tmp10;
+  tmp9 = tmp10;
+}) : (() => {
+  let intl;
+  let str;
+  const tmp2 = useIsUsingClientThemeDefault();
+  const tmp3 = useThemeDefault();
+  const tmp4 = closure_5(tmp2, tmp3);
+  ({ variant: "text-xxs/bold", style: tmp4.text, color: str, children: intl.string(intl2.t.y2b7CA) });
+  const Text = Text_Text.Text;
+  const obj3 = shared;
+  if (obj3.isThemeLight(tmp3)) {
+    str = "text-overlay-light";
+  } else {
+    str = "text-brand";
+  }
+  intl = tmp7(1126).intl;
+  return <tmp6 style={tmp4.base}>{null}</tmp6>;
+});
+const result = size.fileFinishedImporting("modules/channel_list_v2/native/components/NewBadge.tsx");
+
+export default tmp3;

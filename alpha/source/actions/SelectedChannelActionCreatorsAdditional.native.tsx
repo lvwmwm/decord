@@ -1,42 +1,44 @@
-// Module ID: 5910
-// Function ID: 5911
+// Module ID: 5569
+// Function ID: 5570
 // Name: SelectedChannelActionCreatorsAdditional
-// Dependencies: [2044, 2066, 5911, 4498, 2098, 4684, 1372, 4864, 5912, 4990, 5913, 4556, 5914, 5915, 4809, 5928, 1981, 13375, 1255, 573, 2]
+// Dependencies: [2051, 2074, 5570, 4509, 2103, 4699, 1377, 4909, 5571, 5035, 5572, 4567, 5573, 5574, 4854, 5587, 1987, 9312, 13435, 1266, 584, 2]
 // Exports: getChannelSelectionOrigin, selectVoiceChannelAdditional
 
-// Module 5910 (SelectedChannelActionCreatorsAdditional)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import v1 from "v1" /* 1255 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5911 */;
-import PermissionStore from "PermissionStore" /* 4498 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4684 */;
-import UserStore from "UserStore" /* 1372 */;
-import VoiceStateStore from "VoiceStateStore" /* 4864 */;
+// Module 5569 (SelectedChannelActionCreatorsAdditional)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import v1 from "v1" /* 1266 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 5571 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5570 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import UserStore from "UserStore" /* 1377 */;
+import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, importDefault;
 
-require = fn;
-const STAGE_BOOSTING_SHEET_KEY = fn(5912).STAGE_BOOSTING_SHEET_KEY;
-const size = fn(2);
-const result = size.fileFinishedImporting("actions/SelectedChannelActionCreatorsAdditional.native.tsx");
+const STAGE_BOOSTING_SHEET_KEY = StageChannelsConstants.STAGE_BOOSTING_SHEET_KEY;
+let result = size.fileFinishedImporting("actions/SelectedChannelActionCreatorsAdditional.native.tsx");
 
 export const getChannelSelectionOrigin = function getChannelSelectionOrigin() {
+  let channelId;
   let guildId = SelectedGuildStore.getGuildId();
   if (guildId == null) {
     guildId = null;
   }
-  const obj = { fromGuildId: guildId, fromChannelId: null };
-  let channelId = SelectedChannelStore.getChannelId(guildId, false);
+  const obj = { fromGuildId: guildId, fromChannelId: channelId };
+  channelId = SelectedChannelStore.getChannelId(guildId, false);
   if (channelId == null) {
     channelId = null;
   }
-  obj.fromChannelId = channelId;
   return obj;
 };
 export const selectVoiceChannelAdditional = function selectVoiceChannelAdditional(id, guildId, flag, flag2, arg4) {
+  let channelId;
   _require = id;
   importDefault = guildId;
   if (flag === undefined) {
@@ -61,29 +63,39 @@ export const selectVoiceChannelAdditional = function selectVoiceChannelAdditiona
   const currentUser = UserStore.getCurrentUser();
   if (null != currentUser) {
     if (null != channel) {
-      const isChannelFullResult = require("ChannelUtils").isChannelFull(channel, VoiceStateStore, flag3);
+      const obj9 = require("ChannelUtils");
+      const isChannelFullResult = obj9.isChannelFull(channel, VoiceStateStore, flag3);
       const check = flag4.getCheck(channel.guild_id);
       if (!check.canChat) {
-        if (!tmp14Result.canLurkerListen(channel)) {
-          return tmp14(tmp15[11]).unverifiedVoiceGate(check);
+        const tmp17Result = require("StageChannelPermissionUtils");
+        if (!tmp17Result.canLurkerListen(channel)) {
+          const tmp17Result3 = require("ToastUtils");
+          return tmp17Result3.unverifiedVoiceGate(check);
         }
-        tmp14Result = tmp14(tmp15[10]);
       }
-      const tmp4 = require("canJoinVoiceChannel")(channel, PermissionStore);
+      require("canJoinVoiceChannel")(channel, PermissionStore);
+      const tmp2 = importDefault;
       if (isChannelFullResult) {
         if (channel.isGuildStageVoice()) {
-          if (tmp14Result4.getStageHasMedia(channel.id)) {
+          const tmp17Result4 = require("StageMediaHooks");
+          if (tmp17Result4.getStageHasMedia(channel.id)) {
             let obj2 = { channel };
-            require("ActionSheetActionCreators").openLazy(tmp14(tmp15[16])(tmp15[15], tmp15.paths), STAGE_BOOSTING_SHEET_KEY, obj2);
+            const tmp2Result = tmp2(flag[14]);
+            tmp2Result.openLazy(require("asyncRequire")(flag[15], flag.paths), STAGE_BOOSTING_SHEET_KEY, obj2);
           }
-          tmp14Result4 = tmp14(tmp15[13]);
         }
       }
     }
+    if (flag) {
+      const obj6 = require("applyBackgroundOption");
+      const result = obj6.applyInitialVideoBackgroundOption();
+    }
     require("collectCallFeedback")(() => {
-      const v4Result = v1.v4();
+      const obj = v1;
+      const v4Result = obj.v4();
       const obj2 = DispatcherDefault;
-      obj2.dispatch({ type: "VOICE_CHANNEL_SELECT", guildId, channelId, currentVoiceChannelId: SelectedChannelStore.getVoiceChannelId(), video: flag, stream: flag2, lockVoiceStateForResume: flag3, joinVoiceId: v4Result, bypassIdleUpdate: flag4 });
+      const obj3 = { type: "VOICE_CHANNEL_SELECT", guildId, channelId, currentVoiceChannelId: SelectedChannelStore.getVoiceChannelId(), video: flag, stream: flag2, lockVoiceStateForResume: flag3, joinVoiceId: v4Result, bypassIdleUpdate: flag4 };
+      obj2.dispatch(obj3);
     }, id, flag2, flag);
   }
 };

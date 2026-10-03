@@ -1,11 +1,11 @@
-// Module ID: 2050
-// Function ID: 2051
+// Module ID: 2057
+// Function ID: 2058
 // Name: GuildScheduledEventsConstants
-// Dependencies: [1074, 1091, 2]
+// Dependencies: [1085, 1102, 2]
 
-// Module 2050 (GuildScheduledEventsConstants)
-import Constants from "Constants" /* 1074 */;
-import DurationsDefault from "Durations" /* 1091 */;
+// Module 2057 (GuildScheduledEventsConstants)
+import Constants from "Constants" /* 1085 */;
+import DurationsDefault from "Durations" /* 1102 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;
@@ -15,13 +15,15 @@ const items = [, ];
 const obj2 = { NONE: 0, [0]: "NONE", STAGE_INSTANCE: 1, [1]: "STAGE_INSTANCE", VOICE: 2, [2]: "VOICE", EXTERNAL: 3, [3]: "EXTERNAL", PRIME_TIME: 4, [4]: "PRIME_TIME" };
 const items1 = [, ];
 ({ STAGE_INSTANCE: arr2[0], PRIME_TIME: arr2[1] } = obj2);
-const set = new Set(items);
-const items2 = [obj2.EXTERNAL];
+const items2 = [];
 const obj3 = { [obj2.STAGE_INSTANCE]: ChannelTypes.GUILD_STAGE_VOICE, [obj2.VOICE]: ChannelTypes.GUILD_VOICE };
-const set1 = new Set(items1);
+items2[0] = obj2.EXTERNAL;
+const set = new Set(items);
 const items3 = [, ];
 ({ STAGE_INSTANCE: arr4[0], VOICE: arr4[1] } = obj2);
+const set1 = new Set(items1);
 const set2 = new Set(items2);
+const set3 = new Set(items3);
 const result = 2 * DurationsDefault.Millis.DAY;
 const result1 = 12 * DurationsDefault.Millis.HOUR;
 const result2 = size.fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventsConstants.tsx");
@@ -41,7 +43,7 @@ export const GuildScheduledEventPrivacyLevel = { PUBLIC: 1, [1]: "PUBLIC", GUILD
 export const AGE_VERIFICATION_STAGE_CHANNEL_TYPES = set1;
 export const EntityChannelTypes = obj3;
 export const ENTITY_TYPES_REQUIRED_ENTITY_METADATA = set2;
-export const ENTITY_TYPES_REQUIRED_CHANNEL_ID = new Set(items3);
+export const ENTITY_TYPES_REQUIRED_CHANNEL_ID = set3;
 export const EventDetailSections = { EVENT_INFO: 0, [0]: "EVENT_INFO", RSVP_LIST: 1, [1]: "RSVP_LIST" };
 export const MAX_RSVP_USER_DISPLAY_COUNT = 100;
 export const NEW_EVENT_WINDOW_MILLISECONDS = result;

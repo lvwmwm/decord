@@ -1,41 +1,44 @@
-// Module ID: 13380
-// Function ID: 13381
+// Module ID: 13440
+// Function ID: 13441
 // Name: GatewayEncoding
-// Dependencies: [13381, 5639, 2]
+// Dependencies: [13441, 6714, 2]
 
-// Module 13380 (GatewayEncoding)
-import ProcessArgs2 from "ProcessArgs" /* 5639 */;
-import GatewayEncodingErlpackEncoding_mod from "GatewayEncodingErlpackEncoding" /* 13381 */;
+// Module 13440 (GatewayEncoding)
+import ProcessArgs2 from "ProcessArgs" /* 6714 */;
+import GatewayEncodingErlpackEncoding_mod from "GatewayEncodingErlpackEncoding" /* 13441 */;
 import size from "module_2" /* 2 */;
 
 let GatewayEncodingErlpackEncoding = GatewayEncodingErlpackEncoding_mod;
 GatewayEncodingErlpackEncoding = GatewayEncodingErlpackEncoding.getErlpackEncoding();
 class JSONEncoding {
+  pack(arg0) {
+    return JSON.stringify(arg0);
+  }
+  unpack(str) {
+    if (typeof str !== "string") {
+      let tmp2 = null;
+      const _Error = Error;
+      if (null != str) {
+        tmp2 = typeof str;
+      }
+      const _HermesInternal = HermesInternal;
+      const self = this;
+      const self2 = this;
+      const _Error1 = new _Error("Expected a string to be passed to JSONEncoding.unpack, got " + tmp2);
+      throw _Error1;
+    } else {
+      const _JSON = JSON;
+      return JSON.parse(str);
+    }
+  }
+  getName() {
+    return "json";
+  }
+  wantsString() {
+    return true;
+  }
 }
 const prototype = JSONEncoding.prototype;
-prototype["pack"] = function pack(arg0) {
-  return JSON.stringify(arg0);
-};
-prototype["unpack"] = function unpack(str) {
-  if (typeof str !== "string") {
-    let tmp2 = null;
-    if (null != str) {
-      tmp2 = typeof str;
-    }
-    const _HermesInternal = HermesInternal;
-    const error = new Error("Expected a string to be passed to JSONEncoding.unpack, got " + tmp2);
-    throw error;
-  } else {
-    const _JSON = JSON;
-    return JSON.parse(str);
-  }
-};
-prototype["getName"] = function getName() {
-  return "json";
-};
-prototype["wantsString"] = function wantsString() {
-  return true;
-};
 let tmp3 = JSONEncoding;
 if (undefined !== GatewayEncodingErlpackEncoding) {
   tmp3 = GatewayEncodingErlpackEncoding;

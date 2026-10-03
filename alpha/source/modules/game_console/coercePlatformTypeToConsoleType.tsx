@@ -1,12 +1,12 @@
-// Module ID: 9664
-// Function ID: 9665
+// Module ID: 9693
+// Function ID: 9694
 // Name: coercePlatformTypeToConsoleType
-// Dependencies: [8736, 1074, 2]
+// Dependencies: [8749, 1085, 2]
 // Exports: coerceConsoleTypeToPlatformType, coercePlatformTypeToConsoleType
 
-// Module 9664 (coercePlatformTypeToConsoleType)
-import Constants from "Constants" /* 1074 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 8736 */;
+// Module 9693 (coercePlatformTypeToConsoleType)
+import Constants from "Constants" /* 1085 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 8749 */;
 import size from "module_2" /* 2 */;
 
 const GameConsoleTypes = GameConsoleConstants.GameConsoleTypes;
@@ -17,8 +17,8 @@ export const coercePlatformTypeToConsoleType = function coercePlatformTypeToCons
   if (PlatformTypes.XBOX === type) {
     return GameConsoleTypes.XBOX;
   } else {
-    if (tmp.PLAYSTATION !== type) {
-      if (tmp.PLAYSTATION_STAGING !== type) {
+    if (PlatformTypes.PLAYSTATION !== type) {
+      if (PlatformTypes.PLAYSTATION_STAGING !== type) {
         return null;
       }
     }
@@ -29,14 +29,15 @@ export const coerceConsoleTypeToPlatformType = function coerceConsoleTypeToPlatf
   if (GameConsoleTypes.XBOX === arg0) {
     return PlatformTypes.XBOX;
   } else if (tmp.PLAYSTATION === arg0) {
+    const someResult = arr.some((type) => type.type === constants.PLAYSTATION_STAGING && type.twoWayLink);
     if (!arr.some((type) => type.type === constants.PLAYSTATION && type.twoWayLink)) {
+      let PLAYSTATION;
       if (someResult) {
-        let PLAYSTATION = PlatformTypes.PLAYSTATION_STAGING;
+        PLAYSTATION = PlatformTypes.PLAYSTATION_STAGING;
       }
       return PLAYSTATION;
     }
     PLAYSTATION = PlatformTypes.PLAYSTATION;
-    someResult = arr.some((type) => type.type === constants.PLAYSTATION_STAGING && type.twoWayLink);
   } else {
     return null;
   }

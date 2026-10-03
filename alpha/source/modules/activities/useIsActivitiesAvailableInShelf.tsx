@@ -1,24 +1,74 @@
-// Module ID: 9052
-// Function ID: 9053
+// Module ID: 9080
+// Function ID: 9081
 // Name: useIsActivitiesAvailableInShelf
-// Dependencies: [19, 8993, 9053, 8974, 2]
-// Exports: default
+// Dependencies: [19, 558, 576, 9012, 9081, 8993, 2]
 
-// Module 9052 (useIsActivitiesAvailableInShelf)
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8974 */;
-import noop from "module_19" /* 19 */;
+// Module 9080 (useIsActivitiesAvailableInShelf)
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8993 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/activities/useIsActivitiesAvailableInShelf.tsx");
-
-export default function useIsActivitiesAvailableInShelf(guildId, arg1) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, arg1) => {
+  let closure_2;
   _require = guildId;
-  const isActivitiesEnabledForCurrentPlatform = require("useIsActivitiesEnabledForCurrentPlatform").useIsActivitiesEnabledForCurrentPlatform();
-  let tmp3 = null != guildId;
+  let obj = require("react");
+  const cResult = obj.c(8);
+  let obj2 = require("useIsActivitiesEnabledForCurrentPlatform");
+  const isActivitiesEnabledForCurrentPlatform = obj2.useIsActivitiesEnabledForCurrentPlatform();
+  const tmp3 = isActivitiesEnabledForCurrentPlatform(9081)(arg1);
+  if (cResult[0] === guildId) {
+    let tmp4;
+    if (cResult[1] === tmp3) {
+      tmp4 = cResult[2];
+    }
+    dependencyMap = tmp4;
+    if (cResult[3] === guildId) {
+      if (cResult[4] === isActivitiesEnabledForCurrentPlatform) {
+        let tmp6;
+        let tmp7;
+        if (cResult[5] === tmp4) {
+          tmp6 = cResult[6];
+          tmp7 = cResult[7];
+        }
+        const effect = react.useEffect(tmp6, tmp7);
+        if (tmp4) {
+          tmp4 = isActivitiesEnabledForCurrentPlatform;
+        }
+        return tmp4;
+      }
+    }
+    const fn = function o() {
+      const tmp = closure_2 && isActivitiesEnabledForCurrentPlatform;
+      if (tmp) {
+        const obj2 = { guildId };
+        const obj = EmbeddedActivitiesActionCreators;
+        const shelf = obj.fetchShelf(obj2);
+      }
+    };
+    const items = [guildId, isActivitiesEnabledForCurrentPlatform, tmp4];
+    cResult[3] = guildId;
+    cResult[4] = isActivitiesEnabledForCurrentPlatform;
+    cResult[5] = tmp4;
+    cResult[6] = fn;
+    cResult[7] = items;
+    tmp7 = items;
+    tmp6 = fn;
+  }
+  cResult[0] = guildId;
+  cResult[1] = tmp3;
+  cResult[2] = null != guildId && "" !== guildId || tmp3;
+  tmp4 = tmp5;
+}) : ((guildId, arg1) => {
+  let closure_2;
+  _require = guildId;
   let obj = require("useIsActivitiesEnabledForCurrentPlatform");
+  const isActivitiesEnabledForCurrentPlatform = obj.useIsActivitiesEnabledForCurrentPlatform();
+  let tmp3 = null != guildId;
+  const tmp2 = isActivitiesEnabledForCurrentPlatform(9081)(arg1);
   if (tmp3) {
     tmp3 = "" !== guildId;
   }
@@ -27,18 +77,19 @@ export default function useIsActivitiesAvailableInShelf(guildId, arg1) {
   }
   dependencyMap = tmp3;
   const items = [guildId, isActivitiesEnabledForCurrentPlatform, tmp3];
-  const effect = noop.useEffect(() => {
-    let tmp = closure_2;
-    if (closure_2) {
-      tmp = isActivitiesEnabledForCurrentPlatform;
-    }
+  const effect = react.useEffect(() => {
+    const tmp = closure_2 && isActivitiesEnabledForCurrentPlatform;
     if (tmp) {
       const obj2 = { guildId };
-      const shelf = EmbeddedActivitiesActionCreators.fetchShelf(obj2);
+      const obj = EmbeddedActivitiesActionCreators;
+      const shelf = obj.fetchShelf(obj2);
     }
   }, items);
   if (tmp3) {
     tmp3 = isActivitiesEnabledForCurrentPlatform;
   }
   return tmp3;
-};
+});
+const result = size.fileFinishedImporting("modules/activities/useIsActivitiesAvailableInShelf.tsx");
+
+export default tmp2;

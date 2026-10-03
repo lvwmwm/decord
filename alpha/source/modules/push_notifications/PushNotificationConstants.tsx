@@ -1,20 +1,20 @@
-// Module ID: 6199
-// Function ID: 6200
+// Module ID: 6085
+// Function ID: 6086
 // Name: PushNotificationConstants
-// Dependencies: [1363, 1610, 1364, 2]
+// Dependencies: [1368, 1615, 1369, 2]
 // Exports: getDevicePushProvider
 
-// Module 6199 (PushNotificationConstants)
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import ClientInfoUtils_mod from "ClientInfoUtils" /* 1363 */;
-import MetaQuestUtils_mod from "MetaQuestUtils" /* 1610 */;
+// Module 6085 (PushNotificationConstants)
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import react_native_mod from "react-native" /* 1368 */;
+import MetaQuestUtils_mod from "MetaQuestUtils" /* 1615 */;
 import size from "module_2" /* 2 */;
 
-let ClientInfoUtils = ClientInfoUtils_mod;
-ClientInfoUtils = ClientInfoUtils.getConstants();
+let react_native = react_native_mod;
+react_native = react_native.getConstants();
 let str;
-if (ClientInfoUtils != null) {
-  str = ClientInfoUtils.Identifier;
+if (react_native != null) {
+  str = react_native.Identifier;
 }
 if (str == null) {
   str = "";
@@ -49,14 +49,16 @@ export const DEVICE_PUSH_PROVIDER_META_HORIZON = "meta_horizon";
 export const DEVICE_PUSH_PROVIDER_IOS = str2;
 export const DEVICE_PUSH_VOIP_PROVIDER = str4;
 export const getDevicePushProvider = function getDevicePushProvider() {
-  if (MetaQuestUtils) {
-    let str = meta_horizon;
+  let str;
+  const tmp = MetaQuestUtils;
+  if (tmp) {
+    str = meta_horizon;
   } else {
     str = "gcm";
+    const obj = PlatformUtils;
     if (!obj.isAndroid()) {
       str = str2;
     }
-    obj = PlatformUtils;
   }
   return str;
 };

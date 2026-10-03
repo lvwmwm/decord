@@ -1,53 +1,57 @@
-// Module ID: 17857
-// Function ID: 17858
+// Module ID: 17943
+// Function ID: 17944
 // Name: FormPriceTier
-// Dependencies: [19, 17816, 1074, 21, 1115, 13644, 6842, 38, 4809, 8921, 1981, 2]
+// Dependencies: [19, 17902, 1085, 21, 1126, 13706, 6736, 38, 4854, 8949, 1987, 2]
 // Exports: default
 
-// Module 17857 (FormPriceTier)
+// Module 17943 (FormPriceTier)
+import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
-import util from "util" /* 1115 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
-import noop from "module_19" /* 19 */;
+import Constants from "Constants" /* 1085 */;
+import intl4 from "intl" /* 1126 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import react from "react" /* 19 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 17902 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const RoleTierEditStore = fn(17816);
+let c3;
+let closure_4;
 ({ LoadingState: c3, usePriceTiersAvailableInGuild: closure_4 } = RoleTierEditStore);
-const CurrencyCodes = fn(1074).CurrencyCodes;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const CurrencyCodes = Constants.CurrencyCodes;
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormPriceTier.tsx");
 
 export default function FormPriceTier(guildId) {
+  let _undefined;
+  let c4;
+  let intl;
+  let state;
   guildId = guildId.guildId;
   const price = guildId.price;
   const onChange = guildId.onChange;
   c4 = undefined;
   let USD;
-  const tmp = c4(guildId);
+  const disabled = guildId.disabled;
+  let tmp = c4(guildId);
   const tiers = tmp.tiers;
   ({ state, onRefresh: c4 } = tmp);
   USD = USD.USD;
   if (null == tiers) {
+    let stringResult;
+    let tmp7;
+    const tmp5 = tiers;
     if (state === tiers.LOADING) {
       const intl3 = guildId(onChange[4]).intl;
-      let stringResult = intl3.string(guildId(onChange[4]).t.ZTNur7);
-      let tmp7 = onChange;
+      stringResult = intl3.string(guildId(onChange[4]).t.ZTNur7);
+      tmp7 = onChange;
     } else {
       tmp7 = onChange;
       const intl2 = guildId(onChange[4]).intl;
       stringResult = intl2.string(guildId(onChange[4]).t.R0RpRX);
     }
-    let obj2 = {
-      disabled: state === tiers.LOADING,
-      placeholder: stringResult,
-      onPress() {
-          return _undefined(guildId);
-        }
-    };
     return jsx(price(tmp7[5]), {
-      disabled: state === tiers.LOADING,
+      disabled: state === tmp5.LOADING,
       placeholder: stringResult,
       onPress() {
           return _undefined(guildId);
@@ -55,59 +59,48 @@ export default function FormPriceTier(guildId) {
     });
   } else {
     let formatPriceResult;
+    const tmp13 = jsx;
+    const tmp16 = price(onChange[5]);
     if (null != price) {
-      formatPriceResult = guildId(tmp15[6]).formatPrice(price, USD);
+      let tmp2 = guildId;
       let obj = guildId(tmp15[6]);
+      formatPriceResult = obj.formatPrice(price, USD);
     }
+    let tmp4 = guildId;
     const obj3 = {
       label: formatPriceResult,
-      disabled: guildId.disabled,
+      disabled,
       onPress() {
-          _modDef38(null != tiers, "handleSelectPrice must only be called if tiers != null");
-          const obj2 = { title: null, items: null, onItemSelect: null, selectedItem: null, hasIcons: false };
-          let obj = ActionSheetActionCreatorsDefault;
-          const intl = util.intl;
-          obj2.title = intl.string(util.t.nCOuYJ);
-          obj2.items = tiers.map((value) => {
-            const obj = { label: guildId(onChange[6]).formatPrice(value, USD), value };
-            return obj;
-          });
-          obj2.onItemSelect = function onItemSelect(arg0) {
-            if (closure_1_2 != null) {
-              tmp(arg0);
-            }
-            price(onChange[8]).hideActionSheet();
+          let intl;
+          let tmp4;
+          const tmp = _modDef38(null != tiers, "handleSelectPrice must only be called if tiers != null");
+          const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+          let obj = {
+            title: intl.string(intl4.t.nCOuYJ),
+            items: tiers.map((value) => {
+              let obj2;
+              const obj = { label: obj2.formatPrice(value, USD), value };
+              obj2 = guildId(onChange[6]);
+              return obj;
+            }),
+            onItemSelect(arg0) {
+              if (closure_1_2 != null) {
+                tmp(arg0);
+              }
+              const obj = price(onChange[8]);
+              obj.hideActionSheet();
+            },
+            selectedItem: tmp4,
+            hasIcons: false
           };
-          obj2.selectedItem = price;
-          obj.openLazy(asyncRequireImpl(8921, dependencyMap.paths), "GuildRoleSubscriptionPriceTierSelect", obj2);
+          const tmp3 = asyncRequire(8949, dependencyMap.paths);
+          intl = intl4.intl;
+          openLazy(tmp3, "GuildRoleSubscriptionPriceTierSelect", obj);
+          tmp4 = price;
         },
-      placeholder: null
+      placeholder: intl.string(guildId(onChange[4]).t.nCOuYJ)
     };
-    let intl = guildId(tmp15[4]).intl;
-    obj3.placeholder = intl.string(guildId(onChange[4]).t.nCOuYJ);
-    return jsx(price(onChange[5]), {
-      label: formatPriceResult,
-      disabled: guildId.disabled,
-      onPress() {
-          _modDef38(null != tiers, "handleSelectPrice must only be called if tiers != null");
-          const obj2 = { title: null, items: null, onItemSelect: null, selectedItem: null, hasIcons: false };
-          let obj = ActionSheetActionCreatorsDefault;
-          const intl = util.intl;
-          obj2.title = intl.string(util.t.nCOuYJ);
-          obj2.items = tiers.map((value) => {
-            const obj = { label: guildId(onChange[6]).formatPrice(value, USD), value };
-            return obj;
-          });
-          obj2.onItemSelect = function onItemSelect(arg0) {
-            if (closure_1_2 != null) {
-              tmp(arg0);
-            }
-            price(onChange[8]).hideActionSheet();
-          };
-          obj2.selectedItem = price;
-          obj.openLazy(asyncRequireImpl(8921, dependencyMap.paths), "GuildRoleSubscriptionPriceTierSelect", obj2);
-        },
-      placeholder: null
-    });
+    intl = guildId(tmp15[4]).intl;
+    return tmp13(tmp16, obj3);
   }
 };

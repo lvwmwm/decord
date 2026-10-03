@@ -1,25 +1,58 @@
-// Module ID: 6093
-// Function ID: 6094
+// Module ID: 5982
+// Function ID: 5983
 // Name: form_fields/FormSeparator
-// Dependencies: [19, 17, 21, 4845, 576, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 2]
 
-// Module 6093 (form_fields/FormSeparator)
-import nativeDefault from "native" /* 576 */;
-import noop from "module_19" /* 19 */;
+// Module 5982 (form_fields/FormSeparator)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
-const obj2 = { separator: { borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1, marginVertical: 12 } };
-let closure_2 = createStyles.createStyles(obj2);
-const size = fn(2);
+let obj2;
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let obj = { separator: obj2 };
+obj2 = { borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1, marginVertical: 12 };
+let closure_4 = createStyles.createStyles(obj);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+  const obj = react2;
+  const cResult = obj.c(6);
+  const tmp2 = closure_4();
+  if (cResult[0] === style.style) {
+    let tmp3;
+    if (cResult[1] === tmp2.separator) {
+      tmp3 = cResult[2];
+    }
+    if (cResult[3] === style) {
+      let tmp4;
+      if (cResult[4] === tmp3) {
+        tmp4 = cResult[5];
+      }
+      return tmp4;
+    }
+    const merged = Object.assign(style);
+    const tmp10 = <View style={tmp3} />;
+    cResult[3] = style;
+    cResult[4] = tmp3;
+    cResult[5] = tmp10;
+    tmp4 = tmp10;
+  }
+  const items = [tmp2.separator, style.style];
+  cResult[0] = style.style;
+  cResult[1] = tmp2.separator;
+  cResult[2] = items;
+  tmp3 = items;
+}) : ((style) => {
+  const tmp = closure_4();
+  const merged = Object.assign(style);
+  const items = [tmp.separator, style.style];
+  return <View style={items} />;
+});
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/FormSeparator.tsx");
 
-export default function FormSeparator(style) {
-  const obj = {};
-  const merged = Object.assign(style);
-  const items = [closure_2().separator, style.style];
-  obj.style = items;
-  return <View />;
-};
+export default tmp3;

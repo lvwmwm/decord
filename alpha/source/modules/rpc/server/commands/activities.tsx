@@ -1,120 +1,133 @@
-// Module ID: 14280
-// Function ID: 14281
+// Module ID: 14348
+// Function ID: 14349
 // Name: activities
-// Dependencies: [5, 1074, 14247, 14234, 8967, 8509, 8962, 14242, 8974, 2]
+// Dependencies: [5, 1085, 14315, 14302, 9031, 2016, 9026, 14310, 8993, 2]
 
-// Module 14280 (activities)
-import RPCHelpers from "RPCHelpers" /* 8967 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14234 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+// Module 14348 (activities)
+import RPCHelpers from "RPCHelpers" /* 9031 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14302 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import Constants from "Constants" /* 1085 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 14315 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Constants = fn(1074);
-({ RPCCommands, RPCErrors: closure_4, ApplicationFlags: hasOwnProperty } = Constants);
+let c5, closure_2, constants;
+
+let RPCCommands;
+let closure_4;
+({ RPCCommands, RPCErrors: closure_4 } = Constants);
 let obj = {};
-let CONTEXT_MENU_ICON_NAMES = fn(14247);
-obj[RPCCommands.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS] = CONTEXT_MENU_ICON_NAMES.createRPCCommand(RPCCommands.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS, {
-  scope: fn(14234).activityInstanceConnectedParticipantsScope,
-  handler(socket) {
-    const result = RPCHelpers.validatePostMessageTransport(socket.socket.transport);
-    return activityInstanceConnectedParticipants.activityInstanceConnectedParticipants();
-  }
-});
-CONTEXT_MENU_ICON_NAMES = fn(14247);
-let obj3 = {
-  scope: fn(14234).activityInstanceConnectedParticipantsScope,
-  handler(socket) {
-    const result = RPCHelpers.validatePostMessageTransport(socket.socket.transport);
-    return activityInstanceConnectedParticipants.activityInstanceConnectedParticipants();
-  }
-};
-obj[RPCCommands.REQUEST_PROXY_TICKET_REFRESH] = CONTEXT_MENU_ICON_NAMES.createRPCCommand(RPCCommands.REQUEST_PROXY_TICKET_REFRESH, {
-  scope: fn(14234).activityInstanceConnectedParticipantsScope,
+const GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS = RPCCommands.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS;
+let CONTEXT_MENU_ICON_NAMES = CONTEXT_MENU_ICON_NAMES_mod;
+let obj2 = {
+  scope: activityInstanceConnectedParticipants.activityInstanceConnectedParticipantsScope,
   handler(socket) {
     socket = socket.socket;
-    return (async (arg0, value) => {
-      if (constants2 === 2) {
-        constants2 = 3;
+    const obj = RPCHelpers;
+    const result = obj.validatePostMessageTransport(socket.transport);
+    const obj2 = activityInstanceConnectedParticipants;
+    return obj2.activityInstanceConnectedParticipants();
+  }
+};
+obj[GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS] = CONTEXT_MENU_ICON_NAMES.createRPCCommand(RPCCommands.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS, obj2);
+const REQUEST_PROXY_TICKET_REFRESH = RPCCommands.REQUEST_PROXY_TICKET_REFRESH;
+CONTEXT_MENU_ICON_NAMES = CONTEXT_MENU_ICON_NAMES_mod;
+let obj3 = {
+  scope: activityInstanceConnectedParticipants.activityInstanceConnectedParticipantsScope,
+  handler(socket) {
+    socket = socket.socket;
+    return (async function(arg0, value) {
+      let closure_1;
+      if (c5 === 2) {
+        c5 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp6 === 3) {
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
+        let c3;
         try {
-          constants2 = 2;
+          c5 = 2;
           if (0 === constants) {
             if (arg0 === 1) {
-              constants2 = 3;
+              c5 = 3;
               throw value;
             } else if (arg0 === 2) {
-              constants2 = 3;
+              c5 = 3;
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              const result = value(tmp29[4]).validatePostMessageTransport(socket.transport);
-              const obj9 = value(tmp29[4]);
-              const tmp37 = value;
-              const tmp39 = socket;
-              const obj10 = value(tmp29[4]);
-              const validateApplicationResult = value(tmp29[4]).validateApplication(socket.application);
-              if (obj11.hasApplicationFlag(socket.application, constants2.EMBEDDED)) {
-                const tmp26 = tmp45(tmp46[7])(tmp39);
+              const obj8 = value(closure_2[4]);
+              const result = obj8.validatePostMessageTransport(socket.transport);
+              const obj9 = value(closure_2[4]);
+              const validateApplicationResult = obj9.validateApplication(socket.application);
+              const obj10 = value(closure_2[5]);
+              const tmp30 = value;
+              const tmp32 = socket;
+              if (obj10.isEmbeddedApplication(socket.application)) {
+                const tmp19 = tmp(closure_2[7])(tmp32);
                 c3 = 1;
                 value = {};
                 let id;
-                if (tmp26 != null) {
-                  id = tmp26.id;
+                const createProxyTicket = tmp30(closure_2[8]).createProxyTicket;
+                const tmp30Result = tmp30(closure_2[8]);
+                if (tmp19 != null) {
+                  id = tmp19.id;
                 }
                 constants = 2;
-                constants2 = 1;
-                const obj4 = { value: tmp37(tmp29[8]).createProxyTicket(validateApplicationResult, id), done: false };
+                c5 = 1;
+                const obj4 = { value: createProxyTicket(validateApplicationResult, id), done: false };
                 return obj4;
               } else {
                 const obj5 = { errorCode: constants.UNAUTHORIZED_FOR_APPLICATION };
-                const tmp24 = new tmp45(tmp46[6])(obj5, "This application cannot access this API");
-                throw tmp24;
+                const self3 = this;
+                const self4 = this;
+                const tmp17 = new tmp(closure_2[6])(obj5, "This application cannot access this API");
+                throw tmp17;
               }
-              obj11 = value(tmp29[5]);
             }
-          } else if (1 === tmp7) {
+          } else if (1 === tmp4) {
             c3 = 0;
             const obj6 = { errorCode: constants.UNKNOWN_ERROR };
-            const tmp18 = new tmp3(tmp29[6])(obj6, "Failed to create proxy ticket");
-            throw tmp18;
+            const self = this;
+            const self2 = this;
+            const tmp13 = new tmp(closure_2[6])(obj6, "Failed to create proxy ticket");
+            throw tmp13;
           } else if (arg0 === 1) {
-            constants2 = 3;
+            c5 = 3;
             throw value;
           } else if (arg0 === 2) {
             c3 = 0;
-            constants2 = 3;
+            c5 = 3;
             const obj7 = { value, done: true };
             return obj7;
           } else {
             value.ticket = value;
             c3 = 0;
-            constants2 = 3;
+            c5 = 3;
             const obj = { value, done: true };
             return obj;
           }
-        } catch (tmp29) {
-          if (tmp4 === c3) {
-            constants2 = tmp2;
-            throw tmp29;
+        } catch (tmp23) {
+          closure_2 = tmp23;
+          if (0 === c3) {
+            c5 = 3;
+            throw tmp23;
           } else {
-            constants = tmp;
+            constants = 1;
           }
         }
       }
     })();
   }
-});
-const size = fn(2);
+};
+obj[REQUEST_PROXY_TICKET_REFRESH] = CONTEXT_MENU_ICON_NAMES.createRPCCommand(RPCCommands.REQUEST_PROXY_TICKET_REFRESH, obj3);
 let result = size.fileFinishedImporting("modules/rpc/server/commands/activities.tsx");
 
 export default obj;

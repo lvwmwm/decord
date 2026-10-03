@@ -1,35 +1,42 @@
-// Module ID: 11172
-// Function ID: 11173
+// Module ID: 11076
+// Function ID: 11077
 // Name: updateChannelUnreadSettings
-// Dependencies: [5026, 1074, 5027, 1084, 6726, 9801, 6721, 2]
+// Dependencies: [5071, 1085, 5072, 1095, 6614, 9852, 6609, 2]
 // Exports: default
 
-// Module 11172 (updateChannelUnreadSettings)
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6721 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6726 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 9801 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5026 */;
+// Module 11076 (updateChannelUnreadSettings)
+import Constants from "Constants" /* 1085 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
+import ReadStateConstants from "ReadStateConstants" /* 5072 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6609 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6614 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 9852 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const AnalyticsObjects = fn(1074).AnalyticsObjects;
-const UnreadSetting = fn(5027).UnreadSetting;
-const constants = fn(1084).ChannelNotificationSettingsFlags;
-const size = fn(2);
+const AnalyticsObjects = Constants.AnalyticsObjects;
+const UnreadSetting = ReadStateConstants.UnreadSetting;
+const constants = UserSettingsConstants.ChannelNotificationSettingsFlags;
 let result = size.fileFinishedImporting("modules/notifications/settings_unread_notice/utils/updateChannelUnreadSettings.tsx");
 
 export default function updateChannelUnreadSettings(guildId, channelId, UNREADS_ONLY_MENTIONS) {
-  const obj2 = { guildId, channelId, settings: null, label: null, location: null };
-  const obj3 = { flags: null };
-  const obj = NotificationSettingsModalActionCreatorsDefault;
-  obj3.flags = notificationSettingsFlagUtils.withChannelUnreadFlags(UserGuildSettingsStore.getChannelIdFlags(guildId, channelId), UNREADS_ONLY_MENTIONS);
-  obj2.settings = obj3;
+  let ONLY_MENTIONS;
+  let obj2;
+  let obj3;
+  let obj4;
+  let unreads;
+  const obj = { guildId, channelId, settings: obj2, label: unreads(ONLY_MENTIONS), location: obj4 };
+  obj2 = { flags: obj3.withChannelUnreadFlags(UserGuildSettingsStore.getChannelIdFlags(guildId, channelId), UNREADS_ONLY_MENTIONS) };
+  const updateChannelOverrideSettings = NotificationSettingsModalActionCreatorsDefault.updateChannelOverrideSettings;
+  NotificationSettingsModalActionCreatorsDefault;
+  obj3 = notificationSettingsFlagUtils;
   const NotificationLabel = NotificationSettingsUtils.NotificationLabel;
+  unreads = NotificationLabel.unreads;
   if (UNREADS_ONLY_MENTIONS === constants.UNREADS_ALL_MESSAGES) {
-    let ONLY_MENTIONS = UnreadSetting.ALL_MESSAGES;
+    ONLY_MENTIONS = UnreadSetting.ALL_MESSAGES;
   } else {
     ONLY_MENTIONS = UnreadSetting.ONLY_MENTIONS;
   }
-  obj2.label = NotificationLabel.unreads(ONLY_MENTIONS);
-  obj2.location = { object: AnalyticsObjects.NOTIFICATION_SETTING_UNREAD_NOTICE };
-  const result = obj.updateChannelOverrideSettings(obj2);
+  obj4 = { object: AnalyticsObjects.NOTIFICATION_SETTING_UNREAD_NOTICE };
+  const result = updateChannelOverrideSettings(obj);
 };

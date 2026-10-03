@@ -1,32 +1,69 @@
-// Module ID: 15241
-// Function ID: 15242
+// Module ID: 15297
+// Function ID: 15298
 // Name: SettingsWebBrowserScreen
-// Dependencies: [19, 7590, 21, 11215, 14460, 2]
+// Dependencies: [19, 7634, 21, 558, 576, 11129, 14495, 2]
 
-// Module 15241 (SettingsWebBrowserScreen)
-import SettingBuilders from "SettingBuilders" /* 11215 */;
-import SettingLayoutDefault from "SettingLayout" /* 14460 */;
-import noop from "module_19" /* 19 */;
+// Module 15297 (SettingsWebBrowserScreen)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import SettingLayoutDefault from "SettingLayout" /* 14495 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const MobileUserSettings = fn(7590).MobileUserSettings;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/web_browser/native/SettingsWebBrowserScreen.tsx");
-
-export default noop.memo(function SettingsWebBrowserScreen() {
-  const node = noop.useMemo(() => {
-    const obj2 = { sections: null };
-    const obj3 = { settings: null };
-    const items = [constants.SELECT_WEB_BROWSER];
-    obj3.settings = items;
-    const items1 = [obj3, ];
-    const obj4 = { settings: null };
-    const items2 = [constants.CLEAR_WEB_BROWSER_DATA];
-    obj4.settings = items2;
+let tmp;
+const SettingBuilders = tmp(11129);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const jsx = Fragment.jsx;
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let items;
+  let items1;
+  let items2;
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { settings: items };
+    items = [MobileUserSettings.SELECT_WEB_BROWSER];
+    const obj2 = { sections: items1 };
+    items1 = [obj3, ];
+    const obj4 = { settings: items2 };
+    items2 = [MobileUserSettings.CLEAR_WEB_BROWSER_DATA];
     items1[1] = obj4;
-    obj2.sections = items1;
-    return SettingBuilders.createList(obj2);
+    const tmpResult = SettingBuilders;
+    const list = tmpResult.createList(obj2);
+    cResult[0] = list;
+    first = list;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp10 = jsx(SettingLayoutDefault, { node: first });
+    cResult[1] = tmp10;
+    tmp7 = tmp10;
+  } else {
+    tmp7 = cResult[1];
+  }
+  return tmp7;
+}) : (() => {
+  const node = react.useMemo(() => {
+    let items;
+    let items1;
+    let items2;
+    const obj3 = { settings: items };
+    items = [constants.SELECT_WEB_BROWSER];
+    const obj2 = { sections: items1 };
+    items1 = [obj3, ];
+    const obj4 = { settings: items2 };
+    items2 = [constants.CLEAR_WEB_BROWSER_DATA];
+    items1[1] = obj4;
+    const obj = SettingBuilders;
+    return obj.createList(obj2);
   }, []);
   return jsx(SettingLayoutDefault, { node });
-});
+}));
+const result = size.fileFinishedImporting("modules/user_settings/web_browser/native/SettingsWebBrowserScreen.tsx");
+
+export default memoResult;

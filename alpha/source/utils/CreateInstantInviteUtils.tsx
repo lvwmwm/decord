@@ -1,18 +1,20 @@
-// Module ID: 17882
-// Function ID: 17883
+// Module ID: 17968
+// Function ID: 17969
 // Name: CreateInstantInviteUtils
-// Dependencies: [4496, 4498, 1074, 2]
+// Dependencies: [4507, 4509, 1085, 2]
 // Exports: getInvitableChannelForGuild
 
-// Module 17882 (CreateInstantInviteUtils)
-import Constants from "Constants" /* 1074 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4496 */;
-import PermissionStore from "PermissionStore" /* 4498 */;
+// Module 17968 (CreateInstantInviteUtils)
+import Constants from "Constants" /* 1085 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4507 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
 import size from "module_2" /* 2 */;
 
+let _window;
+let map;
 let GuildChannelStore = GuildChannelStore_mod;
-({ GUILD_SELECTABLE_CHANNELS_KEY: closure_0, GUILD_VOCAL_CHANNELS_KEY: closure_1 } = GuildChannelStore);
-let GuildChannelStore = GuildChannelStore_mod;
+({ GUILD_SELECTABLE_CHANNELS_KEY: _window, GUILD_VOCAL_CHANNELS_KEY: map } = GuildChannelStore);
+GuildChannelStore = GuildChannelStore_mod;
 const Permissions = Constants.Permissions;
 const result = size.fileFinishedImporting("utils/CreateInstantInviteUtils.tsx");
 

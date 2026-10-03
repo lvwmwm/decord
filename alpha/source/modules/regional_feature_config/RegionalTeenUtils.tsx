@@ -1,68 +1,114 @@
-// Module ID: 12125
-// Function ID: 12126
+// Module ID: 12061
+// Function ID: 12062
 // Name: RegionalTeenUtils
-// Dependencies: [19, 5059, 5062, 504, 10617, 8290, 2]
-// Exports: useIsTeenInCountrySet, useIsTeenInStrictCountry, useUserCountryCode
+// Dependencies: [19, 5104, 5107, 558, 576, 504, 9828, 8294, 2]
+// Exports: useIsTeenInStrictCountry
 
-// Module 12125 (RegionalTeenUtils)
-import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10617 */;
-import noop from "module_19" /* 19 */;
-import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5059 */;
+// Module 12061 (RegionalTeenUtils)
+import react2 from "react" /* 576 */;
+import CountryCodes from "CountryCodes" /* 5107 */;
+import useUserIsTeen from "useUserIsTeen" /* 8294 */;
+import MessageRequestActionCreators from "MessageRequestActionCreators" /* 9828 */;
+import react from "react" /* 19 */;
+import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5104 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let items = ["GB", "AU"];
-HermesBuiltin.arraySpread(fn(5062).CountryCodesSets.EU_COUNTRIES, 2);
+let userCountryCode;
+
+let items = ["GB", "AU", ...CountryCodes.CountryCodesSets.EU_COUNTRIES];
 const set = new Set(items);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/regional_feature_config/RegionalTeenUtils.tsx");
-
-export const useUserCountryCode = function useUserCountryCode() {
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let stateFromStores;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  let tmp9;
+  let obj = stateFromStores(576);
+  const cResult = obj.c(5);
+  const tmp = stateFromStores;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [RegionalFeatureConfigStore];
+    const fn = function s() {
+      return userCountryCode.getUserCountryCode();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = tmp(504);
+  stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] !== stateFromStores) {
+    const fn2 = function l() {
+      if (null == stateFromStores) {
+        const obj = MessageRequestActionCreators;
+        userCountryCode = obj.fetchUserCountryCode();
+      }
+    };
+    const items1 = [stateFromStores];
+    cResult[2] = stateFromStores;
+    cResult[3] = fn2;
+    cResult[4] = items1;
+    tmp9 = items1;
+    tmp8 = fn2;
+  } else {
+    tmp8 = cResult[3];
+    tmp9 = cResult[4];
+  }
+  const effect = react.useEffect(tmp8, tmp9);
+  return stateFromStores;
+}) : (() => {
+  let stateFromStores;
+  let obj = stateFromStores(504);
   const items = [RegionalFeatureConfigStore];
-  stateFromStores = stateFromStores(504).useStateFromStores(items, () => userCountryCode.getUserCountryCode());
+  stateFromStores = obj.useStateFromStores(items, () => userCountryCode.getUserCountryCode());
   const items1 = [stateFromStores];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     if (null == stateFromStores) {
-      userCountryCode = MessageRequestActionCreators.fetchUserCountryCode();
+      const obj = MessageRequestActionCreators;
+      userCountryCode = obj.fetchUserCountryCode();
     }
   }, items1);
   return stateFromStores;
-};
-export const useIsTeenInCountrySet = function useIsTeenInCountrySet(set) {
-  const items = [RegionalFeatureConfigStore];
-  stateFromStores = stateFromStores(504).useStateFromStores(items, () => userCountryCode.getUserCountryCode());
-  const items1 = [stateFromStores];
-  const effect = noop.useEffect(() => {
-    if (null == stateFromStores) {
-      userCountryCode = MessageRequestActionCreators.fetchUserCountryCode();
+});
+let closure_5 = tmp3;
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((has) => {
+  const obj = react2;
+  const cResult = obj.c(4);
+  const tmp2 = closure_5();
+  const obj2 = useUserIsTeen;
+  const userIsTeen = obj2.useUserIsTeen();
+  if (cResult[0] === has) {
+    if (cResult[1] === tmp2) {
+      let tmp4;
+      if (cResult[2] === userIsTeen) {
+        tmp4 = cResult[3];
+      }
+      return tmp4;
     }
-  }, items1);
-  const obj = stateFromStores(504);
-  let userIsTeen = stateFromStores(8290).useUserIsTeen();
-  if (userIsTeen) {
-    userIsTeen = null != stateFromStores;
   }
-  if (userIsTeen) {
-    userIsTeen = set.has(stateFromStores.alpha2);
-  }
+  const hasItem = userIsTeen && null != tmp2 && has.has(tmp2.alpha2);
+  cResult[0] = has;
+  cResult[1] = tmp2;
+  cResult[2] = userIsTeen;
+  cResult[3] = hasItem;
+  tmp4 = hasItem;
+}) : ((has) => {
+  const tmp = closure_5();
+  const obj = useUserIsTeen;
+  const userIsTeen = obj.useUserIsTeen() && null != tmp && has.has(tmp.alpha2);
   return userIsTeen;
-};
-export const useIsTeenInStrictCountry = function useIsTeenInStrictCountry() {
-  const items = [RegionalFeatureConfigStore];
-  stateFromStores = stateFromStores(504).useStateFromStores(items, () => userCountryCode.getUserCountryCode());
-  const items1 = [stateFromStores];
-  const effect = noop.useEffect(() => {
-    if (null == stateFromStores) {
-      userCountryCode = MessageRequestActionCreators.fetchUserCountryCode();
-    }
-  }, items1);
-  let obj = set;
-  const obj2 = stateFromStores(504);
-  let userIsTeen = stateFromStores(8290).useUserIsTeen();
-  if (userIsTeen) {
-    userIsTeen = null != stateFromStores;
-  }
-  if (userIsTeen) {
-    userIsTeen = obj.has(stateFromStores.alpha2);
-  }
-  return userIsTeen;
-};
+});
+let closure_6 = tmp4;
+ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const result1 = size.fileFinishedImporting("modules/regional_feature_config/RegionalTeenUtils.tsx");
+
+export const useUserCountryCode = tmp3;
+export const useIsTeenInCountrySet = tmp4;
+export const useIsTeenInStrictCountry = () => closure_6(set);

@@ -1,88 +1,111 @@
-// Module ID: 16916
-// Function ID: 16917
+// Module ID: 17005
+// Function ID: 17006
 // Name: IntegrationsSettingsEditWebhook
-// Dependencies: [19, 4496, 4498, 4508, 1372, 1074, 21, 4845, 576, 4569, 1364, 7469, 6122, 7462, 1115, 16909, 11080, 1271, 6796, 5388, 5484, 4841, 8239, 5463, 16917, 1397, 6210, 6185, 6103, 4998, 1177, 5519, 1485, 6647, 2]
-// Exports: default
+// Dependencies: [19, 4507, 4509, 4519, 1377, 1085, 21, 4890, 587, 4589, 1369, 7505, 6010, 7498, 1126, 16998, 12102, 1282, 6688, 5708, 5783, 4886, 8895, 5593, 17006, 1402, 6098, 6074, 5993, 5043, 1188, 5812, 558, 576, 1490, 6536, 2]
 
-// Module 16916 (IntegrationsSettingsEditWebhook)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import AvatarUtils from "AvatarUtils" /* 1397 */;
-import useNavigation from "useNavigation" /* 1485 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5388 */;
-import common_AlertDefault from "common/Alert" /* 5484 */;
-import NavScrim from "NavScrim" /* 6647 */;
-import ClipboardUtils from "ClipboardUtils" /* 6796 */;
-import HeaderShared from "HeaderShared" /* 7462 */;
-import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 7469 */;
-import openChannelPickerDefault from "openChannelPicker" /* 11080 */;
-import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 16909 */;
-import noop from "module_19" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4498 */;
-import RelationshipStore from "RelationshipStore" /* 4508 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 17005 (IntegrationsSettingsEditWebhook)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import intl7 from "intl" /* 1126 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import AvatarUtils from "AvatarUtils" /* 1402 */;
+import useNavigation from "useNavigation" /* 1490 */;
+import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import native from "native" /* 4589 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
+import AlertDefault from "Alert" /* 5783 */;
+import ClipboardUtils from "ClipboardUtils" /* 6688 */;
+import HeaderShared from "HeaderShared" /* 7498 */;
+import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 7505 */;
+import openChannelPickerDefault from "openChannelPicker" /* 12102 */;
+import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 16998 */;
+import react from "react" /* 19 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const IconLabelBlockDefault = tmp8(16917);
-require = fn;
-let closure_3 = fn(4496).GUILD_SELECTABLE_CHANNELS_KEY;
-const Constants = fn(1074);
-({ Endpoints: closure_7, NON_USER_BOT_DISCRIMINATOR: closure_8, Permissions: closure_9, WebhookTypes: c10 } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
-const createStyles = fn(4845);
-let obj2 = { form: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, row: null, channelIcon: null };
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
-obj2.row = { padding: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
-obj2.channelIcon = { height: 16, width: 16, opacity: 0.6 };
-let closure_14 = createStyles.createLegacyClassComponentStyles(obj2);
-const PureComponent = noop.PureComponent;
+let navigation;
+
+let c10;
+let c9;
+let closure_12;
+let map1;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let obj3;
+let tmp;
+let tmp8;
+let unpackModuleId;
+const NavScrim = tmp(6536);
+const IconLabelBlockDefault = tmp8(17006);
+let closure_3 = GuildChannelStore.GUILD_SELECTABLE_CHANNELS_KEY;
+({ Endpoints: metroImportDefault, NON_USER_BOT_DISCRIMINATOR: metroImportAll, Permissions: c9, WebhookTypes: c10 } = Constants);
+({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = Fragment);
+let obj = { form: obj2, row: obj3, channelIcon: { height: 16, width: 16, opacity: 0.6 } };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
+const createLegacyClassComponentStyles = createStyles.createLegacyClassComponentStyles;
+obj3 = { padding: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
+const authStore2 = createLegacyClassComponentStyles(obj);
+const PureComponent = react.PureComponent;
 class EditWebhook extends PureComponent {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    closure_0 = applyArgumentsResult;
+    let channelType;
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    require = applyArgumentsResult;
     applyArgumentsResult.state = { avatar: applyArgumentsResult.props.avatar, name: applyArgumentsResult.props.name, channel: applyArgumentsResult.props.channel, hasChanges: false, submitting: false, copied: false };
     applyArgumentsResult.handleSave = function handleSave() {
+      let guildId;
+      let props;
+      let state;
+      let webhookId;
+      let obj = navigation;
       if (navigation.state.hasChanges) {
         ({ state, props } = obj);
         navigation = props.navigation;
         const obj2 = { name: state.name, channel_id: state.channel.id, avatar: state.avatar };
         ({ guildId, webhookId } = props);
         obj.setState({ submitting: true });
-        const updateResult = WebhooksActionCreatorsDefault.update(guildId, webhookId, obj2);
-        WebhooksActionCreatorsDefault.update(guildId, webhookId, obj2).then(() => {
+        const obj3 = WebhooksActionCreatorsDefault;
+        const updateResult = obj3.update(guildId, webhookId, obj2);
+        const nextPromise = updateResult.then(() => {
           navigation.pop();
-        }).catch((error) => {
-          navigation.setState({ errors: error.body, submitting: false });
         });
-        const nextPromise = WebhooksActionCreatorsDefault.update(guildId, webhookId, obj2).then(() => {
-          navigation.pop();
+        nextPromise.catch((error) => {
+          const obj = { errors: error.body, submitting: false };
+          navigation.setState(obj);
         });
       }
     };
     applyArgumentsResult.handleGuildIconUpload = function handleGuildIconUpload(avatar) {
-      avatar = applyArgumentsResult.props.avatar;
+      avatar = require.props.avatar;
       if (avatar !== avatar) {
         const obj2 = { hasChanges: true, avatar };
-        obj.setState(obj2);
+        require.setState(obj2);
       } else {
         const obj3 = { hasChanges: false, avatar };
-        obj.setState(obj3);
+        require.setState(obj3);
       }
     };
     applyArgumentsResult.handleNameChange = function handleNameChange(name) {
-      name = applyArgumentsResult.props.name;
+      name = require.props.name;
       if (name !== name) {
         const obj2 = { hasChanges: true, name };
-        obj.setState(obj2);
+        require.setState(obj2);
       } else {
         const obj3 = { hasChanges: false, name };
-        obj.setState(obj3);
+        require.setState(obj3);
       }
     };
     applyArgumentsResult.handleChannelChange = function handleChannelChange() {
+      let channel;
       channel = channel.props.channel;
-      openChannelPickerDefault({
+      let obj = {
         guildId: channel.props.guildId,
         channelType,
         filterFn(channel) {
@@ -92,225 +115,305 @@ class EditWebhook extends PureComponent {
         onSelect(id) {
           if (id.id !== channel.id) {
             const obj2 = { hasChanges: true, channel: id };
-            applyArgumentsResult.setState(obj2);
+            require.setState(obj2);
           } else {
             const obj = { hasChanges: false, channel: tmp };
-            applyArgumentsResult.setState(obj);
+            require.setState(obj);
           }
         }
-      });
+      };
+      const tmp = openChannelPickerDefault(obj);
     };
     applyArgumentsResult.handleCopyUrl = function handleCopyUrl() {
-      const token = applyArgumentsResult.props.token;
+      let state;
+      const token = require.props.token;
       if (null != token) {
-        const aPIBaseURL = HTTPUtils.getAPIBaseURL(false);
+        const obj = HTTPUtils;
+        const aPIBaseURL = obj.getAPIBaseURL(false);
         const _HermesInternal = HermesInternal;
-        const combined = "" + aPIBaseURL + React5.WEBHOOK_INTEGRATION(tmp, token);
-        ClipboardUtils.copy(combined, () => state.setState({ copied: true }));
+        const combined = "" + aPIBaseURL + metroImportDefault.WEBHOOK_INTEGRATION(tmp, token);
+        const obj2 = ClipboardUtils;
+        obj2.copy(combined, () => state.setState({ copied: true }));
       }
     };
     applyArgumentsResult.handleConfirmDeleteWebhook = function handleConfirmDeleteWebhook() {
-      const props = applyArgumentsResult.props;
-      const navigation = props.navigation;
+      let guildId;
+      let webhookId;
+      const props = require.props;
+      navigation = props.navigation;
       ({ guildId, webhookId } = props);
-      const deleteResult = WebhooksActionCreatorsDefault.delete(guildId, webhookId);
-      WebhooksActionCreatorsDefault.delete(guildId, webhookId).then(() => {
+      let obj = WebhooksActionCreatorsDefault;
+      const deleteResult = obj.delete(guildId, webhookId);
+      const nextPromise = deleteResult.then(() => {
         navigation.pop();
-      }).catch(() => {
-        const obj2 = { title: null, body: null };
-        const intl = navigation(1115).intl;
-        obj2.title = intl.string(navigation(1115).t.N5riYn);
-        const intl2 = navigation(1115).intl;
-        obj2.body = intl2.string(navigation(1115).t["/4TwKf"]);
-        closure_1_1(5388).show(obj2);
+      });
+      nextPromise.catch(() => {
+        let intl;
+        let intl2;
+        const obj = { title: intl.string(closure_1_0(closure_1_2[14]).t.N5riYn), body: intl2.string(closure_1_0(closure_1_2[14]).t["/4TwKf"]) };
+        const show = closure_1_1(closure_1_2[19]).show;
+        closure_1_1(closure_1_2[19]);
+        intl = closure_1_0(closure_1_2[14]).intl;
+        intl2 = closure_1_0(closure_1_2[14]).intl;
+        show(obj);
       });
     };
     applyArgumentsResult.handleDeleteWebhook = function handleDeleteWebhook() {
-      const name = applyArgumentsResult.props.name;
-      const obj2 = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null, confirmColor: null };
-      const intl = util.intl;
-      obj2.title = intl.formatToPlainString(util.t.QVFjHh, { name });
-      const intl2 = util.intl;
-      obj2.body = intl2.format(util.t["rIWe+5"], { name });
-      const intl3 = util.intl;
-      obj2.cancelText = intl3.string(util.t.gm1Vej);
-      const intl4 = util.intl;
-      obj2.confirmText = intl4.string(util.t.p89ACt);
-      obj2.onConfirm = applyArgumentsResult.handleConfirmDeleteWebhook;
-      obj2.confirmColor = common_AlertDefault.Colors.RED;
-      actions_AlertActionCreatorsDefault.show(obj2);
+      let intl;
+      let intl2;
+      let intl3;
+      let intl4;
+      const name = require.props.name;
+      const obj = { title: intl.formatToPlainString(intl7.t.QVFjHh, { name }), body: intl2.format(intl7.t["rIWe+5"], { name }), cancelText: intl3.string(intl7.t.gm1Vej), confirmText: intl4.string(intl7.t.p89ACt), onConfirm: require.handleConfirmDeleteWebhook, confirmColor: AlertDefault.Colors.RED };
+      const show = actions_AlertActionCreatorsDefault.show;
+      actions_AlertActionCreatorsDefault;
+      intl = intl7.intl;
+      intl2 = intl7.intl;
+      intl3 = intl7.intl;
+      intl4 = intl7.intl;
+      show(obj);
     };
     applyArgumentsResult.handleCancelChanges = function handleCancelChanges() {
-      applyArgumentsResult.setState({ avatar: applyArgumentsResult.props.avatar, name: applyArgumentsResult.props.name, channel: applyArgumentsResult.props.channel, hasChanges: false, submitting: false, copied: false });
+      const obj = { avatar: require.props.avatar, name: require.props.name, channel: require.props.channel, hasChanges: false, submitting: false, copied: false };
+      require.setState(obj);
     };
     return applyArgumentsResult;
   }
-}
-const prototype = EditWebhook.prototype;
-prototype["componentDidMount"] = function componentDidMount() {
-  if (obj.isAndroid()) {
-    const self = this;
-    const navigation = this.props.navigation;
-    const obj2 = {
-      headerLeft() {
-          return closure_2_11(PressableNavigatorModalIconDefault, { navigation, type: "back" });
-        },
-      headerBackVisible: false
-    };
-    navigation.setOptions(obj2);
-  }
-};
-prototype["componentDidUpdate"] = function componentDidUpdate(arg0, submitting) {
-  const self = this;
-  const navigation = this.props.navigation;
-  ({ submitting, hasChanges } = this.state);
-  if (submitting !== submitting.submitting) {
-    if (submitting) {
-      if (!submitting.submitting) {
-        let obj = {
-          headerRight() {
-                  return closure_1_11(navigation(dependencyMap[12]).HeaderSubmittingIndicator, {});
-                },
-          headerLeft() {
-                  return null;
-                },
-          headerBackVisible: false
-        };
-        navigation.setOptions(obj);
-      }
-    }
-    if (hasChanges) {
+  componentDidMount() {
+    let obj = navigation(1369);
+    if (obj.isAndroid()) {
+      const self = this;
+      navigation = this.props.navigation;
       const obj2 = {
-        headerRight() {
-              const obj = { onPress: self.handleSave, label: null };
-              const intl = util.intl;
-              obj.label = intl.string(util.t["R3BPH+"]);
-              return closure_2_11(HeaderShared.HeaderTextButton, obj);
-            },
         headerLeft() {
-              const obj = { onPress: self.handleCancelChanges, label: null };
-              const intl = util.intl;
-              obj.label = intl.string(util.t["ETE/oC"]);
-              return closure_2_11(HeaderShared.HeaderTextButton, obj);
-            },
+            const obj = { navigation, type: "back" };
+            return unpackModuleId(PressableNavigatorModalIconDefault, obj);
+          },
         headerBackVisible: false
       };
       navigation.setOptions(obj2);
+    }
+  }
+  componentDidUpdate(arg0, submitting) {
+    let hasChanges;
+    const self = this;
+    navigation = this.props.navigation;
+    ({ submitting, hasChanges } = this.state);
+    if (submitting !== submitting.submitting) {
+      if (submitting) {
+        if (!submitting.submitting) {
+          let obj = {
+            headerRight() {
+                    return closure_1_11(navigation(dependencyMap[12]).HeaderSubmittingIndicator, {});
+                  },
+            headerLeft() {
+                    return null;
+                  },
+            headerBackVisible: false
+          };
+          navigation.setOptions(obj);
+        }
+      }
+      if (hasChanges) {
+        const obj2 = {
+          headerRight() {
+                let intl;
+                const obj = { onPress: self.handleSave, label: intl.string(intl7.t["R3BPH+"]) };
+                const HeaderTextButton = HeaderShared.HeaderTextButton;
+                intl = intl7.intl;
+                return unpackModuleId(HeaderTextButton, obj);
+              },
+          headerLeft() {
+                let intl;
+                const obj = { onPress: self.handleCancelChanges, label: intl.string(intl7.t["ETE/oC"]) };
+                const HeaderTextButton = HeaderShared.HeaderTextButton;
+                intl = intl7.intl;
+                return unpackModuleId(HeaderTextButton, obj);
+              },
+          headerBackVisible: false
+        };
+        navigation.setOptions(obj2);
+      } else {
+        const obj3 = {
+          headerRight: "Array",
+          headerLeft() {
+                const obj = { navigation, type: "back" };
+                return unpackModuleId(PressableNavigatorModalIconDefault, obj);
+              },
+          headerBackVisible: null
+        };
+        navigation.setOptions(obj3);
+      }
+    }
+  }
+  render() {
+    let Icon;
+    let Stack;
+    let TableRow;
+    let TableRow2;
+    let TableRow3;
+    let aPIBaseURL;
+    let avatar;
+    let channel;
+    let copied;
+    let errors;
+    let first;
+    let intl2;
+    let intl3;
+    let intl4;
+    let intl5;
+    let intl6;
+    let items;
+    let items1;
+    let name;
+    let obj10;
+    let obj12;
+    let obj2;
+    let obj4;
+    let obj7;
+    let obj8;
+    let stringResult;
+    let tmp3Result;
+    let tmp3Result3;
+    let tmp7;
+    const self = this;
+    const tmp = closure_14(this.context);
+    const props = this.props;
+    const webhookId = props.webhookId;
+    const token = props.token;
+    const state = this.state;
+    ({ name, channel, errors } = state);
+    const webhookType = props.webhookType;
+    ({ avatar, copied } = state);
+    const Text = webhookId(4886).Text;
+    const intl = webhookId(1126).intl;
+    const string = intl.string;
+    const t = webhookId(1126).t;
+    if (copied) {
+      stringResult = string(t.t5VZ88);
     } else {
-      const obj3 = {
-        headerRight: "Array",
-        headerLeft() {
-              return closure_2_11(PressableNavigatorModalIconDefault, { navigation, type: "back" });
-            },
-        headerBackVisible: null
+      stringResult = string(t.OpuAlK);
+    }
+    let obj = { style: tmp.form, contentContainerStyle: items, children: tmp7(Stack, obj2) };
+    items = [{ paddingTop: 16 }, self.props.contentContainerStyle];
+    const tmp2Result = closure_11(Text, { variant: "text-sm/medium", color: "text-link", children: stringResult });
+    const Form = tmp3(8895).Form;
+    obj2 = { spacing: nativeDefault.space.PX_24, style: { paddingHorizontal: tmp.row.padding }, children: items1 };
+    Stack = tmp3(5593).Stack;
+    let tmp2Result3 = null;
+    tmp7 = closure_12;
+    if (webhookType !== constants.CHANNEL_FOLLOWER) {
+      const obj3 = { iconProps: obj4, label: intl2.string(webhookId(1126).t["7+5GQa"]) };
+      obj4 = {
+        onUpload: self.handleGuildIconUpload,
+        type: "avatar",
+        icon: avatar,
+        name,
+        makeURL(avatar) {
+            const obj = AvatarUtils;
+            const obj2 = { id: webhookId, avatar, discriminator: metroImportAll };
+            return obj.getUserAvatarURL(obj2);
+          },
+        disabled: false
       };
-      navigation.setOptions(obj3);
+      const tmp8Result = IconLabelBlockDefault;
+      intl2 = tmp3(1126).intl;
+      tmp2Result3 = tmp2(tmp8Result, obj3);
     }
-  }
-};
-prototype["render"] = function render() {
-  const self = this;
-  const tmp = closure_14(this.context);
-  const props = this.props;
-  const webhookId = props.webhookId;
-  const token = props.token;
-  const state = this.state;
-  ({ name, channel, errors } = state);
-  ({ avatar, copied } = state);
-  const intl = webhookId(1115).intl;
-  const string = intl.string;
-  const t = webhookId(1115).t;
-  if (copied) {
-    let stringResult = string(t.t5VZ88);
-  } else {
-    stringResult = string(t.OpuAlK);
-  }
-  const obj = { style: tmp.form, contentContainerStyle: null, children: null };
-  const items = [{ paddingTop: 16 }, self.props.contentContainerStyle];
-  obj.contentContainerStyle = items;
-  const obj2 = { spacing: nativeDefault.space.PX_24, style: { paddingHorizontal: tmp.row.padding }, children: null };
-  let tmp2Result3 = null;
-  if (props.webhookType !== constants.CHANNEL_FOLLOWER) {
-    const obj3 = { iconProps: null, label: null };
-    const obj4 = {
-      onUpload: self.handleGuildIconUpload,
-      type: "avatar",
-      icon: avatar,
-      name,
-      makeURL(avatar) {
-          return AvatarUtils.getUserAvatarURL({ id: webhookId, avatar, discriminator });
-        },
-      disabled: false
-    };
-    obj3.iconProps = obj4;
-    const intl2 = tmp3(1115).intl;
-    obj3.label = intl2.string(tmp3(1115).t["7+5GQa"]);
-    tmp2Result3 = tmp2(IconLabelBlockDefault, obj3);
-    const tmp8Result = IconLabelBlockDefault;
-  }
-  const items1 = [tmp2Result3, , , , ];
-  const obj5 = { label: null, value: null, onChange: null, errorMessage: null };
-  const intl3 = tmp3(1115).intl;
-  obj5.label = intl3.string(webhookId(1115).t.ukdxuo);
-  obj5.value = name;
-  obj5.onChange = self.handleNameChange;
-  let first;
-  if (undefined !== errors) {
-    if (undefined !== errors.name) {
-      first = errors.name[0];
+    items1 = [tmp2Result3, , , , ];
+    const obj5 = { label: intl3.string(webhookId(1126).t.ukdxuo), value: name, onChange: self.handleNameChange, errorMessage: first };
+    const TextInput = tmp3(6098).TextInput;
+    intl3 = tmp3(1126).intl;
+    first = undefined;
+    if (undefined !== errors) {
+      if (undefined !== errors.name) {
+        first = errors.name[0];
+      }
     }
+    items1[1] = closure_11(TextInput, obj5);
+    const obj6 = { title: intl4.string(webhookId(1126).t.GK18KJ), hasIcons: true, children: closure_11(TableRow, obj7) };
+    const TableRowGroup = tmp3(6074).TableRowGroup;
+    intl4 = tmp3(1126).intl;
+    obj7 = { label: tmp3Result.computeChannelName(channel, UserStore, RelationshipStore), arrow: true, onPress: self.handleChannelChange, icon: closure_11(Icon, obj8) };
+    TableRow = tmp3(5993).TableRow;
+    tmp3Result = webhookId(5043);
+    obj8 = { size: webhookId(1188).Icon.Sizes.CUSTOM, source: tmp3Result3.getChannelIcon(channel), style: tmp.channelIcon };
+    Icon = tmp3(1188).Icon;
+    tmp3Result3 = webhookId(5812);
+    items1[2] = closure_11(TableRowGroup, obj6);
+    let tmp2Result4 = null;
+    if (null != token) {
+      const obj9 = { title: intl5.string(webhookId(1126).t.SFdvF1), hasIcons: false, children: closure_11(TableRow2, obj10) };
+      const TableRowGroup2 = tmp3(6074).TableRowGroup;
+      intl5 = tmp3(1126).intl;
+      obj10 = { label: "" + aPIBaseURL + closure_7.WEBHOOK_INTEGRATION(webhookId, token), onPress: self.handleCopyUrl, trailing: tmp2Result };
+      TableRow2 = tmp3(5993).TableRow;
+      const tmp3Result4 = webhookId(1282);
+      aPIBaseURL = tmp3Result4.getAPIBaseURL(false);
+      const _HermesInternal = HermesInternal;
+      tmp2Result4 = tmp2(TableRowGroup2, obj9);
+    }
+    items1[3] = tmp2Result4;
+    const obj11 = { hasIcons: false, children: closure_11(TableRow3, obj12) };
+    const TableRowGroup3 = tmp3(6074).TableRowGroup;
+    obj12 = { variant: "danger", onPress: self.handleDeleteWebhook, label: intl6.string(webhookId(1126).t.oyYWHE) };
+    TableRow3 = tmp3(5993).TableRow;
+    intl6 = tmp3(1126).intl;
+    items1[4] = closure_11(TableRowGroup3, obj11);
+    return closure_11(Form, obj);
   }
-  obj5.errorMessage = first;
-  items1[1] = closure_11(webhookId(6210).TextInput, obj5);
-  const obj6 = { title: null, hasIcons: true, children: null };
-  const intl4 = tmp3(1115).intl;
-  obj6.title = intl4.string(webhookId(1115).t.GK18KJ);
-  const obj7 = { label: null, arrow: true, onPress: null, icon: null };
-  const tmp2Result = closure_11(webhookId(4841).Text, { variant: "text-sm/medium", color: "text-link", children: stringResult });
-  const tmp7 = closure_12;
-  obj7.label = webhookId(4998).computeChannelName(channel, UserStore, RelationshipStore);
-  obj7.onPress = self.handleChannelChange;
-  const obj8 = { size: webhookId(1177).Icon.Sizes.CUSTOM, source: null, style: null };
-  const tmp3Result = webhookId(4998);
-  obj8.source = webhookId(5519).getChannelIcon(channel);
-  obj8.style = tmp.channelIcon;
-  obj7.icon = closure_11(webhookId(1177).Icon, obj8);
-  obj6.children = closure_11(webhookId(6103).TableRow, obj7);
-  items1[2] = closure_11(webhookId(6185).TableRowGroup, obj6);
-  let tmp2Result4 = null;
-  if (null != token) {
-    const obj9 = { title: null, hasIcons: false, children: null };
-    const intl5 = tmp3(1115).intl;
-    obj9.title = intl5.string(tmp3(1115).t.SFdvF1);
-    const obj10 = { label: null, onPress: null, trailing: null };
-    const aPIBaseURL = tmp3(1271).getAPIBaseURL(false);
-    const _HermesInternal = HermesInternal;
-    obj10.label = "" + aPIBaseURL + closure_7.WEBHOOK_INTEGRATION(webhookId, token);
-    obj10.onPress = self.handleCopyUrl;
-    obj10.trailing = tmp2Result;
-    obj9.children = tmp2(tmp3(6103).TableRow, obj10);
-    tmp2Result4 = tmp2(tmp3(6185).TableRowGroup, obj9);
-    const tmp3Result4 = tmp3(1271);
+}
+const prototype = EditWebhook.prototype;
+EditWebhook.contextType = native.ThemeContext;
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let items;
+  const obj = react2;
+  const cResult = obj.c(6);
+  const obj2 = useNavigation;
+  navigation = obj2.useNavigation();
+  if (cResult[0] === navigation) {
+    let tmp5;
+    let tmp9;
+    let tmp12;
+    if (cResult[1] === arg0) {
+      tmp5 = cResult[2];
+    }
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const tmp11 = unpackModuleId(NavScrim.NavScrim, {});
+      cResult[3] = tmp11;
+      tmp9 = tmp11;
+    } else {
+      tmp9 = cResult[3];
+    }
+    if (cResult[4] !== tmp5) {
+      const obj3 = { children: items };
+      items = [tmp5, tmp9];
+      const tmp15 = closure_12(map1, obj3);
+      cResult[4] = tmp5;
+      cResult[5] = tmp15;
+      tmp12 = tmp15;
+    } else {
+      tmp12 = cResult[5];
+    }
+    return tmp12;
   }
-  items1[3] = tmp2Result4;
-  const obj11 = { hasIcons: false, children: null };
-  const obj12 = { variant: "danger", onPress: self.handleDeleteWebhook, label: null };
-  const intl6 = tmp3(1115).intl;
-  obj12.label = intl6.string(webhookId(1115).t.oyYWHE);
-  obj11.children = closure_11(webhookId(6103).TableRow, obj12);
-  items1[4] = closure_11(webhookId(6185).TableRowGroup, obj11);
-  obj2.children = items1;
-  obj.children = tmp7(webhookId(5463).Stack, obj2);
-  return closure_11(webhookId(8239).Form, obj);
-};
-EditWebhook.contextType = fn(4569).ThemeContext;
-const size = fn(2);
+  const obj4 = { navigation };
+  const merged = Object.assign(arg0);
+  const tmp7 = unpackModuleId(EditWebhook, obj4);
+  cResult[0] = navigation;
+  cResult[1] = arg0;
+  cResult[2] = tmp7;
+  tmp5 = tmp7;
+}) : ((arg0) => {
+  let items;
+  const obj2 = { children: items };
+  const obj = useNavigation;
+  const obj3 = { navigation: obj.useNavigation() };
+  const merged = Object.assign(arg0);
+  items = [unpackModuleId(EditWebhook, obj3), unpackModuleId(NavScrim.NavScrim, {})];
+  return closure_12(map1, obj2);
+});
 const result = size.fileFinishedImporting("modules/integration_settings/native/IntegrationsSettingsEditWebhook.tsx");
 
-export default function ConnectedEditWebhook(arg0) {
-  const obj2 = { children: null };
-  const merged = Object.assign(arg0);
-  const items = [closure_1_11(EditWebhook, { navigation: useNavigation.useNavigation() }), closure_1_11(NavScrim.NavScrim, {})];
-  obj2.children = items;
-  return closure_1_12(map1, obj2);
-};
+export default tmp6;

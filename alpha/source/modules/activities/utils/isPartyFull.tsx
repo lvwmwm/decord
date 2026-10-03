@@ -1,22 +1,16 @@
-// Module ID: 11470
-// Function ID: 11471
+// Module ID: 11389
+// Function ID: 11390
 // Name: isPartyFull
 // Dependencies: [2]
 // Exports: isPartyFull
 
-// Module 11470 (isPartyFull)
+// Module 11389 (isPartyFull)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/isPartyFull.tsx");
 
 export const isPartyFull = function isPartyFull(partySize) {
+  let maxPartySize;
   ({ partySize, maxPartySize } = partySize);
-  let tmp = partySize > -1;
-  if (tmp) {
-    tmp = maxPartySize > 0;
-  }
-  if (tmp) {
-    tmp = partySize >= maxPartySize;
-  }
-  return tmp;
+  return partySize > -1 && maxPartySize > 0 && partySize >= maxPartySize;
 };

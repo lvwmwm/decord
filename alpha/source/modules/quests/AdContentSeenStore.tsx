@@ -1,32 +1,39 @@
-// Module ID: 14821
-// Function ID: 14822
+// Module ID: 14877
+// Function ID: 14878
 // Name: AdContentSeenStore
-// Dependencies: [32, 7286, 7289, 5949, 7285, 504, 573, 2]
+// Dependencies: [32, 7184, 7187, 5630, 7183, 504, 584, 2]
 
-// Module 14821 (AdContentSeenStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AdCreativeType from "AdCreativeType" /* 5949 */;
-import QuestDataUtils from "QuestDataUtils" /* 7285 */;
-import _slicedToArray from "module_32" /* 32 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7286 */;
-import QuestStore from "QuestStore" /* 7289 */;
+// Module 14877 (AdContentSeenStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import AdCreativeType from "AdCreativeType" /* 5630 */;
+import QuestDataUtils from "QuestDataUtils" /* 7183 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7184 */;
+import QuestStore from "QuestStore" /* 7187 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let set;
+
 function getOrCreateSet(QUEST) {
-  value = map.get(QUEST);
+  let value = map.get(QUEST);
   if (null == value) {
     const _Set = Set;
-    const set = new Set();
+    const self = this;
+    const self2 = this;
+    set = new Set();
     const result = map.set(QUEST, set);
     value = set;
   }
   return value;
 }
 function syncWithQuestStore() {
+  let tmp5;
+  let tmp7;
   const quests = QuestStore.quests;
   const obj = getOrCreateSet(AdCreativeType.AdCreativeType.QUEST);
   let flag = false;
+  const tmp = quests[Symbol.iterator]();
   while (tmp !== undefined) {
     let tmp4 = _slicedToArray(tmp2, 2);
     [tmp5, tmp7] = tmp4;
@@ -65,7 +72,7 @@ function syncWithQuestStore() {
     if (quests.size > 0) {
       for (const item10063 of obj) {
         let tmp24 = item10063;
-        value = quests.get(item10063);
+        let value = quests.get(item10063);
         let isQuestExpiredResult = null == value;
         if (!isQuestExpiredResult) {
           let obj3 = QuestDataUtils;
@@ -80,9 +87,10 @@ function syncWithQuestStore() {
     }
   }
   const obj4 = getOrCreateSet(AdCreativeType.AdCreativeType.QUEST_HOME_HERO);
+  const obj5 = AdDeliveryStore;
   if (null != AdDeliveryStore.getLastFetchedQuestHomeHero()) {
     if (obj4.size > 0) {
-      const questHomeHero = AdDeliveryStore.getQuestHomeHero();
+      const questHomeHero = obj5.getQuestHomeHero();
       for (const item10097 of obj4) {
         let tmp36 = item10097;
         let tmp37 = null != questHomeHero;
@@ -100,65 +108,68 @@ function syncWithQuestStore() {
   return flag;
 }
 let map = new Map();
-const PersistedStore = initializeDefault.PersistedStore;
+const PersistedStore = get_initializedDefault.PersistedStore;
 class AdContentSeenStore extends PersistedStore {
-}
-const prototype = AdContentSeenStore.prototype;
-prototype["initialize"] = function initialize(seenContentIds) {
-  const self = this;
-  this.waitFor(QuestStore, AdDeliveryStore);
-  map = new Map();
-  if (null != seenContentIds) {
-    const _Object = Object;
-    const entries = Object.entries(seenContentIds.seenContentIds);
-    const tmp20 = entries[Symbol.iterator]();
-    while (tmp20 !== undefined) {
-      let tmp7 = _slicedToArray(tmp4, 2);
-      let tmp8 = tmp7[1];
-      let _Number = Number;
-      let _Set = Set;
-      let tmp11 = new.target;
-      let tmp12 = new.target;
-      let NumberResult = Number(tmp7[0]);
-      let set = new Set(tmp8);
-      let result = map.set(NumberResult, set);
+  initialize(seenContentIds) {
+    const self = this;
+    this.waitFor(QuestStore, AdDeliveryStore);
+    map = new Map();
+    if (null != seenContentIds) {
+      const _Object = Object;
+      const entries = Object.entries(seenContentIds.seenContentIds);
+      const tmp18 = entries[Symbol.iterator]();
+      while (tmp18 !== undefined) {
+        let tmp7 = _slicedToArray(tmp4, 2);
+        let tmp8 = tmp7[1];
+        let _Number = Number;
+        set = map.set;
+        let _Set = Set;
+        let self2 = this;
+        let self3 = this;
+        let NumberResult = Number(tmp7[0]);
+        let set1 = new Set(tmp8);
+        let result = set(NumberResult, set1);
+        continue;
+      }
+    }
+    const items = [QuestStore, AdDeliveryStore];
+    self.syncWith(items, syncWithQuestStore);
+  }
+  getState() {
+    const seenContentIds = {};
+    const tmp2 = map[Symbol.iterator]();
+    while (tmp2 !== undefined) {
+      let tmp5 = _slicedToArray(tmp3, 2);
+      let _Array = Array;
+      seenContentIds[tmp5[0]] = Array.from(tmp5[1]);
       continue;
     }
+    return { seenContentIds };
   }
-  const items = [QuestStore, AdDeliveryStore];
-  self.syncWith(items, syncWithQuestStore);
-};
-prototype["getState"] = function getState() {
-  const seenContentIds = {};
-  while (tmp2 !== undefined) {
-    let tmp5 = _slicedToArray(tmp3, 2);
-    let _Array = Array;
-    seenContentIds[tmp5[0]] = Array.from(tmp5[1]);
-    continue;
+  hasSeen(arg0, arg1) {
+    const value = map.get(arg0);
+    let flag;
+    if (value != null) {
+      flag = value.has(arg1);
+    }
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
   }
-  return { seenContentIds };
-};
-prototype["hasSeen"] = function hasSeen(arg0, arg1) {
-  value = map.get(arg0);
-  let flag;
-  if (value != null) {
-    flag = value.has(arg1);
-  }
-  if (flag == null) {
-    flag = false;
-  }
-  return flag;
-};
+}
+const prototype = AdContentSeenStore.prototype;
 AdContentSeenStore.displayName = "AdContentSeenStore";
 AdContentSeenStore.persistKey = "AdContentSeenStore";
-const adContentSeenStore = new AdContentSeenStore(DispatcherDefault, {
+let obj = {
   AD_CONTENT_MARK_SEEN: function handleMarkSeen(adCreativeType) {
     const obj = getOrCreateSet(adCreativeType.adCreativeType);
     let flag = false;
-    for (const item10013 of tmp) {
-      let tmp2 = item10013;
+    const contentIds = adCreativeType.contentIds;
+    for (const item10013 of contentIds) {
+      let tmp = item10013;
       if (!obj.has(item10013)) {
-        let addResult = obj.add(tmp2);
+        let addResult = obj.add(tmp);
         flag = true;
       }
       continue;
@@ -166,7 +177,7 @@ const adContentSeenStore = new AdContentSeenStore(DispatcherDefault, {
     return flag;
   },
   AD_CONTENT_MARK_UNSEEN: function handleMarkUnseen(adCreativeType) {
-    value = map.get(adCreativeType.adCreativeType);
+    const value = map.get(adCreativeType.adCreativeType);
     if (null == value) {
       return false;
     } else {
@@ -183,8 +194,8 @@ const adContentSeenStore = new AdContentSeenStore(DispatcherDefault, {
       return flag;
     }
   }
-});
-const size = fn(2);
+};
+const adContentSeenStore = new AdContentSeenStore(DispatcherDefault, obj);
 let result = size.fileFinishedImporting("modules/quests/AdContentSeenStore.tsx");
 
 export default adContentSeenStore;

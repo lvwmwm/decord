@@ -1,13 +1,13 @@
-// Module ID: 4747
-// Function ID: 4748
-// Name: GuildThemeGuildIdOverrideContext
+// Module ID: 4762
+// Function ID: 4763
+// Name: react
 // Dependencies: [19, 2]
 
-// Module 4747 (GuildThemeGuildIdOverrideContext)
-import noop from "module_19" /* 19 */;
+// Module 4762 (react)
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const context = noop.createContext(undefined);
-const size = fn(2);
+const context = react.createContext(undefined);
 const result = size.fileFinishedImporting("modules/guild_themes/native/GuildThemeGuildIdOverrideContext.tsx");
 
 export default context;

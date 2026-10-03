@@ -1,31 +1,32 @@
-// Module ID: 6894
-// Function ID: 6895
+// Module ID: 6792
+// Function ID: 6793
 // Name: ReportUtils
-// Dependencies: [2044, 4498, 1372, 1074, 2]
+// Dependencies: [2051, 4509, 1377, 1085, 2]
 // Exports: canDeleteAndReportMessage, canReportAndDeleteInChannel, canReportMessage, canReportUser
 
-// Module 6894 (ReportUtils)
-import ChannelStore from "ChannelStore" /* 2044 */;
-import PermissionStore from "PermissionStore" /* 4498 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 6792 (ReportUtils)
+import ChannelStore from "ChannelStore" /* 2051 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
+import size from "module_2" /* 2 */;
 
-const Constants = fn(1074);
+let c3;
+let closure_4;
+let hasOwnProperty;
 ({ ChannelTypes: c3, Permissions: closure_4, MessageTypesSets: hasOwnProperty } = Constants);
-const size = fn(2);
 let result = size.fileFinishedImporting("utils/ReportUtils.tsx");
 
 export const canReportUser = function canReportUser(user) {
   if (null == user) {
     return false;
   } else {
+    const id = user.id;
     const currentUser = UserStore.getCurrentUser();
     let tmp3 = null != currentUser;
     if (tmp3) {
-      let tmp4 = currentUser.id !== user.id;
-      if (tmp4) {
-        tmp4 = true !== user.system;
-      }
-      tmp3 = tmp4;
+      tmp3 = currentUser.id !== id && true !== user.system;
+      const tmp4 = currentUser.id !== id && true !== user.system;
     }
     return tmp3;
   }
@@ -33,21 +34,19 @@ export const canReportUser = function canReportUser(user) {
 export const canReportMessage = function canReportMessage(message) {
   let tmp = null != message;
   if (tmp) {
-    const NON_REPORTABLE = constants3.NON_REPORTABLE;
+    const NON_REPORTABLE = hasOwnProperty.NON_REPORTABLE;
     tmp = !NON_REPORTABLE.has(message.type);
   }
   if (tmp) {
     const author = message.author;
     let flag = false;
     if (null != author) {
+      const id = author.id;
       const currentUser = UserStore.getCurrentUser();
       let tmp5 = null != currentUser;
       if (tmp5) {
-        let tmp6 = currentUser.id !== author.id;
-        if (tmp6) {
-          tmp6 = true !== author.system;
-        }
-        tmp5 = tmp6;
+        tmp5 = currentUser.id !== id && true !== author.system;
+        const tmp6 = currentUser.id !== id && true !== author.system;
       }
       flag = tmp5;
     }
@@ -73,21 +72,19 @@ export const canDeleteAndReportMessage = function canDeleteAndReportMessage(type
   if (tmp) {
     let tmp2 = null != type;
     if (tmp2) {
-      const NON_REPORTABLE = constants3.NON_REPORTABLE;
+      const NON_REPORTABLE = hasOwnProperty.NON_REPORTABLE;
       tmp2 = !NON_REPORTABLE.has(type.type);
     }
     if (tmp2) {
       const author = type.author;
       let flag = false;
       if (null != author) {
+        const id = author.id;
         const currentUser = UserStore.getCurrentUser();
         let tmp6 = null != currentUser;
         if (tmp6) {
-          let tmp7 = currentUser.id !== author.id;
-          if (tmp7) {
-            tmp7 = true !== author.system;
-          }
-          tmp6 = tmp7;
+          tmp6 = currentUser.id !== id && true !== author.system;
+          const tmp7 = currentUser.id !== id && true !== author.system;
         }
         flag = tmp6;
       }

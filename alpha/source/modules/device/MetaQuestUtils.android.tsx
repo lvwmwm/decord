@@ -1,23 +1,27 @@
-// Module ID: 1610
-// Function ID: 1611
+// Module ID: 1615
+// Function ID: 1616
 // Name: MetaQuestUtils
-// Dependencies: [1341, 1363, 2]
+// Dependencies: [1352, 1368, 2]
 // Exports: isMetaQuest, isQuestRelease
 
-// Module 1610 (MetaQuestUtils)
-import ClientInfoUtilsAll from "ClientInfoUtils" /* 1363 */;
-import NativeMetaQuestModule_mod from "NativeMetaQuestModule" /* 1341 */;
+// Module 1615 (MetaQuestUtils)
+import react_nativeAll from "react-native" /* 1368 */;
+import react_native_mod from "react-native" /* 1352 */;
+import size from "module_2" /* 2 */;
 
-let NativeMetaQuestModule = NativeMetaQuestModule_mod;
-NativeMetaQuestModule = NativeMetaQuestModule.isMetaQuest();
-const size = fn(2);
+let constants;
+
+let react_native = react_native_mod;
+react_native = react_native.isMetaQuest();
 const result = size.fileFinishedImporting("modules/device/MetaQuestUtils.android.tsx");
 
 export const isMetaQuest = function isMetaQuest() {
-  return NativeMetaQuestModule.isMetaQuest();
+  const obj = react_native;
+  return obj.isMetaQuest();
 };
 export const isQuestRelease = function isQuestRelease() {
-  constants = ClientInfoUtilsAll.getConstants();
+  const obj = react_nativeAll;
+  constants = obj.getConstants();
   let flag;
   if (constants != null) {
     const ReleaseChannel = constants.ReleaseChannel;
@@ -30,4 +34,4 @@ export const isQuestRelease = function isQuestRelease() {
   }
   return flag;
 };
-export const isThumbstickScrollDevice = NativeMetaQuestModule;
+export const isThumbstickScrollDevice = react_native;

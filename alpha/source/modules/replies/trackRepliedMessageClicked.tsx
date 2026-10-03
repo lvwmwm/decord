@@ -1,14 +1,14 @@
-// Module ID: 11359
-// Function ID: 11360
+// Module ID: 11274
+// Function ID: 11275
 // Name: trackRepliedMessageClicked
-// Dependencies: [7199, 1074, 8403, 5025, 2]
+// Dependencies: [7102, 1085, 8407, 5070, 2]
 // Exports: default
 
-// Module 11359 (trackRepliedMessageClicked)
-import Constants from "Constants" /* 1074 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5025 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 7199 */;
-import maybeCreateMessageRecordFromSnapshotDefault from "maybeCreateMessageRecordFromSnapshot" /* 8403 */;
+// Module 11274 (trackRepliedMessageClicked)
+import Constants from "Constants" /* 1085 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5070 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 7102 */;
+import maybeCreateMessageRecordFromSnapshotDefault from "maybeCreateMessageRecordFromSnapshot" /* 8407 */;
 import size from "module_2" /* 2 */;
 
 const ReferencedMessageState = ReferencedMessageStore.ReferencedMessageState;
@@ -23,10 +23,12 @@ export default function trackRepliedMessageClicked(messageReference, state, chan
   }
   let tmp3 = null;
   let tmp4 = null;
+  const tmp2 = ReferencedMessageState;
   if (state.state === ReferencedMessageState.LOADED) {
-    const tmp9 = maybeCreateMessageRecordFromSnapshotDefault(state.message);
-    const content = tmp9.content;
+    const tmp10 = maybeCreateMessageRecordFromSnapshotDefault(state.message);
+    const content = tmp10.content;
     let num;
+    const tmp5 = tmp10.attachments.length > 0 || tmp10.embeds.length > 0 || tmp10.stickerItems.length > 0 || tmp10.stickers.length > 0;
     if (content != null) {
       num = content.length;
     }
@@ -34,9 +36,12 @@ export default function trackRepliedMessageClicked(messageReference, state, chan
       num = 0;
     }
     tmp3 = num;
-    tmp4 = tmp9.attachments.length > 0 || tmp9.embeds.length > 0 || tmp9.stickerItems.length > 0 || tmp9.stickers.length > 0;
-    const tmp5 = tmp9.attachments.length > 0 || tmp9.embeds.length > 0 || tmp9.stickerItems.length > 0 || tmp9.stickers.length > 0;
+    tmp4 = tmp5;
   }
   const guild_id = channel_id.guild_id;
-  AppAnalyticsUtils.trackWithMetadata(AnalyticEvents.REPLIED_MESSAGE_CLICKED, { guild_id, channel_id: channel_id.id, reply_message_id: messageReference.id, replied_message_id: message_id, replied_message_is_loaded: state.state === ReferencedMessageState.LOADED, replied_message_has_media: tmp4, replied_message_length: tmp3 });
+  const trackWithMetadata = AppAnalyticsUtils.trackWithMetadata;
+  const REPLIED_MESSAGE_CLICKED = AnalyticEvents.REPLIED_MESSAGE_CLICKED;
+  AppAnalyticsUtils;
+  const obj = { guild_id, channel_id: channel_id.id, reply_message_id: messageReference.id, replied_message_id: message_id, replied_message_is_loaded: state.state === tmp2.LOADED, replied_message_has_media: tmp4, replied_message_length: tmp3 };
+  trackWithMetadata(REPLIED_MESSAGE_CLICKED, obj);
 };

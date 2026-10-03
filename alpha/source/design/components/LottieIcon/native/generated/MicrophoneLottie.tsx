@@ -1,21 +1,51 @@
-// Module ID: 14157
-// Function ID: 14158
+// Module ID: 14225
+// Function ID: 14226
 // Name: MicrophoneLottie
-// Dependencies: [19, 21, 9600, 14158, 2]
+// Dependencies: [19, 21, 558, 576, 14226, 9629, 2]
 
-// Module 14157 (MicrophoneLottie)
-import LottieIcon from "LottieIcon" /* 9600 */;
-import _mod14158 from "module_14158" /* 14158 */;
-import noop from "module_19" /* 19 */;
+// Module 14225 (MicrophoneLottie)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import LottieIcon2 from "LottieIcon" /* 9629 */;
+import AssetRegistry from "AssetRegistry" /* 14226 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
+const jsx = Fragment.jsx;
 const layers = ["I"];
 const items = [{ name: "mute", start: 0, duration: 70 }, { name: "unmute", start: 100, duration: 70 }];
-const size = fn(2);
+const forwardRef = react.forwardRef;
+const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = AssetRegistry;
+    cResult[0] = tmpResult;
+    first = tmpResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg0) {
+    let tmp6;
+    if (cResult[2] === ref) {
+      tmp6 = cResult[3];
+    }
+    return tmp6;
+  }
+  const LottieIcon = tmp(9629).LottieIcon;
+  const merged = Object.assign(arg0);
+  const tmp8 = <LottieIcon dotLottie={first} ref={arg1} layers={layers} markers={items} />;
+  cResult[1] = arg0;
+  cResult[2] = ref;
+  cResult[3] = tmp8;
+  tmp6 = tmp8;
+}) : ((arg0, ref) => {
+  const LottieIcon = LottieIcon2.LottieIcon;
+  const merged = Object.assign(arg0);
+  return <LottieIcon dotLottie={AssetRegistry} ref={arg1} layers={layers} markers={items} />;
+}));
 const result = size.fileFinishedImporting("design/components/LottieIcon/native/generated/MicrophoneLottie.tsx");
 
-export const MicrophoneLottie = noop.forwardRef((arg0, ref) => {
-  const merged = Object.assign(arg0);
-  return jsx(LottieIcon.LottieIcon, { dotLottie: _mod14158, ref, layers, markers: items });
-});
+export const MicrophoneLottie = forwardRefResult;

@@ -1,43 +1,50 @@
-// Module ID: 7575
-// Function ID: 7576
+// Module ID: 7619
+// Function ID: 7620
 // Name: useAuthorWithProcessedColor
-// Dependencies: [17, 5258, 7576, 2]
+// Dependencies: [17, 5304, 7620, 2]
 // Exports: getMessageAuthorWithProcessedColor, getUserAuthorWithProcessedColor
 
-// Module 7575 (useAuthorWithProcessedColor)
-import _mod17 from "module_17" /* 17 */;
-import useMessageAuthor from "useMessageAuthor" /* 5258 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7576 */;
+// Module 7619 (useAuthorWithProcessedColor)
+import react_native from "react-native" /* 17 */;
+import useMessageAuthor from "useMessageAuthor" /* 5304 */;
 import size from "module_2" /* 2 */;
 
-const processColor = _mod17.processColor;
+let tmp;
+const enhanced_role_colors_EnhancedRoleColorUtils = tmp(7620);
+const processColor = react_native.processColor;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/useAuthorWithProcessedColor.tsx");
 
 export const getMessageAuthorWithProcessedColor = function getMessageAuthorWithProcessedColor(message) {
-  const messageAuthor = useMessageAuthor.getMessageAuthor(message);
-  const colorString = messageAuthor.colorString;
-  const obj2 = { nick: messageAuthor.nick, colorString: null, colorStrings: null, guildId: null };
+  let colorStrings;
+  let guildId;
   let tmp4;
+  let tmpResult;
+  const obj = useMessageAuthor;
+  const messageAuthor = obj.getMessageAuthor(message);
+  const colorString = messageAuthor.colorString;
+  const obj2 = { nick: messageAuthor.nick, colorString: tmp4, colorStrings: tmpResult.processColorStrings(colorStrings), guildId };
+  tmp4 = undefined;
   ({ colorStrings, guildId } = messageAuthor);
   if (null != colorString) {
     tmp4 = processColor(colorString);
   }
-  obj2.colorString = tmp4;
-  obj2.colorStrings = enhanced_role_colors_EnhancedRoleColorUtils.processColorStrings(colorStrings);
-  obj2.guildId = guildId;
+  tmpResult = enhanced_role_colors_EnhancedRoleColorUtils;
   return obj2;
 };
 export const getUserAuthorWithProcessedColor = function getUserAuthorWithProcessedColor(user, channel) {
-  const userAuthor = useMessageAuthor.getUserAuthor(user, channel);
-  const colorString = userAuthor.colorString;
-  const obj2 = { nick: userAuthor.nick, colorString: null, colorStrings: null, guildId: null };
+  let colorStrings;
+  let guildId;
   let tmp4;
+  let tmpResult;
+  const obj = useMessageAuthor;
+  const userAuthor = obj.getUserAuthor(user, channel);
+  const colorString = userAuthor.colorString;
+  const obj2 = { nick: userAuthor.nick, colorString: tmp4, colorStrings: tmpResult.processColorStrings(colorStrings), guildId };
+  tmp4 = undefined;
   ({ colorStrings, guildId } = userAuthor);
   if (null != colorString) {
     tmp4 = processColor(colorString);
   }
-  obj2.colorString = tmp4;
-  obj2.colorStrings = enhanced_role_colors_EnhancedRoleColorUtils.processColorStrings(colorStrings);
-  obj2.guildId = guildId;
+  tmpResult = enhanced_role_colors_EnhancedRoleColorUtils;
   return obj2;
 };

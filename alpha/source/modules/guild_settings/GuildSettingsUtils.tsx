@@ -1,27 +1,30 @@
-// Module ID: 17692
-// Function ID: 17693
+// Module ID: 17778
+// Function ID: 17779
 // Name: GuildSettingsUtils
-// Dependencies: [2102, 1074, 1086, 16896, 2]
+// Dependencies: [2107, 1085, 1097, 16985, 2]
 // Exports: getPowerfulPermissionTitles, isRolePowerful
 
-// Module 17692 (GuildSettingsUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 2102 */;
-import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 16896 */;
-import Constants from "Constants" /* 1074 */;
+// Module 17778 (GuildSettingsUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2107 */;
+import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 16985 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
+let closure_4;
+let hasOwnProperty;
 const hasPermission = GuildRoleRecord.hasPermission;
 ({ ElevatedPermissions: closure_4, ElevatedPermissionsList: hasOwnProperty } = Constants);
 const result = size.fileFinishedImporting("modules/guild_settings/GuildSettingsUtils.tsx");
 
 export const isRolePowerful = function isRolePowerful(role) {
-  return BigFlagUtilsAll.hasAny(role.permissions, React4);
+  const obj = BigFlagUtilsAll;
+  return obj.hasAny(role.permissions, React3);
 };
 export const getPowerfulPermissionTitles = function getPowerfulPermissionTitles(arg0, arg1) {
   const items = [];
   PermissionSpecUtilsDefault;
-  for (const item10015 of closure_1_5) {
+  for (const item10015 of hasOwnProperty) {
     let str = item10015;
     if (hasPermission(arg1, item10015)) {
       let arr = items.push(tmp2[str.toString(str)].title);

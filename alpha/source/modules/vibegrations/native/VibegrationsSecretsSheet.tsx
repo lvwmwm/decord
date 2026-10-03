@@ -1,66 +1,372 @@
-// Module ID: 16622
-// Function ID: 16623
+// Module ID: 16707
+// Function ID: 16708
 // Name: VibegrationsSecretsSheet
-// Dependencies: [5, 32, 19, 17, 12851, 21, 4845, 576, 6588, 6796, 1115, 3714, 4809, 6804, 6756, 4841, 5465, 6210, 2]
-// Exports: default
+// Dependencies: [5, 32, 19, 17, 12904, 21, 4890, 587, 558, 576, 6471, 6688, 1126, 3723, 6644, 4886, 5594, 6098, 6701, 2]
 
-// Module 16622 (VibegrationsSecretsSheet)
-import nativeDefault from "native" /* 576 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 16707 (VibegrationsSecretsSheet)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 587 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12904 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let c1, c3, closure_1, importDefault, projectId;
 
-const require = fn;
-const View = fn(17).View;
-const VibegrationsConnectionStore = fn(12851);
-({ sendUserMessage: closure_7, submitProjectSecrets: closure_8 } = VibegrationsConnectionStore);
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const VibegrationsSecretsSheet = "VibegrationsSecretsSheet";
-const createStyles = fn(4845);
-let closure_12 = createStyles.createStyles((paddingBottom) => {
-  const obj = { container: { gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom }, copyRow: null, copyInfo: null };
-  const obj2 = { gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom };
-  obj.copyRow = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
-  const obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
-  obj.copyInfo = { flex: 1, gap: nativeDefault.space.PX_4 };
+let c10;
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let _slicedToArray = _slicedToArray_mod;
+const View = react_native.View;
+({ sendUserMessage: metroImportDefault, submitProjectSecrets: metroImportAll } = VibegrationsConnectionStore);
+({ jsx: c9, jsxs: c10 } = Fragment);
+let closure_11 = createStyles.createStyles((paddingBottom) => {
+  const obj = { container: { gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom }, copyRow: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 }, copyInfo: { flex: 1, gap: nativeDefault.space.PX_4 } };
+  ({ gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom });
+  ({ flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 });
+  ({ flex: 1, gap: nativeDefault.space.PX_4 });
   return obj;
 });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsSecretsSheet.tsx");
-
-export default function VibegrationsSecretsSheet(projectId) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+  let closure_4;
+  let closure_6;
+  let closure_7;
+  let closure_8;
+  let closure_9;
+  let first;
+  let first1;
+  let first2;
+  let ref;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp6;
+  let tmp = ref;
+  let obj = projectId(ref[9]);
+  const cResult = obj.c(56);
+  projectId = projectId.projectId;
+  const request = projectId.request;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj2 = { includeKeyboardHeight: true };
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  const tmp4 = M(require("useSafeAreaInsetsKeyboardAware")(first).insets.bottom);
+  importDefault = tmp4;
+  let obj3 = first2;
+  ref = first2.useRef(null);
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj4 = {};
+    cResult[1] = obj4;
+    tmp6 = obj4;
+  } else {
+    tmp6 = cResult[1];
+  }
+  [first1, _slicedToArray] = obj3.useState(tmp6);
+  [first2, closure_6] = obj3.useState(false);
+  [r10055, closure_7] = _slicedToArray(obj3.useState(false), 2);
+  const tmp11 = _slicedToArray(obj3.useState(false), 2);
+  [closure_8, closure_9] = obj3.useState(null);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    class I {
+      constructor(arg0) {
+        let closure_0 = arg0;
+        const obj = projectId(ref[11]);
+        obj.copy(arg0, () => closure_9(closure_0));
+      }
+    }
+    cResult[2] = I;
+    tmp13 = I;
+  } else {
+    class I {
+      constructor(arg0) {
+        let closure_0 = arg0;
+        const obj = projectId(ref[11]);
+        obj.copy(arg0, () => closure_9(closure_0));
+      }
+    }
+  }
+  I = tmp13;
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class M {
+      constructor(arg0, arg1) {
+        let closure_0 = arg0;
+        closure_1 = arg1;
+        closure_7(false);
+        closure_4((arg0) => {
+          const obj = {};
+          const merged = Object.assign(arg0);
+          obj[closure_0] = closure_1;
+          return obj;
+        });
+      }
+    }
+    cResult[3] = M;
+    tmp14 = M;
+  } else {
+    class M {
+      constructor(arg0, arg1) {
+        let closure_0 = arg0;
+        closure_1 = arg1;
+        closure_7(false);
+        closure_4((arg0) => {
+          const obj = {};
+          const merged = Object.assign(arg0);
+          obj[closure_0] = closure_1;
+          return obj;
+        });
+      }
+    }
+  }
+  M = tmp14;
+  if (cResult[4] === request.fields) {
+    class M {
+      constructor(arg0, arg1) {
+        let closure_0 = arg0;
+        closure_1 = arg1;
+        closure_7(false);
+        closure_4((arg0) => {
+          const obj = {};
+          const merged = Object.assign(arg0);
+          obj[closure_0] = closure_1;
+          return obj;
+        });
+      }
+    }
+    let closure_13 = tmp18;
+    let closure_14 = tmp19;
+    if (cResult[10] === arr.length > 0) {
+      class M {
+        constructor(arg0, arg1) {
+          let closure_0 = arg0;
+          closure_1 = arg1;
+          closure_7(false);
+          closure_4((arg0) => {
+            const obj = {};
+            const merged = Object.assign(arg0);
+            obj[closure_0] = closure_1;
+            return obj;
+          });
+        }
+      }
+    }
+    const tmp21 = first1;
+    let closure_0 = first1(function*(arg0, value) {
+      if (c3 === 2) {
+        c3 = 3;
+        let str = "Generator functions may not be called on executing generators";
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === c1) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              const tmp39 = closure_1_13;
+              if (tmp39) {
+                const tmp13 = first2;
+                if (!tmp13) {
+                  closure_1_6(true);
+                  closure_1_7(false);
+                  ref = 1;
+                  const obj4 = {
+                    secrets: Object.fromEntries(arr.map((item) => {
+                                  const items = [item, ];
+                                  const str = closure_1_3[item];
+                                  items[1] = str.trim();
+                                  return items;
+                                }))
+                  };
+                  const _Object = Object;
+                  c1 = 2;
+                  c3 = 1;
+                  const obj5 = { value: closure_2_8(tmp, obj4), done: false };
+                  return obj5;
+                }
+              }
+            }
+          } else if (1 === tmp4) {
+            ref = 0;
+            closure_1_7(true);
+            closure_1_6(false);
+            c3 = 3;
+            const obj6 = { value: undefined, done: true };
+            return obj6;
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            ref = 0;
+            c3 = 3;
+            const obj = { value, done: true };
+            return obj;
+          } else {
+            let lM98yZ;
+            ref = 0;
+            const intl = tmp(ref[12]).intl;
+            const string = intl.string;
+            const tmp37 = closure_2_1(ref[13]);
+            const tmp29 = closure_2_7;
+            const tmp30 = tmp;
+            if (closure_1_14) {
+              lM98yZ = tmp37.pu8e3p;
+            } else {
+              lM98yZ = tmp37.lM98yZ;
+            }
+            tmp29(tmp30, string(lM98yZ));
+            const current = ref.current;
+            if (current != null) {
+              current.closeActionSheet();
+            }
+          }
+          c3 = 3;
+          return { value: "IconComponent", done: "IconComponent" };
+        } catch (tmp21) {
+          if (0 === ref) {
+            c3 = 3;
+            throw tmp21;
+          } else {
+            c1 = 1;
+          }
+        }
+      }
+    });
+    const fn = function() {
+      return closure_0(...arguments);
+    };
+    cResult[10] = arr.length > 0;
+    cResult[11] = arr;
+    cResult[12] = arr.length < request.fields.length;
+    cResult[13] = projectId;
+    cResult[14] = first2;
+    cResult[15] = first1;
+    cResult[16] = fn;
+  }
+  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    class J {
+      constructor(name) {
+        return name.name;
+      }
+    }
+    cResult[7] = J;
+    tmp15 = J;
+  } else {
+    class J {
+      constructor(name) {
+        return name.name;
+      }
+    }
+  }
+  if (cResult[8] !== first1) {
+    class D {
+      constructor(arg0) {
+        let str = first1[arg0];
+        if (str == null) {
+          str = "";
+        }
+        return "" !== str.trim();
+      }
+    }
+    cResult[8] = first1;
+    cResult[9] = D;
+    tmp16 = D;
+  } else {
+    class D {
+      constructor(arg0) {
+        let str = first1[arg0];
+        if (str == null) {
+          str = "";
+        }
+        return "" !== str.trim();
+      }
+    }
+  }
+  const fields = request.fields;
+  const mapped = fields.map(tmp15);
+  const found = mapped.filter(tmp16);
+  cResult[4] = request.fields;
+  cResult[5] = first1;
+  cResult[6] = found;
+}) : ((projectId) => {
+  let BottomSheetTitleHeader;
+  let _undefined;
+  let _undefined2;
+  let _undefined22;
+  let c7;
+  let c8;
+  let c9;
+  let closure_4;
+  let closure_6;
+  let first;
+  let first1;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let items1;
+  let obj2;
+  let obj3;
+  let tmp10;
+  let tmp17;
+  let tmp18;
   projectId = projectId.projectId;
   const request = projectId.request;
   importDefault = undefined;
-  let first;
-  let first1;
-  noop = undefined;
+  let ref;
+  first = undefined;
+  _slicedToArray = undefined;
+  first1 = undefined;
+  closure_6 = undefined;
   c7 = undefined;
   c8 = undefined;
-  closure_12 = undefined;
-  const tmp3 = closure_12(require("useSafeAreaInsetsKeyboardAware")({ includeKeyboardHeight: true }).insets.bottom);
+  c9 = undefined;
+  closure_11 = undefined;
+  let tmp = importDefault;
+  let tmp2 = ref;
+  let tmp3 = closure_11(require("useSafeAreaInsetsKeyboardAware")({ includeKeyboardHeight: true }).insets.bottom);
   importDefault = tmp3;
-  const tmp4 = first1(noop.useState({}), 2);
-  first = tmp4[0];
-  asyncGeneratorStep = tmp4[1];
-  const tmp6 = first1(noop.useState(false), 2);
-  first1 = tmp6[0];
-  noop = tmp6[1];
-  const tmp8 = first1(noop.useState(false), 2);
-  closure_6 = tmp8[1];
-  [c7, c8] = first1(noop.useState(null), 2);
-  closure_9 = noop.useCallback((arg0) => {
-    closure_0 = arg0;
-    projectId(first[9]).copy(arg0, () => c8(closure_0));
+  ref = first1.useRef(null);
+  [first, _slicedToArray] = first1.useState({});
+  [first1, closure_6] = first1.useState(false);
+  [tmp10, c7] = _slicedToArray(first1.useState(false), 2);
+  const tmp9 = _slicedToArray(first1.useState(false), 2);
+  [c8, c9] = _slicedToArray(first1.useState(null), 2);
+  const tmp11 = _slicedToArray(first1.useState(null), 2);
+  let closure_10 = first1.useCallback((arg0) => {
+    let closure_0 = arg0;
+    const obj = projectId(ref[11]);
+    obj.copy(arg0, () => c9(closure_0));
   }, []);
-  closure_10 = noop.useCallback((arg0, arg1) => {
-    closure_0 = arg0;
+  closure_11 = first1.useCallback((arg0, arg1) => {
+    let closure_0 = arg0;
     closure_1 = arg1;
-    closure_6(false);
-    closure_3((arg0) => {
+    _undefined(false);
+    closure_4((arg0) => {
       const obj = {};
       const merged = Object.assign(arg0);
       obj[closure_0] = closure_1;
@@ -76,190 +382,222 @@ export default function VibegrationsSecretsSheet(projectId) {
     }
     return "" !== str.trim();
   });
-  closure_12 = tmp10;
-  closure_13 = tmp11;
-  let items = [found.length > 0, found, found.length < request.fields.length, projectId, first1, first];
-  const callback = noop.useCallback(asyncGeneratorStep(async (arg0, value) => {
-    if (c4 === 2) {
-      c4 = 3;
+  let closure_13 = tmp12;
+  let tmp13 = found.length < request.fields.length;
+  let closure_14 = tmp13;
+  let items = [tmp12, found, tmp13, projectId, first1, first];
+  const callback = first1.useCallback(first(function*(arg0, value) {
+    let c2;
+    let closure_0;
+    let v1;
+    if (c3 === 2) {
+      c3 = 3;
+      let str = "Generator functions may not be called on executing generators";
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp7 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
-        c4 = 2;
-        if (0 === v3) {
+        c3 = 2;
+        if (0 === c1) {
           if (arg0 === 1) {
-            c4 = 3;
+            c3 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c4 = 3;
+            c3 = 3;
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            if (closure_12) {
-              if (!first1) {
-                closure_5(true);
-                closure_6(false);
-                c3 = 2;
-                const obj4 = { secrets: null };
+            const tmp39 = closure_13;
+            if (tmp39) {
+              const tmp13 = first1;
+              if (!tmp13) {
+                closure_6(true);
+                _undefined(false);
+                ref = 1;
+                const obj4 = {
+                  secrets: Object.fromEntries(found.map((item) => {
+                                const items = [item, ];
+                                const str = closure_1_3[item];
+                                items[1] = str.trim();
+                                return items;
+                              }))
+                };
                 const _Object = Object;
-                obj4.secrets = Object.fromEntries(found.map((item) => {
-                  const items = [item, closure_1_2[item].trim()];
-                  return items;
-                }));
-                v3 = 3;
-                c4 = 1;
+                c1 = 2;
+                c3 = 1;
                 const obj5 = { value: _undefined2(projectId, obj4), done: false };
                 return obj5;
               }
             }
-            c4 = 3;
           }
-        } else if (1 !== tmp8) {
-          if (2 === tmp8) {
-            c3 = 1;
-            closure_128_6(true);
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 0;
-            closure_128_5(false);
-            c4 = 3;
-            const obj6 = { value, done: true };
-            return obj6;
-          } else {
-            const intl = tmp4(tmp37[10]).intl;
-            const tmp54 = v3(tmp37[11]);
-            if (closure_128_13) {
-              let lM98yZ = tmp54.pu8e3p;
-            } else {
-              lM98yZ = tmp54.lM98yZ;
-            }
-            _undefined(closure_128_0, intl.string(lM98yZ));
-            v3(tmp37[12]).hideActionSheet(closure_1_11);
-            c3 = 1;
-            const obj = v3(tmp37[12]);
-          }
-          c3 = 0;
-          closure_128_5(false);
-        }
-        c3 = 0;
-        closure_128_5(false);
-        throw tmp37;
-      } catch (tmp37) {
-        if (tmp5 === c3) {
-          c4 = tmp3;
-          throw tmp37;
-        } else if (tmp2 === tmp39) {
-          v3 = tmp2;
+        } else if (1 === tmp4) {
+          ref = 0;
+          closure_128_7(true);
+          closure_128_6(false);
+          c3 = 3;
+          const obj6 = { value: undefined, done: true };
+          return obj6;
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          ref = 0;
+          c3 = 3;
+          const obj = { value, done: true };
+          return obj;
         } else {
-          v3 = tmp;
+          let lM98yZ;
+          ref = 0;
+          const intl = tmp(ref[12]).intl;
+          const string = intl.string;
+          const tmp37 = c1(ref[13]);
+          const tmp29 = _undefined;
+          const tmp30 = closure_128_0;
+          if (closure_128_14) {
+            lM98yZ = tmp37.pu8e3p;
+          } else {
+            lM98yZ = tmp37.lM98yZ;
+          }
+          tmp29(tmp30, string(lM98yZ));
+          const current = closure_128_2.current;
+          if (current != null) {
+            current.closeActionSheet();
+          }
+        }
+        c3 = 3;
+        return { value: "IconComponent", done: "IconComponent" };
+      } catch (tmp21) {
+        if (0 === ref) {
+          c3 = 3;
+          throw tmp21;
+        } else {
+          c1 = 1;
         }
       }
     }
   }), items);
-  let obj = { startExpanded: true, header: null, children: null };
-  let obj2 = { title: null };
-  let intl = projectId(first[10]).intl;
-  obj2.title = intl.string(require("module_3714").ACvhVC);
-  obj.header = closure_9(projectId(first[14]).BottomSheetTitleHeader, obj2);
-  let obj3 = { style: tmp3.container, children: null };
-  let tmp13Result = null;
+  let obj = { ref, startExpanded: true, keyboardShouldPersistTaps: "handled", header: c9(BottomSheetTitleHeader, obj2), children: tmp17(tmp18, obj3) };
+  const ActionSheet = projectId(ref[18]).ActionSheet;
+  obj2 = { title: intl.string(require("module_3723").ACvhVC) };
+  BottomSheetTitleHeader = projectId(ref[14]).BottomSheetTitleHeader;
+  intl = projectId(ref[12]).intl;
+  obj3 = { style: tmp3.container, children: items1 };
+  let tmp15Result = null;
+  tmp17 = closure_10;
+  tmp18 = closure_6;
   if (null != request.note) {
-    tmp13Result = null;
+    let str = "";
+    tmp15Result = null;
     if ("" !== request.note) {
       let obj4 = { variant: "text-sm/normal", color: "text-default", children: request.note };
-      tmp13Result = tmp13(tmp14(tmp2[15]).Text, obj4);
+      tmp15Result = tmp15(tmp16(tmp2[15]).Text, obj4);
     }
   }
-  let items1 = [tmp13Result, , , , , , ];
-  let obj5 = { variant: "text-xs/normal", color: "text-muted", children: null };
-  const intl2 = tmp14(tmp2[10]).intl;
-  obj5.children = intl2.string(require("module_3714").p0Ay4J);
-  items1[1] = closure_9(projectId(first[15]).Text, obj5);
-  let tmp13Result3 = null;
+  items1 = [tmp15Result, , , , , , ];
+  let obj5 = { variant: "text-xs/normal", color: "text-muted", children: intl2.string(tmp(tmp2[13]).p0Ay4J) };
+  const Text = tmp16(tmp2[15]).Text;
+  intl2 = tmp16(tmp2[12]).intl;
+  items1[1] = c9(Text, obj5);
+  let tmp15Result3 = null;
   if (request.fields.length > 1) {
-    let obj6 = { variant: "text-xs/normal", color: "text-muted", children: null };
-    const intl3 = tmp14(tmp2[10]).intl;
-    obj6.children = intl3.string(tmp(tmp2[11]).LpnmXm);
-    tmp13Result3 = tmp13(tmp14(tmp2[15]).Text, obj6);
+    let obj6 = { variant: "text-xs/normal", color: "text-muted", children: intl3.string(tmp(tmp2[13]).LpnmXm) };
+    const Text2 = tmp16(tmp2[15]).Text;
+    intl3 = tmp16(tmp2[12]).intl;
+    tmp15Result3 = tmp15(Text2, obj6);
   }
-  items1[2] = tmp13Result3;
+  items1[2] = tmp15Result3;
   let copy_values = request.copy_values;
   if (copy_values == null) {
     copy_values = [];
   }
   items1[3] = copy_values.map((children) => {
-    value = children;
-    const obj = { style: closure_1.copyRow, children: null };
-    const obj2 = { style: closure_1.copyInfo, children: null };
-    const items = [closure_9(projectId(first[15]).Text, { variant: "text-xs/semibold", color: "text-muted", children: children.label }), closure_9(projectId(first[15]).Text, { variant: "text-xs/normal", color: "text-default", children: children.value })];
-    obj2.children = items;
-    const items1 = [closure_10(closure_6, obj2), ];
-    const intl = projectId(first[10]).intl;
-    if (c7 === children.value) {
-      let OpuAlK = tmp4(tmp5[10]).t.t5VZ88;
+    let OpuAlK;
+    let items;
+    let items1;
+    const obj2 = { style: closure_1.copyInfo, children: items };
+    items = [, ];
+    const obj = { style: closure_1.copyRow, children: items1 };
+    const obj3 = { variant: "text-xs/semibold", color: "text-muted", children: children.label };
+    items[0] = _undefined22(projectId(ref[15]).Text, obj3);
+    const obj4 = { variant: "text-xs/normal", color: "text-default", children: children.value };
+    items[1] = _undefined22(projectId(ref[15]).Text, obj4);
+    items1 = [closure_10(closure_6, obj2), ];
+    const Button = projectId(ref[16]).Button;
+    const intl = projectId(ref[12]).intl;
+    const string = intl.string;
+    const tmp = closure_10;
+    const tmp2 = closure_6;
+    const tmp3 = _undefined22;
+    if (c8 === children.value) {
+      OpuAlK = tmp4(tmp5[12]).t.t5VZ88;
     } else {
-      OpuAlK = tmp4(tmp5[10]).t.OpuAlK;
+      OpuAlK = tmp4(tmp5[12]).t.OpuAlK;
     }
-    items1[1] = closure_9(projectId(first[16]).Button, {
+    const obj5 = {
       variant: "secondary",
       size: "sm",
-      text: intl.string(OpuAlK),
+      text: string(OpuAlK),
       onPress() {
-        return closure_9(value.value);
+        return closure_10(children.value);
       }
-    });
-    obj.children = items1;
-    return closure_10(closure_6, obj, children.label);
+    };
+    items1[1] = tmp3(Button, obj5);
+    return tmp(tmp2, obj, children.label);
   });
   const fields1 = request.fields;
   items1[4] = fields1.map((label) => {
-    const obj = { label: label.label, description: null, secureTextEntry: true, autoComplete: "off", autoCapitalize: "none", autoCorrect: false, value: null, onChange: null, disabled: null };
     let hint;
+    let str2;
+    const obj = {
+      label: label.label,
+      description: hint,
+      secureTextEntry: true,
+      autoComplete: "off",
+      autoCapitalize: "none",
+      autoCorrect: false,
+      value: str2,
+      onChange(arg0) {
+        return closure_11(label.name, arg0);
+      },
+      disabled: first1
+    };
+    hint = undefined;
+    const TextInput = projectId(ref[17]).TextInput;
+    const tmp = c9;
     if (null != label.hint) {
       if ("" !== label.hint) {
         hint = label.hint;
       }
     }
-    obj.description = hint;
-    let str2 = first[label.name];
+    str2 = first[label.name];
     if (str2 == null) {
       str2 = "";
     }
-    obj.value = str2;
-    obj.onChange = function onChange(arg0) {
-      return closure_10(label.name, arg0);
-    };
-    obj.disabled = first1;
-    return closure_9(projectId(first[17]).TextInput, obj, label.name);
+    return tmp(TextInput, obj, label.name);
   });
-  let tmp13Result4 = null;
-  if (tmp8[0]) {
-    const obj7 = { variant: "text-xs/normal", color: "text-feedback-critical", children: null };
-    const intl4 = tmp14(tmp2[10]).intl;
-    obj7.children = intl4.string(tmp(tmp2[11])["4nT7Lo"]);
-    tmp13Result4 = tmp13(tmp14(tmp2[15]).Text, obj7);
+  let tmp15Result4 = null;
+  if (tmp10) {
+    const obj7 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl4.string(tmp(tmp2[13])["4nT7Lo"]) };
+    const Text3 = tmp16(tmp2[15]).Text;
+    intl4 = tmp16(tmp2[12]).intl;
+    tmp15Result4 = tmp15(Text3, obj7);
   }
-  items1[5] = tmp13Result4;
-  const obj8 = { text: null, variant: "primary", loading: null, disabled: null, onPress: null };
-  const intl5 = tmp14(tmp2[10]).intl;
-  obj8.text = intl5.string(require("module_3714")["8SWZaW"]);
-  obj8.loading = first1;
-  obj8.disabled = found.length <= 0;
-  obj8.onPress = callback;
-  items1[6] = closure_9(projectId(first[16]).Button, obj8);
-  obj3.children = items1;
-  obj.children = closure_10(closure_6, obj3);
-  return closure_9(projectId(first[13]).ActionSheet, obj);
-};
+  items1[5] = tmp15Result4;
+  const obj8 = { text: intl5.string(tmp(tmp2[13])["8SWZaW"]), variant: "primary", loading: first1, disabled: found.length <= 0, onPress: callback };
+  let Button = tmp16(tmp2[16]).Button;
+  intl5 = tmp16(tmp2[12]).intl;
+  items1[6] = c9(Button, obj8);
+  return c9(ActionSheet, obj);
+});
+const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsSecretsSheet.tsx");
+
+export default tmp4;
 export const VIBEGRATIONS_SECRETS_SHEET_KEY = "VibegrationsSecretsSheet";

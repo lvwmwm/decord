@@ -1,45 +1,80 @@
-// Module ID: 14485
-// Function ID: 14486
+// Module ID: 14520
+// Function ID: 14521
 // Name: AccountPhoneSetting
-// Dependencies: [1372, 7590, 6650, 504, 5048, 6649, 1981, 6652, 11215, 1115, 2]
+// Dependencies: [1377, 7634, 6540, 558, 576, 504, 5093, 6539, 1987, 6542, 11129, 1126, 2]
 
-// Module 14485 (AccountPhoneSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5048 */;
-import PhoneActionCreators from "PhoneActionCreators" /* 6652 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 14520 (AccountPhoneSetting)
+import react from "react" /* 576 */;
+import intl2 from "intl" /* 1126 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import PhoneConstants from "PhoneConstants" /* 6540 */;
+import PhoneActionCreators from "PhoneActionCreators" /* 6542 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import UserStore from "UserStore" /* 1377 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_4 = fn(6650).PHONE_VERIFICATION_MODAL_KEY;
-const SettingBuilders = fn(11215);
-const pressable = SettingBuilders.createPressable({
-  useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.dEYpSt);
-  },
-  parent: fn(7590).MobileUserSettings.ACCOUNT,
-  useTrailing: function useAccountPhoneSettingTrailing() {
+let currentUser;
+
+let tmp;
+const get_initialized = tmp(504);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let closure_4 = PhoneConstants.PHONE_VERIFICATION_MODAL_KEY;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    return initialize.useStateFromStores(items, () => {
+    const fn = function s() {
       currentUser = currentUser.getCurrentUser();
       let phone;
       if (currentUser != null) {
         phone = currentUser.phone;
       }
       return phone;
-    });
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  const items = [UserStore];
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => {
+    currentUser = currentUser.getCurrentUser();
+    let phone;
+    if (currentUser != null) {
+      phone = currentUser.phone;
+    }
+    return phone;
+  });
+});
+let obj = {
+  useTitle() {
+    const intl = intl2.intl;
+    return intl.string(intl2.t.dEYpSt);
   },
+  parent: MobileUserSettings.ACCOUNT,
+  useTrailing: tmp2,
   onPress: function onAccountPhoneSettingPress() {
-    const obj2 = { allowDeletePhone: true, reason: null };
-    const obj = ModalActionCreatorsDefault;
-    obj2.reason = PhoneActionCreators.ChangePhoneReason.USER_SETTINGS_UPDATE;
-    obj.pushLazy(asyncRequireImpl(6649, dependencyMap.paths), obj2, closure_4);
+    const pushLazy = ModalActionCreatorsDefault.pushLazy;
+    const obj = { allowDeletePhone: true, reason: PhoneActionCreators.ChangePhoneReason.USER_SETTINGS_UPDATE };
+    ModalActionCreatorsDefault;
+    const tmp2 = asyncRequire(6539, dependencyMap.paths);
+    pushLazy(tmp2, obj, closure_4);
   },
   withArrow: true
-});
-const size = fn(2);
+};
+const pressable = SettingBuilders.createPressable(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountPhoneSetting.tsx");
 
 export default pressable;

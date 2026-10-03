@@ -1,241 +1,90 @@
 // Module ID: 1722
 // Function ID: 1723
-// Dependencies: [41, 42, 93, 95, 98, 1710, 1709]
+// Dependencies: [1683]
+// Exports: withDelay
 
 // Module 1722
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+const require = globalThis.__r;
+let _require, dependencyMap;
 
-const ComplexAnimationBuilder = fn;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
+let __initData = { code: "function pnpm_delayTs2(){const{_nextAnimation,delayMs,getReduceMotionForAnimation,reduceMotion}=this.__closure;const nextAnimation=typeof _nextAnimation==='function'?_nextAnimation():_nextAnimation;function delay(animation,now){const{startTime:startTime,started:started,previousAnimation:previousAnimation}=animation;const current=animation.current;if(now-startTime>=delayMs||animation.reduceMotion){if(!started){nextAnimation.onStart(nextAnimation,current,now,previousAnimation);animation.previousAnimation=null;animation.started=true;}const finished=nextAnimation.onFrame(nextAnimation,now);animation.current=nextAnimation.current;return finished;}else if(previousAnimation){const finished=previousAnimation.finished||previousAnimation.onFrame(previousAnimation,now);animation.current=previousAnimation.current;if(finished){animation.previousAnimation=null;}}return false;}function onStart(animation,value,now,previousAnimation){animation.startTime=now;animation.started=false;animation.current=value;if(previousAnimation===animation){animation.previousAnimation=previousAnimation.previousAnimation;}else{animation.previousAnimation=previousAnimation;}if(nextAnimation.reduceMotion===undefined){nextAnimation.reduceMotion=animation.reduceMotion;}}const callback=function(finished){if(nextAnimation.callback){nextAnimation.callback(finished);}};return{isHigherOrder:true,onFrame:delay,onStart:onStart,current:nextAnimation.current,callback:callback,previousAnimation:null,startTime:0,started:false,reduceMotion:getReduceMotionForAnimation(reduceMotion)};}" };
+let fn = function n(delayMs, _nextAnimation, reduceMotion) {
+  _require = delayMs;
+  dependencyMap = _nextAnimation;
+  __initData = reduceMotion;
+  let obj = require("module_1683");
+  const fn = function s() {
+    let closure_0;
+    let obj2;
+    let tmp;
+    let tmpResult = closure_1;
+    if (typeof closure_1 === "function") {
+      tmpResult = tmp();
     }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
+    delayMs = tmpResult;
+    let obj = {
+      isHigherOrder: true,
+      onFrame: function delay(started, arg1) {
+        let current;
+        let previousAnimation;
+        ({ previousAnimation, current } = started);
+        started = started.started;
+        if (arg1 - started.startTime < delayMs) {
+          if (!started.reduceMotion) {
+            if (previousAnimation) {
+              started.current = previousAnimation.current;
+              const tmp = previousAnimation.finished || previousAnimation.onFrame(previousAnimation, arg1);
+              if (tmp) {
+                started.previousAnimation = null;
+              }
+            }
+            return false;
+          }
+        }
+        if (!started) {
+          delayMs.onStart(delayMs, current, arg1, previousAnimation);
+          started.previousAnimation = null;
+          started.started = true;
+        }
+        started.current = delayMs.current;
+        return delayMs.onFrame(delayMs, arg1);
+      },
+      onStart(reduceMotion, current, startTime, previousAnimation) {
+        reduceMotion.startTime = startTime;
+        reduceMotion.started = false;
+        reduceMotion.current = current;
+        if (previousAnimation === reduceMotion) {
+          previousAnimation = previousAnimation.previousAnimation;
+        }
+        reduceMotion.previousAnimation = previousAnimation;
+        if (undefined === closure_0.reduceMotion) {
+          tmp.reduceMotion = reduceMotion.reduceMotion;
+        }
+      },
+      current: tmpResult.current,
+      callback(arg0) {
+        const obj = closure_0;
+        if (closure_0.callback) {
+          obj.callback(arg0);
+        }
+      },
+      previousAnimation: null,
+      startTime: 0,
+      started: false,
+      reduceMotion: obj2.getReduceMotionForAnimation(closure_2)
     };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-class ComplexAnimationBuilder {
-  constructor() {
-    self = this;
-    tmp = c2(this, ComplexAnimationBuilder);
-    tmp2 = closure_4;
-    obj = closure_4(ComplexAnimationBuilder);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(ComplexAnimationBuilder, fn(1709).BaseAnimationBuilder);
-const entry = {
-  key: "easing",
-  value: function easing(easingV) {
-    this.easingV = easingV;
-    return this;
-  }
+    obj2 = delayMs(closure_1[0]);
+    return obj;
+  };
+  let obj2 = { _nextAnimation, delayMs, getReduceMotionForAnimation: require("module_1683").getReduceMotionForAnimation, reduceMotion };
+  fn.__closure = obj2;
+  fn.__workletHash = 7904568249320;
+  fn.__initData = __initData;
+  return obj.defineAnimation(_nextAnimation, fn);
 };
-let items = [
-  entry,
-  {
-    key: "rotate",
-    value: function rotate(rotateV) {
-      this.rotateV = rotateV;
-      return this;
-    }
-  },
-  {
-    key: "springify",
-    value: function springify(durationV) {
-      return { durationV, type: ComplexAnimationBuilder(1710).withSpring };
-    }
-  },
-  {
-    key: "dampingRatio",
-    value: function dampingRatio(dampingRatioV) {
-      this.dampingRatioV = dampingRatioV;
-      return this;
-    }
-  },
-  {
-    key: "damping",
-    value: function damping(dampingV) {
-      this.dampingV = dampingV;
-      return this;
-    }
-  },
-  {
-    key: "mass",
-    value: function mass(massV) {
-      this.massV = massV;
-      return this;
-    }
-  },
-  {
-    key: "stiffness",
-    value: function stiffness(stiffnessV) {
-      this.stiffnessV = stiffnessV;
-      return this;
-    }
-  },
-  {
-    key: "overshootClamping",
-    value: function overshootClamping(overshootClampingV) {
-      this.overshootClampingV = overshootClampingV;
-      return this;
-    }
-  },
-  {
-    key: "restDisplacementThreshold",
-    value: function restDisplacementThreshold(restDisplacementThresholdV) {
-      this.restDisplacementThresholdV = restDisplacementThresholdV;
-      return this;
-    }
-  },
-  {
-    key: "restSpeedThreshold",
-    value: function restSpeedThreshold(restSpeedThresholdV) {
-      this.restSpeedThresholdV = restSpeedThresholdV;
-      return this;
-    }
-  },
-  {
-    key: "withInitialValues",
-    value: function withInitialValues(initialValues) {
-      this.initialValues = initialValues;
-      return this;
-    }
-  },
-  {
-    key: "getAnimationAndConfig",
-    value: function getAnimationAndConfig() {
-      const self = this;
-      ({ easingV, durationV, rotateV } = this);
-      if (this.type) {
-        let withTiming = self.type;
-      } else {
-        withTiming = ComplexAnimationBuilder(1710).withTiming;
-      }
-      const obj = {};
-      ({ dampingV, dampingRatioV, massV, stiffnessV, overshootClampingV, restDisplacementThresholdV, restSpeedThresholdV } = self);
-      if (withTiming === ComplexAnimationBuilder(1710).withTiming) {
-        if (easingV) {
-          obj.easing = easingV;
-        }
-      }
-      const items = [{ variableName: "damping", value: dampingV }, { variableName: "dampingRatio", value: dampingRatioV }, { variableName: "mass", value: massV }, { variableName: "stiffness", value: stiffnessV }, { variableName: "overshootClamping", value: overshootClampingV }, { variableName: "restDisplacementThreshold", value: restDisplacementThresholdV }, { variableName: "restSpeedThreshold", value: restSpeedThresholdV }, { variableName: "duration", value: durationV }, { variableName: "rotate", value: rotateV }];
-      const item = items.forEach((value) => {
-        value = value.value;
-        if (value) {
-          obj[tmp] = value;
-        }
-      });
-      const items1 = [withTiming, obj];
-      return items1;
-    }
-  }
-];
-const entry1 = {
-  key: "easing",
-  value: function easing(arg0) {
-    const instance = this.createInstance();
-    return instance.easing(arg0);
-  }
-};
-let items1 = [
-  entry1,
-  {
-    key: "rotate",
-    value: function rotate(arg0) {
-      const instance = this.createInstance();
-      return instance.rotate(arg0);
-    }
-  },
-  {
-    key: "springify",
-    value: function springify(arg0) {
-      const instance = this.createInstance();
-      return instance.springify(arg0);
-    }
-  },
-  {
-    key: "dampingRatio",
-    value: function dampingRatio(arg0) {
-      const instance = this.createInstance();
-      return instance.dampingRatio(arg0);
-    }
-  },
-  {
-    key: "damping",
-    value: function damping(arg0) {
-      const instance = this.createInstance();
-      return instance.damping(arg0);
-    }
-  },
-  {
-    key: "mass",
-    value: function mass(arg0) {
-      const instance = this.createInstance();
-      return instance.mass(arg0);
-    }
-  },
-  {
-    key: "stiffness",
-    value: function stiffness(arg0) {
-      const instance = this.createInstance();
-      return instance.stiffness(arg0);
-    }
-  },
-  {
-    key: "overshootClamping",
-    value: function overshootClamping(arg0) {
-      const instance = this.createInstance();
-      return instance.overshootClamping(arg0);
-    }
-  },
-  {
-    key: "restDisplacementThreshold",
-    value: function restDisplacementThreshold(arg0) {
-      const instance = this.createInstance();
-      return instance.restDisplacementThreshold(arg0);
-    }
-  },
-  {
-    key: "restSpeedThreshold",
-    value: function restSpeedThreshold(arg0) {
-      const instance = this.createInstance();
-      return instance.restSpeedThreshold(arg0);
-    }
-  },
-  {
-    key: "withInitialValues",
-    value: function withInitialValues(arg0) {
-      const instance = this.createInstance();
-      return instance.withInitialValues(arg0);
-    }
-  }
-];
+let obj = { defineAnimation: require("module_1683").defineAnimation, getReduceMotionForAnimation: require("module_1683").getReduceMotionForAnimation };
+fn.__closure = obj;
+fn.__workletHash = 10965419997083;
+fn.__initData = { code: "function pnpm_delayTs1(delayMs,_nextAnimation,reduceMotion){const{defineAnimation,getReduceMotionForAnimation}=this.__closure;return defineAnimation(_nextAnimation,function(){'worklet';const nextAnimation=typeof _nextAnimation==='function'?_nextAnimation():_nextAnimation;function delay(animation,now){const{startTime:startTime,started:started,previousAnimation:previousAnimation}=animation;const current=animation.current;if(now-startTime>=delayMs||animation.reduceMotion){if(!started){nextAnimation.onStart(nextAnimation,current,now,previousAnimation);animation.previousAnimation=null;animation.started=true;}const finished=nextAnimation.onFrame(nextAnimation,now);animation.current=nextAnimation.current;return finished;}else if(previousAnimation){const finished=previousAnimation.finished||previousAnimation.onFrame(previousAnimation,now);animation.current=previousAnimation.current;if(finished){animation.previousAnimation=null;}}return false;}function onStart(animation,value,now,previousAnimation){animation.startTime=now;animation.started=false;animation.current=value;if(previousAnimation===animation){animation.previousAnimation=previousAnimation.previousAnimation;}else{animation.previousAnimation=previousAnimation;}if(nextAnimation.reduceMotion===undefined){nextAnimation.reduceMotion=animation.reduceMotion;}}const callback=function(finished){if(nextAnimation.callback){nextAnimation.callback(finished);}};return{isHigherOrder:true,onFrame:delay,onStart:onStart,current:nextAnimation.current,callback:callback,previousAnimation:null,startTime:0,started:false,reduceMotion:getReduceMotionForAnimation(reduceMotion)};});}" };
 
-export const ComplexAnimationBuilder = _createClass(ComplexAnimationBuilder, items, items1);
+export const withDelay = fn;

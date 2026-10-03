@@ -1,205 +1,1004 @@
-// Module ID: 12791
-// Function ID: 12792
+// Module ID: 12831
+// Function ID: 12832
 // Name: Badges
-// Dependencies: [19, 17, 2111, 21, 576, 4845, 12789, 7774, 4841, 504, 8726, 11313, 12792, 1115, 12794, 12796, 9410, 9833, 8360, 1091, 2]
-// Exports: BadgesContainer, CustomStatusTimestampBadge, GameTimestampBadge, MarathonBadge, NewGameBadge, ResurrectedBadge, StreakBadge, TopGameBadge, TrendingBadge
+// Dependencies: [19, 17, 2116, 21, 587, 4890, 558, 576, 12829, 7818, 4886, 504, 8739, 11227, 12832, 1126, 12834, 12836, 9407, 11364, 1102, 8364, 2]
 
-// Module 12791 (Badges)
-import initialize from "initialize" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import utils from "utils" /* 7774 */;
-import GameControllerIcon from "GameControllerIcon" /* 8726 */;
-import TimerIcon from "TimerIcon" /* 11313 */;
-import noop from "module_19" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2111 */;
+// Module 12831 (Badges)
+import react_native from "react-native" /* 17 */;
+import get_initialized from "get initialized" /* 504 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import intl3 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import utils from "utils" /* 7818 */;
+import TrophyIcon from "TrophyIcon" /* 8364 */;
+import GameControllerIcon from "GameControllerIcon" /* 8739 */;
+import FireIcon from "FireIcon" /* 9407 */;
+import TimerIcon2 from "TimerIcon" /* 11227 */;
+import RetryIcon from "RetryIcon" /* 11364 */;
+import useTimestampTickedNow from "useTimestampTickedNow" /* 12829 */;
+import NewUserIcon from "NewUserIcon" /* 12832 */;
+import FlashIcon2 from "FlashIcon" /* 12834 */;
+import TrendingType from "TrendingType" /* 12836 */;
+import react from "react" /* 19 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-class ActiveTimestamp {
-  constructor(arg0) {
-    entry = global.entry;
-    now = undefined;
-    obj = entry(closure_2[6]);
-    now = obj.useTimestampTickedNow().now;
-    items = [, ];
-    items[0] = entry;
-    items[1] = now;
-    memo = closure_3.useMemo(() => utils.formatActiveTimestamp(entry, now), items);
-    return jsx(entry(closure_2[8]).Text, { style: global.style, variant: "text-sm/medium", tabularNumbers: true, color: "text-feedback-positive", children: memo });
-  }
-}
-function ContentTimestamp(entry) {
-  entry = entry.entry;
-  obj = utils;
-  initialize;
-  [][0] = LocaleStore;
-  if (isEntryActiveResult) {
-    const obj2 = { entry };
-    let tmp6Result = tmp6(ActiveTimestamp, obj2);
-  } else {
-    const obj3 = { variant: "text-sm/medium", color: obj[noop.useContext(noop, closure_11)].text, children: tmp(7774).formatEndedTimestamp(entry, tmp5) };
-    tmp6Result = tmp6(tmp(4841).Text, obj3);
-    const tmpResult = tmp(7774);
-  }
-  return tmp6Result;
-}
-function BaseBadge(accessibilityLabel) {
-  accessibilityLabel = accessibilityLabel.accessibilityLabel;
-  ({ Icon, iconColor, text } = accessibilityLabel);
-  const tmp = closure_10(noop.useContext(closure_11));
-  obj = { style: tmp.badgeContainer, accessible: null != accessibilityLabel, accessibilityLabel, children: null };
-  const items = [timestampProducer(Icon, { style: tmp.icon, color: iconColor }), timestampProducer(Text_Text.Text, { variant: "text-sm/medium", color: obj[noop.useContext(noop, closure_11)].text, children: text })];
-  obj.children = items;
-  return React5(View, obj);
-}
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-let obj = { overlay: { text: "content-inventory-overlay-text-secondary", icon: nativeDefault.colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY }, "user-profile": null };
-let obj2 = { text: "content-inventory-overlay-text-secondary", icon: nativeDefault.colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY };
-obj["user-profile"] = { text: "text-subtle", icon: nativeDefault.colors.TEXT_SUBTLE };
-const createStyles = fn(4845);
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+const View = react_native.View;
+({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
+let obj = { overlay: obj2, "user-profile": obj3 };
+obj2 = { text: "content-inventory-overlay-text-secondary", icon: nativeDefault.colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY };
+obj3 = { text: "text-subtle", icon: nativeDefault.colors.TEXT_SUBTLE };
 let closure_10 = createStyles.createStyles((arg0) => {
-  obj = { icon: { width: 16, height: 16 }, badgeContainer: null };
+  let obj3;
   let tmp = null;
+  obj = { icon: { width: 16, height: 16 }, badgeContainer: obj3 };
   if ("overlay" === arg0) {
+    tmp = { backgroundColor: "rgba(255, 255, 255, 0.08)", paddingVertical: nativeDefault.space.PX_4, paddingLeft: nativeDefault.space.PX_8, paddingRight: 10, borderRadius: nativeDefault.radii.sm };
     const obj2 = { backgroundColor: "rgba(255, 255, 255, 0.08)", paddingVertical: nativeDefault.space.PX_4, paddingLeft: nativeDefault.space.PX_8, paddingRight: 10, borderRadius: nativeDefault.radii.sm };
-    tmp = obj2;
   }
+  obj3 = { display: "flex", flexDirection: "row", alignItems: "center", gap: 4 };
   const merged = Object.assign(tmp);
-  obj.badgeContainer = { display: "flex", flexDirection: "row", alignItems: "center", gap: 4 };
   return obj;
 });
-const redux = noop.createContext("overlay");
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/icymi/native/content_inventory/Badges.tsx");
+const redux = react.createContext("overlay");
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating.isReactCompilerEnabled();
+const f62251 = () => {
 
-export const BadgesContainer = function BadgesContainer(location) {
-  obj = { value: location.location, children: timestampProducer(View, { style: location.style, children: location.children }) };
-  return timestampProducer(redux.Provider, obj);
 };
-export { ActiveTimestamp };
-export const GameTimestampBadge = function GameTimestampBadge(entry) {
-  entry = entry.entry;
-  const tmp = closure_10(noop.useContext(closure_11));
-  obj = utils;
-  if (obj.isEntryActive(entry)) {
-    let icon = nativeDefault.colors.STATUS_POSITIVE;
-  } else {
-    icon = obj[noop.useContext(noop, closure_11)].icon;
+ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating.isReactCompilerEnabled();
+const f62252 = () => {
+
+};
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let _location;
+  let children;
+  let style;
+  obj = react2;
+  const cResult = obj.c(6);
+  ({ location: _location, style, children } = arg0);
+  if (cResult[0] === children) {
+    let tmp2;
+    if (cResult[1] === style) {
+      tmp2 = cResult[2];
+    }
+    if (cResult[3] === _location) {
+      let tmp4;
+      if (cResult[4] === tmp2) {
+        tmp4 = cResult[5];
+      }
+      return tmp4;
+    }
+    const obj2 = { value: _location, children: tmp2 };
+    const tmp7 = metroRequire(redux.Provider, obj2);
+    cResult[3] = _location;
+    cResult[4] = tmp2;
+    cResult[5] = tmp7;
+    tmp4 = tmp7;
   }
-  const obj2 = { style: tmp.badgeContainer, children: null };
-  const items = [timestampProducer(GameControllerIcon.GameControllerIcon, { style: tmp.icon, color: icon }), timestampProducer(ContentTimestamp, { entry })];
-  obj2.children = items;
-  return React5(View, obj2);
-};
-export const MarathonBadge = function MarathonBadge(entry) {
+  const tmp3 = metroRequire(View, { style, children });
+  cResult[0] = children;
+  cResult[1] = style;
+  cResult[2] = tmp3;
+  tmp2 = tmp3;
+}) : ((location) => {
+  let obj2;
+  const Provider = redux.Provider;
+  obj = { value: location.location, children: metroRequire(View, obj2) };
+  obj2 = { style: location.style, children: location.children };
+  return metroRequire(Provider, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let entry;
+  let style;
+  obj = react2;
+  const cResult = obj.c(6);
+  ({ entry, style } = arg0);
+  const obj2 = useTimestampTickedNow;
+  const now = obj2.useTimestampTickedNow().now;
+  if (cResult[0] === entry) {
+    let tmp4;
+    if (cResult[1] === now) {
+      tmp4 = cResult[2];
+    }
+    if (cResult[3] === style) {
+      let tmp6;
+      if (cResult[4] === tmp4) {
+        tmp6 = cResult[5];
+      }
+      return tmp6;
+    }
+    const obj3 = { style, variant: "text-sm/medium", tabularNumbers: true, color: "text-feedback-positive", children: tmp4 };
+    const tmp8 = metroRequire(Text_Text.Text, obj3);
+    cResult[3] = style;
+    cResult[4] = tmp4;
+    cResult[5] = tmp8;
+    tmp6 = tmp8;
+  }
+  const tmpResult = utils;
+  const result = tmpResult.formatActiveTimestamp(entry, now);
+  cResult[0] = entry;
+  cResult[1] = now;
+  cResult[2] = result;
+  tmp4 = result;
+}) : ((entry) => {
   entry = entry.entry;
-  obj = utils;
-  if (obj.isEntryMarathon(entry)) {
-    if (tmpResult.isEntryActive(entry)) {
-      let icon = nativeDefault.colors.STATUS_POSITIVE;
+  const style = entry.style;
+  obj = entry(12829);
+  const now = obj.useTimestampTickedNow().now;
+  const items = [entry, now];
+  const children = react.useMemo(() => {
+    obj = utils;
+    return obj.formatActiveTimestamp(entry, now);
+  }, items);
+  return closure_6(entry(4886).Text, { style, variant: "text-sm/medium", tabularNumbers: true, color: "text-feedback-positive", children });
+});
+let closure_14 = tmp6;
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
+  let locale;
+  let tmp11;
+  let tmp12;
+  obj = react2;
+  const cResult = obj.c(10);
+  entry = entry.entry;
+  if (typeof f62252 === "function") {
+    if (typeof f62251 === "function") {
+      const tmp8 = tmp4[react.useContext(react, redux)];
+      const _Symbol = Symbol;
+      const tmpResult = utils;
+      const isEntryActiveResult = tmpResult.isEntryActive(entry);
+      if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+        const items = [LocaleStore];
+        const fn = function l() {
+          return locale.locale;
+        };
+        cResult[0] = items;
+        cResult[1] = fn;
+        tmp11 = items;
+        tmp12 = fn;
+      } else {
+        [tmp11, tmp12] = cResult;
+      }
+      const tmpResult3 = get_initialized;
+      const stateFromStores = tmpResult3.useStateFromStores(tmp11, tmp12);
+      if (isEntryActiveResult) {
+        let tmp21;
+        if (cResult[2] !== entry) {
+          const obj2 = { entry };
+          const tmp24 = metroRequire(closure_14, obj2);
+          cResult[2] = entry;
+          cResult[3] = tmp24;
+          tmp21 = tmp24;
+        } else {
+          tmp21 = cResult[3];
+        }
+        return tmp21;
+      } else {
+        if (cResult[4] === entry) {
+          let tmp16;
+          if (cResult[5] === stateFromStores) {
+            tmp16 = cResult[6];
+          }
+          if (cResult[7] === tmp8.text) {
+            let tmp18;
+            if (cResult[8] === tmp16) {
+              tmp18 = cResult[9];
+            }
+            return tmp18;
+          }
+          const obj3 = { variant: "text-sm/medium", color: tmp15, children: tmp16 };
+          const tmp20 = metroRequire(Text_Text.Text, obj3);
+          cResult[7] = tmp8.text;
+          cResult[8] = tmp16;
+          cResult[9] = tmp20;
+          tmp18 = tmp20;
+        }
+        const tmpResult4 = utils;
+        const formatEndedTimestampResult = tmpResult4.formatEndedTimestamp(entry, stateFromStores);
+        cResult[4] = entry;
+        cResult[5] = stateFromStores;
+        cResult[6] = formatEndedTimestampResult;
+        tmp16 = formatEndedTimestampResult;
+      }
     } else {
-      icon = obj[noop.useContext(noop, closure_11)].icon;
+      throw new TypeError("Trying to call a non-function");
     }
-    tmpResult = tmp(7774);
-    const marathonDescription = tmp(7774).getMarathonDescription(entry);
-    const text = marathonDescription.text;
-    let tmp7 = null;
-    if (null != text) {
-      const obj2 = { Icon: tmp(11313).TimerIcon, iconColor: icon, text, accessibilityLabel: tmp6 };
-      tmp7 = timestampProducer(BaseBadge, obj2);
-    }
-    return tmp7;
   } else {
-    return null;
+    throw new TypeError("Trying to call a non-function");
   }
-};
-export const NewGameBadge = function NewGameBadge(entry) {
-  let tmp3 = null;
-  if (obj.isEntryNew(entry.entry)) {
-    const obj2 = { Icon: tmp(12792).NewUserIcon, text: null, iconColor: null };
-    const intl = tmp(1115).intl;
-    obj2.text = intl.string(tmp(1115).t.keY6mW);
-    obj2.iconColor = nativeDefault.colors.STATUS_POSITIVE;
-    tmp3 = timestampProducer(BaseBadge, obj2);
-  }
-  return tmp3;
-};
-export const StreakBadge = function StreakBadge(entry) {
-  obj = utils;
-  const streakCount = obj.getStreakCount(entry.entry);
-  let tmp4 = null;
-  if (null != streakCount) {
-    tmp4 = null;
-    if (streakCount >= 2) {
-      const obj2 = { Icon: tmp(12794).FlashIcon, text: null, iconColor: null, accessibilityLabel: null };
-      const intl = tmp(1115).intl;
-      const obj3 = { days: streakCount };
-      obj2.text = intl.formatToPlainString(tmp(1115).t["Klie/P"], obj3);
-      obj2.iconColor = obj[noop.useContext(noop, closure_11)].icon;
-      const intl2 = tmp(1115).intl;
-      const obj4 = { days: streakCount };
-      obj2.accessibilityLabel = intl2.formatToPlainString(tmp(1115).t.nVLPBf, obj4);
-      tmp4 = timestampProducer(BaseBadge, obj2);
+}) : ((entry) => {
+  let locale;
+  let tmp6Result;
+  entry = entry.entry;
+  if (typeof f62252 === "function") {
+    if (typeof f62251 === "function") {
+      let tmp12Result;
+      const tmp5 = tmp[react.useContext(react, redux)];
+      obj = utils;
+      const isEntryActiveResult = obj.isEntryActive(entry);
+      get_initialized;
+      const items = [LocaleStore];
+      if (isEntryActiveResult) {
+        const obj2 = { entry };
+        tmp12Result = tmp12(closure_14, obj2);
+      } else {
+        const obj3 = { variant: "text-sm/medium", color: tmp5.text, children: tmp6Result.formatEndedTimestamp(entry, tmp11) };
+        const Text = tmp6(4886).Text;
+        tmp6Result = utils;
+        tmp12Result = tmp12(Text, obj3);
+      }
+      return tmp12Result;
+    } else {
+      throw new TypeError("Trying to call a non-function");
     }
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let Icon;
+  let accessibilityLabel;
+  let iconColor;
+  let items;
+  let text;
+  obj = react2;
+  const cResult = obj.c(13);
+  ({ Icon, iconColor, text, accessibilityLabel } = arg0);
+  if (typeof f62251 === "function") {
+    const tmp4Result = tmp4(react.useContext(redux));
+    const tmp6 = redux;
+    if (typeof f62252 === "function") {
+      if (typeof tmp5 === "function") {
+        const tmp10 = tmp9[react.useContext(react, tmp6)];
+        if (cResult[0] === Icon) {
+          if (cResult[1] === iconColor) {
+            let tmp13;
+            if (cResult[2] === tmp4Result.icon) {
+              tmp13 = cResult[3];
+            }
+            if (cResult[4] === tmp10.text) {
+              let tmp16;
+              if (cResult[5] === text) {
+                tmp16 = cResult[6];
+              }
+              if (cResult[7] === accessibilityLabel) {
+                if (cResult[8] === tmp4Result.badgeContainer) {
+                  if (cResult[9] === null != accessibilityLabel) {
+                    if (cResult[10] === tmp13) {
+                      let tmp19;
+                      if (cResult[11] === tmp16) {
+                        tmp19 = cResult[12];
+                      }
+                      return tmp19;
+                    }
+                  }
+                }
+              }
+              const obj3 = { style: tmp4Result.badgeContainer, accessible: null != accessibilityLabel, accessibilityLabel, children: items };
+              items = [tmp13, tmp16];
+              const tmp22 = metroImportDefault(View, obj3);
+              cResult[7] = accessibilityLabel;
+              cResult[8] = tmp4Result.badgeContainer;
+              cResult[9] = null != accessibilityLabel;
+              cResult[10] = tmp13;
+              cResult[11] = tmp16;
+              cResult[12] = tmp22;
+              tmp19 = tmp22;
+            }
+            const obj4 = { variant: "text-sm/medium", color: tmp10.text, children: text };
+            const tmp18 = metroRequire(Text_Text.Text, obj4);
+            cResult[4] = tmp10.text;
+            cResult[5] = text;
+            cResult[6] = tmp18;
+            tmp16 = tmp18;
+          }
+        }
+        const obj5 = { style: tmp4Result.icon, color: iconColor };
+        const tmp15 = metroRequire(Icon, obj5);
+        cResult[0] = Icon;
+        cResult[1] = iconColor;
+        cResult[2] = tmp4Result.icon;
+        cResult[3] = tmp15;
+        tmp13 = tmp15;
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+}) : ((accessibilityLabel) => {
+  let items;
+  accessibilityLabel = accessibilityLabel.accessibilityLabel;
+  if (typeof f62251 === "function") {
+    const tmp4Result = tmp4(react.useContext(redux));
+    const tmp6 = redux;
+    if (typeof f62252 === "function") {
+      if (typeof tmp5 === "function") {
+        const obj2 = { style: tmp4Result.badgeContainer, accessible: null != accessibilityLabel, accessibilityLabel, children: items };
+        items = [, ];
+        const obj3 = { style: tmp4Result.icon, color: tmp2 };
+        const tmp10 = tmp9[react.useContext(react, tmp6)];
+        items[0] = metroRequire(tmp, obj3);
+        const obj4 = { variant: "text-sm/medium", color: tmp10.text, children: tmp3 };
+        items[1] = metroRequire(Text_Text.Text, obj4);
+        return metroImportDefault(View, obj2);
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
+  let items;
+  obj = react2;
+  const cResult = obj.c(9);
+  entry = entry.entry;
+  if (typeof f62251 === "function") {
+    const tmp4Result = tmp4(react.useContext(redux));
+    const tmp6 = redux;
+    if (typeof f62252 === "function") {
+      if (typeof tmp5 === "function") {
+        let icon;
+        const tmp10 = tmp9[react.useContext(react, tmp6)];
+        const tmpResult = utils;
+        if (tmpResult.isEntryActive(entry)) {
+          icon = nativeDefault.colors.STATUS_POSITIVE;
+        } else {
+          icon = tmp10.icon;
+        }
+        if (cResult[0] === icon) {
+          let tmp12;
+          let tmp15;
+          if (cResult[1] === tmp4Result.icon) {
+            tmp12 = cResult[2];
+          }
+          if (cResult[3] !== entry) {
+            const obj3 = { entry };
+            const tmp18 = metroRequire(closure_15, obj3);
+            cResult[3] = entry;
+            cResult[4] = tmp18;
+            tmp15 = tmp18;
+          } else {
+            tmp15 = cResult[4];
+          }
+          if (cResult[5] === tmp4Result.badgeContainer) {
+            if (cResult[6] === tmp12) {
+              let tmp19;
+              if (cResult[7] === tmp15) {
+                tmp19 = cResult[8];
+              }
+              return tmp19;
+            }
+          }
+          const obj4 = { style: tmp4Result.badgeContainer, children: items };
+          items = [tmp12, tmp15];
+          const tmp22 = metroImportDefault(View, obj4);
+          cResult[5] = tmp4Result.badgeContainer;
+          cResult[6] = tmp12;
+          cResult[7] = tmp15;
+          cResult[8] = tmp22;
+          tmp19 = tmp22;
+        }
+        const obj5 = { style: tmp4Result.icon, color: icon };
+        const tmp14 = metroRequire(GameControllerIcon.GameControllerIcon, obj5);
+        cResult[0] = icon;
+        cResult[1] = tmp4Result.icon;
+        cResult[2] = tmp14;
+        tmp12 = tmp14;
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+}) : ((entry) => {
+  let items;
+  entry = entry.entry;
+  if (typeof f62251 === "function") {
+    const tmpResult = tmp(react.useContext(redux));
+    const tmp3 = redux;
+    if (typeof f62252 === "function") {
+      if (typeof tmp2 === "function") {
+        let icon;
+        const tmp7 = tmp6[react.useContext(react, tmp3)];
+        const obj2 = utils;
+        const tmp8 = require;
+        if (obj2.isEntryActive(entry)) {
+          icon = nativeDefault.colors.STATUS_POSITIVE;
+        } else {
+          icon = tmp7.icon;
+        }
+        const obj3 = { style: tmpResult.badgeContainer, children: items };
+        const obj4 = { style: tmpResult.icon, color: icon };
+        items = [metroRequire(tmp8(8739).GameControllerIcon, obj4), ];
+        const obj5 = { entry };
+        items[1] = metroRequire(closure_15, obj5);
+        return metroImportDefault(View, obj3);
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
+  let a11yText;
+  let text;
+  obj = react2;
+  const cResult = obj.c(6);
+  entry = entry.entry;
+  if (typeof f62252 === "function") {
+    if (typeof f62251 === "function") {
+      const tmp8 = tmp4[react.useContext(react, redux)];
+      const tmpResult = utils;
+      if (tmpResult.isEntryMarathon(entry)) {
+        let icon;
+        let tmp11;
+        const tmpResult3 = utils;
+        if (tmpResult3.isEntryActive(entry)) {
+          icon = nativeDefault.colors.STATUS_POSITIVE;
+        } else {
+          icon = tmp8.icon;
+        }
+        if (cResult[0] !== entry) {
+          const tmpResult4 = utils;
+          const marathonDescription = tmpResult4.getMarathonDescription(entry);
+          cResult[0] = entry;
+          cResult[1] = marathonDescription;
+          tmp11 = marathonDescription;
+        } else {
+          tmp11 = cResult[1];
+        }
+        ({ text, a11yText } = tmp11);
+        let tmp13 = null;
+        if (null != text) {
+          if (cResult[2] === a11yText) {
+            if (cResult[3] === icon) {
+              let tmp14;
+              if (cResult[4] === text) {
+                tmp14 = cResult[5];
+              }
+              tmp13 = tmp14;
+            }
+          }
+          const obj2 = { Icon: TimerIcon2.TimerIcon, iconColor: icon, text, accessibilityLabel: a11yText };
+          const tmp17 = metroRequire(closure_16, obj2);
+          cResult[2] = a11yText;
+          cResult[3] = icon;
+          cResult[4] = text;
+          cResult[5] = tmp17;
+          tmp14 = tmp17;
+        }
+        return tmp13;
+      } else {
+        return null;
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+}) : ((entry) => {
+  entry = entry.entry;
+  if (typeof f62252 === "function") {
+    if (typeof f62251 === "function") {
+      const tmp5 = tmp[react.useContext(react, redux)];
+      obj = utils;
+      if (obj.isEntryMarathon(entry)) {
+        let icon;
+        const tmp6Result = utils;
+        if (tmp6Result.isEntryActive(entry)) {
+          icon = nativeDefault.colors.STATUS_POSITIVE;
+        } else {
+          icon = tmp5.icon;
+        }
+        const tmp6Result2 = utils;
+        const marathonDescription = tmp6Result2.getMarathonDescription(entry);
+        const text = marathonDescription.text;
+        let tmp12 = null;
+        if (null != text) {
+          const obj2 = { Icon: TimerIcon2.TimerIcon, iconColor: icon, text, accessibilityLabel: tmp11 };
+          tmp12 = metroRequire(closure_16, obj2);
+        }
+        return tmp12;
+      } else {
+        return null;
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
+  let intl;
+  obj = react2;
+  const cResult = obj.c(1);
+  entry = entry.entry;
+  let tmp4 = null;
+  const obj2 = utils;
+  if (obj2.isEntryNew(entry)) {
+    let first;
+    const _Symbol = Symbol;
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj3 = { Icon: NewUserIcon.NewUserIcon, text: intl.string(intl3.t.keY6mW), iconColor: nativeDefault.colors.STATUS_POSITIVE };
+      intl = tmp(1126).intl;
+      const tmp10 = metroRequire(closure_16, obj3);
+      cResult[0] = tmp10;
+      first = tmp10;
+    } else {
+      first = cResult[0];
+    }
+    tmp4 = first;
   }
   return tmp4;
-};
-export const TrendingBadge = function TrendingBadge(entry) {
-  obj = utils;
-  const trendingType = obj.getTrendingType(entry.entry);
-  let tmp4 = null;
-  if (null != trendingType) {
-    tmp4 = null;
-    if (trendingType !== tmp(12796).TrendingType.TRENDING_TYPE_UNSPECIFIED) {
-      const obj2 = { Icon: tmp(9410).FireIcon, text: null, iconColor: null };
-      const intl = tmp(1115).intl;
-      obj2.text = intl.string(tmp(1115).t.TsWCdW);
-      obj2.iconColor = obj[noop.useContext(noop, closure_11)].icon;
-      tmp4 = timestampProducer(BaseBadge, obj2);
-    }
-  }
-  return tmp4;
-};
-export const ResurrectedBadge = function ResurrectedBadge(entry) {
-  obj = utils;
+}) : ((entry) => {
+  let intl;
+  entry = entry.entry;
   let tmp3 = null;
-  if (null != obj.getResurrectedEntryLastPlayTime(entry.entry)) {
-    const obj2 = { Icon: tmp(9833).RetryIcon, text: null, iconColor: null };
-    const intl = tmp(1115).intl;
-    obj2.text = intl.string(tmp(1115).t.adnLsB);
-    obj2.iconColor = obj[noop.useContext(noop, closure_11)].icon;
-    tmp3 = timestampProducer(BaseBadge, obj2);
+  obj = utils;
+  if (obj.isEntryNew(entry)) {
+    const obj2 = { Icon: NewUserIcon.NewUserIcon, text: intl.string(intl3.t.keY6mW), iconColor: nativeDefault.colors.STATUS_POSITIVE };
+    intl = tmp(1126).intl;
+    tmp3 = metroRequire(closure_16, obj2);
   }
   return tmp3;
-};
-export const TopGameBadge = function TopGameBadge(entry) {
-  obj = utils;
-  const entryDuration = obj.getEntryDuration(entry.entry);
-  if (null == entryDuration) {
-    return null;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
+  obj = react2;
+  const cResult = obj.c(14);
+  entry = entry.entry;
+  if (typeof f62252 === "function") {
+    if (typeof f62251 === "function") {
+      const tmp8 = tmp4[react.useContext(react, redux)];
+      if (cResult[0] === tmp8) {
+        let tmp9;
+        let tmp10;
+        let tmp11;
+        let tmp12;
+        let tmp13;
+        let tmp14;
+        if (cResult[1] === entry) {
+          tmp9 = cResult[2];
+          tmp10 = cResult[3];
+          tmp11 = cResult[4];
+          tmp12 = cResult[5];
+          tmp13 = cResult[6];
+          tmp14 = cResult[7];
+        }
+        const _Symbol2 = Symbol;
+        if (tmp14 === Symbol.for("react.early_return_sentinel")) {
+          if (cResult[8] === tmp9) {
+            if (cResult[9] === tmp10) {
+              if (cResult[10] === tmp11) {
+                if (cResult[11] === tmp12) {
+                  let tmp26;
+                  if (cResult[12] === tmp13) {
+                    tmp26 = cResult[13];
+                  }
+                  tmp14 = tmp26;
+                }
+              }
+            }
+          }
+          const obj2 = { Icon: tmp10, text: tmp11, iconColor: tmp12, accessibilityLabel: tmp13 };
+          const tmp28 = metroRequire(tmp9, obj2);
+          cResult[8] = tmp9;
+          cResult[9] = tmp10;
+          cResult[10] = tmp11;
+          cResult[11] = tmp12;
+          cResult[12] = tmp13;
+          cResult[13] = tmp28;
+          tmp26 = tmp28;
+        }
+        return tmp14;
+      }
+      const _Symbol = Symbol;
+      const forResult = Symbol.for("react.early_return_sentinel");
+      const tmpResult = utils;
+      const streakCount = tmpResult.getStreakCount(entry);
+      let tmp19 = null;
+      let formatToPlainStringResult1;
+      let icon;
+      let formatToPlainStringResult;
+      let FlashIcon;
+      let tmp24;
+      if (null != streakCount) {
+        tmp19 = null;
+        if (streakCount >= 2) {
+          tmp24 = closure_16;
+          FlashIcon = tmp(12834).FlashIcon;
+          const intl = tmp(1126).intl;
+          const obj3 = { days: streakCount };
+          formatToPlainStringResult = intl.formatToPlainString(tmp(1126).t["Klie/P"], obj3);
+          icon = tmp8.icon;
+          const intl2 = tmp(1126).intl;
+          const obj4 = { days: streakCount };
+          formatToPlainStringResult1 = intl2.formatToPlainString(tmp(1126).t.nVLPBf, obj4);
+          tmp19 = forResult;
+        }
+      }
+      cResult[0] = tmp8;
+      cResult[1] = entry;
+      cResult[2] = tmp24;
+      cResult[3] = FlashIcon;
+      cResult[4] = formatToPlainStringResult;
+      cResult[5] = icon;
+      cResult[6] = formatToPlainStringResult1;
+      cResult[7] = tmp19;
+      tmp14 = tmp19;
+      tmp13 = formatToPlainStringResult1;
+      tmp12 = icon;
+      tmp11 = formatToPlainStringResult;
+      tmp10 = FlashIcon;
+      tmp9 = tmp24;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
   } else {
-    const obj2 = { Icon: tmp(8360).TrophyIcon, text: null, iconColor: null };
-    const obj3 = { children: null };
-    const intl = tmp(1115).intl;
-    const items = [intl.string(tmp(1115).t["/50eHi"]), ": ", ];
-    const intl2 = tmp(1115).intl;
-    const obj4 = { hours: null };
-    const _Math = Math;
-    obj4.hours = Math.round(entryDuration / DurationsDefault.Seconds.HOUR);
-    items[2] = intl2.format(tmp(1115).t.SDRHgr, obj4);
-    obj3.children = items;
-    obj2.text = React5(React6, obj3);
-    obj2.iconColor = obj[noop.useContext(noop, closure_11)].icon;
-    return timestampProducer(BaseBadge, obj2);
+    throw new TypeError("Trying to call a non-function");
   }
-};
-export const CustomStatusTimestampBadge = function CustomStatusTimestampBadge(entry) {
-  const tmp = closure_10(noop.useContext(closure_11));
-  obj = { style: tmp.badgeContainer, children: null };
-  const items = [timestampProducer(TimerIcon.TimerIcon, { style: tmp.icon, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT }), timestampProducer(ContentTimestamp, { entry: entry.entry })];
-  obj.children = items;
-  return React5(View, obj);
-};
+}) : ((arg0) => {
+  let intl;
+  let intl2;
+  let obj3;
+  let obj4;
+  if (typeof f62252 === "function") {
+    if (typeof f62251 === "function") {
+      const tmp6 = tmp2[react.useContext(react, redux)];
+      obj = utils;
+      const streakCount = obj.getStreakCount(tmp);
+      let tmp11 = null;
+      if (null != streakCount) {
+        tmp11 = null;
+        if (streakCount >= 2) {
+          const obj2 = { Icon: FlashIcon2.FlashIcon, text: intl.formatToPlainString(intl3.t["Klie/P"], obj3), iconColor: tmp6.icon, accessibilityLabel: intl2.formatToPlainString(intl3.t.nVLPBf, obj4) };
+          intl = tmp7(1126).intl;
+          obj3 = { days: streakCount };
+          intl2 = tmp7(1126).intl;
+          obj4 = { days: streakCount };
+          tmp11 = metroRequire(closure_16, obj2);
+        }
+      }
+      return tmp11;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  obj = react2;
+  const cResult = obj.c(3);
+  if (typeof f62252 === "function") {
+    if (typeof f62251 === "function") {
+      const tmp9 = tmp5[react.useContext(react, redux)];
+      const tmpResult = utils;
+      const trendingType = tmpResult.getTrendingType(tmp4);
+      let tmp12 = null;
+      if (null != trendingType) {
+        tmp12 = null;
+        if (trendingType !== TrendingType.TrendingType.TRENDING_TYPE_UNSPECIFIED) {
+          let first;
+          let tmp15;
+          const _Symbol = Symbol;
+          if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+            const intl = tmp(1126).intl;
+            const stringResult = intl.string(intl3.t.TsWCdW);
+            cResult[0] = stringResult;
+            first = stringResult;
+          } else {
+            first = cResult[0];
+          }
+          if (cResult[1] !== tmp9.icon) {
+            const obj2 = { Icon: FireIcon.FireIcon, text: first, iconColor: tmp9.icon };
+            const tmp18 = metroRequire(closure_16, obj2);
+            cResult[1] = tmp9.icon;
+            cResult[2] = tmp18;
+            tmp15 = tmp18;
+          } else {
+            tmp15 = cResult[2];
+          }
+          tmp12 = tmp15;
+        }
+      }
+      return tmp12;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+}) : ((arg0) => {
+  let intl;
+  if (typeof f62252 === "function") {
+    if (typeof f62251 === "function") {
+      const tmp6 = tmp2[react.useContext(react, redux)];
+      obj = utils;
+      const trendingType = obj.getTrendingType(tmp);
+      let tmp11 = null;
+      if (null != trendingType) {
+        tmp11 = null;
+        if (trendingType !== TrendingType.TrendingType.TRENDING_TYPE_UNSPECIFIED) {
+          const obj2 = { Icon: FireIcon.FireIcon, text: intl.string(intl3.t.TsWCdW), iconColor: tmp6.icon };
+          intl = tmp7(1126).intl;
+          tmp11 = metroRequire(closure_16, obj2);
+        }
+      }
+      return tmp11;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  obj = react2;
+  const cResult = obj.c(3);
+  if (typeof f62252 === "function") {
+    if (typeof f62251 === "function") {
+      const tmp9 = tmp5[react.useContext(react, redux)];
+      let tmp10 = null;
+      const tmpResult = utils;
+      if (null != tmpResult.getResurrectedEntryLastPlayTime(tmp4)) {
+        let first;
+        let tmp14;
+        const _Symbol = Symbol;
+        if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+          const intl = tmp(1126).intl;
+          const stringResult = intl.string(intl3.t.adnLsB);
+          cResult[0] = stringResult;
+          first = stringResult;
+        } else {
+          first = cResult[0];
+        }
+        if (cResult[1] !== tmp9.icon) {
+          const obj2 = { Icon: RetryIcon.RetryIcon, text: first, iconColor: tmp9.icon };
+          const tmp17 = metroRequire(closure_16, obj2);
+          cResult[1] = tmp9.icon;
+          cResult[2] = tmp17;
+          tmp14 = tmp17;
+        } else {
+          tmp14 = cResult[2];
+        }
+        tmp10 = tmp14;
+      }
+      return tmp10;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+}) : ((arg0) => {
+  let intl;
+  if (typeof f62252 === "function") {
+    if (typeof f62251 === "function") {
+      let tmp9 = null;
+      const tmp6 = tmp2[react.useContext(react, redux)];
+      obj = utils;
+      if (null != obj.getResurrectedEntryLastPlayTime(tmp)) {
+        const obj2 = { Icon: RetryIcon.RetryIcon, text: intl.string(intl3.t.adnLsB), iconColor: tmp6.icon };
+        intl = tmp7(1126).intl;
+        tmp9 = metroRequire(closure_16, obj2);
+      }
+      return tmp9;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let items;
+  obj = react2;
+  const cResult = obj.c(8);
+  if (typeof f62252 === "function") {
+    if (typeof f62251 === "function") {
+      const tmp9 = tmp5[react.useContext(react, redux)];
+      const tmpResult = utils;
+      const entryDuration = tmpResult.getEntryDuration(tmp4);
+      if (null == entryDuration) {
+        return null;
+      } else {
+        let first;
+        let tmp14;
+        let tmp17;
+        const _Symbol = Symbol;
+        const SDRHgr = tmp(1126).t.SDRHgr;
+        if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+          const intl = tmp(1126).intl;
+          const stringResult = intl.string(intl3.t["/50eHi"]);
+          cResult[0] = stringResult;
+          first = stringResult;
+        } else {
+          first = cResult[0];
+        }
+        if (cResult[1] !== entryDuration) {
+          const intl2 = tmp(1126).intl;
+          const _Math = Math;
+          const format = intl2.format;
+          const obj2 = { hours: Math.round(entryDuration / DurationsDefault.Seconds.HOUR) };
+          const formatResult = format(SDRHgr, obj2);
+          cResult[1] = entryDuration;
+          cResult[2] = formatResult;
+          tmp14 = formatResult;
+        } else {
+          tmp14 = cResult[2];
+        }
+        if (cResult[3] !== tmp14) {
+          const obj3 = { children: items };
+          items = [first, ": ", tmp14];
+          const tmp20 = metroImportDefault(metroImportAll, obj3);
+          cResult[3] = tmp14;
+          cResult[4] = tmp20;
+          tmp17 = tmp20;
+        } else {
+          tmp17 = cResult[4];
+        }
+        if (cResult[5] === tmp9.icon) {
+          let tmp21;
+          if (cResult[6] === tmp17) {
+            tmp21 = cResult[7];
+          }
+          return tmp21;
+        }
+        const obj4 = { Icon: TrophyIcon.TrophyIcon, text: tmp17, iconColor: tmp9.icon };
+        const tmp24 = metroRequire(closure_16, obj4);
+        cResult[5] = tmp9.icon;
+        cResult[6] = tmp17;
+        cResult[7] = tmp24;
+        tmp21 = tmp24;
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+}) : ((arg0) => {
+  let items;
+  let obj3;
+  if (typeof f62252 === "function") {
+    if (typeof f62251 === "function") {
+      const tmp6 = tmp2[react.useContext(react, redux)];
+      obj = utils;
+      const entryDuration = obj.getEntryDuration(tmp);
+      if (null == entryDuration) {
+        return null;
+      } else {
+        const obj2 = { Icon: TrophyIcon.TrophyIcon, text: metroImportDefault(metroImportAll, obj3), iconColor: tmp6.icon };
+        const SDRHgr = tmp7(1126).t.SDRHgr;
+        obj3 = { children: items };
+        const intl = tmp7(1126).intl;
+        items = [intl.string(intl3.t["/50eHi"]), ": ", ];
+        const intl2 = tmp7(1126).intl;
+        const _Math = Math;
+        const format = intl2.format;
+        const obj4 = { hours: Math.round(entryDuration / DurationsDefault.Seconds.HOUR) };
+        items[2] = format(SDRHgr, obj4);
+        return metroRequire(closure_16, obj2);
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
+  let items;
+  obj = react2;
+  const cResult = obj.c(8);
+  entry = entry.entry;
+  if (typeof f62251 === "function") {
+    let tmp8;
+    let tmp12;
+    const tmp4Result = tmp4(react.useContext(redux));
+    if (cResult[0] !== tmp4Result.icon) {
+      const obj2 = { style: tmp4Result.icon, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+      const TimerIcon = TimerIcon2.TimerIcon;
+      const tmp11 = metroRequire(TimerIcon, obj2);
+      cResult[0] = tmp4Result.icon;
+      cResult[1] = tmp11;
+      tmp8 = tmp11;
+    } else {
+      tmp8 = cResult[1];
+    }
+    if (cResult[2] !== entry) {
+      const obj3 = { entry };
+      const tmp15 = metroRequire(closure_15, obj3);
+      cResult[2] = entry;
+      cResult[3] = tmp15;
+      tmp12 = tmp15;
+    } else {
+      tmp12 = cResult[3];
+    }
+    if (cResult[4] === tmp4Result.badgeContainer) {
+      if (cResult[5] === tmp8) {
+        let tmp16;
+        if (cResult[6] === tmp12) {
+          tmp16 = cResult[7];
+        }
+        return tmp16;
+      }
+    }
+    const obj4 = { style: tmp4Result.badgeContainer, children: items };
+    items = [tmp8, tmp12];
+    const tmp19 = metroImportDefault(View, obj4);
+    cResult[4] = tmp4Result.badgeContainer;
+    cResult[5] = tmp8;
+    cResult[6] = tmp12;
+    cResult[7] = tmp19;
+    tmp16 = tmp19;
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+}) : ((arg0) => {
+  let items;
+  if (typeof f62251 === "function") {
+    const tmp2Result = tmp2(react.useContext(redux));
+    obj = { style: tmp2Result.badgeContainer, children: items };
+    const obj2 = { style: tmp2Result.icon, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+    const TimerIcon = TimerIcon2.TimerIcon;
+    items = [metroRequire(TimerIcon, obj2), ];
+    const obj3 = { entry: tmp };
+    items[1] = metroRequire(closure_15, obj3);
+    return metroImportDefault(View, obj);
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+});
+const result2 = size.fileFinishedImporting("modules/icymi/native/content_inventory/Badges.tsx");
+
+export const BadgesContainer = tmp5;
+export const ActiveTimestamp = tmp6;
+export const GameTimestampBadge = tmp7;
+export const MarathonBadge = tmp8;
+export const NewGameBadge = tmp9;
+export const StreakBadge = tmp10;
+export const TrendingBadge = tmp11;
+export const ResurrectedBadge = tmp12;
+export const TopGameBadge = tmp13;
+export const CustomStatusTimestampBadge = tmp14;

@@ -1,37 +1,89 @@
-// Module ID: 12849
-// Function ID: 12850
+// Module ID: 12902
+// Function ID: 12903
 // Name: VibegrationsCustomWidget
-// Dependencies: [2066, 504, 1435, 5554, 2]
-// Exports: composeVibegrationsCustomWidgetPrompt, useCanConjureVibegrationsCustomWidget
+// Dependencies: [2074, 558, 576, 1440, 6746, 504, 2]
+// Exports: composeVibegrationsCustomWidgetPrompt
 
-// Module 12849 (VibegrationsCustomWidget)
-import GuildStore from "GuildStore" /* 2066 */;
+// Module 12902 (VibegrationsCustomWidget)
+import GuildStore from "GuildStore" /* 2074 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-const require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsCustomWidget.tsx");
-
-export const VIBEGRATIONS_CUSTOM_WIDGET_PROMPT_MAX_LENGTH = 2000;
-export const useCanConjureVibegrationsCustomWidget = function useCanConjureVibegrationsCustomWidget(UserProfileContent, arg1) {
-  _require = UserProfileContent;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
+  let first;
+  _require = arg0;
+  let obj = require("react");
+  const cResult = obj.c(5);
+  dependencyMap = tmp4;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore, require("ApexExperiment").ApexExperimentStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === (undefined === arg1 || arg1)) {
+    let tmp7;
+    let tmp8;
+    if (cResult[2] === arg0) {
+      tmp7 = cResult[3];
+      tmp8 = cResult[4];
+    }
+    const tmpResult = require("get initialized");
+    return tmpResult.useStateFromStores(first, tmp7, tmp8);
+  }
+  const fn = function u() {
+    let someResult = closure_1;
+    if (someResult) {
+      const guildsArray = GuildStore.getGuildsArray();
+      someResult = guildsArray.some((item) => {
+        const obj = closure_0(closure_1[4]);
+        return obj.isVibegrationsGuildEligible(item, closure_1_0);
+      });
+    }
+    return someResult;
+  };
+  const items1 = [arg0, undefined === arg1 || arg1];
+  cResult[1] = undefined === arg1 || arg1;
+  cResult[2] = arg0;
+  cResult[3] = fn;
+  cResult[4] = items1;
+  tmp8 = items1;
+  tmp7 = fn;
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
   }
-  const items = [GuildStore, require("ApexExperiment").ApexExperimentStore];
-  const items1 = [UserProfileContent, flag];
-  return require("initialize").useStateFromStores(items, () => {
+  const items = [GuildStore, ];
+  const useStateFromStores = require("get initialized").useStateFromStores;
+  require("get initialized");
+  items[1] = require("ApexExperiment").ApexExperimentStore;
+  const items1 = [arg0, flag];
+  return useStateFromStores(items, () => {
     let someResult = flag;
-    if (flag) {
+    if (someResult) {
       const guildsArray = GuildStore.getGuildsArray();
-      someResult = guildsArray.some((item) => closure_0(flag[3]).isVibegrationsGuildEligible(item, UserProfileContent));
+      someResult = guildsArray.some((item) => {
+        const obj = closure_0(flag[4]);
+        return obj.isVibegrationsGuildEligible(item, closure_1_0);
+      });
     }
     return someResult;
   }, items1);
-};
-export const composeVibegrationsCustomWidgetPrompt = function composeVibegrationsCustomWidgetPrompt(arg0) {
-  const items = ["Build a profile card (an application profile widget) for my Discord profile.", "Read the data from the public source below \u2014 it must be reachable without a login.", "Recommend which fields the card should show and ask me to confirm or edit them before you build.", "", arg0];
+});
+const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsCustomWidget.tsx");
+
+export const VIBEGRATIONS_CUSTOM_WIDGET_PROMPT_MAX_LENGTH = 2000;
+export const useCanConjureVibegrationsCustomWidget = tmp2;
+export const composeVibegrationsCustomWidgetPrompt = function composeVibegrationsCustomWidgetPrompt(trimmed) {
+  const items = ["Build a profile card (an application profile widget) for my Discord profile.", "Read the data from the public source below \u2014 it must be reachable without a login.", "Recommend which fields the card should show and ask me to confirm or edit them before you build.", "", trimmed];
   return items.join("\n");
 };

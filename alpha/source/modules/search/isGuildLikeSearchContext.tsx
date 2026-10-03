@@ -1,11 +1,11 @@
-// Module ID: 12036
-// Function ID: 12037
+// Module ID: 11971
+// Function ID: 11972
 // Name: isGuildLikeSearchContext
-// Dependencies: [1074, 2]
+// Dependencies: [1085, 2]
 // Exports: isGuildLikeSearchContext
 
-// Module 12036 (isGuildLikeSearchContext)
-import Constants from "Constants" /* 1074 */;
+// Module 11971 (isGuildLikeSearchContext)
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const SearchTypes = Constants.SearchTypes;

@@ -1,167 +1,433 @@
-// Module ID: 10587
-// Function ID: 10588
+// Module ID: 10668
+// Function ID: 10669
 // Name: GroupDMInviteManagementScreen
-// Dependencies: [5, 32, 19, 17, 8012, 8272, 1074, 21, 4845, 5482, 1271, 12, 576, 10588, 6646, 1177, 10606, 10607, 1115, 6122, 1249, 6607, 2]
+// Dependencies: [5, 32, 19, 17, 8056, 10063, 1085, 21, 4890, 558, 576, 1282, 5590, 12, 587, 10669, 6535, 1188, 10687, 10688, 1126, 6010, 1260, 6496, 2]
 
-// Module 10587 (GroupDMInviteManagementScreen)
+// Module 10668 (GroupDMInviteManagementScreen)
 import _modDef12 from "module_12" /* 12 */;
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import NavigatorHeader from "NavigatorHeader" /* 6122 */;
-import InstantInviteDefault from "InstantInvite" /* 10588 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import InviteRecord from "InviteRecord" /* 8012 */;
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import NavigatorHeader from "NavigatorHeader" /* 6010 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import InviteRecord from "InviteRecord" /* 8056 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 10063 */;
+import Constants from "Constants" /* 1085 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-function GroupDMInviteManagement(channelId) {
+let c2, c3, catchPromise, dependencyMap, inviter;
+
+let Platform;
+let c10;
+let c9;
+let metroImportDefault;
+let metroRequire;
+let _slicedToArray = _slicedToArray_mod;
+({ Platform, View: metroRequire, FlatList: metroImportDefault } = react_native);
+({ ChannelSettingsSections: c9, Endpoints: c10 } = Constants);
+const jsx = Fragment.jsx;
+let closure_12 = createStyles.createStyles({ list: { paddingTop: 8 } });
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  let closure_2;
+  let first;
+  let first1;
+  let tmp10;
+  let tmp14;
+  let tmp19;
+  let tmp20;
+  let tmp22;
+  let tmp26;
+  let tmp9;
+  const tmp = channelId;
+  let tmp2 = dependencyMap;
+  let obj = channelId(576);
+  const cResult = obj.c(18);
+  channelId = channelId.channelId;
+  let tmp4 = closure_12();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  let obj2 = react;
+  [first1, dependencyMap] = react.useState(first);
+  [tmp9, _asyncToGenerator] = _slicedToArray(react.useState(true), 2);
+  const tmp8 = _slicedToArray(react.useState(true), 2);
+  if (cResult[1] !== channelId) {
+    class T {
+      constructor() {
+        closure_0 = closure_3(function() { /* body not rendered: F151984 */ });
+        promise = (function fetchInvites() { /* body not rendered: F151985 */ })();
+        catchPromise = promise.catch(() => { /* body not rendered: F140381 */ });
+        return;
+      }
+    }
+    cResult[1] = channelId;
+    cResult[2] = T;
+    tmp10 = T;
+  } else {
+    class T {
+      constructor() {
+        closure_0 = closure_3(function() { /* body not rendered: F151984 */ });
+        promise = (function fetchInvites() { /* body not rendered: F151985 */ })();
+        catchPromise = promise.catch(() => { /* body not rendered: F140381 */ });
+        return;
+      }
+    }
+  }
+  const tmp12 = first1(5590)(tmp10);
+  [tmp14, _slicedToArray] = _slicedToArray(obj2.useState(21), 2);
+  _slicedToArray(obj2.useState(21), 2);
+  if (cResult[3] !== first1) {
+    let tmp16;
+    class T {
+      constructor() {
+        closure_0 = closure_3(function() { /* body not rendered: F151984 */ });
+        promise = (function fetchInvites() { /* body not rendered: F151985 */ })();
+        catchPromise = promise.catch(() => { /* body not rendered: F140381 */ });
+        return;
+      }
+    }
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      class T {
+        constructor() {
+          closure_0 = closure_3(function() { /* body not rendered: F151984 */ });
+          promise = (function fetchInvites() { /* body not rendered: F151985 */ })();
+          catchPromise = promise.catch(() => { /* body not rendered: F140381 */ });
+          return;
+        }
+      }
+      cResult[5] = tmp17;
+      tmp16 = tmp17;
+    } else {
+      class T {
+        constructor() {
+          closure_0 = closure_3(function() { /* body not rendered: F151984 */ });
+          promise = (function fetchInvites() { /* body not rendered: F151985 */ })();
+          catchPromise = promise.catch(() => { /* body not rendered: F140381 */ });
+          return;
+        }
+      }
+    }
+    const tmp11Result = first1(12);
+    const sortByResult = tmp11Result.sortBy(first1, tmp16);
+    cResult[3] = first1;
+    cResult[4] = sortByResult;
+  } else {
+    class T {
+      constructor() {
+        closure_0 = closure_3(function() { /* body not rendered: F151984 */ });
+        promise = (function fetchInvites() { /* body not rendered: F151985 */ })();
+        catchPromise = promise.catch(() => { /* body not rendered: F140381 */ });
+        return;
+      }
+    }
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class F {
+      constructor() {
+        tmp = closure_4(21);
+        return;
+      }
+    }
+    const items1 = [];
+    cResult[6] = F;
+    cResult[7] = items1;
+    tmp20 = items1;
+    tmp19 = F;
+  } else {
+    class F {
+      constructor() {
+        tmp = closure_4(21);
+        return;
+      }
+    }
+    tmp20 = cResult[7];
+  }
+  const effect = obj2.useEffect(tmp19, tmp20);
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class H {
+      constructor(arg0) {
+        return channelId.code;
+      }
+    }
+    cResult[8] = H;
+    tmp22 = H;
+  } else {
+    class H {
+      constructor(arg0) {
+        return channelId.code;
+      }
+    }
+  }
+  if (cResult[9] !== first1) {
+    class H {
+      constructor(arg0) {
+        return channelId.code;
+      }
+    }
+    cResult[9] = first1;
+    cResult[10] = tmp24;
+  } else {
+    class H {
+      constructor(arg0) {
+        return channelId.code;
+      }
+    }
+  }
+  if (cResult[11] === first1.length) {
+    class H {
+      constructor(arg0) {
+        return channelId.code;
+      }
+    }
+  }
+  if (tmp9) {
+    class H {
+      constructor(arg0) {
+        return channelId.code;
+      }
+    }
+    tmp26 = jsx(tmp(6535).SceneLoadingIndicator, {});
+  } else {
+    class H {
+      constructor(arg0) {
+        return channelId.code;
+      }
+    }
+    if (0 === first1.length) {
+      class H {
+        constructor(arg0) {
+          return channelId.code;
+        }
+      }
+      const EmptyState = tmp(1188).EmptyState;
+      const intl = tmp(1126).intl;
+      const intl2 = tmp(1126).intl;
+      tmp26 = <EmptyState lightSource={tmp11(10687)} darkSource={tmp11(10688)} title={intl.string(tmp(1126).t["+nLJkZ"])} body={intl2.string(tmp(1126).t.F53CAc)} />;
+    } else {
+      class H {
+        constructor(arg0) {
+          return channelId.code;
+        }
+      }
+      tmp26 = <closure_7 style={tmp4.list} data={tmp15} keyExtractor={tmp22} renderItem={tmp23} initialNumToRender={10} windowSize={tmp14} />;
+    }
+  }
+  cResult[11] = first1.length;
+  cResult[12] = tmp9;
+  cResult[13] = tmp23;
+  cResult[14] = tmp15;
+  cResult[15] = tmp4;
+  cResult[16] = tmp14;
+  cResult[17] = tmp26;
+}) : ((channelId) => {
+  let closure_2;
+  let closure_3;
+  let closure_4;
+  let first;
+  let first1;
+  let first2;
+  let tmp16;
   channelId = channelId.channelId;
   first = undefined;
   dependencyMap = undefined;
+  closure_3 = undefined;
   _slicedToArray = undefined;
-  [first, dependencyMap] = noop.useState([]);
-  const tmp3 = _slicedToArray(noop.useState(true), 2);
-  closure_3 = tmp3[1];
-  first(5482)(() => {
-    closure_0 = async function _fetchInvites(arg0, value) {
-      if (v3 === 2) {
-        v3 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp4 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          v3 = 2;
-          if (0 === v1) {
-            if (arg0 === 1) {
-              v3 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              v3 = 3;
-              const obj3 = { value, done: true };
-              return obj3;
-            } else {
-              closure_1 = tmp2;
-              closure_0 = tmp5;
-              closure_128_0 = undefined;
-              const HTTP = channelId(closure_2_2[10]).HTTP;
-              const obj4 = { url: closure_2_10.INSTANT_INVITES(closure_0), retries: 3, oldFormErrors: true, rejectWithError: true };
-              v1 = 1;
-              v3 = 1;
-              const obj5 = { value: HTTP.get(obj4), done: false };
-              return obj5;
-            }
-          } else if (arg0 === 1) {
-            v3 = 3;
+  const tmp = closure_12();
+  [first, dependencyMap] = react.useState([]);
+  [first1, closure_3] = react.useState(true);
+  first(5590)(() => {
+    function fetchInvites() {
+      return obj(...arguments);
+    }
+    let obj = function _fetchInvites2() {
+      obj = _asyncToGenerator(async (arg0, value) => {
+        let v1;
+        let v3;
+        if (c3 === 2) {
+          c3 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
             throw value;
           } else if (arg0 === 2) {
-            v3 = 3;
-            let obj = { value, done: true };
-            return obj;
+            const obj2 = { value, done: true };
+            return obj2;
           } else {
-            const body = value.body;
-            closure_128_0 = body.map((item) => {
-              const obj = {};
-              const merged = Object.assign(item);
-              ({ max_uses: obj.maxUses, max_age: obj.maxAge, created_at: obj.createdAt } = item);
-              return new closure_1_8(obj);
-            });
-            v1(closure_128_0);
-            v3(false);
-            v3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
-        } catch (tmp13) {
-          v3 = tmp;
-          throw tmp13;
+        } else {
+          try {
+            let closure_0;
+            c3 = 2;
+            if (0 === c2) {
+              if (arg0 === 1) {
+                c3 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c3 = 3;
+                const obj3 = { value, done: true };
+                return obj3;
+              } else {
+                let closure_1 = tmp;
+                closure_0 = undefined;
+                const HTTP = closure_2_0(closure_2_2[11]).HTTP;
+                const obj4 = { url: closure_2_10.INSTANT_INVITES(closure_0), retries: 3, oldFormErrors: true, rejectWithError: true };
+                const get = HTTP.get;
+                c2 = 1;
+                c3 = 1;
+                const obj5 = { value: get(obj4), done: false };
+                return obj5;
+              }
+            } else if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value, done: true };
+              return obj;
+            } else {
+              const body = value.body;
+              closure_0 = body.map((item) => {
+                obj = {};
+                const merged = Object.assign(item);
+                ({ max_uses: obj.maxUses, max_age: obj.maxAge, created_at: obj.createdAt } = item);
+                const tmp2 = new closure_1_8(obj);
+                return tmp2;
+              });
+              c2(closure_0);
+              c3(false);
+              c3 = 3;
+              return { value: "IconComponent", done: "IconComponent" };
+            }
+          } catch (tmp12) {
+            c3 = 3;
+            throw tmp12;
+          }
         }
-      }
+      });
+      return obj(...arguments);
     };
-    (function fetchInvites() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
-    })().catch(() => {
+    const promise = fetchInvites();
+    promise.catch(() => {
       closure_1_3(false);
     });
   });
-  const tmp7 = _slicedToArray(noop.useState(21), 2);
-  _slicedToArray = tmp7[1];
+  [first2, _slicedToArray] = react.useState(21);
   const items = [first];
-  const memo = noop.useMemo(() => _modDef12.sortBy(first, (inviter) => {
-    inviter = inviter.inviter;
-    let str;
-    if (inviter != null) {
-      if (inviter.username != null) {
-        str = str2.toLowerCase();
+  const memo = react.useMemo(() => {
+    const obj = _modDef12;
+    return obj.sortBy(first, (inviter) => {
+      inviter = inviter.inviter;
+      let str;
+      if (inviter != null) {
+        if (inviter.username != null) {
+          str = str2.toLowerCase();
+        }
       }
-    }
-    if (str == null) {
-      str = "";
-    }
-    return str;
-  }), items);
-  const effect = noop.useEffect(() => {
+      if (str == null) {
+        str = "";
+      }
+      return str;
+    });
+  }, items);
+  const effect = react.useEffect(() => {
     closure_4(21);
   }, []);
   [][0] = first;
-  const callback = noop.useCallback((code) => code.code, []);
-  if (tmp3[0]) {
-    let tmp14 = jsx(channelId(6646).SceneLoadingIndicator, {});
+  const callback = react.useCallback((code) => code.code, []);
+  if (first1) {
+    tmp16 = jsx(channelId(6535).SceneLoadingIndicator, {});
   } else if (0 === first.length) {
-    let obj2 = { lightSource: tmp4(10606), darkSource: tmp4(10607), title: null, body: null };
-    const intl = channelId(1115).intl;
-    obj2.title = intl.string(channelId(1115).t["+nLJkZ"]);
-    const intl2 = channelId(1115).intl;
-    obj2.body = intl2.string(channelId(1115).t.F53CAc);
-    tmp14 = jsx(channelId(1177).EmptyState, { lightSource: tmp4(10606), darkSource: tmp4(10607), title: null, body: null });
+    const EmptyState = channelId(1188).EmptyState;
+    const intl = channelId(1126).intl;
+    const intl2 = channelId(1126).intl;
+    tmp16 = <EmptyState lightSource={tmp5(10687)} darkSource={tmp5(10688)} title={intl.string(channelId(1126).t["+nLJkZ"])} body={intl2.string(channelId(1126).t.F53CAc)} />;
   } else {
-    let obj = { style: tmp.list, data: memo, keyExtractor: callback, renderItem: tmp11, initialNumToRender: 10, windowSize: tmp7[0] };
-    tmp14 = <closure_7 style={tmp.list} data={memo} keyExtractor={callback} renderItem={tmp11} initialNumToRender={10} windowSize={tmp7[0]} />;
+    tmp16 = <closure_7 style={tmp.list} data={memo} keyExtractor={callback} renderItem={tmp13} initialNumToRender={10} windowSize={first2} />;
   }
-  return tmp14;
-}
-get_ActivityIndicator = fn(17);
-({ Platform, View: metroRequire, FlatList: closure_7 } = get_ActivityIndicator);
-const ChannelSettingsStore = fn(8272);
-const Constants = fn(1074);
-({ ChannelSettingsSections: closure_9, Endpoints: c10 } = Constants);
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
-let closure_12 = createStyles.createStyles({ list: { paddingTop: 8 } });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/instant_invite/native/components/GroupDMInviteManagementScreen.tsx");
-
-export default noop.memo(function GroupDMInviteManagementScreen(channelId) {
+  return tmp16;
+});
+let memo = react.memo;
+ReactCompilerGating = ReactCompilerGating_mod;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMInviteManagementScreen(arg0) {
+  let channelId;
+  let intl;
+  let onClose;
+  let tmpResult;
+  const obj = channelId(576);
+  const cResult = obj.c(5);
+  ({ channelId, onClose } = arg0);
+  if (cResult[0] === channelId) {
+    let tmp4;
+    let tmp5;
+    if (cResult[1] === onClose) {
+      tmp4 = cResult[2];
+    }
+    if (cResult[3] !== tmp4) {
+      const tmp8 = jsx(channelId(6496).Navigator, { screens: tmp4, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
+      cResult[3] = tmp4;
+      cResult[4] = tmp8;
+      tmp5 = tmp8;
+    } else {
+      tmp5 = cResult[4];
+    }
+    return tmp5;
+  }
+  const obj3 = {};
+  const INSTANT_INVITES_MANAGEMENT = constants.INSTANT_INVITES_MANAGEMENT;
+  const obj4 = {
+    title: intl.string(channelId(1126).t.OQ9MKu),
+    headerLeft: tmpResult.getHeaderCloseButton(onClose),
+    render() {
+      const obj = { channelId };
+      return closure_2_11(closure_2_13, obj);
+    },
+    impressionName: channelId(1260).ImpressionNames.GDM_SETTINGS_INVITES
+  };
+  intl = tmp(1126).intl;
+  obj3[INSTANT_INVITES_MANAGEMENT] = obj4;
+  cResult[0] = channelId;
+  cResult[1] = onClose;
+  cResult[2] = obj3;
+  tmp4 = obj3;
+  tmpResult = channelId(6010);
+}) : (function GroupDMInviteManagementScreen(channelId) {
   channelId = channelId.channelId;
   const onClose = channelId.onClose;
   const items = [channelId, onClose];
-  const memo = noop.useMemo(() => {
-    const obj = {};
-    const obj2 = { title: null, headerLeft: null, render: null, impressionName: null };
-    const intl = util.intl;
-    obj2.title = intl.string(util.t.OQ9MKu);
-    obj2.headerLeft = NavigatorHeader.getHeaderCloseButton(onClose);
-    obj2.render = function render() {
-      return <GroupDMInviteManagement channelId={channelId} />;
+  const memo = react.useMemo(() => {
+    let intl;
+    let obj3;
+    let closure_0 = channelId;
+    let obj = {};
+    const INSTANT_INVITES_MANAGEMENT = constants.INSTANT_INVITES_MANAGEMENT;
+    const obj2 = {
+      title: intl.string(intl3.t.OQ9MKu),
+      headerLeft: obj3.getHeaderCloseButton(onClose),
+      render() {
+        const obj = { channelId };
+        return closure_2_11(closure_2_13, obj);
+      },
+      impressionName: discord_common_AnalyticsUtils.ImpressionNames.GDM_SETTINGS_INVITES
     };
-    obj2.impressionName = discord_common_AnalyticsUtils.ImpressionNames.GDM_SETTINGS_INVITES;
-    obj[constants.INSTANT_INVITES_MANAGEMENT] = obj2;
+    intl = intl3.intl;
+    obj[INSTANT_INVITES_MANAGEMENT] = obj2;
+    obj3 = NavigatorHeader;
     return obj;
   }, items);
-  return jsx(channelId(6607).Navigator, { screens: memo, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
-});
+  return jsx(channelId(6496).Navigator, { screens: memo, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
+}));
+const result = size.fileFinishedImporting("modules/instant_invite/native/components/GroupDMInviteManagementScreen.tsx");
+
+export default memoResult;

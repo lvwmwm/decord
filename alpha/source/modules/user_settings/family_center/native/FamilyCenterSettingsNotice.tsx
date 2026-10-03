@@ -1,32 +1,68 @@
-// Module ID: 14562
-// Function ID: 14563
+// Module ID: 14618
+// Function ID: 14619
 // Name: FamilyCenterSettingsNotice
-// Dependencies: [19, 8031, 21, 8291, 14458, 2486, 7193, 4858, 2]
-// Exports: default
+// Dependencies: [19, 8075, 21, 558, 576, 8295, 7096, 4903, 14493, 2493, 2]
 
-// Module 14562 (FamilyCenterSettingsNotice)
-import _modDef2486 from "module_2486" /* 2486 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4858 */;
-import LayerActionCreators from "LayerActionCreators" /* 7193 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14458 */;
-import noop from "module_19" /* 19 */;
+// Module 14618 (FamilyCenterSettingsNotice)
+import Fragment from "Fragment" /* 21 */;
+import _modDef2493 from "module_2493" /* 2493 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4903 */;
+import LayerActionCreators from "LayerActionCreators" /* 7096 */;
+import Constants from "Constants" /* 8075 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14493 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SafetySettingsNoticeType = fn(8031).SafetySettingsNoticeType;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const SafetySettingsNoticeType = Constants.SafetySettingsNoticeType;
+const jsx = Fragment.jsx;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let activeLinkUserIds;
+  let tmp3;
+  let obj = activeLinkUserIds(576);
+  const cResult = obj.c(5);
+  let obj2 = activeLinkUserIds(8295);
+  activeLinkUserIds = obj2.useActiveLinkUserIds();
+  if (cResult[0] !== activeLinkUserIds) {
+    const fn = function o() {
+      const obj = LayerActionCreators;
+      obj.popLayer();
+      const obj2 = ChannelActionCreatorsDefault;
+      const obj3 = { recipientIds: activeLinkUserIds };
+      obj2.openPrivateChannel(obj3);
+    };
+    cResult[0] = activeLinkUserIds;
+    cResult[1] = fn;
+    tmp3 = fn;
+  } else {
+    tmp3 = cResult[1];
+  }
+  if (cResult[2] === tmp3) {
+    let tmp4;
+    if (cResult[3] === activeLinkUserIds.length) {
+      tmp4 = cResult[4];
+    }
+    return tmp4;
+  }
+  SafetySettingsNoticeDefault;
+  const tmp6 = <tmp5 label={_modDef2493.i284fU} noticeType={SafetySettingsNoticeType.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE} labelHook={tmp3} count={activeLinkUserIds.length} />;
+  cResult[2] = tmp3;
+  cResult[3] = activeLinkUserIds.length;
+  cResult[4] = tmp6;
+  tmp4 = tmp6;
+}) : (() => {
+  let activeLinkUserIds;
+  let obj = activeLinkUserIds(8295);
+  activeLinkUserIds = obj.useActiveLinkUserIds();
+  SafetySettingsNoticeDefault;
+  return <tmp label={_modDef2493.i284fU} noticeType={SafetySettingsNoticeType.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE} labelHook={function labelHook() {
+    const obj = LayerActionCreators;
+    obj.popLayer();
+    const obj2 = ChannelActionCreatorsDefault;
+    const obj3 = { recipientIds: activeLinkUserIds };
+    obj2.openPrivateChannel(obj3);
+  }} count={activeLinkUserIds.length} />;
+});
 const result = size.fileFinishedImporting("modules/user_settings/family_center/native/FamilyCenterSettingsNotice.tsx");
 
-export default function FamilyCenterSettingsParentalControlsNotice() {
-  activeLinkUserIds = activeLinkUserIds(8291).useActiveLinkUserIds();
-  const obj2 = { label: null, noticeType: null, labelHook: null, count: null };
-  let obj = activeLinkUserIds(8291);
-  obj2.label = _modDef2486.i284fU;
-  obj2.noticeType = SafetySettingsNoticeType.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE;
-  obj2.labelHook = function labelHook() {
-    LayerActionCreators.popLayer();
-    ChannelActionCreatorsDefault.openPrivateChannel({ recipientIds: activeLinkUserIds });
-  };
-  obj2.count = activeLinkUserIds.length;
-  return jsx(SafetySettingsNoticeDefault, { label: null, noticeType: null, labelHook: null, count: null });
-};
+export default tmp3;

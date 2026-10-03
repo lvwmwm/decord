@@ -1,65 +1,81 @@
-// Module ID: 12076
-// Function ID: 12077
+// Module ID: 12011
+// Function ID: 12012
 // Name: useEventsButtonProps
-// Dependencies: [19, 4860, 5026, 5027, 504, 9136, 5548, 6067, 9169, 4809, 12077, 1981, 1115, 12081, 2]
+// Dependencies: [19, 4905, 5071, 5072, 504, 9160, 5841, 5960, 9174, 4854, 12012, 1987, 1126, 12016, 2]
 // Exports: default
 
-// Module 12076 (useEventsButtonProps)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
-import useGuildScheduledEventsDefault from "useGuildScheduledEvents" /* 9136 */;
-import noop from "module_19" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 4860 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5026 */;
+// Module 12011 (useEventsButtonProps)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import ReadStateConstants from "ReadStateConstants" /* 5072 */;
+import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 5841 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 5960 */;
+import useGuildScheduledEventsDefault from "useGuildScheduledEvents" /* 9160 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9174 */;
+import react from "react" /* 19 */;
+import ReadStateStore from "ReadStateStore" /* 4905 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const ReadStateTypes = fn(5027).ReadStateTypes;
-const size = fn(2);
+const ReadStateTypes = ReadStateConstants.ReadStateTypes;
 let result = size.fileFinishedImporting("modules/guild_scheduled_events/native/hooks/useEventsButtonProps.tsx");
 
 export default function useEventsButtonProps(id) {
+  let hasUnread;
+  let mentionCount;
+  let name;
+  let user;
   _require = id;
+  const tmp = _require;
+  let tmp2 = dependencyMap;
+  let obj = require("get initialized");
   const items = [ReadStateStore];
   const items1 = [id.id];
-  const stateFromStoresObject = require("initialize").useStateFromStoresObject(items, () => ({ hasUnread: ReadStateStore.hasUnread(user.id, ReadStateTypes.GUILD_EVENT), mentionCount: ReadStateStore.getMentionCount(user.id, ReadStateTypes.GUILD_EVENT) }), items1);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    const obj = { hasUnread: ReadStateStore.hasUnread(user.id, ReadStateTypes.GUILD_EVENT), mentionCount: ReadStateStore.getMentionCount(user.id, ReadStateTypes.GUILD_EVENT) };
+    return obj;
+  }, items1);
   ({ hasUnread, mentionCount } = stateFromStoresObject);
-  let obj = require("initialize");
   const items2 = [UserGuildSettingsStore];
-  const eventsMuted = require("initialize").useStateFromStores(items2, () => UserGuildSettingsStore.isMuteScheduledEventsEnabled(user.id));
+  const obj2 = require("get initialized");
+  const eventsMuted = obj2.useStateFromStores(items2, () => UserGuildSettingsStore.isMuteScheduledEventsEnabled(user.id));
   const arr4 = useGuildScheduledEventsDefault(id.id);
   const items3 = [id];
   const items4 = [id.id];
-  const handlePress = noop.useCallback(() => {
+  const handlePress = react.useCallback(() => {
+    let result;
+    const obj = useShowMemberVerificationGate;
     if (obj.shouldShowMembershipVerificationGate(user.id)) {
-      let result = tmp(6067).openMemberVerificationModal(tmp3.id);
-      const tmpResult = tmp(6067);
+      const tmpResult = MemberVerificationModalActionCreators;
+      result = tmpResult.openMemberVerificationModal(tmp3.id);
     } else {
-      result = tmp(9169).openGuildEventListActionSheet(tmp3);
-      const tmpResult2 = tmp(9169);
+      const tmpResult2 = GuildScheduledEventModalActionCreators;
+      result = tmpResult2.openGuildEventListActionSheet(tmp3);
     }
     return result;
   }, items3);
-  const handleLongPress = noop.useCallback(() => {
-    const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequireImpl(12077, dependencyMap.paths), "UpcomingEventsLongPress-" + user.id, { guildId: user.id });
+  const handleLongPress = react.useCallback(() => {
+    const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+    ActionSheetActionCreatorsDefault;
+    const obj = { guildId: user.id };
+    const tmp2 = asyncRequire(12012, dependencyMap.paths);
+    openLazy(tmp2, "UpcomingEventsLongPress-" + user.id, obj);
   }, items4);
   if (arr4.length > 0) {
-    const intl2 = tmp(1115).intl;
+    const intl2 = tmp(1126).intl;
     const obj3 = { number: arr4.length };
-    let name = intl2.formatToPlainString(tmp(1115).t.IBdqSu, obj3);
+    name = intl2.formatToPlainString(tmp(1126).t.IBdqSu, obj3);
   } else {
-    const intl = tmp(1115).intl;
-    name = intl.string(tmp(1115).t.tlopTM);
+    const intl = tmp(1126).intl;
+    name = intl.string(tmp(1126).t.tlopTM);
   }
-  let mode = tmp(12081).ChannelModes.DEFAULT;
-  let tmp8 = hasUnread;
-  if (hasUnread) {
-    tmp8 = !eventsMuted;
-  }
+  let mode = tmp(12016).ChannelModes.DEFAULT;
+  const tmp8 = hasUnread && !eventsMuted;
   if (tmp8) {
-    mode = tmp(12081).ChannelModes.UNREAD_IMPORTANT;
+    mode = tmp(12016).ChannelModes.UNREAD_IMPORTANT;
   }
   return { hasUnread, mentionCount, mode, name, eventsMuted, handlePress, handleLongPress };
 };

@@ -1,38 +1,41 @@
-// Module ID: 1115
-// Function ID: 1116
-// Name: util
-// Dependencies: [19, 1074, 21, 1116, 1117, 1154, 1177, 13879, 2, 13880, 13883]
+// Module ID: 1126
+// Function ID: 1127
+// Name: intl
+// Dependencies: [19, 1085, 21, 1127, 1128, 1165, 1188, 13946, 558, 2, 13947, 13950]
 // Exports: getSystemLocale, useSyncMessages
 
-// Module 1115 (util)
-import NativeDeviceLocaleModule from "NativeDeviceLocaleModule" /* 1116 */;
-import intl_util from "intl/util" /* 1117 */;
-import native from "native" /* 1177 */;
-import migration from "migration" /* 13879 */;
-import _modDef13883 from "module_13883" /* 13883 */;
-import noop from "module_19" /* 19 */;
+// Module 1126 (intl)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1085 */;
+import react_native from "react-native" /* 1127 */;
+import native from "native" /* 1188 */;
+import migration from "migration" /* 13946 */;
+import defaultMessageProxy from "defaultMessageProxy" /* 13947 */;
+import _modDef13950 from "module_13950" /* 13950 */;
+import react from "react" /* 19 */;
+import util from "intl/util" /* 1128 */;
+import module_1165 from "module_1165" /* 1165 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Fonts = fn(1074).Fonts;
-const jsx = fn(21).jsx;
+const Fonts = Constants.Fonts;
+const jsx = Fragment.jsx;
 let obj = { strong: { fontFamily: Fonts.PRIMARY_SEMIBOLD }, italic: { fontStyle: "italic" }, code: { fontFamily: Fonts.CODE_NORMAL }, del: { textDecorationLine: "line-through", textDecorationStyle: "solid" } };
-let _default = fn(1116).default;
+let _default = react_native.default;
 let str = "en-US";
 if (null != _default) {
   str = _default.getConstants().Language;
 }
 function getSystemLocale(arg0) {
   let Language = arg0;
-  const _default = NativeDeviceLocaleModule.default;
+  const _default = react_native.default;
   if (null != _default) {
     Language = _default.getConstants().Language;
   }
   return Language;
 }
-const util = fn(1117);
 const normalizedLocale = util.getNormalizedLocale(str, "en-US");
-const module_1154 = fn(1154);
-const reactFormatter = module_1154.makeReactFormatter({
+const obj2 = {
   $i(children, arg1) {
     obj = { style: obj.italic, children };
     return jsx(native.LegacyText, { style: obj.italic, children }, arg1);
@@ -53,23 +56,29 @@ const reactFormatter = module_1154.makeReactFormatter({
     return jsx(native.LegacyText, { style: obj.code, children }, arg1);
   },
   $link(children, arg1, arg2) {
+    let tmp;
     [tmp] = arg2;
     return jsx(migration.IntlLink, { target: tmp, children }, arg1);
   }
-});
-const intlManager = new fn(1154).IntlManager({ initialLocale: normalizedLocale, defaultLocale: "en-US" });
-const withFormattersResult = intlManager.withFormatters({ format: reactFormatter, formatToPlainString: fn(1154).stringFormatter, formatToMarkdownString: fn(1154).markdownFormatter, formatToParts: fn(1154).astFormatter });
-const size = fn(2);
-const result = size.fileFinishedImporting("intl/index.native.tsx");
+};
+const reactFormatter = module_1165.makeReactFormatter(obj2);
+const obj3 = { initialLocale: normalizedLocale, defaultLocale: "en-US" };
+const intlManager = new module_1165.IntlManager(obj3);
+const obj4 = { format: reactFormatter, formatToPlainString: module_1165.stringFormatter, formatToMarkdownString: module_1165.markdownFormatter, formatToParts: module_1165.astFormatter };
+const withFormattersResult = intlManager.withFormatters(obj4);
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const result1 = size.fileFinishedImporting("intl/index.native.tsx");
 
 export const intl = withFormattersResult;
 export { getSystemLocale };
-export const getAvailableLocales = fn(1117).getAvailableLocales;
-export const getLanguages = fn(1117).getLanguages;
-export const useSyncMessages = function useSyncMessages(arg0) {
-  return intl_util.useSyncMessages(arg0, withFormattersResult);
+export const getAvailableLocales = util.getAvailableLocales;
+export const getLanguages = util.getLanguages;
+export const useSyncMessages = (arg0) => {
+  obj = util;
+  return obj.useSyncMessages(arg0, withFormattersResult);
 };
-export const t = fn(13880)._defaultMessages;
-export const international = _modDef13883;
+export const t = defaultMessageProxy._defaultMessages;
+export const international = _modDef13950;
 export const systemLocale = str;
 export const initialLocale = normalizedLocale;

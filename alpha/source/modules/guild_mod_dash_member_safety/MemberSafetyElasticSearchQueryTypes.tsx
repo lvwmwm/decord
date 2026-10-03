@@ -1,27 +1,28 @@
-// Module ID: 7105
-// Function ID: 7106
+// Module ID: 7006
+// Function ID: 7007
 // Name: MemberSafetyElasticSearchQueryTypes
-// Dependencies: [1091, 2]
+// Dependencies: [1102, 2]
 // Exports: createMemberSearchCursor
 
-// Module 7105 (MemberSafetyElasticSearchQueryTypes)
-import DurationsDefault from "Durations" /* 1091 */;
+// Module 7006 (MemberSafetyElasticSearchQueryTypes)
+import DurationsDefault from "Durations" /* 1102 */;
+import size from "module_2" /* 2 */;
 
 const result = 2 * DurationsDefault.Millis.DAY;
-const size = fn(2);
 const result1 = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetyElasticSearchQueryTypes.tsx");
 
 export const UNUSUAL_DM_COMPARISON_DELTA = result;
 export const createMemberSearchCursor = function createMemberSearchCursor(joinedAt) {
+  let date;
   joinedAt = joinedAt.joinedAt;
   let tmp2 = null;
   if (null != joinedAt) {
-    const obj = { guild_joined_at: null, user_id: null };
     const _Date = Date;
-    const date = new Date(joinedAt);
-    obj.guild_joined_at = date.getTime();
-    obj.user_id = tmp;
+    const self = this;
+    const self2 = this;
+    const obj = { guild_joined_at: date.getTime(), user_id: tmp };
     tmp2 = obj;
+    date = new Date(joinedAt);
   }
   return tmp2;
 };

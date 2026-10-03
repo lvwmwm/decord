@@ -1,31 +1,32 @@
-// Module ID: 18000
-// Function ID: 18001
+// Module ID: 18086
+// Function ID: 18087
 // Name: native_required_assets_misc
-// Dependencies: [1401, 1402, 1403, 1404, 1405, 1419, 1420, 1421, 1422, 1423, 1424, 1425, 1426, 18001, 18002, 18003, 18004, 18005, 18006, 18007, 2]
+// Dependencies: [1406, 1407, 1408, 1409, 1410, 1424, 1425, 1426, 1427, 1428, 1429, 1430, 1431, 18087, 18088, 18089, 18090, 18091, 18092, 18093, 2]
 
-// Module 18000 (native_required_assets_misc)
-import _modDef1401 from "module_1401" /* 1401 */;
-import _modDef1402 from "module_1402" /* 1402 */;
-import _modDef1403 from "module_1403" /* 1403 */;
-import _modDef1404 from "module_1404" /* 1404 */;
-import _modDef1405 from "module_1405" /* 1405 */;
-import _modDef1419 from "module_1419" /* 1419 */;
-import _modDef1420 from "module_1420" /* 1420 */;
-import _modDef1421 from "module_1421" /* 1421 */;
-import _modDef1422 from "module_1422" /* 1422 */;
-import _modDef1423 from "module_1423" /* 1423 */;
-import _modDef1424 from "module_1424" /* 1424 */;
-import _modDef1425 from "module_1425" /* 1425 */;
-import _modDef1426 from "module_1426" /* 1426 */;
-import _modDef18001 from "module_18001" /* 18001 */;
-import _modDef18002 from "module_18002" /* 18002 */;
-import _modDef18003 from "module_18003" /* 18003 */;
-import _modDef18004 from "module_18004" /* 18004 */;
-import _modDef18005 from "module_18005" /* 18005 */;
-import _modDef18006 from "module_18006" /* 18006 */;
-import _modDef18007 from "module_18007" /* 18007 */;
+// Module 18086 (native_required_assets_misc)
+import AssetRegistryDefault from "AssetRegistry" /* 1406 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 1407 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 1408 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 1409 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 1410 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 1424 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 1425 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 1426 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 1427 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 1428 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 1429 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 1430 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 1431 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 18087 */;
+import AssetRegistryDefault15 from "AssetRegistry" /* 18088 */;
+import AssetRegistryDefault16 from "AssetRegistry" /* 18089 */;
+import AssetRegistryDefault17 from "AssetRegistry" /* 18090 */;
+import AssetRegistryDefault18 from "AssetRegistry" /* 18091 */;
+import AssetRegistryDefault19 from "AssetRegistry" /* 18092 */;
+import AssetRegistryDefault20 from "AssetRegistry" /* 18093 */;
 import size from "module_2" /* 2 */;
 
+const obj = { DefaultAvatar0: AssetRegistryDefault, DefaultAvatar1: AssetRegistryDefault2, DefaultAvatar2: AssetRegistryDefault3, DefaultAvatar3: AssetRegistryDefault4, DefaultAvatar4: AssetRegistryDefault5, DefaultGroup0: AssetRegistryDefault6, DefaultGroup1: AssetRegistryDefault7, DefaultGroup2: AssetRegistryDefault8, DefaultGroup3: AssetRegistryDefault9, DefaultGroup4: AssetRegistryDefault10, DefaultGroup5: AssetRegistryDefault11, DefaultGroup6: AssetRegistryDefault12, DefaultGroup7: AssetRegistryDefault13, PoopDark: AssetRegistryDefault14, PoopLight: AssetRegistryDefault15, RoleSubscriptionBadge: AssetRegistryDefault16, RoleSubscriptionLanyard: AssetRegistryDefault17, RoleSubscriptionPurchaseCard: AssetRegistryDefault18, SummaryIndicatorEnd: AssetRegistryDefault19, SummaryIndicatorStart: AssetRegistryDefault20 };
 const result = size.fileFinishedImporting("modules/react_asset/native/native_required_assets_misc.tsx");
 
-export const NATIVE_REQUIRED_ASSETS_MISC = { DefaultAvatar0: _modDef1401, DefaultAvatar1: _modDef1402, DefaultAvatar2: _modDef1403, DefaultAvatar3: _modDef1404, DefaultAvatar4: _modDef1405, DefaultGroup0: _modDef1419, DefaultGroup1: _modDef1420, DefaultGroup2: _modDef1421, DefaultGroup3: _modDef1422, DefaultGroup4: _modDef1423, DefaultGroup5: _modDef1424, DefaultGroup6: _modDef1425, DefaultGroup7: _modDef1426, PoopDark: _modDef18001, PoopLight: _modDef18002, RoleSubscriptionBadge: _modDef18003, RoleSubscriptionLanyard: _modDef18004, RoleSubscriptionPurchaseCard: _modDef18005, SummaryIndicatorEnd: _modDef18006, SummaryIndicatorStart: _modDef18007 };
+export const NATIVE_REQUIRED_ASSETS_MISC = obj;

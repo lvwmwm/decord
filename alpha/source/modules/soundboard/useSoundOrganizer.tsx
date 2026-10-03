@@ -1,39 +1,44 @@
-// Module ID: 17131
-// Function ID: 17132
+// Module ID: 17207
+// Function ID: 17208
 // Name: useSoundOrganizer
 // Dependencies: [11, 2]
 // Exports: sortSoundsOldestToNewestFavoriteDate, useSoundOrganizer
 
-// Module 17131 (useSoundOrganizer)
+// Module 17207 (useSoundOrganizer)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import size from "module_2" /* 2 */;
 
+const f129015 = (available, available2) => {
+  let num;
+  if (!available.available) {
+    let num2 = 0;
+    if (!available.available) {
+      num2 = 0;
+      if (available2.available) {
+        num2 = 1;
+      }
+    }
+    num = num2;
+  } else {
+    num = -1;
+  }
+  return num;
+};
 function sortSoundsOldestToNewestCreationDate(arg0) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
   }
   const items = [...arg0];
-  const sorted = items.sort((soundId, soundId2) => SnowflakeUtilsDefault.compare(soundId.soundId, soundId2.soundId));
+  const sorted = items.sort((soundId, soundId2) => {
+    const obj = SnowflakeUtilsDefault;
+    return obj.compare(soundId.soundId, soundId2.soundId);
+  });
   let sorted1 = sorted;
   if (flag) {
     const items1 = [];
-    HermesBuiltin.arraySpread(sorted, 0);
-    sorted1 = items1.sort((available, available2) => {
-      if (!available.available) {
-        let num2 = 0;
-        if (!available.available) {
-          num2 = 0;
-          if (available2.available) {
-            num2 = 1;
-          }
-        }
-        let num = num2;
-      } else {
-        num = -1;
-      }
-      return num;
-    });
+    HermesBuiltin.arraySpread(items1, sorted, 0);
+    sorted1 = items1.sort(f129015);
   }
   return sorted1;
 }
@@ -48,22 +53,9 @@ export const sortSoundsOldestToNewestFavoriteDate = function sortSoundsOldestToN
   let sorted = arg0;
   if (flag) {
     const items = [];
-    HermesBuiltin.arraySpread(arg0, 0);
-    sorted = items.sort((available, available2) => {
-      if (!available.available) {
-        let num2 = 0;
-        if (!available.available) {
-          num2 = 0;
-          if (available2.available) {
-            num2 = 1;
-          }
-        }
-        let num = num2;
-      } else {
-        num = -1;
-      }
-      return num;
-    });
+    let num = 0;
+    HermesBuiltin.arraySpread(items, arg0, 0);
+    sorted = items.sort(f129015);
   }
   return sorted;
 };

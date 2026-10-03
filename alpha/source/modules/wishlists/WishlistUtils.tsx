@@ -1,58 +1,55 @@
-// Module ID: 12867
-// Function ID: 12868
+// Module ID: 12922
+// Function ID: 12923
 // Name: WishlistUtils
-// Dependencies: [32, 6009, 8430, 8431, 8432, 1074, 1374, 1115, 6839, 2]
+// Dependencies: [32, 5696, 8434, 8435, 8436, 1085, 1379, 1126, 6732, 2]
 // Exports: buildReorderedWishlistData, createNitroSuggestedSku, isEligibleWishlistItemOnMobile
 
-// Module 12867 (WishlistUtils)
-import util from "util" /* 1115 */;
-import StorefrontUtils from "StorefrontUtils" /* 6839 */;
-import _slicedToArray from "module_32" /* 32 */;
-import SKURecord from "SKURecord" /* 6009 */;
+// Module 12922 (WishlistUtils)
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import StorefrontUtils from "StorefrontUtils" /* 6732 */;
+import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 8434 */;
+import PremiumWishlistItemRecord from "PremiumWishlistItemRecord" /* 8435 */;
+import SKUWishlistItemRecord from "SKUWishlistItemRecord" /* 8436 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import SKURecord from "SKURecord" /* 5696 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_4 = fn(8430).isCollectiblesWishlistItemRecord;
-let closure_5 = fn(8431).isPremiumWishlistItemRecord;
-const isSKUWishlistItemRecord = fn(8432).isSKUWishlistItemRecord;
-const SKUProductLines = fn(1074).SKUProductLines;
-const PremiumSubscriptionSKUs = fn(1374).PremiumSubscriptionSKUs;
-const size = fn(2);
+let closure_4 = CollectiblesWishlistItemRecord.isCollectiblesWishlistItemRecord;
+let closure_5 = PremiumWishlistItemRecord.isPremiumWishlistItemRecord;
+const isSKUWishlistItemRecord = SKUWishlistItemRecord.isSKUWishlistItemRecord;
+const SKUProductLines = Constants.SKUProductLines;
+const PremiumSubscriptionSKUs = PremiumConstants.PremiumSubscriptionSKUs;
 const result = size.fileFinishedImporting("modules/wishlists/WishlistUtils.tsx");
 
 export const createNitroSuggestedSku = function createNitroSuggestedSku() {
-  const obj = { id: PremiumSubscriptionSKUs.TIER_2, productLine: SKUProductLines.PREMIUM, name: null, features: null, genres: null, manifests: null, availableRegions: null, locales: null, bundledSkuIds: null, selectedOptions: null, eligibleOffers: null, prices: null };
-  const intl = util.intl;
-  obj.name = intl.string(util.t.lG6a5x);
-  obj.features = new Set();
-  const set = new Set();
-  obj.genres = new Set();
-  obj.manifests = [];
-  obj.availableRegions = [];
-  obj.locales = [];
-  obj.bundledSkuIds = [];
-  obj.selectedOptions = [];
-  obj.eligibleOffers = [];
-  obj.prices = {};
-  const set1 = new Set();
-  return new SKURecord(obj);
+  let intl;
+  const obj = { id: PremiumSubscriptionSKUs.TIER_2, productLine: SKUProductLines.PREMIUM, name: intl.string(intl2.t.lG6a5x), features: new Set(), genres: new Set(), manifests: [], availableRegions: [], locales: [], bundledSkuIds: [], selectedOptions: [], eligibleOffers: [], prices: {} };
+  intl = intl2.intl;
+  new Set();
+  new Set();
+  const tmp3 = new SKURecord(obj);
+  return tmp3;
 };
 export const isEligibleWishlistItemOnMobile = function isEligibleWishlistItemOnMobile(sku, isWishlistOwner) {
   isWishlistOwner = isWishlistOwner.isWishlistOwner;
   if (isSKUWishlistItemRecord(sku)) {
+    let tmp2;
     if (sku.sku.productLine === SKUProductLines.SOCIAL_LAYER_GAME_ITEM) {
       if (!isWishlistOwner) {
-        isWishlistOwner = StorefrontUtils.isSlayerSkuAvailableOnThisPlatform(sku.sku);
+        const obj = StorefrontUtils;
+        isWishlistOwner = obj.isSlayerSkuAvailableOnThisPlatform(sku.sku);
       }
-      let tmp2 = isWishlistOwner;
+      tmp2 = isWishlistOwner;
     }
     return tmp2;
   }
-  tmp2 = closure_4(sku);
-  if (!tmp2) {
-    tmp2 = closure_5(sku);
-  }
+  tmp2 = closure_4(sku) || closure_5(sku);
 };
 export const buildReorderedWishlistData = function buildReorderedWishlistData(set, arg1, arg2, arg3) {
+  let skuId2;
+  let skuId3;
   if (arg2 < arg3) {
     let skuId;
     if (arg1[arg3] != null) {
@@ -68,8 +65,8 @@ export const buildReorderedWishlistData = function buildReorderedWishlistData(se
     if (skuId1 == null) {
       skuId1 = null;
     }
-    let skuId3 = skuId1;
-    let skuId2 = skuId;
+    skuId3 = skuId1;
+    skuId2 = skuId;
   } else {
     skuId2 = undefined;
     if (arg1[arg3 - 1] != null) {
@@ -88,5 +85,6 @@ export const buildReorderedWishlistData = function buildReorderedWishlistData(se
   }
   const items = [...arg1];
   items.splice(arg3, 0, _slicedToArray(items.splice(arg2, 1), 1)[0]);
-  return { newWishlistData: set.set("items", items), previousSkuId: skuId2, nextSkuId: skuId3 };
+  const obj = { newWishlistData: set.set("items", items), previousSkuId: skuId2, nextSkuId: skuId3 };
+  return obj;
 };

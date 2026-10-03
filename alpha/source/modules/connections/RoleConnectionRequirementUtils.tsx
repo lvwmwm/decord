@@ -1,11 +1,11 @@
-// Module ID: 17698
-// Function ID: 17699
+// Module ID: 17784
+// Function ID: 17785
 // Name: RoleConnectionRequirementUtils
-// Dependencies: [5906, 2]
+// Dependencies: [6679, 2]
 // Exports: displayedValueFor, minDisplayedValueFor, realizedOperatorFor, storedValueFor
 
-// Module 17698 (RoleConnectionRequirementUtils)
-import Constants from "Constants" /* 5906 */;
+// Module 17784 (RoleConnectionRequirementUtils)
+import Constants from "Constants" /* 6679 */;
 import size from "module_2" /* 2 */;
 
 const OperatorTypes = Constants.OperatorTypes;
@@ -20,32 +20,38 @@ export const realizedOperatorFor = function realizedOperatorFor(operator) {
 };
 export const displayedValueFor = function displayedValueFor(value, realizedOperatorForResult) {
   let num = value;
+  const _Math = Math;
+  const _Number = Number;
   if (value == null) {
     num = 0;
   }
-  const rounded = Math.round(Number(num));
+  const roundResult = round(_Number(num));
   if (OperatorTypes.GREATER_THAN === realizedOperatorForResult) {
-    const _Math2 = Math;
-    return Math.max(1, rounded + 1);
+    const _Math3 = Math;
+    return Math.max(1, roundResult + 1);
   } else if (tmp2.LESS_THAN === realizedOperatorForResult) {
-    const _Math = Math;
-    return Math.max(0, rounded - 1);
+    const _Math2 = Math;
+    return Math.max(0, roundResult - 1);
   } else {
-    return rounded;
+    return roundResult;
   }
 };
 export const storedValueFor = function storedValueFor(TableSwitchRow, c7) {
   let num = TableSwitchRow;
+  const _Math = Math;
+  const _Number = Number;
   if (TableSwitchRow == null) {
     num = 0;
   }
-  const str = Math.round(Number(num));
+  const str = round(_Number(num));
   if (OperatorTypes.GREATER_THAN === c7) {
-    const _Math2 = Math;
-    return Math.max(0, str - 1).toString();
+    const _Math3 = Math;
+    const str3 = Math.max(0, str - 1);
+    return str3.toString();
   } else if (tmp.LESS_THAN === c7) {
-    const _Math = Math;
-    return Math.max(1, str + 1).toString();
+    const _Math2 = Math;
+    const str2 = Math.max(1, str + 1);
+    return str2.toString();
   } else {
     return str.toString();
   }

@@ -1,13 +1,13 @@
-// Module ID: 11053
-// Function ID: 11054
-// Name: NativeChatModule
+// Module ID: 9992
+// Function ID: 9993
+// Name: react-native
 // Dependencies: [17, 2]
 
-// Module 11053 (NativeChatModule)
-import _mod17 from "module_17" /* 17 */;
+// Module 9992 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const TurboModuleRegistry = _mod17.TurboModuleRegistry;
+const TurboModuleRegistry = react_native.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeChatModule");
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeChatModule.tsx");
 

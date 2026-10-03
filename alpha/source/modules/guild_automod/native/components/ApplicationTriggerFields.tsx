@@ -1,47 +1,92 @@
-// Module ID: 17588
-// Function ID: 17589
+// Module ID: 17676
+// Function ID: 17677
 // Name: ApplicationTriggerFields
-// Dependencies: [19, 21, 17589, 1115, 4841, 6185, 6103, 5481, 4809, 17591, 1981, 2]
+// Dependencies: [19, 21, 17677, 1126, 4886, 6074, 5993, 5609, 4854, 17679, 1987, 2]
 // Exports: default
 
-// Module 17588 (ApplicationTriggerFields)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
-import noop from "module_19" /* 19 */;
+// Module 17676 (ApplicationTriggerFields)
+import Fragment from "Fragment" /* 21 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/guild_automod/native/components/ApplicationTriggerFields.tsx");
 
 export default function ApplicationTriggerFields(rule) {
+  let TableRow;
+  let found;
+  let intl2;
+  let intl4;
+  let obj4;
+  let tmp5Result;
   rule = rule.rule;
   const onChangeRule = rule.onChangeRule;
   let guildBotApplications;
-  guildBotApplications = rule(guildBotApplications[2]).useGuildBotApplications(rule.guildId);
+  let tmp = rule;
+  let tmp2 = guildBotApplications;
+  let obj = rule(guildBotApplications[2]);
+  guildBotApplications = obj.useGuildBotApplications(rule.guildId);
   const intl = rule(guildBotApplications[3]).intl;
   const applicationId = rule.triggerMetadata.applicationId;
-  let obj = rule(guildBotApplications[2]);
+  const stringResult = intl.string(rule(guildBotApplications[3]).t.FKSiso);
   if (guildBotApplications != null) {
-    let found = guildBotApplications.find((id) => id.id === applicationId);
+    found = guildBotApplications.find((id) => id.id === applicationId);
   }
   if (null != guildBotApplications) {
+    let tmp5Result2;
     if (0 === guildBotApplications.length) {
-      let obj2 = { variant: "text-sm/normal", color: "text-muted", children: null };
-      const intl4 = tmp(tmp2[3]).intl;
-      obj2.children = intl4.string(tmp(tmp2[3]).t["7/h5vj"]);
-      let tmp5Result2 = applicationId(tmp(tmp2[4]).Text, obj2);
+      let obj2 = { variant: "text-sm/normal", color: "text-muted", children: intl4.string(tmp(tmp2[3]).t["7/h5vj"]) };
+      const Text = tmp(tmp2[4]).Text;
+      intl4 = tmp(tmp2[3]).intl;
+      tmp5Result2 = applicationId(Text, obj2);
     }
     return tmp5Result2;
   }
-  const obj3 = { title: intl.string(rule(guildBotApplications[3]).t.FKSiso), hasIcons: false, children: null };
-  const obj4 = { label: null, trailing: null, arrow: true, onPress: null };
-  const intl2 = tmp(tmp2[3]).intl;
-  obj4.label = intl2.string(rule(guildBotApplications[3]).t.tWkvsa);
+  const obj3 = { title: stringResult, hasIcons: false, children: applicationId(TableRow, obj4) };
+  const TableRowGroup = tmp(tmp2[5]).TableRowGroup;
+  obj4 = {
+    label: intl2.string(tmp(tmp2[3]).t.tWkvsa),
+    trailing: tmp5Result,
+    arrow: true,
+    onPress() {
+      let tmp;
+      if (null != guildBotApplications) {
+        let tmp2 = importDefault;
+        let obj = ActionSheetActionCreatorsDefault;
+        const obj2 = {
+          applications: tmp,
+          selectedApplicationId: applicationId,
+          onSelectApplication(dependencyMap) {
+              let name;
+              let closure_0 = dependencyMap;
+              const obj = { name, triggerMetadata: { applicationId: dependencyMap } };
+              const merged = Object.assign(rule);
+              const found = guildBotApplications.find((id) => id.id === closure_0);
+              name = undefined;
+              const tmp = onChangeRule;
+              const tmp2 = rule;
+              if (found != null) {
+                name = found.name;
+              }
+              if (name == null) {
+                name = tmp2.name;
+              }
+              return tmp(obj);
+            }
+        };
+        obj.openLazy(asyncRequire(17679, dependencyMap.paths), "AutomodSelectApplication", obj2);
+      }
+    }
+  };
+  TableRow = tmp(tmp2[6]).TableRow;
+  intl2 = tmp(tmp2[3]).intl;
   if (null == guildBotApplications) {
-    let tmp5Result = tmp5(tmp(tmp2[7]).Ellipsis, { variant: "primary", size: "sm" });
+    tmp5Result = tmp5(tmp(tmp2[7]).Ellipsis, { variant: "primary", size: "sm" });
   } else {
     let name;
+    const TrailingText = tmp(tmp2[6]).TableRow.TrailingText;
     if (found != null) {
       name = found.name;
     }
@@ -50,34 +95,7 @@ export default function ApplicationTriggerFields(rule) {
       name = intl3.string(tmp(tmp2[3]).t["V+Iv+U"]);
     }
     const obj5 = { text: name };
-    tmp5Result = tmp5(tmp(tmp2[6]).TableRow.TrailingText, obj5);
+    tmp5Result = tmp5(TrailingText, obj5);
   }
-  obj4.trailing = tmp5Result;
-  obj4.onPress = function onPress() {
-    if (null != guildBotApplications) {
-      const obj2 = {
-        applications: tmp,
-        selectedApplicationId: applicationId,
-        onSelectApplication(applicationId) {
-            closure_0 = applicationId;
-            const obj = {};
-            const merged = Object.assign(rule);
-            const found = guildBotApplications.find((id) => id.id === closure_0);
-            let name;
-            if (found != null) {
-              name = found.name;
-            }
-            if (name == null) {
-              name = rule.name;
-            }
-            obj.name = name;
-            obj.triggerMetadata = { applicationId };
-            return onChangeRule(obj);
-          }
-      };
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(17591, dependencyMap.paths), "AutomodSelectApplication", obj2);
-    }
-  };
-  obj3.children = applicationId(rule(guildBotApplications[6]).TableRow, obj4);
-  tmp5Result2 = tmp5(tmp(tmp2[5]).TableRowGroup, obj3);
+  tmp5Result2 = tmp5(TableRowGroup, obj3);
 };

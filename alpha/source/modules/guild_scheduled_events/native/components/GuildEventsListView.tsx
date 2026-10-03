@@ -1,69 +1,259 @@
-// Module ID: 9456
-// Function ID: 9457
+// Module ID: 9467
+// Function ID: 9468
 // Name: GuildEventsListView
-// Dependencies: [19, 17, 21, 576, 1613, 6231, 9457, 9458, 11, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 587, 558, 576, 1618, 6112, 9468, 9469, 11, 2]
 
-// Module 9456 (GuildEventsListView)
-import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import nativeDefault from "native" /* 576 */;
-import GuildEventsNoContentDefault from "GuildEventsNoContent" /* 9457 */;
-import GuildEventCardDefault from "GuildEventCard" /* 9458 */;
-import noop from "module_19" /* 19 */;
+// Module 9467 (GuildEventsListView)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import GuildEventsNoContentDefault from "GuildEventsNoContent" /* 9468 */;
+import GuildEventCardDefault from "GuildEventCard" /* 9469 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-const require = fn;
-function FormSeparator() {
+let onPressEvent;
+
+let c3;
+let closure_4;
+let obj2;
+let size;
+let tmp2;
+const SnowflakeUtilsDefault = tmp2(11);
+({ View: c3, FlatList: closure_4 } = react_native);
+const jsx = Fragment.jsx;
+const styles = { spacer: size, container: obj2 };
+size = { height: nativeDefault.space.PX_16, width: "100%" };
+obj2 = { paddingHorizontal: nativeDefault.space.PX_16 };
+let ReactCompilerGating = ReactCompilerGating_mod;
+const ItemSeparatorComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp6 = <_false style={obj.spacer} />;
+    cResult[0] = tmp6;
+    first = tmp6;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => {
+  let obj;
   obj = { style: obj.spacer };
-  return <React3 style={obj.spacer} />;
-}
-get_ActivityIndicator = fn(17);
-({ View: c3, FlatList: closure_4 } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const styles = { spacer: null, container: null };
-let size = { height: nativeDefault.space.PX_16, width: "100%" };
-styles.spacer = size;
-styles.container = { paddingHorizontal: nativeDefault.space.PX_16 };
-size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventsListView.tsx");
-
-export default function GuildEventsListView(lastAckedId) {
+  return <_false style={obj.spacer} />;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressEvent) => {
+  let events;
+  let guild;
+  let onCloseAction;
+  let tmp = guild;
+  let tmp2 = onCloseAction;
+  let obj = guild(onCloseAction[5]);
+  const cResult = obj.c(19);
+  ({ events, guild } = onPressEvent);
+  onPressEvent = onPressEvent.onPressEvent;
+  onCloseAction = onPressEvent.onCloseAction;
+  const lastAckedId = onPressEvent.lastAckedId;
+  let tmp4 = onPressEvent;
+  const inActionSheet = onPressEvent.inActionSheet;
+  if (0 === events.length) {
+    if (cResult[0] === guild) {
+      let tmp16;
+      if (cResult[1] === onCloseAction) {
+        tmp16 = cResult[2];
+      }
+      return tmp16;
+    }
+    const BottomSheetView = tmp(tmp2[7]).BottomSheetView;
+    const tmp18 = <BottomSheetView>{null}</BottomSheetView>;
+    cResult[0] = guild;
+    cResult[1] = onCloseAction;
+    cResult[2] = tmp18;
+    tmp16 = tmp18;
+  } else {
+    let tmp6;
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn = function u(id) {
+        return id.id;
+      };
+      cResult[3] = fn;
+      tmp6 = fn;
+    } else {
+      tmp6 = cResult[3];
+    }
+    if (cResult[4] === lastAckedId) {
+      if (cResult[5] === onCloseAction) {
+        let tmp7;
+        let BottomSheetFlatList;
+        if (cResult[6] === onPressEvent) {
+          tmp7 = cResult[7];
+        }
+        if (inActionSheet) {
+          BottomSheetFlatList = tmp(tmp2[7]).BottomSheetFlatList;
+        } else {
+          BottomSheetFlatList = closure_4;
+        }
+        if (cResult[8] === guild) {
+          let tmp8;
+          if (cResult[9] === onCloseAction) {
+            tmp8 = cResult[10];
+          }
+          const sum = tmp4(tmp2[3]).space.PX_16 + tmp5;
+          if (cResult[11] !== sum) {
+            const obj4 = { paddingBottom: sum };
+            class A {
+              constructor() {
+                return jsx(GuildEventsNoContentDefault, { onClose: onCloseAction, guild });
+              }
+            }
+            cResult[12] = obj4;
+            class E {
+              constructor(item) {
+                let tmp6;
+                item = item.item;
+                const obj = { event: item, onCloseAction, onPress: onPressEvent, isNew: tmp6 };
+                tmp6 = null != lastAckedId;
+                const tmp = jsx;
+                const tmp4 = GuildEventCardDefault;
+                if (tmp6) {
+                  const tmp2Result = SnowflakeUtilsDefault;
+                  tmp6 = tmp2Result.compare(item.id, tmp5) > 0;
+                }
+                return tmp(tmp4, obj);
+              }
+            }
+          }
+          class A {
+            constructor() {
+              return jsx(GuildEventsNoContentDefault, { onClose: onCloseAction, guild });
+            }
+          }
+          class E {
+            constructor(item) {
+              let tmp6;
+              item = item.item;
+              const obj = { event: item, onCloseAction, onPress: onPressEvent, isNew: tmp6 };
+              tmp6 = null != lastAckedId;
+              const tmp = jsx;
+              const tmp4 = GuildEventCardDefault;
+              if (tmp6) {
+                const tmp2Result = SnowflakeUtilsDefault;
+                tmp6 = tmp2Result.compare(item.id, tmp5) > 0;
+              }
+              return tmp(tmp4, obj);
+            }
+          }
+          const tmp15 = <BottomSheetFlatList data={null} style={obj.container} keyExtractor={tmp6} renderItem={tmp7} ItemSeparatorComponent={ItemSeparatorComponent} initialNumToRender={5} ListEmptyComponent={tmp8} contentContainerStyle={tmp10} />;
+          cResult[13] = BottomSheetFlatList;
+          cResult[14] = events;
+          cResult[15] = tmp7;
+          cResult[16] = tmp8;
+          cResult[17] = tmp10;
+          cResult[18] = tmp15;
+        }
+        class A {
+          constructor() {
+            return jsx(GuildEventsNoContentDefault, { onClose: onCloseAction, guild });
+          }
+        }
+        cResult[8] = guild;
+        class E {
+          constructor(item) {
+            let tmp6;
+            item = item.item;
+            const obj = { event: item, onCloseAction, onPress: onPressEvent, isNew: tmp6 };
+            tmp6 = null != lastAckedId;
+            const tmp = jsx;
+            const tmp4 = GuildEventCardDefault;
+            if (tmp6) {
+              const tmp2Result = SnowflakeUtilsDefault;
+              tmp6 = tmp2Result.compare(item.id, tmp5) > 0;
+            }
+            return tmp(tmp4, obj);
+          }
+        }
+        cResult[9] = onCloseAction;
+        cResult[10] = A;
+        tmp8 = A;
+      }
+    }
+    class E {
+      constructor(item) {
+        let tmp6;
+        item = item.item;
+        const obj = { event: item, onCloseAction, onPress: onPressEvent, isNew: tmp6 };
+        tmp6 = null != lastAckedId;
+        const tmp = jsx;
+        const tmp4 = GuildEventCardDefault;
+        if (tmp6) {
+          const tmp2Result = SnowflakeUtilsDefault;
+          tmp6 = tmp2Result.compare(item.id, tmp5) > 0;
+        }
+        return tmp(tmp4, obj);
+      }
+    }
+    cResult[4] = lastAckedId;
+    cResult[5] = onCloseAction;
+    cResult[6] = onPressEvent;
+    cResult[7] = E;
+    tmp7 = E;
+  }
+}) : ((lastAckedId) => {
+  let events;
+  let guild;
+  let obj;
+  let obj4;
+  let onCloseAction;
+  let onPress;
+  function keyExtractor(id) {
+    return id.id;
+  }
+  function renderItem(item) {
+    let tmp6;
+    item = item.item;
+    const obj = { event: item, onCloseAction, onPress: importDefault, isNew: tmp6 };
+    tmp6 = null != lastAckedId;
+    const tmp = jsx;
+    const tmp4 = GuildEventCardDefault;
+    if (tmp6) {
+      const tmp2Result = SnowflakeUtilsDefault;
+      tmp6 = tmp2Result.compare(item.id, tmp5) > 0;
+    }
+    return tmp(tmp4, obj);
+  }
+  function ListEmptyComponent() {
+    return jsx(GuildEventsNoContentDefault, { onClose: onCloseAction, guild });
+  }
   ({ events, guild } = lastAckedId);
   ({ onPressEvent: importDefault, onCloseAction } = lastAckedId);
   lastAckedId = lastAckedId.lastAckedId;
+  let tmp = importDefault;
+  let tmp2 = onCloseAction;
+  const inActionSheet = lastAckedId.inActionSheet;
   if (0 === events.length) {
-    const obj2 = { children: null };
-    const obj3 = { onClose: onCloseAction, guild };
-    obj2.children = jsx(tmp(tmp2[6]), { onClose: onCloseAction, guild });
-    return jsx(guild(tmp2[5]).BottomSheetView, { children: null });
+    const BottomSheetView = guild(tmp2[7]).BottomSheetView;
+    return <BottomSheetView>{null}</BottomSheetView>;
   } else {
-    if (lastAckedId.inActionSheet) {
-      let BottomSheetFlatList = guild(tmp2[5]).BottomSheetFlatList;
+    if (inActionSheet) {
+      let tmp4 = guild;
+      let BottomSheetFlatList = guild(tmp2[7]).BottomSheetFlatList;
     } else {
       BottomSheetFlatList = closure_4;
     }
-    let obj = { data: events, style: null, keyExtractor: null, renderItem: null, ItemSeparatorComponent: null, initialNumToRender: 5, ListEmptyComponent: null, contentContainerStyle: null };
-    obj.style = obj.container;
-    obj.keyExtractor = function keyExtractor(id) {
-      return id.id;
-    };
-    obj.renderItem = function renderItem(item) {
-      item = item.item;
-      const obj = { event: item, onCloseAction, onPress, isNew: null };
-      let tmp6 = null != lastAckedId;
-      if (tmp6) {
-        tmp6 = SnowflakeUtilsDefault.compare(item.id, tmp5) > 0;
-        const tmp2Result = SnowflakeUtilsDefault;
-      }
-      obj.isNew = tmp6;
-      return jsx(GuildEventCardDefault, { event: item, onCloseAction, onPress, isNew: null });
-    };
-    obj.ItemSeparatorComponent = FormSeparator;
-    obj.ListEmptyComponent = function ListEmptyComponent() {
-      return jsx(GuildEventsNoContentDefault, { onClose: onCloseAction, guild });
-    };
-    const obj4 = { paddingBottom: tmp(tmp2[3]).space.PX_16 + tmp3 };
-    obj.contentContainerStyle = obj4;
-    return <BottomSheetFlatList data={events} style={null} keyExtractor={null} renderItem={null} ItemSeparatorComponent={null} initialNumToRender={5} ListEmptyComponent={null} contentContainerStyle={null} />;
+    const tmp5 = jsx;
+    obj = { data: events, style: obj.container, keyExtractor, renderItem, ItemSeparatorComponent, initialNumToRender: 5, ListEmptyComponent, contentContainerStyle: obj4 };
+    let tmp6 = obj;
+    obj4 = { paddingBottom: tmp(tmp2[3]).space.PX_16 + tmp3 };
+    return <BottomSheetFlatList data={events} style={obj.container} keyExtractor={keyExtractor} renderItem={renderItem} ItemSeparatorComponent={ItemSeparatorComponent} initialNumToRender={5} ListEmptyComponent={ListEmptyComponent} contentContainerStyle={obj4} />;
   }
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventsListView.tsx");
+
+export default tmp4;
 export { styles };

@@ -1,20 +1,18 @@
-// Module ID: 8006
-// Function ID: 8007
+// Module ID: 7519
+// Function ID: 7520
 // Name: isChangelogChannel
-// Dependencies: [2044, 2097, 2]
+// Dependencies: [2051, 2102, 2]
 // Exports: default
 
-// Module 8006 (isChangelogChannel)
-import ChannelStore from "ChannelStore" /* 2044 */;
+// Module 7519 (isChangelogChannel)
+import ChangelogConstants from "ChangelogConstants" /* 2102 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import size from "module_2" /* 2 */;
 
-const SYSTEM_UPDATES_USER_ID = fn(2097).SYSTEM_UPDATES_USER_ID;
-const size = fn(2);
+const SYSTEM_UPDATES_USER_ID = ChangelogConstants.SYSTEM_UPDATES_USER_ID;
 const result = size.fileFinishedImporting("modules/changelog/utils/isChangelogChannel.tsx");
 
 export default function isChangelogChannel(arg0) {
-  let tmp = null != arg0;
-  if (tmp) {
-    tmp = arg0 === ChannelStore.getDMFromUserId(SYSTEM_UPDATES_USER_ID);
-  }
+  const tmp = null != arg0 && arg0 === ChannelStore.getDMFromUserId(SYSTEM_UPDATES_USER_ID);
   return tmp;
 };

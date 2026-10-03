@@ -1,17 +1,15 @@
-// Module ID: 4554
-// Function ID: 4555
+// Module ID: 4565
+// Function ID: 4566
 // Name: Linking
-// Dependencies: [17, 4549, 2]
+// Dependencies: [17, 4560, 2]
 
-// Module 4554 (Linking)
-import _mod17 from "module_17" /* 17 */;
-import handleURL from "handleURL" /* 4549 */;
+// Module 4565 (Linking)
+import react_native from "react-native" /* 17 */;
+import handleURL from "handleURL" /* 4560 */;
 import size from "module_2" /* 2 */;
 
-const Linking = _mod17.Linking;
-const result = size.fileFinishedImporting("lib/native/Linking.tsx");
-
-export default {
+const Linking = react_native.Linking;
+const obj = {
   openURL(arg0, arg1) {
     let flag = arg2;
     if (arg2 === undefined) {
@@ -23,8 +21,12 @@ export default {
     handleURL.default(href, SAFARI, { forceExternalBrowser: true });
   },
   performURLNavigation(href) {
-    Linking.openURL(href).catch(() => {
+    const openURLResult = Linking.openURL(href);
+    openURLResult.catch(() => {
 
     });
   }
 };
+const result = size.fileFinishedImporting("lib/native/Linking.tsx");
+
+export default obj;

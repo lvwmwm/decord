@@ -1,12 +1,11 @@
 // Module ID: 14057
 // Function ID: 14058
-// Dependencies: [14036, 14035]
+// Dependencies: [14058, 14123]
 
 // Module 14057
-import _mod14035 from "module_14035" /* 14035 */;
-import _mod14036 from "module_14036" /* 14036 */;
+import _mod14123 from "module_14123" /* 14123 */;
+import module_14058 from "module_14058" /* 14058 */;
 
-
-export default Object.keys || (function keys(arg0) {
-  return _mod14036(arg0, _mod14035);
-});
+const obj = { target: "Object", stat: true, arity: 2, forced: Object.assign !== _mod14123 };
+const obj2 = { assign: _mod14123 };
+module_14058(obj, obj2);

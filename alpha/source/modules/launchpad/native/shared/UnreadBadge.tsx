@@ -1,51 +1,122 @@
-// Module ID: 17052
-// Function ID: 17053
+// Module ID: 17374
+// Function ID: 17375
 // Name: UnreadBadge
-// Dependencies: [19, 17, 9770, 5027, 21, 4845, 16725, 5472, 7468, 2]
+// Dependencies: [19, 17, 11697, 5072, 21, 4890, 558, 576, 16813, 5602, 7503, 2]
 
-// Module 17052 (UnreadBadge)
-import useFontScale from "useFontScale" /* 5472 */;
-import Badge from "Badge" /* 7468 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 16725 */;
-import noop from "module_19" /* 19 */;
+// Module 17374 (UnreadBadge)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import ReadStateConstants from "ReadStateConstants" /* 5072 */;
+import useFontScale from "useFontScale" /* 5602 */;
+import shared_components_Badge from "shared_components/Badge" /* 7503 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11697 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 16813 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-const BadgeDefault = Badge;
+const shared_components_BadgeDefault = shared_components_Badge;
 
-require = fn;
-const View = fn(17).View;
-const MUTED_OPACITY_CONTENT = fn(9770).MUTED_OPACITY_CONTENT;
-const UnreadSetting = fn(5027).UnreadSetting;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
+const View = react_native.View;
+const MUTED_OPACITY_CONTENT = RedesignChannelListConstants.MUTED_OPACITY_CONTENT;
+const UnreadSetting = ReadStateConstants.UnreadSetting;
+const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ unreadBadge: { flexGrow: 0, flexShrink: 0, position: "absolute" } });
-let size = fn(2);
-const result = size.fileFinishedImporting("modules/launchpad/native/shared/UnreadBadge.tsx");
-
-export default noop.memo(function UnreadBadge(arg0) {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let first;
+  let items;
+  let items1;
+  let muted;
+  let resolvedUnreadSetting;
+  let unread;
+  const obj = react2;
+  const cResult = obj.c(7);
   ({ unread, resolvedUnreadSetting, muted } = arg0);
+  const tmp4 = closure_7();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp7 = getLayoutStylesDefault();
+    cResult[0] = tmp7;
+    first = tmp7;
+  } else {
+    first = cResult[0];
+  }
+  const tmpResult = useFontScale;
+  const fontScale = tmpResult.useFontScale();
+  if (cResult[1] === fontScale) {
+    if (cResult[2] === muted) {
+      if (cResult[3] === resolvedUnreadSetting) {
+        if (cResult[4] === tmp4) {
+          let tmp9;
+          if (cResult[5] === unread) {
+            tmp9 = cResult[6];
+          }
+          return tmp9;
+        }
+      }
+    }
+  }
+  let tmp11Result = null;
+  if (unread) {
+    let num3;
+    const obj2 = { style: items, children: null };
+    items = [tmp4.unreadBadge, first.unreadBadge.position, ];
+    size = { width: first.unreadBadge.size, height: first.unreadBadge.size };
+    items[2] = size;
+    ({ classic: true, size: shared_components_Badge.CHANNEL_BADGE_SIZE * Math.max(fontScale, 1), badgeStyle: items1 });
+    const _Math = Math;
+    shared_components_BadgeDefault;
+    const tmp12 = View;
+    if (resolvedUnreadSetting !== UnreadSetting.ALL_MESSAGES) {
+      num3 = MUTED_OPACITY_CONTENT;
+    } else {
+      num3 = 1;
+    }
+    items1 = [{ opacity: num3 }];
+    const obj4 = { opacity: num3 };
+    tmp11Result = tmp11(tmp12, obj2);
+  }
+  cResult[1] = fontScale;
+  cResult[2] = muted;
+  cResult[3] = resolvedUnreadSetting;
+  cResult[4] = tmp4;
+  cResult[5] = unread;
+  cResult[6] = tmp11Result;
+  tmp9 = tmp11Result;
+}) : ((arg0) => {
+  let items;
+  let items1;
+  let muted;
+  let resolvedUnreadSetting;
+  let unread;
+  ({ unread, resolvedUnreadSetting, muted } = arg0);
+  const tmp = closure_7();
   const tmp4 = getLayoutStylesDefault();
   useFontScale;
   let tmp9Result = null;
   if (unread) {
-    const obj = { style: null, children: null };
-    const items = [tmp.unreadBadge, tmp4.unreadBadge.position, ];
-    const size = { width: tmp4.unreadBadge.size, height: tmp4.unreadBadge.size };
+    let num2;
+    const obj = { style: items, children: null };
+    items = [tmp.unreadBadge, tmp4.unreadBadge.position, ];
+    size = { width: tmp4.unreadBadge.size, height: tmp4.unreadBadge.size };
     items[2] = size;
-    obj.style = items;
-    const obj2 = { classic: true, size: null, badgeStyle: null };
+    ({ classic: true, size: shared_components_Badge.CHANNEL_BADGE_SIZE * Math.max(tmp7, 1), badgeStyle: items1 });
     const _Math = Math;
-    obj2.size = Badge.CHANNEL_BADGE_SIZE * Math.max(tmp7, 1);
+    shared_components_BadgeDefault;
+    const tmp10 = View;
     if (resolvedUnreadSetting !== UnreadSetting.ALL_MESSAGES) {
-      let num2 = MUTED_OPACITY_CONTENT;
+      num2 = MUTED_OPACITY_CONTENT;
     } else {
       num2 = 1;
     }
+    items1 = [{ opacity: num2 }];
     const obj3 = { opacity: num2 };
-    const items1 = [obj3];
-    obj2.badgeStyle = items1;
-    obj.children = jsx(BadgeDefault, { classic: true, size: null, badgeStyle: null });
-    tmp9Result = tmp9(View, obj);
-    const tmp2Result = BadgeDefault;
+    tmp9Result = tmp9(tmp10, obj);
   }
   return tmp9Result;
-});
+}));
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/launchpad/native/shared/UnreadBadge.tsx");
+
+export default memoResult;

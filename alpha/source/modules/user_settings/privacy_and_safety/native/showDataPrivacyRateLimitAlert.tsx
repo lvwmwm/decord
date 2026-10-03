@@ -1,22 +1,23 @@
-// Module ID: 14604
-// Function ID: 14605
+// Module ID: 14660
+// Function ID: 14661
 // Name: showDataPrivacyRateLimitAlert
-// Dependencies: [5387, 1115, 2]
+// Dependencies: [5707, 1126, 2]
 // Exports: showDataPrivacyRateLimitAlert
 
-// Module 14604 (showDataPrivacyRateLimitAlert)
-import util from "util" /* 1115 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5387 */;
+// Module 14660 (showDataPrivacyRateLimitAlert)
+import intl3 from "intl" /* 1126 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/native/showDataPrivacyRateLimitAlert.tsx");
 
 export const showDataPrivacyRateLimitAlert = function showDataPrivacyRateLimitAlert(message) {
-  const obj2 = { title: null, body: null, confirmText: null };
-  const intl = util.intl;
-  obj2.title = intl.string(util.t["43LbVL"]);
-  obj2.body = message;
-  const intl2 = util.intl;
-  obj2.confirmText = intl2.string(util.t.BddRzS);
-  AlertActionCreatorsDefault.show(obj2);
+  let intl;
+  let intl2;
+  const obj = { title: intl.string(intl3.t["43LbVL"]), body: message, confirmText: intl2.string(intl3.t.BddRzS) };
+  const show = AlertActionCreatorsDefault.show;
+  AlertActionCreatorsDefault;
+  intl = intl3.intl;
+  intl2 = intl3.intl;
+  show(obj);
 };

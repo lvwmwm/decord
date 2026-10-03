@@ -1,36 +1,41 @@
-// Module ID: 11483
-// Function ID: 11484
+// Module ID: 11402
+// Function ID: 11403
 // Name: guild_templates/GuildTemplateActionCreators
-// Dependencies: [6929, 5048, 11484, 1981, 573, 2]
+// Dependencies: [6827, 5093, 11403, 1987, 584, 2]
 
-// Module 11483 (guild_templates/GuildTemplateActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5048 */;
-import GuildTemplateActionCreatorsDefault from "GuildTemplateActionCreators" /* 6929 */;
+// Module 11402 (guild_templates/GuildTemplateActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import GuildTemplateActionCreatorsDefault from "GuildTemplateActionCreators" /* 6827 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 const GUILD_TEMPLATE_MODAL_KEY = "GUILD_TEMPLATE_MODAL_KEY";
-let obj = {};
+let obj = {
+  showModal(code) {
+    let flag = arg1;
+    if (arg1 === undefined) {
+      flag = true;
+    }
+    const obj = ModalActionCreatorsDefault;
+    const obj2 = { code };
+    obj.pushLazy(asyncRequire(11403, dependencyMap.paths), obj2, GUILD_TEMPLATE_MODAL_KEY);
+    const obj3 = DispatcherDefault;
+    const obj4 = { type: "GUILD_TEMPLATE_MODAL_SHOW", code };
+    obj3.dispatch(obj4);
+    if (flag) {
+      const tmpResult = GuildTemplateActionCreatorsDefault;
+      const guildTemplate = tmpResult.resolveGuildTemplate(code);
+    }
+  },
+  hideModal() {
+    const obj = ModalActionCreatorsDefault;
+    obj.popWithKey(GUILD_TEMPLATE_MODAL_KEY);
+    const obj2 = DispatcherDefault;
+    obj2.dispatch({ type: "GUILD_TEMPLATE_MODAL_HIDE" });
+  }
+};
 const GuildTemplateActionCreators = Object.assign(GuildTemplateActionCreatorsDefault);
-obj.showModal = function showModal(code) {
-  let flag = arg1;
-  if (arg1 === undefined) {
-    flag = true;
-  }
-  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(11484, dependencyMap.paths), { code }, GUILD_TEMPLATE_MODAL_KEY);
-  const obj2 = { code };
-  DispatcherDefault.dispatch({ type: "GUILD_TEMPLATE_MODAL_SHOW", code });
-  if (flag) {
-    const guildTemplate = GuildTemplateActionCreatorsDefault.resolveGuildTemplate(code);
-    const tmpResult = GuildTemplateActionCreatorsDefault;
-  }
-};
-obj.hideModal = function hideModal() {
-  ModalActionCreatorsDefault.popWithKey(GUILD_TEMPLATE_MODAL_KEY);
-  DispatcherDefault.dispatch({ type: "GUILD_TEMPLATE_MODAL_HIDE" });
-};
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_templates/native/GuildTemplateActionCreators.tsx");
 
 export default obj;

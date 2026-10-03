@@ -1,25 +1,22 @@
-// Module ID: 7115
-// Function ID: 7116
+// Module ID: 7016
+// Function ID: 7017
 // Name: isSpam
-// Dependencies: [1372, 1074, 7116, 2]
+// Dependencies: [1377, 1085, 7017, 2]
 // Exports: isSpam, isSpamSupported, isSpammer
 
-// Module 7115 (isSpam)
-import AutomodMessageUtils from "AutomodMessageUtils" /* 7116 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 7016 (isSpam)
+import AutomodMessageUtils from "AutomodMessageUtils" /* 7017 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Constants = fn(1074);
+let c3;
+let closure_4;
 ({ UserFlags: c3, ChannelTypes: closure_4 } = Constants);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/isSpam.tsx");
 
 export const isSpamSupported = function isSpamSupported(type) {
-  let tmp = undefined !== type;
-  if (tmp) {
-    tmp = type.type !== constants2.DM;
-  }
-  return tmp;
+  return undefined !== type && type.type !== constants2.DM;
 };
 export const isSpammer = function isSpammer(userId) {
   const user = UserStore.getUser(userId);
@@ -42,7 +39,8 @@ export const isSpam = function isSpam(author) {
     flag = false;
   }
   if (flag) {
-    flag = !AutomodMessageUtils.isAutomodMessageRecord(author);
+    const obj2 = AutomodMessageUtils;
+    flag = !obj2.isAutomodMessageRecord(author);
   }
   return flag;
 };

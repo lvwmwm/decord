@@ -1,10 +1,10 @@
-// Module ID: 7351
-// Function ID: 7352
+// Module ID: 7255
+// Function ID: 7256
 // Name: getInviteURL
 // Dependencies: [2]
 // Exports: default
 
-// Module 7351 (getInviteURL)
+// Module 7255 (getInviteURL)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/instant_invite/getInviteURL.tsx");
@@ -25,5 +25,5 @@ export default function getInviteURL() {
     const _HermesInternal = HermesInternal;
     str2 = "" + location.protocol + "//";
   }
-  return "" + str2 + window.GLOBAL_ENV.INVITE_HOST + combined;
+  return "" + str2 + INVITE_HOST + combined;
 };

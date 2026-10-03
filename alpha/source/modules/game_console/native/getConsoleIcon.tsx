@@ -1,31 +1,36 @@
-// Module ID: 9453
-// Function ID: 9454
+// Module ID: 9463
+// Function ID: 9464
 // Name: getConsoleIcon
-// Dependencies: [1074, 4866, 8741, 9454, 2]
+// Dependencies: [1085, 4911, 8754, 9464, 2]
 // Exports: default, getConsoleIconForVoicePlatform
 
-// Module 9453 (getConsoleIcon)
-import Constants from "Constants" /* 1074 */;
-import CallConstants from "CallConstants" /* 4866 */;
-import _modDef8741 from "module_8741" /* 8741 */;
-import _modDef9454 from "module_9454" /* 9454 */;
+// Module 9463 (getConsoleIcon)
+import Constants from "Constants" /* 1085 */;
+import CallConstants from "CallConstants" /* 4911 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8754 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9464 */;
 import size from "module_2" /* 2 */;
 
+let PLAYSTATION;
+let PLAYSTATION_STAGING;
+let XBOX;
+const PlatformTypes = Constants.PlatformTypes;
 const VoicePlatforms = CallConstants.VoicePlatforms;
-const obj = { [XBOX]: _modDef8741, [PLAYSTATION]: _modDef9454, [PLAYSTATION_STAGING]: _modDef9454 };
-({ XBOX, PLAYSTATION, PLAYSTATION_STAGING } = Constants.PlatformTypes);
+const obj = { [XBOX]: AssetRegistryDefault, [PLAYSTATION]: AssetRegistryDefault2, [PLAYSTATION_STAGING]: AssetRegistryDefault2 };
+({ XBOX, PLAYSTATION, PLAYSTATION_STAGING } = PlatformTypes);
 const result = size.fileFinishedImporting("modules/game_console/native/getConsoleIcon.tsx");
 
 export default function getConsoleIcon(arg0) {
   return obj[arg0];
 };
 export const getConsoleIconForVoicePlatform = function getConsoleIconForVoicePlatform(voicePlatform) {
+  let tmp2;
   if (voicePlatform === VoicePlatforms.XBOX) {
-    let tmp2 = _modDef8741;
+    tmp2 = AssetRegistryDefault;
   } else {
     tmp2 = null;
     if (voicePlatform === tmp.PLAYSTATION) {
-      tmp2 = _modDef9454;
+      tmp2 = AssetRegistryDefault2;
     }
   }
   return tmp2;

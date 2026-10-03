@@ -1,47 +1,94 @@
-// Module ID: 9710
-// Function ID: 9711
+// Module ID: 9739
+// Function ID: 9740
 // Name: StageGridRow
-// Dependencies: [19, 17, 21, 4845, 9702, 5923, 5624, 9711, 9701, 2]
+// Dependencies: [19, 17, 21, 4890, 9731, 5582, 558, 576, 5912, 9740, 9730, 2]
 
-// Module 9710 (StageGridRow)
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5624 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 5923 */;
-import noop from "module_19" /* 19 */;
+// Module 9739 (StageGridRow)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 5582 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 5912 */;
+import SpeakerTileDefault from "SpeakerTile" /* 9730 */;
+import MediaTileDefault from "MediaTile" /* 9740 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ container: { flexDirection: "row", alignItems: "center" }, containerLandscape: { justifyContent: "center" } });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/stage_channels/native/components/StageGridRow.tsx");
-
-export default noop.memo((row) => {
-  ({ channel: require, participants } = row);
-  let THIRD;
-  const tmp = closure_5();
-  let containerLandscape = useIsScreenLandscape.useIsScreenLandscape();
+const memo = react.memo;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let tmp6;
+  let tmp = channel;
+  let obj = channel(576);
+  const cResult = obj.c(15);
+  channel = channel.channel;
+  const participants = channel.participants;
+  const row = channel.row;
+  const tmp4 = closure_5();
+  let obj2 = channel(5912);
+  const isScreenLandscape = obj2.useIsScreenLandscape();
   let num = 3;
-  if (0 === row.row) {
+  if (0 === row) {
     num = participants.length;
   }
-  if (1 === num) {
-    THIRD = tmp2(9702).StageTileSize.FULL;
-  } else if (2 === num) {
-    THIRD = tmp2(9702).StageTileSize.HALF;
+  if (cResult[0] !== num) {
+    let THIRD;
+    if (1 === num) {
+      THIRD = tmp(9731).StageTileSize.FULL;
+    } else if (2 === num) {
+      THIRD = tmp(9731).StageTileSize.HALF;
+    } else {
+      THIRD = tmp(9731).StageTileSize.THIRD;
+    }
+    cResult[0] = num;
+    cResult[1] = THIRD;
+    tmp6 = THIRD;
   } else {
-    THIRD = tmp2(9702).StageTileSize.THIRD;
+    tmp6 = cResult[1];
   }
-  const items = [tmp.container, ];
-  if (containerLandscape) {
-    containerLandscape = tmp.containerLandscape;
-  }
-  const tmp4 = jsx;
-  const tmp5 = View;
-  items[1] = containerLandscape;
-  return tmp4(tmp5, {
-    style: items,
-    children: participants.map((type) => {
+  size = tmp6;
+  if (cResult[2] === tmp4.container) {
+    let tmp8;
+    let tmp9;
+    if (cResult[3] === (isScreenLandscape && tmp4.containerLandscape)) {
+      tmp8 = cResult[4];
+    }
+    if (cResult[5] === channel) {
+      if (cResult[6] === participants) {
+        if (cResult[7] === tmp6) {
+          tmp9 = cResult[8];
+        }
+        if (cResult[12] === tmp8) {
+          let tmp12;
+          if (cResult[13] === tmp9) {
+            tmp12 = cResult[14];
+          }
+          return tmp12;
+        }
+        const tmp15 = <View style={tmp8}>{tmp9}</View>;
+        cResult[12] = tmp8;
+        cResult[13] = tmp9;
+        cResult[14] = tmp15;
+        tmp12 = tmp15;
+      }
+    }
+    if (cResult[9] === channel) {
+      let tmp10;
+      if (cResult[10] === tmp6) {
+        tmp10 = cResult[11];
+      }
+      const mapped = participants.map(tmp10);
+      cResult[5] = channel;
+      cResult[6] = participants;
+      cResult[7] = tmp6;
+      cResult[8] = mapped;
+      tmp9 = mapped;
+    }
+    const fn = function y(type) {
+      let tmp5Result;
       type = type.type;
       let flag = true;
       if (StageChannelParticipants.StageChannelParticipantTypes.STREAM !== type) {
@@ -56,17 +103,89 @@ export default noop.memo((row) => {
         }
       }
       if (flag) {
-        const obj2 = { participant: type, size: THIRD, channel };
         const _HermesInternal2 = HermesInternal;
-        let tmp5Result = tmp5(tmp6(9711), obj2, "stage-media-participant-" + type.id);
-        const tmp6Result = tmp6(9711);
+        const obj2 = { participant: type, size, channel };
+        const tmp6Result = MediaTileDefault;
+        tmp5Result = tmp5(tmp6Result, obj2, "stage-media-participant-" + type.id);
       } else {
-        const obj = { channel, participant: type, size: THIRD };
         const _HermesInternal = HermesInternal;
-        tmp5Result = tmp5(tmp6(9701), obj, "stage-user-participant-" + type.id);
-        const tmp6Result2 = tmp6(9701);
+        const obj = { channel, participant: type, size };
+        const tmp6Result2 = SpeakerTileDefault;
+        tmp5Result = tmp5(tmp6Result2, obj, "stage-user-participant-" + type.id);
+      }
+      return tmp5Result;
+    };
+    cResult[9] = channel;
+    cResult[10] = tmp6;
+    cResult[11] = fn;
+    tmp10 = fn;
+  }
+  const items = [tmp4.container, isScreenLandscape && tmp4.containerLandscape];
+  cResult[2] = tmp4.container;
+  cResult[3] = isScreenLandscape && tmp4.containerLandscape;
+  cResult[4] = items;
+  tmp8 = items;
+}) : ((row) => {
+  let channel;
+  let participants;
+  ({ channel: require, participants } = row);
+  let THIRD;
+  row = row.row;
+  let tmp = closure_5();
+  let obj = useIsScreenLandscape;
+  let containerLandscape = obj.useIsScreenLandscape();
+  let num = 3;
+  if (0 === row) {
+    num = participants.length;
+  }
+  if (1 === num) {
+    THIRD = tmp2(9731).StageTileSize.FULL;
+  } else if (2 === num) {
+    THIRD = tmp2(9731).StageTileSize.HALF;
+  } else {
+    THIRD = tmp2(9731).StageTileSize.THIRD;
+  }
+  const items = [tmp.container, ];
+  const tmp5 = View;
+  const tmp4 = jsx;
+  if (containerLandscape) {
+    containerLandscape = tmp.containerLandscape;
+  }
+  let obj2 = {
+    style: items,
+    children: participants.map((type) => {
+      let tmp5Result;
+      type = type.type;
+      let flag = true;
+      if (StageChannelParticipants.StageChannelParticipantTypes.STREAM !== type) {
+        flag = false;
+        if (StageChannelParticipants.StageChannelParticipantTypes.VOICE === type) {
+          const voiceState = type.voiceState;
+          let selfVideo;
+          if (voiceState != null) {
+            selfVideo = voiceState.selfVideo;
+          }
+          flag = selfVideo;
+        }
+      }
+      if (flag) {
+        const _HermesInternal2 = HermesInternal;
+        const obj2 = { participant: type, size: THIRD, channel: require };
+        const tmp6Result = MediaTileDefault;
+        tmp5Result = tmp5(tmp6Result, obj2, "stage-media-participant-" + type.id);
+      } else {
+        const _HermesInternal = HermesInternal;
+        const obj = { channel: require, participant: type, size: THIRD };
+        const tmp6Result2 = SpeakerTileDefault;
+        tmp5Result = tmp5(tmp6Result2, obj, "stage-user-participant-" + type.id);
       }
       return tmp5Result;
     })
-  });
-});
+  };
+  items[1] = containerLandscape;
+  return tmp4(tmp5, obj2);
+}));
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/stage_channels/native/components/StageGridRow.tsx");
+
+export default memoResult;

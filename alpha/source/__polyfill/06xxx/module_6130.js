@@ -1,9 +1,19 @@
 // Module ID: 6130
 // Function ID: 6131
-// Dependencies: [1121]
+// Dependencies: []
+// Exports: normalizeSnapPoint
 
 // Module 6130
-import registerAsset from "module_1121" /* 1121 */;
+const fn = function n(str, arg1) {
+  let result = str;
+  if (typeof str === "string") {
+    const _Number = Number;
+    result = Number(str.split("%")[0]) * arg1 / 100;
+  }
+  return Math.max(0, arg1 - result);
+};
+fn.__closure = {};
+fn.__workletHash = 14612470006791;
+fn.__initData = { code: "function pnpm_normalizeSnapPointTs1(snapPoint,containerHeight){let normalizedSnapPoint=snapPoint;if(typeof normalizedSnapPoint==='string'){normalizedSnapPoint=Number(normalizedSnapPoint.split('%')[0])*containerHeight/100;}return Math.max(0,containerHeight-normalizedSnapPoint);}" };
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../node_modules/.pnpm/@react-navigation+elements@2.9.34_ogrwmflqwrxbxbb3hpokpwnsgq/node_modules/@react-navigation/elements/lib/module/assets", width: 24, height: 24, scales: [1, 2, 3, 4], hash: "dbc3af23c3cbbe45d326afc1d31c2e92", name: "back-icon", type: "png" });
+export const normalizeSnapPoint = fn;

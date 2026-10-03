@@ -1,30 +1,33 @@
-// Module ID: 6991
-// Function ID: 6992
+// Module ID: 6889
+// Function ID: 6890
 // Name: WalletBalanceStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 584, 2]
 
-// Module 6991 (WalletBalanceStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 6889 (WalletBalanceStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import size from "module_2" /* 2 */;
 
-let closure_0 = {};
+let closure_0;
+
+const React = {};
 let set = new Set();
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class WalletBalanceStore extends Store {
+  getBalance(arg0) {
+    let tmp = closure_0[arg0];
+    if (tmp == null) {
+      tmp = null;
+    }
+    return tmp;
+  }
+  getIsFetching(arg0) {
+    return set.has(arg0);
+  }
 }
 const prototype = WalletBalanceStore.prototype;
-prototype["getBalance"] = function getBalance(arg0) {
-  let tmp = closure_0[arg0];
-  if (tmp == null) {
-    tmp = null;
-  }
-  return tmp;
-};
-prototype["getIsFetching"] = function getIsFetching(arg0) {
-  return set.has(arg0);
-};
 WalletBalanceStore.displayName = "WalletBalanceStore";
-const walletBalanceStore = new WalletBalanceStore(DispatcherDefault, {
+let obj = {
   BILLING_WALLET_BALANCE_FETCH_START: function handleFetchStart(paymentSourceId) {
     set = new Set(set);
     set.add(paymentSourceId.paymentSourceId);
@@ -51,8 +54,8 @@ const walletBalanceStore = new WalletBalanceStore(DispatcherDefault, {
     closure_0 = {};
     set = new Set();
   }
-});
-const size = fn(2);
+};
+const walletBalanceStore = new WalletBalanceStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/billing/stores/WalletBalanceStore.tsx");
 
 export default walletBalanceStore;

@@ -1,38 +1,97 @@
-// Module ID: 10307
-// Function ID: 10308
+// Module ID: 10382
+// Function ID: 10383
 // Name: Caption
-// Dependencies: [17, 1074, 21, 4845, 576, 4712, 1177, 2]
-// Exports: Caption
+// Dependencies: [17, 1085, 21, 4890, 587, 4727, 558, 576, 1188, 2]
 
-// Module 10307 (Caption)
-import _mod17 from "module_17" /* 17 */;
-import jsxProd from "jsxProd" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import native from "native" /* 1177 */;
-import createStyles from "createStyles" /* 4845 */;
-import ColorUtils from "ColorUtils" /* 4712 */;
+// Module 10382 (Caption)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ColorUtils_mod from "ColorUtils" /* 4727 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const View = _mod17.View;
-const jsx = jsxProd.jsx;
-let obj = { captionText: { fontFamily: Constants.Fonts.PRIMARY_BOLD, color: nativeDefault.colors.WHITE, fontSize: 12 }, labelContainer: null };
-const rect = { backgroundColor: null, borderRadius: null, paddingHorizontal: 8, paddingVertical: 2, position: "absolute", right: 6, bottom: 6 };
-rect.backgroundColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.PRIMARY_700, 0.5);
-rect.borderRadius = nativeDefault.radii.xs;
-obj.labelContainer = rect;
-let closure_4 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/media/native/Caption.tsx");
-
-export const Caption = function Caption(arg0) {
+let ColorUtils;
+let obj2;
+let rect;
+let tmp;
+const native = tmp(1188);
+const View = react_native.View;
+const Fonts = Constants.Fonts;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { captionText: obj2, labelContainer: rect };
+obj2 = { fontFamily: Fonts.PRIMARY_BOLD, color: nativeDefault.colors.WHITE, fontSize: 12 };
+createStyles = createStyles.createStyles;
+rect = { backgroundColor: ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.PRIMARY_700, 0.5), borderRadius: nativeDefault.radii.xs, paddingHorizontal: 8, paddingVertical: 2, position: "absolute", right: 6, bottom: 6 };
+ColorUtils = ColorUtils_mod;
+let closure_4 = createStyles(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let label;
+  let style;
+  let textStyle;
+  const obj = react;
+  const cResult = obj.c(12);
+  ({ label, style, textStyle } = arg0);
+  const tmp4 = closure_4();
+  if (cResult[0] === style) {
+    let tmp5;
+    if (cResult[1] === tmp4.labelContainer) {
+      tmp5 = cResult[2];
+    }
+    if (cResult[3] === tmp4.captionText) {
+      let tmp6;
+      if (cResult[4] === textStyle) {
+        tmp6 = cResult[5];
+      }
+      if (cResult[6] === label) {
+        let tmp7;
+        if (cResult[7] === tmp6) {
+          tmp7 = cResult[8];
+        }
+        if (cResult[9] === tmp5) {
+          let tmp10;
+          if (cResult[10] === tmp7) {
+            tmp10 = cResult[11];
+          }
+          return tmp10;
+        }
+        const tmp13 = <View style={tmp5}>{tmp7}</View>;
+        cResult[9] = tmp5;
+        cResult[10] = tmp7;
+        cResult[11] = tmp13;
+        tmp10 = tmp13;
+      }
+      const tmp9 = jsx(native.LegacyText, { style: tmp6, children: label });
+      cResult[6] = label;
+      cResult[7] = tmp6;
+      cResult[8] = tmp9;
+      tmp7 = tmp9;
+    }
+    const items = [tmp4.captionText, textStyle];
+    cResult[3] = tmp4.captionText;
+    cResult[4] = textStyle;
+    cResult[5] = items;
+    tmp6 = items;
+  }
+  const items1 = [tmp4.labelContainer, style];
+  cResult[0] = style;
+  cResult[1] = tmp4.labelContainer;
+  cResult[2] = items1;
+  tmp5 = items1;
+}) : ((arg0) => {
+  let label;
+  let style;
+  let textStyle;
   ({ label, style, textStyle } = arg0);
   const tmp = closure_4();
-  const obj = { style: null, children: null };
   const items = [tmp.labelContainer, style];
-  obj.style = items;
-  const obj2 = { style: null, children: label };
   const items1 = [tmp.captionText, textStyle];
-  obj2.style = items1;
-  obj.children = jsx(native.LegacyText, { style: null, children: label });
-  return <View style={null}>{null}</View>;
-};
+  return <View style={items}>{null}</View>;
+});
+const result = size.fileFinishedImporting("modules/media/native/Caption.tsx");
+
+export const Caption = tmp3;

@@ -1,28 +1,31 @@
-// Module ID: 15613
-// Function ID: 15614
+// Module ID: 15676
+// Function ID: 15677
 // Name: DesignSystemPileSetting
-// Dependencies: [7590, 1074, 11215, 15614, 2]
+// Dependencies: [7634, 1085, 11129, 15677, 2]
 
-// Module 15613 (DesignSystemPileSetting)
-import Constants from "Constants" /* 1074 */;
-import SettingsConstants from "SettingsConstants" /* 7590 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 15676 (DesignSystemPileSetting)
+import Constants from "Constants" /* 1085 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
     return "Pile";
   },
-  parent: SettingsConstants.MobileUserSettings.DESIGN_SYSTEMS,
+  parent: MobileUserSettings.DESIGN_SYSTEMS,
   screen: {
-    route: Constants.UserSettingsSections.DESIGN_SYSTEM_PILE,
+    route: UserSettingsSections.DESIGN_SYSTEM_PILE,
     getComponent() {
       return require("UserSettingsDesignSystemPile").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemPileSetting.tsx");
 
 export default route;

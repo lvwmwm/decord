@@ -1,18 +1,49 @@
-// Module ID: 14613
-// Function ID: 14614
+// Module ID: 14669
+// Function ID: 14670
 // Name: useIsParentalConsentBannerActive
-// Dependencies: [14614, 14616, 2]
-// Exports: useIsParentalConsentBannerActive
+// Dependencies: [558, 576, 14670, 14672, 2]
 
-// Module 14613 (useIsParentalConsentBannerActive)
-import useParentalConsentWarning from "useParentalConsentWarning" /* 14614 */;
-import ParentalConsentWarningTypes from "ParentalConsentWarningTypes" /* 14616 */;
+// Module 14669 (useIsParentalConsentBannerActive)
+import react from "react" /* 576 */;
+import useParentalConsentWarning from "useParentalConsentWarning" /* 14670 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/parent_tools/useIsParentalConsentBannerActive.tsx");
-
-export const useIsParentalConsentBannerActive = function useIsParentalConsentBannerActive() {
-  const parentalConsentWarning = useParentalConsentWarning.useParentalConsentWarning();
+let tmp;
+const ParentalConsentWarningTypes = tmp(14672);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp7;
+  const obj = react;
+  const cResult = obj.c(2);
+  const obj2 = useParentalConsentWarning;
+  const parentalConsentWarning = obj2.useParentalConsentWarning();
+  let surfaces1;
+  const first = cResult[0];
+  if (parentalConsentWarning != null) {
+    surfaces1 = parentalConsentWarning.surfaces;
+  }
+  if (first !== surfaces1) {
+    let hasItem;
+    if (parentalConsentWarning != null) {
+      const surfaces = parentalConsentWarning.surfaces;
+      if (surfaces != null) {
+        hasItem = surfaces.includes(ParentalConsentWarningTypes.ParentalConsentWarningSurface.BANNER);
+      }
+    }
+    let surfaces2;
+    if (parentalConsentWarning != null) {
+      surfaces2 = parentalConsentWarning.surfaces;
+    }
+    cResult[0] = surfaces2;
+    cResult[1] = hasItem;
+    tmp7 = hasItem;
+  } else {
+    tmp7 = cResult[1];
+  }
+  return true === tmp7;
+}) : (() => {
+  const obj = useParentalConsentWarning;
+  const parentalConsentWarning = obj.useParentalConsentWarning();
   let hasItem;
   if (parentalConsentWarning != null) {
     const surfaces = parentalConsentWarning.surfaces;
@@ -21,4 +52,7 @@ export const useIsParentalConsentBannerActive = function useIsParentalConsentBan
     }
   }
   return true === hasItem;
-};
+});
+const result = size.fileFinishedImporting("modules/parent_tools/useIsParentalConsentBannerActive.tsx");
+
+export const useIsParentalConsentBannerActive = tmp2;

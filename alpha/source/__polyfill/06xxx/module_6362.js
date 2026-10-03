@@ -1,54 +1,43 @@
 // Module ID: 6362
 // Function ID: 6363
-// Dependencies: [5, 32, 19, 17]
-// Exports: useIsScreenReaderEnabled
+// Dependencies: [6342, 19, 6363, 6383]
+// Exports: useRecyclerViewManager
 
 // Module 6362
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
+import RecyclerViewManager from "RecyclerViewManager" /* 6363 */;
+import _slicedToArray from "_slicedToArray" /* 6342 */;
+import react from "react" /* 19 */;
 
-const noop = fn(19);
-({ useEffect: c2, useState: c3 } = noop);
-const AccessibilityInfo = fn(17).AccessibilityInfo;
+let c3;
+let closure_4;
+let hasOwnProperty;
+({ useEffect: c3, useMemo: closure_4, useState: hasOwnProperty } = react);
 
-export const useIsScreenReaderEnabled = function useIsScreenReaderEnabled() {
-  const tmp = _slicedToArray(closure_3(false), 2);
-  closure_0 = tmp[1];
-  closure_2(() => {
-    closure_129_0 = closure_0(function*() {
-      closure_1 = tmp3;
-      yield screenReaderEnabled.isScreenReaderEnabled();
-      if (1 === tmp7) {
-        c3 = 0;
-        const _console = console;
-        console.warn("Could not read accessibility info: defaulting to false");
-        c5 = 3;
-      } else if (arg0 === 1) {
-        c5 = 3;
-        throw arg1;
-      } else if (arg0 !== 2) {
-        closure_128_0 = arg1;
-        closure_0(closure_128_0);
-        c3 = 0;
-      }
-      return arg1;
-    });
-    (function checkStatus() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
-    })();
-    closure_0 = AccessibilityInfo.addEventListener("screenReaderChanged", (event) => {
-      closure_0(event);
-    });
+export const useRecyclerViewManager = (data) => {
+  let velocityTracker;
+  let recyclerViewManager = velocityTracker(closure_5(() => {
+    recyclerViewManager = new RecyclerViewManager.RecyclerViewManager(data);
+    return recyclerViewManager;
+  }), 1)[0];
+  velocityTracker = velocityTracker(closure_5(() => {
+    velocityTracker = new data(recyclerViewManager[3]).VelocityTracker();
+    return velocityTracker;
+  }), 1)[0];
+  const items = [data];
+  data = data.data;
+  closure_4(() => {
+    recyclerViewManager.updateProps(data);
+  }, items);
+  const items1 = [data];
+  closure_4(() => {
+    recyclerViewManager.processDataUpdate();
+  }, items1);
+  closure_3(() => {
+    recyclerViewManager.restoreIfNeeded();
     return () => {
-      closure_0.remove();
+      recyclerViewManager.dispose();
+      velocityTracker.cleanUp();
     };
   }, []);
-  return tmp[0];
+  return { recyclerViewManager, velocityTracker };
 };

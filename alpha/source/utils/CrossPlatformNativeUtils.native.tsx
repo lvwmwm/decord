@@ -1,14 +1,12 @@
-// Module ID: 4839
-// Function ID: 4840
+// Module ID: 4884
+// Function ID: 4885
 // Name: CrossPlatformNativeUtils
 // Dependencies: [2]
 
-// Module 4839 (CrossPlatformNativeUtils)
+// Module 4884 (CrossPlatformNativeUtils)
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("utils/CrossPlatformNativeUtils.native.tsx");
-
-export default {
+const obj = {
   clearNavigationHistory() {
 
   },
@@ -46,3 +44,6 @@ export default {
     return null;
   }
 };
+const result = size.fileFinishedImporting("utils/CrossPlatformNativeUtils.native.tsx");
+
+export default obj;

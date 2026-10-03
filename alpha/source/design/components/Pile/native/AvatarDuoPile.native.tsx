@@ -1,36 +1,114 @@
-// Module ID: 14205
-// Function ID: 14206
+// Module ID: 14273
+// Function ID: 14274
 // Name: AvatarDuoPile
-// Dependencies: [19, 21, 10665, 12329, 8464, 12, 12811, 2]
-// Exports: AvatarDuoPile
+// Dependencies: [109, 19, 21, 558, 576, 10739, 12285, 12, 12851, 8469, 2]
 
-// Module 14205 (AvatarDuoPile)
-import ClipView from "ClipView" /* 8464 */;
-import Pile from "Pile" /* 10665 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 12811 */;
-import noop from "module_19" /* 19 */;
+// Module 14273 (AvatarDuoPile)
+import _mod12 from "module_12" /* 12 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import ClipView from "ClipView" /* 8469 */;
+import Pile2 from "Pile" /* 10739 */;
+import ListUtils from "ListUtils" /* 12285 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 12851 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-let size = fn(2);
+let closure_2 = ["size", "children"];
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let arr;
+  let children;
+  let tmp11;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(12);
+  if (cResult[0] !== arg0) {
+    let prop;
+    ({ size, children } = arg0);
+    const tmp9 = _objectWithoutProperties(arg0, closure_2);
+    const Pile = tmp(10739).Pile;
+    if ("aria-label" in tmp9) {
+      prop = tmp9["aria-label"];
+    } else {
+      const tmpResult = ListUtils;
+      prop = tmpResult.getListSummaryLabel(tmp9.names);
+    }
+    cResult[0] = arg0;
+    cResult[1] = Pile;
+    cResult[2] = children;
+    cResult[3] = size;
+    cResult[4] = prop;
+    tmp6 = prop;
+    arr = size;
+    tmp5 = children;
+    tmp4 = Pile;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+    arr = cResult[3];
+    tmp6 = cResult[4];
+  }
+  if (cResult[5] !== arr) {
+    let mapped;
+    const tmpResult2 = _mod12;
+    if (tmpResult2.isArray(arr)) {
+      mapped = arr.map((item) => CutoutableAvatarImage.AVATAR_SIZE_MAP[item]);
+    } else {
+      mapped = tmp(12851).AVATAR_SIZE_MAP[arr];
+    }
+    cResult[5] = arr;
+    cResult[6] = mapped;
+    tmp11 = mapped;
+  } else {
+    tmp11 = cResult[6];
+  }
+  if (cResult[7] === tmp4) {
+    if (cResult[8] === tmp5) {
+      if (cResult[9] === tmp6) {
+        let tmp13;
+        if (cResult[10] === tmp11) {
+          tmp13 = cResult[11];
+        }
+        return tmp13;
+      }
+    }
+  }
+  const tmp14 = <tmp4 aria-label={tmp6} shape={ClipView.CutoutShape.Circle} size={tmp11} gap={4} depthX={0.5} depthY={0.5}>{tmp5}</tmp4>;
+  cResult[7] = tmp4;
+  cResult[8] = tmp5;
+  cResult[9] = tmp6;
+  cResult[10] = tmp11;
+  cResult[11] = tmp14;
+  tmp13 = tmp14;
+}) : ((size) => {
+  let mapped;
+  let prop;
+  size = size.size;
+  const children = size.children;
+  const merged = Object.assign(size, Object.assign({ size: 0, children: 0 }));
+  const Pile = Pile2.Pile;
+  const tmp2 = jsx;
+  if ("aria-label" in merged) {
+    prop = merged["aria-label"];
+  } else {
+    const tmp3Result = ListUtils;
+    prop = tmp3Result.getListSummaryLabel(merged.names);
+  }
+  const obj = { "aria-label": prop, shape: ClipView.CutoutShape.Circle, size: mapped, gap: 4, depthX: 0.5, depthY: 0.5, children };
+  const tmp3Result2 = _mod12;
+  if (tmp3Result2.isArray(size)) {
+    mapped = size.map((item) => CutoutableAvatarImage.AVATAR_SIZE_MAP[item]);
+  } else {
+    mapped = tmp3(12851).AVATAR_SIZE_MAP[size];
+  }
+  return tmp2(Pile, obj);
+});
+let size = size_mod;
 const result = size.fileFinishedImporting("design/components/Pile/native/AvatarDuoPile.native.tsx");
 
-export const AvatarDuoPile = function AvatarDuoPile(size) {
-  size = size.size;
-  const merged = Object.assign(size, Object.assign({ size: 0, children: 0 }));
-  if ("aria-label" in merged) {
-    let prop = merged["aria-label"];
-  } else {
-    prop = tmp3(12329).getListSummaryLabel(merged.names);
-    const tmp3Result = tmp3(12329);
-  }
-  const obj = { "aria-label": prop, shape: ClipView.CutoutShape.Circle, size: null, gap: 4, depthX: 0.5, depthY: 0.5, children: null };
-  if (tmp3Result2.isArray(size)) {
-    let mapped = size.map((item) => CutoutableAvatarImage.AVATAR_SIZE_MAP[item]);
-  } else {
-    mapped = tmp3(12811).AVATAR_SIZE_MAP[size];
-  }
-  obj.size = mapped;
-  obj.children = size.children;
-  return jsx(Pile.Pile, { "aria-label": prop, shape: ClipView.CutoutShape.Circle, size: null, gap: 4, depthX: 0.5, depthY: 0.5, children: null });
-};
+export const AvatarDuoPile = tmp3;

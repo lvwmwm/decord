@@ -1,35 +1,37 @@
-// Module ID: 14452
-// Function ID: 14453
+// Module ID: 14600
+// Function ID: 14601
 // Name: WebAuthnSuccessStep
-// Dependencies: [19, 21, 1485, 6122, 14434, 14453, 1115, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 14580, 1126, 2]
 
-// Module 14452 (WebAuthnSuccessStep)
-import NavigatorHeader from "NavigatorHeader" /* 6122 */;
-import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 14434 */;
-import UserSettingsAccountBackupCodesDefault from "UserSettingsAccountBackupCodes" /* 14453 */;
-import noop from "module_19" /* 19 */;
+// Module 14600 (WebAuthnSuccessStep)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import intl2 from "intl" /* 1126 */;
+import UserSettingsAccountBackupCodesDefault from "UserSettingsAccountBackupCodes" /* 14580 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/webauthn/native/nav_steps/WebAuthnSuccessStep.tsx");
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    UserSettingsAccountBackupCodesDefault;
+    const intl = tmp(1126).intl;
+    const tmp8 = <tmp7 onGenerate={null} headerLabel={intl.format(intl2.t.iVTs6i, {})} />;
+    cResult[0] = tmp8;
+    first = tmp8;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => {
+  UserSettingsAccountBackupCodesDefault;
+  const intl = intl2.intl;
+  return <tmp onGenerate={null} headerLabel={intl.format(intl2.t.iVTs6i, {})} />;
+});
+const result = size.fileFinishedImporting("modules/webauthn/native/nav_steps/WebAuthnSuccessStep.tsx");
 
-export default function WebAuthnSuccessStep() {
-  navigation = navigation(1485).useNavigation();
-  const items = [navigation];
-  const layoutEffect = noop.useLayoutEffect(() => {
-    const obj = {
-      headerLeft: NavigatorHeader.getHeaderCloseButton(() => {
-        navigation.popToTop();
-        const result = PasskeyUpsellActionCreatorsDefault.closePasskeyUpsellModal();
-      })
-    };
-    navigation.setOptions(obj);
-  }, items);
-  const obj2 = { onGenerate: null, headerLabel: null };
-  let obj = navigation(1485);
-  const intl = navigation(1115).intl;
-  obj2.headerLabel = intl.format(navigation(1115).t.iVTs6i, {});
-  return jsx(UserSettingsAccountBackupCodesDefault, { onGenerate: null, headerLabel: null });
-};
+export default tmp3;

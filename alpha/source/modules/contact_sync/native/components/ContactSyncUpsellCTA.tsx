@@ -1,97 +1,255 @@
-// Module ID: 13606
-// Function ID: 13607
+// Module ID: 13668
+// Function ID: 13669
 // Name: ContactSyncUpsellCTA
-// Dependencies: [19, 12389, 1074, 21, 4845, 576, 8239, 1241, 12386, 6801, 1115, 13607, 2]
+// Dependencies: [19, 12328, 1085, 21, 4890, 587, 558, 576, 1252, 12325, 6693, 1126, 8895, 13669, 2]
 
-// Module 13606 (ContactSyncUpsellCTA)
-import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12386 */;
-import _modDef13607 from "module_13607" /* 13607 */;
-import noop from "module_19" /* 19 */;
+// Module 13668 (ContactSyncUpsellCTA)
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 587 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12325 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12328 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13669 */;
+import react from "react" /* 19 */;
+import Constants from "Constants" /* 1085 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const dismissUpsellCTA = fn(12389).dismissUpsellCTA;
-const Constants = fn(1074);
+let obj1;
+
+let closure_4;
+let hasOwnProperty;
+let obj2;
+const dismissUpsellCTA = ContactSyncPersistedStore.dismissUpsellCTA;
 ({ AnalyticEvents: closure_4, AnalyticsSections: hasOwnProperty } = Constants);
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
-let obj = { container: { padding: 12, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH } };
+const jsx = Fragment.jsx;
+let obj = { container: obj2 };
+obj2 = { padding: 12, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_7 = createStyles.createStyles(obj);
-let obj3 = { padding: 12, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
-const size = fn(2);
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let _location;
+  let obj2;
+  let style;
+  let tmp12;
+  let tmp5;
+  let tmp6;
+  let tmp = _location;
+  let obj = _location(576);
+  const cResult = obj.c(11);
+  ({ style, location: _location } = arg0);
+  const tmp4 = closure_7();
+  if (cResult[0] !== _location) {
+    const fn = function o() {
+      let str2;
+      let str = _location;
+      const obj = { type: hasOwnProperty.CONTACT_SYNC_MODAL, location: { page: str2 } };
+      str2 = _location;
+      const track = AnalyticsUtilsDefault.track;
+      const OPEN_MODAL = constants.OPEN_MODAL;
+      AnalyticsUtilsDefault;
+      if (_location == null) {
+        str2 = "Friends List Upsell";
+      }
+      track(OPEN_MODAL, obj);
+      const openContactSyncModal = ContactSyncModalActionCreators.openContactSyncModal;
+      ContactSyncModalActionCreators;
+      if (str == null) {
+        str = "Friends List Upsell";
+      }
+      openContactSyncModal({}, { page: str });
+    };
+    cResult[0] = _location;
+    cResult[1] = fn;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        tmp = location(closure_1_2[10]);
+        obj = { key: "ContactSyncUpsellLongPress", options: null, hasIcons: false };
+        obj1 = { label: null, onPress: null };
+        showSimpleActionSheet = tmp.showSimpleActionSheet;
+        intl = location(closure_1_2[11]).intl;
+        obj1.label = intl.string(location(closure_1_2[11]).t.WAI6xu);
+        obj1.onPress = function onPress() {
+          closure_1_3();
+        };
+        items = [];
+        items[0] = obj1;
+        obj.options = items;
+        result = showSimpleActionSheet(obj);
+        return;
+      }
+    }
+    cResult[2] = S;
+    tmp6 = S;
+  } else {
+    class S {
+      constructor() {
+        tmp = location(closure_1_2[10]);
+        obj = { key: "ContactSyncUpsellLongPress", options: null, hasIcons: false };
+        obj1 = { label: null, onPress: null };
+        showSimpleActionSheet = tmp.showSimpleActionSheet;
+        intl = location(closure_1_2[11]).intl;
+        obj1.label = intl.string(location(closure_1_2[11]).t.WAI6xu);
+        obj1.onPress = function onPress() {
+          closure_1_3();
+        };
+        items = [];
+        items[0] = obj1;
+        obj.options = items;
+        result = showSimpleActionSheet(obj);
+        return;
+      }
+    }
+  }
+  if (cResult[3] === style) {
+    let tmp9;
+    let tmp8;
+    class S {
+      constructor() {
+        tmp = location(closure_1_2[10]);
+        obj = { key: "ContactSyncUpsellLongPress", options: null, hasIcons: false };
+        obj1 = { label: null, onPress: null };
+        showSimpleActionSheet = tmp.showSimpleActionSheet;
+        intl = location(closure_1_2[11]).intl;
+        obj1.label = intl.string(location(closure_1_2[11]).t.WAI6xu);
+        obj1.onPress = function onPress() {
+          closure_1_3();
+        };
+        items = [];
+        items[0] = obj1;
+        obj.options = items;
+        result = showSimpleActionSheet(obj);
+        return;
+      }
+    }
+    const _Symbol = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      class S {
+        constructor() {
+          tmp = location(closure_1_2[10]);
+          obj = { key: "ContactSyncUpsellLongPress", options: null, hasIcons: false };
+          obj1 = { label: null, onPress: null };
+          showSimpleActionSheet = tmp.showSimpleActionSheet;
+          intl = location(closure_1_2[11]).intl;
+          obj1.label = intl.string(location(closure_1_2[11]).t.WAI6xu);
+          obj1.onPress = function onPress() {
+            closure_1_3();
+          };
+          items = [];
+          items[0] = obj1;
+          obj.options = items;
+          result = showSimpleActionSheet(obj);
+          return;
+        }
+      }
+      const stringResult = obj2.string(tmp(1126).t.T6Rfd9);
+      let intl = tmp(1126).intl;
+      const stringResult1 = intl.string(tmp(1126).t.c6KIpg);
+      cResult[6] = stringResult;
+      cResult[7] = stringResult1;
+      tmp9 = stringResult1;
+      tmp8 = stringResult;
+    } else {
+      class S {
+        constructor() {
+          tmp = location(closure_1_2[10]);
+          obj = { key: "ContactSyncUpsellLongPress", options: null, hasIcons: false };
+          obj1 = { label: null, onPress: null };
+          showSimpleActionSheet = tmp.showSimpleActionSheet;
+          intl = location(closure_1_2[11]).intl;
+          obj1.label = intl.string(location(closure_1_2[11]).t.WAI6xu);
+          obj1.onPress = function onPress() {
+            closure_1_3();
+          };
+          items = [];
+          items[0] = obj1;
+          obj.options = items;
+          result = showSimpleActionSheet(obj);
+          return;
+        }
+      }
+      tmp9 = cResult[7];
+    }
+    if (cResult[8] === tmp5) {
+      class S {
+        constructor() {
+          tmp = location(closure_1_2[10]);
+          obj = { key: "ContactSyncUpsellLongPress", options: null, hasIcons: false };
+          obj1 = { label: null, onPress: null };
+          showSimpleActionSheet = tmp.showSimpleActionSheet;
+          intl = location(closure_1_2[11]).intl;
+          obj1.label = intl.string(location(closure_1_2[11]).t.WAI6xu);
+          obj1.onPress = function onPress() {
+            closure_1_3();
+          };
+          items = [];
+          items[0] = obj1;
+          obj.options = items;
+          result = showSimpleActionSheet(obj);
+          return;
+        }
+      }
+      return tmp12;
+    }
+    const FormCTA = tmp(8895).FormCTA;
+    const tmp15 = <FormCTA onPress={tmp5} onLongPress={tmp6} style={tmp7} iconSource={AssetRegistryDefault} title={tmp8} subtitle={tmp9} />;
+    cResult[8] = tmp5;
+    cResult[9] = tmp7;
+    cResult[10] = tmp15;
+    tmp12 = tmp15;
+  }
+  let items = [tmp4.container, style];
+  cResult[3] = style;
+  cResult[4] = tmp4.container;
+  cResult[5] = items;
+}) : ((location) => {
+  location = location.location;
+  const style = location.style;
+  let tmp = closure_7();
+  let items = [tmp.container, style];
+  const FormCTA = location(8895).FormCTA;
+  let intl = location(1126).intl;
+  const intl2 = location(1126).intl;
+  return <FormCTA onPress={function onPress() {
+    let str2;
+    let str = location;
+    const obj = { type: hasOwnProperty.CONTACT_SYNC_MODAL, location: { page: str2 } };
+    str2 = location;
+    const track = AnalyticsUtilsDefault.track;
+    const OPEN_MODAL = constants.OPEN_MODAL;
+    AnalyticsUtilsDefault;
+    if (location == null) {
+      str2 = "Friends List Upsell";
+    }
+    track(OPEN_MODAL, obj);
+    const openContactSyncModal = ContactSyncModalActionCreators.openContactSyncModal;
+    ContactSyncModalActionCreators;
+    if (str == null) {
+      str = "Friends List Upsell";
+    }
+    openContactSyncModal({}, { page: str });
+  }} onLongPress={function onLongPress() {
+    let intl;
+    let items;
+    const obj = { key: "ContactSyncUpsellLongPress", options: items, hasIcons: false };
+    const tmp = location(dependencyMap[10]);
+    const showSimpleActionSheet = tmp.showSimpleActionSheet;
+    const obj2 = {
+      label: intl.string(location(dependencyMap[11]).t.WAI6xu),
+      onPress() {
+        closure_1_3();
+      }
+    };
+    intl = location(dependencyMap[11]).intl;
+    items = [obj2];
+    const result = showSimpleActionSheet(obj);
+  }} style={items} iconSource={AssetRegistryDefault} title={intl.string(location(1126).t.T6Rfd9)} subtitle={intl2.string(location(1126).t.c6KIpg)} />;
+}));
 let result = size.fileFinishedImporting("modules/contact_sync/native/components/ContactSyncUpsellCTA.tsx");
 
-export default noop.memo(function ContactSyncUpsellCTA(location) {
-  location = location.location;
-  let obj = {
-    onPress() {
-      const obj2 = { type: constants2.CONTACT_SYNC_MODAL, location: null };
-      let str = location;
-      let str2 = location;
-      if (location == null) {
-        str2 = "Friends List Upsell";
-      }
-      obj2.location = { page: str2 };
-      AnalyticsUtilsDefault.track(constants.OPEN_MODAL, obj2);
-      if (str == null) {
-        str = "Friends List Upsell";
-      }
-      ContactSyncModalActionCreators.openContactSyncModal({}, { page: str });
-    },
-    onLongPress() {
-      const obj2 = { key: "ContactSyncUpsellLongPress", options: null, hasIcons: false };
-      const obj3 = { label: null, onPress: null };
-      const intl = location(1115).intl;
-      obj3.label = intl.string(location(1115).t.WAI6xu);
-      obj3.onPress = function onPress() {
-        closure_1_3();
-      };
-      const items = [obj3];
-      obj2.options = items;
-      const result = location(6801).showSimpleActionSheet(obj2);
-    },
-    style: null,
-    iconSource: _modDef13607,
-    title: null,
-    subtitle: null
-  };
-  let items = [closure_7().container, location.style];
-  obj.style = items;
-  let intl = location(1115).intl;
-  obj.title = intl.string(location(1115).t.T6Rfd9);
-  const intl2 = location(1115).intl;
-  obj.subtitle = intl2.string(location(1115).t.c6KIpg);
-  return jsx(location(8239).FormCTA, {
-    onPress() {
-      const obj2 = { type: constants2.CONTACT_SYNC_MODAL, location: null };
-      let str = location;
-      let str2 = location;
-      if (location == null) {
-        str2 = "Friends List Upsell";
-      }
-      obj2.location = { page: str2 };
-      AnalyticsUtilsDefault.track(constants.OPEN_MODAL, obj2);
-      if (str == null) {
-        str = "Friends List Upsell";
-      }
-      ContactSyncModalActionCreators.openContactSyncModal({}, { page: str });
-    },
-    onLongPress() {
-      const obj2 = { key: "ContactSyncUpsellLongPress", options: null, hasIcons: false };
-      const obj3 = { label: null, onPress: null };
-      const intl = location(1115).intl;
-      obj3.label = intl.string(location(1115).t.WAI6xu);
-      obj3.onPress = function onPress() {
-        closure_1_3();
-      };
-      const items = [obj3];
-      obj2.options = items;
-      const result = location(6801).showSimpleActionSheet(obj2);
-    },
-    style: null,
-    iconSource: _modDef13607,
-    title: null,
-    subtitle: null
-  });
-});
+export default memoResult;

@@ -1,93 +1,480 @@
-// Module ID: 11571
-// Function ID: 11572
+// Module ID: 11491
+// Function ID: 11492
 // Name: ClassificationDetail
-// Dependencies: [19, 17, 2111, 8065, 8052, 1074, 21, 4845, 576, 4841, 8053, 1115, 504, 3102, 9396, 4554, 8896, 6103, 5465, 11572, 11574, 8064, 8045, 1241, 11575, 5363, 5368, 11577, 6730, 11582, 8051, 2]
-// Exports: default
+// Dependencies: [19, 17, 2116, 8106, 8093, 1085, 21, 4890, 587, 558, 576, 4886, 8094, 1126, 504, 3109, 4565, 8923, 9442, 5993, 5594, 11492, 11494, 8105, 8086, 1252, 11495, 5409, 5414, 11497, 11502, 8092, 6619, 2]
 
-// Module 11571 (ClassificationDetail)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import _modDef3102 from "module_3102" /* 3102 */;
-import LinkingDefault from "Linking" /* 4554 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import MetricEvents from "MetricEvents" /* 5368 */;
-import components_Button_Button from "components/Button/Button" /* 5465 */;
-import TableRow from "TableRow" /* 6103 */;
-import SafetyHubModels from "SafetyHubModels" /* 8053 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9396 */;
-import noop from "module_19" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2111 */;
-import SafetyHubStore from "SafetyHubStore" /* 8065 */;
+// Module 11491 (ClassificationDetail)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl4 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import _modDef3109 from "module_3109" /* 3109 */;
+import LinkingDefault from "Linking" /* 4565 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5409 */;
+import MetricEvents from "MetricEvents" /* 5414 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import TableRow2 from "TableRow" /* 5993 */;
+import SafetyHubModels from "SafetyHubModels" /* 8094 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9442 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 11495 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 11497 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
+import SafetyHubStore from "SafetyHubStore" /* 8106 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8093 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-function ClassificationHeader(classificationTypeText) {
+const require = globalThis.__r;
+let _require, classificationId, closure_8, guildMetadata;
+
+let c10;
+let c9;
+let closure_14;
+let closure_15;
+let closure_4;
+let hasOwnProperty;
+let map1;
+let metroRequire;
+let obj10;
+let obj11;
+let obj12;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+let obj7;
+let obj8;
+let obj9;
+let size;
+let unpackModuleId;
+function ClassificationPolicyCard(policyExplainerLink) {
+  let ShieldIcon;
+  let Text;
+  let classificationTypeText2;
+  let intl;
+  let items1;
+  let items2;
+  let items3;
+  let obj10;
+  let obj12;
+  let obj14;
+  let obj15;
+  let obj7;
+  let tmp11;
+  let tmp9;
+  const tmp = closure_25;
+  if (tmp) {
+    let tmp17;
+    let tmp18;
+    let tmp20;
+    let tmp24;
+    let tmp28;
+    let tmp30;
+    const obj8 = policyExplainerLink(576);
+    const cResult = obj8.c(19);
+    ({ classificationTypeText: classificationTypeText2, policyExplainerLink } = policyExplainerLink);
+    const tmp16 = closure_16();
+    if (cResult[0] !== policyExplainerLink) {
+      const fn = function t() {
+        const obj = LinkingDefault;
+        obj.openURL(policyExplainerLink);
+      };
+      cResult[0] = policyExplainerLink;
+      cResult[1] = fn;
+      tmp17 = fn;
+    } else {
+      tmp17 = cResult[1];
+    }
+    if (cResult[2] !== tmp16.classificationPolicyCard) {
+      const items = [tmp16.classificationPolicyCard];
+      cResult[2] = tmp16.classificationPolicyCard;
+      cResult[3] = items;
+      tmp18 = items;
+    } else {
+      tmp18 = cResult[3];
+    }
+    const _Symbol = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { size: "sm", color: nativeDefault.colors.TEXT_LINK };
+      const ShieldIcon2 = tmp12(8923).ShieldIcon;
+      const tmp23 = closure_13(ShieldIcon2, obj2);
+      cResult[4] = tmp23;
+      tmp20 = tmp23;
+    } else {
+      tmp20 = cResult[4];
+    }
+    if (cResult[5] !== tmp16.classificationPolicyCardIcon) {
+      const obj3 = { style: tmp16.classificationPolicyCardIcon, children: tmp20 };
+      const tmp27 = closure_13(closure_4, obj3);
+      cResult[5] = tmp16.classificationPolicyCardIcon;
+      cResult[6] = tmp27;
+      tmp24 = tmp27;
+    } else {
+      tmp24 = cResult[6];
+    }
+    const classificationPolicyCardContent = tmp16.classificationPolicyCardContent;
+    if (cResult[7] !== classificationTypeText2) {
+      const intl2 = tmp12(1126).intl;
+      const obj4 = { classificationDescription: classificationTypeText2 };
+      const formatResult = intl2.format(policyExplainerLink(1126).t.zxUdpj, obj4);
+      cResult[7] = classificationTypeText2;
+      cResult[8] = formatResult;
+      tmp28 = formatResult;
+    } else {
+      tmp28 = cResult[8];
+    }
+    if (cResult[9] !== tmp28) {
+      const obj5 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: tmp28 };
+      const tmp32 = closure_13(policyExplainerLink(4886).Text, obj5);
+      cResult[9] = tmp28;
+      cResult[10] = tmp32;
+      tmp30 = tmp32;
+    } else {
+      tmp30 = cResult[10];
+    }
+    if (cResult[11] === tmp16.classificationPolicyCardContent) {
+      let tmp33;
+      if (cResult[12] === tmp30) {
+        tmp33 = cResult[13];
+      }
+      if (cResult[14] === tmp17) {
+        if (cResult[15] === tmp18) {
+          if (cResult[16] === tmp24) {
+            let tmp37;
+            if (cResult[17] === tmp33) {
+              tmp37 = cResult[18];
+            }
+            tmp11 = tmp37;
+          }
+        }
+      }
+      const obj6 = { children: closure_14(TouchableHitBoxDefault, obj7) };
+      obj7 = { onPress: tmp17, style: tmp18, children: items1 };
+      items1 = [tmp24, tmp33];
+      const tmp42 = closure_13(closure_4, obj6);
+      cResult[14] = tmp17;
+      cResult[15] = tmp18;
+      cResult[16] = tmp24;
+      cResult[17] = tmp33;
+      cResult[18] = tmp42;
+      tmp37 = tmp42;
+    }
+    const obj9 = { style: classificationPolicyCardContent, children: tmp30 };
+    const tmp36 = closure_13(closure_4, obj9);
+    cResult[11] = tmp16.classificationPolicyCardContent;
+    cResult[12] = tmp30;
+    cResult[13] = tmp36;
+    tmp33 = tmp36;
+  } else {
+    policyExplainerLink = policyExplainerLink.policyExplainerLink;
+    const classificationTypeText = policyExplainerLink.classificationTypeText;
+    const tmp3 = closure_16();
+    let obj = { children: closure_14(tmp9, obj10) };
+    obj10 = {
+      onPress() {
+          const obj = LinkingDefault;
+          obj.openURL(policyExplainerLink);
+        },
+      style: items2,
+      children: items3
+    };
+    items2 = [tmp3.classificationPolicyCard];
+    const obj11 = { style: tmp3.classificationPolicyCardIcon, children: closure_13(ShieldIcon, obj12) };
+    obj12 = { size: "sm", color: nativeDefault.colors.TEXT_LINK };
+    tmp9 = TouchableHitBoxDefault;
+    ShieldIcon = policyExplainerLink(8923).ShieldIcon;
+    items3 = [closure_13(closure_4, obj11), ];
+    const obj13 = { style: tmp3.classificationPolicyCardContent, children: closure_13(Text, obj14) };
+    obj14 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.format(policyExplainerLink(1126).t.zxUdpj, obj15) };
+    Text = policyExplainerLink(4886).Text;
+    intl = policyExplainerLink(1126).intl;
+    obj15 = { classificationDescription: classificationTypeText };
+    items3[1] = closure_13(closure_4, obj13);
+    tmp11 = closure_13(closure_4, obj);
+  }
+  return tmp11;
+}
+({ View: closure_4, ActivityIndicator: hasOwnProperty, ScrollView: metroRequire } = react_native);
+({ SafetyHubAnalyticsActionSource: c9, SafetyHubAnalyticsActions: c10, SafetyHubLinks: unpackModuleId } = SafetyHubConstants);
+const AnalyticEvents = Constants.AnalyticEvents;
+({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { root: obj2, container: obj3, header: obj4, headerText: { textAlign: "center", maxWidth: 260 }, sectionContainer: obj5, actionsTaken: obj6, classificationDetailContainer: obj7, letUsKnowContainer: { display: "flex", alignItems: "center" }, confirmMinimumAgeSection: obj8, guidelinesFooter: obj9, classificationPolicyCard: obj10, classificationPolicyCardIcon: size, classificationPolicyCardContent: { flex: 1 }, classificationActionDescription: obj11, bulletText: { flex: 1 }, redirectButtonWrapper: obj12 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
+createStyles = createStyles.createStyles;
+obj3 = { display: "flex", flexDirection: "column", height: "100%", paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_32 };
+obj4 = { display: "flex", textAlign: "center", alignItems: "center", flexDirection: "column", gap: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_8 };
+obj5 = { display: "flex", gap: nativeDefault.space.PX_8 };
+obj6 = { display: "flex", paddingLeft: nativeDefault.space.PX_4, flexDirection: "column", gap: nativeDefault.space.PX_8 };
+obj7 = { display: "flex", flexDirection: "column", gap: nativeDefault.space.PX_32 };
+obj8 = { display: "flex", gap: nativeDefault.space.PX_12 };
+obj9 = { marginTop: nativeDefault.space.PX_12 };
+obj10 = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_12, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_4, flexShrink: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
+size = { display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, width: 32, height: 32, borderRadius: nativeDefault.radii.xxl };
+obj11 = { display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_8 };
+obj12 = { width: 300, alignSelf: "center", marginTop: nativeDefault.space.PX_32 };
+let closure_16 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let classificationTypeText;
+  let formatResult;
+  let name;
+  let name1;
+  let tmp6;
+  let obj = react2;
+  const cResult = obj.c(10);
+  ({ classificationTypeText, guildMetadata } = arg0);
+  const tmp4 = closure_16();
+  if (cResult[0] === classificationTypeText) {
+    let tmp5;
+    if (cResult[1] === guildMetadata) {
+      tmp5 = cResult[2];
+    }
+    if (cResult[4] === tmp5) {
+      let tmp18;
+      if (cResult[5] === tmp4.headerText) {
+        tmp18 = cResult[6];
+      }
+      if (cResult[7] === tmp4.header) {
+        let tmp21;
+        if (cResult[8] === tmp18) {
+          tmp21 = cResult[9];
+        }
+        return tmp21;
+      }
+      const obj2 = { style: tmp4.header, children: tmp18 };
+      const tmp24 = map1(React3, obj2);
+      cResult[7] = tmp4.header;
+      cResult[8] = tmp18;
+      cResult[9] = tmp24;
+      tmp21 = tmp24;
+    }
+    const obj3 = { variant: "text-lg/normal", style: tmp4.headerText, color: "mobile-text-heading-primary", children: tmp5 };
+    const tmp20 = map1(Text_Text.Text, obj3);
+    cResult[4] = tmp5;
+    cResult[5] = tmp4.headerText;
+    cResult[6] = tmp20;
+    tmp18 = tmp20;
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function p(children, arg1) {
+      const obj = { variant: "heading-xl/bold", children };
+      return closure_1_13(require("Text/Text").Text, obj, arg1);
+    };
+    cResult[3] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[3];
+  }
+  const obj4 = { classification_type: classificationTypeText, classificationHook: tmp6 };
+  if (null != guildMetadata) {
+    let format2Result;
+    let member_type;
+    if (guildMetadata != null) {
+      member_type = guildMetadata.member_type;
+    }
+    if (member_type === SafetyHubModels.MemberType.OWNER) {
+      const intl3 = tmp(1126).intl;
+      const format2 = intl3.format;
+      const obj5 = { guildName: name };
+      const X1ngSd = tmp(1126).t.X1ngSd;
+      const merged = Object.assign(obj4);
+      name = undefined;
+      if (guildMetadata != null) {
+        name = guildMetadata.name;
+      }
+      format2Result = format2(X1ngSd, obj5);
+    } else {
+      const intl2 = tmp(1126).intl;
+      const format = intl2.format;
+      const obj6 = { guildName: name1 };
+      const rmpEPD = tmp(1126).t.rmpEPD;
+      const merged1 = Object.assign(obj4);
+      name1 = undefined;
+      if (guildMetadata != null) {
+        name1 = guildMetadata.name;
+      }
+      format2Result = format(rmpEPD, obj6);
+    }
+    formatResult = format2Result;
+  } else {
+    const intl = tmp(1126).intl;
+    formatResult = intl.format(tmp(1126).t["39jfOz"], obj4);
+  }
+  cResult[0] = classificationTypeText;
+  cResult[1] = guildMetadata;
+  cResult[2] = formatResult;
+  tmp5 = formatResult;
+}) : ((classificationTypeText) => {
+  let obj2;
   classificationTypeText = classificationTypeText.classificationTypeText;
-  const guildMetadata = classificationTypeText.guildMetadata;
+  guildMetadata = classificationTypeText.guildMetadata;
   const tmp = closure_16();
   const items = [classificationTypeText, guildMetadata];
-  let obj = { style: tmp.header, children: null };
-  const memo = noop.useMemo(() => {
-    let obj2 = {
+  let obj = { style: tmp.header, children: closure_13(classificationTypeText(4886).Text, obj2) };
+  const memo = react.useMemo(() => {
+    let formatResult;
+    let name;
+    let name1;
+    let obj = {
       classification_type: classificationTypeText,
       classificationHook(children, arg1) {
-        return closure_1_13(classificationTypeText(closure_1_2[9]).Text, { variant: "heading-xl/bold", children }, arg1);
+        const obj = { variant: "heading-xl/bold", children };
+        return closure_1_13(classificationTypeText(closure_1_2[11]).Text, obj, arg1);
       }
     };
-    let tmp3 = null;
     if (null != guildMetadata) {
+      let format2Result;
       let member_type;
-      if (tmp2 != tmp3) {
-        member_type = tmp2.member_type;
+      if (guildMetadata != null) {
+        member_type = tmp.member_type;
       }
-      let X1ngSd = require;
-      let obj = dependencyMap;
       if (member_type === SafetyHubModels.MemberType.OWNER) {
-        const intl3 = X1ngSd(1115).intl;
-        X1ngSd = X1ngSd(1115).t.X1ngSd;
-        obj = {};
-        const merged = Object.assign(obj2);
-        tmp3 = tmp2 == tmp3;
-        obj2 = undefined;
-        if (!tmp3) {
-          obj2 = tmp2.name;
+        const intl3 = tmp6(1126).intl;
+        const format2 = intl3.format;
+        const obj2 = { guildName: name };
+        const X1ngSd = tmp6(1126).t.X1ngSd;
+        const merged = Object.assign(obj);
+        name = undefined;
+        if (guildMetadata != null) {
+          name = tmp.name;
         }
-        obj.guildName = obj2;
-        let formatResult = intl3.format(X1ngSd, obj);
+        format2Result = format2(X1ngSd, obj2);
       } else {
-        const intl2 = X1ngSd(1115).intl;
-        const obj4 = {};
-        const merged1 = Object.assign(obj2);
-        let name;
-        if (tmp2 != tmp3) {
-          name = tmp2.name;
+        const intl2 = tmp6(1126).intl;
+        const format = intl2.format;
+        const obj3 = { guildName: name1 };
+        const rmpEPD = tmp6(1126).t.rmpEPD;
+        const merged1 = Object.assign(obj);
+        name1 = undefined;
+        if (guildMetadata != null) {
+          name1 = tmp.name;
         }
-        obj4.guildName = name;
-        formatResult = intl2.format(X1ngSd(1115).t.rmpEPD, obj4);
+        format2Result = format(rmpEPD, obj3);
       }
+      formatResult = format2Result;
     } else {
-      const intl = util.intl;
-      return intl.format(util.t["39jfOz"], obj2);
+      const intl = intl4.intl;
+      formatResult = intl.format(intl4.t["39jfOz"], obj);
     }
+    return formatResult;
   }, items);
-  obj.children = closure_13(classificationTypeText(4841).Text, { variant: "text-lg/normal", style: tmp.headerText, color: "mobile-text-heading-primary", children: memo });
+  obj2 = { variant: "text-lg/normal", style: tmp.headerText, color: "mobile-text-heading-primary", children: memo };
   return closure_13(closure_4, obj);
-}
-function SectionHeader(arg0) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let children;
+  let obj3;
+  let plain;
+  const obj = react2;
+  const cResult = obj.c(3);
+  ({ children, plain } = arg0);
+  if (cResult[0] === children) {
+    let tmp5;
+    if (cResult[1] === (undefined !== plain && plain)) {
+      tmp5 = cResult[2];
+    }
+    return tmp5;
+  }
+  const Text = Text_Text.Text;
+  const tmp6 = map1;
+  if (undefined !== plain && plain) {
+    obj3 = { variant: "text-sm/medium", color: "text-subtle", children };
+    const obj2 = { variant: "text-sm/medium", color: "text-subtle", children };
+  } else {
+    obj3 = { variant: "eyebrow", color: "text-muted", children };
+  }
+  const tmp6Result = tmp6(Text, obj3);
+  cResult[0] = children;
+  cResult[1] = undefined !== plain && plain;
+  cResult[2] = tmp6Result;
+  tmp5 = tmp6Result;
+}) : ((arg0) => {
+  let children;
+  let obj;
+  let plain;
   ({ children, plain } = arg0);
   if (plain === undefined) {
     plain = false;
   }
+  const Text = Text_Text.Text;
+  const tmp = map1;
   if (plain) {
+    obj = { variant: "text-sm/medium", color: "text-subtle", children };
     const obj2 = { variant: "text-sm/medium", color: "text-subtle", children };
-    let obj = obj2;
   } else {
     obj = { variant: "eyebrow", color: "text-muted", children };
   }
-  return map1(Text_Text.Text, obj);
-}
-function BulletRow(children) {
-  let flag = children.large;
+  return tmp(Text, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let children;
+  let items;
+  let large;
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(10);
+  ({ children, large } = arg0);
+  const tmp4 = undefined !== large && large;
+  const tmp5 = closure_16();
+  let str = "text-xs/normal";
+  if (tmp4) {
+    str = "text-md/medium";
+  }
+  if (cResult[0] !== str) {
+    const obj2 = { variant: str, children: [" ", "\u2022"] };
+    const tmp8 = authStore2(Text_Text.Text, obj2);
+    cResult[0] = str;
+    cResult[1] = tmp8;
+    tmp6 = tmp8;
+  } else {
+    tmp6 = cResult[1];
+  }
+  if (cResult[2] === children) {
+    if (cResult[3] === tmp5.bulletText) {
+      let tmp9;
+      if (cResult[4] === str) {
+        tmp9 = cResult[5];
+      }
+      if (cResult[6] === tmp5.classificationActionDescription) {
+        if (cResult[7] === tmp6) {
+          let tmp11;
+          if (cResult[8] === tmp9) {
+            tmp11 = cResult[9];
+          }
+          return tmp11;
+        }
+      }
+      const obj3 = { style: tmp5.classificationActionDescription, children: items };
+      items = [tmp6, tmp9];
+      const tmp14 = authStore2(React3, obj3);
+      cResult[6] = tmp5.classificationActionDescription;
+      cResult[7] = tmp6;
+      cResult[8] = tmp9;
+      cResult[9] = tmp14;
+      tmp11 = tmp14;
+    }
+  }
+  const obj4 = { variant: str, style: tmp5.bulletText, children };
+  const tmp10 = map1(Text_Text.Text, obj4);
+  cResult[2] = children;
+  cResult[3] = tmp5.bulletText;
+  cResult[4] = str;
+  cResult[5] = tmp10;
+  tmp9 = tmp10;
+}) : ((large) => {
+  let items;
+  let flag = large.large;
+  const children = large.children;
   if (flag === undefined) {
     flag = false;
   }
@@ -96,253 +483,1357 @@ function BulletRow(children) {
   if (flag) {
     str = "text-md/medium";
   }
-  const obj = { style: tmp.classificationActionDescription, children: null };
-  const items = [closure_1_14(Text_Text.Text, { variant: str, children: [" ", "\u2022"] }), map1(Text_Text.Text, { variant: str, style: tmp.bulletText, children: children.children })];
-  obj.children = items;
-  return closure_1_14(React4, obj);
-}
-function ClassificationActionsTaken(arg0) {
+  const obj = { style: tmp.classificationActionDescription, children: items };
+  items = [authStore2(Text_Text.Text, { variant: str, children: [" ", "\u2022"] }), ];
+  const obj2 = { variant: str, style: tmp.bulletText, children };
+  items[1] = map1(Text_Text.Text, obj2);
+  return authStore2(React3, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let TByIjT;
+  let actions;
+  let classificationExpiration;
+  let format;
+  let items1;
+  let items2;
+  let locale;
+  let mapped;
+  let obj6;
+  let redesigned;
+  let tmp17;
+  let tmp4;
+  let tmp5;
+  let obj = redesigned(576);
+  const cResult = obj.c(35);
   ({ actions, classificationExpiration, redesigned } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [LocaleStore];
+    const fn = function l() {
+      return locale.locale;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = redesigned(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  const tmp8 = closure_16();
+  if (cResult[2] === actions) {
+    if (cResult[3] === classificationExpiration) {
+      if (cResult[4] === redesigned) {
+        let tmp9;
+        let tmp10;
+        let tmp11;
+        let tmp12;
+        let tmp13;
+        let tmp14;
+        let tmp15;
+        if (cResult[5] === tmp8) {
+          tmp9 = cResult[6];
+          tmp10 = cResult[7];
+          tmp11 = cResult[8];
+          tmp12 = cResult[9];
+          tmp13 = cResult[10];
+          tmp14 = cResult[11];
+          tmp15 = cResult[12];
+        }
+        const _Symbol2 = Symbol;
+        if (tmp15 === Symbol.for("react.early_return_sentinel")) {
+          if (cResult[21] === classificationExpiration) {
+            if (cResult[22] === stateFromStores) {
+              let tmp34;
+              if (cResult[23] === redesigned) {
+                tmp34 = cResult[24];
+              }
+              if (cResult[25] === tmp9) {
+                if (cResult[26] === tmp11) {
+                  if (cResult[27] === tmp12) {
+                    let tmp38;
+                    if (cResult[28] === tmp34) {
+                      tmp38 = cResult[29];
+                    }
+                    if (cResult[30] === tmp10) {
+                      if (cResult[31] === tmp13) {
+                        if (cResult[32] === tmp14) {
+                          let tmp41;
+                          if (cResult[33] === tmp38) {
+                            tmp41 = cResult[34];
+                          }
+                          tmp15 = tmp41;
+                        }
+                      }
+                    }
+                    const obj2 = { style: tmp13, children: items1 };
+                    items1 = [tmp14, tmp38];
+                    const tmp43 = closure_14(tmp10, obj2);
+                    cResult[30] = tmp10;
+                    cResult[31] = tmp13;
+                    cResult[32] = tmp14;
+                    cResult[33] = tmp38;
+                    cResult[34] = tmp43;
+                    tmp41 = tmp43;
+                  }
+                }
+              }
+              const obj4 = { style: tmp11, children: items2 };
+              items2 = [tmp12, tmp34];
+              const tmp40 = closure_14(tmp9, obj4);
+              cResult[25] = tmp9;
+              cResult[26] = tmp11;
+              cResult[27] = tmp12;
+              cResult[28] = tmp34;
+              cResult[29] = tmp40;
+              tmp38 = tmp40;
+            }
+          }
+          let tmp35 = null;
+          if (null != classificationExpiration) {
+            const obj5 = { large: redesigned, children: format(TByIjT, obj6) };
+            const intl = tmp(1126).intl;
+            format = intl.format;
+            obj6 = { expirationDate: classificationExpiration.toLocaleDateString(stateFromStores, { dateStyle: "medium" }) };
+            TByIjT = tmp(1126).t.TByIjT;
+            tmp35 = closure_13(closure_19, obj5, "expiration");
+          }
+          cResult[21] = classificationExpiration;
+          cResult[22] = stateFromStores;
+          cResult[23] = redesigned;
+          cResult[24] = tmp35;
+          tmp34 = tmp35;
+        }
+        return tmp15;
+      }
+    }
+  }
+  Symbol.for("react.early_return_sentinel");
+  if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+    class N {
+      constructor(descriptions) {
+        return descriptions.descriptions.length > 0;
+      }
+    }
+    cResult[13] = N;
+    tmp17 = N;
+  } else {
+    class N {
+      constructor(descriptions) {
+        return descriptions.descriptions.length > 0;
+      }
+    }
+  }
+  const found = actions.filter(tmp17);
+  if (0 !== found.length) {
+    let tmp26;
+    let tmp33;
+    class N {
+      constructor(descriptions) {
+        return descriptions.descriptions.length > 0;
+      }
+    }
+    const _Symbol = Symbol;
+    const sectionContainer = tmp8.sectionContainer;
+    if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+      class N {
+        constructor(descriptions) {
+          return descriptions.descriptions.length > 0;
+        }
+      }
+      const stringResult = obj3.string(redesigned(1126).t["O2nYk+"]);
+      cResult[14] = stringResult;
+      tmp26 = stringResult;
+    } else {
+      class N {
+        constructor(descriptions) {
+          return descriptions.descriptions.length > 0;
+        }
+      }
+    }
+    if (cResult[15] !== redesigned) {
+      class N {
+        constructor(descriptions) {
+          return descriptions.descriptions.length > 0;
+        }
+      }
+      const obj7 = { plain: redesigned, children: tmp26 };
+      const tmp30 = closure_13(closure_18, obj7);
+      cResult[15] = redesigned;
+      cResult[16] = tmp30;
+    } else {
+      class N {
+        constructor(descriptions) {
+          return descriptions.descriptions.length > 0;
+        }
+      }
+    }
+    if (cResult[17] !== tmp8.actionsTaken) {
+      class N {
+        constructor(descriptions) {
+          return descriptions.descriptions.length > 0;
+        }
+      }
+      tmp32[0] = tmp8.actionsTaken;
+      cResult[17] = tmp8.actionsTaken;
+      cResult[18] = tmp32;
+    } else {
+      class N {
+        constructor(descriptions) {
+          return descriptions.descriptions.length > 0;
+        }
+      }
+    }
+    if (cResult[19] !== redesigned) {
+      class G {
+        constructor(action) {
+          const obj = { action, large: redesigned };
+          return map1(closure_22, obj, action.id);
+        }
+      }
+      cResult[19] = redesigned;
+      cResult[20] = G;
+      tmp33 = G;
+    } else {
+      class G {
+        constructor(action) {
+          const obj = { action, large: redesigned };
+          return map1(closure_22, obj, action.id);
+        }
+      }
+    }
+    mapped = found.map(tmp33);
+  } else {
+    class G {
+      constructor(action) {
+        const obj = { action, large: redesigned };
+        return map1(closure_22, obj, action.id);
+      }
+    }
+  }
+  cResult[2] = actions;
+  cResult[3] = classificationExpiration;
+  cResult[4] = redesigned;
+  cResult[5] = tmp8;
+  cResult[6] = tmp24;
+  cResult[7] = tmp23;
+  cResult[8] = tmp22;
+  cResult[9] = mapped;
+  cResult[10] = tmp20;
+  cResult[11] = tmp19;
+  cResult[12] = tmp18;
+  tmp15 = tmp18;
+  tmp14 = tmp19;
+  tmp13 = tmp20;
+  tmp12 = mapped;
+  tmp11 = tmp22;
+  tmp10 = tmp23;
+  tmp9 = tmp24;
+}) : ((arg0) => {
+  let TByIjT;
+  let actions;
+  let classificationExpiration;
+  let format;
+  let intl;
+  let items1;
+  let items2;
+  let items3;
+  let locale;
+  let obj6;
+  let redesigned;
+  let tmp6Result;
+  ({ actions, classificationExpiration, redesigned } = arg0);
+  let obj = redesigned(504);
   const items = [LocaleStore];
-  const stateFromStores = redesigned(504).useStateFromStores(items, () => locale.locale);
+  const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
   const tmp4 = closure_16();
   const found = actions.filter((descriptions) => descriptions.descriptions.length > 0);
   if (0 !== found.length) {
-    const obj2 = { style: tmp4.sectionContainer, children: null };
-    const obj3 = { plain: redesigned, children: null };
-    const intl = tmp(1115).intl;
-    obj3.children = intl.string(tmp(1115).t["O2nYk+"]);
-    const items1 = [closure_13(SectionHeader, obj3), ];
-    const obj4 = { style: null, children: null };
-    const items2 = [tmp4.actionsTaken];
-    obj4.style = items2;
-    const items3 = [found.map((action) => map1(ClassificationActionsTakenRows, { action, large: redesigned }, action.id)), ];
+    const obj2 = { style: tmp4.sectionContainer, children: items1 };
+    const obj3 = { plain: redesigned, children: intl.string(redesigned(1126).t["O2nYk+"]) };
+    intl = tmp(1126).intl;
+    items1 = [closure_13(closure_18, obj3), ];
+    const obj4 = { style: items2, children: items3 };
+    items2 = [tmp4.actionsTaken];
+    items3 = [
+      found.map((action) => {
+          const obj = { action, large: redesigned };
+          return map1(closure_22, obj, action.id);
+        }),
+
+    ];
     let tmp8Result = null;
+    const tmp8 = closure_13;
     if (null != classificationExpiration) {
-      const obj5 = { large: redesigned, children: null };
-      const intl2 = tmp(1115).intl;
-      const obj6 = { expirationDate: classificationExpiration.toLocaleDateString(stateFromStores, { dateStyle: "medium" }) };
-      obj5.children = intl2.format(tmp(1115).t.TByIjT, obj6);
-      tmp8Result = tmp8(BulletRow, obj5, "expiration");
+      const obj5 = { large: redesigned, children: format(TByIjT, obj6) };
+      const intl2 = tmp(1126).intl;
+      format = intl2.format;
+      obj6 = { expirationDate: classificationExpiration.toLocaleDateString(stateFromStores, { dateStyle: "medium" }) };
+      TByIjT = tmp(1126).t.TByIjT;
+      tmp8Result = tmp8(closure_19, obj5, "expiration");
     }
     items3[1] = tmp8Result;
-    obj4.children = items3;
     items1[1] = closure_14(closure_4, obj4);
-    obj2.children = items1;
-    let tmp6Result = tmp6(tmp7, obj2);
-    tmp8 = closure_13;
+    tmp6Result = tmp6(tmp7, obj2);
   } else {
     tmp6Result = null;
   }
   return tmp6Result;
-}
-function ManualReviewDecidedUnderageActionsTaken() {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let intl;
+  let intl2;
+  let items1;
+  let tmp10;
+  let tmp15;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(9);
+  const tmp4 = closure_16();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { plain: true, children: intl.string(intl4.t["O2nYk+"]) };
+    intl = tmp(1126).intl;
+    const tmp8 = map1(closure_18, obj2);
+    cResult[0] = tmp8;
+    first = tmp8;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== tmp4.actionsTaken) {
+    const items = [tmp4.actionsTaken];
+    cResult[1] = tmp4.actionsTaken;
+    cResult[2] = items;
+    tmp9 = items;
+  } else {
+    tmp9 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { large: true, children: intl2.string(_modDef3109.rn3Gto) };
+    intl2 = tmp(1126).intl;
+    const tmp14 = map1(closure_19, obj3);
+    cResult[3] = tmp14;
+    tmp10 = tmp14;
+  } else {
+    tmp10 = cResult[3];
+  }
+  if (cResult[4] !== tmp9) {
+    const obj4 = { style: tmp9, children: tmp10 };
+    const tmp18 = map1(React3, obj4);
+    cResult[4] = tmp9;
+    cResult[5] = tmp18;
+    tmp15 = tmp18;
+  } else {
+    tmp15 = cResult[5];
+  }
+  if (cResult[6] === tmp4.sectionContainer) {
+    let tmp19;
+    if (cResult[7] === tmp15) {
+      tmp19 = cResult[8];
+    }
+    return tmp19;
+  }
+  const obj5 = { style: tmp4.sectionContainer, children: items1 };
+  items1 = [first, tmp15];
+  const tmp20 = authStore2(React3, obj5);
+  cResult[6] = tmp4.sectionContainer;
+  cResult[7] = tmp15;
+  cResult[8] = tmp20;
+  tmp19 = tmp20;
+}) : (() => {
+  let intl;
+  let intl2;
+  let items;
+  let items1;
+  let obj4;
   const tmp = closure_16();
-  const obj = { style: tmp.sectionContainer, children: null };
-  const obj2 = { plain: true, children: null };
-  const intl = util.intl;
-  obj2.children = intl.string(util.t["O2nYk+"]);
-  const items = [map1(SectionHeader, obj2), ];
-  const obj3 = { style: null, children: null };
-  const items1 = [tmp.actionsTaken];
-  obj3.style = items1;
-  const obj4 = { large: true, children: null };
-  const intl2 = util.intl;
-  obj4.children = intl2.string(_modDef3102.rn3Gto);
-  obj3.children = map1(BulletRow, obj4);
-  items[1] = map1(React4, obj3);
-  obj.children = items;
-  return closure_1_14(React4, obj);
-}
-function ClassificationActionsTakenRows(large) {
+  const obj = { style: tmp.sectionContainer, children: items };
+  const obj2 = { plain: true, children: intl.string(intl4.t["O2nYk+"]) };
+  intl = intl4.intl;
+  items = [map1(closure_18, obj2), ];
+  const obj3 = { style: items1, children: map1(closure_19, obj4) };
+  items1 = [tmp.actionsTaken];
+  obj4 = { large: true, children: intl2.string(_modDef3109.rn3Gto) };
+  intl2 = intl4.intl;
+  items[1] = map1(React3, obj3);
+  return authStore2(React3, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let action;
+  let large;
+  let tmp3;
+  let obj = large(576);
+  const cResult = obj.c(7);
+  ({ action, large } = arg0);
+  if (cResult[0] === action.descriptions) {
+    let tmp2;
+    let tmp5;
+    if (cResult[1] === large) {
+      tmp2 = cResult[2];
+    }
+    if (cResult[5] !== tmp2) {
+      const obj2 = { children: tmp2 };
+      const tmp8 = closure_13(closure_15, obj2);
+      cResult[5] = tmp2;
+      cResult[6] = tmp8;
+      tmp5 = tmp8;
+    } else {
+      tmp5 = cResult[6];
+    }
+    return tmp5;
+  }
+  if (cResult[3] !== large) {
+    const fn = function o(children, arg1) {
+      const obj = { large, children };
+      return map1(closure_19, obj, arg1);
+    };
+    cResult[3] = large;
+    cResult[4] = fn;
+    tmp3 = fn;
+  } else {
+    tmp3 = cResult[4];
+  }
+  const descriptions = action.descriptions;
+  const mapped = descriptions.map(tmp3);
+  cResult[0] = action.descriptions;
+  cResult[1] = large;
+  cResult[2] = mapped;
+  tmp2 = mapped;
+}) : ((large) => {
+  let descriptions;
   large = large.large;
-  const obj = { children: null };
-  const descriptions = large.action.descriptions;
-  obj.children = descriptions.map((children, index) => map1(BulletRow, { large, children }, index));
+  let obj = {
+    children: descriptions.map((children, index) => {
+      const obj = { large, children };
+      return map1(closure_19, obj, index);
+    })
+  };
+  descriptions = large.action.descriptions;
   return closure_13(closure_15, obj);
-}
-function ManualReviewDecidedUnderageGuidance() {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let intl;
+  let intl2;
+  let items1;
+  let tmp10;
+  let tmp15;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(9);
+  const tmp4 = closure_16();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { plain: true, children: intl.string(intl4.t["977iei"]) };
+    intl = tmp(1126).intl;
+    const tmp8 = map1(closure_18, obj2);
+    cResult[0] = tmp8;
+    first = tmp8;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== tmp4.actionsTaken) {
+    const items = [tmp4.actionsTaken];
+    cResult[1] = tmp4.actionsTaken;
+    cResult[2] = items;
+    tmp9 = items;
+  } else {
+    tmp9 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { large: true, children: intl2.string(_modDef3109["yV/t/V"]) };
+    intl2 = tmp(1126).intl;
+    const tmp14 = map1(closure_19, obj3);
+    cResult[3] = tmp14;
+    tmp10 = tmp14;
+  } else {
+    tmp10 = cResult[3];
+  }
+  if (cResult[4] !== tmp9) {
+    const obj4 = { style: tmp9, children: tmp10 };
+    const tmp18 = map1(React3, obj4);
+    cResult[4] = tmp9;
+    cResult[5] = tmp18;
+    tmp15 = tmp18;
+  } else {
+    tmp15 = cResult[5];
+  }
+  if (cResult[6] === tmp4.sectionContainer) {
+    let tmp19;
+    if (cResult[7] === tmp15) {
+      tmp19 = cResult[8];
+    }
+    return tmp19;
+  }
+  const obj5 = { style: tmp4.sectionContainer, children: items1 };
+  items1 = [first, tmp15];
+  const tmp20 = authStore2(React3, obj5);
+  cResult[6] = tmp4.sectionContainer;
+  cResult[7] = tmp15;
+  cResult[8] = tmp20;
+  tmp19 = tmp20;
+}) : (() => {
+  let intl;
+  let intl2;
+  let items;
+  let items1;
+  let obj4;
   const tmp = closure_16();
-  const obj = { style: tmp.sectionContainer, children: null };
-  const obj2 = { plain: true, children: null };
-  const intl = util.intl;
-  obj2.children = intl.string(util.t["977iei"]);
-  const items = [map1(SectionHeader, obj2), ];
-  const obj3 = { style: null, children: null };
-  const items1 = [tmp.actionsTaken];
-  obj3.style = items1;
-  const obj4 = { large: true, children: null };
-  const intl2 = util.intl;
-  obj4.children = intl2.string(_modDef3102["yV/t/V"]);
-  obj3.children = map1(BulletRow, obj4);
-  items[1] = map1(React4, obj3);
-  obj.children = items;
-  return closure_1_14(React4, obj);
-}
-function ClassificationGuidance(arg0) {
+  const obj = { style: tmp.sectionContainer, children: items };
+  const obj2 = { plain: true, children: intl.string(intl4.t["977iei"]) };
+  intl = intl4.intl;
+  items = [map1(closure_18, obj2), ];
+  const obj3 = { style: items1, children: map1(closure_19, obj4) };
+  items1 = [tmp.actionsTaken];
+  obj4 = { large: true, children: intl2.string(_modDef3109["yV/t/V"]) };
+  intl2 = intl4.intl;
+  items[1] = map1(React3, obj3);
+  return authStore2(React3, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let appealComponent;
+  let classificationTypeText;
+  let communityGuidelinesLink;
+  let first;
+  let intl;
+  let items;
+  let policyExplainerLink;
+  let tosLink;
+  const obj = react2;
+  const cResult = obj.c(14);
   ({ tosLink, communityGuidelinesLink, classificationTypeText, policyExplainerLink, appealComponent } = arg0);
-  const obj = { style: closure_16().sectionContainer, children: null };
-  const obj2 = { variant: "eyebrow", color: "text-muted", children: null };
-  const intl = util.intl;
-  obj2.children = intl.string(util.t["977iei"]);
-  const items = [map1(Text_Text.Text, obj2), , , ];
-  const obj3 = { variant: "text-sm/normal", children: null };
-  const intl2 = util.intl;
-  obj3.children = intl2.format(util.t["1Z/+aA"], { tosLink, communityGuidelinesLink });
-  items[1] = map1(Text_Text.Text, obj3);
+  const tmp4 = closure_16();
+  const sectionContainer = tmp4.sectionContainer;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { variant: "eyebrow", color: "text-muted", children: intl.string(intl4.t["977iei"]) };
+    const Text = tmp(4886).Text;
+    intl = tmp(1126).intl;
+    const tmp7 = map1(Text, obj2);
+    cResult[0] = tmp7;
+    first = tmp7;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === communityGuidelinesLink) {
+    let tmp8;
+    let tmp10;
+    if (cResult[2] === tosLink) {
+      tmp8 = cResult[3];
+    }
+    if (cResult[4] !== tmp8) {
+      const obj3 = { variant: "text-sm/normal", children: tmp8 };
+      const tmp12 = map1(Text_Text.Text, obj3);
+      cResult[4] = tmp8;
+      cResult[5] = tmp12;
+      tmp10 = tmp12;
+    } else {
+      tmp10 = cResult[5];
+    }
+    if (cResult[6] === classificationTypeText) {
+      let tmp13;
+      if (cResult[7] === policyExplainerLink) {
+        tmp13 = cResult[8];
+      }
+      if (cResult[9] === appealComponent) {
+        if (cResult[10] === tmp4.sectionContainer) {
+          if (cResult[11] === tmp10) {
+            let tmp17;
+            if (cResult[12] === tmp13) {
+              tmp17 = cResult[13];
+            }
+            return tmp17;
+          }
+        }
+      }
+      const obj4 = { style: sectionContainer, children: items };
+      items = [first, tmp10, tmp13, appealComponent];
+      const tmp20 = authStore2(React3, obj4);
+      cResult[9] = appealComponent;
+      cResult[10] = tmp4.sectionContainer;
+      cResult[11] = tmp10;
+      cResult[12] = tmp13;
+      cResult[13] = tmp20;
+      tmp17 = tmp20;
+    }
+    const obj5 = { classificationTypeText, policyExplainerLink };
+    const tmp16 = map1(ClassificationPolicyCard, obj5);
+    cResult[6] = classificationTypeText;
+    cResult[7] = policyExplainerLink;
+    cResult[8] = tmp16;
+    tmp13 = tmp16;
+  }
+  const intl2 = tmp(1126).intl;
+  const formatResult = intl2.format(intl4.t["1Z/+aA"], { tosLink, communityGuidelinesLink });
+  cResult[1] = communityGuidelinesLink;
+  cResult[2] = tosLink;
+  cResult[3] = formatResult;
+  tmp8 = formatResult;
+}) : ((arg0) => {
+  let appealComponent;
+  let classificationTypeText;
+  let communityGuidelinesLink;
+  let intl;
+  let intl2;
+  let items;
+  let policyExplainerLink;
+  let tosLink;
+  ({ tosLink, communityGuidelinesLink, classificationTypeText, policyExplainerLink, appealComponent } = arg0);
+  const obj = { style: closure_16().sectionContainer, children: items };
+  const obj2 = { variant: "eyebrow", color: "text-muted", children: intl.string(intl4.t["977iei"]) };
+  const Text = Text_Text.Text;
+  intl = intl4.intl;
+  items = [map1(Text, obj2), , , ];
+  const obj3 = { variant: "text-sm/normal", children: intl2.format(intl4.t["1Z/+aA"], { tosLink, communityGuidelinesLink }) };
+  const Text2 = Text_Text.Text;
+  intl2 = intl4.intl;
+  items[1] = map1(Text2, obj3);
   items[2] = map1(ClassificationPolicyCard, { classificationTypeText, policyExplainerLink });
   items[3] = appealComponent;
-  obj.children = items;
-  return closure_1_14(React4, obj);
-}
-function ClassificationPolicyCard(classificationDescription) {
-  const policyExplainerLink = classificationDescription.policyExplainerLink;
-  const tmp = closure_16();
-  const obj = { children: null };
-  const obj2 = {
-    onPress() {
-      LinkingDefault.openURL(policyExplainerLink);
-    },
-    style: null,
-    children: null
-  };
-  const items = [tmp.classificationPolicyCard];
-  obj2.style = items;
-  const obj3 = { style: tmp.classificationPolicyCardIcon, children: null };
-  const tmp2 = TouchableHitBoxDefault;
-  obj3.children = closure_13(policyExplainerLink(8896).ShieldIcon, { size: "sm", color: nativeDefault.colors.TEXT_LINK });
-  const items1 = [closure_13(closure_4, obj3), ];
-  const obj5 = { style: tmp.classificationPolicyCardContent, children: null };
-  const obj6 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
-  const intl = policyExplainerLink(1115).intl;
-  obj6.children = intl.format(policyExplainerLink(1115).t.zxUdpj, { classificationDescription: classificationDescription.classificationTypeText });
-  obj5.children = closure_13(policyExplainerLink(4841).Text, obj6);
-  items1[1] = closure_13(closure_4, obj5);
-  obj2.children = items1;
-  obj.children = closure_14(tmp2, obj2);
-  return closure_13(closure_4, obj);
-}
-function AppealStatus() {
-  const obj = { variant: "text-md/normal", color: "text-muted", children: null };
-  const intl = util.intl;
-  obj.children = intl.string(util.t["I2H0/E"]);
-  return map1(Text_Text.Text, obj);
-}
-function LetUsKnow(arg0) {
+  return authStore2(React3, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_25 = ReactCompilerGating.isReactCompilerEnabled();
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let intl;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { variant: "text-md/normal", color: "text-muted", children: intl.string(intl4.t["I2H0/E"]) };
+    const Text = tmp(4886).Text;
+    intl = tmp(1126).intl;
+    const tmp6 = map1(Text, obj2);
+    cResult[0] = tmp6;
+    first = tmp6;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => {
+  let intl;
+  const obj = { variant: "text-md/normal", color: "text-muted", children: intl.string(intl4.t["I2H0/E"]) };
+  const Text = Text_Text.Text;
+  intl = intl4.intl;
+  return map1(Text, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressLetUsKnow) => {
+  let tmp4;
+  let tmp6;
+  _require = onPressLetUsKnow;
+  let obj = require("react");
+  const cResult = obj.c(4);
+  if (cResult[0] !== onPressLetUsKnow.onPressLetUsKnow) {
+    const intl = tmp(1126).intl;
+    const obj2 = {
+      letUsKnowHook(children, arg1) {
+          const obj = { onPress: onPressLetUsKnow.onPressLetUsKnow, variant: "text-sm/normal", color: "text-link", children };
+          return map1(Text_Text.Text, obj, arg1);
+        }
+    };
+    const formatResult = intl.format(require("intl").t.IFxUaT, obj2);
+    cResult[0] = onPressLetUsKnow.onPressLetUsKnow;
+    cResult[1] = formatResult;
+    tmp4 = formatResult;
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (cResult[2] !== tmp4) {
+    const obj3 = { variant: "text-sm/normal", color: "text-muted", children: tmp4 };
+    const tmp8 = closure_13(require("Text/Text").Text, obj3);
+    cResult[2] = tmp4;
+    cResult[3] = tmp8;
+    tmp6 = tmp8;
+  } else {
+    tmp6 = cResult[3];
+  }
+  return tmp6;
+}) : ((arg0) => {
+  let intl;
+  let obj2;
+  let onPressLetUsKnow;
   _require = arg0;
-  const obj = { variant: "text-sm/normal", color: "text-muted", children: null };
-  const intl = require("util").intl;
-  obj.children = intl.format(require("util").t.IFxUaT, {
+  let obj = { variant: "text-sm/normal", color: "text-muted", children: intl.format(require("intl").t.IFxUaT, obj2) };
+  const Text = require("Text/Text").Text;
+  intl = require("intl").intl;
+  obj2 = {
     letUsKnowHook(children, arg1) {
-      return map1(Text_Text.Text, { onPress: onPressLetUsKnow.onPressLetUsKnow, variant: "text-sm/normal", color: "text-link", children }, arg1);
+      const obj = { onPress: onPressLetUsKnow.onPressLetUsKnow, variant: "text-sm/normal", color: "text-link", children };
+      return map1(Text_Text.Text, obj, arg1);
     }
-  });
-  return closure_13(require("Text/Text").Text, obj);
-}
-function AppealFooter(hasBeenAppealed) {
-  const obj = { style: closure_16().letUsKnowContainer, children: null };
+  };
+  return closure_13(Text, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasBeenAppealed) => {
+  let tmp4Result;
+  const obj = react2;
+  const cResult = obj.c(6);
+  const tmp2 = closure_16();
+  if (cResult[0] === hasBeenAppealed.hasBeenAppealed) {
+    let tmp3;
+    if (cResult[1] === hasBeenAppealed.onPressLetUsKnow) {
+      tmp3 = cResult[2];
+    }
+    if (cResult[3] === tmp2.letUsKnowContainer) {
+      let tmp8;
+      if (cResult[4] === tmp3) {
+        tmp8 = cResult[5];
+      }
+      return tmp8;
+    }
+    const obj2 = { style: tmp2.letUsKnowContainer, children: tmp3 };
+    const tmp11 = map1(React3, obj2);
+    cResult[3] = tmp2.letUsKnowContainer;
+    cResult[4] = tmp3;
+    cResult[5] = tmp11;
+    tmp8 = tmp11;
+  }
   if (hasBeenAppealed.hasBeenAppealed) {
-    let tmpResult = tmp(AppealStatus, {});
+    tmp4Result = tmp4(closure_27, {});
+  } else {
+    const obj3 = { onPressLetUsKnow: hasBeenAppealed.onPressLetUsKnow };
+    tmp4Result = tmp4(closure_28, obj3);
+  }
+  cResult[0] = hasBeenAppealed.hasBeenAppealed;
+  cResult[1] = hasBeenAppealed.onPressLetUsKnow;
+  cResult[2] = tmp4Result;
+  tmp3 = tmp4Result;
+}) : ((hasBeenAppealed) => {
+  let tmpResult;
+  const obj = { style: closure_16().letUsKnowContainer, children: tmpResult };
+  const tmp2 = React3;
+  if (hasBeenAppealed.hasBeenAppealed) {
+    tmpResult = tmp(closure_27, {});
   } else {
     const obj2 = { onPressLetUsKnow: hasBeenAppealed.onPressLetUsKnow };
-    tmpResult = tmp(LetUsKnow, obj2);
+    tmpResult = tmp(closure_28, obj2);
   }
-  obj.children = tmpResult;
-  return map1(React4, obj);
-}
-function ConfirmMinimumAgeGuidance(arg0) {
+  return map1(tmp2, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let communityGuidelinesLink;
+  let first;
+  let intl;
+  let items;
+  let onPressLetUsKnow;
+  let tmp11;
+  let tmp9;
+  let tosLink;
+  const obj = react2;
+  const cResult = obj.c(14);
+  ({ tosLink, communityGuidelinesLink, onPressLetUsKnow } = arg0);
+  const tmp4 = closure_16();
+  const confirmMinimumAgeSection = tmp4.confirmMinimumAgeSection;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { plain: true, children: intl.string(intl4.t.RVEiD0) };
+    intl = tmp(1126).intl;
+    const tmp8 = map1(closure_18, obj2);
+    cResult[0] = tmp8;
+    first = tmp8;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl2 = tmp(1126).intl;
+    const stringResult = intl2.string(intl4.t.YQPbuc);
+    cResult[1] = stringResult;
+    tmp9 = stringResult;
+  } else {
+    tmp9 = cResult[1];
+  }
+  if (cResult[2] !== onPressLetUsKnow) {
+    const obj3 = { label: tmp9, onPress: onPressLetUsKnow, arrow: true, start: true, end: true };
+    const tmp13 = map1(TableRow2.TableRow, obj3);
+    cResult[2] = onPressLetUsKnow;
+    cResult[3] = tmp13;
+    tmp11 = tmp13;
+  } else {
+    tmp11 = cResult[3];
+  }
+  if (cResult[4] === communityGuidelinesLink) {
+    let tmp15;
+    if (cResult[5] === tosLink) {
+      tmp15 = cResult[6];
+    }
+    if (cResult[7] === tmp4.guidelinesFooter) {
+      let tmp17;
+      if (cResult[8] === tmp15) {
+        tmp17 = cResult[9];
+      }
+      if (cResult[10] === tmp4.confirmMinimumAgeSection) {
+        if (cResult[11] === tmp11) {
+          let tmp20;
+          if (cResult[12] === tmp17) {
+            tmp20 = cResult[13];
+          }
+          return tmp20;
+        }
+      }
+      const obj4 = { style: confirmMinimumAgeSection, children: items };
+      items = [first, tmp11, tmp17];
+      const tmp23 = authStore2(React3, obj4);
+      cResult[10] = tmp4.confirmMinimumAgeSection;
+      cResult[11] = tmp11;
+      cResult[12] = tmp17;
+      cResult[13] = tmp23;
+      tmp20 = tmp23;
+    }
+    const obj5 = { variant: "text-sm/normal", color: "text-muted", style: tmp14, children: tmp15 };
+    const tmp19 = map1(Text_Text.Text, obj5);
+    cResult[7] = tmp4.guidelinesFooter;
+    cResult[8] = tmp15;
+    cResult[9] = tmp19;
+    tmp17 = tmp19;
+  }
+  const intl3 = tmp(1126).intl;
+  const formatResult = intl3.format(intl4.t["1Z/+aA"], { tosLink, communityGuidelinesLink });
+  cResult[4] = communityGuidelinesLink;
+  cResult[5] = tosLink;
+  cResult[6] = formatResult;
+  tmp15 = formatResult;
+}) : ((arg0) => {
+  let communityGuidelinesLink;
+  let intl;
+  let intl2;
+  let intl3;
+  let items;
+  let onPressLetUsKnow;
+  let tosLink;
   ({ tosLink, communityGuidelinesLink, onPressLetUsKnow } = arg0);
   const tmp = closure_16();
-  const obj = { style: tmp.confirmMinimumAgeSection, children: null };
-  const obj2 = { plain: true, children: null };
-  const intl = util.intl;
-  obj2.children = intl.string(util.t.RVEiD0);
-  const items = [map1(SectionHeader, obj2), , ];
-  const obj3 = { label: null, onPress: null, arrow: true, start: true, end: true };
-  const intl2 = util.intl;
-  obj3.label = intl2.string(util.t.YQPbuc);
-  obj3.onPress = onPressLetUsKnow;
-  items[1] = map1(TableRow.TableRow, obj3);
-  const obj4 = { variant: "text-sm/normal", color: "text-muted", style: tmp.guidelinesFooter, children: null };
-  const intl3 = util.intl;
-  obj4.children = intl3.format(util.t["1Z/+aA"], { tosLink, communityGuidelinesLink });
-  items[2] = map1(Text_Text.Text, obj4);
-  obj.children = items;
-  return closure_1_14(React4, obj);
-}
-function ManualReviewDecidedUnderageFooter(arg0) {
+  const obj = { style: tmp.confirmMinimumAgeSection, children: items };
+  const obj2 = { plain: true, children: intl.string(intl4.t.RVEiD0) };
+  intl = intl4.intl;
+  items = [map1(closure_18, obj2), , ];
+  const obj3 = { label: intl2.string(intl4.t.YQPbuc), onPress: onPressLetUsKnow, arrow: true, start: true, end: true };
+  const TableRow = TableRow2.TableRow;
+  intl2 = intl4.intl;
+  items[1] = map1(TableRow, obj3);
+  const obj4 = { variant: "text-sm/normal", color: "text-muted", style: tmp.guidelinesFooter, children: intl3.format(intl4.t["1Z/+aA"], { tosLink, communityGuidelinesLink }) };
+  const Text = Text_Text.Text;
+  intl3 = intl4.intl;
+  items[2] = map1(Text, obj4);
+  return authStore2(React3, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let communityGuidelinesLink;
+  let tosLink;
+  const obj = react2;
+  const cResult = obj.c(5);
   ({ tosLink, communityGuidelinesLink } = arg0);
-  const obj = { variant: "text-sm/normal", color: "text-muted", children: null };
-  const intl = util.intl;
-  obj.children = intl.format(_modDef3102.vPOpia, { tosLink, communityGuidelinesLink });
-  return map1(Text_Text.Text, obj);
-}
-function ManualReviewDecidedUnderageView() {
-  const obj = { children: null };
-  const items = [map1(ManualReviewDecidedUnderageActionsTaken, {}), map1(ManualReviewDecidedUnderageGuidance, {}), map1(ManualReviewDecidedUnderageFooter, { tosLink: constants.TOS_LINK, communityGuidelinesLink: constants.COMMUNITY_GUIDELINES })];
-  obj.children = items;
-  return closure_1_14(__initData, obj);
-}
-function ClassificationDetailFooter(onClose) {
-  const obj = { style: closure_16().redirectButtonWrapper, children: null };
-  const obj2 = { size: "md", text: null, onPress: null, grow: true };
-  const intl = util.intl;
-  obj2.text = intl.string(util.t.elrEjL);
-  obj2.onPress = onClose.onClose;
-  obj.children = map1(components_Button_Button.Button, obj2);
-  return map1(React4, obj);
-}
-get_ActivityIndicator = fn(17);
-({ View: closure_4, ActivityIndicator: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
-const SafetyHubConstants = fn(8052);
-({ SafetyHubAnalyticsActionSource: closure_9, SafetyHubAnalyticsActions: c10, SafetyHubLinks: closure_11 } = SafetyHubConstants);
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const jsxProd = fn(21);
-({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = jsxProd);
-const createStyles = fn(4845);
-let obj2 = { root: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, container: null, header: null, headerText: null, sectionContainer: null, actionsTaken: null, classificationDetailContainer: null, letUsKnowContainer: null, confirmMinimumAgeSection: null, guidelinesFooter: null, classificationPolicyCard: null, classificationPolicyCardIcon: null, classificationPolicyCardContent: null, classificationActionDescription: null, bulletText: null, redirectButtonWrapper: null };
-let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
-obj2.container = { display: "flex", flexDirection: "column", height: "100%", paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_32 };
-let obj4 = { display: "flex", flexDirection: "column", height: "100%", paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_32 };
-obj2.header = { display: "flex", textAlign: "center", alignItems: "center", flexDirection: "column", gap: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_8 };
-obj2.headerText = { textAlign: "center", maxWidth: 260 };
-let obj5 = { display: "flex", textAlign: "center", alignItems: "center", flexDirection: "column", gap: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_8 };
-obj2.sectionContainer = { display: "flex", gap: nativeDefault.space.PX_8 };
-let obj6 = { display: "flex", gap: nativeDefault.space.PX_8 };
-obj2.actionsTaken = { display: "flex", paddingLeft: nativeDefault.space.PX_4, flexDirection: "column", gap: nativeDefault.space.PX_8 };
-let obj7 = { display: "flex", paddingLeft: nativeDefault.space.PX_4, flexDirection: "column", gap: nativeDefault.space.PX_8 };
-obj2.classificationDetailContainer = { display: "flex", flexDirection: "column", gap: nativeDefault.space.PX_32 };
-obj2.letUsKnowContainer = { display: "flex", alignItems: "center" };
-let obj8 = { display: "flex", flexDirection: "column", gap: nativeDefault.space.PX_32 };
-obj2.confirmMinimumAgeSection = { display: "flex", gap: nativeDefault.space.PX_12 };
-let obj9 = { display: "flex", gap: nativeDefault.space.PX_12 };
-obj2.guidelinesFooter = { marginTop: nativeDefault.space.PX_12 };
-let obj10 = { marginTop: nativeDefault.space.PX_12 };
-obj2.classificationPolicyCard = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_12, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_4, flexShrink: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
-let size = { display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, width: 32, height: 32, borderRadius: nativeDefault.radii.xxl };
-obj2.classificationPolicyCardIcon = size;
-obj2.classificationPolicyCardContent = { flex: 1 };
-let obj11 = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_12, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_4, flexShrink: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
-obj2.classificationActionDescription = { display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_8 };
-obj2.bulletText = { flex: 1 };
-let obj12 = { display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_8 };
-obj2.redirectButtonWrapper = { width: 300, alignSelf: "center", marginTop: nativeDefault.space.PX_32 };
-let closure_16 = createStyles.createStyles(obj2);
-size = fn(2);
-const result = size.fileFinishedImporting("modules/safety_hub/native/ClassificationDetail.tsx");
-
-export default function ConnectedClassificationDetail(classificationId) {
+  if (cResult[0] === communityGuidelinesLink) {
+    let tmp4;
+    let tmp6;
+    if (cResult[1] === tosLink) {
+      tmp4 = cResult[2];
+    }
+    if (cResult[3] !== tmp4) {
+      const obj2 = { variant: "text-sm/normal", color: "text-muted", children: tmp4 };
+      const tmp8 = map1(Text_Text.Text, obj2);
+      cResult[3] = tmp4;
+      cResult[4] = tmp8;
+      tmp6 = tmp8;
+    } else {
+      tmp6 = cResult[4];
+    }
+    return tmp6;
+  }
+  const intl = tmp(1126).intl;
+  const formatResult = intl.format(_modDef3109.vPOpia, { tosLink, communityGuidelinesLink });
+  cResult[0] = communityGuidelinesLink;
+  cResult[1] = tosLink;
+  cResult[2] = formatResult;
+  tmp4 = formatResult;
+}) : ((arg0) => {
+  let communityGuidelinesLink;
+  let intl;
+  let tosLink;
+  ({ tosLink, communityGuidelinesLink } = arg0);
+  const obj = { variant: "text-sm/normal", color: "text-muted", children: intl.format(_modDef3109.vPOpia, { tosLink, communityGuidelinesLink }) };
+  const Text = Text_Text.Text;
+  intl = intl4.intl;
+  return map1(Text, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let items;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { children: items };
+    items = [map1(closure_21, {}), map1(closure_23, {}), ];
+    const obj5 = { tosLink: null, communityGuidelinesLink: null };
+    ({ TOS_LINK: obj3.tosLink, COMMUNITY_GUIDELINES: obj3.communityGuidelinesLink } = unpackModuleId);
+    items[2] = map1(closure_31, obj5);
+    const tmp10 = authStore2(closure_15, obj2);
+    cResult[0] = tmp10;
+    first = tmp10;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => {
+  let items;
+  const obj = { children: items };
+  items = [map1(closure_21, {}), map1(closure_23, {}), ];
+  const obj2 = { tosLink: unpackModuleId.TOS_LINK, communityGuidelinesLink: unpackModuleId.COMMUNITY_GUIDELINES };
+  items[2] = map1(closure_31, obj2);
+  return authStore2(closure_15, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+  let first;
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(6);
+  onClose = onClose.onClose;
+  const tmp4 = closure_16();
+  const redirectButtonWrapper = tmp4.redirectButtonWrapper;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(intl4.t.elrEjL);
+    cResult[0] = stringResult;
+    first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== onClose) {
+    const obj2 = { size: "md", text: first, onPress: onClose, grow: true };
+    const tmp9 = map1(components_Button_Button.Button, obj2);
+    cResult[1] = onClose;
+    cResult[2] = tmp9;
+    tmp7 = tmp9;
+  } else {
+    tmp7 = cResult[2];
+  }
+  if (cResult[3] === tmp4.redirectButtonWrapper) {
+    let tmp10;
+    if (cResult[4] === tmp7) {
+      tmp10 = cResult[5];
+    }
+    return tmp10;
+  }
+  const tmp11 = map1(React3, { style: redirectButtonWrapper, children: tmp7 });
+  cResult[3] = tmp4.redirectButtonWrapper;
+  cResult[4] = tmp7;
+  cResult[5] = tmp11;
+  tmp10 = tmp11;
+}) : ((onClose) => {
+  let Button;
+  let intl;
+  let obj2;
+  onClose = onClose.onClose;
+  const obj = { style: closure_16().redirectButtonWrapper, children: map1(Button, obj2) };
+  obj2 = { size: "md", text: intl.string(intl4.t.elrEjL), onPress: onClose, grow: true };
+  Button = components_Button_Button.Button;
+  intl = intl4.intl;
+  return map1(React3, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((classificationId) => {
+  let items3;
+  let items4;
+  let obj12;
+  let onClose;
+  let tmp6;
+  let tmp7;
+  let tmpResult8;
+  let obj = classificationId(onClose[10]);
+  const cResult = obj.c(45);
   classificationId = classificationId.classificationId;
-  const source = classificationId.source;
+  let source = classificationId.source;
+  onClose = classificationId.onClose;
+  const onError = classificationId.onError;
+  let obj2 = classificationId(onClose[21]);
+  const safetyHubClassification = obj2.useSafetyHubClassification(classificationId);
+  const classification = safetyHubClassification.classification;
+  const isAppealEligible = safetyHubClassification.isAppealEligible;
+  const tmp5 = closure_16();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp8 = closure_8;
+    let items = [closure_8];
+    const fn = function p() {
+      return closure_8.getAppealEligibility();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp7 = fn;
+    tmp6 = items;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  let tmpResult = tmp(tmp2[14]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
+  let flagged_content;
+  if (classification != null) {
+    flagged_content = classification.flagged_content;
+  }
+  let tmp10 = null != flagged_content;
+  if (tmp10) {
+    let length;
+    if (classification != null) {
+      length = classification.flagged_content.length;
+    }
+    tmp10 = length > 0;
+  }
+  const is_violative_content_shown = tmp10;
+  let tmpResult5 = tmp(tmp2[22]);
+  const safetyHubAccountStanding = tmpResult5.useSafetyHubAccountStanding();
+  if (cResult[2] === stateFromStores) {
+    let tmp15;
+    let is_coppa;
+    const tmp13 = cResult[3];
+    if (classification != null) {
+      is_coppa = classification.is_coppa;
+    }
+    if (tmp13 === is_coppa) {
+      tmp15 = cResult[4];
+    }
+    closure_8 = tmp15;
+    if (cResult[5] === stateFromStores) {
+      let tmp21;
+      let tmp27;
+      let tmp26;
+      let is_coppa1;
+      const tmp19 = cResult[6];
+      if (classification != null) {
+        is_coppa1 = classification.is_coppa;
+      }
+      if (tmp19 === is_coppa1) {
+        tmp21 = cResult[7];
+      }
+      let closure_9 = tmp21;
+      const tmpResult6 = tmp(tmp2[23]);
+      const tmp25 = tmp21 && tmpResult6.useIsExpressiveModalV2Enabled(classificationId(onClose[24]).AgeVerificationModalEntryPoint.AUTOMATED_UNDERAGE_APPEALS);
+      const _Symbol = Symbol;
+      if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+        const items1 = [closure_8];
+        const fn2 = function j() {
+          return closure_8.getIsManualReviewDecidedUnderage();
+        };
+        cResult[8] = items1;
+        cResult[9] = fn2;
+        tmp27 = fn2;
+        tmp26 = items1;
+      } else {
+        tmp26 = cResult[8];
+        tmp27 = cResult[9];
+      }
+      let tmpResult7 = tmp(tmp2[14]);
+      let is_coppa2;
+      const stateFromStores1 = tmpResult7.useStateFromStores(tmp26, tmp27);
+      if (classification != null) {
+        is_coppa2 = classification.is_coppa;
+      }
+      if (cResult[10] === safetyHubAccountStanding) {
+        if (cResult[11] === classificationId) {
+          if (cResult[12] === safetyHubClassification) {
+            if (cResult[13] === tmp10) {
+              let tmp32;
+              let tmp34;
+              let tmp37;
+              let tmp36;
+              if (cResult[14] === source) {
+                tmp32 = cResult[15];
+              }
+              let current = tmp32;
+              const ref = safetyHubClassification.useRef(tmp32);
+              if (cResult[16] !== tmp32) {
+                const fn3 = function $() {
+                  ref.current = current;
+                };
+                cResult[16] = tmp32;
+                cResult[17] = fn3;
+                tmp34 = fn3;
+              } else {
+                tmp34 = cResult[17];
+              }
+              const effect = obj9.useEffect(tmp34);
+              if (cResult[18] !== classification) {
+                function ee() {
+                  let accountStanding;
+                  let classificationState;
+                  let hasFlaggedContent;
+                  let items;
+                  if (null != classification) {
+                    current = ref.current;
+                    ({ classificationState, source } = current);
+                    ({ accountStanding, classificationId, hasFlaggedContent } = current);
+                    const obj = { action: authStore.ViewViolationDetail, account_standing: accountStanding.state, classification_ids: items, source, is_violative_content_shown: hasFlaggedContent, is_dsa_eligible: null, violation_type: null };
+                    const _Number = Number;
+                    const track = AnalyticsUtilsDefault.track;
+                    const SAFETY_HUB_ACTION = AnalyticEvents.SAFETY_HUB_ACTION;
+                    items = [];
+                    AnalyticsUtilsDefault;
+                    items[0] = Number(classificationId);
+                    if (source == null) {
+                      source = React4.SystemDM;
+                    }
+                    ({ isDsaEligible: obj.is_dsa_eligible, violationType: obj.violation_type } = classificationState);
+                    track(SAFETY_HUB_ACTION, obj);
+                  }
+                }
+                const items2 = [classification];
+                cResult[18] = classification;
+                cResult[19] = ee;
+                cResult[20] = items2;
+                tmp37 = items2;
+                tmp36 = ee;
+              } else {
+                tmp36 = cResult[19];
+                tmp37 = cResult[20];
+              }
+              const effect1 = obj9.useEffect(tmp36, tmp37);
+              if (cResult[21] === safetyHubAccountStanding.state) {
+                if (cResult[22] === isAppealEligible) {
+                  if (cResult[23] === classificationId) {
+                    if (cResult[24] === safetyHubClassification.isDsaEligible) {
+                      if (cResult[25] === safetyHubClassification.violationType) {
+                        if (cResult[26] === tmp10) {
+                          if (cResult[27] === tmp21) {
+                            if (cResult[28] === tmp15) {
+                              if (cResult[29] === onClose) {
+                                let tmp39;
+                                let tmp59;
+                                let tmp64Result;
+                                if (cResult[30] === source) {
+                                  tmp39 = cResult[31];
+                                }
+                                if (null == classification) {
+                                  if (safetyHubClassification.classificationRequestState === classificationId(onClose[12]).ClassificationRequestState.FAILED) {
+                                    onError();
+                                    tmp59 = null;
+                                  }
+                                  return tmp59;
+                                }
+                                if (cResult[32] === classification) {
+                                  if (cResult[33] === onClose) {
+                                    if (cResult[34] === tmp39) {
+                                      if (cResult[35] === (is_coppa2 && stateFromStores1)) {
+                                        if (cResult[36] === tmp5.classificationDetailContainer) {
+                                          let tmp40;
+                                          if (cResult[37] === tmp25) {
+                                            tmp40 = cResult[38];
+                                          }
+                                          if (cResult[39] === tmp5.container) {
+                                            let tmp56;
+                                            if (cResult[40] === tmp40) {
+                                              tmp56 = cResult[41];
+                                            }
+                                            if (cResult[42] === tmp5.root) {
+                                              if (cResult[43] === tmp56) {
+                                                tmp59 = cResult[44];
+                                              }
+                                            }
+                                            let obj3 = { style: tmp5.root, children: tmp56 };
+                                            const tmp62 = closure_13(is_violative_content_shown, obj3);
+                                            cResult[42] = tmp5.root;
+                                            cResult[43] = tmp56;
+                                            cResult[44] = tmp62;
+                                            tmp59 = tmp62;
+                                          }
+                                          const obj4 = { style: tmp5.container, bottom: true, children: tmp40 };
+                                          const tmp58 = closure_13(classificationId(onClose[32]).SafeAreaPaddingView, obj4);
+                                          cResult[39] = tmp5.container;
+                                          cResult[40] = tmp40;
+                                          cResult[41] = tmp58;
+                                          tmp56 = tmp58;
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                                if (null == classification) {
+                                  tmp64Result = closure_13(isAppealEligible, { size: "large" });
+                                } else {
+                                  let tmp64Result1;
+                                  const obj5 = { style: items3, children: items4 };
+                                  items3 = [tmp5.classificationDetailContainer];
+                                  const obj6 = { classificationTypeText: null, guildMetadata: null };
+                                  ({ description: obj21.classificationTypeText, guild_metadata: obj21.guildMetadata } = classification);
+                                  items4 = [closure_13(closure_17, obj6), , , ];
+                                  let flagged_content1 = classification.flagged_content;
+                                  const tmp65 = classification;
+                                  const tmp69 = source(onClose[30]);
+                                  if (flagged_content1 == null) {
+                                    flagged_content1 = [];
+                                  }
+                                  const obj7 = { flaggedContent: flagged_content1 };
+                                  items4[1] = closure_13(tmp69, obj7);
+                                  if (is_coppa2 && stateFromStores1) {
+                                    tmp64Result1 = tmp66(closure_32, {});
+                                  } else {
+                                    let tmp66Result3;
+                                    const obj8 = { actions: classification.actions, classificationExpiration: tmpResult8.getClassificationAccountStatusExpiration(classification), redesigned: tmp25 };
+                                    tmpResult8 = tmp(tmp2[31]);
+                                    const items5 = [closure_13(closure_20, obj8), ];
+                                    const tmp41 = closure_15;
+                                    if (tmp25) {
+                                      const obj10 = { tosLink: null, communityGuidelinesLink: null, onPressLetUsKnow: tmp39 };
+                                      ({ TOS_LINK: obj15.tosLink, COMMUNITY_GUIDELINES: obj15.communityGuidelinesLink } = ref);
+                                      tmp66Result3 = tmp66(closure_30, obj10);
+                                    } else {
+                                      ({ APPEALS_LINK: obj13.appealLink, COMMUNITY_GUIDELINES: obj13.communityGuidelinesLink, TOS_LINK: obj13.tosLink } = ref);
+                                      ({ description: obj13.classificationTypeText, explainer_link: obj13.policyExplainerLink } = classification);
+                                      const obj11 = { appealLink: null, communityGuidelinesLink: null, tosLink: null, classificationTypeText: null, policyExplainerLink: null, appealComponent: closure_13(closure_29, obj12) };
+                                      obj12 = { hasBeenAppealed: null != classification.appeal_status, onPressLetUsKnow: tmp39 };
+                                      tmp66Result3 = tmp66(closure_24, obj11);
+                                    }
+                                    const obj14 = { children: items5 };
+                                    items5[1] = tmp66Result3;
+                                    tmp64Result1 = tmp64(tmp41, obj14);
+                                  }
+                                  items4[2] = tmp64Result1;
+                                  let tmp66Result4 = !tmp25;
+                                  if (tmp66Result4) {
+                                    const obj16 = { onClose };
+                                    tmp66Result4 = tmp66(closure_33, obj16);
+                                  }
+                                  items4[3] = tmp66Result4;
+                                  tmp64Result = tmp64(tmp65, obj5);
+                                }
+                                cResult[32] = classification;
+                                cResult[33] = onClose;
+                                cResult[34] = tmp39;
+                                cResult[35] = is_coppa2 && stateFromStores1;
+                                cResult[36] = tmp5.classificationDetailContainer;
+                                cResult[37] = tmp25;
+                                cResult[38] = tmp64Result;
+                                tmp40 = tmp64Result;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              function ne() {
+                let SystemDM;
+                let items;
+                const obj = { action: authStore.ClickLetUsKnow, account_standing: safetyHubAccountStanding.state, classification_ids: items, source: SystemDM, is_violative_content_shown, is_dsa_eligible: null, violation_type: null };
+                const track = AnalyticsUtilsDefault.track;
+                const SAFETY_HUB_ACTION = AnalyticEvents.SAFETY_HUB_ACTION;
+                items = [];
+                AnalyticsUtilsDefault;
+                items[0] = Number(classificationId);
+                SystemDM = source;
+                if (source == null) {
+                  SystemDM = React4.SystemDM;
+                }
+                ({ isDsaEligible: obj.is_dsa_eligible, violationType: obj.violation_type } = safetyHubClassification);
+                track(SAFETY_HUB_ACTION, obj);
+                const tmp7 = c9;
+                if (tmp7) {
+                  const tmpResult = AutomatedUnderageAppealModalActionCreatorsDefault;
+                  tmpResult.openV2(classificationId, onClose);
+                } else {
+                  const tmp8 = closure_8;
+                  if (tmp8) {
+                    const tmpResult5 = AutomatedUnderageAppealModalActionCreatorsDefault;
+                    tmpResult5.open(classificationId, onClose);
+                  } else {
+                    const tmp9 = isAppealEligible;
+                    if (tmp9) {
+                      const obj2 = { name: MetricEvents.MetricEvents.APPEAL_INGESTION_VIEW };
+                      const increment = MonitoringAgentDefault.increment;
+                      MonitoringAgentDefault;
+                      increment(obj2);
+                      const obj3 = { classificationId };
+                      const tmpResult7 = AppealIngestionModalActionCreatorsDefault;
+                      tmpResult7.open(obj3);
+                    } else {
+                      const tmpResult8 = LinkingDefault;
+                      tmpResult8.openURL(unpackModuleId.APPEALS_LINK);
+                    }
+                  }
+                }
+              }
+              cResult[21] = safetyHubAccountStanding.state;
+              cResult[22] = isAppealEligible;
+              cResult[23] = classificationId;
+              cResult[24] = safetyHubClassification.isDsaEligible;
+              cResult[25] = safetyHubClassification.violationType;
+              cResult[26] = tmp10;
+              cResult[27] = tmp21;
+              cResult[28] = tmp15;
+              cResult[29] = onClose;
+              cResult[30] = source;
+              cResult[31] = ne;
+              tmp39 = ne;
+            }
+          }
+        }
+      }
+      const obj17 = { accountStanding: safetyHubAccountStanding, classificationId, classificationState: safetyHubClassification, hasFlaggedContent: tmp10, source };
+      cResult[10] = safetyHubAccountStanding;
+      cResult[11] = classificationId;
+      cResult[12] = safetyHubClassification;
+      cResult[13] = tmp10;
+      cResult[14] = source;
+      cResult[15] = obj17;
+      tmp32 = obj17;
+    }
+    let is_coppa3;
+    if (classification != null) {
+      is_coppa3 = classification.is_coppa;
+    }
+    const hasItem = is_coppa3 && stateFromStores.includes(tmp(tmp2[12]).AppealEligibility.AGE_VERIFY_GLOBAL_ELIGIBLE);
+    cResult[5] = stateFromStores;
+    let is_coppa4;
+    if (classification != null) {
+      is_coppa4 = classification.is_coppa;
+    }
+    cResult[6] = is_coppa4;
+    cResult[7] = hasItem;
+    tmp21 = hasItem;
+  }
+  let is_coppa5;
+  if (classification != null) {
+    is_coppa5 = classification.is_coppa;
+  }
+  const hasItem1 = is_coppa5 && stateFromStores.includes(tmp(tmp2[12]).AppealEligibility.AGE_VERIFY_ELIGIBLE);
+  cResult[2] = stateFromStores;
+  let is_coppa6;
+  if (classification != null) {
+    is_coppa6 = classification.is_coppa;
+  }
+  cResult[3] = is_coppa6;
+  cResult[4] = hasItem1;
+  tmp15 = hasItem1;
+}) : ((classificationId) => {
+  let SafeAreaPaddingView;
+  let hasItem;
+  let items3;
+  let items4;
+  let obj13;
+  let obj5;
+  let tmp38Result;
+  let tmpResult6;
+  classificationId = classificationId.classificationId;
+  let source = classificationId.source;
   const onClose = classificationId.onClose;
-  const safetyHubClassification = classificationId(onClose[19]).useSafetyHubClassification(classificationId);
+  const onError = classificationId.onError;
+  let obj = classificationId(onClose[21]);
+  const safetyHubClassification = obj.useSafetyHubClassification(classificationId);
   const classification = safetyHubClassification.classification;
   const isAppealEligible = safetyHubClassification.isAppealEligible;
   const tmp4 = closure_16();
-  let obj = classificationId(onClose[19]);
+  let obj2 = classificationId(onClose[14]);
   let items = [hasItem];
-  const stateFromStores = classificationId(onClose[12]).useStateFromStores(items, () => hasItem.getAppealEligibility());
+  const stateFromStores = obj2.useStateFromStores(items, () => hasItem.getAppealEligibility());
   let flagged_content;
+  const tmp5 = hasItem;
   if (classification != null) {
     flagged_content = classification.flagged_content;
   }
@@ -355,150 +1846,165 @@ export default function ConnectedClassificationDetail(classificationId) {
     tmp7 = length > 0;
   }
   const is_violative_content_shown = tmp7;
-  const obj2 = classificationId(onClose[12]);
-  const tmp5 = hasItem;
-  const safetyHubAccountStanding = classificationId(onClose[20]).useSafetyHubAccountStanding();
+  let tmpResult = tmp(tmp2[22]);
+  const safetyHubAccountStanding = tmpResult.useSafetyHubAccountStanding();
   let is_coppa;
   if (classification != null) {
     is_coppa = classification.is_coppa;
   }
-  hasItem = is_coppa;
-  if (hasItem) {
-    hasItem = stateFromStores.includes(tmp(tmp2[10]).AppealEligibility.AGE_VERIFY_ELIGIBLE);
-  }
+  hasItem = is_coppa && stateFromStores.includes(tmp(tmp2[12]).AppealEligibility.AGE_VERIFY_ELIGIBLE);
   let is_coppa1;
   if (classification != null) {
     is_coppa1 = classification.is_coppa;
   }
-  let hasItem1 = is_coppa1;
+  let hasItem1 = is_coppa1 && stateFromStores.includes(tmp(tmp2[12]).AppealEligibility.AGE_VERIFY_GLOBAL_ELIGIBLE);
+  const useIsExpressiveModalV2Enabled = tmp(tmp2[23]).useIsExpressiveModalV2Enabled;
+  classificationId(onClose[23]);
   if (hasItem1) {
-    hasItem1 = stateFromStores.includes(tmp(tmp2[10]).AppealEligibility.AGE_VERIFY_GLOBAL_ELIGIBLE);
+    hasItem1 = useIsExpressiveModalV2Enabled(tmp(tmp2[24]).AgeVerificationModalEntryPoint.AUTOMATED_UNDERAGE_APPEALS);
   }
-  let tmpResult = classificationId(onClose[20]);
-  if (hasItem1) {
-    hasItem1 = tmpResult4.useIsExpressiveModalV2Enabled(tmp(tmp2[22]).AgeVerificationModalEntryPoint.AUTOMATED_UNDERAGE_APPEALS);
-  }
-  tmpResult4 = classificationId(onClose[21]);
+  let tmpResult5 = tmp(tmp2[14]);
   const items1 = [tmp5];
   let is_coppa2;
-  const stateFromStores1 = classificationId(onClose[12]).useStateFromStores(items1, () => hasItem.getIsManualReviewDecidedUnderage());
+  const stateFromStores1 = tmpResult5.useStateFromStores(items1, () => hasItem.getIsManualReviewDecidedUnderage());
   if (classification != null) {
     is_coppa2 = classification.is_coppa;
   }
   let obj3 = { accountStanding: safetyHubAccountStanding, classificationId, classificationState: safetyHubClassification, hasFlaggedContent: tmp7, source };
+  const tmp17 = is_coppa2 && stateFromStores1;
   const ref = safetyHubClassification.useRef(obj3);
   const effect = safetyHubClassification.useEffect(() => {
-    closure_11.current = obj3;
+    ref.current = obj3;
   });
   const items2 = [classification];
   const effect1 = safetyHubClassification.useEffect(() => {
+    let accountStanding;
+    let classificationState;
+    let hasFlaggedContent;
+    let items;
     if (null != classification) {
       const current = ref.current;
       ({ classificationState, source } = current);
       ({ accountStanding, classificationId, hasFlaggedContent } = current);
-      obj3 = { action: closure_2_10.ViewViolationDetail, account_standing: accountStanding.state, classification_ids: null, source: null, is_violative_content_shown: null, is_dsa_eligible: null, violation_type: null };
+      const obj = { action: authStore.ViewViolationDetail, account_standing: accountStanding.state, classification_ids: items, source, is_violative_content_shown: hasFlaggedContent, is_dsa_eligible: null, violation_type: null };
       const _Number = Number;
-      const items = [Number(classificationId)];
-      obj3.classification_ids = items;
+      const track = AnalyticsUtilsDefault.track;
+      const SAFETY_HUB_ACTION = AnalyticEvents.SAFETY_HUB_ACTION;
+      items = [];
+      AnalyticsUtilsDefault;
+      items[0] = Number(classificationId);
       if (source == null) {
-        source = React7.SystemDM;
+        source = React4.SystemDM;
       }
-      obj3.source = source;
-      obj3.is_violative_content_shown = hasFlaggedContent;
-      ({ isDsaEligible: obj2.is_dsa_eligible, violationType: obj2.violation_type } = classificationState);
-      AnalyticsUtilsDefault.track(AnalyticEvents.SAFETY_HUB_ACTION, obj3);
+      ({ isDsaEligible: obj.is_dsa_eligible, violationType: obj.violation_type } = classificationState);
+      track(SAFETY_HUB_ACTION, obj);
     }
   }, items2);
   if (null == classification) {
-    if (safetyHubClassification.classificationRequestState === tmp(tmp2[10]).ClassificationRequestState.FAILED) {
-      classificationId.onError();
-      let tmp19Result8 = null;
+    let tmp20Result8;
+    if (safetyHubClassification.classificationRequestState === classificationId(onClose[12]).ClassificationRequestState.FAILED) {
+      onError();
+      tmp20Result8 = null;
     }
-    return tmp19Result8;
+    return tmp20Result8;
   }
-  let obj4 = { style: tmp4.root, children: null };
-  let obj5 = { style: tmp4.container, bottom: true, children: null };
+  const obj4 = { style: tmp4.root, children: closure_13(SafeAreaPaddingView, obj5) };
+  obj5 = { style: tmp4.container, bottom: true, children: tmp38Result };
+  SafeAreaPaddingView = tmp(tmp2[32]).SafeAreaPaddingView;
+  const tmp21 = is_violative_content_shown;
   if (null == classification) {
-    let tmp37Result = tmp19(isAppealEligible, { size: "large" });
+    tmp38Result = tmp20(isAppealEligible, { size: "large" });
   } else {
-    const obj6 = { style: null, children: null };
-    const items3 = [tmp4.classificationDetailContainer];
-    obj6.style = items3;
-    ({ description: obj19.classificationTypeText, guild_metadata: obj19.guildMetadata } = classification);
-    const items4 = [tmp19(ClassificationHeader, { classificationTypeText: null, guildMetadata: null }), , , ];
+    let tmp20Result5;
+    const obj6 = { style: items3, children: items4 };
+    items3 = [tmp4.classificationDetailContainer];
+    const obj7 = { classificationTypeText: null, guildMetadata: null };
+    ({ description: obj18.classificationTypeText, guild_metadata: obj18.guildMetadata } = classification);
+    items4 = [closure_13(closure_17, obj7), , , ];
     let flagged_content1 = classification.flagged_content;
+    const tmp39 = classification;
+    const tmp42 = source(onClose[30]);
     if (flagged_content1 == null) {
       flagged_content1 = [];
     }
     const obj8 = { flaggedContent: flagged_content1 };
-    items4[1] = tmp19(source(tmp2[29]), obj8);
-    if (tmp16) {
-      let tmp19Result5 = tmp19(ManualReviewDecidedUnderageView, {});
+    items4[1] = closure_13(tmp42, obj8);
+    if (tmp17) {
+      tmp20Result5 = tmp20(closure_32, {});
     } else {
+      let tmp20Result6;
       function onPressLetUsKnow() {
-        obj3 = { action: closure_2_10.ClickLetUsKnow, account_standing: safetyHubAccountStanding.state, classification_ids: null, source: null, is_violative_content_shown: null, is_dsa_eligible: null, violation_type: null };
-        const items = [Number(classificationId)];
-        obj3.classification_ids = items;
-        let SystemDM = source;
+        let SystemDM;
+        let items;
+        const obj = { action: authStore.ClickLetUsKnow, account_standing: safetyHubAccountStanding.state, classification_ids: items, source: SystemDM, is_violative_content_shown, is_dsa_eligible: null, violation_type: null };
+        const track = AnalyticsUtilsDefault.track;
+        const SAFETY_HUB_ACTION = AnalyticEvents.SAFETY_HUB_ACTION;
+        items = [];
+        AnalyticsUtilsDefault;
+        items[0] = Number(classificationId);
+        SystemDM = source;
         if (source == null) {
-          SystemDM = React7.SystemDM;
+          SystemDM = React4.SystemDM;
         }
-        obj3.source = SystemDM;
-        obj3.is_violative_content_shown = is_violative_content_shown;
-        ({ isDsaEligible: obj2.is_dsa_eligible, violationType: obj2.violation_type } = safetyHubClassification);
-        AnalyticsUtilsDefault.track(AnalyticEvents.SAFETY_HUB_ACTION, obj3);
-        if (hasItem1) {
-          tmp(11575).openV2(tmp3, onClose);
-          const tmpResult = tmp(11575);
-        } else if (hasItem) {
-          tmp(11575).open(tmp3, onClose);
-          const tmpResult5 = tmp(11575);
-        } else if (isAppealEligible) {
-          const obj4 = { name: MetricEvents.MetricEvents.APPEAL_INGESTION_VIEW };
-          tmp(5363).increment(obj4);
-          const tmpResult6 = tmp(5363);
-          const obj5 = { classificationId: tmp3 };
-          tmp(11577).open(obj5);
-          const tmpResult7 = tmp(11577);
+        ({ isDsaEligible: obj.is_dsa_eligible, violationType: obj.violation_type } = safetyHubClassification);
+        track(SAFETY_HUB_ACTION, obj);
+        const tmp7 = hasItem1;
+        if (tmp7) {
+          const tmpResult = AutomatedUnderageAppealModalActionCreatorsDefault;
+          tmpResult.openV2(classificationId, onClose);
         } else {
-          tmp(4554).openURL(constants.APPEALS_LINK);
-          const tmpResult8 = tmp(4554);
+          const tmp8 = hasItem;
+          if (tmp8) {
+            const tmpResult5 = AutomatedUnderageAppealModalActionCreatorsDefault;
+            tmpResult5.open(classificationId, onClose);
+          } else {
+            const tmp9 = isAppealEligible;
+            if (tmp9) {
+              const obj2 = { name: MetricEvents.MetricEvents.APPEAL_INGESTION_VIEW };
+              const increment = MonitoringAgentDefault.increment;
+              MonitoringAgentDefault;
+              increment(obj2);
+              obj3 = { classificationId };
+              const tmpResult7 = AppealIngestionModalActionCreatorsDefault;
+              tmpResult7.open(obj3);
+            } else {
+              const tmpResult8 = LinkingDefault;
+              tmpResult8.openURL(unpackModuleId.APPEALS_LINK);
+            }
+          }
         }
       }
-      const obj9 = { actions: classification.actions, classificationExpiration: tmp(tmp2[30]).getClassificationAccountStatusExpiration(classification), redesigned: hasItem1 };
-      const items5 = [tmp19(ClassificationActionsTaken, obj9), ];
+      const obj9 = { actions: classification.actions, classificationExpiration: tmpResult6.getClassificationAccountStatusExpiration(classification), redesigned: hasItem1 };
+      tmpResult6 = tmp(tmp2[31]);
+      const items5 = [closure_13(closure_20, obj9), ];
+      const tmp22 = closure_15;
       if (hasItem1) {
-        const obj10 = { tosLink: null, communityGuidelinesLink: null, onPressLetUsKnow: null };
-        ({ TOS_LINK: obj15.tosLink, COMMUNITY_GUIDELINES: obj15.communityGuidelinesLink } = ref);
-        obj10.onPressLetUsKnow = onPressLetUsKnow;
-        let tmp19Result6 = tmp19(ConfirmMinimumAgeGuidance, obj10);
+        const obj10 = { tosLink: null, communityGuidelinesLink: null, onPressLetUsKnow };
+        ({ TOS_LINK: obj14.tosLink, COMMUNITY_GUIDELINES: obj14.communityGuidelinesLink } = ref);
+        tmp20Result6 = tmp20(closure_30, obj10);
       } else {
-        const obj11 = { appealLink: null, communityGuidelinesLink: null, tosLink: null, classificationTypeText: null, policyExplainerLink: null, appealComponent: null };
-        ({ APPEALS_LINK: obj13.appealLink, COMMUNITY_GUIDELINES: obj13.communityGuidelinesLink, TOS_LINK: obj13.tosLink } = ref);
-        ({ description: obj13.classificationTypeText, explainer_link: obj13.policyExplainerLink } = classification);
-        const obj12 = { hasBeenAppealed: null != classification.appeal_status, onPressLetUsKnow };
-        obj11.appealComponent = tmp19(AppealFooter, obj12);
-        tmp19Result6 = tmp19(ClassificationGuidance, obj11);
+        ({ APPEALS_LINK: obj12.appealLink, COMMUNITY_GUIDELINES: obj12.communityGuidelinesLink, TOS_LINK: obj12.tosLink } = ref);
+        ({ description: obj12.classificationTypeText, explainer_link: obj12.policyExplainerLink } = classification);
+        const obj11 = { appealLink: null, communityGuidelinesLink: null, tosLink: null, classificationTypeText: null, policyExplainerLink: null, appealComponent: closure_13(closure_29, obj13) };
+        obj13 = { hasBeenAppealed: null != classification.appeal_status, onPressLetUsKnow };
+        tmp20Result6 = tmp20(closure_24, obj11);
       }
-      const obj14 = { children: null };
-      items5[1] = tmp19Result6;
-      obj14.children = items5;
-      tmp19Result5 = tmp37(closure_15, obj14);
-      let tmpResult6 = tmp(tmp2[30]);
+      const obj15 = { children: items5 };
+      items5[1] = tmp20Result6;
+      tmp20Result5 = tmp38(tmp22, obj15);
     }
-    items4[2] = tmp19Result5;
-    let tmp19Result7 = !hasItem1;
-    if (!hasItem1) {
+    items4[2] = tmp20Result5;
+    let tmp20Result7 = !hasItem1;
+    if (tmp20Result7) {
       const obj16 = { onClose };
-      tmp19Result7 = tmp19(ClassificationDetailFooter, obj16);
+      tmp20Result7 = tmp20(closure_33, obj16);
     }
-    items4[3] = tmp19Result7;
-    obj6.children = items4;
-    tmp37Result = tmp37(classification, obj6);
-    const obj7 = { classificationTypeText: null, guildMetadata: null };
-    const tmp41 = source(tmp2[29]);
+    items4[3] = tmp20Result7;
+    tmp38Result = tmp38(tmp39, obj6);
   }
-  obj5.children = tmp37Result;
-  obj4.children = closure_13(classificationId(onClose[28]).SafeAreaPaddingView, obj5);
-  tmp19Result8 = tmp19(is_violative_content_shown, obj4);
-};
+  tmp20Result8 = tmp20(tmp21, obj4);
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/safety_hub/native/ClassificationDetail.tsx");
+
+export default tmp6;

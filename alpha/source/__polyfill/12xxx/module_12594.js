@@ -1,16 +1,23 @@
 // Module ID: 12594
 // Function ID: 12595
-// Dependencies: []
-// Exports: parameterize
+// Dependencies: [12571]
+// Exports: getCapturedScopesOnSpan, setCapturedScopesOnSpan
 
 // Module 12594
+import _mod12571 from "module_12571" /* 12571 */;
 
-export const parameterize = function parameterize(join) {
-  const substr = [...arguments].slice();
-  const items = [join, ...substr];
-  const string = new String(String.raw.apply(items));
-  const str = join.join("\0");
-  string.__sentry_template_string__ = join.join("\0").replace(/%/g, "%%").replace(/\0/g, "%s");
-  string.__sentry_template_values__ = substr;
-  return string;
+const _sentryScope = "_sentryScope";
+const _sentryIsolationScope = "_sentryIsolationScope";
+
+export const getCapturedScopesOnSpan = function getCapturedScopesOnSpan(scope) {
+  return { scope: scope[_sentryScope], isolationScope: scope[_sentryIsolationScope] };
+};
+export const setCapturedScopesOnSpan = function setCapturedScopesOnSpan(arg0, arg1, arg2) {
+  const tmp = arg0;
+  if (tmp) {
+    const obj = _mod12571;
+    const result = obj.addNonEnumerableProperty(arg0, _sentryIsolationScope, arg2);
+    const obj2 = _mod12571;
+    const result1 = obj2.addNonEnumerableProperty(arg0, _sentryScope, arg1);
+  }
 };

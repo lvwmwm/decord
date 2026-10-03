@@ -1,29 +1,43 @@
-// Module ID: 16878
-// Function ID: 16879
+// Module ID: 16967
+// Function ID: 16968
 // Name: RegionActionCreators
-// Dependencies: [1074, 1271, 573, 2]
+// Dependencies: [1085, 1282, 584, 2]
 
-// Module 16878 (RegionActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 16967 (RegionActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
 const Endpoints = Constants.Endpoints;
-const result = size.fileFinishedImporting("actions/RegionActionCreators.tsx");
-
-export default {
+let obj = {
   fetchRegions(id) {
+    let guildId;
     _require = id;
     const HTTP = require("HTTPUtils").HTTP;
-    value = HTTP.get({ url: Endpoints.REGIONS(id), retries: 1, oldFormErrors: true, rejectWithError: true });
-    value.then((body) => DispatcherDefault.dispatch({ type: "LOAD_REGIONS", regions: body.body, guildId }), () => DispatcherDefault.dispatch({ type: "LOAD_REGIONS", regions: [], guildId }));
+    let obj = { url: Endpoints.REGIONS(id), retries: 1, oldFormErrors: true, rejectWithError: true };
+    const value = HTTP.get(obj);
+    value.then((body) => {
+      const obj = DispatcherDefault;
+      const obj2 = { type: "LOAD_REGIONS", regions: body.body, guildId };
+      return obj.dispatch(obj2);
+    }, () => {
+      const obj = DispatcherDefault;
+      const obj2 = { type: "LOAD_REGIONS", regions: [], guildId };
+      return obj.dispatch(obj2);
+    });
   },
-  changeCallRegion(id, region) {
+  changeCallRegion(arg0, region) {
+    let obj;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: Endpoints.CALL(id), body: { region }, oldFormErrors: true, rejectWithError: true };
+    const request = { url: Endpoints.CALL(arg0), body: obj, oldFormErrors: true, rejectWithError: true };
+    obj = { region };
     HTTP.patch(request);
   }
 };
+const result = size.fileFinishedImporting("actions/RegionActionCreators.tsx");
+
+export default obj;

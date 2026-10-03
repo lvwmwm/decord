@@ -1,38 +1,79 @@
-// Module ID: 15511
-// Function ID: 15512
+// Module ID: 15572
+// Function ID: 15573
 // Name: OrbOnboardingPill
-// Dependencies: [19, 17, 21, 8486, 4841, 1115, 4845, 576, 2]
+// Dependencies: [19, 17, 21, 558, 576, 8491, 4886, 1126, 4890, 587, 2]
 
-// Module 15511 (OrbOnboardingPill)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import OrbsIcon from "OrbsIcon" /* 8486 */;
-import noop from "module_19" /* 19 */;
+// Module 15572 (OrbOnboardingPill)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import OrbsIcon from "OrbsIcon" /* 8491 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 4890 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-class OrbOnboardingPill {
-  constructor() {
-    obj = { style: closure_5().container, children: null };
-    items = [, ];
-    items[0] = jsx(closure_0(closure_1[3]).OrbsIcon, { size: "sm" });
-    obj1 = { variant: "text-sm/semibold", color: "redesign-button-tertiary-text", children: null };
-    intl = closure_0(closure_1[5]).intl;
-    obj1.children = intl.string(closure_0(closure_1[5]).t["9JpRfC"]);
-    items[1] = jsx(closure_0(closure_1[4]).Text, obj1);
-    obj.children = items;
-    return jsxs(View, obj);
+let c3;
+let closure_4;
+let obj2;
+const View = react_native.View;
+({ jsx: c3, jsxs: closure_4 } = Fragment);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let intl;
+  let items;
+  let tmp11;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(4);
+  const tmp4 = closure_5();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp7 = _false(OrbsIcon.OrbsIcon, { size: "sm" });
+    cResult[0] = tmp7;
+    first = tmp7;
+  } else {
+    first = cResult[0];
   }
-}
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: c3, jsxs: closure_4 } = jsxProd);
-OrbOnboardingPill.displayName = "OrbOnboardingPill";
-const createStyles = fn(4845);
-let obj2 = { container: { height: 36, borderRadius: nativeDefault.radii.round, justifyContent: "center", alignItems: "center", flexDirection: "row", paddingHorizontal: nativeDefault.space.PX_12, paddingVertical: nativeDefault.space.PX_4, backgroundColor: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, flexShrink: 0, gap: 4 } };
-const hasOwnProperty = createStyles.createStyles(obj2);
-const size = fn(2);
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { variant: "text-sm/semibold", color: "redesign-button-tertiary-text", children: intl.string(intl2.t["9JpRfC"]) };
+    const Text = tmp(4886).Text;
+    intl = tmp(1126).intl;
+    const tmp10 = _false(Text, obj2);
+    cResult[1] = tmp10;
+    tmp8 = tmp10;
+  } else {
+    tmp8 = cResult[1];
+  }
+  if (cResult[2] !== tmp4.container) {
+    const obj3 = { style: tmp4.container, children: items };
+    items = [first, tmp8];
+    const tmp14 = React3(View, obj3);
+    cResult[2] = tmp4.container;
+    cResult[3] = tmp14;
+    tmp11 = tmp14;
+  } else {
+    tmp11 = cResult[3];
+  }
+  return tmp11;
+}) : (() => {
+  let intl;
+  let items;
+  const obj = { style: closure_5().container, children: items };
+  items = [_false(OrbsIcon.OrbsIcon, { size: "sm" }), ];
+  const obj2 = { variant: "text-sm/semibold", color: "redesign-button-tertiary-text", children: intl.string(intl2.t["9JpRfC"]) };
+  const Text = Text_Text.Text;
+  intl = intl2.intl;
+  items[1] = _false(Text, obj2);
+  return React3(View, obj);
+});
+tmp4.displayName = "OrbOnboardingPill";
+let obj = { container: obj2 };
+obj2 = { height: 36, borderRadius: nativeDefault.radii.round, justifyContent: "center", alignItems: "center", flexDirection: "row", paddingHorizontal: nativeDefault.space.PX_12, paddingVertical: nativeDefault.space.PX_4, backgroundColor: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, flexShrink: 0, gap: 4 };
+let closure_5 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/virtual_currency/native/OrbOnboardingPill.tsx");
 
-export default OrbOnboardingPill;
-export { OrbOnboardingPill };
+export default tmp4;
+export const OrbOnboardingPill = tmp4;

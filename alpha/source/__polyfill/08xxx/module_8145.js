@@ -1,86 +1,91 @@
 // Module ID: 8145
 // Function ID: 8146
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8146, 8133, 8134]
+// Dependencies: []
+// Exports: appendTransform, reset, toArray
 
 // Module 8145
-import _possibleConstructorReturnDefault from "_possibleConstructorReturn" /* 93 */;
-import _modDef8134 from "module_8134" /* 8134 */;
-import _modDef8146 from "module_8146" /* 8146 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import noop from "module_19" /* 19 */;
-
-const FeGaussianBlur = fn;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
+function append(arg0, arg1, arg2, arg3, arg4, arg5) {
+  if (1 !== arg0 || 0 !== arg1 || 0 !== arg2 || 1 !== arg3) {
+    const tmp3 = c8;
+    if (tmp3) {
+      c8 = false;
+      c2 = arg0;
+      c3 = arg1;
+      c4 = arg2;
+      c5 = arg3;
+      closure_6 = arg4;
+      closure_7 = arg5;
     } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-_possibleConstructorReturnDefault;
-const jsx = fn(21).jsx;
-class FeGaussianBlur {
-  constructor() {
-    self = this;
-    tmp = closure_3(this, FeGaussianBlur);
-    tmp2 = hasOwnProperty;
-    obj = hasOwnProperty(FeGaussianBlur);
-    tmp3 = closure_4;
-    if (closure_7()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(FeGaussianBlur, _modDef8134);
-const entry = {
-  key: "render",
-  value: function render() {
-    const self = this;
-    const obj = {
-      ref(arg0) {
-        return self.refMethod(arg0);
+      if (1 !== arg0 || 0 !== arg1 || 0 !== arg2 || 1 !== arg3) {
+        c2 = tmp4 * arg0 + tmp6 * arg1;
+        c3 = tmp5 * arg0 + tmp7 * arg1;
+        c4 = tmp4 * arg2 + tmp6 * arg3;
+        c5 = tmp5 * arg2 + tmp7 * arg3;
       }
-    };
-    const merged = Object.assign(FeGaussianBlur(8133).extractFilter(this.props));
-    const obj2 = FeGaussianBlur(8133);
-    const merged1 = Object.assign(FeGaussianBlur(8133).extractIn(this.props));
-    const obj3 = FeGaussianBlur(8133);
-    const merged2 = Object.assign(FeGaussianBlur(8133).extractFeGaussianBlur(this.props));
-    return <tmp ref={function ref(arg0) {
-      return self.refMethod(arg0);
-    }} />;
+      if (0 !== arg4 || 0 !== arg5) {
+        closure_6 = tmp4 * arg4 + tmp6 * arg5 + closure_6;
+        closure_7 = tmp5 * arg4 + tmp7 * arg5 + closure_7;
+      }
+    }
   }
-};
-const items = [entry];
-const importDefaultResultResult = _createClass(FeGaussianBlur, items);
-importDefaultResultResult.displayName = "FeGaussianBlur";
-let obj = {};
-let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-obj.stdDeviation = 0;
-obj.edgeMode = "none";
-importDefaultResultResult.defaultProps = obj;
+}
+let closure_0 = Math.PI / 180;
+let items = [1, 0, 0, 1, 0, 0];
+let c2 = 1;
+let c3 = 0;
+let c4 = 0;
+let c5 = 1;
+let closure_6 = 0;
+let closure_7 = 0;
+let c8 = true;
 
-export default importDefaultResultResult;
+export const identity = items;
+export function reset() {
+  const tmp = c8;
+  if (!tmp) {
+    c5 = 1;
+    c2 = 1;
+    closure_7 = 0;
+    closure_6 = 0;
+    c4 = 0;
+    c3 = 0;
+    c8 = true;
+  }
+}
+export function toArray() {
+  const tmp = c8;
+  if (!tmp) {
+    items = [c2, c3, c4, c5, closure_6, closure_7];
+  }
+  return items;
+}
+export { append };
+export const appendTransform = function appendTransform(arg0, arg1, scaleX, scaleY, rotation, skewX, skewY, originX, originY) {
+  let num2 = 1;
+  let num3 = 0;
+  if (rotation % 360) {
+    const result = rotation * closure_0;
+    const _Math = Math;
+    num2 = Math.cos(result);
+    const _Math2 = Math;
+    num3 = Math.sin(result);
+  }
+  const result1 = num2 * scaleX;
+  const result2 = num3 * scaleX;
+  const result3 = -num3 * scaleY;
+  const result4 = num2 * scaleY;
+  if (!skewX) {
+    if (!skewY) {
+      append(result1, result2, result3, result4, arg0, arg1);
+    }
+    const tmp19 = originX || originY;
+    if (tmp19) {
+      closure_6 = closure_6 - (originX * c2 + originY * c4);
+      closure_7 = closure_7 - (originX * c3 + originY * c5);
+      c8 = false;
+    }
+  }
+  const tanResult = Math.tan(skewY * closure_0);
+  const tanResult1 = Math.tan(skewX * closure_0);
+  append(result1 + tanResult1 * result2, tanResult * result1 + result2, result3 + tanResult1 * result4, tanResult * result3 + result4, arg0, arg1);
+};

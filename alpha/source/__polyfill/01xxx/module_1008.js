@@ -1,151 +1,60 @@
 // Module ID: 1008
 // Function ID: 1009
-// Dependencies: [682]
-// Exports: createReduxEnhancer
+// Dependencies: [880]
+// Exports: getBodySize, parseContentLengthHeader
 
 // Module 1008
-import _mod682 from "module_682" /* 682 */;
+import encodeUTF8 from "encodeUTF8" /* 880 */;
 
-require = arg1;
-const dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-let obj = {
-  attachReduxState: true,
-  actionTransformer(arg0) {
-    return arg0;
-  },
-  stateTransformer(arg0) {
-    let tmp = arg0;
-    if (!arg0) {
-      tmp = null;
+
+export const parseContentLengthHeader = function parseContentLengthHeader(responseHeader) {
+  if (responseHeader) {
+    const _parseInt = parseInt;
+    const parsed = parseInt(responseHeader, 10);
+    const _isNaN = isNaN;
+    let tmp3;
+    if (!isNaN(parsed)) {
+      tmp3 = parsed;
     }
-    return tmp;
+    return tmp3;
   }
 };
-
-export const createReduxEnhancer = function createReduxEnhancer(arg0) {
-  obj = {};
-  const merged = Object.assign(obj);
-  const merged1 = Object.assign(arg0);
-  return (arg0) => {
-    closure_0 = arg0;
-    return (arg0, arg1) => {
-      if (obj.attachReduxState) {
-        obj = _mod682;
-        const globalScope = obj.getGlobalScope();
-        globalScope.addEventProcessor((type, attachments) => {
-          try {
-            let tmp = undefined === type.type;
-            if (tmp) {
-              tmp = "redux" === type.contexts.state.state.type;
-            }
-            if (tmp) {
-              attachments = attachments.attachments;
-              if (!attachments) {
-                attachments = [];
-              }
-              const items = [];
-              obj = { filename: "redux_state.json", data: null };
-              const _JSON = JSON;
-              obj.data = JSON.stringify(type.contexts.state.state.value);
-              items[HermesBuiltin.arraySpread(attachments, 0)] = obj;
-              attachments.attachments = items;
-              const arraySpreadResult = HermesBuiltin.arraySpread(attachments, 0);
-            }
-            return type;
-          } catch (err) {
-          }
-        });
-      }
-      closure_0 = arg0;
-      const tmp4 = closure_0((arg0, arg1) => {
-        const tmp = closure_0(arg0, arg1);
-        const currentScope = closure_0(closure_3_1[0]).getCurrentScope();
-        const actionTransformerResult = closure_0.actionTransformer(arg1);
-        if (null != actionTransformerResult) {
-          const obj2 = { category: "redux.action", data: actionTransformerResult, type: "info" };
-          tmp2(tmp3[0]).addBreadcrumb(obj2);
-          const tmp2Result = tmp2(tmp3[0]);
-        }
-        const stateTransformerResult = closure_0.stateTransformer(tmp);
-        if (null != stateTransformerResult) {
-          const client = tmp2(tmp3[0]).getClient();
-          let options;
-          if (client != null) {
-            options = client.getOptions();
-          }
-          let num;
-          if (options != null) {
-            num = options.normalizeDepth;
-          }
-          if (!num) {
-            num = 3;
-          }
-          const obj4 = { state: null };
-          const obj5 = { type: "redux", value: stateTransformerResult };
-          obj4.state = obj5;
-          const tmp2Result3 = tmp2(tmp3[0]);
-          const result = tmp2(tmp3[0]).addNonEnumerableProperty(obj4, "__sentry_override_normalization_depth__", 3 + num);
-          currentScope.setContext("state", obj4);
-          const tmp2Result4 = tmp2(tmp3[0]);
+export const getBodySize = function getBodySize(size) {
+  function _serializeFormData(size) {
+    const str = new URLSearchParams(size);
+    return str.toString();
+  }
+  const tmp = size;
+  if (tmp) {
+    try {
+      if (typeof size === "string") {
+        const obj3 = encodeUTF8;
+        return obj3.encodeUTF8(size).length;
+      } else {
+        const _URLSearchParams = URLSearchParams;
+        if (size instanceof URLSearchParams) {
+          const obj2 = encodeUTF8;
+          return obj2.encodeUTF8(size.toString()).length;
         } else {
-          currentScope.setContext("state", null);
-        }
-        const configureScopeWithState = obj3.configureScopeWithState;
-        if (typeof configureScopeWithState === "function") {
-          const result1 = configureScopeWithState(currentScope, tmp);
-        }
-        return tmp;
-      }, arg1);
-      const proxy = new Proxy(tmp4.replaceReducer, {
-        apply(apply, arg1, arg2) {
-          closure_0 = arg2[0];
-          const items = [
-            (arg0, arg1) => {
-              const tmp = closure_0(arg0, arg1);
-              const currentScope = closure_0(closure_3_1[0]).getCurrentScope();
-              const actionTransformerResult = closure_0.actionTransformer(arg1);
-              if (null != actionTransformerResult) {
-                const obj2 = { category: "redux.action", data: actionTransformerResult, type: "info" };
-                tmp2(tmp3[0]).addBreadcrumb(obj2);
-                const tmp2Result = tmp2(tmp3[0]);
+          const _FormData = FormData;
+          if (size instanceof FormData) {
+            const tmp2 = _serializeFormData(size);
+            const obj = encodeUTF8;
+            return obj.encodeUTF8(tmp2).length;
+          } else {
+            const _Blob = Blob;
+            if (size instanceof Blob) {
+              return size.size;
+            } else {
+              const _ArrayBuffer = ArrayBuffer;
+              if (size instanceof ArrayBuffer) {
+                return size.byteLength;
               }
-              const stateTransformerResult = closure_0.stateTransformer(tmp);
-              if (null != stateTransformerResult) {
-                const client = tmp2(tmp3[0]).getClient();
-                let options;
-                if (client != null) {
-                  options = client.getOptions();
-                }
-                let num;
-                if (options != null) {
-                  num = options.normalizeDepth;
-                }
-                if (!num) {
-                  num = 3;
-                }
-                const obj4 = { state: null };
-                const obj5 = { type: "redux", value: stateTransformerResult };
-                obj4.state = obj5;
-                const tmp2Result3 = tmp2(tmp3[0]);
-                const result = tmp2(tmp3[0]).addNonEnumerableProperty(obj4, "__sentry_override_normalization_depth__", 3 + num);
-                currentScope.setContext("state", obj4);
-                const tmp2Result4 = tmp2(tmp3[0]);
-              } else {
-                currentScope.setContext("state", null);
-              }
-              const configureScopeWithState = obj3.configureScopeWithState;
-              if (typeof configureScopeWithState === "function") {
-                const result1 = configureScopeWithState(currentScope, tmp);
-              }
-              return tmp;
             }
-          ];
-          apply.apply(arg1, items);
+          }
         }
-      });
-      tmp4.replaceReducer = proxy;
-      return tmp4;
-    };
-  };
+      }
+    } catch (err) {
+    }
+  }
 };

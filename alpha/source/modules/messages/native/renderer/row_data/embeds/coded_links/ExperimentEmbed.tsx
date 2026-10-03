@@ -1,89 +1,300 @@
-// Module ID: 11498
-// Function ID: 11499
+// Module ID: 11417
+// Function ID: 11418
 // Name: ExperimentEmbed
-// Dependencies: [19, 17, 502, 4762, 7328, 21, 7560, 7490, 11225, 11226, 4567, 11499, 11500, 11501, 7561, 11502, 7492, 4809, 4766, 6757, 6756, 11503, 11224, 2]
-// Exports: createExperimentEmbed, default
+// Dependencies: [19, 17, 502, 4777, 7226, 21, 7604, 7534, 11139, 11140, 4587, 11418, 11419, 11420, 7605, 11421, 558, 576, 7536, 4854, 4781, 6644, 11422, 6645, 11138, 2]
+// Exports: createExperimentEmbed
 
-// Module 11498 (ExperimentEmbed)
-import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 7490 */;
-import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 7492 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7560 */;
-import useCodedLinksExperimentEmbeds from "useCodedLinksExperimentEmbeds" /* 11224 */;
-import useLegacyExperiments from "useLegacyExperiments" /* 11225 */;
-import useApexExperiments from "useApexExperiments" /* 11226 */;
-import noop from "module_19" /* 19 */;
+// Module 11417 (ExperimentEmbed)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import themes from "themes" /* 4587 */;
+import ExperimentConstants from "ExperimentConstants" /* 4777 */;
+import ExperimentManager from "ExperimentManager" /* 4781 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Constants from "Constants" /* 7226 */;
+import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 7534 */;
+import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 7536 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7604 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7605 */;
+import useLegacyExperiments from "useLegacyExperiments" /* 11139 */;
+import useApexExperiments from "useApexExperiments" /* 11140 */;
+import useExperimentAssignments from "useExperimentAssignments" /* 11420 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11421 */;
+import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-function ExperimentOverrideActionSheet(override) {
-  const id = override.id;
-  const experiment = override.experiment;
-  let items = [experiment];
-  const memo = noop.useMemo(() => {
+let BottomSheet, map;
+
+let tmp;
+const useCodedLinksExperimentEmbeds = tmp(11138);
+const Image = react_native.Image;
+const ExperimentEmbedType = ExperimentConstants.ExperimentEmbedType;
+const InviteTypes = Constants.InviteTypes;
+const jsx = Fragment.jsx;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id) {
+  let arr;
+  let items;
+  let tmp14;
+  let tmp6;
+  let tmp7;
+  let obj = id(items[17]);
+  const cResult = obj.c(22);
+  id = id.id;
+  const experiment = id.experiment;
+  const override = id.override;
+  if (cResult[0] !== experiment) {
+    let experimentVariantsForDevTools;
     if (null != experiment) {
-      let experimentVariantsForDevTools = ExperimentDevToolsUtils.getExperimentVariantsForDevTools(tmp);
+      const tmpResult = id(items[18]);
+      experimentVariantsForDevTools = tmpResult.getExperimentVariantsForDevTools(experiment);
+    } else {
+      experimentVariantsForDevTools = [];
+    }
+    cResult[0] = experiment;
+    cResult[1] = experimentVariantsForDevTools;
+    arr = experimentVariantsForDevTools;
+  } else {
+    arr = cResult[1];
+  }
+  if (null != experiment) {
+    if (cResult[3] === experiment.system) {
+      if (cResult[4] === id) {
+        if (cResult[5] === arr) {
+          items = cResult[6];
+        }
+        tmp6 = tmp7;
+      }
+    }
+    const _Map = Map;
+    const self = this;
+    const self2 = this;
+    map = new Map();
+    const item = arr.forEach((id) => {
+      const result = map.set(id.id, id);
+    });
+    items = [];
+    const item1 = map.forEach((label) => {
+      let obj = {
+        label: label.label,
+        onPress() {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet("ExperimentOverrideSheet");
+          const obj2 = ExperimentManager;
+          obj2.overrideBucket(experiment.system, id, label.id);
+        }
+      };
+      items.push(obj);
+    });
+    if (cResult[7] === experiment.system) {
+      let tmp12;
+      if (cResult[8] === id) {
+        tmp12 = cResult[9];
+      }
+      items.push(tmp12);
+      cResult[3] = experiment.system;
+      cResult[4] = id;
+      cResult[5] = arr;
+      cResult[6] = items;
+      tmp7 = items;
+    }
+    let obj2 = {
+      label: "Clear Override",
+      isDestructive: true,
+      onPress() {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet("ExperimentOverrideSheet");
+          const obj2 = ExperimentManager;
+          obj2.overrideBucket(experiment.system, id, null);
+        }
+    };
+    cResult[7] = experiment.system;
+    cResult[8] = id;
+    cResult[9] = obj2;
+    tmp12 = obj2;
+  } else {
+    const _Symbol = Symbol;
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+      const items1 = [];
+      cResult[2] = items1;
+      tmp6 = items1;
+    } else {
+      tmp6 = cResult[2];
+    }
+  }
+  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor() {
+        const obj = experiment(items[19]);
+        obj.hideActionSheet("ExperimentOverrideSheet");
+      }
+    }
+    cResult[10] = C;
+    tmp14 = C;
+  } else {
+    class C {
+      constructor() {
+        const obj = experiment(items[19]);
+        obj.hideActionSheet("ExperimentOverrideSheet");
+      }
+    }
+  }
+  if (cResult[11] === experiment.title) {
+    class C {
+      constructor() {
+        const obj = experiment(items[19]);
+        obj.hideActionSheet("ExperimentOverrideSheet");
+      }
+    }
+    if (cResult[14] === experiment) {
+      class C {
+        constructor() {
+          const obj = experiment(items[19]);
+          obj.hideActionSheet("ExperimentOverrideSheet");
+        }
+      }
+    }
+    cResult[14] = experiment;
+    cResult[15] = id;
+    cResult[16] = tmp6;
+    cResult[17] = override;
+    cResult[18] = jsx(id(items[22]).ExperimentDetails, { experiment, override, id, options: tmp6, onCopyLink: tmp14 });
+    const tmp18 = jsx(id(items[22]).ExperimentDetails, { experiment, override, id, options: tmp6, onCopyLink: tmp14 });
+  }
+  cResult[11] = experiment.title;
+  cResult[12] = id;
+  cResult[13] = jsx(id(items[21]).BottomSheetTitleHeader, { title: experiment.title, subtitle: id });
+  jsx(id(items[21]).BottomSheetTitleHeader, { title: experiment.title, subtitle: id });
+}) : ((id) => {
+  id = id.id;
+  const experiment = id.experiment;
+  let items = [experiment];
+  const override = id.override;
+  const memo = react.useMemo(() => {
+    let experimentVariantsForDevTools;
+    if (null != experiment) {
+      const obj = ExperimentDevToolsUtils;
+      experimentVariantsForDevTools = obj.getExperimentVariantsForDevTools(tmp);
     } else {
       experimentVariantsForDevTools = [];
     }
     return experimentVariantsForDevTools;
   }, items);
   const items1 = [id, experiment, memo];
-  const memo1 = noop.useMemo(() => {
+  const memo1 = react.useMemo(function() {
+    let items;
     if (null == items) {
       return [];
     } else {
       const _Map = Map;
-      const map = new Map();
+      const self = this;
+      const self2 = this;
+      map = new Map();
       const item = memo.forEach((id) => {
         const result = map.set(id.id, id);
       });
       items = [];
       const item1 = map.forEach((label) => {
-        items.push({
+        let system;
+        let closure_0 = label;
+        let obj = {
           label: label.label,
           onPress() {
-            experiment(memo[17]).hideActionSheet("ExperimentOverrideSheet");
-            const obj = experiment(memo[17]);
-            id(memo[18]).overrideBucket(items.system, map, label.id);
+            const obj = items(memo[19]);
+            obj.hideActionSheet("ExperimentOverrideSheet");
+            const obj2 = map(memo[20]);
+            obj2.overrideBucket(system.system, closure_2_0, id.id);
           }
-        });
+        };
+        items.push(obj);
       });
       let obj = {
         label: "Clear Override",
         isDestructive: true,
         onPress() {
-            experiment(memo[17]).hideActionSheet("ExperimentOverrideSheet");
-            const obj = experiment(memo[17]);
-            id(memo[18]).overrideBucket(items.system, map, null);
+            const obj = experiment(memo[19]);
+            obj.hideActionSheet("ExperimentOverrideSheet");
+            const obj2 = id(memo[20]);
+            obj2.overrideBucket(items.system, map, null);
           }
       };
       items.push(obj);
       return items;
     }
   }, items1);
-  const callback = noop.useCallback(() => {
-    experiment(memo[17]).hideActionSheet("ExperimentOverrideSheet");
+  const callback = react.useCallback(() => {
+    const obj = experiment(memo[19]);
+    obj.hideActionSheet("ExperimentOverrideSheet");
   }, []);
-  let obj = { header: jsx(id(memo[20]).BottomSheetTitleHeader, { title: experiment.title, subtitle: id }), children: jsx(id(memo[21]).ExperimentDetails, { experiment, override: override.override, id, options: memo1, onCopyLink: callback }) };
-  return jsx(id(memo[19]).BottomSheet, { header: jsx(id(memo[20]).BottomSheetTitleHeader, { title: experiment.title, subtitle: id }), children: jsx(id(memo[21]).ExperimentDetails, { experiment, override: override.override, id, options: memo1, onCopyLink: callback }) });
-}
-const Image = fn(17).Image;
-const ExperimentEmbedType = fn(4762).ExperimentEmbedType;
-const InviteTypes = fn(7328).InviteTypes;
-const jsx = fn(21).jsx;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/ExperimentEmbed.tsx");
-
-export default function ConnectedExperimentOverrideActionSheet(id) {
+  BottomSheet = id(memo[23]).BottomSheet;
+  let obj2 = { title: experiment.title, subtitle: id };
+  return <BottomSheet header={null}>{null}</BottomSheet>;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+  let experiments;
+  let overridesInfo;
+  const obj = react2;
+  const cResult = obj.c(4);
   id = id.id;
-  const legacyExperiments = useLegacyExperiments.useLegacyExperiments();
+  const obj2 = useLegacyExperiments;
+  const legacyExperiments = obj2.useLegacyExperiments();
+  ({ experiments, overridesInfo } = legacyExperiments);
+  const obj3 = useApexExperiments;
+  const apexExperiments = obj3.useApexExperiments();
+  let tmp6 = experiments[id];
+  const overridesInfo2 = apexExperiments.overridesInfo;
+  if (tmp6 == null) {
+    tmp6 = apexExperiments.experiments[id];
+  }
+  if (tmp6 == null) {
+    tmp6 = null;
+  }
+  let tmp7 = overridesInfo[id];
+  if (tmp7 == null) {
+    tmp7 = overridesInfo2[id];
+  }
+  if (tmp7 == null) {
+    tmp7 = null;
+  }
+  useCodedLinksExperimentEmbeds;
+  let tmp10 = null;
+  if (null != tmp6) {
+    tmp10 = null;
+    if (tmp9) {
+      if (cResult[0] === tmp6) {
+        if (cResult[1] === id) {
+          let tmp11;
+          if (cResult[2] === tmp7) {
+            tmp11 = cResult[3];
+          }
+          tmp10 = tmp11;
+        }
+      }
+      const tmp14 = <closure_9 id={id} experiment={tmp6} override={tmp7} />;
+      cResult[0] = tmp6;
+      cResult[1] = id;
+      cResult[2] = tmp7;
+      cResult[3] = tmp14;
+      tmp11 = tmp14;
+    }
+  }
+  return tmp10;
+}) : ((id) => {
+  id = id.id;
+  const obj = useLegacyExperiments;
+  const legacyExperiments = obj.useLegacyExperiments();
   const experiments = legacyExperiments.experiments;
   const overridesInfo = legacyExperiments.overridesInfo;
-  const apexExperiments = useApexExperiments.useApexExperiments();
+  const obj2 = useApexExperiments;
+  const apexExperiments = obj2.useApexExperiments();
   const experiments2 = apexExperiments.experiments;
   const overridesInfo2 = apexExperiments.overridesInfo;
   const items = [experiments, experiments2, id];
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     let tmp2 = experiments[id];
     if (tmp2 == null) {
       tmp2 = experiments2[tmp];
@@ -94,7 +305,7 @@ export default function ConnectedExperimentOverrideActionSheet(id) {
     return tmp2;
   }, items);
   const items1 = [overridesInfo, overridesInfo2, id];
-  const memo1 = noop.useMemo(() => {
+  const memo1 = react.useMemo(() => {
     let tmp2 = overridesInfo[id];
     if (tmp2 == null) {
       tmp2 = overridesInfo2[tmp];
@@ -109,21 +320,39 @@ export default function ConnectedExperimentOverrideActionSheet(id) {
   if (null != memo) {
     tmp7 = null;
     if (tmp6) {
-      const obj3 = { id, experiment: memo, override: memo1 };
-      tmp7 = <ExperimentOverrideActionSheet id={id} experiment={memo} override={memo1} />;
+      tmp7 = <closure_9 id={id} experiment={memo} override={memo1} />;
     }
   }
   return tmp7;
-};
+});
+let result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/ExperimentEmbed.tsx");
+
+export default tmp2;
 export const createExperimentEmbed = function createExperimentEmbed(url, arg1) {
+  let baseColors;
+  let colors;
+  let combined;
+  let combined1;
+  let experiments;
+  let overridesInfo;
+  let resolveAssetSource;
+  let str8;
+  let tmp4Result8;
+  let tmp4Result9;
+  let tmpResult;
   ({ colors, baseColors } = getEmbedThemeColorsDefault(arg1));
-  const tmp3 = getEmbedThemeColorsDefault(arg1);
-  const experimentFromEmbedURL = ExperimentEmbedUtils.getExperimentFromEmbedURL(url);
-  const experimentTreatmentFromEmbedURL = ExperimentEmbedUtils.getExperimentTreatmentFromEmbedURL(url);
-  const legacyExperiments = useLegacyExperiments.getLegacyExperiments();
+  getEmbedThemeColorsDefault(arg1);
+  const obj = ExperimentEmbedUtils;
+  const experimentFromEmbedURL = obj.getExperimentFromEmbedURL(url);
+  const obj2 = ExperimentEmbedUtils;
+  const experimentTreatmentFromEmbedURL = obj2.getExperimentTreatmentFromEmbedURL(url);
+  const obj3 = useLegacyExperiments;
+  const legacyExperiments = obj3.getLegacyExperiments();
   ({ experiments, overridesInfo } = legacyExperiments);
-  const apexExperiments = useApexExperiments.getApexExperiments();
+  const obj4 = useApexExperiments;
+  const apexExperiments = obj4.getApexExperiments();
   let tmp10 = null;
+  const overridesInfo2 = apexExperiments.overridesInfo;
   if (null != experimentFromEmbedURL) {
     let tmp11 = experiments[experimentFromEmbedURL];
     if (tmp11 == null) {
@@ -133,100 +362,76 @@ export const createExperimentEmbed = function createExperimentEmbed(url, arg1) {
   }
   if (null != experimentFromEmbedURL) {
     if (null != tmp10) {
+      let EXPERIMENT;
+      let tmp13;
       let tmp12 = overridesInfo[experimentFromEmbedURL];
       if (tmp12 == null) {
-        tmp12 = apexExperiments.overridesInfo[experimentFromEmbedURL];
+        tmp12 = overridesInfo2[experimentFromEmbedURL];
       }
       if (tmp12 == null) {
         tmp12 = null;
       }
-      const experimentBuckets = tmp4(7490).getExperimentBuckets(tmp10);
+      const tmp4Result = ExperimentEmbedUtils;
+      const experimentBuckets = tmp4Result.getExperimentBuckets(tmp10);
       const iter = experimentBuckets.find((value) => value.value === experimentTreatmentFromEmbedURL);
       if (null != iter) {
-        let EXPERIMENT = ExperimentEmbedType.EXPERIMENT_TREATMENT;
-        let tmp13 = ExperimentEmbedType;
+        EXPERIMENT = ExperimentEmbedType.EXPERIMENT_TREATMENT;
+        tmp13 = ExperimentEmbedType;
       } else {
         tmp13 = ExperimentEmbedType;
         EXPERIMENT = ExperimentEmbedType.EXPERIMENT;
       }
       const id = AuthenticationStore.getId();
-      const tmp4Result = tmp4(7490);
-      const experimentServerAssignment = tmp4(11501).getExperimentServerAssignment(tmp10, id);
-      const tmp4Result6 = tmp4(11501);
-      const experimentServerAssignmentLabel = tmp4(7490).getExperimentServerAssignmentLabel(tmp10, experimentServerAssignment);
+      const tmp4Result6 = useExperimentAssignments;
+      const experimentServerAssignment = tmp4Result6.getExperimentServerAssignment(tmp10, id);
+      const tmp4Result7 = ExperimentEmbedUtils;
+      const experimentServerAssignmentLabel = tmp4Result7.getExperimentServerAssignmentLabel(tmp10, experimentServerAssignment);
       if (EXPERIMENT === tmp13.EXPERIMENT_TREATMENT) {
+        let label;
         if (null != iter) {
-          let label = iter.label;
+          label = iter.label;
         } else {
           const _HermesInternal3 = HermesInternal;
           label = "Server Config: " + experimentServerAssignmentLabel;
         }
-        const obj5 = {};
+        const obj5 = { headerText: "EXPERIMENT TREATMENT", titleText: experimentFromEmbedURL, titleColor: colors.titleColor, subtitle: label, subtitleColor: colors.subtitleColor, thumbnailUrl: tmp4Result8.getAssetUriForEmbed(AssetRegistryDefault), thumbnailBackgroundColor: colors.backgroundColor, acceptLabelColor: null != tmp12 && null != iter && tmp12.variantId === iter.value ? colors.clearLabelRedColor : colors.acceptLabelGreenColor, acceptLabelBackgroundColor: null != tmp12 && null != iter && tmp12.variantId === iter.value ? colors.clearLabelRedBackgroundColor : colors.acceptLabelGreenBackgroundColor, acceptLabelText: combined, embedCanBeTapped: true, type: InviteTypes.GUILD };
         const merged = Object.assign(baseColors);
-        obj5.headerText = "EXPERIMENT TREATMENT";
-        obj5.titleText = experimentFromEmbedURL;
-        obj5.titleColor = colors.titleColor;
-        obj5.subtitle = label;
-        obj5.subtitleColor = colors.subtitleColor;
-        obj5.thumbnailUrl = tmp4(7561).getAssetUriForEmbed(tmp(11502));
-        obj5.thumbnailBackgroundColor = colors.backgroundColor;
-        obj5.acceptLabelColor = null != tmp12 && null != iter && tmp12.variantId === iter.value ? colors.clearLabelRedColor : colors.acceptLabelGreenColor;
-        obj5.acceptLabelBackgroundColor = null != tmp12 && null != iter && tmp12.variantId === iter.value ? colors.clearLabelRedBackgroundColor : colors.acceptLabelGreenBackgroundColor;
         const _HermesInternal4 = HermesInternal;
+        tmp4Result8 = renderer_EmbedUtils;
         if (null != tmp12 && null != iter && tmp12.variantId === iter.value) {
-          let combined = concat(experimentTreatmentFromEmbedURL);
+          combined = concat(experimentTreatmentFromEmbedURL);
         } else {
           combined = concat(experimentTreatmentFromEmbedURL);
         }
-        obj5.acceptLabelText = combined;
-        obj5.embedCanBeTapped = true;
-        obj5.type = InviteTypes.GUILD;
         return obj5;
       } else {
-        const obj6 = {};
+        const obj6 = { headerText: "EXPERIMENT", titleText: experimentFromEmbedURL, titleColor: colors.titleColor, subtitle: combined1, subtitleColor: colors.subtitleColor, thumbnailUrl: tmp4Result9.getAssetUriForEmbed(AssetRegistryDefault), acceptLabelText: "View Experiment Details", embedCanBeTapped: true, type: InviteTypes.GUILD };
         const merged1 = Object.assign(baseColors);
-        obj6.headerText = "EXPERIMENT";
-        obj6.titleText = experimentFromEmbedURL;
-        obj6.titleColor = colors.titleColor;
         if (null != tmp12) {
           const _HermesInternal2 = HermesInternal;
-          let combined1 = "Client Override Applied: Treatment " + tmp12.variantId;
+          combined1 = "Client Override Applied: Treatment " + tmp12.variantId;
         } else {
           const _HermesInternal = HermesInternal;
           combined1 = "Server Assignment: " + experimentServerAssignmentLabel;
         }
-        obj6.subtitle = combined1;
-        obj6.subtitleColor = colors.subtitleColor;
-        obj6.thumbnailUrl = tmp4(7561).getAssetUriForEmbed(tmp(11502));
         ({ backgroundColor: obj13.thumbnailBackgroundColor, acceptLabelGreenColor: obj13.acceptLabelColor, acceptLabelGreenBackgroundColor: obj13.acceptLabelBackgroundColor } = colors);
-        obj6.acceptLabelText = "View Experiment Details";
-        obj6.embedCanBeTapped = true;
-        obj6.type = InviteTypes.GUILD;
+        tmp4Result9 = renderer_EmbedUtils;
         return obj6;
       }
-      const tmp4Result7 = tmp4(7490);
     }
   }
-  const obj7 = {};
+  const obj7 = { headerText: "EXPERIMENT", titleText: str8, titleColor: colors.titleColor, subtitle: "Unknown Experiment", subtitleColor: colors.subtitleColor, bodyText: "This client is missing this experiment. You may need to open the surface where the experiment is used first.", bodyTextColor: colors.bodyTextColor, thumbnailUrl: resolveAssetSource(tmpResult).uri, thumbnailBackgroundColor: colors.thumbnailBackgroundColor, type: InviteTypes.GUILD };
   const merged2 = Object.assign(baseColors);
-  obj7.headerText = "EXPERIMENT";
-  let str8 = "Unknown Experiment";
+  str8 = "Unknown Experiment";
   if (null != experimentFromEmbedURL) {
     str8 = experimentFromEmbedURL;
   }
-  obj7.titleText = str8;
-  obj7.titleColor = colors.titleColor;
-  obj7.subtitle = "Unknown Experiment";
-  obj7.subtitleColor = colors.subtitleColor;
-  obj7.bodyText = "This client is missing this experiment. You may need to open the surface where the experiment is used first.";
-  obj7.bodyTextColor = colors.bodyTextColor;
+  resolveAssetSource = Image.resolveAssetSource;
+  const tmp4Result10 = themes;
   if (tmp4Result10.isThemeDark(arg1)) {
-    let tmpResult = tmp(11499);
+    tmpResult = tmp(11418);
   } else {
-    tmpResult = tmp(11500);
+    tmpResult = tmp(11419);
   }
-  obj7.thumbnailUrl = Image.resolveAssetSource(tmpResult).uri;
-  obj7.thumbnailBackgroundColor = colors.thumbnailBackgroundColor;
-  obj7.type = InviteTypes.GUILD;
   return obj7;
 };

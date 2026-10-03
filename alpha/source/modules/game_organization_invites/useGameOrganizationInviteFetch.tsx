@@ -1,18 +1,24 @@
-// Module ID: 17441
-// Function ID: 17442
+// Module ID: 17530
+// Function ID: 17531
 // Name: useGameOrganizationInviteFetch
-// Dependencies: [5, 17442, 17443, 1074, 504, 1091, 17444, 2]
+// Dependencies: [5, 11083, 11084, 1085, 504, 1102, 17531, 2]
 
-// Module 17441 (useGameOrganizationInviteFetch)
-import DurationsDefault from "Durations" /* 1091 */;
-import GameOrganizationInviteActionCreatorsDefault from "GameOrganizationInviteActionCreators" /* 17444 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 17442 */;
+// Module 17530 (useGameOrganizationInviteFetch)
+import Constants from "Constants" /* 1085 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11084 */;
+import GameOrganizationInviteActionCreatorsDefault from "GameOrganizationInviteActionCreators" /* 17531 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11083 */;
+import get_initialized from "get initialized" /* 504 */;
+import size from "module_2" /* 2 */;
 
-const constants = fn(17443).GameOrganizationInviteStates;
-const initialize = fn(504);
-const obj2 = {
-  getQueryId: fn(1074).QueryIds.GAME_ORGANIZATION_INVITE,
+let c1, c2;
+
+const constants = GameOrganizationInviteConstants.GameOrganizationInviteStates;
+const QueryIds = Constants.QueryIds;
+let obj = {
+  getQueryId: QueryIds.GAME_ORGANIZATION_INVITE,
   staleAfter: 5 * DurationsDefault.Seconds.MINUTE,
   failureStaleAfter: 5 * DurationsDefault.Seconds.MINUTE,
   get(arg0) {
@@ -27,20 +33,25 @@ const obj2 = {
     }
     return tmp3;
   },
-  load: null
+  load: function() {
+    return closure_2(...arguments);
+  }
 };
-let closure_2 = asyncGeneratorStep(async (arg0, value) => {
+const createFetchStore = get_initialized.createFetchStore;
+let closure_2 = _asyncToGenerator(async (arg0, value) => {
+  let obj2;
+  let closure_0 = arg0;
   if (c1 === 2) {
     c1 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
+  } else if (tmp2 === 3) {
     if (arg0 === 1) {
       throw value;
     } else if (arg0 === 2) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: "IconComponent" };
     }
   } else {
     try {
@@ -56,7 +67,8 @@ let closure_2 = asyncGeneratorStep(async (arg0, value) => {
         } else {
           c2 = 1;
           c1 = 1;
-          const obj5 = { value: GameOrganizationInviteActionCreatorsDefault.resolveGameOrganizationInvite(closure_0), done: false };
+          const obj5 = { value: obj2.resolveGameOrganizationInvite(closure_0), done: false };
+          obj2 = GameOrganizationInviteActionCreatorsDefault;
           return obj5;
         }
       } else if (arg0 === 1) {
@@ -68,26 +80,15 @@ let closure_2 = asyncGeneratorStep(async (arg0, value) => {
         return obj;
       } else {
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
-    } catch (tmp8) {
-      c1 = tmp;
-      throw tmp8;
+    } catch (tmp7) {
+      c1 = 3;
+      throw tmp7;
     }
   }
 });
-obj2.load = function() {
-  const self = this;
-  const apply = closure_2.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-};
-const fetchStore = initialize.createFetchStore(GameOrganizationInviteStore, obj2);
-const size = fn(2);
+const fetchStore = createFetchStore(GameOrganizationInviteStore, obj);
 const result = size.fileFinishedImporting("modules/game_organization_invites/useGameOrganizationInviteFetch.tsx");
 
 export const useGameOrganizationInviteFetch = fetchStore;

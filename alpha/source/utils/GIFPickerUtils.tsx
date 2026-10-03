@@ -1,12 +1,12 @@
-// Module ID: 10022
-// Function ID: 10023
+// Module ID: 10092
+// Function ID: 10093
 // Name: GIFPickerUtils
-// Dependencies: [1074, 10021, 2]
+// Dependencies: [1085, 10091, 2]
 // Exports: calculateAnalyticsMetadata, getGIFThumbnailForFavorite, isKlipyProvider, shouldUseAnimatedWebPThumbnail
 
-// Module 10022 (GIFPickerUtils)
-import Constants from "Constants" /* 1074 */;
-import GifProvider from "GifProvider" /* 10021 */;
+// Module 10092 (GIFPickerUtils)
+import Constants from "Constants" /* 1085 */;
+import GifProvider from "GifProvider" /* 10091 */;
 import size from "module_2" /* 2 */;
 
 const SearchTypes = Constants.SearchTypes;
@@ -34,10 +34,17 @@ export const getGIFThumbnailForFavorite = function getGIFThumbnailForFavorite(pr
   }
 };
 export const calculateAnalyticsMetadata = function calculateAnalyticsMetadata(analyticsID, TRENDING_GIFS, arg2) {
+  let limit;
+  let num2;
+  let obj;
+  let offset;
+  let results;
+  let tmp2;
+  let totalResults;
   if (null != TRENDING_GIFS) {
     const obj2 = {};
     obj2[TRENDING_GIFS] = 1;
-    let obj = obj2;
+    obj = obj2;
   } else {
     obj = {};
   }
@@ -46,8 +53,9 @@ export const calculateAnalyticsMetadata = function calculateAnalyticsMetadata(an
     obj3 = {};
   }
   ({ offset, limit, results } = obj3);
-  const obj4 = { search_type: SearchTypes.GIF, load_id: analyticsID, limit, offset, page: null, total_results: null, page_results: null, num_modifiers: null, modifiers: null };
-  let num2 = 1;
+  const obj4 = { search_type: SearchTypes.GIF, load_id: analyticsID, limit, offset, page: num2, total_results: totalResults, page_results: tmp2, num_modifiers: Object.keys(obj).length, modifiers: obj };
+  num2 = 1;
+  totalResults = obj3.totalResults;
   if (null != limit) {
     num2 = 1;
     if (null != offset) {
@@ -55,14 +63,9 @@ export const calculateAnalyticsMetadata = function calculateAnalyticsMetadata(an
       num2 = Math.floor(offset / limit) + 1;
     }
   }
-  obj4.page = num2;
-  obj4.total_results = obj3.totalResults;
-  let tmp2 = null;
+  tmp2 = null;
   if (null != results) {
     tmp2 = results;
   }
-  obj4.page_results = tmp2;
-  obj4.num_modifiers = Object.keys(obj).length;
-  obj4.modifiers = obj;
   return obj4;
 };

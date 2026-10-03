@@ -1,26 +1,42 @@
-// Module ID: 15868
-// Function ID: 15869
+// Module ID: 15943
+// Function ID: 15944
 // Name: useChannelListWidth
-// Dependencies: [11230, 4724, 4560, 576, 1094, 2]
-// Exports: default
+// Dependencies: [558, 11144, 4739, 4580, 587, 1105, 2]
 
-// Module 15868 (useChannelListWidth)
-import nativeDefault from "native" /* 576 */;
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import useToken from "useToken" /* 4560 */;
-import useChatLayoutDefault from "useChatLayout" /* 4724 */;
-import useDrawerWidth from "useDrawerWidth" /* 11230 */;
+// Module 15943 (useChannelListWidth)
+import nativeDefault from "native" /* 587 */;
+import ConstantsIOS from "ConstantsIOS" /* 1105 */;
+import useToken from "useToken" /* 4580 */;
+import useChatLayoutDefault from "useChatLayout" /* 4739 */;
+import useDrawerWidth from "useDrawerWidth" /* 11144 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/channel_list_v2/native/useChannelListWidth.tsx");
-
-export default function useChannelListWidth() {
-  const drawerWidth = useDrawerWidth.useDrawerWidth();
-  const token = useToken.useToken(nativeDefault.modules.mobile.CHANNEL_DRAWER_SPACING);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const obj = useDrawerWidth;
+  const drawerWidth = obj.useDrawerWidth();
+  const isChatBesideChannelList = useChatLayoutDefault().isChatBesideChannelList;
+  const obj2 = useToken;
+  const token = obj2.useToken(nativeDefault.modules.mobile.CHANNEL_DRAWER_SPACING);
   let num = 0;
   const diff = drawerWidth - ConstantsIOS.DM_WIDTH;
-  if (useChatLayoutDefault().isChatBesideChannelList) {
+  if (isChatBesideChannelList) {
     num = token;
   }
   return diff - num;
-};
+}) : (() => {
+  const obj = useDrawerWidth;
+  const drawerWidth = obj.useDrawerWidth();
+  const isChatBesideChannelList = useChatLayoutDefault().isChatBesideChannelList;
+  const obj2 = useToken;
+  const token = obj2.useToken(nativeDefault.modules.mobile.CHANNEL_DRAWER_SPACING);
+  let num = 0;
+  const diff = drawerWidth - ConstantsIOS.DM_WIDTH;
+  if (isChatBesideChannelList) {
+    num = token;
+  }
+  return diff - num;
+});
+const result = size.fileFinishedImporting("modules/channel_list_v2/native/useChannelListWidth.tsx");
+
+export default tmp2;

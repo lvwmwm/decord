@@ -1,51 +1,67 @@
-// Module ID: 7703
-// Function ID: 7704
+// Module ID: 7747
+// Function ID: 7748
 // Name: GiftIntentEmbed
-// Dependencies: [7704, 1372, 1374, 4845, 576, 1115, 7707, 4707, 7561, 4777, 7708, 7709, 2]
+// Dependencies: [7748, 1377, 1379, 4890, 587, 1126, 7751, 4722, 7605, 4832, 7752, 7753, 2]
 // Exports: createGiftIntentEmbed
 
-// Module 7703 (GiftIntentEmbed)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import UserUtilsDefault from "UserUtils" /* 4707 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7561 */;
-import PremiumGiftingUtils from "PremiumGiftingUtils" /* 7707 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 7704 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 7747 (GiftIntentEmbed)
+import nativeDefault from "native" /* 587 */;
+import intl5 from "intl" /* 1126 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import UserUtilsDefault from "UserUtils" /* 4722 */;
+import AssetRegistryDefault from "AssetRegistry" /* 4832 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7605 */;
+import PremiumGiftingUtils from "PremiumGiftingUtils" /* 7751 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7752 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 7753 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 7748 */;
+import UserStore from "UserStore" /* 1377 */;
+import createStyles from "createStyles" /* 4890 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const GiftIntentType = fn(1374).GiftIntentType;
-const createStyles = fn(4845);
-let closure_6 = createStyles.createNativeStyleProperties({ headerTextColor: nativeDefault.colors.TEXT_STRONG, subHeaderTextColor: nativeDefault.colors.TEXT_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderColor: nativeDefault.colors.BORDER_MUTED });
-const size = fn(2);
+const GiftIntentType = PremiumConstants.GiftIntentType;
+let obj = { headerTextColor: nativeDefault.colors.TEXT_STRONG, subHeaderTextColor: nativeDefault.colors.TEXT_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderColor: nativeDefault.colors.BORDER_MUTED };
+let closure_6 = createStyles.createNativeStyleProperties(obj);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/GiftIntentEmbed.tsx");
 
 export const createGiftIntentEmbed = function createGiftIntentEmbed(message, theme) {
+  let giftIntentType;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let items;
+  let obj3;
+  let obj5;
+  let obj6;
+  let obj7;
+  let recipientUserId;
   const giftingPrompt = message.giftingPrompt;
   if (null == giftingPrompt) {
     return null;
   } else {
     ({ giftIntentType, recipientUserId } = giftingPrompt);
     const user = UserStore.getUser(recipientUserId);
+    const obj8 = UserStore;
     if (null == user) {
       return null;
     } else {
-      const name = UserUtilsDefault.getName(user);
+      let tmp;
+      const obj10 = UserUtilsDefault;
+      const name = obj10.getName(user);
       if (GiftIntentType.FRIEND_ANNIVERSARY === giftIntentType) {
-        const obj = { headerText: null, subHeaderParts: null };
-        const intl = util.intl;
-        obj.headerText = intl.string(util.t.CeQIwZ);
-        const obj2 = { text: null };
-        const intl2 = util.intl;
-        const obj3 = { numberOfYears: tmp12 };
-        obj2.text = intl2.formatToPlainString(util.t.PpG27s, obj3);
-        const items = [obj2];
-        obj.subHeaderParts = items;
-        let tmp = obj;
+        const obj = { headerText: intl.string(intl5.t.CeQIwZ), subHeaderParts: items };
+        intl = intl5.intl;
+        const obj2 = { text: intl2.formatToPlainString(intl5.t.PpG27s, obj3) };
+        intl2 = intl5.intl;
+        items = [obj2];
+        tmp = obj;
+        obj3 = { numberOfYears: tmp12 };
       } else {
         tmp = null;
         if (tmp13.UNSPECIFIED !== giftIntentType) {
-          PremiumGiftingUtils.unhandledGiftIntent(giftIntentType);
+          const obj11 = PremiumGiftingUtils;
+          obj11.unhandledGiftIntent(giftIntentType);
           tmp = null;
         }
       }
@@ -60,22 +76,17 @@ export const createGiftIntentEmbed = function createGiftIntentEmbed(message, the
           const _HermesInternal = HermesInternal;
           combined1 = "" + currentUser.getAvatarURL(undefined, 40);
         }
-        const obj9 = { recipientAvatarUrl: combined, currentUserAvatarUrl: combined1, recipientName: name, headerText: null, subHeaderParts: null, recipientUserId: null, giftIntentType: null, headerTextColor: null, subHeaderTextColor: null, backgroundColor: null, borderColor: null, subHeaderIconUrl: null, primaryCtaLabel: null, primaryCtaIconUrl: null, secondaryCtaIconUrl: null, secondaryCtaAccessibilityLabel: null };
         ({ headerText: obj4.headerText, subHeaderParts: obj4.subHeaderParts } = tmp);
-        obj9.recipientUserId = recipientUserId;
-        obj9.giftIntentType = giftIntentType;
+        const obj9 = { recipientAvatarUrl: combined, currentUserAvatarUrl: combined1, recipientName: name, headerText: null, subHeaderParts: null, recipientUserId, giftIntentType, headerTextColor: null, subHeaderTextColor: null, backgroundColor: null, borderColor: null, subHeaderIconUrl: obj5.getAssetUriForEmbed(AssetRegistryDefault), primaryCtaLabel: intl3.string(intl5.t.ilhtIa), primaryCtaIconUrl: obj6.getAssetUriForEmbed(AssetRegistryDefault2), secondaryCtaIconUrl: obj7.getAssetUriForEmbed(AssetRegistryDefault3), secondaryCtaAccessibilityLabel: intl4.string(intl5.t.I5gL2H) };
         ({ headerTextColor: obj4.headerTextColor, subHeaderTextColor: obj4.subHeaderTextColor, backgroundColor: obj4.backgroundColor, borderColor: obj4.borderColor } = closure_6(theme));
-        const tmp6 = closure_6(theme);
-        obj9.subHeaderIconUrl = renderer_EmbedUtils.getAssetUriForEmbed(tmp8(4777));
-        const intl3 = util.intl;
-        obj9.primaryCtaLabel = intl3.string(util.t.ilhtIa);
-        obj9.primaryCtaIconUrl = renderer_EmbedUtils.getAssetUriForEmbed(tmp8(7708));
-        obj9.secondaryCtaIconUrl = renderer_EmbedUtils.getAssetUriForEmbed(tmp8(7709));
-        const intl4 = util.intl;
-        obj9.secondaryCtaAccessibilityLabel = intl4.string(util.t.I5gL2H);
+        closure_6(theme);
+        obj5 = renderer_EmbedUtils;
+        intl3 = intl5.intl;
+        obj6 = renderer_EmbedUtils;
+        obj7 = renderer_EmbedUtils;
+        intl4 = intl5.intl;
         return obj9;
       }
     }
-    obj8 = UserStore;
   }
 };

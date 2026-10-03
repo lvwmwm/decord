@@ -1,44 +1,42 @@
-// Module ID: 16821
-// Function ID: 16822
+// Module ID: 16909
+// Function ID: 16910
 // Name: getTrackFriendsListViewedData
-// Dependencies: [12389, 7248, 7244, 5779, 4508, 1074, 2021, 1385, 16822, 12390, 2]
+// Dependencies: [12328, 7146, 7142, 5440, 4519, 1085, 2028, 1390, 16910, 12329, 2]
 // Exports: default
 
-// Module 16821 (getTrackFriendsListViewedData)
-import FlagUtils from "FlagUtils" /* 1385 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12389 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12390 */;
-import getFriendStatusCountsDefault from "getFriendStatusCounts" /* 16822 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7248 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7244 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5779 */;
-import RelationshipStore from "RelationshipStore" /* 4508 */;
-import Constants from "Constants" /* 1074 */;
+// Module 16909 (getTrackFriendsListViewedData)
+import FlagUtils from "FlagUtils" /* 1390 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12328 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12329 */;
+import getFriendStatusCountsDefault from "getFriendStatusCounts" /* 16910 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7146 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7142 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5440 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
+let c9;
+let metroImportAll;
 const useContactSyncStore = ContactSyncPersistedStore.useContactSyncStore;
-({ PlatformTypes: closure_8, FriendDiscoveryFlags: closure_9 } = Constants);
+({ PlatformTypes: metroImportAll, FriendDiscoveryFlags: c9 } = Constants);
 const result = size.fileFinishedImporting("modules/app_analytics/track/friends_list_viewed/getTrackFriendsListViewedData.native.tsx");
 
 export default function getTrackFriendsListViewedData() {
-  const localAccount = ConnectedAccountsStore.getLocalAccount(constants.CONTACTS);
+  let obj4;
+  let upsellCTADismissed;
+  const localAccount = ConnectedAccountsStore.getLocalAccount(metroImportAll.CONTACTS);
   const FriendDiscoverySettings = UserSettings.FriendDiscoverySettings;
   const setting = FriendDiscoverySettings.getSetting();
-  const hasFlagResult = FlagUtils.hasFlag(setting, constants2.FIND_BY_PHONE);
+  const obj = FlagUtils;
+  const hasFlagResult = obj.hasFlag(setting, constants2.FIND_BY_PHONE);
+  const obj2 = FlagUtils;
+  const hasFlagResult1 = obj2.hasFlag(setting, constants2.FIND_BY_EMAIL);
   const suggestionCount = FriendSuggestionStore.getSuggestionCount();
-  const obj3 = { num_friends: RelationshipStore.getFriendCount() };
+  const obj3 = { num_friends: RelationshipStore.getFriendCount(), num_outgoing_requests: RelationshipStore.getOutgoingCount(), num_incoming_requests: RelationshipStore.getPendingCount(), num_game_friends: GameRelationshipStore.getGameFriendCount(), num_game_outgoing_requests: GameRelationshipStore.getPendingOutgoingCount(), num_game_incoming_requests: GameRelationshipStore.getPendingIncomingCount(), num_suggestions: suggestionCount, was_dismissed: upsellCTADismissed, contact_sync_is_enabled: obj4.isContactSyncEnabled(localAccount), is_discoverable_email: hasFlagResult1, is_discoverable_phone: hasFlagResult };
+  upsellCTADismissed = useContactSyncStore.getState().upsellCTADismissed;
   const merged = Object.assign(getFriendStatusCountsDefault());
-  obj3.num_outgoing_requests = RelationshipStore.getOutgoingCount();
-  obj3.num_incoming_requests = RelationshipStore.getPendingCount();
-  obj3.num_game_friends = GameRelationshipStore.getGameFriendCount();
-  obj3.num_game_outgoing_requests = GameRelationshipStore.getPendingOutgoingCount();
-  obj3.num_game_incoming_requests = GameRelationshipStore.getPendingIncomingCount();
-  obj3.num_suggestions = suggestionCount;
-  obj3.was_dismissed = useContactSyncStore.getState().upsellCTADismissed;
-  const hasFlagResult1 = FlagUtils.hasFlag(setting, constants2.FIND_BY_EMAIL);
-  obj3.contact_sync_is_enabled = ContactSyncUtils.isContactSyncEnabled(localAccount);
-  obj3.is_discoverable_email = hasFlagResult1;
-  obj3.is_discoverable_phone = hasFlagResult;
+  obj4 = ContactSyncUtils;
   return obj3;
 };

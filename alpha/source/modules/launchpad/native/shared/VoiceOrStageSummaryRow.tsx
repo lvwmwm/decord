@@ -1,84 +1,316 @@
-// Module ID: 17061
-// Function ID: 17062
+// Module ID: 17384
+// Function ID: 17385
 // Name: VoiceOrStageSummaryRow
-// Dependencies: [19, 17, 21, 4845, 576, 16725, 4841, 1177, 16720, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 16813, 4886, 1188, 16808, 2]
 
-// Module 17061 (VoiceOrStageSummaryRow)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import _modDef16720 from "module_16720" /* 16720 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 16725 */;
-import noop from "module_19" /* 19 */;
+// Module 17384 (VoiceOrStageSummaryRow)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 16813 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4845);
+let dependencyMap, num2, num3, obj1, obj10, obj11, obj12, obj8, obj9, str, str2, tmp13Result, tmp16, tmp17, tmp18, tmp20, tmp21, tmp5, tmp7;
+
+let closure_4;
+let hasOwnProperty;
+let tmp;
+const AssetRegistryDefault = tmp(16808);
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles((height) => {
-  const obj = { container: { flexDirection: "row", alignItems: "center", marginLeft: -2 }, overflowCircle: null, wrapper: null, badge: null, audienceBadge: null };
-  const size = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, borderRadius: nativeDefault.radii.round, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", height, width: height };
-  obj.overflowCircle = size;
-  obj.wrapper = { borderRadius: nativeDefault.radii.round, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderWidth: 2 };
-  const obj2 = { borderRadius: nativeDefault.radii.round, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderWidth: 2 };
-  obj.badge = { borderRadius: nativeDefault.radii.round, paddingHorizontal: 8, display: "flex", flexDirection: "row", alignItems: "center", height };
-  const obj3 = { borderRadius: nativeDefault.radii.round, paddingHorizontal: 8, display: "flex", flexDirection: "row", alignItems: "center", height };
-  obj.audienceBadge = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
+  const obj = { container: { flexDirection: "row", alignItems: "center", marginLeft: -2 }, overflowCircle: size, wrapper: { borderRadius: nativeDefault.radii.round, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderWidth: 2 }, badge: { borderRadius: nativeDefault.radii.round, paddingHorizontal: 8, display: "flex", flexDirection: "row", alignItems: "center", height }, audienceBadge: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER } };
+  size = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, borderRadius: nativeDefault.radii.round, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", height, width: height };
+  ({ borderRadius: nativeDefault.radii.round, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderWidth: 2 });
+  ({ borderRadius: nativeDefault.radii.round, paddingHorizontal: 8, display: "flex", flexDirection: "row", alignItems: "center", height });
+  ({ backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER });
   return obj;
 });
-let size = fn(2);
-const result = size.fileFinishedImporting("modules/launchpad/native/shared/VoiceOrStageSummaryRow.tsx");
-
-export default noop.memo(function VoiceOrStageSummaryRow(arg0) {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((audienceCount) => {
+  let first;
+  let guildId;
+  let items1;
+  let items3;
+  let items4;
+  let max;
+  let obj5;
+  let tmp10;
+  let tmp11;
+  let tmp9;
+  let users;
+  const tmp = guildId;
+  const tmp2 = first;
+  let obj = guildId(first[6]);
+  const cResult = obj.c(27);
+  ({ users, max, guildId } = audienceCount);
+  audienceCount = audienceCount.audienceCount;
+  let num = 5;
+  if (undefined !== max) {
+    num = max;
+  }
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp6 = num(tmp2[7])();
+    cResult[0] = tmp6;
+    first = tmp6;
+  } else {
+    first = cResult[0];
+  }
+  size = first.voiceOrStageSummaryRow.size;
+  const bound = Math.max(users.length - num, 0);
+  const tmp8 = closure_6(size);
+  let closure_4 = tmp8;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj2 = { height: size + 4 };
+    cResult[1] = obj2;
+    tmp9 = obj2;
+  } else {
+    tmp9 = cResult[1];
+  }
+  if (cResult[2] !== tmp8.container) {
+    let items = [tmp8.container, tmp9];
+    cResult[2] = tmp8.container;
+    cResult[3] = items;
+    tmp10 = items;
+  } else {
+    tmp10 = cResult[3];
+  }
+  if (cResult[4] === guildId) {
+    if (cResult[5] === num) {
+      if (cResult[6] === bound) {
+        if (cResult[7] === tmp8.overflowCircle) {
+          if (cResult[8] === tmp8.wrapper) {
+            if (cResult[9] === users) {
+              tmp11 = cResult[10];
+            }
+            if (cResult[17] === audienceCount) {
+              if (cResult[18] === tmp8.audienceBadge) {
+                if (cResult[19] === tmp8.badge) {
+                  if (cResult[20] === tmp8.wrapper) {
+                    let tmp14;
+                    if (cResult[21] === users.length) {
+                      tmp14 = cResult[22];
+                    }
+                    if (cResult[23] === tmp10) {
+                      if (cResult[24] === tmp11) {
+                        let tmp22;
+                        if (cResult[25] === tmp14) {
+                          tmp22 = cResult[26];
+                        }
+                        return tmp22;
+                      }
+                    }
+                    let obj3 = { style: tmp10, children: items1 };
+                    items1 = [tmp11, tmp14];
+                    const tmp25 = closure_5(bound, obj3);
+                    cResult[23] = tmp10;
+                    cResult[24] = tmp11;
+                    cResult[25] = tmp14;
+                    cResult[26] = tmp25;
+                    tmp22 = tmp25;
+                  }
+                }
+              }
+            }
+            let tmp15 = null;
+            let tmp17Result = null != audienceCount && audienceCount > 0;
+            if (tmp17Result) {
+              const items2 = [tmp8.wrapper, ];
+              const tmp19 = users.length > 0 && { marginLeft: -12 };
+              let obj4 = { style: items2, children: closure_5(tmp18, obj5) };
+              items2[1] = tmp19;
+              obj5 = { style: items3, children: items4 };
+              items3 = [, ];
+              ({ badge: arr3[0], audienceBadge: arr3[1] } = tmp8);
+              let obj6 = { size: tmp(tmp2[9]).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: num(tmp2[10]) };
+              const Icon = tmp(tmp2[9]).Icon;
+              items4 = [tmp17(Icon, obj6), ];
+              let obj7 = { variant: "text-sm/bold", style: { marginLeft: 4 }, children: audienceCount };
+              items4[1] = closure_4(tmp(tmp2[8]).Text, obj7);
+              tmp17Result = tmp17(tmp18, obj4);
+            }
+            cResult[17] = audienceCount;
+            cResult[18] = tmp8.audienceBadge;
+            cResult[19] = tmp8.badge;
+            cResult[20] = tmp8.wrapper;
+            cResult[21] = users.length;
+            cResult[22] = tmp17Result;
+            tmp14 = tmp17Result;
+          }
+        }
+      }
+    }
+  }
+  if (cResult[11] === guildId) {
+    if (cResult[12] === num) {
+      if (cResult[13] === bound) {
+        if (cResult[14] === tmp8.overflowCircle) {
+          let tmp12;
+          if (cResult[15] === tmp8.wrapper) {
+            tmp12 = cResult[16];
+          }
+          const mapped = users.map(tmp12);
+          cResult[4] = guildId;
+          cResult[5] = num;
+          cResult[6] = bound;
+          cResult[7] = tmp8.overflowCircle;
+          cResult[8] = tmp8.wrapper;
+          cResult[9] = users;
+          cResult[10] = mapped;
+          tmp11 = mapped;
+        }
+      }
+    }
+  }
+  class C {
+    constructor(arg0, arg1) {
+      if (arg1 >= max) {
+        return;
+      } else {
+        num3 = 1;
+        if (arg1 === tmp - 1) {
+          num = 0;
+          if (closure_3 > 0) {
+            items = [, ];
+            items[0] = closure_4.wrapper;
+            obj1 = 0 !== arg1;
+            tmp13 = jsx;
+            tmp14 = View;
+            tmp15 = closure_4;
+            if (obj1) {
+              obj1 = { marginLeft: -12 };
+            }
+            obj8 = { style: null, children: null };
+            items[1] = obj1;
+            obj8.style = items;
+            tmp16 = jsx;
+            tmp17 = View;
+            obj9 = { style: null, children: null };
+            obj9.style = tmp15.overflowCircle;
+            tmp18 = jsx;
+            tmp19 = closure_0;
+            tmp20 = closure_2;
+            obj10 = { variant: "text-xs/medium", children: null };
+            tmp21 = globalThis;
+            _HermesInternal = HermesInternal;
+            str = "+";
+            Text = closure_0(closure_2[8]).Text;
+            obj10.children = "+" + tmp2 + 1;
+            obj9.children = jsx(Text, obj10);
+            obj8.children = jsx(View, obj9);
+            str2 = "overflow";
+            tmp13Result = tmp13(tmp14, obj8, "overflow");
+          }
+          return tmp13Result;
+        }
+        tmp5 = closure_4;
+        items1 = [, ];
+        items1[0] = closure_4.wrapper;
+        num2 = 0;
+        obj = 0 !== arg1;
+        tmp3 = jsx;
+        tmp4 = View;
+        if (obj) {
+          obj = { marginLeft: -12 };
+        }
+        tmp6 = audienceCount;
+        obj11 = { style: null, children: null };
+        items1[1] = obj;
+        obj11.style = items1;
+        tmp7 = jsx;
+        tmp8 = closure_0;
+        tmp9 = closure_2;
+        obj12 = { user: null, guildId: null, size: null };
+        obj12.user = audienceCount;
+        tmp10 = guildId;
+        obj12.guildId = guildId;
+        tmp11 = closure_2;
+        obj12.size = closure_2.voiceOrStageSummaryRow.avatarSize;
+        obj11.children = jsx(closure_0(closure_2[9]).Avatar, obj12);
+        tmp13Result = tmp3(tmp4, obj11, arg1);
+      }
+      return;
+    }
+  }
+  cResult[11] = guildId;
+  cResult[12] = num;
+  cResult[13] = bound;
+  cResult[14] = tmp8.overflowCircle;
+  cResult[15] = tmp8.wrapper;
+  cResult[16] = C;
+  tmp12 = C;
+}) : ((arg0) => {
+  let audienceCount;
+  let closure_2;
+  let guildId;
+  let items;
+  let items1;
+  let items3;
+  let items4;
+  let max;
+  let obj4;
+  let users;
   ({ users, max } = arg0);
   if (max === undefined) {
     max = 5;
   }
   ({ guildId: importDefault, audienceCount } = arg0);
+  dependencyMap = undefined;
+  const tmp2 = dependencyMap;
+  const tmp = importDefault;
   let tmp3 = getLayoutStylesDefault();
   dependencyMap = tmp3;
-  const size = tmp3.voiceOrStageSummaryRow.size;
-  closure_3 = Math.max(users.length - max, 0);
+  size = tmp3.voiceOrStageSummaryRow.size;
+  let closure_3 = Math.max(users.length - max, 0);
   let tmp4 = closure_6(size);
-  closure_4 = tmp4;
-  let obj = { style: null, children: null };
-  let items = [tmp4.container, { height: size + 4 }];
-  obj.style = items;
-  let items1 = [
+  let closure_4 = tmp4;
+  let obj = { style: items, children: items1 };
+  items = [tmp4.container, ];
+  let obj2 = { height: size + 4 };
+  items[1] = obj2;
+  items1 = [
     users.map((user, index) => {
+      let Text;
+      let obj4;
+      let obj5;
+      let obj7;
       if (index < max) {
         if (index === tmp - 1) {
+          let tmp3Result;
           if (closure_3 > 0) {
             const items = [closure_4.wrapper, ];
             let obj2 = 0 !== index;
+            const tmp13 = React3;
+            const tmp14 = View;
+            const tmp15 = closure_4;
             if (obj2) {
               obj2 = { marginLeft: -12 };
             }
-            const obj3 = { style: null, children: null };
             items[1] = obj2;
-            obj3.style = items;
-            const obj4 = { style: closure_4.overflowCircle, children: null };
-            const obj5 = { variant: "text-xs/medium", children: null };
+            const obj3 = { style: items, children: React3(View, obj4) };
+            obj4 = { style: tmp15.overflowCircle, children: React3(Text, obj5) };
             const _HermesInternal = HermesInternal;
-            obj5.children = "+" + tmp2 + 1;
-            obj4.children = React4(Text_Text.Text, obj5);
-            obj3.children = React4(View, obj4);
-            let tmp3Result = React4(View, obj3, "overflow");
+            obj5 = { variant: "text-xs/medium", children: "+" + tmp2 + 1 };
+            Text = Text_Text.Text;
+            tmp3Result = tmp13(tmp14, obj3, "overflow");
           }
           return tmp3Result;
         }
         const items1 = [closure_4.wrapper, ];
         let obj = 0 !== index;
+        const tmp3 = React3;
+        const tmp4 = View;
         if (obj) {
           obj = { marginLeft: -12 };
         }
-        const obj6 = { style: null, children: null };
         items1[1] = obj;
-        obj6.style = items1;
-        const obj7 = { user, guildId, size: closure_2.voiceOrStageSummaryRow.avatarSize };
-        obj6.children = React4(native.Avatar, obj7);
-        tmp3Result = React4(View, obj6, index);
+        const obj6 = { style: items1, children: React3(native.Avatar, obj7) };
+        obj7 = { user, guildId: importDefault, size: closure_2.voiceOrStageSummaryRow.avatarSize };
+        tmp3Result = tmp3(tmp4, obj6, index);
       }
     }),
 
@@ -86,23 +318,23 @@ export default noop.memo(function VoiceOrStageSummaryRow(arg0) {
   let tmp8Result = null != audienceCount && audienceCount > 0;
   if (tmp8Result) {
     const items2 = [tmp4.wrapper, ];
-    let obj3 = { style: null, children: null };
-    items2[1] = users.length > 0 && { marginLeft: -12 };
-    obj3.style = items2;
-    let obj4 = { style: null, children: null };
-    const items3 = [, ];
-    ({ badge: arr4[0], audienceBadge: arr4[1] } = tmp4);
-    obj4.style = items3;
-    let obj5 = { size: max(1177).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: _modDef16720 };
-    const items4 = [closure_4(max(1177).Icon, obj5), ];
-    let obj6 = { variant: "text-sm/bold", style: { marginLeft: 4 }, children: audienceCount };
-    items4[1] = closure_4(max(4841).Text, obj6);
-    obj4.children = items4;
-    obj3.children = tmp5(tmp6, obj4);
-    tmp8Result = tmp8(tmp6, obj3);
     const tmp9 = users.length > 0 && { marginLeft: -12 };
+    let obj3 = { style: items2, children: tmp5(tmp6, obj4) };
+    items2[1] = tmp9;
+    obj4 = { style: items3, children: items4 };
+    items3 = [, ];
+    ({ badge: arr4[0], audienceBadge: arr4[1] } = tmp4);
+    let obj5 = { size: max(1188).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: AssetRegistryDefault };
+    const Icon = max(1188).Icon;
+    items4 = [tmp8(Icon, obj5), ];
+    let obj6 = { variant: "text-sm/bold", style: { marginLeft: 4 }, children: audienceCount };
+    items4[1] = closure_4(max(4886).Text, obj6);
+    tmp8Result = tmp8(tmp6, obj3);
   }
   items1[1] = tmp8Result;
-  obj.children = items1;
   return closure_5(closure_3, obj);
-});
+}));
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/launchpad/native/shared/VoiceOrStageSummaryRow.tsx");
+
+export default memoResult;

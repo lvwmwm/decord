@@ -1,26 +1,68 @@
-// Module ID: 14688
-// Function ID: 14689
+// Module ID: 14744
+// Function ID: 14745
 // Name: AuthorizedAppScreen
-// Dependencies: [19, 21, 6601, 1485, 14689, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 6490, 1490, 14745, 2]
 
-// Module 14688 (AuthorizedAppScreen)
-import useNavigation from "useNavigation" /* 1485 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6601 */;
-import UserSettingsAuthedAppDefault from "UserSettingsAuthedApp" /* 14689 */;
-import noop from "module_19" /* 19 */;
+// Module 14744 (AuthorizedAppScreen)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import useNavigation from "useNavigation" /* 1490 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6490 */;
+import UserSettingsAuthedAppDefault from "UserSettingsAuthedApp" /* 14745 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/authorized_apps/native/AuthorizedAppScreen.tsx");
-
-export default function AuthorizedAppScreen() {
-  const settingNavigationRoute = useSettingNavigationRoute.useSettingNavigationRoute();
-  const stackNavigation = useNavigation.useStackNavigation();
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let obj = react2;
+  const cResult = obj.c(6);
+  const obj2 = useSettingNavigationRoute;
+  const settingNavigationRoute = obj2.useSettingNavigationRoute();
+  const obj3 = useNavigation;
+  const stackNavigation = obj3.useStackNavigation();
+  if (cResult[0] === stackNavigation) {
+    let tmp5;
+    let tmp6;
+    let tmp9;
+    if (cResult[1] === settingNavigationRoute.params.oauth2Token.application.name) {
+      tmp5 = cResult[2];
+      tmp6 = cResult[3];
+    }
+    const layoutEffect = react.useLayoutEffect(tmp5, tmp6);
+    if (cResult[4] !== settingNavigationRoute.params.oauth2Token) {
+      const tmp12 = jsx(UserSettingsAuthedAppDefault, { oauth2Token: settingNavigationRoute.params.oauth2Token });
+      cResult[4] = settingNavigationRoute.params.oauth2Token;
+      cResult[5] = tmp12;
+      tmp9 = tmp12;
+    } else {
+      tmp9 = cResult[5];
+    }
+    return tmp9;
+  }
+  const fn = function n() {
+    const obj = { title: settingNavigationRoute.params.oauth2Token.application.name, headerShown: true };
+    stackNavigation.setOptions(obj);
+  };
   const items = [stackNavigation, settingNavigationRoute.params.oauth2Token.application.name];
-  const layoutEffect = noop.useLayoutEffect(() => {
-    stackNavigation.setOptions({ title: settingNavigationRoute.params.oauth2Token.application.name, headerShown: true });
+  cResult[0] = stackNavigation;
+  cResult[1] = settingNavigationRoute.params.oauth2Token.application.name;
+  cResult[2] = fn;
+  cResult[3] = items;
+  tmp6 = items;
+  tmp5 = fn;
+}) : (() => {
+  let obj = useSettingNavigationRoute;
+  const settingNavigationRoute = obj.useSettingNavigationRoute();
+  const obj2 = useNavigation;
+  const stackNavigation = obj2.useStackNavigation();
+  const items = [stackNavigation, settingNavigationRoute.params.oauth2Token.application.name];
+  const layoutEffect = react.useLayoutEffect(() => {
+    const obj = { title: settingNavigationRoute.params.oauth2Token.application.name, headerShown: true };
+    stackNavigation.setOptions(obj);
   }, items);
   return jsx(UserSettingsAuthedAppDefault, { oauth2Token: settingNavigationRoute.params.oauth2Token });
-};
+});
+const result = size.fileFinishedImporting("modules/user_settings/authorized_apps/native/AuthorizedAppScreen.tsx");
+
+export default tmp2;

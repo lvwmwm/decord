@@ -1,11 +1,11 @@
-// Module ID: 9658
-// Function ID: 9659
+// Module ID: 9687
+// Function ID: 9688
 // Name: VoiceActionUtils
-// Dependencies: [9290, 2]
+// Dependencies: [9299, 2]
 // Exports: createDeafHandler, createMuteHandler
 
-// Module 9658 (VoiceActionUtils)
-import CallsUtils from "CallsUtils" /* 9290 */;
+// Module 9687 (VoiceActionUtils)
+import CallsUtils from "CallsUtils" /* 9299 */;
 import size from "module_2" /* 2 */;
 
 function NOOP() {
@@ -16,6 +16,7 @@ const result = size.fileFinishedImporting("modules/video_calls/native/VoiceActio
 
 export { DominantMuteState };
 export const createMuteHandler = function createMuteHandler(muteStates, stateFromStores) {
+  let onPress;
   let flag = stateFromStores;
   if (stateFromStores === undefined) {
     flag = false;
@@ -25,7 +26,7 @@ export const createMuteHandler = function createMuteHandler(muteStates, stateFro
     dominantMuteState = tmp.SELF_MUTE;
   }
   if (flag) {
-    let onPress = NOOP;
+    onPress = NOOP;
   } else {
     onPress = CallsUtils.handleToggleSelfMute;
   }

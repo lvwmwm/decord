@@ -1,46 +1,57 @@
-// Module ID: 15745
-// Function ID: 15746
+// Module ID: 15808
+// Function ID: 15809
 // Name: ParentalControlsUseDataToImproveDiscordSetting
-// Dependencies: [7145, 7590, 1074, 7147, 14565, 11215, 1115, 2]
+// Dependencies: [7048, 7634, 1085, 7050, 558, 14621, 11129, 1126, 2]
 
-// Module 15745 (ParentalControlsUseDataToImproveDiscordSetting)
-import util from "util" /* 1115 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7147 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14565 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7145 */;
+// Module 15808 (ParentalControlsUseDataToImproveDiscordSetting)
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7050 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14621 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7048 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Consents = fn(1074).Consents;
-const SettingBuilders = fn(11215);
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const Consents = Constants.Consents;
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.XuADY2);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.XuADY2);
   },
-  parent: fn(7590).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
-  useValue: function useDataToImproveDiscordSettingValue() {
-    return useParentalControlSettings.useParentalControlledConsent(Consents.USAGE_STATISTICS).hasConsented;
+  parent: MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  useValue: () => {
+    const obj = useParentalControlSettings;
+    return obj.useParentalControlledConsent(Consents.USAGE_STATISTICS).hasConsented;
   },
   onValueChange: function handleUsageStatisticsChange(arg0) {
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
     if (null != selectedTeenId) {
-      if (arg0) {
+      let items1;
+      let items2;
+      const tmp2 = arg0;
+      if (tmp2) {
         const items = [Consents.USAGE_STATISTICS];
-        let items1 = items;
+        items1 = items;
       } else {
         items1 = [];
       }
       if (arg0) {
-        let items2 = [];
+        items2 = [];
       } else {
         items2 = [Consents.USAGE_STATISTICS];
       }
-      FamilyCenterActionCreatorsDefault.updateTeenConsents(selectedTeenId, items1, items2);
+      const obj = FamilyCenterActionCreatorsDefault;
+      obj.updateTeenConsents(selectedTeenId, items1, items2);
     }
   },
   unsearchable: true
-});
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsUseDataToImproveDiscordSetting.tsx");
+};
+const toggle = SettingBuilders.createToggle(obj);
+const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsUseDataToImproveDiscordSetting.tsx");
 
 export default toggle;

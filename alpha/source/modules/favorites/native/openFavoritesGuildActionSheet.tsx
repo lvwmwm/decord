@@ -1,21 +1,24 @@
-// Module ID: 15984
-// Function ID: 15985
+// Module ID: 16058
+// Function ID: 16059
 // Name: openFavoritesGuildActionSheet
-// Dependencies: [4809, 15985, 1981, 2]
+// Dependencies: [4854, 16059, 1987, 2]
 // Exports: default
 
-// Module 15984 (openFavoritesGuildActionSheet)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
+// Module 16058 (openFavoritesGuildActionSheet)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
 import size from "module_2" /* 2 */;
 
 const FavoritesGuildActionSheet = "FavoritesGuildActionSheet";
 const result = size.fileFinishedImporting("modules/favorites/native/openFavoritesGuildActionSheet.tsx");
 
 export default function openFavoritesGuildActionSheet() {
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15985, dependencyMap.paths), FavoritesGuildActionSheet, {
+  let obj = ActionSheetActionCreatorsDefault;
+  const obj2 = {
     onClose() {
-      ActionSheetActionCreatorsDefault.hideActionSheet(FavoritesGuildActionSheet);
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet(FavoritesGuildActionSheet);
     }
-  });
+  };
+  obj.openLazy(asyncRequire(16059, dependencyMap.paths), FavoritesGuildActionSheet, obj2);
 };

@@ -1,32 +1,71 @@
-// Module ID: 9074
-// Function ID: 9075
+// Module ID: 9106
+// Function ID: 9107
 // Name: SurfaceDirectRendererExperiment
-// Dependencies: [502, 1435, 504, 2]
-// Exports: isSurfaceDirectRendererExperimentEnabled, useSurfaceDirectRendererExperiment
+// Dependencies: [502, 1440, 558, 576, 504, 2]
+// Exports: isSurfaceDirectRendererExperimentEnabled
 
-// Module 9074 (SurfaceDirectRendererExperiment)
+// Module 9106 (SurfaceDirectRendererExperiment)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const ApexExperiment = fn(1435);
-const obj2 = { kind: "user", name: "2026-03-surface-direct-renderer", defaultConfig: { enableSurfaceDirectRenderer: false }, variations: null };
-const obj3 = { 1: null };
-obj3[1] = { enableSurfaceDirectRenderer: true };
-obj2.variations = obj3;
-let closure_3 = ApexExperiment.createApexExperiment(obj2);
-const size = fn(2);
+let obj2;
+let obj = { kind: "user", name: "2026-03-surface-direct-renderer", defaultConfig: { enableSurfaceDirectRenderer: false }, variations: obj2 };
+obj2 = { 1: null };
+obj2[1] = { enableSurfaceDirectRenderer: true };
+let closure_3 = ApexExperiment.createApexExperiment(obj);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cResult) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  let tmp7;
+  _require = arg0;
+  const obj = require("react");
+  cResult = obj.c(4);
+  const enableSurfaceDirectRenderer = closure_3.useConfig(cResult).enableSurfaceDirectRenderer;
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AuthenticationStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function l() {
+      return closure_0 === AuthenticationStore.getId();
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  const tmp8 = null != arg0 && !tmpResult.useStateFromStores(first, tmp6, tmp7) && enableSurfaceDirectRenderer;
+  return tmp8;
+}) : ((arg0, cResult) => {
+  let closure_0;
+  _require = arg0;
+  const enableSurfaceDirectRenderer = closure_3.useConfig(cResult).enableSurfaceDirectRenderer;
+  const items = [AuthenticationStore];
+  const items1 = [arg0];
+  const obj = require("get initialized");
+  const tmp = null != arg0 && !obj.useStateFromStores(items, () => closure_0 === AuthenticationStore.getId(), items1) && enableSurfaceDirectRenderer;
+  return tmp;
+});
 const result = size.fileFinishedImporting("modules/video_calls/native/SurfaceDirectRendererExperiment.tsx");
 
 export const ANDROID_SURFACE_DIRECT_RENDERER_EXPERIMENT = "2026-03-surface-direct-renderer";
 export const isSurfaceDirectRendererExperimentEnabled = function isSurfaceDirectRendererExperimentEnabled() {
   return closure_3.getConfig({ location: "RTCConnection_media_engine_connect" }).enableSurfaceDirectRenderer;
 };
-export const useSurfaceDirectRendererExperiment = function useSurfaceDirectRendererExperiment(userId, location) {
-  _require = userId;
-  const items = [AuthenticationStore];
-  const items1 = [userId];
-  const obj = require("initialize");
-  return null != userId && !require("initialize").useStateFromStores(items, () => closure_0 === AuthenticationStore.getId(), items1) && closure_3.useConfig(location).enableSurfaceDirectRenderer;
-};
+export const useSurfaceDirectRendererExperiment = tmp2;

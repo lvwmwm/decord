@@ -1,16 +1,16 @@
-// Module ID: 13575
-// Function ID: 13576
+// Module ID: 13637
+// Function ID: 13638
 // Name: SpatialAudioForVoiceExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1440, 2]
 
-// Module 13575 (SpatialAudioForVoiceExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 13637 (SpatialAudioForVoiceExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-05-spatial-audio-for-voice", kind: "user", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+const obj = { name: "2026-05-spatial-audio-for-voice", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/voice_panel/SpatialAudioForVoiceExperiment.tsx");
 

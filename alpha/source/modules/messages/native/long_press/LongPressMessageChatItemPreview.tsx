@@ -1,27 +1,50 @@
-// Module ID: 11381
-// Function ID: 11382
+// Module ID: 11297
+// Function ID: 11298
 // Name: LongPressMessageChatItemPreview
-// Dependencies: [21, 4845, 576, 7547, 8299, 2]
-// Exports: default
+// Dependencies: [21, 4890, 587, 7591, 558, 576, 8303, 2]
 
-// Module 11381 (LongPressMessageChatItemPreview)
-import jsxProd from "jsxProd" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import RowGeneratorDefault from "RowGenerator" /* 7547 */;
-import ChatItemDefault from "ChatItem" /* 8299 */;
-import createStyles from "createStyles" /* 4845 */;
+// Module 11297 (LongPressMessageChatItemPreview)
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import RowGeneratorDefault from "RowGenerator" /* 7591 */;
+import ChatItemDefault from "ChatItem" /* 8303 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const jsx = jsxProd.jsx;
-let obj = { chatItem: { maxHeight: 2 * nativeDefault.space.PX_80 } };
-let closure_3 = createStyles.createStyles(obj);
-const obj2 = { maxHeight: 2 * nativeDefault.space.PX_80 };
-const rowGenerator = new RowGeneratorDefault();
+let message;
+
+let obj2;
+const jsx = Fragment.jsx;
+let obj = { chatItem: obj2 };
+obj2 = { maxHeight: 2 * nativeDefault.space.PX_80 };
+let closure_4 = createStyles.createStyles(obj);
+const tmp2 = new RowGeneratorDefault();
+const rowGenerator = tmp2;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+  const obj = react;
+  const cResult = obj.c(3);
+  message = message.message;
+  const tmp3 = closure_4();
+  if (cResult[0] === message) {
+    let tmp4;
+    if (cResult[1] === tmp3.chatItem.maxHeight) {
+      tmp4 = cResult[2];
+    }
+    return tmp4;
+  }
+  ChatItemDefault;
+  const tmp6 = <tmp5 rowGenerator={rowGenerator} message={message} maxHeight={tmp3.chatItem.maxHeight} backgroundColor={nativeDefault.colors.MOBILE_ALERT_BACKGROUND_DEFAULT} pointerEvents="none" />;
+  cResult[0] = message;
+  cResult[1] = tmp3.chatItem.maxHeight;
+  cResult[2] = tmp6;
+  tmp4 = tmp6;
+}) : ((message) => {
+  message = message.message;
+  ChatItemDefault;
+  return <tmp2 rowGenerator={rowGenerator} message={message} maxHeight={closure_4().chatItem.maxHeight} backgroundColor={nativeDefault.colors.MOBILE_ALERT_BACKGROUND_DEFAULT} pointerEvents="none" />;
+});
 const result = size.fileFinishedImporting("modules/messages/native/long_press/LongPressMessageChatItemPreview.tsx");
 
-export default function LongPressMessageChatItemPreview(message) {
-  const obj = { rowGenerator, message: message.message, maxHeight: closure_3().chatItem.maxHeight, backgroundColor: null, pointerEvents: "none" };
-  const tmp = closure_3();
-  obj.backgroundColor = nativeDefault.colors.MOBILE_ALERT_BACKGROUND_DEFAULT;
-  return jsx(ChatItemDefault, { rowGenerator, message: message.message, maxHeight: closure_3().chatItem.maxHeight, backgroundColor: null, pointerEvents: "none" });
-};
+export default tmp3;

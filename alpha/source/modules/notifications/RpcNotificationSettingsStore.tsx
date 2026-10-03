@@ -1,45 +1,45 @@
-// Module ID: 9741
-// Function ID: 9742
+// Module ID: 12471
+// Function ID: 12472
 // Name: RpcNotificationSettingsStore
-// Dependencies: [502, 504, 573, 2]
+// Dependencies: [502, 504, 584, 2]
 
-// Module 9741 (RpcNotificationSettingsStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 12471 (RpcNotificationSettingsStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import size from "module_2" /* 2 */;
 
-let closure_1 = {};
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class RpcNotificationSettingsStore extends Store {
+  initialize() {
+    this.waitFor(AuthenticationStore);
+  }
+  areSlayerNotificationsSuppressed() {
+    for (const key10002 in closure_1) {
+      if (closure_1[key10002] !== AuthenticationStore.getId()) {
+        continue;
+      } else {
+        let flag = true;
+        return true;
+      }
+    }
+    return false;
+  }
 }
 const prototype = RpcNotificationSettingsStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.waitFor(AuthenticationStore);
-};
-prototype["areSlayerNotificationsSuppressed"] = function areSlayerNotificationsSuppressed() {
-  for (const key10002 in closure_1) {
-    if (closure_1[key10002] !== AuthenticationStore.getId()) {
-      continue;
-    } else {
-      let flag = true;
-      return true;
-    }
-  }
-  return false;
-};
 RpcNotificationSettingsStore.displayName = "RpcNotificationSettingsStore";
-const rpcNotificationSettingsStore = new RpcNotificationSettingsStore(DispatcherDefault, {
+const obj = {
   RPC_APP_DISCONNECTED: function handleRpcAppDisconnected(arg0) {
-    delete tmp2[tmp];
+    delete closure_1[arg0.socketId];
   },
   SET_RPC_NOTIFICATION_SETTINGS: function handleSetRpcNotificationSettings(suppressNotifications) {
-    delete tmp2[tmp];
+    delete closure_1[suppressNotifications.socketId];
     if (suppressNotifications.suppressNotifications) {
       closure_1[suppressNotifications.socketId] = suppressNotifications.targetUserId;
     }
   }
-});
-const size = fn(2);
+};
+const rpcNotificationSettingsStore = new RpcNotificationSettingsStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/notifications/RpcNotificationSettingsStore.tsx");
 
 export default rpcNotificationSettingsStore;

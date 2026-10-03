@@ -1,27 +1,61 @@
-// Module ID: 15997
-// Function ID: 15998
+// Module ID: 16071
+// Function ID: 16072
 // Name: FavoritesGuildHeaderActions
-// Dependencies: [19, 21, 15998, 7536, 6179, 10979, 15999, 2]
-// Exports: FavoritesGuildHeaderActionButton
+// Dependencies: [19, 21, 558, 576, 16072, 6018, 10979, 16073, 7575, 2]
 
-// Module 15997 (FavoritesGuildHeaderActions)
-import IconButton from "IconButton" /* 7536 */;
-import useFavoritesGuildHeaderActionDefault from "useFavoritesGuildHeaderAction" /* 15998 */;
-import FavoritesGuildAddActionSheet from "FavoritesGuildAddActionSheet" /* 15999 */;
-import noop from "module_19" /* 19 */;
+// Module 16071 (FavoritesGuildHeaderActions)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import IconButton2 from "IconButton" /* 7575 */;
+import useFavoritesGuildHeaderActionDefault from "useFavoritesGuildHeaderAction" /* 16072 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/favorites/native/FavoritesGuildHeaderActions.tsx");
-
-export const FavoritesGuildHeaderActionButton = function FavoritesGuildHeaderActionButton() {
+let tmp5;
+const FavoritesGuildAddActionSheet = tmp5(16073);
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let exitPreview;
+  let isPreview;
+  let label;
+  const obj = react2;
+  const cResult = obj.c(4);
+  ({ isPreview, label, exitPreview } = useFavoritesGuildHeaderActionDefault());
+  useFavoritesGuildHeaderActionDefault();
+  const tmp4Result = importDefault(isPreview ? 6018 : 10979);
+  if (!isPreview) {
+    exitPreview = tmp(16073).openFavoritesGuildAddActionSheet;
+  }
+  if (cResult[0] === label) {
+    if (cResult[1] === tmp4Result) {
+      let tmp7;
+      if (cResult[2] === exitPreview) {
+        tmp7 = cResult[3];
+      }
+      return tmp7;
+    }
+  }
+  const tmp8 = jsx(IconButton2.IconButton, { variant: "secondary", size: "sm", icon: tmp4Result, onPress: exitPreview, accessibilityLabel: label, maxFontSizeMultiplier: 1 });
+  cResult[0] = label;
+  cResult[1] = tmp4Result;
+  cResult[2] = exitPreview;
+  cResult[3] = tmp8;
+  tmp7 = tmp8;
+}) : (() => {
+  let exitPreview;
+  let isPreview;
+  let label;
   ({ isPreview, exitPreview, label } = useFavoritesGuildHeaderActionDefault());
-  const obj = { variant: "secondary", size: "sm", icon: importDefault(isPreview ? 6179 : 10979), onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 1 };
+  const obj = { variant: "secondary", size: "sm", icon: importDefault(isPreview ? 6018 : 10979), onPress: exitPreview, accessibilityLabel: label, maxFontSizeMultiplier: 1 };
+  useFavoritesGuildHeaderActionDefault();
+  const IconButton = IconButton2.IconButton;
+  const tmp4 = jsx;
   if (!isPreview) {
     exitPreview = FavoritesGuildAddActionSheet.openFavoritesGuildAddActionSheet;
   }
-  obj.onPress = exitPreview;
-  obj.accessibilityLabel = label;
-  return jsx(IconButton.IconButton, { variant: "secondary", size: "sm", icon: importDefault(isPreview ? 6179 : 10979), onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 1 });
-};
+  return tmp4(IconButton, obj);
+});
+const result = size.fileFinishedImporting("modules/favorites/native/FavoritesGuildHeaderActions.tsx");
+
+export const FavoritesGuildHeaderActionButton = tmp3;

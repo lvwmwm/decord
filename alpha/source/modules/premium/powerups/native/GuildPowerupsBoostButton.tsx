@@ -1,48 +1,251 @@
-// Module ID: 12294
-// Function ID: 12295
+// Module ID: 12246
+// Function ID: 12247
 // Name: GuildPowerupsBoostButton
-// Dependencies: [19, 2066, 1372, 7010, 1074, 21, 504, 7000, 1380, 5932, 7009, 2]
-// Exports: GuildPowerupsBoostButton
+// Dependencies: [19, 2074, 1377, 6908, 1085, 21, 558, 576, 504, 6898, 1385, 5612, 6907, 2]
 
-// Module 12294 (GuildPowerupsBoostButton)
-import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import UserStore from "UserStore" /* 1372 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7010 */;
+// Module 12246 (GuildPowerupsBoostButton)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1085 */;
+import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 6898 */;
+import react from "react" /* 19 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import UserStore from "UserStore" /* 1377 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 6908 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const AnalyticsSections = fn(1074).AnalyticsSections;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBoostButton.tsx");
-
-export const GuildPowerupsBoostButton = function GuildPowerupsBoostButton(guildId) {
+let tmp13;
+const GuildBoostingSubscribeButtonDefault = tmp13(6907);
+const AnalyticsSections = Constants.AnalyticsSections;
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let boostSlots;
+  let currentUser;
+  let first;
+  let tmp11;
+  let tmp15;
+  let tmp16;
+  let tmp6;
+  let tmp8;
+  let tmp9;
+  let obj = guildId(576);
+  const cResult = obj.c(16);
   guildId = guildId.guildId;
-  let items = [GuildStore];
-  const stateFromStores = guildId(504).useStateFromStores(items, () => GuildStore.getGuild(guildId));
-  let obj = guildId(504);
-  const tmp = guildId;
-  const items1 = [GuildBoostSlotStore];
-  const stateFromStores1 = guildId(504).useStateFromStores(items1, () => boostSlots.boostSlots);
-  let obj2 = guildId(504);
-  const tmp5 = stateFromStores1;
-  const tmp6 = stateFromStores1(7000)({ forceFetch: true });
-  const items2 = [UserStore];
-  const stateFromStores2 = guildId(504).useStateFromStores(items2, () => currentUser.getCurrentUser());
-  if (null != stateFromStores2) {
-    let UNSPECIFIED = stateFromStores2.premiumGroupRole;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [GuildStore];
+    cResult[0] = items;
+    first = items;
   } else {
-    UNSPECIFIED = tmp(1380).PremiumSubscriptionGroupRole.UNSPECIFIED;
+    first = cResult[0];
+  }
+  if (cResult[1] !== guildId) {
+    class S {
+      constructor() {
+        return GuildStore.getGuild(guildId);
+      }
+    }
+    cResult[1] = guildId;
+    cResult[2] = S;
+    tmp6 = S;
+  } else {
+    class S {
+      constructor() {
+        return GuildStore.getGuild(guildId);
+      }
+    }
+  }
+  const tmpResult = guildId(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        return GuildStore.getGuild(guildId);
+      }
+    }
+    const items1 = [GuildBoostSlotStore];
+    const fn = function _() {
+      return boostSlots.boostSlots;
+    };
+    cResult[3] = items1;
+    cResult[4] = fn;
+    tmp9 = fn;
+    tmp8 = items1;
+  } else {
+    class S {
+      constructor() {
+        return GuildStore.getGuild(guildId);
+      }
+    }
+    tmp9 = cResult[4];
+  }
+  const tmpResult3 = guildId(504);
+  const stateFromStores1 = tmpResult3.useStateFromStores(tmp8, tmp9);
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        return GuildStore.getGuild(guildId);
+      }
+    }
+    cResult[5] = tmp12;
+    tmp11 = tmp12;
+  } else {
+    class S {
+      constructor() {
+        return GuildStore.getGuild(guildId);
+      }
+    }
+  }
+  const tmp14 = useFractionalPremiumInfoDefault(tmp11);
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        return GuildStore.getGuild(guildId);
+      }
+    }
+    const items2 = [UserStore];
+    class E {
+      constructor() {
+        return currentUser.getCurrentUser();
+      }
+    }
+    cResult[6] = items2;
+    cResult[7] = E;
+    tmp16 = E;
+    tmp15 = items2;
+  } else {
+    class S {
+      constructor() {
+        return GuildStore.getGuild(guildId);
+      }
+    }
+    tmp16 = cResult[7];
+  }
+  const tmpResult4 = guildId(504);
+  const stateFromStores2 = tmpResult4.useStateFromStores(tmp15, tmp16);
+  if (null != stateFromStores2) {
+    class S {
+      constructor() {
+        return GuildStore.getGuild(guildId);
+      }
+    }
+  } else {
+    class S {
+      constructor() {
+        return GuildStore.getGuild(guildId);
+      }
+    }
+  }
+  if (cResult[8] !== stateFromStores1) {
+    class S {
+      constructor() {
+        return GuildStore.getGuild(guildId);
+      }
+    }
+    const values = Object.values(stateFromStores1);
+    const found = values.find((isAvailable) => isAvailable.isAvailable());
+    class E {
+      constructor() {
+        return currentUser.getCurrentUser();
+      }
+    }
+    cResult[8] = stateFromStores1;
+    cResult[9] = found;
+  } else {
+    class S {
+      constructor() {
+        return GuildStore.getGuild(guildId);
+      }
+    }
+  }
+  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+    class B {
+      constructor(guildId, arg1) {
+        let items;
+        if (null != arg1) {
+          const obj2 = { guildBoostSlots: items, guildId };
+          items = [arg1];
+          const obj = guildId(dependencyMap[11]);
+          obj.openTransferModal(obj2);
+        }
+      }
+    }
+    cResult[10] = B;
+    class E {
+      constructor() {
+        return currentUser.getCurrentUser();
+      }
+    }
+  } else {
+    class B {
+      constructor(guildId, arg1) {
+        let items;
+        if (null != arg1) {
+          const obj2 = { guildBoostSlots: items, guildId };
+          items = [arg1];
+          const obj = guildId(dependencyMap[11]);
+          obj.openTransferModal(obj2);
+        }
+      }
+    }
+  }
+  if (null != stateFromStores) {
+    class B {
+      constructor(guildId, arg1) {
+        let items;
+        if (null != arg1) {
+          const obj2 = { guildBoostSlots: items, guildId };
+          items = [arg1];
+          const obj = guildId(dependencyMap[11]);
+          obj.openTransferModal(obj2);
+        }
+      }
+    }
+    class E {
+      constructor() {
+        return currentUser.getCurrentUser();
+      }
+    }
+    cResult[11] = tmp14.fractionalState;
+    cResult[12] = stateFromStores;
+    cResult[13] = tmp18;
+    cResult[14] = tmp19;
+    cResult[15] = jsx(GuildBoostingSubscribeButtonDefault, { guild: null, previousGuildSubscriptionSlot: tmp19, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp14.fractionalState, onAvailableSlotPress: tmp21, premiumGroupRole: tmp18 });
+    const tmp25 = jsx(GuildBoostingSubscribeButtonDefault, { guild: null, previousGuildSubscriptionSlot: tmp19, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp14.fractionalState, onAvailableSlotPress: tmp21, premiumGroupRole: tmp18 });
+  }
+  return null;
+}) : ((guildId) => {
+  let UNSPECIFIED;
+  let boostSlots;
+  let currentUser;
+  guildId = guildId.guildId;
+  let obj = guildId(504);
+  let items = [GuildStore];
+  const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guildId));
+  let obj2 = guildId(504);
+  const items1 = [GuildBoostSlotStore];
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => boostSlots.boostSlots);
+  const items2 = [UserStore];
+  const tmp6 = stateFromStores1(6898)({ forceFetch: true });
+  const obj3 = guildId(504);
+  const stateFromStores2 = obj3.useStateFromStores(items2, () => currentUser.getCurrentUser());
+  const tmp = guildId;
+  const tmp5 = stateFromStores1;
+  if (null != stateFromStores2) {
+    UNSPECIFIED = stateFromStores2.premiumGroupRole;
+  } else {
+    UNSPECIFIED = tmp(1385).PremiumSubscriptionGroupRole.UNSPECIFIED;
   }
   const items3 = [stateFromStores1];
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     const values = Object.values(stateFromStores1);
     return values.find((isAvailable) => isAvailable.isAvailable());
   }, items3);
   let tmp10 = null;
   if (null != stateFromStores) {
-    const obj4 = { guild: stateFromStores, previousGuildSubscriptionSlot: memo, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp6.fractionalState, onAvailableSlotPress: tmp9, premiumGroupRole: UNSPECIFIED };
-    tmp10 = jsx(tmp5(7009), { guild: stateFromStores, previousGuildSubscriptionSlot: memo, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp6.fractionalState, onAvailableSlotPress: tmp9, premiumGroupRole: UNSPECIFIED });
+    tmp10 = jsx(tmp5(6907), { guild: stateFromStores, previousGuildSubscriptionSlot: memo, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp6.fractionalState, onAvailableSlotPress: tmp9, premiumGroupRole: UNSPECIFIED });
   }
   return tmp10;
-};
+});
+const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBoostButton.tsx");
+
+export const GuildPowerupsBoostButton = tmp2;

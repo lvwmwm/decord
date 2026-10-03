@@ -1,45 +1,44 @@
-// Module ID: 12853
-// Function ID: 12854
+// Module ID: 12907
+// Function ID: 12908
 // Name: VibegrationsWorkerTickets
-// Dependencies: [5, 1074, 1271, 12854, 2]
+// Dependencies: [5, 1085, 1282, 12908, 2]
 // Exports: mintRemixTicket, mintWorkerTicket
 
-// Module 12853 (VibegrationsWorkerTickets)
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+// Module 12907 (VibegrationsWorkerTickets)
+import Constants from "Constants" /* 1085 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let url;
+
 function mintTicket() {
-  const self = this;
-  const apply = closure_5.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 }
-let closure_5 = async function _mintTicket(url) {
-  c4 = 0;
-  c5 = 0;
-  return (async (arg0, value) => {
-    closure_3 = tmp5;
-    closure_2 = tmp2;
-    const HTTP = HTTPUtils.HTTP;
-    await HTTP.post({ url, rejectWithError: true });
-    const body = value.body;
-    const obj7 = { ticket: body.ticket, baseUrl: null };
-    const vibegrationsTunnelWorkerOrigin = closure_131_0(closure_131_1[3]).getVibegrationsTunnelWorkerOrigin();
-    url = vibegrationsTunnelWorkerOrigin;
-    if (vibegrationsTunnelWorkerOrigin == null) {
-      url = body.url;
-    }
-    obj7.baseUrl = url;
-    return obj7;
-  })();
+let obj = function _mintTicket() {
+  obj = _asyncToGenerator(async (url) => {
+    let closure_2;
+    let closure_3;
+    let c4 = 0;
+    let c5 = 0;
+    return (async (arg0, value) => {
+      const HTTP = HTTPUtils.HTTP;
+      const obj4 = { url, rejectWithError: true };
+      await HTTP.post(obj4);
+      const body = value.body;
+      const obj7 = { ticket: body.ticket, baseUrl: url };
+      const obj8 = closure_131_0(closure_131_1[3]);
+      const vibegrationsTunnelWorkerOrigin = obj8.getVibegrationsTunnelWorkerOrigin();
+      url = vibegrationsTunnelWorkerOrigin;
+      if (vibegrationsTunnelWorkerOrigin == null) {
+        url = body.url;
+      }
+      return obj7;
+    })();
+  });
+  return obj(...arguments);
 };
-const Endpoints = fn(1074).Endpoints;
-const size = fn(2);
+const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsWorkerTickets.tsx");
 
 export const mintWorkerTicket = function mintWorkerTicket(arg0) {

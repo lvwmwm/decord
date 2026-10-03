@@ -1,17 +1,18 @@
-// Module ID: 2091
-// Function ID: 2092
-// Name: StartupData
-// Dependencies: [2092, 2]
+// Module ID: 2096
+// Function ID: 2097
+// Name: react-native
+// Dependencies: [2097, 2]
 // Exports: getUserId, setUserId
 
-// Module 2091 (StartupData)
-import NativeAppDatabaseModuleDefault from "NativeAppDatabaseModule" /* 2092 */;
+// Module 2096 (react-native)
+import react_nativeDefault from "react-native" /* 2097 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_database/system/StartupData.native.tsx");
 
 export const getUserId = function getUserId() {
-  const userId = NativeAppDatabaseModuleDefault.getConstants().userId;
+  const obj = react_nativeDefault;
+  const userId = obj.getConstants().userId;
   let tmp = null;
   if (null != userId) {
     tmp = userId;
@@ -19,5 +20,6 @@ export const getUserId = function getUserId() {
   return tmp;
 };
 export const setUserId = function setUserId(id) {
-  NativeAppDatabaseModuleDefault.setUserId(id);
+  const obj = react_nativeDefault;
+  obj.setUserId(id);
 };

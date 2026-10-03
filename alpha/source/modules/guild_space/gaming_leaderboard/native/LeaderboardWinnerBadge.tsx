@@ -1,42 +1,85 @@
-// Module ID: 10561
-// Function ID: 10562
+// Module ID: 10642
+// Function ID: 10643
 // Name: LeaderboardWinnerBadge
-// Dependencies: [19, 17, 2107, 21, 4845, 504, 10562, 8360, 576, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4890, 558, 576, 10643, 10644, 8364, 587, 2]
 
-// Module 10561 (LeaderboardWinnerBadge)
-import noop from "module_19" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2107 */;
+// Module 10642 (LeaderboardWinnerBadge)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import TrophyIcon2 from "TrophyIcon" /* 8364 */;
+import useActiveLeaderboardWinnerDataDefault from "useActiveLeaderboardWinnerData" /* 10643 */;
+import GuildLeaderboardUtils from "GuildLeaderboardUtils" /* 10644 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
-let closure_6 = createStyles.createStyles({ container: { marginLeft: 4 } });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_space/gaming_leaderboard/native/LeaderboardWinnerBadge.tsx");
-
-export default function LeaderboardWinnerBadge(guildId) {
-  guildId = guildId.guildId;
-  const userId = guildId.userId;
-  const tmp = closure_6();
-  const items = [GuildMemberStore];
-  const items1 = [guildId, userId];
-  const stateFromStores = guildId(504).useStateFromStores(items, () => {
-    const member = GuildMemberStore.getMember(guildId, userId);
-    let prop;
-    if (member != null) {
-      prop = member.gamingLeaderboardData;
+let tmp5;
+const nativeDefault = tmp5(587);
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let closure_5 = createStyles.createStyles({ container: { marginLeft: 4 } });
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let guildId;
+  let userId;
+  const obj = react2;
+  const cResult = obj.c(6);
+  ({ guildId, userId } = arg0);
+  const tmp4 = closure_5();
+  const tmp6 = useActiveLeaderboardWinnerDataDefault(guildId, userId);
+  if (null == tmp6) {
+    return null;
+  } else {
+    let tmp7;
+    let tmp10;
+    const container = tmp4.container;
+    if (cResult[0] !== tmp6) {
+      const tmpResult = GuildLeaderboardUtils;
+      const leaderboardWinnerBadgeText = tmpResult.getLeaderboardWinnerBadgeText(tmp6);
+      cResult[0] = tmp6;
+      cResult[1] = leaderboardWinnerBadgeText;
+      tmp7 = leaderboardWinnerBadgeText;
+    } else {
+      tmp7 = cResult[1];
     }
-    return prop;
-  }, items1);
+    const _Symbol = Symbol;
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+      const TrophyIcon = tmp(8364).TrophyIcon;
+      const tmp12 = <TrophyIcon size="xs" color={nativeDefault.colors.TEXT_FEEDBACK_WARNING} />;
+      cResult[2] = tmp12;
+      tmp10 = tmp12;
+    } else {
+      tmp10 = cResult[2];
+    }
+    if (cResult[3] === tmp4.container) {
+      let tmp13;
+      if (cResult[4] === tmp7) {
+        tmp13 = cResult[5];
+      }
+      return tmp13;
+    }
+    const tmp16 = <View style={container} accessible accessibilityLabel={tmp7}>{tmp10}</View>;
+    cResult[3] = tmp4.container;
+    cResult[4] = tmp7;
+    cResult[5] = tmp16;
+    tmp13 = tmp16;
+  }
+}) : ((arg0) => {
+  let guildId;
+  let userId;
+  ({ guildId, userId } = arg0);
+  const tmp = closure_5();
+  const tmp4 = useActiveLeaderboardWinnerDataDefault(guildId, userId);
   let tmp5 = null;
-  if (null != stateFromStores) {
-    const obj2 = { style: tmp.container, accessible: true, accessibilityLabel: tmp2(10562).getLeaderboardWinnerBadgeText(stateFromStores), children: null };
-    const obj3 = { size: "xs", color: userId(576).colors.TEXT_FEEDBACK_WARNING };
-    obj2.children = jsx(tmp2(8360).TrophyIcon, { size: "xs", color: userId(576).colors.TEXT_FEEDBACK_WARNING });
-    tmp5 = <View style={tmp.container} accessible accessibilityLabel={tmp2(10562).getLeaderboardWinnerBadgeText(stateFromStores)}>{null}</View>;
-    const tmp2Result = tmp2(10562);
+  if (null != tmp4) {
+    const obj2 = GuildLeaderboardUtils;
+    ({ size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_WARNING });
+    const TrophyIcon = TrophyIcon2.TrophyIcon;
+    tmp5 = <View style={tmp.container} accessible accessibilityLabel={obj2.getLeaderboardWinnerBadgeText(tmp4)}>{null}</View>;
   }
   return tmp5;
-};
+});
+const result = size.fileFinishedImporting("modules/guild_space/gaming_leaderboard/native/LeaderboardWinnerBadge.tsx");
+
+export default tmp3;

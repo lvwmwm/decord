@@ -1,53 +1,131 @@
-// Module ID: 15089
-// Function ID: 15090
+// Module ID: 15146
+// Function ID: 15147
 // Name: getSettingsOverrideReason
-// Dependencies: [2022, 1084, 1115, 3876, 504, 2]
-// Exports: default, useIsSettingLockedByOverride, useSettingsOverrideReason
+// Dependencies: [2029, 1095, 1126, 3885, 558, 576, 504, 2]
+// Exports: default
 
-// Module 15089 (getSettingsOverrideReason)
-import util from "util" /* 1115 */;
-import _modDef3876 from "module_3876" /* 3876 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2022 */;
+// Module 15146 (getSettingsOverrideReason)
+import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
+import intl4 from "intl" /* 1126 */;
+import _modDef3885 from "module_3885" /* 3885 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2029 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const constants = fn(1084).SettingsOverrideReasonKeys;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/accessibility/getSettingsOverrideReason.tsx");
-
-export default function getSettingsOverrideReason(arg0) {
-  if (constants.REDUCED_MOTION === arg0) {
-    const intl3 = util.intl;
-    return intl3.format(util.t["1dT9V4"], {});
-  } else if (tmp.REDUCED_MOTION_STICKERS === arg0) {
-    const intl2 = util.intl;
-    return intl2.string(util.t["2ExvRu"]);
-  } else if (tmp.GAME_MODE === arg0) {
-    const intl = util.intl;
-    return intl.string(_modDef3876.VGcdxP);
+const constants = UserSettingsConstants.SettingsOverrideReasonKeys;
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(3);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserSettingsOverridesStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
   }
-};
-export const useSettingsOverrideReason = function useSettingsOverrideReason(arg0) {
+  if (cResult[1] !== arg0) {
+    const fn = function o() {
+      let formatResult;
+      const appliedOverrideReasonKey = UserSettingsOverridesStore.getAppliedOverrideReasonKey(closure_0);
+      if (constants.REDUCED_MOTION === appliedOverrideReasonKey) {
+        const intl2 = intl4.intl;
+        formatResult = intl2.format(intl4.t["1dT9V4"], {});
+      } else if (constants.REDUCED_MOTION_STICKERS === appliedOverrideReasonKey) {
+        const intl = intl4.intl;
+        formatResult = intl.string(intl4.t["2ExvRu"]);
+      } else if (constants.GAME_MODE === appliedOverrideReasonKey) {
+        const intl3 = intl4.intl;
+        formatResult = intl3.string(_modDef3885.VGcdxP);
+      }
+      return formatResult;
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6);
+}) : ((arg0) => {
+  let closure_0;
   _require = arg0;
   const items = [UserSettingsOverridesStore];
-  return require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    let formatResult;
     const appliedOverrideReasonKey = UserSettingsOverridesStore.getAppliedOverrideReasonKey(closure_0);
     if (constants.REDUCED_MOTION === appliedOverrideReasonKey) {
-      const intl2 = util.intl;
-      let formatResult = intl2.format(util.t["1dT9V4"], {});
-    } else if (tmp2.REDUCED_MOTION_STICKERS === appliedOverrideReasonKey) {
-      const intl = util.intl;
-      formatResult = intl.string(util.t["2ExvRu"]);
-    } else if (tmp2.GAME_MODE === appliedOverrideReasonKey) {
-      const intl3 = util.intl;
-      formatResult = intl3.string(_modDef3876.VGcdxP);
+      const intl2 = intl4.intl;
+      formatResult = intl2.format(intl4.t["1dT9V4"], {});
+    } else if (constants.REDUCED_MOTION_STICKERS === appliedOverrideReasonKey) {
+      const intl = intl4.intl;
+      formatResult = intl.string(intl4.t["2ExvRu"]);
+    } else if (constants.GAME_MODE === appliedOverrideReasonKey) {
+      const intl3 = intl4.intl;
+      formatResult = intl3.string(_modDef3885.VGcdxP);
     }
     return formatResult;
   });
-};
-export const useIsSettingLockedByOverride = function useIsSettingLockedByOverride(arg0) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+function getSettingsOverrideReason(arg0) {
+  if (constants.REDUCED_MOTION === arg0) {
+    const intl3 = intl4.intl;
+    return intl3.format(intl4.t["1dT9V4"], {});
+  } else if (constants.REDUCED_MOTION_STICKERS === arg0) {
+    const intl2 = intl4.intl;
+    return intl2.string(intl4.t["2ExvRu"]);
+  } else if (constants.GAME_MODE === arg0) {
+    const intl = intl4.intl;
+    return intl.string(_modDef3885.VGcdxP);
+  }
+}
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(3);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserSettingsOverridesStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      return UserSettingsOverridesStore.getAppliedOverrideReasonKey(closure_0) === constants.GAME_MODE;
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6);
+}) : ((arg0) => {
+  let closure_0;
   _require = arg0;
   const items = [UserSettingsOverridesStore];
-  return require("initialize").useStateFromStores(items, () => UserSettingsOverridesStore.getAppliedOverrideReasonKey(closure_0) === constants.GAME_MODE);
-};
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => UserSettingsOverridesStore.getAppliedOverrideReasonKey(closure_0) === constants.GAME_MODE);
+});
+const result = size.fileFinishedImporting("modules/user_settings/accessibility/getSettingsOverrideReason.tsx");
+
+export default getSettingsOverrideReason;
+export const useSettingsOverrideReason = tmp2;
+export const useIsSettingLockedByOverride = tmp3;

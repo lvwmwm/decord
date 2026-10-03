@@ -1,14 +1,14 @@
-// Module ID: 15505
-// Function ID: 15506
+// Module ID: 15566
+// Function ID: 15567
 // Name: DevSettingsActions
-// Dependencies: [4844, 573, 2]
+// Dependencies: [4889, 584, 2]
 // Exports: clearAll, toggle
 
-// Module 15505 (DevSettingsActions)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DevSettingsStore from "DevSettingsStore" /* 4844 */;
+// Module 15566 (DevSettingsActions)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import DevSettingsStore from "DevSettingsStore" /* 4889 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/devtools/dev_settings/DevSettingsActions.tsx");
 
 export const toggle = function toggle(toggle, flag) {
@@ -16,7 +16,9 @@ export const toggle = function toggle(toggle, flag) {
   if (typeof flag !== "boolean") {
     tmp = !DevSettingsStore.get(toggle);
   }
-  DispatcherDefault.dispatch({ type: "DEV_TOOLS_DEV_SETTING_SET", toggle, value: tmp });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "DEV_TOOLS_DEV_SETTING_SET", toggle, value: tmp };
+  obj.dispatch(obj2);
 };
 export const clearAll = function clearAll() {
   for (const key10005 in DevSettingsStore.enabled()) {

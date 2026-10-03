@@ -1,13 +1,13 @@
-// Module ID: 17990
-// Function ID: 17991
-// Name: NativeI18nModule
+// Module ID: 18076
+// Function ID: 18077
+// Name: react-native
 // Dependencies: [17, 2]
 
-// Module 17990 (NativeI18nModule)
-import _mod17 from "module_17" /* 17 */;
+// Module 18076 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const TurboModuleRegistry = _mod17.TurboModuleRegistry;
+const TurboModuleRegistry = react_native.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeI18nModule");
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeI18nModule.tsx");
 

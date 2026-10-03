@@ -1,17 +1,17 @@
-// Module ID: 1337
-// Function ID: 1338
-// Name: getSystemLocale
-// Dependencies: [1116, 2]
+// Module ID: 1348
+// Function ID: 1349
+// Name: react-native
+// Dependencies: [1127, 2]
 // Exports: getSystemLocale
 
-// Module 1337 (getSystemLocale)
-import NativeDeviceLocaleModule from "NativeDeviceLocaleModule" /* 1116 */;
+// Module 1348 (react-native)
+import react_native from "react-native" /* 1127 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/i18n/getSystemLocale.tsx");
 
 export const getSystemLocale = function getSystemLocale() {
-  const _default = NativeDeviceLocaleModule.default;
+  const _default = react_native.default;
   let str;
   if (null != _default) {
     str = _default.getConstants().Language;

@@ -1,193 +1,268 @@
-// Module ID: 6854
-// Function ID: 6855
+// Module ID: 6752
+// Function ID: 6753
 // Name: isAccessibleChannelOrThreadPath
-// Dependencies: [5, 6703, 2044, 2101, 2066, 1074, 2051, 5554, 6855, 6864, 6834, 6867, 6869, 6830, 6870, 6871, 4771, 6872, 6832, 1370, 6919, 4858, 6920, 2]
+// Dependencies: [5, 6591, 2051, 2106, 2074, 1085, 2058, 6746, 6753, 6762, 6727, 6765, 6767, 6723, 6768, 6769, 4786, 6770, 6725, 1375, 6817, 4903, 6818, 2]
 // Exports: default
 
-// Module 6854 (isAccessibleChannelOrThreadPath)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 6703 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildRoleStore from "GuildRoleStore" /* 2101 */;
-import GuildStore from "GuildStore" /* 2066 */;
+// Module 6752 (isAccessibleChannelOrThreadPath)
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 6591 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import Constants from "Constants" /* 1085 */;
+import ChannelConstants from "ChannelConstants" /* 2058 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-let closure_12 = async function _isAccessibleChannelOrThreadPath(arg0, value) {
-  closure_2 = tmp2;
-  ({ guildId: closure_130_0, channelId: closure_130_1 } = closure_0);
-  await "flex";
-  if (1 === tmp5) {
-    if (arg0 === 1) {
-      c5 = 3;
-      throw value;
-    } else if (arg0 === 2) {
-      c5 = 3;
-      return { value, done: true };
-    } else {
-      const guild = closure_131_7.getGuild(closure_130_0);
-      const unsafeMutableRoles = closure_131_6.getUnsafeMutableRoles(closure_130_0);
-      if (null == guild) {
-        if (closure_130_0 !== closure_131_9) {
-          if (closure_130_1 !== closure_131_11.GAME_SHOP) {
-            c5 = 3;
-            return { value: false, done: true };
-          }
-        }
-      }
-      if (null == closure_130_1) {
+let id, obj13;
+
+let c10;
+let c9;
+let metroImportAll;
+let unpackModuleId;
+let obj = function _isAccessibleChannelOrThreadPath() {
+  obj = _asyncToGenerator(async (id) => {
+    let closure_2;
+    let closure_3;
+    let c4 = 0;
+    let c5 = 0;
+    const iter = (async (arg0, value) => {
+      let c0;
+      let c1;
+      let obj10;
+      let obj15;
+      let obj2;
+      let obj20;
+      let obj22;
+      let obj24;
+      let obj30;
+      let obj5;
+      let obj8;
+      if (c5 === 2) {
         c5 = 3;
-        return { value: true, done: true };
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: "IconComponent" };
+        }
       } else {
-        if (closure_131_10(closure_130_1)) {
-          if (closure_131_11.VIBEGRATIONS === closure_130_1) {
-            let result = null != guild;
-            if (result) {
-              result = closure_131_0(closure_131_2[7]).canAccessVibegrations(guild, "isAccessibleChannelOrThreadPath");
-              closure_131_0(closure_131_2[7]);
+        try {
+          let tmp;
+          let unsafeMutableRoles;
+          let channel2;
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              return { value, done: true };
+            } else {
+              id = undefined;
+              c1 = undefined;
+              ({ guildId: c0, channelId: c1 } = closure_0);
+              tmp = undefined;
+              unsafeMutableRoles = undefined;
+              channel2 = undefined;
+              c4 = 1;
+              c5 = 1;
+              return { value: "Reflect", done: true };
             }
-            c5 = 3;
-            return { value: result, done: true };
-          } else if (closure_131_11.ROLE_SUBSCRIPTIONS === tmp31) {
-            c5 = 3;
-            return { value: closure_131_0(closure_131_2[8]).areRoleSubscriptionsVisibleInGuild(closure_130_0, unsafeMutableRoles), done: true };
-          } else if (closure_131_11.SERVER_MONETIZATION_ONBOARDING === tmp31) {
-            let result1 = null != guild;
-            if (result1) {
-              result1 = closure_131_0(closure_131_2[9]).canUserSeeMonetizationOnboarding(guild);
-              closure_131_0(closure_131_2[9]);
-            }
-            c5 = 3;
-            return { value: result1, done: true };
-          } else if (closure_131_11.GAME_SHOP === tmp31) {
-            let obj13 = guild;
-            if (guild == null) {
-              obj13 = { id: closure_130_0, type: "id-only" };
-            }
-            c5 = 3;
-            return { value: closure_131_0(closure_131_2[10]).hasSocialLayerStorefront(obj13), done: true };
-          } else if (closure_131_11.GUILD_SHOP === tmp31) {
-            c5 = 3;
-            return { value: closure_131_0(closure_131_2[11]).isGuildShopVisibleInGuild(guild, unsafeMutableRoles), done: true };
-          } else if (closure_131_11.MEMBER_APPLICATIONS === tmp31) {
-            c5 = 3;
-            return { value: closure_131_0(closure_131_2[12]).canReviewGuildMemberApplications(closure_130_0), done: true };
-          } else if (closure_131_11.GUILD_HOME === tmp31) {
-            c5 = 3;
-            return { value: closure_131_0(closure_131_2[13]).canSeeOnboardingHome(closure_130_0), done: true };
-          } else if (closure_131_11.CHANNEL_BROWSER === tmp31) {
-            let hasItem = null != guild;
-            if (hasItem) {
-              const features3 = guild.features;
-              hasItem = features3.has(closure_131_8.COMMUNITY);
-            }
-            c5 = 3;
-            return { value: hasItem, done: true };
-          } else if (closure_131_11.GUILD_ONBOARDING === tmp31) {
-            c5 = 3;
-            return { value: closure_131_4.shouldShowOnboarding(closure_130_0), done: true };
-          } else if (closure_131_11.CUSTOMIZE_COMMUNITY === tmp31) {
-            let hasItem1 = null != guild;
-            if (hasItem1) {
-              const features2 = guild.features;
-              hasItem1 = features2.has(closure_131_8.COMMUNITY);
-            }
-            c5 = 3;
-            return { value: hasItem1, done: true };
-          } else if (closure_131_11.MEMBER_SAFETY === tmp31) {
-            c5 = 3;
-            return { value: closure_131_0(closure_131_2[14]).canAccessMemberSafetyPage(closure_130_0), done: true };
-          } else if (closure_131_11.GUILD_BOOSTS === tmp31) {
-            c5 = 3;
-            return { value: true, done: true };
-          } else if (closure_131_11.REPORT_TO_MOD === tmp31) {
-            let tmp72 = null != guild;
-            if (tmp72) {
-              tmp72 = closure_131_1(closure_131_2[15])(guild);
-            }
-            c5 = 3;
-            return { value: tmp72, done: true };
-          } else if (closure_131_11.GAME_SERVERS === tmp31) {
-            let gameServerEnabled = closure_131_0(closure_131_2[16]).getGameServerEnabled(closure_130_0, "isAccessibleChannelOrThreadPath");
-            if (gameServerEnabled) {
-              gameServerEnabled = null != guild;
-            }
-            if (gameServerEnabled) {
-              const features = guild.features;
-              gameServerEnabled = features.has(closure_131_8.GAME_SERVERS);
-            }
-            c5 = 3;
-            return { value: gameServerEnabled, done: true };
-          } else if (closure_131_11.GUILD_OFFICIAL_MESSAGES === tmp31) {
-            c5 = 3;
-            return { value: closure_131_0(closure_131_2[17]).isGuildOfficialMessagesEnabled(guild, "isAccessibleChannelOrThreadPath"), done: true };
-          } else if (closure_131_11.GUILD_SPACE === tmp31) {
-            c5 = 3;
-            return { value: closure_131_0(closure_131_2[18]).canUseGuildSpace(guild, "isAccessibleChannelOrThreadPath"), done: true };
           } else {
-            closure_131_0(closure_131_2[19]).assertNever(closure_130_1);
-            closure_131_0(closure_131_2[19]);
+            let tmp14;
+            if (1 === c4) {
+              if (arg0 === 1) {
+                c5 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c5 = 3;
+                return { value, done: true };
+              } else {
+                tmp = closure_131_7.getGuild(id);
+                unsafeMutableRoles = closure_131_6.getUnsafeMutableRoles(id);
+                if (null == tmp) {
+                  if (id !== closure_131_9) {
+                    if (c1 !== closure_131_11.GAME_SHOP) {
+                      c5 = 3;
+                      return { value: false, done: true };
+                    }
+                  }
+                }
+                if (null == c1) {
+                  c5 = 3;
+                  return { value: true, done: true };
+                } else {
+                  if (closure_131_10(c1)) {
+                    if (closure_131_11.VIBEGRATIONS === c1) {
+                      let result = null != tmp;
+                      if (result) {
+                        const obj32 = closure_131_0(closure_131_2[7]);
+                        result = obj32.canAccessVibegrations(tmp, "isAccessibleChannelOrThreadPath");
+                      }
+                      c5 = 3;
+                      return { value: result, done: true };
+                    } else if (closure_131_11.ROLE_SUBSCRIPTIONS === c1) {
+                      c5 = 3;
+                      const obj9 = { value: obj30.areRoleSubscriptionsVisibleInGuild(id, unsafeMutableRoles), done: true };
+                      obj30 = closure_131_0(closure_131_2[8]);
+                      return obj9;
+                    } else if (closure_131_11.SERVER_MONETIZATION_ONBOARDING === c1) {
+                      let result1 = null != tmp;
+                      if (result1) {
+                        const obj28 = closure_131_0(closure_131_2[9]);
+                        result1 = obj28.canUserSeeMonetizationOnboarding(tmp);
+                      }
+                      c5 = 3;
+                      return { value: result1, done: true };
+                    } else if (closure_131_11.GAME_SHOP === c1) {
+                      obj13 = tmp;
+                      const hasSocialLayerStorefront = closure_131_0(closure_131_2[10]).hasSocialLayerStorefront;
+                      closure_131_0(closure_131_2[10]);
+                      if (tmp == null) {
+                        obj13 = { id, type: "id-only" };
+                      }
+                      c5 = 3;
+                      const obj14 = { value: hasSocialLayerStorefront(obj13), done: true };
+                      return obj14;
+                    } else if (closure_131_11.GUILD_SHOP === c1) {
+                      c5 = 3;
+                      const obj16 = { value: obj24.isGuildShopVisibleInGuild(tmp, unsafeMutableRoles), done: true };
+                      obj24 = closure_131_0(closure_131_2[11]);
+                      return obj16;
+                    } else if (closure_131_11.MEMBER_APPLICATIONS === c1) {
+                      c5 = 3;
+                      const obj17 = { value: obj22.canReviewGuildMemberApplications(id), done: true };
+                      obj22 = closure_131_0(closure_131_2[12]);
+                      return obj17;
+                    } else if (closure_131_11.GUILD_HOME === c1) {
+                      c5 = 3;
+                      const obj18 = { value: obj20.canSeeOnboardingHome(id), done: true };
+                      obj20 = closure_131_0(closure_131_2[13]);
+                      return obj18;
+                    } else if (closure_131_11.CHANNEL_BROWSER === c1) {
+                      let hasItem = null != tmp;
+                      if (hasItem) {
+                        const features3 = tmp.features;
+                        hasItem = features3.has(closure_131_8.COMMUNITY);
+                      }
+                      c5 = 3;
+                      return { value: hasItem, done: true };
+                    } else if (closure_131_11.GUILD_ONBOARDING === c1) {
+                      c5 = 3;
+                      const obj21 = { value: closure_131_4.shouldShowOnboarding(id), done: true };
+                      return obj21;
+                    } else if (closure_131_11.CUSTOMIZE_COMMUNITY === c1) {
+                      let hasItem1 = null != tmp;
+                      if (hasItem1) {
+                        const features2 = tmp.features;
+                        hasItem1 = features2.has(closure_131_8.COMMUNITY);
+                      }
+                      c5 = 3;
+                      return { value: hasItem1, done: true };
+                    } else if (closure_131_11.MEMBER_SAFETY === c1) {
+                      c5 = 3;
+                      const obj25 = { value: obj15.canAccessMemberSafetyPage(id), done: true };
+                      obj15 = closure_131_0(closure_131_2[14]);
+                      return obj25;
+                    } else if (closure_131_11.GUILD_BOOSTS === c1) {
+                      c5 = 3;
+                      return { value: true, done: true };
+                    } else if (closure_131_11.REPORT_TO_MOD === c1) {
+                      c5 = 3;
+                      const obj26 = { value: null != tmp && closure_131_1(closure_131_2[15])(tmp), done: true };
+                      return obj26;
+                    } else if (closure_131_11.GAME_SERVERS === c1) {
+                      const obj12 = closure_131_0(closure_131_2[16]);
+                      let gameServerEnabled = obj12.getGameServerEnabled(id, "isAccessibleChannelOrThreadPath") && null != tmp;
+                      if (gameServerEnabled) {
+                        const features = tmp.features;
+                        gameServerEnabled = features.has(closure_131_8.GAME_SERVERS);
+                      }
+                      c5 = 3;
+                      return { value: gameServerEnabled, done: true };
+                    } else if (closure_131_11.GUILD_OFFICIAL_MESSAGES === c1) {
+                      c5 = 3;
+                      const obj29 = { value: obj10.isGuildOfficialMessagesEnabled(tmp, "isAccessibleChannelOrThreadPath"), done: true };
+                      obj10 = closure_131_0(closure_131_2[17]);
+                      return obj29;
+                    } else if (closure_131_11.GUILD_SPACE === c1) {
+                      c5 = 3;
+                      const obj31 = { value: obj8.canUseGuildSpace(tmp, "isAccessibleChannelOrThreadPath"), done: true };
+                      obj8 = closure_131_0(closure_131_2[18]);
+                      return obj31;
+                    } else {
+                      const obj37 = closure_131_0(closure_131_2[19]);
+                      obj37.assertNever(c1);
+                    }
+                  }
+                  channel2 = closure_131_5.getChannel(c1);
+                  tmp14 = null != channel2;
+                  if (!tmp14) {
+                    c4 = 2;
+                    c5 = 1;
+                    const obj33 = { value: obj5.loadThread(c1), done: false };
+                    obj5 = closure_131_1(closure_131_2[20]);
+                    return obj33;
+                  }
+                }
+              }
+            } else {
+              if (2 === c4) {
+                if (arg0 === 1) {
+                  c5 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c5 = 3;
+                  return { value, done: true };
+                } else {
+                  const channel = closure_131_5.getChannel(c1);
+                  channel2 = channel;
+                  const tmp10 = null == channel && id === closure_131_9;
+                  if (tmp10) {
+                    c4 = 3;
+                    c5 = 1;
+                    const obj35 = { value: obj2.openChannel(c1), done: false };
+                    obj2 = closure_131_1(closure_131_2[21]);
+                    return obj35;
+                  }
+                }
+              } else if (arg0 === 1) {
+                c5 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c5 = 3;
+                return { value, done: true };
+              } else {
+                channel2 = value;
+              }
+              tmp14 = null != channel2;
+            }
+            if (tmp14) {
+              tmp14 = closure_131_1(closure_131_2[22])(channel2);
+            }
+            c5 = 3;
+            return { value: tmp14, done: true };
           }
-        }
-        let channel2 = closure_131_5.getChannel(closure_130_1);
-        let tmp15 = null != channel2;
-        if (!tmp15) {
-          c4 = 2;
-          c5 = 1;
-          return { value: closure_131_1(closure_131_2[20]).loadThread(closure_130_1), done: false };
+        } catch (tmp148) {
+          c5 = 3;
+          throw tmp148;
         }
       }
-    }
-  } else {
-    if (2 === tmp5) {
-      if (arg0 === 1) {
-        c5 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c5 = 3;
-        return { value, done: true };
-      } else {
-        const channel = closure_131_5.getChannel(closure_130_1);
-        channel2 = channel;
-        let tmp11 = null == channel;
-        if (tmp11) {
-          tmp11 = closure_130_0 === closure_131_9;
-        }
-        if (tmp11) {
-          c4 = 3;
-          c5 = 1;
-          return { value: closure_131_1(closure_131_2[21]).openChannel(closure_130_1), done: false };
-        }
-      }
-    } else if (arg0 === 1) {
-      c5 = 3;
-      throw value;
-    } else if (arg0 === 2) {
-      c5 = 3;
-      return { value, done: true };
-    } else {
-      channel2 = value;
-    }
-    tmp15 = null != channel2;
-  }
-  if (tmp15) {
-    tmp15 = closure_131_1(closure_131_2[22])(channel2);
-  }
-  return tmp15;
+    })();
+    iter.next();
+    return iter;
+  });
+  return obj(...arguments);
 };
-const Constants = fn(1074);
-({ GuildFeatures: closure_8, ME: closure_9 } = Constants);
-const ChannelConstants = fn(2051);
-({ isStaticChannelRoute: c10, StaticChannelRoute: closure_11 } = ChannelConstants);
-const size = fn(2);
+({ GuildFeatures: metroImportAll, ME: c9 } = Constants);
+({ isStaticChannelRoute: c10, StaticChannelRoute: unpackModuleId } = ChannelConstants);
 let result = size.fileFinishedImporting("modules/links/isAccessibleChannelOrThreadPath.tsx");
 
 export default function isAccessibleChannelOrThreadPath() {
-  const self = this;
-  const apply = closure_12.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };

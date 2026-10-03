@@ -1,25 +1,35 @@
-// Module ID: 10023
-// Function ID: 10024
+// Module ID: 10093
+// Function ID: 10094
 // Name: gif_picker/GIFPickerUtils
-// Dependencies: [19, 1074, 1366, 9594, 10024, 1115, 2]
-// Exports: useFavoriteGIFsMobile
+// Dependencies: [19, 1085, 1371, 7518, 558, 576, 10094, 1126, 2]
 
-// Module 10023 (gif_picker/GIFPickerUtils)
-import util from "util" /* 1115 */;
-import URLUtilsDefault from "URLUtils" /* 1366 */;
-import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9594 */;
-import noop from "module_19" /* 19 */;
+// Module 10093 (gif_picker/GIFPickerUtils)
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import URLUtilsDefault from "URLUtils" /* 1371 */;
+import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 7518 */;
+import FavoriteGIFHooks from "FavoriteGIFHooks" /* 10094 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function transformFavoriteGifUrl(url, arg1) {
   let combined = url;
-  const str = URLUtilsDefault.toURLSafe(url);
+  const obj = URLUtilsDefault;
+  const str = obj.toURLSafe(url);
   if (null != str) {
+    const obj6 = AttachmentUrlUtilsAll;
+    const tmp14 = importAll;
     if (obj6.isExternalProxiedAttachmentUrl(str)) {
-      const formatted = str.pathname.toLowerCase();
-      const formatted1 = str.pathname.toLowerCase();
+      const str2 = str.pathname;
+      const formatted = str2.toLowerCase();
+      const str4 = str.pathname;
+      formatted.endsWith(".webp");
+      const formatted1 = str4.toLowerCase();
       let endsWithResult1 = formatted1.endsWith(".avif");
-      const formatted2 = str.pathname.toLowerCase();
+      const str6 = str.pathname;
+      const formatted2 = str6.toLowerCase();
       const endsWithResult2 = formatted2.endsWith(".gif");
       if (!endsWithResult1) {
         endsWithResult1 = endsWithResult2;
@@ -32,10 +42,8 @@ function transformFavoriteGifUrl(url, arg1) {
       const result1 = searchParams2.set("animated", "true");
       return str.toString();
     } else {
-      const tmp14Result = tmp14(9594);
+      tmp14(7518);
     }
-    obj6 = AttachmentUrlUtilsAll;
-    tmp14 = importAll;
   }
   if (re6.test(arg1)) {
     const match = re8.exec(arg1);
@@ -56,34 +64,68 @@ function transformFavoriteGifUrl(url, arg1) {
     return combined;
   }
 }
-fn(1074).GIFPickerResultTypes;
+const GIFPickerResultTypes = Constants.GIFPickerResultTypes;
 const re6 = /(https?:\/\/)(?!media(?:\d+)?\.)(?:[^.]+\.)*giphy\.com/;
 const re7 = /(tenor\.com)/;
 const re8 = /-(?:.(?!-))+$/;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/gif_picker/native/GIFPickerUtils.tsx");
-
-export const GIF_HEADER_HEIGHT = 56;
-export const useFavoriteGIFsMobile = function useFavoriteGIFsMobile() {
-  sortedFavoriteGIFs = sortedFavoriteGIFs(10024).useSortedFavoriteGIFs(transformFavoriteGifUrl);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let intl;
+  const obj = react2;
+  const cResult = obj.c(6);
+  const obj2 = FavoriteGIFHooks;
+  const sortedFavoriteGIFs = obj2.useSortedFavoriteGIFs(transformFavoriteGifUrl);
+  if (cResult[0] === sortedFavoriteGIFs[0]) {
+    let tmp4;
+    if (cResult[1] === sortedFavoriteGIFs.length) {
+      tmp4 = cResult[2];
+    }
+    if (cResult[3] === sortedFavoriteGIFs) {
+      let tmp7;
+      if (cResult[4] === tmp4) {
+        tmp7 = cResult[5];
+      }
+      return tmp7;
+    }
+    const obj3 = { favorites: sortedFavoriteGIFs, favoritesCategory: tmp4 };
+    cResult[3] = sortedFavoriteGIFs;
+    cResult[4] = tmp4;
+    cResult[5] = obj3;
+    tmp7 = obj3;
+  }
+  let tmp5;
+  if (sortedFavoriteGIFs.length > 0) {
+    const obj4 = { type: GIFPickerResultTypes.FAVORITES, name: intl.string(intl2.t.k8fFjp), src: sortedFavoriteGIFs[0].src, format: sortedFavoriteGIFs[0].format };
+    intl = tmp(1126).intl;
+    tmp5 = obj4;
+  }
+  cResult[0] = sortedFavoriteGIFs[0];
+  cResult[1] = sortedFavoriteGIFs.length;
+  cResult[2] = tmp5;
+  tmp4 = tmp5;
+}) : (() => {
+  let sortedFavoriteGIFs;
+  let obj = sortedFavoriteGIFs(10094);
+  sortedFavoriteGIFs = obj.useSortedFavoriteGIFs(transformFavoriteGifUrl);
   const items = [sortedFavoriteGIFs];
-  let obj = sortedFavoriteGIFs(10024);
-  return {
+  const obj2 = {
     favorites: sortedFavoriteGIFs,
-    favoritesCategory: noop.useMemo(() => {
+    favoritesCategory: react.useMemo(() => {
+      let intl;
       let tmp2;
       if (sortedFavoriteGIFs.length > 0) {
-        const obj = { type: GIFPickerResultTypes.FAVORITES, name: null, src: null, format: null };
-        const intl = util.intl;
-        obj.name = intl.string(util.t.k8fFjp);
-        obj.src = tmp[0].src;
-        obj.format = tmp[0].format;
+        const obj = { type: GIFPickerResultTypes.FAVORITES, name: intl.string(intl2.t.k8fFjp), src: sortedFavoriteGIFs[0].src, format: sortedFavoriteGIFs[0].format };
+        intl = intl2.intl;
         tmp2 = obj;
       }
       return tmp2;
     }, items)
   };
-};
+  return obj2;
+});
+let result = size.fileFinishedImporting("modules/gif_picker/native/GIFPickerUtils.tsx");
+
+export const GIF_HEADER_HEIGHT = 56;
+export const useFavoriteGIFsMobile = tmp2;
 export const GIF_PICKER_ITEM_ESIMTATED_HEIGHT = 180;
 export const GIF_PICKER_GUTTER_SPACING = 8;
 export const DEFAULT_CATEGORY_ROWS = 20;

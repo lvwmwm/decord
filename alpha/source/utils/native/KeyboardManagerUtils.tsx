@@ -1,21 +1,24 @@
-// Module ID: 1876
-// Function ID: 1877
+// Module ID: 1881
+// Function ID: 1882
 // Name: KeyboardManagerUtils
-// Dependencies: [1877, 2]
+// Dependencies: [1882, 2]
 // Exports: clearCurrentFocusAndDismissKeyboard, dismissGlobalKeyboard, onKeyboardChanged
 
-// Module 1876 (KeyboardManagerUtils)
-import NativeKeyboardModuleDefault from "NativeKeyboardModule" /* 1877 */;
+// Module 1881 (KeyboardManagerUtils)
+import react_nativeDefault from "react-native" /* 1882 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("utils/native/KeyboardManagerUtils.tsx");
 
 export const dismissGlobalKeyboard = function dismissGlobalKeyboard() {
-  const result = NativeKeyboardModuleDefault.dismissGlobalKeyboard();
+  const obj = react_nativeDefault;
+  const result = obj.dismissGlobalKeyboard();
 };
 export const clearCurrentFocusAndDismissKeyboard = function clearCurrentFocusAndDismissKeyboard() {
-  const result = NativeKeyboardModuleDefault.clearCurrentFocusAndDismissKeyboard();
+  const obj = react_nativeDefault;
+  const result = obj.clearCurrentFocusAndDismissKeyboard();
 };
 export const onKeyboardChanged = function onKeyboardChanged(arg0) {
-  NativeKeyboardModuleDefault.onKeyboardChanged(arg0);
+  const obj = react_nativeDefault;
+  obj.onKeyboardChanged(arg0);
 };

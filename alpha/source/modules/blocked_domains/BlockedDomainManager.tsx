@@ -1,26 +1,27 @@
-// Module ID: 17350
-// Function ID: 17351
+// Module ID: 17442
+// Function ID: 17443
 // Name: BlockedDomainManager
-// Dependencies: [6725, 1350, 2]
+// Dependencies: [6613, 562, 2]
 
-// Module 17350 (BlockedDomainManager)
-import js_shim_shim from "js_shim/shim" /* 1350 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
+// Module 17442 (BlockedDomainManager)
+import shim from "shim" /* 562 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-class BlockedDomainManager extends tmp2 {
-}
-BlockedDomainManager.prototype["_initialize"] = function _initialize() {
-  if (obj.isLibdiscoreInitialized()) {
-    const _window = window;
-    const _HermesInternal = HermesInternal;
-    const combined = "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT + "/bad-hash-delta";
-    const result = js_shim_shim.startFetchingBlockedDomains(combined);
-    const tmpResult = js_shim_shim;
+class BlockedDomainManager extends AutomaticLifecycleManager {
+  _initialize() {
+    const obj = shim;
+    if (obj.isLibdiscoreInitialized()) {
+      const _window = window;
+      const _HermesInternal = HermesInternal;
+      const combined = "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT + "/bad-hash-delta";
+      const tmpResult = shim;
+      const result = tmpResult.startFetchingBlockedDomains(combined);
+    }
   }
-};
+}
+const prototype = BlockedDomainManager.prototype;
 const blockedDomainManager = new BlockedDomainManager();
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/blocked_domains/BlockedDomainManager.tsx");
 
 export default blockedDomainManager;

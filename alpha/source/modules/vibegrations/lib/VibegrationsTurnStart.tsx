@@ -1,10 +1,10 @@
-// Module ID: 16635
-// Function ID: 16636
+// Module ID: 16719
+// Function ID: 16720
 // Name: VibegrationsTurnStart
 // Dependencies: [11, 2]
 // Exports: vibegrationsTurnStartedAt
 
-// Module 16635 (VibegrationsTurnStart)
+// Module 16719 (VibegrationsTurnStart)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import size from "module_2" /* 2 */;
 
@@ -22,8 +22,10 @@ export const vibegrationsTurnStartedAt = function vibegrationsTurnStartedAt(memo
     turn_id = turn_id1;
   }
   if (null != turn_id) {
+    const obj = /^\d+$/;
     if (obj.test(turn_id)) {
-      const extractTimestampResult = SnowflakeUtilsDefault.extractTimestamp(turn_id);
+      const obj2 = SnowflakeUtilsDefault;
+      const extractTimestampResult = obj2.extractTimestamp(turn_id);
       const _Number = Number;
       if (Number.isFinite(extractTimestampResult)) {
         if (extractTimestampResult > 0) {
@@ -31,7 +33,6 @@ export const vibegrationsTurnStartedAt = function vibegrationsTurnStartedAt(memo
         }
       }
     }
-    obj = /^\d+$/;
   }
   return memo.created_at;
 };

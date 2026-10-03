@@ -1,21 +1,24 @@
-// Module ID: 17725
-// Function ID: 17726
+// Module ID: 17811
+// Function ID: 17812
 // Name: EnableCommunityModalActionCreators
-// Dependencies: [5048, 17726, 1981, 2]
+// Dependencies: [5093, 17812, 1987, 2]
 
-// Module 17725 (EnableCommunityModalActionCreators)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5048 */;
+// Module 17811 (EnableCommunityModalActionCreators)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
 import size from "module_2" /* 2 */;
 
 const ENABLED_COMMUNITY_MODAL_KEY = "ENABLED_COMMUNITY_MODAL_KEY";
-const result = size.fileFinishedImporting("modules/public_guilds/native/EnableCommunityModalActionCreators.tsx");
-
-export default {
+let obj = {
   open() {
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(17726, dependencyMap.paths), undefined, ENABLED_COMMUNITY_MODAL_KEY);
+    const obj = ModalActionCreatorsDefault;
+    obj.pushLazy(asyncRequire(17812, dependencyMap.paths), undefined, ENABLED_COMMUNITY_MODAL_KEY);
   },
   close() {
-    ModalActionCreatorsDefault.popWithKey(ENABLED_COMMUNITY_MODAL_KEY);
+    const obj = ModalActionCreatorsDefault;
+    obj.popWithKey(ENABLED_COMMUNITY_MODAL_KEY);
   }
 };
+const result = size.fileFinishedImporting("modules/public_guilds/native/EnableCommunityModalActionCreators.tsx");
+
+export default obj;

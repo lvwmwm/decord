@@ -1,45 +1,46 @@
-// Module ID: 17917
-// Function ID: 17918
+// Module ID: 18003
+// Function ID: 18004
 // Name: ReferralMessageManager
-// Dependencies: [4523, 7058, 1090, 11, 7689, 6725, 17448, 2]
+// Dependencies: [4534, 6959, 1101, 11, 7733, 6613, 17535, 2]
 
-// Module 17917 (ReferralMessageManager)
+// Module 18003 (ReferralMessageManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import MessageTypes from "MessageTypes" /* 1090 */;
-import UserOfferActionCreators from "UserOfferActionCreators" /* 7689 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 17448 */;
-import SubscriptionStore from "SubscriptionStore" /* 4523 */;
-import UserOfferStore from "UserOfferStore" /* 7058 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
+import MessageTypes from "MessageTypes" /* 1101 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 17535 */;
+import SubscriptionStore from "SubscriptionStore" /* 4534 */;
+import UserOfferStore from "UserOfferStore" /* 6959 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let tmp;
+let tmp3;
+const UserOfferActionCreators = tmp(7733);
 function handleReferralMessages(type) {
   if (type.type === MessageTypes.MessageTypes.PREMIUM_REFERRAL) {
     if (null != type.content) {
+      const obj3 = SnowflakeUtilsDefault;
+      const tmp9 = importDefault;
       if (obj3.isProbablyAValidSnowflake(type.content)) {
         const premiumTypeSubscription = SubscriptionStore.getPremiumTypeSubscription();
         const tmp9Result = tmp9(11);
+        const tmp6 = null == premiumTypeSubscription && UserOfferStore.shouldFetchReferralOffer(tmp9Result.extractTimestamp(type.content));
         if (tmp6) {
-          const userOffer = UserOfferActionCreators.fetchUserOffer("ReferralMessageManager");
           const tmpResult = UserOfferActionCreators;
+          const userOffer = tmpResult.fetchUserOffer("ReferralMessageManager");
         }
-        tmp6 = null == premiumTypeSubscription && UserOfferStore.shouldFetchReferralOffer(tmp9(11).extractTimestamp(type.content));
       }
-      obj3 = SnowflakeUtilsDefault;
-      tmp9 = importDefault;
     }
   }
 }
-class ReferralMessageManager extends tmp6 {
+class ReferralMessageManager extends AutomaticLifecycleManager {
   constructor() {
-    tmp3 = new ReferralMessageManager(tmp2, tmp, new.target);
-    tmp4 = closure_1(closure_2[6])(tmp3, handleReferralMessages);
+    const tmp3 = new ReferralMessageManager(tmp2, tmp, new.target);
+    setupLoadFromMessageManagerHandlersDefault(tmp3, handleReferralMessages);
     return tmp3;
   }
 }
 const tmp5 = new tmp(tmp4, tmp3, tmp2, Object, defineProperty, ReferralMessageManager, importDefault);
 setupLoadFromMessageManagerHandlersDefault(tmp5, handleReferralMessages);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/native/referrals/ReferralMessageManager.tsx");
 
 export default tmp5;

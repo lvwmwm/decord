@@ -1,72 +1,240 @@
-// Module ID: 14202
-// Function ID: 14203
+// Module ID: 14270
+// Function ID: 14271
 // Name: StepModal
-// Dependencies: [32, 19, 17, 21, 4845, 6180, 1613, 10976, 14203, 2]
-// Exports: StepModal
+// Dependencies: [32, 109, 19, 17, 21, 4890, 6068, 558, 576, 1618, 10976, 14271, 2]
 
-// Module 14202 (StepModal)
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import NavigatorConstants from "NavigatorConstants" /* 6180 */;
-import Modal from "Modal" /* 10976 */;
-import ModalStepIndicator from "ModalStepIndicator" /* 14203 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 14270 (StepModal)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import NavigatorConstants from "NavigatorConstants" /* 6068 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4845);
-let obj2 = { container: { height: "100%" }, stepContainer: null };
-const rect = { flexDirection: "column", alignItems: "center", justifyContent: "center", top: 0, left: 0, right: 0, height: fn(6180).NAV_BAR_HEIGHT };
-obj2.stepContainer = rect;
-let closure_8 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("design/components/Modal/native/StepModal.native.tsx");
+let steps;
 
-export const StepModal = function StepModal(steps) {
-  steps = steps.steps;
-  const onWillFocus = steps.onWillFocus;
-  const merged = Object.assign(steps, Object.assign({ steps: 0, onWillFocus: 0 }));
-  const tmp2 = closure_8();
-  const tmp3 = useSafeAreaInsetsDefault();
-  const tmp4 = _slicedToArray(noop.useState(0), 2);
-  closure_2 = tmp4[1];
-  const items = [onWillFocus, steps];
-  const obj = { style: tmp2.container, children: null };
-  const callback = noop.useCallback((onDidFocus) => {
+let c9;
+let metroImportAll;
+let rect;
+let tmp;
+const Modal2 = tmp(10976);
+const ModalStepIndicator2 = tmp(14271);
+let closure_3 = ["steps", "onWillFocus"];
+const View = react_native.View;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let obj = { container: { height: "100%" }, stepContainer: rect };
+rect = { flexDirection: "column", alignItems: "center", justifyContent: "center", top: 0, left: 0, right: 0, height: NavigatorConstants.NAV_BAR_HEIGHT };
+let closure_10 = createStyles.createStyles(obj);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((steps) => {
+  let arr;
+  let closure_129_2;
+  let items;
+  let tmp12;
+  let tmp5;
+  const tmp = require;
+  let tmp2 = dependencyMap;
+  const obj = react2;
+  const cResult = obj.c(28);
+  if (cResult[0] !== steps) {
+    steps = steps.steps;
+    let closure_1 = steps;
+    const onWillFocus = steps.onWillFocus;
+    let closure_0 = onWillFocus;
+    const tmp8 = _objectWithoutProperties(steps, closure_3);
+    let num = 0;
+    cResult[0] = steps;
+    cResult[1] = onWillFocus;
+    cResult[2] = tmp8;
+    cResult[3] = steps;
+    arr = steps;
+    tmp5 = tmp8;
+  } else {
+    closure_0 = cResult[1];
+    tmp5 = cResult[2];
+    closure_1 = cResult[3];
+  }
+  const tmp9 = closure_10();
+  const tmp10 = useSafeAreaInsetsDefault();
+  [tmp12, closure_129_2] = react.useState(0);
+  _slicedToArray(react.useState(0), 2);
+  if (cResult[4] === tmp4) {
+    let tmp13;
+    let tmp15;
+    if (cResult[5] === arr) {
+      tmp13 = cResult[6];
+    }
+    const sum = NavigatorConstants.NAV_BAR_HEIGHT + tmp10.top;
+    if (cResult[7] !== sum) {
+      const obj2 = { height: sum };
+      cResult[7] = sum;
+      cResult[8] = obj2;
+      tmp15 = obj2;
+    } else {
+      tmp15 = cResult[8];
+    }
+    if (cResult[9] === tmp13) {
+      if (cResult[10] === tmp5) {
+        let tmp16;
+        let tmp22;
+        if (cResult[11] === tmp15) {
+          tmp16 = cResult[12];
+        }
+        if (cResult[13] !== tmp10.top) {
+          const obj3 = { marginTop: tmp10.top };
+          cResult[13] = tmp10.top;
+          cResult[14] = obj3;
+          tmp22 = obj3;
+        } else {
+          tmp22 = cResult[14];
+        }
+        if (cResult[15] === tmp9.stepContainer) {
+          let tmp23;
+          if (cResult[16] === tmp22) {
+            tmp23 = cResult[17];
+          }
+          let num16;
+          if (arr != null) {
+            num16 = arr.length;
+          }
+          if (num16 == null) {
+            num16 = 0;
+          }
+          if (cResult[18] === tmp12) {
+            let tmp25;
+            if (cResult[19] === num16) {
+              tmp25 = cResult[20];
+            }
+            if (cResult[21] === tmp23) {
+              let tmp28;
+              if (cResult[22] === tmp25) {
+                tmp28 = cResult[23];
+              }
+              if (cResult[24] === tmp9.container) {
+                if (cResult[25] === tmp16) {
+                  let tmp32;
+                  if (cResult[26] === tmp28) {
+                    tmp32 = cResult[27];
+                  }
+                  return tmp32;
+                }
+              }
+              const obj4 = { style: tmp9.container, children: items };
+              items = [tmp16, tmp28];
+              const tmp35 = React4(View, obj4);
+              cResult[24] = tmp9.container;
+              cResult[25] = tmp16;
+              cResult[26] = tmp28;
+              cResult[27] = tmp35;
+              tmp32 = tmp35;
+            }
+            const obj5 = { style: tmp23, pointerEvents: "box-none", children: tmp25 };
+            const tmp31 = metroImportAll(View, obj5);
+            cResult[21] = tmp23;
+            cResult[22] = tmp25;
+            cResult[23] = tmp31;
+            tmp28 = tmp31;
+          }
+          const obj6 = { currentStep: tmp12, totalSteps: num16 };
+          const tmp27 = metroImportAll(ModalStepIndicator2.ModalStepIndicator, obj6);
+          cResult[18] = tmp12;
+          cResult[19] = num16;
+          cResult[20] = tmp27;
+          tmp25 = tmp27;
+        }
+        const items1 = [tmp9.stepContainer, tmp22];
+        cResult[15] = tmp9.stepContainer;
+        cResult[16] = tmp22;
+        cResult[17] = items1;
+        tmp23 = items1;
+      }
+    }
+    const obj7 = { onWillFocus: tmp13, headerStyle: tmp15, hideTitle: true };
+    const Modal = Modal2.Modal;
+    const merged = Object.assign(tmp5);
+    const tmp21 = metroImportAll(Modal, obj7);
+    cResult[9] = tmp13;
+    cResult[10] = tmp5;
+    cResult[11] = tmp15;
+    cResult[12] = tmp21;
+    tmp16 = tmp21;
+  }
+  const fn = function y(arg0) {
     let num;
-    if (steps != null) {
-      num = steps.indexOf(tmp.name);
+    const arr = closure_1;
+    const tmp2 = closure_1_2;
+    if (closure_1 != null) {
+      num = arr.indexOf(tmp.name);
     }
     if (num == null) {
       num = 0;
     }
-    closure_2(num);
+    tmp2(num);
+    if (closure_0 != null) {
+      closure_0(arg0);
+    }
+  };
+  cResult[4] = tmp4;
+  cResult[5] = arr;
+  cResult[6] = fn;
+  tmp13 = fn;
+}) : ((steps) => {
+  let ModalStepIndicator;
+  let closure_2;
+  let first;
+  let items1;
+  let items2;
+  let num;
+  let obj5;
+  steps = steps.steps;
+  const onWillFocus = steps.onWillFocus;
+  const merged = Object.assign(steps, Object.assign({ steps: 0, onWillFocus: 0 }));
+  closure_2 = undefined;
+  let tmp2 = closure_10();
+  const tmp3 = useSafeAreaInsetsDefault();
+  [first, closure_2] = react.useState(0);
+  const items = [onWillFocus, steps];
+  const obj = { style: tmp2.container, children: items1 };
+  const callback = react.useCallback((onDidFocus) => {
+    let num;
+    const arr = steps;
+    const tmp2 = closure_2;
+    if (steps != null) {
+      num = arr.indexOf(tmp.name);
+    }
+    if (num == null) {
+      num = 0;
+    }
+    tmp2(num);
     if (onWillFocus != null) {
       onWillFocus(onDidFocus);
     }
   }, items);
-  const obj2 = {};
+  const obj2 = { onWillFocus: callback, headerStyle: { height: NavigatorConstants.NAV_BAR_HEIGHT + tmp3.top }, hideTitle: true };
+  const Modal = Modal2.Modal;
   const merged1 = Object.assign(merged);
-  obj2.onWillFocus = callback;
-  obj2.headerStyle = { height: NavigatorConstants.NAV_BAR_HEIGHT + tmp3.top };
-  obj2.hideTitle = true;
-  const items1 = [timestampProducer(Modal.Modal, obj2), ];
-  const obj4 = { style: null, pointerEvents: "box-none", children: null };
-  const items2 = [tmp2.stepContainer, { marginTop: tmp3.top }];
-  obj4.style = items2;
-  const obj5 = { currentStep: tmp4[0], totalSteps: null };
-  let num;
+  items1 = [, ];
+  ({ height: NavigatorConstants.NAV_BAR_HEIGHT + tmp3.top });
+  items1[0] = metroImportAll(Modal, obj2);
+  const obj4 = { style: items2, pointerEvents: "box-none", children: metroImportAll(ModalStepIndicator, obj5) };
+  items2 = [tmp2.stepContainer, { marginTop: tmp3.top }];
+  obj5 = { currentStep: first, totalSteps: num };
+  num = undefined;
+  ModalStepIndicator = ModalStepIndicator2.ModalStepIndicator;
+  const tmp7 = React4;
   if (steps != null) {
     num = steps.length;
   }
   if (num == null) {
     num = 0;
   }
-  obj5.totalSteps = num;
-  obj4.children = timestampProducer(ModalStepIndicator.ModalStepIndicator, obj5);
-  items1[1] = timestampProducer(View, obj4);
-  obj.children = items1;
-  return React5(View, obj);
-};
+  items1[1] = metroImportAll(View, obj4);
+  return tmp7(View, obj);
+});
+const result = size.fileFinishedImporting("design/components/Modal/native/StepModal.native.tsx");
+
+export const StepModal = tmp3;

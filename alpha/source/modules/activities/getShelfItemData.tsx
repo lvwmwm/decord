@@ -1,16 +1,18 @@
-// Module ID: 8949
-// Function ID: 8950
+// Module ID: 8983
+// Function ID: 8984
 // Name: getShelfItemData
-// Dependencies: [5072, 2]
+// Dependencies: [5118, 2]
 // Exports: default
 
-// Module 8949 (getShelfItemData)
-import ApplicationStore from "ApplicationStore" /* 5072 */;
+// Module 8983 (getShelfItemData)
+import ApplicationStore from "ApplicationStore" /* 5118 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/getShelfItemData.tsx");
 
 export default function getShelfItemData(applicationId) {
+  let activityConfigs;
+  let applications;
   applicationId = applicationId.applicationId;
   ({ activityConfigs, applications } = applicationId);
   let found;
@@ -25,8 +27,8 @@ export default function getShelfItemData(applicationId) {
   if (null != found1) {
     tmp4 = null;
     if (null != found) {
+      tmp4 = { activity: found1, application: found };
       const obj = { activity: found1, application: found };
-      tmp4 = obj;
     }
   }
   return tmp4;

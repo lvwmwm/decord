@@ -1,20 +1,22 @@
-// Module ID: 4544
-// Function ID: 4545
+// Module ID: 4555
+// Function ID: 4556
 // Name: SystemDateFormatter
-// Dependencies: [17, 1364, 4545, 2]
+// Dependencies: [17, 1369, 4556, 2]
 // Exports: supportsSystemDateFormatter
 
-// Module 4544 (SystemDateFormatter)
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import NativeDateFormatUtilsModuleDefault from "NativeDateFormatUtilsModule" /* 4545 */;
+// Module 4555 (SystemDateFormatter)
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import react_nativeDefault from "react-native" /* 4556 */;
 import size from "module_2" /* 2 */;
 
+let __DiscordCreateDateFormatter;
 if (null != global.__DiscordCreateDateFormatter) {
-  let __DiscordCreateDateFormatter = global.__DiscordCreateDateFormatter;
+  __DiscordCreateDateFormatter = global.__DiscordCreateDateFormatter;
 } else {
+  let DateFormatUtils;
   const _module = PlatformUtils;
   if (_module.isAndroid()) {
-    let DateFormatUtils = NativeDateFormatUtilsModuleDefault;
+    DateFormatUtils = react_nativeDefault;
   } else {
     DateFormatUtils = tmp2.DateFormatUtils;
   }
@@ -35,5 +37,6 @@ const result = size.fileFinishedImporting("modules/system_date_format/SystemDate
 
 export const makeFormatter = __DiscordCreateDateFormatter;
 export const supportsSystemDateFormatter = function supportsSystemDateFormatter() {
-  return PlatformUtils.isIOS();
+  const obj = PlatformUtils;
+  return obj.isIOS();
 };

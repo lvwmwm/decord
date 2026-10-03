@@ -1,36 +1,48 @@
-// Module ID: 17297
-// Function ID: 17298
+// Module ID: 17390
+// Function ID: 17391
 // Name: executeRunnable
-// Dependencies: [5, 17298, 3, 13415, 7349, 15, 9, 10, 504, 2]
+// Dependencies: [5, 17391, 3, 13475, 7253, 15, 9, 10, 504, 2]
 // Exports: default
 
-// Module 17297 (executeRunnable)
+// Module 17390 (executeRunnable)
 import LoggerDefault from "Logger" /* 3 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 7349 */;
-import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13415 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 7253 */;
+import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13475 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import NativeAppStartup from "NativeAppStartup" /* 17391 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const NativeAppStartup = fn(17298);
+let closure_1, importDefault;
+
+let hasOwnProperty;
+let metroRequire;
 ({ init: hasOwnProperty, applicationReady: metroRequire } = NativeAppStartup);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_startup/native/executeRunnable.tsx");
 
 export default function executeRunnable(arg0, arg1) {
-  closure_0 = arg0;
+  let closure_0 = arg0;
   importDefault = arg1;
-  new LoggerDefault(arg0).log("Loading the " + arg0 + " Discord runnable");
   const obj = new LoggerDefault(arg0);
-  PauseGatewaySocketAll.setIsPaused(false);
+  obj.log("Loading the " + arg0 + " Discord runnable");
+  const obj2 = PauseGatewaySocketAll;
+  obj2.setIsPaused(false);
+  const tmp3 = RequestGatewaySocketAll;
+  const withRequest = tmp3.withRequest;
   const combined = "executeRunnable:" + arg0;
-  return RequestGatewaySocketAll.withRequest(combined, asyncGeneratorStep(async () => {
-    closure_0(15).identifyWebSocket();
-    const init = closure_1(9).init;
+  return withRequest(combined, _asyncToGenerator(async () => {
+    let v2;
+    closure_1 = tmp3;
+    closure_0 = tmp3;
+    const obj5 = closure_0(c3[5]);
+    obj5.identifyWebSocket();
+    const init = closure_1(c3[6]).init;
     await init.measureAsync(closure_1_5);
     await promise.promise;
     const _HermesInternal = HermesInternal;
-    v2(7349).startBridgeTo("AppContainer:" + closure_129_0.toLowerCase());
-    return closure_1(10).time("\u{1F3C3}", "Run", () => {
+    const obj9 = c2(c3[4]);
+    obj9.startBridgeTo("AppContainer:" + closure_129_0.toLowerCase());
+    const obj10 = closure_1(c3[7]);
+    return obj10.time("\u{1F3C3}", "Run", () => {
       const Emitter = closure_1(c3[8]).Emitter;
       return Emitter.batched(closure_1_1);
     });

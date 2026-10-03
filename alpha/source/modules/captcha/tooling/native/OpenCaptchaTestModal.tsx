@@ -1,26 +1,29 @@
-// Module ID: 15495
-// Function ID: 15496
+// Module ID: 15556
+// Function ID: 15557
 // Name: OpenCaptchaTestModal
-// Dependencies: [5, 19, 21, 5048, 15496, 1981, 2]
+// Dependencies: [5, 19, 21, 5093, 15557, 1987, 2]
 // Exports: showCaptchaTestModal
 
-// Module 15495 (OpenCaptchaTestModal)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5048 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+// Module 15556 (OpenCaptchaTestModal)
+import Fragment from "Fragment" /* 21 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/captcha/tooling/native/OpenCaptchaTestModal.tsx");
 
 export const showCaptchaTestModal = function showCaptchaTestModal() {
-  ModalActionCreatorsDefault.pushLazy(asyncGeneratorStep(async () => {
-    closure_0 = tmp2;
-    await require("asyncRequireImpl")(paths[4], paths.paths);
-    closure_128_0 = arg1.default;
+  let paths;
+  const obj = ModalActionCreatorsDefault;
+  obj.pushLazy(_asyncToGenerator(async () => {
+    let c1;
+    let c2;
+    await require("asyncRequire")(paths[4], paths.paths);
+    let closure_0 = arg1.default;
     return () => closure_2_4(closure_1_0, {});
   }));
 };

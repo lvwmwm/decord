@@ -1,15 +1,16 @@
-// Module ID: 5390
-// Function ID: 5391
-// Name: setAccessibilityFocusPrevious
-// Dependencies: [5391, 2]
+// Module ID: 5710
+// Function ID: 5711
+// Name: react-native
+// Dependencies: [5711, 2]
 // Exports: default
 
-// Module 5390 (setAccessibilityFocusPrevious)
-import NativeDeviceAccessibilityModuleDefault from "NativeDeviceAccessibilityModule" /* 5391 */;
+// Module 5710 (react-native)
+import react_nativeDefault from "react-native" /* 5711 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/a11y/native/setAccessibilityFocusPrevious.tsx");
 
 export default function setAccessibilityFocusPrevious() {
-  NativeDeviceAccessibilityModuleDefault.restorePreviousFocus();
+  const obj = react_nativeDefault;
+  obj.restorePreviousFocus();
 };

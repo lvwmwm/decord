@@ -1,61 +1,63 @@
-// Module ID: 13377
-// Function ID: 13378
+// Module ID: 13437
+// Function ID: 13438
 // Name: GatewaySocketSingleton
-// Dependencies: [13378, 502, 3, 13379, 13419, 13422, 10909, 1241, 7349, 1364, 4479, 1463, 573, 2]
+// Dependencies: [13438, 502, 3, 13439, 13479, 13482, 10015, 1252, 7253, 1369, 4490, 1468, 584, 2]
 
-// Module 13377 (GatewaySocketSingleton)
+// Module 13437 (GatewaySocketSingleton)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import DiscordNativeDefault from "DiscordNative" /* 4479 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 7349 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 10909 */;
-import GatewaySocketDefault from "GatewaySocket" /* 13379 */;
-import LocalPresenceStateManagerDefault from "LocalPresenceStateManager" /* 13419 */;
-import LocalVoiceStateManagerDefault from "LocalVoiceStateManager" /* 13422 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 13378 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import DiscordNativeDefault from "DiscordNative" /* 4490 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 7253 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 10015 */;
+import GatewaySocketDefault from "GatewaySocket" /* 13439 */;
+import LocalPresenceStateManagerDefault from "LocalPresenceStateManager" /* 13479 */;
+import LocalVoiceStateManagerDefault from "LocalVoiceStateManager" /* 13482 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 13438 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NetworkUtils_mod from "NetworkUtils" /* 1463 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import NetworkUtils_mod from "NetworkUtils" /* 1468 */;
+import size from "module_2" /* 2 */;
 
 let closure_5 = new LoggerDefault("ConnectionStore");
+new LoggerDefault("ConnectionStore");
 const socket = new GatewaySocketDefault();
 const tmp3 = new LocalPresenceStateManagerDefault(socket);
 const initialState = tmp3;
-const tmp2 = new LoggerDefault("ConnectionStore");
 socket.handleIdentify = () => {
+  let id;
+  let obj4;
+  let obj5;
   const token = AuthenticationStore.getToken();
-  closure_5.verbose("handleIdentify called", { hasToken: null != token });
+  const obj2 = { hasToken: null != token };
+  closure_5.verbose("handleIdentify called", obj2);
   if (null == token) {
     return null;
   } else {
-    const state = DiscordAppStateDefault.getState();
+    let obj7;
+    const obj8 = DiscordAppStateDefault;
+    const state = obj8.getState();
     const installationForTracking = obj.getInstallationForTracking();
-    const obj3 = { token, userId: null, properties: null, presence: null };
-    let id = obj.getId();
+    const obj3 = { token, userId: id, properties: obj4, presence: initialState.getInitialState() };
+    id = obj.getId();
+    const tmp12 = importDefault;
     if (id == null) {
       id = MultiAccountSwitchStore.getTargetUserId();
     }
-    obj3.userId = id;
-    const obj4 = {};
-    const merged = Object.assign(AnalyticsUtilsDefault.getSuperProperties());
-    obj4.client_app_state = state;
-    obj4.is_fast_connect = false;
-    const tmp12Result = AnalyticsUtilsDefault;
-    obj4.gateway_connect_reasons = RequestGatewaySocketAll.describeConnectionReasons();
+    obj4 = { client_app_state: state, is_fast_connect: false, gateway_connect_reasons: obj5.describeConnectionReasons() };
+    const tmp12Result = tmp12(1252);
+    const merged = Object.assign(tmp12Result.getSuperProperties());
+    obj5 = RequestGatewaySocketAll;
     if (null != installationForTracking) {
+      obj7 = { installation_id: installationForTracking };
       const obj6 = { installation_id: installationForTracking };
-      let obj7 = obj6;
     } else {
       obj7 = {};
     }
     const merged1 = Object.assign(obj7);
-    obj3.properties = obj4;
-    obj3.presence = initialState.getInitialState();
     return obj3;
   }
-  const obj2 = { hasToken: null != token };
 };
-const PlatformUtils = fn(1364);
+const tmp4 = new LocalVoiceStateManagerDefault(socket);
 if (PlatformUtils.isDesktop()) {
   const powerMonitor = DiscordNativeDefault.powerMonitor;
   powerMonitor.on("resume", () => {
@@ -66,21 +68,26 @@ let NetworkUtils = NetworkUtils_mod;
 NetworkUtils.addOfflineCallback(() => {
   obj.networkStateChange(15000, "network detected offline.", false);
 });
-let NetworkUtils = NetworkUtils_mod;
+NetworkUtils = NetworkUtils_mod;
 NetworkUtils.addOnlineCallback(() => {
   obj.networkStateChange(5000, "network detected online.");
 });
 socket.on("disconnect", (arg0) => {
+  let code;
+  let reason;
   ({ code, reason } = arg0);
-  DispatcherDefault.dispatch({ type: "CONNECTION_CLOSED", code, reason });
+  const obj = DispatcherDefault;
+  obj.dispatch({ type: "CONNECTION_CLOSED", code, reason });
 });
 socket.on("close", (arg0) => {
+  let code;
+  let reason;
   ({ code, reason } = arg0);
-  DispatcherDefault.dispatch({ type: "CONNECTION_INTERRUPTED", code, reason });
+  const obj = DispatcherDefault;
+  obj.dispatch({ type: "CONNECTION_INTERRUPTED", code, reason });
 });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/gateway/GatewaySocketSingleton.tsx");
 
 export { socket };
 export const localPresenceState = tmp3;
-export const localVoiceState = new LocalVoiceStateManagerDefault(socket);
+export const localVoiceState = tmp4;

@@ -1,1154 +1,410 @@
 // Module ID: 1673
 // Function ID: 1674
-// Dependencies: [41, 42, 93, 95, 98, 1674, 19, 17, 21, 1641, 1692, 38, 1733, 1734, 1742, 1744, 1682, 1663, 1745, 1747, 1741, 1725, 1678, 1667, 1649, 1751, 1666, 1735, 1737, 1752, 1753, 1754, 1776, 1777]
-// Exports: createAnimatedComponent
+// Dependencies: [32, 1646, 1674, 1654, 1668, 1659, 1647]
+// Exports: makeShareableCloneOnUIRecursive
 
 // Module 1673
-import _modDef38 from "module_38" /* 38 */;
-import _mod1641 from "module_1641" /* 1641 */;
-import startWebLayoutAnimation from "startWebLayoutAnimation" /* 1692 */;
-import NativeEventsManager from "NativeEventsManager" /* 1745 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import hasOwnProperty from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import noop from "module_19" /* 19 */;
+import shareableMappingFlag from "shareableMappingFlag" /* 1674 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import module_1646_mod from "module_1646" /* 1646 */;
 
-require = fn;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-const startObservingProgress = fn(1674);
-get_ActivityIndicator = fn(17);
-({ Platform, processColor: closure_9, StyleSheet: c10 } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-let module_1641 = fn(1641);
-module_1641.isWeb();
-module_1641 = fn(1641);
-let closure_14 = module_1641.isJest();
-module_1641 = fn(1641);
-let closure_15 = module_1641.isReact19();
-module_1641 = fn(1641);
-let closure_16 = module_1641.shouldBeUseWeb();
-if (module_1641) {
-  let result = fn(1692).configureWebLayoutAnimations();
-  let obj5 = fn(1692);
-}
-let c17 = 0;
+const require = globalThis.__r;
 
-export const createAnimatedComponent = function createAnimatedComponent(name, arg1) {
-  let AnimatedComponent = name;
-  importDefault = arg1;
-  if (!closure_15) {
-    let tmp4 = typeof name !== "function";
-    if (typeof name === "function") {
-      tmp4 = name.prototype && name.prototype.isReactComponent;
-      let tmp5 = name.prototype && name.prototype.isReactComponent;
-    }
-    class AnimatedComponent {
-      constructor(arg0) {
-        self = this;
-        tmp = closure_3(this, AnimatedComponent);
-        items = [];
-        items[0] = name;
-        tmp2 = metroRequire;
-        obj = metroRequire(AnimatedComponent);
-        tmp3 = hasOwnProperty;
-        if (closure_12()) {
-          tmp5 = globalThis;
-          _Reflect = Reflect;
-          constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-        } else {
-          constructResult = obj.apply(self, items);
-        }
-        tmp3Result = tmp3(self, constructResult);
-        closure_0 = tmp3Result;
-        tmp3Result._styles = null;
-        tmp3Result._isFirstRender = true;
-        tmp3Result.jestAnimatedStyle = { value: {} };
-        tmp3Result.jestAnimatedProps = { value: {} };
-        tmp3Result._componentRef = null;
-        tmp3Result._componentDOMRef = null;
-        tmp3Result._sharedElementTransition = null;
-        tmp6 = c2;
-        tmp7 = new closure_1(c2[12])();
-        tmp3Result._jsPropsUpdater = tmp7;
-        tmp8 = closure_0;
-        inlinePropManager = new closure_0(c2[13]).InlinePropManager();
-        tmp3Result._InlinePropManager = inlinePropManager;
-        propsFilter = new closure_0(c2[14]).PropsFilter();
-        tmp3Result._PropsFilter = propsFilter;
-        tmp11 = +closure_17;
-        closure_17 = tmp11 + 1;
-        tmp3Result.reanimatedID = tmp11;
-        tmp3Result._willUnmount = false;
-        tmp3Result._resolveComponentRef = (getAnimatableRef) => {
-          if (getAnimatableRef) {
-            if (getAnimatableRef.getAnimatableRef) {
-              let animatableRef = getAnimatableRef.getAnimatableRef();
-            }
-            return animatableRef;
-          }
-          animatableRef = getAnimatableRef;
-          if (closure_2_16) {
-            if (getAnimatableRef) {
-              if (getAnimatableRef.elementRef) {
-                closure_0._componentDOMRef = getAnimatableRef.elementRef.current;
-                animatableRef = getAnimatableRef;
-              }
-            }
-            closure_0._componentDOMRef = getAnimatableRef;
-            animatableRef = getAnimatableRef;
-          }
-        };
-        obj1 = {
-          getForwardedRef() {
-                  return closure_0.props.forwardedRef;
-                },
-          setLocalRef(arg0) {
-                  if (arg0) {
-                    if (arg0 !== closure_0._componentRef) {
-                      obj._componentRef = obj._resolveComponentRef(arg0);
-                      obj._viewInfo = undefined;
-                    }
-                    const props = obj.props;
-                    ({ entering, sharedTransitionTag } = props);
-                    if (!closure_2_16) {
-                      const result = AnimatedComponent(1682).enableLayoutAnimations(true, false);
-                      const obj2 = AnimatedComponent(1682);
-                    }
-                    if (sharedTransitionTag) {
-                      const result1 = obj._configureSharedTransition();
-                    }
-                    const context = obj.context;
-                    if (context != null) {
-                      const current = context.current;
-                    }
-                    let isFabricResult = !entering;
-                    if (entering) {
-                      isFabricResult = AnimatedComponent(1641).isFabric();
-                      const obj3 = AnimatedComponent(1641);
-                    }
-                    if (!isFabricResult) {
-                      isFabricResult = current;
-                    }
-                    if (!isFabricResult) {
-                      isFabricResult = module_1641;
-                    }
-                    if (!isFabricResult) {
-                      const result2 = obj._configureLayoutAnimation(AnimatedComponent(1663).LayoutAnimationType.ENTERING, obj.props.entering);
-                    }
-                  }
-                }
-        };
-        tmp3Result._setComponentRef = closure_1(c2[15])(obj1);
-        if (closure_3_14) {
-          obj7 = { value: null };
-          obj7.value = {};
-          tmp3Result.jestAnimatedStyle = obj7;
-          obj8 = { value: null };
-          obj8.value = {};
-          tmp3Result.jestAnimatedProps = obj8;
-        }
-        tmp3Result.state = { settledProps: {}, reanimatedProps: {} };
-        context = tmp3Result.context;
-        current = undefined;
-        if (context != null) {
-          current = context.current;
-        }
-        tmp8Result = tmp8(tmp6[9]);
-        tmp13 = tmp8Result.isFabric() && !current;
-        if (tmp13) {
-          result = tmp3Result._configureLayoutAnimation(tmp8(tmp6[17]).LayoutAnimationType.ENTERING, tmp3Result.props.entering);
-        }
-        return tmp3Result;
-      }
-    }
-    _modDef38(tmp4, "Looks like you're passing a function component `" + name.name + "` to `createAnimatedComponent` function which supports only class components. Please wrap your function component with `React.forwardRef()` or use a class component instead.");
-  }
-  class AnimatedComponent {
-    constructor(arg0) {
-      self = this;
-      tmp = closure_3(this, AnimatedComponent);
-      items = [];
-      items[0] = name;
-      tmp2 = metroRequire;
-      obj = metroRequire(AnimatedComponent);
-      tmp3 = hasOwnProperty;
-      if (closure_12()) {
-        tmp5 = globalThis;
-        _Reflect = Reflect;
-        constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items);
-      }
-      tmp3Result = tmp3(self, constructResult);
-      closure_0 = tmp3Result;
-      tmp3Result._styles = null;
-      tmp3Result._isFirstRender = true;
-      tmp3Result.jestAnimatedStyle = { value: {} };
-      tmp3Result.jestAnimatedProps = { value: {} };
-      tmp3Result._componentRef = null;
-      tmp3Result._componentDOMRef = null;
-      tmp3Result._sharedElementTransition = null;
-      tmp6 = c2;
-      tmp7 = new closure_1(c2[12])();
-      tmp3Result._jsPropsUpdater = tmp7;
-      tmp8 = closure_0;
-      inlinePropManager = new closure_0(c2[13]).InlinePropManager();
-      tmp3Result._InlinePropManager = inlinePropManager;
-      propsFilter = new closure_0(c2[14]).PropsFilter();
-      tmp3Result._PropsFilter = propsFilter;
-      tmp11 = +closure_17;
-      closure_17 = tmp11 + 1;
-      tmp3Result.reanimatedID = tmp11;
-      tmp3Result._willUnmount = false;
-      tmp3Result._resolveComponentRef = (getAnimatableRef) => {
-        if (getAnimatableRef) {
-          if (getAnimatableRef.getAnimatableRef) {
-            let animatableRef = getAnimatableRef.getAnimatableRef();
-          }
-          return animatableRef;
-        }
-        animatableRef = getAnimatableRef;
-        if (closure_2_16) {
-          if (getAnimatableRef) {
-            if (getAnimatableRef.elementRef) {
-              closure_0._componentDOMRef = getAnimatableRef.elementRef.current;
-              animatableRef = getAnimatableRef;
-            }
-          }
-          closure_0._componentDOMRef = getAnimatableRef;
-          animatableRef = getAnimatableRef;
-        }
-      };
-      obj1 = {
-        getForwardedRef() {
-              return closure_0.props.forwardedRef;
-            },
-        setLocalRef(arg0) {
-              if (arg0) {
-                if (arg0 !== closure_0._componentRef) {
-                  obj._componentRef = obj._resolveComponentRef(arg0);
-                  obj._viewInfo = undefined;
-                }
-                const props = obj.props;
-                ({ entering, sharedTransitionTag } = props);
-                if (!closure_2_16) {
-                  const result = AnimatedComponent(1682).enableLayoutAnimations(true, false);
-                  const obj2 = AnimatedComponent(1682);
-                }
-                if (sharedTransitionTag) {
-                  const result1 = obj._configureSharedTransition();
-                }
-                const context = obj.context;
-                if (context != null) {
-                  const current = context.current;
-                }
-                let isFabricResult = !entering;
-                if (entering) {
-                  isFabricResult = AnimatedComponent(1641).isFabric();
-                  const obj3 = AnimatedComponent(1641);
-                }
-                if (!isFabricResult) {
-                  isFabricResult = current;
-                }
-                if (!isFabricResult) {
-                  isFabricResult = module_1641;
-                }
-                if (!isFabricResult) {
-                  const result2 = obj._configureLayoutAnimation(AnimatedComponent(1663).LayoutAnimationType.ENTERING, obj.props.entering);
-                }
-              }
-            }
-      };
-      tmp3Result._setComponentRef = closure_1(c2[15])(obj1);
-      if (closure_3_14) {
-        obj7 = { value: null };
-        obj7.value = {};
-        tmp3Result.jestAnimatedStyle = obj7;
-        obj8 = { value: null };
-        obj8.value = {};
-        tmp3Result.jestAnimatedProps = obj8;
-      }
-      tmp3Result.state = { settledProps: {}, reanimatedProps: {} };
-      context = tmp3Result.context;
-      current = undefined;
-      if (context != null) {
-        current = context.current;
-      }
-      tmp8Result = tmp8(tmp6[9]);
-      tmp13 = tmp8Result.isFabric() && !current;
-      if (tmp13) {
-        result = tmp3Result._configureLayoutAnimation(tmp8(tmp6[17]).LayoutAnimationType.ENTERING, tmp3Result.props.entering);
-      }
-      return tmp3Result;
-    }
-  }
-  _inherits(AnimatedComponent, noop.Component);
-  const entry = {
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      let firstChild1;
-      const self = this;
-      if (!module_1641) {
-        const nativeEventsManager = new NativeEventsManager.NativeEventsManager(self, closure_1);
-        self._NativeEventsManager = nativeEventsManager;
-      }
-      const _NativeEventsManager = self._NativeEventsManager;
-      if (_NativeEventsManager != null) {
-        _NativeEventsManager.attachEvents();
-      }
-      const _jsPropsUpdater = self._jsPropsUpdater;
-      const result = _jsPropsUpdater.addOnJSPropsChangeListener(self);
-      const result1 = self._attachAnimatedStyles();
-      const _InlinePropManager = self._InlinePropManager;
-      _InlinePropManager.attachInlineProps(self, self._getViewInfo());
-      const componentViewTag = self.getComponentViewTag();
-      let isFabricResult = _mod1641.isFabric();
-      if (isFabricResult) {
-        isFabricResult = -1 !== componentViewTag;
-      }
-      if (isFabricResult) {
-        const PropsRegistryGarbageCollector = tmp17(1747).PropsRegistryGarbageCollector;
-        PropsRegistryGarbageCollector.registerView(componentViewTag, self);
-      }
-      if (-1 !== componentViewTag) {
-        const ComponentRegistry = tmp17(1741).ComponentRegistry;
-        ComponentRegistry.register(componentViewTag, self);
-      }
-      const result2 = self._configureLayoutAnimation(tmp17(1663).LayoutAnimationType.LAYOUT, self.props.layout);
-      const result3 = self._configureLayoutAnimation(tmp17(1663).LayoutAnimationType.EXITING, self.props.exiting);
-      let tmp25 = tmp17;
-      if (module_1641) {
-        tmp25 = tmp17;
-        if (self._componentDOMRef) {
-          const _componentDOMRef = self._componentDOMRef;
-          const dummyClone = _componentDOMRef.dummyClone;
-          let firstChild;
-          if (dummyClone != null) {
-            firstChild = dummyClone.firstChild;
-          }
-          if (firstChild) {
-            do {
-              let appendChildResult = _componentDOMRef.appendChild(dummyClone.firstChild);
-              firstChild1 = undefined;
-              if (dummyClone != null) {
-                firstChild1 = dummyClone.firstChild;
-              }
-            } while (firstChild1);
-          }
-          delete tmp2[tmp];
-          if (self.props.exiting) {
-            startWebLayoutAnimation.saveSnapshot(_componentDOMRef);
-          }
-          if (self.props.entering) {
-            if (obj3.getReducedMotionFromConfig(self.props.entering)) {
-              self._isFirstRender = false;
-              const entering = self.props.entering;
-              const callbackV = entering.callbackV;
-              if (callbackV != null) {
-                callbackV(true);
-              }
-            } else {
-              const context = self.context;
-              let current;
-              if (context != null) {
-                current = context.current;
-              }
-              if (current) {
-                tmp25 = tmp32;
-                if (_componentDOMRef.style) {
-                  _componentDOMRef.style.visibility = "initial";
-                  tmp25 = tmp32;
-                }
-              } else {
-                const result4 = tmp32(1692).startWebLayoutAnimation(self.props, _componentDOMRef, tmp32(1663).LayoutAnimationType.ENTERING);
-                tmp25 = tmp32;
-                const tmp32Result = tmp32(1692);
-              }
-            }
-            obj3 = startWebLayoutAnimation;
-          } else {
-            self._isFirstRender = false;
-          }
+let fn;
+function freezeObjectInDev(arg0) {
+
+}
+let module_1646 = module_1646_mod;
+module_1646 = module_1646.shouldBeUseWeb();
+const REANIMATED_MAGIC_KEY = "REANIMATED_MAGIC_KEY";
+function isHostObject(__remoteFunction) {
+  return REANIMATED_MAGIC_KEY in __remoteFunction;
+}
+isHostObject.__closure = { MAGIC_KEY: "REANIMATED_MAGIC_KEY" };
+isHostObject.__workletHash = 10372729533958;
+isHostObject.__initData = { code: "function isHostObject_Pnpm_shareablesTs1(value){const{MAGIC_KEY}=this.__closure;return MAGIC_KEY in value;}" };
+let obj = { __init: fn };
+fn = function u() {
+  obj = {
+    get(arg0, arg1) {
+      if ("_isReanimatedSharedValue" !== arg1) {
+        if ("__remoteFunction" !== arg1) {
+          const _String = String;
+          const _HermesInternal = HermesInternal;
+          const self = this;
+          const self2 = this;
+          const reanimatedError = new require("ReanimatedError").ReanimatedError("Trying to access property `" + String(arg1) + "` of an object which cannot be sent to the UI runtime.");
+          throw reanimatedError;
         }
       }
-      let _willUnmount = !closure_16;
-      if (!closure_16) {
-        _willUnmount = tmp25(1641).isFabric();
-        const tmp25Result = tmp25(1641);
-      }
-      if (_willUnmount) {
-        _willUnmount = self._willUnmount;
-      }
-      if (_willUnmount) {
-        _willUnmount = typeof componentViewTag === "number";
-      }
-      if (_willUnmount) {
-        const result5 = tmp25(1682).unmarkNodeAsRemovable(componentViewTag);
-        const tmp25Result2 = tmp25(1682);
-      }
-      self._isFirstRender = false;
+      return false;
+    },
+    set() {
+      const reanimatedError = new require("ReanimatedError").ReanimatedError("Trying to write to an object which cannot be sent to the UI runtime.");
+      throw reanimatedError;
     }
   };
-  let items = [
-    entry,
-    {
-      key: "componentWillUnmount",
-      value: function componentWillUnmount() {
-        const self = this;
-        const _NativeEventsManager = this._NativeEventsManager;
-        if (_NativeEventsManager != null) {
-          _NativeEventsManager.detachEvents();
-        }
-        const _jsPropsUpdater = self._jsPropsUpdater;
-        const result = _jsPropsUpdater.removeOnJSPropsChangeListener(self);
-        const componentViewTag = self.getComponentViewTag();
-        let isFabricResult = AnimatedComponent(1641).isFabric();
-        if (isFabricResult) {
-          isFabricResult = -1 !== componentViewTag;
-        }
-        if (isFabricResult) {
-          const PropsRegistryGarbageCollector = tmp4(1747).PropsRegistryGarbageCollector;
-          PropsRegistryGarbageCollector.unregisterView(componentViewTag);
-        }
-        self._detachStyles();
-        const _InlinePropManager = self._InlinePropManager;
-        _InlinePropManager.detachInlineProps();
-        if (self.props.sharedTransitionTag) {
-          const result1 = self._configureSharedTransition(true);
-        }
-        const _sharedElementTransition = self._sharedElementTransition;
-        if (_sharedElementTransition != null) {
-          _sharedElementTransition.unregisterTransition(self.getComponentViewTag(), true);
-        }
-        const exiting = self.props.exiting;
-        if (-1 !== componentViewTag) {
-          const ComponentRegistry = tmp4(1741).ComponentRegistry;
-          ComponentRegistry.unregister(componentViewTag);
-        }
-        if (module_1641) {
-          if (self._componentDOMRef) {
-            if (exiting) {
-              if (tmp4Result.getReducedMotionFromConfig(exiting)) {
-                const callbackV = exiting.callbackV;
-                if (callbackV != null) {
-                  callbackV(true);
-                }
-              } else {
-                const result2 = tmp4(1725).addHTMLMutationObserver();
-                const tmp4Result8 = tmp4(1725);
-                ({ props, _componentDOMRef } = self);
-                const result3 = tmp4(1692).startWebLayoutAnimation(props, _componentDOMRef, tmp4(1663).LayoutAnimationType.EXITING);
-                const tmp4Result9 = tmp4(1692);
-              }
-              tmp4Result = tmp4(1692);
-            }
-            const _viewInfo = self._viewInfo;
-            let isFabricResult1 = !closure_1_16;
-            if (!closure_1_16) {
-              isFabricResult1 = tmp4(1641).isFabric();
-              const tmp4Result10 = tmp4(1641);
-            }
-            if (isFabricResult1) {
-              isFabricResult1 = shadowNodeWrapper;
-            }
-            if (isFabricResult1) {
-              tmp4(1682).markNodeAsRemovable(shadowNodeWrapper);
-              const tmp4Result11 = tmp4(1682);
-            }
-            self._willUnmount = true;
-          }
-        }
-        if (exiting) {
-          if (!module_1641) {
-            if (!tmp4Result12.isFabric()) {
-              if ("getReduceMotion" in exiting) {
-                if (typeof exiting.getReduceMotion === "function") {
-                  let reduceMotionFromConfig = tmp4(1678).getReduceMotionFromConfig(exiting.getReduceMotion());
-                  const tmp4Result13 = tmp4(1678);
-                }
-                if (!reduceMotionFromConfig) {
-                  const result4 = self._configureLayoutAnimation(tmp4(1663).LayoutAnimationType.EXITING, exiting);
-                }
-              }
-              reduceMotionFromConfig = tmp4(1678).getReduceMotionFromConfig();
-              const tmp4Result14 = tmp4(1678);
-            }
-            tmp4Result12 = tmp4(1641);
-          }
-        }
+  const proxy = new Proxy({}, obj);
+  return proxy;
+};
+fn.__closure = {};
+fn.__workletHash = 15880119471501;
+fn.__initData = { code: "function pnpm_shareablesTs2(){return new Proxy({},{get:function(_,prop){if(prop==='_isReanimatedSharedValue'||prop==='__remoteFunction'){return false;}throw new ReanimatedError(\"Trying to access property `\"+String(prop)+\"` of an object which cannot be sent to the UI runtime.\");},set:function(){throw new ReanimatedError('Trying to write to an object which cannot be sent to the UI runtime.');}});}" };
+const VALID_ARRAY_VIEWS_NAMES = ["Int8Array", "Uint8Array", "Uint8ClampedArray", "Int16Array", "Uint16Array", "Int32Array", "Uint32Array", "Float32Array", "Float64Array", "BigInt64Array", "BigUint64Array", "DataView"];
+let tmp3 = module_1646 ? (function makeShareableCloneRecursiveWeb(arg0) {
+  return arg0;
+}) : (function makeShareableCloneRecursiveNative(__workletContextObjectFactory, flag) {
+  let c7;
+  let fn;
+  let fn2;
+  let fn3;
+  let fn4;
+  let name;
+  function cloneWorklet(__stackDetails, flag, arg2) {
+    let tmp7;
+    let tmp9;
+    if (__stackDetails.__stackDetails) {
+      delete tmp["__stackDetails"];
+    }
+    obj = { __initData: closure_1_10(__stackDetails.__initData, true, arg2 + 1) };
+    const entries = Object.entries(__stackDetails);
+    const tmp3 = entries[Symbol.iterator]();
+    while (tmp3 !== undefined) {
+      let tmp6 = _slicedToArray(tmp4, 2);
+      [tmp7, tmp9] = tmp6;
+      let tmp10 = "__initData" === tmp7;
+      let tmp8 = tmp7;
+      if (tmp10) {
+        tmp10 = undefined !== obj.__initData;
       }
-    },
-    {
-      key: "_syncStylePropsBackToReact",
-      value: function _syncStylePropsBackToReact(arg0) {
-        closure_0 = arg0;
-        this.setState((settledProps) => {
-          const obj = { settledProps: null };
-          const merged = Object.assign(settledProps.settledProps);
-          const merged1 = Object.assign(closure_0);
-          obj.settledProps = {};
-          return obj;
-        });
+      if (!tmp10) {
+        obj[tmp8] = closure_1_10(tmp9, flag, arg2 + 1);
       }
-    },
-    {
-      key: "getComponentViewTag",
-      value: function getComponentViewTag() {
-        return this._getViewInfo().viewTag;
+      continue;
+    }
+    const WorkletsModule = name(dependencyMap[5]).WorkletsModule;
+    const shareableClone = WorkletsModule.makeShareableClone(obj, true, __stackDetails);
+    const shareableMappingCache = name(dependencyMap[2]).shareableMappingCache;
+    const result = shareableMappingCache.set(__stackDetails, shareableClone);
+    const shareableMappingCache2 = name(dependencyMap[2]).shareableMappingCache;
+    const result1 = shareableMappingCache2.set(shareableClone);
+    freezeObjectInDev(0);
+    return shareableClone;
+  }
+  function clonePlainJSObject(__workletContextObjectFactory, flag, arg2) {
+    let tmp6;
+    let tmp8;
+    obj = {};
+    const entries = Object.entries(__workletContextObjectFactory);
+    const tmp2 = entries[Symbol.iterator]();
+    while (tmp2 !== undefined) {
+      let tmp5 = _slicedToArray(tmp3, 2);
+      [tmp6, tmp8] = tmp5;
+      let tmp9 = "__initData" === tmp6;
+      let tmp7 = tmp6;
+      if (tmp9) {
+        tmp9 = undefined !== obj.__initData;
       }
-    },
-    {
-      key: "_detachStyles",
-      value: function _detachStyles() {
-        const self = this;
-        const componentViewTag = this.getComponentViewTag();
-        if (-1 !== componentViewTag) {
-          if (null !== self._styles) {
-            const _styles = self._styles;
-            for (const item10009 of _styles) {
-              let viewDescriptors = item10009.viewDescriptors;
-              let removeResult = viewDescriptors.remove(componentViewTag);
-              continue;
-            }
-            const animatedProps = self.props.animatedProps;
-            let viewDescriptors1;
-            if (animatedProps != null) {
-              viewDescriptors1 = animatedProps.viewDescriptors;
-            }
-            if (viewDescriptors1) {
-              const viewDescriptors2 = self.props.animatedProps.viewDescriptors;
-              viewDescriptors2.remove(componentViewTag);
-            }
-          }
-        }
+      if (!tmp9) {
+        obj[tmp7] = closure_1_10(tmp8, flag, arg2 + 1);
       }
-    },
-    {
-      key: "_updateFromNative",
-      value: function _updateFromNative(props) {
-        let setNativeProps1;
-        if (closure_1 != null) {
-          setNativeProps1 = obj.setNativeProps;
-        }
-        const self = this;
-        if (setNativeProps1) {
-          obj.setNativeProps(self._componentRef, props);
+      continue;
+    }
+    const WorkletsModule = name(dependencyMap[5]).WorkletsModule;
+    const shareableClone = WorkletsModule.makeShareableClone(obj, flag, __workletContextObjectFactory);
+    const shareableMappingCache = name(dependencyMap[2]).shareableMappingCache;
+    const result = shareableMappingCache.set(__workletContextObjectFactory, shareableClone);
+    const shareableMappingCache2 = name(dependencyMap[2]).shareableMappingCache;
+    const result1 = shareableMappingCache2.set(shareableClone);
+    freezeObjectInDev(0);
+    return shareableClone;
+  }
+  if (flag === undefined) {
+    flag = false;
+  }
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = 0;
+  }
+  if (num >= 30) {
+    if (30 === num) {
+      c7 = __workletContextObjectFactory;
+    } else {
+      const tmp = c7;
+      if (__workletContextObjectFactory === c7) {
+        let tmp2 = name;
+        let tmp3 = dependencyMap;
+        let self = this;
+        let self2 = this;
+        let reanimatedError = new name(1654).ReanimatedError("Trying to convert a cyclic object to a shareable. This is not supported.");
+        let tmp5 = reanimatedError;
+        throw reanimatedError;
+      }
+    }
+  } else {
+    c7 = undefined;
+  }
+  if (typeof __workletContextObjectFactory === "object") {
+    let tmp6 = null;
+    if (null !== __workletContextObjectFactory) {
+      const shareableMappingCache14 = name(1674).shareableMappingCache;
+      let value = shareableMappingCache14.get(__workletContextObjectFactory);
+      if (value === name(1674).shareableMappingFlag) {
+        value = __workletContextObjectFactory;
+      }
+      if (undefined === value) {
+        let shareableClone1;
+        const _Array = Array;
+        if (Array.isArray(__workletContextObjectFactory)) {
+          const mapped = __workletContextObjectFactory.map((item) => closure_2_10(item, flag, num + 1));
+          const WorkletsModule4 = tmp44(1659).WorkletsModule;
+          let shareableClone = WorkletsModule4.makeShareableClone(mapped, flag, __workletContextObjectFactory);
+          const shareableMappingCache12 = tmp44(1674).shareableMappingCache;
+          let result = shareableMappingCache12.set(__workletContextObjectFactory, shareableClone);
+          const shareableMappingCache13 = tmp44(1674).shareableMappingCache;
+          let result1 = shareableMappingCache13.set(shareableClone);
+          shareableClone1 = shareableClone;
         } else {
-          const _componentRef = self._componentRef;
-          if (_componentRef != null) {
-            const setNativeProps = _componentRef.setNativeProps;
-            if (setNativeProps != null) {
-              setNativeProps(props);
+          if (typeof __workletContextObjectFactory === "function") {
+            const tmp44Result = name(1668);
+            if (!tmp44Result.isWorkletFunction(__workletContextObjectFactory)) {
+              let WorkletsModule = tmp44(1659).WorkletsModule;
+              shareableClone1 = WorkletsModule.makeShareableClone(__workletContextObjectFactory, flag, __workletContextObjectFactory);
+              let shareableMappingCache = tmp44(1674).shareableMappingCache;
+              const result2 = shareableMappingCache.set(__workletContextObjectFactory, shareableClone1);
+              let shareableMappingCache2 = tmp44(1674).shareableMappingCache;
+              const result3 = shareableMappingCache2.set(shareableClone1);
             }
           }
-        }
-      }
-    },
-    {
-      key: "_updateReanimatedProps",
-      value: function _updateReanimatedProps(obj) {
-        let disableReactSync;
-        if (closure_1 != null) {
-          disableReactSync = closure_1.disableReactSync;
-        }
-        if (!disableReactSync) {
-          obj = {};
-          for (const key10015 in arg0) {
-            let tmp8 = arg0[key10015];
-            if ("color" === key10015) {
-              if (tmp8) {
-                if (typeof tmp8 === "string") {
-                  let tmp4 = React7(tmp8);
-                  obj[key10015] = tmp4;
-                  continue;
-                }
-              }
-            }
-            if ("top" != key10015) {
-              if ("bottom" != key10015) {
-                if (!key10015.startsWith("margin")) {
-                  tmp4 = tmp8;
-                }
-              }
-            }
-          }
-          const self = this;
-          this.setState((reanimatedProps) => {
-            obj = { reanimatedProps: null };
-            const merged = Object.assign(reanimatedProps.reanimatedProps);
-            const merged1 = Object.assign(obj);
-            obj.reanimatedProps = {};
-            return obj;
-          });
-        }
-      }
-    },
-    {
-      key: "_getViewInfo",
-      value: function _getViewInfo() {
-        const self = this;
-        if (undefined !== this._viewInfo) {
-          return self._viewInfo;
-        } else {
-          if (closure_1_16) {
-            ({ _componentRef: viewTag, _componentDOMRef } = self);
-            let shadowNodeWrapperFromRef = null;
-            viewConfig = null;
-            viewName = null;
-          } else {
-            const findHostInstanceResult = AnimatedComponent(1667).findHostInstance(self);
-            if (findHostInstanceResult) {
-              const viewInfo = tmp(1751).getViewInfo(findHostInstanceResult);
-              ({ viewTag, viewName, viewConfig } = viewInfo);
-              const tmpResult = tmp(1751);
-              shadowNodeWrapperFromRef = null;
-              if (tmpResult3.isFabric()) {
-                shadowNodeWrapperFromRef = tmp(1666).getShadowNodeWrapperFromRef(self, findHostInstanceResult);
-                const tmpResult4 = tmp(1666);
-              }
-              _componentDOMRef = null;
-              tmpResult3 = tmp(1641);
+          let tmp11 = isHostObject;
+          if (typeof isHostObject === "function") {
+            let tmp15;
+            let tmp12 = REANIMATED_MAGIC_KEY;
+            if (REANIMATED_MAGIC_KEY in __workletContextObjectFactory) {
+              const WorkletsModule3 = tmp44(1659).WorkletsModule;
+              const shareableClone2 = WorkletsModule3.makeShareableClone(__workletContextObjectFactory, flag, __workletContextObjectFactory);
+              const shareableMappingCache10 = tmp44(1674).shareableMappingCache;
+              const result4 = shareableMappingCache10.set(__workletContextObjectFactory, shareableClone2);
+              const shareableMappingCache11 = tmp44(1674).shareableMappingCache;
+              const result5 = shareableMappingCache11.set(shareableClone2);
+              tmp15 = shareableClone2;
             } else {
-              const reanimatedError = new tmp(1649).ReanimatedError("Cannot find host instance for this component. Maybe it renders nothing?");
-              throw reanimatedError;
-            }
-            const obj = AnimatedComponent(1667);
-          }
-          const obj2 = { viewTag, viewName, shadowNodeWrapper: shadowNodeWrapperFromRef, viewConfig };
-          self._viewInfo = obj2;
-          if (_componentDOMRef) {
-            self._viewInfo.DOMElement = _componentDOMRef;
-          }
-          return self._viewInfo;
-        }
-      }
-    },
-    {
-      key: "_attachAnimatedStyles",
-      value: function _attachAnimatedStyles() {
-        const self = this;
-        if (this.props.style) {
-          let items = (function onlyAnimatedStyles(arr) {
-            return arr.filter((viewDescriptors) => {
-              viewDescriptors = undefined;
-              if (viewDescriptors != null) {
-                viewDescriptors = viewDescriptors.viewDescriptors;
+              const _Object = Object;
+              const _Object2 = Object;
+              if (Object.getPrototypeOf(__workletContextObjectFactory) === Object.prototype) {
+                if (__workletContextObjectFactory.__workletContextObjectFactory) {
+                  __workletContextObjectFactory = __workletContextObjectFactory.__workletContextObjectFactory;
+                  obj = { __init: fn4 };
+                  fn4 = function c() {
+                    return __workletContextObjectFactory();
+                  };
+                  const obj2 = { workletContextObjectFactory: __workletContextObjectFactory };
+                  fn4.__closure = obj2;
+                  fn4.__workletHash = 16264240301234;
+                  fn4.__initData = __initData;
+                  const tmp35 = closure_10(obj);
+                  const shareableMappingCache9 = tmp44(1674).shareableMappingCache;
+                  const result6 = shareableMappingCache9.set(__workletContextObjectFactory, tmp35);
+                  tmp15 = tmp35;
+                }
               }
-              return viewDescriptors;
-            });
-          })(isStyleAttached(_styles[27]).flattenArray(self.props.style));
-          const obj = isStyleAttached(_styles[27]);
-        } else {
-          items = [];
-        }
-        const animatedProps = self.props.animatedProps;
-        _styles = self._styles;
-        self._styles = items;
-        const _animatedProps = self._animatedProps;
-        self._animatedProps = animatedProps;
-        const _getViewInfoResult = self._getViewInfo();
-        const viewTag = _getViewInfoResult.viewTag;
-        const viewName = _getViewInfoResult.viewName;
-        const shadowNodeWrapper = _getViewInfoResult.shadowNodeWrapper;
-        const viewConfig = _getViewInfoResult.viewConfig;
-        const animatedProps2 = self.props.animatedProps;
-        let viewDescriptors1;
-        if (animatedProps2 != null) {
-          viewDescriptors1 = animatedProps2.viewDescriptors;
-        }
-        if (!viewDescriptors1) {
-          viewDescriptors1 = items.length;
-        }
-        if (viewDescriptors1) {
-          viewDescriptors1 = viewConfig;
-        }
-        if (viewDescriptors1) {
-          isStyleAttached(_styles[28]).adaptViewConfig(viewConfig);
-          let obj2 = isStyleAttached(_styles[28]);
-        }
-        const set = new Set(items);
-        isStyleAttached = function isStyleAttached(_styles) {
-
-        };
-        const tmp8 = null != _styles && items.length === _styles.length && items.every((viewDescriptors, index) => {
-          let hasItem = viewDescriptors === _styles[index];
-          if (hasItem) {
-            if (typeof isStyleAttached === "function") {
-              viewDescriptors = viewDescriptors.viewDescriptors;
-              hasItem = viewDescriptors.has(viewTag);
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          }
-          return hasItem;
-        });
-        const animatedProps3 = self.props.animatedProps;
-        let viewDescriptors4;
-        if (animatedProps3 != null) {
-          viewDescriptors4 = animatedProps3.viewDescriptors;
-        }
-        let tmp10 = !viewDescriptors4;
-        if (viewDescriptors4) {
-          let hasItem = _animatedProps === self.props.animatedProps;
-          if (hasItem) {
-            let viewDescriptors = self.props.animatedProps.viewDescriptors;
-            hasItem = viewDescriptors.has(viewTag);
-          }
-          tmp10 = hasItem;
-        }
-        if (!tmp8) {
-          if (_styles) {
-            function _loop(iter) {
-              closure_0 = iter;
-              if (!items.some((viewDescriptors) => {
-                let tmp = viewDescriptors !== closure_0;
-                if (!tmp) {
-                  if (typeof isStyleAttached === "function") {
-                    viewDescriptors = viewDescriptors.viewDescriptors;
-                    tmp = !viewDescriptors.has(viewTag);
+              const _Object3 = Object;
+              const _Object4 = Object;
+              if (Object.getPrototypeOf(__workletContextObjectFactory) === Object.prototype) {
+                const tmp44Result2 = name(1668);
+                if (tmp44Result2.isWorkletFunction(__workletContextObjectFactory)) {
+                  tmp15 = cloneWorklet(__workletContextObjectFactory, flag, num);
+                }
+              }
+              const _Object5 = Object;
+              const _Object6 = Object;
+              if (Object.getPrototypeOf(__workletContextObjectFactory) !== Object.prototype) {
+                if (typeof __workletContextObjectFactory !== "function") {
+                  const _RegExp = RegExp;
+                  if (__workletContextObjectFactory instanceof RegExp) {
+                    const source = __workletContextObjectFactory.source;
+                    const flags = __workletContextObjectFactory.flags;
+                    const obj3 = { __init: fn3 };
+                    fn3 = function s() {
+                      const regExp = new RegExp(source, flags);
+                      return regExp;
+                    };
+                    const obj4 = { pattern: source, flags };
+                    fn3.__closure = obj4;
+                    fn3.__workletHash = 17343605339188;
+                    fn3.__initData = __initData2;
+                    const tmp31 = closure_10(obj3);
+                    const shareableMappingCache8 = tmp44(1674).shareableMappingCache;
+                    const result7 = shareableMappingCache8.set(__workletContextObjectFactory, tmp31);
+                    tmp15 = tmp31;
                   } else {
-                    throw new TypeError("Trying to call a non-function");
-                  }
-                }
-                return !tmp;
-              })) {
-                let viewDescriptors = iter.viewDescriptors;
-                viewDescriptors.remove(viewTag);
-              }
-            }
-            const iter = _styles[Symbol.iterator]();
-            while (iter !== undefined) {
-              let _loopResult = _loop(iter.next());
-              continue;
-            }
-          }
-          let tmp16 = animatedProps;
-          if (animatedProps) {
-            tmp16 = closure_14;
-          }
-          if (tmp16) {
-            const obj3 = {};
-            let merged = Object.assign(self.jestAnimatedProps.value);
-            value = undefined;
-            if (animatedProps != null) {
-              if (animatedProps.initial != null) {
-                value = iter2.value;
-              }
-            }
-            let merged1 = Object.assign(value);
-            self.jestAnimatedProps.value = obj3;
-            let jestAnimatedValues;
-            if (animatedProps != null) {
-              jestAnimatedValues = animatedProps.jestAnimatedValues;
-            }
-            if (jestAnimatedValues) {
-              animatedProps.jestAnimatedValues.current = self.jestAnimatedProps;
-            }
-          }
-          if (!tmp8) {
-            const item = set.forEach((viewDescriptors) => {
-              viewDescriptors = viewDescriptors.viewDescriptors;
-              viewDescriptors.add({ tag: viewTag, name: viewName, shadowNodeWrapper }, viewDescriptors.styleUpdaterContainer);
-              if (closure_2_14) {
-                const obj2 = {};
-                const merged = Object.assign(self.jestAnimatedStyle.value);
-                const merged1 = Object.assign(viewDescriptors.initial.value);
-                self.jestAnimatedStyle.value = obj2;
-                viewDescriptors.jestAnimatedValues.current = self.jestAnimatedStyle;
-              }
-            });
-          }
-          let tmp26 = _animatedProps;
-          if (_animatedProps) {
-            tmp26 = _animatedProps !== self.props.animatedProps;
-          }
-          if (tmp26) {
-            const viewDescriptors2 = _animatedProps.viewDescriptors;
-            viewDescriptors2.remove(viewTag);
-          }
-          let tmp28 = !tmp10;
-          if (!tmp10) {
-            const animatedProps4 = self.props.animatedProps;
-            let viewDescriptors5;
-            if (animatedProps4 != null) {
-              viewDescriptors5 = animatedProps4.viewDescriptors;
-            }
-            tmp28 = viewDescriptors5;
-          }
-          if (tmp28) {
-            const viewDescriptors3 = self.props.animatedProps.viewDescriptors;
-            const obj4 = { tag: viewTag, name: viewName, shadowNodeWrapper };
-            viewDescriptors3.add(obj4, self.props.animatedProps.styleUpdaterContainer);
-          }
-        }
-      }
-    },
-    {
-      key: "componentDidUpdate",
-      value: function componentDidUpdate(layout, arg1, arg2) {
-        const self = this;
-        const result = this._configureLayoutAnimation(AnimatedComponent(1663).LayoutAnimationType.LAYOUT, this.props.layout, layout.layout);
-        const result1 = this._configureLayoutAnimation(AnimatedComponent(1663).LayoutAnimationType.EXITING, this.props.exiting, layout.exiting);
-        if (!tmp5) {
-          const result2 = self._configureSharedTransition();
-        }
-        const _NativeEventsManager = self._NativeEventsManager;
-        if (_NativeEventsManager != null) {
-          _NativeEventsManager.updateEvents(layout);
-        }
-        const result3 = self._attachAnimatedStyles();
-        const _InlinePropManager = self._InlinePropManager;
-        _InlinePropManager.attachInlineProps(self, self._getViewInfo());
-        let _componentDOMRef = module_1641;
-        if (module_1641) {
-          _componentDOMRef = self.props.exiting;
-        }
-        if (_componentDOMRef) {
-          _componentDOMRef = self._componentDOMRef;
-        }
-        if (_componentDOMRef) {
-          tmp(1692).saveSnapshot(self._componentDOMRef);
-          const tmpResult = tmp(1692);
-        }
-        if (module_1641) {
-          if (arg2) {
-            if (self.props.layout) {
-              if (tmpResult3.getReducedMotionFromConfig(self.props.layout)) {
-                layout = self.props.layout;
-                const callbackV = layout.callbackV;
-                if (callbackV != null) {
-                  callbackV(true);
-                }
-              } else {
-                const result4 = tmp(1692).tryActivateLayoutTransition(self.props, self._componentDOMRef, arg2);
-                const tmpResult4 = tmp(1692);
-              }
-              tmpResult3 = tmp(1692);
-            }
-          }
-        }
-      }
-    },
-    {
-      key: "_configureLayoutAnimation",
-      value: function _configureLayoutAnimation(EXITING, exiting, exiting2) {
-        if (!map1) {
-          if (exiting !== exiting2) {
-            const self = this;
-            const obj = AnimatedComponent(1752);
-            if (obj2.isFabric()) {
-              if (EXITING === tmp5(1663).LayoutAnimationType.ENTERING) {
-                let reanimatedID = self.reanimatedID;
-              }
-              let maybeBuildResult = tmp3;
-              if (tmp3) {
-                let tmp8;
-                if (EXITING !== tmp5(1663).LayoutAnimationType.LAYOUT) {
-                  const props = self.props;
-                  let style;
-                  if (props != null) {
-                    style = props.style;
-                  }
-                  tmp8 = style;
-                }
-                maybeBuildResult = tmp5(1753).maybeBuild(tmp3, tmp8, AnimatedComponent.displayName);
-                const tmp5Result = tmp5(1753);
-              }
-              const result = obj.updateLayoutAnimations(reanimatedID, EXITING, maybeBuildResult);
-            }
-            reanimatedID = self.getComponentViewTag();
-            obj2 = AnimatedComponent(1641);
-          }
-        }
-      }
-    },
-    {
-      key: "_configureSharedTransition",
-      value: function _configureSharedTransition(flag) {
-        if (flag === undefined) {
-          flag = false;
-        }
-        if (!module_1641) {
-          const self = this;
-          const sharedTransitionTag = this.props.sharedTransitionTag;
-          if (sharedTransitionTag) {
-            let _sharedElementTransition2 = self.props.sharedTransitionStyle;
-            if (_sharedElementTransition2 == null) {
-              _sharedElementTransition2 = self._sharedElementTransition;
-            }
-            if (_sharedElementTransition2 == null) {
-              _sharedElementTransition2 = new AnimatedComponent(1754).SharedTransition();
-            }
-            _sharedElementTransition2.registerTransition(self.getComponentViewTag(), sharedTransitionTag, flag);
-            self._sharedElementTransition = _sharedElementTransition2;
-          } else {
-            const _sharedElementTransition = self._sharedElementTransition;
-            if (_sharedElementTransition != null) {
-              _sharedElementTransition.unregisterTransition(self.getComponentViewTag(), flag);
-            }
-            self._sharedElementTransition = null;
-          }
-        }
-      }
-    },
-    {
-      key: "_isReducedMotion",
-      value: function _isReducedMotion(getReduceMotion) {
-        if (getReduceMotion) {
-          if ("getReduceMotion" in getReduceMotion) {
-            if (typeof getReduceMotion.getReduceMotion === "function") {
-              let reduceMotionFromConfig = AnimatedComponent(1678).getReduceMotionFromConfig(getReduceMotion.getReduceMotion());
-              const obj2 = AnimatedComponent(1678);
-            }
-            return reduceMotionFromConfig;
-          }
-        }
-        reduceMotionFromConfig = AnimatedComponent(1678).getReduceMotionFromConfig();
-      }
-    },
-    {
-      key: "getSnapshotBeforeUpdate",
-      value: function getSnapshotBeforeUpdate() {
-        let boundingClientRect = null;
-        if (module_1641) {
-          const self = this;
-          boundingClientRect = null;
-          if (this.props.layout) {
-            const _componentDOMRef = self._componentDOMRef;
-            let prop;
-            if (_componentDOMRef != null) {
-              prop = _componentDOMRef.getBoundingClientRect;
-            }
-            boundingClientRect = null;
-            if (prop) {
-              const _componentDOMRef2 = self._componentDOMRef;
-              boundingClientRect = _componentDOMRef2.getBoundingClientRect();
-            }
-          }
-        }
-        return boundingClientRect;
-      }
-    },
-    {
-      key: "render",
-      value: function render() {
-        const self = this;
-        const _PropsFilter = this._PropsFilter;
-        const result = _PropsFilter.filterNonAnimatedProps(this);
-        if (closure_14) {
-          ({ jestAnimatedStyle: tmp.jestAnimatedStyle, jestAnimatedProps: tmp.jestAnimatedProps } = self);
-        }
-        let tmp3 = self._isFirstRender && module_1641 && result.entering;
-        if (tmp3) {
-          tmp3 = !startWebLayoutAnimation.getReducedMotionFromConfig(result.entering);
-        }
-        if (!tmp3) {
-          const context = self.context;
-          let current;
-          if (context != null) {
-            current = context.current;
-          }
-          if (!current) {
-            if (obj4.isFabric()) {
-              const _HermesInternal = HermesInternal;
-              const combined = "" + self.reanimatedID;
-            }
-            obj4 = _mod1641;
-          }
-          if (closure_14) {
-            let style2 = self.props.style;
-            if (style2) {
-              let style1 = self.props.style;
-              if (!style1) {
-                style2 = style1;
-              } else {
-                const _Array2 = Array;
-                if (Array.isArray(style1)) {
-                  style1 = style1.filter((item) => {
-                    let tmp = item;
-                    if (item) {
-                      tmp = "viewDescriptors" in item;
-                    }
-                    return !tmp;
-                  });
-                  let mapped = style1.map((viewDescriptors) => {
-                    let tmp = viewDescriptors;
-                    if (Array.isArray(viewDescriptors)) {
-                      if (!viewDescriptors) {
-                        tmp = viewDescriptors;
+                    const _Error = Error;
+                    if (__workletContextObjectFactory instanceof Error) {
+                      const name2 = __workletContextObjectFactory.name;
+                      const message = __workletContextObjectFactory.message;
+                      const stack = __workletContextObjectFactory.stack;
+                      const obj5 = { __init: fn2 };
+                      fn2 = function u() {
+                        const error = new Error();
+                        error.name = name2;
+                        error.message = message;
+                        error.stack = stack;
+                        return error;
+                      };
+                      let error = { name: name2, message, stack };
+                      fn2.__closure = error;
+                      fn2.__workletHash = 1273124072033;
+                      fn2.__initData = __initData3;
+                      const tmp27 = closure_10(obj5);
+                      const shareableMappingCache7 = tmp44(1674).shareableMappingCache;
+                      const result8 = shareableMappingCache7.set(__workletContextObjectFactory, tmp27);
+                      tmp15 = tmp27;
+                    } else {
+                      const _ArrayBuffer = ArrayBuffer;
+                      if (__workletContextObjectFactory instanceof ArrayBuffer) {
+                        const WorkletsModule2 = tmp44(1659).WorkletsModule;
+                        const shareableClone3 = WorkletsModule2.makeShareableClone(__workletContextObjectFactory, flag, __workletContextObjectFactory);
+                        const shareableMappingCache5 = tmp44(1674).shareableMappingCache;
+                        const result9 = shareableMappingCache5.set(__workletContextObjectFactory, shareableClone3);
+                        const shareableMappingCache6 = tmp44(1674).shareableMappingCache;
+                        const result10 = shareableMappingCache6.set(shareableClone3);
+                        tmp15 = shareableClone3;
                       } else {
-                        const _Array = Array;
-                        if (Array.isArray(viewDescriptors)) {
-                          const found = viewDescriptors.filter((item) => {
-                            let tmp = item;
-                            if (item) {
-                              tmp = "viewDescriptors" in item;
-                            }
-                            return !tmp;
-                          });
-                          let mapped = found.map((viewDescriptors) => {
-                            let tmp = viewDescriptors;
-                            if (Array.isArray(viewDescriptors)) {
-                              if (!viewDescriptors) {
-                                tmp = viewDescriptors;
+                        const _ArrayBuffer2 = ArrayBuffer;
+                        if (ArrayBuffer.isView(__workletContextObjectFactory)) {
+                          const buffer = __workletContextObjectFactory.buffer;
+                          name = __workletContextObjectFactory.constructor.name;
+                          const obj6 = { __init: fn };
+                          fn = function s() {
+                            if (VALID_ARRAY_VIEWS_NAMES.includes(name)) {
+                              if (undefined === global[name]) {
+                                const _HermesInternal2 = HermesInternal;
+                                const self5 = this;
+                                const self6 = this;
+                                const reanimatedError = new require("ReanimatedError").ReanimatedError("[Reanimated] Constructor for `" + tmp + "` not found.");
+                                throw reanimatedError;
                               } else {
-                                const _Array = Array;
-                                if (Array.isArray(viewDescriptors)) {
-                                  const found = viewDescriptors.filter((item) => {
-                                    let tmp = item;
-                                    if (item) {
-                                      tmp = "viewDescriptors" in item;
-                                    }
-                                    return !tmp;
-                                  });
-                                  let mapped = found.map((viewDescriptors) => {
-                                    let tmp = viewDescriptors;
-                                    if (Array.isArray(viewDescriptors)) {
-                                      if (!viewDescriptors) {
-                                        tmp = viewDescriptors;
-                                      } else {
-                                        const _Array = Array;
-                                        if (Array.isArray(viewDescriptors)) {
-                                          const found = viewDescriptors.filter(() => { ... });
-                                          let mapped = found.map(() => { ... });
-                                        } else {
-                                          viewDescriptors = undefined;
-                                          if (viewDescriptors != null) {
-                                            viewDescriptors = viewDescriptors.viewDescriptors;
-                                          }
-                                          mapped = viewDescriptors;
-                                          if (viewDescriptors) {
-                                            mapped = {};
-                                          }
-                                        }
-                                      }
-                                    }
-                                    return tmp;
-                                  });
-                                } else {
-                                  viewDescriptors = undefined;
-                                  if (viewDescriptors != null) {
-                                    viewDescriptors = viewDescriptors.viewDescriptors;
-                                  }
-                                  mapped = viewDescriptors;
-                                  if (viewDescriptors) {
-                                    mapped = {};
-                                  }
-                                }
+                                const self3 = this;
+                                const self4 = this;
+                                const tmp82 = new global[name](buffer);
+                                return tmp82;
                               }
+                            } else {
+                              const _HermesInternal = HermesInternal;
+                              const self = this;
+                              const self2 = this;
+                              const reanimatedError1 = new require("ReanimatedError").ReanimatedError("[Reanimated] Invalid array view name `" + tmp + "`.");
+                              throw reanimatedError1;
                             }
-                            return tmp;
-                          });
+                          };
+                          const obj7 = { VALID_ARRAY_VIEWS_NAMES, typeName: name, buffer };
+                          fn.__closure = obj7;
+                          fn.__workletHash = 2440560686150;
+                          fn.__initData = __initData4;
+                          const tmp20 = closure_10(obj6);
+                          const shareableMappingCache4 = tmp44(1674).shareableMappingCache;
+                          const result11 = shareableMappingCache4.set(__workletContextObjectFactory, tmp20);
+                          tmp15 = tmp20;
                         } else {
-                          viewDescriptors = undefined;
-                          if (viewDescriptors != null) {
-                            viewDescriptors = viewDescriptors.viewDescriptors;
-                          }
-                          mapped = viewDescriptors;
-                          if (viewDescriptors) {
-                            mapped = {};
-                          }
+                          let tmp13 = closure_10;
+                          tmp15 = closure_10(obj);
+                          const shareableMappingCache3 = tmp44(1674).shareableMappingCache;
+                          const result12 = shareableMappingCache3.set(__workletContextObjectFactory, tmp15);
                         }
                       }
                     }
-                    return tmp;
-                  });
-                } else {
-                  let viewDescriptors;
-                  if (style1 != null) {
-                    viewDescriptors = style1.viewDescriptors;
-                  }
-                  mapped = style1;
-                  if (viewDescriptors) {
-                    mapped = {};
                   }
                 }
               }
+              tmp15 = clonePlainJSObject(__workletContextObjectFactory, flag, num);
             }
-            const obj2 = { jestInlineStyle: style2, jestAnimatedStyle: null, jestAnimatedProps: null };
-            ({ jestAnimatedStyle: obj7.jestAnimatedStyle, jestAnimatedProps: obj7.jestAnimatedProps } = self);
-            let obj3 = obj2;
+            shareableClone1 = tmp15;
           } else {
-            obj3 = {};
+            throw new TypeError("Trying to call a non-function");
           }
-          const obj5 = { collapsable: false };
-          if (obj9.isFabric()) {
-            const obj6 = {};
-            const merged = Object.assign(closure_2_10.flatten(result.style));
-            const merged1 = Object.assign(self.state.settledProps);
-            const obj8 = { nativeID: combined };
-            const merged2 = Object.assign(result);
-            const merged3 = Object.assign(obj3);
-            obj8.style = obj6;
-            const merged4 = Object.assign(self.state.settledProps);
-            const merged5 = Object.assign(self.state.reanimatedProps);
-            obj8.ref = self._setComponentRef;
-            const merged6 = Object.assign(obj5);
-            return <AnimatedComponent nativeID={combined} />;
-          } else {
-            const obj10 = { nativeID: combined };
-            const merged7 = Object.assign(result);
-            const merged8 = Object.assign(obj3);
-            const merged9 = Object.assign(self.state.reanimatedProps);
-            obj10.ref = self._setComponentRef;
-            const merged10 = Object.assign(obj5);
-            return <AnimatedComponent nativeID={combined} />;
-          }
-          obj9 = _mod1641;
+        }
+        value = shareableClone1;
+      }
+      return value;
+    }
+  }
+  const WorkletsModule5 = name(1659).WorkletsModule;
+  return WorkletsModule5.makeShareableClone(__workletContextObjectFactory, flag);
+});
+let closure_10 = tmp3;
+const __initData = { code: "function pnpm_shareablesTs3(){const{workletContextObjectFactory}=this.__closure;return workletContextObjectFactory();}" };
+const __initData2 = { code: "function pnpm_shareablesTs4(){const{pattern,flags}=this.__closure;return new RegExp(pattern,flags);}" };
+const __initData3 = { code: "function pnpm_shareablesTs5(){const{name,message,stack}=this.__closure;const error=new Error();error.name=name;error.message=message;error.stack=stack;return error;}" };
+const __initData4 = { code: "function pnpm_shareablesTs6(){const{VALID_ARRAY_VIEWS_NAMES,typeName,buffer}=this.__closure;if(!VALID_ARRAY_VIEWS_NAMES.includes(typeName)){throw new ReanimatedError(\"[Reanimated] Invalid array view name `\"+typeName+\"`.\");}const constructor=global[typeName];if(constructor===undefined){throw new ReanimatedError(\"[Reanimated] Constructor for `\"+typeName+\"` not found.\");}return new constructor(buffer);}" };
+function isRemoteFunction(__remoteFunction) {
+  return __remoteFunction.__remoteFunction;
+}
+isRemoteFunction.__closure = {};
+isRemoteFunction.__workletHash = 12817663616448;
+isRemoteFunction.__initData = { code: "function isRemoteFunction_Pnpm_shareablesTs7(value){return!!value.__remoteFunction;}" };
+function makeShareableCloneOnUIRecursive(fn) {
+  const tmp = module_1646;
+  if (tmp) {
+    return fn;
+  } else {
+    function cloneRecursive(__remoteFunction) {
+      if (typeof __remoteFunction !== "object") {
+        if (typeof __remoteFunction !== "function") {
+          return global._makeShareableClone(__remoteFunction, undefined);
+        }
+      }
+      if (isHostObject(__remoteFunction)) {
+        return global._makeShareableClone(__remoteFunction, undefined);
+      } else if (isRemoteFunction(__remoteFunction)) {
+        return __remoteFunction.__remoteFunction;
+      } else {
+        const _Array = Array;
+        if (Array.isArray(__remoteFunction)) {
+          return global._makeShareableClone(__remoteFunction.map(cloneRecursive), undefined);
         } else {
-          let _Array = Array;
-          const style = result.style;
-          if (Array.isArray(result.style)) {
-            const items = [{ visibility: "hidden" }];
-            let combined1 = style.concat(items);
-          } else {
-            let obj11 = style;
-            if (style == null) {
-              obj11 = {};
-            }
-            combined1 = {};
-            const merged11 = Object.assign(obj11);
-            combined1.visibility = "hidden";
+          obj = {};
+          const _Object = Object;
+          const entries = Object.entries(__remoteFunction);
+          const tmp5 = entries[Symbol.iterator]();
+          while (tmp5 !== undefined) {
+            let tmp10 = _slicedToArray(tmp7, 2);
+            obj[tmp10[0]] = cloneRecursive(tmp10[1]);
+            continue;
           }
-          result.style = combined1;
+          return global._makeShareableClone(obj, __remoteFunction);
         }
       }
     }
-  ];
-  const tmp9 = _createClass(AnimatedComponent, items);
-  dependencyMap = tmp9;
-  tmp9.contextType = AnimatedComponent(1776).SkipEnteringContext;
-  tmp9.displayName = "AnimatedComponent(" + name.displayName || name.name || "Component" + ")";
-  const componentWithRefResult = AnimatedComponent(1777).componentWithRef((arg0, forwardedRef) => {
-    const merged = Object.assign(arg0);
-    let tmp4 = null;
-    if (null !== forwardedRef) {
-      const obj2 = { forwardedRef };
-      tmp4 = obj2;
-    }
-    const merged1 = Object.assign(tmp4);
-    return <closure_2 />;
-  });
-  componentWithRefResult.displayName = name.displayName || name.name || "Component";
-  return componentWithRefResult;
-};
+    return cloneRecursive(fn);
+  }
+}
+makeShareableCloneOnUIRecursive.__closure = { SHOULD_BE_USE_WEB: module_1646, isHostObject, isRemoteFunction };
+makeShareableCloneOnUIRecursive.__workletHash = 10912061747670;
+makeShareableCloneOnUIRecursive.__initData = { code: "function makeShareableCloneOnUIRecursive_Pnpm_shareablesTs8(value){const{SHOULD_BE_USE_WEB,isHostObject,isRemoteFunction}=this.__closure;if(SHOULD_BE_USE_WEB){return value;}function cloneRecursive(value){if(typeof value==='object'&&value!==null||typeof value==='function'){if(isHostObject(value)){return global._makeShareableClone(value,undefined);}if(isRemoteFunction(value)){return value.__remoteFunction;}if(Array.isArray(value)){return global._makeShareableClone(value.map(cloneRecursive),undefined);}const toAdapt={};for(const[key,element]of Object.entries(value)){toAdapt[key]=cloneRecursive(element);}return global._makeShareableClone(toAdapt,value);}return global._makeShareableClone(value,undefined);}return cloneRecursive(value);}" };
+const __initData5 = { code: "function pnpm_shareablesTs9(){const{value}=this.__closure;return value;}" };
+
+export const makeShareableCloneRecursive = tmp3;
+export { makeShareableCloneOnUIRecursive };
+export const makeShareable = module_1646 ? (function makeShareableJS(arg0) {
+  return arg0;
+}) : (function makeShareableNative(value) {
+  let fn;
+  let closure_0 = value;
+  const shareableMappingCache = shareableMappingFlag.shareableMappingCache;
+  if (shareableMappingCache.get(value)) {
+    return value;
+  } else {
+    obj = { __init: fn };
+    fn = function n() {
+      return closure_0;
+    };
+    const obj2 = { value };
+    fn.__closure = obj2;
+    fn.__workletHash = 5731865988281;
+    fn.__initData = __initData5;
+    const tmp5 = closure_10(obj);
+    const shareableMappingCache2 = shareableMappingFlag.shareableMappingCache;
+    const result = shareableMappingCache2.set(value, tmp5);
+    return value;
+  }
+});

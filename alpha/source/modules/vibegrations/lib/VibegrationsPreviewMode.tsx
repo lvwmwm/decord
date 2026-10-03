@@ -1,20 +1,20 @@
-// Module ID: 16503
-// Function ID: 16504
+// Module ID: 16581
+// Function ID: 16582
 // Name: VibegrationsPreviewMode
-// Dependencies: [3714, 1115, 2]
+// Dependencies: [3723, 1126, 2]
 // Exports: getPreviewModeLabel, getPreviewModePanelId
 
-// Module 16503 (VibegrationsPreviewMode)
-import util from "util" /* 1115 */;
-import _modDef3714 from "module_3714" /* 3714 */;
+// Module 16581 (VibegrationsPreviewMode)
+import intl2 from "intl" /* 1126 */;
+import _modDef3723 from "module_3723" /* 3723 */;
 import size from "module_2" /* 2 */;
 
-const obj = { frame: _modDef3714.TI6dfu, widget: _modDef3714.zshJSX, bot: _modDef3714.bBkuBd };
+const obj = { frame: _modDef3723.TI6dfu, widget: _modDef3723.zshJSX, bot: _modDef3723.bBkuBd };
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsPreviewMode.tsx");
 
 export const VIBEGRATIONS_PREVIEW_MODE_ORDER = ["frame", "widget", "bot"];
 export const getPreviewModeLabel = function getPreviewModeLabel(id) {
-  const intl = util.intl;
+  const intl = intl2.intl;
   return intl.string(obj[id]);
 };
 export const getPreviewModePanelId = function getPreviewModePanelId(arg0) {

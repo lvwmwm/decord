@@ -1,12 +1,12 @@
-// Module ID: 9263
-// Function ID: 9264
+// Module ID: 9269
+// Function ID: 9270
 // Name: getGuildEventImage
-// Dependencies: [1074, 1432, 2]
+// Dependencies: [1085, 1437, 2]
 // Exports: default
 
-// Module 9263 (getGuildEventImage)
-import Constants from "Constants" /* 1074 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1432 */;
+// Module 9269 (getGuildEventImage)
+import Constants from "Constants" /* 1085 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1437 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
@@ -16,16 +16,19 @@ export default function getGuildEventImageURL(image, size) {
   if (null == image.image) {
     return null;
   } else {
+    let combined;
     let result = size;
     if (null == size) {
       const _window = window;
-      result = window.screen.width * ImageLoaderUtils.getDevicePixelRatio();
+      const obj = ImageLoaderUtils;
+      result = width * obj.getDevicePixelRatio();
     }
     const _window2 = window;
-    const bestMediaProxySize = ImageLoaderUtils.getBestMediaProxySize(result);
+    const obj2 = ImageLoaderUtils;
+    const bestMediaProxySize = obj2.getBestMediaProxySize(result);
     if (null != CDN_HOST) {
       const _HermesInternal = HermesInternal;
-      let combined = "https://" + CDN_HOST + "/guild-events/" + image.id + "/" + image.image;
+      combined = "https://" + CDN_HOST + "/guild-events/" + image.id + "/" + image.image;
     } else {
       const _location = location;
       const _window3 = window;

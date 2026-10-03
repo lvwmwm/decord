@@ -1,16 +1,18 @@
-// Module ID: 13557
-// Function ID: 13558
+// Module ID: 13619
+// Function ID: 13620
 // Name: LinuxGpuDecodeExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1440, 2]
 // Exports: getLinuxGpuDecodeExperimentConfig
 
-// Module 13557 (LinuxGpuDecodeExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 13619 (LinuxGpuDecodeExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
-const config = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-09-linux-gpu-decode", defaultConfig: { mode: "all" }, variations: { 0: { mode: "all" }, 1: { mode: "disable_nvidia" }, 2: { mode: "disable_all" } } });
+let obj = { kind: "user", name: "2026-09-linux-gpu-decode", defaultConfig: { mode: "all" }, variations: { 0: { mode: "all" }, 1: { mode: "disable_nvidia" }, 2: { mode: "disable_all" } } };
+const config = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/media_engine/LinuxGpuDecodeExperiment.tsx");
 
 export const getLinuxGpuDecodeExperimentConfig = function getLinuxGpuDecodeExperimentConfig(_chooseExperiments) {
-  return config.getConfig({ location: _chooseExperiments });
+  const obj = { location: _chooseExperiments };
+  return config.getConfig(obj);
 };

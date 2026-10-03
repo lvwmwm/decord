@@ -1,17 +1,29 @@
-// Module ID: 15477
-// Function ID: 15478
+// Module ID: 15538
+// Function ID: 15539
 // Name: CheckpointVoiceStatsScreen
-// Dependencies: [21, 15478, 2]
-// Exports: default
+// Dependencies: [21, 558, 576, 15539, 2]
 
-// Module 15477 (CheckpointVoiceStatsScreen)
-import jsxProd from "jsxProd" /* 21 */;
-import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 15478 */;
+// Module 15538 (CheckpointVoiceStatsScreen)
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 576 */;
+import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 15539 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const jsx = jsxProd.jsx;
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp6 = jsx(CheckpointStatsScreenDefault, { name: "Voice" });
+    cResult[0] = tmp6;
+    first = tmp6;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => jsx(CheckpointStatsScreenDefault, { name: "Voice" }));
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/screens/stats/CheckpointVoiceStatsScreen.tsx");
 
-export default function CheckpointVoiceStatsScreen() {
-  return jsx(CheckpointStatsScreenDefault, { name: "Voice" });
-};
+export default tmp2;

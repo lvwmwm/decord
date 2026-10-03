@@ -1,39 +1,62 @@
-// Module ID: 15074
-// Function ID: 15075
+// Module ID: 15131
+// Function ID: 15132
 // Name: AndroidClassicChatFontScaleSetting
-// Dependencies: [15022, 7590, 4481, 1248, 1115, 11215, 1364, 2]
+// Dependencies: [15079, 7634, 558, 576, 4492, 1259, 1126, 11129, 1369, 2]
 
-// Module 15074 (AndroidClassicChatFontScaleSetting)
-import util from "util" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import _mod4481 from "module_4481" /* 4481 */;
-import SettingsConstants from "SettingsConstants" /* 7590 */;
-import FontScaleStore from "FontScaleStore" /* 15022 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 15131 (AndroidClassicChatFontScaleSetting)
+import react from "react" /* 576 */;
+import intl2 from "intl" /* 1126 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import FontScaleStore from "FontScaleStore" /* 15079 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
+let tmp;
+const _slicedToArray = tmp(4492);
 const useFontScaleStore = FontScaleStore.useFontScaleStore;
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function n(isClassicChatFontScaleEnabled) {
+      return isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return useFontScaleStore(first, _slicedToArray.shallow);
+}) : (() => useFontScaleStore((isClassicChatFontScaleEnabled) => isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled, _slicedToArray.shallow));
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.gFob3e);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.gFob3e);
   },
-  parent: SettingsConstants.MobileUserSettings.APPEARANCE,
-  useValue: function useClassicChatFontScaleValue() {
-    return useFontScaleStore((isClassicChatFontScaleEnabled) => isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled, _mod4481.shallow);
-  },
+  parent: MobileUserSettings.APPEARANCE,
+  useValue: tmp2,
   onValueChange: function onClassicChatFontScaleChange(isClassicChatFontScaleEnabled) {
     _require = isClassicChatFontScaleEnabled;
-    return require("ReactBatchUpdates").batchUpdates(() => useFontScaleStore.setState({ isClassicChatFontScaleEnabled }));
+    let obj = require("react-native");
+    return obj.batchUpdates(() => {
+      const obj = { isClassicChatFontScaleEnabled };
+      return useFontScaleStore.setState(obj);
+    });
   },
   useDescription: function useClassicChatFontScaleDescription() {
-    const intl = util.intl;
-    return intl.string(util.t.OU3q8a);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.OU3q8a);
   },
   usePredicate: PlatformUtils.isAndroid
-});
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AndroidClassicChatFontScaleSetting.tsx");
 
 export default toggle;

@@ -1,20 +1,34 @@
-// Module ID: 15722
-// Function ID: 15723
+// Module ID: 15785
+// Function ID: 15786
 // Name: useShouldDisableMessageRequestSettings
-// Dependencies: [5057, 5921, 6904, 2]
-// Exports: useShouldDisableMessageRequestSettings
+// Dependencies: [558, 5102, 5580, 6802, 2]
 
-// Module 15722 (useShouldDisableMessageRequestSettings)
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5057 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 6904 */;
+// Module 15785 (useShouldDisableMessageRequestSettings)
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5102 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5580 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 6802 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/message_request/hooks/useShouldDisableMessageRequestSettings.tsx");
-
-export const useShouldDisableMessageRequestSettings = function useShouldDisableMessageRequestSettings() {
-  let isVerifiedTeen = AgeVerificationUtils.useIsVerifiedTeen();
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const obj = AgeVerificationUtils;
+  let isVerifiedTeen = obj.useIsVerifiedTeen();
+  const useIsSettingTeenByDefault = RegionalFeatureConfigUtils.useIsSettingTeenByDefault;
+  RegionalFeatureConfigUtils;
   if (isVerifiedTeen) {
-    isVerifiedTeen = obj2.useIsSettingTeenByDefault(SettingsDefaultFeature.SettingsDefaultFeature.MESSAGE_REQUEST_RESTRICTIONS);
+    isVerifiedTeen = useIsSettingTeenByDefault(SettingsDefaultFeature.SettingsDefaultFeature.MESSAGE_REQUEST_RESTRICTIONS);
   }
   return isVerifiedTeen;
-};
+}) : (() => {
+  const obj = AgeVerificationUtils;
+  let isVerifiedTeen = obj.useIsVerifiedTeen();
+  const useIsSettingTeenByDefault = RegionalFeatureConfigUtils.useIsSettingTeenByDefault;
+  RegionalFeatureConfigUtils;
+  if (isVerifiedTeen) {
+    isVerifiedTeen = useIsSettingTeenByDefault(SettingsDefaultFeature.SettingsDefaultFeature.MESSAGE_REQUEST_RESTRICTIONS);
+  }
+  return isVerifiedTeen;
+});
+const result = size.fileFinishedImporting("modules/message_request/hooks/useShouldDisableMessageRequestSettings.tsx");
+
+export const useShouldDisableMessageRequestSettings = tmp2;

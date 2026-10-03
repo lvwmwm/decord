@@ -1,13 +1,13 @@
-// Module ID: 14087
-// Function ID: 14088
-// Name: NativeSystraceModule
+// Module ID: 14154
+// Function ID: 14155
+// Name: react-native
 // Dependencies: [17, 2]
 
-// Module 14087 (NativeSystraceModule)
-import _mod17 from "module_17" /* 17 */;
+// Module 14154 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const TurboModuleRegistry = _mod17.TurboModuleRegistry;
+const TurboModuleRegistry = react_native.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeSystraceModule");
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeSystraceModule.tsx");
 

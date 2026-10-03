@@ -1,55 +1,126 @@
-// Module ID: 16160
-// Function ID: 16161
+// Module ID: 16235
+// Function ID: 16236
 // Name: GuildsBarGuildJoinRequestBadge
-// Dependencies: [19, 17, 21, 4845, 576, 5939, 4687, 16161, 16162, 16163, 11982, 6085, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4890, 587, 5620, 4702, 16236, 16237, 16238, 11917, 558, 576, 5974, 2]
 
-// Module 16160 (GuildsBarGuildJoinRequestBadge)
-import nativeDefault from "native" /* 576 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4687 */;
-import FastImageDefault from "FastImage" /* 6085 */;
-import _modDef11982 from "module_11982" /* 11982 */;
-import _modDef16161 from "module_16161" /* 16161 */;
-import _modDef16162 from "module_16162" /* 16162 */;
-import _modDef16163 from "module_16163" /* 16163 */;
-import noop from "module_19" /* 19 */;
+// Module 16235 (GuildsBarGuildJoinRequestBadge)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4702 */;
+import LegacyTokens from "LegacyTokens" /* 5620 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11917 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16236 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 16237 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 16238 */;
+import react from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
-let obj2 = { badgeImageContainer: null, badgeImage: null };
-let size = { position: "absolute", bottom: -3, right: -3, height: 22, width: 22, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderWidth: 3, borderRadius: 11, justifyContent: "center", alignItems: "center", overflow: "hidden" };
-obj2.badgeImageContainer = size;
-const size1 = { height: 16, width: 16, opacity: fn(5939).DARK_1_LIGHT_08 };
-obj2.badgeImage = size1;
-let closure_5 = createStyles.createStyles(obj2);
-size = fn(2);
-const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarGuildJoinRequestBadge.tsx");
-
-export default function GuildsBarGuildJoinRequestBadge(joinRequestState) {
+let size;
+let size1;
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { badgeImageContainer: size, badgeImage: size1 };
+size = { position: "absolute", bottom: -3, right: -3, height: 22, width: 22, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderWidth: 3, borderRadius: 11, justifyContent: "center", alignItems: "center", overflow: "hidden" };
+createStyles = createStyles.createStyles;
+size1 = { height: 16, width: 16, opacity: LegacyTokens.DARK_1_LIGHT_08 };
+let closure_5 = createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let joinRequestState;
+  let style;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(11);
+  ({ style, joinRequestState } = arg0);
+  const tmp4 = closure_5();
+  if (cResult[0] !== joinRequestState) {
+    let tmp6;
+    if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED === joinRequestState) {
+      tmp6 = AssetRegistryDefault2;
+    } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
+      tmp6 = AssetRegistryDefault3;
+    } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
+      tmp6 = AssetRegistryDefault4;
+    } else {
+      tmp6 = null;
+      if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
+        tmp6 = AssetRegistryDefault;
+      }
+    }
+    cResult[0] = joinRequestState;
+    cResult[1] = tmp6;
+    tmp5 = tmp6;
+  } else {
+    tmp5 = cResult[1];
+  }
+  let tmp11 = null;
+  if (null != tmp5) {
+    if (cResult[2] === style) {
+      let tmp12;
+      if (cResult[3] === tmp4.badgeImageContainer) {
+        tmp12 = cResult[4];
+      }
+      if (cResult[5] === tmp5) {
+        let tmp13;
+        if (cResult[6] === tmp4.badgeImage) {
+          tmp13 = cResult[7];
+        }
+        if (cResult[8] === tmp12) {
+          let tmp17;
+          if (cResult[9] === tmp13) {
+            tmp17 = cResult[10];
+          }
+          tmp11 = tmp17;
+        }
+        const tmp20 = <View pointerEvents="none" style={tmp12}>{tmp13}</View>;
+        cResult[8] = tmp12;
+        cResult[9] = tmp13;
+        cResult[10] = tmp20;
+        tmp17 = tmp20;
+      }
+      const tmp16 = jsx(FastImageDefault, { source: tmp5, style: tmp4.badgeImage });
+      cResult[5] = tmp5;
+      cResult[6] = tmp4.badgeImage;
+      cResult[7] = tmp16;
+      tmp13 = tmp16;
+    }
+    const items = [tmp4.badgeImageContainer, style];
+    cResult[2] = style;
+    cResult[3] = tmp4.badgeImageContainer;
+    cResult[4] = items;
+    tmp12 = items;
+  }
+  return tmp11;
+}) : ((joinRequestState) => {
+  let tmp4;
   joinRequestState = joinRequestState.joinRequestState;
+  const style = joinRequestState.style;
   const tmp = closure_5();
   if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED === joinRequestState) {
-    let tmp4 = _modDef16161;
-  } else if (tmp2(4687).GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
-    tmp4 = _modDef16162;
-  } else if (tmp2(4687).GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
-    tmp4 = _modDef16163;
+    tmp4 = AssetRegistryDefault2;
+  } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
+    tmp4 = AssetRegistryDefault3;
+  } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
+    tmp4 = AssetRegistryDefault4;
   } else {
     tmp4 = null;
-    if (tmp2(4687).GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
-      tmp4 = _modDef11982;
+    if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
+      tmp4 = AssetRegistryDefault;
     }
   }
   let tmp9 = null;
   if (null != tmp4) {
-    const obj = { pointerEvents: "none", style: null, children: null };
-    const items = [tmp.badgeImageContainer, joinRequestState.style];
-    obj.style = items;
-    const obj2 = { source: tmp4, style: tmp.badgeImage };
-    obj.children = jsx(FastImageDefault, { source: tmp4, style: tmp.badgeImage });
-    tmp9 = <View pointerEvents="none" style={null}>{null}</View>;
+    const items = [tmp.badgeImageContainer, style];
+    tmp9 = <View pointerEvents="none" style={items}>{null}</View>;
   }
   return tmp9;
-};
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarGuildJoinRequestBadge.tsx");
+
+export default tmp4;

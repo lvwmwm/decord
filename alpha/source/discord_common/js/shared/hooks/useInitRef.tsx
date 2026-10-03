@@ -1,14 +1,14 @@
-// Module ID: 15976
-// Function ID: 15977
-// Name: useInitRef
+// Module ID: 16047
+// Function ID: 16048
+// Name: react
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 15976 (useInitRef)
-import _mod19 from "module_19" /* 19 */;
+// Module 16047 (react)
+import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const useRef = _mod19.useRef;
+const useRef = react.useRef;
 const result = size.fileFinishedImporting("../discord_common/js/shared/hooks/useInitRef.tsx");
 
 export default function useInitRef(fn) {

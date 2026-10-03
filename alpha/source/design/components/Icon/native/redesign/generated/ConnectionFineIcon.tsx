@@ -1,26 +1,83 @@
-// Module ID: 16261
-// Function ID: 16262
+// Module ID: 16337
+// Function ID: 16338
 // Name: ConnectionFineIcon
-// Dependencies: [19, 21, 576, 4559, 16262, 2]
-// Exports: ConnectionFineIcon
+// Dependencies: [109, 19, 21, 558, 576, 587, 16338, 4579, 2]
 
-// Module 16261 (ConnectionFineIcon)
-import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4559 */;
-import _mod16262 from "module_16262" /* 16262 */;
-import noop from "module_19" /* 19 */;
+// Module 16337 (ConnectionFineIcon)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import BaseIconImage2 from "BaseIconImage" /* 4579 */;
+import AssetRegistry from "AssetRegistry" /* 16338 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("design/components/Icon/native/redesign/generated/ConnectionFineIcon.tsx");
-
-export const ConnectionFineIcon = function ConnectionFineIcon(color) {
+let closure_3 = ["style", "color"];
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let ICON_FEEDBACK_POSITIVE;
+  let color;
+  let style;
+  let tmp10;
+  let tmp4;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(9);
+  if (cResult[0] !== arg0) {
+    ({ style, color } = arg0);
+    const tmp8 = _objectWithoutProperties(arg0, closure_3);
+    cResult[0] = arg0;
+    cResult[1] = tmp8;
+    cResult[2] = style;
+    cResult[3] = color;
+    ICON_FEEDBACK_POSITIVE = color;
+    tmp5 = style;
+    tmp4 = tmp8;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+    ICON_FEEDBACK_POSITIVE = cResult[3];
+  }
+  if (undefined === ICON_FEEDBACK_POSITIVE) {
+    ICON_FEEDBACK_POSITIVE = nativeDefault.colors.ICON_FEEDBACK_POSITIVE;
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = AssetRegistry;
+    cResult[4] = tmpResult;
+    tmp10 = tmpResult;
+  } else {
+    tmp10 = cResult[4];
+  }
+  if (cResult[5] === ICON_FEEDBACK_POSITIVE) {
+    if (cResult[6] === tmp4) {
+      let tmp12;
+      if (cResult[7] === tmp5) {
+        tmp12 = cResult[8];
+      }
+      return tmp12;
+    }
+  }
+  const BaseIconImage = tmp(4579).BaseIconImage;
+  const merged = Object.assign(tmp4);
+  const tmp14 = <BaseIconImage source={tmp10} color={ICON_FEEDBACK_POSITIVE} style={tmp5} />;
+  cResult[5] = ICON_FEEDBACK_POSITIVE;
+  cResult[6] = tmp4;
+  cResult[7] = tmp5;
+  cResult[8] = tmp14;
+  tmp12 = tmp14;
+}) : ((color) => {
   let ICON_FEEDBACK_POSITIVE = color.color;
+  const style = color.style;
   if (ICON_FEEDBACK_POSITIVE === undefined) {
     ICON_FEEDBACK_POSITIVE = nativeDefault.colors.ICON_FEEDBACK_POSITIVE;
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
+  const BaseIconImage = BaseIconImage2.BaseIconImage;
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod16262, color: ICON_FEEDBACK_POSITIVE, style: color.style });
-};
+  return <BaseIconImage source={AssetRegistry} color={ICON_FEEDBACK_POSITIVE} style={style} />;
+});
+const result = size.fileFinishedImporting("design/components/Icon/native/redesign/generated/ConnectionFineIcon.tsx");
+
+export const ConnectionFineIcon = tmp3;

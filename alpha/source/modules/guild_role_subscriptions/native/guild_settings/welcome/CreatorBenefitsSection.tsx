@@ -1,166 +1,649 @@
-// Module ID: 17785
-// Function ID: 17786
+// Module ID: 17871
+// Function ID: 17872
 // Name: CreatorBenefitsSection
-// Dependencies: [19, 17, 14962, 21, 4845, 576, 4714, 4776, 4841, 1115, 6085, 17786, 17787, 17788, 17789, 17790, 17791, 17792, 17793, 2]
-// Exports: default
+// Dependencies: [19, 17, 15019, 21, 4890, 587, 4729, 558, 576, 4791, 4886, 1126, 5974, 17872, 17873, 17874, 17875, 17876, 17877, 17878, 17879, 2]
 
-// Module 17785 (CreatorBenefitsSection)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import shared from "shared" /* 4714 */;
-import useThemeDefault from "useTheme" /* 4776 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import FastImageDefault from "FastImage" /* 6085 */;
-import _modDef17786 from "module_17786" /* 17786 */;
-import _modDef17789 from "module_17789" /* 17789 */;
-import _modDef17790 from "module_17790" /* 17790 */;
-import _modDef17791 from "module_17791" /* 17791 */;
-import _modDef17792 from "module_17792" /* 17792 */;
-import _modDef17793 from "module_17793" /* 17793 */;
-import noop from "module_19" /* 19 */;
+// Module 17871 (CreatorBenefitsSection)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import shared from "shared" /* 4729 */;
+import useThemeDefault from "useTheme" /* 4791 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15019 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17872 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17875 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 17876 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 17877 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 17878 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 17879 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-function EarningPreview() {
+let avatarSource;
+
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+let obj7;
+const View = react_native.View;
+let closure_4 = GuildRoleSubscriptionsConstants.CREATOR_REVENUE_SHARE_PERCENTAGE;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { horizontalContainer: { flex: 1, flexDirection: "row" }, benefitAvatarContainer: obj2, benefitCard: obj3, benefitAvatar: { width: 40, height: 40, marginHorizontal: 8, borderRadius: 20, overflow: "hidden" }, benefitAvatars: { marginHorizontal: 24, marginBottom: 24, justifyContent: "space-between" }, benefitCardTitle: { marginStart: 24, marginEnd: 35, marginVertical: 24 }, earningMetricsShadowContainer: obj4, earningMetricsShadowContainerDarkMode: { shadowOpacity: 0.24 }, earningMetrics: obj5, earningMetricsDarkMode: { backgroundColor: "#2E3638" }, earningMetricsLightMode: obj6, greenTextDarkMode: obj7, greenTextLightMode: { color: nativeDefault.unsafe_rawColors.GREEN_400 }, earningMetricsAvatar: { width: 54, height: 54, borderRadius: 27, overflow: "hidden" }, socialIllo: { marginTop: 50, marginStart: 16 }, lanyardIllo: { position: "absolute", bottom: 25, end: 0 }, revenueShare: { fontSize: 50, lineHeight: 52 }, revenueShareContainer: { padding: 24 }, revenueShareIllo: { marginTop: 15, alignSelf: "flex-end" }, revenueShareDescription: { marginEnd: 120 } };
+obj2 = { padding: 20, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
+createStyles = createStyles.createStyles;
+obj3 = { marginVertical: 6, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm };
+obj4 = { shadowColor: nativeDefault.colors.BLACK, shadowOffset: { width: 0, height: 8 }, shadowOpacity: 0.16, shadowRadius: 16, elevation: 4 };
+obj5 = { marginHorizontal: 24, marginBottom: 24, padding: 16, justifyContent: "space-between", alignItems: "center", borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
+obj6 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+obj7 = { color: nativeDefault.unsafe_rawColors.GREEN_230 };
+({ color: nativeDefault.unsafe_rawColors.GREEN_400 });
+let closure_7 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let intl;
+  let items;
+  let items1;
+  const obj = react2;
+  const cResult = obj.c(30);
+  const tmp5 = useThemeDefault();
+  const tmp6 = closure_7();
+  if (cResult[0] === tmp6.earningMetricsShadowContainerDarkMode) {
+    let tmp7;
+    if (cResult[1] === tmp5) {
+      tmp7 = cResult[2];
+    }
+    if (cResult[3] === tmp6.earningMetricsShadowContainer) {
+      let tmp9;
+      if (cResult[4] === tmp7) {
+        tmp9 = cResult[5];
+      }
+      if (cResult[6] === tmp6.earningMetricsDarkMode) {
+        if (cResult[7] === tmp6.earningMetricsLightMode) {
+          let tmp10;
+          if (cResult[8] === tmp5) {
+            tmp10 = cResult[9];
+          }
+          if (cResult[10] === tmp6.earningMetrics) {
+            if (cResult[11] === tmp6.horizontalContainer) {
+              let tmp12;
+              let tmp14;
+              if (cResult[12] === tmp10) {
+                tmp12 = cResult[13];
+              }
+              const _Symbol = Symbol;
+              if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+                const obj2 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: intl.string(intl3.t.TXPK7B) };
+                const Text = tmp(4886).Text;
+                intl = tmp(1126).intl;
+                const tmp16 = hasOwnProperty(Text, obj2);
+                cResult[14] = tmp16;
+                tmp14 = tmp16;
+              } else {
+                tmp14 = cResult[14];
+              }
+              if (cResult[15] === tmp6) {
+                let tmp17;
+                let tmp19;
+                let tmp21;
+                let tmp26;
+                if (cResult[16] === tmp5) {
+                  tmp17 = cResult[17];
+                }
+                const _Symbol2 = Symbol;
+                if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
+                  const intl2 = tmp(1126).intl;
+                  const stringResult = intl2.string(intl3.t.LdjJG5);
+                  cResult[18] = stringResult;
+                  tmp19 = stringResult;
+                } else {
+                  tmp19 = cResult[18];
+                }
+                if (cResult[19] !== tmp17) {
+                  const obj3 = { children: items };
+                  items = [tmp14, ];
+                  const obj4 = { style: tmp17, variant: "heading-lg/extrabold", children: tmp19 };
+                  items[1] = hasOwnProperty(Text_Text.Text, obj4);
+                  const tmp25 = metroRequire(View, obj3);
+                  cResult[19] = tmp17;
+                  cResult[20] = tmp25;
+                  tmp21 = tmp25;
+                } else {
+                  tmp21 = cResult[20];
+                }
+                if (cResult[21] !== tmp6.earningMetricsAvatar) {
+                  const obj5 = { style: tmp6.earningMetricsAvatar, source: AssetRegistryDefault };
+                  const tmp4Result = FastImageDefault;
+                  const tmp29 = hasOwnProperty(tmp4Result, obj5);
+                  cResult[21] = tmp6.earningMetricsAvatar;
+                  cResult[22] = tmp29;
+                  tmp26 = tmp29;
+                } else {
+                  tmp26 = cResult[22];
+                }
+                if (cResult[23] === tmp12) {
+                  if (cResult[24] === tmp21) {
+                    let tmp30;
+                    if (cResult[25] === tmp26) {
+                      tmp30 = cResult[26];
+                    }
+                    if (cResult[27] === tmp9) {
+                      let tmp34;
+                      if (cResult[28] === tmp30) {
+                        tmp34 = cResult[29];
+                      }
+                      return tmp34;
+                    }
+                    const obj6 = { style: tmp9, children: tmp30 };
+                    const tmp37 = hasOwnProperty(View, obj6);
+                    cResult[27] = tmp9;
+                    cResult[28] = tmp30;
+                    cResult[29] = tmp37;
+                    tmp34 = tmp37;
+                  }
+                }
+                const obj7 = { style: tmp12, children: items1 };
+                items1 = [tmp21, tmp26];
+                const tmp33 = metroRequire(View, obj7);
+                cResult[23] = tmp12;
+                cResult[24] = tmp21;
+                cResult[25] = tmp26;
+                cResult[26] = tmp33;
+                tmp30 = tmp33;
+              }
+              const tmpResult = shared;
+              const tmp18 = tmpResult.isThemeDark(tmp5) ? tmp6.greenTextDarkMode : tmp6.greenTextLightMode;
+              cResult[15] = tmp6;
+              cResult[16] = tmp5;
+              cResult[17] = tmp18;
+              tmp17 = tmp18;
+            }
+          }
+          const items2 = [, , ];
+          ({ earningMetrics: arr2[0], horizontalContainer: arr2[1] } = tmp6);
+          items2[2] = tmp10;
+          cResult[10] = tmp6.earningMetrics;
+          cResult[11] = tmp6.horizontalContainer;
+          cResult[12] = tmp10;
+          cResult[13] = items2;
+          tmp12 = items2;
+        }
+      }
+      const tmpResult3 = shared;
+      const tmp11 = tmpResult3.isThemeDark(tmp5) ? tmp6.earningMetricsDarkMode : tmp6.earningMetricsLightMode;
+      cResult[6] = tmp6.earningMetricsDarkMode;
+      cResult[7] = tmp6.earningMetricsLightMode;
+      cResult[8] = tmp5;
+      cResult[9] = tmp11;
+      tmp10 = tmp11;
+    }
+    const items3 = [tmp6.earningMetricsShadowContainer, tmp7];
+    cResult[3] = tmp6.earningMetricsShadowContainer;
+    cResult[4] = tmp7;
+    cResult[5] = items3;
+    tmp9 = items3;
+  }
+  const tmpResult4 = shared;
+  const tmp8 = tmpResult4.isThemeDark(tmp5) && tmp6.earningMetricsShadowContainerDarkMode;
+  cResult[0] = tmp6.earningMetricsShadowContainerDarkMode;
+  cResult[1] = tmp5;
+  cResult[2] = tmp8;
+  tmp7 = tmp8;
+}) : (() => {
+  let intl;
+  let intl2;
+  let items3;
+  let obj3;
   const tmp3 = useThemeDefault();
   const tmp4 = closure_7();
   const items = [tmp4.earningMetricsShadowContainer, ];
-  const obj2 = { style: items, children: null };
-  items[1] = shared.isThemeDark(tmp3) && tmp4.earningMetricsShadowContainerDarkMode;
+  const obj = shared;
+  const obj2 = { style: items, children: metroRequire(View, obj3) };
+  items[1] = obj.isThemeDark(tmp3) && tmp4.earningMetricsShadowContainerDarkMode;
   const items1 = [, , ];
   ({ earningMetrics: arr2[0], horizontalContainer: arr2[1] } = tmp4);
-  const tmp8 = shared.isThemeDark(tmp3) && tmp4.earningMetricsShadowContainerDarkMode;
-  const obj3 = { style: null, children: null };
-  items1[2] = shared.isThemeDark(tmp3) ? tmp4.earningMetricsDarkMode : tmp4.earningMetricsLightMode;
-  obj3.style = items1;
-  const obj4 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: null };
-  const intl = tmp7(1115).intl;
-  obj4.children = intl.string(util.t.TXPK7B);
-  const items2 = [hasOwnProperty(Text_Text.Text, obj4), ];
+  obj.isThemeDark(tmp3) && tmp4.earningMetricsShadowContainerDarkMode;
+  obj3 = { style: items1, children: items3 };
   const tmp7Result = shared;
-  const obj5 = { children: null };
-  const obj6 = { style: shared.isThemeDark(tmp3) ? tmp4.greenTextDarkMode : tmp4.greenTextLightMode, variant: "heading-lg/extrabold", children: null };
-  const intl2 = tmp7(1115).intl;
-  obj6.children = intl2.string(util.t.LdjJG5);
-  items2[1] = hasOwnProperty(Text_Text.Text, obj6);
-  obj5.children = items2;
-  const items3 = [timestampProducer(View, obj5), ];
-  const obj7 = { style: tmp4.earningMetricsAvatar, source: null };
+  items1[2] = tmp7Result.isThemeDark(tmp3) ? tmp4.earningMetricsDarkMode : tmp4.earningMetricsLightMode;
+  const obj4 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: intl.string(intl3.t.TXPK7B) };
+  const Text = tmp7(4886).Text;
+  intl = tmp7(1126).intl;
+  const items2 = [hasOwnProperty(Text, obj4), ];
+  const Text2 = tmp7(4886).Text;
+  const obj5 = { children: items2 };
   const tmp7Result2 = shared;
-  obj7.source = _modDef17786;
-  items3[1] = hasOwnProperty(FastImageDefault, obj7);
-  obj3.children = items3;
-  obj2.children = timestampProducer(View, obj3);
+  const obj6 = { style: tmp7Result2.isThemeDark(tmp3) ? tmp4.greenTextDarkMode : tmp4.greenTextLightMode, variant: "heading-lg/extrabold", children: intl2.string(intl3.t.LdjJG5) };
+  intl2 = tmp7(1126).intl;
+  items2[1] = hasOwnProperty(Text2, obj6);
+  items3 = [metroRequire(View, obj5), ];
+  const obj7 = { style: tmp4.earningMetricsAvatar, source: AssetRegistryDefault };
+  const tmpResult = FastImageDefault;
+  items3[1] = hasOwnProperty(tmpResult, obj7);
   return hasOwnProperty(View, obj2);
-}
-function ConsistentEarningBenefit() {
-  const tmp4 = closure_7();
-  const obj = { style: tmp4.benefitCard, children: null };
-  const obj2 = { style: tmp4.benefitCardTitle, variant: "heading-md/medium", color: "text-default", children: null };
-  const intl = util.intl;
-  obj2.children = intl.string(util.t["9CdmS8"]);
-  const items = [hasOwnProperty(Text_Text.Text, obj2), hasOwnProperty(EarningPreview, {}), ];
-  const obj3 = { style: null, children: null };
-  const items1 = [, ];
-  ({ horizontalContainer: arr2[0], benefitAvatars: arr2[1] } = tmp4);
-  obj3.style = items1;
-  const tmp3 = useThemeDefault();
-  if (obj4.isThemeDark(tmp3)) {
-    let tmpResult = tmp(17787);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let benefitCard;
+  let benefitCardTitle;
+  let first;
+  let items;
+  let items1;
+  let tmp12;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(18);
+  const tmp5 = useThemeDefault();
+  const tmp6 = closure_7();
+  ({ benefitCard, benefitCardTitle } = tmp6);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(intl3.t["9CdmS8"]);
+    cResult[0] = stringResult;
+    first = stringResult;
   } else {
-    tmpResult = tmp(17788);
+    first = cResult[0];
   }
-  const items2 = [hasOwnProperty(BenefitAvatar, { avatarSource: tmpResult }), , ];
-  obj4 = shared;
-  items2[1] = hasOwnProperty(BenefitAvatar, { avatarSource: _modDef17789 });
-  const obj5 = { avatarSource: _modDef17789 };
-  items2[2] = hasOwnProperty(BenefitAvatar, { avatarSource: _modDef17790 });
-  obj3.children = items2;
-  items[2] = timestampProducer(View, obj3);
-  obj.children = items;
-  return timestampProducer(View, obj);
-}
-function FollowerAwardBenefit() {
-  const tmp = closure_7();
-  const obj = { style: tmp.benefitCard, children: null };
-  const obj2 = { style: tmp.benefitCardTitle, variant: "heading-md/medium", color: "text-default", children: null };
-  const intl = util.intl;
-  obj2.children = intl.string(util.t.qsKRUQ);
-  const items = [hasOwnProperty(Text_Text.Text, obj2), , ];
-  const obj3 = { style: tmp.socialIllo, source: _modDef17791 };
-  items[1] = hasOwnProperty(FastImageDefault, obj3);
-  const obj4 = { style: tmp.lanyardIllo, source: null };
-  obj4.source = _modDef17792;
-  items[2] = hasOwnProperty(FastImageDefault, obj4);
-  obj.children = items;
-  return timestampProducer(View, obj);
-}
-function RevenueShareBenefit() {
-  const tmp4 = closure_7();
-  const obj = { style: null, children: null };
-  const items = [, ];
-  ({ benefitCard: arr[0], revenueShareContainer: arr[1] } = tmp4);
-  obj.style = items;
-  const items1 = [tmp4.revenueShare, ];
+  if (cResult[1] !== tmp6.benefitCardTitle) {
+    const obj2 = { style: benefitCardTitle, variant: "heading-md/medium", color: "text-default", children: first };
+    const tmp11 = hasOwnProperty(Text_Text.Text, obj2);
+    cResult[1] = tmp6.benefitCardTitle;
+    cResult[2] = tmp11;
+    tmp9 = tmp11;
+  } else {
+    tmp9 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp15 = hasOwnProperty(closure_8, {});
+    cResult[3] = tmp15;
+    tmp12 = tmp15;
+  } else {
+    tmp12 = cResult[3];
+  }
+  if (cResult[4] === tmp6.benefitAvatars) {
+    let tmp16;
+    let tmp4Result;
+    let tmp18;
+    let tmp23;
+    let tmp22;
+    if (cResult[5] === tmp6.horizontalContainer) {
+      tmp16 = cResult[6];
+    }
+    const tmpResult = shared;
+    if (tmpResult.isThemeDark(tmp5)) {
+      tmp4Result = tmp4(17873);
+    } else {
+      tmp4Result = tmp4(17874);
+    }
+    if (cResult[7] !== tmp4Result) {
+      const obj3 = { avatarSource: tmp4Result };
+      const tmp21 = hasOwnProperty(closure_12, obj3);
+      cResult[7] = tmp4Result;
+      cResult[8] = tmp21;
+      tmp18 = tmp21;
+    } else {
+      tmp18 = cResult[8];
+    }
+    const _Symbol = Symbol;
+    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj4 = { avatarSource: AssetRegistryDefault2 };
+      const tmp26 = hasOwnProperty(closure_12, obj4);
+      const obj5 = { avatarSource: AssetRegistryDefault3 };
+      const tmp27 = hasOwnProperty(closure_12, obj5);
+      cResult[9] = tmp26;
+      cResult[10] = tmp27;
+      tmp23 = tmp27;
+      tmp22 = tmp26;
+    } else {
+      tmp22 = cResult[9];
+      tmp23 = cResult[10];
+    }
+    if (cResult[11] === tmp16) {
+      let tmp28;
+      if (cResult[12] === tmp18) {
+        tmp28 = cResult[13];
+      }
+      if (cResult[14] === tmp6.benefitCard) {
+        if (cResult[15] === tmp28) {
+          let tmp32;
+          if (cResult[16] === tmp9) {
+            tmp32 = cResult[17];
+          }
+          return tmp32;
+        }
+      }
+      const obj6 = { style: benefitCard, children: items };
+      items = [tmp9, tmp12, tmp28];
+      const tmp35 = metroRequire(View, obj6);
+      cResult[14] = tmp6.benefitCard;
+      cResult[15] = tmp28;
+      cResult[16] = tmp9;
+      cResult[17] = tmp35;
+      tmp32 = tmp35;
+    }
+    const obj7 = { style: tmp16, children: items1 };
+    items1 = [tmp18, tmp22, tmp23];
+    const tmp31 = metroRequire(View, obj7);
+    cResult[11] = tmp16;
+    cResult[12] = tmp18;
+    cResult[13] = tmp31;
+    tmp28 = tmp31;
+  }
+  const items2 = [, ];
+  ({ horizontalContainer: arr[0], benefitAvatars: arr[1] } = tmp6);
+  cResult[4] = tmp6.benefitAvatars;
+  cResult[5] = tmp6.horizontalContainer;
+  cResult[6] = items2;
+  tmp16 = items2;
+}) : (() => {
+  let intl;
+  let items;
+  let items1;
+  let items2;
+  let tmpResult;
   const tmp3 = useThemeDefault();
-  const tmp5 = timestampProducer;
-  const tmp6 = View;
-  const obj3 = { style: null, variant: "heading-xxl/extrabold", color: "status-positive", children: null };
-  items1[1] = shared.isThemeDark(tmp3) ? tmp4.greenTextDarkMode : tmp4.greenTextLightMode;
-  obj3.style = items1;
-  obj3.children = `${closure_4}%`;
-  const items2 = [hasOwnProperty(Text_Text.Text, obj3), , ];
-  const obj4 = { style: tmp4.revenueShareDescription, variant: "heading-md/medium", color: "text-default", children: null };
-  const intl = tmp8(1115).intl;
-  obj4.children = intl.string(util.t.AewsXD);
-  items2[1] = hasOwnProperty(Text_Text.Text, obj4);
-  const obj5 = { style: tmp4.revenueShareIllo, source: null };
-  obj5.source = _modDef17793;
-  items2[2] = hasOwnProperty(FastImageDefault, obj5);
-  obj.children = items2;
-  return tmp5(tmp6, obj);
-}
-function BenefitAvatar(avatarSource) {
+  const tmp4 = closure_7();
+  const obj = { style: tmp4.benefitCard, children: items };
+  const obj2 = { style: tmp4.benefitCardTitle, variant: "heading-md/medium", color: "text-default", children: intl.string(intl3.t["9CdmS8"]) };
+  const Text = Text_Text.Text;
+  intl = intl3.intl;
+  items = [hasOwnProperty(Text, obj2), hasOwnProperty(closure_8, {}), ];
+  const obj3 = { style: items1, children: items2 };
+  items1 = [, ];
+  ({ horizontalContainer: arr2[0], benefitAvatars: arr2[1] } = tmp4);
+  const obj4 = shared;
+  if (obj4.isThemeDark(tmp3)) {
+    tmpResult = tmp(17873);
+  } else {
+    tmpResult = tmp(17874);
+  }
+  items2 = [hasOwnProperty(closure_12, { avatarSource: tmpResult }), , ];
+  const obj5 = { avatarSource: AssetRegistryDefault2 };
+  items2[1] = hasOwnProperty(closure_12, obj5);
+  const obj6 = { avatarSource: AssetRegistryDefault3 };
+  items2[2] = hasOwnProperty(closure_12, obj6);
+  items[2] = metroRequire(View, obj3);
+  return metroRequire(View, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let benefitCard;
+  let benefitCardTitle;
+  let first;
+  let items;
+  let tmp10;
+  let tmp15;
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(12);
+  const tmp4 = closure_7();
+  ({ benefitCard, benefitCardTitle } = tmp4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(intl3.t.qsKRUQ);
+    cResult[0] = stringResult;
+    first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== tmp4.benefitCardTitle) {
+    const obj2 = { style: benefitCardTitle, variant: "heading-md/medium", color: "text-default", children: first };
+    const tmp9 = hasOwnProperty(Text_Text.Text, obj2);
+    cResult[1] = tmp4.benefitCardTitle;
+    cResult[2] = tmp9;
+    tmp7 = tmp9;
+  } else {
+    tmp7 = cResult[2];
+  }
+  if (cResult[3] !== tmp4.socialIllo) {
+    const obj3 = { style: tmp4.socialIllo, source: AssetRegistryDefault4 };
+    const tmp13 = FastImageDefault;
+    const tmp14 = hasOwnProperty(tmp13, obj3);
+    cResult[3] = tmp4.socialIllo;
+    cResult[4] = tmp14;
+    tmp10 = tmp14;
+  } else {
+    tmp10 = cResult[4];
+  }
+  if (cResult[5] !== tmp4.lanyardIllo) {
+    const obj4 = { style: tmp4.lanyardIllo, source: AssetRegistryDefault5 };
+    const tmp18 = FastImageDefault;
+    const tmp19 = hasOwnProperty(tmp18, obj4);
+    cResult[5] = tmp4.lanyardIllo;
+    cResult[6] = tmp19;
+    tmp15 = tmp19;
+  } else {
+    tmp15 = cResult[6];
+  }
+  if (cResult[7] === tmp4.benefitCard) {
+    if (cResult[8] === tmp7) {
+      if (cResult[9] === tmp10) {
+        let tmp20;
+        if (cResult[10] === tmp15) {
+          tmp20 = cResult[11];
+        }
+        return tmp20;
+      }
+    }
+  }
+  const obj5 = { style: benefitCard, children: items };
+  items = [tmp7, tmp10, tmp15];
+  const tmp21 = metroRequire(View, obj5);
+  cResult[7] = tmp4.benefitCard;
+  cResult[8] = tmp7;
+  cResult[9] = tmp10;
+  cResult[10] = tmp15;
+  cResult[11] = tmp21;
+  tmp20 = tmp21;
+}) : (() => {
+  let intl;
+  let items;
   const tmp = closure_7();
-  const obj = { style: tmp.benefitAvatarContainer, children: hasOwnProperty(FastImageDefault, { source: avatarSource.avatarSource, style: tmp.benefitAvatar }) };
+  const obj = { style: tmp.benefitCard, children: items };
+  const obj2 = { style: tmp.benefitCardTitle, variant: "heading-md/medium", color: "text-default", children: intl.string(intl3.t.qsKRUQ) };
+  const Text = Text_Text.Text;
+  intl = intl3.intl;
+  items = [hasOwnProperty(Text, obj2), , ];
+  const obj3 = { style: tmp.socialIllo, source: AssetRegistryDefault4 };
+  const tmp2 = FastImageDefault;
+  items[1] = hasOwnProperty(tmp2, obj3);
+  const obj4 = { style: tmp.lanyardIllo, source: AssetRegistryDefault5 };
+  const tmp3 = FastImageDefault;
+  items[2] = hasOwnProperty(tmp3, obj4);
+  return metroRequire(View, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let items;
+  let items1;
+  const obj = react2;
+  const cResult = obj.c(19);
+  const tmp5 = useThemeDefault();
+  const tmp6 = closure_7();
+  if (cResult[0] === tmp6.benefitCard) {
+    let tmp7;
+    if (cResult[1] === tmp6.revenueShareContainer) {
+      tmp7 = cResult[2];
+    }
+    if (cResult[3] === tmp6) {
+      let tmp9;
+      if (cResult[4] === tmp5) {
+        tmp9 = cResult[5];
+      }
+      if (cResult[6] === tmp6.revenueShare) {
+        let tmp11;
+        let tmp16;
+        let tmp18;
+        let tmp21;
+        if (cResult[7] === tmp9) {
+          tmp11 = cResult[8];
+        }
+        const _Symbol = Symbol;
+        const revenueShareDescription = tmp6.revenueShareDescription;
+        if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+          const intl = tmp(1126).intl;
+          const stringResult = intl.string(intl3.t.AewsXD);
+          cResult[9] = stringResult;
+          tmp16 = stringResult;
+        } else {
+          tmp16 = cResult[9];
+        }
+        if (cResult[10] !== tmp6.revenueShareDescription) {
+          const obj2 = { style: revenueShareDescription, variant: "heading-md/medium", color: "text-default", children: tmp16 };
+          const tmp20 = hasOwnProperty(Text_Text.Text, obj2);
+          cResult[10] = tmp6.revenueShareDescription;
+          cResult[11] = tmp20;
+          tmp18 = tmp20;
+        } else {
+          tmp18 = cResult[11];
+        }
+        if (cResult[12] !== tmp6.revenueShareIllo) {
+          const obj3 = { style: tmp6.revenueShareIllo, source: AssetRegistryDefault6 };
+          const tmp4Result = FastImageDefault;
+          const tmp24 = hasOwnProperty(tmp4Result, obj3);
+          cResult[12] = tmp6.revenueShareIllo;
+          cResult[13] = tmp24;
+          tmp21 = tmp24;
+        } else {
+          tmp21 = cResult[13];
+        }
+        if (cResult[14] === tmp7) {
+          if (cResult[15] === tmp11) {
+            if (cResult[16] === tmp18) {
+              let tmp25;
+              if (cResult[17] === tmp21) {
+                tmp25 = cResult[18];
+              }
+              return tmp25;
+            }
+          }
+        }
+        const obj4 = { style: tmp7, children: items };
+        items = [tmp11, tmp18, tmp21];
+        const tmp28 = metroRequire(View, obj4);
+        cResult[14] = tmp7;
+        cResult[15] = tmp11;
+        cResult[16] = tmp18;
+        cResult[17] = tmp21;
+        cResult[18] = tmp28;
+        tmp25 = tmp28;
+      }
+      const obj5 = { style: items1, variant: "heading-xxl/extrabold", color: "status-positive", children: `${closure_4}%` };
+      items1 = [tmp8, tmp9];
+      const tmp14 = hasOwnProperty(Text_Text.Text, obj5);
+      cResult[6] = tmp6.revenueShare;
+      cResult[7] = tmp9;
+      cResult[8] = tmp14;
+      tmp11 = tmp14;
+    }
+    const tmpResult = shared;
+    const tmp10 = tmpResult.isThemeDark(tmp5) ? tmp6.greenTextDarkMode : tmp6.greenTextLightMode;
+    cResult[3] = tmp6;
+    cResult[4] = tmp5;
+    cResult[5] = tmp10;
+    tmp9 = tmp10;
+  }
+  const items2 = [, ];
+  ({ benefitCard: arr[0], revenueShareContainer: arr[1] } = tmp6);
+  cResult[0] = tmp6.benefitCard;
+  cResult[1] = tmp6.revenueShareContainer;
+  cResult[2] = items2;
+  tmp7 = items2;
+}) : (() => {
+  let intl;
+  let items;
+  let items2;
+  const tmp3 = useThemeDefault();
+  const tmp4 = closure_7();
+  const obj = { style: items, children: items2 };
+  items = [, ];
+  ({ benefitCard: arr[0], revenueShareContainer: arr[1] } = tmp4);
+  const items1 = [tmp4.revenueShare, ];
+  const Text = Text_Text.Text;
+  const obj3 = { style: items1, variant: "heading-xxl/extrabold", color: "status-positive", children: `${closure_4}%` };
+  const obj2 = shared;
+  items1[1] = obj2.isThemeDark(tmp3) ? tmp4.greenTextDarkMode : tmp4.greenTextLightMode;
+  items2 = [hasOwnProperty(Text, obj3), , ];
+  const obj4 = { style: tmp4.revenueShareDescription, variant: "heading-md/medium", color: "text-default", children: intl.string(intl3.t.AewsXD) };
+  const Text2 = tmp8(4886).Text;
+  intl = tmp8(1126).intl;
+  items2[1] = hasOwnProperty(Text2, obj4);
+  const obj5 = { style: tmp4.revenueShareIllo, source: AssetRegistryDefault6 };
+  const tmpResult = FastImageDefault;
+  items2[2] = hasOwnProperty(tmpResult, obj5);
+  return metroRequire(View, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((avatarSource) => {
+  const obj = react2;
+  const cResult = obj.c(6);
+  avatarSource = avatarSource.avatarSource;
+  const tmp3 = closure_7();
+  if (cResult[0] === avatarSource) {
+    let tmp4;
+    if (cResult[1] === tmp3.benefitAvatar) {
+      tmp4 = cResult[2];
+    }
+    if (cResult[3] === tmp3.benefitAvatarContainer) {
+      let tmp6;
+      if (cResult[4] === tmp4) {
+        tmp6 = cResult[5];
+      }
+      return tmp6;
+    }
+    const obj2 = { style: tmp3.benefitAvatarContainer, children: tmp4 };
+    const tmp9 = hasOwnProperty(View, obj2);
+    cResult[3] = tmp3.benefitAvatarContainer;
+    cResult[4] = tmp4;
+    cResult[5] = tmp9;
+    tmp6 = tmp9;
+  }
+  const obj3 = { source: avatarSource, style: tmp3.benefitAvatar };
+  const tmp5 = hasOwnProperty(FastImageDefault, obj3);
+  cResult[0] = avatarSource;
+  cResult[1] = tmp3.benefitAvatar;
+  cResult[2] = tmp5;
+  tmp4 = tmp5;
+}) : ((avatarSource) => {
+  let obj2;
+  avatarSource = avatarSource.avatarSource;
+  const tmp = closure_7();
+  const obj = { style: tmp.benefitAvatarContainer, children: hasOwnProperty(FastImageDefault, obj2) };
+  obj2 = { source: avatarSource, style: tmp.benefitAvatar };
   return hasOwnProperty(View, obj);
-}
-const View = fn(17).View;
-let closure_4 = fn(14962).CREATOR_REVENUE_SHARE_PERCENTAGE;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4845);
-let obj2 = { horizontalContainer: { flex: 1, flexDirection: "row" }, benefitAvatarContainer: { padding: 20, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.sm, overflow: "hidden" }, benefitCard: null, benefitAvatar: null, benefitAvatars: null, benefitCardTitle: null, earningMetricsShadowContainer: null, earningMetricsShadowContainerDarkMode: null, earningMetrics: null, earningMetricsDarkMode: null, earningMetricsLightMode: null, greenTextDarkMode: null, greenTextLightMode: null, earningMetricsAvatar: null, socialIllo: null, lanyardIllo: null, revenueShare: null, revenueShareContainer: null, revenueShareIllo: null, revenueShareDescription: null };
-let obj3 = { padding: 20, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
-obj2.benefitCard = { marginVertical: 6, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm };
-obj2.benefitAvatar = { width: 40, height: 40, marginHorizontal: 8, borderRadius: 20, overflow: "hidden" };
-obj2.benefitAvatars = { marginHorizontal: 24, marginBottom: 24, justifyContent: "space-between" };
-obj2.benefitCardTitle = { marginStart: 24, marginEnd: 35, marginVertical: 24 };
-let obj4 = { marginVertical: 6, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm };
-obj2.earningMetricsShadowContainer = { shadowColor: nativeDefault.colors.BLACK, shadowOffset: { width: 0, height: 8 }, shadowOpacity: 0.16, shadowRadius: 16, elevation: 4 };
-obj2.earningMetricsShadowContainerDarkMode = { shadowOpacity: 0.24 };
-let obj5 = { shadowColor: nativeDefault.colors.BLACK, shadowOffset: { width: 0, height: 8 }, shadowOpacity: 0.16, shadowRadius: 16, elevation: 4 };
-obj2.earningMetrics = { marginHorizontal: 24, marginBottom: 24, padding: 16, justifyContent: "space-between", alignItems: "center", borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
-obj2.earningMetricsDarkMode = { backgroundColor: "#2E3638" };
-let obj6 = { marginHorizontal: 24, marginBottom: 24, padding: 16, justifyContent: "space-between", alignItems: "center", borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
-obj2.earningMetricsLightMode = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-let obj7 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj2.greenTextDarkMode = { color: nativeDefault.unsafe_rawColors.GREEN_230 };
-const obj8 = { color: nativeDefault.unsafe_rawColors.GREEN_230 };
-obj2.greenTextLightMode = { color: nativeDefault.unsafe_rawColors.GREEN_400 };
-obj2.earningMetricsAvatar = { width: 54, height: 54, borderRadius: 27, overflow: "hidden" };
-obj2.socialIllo = { marginTop: 50, marginStart: 16 };
-obj2.lanyardIllo = { position: "absolute", bottom: 25, end: 0 };
-obj2.revenueShare = { fontSize: 50, lineHeight: 52 };
-obj2.revenueShareContainer = { padding: 24 };
-obj2.revenueShareIllo = { marginTop: 15, alignSelf: "flex-end" };
-obj2.revenueShareDescription = { marginEnd: 120 };
-let closure_7 = createStyles.createStyles(obj2);
-const size = fn(2);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let items;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { children: items };
+    items = [hasOwnProperty(closure_9, {}), hasOwnProperty(closure_10, {}), hasOwnProperty(closure_11, {})];
+    const tmp9 = metroRequire(View, obj2);
+    cResult[0] = tmp9;
+    first = tmp9;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => {
+  let items;
+  const obj = { children: items };
+  items = [hasOwnProperty(closure_9, {}), hasOwnProperty(closure_10, {}), hasOwnProperty(closure_11, {})];
+  return metroRequire(View, obj);
+});
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/welcome/CreatorBenefitsSection.tsx");
 
-export default function CreatorBenefitsSection() {
-  const obj = { children: null };
-  const items = [hasOwnProperty(ConsistentEarningBenefit, {}), hasOwnProperty(FollowerAwardBenefit, {}), hasOwnProperty(RevenueShareBenefit, {})];
-  obj.children = items;
-  return timestampProducer(View, obj);
-};
+export default tmp5;

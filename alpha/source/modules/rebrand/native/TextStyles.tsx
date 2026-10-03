@@ -1,11 +1,11 @@
-// Module ID: 6022
-// Function ID: 6023
+// Module ID: 5915
+// Function ID: 5916
 // Name: TextStyles
-// Dependencies: [1074, 2]
+// Dependencies: [1085, 2]
 // Exports: default
 
-// Module 6022 (TextStyles)
-import Constants from "Constants" /* 1074 */;
+// Module 5915 (TextStyles)
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const Fonts = Constants.Fonts;
@@ -27,7 +27,6 @@ export default function createTextStyle(fontFamily, color, arg2, uppercase) {
     let tmp3 = tmp <= 14;
     if (tmp3) {
       tmp3 = fontFamily === Fonts.DISPLAY_EXTRABOLD || fontFamily === Fonts.DISPLAY_SEMIBOLD;
-      const tmp4 = fontFamily === Fonts.DISPLAY_EXTRABOLD || fontFamily === Fonts.DISPLAY_SEMIBOLD;
     }
     if (tmp3) {
       obj.letterSpacing = 0.2;

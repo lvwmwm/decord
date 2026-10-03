@@ -1,12 +1,12 @@
-// Module ID: 11506
-// Function ID: 11507
+// Module ID: 11425
+// Function ID: 11426
 // Name: PremiumGiftingIntentUtils
-// Dependencies: [1374, 1074, 2]
+// Dependencies: [1379, 1085, 2]
 // Exports: getGiftIntentTypeForLocation, getPremiumGiftingIntentAnalyticsLocation, parseGiftIntentType
 
-// Module 11506 (PremiumGiftingIntentUtils)
-import Constants from "Constants" /* 1074 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
+// Module 11425 (PremiumGiftingIntentUtils)
+import Constants from "Constants" /* 1085 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
 import size from "module_2" /* 2 */;
 
 const GiftIntentType = PremiumConstants.GiftIntentType;
@@ -21,17 +21,18 @@ const map = new Map(items1);
 const result = size.fileFinishedImporting("modules/premium/gifting/utils/PremiumGiftingIntentUtils.tsx");
 
 export const getPremiumGiftingIntentAnalyticsLocation = function getPremiumGiftingIntentAnalyticsLocation(arg0) {
+  let obj;
   if (arg0 === GiftIntentType.FRIEND_ANNIVERSARY) {
-    ({ FRIEND_ANNIVERSARIES_CHAT: obj2.chat, FRIEND_ANNIVERSARIES_ACTION_BUTTON: obj2.actionButton, FRIEND_ANNIVERSARIES_ACTION_BUTTON_COACHMARK: obj2.actionButtonCoachmark } = AnalyticsLocations);
-    let obj = { chat: null, actionButton: null, actionButtonCoachmark: null };
     const obj3 = { chat: null, actionButton: null, actionButtonCoachmark: null };
+    ({ FRIEND_ANNIVERSARIES_CHAT: obj2.chat, FRIEND_ANNIVERSARIES_ACTION_BUTTON: obj2.actionButton, FRIEND_ANNIVERSARIES_ACTION_BUTTON_COACHMARK: obj2.actionButtonCoachmark } = AnalyticsLocations);
+    obj = obj3;
   } else {
     obj = {};
   }
   return obj;
 };
 export const getGiftIntentTypeForLocation = function getGiftIntentTypeForLocation(arg0) {
-  value = map.get(arg0);
+  let value = map.get(arg0);
   if (value == null) {
     value = null;
   }

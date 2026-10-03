@@ -1,49 +1,55 @@
-// Module ID: 17528
-// Function ID: 17529
+// Module ID: 17617
+// Function ID: 17618
 // Name: UserOfferManager
-// Dependencies: [1372, 7058, 1085, 6725, 8857, 1970, 7689, 2]
+// Dependencies: [1377, 6959, 1096, 6613, 8870, 1976, 7733, 2]
 
-// Module 17528 (UserOfferManager)
-import UserStore from "UserStore" /* 1372 */;
-import UserOfferStore from "UserOfferStore" /* 7058 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
+// Module 17617 (UserOfferManager)
+import Constants from "Constants" /* 1096 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1976 */;
+import UserOfferActionCreators from "UserOfferActionCreators" /* 7733 */;
+import ACOMExperiments from "ACOMExperiments" /* 8870 */;
+import UserStore from "UserStore" /* 1377 */;
+import UserOfferStore from "UserOfferStore" /* 6959 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
+import size from "module_2" /* 2 */;
 
-let require = fn;
-const PaymentGateways = fn(1085).PaymentGateways;
-const prototype = function UserOfferManager() {
-  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  require = applyArgumentsResult;
-  applyArgumentsResult.actions = {
-    POST_CONNECTION_OPEN() {
-      return applyArgumentsResult.handlePostConnectionOpen();
-    }
-  };
-  applyArgumentsResult.handlePostConnectionOpen = function handlePostConnectionOpen() {
-    currentUser = currentUser.getCurrentUser();
-    const NitroACOMSubscriptionExperiment = applyArgumentsResult(dependencyMap[4]).NitroACOMSubscriptionExperiment;
-    if (NitroACOMSubscriptionExperiment.getConfig({ location: "UserOfferManager.handlePostConnectionOpen" }).enabled) {
-      const obj = { offerId: "Array", paymentGatewayOverride: constants.APPLE_ADVANCED_COMMERCE };
-      const tmp4 = obj;
-    }
-    let isPremiumResult = null == currentUser || !currentUser.verified;
-    if (!isPremiumResult) {
-      isPremiumResult = tmp2(tmp3[5]).isPremium(currentUser);
-      const tmp2Result = tmp2(tmp3[5]);
-    }
-    if (!isPremiumResult) {
-      isPremiumResult = fetchingOffer.isFetchingOffer();
-    }
-    if (!isPremiumResult) {
-      const userOffer = tmp2(tmp3[6]).fetchUserOffer("MobilePremiumOfferManager", true, tmp4);
-      const tmp2Result2 = tmp2(tmp3[6]);
-    }
-  };
-  return applyArgumentsResult;
-}.prototype;
-class prototype extends tmp2 {
+let currentUser;
+
+const PaymentGateways = Constants.PaymentGateways;
+class UserOfferManager extends AutomaticLifecycleManager {
+  constructor() {
+    let fetchingOffer;
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    require = applyArgumentsResult;
+    applyArgumentsResult.actions = {
+      POST_CONNECTION_OPEN() {
+        return require.handlePostConnectionOpen();
+      }
+    };
+    applyArgumentsResult.handlePostConnectionOpen = function handlePostConnectionOpen() {
+      let tmp4;
+      currentUser = currentUser.getCurrentUser();
+      const NitroACOMSubscriptionExperiment = ACOMExperiments.NitroACOMSubscriptionExperiment;
+      if (NitroACOMSubscriptionExperiment.getConfig({ location: "UserOfferManager.handlePostConnectionOpen" }).enabled) {
+        tmp4 = { offerId: "Array", paymentGatewayOverride: constants.APPLE_ADVANCED_COMMERCE };
+      }
+      let isPremiumResult = null == currentUser || !currentUser.verified;
+      if (!isPremiumResult) {
+        const tmp2Result = PremiumTypeUtils;
+        isPremiumResult = tmp2Result.isPremium(currentUser);
+      }
+      if (!isPremiumResult) {
+        isPremiumResult = fetchingOffer.isFetchingOffer();
+      }
+      if (!isPremiumResult) {
+        const tmp2Result2 = UserOfferActionCreators;
+        const userOffer = tmp2Result2.fetchUserOffer("MobilePremiumOfferManager", true, tmp4);
+      }
+    };
+    return applyArgumentsResult;
+  }
 }
-const prototype1 = new prototype();
-const size = fn(2);
+const userOfferManager = new UserOfferManager();
 const result = size.fileFinishedImporting("modules/premium/native/UserOfferManager.tsx");
 
-export default prototype1;
+export default userOfferManager;

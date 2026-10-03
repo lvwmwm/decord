@@ -1,13 +1,14 @@
-// Module ID: 6055
-// Function ID: 6056
+// Module ID: 5948
+// Function ID: 5949
 // Name: PostConnectionCallbackStore
-// Dependencies: [6056, 5775, 573, 2]
+// Dependencies: [5949, 5436, 584, 2]
 // Exports: addPostConnectionCallback
 
-// Module 6055 (PostConnectionCallbackStore)
-import NewUserStore from "NewUserStore" /* 6056 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5775 */;
-import Dispatcher_mod from "Dispatcher" /* 573 */;
+// Module 5948 (PostConnectionCallbackStore)
+import NewUserStore from "NewUserStore" /* 5949 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
+import Dispatcher_mod from "Dispatcher" /* 584 */;
+import size from "module_2" /* 2 */;
 
 function processCallbacks() {
   if (null == NewUserStore.getType()) {
@@ -20,17 +21,16 @@ function processCallbacks() {
 let closure_2 = [];
 let Dispatcher = Dispatcher_mod;
 const subscription = Dispatcher.subscribe("CONNECTION_OPEN", processCallbacks);
-let Dispatcher = Dispatcher_mod;
+Dispatcher = Dispatcher_mod;
 const subscription1 = Dispatcher.subscribe("CONNECTION_RESUMED", processCallbacks);
-let Dispatcher = Dispatcher_mod;
+Dispatcher = Dispatcher_mod;
 const subscription2 = Dispatcher.subscribe("NUF_COMPLETE", processCallbacks);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/gateway/PostConnectionCallbackStore.tsx");
 
 export const addPostConnectionCallback = function addPostConnectionCallback(arg0) {
   if (GatewayConnectionStore.isConnectedOrOverlay()) {
     if (null == NewUserStore.getType()) {
-      closure_0 = arg0;
+      let closure_0 = arg0;
       const _setImmediate = setImmediate;
       setImmediate(() => item());
     }

@@ -1,94 +1,169 @@
-// Module ID: 4560
-// Function ID: 4561
+// Module ID: 4580
+// Function ID: 4581
 // Name: useToken
-// Dependencies: [576, 4561, 12, 4569, 2]
+// Dependencies: [587, 4581, 12, 558, 576, 4589, 2]
 // Exports: useToken
 
-// Module 4560 (useToken)
+// Module 4580 (useToken)
 import _modDef12 from "module_12" /* 12 */;
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4569 */;
+import react from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import SemanticColorContext from "SemanticColorContext" /* 4581 */;
+import native from "native" /* 4589 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const SemanticColorContext = obj(4561);
-require = fn;
-const map = new Map();
-const keys = Object.keys(nativeDefault.colors);
-let closure_4 = Object.fromEntries(keys.map((item) => {
-  const items = [_modDef12.kebabCase(item), item];
-  return items;
-}));
-const size = fn(2);
-let result = size.fileFinishedImporting("design/tokens/native/useToken.tsx");
-
-export const useToken = function useToken(BACKGROUND_BASE_LOW, DARK) {
-  let theme = DARK;
-  let obj = require;
-  let result = dependencyMap;
-  const themeContext = native.useThemeContext();
-  let tmp3 = null;
-  if (DARK == null) {
-    theme = themeContext.theme;
+function getCachedTokenColor(BACKGROUND_BASE_LOW, themeContext, theme) {
+  const internal = nativeDefault.internal;
+  let semanticColorName = BACKGROUND_BASE_LOW;
+  if (internal.isSemanticColor(BACKGROUND_BASE_LOW)) {
+    const internal2 = tmp(587).internal;
+    semanticColorName = internal2.getSemanticColorName(BACKGROUND_BASE_LOW);
   }
-  if (tmp3 == BACKGROUND_BASE_LOW) {
-    return BACKGROUND_BASE_LOW;
-  } else {
-    if (typeof BACKGROUND_BASE_LOW === "object") {
-      if (tmp3 !== BACKGROUND_BASE_LOW) {
-        if ("resolve" in BACKGROUND_BASE_LOW) {
-          const internal = nativeDefault.internal;
-          if (!internal.isSemanticColor(BACKGROUND_BASE_LOW)) {
-            let enabledExperiments = themeContext.enabledExperiments;
-            if (enabledExperiments == tmp3) {
-              enabledExperiments = [];
-            }
-            const obj3 = { enabledExperiments, density: null };
-            let str2 = themeContext.density;
-            if (str2 == tmp3) {
-              str2 = "compact";
-            }
-            obj3.density = str2;
-            let resolveResult = BACKGROUND_BASE_LOW.resolve(obj3);
-          }
-        }
-      }
-    }
-    const internal2 = nativeDefault.internal;
-    let semanticColorName = BACKGROUND_BASE_LOW;
-    if (internal2.isSemanticColor(BACKGROUND_BASE_LOW)) {
-      const internal3 = tmp6(576).internal;
-      semanticColorName = internal3.getSemanticColorName(BACKGROUND_BASE_LOW);
-    }
-    const _HermesInternal = HermesInternal;
-    const combined = "" + semanticColorName + "-" + themeContext.key + "-" + theme;
-    value = map.get(combined);
-    let semanticColor = value;
-    if (tmp3 != value) {
-      tmp3 = tmp3 != semanticColor;
-      if (tmp3) {
-        result = obj4.set(combined, semanticColor);
-        let tmp14 = semanticColor;
-      }
-    } else if (typeof BACKGROUND_BASE_LOW === "string") {
-      tmp14 = BACKGROUND_BASE_LOW;
-      if ("#" !== BACKGROUND_BASE_LOW[0]) {
-        semanticColor = value;
-        if (BACKGROUND_BASE_LOW in closure_4) {
-          const internal5 = tmp6(576).internal;
-          obj = SemanticColorContext;
-          result = obj.getSemanticColorContextFromThemeContext(themeContext);
-          semanticColor = internal5.resolveSemanticColor(theme, tmp6(576).colors[tmp15[BACKGROUND_BASE_LOW]], result);
+  const combined = "" + semanticColorName + "-" + themeContext.key + "-" + theme;
+  const value = map.get(combined);
+  let semanticColor2 = value;
+  const obj = map;
+  if (null == value) {
+    if (typeof BACKGROUND_BASE_LOW === "string") {
+      if ("#" === BACKGROUND_BASE_LOW[0]) {
+        return BACKGROUND_BASE_LOW;
+      } else {
+        semanticColor2 = value;
+        if (BACKGROUND_BASE_LOW in closure_5) {
+          const internal4 = tmp(587).internal;
+          const resolveSemanticColor2 = internal4.resolveSemanticColor;
+          const tmp9 = nativeDefault.colors[tmp8[BACKGROUND_BASE_LOW]];
+          const obj3 = SemanticColorContext;
+          semanticColor2 = resolveSemanticColor2(theme, tmp9, obj3.getSemanticColorContextFromThemeContext(themeContext));
         }
       }
     } else {
-      const internal6 = tmp6(576).internal;
-      semanticColor = value;
-      if (internal6.isSemanticColor(BACKGROUND_BASE_LOW)) {
-        const internal4 = tmp6(576).internal;
-        semanticColor = internal4.resolveSemanticColor(theme, BACKGROUND_BASE_LOW, SemanticColorContext.getSemanticColorContextFromThemeContext(themeContext));
-        const objResult = SemanticColorContext;
+      const internal5 = tmp(587).internal;
+      semanticColor2 = value;
+      if (internal5.isSemanticColor(BACKGROUND_BASE_LOW)) {
+        const internal3 = tmp(587).internal;
+        const resolveSemanticColor = internal3.resolveSemanticColor;
+        const obj2 = SemanticColorContext;
+        semanticColor2 = resolveSemanticColor(theme, BACKGROUND_BASE_LOW, obj2.getSemanticColorContextFromThemeContext(themeContext));
       }
     }
-    resolveResult = tmp14;
-    obj4 = map;
   }
+  if (null != semanticColor2) {
+    const result = obj.set(combined, semanticColor2);
+    return semanticColor2;
+  }
+}
+const map = new Map();
+const keys = Object.keys(nativeDefault.colors);
+let closure_5 = fromEntries(keys.map((item) => {
+  const items = [, ];
+  const obj = _modDef12;
+  items[0] = obj.kebabCase(item);
+  items[1] = item;
+  return items;
+}));
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled();
+let result = size.fileFinishedImporting("design/tokens/native/useToken.tsx");
+
+export const useToken = function useToken(BACKGROUND_BASE_LOW, theme) {
+  let str2;
+  let str3;
+  let tmp5;
+  if (closure_6) {
+    const tmpResult = react;
+    const cResult = tmpResult.c(8);
+    const tmpResult3 = native;
+    const themeContext = tmpResult3.useThemeContext();
+    if (theme == null) {
+      theme = themeContext.theme;
+    }
+    let tmp12 = BACKGROUND_BASE_LOW;
+    if (null != BACKGROUND_BASE_LOW) {
+      if (typeof BACKGROUND_BASE_LOW === "object") {
+        if (null !== BACKGROUND_BASE_LOW) {
+          if ("resolve" in BACKGROUND_BASE_LOW) {
+            const internal2 = nativeDefault.internal;
+            if (!internal2.isSemanticColor(BACKGROUND_BASE_LOW)) {
+              if (cResult[0] === themeContext.density) {
+                if (cResult[1] === themeContext.enabledExperiments) {
+                  let tmp14;
+                  if (cResult[2] === BACKGROUND_BASE_LOW) {
+                    tmp14 = cResult[3];
+                  }
+                  tmp12 = tmp14;
+                }
+              }
+              let enabledExperiments = themeContext.enabledExperiments;
+              const resolve2 = BACKGROUND_BASE_LOW.resolve;
+              if (enabledExperiments == null) {
+                enabledExperiments = [];
+              }
+              const obj = { enabledExperiments, density: str3 };
+              str3 = themeContext.density;
+              if (str3 == null) {
+                str3 = "compact";
+              }
+              const resolve2Result = resolve2(obj);
+              cResult[0] = themeContext.density;
+              cResult[1] = themeContext.enabledExperiments;
+              cResult[2] = BACKGROUND_BASE_LOW;
+              cResult[3] = resolve2Result;
+              tmp14 = resolve2Result;
+            }
+          }
+        }
+      }
+      if (cResult[4] === themeContext) {
+        if (cResult[5] === BACKGROUND_BASE_LOW) {
+          let tmp16;
+          if (cResult[6] === theme) {
+            tmp16 = cResult[7];
+          }
+          tmp12 = tmp16;
+        }
+      }
+      const tmp18 = getCachedTokenColor(BACKGROUND_BASE_LOW, themeContext, theme);
+      cResult[4] = themeContext;
+      cResult[5] = BACKGROUND_BASE_LOW;
+      cResult[6] = theme;
+      cResult[7] = tmp18;
+      tmp16 = tmp18;
+    }
+    tmp5 = tmp12;
+  } else {
+    const tmpResult4 = native;
+    const themeContext1 = tmpResult4.useThemeContext();
+    let theme2 = theme;
+    if (theme == null) {
+      theme2 = themeContext1.theme;
+    }
+    tmp5 = BACKGROUND_BASE_LOW;
+    if (null != BACKGROUND_BASE_LOW) {
+      if (typeof BACKGROUND_BASE_LOW === "object") {
+        if (null !== BACKGROUND_BASE_LOW) {
+          if ("resolve" in BACKGROUND_BASE_LOW) {
+            let resolveResult;
+            const internal = nativeDefault.internal;
+            if (!internal.isSemanticColor(BACKGROUND_BASE_LOW)) {
+              let enabledExperiments1 = themeContext1.enabledExperiments;
+              const resolve = BACKGROUND_BASE_LOW.resolve;
+              if (enabledExperiments1 == null) {
+                enabledExperiments1 = [];
+              }
+              const obj2 = { enabledExperiments: enabledExperiments1, density: str2 };
+              str2 = themeContext1.density;
+              if (str2 == null) {
+                str2 = "compact";
+              }
+              resolveResult = resolve(obj2);
+            }
+            tmp5 = resolveResult;
+          }
+        }
+      }
+      resolveResult = getCachedTokenColor(BACKGROUND_BASE_LOW, themeContext1, theme2);
+    }
+  }
+  return tmp5;
 };

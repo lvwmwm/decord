@@ -1,115 +1,111 @@
-// Module ID: 13000
-// Function ID: 13001
+// Module ID: 13059
+// Function ID: 13060
 // Name: VoiceChannelLinkEmbed
-// Dependencies: [32, 17, 2062, 2044, 2066, 4498, 4508, 1372, 1074, 7328, 7560, 1397, 1364, 1115, 5519, 4998, 2]
+// Dependencies: [32, 17, 2070, 2051, 2074, 4509, 4519, 1377, 1085, 7226, 7604, 1402, 1369, 1126, 5812, 5043, 2]
 // Exports: createVoiceChannelLinkEmbed
 
-// Module 13000 (VoiceChannelLinkEmbed)
-import util from "util" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import useChannelName from "useChannelName" /* 4998 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5519 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7560 */;
-import _slicedToArray from "module_32" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import PermissionStore from "PermissionStore" /* 4498 */;
-import RelationshipStore from "RelationshipStore" /* 4508 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 13059 (VoiceChannelLinkEmbed)
+import react_native from "react-native" /* 17 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
+import GuildRecord from "GuildRecord" /* 2070 */;
+import useChannelName from "useChannelName" /* 5043 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5812 */;
+import Constants2 from "Constants" /* 7226 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7604 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Image = fn(17).Image;
-const getGuildAcronym = fn(2062).getGuildAcronym;
-const Permissions = fn(1074).Permissions;
-const InviteTypes = fn(7328).InviteTypes;
-const size = fn(2);
+const Image = react_native.Image;
+const getGuildAcronym = GuildRecord.getGuildAcronym;
+const Permissions = Constants.Permissions;
+const InviteTypes = Constants2.InviteTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/VoiceChannelLinkEmbed.tsx");
 
 export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(code, arg1) {
+  let baseColors;
+  let colors;
+  let icon1;
+  let intl2;
+  let str;
+  let stringResult;
+  let tmp18Result2;
+  let tmp26;
+  let uri;
   const tmp = _slicedToArray(code.split("/"), 2);
+  const first = tmp[0];
   const channel = ChannelStore.getChannel(tmp[1]);
-  const guild = GuildStore.getGuild(tmp[0]);
+  const guild = GuildStore.getGuild(first);
   if (null != channel) {
     if (channel.isGuildVocal()) {
       if (null != guild) {
+        const obj8 = PermissionStore;
+        const tmp28 = Permissions;
         if (PermissionStore.can(Permissions.VIEW_CHANNEL, channel)) {
-          if (obj9.can(tmp26.CONNECT, channel)) {
+          if (obj8.can(tmp28.CONNECT, channel)) {
+            let guildIconURL;
+            let tmp9;
             ({ colors, baseColors } = getEmbedThemeColorsDefault(arg1));
             let icon;
+            getEmbedThemeColorsDefault(arg1);
             if (guild != null) {
               icon = guild.icon;
             }
             if (null != icon) {
               let id;
+              const getGuildIconURL = tmp5(1402).getGuildIconURL;
+              AvatarUtilsDefault;
               if (guild != null) {
                 id = guild.id;
               }
-              const obj = { id, icon: null, canAnimate: true, size: 128 };
-              let icon1;
+              const obj = { id, icon: icon1, canAnimate: true, size: 128 };
+              icon1 = undefined;
               if (guild != null) {
                 icon1 = guild.icon;
               }
-              obj.icon = icon1;
-              const guildIconURL = tmp4(1397).getGuildIconURL(obj);
-              const tmp4Result = tmp4(1397);
+              guildIconURL = getGuildIconURL(obj);
             } else if (null != guild) {
-              const tmp8 = getGuildAcronym(guild);
+              tmp9 = getGuildAcronym(guild);
             }
-            const obj2 = {};
+            const obj2 = { headerText: str, headerColor: colors.headerColor, acceptLabelText: stringResult, onlineText: undefined, memberText: undefined, channelIcon: uri, titleText: tmp18Result2.computeChannelName(channel, UserStore, RelationshipStore), titleColor: colors.titleColor, thumbnailUrl: tmp26, thumbnailText: tmp9, subtitleColor: undefined, acceptLabelBackgroundColor: colors.acceptLabelGreenBackgroundColor, acceptLabelBorderColor: undefined, acceptLabelColor: colors.acceptLabelGreenColor, embedCanBeTapped: true, canBeAccepted: true, channelName: intl2.formatToPlainString(intl3.t["2wimj5"], obj3), subtitle: "", type: InviteTypes.GUILD, inviteSplash: undefined };
             const merged = Object.assign(baseColors);
-            tmp4 = importDefault;
-            const tmp6 = getEmbedThemeColorsDefault(arg1);
-            let str;
-            if (obj5.isAndroid()) {
+            str = undefined;
+            const obj4 = PlatformUtils;
+            if (obj4.isAndroid()) {
               str = "";
             }
-            obj2.headerText = str;
-            obj2.headerColor = colors.headerColor;
-            obj5 = PlatformUtils;
-            const intl = tmp16(1115).intl;
+            const isGuildStageVoiceResult = channel.isGuildStageVoice();
+            const intl = tmp18(1126).intl;
             const string = intl.string;
-            const t = tmp16(1115).t;
+            const t = tmp18(1126).t;
             if (isGuildStageVoiceResult) {
-              let stringResult = string(t["7vb2cc"]);
+              stringResult = string(t["7vb2cc"]);
             } else {
               stringResult = string(t.gpqgah);
             }
-            obj2.acceptLabelText = stringResult;
-            obj2.onlineText = undefined;
-            obj2.memberText = undefined;
-            isGuildStageVoiceResult = channel.isGuildStageVoice();
-            const assetSource = Image.resolveAssetSource(utils_ChannelUtils.getChannelIcon(channel));
-            let uri;
+            const resolveAssetSource = Image.resolveAssetSource;
+            const tmp18Result = utils_ChannelUtils;
+            const assetSource = resolveAssetSource(tmp18Result.getChannelIcon(channel));
+            uri = undefined;
             if (assetSource != null) {
               uri = assetSource.uri;
             }
-            obj2.channelIcon = uri;
-            const tmp16Result = utils_ChannelUtils;
-            obj2.titleText = useChannelName.computeChannelName(channel, UserStore, RelationshipStore);
-            obj2.titleColor = colors.titleColor;
-            let tmp24;
+            tmp26 = undefined;
+            tmp18Result2 = useChannelName;
             if (null != guildIconURL) {
-              tmp24 = guildIconURL;
+              tmp26 = guildIconURL;
             }
-            obj2.thumbnailUrl = tmp24;
-            obj2.thumbnailText = tmp8;
-            obj2.subtitleColor = undefined;
-            obj2.acceptLabelBackgroundColor = colors.acceptLabelGreenBackgroundColor;
-            obj2.acceptLabelBorderColor = undefined;
-            obj2.acceptLabelColor = colors.acceptLabelGreenColor;
-            obj2.embedCanBeTapped = true;
-            obj2.canBeAccepted = true;
-            const intl2 = tmp16(1115).intl;
-            const obj3 = { guildName: guild.name };
-            obj2.channelName = intl2.formatToPlainString(util.t["2wimj5"], obj3);
-            obj2.subtitle = "";
-            obj2.type = InviteTypes.GUILD;
-            obj2.inviteSplash = undefined;
+            intl2 = tmp18(1126).intl;
             return obj2;
           }
         }
-        obj9 = PermissionStore;
-        tmp26 = Permissions;
       }
     }
   }

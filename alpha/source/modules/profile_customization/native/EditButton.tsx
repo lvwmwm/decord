@@ -1,26 +1,78 @@
-// Module ID: 14359
-// Function ID: 14360
+// Module ID: 14413
+// Function ID: 14414
 // Name: EditButton
-// Dependencies: [19, 17, 21, 7536, 7581, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 558, 576, 7575, 7625, 2]
 
-// Module 14359 (EditButton)
-import IconButton from "IconButton" /* 7536 */;
-import _modDef7581 from "module_7581" /* 7581 */;
-import noop from "module_19" /* 19 */;
+// Module 14413 (EditButton)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7625 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/profile_customization/native/EditButton.tsx");
-
-export default function EditButton(disabled) {
-  let str = disabled.variant;
-  ({ onPress, accessibilityLabel, style } = disabled);
+let tmp;
+const IconButton2 = tmp(7575);
+const View = react_native.View;
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let accessibilityLabel;
+  let disabled;
+  let onPress;
+  let style;
+  let variant;
+  const obj = react2;
+  const cResult = obj.c(8);
+  ({ onPress, accessibilityLabel, style, variant, disabled } = arg0);
+  let str = "primary-overlay";
+  if (undefined !== variant) {
+    str = variant;
+  }
+  if (cResult[0] === accessibilityLabel) {
+    if (cResult[1] === disabled) {
+      if (cResult[2] === onPress) {
+        let tmp4;
+        if (cResult[3] === str) {
+          tmp4 = cResult[4];
+        }
+        if (cResult[5] === style) {
+          let tmp6;
+          if (cResult[6] === tmp4) {
+            tmp6 = cResult[7];
+          }
+          return tmp6;
+        }
+        const tmp9 = <View style={style}>{tmp4}</View>;
+        cResult[5] = style;
+        cResult[6] = tmp4;
+        cResult[7] = tmp9;
+        tmp6 = tmp9;
+      }
+    }
+  }
+  const IconButton = IconButton2.IconButton;
+  const tmp5 = <IconButton icon={AssetRegistryDefault} variant={str} size="sm" onPress={onPress} accessibilityLabel={accessibilityLabel} disabled={disabled} />;
+  cResult[0] = accessibilityLabel;
+  cResult[1] = disabled;
+  cResult[2] = onPress;
+  cResult[3] = str;
+  cResult[4] = tmp5;
+  tmp4 = tmp5;
+}) : ((variant) => {
+  let accessibilityLabel;
+  let onPress;
+  let style;
+  let str = variant.variant;
+  ({ onPress, accessibilityLabel, style } = variant);
   if (str === undefined) {
     str = "primary-overlay";
   }
-  const obj = { style, children: jsx(IconButton.IconButton, { icon: _modDef7581, variant: str, size: "sm", onPress, accessibilityLabel, disabled: disabled.disabled }) };
-  return <View style={style}>{jsx(IconButton.IconButton, { icon: _modDef7581, variant: str, size: "sm", onPress, accessibilityLabel, disabled: arg0.disabled })}</View>;
-};
+  const disabled = variant.disabled;
+  ({ icon: AssetRegistryDefault, variant: str, size: "sm", onPress, accessibilityLabel, disabled });
+  const IconButton = IconButton2.IconButton;
+  return <View style={style}>{null}</View>;
+});
+const result = size.fileFinishedImporting("modules/profile_customization/native/EditButton.tsx");
+
+export default tmp3;

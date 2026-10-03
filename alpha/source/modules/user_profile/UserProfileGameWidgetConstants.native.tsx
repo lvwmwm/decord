@@ -1,23 +1,24 @@
-// Module ID: 8571
-// Function ID: 8572
+// Module ID: 8579
+// Function ID: 8580
 // Name: UserProfileGameWidgetConstants
-// Dependencies: [8572, 8573, 7527, 7529, 4558, 2]
+// Dependencies: [8580, 8582, 7571, 7573, 4831, 2]
 // Exports: getWidgetGameTagMetadata
 
-// Module 8571 (UserProfileGameWidgetConstants)
-import FriendsIcon from "FriendsIcon" /* 4558 */;
-import ThumbsUpIcon from "ThumbsUpIcon" /* 7527 */;
-import ThumbsDownIcon from "ThumbsDownIcon" /* 7529 */;
-import RibbonIcon from "RibbonIcon" /* 8573 */;
-import UserProfileGameWidgetTagMetadata from "UserProfileGameWidgetTagMetadata" /* 8572 */;
+// Module 8579 (UserProfileGameWidgetConstants)
+import FriendsIcon from "FriendsIcon" /* 4831 */;
+import ThumbsUpIcon from "ThumbsUpIcon" /* 7571 */;
+import ThumbsDownIcon from "ThumbsDownIcon" /* 7573 */;
+import RibbonIcon from "RibbonIcon" /* 8582 */;
+import UserProfileGameWidgetTagMetadata from "UserProfileGameWidgetTagMetadata" /* 8580 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};
+const buildWidgetGameTagMetadata = UserProfileGameWidgetTagMetadata.buildWidgetGameTagMetadata;
 obj[UserProfileGameWidgetTagMetadata.WidgetGameTagIconRole.RIBBON] = RibbonIcon.RibbonIcon;
 obj[UserProfileGameWidgetTagMetadata.WidgetGameTagIconRole.THUMBS_UP] = ThumbsUpIcon.ThumbsUpIcon;
 obj[UserProfileGameWidgetTagMetadata.WidgetGameTagIconRole.THUMBS_DOWN] = ThumbsDownIcon.ThumbsDownIcon;
 obj[UserProfileGameWidgetTagMetadata.WidgetGameTagIconRole.FRIENDS] = FriendsIcon.FriendsIcon;
-const widgetGameTagMetadata = UserProfileGameWidgetTagMetadata.buildWidgetGameTagMetadata(obj);
+const widgetGameTagMetadata = buildWidgetGameTagMetadata(obj);
 const result = size.fileFinishedImporting("modules/user_profile/UserProfileGameWidgetConstants.native.tsx");
 
 export const WIDGET_GAME_TAG_METADATA = widgetGameTagMetadata;

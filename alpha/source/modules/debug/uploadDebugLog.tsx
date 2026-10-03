@@ -1,18 +1,21 @@
-// Module ID: 9849
-// Function ID: 9850
+// Module ID: 12536
+// Function ID: 12537
 // Name: uploadDebugLog
-// Dependencies: [1074, 1271, 2]
+// Dependencies: [1085, 1282, 2]
 // Exports: default
 
-// Module 9849 (uploadDebugLog)
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 12536 (uploadDebugLog)
+import Constants from "Constants" /* 1085 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/debug/uploadDebugLog.tsx");
 
 export default function uploadDebugLog(arg0) {
+  let body;
+  let category;
+  let filename;
   ({ category, filename, body } = arg0);
   const HTTP = HTTPUtils.HTTP;
   const request = { url: Endpoints.DEBUG_LOG(category, filename), body, headers: { "Content-Type": "text/plain; charset=utf-8" }, timeout: 60000, retries: 3, rejectWithError: true };

@@ -1,21 +1,22 @@
-// Module ID: 11222
-// Function ID: 11223
+// Module ID: 11136
+// Function ID: 11137
 // Name: ChannelInfoActionCreators
-// Dependencies: [5775, 7137, 573, 2]
+// Dependencies: [5436, 7040, 584, 2]
 // Exports: fetchChannelInfo
 
-// Module 11222 (ChannelInfoActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5775 */;
-import ChannelStatusStore from "ChannelStatusStore" /* 7137 */;
+// Module 11136 (ChannelInfoActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
+import ChannelStatusStore from "ChannelStatusStore" /* 7040 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/channel/ChannelInfoActionCreators.tsx");
 
 export const fetchChannelInfo = function fetchChannelInfo(guild_id) {
   if (!ChannelStatusStore.hasRequestedStatuses(guild_id)) {
     const obj2 = { type: "FETCH_CHANNEL_INFO", guildId: guild_id };
-    DispatcherDefault.dispatch(obj2);
+    const obj = DispatcherDefault;
+    obj.dispatch(obj2);
     const socket = GatewayConnectionStore.getSocket();
     const channelInfo = socket.requestChannelInfo(guild_id, ["status", "voice_start_time"]);
   }

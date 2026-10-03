@@ -1,23 +1,23 @@
-// Module ID: 17049
-// Function ID: 17050
+// Module ID: 17372
+// Function ID: 17373
 // Name: isGuildSelectable
-// Dependencies: [2049, 4867, 7223, 5026, 2]
+// Dependencies: [2056, 4912, 7121, 5071, 2]
 // Exports: default
 
-// Module 17049 (isGuildSelectable)
-import StageInstanceStore from "StageInstanceStore" /* 2049 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4867 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7223 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5026 */;
+// Module 17372 (isGuildSelectable)
+import StageInstanceStore from "StageInstanceStore" /* 2056 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7121 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/launchpad/native/isGuildSelectable.tsx");
 
 export default function isGuildSelectable(id) {
-  closure_0 = id;
-  const isMutedResult = UserGuildSettingsStore.isMuted(id);
-  let tmp2 = !isMutedResult;
-  if (!isMutedResult) {
+  let closure_0 = id;
+  let tmp2 = !UserGuildSettingsStore.isMuted(id);
+  UserGuildSettingsStore.isMuted(id);
+  if (tmp2) {
     let hasUnreadResult = GuildReadStateStore.hasUnread(id);
     if (!hasUnreadResult) {
       const _Object = Object;

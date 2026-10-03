@@ -1,18 +1,19 @@
-// Module ID: 12857
-// Function ID: 12858
+// Module ID: 12911
+// Function ID: 12912
 // Name: databaseRestoreResultFromStatus
 // Dependencies: [2]
 // Exports: databaseRestoreResultFromStatus
 
-// Module 12857 (databaseRestoreResultFromStatus)
+// Module 12911 (databaseRestoreResultFromStatus)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsDatabaseRestoreResult.tsx");
 
 export const databaseRestoreResultFromStatus = function databaseRestoreResultFromStatus(status, message) {
+  let obj;
   if (202 === status) {
+    obj = { ok: false, code: "unconfirmed", message };
     const obj2 = { ok: false, code: "unconfirmed", message };
-    let obj = obj2;
   } else {
     if (status >= 200) {
       if (status < 300) {

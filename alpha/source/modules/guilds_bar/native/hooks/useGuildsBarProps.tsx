@@ -1,30 +1,201 @@
-// Module ID: 16153
-// Function ID: 16154
+// Module ID: 16228
+// Function ID: 16229
 // Name: useGuildsBarProps
-// Dependencies: [19, 5775, 4499, 6827, 6828, 13494, 5385, 2107, 2066, 13502, 4684, 5936, 16146, 16143, 21, 16154, 16168, 16169, 16172, 16177, 16204, 16207, 16208, 16209, 16211, 16212, 16213, 16214, 16216, 4560, 576, 1613, 14832, 14841, 15084, 504, 13586, 16218, 16219, 5450, 1479, 16221, 6679, 2]
-// Exports: default
+// Dependencies: [19, 5436, 4510, 6720, 6721, 13554, 5618, 2112, 2074, 13562, 4699, 5616, 16221, 16218, 21, 16229, 16243, 16244, 16247, 16252, 16279, 16282, 16283, 16284, 16286, 16287, 16288, 16289, 16291, 558, 576, 4580, 587, 1618, 14888, 14897, 15141, 13648, 504, 16293, 16294, 5770, 1484, 16296, 6569, 2]
 
-// Module 16153 (useGuildsBarProps)
-import useWindowDimensions from "useWindowDimensions" /* 1479 */;
-import GuildsBarFooterWrapperDefault from "GuildsBarFooterWrapper" /* 16211 */;
-import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5775 */;
-import LurkingStore from "LurkingStore" /* 4499 */;
-import MessageRequestStore from "MessageRequestStore" /* 6827 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6828 */;
-import GeoRestrictedGuildStore from "GeoRestrictedGuildStore" /* 13494 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5385 */;
-import GuildMemberStore from "GuildMemberStore" /* 2107 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 13502 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4684 */;
-import SortedGuildStore from "SortedGuildStore" /* 5936 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16146 */;
+// Module 16228 (useGuildsBarProps)
+import Fragment from "Fragment" /* 21 */;
+import useWindowDimensions from "useWindowDimensions" /* 1484 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 5616 */;
+import GuildsBarGuildFolderDefault from "GuildsBarGuildFolder" /* 16229 */;
+import GuildsBarPendingGuildFolderDefault from "GuildsBarPendingGuildFolder" /* 16243 */;
+import GuildsBarMessagesDefault from "GuildsBarMessages" /* 16244 */;
+import GuildsBarFavoritesDefault from "GuildsBarFavorites" /* 16247 */;
+import GuildsBarGuildDefault from "GuildsBarGuild" /* 16252 */;
+import GuildsBarDirectMessageDefault from "GuildsBarDirectMessage" /* 16279 */;
+import GuildsBarSeparatorDefault from "GuildsBarSeparator" /* 16282 */;
+import GuildsBarPendingGuildDefault from "GuildsBarPendingGuild" /* 16283 */;
+import GuildsBarGeoRestrictedGuildDefault from "GuildsBarGeoRestrictedGuild" /* 16284 */;
+import GuildsBarFooterWrapperDefault from "GuildsBarFooterWrapper" /* 16286 */;
+import react from "react" /* 19 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
+import LurkingStore from "LurkingStore" /* 4510 */;
+import MessageRequestStore from "MessageRequestStore" /* 6720 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6721 */;
+import GeoRestrictedGuildStore from "GeoRestrictedGuildStore" /* 13554 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5618 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import PrivateChannelReadStateStore_mod from "PrivateChannelReadStateStore" /* 13562 */;
+import SelectedGuildStore_mod from "SelectedGuildStore" /* 4699 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16221 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 16218 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+const SortedGuildStore = SortedGuildStore2;
+let _require, importDefault;
 
-require = fn;
-function findGuildSectionIndex(arg0) {
+let closure_17;
+let closure_18;
+const f123393 = (item) => {
+  if ("unavailable-guilds" === item) {
+    return closure_1_19(itemSize(itemMargin[25]), {}, item);
+  } else if ("empty-nux" === item) {
+    return closure_1_19(itemSize(itemMargin[26]), {}, item);
+  } else if ("create-join-guild" === item) {
+    return closure_1_19(itemSize(itemMargin[27]), {}, item);
+  }
+};
+function getItemSize(arg0) {
+  let guildsNFolders;
+  let itemSize;
+  let pendingFolderNode;
+  let row;
+  let section;
+  ({ section, row, guildsNFolders, pendingFolderNode, itemSize } = arg0);
+  if (constants.MESSAGES !== section) {
+    if (constants.FAVORITES !== section) {
+      if (constants.LURKING_GUILDS !== section) {
+        if (constants.GUEST_GUILDS !== section) {
+          if (constants.UNREAD_PRIVATE_CHANNELS === section) {
+            if (row == null) {
+              row = -1;
+            }
+            let num7 = 0;
+            if (null != tmp[row]) {
+              num7 = itemSize;
+            }
+            return num7;
+          } else if (constants.SEPARATOR === section) {
+            return 1 + 2 * tmp3;
+          } else if (constants.PENDING_JOIN_REQUESTS === section) {
+            let num4 = 0;
+            if (null != row) {
+              num4 = 0;
+              if (null != pendingFolderNode) {
+                num4 = 0;
+                if (pendingFolderNode.expanded) {
+                  num4 = 0;
+                  if (null != pendingFolderNode.children[row]) {
+                    num4 = itemSize;
+                  }
+                }
+              }
+            }
+            return num4;
+          } else if (null == row) {
+            return 0;
+          } else {
+            const diff = section - tmp4.GUILDS;
+            if (guildsNFolders.length >= diff) {
+              if (null != tmp2[row]) {
+                return itemSize;
+              }
+            }
+            const element = guildsNFolders[diff];
+            let num2 = 0;
+            if (null != element) {
+              num2 = 0;
+              if (element.type !== GuildsNodeType.ROOT) {
+                if (element.type !== GuildsNodeType.GUILD) {
+                  if (element.type !== GuildsNodeType.FOLDER) {
+                    num2 = itemSize;
+                  } else {
+                    num2 = 0;
+                    if (element.expanded) {
+                      num2 = 0;
+                    }
+                  }
+                } else {
+                  num2 = 0;
+                }
+              }
+            }
+            return num2;
+          }
+        }
+      }
+    }
+  }
+  return itemSize;
+}
+function renderItemJSX(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7) {
+  if (constants.MESSAGES === arg0) {
+    return jsx(GuildsBarMessagesDefault, {});
+  } else if (constants.FAVORITES === arg0) {
+    return jsx(GuildsBarFavoritesDefault, {});
+  } else if (constants.LURKING_GUILDS === arg0) {
+    let tmp40 = null;
+    if (null != arg4[arg1]) {
+      tmp40 = jsx(GuildsBarGuildDefault, { guildId: arg4[arg1] });
+    }
+    return tmp40;
+  } else if (constants.GUEST_GUILDS === arg0) {
+    let tmp34 = null;
+    if (null != arg5[arg1]) {
+      tmp34 = jsx(GuildsBarGuildDefault, { guildId: arg5[arg1] });
+    }
+    return tmp34;
+  } else if (constants.UNREAD_PRIVATE_CHANNELS === arg0) {
+    let tmp28 = null;
+    if (null != arg3[arg1]) {
+      tmp28 = jsx(GuildsBarDirectMessageDefault, { channelId: arg3[arg1] });
+    }
+    return tmp28;
+  } else if (constants.SEPARATOR === arg0) {
+    return jsx(GuildsBarSeparatorDefault, {});
+  } else if (constants.PENDING_JOIN_REQUESTS === arg0) {
+    if (null == arg7) {
+      return null;
+    } else {
+      let tmp18 = null;
+      if (null != arg7.children[arg1]) {
+        tmp18 = null;
+        if (arg7.children[arg1].type === GuildsNodeType.GUILD) {
+          tmp18 = jsx(GuildsBarPendingGuildDefault, { guildId: arg7.children[arg1].id });
+        }
+      }
+      return tmp18;
+    }
+  } else {
+    const diff = arg0 - tmp.GUILDS;
+    if (diff >= arg2.length) {
+      let tmp11 = null;
+      if (null != arg6[arg1]) {
+        tmp11 = jsx(GuildsBarGeoRestrictedGuildDefault, { restrictedGuild: arg6[arg1] });
+      }
+      return tmp11;
+    } else {
+      const element = arg2[diff];
+      let tmp3 = null;
+      if (null != element) {
+        tmp3 = null;
+        if (element.type !== GuildsNodeType.ROOT) {
+          if (element.type !== GuildsNodeType.GUILD) {
+            let tmp4 = element;
+            if (element.type === GuildsNodeType.FOLDER) {
+              tmp4 = element.children[arg1];
+            }
+            let tmp5 = null;
+            if (null != tmp4) {
+              tmp5 = null;
+              if (tmp4.type === GuildsNodeType.GUILD) {
+                tmp5 = jsx(GuildsBarGuildDefault, { guildId: tmp4.id });
+              }
+            }
+            tmp3 = tmp5;
+          } else {
+            tmp3 = null;
+          }
+        }
+      }
+      return tmp3;
+    }
+  }
+}
+function findGuildSectionIndex(guildId) {
   const fastListGuildFolders = SortedGuildStore.getFastListGuildFolders();
   let num = -1;
   let num2 = 0;
@@ -35,16 +206,14 @@ function findGuildSectionIndex(arg0) {
     num2 = 0;
     let tmp4 = GuildsNodeType;
     if (item10016.type === GuildsNodeType.GUILD) {
-      if (element.id === arg0) {
+      if (element.id === guildId) {
         flag = true;
         obj.return();
         break;
       }
       let tmp22 = null;
       if (flag) {
-        let obj3 = { section: null, item: null };
-        obj3.section = num + constants.GUILDS;
-        obj3.item = num2;
+        let obj3 = { section: num + constants.GUILDS, item: num2 };
         tmp22 = obj3;
       }
       return tmp22;
@@ -53,7 +222,7 @@ function findGuildSectionIndex(arg0) {
       let children = element.children;
       for (const item10035 of children) {
         if (item10035.type === GuildsNodeType.GUILD) {
-          if (tmp11.id === arg0) {
+          if (tmp11.id === guildId) {
             if (!element.expanded) {
               num2 = 0;
             }
@@ -67,116 +236,1104 @@ function findGuildSectionIndex(arg0) {
         continue;
       }
     }
-    if (flag) {
+    let tmp18 = flag;
+    if (tmp18) {
       obj.return();
       break;
     }
     break;
   }
 }
-function isAnchorIdEqual(arg0, arg1, arg2) {
-  let tmp = null != arg2;
+function getAnchorIdFromIndex(arg0) {
+  let guildsNFolders;
+  let item;
+  let pendingFolderNode;
+  let section;
+  ({ section, item, guildsNFolders, pendingFolderNode } = arg0);
+  if (constants.MESSAGES === section) {
+    return constants2.MESSAGES;
+  } else if (constants.FAVORITES === section) {
+    return constants2.FAVORITES;
+  } else if (constants.PENDING_JOIN_REQUESTS === section) {
+    if (null == item) {
+      return constants2.PENDING_JOIN_REQUESTS;
+    } else {
+      let id1;
+      if (pendingFolderNode != null) {
+        if (pendingFolderNode.children[item] != null) {
+          id1 = tmp28.id;
+        }
+      }
+      let combined;
+      if (null != id1) {
+        const _HermesInternal5 = HermesInternal;
+        combined = "" + constants2.PENDING_JOIN_REQUESTS + ":" + id1;
+      }
+      return combined;
+    }
+  } else if (constants.LURKING_GUILDS === section) {
+    let LURKING_GUILDS;
+    if (null == item) {
+      LURKING_GUILDS = constants2.LURKING_GUILDS;
+    } else {
+      const _HermesInternal4 = HermesInternal;
+      LURKING_GUILDS = "" + constants2.LURKING_GUILDS + ":" + tmp[item];
+    }
+    return LURKING_GUILDS;
+  } else if (constants.GUEST_GUILDS === section) {
+    let GUEST_GUILDS;
+    if (null == item) {
+      GUEST_GUILDS = constants2.GUEST_GUILDS;
+    } else {
+      const _HermesInternal3 = HermesInternal;
+      GUEST_GUILDS = "" + constants2.GUEST_GUILDS + ":" + tmp2[item];
+    }
+    return GUEST_GUILDS;
+  } else if (constants.UNREAD_PRIVATE_CHANNELS === section) {
+    let UNREAD_PRIVATE_CHANNELS;
+    if (null == item) {
+      UNREAD_PRIVATE_CHANNELS = constants2.UNREAD_PRIVATE_CHANNELS;
+    } else {
+      const _HermesInternal2 = HermesInternal;
+      UNREAD_PRIVATE_CHANNELS = "" + constants2.UNREAD_PRIVATE_CHANNELS + ":" + tmp3[item];
+    }
+    return UNREAD_PRIVATE_CHANNELS;
+  } else if (constants.SEPARATOR === section) {
+    return constants2.SEPARATOR;
+  } else {
+    let id;
+    const GUILDS = tmp5.GUILDS;
+    const diff = section - tmp5.GUILDS;
+    if (null == guildsNFolders[diff]) {
+      let tmp7;
+      if (diff >= guildsNFolders.length) {
+        if (null != item) {
+          let id2;
+          if (tmp4[item] != null) {
+            id2 = tmp8.id;
+          }
+          tmp7 = id2;
+        }
+      }
+      id = tmp7;
+    } else if (null == item) {
+      id = tmp36.id;
+    } else if (guildsNFolders[diff].children[item] != null) {
+      id = tmp6.id;
+    }
+    let combined1;
+    if (null != id) {
+      const _HermesInternal = HermesInternal;
+      combined1 = "" + constants2.GUILDS + ":" + id;
+    }
+    return combined1;
+  }
+}
+function isAnchorIdEqual(GUILDS, id, id2) {
+  let tmp = null != id2;
   if (tmp) {
     const _HermesInternal = HermesInternal;
-    tmp = arg1 === "" + arg0 + ":" + arg2;
+    tmp = id === "" + GUILDS + ":" + id2;
   }
   return tmp;
 }
-const GuildsNodeType = fn(5936).GuildsNodeType;
-const GuildsBarConstants = fn(16143);
+function getAnchorIndexFromId(arg0) {
+  let geoRestrictedGuilds;
+  let guestGuildIds;
+  let guildsNFolders;
+  let id;
+  let lurkingGuildsIds;
+  let pendingFolderNode;
+  let privateChannelIds;
+  ({ id, lurkingGuildsIds, guestGuildIds, privateChannelIds, guildsNFolders, pendingFolderNode, geoRestrictedGuilds } = arg0);
+  if (constants2.MESSAGES === id) {
+    return { section: constants.MESSAGES };
+  } else if (constants2.FAVORITES === id) {
+    return { section: constants.FAVORITES };
+  } else if (constants2.PENDING_JOIN_REQUESTS === id) {
+    return { section: constants.PENDING_JOIN_REQUESTS };
+  } else if (constants2.LURKING_GUILDS === id) {
+    return { section: constants.LURKING_GUILDS };
+  } else if (constants2.GUEST_GUILDS === id) {
+    return { section: constants.GUEST_GUILDS };
+  } else if (constants2.UNREAD_PRIVATE_CHANNELS === id) {
+    return { section: constants.UNREAD_PRIVATE_CHANNELS };
+  } else if (constants2.SEPARATOR === id) {
+    return { section: constants.SEPARATOR };
+  } else if (id.startsWith(constants2.LURKING_GUILDS)) {
+    let num12 = 0;
+    for (const item10164 of lurkingGuildsIds) {
+      if (isAnchorIdEqual(constants2.LURKING_GUILDS, id, item10164)) {
+        let obj15 = { section: constants.LURKING_GUILDS, item: num12 };
+        obj12.return();
+        return obj15;
+      } else {
+        num12 = num12 + 1;
+        continue;
+      }
+    }
+  } else {
+    if (id.startsWith(constants2.PENDING_JOIN_REQUESTS)) {
+      if (null != pendingFolderNode) {
+        let num = 0;
+        const children2 = pendingFolderNode.children;
+        for (const item10025 of children2) {
+          if (isAnchorIdEqual(constants2.PENDING_JOIN_REQUESTS, id, item10025.id)) {
+            let obj = { section: constants.PENDING_JOIN_REQUESTS, item: num };
+            obj21.return();
+            return obj;
+          } else {
+            num = num + 1;
+            continue;
+          }
+        }
+      }
+    }
+    const tmp14 = constants2;
+    if (id.startsWith(constants2.GUEST_GUILDS)) {
+      let num10 = 0;
+      for (const item10146 of guestGuildIds) {
+        if (isAnchorIdEqual(constants2.GUEST_GUILDS, id, item10146)) {
+          let obj16 = { section: constants.GUEST_GUILDS, item: num10 };
+          obj10.return();
+          return obj16;
+        } else {
+          num10 = num10 + 1;
+          continue;
+        }
+      }
+    } else {
+      if (id.startsWith(tmp14.UNREAD_PRIVATE_CHANNELS)) {
+        let num4 = 0;
+        for (const item10057 of privateChannelIds) {
+          if (isAnchorIdEqual(constants2.UNREAD_PRIVATE_CHANNELS, id, item10057)) {
+            let obj17 = { section: constants.UNREAD_PRIVATE_CHANNELS, item: num4 };
+            obj2.return();
+            return obj17;
+          } else {
+            num4 = num4 + 1;
+            continue;
+          }
+        }
+      }
+      if (id.startsWith(constants2.GUILDS)) {
+        let num6 = 0;
+        let num7 = 0;
+        for (const item10081 of guildsNFolders) {
+          let tmp28 = item10081;
+          if (isAnchorIdEqual(constants2.GUILDS, id, item10081.id)) {
+            let obj18 = { section: num6 + constants.GUILDS };
+            obj4.return();
+            return obj18;
+          } else {
+            let children = tmp28.children;
+            for (const item10095 of children) {
+              if (isAnchorIdEqual(constants2.GUILDS, id, item10095.id)) {
+                let obj19 = { section: num6 + constants.GUILDS, item: num7 };
+                obj5.return();
+                obj4.return();
+                return obj19;
+              } else {
+                num7 = num7 + 1;
+                continue;
+              }
+            }
+            num6 = num6 + 1;
+            num7 = 0;
+            continue;
+          }
+        }
+        let num8 = 0;
+        for (const item10125 of geoRestrictedGuilds) {
+          if (isAnchorIdEqual(constants2.GUILDS, id, item10125.id)) {
+            let obj20 = { section: num6 + constants.GUILDS, item: num8 };
+            obj8.return();
+            return obj20;
+          } else {
+            num8 = num8 + 1;
+            continue;
+          }
+        }
+      }
+    }
+  }
+}
+let PrivateChannelReadStateStore = PrivateChannelReadStateStore_mod;
+let SelectedGuildStore = SelectedGuildStore_mod;
+const GuildsNodeType = SortedGuildStore2.GuildsNodeType;
 ({ FastListRenderSections: closure_17, useGuildWrapperSize: closure_18 } = GuildsBarConstants);
-const jsx = fn(21).jsx;
-let closure_21 = { MESSAGES: "section-messages", FAVORITES: "section-favorites", PENDING_JOIN_REQUESTS: "section-pending-join-requests", LURKING_GUILDS: "section-lurking-guilds", GUEST_GUILDS: "section-guest-guilds", UNREAD_PRIVATE_CHANNELS: "section-private-channels", SEPARATOR: "section-separator", GUILDS: "section-guilds" };
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/guilds_bar/native/hooks/useGuildsBarProps.tsx");
-
-export default function useGuildsBarProps(arg0) {
+const jsx = Fragment.jsx;
+const constants2 = { MESSAGES: "section-messages", FAVORITES: "section-favorites", PENDING_JOIN_REQUESTS: "section-pending-join-requests", LURKING_GUILDS: "section-lurking-guilds", GUEST_GUILDS: "section-guest-guilds", UNREAD_PRIVATE_CHANNELS: "section-private-channels", SEPARATOR: "section-separator", GUILDS: "section-guilds" };
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let guildsNFolders;
+  let itemSize;
+  let pendingFolderNode;
+  let ref;
+  let stateFromStores1;
+  let stateFromStoresArray;
+  let stateFromStoresArray1;
+  let token;
+  _require = arg0;
+  const tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(62);
+  const tmp4 = closure_18();
+  importDefault = tmp4;
+  let obj2 = require("useToken");
+  let tmp5 = importDefault;
+  token = obj2.useToken(require("native").modules.mobile.GUILD_BAR_ITEM_MARGIN);
+  const rect = require("useSafeAreaInsets")();
+  const top = rect.top;
+  const bottom = rect.bottom;
+  const obj3 = require("QuestHooks");
+  const mobileQuestDockHeight = obj3.useMobileQuestDockHeight();
+  const obj4 = require("useYouBarTotalHeight");
+  const youBarTotalHeight = obj4.useYouBarTotalHeight();
+  require("useYouBarTotalHeight");
+  if (cResult[0] === mobileQuestDockHeight) {
+    if (cResult[1] === top) {
+      let tmp11;
+      let tmp12;
+      let tmp18;
+      let tmp17;
+      let tmp16;
+      let tmp23;
+      let tmp22;
+      let tmp27;
+      let tmp26;
+      let tmp31;
+      let tmp30;
+      let tmp35;
+      let tmp34;
+      let tmp39;
+      let tmp38;
+      let tmp37;
+      let tmp48;
+      let tmp47;
+      let diff;
+      if (cResult[2] === youBarTotalHeight) {
+        tmp11 = cResult[3];
+        tmp12 = cResult[4];
+      }
+      const effect = top.useEffect(tmp11, tmp12);
+      let num = 0;
+      let num2 = 0;
+      if (tmp5(token[36])()) {
+        num2 = 1;
+      }
+      const _Symbol = Symbol;
+      if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+        let items = [PrivateChannelReadStateStore, stateFromStoresArray, stateFromStoresArray1];
+        class C {
+          constructor() {
+            unreadPrivateChannelIds = unreadPrivateChannelIds.getUnreadPrivateChannelIds();
+            const items = [stateFromStoresArray, stateFromStoresArray1];
+            const obj = ref(token[37]);
+            return obj.filterOutMessageRequestsAndSpamById(unreadPrivateChannelIds, items);
+          }
+        }
+        const items1 = [];
+        cResult[5] = items;
+        cResult[6] = C;
+        cResult[7] = items1;
+        tmp18 = items1;
+        tmp17 = C;
+        tmp16 = items;
+      } else {
+        tmp16 = cResult[5];
+        tmp17 = cResult[6];
+        tmp18 = cResult[7];
+      }
+      const tmpResult = tmp(token[38]);
+      stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp16, tmp17, tmp18);
+      const _Symbol2 = Symbol;
+      if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+        const items2 = [mobileQuestDockHeight];
+        class V {
+          constructor() {
+            return mobileQuestDockHeight.isConnected();
+          }
+        }
+        cResult[8] = items2;
+        class C {
+          constructor() {
+            unreadPrivateChannelIds = unreadPrivateChannelIds.getUnreadPrivateChannelIds();
+            const items = [stateFromStoresArray, stateFromStoresArray1];
+            const obj = ref(token[37]);
+            return obj.filterOutMessageRequestsAndSpamById(unreadPrivateChannelIds, items);
+          }
+        }
+        tmp23 = V;
+        tmp22 = items2;
+      } else {
+        tmp22 = cResult[8];
+        tmp23 = cResult[9];
+      }
+      const tmpResult8 = tmp(token[38]);
+      const stateFromStores = tmpResult8.useStateFromStores(tmp22, tmp23);
+      const _Symbol3 = Symbol;
+      if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+        const items3 = [stateFromStores1];
+        class V {
+          constructor() {
+            return mobileQuestDockHeight.isConnected();
+          }
+        }
+        cResult[10] = items3;
+        class C {
+          constructor() {
+            unreadPrivateChannelIds = unreadPrivateChannelIds.getUnreadPrivateChannelIds();
+            const items = [stateFromStoresArray, stateFromStoresArray1];
+            const obj = ref(token[37]);
+            return obj.filterOutMessageRequestsAndSpamById(unreadPrivateChannelIds, items);
+          }
+        }
+        tmp27 = tmp29;
+        tmp26 = items3;
+      } else {
+        tmp26 = cResult[10];
+        tmp27 = cResult[11];
+      }
+      const tmpResult9 = tmp(token[38]);
+      stateFromStoresArray1 = tmpResult9.useStateFromStoresArray(tmp26, tmp27);
+      const _Symbol4 = Symbol;
+      if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+        const items4 = [youBarTotalHeight];
+        class V {
+          constructor() {
+            return mobileQuestDockHeight.isConnected();
+          }
+        }
+        cResult[12] = tmp33;
+        class C {
+          constructor() {
+            unreadPrivateChannelIds = unreadPrivateChannelIds.getUnreadPrivateChannelIds();
+            const items = [stateFromStoresArray, stateFromStoresArray1];
+            const obj = ref(token[37]);
+            return obj.filterOutMessageRequestsAndSpamById(unreadPrivateChannelIds, items);
+          }
+        }
+        tmp31 = items4;
+        tmp30 = tmp33;
+      } else {
+        tmp30 = cResult[12];
+        tmp31 = cResult[13];
+      }
+      const tmpResult10 = tmp(token[38]);
+      stateFromStores1 = tmpResult10.useStateFromStores(tmp31, tmp30);
+      const _Symbol5 = Symbol;
+      if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+        const items5 = [pendingFolderNode, ];
+        class V {
+          constructor() {
+            return mobileQuestDockHeight.isConnected();
+          }
+        }
+        items5[1] = guildsNFolders;
+        class B {
+          constructor() {
+            guildIds = pendingFolderNode.getGuildIds();
+            return guildIds.filter((item) => currentUserGuest.isCurrentUserGuest(item));
+          }
+        }
+        class C {
+          constructor() {
+            unreadPrivateChannelIds = unreadPrivateChannelIds.getUnreadPrivateChannelIds();
+            const items = [stateFromStoresArray, stateFromStoresArray1];
+            const obj = ref(token[37]);
+            return obj.filterOutMessageRequestsAndSpamById(unreadPrivateChannelIds, items);
+          }
+        }
+        cResult[15] = B;
+        tmp35 = B;
+        tmp34 = items5;
+      } else {
+        tmp34 = cResult[14];
+        tmp35 = cResult[15];
+      }
+      const tmpResult11 = tmp(token[38]);
+      const stateFromStoresArray2 = tmpResult11.useStateFromStoresArray(tmp34, tmp35);
+      const _Symbol6 = Symbol;
+      if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+        const items6 = [SortedGuildStore];
+        class Y {
+          constructor() {
+            const obj = { guildsNFolders: SortedGuildStore.getFastListGuildFolders(), version: SortedGuildStore.getGuildsTree().version };
+            return obj;
+          }
+        }
+        const items7 = [];
+        class B {
+          constructor() {
+            guildIds = pendingFolderNode.getGuildIds();
+            return guildIds.filter((item) => currentUserGuest.isCurrentUserGuest(item));
+          }
+        }
+        cResult[16] = items6;
+        class C {
+          constructor() {
+            unreadPrivateChannelIds = unreadPrivateChannelIds.getUnreadPrivateChannelIds();
+            const items = [stateFromStoresArray, stateFromStoresArray1];
+            const obj = ref(token[37]);
+            return obj.filterOutMessageRequestsAndSpamById(unreadPrivateChannelIds, items);
+          }
+        }
+        cResult[17] = Y;
+        cResult[18] = items7;
+        tmp39 = items7;
+        tmp38 = Y;
+        tmp37 = items6;
+      } else {
+        tmp37 = cResult[16];
+        tmp38 = cResult[17];
+        tmp39 = cResult[18];
+      }
+      const tmpResult12 = tmp(token[38]);
+      const stateFromStores2 = tmpResult12.useStateFromStores(tmp37, tmp38, tmp39, tmp5(tmp2[39]));
+      guildsNFolders = stateFromStores2.guildsNFolders;
+      const version = stateFromStores2.version;
+      const tmp46 = tmp5(token[40])();
+      pendingFolderNode = tmp46.pendingFolderNode;
+      const _Symbol7 = Symbol;
+      const expanded = tmp46.expanded;
+      if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
+        const items8 = [stateFromStoresArray2];
+        class Y {
+          constructor() {
+            const obj = { guildsNFolders: SortedGuildStore.getFastListGuildFolders(), version: SortedGuildStore.getGuildsTree().version };
+            return obj;
+          }
+        }
+        class B {
+          constructor() {
+            guildIds = pendingFolderNode.getGuildIds();
+            return guildIds.filter((item) => currentUserGuest.isCurrentUserGuest(item));
+          }
+        }
+        class C {
+          constructor() {
+            unreadPrivateChannelIds = unreadPrivateChannelIds.getUnreadPrivateChannelIds();
+            const items = [stateFromStoresArray, stateFromStoresArray1];
+            const obj = ref(token[37]);
+            return obj.filterOutMessageRequestsAndSpamById(unreadPrivateChannelIds, items);
+          }
+        }
+        tmp48 = tmp50;
+        tmp47 = items8;
+      } else {
+        tmp47 = cResult[19];
+        tmp48 = cResult[20];
+      }
+      const tmpResult13 = tmp(token[38]);
+      const stateFromStores3 = tmpResult13.useStateFromStores(tmp47, tmp48);
+      const tmpResult14 = tmp(token[41]);
+      const tmp52 = !tmpResult14.useIsScreenReaderEnabled();
+      let result = 3 * token;
+      if (youBarTotalHeight > 0) {
+        diff = youBarTotalHeight - 16;
+      } else {
+        diff = bottom + 3 * token;
+      }
+      if (cResult[21] === result) {
+        let tmp55;
+        if (cResult[22] === diff) {
+          tmp55 = cResult[23];
+        }
+        const sum = mobileQuestDockHeight + 2 * token + tmp10;
+        class Y {
+          constructor() {
+            const obj = { guildsNFolders: SortedGuildStore.getFastListGuildFolders(), version: SortedGuildStore.getGuildsTree().version };
+            return obj;
+          }
+        }
+        class B {
+          constructor() {
+            guildIds = pendingFolderNode.getGuildIds();
+            return guildIds.filter((item) => currentUserGuest.isCurrentUserGuest(item));
+          }
+        }
+        if (cResult[25] === top) {
+          if (cResult[26] === tmp52) {
+            if (cResult[27] === tmp55) {
+              let tmp59;
+              if (cResult[28] === sum) {
+                tmp59 = cResult[29];
+              }
+              PrivateChannelReadStateStore = tmp59;
+              if (cResult[30] === arg0) {
+                if (cResult[31] === tmp59.insetEnd) {
+                  let tmp61;
+                  if (cResult[32] === tmp59.insetStart) {
+                    tmp61 = cResult[33];
+                  }
+                  tmp5(token[43])(tmp61);
+                  const _Symbol8 = Symbol;
+                  class Ee {
+                    constructor(guildId, arg1) {
+                      if (null != guildId) {
+                        const tmp5 = findGuildSectionIndex(guildId);
+                        if (null != tmp5) {
+                          const current2 = ref.current;
+                          if (current2 != null) {
+                            const obj = { orientation: "visible" };
+                            const scrollToLocation = current2.scrollToLocation;
+                            const merged = Object.assign(tmp5);
+                            ({ insetStart: obj.paddingStart, insetEnd: obj.paddingEnd } = unreadPrivateChannelIds);
+                            scrollToLocation(obj);
+                          }
+                        }
+                      } else {
+                        const current = ref.current;
+                        if (current != null) {
+                          current.scrollTo(0, arg1);
+                        }
+                      }
+                    }
+                  }
+                  if (tmp63 === Symbol.for("react.memo_cache_sentinel")) {
+                    let tmp68;
+                    const guildId = SelectedGuildStore.getGuildId();
+                    class Ee {
+                      constructor(guildId, arg1) {
+                        if (null != guildId) {
+                          const tmp5 = findGuildSectionIndex(guildId);
+                          if (null != tmp5) {
+                            const current2 = ref.current;
+                            if (current2 != null) {
+                              const obj = { orientation: "visible" };
+                              const scrollToLocation = current2.scrollToLocation;
+                              const merged = Object.assign(tmp5);
+                              ({ insetStart: obj.paddingStart, insetEnd: obj.paddingEnd } = unreadPrivateChannelIds);
+                              scrollToLocation(obj);
+                            }
+                          }
+                        } else {
+                          const current = ref.current;
+                          if (current != null) {
+                            current.scrollTo(0, arg1);
+                          }
+                        }
+                      }
+                    }
+                    if (null != guildId) {
+                      tmp68 = findGuildSectionIndex(guildId);
+                    }
+                    class B {
+                      constructor() {
+                        guildIds = pendingFolderNode.getGuildIds();
+                        return guildIds.filter((item) => currentUserGuest.isCurrentUserGuest(item));
+                      }
+                    }
+                    cResult[34] = tmp68;
+                    class C {
+                      constructor() {
+                        unreadPrivateChannelIds = unreadPrivateChannelIds.getUnreadPrivateChannelIds();
+                        const items = [stateFromStoresArray, stateFromStoresArray1];
+                        const obj = ref(token[37]);
+                        return obj.filterOutMessageRequestsAndSpamById(unreadPrivateChannelIds, items);
+                      }
+                    }
+                  }
+                  class B {
+                    constructor() {
+                      guildIds = pendingFolderNode.getGuildIds();
+                      return guildIds.filter((item) => currentUserGuest.isCurrentUserGuest(item));
+                    }
+                  }
+                  class C {
+                    constructor() {
+                      unreadPrivateChannelIds = unreadPrivateChannelIds.getUnreadPrivateChannelIds();
+                      const items = [stateFromStoresArray, stateFromStoresArray1];
+                      const obj = ref(token[37]);
+                      return obj.filterOutMessageRequestsAndSpamById(unreadPrivateChannelIds, items);
+                    }
+                  }
+                  let num32 = 0;
+                  if (null != pendingFolderNode) {
+                    let num33 = 1;
+                    if (expanded) {
+                      num33 = pendingFolderNode.children.length;
+                    }
+                    num32 = num33;
+                  }
+                  const _Math = Math;
+                  const length = stateFromStores1.length;
+                  const length2 = stateFromStoresArray2.length;
+                  const bound = Math.min(stateFromStoresArray.length, 10);
+                  if (cResult[36] === num2) {
+                    if (cResult[37] === stateFromStoresArray1) {
+                      if (cResult[38] === stateFromStoresArray2.length) {
+                        if (cResult[39] === guildsNFolders) {
+                          if (cResult[40] === stateFromStores1.length) {
+                            if (cResult[41] === num32) {
+                              let tmp72;
+                              if (cResult[42] === bound) {
+                                tmp72 = cResult[43];
+                              }
+                              if (cResult[44] === guildsNFolders) {
+                                if (cResult[45] === stateFromStores) {
+                                  if (cResult[46] === stateFromStores3) {
+                                    SelectedGuildStore = cResult[47];
+                                  }
+                                  if (cResult[48] === tmp83) {
+                                    if (cResult[49] === stateFromStoresArray1) {
+                                      if (cResult[50] === stateFromStoresArray2) {
+                                        if (cResult[51] === token) {
+                                          if (cResult[52] === guildsNFolders) {
+                                            if (cResult[53] === tmp4) {
+                                              if (cResult[54] === stateFromStores1) {
+                                                if (cResult[55] === pendingFolderNode) {
+                                                  if (cResult[56] === stateFromStoresArray) {
+                                                    let tmp88;
+                                                    if (cResult[57] === tmp72) {
+                                                      tmp88 = cResult[58];
+                                                    }
+                                                    if (cResult[59] === tmp88) {
+                                                      let tmp90;
+                                                      if (cResult[60] === tmp59) {
+                                                        tmp90 = cResult[61];
+                                                      }
+                                                      return tmp90;
+                                                    }
+                                                    const obj5 = { listProps: null, listDataProps: tmp88 };
+                                                    class Ee {
+                                                      constructor(guildId, arg1) {
+                                                        if (null != guildId) {
+                                                          const tmp5 = findGuildSectionIndex(guildId);
+                                                          if (null != tmp5) {
+                                                            const current2 = ref.current;
+                                                            if (current2 != null) {
+                                                              const obj = { orientation: "visible" };
+                                                              const scrollToLocation = current2.scrollToLocation;
+                                                              const merged = Object.assign(tmp5);
+                                                              ({ insetStart: obj.paddingStart, insetEnd: obj.paddingEnd } = unreadPrivateChannelIds);
+                                                              scrollToLocation(obj);
+                                                            }
+                                                          }
+                                                        } else {
+                                                          const current = ref.current;
+                                                          if (current != null) {
+                                                            current.scrollTo(0, arg1);
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                    class B {
+                                                      constructor() {
+                                                        guildIds = pendingFolderNode.getGuildIds();
+                                                        return guildIds.filter((item) => currentUserGuest.isCurrentUserGuest(item));
+                                                      }
+                                                    }
+                                                    cResult[59] = tmp88;
+                                                    class C {
+                                                      constructor() {
+                                                        unreadPrivateChannelIds = unreadPrivateChannelIds.getUnreadPrivateChannelIds();
+                                                        const items = [stateFromStoresArray, stateFromStoresArray1];
+                                                        const obj = ref(token[37]);
+                                                        return obj.filterOutMessageRequestsAndSpamById(unreadPrivateChannelIds, items);
+                                                      }
+                                                    }
+                                                    cResult[60] = tmp59;
+                                                    cResult[61] = obj5;
+                                                    tmp90 = obj5;
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  const obj6 = {
+                                    sections: tmp72,
+                                    itemSize(section, row) {
+                                                                      const obj = { section, row, guildsNFolders, pendingFolderNode, privateChannelIds: stateFromStoresArray, geoRestrictedGuilds: stateFromStoresArray1, itemSize, itemMargin: token };
+                                                                      return getItemSize(obj);
+                                                                    },
+                                    footerSize() {
+                                                                      return length.length * itemSize + 8;
+                                                                    },
+                                    renderSection(arg0) {
+                                                                      let tmp5;
+                                                                      if (arg0 >= constants.GUILDS) {
+                                                                        tmp5 = null;
+                                                                        if (tmp[arg0 - constants.GUILDS].type === GuildsNodeType.FOLDER) {
+                                                                          ({ id: obj2.id, expanded: obj2.expanded, name: obj2.name, color: obj2.color, children: obj2.childNodes } = tmp[arg0 - constants.GUILDS]);
+                                                                          tmp5 = jsx(GuildsBarGuildFolderDefault, { id: null, expanded: null, name: null, color: null, childNodes: null });
+                                                                        }
+                                                                      } else {
+                                                                        tmp5 = null;
+                                                                        if (arg0 === constants.PENDING_JOIN_REQUESTS) {
+                                                                          tmp5 = null;
+                                                                          if (null != pendingFolderNode) {
+                                                                            const obj = { id: null, expanded: null, childNodes: null };
+                                                                            ({ id: obj.id, expanded: obj.expanded, children: obj.childNodes } = pendingFolderNode);
+                                                                            tmp5 = jsx(GuildsBarPendingGuildFolderDefault, { id: null, expanded: null, childNodes: null });
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                      return tmp5;
+                                                                    },
+                                    renderItem(arg0, arg1) {
+                                                                      return renderItemJSX(arg0, arg1, guildsNFolders, stateFromStoresArray, stateFromStores1, stateFromStoresArray2, stateFromStoresArray1, pendingFolderNode);
+                                                                    },
+                                    renderFooter() {
+                                                                      GuildsBarFooterWrapperDefault;
+                                                                      return <tmp>{closure_13.map(f123393)}</tmp>;
+                                                                    },
+                                    getRecyclerKey(arg0, arg1, arg2) {
+                                                                      if (arg1 >= constants.GUILDS) {
+                                                                        const element = guildsNFolders[arg1 - tmp3.GUILDS];
+                                                                        if (null != element) {
+                                                                          if (element.type !== GuildsNodeType.ROOT) {
+                                                                            if (element.type === GuildsNodeType.FOLDER) {
+                                                                              if (null == arg2) {
+                                                                                const _HermesInternal2 = HermesInternal;
+                                                                                return "" + element.id;
+                                                                              }
+                                                                            }
+                                                                            const _HermesInternal = HermesInternal;
+                                                                            return "" + element.id;
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    },
+                                    renderAccessory(fastList) {
+                                                                      return jsx(itemSize(token[28]), { fastList });
+                                                                    },
+                                    getAnchorIdFromIndex(section, item) {
+                                                                      const obj = GuildsBarDnDStore;
+                                                                      if (null == GuildsBarDnDStore.getState().dropSpecs) {
+                                                                        if (null == obj.getState().dragSpecs) {
+                                                                          const obj2 = { section, item, lurkingGuildsIds: stateFromStores1, guestGuildIds: stateFromStoresArray2, privateChannelIds: stateFromStoresArray, guildsNFolders, pendingFolderNode, geoRestrictedGuilds: stateFromStoresArray1 };
+                                                                          return getAnchorIdFromIndex(obj2);
+                                                                        }
+                                                                      }
+                                                                    },
+                                    getAnchorIndexFromId(id) {
+                                                                      const obj = { id, lurkingGuildsIds: stateFromStores1, guestGuildIds: stateFromStoresArray2, privateChannelIds: stateFromStoresArray, guildsNFolders, pendingFolderNode, geoRestrictedGuilds: stateFromStoresArray1 };
+                                                                      return getAnchorIndexFromId(obj);
+                                                                    }
+                                  };
+                                  class Ee {
+                                    constructor(guildId, arg1) {
+                                      if (null != guildId) {
+                                        const tmp5 = findGuildSectionIndex(guildId);
+                                        if (null != tmp5) {
+                                          const current2 = ref.current;
+                                          if (current2 != null) {
+                                            const obj = { orientation: "visible" };
+                                            const scrollToLocation = current2.scrollToLocation;
+                                            const merged = Object.assign(tmp5);
+                                            ({ insetStart: obj.paddingStart, insetEnd: obj.paddingEnd } = unreadPrivateChannelIds);
+                                            scrollToLocation(obj);
+                                          }
+                                        }
+                                      } else {
+                                        const current = ref.current;
+                                        if (current != null) {
+                                          current.scrollTo(0, arg1);
+                                        }
+                                      }
+                                    }
+                                  }
+                                  class B {
+                                    constructor() {
+                                      guildIds = pendingFolderNode.getGuildIds();
+                                      return guildIds.filter((item) => currentUserGuest.isCurrentUserGuest(item));
+                                    }
+                                  }
+                                  class C {
+                                    constructor() {
+                                      unreadPrivateChannelIds = unreadPrivateChannelIds.getUnreadPrivateChannelIds();
+                                      const items = [stateFromStoresArray, stateFromStoresArray1];
+                                      const obj = ref(token[37]);
+                                      return obj.filterOutMessageRequestsAndSpamById(unreadPrivateChannelIds, items);
+                                    }
+                                  }
+                                  cResult[48] = tmp83;
+                                  cResult[49] = stateFromStoresArray1;
+                                  cResult[50] = stateFromStoresArray2;
+                                  cResult[51] = token;
+                                  cResult[52] = guildsNFolders;
+                                  cResult[53] = tmp4;
+                                  cResult[54] = stateFromStores1;
+                                  cResult[55] = pendingFolderNode;
+                                  cResult[56] = stateFromStoresArray;
+                                  cResult[57] = tmp72;
+                                  cResult[58] = obj6;
+                                  tmp88 = obj6;
+                                }
+                              }
+                              const items9 = [];
+                              class Ee {
+                                constructor(guildId, arg1) {
+                                  if (null != guildId) {
+                                    const tmp5 = findGuildSectionIndex(guildId);
+                                    if (null != tmp5) {
+                                      const current2 = ref.current;
+                                      if (current2 != null) {
+                                        const obj = { orientation: "visible" };
+                                        const scrollToLocation = current2.scrollToLocation;
+                                        const merged = Object.assign(tmp5);
+                                        ({ insetStart: obj.paddingStart, insetEnd: obj.paddingEnd } = unreadPrivateChannelIds);
+                                        scrollToLocation(obj);
+                                      }
+                                    }
+                                  } else {
+                                    const current = ref.current;
+                                    if (current != null) {
+                                      current.scrollTo(0, arg1);
+                                    }
+                                  }
+                                }
+                              }
+                              if (stateFromStores3 > 0) {
+                                items9.push("unavailable-guilds");
+                              }
+                              class B {
+                                constructor() {
+                                  guildIds = pendingFolderNode.getGuildIds();
+                                  return guildIds.filter((item) => currentUserGuest.isCurrentUserGuest(item));
+                                }
+                              }
+                              if (tmp85) {
+                                items9.push("empty-nux");
+                              }
+                              class C {
+                                constructor() {
+                                  unreadPrivateChannelIds = unreadPrivateChannelIds.getUnreadPrivateChannelIds();
+                                  const items = [stateFromStoresArray, stateFromStoresArray1];
+                                  const obj = ref(token[37]);
+                                  return obj.filterOutMessageRequestsAndSpamById(unreadPrivateChannelIds, items);
+                                }
+                              }
+                              items9.push("create-join-guild");
+                              cResult[44] = guildsNFolders;
+                              cResult[45] = stateFromStores;
+                              cResult[46] = stateFromStores3;
+                              cResult[47] = items9;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  const items10 = [1, num2, num32, length, length2, bound, 1];
+                  for (const item10298 of guildsNFolders) {
+                    let element = item10298;
+                    if (item10298.type === GuildsNodeType.GUILD) {
+                      let arr4 = items10.push(1);
+                    } else if (element.type === tmp75.FOLDER) {
+                      let push = items10.push;
+                      if (element.expanded) {
+                        let arr5 = push(element.children.length);
+                      } else {
+                        let arr6 = push(1);
+                      }
+                    }
+                    continue;
+                  }
+                  if (stateFromStoresArray1.length > 0) {
+                    items10.push(stateFromStoresArray1.length);
+                  }
+                  cResult[36] = num2;
+                  cResult[37] = stateFromStoresArray1;
+                  cResult[38] = stateFromStoresArray2.length;
+                  cResult[39] = guildsNFolders;
+                  cResult[40] = stateFromStores1.length;
+                  cResult[41] = num32;
+                  cResult[42] = bound;
+                  cResult[43] = items10;
+                  tmp72 = items10;
+                }
+              }
+              class Ee {
+                constructor(guildId, arg1) {
+                  if (null != guildId) {
+                    const tmp5 = findGuildSectionIndex(guildId);
+                    if (null != tmp5) {
+                      const current2 = ref.current;
+                      if (current2 != null) {
+                        const obj = { orientation: "visible" };
+                        const scrollToLocation = current2.scrollToLocation;
+                        const merged = Object.assign(tmp5);
+                        ({ insetStart: obj.paddingStart, insetEnd: obj.paddingEnd } = unreadPrivateChannelIds);
+                        scrollToLocation(obj);
+                      }
+                    }
+                  } else {
+                    const current = ref.current;
+                    if (current != null) {
+                      current.scrollTo(0, arg1);
+                    }
+                  }
+                }
+              }
+              class B {
+                constructor() {
+                  guildIds = pendingFolderNode.getGuildIds();
+                  return guildIds.filter((item) => currentUserGuest.isCurrentUserGuest(item));
+                }
+              }
+              class C {
+                constructor() {
+                  unreadPrivateChannelIds = unreadPrivateChannelIds.getUnreadPrivateChannelIds();
+                  const items = [stateFromStoresArray, stateFromStoresArray1];
+                  const obj = ref(token[37]);
+                  return obj.filterOutMessageRequestsAndSpamById(unreadPrivateChannelIds, items);
+                }
+              }
+              cResult[32] = tmp59.insetStart;
+              cResult[33] = Ee;
+              tmp61 = Ee;
+            }
+          }
+        }
+        class C {
+          constructor() {
+            unreadPrivateChannelIds = unreadPrivateChannelIds.getUnreadPrivateChannelIds();
+            const items = [stateFromStoresArray, stateFromStoresArray1];
+            const obj = ref(token[37]);
+            return obj.filterOutMessageRequestsAndSpamById(unreadPrivateChannelIds, items);
+          }
+        }
+        tmp60[0] = tmp52;
+        tmp60[1] = tmp55;
+        tmp60[2] = top;
+        tmp60[3] = sum;
+        tmp60[4] = tmp58.height;
+        cResult[25] = top;
+        cResult[26] = tmp52;
+        cResult[27] = tmp55;
+        cResult[28] = sum;
+        cResult[29] = tmp60;
+        tmp59 = tmp60;
+      }
+      const rect1 = { top: result, bottom: diff };
+      cResult[21] = result;
+      cResult[22] = diff;
+      cResult[23] = rect1;
+      tmp55 = rect1;
+    }
+  }
+  const fn = function _() {
+    const listInsets = GuildsBarDnDStore.getState().listInsets;
+    const obj = { start: top, end: mobileQuestDockHeight + youBarTotalHeight };
+    const result = listInsets.set(obj);
+  };
+  const items11 = [mobileQuestDockHeight, top, youBarTotalHeight];
+  cResult[0] = mobileQuestDockHeight;
+  cResult[1] = top;
+  cResult[2] = youBarTotalHeight;
+  cResult[3] = fn;
+  cResult[4] = items11;
+  tmp12 = items11;
+  tmp11 = fn;
+}) : ((arg0) => {
+  let closure_1;
+  let guildsNFolders;
+  let isScreenReaderEnabled;
+  let ref;
+  let stateFromStores1;
+  let token;
   _require = arg0;
   const tmp = isScreenReaderEnabled();
   importDefault = tmp;
-  token = require("useToken").useToken(require("native").modules.mobile.GUILD_BAR_ITEM_MARGIN);
+  let tmp2 = _require;
+  const tmp3 = token;
+  let obj = require("useToken");
+  let tmp4 = importDefault;
+  token = obj.useToken(require("native").modules.mobile.GUILD_BAR_ITEM_MARGIN);
   let rect = require("useSafeAreaInsets")();
   const top = rect.top;
   const bottom = rect.bottom;
-  let obj = require("useToken");
-  const mobileQuestDockHeight = require("QuestHooks").useMobileQuestDockHeight();
   let obj2 = require("QuestHooks");
-  const youBarTotalHeight = require("useYouBarTotalHeight").useYouBarTotalHeight();
+  const mobileQuestDockHeight = obj2.useMobileQuestDockHeight();
   let obj3 = require("useYouBarTotalHeight");
-  const youBarTotalHeight1 = require("useYouBarTotalHeight").useYouBarTotalHeight(4);
+  const youBarTotalHeight = obj3.useYouBarTotalHeight();
+  const obj4 = require("useYouBarTotalHeight");
+  const youBarTotalHeight1 = obj4.useYouBarTotalHeight(4);
   let items = [mobileQuestDockHeight, top, youBarTotalHeight];
   const effect = top.useEffect(() => {
     const listInsets = GuildsBarDnDStore.getState().listInsets;
-    const result = listInsets.set({ start: top, end: mobileQuestDockHeight + youBarTotalHeight });
+    const obj = { start: top, end: mobileQuestDockHeight + youBarTotalHeight };
+    const result = listInsets.set(obj);
   }, items);
   let num = 0;
   if (require("useIsFavoritesGuildVisible")()) {
     num = 1;
   }
-  let obj4 = require("useYouBarTotalHeight");
   let items1 = [stateFromStores1, youBarTotalHeight, youBarTotalHeight1];
-  const stateFromStoresArray = require("initialize").useStateFromStoresArray(items1, () => {
+  const tmp2Result = tmp2(tmp3[38]);
+  const stateFromStoresArray = tmp2Result.useStateFromStoresArray(items1, () => {
     const unreadPrivateChannelIds = stateFromStores1.getUnreadPrivateChannelIds();
     const items = [youBarTotalHeight, youBarTotalHeight1];
-    return ref(token[36]).filterOutMessageRequestsAndSpamById(unreadPrivateChannelIds, items);
+    const obj = ref(token[37]);
+    return obj.filterOutMessageRequestsAndSpamById(unreadPrivateChannelIds, items);
   }, []);
-  const tmp2Result = require("initialize");
   const items2 = [bottom];
-  const stateFromStores = require("initialize").useStateFromStores(items2, () => bottom.isConnected());
-  const tmp2Result8 = require("initialize");
+  const tmp2Result8 = tmp2(tmp3[38]);
+  const stateFromStores = tmp2Result8.useStateFromStores(items2, () => bottom.isConnected());
   const items3 = [num];
-  const stateFromStoresArray1 = require("initialize").useStateFromStoresArray(items3, () => num.getGeoRestrictedGuilds());
-  const tmp2Result9 = require("initialize");
+  const tmp2Result9 = tmp2(tmp3[38]);
+  const stateFromStoresArray1 = tmp2Result9.useStateFromStoresArray(items3, () => num.getGeoRestrictedGuilds());
   const items4 = [mobileQuestDockHeight];
-  stateFromStores1 = require("initialize").useStateFromStores(items4, () => mobileQuestDockHeight.lurkingGuildIds());
-  const tmp2Result10 = require("initialize");
+  const tmp2Result10 = tmp2(tmp3[38]);
+  stateFromStores1 = tmp2Result10.useStateFromStores(items4, () => mobileQuestDockHeight.lurkingGuildIds());
   const items5 = [stateFromStoresArray1, stateFromStores];
-  const stateFromStoresArray2 = require("initialize").useStateFromStoresArray(items5, () => {
+  const tmp2Result11 = tmp2(tmp3[38]);
+  const stateFromStoresArray2 = tmp2Result11.useStateFromStoresArray(items5, () => {
+    let currentUserGuest;
     const guildIds = stateFromStoresArray1.getGuildIds();
     return guildIds.filter((item) => currentUserGuest.isCurrentUserGuest(item));
   });
-  const tmp2Result11 = require("initialize");
   const items6 = [guildsNFolders];
-  const stateFromStores2 = require("initialize").useStateFromStores(items6, () => ({ guildsNFolders: guildsNFolders.getFastListGuildFolders(), version: guildsNFolders.getGuildsTree().version }), [], tmp4(tmp3[37]));
+  const tmp2Result12 = tmp2(tmp3[38]);
+  const stateFromStores2 = tmp2Result12.useStateFromStores(items6, () => {
+    const obj = { guildsNFolders: guildsNFolders.getFastListGuildFolders(), version: guildsNFolders.getGuildsTree().version };
+    return obj;
+  }, [], tmp4(tmp3[39]));
   guildsNFolders = stateFromStores2.guildsNFolders;
-  const tmp16 = require("useGuildsBarCreatePendingFolderNode")();
+  const version = stateFromStores2.version;
+  const tmp16 = tmp4(tmp3[40])();
   const expanded = tmp16.expanded;
   const pendingFolderNode = tmp16.pendingFolderNode;
-  const tmp2Result12 = require("initialize");
   const items7 = [stateFromStoresArray];
-  const stateFromStores3 = require("initialize").useStateFromStores(items7, () => stateFromStoresArray.totalUnavailableGuilds);
-  const tmp2Result13 = require("initialize");
-  isScreenReaderEnabled = require("useIsScreenReaderEnabled").useIsScreenReaderEnabled();
+  const tmp2Result13 = tmp2(tmp3[38]);
+  const stateFromStores3 = tmp2Result13.useStateFromStores(items7, () => stateFromStoresArray.totalUnavailableGuilds);
+  const tmp2Result14 = tmp2(tmp3[41]);
+  isScreenReaderEnabled = tmp2Result14.useIsScreenReaderEnabled();
   const items8 = [isScreenReaderEnabled, token, youBarTotalHeight, bottom, top, mobileQuestDockHeight, youBarTotalHeight1];
   const memo = obj5.useMemo(() => {
-    const obj = { showsVerticalScrollIndicator: !isScreenReaderEnabled, scrollIndicatorInsets: null, insetStart: null, insetEnd: null, chunkBase: null };
-    const rect = { top: 3 * token, bottom: null };
+    let diff;
+    let obj3;
+    let rect;
+    const obj = { showsVerticalScrollIndicator: !isScreenReaderEnabled, scrollIndicatorInsets: rect, insetStart: top, insetEnd: mobileQuestDockHeight + 2 * token + youBarTotalHeight1, chunkBase: obj3.getWindowDimensions().height };
+    rect = { top: 3 * token, bottom: diff };
     if (youBarTotalHeight > 0) {
-      let diff = tmp2 - 16;
+      diff = tmp2 - 16;
     } else {
       diff = bottom + 3 * tmp;
     }
-    rect.bottom = diff;
-    obj.scrollIndicatorInsets = rect;
-    obj.insetStart = top;
-    obj.insetEnd = mobileQuestDockHeight + 2 * token + youBarTotalHeight1;
-    obj.chunkBase = useWindowDimensions.getWindowDimensions().height;
+    obj3 = useWindowDimensions;
     return obj;
   }, items8);
   const items9 = [, , ];
   ({ insetStart: arr10[0], insetEnd: arr10[1] } = memo);
   items9[2] = arg0;
-  const callback = obj5.useCallback((arg0, arg1) => {
-    if (null != arg0) {
-      const tmp5 = findGuildSectionIndex(arg0);
+  const callback = obj5.useCallback((guildId, arg1) => {
+    if (null != guildId) {
+      const tmp5 = findGuildSectionIndex(guildId);
       if (null != tmp5) {
         const current2 = ref.current;
         if (current2 != null) {
-          const obj = {};
+          const obj = { orientation: "visible" };
+          const scrollToLocation = current2.scrollToLocation;
           const merged = Object.assign(tmp5);
-          obj.orientation = "visible";
           ({ insetStart: obj.paddingStart, insetEnd: obj.paddingEnd } = memo);
-          current2.scrollToLocation(obj);
+          scrollToLocation(obj);
         }
       }
     } else {
@@ -186,12 +1343,12 @@ export default function useGuildsBarProps(arg0) {
       }
     }
   }, items9);
-  require("useGuildsBarSelectedGuildScroller")(callback);
+  tmp4(tmp3[43])(callback);
   const memo1 = obj5.useMemo(() => {
     const guildId = stateFromStoresArray2.getGuildId();
     let tmp2;
     if (null != guildId) {
-      tmp2 = memo1(guildId);
+      tmp2 = findGuildSectionIndex(guildId);
     }
     if (null != tmp2) {
       const obj = { initialScrollItem: null, initialScrollSection: null };
@@ -199,11 +1356,16 @@ export default function useGuildsBarProps(arg0) {
       return obj;
     }
   }, []);
-  const items10 = [num, pendingFolderNode, stateFromStores1, stateFromStoresArray2, stateFromStoresArray, stateFromStoresArray1, stateFromStores3, stateFromStores, guildsNFolders, memo1, stateFromStores2.version, expanded, token, tmp];
-  const tmp2Result14 = require("useIsScreenReaderEnabled");
-  return {
+  const items10 = [num, pendingFolderNode, stateFromStores1, stateFromStoresArray2, stateFromStoresArray, stateFromStoresArray1, stateFromStores3, stateFromStores, guildsNFolders, memo1, version, expanded, token, tmp];
+  const obj6 = {
     listProps: memo,
     listDataProps: top.useMemo(() => {
+      let geoRestrictedGuilds;
+      let guestGuildIds;
+      let itemMargin;
+      let itemSize;
+      let lurkingGuildsIds;
+      let privateChannelIds;
       const items = [1, num];
       num = 0;
       if (null != pendingFolderNode) {
@@ -223,6 +1385,7 @@ export default function useGuildsBarProps(arg0) {
         if (item10028.type === expanded.GUILD) {
           let arr = items.push(1);
         } else if (element.type === tmp3.FOLDER) {
+          let tmp5 = item10028;
           let push = items.push;
           if (element.expanded) {
             let arr3 = push(element.children.length);
@@ -236,476 +1399,112 @@ export default function useGuildsBarProps(arg0) {
         items.push(arr2.length);
       }
       const items1 = [];
+      const tmp11 = stateFromStores3;
       if (stateFromStores3 > 0) {
         items1.push("unavailable-guilds");
       }
-      let tmp13 = stateFromStores;
-      if (stateFromStores) {
-        tmp13 = 0 === guildsNFolders.length;
-      }
-      if (tmp13) {
-        tmp13 = 0 === stateFromStores3;
-      }
+      const tmp13 = stateFromStores && 0 === guildsNFolders.length && 0 === tmp11;
       if (tmp13) {
         items1.push("empty-nux");
       }
       items1.push("create-join-guild");
-      let obj = {};
-      const merged = Object.assign(memo1);
-      obj.sections = items;
-      obj.sectionSize = function sectionSize(arg0) {
-        if (arg0 !== stateFromStores3.PENDING_JOIN_REQUESTS) {
-          num = 0;
-          if (arg0 >= tmp4.GUILDS) {
-            let num2 = 0;
-            if (null != tmp[arg0 - tmp4.GUILDS]) {
-              num2 = 0;
-              if (tmp6.type === expanded.FOLDER) {
-                num2 = tmp3;
-              }
-            }
-            num = num2;
-          }
-        } else {
-          num = tmp3;
-        }
-        return num;
-      };
-      obj.itemSize = function itemSize(arg0, arg1) {
-        num = closure_1_1;
-        if (stateFromStores3.MESSAGES !== arg0) {
-          num = tmp4;
-          if (tmp6.FAVORITES !== arg0) {
-            num = tmp4;
-            if (tmp6.LURKING_GUILDS !== arg0) {
-              num = tmp4;
-              if (tmp6.GUEST_GUILDS !== arg0) {
-                let num6 = arg1;
-                if (tmp6.UNREAD_PRIVATE_CHANNELS === arg0) {
-                  if (num6 == null) {
-                    num6 = -1;
-                  }
-                  let num7 = 0;
-                  if (null != tmp2[num6]) {
-                    num7 = tmp4;
-                  }
-                  num = num7;
-                } else if (tmp6.SEPARATOR === arg0) {
-                  num = 1 + 2 * tmp5;
-                } else if (tmp6.PENDING_JOIN_REQUESTS === arg0) {
-                  let num3 = 0;
-                  if (null != num6) {
-                    num3 = 0;
-                    if (null != tmp) {
-                      num3 = 0;
-                      if (tmp.expanded) {
-                        num3 = 0;
-                        if (null != tmp.children[num6]) {
-                          num3 = tmp4;
-                        }
-                      }
-                    }
-                  }
-                  num = num3;
-                } else {
-                  num = 0;
-                  if (null != num6) {
-                    const diff = arg0 - tmp6.GUILDS;
-                    if (arr.length < diff) {
-                      const element = arr[diff];
-                      let num2 = 0;
-                      if (null != element) {
-                        num2 = 0;
-                        if (element.type !== expanded.ROOT) {
-                          if (element.type !== tmp8.GUILD) {
-                            if (element.type !== tmp8.FOLDER) {
-                              num2 = tmp4;
-                            } else {
-                              num2 = 0;
-                              if (element.expanded) {
-                                num2 = 0;
-                              }
-                            }
-                          } else {
-                            num2 = 0;
-                          }
-                        }
-                      }
-                      num = num2;
-                    } else {
-                      num = tmp4;
-                    }
-                  }
+      let obj = {
+        sections: items,
+        sectionSize(arg0) {
+          if (arg0 !== stateFromStores3.PENDING_JOIN_REQUESTS) {
+            num = 0;
+            if (arg0 >= stateFromStores3.GUILDS) {
+              let num2 = 0;
+              if (null != tmp[arg0 - stateFromStores3.GUILDS]) {
+                num2 = 0;
+                if (tmp[arg0 - stateFromStores3.GUILDS].type === expanded.FOLDER) {
+                  num2 = tmp3;
                 }
               }
+              num = num2;
             }
+          } else {
+            num = tmp3;
           }
-        }
-        return num;
-      };
-      obj.footerSize = function footerSize() {
-        return items1.length * closure_1 + 8;
-      };
-      obj.renderSection = function renderSection(arg0) {
-        if (arg0 >= stateFromStores3.GUILDS) {
-          let tmp5 = null;
-          if (tmp[arg0 - tmp3.GUILDS].type === expanded.FOLDER) {
-            ({ id: obj2.id, expanded: obj2.expanded, name: obj2.name, color: obj2.color, children: obj2.childNodes } = tmp9);
-            tmp5 = memo(closure_1(token[15]), { id: null, expanded: null, name: null, color: null, childNodes: null });
-            const obj3 = { id: null, expanded: null, name: null, color: null, childNodes: null };
-          }
-        } else {
-          tmp5 = null;
-          if (arg0 === tmp3.PENDING_JOIN_REQUESTS) {
+          return num;
+        },
+        itemSize(section, row) {
+          const obj = { section, row, guildsNFolders, pendingFolderNode, privateChannelIds, geoRestrictedGuilds, itemSize, itemMargin };
+          return memo1(obj);
+        },
+        footerSize() {
+          return items1.length * closure_1 + 8;
+        },
+        renderSection(arg0) {
+          let tmp5;
+          if (arg0 >= stateFromStores3.GUILDS) {
             tmp5 = null;
-            if (null != tmp2) {
-              const obj = { id: null, expanded: null, childNodes: null };
-              ({ id: obj.id, expanded: obj.expanded, children: obj.childNodes } = tmp2);
-              tmp5 = memo(closure_1(token[16]), obj);
-            }
-          }
-        }
-        return tmp5;
-      };
-      obj.renderItem = function renderItem(arg0, arg1) {
-        if (stateFromStores3.MESSAGES === arg0) {
-          let tmp8 = memo(closure_1(token[17]), {});
-        } else if (tmp6.FAVORITES === arg0) {
-          tmp8 = memo(closure_1(token[18]), {});
-        } else if (tmp6.LURKING_GUILDS === arg0) {
-          let tmp40 = null;
-          if (null != tmp2[arg1]) {
-            const obj2 = { guildId: tmp39 };
-            tmp40 = memo(closure_1(token[19]), obj2);
-          }
-          tmp8 = tmp40;
-        } else if (tmp6.GUEST_GUILDS === arg0) {
-          let tmp35 = null;
-          if (null != tmp3[arg1]) {
-            const obj3 = { guildId: tmp34 };
-            tmp35 = memo(closure_1(token[19]), obj3);
-          }
-          tmp8 = tmp35;
-        } else if (tmp6.UNREAD_PRIVATE_CHANNELS === arg0) {
-          let tmp30 = null;
-          if (null != tmp[arg1]) {
-            const obj4 = { channelId: tmp29 };
-            tmp30 = memo(closure_1(token[20]), obj4);
-          }
-          tmp8 = tmp30;
-        } else if (tmp6.SEPARATOR === arg0) {
-          tmp8 = memo(closure_1(token[21]), {});
-        } else if (tmp6.PENDING_JOIN_REQUESTS === arg0) {
-          tmp8 = null;
-          if (null != tmp5) {
-            let tmp21 = null;
-            if (null != tmp5.children[arg1]) {
-              tmp21 = null;
-              if (tmp20.type === expanded.GUILD) {
-                const obj5 = { guildId: tmp20.id };
-                tmp21 = memo(closure_1(token[22]), obj5);
-              }
-            }
-            tmp8 = tmp21;
-          }
-        } else {
-          const diff = arg0 - tmp6.GUILDS;
-          if (diff >= arr.length) {
-            let tmp15 = null;
-            if (null != tmp4[arg1]) {
-              const obj6 = { restrictedGuild: tmp14 };
-              tmp15 = memo(closure_1(token[23]), obj6);
-            }
-            tmp8 = tmp15;
-          } else {
-            const element = arr[diff];
-            tmp8 = null;
-            if (null != element) {
-              tmp8 = null;
-              if (element.type !== expanded.ROOT) {
-                if (element.type !== tmp7.GUILD) {
-                  let tmp9 = element;
-                  if (element.type === tmp7.FOLDER) {
-                    tmp9 = element.children[arg1];
-                  }
-                  let tmp10 = null;
-                  if (null != tmp9) {
-                    tmp10 = null;
-                    if (tmp9.type === tmp7.GUILD) {
-                      const obj = { guildId: tmp9.id };
-                      tmp10 = memo(closure_1(token[19]), obj);
-                    }
-                  }
-                  tmp8 = tmp10;
-                } else {
-                  tmp8 = null;
-                }
-              }
-            }
-          }
-        }
-        return tmp8;
-      };
-      obj.renderFooter = function renderFooter() {
-        const obj = {
-          children: items1.map((item) => {
-            if ("unavailable-guilds" === item) {
-              return closure_1_19(closure_1_1(16212), {}, item);
-            } else if ("empty-nux" === item) {
-              return closure_1_19(closure_1_1(16213), {}, item);
-            } else if ("create-join-guild" === item) {
-              return closure_1_19(closure_1_1(16214), {}, item);
-            }
-          })
-        };
-        return jsx(GuildsBarFooterWrapperDefault, {
-          children: items1.map((item) => {
-            if ("unavailable-guilds" === item) {
-              return closure_1_19(closure_1_1(16212), {}, item);
-            } else if ("empty-nux" === item) {
-              return closure_1_19(closure_1_1(16213), {}, item);
-            } else if ("create-join-guild" === item) {
-              return closure_1_19(closure_1_1(16214), {}, item);
-            }
-          })
-        });
-      };
-      obj.getRecyclerKey = function getRecyclerKey(SECTION, section, item1) {
-        if (section >= stateFromStores3.GUILDS) {
-          const element = guildsNFolders[section - tmp3.GUILDS];
-          if (null != element) {
-            if (element.type !== expanded.ROOT) {
-              if (element.type === tmp10.FOLDER) {
-                if (null == item1) {
-                  const _HermesInternal2 = HermesInternal;
-                  return "" + element.id;
-                }
-              }
-              const _HermesInternal = HermesInternal;
-              return "" + element.id;
-            }
-          }
-        }
-      };
-      obj.renderAccessory = function renderAccessory(memo1) {
-        return memo(closure_1_1(token[28]), { fastList: memo1 });
-      };
-      obj.getAnchorIdFromIndex = function getAnchorIdFromIndex(arg0, arg1) {
-        if (null == pendingFolderNode.getState().dropSpecs) {
-          if (null == pendingFolderNode.getState().dragSpecs) {
-            if (stateFromStores3.MESSAGES === arg0) {
-              let SEPARATOR = constants.MESSAGES;
-            } else if (tmp7.FAVORITES === arg0) {
-              SEPARATOR = constants.FAVORITES;
-            } else if (tmp7.PENDING_JOIN_REQUESTS === arg0) {
-              if (null == arg1) {
-                SEPARATOR = constants.PENDING_JOIN_REQUESTS;
-              } else {
-                let id1;
-                if (tmp5 != null) {
-                  if (tmp5.children[arg1] != null) {
-                    id1 = tmp25.id;
-                  }
-                }
-                let combined;
-                if (null != id1) {
-                  const _HermesInternal5 = HermesInternal;
-                  combined = "" + constants.PENDING_JOIN_REQUESTS + ":" + id1;
-                }
-                SEPARATOR = combined;
-              }
-            } else if (tmp7.LURKING_GUILDS === arg0) {
-              if (null == arg1) {
-                let LURKING_GUILDS = constants.LURKING_GUILDS;
-              } else {
-                const _HermesInternal4 = HermesInternal;
-                LURKING_GUILDS = "" + constants.LURKING_GUILDS + ":" + tmp2[arg1];
-              }
-              SEPARATOR = LURKING_GUILDS;
-            } else if (tmp7.GUEST_GUILDS === arg0) {
-              if (null == arg1) {
-                let GUEST_GUILDS = constants.GUEST_GUILDS;
-              } else {
-                const _HermesInternal3 = HermesInternal;
-                GUEST_GUILDS = "" + constants.GUEST_GUILDS + ":" + tmp3[arg1];
-              }
-              SEPARATOR = GUEST_GUILDS;
-            } else if (tmp7.UNREAD_PRIVATE_CHANNELS === arg0) {
-              if (null == arg1) {
-                let UNREAD_PRIVATE_CHANNELS = constants.UNREAD_PRIVATE_CHANNELS;
-              } else {
-                const _HermesInternal2 = HermesInternal;
-                UNREAD_PRIVATE_CHANNELS = "" + constants.UNREAD_PRIVATE_CHANNELS + ":" + tmp4[arg1];
-              }
-              SEPARATOR = UNREAD_PRIVATE_CHANNELS;
-            } else if (tmp7.SEPARATOR === arg0) {
-              SEPARATOR = constants.SEPARATOR;
-            } else {
-              const GUILDS = tmp7.GUILDS;
-              const diff = arg0 - tmp7.GUILDS;
-              if (null == arr[diff]) {
-                let tmp9;
-                if (diff >= arr.length) {
-                  if (null != arg1) {
-                    let id2;
-                    if (tmp6[arg1] != null) {
-                      id2 = tmp10.id;
-                    }
-                    tmp9 = id2;
-                  }
-                }
-                let id = tmp9;
-              } else if (null == arg1) {
-                id = tmp34.id;
-              } else if (tmp34.children[arg1] != null) {
-                id = tmp8.id;
-              }
-              if (null != id) {
-                const _HermesInternal = HermesInternal;
-                SEPARATOR = "" + constants.GUILDS + ":" + id;
-              }
-            }
-            return SEPARATOR;
-          }
-        }
-      };
-      obj.getAnchorIndexFromId = function getAnchorIndexFromId(id) {
-        return (function getAnchorIndexFromId(arg0) {
-          ({ id, lurkingGuildsIds, guestGuildIds, privateChannelIds, guildsNFolders, pendingFolderNode, geoRestrictedGuilds } = arg0);
-          if (constants2.MESSAGES === id) {
-            const obj3 = { section: constants.MESSAGES };
-            return obj3;
-          } else if (tmp2.FAVORITES === id) {
-            const obj6 = { section: constants.FAVORITES };
-            return obj6;
-          } else if (tmp2.PENDING_JOIN_REQUESTS === id) {
-            const obj7 = { section: constants.PENDING_JOIN_REQUESTS };
-            return obj7;
-          } else if (tmp2.LURKING_GUILDS === id) {
-            const obj9 = { section: constants.LURKING_GUILDS };
-            return obj9;
-          } else if (tmp2.GUEST_GUILDS === id) {
-            const obj11 = { section: constants.GUEST_GUILDS };
-            return obj11;
-          } else if (tmp2.UNREAD_PRIVATE_CHANNELS === id) {
-            const obj13 = { section: constants.UNREAD_PRIVATE_CHANNELS };
-            return obj13;
-          } else if (tmp2.SEPARATOR === id) {
-            const obj14 = { section: constants.SEPARATOR };
-            return obj14;
-          } else if (id.startsWith(tmp2.LURKING_GUILDS)) {
-            let num12 = 0;
-            for (const item10164 of lurkingGuildsIds) {
-              if (closure_1_22(constants2.LURKING_GUILDS, id, item10164)) {
-                let obj15 = { section: null, item: null };
-                obj15.section = constants.LURKING_GUILDS;
-                obj15.item = num12;
-                obj12.return();
-                return obj15;
-              } else {
-                num12 = num12 + 1;
-                continue;
-              }
+            if (tmp[arg0 - stateFromStores3.GUILDS].type === expanded.FOLDER) {
+              const obj3 = { id: null, expanded: null, name: null, color: null, childNodes: null };
+              ({ id: obj2.id, expanded: obj2.expanded, name: obj2.name, color: obj2.color, children: obj2.childNodes } = tmp[arg0 - stateFromStores3.GUILDS]);
+              tmp5 = memo(itemSize(token[15]), obj3);
             }
           } else {
-            if (id.startsWith(tmp2.PENDING_JOIN_REQUESTS)) {
+            tmp5 = null;
+            if (arg0 === stateFromStores3.PENDING_JOIN_REQUESTS) {
+              tmp5 = null;
               if (null != pendingFolderNode) {
-                num = 0;
-                const children2 = pendingFolderNode.children;
-                for (const item10025 of children2) {
-                  if (closure_1_22(constants2.PENDING_JOIN_REQUESTS, id, item10025.id)) {
-                    let obj = { section: null, item: null };
-                    obj.section = constants.PENDING_JOIN_REQUESTS;
-                    obj.item = num;
-                    obj21.return();
-                    return obj;
-                  } else {
-                    num = num + 1;
-                    continue;
-                  }
-                }
+                const obj = { id: null, expanded: null, childNodes: null };
+                ({ id: obj.id, expanded: obj.expanded, children: obj.childNodes } = pendingFolderNode);
+                tmp5 = memo(itemSize(token[16]), obj);
               }
             }
-            if (id.startsWith(constants2.GUEST_GUILDS)) {
-              let num10 = 0;
-              for (const item10146 of guestGuildIds) {
-                if (closure_1_22(constants2.GUEST_GUILDS, id, item10146)) {
-                  let obj16 = { section: null, item: null };
-                  obj16.section = constants.GUEST_GUILDS;
-                  obj16.item = num10;
-                  obj10.return();
-                  return obj16;
-                } else {
-                  num10 = num10 + 1;
-                  continue;
-                }
-              }
-            } else {
-              if (id.startsWith(tmp14.UNREAD_PRIVATE_CHANNELS)) {
-                let num4 = 0;
-                for (const item10057 of privateChannelIds) {
-                  if (closure_1_22(constants2.UNREAD_PRIVATE_CHANNELS, id, item10057)) {
-                    let obj17 = { section: null, item: null };
-                    obj17.section = constants.UNREAD_PRIVATE_CHANNELS;
-                    obj17.item = num4;
-                    obj2.return();
-                    return obj17;
-                  } else {
-                    num4 = num4 + 1;
-                    continue;
-                  }
-                }
-              }
-              if (id.startsWith(constants2.GUILDS)) {
-                let num6 = 0;
-                let num7 = 0;
-                for (const item10081 of guildsNFolders) {
-                  let tmp28 = item10081;
-                  if (closure_1_22(constants2.GUILDS, id, item10081.id)) {
-                    let obj18 = { section: null };
-                    obj18.section = num6 + constants.GUILDS;
-                    obj4.return();
-                    return obj18;
-                  } else {
-                    let children = tmp28.children;
-                    for (const item10095 of children) {
-                      if (closure_1_22(constants2.GUILDS, id, item10095.id)) {
-                        let obj19 = { section: null, item: null };
-                        obj19.section = num6 + constants.GUILDS;
-                        obj19.item = num7;
-                        obj5.return();
-                        obj4.return();
-                        return obj19;
-                      } else {
-                        num7 = num7 + 1;
-                        continue;
-                      }
-                    }
-                    num6 = num6 + 1;
-                    num7 = 0;
-                    continue;
-                  }
-                }
-                let num8 = 0;
-                for (const item10125 of geoRestrictedGuilds) {
-                  if (closure_1_22(constants2.GUILDS, id, item10125.id)) {
-                    let obj20 = { section: null, item: null };
-                    obj20.section = num6 + constants.GUILDS;
-                    obj20.item = num8;
-                    obj8.return();
-                    return obj20;
-                  } else {
-                    num8 = num8 + 1;
-                    continue;
-                  }
-                }
-              }
-            }
-            tmp14 = constants2;
           }
-        })({ id, lurkingGuildsIds, guestGuildIds, privateChannelIds, guildsNFolders, pendingFolderNode, geoRestrictedGuilds });
+          return tmp5;
+        },
+        renderItem(arg0, arg1) {
+          return renderItemJSX(arg0, arg1, guildsNFolders, privateChannelIds, lurkingGuildsIds, guestGuildIds, geoRestrictedGuilds, pendingFolderNode);
+        },
+        renderFooter() {
+          GuildsBarFooterWrapperDefault;
+          return <tmp>{items1.map(f123393)}</tmp>;
+        },
+        getRecyclerKey(arg0, arg1, arg2) {
+          if (arg1 >= stateFromStores3.GUILDS) {
+            const element = guildsNFolders[arg1 - tmp3.GUILDS];
+            if (null != element) {
+              if (element.type !== expanded.ROOT) {
+                if (element.type === expanded.FOLDER) {
+                  if (null == arg2) {
+                    const _HermesInternal2 = HermesInternal;
+                    return "" + element.id;
+                  }
+                }
+                const _HermesInternal = HermesInternal;
+                return "" + element.id;
+              }
+            }
+          }
+        },
+        renderAccessory(fastList) {
+          const obj = { fastList };
+          return memo(itemSize(itemMargin[28]), obj);
+        },
+        getAnchorIdFromIndex(section, item) {
+          const obj = pendingFolderNode;
+          if (null == pendingFolderNode.getState().dropSpecs) {
+            if (null == obj.getState().dragSpecs) {
+              const obj2 = { section, item, lurkingGuildsIds, guestGuildIds, privateChannelIds, guildsNFolders, pendingFolderNode, geoRestrictedGuilds };
+              return getAnchorIdFromIndex(obj2);
+            }
+          }
+        },
+        getAnchorIndexFromId(id) {
+          const obj = { id, lurkingGuildsIds, guestGuildIds, privateChannelIds, guildsNFolders, pendingFolderNode, geoRestrictedGuilds };
+          return getAnchorIndexFromId(obj);
+        }
       };
+      const merged = Object.assign(memo1);
       return obj;
     }, items10)
   };
-};
+  return obj6;
+});
+let result = size.fileFinishedImporting("modules/guilds_bar/native/hooks/useGuildsBarProps.tsx");
+
+export default tmp3;

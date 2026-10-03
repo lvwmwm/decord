@@ -1,11 +1,11 @@
-// Module ID: 10694
-// Function ID: 10695
+// Module ID: 10765
+// Function ID: 10766
 // Name: GiftingBadgeConstants
-// Dependencies: [7819, 2]
+// Dependencies: [7863, 2]
 // Exports: getNextTierForProgress, getRemainingGiftsToNextTier, getTierForProgress
 
-// Module 10694 (GiftingBadgeConstants)
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7819 */;
+// Module 10765 (GiftingBadgeConstants)
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7863 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = BadgeDirectoryStore.getSingleRequirementThreshold;
@@ -15,8 +15,8 @@ export const getTierForProgress = function getTierForProgress(arr, arg1) {
   closure_0 = arg1;
   return arr.reduce((acc, item) => {
     let tmp = acc;
-    const tmp3 = closure_0(item);
     let tmp4 = acc;
+    const tmp3 = closure_0(item);
     if (closure_0 >= tmp3) {
       if (null == tmp) {
         tmp = item;
@@ -30,8 +30,8 @@ export const getNextTierForProgress = function getNextTierForProgress(arr, arg1)
   closure_0 = arg1;
   return arr.reduce((acc, item) => {
     let tmp = acc;
-    const tmp3 = closure_0(item);
     let tmp4 = acc;
+    const tmp3 = closure_0(item);
     if (closure_0 < tmp3) {
       if (null == tmp) {
         tmp = item;
@@ -45,8 +45,8 @@ export const getRemainingGiftsToNextTier = function getRemainingGiftsToNextTier(
   closure_0 = arg1;
   const reduced = arr.reduce((acc, item) => {
     let tmp = acc;
-    const tmp3 = closure_0(item);
     let tmp4 = acc;
+    const tmp3 = closure_0(item);
     if (closure_0 < tmp3) {
       if (null == tmp) {
         tmp = item;
@@ -57,6 +57,7 @@ export const getRemainingGiftsToNextTier = function getRemainingGiftsToNextTier(
   }, null);
   let diff = null;
   if (null != reduced) {
+    let tmp3 = closure_0;
     diff = closure_0(reduced) - arg1;
   }
   return diff;

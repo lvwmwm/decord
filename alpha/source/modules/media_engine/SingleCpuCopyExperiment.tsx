@@ -1,16 +1,16 @@
-// Module ID: 13563
-// Function ID: 13564
+// Module ID: 13625
+// Function ID: 13626
 // Name: SingleCpuCopyExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1440, 2]
 
-// Module 13563 (SingleCpuCopyExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 13625 (SingleCpuCopyExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-09-single-cpu-copy", kind: "user", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+const obj = { name: "2026-09-single-cpu-copy", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/media_engine/SingleCpuCopyExperiment.tsx");
 

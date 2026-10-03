@@ -1,34 +1,28 @@
 // Module ID: 925
 // Function ID: 926
-// Dependencies: [904, 906]
-// Exports: onHidden
+// Dependencies: []
+// Exports: initUnique
 
 // Module 925
-import _mod904 from "module_904" /* 904 */;
+let set;
 
-const require = globalThis.__r;
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+const weakMap = new WeakMap();
 
-require = arg1;
-const dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-
-export const onHidden = (arg0) => {
-  _require = arg0;
-  function onHiddenOrPageHide(type) {
-    let tmp = "pagehide" !== type.type;
-    if (tmp) {
-      const _document = _mod904.WINDOW.document;
-      let visibilityState;
-      if (_document != null) {
-        visibilityState = _document.visibilityState;
-      }
-      tmp = "hidden" !== visibilityState;
+export const initUnique = function initUnique(visibilityWatcher, InteractionManager) {
+  try {
+    if (!weakMap.get(visibilityWatcher)) {
+      const self = this;
+      const self2 = this;
+      set = weakMap.set;
+      const tmp2 = new InteractionManager();
+      const result = set(visibilityWatcher, tmp2);
     }
-    if (!tmp) {
-      closure_0(type);
-    }
+    return weakMap.get(visibilityWatcher);
+  } catch (err) {
+    const self3 = this;
+    const self4 = this;
+    const tmp5 = new InteractionManager();
+    return tmp5;
   }
-  require("module_906").addPageListener("visibilitychange", onHiddenOrPageHide, { capture: true, once: true });
-  const obj = require("module_906");
-  require("module_906").addPageListener("pagehide", onHiddenOrPageHide, { capture: true, once: true });
 };

@@ -1,54 +1,45 @@
-// Module ID: 16998
-// Function ID: 16999
+// Module ID: 17087
+// Function ID: 17088
 // Name: GooglePlayPriceChangeStore
-// Dependencies: [4523, 1074, 1364, 504, 573, 2]
+// Dependencies: [4534, 1085, 1369, 504, 584, 2]
 
-// Module 16998 (GooglePlayPriceChangeStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import SubscriptionStore from "SubscriptionStore" /* 4523 */;
+// Module 17087 (GooglePlayPriceChangeStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import SubscriptionStore from "SubscriptionStore" /* 4534 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
 function onInitializeSync() {
   priceChange = null;
   c4 = false;
+  const obj = PlatformUtils;
   if (obj.isAndroid()) {
     const premiumSubscription = SubscriptionStore.getPremiumSubscription();
     if (premiumSubscription != null) {
       priceChange = premiumSubscription.priceChange;
     }
-    let isPriceIncrease = null != premiumSubscription;
-    if (isPriceIncrease) {
-      isPriceIncrease = set.has(premiumSubscription.status);
-    }
-    if (isPriceIncrease) {
-      isPriceIncrease = null != priceChange;
-    }
-    if (isPriceIncrease) {
-      isPriceIncrease = priceChange.isInFuture;
-    }
-    if (isPriceIncrease) {
-      isPriceIncrease = priceChange.isPriceIncrease;
-    }
+    const isPriceIncrease = null != premiumSubscription && set.has(premiumSubscription.status) && null != priceChange && priceChange.isInFuture && priceChange.isPriceIncrease;
     if (isPriceIncrease) {
       c4 = true;
     }
   }
 }
 let items = [, , ];
-({ ACTIVE: arr[0], PAST_DUE: arr[1], UNPAID: arr[2] } = fn(1074).SubscriptionStatusTypes);
+({ ACTIVE: arr[0], PAST_DUE: arr[1], UNPAID: arr[2] } = Constants.SubscriptionStatusTypes);
 const set = new Set(items);
 let c4 = false;
 let priceChange = null;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class GooglePlayPriceChangeStore extends Store {
+  initialize() {
+    const items = [SubscriptionStore];
+    this.syncWith(items, onInitializeSync);
+    this.waitFor(SubscriptionStore);
+  }
 }
 const prototype = GooglePlayPriceChangeStore.prototype;
-prototype["initialize"] = function initialize() {
-  const items = [SubscriptionStore];
-  this.syncWith(items, onInitializeSync);
-  this.waitFor(SubscriptionStore);
-};
 Object.defineProperty(prototype, "shouldShowGooglePlayPriceChange", {
   get: function shouldShowGooglePlayPriceChange() {
     return c4;
@@ -63,7 +54,6 @@ Object.defineProperty(prototype, "priceChangeRecord", {
 });
 GooglePlayPriceChangeStore.displayName = "GooglePlayPriceChangeStore";
 const googlePlayPriceChangeStore = new GooglePlayPriceChangeStore(DispatcherDefault, {});
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/native/google_play_price_changes/GooglePlayPriceChangeStore.tsx");
 
 export default googlePlayPriceChangeStore;

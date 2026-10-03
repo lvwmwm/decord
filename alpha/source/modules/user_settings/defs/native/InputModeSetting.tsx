@@ -1,40 +1,88 @@
-// Module ID: 15005
-// Function ID: 15006
+// Module ID: 15062
+// Function ID: 15063
 // Name: InputModeSetting
-// Dependencies: [1993, 7590, 4870, 504, 1115, 11215, 9634, 2]
+// Dependencies: [1999, 7634, 4915, 558, 576, 504, 1126, 11129, 9663, 2]
 
-// Module 15005 (InputModeSetting)
-import util from "util" /* 1115 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+// Module 15062 (InputModeSetting)
+import get_initialized from "get initialized" /* 504 */;
+import react from "react" /* 576 */;
+import intl3 from "intl" /* 1126 */;
+import Constants from "Constants" /* 4915 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import UserSettingsVoiceInputOptions from "UserSettingsVoiceInputOptions" /* 9663 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const InputModes = fn(4870).InputModes;
-const SettingBuilders = fn(11215);
-const pressable = SettingBuilders.createPressable({
-  useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["pS+K2L"]);
-  },
-  parent: fn(7590).MobileUserSettings.VOICE,
-  useTrailing: function useInputModeSettingTrailing() {
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const InputModes = Constants.InputModes;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let mode;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  const obj = react;
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [MediaEngineStore];
-    if (obj.useStateFromStores(items, () => mode.getMode()) === InputModes.PUSH_TO_TALK) {
-      const intl2 = tmp(1115).intl;
-      let stringResult = intl2.string(tmp(1115).t.Q8gkVL);
+    const fn = function o() {
+      return mode.getMode();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] !== stateFromStores) {
+    let stringResult;
+    if (stateFromStores === InputModes.PUSH_TO_TALK) {
+      const intl2 = tmp(1126).intl;
+      stringResult = intl2.string(tmp(1126).t.Q8gkVL);
     } else {
-      const intl = tmp(1115).intl;
-      stringResult = intl.string(tmp(1115).t.cHCEOJ);
+      const intl = tmp(1126).intl;
+      stringResult = intl.string(tmp(1126).t.cHCEOJ);
     }
-    return stringResult;
+    cResult[2] = stateFromStores;
+    cResult[3] = stringResult;
+    tmp8 = stringResult;
+  } else {
+    tmp8 = cResult[3];
+  }
+  return tmp8;
+}) : (() => {
+  let mode;
+  let stringResult;
+  const items = [MediaEngineStore];
+  const obj = get_initialized;
+  if (obj.useStateFromStores(items, () => mode.getMode()) === InputModes.PUSH_TO_TALK) {
+    const intl2 = tmp(1126).intl;
+    stringResult = intl2.string(tmp(1126).t.Q8gkVL);
+  } else {
+    const intl = tmp(1126).intl;
+    stringResult = intl.string(tmp(1126).t.cHCEOJ);
+  }
+  return stringResult;
+});
+let obj = {
+  useTitle() {
+    const intl = intl3.intl;
+    return intl.string(intl3.t["pS+K2L"]);
   },
-  onPress: fn(9634).handleInputModePress,
+  parent: MobileUserSettings.VOICE,
+  useTrailing: tmp2,
+  onPress: UserSettingsVoiceInputOptions.handleInputModePress,
   useSearchTerms() {
-    const intl = util.intl;
-    const items = [intl.string(util.t.nuFtHH)];
+    const intl = intl3.intl;
+    const items = [intl.string(intl3.t.nuFtHH)];
     return items;
   }
-});
-const size = fn(2);
+};
+const pressable = SettingBuilders.createPressable(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/InputModeSetting.tsx");
 
 export default pressable;

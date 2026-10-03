@@ -1,56 +1,60 @@
-// Module ID: 16347
-// Function ID: 16348
+// Module ID: 16423
+// Function ID: 16424
 // Name: ICYMIPopularGuildsStore
-// Dependencies: [2066, 2058, 6946, 504, 573, 2]
+// Dependencies: [2074, 2066, 6844, 504, 584, 2]
 
-// Module 16347 (ICYMIPopularGuildsStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildStore from "GuildStore" /* 2066 */;
+// Module 16423 (ICYMIPopularGuildsStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
+let set;
+
 let closure_3 = [];
 let closure_4 = [];
 let c5 = 0;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class ICYMIPopularGuildsStore extends Store {
+  initialize() {
+    this.waitFor(GuildStore);
+  }
+  getOnboardingCategoryIds() {
+    return closure_3;
+  }
+  getOnboardingGuilds() {
+    return closure_4;
+  }
+  getCurrentOnboardingGuildOffset() {
+    return c5;
+  }
 }
 const prototype = ICYMIPopularGuildsStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.waitFor(GuildStore);
-};
-prototype["getOnboardingCategoryIds"] = function getOnboardingCategoryIds() {
-  return closure_3;
-};
-prototype["getOnboardingGuilds"] = function getOnboardingGuilds() {
-  return closure_4;
-};
-prototype["getCurrentOnboardingGuildOffset"] = function getCurrentOnboardingGuildOffset() {
-  return c5;
-};
 ICYMIPopularGuildsStore.displayName = "ICYMIPopularGuildsStore";
-const iCYMIPopularGuildsStore = new ICYMIPopularGuildsStore(DispatcherDefault, {
+let obj = {
   LOAD_ICYMI_POPULAR_GUILDS: function loadOnboardingPopularGuilds(categoryIds) {
+    let guilds;
+    let items;
+    let offset;
     ({ guilds, offset } = categoryIds);
-    let set;
+    set = undefined;
     let set1;
     if (0 === offset) {
       categoryIds = categoryIds.categoryIds;
-      let items = [];
+      items = [];
       offset = 0;
     }
     set = new Set(items.map((id) => id.id));
     set1 = new Set(GuildStore.getGuildIds());
     const mapped = guilds.map((item) => {
-      const obj = set(set1[1]);
-      return obj.fromClientDiscoverableGuild(set(set1[2]).makeDiscoverableGuild(item));
+      const fromClientDiscoverableGuild = set(set1[1]).fromClientDiscoverableGuild;
+      set(set1[1]);
+      const obj = set(set1[2]);
+      return fromClientDiscoverableGuild(obj.makeDiscoverableGuild(item));
     });
     const found = mapped.filter((id) => {
       const hasItem = set1.has(id.id);
-      let tmp2 = !hasItem;
-      if (!hasItem) {
-        tmp2 = !set.has(id.id);
-      }
+      const tmp2 = !hasItem && !set.has(id.id);
       return tmp2;
     });
     items = [...found];
@@ -60,8 +64,8 @@ const iCYMIPopularGuildsStore = new ICYMIPopularGuildsStore(DispatcherDefault, {
     closure_4 = [];
     c5 = 0;
   }
-});
-const size = fn(2);
+};
+const iCYMIPopularGuildsStore = new ICYMIPopularGuildsStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/icymi/ICYMIPopularGuildsStore.tsx");
 
 export default iCYMIPopularGuildsStore;

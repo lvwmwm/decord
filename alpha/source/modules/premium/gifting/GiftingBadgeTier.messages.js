@@ -1,22 +1,24 @@
-// Module ID: 2584
-// Function ID: 2585
-// Dependencies: [1119, 2585, 1154, 2]
+// Module ID: 2591
+// Function ID: 2592
+// Dependencies: [1130, 2592, 1165, 2]
 
-// Module 2584
-import AssetJsonUtils from "AssetJsonUtils" /* 1119 */;
-import _mod2585 from "module_2585" /* 2585 */;
-import module_1154_mod from "module_1154" /* 1154 */;
+// Module 2591
+import AssetJsonUtils from "AssetJsonUtils" /* 1130 */;
+import AssetRegistry from "AssetRegistry" /* 2592 */;
+import module_1165_mod from "module_1165" /* 1165 */;
 import size from "module_2" /* 2 */;
 
-let module_1154 = module_1154_mod;
-const loader = module_1154.createLoader({
-  () => {
-    const jsonAsset = AssetJsonUtils.loadJsonAsset(_mod2585);
+let obj = {
+  "en-US": () => {
+    const obj = AssetJsonUtils;
+    const jsonAsset = obj.loadJsonAsset(AssetRegistry);
     return jsonAsset.then((result) => ({ default: result }));
   }
-}, "en-US");
-let module_1154 = module_1154_mod;
-const messagesProxy = module_1154.makeMessagesProxy(loader);
+};
+let module_1165 = module_1165_mod;
+const loader = module_1165.createLoader(obj, "en-US");
+module_1165 = module_1165_mod;
+const messagesProxy = module_1165.makeMessagesProxy(loader);
 const result = size.fileFinishedImporting("modules/premium/gifting/GiftingBadgeTier.messages.js");
 
 export default messagesProxy;

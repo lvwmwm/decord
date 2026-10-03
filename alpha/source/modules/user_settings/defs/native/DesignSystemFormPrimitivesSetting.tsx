@@ -1,28 +1,31 @@
-// Module ID: 15620
-// Function ID: 15621
+// Module ID: 15683
+// Function ID: 15684
 // Name: DesignSystemFormPrimitivesSetting
-// Dependencies: [7590, 1074, 11215, 15621, 2]
+// Dependencies: [7634, 1085, 11129, 15684, 2]
 
-// Module 15620 (DesignSystemFormPrimitivesSetting)
-import Constants from "Constants" /* 1074 */;
-import SettingsConstants from "SettingsConstants" /* 7590 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 15683 (DesignSystemFormPrimitivesSetting)
+import Constants from "Constants" /* 1085 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
     return "Form Primitives";
   },
-  parent: SettingsConstants.MobileUserSettings.DESIGN_SYSTEMS,
+  parent: MobileUserSettings.DESIGN_SYSTEMS,
   screen: {
-    route: Constants.UserSettingsSections.DESIGN_SYSTEM_FORM_PRIMITIVES,
+    route: UserSettingsSections.DESIGN_SYSTEM_FORM_PRIMITIVES,
     getComponent() {
       return require("UserSettingsDesignSystemFormPrimitives").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemFormPrimitivesSetting.tsx");
 
 export default route;

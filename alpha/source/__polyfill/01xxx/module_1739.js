@@ -1,214 +1,272 @@
 // Module ID: 1739
 // Function ID: 1740
-// Dependencies: [1641, 1648, 1681, 1740, 1741, 1645, 1649]
-// Exports: updatePropsJestWrapper
+// Dependencies: [41, 42, 32, 1692, 1740, 1741, 1742, 1743, 1691]
+// Exports: getInlineStyle, hasInlineStyles
 
 // Module 1739
-import runWorkletOnJS from "runWorkletOnJS" /* 1645 */;
-import _makeShareableClone from "_makeShareableClone" /* 1648 */;
-import _mod1681 from "module_1681" /* 1681 */;
-import validateTransformOrigin from "validateTransformOrigin" /* 1740 */;
-import ComponentRegistry2 from "ComponentRegistry" /* 1741 */;
-import module_1641_mod from "module_1641" /* 1641 */;
+import _mod1691 from "module_1691" /* 1691 */;
+import _mod1692 from "module_1692" /* 1692 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
 const require = globalThis.__r;
 
-function updatePropsOnReactJS(arg0, arg1) {
-  const ComponentRegistry = ComponentRegistry2.ComponentRegistry;
-  const component = ComponentRegistry.getComponent(arg0);
-  if (component) {
-    const result = component._updateReanimatedProps(arg1);
-  }
-}
-let module_1641 = module_1641_mod;
-if (module_1641.shouldBeUseWeb()) {
-  const fn2 = function o(value, arg1, arg2) {
-    closure_0 = arg1;
-    closure_1 = arg2;
-    value = value.value;
-    if (value != null) {
-      const item = value.forEach((tag) => {
-        _makeShareableClone._updatePropsJS(closure_0, tag.tag, closure_1);
-      });
+function isInlineStyleTransform(arr) {
+  const f84566 = (item) => {
+    let someResult = item;
+    if (someResult) {
+      let tmp2 = globalThis;
+      let _Object = Object;
+      let keys = Object.keys(item);
+      someResult = keys.some(f84567);
     }
+    return someResult;
   };
-  let obj = { _updatePropsJS: _makeShareableClone._updatePropsJS };
-  fn2.__closure = obj;
-  fn2.__workletHash = 17381979125683;
-  fn2.__initData = { code: "function pnpm_updatePropsTs1(viewDescriptors,updates,isAnimatedProps){const{_updatePropsJS}=this.__closure;var _viewDescriptors$valu;(_viewDescriptors$valu=viewDescriptors.value)===null||_viewDescriptors$valu===void 0||_viewDescriptors$valu.forEach(function(viewDescriptor){const component=viewDescriptor.tag;_updatePropsJS(updates,component,isAnimatedProps);});}" };
-  let fn = fn2;
-  const obj2 = { code: "function pnpm_updatePropsTs1(viewDescriptors,updates,isAnimatedProps){const{_updatePropsJS}=this.__closure;var _viewDescriptors$valu;(_viewDescriptors$valu=viewDescriptors.value)===null||_viewDescriptors$valu===void 0||_viewDescriptors$valu.forEach(function(viewDescriptor){const component=viewDescriptor.tag;_updatePropsJS(updates,component,isAnimatedProps);});}" };
-} else {
-  fn = function s(value, transformOrigin) {
-    _global = transformOrigin;
-    value = value.value;
-    const item = value.forEach((tag) => {
-      let obj = global.lastUpdateByTag[tag.tag];
-      if (obj == null) {
-        obj = {};
-      }
-      const merged = Object.assign(obj);
-      const merged1 = Object.assign(closure_0);
-      global.lastUpdateByTag[tag.tag] = {};
-      global.lastUpdateFrameTimeByTag[tag.tag] = global.__frameTimestamp;
-    });
-    _mod1681.processColorsInProps(transformOrigin);
-    if ("transformOrigin" in transformOrigin) {
-      transformOrigin.transformOrigin = validateTransformOrigin.processTransformOrigin(transformOrigin.transformOrigin);
-      const tmp2Result = validateTransformOrigin;
-    }
-    const UpdatePropsManager = _global.UpdatePropsManager;
-    UpdatePropsManager.update(value, transformOrigin);
-  };
-  const obj3 = { processColorsInProps: _mod1681.processColorsInProps, processTransformOrigin: validateTransformOrigin.processTransformOrigin };
-  fn.__closure = obj3;
-  fn.__workletHash = 9641647469033;
-  fn.__initData = { code: "function pnpm_updatePropsTs2(viewDescriptors,updates){const{processColorsInProps,processTransformOrigin}=this.__closure;viewDescriptors.value.forEach(function(viewDescriptor){var _global$lastUpdateByT;const prevState=(_global$lastUpdateByT=global.lastUpdateByTag[viewDescriptor.tag])!==null&&_global$lastUpdateByT!==void 0?_global$lastUpdateByT:{};global.lastUpdateByTag[viewDescriptor.tag]={...prevState,...updates};global.lastUpdateFrameTimeByTag[viewDescriptor.tag]=global.__frameTimestamp;});processColorsInProps(updates);if('transformOrigin'in updates){updates.transformOrigin=processTransformOrigin(updates.transformOrigin);}global.UpdatePropsManager.update(viewDescriptors,updates);}" };
-  const obj4 = { code: "function pnpm_updatePropsTs2(viewDescriptors,updates){const{processColorsInProps,processTransformOrigin}=this.__closure;viewDescriptors.value.forEach(function(viewDescriptor){var _global$lastUpdateByT;const prevState=(_global$lastUpdateByT=global.lastUpdateByTag[viewDescriptor.tag])!==null&&_global$lastUpdateByT!==void 0?_global$lastUpdateByT:{};global.lastUpdateByTag[viewDescriptor.tag]={...prevState,...updates};global.lastUpdateFrameTimeByTag[viewDescriptor.tag]=global.__frameTimestamp;});processColorsInProps(updates);if('transformOrigin'in updates){updates.transformOrigin=processTransformOrigin(updates.transformOrigin);}global.UpdatePropsManager.update(viewDescriptors,updates);}" };
+  const tmp = Array.isArray(arr) && arr.some(f84566);
+  return tmp;
 }
-const __initData = { code: "function checkUpdate_Pnpm_updatePropsTs4(tag){const checkUpdate_Pnpm_updatePropsTs4=this._recur;const{runOnJS,updatePropsOnReactJS,scheduledFrameIds}=this.__closure;const currentFrameTime=global.__frameTimestamp;const lastUpdateFrameTime=global.lastUpdateFrameTimeByTag[tag];if(!currentFrameTime||!lastUpdateFrameTime){return;}if(currentFrameTime-lastUpdateFrameTime>=20){runOnJS(updatePropsOnReactJS)(tag,global.lastUpdateByTag[tag]);global.lastUpdateByTag[tag]=undefined;return;}if(scheduledFrameIds[tag]){return;}scheduledFrameIds[tag]=requestAnimationFrame(function(){'worklet';scheduledFrameIds[tag]=undefined;checkUpdate_Pnpm_updatePropsTs4(tag);});}" };
-let closure_6 = { code: "function pnpm_updatePropsTs5(){const{scheduledFrameIds,tag,checkUpdate}=this.__closure;scheduledFrameIds[tag]=undefined;checkUpdate(tag);}" };
-let module_1641 = module_1641_mod;
-if (module_1641.isFabric()) {
-  const fn4 = function l() {
-    let checkUpdate = [];
-    const scheduledFrameIds = {};
-    checkUpdate = function checkUpdate(tag) {
-      checkUpdate = tag;
-      const __frameTimestamp = global.__frameTimestamp;
-      if (__frameTimestamp) {
-        if (tmp2) {
-          if (__frameTimestamp - tmp2 >= 20) {
-            runWorkletOnJS.runOnJS(updatePropsOnReactJS)(tag, tmp.lastUpdateByTag[tag]);
-            tmp.lastUpdateByTag[tag] = undefined;
-          } else if (!__closure[tag]) {
-            const _requestAnimationFrame = requestAnimationFrame;
-            fn = function p() {
-              require[closure_0] = undefined;
-              checkUpdate(closure_0);
-            };
-            __closure = { scheduledFrameIds: tmp3, tag, checkUpdate };
-            fn.__closure = __closure;
-            fn.__workletHash = 7847593993789;
-            fn.__initData = __initData;
-            tmp3[tag] = requestAnimationFrame(fn);
-          }
-        }
-      }
-    };
-    checkUpdate.__closure = { runOnJS: scheduledFrameIds(checkUpdate[5]).runOnJS, updatePropsOnReactJS, scheduledFrameIds };
-    checkUpdate.__workletHash = 1753947436463;
-    checkUpdate.__initData = __initData;
-    return {
-      update(value, updates) {
-        const self = this;
-        value = value.value;
-        const item = value.forEach((shadowNodeWrapper) => {
-          checkUpdate.push({ shadowNodeWrapper: shadowNodeWrapper.shadowNodeWrapper, updates, tag: shadowNodeWrapper.tag });
-          if (1 === checkUpdate.length) {
-            const _queueMicrotask = queueMicrotask;
-            queueMicrotask(self.flush);
-          }
-        });
-      },
-      flush() {
-        global._updatePropsFabric(checkUpdate);
-        const item = checkUpdate.forEach((tag) => {
-          checkUpdate(tag.tag);
-        });
-        checkUpdate.length = 0;
-      }
-    };
-  };
-  const obj5 = { runOnJS: runWorkletOnJS.runOnJS, updatePropsOnReactJS };
-  fn4.__closure = obj5;
-  fn4.__workletHash = 7650186665575;
-  fn4.__initData = { code: "function pnpm_updatePropsTs3(){const{runOnJS,updatePropsOnReactJS}=this.__closure;const operations=[];const scheduledFrameIds={};function checkUpdate(tag){'worklet';const currentFrameTime=global.__frameTimestamp;const lastUpdateFrameTime=global.lastUpdateFrameTimeByTag[tag];if(!currentFrameTime||!lastUpdateFrameTime){return;}if(currentFrameTime-lastUpdateFrameTime>=20){runOnJS(updatePropsOnReactJS)(tag,global.lastUpdateByTag[tag]);global.lastUpdateByTag[tag]=undefined;return;}if(scheduledFrameIds[tag]){return;}scheduledFrameIds[tag]=requestAnimationFrame(function(){'worklet';scheduledFrameIds[tag]=undefined;checkUpdate(tag);});}return{update:function(viewDescriptors,updates){var _this=this;viewDescriptors.value.forEach(function(viewDescriptor){const tag=viewDescriptor.tag;operations.push({shadowNodeWrapper:viewDescriptor.shadowNodeWrapper,updates:updates,tag:tag});if(operations.length===1){queueMicrotask(_this.flush);}});},flush:function(){global._updatePropsFabric(operations);operations.forEach(function({tag:tag}){checkUpdate(tag);});operations.length=0;}};}" };
-  let fn3 = fn4;
-  const obj6 = { code: "function pnpm_updatePropsTs3(){const{runOnJS,updatePropsOnReactJS}=this.__closure;const operations=[];const scheduledFrameIds={};function checkUpdate(tag){'worklet';const currentFrameTime=global.__frameTimestamp;const lastUpdateFrameTime=global.lastUpdateFrameTimeByTag[tag];if(!currentFrameTime||!lastUpdateFrameTime){return;}if(currentFrameTime-lastUpdateFrameTime>=20){runOnJS(updatePropsOnReactJS)(tag,global.lastUpdateByTag[tag]);global.lastUpdateByTag[tag]=undefined;return;}if(scheduledFrameIds[tag]){return;}scheduledFrameIds[tag]=requestAnimationFrame(function(){'worklet';scheduledFrameIds[tag]=undefined;checkUpdate(tag);});}return{update:function(viewDescriptors,updates){var _this=this;viewDescriptors.value.forEach(function(viewDescriptor){const tag=viewDescriptor.tag;operations.push({shadowNodeWrapper:viewDescriptor.shadowNodeWrapper,updates:updates,tag:tag});if(operations.length===1){queueMicrotask(_this.flush);}});},flush:function(){global._updatePropsFabric(operations);operations.forEach(function({tag:tag}){checkUpdate(tag);});operations.length=0;}};}" };
-} else {
-  fn3 = function c() {
-    closure_0 = [];
-    return {
-      update(value, updates) {
-        const self = this;
-        value = value.value;
-        const item = value.forEach((tag) => {
-          const obj = { tag: tag.tag, name: null, updates: null };
-          let str = tag.name;
-          if (!str) {
-            str = "RCTView";
-          }
-          obj.name = str;
-          obj.updates = updates;
-          updates.push(obj);
-          if (1 === updates.length) {
-            const _queueMicrotask = queueMicrotask;
-            queueMicrotask(self.flush);
-          }
-        });
-      },
-      flush() {
-        global._updatePropsPaper(closure_0);
-        closure_0.length = 0;
-      }
-    };
-  };
-  fn3.__closure = {};
-  fn3.__workletHash = 8150032191515;
-  fn3.__initData = { code: "function pnpm_updatePropsTs6(){const operations=[];return{update:function(viewDescriptors,updates){var _this=this;viewDescriptors.value.forEach(function(viewDescriptor){operations.push({tag:viewDescriptor.tag,name:viewDescriptor.name||'RCTView',updates:updates});if(operations.length===1){queueMicrotask(_this.flush);}});},flush:function(){global._updatePropsPaper(operations);operations.length=0;}};}" };
-}
-let module_1641 = module_1641_mod;
-if (module_1641.shouldBeUseWeb()) {
-  function maybeThrowError() {
-    if (!obj.isJest()) {
-      const reanimatedError = new tmp(1649).ReanimatedError("`UpdatePropsManager` is not available on non-native platform.");
-      throw reanimatedError;
-    }
-    obj = require("module_1641");
-    tmp = require;
-  }
-  const _Proxy = Proxy;
-  const obj7 = {
-    get: maybeThrowError,
-    set() {
-        if (typeof maybeThrowError === "function") {
-          if (obj.isJest()) {
-            return false;
-          } else {
-            const reanimatedError = new tmp(1649).ReanimatedError("`UpdatePropsManager` is not available on non-native platform.");
-            throw reanimatedError;
-          }
-          obj = require("module_1641");
-          tmp = require;
+function getInlinePropsUpdate(iter) {
+  let tmp6;
+  let tmp7;
+  const obj = {};
+  const entries = Object.entries(iter);
+  const tmp2 = entries[Symbol.iterator]();
+  while (tmp2 !== undefined) {
+    let tmp5 = _slicedToArray(tmp3, 2);
+    [tmp6, tmp7] = tmp5;
+    iter = tmp7;
+    let obj2 = _mod1692;
+    if (obj2.isSharedValue(tmp7)) {
+      obj[tmp6] = iter.value;
+    } else {
+      let _Array = Array;
+      if (Array.isArray(iter)) {
+        obj[tmp6] = iter.map((item) => getInlinePropsUpdate(item));
+      } else {
+        let tmp15;
+        if (typeof iter === "object") {
+          tmp15 = getInlinePropsUpdate(iter);
         } else {
-          throw new TypeError("Trying to call a non-function");
+          tmp15 = tmp7;
         }
+        obj[tmp6] = tmp15;
       }
-  };
-  const proxy = new Proxy({}, obj7);
-  global.UpdatePropsManager = proxy;
-} else {
-  const _module3 = runWorkletOnJS;
-  const fn5 = function _() {
-    global.UpdatePropsManager = fn3();
-  };
-  const obj9 = { createUpdatePropsManager: fn3 };
-  fn5.__closure = obj9;
-  fn5.__workletHash = 4015188324291;
-  fn5.__initData = { code: "function pnpm_updatePropsTs7(){const{createUpdatePropsManager}=this.__closure;global.UpdatePropsManager=createUpdatePropsManager();}" };
-  _module3.runOnUIImmediately(fn5)();
-  const obj8 = { code: "function pnpm_updatePropsTs7(){const{createUpdatePropsManager}=this.__closure;global.UpdatePropsManager=createUpdatePropsManager();}" };
+    }
+    continue;
+  }
+  return obj;
 }
-
-export default fn;
-export const updatePropsJestWrapper = (D, keys, current, arr) => {
-  closure_0 = keys;
-  const item = arr.forEach((fn) => {
-    fn(closure_0);
-  });
-  const merged = Object.assign(current.current.value);
-  const merged1 = Object.assign(keys);
-  current.current.value = {};
-  fn(D, keys);
+let obj = { isSharedValue: require("module_1692").isSharedValue };
+getInlinePropsUpdate.__closure = obj;
+getInlinePropsUpdate.__workletHash = 14886679339062;
+getInlinePropsUpdate.__initData = { code: "function getInlinePropsUpdate_Pnpm_InlinePropManagerTs1(inlineProps){const getInlinePropsUpdate_Pnpm_InlinePropManagerTs1=this._recur;const{isSharedValue}=this.__closure;const update={};for(const[key,styleValue]of Object.entries(inlineProps)){if(isSharedValue(styleValue)){update[key]=styleValue.value;}else if(Array.isArray(styleValue)){update[key]=styleValue.map(function(item){return getInlinePropsUpdate_Pnpm_InlinePropManagerTs1(item);});}else if(typeof styleValue==='object'){update[key]=getInlinePropsUpdate_Pnpm_InlinePropManagerTs1(styleValue);}else{update[key]=styleValue;}}return update;}" };
+const __initData = { code: "function pnpm_InlinePropManagerTs2(){const{getInlinePropsUpdate,newInlineProps,updateProps,shareableViewDescriptors}=this.__closure;const update=getInlinePropsUpdate(newInlineProps);updateProps(shareableViewDescriptors,update);}" };
+class InlinePropManager {
+  constructor() {
+    _classCallCheck(this, InlinePropManager);
+    this._inlinePropsViewDescriptors = null;
+    this._inlinePropsMapperId = null;
+    this._inlineProps = {};
+  }
+}
+const entry = {
+  key: "attachInlineProps",
+  value: function attachInlineProps(self, self2) {
+    let shadowNodeWrapper;
+    let viewName;
+    let viewTag;
+    function inlinePropsHasChanged(arg0, _inlineProps) {
+      if (Object.keys(arg0).length !== Object.keys(_inlineProps).length) {
+        return true;
+      } else {
+        const _Object = Object;
+        const keys = Object.keys(arg0);
+        for (const item10018 of keys) {
+          if (arg0[item10018] !== _inlineProps[item10018]) {
+            obj.return();
+            let flag = true;
+            return true;
+          }
+        }
+        return false;
+      }
+    }
+    const props = self.props;
+    const _inlineProps = {};
+    for (const key10008 in props) {
+      let tmp20 = key10008;
+      let tmp21 = props[key10008];
+      if ("style" === key10008) {
+        let tmp4 = dependencyMap;
+        let tmp5 = _inlineProps(1740);
+        let style = props.style;
+        let flattenArray = tmp5.flattenArray;
+        if (style == null) {
+          style = [];
+        }
+        let flattenArrayResult = flattenArray(style);
+        let item = flattenArrayResult.forEach((item) => {
+          let tmp10;
+          let tmp11;
+          if (item) {
+            const _Object = Object;
+            const entries = Object.entries(item);
+            const tmp4 = entries[Symbol.iterator]();
+            while (tmp4 !== undefined) {
+              let tmp9 = _slicedToArray(tmp6, 2);
+              [tmp10, tmp11] = tmp9;
+              let tmp12 = tmp11;
+              obj = _mod1692;
+              let isSharedValueResult = obj.isSharedValue(tmp11);
+              if (!isSharedValueResult) {
+                let tmp17 = "transform" === tmp10;
+                if (tmp17) {
+                  tmp17 = isInlineStyleTransform(tmp12);
+                }
+                isSharedValueResult = tmp17;
+              }
+              if (isSharedValueResult) {
+                obj[tmp10] = tmp12;
+              }
+              continue;
+            }
+          }
+        });
+        continue;
+      } else {
+        let tmp = _inlineProps;
+        let obj2 = _inlineProps(1692);
+        if (!obj2.isSharedValue(tmp21)) {
+          continue;
+        } else {
+          _inlineProps[key10008] = tmp21;
+          continue;
+        }
+        continue;
+      }
+      continue;
+    }
+    self = this;
+    if (inlinePropsHasChanged(_inlineProps, this._inlineProps)) {
+      if (!self._inlinePropsViewDescriptors) {
+        let tmp8 = _inlineProps;
+        let tmp9 = dependencyMap;
+        const obj3 = _inlineProps(1741);
+        self._inlinePropsViewDescriptors = obj3.makeViewDescriptorsSet();
+        const viewConfig = self2.viewConfig;
+        const tmp10 = globalThis;
+        let _Object = Object;
+        ({ viewTag, viewName, shadowNodeWrapper } = self2);
+        const tmp11 = Object.keys(_inlineProps).length && viewConfig;
+        if (tmp11) {
+          const tmp8Result = tmp8(1742);
+          tmp8Result.adaptViewConfig(viewConfig);
+        }
+        const _inlinePropsViewDescriptors = self._inlinePropsViewDescriptors;
+        const obj4 = { tag: viewTag, name: viewName, shadowNodeWrapper };
+        _inlinePropsViewDescriptors.add(obj4);
+      }
+      const shareableViewDescriptors = self._inlinePropsViewDescriptors.shareableViewDescriptors;
+      const fn = function o() {
+        const tmp = getInlinePropsUpdate(obj);
+        obj = obj(dependencyMap[7]);
+        obj.updateProps(shareableViewDescriptors, tmp);
+      };
+      let tmp14 = getInlinePropsUpdate;
+      let tmp16 = dependencyMap;
+      fn.__closure = { getInlinePropsUpdate, newInlineProps: _inlineProps, updateProps: _inlineProps(1743).updateProps, shareableViewDescriptors };
+      fn.__workletHash = 4459550727912;
+      let tmp17 = __initData;
+      fn.__initData = __initData;
+      self._inlineProps = _inlineProps;
+      const obj5 = { getInlinePropsUpdate, newInlineProps: _inlineProps, updateProps: _inlineProps(1743).updateProps, shareableViewDescriptors };
+      if (self._inlinePropsMapperId) {
+        const tmp15Result = _inlineProps(1691);
+        tmp15Result.stopMapper(self._inlinePropsMapperId);
+      }
+      self._inlinePropsMapperId = null;
+      let tmp19 = globalThis;
+      const _Object2 = Object;
+      if (Object.keys(_inlineProps).length) {
+        const _Object3 = Object;
+        const tmp15Result2 = _inlineProps(1691);
+        self._inlinePropsMapperId = tmp15Result2.startMapper(fn, Object.values(_inlineProps));
+      }
+    }
+  }
 };
+const items = [
+  entry,
+  {
+    key: "detachInlineProps",
+    value: function detachInlineProps() {
+      if (this._inlinePropsMapperId) {
+        const obj = _mod1691;
+        obj.stopMapper(tmp._inlinePropsMapperId);
+      }
+    }
+  }
+];
+const InlinePropManager_export = _createClass(InlinePropManager, items);
+
+export const hasInlineStyles = function hasInlineStyles(viewDescriptors) {
+  const f84567 = (item) => {
+    let obj = item[item];
+    let obj2 = closure_2_0(closure_2_1[3]);
+    let isSharedValueResult = obj2.isSharedValue(obj);
+    if (!isSharedValueResult) {
+      let str = "transform";
+      let tmp2 = "transform" === item;
+      if (tmp2) {
+        let tmp3 = globalThis;
+        let _Array = Array;
+        let tmp4 = Array.isArray(obj) && obj.some(f84566);
+        tmp2 = tmp4;
+      }
+      isSharedValueResult = tmp2;
+    }
+    return isSharedValueResult;
+  };
+  let closure_0 = viewDescriptors;
+  let someResult = viewDescriptors;
+  if (someResult) {
+    const _Object = Object;
+    const keys = Object.keys(viewDescriptors);
+    someResult = keys.some(f84567);
+  }
+  return someResult;
+};
+export const getInlineStyle = function getInlineStyle(viewDescriptors, _isFirstRender) {
+  let tmp11;
+  let tmp12;
+  const tmp = _isFirstRender;
+  if (tmp) {
+    return getInlinePropsUpdate(viewDescriptors);
+  } else {
+    const obj = {};
+    const _Object = Object;
+    const entries = Object.entries(viewDescriptors);
+    const tmp5 = entries[Symbol.iterator]();
+    while (tmp5 !== undefined) {
+      let tmp10 = _slicedToArray(tmp7, 2);
+      [tmp11, tmp12] = tmp10;
+      let tmp13 = tmp12;
+      let obj2 = _mod1692;
+      let isSharedValueResult = obj2.isSharedValue(tmp12);
+      if (!isSharedValueResult) {
+        let tmp18 = "transform" === tmp11;
+        if (tmp18) {
+          tmp18 = isInlineStyleTransform(tmp13);
+        }
+        isSharedValueResult = tmp18;
+      }
+      if (!isSharedValueResult) {
+        obj[tmp11] = tmp13;
+      }
+      continue;
+    }
+    return obj;
+  }
+};
+export { InlinePropManager_export as InlinePropManager };

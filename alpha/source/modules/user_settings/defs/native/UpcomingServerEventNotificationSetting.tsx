@@ -1,33 +1,39 @@
-// Module ID: 15275
-// Function ID: 15276
+// Module ID: 15331
+// Function ID: 15332
 // Name: UpcomingServerEventNotificationSetting
-// Dependencies: [7590, 15276, 11215, 1115, 2021, 15277, 2]
+// Dependencies: [7634, 558, 15332, 11129, 1126, 2028, 15333, 2]
 
-// Module 15275 (UpcomingServerEventNotificationSetting)
-import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import SettingsConstants from "SettingsConstants" /* 7590 */;
-import UpcomingServerEventExperiment from "UpcomingServerEventExperiment" /* 15276 */;
-import UpcomingServerEventNotificationUtils from "UpcomingServerEventNotificationUtils" /* 15277 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 15331 (UpcomingServerEventNotificationSetting)
+import intl2 from "intl" /* 1126 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import UpcomingServerEventExperiment from "UpcomingServerEventExperiment" /* 15332 */;
+import UpcomingServerEventNotificationUtils from "UpcomingServerEventNotificationUtils" /* 15333 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.MCVmjA);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.MCVmjA);
   },
   useDescription() {
-    const intl = util.intl;
-    return intl.string(util.t.R0VpSW);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.R0VpSW);
   },
-  parent: SettingsConstants.MobileUserSettings.NOTIFICATIONS,
+  parent: MobileUserSettings.NOTIFICATIONS,
   useValue: UserSettings.EnableUpcomingServerEventNotifications.useSetting,
   onValueChange: UpcomingServerEventNotificationUtils.onUpcomingServerEventNotificationSettingsChanged,
-  usePredicate: function useExperiment() {
-    return UpcomingServerEventExperiment.useUpcomingServerEventExperiment("tabsV2Settings").showSettingsToggle;
+  usePredicate: () => {
+    const obj = UpcomingServerEventExperiment;
+    return obj.useUpcomingServerEventExperiment("tabsV2Settings").showSettingsToggle;
   }
-});
-const result = size.fileFinishedImporting("modules/user_settings/defs/native/UpcomingServerEventNotificationSetting.tsx");
+};
+const toggle = SettingBuilders.createToggle(obj);
+const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/UpcomingServerEventNotificationSetting.tsx");
 
 export default toggle;

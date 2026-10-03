@@ -1,41 +1,110 @@
-// Module ID: 11161
-// Function ID: 11162
+// Module ID: 9845
+// Function ID: 9846
 // Name: SafetyToolsSafetyTipsActionSheet
-// Dependencies: [19, 17, 11114, 21, 4845, 576, 11152, 1115, 11127, 4841, 2]
-// Exports: default
+// Dependencies: [19, 17, 9784, 21, 4890, 587, 558, 576, 1126, 9806, 4886, 9835, 2]
 
-// Module 11161 (SafetyToolsSafetyTipsActionSheet)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import SafetyTipsSectionDefault from "SafetyTipsSection" /* 11127 */;
-import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 11152 */;
-import noop from "module_19" /* 19 */;
+// Module 9845 (SafetyToolsSafetyTipsActionSheet)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Constants from "Constants" /* 9784 */;
+import SafetyTipsSectionDefault from "SafetyTipsSection" /* 9806 */;
+import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 9835 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-let closure_4 = fn(11114).getInappropriateConversationsSafetyTips;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
-let obj2 = { safetyTipsContainer: { marginHorizontal: nativeDefault.space.PX_16 } };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
+let obj2;
+const View = react_native.View;
+let closure_4 = Constants.getInappropriateConversationsSafetyTips;
+const jsx = Fragment.jsx;
+let obj = { safetyTipsContainer: obj2 };
+obj2 = { marginHorizontal: nativeDefault.space.PX_16 };
+let closure_6 = createStyles.createStyles(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let channelId;
+  let first;
+  let onClose;
+  let recipientId;
+  let tmp13;
+  let tmp7;
+  let warningId;
+  let warningType;
+  const obj = react2;
+  const cResult = obj.c(11);
+  ({ channelId, recipientId, warningId, warningType, onClose } = arg0);
+  const tmp4 = closure_6();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(intl3.t.EtNxi6);
+    cResult[0] = stringResult;
+    first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    SafetyTipsSectionDefault;
+    const intl2 = tmp(1126).intl;
+    const tmp12 = <tmp10 description={intl2.string(intl3.t.DJMZX6)} safetyTips={closure_4().map((children, index) => jsx(Text_Text.Text, { variant: "text-sm/medium", children }, index))} />;
+    cResult[1] = tmp12;
+    tmp7 = tmp12;
+  } else {
+    tmp7 = cResult[1];
+  }
+  if (cResult[2] !== tmp4.safetyTipsContainer) {
+    const tmp16 = <View style={tmp4.safetyTipsContainer}>{tmp7}</View>;
+    cResult[2] = tmp4.safetyTipsContainer;
+    cResult[3] = tmp16;
+    tmp13 = tmp16;
+  } else {
+    tmp13 = cResult[3];
+  }
+  if (cResult[4] === channelId) {
+    if (cResult[5] === onClose) {
+      if (cResult[6] === recipientId) {
+        if (cResult[7] === tmp13) {
+          if (cResult[8] === warningId) {
+            let tmp17;
+            if (cResult[9] === warningType) {
+              tmp17 = cResult[10];
+            }
+            return tmp17;
+          }
+        }
+      }
+    }
+  }
+  const tmp18 = jsx(SafetyToolsActionSheetWrapperDefault, { hasHeaderBack: true, recipientId, warningId, warningType, headerTitle: first, channelId, onClose, children: tmp13 });
+  cResult[4] = channelId;
+  cResult[5] = onClose;
+  cResult[6] = recipientId;
+  cResult[7] = tmp13;
+  cResult[8] = warningId;
+  cResult[9] = warningType;
+  cResult[10] = tmp18;
+  tmp17 = tmp18;
+}) : ((arg0) => {
+  let arr;
+  let channelId;
+  let intl2;
+  let onClose;
+  let recipientId;
+  let warningId;
+  let warningType;
+  ({ channelId, recipientId, warningId, warningType, onClose } = arg0);
+  const tmp = closure_6();
+  SafetyToolsActionSheetWrapperDefault;
+  const intl = intl3.intl;
+  ({ description: intl2.string(intl3.t.DJMZX6), safetyTips: arr.map((children, index) => jsx(Text_Text.Text, { variant: "text-sm/medium", children }, index)) });
+  SafetyTipsSectionDefault;
+  intl2 = intl3.intl;
+  arr = closure_4();
+  return <tmp2 hasHeaderBack recipientId={recipientId} warningId={warningId} warningType={warningType} headerTitle={intl.string(intl3.t.EtNxi6)} channelId={channelId} onClose={onClose}>{null}</tmp2>;
+});
 const result = size.fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsSafetyTipsActionSheet.tsx");
 
-export default function SafetyToolsSafetyTipsActionSheet(arg0) {
-  ({ channelId, recipientId, warningId, warningType, onClose } = arg0);
-  const obj = { hasHeaderBack: true, recipientId, warningId, warningType, headerTitle: null, channelId: null, onClose: null, children: null };
-  const tmp = closure_6();
-  const intl = util.intl;
-  obj.headerTitle = intl.string(util.t.EtNxi6);
-  obj.channelId = channelId;
-  obj.onClose = onClose;
-  const obj2 = { style: tmp.safetyTipsContainer, children: null };
-  const obj3 = { description: null, safetyTips: null };
-  const intl2 = util.intl;
-  obj3.description = intl2.string(util.t.DJMZX6);
-  obj3.safetyTips = closure_4().map((children, index) => jsx(Text_Text.Text, { variant: "text-sm/medium", children }, index));
-  obj2.children = <tmp3 description={null} safetyTips={null} />;
-  obj.children = <View style={tmp.safetyTipsContainer}>{null}</View>;
-  return <tmp2 hasHeaderBack recipientId={recipientId} warningId={warningId} warningType={warningType} headerTitle={null} channelId={null} onClose={null}>{null}</tmp2>;
-};
+export default tmp3;

@@ -1,74 +1,118 @@
-// Module ID: 4536
-// Function ID: 4537
+// Module ID: 4547
+// Function ID: 4548
 // Name: CodeSplittingUtils
-// Dependencies: [32, 19, 21, 4537, 2]
+// Dependencies: [32, 19, 21, 4548, 558, 576, 2]
 // Exports: LazyLibrary, makeLazy, makeLazyWithPreload
 
-// Module 4536 (CodeSplittingUtils)
-import importWithRetry from "importWithRetry" /* 4537 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 4547 (CodeSplittingUtils)
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import react2 from "react" /* 576 */;
+import importWithRetry from "importWithRetry" /* 4548 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const jsxProd = fn(21);
-({ jsx: closure_4, Fragment: hasOwnProperty } = jsxProd);
+let closure_3;
+
+let closure_4;
+let hasOwnProperty;
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+({ jsx: closure_4, Fragment: hasOwnProperty } = Fragment);
 function loaderMaker() {
+  let str = arg0;
   if (arg0 === undefined) {
-    const str = "transparent";
+    str = "transparent";
   }
   return () => {
-    const obj = { style: null };
-    const size = { position: "absolute", width: "100%", height: "100%", backgroundColor: str };
-    obj.style = size;
-    return React4("div", obj);
+    const obj = { style: size };
+    size = { position: "absolute", width: "100%", height: "100%", backgroundColor: str };
+    return React3("div", obj);
   };
 }
-let size = fn(2);
+let size = size_mod;
 const result = size.fileFinishedImporting("../discord_common/js/packages/code-splitting/CodeSplittingUtils.tsx");
-for (const key10029 in require("importWithRetry")) {
-  arg5[key10029] = require("importWithRetry")[key10029];
+for (const key10029 in importWithRetry) {
+  exports[key10029] = importWithRetry[key10029];
   continue;
 }
 
 export { loaderMaker };
 export const makeLazy = function makeLazy(memo) {
+  let createPromise;
+  let name;
+  let webpackId;
   ({ createPromise: require, webpackId: dependencyMap, renderLoader: _slicedToArray, name } = memo);
   let flag = memo.memo;
   if (flag === undefined) {
     flag = false;
   }
-  closure_4 = name.lazy(() => importWithRetry.importWithRetry({ createPromise, webpackId, name }));
-  class Wrapper {
-    constructor(arg0) {
-      tmp = jsx;
-      if (null != renderLoader) {
-        tmp2Result = tmp2();
+  let obj = name;
+  let closure_4 = name.lazy(() => {
+    const obj = importWithRetry;
+    const obj2 = { createPromise: require, webpackId: dependencyMap, name };
+    return obj.importWithRetry(obj2);
+  });
+  let obj2 = ReactCompilerGating;
+  const tmp = obj2.isReactCompilerEnabled() ? ((arg0) => {
+    let first;
+    let obj4;
+    let tmp7;
+    const obj = react2;
+    const cResult = obj.c(3);
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      let tmp6;
+      if (null != _slicedToArray) {
+        tmp6 = _slicedToArray();
+      } else if (typeof loaderMaker === "function") {
+        const transparent = "transparent";
+        const obj2 = { style: size };
+        size = { position: "absolute", width: "100%", height: "100%", backgroundColor: "transparent" };
+        tmp6 = React3("div", obj2);
       } else {
-        tmp3 = loaderMaker;
-        if (typeof loaderMaker === "function") {
-          str = "transparent";
-          transparent = "transparent";
-          obj = { style: null };
-          size = { position: "absolute", width: "100%", height: "100%", backgroundColor: null };
-          size.backgroundColor = "transparent";
-          obj.style = size;
-          str2 = "div";
-          tmp2Result = tmp("div", obj);
-        } else {
-          str3 = "Trying to call a non-function";
-          throw new TypeError("Trying to call a non-function");
-        }
+        throw new TypeError("Trying to call a non-function");
       }
-      obj1 = { fallback: tmp2Result, children: null };
-      obj5 = {};
-      merged = Object.assign(memo);
-      obj1.children = tmp(closure_4, obj5);
-      return tmp(closure_3.Suspense, obj1);
+      cResult[0] = tmp6;
+      first = tmp6;
+    } else {
+      first = cResult[0];
     }
-  }
-  let memoResult = Wrapper;
+    if (cResult[1] !== arg0) {
+      const obj3 = { fallback: first, children: React3(closure_4, obj4) };
+      const Suspense = react.Suspense;
+      obj4 = {};
+      const merged = Object.assign(arg0);
+      const tmp14 = React3(Suspense, obj3);
+      cResult[1] = arg0;
+      cResult[2] = tmp14;
+      tmp7 = tmp14;
+    } else {
+      tmp7 = cResult[2];
+    }
+    return tmp7;
+  }) : ((arg0) => {
+    let obj3;
+    let tmpResult;
+    const Suspense = react.Suspense;
+    if (null != _slicedToArray) {
+      tmpResult = tmp2();
+    } else if (typeof loaderMaker === "function") {
+      const transparent = "transparent";
+      const obj = { style: size };
+      size = { position: "absolute", width: "100%", height: "100%", backgroundColor: "transparent" };
+      tmpResult = tmp("div", obj);
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+    const obj2 = { fallback: tmpResult, children: React3(closure_4, obj3) };
+    obj3 = {};
+    const merged = Object.assign(arg0);
+    return React3(Suspense, obj2);
+  });
+  let memoResult = tmp;
   if (flag) {
-    memoResult = name.memo(Wrapper);
+    memoResult = obj.memo(tmp);
   }
   if (!name) {
     name = "Unknown";
@@ -77,70 +121,129 @@ export const makeLazy = function makeLazy(memo) {
   return memoResult;
 };
 export const makeLazyWithPreload = function makeLazyWithPreload(arg0) {
+  let createPromise;
+  let memo;
+  let name;
+  let webpackId;
+  const f135496 = (result) => {
+    closure_4 = result.default;
+    return result;
+  };
   ({ createPromise: require, webpackId: dependencyMap, renderLoader: _slicedToArray, name, memo } = arg0);
   if (memo === undefined) {
     memo = false;
   }
-  noop = null;
-  c4 = null;
-  closure_5 = noop.lazy(function importPromise() {
+  react = null;
+  let c4 = null;
+  let obj = react;
+  let closure_5 = react.lazy(function importPromise() {
     if (null == closure_3) {
-      const obj2 = { createPromise, webpackId };
-      closure_3 = importWithRetry.importWithRetry(obj2).then((result) => {
-        closure_4 = result.default;
-        return result;
-      });
-      const importWithRetryResult = importWithRetry.importWithRetry(obj2);
+      const obj2 = { createPromise: require, webpackId: dependencyMap };
+      const obj = importWithRetry;
+      const importWithRetryResult = obj.importWithRetry(obj2);
+      closure_3 = importWithRetryResult.then(f135496);
     }
     return closure_3;
   });
-  class Wrapper {
-    constructor(arg0) {
-      tmp = closure_3;
-      first = closure_2(closure_3.useState(() => closure_1_4), 1)[0];
-      if (null != first) {
-        tmp10 = jsx;
-        obj1 = {};
-        tmp11 = obj1;
-        tmp12 = arg0;
-        merged = Object.assign(arg0);
-        tmp14Result1 = jsx(first, obj1);
-      } else {
-        tmp14 = jsx;
-        if (null != renderLoader) {
-          tmp14Result = renderLoader();
-        } else {
-          tmp3 = loaderMaker;
-          if (typeof loaderMaker === "function") {
-            str = "transparent";
-            transparent = "transparent";
-            obj = { style: null };
-            size = { position: "absolute", width: "100%", height: "100%", backgroundColor: null };
-            size.backgroundColor = "transparent";
-            obj.style = size;
-            str2 = "div";
-            tmp14Result = tmp14("div", obj);
-          } else {
-            str3 = "Trying to call a non-function";
-            throw new TypeError("Trying to call a non-function");
-          }
-        }
-        obj6 = { fallback: null, children: null };
-        obj6.fallback = tmp14Result;
-        tmp5 = closure_5;
-        obj7 = {};
-        tmp6 = obj7;
-        tmp7 = arg0;
-        merged1 = Object.assign(arg0);
-        obj6.children = tmp14(closure_5, obj7);
-        tmp14Result1 = tmp14(tmp.Suspense, obj6);
-      }
-      return tmp14Result1;
+  let obj2 = ReactCompilerGating;
+  let tmp = obj2.isReactCompilerEnabled() ? ((arg0) => {
+    let first;
+    let obj5;
+    let tmp9;
+    const obj = react2;
+    const cResult = obj.c(7);
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn = function c() {
+        return closure_1_4;
+      };
+      cResult[0] = fn;
+      first = fn;
+    } else {
+      first = cResult[0];
     }
-  }
-  let memoResult = Wrapper;
+    const first1 = _slicedToArray(react.useState(first), 1)[0];
+    const tmp3 = react;
+    if (null != first1) {
+      if (cResult[1] === first1) {
+        let tmp16;
+        if (cResult[2] === arg0) {
+          tmp16 = cResult[3];
+        }
+        tmp9 = tmp16;
+      }
+      const obj2 = {};
+      const merged = Object.assign(arg0);
+      const tmp21 = React3(first1, obj2);
+      cResult[1] = first1;
+      cResult[2] = arg0;
+      cResult[3] = tmp21;
+      tmp16 = tmp21;
+    } else {
+      let tmp5;
+      const _Symbol = Symbol;
+      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+        let tmp8;
+        if (null != _slicedToArray) {
+          tmp8 = _slicedToArray();
+        } else if (typeof loaderMaker === "function") {
+          const transparent = "transparent";
+          const obj3 = { style: size };
+          size = { position: "absolute", width: "100%", height: "100%", backgroundColor: "transparent" };
+          tmp8 = React3("div", obj3);
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+        cResult[4] = tmp8;
+        tmp5 = tmp8;
+      } else {
+        tmp5 = cResult[4];
+      }
+      if (cResult[5] !== arg0) {
+        const obj4 = { fallback: tmp5, children: React3(closure_5, obj5) };
+        const Suspense = tmp3.Suspense;
+        obj5 = {};
+        const merged1 = Object.assign(arg0);
+        const tmp15 = React3(Suspense, obj4);
+        cResult[5] = arg0;
+        cResult[6] = tmp15;
+        tmp9 = tmp15;
+      } else {
+        tmp9 = cResult[6];
+      }
+    }
+    return tmp9;
+  }) : ((arg0) => {
+    let obj4;
+    let tmp14Result2;
+    const first = _slicedToArray(react.useState(() => closure_1_4), 1)[0];
+    const tmp = react;
+    if (null != first) {
+      const obj2 = {};
+      const merged = Object.assign(arg0);
+      tmp14Result2 = React3(first, obj2);
+    } else {
+      let tmp14Result;
+      const Suspense = tmp.Suspense;
+      if (null != _slicedToArray) {
+        tmp14Result = _slicedToArray();
+      } else if (typeof loaderMaker === "function") {
+        const transparent = "transparent";
+        const obj = { style: size };
+        size = { position: "absolute", width: "100%", height: "100%", backgroundColor: "transparent" };
+        tmp14Result = tmp14("div", obj);
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+      const obj3 = { fallback: tmp14Result, children: React3(closure_5, obj4) };
+      obj4 = {};
+      const merged1 = Object.assign(arg0);
+      tmp14Result2 = tmp14(Suspense, obj3);
+    }
+    return tmp14Result2;
+  });
+  let memoResult = tmp;
   if (memo) {
-    memoResult = noop.memo(Wrapper);
+    memoResult = obj.memo(tmp);
   }
   if (!name) {
     name = "Unknown";
@@ -148,27 +251,32 @@ export const makeLazyWithPreload = function makeLazyWithPreload(arg0) {
   memoResult.displayName = "Suspense(" + name + ")";
   memoResult.preload = () => {
     if (null == closure_3) {
-      const obj2 = { createPromise, webpackId };
-      closure_3 = importWithRetry.importWithRetry(obj2).then((result) => {
-        closure_4 = result.default;
-        return result;
-      });
-      const importWithRetryResult = importWithRetry.importWithRetry(obj2);
+      const obj2 = { createPromise: require, webpackId: dependencyMap };
+      const obj = importWithRetry;
+      const importWithRetryResult = obj.importWithRetry(obj2);
+      closure_3 = importWithRetryResult.then(f135496);
     }
   };
   return memoResult;
 };
 export const LazyLibrary = function LazyLibrary(arg0) {
+  let c2;
+  let createPromise;
+  let render;
+  let renderFallback;
+  let tmp2;
+  let webpackId;
   ({ createPromise: require, webpackId: dependencyMap } = arg0);
   _slicedToArray = undefined;
   ({ render, renderFallback } = arg0);
-  [tmp2, c2] = noop.useState(null);
-  const effect = noop.useEffect(() => {
-    const obj2 = { createPromise, webpackId };
-    importWithRetry.importWithRetry({ createPromise, webpackId }).then((result) => closure_1_2(result.default));
+  [tmp2, c2] = react.useState(null);
+  _slicedToArray(react.useState(null), 2);
+  const effect = react.useEffect(() => {
+    const obj = importWithRetry;
+    const obj2 = { createPromise: require, webpackId: dependencyMap };
+    const importWithRetryResult = obj.importWithRetry(obj2);
+    importWithRetryResult.then((result) => closure_1_2(result.default));
   }, []);
-  const tmp = _slicedToArray(noop.useState(null), 2);
-  const tmp4 = closure_4;
-  const tmp5 = closure_5;
-  return tmp4(tmp5, { children: null == tmp2 ? renderFallback() : render(tmp2) });
+  let obj = { children: null == tmp2 ? renderFallback() : render(tmp2) };
+  return closure_4(closure_5, obj);
 };

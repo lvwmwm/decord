@@ -1,55 +1,14 @@
 // Module ID: 14124
 // Function ID: 14125
-// Dependencies: [19, 14106, 14125, 21]
-// Exports: default
+// Dependencies: [14103, 14102]
 
 // Module 14124
-import noop from "module_19" /* 19 */;
-import module_14106_mod from "module_14106" /* 14106 */;
-import _isNativeReflectConstruct_mod from "module_14125" /* 14125 */;
-import jsxProd from "jsxProd" /* 21 */;
+import _mod14102 from "module_14102" /* 14102 */;
+import _mod14103 from "module_14103" /* 14103 */;
 
-if (noop) {
-  const __esModule = noop.__esModule;
-}
-let module_14106 = module_14106_mod;
-if (!module_14106) {
-  let obj = { default: module_14106 };
-  let tmp4 = obj;
-} else {
-  tmp4 = module_14106;
-}
-module_14106 = tmp4;
-let _isNativeReflectConstruct = _isNativeReflectConstruct_mod;
-if (!_isNativeReflectConstruct) {
-  const obj2 = { default: _isNativeReflectConstruct };
-  let tmp6 = obj2;
-} else {
-  tmp6 = _isNativeReflectConstruct;
-}
-_isNativeReflectConstruct = tmp6;
+let tmp = Object.keys || (function keys(arg0) {
+  const tmp = _mod14103;
+  return tmp(arg0, _mod14102);
+});
 
-export default () => () => {
-  closure_0 = closure_0.default();
-  return {
-    onCommand(type) {
-      if ("storybook" === type.type) {
-        closure_0.emit("storybook", type.payload);
-      }
-    },
-    features: {
-      storybookSwitcher(arg0) {
-        closure_0 = arg0;
-        return (arg0) => {
-          closure_0 = arg0;
-          return function StorybookSwitcherContainer(arg0) {
-            const obj = { storybookUi: emitter, emitter, children: null };
-            const merged = Object.assign(arg0);
-            obj.children = <emitter />;
-            return <_isNativeReflectConstruct.default storybookUi={emitter} emitter={emitter}>{null}</_isNativeReflectConstruct.default>;
-          };
-        };
-      }
-    }
-  };
-};
+export default tmp;

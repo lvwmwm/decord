@@ -1,18 +1,21 @@
-// Module ID: 11335
-// Function ID: 11336
+// Module ID: 11250
+// Function ID: 11251
 // Name: PushFeedbackActions
-// Dependencies: [573, 2]
+// Dependencies: [584, 2]
 // Exports: handleSurveyCleanup, receivedNotification
 
-// Module 11335 (PushFeedbackActions)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 11250 (PushFeedbackActions)
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/push_feedback/PushFeedbackActions.tsx");
 
 export const receivedNotification = function receivedNotification(messageId, channelId, tracking_type) {
-  DispatcherDefault.dispatch({ type: "PUSH_FEEDBACK_RECEIVED_NOTIFICATION", messageId, channelId, notificationType: tracking_type });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "PUSH_FEEDBACK_RECEIVED_NOTIFICATION", messageId, channelId, notificationType: tracking_type };
+  obj.dispatch(obj2);
 };
 export const handleSurveyCleanup = function handleSurveyCleanup() {
-  DispatcherDefault.dispatch({ type: "PUSH_FEEDBACK_CLEANUP" });
+  const obj = DispatcherDefault;
+  obj.dispatch({ type: "PUSH_FEEDBACK_CLEANUP" });
 };

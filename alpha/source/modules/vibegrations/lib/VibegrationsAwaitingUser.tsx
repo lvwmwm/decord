@@ -1,11 +1,11 @@
-// Module ID: 16615
-// Function ID: 16616
+// Module ID: 16700
+// Function ID: 16701
 // Name: VibegrationsAwaitingUser
-// Dependencies: [12852, 2]
+// Dependencies: [12905, 2]
 // Exports: activeAwaitingUser
 
-// Module 16615 (VibegrationsAwaitingUser)
-import VibegrationsChatStore from "VibegrationsChatStore" /* 12852 */;
+// Module 16700 (VibegrationsAwaitingUser)
+import VibegrationsChatStore from "VibegrationsChatStore" /* 12905 */;
 import size from "module_2" /* 2 */;
 
 const turnSettled = VibegrationsChatStore.turnSettled;

@@ -1,37 +1,64 @@
-// Module ID: 15724
-// Function ID: 15725
+// Module ID: 15787
+// Function ID: 15788
 // Name: GuildSettingActivityStatus
-// Dependencies: [15711, 7590, 2021, 6602, 11215, 1115, 2]
+// Dependencies: [15774, 7634, 558, 576, 2028, 6491, 11129, 1126, 2]
 
-// Module 15724 (GuildSettingActivityStatus)
-import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6602 */;
-import SettingsConstants from "SettingsConstants" /* 7590 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 15711 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 15787 (GuildSettingActivityStatus)
+import react from "react" /* 576 */;
+import intl2 from "intl" /* 1126 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6491 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 15774 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
+let c2;
+let c3;
 ({ getSelectedGuildId: c2, useUserSafetySettingsSelectedGuildStore: c3 } = UserSettingsSafetySelectedGuildStore);
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const obj = react;
+  const cResult = obj.c(3);
+  const selectedGuildId = _false().selectedGuildId;
+  const ActivityRestrictedGuilds = UserSettings.ActivityRestrictedGuilds;
+  const setting = ActivityRestrictedGuilds.useSetting();
+  if (cResult[0] === selectedGuildId) {
+    let tmp2;
+    if (cResult[1] === setting) {
+      tmp2 = cResult[2];
+    }
+    return !tmp2;
+  }
+  const hasItem = setting.includes(selectedGuildId);
+  cResult[0] = selectedGuildId;
+  cResult[1] = setting;
+  cResult[2] = hasItem;
+  tmp2 = hasItem;
+}) : (() => {
+  const selectedGuildId = _false().selectedGuildId;
+  const ActivityRestrictedGuilds = UserSettings.ActivityRestrictedGuilds;
+  const setting = ActivityRestrictedGuilds.useSetting();
+  return !setting.includes(selectedGuildId);
+});
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.IQO6Bi);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.IQO6Bi);
   },
   useDescription() {
-    const intl = util.intl;
-    return intl.string(util.t.TUKMak);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.TUKMak);
   },
-  parent: SettingsConstants.MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
-  useValue() {
-    const ActivityRestrictedGuilds = UserSettings.ActivityRestrictedGuilds;
-    const setting = ActivityRestrictedGuilds.useSetting();
-    return !setting.includes(React3().selectedGuildId);
-  },
+  parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  useValue: tmp3,
   onValueChange(arg0) {
     const tmp = React2();
-    const sanitizedActivityRestrictedGuilds = UserSettingsUtils.getSanitizedActivityRestrictedGuilds();
-    if (arg0) {
+    const obj = UserSettingsUtils;
+    const sanitizedActivityRestrictedGuilds = obj.getSanitizedActivityRestrictedGuilds();
+    const tmp4 = arg0;
+    if (tmp4) {
       sanitizedActivityRestrictedGuilds.delete(tmp);
     } else {
       sanitizedActivityRestrictedGuilds.add(tmp);
@@ -40,7 +67,8 @@ const toggle = SettingBuilders.createToggle({
     const items = [...sanitizedActivityRestrictedGuilds];
     ActivityRestrictedGuilds.updateSetting(items);
   }
-});
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/GuildSettingActivityStatus.tsx");
 
 export default toggle;

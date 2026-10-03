@@ -1,75 +1,28 @@
 // Module ID: 12633
 // Function ID: 12634
-// Dependencies: [12552, 12573, 12598]
-// Exports: getCurrentHub, getCurrentHubShim
+// Dependencies: []
+// Exports: isSentryRequestUrl
 
 // Module 12633
-import _mod12552 from "module_12552" /* 12552 */;
-import _flush from "_flush" /* 12573 */;
-import _mod12598 from "module_12598" /* 12598 */;
 
-require = arg1;
-const dependencyMap = arg6;
-function getCurrentHubShim() {
-  return {
-    bindClient(arg0) {
-      const currentScope = _mod12552.getCurrentScope();
-      currentScope.setClient(arg0);
-    },
-    withScope: _mod12552.withScope,
-    getClient() {
-      return _mod12552.getClient();
-    },
-    getScope: _mod12552.getCurrentScope,
-    getIsolationScope: _mod12552.getIsolationScope,
-    captureException(arg0, arg1) {
-      const currentScope = _mod12552.getCurrentScope();
-      return currentScope.captureException(arg0, arg1);
-    },
-    captureMessage(arg0, arg1, arg2) {
-      const currentScope = _mod12552.getCurrentScope();
-      return currentScope.captureMessage(arg0, arg1, arg2);
-    },
-    captureEvent: _flush.captureEvent,
-    addBreadcrumb: _mod12598.addBreadcrumb,
-    setUser: _flush.setUser,
-    setTags: _flush.setTags,
-    setTag: _flush.setTag,
-    setExtra: _flush.setExtra,
-    setExtras: _flush.setExtras,
-    setContext: _flush.setContext,
-    getIntegration(id) {
-      const client = _mod12552.getClient();
-      let integrationByName = client;
-      if (client) {
-        integrationByName = client.getIntegrationByName(id.id);
+export const isSentryRequestUrl = function isSentryRequestUrl(arr, getDsn) {
+  const tmp = getDsn && getDsn.getDsn();
+  arr = getDsn && getDsn.getOptions().tunnel;
+  let tmp2 = tmp && arr.includes(tmp.host);
+  if (!tmp2) {
+    let flag = false;
+    if (arr) {
+      let substr = arr;
+      if ("/" === arr[arr.length - 1]) {
+        substr = arr.slice(0, -1);
       }
-      if (!integrationByName) {
-        integrationByName = null;
+      let substr1 = arr;
+      if ("/" === arr[arr.length - 1]) {
+        substr1 = arr.slice(0, -1);
       }
-      return integrationByName;
-    },
-    startSession: _flush.startSession,
-    endSession: _flush.endSession,
-    captureSession(arg0) {
-      if (arg0) {
-        return tmp(tmp2[1]).endSession();
-      } else {
-        const currentScope = tmp(tmp2[0]).getCurrentScope();
-        const tmpResult3 = tmp(tmp2[0]);
-        const client = tmp(tmp2[0]).getClient();
-        const session = currentScope.getSession();
-        let tmp4 = client;
-        if (client) {
-          tmp4 = session;
-        }
-        if (tmp4) {
-          client.captureSession(session);
-        }
-      }
+      flag = substr === substr1;
     }
-  };
-}
-
-export const getCurrentHub = getCurrentHubShim;
-export { getCurrentHubShim };
+    tmp2 = flag;
+  }
+  return tmp2;
+};

@@ -1,57 +1,83 @@
-// Module ID: 15255
-// Function ID: 15256
+// Module ID: 15311
+// Function ID: 15312
 // Name: IOSNativePhoneIntegrationSetting
-// Dependencies: [7590, 15256, 1364, 1115, 2021, 11215, 14220, 15251, 2]
+// Dependencies: [7634, 558, 15312, 1369, 1126, 2028, 11129, 14288, 15307, 2]
 
-// Module 15255 (IOSNativePhoneIntegrationSetting)
-import util from "util" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import SettingsConstants from "SettingsConstants" /* 7590 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15251 */;
-import CallKitMetricCollectionExperimentDefault from "CallKitMetricCollectionExperiment" /* 15256 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11215 */;
+// Module 15311 (IOSNativePhoneIntegrationSetting)
+import intl2 from "intl" /* 1126 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14288 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15307 */;
+import CallKitMetricCollectionExperimentDefault from "CallKitMetricCollectionExperiment" /* 15312 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const f70197 = (arg0) => {
+
+};
 let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.V6D0wU);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.V6D0wU);
   },
   useValue: UserSettings.NativePhoneIntegrationEnabled.useSetting,
   onValueChange: UserSettings.NativePhoneIntegrationEnabled.updateSetting
 };
 let SettingBuilders = SettingBuilders_mod;
-let obj2 = {};
+let obj2 = {
+  parent: MobileUserSettings.NOTIFICATIONS,
+  usePredicate() {
+    if (typeof f70197 === "function") {
+      const obj = CallKitMetricCollectionExperimentDefault;
+      let enabled = obj.useConfig({ location: "IOSNativePhoneIntegrationSetting" }).enabled;
+      if (enabled) {
+        const obj2 = PlatformUtils;
+        enabled = obj2.isIOS();
+      }
+      const obj3 = notifications_NotificationSettingsUtils;
+      if (enabled) {
+        enabled = !obj3.useIsDeclarativeSettingsUIAvailable("IOSNativePhoneIntegrationSetting");
+      }
+      return enabled;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  }
+};
+const createToggle = SettingBuilders.createToggle;
 const merged = Object.assign(obj);
-obj2.parent = SettingsConstants.MobileUserSettings.NOTIFICATIONS;
-obj2.usePredicate = function usePredicate() {
-  let enabled = CallKitMetricCollectionExperimentDefault.useConfig({ location: "IOSNativePhoneIntegrationSetting" }).enabled;
-  if (enabled) {
-    enabled = PlatformUtils.isIOS();
+const toggle = createToggle(obj2);
+SettingBuilders = SettingBuilders_mod;
+let obj3 = {
+  parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
+  usePredicate() {
+    if (typeof f70197 === "function") {
+      const obj = CallKitMetricCollectionExperimentDefault;
+      let enabled = obj.useConfig({ location: "RedesignIOSNativePhoneIntegrationSetting" }).enabled;
+      if (enabled) {
+        const obj2 = PlatformUtils;
+        enabled = obj2.isIOS();
+      }
+      const obj3 = notifications_NotificationSettingsUtils;
+      if (enabled) {
+        enabled = obj3.useIsDeclarativeSettingsUIAvailable("RedesignIOSNativePhoneIntegrationSetting");
+      }
+      return enabled;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
   }
-  if (enabled) {
-    enabled = !obj3.useIsDeclarativeSettingsUIAvailable("IOSNativePhoneIntegrationSetting");
-  }
-  return enabled;
 };
-const toggle = SettingBuilders.createToggle(obj2);
-let SettingBuilders = SettingBuilders_mod;
-const obj3 = {};
+const createToggle2 = SettingBuilders.createToggle;
 const merged1 = Object.assign(obj);
-obj3.parent = MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN;
-obj3.usePredicate = function usePredicate() {
-  let enabled = CallKitMetricCollectionExperimentDefault.useConfig({ location: "RedesignIOSNativePhoneIntegrationSetting" }).enabled;
-  if (enabled) {
-    enabled = PlatformUtils.isIOS();
-  }
-  if (enabled) {
-    enabled = obj3.useIsDeclarativeSettingsUIAvailable("RedesignIOSNativePhoneIntegrationSetting");
-  }
-  return enabled;
-};
-const toggle1 = SettingBuilders.createToggle(obj3);
-const result = size.fileFinishedImporting("modules/user_settings/defs/native/IOSNativePhoneIntegrationSetting.tsx");
+const toggle2 = createToggle2(obj3);
+const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/IOSNativePhoneIntegrationSetting.tsx");
 
 export default toggle;
-export const RedesignIOSNativePhoneIntegrationSetting = toggle1;
+export const RedesignIOSNativePhoneIntegrationSetting = toggle2;

@@ -1,94 +1,120 @@
-// Module ID: 15007
-// Function ID: 15008
+// Module ID: 15064
+// Function ID: 15065
 // Name: VoiceSensitivitySetting
-// Dependencies: [17, 1993, 7590, 21, 4845, 504, 9635, 9297, 11215, 1115, 2]
+// Dependencies: [17, 1999, 7634, 21, 4890, 558, 576, 504, 9306, 9664, 11129, 1126, 2]
 
-// Module 15007 (VoiceSensitivitySetting)
-import _mod17 from "module_17" /* 17 */;
-import jsxProd from "jsxProd" /* 21 */;
-import util from "util" /* 1115 */;
-import SettingsConstants from "SettingsConstants" /* 7590 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9297 */;
-import VoiceSensitivityDefault from "VoiceSensitivity" /* 9635 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import createStyles from "createStyles" /* 4845 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 15064 (VoiceSensitivitySetting)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import intl2 from "intl" /* 1126 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9306 */;
+import VoiceSensitivityDefault from "VoiceSensitivity" /* 9664 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
-const View = _mod17.View;
-const jsx = jsxProd.jsx;
+const View = react_native.View;
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ slider: { marginTop: 8 } });
-const obj = {
-  useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["sqUm+k"]);
-  },
-  parent: SettingsConstants.MobileUserSettings.VOICE,
-  useDescription: function useVoiceSensitivitySettingDescription() {
-    const tmp = closure_6();
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let inputMode;
+  let tmp5;
+  let tmp6;
+  let tmp9;
+  let vadAutoThreshold;
+  let vadThreshold;
+  let obj = inputMode(576);
+  const cResult = obj.c(11);
+  const tmp4 = closure_6();
+  const tmp = inputMode;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [MediaEngineStore];
-    const stateFromStoresObject = inputMode(504).useStateFromStoresObject(items, () => ({ inputMode: MediaEngineStore.getMode(), vadThreshold: MediaEngineStore.getModeOptions().threshold, vadAutoThreshold: MediaEngineStore.getModeOptions().autoThreshold }));
-    inputMode = stateFromStoresObject.inputMode;
-    const obj2 = {
-      style: tmp.slider,
-      children: jsx(VoiceSensitivityDefault, {
-        auto: vadAutoThreshold,
-        threshold: vadThreshold,
-        onThresholdChange(threshold) {
-          return AudioActionCreatorsDefault.setMode(inputMode, { threshold });
-        }
-      })
+    const fn = function n() {
+      const obj = { inputMode: MediaEngineStore.getMode(), vadThreshold: MediaEngineStore.getModeOptions().threshold, vadAutoThreshold: MediaEngineStore.getModeOptions().autoThreshold };
+      return obj;
     };
-    ({ vadThreshold, vadAutoThreshold } = stateFromStoresObject);
-    return <View style={tmp.slider}>{jsx(VoiceSensitivityDefault, {
-      auto: vadAutoThreshold,
-      threshold: vadThreshold,
-      onThresholdChange(threshold) {
-        return AudioActionCreatorsDefault.setMode(inputMode, { threshold });
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = tmp(504);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp5, tmp6);
+  inputMode = stateFromStoresObject.inputMode;
+  ({ vadThreshold, vadAutoThreshold } = stateFromStoresObject);
+  if (cResult[2] !== inputMode) {
+    const fn2 = function v(threshold) {
+      const obj = AudioActionCreatorsDefault;
+      const obj2 = { threshold };
+      return obj.setMode(inputMode, obj2);
+    };
+    cResult[2] = inputMode;
+    cResult[3] = fn2;
+    tmp9 = fn2;
+  } else {
+    tmp9 = cResult[3];
+  }
+  if (cResult[4] === tmp9) {
+    if (cResult[5] === vadAutoThreshold) {
+      let tmp10;
+      if (cResult[6] === vadThreshold) {
+        tmp10 = cResult[7];
       }
-    })}</View>;
+      if (cResult[8] === tmp4.slider) {
+        let tmp12;
+        if (cResult[9] === tmp10) {
+          tmp12 = cResult[10];
+        }
+        return tmp12;
+      }
+      const tmp15 = <View style={tmp4.slider}>{tmp10}</View>;
+      cResult[8] = tmp4.slider;
+      cResult[9] = tmp10;
+      cResult[10] = tmp15;
+      tmp12 = tmp15;
+    }
+  }
+  const tmp11 = jsx(VoiceSensitivityDefault, { auto: vadAutoThreshold, threshold: vadThreshold, onThresholdChange: tmp9 });
+  cResult[4] = tmp9;
+  cResult[5] = vadAutoThreshold;
+  cResult[6] = vadThreshold;
+  cResult[7] = tmp11;
+  tmp10 = tmp11;
+}) : (() => {
+  let inputMode;
+  let vadAutoThreshold;
+  let vadThreshold;
+  const tmp = closure_6();
+  let obj = inputMode(504);
+  const items = [MediaEngineStore];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    const obj = { inputMode: MediaEngineStore.getMode(), vadThreshold: MediaEngineStore.getModeOptions().threshold, vadAutoThreshold: MediaEngineStore.getModeOptions().autoThreshold };
+    return obj;
+  });
+  inputMode = stateFromStoresObject.inputMode;
+  ({ vadThreshold, vadAutoThreshold } = stateFromStoresObject);
+  return <View style={tmp.slider}>{null}</View>;
+});
+let obj = {
+  useTitle() {
+    const intl = intl2.intl;
+    return intl.string(intl2.t["sqUm+k"]);
   },
+  parent: MobileUserSettings.VOICE,
+  useDescription: tmp2,
   useSearchTerms() {
-    const intl = util.intl;
-    const items = [intl.string(util.t.nuFtHH)];
+    const intl = intl2.intl;
+    const items = [intl.string(intl2.t.nuFtHH)];
     return items;
   }
 };
+const createStaticResult = SettingBuilders.createStatic(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/VoiceSensitivitySetting.tsx");
 
-export default SettingBuilders.createStatic({
-  useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["sqUm+k"]);
-  },
-  parent: SettingsConstants.MobileUserSettings.VOICE,
-  useDescription: function useVoiceSensitivitySettingDescription() {
-    const tmp = closure_6();
-    const items = [MediaEngineStore];
-    const stateFromStoresObject = inputMode(504).useStateFromStoresObject(items, () => ({ inputMode: MediaEngineStore.getMode(), vadThreshold: MediaEngineStore.getModeOptions().threshold, vadAutoThreshold: MediaEngineStore.getModeOptions().autoThreshold }));
-    inputMode = stateFromStoresObject.inputMode;
-    const obj2 = {
-      style: tmp.slider,
-      children: jsx(VoiceSensitivityDefault, {
-        auto: vadAutoThreshold,
-        threshold: vadThreshold,
-        onThresholdChange(threshold) {
-          return AudioActionCreatorsDefault.setMode(inputMode, { threshold });
-        }
-      })
-    };
-    ({ vadThreshold, vadAutoThreshold } = stateFromStoresObject);
-    return <View style={tmp.slider}>{jsx(VoiceSensitivityDefault, {
-      auto: vadAutoThreshold,
-      threshold: vadThreshold,
-      onThresholdChange(threshold) {
-        return AudioActionCreatorsDefault.setMode(inputMode, { threshold });
-      }
-    })}</View>;
-  },
-  useSearchTerms() {
-    const intl = util.intl;
-    const items = [intl.string(util.t.nuFtHH)];
-    return items;
-  }
-});
+export default createStaticResult;

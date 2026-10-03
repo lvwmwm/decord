@@ -1,182 +1,660 @@
-// Module ID: 12489
-// Function ID: 12490
+// Module ID: 12431
+// Function ID: 12432
 // Name: ThreadBrowserHooks
-// Dependencies: [32, 19, 12490, 2044, 4498, 4860, 6005, 7358, 4500, 1085, 7373, 504, 12, 1370, 11, 7357, 7497, 2]
-// Exports: useActiveGuildThreads, useActiveThreadIds, useActiveThreads, useArchivedThreads, useTrackThreadBrowserTab
+// Dependencies: [32, 19, 12432, 2051, 4509, 4905, 5692, 7262, 4511, 1096, 558, 576, 7409, 12, 1375, 504, 11, 7261, 7541, 2]
 
-// Module 12489 (ThreadBrowserHooks)
+// Module 12431 (ThreadBrowserHooks)
+import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7357 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 7497 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import PermissionStore from "PermissionStore" /* 4498 */;
-import ReadStateStore from "ReadStateStore" /* 4860 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6005 */;
-import ArchivedThreadsStore from "ArchivedThreadsStore" /* 7358 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4500 */;
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1096 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7261 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 7541 */;
+import ReportToModChannelStore from "ReportToModChannelStore" /* 12432 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import ReadStateStore from "ReadStateStore" /* 4905 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 5692 */;
+import ArchivedThreadsStore from "ArchivedThreadsStore" /* 7262 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4511 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let current, dependencyMap, importDefault, obj1;
 
-require = fn;
-let closure_5 = fn(12490).useShouldShowResolvedFlagsForChannel;
-const Permissions = fn(1085).Permissions;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/threads/ThreadBrowserHooks.tsx");
-
-export const useTrackThreadBrowserTab = function useTrackThreadBrowserTab() {
-  const effect = noop.useEffect(() => {
-    const result = require("ThreadUtils").trackThreadBrowserTab();
+let react = react_mod;
+let closure_5 = ReportToModChannelStore.useShouldShowResolvedFlagsForChannel;
+const Permissions = Constants.Permissions;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp2;
+  let tmp3;
+  let obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function a() {
+      const obj = require("ThreadUtils");
+      const result = obj.trackThreadBrowserTab();
+    };
+    const items = [];
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp2 = fn;
+    tmp3 = items;
+  } else {
+    [tmp2, tmp3] = cResult;
+  }
+  const effect = react.useEffect(tmp2, tmp3);
+}) : (() => {
+  const effect = react.useEffect(() => {
+    const obj = require("ThreadUtils");
+    const result = obj.trackThreadBrowserTab();
   }, []);
-};
-export const useActiveThreadIds = function useActiveThreadIds(arg0) {
-  _require = arg0;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
+  let first;
+  const _require = guild_id;
+  let tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(8);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [PermissionStore, ActiveThreadsStore, ChannelStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === guild_id.guild_id) {
+    let tmp8;
+    let tmp9;
+    let tmp11;
+    if (cResult[2] === guild_id.id) {
+      tmp8 = cResult[3];
+      tmp9 = cResult[4];
+    }
+    let tmpResult = tmp(504);
+    const stateFromStoresArray = tmpResult.useStateFromStoresArray(first, tmp8, tmp9);
+    if (cResult[5] !== stateFromStoresArray) {
+      let tmp12;
+      const _Symbol = Symbol;
+      if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+        class S {
+          constructor(arg0, arg1) {
+            const compare = SnowflakeUtilsDefault.compare;
+            SnowflakeUtilsDefault;
+            const lastMessageIdResult = current.lastMessageId(arg0);
+            return compare(lastMessageIdResult, current.lastMessageId(arg1));
+          }
+        }
+        cResult[7] = S;
+        tmp12 = S;
+      } else {
+        class S {
+          constructor(arg0, arg1) {
+            const compare = SnowflakeUtilsDefault.compare;
+            SnowflakeUtilsDefault;
+            const lastMessageIdResult = current.lastMessageId(arg0);
+            return compare(lastMessageIdResult, current.lastMessageId(arg1));
+          }
+        }
+      }
+      const obj3 = _modDef12(stateFromStoresArray);
+      const sorted = obj3.sort(tmp12);
+      let iter = sorted.reverse();
+      const valueResult = iter.value();
+      cResult[5] = stateFromStoresArray;
+      cResult[6] = valueResult;
+      tmp11 = valueResult;
+    } else {
+      class S {
+        constructor(arg0, arg1) {
+          const compare = SnowflakeUtilsDefault.compare;
+          SnowflakeUtilsDefault;
+          const lastMessageIdResult = current.lastMessageId(arg0);
+          return compare(lastMessageIdResult, current.lastMessageId(arg1));
+        }
+      }
+    }
+    return tmp11;
+  }
+  const fn = function s() {
+    let channel;
+    const tmp = _modDef12;
+    const tmpResult = tmp(ActiveThreadsStore.getThreadsForParent(guild_id.guild_id, guild_id.id));
+    const values = tmpResult.values();
+    const mapped = values.map((id) => channel.getChannel(id.id));
+    const found = mapped.filter(GlobalUtils.isNotNullish);
+    const found1 = found.filter((item) => closure_1_7.can(constants.VIEW_CHANNEL, item));
+    const iter = found1.map((id) => id.id);
+    return iter.value();
+  };
+  const items1 = [, ];
+  ({ guild_id: arr2[0], id: arr2[1] } = guild_id);
+  cResult[1] = guild_id.guild_id;
+  cResult[2] = guild_id.id;
+  cResult[3] = fn;
+  cResult[4] = items1;
+  tmp9 = items1;
+  tmp8 = fn;
+}) : ((arg0) => {
+  let closure_0;
+  const _require = arg0;
+  let obj = require("get initialized");
   const items = [PermissionStore, ActiveThreadsStore, ChannelStore];
   const items1 = [, ];
   ({ guild_id: arr2[0], id: arr2[1] } = arg0);
-  const stateFromStoresArray = require("initialize").useStateFromStoresArray(items, () => {
-    const values = _modDef12(ActiveThreadsStore.getThreadsForParent(memo.guild_id, memo.id)).values();
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
+    let channel;
+    const tmp = _modDef12;
+    const tmpResult = tmp(ActiveThreadsStore.getThreadsForParent(closure_0.guild_id, closure_0.id));
+    const values = tmpResult.values();
     const mapped = values.map((id) => channel.getChannel(id.id));
     const found = mapped.filter(GlobalUtils.isNotNullish);
     const found1 = found.filter((item) => closure_1_7.can(constants.VIEW_CHANNEL, item));
-    const tmpResult = _modDef12(ActiveThreadsStore.getThreadsForParent(memo.guild_id, memo.id));
-    return found1.map((id) => id.id).value();
+    const iter = found1.map((id) => id.id);
+    return iter.value();
   }, items1);
   const items2 = [stateFromStoresArray];
-  return noop.useMemo(() => {
-    const sorted = _modDef12(closure_1_1).sort((arg0, arg1) => {
-      const obj = closure_1_1(closure_1_2[14]);
-      return obj.compare(closure_1_8.lastMessageId(arg0), closure_1_8.lastMessageId(arg1));
+  return react.useMemo(() => {
+    const obj = _modDef12(stateFromStoresArray);
+    const sorted = obj.sort((arg0, arg1) => {
+      const compare = stateFromStoresArray(closure_1_2[16]).compare;
+      stateFromStoresArray(closure_1_2[16]);
+      const lastMessageIdResult = closure_1_8.lastMessageId(arg0);
+      return compare(lastMessageIdResult, closure_1_8.lastMessageId(arg1));
     });
-    let obj = _modDef12(closure_1_1);
-    return sorted.reverse().value();
+    const iter = sorted.reverse();
+    return iter.value();
   }, items2);
-};
-export const useActiveThreads = function useActiveThreads(channel) {
-  closure_129_0 = channel;
-  const items = [PermissionStore, ActiveThreadsStore, ChannelStore];
-  const items1 = [, ];
-  ({ guild_id: arr2[0], id: arr2[1] } = channel);
-  const stateFromStoresArray = memo(504).useStateFromStoresArray(items, () => {
-    const values = _modDef12(ActiveThreadsStore.getThreadsForParent(memo.guild_id, memo.id)).values();
-    const mapped = values.map((id) => channel.getChannel(id.id));
-    const found = mapped.filter(GlobalUtils.isNotNullish);
-    const found1 = found.filter((item) => closure_1_7.can(constants.VIEW_CHANNEL, item));
-    const tmpResult = _modDef12(ActiveThreadsStore.getThreadsForParent(memo.guild_id, memo.id));
-    return found1.map((id) => id.id).value();
-  }, items1);
-  closure_129_1 = stateFromStoresArray;
-  const items2 = [stateFromStoresArray];
-  memo = noop.useMemo(() => {
-    const sorted = _modDef12(closure_1_1).sort((arg0, arg1) => {
-      const obj = closure_1_1(closure_1_2[14]);
-      return obj.compare(closure_1_8.lastMessageId(arg0), closure_1_8.lastMessageId(arg1));
-    });
-    let obj = _modDef12(closure_1_1);
-    return sorted.reverse().value();
-  }, items2);
-  let obj = memo(504);
-  const items3 = [JoinedThreadsStore];
-  const items4 = [memo];
-  const tmp3 = _slicedToArray(memo(504).useStateFromStores(items3, () => _modDef12.partition(memo, (id) => closure_1_11.hasJoined(id)), items4, memo(504).statesWillNeverBeEqual), 2);
-  return { joinedThreadIds: tmp3[0], unjoinedThreadIds: tmp3[1] };
-};
-export const useActiveGuildThreads = function useActiveGuildThreads(arg0) {
-  _require = arg0;
+});
+let closure_13 = tmp3;
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let _require;
+  let closure_0;
+  let first;
+  let tmp10;
+  let tmp11;
+  let tmp7;
+  let tmp8;
+  let obj = require("react");
+  const cResult = obj.c(7);
+  const tmp4 = closure_13(arg0);
+  _require = tmp4;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [JoinedThreadsStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== tmp4) {
+    const fn = function o() {
+      const obj = _modDef12;
+      return obj.partition(closure_0, (id) => closure_1_11.hasJoined(id));
+    };
+    const items1 = [tmp4];
+    cResult[1] = tmp4;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp8 = items1;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  const tmpResult = require("get initialized");
+  [tmp10, tmp11] = tmpResult.useStateFromStores(first, tmp7, tmp8, require("get initialized").statesWillNeverBeEqual);
+  _slicedToArray(tmpResult.useStateFromStores(first, tmp7, tmp8, require("get initialized").statesWillNeverBeEqual), 2);
+  if (cResult[4] === tmp10) {
+    let tmp12;
+    if (cResult[5] === tmp11) {
+      tmp12 = cResult[6];
+    }
+    return tmp12;
+  }
+  const obj2 = { joinedThreadIds: tmp10, unjoinedThreadIds: tmp11 };
+  cResult[4] = tmp10;
+  cResult[5] = tmp11;
+  cResult[6] = obj2;
+  tmp12 = obj2;
+}) : ((arg0) => {
+  let closure_0;
+  const tmp = closure_13(arg0);
+  const _require = tmp;
+  let obj = require("get initialized");
+  const items = [JoinedThreadsStore];
+  const items1 = [tmp];
+  const tmp2 = _slicedToArray(obj.useStateFromStores(items, () => {
+    const obj = _modDef12;
+    return obj.partition(closure_0, (id) => closure_1_11.hasJoined(id));
+  }, items1, require("get initialized").statesWillNeverBeEqual), 2);
+  return { joinedThreadIds: tmp2[0], unjoinedThreadIds: tmp2[1] };
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp11;
+  let tmp8;
+  let tmp9;
+  const _require = arg0;
+  let tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(7);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [PermissionStore, ActiveThreadsStore, ChannelStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function s() {
+      let channel;
+      const tmp = _modDef12;
+      const tmpResult = tmp(ActiveThreadsStore.getThreadsForGuild(closure_0));
+      const values = tmpResult.values();
+      const mapped = values.map((item) => {
+        const obj = closure_1_1(closure_1_2[13]);
+        return obj.values(item);
+      });
+      const flattenResult = mapped.flatten();
+      const mapped1 = flattenResult.map((id) => channel.getChannel(id.id));
+      const found = mapped1.filter(GlobalUtils.isNotNullish);
+      const found1 = found.filter((item) => closure_1_7.can(constants.VIEW_CHANNEL, item));
+      const iter = found1.map((id) => id.id);
+      return iter.value();
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp9 = items1;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  let tmpResult = tmp(504);
+  const stateFromStoresArray = tmpResult.useStateFromStoresArray(first, tmp8, tmp9);
+  if (cResult[4] !== stateFromStoresArray) {
+    let tmp12;
+    const _Symbol = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      class S {
+        constructor(arg0, arg1) {
+          const compare = SnowflakeUtilsDefault.compare;
+          SnowflakeUtilsDefault;
+          const lastMessageIdResult = current.lastMessageId(arg0);
+          return compare(lastMessageIdResult, current.lastMessageId(arg1));
+        }
+      }
+      cResult[6] = S;
+      tmp12 = S;
+    } else {
+      class S {
+        constructor(arg0, arg1) {
+          const compare = SnowflakeUtilsDefault.compare;
+          SnowflakeUtilsDefault;
+          const lastMessageIdResult = current.lastMessageId(arg0);
+          return compare(lastMessageIdResult, current.lastMessageId(arg1));
+        }
+      }
+    }
+    const obj3 = _modDef12(stateFromStoresArray);
+    const sorted = obj3.sort(tmp12);
+    let iter = sorted.reverse();
+    const valueResult = iter.value();
+    cResult[4] = stateFromStoresArray;
+    cResult[5] = valueResult;
+    tmp11 = valueResult;
+  } else {
+    class S {
+      constructor(arg0, arg1) {
+        const compare = SnowflakeUtilsDefault.compare;
+        SnowflakeUtilsDefault;
+        const lastMessageIdResult = current.lastMessageId(arg0);
+        return compare(lastMessageIdResult, current.lastMessageId(arg1));
+      }
+    }
+  }
+  return tmp11;
+}) : ((arg0) => {
+  let closure_0;
+  const _require = arg0;
+  let obj = require("get initialized");
   const items = [PermissionStore, ActiveThreadsStore, ChannelStore];
   const items1 = [arg0];
-  const stateFromStoresArray = require("initialize").useStateFromStoresArray(items, () => {
-    const values = _modDef12(ActiveThreadsStore.getThreadsForGuild(closure_0)).values();
-    const mapped = values.map((item) => stateFromStoresArray(closure_1_2[12]).values(item));
-    const tmpResult = _modDef12(ActiveThreadsStore.getThreadsForGuild(closure_0));
-    const mapped1 = mapped.flatten().map((id) => channel.getChannel(id.id));
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
+    let channel;
+    const tmp = _modDef12;
+    const tmpResult = tmp(ActiveThreadsStore.getThreadsForGuild(closure_0));
+    const values = tmpResult.values();
+    const mapped = values.map((item) => {
+      const obj = stateFromStoresArray(closure_1_2[13]);
+      return obj.values(item);
+    });
+    const flattenResult = mapped.flatten();
+    const mapped1 = flattenResult.map((id) => channel.getChannel(id.id));
     const found = mapped1.filter(GlobalUtils.isNotNullish);
     const found1 = found.filter((item) => closure_1_7.can(constants.VIEW_CHANNEL, item));
-    const flattenResult = mapped.flatten();
-    return found1.map((id) => id.id).value();
+    const iter = found1.map((id) => id.id);
+    return iter.value();
   }, items1);
   const items2 = [stateFromStoresArray];
-  return noop.useMemo(() => {
-    const sorted = _modDef12(stateFromStoresArray).sort((arg0, arg1) => {
-      const obj = stateFromStoresArray(closure_1_2[14]);
-      return obj.compare(closure_1_8.lastMessageId(arg0), closure_1_8.lastMessageId(arg1));
+  return react.useMemo(() => {
+    const obj = _modDef12(stateFromStoresArray);
+    const sorted = obj.sort((arg0, arg1) => {
+      const compare = stateFromStoresArray(closure_1_2[16]).compare;
+      stateFromStoresArray(closure_1_2[16]);
+      const lastMessageIdResult = closure_1_8.lastMessageId(arg0);
+      return compare(lastMessageIdResult, closure_1_8.lastMessageId(arg1));
     });
-    let obj = _modDef12(stateFromStoresArray);
-    return sorted.reverse().value();
+    const iter = sorted.reverse();
+    return iter.value();
   }, items2);
-};
-export const useArchivedThreads = function useArchivedThreads(channel, LATEST_ACTIVITY, loadMore, MATCH_SOME) {
-  _require = channel;
-  const sortOrder = LATEST_ACTIVITY;
-  dependencyMap = loadMore;
-  const tagSetting = MATCH_SOME;
-  const result = channel.isModeratorReportChannel();
-  noop = result;
-  showResolvedFlags = showResolvedFlags(channel.id).showResolvedFlags;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((isModeratorReportChannel, sortOrder, tagFilter, tagSetting) => {
+  let canLoadMore;
+  let closure_4;
+  let loading;
+  let nextOffset;
+  let showResolvedFlags;
+  let tmp4;
+  let tmp6;
+  const _require = isModeratorReportChannel;
+  importDefault = sortOrder;
+  dependencyMap = tagFilter;
+  let tmp = _require;
+  let tmp2 = dependencyMap;
+  let obj = require("react");
+  const cResult = obj.c(49);
+  if (cResult[0] !== isModeratorReportChannel) {
+    const result = isModeratorReportChannel.isModeratorReportChannel();
+    cResult[0] = isModeratorReportChannel;
+    cResult[1] = result;
+    tmp4 = result;
+  } else {
+    tmp4 = cResult[1];
+  }
+  react = tmp4;
+  showResolvedFlags = showResolvedFlags(isModeratorReportChannel.id).showResolvedFlags;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ArchivedThreadsStore];
+    cResult[2] = items;
+    tmp6 = items;
+  } else {
+    tmp6 = cResult[2];
+  }
+  if (cResult[3] === isModeratorReportChannel.id) {
+    if (cResult[4] === sortOrder) {
+      if (cResult[5] === tagFilter) {
+        let tmp8;
+        if (cResult[6] === tagSetting) {
+          tmp8 = cResult[7];
+        }
+        let tmpResult = tmp(504);
+        const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp6, tmp8);
+        ({ canLoadMore, loading, nextOffset } = stateFromStoresObject);
+        const isInitialLoad = stateFromStoresObject.isInitialLoad;
+        if (cResult[8] === isModeratorReportChannel) {
+          if (cResult[9] === tmp4) {
+            if (cResult[10] === nextOffset) {
+              if (cResult[11] === showResolvedFlags) {
+                if (cResult[12] === sortOrder) {
+                  if (cResult[13] === tagFilter) {
+                    let tmp10;
+                    let tmp11;
+                    if (cResult[14] === tagSetting) {
+                      tmp10 = cResult[15];
+                    }
+                    current = tmp10;
+                    let obj3 = react;
+                    const ref = react.useRef(tmp10);
+                    if (cResult[16] !== tmp10) {
+                      class F {
+                        constructor() {
+                          closure_9.current = closure_8;
+                          return;
+                        }
+                      }
+                      cResult[16] = tmp10;
+                      cResult[17] = F;
+                      tmp11 = F;
+                    } else {
+                      class F {
+                        constructor() {
+                          closure_9.current = closure_8;
+                          return;
+                        }
+                      }
+                    }
+                    const effect = obj3.useEffect(tmp11);
+                    if (cResult[18] !== isInitialLoad) {
+                      class F {
+                        constructor() {
+                          closure_9.current = closure_8;
+                          return;
+                        }
+                      }
+                      cResult[18] = isInitialLoad;
+                      cResult[19] = tmp14;
+                    } else {
+                      class F {
+                        constructor() {
+                          closure_9.current = closure_8;
+                          return;
+                        }
+                      }
+                    }
+                    if (cResult[20] === isModeratorReportChannel.id) {
+                      class F {
+                        constructor() {
+                          closure_9.current = closure_8;
+                          return;
+                        }
+                      }
+                    }
+                    const items1 = [isModeratorReportChannel.id, , , , ];
+                    class M {
+                      constructor() {
+                        tmp = closure_0;
+                        canResult = closure_7.can(Permissions.READ_MESSAGE_HISTORY, closure_0);
+                        tmp3 = !canResult;
+                        if (canResult) {
+                          tmp4 = closure_4;
+                          if (tmp4) {
+                            tmp5 = showResolvedFlags;
+                            tmp4 = !showResolvedFlags;
+                          }
+                          tmp3 = tmp4;
+                        }
+                        if (!tmp3) {
+                          tmp6 = closure_1;
+                          tmp7 = closure_2;
+                          obj = closure_1(closure_2[17]);
+                          obj1 = { guildId: null, channelId: null, sortOrder: null, tagFilter: null, tagSetting: null, offset: null };
+                          ({ guild_id: obj2.guildId, id: obj2.channelId } = tmp);
+                          tmp8 = closure_1;
+                          obj1.sortOrder = closure_1;
+                          tmp9 = closure_2;
+                          obj1.tagFilter = closure_2;
+                          tmp10 = closure_3;
+                          obj1.tagSetting = closure_3;
+                          tmp11 = nextOffset;
+                          obj1.offset = nextOffset;
+                          archivedThreads = obj.loadArchivedThreads(obj1);
+                        }
+                        return;
+                      }
+                    }
+                    items1[2] = tagFilter;
+                    items1[3] = isInitialLoad;
+                    items1[4] = showResolvedFlags;
+                    cResult[20] = isModeratorReportChannel.id;
+                    cResult[21] = isInitialLoad;
+                    cResult[22] = showResolvedFlags;
+                    cResult[23] = sortOrder;
+                    cResult[24] = tagFilter;
+                    class E {
+                      constructor() {
+                        obj = { loading: closure_10.isLoading(closure_0.id, closure_1, closure_2, closure_3), isInitialLoad: closure_10.getIsInitialLoad(closure_0.id, closure_1, closure_2, closure_3), canLoadMore: closure_10.getCanLoadMore(closure_0.id, closure_1, closure_2, closure_3), nextOffset: closure_10.getNextOffset(closure_0.id, closure_1, closure_2, closure_3) };
+                        return obj;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        class M {
+          constructor() {
+            tmp = closure_0;
+            canResult = closure_7.can(Permissions.READ_MESSAGE_HISTORY, closure_0);
+            tmp3 = !canResult;
+            if (canResult) {
+              tmp4 = closure_4;
+              if (tmp4) {
+                tmp5 = showResolvedFlags;
+                tmp4 = !showResolvedFlags;
+              }
+              tmp3 = tmp4;
+            }
+            if (!tmp3) {
+              tmp6 = closure_1;
+              tmp7 = closure_2;
+              obj = closure_1(closure_2[17]);
+              obj1 = { guildId: null, channelId: null, sortOrder: null, tagFilter: null, tagSetting: null, offset: null };
+              ({ guild_id: obj2.guildId, id: obj2.channelId } = tmp);
+              tmp8 = closure_1;
+              obj1.sortOrder = closure_1;
+              tmp9 = closure_2;
+              obj1.tagFilter = closure_2;
+              tmp10 = closure_3;
+              obj1.tagSetting = closure_3;
+              tmp11 = nextOffset;
+              obj1.offset = nextOffset;
+              archivedThreads = obj.loadArchivedThreads(obj1);
+            }
+            return;
+          }
+        }
+        cResult[8] = isModeratorReportChannel;
+        cResult[9] = tmp4;
+        cResult[10] = nextOffset;
+        cResult[11] = showResolvedFlags;
+        cResult[12] = sortOrder;
+        cResult[13] = tagFilter;
+        cResult[14] = tagSetting;
+        class E {
+          constructor() {
+            obj = { loading: closure_10.isLoading(closure_0.id, closure_1, closure_2, closure_3), isInitialLoad: closure_10.getIsInitialLoad(closure_0.id, closure_1, closure_2, closure_3), canLoadMore: closure_10.getCanLoadMore(closure_0.id, closure_1, closure_2, closure_3), nextOffset: closure_10.getNextOffset(closure_0.id, closure_1, closure_2, closure_3) };
+            return obj;
+          }
+        }
+        cResult[15] = M;
+        tmp10 = M;
+      }
+    }
+  }
+  class E {
+    constructor() {
+      obj = { loading: closure_10.isLoading(closure_0.id, closure_1, closure_2, closure_3), isInitialLoad: closure_10.getIsInitialLoad(closure_0.id, closure_1, closure_2, closure_3), canLoadMore: closure_10.getCanLoadMore(closure_0.id, closure_1, closure_2, closure_3), nextOffset: closure_10.getNextOffset(closure_0.id, closure_1, closure_2, closure_3) };
+      return obj;
+    }
+  }
+  cResult[3] = isModeratorReportChannel.id;
+  cResult[4] = sortOrder;
+  cResult[5] = tagFilter;
+  cResult[6] = tagSetting;
+  cResult[7] = E;
+  tmp8 = E;
+}) : ((isModeratorReportChannel, sortOrder, tagFilter, tagSetting) => {
+  let callback;
+  let items4;
+  let loading;
+  let nextOffset;
+  let obj3;
+  let showResolvedFlags;
+  const _require = isModeratorReportChannel;
+  dependencyMap = tagFilter;
+  const result = isModeratorReportChannel.isModeratorReportChannel();
+  react = result;
+  showResolvedFlags = showResolvedFlags(isModeratorReportChannel.id).showResolvedFlags;
+  let obj = require("get initialized");
   const items = [ArchivedThreadsStore];
-  const stateFromStoresObject = require("initialize").useStateFromStoresObject(items, () => ({ loading: ArchivedThreadsStore.isLoading(user.id, closure_1, closure_2, closure_3), isInitialLoad: ArchivedThreadsStore.getIsInitialLoad(user.id, closure_1, closure_2, closure_3), canLoadMore: ArchivedThreadsStore.getCanLoadMore(user.id, closure_1, closure_2, closure_3), nextOffset: ArchivedThreadsStore.getNextOffset(user.id, closure_1, closure_2, closure_3) }));
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    const obj = { loading: ArchivedThreadsStore.isLoading(isModeratorReportChannel.id, sortOrder, tagFilter, tagSetting), isInitialLoad: ArchivedThreadsStore.getIsInitialLoad(isModeratorReportChannel.id, sortOrder, tagFilter, tagSetting), canLoadMore: ArchivedThreadsStore.getCanLoadMore(isModeratorReportChannel.id, sortOrder, tagFilter, tagSetting), nextOffset: ArchivedThreadsStore.getNextOffset(isModeratorReportChannel.id, sortOrder, tagFilter, tagSetting) };
+    return obj;
+  });
   ({ loading, nextOffset } = stateFromStoresObject);
   const isInitialLoad = stateFromStoresObject.isInitialLoad;
-  const items1 = [channel, LATEST_ACTIVITY, loadMore, MATCH_SOME, nextOffset, showResolvedFlags, result];
-  loadMore = noop.useCallback(() => {
-    const canResult = PermissionStore.can(Permissions.READ_MESSAGE_HISTORY, closure_0);
+  const items1 = [isModeratorReportChannel, sortOrder, tagFilter, tagSetting, nextOffset, showResolvedFlags, result];
+  const canLoadMore = stateFromStoresObject.canLoadMore;
+  const loadMore = react.useCallback(() => {
+    const canResult = PermissionStore.can(Permissions.READ_MESSAGE_HISTORY, isModeratorReportChannel);
     let tmp3 = !canResult;
+    const tmp = isModeratorReportChannel;
     if (canResult) {
-      let tmp4 = result;
-      if (result) {
-        tmp4 = !showResolvedFlags;
-      }
-      tmp3 = tmp4;
+      tmp3 = react && !showResolvedFlags;
+      const tmp4 = react && !showResolvedFlags;
     }
     if (!tmp3) {
-      const obj3 = { guildId: null, channelId: null, sortOrder: null, tagFilter: null, tagSetting: null, offset: null };
-      ({ guild_id: obj2.guildId, id: obj2.channelId } = closure_0);
-      obj3.sortOrder = sortOrder;
-      obj3.tagFilter = tagFilter;
-      obj3.tagSetting = tagSetting;
-      obj3.offset = nextOffset;
-      const archivedThreads = ThreadActionCreatorsDefault.loadArchivedThreads(obj3);
+      const obj3 = { guildId: null, channelId: null, sortOrder, tagFilter, tagSetting, offset: nextOffset };
+      ({ guild_id: obj2.guildId, id: obj2.channelId } = tmp);
+      const obj = ThreadActionCreatorsDefault;
+      const archivedThreads = obj.loadArchivedThreads(obj3);
     }
   }, items1);
-  noop.useRef(loadMore);
-  const effect = noop.useEffect(() => {
-    closure_9.current = current;
+  const ref = react.useRef(loadMore);
+  const effect = react.useEffect(() => {
+    ref.current = current;
   });
-  const items2 = [channel.id, LATEST_ACTIVITY, loadMore, isInitialLoad, showResolvedFlags];
-  const effect1 = noop.useEffect(() => {
-    if (isInitialLoad) {
+  const items2 = [isModeratorReportChannel.id, sortOrder, tagFilter, isInitialLoad, showResolvedFlags];
+  const effect1 = react.useEffect(() => {
+    const tmp = isInitialLoad;
+    if (tmp) {
       ref.current();
     }
   }, items2);
-  const items3 = [channel.id, showResolvedFlags];
-  const effect2 = noop.useEffect(() => {
-    ForumActionCreatorsDefault.resort(user.id);
+  const items3 = [isModeratorReportChannel.id, showResolvedFlags];
+  const effect2 = react.useEffect(() => {
+    const obj = ForumActionCreatorsDefault;
+    obj.resort(isModeratorReportChannel.id);
   }, items3);
-  const obj2 = { threadIds: null, canLoadMore: null, loading: null, loadMore: null };
-  let obj = require("initialize");
-  const items4 = [ArchivedThreadsStore, nextOffset, isInitialLoad];
-  obj2.threadIds = require("initialize").useStateFromStoresArray(items4, () => {
-    const tmpResult = _modDef12(ArchivedThreadsStore.getThreads(user.id, closure_1, closure_2, closure_3));
-    return _modDef12(ArchivedThreadsStore.getThreads(user.id, closure_1, closure_2, closure_3)).filter((item) => {
-      if (closure_1_4) {
-        if (!showResolvedFlags) {
-          return false;
+  const obj2 = {
+    threadIds: obj3.useStateFromStoresArray(items4, () => {
+      let tmp = _modDef12;
+      const tmpResult = tmp(ArchivedThreadsStore.getThreads(isModeratorReportChannel.id, sortOrder, tagFilter, tagSetting));
+      const iter = tmpResult.filter((item) => {
+        const tmp = closure_1_4;
+        if (tmp) {
+          const tmp2 = showResolvedFlags;
+          if (!tmp2) {
+            return false;
+          }
         }
-      }
-      const channel = nextOffset.getChannel(item);
-      let canResult = null != channel;
-      if (canResult) {
-        canResult = isInitialLoad.can(constants.VIEW_CHANNEL, channel);
-      }
-      if (canResult) {
-        canResult = !channel.isMediaThread();
-      }
-      return canResult;
-    }).value();
-  });
-  obj2.canLoadMore = stateFromStoresObject.canLoadMore;
+        const channel = nextOffset.getChannel(item);
+        const canResult = null != channel && isInitialLoad.can(constants.VIEW_CHANNEL, channel) && !channel.isMediaThread();
+        return canResult;
+      });
+      return iter.value();
+    }),
+    canLoadMore,
+    loading,
+    loadMore
+  };
+  obj3 = require("get initialized");
+  items4 = [ArchivedThreadsStore, nextOffset, isInitialLoad];
+  const obj4 = isInitialLoad;
   if (!loading) {
     loading = isInitialLoad;
   }
@@ -184,9 +662,14 @@ export const useArchivedThreads = function useArchivedThreads(channel, LATEST_AC
     loading = showResolvedFlags;
   }
   if (loading) {
-    loading = isInitialLoad.can(Permissions.READ_MESSAGE_HISTORY, channel);
+    loading = obj4.can(Permissions.READ_MESSAGE_HISTORY, isModeratorReportChannel);
   }
-  obj2.loading = loading;
-  obj2.loadMore = loadMore;
   return obj2;
-};
+});
+let result = size.fileFinishedImporting("modules/threads/ThreadBrowserHooks.tsx");
+
+export const useTrackThreadBrowserTab = tmp2;
+export const useActiveThreadIds = tmp3;
+export const useActiveThreads = tmp4;
+export const useActiveGuildThreads = tmp5;
+export const useArchivedThreads = tmp6;

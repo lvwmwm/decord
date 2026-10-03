@@ -1,142 +1,151 @@
 // Module ID: 10944
 // Function ID: 10945
 // Name: useRefocusOrLaunchActivity
-// Dependencies: [5, 19, 8690, 2043, 8691, 6770, 504, 8975, 8952, 9021, 10945, 2]
+// Dependencies: [5, 19, 8703, 2050, 8704, 6658, 504, 8994, 8986, 9049, 10945, 2]
 // Exports: default
 
 // Module 10944 (useRefocusOrLaunchActivity)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
-import FramesStore from "FramesStore" /* 8690 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import FramesStore from "FramesStore" /* 8703 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+import FramesConstants from "FramesConstants" /* 8704 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const FramesConstants = fn(8691);
-({ MAIN_SURFACE: closure_7, FrameLayoutModes: closure_8 } = FramesConstants);
-const size = fn(2);
+let c5;
+
+let metroImportAll;
+let metroImportDefault;
+({ MAIN_SURFACE: metroImportDefault, FrameLayoutModes: metroImportAll } = FramesConstants);
 let result = size.fileFinishedImporting("modules/activities/utils/useRefocusOrLaunchActivity.tsx");
 
 export default function useRefocusOrLaunchActivity(applicationId) {
   applicationId = applicationId.applicationId;
   let analyticsLocations = applicationId.analyticsLocations;
-  const runBeforeLaunchAttempt = applicationId.runBeforeLaunchAttempt;
+  let runBeforeLaunchAttempt = applicationId.runBeforeLaunchAttempt;
   const runAfterLaunchAttempt = applicationId.runAfterLaunchAttempt;
   let stateFromStores1;
-  const data = applicationId(runBeforeLaunchAttempt[5]).useApplication(applicationId).data;
   let obj = applicationId(runBeforeLaunchAttempt[5]);
-  const items = [stateFromStores1];
-  const stateFromStores = applicationId(runBeforeLaunchAttempt[6]).useStateFromStores(items, () => stateFromStores1.getCurrentEmbeddedActivity());
+  const data = obj.useApplication(applicationId).data;
   let obj2 = applicationId(runBeforeLaunchAttempt[6]);
+  const items = [stateFromStores1];
+  const stateFromStores = obj2.useStateFromStores(items, () => stateFromStores1.getCurrentEmbeddedActivity());
+  let obj3 = applicationId(runBeforeLaunchAttempt[6]);
   const items1 = [stateFromStores];
-  stateFromStores1 = applicationId(runBeforeLaunchAttempt[6]).useStateFromStores(items1, () => stateFromStores.getMainFrame());
-  const obj3 = applicationId(runBeforeLaunchAttempt[6]);
-  const canLaunchFrameResult = applicationId(runBeforeLaunchAttempt[7]).canLaunchFrame(data);
-  c7 = canLaunchFrameResult;
-  const items2 = [analyticsLocations, data, applicationId, canLaunchFrameResult, stateFromStores, stateFromStores1, runAfterLaunchAttempt, runBeforeLaunchAttempt];
+  stateFromStores1 = obj3.useStateFromStores(items1, () => stateFromStores.getMainFrame());
+  let obj4 = applicationId(runBeforeLaunchAttempt[7]);
+  let result = obj4.canLaunchContextlessFrame(data);
+  let c7 = result;
+  const items2 = [analyticsLocations, data, applicationId, result, stateFromStores, stateFromStores1, runAfterLaunchAttempt, runBeforeLaunchAttempt];
   return data.useCallback(runAfterLaunchAttempt(function*(arg0, value) {
+    let c2;
+    let closure_1;
+    let id1;
+    let obj7;
     if (c5 === 2) {
       c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp6 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
+      let c4;
       try {
         c5 = 2;
-        if (0 === dependencyMap) {
+        if (0 === runBeforeLaunchAttempt) {
           if (arg0 === 1) {
             c5 = 3;
             throw value;
           } else if (arg0 === 2) {
             c5 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
+            const obj3 = { value, done: true };
+            return obj3;
           } else {
             if (null != applicationId) {
               if (null != data) {
-                let tmp9 = null != stateFromStores;
-                if (tmp9) {
-                  tmp9 = tmp43.applicationId === tmp41;
-                }
+                const tmp6 = null != stateFromStores && tmp40.applicationId === tmp38;
                 if (null != stateFromStores1) {
-                  if (tmp10.applicationId === tmp41) {
-                    const obj5 = { frameId: tmp10.id, layoutMode: constants.FOCUSED };
-                    const result = tmp3(8952).updateFrameLayoutMode(obj5);
-                    const obj10 = tmp3(8952);
+                  if (stateFromStores1.applicationId === applicationId) {
+                    const obj4 = { frameId: stateFromStores1.id, layoutMode: constants.FOCUSED };
+                    const obj9 = tmp(runBeforeLaunchAttempt[8]);
+                    const result = obj9.updateFrameLayoutMode(obj4);
                   }
                 }
-                if (tmp9) {
-                  const _location = tmp43.location;
+                if (tmp6) {
+                  const _location = tmp40.location;
                   let guild_id = null;
+                  const tmp24 = tmp(runBeforeLaunchAttempt[9]);
                   if ("guild_id" in _location) {
                     guild_id = _location.guild_id;
                   }
-                  tmp3(9021)(guild_id, _location);
-                  const tmp26 = tmp3(9021);
+                  tmp24(guild_id, _location);
                 } else {
                   if (runBeforeLaunchAttempt != null) {
                     runBeforeLaunchAttempt();
                   }
                   c4 = 1;
-                  if (c7) {
-                    const obj7 = { applicationId: tmp41, surface, analyticsContext: null };
-                    const obj8 = { isStart: true, analyticsLocations };
-                    obj7.analyticsContext = obj8;
-                    dependencyMap = 2;
+                  const tmp9 = c7;
+                  if (tmp9) {
+                    const obj6 = { applicationId, surface, analyticsContext: obj7 };
+                    obj7 = { isStart: true, analyticsLocations };
+                    const obj5 = tmp(runBeforeLaunchAttempt[8]);
+                    runBeforeLaunchAttempt = 2;
                     c5 = 1;
-                    const obj9 = { value: tmp3(8952).launchFrame(obj7), done: false };
-                    return obj9;
+                    const obj8 = { value: obj5.launchFrame(obj6), done: false };
+                    return obj8;
                   } else {
                     let id;
-                    if (tmp42 != null) {
-                      const bot = tmp42.bot;
+                    if (data != null) {
+                      const bot = tmp39.bot;
                       if (bot != null) {
                         id = bot.id;
                       }
                     }
-                    if (null == id) {
+                    if (null != id) {
+                      const obj10 = { appId: applicationId, botId: id1, analyticsLocations };
+                      id1 = undefined;
+                      const launchActivityInBotDM = analyticsLocations(runBeforeLaunchAttempt[10]).launchActivityInBotDM;
+                      const tmp14 = analyticsLocations(runBeforeLaunchAttempt[10]);
+                      if (data != null) {
+                        const bot2 = tmp39.bot;
+                        if (bot2 != null) {
+                          id1 = bot2.id;
+                        }
+                      }
+                      if (analyticsLocations == null) {
+                        analyticsLocations = [];
+                      }
+                      runBeforeLaunchAttempt = 3;
+                      c5 = 1;
+                      const obj11 = { value: launchActivityInBotDM(obj10), done: false };
+                      return obj11;
+                    } else {
                       c4 = 0;
                     }
                   }
                 }
-                const obj11 = { appId: tmp41, botId: null, analyticsLocations: null };
-                let id1;
-                if (tmp42 != null) {
-                  const bot2 = tmp42.bot;
-                  if (bot2 != null) {
-                    id1 = bot2.id;
-                  }
-                }
-                obj11.botId = id1;
-                if (analyticsLocations == null) {
-                  analyticsLocations = [];
-                }
-                obj11.analyticsLocations = analyticsLocations;
-                dependencyMap = 3;
-                c5 = 1;
-                const obj12 = { value: analyticsLocations(10945).launchActivityInBotDM(obj11), done: false };
-                return obj12;
               }
             }
             c5 = 3;
+            return { value: "IconComponent", done: "IconComponent" };
           }
-        } else if (1 === tmp7) {
+        } else if (1 === runBeforeLaunchAttempt) {
           c4 = 0;
-        } else if (2 === tmp7) {
+        } else if (2 === runBeforeLaunchAttempt) {
           if (arg0 === 1) {
             c5 = 3;
             throw value;
           } else if (arg0 === 2) {
             c4 = 0;
             c5 = 3;
-            const obj13 = { value, done: true };
-            return obj13;
+            const obj12 = { value, done: true };
+            return obj12;
           }
         } else if (arg0 === 1) {
           c5 = 3;
@@ -150,13 +159,13 @@ export default function useRefocusOrLaunchActivity(applicationId) {
         if (closure_129_3 != null) {
           closure_129_3();
         }
-      } catch (tmp33) {
-        closure_3 = tmp33;
-        if (tmp4 === c4) {
-          c5 = tmp2;
-          throw tmp33;
+      } catch (tmp31) {
+        let closure_3 = tmp31;
+        if (0 === c4) {
+          c5 = 3;
+          throw tmp31;
         } else {
-          dependencyMap = tmp;
+          runBeforeLaunchAttempt = 1;
         }
       }
     }

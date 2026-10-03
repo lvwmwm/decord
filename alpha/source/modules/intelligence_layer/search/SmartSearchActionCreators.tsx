@@ -1,110 +1,125 @@
-// Module ID: 12068
-// Function ID: 12069
+// Module ID: 12003
+// Function ID: 12004
 // Name: SmartSearchActionCreators
-// Dependencies: [5, 1372, 12057, 12069, 1074, 12060, 12070, 12071, 573, 1271, 12059, 2]
+// Dependencies: [5, 1377, 11987, 12004, 1085, 11997, 12005, 12006, 584, 1282, 11989, 2]
 // Exports: fetchAnswer
 
-// Module 12068 (SmartSearchActionCreators)
-import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 12057 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserStore from "UserStore" /* 1372 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 12069 */;
+// Module 12003 (SmartSearchActionCreators)
+import Constants from "Constants" /* 1085 */;
+import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 11987 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import UserStore from "UserStore" /* 1377 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 12004 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-let closure_9 = async function _fetchAnswer(arg0, value) {
-  closure_2 = tmp3;
-  ({ searchContext: closure_129_0, searchQueryString: closure_129_1 } = closure_0);
-  await "flex";
-  if (1 === tmp7) {
-    if (arg0 === 1) {
-      c6 = 3;
-      throw value;
-    } else if (arg0 === 2) {
-      c6 = 3;
-      return { value, done: true };
-    } else {
-      const smartSearchQuery = closure_130_0(closure_130_2[5]).getSmartSearchQuery(closure_129_0, closure_129_1);
-      if (null != smartSearchQuery) {
-        if (obj17.isNlpSearchEnabled(smartSearchQuery.guildId, "fetch_answer")) {
-          const queryText = smartSearchQuery.queryText;
-          const guildId = smartSearchQuery.guildId;
-          const channelIds = smartSearchQuery.channelIds;
-          const requestKey = smartSearchQuery.requestKey;
-          if (0 !== queryText.length) {
-            if (!closure_130_6.hasSuggestions(guildId, channelIds)) {
-              const initialSuggestedSearches = closure_130_0(closure_130_2[7]).fetchInitialSuggestedSearches(guildId, channelIds);
-              closure_130_0(closure_130_2[7]);
-            }
-            if (!closure_130_5.hasAnswer(guildId, requestKey)) {
-              const currentUser = closure_130_4.getCurrentUser();
-              let isStaffResult;
-              if (currentUser != null) {
-                isStaffResult = currentUser.isStaff();
+let c5;
+
+let obj = function _fetchAnswer() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let c0;
+    let c1;
+    let channelIds;
+    let closure_1;
+    let closure_2;
+    let guildId;
+    let message_citations;
+    let obj9;
+    let queryText;
+    let requestKey;
+    let closure_0 = arg0;
+    if (1 === c5) {
+      if (arg0 === 1) {
+        let c6 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c6 = 3;
+        const obj7 = { value, done: true };
+        return obj7;
+      } else {
+        const obj15 = closure_130_0(closure_130_2[5]);
+        const tmp = obj15.getSmartSearchQuery(c0, c1);
+        if (null != tmp) {
+          const obj16 = closure_130_0(closure_130_2[6]);
+          if (obj16.isNlpSearchEnabled(tmp.guildId, "fetch_answer")) {
+            queryText = tmp.queryText;
+            guildId = tmp.guildId;
+            channelIds = tmp.channelIds;
+            requestKey = tmp.requestKey;
+            if (0 !== queryText.length) {
+              if (!closure_130_6.hasSuggestions(guildId, channelIds)) {
+                const obj4 = closure_130_0(closure_130_2[7]);
+                const initialSuggestedSearches = obj4.fetchInitialSuggestedSearches(guildId, channelIds);
               }
-              let str = "";
-              if (true === isStaffResult) {
-                str = closure_130_8;
+              if (!closure_130_5.hasAnswer(guildId, requestKey)) {
+                const currentUser = closure_130_4.getCurrentUser();
+                let isStaffResult;
+                if (currentUser != null) {
+                  isStaffResult = currentUser.isStaff();
+                }
+                let str = "";
+                if (true === isStaffResult) {
+                  str = closure_130_8;
+                }
+                const obj8 = { type: "SMART_SEARCH_FETCH_START", requestKey, guildId, queryText, channelIds };
+                const obj6 = closure_130_1(closure_130_2[8]);
+                obj6.dispatch(obj8);
+                let c4 = 1;
+                const HTTP = closure_130_0(closure_130_2[9]).HTTP;
+                const request = { url: closure_130_7.SMART_SEARCH(guildId), body: obj9, oldFormErrors: true, rejectWithError: true };
+                const post = HTTP.post;
+                obj9 = { query_text: queryText, channel_ids: channelIds, extra_params_json: str };
+                c5 = 3;
+                c6 = 1;
+                const obj10 = { value: post(request), done: false };
+                return obj10;
               }
-              closure_129_7 = str;
-              closure_130_1(closure_130_2[8]).dispatch({ type: "SMART_SEARCH_FETCH_START", requestKey, guildId, queryText, channelIds });
-              c4 = 1;
-              const HTTP = closure_130_0(closure_130_2[9]).HTTP;
-              const request = { url: closure_130_7.SMART_SEARCH(guildId), body: null, oldFormErrors: true, rejectWithError: true };
-              request.body = { query_text: queryText, channel_ids: channelIds, extra_params_json: closure_129_7 };
-              c5 = 3;
-              c6 = 1;
-              return { value: HTTP.post(request), done: false };
             }
           }
         }
-        obj17 = closure_130_0(closure_130_2[6]);
       }
+    } else if (2 === c5) {
+      let ERROR;
+      c4 = 0;
+      let status;
+      if (status != null) {
+        status = status.status;
+      }
+      if (404 === status) {
+        ERROR = closure_130_0(closure_130_2[10]).SmartSearchStatus.EMPTY;
+      } else {
+        ERROR = closure_130_0(closure_130_2[10]).SmartSearchStatus.ERROR;
+      }
+      const obj11 = { type: "SMART_SEARCH_FETCH_FAILURE", requestKey, guildId, status: ERROR, queryText, channelIds };
+      const obj2 = closure_130_1(closure_130_2[8]);
+      obj2.dispatch(obj11);
+    } else if (arg0 === 1) {
       c6 = 3;
-      closure_130_0(closure_130_2[5]);
-    }
-  } else if (2 === tmp7) {
-    c4 = 0;
-    let status;
-    if (tmp69 != null) {
-      status = tmp69.status;
-    }
-    closure_129_9 = status;
-    if (404 === closure_129_9) {
-      let ERROR = closure_130_0(closure_130_2[10]).SmartSearchStatus.EMPTY;
+      throw value;
+    } else if (arg0 === 2) {
+      c4 = 0;
+      c6 = 3;
+      obj = { value, done: true };
+      return obj;
     } else {
-      ERROR = closure_130_0(closure_130_2[10]).SmartSearchStatus.ERROR;
+      closure_8 = value;
+      const obj12 = { type: "SMART_SEARCH_FETCH_SUCCESS", requestKey, guildId, response: closure_8.body, messages: message_citations.map((message) => message.message), channelIds };
+      message_citations = closure_8.body.message_citations;
+      const dispatch = closure_130_1(closure_130_2[8]).dispatch;
+      const tmp77 = closure_130_1(closure_130_2[8]);
+      dispatch(obj12);
+      c4 = 0;
     }
-    closure_129_10 = ERROR;
-    closure_130_1(closure_130_2[8]).dispatch({ type: "SMART_SEARCH_FETCH_FAILURE", requestKey, guildId, status: closure_129_10, queryText, channelIds });
-    closure_130_1(closure_130_2[8]);
-  } else if (arg0 === 1) {
-    c6 = 3;
-    throw value;
-  } else if (arg0 !== 2) {
-    closure_129_8 = value;
-    const obj12 = { type: "SMART_SEARCH_FETCH_SUCCESS", requestKey, guildId, response: closure_129_8.body, messages: null, channelIds: null };
-    const message_citations = closure_129_8.body.message_citations;
-    obj12.messages = message_citations.map((message) => message.message);
-    obj12.channelIds = channelIds;
-    closure_130_1(closure_130_2[8]).dispatch(obj12);
-    c4 = 0;
-    closure_130_1(closure_130_2[8]);
-  }
-  return value;
+    await "IconComponent";
+    ({ searchContext: c0, searchQueryString: c1 } = closure_0);
+    return "Reflect";
+  });
+  return obj(...arguments);
 };
 SmartSearchResultsStoreDefault;
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = Constants.Endpoints;
 let closure_8 = JSON.stringify({ arbiter: { enabled: false } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/SmartSearchActionCreators.tsx");
 
 export const fetchAnswer = function fetchAnswer() {
-  const self = this;
-  const apply = closure_9.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };

@@ -1,29 +1,23 @@
 // Module ID: 503
 // Function ID: 504
 // Name: BrowserHandoffStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 584, 2]
 
 // Module 503 (BrowserHandoffStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import size from "module_2" /* 2 */;
 
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class BrowserHandoffStore extends Store {
-}
-const prototype = BrowserHandoffStore.prototype;
-prototype["initialize"] = function initialize() {
+  initialize() {
 
-};
-prototype["isHandoffAvailable"] = function isHandoffAvailable() {
-  return false;
-};
-Object.defineProperty(prototype, "user", {
-  get: function user() {
-    return null;
-  },
-  set: undefined
-});
-Object.defineProperty(prototype, "key", {
+  }
+  isHandoffAvailable() {
+    return false;
+  }
+}
+Object.defineProperty(BrowserHandoffStore.prototype, "key", {
   get: function key() {
     return null;
   },
@@ -31,7 +25,6 @@ Object.defineProperty(prototype, "key", {
 });
 BrowserHandoffStore.displayName = "BrowserHandoffStore";
 const browserHandoffStore = new BrowserHandoffStore(DispatcherDefault, {});
-const size = fn(2);
 const result = size.fileFinishedImporting("stores/BrowserHandoffStore.native.tsx");
 
 export default browserHandoffStore;

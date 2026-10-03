@@ -1,151 +1,427 @@
-// Module ID: 11166
-// Function ID: 11167
+// Module ID: 9853
+// Function ID: 9854
 // Name: ForumPostActionBar
-// Dependencies: [32, 19, 17, 4499, 4500, 2044, 1074, 21, 4845, 576, 504, 6909, 1479, 11031, 7471, 11167, 5621, 1115, 4792, 4841, 9260, 4784, 7064, 11, 4772, 11168, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 4510, 4511, 2051, 1085, 21, 4890, 587, 558, 576, 504, 6807, 1484, 9854, 6965, 11, 4787, 7507, 10027, 5909, 1126, 4577, 4886, 9266, 4839, 11072, 2]
 
-// Module 11166 (ForumPostActionBar)
+// Module 9853 (ForumPostActionBar)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import nativeDefault from "native" /* 576 */;
-import Client from "Client" /* 4772 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7064 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 11031 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import LurkingStore from "LurkingStore" /* 4499 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4500 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import flow_Client from "flow/Client" /* 4787 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 6965 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9854 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import LurkingStore from "LurkingStore" /* 4510 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4511 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const AnalyticsSections = fn(1074).AnalyticsSections;
-const jsxProd = fn(21);
-({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4845);
-let obj2 = { actionBarContainer: { overflow: "hidden", paddingHorizontal: 12, paddingVertical: 8, display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, marginBottom: -1 }, actionRow: { display: "flex", flexDirection: "row", alignItems: "center", flex: 1 }, reactionRow: { display: "flex", flexDirection: "row", alignItems: "center", flex: 1 }, actionButton: null, actionButtonsContainer: null, lastActionButton: null, buttonText: null };
-let obj3 = { overflow: "hidden", paddingHorizontal: 12, paddingVertical: 8, display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, marginBottom: -1 };
-obj2.actionButton = { display: "flex", flexDirection: "row", alignItems: "center", paddingHorizontal: 8, height: 28, marginRight: 4, borderRadius: nativeDefault.radii.xs, borderWidth: 1, backgroundColor: nativeDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, borderColor: nativeDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT };
-obj2.actionButtonsContainer = { justifyContent: "flex-end" };
-obj2.lastActionButton = { marginRight: 0 };
-obj2.buttonText = { marginLeft: 8 };
-let closure_12 = createStyles.createStyles(obj2);
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/forums/native/ForumPostActionBar.tsx");
+let channel, dependencyMap;
 
-export default function ForumPostActionBar(channel) {
+let c10;
+let obj2;
+let obj3;
+let unpackModuleId;
+let react = react_mod;
+const View = react_native.View;
+const AnalyticsSections = Constants.AnalyticsSections;
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { actionBarContainer: obj2, actionRow: { display: "flex", flexDirection: "row", alignItems: "center", flex: 1 }, reactionRow: { display: "flex", flexDirection: "row", alignItems: "center", flex: 1 }, actionButton: obj3, actionButtonsContainer: { justifyContent: "flex-end" }, lastActionButton: { marginRight: 0 }, buttonText: { marginLeft: 8 } };
+obj2 = { overflow: "hidden", paddingHorizontal: 12, paddingVertical: 8, display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, marginBottom: -1 };
+createStyles = createStyles.createStyles;
+obj3 = { display: "flex", flexDirection: "row", alignItems: "center", paddingHorizontal: 8, height: 28, marginRight: 4, borderRadius: nativeDefault.radii.xs, borderWidth: 1, backgroundColor: nativeDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, borderColor: nativeDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT };
+let closure_12 = createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let closure_2;
+  let first;
+  let obj3;
+  let tmp10;
+  let tmp14;
+  let tmp15;
+  let tmp18;
+  let tmp7;
+  let tmp9;
+  let tmp = channel;
+  let obj = channel(576);
+  const cResult = obj.c(61);
   channel = channel.channel;
-  noop = undefined;
-  const tmp = closure_12();
-  const items = [ChannelStore];
-  const stateFromStores = channel(504).useStateFromStores(items, () => ChannelStore.getChannel(channel.parent_id));
-  let obj = channel(504);
-  const firstMessage = channel(6909).useFirstForumPostMessage(channel).firstMessage;
-  let obj2 = channel(6909);
-  const items1 = [JoinedThreadsStore];
-  const stateFromStores1 = channel(504).useStateFromStores(items1, () => JoinedThreadsStore.hasJoined(channel.id));
-  dependencyMap = channel.getGuildId();
-  const obj3 = channel(504);
-  const items2 = [LurkingStore];
-  const stateFromStores2 = channel(504).useStateFromStores(items2, () => {
-    let isLurkingResult = null != closure_2;
-    if (isLurkingResult) {
-      isLurkingResult = LurkingStore.isLurking(tmp);
+  const tmp4 = closure_12();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channel.parent_id) {
+    class B {
+      constructor() {
+        return ChannelStore.getChannel(channel.parent_id);
+      }
     }
+    cResult[1] = channel.parent_id;
+    cResult[2] = B;
+    tmp7 = B;
+  } else {
+    class B {
+      constructor() {
+        return ChannelStore.getChannel(channel.parent_id);
+      }
+    }
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
+  const tmpResult5 = tmp(6807);
+  const firstMessage = tmpResult5.useFirstForumPostMessage(channel).firstMessage;
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class B {
+      constructor() {
+        return ChannelStore.getChannel(channel.parent_id);
+      }
+    }
+    const items1 = [JoinedThreadsStore];
+    cResult[3] = items1;
+    tmp9 = items1;
+  } else {
+    class B {
+      constructor() {
+        return ChannelStore.getChannel(channel.parent_id);
+      }
+    }
+  }
+  if (cResult[4] !== channel.id) {
+    class F {
+      constructor() {
+        return JoinedThreadsStore.hasJoined(channel.id);
+      }
+    }
+    cResult[4] = channel.id;
+    cResult[5] = F;
+    tmp10 = F;
+  } else {
+    class F {
+      constructor() {
+        return JoinedThreadsStore.hasJoined(channel.id);
+      }
+    }
+  }
+  const tmpResult6 = tmp(504);
+  const stateFromStores1 = tmpResult6.useStateFromStores(tmp9, tmp10);
+  if (cResult[6] !== channel) {
+    class F {
+      constructor() {
+        return JoinedThreadsStore.hasJoined(channel.id);
+      }
+    }
+    cResult[6] = channel;
+    cResult[7] = tmp13;
+  } else {
+    class F {
+      constructor() {
+        return JoinedThreadsStore.hasJoined(channel.id);
+      }
+    }
+  }
+  dependencyMap = tmp12;
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class F {
+      constructor() {
+        return JoinedThreadsStore.hasJoined(channel.id);
+      }
+    }
+    const items2 = [LurkingStore];
+    cResult[8] = items2;
+    tmp14 = items2;
+  } else {
+    class F {
+      constructor() {
+        return JoinedThreadsStore.hasJoined(channel.id);
+      }
+    }
+  }
+  if (cResult[9] !== tmp12) {
+    class P {
+      constructor() {
+        const isLurkingResult = null != dependencyMap && LurkingStore.isLurking(tmp);
+        return isLurkingResult;
+      }
+    }
+    cResult[9] = tmp12;
+    cResult[10] = P;
+    tmp15 = P;
+  } else {
+    class P {
+      constructor() {
+        const isLurkingResult = null != dependencyMap && LurkingStore.isLurking(tmp);
+        return isLurkingResult;
+      }
+    }
+  }
+  const tmpResult7 = tmp(504);
+  const stateFromStores2 = tmpResult7.useStateFromStores(tmp14, tmp15);
+  const width = stateFromStores1(1484)().width;
+  const tmp17 = width(react.useState(0), 2);
+  [tmp18, react] = tmp17;
+  if (cResult[11] !== width) {
+    class S {
+      constructor(nativeEvent) {
+        react(width - nativeEvent.nativeEvent.layout.width - 40);
+      }
+    }
+    cResult[11] = width;
+    cResult[12] = S;
+  } else {
+    class S {
+      constructor(nativeEvent) {
+        react(width - nativeEvent.nativeEvent.layout.width - 40);
+      }
+    }
+  }
+  if (cResult[13] === channel) {
+    class S {
+      constructor(nativeEvent) {
+        react(width - nativeEvent.nativeEvent.layout.width - 40);
+      }
+    }
+    if (cResult[16] !== channel) {
+      class S {
+        constructor(nativeEvent) {
+          react(width - nativeEvent.nativeEvent.layout.width - 40);
+        }
+      }
+      cResult[16] = channel;
+      cResult[17] = tmp21;
+    } else {
+      class S {
+        constructor(nativeEvent) {
+          react(width - nativeEvent.nativeEvent.layout.width - 40);
+        }
+      }
+    }
+    if (cResult[18] !== channel.id) {
+      class U {
+        constructor() {
+          let obj2;
+          const obj = { channelId: channel.id, messageId: obj2.castChannelIdAsMessageId(channel.id), flash: true, jumpType: flow_Client.JumpType.ANIMATED };
+          const jumpToMessage = MessageActionCreatorsDefault.jumpToMessage;
+          MessageActionCreatorsDefault;
+          obj2 = SnowflakeUtilsDefault;
+          jumpToMessage(obj);
+        }
+      }
+      cResult[18] = channel.id;
+      cResult[19] = U;
+    } else {
+      class U {
+        constructor() {
+          let obj2;
+          const obj = { channelId: channel.id, messageId: obj2.castChannelIdAsMessageId(channel.id), flash: true, jumpType: flow_Client.JumpType.ANIMATED };
+          const jumpToMessage = MessageActionCreatorsDefault.jumpToMessage;
+          MessageActionCreatorsDefault;
+          obj2 = SnowflakeUtilsDefault;
+          jumpToMessage(obj);
+        }
+      }
+    }
+    const tmpResult8 = tmp(7507);
+    const gradientTop = tmpResult8.useGradientTop();
+    if (cResult[20] === gradientTop) {
+      class U {
+        constructor() {
+          let obj2;
+          const obj = { channelId: channel.id, messageId: obj2.castChannelIdAsMessageId(channel.id), flash: true, jumpType: flow_Client.JumpType.ANIMATED };
+          const jumpToMessage = MessageActionCreatorsDefault.jumpToMessage;
+          MessageActionCreatorsDefault;
+          obj2 = SnowflakeUtilsDefault;
+          jumpToMessage(obj);
+        }
+      }
+      if (cResult[23] === channel) {
+        class U {
+          constructor() {
+            let obj2;
+            const obj = { channelId: channel.id, messageId: obj2.castChannelIdAsMessageId(channel.id), flash: true, jumpType: flow_Client.JumpType.ANIMATED };
+            const jumpToMessage = MessageActionCreatorsDefault.jumpToMessage;
+            MessageActionCreatorsDefault;
+            obj2 = SnowflakeUtilsDefault;
+            jumpToMessage(obj);
+          }
+        }
+      }
+      let tmp27 = null != firstMessage;
+      if (tmp27) {
+        class U {
+          constructor() {
+            let obj2;
+            const obj = { channelId: channel.id, messageId: obj2.castChannelIdAsMessageId(channel.id), flash: true, jumpType: flow_Client.JumpType.ANIMATED };
+            const jumpToMessage = MessageActionCreatorsDefault.jumpToMessage;
+            MessageActionCreatorsDefault;
+            obj2 = SnowflakeUtilsDefault;
+            jumpToMessage(obj);
+          }
+        }
+        let obj2 = { style: tmp4.reactionRow, children: closure_10(tmp(10027).ForumPostActionBarReactions, obj3) };
+        obj3 = { thread: channel, parentChannel: stateFromStores, firstMessage, containerWidth: tmp18 };
+        tmp27 = closure_10(View, obj2);
+      }
+      cResult[23] = channel;
+      cResult[24] = tmp18;
+      cResult[25] = firstMessage;
+      cResult[26] = stateFromStores;
+      cResult[27] = tmp4.reactionRow;
+      cResult[28] = tmp27;
+    }
+    const items3 = [tmp4.actionBarContainer, gradientTop];
+    cResult[20] = gradientTop;
+    cResult[21] = tmp4.actionBarContainer;
+    cResult[22] = items3;
+  }
+  const fn = function j() {
+    const obj = messages_MessagesUtils;
+    const result = obj.handleToggleFollowForumPost(channel, stateFromStores1);
+  };
+  cResult[13] = channel;
+  cResult[14] = stateFromStores1;
+  cResult[15] = fn;
+}) : ((channel) => {
+  let closure_2;
+  let closure_4;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let items10;
+  let items11;
+  let items4;
+  let items5;
+  let items6;
+  let items8;
+  let obj8;
+  channel = channel.channel;
+  react = undefined;
+  let tmp = closure_12();
+  let obj = channel(504);
+  const items = [ChannelStore];
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channel.parent_id));
+  let obj2 = channel(6807);
+  const firstMessage = obj2.useFirstForumPostMessage(channel).firstMessage;
+  const items1 = [JoinedThreadsStore];
+  const obj3 = channel(504);
+  const stateFromStores1 = obj3.useStateFromStores(items1, () => JoinedThreadsStore.hasJoined(channel.id));
+  dependencyMap = channel.getGuildId();
+  const items2 = [LurkingStore];
+  const obj4 = channel(504);
+  const stateFromStores2 = obj4.useStateFromStores(items2, () => {
+    const isLurkingResult = null != closure_2 && LurkingStore.isLurking(tmp);
     return isLurkingResult;
   });
-  const width = stateFromStores1(1479)().width;
-  const tmp7 = width(noop.useState(0), 2);
-  noop = tmp7[1];
+  const width = stateFromStores1(1484)().width;
+  const tmp7 = width(react.useState(0), 2);
+  react = tmp7[1];
   const items3 = [width];
-  const callback = noop.useCallback((nativeEvent) => {
+  const first = tmp7[0];
+  const callback = react.useCallback((nativeEvent) => {
     closure_4(width - nativeEvent.nativeEvent.layout.width - 40);
   }, items3);
-  const obj4 = channel(504);
-  const obj6 = { style: null, children: null };
-  const items4 = [tmp.actionBarContainer, channel(7471).useGradientTop()];
-  obj6.style = items4;
-  let tmp11 = null != firstMessage;
-  if (tmp11) {
-    const obj7 = { style: tmp.reactionRow, children: null };
-    const obj8 = { thread: channel, parentChannel: stateFromStores, firstMessage, containerWidth: tmp7[0] };
-    obj7.children = closure_10(tmp2(11167).ForumPostActionBarReactions, obj8);
-    tmp11 = closure_10(tmp10, obj7);
+  const obj6 = { style: items4, children: items5 };
+  items4 = [tmp.actionBarContainer, ];
+  const obj5 = channel(7507);
+  items4[1] = obj5.useGradientTop();
+  let tmp12 = null != firstMessage;
+  if (tmp12) {
+    const obj7 = { style: tmp.reactionRow, children: closure_10(channel(10027).ForumPostActionBarReactions, obj8) };
+    obj8 = { thread: channel, parentChannel: stateFromStores, firstMessage, containerWidth: first };
+    tmp12 = closure_10(tmp11, obj7);
   }
-  const items5 = [tmp11, ];
-  const obj9 = { style: null, onLayout: callback, children: null };
-  const items6 = [, ];
+  items5 = [tmp12, ];
+  const obj9 = { style: items6, onLayout: callback, children: items10 };
+  items6 = [, ];
   ({ actionRow: arr7[0], actionButtonsContainer: arr7[1] } = tmp);
-  obj9.style = items6;
-  if (stateFromStores2) {
-    const items7 = [tmp13, , ];
+  let tmp10Result = !stateFromStores2;
+  if (tmp10Result) {
+    let tmp16;
+    function handleFollow() {
+      const obj = messages_MessagesUtils;
+      const result = obj.handleToggleFollowForumPost(channel, stateFromStores1);
+    }
     const obj10 = { accessible: true, accessibilityLabel: null, style: null, onPress: null, children: null };
-    const intl4 = tmp2(1115).intl;
-    obj10.accessibilityLabel = intl4.string(tmp2(1115).t.WqhZss);
-    obj10.style = tmp.actionButton;
-    obj10.onPress = function onPress() {
+    const PressableOpacity = tmp2(5909).PressableOpacity;
+    const intl = tmp2(1126).intl;
+    const string = intl.string;
+    const t = tmp2(1126).t;
+    if (stateFromStores1) {
+      obj10.accessibilityLabel = string(t.G3ooHD);
+      obj10.style = tmp.actionButton;
+      obj10.onPress = handleFollow;
+      const items7 = [closure_10(channel(4577).CheckmarkLargeIcon, { size: "xs", color: "text-brand" }), ];
+      const obj11 = { style: items8, variant: "text-sm/semibold", color: "text-brand", children: intl3.string(channel(1126).t["OtF+lC"]) };
+      items8 = [tmp.buttonText];
+      const Text2 = tmp2(4886).Text;
+      intl3 = tmp2(1126).intl;
+      items7[1] = closure_10(Text2, obj11);
+      obj10.children = items7;
+      tmp16 = obj10;
+    } else {
+      obj10.accessibilityLabel = string(t["DjZ+6E"]);
+      obj10.style = tmp.actionButton;
+      obj10.onPress = handleFollow;
+      const items9 = [closure_10(channel(9266).BellIcon, { size: "xs" }), ];
+      const obj12 = { style: tmp.buttonText, variant: "text-sm/semibold", color: "interactive-text-default", children: intl2.string(channel(1126).t["0rQinA"]) };
+      const Text = tmp2(4886).Text;
+      intl2 = tmp2(1126).intl;
+      items9[1] = closure_10(Text, obj12);
+      obj10.children = items9;
+      tmp16 = obj10;
+    }
+    tmp10Result = tmp10(PressableOpacity, tmp16);
+  }
+  items10 = [tmp10Result, , ];
+  const obj13 = {
+    accessible: true,
+    accessibilityLabel: intl4.string(channel(1126).t.WqhZss),
+    style: tmp.actionButton,
+    onPress() {
       const guildId = channel.getGuildId();
+      const tmp = channel;
       if (null != guildId) {
         const obj2 = { section: AnalyticsSections.CHANNEL_HEADER };
-        const result = messages_MessagesUtils.handleCopyLinkForumPost(guildId, channel.id, obj2);
+        const obj = messages_MessagesUtils;
+        const result = obj.handleCopyLinkForumPost(guildId, tmp.id, obj2);
       }
-    };
-    obj10.children = closure_10(tmp2(4784).LinkIcon, { size: "xs" });
-    items7[1] = closure_10(tmp2(5621).PressableOpacity, obj10);
-    const obj11 = { accessible: true, accessibilityLabel: null, style: null, onPress: null, children: null };
-    const intl5 = tmp2(1115).intl;
-    obj11.accessibilityLabel = intl5.string(tmp2(1115).t.nFP4oa);
-    const items8 = [, ];
-    ({ actionButton: arr12[0], lastActionButton: arr12[1] } = tmp);
-    obj11.style = items8;
-    obj11.onPress = function onPress() {
-      const obj2 = { channelId: channel.id, messageId: null, flash: true, jumpType: null };
-      const obj = MessageActionCreatorsDefault;
-      obj2.messageId = SnowflakeUtilsDefault.castChannelIdAsMessageId(channel.id);
-      obj2.jumpType = Client.JumpType.ANIMATED;
-      obj.jumpToMessage(obj2);
-    };
-    obj11.children = closure_10(tmp2(11168).ArrowLargeUpIcon, { size: "xs" });
-    items7[2] = closure_10(tmp2(5621).PressableOpacity, obj11);
-    obj9.children = items7;
-    items5[1] = tmp9(tmp10, obj9);
-    obj6.children = items5;
-    return tmp9(tmp10, obj6);
-  } else {
-    let items9 = function handleFollow() {
-      const result = messages_MessagesUtils.handleToggleFollowForumPost(channel, stateFromStores1);
-    };
-    const obj12 = { accessible: true, accessibilityLabel: null, style: null, onPress: null, children: null };
-    let intl = tmp2(1115).intl;
-    let Text = intl.string;
-    let t = tmp2(1115).t;
-    if (stateFromStores1) {
-      obj12.accessibilityLabel = Text(t.G3ooHD);
-      obj12.style = tmp.actionButton;
-      obj12.onPress = items9;
-      intl = closure_10;
-      items9 = [closure_10(tmp2(4792).CheckmarkLargeIcon, { size: "xs", color: "text-brand" }), ];
-      Text = tmp2(4841).Text;
-      const obj13 = { style: null, variant: "text-sm/semibold", color: "text-brand", children: null };
-      const items10 = [tmp.buttonText];
-      obj13.style = items10;
-      const intl3 = tmp2(1115).intl;
-      obj13.children = intl3.string(tmp2(1115).t["OtF+lC"]);
-      t = closure_10(Text, obj13);
-      items9[1] = t;
-      obj12.children = items9;
-      let tmp15 = obj12;
-    } else {
-      obj12.accessibilityLabel = Text(t["DjZ+6E"]);
-      obj12.style = tmp.actionButton;
-      obj12.onPress = items9;
-      const items11 = [closure_10(tmp2(9260).BellIcon, { size: "xs" }), ];
-      const obj14 = { style: tmp.buttonText, variant: "text-sm/semibold", color: "interactive-text-default", children: null };
-      const intl2 = tmp2(1115).intl;
-      obj14.children = intl2.string(tmp2(1115).t["0rQinA"]);
-      items11[1] = closure_10(tmp2(4841).Text, obj14);
-      obj12.children = items11;
-      tmp15 = obj12;
-    }
-    tmp9(tmp2(5621).PressableOpacity, tmp15);
-  }
-};
+    },
+    children: closure_10(channel(4839).LinkIcon, { size: "xs" })
+  };
+  const PressableOpacity2 = tmp2(5909).PressableOpacity;
+  intl4 = tmp2(1126).intl;
+  items10[1] = closure_10(PressableOpacity2, obj13);
+  const obj14 = {
+    accessible: true,
+    accessibilityLabel: intl5.string(channel(1126).t.nFP4oa),
+    style: items11,
+    onPress() {
+      let obj2;
+      const obj = { channelId: channel.id, messageId: obj2.castChannelIdAsMessageId(channel.id), flash: true, jumpType: flow_Client.JumpType.ANIMATED };
+      const jumpToMessage = MessageActionCreatorsDefault.jumpToMessage;
+      MessageActionCreatorsDefault;
+      obj2 = SnowflakeUtilsDefault;
+      jumpToMessage(obj);
+    },
+    children: closure_10(channel(11072).ArrowLargeUpIcon, { size: "xs" })
+  };
+  const PressableOpacity3 = tmp2(5909).PressableOpacity;
+  intl5 = tmp2(1126).intl;
+  items11 = [, ];
+  ({ actionButton: arr12[0], lastActionButton: arr12[1] } = tmp);
+  items10[2] = closure_10(PressableOpacity3, obj14);
+  items5[1] = closure_11(View, obj9);
+  return closure_11(View, obj6);
+});
+let result = size.fileFinishedImporting("modules/forums/native/ForumPostActionBar.tsx");
+
+export default tmp4;

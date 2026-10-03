@@ -1,22 +1,24 @@
-// Module ID: 5470
-// Function ID: 5471
+// Module ID: 5600
+// Function ID: 5601
 // Name: ButtonConstants
-// Dependencies: [5467, 576, 2]
+// Dependencies: [5596, 587, 2]
 // Exports: getButtonBorderRadius, getButtonDefaultTextVariant, getButtonPadding
 
-// Module 5470 (ButtonConstants)
-import nativeDefault from "native" /* 576 */;
-import Icon_mod from "Icon" /* 5467 */;
+// Module 5600 (ButtonConstants)
+import nativeDefault from "native" /* 587 */;
+import Icon_mod from "Icon" /* 5596 */;
 import size from "module_2" /* 2 */;
 
+let Icon;
 const SMALL = Icon.IconSizes.SMALL;
 const SMALL_20 = Icon.IconSizes.SMALL_20;
 const MEDIUM = Icon.IconSizes.MEDIUM;
-let Icon = Icon_mod;
+const MEDIUM2 = Icon.IconSizes.MEDIUM;
+Icon = Icon_mod;
 const diff = 32 - Icon.getIconSize(SMALL);
-let Icon = Icon_mod;
+Icon = Icon_mod;
 const diff1 = 40 - Icon.getIconSize(SMALL_20);
-let Icon = Icon_mod;
+Icon = Icon_mod;
 const diff2 = 48 - Icon.getIconSize(MEDIUM);
 const result = size.fileFinishedImporting("design/components/Button/native/ButtonConstants.native.tsx");
 
@@ -30,7 +32,7 @@ export const DEFAULT_BUTTON_SIZE = "md";
 export const SMALL_BUTTON_ICON_SIZE = SMALL;
 export const MEDIUM_BUTTON_ICON_SIZE = SMALL_20;
 export const LARGE_BUTTON_ICON_SIZE = MEDIUM;
-export const FAB_BUTTON_ICON_SIZE = Icon.IconSizes.MEDIUM;
+export const FAB_BUTTON_ICON_SIZE = MEDIUM2;
 export const SMALL_BUTTON_HORIZONTAL_PADDING = 12;
 export const MEDIUM_BUTTON_HORIZONTAL_PADDING = 20;
 export const LARGE_BUTTON_HORIZONTAL_PADDING = 24;
@@ -46,11 +48,13 @@ export function getButtonDefaultTextVariant(size) {
   return str;
 }
 export const getButtonPadding = function getButtonPadding(FAB_BUTTON_SIZE, FAB_BUTTON_ICON_SIZE) {
-  return (FAB_BUTTON_SIZE - Icon.getIconSize(FAB_BUTTON_ICON_SIZE) - 2) / 2;
+  const obj = Icon;
+  return (FAB_BUTTON_SIZE - obj.getIconSize(FAB_BUTTON_ICON_SIZE) - 2) / 2;
 };
 export const getButtonBorderRadius = function getButtonBorderRadius(arg0) {
+  let BORDER_RADIUS;
   if ("lg" === arg0) {
-    let BORDER_RADIUS = nativeDefault.modules.button.BORDER_RADIUS_LG;
+    BORDER_RADIUS = nativeDefault.modules.button.BORDER_RADIUS_LG;
   } else {
     BORDER_RADIUS = nativeDefault.modules.button.BORDER_RADIUS;
   }

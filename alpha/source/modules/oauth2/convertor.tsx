@@ -1,11 +1,11 @@
-// Module ID: 8715
-// Function ID: 8716
+// Module ID: 8728
+// Function ID: 8729
 // Name: convertor
-// Dependencies: [1086, 2]
+// Dependencies: [1097, 2]
 // Exports: convertOAuth2Authorization
 
-// Module 8715 (convertor)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
+// Module 8728 (convertor)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/oauth2/convertor.tsx");
@@ -13,16 +13,17 @@ const result = size.fileFinishedImporting("modules/oauth2/convertor.tsx");
 export const convertOAuth2Authorization = function convertOAuth2Authorization(guilds) {
   let tmp = guilds;
   if (null != guilds.guilds) {
-    let obj = {};
+    let obj = {
+      guilds: guilds.map((permissions) => {
+          let deserializer;
+          const obj = { permissions: deserializer.deserialize(permissions.permissions) };
+          const merged = Object.assign(permissions);
+          deserializer = BigFlagUtilsAll;
+          return obj;
+        })
+    };
     let merged = Object.assign(guilds);
     guilds = guilds.guilds;
-    obj.guilds = guilds.map((permissions) => {
-      const obj = {};
-      const merged = Object.assign(permissions);
-      const deserializer = BigFlagUtilsAll;
-      obj.permissions = deserializer.deserialize(permissions.permissions);
-      return obj;
-    });
     tmp = obj;
   }
   return tmp;

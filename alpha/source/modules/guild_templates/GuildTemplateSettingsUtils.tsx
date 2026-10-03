@@ -1,84 +1,331 @@
-// Module ID: 17711
-// Function ID: 17712
+// Module ID: 17797
+// Function ID: 17798
 // Name: GuildTemplateSettingsUtils
-// Dependencies: [5, 32, 19, 2044, 4498, 7065, 1074, 504, 6929, 5266, 2]
-// Exports: isGuildTemplateNameValid, useCanViewAllChannels, useGuildTemplate
+// Dependencies: [5, 32, 19, 2051, 4509, 6966, 1085, 558, 576, 504, 6827, 5312, 2]
+// Exports: isGuildTemplateNameValid
 
-// Module 17711 (GuildTemplateSettingsUtils)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import PermissionStore from "PermissionStore" /* 4498 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7065 */;
+// Module 17797 (GuildTemplateSettingsUtils)
+import Constants from "Constants" /* 1085 */;
+import GuildTemplateActionCreatorsDefault from "GuildTemplateActionCreators" /* 6827 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 6966 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, c5, c6, closure_3;
 
-const require = fn;
-const Permissions = fn(1074).Permissions;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_templates/GuildTemplateSettingsUtils.tsx");
-
-export const isGuildTemplateNameValid = function isGuildTemplateNameValid(str) {
-  let tmp = null != str;
-  if (tmp) {
-    tmp = str.trim().length >= 2;
+const Permissions = Constants.Permissions;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp7;
+  let tmp8;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(4);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore, PermissionStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
   }
-  return tmp;
-};
-export const useCanViewAllChannels = function useCanViewAllChannels(guildId) {
-  _require = guildId;
+  if (cResult[1] !== arg0) {
+    const fn = function l() {
+      const values = Object.values(ChannelStore.getMutableGuildChannelsForGuild(closure_0));
+      return values.every((item) => closure_1_7.can(constants.VIEW_CHANNEL, item));
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp8 = items1;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp7, tmp8);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
   const items = [ChannelStore, PermissionStore];
-  const items1 = [guildId];
-  return require("initialize").useStateFromStores(items, () => {
+  const items1 = [arg0];
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
     const values = Object.values(ChannelStore.getMutableGuildChannelsForGuild(closure_0));
     return values.every((item) => closure_1_7.can(constants.VIEW_CHANNEL, item));
   }, items1);
-};
-export const useGuildTemplate = function useGuildTemplate(guildId) {
-  _require = guildId;
-  [tmp2, importDefault] = noop.useState(null);
-  const loadError = _slicedToArray(noop.useState(null), 2);
-  dependencyMap = loadError[1];
-  const items = [guildId];
-  const effect = noop.useEffect(() => {
-    closure_0 = async function _fetchGuildTemplate(arg0, arg1) {
-      closure_129_0 = closure_0;
-      tmp3(null);
-      await closure_2_1(6929).loadTemplatesForGuild(closure_0);
-      if (1 === tmp7) {
-        c4 = 0;
-        closure_129_1 = closure_3;
-        const aPIError = new guildId(5266).APIError(closure_129_1);
-        tmp3(aPIError);
-        closure_1(closure_129_0);
-        c6 = 3;
-      } else if (arg0 === 1) {
-        c6 = 3;
-        throw arg1;
-      } else if (arg0 !== 2) {
-        c4 = 0;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp12;
+  let tmp14;
+  let tmp15;
+  let tmp5;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  _require = arg0;
+  const tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(11);
+  let obj2 = react;
+  const tmp4 = _slicedToArray(react.useState(null), 2);
+  [tmp5, importDefault] = tmp4;
+  [tmp7, dependencyMap] = _slicedToArray(react.useState(null), 2);
+  const tmp6 = _slicedToArray(react.useState(null), 2);
+  if (cResult[0] !== arg0) {
+    const fn = function n() {
+      function fetchGuildTemplate() {
+        return closure_0(...arguments);
       }
-      return arg1;
+      if (null != closure_0) {
+        closure_0 = _asyncToGenerator(async function(arg0, value) {
+          let closure_2;
+          let obj2;
+          closure_0 = arg0;
+          if (c6 === 2) {
+            c6 = 3;
+            throw new TypeError("Generator functions may not be called on executing generators");
+          } else if (tmp3 === 3) {
+            if (arg0 === 1) {
+              throw value;
+            } else if (arg0 === 2) {
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              return { value: "IconComponent", done: "IconComponent" };
+            }
+          } else {
+            let c4;
+            try {
+              let closure_1;
+              c6 = 2;
+              if (0 === c5) {
+                if (arg0 === 1) {
+                  c6 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c6 = 3;
+                  const obj4 = { value, done: true };
+                  return obj4;
+                } else {
+                  closure_1 = undefined;
+                  tmp(null);
+                  c4 = 1;
+                  c5 = 2;
+                  c6 = 1;
+                  const obj5 = { value: obj2.loadTemplatesForGuild(closure_0), done: false };
+                  obj2 = GuildTemplateActionCreatorsDefault;
+                  return obj5;
+                }
+              } else {
+                if (1 === c5) {
+                  c4 = 0;
+                  closure_1 = closure_3;
+                  const self = this;
+                  const self2 = this;
+                  const aPIError = new closure_0(dependencyMap[11]).APIError(closure_1);
+                  tmp(aPIError);
+                } else if (arg0 === 1) {
+                  c6 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c4 = 0;
+                  c6 = 3;
+                  const obj = { value, done: true };
+                  return obj;
+                } else {
+                  c4 = 0;
+                }
+                closure_1(closure_0);
+                c6 = 3;
+                return { value: "IconComponent", done: "IconComponent" };
+              }
+            } catch (tmp26) {
+              closure_3 = tmp26;
+              if (0 === c4) {
+                c6 = 3;
+                throw tmp26;
+              } else {
+                c5 = 1;
+              }
+            }
+          }
+        });
+        const tmp3 = fetchGuildTemplate(tmp);
+      }
     };
-    if (null != closure_0) {
-      (function fetchGuildTemplate(arg0) {
-        const self = this;
-        const apply = closure_0.apply;
-        if (typeof apply === "unknown") {
-          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-        } else {
-          applyArgumentsResult = apply(self, arguments);
+    const items = [arg0];
+    cResult[0] = arg0;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp9 = items;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[1];
+    tmp9 = cResult[2];
+  }
+  const effect = obj2.useEffect(tmp8, tmp9);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [GuildTemplateStore];
+    cResult[3] = items1;
+    tmp12 = items1;
+  } else {
+    tmp12 = cResult[3];
+  }
+  if (cResult[4] !== arg0) {
+    class E {
+      constructor() {
+        let forGuild;
+        if (null != closure_0) {
+          forGuild = GuildTemplateStore.getForGuild(tmp);
         }
-        return applyArgumentsResult;
-      })(tmp);
+        return forGuild;
+      }
+    }
+    const items2 = [arg0];
+    cResult[4] = arg0;
+    cResult[5] = E;
+    cResult[6] = items2;
+    tmp15 = items2;
+    tmp14 = E;
+  } else {
+    class E {
+      constructor() {
+        let forGuild;
+        if (null != closure_0) {
+          forGuild = GuildTemplateStore.getForGuild(tmp);
+        }
+        return forGuild;
+      }
+    }
+    tmp15 = cResult[6];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp12, tmp14, tmp15);
+  if (cResult[7] === tmp7) {
+    class E {
+      constructor() {
+        let forGuild;
+        if (null != closure_0) {
+          forGuild = GuildTemplateStore.getForGuild(tmp);
+        }
+        return forGuild;
+      }
+    }
+  }
+  let obj3 = { loading: tmp11, guildTemplate: stateFromStores, loadError: tmp7 };
+  cResult[7] = tmp7;
+  cResult[8] = stateFromStores;
+  cResult[9] = null != arg0 && tmp5 !== arg0;
+  cResult[10] = obj3;
+}) : ((arg0) => {
+  let closure_2;
+  let loadError;
+  let tmp2;
+  _require = arg0;
+  const tmp = _slicedToArray(react.useState(null), 2);
+  [tmp2, importDefault] = tmp;
+  [loadError, dependencyMap] = react.useState(null);
+  const items = [arg0];
+  const effect = react.useEffect(() => {
+    function fetchGuildTemplate(arg0) {
+      return obj(...arguments);
+    }
+    let obj = function _fetchGuildTemplate2() {
+      obj = _asyncToGenerator(async function(arg0, value) {
+        let obj2;
+        closure_0 = arg0;
+        if (c6 === 2) {
+          c6 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            return { value: "IconComponent", done: "IconComponent" };
+          }
+        } else {
+          let c4;
+          try {
+            let closure_1;
+            c6 = 2;
+            if (0 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                const obj4 = { value, done: true };
+                return obj4;
+              } else {
+                closure_1 = tmp4;
+                tmp(null);
+                c4 = 1;
+                c5 = 2;
+                c6 = 1;
+                const obj5 = { value: obj2.loadTemplatesForGuild(closure_0), done: false };
+                obj2 = closure_2_1(closure_2_2[10]);
+                return obj5;
+              }
+            } else {
+              if (1 === c5) {
+                c4 = 0;
+                closure_1 = closure_3;
+                const self = this;
+                const self2 = this;
+                const aPIError = new closure_2_0(closure_2_2[11]).APIError(closure_1);
+                tmp(aPIError);
+              } else if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 0;
+                c6 = 3;
+                obj = { value, done: true };
+                return obj;
+              } else {
+                c4 = 0;
+              }
+              closure_1(closure_0);
+              c6 = 3;
+              return { value: "IconComponent", done: "IconComponent" };
+            }
+          } catch (tmp26) {
+            closure_3 = tmp26;
+            if (0 === c4) {
+              c6 = 3;
+              throw tmp26;
+            } else {
+              c5 = 1;
+            }
+          }
+        }
+      });
+      return obj(...arguments);
+    };
+    if (null != obj) {
+      fetchGuildTemplate(tmp);
     }
   }, items);
-  const tmp = _slicedToArray(noop.useState(null), 2);
+  let obj = require("get initialized");
   const items1 = [GuildTemplateStore];
-  const items2 = [guildId];
-  let loading = null != guildId;
-  const guildTemplate = require("initialize").useStateFromStores(items1, () => {
+  const items2 = [arg0];
+  let loading = null != arg0;
+  const guildTemplate = obj.useStateFromStores(items1, () => {
     let forGuild;
     if (null != closure_0) {
       forGuild = GuildTemplateStore.getForGuild(tmp);
@@ -86,7 +333,15 @@ export const useGuildTemplate = function useGuildTemplate(guildId) {
     return forGuild;
   }, items2);
   if (loading) {
-    loading = tmp2 !== guildId;
+    loading = tmp2 !== arg0;
   }
-  return { loading, guildTemplate, loadError: loadError[0] };
+  return { loading, guildTemplate, loadError };
+});
+const result = size.fileFinishedImporting("modules/guild_templates/GuildTemplateSettingsUtils.tsx");
+
+export const isGuildTemplateNameValid = function isGuildTemplateNameValid(str) {
+  const tmp = null != str && str.trim().length >= 2;
+  return tmp;
 };
+export const useCanViewAllChannels = tmp2;
+export const useGuildTemplate = tmp3;

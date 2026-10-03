@@ -1,18 +1,19 @@
-// Module ID: 8307
-// Function ID: 8308
+// Module ID: 8311
+// Function ID: 8312
 // Name: PersonalWidgetMarkupUtils
-// Dependencies: [5487, 12, 5488, 4833, 7602, 2]
+// Dependencies: [5786, 12, 5787, 4878, 7646, 2]
 
-// Module 8307 (PersonalWidgetMarkupUtils)
-import MarkupReactRulesDefault from "MarkupReactRules" /* 4833 */;
-import MarkupRulesDefault from "MarkupRules" /* 5488 */;
-import combineMarkupRules from "combineMarkupRules" /* 5487 */;
-import apply from "module_12" /* 12 */;
-import MarkupParser from "MarkupParser" /* 7602 */;
+// Module 8311 (PersonalWidgetMarkupUtils)
+import MarkupReactRulesDefault from "MarkupReactRules" /* 4878 */;
+import MarkupRulesDefault from "MarkupRules" /* 5787 */;
+import combineMarkupRules from "combineMarkupRules" /* 5786 */;
+import module_12 from "module_12" /* 12 */;
+import MarkupParser from "MarkupParser" /* 7646 */;
+import size from "module_2" /* 2 */;
 
-const items = [apply.pick(MarkupRulesDefault.RULES, ["escape", "text", "strong", "em", "u", "url", "autolink", "emoji", "invisibleUnicode"]), MarkupReactRulesDefault()];
-const reactParserForResult = MarkupParser.reactParserFor(combineMarkupRules(items));
-const size = fn(2);
+const items = [module_12.pick(MarkupRulesDefault.RULES, ["escape", "text", "strong", "em", "u", "url", "autolink", "emoji", "invisibleUnicode"]), MarkupReactRulesDefault()];
+const importDefaultResultResult = combineMarkupRules(items);
+const reactParserForResult = MarkupParser.reactParserFor(importDefaultResultResult);
 const result = size.fileFinishedImporting("modules/markup/PersonalWidgetMarkupUtils.native.tsx");
 
 export const parsePersonalWidgetReact = reactParserForResult;

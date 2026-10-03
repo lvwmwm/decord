@@ -1,22 +1,23 @@
-// Module ID: 9948
-// Function ID: 9949
+// Module ID: 9896
+// Function ID: 9897
 // Name: useNativeAndroidEmojiPickerEnabled
-// Dependencies: [502, 1364, 2090, 2]
+// Dependencies: [502, 1369, 2095, 2]
 // Exports: default
 
-// Module 9948 (useNativeAndroidEmojiPickerEnabled)
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 2090 */;
+// Module 9896 (useNativeAndroidEmojiPickerEnabled)
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 2095 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/emoji_picker/native/components/useNativeAndroidEmojiPickerEnabled.tsx");
 
 export default function useNativeAndroidEmojiPickerEnabled() {
-  let isAndroidResult = PlatformUtils.isAndroid();
+  const obj = PlatformUtils;
+  let isAndroidResult = obj.isAndroid();
   if (isAndroidResult) {
-    isAndroidResult = null != DatabaseManagerDefault.database(AuthenticationStore.getId());
+    const obj2 = DatabaseManagerDefault;
+    isAndroidResult = null != obj2.database(AuthenticationStore.getId());
   }
   return isAndroidResult;
 };

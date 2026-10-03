@@ -1,17 +1,18 @@
-// Module ID: 14423
-// Function ID: 14424
+// Module ID: 14482
+// Function ID: 14483
 // Name: GuildIdentitySettingsUtils
 // Dependencies: [2]
 // Exports: canResetThemeColors
 
-// Module 14423 (GuildIdentitySettingsUtils)
+// Module 14482 (GuildIdentitySettingsUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_identity/GuildIdentitySettingsUtils.tsx");
 
 export const canResetThemeColors = function canResetThemeColors(pendingThemeColors, themeColors) {
+  let tmp3;
   if (undefined === pendingThemeColors) {
-    let tmp3 = null != themeColors;
+    tmp3 = null != themeColors;
   } else {
     let first;
     if (pendingThemeColors != null) {

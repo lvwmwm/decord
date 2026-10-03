@@ -1,70 +1,190 @@
-// Module ID: 14496
-// Function ID: 14497
+// Module ID: 14531
+// Function ID: 14532
 // Name: SettingsAgeGroupScreen
-// Dependencies: [19, 17, 7590, 1074, 21, 4845, 576, 8043, 2110, 4841, 1115, 3038, 14456, 11215, 14497, 14460, 2]
-// Exports: default
+// Dependencies: [19, 17, 7634, 1085, 21, 4890, 587, 558, 576, 8084, 2115, 4886, 1126, 3045, 14491, 11129, 14532, 14495, 2]
 
-// Module 14496 (SettingsAgeGroupScreen)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2110 */;
-import _modDef3038 from "module_3038" /* 3038 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8043 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
-import SettingLayoutDefault from "SettingLayout" /* 14460 */;
-import TinyBroncoAgeGroupHeader2 from "TinyBroncoAgeGroupHeader" /* 14497 */;
-import noop from "module_19" /* 19 */;
+// Module 14531 (SettingsAgeGroupScreen)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import _modDef3045 from "module_3045" /* 3045 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8084 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14491 */;
+import SettingLayoutDefault from "SettingLayout" /* 14495 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-function SettingsAgeGroupHeader() {
-  let obj = { style: closure_9().headerContainer, children: null };
-  const callback = noop.useCallback(() => {
-    const obj = AgeVerificationActionCreatorsDefault;
-    obj.openUrl(HelpdeskUtilsDefault.getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let tmp;
+const intl3 = tmp(1126);
+const Text_Text = tmp(4886);
+const TinyBroncoAgeGroupHeader2 = tmp(14532);
+const View = react_native.View;
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const HelpdeskArticles = Constants.HelpdeskArticles;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let obj = { headerContainer: obj2 };
+obj2 = { gap: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16 };
+let closure_9 = createStyles.createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let intl;
+  let intl2;
+  let items;
+  let obj4;
+  let tmp10;
+  let tmp14;
+  let tmp6;
+  let obj = react2;
+  const cResult = obj.c(5);
+  const tmp4 = closure_9();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t() {
+      const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
+      AgeVerificationActionCreatorsDefault;
+      const obj = HelpdeskUtilsDefault;
+      openUrl(obj.getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(_modDef3045.PY4MA0) };
+    const Text = Text_Text.Text;
+    intl = intl3.intl;
+    const tmp9 = metroImportDefault(Text, obj2);
+    cResult[1] = tmp9;
+    tmp6 = tmp9;
+  } else {
+    tmp6 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { variant: "text-sm/normal", color: "text-default", children: intl2.format(_modDef3045["1DN29p"], obj4) };
+    const Text2 = Text_Text.Text;
+    intl2 = intl3.intl;
+    obj4 = { handleOnHelpUrlHook: first };
+    const tmp13 = metroImportDefault(Text2, obj3);
+    cResult[2] = tmp13;
+    tmp10 = tmp13;
+  } else {
+    tmp10 = cResult[2];
+  }
+  if (cResult[3] !== tmp4.headerContainer) {
+    const obj5 = { style: tmp4.headerContainer, children: items };
+    items = [tmp6, tmp10];
+    const tmp17 = metroImportAll(View, obj5);
+    cResult[3] = tmp4.headerContainer;
+    cResult[4] = tmp17;
+    tmp14 = tmp17;
+  } else {
+    tmp14 = cResult[4];
+  }
+  return tmp14;
+}) : (() => {
+  let intl;
+  let intl2;
+  let items;
+  const tmp = closure_9();
+  let obj = { style: tmp.headerContainer, children: items };
+  const callback = react.useCallback(() => {
+    const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
+    AgeVerificationActionCreatorsDefault;
+    const obj = HelpdeskUtilsDefault;
+    openUrl(obj.getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
   }, []);
-  const obj2 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: null };
-  const intl = util.intl;
-  obj2.children = intl.string(_modDef3038.PY4MA0);
-  const items = [React5(Text_Text.Text, obj2), ];
-  const obj3 = { variant: "text-sm/normal", color: "text-default", children: null };
-  const intl2 = util.intl;
-  obj3.children = intl2.format(_modDef3038["1DN29p"], { handleOnHelpUrlHook: callback });
-  items[1] = React5(Text_Text.Text, obj3);
-  obj.children = items;
-  return React6(View, obj);
-}
-const View = fn(17).View;
-const MobileUserSettings = fn(7590).MobileUserSettings;
-const HelpdeskArticles = fn(1074).HelpdeskArticles;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4845);
-let obj2 = { headerContainer: { gap: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16 } };
-let closure_9 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/age_group/native/SettingsAgeGroupScreen.tsx");
-
-export default function SettingsAgeGroupScreen() {
-  isTinyBroncoSettingsEnabled = isTinyBroncoSettingsEnabled(14456).useIsTinyBroncoSettingsEnabled();
-  let items = [isTinyBroncoSettingsEnabled];
-  const node = noop.useMemo(() => {
-    const obj2 = { sections: null, ListHeaderComponent: null };
-    const obj3 = { label: null, settings: null };
-    const intl = util.intl;
-    obj3.label = intl.string(_modDef3038["5Mi5TE"]);
-    const items = [, , ];
+  const obj2 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(_modDef3045.PY4MA0) };
+  const Text = Text_Text.Text;
+  intl = intl3.intl;
+  items = [metroImportDefault(Text, obj2), ];
+  const obj3 = { variant: "text-sm/normal", color: "text-default", children: intl2.format(_modDef3045["1DN29p"], { handleOnHelpUrlHook: callback }) };
+  const Text2 = Text_Text.Text;
+  intl2 = intl3.intl;
+  items[1] = metroImportDefault(Text2, obj3);
+  return metroImportAll(View, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let TinyBroncoAgeGroupHeader;
+  let intl;
+  let items;
+  let items1;
+  let tmp10;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(4);
+  const obj2 = TinyBroncoSettingsPredicate;
+  const isTinyBroncoSettingsEnabled = obj2.useIsTinyBroncoSettingsEnabled();
+  if (cResult[0] !== isTinyBroncoSettingsEnabled) {
+    const obj3 = { sections: items1, ListHeaderComponent: TinyBroncoAgeGroupHeader };
+    const obj4 = { label: intl.string(_modDef3045["5Mi5TE"]), settings: items };
+    const createList = SettingBuilders.createList;
+    SettingBuilders;
+    intl = tmp(1126).intl;
+    items = [, , ];
     ({ AGE_GROUP_CONFIRM: arr[0], AGE_GROUP_RESET: arr[1], AGE_GROUP_CONFIRM_ACCOUNT_STATUS: arr[2] } = MobileUserSettings);
-    obj3.settings = items;
-    const items1 = [obj3];
-    obj2.sections = items1;
+    items1 = [obj4];
     if (isTinyBroncoSettingsEnabled) {
-      let TinyBroncoAgeGroupHeader = TinyBroncoAgeGroupHeader2.TinyBroncoAgeGroupHeader;
+      TinyBroncoAgeGroupHeader = tmp(14532).TinyBroncoAgeGroupHeader;
     } else {
-      TinyBroncoAgeGroupHeader = SettingsAgeGroupHeader;
+      TinyBroncoAgeGroupHeader = closure_10;
     }
-    obj2.ListHeaderComponent = TinyBroncoAgeGroupHeader;
-    return SettingBuilders.createList(obj2);
+    const list = createList(obj3);
+    cResult[0] = isTinyBroncoSettingsEnabled;
+    cResult[1] = list;
+    tmp5 = list;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] !== tmp5) {
+    const obj5 = { node: tmp5 };
+    const tmp13 = metroImportDefault(SettingLayoutDefault, obj5);
+    cResult[2] = tmp5;
+    cResult[3] = tmp13;
+    tmp10 = tmp13;
+  } else {
+    tmp10 = cResult[3];
+  }
+  return tmp10;
+}) : (() => {
+  let isTinyBroncoSettingsEnabled;
+  let obj = isTinyBroncoSettingsEnabled(14491);
+  isTinyBroncoSettingsEnabled = obj.useIsTinyBroncoSettingsEnabled();
+  let items = [isTinyBroncoSettingsEnabled];
+  const node = react.useMemo(() => {
+    let TinyBroncoAgeGroupHeader;
+    let intl;
+    let items;
+    let items1;
+    const obj = { sections: items1, ListHeaderComponent: TinyBroncoAgeGroupHeader };
+    const obj2 = { label: intl.string(_modDef3045["5Mi5TE"]), settings: items };
+    const createList = SettingBuilders.createList;
+    SettingBuilders;
+    intl = intl3.intl;
+    items = [, , ];
+    ({ AGE_GROUP_CONFIRM: arr[0], AGE_GROUP_RESET: arr[1], AGE_GROUP_CONFIRM_ACCOUNT_STATUS: arr[2] } = MobileUserSettings);
+    items1 = [obj2];
+    const tmp4 = isTinyBroncoSettingsEnabled;
+    if (tmp4) {
+      TinyBroncoAgeGroupHeader = TinyBroncoAgeGroupHeader2.TinyBroncoAgeGroupHeader;
+    } else {
+      TinyBroncoAgeGroupHeader = closure_10;
+    }
+    return createList(obj);
   }, items);
   return closure_7(SettingLayoutDefault, { node });
-};
+});
+const result = size.fileFinishedImporting("modules/user_settings/age_group/native/SettingsAgeGroupScreen.tsx");
+
+export default tmp3;

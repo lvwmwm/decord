@@ -1,16 +1,16 @@
-// Module ID: 12928
-// Function ID: 12929
+// Module ID: 12983
+// Function ID: 12984
 // Name: MobileNitroUpsellInShopPdpExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1440, 2]
 
-// Module 12928 (MobileNitroUpsellInShopPdpExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 12983 (MobileNitroUpsellInShopPdpExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-09-mobile-nitro-upsell-in-shop-pdp", kind: "user", defaultConfig: { enabled: false, showActionSheet: false }, variations: null };
-const obj2 = { 1: null, 2: { enabled: true, showActionSheet: false } };
+let obj2;
+const obj = { name: "2026-09-mobile-nitro-upsell-in-shop-pdp", kind: "user", defaultConfig: { enabled: false, showActionSheet: false }, variations: obj2 };
+obj2 = { 1: null, 2: { enabled: true, showActionSheet: false } };
 obj2[2] = { enabled: true, showActionSheet: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/collectibles/native/MobileNitroUpsellInShopPdpExperiment.tsx");
 

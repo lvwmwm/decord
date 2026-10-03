@@ -1,23 +1,30 @@
-// Module ID: 14751
-// Function ID: 14752
+// Module ID: 14807
+// Function ID: 14808
 // Name: BountiesModalActionCreators
-// Dependencies: [5048, 14752, 1981, 2]
+// Dependencies: [5093, 14808, 1987, 2]
 
-// Module 14751 (BountiesModalActionCreators)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5048 */;
+// Module 14807 (BountiesModalActionCreators)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
 import size from "module_2" /* 2 */;
 
 const BOUNTIES_MODAL = "BOUNTIES_MODAL";
-const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalActionCreators.tsx");
-
-export default {
+let obj = {
   showModal(arg0) {
+    let bounty;
+    let bountyId;
+    let sourceQuestContent;
+    let variant;
     ({ bountyId, sourceQuestContent, variant, bounty } = arg0);
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(14752, dependencyMap.paths), { bountyId, sourceQuestContent, variant, bounty }, BOUNTIES_MODAL);
+    const obj = ModalActionCreatorsDefault;
+    obj.pushLazy(asyncRequire(14808, dependencyMap.paths), { bountyId, sourceQuestContent, variant, bounty }, BOUNTIES_MODAL);
   },
   hideModal() {
-    ModalActionCreatorsDefault.popWithKey(BOUNTIES_MODAL);
+    const obj = ModalActionCreatorsDefault;
+    obj.popWithKey(BOUNTIES_MODAL);
   }
 };
+const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalActionCreators.tsx");
+
+export default obj;
 export const BOUNTIES_MODAL_KEY = "BOUNTIES_MODAL";

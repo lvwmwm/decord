@@ -6,14 +6,17 @@
 
 // Module 7 (LogAggregator)
 import DequeDefault from "Deque" /* 8 */;
+import size from "module_2" /* 2 */;
 
-let closure_0 = new DequeDefault(5000);
-const size = fn(2);
+let tmp2 = new DequeDefault(5000);
+let closure_0 = tmp2;
 const result = size.fileFinishedImporting("modules/debug/LogAggregator.tsx");
 
 export const report = function report(category) {
+  let arr;
   let length;
-  const tmp = (function stringifyMessage(arg0) {
+  function stringifyMessage(arg0) {
+    let error;
     let str = "";
     const iter = arg0[Symbol.iterator]();
     const nextResult = iter.next();
@@ -37,27 +40,29 @@ export const report = function report(category) {
       }
     }
     return str;
-  })(HermesBuiltin.copyRestArgs());
+  }
+  const tmp = stringifyMessage(HermesBuiltin.copyRestArgs());
   if (typeof category === "string") {
-    const obj = { time: null, category: null, message: null };
+    let tmp2 = closure_0;
+    let tmp3 = globalThis;
     const _Date = Date;
-    obj.time = Date.now();
-    obj.category = category;
-    obj.message = tmp;
-    closure_0.push(obj);
-    let arr = closure_0;
+    const push = closure_0.push;
+    const obj = { time: Date.now(), category, message: tmp };
+    push(obj);
+    arr = closure_0;
   } else {
     arr = closure_0;
-    const obj3 = { time: null, category: null, timing: null, message: null };
+    let tmp7 = globalThis;
     const _Date2 = Date;
-    obj3.time = Date.now();
+    const push2 = closure_0.push;
     ({ name: obj2.category, timing: obj2.timing } = category);
-    obj3.message = tmp;
-    closure_0.push(obj3);
+    const obj3 = { time: Date.now(), category: null, timing: null, message: tmp };
+    push2(obj3);
   }
   if (arr.length > 5000) {
     do {
-      let arr6 = closure_0.shift();
+      let tmp5 = closure_0;
+      let arr4 = closure_0.shift();
       length = closure_0.length;
     } while (length > 5000);
   }
@@ -67,16 +72,20 @@ export const clear = function clear() {
 };
 export const stringify = function stringify(arg0) {
   closure_0 = arg0;
-  const found = closure_0.toArray().filter((category) => {
+  const toArrayResult = closure_0.toArray();
+  const found = toArrayResult.filter((category) => {
     let hasItem = null == closure_0;
+    const obj = closure_0;
     if (!hasItem) {
-      hasItem = closure_0.includes(category.category);
+      hasItem = obj.includes(category.category);
     }
     return hasItem;
   });
   const mapped = found.map((time) => {
     const items = [];
-    items.push(new Date(time.time).toISOString());
+    const push = items.push;
+    const date = new Date(time.time);
+    push(date.toISOString());
     if (null != time.timing) {
       items.push(time.timing);
     }
@@ -86,13 +95,14 @@ export const stringify = function stringify(arg0) {
   return mapped.join("\n");
 };
 export const getAllForDebugPanel = function getAllForDebugPanel(arg0) {
+  let reversed;
   let flag = arg0;
   if (arg0 === undefined) {
     flag = false;
   }
   const toArrayResult = closure_0.toArray();
   if (flag) {
-    let reversed = toArrayResult.reverse();
+    reversed = toArrayResult.reverse();
   } else {
     reversed = toArrayResult;
   }

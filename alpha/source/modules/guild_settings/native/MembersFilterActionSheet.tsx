@@ -1,89 +1,74 @@
-// Module ID: 16451
-// Function ID: 16452
+// Module ID: 16526
+// Function ID: 16527
 // Name: MembersFilterActionSheet
-// Dependencies: [19, 2101, 9242, 21, 4845, 576, 504, 9241, 4809, 6186, 11529, 6804, 6756, 1115, 6231, 2]
+// Dependencies: [19, 2106, 9248, 21, 4890, 587, 504, 9247, 4854, 6071, 11449, 6701, 6644, 1126, 6112, 2]
 // Exports: default
 
-// Module 16451 (MembersFilterActionSheet)
-import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9241 */;
-import noop from "module_19" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 2101 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9242 */;
+// Module 16526 (MembersFilterActionSheet)
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 587 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
+import react from "react" /* 19 */;
+import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9248 */;
+import createStyles from "createStyles" /* 4890 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let item;
 
-const require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
-let obj2 = { listView: { marginVertical: 8, borderRadius: nativeDefault.radii.lg, overflow: "hidden" } };
-let closure_7 = createStyles.createStyles(obj2);
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/guild_settings/native/MembersFilterActionSheet.tsx");
+let obj2;
+const jsx = Fragment.jsx;
+let obj = { listView: obj2 };
+obj2 = { marginVertical: 8, borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
+let closure_7 = createStyles.createStyles(obj);
+const result = size.fileFinishedImporting("modules/guild_settings/native/MembersFilterActionSheet.tsx");
 
 export default function MembersFilterActionSheet(onFilterRoleId) {
+  let intl;
+  let selectedRoleId;
   ({ guild: require, selectedRoleId } = onFilterRoleId);
   if (selectedRoleId === undefined) {
+    const tmp = GuildSettingsStore;
     selectedRoleId = GuildSettingsStore.getProps().selectedRoleId;
   }
   onFilterRoleId = onFilterRoleId.onFilterRoleId;
   let callback;
   const tmp2 = closure_7();
+  let obj = require("get initialized");
   const items = [GuildRoleStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => GuildRoleStore.getSortedRoles(require.id));
+  const stateFromStores = obj.useStateFromStores(items, () => GuildRoleStore.getSortedRoles(require.id));
   const mapped = stateFromStores.map((id) => {
+    const obj = { value: id.id };
     const merged = Object.assign(id);
-    return { value: id.id };
+    return obj;
   });
   mapped.unshift(mapped.splice(mapped.length - 1, 1)[0]);
   const items1 = [onFilterRoleId, selectedRoleId];
-  callback = callback.useCallback((hideActionSheet) => {
-    if (hideActionSheet !== selectedRoleId) {
-      let hideActionSheetResult = onFilterRoleId;
+  callback = callback.useCallback((roleId) => {
+    if (roleId !== selectedRoleId) {
       if (null != onFilterRoleId) {
-        const result = hideActionSheetResult(hideActionSheet);
+        tmp(roleId);
       } else {
-        const role = GuildSettingsActionCreatorsDefault.selectRole(hideActionSheet);
+        const obj = GuildSettingsActionCreatorsDefault;
+        const role = obj.selectRole(roleId);
       }
-      hideActionSheet = ActionSheetActionCreatorsDefault.hideActionSheet;
-      hideActionSheetResult = hideActionSheet("MembersFilter");
+      const obj2 = ActionSheetActionCreatorsDefault;
+      obj2.hideActionSheet("MembersFilter");
     }
   }, items1);
   const items2 = [callback, selectedRoleId];
   const callback1 = callback.useCallback((item) => {
     item = item.item;
-    const obj = {
-      value: item.id,
-      label: jsx(selectedRoleId(onFilterRoleId[10]), { role: item, dotBackground: true, children: item.name }),
-      legacyCompat_onPress() {
-        return callback(item.id);
-      },
-      legacyCompat_selected: item.id === selectedRoleId
-    };
-    return jsx(require("TableRadioRow").TableRadioRow, {
-      value: item.id,
-      label: jsx(selectedRoleId(onFilterRoleId[10]), { role: item, dotBackground: true, children: item.name }),
-      legacyCompat_onPress() {
-        return callback(item.id);
-      },
-      legacyCompat_selected: item.id === selectedRoleId
-    });
+    const TableRadioRow = require("TableRadioRow").TableRadioRow;
+    return <TableRadioRow value={item.id} label={null} legacyCompat_onPress={function legacyCompat_onPress() {
+      return callback(item.id);
+    }} legacyCompat_selected={item.id === selectedRoleId} />;
   }, items2);
-  const obj2 = { scrollable: true, header: null, children: null };
-  const obj3 = { title: null };
-  const intl = require("util").intl;
-  obj3.title = intl.string(require("util").t.pEasFX);
-  obj2.header = jsx(require("BottomSheetTitleHeader").BottomSheetTitleHeader, { title: null });
-  obj2.children = jsx(require("BottomSheetModal").BottomSheetFlatList, {
-    data: mapped,
-    keyExtractor(id) {
-      return id.id;
-    },
-    renderItem: callback1,
-    contentContainerStyle: tmp2.listView,
-    initialNumToRender: 10,
-    removeClippedSubviews: false
-  });
-  return jsx(require("ActionSheet").ActionSheet, { scrollable: true, header: null, children: null });
+  const ActionSheet = require("ActionSheet").ActionSheet;
+  ({ title: intl.string(require("intl").t.pEasFX) });
+  const BottomSheetTitleHeader = require("BottomSheetTitleHeader").BottomSheetTitleHeader;
+  intl = require("intl").intl;
+  return <ActionSheet scrollable header={null}>{null}</ActionSheet>;
 };

@@ -1,208 +1,2448 @@
-// Module ID: 11177
-// Function ID: 11178
+// Module ID: 11081
+// Function ID: 11082
 // Name: Messages
-// Dependencies: [32, 19, 4834, 2043, 7778, 5072, 11178, 7084, 4861, 11059, 5957, 4761, 6898, 6771, 7570, 7553, 7134, 7065, 7752, 7556, 11179, 7557, 6714, 5058, 11180, 7060, 11181, 7266, 7199, 11096, 4500, 6911, 2111, 1182, 502, 2044, 7267, 11182, 2107, 2066, 5911, 4826, 5065, 4498, 4885, 4868, 4860, 4863, 7430, 1372, 4864, 6008, 11209, 4869, 1074, 1374, 21, 504, 12, 558, 6770, 1370, 2021, 11210, 11217, 11221, 11224, 10886, 7057, 4517, 7596, 5930, 11116, 11117, 11031, 7592, 7025, 11228, 4732, 11098, 7504, 7522, 10645, 11055, 7901, 5057, 11056, 7751, 11229, 11232, 7771, 7327, 11233, 11236, 5623, 11237, 2]
+// Dependencies: [32, 19, 4879, 2050, 7822, 5118, 11082, 6985, 4906, 10023, 5638, 4776, 6796, 11083, 6659, 7614, 7597, 7037, 6966, 7796, 7600, 11085, 7601, 6602, 5103, 11086, 6961, 11087, 7164, 7102, 9765, 4511, 6809, 2116, 1193, 502, 2051, 7165, 11088, 2112, 2074, 5570, 4871, 5110, 4509, 4930, 4913, 4905, 4908, 7466, 1377, 4909, 5695, 11115, 4914, 1085, 1379, 21, 558, 576, 12, 504, 568, 6658, 1375, 2028, 11124, 11131, 11135, 11138, 10911, 6958, 4528, 7640, 5589, 9787, 9788, 9854, 7636, 6923, 11142, 4747, 9767, 7548, 7566, 10717, 10019, 7945, 5102, 10020, 7795, 11143, 11146, 7815, 7225, 11147, 5911, 11150, 11571, 2]
 
-// Module 11177 (Messages)
+// Module 11081 (Messages)
 import _modDef12 from "module_12" /* 12 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6770 */;
-import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 10645 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 11031 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4834 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
-import ApplicationAssetsStore from "ApplicationAssetsStore" /* 7778 */;
-import ApplicationStore from "ApplicationStore" /* 5072 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11178 */;
-import CacheStore from "CacheStore" /* 7084 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4861 */;
-import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 11059 */;
-import EmojiStore from "EmojiStore" /* 5957 */;
-import ExperimentStore from "ExperimentStore" /* 4761 */;
-import ExplicitMediaStore from "ExplicitMediaStore" /* 6898 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6771 */;
-import BasicGuildStore from "BasicGuildStore" /* 7570 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7553 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7134 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7065 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 7752 */;
-import InteractionStore from "InteractionStore" /* 7556 */;
-import MediaPostEmbedStore from "MediaPostEmbedStore" /* 11179 */;
-import MediaPostSharePromptStore from "MediaPostSharePromptStore" /* 7557 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6714 */;
-import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 5058 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7060 */;
-import PushFeedbackStore from "PushFeedbackStore" /* 11181 */;
-import PendingReplyStore from "PendingReplyStore" /* 7266 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 7199 */;
-import SummaryStore from "SummaryStore" /* 11096 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4500 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 6911 */;
-import LocaleStore from "LocaleStore" /* 2111 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
+import shallowEqual from "shallowEqual" /* 568 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6658 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9854 */;
+import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 10717 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+import ApplicationAssetsStore from "ApplicationAssetsStore" /* 7822 */;
+import ApplicationStore from "ApplicationStore" /* 5118 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11082 */;
+import CacheStore from "CacheStore" /* 6985 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
+import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10023 */;
+import EmojiStore from "EmojiStore" /* 5638 */;
+import ExperimentStore from "ExperimentStore" /* 4776 */;
+import ExplicitMediaStore from "ExplicitMediaStore" /* 6796 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11083 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6659 */;
+import BasicGuildStore from "BasicGuildStore" /* 7614 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7597 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7037 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 6966 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 7796 */;
+import InteractionStore from "InteractionStore" /* 7600 */;
+import MediaPostEmbedStore from "MediaPostEmbedStore" /* 11085 */;
+import MediaPostSharePromptStore from "MediaPostSharePromptStore" /* 7601 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6602 */;
+import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 5103 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 11086 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 6961 */;
+import PushFeedbackStore from "PushFeedbackStore" /* 11087 */;
+import PendingReplyStore from "PendingReplyStore" /* 7164 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 7102 */;
+import SummaryStore from "SummaryStore" /* 9765 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4511 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 6809 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import EditMessageStore from "EditMessageStore" /* 7267 */;
-import GiftCodeStore from "GiftCodeStore" /* 11182 */;
-import GuildMemberStore from "GuildMemberStore" /* 2107 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5911 */;
-import InviteStore from "InviteStore" /* 4826 */;
-import MessageStore from "MessageStore" /* 5065 */;
-import PermissionStore from "PermissionStore" /* 4498 */;
-import PresenceStore from "PresenceStore" /* 4885 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4868 */;
-import ReadStateStore from "ReadStateStore" /* 4860 */;
-import SessionsStore from "SessionsStore" /* 4863 */;
-import UploadStore from "UploadStore" /* 7430 */;
-import UserStore from "UserStore" /* 1372 */;
-import VoiceStateStore from "VoiceStateStore" /* 4864 */;
-import SKUStore from "SKUStore" /* 6008 */;
-import ActivityLauncherStore from "ActivityLauncherStore" /* 11209 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4869 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import EditMessageStore from "EditMessageStore" /* 7165 */;
+import GiftCodeStore from "GiftCodeStore" /* 11088 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5570 */;
+import InviteStore from "InviteStore" /* 4871 */;
+import MessageStore from "MessageStore" /* 5110 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import PresenceStore from "PresenceStore" /* 4930 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import ReadStateStore from "ReadStateStore" /* 4905 */;
+import SessionsStore from "SessionsStore" /* 4908 */;
+import UploadStore from "UploadStore" /* 7466 */;
+import UserStore from "UserStore" /* 1377 */;
+import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import SKUStore from "SKUStore" /* 5695 */;
+import ActivityLauncherStore from "ActivityLauncherStore" /* 11115 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4914 */;
+import Constants from "Constants" /* 1085 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const PollsInteractionStore = fn(11180);
-({ useChannelPollInteractions: closure_27, useMessagePollInteractions: closure_28 } = PollsInteractionStore);
-const Constants = fn(1074);
-({ ActivityActionTypes: closure_58, ChannelTypesSets: closure_59, ME: closure_60, MessageTypes: closure_61, Permissions: closure_62 } = Constants);
-const PremiumConstants = fn(1374);
-({ PREMIUM_TIER_2_REFERRAL_TRIAL_ID: closure_63, PremiumTypes: closure_64 } = PremiumConstants);
-const jsxProd = fn(21);
-({ jsx: closure_65, jsxs: closure_66 } = jsxProd);
-const forwardRefResult = noop.forwardRef((channel, ref) => {
-  channel = channel.channel;
-  const tmp = channel;
-  const tmp2 = id;
-  let items = [MessageStore];
-  const items1 = [channel.id];
-  const stateFromStores = channel(id[57]).useStateFromStores(items, () => MessageStore.getMessages(channel.id), items1);
-  id = channel.id;
-  const guildId = channel.getGuildId();
-  let obj = channel(id[57]);
-  const items2 = [GuildStore];
-  const stateFromStores1 = channel(id[57]).useStateFromStores(items2, () => GuildStore.getGuild(guildId));
-  let systemChannelFlags;
-  if (stateFromStores1 != null) {
-    systemChannelFlags = stateFromStores1.systemChannelFlags;
+const require = globalThis.__r;
+let _loopResult, _require, channel, closure_6, dependencyMap, findActivity, invites, messageReference, relevantUserTrialOffer, set, state, voiceStatesForChannelAlt;
+
+let closure_28;
+let closure_29;
+let closure_59;
+let closure_60;
+let closure_61;
+let closure_62;
+let closure_63;
+let closure_64;
+let closure_65;
+let closure_66;
+let closure_67;
+let _slicedToArray = _slicedToArray_mod;
+({ useChannelPollInteractions: closure_28, useMessagePollInteractions: closure_29 } = PollsInteractionStore);
+({ ActivityActionTypes: closure_59, ChannelTypesSets: closure_60, ME: closure_61, MessageTypes: closure_62, Permissions: closure_63 } = Constants);
+({ PREMIUM_TIER_2_REFERRAL_TRIAL_ID: closure_64, PremiumTypes: closure_65 } = PremiumConstants);
+({ jsx: closure_66, jsxs: closure_67 } = Fragment);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_68 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+  let closure_0;
+  let tmp6;
+  let tmp8;
+  let tmp9;
+  let tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(6);
+  if (cResult[0] !== arr) {
+    let obj2 = {};
+    _require = obj2;
+    const item = arr.forEach((author) => {
+      const tmp = null != author.author && null != author.activity;
+      if (tmp) {
+        closure_0[author.author.id] = null;
+      }
+    });
+    cResult[0] = arr;
+    cResult[1] = obj2;
+  } else {
+    _require = cResult[1];
   }
-  let obj2 = channel(id[57]);
-  const items3 = [AuthenticationStore];
-  const stateFromStores2 = tmp(tmp2[57]).useStateFromStores(items3, () => id.getId(), []);
-  const InlineAttachmentMedia = tmp(tmp2[62]).InlineAttachmentMedia;
-  const setting = InlineAttachmentMedia.useSetting();
-  const InlineEmbedMedia = tmp(tmp2[62]).InlineEmbedMedia;
-  const setting1 = InlineEmbedMedia.useSetting();
-  const RenderEmbeds = tmp(tmp2[62]).RenderEmbeds;
-  const setting2 = RenderEmbeds.useSetting();
-  const RenderReactions = tmp(tmp2[62]).RenderReactions;
-  const setting3 = RenderReactions.useSetting();
-  const DeveloperMode = tmp(tmp2[62]).DeveloperMode;
-  const setting4 = DeveloperMode.useSetting();
-  const AnimateEmoji = tmp(tmp2[62]).AnimateEmoji;
-  const setting5 = AnimateEmoji.useSetting();
-  const AnimateStickers = tmp(tmp2[62]).AnimateStickers;
-  const setting6 = AnimateStickers.useSetting();
-  const GifAutoPlay = tmp(tmp2[62]).GifAutoPlay;
-  const setting7 = GifAutoPlay.useSetting();
-  const TimestampHourCycle = tmp(tmp2[62]).TimestampHourCycle;
-  const setting8 = TimestampHourCycle.useSetting();
-  const tmpResult = tmp(tmp2[57]);
-  const items4 = [ThemeStore];
-  const stateFromStores3 = tmp(tmp2[57]).useStateFromStores(items4, () => theme.theme, []);
-  const tmpResult77 = tmp(tmp2[57]);
-  closure_129_0 = stateFromStores;
-  const items5 = [stateFromStores];
-  const isMessageSwipeActionsEnabled = tmp(tmp2[63]).useIsMessageSwipeActionsEnabled();
-  const memo = stateFromStores1.useMemo(() => {
+  obj2 = tmp4;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [PresenceStore];
+    cResult[2] = items;
+    tmp6 = items;
+  } else {
+    tmp6 = cResult[2];
+  }
+  if (cResult[3] !== tmp4) {
+    const fn = function l() {
+      let primaryActivity;
+      const obj = _modDef12;
+      return obj.mapValues(obj2, (arg0, arg1) => primaryActivity.getPrimaryActivity(arg1));
+    };
+    const items1 = [tmp4];
+    cResult[3] = tmp4;
+    cResult[4] = fn;
+    cResult[5] = items1;
+    tmp9 = items1;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[4];
+    tmp9 = cResult[5];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStoresObject(tmp6, tmp8, tmp9);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  const items = [arg0];
+  const memo = react.useMemo(() => {
     const obj = {};
-    const item = channel.forEach((author) => {
+    const item = closure_0.forEach((author) => {
+      const tmp = null != author.author && null != author.activity;
       if (tmp) {
         obj[author.author.id] = null;
       }
     });
     return obj;
-  }, items5);
-  closure_129_1 = memo;
-  const tmpResult78 = tmp(tmp2[63]);
-  const items6 = [PresenceStore];
-  const items7 = [memo];
-  const linkedLobby = channel.linkedLobby;
-  let application_id;
-  const stateFromStoresObject = tmp(tmp2[57]).useStateFromStoresObject(items6, () => _modDef12.mapValues(stateFromStores, (arg0, arg1) => primaryActivity.getPrimaryActivity(arg1)), items7);
-  if (linkedLobby != null) {
-    application_id = linkedLobby.application_id;
+  }, items);
+  let obj = require("get initialized");
+  const items1 = [PresenceStore];
+  const items2 = [memo];
+  return obj.useStateFromStoresObject(items1, () => {
+    let primaryActivity;
+    const obj = _modDef12;
+    return obj.mapValues(memo, (arg0, arg1) => primaryActivity.getPrimaryActivity(arg1));
+  }, items2);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_69 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr, arg1) => {
+  let ref;
+  let obj = set(576);
+  const cResult = obj.c(9);
+  if (cResult[0] === arg1) {
+    let tmp5;
+    let tmp9;
+    let tmp11;
+    let tmp10;
+    if (cResult[1] === arr) {
+      set = cResult[2];
+    }
+    if (cResult[3] !== tmp2) {
+      const tmp6 = globalThis;
+      const _Array = Array;
+      arr = Array.from(tmp2);
+      cResult[3] = tmp2;
+      cResult[4] = arr;
+      tmp5 = arr;
+    } else {
+      tmp5 = cResult[4];
+    }
+    const current = tmp5;
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const items = [];
+      cResult[5] = items;
+      tmp9 = items;
+    } else {
+      tmp9 = cResult[5];
+    }
+    dependencyMap = react.useRef(tmp9);
+    const obj3 = react;
+    if (cResult[6] !== tmp5) {
+      const fn = function h() {
+        const obj = shallowEqual;
+        const tmp4 = ref;
+        if (!obj.areArraysShallowEqual(current, ref.current)) {
+          const fetchApplications = ApplicationActionCreatorsDefault.fetchApplications;
+          ApplicationActionCreatorsDefault;
+          const arr = _modDef12(current);
+          const found = arr.filter(GlobalUtils.isNotNullish);
+          const iter = found.uniq();
+          const applications = fetchApplications(iter.value(), false);
+          tmp4.current = current;
+        }
+      };
+      const items1 = [tmp5];
+      cResult[6] = tmp5;
+      cResult[7] = fn;
+      cResult[8] = items1;
+      tmp11 = items1;
+      tmp10 = fn;
+    } else {
+      tmp10 = cResult[7];
+      tmp11 = cResult[8];
+    }
+    const effect = obj3.useEffect(tmp10, tmp11);
   }
-  closure_130_0 = stateFromStores;
-  closure_130_1 = application_id;
-  const items8 = [stateFromStores, application_id];
-  const memo1 = obj6.useMemo(() => {
-    const set = new Set();
-    const item = channel.forEach((applicationId) => {
+  set = new Set();
+  const item = arr.forEach((applicationId) => {
+    const tmp = null != applicationId.applicationId && null == applicationId.application;
+    if (tmp) {
+      set.add(applicationId.applicationId);
+    }
+  });
+  if (null != arg1) {
+    set.add(arg1);
+  }
+  cResult[0] = arg1;
+  cResult[1] = arr;
+  cResult[2] = set;
+}) : ((arg0, arg1) => {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  const items = [arg0, arg1];
+  const memo = react.useMemo(() => {
+    set = new Set();
+    const item = closure_0.forEach((applicationId) => {
+      const tmp = null != applicationId.applicationId && null == applicationId.application;
       if (tmp) {
         set.add(applicationId.applicationId);
       }
     });
-    if (null != stateFromStores) {
+    if (null != closure_1) {
       set.add(tmp2);
     }
     return Array.from(set);
-  }, items8);
-  closure_130_2 = memo1;
-  closure_130_3 = obj6.useRef([]);
-  const items9 = [memo1];
-  const effect = obj6.useEffect(() => {
-    if (!obj.areArraysShallowEqual(id, guildId.current)) {
-      const obj2 = ApplicationActionCreatorsDefault;
-      const found = _modDef12(tmp3).filter(GlobalUtils.isNotNullish);
-      const arr = _modDef12(tmp3);
-      const applications = obj2.fetchApplications(found.uniq().value(), false);
-      guildId.current = tmp3;
+  }, items);
+  const ref = react.useRef([]);
+  const items1 = [memo];
+  const effect = react.useEffect(() => {
+    const obj = shallowEqual;
+    const tmp4 = ref;
+    if (!obj.areArraysShallowEqual(memo, ref.current)) {
+      const fetchApplications = ApplicationActionCreatorsDefault.fetchApplications;
+      ApplicationActionCreatorsDefault;
+      const arr = _modDef12(memo);
+      const found = arr.filter(GlobalUtils.isNotNullish);
       const iter = found.uniq();
+      const applications = fetchApplications(iter.value(), false);
+      tmp4.current = memo;
     }
-  }, items9);
-  const tmp19 = PresenceStore;
-  const tmp25 = guildId;
-  const tmpResult79 = tmp(tmp2[57]);
-  [tmp27, r10127] = guildId(stateFromStores(tmp2[64])(stateFromStores, channel), 2);
-  const tmp26 = guildId(stateFromStores(tmp2[64])(stateFromStores, channel), 2);
-  const items10 = [InviteStore];
-  const stateFromStores4 = tmp(tmp2[57]).useStateFromStores(items10, () => InviteStore.getInvites(), []);
-  const tmp28 = InviteStore;
-  const tmpResult80 = tmp(tmp2[57]);
-  const fetchVoiceChannelInviteStartTimes = tmp(tmp2[65]).useFetchVoiceChannelInviteStartTimes(stateFromStores4);
-  const tmpResult81 = tmp(tmp2[65]);
-  const items11 = [ApplicationDirectoryApplicationsStore];
-  const stateFromStoresObject1 = tmp(tmp2[57]).useStateFromStoresObject(items11, () => ({ appDirectoryEmbedApplications: ApplicationDirectoryApplicationsStore.getApplications(), invalidAppDirectoryEmbedApplicationIds: ApplicationDirectoryApplicationsStore.getInvalidApplicationIds(), appDirectoryEmbedApplicationFetchStates: ApplicationDirectoryApplicationsStore.getApplicationFetchStates() }), []);
-  ({ appDirectoryEmbedApplications, invalidAppDirectoryEmbedApplicationIds, appDirectoryEmbedApplicationFetchStates } = stateFromStoresObject1);
-  const tmpResult82 = tmp(tmp2[57]);
-  const items12 = [items68];
-  const stateFromStoresArray = tmp(tmp2[57]).useStateFromStoresArray(items12, () => items68.getFetchingOrFailedFetchingIds());
-  const tmpResult83 = tmp(tmp2[57]);
-  const items13 = [channelSummariesExperiment];
-  const stateFromStoresArray1 = tmp(tmp2[57]).useStateFromStoresArray(items13, () => channelSummariesExperiment.getFetchingIds());
-  const tmpResult84 = tmp(tmp2[57]);
-  const items14 = [SKUStore];
-  const stateFromStoresArray2 = tmp(tmp2[57]).useStateFromStoresArray(items14, () => fetchingSkuIds.getFetchingSkuIds());
-  const tmpResult85 = tmp(tmp2[57]);
-  const items15 = [closure_6];
-  const items16 = [id];
-  const stateFromStoresArray3 = tmp(tmp2[57]).useStateFromStoresArray(items15, () => {
+  }, items1);
+});
+const forwardRef = react.forwardRef;
+ReactCompilerGating = ReactCompilerGating_mod;
+const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((channel, arg1) => {
+  let TIER_2;
+  let appDirectoryEmbedApplicationFetchStates;
+  let appDirectoryEmbedApplications;
+  let channelId;
+  let closure_3;
+  let communicationDisabledVersion;
+  let eligible;
+  let fetchingIds;
+  let fetchingSkuIds;
+  let first;
+  let found1;
+  let guildTemplates;
+  let hasLoadedExperiments;
+  let id;
+  let invalidAppDirectoryEmbedApplicationIds;
+  let isFetchingCurrentQuests;
+  let lazyCacheStatus;
+  let locale;
+  let mediaPostEmbeds;
+  let messageInteractionStates;
+  let messagesVersion;
+  let pendingConnection;
+  let quests;
+  let rsvpVersion;
+  let startTime;
+  let theme;
+  let tmp10;
+  let tmp103;
+  let tmp104;
+  let tmp107;
+  let tmp108;
+  let tmp109;
+  let tmp112;
+  let tmp113;
+  let tmp114;
+  let tmp117;
+  let tmp118;
+  let tmp119;
+  let tmp12;
+  let tmp122;
+  let tmp123;
+  let tmp124;
+  let tmp126;
+  let tmp127;
+  let tmp128;
+  let tmp131;
+  let tmp132;
+  let tmp133;
+  let tmp135;
+  let tmp136;
+  let tmp137;
+  let tmp14;
+  let tmp15;
+  let tmp16;
+  let tmp27;
+  let tmp28;
+  let tmp29;
+  let tmp37;
+  let tmp38;
+  let tmp39;
+  let tmp42;
+  let tmp43;
+  let tmp44;
+  let tmp46;
+  let tmp47;
+  let tmp49;
+  let tmp50;
+  let tmp52;
+  let tmp53;
+  let tmp55;
+  let tmp56;
+  let tmp57;
+  let tmp6;
+  let tmp60;
+  let tmp62;
+  let tmp64;
+  let tmp65;
+  let tmp67;
+  let tmp68;
+  let tmp7;
+  let tmp70;
+  let tmp71;
+  let tmp74;
+  let tmp75;
+  let tmp76;
+  let tmp79;
+  let tmp8;
+  let tmp80;
+  let tmp81;
+  let tmp84;
+  let tmp85;
+  let tmp86;
+  let tmp98;
+  let tmp99;
+  let version;
+  const tmp = channel;
+  let tmp2 = id;
+  let obj = channel(id[59]);
+  const cResult = obj.c(331);
+  channel = channel.channel;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp5 = MessageStore;
+    let items = [MessageStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channel.id) {
+    function ve() {
+      return MessageStore.getMessages(channel.id);
+    }
+    const items1 = [channel.id];
+    cResult[1] = channel.id;
+    cResult[2] = ve;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = ve;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const tmpResult = tmp(tmp2[61]);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
+  id = channel.id;
+  if (cResult[4] !== channel) {
+    const guildId = channel.getGuildId();
+    cResult[4] = channel;
+    cResult[5] = guildId;
+    tmp8 = guildId;
+  } else {
+    tmp8 = cResult[5];
+  }
+  _slicedToArray = tmp8;
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp11 = GuildStore;
+    const items2 = [GuildStore];
+    cResult[6] = items2;
+    tmp10 = items2;
+  } else {
+    tmp10 = cResult[6];
+  }
+  if (cResult[7] !== tmp8) {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+    cResult[7] = tmp8;
+    cResult[8] = Te;
+    tmp12 = Te;
+  } else {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+  }
+  const tmpResult31 = tmp(tmp2[61]);
+  const stateFromStores1 = tmpResult31.useStateFromStores(tmp10, tmp12);
+  if (stateFromStores1 != null) {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+  }
+  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+    const items3 = [AuthenticationStore];
+    function ke() {
+      return id.getId();
+    }
+    const items4 = [];
+    cResult[9] = items3;
+    cResult[10] = ke;
+    cResult[11] = items4;
+    tmp16 = items4;
+    tmp15 = ke;
+    tmp14 = items3;
+  } else {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+    tmp15 = cResult[10];
+    tmp16 = cResult[11];
+  }
+  const tmpResult32 = tmp(tmp2[61]);
+  const stateFromStores2 = tmpResult32.useStateFromStores(tmp14, tmp15, tmp16);
+  const InlineAttachmentMedia = tmp(tmp2[65]).InlineAttachmentMedia;
+  const setting = InlineAttachmentMedia.useSetting();
+  const InlineEmbedMedia = tmp(tmp2[65]).InlineEmbedMedia;
+  const setting1 = InlineEmbedMedia.useSetting();
+  const RenderEmbeds = tmp(tmp2[65]).RenderEmbeds;
+  const setting2 = RenderEmbeds.useSetting();
+  const RenderReactions = tmp(tmp2[65]).RenderReactions;
+  const setting3 = RenderReactions.useSetting();
+  const DeveloperMode = tmp(tmp2[65]).DeveloperMode;
+  const setting4 = DeveloperMode.useSetting();
+  const AnimateEmoji = tmp(tmp2[65]).AnimateEmoji;
+  const setting5 = AnimateEmoji.useSetting();
+  const AnimateStickers = tmp(tmp2[65]).AnimateStickers;
+  const setting6 = AnimateStickers.useSetting();
+  const GifAutoPlay = tmp(tmp2[65]).GifAutoPlay;
+  const setting7 = GifAutoPlay.useSetting();
+  const TimestampHourCycle = tmp(tmp2[65]).TimestampHourCycle;
+  const setting8 = TimestampHourCycle.useSetting();
+  if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+    const items5 = [ThemeStore];
+    function je() {
+      return theme.theme;
+    }
+    const items6 = [];
+    cResult[12] = je;
+    cResult[13] = items6;
+    cResult[14] = items5;
+    tmp29 = items5;
+    tmp28 = items6;
+    tmp27 = je;
+  } else {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+    tmp28 = cResult[13];
+    tmp29 = cResult[14];
+  }
+  const tmpResult33 = tmp(tmp2[61]);
+  const stateFromStores3 = tmpResult33.useStateFromStores(tmp29, tmp27, tmp28);
+  const tmpResult34 = tmp(tmp2[66]);
+  const isMessageSwipeActionsEnabled = tmpResult34.useIsMessageSwipeActionsEnabled();
+  closure_68(stateFromStores);
+  const tmp33 = closure_69;
+  if (channel.linkedLobby != null) {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+  }
+  tmp33(stateFromStores, undefined);
+  const first1 = _slicedToArray(stateFromStores(tmp2[67])(stateFromStores, channel), 1)[0];
+  const tmp35 = stateFromStores;
+  if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+    const items7 = [InviteStore];
+    function tt() {
+      return InviteStore.getInvites();
+    }
+    const items8 = [];
+    cResult[15] = items7;
+    cResult[16] = tt;
+    cResult[17] = items8;
+    tmp39 = items8;
+    tmp38 = tt;
+    tmp37 = items7;
+  } else {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+    tmp38 = cResult[16];
+    tmp39 = cResult[17];
+  }
+  const tmpResult35 = tmp(tmp2[61]);
+  const stateFromStores4 = tmpResult35.useStateFromStores(tmp37, tmp38, tmp39);
+  const tmpResult36 = tmp(tmp2[68]);
+  const fetchVoiceChannelInviteStartTimes = tmpResult36.useFetchVoiceChannelInviteStartTimes(stateFromStores4);
+  if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+    const items9 = [ApplicationDirectoryApplicationsStore];
+    function ot() {
+      const obj = { appDirectoryEmbedApplications: ApplicationDirectoryApplicationsStore.getApplications(), invalidAppDirectoryEmbedApplicationIds: ApplicationDirectoryApplicationsStore.getInvalidApplicationIds(), appDirectoryEmbedApplicationFetchStates: ApplicationDirectoryApplicationsStore.getApplicationFetchStates() };
+      return obj;
+    }
+    const items10 = [];
+    cResult[18] = items9;
+    cResult[19] = ot;
+    cResult[20] = items10;
+    tmp44 = items10;
+    tmp43 = ot;
+    tmp42 = items9;
+  } else {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+    tmp43 = cResult[19];
+    tmp44 = cResult[20];
+  }
+  const tmpResult37 = tmp(tmp2[61]);
+  const stateFromStoresObject = tmpResult37.useStateFromStoresObject(tmp42, tmp43, tmp44);
+  ({ appDirectoryEmbedApplications, invalidAppDirectoryEmbedApplicationIds, appDirectoryEmbedApplicationFetchStates } = stateFromStoresObject);
+  if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+    const items11 = [ApplicationStore];
+    function dt() {
+      return ApplicationStore.getFetchingOrFailedFetchingIds();
+    }
+    cResult[21] = items11;
+    cResult[22] = dt;
+    tmp47 = dt;
+    tmp46 = items11;
+  } else {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+    tmp47 = cResult[22];
+  }
+  const tmpResult38 = tmp(tmp2[61]);
+  const stateFromStoresArray = tmpResult38.useStateFromStoresArray(tmp46, tmp47);
+  if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+    const items12 = [ApplicationAssetsStore];
+    function pt() {
+      return fetchingIds.getFetchingIds();
+    }
+    cResult[23] = items12;
+    cResult[24] = pt;
+    tmp50 = pt;
+    tmp49 = items12;
+  } else {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+    tmp50 = cResult[24];
+  }
+  const tmpResult39 = tmp(tmp2[61]);
+  const stateFromStoresArray1 = tmpResult39.useStateFromStoresArray(tmp49, tmp50);
+  if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+    const items13 = [SKUStore];
+    function vt() {
+      return fetchingSkuIds.getFetchingSkuIds();
+    }
+    cResult[25] = items13;
+    cResult[26] = vt;
+    tmp53 = vt;
+    tmp52 = items13;
+  } else {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+    tmp53 = cResult[26];
+  }
+  const tmpResult40 = tmp(tmp2[61]);
+  const stateFromStoresArray2 = tmpResult40.useStateFromStoresArray(tmp52, tmp53);
+  if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+    const items14 = [found1];
+    cResult[27] = items14;
+    tmp55 = items14;
+  } else {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+  }
+  if (cResult[28] !== id) {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+    const items15 = [id];
+    cResult[28] = id;
+    cResult[29] = tmp58;
+    cResult[30] = items15;
+    tmp57 = items15;
+    tmp56 = tmp58;
+  } else {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+    tmp57 = cResult[30];
+  }
+  const tmpResult41 = tmp(tmp2[61]);
+  const stateFromStoresArray3 = tmpResult41.useStateFromStoresArray(tmp55, tmp56, tmp57);
+  if (cResult[31] === Symbol.for("react.memo_cache_sentinel")) {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+    const items16 = [found1, PresenceStore];
+    cResult[31] = items16;
+    tmp60 = items16;
+  } else {
+    class Te {
+      constructor() {
+        return GuildStore.getGuild(closure_3);
+      }
+    }
+  }
+  if (cResult[32] !== id) {
+    class Et {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        embeddedActivitiesForChannel = closure_6.getEmbeddedActivitiesForChannel(id);
+        _loop = function _loop(iter) {
+          let closure_0 = iter;
+          const userIds = iter.userIds;
+          findActivity = findActivity.findActivity;
+          iter = userIds.values();
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152052 */ });
+          let details;
+          if (findActivityResult != null) {
+            details = findActivityResult.details;
+          }
+          if (null != details) {
+            const _HermesInternal = HermesInternal;
+            items.push("" + iter.launchId + ":" + findActivityResult.details);
+          }
+        };
+        iter = embeddedActivitiesForChannel[Symbol.iterator]();
+        while (iter !== undefined) {
+          _loopResult = _loop(iter.next());
+          continue;
+        }
+        return items;
+      }
+    }
+    cResult[32] = id;
+    cResult[33] = Et;
+    tmp62 = Et;
+  } else {
+    class Et {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        embeddedActivitiesForChannel = closure_6.getEmbeddedActivitiesForChannel(id);
+        _loop = function _loop(iter) {
+          let closure_0 = iter;
+          const userIds = iter.userIds;
+          findActivity = findActivity.findActivity;
+          iter = userIds.values();
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152052 */ });
+          let details;
+          if (findActivityResult != null) {
+            details = findActivityResult.details;
+          }
+          if (null != details) {
+            const _HermesInternal = HermesInternal;
+            items.push("" + iter.launchId + ":" + findActivityResult.details);
+          }
+        };
+        iter = embeddedActivitiesForChannel[Symbol.iterator]();
+        while (iter !== undefined) {
+          _loopResult = _loop(iter.next());
+          continue;
+        }
+        return items;
+      }
+    }
+  }
+  const tmpResult42 = tmp(tmp2[61]);
+  const stateFromStoresArray4 = tmpResult42.useStateFromStoresArray(tmp60, tmp62);
+  if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
+    class Et {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        embeddedActivitiesForChannel = closure_6.getEmbeddedActivitiesForChannel(id);
+        _loop = function _loop(iter) {
+          let closure_0 = iter;
+          const userIds = iter.userIds;
+          findActivity = findActivity.findActivity;
+          iter = userIds.values();
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152052 */ });
+          let details;
+          if (findActivityResult != null) {
+            details = findActivityResult.details;
+          }
+          if (null != details) {
+            const _HermesInternal = HermesInternal;
+            items.push("" + iter.launchId + ":" + findActivityResult.details);
+          }
+        };
+        iter = embeddedActivitiesForChannel[Symbol.iterator]();
+        while (iter !== undefined) {
+          _loopResult = _loop(iter.next());
+          continue;
+        }
+        return items;
+      }
+    }
+    const items17 = [found1];
+    class Vt {
+      constructor() {
+        set = new Set();
+        closure_0 = set;
+        embeddedActivitiesByChannel = closure_6.getEmbeddedActivitiesByChannel();
+        item = embeddedActivitiesByChannel.forEach((arr, index) => {
+          let closure_0 = index;
+          let item = arr.forEach(() => { /* body not rendered: F152053 */ });
+        });
+        return Array.from(set);
+      }
+    }
+    cResult[34] = items17;
+    cResult[35] = Vt;
+    tmp65 = Vt;
+    tmp64 = items17;
+  } else {
+    class Et {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        embeddedActivitiesForChannel = closure_6.getEmbeddedActivitiesForChannel(id);
+        _loop = function _loop(iter) {
+          let closure_0 = iter;
+          const userIds = iter.userIds;
+          findActivity = findActivity.findActivity;
+          iter = userIds.values();
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152052 */ });
+          let details;
+          if (findActivityResult != null) {
+            details = findActivityResult.details;
+          }
+          if (null != details) {
+            const _HermesInternal = HermesInternal;
+            items.push("" + iter.launchId + ":" + findActivityResult.details);
+          }
+        };
+        iter = embeddedActivitiesForChannel[Symbol.iterator]();
+        while (iter !== undefined) {
+          _loopResult = _loop(iter.next());
+          continue;
+        }
+        return items;
+      }
+    }
+    tmp65 = cResult[35];
+  }
+  const tmpResult43 = tmp(tmp2[61]);
+  const stateFromStoresArray5 = tmpResult43.useStateFromStoresArray(tmp64, tmp65);
+  if (cResult[36] === Symbol.for("react.memo_cache_sentinel")) {
+    class Et {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        embeddedActivitiesForChannel = closure_6.getEmbeddedActivitiesForChannel(id);
+        _loop = function _loop(iter) {
+          let closure_0 = iter;
+          const userIds = iter.userIds;
+          findActivity = findActivity.findActivity;
+          iter = userIds.values();
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152052 */ });
+          let details;
+          if (findActivityResult != null) {
+            details = findActivityResult.details;
+          }
+          if (null != details) {
+            const _HermesInternal = HermesInternal;
+            items.push("" + iter.launchId + ":" + findActivityResult.details);
+          }
+        };
+        iter = embeddedActivitiesForChannel[Symbol.iterator]();
+        while (iter !== undefined) {
+          _loopResult = _loop(iter.next());
+          continue;
+        }
+        return items;
+      }
+    }
+    const items18 = [found1];
+    class Dt {
+      constructor() {
+        let tmp6;
+        const launchStates = found1.getLaunchStates();
+        const items = [];
+        const tmp2 = launchStates[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp5 = closure_3(tmp3, 2);
+          [r10016, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          let isLaunching = tmp6.isLaunching;
+          if (isLaunching) {
+            isLaunching = null != tmp7.componentId;
+          }
+          if (isLaunching) {
+            isLaunching = tmp7.componentId.length > 0;
+          }
+          if (isLaunching) {
+            let arr = items.push(tmp7.componentId);
+          }
+          continue;
+        }
+        return items;
+      }
+    }
+    cResult[36] = items18;
+    cResult[37] = Dt;
+    tmp68 = Dt;
+    tmp67 = items18;
+  } else {
+    class Et {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        embeddedActivitiesForChannel = closure_6.getEmbeddedActivitiesForChannel(id);
+        _loop = function _loop(iter) {
+          let closure_0 = iter;
+          const userIds = iter.userIds;
+          findActivity = findActivity.findActivity;
+          iter = userIds.values();
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152052 */ });
+          let details;
+          if (findActivityResult != null) {
+            details = findActivityResult.details;
+          }
+          if (null != details) {
+            const _HermesInternal = HermesInternal;
+            items.push("" + iter.launchId + ":" + findActivityResult.details);
+          }
+        };
+        iter = embeddedActivitiesForChannel[Symbol.iterator]();
+        while (iter !== undefined) {
+          _loopResult = _loop(iter.next());
+          continue;
+        }
+        return items;
+      }
+    }
+    tmp68 = cResult[37];
+  }
+  const tmpResult44 = tmp(tmp2[61]);
+  const stateFromStoresArray6 = tmpResult44.useStateFromStoresArray(tmp67, tmp68);
+  if (cResult[38] === Symbol.for("react.memo_cache_sentinel")) {
+    class Et {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        embeddedActivitiesForChannel = closure_6.getEmbeddedActivitiesForChannel(id);
+        _loop = function _loop(iter) {
+          let closure_0 = iter;
+          const userIds = iter.userIds;
+          findActivity = findActivity.findActivity;
+          iter = userIds.values();
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152052 */ });
+          let details;
+          if (findActivityResult != null) {
+            details = findActivityResult.details;
+          }
+          if (null != details) {
+            const _HermesInternal = HermesInternal;
+            items.push("" + iter.launchId + ":" + findActivityResult.details);
+          }
+        };
+        iter = embeddedActivitiesForChannel[Symbol.iterator]();
+        while (iter !== undefined) {
+          _loopResult = _loop(iter.next());
+          continue;
+        }
+        return items;
+      }
+    }
+    const items19 = [MediaPostEmbedStore];
+    class Dt {
+      constructor() {
+        let tmp6;
+        const launchStates = found1.getLaunchStates();
+        const items = [];
+        const tmp2 = launchStates[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp5 = closure_3(tmp3, 2);
+          [r10016, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          let isLaunching = tmp6.isLaunching;
+          if (isLaunching) {
+            isLaunching = null != tmp7.componentId;
+          }
+          if (isLaunching) {
+            isLaunching = tmp7.componentId.length > 0;
+          }
+          if (isLaunching) {
+            let arr = items.push(tmp7.componentId);
+          }
+          continue;
+        }
+        return items;
+      }
+    }
+    cResult[38] = items19;
+    cResult[39] = tmp72;
+    tmp71 = tmp72;
+    tmp70 = items19;
+  } else {
+    class Et {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        embeddedActivitiesForChannel = closure_6.getEmbeddedActivitiesForChannel(id);
+        _loop = function _loop(iter) {
+          let closure_0 = iter;
+          const userIds = iter.userIds;
+          findActivity = findActivity.findActivity;
+          iter = userIds.values();
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152052 */ });
+          let details;
+          if (findActivityResult != null) {
+            details = findActivityResult.details;
+          }
+          if (null != details) {
+            const _HermesInternal = HermesInternal;
+            items.push("" + iter.launchId + ":" + findActivityResult.details);
+          }
+        };
+        iter = embeddedActivitiesForChannel[Symbol.iterator]();
+        while (iter !== undefined) {
+          _loopResult = _loop(iter.next());
+          continue;
+        }
+        return items;
+      }
+    }
+    tmp71 = cResult[39];
+  }
+  const tmpResult45 = tmp(tmp2[61]);
+  const stateFromStores5 = tmpResult45.useStateFromStores(tmp70, tmp71);
+  if (cResult[40] === Symbol.for("react.memo_cache_sentinel")) {
+    class Et {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        embeddedActivitiesForChannel = closure_6.getEmbeddedActivitiesForChannel(id);
+        _loop = function _loop(iter) {
+          let closure_0 = iter;
+          const userIds = iter.userIds;
+          findActivity = findActivity.findActivity;
+          iter = userIds.values();
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152052 */ });
+          let details;
+          if (findActivityResult != null) {
+            details = findActivityResult.details;
+          }
+          if (null != details) {
+            const _HermesInternal = HermesInternal;
+            items.push("" + iter.launchId + ":" + findActivityResult.details);
+          }
+        };
+        iter = embeddedActivitiesForChannel[Symbol.iterator]();
+        while (iter !== undefined) {
+          _loopResult = _loop(iter.next());
+          continue;
+        }
+        return items;
+      }
+    }
+    const items20 = [GuildTemplateStore];
+    class Dt {
+      constructor() {
+        let tmp6;
+        const launchStates = found1.getLaunchStates();
+        const items = [];
+        const tmp2 = launchStates[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp5 = closure_3(tmp3, 2);
+          [r10016, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          let isLaunching = tmp6.isLaunching;
+          if (isLaunching) {
+            isLaunching = null != tmp7.componentId;
+          }
+          if (isLaunching) {
+            isLaunching = tmp7.componentId.length > 0;
+          }
+          if (isLaunching) {
+            let arr = items.push(tmp7.componentId);
+          }
+          continue;
+        }
+        return items;
+      }
+    }
+    const items21 = [];
+    cResult[40] = items20;
+    cResult[41] = tmp77;
+    cResult[42] = items21;
+    tmp76 = items21;
+    tmp75 = tmp77;
+    tmp74 = items20;
+  } else {
+    class Et {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        embeddedActivitiesForChannel = closure_6.getEmbeddedActivitiesForChannel(id);
+        _loop = function _loop(iter) {
+          let closure_0 = iter;
+          const userIds = iter.userIds;
+          findActivity = findActivity.findActivity;
+          iter = userIds.values();
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152052 */ });
+          let details;
+          if (findActivityResult != null) {
+            details = findActivityResult.details;
+          }
+          if (null != details) {
+            const _HermesInternal = HermesInternal;
+            items.push("" + iter.launchId + ":" + findActivityResult.details);
+          }
+        };
+        iter = embeddedActivitiesForChannel[Symbol.iterator]();
+        while (iter !== undefined) {
+          _loopResult = _loop(iter.next());
+          continue;
+        }
+        return items;
+      }
+    }
+    tmp75 = cResult[41];
+    tmp76 = cResult[42];
+  }
+  const tmpResult46 = tmp(tmp2[61]);
+  const stateFromStores6 = tmpResult46.useStateFromStores(tmp74, tmp75, tmp76);
+  if (cResult[43] === Symbol.for("react.memo_cache_sentinel")) {
+    class Et {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        embeddedActivitiesForChannel = closure_6.getEmbeddedActivitiesForChannel(id);
+        _loop = function _loop(iter) {
+          let closure_0 = iter;
+          const userIds = iter.userIds;
+          findActivity = findActivity.findActivity;
+          iter = userIds.values();
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152052 */ });
+          let details;
+          if (findActivityResult != null) {
+            details = findActivityResult.details;
+          }
+          if (null != details) {
+            const _HermesInternal = HermesInternal;
+            items.push("" + iter.launchId + ":" + findActivityResult.details);
+          }
+        };
+        iter = embeddedActivitiesForChannel[Symbol.iterator]();
+        while (iter !== undefined) {
+          _loopResult = _loop(iter.next());
+          continue;
+        }
+        return items;
+      }
+    }
+    const items22 = [GameOrganizationInviteStore];
+    class Dt {
+      constructor() {
+        let tmp6;
+        const launchStates = found1.getLaunchStates();
+        const items = [];
+        const tmp2 = launchStates[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp5 = closure_3(tmp3, 2);
+          [r10016, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          let isLaunching = tmp6.isLaunching;
+          if (isLaunching) {
+            isLaunching = null != tmp7.componentId;
+          }
+          if (isLaunching) {
+            isLaunching = tmp7.componentId.length > 0;
+          }
+          if (isLaunching) {
+            let arr = items.push(tmp7.componentId);
+          }
+          continue;
+        }
+        return items;
+      }
+    }
+    const items23 = [];
+    cResult[43] = items22;
+    cResult[44] = tmp82;
+    cResult[45] = items23;
+    tmp81 = items23;
+    tmp80 = tmp82;
+    tmp79 = items22;
+  } else {
+    class Et {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        embeddedActivitiesForChannel = closure_6.getEmbeddedActivitiesForChannel(id);
+        _loop = function _loop(iter) {
+          let closure_0 = iter;
+          const userIds = iter.userIds;
+          findActivity = findActivity.findActivity;
+          iter = userIds.values();
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152052 */ });
+          let details;
+          if (findActivityResult != null) {
+            details = findActivityResult.details;
+          }
+          if (null != details) {
+            const _HermesInternal = HermesInternal;
+            items.push("" + iter.launchId + ":" + findActivityResult.details);
+          }
+        };
+        iter = embeddedActivitiesForChannel[Symbol.iterator]();
+        while (iter !== undefined) {
+          _loopResult = _loop(iter.next());
+          continue;
+        }
+        return items;
+      }
+    }
+    tmp80 = cResult[44];
+    tmp81 = cResult[45];
+  }
+  const tmpResult47 = tmp(tmp2[61]);
+  const stateFromStores7 = tmpResult47.useStateFromStores(tmp79, tmp80, tmp81);
+  if (cResult[46] === Symbol.for("react.memo_cache_sentinel")) {
+    class Et {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        embeddedActivitiesForChannel = closure_6.getEmbeddedActivitiesForChannel(id);
+        _loop = function _loop(iter) {
+          let closure_0 = iter;
+          const userIds = iter.userIds;
+          findActivity = findActivity.findActivity;
+          iter = userIds.values();
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152052 */ });
+          let details;
+          if (findActivityResult != null) {
+            details = findActivityResult.details;
+          }
+          if (null != details) {
+            const _HermesInternal = HermesInternal;
+            items.push("" + iter.launchId + ":" + findActivityResult.details);
+          }
+        };
+        iter = embeddedActivitiesForChannel[Symbol.iterator]();
+        while (iter !== undefined) {
+          _loopResult = _loop(iter.next());
+          continue;
+        }
+        return items;
+      }
+    }
+    const items24 = [BuildOverrideStore];
+    class Dt {
+      constructor() {
+        let tmp6;
+        const launchStates = found1.getLaunchStates();
+        const items = [];
+        const tmp2 = launchStates[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp5 = closure_3(tmp3, 2);
+          [r10016, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          let isLaunching = tmp6.isLaunching;
+          if (isLaunching) {
+            isLaunching = null != tmp7.componentId;
+          }
+          if (isLaunching) {
+            isLaunching = tmp7.componentId.length > 0;
+          }
+          if (isLaunching) {
+            let arr = items.push(tmp7.componentId);
+          }
+          continue;
+        }
+        return items;
+      }
+    }
+    const items25 = [];
+    cResult[46] = items24;
+    cResult[47] = tmp87;
+    cResult[48] = items25;
+    tmp86 = items25;
+    tmp85 = tmp87;
+    tmp84 = items24;
+  } else {
+    class Et {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        embeddedActivitiesForChannel = closure_6.getEmbeddedActivitiesForChannel(id);
+        _loop = function _loop(iter) {
+          let closure_0 = iter;
+          const userIds = iter.userIds;
+          findActivity = findActivity.findActivity;
+          iter = userIds.values();
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152052 */ });
+          let details;
+          if (findActivityResult != null) {
+            details = findActivityResult.details;
+          }
+          if (null != details) {
+            const _HermesInternal = HermesInternal;
+            items.push("" + iter.launchId + ":" + findActivityResult.details);
+          }
+        };
+        iter = embeddedActivitiesForChannel[Symbol.iterator]();
+        while (iter !== undefined) {
+          _loopResult = _loop(iter.next());
+          continue;
+        }
+        return items;
+      }
+    }
+    tmp85 = cResult[47];
+    tmp86 = cResult[48];
+  }
+  const tmpResult48 = tmp(tmp2[61]);
+  const stateFromStores8 = tmpResult48.useStateFromStores(tmp84, tmp85, tmp86);
+  const tmpResult49 = tmp(tmp2[69]);
+  const codedLinksExperimentEmbeds = tmpResult49.useCodedLinksExperimentEmbeds();
+  if (cResult[49] === Symbol.for("react.memo_cache_sentinel")) {
+    class Et {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        embeddedActivitiesForChannel = closure_6.getEmbeddedActivitiesForChannel(id);
+        _loop = function _loop(iter) {
+          let closure_0 = iter;
+          const userIds = iter.userIds;
+          findActivity = findActivity.findActivity;
+          iter = userIds.values();
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152052 */ });
+          let details;
+          if (findActivityResult != null) {
+            details = findActivityResult.details;
+          }
+          if (null != details) {
+            const _HermesInternal = HermesInternal;
+            items.push("" + iter.launchId + ":" + findActivityResult.details);
+          }
+        };
+        iter = embeddedActivitiesForChannel[Symbol.iterator]();
+        while (iter !== undefined) {
+          _loopResult = _loop(iter.next());
+          continue;
+        }
+        return items;
+      }
+    }
+    cResult[49] = tmp91;
+    class Dt {
+      constructor() {
+        let tmp6;
+        const launchStates = found1.getLaunchStates();
+        const items = [];
+        const tmp2 = launchStates[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp5 = closure_3(tmp3, 2);
+          [r10016, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          let isLaunching = tmp6.isLaunching;
+          if (isLaunching) {
+            isLaunching = null != tmp7.componentId;
+          }
+          if (isLaunching) {
+            isLaunching = tmp7.componentId.length > 0;
+          }
+          if (isLaunching) {
+            let arr = items.push(tmp7.componentId);
+          }
+          continue;
+        }
+        return items;
+      }
+    }
+  } else {
+    class Et {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        embeddedActivitiesForChannel = closure_6.getEmbeddedActivitiesForChannel(id);
+        _loop = function _loop(iter) {
+          let closure_0 = iter;
+          const userIds = iter.userIds;
+          findActivity = findActivity.findActivity;
+          iter = userIds.values();
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152052 */ });
+          let details;
+          if (findActivityResult != null) {
+            details = findActivityResult.details;
+          }
+          if (null != details) {
+            const _HermesInternal = HermesInternal;
+            items.push("" + iter.launchId + ":" + findActivityResult.details);
+          }
+        };
+        iter = embeddedActivitiesForChannel[Symbol.iterator]();
+        while (iter !== undefined) {
+          _loopResult = _loop(iter.next());
+          continue;
+        }
+        return items;
+      }
+    }
+  }
+  const tmpResult50 = tmp(tmp2[70]);
+  const quests1 = tmpResult50.useQuests(tmp90);
+  ({ quests, isFetchingCurrentQuests } = quests1);
+  if (cResult[50] !== stateFromStores) {
+    class Et {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        embeddedActivitiesForChannel = closure_6.getEmbeddedActivitiesForChannel(id);
+        _loop = function _loop(iter) {
+          let closure_0 = iter;
+          const userIds = iter.userIds;
+          findActivity = findActivity.findActivity;
+          iter = userIds.values();
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152052 */ });
+          let details;
+          if (findActivityResult != null) {
+            details = findActivityResult.details;
+          }
+          if (null != details) {
+            const _HermesInternal = HermesInternal;
+            items.push("" + iter.launchId + ":" + findActivityResult.details);
+          }
+        };
+        iter = embeddedActivitiesForChannel[Symbol.iterator]();
+        while (iter !== undefined) {
+          _loopResult = _loop(iter.next());
+          continue;
+        }
+        return items;
+      }
+    }
+    if (cResult[52] === Symbol.for("react.memo_cache_sentinel")) {
+      class Zt {
+        constructor(type) {
+          return type.type === constants.PREMIUM_REFERRAL;
+        }
+      }
+      cResult[52] = Zt;
+      class Dt {
+        constructor() {
+          let tmp6;
+          const launchStates = found1.getLaunchStates();
+          const items = [];
+          const tmp2 = launchStates[Symbol.iterator]();
+          while (tmp2 !== undefined) {
+            let tmp5 = closure_3(tmp3, 2);
+            [r10016, tmp6] = tmp5;
+            let tmp7 = tmp6;
+            let isLaunching = tmp6.isLaunching;
+            if (isLaunching) {
+              isLaunching = null != tmp7.componentId;
+            }
+            if (isLaunching) {
+              isLaunching = tmp7.componentId.length > 0;
+            }
+            if (isLaunching) {
+              let arr = items.push(tmp7.componentId);
+            }
+            continue;
+          }
+          return items;
+        }
+      }
+    } else {
+      class Zt {
+        constructor(type) {
+          return type.type === constants.PREMIUM_REFERRAL;
+        }
+      }
+    }
+    class Dt {
+      constructor() {
+        let tmp6;
+        const launchStates = found1.getLaunchStates();
+        const items = [];
+        const tmp2 = launchStates[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp5 = closure_3(tmp3, 2);
+          [r10016, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          let isLaunching = tmp6.isLaunching;
+          if (isLaunching) {
+            isLaunching = null != tmp7.componentId;
+          }
+          if (isLaunching) {
+            isLaunching = tmp7.componentId.length > 0;
+          }
+          if (isLaunching) {
+            let arr = items.push(tmp7.componentId);
+          }
+          continue;
+        }
+        return items;
+      }
+    }
+    if (cResult[53] === Symbol.for("react.memo_cache_sentinel")) {
+      class Zt {
+        constructor(type) {
+          return type.type === constants.PREMIUM_REFERRAL;
+        }
+      }
+      cResult[53] = tmp96;
+      class Dt {
+        constructor() {
+          let tmp6;
+          const launchStates = found1.getLaunchStates();
+          const items = [];
+          const tmp2 = launchStates[Symbol.iterator]();
+          while (tmp2 !== undefined) {
+            let tmp5 = closure_3(tmp3, 2);
+            [r10016, tmp6] = tmp5;
+            let tmp7 = tmp6;
+            let isLaunching = tmp6.isLaunching;
+            if (isLaunching) {
+              isLaunching = null != tmp7.componentId;
+            }
+            if (isLaunching) {
+              isLaunching = tmp7.componentId.length > 0;
+            }
+            if (isLaunching) {
+              let arr = items.push(tmp7.componentId);
+            }
+            continue;
+          }
+          return items;
+        }
+      }
+    } else {
+      class Zt {
+        constructor(type) {
+          return type.type === constants.PREMIUM_REFERRAL;
+        }
+      }
+    }
+    const found = stateFromStores.filter(tmp94);
+    let mapped = found.map(tmp95);
+    found1 = mapped.filter(tmp(tmp2[64]).isNotNullish);
+    cResult[50] = stateFromStores;
+    cResult[51] = found1;
+  } else {
+    class Zt {
+      constructor(type) {
+        return type.type === constants.PREMIUM_REFERRAL;
+      }
+    }
+  }
+  found1 = tmp93;
+  if (cResult[54] === Symbol.for("react.memo_cache_sentinel")) {
+    class Zt {
+      constructor(type) {
+        return type.type === constants.PREMIUM_REFERRAL;
+      }
+    }
+    const items26 = [ReferralTrialStore];
+    class Dt {
+      constructor() {
+        let tmp6;
+        const launchStates = found1.getLaunchStates();
+        const items = [];
+        const tmp2 = launchStates[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp5 = closure_3(tmp3, 2);
+          [r10016, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          let isLaunching = tmp6.isLaunching;
+          if (isLaunching) {
+            isLaunching = null != tmp7.componentId;
+          }
+          if (isLaunching) {
+            isLaunching = tmp7.componentId.length > 0;
+          }
+          if (isLaunching) {
+            let arr = items.push(tmp7.componentId);
+          }
+          continue;
+        }
+        return items;
+      }
+    }
+    cResult[54] = items26;
+    tmp98 = items26;
+  } else {
+    class Zt {
+      constructor(type) {
+        return type.type === constants.PREMIUM_REFERRAL;
+      }
+    }
+  }
+  if (cResult[55] !== tmp93) {
+    class Zt {
+      constructor(type) {
+        return type.type === constants.PREMIUM_REFERRAL;
+      }
+    }
+    cResult[55] = tmp93;
+    class Dt {
+      constructor() {
+        let tmp6;
+        const launchStates = found1.getLaunchStates();
+        const items = [];
+        const tmp2 = launchStates[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp5 = closure_3(tmp3, 2);
+          [r10016, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          let isLaunching = tmp6.isLaunching;
+          if (isLaunching) {
+            isLaunching = null != tmp7.componentId;
+          }
+          if (isLaunching) {
+            isLaunching = tmp7.componentId.length > 0;
+          }
+          if (isLaunching) {
+            let arr = items.push(tmp7.componentId);
+          }
+          continue;
+        }
+        return items;
+      }
+    }
+    cResult[56] = tmp100;
+    tmp99 = tmp100;
+  } else {
+    class Zt {
+      constructor(type) {
+        return type.type === constants.PREMIUM_REFERRAL;
+      }
+    }
+  }
+  const tmpResult51 = tmp(tmp2[61]);
+  const stateFromStoresArray7 = tmpResult51.useStateFromStoresArray(tmp98, tmp99);
+  const tmpResult52 = tmp(tmp2[71]);
+  const trialOffer = tmpResult52.useTrialOffer(closure_64);
+  if (cResult[57] === Symbol.for("react.memo_cache_sentinel")) {
+    class Zt {
+      constructor(type) {
+        return type.type === constants.PREMIUM_REFERRAL;
+      }
+    }
+    const items27 = [UserStore];
+    class Dt {
+      constructor() {
+        let tmp6;
+        const launchStates = found1.getLaunchStates();
+        const items = [];
+        const tmp2 = launchStates[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp5 = closure_3(tmp3, 2);
+          [r10016, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          let isLaunching = tmp6.isLaunching;
+          if (isLaunching) {
+            isLaunching = null != tmp7.componentId;
+          }
+          if (isLaunching) {
+            isLaunching = tmp7.componentId.length > 0;
+          }
+          if (isLaunching) {
+            let arr = items.push(tmp7.componentId);
+          }
+          continue;
+        }
+        return items;
+      }
+    }
+    cResult[57] = items27;
+    cResult[58] = tmp105;
+    tmp104 = tmp105;
+    tmp103 = items27;
+  } else {
+    class Zt {
+      constructor(type) {
+        return type.type === constants.PREMIUM_REFERRAL;
+      }
+    }
+    tmp104 = cResult[58];
+  }
+  const tmpResult53 = tmp(tmp2[61]);
+  const stateFromStores9 = tmpResult53.useStateFromStores(tmp103, tmp104);
+  if (cResult[59] === Symbol.for("react.memo_cache_sentinel")) {
+    class Zt {
+      constructor(type) {
+        return type.type === constants.PREMIUM_REFERRAL;
+      }
+    }
+    const items28 = [EditMessageStore];
+    class Dt {
+      constructor() {
+        let tmp6;
+        const launchStates = found1.getLaunchStates();
+        const items = [];
+        const tmp2 = launchStates[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp5 = closure_3(tmp3, 2);
+          [r10016, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          let isLaunching = tmp6.isLaunching;
+          if (isLaunching) {
+            isLaunching = null != tmp7.componentId;
+          }
+          if (isLaunching) {
+            isLaunching = tmp7.componentId.length > 0;
+          }
+          if (isLaunching) {
+            let arr = items.push(tmp7.componentId);
+          }
+          continue;
+        }
+        return items;
+      }
+    }
+    cResult[59] = items28;
+    tmp107 = items28;
+  } else {
+    class Zt {
+      constructor(type) {
+        return type.type === constants.PREMIUM_REFERRAL;
+      }
+    }
+  }
+  if (cResult[60] !== id) {
+    class Zt {
+      constructor(type) {
+        return type.type === constants.PREMIUM_REFERRAL;
+      }
+    }
+    const items29 = [id];
+    class Dt {
+      constructor() {
+        let tmp6;
+        const launchStates = found1.getLaunchStates();
+        const items = [];
+        const tmp2 = launchStates[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp5 = closure_3(tmp3, 2);
+          [r10016, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          let isLaunching = tmp6.isLaunching;
+          if (isLaunching) {
+            isLaunching = null != tmp7.componentId;
+          }
+          if (isLaunching) {
+            isLaunching = tmp7.componentId.length > 0;
+          }
+          if (isLaunching) {
+            let arr = items.push(tmp7.componentId);
+          }
+          continue;
+        }
+        return items;
+      }
+    }
+    cResult[60] = id;
+    cResult[61] = tmp110;
+    cResult[62] = items29;
+    tmp109 = items29;
+    tmp108 = tmp110;
+  } else {
+    class Zt {
+      constructor(type) {
+        return type.type === constants.PREMIUM_REFERRAL;
+      }
+    }
+    tmp109 = cResult[62];
+  }
+  const tmpResult54 = tmp(tmp2[61]);
+  const stateFromStores10 = tmpResult54.useStateFromStores(tmp107, tmp108, tmp109);
+  if (cResult[63] === Symbol.for("react.memo_cache_sentinel")) {
+    class Zt {
+      constructor(type) {
+        return type.type === constants.PREMIUM_REFERRAL;
+      }
+    }
+    const items30 = [PendingReplyStore];
+    class Dt {
+      constructor() {
+        let tmp6;
+        const launchStates = found1.getLaunchStates();
+        const items = [];
+        const tmp2 = launchStates[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp5 = closure_3(tmp3, 2);
+          [r10016, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          let isLaunching = tmp6.isLaunching;
+          if (isLaunching) {
+            isLaunching = null != tmp7.componentId;
+          }
+          if (isLaunching) {
+            isLaunching = tmp7.componentId.length > 0;
+          }
+          if (isLaunching) {
+            let arr = items.push(tmp7.componentId);
+          }
+          continue;
+        }
+        return items;
+      }
+    }
+    cResult[63] = items30;
+    tmp112 = items30;
+  } else {
+    class Zt {
+      constructor(type) {
+        return type.type === constants.PREMIUM_REFERRAL;
+      }
+    }
+  }
+  if (cResult[64] !== id) {
+    class Zt {
+      constructor(type) {
+        return type.type === constants.PREMIUM_REFERRAL;
+      }
+    }
+    const items31 = [id];
+    class Dt {
+      constructor() {
+        let tmp6;
+        const launchStates = found1.getLaunchStates();
+        const items = [];
+        const tmp2 = launchStates[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp5 = closure_3(tmp3, 2);
+          [r10016, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          let isLaunching = tmp6.isLaunching;
+          if (isLaunching) {
+            isLaunching = null != tmp7.componentId;
+          }
+          if (isLaunching) {
+            isLaunching = tmp7.componentId.length > 0;
+          }
+          if (isLaunching) {
+            let arr = items.push(tmp7.componentId);
+          }
+          continue;
+        }
+        return items;
+      }
+    }
+    cResult[64] = id;
+    cResult[65] = tmp115;
+    cResult[66] = items31;
+    tmp114 = items31;
+    tmp113 = tmp115;
+  } else {
+    class Zt {
+      constructor(type) {
+        return type.type === constants.PREMIUM_REFERRAL;
+      }
+    }
+    tmp114 = cResult[66];
+  }
+  const tmpResult55 = tmp(tmp2[61]);
+  const stateFromStores11 = tmpResult55.useStateFromStores(tmp112, tmp113, tmp114);
+  if (cResult[67] === Symbol.for("react.memo_cache_sentinel")) {
+    class Zt {
+      constructor(type) {
+        return type.type === constants.PREMIUM_REFERRAL;
+      }
+    }
+    const items32 = [ReadStateStore];
+    class Dt {
+      constructor() {
+        let tmp6;
+        const launchStates = found1.getLaunchStates();
+        const items = [];
+        const tmp2 = launchStates[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp5 = closure_3(tmp3, 2);
+          [r10016, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          let isLaunching = tmp6.isLaunching;
+          if (isLaunching) {
+            isLaunching = null != tmp7.componentId;
+          }
+          if (isLaunching) {
+            isLaunching = tmp7.componentId.length > 0;
+          }
+          if (isLaunching) {
+            let arr = items.push(tmp7.componentId);
+          }
+          continue;
+        }
+        return items;
+      }
+    }
+    cResult[67] = items32;
+    tmp117 = items32;
+  } else {
+    class Zt {
+      constructor(type) {
+        return type.type === constants.PREMIUM_REFERRAL;
+      }
+    }
+  }
+  if (cResult[68] !== id) {
+    class Zt {
+      constructor(type) {
+        return type.type === constants.PREMIUM_REFERRAL;
+      }
+    }
+    const items33 = [id];
+    class Dt {
+      constructor() {
+        let tmp6;
+        const launchStates = found1.getLaunchStates();
+        const items = [];
+        const tmp2 = launchStates[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp5 = closure_3(tmp3, 2);
+          [r10016, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          let isLaunching = tmp6.isLaunching;
+          if (isLaunching) {
+            isLaunching = null != tmp7.componentId;
+          }
+          if (isLaunching) {
+            isLaunching = tmp7.componentId.length > 0;
+          }
+          if (isLaunching) {
+            let arr = items.push(tmp7.componentId);
+          }
+          continue;
+        }
+        return items;
+      }
+    }
+    cResult[68] = id;
+    cResult[69] = tmp120;
+    cResult[70] = items33;
+    tmp119 = items33;
+    tmp118 = tmp120;
+  } else {
+    class Zt {
+      constructor(type) {
+        return type.type === constants.PREMIUM_REFERRAL;
+      }
+    }
+    tmp119 = cResult[70];
+  }
+  const tmpResult56 = tmp(tmp2[61]);
+  const stateFromStores12 = tmpResult56.useStateFromStores(tmp117, tmp118, tmp119);
+  if (cResult[71] === Symbol.for("react.memo_cache_sentinel")) {
+    class Zt {
+      constructor(type) {
+        return type.type === constants.PREMIUM_REFERRAL;
+      }
+    }
+    const items34 = [GuildVerificationStore];
+    class Dt {
+      constructor() {
+        let tmp6;
+        const launchStates = found1.getLaunchStates();
+        const items = [];
+        const tmp2 = launchStates[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp5 = closure_3(tmp3, 2);
+          [r10016, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          let isLaunching = tmp6.isLaunching;
+          if (isLaunching) {
+            isLaunching = null != tmp7.componentId;
+          }
+          if (isLaunching) {
+            isLaunching = tmp7.componentId.length > 0;
+          }
+          if (isLaunching) {
+            let arr = items.push(tmp7.componentId);
+          }
+          continue;
+        }
+        return items;
+      }
+    }
+    cResult[71] = items34;
+    tmp122 = items34;
+  } else {
+    class Zt {
+      constructor(type) {
+        return type.type === constants.PREMIUM_REFERRAL;
+      }
+    }
+  }
+  if (cResult[72] !== tmp8) {
+    class Cs {
+      constructor() {
+        const canChatInGuildResult = null != closure_3 && GuildVerificationStore.canChatInGuild(tmp);
+        return canChatInGuildResult;
+      }
+    }
+    const items35 = [tmp8];
+    class Dt {
+      constructor() {
+        let tmp6;
+        const launchStates = found1.getLaunchStates();
+        const items = [];
+        const tmp2 = launchStates[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp5 = closure_3(tmp3, 2);
+          [r10016, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          let isLaunching = tmp6.isLaunching;
+          if (isLaunching) {
+            isLaunching = null != tmp7.componentId;
+          }
+          if (isLaunching) {
+            isLaunching = tmp7.componentId.length > 0;
+          }
+          if (isLaunching) {
+            let arr = items.push(tmp7.componentId);
+          }
+          continue;
+        }
+        return items;
+      }
+    }
+    cResult[72] = tmp8;
+    cResult[73] = Cs;
+    cResult[74] = items35;
+    tmp124 = items35;
+    tmp123 = Cs;
+  } else {
+    class Cs {
+      constructor() {
+        const canChatInGuildResult = null != closure_3 && GuildVerificationStore.canChatInGuild(tmp);
+        return canChatInGuildResult;
+      }
+    }
+    tmp124 = cResult[74];
+  }
+  const tmpResult57 = tmp(tmp2[61]);
+  const stateFromStores13 = tmpResult57.useStateFromStores(tmp122, tmp123, tmp124);
+  if (cResult[75] === Symbol.for("react.memo_cache_sentinel")) {
+    class Cs {
+      constructor() {
+        const canChatInGuildResult = null != closure_3 && GuildVerificationStore.canChatInGuild(tmp);
+        return canChatInGuildResult;
+      }
+    }
+    const items36 = [PermissionStore];
+    class Dt {
+      constructor() {
+        let tmp6;
+        const launchStates = found1.getLaunchStates();
+        const items = [];
+        const tmp2 = launchStates[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp5 = closure_3(tmp3, 2);
+          [r10016, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          let isLaunching = tmp6.isLaunching;
+          if (isLaunching) {
+            isLaunching = null != tmp7.componentId;
+          }
+          if (isLaunching) {
+            isLaunching = tmp7.componentId.length > 0;
+          }
+          if (isLaunching) {
+            let arr = items.push(tmp7.componentId);
+          }
+          continue;
+        }
+        return items;
+      }
+    }
+    cResult[75] = items36;
+    tmp126 = items36;
+  } else {
+    class Cs {
+      constructor() {
+        const canChatInGuildResult = null != closure_3 && GuildVerificationStore.canChatInGuild(tmp);
+        return canChatInGuildResult;
+      }
+    }
+  }
+  if (cResult[76] !== channel) {
+    class Rs {
+      constructor() {
+        return PermissionStore.can(constants2.SEND_MESSAGES, channel);
+      }
+    }
+    const items37 = [channel];
+    class Dt {
+      constructor() {
+        let tmp6;
+        const launchStates = found1.getLaunchStates();
+        const items = [];
+        const tmp2 = launchStates[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp5 = closure_3(tmp3, 2);
+          [r10016, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          let isLaunching = tmp6.isLaunching;
+          if (isLaunching) {
+            isLaunching = null != tmp7.componentId;
+          }
+          if (isLaunching) {
+            isLaunching = tmp7.componentId.length > 0;
+          }
+          if (isLaunching) {
+            let arr = items.push(tmp7.componentId);
+          }
+          continue;
+        }
+        return items;
+      }
+    }
+    cResult[76] = channel;
+    cResult[77] = Rs;
+    cResult[78] = items37;
+    tmp128 = items37;
+    tmp127 = Rs;
+  } else {
+    class Rs {
+      constructor() {
+        return PermissionStore.can(constants2.SEND_MESSAGES, channel);
+      }
+    }
+    tmp128 = cResult[78];
+  }
+  const tmpResult58 = tmp(tmp2[61]);
+  const stateFromStores14 = tmpResult58.useStateFromStores(tmp126, tmp127, tmp128);
+  tmp35(tmp2[73])(id);
+  if (cResult[79] === Symbol.for("react.memo_cache_sentinel")) {
+    class Rs {
+      constructor() {
+        return PermissionStore.can(constants2.SEND_MESSAGES, channel);
+      }
+    }
+    const items38 = [VoiceStateStore];
+    class Dt {
+      constructor() {
+        let tmp6;
+        const launchStates = found1.getLaunchStates();
+        const items = [];
+        const tmp2 = launchStates[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp5 = closure_3(tmp3, 2);
+          [r10016, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          let isLaunching = tmp6.isLaunching;
+          if (isLaunching) {
+            isLaunching = null != tmp7.componentId;
+          }
+          if (isLaunching) {
+            isLaunching = tmp7.componentId.length > 0;
+          }
+          if (isLaunching) {
+            let arr = items.push(tmp7.componentId);
+          }
+          continue;
+        }
+        return items;
+      }
+    }
+    cResult[79] = items38;
+    tmp131 = items38;
+  } else {
+    class Rs {
+      constructor() {
+        return PermissionStore.can(constants2.SEND_MESSAGES, channel);
+      }
+    }
+  }
+  if (cResult[80] !== stateFromStores2) {
+    class Ds {
+      constructor() {
+        return VoiceStateStore.getUserVoiceChannelId(set3, stateFromStores2);
+      }
+    }
+    const items39 = [stateFromStores2];
+    class Dt {
+      constructor() {
+        let tmp6;
+        const launchStates = found1.getLaunchStates();
+        const items = [];
+        const tmp2 = launchStates[Symbol.iterator]();
+        while (tmp2 !== undefined) {
+          let tmp5 = closure_3(tmp3, 2);
+          [r10016, tmp6] = tmp5;
+          let tmp7 = tmp6;
+          let isLaunching = tmp6.isLaunching;
+          if (isLaunching) {
+            isLaunching = null != tmp7.componentId;
+          }
+          if (isLaunching) {
+            isLaunching = tmp7.componentId.length > 0;
+          }
+          if (isLaunching) {
+            let arr = items.push(tmp7.componentId);
+          }
+          continue;
+        }
+        return items;
+      }
+    }
+    cResult[80] = stateFromStores2;
+    cResult[81] = Ds;
+    cResult[82] = items39;
+    tmp133 = items39;
+    tmp132 = Ds;
+  } else {
+    class Ds {
+      constructor() {
+        return VoiceStateStore.getUserVoiceChannelId(set3, stateFromStores2);
+      }
+    }
+    tmp133 = cResult[82];
+  }
+  const tmpResult59 = tmp(tmp2[61]);
+  const stateFromStores15 = tmpResult59.useStateFromStores(tmp131, tmp132, tmp133);
+  if (cResult[83] === Symbol.for("react.memo_cache_sentinel")) {
+    class Ds {
+      constructor() {
+        return VoiceStateStore.getUserVoiceChannelId(set3, stateFromStores2);
+      }
+    }
+    const items40 = [RTCConnectionStore];
+    class Gs {
+      constructor() {
+        return channelId.getChannelId();
+      }
+    }
+    const items41 = [];
+    cResult[83] = items40;
+    cResult[84] = Gs;
+    cResult[85] = items41;
+    tmp137 = items41;
+    tmp136 = Gs;
+    tmp135 = items40;
+  } else {
+    class Ds {
+      constructor() {
+        return VoiceStateStore.getUserVoiceChannelId(set3, stateFromStores2);
+      }
+    }
+    tmp136 = cResult[84];
+    tmp137 = cResult[85];
+  }
+  const tmpResult60 = tmp(tmp2[61]);
+  const stateFromStores16 = tmpResult60.useStateFromStores(tmp135, tmp136, tmp137);
+  if (cResult[86] === Symbol.for("react.memo_cache_sentinel")) {
+    class Ds {
+      constructor() {
+        return VoiceStateStore.getUserVoiceChannelId(set3, stateFromStores2);
+      }
+    }
+    const items42 = [ReferencedMessageStore];
+    class Gs {
+      constructor() {
+        return channelId.getChannelId();
+      }
+    }
+    cResult[86] = items42;
+  } else {
+    class Ds {
+      constructor() {
+        return VoiceStateStore.getUserVoiceChannelId(set3, stateFromStores2);
+      }
+    }
+  }
+  if (cResult[87] === channel.guild_id) {
+    class Ds {
+      constructor() {
+        return VoiceStateStore.getUserVoiceChannelId(set3, stateFromStores2);
+      }
+    }
+  }
+  class Bs {
+    constructor() {
+      const THREADS = constants.THREADS;
+      let message = null;
+      if (THREADS.has(channel.type)) {
+        message = null;
+        if (null != channel.parent_id) {
+          const obj = { channel_id: null, message_id: null, guild_id: null };
+          ({ parent_id: obj.channel_id, id: obj.message_id, guild_id: obj.guild_id } = channel);
+          message = ReferencedMessageStore.getMessageByReference(obj).message;
+        }
+      }
+      return message;
+    }
+  }
+  cResult[87] = channel.guild_id;
+  cResult[88] = channel.id;
+  cResult[89] = channel.parent_id;
+  cResult[90] = channel.type;
+  cResult[91] = Bs;
+}) : ((channel, ref) => {
+  let TIER_2;
+  let acceptingGiftCodes;
+  let appDirectoryEmbedApplicationFetchStates;
+  let appDirectoryEmbedApplications;
+  let channelId;
+  let channelSummariesExperiment;
+  let communicationDisabledVersion;
+  let displayNameStylesEnabled;
+  let eligible;
+  let fetchingSkuIds;
+  let guildTemplates;
+  let hasLoadedExperiments;
+  let id;
+  let id2;
+  let invalidAppDirectoryEmbedApplicationIds;
+  let isFetchingCurrentQuests;
+  let items64;
+  let items78;
+  let lazyCacheStatus;
+  let locale;
+  let mediaPostEmbeds;
+  let messageInteractionStates;
+  let messagesVersion;
+  let officialMessageColor;
+  let officialMessageStyle;
+  let pendingConnection;
+  let quests;
+  let resolvedGiftCodes;
+  let resolvingGiftCodes;
+  let roleStyle;
+  let rsvpVersion;
+  let saturation;
+  let startTime;
+  let stateFromStoresArray8;
+  let theme;
+  let tmp25;
+  let tmp66;
+  let tmp67;
+  let unloadableContentEntryMessageIds;
+  let unloadedContentEntryMessageIds;
+  let useReducedMotion;
+  let version;
+  const f106176 = () => {
+    const items = [LocalInteractionComponentStateStore.getInteractionComponentStates(), LocalInteractionComponentStateStore.getInteractionComponentStateVersion()];
+    return items;
+  };
+  channel = channel.channel;
+  const tmp = channel;
+  let tmp2 = id;
+  let obj = channel(id[61]);
+  let items = [MessageStore];
+  const items1 = [channel.id];
+  const stateFromStores = obj.useStateFromStores(items, () => MessageStore.getMessages(channel.id), items1);
+  id = channel.id;
+  const guildId = channel.getGuildId();
+  const items2 = [GuildStore];
+  const obj2 = channel(id[61]);
+  const stateFromStores1 = obj2.useStateFromStores(items2, () => GuildStore.getGuild(guildId));
+  let systemChannelFlags;
+  if (stateFromStores1 != null) {
+    systemChannelFlags = stateFromStores1.systemChannelFlags;
+  }
+  const items3 = [AuthenticationStore];
+  const tmpResult = tmp(tmp2[61]);
+  const stateFromStores2 = tmpResult.useStateFromStores(items3, () => id.getId(), []);
+  const InlineAttachmentMedia = tmp(tmp2[65]).InlineAttachmentMedia;
+  const setting = InlineAttachmentMedia.useSetting();
+  const InlineEmbedMedia = tmp(tmp2[65]).InlineEmbedMedia;
+  const setting1 = InlineEmbedMedia.useSetting();
+  const RenderEmbeds = tmp(tmp2[65]).RenderEmbeds;
+  const setting2 = RenderEmbeds.useSetting();
+  const RenderReactions = tmp(tmp2[65]).RenderReactions;
+  const setting3 = RenderReactions.useSetting();
+  const DeveloperMode = tmp(tmp2[65]).DeveloperMode;
+  const setting4 = DeveloperMode.useSetting();
+  const AnimateEmoji = tmp(tmp2[65]).AnimateEmoji;
+  const setting5 = AnimateEmoji.useSetting();
+  const AnimateStickers = tmp(tmp2[65]).AnimateStickers;
+  const setting6 = AnimateStickers.useSetting();
+  const GifAutoPlay = tmp(tmp2[65]).GifAutoPlay;
+  const setting7 = GifAutoPlay.useSetting();
+  const TimestampHourCycle = tmp(tmp2[65]).TimestampHourCycle;
+  const setting8 = TimestampHourCycle.useSetting();
+  const items4 = [ThemeStore];
+  const tmpResult77 = tmp(tmp2[61]);
+  const stateFromStores3 = tmpResult77.useStateFromStores(items4, () => theme.theme, []);
+  const tmpResult78 = tmp(tmp2[66]);
+  const isMessageSwipeActionsEnabled = tmpResult78.useIsMessageSwipeActionsEnabled();
+  const linkedLobby = channel.linkedLobby;
+  let application_id;
+  const tmp18 = closure_68(stateFromStores);
+  const tmp19 = closure_69;
+  if (linkedLobby != null) {
+    application_id = linkedLobby.application_id;
+  }
+  tmp19(stateFromStores, application_id);
+  [tmp25, r10107] = guildId(stateFromStores(tmp2[67])(stateFromStores, channel), 2);
+  guildId(stateFromStores(tmp2[67])(stateFromStores, channel), 2);
+  const items5 = [InviteStore];
+  const tmpResult79 = tmp(tmp2[61]);
+  const stateFromStores4 = tmpResult79.useStateFromStores(items5, () => InviteStore.getInvites(), []);
+  const tmpResult80 = tmp(tmp2[68]);
+  const fetchVoiceChannelInviteStartTimes = tmpResult80.useFetchVoiceChannelInviteStartTimes(stateFromStores4);
+  const items6 = [ApplicationDirectoryApplicationsStore];
+  const tmpResult81 = tmp(tmp2[61]);
+  const stateFromStoresObject = tmpResult81.useStateFromStoresObject(items6, () => {
+    const obj = { appDirectoryEmbedApplications: ApplicationDirectoryApplicationsStore.getApplications(), invalidAppDirectoryEmbedApplicationIds: ApplicationDirectoryApplicationsStore.getInvalidApplicationIds(), appDirectoryEmbedApplicationFetchStates: ApplicationDirectoryApplicationsStore.getApplicationFetchStates() };
+    return obj;
+  }, []);
+  ({ appDirectoryEmbedApplications, invalidAppDirectoryEmbedApplicationIds, appDirectoryEmbedApplicationFetchStates } = stateFromStoresObject);
+  const items7 = [items64];
+  const tmpResult82 = tmp(tmp2[61]);
+  const stateFromStoresArray = tmpResult82.useStateFromStoresArray(items7, () => items64.getFetchingOrFailedFetchingIds());
+  const items8 = [channelSummariesExperiment];
+  const tmpResult83 = tmp(tmp2[61]);
+  const stateFromStoresArray1 = tmpResult83.useStateFromStoresArray(items8, () => channelSummariesExperiment.getFetchingIds());
+  const items9 = [SKUStore];
+  const tmpResult84 = tmp(tmp2[61]);
+  const stateFromStoresArray2 = tmpResult84.useStateFromStoresArray(items9, () => fetchingSkuIds.getFetchingSkuIds());
+  const items10 = [closure_6];
+  const items11 = [id];
+  const tmpResult85 = tmp(tmp2[61]);
+  const stateFromStoresArray3 = tmpResult85.useStateFromStoresArray(items10, () => {
     const embeddedActivitiesForChannel = EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(id);
     const mapped = embeddedActivitiesForChannel.map((launchId) => launchId.launchId);
     return mapped.filter(GlobalUtils.isNotNullish);
-  }, items16);
-  const tmpResult86 = tmp(tmp2[57]);
-  const items17 = [closure_6, tmp19];
-  const stateFromStoresArray4 = tmp(tmp2[57]).useStateFromStoresArray(items17, () => {
+  }, items11);
+  const items12 = [closure_6, PresenceStore];
+  const tmpResult86 = tmp(tmp2[61]);
+  const stateFromStoresArray4 = tmpResult86.useStateFromStoresArray(items12, () => {
     const items = [];
     const embeddedActivitiesForChannel = EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(id);
-    function _loop(iter) {
+    function _loop2(iter) {
+      let closure_0 = iter;
       const userIds = iter.userIds;
+      findActivity = findActivity.findActivity;
       iter = userIds.values();
-      const findActivityResult = PresenceStore.findActivity(iter.next().value, (application_id) => application_id.application_id === iter.applicationId);
+      const findActivityResult = findActivity(iter.next().value, (application_id) => application_id.application_id === applicationId.applicationId);
       let details;
       if (findActivityResult != null) {
         details = findActivityResult.details;
@@ -214,18 +2454,18 @@ const forwardRefResult = noop.forwardRef((channel, ref) => {
     }
     let iter = embeddedActivitiesForChannel[Symbol.iterator]();
     while (iter !== undefined) {
-      let _loopResult = _loop(iter.next());
+      let _loop2Result = _loop2(iter.next());
       continue;
     }
     return items;
   });
-  const tmpResult87 = tmp(tmp2[57]);
-  const items18 = [closure_6];
-  const stateFromStoresArray5 = tmp(tmp2[57]).useStateFromStoresArray(items18, () => {
-    const set = new Set();
+  const items13 = [closure_6];
+  const tmpResult87 = tmp(tmp2[61]);
+  const stateFromStoresArray5 = tmpResult87.useStateFromStoresArray(items13, () => {
+    set = new Set();
     const embeddedActivitiesByChannel = closure_6.getEmbeddedActivitiesByChannel();
     let item = embeddedActivitiesByChannel.forEach((arr, index) => {
-      closure_0 = index;
+      let closure_0 = index;
       let item = arr.forEach((userIds) => {
         userIds = userIds.userIds;
         const item = userIds.forEach((item) => {
@@ -235,11 +2475,13 @@ const forwardRefResult = noop.forwardRef((channel, ref) => {
     });
     return Array.from(set);
   });
-  const tmpResult88 = tmp(tmp2[57]);
-  const items19 = [closure_6];
-  const stateFromStoresArray6 = tmp(tmp2[57]).useStateFromStoresArray(items19, () => {
+  const items14 = [closure_6];
+  const tmpResult88 = tmp(tmp2[61]);
+  const stateFromStoresArray6 = tmpResult88.useStateFromStoresArray(items14, () => {
+    let tmp6;
     const launchStates = closure_6.getLaunchStates();
     const items = [];
+    const tmp2 = launchStates[Symbol.iterator]();
     while (tmp2 !== undefined) {
       let tmp5 = guildId(tmp3, 2);
       [r10016, tmp6] = tmp5;
@@ -258,26 +2500,29 @@ const forwardRefResult = noop.forwardRef((channel, ref) => {
     }
     return items;
   });
-  const tmpResult89 = tmp(tmp2[57]);
-  const items20 = [MediaPostEmbedStore];
-  const stateFromStores5 = tmp(tmp2[57]).useStateFromStores(items20, () => mediaPostEmbeds.getMediaPostEmbeds());
-  const tmpResult90 = tmp(tmp2[57]);
-  const items21 = [GuildTemplateStore];
-  const stateFromStores6 = tmp(tmp2[57]).useStateFromStores(items21, () => guildTemplates.getGuildTemplates(), []);
-  const tmpResult91 = tmp(tmp2[57]);
-  const items22 = [stateFromStoresArray8];
-  const stateFromStores7 = tmp(tmp2[57]).useStateFromStores(items22, () => stateFromStoresArray8.getBuildOverrides(), []);
-  const tmpResult92 = tmp(tmp2[57]);
-  const codedLinksExperimentEmbeds = tmp(tmp2[66]).useCodedLinksExperimentEmbeds();
-  const tmpResult93 = tmp(tmp2[66]);
-  const quests1 = tmp(tmp2[67]).useQuests({ fetchPolicy: "cache-or-network", callerSource: "messages_native" });
+  const items15 = [MediaPostEmbedStore];
+  const tmpResult89 = tmp(tmp2[61]);
+  const stateFromStores5 = tmpResult89.useStateFromStores(items15, () => mediaPostEmbeds.getMediaPostEmbeds());
+  const items16 = [GuildTemplateStore];
+  const tmpResult90 = tmp(tmp2[61]);
+  const stateFromStores6 = tmpResult90.useStateFromStores(items16, () => guildTemplates.getGuildTemplates(), []);
+  const items17 = [GameOrganizationInviteStore];
+  const tmpResult91 = tmp(tmp2[61]);
+  const stateFromStores7 = tmpResult91.useStateFromStores(items17, () => invites.getInvites(), []);
+  const items18 = [stateFromStoresArray8];
+  const tmpResult92 = tmp(tmp2[61]);
+  const stateFromStores8 = tmpResult92.useStateFromStores(items18, () => stateFromStoresArray8.getBuildOverrides(), []);
+  const tmpResult93 = tmp(tmp2[69]);
+  const codedLinksExperimentEmbeds = tmpResult93.useCodedLinksExperimentEmbeds();
+  const tmpResult94 = tmp(tmp2[70]);
+  const quests1 = tmpResult94.useQuests({ fetchPolicy: "cache-or-network", callerSource: "messages_native" });
   ({ quests, isFetchingCurrentQuests } = quests1);
-  let found = stateFromStores.filter((type) => type.type === constants.PREMIUM_REFERRAL);
+  const found = stateFromStores.filter((type) => type.type === constants.PREMIUM_REFERRAL);
   let mapped = found.map((referralTrialOfferId) => referralTrialOfferId.referralTrialOfferId);
-  closure_6 = mapped.filter(tmp(tmp2[61]).isNotNullish);
-  const tmpResult94 = tmp(tmp2[67]);
-  const items23 = [ReferralTrialStore];
-  const stateFromStoresArray7 = tmp(tmp2[57]).useStateFromStoresArray(items23, () => {
+  closure_6 = mapped.filter(tmp(tmp2[64]).isNotNullish);
+  const items19 = [ReferralTrialStore];
+  const tmpResult95 = tmp(tmp2[61]);
+  const stateFromStoresArray7 = tmpResult95.useStateFromStoresArray(items19, () => {
     const mapped = closure_6.map((item) => {
       relevantUserTrialOffer = relevantUserTrialOffer.getRelevantUserTrialOffer(item);
       id = undefined;
@@ -288,135 +2533,134 @@ const forwardRefResult = noop.forwardRef((channel, ref) => {
     });
     return mapped.filter(GlobalUtils.isNotNullish);
   });
-  const tmpResult95 = tmp(tmp2[57]);
-  const trialOffer = tmp(tmp2[68]).useTrialOffer(closure_63);
-  const tmpResult96 = tmp(tmp2[68]);
-  const items24 = [UserStore];
-  const stateFromStores8 = tmp(tmp2[57]).useStateFromStores(items24, () => stateFromStores(id[69]).isPremiumExactly(authStore2.getCurrentUser(), TIER_2.TIER_2));
-  const tmpResult97 = tmp(tmp2[57]);
-  const items25 = [EditMessageStore];
-  const items26 = [id];
-  const stateFromStores9 = tmp(tmp2[57]).useStateFromStores(items25, () => EditMessageStore.getEditingMessageId(id), items26);
-  const tmpResult98 = tmp(tmp2[57]);
-  const items27 = [PendingReplyStore];
-  const items28 = [id];
-  const stateFromStores10 = tmp(tmp2[57]).useStateFromStores(items27, () => {
+  const tmpResult96 = tmp(tmp2[71]);
+  const trialOffer = tmpResult96.useTrialOffer(closure_64);
+  const items20 = [UserStore];
+  const tmpResult97 = tmp(tmp2[61]);
+  const stateFromStores9 = tmpResult97.useStateFromStores(items20, () => {
+    const obj = stateFromStores(id[72]);
+    return obj.isPremiumExactly(authStore2.getCurrentUser(), TIER_2.TIER_2);
+  });
+  const items21 = [EditMessageStore];
+  const items22 = [id];
+  const tmpResult98 = tmp(tmp2[61]);
+  const stateFromStores10 = tmpResult98.useStateFromStores(items21, () => EditMessageStore.getEditingMessageId(id), items22);
+  const items23 = [PendingReplyStore];
+  const items24 = [id];
+  const tmpResult99 = tmp(tmp2[61]);
+  const stateFromStores11 = tmpResult99.useStateFromStores(items23, () => {
     const pendingReply = PendingReplyStore.getPendingReply(id);
     id = undefined;
     if (pendingReply != null) {
       id = pendingReply.message.id;
     }
     return id;
-  }, items28);
-  const tmpResult99 = tmp(tmp2[57]);
-  const items29 = [ReadStateStore];
-  const items30 = [id];
-  const stateFromStores11 = tmp(tmp2[57]).useStateFromStores(items29, () => ReadStateStore.getOldestUnreadMessageId(id), items30);
-  const tmpResult100 = tmp(tmp2[57]);
-  const items31 = [GuildVerificationStore];
-  const items32 = [guildId];
-  const stateFromStores12 = tmp(tmp2[57]).useStateFromStores(items31, () => {
-    let canChatInGuildResult = null != guildId;
-    if (canChatInGuildResult) {
-      canChatInGuildResult = GuildVerificationStore.canChatInGuild(tmp);
-    }
+  }, items24);
+  const items25 = [ReadStateStore];
+  const items26 = [id];
+  const tmpResult100 = tmp(tmp2[61]);
+  const stateFromStores12 = tmpResult100.useStateFromStores(items25, () => ReadStateStore.getOldestUnreadMessageId(id), items26);
+  const items27 = [GuildVerificationStore];
+  const items28 = [guildId];
+  const tmpResult101 = tmp(tmp2[61]);
+  const stateFromStores13 = tmpResult101.useStateFromStores(items27, () => {
+    const canChatInGuildResult = null != guildId && GuildVerificationStore.canChatInGuild(tmp);
     return canChatInGuildResult;
-  }, items32);
-  const tmpResult101 = tmp(tmp2[57]);
-  const items33 = [PermissionStore];
-  const items34 = [channel];
-  const stateFromStores13 = tmp(tmp2[57]).useStateFromStores(items33, () => PermissionStore.can(constants2.SEND_MESSAGES, channel), items34);
-  const tmp52 = PermissionStore;
-  const tmpResult102 = tmp(tmp2[57]);
-  const tmp54 = stateFromStores(tmp2[70])(id);
-  const items35 = [VoiceStateStore];
-  const items36 = [stateFromStores2];
-  const stateFromStores14 = tmp(tmp2[57]).useStateFromStores(items35, () => VoiceStateStore.getUserVoiceChannelId(closure_2_60, stateFromStores2), items36);
-  const tmp55 = VoiceStateStore;
-  const tmpResult103 = tmp(tmp2[57]);
-  const items37 = [RTCConnectionStore];
-  const stateFromStores15 = tmp(tmp2[57]).useStateFromStores(items37, () => channelId.getChannelId(), []);
-  const tmpResult104 = tmp(tmp2[57]);
-  const items38 = [ReferencedMessageStore];
-  const items39 = [channel];
-  const stateFromStores16 = tmp(tmp2[57]).useStateFromStores(items38, () => {
+  }, items28);
+  const items29 = [PermissionStore];
+  const items30 = [channel];
+  const tmpResult102 = tmp(tmp2[61]);
+  const stateFromStores14 = tmpResult102.useStateFromStores(items29, () => PermissionStore.can(constants2.SEND_MESSAGES, channel), items30);
+  const items31 = [VoiceStateStore];
+  const items32 = [stateFromStores2];
+  const tmp53 = stateFromStores(tmp2[73])(id);
+  const tmpResult103 = tmp(tmp2[61]);
+  const stateFromStores15 = tmpResult103.useStateFromStores(items31, () => VoiceStateStore.getUserVoiceChannelId(set3, stateFromStores2), items32);
+  const items33 = [RTCConnectionStore];
+  const tmpResult104 = tmp(tmp2[61]);
+  const stateFromStores16 = tmpResult104.useStateFromStores(items33, () => channelId.getChannelId(), []);
+  const items34 = [ReferencedMessageStore];
+  const items35 = [channel];
+  const tmpResult105 = tmp(tmp2[61]);
+  const stateFromStores17 = tmpResult105.useStateFromStores(items34, () => {
     const THREADS = constants.THREADS;
     let message = null;
     if (THREADS.has(channel.type)) {
       message = null;
-      if (null != tmp.parent_id) {
+      if (null != channel.parent_id) {
         const obj = { channel_id: null, message_id: null, guild_id: null };
-        ({ parent_id: obj.channel_id, id: obj.message_id, guild_id: obj.guild_id } = tmp);
+        ({ parent_id: obj.channel_id, id: obj.message_id, guild_id: obj.guild_id } = channel);
         message = ReferencedMessageStore.getMessageByReference(obj).message;
       }
     }
     return message;
-  }, items39);
-  const tmpResult105 = tmp(tmp2[57]);
-  const items40 = [GiftCodeStore];
-  const stateFromStoresObject2 = tmp(tmp2[57]).useStateFromStoresObject(items40, () => ({ resolvingGiftCodes: GiftCodeStore.getResolvingCodes(), resolvedGiftCodes: GiftCodeStore.getResolvedCodes(), acceptingGiftCodes: GiftCodeStore.getAcceptingCodes() }), []);
-  ({ resolvingGiftCodes, resolvedGiftCodes, acceptingGiftCodes } = stateFromStoresObject2);
-  const tmpResult106 = tmp(tmp2[57]);
-  const items41 = [ChannelRTCStore];
+  }, items35);
+  const items36 = [GiftCodeStore];
+  const tmpResult106 = tmp(tmp2[61]);
+  const stateFromStoresObject1 = tmpResult106.useStateFromStoresObject(items36, () => {
+    const obj = { resolvingGiftCodes: GiftCodeStore.getResolvingCodes(), resolvedGiftCodes: GiftCodeStore.getResolvedCodes(), acceptingGiftCodes: GiftCodeStore.getAcceptingCodes() };
+    return obj;
+  }, []);
+  ({ resolvingGiftCodes, resolvedGiftCodes, acceptingGiftCodes } = stateFromStoresObject1);
+  const items37 = [ChannelRTCStore];
+  const items38 = [id];
+  const tmpResult107 = tmp(tmp2[61]);
+  const stateFromStores18 = tmpResult107.useStateFromStores(items37, () => ChannelRTCStore.getParticipants(id).length, items38);
+  const items39 = [UploadStore];
+  const items40 = [id];
+  const tmpResult108 = tmp(tmp2[61]);
+  const stateFromStores19 = tmpResult108.useStateFromStores(items39, () => UploadStore.getFiles(id), items40);
+  const items41 = [ReferencedMessageStore];
   const items42 = [id];
-  const stateFromStores17 = tmp(tmp2[57]).useStateFromStores(items41, () => ChannelRTCStore.getParticipants(id).length, items42);
-  const tmpResult107 = tmp(tmp2[57]);
-  const items43 = [UploadStore];
-  const items44 = [id];
-  const stateFromStores18 = tmp(tmp2[57]).useStateFromStores(items43, () => UploadStore.getFiles(id), items44);
-  const tmpResult108 = tmp(tmp2[57]);
-  const items45 = [ReferencedMessageStore];
-  const items46 = [id];
-  const stateFromStores19 = tmp(tmp2[57]).useStateFromStores(items45, () => ReferencedMessageStore.getReplyIdsForChannel(id), items46);
-  const tmpResult109 = tmp(tmp2[57]);
-  const items47 = [stateFromStores2];
-  const stateFromStoresObject3 = tmp(tmp2[57]).useStateFromStoresObject(items47, () => ({ useReducedMotion: stateFromStores2.useReducedMotion, roleStyle: stateFromStores2.roleStyle, officialMessageStyle: stateFromStores2.officialMessageStyle, saturation: stateFromStores2.saturation, displayNameStylesEnabled: stateFromStores2.displayNameStylesEnabled }), []);
-  ({ useReducedMotion, roleStyle, officialMessageStyle, saturation, displayNameStylesEnabled } = stateFromStoresObject3);
-  const tmpResult110 = tmp(tmp2[57]);
-  const items48 = [ThreadMessageStore];
-  const items49 = [id];
-  const stateFromStores20 = tmp(tmp2[57]).useStateFromStores(items48, () => ThreadMessageStore.getChannelThreadsVersion(id), items49);
-  const tmpResult111 = tmp(tmp2[57]);
-  const items50 = [InteractionStore];
-  const stateFromStoresObject4 = tmp(tmp2[57]).useStateFromStoresObject(items50, () => messageInteractionStates.getMessageInteractionStates());
-  const tmpResult112 = tmp(tmp2[57]);
-  const items51 = [LocalInteractionComponentStateStore];
-  const tmpResult113 = tmp(tmp2[57]);
-  [tmp67, tmp68] = guildId(tmp(tmp2[57]).useStateFromStores(items51, () => {
-    const items = [LocalInteractionComponentStateStore.getInteractionComponentStates(), LocalInteractionComponentStateStore.getInteractionComponentStateVersion()];
-    return items;
-  }, [], tmp(tmp2[71]).isVersionEqual), 2);
-  const tmp66 = guildId(tmp(tmp2[57]).useStateFromStores(items51, () => {
-    const items = [LocalInteractionComponentStateStore.getInteractionComponentStates(), LocalInteractionComponentStateStore.getInteractionComponentStateVersion()];
-    return items;
-  }, [], tmp(tmp2[71]).isVersionEqual), 2);
-  const items52 = [ExperimentStore];
-  let stateFromStores21 = tmp(tmp2[57]).useStateFromStores(items52, () => hasLoadedExperiments.hasLoadedExperiments);
-  const tmpResult114 = tmp(tmp2[57]);
-  const isSpamMessageRequest = tmp(tmp2[72]).useIsSpamMessageRequest(channel.id);
-  const tmpResult115 = tmp(tmp2[72]);
-  let tmp72 = null != stateFromStores;
-  const isMessageRequest = tmp(tmp2[73]).useIsMessageRequest(channel.id);
-  if (tmp72) {
-    tmp72 = stateFromStores.ready || stateFromStores.cached;
-    const tmp73 = stateFromStores.ready || stateFromStores.cached;
+  const tmpResult109 = tmp(tmp2[61]);
+  const stateFromStores20 = tmpResult109.useStateFromStores(items41, () => ReferencedMessageStore.getReplyIdsForChannel(id), items42);
+  const items43 = [stateFromStores2];
+  const tmpResult110 = tmp(tmp2[61]);
+  const stateFromStoresObject2 = tmpResult110.useStateFromStoresObject(items43, () => ({ useReducedMotion: stateFromStores2.useReducedMotion, roleStyle: stateFromStores2.roleStyle, officialMessageStyle: stateFromStores2.officialMessageStyle, saturation: stateFromStores2.saturation, displayNameStylesEnabled: stateFromStores2.displayNameStylesEnabled }), []);
+  ({ useReducedMotion, roleStyle, officialMessageStyle, saturation, displayNameStylesEnabled } = stateFromStoresObject2);
+  const items44 = [ThreadMessageStore];
+  const items45 = [id];
+  const tmpResult111 = tmp(tmp2[61]);
+  const stateFromStores21 = tmpResult111.useStateFromStores(items44, () => ThreadMessageStore.getChannelThreadsVersion(id), items45);
+  const items46 = [InteractionStore];
+  const tmpResult112 = tmp(tmp2[61]);
+  const stateFromStoresObject3 = tmpResult112.useStateFromStoresObject(items46, () => messageInteractionStates.getMessageInteractionStates());
+  const items47 = [LocalInteractionComponentStateStore];
+  const tmpResult113 = tmp(tmp2[61]);
+  [tmp66, tmp67] = guildId(tmpResult113.useStateFromStores(items47, f106176, [], tmp(tmp2[74]).isVersionEqual), 2);
+  guildId(tmpResult113.useStateFromStores(items47, f106176, [], tmp(tmp2[74]).isVersionEqual), 2);
+  const items48 = [ExperimentStore];
+  const tmpResult114 = tmp(tmp2[61]);
+  let stateFromStores22 = tmpResult114.useStateFromStores(items48, () => hasLoadedExperiments.hasLoadedExperiments);
+  const tmpResult115 = tmp(tmp2[75]);
+  const isSpamMessageRequest = tmpResult115.useIsSpamMessageRequest(channel.id);
+  let tmp71 = null != stateFromStores;
+  const tmpResult116 = tmp(tmp2[76]);
+  const isMessageRequest = tmpResult116.useIsMessageRequest(channel.id);
+  const tmp23 = guildId;
+  const tmp26 = InviteStore;
+  const tmp51 = PermissionStore;
+  const tmp54 = VoiceStateStore;
+  if (tmp71) {
+    tmp71 = stateFromStores.ready || stateFromStores.cached;
   }
-  const tmp74 = null != stateFromStores && stateFromStores.cached;
-  const tmp75 = null != stateFromStores && stateFromStores.ready && !stateFromStores.loadingMore;
-  const tmpResult116 = tmp(tmp2[73]);
-  const items53 = [GuildScheduledEventStore];
-  const stateFromStores22 = tmp(tmp2[57]).useStateFromStores(items53, () => rsvpVersion.getRsvpVersion());
-  const tmpResult117 = tmp(tmp2[57]);
-  const items54 = [GuildAutomodMessageStore];
-  const stateFromStores23 = tmp(tmp2[57]).useStateFromStores(items54, () => messagesVersion.getMessagesVersion());
-  const tmpResult118 = tmp(tmp2[57]);
-  const items55 = [GuildMemberStore];
-  const stateFromStores24 = tmp(tmp2[57]).useStateFromStores(items55, () => communicationDisabledVersion.getCommunicationDisabledVersion());
-  const tmpResult119 = tmp(tmp2[57]);
-  const items56 = [GuildMemberStore];
-  const items57 = [guildId, stateFromStores];
-  const stateFromStoresObject5 = tmp(tmp2[57]).useStateFromStoresObject(items56, () => {
+  const items49 = [GuildScheduledEventStore];
+  const tmp73 = null != stateFromStores && stateFromStores.cached;
+  const tmp74 = null != stateFromStores && stateFromStores.ready && !stateFromStores.loadingMore;
+  const tmpResult117 = tmp(tmp2[61]);
+  const stateFromStores23 = tmpResult117.useStateFromStores(items49, () => rsvpVersion.getRsvpVersion());
+  const items50 = [GuildAutomodMessageStore];
+  const tmpResult118 = tmp(tmp2[61]);
+  const stateFromStores24 = tmpResult118.useStateFromStores(items50, () => messagesVersion.getMessagesVersion());
+  const items51 = [GuildMemberStore];
+  const tmpResult119 = tmp(tmp2[61]);
+  const stateFromStores25 = tmpResult119.useStateFromStores(items51, () => communicationDisabledVersion.getCommunicationDisabledVersion());
+  const items52 = [GuildMemberStore];
+  const items53 = [guildId, stateFromStores];
+  const tmpResult120 = tmp(tmp2[61]);
+  const stateFromStoresObject4 = tmpResult120.useStateFromStoresObject(items52, () => {
     if (null != guildId) {
+      const arr = stateFromStores;
       if (null != stateFromStores) {
         let obj = {};
         const item = arr.forEach((item) => {
@@ -435,65 +2679,63 @@ const forwardRefResult = noop.forwardRef((channel, ref) => {
         });
         return obj;
       }
-      arr = stateFromStores;
     }
     return {};
-  }, items57);
-  const tmpResult120 = tmp(tmp2[57]);
-  const items58 = [tmp52];
-  const stateFromStores25 = tmp(tmp2[57]).useStateFromStores(items58, () => PermissionStore.can(constants2.MODERATE_MEMBERS, stateFromStores1));
-  const tmpResult121 = tmp(tmp2[57]);
+  }, items53);
+  const items54 = [tmp51];
+  const tmpResult121 = tmp(tmp2[61]);
+  const stateFromStores26 = tmpResult121.useStateFromStores(items54, () => PermissionStore.can(constants2.MODERATE_MEMBERS, stateFromStores1));
   let id1;
+  const useCurrentUserCommunicationDisabled = tmp(tmp2[78]).useCurrentUserCommunicationDisabled;
+  tmp(tmp2[78]);
   if (stateFromStores1 != null) {
     id1 = stateFromStores1.id;
   }
-  const tmpResult122 = tmp(tmp2[75]);
-  const items59 = [LocaleStore];
-  const stateFromStores26 = tmp(tmp2[57]).useStateFromStores(items59, () => locale.locale);
-  const tmpResult123 = tmp(tmp2[57]);
-  const isPaymentsBlocked = tmp(tmp2[76]).useIsPaymentsBlocked();
-  const tmpResult124 = tmp(tmp2[76]);
-  const items60 = [JoinedThreadsStore];
-  const stateFromStores27 = tmp(tmp2[57]).useStateFromStores(items60, () => {
-    let hasJoinedResult = channel.isForumPost();
-    if (hasJoinedResult) {
-      hasJoinedResult = JoinedThreadsStore.hasJoined(id);
-    }
+  const items55 = [LocaleStore];
+  const tmp82 = tmp23(useCurrentUserCommunicationDisabled(id1), 2)[1];
+  const tmpResult123 = tmp(tmp2[61]);
+  const stateFromStores27 = tmpResult123.useStateFromStores(items55, () => locale.locale);
+  const tmpResult124 = tmp(tmp2[79]);
+  const isPaymentsBlocked = tmpResult124.useIsPaymentsBlocked();
+  const items56 = [JoinedThreadsStore];
+  const tmpResult125 = tmp(tmp2[61]);
+  const stateFromStores28 = tmpResult125.useStateFromStores(items56, () => {
+    const hasJoinedResult = channel.isForumPost() && JoinedThreadsStore.hasJoined(id);
     return hasJoinedResult;
   });
-  const tmpResult125 = tmp(tmp2[57]);
-  const items61 = [MediaPostSharePromptStore];
-  const stateFromStores28 = tmp(tmp2[57]).useStateFromStores(items61, () => MediaPostSharePromptStore.shouldDisplayPrompt(id));
-  const tmpResult126 = tmp(tmp2[57]);
-  const items62 = [PushFeedbackStore];
-  const stateFromStores29 = tmp(tmp2[57]).useStateFromStores(items62, () => eligible.isEligible());
-  const tmpResult127 = tmp(tmp2[57]);
-  const items63 = [CacheStore];
-  const stateFromStores30 = tmp(tmp2[57]).useStateFromStores(items63, () => lazyCacheStatus.getLazyCacheStatus());
-  const tmpResult128 = tmp(tmp2[57]);
-  const messageJumpAndroidKeyboardHeight = tmp(tmp2[77]).useMessageJumpAndroidKeyboardHeight();
-  const tmpResult129 = tmp(tmp2[77]);
-  const tmp89 = stateFromStores(tmp2[78])();
-  channelSummariesExperiment = tmp(tmp2[79]).useChannelSummariesExperiment(channel);
-  const tmpResult130 = tmp(tmp2[79]);
-  const items64 = [SummaryStore];
-  const items65 = [channelSummariesExperiment, channel.id];
-  const stateFromStores31 = tmp(tmp2[57]).useStateFromStores(items64, () => {
+  const items57 = [MediaPostSharePromptStore];
+  const tmpResult126 = tmp(tmp2[61]);
+  const stateFromStores29 = tmpResult126.useStateFromStores(items57, () => MediaPostSharePromptStore.shouldDisplayPrompt(id));
+  const items58 = [PushFeedbackStore];
+  const tmpResult127 = tmp(tmp2[61]);
+  const stateFromStores30 = tmpResult127.useStateFromStores(items58, () => eligible.isEligible());
+  const items59 = [CacheStore];
+  const tmpResult128 = tmp(tmp2[61]);
+  const stateFromStores31 = tmpResult128.useStateFromStores(items59, () => lazyCacheStatus.getLazyCacheStatus());
+  const tmpResult129 = tmp(tmp2[80]);
+  const messageJumpAndroidKeyboardHeight = tmpResult129.useMessageJumpAndroidKeyboardHeight();
+  const tmp90 = stateFromStores(tmp2[81])();
+  const tmpResult130 = tmp(tmp2[82]);
+  channelSummariesExperiment = tmpResult130.useChannelSummariesExperiment(channel);
+  const items60 = [SummaryStore];
+  const items61 = [channelSummariesExperiment, channel.id];
+  const tmpResult131 = tmp(tmp2[61]);
+  const stateFromStores32 = tmpResult131.useStateFromStores(items60, () => {
     let selectedSummaryResult = null;
     if (channelSummariesExperiment) {
       selectedSummaryResult = SummaryStore.selectedSummary(channel.id);
     }
     return selectedSummaryResult;
-  }, items65);
-  const tmpResult131 = tmp(tmp2[57]);
-  const isConversationTopicHeaderEnabled = tmp(tmp2[80]).useIsConversationTopicHeaderEnabled(channel.guild_id, "messages_conversation_header");
-  let tmp93;
+  }, items61);
+  const tmpResult132 = tmp(tmp2[83]);
+  const isConversationTopicHeaderEnabled = tmpResult132.useIsConversationTopicHeaderEnabled(channel.guild_id, "messages_conversation_header");
+  let tmp94;
   if (isConversationTopicHeaderEnabled) {
-    tmp93 = tmp24(tmp2[81])(channel.id);
+    tmp94 = tmp22(tmp2[84])(channel.id);
   }
-  const items66 = [channel.id, , , , ];
-  ({ hasMoreAfter: arr70[1], hasMoreBefore: arr70[2], length: arr70[3], ready: arr70[4] } = stateFromStores);
-  const effect1 = obj6.useEffect(() => {
+  const items62 = [channel.id, , , , ];
+  ({ hasMoreAfter: arr66[1], hasMoreBefore: arr66[2], length: arr66[3], ready: arr66[4] } = stateFromStores);
+  const effect = stateFromStores1.useEffect(() => {
     const ready = stateFromStores.ready;
     let hasMoreAfter = !ready;
     if (ready) {
@@ -506,34 +2748,36 @@ const forwardRefResult = noop.forwardRef((channel, ref) => {
       hasMoreAfter = arr.hasMoreAfter;
     }
     if (!hasMoreAfter) {
-      const obj = DimensionActionCreatorsDefault;
       const _Date = Date;
+      const obj = DimensionActionCreatorsDefault;
       const result = obj.updateChannelDimensions(channel.id, Date.now(), 1, 1, 0);
     }
-  }, items66);
-  const tmpResult132 = tmp(tmp2[80]);
-  const shouldTrackAnnouncementMessageViews = tmp(tmp2[83]).useShouldTrackAnnouncementMessageViews({ guild: stateFromStores1, channel, messages: stateFromStores, isMessagesReady: tmp72 });
-  const tmpResult133 = tmp(tmp2[83]);
-  const shouldTrackRichPresenceInviteEmbedViews = tmp(tmp2[83]).useShouldTrackRichPresenceInviteEmbedViews({ messages: stateFromStores, isMessagesReady: tmp72 });
-  const tmpResult134 = tmp(tmp2[83]);
-  const shouldTrackOfficialMessageViews = tmp(tmp2[83]).useShouldTrackOfficialMessageViews({ guild: stateFromStores1, messages: stateFromStores, isMessagesReady: tmp72 });
-  const tmpResult135 = tmp(tmp2[83]);
-  const shouldTrackVoiceInviteEmbedViews = tmp(tmp2[83]).useShouldTrackVoiceInviteEmbedViews({ messages: stateFromStores, isMessagesReady: tmp72 });
-  const tmpResult136 = tmp(tmp2[83]);
-  const shouldDisplaySpoilerObscurity = tmp(tmp2[84]).useShouldDisplaySpoilerObscurity(channel);
-  const tmpResult137 = tmp(tmp2[84]);
-  const items67 = [id, guildId];
-  const isAgeVerified = tmp(tmp2[85]).useIsAgeVerified();
-  const effect2 = obj6.useEffect(() => {
-    stateFromStores(id[86]).handleChannelSelect();
+  }, items62);
+  const tmpResult133 = tmp(tmp2[86]);
+  const shouldTrackAnnouncementMessageViews = tmpResult133.useShouldTrackAnnouncementMessageViews({ guild: stateFromStores1, channel, messages: stateFromStores, isMessagesReady: tmp71 });
+  const tmpResult134 = tmp(tmp2[86]);
+  const shouldTrackRichPresenceInviteEmbedViews = tmpResult134.useShouldTrackRichPresenceInviteEmbedViews({ messages: stateFromStores, isMessagesReady: tmp71 });
+  const tmpResult135 = tmp(tmp2[86]);
+  const shouldTrackOfficialMessageViews = tmpResult135.useShouldTrackOfficialMessageViews({ guild: stateFromStores1, messages: stateFromStores, isMessagesReady: tmp71 });
+  const tmpResult136 = tmp(tmp2[86]);
+  const shouldTrackVoiceInviteEmbedViews = tmpResult136.useShouldTrackVoiceInviteEmbedViews({ messages: stateFromStores, isMessagesReady: tmp71 });
+  const tmpResult137 = tmp(tmp2[87]);
+  const shouldDisplaySpoilerObscurity = tmpResult137.useShouldDisplaySpoilerObscurity(channel);
+  const items63 = [id, guildId];
+  const tmpResult138 = tmp(tmp2[88]);
+  const isAgeVerified = tmpResult138.useIsAgeVerified();
+  const effect1 = stateFromStores1.useEffect(() => {
+    let obj = stateFromStores(id[89]);
+    obj.handleChannelSelect();
     return () => {
-      stateFromStores(id[86]).handleChannelSelect();
+      const obj = stateFromStores(id[89]);
+      obj.handleChannelSelect();
     };
-  }, items67);
-  const tmpResult138 = tmp(tmp2[85]);
-  const shouldDisableInteractiveComponents = tmp(tmp2[87]).useShouldDisableInteractiveComponents(channel.id);
-  items68 = [];
-  const tmpResult139 = tmp(tmp2[87]);
+  }, items63);
+  const tmpResult139 = tmp(tmp2[90]);
+  const shouldDisableInteractiveComponents = tmpResult139.useShouldDisableInteractiveComponents(channel.id);
+  items64 = [];
+  const tmp104 = closure_28(channel.id);
   let item = stateFromStores.forEach((messageReference) => {
     messageReference = messageReference.messageReference;
     let message_id;
@@ -541,23 +2785,23 @@ const forwardRefResult = noop.forwardRef((channel, ref) => {
       message_id = messageReference.message_id;
     }
     if (null != message_id) {
-      items68.push(message_id);
+      items64.push(message_id);
     }
   });
-  const tmp103 = closure_27(channel.id);
-  const tmp105 = closure_28(items68);
-  const items69 = [ExplicitMediaStore];
-  const items70 = [id];
-  const stateFromStores32 = tmp(tmp2[57]).useStateFromStores(items69, () => ExplicitMediaStore.getChannelFpInfo(id), items70);
-  const tmpResult140 = tmp(tmp2[57]);
-  const items71 = [FamilyCenterPendingConnectionStore];
-  const stateFromStores33 = tmp(tmp2[57]).useStateFromStores(items71, () => pendingConnection.getPendingConnection());
-  const tmpResult141 = tmp(tmp2[57]);
-  const tmp108 = stateFromStores(tmp2[88])();
-  ({ unloadedContentEntryMessageIds, unloadableContentEntryMessageIds } = stateFromStores(tmp2[89])(stateFromStores));
-  const tmp109 = stateFromStores(tmp2[89])(stateFromStores);
-  const items72 = [UserStore];
-  const stateFromStores34 = tmp(tmp2[57]).useStateFromStores(items72, () => {
+  const items65 = [ExplicitMediaStore];
+  const items66 = [id];
+  const tmp106 = closure_29(items64);
+  const tmpResult140 = tmp(tmp2[61]);
+  const stateFromStores33 = tmpResult140.useStateFromStores(items65, () => ExplicitMediaStore.getChannelFpInfo(id), items66);
+  const items67 = [FamilyCenterPendingConnectionStore];
+  const tmpResult141 = tmp(tmp2[61]);
+  const stateFromStores34 = tmpResult141.useStateFromStores(items67, () => pendingConnection.getPendingConnection());
+  const tmp109 = stateFromStores(tmp2[91])();
+  ({ unloadedContentEntryMessageIds, unloadableContentEntryMessageIds } = stateFromStores(tmp2[92])(stateFromStores));
+  stateFromStores(tmp2[92])(stateFromStores);
+  const items68 = [UserStore];
+  const tmpResult142 = tmp(tmp2[61]);
+  const stateFromStores35 = tmpResult142.useStateFromStores(items68, () => {
     const currentUser = authStore2.getCurrentUser();
     let flag;
     if (currentUser != null) {
@@ -568,30 +2812,31 @@ const forwardRefResult = noop.forwardRef((channel, ref) => {
     }
     return flag;
   });
-  const tmpResult142 = tmp(tmp2[57]);
-  const items73 = [BasicGuildStore];
-  const stateFromStores35 = tmp(tmp2[57]).useStateFromStores(items73, () => version.getVersion());
-  const tmpResult143 = tmp(tmp2[57]);
-  const colorStore = tmp(tmp2[90]).useColorStore((palette) => Object.keys(palette.palette).length);
-  const tmpResult144 = tmp(tmp2[90]);
-  const items74 = [EmojiStore];
-  const stateFromStores36 = tmp(tmp2[57]).useStateFromStores(items74, () => EmojiStore.getGuildEmoji(guildId));
-  const tmpResult145 = tmp(tmp2[57]);
-  const items75 = [tmp55];
-  const items76 = [guildId];
-  const stateFromStores37 = tmp(tmp2[57]).useStateFromStores(items75, () => {
+  const items69 = [BasicGuildStore];
+  const tmpResult143 = tmp(tmp2[61]);
+  const stateFromStores36 = tmpResult143.useStateFromStores(items69, () => version.getVersion());
+  const tmpResult144 = tmp(tmp2[93]);
+  const colorStore = tmpResult144.useColorStore((palette) => Object.keys(palette.palette).length);
+  const items70 = [EmojiStore];
+  const tmpResult145 = tmp(tmp2[61]);
+  const stateFromStores37 = tmpResult145.useStateFromStores(items70, () => EmojiStore.getGuildEmoji(guildId));
+  const items71 = [tmp54];
+  const items72 = [guildId];
+  const tmpResult146 = tmp(tmp2[61]);
+  const stateFromStores38 = tmpResult146.useStateFromStores(items71, () => {
     if (null == guildId) {
       return null;
     } else {
       const voiceStates = VoiceStateStore.getVoiceStates(tmp);
-      return messages_MessagesUtils.getVoiceStateChannelSummaryFromVoiceStates(voiceStates);
+      const obj = messages_MessagesUtils;
+      return obj.getVoiceStateChannelSummaryFromVoiceStates(voiceStates);
     }
-  }, items76);
-  const tmpResult146 = tmp(tmp2[57]);
-  const items77 = [SortedVoiceStateStore, VoiceChannelStartTimeStore, tmp28, ChannelStore];
-  const stateFromStoresObject6 = tmp(tmp2[57]).useStateFromStoresObject(items77, () => {
+  }, items72);
+  const items73 = [SortedVoiceStateStore, VoiceChannelStartTimeStore, tmp26, ChannelStore];
+  const tmpResult147 = tmp(tmp2[61]);
+  const stateFromStoresObject5 = tmpResult147.useStateFromStoresObject(items73, () => {
     const obj = {};
-    const invites = InviteStore.getInvites();
+    invites = InviteStore.getInvites();
     const values = invites.values();
     const iter = values[Symbol.iterator]();
     const nextResult = iter.next();
@@ -603,7 +2848,7 @@ const forwardRefResult = noop.forwardRef((channel, ref) => {
         id1 = channel.id;
       }
       if (null != id1) {
-        let obj4 = channel(id[91]);
+        let obj4 = channel(id[94]);
         if (obj4.isVoiceChannelInvite(tmp3)) {
           id = tmp3.channel.id;
           let guild = tmp3.guild;
@@ -632,15 +2877,15 @@ const forwardRefResult = noop.forwardRef((channel, ref) => {
     }
     return obj;
   });
-  const tmpResult147 = tmp(tmp2[57]);
-  const items78 = [SessionsStore];
-  stateFromStoresArray8 = tmp(tmp2[57]).useStateFromStoresArray(items78, () => {
-    const items = [...closure_1_51.getRemoteActivities(), ...closure_1_51.getHiddenActivities()];
-    return items.filter(channel(id[61]).isNotNullish);
+  const items74 = [SessionsStore];
+  const tmpResult148 = tmp(tmp2[61]);
+  stateFromStoresArray8 = tmpResult148.useStateFromStoresArray(items74, () => {
+    const items = [...closure_1_52.getRemoteActivities(), ...closure_1_52.getHiddenActivities()];
+    return items.filter(channel(id[64]).isNotNullish);
   });
-  const tmpResult148 = tmp(tmp2[57]);
-  const items79 = [ActivityLauncherStore];
-  const stateFromStoresObject7 = tmp(tmp2[57]).useStateFromStoresObject(items79, () => stateFromStoresArray8.reduce((acc, application_id) => {
+  const items75 = [ActivityLauncherStore];
+  const tmpResult149 = tmp(tmp2[61]);
+  const stateFromStoresObject6 = tmpResult149.useStateFromStoresObject(items75, () => stateFromStoresArray8.reduce((acc, application_id) => {
     if (null == application_id.application_id) {
       return acc;
     } else {
@@ -651,15 +2896,15 @@ const forwardRefResult = noop.forwardRef((channel, ref) => {
       return acc;
     }
   }, {}));
-  const tmpResult149 = tmp(tmp2[57]);
-  const items80 = [AuthorizedAppsStore];
-  const stateFromStoresArray9 = tmp(tmp2[57]).useStateFromStoresArray(items80, () => {
+  const items76 = [AuthorizedAppsStore];
+  const tmpResult150 = tmp(tmp2[61]);
+  const stateFromStoresArray9 = tmpResult150.useStateFromStoresArray(items76, () => {
     const items = [authStore.getNewestTokens(), authStore.getApplicationFetchStateVersion()];
     return items;
   }, []);
-  const tmpResult150 = tmp(tmp2[57]);
-  const items81 = [UserStore];
-  const stateFromStores38 = tmp(tmp2[57]).useStateFromStores(items81, () => {
+  const items77 = [UserStore];
+  const tmpResult151 = tmp(tmp2[61]);
+  const stateFromStores39 = tmpResult151.useStateFromStores(items77, () => {
     const currentUser = authStore2.getCurrentUser();
     let displayNameStyles;
     if (currentUser != null) {
@@ -667,79 +2912,35 @@ const forwardRefResult = noop.forwardRef((channel, ref) => {
     }
     return displayNameStyles;
   });
-  const tmpResult151 = tmp(tmp2[57]);
-  const fetchSocialLayerStorefrontProductDetailsEmbedApplications = tmp(tmp2[92]).useFetchSocialLayerStorefrontProductDetailsEmbedApplications(stateFromStores);
-  const obj3 = { profile: null, children: null };
-  const tmp121 = closure_66;
-  const tmpResult152 = tmp(tmp2[92]);
-  obj3.profile = tmp(tmp2[93]).Profiles.Messages;
+  const tmpResult152 = tmp(tmp2[95]);
+  const fetchSocialLayerStorefrontProductDetailsEmbedApplications = tmpResult152.useFetchSocialLayerStorefrontProductDetailsEmbedApplications(stateFromStores);
+  const obj3 = { profile: tmp(tmp2[98]).Profiles.Messages, children: items78 };
+  const tmp22Result = stateFromStores(tmp2[98]);
   let isThreadResult = channel.isThread();
+  const tmp122 = closure_67;
   if (isThreadResult) {
-    isThreadResult = closure_65(tmp24(tmp2[94]), { absolute: true });
+    isThreadResult = closure_66(tmp22(tmp2[96]), { absolute: true });
   }
-  const items82 = [isThreadResult, ];
-  let obj4 = { ref, theme: stateFromStores3, saturation, isStaff: stateFromStores34, animateEmoji: setting5, animateStickers: setting6, containerWidth: tmp108, gifAutoPlay: setting7, timestampHourCycle: setting8, inlineAttachmentMedia: setting, inlineEmbedMedia: setting1, renderEmbeds: setting2, renderReactions: setting3, developerMode: setting4, roleStyle, officialMessageStyle, guildId, currentUserId: stateFromStores2, channelId: id, isMessagesReady: tmp72, isMessagesCached: tmp74, isMessagesAckable: tmp75, isMessageRequest, isSpamMessageRequest, messageAuthorActivities: stateFromStoresObject, invites: stateFromStores4, appDirectoryEmbedApplications, invalidAppDirectoryEmbedApplicationIds, invalidApplicationIds: stateFromStoresArray, applicationAssetFetchingIds: stateFromStoresArray1, messages: stateFromStores, messagesWithActivitiesLaunching: stateFromStoresArray6, activityInstanceIds: stateFromStoresArray3, activityParticipants: stateFromStoresArray5, activityInstancePresenceDetails: stateFromStoresArray4, appDirectoryEmbedApplicationFetchStates, mediaPostPreviewEmbeds: stateFromStores5, guildTemplates: stateFromStores6, buildOverrides: stateFromStores7, fetchingSkuIds: stateFromStoresArray2, experimentEmbeds: codedLinksExperimentEmbeds, quests, isFetchingCurrentQuests, editingMessageId: stateFromStores9, replyingMessageId: stateFromStores10, oldestUnreadMessageId: stateFromStores11, canChat: stateFromStores12, canSendMessages: stateFromStores13, isCallActive: tmp54, voiceStatePrivateChannelId: stateFromStores14, currentClientVoiceChannelId: stateFromStores15, voiceStateChannelIdSummaryForGuild: stateFromStores37, resolvingGiftCodes, resolvedGiftCodes, acceptingGiftCodes, participantsLength: stateFromStores17, uploads: stateFromStores18, repliedIds: stateFromStores19, useReducedMotion, displayNameStylesEnabled, channelThreadsVersion: stateFromStores20, rsvpVersion: stateFromStores22, failedMessagesVersion: stateFromStores23, communicationDisabledVersion: stateFromStores24, messageAuthorMembers: stateFromStoresObject5, forwardGuildsVersion: stateFromStores35, interactionStates: stateFromStoresObject4, interactionComponentStates: tmp67, interactionComponentStatesVersion: tmp68, hasLoadedExperiments: null, guildSystemChannelFlags: null, currentUserCommunicationDisabled: null, renderCommunicationDisabled: null, userSettingsLocale: null, paymentsBlocked: null, isFollowingForumPost: null, showMediaPostSharePrompt: null, showPushFeedback: null, cacheStoreLoaded: null, androidKeyboardHeight: null, selectedSummary: null, selectedConversation: null, keyboardType: null, shouldTrackAnnouncementMessageViews: null, shouldTrackRichPresenceInviteEmbedViews: null, shouldTrackOfficialMessageViews: null, shouldTrackVoiceInviteEmbedViews: null, shouldObscureSpoiler: null, shouldDisableInteractiveComponents: null, channelPolls: null, messageReferencePolls: null, explicitMediaFalsePositiveInfo: null, familyCenterPendingConnection: null, threadStartingReferenceMessage: null, unloadedContentEntryMessageIds: null, unloadableContentEntryMessageIds: null, resolvedReferralTrialOfferIds: null, referralTrialOfferId: null, isPremiumTier2User: null, activityInviteMessageIds: null, guildInviteColorsFetched: null, isAgeVerified: null, guildEmojis: null, enableSwipeActions: null, selfActivities: null, activityLaunchJoinStates: null, authorizedAppsTokens: null, currentUserDisplayNameStyles: null, voiceInviteDataByChannelId: null, officialMessageColor: null };
-  const tmp125 = closure_65;
-  const tmp24Result = stateFromStores(tmp2[93]);
-  if (stateFromStores21) {
-    stateFromStores21 = tmp72;
+  items78 = [isThreadResult, ];
+  let obj4 = { ref, theme: stateFromStores3, saturation, isStaff: stateFromStores35, animateEmoji: setting5, animateStickers: setting6, containerWidth: tmp109, gifAutoPlay: setting7, timestampHourCycle: setting8, inlineAttachmentMedia: setting, inlineEmbedMedia: setting1, renderEmbeds: setting2, renderReactions: setting3, developerMode: setting4, roleStyle, officialMessageStyle, guildId, currentUserId: stateFromStores2, channelId: id, isMessagesReady: tmp71, isMessagesCached: tmp73, isMessagesAckable: tmp74, isMessageRequest, isSpamMessageRequest, messageAuthorActivities: tmp18, invites: stateFromStores4, appDirectoryEmbedApplications, invalidAppDirectoryEmbedApplicationIds, invalidApplicationIds: stateFromStoresArray, applicationAssetFetchingIds: stateFromStoresArray1, messages: stateFromStores, messagesWithActivitiesLaunching: stateFromStoresArray6, activityInstanceIds: stateFromStoresArray3, activityParticipants: stateFromStoresArray5, activityInstancePresenceDetails: stateFromStoresArray4, appDirectoryEmbedApplicationFetchStates, mediaPostPreviewEmbeds: stateFromStores5, guildTemplates: stateFromStores6, gameOrganizationInvites: stateFromStores7, buildOverrides: stateFromStores8, fetchingSkuIds: stateFromStoresArray2, experimentEmbeds: codedLinksExperimentEmbeds, quests, isFetchingCurrentQuests, editingMessageId: stateFromStores10, replyingMessageId: stateFromStores11, oldestUnreadMessageId: stateFromStores12, canChat: stateFromStores13, canSendMessages: stateFromStores14, isCallActive: tmp53, voiceStatePrivateChannelId: stateFromStores15, currentClientVoiceChannelId: stateFromStores16, voiceStateChannelIdSummaryForGuild: stateFromStores38, resolvingGiftCodes, resolvedGiftCodes, acceptingGiftCodes, participantsLength: stateFromStores18, uploads: stateFromStores19, repliedIds: stateFromStores20, useReducedMotion, displayNameStylesEnabled, channelThreadsVersion: stateFromStores21, rsvpVersion: stateFromStores23, failedMessagesVersion: stateFromStores24, communicationDisabledVersion: stateFromStores25, messageAuthorMembers: stateFromStoresObject4, forwardGuildsVersion: stateFromStores36, interactionStates: stateFromStoresObject3, interactionComponentStates: tmp66, interactionComponentStatesVersion: tmp67, hasLoadedExperiments: stateFromStores22, guildSystemChannelFlags: systemChannelFlags, currentUserCommunicationDisabled: tmp82, renderCommunicationDisabled: stateFromStores26, userSettingsLocale: stateFromStores27, paymentsBlocked: isPaymentsBlocked, isFollowingForumPost: stateFromStores28, showMediaPostSharePrompt: stateFromStores29, showPushFeedback: stateFromStores30, cacheStoreLoaded: "initializing" !== stateFromStores31, androidKeyboardHeight: messageJumpAndroidKeyboardHeight, selectedSummary: stateFromStores32, selectedConversation: tmp94, keyboardType: tmp90, shouldTrackAnnouncementMessageViews, shouldTrackRichPresenceInviteEmbedViews, shouldTrackOfficialMessageViews, shouldTrackVoiceInviteEmbedViews, shouldObscureSpoiler: shouldDisplaySpoilerObscurity, shouldDisableInteractiveComponents, channelPolls: tmp104, messageReferencePolls: tmp106, explicitMediaFalsePositiveInfo: stateFromStores33, familyCenterPendingConnection: stateFromStores34, threadStartingReferenceMessage: stateFromStores17, unloadedContentEntryMessageIds, unloadableContentEntryMessageIds, resolvedReferralTrialOfferIds: stateFromStoresArray7, referralTrialOfferId: id2, isPremiumTier2User: stateFromStores9, activityInviteMessageIds: tmp25, guildInviteColorsFetched: colorStore, isAgeVerified, guildEmojis: stateFromStores37, enableSwipeActions: isMessageSwipeActionsEnabled, selfActivities: stateFromStoresArray8, activityLaunchJoinStates: stateFromStoresObject6, authorizedAppsTokens: stateFromStoresArray9, currentUserDisplayNameStyles: stateFromStores39, voiceInviteDataByChannelId: stateFromStoresObject5, officialMessageColor };
+  const tmp126 = closure_66;
+  const tmp22Result2 = stateFromStores(tmp2[97]);
+  if (stateFromStores22) {
+    stateFromStores22 = tmp71;
   }
-  obj4.hasLoadedExperiments = stateFromStores21;
-  obj4.guildSystemChannelFlags = systemChannelFlags;
-  obj4.currentUserCommunicationDisabled = tmp25(tmpResult122.useCurrentUserCommunicationDisabled(id1), 2)[1];
-  obj4.renderCommunicationDisabled = stateFromStores25;
-  obj4.userSettingsLocale = stateFromStores26;
-  obj4.paymentsBlocked = isPaymentsBlocked;
-  obj4.isFollowingForumPost = stateFromStores27;
-  obj4.showMediaPostSharePrompt = stateFromStores28;
-  obj4.showPushFeedback = stateFromStores29;
-  obj4.cacheStoreLoaded = "initializing" !== stateFromStores30;
-  obj4.androidKeyboardHeight = messageJumpAndroidKeyboardHeight;
-  obj4.selectedSummary = stateFromStores31;
-  obj4.selectedConversation = tmp93;
-  obj4.keyboardType = tmp89;
-  obj4.shouldTrackAnnouncementMessageViews = shouldTrackAnnouncementMessageViews;
-  obj4.shouldTrackRichPresenceInviteEmbedViews = shouldTrackRichPresenceInviteEmbedViews;
-  obj4.shouldTrackOfficialMessageViews = shouldTrackOfficialMessageViews;
-  obj4.shouldTrackVoiceInviteEmbedViews = shouldTrackVoiceInviteEmbedViews;
-  obj4.shouldObscureSpoiler = shouldDisplaySpoilerObscurity;
-  obj4.shouldDisableInteractiveComponents = shouldDisableInteractiveComponents;
-  obj4.channelPolls = tmp103;
-  obj4.messageReferencePolls = tmp105;
-  obj4.explicitMediaFalsePositiveInfo = stateFromStores32;
-  obj4.familyCenterPendingConnection = stateFromStores33;
-  obj4.threadStartingReferenceMessage = stateFromStores16;
-  obj4.unloadedContentEntryMessageIds = unloadedContentEntryMessageIds;
-  obj4.unloadableContentEntryMessageIds = unloadableContentEntryMessageIds;
-  obj4.resolvedReferralTrialOfferIds = stateFromStoresArray7;
-  let id2;
+  id2 = undefined;
   if (trialOffer != null) {
     id2 = trialOffer.id;
   }
-  obj4.referralTrialOfferId = id2;
-  obj4.isPremiumTier2User = stateFromStores8;
-  obj4.activityInviteMessageIds = tmp27;
-  obj4.guildInviteColorsFetched = colorStore;
-  obj4.isAgeVerified = isAgeVerified;
-  obj4.guildEmojis = stateFromStores36;
-  obj4.enableSwipeActions = isMessageSwipeActionsEnabled;
-  obj4.selfActivities = stateFromStoresArray8;
-  obj4.activityLaunchJoinStates = stateFromStoresObject7;
-  obj4.authorizedAppsTokens = stateFromStoresArray9;
-  obj4.currentUserDisplayNameStyles = stateFromStores38;
-  obj4.voiceInviteDataByChannelId = stateFromStoresObject6;
-  let officialMessageColor;
+  officialMessageColor = undefined;
   if (stateFromStores1 != null) {
     officialMessageColor = stateFromStores1.officialMessageColor;
   }
-  obj4.officialMessageColor = officialMessageColor;
   const merged = Object.assign(channel);
-  items82[1] = tmp125(stateFromStores(tmp2[95]), obj4);
-  obj3.children = items82;
-  return tmp121(tmp24Result, obj3);
-});
+  items78[1] = tmp126(tmp22Result2, obj4);
+  return tmp122(tmp22Result, obj3);
+}));
 forwardRefResult.displayName = "MessagesConnected";
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/messages/native/Messages.tsx");
 
 export default forwardRefResult;

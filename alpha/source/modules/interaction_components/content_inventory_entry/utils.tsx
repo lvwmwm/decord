@@ -1,12 +1,12 @@
-// Module ID: 7748
-// Function ID: 7749
+// Module ID: 7792
+// Function ID: 7793
 // Name: utils
-// Dependencies: [1074, 1385, 2]
+// Dependencies: [1085, 1390, 2]
 // Exports: isContentInventoryFallbackEmbed
 
-// Module 7748 (utils)
-import Constants from "Constants" /* 1074 */;
-import FlagUtils from "FlagUtils" /* 1385 */;
+// Module 7792 (utils)
+import Constants from "Constants" /* 1085 */;
+import FlagUtils from "FlagUtils" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 const MessageEmbedFlags = Constants.MessageEmbedFlags;
@@ -14,8 +14,10 @@ const result = size.fileFinishedImporting("modules/interaction_components/conten
 
 export const isContentInventoryFallbackEmbed = function isContentInventoryFallbackEmbed(flags) {
   let num = flags.flags;
+  const hasFlag = FlagUtils.hasFlag;
+  FlagUtils;
   if (num == null) {
     num = 0;
   }
-  return FlagUtils.hasFlag(num, MessageEmbedFlags.IS_CONTENT_INVENTORY_ENTRY);
+  return hasFlag(num, MessageEmbedFlags.IS_CONTENT_INVENTORY_ENTRY);
 };

@@ -1,29 +1,42 @@
-// Module ID: 6040
-// Function ID: 6041
+// Module ID: 5933
+// Function ID: 5934
 // Name: GuildJoinRequestAnalyticUtils
-// Dependencies: [502, 2107, 1074, 1241, 2]
+// Dependencies: [502, 2112, 1085, 1252, 2]
 // Exports: trackMemberApplicationAction, trackMemberApplicationInterviewMessage, trackMemberApplicationViewed, trackMemberVerificationApplicationViewed
 
-// Module 6040 (GuildJoinRequestAnalyticUtils)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+// Module 5933 (GuildJoinRequestAnalyticUtils)
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2107 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import size from "module_2" /* 2 */;
 
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const size = fn(2);
+const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/guild_member_verification/GuildJoinRequestAnalyticUtils.tsx");
 
 export const trackMemberApplicationViewed = function trackMemberApplicationViewed(arg0) {
+  let applicationStatus;
+  let applicationUserId;
+  let guildId;
   ({ guildId, applicationUserId, applicationStatus } = arg0);
   const obj = AnalyticsUtilsDefault;
-  obj.track(AnalyticEvents.GUILD_MEMBER_APPLICATION_VIEWED, { guild_id: guildId, viewing_user_id: AuthenticationStore.getId(), application_user_id: applicationUserId, application_status: applicationStatus });
+  const obj2 = { guild_id: guildId, viewing_user_id: AuthenticationStore.getId(), application_user_id: applicationUserId, application_status: applicationStatus };
+  obj.track(AnalyticEvents.GUILD_MEMBER_APPLICATION_VIEWED, obj2);
 };
 export const trackMemberApplicationAction = function trackMemberApplicationAction(arg0) {
+  let actionType;
+  let applicationUserId;
+  let guildId;
   ({ guildId, actionType, applicationUserId } = arg0);
   const obj = AnalyticsUtilsDefault;
-  obj.track(AnalyticEvents.GUILD_MEMBER_APPLICATION_ACTION, { guild_id: guildId, action_type: actionType, application_user_id: applicationUserId, viewing_user_id: AuthenticationStore.getId() });
+  const obj2 = { guild_id: guildId, action_type: actionType, application_user_id: applicationUserId, viewing_user_id: AuthenticationStore.getId() };
+  obj.track(AnalyticEvents.GUILD_MEMBER_APPLICATION_ACTION, obj2);
 };
 export const trackMemberApplicationInterviewMessage = function trackMemberApplicationInterviewMessage(guildId) {
+  let channelId;
+  let joinRequestStatus;
+  let joinRequestUserId;
+  let messageId;
   guildId = guildId.guildId;
   ({ messageId, channelId, joinRequestStatus, joinRequestUserId } = guildId);
   const id = AuthenticationStore.getId();
@@ -32,8 +45,12 @@ export const trackMemberApplicationInterviewMessage = function trackMemberApplic
   if (member != null) {
     joinedAt = member.joinedAt;
   }
-  AnalyticsUtilsDefault.track(AnalyticEvents.GUILD_MEMBER_APPLICATION_INTERVIEW_MESSAGE, { guild_id: guildId, channel_id: channelId, message_id: messageId, message_user_id: id, is_member: null != joinedAt, join_request_status: joinRequestStatus, join_request_user_id: joinRequestUserId });
+  const tmp4 = null != joinedAt;
+  const obj = AnalyticsUtilsDefault;
+  obj.track(AnalyticEvents.GUILD_MEMBER_APPLICATION_INTERVIEW_MESSAGE, { guild_id: guildId, channel_id: channelId, message_id: messageId, message_user_id: id, is_member: tmp4, join_request_status: joinRequestStatus, join_request_user_id: joinRequestUserId });
 };
 export const trackMemberVerificationApplicationViewed = function trackMemberVerificationApplicationViewed(guild_id) {
-  AnalyticsUtilsDefault.track(AnalyticEvents.MEMBER_VERIFICATION_APPLICATION_VIEWED, { guild_id });
+  const obj = AnalyticsUtilsDefault;
+  const obj2 = { guild_id };
+  obj.track(AnalyticEvents.MEMBER_VERIFICATION_APPLICATION_VIEWED, obj2);
 };

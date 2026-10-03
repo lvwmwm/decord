@@ -1,22 +1,24 @@
-// Module ID: 3908
-// Function ID: 3909
-// Dependencies: [1119, 3909, 1154, 2]
+// Module ID: 3917
+// Function ID: 3918
+// Dependencies: [1130, 3918, 1165, 2]
 
-// Module 3908
-import AssetJsonUtils from "AssetJsonUtils" /* 1119 */;
-import _mod3909 from "module_3909" /* 3909 */;
-import module_1154_mod from "module_1154" /* 1154 */;
+// Module 3917
+import AssetJsonUtils from "AssetJsonUtils" /* 1130 */;
+import AssetRegistry from "AssetRegistry" /* 3918 */;
+import module_1165_mod from "module_1165" /* 1165 */;
 import size from "module_2" /* 2 */;
 
-let module_1154 = module_1154_mod;
-const loader = module_1154.createLoader({
-  () => {
-    const jsonAsset = AssetJsonUtils.loadJsonAsset(_mod3909);
+let obj = {
+  "en-US": () => {
+    const obj = AssetJsonUtils;
+    const jsonAsset = obj.loadJsonAsset(AssetRegistry);
     return jsonAsset.then((result) => ({ default: result }));
   }
-}, "en-US");
-let module_1154 = module_1154_mod;
-const messagesProxy = module_1154.makeMessagesProxy(loader);
+};
+let module_1165 = module_1165_mod;
+const loader = module_1165.createLoader(obj, "en-US");
+module_1165 = module_1165_mod;
+const messagesProxy = module_1165.makeMessagesProxy(loader);
 const result = size.fileFinishedImporting("modules/core/web/SystemTray.messages.js");
 
 export default messagesProxy;

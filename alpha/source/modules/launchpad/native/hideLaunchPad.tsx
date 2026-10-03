@@ -1,12 +1,12 @@
-// Module ID: 10624
-// Function ID: 10625
+// Module ID: 10702
+// Function ID: 10703
 // Name: hideLaunchPad
-// Dependencies: [1074, 1110, 2]
+// Dependencies: [1085, 1121, 2]
 // Exports: default
 
-// Module 10624 (hideLaunchPad)
-import Constants from "Constants" /* 1074 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
+// Module 10702 (hideLaunchPad)
+import Constants from "Constants" /* 1085 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import size from "module_2" /* 2 */;
 
 const ComponentActions = Constants.ComponentActions;

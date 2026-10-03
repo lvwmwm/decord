@@ -1,13 +1,13 @@
-// Module ID: 13425
-// Function ID: 13426
+// Module ID: 13485
+// Function ID: 13486
 // Name: isClientClipsCapable
-// Dependencies: [4870, 13424, 1364, 2]
+// Dependencies: [4915, 13484, 1369, 2]
 // Exports: default
 
-// Module 13425 (isClientClipsCapable)
-import PlatformUtilsAll from "PlatformUtils" /* 1364 */;
-import Constants from "Constants" /* 4870 */;
-import ClipsExperiment2 from "ClipsExperiment" /* 13424 */;
+// Module 13485 (isClientClipsCapable)
+import PlatformUtilsAll from "PlatformUtils" /* 1369 */;
+import Constants from "Constants" /* 4915 */;
+import ClipsExperiment2 from "ClipsExperiment" /* 13484 */;
 import size from "module_2" /* 2 */;
 
 const Features = Constants.Features;
@@ -18,14 +18,9 @@ export default function isClientClipsCapable(getMediaEngine) {
   let ignorePlatformRestriction = ClipsExperiment.getConfig({ location: "isClipsClientCapable" }).ignorePlatformRestriction;
   const mediaEngine = getMediaEngine.getMediaEngine();
   if (!ignorePlatformRestriction) {
-    let isDesktopResult = PlatformUtilsAll.isDesktop();
-    if (isDesktopResult) {
-      isDesktopResult = mediaEngine.supports(Features.CLIPS);
-    }
-    if (isDesktopResult) {
-      isDesktopResult = mediaEngine.hasClipsV3Support();
-    }
-    ignorePlatformRestriction = isDesktopResult;
+    const obj2 = PlatformUtilsAll;
+    ignorePlatformRestriction = obj2.isDesktop() && mediaEngine.supports(Features.CLIPS) && mediaEngine.hasClipsV3Support();
+    const isDesktopResult = obj2.isDesktop() && mediaEngine.supports(Features.CLIPS) && mediaEngine.hasClipsV3Support();
   }
   return ignorePlatformRestriction;
 };

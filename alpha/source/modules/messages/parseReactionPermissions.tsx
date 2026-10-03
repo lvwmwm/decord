@@ -1,15 +1,24 @@
-// Module ID: 11066
-// Function ID: 11067
+// Module ID: 10029
+// Function ID: 10030
 // Name: parseReactionPermissions
 // Dependencies: [2]
 // Exports: default
 
-// Module 11066 (parseReactionPermissions)
+// Module 10029 (parseReactionPermissions)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/parseReactionPermissions.tsx");
 
 export default function parseReactionPermissions(arg0) {
+  let canAddNewReactions;
+  let canChat;
+  let channel;
+  let communicationDisabled;
+  let isActiveChannelOrUnarchivableThread;
+  let isAutomodQuarantined;
+  let isLurking;
+  let renderReactions;
+  let tmp4;
   ({ channel, canChat, isLurking, isActiveChannelOrUnarchivableThread, renderReactions, canAddNewReactions, communicationDisabled, isAutomodQuarantined } = arg0);
   const isPrivateResult = channel.isPrivate();
   let isSystemDMResult = channel.isSystemDM();
@@ -23,16 +32,11 @@ export default function parseReactionPermissions(arg0) {
   if (canChat) {
     canChat = !isMediaThreadResult;
   }
-  const obj = { disableReactionReads: !renderReactions, disableReactionCreates: null, disableReactionUpdates: null };
-  let tmp4 = isLurking;
-  if (!isLurking) {
-    tmp4 = !canChat;
-  }
+  const obj = { disableReactionReads: !renderReactions, disableReactionCreates: tmp4, disableReactionUpdates: isSystemDMResult };
+  tmp4 = isLurking || !canChat;
   if (!tmp4) {
     tmp4 = !((true === canAddNewReactions || isPrivateResult) && !isSystemDMResult && isActiveChannelOrUnarchivableThread && !isMediaThreadResult);
-    const tmp5 = (true === canAddNewReactions || isPrivateResult) && !isSystemDMResult && isActiveChannelOrUnarchivableThread && !isMediaThreadResult;
   }
-  obj.disableReactionCreates = tmp4;
   if (!isSystemDMResult) {
     isSystemDMResult = isLurking;
   }
@@ -45,6 +49,5 @@ export default function parseReactionPermissions(arg0) {
   if (!isSystemDMResult) {
     isSystemDMResult = true === isAutomodQuarantined;
   }
-  obj.disableReactionUpdates = isSystemDMResult;
   return obj;
 };

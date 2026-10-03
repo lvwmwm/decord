@@ -1,25 +1,23 @@
-// Module ID: 17933
-// Function ID: 17934
+// Module ID: 18019
+// Function ID: 18020
 // Name: AVErrorAudioCaptureSampleRateMismatch
-// Dependencies: [4883, 1993, 4868, 1091, 9068, 17921, 2]
+// Dependencies: [4928, 1999, 4913, 1102, 9095, 18007, 2]
 
-// Module 17933 (AVErrorAudioCaptureSampleRateMismatch)
-import DurationsDefault from "Durations" /* 1091 */;
-import AVError from "AVError" /* 9068 */;
-import AVErrorContext from "AVErrorContext" /* 17921 */;
-import MediaEngineStatsStore from "MediaEngineStatsStore" /* 4883 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4868 */;
+// Module 18019 (AVErrorAudioCaptureSampleRateMismatch)
+import DurationsDefault from "Durations" /* 1102 */;
+import AVError from "AVError" /* 9095 */;
+import AVErrorContext from "AVErrorContext" /* 18007 */;
+import MediaEngineStatsStore from "MediaEngineStatsStore" /* 4928 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 let closure_5 = 10 * DurationsDefault.Millis.SECOND;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorAudioCaptureSampleRateMismatch.tsx");
-
-export const AVErrorAudioCaptureSampleRateMismatchDefinition = {
+let obj = {
   getActiveErrors() {
     const rTCConnection = RTCConnectionStore.getRTCConnection();
     let num;
+    const obj = RTCConnectionStore;
     if (rTCConnection != null) {
       num = rTCConnection.getDurationSeconds();
     }
@@ -28,13 +26,15 @@ export const AVErrorAudioCaptureSampleRateMismatchDefinition = {
     }
     if (num >= 30) {
       const _performance = performance;
+      const nowResult = performance.now();
       if (nowResult - MediaEngineStore.getLastAudioInputDeviceChangeTimestamp() >= closure_5) {
-        const rTCConnection1 = RTCConnectionStore.getRTCConnection();
+        const getConnectionStats = MediaEngineStatsStore.getConnectionStats;
+        const rTCConnection1 = obj.getRTCConnection();
         let mediaEngineConnectionId;
         if (rTCConnection1 != null) {
           mediaEngineConnectionId = rTCConnection1.getMediaEngineConnectionId();
         }
-        const connectionStats = MediaEngineStatsStore.getConnectionStats(mediaEngineConnectionId);
+        const connectionStats = getConnectionStats(mediaEngineConnectionId);
         let num2;
         if (connectionStats != null) {
           const outbound = connectionStats.stats.rtp.outbound;
@@ -50,16 +50,19 @@ export const AVErrorAudioCaptureSampleRateMismatchDefinition = {
         let tmp5;
         if (Math.abs(num2) > 30) {
           const obj2 = { type: AVError.AVError.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH, audioCaptureSampleRateMismatchPercent: num2 };
-          const merged = Object.assign(AVErrorContext.getVoiceChannelErrorContext());
+          const obj4 = AVErrorContext;
+          const merged = Object.assign(obj4.getVoiceChannelErrorContext());
           const items = [obj2];
           tmp5 = items;
         }
         return tmp5;
       }
-      nowResult = performance.now();
     }
   },
   makeErrorContextKey(mediaSessionId) {
     return "" + mediaSessionId.mediaSessionId + ":" + mediaSessionId.audioInputDeviceName;
   }
 };
+const result = size.fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorAudioCaptureSampleRateMismatch.tsx");
+
+export const AVErrorAudioCaptureSampleRateMismatchDefinition = obj;

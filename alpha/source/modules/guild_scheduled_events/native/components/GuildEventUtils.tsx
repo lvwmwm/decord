@@ -1,43 +1,52 @@
-// Module ID: 9252
-// Function ID: 9253
+// Module ID: 9258
+// Function ID: 9259
 // Name: GuildEventUtils
-// Dependencies: [9176, 9185, 5519, 9186, 2]
+// Dependencies: [9180, 9190, 5812, 9191, 2]
 // Exports: getEventLocationIconComponent, getEventLocationIconSource
 
-// Module 9252 (GuildEventUtils)
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5519 */;
-import _modDef9185 from "module_9185" /* 9185 */;
+// Module 9258 (GuildEventUtils)
+import EntityUtils from "EntityUtils" /* 9180 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9190 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const utils_ChannelUtils = tmp(5812);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventUtils.tsx");
 
 export const getEventLocationIconSource = function getEventLocationIconSource(event, channel, stateFromStores2) {
+  let tmp4;
+  const obj = EntityUtils;
   if (null != obj.getLocationFromEvent(event)) {
-    let tmp4 = _modDef9185;
+    tmp4 = AssetRegistryDefault;
   } else {
     tmp4 = null;
     if (null != channel) {
+      let channelIcon;
       const tmpResult = utils_ChannelUtils;
       if (stateFromStores2) {
-        let channelIcon = tmpResult.getChannelIcon(channel);
+        channelIcon = tmpResult.getChannelIcon(channel);
       } else {
         channelIcon = tmpResult.getSimpleChannelIcon(channel);
       }
+      tmp4 = channelIcon;
     }
   }
   return tmp4;
 };
-export const getEventLocationIconComponent = function getEventLocationIconComponent(event, channel, stateFromStores1) {
+export const getEventLocationIconComponent = function getEventLocationIconComponent(event, stateFromStores, stateFromStores1) {
+  let LocationIcon;
+  const obj = EntityUtils;
   if (null != obj.getLocationFromEvent(event)) {
-    let LocationIcon = tmp(9186).LocationIcon;
+    LocationIcon = tmp(9191).LocationIcon;
   } else {
     LocationIcon = null;
-    if (null != channel) {
-      const tmpResult = tmp(5519);
+    if (null != stateFromStores) {
+      let channelIconComponent;
+      const tmpResult = utils_ChannelUtils;
       if (stateFromStores1) {
-        let channelIconComponent = tmpResult.getChannelIconComponent(channel);
+        channelIconComponent = tmpResult.getChannelIconComponent(stateFromStores);
       } else {
-        channelIconComponent = tmpResult.getSimpleChannelIconComponent(channel);
+        channelIconComponent = tmpResult.getSimpleChannelIconComponent(stateFromStores);
       }
       if (channelIconComponent == null) {
         channelIconComponent = null;

@@ -1,10 +1,10 @@
-// Module ID: 6553
-// Function ID: 6554
+// Module ID: 6436
+// Function ID: 6437
 // Name: getAuthenticationErrorsFromAPIError
 // Dependencies: [2]
 // Exports: getAuthenticationErrorsFromAPIError, getAuthenticationErrorsFromV6OrEarlierAPIError
 
-// Module 6553 (getAuthenticationErrorsFromAPIError)
+// Module 6436 (getAuthenticationErrorsFromAPIError)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/auth/getAuthenticationErrorsFromAPIError.tsx");
@@ -15,7 +15,7 @@ export const getAuthenticationErrorsFromAPIError = function getAuthenticationErr
     const _Object = Object;
     const keys = Object.keys(error.errors);
     for (const item10017 of keys) {
-      let items = [arg0.getFirstFieldErrorMessage(item10017)];
+      let items = [error.getFirstFieldErrorMessage(item10017)];
       obj[item10017] = items;
       continue;
     }

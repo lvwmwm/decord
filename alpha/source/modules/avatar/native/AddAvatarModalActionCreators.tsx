@@ -1,23 +1,24 @@
-// Module ID: 17458
-// Function ID: 17459
+// Module ID: 17544
+// Function ID: 17545
 // Name: AddAvatarModalActionCreators
-// Dependencies: [17459, 1074, 1241, 6591, 5387, 1115, 7791, 7793, 5048, 17460, 1981, 12414, 2]
+// Dependencies: [17545, 1085, 1252, 6477, 5707, 1126, 7835, 7837, 5093, 17546, 1987, 12353, 2]
 // Exports: handlePressNext, openAddAvatarModal, showSkipAvatarModal
 
-// Module 17458 (AddAvatarModalActionCreators)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5048 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5387 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6591 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 7791 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 7793 */;
-import NUFActionCreators from "NUFActionCreators" /* 12414 */;
-import AddAvatarModalConstants from "AddAvatarModalConstants" /* 17459 */;
+// Module 17544 (AddAvatarModalActionCreators)
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6477 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 7835 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 7837 */;
+import NUFActionCreators from "NUFActionCreators" /* 12353 */;
+import AddAvatarModalConstants from "AddAvatarModalConstants" /* 17545 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
 const ADD_AVATAR_MODAL_KEY = AddAvatarModalConstants.ADD_AVATAR_MODAL_KEY;
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -26,43 +27,61 @@ let result = size.fileFinishedImporting("modules/avatar/native/AddAvatarModalAct
 export const handlePressNext = function handlePressNext(pendingImage, default_avatar_selected, fn) {
   if (null != pendingImage) {
     const obj4 = { default_avatar_selected, is_guild_profile: false, location: { page: "Onboarding" } };
-    AnalyticsUtilsDefault.track(AnalyticEvents.USER_AVATAR_UPDATED, obj4);
-    ({ imageUri: obj6.avatar, description: obj6.avatar_description } = pendingImage);
-    const result = UserSettingsAccountActionCreators.saveProfileAndAccountRequest({ avatar: null, avatar_description: null });
+    const obj3 = AnalyticsUtilsDefault;
+    obj3.track(AnalyticEvents.USER_AVATAR_UPDATED, obj4);
     const obj8 = { avatar: null, avatar_description: null };
+    ({ imageUri: obj6.avatar, description: obj6.avatar_description } = pendingImage);
+    const obj5 = UserSettingsAccountActionCreators;
+    const result = obj5.saveProfileAndAccountRequest(obj8);
   }
   if (null != fn) {
     fn();
   } else {
-    ModalActionCreatorsDefault.popWithKey(ADD_AVATAR_MODAL_KEY);
-    NUFActionCreators.nextOnboardingStep({ skip: false });
+    const obj = ModalActionCreatorsDefault;
+    obj.popWithKey(ADD_AVATAR_MODAL_KEY);
+    const obj2 = NUFActionCreators;
+    obj2.nextOnboardingStep({ skip: false });
   }
 };
 export const showSkipAvatarModal = function showSkipAvatarModal(arg0) {
+  let closure_0;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
   _require = arg0;
-  AnalyticsUtilsDefault.track(AnalyticEvents.NUO_TRANSITION, { flow_type: "Mobile NUX Post Reg", from_step: "Skip avatar modal", skip_attempt: true });
-  let obj3 = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null, hideActionSheet: false };
-  const intl = require("util").intl;
-  obj3.title = intl.string(require("util").t.DnKHuV);
-  const intl2 = require("util").intl;
-  obj3.body = intl2.string(require("util").t["1EPySE"]);
-  const intl3 = require("util").intl;
-  obj3.cancelText = intl3.string(require("util").t["7eZ3ji"]);
-  const intl4 = require("util").intl;
-  obj3.confirmText = intl4.string(require("util").t.nhJ8OC);
-  obj3.onConfirm = function onConfirm() {
-    UserProfileSettingsActionCreators.setPendingChanges({ avatar: null });
-    const result = ProfileCustomizationUtils.announcePendingAvatarChange("remove");
-    if (null != closure_0) {
-      tmp5(true);
-    } else {
-      ModalActionCreatorsDefault.popWithKey(ADD_AVATAR_MODAL_KEY);
-      NUFActionCreators.nextOnboardingStep({ skip: true });
-      const tmpResult = NUFActionCreators;
-    }
+  let obj = AnalyticsUtilsDefault;
+  obj.track(AnalyticEvents.NUO_TRANSITION, { flow_type: "Mobile NUX Post Reg", from_step: "Skip avatar modal", skip_attempt: true });
+  const tmp2 = AlertActionCreatorsDefault;
+  let obj2 = {
+    title: intl.string(require("intl").t.DnKHuV),
+    body: intl2.string(require("intl").t["1EPySE"]),
+    cancelText: intl3.string(require("intl").t["7eZ3ji"]),
+    confirmText: intl4.string(require("intl").t.nhJ8OC),
+    onConfirm() {
+      const obj = UserProfileSettingsActionCreators;
+      obj.setPendingChanges({ avatar: null });
+      const obj2 = ProfileCustomizationUtils;
+      const result = obj2.announcePendingAvatarChange("remove");
+      if (null != closure_0) {
+        tmp5(true);
+      } else {
+        const obj3 = ModalActionCreatorsDefault;
+        obj3.popWithKey(ADD_AVATAR_MODAL_KEY);
+        const tmpResult = NUFActionCreators;
+        tmpResult.nextOnboardingStep({ skip: true });
+      }
+    },
+    hideActionSheet: false
   };
-  AlertActionCreatorsDefault.show(obj3);
+  const show = tmp2.show;
+  intl = require("intl").intl;
+  intl2 = require("intl").intl;
+  intl3 = require("intl").intl;
+  intl4 = require("intl").intl;
+  show(obj2);
 };
 export const openAddAvatarModal = function openAddAvatarModal() {
-  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(17460, dependencyMap.paths), {}, ADD_AVATAR_MODAL_KEY);
+  const obj = ModalActionCreatorsDefault;
+  obj.pushLazy(asyncRequire(17546, dependencyMap.paths), {}, ADD_AVATAR_MODAL_KEY);
 };

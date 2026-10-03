@@ -1,18 +1,14 @@
 // Module ID: 14114
 // Function ID: 14115
-// Dependencies: []
-// Exports: default
+// Dependencies: [14062, 14063]
 
 // Module 14114
+import _mod14062 from "module_14062" /* 14062 */;
+import _mod14063 from "module_14063" /* 14063 */;
 
-export default () => (arg0) => {
-  closure_0 = arg0;
-  return {
-    features: {
-      image(dependencyMap) {
-        const size = { uri: dependencyMap.uri, preview: dependencyMap.preview, filename: dependencyMap.filename, width: dependencyMap.width, height: dependencyMap.height, caption: dependencyMap.caption };
-        return closure_0.send("image", size);
-      }
-    }
-  };
-};
+const f66122 = () => 42 !== Object.defineProperty(() => {
+
+}, "prototype", { value: 42, writable: false }).prototype;
+_mod14062 && _mod14063(f66122);
+
+export default _mod14062 && _mod14063(f66122);

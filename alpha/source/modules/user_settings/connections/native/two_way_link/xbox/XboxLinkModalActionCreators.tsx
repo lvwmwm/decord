@@ -1,21 +1,25 @@
-// Module ID: 8720
-// Function ID: 8721
+// Module ID: 8733
+// Function ID: 8734
 // Name: XboxLinkModalActionCreators
-// Dependencies: [5048, 8721, 1981, 2]
+// Dependencies: [5093, 8734, 1987, 2]
 
-// Module 8720 (XboxLinkModalActionCreators)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5048 */;
+// Module 8733 (XboxLinkModalActionCreators)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
 import size from "module_2" /* 2 */;
 
-let c3 = "USER_SETTINGS_CONNECTIONS_XBOX_LINK_MODAL_KEY";
-const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkModalActionCreators.tsx");
-
-export default {
+const USER_SETTINGS_CONNECTIONS_XBOX_LINK_MODAL_KEY = "USER_SETTINGS_CONNECTIONS_XBOX_LINK_MODAL_KEY";
+let obj = {
   showModal(locationStack) {
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(8721, dependencyMap.paths), { locationStack }, c3);
+    const obj = ModalActionCreatorsDefault;
+    const obj2 = { locationStack };
+    obj.pushLazy(asyncRequire(8734, dependencyMap.paths), obj2, USER_SETTINGS_CONNECTIONS_XBOX_LINK_MODAL_KEY);
   },
   hideModal() {
-    ModalActionCreatorsDefault.popWithKey(c3);
+    const obj = ModalActionCreatorsDefault;
+    obj.popWithKey(USER_SETTINGS_CONNECTIONS_XBOX_LINK_MODAL_KEY);
   }
 };
+const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkModalActionCreators.tsx");
+
+export default obj;

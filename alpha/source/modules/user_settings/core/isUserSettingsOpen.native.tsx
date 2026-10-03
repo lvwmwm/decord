@@ -1,22 +1,40 @@
-// Module ID: 13508
-// Function ID: 13509
+// Module ID: 13569
+// Function ID: 13570
 // Name: isUserSettingsOpen
-// Dependencies: [32, 19, 4722, 2]
-// Exports: useIsUserSettingsOpen
+// Dependencies: [32, 19, 4737, 558, 576, 2]
 
-// Module 13508 (isUserSettingsOpen)
-import RootNavigationRef from "RootNavigationRef" /* 4722 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 13569 (isUserSettingsOpen)
+import RootNavigationRef from "RootNavigationRef" /* 4737 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-require = fn;
-function isUserSettingsOpen() {
-  const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
-  const tmp = null == rootNavigationRef || !rootNavigationRef.isReady();
-  let tmp2 = !tmp;
+const f114874 = (name) => {
+  let tmp = "settings" === name.name;
   if (!tmp) {
+    const state = name.state;
+    let routes1;
+    if (state != null) {
+      routes1 = state.routes;
+    }
+    let someResult = null != routes1;
+    if (someResult) {
+      const routes = state.routes;
+      someResult = routes.some(f114874);
+    }
+    tmp = someResult;
+  }
+  return tmp;
+};
+function isUserSettingsOpen() {
+  const obj = RootNavigationRef;
+  const rootNavigationRef = obj.getRootNavigationRef();
+  let tmp2 = !(null == rootNavigationRef || !rootNavigationRef.isReady());
+  null == rootNavigationRef || !rootNavigationRef.isReady();
+  if (tmp2) {
     const rootState = rootNavigationRef.getRootState();
     let routes1;
     if (rootState != null) {
@@ -25,86 +43,69 @@ function isUserSettingsOpen() {
     let someResult = null != routes1;
     if (someResult) {
       const routes = rootState.routes;
-      someResult = routes.some((name) => {
-        let tmp = "settings" === name.name;
-        if (!tmp) {
-          const state = name.state;
-          let routes1;
-          if (state != null) {
-            routes1 = state.routes;
-          }
-          let someResult = null != routes1;
-          if (someResult) {
-            const routes = state.routes;
-            someResult = routes.some((name) => {
-              let tmp = "settings" === name.name;
-              if (!tmp) {
-                const state = name.state;
-                let routes1;
-                if (state != null) {
-                  routes1 = state.routes;
-                }
-                let someResult = null != routes1;
-                if (someResult) {
-                  const routes = state.routes;
-                  someResult = routes.some((name) => {
-                    let tmp = "settings" === name.name;
-                    if (!tmp) {
-                      const state = name.state;
-                      let routes1;
-                      if (state != null) {
-                        routes1 = state.routes;
-                      }
-                      let someResult = null != routes1;
-                      if (someResult) {
-                        const routes = state.routes;
-                        someResult = routes.some((name) => {
-                          let tmp = "settings" === name.name;
-                          if (!tmp) {
-                            const state = name.state;
-                            let routes1;
-                            if (state != null) {
-                              routes1 = state.routes;
-                            }
-                            let someResult = null != routes1;
-                            if (someResult) {
-                              const routes = state.routes;
-                              someResult = routes.some(() => { ... });
-                            }
-                            tmp = someResult;
-                          }
-                          return tmp;
-                        });
-                      }
-                      tmp = someResult;
-                    }
-                    return tmp;
-                  });
-                }
-                tmp = someResult;
-              }
-              return tmp;
-            });
-          }
-          tmp = someResult;
-        }
-        return tmp;
-      });
+      someResult = routes.some(f114874);
     }
     tmp2 = someResult;
   }
   return tmp2;
 }
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/core/isUserSettingsOpen.native.tsx");
-
-export { isUserSettingsOpen };
-export const useIsUserSettingsOpen = function useIsUserSettingsOpen() {
-  [tmp2, require] = noop.useState(isUserSettingsOpen);
-  const effect = noop.useEffect(() => {
-    function handleStateChange() {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let closure_0;
+  let first;
+  let tmp4;
+  let tmp5;
+  let obj = require("react");
+  const cResult = obj.c(2);
+  [first, _require] = react.useState(isUserSettingsOpen);
+  const obj2 = react;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function s() {
+      let rootNavigationRef;
+      let obj = rootNavigationRef(dependencyMap[2]);
+      rootNavigationRef = obj.getRootNavigationRef();
       if (null != rootNavigationRef) {
-        const rootState = rootNavigationRef.getRootState();
+        function handleStateChange() {
+          const obj = rootNavigationRef;
+          if (null != rootNavigationRef) {
+            const rootState = obj.getRootState();
+            let routes1;
+            if (rootState != null) {
+              routes1 = rootState.routes;
+            }
+            let someResult = null != routes1;
+            if (someResult) {
+              const routes = rootState.routes;
+              someResult = routes.some(f114874);
+            }
+            rootNavigationRef(someResult);
+          }
+        }
+        rootNavigationRef.addListener("state", handleStateChange);
+        return () => {
+          rootNavigationRef.removeListener("state", handleStateChange);
+        };
+      }
+    };
+    const items = [];
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp4 = fn;
+    tmp5 = items;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const effect = obj2.useEffect(tmp4, tmp5);
+  return first;
+}) : (() => {
+  let require;
+  let tmp2;
+  let tmp = _slicedToArray(react.useState(isUserSettingsOpen), 2);
+  [tmp2, require] = tmp;
+  const effect = react.useEffect(() => {
+    function handleStateChange() {
+      const obj = rootNavigationRef;
+      if (null != rootNavigationRef) {
+        const rootState = obj.getRootState();
         let routes1;
         if (rootState != null) {
           routes1 = rootState.routes;
@@ -112,44 +113,13 @@ export const useIsUserSettingsOpen = function useIsUserSettingsOpen() {
         let someResult = null != routes1;
         if (someResult) {
           let routes = rootState.routes;
-          someResult = routes.some((name) => {
-            let tmp = "settings" === name.name;
-            if (!tmp) {
-              const state = name.state;
-              let routes1;
-              if (state != null) {
-                routes1 = state.routes;
-              }
-              let someResult = null != routes1;
-              if (someResult) {
-                const routes = state.routes;
-                someResult = routes.some((name) => {
-                  let tmp = "settings" === name.name;
-                  if (!tmp) {
-                    const state = name.state;
-                    let routes1;
-                    if (state != null) {
-                      routes1 = state.routes;
-                    }
-                    let someResult = null != routes1;
-                    if (someResult) {
-                      const routes = state.routes;
-                      someResult = routes.some(() => { ... });
-                    }
-                    tmp = someResult;
-                  }
-                  return tmp;
-                });
-              }
-              tmp = someResult;
-            }
-            return tmp;
-          });
+          someResult = routes.some(f114874);
         }
-        require(someResult);
+        _require(someResult);
       }
     }
-    const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
+    let obj = require("RootNavigationRef");
+    const rootNavigationRef = obj.getRootNavigationRef();
     if (null != rootNavigationRef) {
       rootNavigationRef.addListener("state", handleStateChange);
       return () => {
@@ -158,4 +128,8 @@ export const useIsUserSettingsOpen = function useIsUserSettingsOpen() {
     }
   }, []);
   return tmp2;
-};
+});
+const result = size.fileFinishedImporting("modules/user_settings/core/isUserSettingsOpen.native.tsx");
+
+export { isUserSettingsOpen };
+export const useIsUserSettingsOpen = tmp2;

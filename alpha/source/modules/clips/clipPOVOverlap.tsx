@@ -1,14 +1,14 @@
-// Module ID: 13741
-// Function ID: 13742
+// Module ID: 13807
+// Function ID: 13808
 // Name: clipPOVOverlap
-// Dependencies: [5630, 1074, 1385, 13742, 2]
+// Dependencies: [7231, 1085, 1390, 13808, 2]
 // Exports: getClipAttachmentPOVWindow, getClipPOVOverlapMilliseconds, getClipPOVWindow
 
-// Module 13741 (clipPOVOverlap)
-import Constants from "Constants" /* 1074 */;
-import FlagUtils from "FlagUtils" /* 1385 */;
-import ClipsConstants from "ClipsConstants" /* 5630 */;
-import getPOVExportTargetDefault from "getPOVExportTarget" /* 13742 */;
+// Module 13807 (clipPOVOverlap)
+import Constants from "Constants" /* 1085 */;
+import FlagUtils from "FlagUtils" /* 1390 */;
+import ClipsConstants from "ClipsConstants" /* 7231 */;
+import getPOVExportTargetDefault from "getPOVExportTarget" /* 13808 */;
 import size from "module_2" /* 2 */;
 
 const ClipType = ClipsConstants.ClipType;
@@ -19,28 +19,29 @@ export const getClipPOVWindow = function getClipPOVWindow(type) {
   if (type.type === ClipType.CLIP) {
     if (null != type.applicationId) {
       if (null != type.syncTimestamp) {
-        const obj = { applicationId: type.applicationId, startTimestamp: type.syncTimestamp - type.length, endTimestamp: type.syncTimestamp };
-        return obj;
+        return { applicationId: type.applicationId, startTimestamp: type.syncTimestamp - type.length, endTimestamp: type.syncTimestamp };
       }
     }
   }
 };
 export const getClipAttachmentPOVWindow = function getClipAttachmentPOVWindow(nextResult) {
   let num = nextResult.flags;
+  const hasFlag = FlagUtils.hasFlag;
+  FlagUtils;
   if (num == null) {
     num = 0;
   }
   const application = nextResult.application;
   let id;
+  const hasFlagResult = hasFlag(num, MessageAttachmentFlags.IS_CLIP);
   if (application != null) {
     id = application.id;
   }
-  const tmp4 = getPOVExportTargetDefault(nextResult);
+  const tmp5 = getPOVExportTargetDefault(nextResult);
   if (null != id) {
-    if (null != tmp4) {
+    if (null != tmp5) {
       if (hasFlagResult) {
-        const obj2 = { applicationId: id, startTimestamp: tmp4.syncTimestamp - 1000 * tmp4.duration, endTimestamp: tmp4.syncTimestamp };
-        return obj2;
+        return { applicationId: id, startTimestamp: tmp5.syncTimestamp - 1000 * tmp5.duration, endTimestamp: tmp5.syncTimestamp };
       }
     }
   }

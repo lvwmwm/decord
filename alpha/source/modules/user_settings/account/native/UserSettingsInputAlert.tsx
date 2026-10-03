@@ -1,118 +1,142 @@
-// Module ID: 14543
-// Function ID: 14544
+// Module ID: 14579
+// Function ID: 14580
 // Name: UserSettingsInputAlert
-// Dependencies: [19, 21, 1271, 5463, 4841, 6210, 5484, 6076, 2]
+// Dependencies: [19, 21, 1282, 5593, 4886, 6098, 5783, 6537, 2]
 
-// Module 14543 (UserSettingsInputAlert)
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import Stack_Stack from "Stack/Stack" /* 5463 */;
-import common_AlertDefault from "common/Alert" /* 5484 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 6076 */;
-import TextInput from "TextInput" /* 6210 */;
-import noop from "module_19" /* 19 */;
+// Module 14579 (UserSettingsInputAlert)
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import Stack_Stack from "Stack/Stack" /* 5593 */;
+import AlertDefault from "Alert" /* 5783 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsxProd = fn(21);
-({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const hasOwnProperty = { input: "", error: "channelId" };
-const PureComponent = noop.PureComponent;
+let c3;
+let closure_4;
+let tmp2;
+const KeyboardAwareViewDefault = tmp2(6537);
+({ jsx: c3, jsxs: closure_4 } = Fragment);
+const hasOwnProperty = { input: "", error: "unicodeVersion" };
+const PureComponent = react.PureComponent;
 class UserSettingsInputAlert extends PureComponent {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    closure_0 = applyArgumentsResult;
-    applyArgumentsResult.state = closure_5;
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    require = applyArgumentsResult;
+    applyArgumentsResult.state = state;
     applyArgumentsResult.close = function close() {
-      const onClose = applyArgumentsResult.props.onClose;
+      const onClose = require.props.onClose;
       if (null != onClose) {
         onClose();
       }
     };
     applyArgumentsResult.handleSubmit = function handleSubmit() {
+      let closure_0;
+      let closure_1;
+      let closure_2;
+      let closure_3;
+      let isLoading;
+      let onSubmit;
       ({ isLoading, onSubmit, onSuccess: closure_0, closeOnSuccess: closure_1, onError: closure_2, skipErrorMsgAbortCode: closure_3 } = applyArgumentsResult.props);
+      const input = applyArgumentsResult.state.input;
       if (!isLoading) {
+        const tmp = null;
         isLoading = null == onSubmit;
       }
       if (!isLoading) {
-        const onSubmitResult = onSubmit(applyArgumentsResult.state.input);
-        onSubmit(applyArgumentsResult.state.input).then(() => {
-          if (closure_1_0 != null) {
+        const onSubmitResult = onSubmit(input);
+        const nextPromise = onSubmitResult.then(() => {
+          if (closure_0 != null) {
             tmp();
           }
-          if (closure_1_1) {
-            applyArgumentsResult.close();
+          const tmp3 = closure_1;
+          if (tmp3) {
+            require.close();
           }
-        }).catch((error) => {
-          if (closure_1_2 != null) {
+        });
+        nextPromise.catch(function(error) {
+          if (closure_2 != null) {
             tmp(error);
           }
           if (error) {
             if (error.body) {
+              const self = this;
+              const self2 = this;
               const v6OrEarlierAPIError = new HTTPUtils.V6OrEarlierAPIError(error);
-              if (v6OrEarlierAPIError.code !== closure_1_3) {
+              if (v6OrEarlierAPIError.code !== closure_3) {
                 const obj = { error: v6OrEarlierAPIError.message };
-                applyArgumentsResult.setState(obj);
+                require.setState(obj);
               }
             }
-          }
-        });
-        const nextPromise = onSubmit(applyArgumentsResult.state.input).then(() => {
-          if (closure_1_0 != null) {
-            tmp();
-          }
-          if (closure_1_1) {
-            applyArgumentsResult.close();
           }
         });
       }
     };
     return applyArgumentsResult;
   }
+  renderContent() {
+    let str2;
+    const self = this;
+    const helpText = this.props.helpText;
+    if (null != this.props.error) {
+      let error;
+      if ("" !== self.props.error) {
+        error = self.props.error;
+      }
+      let tmp7 = null != helpText;
+      const Stack = Stack_Stack.Stack;
+      const tmp4 = React3;
+      if (tmp7) {
+        let obj = { variant: "text-md/normal", children: helpText };
+        tmp7 = _false(tmp5(4886).Text, obj);
+      }
+      const items = [tmp7, ];
+      const obj2 = {
+        label: tmp3,
+        placeholder: tmp,
+        secureTextEntry: tmp2,
+        returnKeyType: "done",
+        autoFocus: true,
+        status: str2,
+        errorMessage: error,
+        onSubmitEditing: self.handleSubmit,
+        onChange(input) {
+            const obj = { input };
+            return self.setState(obj);
+          }
+      };
+      str2 = "default";
+      const TextInput = tmp5(6098).TextInput;
+      const tmp9 = _false;
+      if (null != error) {
+        str2 = "error";
+      }
+      const obj3 = { spacing: 16, children: items };
+      items[1] = tmp9(TextInput, obj2);
+      return tmp4(Stack, obj3);
+    }
+    error = self.state.error;
+  }
+  render() {
+    let actionText;
+    let cancelText;
+    let confirmColor;
+    let title;
+    let useKeyboardAwareWrapper;
+    ({ title, actionText, cancelText, confirmColor, useKeyboardAwareWrapper } = this.props);
+    const obj = { title, confirmText: actionText, confirmColor, onConfirm: this.handleSubmit, cancelText, onCancel: this.close, children: this.renderContent() };
+    const tmp4 = AlertDefault;
+    const tmp5 = _false(tmp4, obj);
+    let tmpResult = tmp5;
+    const tmp = _false;
+    if (useKeyboardAwareWrapper) {
+      const obj2 = { children: tmp5 };
+      tmpResult = tmp(KeyboardAwareViewDefault, obj2);
+    }
+    return tmpResult;
+  }
 }
 const prototype = UserSettingsInputAlert.prototype;
-prototype["renderContent"] = function renderContent() {
-  const self = this;
-  const helpText = this.props.helpText;
-  if (null != this.props.error) {
-    if ("" !== self.props.error) {
-      let error = self.props.error;
-    }
-    let tmp7 = null != helpText;
-    if (tmp7) {
-      const obj = { variant: "text-md/normal", children: helpText };
-      tmp7 = React3(tmp5(4841).Text, obj);
-    }
-    const items = [tmp7, ];
-    const obj2 = { label: tmp3, placeholder: tmp, secureTextEntry: tmp2, returnKeyType: "done", autoFocus: true, status: null, errorMessage: null, onSubmitEditing: null, onChange: null };
-    let str2 = "default";
-    if (null != error) {
-      str2 = "error";
-    }
-    const obj3 = { spacing: 16, children: null };
-    obj2.status = str2;
-    obj2.errorMessage = error;
-    obj2.onSubmitEditing = self.handleSubmit;
-    obj2.onChange = function onChange(input) {
-      return self.setState({ input });
-    };
-    items[1] = React3(TextInput.TextInput, obj2);
-    obj3.children = items;
-    return React4(Stack_Stack.Stack, obj3);
-  }
-  error = self.state.error;
-};
-prototype["render"] = function render() {
-  ({ title, actionText, cancelText, confirmColor, useKeyboardAwareWrapper } = this.props);
-  const obj = { title, confirmText: actionText, confirmColor, onConfirm: this.handleSubmit, cancelText, onCancel: this.close, children: this.renderContent() };
-  const tmp5 = React3(common_AlertDefault, obj);
-  let tmpResult = tmp5;
-  if (useKeyboardAwareWrapper) {
-    const obj2 = { children: tmp5 };
-    tmpResult = React3(KeyboardAwareViewDefault, obj2);
-  }
-  return tmpResult;
-};
 UserSettingsInputAlert.defaultProps = { isLoading: false, useKeyboardAwareWrapper: false, secureTextEntry: true };
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/account/native/UserSettingsInputAlert.tsx");
 
 export default UserSettingsInputAlert;

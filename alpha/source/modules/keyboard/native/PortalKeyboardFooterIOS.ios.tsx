@@ -1,27 +1,125 @@
-// Module ID: 9931
-// Function ID: 9932
+// Module ID: 9893
+// Function ID: 9894
 // Name: PortalKeyboardFooterIOS
-// Dependencies: [19, 21, 4845, 576, 1613, 1627, 4732, 4595, 1611, 1094, 4737, 2]
-// Exports: default
+// Dependencies: [19, 21, 4890, 587, 558, 576, 1618, 1632, 4747, 4612, 1616, 1105, 4752, 2]
 
-// Module 9931 (PortalKeyboardFooterIOS)
-import nativeDefault from "native" /* 576 */;
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4595 */;
-import noop from "module_19" /* 19 */;
+// Module 9893 (PortalKeyboardFooterIOS)
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 587 */;
+import ConstantsIOS from "ConstantsIOS" /* 1105 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
-let obj2 = { keyboardStickyFooter: null };
-const rect = { position: "absolute", bottom: 0, left: 0, right: 0, zIndex: 1, flex: 1, backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
-obj2.keyboardStickyFooter = rect;
-let closure_5 = createStyles.createStyles(obj2);
-let closure_6 = { code: "function PortalKeyboardFooterIOSIosTsx1(){const{interpolate,progress,bottom,followSystemKeyboard,keyboardType,KeyboardTypes,animatedSheetIndex,height,EXPRESSION_FOOTER_HEIGHT}=this.__closure;const offset=interpolate(progress.get(),[0,1],[0,bottom]);const shouldFollowKeyboard=followSystemKeyboard||keyboardType.get()===KeyboardTypes.EXPRESSION;if(shouldFollowKeyboard&&animatedSheetIndex.get()>=0){return{transform:[{translateY:height.get()+offset}]};}return{transform:[{translateY:interpolate(animatedSheetIndex.get(),[-1,0],[EXPRESSION_FOOTER_HEIGHT+bottom,0],'clamp')}]};}" };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/keyboard/native/PortalKeyboardFooterIOS.ios.tsx");
+const require = globalThis.__r;
+let dependencyMap, importDefault;
 
-export default function PortalKeyboardFooterIOS(animatedSheetIndex) {
+let rect;
+const jsx = Fragment.jsx;
+let obj = { keyboardStickyFooter: rect };
+rect = { position: "absolute", bottom: 0, left: 0, right: 0, zIndex: 1, flex: 1, backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
+let closure_5 = createStyles.createStyles(obj);
+const __initData = { code: "function PortalKeyboardFooterIOSIosTsx1(){const{interpolate,progress,bottom,followSystemKeyboard,keyboardType,KeyboardTypes,animatedSheetIndex,height,EXPRESSION_FOOTER_HEIGHT}=this.__closure;const offset=interpolate(progress.get(),[0,1],[0,bottom]);const shouldFollowKeyboard=followSystemKeyboard||keyboardType.get()===KeyboardTypes.EXPRESSION;if(shouldFollowKeyboard&&animatedSheetIndex.get()>=0){return{transform:[{translateY:height.get()+offset}]};}return{transform:[{translateY:interpolate(animatedSheetIndex.get(),[-1,0],[EXPRESSION_FOOTER_HEIGHT+bottom,0],\"clamp\")}]};}" };
+let closure_7 = { code: "function PortalKeyboardFooterIOSIosTsx2(){const{interpolate,progress,bottom,followSystemKeyboard,keyboardType,KeyboardTypes,animatedSheetIndex,height,EXPRESSION_FOOTER_HEIGHT}=this.__closure;const offset=interpolate(progress.get(),[0,1],[0,bottom]);const shouldFollowKeyboard=followSystemKeyboard||keyboardType.get()===KeyboardTypes.EXPRESSION;if(shouldFollowKeyboard&&animatedSheetIndex.get()>=0){return{transform:[{translateY:height.get()+offset}]};}return{transform:[{translateY:interpolate(animatedSheetIndex.get(),[-1,0],[EXPRESSION_FOOTER_HEIGHT+bottom,0],'clamp')}]};}" };
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((animatedSheetIndex) => {
+  let bottom;
+  let closure_1;
+  let followSystemKeyboard;
+  let keyboardTypeSharedValue;
+  let portalHostName;
+  let obj = animatedSheetIndex(bottom[5]);
+  const cResult = obj.c(8);
+  animatedSheetIndex = animatedSheetIndex.animatedSheetIndex;
+  ({ portalHostName, followSystemKeyboard } = animatedSheetIndex);
+  let str = "expression-footer";
+  if (undefined !== portalHostName) {
+    str = portalHostName;
+  }
+  let tmp4 = undefined !== followSystemKeyboard && followSystemKeyboard;
+  importDefault = tmp4;
+  const tmp5 = keyboardTypeSharedValue();
+  let tmp6 = importDefault;
+  bottom = require("useSafeAreaInsets")().bottom;
+  const tmpResult = tmp(tmp2[7]);
+  const reanimatedKeyboardAnimation = tmpResult.useReanimatedKeyboardAnimation();
+  const height = reanimatedKeyboardAnimation.height;
+  const progress = reanimatedKeyboardAnimation.progress;
+  const tmpResult3 = animatedSheetIndex(bottom[8]);
+  keyboardTypeSharedValue = tmpResult3.useKeyboardTypeSharedValue();
+  const fn = function l() {
+    let interpolate;
+    let items;
+    let items1;
+    let items2;
+    let value2;
+    ReanimatedRexport;
+    [0][1] = bottom;
+    const tmp4 = bottom;
+    const tmp6 = closure_1;
+    if (tmp6) {
+      let obj;
+      if (animatedSheetIndex.get() >= 0) {
+        const obj2 = { transform: items };
+        items = [{ translateY: height.get() + tmp5 }];
+        obj = obj2;
+        const obj3 = { translateY: height.get() + tmp5 };
+      }
+      return obj;
+    } else {
+      const value = keyboardTypeSharedValue.get();
+    }
+    obj = { transform: items2 };
+    const obj4 = { translateY: interpolate(value2, [-1, 0], items1, "clamp") };
+    interpolate = ReanimatedRexport.interpolate;
+    ReanimatedRexport;
+    value2 = animatedSheetIndex.get();
+    items1 = [ConstantsIOS.EXPRESSION_FOOTER_HEIGHT + tmp4, 0];
+    items2 = [obj4];
+  };
+  const tmpResult4 = animatedSheetIndex(bottom[9]);
+  let obj2 = { interpolate: tmp(tmp2[9]).interpolate, progress, bottom, followSystemKeyboard: tmp4, keyboardType: keyboardTypeSharedValue, KeyboardTypes: tmp(tmp2[10]).KeyboardTypes, animatedSheetIndex, height, EXPRESSION_FOOTER_HEIGHT: tmp(tmp2[11]).EXPRESSION_FOOTER_HEIGHT };
+  fn.__closure = obj2;
+  fn.__workletHash = 886510056219;
+  fn.__initData = __initData;
+  const animatedStyle = tmpResult4.useAnimatedStyle(fn);
+  if (cResult[0] === animatedStyle) {
+    let tmp10;
+    let tmp11;
+    if (cResult[1] === tmp5.keyboardStickyFooter) {
+      tmp10 = cResult[2];
+    }
+    if (cResult[3] !== str) {
+      let obj3 = { name: str };
+      const tmp13 = progress(animatedSheetIndex(bottom[12]).PortalHost, obj3);
+      cResult[3] = str;
+      cResult[4] = tmp13;
+      tmp11 = tmp13;
+    } else {
+      tmp11 = cResult[4];
+    }
+    if (cResult[5] === tmp10) {
+      let tmp14;
+      if (cResult[6] === tmp11) {
+        tmp14 = cResult[7];
+      }
+      return tmp14;
+    }
+    let obj4 = { style: tmp10, children: tmp11 };
+    const tmp16 = progress(tmp6(bottom[9]).View, obj4);
+    cResult[5] = tmp10;
+    cResult[6] = tmp11;
+    cResult[7] = tmp16;
+    tmp14 = tmp16;
+  }
+  let items = [tmp5.keyboardStickyFooter, animatedStyle];
+  cResult[0] = animatedStyle;
+  cResult[1] = tmp5.keyboardStickyFooter;
+  cResult[2] = items;
+  tmp10 = items;
+}) : ((animatedSheetIndex) => {
+  let keyboardStickyFooter;
   animatedSheetIndex = animatedSheetIndex.animatedSheetIndex;
   let str = animatedSheetIndex.portalHostName;
   if (str === undefined) {
@@ -35,62 +133,58 @@ export default function PortalKeyboardFooterIOS(animatedSheetIndex) {
   let animatedStyle;
   const tmp = progress();
   dependencyMap = tmp;
-  const bottom = flag(1613)().bottom;
-  const reanimatedKeyboardAnimation = animatedSheetIndex(1627).useReanimatedKeyboardAnimation();
+  const bottom = flag(1618)().bottom;
+  let obj = animatedSheetIndex(1632);
+  const reanimatedKeyboardAnimation = obj.useReanimatedKeyboardAnimation();
   const height = reanimatedKeyboardAnimation.height;
   progress = reanimatedKeyboardAnimation.progress;
-  let obj = animatedSheetIndex(1627);
-  const keyboardTypeSharedValue = animatedSheetIndex(4732).useKeyboardTypeSharedValue();
-  let obj2 = animatedSheetIndex(4732);
-  class S {
-    constructor() {
-      tmp = closure_0;
-      tmp2 = closure_2;
-      tmp3 = closure_0(closure_2[7]);
-      [0][1] = bottom;
-      tmp4 = bottom;
-      if (c1) {
-        tmp8 = animatedSheetIndex;
-        num = 0;
-        if (animatedSheetIndex.get() >= 0) {
-          obj1 = { transform: null };
-          obj6 = { translateY: null };
-          tmp10 = height;
-          obj6.translateY = height.get() + tmp5;
-          items = [];
-          items[0] = obj6;
-          obj1.transform = items;
-          obj = obj1;
-        }
-        return obj;
-      } else {
-        tmp6 = closure_6;
-        value = closure_6.get();
+  let obj2 = animatedSheetIndex(4747);
+  const keyboardTypeSharedValue = obj2.useKeyboardTypeSharedValue();
+  let obj3 = animatedSheetIndex(4612);
+  const fn = function b() {
+    let interpolate;
+    let items;
+    let items1;
+    let items2;
+    let value2;
+    ReanimatedRexport;
+    [0][1] = bottom;
+    const tmp4 = bottom;
+    const tmp6 = flag;
+    if (tmp6) {
+      let obj;
+      if (animatedSheetIndex.get() >= 0) {
+        const obj2 = { transform: items };
+        items = [{ translateY: height.get() + tmp5 }];
+        obj = obj2;
+        const obj3 = { translateY: height.get() + tmp5 };
       }
-      obj = { transform: null };
-      obj7 = { translateY: null };
-      tmpResult = tmp(tmp2[7]);
-      value1 = animatedSheetIndex.get();
-      items1 = [, ];
-      items1[0] = tmp(tmp2[9]).EXPRESSION_FOOTER_HEIGHT + tmp4;
-      items1[1] = 0;
-      obj7.translateY = tmpResult.interpolate(value1, [-1, 0], items1, "clamp");
-      items2 = [];
-      items2[0] = obj7;
-      obj.transform = items2;
-      return;
+      return obj;
+    } else {
+      const value = keyboardTypeSharedValue.get();
     }
-  }
-  let obj3 = animatedSheetIndex(4595);
-  S.__closure = { interpolate: animatedSheetIndex(4595).interpolate, progress, bottom, followSystemKeyboard: flag, keyboardType: keyboardTypeSharedValue, KeyboardTypes: animatedSheetIndex(1611).KeyboardTypes, animatedSheetIndex, height, EXPRESSION_FOOTER_HEIGHT: animatedSheetIndex(1094).EXPRESSION_FOOTER_HEIGHT };
-  S.__workletHash = 9444646970651;
-  S.__initData = keyboardTypeSharedValue;
-  animatedStyle = obj3.useAnimatedStyle(S);
+    obj = { transform: items2 };
+    const obj4 = { translateY: interpolate(value2, [-1, 0], items1, "clamp") };
+    interpolate = ReanimatedRexport.interpolate;
+    ReanimatedRexport;
+    value2 = animatedSheetIndex.get();
+    items1 = [ConstantsIOS.EXPRESSION_FOOTER_HEIGHT + tmp4, 0];
+    items2 = [obj4];
+  };
+  let obj4 = { interpolate: animatedSheetIndex(4612).interpolate, progress, bottom, followSystemKeyboard: flag, keyboardType: keyboardTypeSharedValue, KeyboardTypes: animatedSheetIndex(1616).KeyboardTypes, animatedSheetIndex, height, EXPRESSION_FOOTER_HEIGHT: animatedSheetIndex(1105).EXPRESSION_FOOTER_HEIGHT };
+  fn.__closure = obj4;
+  fn.__workletHash = 13852594478360;
+  fn.__initData = animatedStyle;
+  animatedStyle = obj3.useAnimatedStyle(fn);
   let items = [animatedStyle, tmp];
   const memo = bottom.useMemo(() => {
     const items = [keyboardStickyFooter.keyboardStickyFooter, animatedStyle];
     return items;
   }, items);
-  let obj4 = { interpolate: animatedSheetIndex(4595).interpolate, progress, bottom, followSystemKeyboard: flag, keyboardType: keyboardTypeSharedValue, KeyboardTypes: animatedSheetIndex(1611).KeyboardTypes, animatedSheetIndex, height, EXPRESSION_FOOTER_HEIGHT: animatedSheetIndex(1094).EXPRESSION_FOOTER_HEIGHT };
-  return height(flag(4595).View, { style: memo, children: height(animatedSheetIndex(4737).PortalHost, { name: str }) });
-};
+  const obj5 = { style: memo, children: height(animatedSheetIndex(4752).PortalHost, { name: str }) };
+  const View = flag(4612).View;
+  return height(View, obj5);
+});
+const result = size.fileFinishedImporting("modules/keyboard/native/PortalKeyboardFooterIOS.ios.tsx");
+
+export default tmp2;

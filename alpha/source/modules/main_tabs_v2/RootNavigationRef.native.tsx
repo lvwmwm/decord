@@ -1,11 +1,11 @@
-// Module ID: 4722
-// Function ID: 4723
+// Module ID: 4737
+// Function ID: 4738
 // Name: RootNavigationRef
-// Dependencies: [1486, 2]
+// Dependencies: [1491, 2]
 // Exports: getRootNavigationRef
 
-// Module 4722 (RootNavigationRef)
-import Link from "Link" /* 1486 */;
+// Module 4737 (RootNavigationRef)
+import Link from "Link" /* 1491 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = Link.createNavigationContainerRef();

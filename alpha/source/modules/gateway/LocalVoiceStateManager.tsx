@@ -1,25 +1,80 @@
-// Module ID: 13422
-// Function ID: 13423
+// Module ID: 13482
+// Function ID: 13483
 // Name: LocalVoiceStateManager
-// Dependencies: [2044, 1993, 4895, 1074, 13420, 2021, 1385, 13423, 2]
+// Dependencies: [2051, 1999, 4940, 1085, 13480, 2028, 1390, 13483, 2]
 
-// Module 13422 (LocalVoiceStateManager)
-import FlagUtils from "FlagUtils" /* 1385 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import isClipsEnabled from "isClipsEnabled" /* 13423 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import RTCRegionStore from "RTCRegionStore" /* 4895 */;
-import StateManager from "StateManager" /* 13420 */;
+// Module 13482 (LocalVoiceStateManager)
+import FlagUtils from "FlagUtils" /* 1390 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import isClipsEnabled from "isClipsEnabled" /* 13483 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import RTCRegionStore from "RTCRegionStore" /* 4940 */;
+import Constants from "Constants" /* 1085 */;
+import StateManager from "StateManager" /* 13480 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Constants = fn(1074);
+let hasOwnProperty;
+let metroRequire;
 ({ ChannelTypes: hasOwnProperty, VoiceFlags: metroRequire } = Constants);
-class LocalVoiceStateManager extends tmp3 {
-  constructor(arg0) {
-    tmp = new LocalVoiceStateManager(new.target);
-    tmp.socket = global;
+class LocalVoiceStateManager extends StateManager {
+  constructor(socket) {
+    const tmp = new LocalVoiceStateManager(new.target);
+    tmp.socket = socket;
     return tmp;
+  }
+  computeVoiceFlags() {
+    const ClipsAllowVoiceRecording = UserSettings.ClipsAllowVoiceRecording;
+    const setting = ClipsAllowVoiceRecording.getSetting();
+    const obj = FlagUtils;
+    const setFlagResult = obj.setFlag(0, metroRequire.ALLOW_VOICE_RECORDING, setting);
+    const setFlag = FlagUtils.setFlag;
+    const CLIPS_ENABLED = metroRequire.CLIPS_ENABLED;
+    FlagUtils;
+    const obj2 = isClipsEnabled;
+    return setFlag(setFlagResult, CLIPS_ENABLED, obj2.isClipsEnabled());
+  }
+  getInitialState() {
+    const obj = { guildId: null, channelId: null, selfMute: MediaEngineStore.isSelfMute(), selfDeaf: MediaEngineStore.isSelfDeaf(), selfVideo: MediaEngineStore.isVideoEnabled(), preferredRegion: null, preferredRegions: null, videoStreamParameters: null, flags: 0 };
+    return obj;
+  }
+  getNextState(guildId) {
+    const obj = { guildId: guildId.guildId, channelId: guildId.channelId, selfMute: MediaEngineStore.isSelfMute(), selfDeaf: MediaEngineStore.isSelfDeaf(), selfVideo: MediaEngineStore.isVideoEnabled(), preferredRegion: RTCRegionStore.getPreferredRegion(), preferredRegions: RTCRegionStore.getPreferredRegions(), videoStreamParameters: MediaEngineStore.getVideoStreamParameters(), flags: this.computeVoiceFlags() };
+    return obj;
+  }
+  shouldCommit() {
+    const socket = this.socket;
+    return socket.isSessionEstablished();
+  }
+  didCommit(state) {
+    let channelId;
+    let flags;
+    let guildId;
+    let preferredRegion;
+    let preferredRegions;
+    let selfDeaf;
+    let selfMute;
+    let selfVideo;
+    ({ guildId, channelId, selfMute, selfDeaf, selfVideo, preferredRegion, preferredRegions, flags } = state);
+    const videoStreamParameters = state.videoStreamParameters;
+    if (flags === undefined) {
+      flags = 0;
+    }
+    const self = this;
+    if (selfVideo) {
+      const channel = ChannelStore.getChannel(channelId);
+      let type;
+      if (channel != null) {
+        type = channel.type;
+      }
+      if (type === hasOwnProperty.GUILD_STAGE_VOICE) {
+        const socket2 = self.socket;
+        const obj = { guildId, channelId, selfMute, selfDeaf, selfVideo, preferredRegion, preferredRegions, videoStreamParameters, flags };
+        socket2.voiceStateUpdate(obj);
+      }
+    }
+    const socket = self.socket;
+    socket.voiceStateUpdate({ guildId, channelId, selfMute, selfDeaf, selfVideo, preferredRegion, preferredRegions, flags });
   }
 }
 const prototype = LocalVoiceStateManager.prototype;
@@ -35,45 +90,6 @@ Object.defineProperty(prototype, "channelId", {
   },
   set: undefined
 });
-prototype["computeVoiceFlags"] = function computeVoiceFlags() {
-  const ClipsAllowVoiceRecording = UserSettings.ClipsAllowVoiceRecording;
-  const setting = ClipsAllowVoiceRecording.getSetting();
-  const setFlagResult = FlagUtils.setFlag(0, constants2.ALLOW_VOICE_RECORDING, setting);
-  const obj2 = FlagUtils;
-  return obj2.setFlag(setFlagResult, constants2.CLIPS_ENABLED, isClipsEnabled.isClipsEnabled());
-};
-prototype["getInitialState"] = function getInitialState() {
-  return { guildId: null, channelId: null, selfMute: MediaEngineStore.isSelfMute(), selfDeaf: MediaEngineStore.isSelfDeaf(), selfVideo: MediaEngineStore.isVideoEnabled(), preferredRegion: null, preferredRegions: null, videoStreamParameters: null, flags: 0 };
-};
-prototype["getNextState"] = function getNextState(guildId) {
-  return { guildId: guildId.guildId, channelId: guildId.channelId, selfMute: MediaEngineStore.isSelfMute(), selfDeaf: MediaEngineStore.isSelfDeaf(), selfVideo: MediaEngineStore.isVideoEnabled(), preferredRegion: RTCRegionStore.getPreferredRegion(), preferredRegions: RTCRegionStore.getPreferredRegions(), videoStreamParameters: MediaEngineStore.getVideoStreamParameters(), flags: this.computeVoiceFlags() };
-};
-prototype["shouldCommit"] = function shouldCommit() {
-  const socket = this.socket;
-  return socket.isSessionEstablished();
-};
-prototype["didCommit"] = function didCommit(state) {
-  ({ guildId, channelId, selfMute, selfDeaf, selfVideo, preferredRegion, preferredRegions, flags } = state);
-  if (flags === undefined) {
-    flags = 0;
-  }
-  const self = this;
-  if (selfVideo) {
-    const channel = ChannelStore.getChannel(channelId);
-    let type;
-    if (channel != null) {
-      type = channel.type;
-    }
-    if (type === constants.GUILD_STAGE_VOICE) {
-      const socket2 = self.socket;
-      const obj = { guildId, channelId, selfMute, selfDeaf, selfVideo, preferredRegion, preferredRegions, videoStreamParameters: state.videoStreamParameters, flags };
-      socket2.voiceStateUpdate(obj);
-    }
-  }
-  const socket = self.socket;
-  socket.voiceStateUpdate({ guildId, channelId, selfMute, selfDeaf, selfVideo, preferredRegion, preferredRegions, flags });
-};
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/gateway/LocalVoiceStateManager.tsx");
 
 export default LocalVoiceStateManager;

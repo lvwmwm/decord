@@ -1,17 +1,17 @@
-// Module ID: 5557
-// Function ID: 5558
+// Module ID: 5846
+// Function ID: 5847
 // Name: isRoleRequired
-// Dependencies: [2048, 1085, 4503, 1086, 2]
+// Dependencies: [2055, 1096, 4514, 1097, 2]
 // Exports: default
 
-// Module 5557 (isRoleRequired)
-import Constants from "Constants" /* 1085 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import ChannelRecord from "ChannelRecord" /* 2048 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4503 */;
+// Module 5846 (isRoleRequired)
+import Constants from "Constants" /* 1096 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4514 */;
 import size from "module_2" /* 2 */;
 
-ChannelRecord.GUILD_NON_CATEGORY_CHANNEL_TYPES;
+const set = ChannelRecord.GUILD_NON_CATEGORY_CHANNEL_TYPES;
 const Permissions = Constants.Permissions;
 const result = size.fileFinishedImporting("modules/channel/isRoleRequired.tsx");
 
@@ -22,14 +22,15 @@ export default function isRoleRequired(guild_id) {
     if (null != guild_id.guild_id) {
       if (set.has(tmp9)) {
         if (guild_id.isGuildVocal()) {
+          const obj = PermissionUtilsAll;
           if (!obj.canEveryoneRole(Permissions.CONNECT, guild_id)) {
             return true;
           }
-          obj = PermissionUtilsAll;
         }
         let hasItem = null != tmp4;
         if (hasItem) {
-          hasItem = BigFlagUtilsAll.has(tmp4.deny, Permissions.VIEW_CHANNEL);
+          const obj2 = BigFlagUtilsAll;
+          hasItem = obj2.has(tmp4.deny, Permissions.VIEW_CHANNEL);
         }
         return hasItem;
       }

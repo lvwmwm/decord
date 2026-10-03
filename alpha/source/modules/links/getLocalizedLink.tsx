@@ -1,16 +1,17 @@
-// Module ID: 4480
-// Function ID: 4481
+// Module ID: 4491
+// Function ID: 4492
 // Name: getLocalizedLink
-// Dependencies: [1115, 2]
+// Dependencies: [1126, 2]
 // Exports: default
 
-// Module 4480 (getLocalizedLink)
-import util from "util" /* 1115 */;
+// Module 4491 (getLocalizedLink)
+import intl from "intl" /* 1126 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/links/getLocalizedLink.tsx");
 
 export default function getLocalizedLink(arg0) {
-  const formatted = util.intl.currentLocale.toLowerCase();
+  const str = intl.intl.currentLocale;
+  const formatted = str.toLowerCase();
   return formatted in arg0 ? arg0[formatted] : arg0.default;
 };

@@ -1,68 +1,187 @@
-// Module ID: 9125
-// Function ID: 9126
+// Module ID: 9148
+// Function ID: 9149
 // Name: EmbeddedActivityBackgroundImageWithOverlay
-// Dependencies: [32, 19, 17, 21, 4845, 576, 9126, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 9149, 2]
 
-// Module 9125 (EmbeddedActivityBackgroundImageWithOverlay)
-import nativeDefault from "native" /* 576 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9126 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 9148 (EmbeddedActivityBackgroundImageWithOverlay)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9149 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-get_ActivityIndicator = fn(17);
-({ ImageBackground: closure_4, View: hasOwnProperty, StyleSheet: metroRequire } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
-let obj2 = { overlay: { flex: 1, opacity: 0.6, backgroundColor: nativeDefault.colors.BLACK } };
-let closure_8 = createStyles.createStyles(obj2);
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+({ ImageBackground: hasOwnProperty, View: metroRequire, StyleSheet: metroImportDefault } = react_native);
+const jsx = Fragment.jsx;
+let obj = { overlay: obj2 };
+obj2 = { flex: 1, opacity: 0.6, backgroundColor: nativeDefault.colors.BLACK };
+let closure_9 = createStyles.createStyles(obj);
 const names = ["embedded_background"];
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/activities/native/EmbeddedActivityBackgroundImageWithOverlay.tsx");
-
-export default function EmbeddedActivityBackgroundImageWithOverlay(arg0) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let absoluteFillObject;
+  let application;
+  let borderRadius;
+  let closure_129_0;
+  let dimensionsStyle;
+  let obj5;
+  let resizeMode;
+  let tmp5;
+  let tmp6;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(12);
+  ({ application, dimensionsStyle, borderRadius, resizeMode } = arg0);
+  let str = "contain";
+  if (undefined !== resizeMode) {
+    str = resizeMode;
+  }
+  const tmp3 = closure_9();
+  [tmp5, closure_129_0] = react.useState(false);
+  let str2;
+  _slicedToArray(react.useState(false), 2);
+  if (application != null) {
+    str2 = application.id;
+  }
+  if (str2 == null) {
+    str2 = "";
+  }
+  if (cResult[0] !== str2) {
+    const obj2 = { applicationId: str2, names, size: 1024 };
+    cResult[0] = str2;
+    cResult[1] = obj2;
+    tmp6 = obj2;
+  } else {
+    tmp6 = cResult[1];
+  }
+  const url = useEmbeddedActivityBackgroundDefault(tmp6).url;
+  if (cResult[2] !== url) {
+    const obj3 = { uri: url };
+    cResult[2] = url;
+    cResult[3] = obj3;
+    tmp9 = obj3;
+  } else {
+    tmp9 = cResult[3];
+  }
+  if (cResult[4] === tmp9) {
+    if (cResult[5] === url) {
+      if (cResult[6] === borderRadius) {
+        if (cResult[7] === dimensionsStyle) {
+          if (cResult[8] === tmp5) {
+            if (cResult[9] === str) {
+              let tmp10;
+              if (cResult[10] === tmp3) {
+                tmp10 = cResult[11];
+              }
+              return tmp10;
+            }
+          }
+        }
+      }
+    }
+  }
+  let tmp14Result = null;
+  if (!tmp5) {
+    tmp14Result = null;
+    if (null != url) {
+      tmp14Result = null;
+      if ("" !== url) {
+        const obj4 = {
+          resizeMode: str,
+          source: tmp9,
+          style: absoluteFillObject,
+          imageStyle: obj5,
+          onError() {
+                  return closure_1_0(true);
+                },
+          children: null
+        };
+        absoluteFillObject = dimensionsStyle;
+        const tmp15 = hasOwnProperty;
+        if (dimensionsStyle == null) {
+          absoluteFillObject = metroImportDefault.absoluteFillObject;
+        }
+        const items = [tmp3.overlay, ];
+        obj5 = { borderRadius };
+        const obj7 = { borderRadius };
+        items[1] = obj7;
+        tmp14Result = tmp14(tmp15, obj4);
+      }
+    }
+  }
+  cResult[4] = tmp9;
+  cResult[5] = url;
+  cResult[6] = borderRadius;
+  cResult[7] = dimensionsStyle;
+  cResult[8] = tmp5;
+  cResult[9] = str;
+  cResult[10] = tmp3;
+  cResult[11] = tmp14Result;
+  tmp10 = tmp14Result;
+}) : ((arg0) => {
+  let application;
+  let borderRadius;
+  let closure_0;
+  let dimensionsStyle;
+  let first;
+  let obj3;
+  let obj4;
+  let resizeMode;
   ({ application, dimensionsStyle, borderRadius, resizeMode } = arg0);
   if (resizeMode === undefined) {
     resizeMode = "contain";
   }
-  const tmp2 = _slicedToArray(noop.useState(false), 2);
-  closure_0 = tmp2[1];
+  closure_0 = undefined;
+  const tmp = closure_9();
+  [first, closure_0] = react.useState(false);
   let str;
-  const tmp = closure_8();
+  const tmp4 = useEmbeddedActivityBackgroundDefault;
   if (application != null) {
     str = application.id;
   }
   if (str == null) {
     str = "";
   }
-  const url = useEmbeddedActivityBackgroundDefault({ applicationId: str, names, size: 1024 }).url;
-  let tmp7Result = null;
-  if (!tmp2[0]) {
-    tmp7Result = null;
+  const obj = { applicationId: str, names, size: 1024 };
+  const url = tmp4(obj).url;
+  let tmp8Result = null;
+  if (!first) {
+    tmp8Result = null;
     if (null != url) {
-      tmp7Result = null;
+      tmp8Result = null;
       if ("" !== url) {
-        const obj2 = { resizeMode, source: null, style: null, imageStyle: null, onError: null, children: null };
-        const obj3 = { uri: url };
-        obj2.source = obj3;
-        if (dimensionsStyle == null) {
-          dimensionsStyle = absoluteFillObject.absoluteFillObject;
-        }
-        obj2.style = dimensionsStyle;
-        const obj4 = { borderRadius };
-        obj2.imageStyle = obj4;
-        obj2.onError = function onError() {
-          return closure_0(true);
+        const obj2 = {
+          resizeMode,
+          source: obj3,
+          style: dimensionsStyle,
+          imageStyle: obj4,
+          onError() {
+                  return closure_0(true);
+                },
+          children: null
         };
-        const obj5 = { style: null };
+        obj3 = { uri: url };
+        const tmp9 = hasOwnProperty;
+        if (dimensionsStyle == null) {
+          dimensionsStyle = metroImportDefault.absoluteFillObject;
+        }
         const items = [tmp.overlay, ];
+        obj4 = { borderRadius };
         const obj6 = { borderRadius };
         items[1] = obj6;
-        obj5.style = items;
-        obj2.children = <hasOwnProperty style={null} />;
-        tmp7Result = tmp7(React4, obj2);
+        tmp8Result = tmp8(tmp9, obj2);
       }
     }
   }
-  return tmp7Result;
-};
+  return tmp8Result;
+});
+const result = size.fileFinishedImporting("modules/activities/native/EmbeddedActivityBackgroundImageWithOverlay.tsx");
+
+export default tmp3;

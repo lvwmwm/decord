@@ -1,127 +1,109 @@
-// Module ID: 8677
-// Function ID: 8678
+// Module ID: 8690
+// Function ID: 8691
 // Name: ApplicationAssetsV2Store
-// Dependencies: [12, 504, 573, 2]
+// Dependencies: [12, 504, 584, 2]
 
-// Module 8677 (ApplicationAssetsV2Store)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 8690 (ApplicationAssetsV2Store)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
+const require = globalThis.__r;
+let _require, resolved_assets, set;
+
+const f98152 = (application_id) => application_id.application_id;
+const f98153 = (item) => {
+  let obj;
+  let tmp;
+  [tmp, obj] = item;
+  const items = [tmp, ];
+  const flatMapResult = obj.flatMap((resolved_assets) => {
+    resolved_assets = resolved_assets.resolved_assets;
+    if (resolved_assets == null) {
+      resolved_assets = [];
+    }
+    return resolved_assets;
+  });
+  items[1] = flatMapResult.filter(function(updated_at) {
+    const value = map.get(closure_1_0);
+    let tmp2;
+    if (value != null) {
+      tmp2 = value[updated_at.key];
+    }
+    let tmp3 = null == tmp2;
+    if (!tmp3) {
+      const _Date = Date;
+      const self = this;
+      const self2 = this;
+      const _Date2 = Date;
+      const self3 = this;
+      const self4 = this;
+      const date = new Date(updated_at.updated_at);
+      tmp3 = date > new Date(tmp2.updated_at);
+      const date1 = new Date(tmp2.updated_at);
+    }
+    return tmp3;
+  });
+  return items;
+};
+const f98154 = (item) => {
+  let arr;
+  [, arr] = item;
+  return arr.length > 0;
+};
+const f98155 = (item) => {
+  let arr;
+  let tmp;
+  [tmp, arr] = item;
+  c0 = true;
+  const obj = {};
+  set = map.set;
+  const merged = Object.assign(map.get(tmp));
+  const merged1 = Object.assign(Object.fromEntries(arr.map((key) => {
+    const items = [key.key, key];
+    return items;
+  })));
+  return set(tmp, obj);
+};
 function handleFeaturedOrDeveloperFetchSuccess(configs) {
+  let c0;
   const values = Object.values(configs.configs);
   _require = false;
   const flatResult = values.flat();
-  const entries = Object.entries(require("module_12").groupBy(flatResult, (application_id) => application_id.application_id));
-  const mapped = entries.map((item) => {
-    [tmp, obj] = item;
-    const items = [
-      tmp,
-      obj.flatMap((resolved_assets) => {
-        resolved_assets = resolved_assets.resolved_assets;
-        if (resolved_assets == null) {
-          resolved_assets = [];
-        }
-        return resolved_assets;
-      }).filter((updated_at) => {
-        value = map.get(closure_1_0);
-        let tmp2;
-        if (value != null) {
-          tmp2 = value[updated_at.key];
-        }
-        let tmp3 = null == tmp2;
-        if (!tmp3) {
-          const _Date = Date;
-          const date = new Date(updated_at.updated_at);
-          const _Date2 = Date;
-          const date1 = new Date(tmp2.updated_at);
-          tmp3 = date > date1;
-        }
-        return tmp3;
-      })
-    ];
-    return items;
-  });
-  const found = mapped.filter((item) => {
-    [, arr] = item;
-    return arr.length > 0;
-  });
-  const item = found.forEach((item) => {
-    [tmp, arr] = item;
-    c0 = true;
-    const merged = Object.assign(map.get(tmp));
-    const merged1 = Object.assign(Object.fromEntries(arr.map((key) => {
-      const items = [key.key, key];
-      return items;
-    })));
-    return map.set(tmp, {});
-  });
+  const obj2 = require("module_12");
+  const entries1 = entries(obj2.groupBy(flatResult, f98152));
+  const mapped = entries1.map(f98153);
+  const found = mapped.filter(f98154);
+  const item = found.forEach(f98155);
   return _require;
 }
 const map = new Map();
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class ApplicationAssetsV2Store extends Store {
+  getAssets(arg0) {
+    return map.get(arg0);
+  }
 }
-ApplicationAssetsV2Store.prototype["getAssets"] = function getAssets(arg0) {
-  return map.get(arg0);
-};
+const prototype = ApplicationAssetsV2Store.prototype;
 ApplicationAssetsV2Store.displayName = "ApplicationAssetsV2Store";
-const applicationAssetsV2Store = new ApplicationAssetsV2Store(DispatcherDefault, {
+let obj = {
   LOGOUT: function handleLogout() {
     map.clear();
   },
   APPLICATION_WIDGET_CONFIG_FETCH_SUCCESS: function handleFetchSuccess(configs) {
     _require = false;
-    const entries = Object.entries(require("module_12").groupBy(configs.configs, (application_id) => application_id.application_id));
-    const mapped = entries.map((item) => {
-      [tmp, obj] = item;
-      const items = [
-        tmp,
-        obj.flatMap((resolved_assets) => {
-          resolved_assets = resolved_assets.resolved_assets;
-          if (resolved_assets == null) {
-            resolved_assets = [];
-          }
-          return resolved_assets;
-        }).filter((updated_at) => {
-          value = map.get(closure_1_0);
-          let tmp2;
-          if (value != null) {
-            tmp2 = value[updated_at.key];
-          }
-          let tmp3 = null == tmp2;
-          if (!tmp3) {
-            const _Date = Date;
-            const date = new Date(updated_at.updated_at);
-            const _Date2 = Date;
-            const date1 = new Date(tmp2.updated_at);
-            tmp3 = date > date1;
-          }
-          return tmp3;
-        })
-      ];
-      return items;
-    });
-    const found = mapped.filter((item) => {
-      [, arr] = item;
-      return arr.length > 0;
-    });
-    const item = found.forEach((item) => {
-      [tmp, arr] = item;
-      c0 = true;
-      const merged = Object.assign(map.get(tmp));
-      const merged1 = Object.assign(Object.fromEntries(arr.map((key) => {
-        const items = [key.key, key];
-        return items;
-      })));
-      return map.set(tmp, {});
-    });
+    configs = configs.configs;
+    let obj = require("module_12");
+    const entries1 = entries(obj.groupBy(configs, f98152));
+    const mapped = entries1.map(f98153);
+    const found = mapped.filter(f98154);
+    const item = found.forEach(f98155);
     return _require;
   },
   APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_SUCCESS: handleFeaturedOrDeveloperFetchSuccess,
   APPLICATION_WIDGET_CONFIG_DEVELOPER_FETCH_SUCCESS: handleFeaturedOrDeveloperFetchSuccess
-});
-const size = fn(2);
+};
+const applicationAssetsV2Store = new ApplicationAssetsV2Store(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/application_assets_v2/ApplicationAssetsV2Store.tsx");
 
 export default applicationAssetsV2Store;

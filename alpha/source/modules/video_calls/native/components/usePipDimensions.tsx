@@ -1,26 +1,114 @@
-// Module ID: 9043
-// Function ID: 9044
+// Module ID: 9071
+// Function ID: 9072
 // Name: usePipDimensions
-// Dependencies: [19, 9044, 1479, 7962, 2]
-// Exports: default
+// Dependencies: [19, 558, 576, 9072, 1484, 8008, 2]
 
-// Module 9043 (usePipDimensions)
-import DeviceOrientation from "DeviceOrientation" /* 7962 */;
-import noop from "module_19" /* 19 */;
+// Module 9071 (usePipDimensions)
+import react2 from "react" /* 576 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
+import DeviceOrientation from "DeviceOrientation" /* 8008 */;
+import useIsViewingActivity from "useIsViewingActivity" /* 9072 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
 let c4 = 0.5625;
-let size = fn(2);
-const result = size.fileFinishedImporting("modules/video_calls/native/components/usePipDimensions.tsx");
-
-export default function usePipDimensions(channelId) {
-  let forcedOrientation = channelId.forcedOrientation;
+let c5 = 0.25;
+let c6 = 0.5;
+let c7 = 400;
+let c8 = 300;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let channelId;
+  let forcedOrientation;
+  let height;
+  let tmp5;
+  let width;
+  const obj = react2;
+  const cResult = obj.c(5);
+  ({ channelId, forcedOrientation } = arg0);
+  let tmp4 = null;
+  if (undefined !== forcedOrientation) {
+    tmp4 = forcedOrientation;
+  }
+  if (cResult[0] !== channelId) {
+    const obj2 = { channelId };
+    cResult[0] = channelId;
+    cResult[1] = obj2;
+    tmp5 = obj2;
+  } else {
+    tmp5 = cResult[1];
+  }
+  const tmpResult = useIsViewingActivity;
+  const isViewingActivity = tmpResult.useIsViewingActivity(tmp5);
+  ({ width, height } = useWindowDimensionsDefault());
+  let tmp8 = width > height;
+  useWindowDimensionsDefault();
+  let tmp9 = tmp4 === tmp(8008).OrientationType.LANDSCAPE;
+  if (!tmp9) {
+    tmp9 = tmp8 && tmp4 !== DeviceOrientation.OrientationType.PORTRAIT;
+    tmp8 && tmp4 !== DeviceOrientation.OrientationType.PORTRAIT;
+  }
+  let num3 = 96;
+  let num4 = 96;
+  if (!isViewingActivity) {
+    if (!tmp8) {
+      if (!tmp9) {
+        const _Math = Math;
+        const bound = Math.min(height * c5, c8);
+        num4 = bound * c4;
+        num3 = bound;
+      }
+    }
+    if (!tmp8) {
+      if (tmp9) {
+        const _Math2 = Math;
+        const bound1 = Math.min(width * c6, c7);
+        num3 = bound1 * c4;
+        num4 = bound1;
+      }
+    }
+    if (tmp8) {
+      if (tmp9) {
+        const _Math4 = Math;
+        const bound2 = Math.min(width * c5, c7);
+        num3 = bound2 * c4;
+        num4 = bound2;
+      }
+    }
+    if (tmp8) {
+      tmp8 = !tmp9;
+    }
+    num3 = 1;
+    num4 = 1;
+    if (tmp8) {
+      const _Math3 = Math;
+      const bound3 = Math.min(height * c6, c8);
+      num4 = bound3 * c4;
+      num3 = bound3;
+    }
+  }
+  if (cResult[2] === num3) {
+    let tmp31;
+    if (cResult[3] === num4) {
+      tmp31 = cResult[4];
+    }
+    return tmp31;
+  }
+  size = { height: num3, width: num4 };
+  cResult[2] = num3;
+  cResult[3] = num4;
+  cResult[4] = size;
+  tmp31 = size;
+}) : ((forcedOrientation) => {
+  forcedOrientation = forcedOrientation.forcedOrientation;
+  const channelId = forcedOrientation.channelId;
   if (forcedOrientation === undefined) {
     forcedOrientation = null;
   }
   let width;
-  const isViewingActivity = forcedOrientation(width[1]).useIsViewingActivity({ channelId: channelId.channelId });
-  const size = isViewingActivity(width[2])();
+  const obj = forcedOrientation(width[3]);
+  const isViewingActivity = obj.useIsViewingActivity({ channelId });
+  size = isViewingActivity(width[4])();
   width = size.width;
   let height = size.height;
   const items = [height, width, forcedOrientation, isViewingActivity];
@@ -28,11 +116,8 @@ export default function usePipDimensions(channelId) {
     let tmp3 = width > height;
     let tmp7 = forcedOrientation === DeviceOrientation.OrientationType.LANDSCAPE;
     if (!tmp7) {
-      let tmp8 = tmp3;
-      if (tmp3) {
-        tmp8 = forcedOrientation !== DeviceOrientation.OrientationType.PORTRAIT;
-      }
-      tmp7 = tmp8;
+      tmp7 = tmp3 && tmp4 !== tmp5(8008).OrientationType.PORTRAIT;
+      tmp3 && forcedOrientation !== DeviceOrientation.OrientationType.PORTRAIT;
     }
     height = 96;
     width = 96;
@@ -40,7 +125,7 @@ export default function usePipDimensions(channelId) {
       if (!tmp3) {
         if (!tmp7) {
           const _Math = Math;
-          const bound = Math.min(0.25 * tmp2, 300);
+          const bound = Math.min(tmp2 * c5, c8);
           width = bound * c4;
           height = bound;
         }
@@ -48,7 +133,7 @@ export default function usePipDimensions(channelId) {
       if (!tmp3) {
         if (tmp7) {
           const _Math2 = Math;
-          const bound1 = Math.min(0.5 * tmp, 400);
+          const bound1 = Math.min(tmp * c6, c7);
           height = bound1 * c4;
           width = bound1;
         }
@@ -56,7 +141,7 @@ export default function usePipDimensions(channelId) {
       if (tmp3) {
         if (tmp7) {
           const _Math4 = Math;
-          const bound2 = Math.min(0.25 * tmp, 400);
+          const bound2 = Math.min(tmp * c5, c7);
           height = bound2 * c4;
           width = bound2;
         }
@@ -68,11 +153,15 @@ export default function usePipDimensions(channelId) {
       width = 1;
       if (tmp3) {
         const _Math3 = Math;
-        const bound3 = Math.min(0.5 * tmp2, 300);
+        const bound3 = Math.min(tmp2 * c6, c8);
         width = bound3 * c4;
         height = bound3;
       }
     }
     return { height, width };
   }, items);
-};
+});
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/video_calls/native/components/usePipDimensions.tsx");
+
+export default tmp2;

@@ -1,36 +1,48 @@
-// Module ID: 10610
-// Function ID: 10611
+// Module ID: 10691
+// Function ID: 10692
 // Name: openFavoritesGuildMoveToCategoryActionSheet
-// Dependencies: [1074, 6802, 5572, 9877, 2]
+// Dependencies: [1085, 6694, 5858, 10035, 2]
 // Exports: default
 
-// Module 10610 (openFavoritesGuildMoveToCategoryActionSheet)
-import Constants from "Constants" /* 1074 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 9877 */;
+// Module 10691 (openFavoritesGuildMoveToCategoryActionSheet)
+import Constants from "Constants" /* 1085 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10035 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
 const NULL_STRING_CHANNEL_ID = Constants.NULL_STRING_CHANNEL_ID;
 let result = size.fileFinishedImporting("modules/favorites/native/openFavoritesGuildMoveToCategoryActionSheet.tsx");
 
 export default function openFavoritesGuildMoveToCategoryActionSheet(arg0, title) {
+  let found;
   _require = title;
-  const obj2 = { key: "FavoritesGuildMoveToCategory-" + arg0, header: { title: title.label }, hasIcons: true, options: null };
+  const tmp = require("Sheet/showSimpleActionSheet");
+  let obj = {
+    key: "FavoritesGuildMoveToCategory-" + arg0,
+    header: { title: title.label },
+    hasIcons: true,
+    options: found.map((label) => {
+      let FolderIcon;
+      title = label;
+      let obj = {
+        label: label.label,
+        IconComponent: FolderIcon,
+        onPress() {
+          const obj = FavoritesActionCreators;
+          return obj.updateFavoriteChannels(label.getDestinationMove(label.id).updates);
+        }
+      };
+      FolderIcon = undefined;
+      if (label.id !== NULL_STRING_CHANNEL_ID) {
+        FolderIcon = title(dependencyMap[2]).FolderIcon;
+      }
+      return obj;
+    })
+  };
+  const showSimpleActionSheet = tmp.showSimpleActionSheet;
   const destinations = title.destinations;
-  const found = destinations.filter((disabled) => !disabled.disabled);
-  obj2.options = found.map((label) => {
-    title = label;
-    const obj = { label: label.label, IconComponent: null, onPress: null };
-    let FolderIcon;
-    if (label.id !== NULL_STRING_CHANNEL_ID) {
-      FolderIcon = title(dependencyMap[2]).FolderIcon;
-    }
-    obj.IconComponent = FolderIcon;
-    obj.onPress = function onPress() {
-      return FavoritesActionCreators.updateFavoriteChannels(label.getDestinationMove(label.id).updates);
-    };
-    return obj;
-  });
-  const result = require("Sheet/showSimpleActionSheet").showSimpleActionSheet(obj2);
+  found = destinations.filter((disabled) => !disabled.disabled);
+  const result = showSimpleActionSheet(obj);
 };

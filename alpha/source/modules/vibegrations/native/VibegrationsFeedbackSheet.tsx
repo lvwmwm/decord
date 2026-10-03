@@ -1,43 +1,111 @@
-// Module ID: 16564
-// Function ID: 16565
+// Module ID: 16641
+// Function ID: 16642
 // Name: VibegrationsFeedbackSheet
-// Dependencies: [19, 21, 16534, 4556, 16551, 1115, 3714, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 16611, 4567, 1126, 3723, 16628, 2]
 
-// Module 16564 (VibegrationsFeedbackSheet)
-import ToastUtils from "ToastUtils" /* 4556 */;
-import vibegrationsFeedback from "vibegrationsFeedback" /* 16534 */;
-import noop from "module_19" /* 19 */;
+// Module 16641 (VibegrationsFeedbackSheet)
+import Fragment from "Fragment" /* 21 */;
+import vibegrationsFeedback from "vibegrationsFeedback" /* 16611 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsFeedbackSheet.tsx");
+let projectId;
 
-export default function VibegrationsFeedbackSheet(projectId) {
+let tmp;
+const ToastUtils = tmp(4567);
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+  let tmp = projectId;
+  let obj = projectId(576);
+  const cResult = obj.c(9);
+  projectId = projectId.projectId;
+  const promptCount = projectId.promptCount;
+  if (cResult[0] === projectId) {
+    let tmp4;
+    let tmp6;
+    let tmp9;
+    let tmp8;
+    let tmp7;
+    let tmp14;
+    if (cResult[1] === promptCount) {
+      tmp4 = cResult[2];
+    }
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      let tmpResult = tmp(16611);
+      const items = [tmpResult.vibegrationsFeedbackSection()];
+      cResult[3] = items;
+      tmp6 = items;
+    } else {
+      tmp6 = cResult[3];
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1126).intl;
+      const stringResult = intl.string(promptCount(3723).W7Sdp4);
+      const intl2 = tmp(1126).intl;
+      const stringResult1 = intl2.string(promptCount(3723).dXJed8);
+      const intl3 = tmp(1126).intl;
+      const stringResult2 = intl3.string(promptCount(3723).kLHFxL);
+      cResult[4] = stringResult;
+      cResult[5] = stringResult1;
+      cResult[6] = stringResult2;
+      tmp9 = stringResult2;
+      tmp8 = stringResult1;
+      tmp7 = stringResult;
+    } else {
+      tmp7 = cResult[4];
+      tmp8 = cResult[5];
+      tmp9 = cResult[6];
+    }
+    if (cResult[7] !== tmp4) {
+      promptCount(16628);
+      const tmp18 = <tmp17 headerLabel={tmp7} ratingBody={tmp8} categoriesHeader={tmp9} optionsTree={tmp6} trackOpen={tmp(16611).trackVibegrationsFeedbackOpened} trackReport={tmp4} />;
+      cResult[7] = tmp4;
+      cResult[8] = tmp18;
+      tmp14 = tmp18;
+    } else {
+      tmp14 = cResult[8];
+    }
+    return tmp14;
+  }
+  const fn = function o(rating) {
+    const obj = vibegrationsFeedback;
+    const result = obj.submitVibegrationsFeedback(projectId, promptCount, rating, "VibegrationsFeedbackSheet");
+    if (null != rating.rating) {
+      const tmpResult = ToastUtils;
+      tmpResult.presentFeedbackSent();
+    }
+  };
+  cResult[0] = projectId;
+  cResult[1] = promptCount;
+  cResult[2] = fn;
+  tmp4 = fn;
+}) : ((projectId) => {
   projectId = projectId.projectId;
   const promptCount = projectId.promptCount;
   let items = [projectId, promptCount];
-  const callback = noop.useCallback((rating) => {
-    const result = vibegrationsFeedback.submitVibegrationsFeedback(projectId, promptCount, rating, "VibegrationsFeedbackSheet");
+  const callback = react.useCallback((rating) => {
+    const obj = vibegrationsFeedback;
+    const result = obj.submitVibegrationsFeedback(projectId, promptCount, rating, "VibegrationsFeedbackSheet");
     if (null != rating.rating) {
-      ToastUtils.presentFeedbackSent();
       const tmpResult = ToastUtils;
+      tmpResult.presentFeedbackSent();
     }
   }, items);
-  const memo = noop.useMemo(() => {
-    const items = [projectId(dependencyMap[2]).vibegrationsFeedbackSection()];
+  const memo = react.useMemo(() => {
+    const items = [];
+    const obj = projectId(dependencyMap[4]);
+    items[0] = obj.vibegrationsFeedbackSection();
     return items;
   }, []);
-  const obj = { headerLabel: null, ratingBody: null, categoriesHeader: null, optionsTree: null, trackOpen: null, trackReport: null };
-  const intl = projectId(1115).intl;
-  obj.headerLabel = intl.string(promptCount(3714).W7Sdp4);
-  const intl2 = projectId(1115).intl;
-  obj.ratingBody = intl2.string(promptCount(3714).dXJed8);
-  const intl3 = projectId(1115).intl;
-  obj.categoriesHeader = intl3.string(promptCount(3714).kLHFxL);
-  obj.optionsTree = memo;
-  obj.trackOpen = projectId(16534).trackVibegrationsFeedbackOpened;
-  obj.trackReport = callback;
-  return jsx(promptCount(16551), { headerLabel: null, ratingBody: null, categoriesHeader: null, optionsTree: null, trackOpen: null, trackReport: null });
-};
+  promptCount(16628);
+  const intl = projectId(1126).intl;
+  const intl2 = projectId(1126).intl;
+  const intl3 = projectId(1126).intl;
+  return <tmp3 headerLabel={intl.string(promptCount(3723).W7Sdp4)} ratingBody={intl2.string(promptCount(3723).dXJed8)} categoriesHeader={intl3.string(promptCount(3723).kLHFxL)} optionsTree={memo} trackOpen={projectId(16611).trackVibegrationsFeedbackOpened} trackReport={callback} />;
+});
+let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsFeedbackSheet.tsx");
+
+export default tmp2;

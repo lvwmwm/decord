@@ -1,23 +1,94 @@
-// Module ID: 6588
-// Function ID: 6589
+// Module ID: 6471
+// Function ID: 6472
 // Name: useSafeAreaInsetsKeyboardAware
-// Dependencies: [32, 19, 1481, 6078, 6079, 1613, 1482, 1364, 1879, 4732, 1611, 6077, 2]
+// Dependencies: [32, 19, 1486, 558, 576, 6472, 6473, 1618, 1487, 1369, 1884, 4747, 1616, 6474, 2]
 // Exports: default
 
-// Module 6588 (useSafeAreaInsetsKeyboardAware)
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1879 */;
-import useKeyboardDuration from "useKeyboardDuration" /* 6078 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6079 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1481 */;
+// Module 6471 (useSafeAreaInsetsKeyboardAware)
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import KeyboardTypes from "KeyboardTypes" /* 1616 */;
+import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1884 */;
+import useKeyboardType from "useKeyboardType" /* 4747 */;
+import useKeyboardDuration from "useKeyboardDuration" /* 6472 */;
+import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 6474 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1486 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
+let tmp;
+const DeprecatedLayoutAnimation = tmp(6473);
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let disabled;
+  let keyboardHeight;
+  let tmp2;
+  let obj = disabled(576);
+  const cResult = obj.c(5);
+  ({ keyboardHeight, disabled } = arg0);
+  const ref = react.useRef(false);
+  const obj2 = react;
+  if (cResult[0] !== disabled) {
+    const fn = function o() {
+      const obj = useKeyboardDuration;
+      const keyboardDuration = obj.getKeyboardDuration();
+      const tmp4 = ref;
+      if (ref.current) {
+        if (0 !== keyboardDuration) {
+          const tmp5 = disabled;
+          if (!tmp5) {
+            const tmpResult = DeprecatedLayoutAnimation;
+            const result = tmpResult.DeprecatedLayoutAnimationKeyboard(keyboardDuration);
+          }
+        }
+      }
+      tmp4.current = true;
+    };
+    cResult[0] = disabled;
+    cResult[1] = fn;
+    tmp2 = fn;
+  } else {
+    tmp2 = cResult[1];
+  }
+  if (cResult[2] === disabled) {
+    let tmp3;
+    if (cResult[3] === keyboardHeight) {
+      tmp3 = cResult[4];
+    }
+    const effect = obj2.useEffect(tmp2, tmp3);
+  }
+  const items = [keyboardHeight, disabled];
+  cResult[2] = disabled;
+  cResult[3] = keyboardHeight;
+  cResult[4] = items;
+  tmp3 = items;
+}) : ((disabled) => {
+  disabled = disabled.disabled;
+  const keyboardHeight = disabled.keyboardHeight;
+  const ref = react.useRef(false);
+  const items = [keyboardHeight, disabled];
+  const effect = react.useEffect(() => {
+    const obj = useKeyboardDuration;
+    const keyboardDuration = obj.getKeyboardDuration();
+    const tmp4 = ref;
+    if (ref.current) {
+      if (0 !== keyboardDuration) {
+        const tmp5 = disabled;
+        if (!tmp5) {
+          const tmpResult = DeprecatedLayoutAnimation;
+          const result = tmpResult.DeprecatedLayoutAnimationKeyboard(keyboardDuration);
+        }
+      }
+    }
+    tmp4.current = true;
+  }, items);
+});
 let result = size.fileFinishedImporting("modules/safe_area/useSafeAreaInsetsKeyboardAware.native.tsx");
 
 export default function useSafeAreaInsetsKeyboardAware() {
+  let c6;
+  let isAndroidResult;
+  let tmp8;
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
@@ -40,44 +111,49 @@ export default function useSafeAreaInsetsKeyboardAware() {
   }
   let callback;
   c6 = undefined;
-  const tmp2 = flag2(flag3[5])();
-  const appEntryKey = flag(flag3[6]).useAppEntryKey();
+  let tmp = flag3;
+  const tmp2 = flag2(flag3[7])();
+  let tmp3 = flag;
+  let obj2 = flag(flag3[8]);
+  const appEntryKey = obj2.useAppEntryKey();
   const items = [appEntryKey, flag3, flag, flag2];
   callback = callback.useCallback(() => {
+    const obj = PlatformUtils;
     if (obj.isIOS()) {
-      if (!flag) {
+      const tmp3 = flag;
+      if (!tmp3) {
         return 0;
       }
     }
-    obj = PlatformUtils;
+    const tmpResult = PlatformUtils;
     if (tmpResult.isAndroid()) {
-      if (!flag2) {
+      const tmp4 = flag2;
+      if (!tmp4) {
         return 0;
       }
     }
-    tmpResult = PlatformUtils;
-    let systemKeyboardHeight = useSystemKeyboardHeight.getSystemKeyboardHeight({ appEntryKey });
+    const obj2 = { appEntryKey };
+    const tmpResult4 = useSystemKeyboardHeight;
+    let systemKeyboardHeight = tmpResult4.getSystemKeyboardHeight(obj2);
     if (0 === systemKeyboardHeight) {
-      const keyboardType = tmp(4732).getKeyboardType(tmp5);
+      const tmpResult5 = useKeyboardType;
+      const keyboardType = tmpResult5.getKeyboardType(tmp5);
       let num3 = 0;
-      if (keyboardType !== tmp(1611).KeyboardTypes.SYSTEM) {
+      if (keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM) {
         num3 = 0;
         if (flag3) {
-          num3 = tmp(6077).getCustomKeyboardHeight(tmp5);
-          const tmpResult6 = tmp(6077);
+          const tmpResult6 = useCustomKeyboardHeight;
+          num3 = tmpResult6.getCustomKeyboardHeight(tmp5);
         }
       }
       systemKeyboardHeight = num3;
-      const tmpResult5 = tmp(4732);
     }
     return systemKeyboardHeight;
   }, items);
   const ref = callback.useRef(callback());
-  const obj2 = flag(flag3[6]);
-  let tmp = flag3;
-  const tmp3 = flag;
   [tmp8, c6] = appEntryKey(callback.useState(ref.current), 2);
   const items1 = [callback, flag, flag2];
+  appEntryKey(callback.useState(ref.current), 2);
   const effect = callback.useEffect(() => subscribeToKeyboardUIStore(() => {
     const tmp = callback();
     if (ref.current !== tmp) {
@@ -85,38 +161,25 @@ export default function useSafeAreaInsetsKeyboardAware() {
       closure_1_6(tmp);
     }
   }), items1);
-  let isAndroidResult = !flag;
+  const obj3 = { keyboardHeight: tmp8, disabled: isAndroidResult };
+  isAndroidResult = !flag;
+  const tmp10 = c6;
   if (flag) {
     isAndroidResult = !flag4;
   }
   if (!isAndroidResult) {
-    isAndroidResult = tmp3(tmp[7]).isAndroid();
-    const tmp3Result = tmp3(tmp[7]);
+    const tmp3Result = tmp3(tmp[9]);
+    isAndroidResult = tmp3Result.isAndroid();
   }
-  closure_129_0 = isAndroidResult;
-  closure_129_1 = obj3.useRef(false);
-  const items2 = [tmp8, isAndroidResult];
-  const effect1 = obj3.useEffect(() => {
-    const keyboardDuration = useKeyboardDuration.getKeyboardDuration();
-    if (flag2.current) {
-      if (0 !== keyboardDuration) {
-        if (!flag) {
-          const result = DeprecatedLayoutAnimation.DeprecatedLayoutAnimationKeyboard(keyboardDuration);
-          const tmpResult = DeprecatedLayoutAnimation;
-        }
-      }
-    }
-    flag2.current = true;
-  }, items2);
+  tmp10(obj3);
   let num = 0;
   if (flag4) {
     num = tmp8;
   }
   let insets = tmp2;
   if (tmp8 > 0) {
-    const obj4 = {};
+    const obj4 = { bottom: num };
     const merged = Object.assign(tmp2);
-    obj4.bottom = num;
     insets = obj4;
   }
   return { insets };

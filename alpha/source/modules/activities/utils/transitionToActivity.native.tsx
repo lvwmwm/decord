@@ -1,16 +1,23 @@
-// Module ID: 9021
-// Function ID: 9022
+// Module ID: 9049
+// Function ID: 9050
 // Name: transitionToActivity
-// Dependencies: [9022, 2043, 8693, 9023, 4487, 4721, 9028, 8995, 12655, 5046, 8997, 4809, 8974, 2]
+// Dependencies: [9050, 2050, 8705, 9051, 4498, 4736, 9056, 9014, 12695, 5091, 9016, 4854, 8993, 2]
 // Exports: default
 
-// Module 9021 (transitionToActivity)
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4487 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 8693 */;
-import ChannelCallStore from "ChannelCallStore" /* 9022 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 9023 */;
-import ChannelCallModalDefault from "ChannelCallModal" /* 9028 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
+// Module 9049 (transitionToActivity)
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4498 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4736 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5091 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 8705 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8993 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 9014 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9016 */;
+import ChannelCallStore from "ChannelCallStore" /* 9050 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 9051 */;
+import ChannelCallModalDefault from "ChannelCallModal" /* 9056 */;
+import openChannelCallModalForChannelIdDefault from "openChannelCallModalForChannelId" /* 12695 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
 import size from "module_2" /* 2 */;
 
 const setVoiceChatDrawerState = ChannelCallStore.setVoiceChatDrawerState;
@@ -18,33 +25,32 @@ const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 const VoiceChatDrawerState = ChannelCallConstants.VoiceChatDrawerState;
 let result = size.fileFinishedImporting("modules/activities/utils/transitionToActivity.native.tsx");
 
-export default function transitionToActivity(arg0, _location) {
-  const embeddedActivityLocationChannelId = embeddedActivityLocationUtils.getEmbeddedActivityLocationChannelId(_location);
+export default function transitionToActivity(arg0, connectedActivityLocation) {
+  const obj = embeddedActivityLocationUtils;
+  const embeddedActivityLocationChannelId = obj.getEmbeddedActivityLocationChannelId(connectedActivityLocation);
   if (null != embeddedActivityLocationChannelId) {
-    const isModalOpenResult = tmp(4721).isModalOpen(ChannelCallModalDefault);
-    let tmp4 = !isModalOpenResult;
-    if (!isModalOpenResult) {
-      tmp4 = tmp15(8995)(embeddedActivityLocationChannelId);
-    }
+    const tmpResult = NavigationRouteUtils;
+    const isModalOpenResult = tmpResult.isModalOpen(ChannelCallModalDefault);
+    const tmp4 = !isModalOpenResult && isVoiceEmbeddedActivityDefault(embeddedActivityLocationChannelId);
     if (tmp4) {
-      tmp15(12655)(embeddedActivityLocationChannelId);
+      openChannelCallModalForChannelIdDefault(embeddedActivityLocationChannelId);
     }
-    const selfEmbeddedActivityForLocation = EmbeddedActivitiesStore.getSelfEmbeddedActivityForLocation(_location);
+    const selfEmbeddedActivityForLocation = EmbeddedActivitiesStore.getSelfEmbeddedActivityForLocation(connectedActivityLocation);
     if (null != selfEmbeddedActivityForLocation) {
-      if (tmp15(8995)(embeddedActivityLocationChannelId)) {
-        const tmp15Result = tmp15(5046);
-        ({ applicationId: obj5.applicationId, compositeInstanceId: obj5.instanceId } = selfEmbeddedActivityForLocation);
-        const participant = tmp15Result.selectParticipant(embeddedActivityLocationChannelId, tmp(8997).getEmbeddedActivityParticipantId({ applicationId: null, instanceId: null }));
+      if (isVoiceEmbeddedActivityDefault(embeddedActivityLocationChannelId)) {
+        const selectParticipant = ChannelRTCActionCreatorsDefault.selectParticipant;
+        ChannelRTCActionCreatorsDefault;
         const obj2 = { applicationId: null, instanceId: null };
-        const tmpResult3 = tmp(8997);
-        tmp15(4809).hideActionSheet();
+        ({ applicationId: obj4.applicationId, compositeInstanceId: obj4.instanceId } = selfEmbeddedActivityForLocation);
+        const tmpResult3 = ChannelRTCParticipants;
+        const participant = selectParticipant(embeddedActivityLocationChannelId, tmpResult3.getEmbeddedActivityParticipantId(obj2));
+        const tmp16Result2 = ActionSheetActionCreatorsDefault;
+        tmp16Result2.hideActionSheet();
         setVoiceChatDrawerState(embeddedActivityLocationChannelId, VoiceChatDrawerState.CLOSED);
-        const tmp15Result2 = tmp15(4809);
       } else {
-        const result = tmp(8974).updateActivityPanelMode(ActivityPanelModes.PANEL);
-        const tmpResult4 = tmp(8974);
+        const tmpResult4 = EmbeddedActivitiesActionCreators;
+        const result = tmpResult4.updateActivityPanelMode(ActivityPanelModes.PANEL);
       }
     }
-    const tmpResult = tmp(4721);
   }
 };

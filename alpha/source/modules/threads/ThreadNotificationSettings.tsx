@@ -1,18 +1,21 @@
-// Module ID: 9743
-// Function ID: 9744
+// Module ID: 11069
+// Function ID: 11070
 // Name: ThreadNotificationSettings
-// Dependencies: [2044, 5026, 4500, 1114, 1074, 1385, 504, 2]
-// Exports: useThreadNotificationSetting
+// Dependencies: [2051, 5071, 4511, 1125, 1085, 1390, 558, 576, 504, 2]
 
-// Module 9743 (ThreadNotificationSettings)
-import FlagUtils from "FlagUtils" /* 1385 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5026 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4500 */;
+// Module 11069 (ThreadNotificationSettings)
+import Constants from "Constants" /* 1085 */;
+import ThreadConstants from "ThreadConstants" /* 1125 */;
+import FlagUtils from "FlagUtils" /* 1390 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4511 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
 function computeThreadNotificationSetting(channel) {
   let obj = arg1;
   if (arg1 === undefined) {
@@ -30,46 +33,87 @@ function computeThreadNotificationSetting(channel) {
   if (null == flagsResult) {
     return ThreadMemberFlags.NO_MESSAGES;
   } else {
+    const obj6 = FlagUtils;
     if (obj6.hasFlag(flagsResult, ThreadMemberFlags.ALL_MESSAGES)) {
-      return tmp8.ALL_MESSAGES;
+      return ThreadMemberFlags.ALL_MESSAGES;
     } else {
-      if (tmp6Result.hasFlag(flagsResult, tmp8.ONLY_MENTIONS)) {
-        return tmp8.ONLY_MENTIONS;
+      const tmp6Result = FlagUtils;
+      if (tmp6Result.hasFlag(flagsResult, ThreadMemberFlags.ONLY_MENTIONS)) {
+        return ThreadMemberFlags.ONLY_MENTIONS;
       } else {
-        if (tmp6Result2.hasFlag(flagsResult, tmp8.NO_MESSAGES)) {
-          return tmp8.NO_MESSAGES;
+        const tmp6Result2 = FlagUtils;
+        if (tmp6Result2.hasFlag(flagsResult, ThreadMemberFlags.NO_MESSAGES)) {
+          return ThreadMemberFlags.NO_MESSAGES;
         } else {
           channel = obj3.getChannel(channel.parent_id);
           if (null == channel) {
-            return tmp8.NO_MESSAGES;
+            return ThreadMemberFlags.NO_MESSAGES;
           } else if (obj2.isGuildOrCategoryOrChannelMuted(channel.guild_id, channel.id)) {
-            return tmp8.NO_MESSAGES;
+            return ThreadMemberFlags.NO_MESSAGES;
           } else {
+            let NO_MESSAGES;
             const result = obj2.resolvedMessageNotifications(channel);
             if (result === UserNotificationSettings.NO_MESSAGES) {
-              let NO_MESSAGES = tmp8.NO_MESSAGES;
+              NO_MESSAGES = tmp8.NO_MESSAGES;
             } else {
               NO_MESSAGES = result === tmp4.ONLY_MENTIONS ? tmp8.ONLY_MENTIONS : tmp8.ALL_MESSAGES;
             }
             return NO_MESSAGES;
           }
         }
-        tmp6Result2 = tmp6(1385);
       }
-      tmp6Result = tmp6(1385);
     }
-    obj6 = FlagUtils;
   }
 }
-const ThreadMemberFlags = fn(1114).ThreadMemberFlags;
-const UserNotificationSettings = fn(1074).UserNotificationSettings;
-const size = fn(2);
+const ThreadMemberFlags = ThreadConstants.ThreadMemberFlags;
+const UserNotificationSettings = Constants.UserNotificationSettings;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp8;
+  let tmp9;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(4);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [JoinedThreadsStore, UserGuildSettingsStore, ChannelStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    class N {
+      constructor() {
+        return computeThreadNotificationSetting(closure_0);
+      }
+    }
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = N;
+    cResult[3] = items1;
+    tmp9 = items1;
+    tmp8 = N;
+  } else {
+    class N {
+      constructor() {
+        return computeThreadNotificationSetting(closure_0);
+      }
+    }
+    tmp9 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp8, tmp9);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  const items = [JoinedThreadsStore, UserGuildSettingsStore, ChannelStore];
+  const items1 = [arg0];
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => computeThreadNotificationSetting(closure_0), items1);
+});
 let result = size.fileFinishedImporting("modules/threads/ThreadNotificationSettings.tsx");
 
 export { computeThreadNotificationSetting };
-export const useThreadNotificationSetting = function useThreadNotificationSetting(channel) {
-  _require = channel;
-  const items = [JoinedThreadsStore, UserGuildSettingsStore, ChannelStore];
-  const items1 = [channel];
-  return require("initialize").useStateFromStores(items, () => computeThreadNotificationSetting(closure_0), items1);
-};
+export const useThreadNotificationSetting = tmp2;

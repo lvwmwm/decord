@@ -1,18 +1,35 @@
-// Module ID: 9383
-// Function ID: 9384
+// Module ID: 9391
+// Function ID: 9392
 // Name: VoiceChannelGamesExperiment
-// Dependencies: [1436, 2]
-// Exports: default
+// Dependencies: [1441, 558, 576, 2]
 
-// Module 9383 (VoiceChannelGamesExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1436 */;
+// Module 9391 (VoiceChannelGamesExperiment)
+import react from "react" /* 576 */;
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1441 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const tmp2 = apex_ApexExperimentDefault({ kind: "user", name: "2026-08-mobile-voice-channel-games", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
-let closure_0 = tmp2;
-const size = fn(2);
+let obj = { kind: "user", name: "2026-08-mobile-voice-channel-games", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
+let tmp2 = apex_ApexExperimentDefault(obj);
+let closure_2 = tmp2;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  let tmp2;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] !== location) {
+    const obj2 = { location };
+    cResult[0] = location;
+    cResult[1] = obj2;
+    tmp2 = obj2;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return closure_2.useConfig(tmp2).enabled;
+}) : ((location) => {
+  const obj = { location };
+  return closure_2.useConfig(obj).enabled;
+});
 const result = size.fileFinishedImporting("modules/voice_panel/experiments/VoiceChannelGamesExperiment.tsx");
 
-export default function useIsVoiceChannelGamesExperimentEnabled(location) {
-  return closure_0.useConfig({ location }).enabled;
-};
+export default tmp3;
 export const VoiceChannelGamesExperiment = tmp2;

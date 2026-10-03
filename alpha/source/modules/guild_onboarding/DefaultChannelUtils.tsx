@@ -1,55 +1,116 @@
-// Module ID: 6709
-// Function ID: 6710
+// Module ID: 6597
+// Function ID: 6598
 // Name: DefaultChannelUtils
-// Dependencies: [2099, 2044, 1074, 1086, 504, 4503, 2]
-// Exports: canChannelBeDefault, useCanChannelBeDefault
+// Dependencies: [2104, 2051, 1085, 1097, 558, 576, 4514, 504, 2]
+// Exports: canChannelBeDefault
 
-// Module 6709 (DefaultChannelUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4503 */;
-import GatedChannelStore from "GatedChannelStore" /* 2099 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
+// Module 6597 (DefaultChannelUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4514 */;
+import GatedChannelStore from "GatedChannelStore" /* 2104 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import Constants from "Constants" /* 1085 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const Constants = fn(1074);
+let hasOwnProperty;
+let metroRequire;
 ({ ChannelTypesSets: hasOwnProperty, Permissions: metroRequire } = Constants);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_onboarding/DefaultChannelUtils.tsx");
-
-export const useCanChannelBeDefault = function useCanChannelBeDefault(arg0, arg1) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let first;
   _require = arg0;
-  closure_1 = arg1;
-  const items = [GatedChannelStore, ChannelStore];
-  return require("initialize").useStateFromStores(items, () => {
+  let closure_1 = arg1;
+  let tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GatedChannelStore, ];
+    items[1] = ChannelStore;
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg1) {
+    let tmp7;
+    if (cResult[2] === arg0) {
+      tmp7 = cResult[3];
+    }
+    const tmpResult = tmp(504);
+    return tmpResult.useStateFromStores(first, tmp7);
+  }
+  const fn = function u() {
     const channel = ChannelStore.getChannel(closure_1);
+    const tmp = closure_1;
     if (null != channel) {
-      const GUILD_VOCAL = constants.GUILD_VOCAL;
+      let VIEW_CHANNEL;
+      const GUILD_VOCAL = hasOwnProperty.GUILD_VOCAL;
       if (GUILD_VOCAL.has(channel.type)) {
-        let VIEW_CHANNEL = BigFlagUtilsAll.combine(constants2.VIEW_CHANNEL, constants2.CONNECT);
+        const obj = BigFlagUtilsAll;
+        VIEW_CHANNEL = obj.combine(metroRequire.VIEW_CHANNEL, metroRequire.CONNECT);
       }
-      let isChannelGatedResult = GatedChannelStore.isChannelGated(closure_0, closure_1);
+      let isChannelGatedResult = GatedChannelStore.isChannelGated(closure_0, tmp);
       if (!isChannelGatedResult) {
-        isChannelGatedResult = PermissionUtilsAll.canEveryoneRole(VIEW_CHANNEL, channel);
+        const obj2 = PermissionUtilsAll;
+        isChannelGatedResult = obj2.canEveryoneRole(VIEW_CHANNEL, channel);
       }
       return isChannelGatedResult;
     }
-    VIEW_CHANNEL = constants2.VIEW_CHANNEL;
+    VIEW_CHANNEL = metroRequire.VIEW_CHANNEL;
+  };
+  cResult[1] = arg1;
+  cResult[2] = arg0;
+  cResult[3] = fn;
+  tmp7 = fn;
+}) : ((arg0, arg1) => {
+  let closure_0;
+  _require = arg0;
+  let closure_1 = arg1;
+  let obj = require("get initialized");
+  const items = [GatedChannelStore, ChannelStore];
+  return obj.useStateFromStores(items, () => {
+    const channel = ChannelStore.getChannel(closure_1);
+    const tmp = closure_1;
+    if (null != channel) {
+      let VIEW_CHANNEL;
+      const GUILD_VOCAL = hasOwnProperty.GUILD_VOCAL;
+      if (GUILD_VOCAL.has(channel.type)) {
+        const obj = BigFlagUtilsAll;
+        VIEW_CHANNEL = obj.combine(metroRequire.VIEW_CHANNEL, metroRequire.CONNECT);
+      }
+      let isChannelGatedResult = GatedChannelStore.isChannelGated(closure_0, tmp);
+      if (!isChannelGatedResult) {
+        const obj2 = PermissionUtilsAll;
+        isChannelGatedResult = obj2.canEveryoneRole(VIEW_CHANNEL, channel);
+      }
+      return isChannelGatedResult;
+    }
+    VIEW_CHANNEL = metroRequire.VIEW_CHANNEL;
   });
-};
+});
+const result = size.fileFinishedImporting("modules/guild_onboarding/DefaultChannelUtils.tsx");
+
+export const useCanChannelBeDefault = tmp3;
 export const canChannelBeDefault = function canChannelBeDefault(guild_id, id) {
   const channel = ChannelStore.getChannel(id);
+  const obj = ChannelStore;
   if (null != channel) {
-    const GUILD_VOCAL = constants.GUILD_VOCAL;
+    let VIEW_CHANNEL;
+    const GUILD_VOCAL = hasOwnProperty.GUILD_VOCAL;
     if (GUILD_VOCAL.has(channel.type)) {
-      let VIEW_CHANNEL = BigFlagUtilsAll.combine(constants2.VIEW_CHANNEL, constants2.CONNECT);
+      const obj2 = BigFlagUtilsAll;
+      VIEW_CHANNEL = obj2.combine(metroRequire.VIEW_CHANNEL, metroRequire.CONNECT);
     }
     let isChannelGatedResult = GatedChannelStore.isChannelGated(guild_id, id);
     if (!isChannelGatedResult) {
-      isChannelGatedResult = PermissionUtilsAll.canEveryoneRole(VIEW_CHANNEL, ChannelStore.getChannel(id));
+      const obj3 = PermissionUtilsAll;
+      isChannelGatedResult = obj3.canEveryoneRole(VIEW_CHANNEL, obj.getChannel(id));
     }
     return isChannelGatedResult;
   }
-  VIEW_CHANNEL = constants2.VIEW_CHANNEL;
+  VIEW_CHANNEL = metroRequire.VIEW_CHANNEL;
 };

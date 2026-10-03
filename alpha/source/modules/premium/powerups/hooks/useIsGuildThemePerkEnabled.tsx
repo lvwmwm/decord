@@ -1,26 +1,83 @@
-// Module ID: 16005
-// Function ID: 16006
+// Module ID: 16079
+// Function ID: 16080
 // Name: useIsGuildThemePerkEnabled
-// Dependencies: [2066, 4752, 1074, 504, 4756, 2]
-// Exports: default
+// Dependencies: [2074, 4767, 1085, 558, 576, 4771, 504, 2]
 
-// Module 16005 (useIsGuildThemePerkEnabled)
-import Powerups from "Powerups" /* 4756 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4752 */;
+// Module 16079 (useIsGuildThemePerkEnabled)
+import Constants from "Constants" /* 1085 */;
+import Powerups from "Powerups" /* 4771 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4767 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const GuildFeatures = fn(1074).GuildFeatures;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useIsGuildThemePerkEnabled.tsx");
-
-export default function useIsGuildThemePerkEnabled(arg0) {
+const GuildFeatures = Constants.GuildFeatures;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp7;
+  let tmp8;
+  _require = arg0;
+  const tmp = _require;
+  let tmp2 = dependencyMap;
+  const obj = require("react");
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore, ];
+    items[1] = GuildPowerupsStore;
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function n() {
+      let tmp2 = null != closure_0;
+      if (tmp2) {
+        const guild = GuildStore.getGuild(tmp);
+        let hasItem;
+        if (guild != null) {
+          const features = guild.features;
+          hasItem = features.has(GuildFeatures.GUILD_THEME);
+        }
+        let tmp7 = true === hasItem;
+        if (!tmp7) {
+          const stateForGuild = GuildPowerupsStore.getStateForGuild(tmp);
+          let tmp10;
+          if (stateForGuild != null) {
+            const unlockedPowerups = stateForGuild.unlockedPowerups;
+            if (unlockedPowerups != null) {
+              tmp10 = unlockedPowerups[Powerups.GUILD_POWERUP_GUILD_THEME_SKU_ID];
+            }
+          }
+          tmp7 = null != tmp10;
+        }
+        tmp2 = tmp7;
+      }
+      return tmp2;
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp8 = items1;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp7, tmp8);
+}) : ((arg0) => {
+  let closure_0;
   _require = arg0;
   const items = [GuildStore, GuildPowerupsStore];
   const items1 = [arg0];
-  return require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
     let tmp2 = null != closure_0;
     if (tmp2) {
       const guild = GuildStore.getGuild(tmp);
@@ -45,4 +102,7 @@ export default function useIsGuildThemePerkEnabled(arg0) {
     }
     return tmp2;
   }, items1);
-};
+});
+const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useIsGuildThemePerkEnabled.tsx");
+
+export default tmp2;

@@ -1,25 +1,27 @@
-// Module ID: 15262
-// Function ID: 15263
+// Module ID: 15318
+// Function ID: 15319
 // Name: FriendStreamNotificationsSetting
-// Dependencies: [7590, 11215, 1115, 2021, 15263, 2]
+// Dependencies: [7634, 11129, 1126, 2028, 15319, 2]
 
-// Module 15262 (FriendStreamNotificationsSetting)
-import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import SettingsConstants from "SettingsConstants" /* 7590 */;
-import GoLiveNotificationUtils from "GoLiveNotificationUtils" /* 15263 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 15318 (FriendStreamNotificationsSetting)
+import intl2 from "intl" /* 1126 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import GoLiveNotificationUtils from "GoLiveNotificationUtils" /* 15319 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.FEFn90);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.FEFn90);
   },
-  parent: SettingsConstants.MobileUserSettings.NOTIFICATIONS,
+  parent: MobileUserSettings.NOTIFICATIONS,
   useValue: UserSettings.StreamNotificationsEnabled.useSetting,
   onValueChange: GoLiveNotificationUtils.onGoLiveNotificationSettingsChanged
-});
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/FriendStreamNotificationsSetting.tsx");
 
 export default toggle;

@@ -1,46 +1,254 @@
-// Module ID: 14342
-// Function ID: 14343
-// Name: ErrorBoundary
-// Dependencies: [5, 32, 19, 17, 11178, 21, 4845, 504, 11480, 5465, 1115, 4569, 1231, 573, 1177, 9499, 4841, 2]
+// Module ID: 15842
+// Function ID: 15843
+// Name: components_native/ErrorBoundary
+// Dependencies: [5, 32, 19, 17, 11082, 21, 4890, 558, 576, 11399, 504, 1126, 5594, 4589, 1242, 584, 1188, 9510, 4886, 2]
 
-// Module 14342 (ErrorBoundary)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import components_Button_Button from "components/Button/Button" /* 5465 */;
-import AppCrash from "AppCrash" /* 9499 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11178 */;
+// Module 15842 (components_native/ErrorBoundary)
+import react2 from "react" /* 576 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import native from "native" /* 1188 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import native2 from "native" /* 4589 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import AppCrash from "AppCrash" /* 9510 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11082 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-function MaybeClearBuildOverride() {
-  closure_1 = async function _clearOverride() {
-    _require(true);
-    await tmp3(tmp16[8]).clearBuildOverride();
-    if (1 === tmp7) {
-      c3 = 0;
-      closure_128_0(false);
-      c4 = 3;
-    } else if (arg0 === 1) {
-      c4 = 3;
-      throw arg1;
-    } else if (arg0 !== 2) {
-      c3 = 0;
+const require = globalThis.__r;
+let c1, c4;
+
+let c10;
+let c9;
+let metroImportDefault;
+let metroRequire;
+let tmp;
+const get_initialized = tmp(504);
+const intl4 = tmp(1126);
+const components_Button_Button = tmp(5594);
+({ NativeModules: metroRequire, View: metroImportDefault } = react_native);
+({ jsx: c9, jsxs: c10 } = Fragment);
+const unpackModuleId = createStyles.createLegacyClassComponentStyles({ buttons: { position: "absolute", right: 32, bottom: 32, left: 32, gap: 12 }, debugLogsContainer: { position: "absolute", right: 32, top: 64, display: "flex", flexDirection: "row", alignItems: "center", gap: 12 }, error: { marginTop: 24, textAlign: "center" }, text: { textAlign: "center" } });
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let currentBuildOverride;
+  let require;
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  const tmp = require;
+  let obj = react2;
+  const cResult = obj.c(6);
+  let tmp4 = _slicedToArray(react.useState(false), 2);
+  [tmp5, require] = tmp4;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [BuildOverrideStore];
+    const fn = function s() {
+      const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
+      let id;
+      if (overrides != null) {
+        const tmp4 = overrides[require("build_overrides/BuildOverrideUtils").DEVICE_FIELD];
+        if (tmp4 != null) {
+          id = tmp4.id;
+        }
+      }
+      return id;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp6 = items;
+    tmp7 = fn;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  const tmpResult = get_initialized;
+  if (null == tmpResult.useStateFromStores(tmp6, tmp7)) {
+    return null;
+  } else {
+    let tmp9;
+    let tmp11;
+    let tmp13;
+    const _Symbol2 = Symbol;
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+      let closure_0 = _asyncToGenerator(async (arg0, value) => {
+        let obj2;
+        if (c4 === 2) {
+          c4 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            return { value: "IconComponent", done: "IconComponent" };
+          }
+        } else {
+          let c3;
+          try {
+            c4 = 2;
+            if (0 === c1) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                const obj4 = { value, done: true };
+                return obj4;
+              } else {
+                c3 = 1;
+                tmp(true);
+                c1 = 2;
+                c4 = 1;
+                const obj5 = { value: obj2.clearBuildOverride(), done: false };
+                obj2 = tmp(dependencyMap[9]);
+                return obj5;
+              }
+            } else {
+              if (1 === tmp4) {
+                c3 = 0;
+                tmp(false);
+              } else if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c3 = 0;
+                c4 = 3;
+                const obj = { value, done: true };
+                return obj;
+              } else {
+                c3 = 0;
+              }
+              c4 = 3;
+              return { value: "IconComponent", done: "IconComponent" };
+            }
+          } catch (tmp13) {
+            let closure_2 = tmp13;
+            if (0 === c3) {
+              c4 = 3;
+              throw tmp13;
+            } else {
+              c1 = 1;
+            }
+          }
+        }
+      });
+      function clearOverride() {
+        return closure_0(...arguments);
+      }
+      cResult[2] = clearOverride;
+      tmp9 = clearOverride;
+    } else {
+      tmp9 = cResult[2];
     }
-    return arg1;
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = intl4.intl;
+      const stringResult = intl.string(intl4.t["/Nz9rY"]);
+      cResult[3] = stringResult;
+      tmp11 = stringResult;
+    } else {
+      tmp11 = cResult[3];
+    }
+    if (cResult[4] !== tmp5) {
+      let obj2 = { variant: "secondary", loading: tmp5, text: tmp11, onPress: tmp9 };
+      const tmp15 = closure_9(components_Button_Button.Button, obj2);
+      cResult[4] = tmp5;
+      cResult[5] = tmp15;
+      tmp13 = tmp15;
+    } else {
+      tmp13 = cResult[5];
+    }
+    return tmp13;
+  }
+}) : (() => {
+  let closure_0;
+  let currentBuildOverride;
+  let first;
+  let intl;
+  let obj = function _clearOverride2() {
+    obj = _asyncToGenerator(async (arg0, value) => {
+      let obj2;
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } else {
+        let c3;
+        try {
+          c4 = 2;
+          if (0 === c1) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              c3 = 1;
+              closure_2_0(true);
+              c1 = 2;
+              c4 = 1;
+              const obj5 = { value: obj2.clearBuildOverride(), done: false };
+              obj2 = tmp(closure_2[9]);
+              return obj5;
+            }
+          } else {
+            if (1 === tmp4) {
+              c3 = 0;
+              closure_128_0(false);
+            } else if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              c4 = 3;
+              obj = { value, done: true };
+              return obj;
+            } else {
+              c3 = 0;
+            }
+            c4 = 3;
+            return { value: "IconComponent", done: "IconComponent" };
+          }
+        } catch (tmp13) {
+          closure_2 = tmp13;
+          if (0 === c3) {
+            c4 = 3;
+            throw tmp13;
+          } else {
+            c1 = 1;
+          }
+        }
+      }
+    });
+    return obj(...arguments);
   };
-  const tmp = _slicedToArray(noop.useState(false), 2);
-  _require = tmp[1];
+  [first, _require] = react.useState(false);
+  const tmp3 = _require;
+  let tmp4 = dependencyMap;
+  obj = require("get initialized");
   const items = [BuildOverrideStore];
   if (null == obj.useStateFromStores(items, () => {
     const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
     let id;
     if (overrides != null) {
-      const tmp4 = overrides[closure_0(undefined, dependencyMap[8]).DEVICE_FIELD];
+      const tmp4 = overrides[closure_0(undefined, dependencyMap[9]).DEVICE_FIELD];
       if (tmp4 != null) {
         id = tmp4.id;
       }
@@ -49,120 +257,114 @@ function MaybeClearBuildOverride() {
   })) {
     return null;
   } else {
-    const obj2 = { variant: "secondary", loading: tmp[0], text: null, onPress: null };
-    const intl = tmp2(1115).intl;
-    obj2.text = intl.string(tmp2(1115).t["/Nz9rY"]);
-    obj2.onPress = function clearOverride() {
-      const self = this;
-      const apply = closure_1.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
+    let obj2 = {
+      variant: "secondary",
+      loading: first,
+      text: intl.string(tmp3(1126).t["/Nz9rY"]),
+      onPress: function clearOverride() {
+          return obj(...arguments);
+        }
     };
-    return closure_9(tmp2(5465).Button, obj2);
+    const Button = tmp3(5594).Button;
+    intl = tmp3(1126).intl;
+    return closure_9(Button, obj2);
   }
-  obj = require("initialize");
-}
-get_ActivityIndicator = fn(17);
-({ NativeModules: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4845);
-let closure_11 = createStyles.createLegacyClassComponentStyles({ buttons: { position: "absolute", right: 32, bottom: 32, left: 32, gap: 12 }, debugLogsContainer: { position: "absolute", right: 32, top: 64, display: "flex", flexDirection: "row", alignItems: "center", gap: 12 }, error: { marginTop: 24, textAlign: "center" }, text: { textAlign: "center" } });
-const PureComponent = noop.PureComponent;
+});
+const PureComponent = react.PureComponent;
 class ErrorBoundary extends PureComponent {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     applyArgumentsResult.state = { error: null, info: null };
     applyArgumentsResult.discordErrorsSet = false;
     return applyArgumentsResult;
   }
+  componentDidCatch(error, info) {
+    this.triggerSoftCrash(error, info);
+  }
+  triggerSoftCrash(error, info) {
+    const obj = { error, info };
+    this.setState(obj);
+    const obj2 = SentryUtilsDefault;
+    const obj3 = { extra: info };
+    obj2.captureCrash(error, obj3);
+    const obj4 = DispatcherDefault;
+    obj4.dispatch({ type: "CLEAR_CACHES", reason: "App Crashed", resetSocket: true });
+  }
+  handleReload() {
+    metroRequire = metroRequire.BundleUpdaterManager;
+    metroRequire.reload();
+  }
+  componentDidMount() {
+    const self = this;
+    if (null == window.DiscordErrors) {
+      const _window = window;
+      const obj = {
+        softCrash(error) {
+            self.triggerSoftCrash(error);
+          }
+      };
+      window.DiscordErrors = obj;
+      tmp.discordErrorsSet = true;
+    }
+  }
+  componentWillUnmount() {
+    if (this.discordErrorsSet) {
+      const _window = window;
+      window.DiscordErrors = null;
+      tmp.discordErrorsSet = false;
+    }
+  }
+  render() {
+    let children;
+    let intl;
+    let intl2;
+    let intl3;
+    let items;
+    let items1;
+    let str;
+    const self = this;
+    const tmp = closure_11(this.context);
+    const error = this.state.error;
+    if (null !== error) {
+      const obj = { Illustration: AppCrash.AppCrash, title: intl.string(intl4.t.tx8CkI), body: intl2.string(intl4.t.CvQlAH), titleStyle: null, bodyStyle: null, children: items };
+      const EmptyState = native.EmptyState;
+      intl = intl4.intl;
+      intl2 = intl4.intl;
+      ({ text: obj.titleStyle, text: obj.bodyStyle } = tmp);
+      const obj2 = { style: tmp.error, variant: "text-sm/medium", color: "text-muted", children: str };
+      str = undefined;
+      const Text = Text_Text.Text;
+      if (error != null) {
+        str = error.message;
+      }
+      if (str == null) {
+        let name;
+        if (error != null) {
+          name = error.name;
+        }
+        str = name;
+      }
+      if (str == null) {
+        str = "Unknown Error";
+      }
+      items = [React4(Text, obj2), , ];
+      const obj3 = { style: tmp.buttons, children: items1 };
+      items1 = [React4(closure_12, {}), ];
+      const obj4 = { text: intl3.string(intl4.t["4n8OJn"]), onPress: self.handleReload };
+      const Button = tmp3(5594).Button;
+      intl3 = tmp3(1126).intl;
+      items1[1] = React4(Button, obj4);
+      items[1] = authStore(metroImportDefault, obj3);
+      items[2] = null;
+      children = tmp2(EmptyState, obj);
+    } else {
+      children = self.props.children;
+    }
+    return children;
+  }
 }
 const prototype = ErrorBoundary.prototype;
-prototype["componentDidCatch"] = function componentDidCatch(error, info) {
-  this.triggerSoftCrash(error, info);
-};
-prototype["triggerSoftCrash"] = function triggerSoftCrash(error, info) {
-  this.setState({ error, info });
-  SentryUtilsDefault.captureCrash(error, { extra: info });
-  const obj = { error, info };
-  const obj3 = { extra: info };
-  DispatcherDefault.dispatch({ type: "CLEAR_CACHES", reason: "App Crashed", resetSocket: true });
-};
-prototype["handleReload"] = function handleReload() {
-  BundleUpdaterManager = BundleUpdaterManager.BundleUpdaterManager;
-  BundleUpdaterManager.reload();
-};
-prototype["componentDidMount"] = function componentDidMount() {
-  const self = this;
-  if (null == window.DiscordErrors) {
-    const _window = window;
-    const obj = {
-      softCrash(error) {
-          self.triggerSoftCrash(error);
-        }
-    };
-    window.DiscordErrors = obj;
-    tmp.discordErrorsSet = true;
-  }
-};
-prototype["componentWillUnmount"] = function componentWillUnmount() {
-  if (this.discordErrorsSet) {
-    const _window = window;
-    window.DiscordErrors = null;
-    tmp.discordErrorsSet = false;
-  }
-};
-prototype["render"] = function render() {
-  const self = this;
-  const tmp = closure_11(this.context);
-  const error = this.state.error;
-  if (null !== error) {
-    const obj = { Illustration: AppCrash.AppCrash, title: null, body: null, titleStyle: null, bodyStyle: null, children: null };
-    const intl = util.intl;
-    obj.title = intl.string(util.t.tx8CkI);
-    const intl2 = util.intl;
-    obj.body = intl2.string(util.t.CvQlAH);
-    ({ text: obj.titleStyle, text: obj.bodyStyle } = tmp);
-    const obj2 = { style: tmp.error, variant: "text-sm/medium", color: "text-muted", children: null };
-    let str;
-    if (error != null) {
-      str = error.message;
-    }
-    if (str == null) {
-      let name;
-      if (error != null) {
-        name = error.name;
-      }
-      str = name;
-    }
-    if (str == null) {
-      str = "Unknown Error";
-    }
-    obj2.children = str;
-    const items = [React7(Text_Text.Text, obj2), , ];
-    const obj3 = { style: tmp.buttons, children: null };
-    const items1 = [React7(MaybeClearBuildOverride, {}), ];
-    const obj4 = { text: null, onPress: null };
-    const intl3 = tmp3(1115).intl;
-    obj4.text = intl3.string(util.t["4n8OJn"]);
-    obj4.onPress = self.handleReload;
-    items1[1] = React7(components_Button_Button.Button, obj4);
-    obj3.children = items1;
-    items[1] = closure_1_10(React5, obj3);
-    items[2] = null;
-    obj.children = items;
-    let children = tmp2(native.EmptyState, obj);
-  } else {
-    children = self.props.children;
-  }
-  return children;
-};
-ErrorBoundary.contextType = fn(4569).ThemeContext;
-const size = fn(2);
+ErrorBoundary.contextType = native2.ThemeContext;
 const result = size.fileFinishedImporting("components_native/ErrorBoundary.tsx");
 
 export default ErrorBoundary;

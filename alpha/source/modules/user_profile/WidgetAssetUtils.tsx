@@ -1,13 +1,15 @@
-// Module ID: 8308
-// Function ID: 8309
+// Module ID: 8312
+// Function ID: 8313
 // Name: WidgetAssetUtils
-// Dependencies: [1074, 1397, 2]
+// Dependencies: [1085, 1402, 2]
 // Exports: getWidgetAssetURL
 
-// Module 8308 (WidgetAssetUtils)
-import Constants from "Constants" /* 1074 */;
-import AvatarUtils from "AvatarUtils" /* 1397 */;
+// Module 8312 (WidgetAssetUtils)
+import Constants from "Constants" /* 1085 */;
+import AvatarUtils from "AvatarUtils" /* 1402 */;
 import size from "module_2" /* 2 */;
+
+let CDN_HOST;
 
 const DEFAULT_CDN_HOST = Constants.DEFAULT_CDN_HOST;
 const result = size.fileFinishedImporting("modules/user_profile/WidgetAssetUtils.tsx");

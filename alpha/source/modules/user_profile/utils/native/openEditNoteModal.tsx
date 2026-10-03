@@ -1,16 +1,17 @@
-// Module ID: 12837
-// Function ID: 12838
+// Module ID: 12875
+// Function ID: 12876
 // Name: openEditNoteModal
-// Dependencies: [5048, 12838, 1981, 2]
+// Dependencies: [5093, 12876, 1987, 2]
 // Exports: default
 
-// Module 12837 (openEditNoteModal)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5048 */;
+// Module 12875 (openEditNoteModal)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/utils/native/openEditNoteModal.tsx");
 
 export default function openEditNoteModal(merged) {
-  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12838, dependencyMap.paths), merged, undefined, { presentation: "modal" });
+  const obj = ModalActionCreatorsDefault;
+  obj.pushLazy(asyncRequire(12876, dependencyMap.paths), merged, undefined, { presentation: "modal" });
 };

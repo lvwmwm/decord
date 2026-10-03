@@ -1,15 +1,19 @@
-// Module ID: 11459
-// Function ID: 11460
+// Module ID: 11378
+// Function ID: 11379
 // Name: canEditMessage
-// Dependencies: [1074, 6875, 5067, 6907, 2]
+// Dependencies: [1085, 6773, 5112, 6805, 2]
 // Exports: default
 
-// Module 11459 (canEditMessage)
-import MessageRecordUtils from "MessageRecordUtils" /* 5067 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6875 */;
-import Constants from "Constants" /* 1074 */;
+// Module 11378 (canEditMessage)
+import MessageRecordUtils from "MessageRecordUtils" /* 5112 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6773 */;
+import isForwardMessageDefault from "isForwardMessage" /* 6805 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
+let c3;
+let closure_4;
+let hasOwnProperty;
 ({ MessageFlags: c3, MessageStates: closure_4, MessageTypes: hasOwnProperty } = Constants);
 let result = size.fileFinishedImporting("modules/messages/canEditMessage.tsx");
 
@@ -20,23 +24,24 @@ export default function canEditMessage(author, arg1) {
     if (tmp3) {
       let tmp5 = author.state === constants2.SENT;
       if (tmp5) {
-        const tmp8 = isSystemMessageDefault(author);
-        let tmp9 = !tmp8;
-        if (!tmp8) {
-          let result = MessageRecordUtils.canEditMessageWithStickers(author);
+        let tmp9 = !isSystemMessageDefault(author);
+        isSystemMessageDefault(author);
+        if (tmp9) {
+          const obj = MessageRecordUtils;
+          let result = obj.canEditMessageWithStickers(author);
           if (result) {
-            const hasFlagResult = author.hasFlag(constants.IS_VOICE_MESSAGE);
-            let tmp14 = !hasFlagResult;
-            if (!hasFlagResult) {
+            let tmp14 = !author.hasFlag(constants.IS_VOICE_MESSAGE);
+            author.hasFlag(constants.IS_VOICE_MESSAGE);
+            if (tmp14) {
               let tmp15 = null == author.referralTrialOfferId;
               if (tmp15) {
-                const isPollResult = author.isPoll();
-                let tmp17 = !isPollResult;
-                if (!isPollResult) {
-                  const tmp18 = tmp6(6907)(author);
-                  let tmp19 = !tmp18;
-                  if (!tmp18) {
-                    tmp19 = author.type !== constants3.MEDIA_MENTION_MESSAGE;
+                let tmp17 = !author.isPoll();
+                author.isPoll();
+                if (tmp17) {
+                  let tmp19 = !tmp6(6805)(author);
+                  isForwardMessageDefault(author);
+                  if (tmp19) {
+                    tmp19 = author.type !== hasOwnProperty.MEDIA_MENTION_MESSAGE;
                   }
                   tmp17 = tmp19;
                 }
@@ -49,7 +54,6 @@ export default function canEditMessage(author, arg1) {
           tmp9 = result;
         }
         tmp5 = tmp9;
-        tmp6 = importDefault;
       }
       tmp3 = tmp5;
     }

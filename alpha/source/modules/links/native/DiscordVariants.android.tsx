@@ -1,52 +1,58 @@
-// Module ID: 16243
-// Function ID: 16244
+// Module ID: 16318
+// Function ID: 16319
 // Name: DiscordVariants
-// Dependencies: [4979, 16244, 2]
+// Dependencies: [5024, 16319, 2]
 // Exports: getCurrentVariant, isVariantInstalled, launchVariant
 
-// Module 16243 (DiscordVariants)
-import NativeIntentsModuleDefault from "NativeIntentsModule" /* 4979 */;
-import DiscordVariantTypes from "DiscordVariantTypes" /* 16244 */;
+// Module 16318 (DiscordVariants)
+import react_nativeDefault from "react-native" /* 5024 */;
+import DiscordVariantTypes from "DiscordVariantTypes" /* 16319 */;
 import size from "module_2" /* 2 */;
 
+const f123862 = (item) => item === closure_0;
 const result = size.fileFinishedImporting("modules/links/native/DiscordVariants.android.tsx");
 
 export const getCurrentVariant = function getCurrentVariant() {
-  const currentDiscordVariant = NativeIntentsModuleDefault.getCurrentDiscordVariant();
+  const obj = react_nativeDefault;
+  const currentDiscordVariant = obj.getCurrentDiscordVariant();
   const DISCORD_VARIANT_LIST = DiscordVariantTypes.DISCORD_VARIANT_LIST;
-  let found = DISCORD_VARIANT_LIST.find((item) => item === closure_0);
+  let found = DISCORD_VARIANT_LIST.find(f123862);
   if (found == null) {
     found = null;
   }
   return found;
 };
 export const isVariantInstalled = function isVariantInstalled(item) {
-  const currentDiscordVariant = NativeIntentsModuleDefault.getCurrentDiscordVariant();
+  let resolved;
+  const obj = react_nativeDefault;
+  const currentDiscordVariant = obj.getCurrentDiscordVariant();
   const DISCORD_VARIANT_LIST = DiscordVariantTypes.DISCORD_VARIANT_LIST;
-  let found = DISCORD_VARIANT_LIST.find((item) => item === closure_0);
+  let found = DISCORD_VARIANT_LIST.find(f123862);
   if (found == null) {
     found = null;
   }
   if (item === found) {
-    let resolved = Promise.resolve(true);
+    resolved = Promise.resolve(true);
   } else {
-    resolved = Promise.resolve(NativeIntentsModuleDefault.isDiscordVariantInstalled(item));
-    const tmpResult = NativeIntentsModuleDefault;
+    const tmpResult = react_nativeDefault;
+    resolved = resolve(tmpResult.isDiscordVariantInstalled(item));
   }
   return resolved;
 };
 export const launchVariant = function launchVariant(arg0) {
-  const currentDiscordVariant = NativeIntentsModuleDefault.getCurrentDiscordVariant();
+  let resolved;
+  const obj = react_nativeDefault;
+  const currentDiscordVariant = obj.getCurrentDiscordVariant();
   const DISCORD_VARIANT_LIST = DiscordVariantTypes.DISCORD_VARIANT_LIST;
-  let found = DISCORD_VARIANT_LIST.find((item) => item === closure_0);
+  let found = DISCORD_VARIANT_LIST.find(f123862);
   if (found == null) {
     found = null;
   }
   if (arg0 === found) {
-    let resolved = Promise.resolve(false);
+    resolved = Promise.resolve(false);
   } else {
-    resolved = Promise.resolve(NativeIntentsModuleDefault.launchDiscordVariant(arg0));
-    const tmpResult = NativeIntentsModuleDefault;
+    const tmpResult = react_nativeDefault;
+    resolved = resolve(tmpResult.launchDiscordVariant(arg0));
   }
   return resolved;
 };

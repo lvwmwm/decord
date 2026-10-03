@@ -1,12 +1,13 @@
-// Module ID: 12093
-// Function ID: 12094
+// Module ID: 12029
+// Function ID: 12030
 // Name: GamePlatformBadges
-// Dependencies: [12092, 1115, 2, 12094]
+// Dependencies: [12028, 1126, 2, 12030]
 // Exports: getGamePlatformAvailabilityLabel
 
-// Module 12093 (GamePlatformBadges)
-import GamePlatformAvailability from "GamePlatformAvailability" /* 12092 */;
-import GamePlatformAvailabilityUtils from "GamePlatformAvailabilityUtils" /* 12094 */;
+// Module 12029 (GamePlatformBadges)
+import intl4 from "intl" /* 1126 */;
+import GamePlatformAvailability from "GamePlatformAvailability" /* 12028 */;
+import GamePlatformAvailabilityUtils from "GamePlatformAvailabilityUtils" /* 12030 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/games/GamePlatformBadges.tsx");
@@ -15,13 +16,13 @@ export const GAME_PLATFORM_AVAILABILITY_ORDER = GamePlatformAvailabilityUtils.GA
 export const sortGamePlatformAvailability = GamePlatformAvailabilityUtils.getOrderedGamePlatforms;
 export const getGamePlatformAvailabilityLabel = function getGamePlatformAvailabilityLabel(item) {
   if (GamePlatformAvailability.GamePlatformAvailability.DESKTOP === item) {
-    const intl3 = tmp(1115).intl;
-    return intl3.string(tmp(1115).t.KT6uCJ);
-  } else if (tmp(12092).GamePlatformAvailability.MOBILE === item) {
-    const intl2 = tmp(1115).intl;
-    return intl2.string(tmp(1115).t["0DvssQ"]);
-  } else if (tmp(12092).GamePlatformAvailability.CONSOLE === item) {
-    const intl = tmp(1115).intl;
-    return intl.string(tmp(1115).t.RT9Ccb);
+    const intl3 = tmp(1126).intl;
+    return intl3.string(intl4.t.KT6uCJ);
+  } else if (GamePlatformAvailability.GamePlatformAvailability.MOBILE === item) {
+    const intl2 = tmp(1126).intl;
+    return intl2.string(intl4.t["0DvssQ"]);
+  } else if (GamePlatformAvailability.GamePlatformAvailability.CONSOLE === item) {
+    const intl = tmp(1126).intl;
+    return intl.string(intl4.t.RT9Ccb);
   }
 };

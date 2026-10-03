@@ -1,35 +1,38 @@
-// Module ID: 15243
-// Function ID: 15244
+// Module ID: 15299
+// Function ID: 15300
 // Name: NotificationsSetting
-// Dependencies: [1074, 11215, 1115, 9260, 14220, 15244, 2]
+// Dependencies: [1085, 11129, 1126, 9266, 14288, 15300, 2]
 
-// Module 15243 (NotificationsSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import BellIcon from "BellIcon" /* 9260 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14220 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 15299 (NotificationsSetting)
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import BellIcon from "BellIcon" /* 9266 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14288 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const UserSettingsSections = Constants.UserSettingsSections;
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.HcoRu0);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.HcoRu0);
   },
   parent: null,
   IconComponent: BellIcon.BellIcon,
   usePredicate() {
-    return !notifications_NotificationSettingsUtils.useIsDeclarativeSettingsUIAvailable("LegacyNotificationsSetting");
+    const obj = notifications_NotificationSettingsUtils;
+    return !obj.useIsDeclarativeSettingsUIAvailable("LegacyNotificationsSetting");
   },
   screen: {
-    route: Constants.UserSettingsSections.NOTIFICATIONS,
+    route: UserSettingsSections.NOTIFICATIONS,
     getComponent() {
       return require("SettingsNotificationScreen").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/NotificationsSetting.tsx");
 
 export default route;

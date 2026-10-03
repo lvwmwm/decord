@@ -1,81 +1,1490 @@
-// Module ID: 9604
-// Function ID: 9605
+// Module ID: 9632
+// Function ID: 9633
 // Name: MobileGoLiveActionSheet
-// Dependencies: [32, 19, 4891, 4867, 2044, 2066, 2098, 1372, 4892, 1074, 4870, 21, 4845, 576, 1365, 4809, 9604, 1981, 1249, 504, 9605, 9609, 6769, 6789, 4595, 4987, 9297, 6565, 1115, 2322, 9610, 9612, 6087, 4841, 4559, 9614, 6757, 6231, 6730, 6185, 6183, 8805, 1094, 6186, 9615, 7447, 9620, 6807, 5465, 9603, 2]
+// Dependencies: [32, 19, 4936, 4912, 2051, 2074, 2103, 1377, 4937, 1085, 4915, 21, 4890, 587, 1370, 4854, 9632, 1987, 1260, 558, 576, 504, 9633, 9637, 6657, 6681, 4612, 5032, 9306, 6448, 1126, 2327, 9638, 9640, 5976, 4886, 4579, 9642, 6645, 6112, 6619, 8818, 1105, 6071, 6074, 6072, 9643, 7483, 9648, 6698, 5594, 9631, 2]
 // Exports: showMobileGoLiveActionSheet
 
-// Module 9604 (MobileGoLiveActionSheet)
-import nativeDefault from "native" /* 576 */;
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import util from "util" /* 1115 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import _modDef2322 from "module_2322" /* 2322 */;
-import BaseIconImage from "BaseIconImage" /* 4559 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import StreamActionCreators from "StreamActionCreators" /* 4987 */;
-import NativeViewDefault from "NativeView" /* 6087 */;
-import TableRadioRow from "TableRadioRow" /* 6186 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 6565 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 8805 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9297 */;
-import getStreamSettingsForPreset from "getStreamSettingsForPreset" /* 9605 */;
-import SpeedometerIcon from "SpeedometerIcon" /* 9610 */;
-import ImageSparkleIcon from "ImageSparkleIcon" /* 9612 */;
-import _modDef9614 from "module_9614" /* 9614 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4891 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4867 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 9632 (MobileGoLiveActionSheet)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import ConstantsIOS from "ConstantsIOS" /* 1105 */;
+import intl8 from "intl" /* 1126 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import _modDef2327 from "module_2327" /* 2327 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Constants2 from "Constants" /* 4915 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 4937 */;
+import StreamActionCreators from "StreamActionCreators" /* 5032 */;
+import NativeViewDefault from "NativeView" /* 5976 */;
+import TableRadioRow2 from "TableRadioRow" /* 6071 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 6448 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 8818 */;
+import getStreamSettingsForPreset from "getStreamSettingsForPreset" /* 9633 */;
+import SpeedometerIcon from "SpeedometerIcon" /* 9638 */;
+import ImageSparkleIcon from "ImageSparkleIcon" /* 9640 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9642 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4936 */;
+import ApplicationStreamingStore_mod from "ApplicationStreamingStore" /* 4912 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore_mod from "GuildStore" /* 2074 */;
+import SelectedChannelStore_mod from "SelectedChannelStore" /* 2103 */;
+import UserStore_mod from "UserStore" /* 1377 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import PlatformUtils_mod from "utils/PlatformUtils" /* 1370 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const getStreamSettingsForPresetDefault = getStreamSettingsForPreset;
+let BottomSheet, dependencyMap;
 
-require = fn;
-let ApplicationStreamPresets = fn(4892).ApplicationStreamPresets;
-const ApplicationStreamStates = fn(1074).ApplicationStreamStates;
-const MediaEngineContextTypes = fn(4870).MediaEngineContextTypes;
-const jsxProd = fn(21);
-({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4845);
-let obj = { wrapper: { gap: nativeDefault.space.PX_24 }, header: { textAlign: "center" }, section: null, highQualityLabel: null };
-let obj3 = { gap: nativeDefault.space.PX_24 };
-obj.section = { marginHorizontal: nativeDefault.space.PX_16 };
-let obj4 = { marginHorizontal: nativeDefault.space.PX_16 };
-obj.highQualityLabel = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
-let closure_16 = createStyles.createStyles(obj);
+let PlatformUtils;
+let closure_14;
+let closure_15;
+let obj2;
+let obj3;
+let obj4;
+let tmp;
+const AudioActionCreatorsDefault = tmp(9306);
+let react = react_mod;
+let ApplicationStreamingStore = ApplicationStreamingStore_mod;
+let GuildStore = GuildStore_mod;
+let SelectedChannelStore = SelectedChannelStore_mod;
+let UserStore = UserStore_mod;
+let ApplicationStreamPresets = StreamSettingsConstants.ApplicationStreamPresets;
+const ApplicationStreamStates = Constants.ApplicationStreamStates;
+const MediaEngineContextTypes = Constants2.MediaEngineContextTypes;
+({ jsx: closure_14, jsxs: closure_15 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { wrapper: obj2, header: { textAlign: "center" }, section: obj3, highQualityLabel: obj4 };
+obj2 = { gap: nativeDefault.space.PX_24 };
+createStyles = createStyles.createStyles;
+obj3 = { marginHorizontal: nativeDefault.space.PX_16 };
+obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
+let closure_16 = createStyles(obj);
 const MobileGoLiveActionSheet = "MobileGoLiveActionSheet";
-let items = [{ preset: ApplicationStreamPresets.PRESET_MOBILE_DEFAULT, enabled: true }, , ];
-let obj7 = { preset: ApplicationStreamPresets.PRESET_MOBILE_PERFORMANCE, enabled: null };
-const PlatformUtils = fn(1365);
-obj7.enabled = !PlatformUtils.isIOS();
-items[1] = obj7;
+let obj5 = { preset: ApplicationStreamPresets.PRESET_MOBILE_DEFAULT, enabled: true };
+let items = [obj5, , ];
+let obj6 = { preset: ApplicationStreamPresets.PRESET_MOBILE_PERFORMANCE, enabled: !PlatformUtils.isIOS() };
+PlatformUtils = PlatformUtils_mod;
+items[1] = obj6;
 items[2] = { preset: ApplicationStreamPresets.PRESET_MOBILE_HIGH_QUALITY, enabled: true };
 const found = items.filter((enabled) => enabled.enabled);
 let closure_18 = found.map((preset) => preset.preset);
-let obj5 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
-let obj6 = { preset: ApplicationStreamPresets.PRESET_MOBILE_DEFAULT, enabled: true };
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/go_live/native/MobileGoLiveActionSheet.tsx");
-
-export default noop.memo(function MobileGoLiveActionSheet() {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let analyticsLocations;
+  let closure_11;
+  let closure_2;
+  let closure_4;
+  let closure_8;
+  let currentUser;
+  let intl3;
+  let obj10;
+  let obj12;
+  let tmp22Result;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  let tmp9;
+  let user;
+  let value;
+  let voiceChannelId;
+  let tmp = user;
+  let obj = user(576);
+  const cResult = obj.c(79);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [analyticsLocations];
+    class A {
+      constructor() {
+        return analyticsLocations.getState();
+      }
+    }
+    cResult[0] = items;
+    cResult[1] = A;
+    tmp5 = A;
+    tmp4 = items;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  let tmpResult = tmp(504);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp4, tmp5);
+  const preset = stateFromStoresObject.preset;
+  const soundshareEnabled = stateFromStoresObject.soundshareEnabled;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [UserStore, , , ];
+    class A {
+      constructor() {
+        return analyticsLocations.getState();
+      }
+    }
+    items1[1] = SelectedChannelStore;
+    items1[2] = value;
+    let tmp12 = GuildStore;
+    items1[3] = GuildStore;
+    class R {
+      constructor() {
+        user = currentUser.getCurrentUser();
+        const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
+        let guildId;
+        const getGuild = closure_8.getGuild;
+        if (channel != null) {
+          guildId = channel.getGuildId();
+        }
+        const guild = getGuild(guildId);
+        guildPremiumTier = undefined;
+        if (guild != null) {
+          guildPremiumTier = guild.premiumTier;
+        }
+        return { user, guildPremiumTier };
+      }
+    }
+    cResult[2] = items1;
+    cResult[3] = R;
+    tmp9 = R;
+    tmp8 = items1;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult4 = tmp(504);
+  const stateFromStoresObject1 = tmpResult4.useStateFromStoresObject(tmp8, tmp9);
+  user = stateFromStoresObject1.user;
+  let guildPremiumTier = stateFromStoresObject1.guildPremiumTier;
+  if (cResult[4] === guildPremiumTier) {
+    let tmp14;
+    let tmp17;
+    let tmp16;
+    let tmp21;
+    let tmp26;
+    if (cResult[5] === user) {
+      tmp14 = cResult[6];
+    }
+    dependencyMap = tmp14;
+    const _Symbol = Symbol;
+    class A {
+      constructor() {
+        return analyticsLocations.getState();
+      }
+    }
+    if (tmp15 === Symbol.for("react.memo_cache_sentinel")) {
+      const items2 = [ApplicationStreamingStore];
+      class H {
+        constructor() {
+          let sourceId;
+          const obj = currentUserActiveStream;
+          currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+          const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+          const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+          sourceId = undefined;
+          if (streamerActiveStreamMetadata != null) {
+            sourceId = streamerActiveStreamMetadata.sourceId;
+          }
+          if (sourceId == null) {
+            sourceId = null;
+          }
+          return obj2;
+        }
+      }
+      cResult[7] = items2;
+      cResult[8] = H;
+      tmp17 = H;
+      class R {
+        constructor() {
+          user = currentUser.getCurrentUser();
+          const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
+          let guildId;
+          const getGuild = closure_8.getGuild;
+          if (channel != null) {
+            guildId = channel.getGuildId();
+          }
+          const guild = getGuild(guildId);
+          guildPremiumTier = undefined;
+          if (guild != null) {
+            guildPremiumTier = guild.premiumTier;
+          }
+          return { user, guildPremiumTier };
+        }
+      }
+    } else {
+      tmp17 = cResult[8];
+      tmp16 = cResult[7];
+    }
+    const tmpResult5 = tmp(504);
+    const stateFromStoresObject2 = tmpResult5.useStateFromStoresObject(tmp16, tmp17);
+    const isStreaming = stateFromStoresObject2.isStreaming;
+    class R {
+      constructor() {
+        user = currentUser.getCurrentUser();
+        const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
+        let guildId;
+        const getGuild = closure_8.getGuild;
+        if (channel != null) {
+          guildId = channel.getGuildId();
+        }
+        const guild = getGuild(guildId);
+        guildPremiumTier = undefined;
+        if (guild != null) {
+          guildPremiumTier = guild.premiumTier;
+        }
+        return { user, guildPremiumTier };
+      }
+    }
+    react = tmp20;
+    const _Symbol2 = Symbol;
+    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+      let obj2 = { location: "MobileGoLiveActionSheet" };
+      cResult[9] = obj2;
+      class H {
+        constructor() {
+          let sourceId;
+          const obj = currentUserActiveStream;
+          currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+          const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+          const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+          sourceId = undefined;
+          if (streamerActiveStreamMetadata != null) {
+            sourceId = streamerActiveStreamMetadata.sourceId;
+          }
+          if (sourceId == null) {
+            sourceId = null;
+          }
+          return obj2;
+        }
+      }
+    } else {
+      tmp21 = cResult[9];
+    }
+    let obj6 = guildPremiumTier(9637);
+    const goLiveUpsellVariant = obj6.useConfig(tmp21).goLiveUpsellVariant;
+    const tmp23 = guildPremiumTier(6657);
+    analyticsLocations = tmp23(guildPremiumTier(6681).MOBILE_GO_LIVE_ACTION_SHEET).analyticsLocations;
+    const tmp25 = closure_16();
+    ApplicationStreamingStore = tmp25;
+    if (cResult[10] === tmp14) {
+      if (cResult[11] === preset) {
+        tmp26 = cResult[12];
+      }
+      class H {
+        constructor() {
+          let sourceId;
+          const obj = currentUserActiveStream;
+          currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+          const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+          const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+          sourceId = undefined;
+          if (streamerActiveStreamMetadata != null) {
+            sourceId = streamerActiveStreamMetadata.sourceId;
+          }
+          if (sourceId == null) {
+            sourceId = null;
+          }
+          return obj2;
+        }
+      }
+      const tmp32 = isStreaming(react.useState(tmp26), 2);
+      value = tmp32[0];
+      GuildStore = tmp32[1];
+      const tmp34 = isStreaming(react.useState(soundshareEnabled), 2);
+      class R {
+        constructor() {
+          user = currentUser.getCurrentUser();
+          const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
+          let guildId;
+          const getGuild = closure_8.getGuild;
+          if (channel != null) {
+            guildId = channel.getGuildId();
+          }
+          const guild = getGuild(guildId);
+          guildPremiumTier = undefined;
+          if (guild != null) {
+            guildPremiumTier = guild.premiumTier;
+          }
+          return { user, guildPremiumTier };
+        }
+      }
+      SelectedChannelStore = tmp35;
+      UserStore = tmp34[1];
+      const tmpResult6 = tmp(4612);
+      const sharedValue = tmpResult6.useSharedValue(!tmp14(ApplicationStreamPresets.PRESET_MOBILE_HIGH_QUALITY));
+      if (cResult[13] === tmp20) {
+        if (cResult[14] === guildPremiumTier) {
+          if (cResult[15] === isStreaming) {
+            let tmp37;
+            let tmp38;
+            let tmp45;
+            if (cResult[16] === user) {
+              tmp37 = cResult[17];
+            }
+            ApplicationStreamPresets = tmp37;
+            if (cResult[18] !== tmp25.highQualityLabel) {
+              function ie(value) {
+                let formatToPlainStringResult;
+                let intl;
+                let intl3;
+                let intl5;
+                let items;
+                let obj9;
+                let str2;
+                let tmp8Result;
+                const obj = getStreamSettingsForPreset;
+                const maxSettingsForPreset = obj.getMaxSettingsForPreset(ApplicationStreamPresets.PRESET_MOBILE_DEFAULT);
+                const obj2 = getStreamSettingsForPreset;
+                const maxSettingsForPreset1 = obj2.getMaxSettingsForPreset(ApplicationStreamPresets.PRESET_MOBILE_PERFORMANCE);
+                const obj3 = getStreamSettingsForPreset;
+                const maxSettingsForPreset2 = obj3.getMaxSettingsForPreset(ApplicationStreamPresets.PRESET_MOBILE_HIGH_QUALITY);
+                const obj4 = { value };
+                const PRESET_MOBILE_DEFAULT = ApplicationStreamPresets.PRESET_MOBILE_DEFAULT;
+                const obj5 = { icon: authStore2(MobilePhoneIcon.MobilePhoneIcon, {}), label: intl.string(_modDef2327["2qmQ8N"]), subLabel: str2 };
+                intl = intl8.intl;
+                let str = "";
+                str2 = "";
+                if (null != maxSettingsForPreset) {
+                  const intl2 = tmp(1126).intl;
+                  str2 = intl2.formatToPlainString(tmp8(2327).ibH7vy, maxSettingsForPreset);
+                }
+                const obj6 = { [PRESET_MOBILE_DEFAULT]: obj5 };
+                const PRESET_MOBILE_PERFORMANCE = tmp3.PRESET_MOBILE_PERFORMANCE;
+                const obj7 = { icon: authStore2(SpeedometerIcon.SpeedometerIcon, {}), label: intl3.string(_modDef2327["5eO4/m"]), subLabel: formatToPlainStringResult };
+                intl3 = tmp(1126).intl;
+                formatToPlainStringResult = str;
+                if (null != maxSettingsForPreset1) {
+                  const intl4 = tmp(1126).intl;
+                  formatToPlainStringResult = intl4.formatToPlainString(tmp8(2327).fN0UQY, maxSettingsForPreset1);
+                }
+                obj6[PRESET_MOBILE_PERFORMANCE] = obj7;
+                const PRESET_MOBILE_HIGH_QUALITY = tmp3.PRESET_MOBILE_HIGH_QUALITY;
+                const obj8 = { icon: authStore2(ImageSparkleIcon.ImageSparkleIcon, {}), label: closure_15(tmp8Result, obj9), subLabel: str };
+                obj9 = { style: currentUserActiveStream.highQualityLabel, children: items };
+                const obj10 = { variant: "text-md/semibold", color: "text-strong", children: intl5.string(_modDef2327.nMcXo1) };
+                tmp8Result = NativeViewDefault;
+                const Text = tmp(4886).Text;
+                intl5 = tmp(1126).intl;
+                items = [authStore2(Text, obj10), ];
+                const obj11 = { source: AssetRegistryDefault, size: "xs" };
+                const BaseIconImage = tmp(4579).BaseIconImage;
+                items[1] = authStore2(BaseIconImage, obj11);
+                if (null != maxSettingsForPreset2) {
+                  const intl6 = tmp(1126).intl;
+                  str = intl6.formatToPlainString(tmp8(2327).q4gYBi, maxSettingsForPreset2);
+                }
+                obj6[PRESET_MOBILE_HIGH_QUALITY] = obj8;
+                const merged = Object.assign(obj6[value]);
+                return obj4;
+              }
+              cResult[18] = tmp25.highQualityLabel;
+              class H {
+                constructor() {
+                  let sourceId;
+                  const obj = currentUserActiveStream;
+                  currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                  const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                  const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                  sourceId = undefined;
+                  if (streamerActiveStreamMetadata != null) {
+                    sourceId = streamerActiveStreamMetadata.sourceId;
+                  }
+                  if (sourceId == null) {
+                    sourceId = null;
+                  }
+                  return obj2;
+                }
+              }
+              cResult[19] = ie;
+              tmp38 = ie;
+            } else {
+              tmp38 = cResult[19];
+            }
+            class H {
+              constructor() {
+                let sourceId;
+                const obj = currentUserActiveStream;
+                currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                sourceId = undefined;
+                if (streamerActiveStreamMetadata != null) {
+                  sourceId = streamerActiveStreamMetadata.sourceId;
+                }
+                if (sourceId == null) {
+                  sourceId = null;
+                }
+                return obj2;
+              }
+            }
+            const AnalyticsLocationProvider = tmp(6657).AnalyticsLocationProvider;
+            BottomSheet = tmp(6645).BottomSheet;
+            const BottomSheetScrollView = tmp(6112).BottomSheetScrollView;
+            const SafeAreaPaddingView = tmp(6619).SafeAreaPaddingView;
+            const _Symbol3 = Symbol;
+            class R {
+              constructor() {
+                user = currentUser.getCurrentUser();
+                const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
+                let guildId;
+                const getGuild = closure_8.getGuild;
+                if (channel != null) {
+                  guildId = channel.getGuildId();
+                }
+                const guild = getGuild(guildId);
+                guildPremiumTier = undefined;
+                if (guild != null) {
+                  guildPremiumTier = guild.premiumTier;
+                }
+                return { user, guildPremiumTier };
+              }
+            }
+            const header = tmp25.header;
+            if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
+              let intl = tmp(1126).intl;
+              const stringResult = intl.string(guildPremiumTier(2327).CrNjqp);
+              class H {
+                constructor() {
+                  let sourceId;
+                  const obj = currentUserActiveStream;
+                  currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                  const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                  const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                  sourceId = undefined;
+                  if (streamerActiveStreamMetadata != null) {
+                    sourceId = streamerActiveStreamMetadata.sourceId;
+                  }
+                  if (sourceId == null) {
+                    sourceId = null;
+                  }
+                  return obj2;
+                }
+              }
+              cResult[20] = stringResult;
+            }
+            if (cResult[21] !== tmp25.header) {
+              let obj3 = { style: header, variant: "redesign/heading-18/bold", color: "text-strong", accessibilityRole: "header", children: null };
+              class H {
+                constructor() {
+                  let sourceId;
+                  const obj = currentUserActiveStream;
+                  currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                  const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                  const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                  sourceId = undefined;
+                  if (streamerActiveStreamMetadata != null) {
+                    sourceId = streamerActiveStreamMetadata.sourceId;
+                  }
+                  if (sourceId == null) {
+                    sourceId = null;
+                  }
+                  return obj2;
+                }
+              }
+              cResult[21] = tmp25.header;
+              cResult[22] = closure_14(tmp(4886).Text, obj3);
+              closure_14(tmp(4886).Text, obj3);
+              class R {
+                constructor() {
+                  user = currentUser.getCurrentUser();
+                  const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
+                  let guildId;
+                  const getGuild = closure_8.getGuild;
+                  if (channel != null) {
+                    guildId = channel.getGuildId();
+                  }
+                  const guild = getGuild(guildId);
+                  guildPremiumTier = undefined;
+                  if (guild != null) {
+                    guildPremiumTier = guild.premiumTier;
+                  }
+                  return { user, guildPremiumTier };
+                }
+              }
+            }
+            const _Symbol4 = Symbol;
+            const section = tmp25.section;
+            if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
+              let intl2 = tmp(1126).intl;
+              const stringResult1 = intl2.string(guildPremiumTier(2327)["/XSr8v"]);
+              class H {
+                constructor() {
+                  let sourceId;
+                  const obj = currentUserActiveStream;
+                  currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                  const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                  const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                  sourceId = undefined;
+                  if (streamerActiveStreamMetadata != null) {
+                    sourceId = streamerActiveStreamMetadata.sourceId;
+                  }
+                  if (sourceId == null) {
+                    sourceId = null;
+                  }
+                  return obj2;
+                }
+              }
+              cResult[23] = stringResult1;
+              tmp45 = stringResult1;
+            } else {
+              tmp45 = cResult[23];
+            }
+            if (cResult[24] === analyticsLocations) {
+              if (cResult[25] === tmp37) {
+                if (cResult[26] === tmp14) {
+                  if (cResult[27] === isStreaming) {
+                    let tmp47;
+                    let tmp48;
+                    if (cResult[28] === tmp35) {
+                      tmp47 = cResult[29];
+                    }
+                    if (cResult[30] !== tmp38) {
+                      const mapped = closure_18.map((item) => {
+                        const obj = {};
+                        const TableRadioRow = TableRadioRow2.TableRadioRow;
+                        const merged = Object.assign(ApplicationStreamStates(item));
+                        return authStore2(TableRadioRow, obj, item);
+                      });
+                      class H {
+                        constructor() {
+                          let sourceId;
+                          const obj = currentUserActiveStream;
+                          currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                          const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                          const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                          sourceId = undefined;
+                          if (streamerActiveStreamMetadata != null) {
+                            sourceId = streamerActiveStreamMetadata.sourceId;
+                          }
+                          if (sourceId == null) {
+                            sourceId = null;
+                          }
+                          return obj2;
+                        }
+                      }
+                      cResult[31] = mapped;
+                      tmp48 = mapped;
+                    } else {
+                      tmp48 = cResult[31];
+                    }
+                    if (cResult[32] === value) {
+                      if (cResult[33] === tmp47) {
+                        let tmp51;
+                        if (cResult[34] === tmp48) {
+                          tmp51 = cResult[35];
+                        }
+                        if (cResult[36] === tmp25.section) {
+                          let tmp53;
+                          if (cResult[37] === tmp51) {
+                            tmp53 = cResult[38];
+                          }
+                          let str = "one-step";
+                          const tmp57 = "one-step" === goLiveUpsellVariant && sharedValue.get();
+                          class H {
+                            constructor() {
+                              let sourceId;
+                              const obj = currentUserActiveStream;
+                              currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                              const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                              const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                              sourceId = undefined;
+                              if (streamerActiveStreamMetadata != null) {
+                                sourceId = streamerActiveStreamMetadata.sourceId;
+                              }
+                              if (sourceId == null) {
+                                sourceId = null;
+                              }
+                              return obj2;
+                            }
+                          }
+                          if (cResult[39] === analyticsLocations) {
+                            if (cResult[40] === goLiveUpsellVariant) {
+                              if (cResult[41] === sharedValue) {
+                                let tmp58;
+                                let tmp64;
+                                let tmp66;
+                                if (cResult[42] === tmp25.section) {
+                                  tmp58 = cResult[43];
+                                }
+                                const _Symbol5 = Symbol;
+                                const section2 = tmp25.section;
+                                class H {
+                                  constructor() {
+                                    let sourceId;
+                                    const obj = currentUserActiveStream;
+                                    currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                                    const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                                    const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                                    sourceId = undefined;
+                                    if (streamerActiveStreamMetadata != null) {
+                                      sourceId = streamerActiveStreamMetadata.sourceId;
+                                    }
+                                    if (sourceId == null) {
+                                      sourceId = null;
+                                    }
+                                    return obj2;
+                                  }
+                                }
+                                if (tmp63 === Symbol.for("react.memo_cache_sentinel")) {
+                                  let intl4 = tmp(1126).intl;
+                                  const stringResult2 = intl4.string(guildPremiumTier(2327)["j+eAMQ"]);
+                                  class H {
+                                    constructor() {
+                                      let sourceId;
+                                      const obj = currentUserActiveStream;
+                                      currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                                      const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                                      const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                                      sourceId = undefined;
+                                      if (streamerActiveStreamMetadata != null) {
+                                        sourceId = streamerActiveStreamMetadata.sourceId;
+                                      }
+                                      if (sourceId == null) {
+                                        sourceId = null;
+                                      }
+                                      return obj2;
+                                    }
+                                  }
+                                  cResult[44] = stringResult2;
+                                  tmp64 = stringResult2;
+                                } else {
+                                  tmp64 = cResult[44];
+                                }
+                                const _Symbol6 = Symbol;
+                                if (cResult[45] === Symbol.for("react.memo_cache_sentinel")) {
+                                  let intl5 = tmp(1126).intl;
+                                  const stringResult3 = intl5.string(guildPremiumTier(2327).uwMBDo);
+                                  class H {
+                                    constructor() {
+                                      let sourceId;
+                                      const obj = currentUserActiveStream;
+                                      currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                                      const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                                      const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                                      sourceId = undefined;
+                                      if (streamerActiveStreamMetadata != null) {
+                                        sourceId = streamerActiveStreamMetadata.sourceId;
+                                      }
+                                      if (sourceId == null) {
+                                        sourceId = null;
+                                      }
+                                      return obj2;
+                                    }
+                                  }
+                                  cResult[45] = stringResult3;
+                                  tmp66 = stringResult3;
+                                } else {
+                                  tmp66 = cResult[45];
+                                }
+                                if (cResult[46] === tmp37) {
+                                  let tmp68;
+                                  if (cResult[47] === value) {
+                                    tmp68 = cResult[48];
+                                  }
+                                  if (cResult[49] === tmp35) {
+                                    let tmp70;
+                                    if (cResult[50] === tmp68) {
+                                      tmp70 = cResult[51];
+                                    }
+                                    if (cResult[52] === tmp25.section) {
+                                      let tmp74;
+                                      let tmp78;
+                                      if (cResult[53] === tmp70) {
+                                        tmp74 = cResult[54];
+                                      }
+                                      if (cResult[55] !== isStreaming) {
+                                        const Button = tmp(5594).Button;
+                                        if (isStreaming) {
+                                          let obj4 = {
+                                            size: "lg",
+                                            variant: "destructive",
+                                            text: null,
+                                            onPress() {
+                                                                                      const obj = user(closure_2[51]);
+                                                                                      obj.stopScreenshare();
+                                                                                      const obj2 = guildPremiumTier(closure_2[15]);
+                                                                                      obj2.hideActionSheet(MobileGoLiveActionSheet);
+                                                                                    }
+                                          };
+                                          const string2 = tmp(1126).intl.string;
+                                          class H {
+                                            constructor() {
+                                              let sourceId;
+                                              const obj = currentUserActiveStream;
+                                              currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                                              const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                                              const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                                              sourceId = undefined;
+                                              if (streamerActiveStreamMetadata != null) {
+                                                sourceId = streamerActiveStreamMetadata.sourceId;
+                                              }
+                                              if (sourceId == null) {
+                                                sourceId = null;
+                                              }
+                                              return obj2;
+                                            }
+                                          }
+                                          let obj5 = obj4;
+                                        } else {
+                                          obj5 = {
+                                            size: "lg",
+                                            variant: "primary",
+                                            text: null,
+                                            onPress() {
+                                                                                      const obj = guildPremiumTier(closure_2[15]);
+                                                                                      obj.hideActionSheet(MobileGoLiveActionSheet);
+                                                                                      const obj2 = user(closure_2[51]);
+                                                                                      obj2.startStream();
+                                                                                    }
+                                          };
+                                          const string = tmp(1126).intl.string;
+                                          class H {
+                                            constructor() {
+                                              let sourceId;
+                                              const obj = currentUserActiveStream;
+                                              currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                                              const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                                              const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                                              sourceId = undefined;
+                                              if (streamerActiveStreamMetadata != null) {
+                                                sourceId = streamerActiveStreamMetadata.sourceId;
+                                              }
+                                              if (sourceId == null) {
+                                                sourceId = null;
+                                              }
+                                              return obj2;
+                                            }
+                                          }
+                                        }
+                                        class H {
+                                          constructor() {
+                                            let sourceId;
+                                            const obj = currentUserActiveStream;
+                                            currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                                            const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                                            const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                                            sourceId = undefined;
+                                            if (streamerActiveStreamMetadata != null) {
+                                              sourceId = streamerActiveStreamMetadata.sourceId;
+                                            }
+                                            if (sourceId == null) {
+                                              sourceId = null;
+                                            }
+                                            return obj2;
+                                          }
+                                        }
+                                        cResult[55] = isStreaming;
+                                        cResult[56] = tmp80;
+                                        tmp78 = tmp80;
+                                      } else {
+                                        tmp78 = cResult[56];
+                                      }
+                                      if (cResult[57] === tmp25.section) {
+                                        let tmp81;
+                                        if (cResult[58] === tmp78) {
+                                          tmp81 = cResult[59];
+                                        }
+                                        if (cResult[60] === SafeAreaPaddingView) {
+                                          if (cResult[61] === tmp25.wrapper) {
+                                            if (cResult[62] === tmp42) {
+                                              if (cResult[63] === tmp53) {
+                                                if (cResult[64] === tmp57) {
+                                                  if (cResult[65] === tmp58) {
+                                                    if (cResult[66] === tmp74) {
+                                                      let tmp83;
+                                                      if (cResult[67] === tmp81) {
+                                                        tmp83 = cResult[68];
+                                                      }
+                                                      if (cResult[69] === BottomSheetScrollView) {
+                                                        let tmp87;
+                                                        if (cResult[70] === tmp83) {
+                                                          tmp87 = cResult[71];
+                                                        }
+                                                        if (cResult[72] === BottomSheet) {
+                                                          let tmp91;
+                                                          if (cResult[73] === tmp87) {
+                                                            tmp91 = cResult[74];
+                                                          }
+                                                          if (cResult[75] === AnalyticsLocationProvider) {
+                                                            if (cResult[76] === analyticsLocations) {
+                                                              let tmp95;
+                                                              if (cResult[77] === tmp91) {
+                                                                tmp95 = cResult[78];
+                                                              }
+                                                              return tmp95;
+                                                            }
+                                                          }
+                                                          class H {
+                                                            constructor() {
+                                                              let sourceId;
+                                                              const obj = currentUserActiveStream;
+                                                              currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                                                              const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                                                              const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                                                              sourceId = undefined;
+                                                              if (streamerActiveStreamMetadata != null) {
+                                                                sourceId = streamerActiveStreamMetadata.sourceId;
+                                                              }
+                                                              if (sourceId == null) {
+                                                                sourceId = null;
+                                                              }
+                                                              return obj2;
+                                                            }
+                                                          }
+                                                          tmp97[0] = analyticsLocations;
+                                                          tmp97[1] = tmp91;
+                                                          const tmp98 = closure_14(AnalyticsLocationProvider, tmp97);
+                                                          cResult[75] = AnalyticsLocationProvider;
+                                                          class R {
+                                                            constructor() {
+                                                              user = currentUser.getCurrentUser();
+                                                              const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
+                                                              let guildId;
+                                                              const getGuild = closure_8.getGuild;
+                                                              if (channel != null) {
+                                                                guildId = channel.getGuildId();
+                                                              }
+                                                              const guild = getGuild(guildId);
+                                                              guildPremiumTier = undefined;
+                                                              if (guild != null) {
+                                                                guildPremiumTier = guild.premiumTier;
+                                                              }
+                                                              return { user, guildPremiumTier };
+                                                            }
+                                                          }
+                                                          cResult[76] = analyticsLocations;
+                                                          cResult[77] = tmp91;
+                                                          cResult[78] = tmp98;
+                                                          tmp95 = tmp98;
+                                                        }
+                                                        class H {
+                                                          constructor() {
+                                                            let sourceId;
+                                                            const obj = currentUserActiveStream;
+                                                            currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                                                            const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                                                            const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                                                            sourceId = undefined;
+                                                            if (streamerActiveStreamMetadata != null) {
+                                                              sourceId = streamerActiveStreamMetadata.sourceId;
+                                                            }
+                                                            if (sourceId == null) {
+                                                              sourceId = null;
+                                                            }
+                                                            return obj2;
+                                                          }
+                                                        }
+                                                        tmp93[1] = tmp87;
+                                                        const tmp94 = closure_14(BottomSheet, tmp93);
+                                                        cResult[72] = BottomSheet;
+                                                        class R {
+                                                          constructor() {
+                                                            user = currentUser.getCurrentUser();
+                                                            const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
+                                                            let guildId;
+                                                            const getGuild = closure_8.getGuild;
+                                                            if (channel != null) {
+                                                              guildId = channel.getGuildId();
+                                                            }
+                                                            const guild = getGuild(guildId);
+                                                            guildPremiumTier = undefined;
+                                                            if (guild != null) {
+                                                              guildPremiumTier = guild.premiumTier;
+                                                            }
+                                                            return { user, guildPremiumTier };
+                                                          }
+                                                        }
+                                                        cResult[74] = tmp94;
+                                                        tmp91 = tmp94;
+                                                      }
+                                                      class H {
+                                                        constructor() {
+                                                          let sourceId;
+                                                          const obj = currentUserActiveStream;
+                                                          currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                                                          const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                                                          const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                                                          sourceId = undefined;
+                                                          if (streamerActiveStreamMetadata != null) {
+                                                            sourceId = streamerActiveStreamMetadata.sourceId;
+                                                          }
+                                                          if (sourceId == null) {
+                                                            sourceId = null;
+                                                          }
+                                                          return obj2;
+                                                        }
+                                                      }
+                                                      tmp89[0] = tmp83;
+                                                      const tmp90 = closure_14(BottomSheetScrollView, tmp89);
+                                                      cResult[69] = BottomSheetScrollView;
+                                                      class R {
+                                                        constructor() {
+                                                          user = currentUser.getCurrentUser();
+                                                          const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
+                                                          let guildId;
+                                                          const getGuild = closure_8.getGuild;
+                                                          if (channel != null) {
+                                                            guildId = channel.getGuildId();
+                                                          }
+                                                          const guild = getGuild(guildId);
+                                                          guildPremiumTier = undefined;
+                                                          if (guild != null) {
+                                                            guildPremiumTier = guild.premiumTier;
+                                                          }
+                                                          return { user, guildPremiumTier };
+                                                        }
+                                                      }
+                                                      cResult[71] = tmp90;
+                                                      tmp87 = tmp90;
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                        class H {
+                                          constructor() {
+                                            let sourceId;
+                                            const obj = currentUserActiveStream;
+                                            currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                                            const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                                            const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                                            sourceId = undefined;
+                                            if (streamerActiveStreamMetadata != null) {
+                                              sourceId = streamerActiveStreamMetadata.sourceId;
+                                            }
+                                            if (sourceId == null) {
+                                              sourceId = null;
+                                            }
+                                            return obj2;
+                                          }
+                                        }
+                                        tmp85[1] = tmp39;
+                                        const items3 = [tmp42, tmp53, tmp57, , , ];
+                                        class R {
+                                          constructor() {
+                                            user = currentUser.getCurrentUser();
+                                            const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
+                                            let guildId;
+                                            const getGuild = closure_8.getGuild;
+                                            if (channel != null) {
+                                              guildId = channel.getGuildId();
+                                            }
+                                            const guild = getGuild(guildId);
+                                            guildPremiumTier = undefined;
+                                            if (guild != null) {
+                                              guildPremiumTier = guild.premiumTier;
+                                            }
+                                            return { user, guildPremiumTier };
+                                          }
+                                        }
+                                        items3[4] = tmp74;
+                                        items3[5] = tmp81;
+                                        tmp85[2] = items3;
+                                        const tmp86 = closure_15(SafeAreaPaddingView, tmp85);
+                                        cResult[60] = SafeAreaPaddingView;
+                                        cResult[61] = tmp25.wrapper;
+                                        class Ee {
+                                          constructor(arg0) {
+                                            if (closure_2(arg0)) {
+                                              closure_8(arg0);
+                                              closure_11(arg0, SelectedChannelStore);
+                                              const tmp13 = isStreaming;
+                                              if (tmp13) {
+                                                const obj2 = ActionSheetActionCreatorsDefault;
+                                                obj2.hideActionSheet(MobileGoLiveActionSheet);
+                                              }
+                                            } else {
+                                              const obj = { initialUpsellKey: ConstantsIOS.UpsellTypes.STREAM_HIGH_QUALITY, analyticsLocations };
+                                              const handleShowUpsellAlert = PremiumUpsellUtilsDefault.handleShowUpsellAlert;
+                                              PremiumUpsellUtilsDefault;
+                                              const result = handleShowUpsellAlert(obj);
+                                            }
+                                          }
+                                        }
+                                        cResult[63] = tmp53;
+                                        cResult[64] = tmp57;
+                                        cResult[65] = tmp58;
+                                        cResult[66] = tmp74;
+                                        cResult[67] = tmp81;
+                                        cResult[68] = tmp86;
+                                        tmp83 = tmp86;
+                                      }
+                                      class H {
+                                        constructor() {
+                                          let sourceId;
+                                          const obj = currentUserActiveStream;
+                                          currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                                          const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                                          const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                                          sourceId = undefined;
+                                          if (streamerActiveStreamMetadata != null) {
+                                            sourceId = streamerActiveStreamMetadata.sourceId;
+                                          }
+                                          if (sourceId == null) {
+                                            sourceId = null;
+                                          }
+                                          return obj2;
+                                        }
+                                      }
+                                      let obj7 = { style: tmp25.section, children: tmp78 };
+                                      const tmp82 = closure_14(guildPremiumTier(5976), obj7);
+                                      class R {
+                                        constructor() {
+                                          user = currentUser.getCurrentUser();
+                                          const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
+                                          let guildId;
+                                          const getGuild = closure_8.getGuild;
+                                          if (channel != null) {
+                                            guildId = channel.getGuildId();
+                                          }
+                                          const guild = getGuild(guildId);
+                                          guildPremiumTier = undefined;
+                                          if (guild != null) {
+                                            guildPremiumTier = guild.premiumTier;
+                                          }
+                                          return { user, guildPremiumTier };
+                                        }
+                                      }
+                                      cResult[58] = tmp78;
+                                      cResult[59] = tmp82;
+                                      tmp81 = tmp82;
+                                    }
+                                    class H {
+                                      constructor() {
+                                        let sourceId;
+                                        const obj = currentUserActiveStream;
+                                        currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                                        const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                                        const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                                        sourceId = undefined;
+                                        if (streamerActiveStreamMetadata != null) {
+                                          sourceId = streamerActiveStreamMetadata.sourceId;
+                                        }
+                                        if (sourceId == null) {
+                                          sourceId = null;
+                                        }
+                                        return obj2;
+                                      }
+                                    }
+                                    tmp76[0] = section2;
+                                    tmp76[1] = tmp70;
+                                    const tmp77 = closure_14(guildPremiumTier(5976), tmp76);
+                                    cResult[52] = tmp25.section;
+                                    class R {
+                                      constructor() {
+                                        user = currentUser.getCurrentUser();
+                                        const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
+                                        let guildId;
+                                        const getGuild = closure_8.getGuild;
+                                        if (channel != null) {
+                                          guildId = channel.getGuildId();
+                                        }
+                                        const guild = getGuild(guildId);
+                                        guildPremiumTier = undefined;
+                                        if (guild != null) {
+                                          guildPremiumTier = guild.premiumTier;
+                                        }
+                                        return { user, guildPremiumTier };
+                                      }
+                                    }
+                                    cResult[53] = tmp70;
+                                    cResult[54] = tmp77;
+                                    tmp74 = tmp77;
+                                  }
+                                  class H {
+                                    constructor() {
+                                      let sourceId;
+                                      const obj = currentUserActiveStream;
+                                      currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                                      const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                                      const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                                      sourceId = undefined;
+                                      if (streamerActiveStreamMetadata != null) {
+                                        sourceId = streamerActiveStreamMetadata.sourceId;
+                                      }
+                                      if (sourceId == null) {
+                                        sourceId = null;
+                                      }
+                                      return obj2;
+                                    }
+                                  }
+                                  tmp72[0] = tmp64;
+                                  const TableRowGroup2 = tmp(6074).TableRowGroup;
+                                  let obj8 = { label: tmp66, value: tmp35, onValueChange: null };
+                                  class R {
+                                    constructor() {
+                                      user = currentUser.getCurrentUser();
+                                      const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
+                                      let guildId;
+                                      const getGuild = closure_8.getGuild;
+                                      if (channel != null) {
+                                        guildId = channel.getGuildId();
+                                      }
+                                      const guild = getGuild(guildId);
+                                      guildPremiumTier = undefined;
+                                      if (guild != null) {
+                                        guildPremiumTier = guild.premiumTier;
+                                      }
+                                      return { user, guildPremiumTier };
+                                    }
+                                  }
+                                  tmp72[2] = closure_14(tmp(6698).TableSwitchRow, obj8);
+                                  const tmp73 = closure_14(TableRowGroup2, tmp72);
+                                  cResult[49] = tmp35;
+                                  cResult[50] = tmp68;
+                                  cResult[51] = tmp73;
+                                  tmp70 = tmp73;
+                                }
+                                class R {
+                                  constructor() {
+                                    user = currentUser.getCurrentUser();
+                                    const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
+                                    let guildId;
+                                    const getGuild = closure_8.getGuild;
+                                    if (channel != null) {
+                                      guildId = channel.getGuildId();
+                                    }
+                                    const guild = getGuild(guildId);
+                                    guildPremiumTier = undefined;
+                                    if (guild != null) {
+                                      guildPremiumTier = guild.premiumTier;
+                                    }
+                                    return { user, guildPremiumTier };
+                                  }
+                                }
+                                cResult[46] = tmp37;
+                                cResult[47] = value;
+                                cResult[48] = tmp69;
+                                tmp68 = tmp69;
+                              }
+                            }
+                          }
+                          let str2 = "two-step";
+                          let tmp59 = "two-step" === goLiveUpsellVariant && sharedValue.get();
+                          if (tmp59) {
+                            let obj9 = { style: tmp25.section, children: closure_14(tmp22Result, obj10) };
+                            class H {
+                              constructor() {
+                                let sourceId;
+                                const obj = currentUserActiveStream;
+                                currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                                const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                                const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                                sourceId = undefined;
+                                if (streamerActiveStreamMetadata != null) {
+                                  sourceId = streamerActiveStreamMetadata.sourceId;
+                                }
+                                if (sourceId == null) {
+                                  sourceId = null;
+                                }
+                                return obj2;
+                              }
+                            }
+                            obj10 = { text: intl3.string(guildPremiumTier(2327).u72Prd), onPress: null };
+                            tmp22Result = guildPremiumTier(9648);
+                            intl3 = tmp(1126).intl;
+                            class R {
+                              constructor() {
+                                user = currentUser.getCurrentUser();
+                                const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
+                                let guildId;
+                                const getGuild = closure_8.getGuild;
+                                if (channel != null) {
+                                  guildId = channel.getGuildId();
+                                }
+                                const guild = getGuild(guildId);
+                                guildPremiumTier = undefined;
+                                if (guild != null) {
+                                  guildPremiumTier = guild.premiumTier;
+                                }
+                                return { user, guildPremiumTier };
+                              }
+                            }
+                            tmp59 = closure_14(tmp61, obj9);
+                          }
+                          class R {
+                            constructor() {
+                              user = currentUser.getCurrentUser();
+                              const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
+                              let guildId;
+                              const getGuild = closure_8.getGuild;
+                              if (channel != null) {
+                                guildId = channel.getGuildId();
+                              }
+                              const guild = getGuild(guildId);
+                              guildPremiumTier = undefined;
+                              if (guild != null) {
+                                guildPremiumTier = guild.premiumTier;
+                              }
+                              return { user, guildPremiumTier };
+                            }
+                          }
+                          cResult[40] = goLiveUpsellVariant;
+                          cResult[41] = sharedValue;
+                          cResult[42] = tmp25.section;
+                          cResult[43] = tmp59;
+                          tmp58 = tmp59;
+                        }
+                        class H {
+                          constructor() {
+                            let sourceId;
+                            const obj = currentUserActiveStream;
+                            currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                            const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                            const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                            sourceId = undefined;
+                            if (streamerActiveStreamMetadata != null) {
+                              sourceId = streamerActiveStreamMetadata.sourceId;
+                            }
+                            if (sourceId == null) {
+                              sourceId = null;
+                            }
+                            return obj2;
+                          }
+                        }
+                        tmp55[0] = section;
+                        tmp55[1] = tmp51;
+                        const tmp56 = closure_14(guildPremiumTier(5976), tmp55);
+                        cResult[36] = tmp25.section;
+                        class R {
+                          constructor() {
+                            user = currentUser.getCurrentUser();
+                            const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
+                            let guildId;
+                            const getGuild = closure_8.getGuild;
+                            if (channel != null) {
+                              guildId = channel.getGuildId();
+                            }
+                            const guild = getGuild(guildId);
+                            guildPremiumTier = undefined;
+                            if (guild != null) {
+                              guildPremiumTier = guild.premiumTier;
+                            }
+                            return { user, guildPremiumTier };
+                          }
+                        }
+                        cResult[37] = tmp51;
+                        cResult[38] = tmp56;
+                        tmp53 = tmp56;
+                      }
+                    }
+                    class H {
+                      constructor() {
+                        let sourceId;
+                        const obj = currentUserActiveStream;
+                        currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+                        const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+                        const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+                        sourceId = undefined;
+                        if (streamerActiveStreamMetadata != null) {
+                          sourceId = streamerActiveStreamMetadata.sourceId;
+                        }
+                        if (sourceId == null) {
+                          sourceId = null;
+                        }
+                        return obj2;
+                      }
+                    }
+                    let obj11 = { title: tmp45, hasIcons: false, children: closure_14(tmp(6072).TableRadioGroup, obj12) };
+                    const TableRowGroup = tmp(6074).TableRowGroup;
+                    obj12 = { value, onChange: null, hasIcons: true, children: tmp48 };
+                    class R {
+                      constructor() {
+                        user = currentUser.getCurrentUser();
+                        const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
+                        let guildId;
+                        const getGuild = closure_8.getGuild;
+                        if (channel != null) {
+                          guildId = channel.getGuildId();
+                        }
+                        const guild = getGuild(guildId);
+                        guildPremiumTier = undefined;
+                        if (guild != null) {
+                          guildPremiumTier = guild.premiumTier;
+                        }
+                        return { user, guildPremiumTier };
+                      }
+                    }
+                    const tmp52 = closure_14(TableRowGroup, obj11);
+                    cResult[32] = value;
+                    cResult[33] = tmp47;
+                    cResult[34] = tmp48;
+                    class Ee {
+                      constructor(arg0) {
+                        if (closure_2(arg0)) {
+                          closure_8(arg0);
+                          closure_11(arg0, SelectedChannelStore);
+                          const tmp13 = isStreaming;
+                          if (tmp13) {
+                            const obj2 = ActionSheetActionCreatorsDefault;
+                            obj2.hideActionSheet(MobileGoLiveActionSheet);
+                          }
+                        } else {
+                          const obj = { initialUpsellKey: ConstantsIOS.UpsellTypes.STREAM_HIGH_QUALITY, analyticsLocations };
+                          const handleShowUpsellAlert = PremiumUpsellUtilsDefault.handleShowUpsellAlert;
+                          PremiumUpsellUtilsDefault;
+                          const result = handleShowUpsellAlert(obj);
+                        }
+                      }
+                    }
+                    cResult[35] = tmp52;
+                    tmp51 = tmp52;
+                  }
+                }
+              }
+            }
+            class Ee {
+              constructor(arg0) {
+                if (closure_2(arg0)) {
+                  closure_8(arg0);
+                  closure_11(arg0, SelectedChannelStore);
+                  const tmp13 = isStreaming;
+                  if (tmp13) {
+                    const obj2 = ActionSheetActionCreatorsDefault;
+                    obj2.hideActionSheet(MobileGoLiveActionSheet);
+                  }
+                } else {
+                  const obj = { initialUpsellKey: ConstantsIOS.UpsellTypes.STREAM_HIGH_QUALITY, analyticsLocations };
+                  const handleShowUpsellAlert = PremiumUpsellUtilsDefault.handleShowUpsellAlert;
+                  PremiumUpsellUtilsDefault;
+                  const result = handleShowUpsellAlert(obj);
+                }
+              }
+            }
+            cResult[24] = analyticsLocations;
+            cResult[25] = tmp37;
+            cResult[26] = tmp14;
+            cResult[27] = isStreaming;
+            cResult[28] = tmp35;
+            cResult[29] = Ee;
+            tmp47 = Ee;
+          }
+        }
+      }
+      const fn2 = function z(preset, soundshareEnabled) {
+        let obj3;
+        let tmp4;
+        let tmp5;
+        let items = getStreamSettingsForPresetDefault(preset, user, guildPremiumTier);
+        if (items == null) {
+          items = [];
+        }
+        [tmp4, tmp5] = items;
+        _slicedToArray(items, 2);
+        if (null != tmp4) {
+          if (null != tmp5) {
+            const obj2 = { preset, resolution: tmp4, frameRate: tmp5, soundshareEnabled };
+            const obj5 = StreamActionCreators;
+            obj5.updateStreamSettings(obj2);
+            const tmp12 = isStreaming;
+            if (tmp12) {
+              const obj = { qualityOptions: obj3, context: MediaEngineContextTypes.STREAM };
+              obj3 = { preset, resolution: tmp4, frameRate: tmp5 };
+              if (null != react) {
+                const obj4 = { sourceId: tmp7, sound: soundshareEnabled };
+                obj.desktopSettings = obj4;
+              }
+              const tmpResult = AudioActionCreatorsDefault;
+              tmpResult.setGoLiveSource(obj);
+            }
+          }
+        }
+      };
+      cResult[14] = guildPremiumTier;
+      cResult[15] = isStreaming;
+      cResult[16] = user;
+      cResult[17] = fn2;
+      tmp37 = fn2;
+    }
+    const tmp28 = preset === ApplicationStreamPresets.PRESET_MOBILE_DEFAULT || preset === ApplicationStreamPresets.PRESET_MOBILE_PERFORMANCE || preset === ApplicationStreamPresets.PRESET_MOBILE_HIGH_QUALITY;
+    if (tmp28) {
+      let PRESET_MOBILE_DEFAULT;
+      if (closure_18.includes(preset)) {
+        PRESET_MOBILE_DEFAULT = preset;
+      }
+      class H {
+        constructor() {
+          let sourceId;
+          const obj = currentUserActiveStream;
+          currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+          const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
+          const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+          sourceId = undefined;
+          if (streamerActiveStreamMetadata != null) {
+            sourceId = streamerActiveStreamMetadata.sourceId;
+          }
+          if (sourceId == null) {
+            sourceId = null;
+          }
+          return obj2;
+        }
+      }
+      cResult[11] = preset;
+      cResult[12] = PRESET_MOBILE_DEFAULT;
+      tmp26 = PRESET_MOBILE_DEFAULT;
+    }
+    PRESET_MOBILE_DEFAULT = tmp27.PRESET_MOBILE_DEFAULT;
+  }
+  const fn = function f(arg0) {
+    const obj = getStreamSettingsForPreset;
+    return obj.canStreamWithPreset(arg0, user, guildPremiumTier);
+  };
+  cResult[4] = guildPremiumTier;
+  cResult[5] = user;
+  cResult[6] = fn;
+  tmp14 = fn;
+}) : (() => {
+  let Button;
+  let TableRadioGroup;
+  let TableRowGroup;
+  let TableRowGroup2;
+  let TableSwitchRow;
+  let activeSourceId;
+  let analyticsLocations;
+  let callback;
+  let closure_11;
+  let currentUser;
+  let currentUserActiveStream;
+  let first1;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
+  let intl7;
+  let items5;
+  let obj10;
+  let obj11;
+  let obj13;
+  let obj15;
+  let obj17;
+  let obj18;
+  let obj21;
+  let obj22;
+  let obj23;
+  let preset;
+  let soundshareEnabled;
+  let tmp7Result10;
+  let tmp7Result8;
+  let user;
+  let value;
+  let tmp = user;
+  const tmp2 = callback;
+  let obj = user(callback[21]);
   let items = [analyticsLocations];
-  const stateFromStoresObject = user(callback[19]).useStateFromStoresObject(items, () => analyticsLocations.getState());
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => analyticsLocations.getState());
   ({ preset, soundshareEnabled } = stateFromStoresObject);
-  let obj = user(callback[19]);
-  const items1 = [currentUser, first1, value, guild];
-  const stateFromStoresObject1 = user(callback[19]).useStateFromStoresObject(items1, () => {
+  let obj2 = user(callback[21]);
+  const items1 = [currentUser, first1, value, closure_8];
+  const stateFromStoresObject1 = obj2.useStateFromStoresObject(items1, () => {
     user = currentUser.getCurrentUser();
     const channel = first.getChannel(first1.getVoiceChannelId());
     let guildId;
+    const getGuild = closure_8.getGuild;
     if (channel != null) {
       guildId = channel.getGuildId();
     }
-    guild = guild.getGuild(guildId);
+    const guild = getGuild(guildId);
     guildPremiumTier = undefined;
     if (guild != null) {
       guildPremiumTier = guild.premiumTier;
@@ -84,37 +1493,40 @@ export default noop.memo(function MobileGoLiveActionSheet() {
   });
   user = stateFromStoresObject1.user;
   let guildPremiumTier = stateFromStoresObject1.guildPremiumTier;
+  let obj3 = activeSourceId;
   const items2 = [user, guildPremiumTier];
-  callback = activeSourceId.useCallback((arg0) => getStreamSettingsForPreset.canStreamWithPreset(arg0, user, guildPremiumTier), items2);
-  let obj2 = user(callback[19]);
+  callback = activeSourceId.useCallback((arg0) => {
+    const obj = getStreamSettingsForPreset;
+    return obj.canStreamWithPreset(arg0, user, guildPremiumTier);
+  }, items2);
+  let obj4 = user(callback[21]);
   const items3 = [currentUserActiveStream];
-  const stateFromStoresObject2 = user(callback[19]).useStateFromStoresObject(items3, () => {
-    currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-    let tmp2 = null != currentUserActiveStream;
-    if (tmp2) {
-      tmp2 = currentUserActiveStream.state === constants.ACTIVE;
-    }
-    const obj2 = { isStreaming: tmp2, activeSourceId: null };
-    const streamerActiveStreamMetadata = currentUserActiveStream.getStreamerActiveStreamMetadata();
+  const stateFromStoresObject2 = obj4.useStateFromStoresObject(items3, () => {
     let sourceId;
+    const obj = currentUserActiveStream;
+    currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
+    const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === constants.ACTIVE, activeSourceId: sourceId };
+    const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
+    sourceId = undefined;
     if (streamerActiveStreamMetadata != null) {
       sourceId = streamerActiveStreamMetadata.sourceId;
     }
     if (sourceId == null) {
       sourceId = null;
     }
-    obj2.activeSourceId = sourceId;
     return obj2;
   });
   const isStreaming = stateFromStoresObject2.isStreaming;
   activeSourceId = stateFromStoresObject2.activeSourceId;
-  let obj4 = user(callback[19]);
-  const goLiveUpsellVariant = guildPremiumTier(callback[21]).useConfig({ location: "MobileGoLiveActionSheet" }).goLiveUpsellVariant;
-  let obj5 = guildPremiumTier(callback[21]);
-  analyticsLocations = guildPremiumTier(callback[22])(guildPremiumTier(callback[23]).MOBILE_GO_LIVE_ACTION_SHEET).analyticsLocations;
+  const tmp7 = guildPremiumTier;
+  let obj5 = guildPremiumTier(callback[23]);
+  const goLiveUpsellVariant = obj5.useConfig({ location: "MobileGoLiveActionSheet" }).goLiveUpsellVariant;
+  const tmp8 = guildPremiumTier(callback[24]);
+  analyticsLocations = tmp8(guildPremiumTier(callback[25]).MOBILE_GO_LIVE_ACTION_SHEET).analyticsLocations;
   const tmp9 = closure_16();
   currentUserActiveStream = tmp9;
   let tmp11 = preset === ApplicationStreamPresets.PRESET_MOBILE_DEFAULT;
+  const useState = activeSourceId.useState;
   if (!tmp11) {
     tmp11 = preset === tmp10.PRESET_MOBILE_PERFORMANCE;
   }
@@ -122,198 +1534,232 @@ export default noop.memo(function MobileGoLiveActionSheet() {
     tmp11 = preset === tmp10.PRESET_MOBILE_HIGH_QUALITY;
   }
   if (tmp11) {
-    const tmp14 = isStreaming(activeSourceId.useState(preset), 2);
+    let tmp12 = closure_18;
+    let tmp13 = isStreaming;
+    const tmp14 = isStreaming(useState(preset), 2);
     value = tmp14[0];
-    guild = tmp14[1];
+    closure_8 = tmp14[1];
     const tmp16 = isStreaming(obj3.useState(soundshareEnabled), 2);
     first1 = tmp16[0];
     currentUser = tmp16[1];
-    const sharedValue = tmp(tmp2[24]).useSharedValue(!callback(tmp10.PRESET_MOBILE_HIGH_QUALITY));
+    let tmpResult = tmp(tmp2[26]);
+    const sharedValue = tmpResult.useSharedValue(!callback(tmp10.PRESET_MOBILE_HIGH_QUALITY));
     const items4 = [user, guildPremiumTier, activeSourceId, isStreaming];
     ApplicationStreamPresets = obj3.useCallback((preset, soundshareEnabled) => {
+      let obj3;
+      let tmp4;
+      let tmp5;
       let items = getStreamSettingsForPresetDefault(preset, user, guildPremiumTier);
       if (items == null) {
         items = [];
       }
       [tmp4, tmp5] = items;
+      _slicedToArray(items, 2);
       if (null != tmp4) {
         if (null != tmp5) {
           const obj2 = { preset, resolution: tmp4, frameRate: tmp5, soundshareEnabled };
-          StreamActionCreators.updateStreamSettings(obj2);
-          if (isStreaming) {
-            const obj = { qualityOptions: null, context: null };
-            const obj3 = { preset, resolution: tmp4, frameRate: tmp5 };
-            obj.qualityOptions = obj3;
-            obj.context = MediaEngineContextTypes.STREAM;
+          const obj5 = StreamActionCreators;
+          obj5.updateStreamSettings(obj2);
+          const tmp12 = isStreaming;
+          if (tmp12) {
+            const obj = { qualityOptions: obj3, context: MediaEngineContextTypes.STREAM };
+            obj3 = { preset, resolution: tmp4, frameRate: tmp5 };
             if (null != activeSourceId) {
               const obj4 = { sourceId: tmp7, sound: soundshareEnabled };
               obj.desktopSettings = obj4;
             }
-            AudioActionCreatorsDefault.setGoLiveSource(obj);
             const tmpResult = AudioActionCreatorsDefault;
+            tmpResult.setGoLiveSource(obj);
           }
         }
       }
     }, items4);
-    let obj6 = { value: analyticsLocations, children: null };
-    let obj7 = { bottom: true, style: tmp9.wrapper, children: null };
-    let obj8 = { style: tmp9.header, variant: "redesign/heading-18/bold", color: "text-strong", accessibilityRole: "header", children: null };
-    let intl = tmp(tmp2[28]).intl;
-    obj8.children = intl.string(tmp7(tmp2[29]).CrNjqp);
-    const items5 = [closure_14(tmp(tmp2[33]).Text, obj8), , , , , ];
-    let obj9 = { style: tmp9.section, children: null };
-    const tmp19 = closure_15;
-    let tmpResult = tmp(tmp2[24]);
-    let obj10 = { title: null, hasIcons: false, children: null };
-    let intl2 = tmp(tmp2[28]).intl;
-    obj10.title = intl2.string(tmp7(tmp2[29])["/XSr8v"]);
-    const obj11 = {
+    let obj6 = { value: analyticsLocations, children: closure_14(BottomSheet, obj22) };
+    const AnalyticsLocationProvider = tmp(tmp2[24]).AnalyticsLocationProvider;
+    BottomSheet = tmp(tmp2[38]).BottomSheet;
+    const BottomSheetScrollView = tmp(tmp2[39]).BottomSheetScrollView;
+    let obj7 = { bottom: true, style: tmp9.wrapper, children: items5 };
+    const SafeAreaPaddingView = tmp(tmp2[40]).SafeAreaPaddingView;
+    let obj8 = { style: tmp9.header, variant: "redesign/heading-18/bold", color: "text-strong", accessibilityRole: "header", children: intl.string(tmp7(tmp2[31]).CrNjqp) };
+    let Text = tmp(tmp2[35]).Text;
+    intl = tmp(tmp2[30]).intl;
+    items5 = [closure_14(Text, obj8), , , , , ];
+    let obj9 = { style: tmp9.section, children: closure_14(TableRowGroup, obj10) };
+    obj10 = { title: intl2.string(tmp7(tmp2[31])["/XSr8v"]), hasIcons: false, children: closure_14(TableRadioGroup, obj11) };
+    const tmp7Result = tmp7(tmp2[34]);
+    TableRowGroup = tmp(tmp2[44]).TableRowGroup;
+    intl2 = tmp(tmp2[30]).intl;
+    obj11 = {
       value,
       onChange(arg0) {
           if (callback(arg0)) {
-            guild(arg0);
+            closure_8(arg0);
             closure_11(arg0, first1);
-            if (isStreaming) {
-              ActionSheetActionCreatorsDefault.hideActionSheet(MobileGoLiveActionSheet);
+            const tmp13 = isStreaming;
+            if (tmp13) {
+              const obj2 = ActionSheetActionCreatorsDefault;
+              obj2.hideActionSheet(MobileGoLiveActionSheet);
             }
           } else {
-            const obj2 = { initialUpsellKey: ConstantsIOS.UpsellTypes.STREAM_HIGH_QUALITY, analyticsLocations };
-            const result = PremiumUpsellUtilsDefault.handleShowUpsellAlert(obj2);
+            const obj = { initialUpsellKey: ConstantsIOS.UpsellTypes.STREAM_HIGH_QUALITY, analyticsLocations };
+            const handleShowUpsellAlert = PremiumUpsellUtilsDefault.handleShowUpsellAlert;
+            PremiumUpsellUtilsDefault;
+            const result = handleShowUpsellAlert(obj);
           }
         },
       hasIcons: true,
       children: closure_18.map((value) => {
-          const maxSettingsForPreset = getStreamSettingsForPreset.getMaxSettingsForPreset(ApplicationStreamPresets.PRESET_MOBILE_DEFAULT);
-          const maxSettingsForPreset1 = getStreamSettingsForPreset.getMaxSettingsForPreset(ApplicationStreamPresets.PRESET_MOBILE_PERFORMANCE);
-          const maxSettingsForPreset2 = getStreamSettingsForPreset.getMaxSettingsForPreset(ApplicationStreamPresets.PRESET_MOBILE_HIGH_QUALITY);
-          const obj5 = { icon: closure_2_14(MobilePhoneIcon.MobilePhoneIcon, {}), label: null, subLabel: null };
-          const intl = util.intl;
-          obj5.label = intl.string(_modDef2322["2qmQ8N"]);
-          let str = "";
-          let str2 = "";
-          if (null != maxSettingsForPreset) {
-            const intl2 = tmp2(1115).intl;
-            str2 = intl2.formatToPlainString(tmp8(2322).ibH7vy, maxSettingsForPreset);
-          }
-          const obj6 = { [closure_2_11.PRESET_MOBILE_DEFAULT]: obj5 };
-          obj5.subLabel = str2;
-          const obj7 = { icon: closure_2_14(SpeedometerIcon.SpeedometerIcon, {}), label: null, subLabel: null };
-          const intl3 = tmp2(1115).intl;
-          obj7.label = intl3.string(_modDef2322["5eO4/m"]);
-          let formatToPlainStringResult = str;
-          if (null != maxSettingsForPreset1) {
-            const intl4 = tmp2(1115).intl;
-            formatToPlainStringResult = intl4.formatToPlainString(tmp8(2322).fN0UQY, maxSettingsForPreset1);
-          }
-          obj7.subLabel = formatToPlainStringResult;
-          obj6[ApplicationStreamPresets.PRESET_MOBILE_PERFORMANCE] = obj7;
-          const obj8 = { icon: closure_2_14(ImageSparkleIcon.ImageSparkleIcon, {}), label: null, subLabel: null };
-          const obj9 = { style: currentUserActiveStream.highQualityLabel, children: null };
+          let formatToPlainStringResult;
+          let intl;
+          let intl3;
+          let intl5;
+          let items;
+          let obj9;
+          let str2;
+          let tmp8Result;
+          const TableRadioRow = TableRadioRow2.TableRadioRow;
+          const obj = getStreamSettingsForPreset;
+          const maxSettingsForPreset = obj.getMaxSettingsForPreset(ApplicationStreamPresets.PRESET_MOBILE_DEFAULT);
+          const obj2 = getStreamSettingsForPreset;
+          const maxSettingsForPreset1 = obj2.getMaxSettingsForPreset(ApplicationStreamPresets.PRESET_MOBILE_PERFORMANCE);
+          const obj3 = getStreamSettingsForPreset;
+          const maxSettingsForPreset2 = obj3.getMaxSettingsForPreset(ApplicationStreamPresets.PRESET_MOBILE_HIGH_QUALITY);
           const obj4 = { value };
-          const obj10 = { variant: "text-md/semibold", color: "text-strong", children: null };
-          const intl5 = tmp2(1115).intl;
-          obj10.children = intl5.string(_modDef2322.nMcXo1);
-          const items = [closure_2_14(Text_Text.Text, obj10), ];
-          const tmp8Result = NativeViewDefault;
-          items[1] = closure_2_14(BaseIconImage.BaseIconImage, { source: _modDef9614, size: "xs" });
-          obj9.children = items;
-          obj8.label = __initData(tmp8Result, obj9);
-          if (null != maxSettingsForPreset2) {
-            const intl6 = tmp2(1115).intl;
-            str = intl6.formatToPlainString(tmp8(2322).q4gYBi, maxSettingsForPreset2);
+          const PRESET_MOBILE_DEFAULT = ApplicationStreamPresets.PRESET_MOBILE_DEFAULT;
+          const obj5 = { icon: authStore2(MobilePhoneIcon.MobilePhoneIcon, {}), label: intl.string(_modDef2327["2qmQ8N"]), subLabel: str2 };
+          intl = intl8.intl;
+          let str = "";
+          str2 = "";
+          if (null != maxSettingsForPreset) {
+            const intl2 = tmp2(1126).intl;
+            str2 = intl2.formatToPlainString(tmp8(2327).ibH7vy, maxSettingsForPreset);
           }
-          obj8.subLabel = str;
-          obj6[ApplicationStreamPresets.PRESET_MOBILE_HIGH_QUALITY] = obj8;
+          const obj6 = { [PRESET_MOBILE_DEFAULT]: obj5 };
+          const PRESET_MOBILE_PERFORMANCE = tmp4.PRESET_MOBILE_PERFORMANCE;
+          const obj7 = { icon: authStore2(SpeedometerIcon.SpeedometerIcon, {}), label: intl3.string(_modDef2327["5eO4/m"]), subLabel: formatToPlainStringResult };
+          intl3 = tmp2(1126).intl;
+          formatToPlainStringResult = str;
+          if (null != maxSettingsForPreset1) {
+            const intl4 = tmp2(1126).intl;
+            formatToPlainStringResult = intl4.formatToPlainString(tmp8(2327).fN0UQY, maxSettingsForPreset1);
+          }
+          obj6[PRESET_MOBILE_PERFORMANCE] = obj7;
+          const PRESET_MOBILE_HIGH_QUALITY = tmp4.PRESET_MOBILE_HIGH_QUALITY;
+          const obj8 = { icon: authStore2(ImageSparkleIcon.ImageSparkleIcon, {}), label: closure_15(tmp8Result, obj9), subLabel: str };
+          obj9 = { style: currentUserActiveStream.highQualityLabel, children: items };
+          const obj10 = { variant: "text-md/semibold", color: "text-strong", children: intl5.string(_modDef2327.nMcXo1) };
+          tmp8Result = NativeViewDefault;
+          const Text = tmp2(4886).Text;
+          intl5 = tmp2(1126).intl;
+          items = [authStore2(Text, obj10), ];
+          const obj11 = { source: AssetRegistryDefault, size: "xs" };
+          const BaseIconImage = tmp2(4579).BaseIconImage;
+          items[1] = authStore2(BaseIconImage, obj11);
+          if (null != maxSettingsForPreset2) {
+            const intl6 = tmp2(1126).intl;
+            str = intl6.formatToPlainString(tmp8(2327).q4gYBi, maxSettingsForPreset2);
+          }
+          const obj12 = {};
+          obj6[PRESET_MOBILE_HIGH_QUALITY] = obj8;
           const merged = Object.assign(obj6[value]);
           const merged1 = Object.assign(obj4);
-          return closure_2_14(TableRadioRow.TableRadioRow, {}, value);
+          return authStore2(TableRadioRow, obj12, value);
         })
     };
-    obj10.children = closure_14(tmp(tmp2[40]).TableRadioGroup, obj11);
-    obj9.children = closure_14(tmp(tmp2[39]).TableRowGroup, obj10);
-    items5[1] = closure_14(tmp7(tmp2[32]), obj9);
+    TableRadioGroup = tmp(tmp2[45]).TableRadioGroup;
+    items5[1] = closure_14(tmp7Result, obj9);
+    let str = "one-step";
     let tmp18Result = "one-step" === goLiveUpsellVariant && sharedValue.get();
+    const tmp19 = closure_15;
     if (tmp18Result) {
-      const obj12 = { style: tmp9.section, children: null };
-      const obj13 = { featureName: null, shouldShow: null };
-      const tmp7Result7 = tmp7(tmp2[32]);
-      obj13.featureName = tmp(tmp2[45]).EntitlementFeatureNames.STREAM_HIGH_QUALITY;
-      obj13.shouldShow = sharedValue;
-      obj12.children = tmp18(tmp7(tmp2[44]), obj13);
+      let obj12 = { style: tmp9.section, children: closure_14(tmp7Result8, obj13) };
+      obj13 = { featureName: tmp(tmp2[47]).EntitlementFeatureNames.STREAM_HIGH_QUALITY, shouldShow: sharedValue };
+      const tmp7Result7 = tmp7(tmp2[34]);
+      tmp7Result8 = tmp7(tmp2[46]);
       tmp18Result = tmp18(tmp7Result7, obj12);
-      const tmp7Result8 = tmp7(tmp2[44]);
     }
     items5[2] = tmp18Result;
+    let str2 = "two-step";
     let tmp18Result2 = "two-step" === goLiveUpsellVariant && sharedValue.get();
     if (tmp18Result2) {
-      const obj14 = { style: tmp9.section, children: null };
-      const obj15 = { text: null, onPress: null };
-      const tmp7Result9 = tmp7(tmp2[32]);
-      let intl3 = tmp(tmp2[28]).intl;
-      obj15.text = intl3.string(tmp7(tmp2[29]).u72Prd);
-      obj15.onPress = function onPress() {
-        const obj = PremiumUpsellUtilsDefault;
-        const result = obj.handleShowUpsellAlert({ initialUpsellKey: ConstantsIOS.UpsellTypes.STREAM_HIGH_QUALITY, analyticsLocations });
+      const obj14 = { style: tmp9.section, children: closure_14(tmp7Result10, obj15) };
+      obj15 = {
+        text: intl3.string(tmp7(tmp2[31]).u72Prd),
+        onPress() {
+              const obj = PremiumUpsellUtilsDefault;
+              const obj2 = { initialUpsellKey: ConstantsIOS.UpsellTypes.STREAM_HIGH_QUALITY, analyticsLocations };
+              const result = obj.handleShowUpsellAlert(obj2);
+            }
       };
-      obj14.children = tmp18(tmp7(tmp2[46]), obj15);
+      const tmp7Result9 = tmp7(tmp2[34]);
+      tmp7Result10 = tmp7(tmp2[48]);
+      intl3 = tmp(tmp2[30]).intl;
       tmp18Result2 = tmp18(tmp7Result9, obj14);
-      const tmp7Result10 = tmp7(tmp2[46]);
     }
     items5[3] = tmp18Result2;
-    const obj16 = { style: tmp9.section, children: null };
-    const tmp7Result = tmp7(tmp2[32]);
-    const obj17 = { title: null, hasIcons: false, children: null };
-    let intl4 = tmp(tmp2[28]).intl;
-    obj17.title = intl4.string(tmp7(tmp2[29])["j+eAMQ"]);
-    const obj18 = { label: null, value: null, onValueChange: null };
-    let intl5 = tmp(tmp2[28]).intl;
-    obj18.label = intl5.string(tmp7(tmp2[29]).uwMBDo);
-    obj18.value = first1;
-    obj18.onValueChange = function onValueChange(arg0) {
-      currentUser(arg0);
-      closure_11(first, arg0);
+    const obj16 = { style: tmp9.section, children: closure_14(TableRowGroup2, obj17) };
+    obj17 = { title: intl4.string(tmp7(tmp2[31])["j+eAMQ"]), hasIcons: false, children: closure_14(TableSwitchRow, obj18) };
+    const tmp7Result11 = tmp7(tmp2[34]);
+    TableRowGroup2 = tmp(tmp2[44]).TableRowGroup;
+    intl4 = tmp(tmp2[30]).intl;
+    obj18 = {
+      label: intl5.string(tmp7(tmp2[31]).uwMBDo),
+      value: first1,
+      onValueChange(arg0) {
+          currentUser(arg0);
+          closure_11(first, arg0);
+        }
     };
-    obj17.children = closure_14(tmp(tmp2[47]).TableSwitchRow, obj18);
-    obj16.children = closure_14(tmp(tmp2[39]).TableRowGroup, obj17);
-    items5[4] = closure_14(tmp7(tmp2[32]), obj16);
-    const obj19 = { style: tmp9.section, children: null };
-    const tmp7Result11 = tmp7(tmp2[32]);
+    TableSwitchRow = tmp(tmp2[49]).TableSwitchRow;
+    intl5 = tmp(tmp2[30]).intl;
+    items5[4] = closure_14(tmp7Result11, obj16);
+    const obj19 = { style: tmp9.section, children: closure_14(Button, obj21) };
+    const tmp7Result12 = tmp7(tmp2[34]);
+    Button = tmp(tmp2[50]).Button;
     if (isStreaming) {
-      const obj20 = { size: "lg", variant: "destructive", text: null, onPress: null };
-      const intl7 = tmp(tmp2[28]).intl;
-      obj20.text = intl7.string(tmp7(tmp2[29]).OsS9Ll);
-      obj20.onPress = function onPress() {
-        user(callback[49]).stopScreenshare();
-        const obj = user(callback[49]);
-        guildPremiumTier(callback[15]).hideActionSheet(MobileGoLiveActionSheet);
+      const obj20 = {
+        size: "lg",
+        variant: "destructive",
+        text: intl7.string(tmp7(tmp2[31]).OsS9Ll),
+        onPress() {
+              const obj = user(callback[51]);
+              obj.stopScreenshare();
+              const obj2 = guildPremiumTier(callback[15]);
+              obj2.hideActionSheet(MobileGoLiveActionSheet);
+            }
       };
-      let obj21 = obj20;
+      intl7 = tmp(tmp2[30]).intl;
+      obj21 = obj20;
     } else {
-      obj21 = { size: "lg", variant: "primary", text: null, onPress: null };
-      let intl6 = tmp(tmp2[28]).intl;
-      obj21.text = intl6.string(tmp7(tmp2[29])["3wwZ/Q"]);
-      obj21.onPress = function onPress() {
-        guildPremiumTier(callback[15]).hideActionSheet(MobileGoLiveActionSheet);
-        const obj = guildPremiumTier(callback[15]);
-        user(callback[49]).startStream();
+      obj21 = {
+        size: "lg",
+        variant: "primary",
+        text: intl6.string(tmp7(tmp2[31])["3wwZ/Q"]),
+        onPress() {
+              const obj = guildPremiumTier(callback[15]);
+              obj.hideActionSheet(MobileGoLiveActionSheet);
+              const obj2 = user(callback[51]);
+              obj2.startStream();
+            }
       };
+      intl6 = tmp(tmp2[30]).intl;
     }
-    const obj22 = { startExpanded: true, children: null };
-    const obj23 = { children: null };
-    obj19.children = closure_14(tmp(tmp2[48]).Button, obj21);
-    items5[5] = closure_14(tmp7(tmp2[32]), obj19);
-    obj7.children = items5;
-    obj23.children = tmp19(tmp(tmp2[38]).SafeAreaPaddingView, obj7);
-    obj22.children = closure_14(tmp(tmp2[37]).BottomSheetScrollView, obj23);
-    obj6.children = closure_14(tmp(tmp2[36]).BottomSheet, obj22);
-    return closure_14(tmp(tmp2[22]).AnalyticsLocationProvider, obj6);
+    obj22 = { startExpanded: true, children: closure_14(BottomSheetScrollView, obj23) };
+    obj23 = { children: tmp19(SafeAreaPaddingView, obj7) };
+    items5[5] = closure_14(tmp7Result12, obj19);
+    return closure_14(AnalyticsLocationProvider, obj6);
   }
   preset = tmp10.PRESET_MOBILE_DEFAULT;
-});
+}));
+let result = size.fileFinishedImporting("modules/go_live/native/MobileGoLiveActionSheet.tsx");
+
+export default memoResult;
 export const showMobileGoLiveActionSheet = function showMobileGoLiveActionSheet(location_stack) {
-  const obj2 = { impressionName: null, impressionProperties: null };
-  const obj = ActionSheetActionCreatorsDefault;
-  obj2.impressionName = discord_common_AnalyticsUtils.ImpressionNames.MOBILE_GO_LIVE_ACTION_SHEET;
-  obj2.impressionProperties = { location_stack };
-  obj.openLazy(asyncRequireImpl(9604, dependencyMap.paths), MobileGoLiveActionSheet, obj2);
+  let obj2;
+  const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+  const obj = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.MOBILE_GO_LIVE_ACTION_SHEET, impressionProperties: obj2 };
+  ActionSheetActionCreatorsDefault;
+  obj2 = { location_stack };
+  const tmp2 = asyncRequire(9632, dependencyMap.paths);
+  openLazy(tmp2, MobileGoLiveActionSheet, obj);
 };

@@ -1,67 +1,72 @@
 // Module ID: 8137
 // Function ID: 8138
-// Dependencies: [41, 42, 93, 95, 98, 8111, 8134]
+// Dependencies: [8138, 8139, 8242, 8243, 8245, 8246, 8160]
 
 // Module 8137
-import _modDef8134 from "module_8134" /* 8134 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import _mod8138 from "module_8138" /* 8138 */;
+import Circle from "Circle" /* 8139 */;
+import multiplyMatricesDefault from "multiplyMatrices" /* 8160 */;
+import showErrorCSS from "showErrorCSS" /* 8242 */;
+import SvgAst from "SvgAst" /* 8243 */;
+import _mod8245 from "module_8245" /* 8245 */;
+import RNSVGCircle from "RNSVGCircle" /* 8246 */;
 
-const FeComponentTransfer = arg1;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-class FeComponentTransfer {
-  constructor() {
-    self = this;
-    tmp = c2(this, FeComponentTransfer);
-    tmp2 = closure_4;
-    obj = closure_4(FeComponentTransfer);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(FeComponentTransfer, _modDef8134);
-const entry = {
-  key: "render",
-  value: function render() {
-    const result = FeComponentTransfer(8111).warnUnimplementedFilter();
-    return null;
-  }
-};
-const items = [entry];
-const importDefaultResultResult = _createClass(FeComponentTransfer, items);
-importDefaultResultResult.displayName = "FeComponentTransfer";
-const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-importDefaultResultResult.defaultProps = {};
+const CircleDefault = Circle;
 
-export default importDefaultResultResult;
+for (const key10013 in _mod8138) {
+  exports[key10013] = _mod8138[key10013];
+  continue;
+}
+for (const key10017 in Circle) {
+  exports[key10017] = Circle[key10017];
+  continue;
+}
+const RNSVGCircle_export = RNSVGCircle.RNSVGCircle;
+const SvgAst_export = SvgAst.SvgAst;
+
+export const inlineStyles = showErrorCSS.inlineStyles;
+export const loadLocalRawResource = showErrorCSS.loadLocalRawResource;
+export const LocalSvg = showErrorCSS.LocalSvg;
+export const SvgCss = showErrorCSS.SvgCss;
+export const SvgCssUri = showErrorCSS.SvgCssUri;
+export const SvgWithCss = showErrorCSS.SvgWithCss;
+export const SvgWithCssUri = showErrorCSS.SvgWithCssUri;
+export const WithLocalSvg = showErrorCSS.WithLocalSvg;
+export const camelCase = SvgAst.camelCase;
+export const fetchText = _mod8245.fetchText;
+export const parse = SvgAst.parse;
+export { RNSVGCircle_export as RNSVGCircle };
+export const RNSVGClipPath = RNSVGCircle.RNSVGClipPath;
+export const RNSVGDefs = RNSVGCircle.RNSVGDefs;
+export const RNSVGEllipse = RNSVGCircle.RNSVGEllipse;
+export const RNSVGFeColorMatrix = RNSVGCircle.RNSVGFeColorMatrix;
+export const RNSVGFeComposite = RNSVGCircle.RNSVGFeComposite;
+export const RNSVGFeGaussianBlur = RNSVGCircle.RNSVGFeGaussianBlur;
+export const RNSVGFeMerge = RNSVGCircle.RNSVGFeMerge;
+export const RNSVGFeOffset = RNSVGCircle.RNSVGFeOffset;
+export const RNSVGFilter = RNSVGCircle.RNSVGFilter;
+export const RNSVGForeignObject = RNSVGCircle.RNSVGForeignObject;
+export const RNSVGGroup = RNSVGCircle.RNSVGGroup;
+export const RNSVGImage = RNSVGCircle.RNSVGImage;
+export const RNSVGLine = RNSVGCircle.RNSVGLine;
+export const RNSVGLinearGradient = RNSVGCircle.RNSVGLinearGradient;
+export const RNSVGMarker = RNSVGCircle.RNSVGMarker;
+export const RNSVGMask = RNSVGCircle.RNSVGMask;
+export const RNSVGPath = RNSVGCircle.RNSVGPath;
+export const RNSVGPattern = RNSVGCircle.RNSVGPattern;
+export const RNSVGRadialGradient = RNSVGCircle.RNSVGRadialGradient;
+export const RNSVGRect = RNSVGCircle.RNSVGRect;
+export const RNSVGSvgAndroid = RNSVGCircle.RNSVGSvgAndroid;
+export const RNSVGSvgIOS = RNSVGCircle.RNSVGSvgIOS;
+export const RNSVGSymbol = RNSVGCircle.RNSVGSymbol;
+export const RNSVGText = RNSVGCircle.RNSVGText;
+export const RNSVGTextPath = RNSVGCircle.RNSVGTextPath;
+export const RNSVGTSpan = RNSVGCircle.RNSVGTSpan;
+export const RNSVGUse = RNSVGCircle.RNSVGUse;
+export const Shape = multiplyMatricesDefault;
+export { SvgAst_export as SvgAst };
+export const SvgFromUri = SvgAst.SvgFromUri;
+export const SvgFromXml = SvgAst.SvgFromXml;
+export const SvgUri = SvgAst.SvgUri;
+export const SvgXml = SvgAst.SvgXml;
+export default CircleDefault;

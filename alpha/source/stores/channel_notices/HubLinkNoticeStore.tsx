@@ -1,13 +1,15 @@
-// Module ID: 13507
-// Function ID: 13508
+// Module ID: 13567
+// Function ID: 13568
 // Name: HubLinkNoticeStore
-// Dependencies: [6821, 2066, 1074, 504, 573, 2]
+// Dependencies: [6713, 2074, 1085, 504, 584, 2]
 
-// Module 13507 (HubLinkNoticeStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HotspotStore from "hotspot/HotspotStore" /* 6821 */;
-import GuildStore from "GuildStore" /* 2066 */;
+// Module 13567 (HubLinkNoticeStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import HotspotStore from "hotspot/HotspotStore" /* 6713 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import size from "module_2" /* 2 */;
 
 function checkGuildIsHub(id) {
   const guild = GuildStore.getGuild(id);
@@ -26,27 +28,24 @@ function checkGuildIsHub(id) {
 function handleHotspotUpdates() {
   return true;
 }
-const GuildFeatures = fn(1074).GuildFeatures;
+const GuildFeatures = Constants.GuildFeatures;
 let c3 = false;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class HubLinkNoticeStore extends Store {
+  initialize() {
+    this.waitFor(GuildStore, HotspotStore);
+    const items = [HotspotStore];
+    this.syncWith(items, handleHotspotUpdates);
+  }
+  channelNoticePredicate(features) {
+    features = features.features;
+    const hasItem = features.has(GuildFeatures.LINKED_TO_HUB) && !c3;
+    return hasItem;
+  }
 }
 const prototype = HubLinkNoticeStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.waitFor(GuildStore, HotspotStore);
-  const items = [HotspotStore];
-  this.syncWith(items, handleHotspotUpdates);
-};
-prototype["channelNoticePredicate"] = function channelNoticePredicate(features) {
-  features = features.features;
-  let hasItem = features.has(GuildFeatures.LINKED_TO_HUB);
-  if (hasItem) {
-    hasItem = !c3;
-  }
-  return hasItem;
-};
 HubLinkNoticeStore.displayName = "HubLinkNoticeStore";
-const hubLinkNoticeStore = new HubLinkNoticeStore(DispatcherDefault, {
+let obj = {
   CONNECTION_OPEN: function handleConnectionOpen(arg0) {
     const obj = arg0.guilds[Symbol.iterator]();
     while (obj !== undefined) {
@@ -72,8 +71,8 @@ const hubLinkNoticeStore = new HubLinkNoticeStore(DispatcherDefault, {
     }
     return tmp2;
   }
-});
-const size = fn(2);
+};
+const hubLinkNoticeStore = new HubLinkNoticeStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("stores/channel_notices/HubLinkNoticeStore.tsx");
 
 export default hubLinkNoticeStore;

@@ -1,16 +1,16 @@
-// Module ID: 13756
-// Function ID: 13757
+// Module ID: 13822
+// Function ID: 13823
 // Name: UpscaleSmallCapturedFramesExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1440, 2]
 
-// Module 13756 (UpscaleSmallCapturedFramesExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 13822 (UpscaleSmallCapturedFramesExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-06-upscale-small-captured-frames", kind: "user", defaultConfig: { minCaptureWidth: 0, minCaptureHeight: 0 }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+const obj = { name: "2026-06-upscale-small-captured-frames", kind: "user", defaultConfig: { minCaptureWidth: 0, minCaptureHeight: 0 }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { minCaptureWidth: 130, minCaptureHeight: 130 };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/media_engine/UpscaleSmallCapturedFramesExperiment.tsx");
 

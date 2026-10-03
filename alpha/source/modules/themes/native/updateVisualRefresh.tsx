@@ -1,15 +1,16 @@
-// Module ID: 17032
-// Function ID: 17033
-// Name: updateVisualRefresh
-// Dependencies: [14209, 2]
+// Module ID: 17119
+// Function ID: 17120
+// Name: react-native
+// Dependencies: [14277, 2]
 // Exports: updateVisualRefresh
 
-// Module 17032 (updateVisualRefresh)
-import NativeThemeModuleDefault from "NativeThemeModule" /* 14209 */;
+// Module 17119 (react-native)
+import react_nativeDefault from "react-native" /* 14277 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/themes/native/updateVisualRefresh.tsx");
 
 export const updateVisualRefresh = function updateVisualRefresh(arg0) {
-  const result = NativeThemeModuleDefault.setVisualRefreshEnabled(arg0);
+  const obj = react_nativeDefault;
+  const result = obj.setVisualRefreshEnabled(arg0);
 };

@@ -1,50 +1,53 @@
-// Module ID: 5638
-// Function ID: 5639
+// Module ID: 7276
+// Function ID: 7277
 // Name: NativePermissionManager
-// Dependencies: [5054, 1074, 1983, 1364, 5639, 573, 5637, 2]
+// Dependencies: [5099, 1085, 1989, 1369, 6714, 584, 7275, 2]
 
-// Module 5638 (NativePermissionManager)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 5054 */;
-import NativePermissionUtils from "NativePermissionUtils" /* 5637 */;
-import LifecycleManager from "LifecycleManager" /* 1983 */;
+// Module 7276 (NativePermissionManager)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 5099 */;
+import NativePermissionUtils from "NativePermissionUtils" /* 7275 */;
+import LifecycleManager from "LifecycleManager" /* 1989 */;
 import size from "module_2" /* 2 */;
 
 const NativePermissionTypes = NativePermissionConstants.NativePermissionTypes;
 const InputModes = Constants.InputModes;
-class NativePermissionManager extends tmp2 {
+class NativePermissionManager extends LifecycleManager {
+  isEnabled() {
+    const obj = PlatformUtils;
+    let isDesktopResult = obj.isDesktop();
+    if (isDesktopResult) {
+      const tmpResult = PlatformUtils;
+      isDesktopResult = tmpResult.isMac();
+    }
+    if (isDesktopResult) {
+      const ProcessArgs = tmp(6714).ProcessArgs;
+      isDesktopResult = !ProcessArgs.isDiscordTestSet();
+    }
+    return isDesktopResult;
+  }
+  _initialize() {
+    if (this.isEnabled()) {
+      const obj = DispatcherDefault;
+      const subscription = obj.subscribe("AUDIO_SET_MODE", this.handleAudioSetMode);
+    }
+  }
+  _terminate() {
+    if (this.isEnabled()) {
+      const obj = DispatcherDefault;
+      obj.unsubscribe("AUDIO_SET_MODE", this.handleAudioSetMode);
+    }
+  }
+  handleAudioSetMode(mode) {
+    if (mode.mode === InputModes.PUSH_TO_TALK) {
+      const _default = NativePermissionUtils.default;
+      const permission = _default.requestPermission(NativePermissionTypes.INPUT_MONITORING);
+    }
+  }
 }
 const prototype = NativePermissionManager.prototype;
-prototype["isEnabled"] = function isEnabled() {
-  let isDesktopResult = PlatformUtils.isDesktop();
-  if (isDesktopResult) {
-    isDesktopResult = tmp(1364).isMac();
-    const tmpResult = tmp(1364);
-  }
-  if (isDesktopResult) {
-    const ProcessArgs = tmp(5639).ProcessArgs;
-    isDesktopResult = !ProcessArgs.isDiscordTestSet();
-  }
-  return isDesktopResult;
-};
-prototype["_initialize"] = function _initialize() {
-  if (this.isEnabled()) {
-    const subscription = DispatcherDefault.subscribe("AUDIO_SET_MODE", this.handleAudioSetMode);
-  }
-};
-prototype["_terminate"] = function _terminate() {
-  if (this.isEnabled()) {
-    DispatcherDefault.unsubscribe("AUDIO_SET_MODE", this.handleAudioSetMode);
-  }
-};
-prototype["handleAudioSetMode"] = function handleAudioSetMode(mode) {
-  if (mode.mode === InputModes.PUSH_TO_TALK) {
-    const permission = NativePermissionUtils.default.requestPermission(NativePermissionTypes.INPUT_MONITORING);
-    const _default = NativePermissionUtils.default;
-  }
-};
 const nativePermissionManager = new NativePermissionManager();
 const result = size.fileFinishedImporting("modules/native_permissions/NativePermissionManager.tsx");
 

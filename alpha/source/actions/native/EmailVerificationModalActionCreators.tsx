@@ -1,34 +1,39 @@
-// Module ID: 6119
-// Function ID: 6120
+// Module ID: 6007
+// Function ID: 6008
 // Name: EmailVerificationModalActionCreators
-// Dependencies: [1074, 1241, 5048, 6120, 1981, 573, 2]
+// Dependencies: [1085, 1252, 5093, 6008, 1987, 584, 2]
 
-// Module 6119 (EmailVerificationModalActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5048 */;
+// Module 6007 (EmailVerificationModalActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const EMAIL_VERIFICATION_MODAL_KEY = "EMAIL_VERIFICATION_MODAL_KEY";
-const result = size.fileFinishedImporting("actions/native/EmailVerificationModalActionCreators.tsx");
-
-export default {
+let obj = {
   open() {
     let flag = arg0;
     if (arg0 === undefined) {
       flag = false;
     }
     if (flag) {
-      AnalyticsUtilsDefault.track(AnalyticEvents.USER_ACCOUNT_EMAIL_CHANGE_ATTEMPTED);
+      const obj = AnalyticsUtilsDefault;
+      obj.track(AnalyticEvents.USER_ACCOUNT_EMAIL_CHANGE_ATTEMPTED);
     }
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(6120, dependencyMap.paths), { isChangeEmail: flag }, EMAIL_VERIFICATION_MODAL_KEY);
+    const obj2 = ModalActionCreatorsDefault;
+    obj2.pushLazy(asyncRequire(6008, dependencyMap.paths), { isChangeEmail: flag }, EMAIL_VERIFICATION_MODAL_KEY);
   },
   close() {
-    DispatcherDefault.wait(() => {
-      ModalActionCreatorsDefault.popWithKey(EMAIL_VERIFICATION_MODAL_KEY);
+    let obj = DispatcherDefault;
+    obj.wait(() => {
+      const obj = ModalActionCreatorsDefault;
+      obj.popWithKey(EMAIL_VERIFICATION_MODAL_KEY);
     });
   }
 };
+const result = size.fileFinishedImporting("actions/native/EmailVerificationModalActionCreators.tsx");
+
+export default obj;

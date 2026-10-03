@@ -1,13 +1,13 @@
-// Module ID: 7489
-// Function ID: 7490
+// Module ID: 7533
+// Function ID: 7534
 // Name: RedundantLinkUtils
-// Dependencies: [5381, 5380, 4825, 2]
+// Dependencies: [5427, 5426, 4870, 2]
 // Exports: hasOnlySimpleEmbed, isRedundantLink, isSingleLinkContent, readContentLinks
 
-// Module 7489 (RedundantLinkUtils)
-import findCodedLinks from "findCodedLinks" /* 4825 */;
-import EmbedUtils from "EmbedUtils" /* 5380 */;
-import EmbedConstants from "EmbedConstants" /* 5381 */;
+// Module 7533 (RedundantLinkUtils)
+import findCodedLinks from "findCodedLinks" /* 4870 */;
+import EmbedUtils from "EmbedUtils" /* 5426 */;
+import EmbedConstants from "EmbedConstants" /* 5427 */;
 import size from "module_2" /* 2 */;
 
 const SIMPLE_EMBED_TYPES = EmbedConstants.SIMPLE_EMBED_TYPES;
@@ -36,28 +36,30 @@ export const hasOnlySimpleEmbed = function hasOnlySimpleEmbed(embeds) {
     const first = embeds[0];
     let hasItem = SIMPLE_EMBED_TYPES.has(first.type);
     if (hasItem) {
-      hasItem = EmbedUtils.isEmbedInline(first);
+      const obj = EmbedUtils;
+      hasItem = obj.isEmbedInline(first);
     }
     return hasItem;
   }
 };
 export const isSingleLinkContent = function isSingleLinkContent(contentLinks) {
-  let onlyLinks = contentLinks.onlyLinks;
-  if (onlyLinks) {
-    onlyLinks = 1 === tmp;
-  }
+  const onlyLinks = contentLinks.onlyLinks && 1 === tmp;
   return onlyLinks;
 };
 export const isRedundantLink = function isRedundantLink(target, arg1) {
+  let onlyLinkContent;
+  let stripGameServerShareLinks;
   ({ onlyLinkContent, stripGameServerShareLinks } = arg1);
   let tmp = !onlyLinkContent;
   if (onlyLinkContent) {
-    tmp = null == findCodedLinks.parseQuestsEmbedCode(target);
+    const obj = findCodedLinks;
+    tmp = null == obj.parseQuestsEmbedCode(target);
   }
   let tmp5 = !tmp;
   if (tmp) {
     if (stripGameServerShareLinks) {
-      stripGameServerShareLinks = null != findCodedLinks.parseGameServerShareCode(target);
+      const obj2 = findCodedLinks;
+      stripGameServerShareLinks = null != obj2.parseGameServerShareCode(target);
     }
     tmp5 = stripGameServerShareLinks;
   }

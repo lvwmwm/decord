@@ -1,53 +1,154 @@
-// Module ID: 11664
-// Function ID: 11665
+// Module ID: 11587
+// Function ID: 11588
 // Name: CustomTypingIndicatorUtils
-// Dependencies: [5957, 7787, 2044, 5936, 1372, 1074, 1375, 1380, 3716, 4512, 4516, 1393, 1086, 4503, 504, 2]
-// Exports: getCustomTypingIndicatorSuggestionMessage, getCustomTypingIndicatorSuggestionPresets, getCustomTypingIndicatorSuggestionWithNameMessage, getRandomCustomTypingIndicatorAnimation, getRandomCustomTypingIndicatorSuggestion, getSurpriseMeEmojiPool, getViewableCustomTypingIndicatorConfig, pickRandomCustomTypingIndicatorEmojis, useCurrentCustomTypingIndicatorConfig
+// Dependencies: [5638, 7831, 2051, 5616, 1377, 1085, 1380, 1385, 3725, 4523, 4527, 1398, 1097, 4514, 558, 576, 504, 2]
+// Exports: getCustomTypingIndicatorSuggestionMessage, getCustomTypingIndicatorSuggestionPresets, getCustomTypingIndicatorSuggestionWithNameMessage, getRandomCustomTypingIndicatorAnimation, getRandomCustomTypingIndicatorSuggestion, getSurpriseMeEmojiPool, getViewableCustomTypingIndicatorConfig, pickRandomCustomTypingIndicatorEmojis
 
-// Module 11664 (CustomTypingIndicatorUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1393 */;
-import _modDef3716 from "module_3716" /* 3716 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4512 */;
-import EmojiStore from "EmojiStore" /* 5957 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7787 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import SortedGuildStore from "SortedGuildStore" /* 5936 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 11587 (CustomTypingIndicatorUtils)
+import Constants from "Constants" /* 1085 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
+import EmojiConstants from "EmojiConstants" /* 1380 */;
+import user2 from "user" /* 1385 */;
+import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1398 */;
+import _modDef3725 from "module_3725" /* 3725 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4514 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4523 */;
+import EmojiStore from "EmojiStore" /* 5638 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7831 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import SortedGuildStore from "SortedGuildStore" /* 5616 */;
+import UserStore from "UserStore" /* 1377 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, set, usableGuildEmoji;
 
-require = fn;
-const Permissions = fn(1074).Permissions;
-const EmojiIntention = fn(1375).EmojiIntention;
+const Permissions = Constants.Permissions;
+const EmojiIntention = EmojiConstants.EmojiIntention;
 let obj = {};
-obj[fn(1380).TypingSuggestion.UNSPECIFIED] = _modDef3716["6Cdy4a"];
-obj[fn(1380).TypingSuggestion.YAPPING] = _modDef3716.E5VRaj;
-obj[fn(1380).TypingSuggestion.VENTING] = _modDef3716.xmxdPC;
-obj[fn(1380).TypingSuggestion.OVERSHARING] = _modDef3716["qGaH/9"];
-obj[fn(1380).TypingSuggestion.BARKING] = _modDef3716.M282uk;
-obj[fn(1380).TypingSuggestion.BABBLING] = _modDef3716.myNZDT;
-obj[fn(1380).TypingSuggestion.DAYDREAMING] = _modDef3716.F7RLTP;
-obj[fn(1380).TypingSuggestion.MEOWING] = _modDef3716.EfxyQI;
+obj[user2.TypingSuggestion.UNSPECIFIED] = _modDef3725["6Cdy4a"];
+obj[user2.TypingSuggestion.YAPPING] = _modDef3725.E5VRaj;
+obj[user2.TypingSuggestion.VENTING] = _modDef3725.xmxdPC;
+obj[user2.TypingSuggestion.OVERSHARING] = _modDef3725["qGaH/9"];
+obj[user2.TypingSuggestion.BARKING] = _modDef3725.M282uk;
+obj[user2.TypingSuggestion.BABBLING] = _modDef3725.myNZDT;
+obj[user2.TypingSuggestion.DAYDREAMING] = _modDef3725.F7RLTP;
+obj[user2.TypingSuggestion.MEOWING] = _modDef3725.EfxyQI;
 let obj2 = {};
-obj2[fn(1380).TypingSuggestion.UNSPECIFIED] = _modDef3716.kh4K4F;
-obj2[fn(1380).TypingSuggestion.YAPPING] = _modDef3716.m9AeqG;
-obj2[fn(1380).TypingSuggestion.VENTING] = _modDef3716["SZ0/Qu"];
-obj2[fn(1380).TypingSuggestion.OVERSHARING] = _modDef3716.N8cWE8;
-obj2[fn(1380).TypingSuggestion.BARKING] = _modDef3716.L5aWEN;
-obj2[fn(1380).TypingSuggestion.BABBLING] = _modDef3716.AoBaEw;
-obj2[fn(1380).TypingSuggestion.DAYDREAMING] = _modDef3716["3hOLod"];
-obj2[fn(1380).TypingSuggestion.MEOWING] = _modDef3716["0Z9/o9"];
-let items = [fn(1380).TypingSuggestion.UNSPECIFIED, fn(1380).TypingSuggestion.YAPPING, fn(1380).TypingSuggestion.VENTING, fn(1380).TypingSuggestion.OVERSHARING, fn(1380).TypingSuggestion.BARKING, fn(1380).TypingSuggestion.BABBLING, fn(1380).TypingSuggestion.DAYDREAMING, fn(1380).TypingSuggestion.MEOWING];
-let items1 = [fn(1380).TypingIndicatorAnimation.PULSE, fn(1380).TypingIndicatorAnimation.RING, fn(1380).TypingIndicatorAnimation.WAVE];
-let size = fn(2);
+obj2[user2.TypingSuggestion.UNSPECIFIED] = _modDef3725.kh4K4F;
+obj2[user2.TypingSuggestion.YAPPING] = _modDef3725.m9AeqG;
+obj2[user2.TypingSuggestion.VENTING] = _modDef3725["SZ0/Qu"];
+obj2[user2.TypingSuggestion.OVERSHARING] = _modDef3725.N8cWE8;
+obj2[user2.TypingSuggestion.BARKING] = _modDef3725.L5aWEN;
+obj2[user2.TypingSuggestion.BABBLING] = _modDef3725.AoBaEw;
+obj2[user2.TypingSuggestion.DAYDREAMING] = _modDef3725["3hOLod"];
+obj2[user2.TypingSuggestion.MEOWING] = _modDef3725["0Z9/o9"];
+let items = [user2.TypingSuggestion.UNSPECIFIED, user2.TypingSuggestion.YAPPING, user2.TypingSuggestion.VENTING, user2.TypingSuggestion.OVERSHARING, user2.TypingSuggestion.BARKING, user2.TypingSuggestion.BABBLING, user2.TypingSuggestion.DAYDREAMING, user2.TypingSuggestion.MEOWING];
+let items1 = [user2.TypingIndicatorAnimation.PULSE, user2.TypingIndicatorAnimation.RING, user2.TypingIndicatorAnimation.WAVE];
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp7;
+  let tmp8;
+  _require = arg0;
+  obj = require("react");
+  const cResult = obj.c(4);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    items = [UserProfileSettingsStore, ];
+    items[1] = UserStore;
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      if (closure_0) {
+        let EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2 = obj.getTryItOutChanges().tryItOutCustomTypingIndicatorStyle;
+        if (EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2 == null) {
+          EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2 = CustomTypingIndicatorTypes.EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
+        }
+        return EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2;
+      } else {
+        let typingIndicatorStyle;
+        let EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG = obj.getPendingChanges().pendingCustomTypingIndicatorStyle;
+        if (undefined !== EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG) {
+          if (EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG == null) {
+            EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG = CustomTypingIndicatorTypes.EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
+          }
+          typingIndicatorStyle = EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
+        } else {
+          const currentUser = UserStore.getCurrentUser();
+          typingIndicatorStyle = undefined;
+          if (currentUser != null) {
+            typingIndicatorStyle = currentUser.typingIndicatorStyle;
+          }
+          if (typingIndicatorStyle == null) {
+            typingIndicatorStyle = CustomTypingIndicatorTypes.EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
+          }
+        }
+        return typingIndicatorStyle;
+      }
+    };
+    items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp8 = items1;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp7, tmp8);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  obj = require("get initialized");
+  items = [UserProfileSettingsStore, UserStore];
+  items1 = [arg0];
+  return obj.useStateFromStores(items, () => {
+    if (closure_0) {
+      let EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2 = obj.getTryItOutChanges().tryItOutCustomTypingIndicatorStyle;
+      if (EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2 == null) {
+        EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2 = CustomTypingIndicatorTypes.EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
+      }
+      return EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2;
+    } else {
+      let typingIndicatorStyle;
+      let EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG = obj.getPendingChanges().pendingCustomTypingIndicatorStyle;
+      if (undefined !== EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG) {
+        if (EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG == null) {
+          EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG = CustomTypingIndicatorTypes.EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
+        }
+        typingIndicatorStyle = EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
+      } else {
+        const currentUser = UserStore.getCurrentUser();
+        typingIndicatorStyle = undefined;
+        if (currentUser != null) {
+          typingIndicatorStyle = currentUser.typingIndicatorStyle;
+        }
+        if (typingIndicatorStyle == null) {
+          typingIndicatorStyle = CustomTypingIndicatorTypes.EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
+        }
+      }
+      return typingIndicatorStyle;
+    }
+  }, items1);
+});
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/custom_typing_indicator/CustomTypingIndicatorUtils.tsx");
 
 export const getSurpriseMeEmojiPool = function getSurpriseMeEmojiPool() {
-  const categories = UnicodeEmojisDefault.getCategories();
+  obj = UnicodeEmojisDefault;
+  const categories = obj.getCategories();
   items = [
     ...categories.flatMap((item) => {
-      const byCategory = UnicodeEmojisDefault.getByCategory(item);
+      obj = UnicodeEmojisDefault;
+      const byCategory = obj.getByCategory(item);
       let mapped;
       if (byCategory != null) {
         mapped = byCategory.map((name) => ({ name: name.surrogates }));
@@ -59,21 +160,21 @@ export const getSurpriseMeEmojiPool = function getSurpriseMeEmojiPool() {
     })
   ];
   const flattenedGuildIds = SortedGuildStore.getFlattenedGuildIds();
-  HermesBuiltin.arraySpread(flattenedGuildIds.flatMap((item) => {
+  HermesBuiltin.arraySpread(items, flattenedGuildIds.flatMap((item) => {
     usableGuildEmoji = usableGuildEmoji.getUsableGuildEmoji(item);
     const found = usableGuildEmoji.filter((emoji) => {
-      obj2 = { emoji, channel: null, guildId: "Array", intention: constants.TYPING_INDICATOR, bypassPremiumEmojiEntitlement: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==" };
-      return null == closure_1_1(closure_1_3[10]).getEmojiUnavailableReason(obj2);
+      obj2 = { emoji, channel: null, guildId: "Array", intention: constants.TYPING_INDICATOR, bypassPremiumEmojiEntitlement: null };
+      obj = closure_1_1(closure_1_3[10]);
+      return null == obj.getEmojiUnavailableReason(obj2);
     });
     return found.map((id) => ({ id: id.id, name: id.name, animated: id.animated }));
-  }), tmp);
+  }), tmp2);
   return items;
 };
 export const pickRandomCustomTypingIndicatorEmojis = function pickRandomCustomTypingIndicatorEmojis(current) {
-  let size;
-  closure_0 = current;
+  let closure_0 = current;
   const bound = Math.min(CustomTypingIndicatorTypes.CUSTOM_TYPING_INDICATOR_EMOJI_COUNT, current.length);
-  const set = new Set();
+  set = new Set();
   if (set.size < bound) {
     do {
       let _Math = Math;
@@ -101,7 +202,7 @@ export const getRandomCustomTypingIndicatorSuggestion = function getRandomCustom
   return items[Math.floor(Math, Math.random(Math) * items.length)];
 };
 export const getViewableCustomTypingIndicatorConfig = function getViewableCustomTypingIndicatorConfig(customTypingIndicatorConfig, channel, user, guildEmojis) {
-  closure_0 = guildEmojis;
+  let closure_0 = guildEmojis;
   if (null != channel.getGuildId()) {
     if (0 !== customTypingIndicatorConfig.emojis.length) {
       const emojis = customTypingIndicatorConfig.emojis;
@@ -120,20 +221,23 @@ export const getViewableCustomTypingIndicatorConfig = function getViewableCustom
         if (channel.isThread()) {
           channel = null;
           if (null != channel.parent_id) {
+            const tmp2 = ChannelStore;
             channel = ChannelStore.getChannel(channel.parent_id);
           }
         }
-        obj = BigFlagUtilsAll;
-        const obj3 = { user, context: null };
-        obj3.context = channel;
-        let tmp7 = customTypingIndicatorConfig;
-        if (!obj.has(obj2.computePermissions(obj3), Permissions.USE_EXTERNAL_EMOJIS)) {
-          const obj4 = {};
+        let tmp3 = user;
+        const has = BigFlagUtilsAll.has;
+        BigFlagUtilsAll;
+        obj = { user, context: channel };
+        const computePermissions = PermissionUtilsAll.computePermissions;
+        PermissionUtilsAll;
+        let tmp9 = customTypingIndicatorConfig;
+        if (!has(computePermissions(obj), Permissions.USE_EXTERNAL_EMOJIS)) {
+          obj2 = { emojis: [] };
           const merged = Object.assign(customTypingIndicatorConfig);
-          obj4.emojis = [];
-          tmp7 = obj4;
+          tmp9 = obj2;
         }
-        return tmp7;
+        return tmp9;
       } else {
         return customTypingIndicatorConfig;
       }
@@ -141,35 +245,4 @@ export const getViewableCustomTypingIndicatorConfig = function getViewableCustom
   }
   return customTypingIndicatorConfig;
 };
-export const useCurrentCustomTypingIndicatorConfig = function useCurrentCustomTypingIndicatorConfig(isTryItOut) {
-  _require = isTryItOut;
-  items = [UserProfileSettingsStore, UserStore];
-  items1 = [isTryItOut];
-  return require("initialize").useStateFromStores(items, () => {
-    if (closure_0) {
-      let EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2 = obj.getTryItOutChanges().tryItOutCustomTypingIndicatorStyle;
-      if (EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2 == null) {
-        EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2 = CustomTypingIndicatorTypes.EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
-      }
-      return EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2;
-    } else {
-      let EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG = obj.getPendingChanges().pendingCustomTypingIndicatorStyle;
-      if (undefined !== EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG) {
-        if (EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG == null) {
-          EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG = CustomTypingIndicatorTypes.EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
-        }
-        let typingIndicatorStyle = EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
-      } else {
-        const currentUser = UserStore.getCurrentUser();
-        typingIndicatorStyle = undefined;
-        if (currentUser != null) {
-          typingIndicatorStyle = currentUser.typingIndicatorStyle;
-        }
-        if (typingIndicatorStyle == null) {
-          typingIndicatorStyle = CustomTypingIndicatorTypes.EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
-        }
-      }
-      return typingIndicatorStyle;
-    }
-  }, items1);
-};
+export const useCurrentCustomTypingIndicatorConfig = tmp2;

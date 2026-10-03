@@ -1,22 +1,48 @@
-// Module ID: 9054
-// Function ID: 9055
+// Module ID: 9082
+// Function ID: 9083
 // Name: useCanSpeakInChannel
-// Dependencies: [502, 504, 4992, 2]
-// Exports: default
+// Dependencies: [502, 558, 576, 504, 5037, 2]
 
-// Module 9054 (useCanSpeakInChannel)
-import initialize from "initialize" /* 504 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4992 */;
+// Module 9082 (useCanSpeakInChannel)
+import get_initialized from "get initialized" /* 504 */;
+import react from "react" /* 576 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5037 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const useAudienceRequestToSpeakStateDefault = useAudienceRequestToSpeakState;
 
-require = fn;
-const size = fn(2);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let id;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AuthenticationStore];
+    const fn = function o() {
+      return id.getId();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  const tmp8 = useAudienceRequestToSpeakStateDefault(stateFromStores, arg0);
+  return tmp8 === useAudienceRequestToSpeakState.RequestToSpeakStates.ON_STAGE;
+}) : ((arg0) => {
+  let id;
+  const items = [AuthenticationStore];
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => id.getId());
+  const tmp2 = useAudienceRequestToSpeakStateDefault(stateFromStores, arg0);
+  return tmp2 === useAudienceRequestToSpeakState.RequestToSpeakStates.ON_STAGE;
+});
 const result = size.fileFinishedImporting("modules/stage_channels/useCanSpeakInChannel.tsx");
 
-export default function useCanCurrentUserSpeakInChannel(arg0) {
-  const items = [AuthenticationStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => id.getId());
-  return useAudienceRequestToSpeakStateDefault(stateFromStores, arg0) === useAudienceRequestToSpeakState.RequestToSpeakStates.ON_STAGE;
-};
+export default tmp2;

@@ -1,10 +1,10 @@
-// Module ID: 12703
-// Function ID: 12704
+// Module ID: 12739
+// Function ID: 12740
 // Name: DynamicLinkTemplates
 // Dependencies: [2]
 // Exports: getChannelDynamicLinkTemplate, getDefaultDynamicLinkTemplate, getGuildTemplateDynamicLinkTemplate, getInviteDynamicLinkTemplate
 
-// Module 12703 (DynamicLinkTemplates)
+// Module 12739 (DynamicLinkTemplates)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/dynamic-links/DynamicLinkTemplates.tsx");
@@ -23,5 +23,5 @@ export const getChannelDynamicLinkTemplate = function getChannelDynamicLinkTempl
   if (!arg0) {
     str = "@me";
   }
-  return "" + location.protocol + "//" + window.GLOBAL_ENV.WEBAPP_ENDPOINT + "/channels/" + str;
+  return "" + protocol + "//" + WEBAPP_ENDPOINT + "/channels/" + str;
 };

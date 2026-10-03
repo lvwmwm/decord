@@ -1,64 +1,163 @@
-// Module ID: 12834
-// Function ID: 12835
+// Module ID: 12872
+// Function ID: 12873
 // Name: UserProfileNote
-// Dependencies: [19, 21, 7817, 12835, 6103, 4841, 1115, 4809, 12837, 12841, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 7861, 12873, 4854, 12875, 4886, 1126, 5993, 12879, 2]
 
-// Module 12834 (UserProfileNote)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
-import openEditNoteModalDefault from "openEditNoteModal" /* 12837 */;
-import noop from "module_19" /* 19 */;
+// Module 12872 (UserProfileNote)
+import Fragment from "Fragment" /* 21 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import openEditNoteModalDefault from "openEditNoteModal" /* 12875 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileNote.tsx");
+let userId;
 
-export default function UserProfileNote(userId) {
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+  let trackUserProfileAction;
+  let obj = userId(trackUserProfileAction[3]);
+  const cResult = obj.c(15);
   userId = userId.userId;
   const onBack = userId.onBack;
-  let trackUserProfileAction;
-  trackUserProfileAction = userId(trackUserProfileAction[2]).useUserProfileAnalyticsContext().trackUserProfileAction;
-  const note = onBack(trackUserProfileAction[3])(userId).note;
-  let tmp3 = null != note;
-  if (tmp3) {
-    tmp3 = "" !== note;
+  let obj2 = userId(trackUserProfileAction[4]);
+  trackUserProfileAction = obj2.useUserProfileAnalyticsContext().trackUserProfileAction;
+  const note = onBack(trackUserProfileAction[5])(userId).note;
+  if (cResult[0] === onBack) {
+    if (cResult[1] === trackUserProfileAction) {
+      let tmp5;
+      let tmp7;
+      let tmp11;
+      let tmp13;
+      if (cResult[2] === userId) {
+        tmp5 = cResult[3];
+      }
+      const _Symbol = Symbol;
+      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+        const Text = tmp(tmp2[8]).Text;
+        const intl = tmp(tmp2[9]).intl;
+        const tmp9 = <Text variant="text-sm/semibold" color="text-default">{intl.string(userId(trackUserProfileAction[9]).t["mQKv+v"])}</Text>;
+        cResult[4] = tmp9;
+        tmp7 = tmp9;
+      } else {
+        tmp7 = cResult[4];
+      }
+      let tmp10;
+      if (null != note && "" !== note) {
+        tmp10 = note;
+      }
+      if (cResult[5] !== (null != note && "" !== note)) {
+        let stringResult;
+        const intl2 = tmp(tmp2[9]).intl;
+        const string = intl2.string;
+        const t = tmp(tmp2[9]).t;
+        if (null != note && "" !== note) {
+          stringResult = string(t["gs+qcM"]);
+        } else {
+          stringResult = string(t["1ZZtts"]);
+        }
+        cResult[5] = null != note && "" !== note;
+        cResult[6] = stringResult;
+        tmp11 = stringResult;
+      } else {
+        tmp11 = cResult[6];
+      }
+      if (cResult[7] !== (null != note && "" !== note)) {
+        let tmp14;
+        if (!(null != note && "" !== note)) {
+          const Icon = tmp(tmp2[10]).TableRow.Icon;
+          tmp14 = <Icon IconComponent={userId(tmp2[11]).PaperPlusIcon} />;
+        }
+        cResult[7] = null != note && "" !== note;
+        cResult[8] = tmp14;
+        tmp13 = tmp14;
+      } else {
+        tmp13 = cResult[8];
+      }
+      if (cResult[9] === tmp5) {
+        if (cResult[10] === (null != note && "" !== note)) {
+          if (cResult[11] === tmp10) {
+            if (cResult[12] === tmp11) {
+              let tmp16;
+              if (cResult[13] === tmp13) {
+                tmp16 = cResult[14];
+              }
+              return tmp16;
+            }
+          }
+        }
+      }
+      const tmp18 = jsx(userId(trackUserProfileAction[10]).TableRow, { label: tmp7, subLabel: tmp10, accessibilityHint: tmp11, onPress: tmp5, trailing: tmp13, arrow: null != note && "" !== note, start: true, end: true });
+      cResult[9] = tmp5;
+      cResult[10] = null != note && "" !== note;
+      cResult[11] = tmp10;
+      cResult[12] = tmp11;
+      cResult[13] = tmp13;
+      cResult[14] = tmp18;
+      tmp16 = tmp18;
+    }
   }
-  const obj2 = { label: null, subLabel: null, accessibilityHint: null, onPress: null, trailing: null, arrow: null, start: true, end: true };
-  const obj3 = { variant: "text-sm/semibold", color: "text-default", children: null };
-  const intl = tmp(tmp2[6]).intl;
-  obj3.children = intl.string(userId(trackUserProfileAction[6]).t["mQKv+v"]);
-  obj2.label = jsx(userId(trackUserProfileAction[5]).Text, { variant: "text-sm/semibold", color: "text-default", children: null });
-  let tmp5;
-  if (tmp3) {
-    tmp5 = note;
-  }
-  obj2.subLabel = tmp5;
-  const intl2 = tmp(tmp2[6]).intl;
-  const string = intl2.string;
-  const t = tmp(tmp2[6]).t;
-  if (tmp3) {
-    let stringResult = string(t["gs+qcM"]);
-  } else {
-    stringResult = string(t["1ZZtts"]);
-  }
-  obj2.accessibilityHint = stringResult;
-  obj2.onPress = function onPress() {
-    ActionSheetActionCreatorsDefault.hideActionSheet();
-    openEditNoteModalDefault({
+  const fn = function o() {
+    const obj = ActionSheetActionCreatorsDefault;
+    obj.hideActionSheet();
+    const obj2 = {
       userId,
       onBack,
       onSave() {
         return trackUserProfileAction({ action: "SET_NOTE" });
       }
-    });
+    };
+    openEditNoteModalDefault(obj2);
   };
-  let tmp4Result;
-  if (!tmp3) {
-    const obj4 = { IconComponent: tmp(tmp2[9]).PaperPlusIcon };
-    tmp4Result = tmp4(tmp(tmp2[4]).TableRow.Icon, obj4);
+  cResult[0] = onBack;
+  cResult[1] = trackUserProfileAction;
+  cResult[2] = userId;
+  cResult[3] = fn;
+  tmp5 = fn;
+}) : ((userId) => {
+  let intl;
+  let stringResult;
+  userId = userId.userId;
+  const onBack = userId.onBack;
+  let trackUserProfileAction;
+  let obj = userId(trackUserProfileAction[4]);
+  trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
+  const note = onBack(trackUserProfileAction[5])(userId).note;
+  const TableRow = tmp(tmp2[10]).TableRow;
+  ({ variant: "text-sm/semibold", color: "text-default", children: intl.string(userId(trackUserProfileAction[9]).t["mQKv+v"]) });
+  const Text = tmp(tmp2[8]).Text;
+  intl = tmp(tmp2[9]).intl;
+  let tmp5;
+  if (null != note && "" !== note) {
+    tmp5 = note;
   }
-  obj2.trailing = tmp4Result;
-  obj2.arrow = tmp3;
-  return jsx(userId(trackUserProfileAction[4]).TableRow, { label: null, subLabel: null, accessibilityHint: null, onPress: null, trailing: null, arrow: null, start: true, end: true });
-};
+  const intl2 = tmp(tmp2[9]).intl;
+  const string = intl2.string;
+  const t = tmp(tmp2[9]).t;
+  if (null != note && "" !== note) {
+    stringResult = string(t["gs+qcM"]);
+  } else {
+    stringResult = string(t["1ZZtts"]);
+  }
+  let tmp4Result;
+  if (!(null != note && "" !== note)) {
+    const obj4 = { IconComponent: userId(trackUserProfileAction[11]).PaperPlusIcon };
+    const Icon = tmp(tmp2[10]).TableRow.Icon;
+    tmp4Result = tmp4(Icon, obj4);
+  }
+  return <TableRow label={null} subLabel={tmp5} accessibilityHint={stringResult} onPress={function onPress() {
+    const obj = ActionSheetActionCreatorsDefault;
+    obj.hideActionSheet();
+    const obj2 = {
+      userId,
+      onBack,
+      onSave() {
+        return trackUserProfileAction({ action: "SET_NOTE" });
+      }
+    };
+    openEditNoteModalDefault(obj2);
+  }} trailing={tmp4Result} arrow={null != note && "" !== note} start end />;
+});
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileNote.tsx");
+
+export default tmp3;

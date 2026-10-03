@@ -1,42 +1,45 @@
-// Module ID: 7574
-// Function ID: 7575
+// Module ID: 7618
+// Function ID: 7619
 // Name: AddRecipientSystemMessage
-// Dependencies: [2048, 2044, 1372, 7575, 7577, 1115, 7579, 2]
+// Dependencies: [2055, 2051, 1377, 7619, 7621, 1126, 7623, 2]
 // Exports: createAddRecipientSystemMessage
 
-// Module 7574 (AddRecipientSystemMessage)
-import util from "util" /* 1115 */;
-import ChannelRecord from "ChannelRecord" /* 2048 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7575 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7577 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7579 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 7618 (AddRecipientSystemMessage)
+import intl2 from "intl" /* 1126 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7619 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7621 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import UserStore from "UserStore" /* 1377 */;
 import size from "module_2" /* 2 */;
 
+let tmp9;
+const createCommonMessageDefault = tmp9(7623);
 const THREAD_CHANNEL_TYPES = ChannelRecord.THREAD_CHANNEL_TYPES;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/AddRecipientSystemMessage.tsx");
 
 export const createAddRecipientSystemMessage = function createAddRecipientSystemMessage(message) {
+  let formatToPartsResult;
+  let roleStyle;
   ({ message, roleStyle } = message);
   const first = message.mentions[0];
   const user = UserStore.getUser(first);
   const channel = ChannelStore.getChannel(message.channel_id);
-  let hasItem = null != channel;
-  if (hasItem) {
-    hasItem = THREAD_CHANNEL_TYPES.has(channel.type);
-  }
-  const messageAuthorWithProcessedColor = useAuthorWithProcessedColor.getMessageAuthorWithProcessedColor(message);
-  const userAuthorWithProcessedColor = useAuthorWithProcessedColor.getUserAuthorWithProcessedColor(user, channel);
+  const hasItem = null != channel && THREAD_CHANNEL_TYPES.has(channel.type);
+  const obj = useAuthorWithProcessedColor;
+  const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
+  const obj2 = useAuthorWithProcessedColor;
+  const userAuthorWithProcessedColor = obj2.getUserAuthorWithProcessedColor(user, channel);
   const obj3 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle }), otherUsername: userAuthorWithProcessedColor.nick, otherUsernameOnClick: formatUsernameOnClickDefault({ userId: first, message, author: userAuthorWithProcessedColor, roleStyle }) };
-  const intl = util.intl;
+  const intl = intl2.intl;
   const formatToParts = intl.formatToParts;
-  const t = util.t;
+  const t = intl2.t;
   if (hasItem) {
-    let formatToPartsResult = formatToParts(t.Vej1Nw, obj3);
+    formatToPartsResult = formatToParts(t.Vej1Nw, obj3);
   } else {
     formatToPartsResult = formatToParts(t["7/Xl0S"], obj3);
   }
+  const obj4 = { content: formatToPartsResult };
   const merged = Object.assign(createCommonMessageDefault(message));
-  return { content: formatToPartsResult };
+  return obj4;
 };

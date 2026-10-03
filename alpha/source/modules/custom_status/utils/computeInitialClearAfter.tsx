@@ -1,12 +1,12 @@
-// Module ID: 10779
-// Function ID: 10780
+// Module ID: 10832
+// Function ID: 10833
 // Name: computeInitialClearAfter
-// Dependencies: [10777, 2021, 2]
+// Dependencies: [10830, 2028, 2]
 // Exports: default
 
-// Module 10779 (computeInitialClearAfter)
-import UserSettings from "UserSettings" /* 2021 */;
-import Constants from "Constants" /* 10777 */;
+// Module 10832 (computeInitialClearAfter)
+import UserSettings from "UserSettings" /* 2028 */;
+import Constants from "Constants" /* 10830 */;
 import size from "module_2" /* 2 */;
 
 const ClearAfterValues = Constants.ClearAfterValues;
@@ -28,8 +28,12 @@ export default function computeInitialClearAfter() {
         return ClearAfterValues.DONT_CLEAR;
       } else {
         const _Date2 = Date;
+        const self = this;
+        const self2 = this;
         const date = new Date();
         const _Date3 = Date;
+        const self3 = this;
+        const self4 = this;
         const date1 = new Date(NumberResult);
         const fullYear = date.getFullYear();
         let tmp3 = fullYear === date1.getFullYear();
@@ -38,13 +42,14 @@ export default function computeInitialClearAfter() {
           tmp3 = month === date1.getMonth();
         }
         if (tmp3) {
-          tmp3 = date.getDate() === date1.getDate();
           const date2 = date.getDate();
+          tmp3 = date2 === date1.getDate();
         }
         if (tmp3) {
           const _Number = Number;
           const _Date = Date;
-          closure_0 = Number(NumberResult) - Date.now();
+          const NumberResult1 = Number(NumberResult);
+          let closure_0 = NumberResult1 - Date.now();
           let TODAY = items.find((item) => closure_0 <= item);
           if (TODAY == null) {
             TODAY = ClearAfterValues.TODAY;

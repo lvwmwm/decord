@@ -1,39 +1,39 @@
-// Module ID: 6952
-// Function ID: 6953
+// Module ID: 6850
+// Function ID: 6851
 // Name: VoiceChannelEffectsPersistedStore
-// Dependencies: [6953, 504, 573, 2]
+// Dependencies: [6851, 504, 584, 2]
 
-// Module 6952 (VoiceChannelEffectsPersistedStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import VoiceChannelEffectsConstants from "VoiceChannelEffectsConstants" /* 6953 */;
+// Module 6850 (VoiceChannelEffectsPersistedStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import VoiceChannelEffectsConstants from "VoiceChannelEffectsConstants" /* 6851 */;
 import size from "module_2" /* 2 */;
 
-const constants = VoiceChannelEffectsConstants.VoiceChannelEffectAnimationType;
-const PersistedStore = initializeDefault.PersistedStore;
+VoiceChannelEffectsConstants.VoiceChannelEffectAnimationType;
+const PersistedStore = get_initializedDefault.PersistedStore;
 class VoiceChannelEffectsPersistedStore extends PersistedStore {
+  initialize(animationType) {
+    animationType = undefined;
+    if (animationType != null) {
+      animationType = animationType.animationType;
+    }
+    if (animationType == null) {
+      animationType = constants.PREMIUM;
+    }
+  }
+  getState() {
+    return { animationType };
+  }
 }
 const prototype = VoiceChannelEffectsPersistedStore.prototype;
-prototype["initialize"] = function initialize(animationType) {
-  animationType = undefined;
-  if (animationType != null) {
-    animationType = animationType.animationType;
-  }
-  if (animationType == null) {
-    animationType = constants.PREMIUM;
-  }
-  closure_0 = animationType;
-};
-prototype["getState"] = function getState() {
-  return { animationType };
-};
 VoiceChannelEffectsPersistedStore.displayName = "VoiceChannelEffectsPersistedStore";
 VoiceChannelEffectsPersistedStore.persistKey = "VoiceChannelEffectsPersistedStore";
-const voiceChannelEffectsPersistedStore = new VoiceChannelEffectsPersistedStore(DispatcherDefault, {
+const obj = {
   VOICE_CHANNEL_EFFECT_TOGGLE_ANIMATION_TYPE: function handleToggleAnimationType() {
-    closure_0 = closure_0 === constants.BASIC ? tmp.PREMIUM : tmp.BASIC;
+    animationType = animationType === constants.BASIC ? tmp.PREMIUM : tmp.BASIC;
   }
-});
+};
+const voiceChannelEffectsPersistedStore = new VoiceChannelEffectsPersistedStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/voice_channel_effects/VoiceChannelEffectsPersistedStore.tsx");
 
 export default voiceChannelEffectsPersistedStore;

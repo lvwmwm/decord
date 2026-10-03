@@ -1,28 +1,31 @@
 // Module ID: 12583
 // Function ID: 12584
-// Dependencies: [12539, 12569]
-// Exports: createClientReportEnvelope
+// Dependencies: [12566, 12567]
+// Exports: getMainCarrier, getSentryCarrier
 
 // Module 12583
-import _mod12539 from "module_12539" /* 12539 */;
-import _mod12569 from "module_12569" /* 12569 */;
+import _mod12566 from "module_12566" /* 12566 */;
+import _mod12567 from "module_12567" /* 12567 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
-export const createClientReportEnvelope = function createClientReportEnvelope(discarded_events, dsn, arg2) {
-  let result = arg2;
-  const items = [{ type: "client_report" }, ];
-  if (!arg2) {
-    result = _mod12539.dateTimestampInSeconds();
-  }
-  items[1] = { timestamp: result, discarded_events };
-  if (dsn) {
-    const obj3 = { dsn };
-    let obj4 = obj3;
-  } else {
-    obj4 = {};
-  }
-  const items1 = [items];
-  return _mod12569.createEnvelope(obj4, items1);
+export const getMainCarrier = function getMainCarrier() {
+  const GLOBAL_OBJ = _mod12566.GLOBAL_OBJ;
+  const tmp3 = GLOBAL_OBJ.__SENTRY__ || {};
+  GLOBAL_OBJ.__SENTRY__ = tmp3;
+  tmp3.version = tmp3.version || _mod12567.SDK_VERSION;
+  tmp3.version || _mod12567.SDK_VERSION;
+  const SDK_VERSION = tmp(12567).SDK_VERSION;
+  tmp3[SDK_VERSION] = tmp3[_mod12567.SDK_VERSION] || {};
+  tmp3[_mod12567.SDK_VERSION] || {};
+  return _mod12566.GLOBAL_OBJ;
+};
+export const getSentryCarrier = function getSentryCarrier(__SENTRY__) {
+  const tmp = __SENTRY__.__SENTRY__ || {};
+  __SENTRY__.__SENTRY__ = tmp;
+  const SDK_VERSION = tmp.version || _mod12567.SDK_VERSION;
+  tmp.version = SDK_VERSION;
+  const SDK_VERSION2 = _mod12567.SDK_VERSION;
+  const tmp4 = tmp[_mod12567.SDK_VERSION] || {};
+  tmp[SDK_VERSION2] = tmp4;
+  return tmp4;
 };

@@ -1,18 +1,21 @@
-// Module ID: 11792
-// Function ID: 11793
+// Module ID: 11723
+// Function ID: 11724
 // Name: AppLauncherOnboardingActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [584, 2]
 // Exports: setLastSeenTimeMs, setTriggeredOnboardingContentMetadata
 
-// Module 11792 (AppLauncherOnboardingActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 11723 (AppLauncherOnboardingActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_launcher/native/onboarding/AppLauncherOnboardingActionCreators.tsx");
 
 export const setLastSeenTimeMs = function setLastSeenTimeMs() {
-  DispatcherDefault.dispatch({ type: "APP_LAUNCHER_ONBOARDING_SET_LAST_SEEN_TIME_MS" });
+  const obj = DispatcherDefault;
+  obj.dispatch({ type: "APP_LAUNCHER_ONBOARDING_SET_LAST_SEEN_TIME_MS" });
 };
 export const setTriggeredOnboardingContentMetadata = function setTriggeredOnboardingContentMetadata(triggeredOnboardingContentMetadata) {
-  DispatcherDefault.dispatch({ type: "APP_LAUNCHER_ONBOARDING_SET_TRIGGERED_ONBOARDING_CONTENT_METADATA", triggeredOnboardingContentMetadata });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "APP_LAUNCHER_ONBOARDING_SET_TRIGGERED_ONBOARDING_CONTENT_METADATA", triggeredOnboardingContentMetadata };
+  obj.dispatch(obj2);
 };

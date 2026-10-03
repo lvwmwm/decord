@@ -1,12 +1,14 @@
-// Module ID: 7276
-// Function ID: 7277
+// Module ID: 7174
+// Function ID: 7175
 // Name: ApplicationCodedLink
-// Dependencies: [4830, 1370, 7277, 7278, 2]
+// Dependencies: [4875, 1375, 7175, 7176, 2]
 // Exports: getApplicationCodedLinkData, isApplicationCodedLink, isApplicationCodedLinkMobileSupported
 
-// Module 7276 (ApplicationCodedLink)
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import CodedLink from "CodedLink" /* 4830 */;
+// Module 7174 (ApplicationCodedLink)
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import CodedLink from "CodedLink" /* 4875 */;
+import _slicedToArray from "_slicedToArray" /* 7175 */;
+import activityBookmarkUtils from "activityBookmarkUtils" /* 7176 */;
 import size from "module_2" /* 2 */;
 
 const items = [CodedLink.CodedLinkType.APP_DIRECTORY_PROFILE, CodedLink.CodedLinkType.ACTIVITY_BOOKMARK, CodedLink.CodedLinkType.APP_DIRECTORY_STOREFRONT, CodedLink.CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU, CodedLink.CodedLinkType.APP_OAUTH2_LINK];
@@ -17,18 +19,22 @@ let result = size.fileFinishedImporting("modules/coded_links/ApplicationCodedLin
 
 export const APP_LINK_CODED_TYPES = set;
 export const isApplicationCodedLink = function isApplicationCodedLink(type) {
-  return GlobalUtils.isInSet(type, set);
+  const obj = GlobalUtils;
+  return obj.isInSet(type, set);
 };
 export const APP_LINK_CODED_TYPES_MOBILE_SUPPORT = set1;
 export const isApplicationCodedLinkMobileSupported = function isApplicationCodedLinkMobileSupported(type) {
-  return GlobalUtils.isInSet(type, set1);
+  const obj = GlobalUtils;
+  return obj.isInSet(type, set1);
 };
 export const getApplicationCodedLinkData = function getApplicationCodedLinkData(type, code, url) {
+  let tmpResult2;
   if (CodedLink.CodedLinkType.APP_DIRECTORY_PROFILE !== type) {
-    if (tmp(4830).CodedLinkType.APP_OAUTH2_LINK !== type) {
-      if (tmp(4830).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
-        if (tmp(4830).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU === type) {
-          const result = tmp(7277).parseStorefrontSkuCodedLink(code);
+    if (CodedLink.CodedLinkType.APP_OAUTH2_LINK !== type) {
+      if (CodedLink.CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
+        if (CodedLink.CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU === type) {
+          const tmpResult = _slicedToArray;
+          const result = tmpResult.parseStorefrontSkuCodedLink(code);
           let tmp5 = null;
           if (null != result) {
             const obj2 = { type, applicationId: null, skuId: null };
@@ -36,8 +42,9 @@ export const getApplicationCodedLinkData = function getApplicationCodedLinkData(
             tmp5 = obj2;
           }
           return tmp5;
-        } else if (tmp(4830).CodedLinkType.ACTIVITY_BOOKMARK === type) {
-          const obj = { type, applicationId: code, params: tmp(7278).extractActivityBookmarkParams(url) };
+        } else if (CodedLink.CodedLinkType.ACTIVITY_BOOKMARK === type) {
+          const obj = { type, applicationId: code, params: tmpResult2.extractActivityBookmarkParams(url) };
+          tmpResult2 = activityBookmarkUtils;
           return obj;
         }
       }

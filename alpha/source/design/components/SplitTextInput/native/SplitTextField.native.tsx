@@ -1,43 +1,99 @@
-// Module ID: 6572
-// Function ID: 6573
+// Module ID: 6455
+// Function ID: 6456
 // Name: SplitTextField
-// Dependencies: [19, 17, 21, 6225, 6218, 6219, 6223, 6227, 2]
+// Dependencies: [19, 17, 21, 558, 576, 6105, 6101, 6102, 6103, 6107, 2]
 
-// Module 6572 (SplitTextField)
-import useTextField from "useTextField" /* 6218 */;
-import useInputClearButton from "useInputClearButton" /* 6219 */;
-import useInputAttachments from "useInputAttachments" /* 6223 */;
-import InputFieldContainer from "InputFieldContainer" /* 6225 */;
-import BaseTextField from "BaseTextField" /* 6227 */;
-import noop from "module_19" /* 19 */;
+// Module 6455 (SplitTextField)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import useTextField from "useTextField" /* 6101 */;
+import useInputClearButton from "useInputClearButton" /* 6102 */;
+import useInputAttachments from "useInputAttachments" /* 6103 */;
+import InputFieldContainer from "InputFieldContainer" /* 6105 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Pressable: c2, View: c3 } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("design/components/SplitTextInput/native/SplitTextField.native.tsx");
-
-export const SplitTextField = noop.forwardRef((size, ref) => {
-  const inputStyles = InputFieldContainer.useInputStyles({ size: size.size, round: size.round });
-  const obj2 = { size: size.size, round: size.round };
-  const textField = useTextField.useTextField(size, ref);
-  ({ inputProps, innerRef, state } = textField);
-  const inputClearButtonConfig = useInputClearButton.useInputClearButtonConfig(size, state);
-  let tmp6;
-  if (null != inputClearButtonConfig) {
-    ({ content: obj5.trailing, pressableProps: obj5.trailingPressableProps } = inputClearButtonConfig);
-    tmp6 = { trailing: null, trailingPressableProps: null };
-    const obj6 = { trailing: null, trailingPressableProps: null };
-  }
-  const inputAttachments = useInputAttachments.useInputAttachments(size, tmp6);
-  let tmp8 = null;
-  ({ trailing, inputStyle } = inputAttachments);
-  if (null != size.leadingText) {
-    tmp8 = null;
-    if (size.leadingText.length > 0) {
-      const obj7 = { style: inputStyles.splitBorder, children: null };
-      const obj8 = {
+let c2;
+let c3;
+({ Pressable: c2, View: c3 } = react_native);
+const jsx = Fragment.jsx;
+const forwardRef = react.forwardRef;
+const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((round, arg1) => {
+  let innerRef;
+  let inputProps;
+  let inputStyle;
+  let state;
+  let tmpResult8;
+  let trailing;
+  let obj = react2;
+  const cResult = obj.c(16);
+  if (cResult[0] === round.round) {
+    let tmp4;
+    let tmp9;
+    if (cResult[1] === round.size) {
+      tmp4 = cResult[2];
+    }
+    const tmpResult = InputFieldContainer;
+    const inputStyles = tmpResult.useInputStyles(tmp4);
+    const tmpResult5 = useTextField;
+    const textField = tmpResult5.useTextField(round, arg1);
+    ({ innerRef, inputProps, state } = textField);
+    const tmpResult6 = useInputClearButton;
+    const inputClearButtonConfig = tmpResult6.useInputClearButtonConfig(round, state);
+    if (cResult[3] !== inputClearButtonConfig) {
+      let tmp11;
+      if (null != inputClearButtonConfig) {
+        const obj2 = { trailing: null, trailingPressableProps: null };
+        ({ content: obj6.trailing, pressableProps: obj6.trailingPressableProps } = inputClearButtonConfig);
+        tmp11 = obj2;
+      }
+      cResult[3] = inputClearButtonConfig;
+      cResult[4] = tmp11;
+      tmp9 = tmp11;
+    } else {
+      tmp9 = cResult[4];
+    }
+    const tmpResult7 = useInputAttachments;
+    const inputAttachments = tmpResult7.useInputAttachments(round, tmp9);
+    ({ trailing, inputStyle } = inputAttachments);
+    if (cResult[5] === (null != round.leadingText && round.leadingText.length > 0)) {
+      if (cResult[6] === round.leadingPressableProps) {
+        if (cResult[7] === round.leadingText) {
+          let tmp15;
+          if (cResult[8] === inputStyles) {
+            tmp15 = cResult[9];
+          }
+          if (cResult[10] === inputStyle) {
+            if (cResult[11] === innerRef) {
+              if (cResult[12] === inputProps) {
+                if (cResult[13] === tmp15) {
+                  let tmp22;
+                  if (cResult[14] === trailing) {
+                    tmp22 = cResult[15];
+                  }
+                  return tmp22;
+                }
+              }
+            }
+          }
+          const BaseTextField = tmp(6107).BaseTextField;
+          const merged = Object.assign(inputProps);
+          const tmp27 = <BaseTextField ref={innerRef} leading={tmp15} trailing={trailing} inputStyle={inputStyle} />;
+          cResult[10] = inputStyle;
+          cResult[11] = innerRef;
+          cResult[12] = inputProps;
+          cResult[13] = tmp15;
+          cResult[14] = trailing;
+          cResult[15] = tmp27;
+          tmp22 = tmp27;
+        }
+      }
+    }
+    let tmp16 = null;
+    if (null != round.leadingText && round.leadingText.length > 0) {
+      ({
         style(pressed) {
               let obj;
               if (pressed.pressed) {
@@ -45,27 +101,73 @@ export const SplitTextField = noop.forwardRef((size, ref) => {
               }
               const items = [obj];
               return items;
-            }
-      };
+            },
+        children: tmpResult8.renderInputAttachment(undefined, round.leadingText, inputStyles.text)
+      });
+      const merged1 = Object.assign(round.leadingPressableProps);
+      tmp16 = <_false style={inputStyles.splitBorder}>{null}</_false>;
+      tmpResult8 = useInputAttachments;
+    }
+    cResult[5] = null != round.leadingText && round.leadingText.length > 0;
+    cResult[6] = round.leadingPressableProps;
+    cResult[7] = round.leadingText;
+    cResult[8] = inputStyles;
+    cResult[9] = tmp16;
+    tmp15 = tmp16;
+  }
+  const obj7 = { size: round.size, round: round.round };
+  cResult[0] = round.round;
+  cResult[1] = round.size;
+  cResult[2] = obj7;
+  tmp4 = obj7;
+}) : ((size, arg1) => {
+  let innerRef;
+  let inputProps;
+  let inputStyle;
+  let state;
+  let tmpResult2;
+  let trailing;
+  let obj = InputFieldContainer;
+  const obj2 = { size: size.size, round: size.round };
+  const inputStyles = obj.useInputStyles(obj2);
+  const obj3 = useTextField;
+  const textField = obj3.useTextField(size, arg1);
+  ({ inputProps, innerRef, state } = textField);
+  const obj4 = useInputClearButton;
+  const inputClearButtonConfig = obj4.useInputClearButtonConfig(size, state);
+  let tmp6;
+  if (null != inputClearButtonConfig) {
+    const obj6 = { trailing: null, trailingPressableProps: null };
+    ({ content: obj5.trailing, pressableProps: obj5.trailingPressableProps } = inputClearButtonConfig);
+    tmp6 = obj6;
+  }
+  const tmpResult = useInputAttachments;
+  const inputAttachments = tmpResult.useInputAttachments(size, tmp6);
+  let tmp8 = null;
+  ({ trailing, inputStyle } = inputAttachments);
+  if (null != size.leadingText) {
+    tmp8 = null;
+    if (size.leadingText.length > 0) {
+      ({
+        style(pressed) {
+              let obj;
+              if (pressed.pressed) {
+                obj = { opacity: 0.2 };
+              }
+              const items = [obj];
+              return items;
+            },
+        children: tmpResult2.renderInputAttachment(undefined, size.leadingText, inputStyles.text)
+      });
       const merged = Object.assign(size.leadingPressableProps);
-      obj8.children = tmp(6223).renderInputAttachment(undefined, size.leadingText, inputStyles.text);
-      obj7.children = <React2 style={function style(pressed) {
-        let obj;
-        if (pressed.pressed) {
-          obj = { opacity: 0.2 };
-        }
-        const items = [obj];
-        return items;
-      }} />;
-      tmp8 = <React3 style={inputStyles.splitBorder}>{null}</React3>;
-      const tmpResult2 = tmp(6223);
+      tmp8 = <_false style={inputStyles.splitBorder}>{null}</_false>;
+      tmpResult2 = useInputAttachments;
     }
   }
-  const obj9 = {};
+  const BaseTextField = tmp(6107).BaseTextField;
   const merged1 = Object.assign(inputProps);
-  obj9.ref = innerRef;
-  obj9.leading = tmp8;
-  obj9.trailing = trailing;
-  obj9.inputStyle = inputStyle;
-  return jsx(BaseTextField.BaseTextField, {});
-});
+  return <BaseTextField ref={innerRef} leading={tmp8} trailing={trailing} inputStyle={inputStyle} />;
+}));
+const result = size.fileFinishedImporting("design/components/SplitTextInput/native/SplitTextField.native.tsx");
+
+export const SplitTextField = forwardRefResult;

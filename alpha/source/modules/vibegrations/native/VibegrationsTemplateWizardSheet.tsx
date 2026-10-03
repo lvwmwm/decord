@@ -1,70 +1,120 @@
-// Module ID: 16478
-// Function ID: 16479
+// Module ID: 16556
+// Function ID: 16557
 // Name: VibegrationsTemplateWizardSheet
-// Dependencies: [5, 32, 19, 17, 2066, 4498, 12852, 12851, 21, 4845, 576, 16479, 8928, 5587, 504, 16481, 8687, 5555, 12663, 4809, 16482, 4841, 6075, 6804, 6756, 1115, 3714, 6183, 6186, 6692, 5465, 2]
+// Dependencies: [5, 32, 19, 17, 2074, 4509, 12905, 12904, 21, 4890, 587, 16557, 8956, 5873, 504, 16559, 8700, 6747, 12697, 4854, 4886, 5968, 6701, 6644, 1126, 3723, 6072, 6071, 6580, 5594, 2]
 // Exports: default
 
-// Module 16478 (VibegrationsTemplateWizardSheet)
-import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import TableRadioRow from "TableRadioRow" /* 6186 */;
-import VibegrationsActionCreators from "VibegrationsActionCreators" /* 8687 */;
-import VibegrationsCreateErrors from "VibegrationsCreateErrors" /* 12663 */;
-import VibegrationsTemplateWizard from "VibegrationsTemplateWizard" /* 16481 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import PermissionStore from "PermissionStore" /* 4498 */;
-import VibegrationsChatStore from "VibegrationsChatStore" /* 12852 */;
+// Module 16556 (VibegrationsTemplateWizardSheet)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 587 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import GroupIcon from "GroupIcon" /* 5873 */;
+import TableRadioRow from "TableRadioRow" /* 6071 */;
+import VibegrationsActionCreators from "VibegrationsActionCreators" /* 8700 */;
+import HammerIcon from "HammerIcon" /* 8956 */;
+import VibegrationsCreateErrors from "VibegrationsCreateErrors" /* 12697 */;
+import ChatShieldIcon from "ChatShieldIcon" /* 16557 */;
+import VibegrationsTemplateWizard from "VibegrationsTemplateWizard" /* 16559 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import VibegrationsChatStore from "VibegrationsChatStore" /* 12905 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 12904 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const VibegrationsConnectionStore = fn(12851);
-({ ensureConnection: c10, sendUserMessage: closure_11, stageModelSettings: closure_12 } = VibegrationsConnectionStore);
-const jsxProd = fn(21);
-({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = jsxProd);
-const VibegrationsTemplateWizardSheet = "VibegrationsTemplateWizardSheet";
-const createStyles = fn(4845);
-let obj2 = { content: { gap: nativeDefault.space.PX_16 }, loading: null, pointCard: null, pointIcon: null, point: null, actions: null, action: null };
-let obj3 = { gap: nativeDefault.space.PX_16 };
-obj2.loading = { alignItems: "center", paddingVertical: nativeDefault.space.PX_24 };
-let obj4 = { alignItems: "center", paddingVertical: nativeDefault.space.PX_24 };
-obj2.pointCard = { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_12, padding: nativeDefault.space.PX_12, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
-let obj5 = { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_12, padding: nativeDefault.space.PX_12, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
-obj2.pointIcon = { marginTop: nativeDefault.space.PX_4 / 2 };
-let obj6 = { marginTop: nativeDefault.space.PX_4 / 2 };
-obj2.point = { flex: 1, gap: nativeDefault.space.PX_4 };
-let obj7 = { flex: 1, gap: nativeDefault.space.PX_4 };
-obj2.actions = { flexDirection: "row", gap: nativeDefault.space.PX_8 };
-obj2.action = { flex: 1 };
-let closure_17 = createStyles.createStyles(obj2);
-let obj9 = { shield: fn(16479).ChatShieldIcon, hammer: fn(8928).HammerIcon, group: fn(5587).GroupIcon };
-const size = fn(2);
+let c4, c5, closure_2;
+
+let c10;
+let closure_12;
+let closure_14;
+let closure_15;
+let map1;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+let obj7;
+let unpackModuleId;
+let react = react_mod;
+const View = react_native.View;
+({ ensureConnection: c10, sendUserMessage: unpackModuleId, stageModelSettings: closure_12 } = VibegrationsConnectionStore);
+({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = Fragment);
+const VibegrationsTemplateWizardSheet_str = "VibegrationsTemplateWizardSheet";
+let createStyles = createStyles_mod;
+let obj = { content: obj2, loading: obj3, pointCard: obj4, pointIcon: obj5, point: obj6, actions: obj7, action: { flex: 1 } };
+obj2 = { gap: nativeDefault.space.PX_16 };
+createStyles = createStyles.createStyles;
+obj3 = { alignItems: "center", paddingVertical: nativeDefault.space.PX_24 };
+obj4 = { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_12, padding: nativeDefault.space.PX_12, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
+obj5 = { marginTop: nativeDefault.space.PX_4 / 2 };
+obj6 = { flex: 1, gap: nativeDefault.space.PX_4 };
+obj7 = { flexDirection: "row", gap: nativeDefault.space.PX_8 };
+let closure_17 = createStyles(obj);
+let obj8 = { shield: ChatShieldIcon.ChatShieldIcon, hammer: HammerIcon.HammerIcon, group: GroupIcon.GroupIcon };
 let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsTemplateWizardSheet.tsx");
 
 export default function VibegrationsTemplateWizardSheet(template) {
+  let Button;
+  let Button2;
+  let _undefined2;
+  let c16;
+  let c7;
+  let closure_5;
+  let guildsArray;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let items10;
+  let items11;
+  let items7;
+  let items8;
+  let items9;
+  let name;
+  let obj22;
+  let obj25;
+  let onCreated;
+  let tmp16;
+  let tmp32;
+  let tmp36Result3;
+  let tmp5;
+  let tmp51;
   template = template.template;
   const guildId = template.guildId;
-  ({ modelSettings: dependencyMap, nativeAppChannels: asyncGeneratorStep, onCreated } = template);
+  ({ modelSettings: dependencyMap, nativeAppChannels: _asyncToGenerator, onCreated } = template);
   c7 = undefined;
   let first;
   c16 = undefined;
   let ref;
   let num;
-  closure_24 = undefined;
+  let closure_24;
   let tmp = ref();
-  noop = tmp;
-  let items = [c7, first];
-  const stateFromStores = template(504).useStateFromStores(items, () => template(16481).vibegrationsTemplateWizardGuilds(_undefined.getGuildsArray(), "VibegrationsTemplateWizardSheet"));
+  react = tmp;
+  let tmp2 = template;
+  let tmp3 = dependencyMap;
   let obj = template(504);
-  [tmp5, c7] = onCreated(noop.useState(0), 2);
-  const tmp6 = onCreated(noop.useState(() => {
+  let items = [c7, first];
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    const obj = template(dependencyMap[15]);
+    return obj.vibegrationsTemplateWizardGuilds(guildsArray.getGuildsArray(), "VibegrationsTemplateWizardSheet");
+  });
+  let obj2 = react;
+  let tmp4 = onCreated(react.useState(0), 2);
+  [tmp5, c7] = tmp4;
+  const tmp6 = onCreated(react.useState(() => {
+    let id;
+    const tmp = stateFromStores;
     if (stateFromStores.some((id) => id.id === guildId)) {
-      let id = guildId;
+      id = guildId;
     } else {
-      first = stateFromStores[0];
+      first = tmp[0];
       id = undefined;
       if (first != null) {
         id = first.id;
@@ -76,46 +126,58 @@ export default function VibegrationsTemplateWizardSheet(template) {
     return id;
   }), 2);
   first = tmp6[0];
-  closure_9 = tmp6[1];
-  const tmp8 = onCreated(noop.useState(null), 2);
-  const first1 = tmp8[0];
-  closure_11 = tmp8[1];
-  let tmp10 = onCreated(noop.useState([]), 2);
-  const first2 = tmp10[0];
-  closure_13 = tmp10[1];
-  const tmp12 = onCreated(noop.useState(false), 2);
-  const first3 = tmp12[0];
-  closure_15 = tmp12[1];
-  const tmp4 = onCreated(noop.useState(0), 2);
-  [tmp15, c16] = onCreated(noop.useState(null), 2);
-  ref = noop.useRef(null);
-  noop.useRef(null);
-  noop.useRef(false);
-  const effect = noop.useEffect(() => {
+  let closure_9 = tmp6[1];
+  const first1 = onCreated(react.useState(() => {
+    const obj = VibegrationsTemplateWizard;
+    return obj.vibegrationsWizardNeedsServerStep(guildId, stateFromStores);
+  }), 1)[0];
+  let tmp9 = onCreated(react.useState(null), 2);
+  const first2 = tmp9[0];
+  let closure_11 = tmp9[1];
+  const tmp11 = onCreated(react.useState([]), 2);
+  const first3 = tmp11[0];
+  let closure_13 = tmp11[1];
+  const tmp13 = onCreated(react.useState(false), 2);
+  const first4 = tmp13[0];
+  let closure_15 = tmp13[1];
+  [tmp16, c16] = onCreated(react.useState(null), 2);
+  const tmp15 = onCreated(react.useState(null), 2);
+  ref = react.useRef(null);
+  const ref2 = react.useRef(null);
+  const ref3 = react.useRef(false);
+  const effect = react.useEffect(() => {
+    let obj2;
+    let tmp;
     if (null != first) {
-      c0 = false;
-      let obj2 = { guild_id: tmp, install_scope: "guild", flags: null };
-      let obj = template(8687);
-      obj2.flags = template(5555).vibegrationsCreateFlags(closure_3);
-      const project = obj.createProject(obj2);
-      const obj3 = template(5555);
-      project.then((current) => {
-        closure_17.current = current;
-        closure_18.current = current;
-        if (c0) {
-          VibegrationsActionCreators.deleteProject(current).catch(() => {
+      let c0 = false;
+      const tmp4 = template(dependencyMap[16]);
+      let obj = { guild_id: tmp, install_scope: "guild", flags: obj2.vibegrationsCreateFlags(closure_3) };
+      const createProject = tmp4.createProject;
+      obj2 = template(dependencyMap[17]);
+      const project = createProject(obj);
+      const nextPromise = project.then((current) => {
+        ref.current = current;
+        ref2.current = current;
+        const tmp = c0;
+        if (tmp) {
+          const obj2 = VibegrationsActionCreators;
+          const deleteProjectResult = obj2.deleteProject(current);
+          deleteProjectResult.catch(() => {
 
           });
-          const deleteProjectResult = VibegrationsActionCreators.deleteProject(current);
         } else {
-          closure_3_10(current);
-          closure_3_12(current, dependencyMap);
-          closure_3_11(current, VibegrationsTemplateWizard.vibegrationsTemplateStartMessage(template.name));
-          closure_11(current);
+          authStore(current);
+          closure_12(current, dependencyMap);
+          const obj = VibegrationsTemplateWizard;
+          unpackModuleId(current, obj.vibegrationsTemplateStartMessage(template.name));
+          unpackModuleId(current);
         }
-      }).catch((error) => {
-        if (!c0) {
-          c16(VibegrationsCreateErrors.getVibegrationsCreateErrorMessage(error));
+      });
+      nextPromise.catch((error) => {
+        const tmp = c0;
+        if (!tmp) {
+          const obj = VibegrationsCreateErrors;
+          c16(obj.getVibegrationsCreateErrorMessage(error));
         }
       });
       return () => {
@@ -123,106 +185,104 @@ export default function VibegrationsTemplateWizardSheet(template) {
       };
     }
   }, []);
-  const tmp14 = onCreated(noop.useState(null), 2);
+  let obj3 = template(504);
   let items1 = [closure_9];
-  const items2 = [first1];
-  const stateFromStores1 = template(504).useStateFromStores(items1, () => {
+  const items2 = [first2];
+  const stateFromStores1 = obj3.useStateFromStores(items1, () => {
     let result = null;
-    if (null != first1) {
-      result = VibegrationsTemplateWizard.latestVibegrationsIntake(VibegrationsChatStore.getMessages(tmp));
+    if (null != first2) {
+      const obj = VibegrationsTemplateWizard;
+      result = obj.latestVibegrationsIntake(VibegrationsChatStore.getMessages(tmp));
     }
     return result;
   }, items2);
-  let obj3 = template(504);
+  let obj4 = template(504);
   const items3 = [closure_9];
-  const items4 = [first1];
-  const tmp18 = template(504).useStateFromStores(items3, () => {
-    let tmp2 = null != first1;
-    if (tmp2) {
-      tmp2 = null != VibegrationsChatStore.getFinishedAt(tmp);
-    }
+  const items4 = [first2];
+  const tmp19 = obj4.useStateFromStores(items3, () => {
+    const tmp2 = null != first2 && null != VibegrationsChatStore.getFinishedAt(tmp);
     return tmp2;
   }, items4) && null == stateFromStores1;
-  closure_20 = tmp18;
-  const items5 = [guildId, onCreated, first1, tmp18];
+  let closure_20 = tmp19;
+  const items5 = [guildId, onCreated, first2, tmp19];
   const effect1 = obj2.useEffect(() => {
-    let tmp = closure_20;
-    if (closure_20) {
-      tmp = null != first1;
-    }
+    const tmp = closure_20 && null != first2;
     if (tmp) {
-      closure_19.current = true;
-      ActionSheetActionCreatorsDefault.hideActionSheet(VibegrationsTemplateWizardSheet);
+      ref3.current = true;
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet(VibegrationsTemplateWizardSheet_str);
       let current = ref2.current;
+      const tmp10 = first2;
+      const tmp9 = onCreated;
       if (current == null) {
         current = guildId;
       }
-      onCreated(first1, current);
+      tmp9(tmp10, current);
     }
   }, items5);
-  let obj4 = template(504);
-  let result = template(16481).vibegrationsWizardIntro(stateFromStores1);
-  const tmp2Result = template(16481);
-  const result1 = template(16481).vibegrationsWizardServerCopy(stateFromStores1);
-  const tmp2Result6 = template(16481);
-  const result2 = template(16481).vibegrationsWizardQuestions(stateFromStores1);
-  const tmp2Result7 = template(16481);
-  const result3 = template(16481).vibegrationsTemplateWizardSteps(result2, onCreated(noop.useState(() => VibegrationsTemplateWizard.vibegrationsWizardNeedsServerStep(guildId, stateFromStores)), 1)[0]);
-  const tmp23 = result3[Math.min(Math, tmp5, result3.length - 1)];
+  const tmp2Result = tmp2(16559);
+  let result = tmp2Result.vibegrationsWizardIntro(stateFromStores1);
+  const tmp2Result6 = tmp2(16559);
+  const result1 = tmp2Result6.vibegrationsWizardServerCopy(stateFromStores1);
+  const tmp2Result7 = tmp2(16559);
+  const result2 = tmp2Result7.vibegrationsWizardQuestions(stateFromStores1);
+  const tmp2Result8 = tmp2(16559);
+  const result3 = tmp2Result8.vibegrationsTemplateWizardSteps(result2, first1);
+  const tmp24 = result3[Math.min(Math, tmp5, result3.length - 1)];
   const length = result3.length;
-  let tmp24;
-  if (typeof tmp23 === "object") {
-    tmp24 = result2[tmp23.index];
+  let tmp25;
+  if (typeof tmp24 === "object") {
+    tmp25 = result2[tmp24.index];
   }
   num = 0;
-  if (typeof tmp23 === "object") {
-    num = tmp23.index;
+  if (typeof tmp24 === "object") {
+    num = tmp24.index;
   }
-  let str = first2[num];
+  let str = first3[num];
   if (str == null) {
     str = "";
   }
   let optional;
-  if (tmp24 != null) {
-    optional = tmp24.optional;
+  if (tmp25 != null) {
+    optional = tmp25.optional;
   }
-  let tmp26 = true === optional;
-  if (tmp26) {
-    tmp26 = "" === str.trim();
-  }
+  const tmp27 = true === optional && "" === str.trim();
   const callback = obj2.useCallback(() => {
-    let current = ref3.current;
+    const current = ref3.current || null == ref.current;
     if (!current) {
-      current = null == ref.current;
-    }
-    if (!current) {
-      VibegrationsActionCreators.deleteProject(ref.current).catch(() => {
+      const obj = VibegrationsActionCreators;
+      const deleteProjectResult = obj.deleteProject(ref.current);
+      deleteProjectResult.catch(() => {
 
       });
-      const deleteProjectResult = VibegrationsActionCreators.deleteProject(ref.current);
     }
   }, []);
   const callback1 = obj2.useCallback(() => {
-    guildId(4809).hideActionSheet(c16);
+    const obj = guildId(dependencyMap[19]);
+    obj.hideActionSheet(c16);
   }, []);
-  const items6 = [first2, onCreated, first, first1, result2, first3, template.id];
-  closure_24 = obj2.useCallback(asyncGeneratorStep(async (arg0, value) => {
+  const items6 = [first3, onCreated, first, first2, result2, first4, template.id];
+  closure_24 = obj2.useCallback(_asyncToGenerator(async function(arg0, value) {
+    let closure_0;
+    let closure_1;
+    let obj7;
+    let tmp;
     if (c5 === 2) {
       c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp6 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
+      let c3;
       try {
         c5 = 2;
-        let tmp7 = c4;
         if (0 === c4) {
           if (arg0 === 1) {
             c5 = 3;
@@ -232,265 +292,280 @@ export default function VibegrationsTemplateWizardSheet(template) {
             const obj5 = { value, done: true };
             return obj5;
           } else {
-            template = tmp7;
-            closure_128_0 = undefined;
-            tmp7 = first3;
-            if (!first3) {
-              tmp7 = first1;
-              if (null != first1) {
-                tmp7 = preview_guild_id;
+            template = undefined;
+            const tmp67 = first4;
+            if (!tmp67) {
+              if (null != first2) {
                 if (null != preview_guild_id) {
-                  if (obj13.isVibegrationsWizardComplete(result2, first2)) {
+                  const obj12 = template(closure_2[15]);
+                  if (obj12.isVibegrationsWizardComplete(result2, first3)) {
                     closure_15(true);
                     _undefined2(null);
                     c3 = 1;
                     if (preview_guild_id !== ref.current) {
-                      obj9 = { guild_id: preview_guild_id, preview_guild_id };
+                      obj8 = { guild_id: preview_guild_id, preview_guild_id };
                       c4 = 2;
                       c5 = 1;
-                      const obj10 = { value: template(tmp67[16]).setGuildHints(first1, obj9), done: false };
-                      return obj10;
+                      const obj9 = { value: obj7.setGuildHints(first2, obj8), done: false };
+                      obj7 = template(closure_2[16]);
+                      return obj9;
                     } else {
-                      const obj11 = { templateId: closure_129_0.id };
-                      closure_1_11(closure_129_10, template(tmp67[15]).formatVibegrationsWizardAnswers(closure_129_21, closure_129_12), undefined, obj11);
-                      const obj4 = template(tmp67[15]);
-                      const result = template(tmp67[20]).markVibegrationsTemplateConjured(closure_129_10);
+                      const obj10 = { templateId: closure_129_0.id };
+                      const obj4 = template(closure_2[15]);
+                      closure_1_11(closure_129_10, obj4.formatVibegrationsWizardAnswers(closure_129_21, closure_129_12), undefined, obj10);
                       closure_129_19.current = true;
-                      const obj6 = template(tmp67[20]);
-                      tmp3(tmp67[19]).hideActionSheet(_undefined2);
+                      const obj6 = tmp(closure_2[19]);
+                      obj6.hideActionSheet(_undefined2);
                       closure_129_4(closure_129_10, closure_129_8);
                       c3 = 0;
-                      const obj7 = tmp3(tmp67[19]);
                     }
                   }
-                  obj13 = template(tmp67[15]);
                 }
               }
             }
           }
-        } else if (1 === tmp7) {
+        } else if (1 === c4) {
           c3 = 0;
-          closure_128_1 = tmp67;
-          closure_129_16(template(tmp67[18]).getVibegrationsCreateErrorMessage(closure_128_1));
-          tmp7 = closure_129_15(false);
-          const obj3 = template(tmp67[18]);
+          tmp = closure_2;
+          const obj3 = template(closure_2[18]);
+          closure_129_16(obj3.getVibegrationsCreateErrorMessage(tmp));
+          closure_129_15(false);
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
         } else if (arg0 === 2) {
           c3 = 0;
           c5 = 3;
-          const obj12 = { value, done: true };
-          return obj12;
+          const obj11 = { value, done: true };
+          return obj11;
         } else {
-          closure_128_0 = value;
-          if (!closure_128_0.ok) {
-            const vibegrationsCreateError = new template(tmp67[18]).VibegrationsCreateError(template(tmp67[18]).classifyCreateFailure(closure_128_0), closure_128_0.status);
+          template = value;
+          if (!template.ok) {
+            const VibegrationsCreateError = template(closure_2[18]).VibegrationsCreateError;
+            const self = this;
+            const self2 = this;
+            const obj = template(closure_2[18]);
+            const vibegrationsCreateError = new VibegrationsCreateError(obj.classifyCreateFailure(template), template.status);
             throw vibegrationsCreateError;
           }
         }
         c5 = 3;
-      } catch (tmp67) {
-        if (tmp4 === c3) {
-          c5 = tmp2;
-          throw tmp67;
+        return { value: "IconComponent", done: "IconComponent" };
+      } catch (tmp60) {
+        closure_2 = tmp60;
+        if (0 === c3) {
+          c5 = 3;
+          throw tmp60;
         } else {
-          c4 = tmp;
+          c4 = 1;
         }
       }
     }
   }), items6);
-  if ("about" === tmp23) {
-    let name = template.name;
-  } else if ("server" === tmp23) {
+  if ("about" === tmp24) {
+    name = template.name;
+  } else if ("server" === tmp24) {
     name = result1.title;
   } else {
     name = undefined;
-    if (tmp24 != null) {
-      name = tmp24.title;
+    if (tmp25 != null) {
+      name = tmp25.title;
     }
     if (name == null) {
       name = template.name;
     }
   }
-  if (null != tmp15) {
-    let obj5 = { variant: "text-sm/normal", color: "text-feedback-critical", children: tmp15 };
-    let tmp35Result2 = closure_13(tmp2(4841).Text, obj5);
-    let tmp31 = closure_13;
+  if (null != tmp16) {
+    let obj5 = { variant: "text-sm/normal", color: "text-feedback-critical", children: tmp16 };
+    tmp36Result3 = closure_13(tmp2(4886).Text, obj5);
+    tmp32 = closure_13;
   } else {
-    tmp31 = closure_13;
-    let obj6 = { style: tmp.loading, children: closure_13(tmp2(6075).ActivityIndicator, {}) };
-    tmp35Result2 = closure_13(stateFromStores, obj6);
+    tmp32 = closure_13;
+    let obj6 = { style: tmp.loading, children: closure_13(tmp2(5968).ActivityIndicator, {}) };
+    tmp36Result3 = closure_13(stateFromStores, obj6);
   }
-  let obj7 = { startExpanded: true, keyboardShouldPersistTaps: "handled", onDismiss: callback, header: tmp31(template(6756).BottomSheetTitleHeader, { title: name }), children: null };
-  const obj8 = { style: tmp.content, children: null };
-  let tmp37 = null;
-  if ("about" === tmp23) {
-    let tmp35Result = tmp35Result2;
+  let obj7 = { startExpanded: true, keyboardShouldPersistTaps: "handled", onDismiss: callback, header: tmp32(tmp2(6644).BottomSheetTitleHeader, { title: name }), children: tmp36(tmp37, obj8) };
+  const ActionSheet = tmp2(6701).ActionSheet;
+  obj8 = { style: tmp.content, children: items8 };
+  let tmp38 = null;
+  if ("about" === tmp24) {
+    let tmp36Result = tmp36Result3;
     if (null != result) {
-      obj9 = { children: null };
+      let obj9 = { children: items7 };
       let obj10 = { variant: "text-md/medium", color: "text-default", children: result.lead };
-      const items7 = [tmp31(tmp2(4841).Text, obj10), ];
+      items7 = [tmp32(tmp2(4886).Text, obj10), ];
       const points = result.points;
       items7[1] = points.map((children, index) => {
-        const obj = { style: closure_5.pointCard, children: null };
-        const items = [map1(obj9[children.icon], { size: "sm", color: nativeDefault.colors.ICON_DEFAULT, style: closure_5.pointIcon }), ];
-        const obj3 = { style: closure_5.point, children: null };
-        const items1 = [map1(Text_Text.Text, { variant: "text-md/normal", color: "text-default", children: children.title }), ];
+        let items;
+        let items1;
+        const obj = { style: closure_5.pointCard, children: items };
+        items = [, ];
+        const obj2 = { size: "sm", color: nativeDefault.colors.ICON_DEFAULT, style: closure_5.pointIcon };
+        items[0] = map1(obj8[children.icon], obj2);
+        const obj3 = { style: closure_5.point, children: items1 };
+        items1 = [, ];
+        const obj4 = { variant: "text-md/normal", color: "text-default", children: children.title };
+        items1[0] = map1(Text_Text.Text, obj4);
         let tmp3Result = null;
+        const tmp3 = map1;
         if (null != children.subtext) {
           tmp3Result = null;
           if ("" !== children.subtext) {
             const obj5 = { variant: "text-sm/normal", color: "text-muted", children: children.subtext };
-            tmp3Result = map1(Text_Text.Text, obj5);
+            tmp3Result = tmp3(Text_Text.Text, obj5);
           }
         }
         items1[1] = tmp3Result;
-        obj3.children = items1;
-        items[1] = closure_2_14(View, obj3);
-        obj.children = items;
-        return closure_2_14(View, obj, index);
+        items[1] = authStore2(View, obj3);
+        return authStore2(View, obj, index);
       });
-      obj9.children = items7;
-      tmp35Result = tmp35(closure_15, obj9);
+      tmp36Result = tmp36(closure_15, obj9);
     }
-    tmp37 = tmp35Result;
+    tmp38 = tmp36Result;
   }
-  const items8 = [tmp37, , , ];
-  let tmp40 = "server" === tmp23;
-  if (!tmp40) {
-    items8[1] = null;
-    let tmp45 = null;
-    if (typeof tmp23 === "object") {
-      if (null != tmp24) {
-        let obj11 = { style: tmp.point, children: null };
-        let obj12 = {
-          placeholder: tmp24.placeholder,
-          autoComplete: "off",
-          autoFocus: true,
-          value: str,
-          onChange(arg0) {
-                  closure_0 = arg0;
-                  closure_13((arg0) => {
-                    const items = [...arg0, closure_0];
-                    return items;
-                  });
-                  _undefined2(null);
-                },
-          disabled: first3
-        };
-        const items9 = [tmp31(tmp2(6692).TextArea, obj12), , ];
-        let tmp31Result = null;
-        if (null != tmp24.hint) {
-          let obj13 = { variant: "text-sm/normal", color: "text-muted", children: tmp24.hint };
-          tmp31Result = tmp31(tmp2(4841).Text, obj13);
-        }
-        items9[1] = tmp31Result;
-        let tmp31Result3 = null;
-        if (null != tmp15) {
-          const obj14 = { variant: "text-xs/normal", color: "text-feedback-critical", children: tmp15 };
-          tmp31Result3 = tmp31(tmp2(4841).Text, obj14);
-        }
-        items9[2] = tmp31Result3;
-        obj11.children = items9;
-        tmp35Result2 = tmp35(tmp36, obj11, tmp24.id);
-      }
-      tmp45 = tmp35Result2;
-    }
-    items8[2] = tmp45;
-    const obj15 = { style: tmp.actions, children: null };
-    const obj16 = { style: tmp.action, children: null };
-    if (0 === tmp5) {
-      const obj17 = { variant: "secondary", text: null, disabled: null, onPress: null };
-      const intl4 = tmp2(1115).intl;
-      obj17.text = intl4.string(tmp2(1115).t["ETE/oC"]);
-      obj17.disabled = first3;
-      obj17.onPress = callback1;
-      let obj18 = obj17;
+  items8 = [tmp38, , , ];
+  let tmp41 = "server" === tmp24;
+  let tmp42 = null;
+  if (tmp41) {
+    let tmp36Result2;
+    if (0 === stateFromStores.length) {
+      let obj11 = { variant: "text-sm/normal", color: "text-muted", children: intl2.string(guildId(3723).ipwoYO) };
+      const Text = tmp2(4886).Text;
+      intl2 = tmp2(1126).intl;
+      tmp36Result2 = tmp32(Text, obj11);
     } else {
-      obj18 = { variant: "secondary", text: null, disabled: null, onPress: null };
-      const intl3 = tmp2(1115).intl;
-      obj18.text = intl3.string(tmp2(1115).t["13/7kX"]);
-      obj18.disabled = first3;
-      obj18.onPress = function onPress() {
-        return _undefined((arg0) => Math.max(0, arg0 - 1));
+      let str4 = first;
+      const TableRadioGroup = tmp2(6072).TableRadioGroup;
+      const tmp52 = closure_15;
+      if (first == null) {
+        str4 = "";
+      }
+      let obj12 = { children: items9 };
+      const obj13 = {
+        hasIcons: false,
+        value: str4,
+        onChange(arg0) {
+              return closure_9(arg0);
+            },
+        accessibilityLabel: intl.string(guildId(3723)["6NyGSZ"]),
+        children: stateFromStores.map((label) => {
+              const obj = { label: label.name, value: label.id, disabled: first4 };
+              return map1(TableRadioRow.TableRadioRow, obj, label.id);
+            })
       };
+      intl = tmp2(1126).intl;
+      items9 = [tmp32(TableRadioGroup, obj13), ];
+      const obj14 = { variant: "text-sm/normal", color: "text-muted", children: result1.hint };
+      items9[1] = tmp32(tmp2(4886).Text, obj14);
+      tmp36Result2 = tmp36(tmp52, obj12);
     }
-    obj16.children = tmp31(tmp2(5465).Button, obj18);
-    const items10 = [tmp31(tmp36, obj16), ];
-    const obj19 = { style: tmp.action, children: null };
-    if (tmp5 === length - 1) {
-      const obj20 = { variant: "primary", text: null, disabled: null, loading: null, onPress: null };
-      const intl5 = tmp2(1115).intl;
-      obj20.text = intl5.string(guildId(3714).KD2m2Y);
-      let tmp50 = null == first1 || null == first;
-      if (!tmp50) {
-        tmp50 = !tmp2(16481).isVibegrationsWizardComplete(result2, first2);
-        const tmp2Result9 = tmp2(16481);
-      }
-      obj20.disabled = tmp50;
-      obj20.loading = first3;
-      obj20.onPress = function onPress() {
-        closure_24().catch(() => {
-
-        });
+    tmp42 = tmp36Result2;
+  }
+  items8[1] = tmp42;
+  let tmp46 = null;
+  if (typeof tmp24 === "object") {
+    if (null != tmp25) {
+      const obj15 = { style: tmp.point, children: items10 };
+      const obj16 = {
+        placeholder: tmp25.placeholder,
+        autoComplete: "off",
+        autoFocus: true,
+        value: str,
+        onChange(arg0) {
+              let closure_0 = arg0;
+              closure_13((arg0) => {
+                const items = [...arg0, closure_0];
+                return items;
+              });
+              _undefined2(null);
+            },
+        disabled: first4
       };
-      let obj21 = obj20;
-    } else {
-      const intl6 = tmp2(1115).intl;
-      const t = tmp2(1115).t;
-      obj21 = { variant: "primary", text: intl6.string(tmp26 ? t["5Wxrcd"] : t.PDTjLN), disabled: null, onPress: null };
-      if (tmp40) {
-        tmp40 = null == first;
+      items10 = [tmp32(tmp2(6580).TextArea, obj16), , ];
+      let tmp32Result3 = null;
+      if (null != tmp25.hint) {
+        const obj17 = { variant: "text-sm/normal", color: "text-muted", children: tmp25.hint };
+        tmp32Result3 = tmp32(tmp2(4886).Text, obj17);
       }
-      if (!tmp40) {
-        let tmp48 = typeof tmp23 === "object";
-        if (typeof tmp23 === "object") {
-          tmp48 = !tmp2(16481).canLeaveVibegrationsWizardQuestion(tmp24, str);
-          const tmp2Result10 = tmp2(16481);
-        }
-        tmp40 = tmp48;
+      items10[1] = tmp32Result3;
+      let tmp32Result4 = null;
+      if (null != tmp16) {
+        const obj18 = { variant: "text-xs/normal", color: "text-feedback-critical", children: tmp16 };
+        tmp32Result4 = tmp32(tmp2(4886).Text, obj18);
       }
-      obj21.disabled = tmp40;
-      obj21.onPress = function onPress() {
-        return _undefined((arg0) => Math.min(length - 1, arg0 + 1));
-      };
+      items10[2] = tmp32Result4;
+      tmp36Result3 = tmp36(tmp37, obj15, tmp25.id);
     }
-    obj19.children = tmp31(tmp2(5465).Button, obj21);
-    items10[1] = tmp31(tmp36, obj19);
-    obj15.children = items10;
-    items8[3] = tmp35(tmp36, obj15);
-    obj8.children = items8;
-    obj7.children = tmp35(tmp36, obj8);
-    return tmp31(tmp2(6804).ActionSheet, obj7);
-  } else if (0 === stateFromStores.length) {
-    const obj22 = { variant: "text-sm/normal", color: "text-muted", children: null };
-    const intl2 = tmp2(1115).intl;
-    obj22.children = intl2.string(guildId(3714).ipwoYO);
-    let tmp31Result4 = tmp31(tmp2(4841).Text, obj22);
+    tmp46 = tmp36Result3;
+  }
+  items8[2] = tmp46;
+  const obj19 = { style: tmp.actions, children: items11 };
+  const obj20 = { style: tmp.action, children: tmp32(Button, obj22) };
+  Button = tmp2(5594).Button;
+  if (0 === tmp5) {
+    const obj21 = { variant: "secondary", text: intl4.string(tmp2(1126).t["ETE/oC"]), disabled: first4, onPress: callback1 };
+    intl4 = tmp2(1126).intl;
+    obj22 = obj21;
   } else {
-    let str4 = first;
-    if (first == null) {
-      str4 = "";
-    }
-    const obj23 = { children: null };
-    const obj24 = {
-      hasIcons: false,
-      value: str4,
-      onChange(arg0) {
-          return closure_9(arg0);
-        },
-      accessibilityLabel: null,
-      children: null
+    obj22 = {
+      variant: "secondary",
+      text: intl3.string(tmp2(1126).t["13/7kX"]),
+      disabled: first4,
+      onPress() {
+          return guildsArray((arg0) => Math.max(0, arg0 - 1));
+        }
     };
-    const intl = tmp2(1115).intl;
-    obj24.accessibilityLabel = intl.string(guildId(3714)["6NyGSZ"]);
-    obj24.children = stateFromStores.map((label) => map1(TableRadioRow.TableRadioRow, { label: label.name, value: label.id, disabled: first3 }, label.id));
-    const items11 = [tmp31(tmp2(6183).TableRadioGroup, obj24), ];
-    const obj25 = { variant: "text-sm/normal", color: "text-muted", children: result1.hint };
-    items11[1] = tmp31(tmp2(4841).Text, obj25);
-    obj23.children = items11;
-    tmp31Result4 = tmp35(closure_15, obj23);
+    intl3 = tmp2(1126).intl;
   }
+  items11 = [tmp32(tmp37, obj20), ];
+  const obj23 = { style: tmp.action, children: tmp32(Button2, obj25) };
+  Button2 = tmp2(5594).Button;
+  if (tmp5 === length - 1) {
+    const obj24 = {
+      variant: "primary",
+      text: intl5.string(guildId(3723).KD2m2Y),
+      disabled: tmp51,
+      loading: first4,
+      onPress() {
+          const promise = closure_24();
+          promise.catch(() => {
+
+          });
+        }
+    };
+    intl5 = tmp2(1126).intl;
+    tmp51 = null == first2 || null == first;
+    if (!tmp51) {
+      const tmp2Result9 = tmp2(16559);
+      tmp51 = !tmp2Result9.isVibegrationsWizardComplete(result2, first3);
+    }
+    obj25 = obj24;
+  } else {
+    const intl6 = tmp2(1126).intl;
+    const string = intl6.string;
+    const t = tmp2(1126).t;
+    obj25 = {
+      variant: "primary",
+      text: string(tmp27 ? t["5Wxrcd"] : t.PDTjLN),
+      disabled: tmp41,
+      onPress() {
+          return guildsArray((arg0) => Math.min(length - 1, arg0 + 1));
+        }
+    };
+    if (tmp41) {
+      tmp41 = null == first;
+    }
+    if (!tmp41) {
+      let tmp49 = typeof tmp24 === "object";
+      if (typeof tmp24 === "object") {
+        const tmp2Result10 = tmp2(16559);
+        tmp49 = !tmp2Result10.canLeaveVibegrationsWizardQuestion(tmp25, str);
+      }
+      tmp41 = tmp49;
+    }
+  }
+  items11[1] = tmp32(stateFromStores, obj23);
+  items8[3] = first4(stateFromStores, obj19);
+  return tmp32(ActionSheet, obj7);
 };
 export const VIBEGRATIONS_TEMPLATE_WIZARD_SHEET_KEY = "VibegrationsTemplateWizardSheet";

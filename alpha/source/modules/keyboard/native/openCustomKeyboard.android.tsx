@@ -1,32 +1,40 @@
-// Module ID: 11722
-// Function ID: 11723
+// Module ID: 11643
+// Function ID: 11644
 // Name: openCustomKeyboard
-// Dependencies: [1483, 6645, 4733, 11681, 2]
+// Dependencies: [1488, 6534, 4748, 11602, 2]
 // Exports: default
 
-// Module 11722 (openCustomKeyboard)
-import KeyboardUIStore from "KeyboardUIStore" /* 1483 */;
-import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 4733 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6645 */;
-import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 11681 */;
+// Module 11643 (openCustomKeyboard)
+import KeyboardUIStore from "KeyboardUIStore" /* 1488 */;
+import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 4748 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6534 */;
+import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 11602 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/keyboard/native/openCustomKeyboard.android.tsx");
 
 export default function openCustomKeyboard(secondaryTextFieldRef) {
+  let keyboardParams;
+  let ref;
+  let ref2;
   ({ channelId: require, chatInputRef: importDefault, chatInputNativeRef: dependencyMap, keyboardParams } = secondaryTextFieldRef);
   secondaryTextFieldRef = secondaryTextFieldRef.secondaryTextFieldRef;
-  KeyboardUIStore.setKeyboardType(keyboardParams);
-  RunAfterInteractionsUtils.runAfterInteractions(() => {
-    const current = ref.current;
+  let obj = KeyboardUIStore;
+  obj.setKeyboardType(keyboardParams);
+  let obj2 = RunAfterInteractionsUtils;
+  obj2.runAfterInteractions(() => {
+    const current = importDefault.current;
     current.blur();
+    const tmp = importDefault;
     if (secondaryTextFieldRef != null) {
       const current2 = secondaryTextFieldRef.current;
       if (current2 != null) {
         current2.blur();
       }
     }
-    PortalKeyboardUIStore.openPortalKeyboard(keyboardParams.type, closure_1_0, ref);
-    ChatInputNativeCommandsDefault.openCustomKeyboard(ref2.current);
+    const obj = PortalKeyboardUIStore;
+    obj.openPortalKeyboard(keyboardParams.type, require, tmp);
+    const obj2 = ChatInputNativeCommandsDefault;
+    obj2.openCustomKeyboard(dependencyMap.current);
   });
 };

@@ -1,11 +1,11 @@
-// Module ID: 8371
-// Function ID: 8372
+// Module ID: 8375
+// Function ID: 8376
 // Name: calculateSteamReviewScoreDescription
-// Dependencies: [2020, 2]
+// Dependencies: [2027, 2]
 // Exports: calculateSteamReviewScoreDescription
 
-// Module 8371 (calculateSteamReviewScoreDescription)
-import GameDetectionTypes from "GameDetectionTypes" /* 2020 */;
+// Module 8375 (calculateSteamReviewScoreDescription)
+import GameDetectionTypes from "GameDetectionTypes" /* 2027 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_detection/calculateSteamReviewScoreDescription.tsx");
@@ -29,10 +29,12 @@ export const calculateSteamReviewScoreDescription = function calculateSteamRevie
   }
   if (null != rating) {
     if (null != ratingCount) {
+      let NO_USER_REVIEWS;
       if (ratingCount >= 10) {
         if (rating >= 80) {
+          let VERY_POSITIVE;
           if (ratingCount < num2) {
-            let VERY_POSITIVE = GameDetectionTypes.SteamReviewScoreDescription.POSITIVE;
+            VERY_POSITIVE = GameDetectionTypes.SteamReviewScoreDescription.POSITIVE;
           } else {
             if (ratingCount >= num4) {
               if (rating >= 95) {
@@ -41,8 +43,9 @@ export const calculateSteamReviewScoreDescription = function calculateSteamRevie
             }
             VERY_POSITIVE = GameDetectionTypes.SteamReviewScoreDescription.VERY_POSITIVE;
           }
+          NO_USER_REVIEWS = VERY_POSITIVE;
         } else if (rating >= 70) {
-          let NO_USER_REVIEWS = GameDetectionTypes.SteamReviewScoreDescription.MOSTLY_POSITIVE;
+          NO_USER_REVIEWS = GameDetectionTypes.SteamReviewScoreDescription.MOSTLY_POSITIVE;
         } else if (rating >= 40) {
           NO_USER_REVIEWS = GameDetectionTypes.SteamReviewScoreDescription.MIXED;
         } else if (rating >= 20) {

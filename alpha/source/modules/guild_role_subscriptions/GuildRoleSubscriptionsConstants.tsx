@@ -1,15 +1,18 @@
-// Module ID: 14962
-// Function ID: 14963
+// Module ID: 15019
+// Function ID: 15020
 // Name: GuildRoleSubscriptionsConstants
-// Dependencies: [1374, 1085, 2]
+// Dependencies: [1379, 1096, 2]
 
-// Module 14962 (GuildRoleSubscriptionsConstants)
-import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
+// Module 15019 (GuildRoleSubscriptionsConstants)
+import Constants from "Constants" /* 1096 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
 import size from "module_2" /* 2 */;
 
 const SubscriptionIntervalTypes = PremiumConstants.SubscriptionIntervalTypes;
-const items = [{ interval: SubscriptionIntervalTypes.DAY, interval_count: 1 }, { interval: SubscriptionIntervalTypes.DAY, interval_count: 7 }];
+const items = [, ];
+const obj = { interval: SubscriptionIntervalTypes.DAY, interval_count: 1 };
+items[0] = obj;
+items[1] = { interval: SubscriptionIntervalTypes.DAY, interval_count: 7 };
 const combined = "https://" + Constants.PRIMARY_DOMAIN + "/creators";
 const frozen = Object.freeze({ MUST_READ_ARTICLES: "https://discord.com/creators/5-must-read-articles-for-beginners", CREATOR_TO_ADMIN_101: "https://discord.com/creators/creator-to-server-admin-101", CREATOR_TO_ADMIN_201: "https://discord.com/creators/creator-to-server-admin-201" });
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsConstants.tsx");

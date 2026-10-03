@@ -1,18 +1,20 @@
-// Module ID: 15852
-// Function ID: 15853
+// Module ID: 15928
+// Function ID: 15929
 // Name: isJankScreenReportingEnabled
-// Dependencies: [1364, 2070, 2]
+// Dependencies: [1369, 559, 2]
 // Exports: isJankScreenReportingEnabled
 
-// Module 15852 (isJankScreenReportingEnabled)
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import libdiscoreExperiments from "libdiscoreExperiments" /* 2070 */;
+// Module 15928 (isJankScreenReportingEnabled)
+import PlatformUtils from "PlatformUtils" /* 1369 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const libdiscoreExperiments = tmp(559);
 const result = size.fileFinishedImporting("modules/jank_stats/native/isJankScreenReportingEnabled.tsx");
 
 export const isJankScreenReportingEnabled = function isJankScreenReportingEnabled() {
-  let isAndroidResult = PlatformUtils.isAndroid();
+  const obj = PlatformUtils;
+  let isAndroidResult = obj.isAndroid();
   if (isAndroidResult) {
     const AndroidJankPerScreenExperiment = libdiscoreExperiments.AndroidJankPerScreenExperiment;
     isAndroidResult = AndroidJankPerScreenExperiment.getCachedEnabled();

@@ -1,12 +1,12 @@
-// Module ID: 6944
-// Function ID: 6945
+// Module ID: 6842
+// Function ID: 6843
 // Name: ErrorHandlingUtils
-// Dependencies: [1074, 1231, 2]
+// Dependencies: [1085, 1242, 2]
 // Exports: captureOrIgnoreApiError
 
-// Module 6944 (ErrorHandlingUtils)
-import Constants from "Constants" /* 1074 */;
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
+// Module 6842 (ErrorHandlingUtils)
+import Constants from "Constants" /* 1085 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import size from "module_2" /* 2 */;
 
 const items = [, , ];
@@ -32,21 +32,12 @@ export const captureOrIgnoreApiError = function captureOrIgnoreApiError(aPIError
       if (!tmp4) {
         let tmp5 = !("status" in aPIError) || typeof aPIError.status !== "number";
         if (!tmp5) {
-          let tmp6 = 0 !== aPIError.status;
-          if (tmp6) {
-            tmp6 = !set.has(aPIError.status);
-          }
-          if (tmp6) {
-            tmp6 = !set1.has(aPIError.status);
-          }
-          tmp5 = tmp6;
+          tmp5 = 0 !== aPIError.status && !set.has(aPIError.status) && !set1.has(aPIError.status);
+          const tmp6 = 0 !== aPIError.status && !set.has(aPIError.status) && !set1.has(aPIError.status);
         }
         let tmp9 = !tmp5;
         if (tmp5) {
-          let tmp10 = !("code" in aPIError) || typeof aPIError.code !== "number";
-          if (!tmp10) {
-            tmp10 = !items.includes(aPIError.code);
-          }
+          const tmp10 = !("code" in aPIError) || typeof aPIError.code !== "number" || !items.includes(aPIError.code);
           let tmp12 = !tmp10;
           if (tmp10) {
             let hasItem = "body" in aPIError && null != aPIError.body && typeof aPIError.body === "object" && "code" in aPIError.body;
@@ -72,6 +63,7 @@ export const captureOrIgnoreApiError = function captureOrIgnoreApiError(aPIError
     tmp = flag;
   }
   if (!tmp) {
-    SentryUtilsDefault.captureException(aPIError);
+    const obj = SentryUtilsDefault;
+    obj.captureException(aPIError);
   }
 };

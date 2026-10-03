@@ -1,9 +1,9 @@
-// Module ID: 5227
-// Function ID: 5228
+// Module ID: 5273
+// Function ID: 5274
 // Name: CheckpointCharacterWearable
 // Dependencies: [2]
 
-// Module 5227 (CheckpointCharacterWearable)
+// Module 5273 (CheckpointCharacterWearable)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/CheckpointCharacterWearable.tsx");

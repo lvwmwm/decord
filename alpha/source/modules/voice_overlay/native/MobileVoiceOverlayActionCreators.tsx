@@ -1,16 +1,19 @@
-// Module ID: 9642
-// Function ID: 9643
+// Module ID: 9671
+// Function ID: 9672
 // Name: MobileVoiceOverlayActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [584, 2]
 
-// Module 9642 (MobileVoiceOverlayActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 9671 (MobileVoiceOverlayActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/voice_overlay/native/MobileVoiceOverlayActionCreators.tsx");
-
-export default {
+let obj = {
   setEnabled(enabled) {
-    DispatcherDefault.dispatch({ type: "MOBILE_VOICE_OVERLAY_STATE_CHANGED", enabled });
+    const obj = DispatcherDefault;
+    const obj2 = { type: "MOBILE_VOICE_OVERLAY_STATE_CHANGED", enabled };
+    obj.dispatch(obj2);
   }
 };
+const result = size.fileFinishedImporting("modules/voice_overlay/native/MobileVoiceOverlayActionCreators.tsx");
+
+export default obj;

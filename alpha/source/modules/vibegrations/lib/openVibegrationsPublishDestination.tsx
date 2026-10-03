@@ -1,23 +1,24 @@
-// Module ID: 16532
-// Function ID: 16533
+// Module ID: 16609
+// Function ID: 16610
 // Name: openVibegrationsPublishDestination
-// Dependencies: [5072, 4496, 1372, 1074, 8691, 4858, 1101, 6947, 8975, 8952, 2]
+// Dependencies: [5118, 4507, 1377, 1085, 8704, 4903, 1112, 6845, 8994, 8986, 2]
 // Exports: openVibegrationsProductionDm, openVibegrationsPublishDestination
 
-// Module 16532 (openVibegrationsPublishDestination)
-import router_utils from "router_utils" /* 1101 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4858 */;
-import transitionToGuild from "transitionToGuild" /* 6947 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 8952 */;
-import canLaunchFrame from "canLaunchFrame" /* 8975 */;
-import ApplicationStore from "ApplicationStore" /* 5072 */;
-import GuildChannelStore from "GuildChannelStore" /* 4496 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 16609 (openVibegrationsPublishDestination)
+import Constants from "Constants" /* 1085 */;
+import router_utils from "router_utils" /* 1112 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4903 */;
+import transitionToGuild from "transitionToGuild" /* 6845 */;
+import FramesConstants from "FramesConstants" /* 8704 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 8986 */;
+import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 8994 */;
+import ApplicationStore from "ApplicationStore" /* 5118 */;
+import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import UserStore from "UserStore" /* 1377 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Routes = fn(1074).Routes;
-const MAIN_SURFACE = fn(8691).MAIN_SURFACE;
-const size = fn(2);
+const Routes = Constants.Routes;
+const MAIN_SURFACE = FramesConstants.MAIN_SURFACE;
 const result = size.fileFinishedImporting("modules/vibegrations/lib/openVibegrationsPublishDestination.tsx");
 
 export const openVibegrationsProductionDm = function openVibegrationsProductionDm(arg0) {
@@ -32,19 +33,26 @@ export const openVibegrationsProductionDm = function openVibegrationsProductionD
   if (recipientIds == null) {
     recipientIds = arg0;
   }
-  return ChannelActionCreatorsDefault.openPrivateChannel({ recipientIds });
+  const obj = ChannelActionCreatorsDefault;
+  return obj.openPrivateChannel({ recipientIds });
 };
 export const openVibegrationsPublishDestination = function openVibegrationsPublishDestination(destination, arg1) {
+  let appChannelId;
+  let applicationId;
+  let guildId;
+  let openAutomodSettings;
   ({ applicationId, guildId, appChannelId, openAutomodSettings } = arg1);
   if ("launch" === destination) {
-    if (obj.canLaunchFrame(ApplicationStore.getApplication(applicationId))) {
+    const obj = canLaunchContextlessFrame;
+    if (obj.canLaunchContextlessFrame(ApplicationStore.getApplication(applicationId))) {
       const obj6 = { applicationId, surface: MAIN_SURFACE };
-      FramesActionCreatorsDefault.launchFrame(obj6).catch(() => {
+      const obj5 = FramesActionCreatorsDefault;
+      const launchFrameResult = obj5.launchFrame(obj6);
+      launchFrameResult.catch(() => {
 
       });
       return Promise.resolve();
     }
-    obj = canLaunchFrame;
   } else if ("profile" === destination) {
     const currentUser = UserStore.getCurrentUser();
     let id;
@@ -58,7 +66,8 @@ export const openVibegrationsPublishDestination = function openVibegrationsPubli
   } else if ("channel" === destination) {
     if (null != guildId) {
       if (null != appChannelId) {
-        router_utils.transitionTo(Routes.CHANNEL(guildId, appChannelId));
+        const obj7 = router_utils;
+        obj7.transitionTo(Routes.CHANNEL(guildId, appChannelId));
         return Promise.resolve();
       }
     }
@@ -71,6 +80,7 @@ export const openVibegrationsPublishDestination = function openVibegrationsPubli
     }
   }
   if ("dm" !== destination) {
+    let resolved;
     if (null != guildId) {
       const defaultChannel = GuildChannelStore.getDefaultChannel(guildId);
       let id1;
@@ -78,23 +88,27 @@ export const openVibegrationsPublishDestination = function openVibegrationsPubli
         id1 = defaultChannel.id;
       }
       if (null == id1) {
-        transitionToGuild.transitionToGuild(guildId);
+        const obj4 = transitionToGuild;
+        obj4.transitionToGuild(guildId);
       } else {
-        router_utils.transitionTo(Routes.CHANNEL(guildId, id1));
+        const obj3 = router_utils;
+        obj3.transitionTo(Routes.CHANNEL(guildId, id1));
       }
-      const resolved = Promise.resolve();
+      resolved = Promise.resolve();
     }
+    return resolved;
   }
   const application = ApplicationStore.getApplication(applicationId);
-  let recipientIds;
+  let id2;
   if (application != null) {
     const bot = application.bot;
     if (bot != null) {
-      recipientIds = bot.id;
+      id2 = bot.id;
     }
   }
-  if (recipientIds == null) {
-    recipientIds = applicationId;
+  if (id2 == null) {
+    id2 = applicationId;
   }
-  return ChannelActionCreatorsDefault.openPrivateChannel({ recipientIds });
+  const obj2 = ChannelActionCreatorsDefault;
+  resolved = obj2.openPrivateChannel({ recipientIds: id2 });
 };

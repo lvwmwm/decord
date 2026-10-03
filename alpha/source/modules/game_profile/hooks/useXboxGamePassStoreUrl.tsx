@@ -1,13 +1,13 @@
-// Module ID: 8332
-// Function ID: 8333
+// Module ID: 8336
+// Function ID: 8337
 // Name: useXboxGamePassStoreUrl
-// Dependencies: [1074, 2011, 8325, 2]
+// Dependencies: [1085, 2018, 8330, 2]
 // Exports: default
 
-// Module 8332 (useXboxGamePassStoreUrl)
-import Constants from "Constants" /* 1074 */;
-import StringUtils from "StringUtils" /* 2011 */;
-import distributorStoreUrls from "distributorStoreUrls" /* 8325 */;
+// Module 8336 (useXboxGamePassStoreUrl)
+import Constants from "Constants" /* 1085 */;
+import StringUtils from "StringUtils" /* 2018 */;
+import distributorStoreUrls from "distributorStoreUrls" /* 8330 */;
 import size from "module_2" /* 2 */;
 
 const Distributors = Constants.Distributors;
@@ -21,7 +21,8 @@ export default function useXboxGamePassStoreUrl(thirdPartySkus) {
     const found = thirdPartySkus.find((distributor) => {
       let tmp = distributor.distributor === constants.XBOX_GAME_PASS;
       if (tmp) {
-        tmp = !StringUtils.isNullOrEmpty(distributor.id);
+        const obj = StringUtils;
+        tmp = !obj.isNullOrEmpty(distributor.id);
       }
       return tmp;
     });
@@ -31,7 +32,8 @@ export default function useXboxGamePassStoreUrl(thirdPartySkus) {
     }
     let xboxGamePassStoreUrl = null;
     if (null != id) {
-      xboxGamePassStoreUrl = distributorStoreUrls.buildXboxGamePassStoreUrl(found.id);
+      let obj = distributorStoreUrls;
+      xboxGamePassStoreUrl = obj.buildXboxGamePassStoreUrl(found.id);
     }
     return xboxGamePassStoreUrl;
   }

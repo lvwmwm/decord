@@ -1,43 +1,167 @@
-// Module ID: 14347
-// Function ID: 14348
+// Module ID: 14401
+// Function ID: 14402
 // Name: DevToolsLazy
-// Dependencies: [19, 17, 7306, 7305, 21, 5461, 14348, 1981, 504, 1364, 15773, 2]
-// Exports: default
+// Dependencies: [19, 17, 7204, 7203, 21, 5781, 14402, 1987, 558, 576, 504, 1369, 15836, 2]
 
-// Module 14347 (DevToolsLazy)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import noop from "module_19" /* 19 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7306 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7305 */;
+// Module 14401 (DevToolsLazy)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import KeyCommands from "KeyCommands" /* 5781 */;
+import react from "react" /* 19 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7204 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7203 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const NativeModules = fn(17).NativeModules;
-const jsx = fn(21).jsx;
-let items = [
-  {
-    input: "o",
-    modifierFlags: fn(5461).KeyModifierFlags.keyModifierControl,
-    eventName: "keyCommandShowDevTools",
-    discoverabilityTitle: "Open DevTools Panel",
-    onKeyCommand() {
-      asyncRequireImpl(14348, dependencyMap.paths).then((navigateToDevTools) => {
-        navigateToDevTools.navigateToDevTools();
-      });
-      return true;
+let NSUserDefaultsBridge;
+
+const NativeModules = react_native.NativeModules;
+const jsx = Fragment.jsx;
+let obj = {
+  input: "o",
+  modifierFlags: KeyCommands.KeyModifierFlags.keyModifierControl,
+  eventName: "keyCommandShowDevTools",
+  discoverabilityTitle: "Open DevTools Panel",
+  onKeyCommand() {
+    const promise = asyncRequire(14402, dependencyMap.paths);
+    promise.then((navigateToDevTools) => {
+      navigateToDevTools.navigateToDevTools();
+    });
+    return true;
+  }
+};
+let items = [obj];
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let isDeveloper;
+  let showDevWidget;
+  let stateFromStores;
+  let tmp12;
+  let tmp14;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  let tmp9;
+  const tmp = stateFromStores;
+  let obj = stateFromStores(576);
+  const cResult = obj.c(10);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    items = [DeveloperExperimentStore];
+    const fn = function v() {
+      return isDeveloper.isDeveloper;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = tmp(504);
+  stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [DevToolsSettingsStore];
+    class D {
+      constructor() {
+        return showDevWidget.showDevWidget;
+      }
+    }
+    cResult[2] = items1;
+    cResult[3] = D;
+    tmp9 = D;
+    tmp8 = items1;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult4 = tmp(504);
+  const stateFromStores1 = tmpResult4.useStateFromStores(tmp8, tmp9);
+  if (cResult[4] !== stateFromStores) {
+    const fn2 = function h() {
+      const obj = PlatformUtils;
+      if (obj.isIOS()) {
+        DeveloperExperimentStore.addChangeListener(() => {
+          NSUserDefaultsBridge = NSUserDefaultsBridge.NSUserDefaultsBridge;
+          if (NSUserDefaultsBridge != null) {
+            const result = NSUserDefaultsBridge.setIsDiscordDeveloper(stateFromStores);
+          }
+        });
+      }
+    };
+    cResult[4] = stateFromStores;
+    class D {
+      constructor() {
+        return showDevWidget.showDevWidget;
+      }
+    }
+    cResult[5] = fn2;
+    tmp12 = fn2;
+  } else {
+    tmp12 = cResult[5];
+  }
+  const effect = react.useEffect(tmp12);
+  if (cResult[6] !== stateFromStores) {
+    const tmp15 = stateFromStores ? items : [];
+    cResult[6] = stateFromStores;
+    class D {
+      constructor() {
+        return showDevWidget.showDevWidget;
+      }
+    }
+    cResult[7] = tmp15;
+    tmp14 = tmp15;
+  } else {
+    tmp14 = cResult[7];
+  }
+  const tmpResult5 = tmp(5781);
+  const keyCommands = tmpResult5.useKeyCommands(tmp14);
+  if (stateFromStores) {
+    if (stateFromStores1) {
+      let tmp19;
+      const _Symbol = Symbol;
+      if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+        cResult[8] = tmp(15836);
+        tmp(15836);
+        class D {
+          constructor() {
+            return showDevWidget.showDevWidget;
+          }
+        }
+      }
+      class D {
+        constructor() {
+          return showDevWidget.showDevWidget;
+        }
+      }
+      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+        const tmp21 = <_default />;
+        class D {
+          constructor() {
+            return showDevWidget.showDevWidget;
+          }
+        }
+        tmp19 = tmp21;
+      } else {
+        tmp19 = cResult[9];
+      }
+      return tmp19;
     }
   }
-];
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/devtools/native/components/DevToolsLazy.tsx");
-
-export default function DevToolsLazy() {
-  items = [DeveloperExperimentStore];
-  stateFromStores = stateFromStores(504).useStateFromStores(items, () => isDeveloper.isDeveloper);
-  const obj = stateFromStores(504);
+  return null;
+}) : (() => {
+  let isDeveloper;
+  let showDevWidget;
+  let stateFromStores;
   const tmp = stateFromStores;
+  let obj = stateFromStores(504);
+  items = [DeveloperExperimentStore];
+  stateFromStores = obj.useStateFromStores(items, () => isDeveloper.isDeveloper);
   const items1 = [DevToolsSettingsStore];
-  const stateFromStores1 = stateFromStores(504).useStateFromStores(items1, () => showDevWidget.showDevWidget);
-  const effect = noop.useEffect(() => {
+  const obj2 = stateFromStores(504);
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => showDevWidget.showDevWidget);
+  const effect = react.useEffect(() => {
+    const obj = PlatformUtils;
     if (obj.isIOS()) {
       DeveloperExperimentStore.addChangeListener(() => {
         NSUserDefaultsBridge = NSUserDefaultsBridge.NSUserDefaultsBridge;
@@ -47,12 +171,15 @@ export default function DevToolsLazy() {
       });
     }
   });
-  const obj2 = stateFromStores(504);
-  const keyCommands = stateFromStores(5461).useKeyCommands(stateFromStores ? items : []);
+  const obj3 = stateFromStores(5781);
+  const keyCommands = obj3.useKeyCommands(stateFromStores ? items : []);
   if (stateFromStores) {
     if (stateFromStores1) {
-      return jsx(tmp(15773).default, {});
+      return jsx(tmp(15836).default, {});
     }
   }
   return null;
-};
+});
+let result = size.fileFinishedImporting("modules/devtools/native/components/DevToolsLazy.tsx");
+
+export default tmp2;

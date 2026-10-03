@@ -1,39 +1,40 @@
-// Module ID: 14773
-// Function ID: 14774
+// Module ID: 14829
+// Function ID: 14830
 // Name: AdsVideoUtils
-// Dependencies: [1364, 2]
+// Dependencies: [1369, 2]
 // Exports: isSourceError
 
-// Module 14773 (AdsVideoUtils)
-import PlatformUtils from "PlatformUtils" /* 1364 */;
+// Module 14829 (AdsVideoUtils)
+import PlatformUtils from "PlatformUtils" /* 1369 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = [-1000, -1003, -1004, -1008];
 const result = size.fileFinishedImporting("modules/quests/native/AdsVideoUtils.tsx");
 
 export const isSourceError = function isSourceError(error) {
+  let code;
+  let errorException;
+  let isIOSResult;
   if (error != null) {
-    const code = error.error.code;
+    code = error.error.code;
   }
   if (error != null) {
-    const errorException = error.error.errorException;
+    errorException = error.error.errorException;
   }
+  const obj = PlatformUtils;
   if (obj.isAndroid()) {
     let hasItem;
     if (errorException != null) {
       hasItem = errorException.includes("Source error");
     }
-    let isIOSResult = hasItem;
+    isIOSResult = hasItem;
   } else {
-    isIOSResult = PlatformUtils.isIOS();
+    const tmpResult = PlatformUtils;
+    isIOSResult = tmpResult.isIOS();
     if (isIOSResult) {
-      let hasItem1 = null != code;
-      if (hasItem1) {
-        hasItem1 = closure_2.includes(code);
-      }
+      const hasItem1 = null != code && closure_2.includes(code);
       isIOSResult = hasItem1;
     }
-    const tmpResult = PlatformUtils;
   }
   return isIOSResult;
 };

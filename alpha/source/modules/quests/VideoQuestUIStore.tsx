@@ -1,29 +1,31 @@
-// Module ID: 7291
-// Function ID: 7292
+// Module ID: 7189
+// Function ID: 7190
 // Name: VideoQuestUIStore
-// Dependencies: [109, 1243, 4735, 7292, 1248, 7293, 2]
+// Dependencies: [109, 1254, 4750, 7190, 1259, 7191, 2]
 
-// Module 7291 (VideoQuestUIStore)
-import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
+// Module 7189 (VideoQuestUIStore)
+import react_native from "react-native" /* 1259 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import module_1254_mod from "module_1254" /* 1254 */;
+import combine_mod from "combine" /* 4750 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+const require = globalThis.__r;
+let _require, closure_0;
+
 function _toPropertyKey(obj) {
   let StringResult = obj;
   if (typeof obj === "object") {
     StringResult = obj;
-    if (obj) {
+    if (StringResult) {
       const _Symbol = Symbol;
       if (undefined !== obj[Symbol.toPrimitive]) {
-        const call = tmp3.call;
-        if (typeof call === "unknown") {
-          let callResult = tmp3("string");
-        } else {
-          callResult = call(obj, "string");
-        }
+        const callResult = obj[Symbol.toPrimitive].call(obj, "string");
         StringResult = callResult;
         if (typeof callResult === "object") {
           const _TypeError = TypeError;
+          const self = this;
+          const self2 = this;
           const typeError = new TypeError("@@toPrimitive must return a primitive value.");
           throw typeError;
         }
@@ -40,19 +42,23 @@ function _toPropertyKey(obj) {
   return text;
 }
 const VideoProgressState = { UNKNOWN: "UNKNOWN", NOT_STARTED: "NOT_STARTED", IN_PROGRESS: "IN_PROGRESS", COMPLETED: "COMPLETED" };
-let identity = fn(1243);
-identity = identity.createWithEqualityFn();
-fn(4735);
-const obj4 = { name: "videoQuestUIState", storage: null, partialize: null, version: 0 };
-const module_4735 = fn(4735);
-obj4.storage = module_4735.createJSONStorage(() => require("LocalStorageWrapper"));
-obj4.partialize = function partialize(volume) {
-  return { volume: volume.volume, muted: volume.muted, videoProgress: volume.videoProgress };
+let module_1254 = module_1254_mod;
+module_1254 = module_1254.createWithEqualityFn();
+let combine = combine_mod;
+let obj2 = {
+  name: "videoQuestUIState",
+  storage: combine.createJSONStorage(() => require("LocalStorageWrapper")),
+  partialize(volume) {
+    return { volume: volume.volume, muted: volume.muted, videoProgress: volume.videoProgress };
+  },
+  version: 0
 };
-const withEqualityFnResult = identity(module_4735.persist((arg0, arg1) => {
+const persist = combine.persist;
+combine = combine_mod;
+const withEqualityFnResult = module_1254(persist((arg0, arg1) => {
   _require = arg0;
-  closure_1 = arg1;
-  return {
+  let closure_1 = arg1;
+  let obj = {
     volume: require("DiscordVideoPlayerTypes").DEFAULT_VIDEO_VOLUME,
     muted: false,
     transcriptEnabled: false,
@@ -60,10 +66,18 @@ const withEqualityFnResult = identity(module_4735.persist((arg0, arg1) => {
     videoProgress: {},
     transcript: null,
     setVolume(volume) {
-      volume(1248).batchUpdates(() => volume({ volume }));
+      let obj = volume(dependencyMap[4]);
+      obj.batchUpdates(() => {
+        const obj = { volume };
+        return volume(obj);
+      });
     },
     setMuted(muted) {
-      muted(1248).batchUpdates(() => muted({ muted }));
+      let obj = muted(dependencyMap[4]);
+      obj.batchUpdates(() => {
+        const obj = { muted };
+        return muted(obj);
+      });
     },
     setVideoProgress(arg0, timestampSec, duration) {
       closure_0 = arg0;
@@ -76,28 +90,39 @@ const withEqualityFnResult = identity(module_4735.persist((arg0, arg1) => {
         num = 0;
       }
       const maxTimestampSec = Math.max(num, timestampSec);
-      closure_0(1248).batchUpdates(() => {
-        const obj = { videoProgress: null };
-        const obj2 = {};
+      let obj = closure_0(dependencyMap[4]);
+      obj.batchUpdates(() => {
+        let obj2;
+        const obj = { videoProgress: obj2 };
+        obj2 = {};
         const merged = Object.assign(timestampSec().videoProgress);
-        obj2[closure_0] = { timestampSec, duration, maxTimestampSec };
-        obj.videoProgress = obj2;
+        const obj3 = { timestampSec, duration, maxTimestampSec };
+        obj2[closure_0] = obj3;
         return closure_0(obj);
       });
     },
     setTranscriptEnabled(transcriptEnabled) {
-      transcriptEnabled(1248).batchUpdates(() => transcriptEnabled({ transcriptEnabled }));
+      let obj = transcriptEnabled(dependencyMap[4]);
+      obj.batchUpdates(() => {
+        const obj = { transcriptEnabled };
+        return transcriptEnabled(obj);
+      });
     },
     setCaptionEnabled(captionEnabled) {
-      captionEnabled(1248).batchUpdates(() => captionEnabled({ captionEnabled }));
+      let obj = captionEnabled(dependencyMap[4]);
+      obj.batchUpdates(() => {
+        const obj = { captionEnabled };
+        return captionEnabled(obj);
+      });
     },
     getVideoProgress(questId) {
       return closure_1().videoProgress[questId];
     },
     getVideoProgressState(arg0) {
+      let IN_PROGRESS;
       const tmp = closure_1().videoProgress[arg0];
       if (null == tmp) {
-        let IN_PROGRESS = obj.UNKNOWN;
+        IN_PROGRESS = obj.UNKNOWN;
       } else if (0 === tmp.timestampSec) {
         IN_PROGRESS = obj.NOT_STARTED;
       } else if (tmp.timestampSec >= tmp.duration) {
@@ -108,24 +133,29 @@ const withEqualityFnResult = identity(module_4735.persist((arg0, arg1) => {
       return IN_PROGRESS;
     },
     resetQuest(questId) {
-      questId(1248).batchUpdates(() => {
+      let obj = questId(dependencyMap[4]);
+      obj.batchUpdates(() => {
         const items = [questId];
-        questId({ videoProgress: _objectWithoutProperties(closure_1().videoProgress, items.map(_toPropertyKey)) });
+        const obj = { videoProgress: _objectWithoutProperties(closure_1().videoProgress, items.map(_toPropertyKey)) };
+        questId(obj);
       });
     },
     clearState() {
-      ReactBatchUpdates.batchUpdates(() => {
+      const obj = react_native;
+      obj.batchUpdates(() => {
         closure_1_0({ videoProgress: {} });
       });
     },
     setTranscriptAsset(transcript) {
-      transcript(1248).batchUpdates(() => {
-        transcript({ transcript });
+      let obj = transcript(dependencyMap[4]);
+      obj.batchUpdates(() => {
+        const obj = { transcript };
+        transcript(obj);
       });
     }
   };
-}, obj4));
-const size = fn(2);
+  return obj;
+}, obj2));
 const result = size.fileFinishedImporting("modules/quests/VideoQuestUIStore.tsx");
 
 export default withEqualityFnResult;

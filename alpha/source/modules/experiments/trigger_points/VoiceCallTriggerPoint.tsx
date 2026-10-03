@@ -1,20 +1,22 @@
-// Module ID: 17362
-// Function ID: 17363
+// Module ID: 17454
+// Function ID: 17455
 // Name: VoiceCallTriggerPoint
-// Dependencies: [4762, 10466, 17363, 16898, 17364, 17365, 12961, 2]
+// Dependencies: [4777, 10540, 17455, 16987, 17456, 17457, 13020, 2]
 
-// Module 17362 (VoiceCallTriggerPoint)
-import ExperimentConstants from "ExperimentConstants" /* 4762 */;
-import Helpers from "Helpers" /* 10466 */;
-import VoiceChannelBadgeExperiment from "VoiceChannelBadgeExperiment" /* 12961 */;
-import HangoutWindowExperiment from "HangoutWindowExperiment" /* 16898 */;
-import VoiceChannelHoistingExperiment from "VoiceChannelHoistingExperiment" /* 17363 */;
-import PastVcActivityMessagesExperimentDefault from "PastVcActivityMessagesExperiment" /* 17364 */;
-import VoiceCallTriggerPointExperimentDefault from "VoiceCallTriggerPointExperiment" /* 17365 */;
+// Module 17454 (VoiceCallTriggerPoint)
+import ExperimentConstants from "ExperimentConstants" /* 4777 */;
+import Helpers from "Helpers" /* 10540 */;
+import VoiceChannelBadgeExperiment from "VoiceChannelBadgeExperiment" /* 13020 */;
+import HangoutWindowExperiment from "HangoutWindowExperiment" /* 16987 */;
+import VoiceChannelHoistingExperiment from "VoiceChannelHoistingExperiment" /* 17455 */;
+import PastVcActivityMessagesExperimentDefault from "PastVcActivityMessagesExperiment" /* 17456 */;
+import VoiceCallTriggerPointExperimentDefault from "VoiceCallTriggerPointExperiment" /* 17457 */;
 import size from "module_2" /* 2 */;
 
+const CommonTriggerPoints = ExperimentConstants.CommonTriggerPoints;
+const CommonTriggerPointConfiguration = Helpers.CommonTriggerPointConfiguration;
 const items = [VoiceChannelHoistingExperiment.VoiceChannelHoistingExperiment, HangoutWindowExperiment.HangoutWindowExperiment, PastVcActivityMessagesExperimentDefault, VoiceCallTriggerPointExperimentDefault, VoiceChannelBadgeExperiment.VoiceChannelBadgeExperiment];
-const commonTriggerPointConfiguration = new Helpers.CommonTriggerPointConfiguration(items, ExperimentConstants.CommonTriggerPoints.VOICE_CALL, { location: "voice call initiated" });
+const commonTriggerPointConfiguration = new CommonTriggerPointConfiguration(items, CommonTriggerPoints.VOICE_CALL, { location: "voice call initiated" });
 const result = size.fileFinishedImporting("modules/experiments/trigger_points/VoiceCallTriggerPoint.tsx");
 
 export const VoiceCallTriggerPoint = commonTriggerPointConfiguration;

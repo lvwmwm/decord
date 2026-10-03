@@ -1,21 +1,24 @@
-// Module ID: 15957
-// Function ID: 15958
+// Module ID: 16031
+// Function ID: 16032
 // Name: openFavoritesGuildCategoryActionSheet
-// Dependencies: [4809, 15958, 1981, 2]
+// Dependencies: [4854, 16032, 1987, 2]
 // Exports: default
 
-// Module 15957 (openFavoritesGuildCategoryActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
+// Module 16031 (openFavoritesGuildCategoryActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/favorites/native/openFavoritesGuildCategoryActionSheet.tsx");
 
 export default function openFavoritesGuildCategoryActionSheet(categoryId) {
   const combined = "FavoritesGuildCategoryLongPress-" + categoryId;
-  ActionSheetActionCreatorsDefault.openLazy(combined(1981)(15958, dependencyMap.paths), combined, {
+  let obj = ActionSheetActionCreatorsDefault;
+  const obj2 = {
     categoryId,
     onClose() {
-      ActionSheetActionCreatorsDefault.hideActionSheet(combined);
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet(combined);
     }
-  });
+  };
+  obj.openLazy(combined(1987)(16032, dependencyMap.paths), combined, obj2);
 };

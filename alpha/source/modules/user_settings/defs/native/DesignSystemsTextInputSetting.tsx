@@ -1,28 +1,31 @@
-// Module ID: 15600
-// Function ID: 15601
+// Module ID: 15663
+// Function ID: 15664
 // Name: DesignSystemsTextInputSetting
-// Dependencies: [7590, 1074, 11215, 15601, 2]
+// Dependencies: [7634, 1085, 11129, 15664, 2]
 
-// Module 15600 (DesignSystemsTextInputSetting)
-import Constants from "Constants" /* 1074 */;
-import SettingsConstants from "SettingsConstants" /* 7590 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 15663 (DesignSystemsTextInputSetting)
+import Constants from "Constants" /* 1085 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
     return "Text Input";
   },
-  parent: SettingsConstants.MobileUserSettings.DESIGN_SYSTEMS,
+  parent: MobileUserSettings.DESIGN_SYSTEMS,
   screen: {
-    route: Constants.UserSettingsSections.DESIGN_SYSTEM_TEXT_INPUT,
+    route: UserSettingsSections.DESIGN_SYSTEM_TEXT_INPUT,
     getComponent() {
       return require("UserSettingsDesignSystemTextInput").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemsTextInputSetting.tsx");
 
 export default route;

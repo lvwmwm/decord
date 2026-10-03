@@ -1,29 +1,41 @@
-// Module ID: 7742
-// Function ID: 7743
+// Module ID: 7786
+// Function ID: 7787
 // Name: transformNativeMarkupLink
-// Dependencies: [5486, 5492, 5497, 7740, 7743, 5500, 2]
+// Dependencies: [5785, 5791, 5796, 7784, 7787, 5799, 2]
 // Exports: transformNativeLink
 
-// Module 7742 (transformNativeMarkupLink)
-import MarkupTypes from "MarkupTypes" /* 5486 */;
-import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5492 */;
-import ChannelLinkUrls from "ChannelLinkUrls" /* 7743 */;
+// Module 7786 (transformNativeMarkupLink)
+import MarkupTypes from "MarkupTypes" /* 5785 */;
+import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5791 */;
+import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5796 */;
+import MarkupAttachmentLinkRule from "MarkupAttachmentLinkRule" /* 5799 */;
+import transformNativeMarkupMention from "transformNativeMarkupMention" /* 7784 */;
+import ChannelLinkUrls from "ChannelLinkUrls" /* 7787 */;
 import size from "module_2" /* 2 */;
 
 function stripCredentialsForDisplay(url) {
   try {
     const _URL = URL;
+    const self = this;
+    const self2 = this;
     const uRL = new URL(url);
     uRL.username = "";
     uRL.password = "";
-    return UnicodeSanitizationUtils.safelyMakeUrlHumanReadable(uRL);
+    const obj = UnicodeSanitizationUtils;
+    return obj.safelyMakeUrlHumanReadable(uRL);
   } catch (err) {
-    return tmp;
+    return url;
   }
 }
 const result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupLink.tsx");
 
 export const transformNativeLink = function transformNativeLink(value, channelId, transformNativeInline) {
+  let items;
+  let items1;
+  let text;
+  let title;
+  let tmp8;
+  let url;
   ({ text, url, title } = value);
   if (null != text) {
     if (0 !== text.length) {
@@ -31,51 +43,52 @@ export const transformNativeLink = function transformNativeLink(value, channelId
       return obj;
     }
   }
-  const parseChannelLinkUrlResult = ChannelLinkUrls.parseChannelLinkUrl(url);
+  const obj2 = ChannelLinkUrls;
+  const parseChannelLinkUrlResult = obj2.parseChannelLinkUrl(url);
   if (null != parseChannelLinkUrlResult) {
-    const guildIdFromChannelId = tmp4(5497).getGuildIdFromChannelId(channelId.channelId);
+    let handleUnknownChannelResult;
+    const tmp4Result = MarkupChannelMentionRule;
+    const guildIdFromChannelId = tmp4Result.getGuildIdFromChannelId(channelId.channelId);
     channelId = parseChannelLinkUrlResult.parentChannelId;
-    const tmp4Result = tmp4(5497);
-    let channel = tmp4(5497).getChannel(parseChannelLinkUrlResult.channelId, null);
+    const tmp4Result7 = MarkupChannelMentionRule;
+    let channel = tmp4Result7.getChannel(parseChannelLinkUrlResult.channelId, null);
     if (channel == null) {
       let channel1 = null;
       if (null != channelId) {
-        channel1 = tmp4(5497).getChannel(channelId, null);
-        const tmp4Result8 = tmp4(5497);
+        const tmp4Result8 = MarkupChannelMentionRule;
+        channel1 = tmp4Result8.getChannel(channelId, null);
       }
       channel = channel1;
     }
     if (null == channel) {
-      const tmp4Result9 = tmp4(5497);
       const guildId = parseChannelLinkUrlResult.guildId;
+      const handleUnknownChannel = MarkupChannelMentionRule.handleUnknownChannel;
+      const tmp4Result9 = MarkupChannelMentionRule;
       if (channelId == null) {
         channelId = parseChannelLinkUrlResult.channelId;
       }
-      let handleUnknownChannelResult = tmp4Result9.handleUnknownChannel(guildId, channelId, parseChannelLinkUrlResult.messageId, guildIdFromChannelId, url);
+      handleUnknownChannelResult = handleUnknownChannel(guildId, channelId, parseChannelLinkUrlResult.messageId, guildIdFromChannelId, url);
     } else {
-      const tmp4Result10 = tmp4(5497);
+      const tmp4Result10 = MarkupChannelMentionRule;
       handleUnknownChannelResult = tmp4Result10.parseChannel(channel, parseChannelLinkUrlResult.messageId, guildIdFromChannelId, url);
     }
-    const tmp4Result7 = tmp4(5497);
-    return tmp4(7740).applyChannelMentionIcons(handleUnknownChannelResult);
+    const tmp4Result11 = transformNativeMarkupMention;
+    return tmp4Result11.applyChannelMentionIcons(handleUnknownChannelResult);
   } else {
-    const matchAttachmentUrlResult = tmp4(5500).matchAttachmentUrl(url);
+    let obj5;
+    const tmp4Result12 = MarkupAttachmentLinkRule;
+    const matchAttachmentUrlResult = tmp4Result12.matchAttachmentUrl(url);
     if (null != matchAttachmentUrlResult) {
       const name = matchAttachmentUrlResult.name;
-      const obj3 = { type: tmp4(5486).AST_KEY.ATTACHMENT_LINK, content: null, attachmentUrl: null, attachmentName: null };
-      const obj4 = { type: tmp4(5486).AST_KEY.TEXT, content: name };
-      const items = [obj4];
-      obj3.content = items;
-      obj3.attachmentUrl = url;
-      obj3.attachmentName = name;
-      let obj5 = obj3;
+      const obj3 = { type: MarkupTypes.AST_KEY.ATTACHMENT_LINK, content: items, attachmentUrl: url, attachmentName: name };
+      items = [{ type: MarkupTypes.AST_KEY.TEXT, content: name }];
+      obj5 = obj3;
+      const obj4 = { type: MarkupTypes.AST_KEY.TEXT, content: name };
     } else {
-      obj5 = { type: tmp4(5486).AST_KEY.LINK, content: null, target: null, title: "a" };
-      const obj6 = { type: tmp4(5486).AST_KEY.TEXT, content: stripCredentialsForDisplay(url) };
-      const items1 = [obj6];
-      obj5.content = items1;
-      obj5.target = url;
-      const tmp8 = stripCredentialsForDisplay(url);
+      obj5 = { type: MarkupTypes.AST_KEY.LINK, content: items1, target: url, title: "a" };
+      const obj6 = { type: MarkupTypes.AST_KEY.TEXT, content: tmp8 };
+      items1 = [obj6];
+      tmp8 = stripCredentialsForDisplay(url);
     }
     return obj5;
   }

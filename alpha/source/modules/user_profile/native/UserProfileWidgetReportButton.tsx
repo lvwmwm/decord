@@ -1,46 +1,108 @@
-// Module ID: 8310
-// Function ID: 8311
+// Module ID: 8314
+// Function ID: 8315
 // Name: UserProfileWidgetReportButton
-// Dependencies: [19, 17, 21, 1115, 8311, 8313, 7531, 7538, 576, 2]
-// Exports: default
+// Dependencies: [109, 19, 17, 21, 558, 576, 1126, 8315, 8317, 7577, 587, 7579, 2]
 
-// Module 8310 (UserProfileWidgetReportButton)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import ContextMenu from "ContextMenu" /* 7531 */;
-import MoreHorizontalIcon from "MoreHorizontalIcon" /* 7538 */;
-import FlagIcon from "FlagIcon" /* 8311 */;
-import showReportModalForUserWidget from "showReportModalForUserWidget" /* 8313 */;
-import noop from "module_19" /* 19 */;
+// Module 8314 (UserProfileWidgetReportButton)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import MoreHorizontalIcon2 from "MoreHorizontalIcon" /* 7577 */;
+import ContextMenu from "ContextMenu" /* 7579 */;
+import FlagIcon from "FlagIcon" /* 8315 */;
+import showReportModalForUserWidget from "showReportModalForUserWidget" /* 8317 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Pressable = fn(17).Pressable;
-const jsx = fn(21).jsx;
-let closure_5 = { top: 8, bottom: 8, left: 8, right: 8 };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetReportButton.tsx");
+let userId;
 
-export default function UserProfileWidgetReportButton(arg0) {
+let closure_3 = ["ref"];
+const Pressable = react_native.Pressable;
+const jsx = Fragment.jsx;
+let closure_7 = { top: 8, bottom: 8, left: 8, right: 8 };
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+  let first;
+  let hitSlop;
+  function action() {
+    const obj = showReportModalForUserWidget;
+    return obj.showReportModalForUserWidget(userId, widget);
+  }
+  let obj = userId(576);
+  const cResult = obj.c(7);
+  userId = userId.userId;
+  const widget = userId.widget;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let intl = tmp(1126).intl;
+    const stringResult = intl.string(userId(1126).t.D4GvHE);
+    cResult[0] = stringResult;
+    first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === userId) {
+    let tmp6;
+    let tmp7;
+    let tmp8;
+    if (cResult[2] === widget) {
+      tmp6 = cResult[3];
+    }
+    const _Symbol = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn = function h(ref) {
+        const merged = Object.assign(_objectWithoutProperties(ref, closure_1_3));
+        const intl = userId(dependencyMap[6]).intl;
+        const MoreHorizontalIcon = userId(dependencyMap[9]).MoreHorizontalIcon;
+        return <Pressable ref={arg0.ref} hitSlop={hitSlop} accessibilityRole="button" accessibilityLabel={intl.string(userId(dependencyMap[6]).t.xpSHSk)}><MoreHorizontalIcon size="sm" color={widget(dependencyMap[10]).colors.TEXT_MUTED} /></Pressable>;
+      };
+      cResult[4] = fn;
+      tmp7 = fn;
+    } else {
+      tmp7 = cResult[4];
+    }
+    if (cResult[5] !== tmp6) {
+      const tmp10 = jsx(userId(7579).ContextMenu, { items: tmp6, children: tmp7 });
+      cResult[5] = tmp6;
+      cResult[6] = tmp10;
+      tmp8 = tmp10;
+    } else {
+      tmp8 = cResult[6];
+    }
+    return tmp8;
+  }
+  const items = [{ label: first, variant: "destructive", IconComponent: userId(8315).FlagIcon, action }];
+  cResult[1] = userId;
+  cResult[2] = widget;
+  cResult[3] = items;
+  tmp6 = items;
+  ({ label: first, variant: "destructive", IconComponent: userId(8315).FlagIcon, action });
+}) : ((arg0) => {
+  let hitSlop;
+  let intl;
   ({ userId: require, widget: importDefault } = arg0);
-  let obj = { label: null, variant: "destructive", IconComponent: null, action: null };
-  let intl = util.intl;
-  obj.label = intl.string(util.t.D4GvHE);
-  obj.IconComponent = FlagIcon.FlagIcon;
-  obj.action = function action() {
-    return showReportModalForUserWidget.showReportModalForUserWidget(closure_1_0, importDefault);
+  let obj = {
+    label: intl.string(intl2.t.D4GvHE),
+    variant: "destructive",
+    IconComponent: FlagIcon.FlagIcon,
+    action() {
+      const obj = showReportModalForUserWidget;
+      return obj.showReportModalForUserWidget(require, importDefault);
+    }
   };
+  intl = intl2.intl;
   const items = [obj];
   return jsx(ContextMenu.ContextMenu, {
     items,
     children(ref) {
-      const obj = { ref: ref.ref };
       const merged = Object.assign(Object.assign(ref, Object.assign({ ref: 0 })));
-      obj.hitSlop = hitSlop;
-      obj.accessibilityRole = "button";
-      const intl = util.intl;
-      obj.accessibilityLabel = intl.string(util.t.xpSHSk);
-      obj.children = jsx(MoreHorizontalIcon.MoreHorizontalIcon, { size: "sm", color: nativeDefault.colors.TEXT_MUTED });
-      return <Pressable ref={arg0.ref} />;
+      const intl = intl2.intl;
+      const MoreHorizontalIcon = MoreHorizontalIcon2.MoreHorizontalIcon;
+      return <Pressable ref={arg0.ref} hitSlop={hitSlop} accessibilityRole="button" accessibilityLabel={intl.string(intl2.t.xpSHSk)}><MoreHorizontalIcon size="sm" color={nativeDefault.colors.TEXT_MUTED} /></Pressable>;
     }
   });
-};
+});
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetReportButton.tsx");
+
+export default tmp3;

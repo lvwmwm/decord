@@ -1,31 +1,54 @@
-// Module ID: 15332
-// Function ID: 15333
+// Module ID: 15389
+// Function ID: 15390
 // Name: ShareLogsButton
-// Dependencies: [19, 21, 5621, 1115, 7993, 7, 12681, 2]
+// Dependencies: [19, 21, 558, 576, 5909, 1126, 8038, 7, 12715, 2]
 
-// Module 15332 (ShareLogsButton)
+// Module 15389 (ShareLogsButton)
 import LogAggregator from "LogAggregator" /* 7 */;
-import util from "util" /* 1115 */;
-import Pressables from "Pressables" /* 5621 */;
-import showShareActionSheet from "showShareActionSheet" /* 7993 */;
-import ShareIcon from "ShareIcon" /* 12681 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 8038 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let tmp;
+const intl2 = tmp(1126);
+const Pressables = tmp(5909);
+const jsx = Fragment.jsx;
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const PressableOpacity = Pressables.PressableOpacity;
+    const intl = intl2.intl;
+    const tmp6 = <PressableOpacity accessibilityLabel={intl.string(intl2.t["Aw+09z"])} onPress={function onPress() {
+      let obj2;
+      const obj = { message: obj2.stringify() };
+      const showShareActionSheet = showShareActionSheet2.showShareActionSheet;
+      showShareActionSheet2;
+      obj2 = LogAggregator;
+      return showShareActionSheet(obj, "Debug Logs");
+    }}>{null}</PressableOpacity>;
+    cResult[0] = tmp6;
+    first = tmp6;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => {
+  const PressableOpacity = Pressables.PressableOpacity;
+  const intl = intl2.intl;
+  return <PressableOpacity accessibilityLabel={intl.string(intl2.t["Aw+09z"])} onPress={function onPress() {
+    let obj2;
+    const obj = { message: obj2.stringify() };
+    const showShareActionSheet = showShareActionSheet2.showShareActionSheet;
+    showShareActionSheet2;
+    obj2 = LogAggregator;
+    return showShareActionSheet(obj, "Debug Logs");
+  }}>{null}</PressableOpacity>;
+}));
 const result = size.fileFinishedImporting("modules/debug/native/ShareLogsButton.tsx");
 
-export default noop.memo(function ShareLogsButton() {
-  let obj = { accessibilityLabel: null, onPress: null, children: null };
-  const intl = util.intl;
-  obj.accessibilityLabel = intl.string(util.t["Aw+09z"]);
-  obj.onPress = function onPress() {
-    const obj2 = { message: null };
-    const obj = showShareActionSheet;
-    obj2.message = LogAggregator.stringify();
-    return obj.showShareActionSheet(obj2, "Debug Logs");
-  };
-  obj.children = jsx(ShareIcon.ShareIcon, {});
-  return jsx(Pressables.PressableOpacity, { accessibilityLabel: null, onPress: null, children: null });
-});
+export default memoResult;

@@ -1,10 +1,10 @@
-// Module ID: 6063
-// Function ID: 6064
+// Module ID: 5956
+// Function ID: 5957
 // Name: DomainMigrationUtils
 // Dependencies: [2]
 // Exports: extractMessage, sendPostMessage
 
-// Module 6063 (DomainMigrationUtils)
+// Module 5956 (DomainMigrationUtils)
 import size from "module_2" /* 2 */;
 
 const DomainMigrationMessageFrom = { MIGRATION_SOURCE_DOMAIN: 0, [0]: "MIGRATION_SOURCE_DOMAIN", MIGRATION_DESTINATION_DOMAIN: 1, [1]: "MIGRATION_DESTINATION_DOMAIN" };
@@ -15,9 +15,11 @@ export { DomainMigrationMessageFrom };
 export const DOMAIN_MIGRATION_SUCCESS_KEY = "domainMigrationSuccess";
 export const DOMAIN_MIGRATION_FAILED_KEY = "domainMigrationFailed";
 export const sendPostMessage = function sendPostMessage(domainMigrationEvent, postMessage, arg2) {
+  let MIGRATION_SOURCE_ORIGIN;
+  let obj;
   if (arg2 === obj.MIGRATION_SOURCE_DOMAIN) {
     const _window2 = window;
-    let MIGRATION_SOURCE_ORIGIN = window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN;
+    MIGRATION_SOURCE_ORIGIN = window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN;
   } else {
     const _window = window;
     MIGRATION_SOURCE_ORIGIN = window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN;
@@ -26,18 +28,16 @@ export const sendPostMessage = function sendPostMessage(domainMigrationEvent, po
   postMessage.postMessage(obj, MIGRATION_SOURCE_ORIGIN);
 };
 export const extractMessage = function extractMessage(origin, arg1) {
+  let MIGRATION_SOURCE_ORIGIN;
   if (arg1 === obj.MIGRATION_SOURCE_DOMAIN) {
     const _window2 = window;
-    let MIGRATION_SOURCE_ORIGIN = window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN;
+    MIGRATION_SOURCE_ORIGIN = window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN;
   } else {
     const _window = window;
     MIGRATION_SOURCE_ORIGIN = window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN;
   }
-  let tmp3 = origin.origin === MIGRATION_SOURCE_ORIGIN;
-  if (tmp3) {
-    tmp3 = null != origin.data.domainMigrationEvent;
-  }
   let tmp5 = null;
+  const tmp3 = origin.origin === MIGRATION_SOURCE_ORIGIN && null != origin.data.domainMigrationEvent;
   if (tmp3) {
     const data = origin.data;
     let domainMigrationEvent;

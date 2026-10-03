@@ -1,32 +1,84 @@
-// Module ID: 14478
-// Function ID: 14479
+// Module ID: 14513
+// Function ID: 14514
 // Name: useUsernameStatus
-// Dependencies: [32, 19, 14479, 2]
-// Exports: useUsernameStatus
+// Dependencies: [32, 19, 558, 576, 14514, 2]
 
-// Module 14478 (useUsernameStatus)
-import useUsernameLiveCheck from "useUsernameLiveCheck" /* 14479 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 14513 (useUsernameStatus)
+import react2 from "react" /* 576 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/unique_usernames/useUsernameStatus.tsx");
-
-export const useUsernameStatus = (arg0, flag, flag2) => {
-  closure_0 = arg0;
-  if (flag === undefined) {
+let tmp;
+const useUsernameLiveCheck = tmp(14514);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) => {
+  let closure_0 = arg0;
+  const tmp = require;
+  const obj = react2;
+  const cResult = obj.c(5);
+  let tmp6;
+  const tmp4 = undefined === arg1 || arg1;
+  const tmp5 = undefined !== arg2 && arg2;
+  if (undefined !== arg3) {
+    tmp6 = arg3;
+  }
+  let closure_1 = tmp6;
+  const tmpResult = useUsernameLiveCheck;
+  const usernameLiveCheck = tmpResult.useUsernameLiveCheck(arg0, tmp4, tmp5);
+  let closure_3 = _slicedToArray(react.useState(undefined), 2)[1];
+  _slicedToArray(react.useState(undefined), 2);
+  const obj3 = react;
+  if (cResult[0] === tmp6) {
+    if (cResult[1] === arg0) {
+      let tmp10;
+      let tmp11;
+      if (cResult[2] === usernameLiveCheck) {
+        tmp10 = cResult[3];
+        tmp11 = cResult[4];
+      }
+      const effect = obj3.useEffect(tmp10, tmp11);
+      return tmp9;
+    }
+  }
+  const fn = function l() {
+    if ("" !== closure_0) {
+      if (tmp !== closure_1) {
+        if (null != usernameLiveCheck) {
+          closure_3(tmp3);
+        }
+      }
+    }
+    closure_3(undefined);
+  };
+  const items = [usernameLiveCheck, arg0, tmp6];
+  cResult[0] = tmp6;
+  cResult[1] = arg0;
+  cResult[2] = usernameLiveCheck;
+  cResult[3] = fn;
+  cResult[4] = items;
+  tmp11 = items;
+  tmp10 = fn;
+}) : ((arg0) => {
+  let closure_3;
+  let first;
+  let closure_0 = arg0;
+  let flag = arg1;
+  if (arg1 === undefined) {
     flag = true;
   }
-  if (flag2 === undefined) {
+  let flag2 = arg2;
+  if (arg2 === undefined) {
     flag2 = false;
   }
-  closure_1 = tmp;
-  const usernameLiveCheck = useUsernameLiveCheck.useUsernameLiveCheck(arg0, flag, flag2);
-  const tmp3 = _slicedToArray(noop.useState(undefined), 2);
-  closure_3 = tmp3[1];
-  const items = [usernameLiveCheck, arg0, arg3];
-  const effect = noop.useEffect(() => {
+  const tmp = arg3;
+  let closure_1 = tmp;
+  closure_3 = undefined;
+  const obj = useUsernameLiveCheck;
+  const usernameLiveCheck = obj.useUsernameLiveCheck(arg0, flag, flag2);
+  [first, closure_3] = react.useState(undefined);
+  const items = [usernameLiveCheck, arg0, tmp];
+  const effect = react.useEffect(() => {
     if ("" !== closure_0) {
       if (tmp !== closure_1) {
         if (null != usernameLiveCheck) {
@@ -36,5 +88,8 @@ export const useUsernameStatus = (arg0, flag, flag2) => {
     }
     closure_3(undefined);
   }, items);
-  return tmp3[0];
-};
+  return first;
+});
+const result = size.fileFinishedImporting("modules/unique_usernames/useUsernameStatus.tsx");
+
+export const useUsernameStatus = tmp2;

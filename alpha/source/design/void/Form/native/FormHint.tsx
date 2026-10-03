@@ -1,52 +1,129 @@
-// Module ID: 8246
-// Function ID: 8247
+// Module ID: 8900
+// Function ID: 8901
 // Name: FormHint
-// Dependencies: [19, 17, 21, 4845, 576, 6184, 4841, 1177, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 6073, 4886, 1188, 2]
 
-// Module 8246 (FormHint)
-import nativeDefault from "native" /* 576 */;
-import RedesignCompat from "RedesignCompat" /* 6184 */;
-import noop from "module_19" /* 19 */;
+// Module 8900 (FormHint)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import RedesignCompat from "RedesignCompat" /* 6073 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Platform = fn(17).Platform;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
-let obj2 = { formHintText: { fontSize: 14, marginBottom: 0, color: nativeDefault.colors.TEXT_MUTED }, redesignHorizontalPadding: { paddingHorizontal: 12 }, horizonatalPadding: { paddingHorizontal: 16 } };
-let closure_4 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("design/void/Form/native/FormHint.tsx");
-
-export default function FormHint(inset) {
+let obj2;
+const Platform = react_native.Platform;
+const jsx = Fragment.jsx;
+let obj = { formHintText: obj2, redesignHorizontalPadding: { paddingHorizontal: 12 }, horizonatalPadding: { paddingHorizontal: 16 } };
+obj2 = { fontSize: 14, marginBottom: 0, color: nativeDefault.colors.TEXT_MUTED };
+let closure_4 = createStyles.createStyles(obj);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let children;
+  let inset;
+  let style;
+  const obj = react2;
+  const cResult = obj.c(13);
+  ({ inset, style, children } = arg0);
+  const tmp5 = closure_4();
+  let redesignHorizontalPadding = !tmp4;
+  if (react.useContext(RedesignCompat.RedesignCompatContext)) {
+    if (!(undefined !== inset && inset)) {
+      redesignHorizontalPadding = tmp5.redesignHorizontalPadding;
+    }
+    if (cResult[0] === style) {
+      let tmp10;
+      if (cResult[1] === redesignHorizontalPadding) {
+        tmp10 = cResult[2];
+      }
+      if (cResult[3] === children) {
+        let tmp11;
+        if (cResult[4] === tmp10) {
+          tmp11 = cResult[5];
+        }
+        return tmp11;
+      }
+      const tmp13 = jsx(Text_Text.Text, { variant: "text-sm/medium", color: "text-muted", style: tmp10, children });
+      cResult[3] = children;
+      cResult[4] = tmp10;
+      cResult[5] = tmp13;
+      tmp11 = tmp13;
+    }
+    const items = [redesignHorizontalPadding, style];
+    cResult[0] = style;
+    cResult[1] = redesignHorizontalPadding;
+    cResult[2] = items;
+    tmp10 = items;
+  } else {
+    let horizonatalPadding = redesignHorizontalPadding;
+    if (!(undefined !== inset && inset)) {
+      horizonatalPadding = tmp5.horizonatalPadding;
+    }
+    if (cResult[6] === style) {
+      if (cResult[7] === tmp5.formHintText) {
+        let tmp6;
+        if (cResult[8] === horizonatalPadding) {
+          tmp6 = cResult[9];
+        }
+        if (cResult[10] === children) {
+          let tmp7;
+          if (cResult[11] === tmp6) {
+            tmp7 = cResult[12];
+          }
+          return tmp7;
+        }
+        const tmp9 = jsx(native.LegacyText, { style: tmp6, children });
+        cResult[10] = children;
+        cResult[11] = tmp6;
+        cResult[12] = tmp9;
+        tmp7 = tmp9;
+      }
+    }
+    const items1 = [tmp5.formHintText, horizonatalPadding, style];
+    cResult[6] = style;
+    cResult[7] = tmp5.formHintText;
+    cResult[8] = horizonatalPadding;
+    cResult[9] = items1;
+    tmp6 = items1;
+  }
+}) : ((inset) => {
+  let children;
+  let items;
+  let style;
+  let tmp4Result;
   let flag = inset.inset;
   if (flag === undefined) {
     flag = false;
   }
   ({ style, children } = inset);
   const tmp = closure_4();
-  if (noop.useContext(RedesignCompat.RedesignCompatContext)) {
+  if (react.useContext(RedesignCompat.RedesignCompatContext)) {
     let redesignHorizontalPadding = !flag;
+    const Text = tmp2(4886).Text;
     if (!flag) {
       redesignHorizontalPadding = tmp.redesignHorizontalPadding;
     }
-    const obj2 = { variant: "text-sm/medium", color: "text-muted", style: null, children: null };
-    const items = [redesignHorizontalPadding, style];
-    obj2.style = items;
-    obj2.children = children;
-    let tmp4Result = tmp4(tmp2(4841).Text, obj2);
+    const obj2 = { variant: "text-sm/medium", color: "text-muted", style: items, children };
+    items = [redesignHorizontalPadding, style];
+    tmp4Result = tmp4(Text, obj2);
   } else {
     const items1 = [tmp.formHintText, , ];
     let horizonatalPadding = !flag;
+    const LegacyText = tmp2(1188).LegacyText;
     if (!flag) {
       horizonatalPadding = tmp.horizonatalPadding;
     }
-    const obj = { style: null, children: null };
+    const obj = { style: items1, children };
     items1[1] = horizonatalPadding;
     items1[2] = style;
-    obj.style = items1;
-    obj.children = children;
-    tmp4Result = tmp4(tmp2(1177).LegacyText, obj);
+    tmp4Result = tmp4(LegacyText, obj);
   }
   return tmp4Result;
-};
+});
+const result = size.fileFinishedImporting("design/void/Form/native/FormHint.tsx");
+
+export default tmp2;

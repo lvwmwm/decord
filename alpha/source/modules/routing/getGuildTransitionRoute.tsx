@@ -1,51 +1,54 @@
-// Module ID: 6824
-// Function ID: 6825
+// Module ID: 6717
+// Function ID: 6718
 // Name: getGuildTransitionRoute
-// Dependencies: [2047, 6703, 6825, 2044, 4496, 2066, 2098, 6826, 1074, 2051, 6830, 6832, 6834, 2069, 5554, 2]
+// Dependencies: [2054, 6591, 6718, 2051, 4507, 2074, 2103, 6719, 1085, 2058, 6723, 6725, 6727, 2077, 6746, 2]
 // Exports: getGuildTransitionRoute
 
-// Module 6824 (getGuildTransitionRoute)
-import FavoritesUtils from "FavoritesUtils" /* 2069 */;
-import VibegrationsUtils from "VibegrationsUtils" /* 5554 */;
-import OnboardingHomeUtils from "OnboardingHomeUtils" /* 6830 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6834 */;
-import FavoriteStore from "FavoriteStore" /* 2047 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 6703 */;
-import VibegrationsBuilderRouteStore from "VibegrationsBuilderRouteStore" /* 6825 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildChannelStore from "GuildChannelStore" /* 4496 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6826 */;
+// Module 6717 (getGuildTransitionRoute)
+import Constants from "Constants" /* 1085 */;
+import ChannelConstants from "ChannelConstants" /* 2058 */;
+import FavoritesUtils from "FavoritesUtils" /* 2077 */;
+import OnboardingHomeUtils from "OnboardingHomeUtils" /* 6723 */;
+import canUseGuildSpace from "canUseGuildSpace" /* 6725 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6727 */;
+import VibegrationsUtils from "VibegrationsUtils" /* 6746 */;
+import FavoriteStore from "FavoriteStore" /* 2054 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 6591 */;
+import VibegrationsBuilderRouteStore from "VibegrationsBuilderRouteStore" /* 6718 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6719 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ME = fn(1074).ME;
-const StaticChannelRoute = fn(2051).StaticChannelRoute;
-const size = fn(2);
+const ME = Constants.ME;
+const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
 let result = size.fileFinishedImporting("modules/routing/getGuildTransitionRoute.tsx");
 
-export const getGuildTransitionRoute = function getGuildTransitionRoute(guildId) {
-  const lastProjectId = VibegrationsBuilderRouteStore.getLastProjectId(guildId);
+export const getGuildTransitionRoute = function getGuildTransitionRoute(id) {
+  const lastProjectId = VibegrationsBuilderRouteStore.getLastProjectId(id);
   if (null != lastProjectId) {
-    const guild = GuildStore.getGuild(guildId);
+    const guild = GuildStore.getGuild(id);
     let result = null != guild;
     if (result) {
-      result = VibegrationsUtils.canAccessVibegrations(guild, "getChannelIdForGuildTransition");
+      const obj = VibegrationsUtils;
+      result = obj.canAccessVibegrations(guild, "getChannelIdForGuildTransition");
     }
     if (result) {
       const items = [StaticChannelRoute.VIBEGRATIONS, lastProjectId];
       return items;
     }
   }
-  const channelId = SelectedChannelStore.getChannelId(guildId);
-  const defaultChannel = GuildChannelStore.getDefaultChannel(guildId);
-  let id;
+  const channelId = SelectedChannelStore.getChannelId(id);
+  const defaultChannel = GuildChannelStore.getDefaultChannel(id);
+  id = undefined;
   if (defaultChannel != null) {
     id = defaultChannel.id;
   }
   if (id == null) {
     let tmp11;
-    if (guildId === ME) {
+    if (id === ME) {
       const privateChannelIds = PrivateChannelSortStore.getPrivateChannelIds();
       let first;
       if (privateChannelIds.length > 0) {
@@ -56,24 +59,26 @@ export const getGuildTransitionRoute = function getGuildTransitionRoute(guildId)
     id = tmp11;
   }
   if (channelId === StaticChannelRoute.GUILD_ONBOARDING) {
-    if (!GuildOnboardingStore.shouldShowOnboarding(guildId)) {
+    if (!GuildOnboardingStore.shouldShowOnboarding(id)) {
       const items1 = [id, null];
       return items1;
     }
   }
   if (channelId === StaticChannelRoute.GUILD_HOME) {
-    if (!obj2.canSeeOnboardingHome(guildId)) {
+    const obj2 = OnboardingHomeUtils;
+    if (!obj2.canSeeOnboardingHome(id)) {
       const items2 = [id, null];
       return items2;
     }
-    obj2 = OnboardingHomeUtils;
   }
   if (channelId === StaticChannelRoute.GUILD_SPACE) {
+    let tmp33;
     const items3 = [, ];
-    if (obj7.canUseGuildSpace(GuildStore.getGuild(guildId), "getChannelIdForGuildTransition")) {
+    const obj7 = canUseGuildSpace;
+    if (obj7.canUseGuildSpace(GuildStore.getGuild(id), "getChannelIdForGuildTransition")) {
       items3[0] = channelId;
       items3[1] = null;
-      let tmp33 = items3;
+      tmp33 = items3;
     } else {
       items3[0] = id;
       items3[1] = null;
@@ -81,24 +86,26 @@ export const getGuildTransitionRoute = function getGuildTransitionRoute(guildId)
     }
     return tmp33;
   } else {
-    if (channelId === tmp14.GAME_SHOP) {
-      if (obj3.canSeeGameShop(guildId)) {
+    if (channelId === StaticChannelRoute.GAME_SHOP) {
+      const obj3 = SlayerStorefrontUtils;
+      if (obj3.canSeeGameShop(id)) {
         const items4 = [channelId, null];
         return items4;
       }
-      obj3 = SlayerStorefrontUtils;
     }
-    if (channelId === tmp14.VIBEGRATIONS) {
-      const guild1 = GuildStore.getGuild(guildId);
+    if (channelId === StaticChannelRoute.VIBEGRATIONS) {
+      let tmp29;
+      const guild1 = GuildStore.getGuild(id);
       let result1 = null != guild1;
       if (result1) {
-        result1 = VibegrationsUtils.canAccessVibegrations(guild1, "getChannelIdForGuildTransition");
+        const obj6 = VibegrationsUtils;
+        result1 = obj6.canAccessVibegrations(guild1, "getChannelIdForGuildTransition");
       }
       const items5 = [, ];
       if (result1) {
         items5[0] = channelId;
         items5[1] = null;
-        let tmp29 = items5;
+        tmp29 = items5;
       } else {
         items5[0] = id;
         items5[1] = null;
@@ -108,8 +115,10 @@ export const getGuildTransitionRoute = function getGuildTransitionRoute(guildId)
     } else {
       const channel = ChannelStore.getChannel(channelId);
       if (null != channel) {
+        let items6;
         if (!channel.isGuildVocal()) {
-          let items6 = [channelId, null];
+          FavoritesUtils;
+          items6 = [channelId, null];
         }
         return items6;
       }

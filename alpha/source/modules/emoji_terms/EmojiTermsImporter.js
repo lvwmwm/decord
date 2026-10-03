@@ -1,88 +1,89 @@
-// Module ID: 5967
-// Function ID: 5968
+// Module ID: 5648
+// Function ID: 5649
 // Name: EmojiTermsImporter
-// Dependencies: [5968, 1981, 5969, 5970, 5971, 5972, 5973, 5974, 5975, 5976, 5977, 5978, 5979, 5980, 5981, 5982, 5983, 5984, 5985, 5986, 5987, 5988, 5989, 5990, 5991, 5992, 5993, 5994, 5995, 5996, 2]
+// Dependencies: [5649, 1987, 5650, 5651, 5652, 5653, 5654, 5655, 5656, 5657, 5658, 5659, 5660, 5661, 5662, 5663, 5664, 5665, 5666, 5667, 5668, 5669, 5670, 5671, 5672, 5673, 5674, 5675, 5676, 5677, 2]
 
-// Module 5967 (EmojiTermsImporter)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
+// Module 5648 (EmojiTermsImporter)
+import asyncRequire from "asyncRequire" /* 1987 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/emoji_terms/EmojiTermsImporter.js");
-
-export const emojiTermsImporter = {
+const obj = {
   bg() {
-    return asyncRequireImpl(5968, dependencyMap.paths);
+    return asyncRequire(5649, dependencyMap.paths);
   },
   cs() {
-    return asyncRequireImpl(5969, dependencyMap.paths);
+    return asyncRequire(5650, dependencyMap.paths);
   },
   da() {
-    return asyncRequireImpl(5970, dependencyMap.paths);
+    return asyncRequire(5651, dependencyMap.paths);
   },
   de() {
-    return asyncRequireImpl(5971, dependencyMap.paths);
+    return asyncRequire(5652, dependencyMap.paths);
   },
   el() {
-    return asyncRequireImpl(5972, dependencyMap.paths);
+    return asyncRequire(5653, dependencyMap.paths);
   },
-  () => asyncRequireImpl(5973, dependencyMap.paths),
-  () => asyncRequireImpl(5974, dependencyMap.paths),
-  () => asyncRequireImpl(5975, dependencyMap.paths),
+  "en-US": () => asyncRequire(5654, dependencyMap.paths),
+  "es-ES": () => asyncRequire(5655, dependencyMap.paths),
+  "es-419": () => asyncRequire(5656, dependencyMap.paths),
   fi() {
-    return asyncRequireImpl(5976, dependencyMap.paths);
+    return asyncRequire(5657, dependencyMap.paths);
   },
   fr() {
-    return asyncRequireImpl(5977, dependencyMap.paths);
+    return asyncRequire(5658, dependencyMap.paths);
   },
   hr() {
-    return asyncRequireImpl(5978, dependencyMap.paths);
+    return asyncRequire(5659, dependencyMap.paths);
   },
   hu() {
-    return asyncRequireImpl(5979, dependencyMap.paths);
+    return asyncRequire(5660, dependencyMap.paths);
   },
   it() {
-    return asyncRequireImpl(5980, dependencyMap.paths);
+    return asyncRequire(5661, dependencyMap.paths);
   },
   ja() {
-    return asyncRequireImpl(5981, dependencyMap.paths);
+    return asyncRequire(5662, dependencyMap.paths);
   },
   ko() {
-    return asyncRequireImpl(5982, dependencyMap.paths);
+    return asyncRequire(5663, dependencyMap.paths);
   },
   lt() {
-    return asyncRequireImpl(5983, dependencyMap.paths);
+    return asyncRequire(5664, dependencyMap.paths);
   },
   nl() {
-    return asyncRequireImpl(5984, dependencyMap.paths);
+    return asyncRequire(5665, dependencyMap.paths);
   },
   no() {
-    return asyncRequireImpl(5985, dependencyMap.paths);
+    return asyncRequire(5666, dependencyMap.paths);
   },
   pl() {
-    return asyncRequireImpl(5986, dependencyMap.paths);
+    return asyncRequire(5667, dependencyMap.paths);
   },
-  () => asyncRequireImpl(5987, dependencyMap.paths),
+  "pt-BR": () => asyncRequire(5668, dependencyMap.paths),
   ro() {
-    return asyncRequireImpl(5988, dependencyMap.paths);
+    return asyncRequire(5669, dependencyMap.paths);
   },
   ru() {
-    return asyncRequireImpl(5989, dependencyMap.paths);
+    return asyncRequire(5670, dependencyMap.paths);
   },
-  () => asyncRequireImpl(5990, dependencyMap.paths),
+  "sv-SE": () => asyncRequire(5671, dependencyMap.paths),
   th() {
-    return asyncRequireImpl(5991, dependencyMap.paths);
+    return asyncRequire(5672, dependencyMap.paths);
   },
   tr() {
-    return asyncRequireImpl(5992, dependencyMap.paths);
+    return asyncRequire(5673, dependencyMap.paths);
   },
   uk() {
-    return asyncRequireImpl(5993, dependencyMap.paths);
+    return asyncRequire(5674, dependencyMap.paths);
   },
   vi() {
-    return asyncRequireImpl(5994, dependencyMap.paths);
+    return asyncRequire(5675, dependencyMap.paths);
   },
-  () => asyncRequireImpl(5995, dependencyMap.paths),
+  "zh-CN": () => asyncRequire(5676, dependencyMap.paths),
   hi() {
-    return asyncRequireImpl(5996, dependencyMap.paths);
+    return asyncRequire(5677, dependencyMap.paths);
   }
 };
+const result = size.fileFinishedImporting("modules/emoji_terms/EmojiTermsImporter.js");
+
+export const emojiTermsImporter = obj;

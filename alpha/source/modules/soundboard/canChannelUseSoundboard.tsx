@@ -1,67 +1,118 @@
-// Module ID: 6980
-// Function ID: 6981
+// Module ID: 6878
+// Function ID: 6879
 // Name: canChannelUseSoundboard
-// Dependencies: [2044, 4498, 2098, 1074, 504, 2]
-// Exports: canSelectedVoiceChannelUseSoundboard, default, useCanChannelUseSoundboard
+// Dependencies: [2051, 4509, 2103, 1085, 558, 576, 504, 2]
+// Exports: canSelectedVoiceChannelUseSoundboard, default
 
-// Module 6980 (canChannelUseSoundboard)
-import ChannelStore from "ChannelStore" /* 2044 */;
-import PermissionStore from "PermissionStore" /* 4498 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
+// Module 6878 (canChannelUseSoundboard)
+import ChannelStore from "ChannelStore" /* 2051 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import Constants from "Constants" /* 1085 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const Constants = fn(1074);
+let hasOwnProperty;
+let metroRequire;
 ({ ChannelTypesSets: hasOwnProperty, Permissions: metroRequire } = Constants);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/soundboard/canChannelUseSoundboard.tsx");
-
-export default function canChannelUseSoundboard(type) {
+function canChannelUseSoundboard(type) {
   if (null == type) {
     return false;
   } else {
-    const CALLABLE = constants.CALLABLE;
+    const CALLABLE = hasOwnProperty.CALLABLE;
     if (CALLABLE.has(type.type)) {
       return true;
     } else {
-      const canResult = PermissionStore.can(constants2.USE_SOUNDBOARD, type);
-      const canResult1 = PermissionStore.can(constants2.SPEAK, type);
-      return type.isGuildVoiceOrThread() && canResult && PermissionStore.can(constants2.SPEAK, type);
+      const canResult = PermissionStore.can(metroRequire.USE_SOUNDBOARD, type);
+      const canResult1 = PermissionStore.can(metroRequire.SPEAK, type);
+      const tmp6 = type.isGuildVoiceOrThread() && canResult && canResult1;
+      return tmp6;
     }
   }
-};
-export const canSelectedVoiceChannelUseSoundboard = function canSelectedVoiceChannelUseSoundboard() {
-  const channel = ChannelStore.getChannel(SelectedChannelStore.getVoiceChannelId());
-  let flag = false;
-  if (null != channel) {
-    const CALLABLE = constants.CALLABLE;
-    flag = true;
-    if (!CALLABLE.has(channel.type)) {
-      const canResult = PermissionStore.can(constants2.USE_SOUNDBOARD, channel);
-      const canResult1 = PermissionStore.can(constants2.SPEAK, channel);
-      flag = channel.isGuildVoiceOrThread() && canResult && PermissionStore.can(constants2.SPEAK, channel);
-      const tmp6 = channel.isGuildVoiceOrThread() && canResult && PermissionStore.can(constants2.SPEAK, channel);
-    }
+}
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  let tmp7;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(4);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [PermissionStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
   }
-  return flag;
-};
-export const useCanChannelUseSoundboard = function useCanChannelUseSoundboard(arg0) {
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      let flag = false;
+      if (null != closure_0) {
+        const CALLABLE = hasOwnProperty.CALLABLE;
+        flag = true;
+        if (!CALLABLE.has(closure_0.type)) {
+          const canResult = PermissionStore.can(metroRequire.USE_SOUNDBOARD, closure_0);
+          const canResult1 = PermissionStore.can(metroRequire.SPEAK, closure_0);
+          flag = closure_0.isGuildVoiceOrThread() && canResult && canResult1;
+          closure_0.isGuildVoiceOrThread() && canResult && canResult1;
+        }
+      }
+      return flag;
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6, tmp7);
+}) : ((arg0) => {
+  let closure_0;
   _require = arg0;
   const items = [PermissionStore];
   const items1 = [arg0];
-  return require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
     let flag = false;
     if (null != closure_0) {
-      const CALLABLE = constants.CALLABLE;
+      const CALLABLE = hasOwnProperty.CALLABLE;
       flag = true;
-      if (!CALLABLE.has(obj.type)) {
-        const canResult = PermissionStore.can(constants2.USE_SOUNDBOARD, obj);
-        const canResult1 = PermissionStore.can(constants2.SPEAK, obj);
-        flag = obj.isGuildVoiceOrThread() && canResult && PermissionStore.can(constants2.SPEAK, obj);
-        const tmp6 = obj.isGuildVoiceOrThread() && canResult && PermissionStore.can(constants2.SPEAK, obj);
+      if (!CALLABLE.has(closure_0.type)) {
+        const canResult = PermissionStore.can(metroRequire.USE_SOUNDBOARD, closure_0);
+        const canResult1 = PermissionStore.can(metroRequire.SPEAK, closure_0);
+        flag = closure_0.isGuildVoiceOrThread() && canResult && canResult1;
+        closure_0.isGuildVoiceOrThread() && canResult && canResult1;
       }
     }
     return flag;
   }, items1);
+});
+const result = size.fileFinishedImporting("modules/soundboard/canChannelUseSoundboard.tsx");
+
+export default canChannelUseSoundboard;
+export const canSelectedVoiceChannelUseSoundboard = function canSelectedVoiceChannelUseSoundboard() {
+  const channel = ChannelStore.getChannel(SelectedChannelStore.getVoiceChannelId());
+  let flag = false;
+  if (null != channel) {
+    const CALLABLE = hasOwnProperty.CALLABLE;
+    flag = true;
+    if (!CALLABLE.has(channel.type)) {
+      const canResult = PermissionStore.can(metroRequire.USE_SOUNDBOARD, channel);
+      const canResult1 = PermissionStore.can(metroRequire.SPEAK, channel);
+      flag = channel.isGuildVoiceOrThread() && canResult && canResult1;
+      channel.isGuildVoiceOrThread() && canResult && canResult1;
+    }
+  }
+  return flag;
 };
+export const useCanChannelUseSoundboard = tmp3;

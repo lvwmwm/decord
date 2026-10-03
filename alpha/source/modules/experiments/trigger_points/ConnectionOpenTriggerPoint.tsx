@@ -1,16 +1,17 @@
-// Module ID: 13440
-// Function ID: 13441
+// Module ID: 13500
+// Function ID: 13501
 // Name: ConnectionOpenTriggerPoint
-// Dependencies: [4762, 13441, 10466, 2]
+// Dependencies: [4777, 13501, 10540, 2]
 
-// Module 13440 (ConnectionOpenTriggerPoint)
-import ExperimentConstants from "ExperimentConstants" /* 4762 */;
-import Helpers from "Helpers" /* 10466 */;
-import ContentInventoryExperiments from "ContentInventoryExperiments" /* 13441 */;
+// Module 13500 (ConnectionOpenTriggerPoint)
+import ExperimentConstants from "ExperimentConstants" /* 4777 */;
+import Helpers from "Helpers" /* 10540 */;
+import ContentInventoryExperiments from "ContentInventoryExperiments" /* 13501 */;
 import size from "module_2" /* 2 */;
 
+const CommonTriggerPoints = ExperimentConstants.CommonTriggerPoints;
 const items = [ContentInventoryExperiments.HotwheelsActivityFeedNvidiaExperiment];
-const commonTriggerPointConfiguration = new Helpers.CommonTriggerPointConfiguration(items, ExperimentConstants.CommonTriggerPoints.CONNECTION_OPEN, { location: "app open" });
+const commonTriggerPointConfiguration = new Helpers.CommonTriggerPointConfiguration(items, CommonTriggerPoints.CONNECTION_OPEN, { location: "app open" });
 const result = size.fileFinishedImporting("modules/experiments/trigger_points/ConnectionOpenTriggerPoint.tsx");
 
 export const ConnectionOpenTriggerPoint = commonTriggerPointConfiguration;

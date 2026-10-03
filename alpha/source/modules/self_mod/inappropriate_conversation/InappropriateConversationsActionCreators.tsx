@@ -1,34 +1,45 @@
-// Module ID: 10614
-// Function ID: 10615
+// Module ID: 9840
+// Function ID: 9841
 // Name: InappropriateConversationsActionCreators
-// Dependencies: [1074, 573, 1271, 1271, 2]
+// Dependencies: [1085, 584, 1282, 1282, 2]
 // Exports: deleteAllSafetyWarnings, markAsInappropriateConversation, pauseVibingWumpusMusic, playVibingWumpusMusic, stopVibingWumpusMusic
 
-// Module 10614 (InappropriateConversationsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 9840 (InappropriateConversationsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/InappropriateConversationsActionCreators.tsx");
 
 export const playVibingWumpusMusic = function playVibingWumpusMusic() {
-  DispatcherDefault.dispatch({ type: "VIBING_WUMPUS_PLAY_MUSIC" });
+  const obj = DispatcherDefault;
+  obj.dispatch({ type: "VIBING_WUMPUS_PLAY_MUSIC" });
 };
 export const stopVibingWumpusMusic = function stopVibingWumpusMusic() {
-  DispatcherDefault.dispatch({ type: "VIBING_WUMPUS_STOP_MUSIC" });
+  const obj = DispatcherDefault;
+  obj.dispatch({ type: "VIBING_WUMPUS_STOP_MUSIC" });
 };
 export const pauseVibingWumpusMusic = function pauseVibingWumpusMusic() {
-  DispatcherDefault.dispatch({ type: "VIBING_WUMPUS_PAUSE_MUSIC" });
+  const obj = DispatcherDefault;
+  obj.dispatch({ type: "VIBING_WUMPUS_PAUSE_MUSIC" });
 };
 export const deleteAllSafetyWarnings = function deleteAllSafetyWarnings(arg0) {
+  let obj2;
   const HTTP = HTTPUtils.HTTP;
-  const obj = { url: Endpoints.DELETE_SAFETY_WARNINGS(arg0), rejectWithError: HTTPUtils.rejectWithMigratedError() };
-  return HTTP.del(obj);
+  const del = HTTP.del;
+  const obj = { url: Endpoints.DELETE_SAFETY_WARNINGS(arg0), rejectWithError: obj2.rejectWithMigratedError() };
+  obj2 = HTTPUtils;
+  return del(obj);
 };
 export const markAsInappropriateConversation = function markAsInappropriateConversation(id, INAPPROPRIATE_CONVERSATION_TIER_1) {
+  let obj;
+  let obj3;
   const HTTP = HTTPUtils.HTTP;
-  const request = { url: Endpoints.ADD_SAFETY_WARNING(id), body: { safety_warning_type: INAPPROPRIATE_CONVERSATION_TIER_1 }, rejectWithError: HTTPUtils.rejectWithMigratedError() };
-  return HTTP.post(request);
+  const request = { url: Endpoints.ADD_SAFETY_WARNING(id), body: obj, rejectWithError: obj3.rejectWithMigratedError() };
+  const post = HTTP.post;
+  obj = { safety_warning_type: INAPPROPRIATE_CONVERSATION_TIER_1 };
+  obj3 = HTTPUtils;
+  return post(request);
 };

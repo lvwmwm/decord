@@ -1,13 +1,13 @@
-// Module ID: 7463
-// Function ID: 7464
-// Name: MainTabsV2Constants
+// Module ID: 7499
+// Function ID: 7500
+// Name: react-native
 // Dependencies: [17, 2]
 
-// Module 7463 (MainTabsV2Constants)
-import _mod17 from "module_17" /* 17 */;
+// Module 7499 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const result = 2 * _mod17.StyleSheet.hairlineWidth;
+const result = 2 * react_native.StyleSheet.hairlineWidth;
 const result1 = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/MainTabsV2Constants.tsx");
 
 export const MIN_HEADER_HEIGHT = 56;

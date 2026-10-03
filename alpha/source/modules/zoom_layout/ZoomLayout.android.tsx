@@ -1,56 +1,128 @@
-// Module ID: 9083
-// Function ID: 9084
+// Module ID: 9116
+// Function ID: 9117
 // Name: ZoomLayout
-// Dependencies: [19, 17, 21, 9084, 2]
+// Dependencies: [19, 17, 21, 558, 576, 9117, 2]
 
-// Module 9083 (ZoomLayout)
-import ZoomLayoutNativeComponentDefault from "ZoomLayoutNativeComponent" /* 9084 */;
-import noop from "module_19" /* 19 */;
+// Module 9116 (ZoomLayout)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import ZoomLayoutNativeComponentDefault from "ZoomLayoutNativeComponent" /* 9117 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const PixelRatio = fn(17).PixelRatio;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const PixelRatio = react_native.PixelRatio;
+const jsx = Fragment.jsx;
+const forwardRef = react.forwardRef;
+const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+  let first;
+  let tmp6;
+  let tmp = dependencyMap;
+  let obj = ref(576);
+  const cResult = obj.c(3);
+  ref = react.useRef(null);
+  const obj2 = react;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function c() {
+      let obj = {
+        zoomTo(arg0) {
+          let animated;
+          let scale;
+          let x;
+          let y;
+          ({ scale, animated } = arg0);
+          let num = 2;
+          ({ x, y } = arg0);
+          if (undefined !== scale) {
+            num = scale;
+          }
+          if (null != ref.current) {
+            const value = PixelRatio.get();
+            const result = x * value;
+            const result1 = y * value;
+            const Commands = ref(dependencyMap[5]).Commands;
+            Commands.zoomTo(tmp2.current, result / num - result, result1 / num - result1, num, undefined === animated || animated);
+          }
+        },
+        unzoom(arg0) {
+          let obj = arg0;
+          if (undefined === arg0) {
+            obj = {};
+          }
+          const animated = obj.animated;
+          const tmp = undefined === animated || animated;
+          if (null != ref.current) {
+            const Commands = ref(dependencyMap[5]).Commands;
+            Commands.unzoom(tmp2.current, tmp);
+          }
+        }
+      };
+      return obj;
+    };
+    let num = 0;
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  const imperativeHandle = obj2.useImperativeHandle(ref, first);
+  if (cResult[1] !== arg0) {
+    const obj3 = { ref };
+    ZoomLayoutNativeComponentDefault;
+    const merged = Object.assign(arg0);
+    const tmp13 = <tmp9 ref={ref} />;
+    cResult[1] = arg0;
+    cResult[2] = tmp13;
+    tmp6 = tmp13;
+  } else {
+    tmp6 = cResult[2];
+  }
+  return tmp6;
+}) : ((arg0, ref) => {
+  ref = react.useRef(null);
+  const imperativeHandle = react.useImperativeHandle(ref, () => {
+    let obj = {
+      zoomTo(scale) {
+        let x;
+        let y;
+        let num = scale.scale;
+        ({ x, y } = scale);
+        if (num === undefined) {
+          num = 2;
+        }
+        let flag = scale.animated;
+        if (flag === undefined) {
+          flag = true;
+        }
+        if (null != ref.current) {
+          const value = PixelRatio.get();
+          const result = x * value;
+          const result1 = y * value;
+          const Commands = ref(dependencyMap[5]).Commands;
+          Commands.zoomTo(tmp.current, result / num - result, result1 / num - result1, num, flag);
+        }
+      },
+      unzoom() {
+        let obj = arg0;
+        if (arg0 === undefined) {
+          obj = {};
+        }
+        let flag = obj.animated;
+        if (flag === undefined) {
+          flag = true;
+        }
+        if (null != ref.current) {
+          const Commands = ref(dependencyMap[5]).Commands;
+          Commands.unzoom(tmp.current, flag);
+        }
+      }
+    };
+    return obj;
+  });
+  ZoomLayoutNativeComponentDefault;
+  const merged = Object.assign(arg0);
+  return <tmp3 ref={ref} />;
+}));
 let result = size.fileFinishedImporting("modules/zoom_layout/ZoomLayout.android.tsx");
 
-export default noop.forwardRef((arg0, ref) => {
-  ref = noop.useRef(null);
-  const imperativeHandle = noop.useImperativeHandle(ref, () => ({
-    zoomTo(scale) {
-      let num = scale.scale;
-      ({ x, y } = scale);
-      if (num === undefined) {
-        num = 2;
-      }
-      let flag = scale.animated;
-      if (flag === undefined) {
-        flag = true;
-      }
-      if (null != ref.current) {
-        value = PixelRatio.get();
-        const result = x * value;
-        const result1 = y * value;
-        const Commands = ref(9084).Commands;
-        Commands.zoomTo(tmp.current, result / num - result, result1 / num - result1, num, flag);
-      }
-    },
-    unzoom() {
-      let obj = arg0;
-      if (arg0 === undefined) {
-        obj = {};
-      }
-      let flag = obj.animated;
-      if (flag === undefined) {
-        flag = true;
-      }
-      if (null != ref.current) {
-        const Commands = ref(9084).Commands;
-        Commands.unzoom(tmp.current, flag);
-      }
-    }
-  }));
-  let obj = {};
-  const merged = Object.assign(arg0);
-  obj.ref = ref;
-  return jsx(ZoomLayoutNativeComponentDefault, {});
-});
+export default forwardRefResult;

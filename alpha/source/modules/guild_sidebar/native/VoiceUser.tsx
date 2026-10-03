@@ -1,50 +1,468 @@
-// Module ID: 15970
-// Function ID: 15971
+// Module ID: 16041
+// Function ID: 16042
 // Name: VoiceUser
-// Dependencies: [19, 2043, 4867, 502, 1993, 4863, 4864, 21, 504, 15971, 2]
-// Exports: default
+// Dependencies: [19, 2050, 4912, 502, 1999, 4908, 4909, 21, 558, 576, 504, 16042, 2]
 
-// Module 15970 (VoiceUser)
-import noop from "module_19" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4867 */;
+// Module 16041 (VoiceUser)
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2050 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import SessionsStore from "SessionsStore" /* 4863 */;
-import VoiceStateStore from "VoiceStateStore" /* 4864 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import SessionsStore from "SessionsStore" /* 4908 */;
+import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_sidebar/native/VoiceUser.tsx");
+let channel, userIds;
 
-export default function VoiceUserConnected(channel) {
+let EmbeddedActivitiesStore = EmbeddedActivitiesStore_mod;
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let closure_3;
+  let collapsed;
+  let deaf;
+  let first;
+  let isGuest;
+  let member;
+  let mute;
+  let selfDeaf;
+  let selfMute;
+  let selfVideo;
+  let sessionId;
+  let tmp21;
+  let tmp22;
+  let tmp28;
+  let tmp29;
+  let tmp8;
+  let tmp = channel;
+  let tmp2 = sessionId;
+  let obj = channel(sessionId[9]);
+  const cResult = obj.c(43);
+  channel = channel.channel;
+  const user = channel.user;
+  sessionId = channel.sessionId;
+  ({ member, selfMute, selfDeaf, selfVideo, mute, deaf, collapsed, isGuest } = channel);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const id1 = AuthenticationStore.getId();
+    cResult[0] = id1;
+    first = id1;
+  } else {
+    first = cResult[0];
+  }
+  EmbeddedActivitiesStore = tmp7;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [MediaEngineStore];
+    cResult[1] = items;
+    tmp8 = items;
+  } else {
+    tmp8 = cResult[1];
+  }
+  if (cResult[2] === first === user.id) {
+    let tmp10;
+    let tmp12;
+    if (cResult[3] === user.id) {
+      tmp10 = cResult[4];
+    }
+    const tmpResult = tmp(tmp2[10]);
+    const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp8, tmp10);
+    const localMute = stateFromStoresObject.localMute;
+    const _Symbol = Symbol;
+    const localVideo = stateFromStoresObject.localVideo;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const items1 = [ApplicationStreamingStore];
+      cResult[5] = items1;
+      tmp12 = items1;
+    } else {
+      tmp12 = cResult[5];
+    }
+    if (cResult[6] === channel) {
+      let tmp14;
+      let tmp16;
+      let tmp18;
+      let tmp20;
+      if (cResult[7] === user.id) {
+        tmp14 = cResult[8];
+      }
+      const tmpResult5 = tmp(tmp2[10]);
+      const stateFromStores = tmpResult5.useStateFromStores(tmp12, tmp14);
+      const _Symbol2 = Symbol;
+      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+        const items2 = [SessionsStore];
+        cResult[9] = items2;
+        tmp16 = items2;
+      } else {
+        tmp16 = cResult[9];
+      }
+      if (cResult[10] !== sessionId) {
+        class R {
+          constructor() {
+            let tmp2;
+            if (null != sessionId) {
+              const sessionById = SessionsStore.getSessionById(tmp);
+              let os;
+              if (sessionById != null) {
+                os = sessionById.clientInfo.os;
+              }
+              tmp2 = os;
+            }
+            return tmp2;
+          }
+        }
+        cResult[10] = sessionId;
+        cResult[11] = R;
+        tmp18 = R;
+      } else {
+        class R {
+          constructor() {
+            let tmp2;
+            if (null != sessionId) {
+              const sessionById = SessionsStore.getSessionById(tmp);
+              let os;
+              if (sessionById != null) {
+                os = sessionById.clientInfo.os;
+              }
+              tmp2 = os;
+            }
+            return tmp2;
+          }
+        }
+      }
+      const tmpResult6 = tmp(tmp2[10]);
+      const stateFromStores1 = tmpResult6.useStateFromStores(tmp16, tmp18);
+      class O {
+        constructor() {
+          return ApplicationStreamingStore.getStreamForUser(user.id, channel.getGuildId());
+        }
+      }
+      if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+        class R {
+          constructor() {
+            let tmp2;
+            if (null != sessionId) {
+              const sessionById = SessionsStore.getSessionById(tmp);
+              let os;
+              if (sessionById != null) {
+                os = sessionById.clientInfo.os;
+              }
+              tmp2 = os;
+            }
+            return tmp2;
+          }
+        }
+        const items3 = [VoiceStateStore];
+        cResult[12] = items3;
+        tmp20 = items3;
+      } else {
+        class R {
+          constructor() {
+            let tmp2;
+            if (null != sessionId) {
+              const sessionById = SessionsStore.getSessionById(tmp);
+              let os;
+              if (sessionById != null) {
+                os = sessionById.clientInfo.os;
+              }
+              tmp2 = os;
+            }
+            return tmp2;
+          }
+        }
+      }
+      if (cResult[13] === channel.id) {
+        class R {
+          constructor() {
+            let tmp2;
+            if (null != sessionId) {
+              const sessionById = SessionsStore.getSessionById(tmp);
+              let os;
+              if (sessionById != null) {
+                os = sessionById.clientInfo.os;
+              }
+              tmp2 = os;
+            }
+            return tmp2;
+          }
+        }
+        const tmpResult7 = tmp(tmp2[10]);
+        const stateFromStores2 = tmpResult7.useStateFromStores(tmp20, tmp22, tmp21);
+        if (cResult[17] === first === user.id) {
+          let tmp27;
+          class R {
+            constructor() {
+              let tmp2;
+              if (null != sessionId) {
+                const sessionById = SessionsStore.getSessionById(tmp);
+                let os;
+                if (sessionById != null) {
+                  os = sessionById.clientInfo.os;
+                }
+                tmp2 = os;
+              }
+              return tmp2;
+            }
+          }
+          if (!selfVideo) {
+            class R {
+              constructor() {
+                let tmp2;
+                if (null != sessionId) {
+                  const sessionById = SessionsStore.getSessionById(tmp);
+                  let os;
+                  if (sessionById != null) {
+                    os = sessionById.clientInfo.os;
+                  }
+                  tmp2 = os;
+                }
+                return tmp2;
+              }
+            }
+          }
+          const _Symbol3 = Symbol;
+          if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
+            class R {
+              constructor() {
+                let tmp2;
+                if (null != sessionId) {
+                  const sessionById = SessionsStore.getSessionById(tmp);
+                  let os;
+                  if (sessionById != null) {
+                    os = sessionById.clientInfo.os;
+                  }
+                  tmp2 = os;
+                }
+                return tmp2;
+              }
+            }
+            const items4 = [EmbeddedActivitiesStore];
+            cResult[20] = items4;
+            tmp27 = items4;
+          } else {
+            class R {
+              constructor() {
+                let tmp2;
+                if (null != sessionId) {
+                  const sessionById = SessionsStore.getSessionById(tmp);
+                  let os;
+                  if (sessionById != null) {
+                    os = sessionById.clientInfo.os;
+                  }
+                  tmp2 = os;
+                }
+                return tmp2;
+              }
+            }
+          }
+          if (cResult[21] === channel.id) {
+            class R {
+              constructor() {
+                let tmp2;
+                if (null != sessionId) {
+                  const sessionById = SessionsStore.getSessionById(tmp);
+                  let os;
+                  if (sessionById != null) {
+                    os = sessionById.clientInfo.os;
+                  }
+                  tmp2 = os;
+                }
+                return tmp2;
+              }
+            }
+            const tmpResult8 = tmp(tmp2[10]);
+            const stateFromStores3 = tmpResult8.useStateFromStores(tmp27, tmp28, tmp29);
+            if (!mute) {
+              class R {
+                constructor() {
+                  let tmp2;
+                  if (null != sessionId) {
+                    const sessionById = SessionsStore.getSessionById(tmp);
+                    let os;
+                    if (sessionById != null) {
+                      os = sessionById.clientInfo.os;
+                    }
+                    tmp2 = os;
+                  }
+                  return tmp2;
+                }
+              }
+            }
+            class Q {
+              constructor() {
+                embeddedActivitiesForChannel = closure_3.getEmbeddedActivitiesForChannel(channel.id);
+                return embeddedActivitiesForChannel.find((userIds) => {
+                  userIds = userIds.userIds;
+                  return userIds.has(id.id);
+                });
+              }
+            }
+            const id = channel.id;
+            class O {
+              constructor() {
+                return ApplicationStreamingStore.getStreamForUser(user.id, channel.getGuildId());
+              }
+            }
+            if (cResult[25] === channel.guild_id) {
+              class R {
+                constructor() {
+                  let tmp2;
+                  if (null != sessionId) {
+                    const sessionById = SessionsStore.getSessionById(tmp);
+                    let os;
+                    if (sessionById != null) {
+                      os = sessionById.clientInfo.os;
+                    }
+                    tmp2 = os;
+                  }
+                  return tmp2;
+                }
+              }
+            }
+            let obj2 = { guildId: null, channelId: null, member, user, collapsed, serverMute: mute, serverDeaf: deaf, mute: selfMute, deaf: selfDeaf, localMute, video: selfVideo, stream: undefined === id, platform: stateFromStores1, disabled: null == stateFromStores1, isInEmbeddedActivity: null != stateFromStores3, isGuest, voicePlatform: stateFromStores2 };
+            ({ guild_id: obj7.guildId, id: obj7.channelId } = channel);
+            class P {
+              constructor() {
+                let obj;
+                const tmp = closure_3;
+                if (tmp) {
+                  obj = { localMute: false, localDeaf: false, localVideo: MediaEngineStore.isVideoEnabled() };
+                  const obj2 = { localMute: false, localDeaf: false, localVideo: MediaEngineStore.isVideoEnabled() };
+                } else {
+                  obj = { localMute: MediaEngineStore.isLocalMute(user.id), localDeaf: false, localVideo: false };
+                }
+                return obj;
+              }
+            }
+            cResult[25] = channel.guild_id;
+            cResult[26] = channel.id;
+            cResult[27] = collapsed;
+            cResult[28] = deaf;
+            cResult[29] = isGuest;
+            cResult[30] = selfVideo;
+            cResult[31] = localMute;
+            cResult[32] = member;
+            cResult[33] = stateFromStores1;
+            cResult[34] = selfDeaf;
+            cResult[35] = selfMute;
+            cResult[36] = mute;
+            cResult[37] = undefined === id;
+            cResult[38] = null == stateFromStores1;
+            cResult[39] = null != stateFromStores3;
+            cResult[40] = user;
+            cResult[41] = stateFromStores2;
+            cResult[42] = tmp39;
+          }
+          class Q {
+            constructor() {
+              embeddedActivitiesForChannel = closure_3.getEmbeddedActivitiesForChannel(channel.id);
+              return embeddedActivitiesForChannel.find((userIds) => {
+                userIds = userIds.userIds;
+                return userIds.has(id.id);
+              });
+            }
+          }
+          const items5 = [user.id, ];
+          class O {
+            constructor() {
+              return ApplicationStreamingStore.getStreamForUser(user.id, channel.getGuildId());
+            }
+          }
+          cResult[21] = channel.id;
+          cResult[22] = user.id;
+          cResult[23] = Q;
+          cResult[24] = items5;
+          tmp28 = Q;
+          tmp29 = items5;
+        }
+        cResult[17] = first === user.id;
+        class O {
+          constructor() {
+            return ApplicationStreamingStore.getStreamForUser(user.id, channel.getGuildId());
+          }
+        }
+        cResult[18] = sessionId;
+        cResult[19] = null != sessionId && first === user.id;
+      }
+      const fn = function z() {
+        return VoiceStateStore.getVoicePlatformForChannel(channel.id, user.id);
+      };
+      const items6 = [channel.id, user.id];
+      cResult[13] = channel.id;
+      cResult[14] = user.id;
+      cResult[15] = items6;
+      cResult[16] = fn;
+      tmp21 = items6;
+      tmp22 = fn;
+    }
+    class O {
+      constructor() {
+        return ApplicationStreamingStore.getStreamForUser(user.id, channel.getGuildId());
+      }
+    }
+    cResult[6] = channel;
+    cResult[7] = user.id;
+    cResult[8] = O;
+    tmp14 = O;
+  }
+  class P {
+    constructor() {
+      let obj;
+      const tmp = closure_3;
+      if (tmp) {
+        obj = { localMute: false, localDeaf: false, localVideo: MediaEngineStore.isVideoEnabled() };
+        const obj2 = { localMute: false, localDeaf: false, localVideo: MediaEngineStore.isVideoEnabled() };
+      } else {
+        obj = { localMute: MediaEngineStore.isLocalMute(user.id), localDeaf: false, localVideo: false };
+      }
+      return obj;
+    }
+  }
+  cResult[2] = first === user.id;
+  cResult[3] = user.id;
+  cResult[4] = P;
+  tmp10 = P;
+}) : ((channel) => {
+  let channelId;
+  let collapsed;
+  let deaf;
+  let isGuest;
+  let localMute;
+  let localVideo;
+  let member;
+  let mute;
+  let selfDeaf;
+  let selfMute;
+  let selfVideo;
+  let suppress;
   channel = channel.channel;
   const user = channel.user;
   const sessionId = channel.sessionId;
   ({ selfVideo, mute } = channel);
+  let obj = AuthenticationStore;
   ({ member, selfMute, selfDeaf, deaf, suppress, collapsed, isGuest } = channel);
-  const tmp = AuthenticationStore.getId() === user.id;
-  closure_3 = tmp;
+  let tmp = AuthenticationStore.getId() === user.id;
+  let closure_3 = tmp;
+  let tmp2 = channel;
+  let obj2 = channel(sessionId[10]);
   const items = [MediaEngineStore];
-  const stateFromStoresObject = channel(sessionId[8]).useStateFromStoresObject(items, () => {
-    if (closure_3) {
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items, () => {
+    let obj;
+    const tmp = closure_3;
+    if (tmp) {
+      obj = { localMute: false, localDeaf: false, localVideo: MediaEngineStore.isVideoEnabled() };
       const obj2 = { localMute: false, localDeaf: false, localVideo: MediaEngineStore.isVideoEnabled() };
-      let obj = obj2;
     } else {
       obj = { localMute: MediaEngineStore.isLocalMute(user.id), localDeaf: false, localVideo: false };
     }
     return obj;
   });
   ({ localMute, localVideo } = stateFromStoresObject);
-  let obj = AuthenticationStore;
-  let obj2 = channel(sessionId[8]);
-  let tmp2 = channel;
   const items1 = [ApplicationStreamingStore];
-  const stateFromStores = channel(sessionId[8]).useStateFromStores(items1, () => ApplicationStreamingStore.getStreamForUser(user.id, channel.getGuildId()));
-  const obj3 = channel(sessionId[8]);
+  const obj3 = channel(sessionId[10]);
+  const stateFromStores = obj3.useStateFromStores(items1, () => ApplicationStreamingStore.getStreamForUser(user.id, channel.getGuildId()));
   const items2 = [SessionsStore];
-  const stateFromStores1 = channel(sessionId[8]).useStateFromStores(items2, () => {
+  const obj4 = channel(sessionId[10]);
+  const stateFromStores1 = obj4.useStateFromStores(items2, () => {
     let tmp2;
     if (null != sessionId) {
       const sessionById = SessionsStore.getSessionById(tmp);
@@ -56,51 +474,43 @@ export default function VoiceUserConnected(channel) {
     }
     return tmp2;
   });
-  const obj4 = channel(sessionId[8]);
   const items3 = [VoiceStateStore];
   const items4 = [channel.id, user.id];
   let tmp8 = null != sessionId;
-  const stateFromStores2 = channel(sessionId[8]).useStateFromStores(items3, () => VoiceStateStore.getVoicePlatformForChannel(channel.id, user.id), items4);
+  const obj5 = channel(sessionId[10]);
+  const stateFromStores2 = obj5.useStateFromStores(items3, () => VoiceStateStore.getVoicePlatformForChannel(channel.id, user.id), items4);
   if (tmp8) {
     tmp8 = tmp;
   }
   if (tmp8) {
     tmp8 = sessionId !== obj.getSessionId();
   }
-  const obj5 = channel(sessionId[8]);
   const items5 = [closure_3];
   const items6 = [user.id, channel.id];
-  const stateFromStores3 = tmp2(sessionId[8]).useStateFromStores(items5, () => {
+  const tmp2Result = tmp2(sessionId[10]);
+  const stateFromStores3 = tmp2Result.useStateFromStores(items5, () => {
+    let id;
     const embeddedActivitiesForChannel = EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(channel.id);
     return embeddedActivitiesForChannel.find((userIds) => {
       userIds = userIds.userIds;
       return userIds.has(id.id);
     });
   }, items6);
-  const obj6 = { guildId: channel.guild_id, channelId: channel.id, member, user, collapsed, serverMute: null, serverDeaf: null, mute: null, deaf: null, localMute: null, video: null, stream: null, platform: null, disabled: null, isInEmbeddedActivity: null, isGuest: null, voicePlatform: null };
+  const obj6 = { guildId: channel.guild_id, channelId: channel.id, member, user, collapsed, serverMute: mute, serverDeaf: deaf, mute: selfMute, deaf: selfDeaf, localMute, video: selfVideo, stream: channelId === channel.id, platform: stateFromStores1, disabled: null == stateFromStores1 && tmp8, isInEmbeddedActivity: null != stateFromStores3, isGuest, voicePlatform: stateFromStores2 };
   const tmp10 = jsx;
-  const tmp2Result = tmp2(sessionId[8]);
+  const tmp11 = user(sessionId[11]);
   if (!mute) {
     mute = suppress;
   }
-  obj6.serverMute = mute;
-  obj6.serverDeaf = deaf;
-  obj6.mute = selfMute;
-  obj6.deaf = selfDeaf;
-  obj6.localMute = localMute;
   if (!selfVideo) {
     selfVideo = localVideo;
   }
-  obj6.video = selfVideo;
-  let channelId;
+  channelId = undefined;
   if (stateFromStores != null) {
     channelId = stateFromStores.channelId;
   }
-  obj6.stream = channelId === channel.id;
-  obj6.platform = stateFromStores1;
-  obj6.disabled = null == stateFromStores1 && tmp8;
-  obj6.isInEmbeddedActivity = null != stateFromStores3;
-  obj6.isGuest = isGuest;
-  obj6.voicePlatform = stateFromStores2;
-  return tmp10(user(sessionId[9]), obj6);
-};
+  return tmp10(tmp11, obj6);
+});
+const result = size.fileFinishedImporting("modules/guild_sidebar/native/VoiceUser.tsx");
+
+export default tmp3;

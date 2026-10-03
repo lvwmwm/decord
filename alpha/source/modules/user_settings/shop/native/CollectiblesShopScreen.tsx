@@ -1,27 +1,33 @@
-// Module ID: 15635
-// Function ID: 15636
+// Module ID: 15698
+// Function ID: 15699
 // Name: CollectiblesShopScreen
-// Dependencies: [19, 1076, 21, 6601, 15636, 6990, 15637, 6789, 2]
-// Exports: default
+// Dependencies: [19, 1087, 21, 558, 576, 6490, 15699, 6888, 6681, 15700, 2]
 
-// Module 15635 (CollectiblesShopScreen)
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6601 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6789 */;
-import useGiftCardMobileConsumptionHalfsheet from "useGiftCardMobileConsumptionHalfsheet" /* 6990 */;
-import useShopOrientationLock from "useShopOrientationLock" /* 15636 */;
-import noop from "module_19" /* 19 */;
+// Module 15698 (CollectiblesShopScreen)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6490 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
+import useGiftCardMobileConsumptionHalfsheet from "useGiftCardMobileConsumptionHalfsheet" /* 6888 */;
+import useShopOrientationLock from "useShopOrientationLock" /* 15699 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const CollectiblesShopV2 = tmp(15637);
-require = fn;
-const constants = fn(1076).CollectiblesMobileShopScreen;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/shop/native/CollectiblesShopScreen.tsx");
-
-export default function CollectiblesShopScreen() {
-  const settingNavigationRoute = useSettingNavigationRoute.useSettingNavigationRoute();
-  const shopOrientationLock = useShopOrientationLock.useShopOrientationLock();
-  const giftCardMobileConsumptionHalfsheet = useGiftCardMobileConsumptionHalfsheet.useGiftCardMobileConsumptionHalfsheet();
+let tmp;
+const CollectiblesShopV22 = tmp(15700);
+const constants = CollectiblesShopConstants.CollectiblesMobileShopScreen;
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const obj = react2;
+  const cResult = obj.c(4);
+  const obj2 = useSettingNavigationRoute;
+  const settingNavigationRoute = obj2.useSettingNavigationRoute();
+  const obj3 = useShopOrientationLock;
+  const shopOrientationLock = obj3.useShopOrientationLock();
+  const obj4 = useGiftCardMobileConsumptionHalfsheet;
+  const giftCardMobileConsumptionHalfsheet = obj4.useGiftCardMobileConsumptionHalfsheet();
   const params = settingNavigationRoute.params;
   let screen;
   if (params != null) {
@@ -38,12 +44,60 @@ export default function CollectiblesShopScreen() {
   if (analyticsSource == null) {
     analyticsSource = AnalyticsLocationDefault.COLLECTIBLES_SHOP;
   }
-  const obj4 = { analyticsSource, screen, onNavigateAway: null };
   const params3 = settingNavigationRoute.params;
   let onNavigateAway;
   if (params3 != null) {
     onNavigateAway = params3.onNavigateAway;
   }
-  obj4.onNavigateAway = onNavigateAway;
-  return jsx(CollectiblesShopV2.CollectiblesShopV2, { analyticsSource, screen, onNavigateAway: null });
-};
+  if (cResult[0] === analyticsSource) {
+    if (cResult[1] === onNavigateAway) {
+      let tmp12;
+      if (cResult[2] === screen) {
+        tmp12 = cResult[3];
+      }
+      return tmp12;
+    }
+  }
+  const tmp13 = jsx(CollectiblesShopV22.CollectiblesShopV2, { analyticsSource, screen, onNavigateAway });
+  cResult[0] = analyticsSource;
+  cResult[1] = onNavigateAway;
+  cResult[2] = screen;
+  cResult[3] = tmp13;
+  tmp12 = tmp13;
+}) : (() => {
+  let onNavigateAway;
+  const obj = useSettingNavigationRoute;
+  const settingNavigationRoute = obj.useSettingNavigationRoute();
+  const obj2 = useShopOrientationLock;
+  const shopOrientationLock = obj2.useShopOrientationLock();
+  const obj3 = useGiftCardMobileConsumptionHalfsheet;
+  const giftCardMobileConsumptionHalfsheet = obj3.useGiftCardMobileConsumptionHalfsheet();
+  const params = settingNavigationRoute.params;
+  let screen;
+  if (params != null) {
+    screen = params.screen;
+  }
+  if (screen == null) {
+    screen = constants.FEATURED_PAGE;
+  }
+  const params2 = settingNavigationRoute.params;
+  let analyticsSource;
+  const CollectiblesShopV2 = CollectiblesShopV22.CollectiblesShopV2;
+  const tmp8 = jsx;
+  if (params2 != null) {
+    analyticsSource = params2.analyticsSource;
+  }
+  if (analyticsSource == null) {
+    analyticsSource = AnalyticsLocationDefault.COLLECTIBLES_SHOP;
+  }
+  const params3 = settingNavigationRoute.params;
+  const obj4 = { analyticsSource, screen, onNavigateAway };
+  onNavigateAway = undefined;
+  if (params3 != null) {
+    onNavigateAway = params3.onNavigateAway;
+  }
+  return tmp8(CollectiblesShopV2, obj4);
+});
+const result = size.fileFinishedImporting("modules/user_settings/shop/native/CollectiblesShopScreen.tsx");
+
+export default tmp3;

@@ -1,16 +1,15 @@
-// Module ID: 9315
-// Function ID: 9316
+// Module ID: 9325
+// Function ID: 9326
 // Name: isVideoBackgroundSupported
-// Dependencies: [1993, 4870, 1364, 9316, 2]
+// Dependencies: [1999, 4915, 2]
 // Exports: default
 
-// Module 9315 (isVideoBackgroundSupported)
-import VirtualBackgroundsIosExperimentDefault from "VirtualBackgroundsIosExperiment" /* 9316 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
+// Module 9325 (isVideoBackgroundSupported)
+import Constants from "Constants" /* 4915 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const Features = fn(4870).Features;
-const size = fn(2);
+const Features = Constants.Features;
 const result = size.fileFinishedImporting("modules/video_backgrounds/isVideoBackgroundSupported.tsx");
 
 export default function isVideoBackgroundSupported() {
@@ -23,10 +22,5 @@ export default function isVideoBackgroundSupported() {
     const _Object = Object;
     supportsResult = Object.values(obj.getVideoDevices()).length > 0;
   }
-  let tmp4 = supportsResult;
-  if (obj2.isIOS()) {
-    tmp4 = VirtualBackgroundsIosExperimentDefault.getConfig({ location: "isVideoBackgroundSupported" }).enabled && supportsResult;
-    const tmp6 = VirtualBackgroundsIosExperimentDefault.getConfig({ location: "isVideoBackgroundSupported" }).enabled && supportsResult;
-  }
-  return tmp4;
+  return supportsResult;
 };

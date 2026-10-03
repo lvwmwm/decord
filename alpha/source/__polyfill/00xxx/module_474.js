@@ -30,9 +30,10 @@ let obj = {
     _accountsForMovesUpTo.moveY = closure_1(touchHistory, _accountsForMovesUpTo._accountsForMovesUpTo);
     _accountsForMovesUpTo = _accountsForMovesUpTo._accountsForMovesUpTo;
     const tmp = closure_2(touchHistory, _accountsForMovesUpTo);
+    const sum = _accountsForMovesUpTo.dx + (closure_0(touchHistory, _accountsForMovesUpTo) - tmp);
     const tmp2 = closure_0(touchHistory, _accountsForMovesUpTo);
-    const sum = _accountsForMovesUpTo.dx + (tmp2 - tmp);
-    const sum1 = _accountsForMovesUpTo.dy + (closure_1(touchHistory, _accountsForMovesUpTo) - closure_3(touchHistory, _accountsForMovesUpTo));
+    const tmp3 = closure_3(touchHistory, _accountsForMovesUpTo);
+    const sum1 = _accountsForMovesUpTo.dy + (closure_1(touchHistory, _accountsForMovesUpTo) - tmp3);
     const diff = touchHistory.mostRecentTimeStamp - _accountsForMovesUpTo._accountsForMovesUpTo;
     _accountsForMovesUpTo.vx = (sum - _accountsForMovesUpTo.dx) / diff;
     _accountsForMovesUpTo.vy = (sum1 - _accountsForMovesUpTo.dy) / diff;
@@ -46,17 +47,11 @@ let obj = {
     return {
       panHandlers: {
         onStartShouldSetResponder(arg0) {
-          let result = null != closure_0.onStartShouldSetPanResponder;
-          if (result) {
-            result = obj.onStartShouldSetPanResponder(arg0, obj);
-          }
+          const result = null != closure_0.onStartShouldSetPanResponder && obj.onStartShouldSetPanResponder(arg0, obj);
           return result;
         },
         onMoveShouldSetResponder(arg0) {
-          let result = null != closure_0.onMoveShouldSetPanResponder;
-          if (result) {
-            result = obj.onMoveShouldSetPanResponder(arg0, obj);
-          }
+          const result = null != closure_0.onMoveShouldSetPanResponder && obj.onMoveShouldSetPanResponder(arg0, obj);
           return result;
         },
         onStartShouldSetResponderCapture(nativeEvent) {
@@ -64,15 +59,16 @@ let obj = {
             const result = obj._initializeGestureState(obj);
           }
           obj.numberActiveTouches = nativeEvent.touchHistory.numberActiveTouches;
-          return null != closure_0.onStartShouldSetPanResponderCapture && closure_0.onStartShouldSetPanResponderCapture(nativeEvent, tmp4);
+          const tmp5 = null != closure_0.onStartShouldSetPanResponderCapture && closure_0.onStartShouldSetPanResponderCapture(nativeEvent, tmp4);
+          return tmp5;
         },
         onMoveShouldSetResponderCapture(touchHistory) {
           touchHistory = touchHistory.touchHistory;
           let tmp2 = obj._accountsForMovesUpTo !== touchHistory.mostRecentTimeStamp;
           if (tmp2) {
             const result = obj._updateGestureStateOnMove(tmp, touchHistory);
-            tmp2 = closure_0.onMoveShouldSetPanResponderCapture && closure_0.onMoveShouldSetPanResponderCapture(touchHistory, tmp);
-            const tmp5 = closure_0.onMoveShouldSetPanResponderCapture && closure_0.onMoveShouldSetPanResponderCapture(touchHistory, tmp);
+            tmp2 = closure_0.onMoveShouldSetPanResponderCapture && closure_0.onMoveShouldSetPanResponderCapture(touchHistory, obj);
+            closure_0.onMoveShouldSetPanResponderCapture && closure_0.onMoveShouldSetPanResponderCapture(touchHistory, obj);
           }
           return tmp2;
         },
@@ -82,37 +78,28 @@ let obj = {
           obj.dx = 0;
           obj.dy = 0;
           if (closure_0.onPanResponderGrant) {
-            obj.onPanResponderGrant(touchHistory, tmp);
+            closure_0.onPanResponderGrant(touchHistory, obj);
           }
-          return null == closure_0.onShouldBlockNativeResponder || closure_0.onShouldBlockNativeResponder(touchHistory, closure_0);
+          const tmp3 = null == closure_0.onShouldBlockNativeResponder || closure_0.onShouldBlockNativeResponder(touchHistory, obj);
+          return tmp3;
         },
         onResponderReject(arg0) {
           const onPanResponderReject = closure_0.onPanResponderReject;
           if (onPanResponderReject != null) {
-            const call = onPanResponderReject.call;
-            if (typeof call === "unknown") {
-              onPanResponderReject(arg0, tmp2);
-            } else {
-              call(undefined, arg0, tmp2);
-            }
+            onPanResponderReject.call(undefined, arg0, obj);
           }
         },
         onResponderRelease(arg0) {
           const onPanResponderRelease = closure_0.onPanResponderRelease;
           if (onPanResponderRelease != null) {
-            const call = onPanResponderRelease.call;
-            if (typeof call === "unknown") {
-              const result = onPanResponderRelease(arg0, tmp2);
-            } else {
-              call(undefined, arg0, tmp2);
-            }
+            onPanResponderRelease.call(undefined, arg0, obj);
           }
-          const result1 = obj._initializeGestureState(obj);
+          const result = obj._initializeGestureState(obj);
         },
         onResponderStart(touchHistory) {
           obj.numberActiveTouches = touchHistory.touchHistory.numberActiveTouches;
           if (closure_0.onPanResponderStart) {
-            obj.onPanResponderStart(touchHistory, tmp);
+            closure_0.onPanResponderStart(touchHistory, tmp);
           }
         },
         onResponderMove(touchHistory) {
@@ -120,7 +107,7 @@ let obj = {
           if (obj._accountsForMovesUpTo !== touchHistory.mostRecentTimeStamp) {
             const result = obj._updateGestureStateOnMove(tmp, touchHistory);
             if (closure_0.onPanResponderMove) {
-              obj.onPanResponderMove(touchHistory, tmp);
+              closure_0.onPanResponderMove(touchHistory, obj);
             }
           }
         },
@@ -128,31 +115,18 @@ let obj = {
           obj.numberActiveTouches = touchHistory.touchHistory.numberActiveTouches;
           const onPanResponderEnd = closure_0.onPanResponderEnd;
           if (onPanResponderEnd != null) {
-            const call = onPanResponderEnd.call;
-            if (typeof call === "unknown") {
-              onPanResponderEnd(touchHistory, tmp);
-            } else {
-              call(undefined, touchHistory, tmp);
-            }
+            onPanResponderEnd.call(undefined, touchHistory, tmp);
           }
         },
         onResponderTerminate(arg0) {
           const onPanResponderTerminate = closure_0.onPanResponderTerminate;
           if (onPanResponderTerminate != null) {
-            const call = onPanResponderTerminate.call;
-            if (typeof call === "unknown") {
-              const result = onPanResponderTerminate(arg0, tmp2);
-            } else {
-              call(undefined, arg0, tmp2);
-            }
+            onPanResponderTerminate.call(undefined, arg0, obj);
           }
-          const result1 = obj._initializeGestureState(obj);
+          const result = obj._initializeGestureState(obj);
         },
         onResponderTerminationRequest(arg0) {
-          let result = null == closure_0.onPanResponderTerminationRequest;
-          if (!result) {
-            result = obj.onPanResponderTerminationRequest(arg0, obj);
-          }
+          const result = null == closure_0.onPanResponderTerminationRequest || obj.onPanResponderTerminationRequest(arg0, obj);
           return result;
         }
       },

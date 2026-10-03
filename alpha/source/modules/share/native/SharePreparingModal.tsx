@@ -1,58 +1,188 @@
-// Module ID: 7999
-// Function ID: 8000
+// Module ID: 8044
+// Function ID: 8045
 // Name: SharePreparingModal
-// Dependencies: [19, 17, 21, 4845, 576, 5451, 8000, 8001, 1115, 6178, 6075, 4841, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 5771, 1126, 6017, 8045, 8046, 5968, 4886, 2]
 
-// Module 7999 (SharePreparingModal)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import Backdrop from "Backdrop" /* 5451 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6075 */;
-import XSmallIcon from "XSmallIcon" /* 6178 */;
-import MediaModalOverlayHeaderWrapper from "MediaModalOverlayHeaderWrapper" /* 8000 */;
-import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8001 */;
-import noop from "module_19" /* 19 */;
+// Module 8044 (SharePreparingModal)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Backdrop from "Backdrop" /* 5771 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5968 */;
+import XSmallIcon from "XSmallIcon" /* 6017 */;
+import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8045 */;
+import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 8046 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: closure_4, StyleSheet } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4845);
-let obj2 = { content: { flex: 1, alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_12 }, topBar: null, topBarEnd: null };
-let obj4 = {};
+let onCancel;
+
+let StyleSheet;
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let obj3;
+({ View: closure_4, StyleSheet } = react_native);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { content: obj2, topBar: obj3, topBarEnd: { justifyContent: "flex-end" } };
+obj2 = { flex: 1, alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_12 };
+createStyles = createStyles.createStyles;
+obj3 = { bottom: undefined };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj4.bottom = undefined;
-obj2.topBar = obj4;
-obj2.topBarEnd = { justifyContent: "flex-end" };
-let closure_7 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/share/native/SharePreparingModal.tsx");
-
-export default function SharePreparingModal(onCancel) {
+let closure_7 = createStyles(obj);
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancel) => {
+  let intl2;
+  let items1;
+  let tmp11;
+  let tmp12;
+  let tmp16;
+  let tmp5;
+  let tmp6;
+  let tmp8;
+  let topBar;
+  let topBarEnd;
+  const obj = react2;
+  const cResult = obj.c(19);
+  onCancel = onCancel.onCancel;
+  const tmp4 = closure_7();
+  if (cResult[0] !== onCancel) {
+    const fn = function o() {
+      return () => onCancel();
+    };
+    const items = [onCancel];
+    cResult[0] = onCancel;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp6 = items;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+    tmp6 = cResult[2];
+  }
+  const effect = react.useEffect(tmp5, tmp6);
+  const content = tmp4.content;
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp10 = hasOwnProperty(Backdrop.Backdrop, { blur: "none", "aria-hidden": true });
+    cResult[3] = tmp10;
+    tmp8 = tmp10;
+  } else {
+    tmp8 = cResult[3];
+  }
+  ({ topBar, topBarEnd } = tmp4);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(intl3.t.cpT0Cq);
+    const tmp15 = hasOwnProperty(XSmallIcon.XSmallIcon, { size: "md", color: "interactive-text-active" });
+    cResult[4] = stringResult;
+    cResult[5] = tmp15;
+    tmp12 = tmp15;
+    tmp11 = stringResult;
+  } else {
+    tmp11 = cResult[4];
+    tmp12 = cResult[5];
+  }
+  if (cResult[6] !== onCancel) {
+    const obj2 = { accessibilityLabel: tmp11, icon: tmp12, onPress: onCancel };
+    const tmp19 = hasOwnProperty(MediaViewerOverlayButtonDefault, obj2);
+    cResult[6] = onCancel;
+    cResult[7] = tmp19;
+    tmp16 = tmp19;
+  } else {
+    tmp16 = cResult[7];
+  }
+  if (cResult[8] === tmp4.topBarEnd) {
+    let tmp20;
+    if (cResult[9] === tmp16) {
+      tmp20 = cResult[10];
+    }
+    if (cResult[11] === tmp4.topBar) {
+      let tmp22;
+      let tmp26;
+      let tmp29;
+      if (cResult[12] === tmp20) {
+        tmp22 = cResult[13];
+      }
+      const _Symbol = Symbol;
+      if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+        const tmp28 = hasOwnProperty(ActivityIndicator_ActivityIndicator.ActivityIndicator, {});
+        cResult[14] = tmp28;
+        tmp26 = tmp28;
+      } else {
+        tmp26 = cResult[14];
+      }
+      const _Symbol2 = Symbol;
+      if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+        const obj3 = { variant: "text-sm/medium", color: "text-overlay-light", children: intl2.string(intl3.t.DwTQE5) };
+        const Text = tmp(4886).Text;
+        intl2 = tmp(1126).intl;
+        const tmp31 = hasOwnProperty(Text, obj3);
+        cResult[15] = tmp31;
+        tmp29 = tmp31;
+      } else {
+        tmp29 = cResult[15];
+      }
+      if (cResult[16] === tmp4.content) {
+        let tmp32;
+        if (cResult[17] === tmp22) {
+          tmp32 = cResult[18];
+        }
+        return tmp32;
+      }
+      const obj4 = { style: content, children: items1 };
+      items1 = [tmp8, tmp22, tmp26, tmp29];
+      const tmp35 = metroRequire(React3, obj4);
+      cResult[16] = tmp4.content;
+      cResult[17] = tmp22;
+      cResult[18] = tmp35;
+      tmp32 = tmp35;
+    }
+    const obj5 = { style: topBar, pointerEvents: "box-none", children: tmp20 };
+    const tmp25 = hasOwnProperty(React3, obj5);
+    cResult[11] = tmp4.topBar;
+    cResult[12] = tmp20;
+    cResult[13] = tmp25;
+    tmp22 = tmp25;
+  }
+  const tmp21 = hasOwnProperty(MediaModalOverlayHeaderWrapper2.MediaModalOverlayHeaderWrapper, { style: topBarEnd, children: tmp16 });
+  cResult[8] = tmp4.topBarEnd;
+  cResult[9] = tmp16;
+  cResult[10] = tmp21;
+  tmp20 = tmp21;
+}) : ((onCancel) => {
+  let MediaModalOverlayHeaderWrapper;
+  let intl;
+  let intl2;
+  let items1;
+  let obj3;
+  let obj4;
+  let tmp3;
   onCancel = onCancel.onCancel;
   const tmp = closure_7();
   const items = [onCancel];
-  const effect = noop.useEffect(() => () => onCancel(), items);
-  const obj = { style: tmp.content, children: null };
-  const items1 = [hasOwnProperty(Backdrop.Backdrop, { blur: "none", "aria-hidden": true }), , , ];
-  const obj2 = { style: tmp.topBar, pointerEvents: "box-none", children: null };
-  const obj3 = { style: tmp.topBarEnd, children: null };
-  const obj4 = { accessibilityLabel: null, icon: null, onPress: null };
-  const intl = util.intl;
-  obj4.accessibilityLabel = intl.string(util.t.cpT0Cq);
-  obj4.icon = hasOwnProperty(XSmallIcon.XSmallIcon, { size: "md", color: "interactive-text-active" });
-  obj4.onPress = onCancel;
-  obj3.children = hasOwnProperty(MediaViewerOverlayButtonDefault, obj4);
-  obj2.children = hasOwnProperty(MediaModalOverlayHeaderWrapper.MediaModalOverlayHeaderWrapper, obj3);
-  items1[1] = hasOwnProperty(React4, obj2);
+  const effect = react.useEffect(() => () => onCancel(), items);
+  const obj = { style: tmp.content, children: items1 };
+  items1 = [hasOwnProperty(Backdrop.Backdrop, { blur: "none", "aria-hidden": true }), , , ];
+  const obj2 = { style: tmp.topBar, pointerEvents: "box-none", children: hasOwnProperty(MediaModalOverlayHeaderWrapper, obj3) };
+  obj3 = { style: tmp.topBarEnd, children: hasOwnProperty(tmp3, obj4) };
+  obj4 = { accessibilityLabel: intl.string(intl3.t.cpT0Cq), icon: hasOwnProperty(XSmallIcon.XSmallIcon, { size: "md", color: "interactive-text-active" }), onPress: onCancel };
+  MediaModalOverlayHeaderWrapper = MediaModalOverlayHeaderWrapper2.MediaModalOverlayHeaderWrapper;
+  tmp3 = MediaViewerOverlayButtonDefault;
+  intl = intl3.intl;
+  items1[1] = hasOwnProperty(React3, obj2);
   items1[2] = hasOwnProperty(ActivityIndicator_ActivityIndicator.ActivityIndicator, {});
-  const obj5 = { variant: "text-sm/medium", color: "text-overlay-light", children: null };
-  const intl2 = util.intl;
-  obj5.children = intl2.string(util.t.DwTQE5);
-  items1[3] = hasOwnProperty(Text_Text.Text, obj5);
-  obj.children = items1;
-  return timestampProducer(React4, obj);
-};
+  const obj5 = { variant: "text-sm/medium", color: "text-overlay-light", children: intl2.string(intl3.t.DwTQE5) };
+  const Text = Text_Text.Text;
+  intl2 = intl3.intl;
+  items1[3] = hasOwnProperty(Text, obj5);
+  return metroRequire(React3, obj);
+});
+const result = size.fileFinishedImporting("modules/share/native/SharePreparingModal.tsx");
+
+export default tmp6;

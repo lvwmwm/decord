@@ -1,16 +1,16 @@
-// Module ID: 16026
-// Function ID: 16027
+// Module ID: 16100
+// Function ID: 16101
 // Name: ChannelListImplExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1440, 2]
 
-// Module 16026 (ChannelListImplExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 16100 (ChannelListImplExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
-const obj = { kind: "user", name: "2026-09-channel-list-impl", defaultConfig: { list: "fast" }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+const obj = { kind: "user", name: "2026-09-channel-list-impl", defaultConfig: { list: "fast" }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { list: "legend" };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/channel_list_v2/native/ChannelListImplExperiment.tsx");
 

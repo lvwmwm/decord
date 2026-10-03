@@ -1,0 +1,60 @@
+// Module ID: 552
+// Function ID: 553
+// Name: toNumber
+// Dependencies: [553, 521, 554]
+
+// Module 552 (toNumber)
+import isObject from "isObject" /* 521 */;
+import isSymbol from "isSymbol" /* 553 */;
+import baseTrim from "baseTrim" /* 554 */;
+
+const re2 = /^[-+]0x[0-9a-f]+$/i;
+const re3 = /^0b[01]+$/i;
+const re4 = /^0o[0-7]+$/i;
+
+export default function toNumber(num) {
+  if (typeof num === "number") {
+    return num;
+  } else if (isSymbol(num)) {
+    return NaN;
+  } else {
+    let tmp = num;
+    if (isObject(num)) {
+      let valueOfResult = num;
+      if (typeof num.valueOf === "function") {
+        valueOfResult = num.valueOf();
+      }
+      let text = valueOfResult;
+      if (isObject(valueOfResult)) {
+        text = `${tmp2}`;
+      }
+      tmp = text;
+    }
+    if (typeof tmp !== "string") {
+      let tmp9 = tmp;
+      if (0 !== tmp) {
+        tmp9 = +tmp;
+      }
+      return tmp9;
+    } else {
+      const arr = baseTrim(tmp);
+      const isMatch = re3.test(arr);
+      if (!isMatch) {
+        if (!re4.test(arr)) {
+          num = NaN;
+          if (!re2.test(arr)) {
+            num = +arr;
+          }
+        }
+        return num;
+      }
+      let num3 = 8;
+      const substr = arr.slice(2);
+      const tmp7 = parseInt;
+      if (isMatch) {
+        num3 = 2;
+      }
+      num = tmp7(substr, num3);
+    }
+  }
+};

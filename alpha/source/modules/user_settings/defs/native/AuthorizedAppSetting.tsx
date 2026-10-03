@@ -1,29 +1,32 @@
-// Module ID: 14687
-// Function ID: 14688
+// Module ID: 14743
+// Function ID: 14744
 // Name: AuthorizedAppSetting
-// Dependencies: [7590, 1074, 11215, 14688, 2]
+// Dependencies: [7634, 1085, 11129, 14744, 2]
 
-// Module 14687 (AuthorizedAppSetting)
-import Constants from "Constants" /* 1074 */;
-import SettingsConstants from "SettingsConstants" /* 7590 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 14743 (AuthorizedAppSetting)
+import Constants from "Constants" /* 1085 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
     return "";
   },
-  parent: SettingsConstants.MobileUserSettings.AUTHORIZED_APPS,
+  parent: MobileUserSettings.AUTHORIZED_APPS,
   unsearchable: true,
   screen: {
-    route: Constants.UserSettingsSections.AUTHORIZED_APP,
+    route: UserSettingsSections.AUTHORIZED_APP,
     getComponent() {
       return require("AuthorizedAppScreen").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AuthorizedAppSetting.tsx");
 
 export default route;

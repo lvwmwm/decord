@@ -1,27 +1,199 @@
-// Module ID: 16084
-// Function ID: 16085
+// Module ID: 16158
+// Function ID: 16159
 // Name: FavoritesGuildCoachmarkMenuItem
-// Dependencies: [19, 2047, 1074, 2041, 21, 9896, 6763, 504, 1115, 3360, 10789, 2]
-// Exports: default
+// Dependencies: [19, 2054, 1085, 2048, 21, 558, 576, 10050, 6651, 504, 1126, 3367, 9882, 2]
 
-// Module 16084 (FavoritesGuildCoachmarkMenuItem)
-import util from "util" /* 1115 */;
-import _modDef3360 from "module_3360" /* 3360 */;
-import LayerScope from "LayerScope" /* 6763 */;
-import noop from "module_19" /* 19 */;
-import FavoriteStore from "FavoriteStore" /* 2047 */;
+// Module 16158 (FavoritesGuildCoachmarkMenuItem)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1085 */;
+import intl4 from "intl" /* 1126 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import _modDef3367 from "module_3367" /* 3367 */;
+import FavoritesDismissibleContent from "FavoritesDismissibleContent" /* 10050 */;
+import react from "react" /* 19 */;
+import FavoriteStore from "FavoriteStore" /* 2054 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-function FavoritesGuildCoachmarkMenuItemContent(arg0) {
+let tmp;
+const LayerScope2 = tmp(6651);
+const ChannelTypes = Constants.ChannelTypes;
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+const jsx = Fragment.jsx;
+let items = [, , ];
+({ GUILD_TEXT: arr[0], GUILD_ANNOUNCEMENT: arr[1], GUILD_FORUM: arr[2] } = ChannelTypes);
+const set = new Set(items);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const obj = react2;
+  const cResult = obj.c(2);
+  let tmp4 = null;
+  const obj2 = FavoritesDismissibleContent;
+  if (obj2.useShouldRenderFavoritesMenuItemPopover()) {
+    let tmp6;
+    if (cResult[0] !== arg0) {
+      const LayerScope = LayerScope2.LayerScope;
+      const merged = Object.assign(arg0);
+      const tmp12 = <LayerScope zIndex={1}>{null}</LayerScope>;
+      cResult[0] = arg0;
+      cResult[1] = tmp12;
+      tmp6 = tmp12;
+    } else {
+      tmp6 = cResult[1];
+    }
+    tmp4 = tmp6;
+  }
+  return tmp4;
+}) : ((arg0) => {
+  let tmp3 = null;
+  const obj = FavoritesDismissibleContent;
+  if (obj.useShouldRenderFavoritesMenuItemPopover()) {
+    const LayerScope = LayerScope2.LayerScope;
+    const merged = Object.assign(arg0);
+    tmp3 = <LayerScope zIndex={1}>{null}</LayerScope>;
+  }
+  return tmp3;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelType) => {
+  let markPopoverAsDismissed;
+  let shouldShowPopover;
+  let tmp12;
+  let tmp19;
+  let tmp22;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  const obj = markPopoverAsDismissed(576);
+  const cResult = obj.c(17);
+  channelType = channelType.channelType;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [FavoriteStore];
+    const fn = function l() {
+      return FavoriteStore.hasStoredFavorites();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = markPopoverAsDismissed(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] !== channelType) {
+    const hasItem = set.has(channelType);
+    cResult[2] = channelType;
+    cResult[3] = hasItem;
+    tmp8 = hasItem;
+  } else {
+    tmp8 = cResult[3];
+  }
+  const tmpResult2 = markPopoverAsDismissed(10050);
+  const favoritesMenuItemPopoverDismissibleContent = tmpResult2.useFavoritesMenuItemPopoverDismissibleContent(tmp8);
+  ({ shouldShowPopover, markPopoverAsDismissed } = favoritesMenuItemPopoverDismissibleContent);
+  if (cResult[4] !== markPopoverAsDismissed) {
+    const fn2 = function b() {
+      markPopoverAsDismissed(ContentDismissActionType.USER_DISMISS);
+    };
+    cResult[4] = markPopoverAsDismissed;
+    cResult[5] = fn2;
+    tmp12 = fn2;
+  } else {
+    tmp12 = cResult[5];
+  }
+  if (cResult[6] !== markPopoverAsDismissed) {
+    class T {
+      constructor() {
+        markPopoverAsDismissed(ContentDismissActionType.TAKE_ACTION);
+      }
+    }
+    cResult[6] = markPopoverAsDismissed;
+    cResult[7] = T;
+  } else {
+    class T {
+      constructor() {
+        markPopoverAsDismissed(ContentDismissActionType.TAKE_ACTION);
+      }
+    }
+  }
+  if (cResult[8] !== stateFromStores) {
+    class T {
+      constructor() {
+        markPopoverAsDismissed(ContentDismissActionType.TAKE_ACTION);
+      }
+    }
+    const string = tmp15.string;
+    const tmp17 = _modDef3367;
+    cResult[8] = stateFromStores;
+    cResult[9] = string(stateFromStores ? tmp17.TWuDTt : tmp17["25YCHl"]);
+    const stringResult = string(stateFromStores ? tmp17.TWuDTt : tmp17["25YCHl"]);
+  } else {
+    class T {
+      constructor() {
+        markPopoverAsDismissed(ContentDismissActionType.TAKE_ACTION);
+      }
+    }
+  }
+  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+    class T {
+      constructor() {
+        markPopoverAsDismissed(ContentDismissActionType.TAKE_ACTION);
+      }
+    }
+    const stringResult1 = obj4.string(_modDef3367.Ztl9ht);
+    cResult[10] = stringResult1;
+    tmp19 = stringResult1;
+  } else {
+    class T {
+      constructor() {
+        markPopoverAsDismissed(ContentDismissActionType.TAKE_ACTION);
+      }
+    }
+  }
+  if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+    class T {
+      constructor() {
+        markPopoverAsDismissed(ContentDismissActionType.TAKE_ACTION);
+      }
+    }
+    const stringResult2 = obj5.string(_modDef3367["+h9aza"]);
+    cResult[11] = stringResult2;
+    tmp22 = stringResult2;
+  } else {
+    class T {
+      constructor() {
+        markPopoverAsDismissed(ContentDismissActionType.TAKE_ACTION);
+      }
+    }
+  }
+  if (cResult[12] === tmp13) {
+    class T {
+      constructor() {
+        markPopoverAsDismissed(ContentDismissActionType.TAKE_ACTION);
+      }
+    }
+  }
+  const obj2 = { visible: shouldShowPopover, position: "bottom", title: tmp14, description: tmp19, onDismiss: tmp12, renderImgComponent: "r", buttonLabel: tmp22, onButtonPress: tmp13 };
+  cResult[12] = tmp13;
+  cResult[13] = tmp12;
+  cResult[14] = shouldShowPopover;
+  cResult[15] = tmp14;
+  cResult[16] = obj2;
+}) : ((arg0) => {
+  let channelType;
+  let targetRef;
   let stateFromStores;
   let markPopoverAsDismissed;
   let onDismiss;
   let callback1;
   ({ targetRef, channelType } = arg0);
+  let obj = stateFromStores(markPopoverAsDismissed[9]);
   const items = [callback1];
-  stateFromStores = stateFromStores(markPopoverAsDismissed[7]).useStateFromStores(items, () => callback1.hasStoredFavorites());
-  let obj = stateFromStores(markPopoverAsDismissed[7]);
-  const favoritesMenuItemPopoverDismissibleContent = stateFromStores(markPopoverAsDismissed[5]).useFavoritesMenuItemPopoverDismissibleContent(set.has(channelType));
+  stateFromStores = obj.useStateFromStores(items, () => callback1.hasStoredFavorites());
+  const obj2 = stateFromStores(markPopoverAsDismissed[7]);
+  const favoritesMenuItemPopoverDismissibleContent = obj2.useFavoritesMenuItemPopoverDismissibleContent(set.has(channelType));
   const shouldShowPopover = favoritesMenuItemPopoverDismissibleContent.shouldShowPopover;
   markPopoverAsDismissed = favoritesMenuItemPopoverDismissibleContent.markPopoverAsDismissed;
   const items1 = [markPopoverAsDismissed];
@@ -34,45 +206,30 @@ function FavoritesGuildCoachmarkMenuItemContent(arg0) {
   }, items2);
   const items3 = [shouldShowPopover, stateFromStores, onDismiss, callback1];
   const memo = onDismiss.useMemo(() => {
-    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "M16 7h-1v2h1V7ZM3 6H1v1h2V6ZM6 4H4v1h2V4ZM4 5H3v1h1V5Z", onButtonPress: "#000" };
-    const intl = util.intl;
-    const tmp4 = _modDef3360;
+    let TWuDTt;
+    let intl2;
+    let intl3;
+    let string;
+    let tmp6;
+    const obj = { visible: shouldShowPopover, position: "bottom", title: string(TWuDTt), description: intl2.string(tmp6(3367).Ztl9ht), onDismiss, renderImgComponent: "r", buttonLabel: intl3.string(tmp6(3367)["+h9aza"]), onButtonPress: callback1 };
+    const intl = intl4.intl;
+    string = intl.string;
+    const tmp4 = _modDef3367;
     if (stateFromStores) {
-      let TWuDTt = tmp4.TWuDTt;
-      let tmp6 = tmp3;
+      TWuDTt = tmp4.TWuDTt;
+      tmp6 = tmp3;
     } else {
       TWuDTt = tmp4["25YCHl"];
       tmp6 = tmp3;
     }
-    obj.title = intl.string(TWuDTt);
-    const intl2 = tmp(1115).intl;
-    obj.description = intl2.string(tmp6(3360).Ztl9ht);
-    obj.onDismiss = onDismiss;
-    const intl3 = tmp(1115).intl;
-    obj.buttonLabel = intl3.string(tmp6(3360)["+h9aza"]);
-    obj.onButtonPress = callback1;
+    intl2 = tmp(1126).intl;
+    intl3 = tmp(1126).intl;
     return obj;
   }, items3);
-  const obj2 = stateFromStores(markPopoverAsDismissed[5]);
-  const coachmark = stateFromStores(markPopoverAsDismissed[10]).useCoachmark(targetRef, memo);
+  const obj3 = stateFromStores(markPopoverAsDismissed[12]);
+  const coachmark = obj3.useCoachmark(targetRef, memo);
   return null;
-}
-const ContentDismissActionType = fn(2041).ContentDismissActionType;
-const jsx = fn(21).jsx;
-let items = [, , ];
-({ GUILD_TEXT: arr[0], GUILD_ANNOUNCEMENT: arr[1], GUILD_FORUM: arr[2] } = fn(1074).ChannelTypes);
-const set = new Set(items);
-const size = fn(2);
+});
 const result = size.fileFinishedImporting("modules/favorites/native/onboarding/FavoritesGuildCoachmarkMenuItem.tsx");
 
-export default function FavoritesGuildCoachmarkMenuItem(arg0) {
-  let tmp3 = null;
-  if (obj.useShouldRenderFavoritesMenuItemPopover()) {
-    const obj2 = { zIndex: 1, children: null };
-    const obj3 = {};
-    const merged = Object.assign(arg0);
-    obj2.children = <FavoritesGuildCoachmarkMenuItemContent />;
-    tmp3 = jsx(LayerScope.LayerScope, { zIndex: 1, children: null });
-  }
-  return tmp3;
-};
+export default tmp3;

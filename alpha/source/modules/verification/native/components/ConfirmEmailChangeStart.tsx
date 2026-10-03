@@ -1,63 +1,76 @@
-// Module ID: 6204
-// Function ID: 6205
+// Module ID: 6092
+// Function ID: 6093
 // Name: ConfirmEmailChangeStart
-// Dependencies: [5, 32, 19, 17, 1372, 21, 4845, 1485, 504, 6205, 1094, 5267, 4557, 1115, 6206, 4841, 5465, 2]
+// Dependencies: [5, 32, 19, 17, 1377, 21, 4890, 1490, 504, 6093, 1105, 5313, 4568, 1126, 6094, 4886, 5594, 2]
 // Exports: default
 
-// Module 6204 (ConfirmEmailChangeStart)
-import Text_Text from "Text/Text" /* 4841 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 6092 (ConfirmEmailChangeStart)
+import Text_Text from "Text/Text" /* 4886 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import UserStore from "UserStore" /* 1377 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, navigation;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: metroRequire, Image: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4845);
+let c10;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let unpackModuleId;
+({ View: metroRequire, Image: metroImportDefault, ScrollView: metroImportAll } = react_native);
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let closure_12 = createStyles.createStyles({ container: { flex: 1, padding: 16, alignItems: "center", justifyContent: "center" }, image: { height: 190, width: 220, resizeMode: "contain" }, title: { marginTop: 16, textAlign: "center" }, body: { marginTop: 8, lineHeight: 18, textAlign: "center" }, button: { marginTop: 16, width: "100%" } });
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/verification/native/components/ConfirmEmailChangeStart.tsx");
 
 export default function ConfirmEmailChangeStart() {
-  const tmp = closure_12();
+  let Button;
+  let body;
+  let currentUser;
+  let first;
+  let intl2;
+  let intl3;
+  let items1;
+  let obj5;
+  let obj9;
+  let tmp = closure_12();
   _require = tmp;
-  const navigation = require("useNavigation").useNavigation();
+  const tmp3 = dependencyMap;
   let obj = require("useNavigation");
+  navigation = obj.useNavigation();
+  let obj2 = require("get initialized");
   const items = [UserStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => currentUser.getCurrentUser());
-  const tmp6 = _slicedToArray(noop.useState(false), 2);
-  dependencyMap = tmp6[1];
+  const stateFromStores = obj2.useStateFromStores(items, () => currentUser.getCurrentUser());
+  [first, dependencyMap] = react.useState(false);
   [][0] = navigation;
   if (null == stateFromStores) {
     return null;
   } else {
-    const intl = tmp2(1115).intl;
+    const intl = tmp2(1126).intl;
     let obj3 = { oldEmail: stateFromStores.email };
-    let obj4 = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: null };
-    const obj5 = { style: tmp.container, children: null };
-    let obj6 = { style: tmp.image, source: navigation(6206) };
-    const items1 = [closure_10(closure_7, obj6), , , ];
-    let obj7 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-    const intl2 = tmp2(1115).intl;
-    obj7.children = intl2.string(tmp2(1115).t.dQ71Wa);
-    items1[1] = closure_10(tmp2(4841).Text, obj7);
-    items1[2] = intl.format(tmp2(1115).t.oMFSgi, obj3).map((children, index) => closure_2_10(Text_Text.Text, { style: body.body, variant: "text-sm/medium", color: "text-default", children }, index));
-    let obj8 = { style: tmp.button, children: null };
-    const obj9 = { text: null, onPress: null, loading: null, grow: true };
-    const intl3 = tmp2(1115).intl;
-    obj9.text = intl3.string(tmp2(1115).t.rXV81H);
-    obj9.onPress = tmp7;
-    obj9.loading = tmp6[0];
-    obj8.children = closure_10(tmp2(5465).Button, obj9);
+    let obj4 = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: closure_11(closure_6, obj5) };
+    obj5 = { style: tmp.container, children: items1 };
+    let obj6 = { style: tmp.image, source: navigation(6094) };
+    const formatResult = intl.format(require("intl").t.oMFSgi, obj3);
+    items1 = [closure_10(closure_7, obj6), , , ];
+    let obj7 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl2.string(tmp2(1126).t.dQ71Wa) };
+    const Text = tmp2(4886).Text;
+    intl2 = tmp2(1126).intl;
+    items1[1] = closure_10(Text, obj7);
+    items1[2] = formatResult.map((children, index) => {
+      const obj = { style: body.body, variant: "text-sm/medium", color: "text-default", children };
+      return authStore(Text_Text.Text, obj, index);
+    });
+    let obj8 = { style: tmp.button, children: closure_10(Button, obj9) };
+    obj9 = { text: intl3.string(require("intl").t.rXV81H), onPress: tmp8, loading: first, grow: true };
+    Button = tmp2(5594).Button;
+    intl3 = tmp2(1126).intl;
     items1[3] = closure_10(closure_6, obj8);
-    obj5.children = items1;
-    obj4.children = closure_11(closure_6, obj5);
     return closure_10(closure_8, obj4);
   }
-  let obj2 = require("initialize");
 };

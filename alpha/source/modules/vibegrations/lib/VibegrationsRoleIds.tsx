@@ -1,19 +1,24 @@
-// Module ID: 16492
-// Function ID: 16493
+// Module ID: 16570
+// Function ID: 16571
 // Name: VibegrationsRoleIds
 // Dependencies: [2]
 // Exports: haveSameRoleIds
 
-// Module 16492 (VibegrationsRoleIds)
+// Module 16570 (VibegrationsRoleIds)
 import size from "module_2" /* 2 */;
+
+let set;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsRoleIds.tsx");
 
 export const haveSameRoleIds = function haveSameRoleIds(first2, prop) {
-  let set = first2;
+  set = first2;
   if (!(first2 instanceof Set)) {
     const _Set = Set;
+    const self = this;
+    const self2 = this;
     set = new Set(first2);
   }
-  return set.size === prop.length && prop.every((item) => set.has(item));
+  const tmp3 = set.size === prop.length && prop.every((item) => set.has(item));
+  return tmp3;
 };

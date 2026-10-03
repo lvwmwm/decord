@@ -1,21 +1,37 @@
-// Module ID: 14946
-// Function ID: 14947
+// Module ID: 15003
+// Function ID: 15004
 // Name: BountiesAndroidQuestBarSmokeAnimationExperiment
-// Dependencies: [1435, 2]
-// Exports: useIsBountiesAndroidQuestBarSmokeAnimationEnabled
+// Dependencies: [1440, 558, 576, 2]
 
-// Module 14946 (BountiesAndroidQuestBarSmokeAnimationExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 15003 (BountiesAndroidQuestBarSmokeAnimationExperiment)
+import react from "react" /* 576 */;
+import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-09-bounties-android-quest-bar-smoke-animation", kind: "user", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+let obj = { name: "2026-09-bounties-android-quest-bar-smoke-animation", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  let tmp2;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] !== location) {
+    const obj2 = { location };
+    cResult[0] = location;
+    cResult[1] = obj2;
+    tmp2 = obj2;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return apexExperiment.useConfig(tmp2).enabled;
+}) : ((location) => {
+  const obj = { location };
+  return apexExperiment.useConfig(obj).enabled;
+});
 const result = size.fileFinishedImporting("modules/quests/experiments/BountiesAndroidQuestBarSmokeAnimationExperiment.tsx");
 
 export const BountiesAndroidQuestBarSmokeAnimationExperiment = apexExperiment;
-export const useIsBountiesAndroidQuestBarSmokeAnimationEnabled = function useIsBountiesAndroidQuestBarSmokeAnimationEnabled(QUESTS_BAR_MOBILE) {
-  return apexExperiment.useConfig({ location: QUESTS_BAR_MOBILE }).enabled;
-};
+export const useIsBountiesAndroidQuestBarSmokeAnimationEnabled = tmp3;

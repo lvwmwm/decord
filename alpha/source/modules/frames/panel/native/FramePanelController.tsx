@@ -1,27 +1,137 @@
-// Module ID: 17108
-// Function ID: 17109
+// Module ID: 17169
+// Function ID: 17170
 // Name: FramePanelController
-// Dependencies: [19, 5072, 8690, 8691, 8693, 21, 504, 8952, 17076, 17109, 2]
-// Exports: default
+// Dependencies: [19, 5118, 8703, 8704, 8705, 21, 558, 576, 504, 8986, 17137, 17170, 2]
 
-// Module 17108 (FramePanelController)
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 8952 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 17109 */;
-import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5072 */;
-import FramesStore from "FramesStore" /* 8690 */;
+// Module 17169 (FramePanelController)
+import Fragment from "Fragment" /* 21 */;
+import FramesConstants from "FramesConstants" /* 8704 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 8705 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 8986 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 17170 */;
+import react from "react" /* 19 */;
+import ApplicationStore from "ApplicationStore" /* 5118 */;
+import FramesStore from "FramesStore" /* 8703 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const asLaunched = fn(8691).asLaunched;
-const ActivityPanelModes = fn(8693).ActivityPanelModes;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/frames/panel/native/FramePanelController.tsx");
+let children;
 
-export default function FramePanelController(children) {
+const asLaunched = FramesConstants.asLaunched;
+const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+  let application;
+  let connectedActivityAppId;
+  let currentApp;
+  let mainFrame;
   let mainFrameId;
+  let mode;
+  let orientationLockStateForApp;
+  let tmp10;
+  let tmp4;
+  let tmp5;
+  let tmp6;
+  let tmp = mainFrameId;
+  let obj = mainFrameId(576);
+  const cResult = obj.c(13);
+  children = children.children;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [FramesStore, ApplicationStore];
+    const fn = function u() {
+      const tmp = asLaunched(mainFrame.getMainFrame());
+      let mode;
+      if (tmp != null) {
+        mode = tmp.data.activityPanelMode;
+      }
+      if (mode == null) {
+        mode = constants.DISCONNECTED;
+      }
+      let connectedActivityAppId;
+      if (tmp != null) {
+        connectedActivityAppId = tmp.applicationId;
+      }
+      let currentApp;
+      if (null != connectedActivityAppId) {
+        currentApp = application.getApplication(connectedActivityAppId);
+      }
+      let orientationLockStateForApp;
+      if (tmp != null) {
+        orientationLockStateForApp = tmp.data.orientationLock;
+      }
+      mainFrameId = undefined;
+      if (tmp != null) {
+        mainFrameId = tmp.id;
+      }
+      return { mainFrameId, mode, connectedActivityAppId, currentApp, orientationLockStateForApp };
+    };
+    const items1 = [];
+    cResult[0] = items;
+    cResult[1] = fn;
+    cResult[2] = items1;
+    tmp4 = items;
+    tmp5 = fn;
+    tmp6 = items1;
+  } else {
+    [tmp4, tmp5, tmp6] = cResult;
+  }
+  const tmpResult = tmp(504);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp4, tmp5, tmp6);
+  mainFrameId = stateFromStoresObject.mainFrameId;
+  ({ mode, connectedActivityAppId, currentApp, orientationLockStateForApp } = stateFromStoresObject);
+  if (cResult[3] !== mainFrameId) {
+    const fn2 = function y(PIP) {
+      if (null != mainFrameId) {
+        const obj = FramesActionCreatorsDefault;
+        obj.updateFramePanelMode(tmp, PIP);
+      }
+    };
+    cResult[3] = mainFrameId;
+    cResult[4] = fn2;
+    tmp10 = fn2;
+  } else {
+    tmp10 = cResult[4];
+  }
+  if (cResult[5] === children) {
+    if (cResult[6] === connectedActivityAppId) {
+      if (cResult[7] === currentApp) {
+        if (cResult[8] === mode) {
+          if (cResult[9] === orientationLockStateForApp) {
+            if (cResult[10] === null != mainFrameId) {
+              let tmp12;
+              if (cResult[11] === tmp10) {
+                tmp12 = cResult[12];
+              }
+              return tmp12;
+            }
+          }
+        }
+      }
+    }
+  }
+  const BaseActivityPanelController = tmp(17137).BaseActivityPanelController;
+  const tmp13 = <BaseActivityPanelController context={FramePanelStateContextDefault} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={null != mainFrameId} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={tmp10}>{children}</BaseActivityPanelController>;
+  cResult[5] = children;
+  cResult[6] = connectedActivityAppId;
+  cResult[7] = currentApp;
+  cResult[8] = mode;
+  cResult[9] = orientationLockStateForApp;
+  cResult[10] = null != mainFrameId;
+  cResult[11] = tmp10;
+  cResult[12] = tmp13;
+  tmp12 = tmp13;
+}) : ((children) => {
+  let application;
+  let connectedActivityAppId;
+  let currentApp;
+  let mainFrame;
+  let mode;
+  let orientationLockStateForApp;
+  let mainFrameId;
+  children = children.children;
+  let obj = mainFrameId(504);
   const items = [FramesStore, ApplicationStore];
-  const stateFromStoresObject = mainFrameId(504).useStateFromStoresObject(items, () => {
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     const tmp = asLaunched(mainFrame.getMainFrame());
     let mode;
     if (tmp != null) {
@@ -51,11 +161,15 @@ export default function FramePanelController(children) {
   mainFrameId = stateFromStoresObject.mainFrameId;
   const items1 = [mainFrameId];
   ({ mode, connectedActivityAppId, currentApp, orientationLockStateForApp } = stateFromStoresObject);
-  const callback = noop.useCallback((PIP) => {
+  const callback = react.useCallback((PIP) => {
     if (null != mainFrameId) {
-      FramesActionCreatorsDefault.updateFramePanelMode(tmp, PIP);
+      const obj = FramesActionCreatorsDefault;
+      obj.updateFramePanelMode(tmp, PIP);
     }
   }, items1);
-  let obj = mainFrameId(504);
-  return jsx(mainFrameId(17076).BaseActivityPanelController, { context: FramePanelStateContextDefault, orientationLockStateForApp, mode, hasConnectedActivity: null != mainFrameId, connectedActivityAppId, currentApp, updateActivityPanelMode: callback, children: children.children });
-};
+  const BaseActivityPanelController = mainFrameId(17137).BaseActivityPanelController;
+  return <BaseActivityPanelController context={FramePanelStateContextDefault} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={null != mainFrameId} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={callback}>{children}</BaseActivityPanelController>;
+});
+const result = size.fileFinishedImporting("modules/frames/panel/native/FramePanelController.tsx");
+
+export default tmp2;

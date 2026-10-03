@@ -1,16 +1,17 @@
-// Module ID: 5385
-// Function ID: 5386
+// Module ID: 5618
+// Function ID: 5619
 // Name: GuildAvailabilityStore
-// Dependencies: [2066, 3, 504, 573, 2]
+// Dependencies: [2074, 3, 504, 584, 2]
 
-// Module 5385 (GuildAvailabilityStore)
+// Module 5618 (GuildAvailabilityStore)
 import LoggerDefault from "Logger" /* 3 */;
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildStore from "GuildStore" /* 2066 */;
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import size from "module_2" /* 2 */;
 
 function handleConnectionOpen(unavailableGuilds) {
-  set = new Set(unavailableGuilds.unavailableGuilds);
+  new Set(unavailableGuilds.unavailableGuilds);
   if (unavailableGuilds.unavailableGuilds.length > 0) {
     const _HermesInternal = HermesInternal;
     logger.warn("" + unavailableGuilds.unavailableGuilds.length + " guilds are unavailable on connection open: " + unavailableGuilds.unavailableGuilds);
@@ -26,21 +27,19 @@ function handleGuild(guild) {
   }
 }
 const logger = new LoggerDefault("GuildAvailabilityStore");
-let set = new Set();
-const Store = initializeDefault.Store;
+const tmp2 = new LoggerDefault("GuildAvailabilityStore");
+const set = new Set();
+const Store = get_initializedDefault.Store;
 class GuildAvailabilityStore extends Store {
+  initialize() {
+    this.waitFor(GuildStore);
+  }
+  isUnavailable(guildId) {
+    const hasItem = null != guildId && set.has(guildId);
+    return hasItem;
+  }
 }
 const prototype = GuildAvailabilityStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.waitFor(GuildStore);
-};
-prototype["isUnavailable"] = function isUnavailable(guildId) {
-  let hasItem = null != guildId;
-  if (hasItem) {
-    hasItem = set.has(guildId);
-  }
-  return hasItem;
-};
 Object.defineProperty(prototype, "totalGuilds", {
   get: function totalGuilds() {
     return GuildStore.getGuildCount() + set.size;
@@ -60,7 +59,7 @@ Object.defineProperty(prototype, "unavailableGuilds", {
   set: undefined
 });
 GuildAvailabilityStore.displayName = "GuildAvailabilityStore";
-const guildAvailabilityStore = new GuildAvailabilityStore(DispatcherDefault, {
+const obj = {
   CONNECTION_OPEN: handleConnectionOpen,
   OVERLAY_INITIALIZE: handleConnectionOpen,
   GUILD_UNAVAILABLE: function handleGuildUnavailable(guildId) {
@@ -69,6 +68,7 @@ const guildAvailabilityStore = new GuildAvailabilityStore(DispatcherDefault, {
     } else {
       const guild = GuildStore.getGuild(guildId.guildId);
       let str = "???";
+      const tmp4 = null != guild && null != guild.name;
       if (tmp4) {
         str = guild.name;
       }
@@ -91,8 +91,8 @@ const guildAvailabilityStore = new GuildAvailabilityStore(DispatcherDefault, {
       return false;
     }
   }
-});
-const size = fn(2);
+};
+const guildAvailabilityStore = new GuildAvailabilityStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("stores/GuildAvailabilityStore.tsx");
 
 export default guildAvailabilityStore;

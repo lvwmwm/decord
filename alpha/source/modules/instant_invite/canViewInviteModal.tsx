@@ -1,11 +1,11 @@
-// Module ID: 9257
-// Function ID: 9258
+// Module ID: 9263
+// Function ID: 9264
 // Name: canViewInviteModal
-// Dependencies: [1074, 2]
+// Dependencies: [1085, 2]
 // Exports: canViewInviteModal
 
-// Module 9257 (canViewInviteModal)
-import Constants from "Constants" /* 1074 */;
+// Module 9263 (canViewInviteModal)
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;
@@ -16,13 +16,9 @@ export const canViewInviteModal = function canViewInviteModal(PermissionStore, g
   if (defaultChannel == null) {
     tmp = guild;
   }
-  let canResult = null != tmp;
-  if (canResult) {
-    canResult = PermissionStore.can(Permissions.CREATE_INSTANT_INVITE, tmp);
-  }
+  let canResult = null != tmp && PermissionStore.can(Permissions.CREATE_INSTANT_INVITE, tmp);
   if (!canResult) {
     canResult = null != guild && null != guild.vanityURLCode;
-    const tmp5 = null != guild && null != guild.vanityURLCode;
   }
   if (!canResult) {
     let invite_code;

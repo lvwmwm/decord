@@ -1,28 +1,29 @@
-// Module ID: 13490
-// Function ID: 13491
+// Module ID: 13550
+// Function ID: 13551
 // Name: SocialLayerStorefrontConfigManager
-// Dependencies: [6725, 10458, 2]
+// Dependencies: [6613, 10532, 2]
 
-// Module 13490 (SocialLayerStorefrontConfigManager)
-import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10458 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
+// Module 13550 (SocialLayerStorefrontConfigManager)
+import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10532 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-class SocialLayerStorefrontConfigManager extends tmp2 {
+class SocialLayerStorefrontConfigManager extends AutomaticLifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    obj = { POST_CONNECTION_OPEN: null };
+    let onPostConnectionOpen;
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    const obj = { POST_CONNECTION_OPEN: onPostConnectionOpen.bind(applyArgumentsResult) };
     onPostConnectionOpen = applyArgumentsResult.onPostConnectionOpen;
-    obj.POST_CONNECTION_OPEN = onPostConnectionOpen.bind(applyArgumentsResult);
     applyArgumentsResult.actions = obj;
     return applyArgumentsResult;
   }
+  onPostConnectionOpen() {
+    const obj = SocialLayerStorefrontActionCreators;
+    const socialLayerStorefrontConfig = obj.fetchSocialLayerStorefrontConfig();
+  }
 }
-SocialLayerStorefrontConfigManager.prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
-  const socialLayerStorefrontConfig = SocialLayerStorefrontActionCreators.fetchSocialLayerStorefrontConfig();
-};
+const prototype = SocialLayerStorefrontConfigManager.prototype;
 const socialLayerStorefrontConfigManager = new SocialLayerStorefrontConfigManager();
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/slayer_storefront/SocialLayerStorefrontConfigManager.tsx");
 
 export default socialLayerStorefrontConfigManager;

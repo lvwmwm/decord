@@ -1,22 +1,51 @@
-// Module ID: 13867
-// Function ID: 13868
+// Module ID: 13934
+// Function ID: 13935
 // Name: Spacer
-// Dependencies: [19, 17, 21, 12, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 12, 558, 576, 2]
 
-// Module 13867 (Spacer)
-import noop from "module_19" /* 19 */;
+// Module 13934 (Spacer)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import react from "react" /* 19 */;
+import module_12 from "module_12" /* 12 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const apply = fn(12);
-let closure_2 = apply.memoize((width) => {
-  const size = { width, height: width };
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let closure_4 = module_12.memoize((width) => {
+  size = { width, height: width };
   return size;
 });
-let size = fn(2);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let pointerEvents;
+  let tmp2;
+  const obj = react2;
+  const cResult = obj.c(5);
+  ({ size, pointerEvents } = arg0);
+  if (cResult[0] !== size) {
+    const tmp4 = closure_4(size);
+    cResult[0] = size;
+    cResult[1] = tmp4;
+    tmp2 = tmp4;
+  } else {
+    tmp2 = cResult[1];
+  }
+  if (cResult[2] === pointerEvents) {
+    let tmp5;
+    if (cResult[3] === tmp2) {
+      tmp5 = cResult[4];
+    }
+    return tmp5;
+  }
+  const tmp6 = <View style={tmp2} pointerEvents={pointerEvents} />;
+  cResult[2] = pointerEvents;
+  cResult[3] = tmp2;
+  cResult[4] = tmp6;
+  tmp5 = tmp6;
+}) : ((pointerEvents) => <View style={closure_4(arg0.size)} pointerEvents={arg0.pointerEvents} />);
+let size = size_mod;
 const result = size.fileFinishedImporting("design/void/Spacer/native/Spacer.tsx");
 
-export default function Spacer(pointerEvents) {
-  return <View style={closure_2(arg0.size)} pointerEvents={arg0.pointerEvents} />;
-};
+export default tmp3;

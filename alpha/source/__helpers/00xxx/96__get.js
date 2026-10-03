@@ -7,6 +7,7 @@
 import _superPropBase from "_superPropBase" /* 97 */;
 
 function _get() {
+  let tmp = module;
   if (typeof Reflect !== "undefined") {
     const _Reflect2 = Reflect;
     if (Reflect.get) {
@@ -14,17 +15,13 @@ function _get() {
       exports = get.bind();
     }
     tmp.exports = exports;
-    const apply = exports.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(null);
-    } else {
-      applyArgumentsResult = apply(null, arguments);
-    }
-    return applyArgumentsResult;
+    let tmp3 = null;
+    return exports(...arguments);
   }
-  exports = (arg0, arg1, arg2) => {
+  exports = function(arg0, arg1, arg2) {
     const tmp = _superPropBase(arg0, arg1);
     if (tmp) {
+      let callResult;
       const _Object = Object;
       const iter = Object.getOwnPropertyDescriptor(tmp, arg1);
       if (iter.get) {
@@ -34,13 +31,14 @@ function _get() {
         if (arguments.length < 3) {
           tmp3 = arg0;
         }
-        typeof call === "unknown" ? get() : call(tmp3);
+        callResult = call(tmp3);
       } else {
-        return iter.value;
+        callResult = iter.value;
       }
+      return callResult;
     }
   };
 }
-let exports = _get;
+exports = _get;
 
 export default _get;

@@ -1,32 +1,32 @@
-// Module ID: 6928
-// Function ID: 6929
+// Module ID: 6826
+// Function ID: 6827
 // Name: GuildTemplateTooltipActionCreators
-// Dependencies: [5, 4498, 1074, 6929, 573, 2]
+// Dependencies: [5, 4509, 1085, 6827, 584, 2]
 
-// Module 6928 (GuildTemplateTooltipActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import PermissionStore from "PermissionStore" /* 4498 */;
+// Module 6826 (GuildTemplateTooltipActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import size from "module_2" /* 2 */;
 
-const Permissions = fn(1074).Permissions;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_templates/GuildTemplateTooltipActionCreators.tsx");
+let c1;
 
-export default {
+const Permissions = Constants.Permissions;
+let obj = {
   checkGuildTemplateDirty(guildId) {
-    closure_0 = guildId;
     return (async (arg0, value) => {
       if (guildId === 2) {
         guildId = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
+      } else if (tmp2 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -41,13 +41,14 @@ export default {
               return obj4;
             } else {
               const obj5 = { guildId };
+              const tmp12 = guildId;
               if (PermissionStore.canWithPartialContext(constants.MANAGE_GUILD, obj5)) {
+                const obj2 = guildId(c1[3]);
                 c1 = 1;
                 guildId = 1;
-                const obj6 = { value: guildId(c1[3]).loadTemplatesForGuild(tmp14), done: false };
+                const obj6 = { value: obj2.loadTemplatesForGuild(tmp12), done: false };
                 return obj6;
               }
-              tmp14 = guildId;
             }
           } else if (arg0 === 1) {
             guildId = 3;
@@ -58,18 +59,24 @@ export default {
             return obj;
           }
           guildId = 3;
-          return { value: "HermesInternal", done: null };
-        } catch (tmp7) {
-          guildId = tmp;
-          throw tmp7;
+          return { value: "IconComponent", done: "IconComponent" };
+        } catch (tmp6) {
+          guildId = 3;
+          throw tmp6;
         }
       }
     })();
   },
   hideGuildTemplateDirtyTooltip(guildId) {
-    DispatcherDefault.dispatch({ type: "GUILD_TEMPLATE_DIRTY_TOOLTIP_HIDE", guildId });
+    const obj = DispatcherDefault;
+    const obj2 = { type: "GUILD_TEMPLATE_DIRTY_TOOLTIP_HIDE", guildId };
+    obj.dispatch(obj2);
   },
   hideGuildTemplatePromotionTooltip() {
-    DispatcherDefault.dispatch({ type: "GUILD_TEMPLATE_PROMOTION_TOOLTIP_HIDE" });
+    const obj = DispatcherDefault;
+    obj.dispatch({ type: "GUILD_TEMPLATE_PROMOTION_TOOLTIP_HIDE" });
   }
 };
+const result = size.fileFinishedImporting("modules/guild_templates/GuildTemplateTooltipActionCreators.tsx");
+
+export default obj;

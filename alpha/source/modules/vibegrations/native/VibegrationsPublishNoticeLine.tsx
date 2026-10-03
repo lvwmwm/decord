@@ -1,67 +1,194 @@
-// Module ID: 16610
-// Function ID: 16611
+// Module ID: 16690
+// Function ID: 16691
 // Name: VibegrationsPublishNoticeLine
-// Dependencies: [19, 21, 16531, 16611, 4841, 1115, 16612, 3714, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 16608, 16691, 1126, 16692, 4886, 3723, 16693, 2]
 
-// Module 16610 (VibegrationsPublishNoticeLine)
-import _modDef3714 from "module_3714" /* 3714 */;
-import useVibegrationsPublishAction from "useVibegrationsPublishAction" /* 16531 */;
-import vibegrationsPublishCard from "vibegrationsPublishCard" /* 16612 */;
-import noop from "module_19" /* 19 */;
+// Module 16690 (VibegrationsPublishNoticeLine)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import useVibegrationsPublishAction from "useVibegrationsPublishAction" /* 16608 */;
+import vibegrationsReminderSlot from "vibegrationsReminderSlot" /* 16693 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const useVibegrationsPublishActionDefault = useVibegrationsPublishAction;
+let importDefault;
 
-require = fn;
-function PublishedNoticeLine(projectId) {
-  projectId = projectId.projectId;
-  const context = noop.useContext(projectId(16531).VibegrationsPublishActionContext);
-  const items = [context, projectId];
-  const callback = noop.useCallback(() => {
-    if (null != context) {
-      const result = useVibegrationsPublishAction.openVibegrationsPublishedApp(projectId, tmp);
+let tmp4;
+const _modDef3723 = tmp4(3723);
+const jsx = Fragment.jsx;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let notice;
+  let projectId;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(3);
+  ({ projectId, notice } = arg0);
+  if (cResult[0] === notice) {
+    let tmp2;
+    if (cResult[1] === projectId) {
+      tmp2 = cResult[2];
     }
-  }, items);
-  let obj = { variant: "text-md/normal", color: "text-default", children: null };
-  const intl = projectId(1115).intl;
-  const tmp2 = context(16611)(projectId);
-  obj.children = intl.format(projectId(16612).publishNoticeMessage(projectId.notice), { name: tmp2, onOpen: callback });
-  return jsx(projectId(4841).Text, { variant: "text-md/normal", color: "text-default", children: null });
-}
-function OutdatedNoticeLine(projectId) {
-  const tmp3 = useVibegrationsPublishActionDefault(projectId.projectId);
-  closure_0 = tmp3;
-  let tmp4 = null;
-  if (null != tmp3) {
-    tmp4 = null;
-    if (obj.showsOutdatedNotice(tmp3)) {
-      const obj2 = { variant: "text-xs/normal", color: "text-muted", children: null };
-      const intl = tmp5(1115).intl;
-      const obj3 = {
-        action: tmp3.label,
-        onUpdate() {
-              return closure_0.run("outdated_notice");
-            }
-      };
-      obj2.children = intl.format(_modDef3714.AcWS6c, obj3);
-      tmp4 = jsx(tmp5(4841).Text, { variant: "text-xs/normal", color: "text-muted", children: null });
-    }
-    obj = vibegrationsPublishCard;
+    return tmp2;
   }
-  return tmp4;
-}
-const jsx = fn(21).jsx;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsPublishNoticeLine.tsx");
-
-export default function VibegrationsPublishNoticeLine(arg0) {
+  if ("outdated" === notice) {
+    tmp5 = <closure_6 projectId={projectId} />;
+  } else {
+    tmp5 = <closure_5 projectId={projectId} notice={notice} />;
+  }
+  cResult[0] = notice;
+  cResult[1] = projectId;
+  cResult[2] = tmp5;
+  tmp2 = tmp5;
+}) : ((arg0) => {
+  let notice;
+  let projectId;
+  let tmp3;
   ({ projectId, notice } = arg0);
   if ("outdated" === notice) {
-    const obj2 = { projectId };
-    let tmp3 = <OutdatedNoticeLine projectId={projectId} />;
+    tmp3 = <closure_6 projectId={projectId} />;
   } else {
-    const obj = { projectId, notice };
-    tmp3 = <PublishedNoticeLine projectId={projectId} notice={notice} />;
+    tmp3 = <closure_5 projectId={projectId} notice={notice} />;
   }
   return tmp3;
-};
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+  const tmp = projectId;
+  let obj = projectId(576);
+  const cResult = obj.c(9);
+  projectId = projectId.projectId;
+  const notice = projectId.notice;
+  const context = react.useContext(projectId(16608).VibegrationsPublishActionContext);
+  const tmp5 = context(16691)(projectId);
+  if (cResult[0] === context) {
+    let tmp6;
+    if (cResult[1] === projectId) {
+      tmp6 = cResult[2];
+    }
+    if (cResult[3] === tmp6) {
+      if (cResult[4] === tmp5) {
+        let tmp7;
+        let tmp9;
+        if (cResult[5] === notice) {
+          tmp7 = cResult[6];
+        }
+        if (cResult[7] !== tmp7) {
+          const tmp11 = jsx(tmp(4886).Text, { variant: "text-md/normal", color: "text-default", children: tmp7 });
+          cResult[7] = tmp7;
+          cResult[8] = tmp11;
+          tmp9 = tmp11;
+        } else {
+          tmp9 = cResult[8];
+        }
+        return tmp9;
+      }
+    }
+    const intl = tmp(1126).intl;
+    const format = intl.format;
+    const obj3 = { name: tmp5, onOpen: tmp6 };
+    const tmpResult = tmp(16692);
+    const formatResult = format(tmpResult.publishNoticeMessage(notice), obj3);
+    cResult[3] = tmp6;
+    cResult[4] = tmp5;
+    cResult[5] = notice;
+    cResult[6] = formatResult;
+    tmp7 = formatResult;
+  }
+  const fn = function c() {
+    if (null != context) {
+      const obj = useVibegrationsPublishAction;
+      const result = obj.openVibegrationsPublishedApp(projectId, tmp);
+    }
+  };
+  cResult[0] = context;
+  cResult[1] = projectId;
+  cResult[2] = fn;
+  tmp6 = fn;
+}) : ((projectId) => {
+  projectId = projectId.projectId;
+  const notice = projectId.notice;
+  const context = react.useContext(projectId(16608).VibegrationsPublishActionContext);
+  const items = [context, projectId];
+  const tmp2 = context(16691)(projectId);
+  const callback = react.useCallback(() => {
+    if (null != context) {
+      const obj = useVibegrationsPublishAction;
+      const result = obj.openVibegrationsPublishedApp(projectId, tmp);
+    }
+  }, items);
+  const Text = projectId(4886).Text;
+  const intl = projectId(1126).intl;
+  const format = intl.format;
+  const obj2 = projectId(16692);
+  return <Text variant="text-md/normal" color="text-default">{format(obj2.publishNoticeMessage(notice), { name: tmp2, onOpen: callback })}</Text>;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+  let closure_1;
+  let obj = projectId(576);
+  const cResult = obj.c(5);
+  projectId = projectId.projectId;
+  const tmp5 = useVibegrationsPublishActionDefault(projectId);
+  importDefault = tmp5;
+  let tmp6 = null;
+  if (null != tmp5) {
+    if (cResult[0] === projectId) {
+      let tmp7;
+      let tmp9;
+      if (cResult[1] === tmp5) {
+        tmp7 = cResult[2];
+      }
+      if (cResult[3] !== tmp7) {
+        const tmp11 = jsx(projectId(4886).Text, { variant: "text-xs/normal", color: "text-muted", children: tmp7 });
+        cResult[3] = tmp7;
+        cResult[4] = tmp11;
+        tmp9 = tmp11;
+      } else {
+        tmp9 = cResult[4];
+      }
+      tmp6 = tmp9;
+    }
+    const intl = tmp(1126).intl;
+    const obj3 = {
+      action: tmp5.label,
+      onUpdate() {
+          const obj = vibegrationsReminderSlot;
+          const result = obj.markVibegrationsReminderActivity(projectId);
+          closure_1.run("outdated_notice");
+        }
+    };
+    const formatResult = intl.format(_modDef3723.AcWS6c, obj3);
+    cResult[0] = projectId;
+    cResult[1] = tmp5;
+    cResult[2] = formatResult;
+    tmp7 = formatResult;
+  }
+  return tmp6;
+}) : ((projectId) => {
+  let closure_1;
+  projectId = projectId.projectId;
+  importDefault = undefined;
+  const tmp3 = useVibegrationsPublishActionDefault(projectId);
+  importDefault = tmp3;
+  let tmp4 = null;
+  if (null != tmp3) {
+    const Text = projectId(4886).Text;
+    const intl = projectId(1126).intl;
+    const obj2 = {
+      action: tmp3.label,
+      onUpdate() {
+          const obj = vibegrationsReminderSlot;
+          const result = obj.markVibegrationsReminderActivity(projectId);
+          closure_1.run("outdated_notice");
+        }
+    };
+    tmp4 = <Text variant="text-xs/normal" color="text-muted">{intl.format(_modDef3723.AcWS6c, obj2)}</Text>;
+  }
+  return tmp4;
+});
+let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsPublishNoticeLine.tsx");
+
+export default tmp2;

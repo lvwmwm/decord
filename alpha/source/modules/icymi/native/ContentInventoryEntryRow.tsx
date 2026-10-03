@@ -1,21 +1,91 @@
-// Module ID: 16364
-// Function ID: 16365
+// Module ID: 16440
+// Function ID: 16441
 // Name: ContentInventoryEntryRow
-// Dependencies: [19, 4508, 21, 504, 7769, 16365, 16374, 2]
-// Exports: default
+// Dependencies: [19, 4519, 21, 558, 576, 504, 7813, 16441, 16448, 2]
 
-// Module 16364 (ContentInventoryEntryRow)
-import GamingLikeEntryRowDefault from "GamingLikeEntryRow" /* 16365 */;
-import CustomStatusEntryRowDefault from "CustomStatusEntryRow" /* 16374 */;
-import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4508 */;
+// Module 16440 (ContentInventoryEntryRow)
+import Fragment from "Fragment" /* 21 */;
+import GamingLikeEntryRowDefault from "GamingLikeEntryRow" /* 16441 */;
+import CustomStatusEntryRowDefault from "CustomStatusEntryRow" /* 16448 */;
+import react from "react" /* 19 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/icymi/native/ContentInventoryEntryRow.tsx");
+let content;
 
-export default function ContentInventoryEntryRow(content) {
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((content) => {
+  let first;
+  let renderForScreenshot;
+  let tmp7;
+  let visible;
+  const obj = content(576);
+  const cResult = obj.c(10);
+  content = content.content;
+  ({ renderForScreenshot, visible } = content);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [RelationshipStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== content.author_id) {
+    const fn = function s() {
+      return RelationshipStore.isBlockedOrIgnored(content.author_id);
+    };
+    cResult[1] = content.author_id;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult = content(504);
+  if (tmpResult.useStateFromStores(first, tmp7)) {
+    return null;
+  } else {
+    const content_type = content.content_type;
+    if (content(7813).ContentInventoryEntryType.TOP_GAME !== content_type) {
+      if (content(7813).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
+        if (content(7813).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
+          if (visible == null) {
+            visible = false;
+          }
+          if (cResult[6] === (undefined !== renderForScreenshot && renderForScreenshot)) {
+            if (cResult[7] === content) {
+              let tmp10;
+              if (cResult[8] === visible) {
+                tmp10 = cResult[9];
+              }
+              return tmp10;
+            }
+          }
+          const tmp13 = jsx(CustomStatusEntryRowDefault, { content, renderForScreenshot: undefined !== renderForScreenshot && renderForScreenshot, visible });
+          cResult[6] = undefined !== renderForScreenshot && renderForScreenshot;
+          cResult[7] = content;
+          cResult[8] = visible;
+          cResult[9] = tmp13;
+          tmp10 = tmp13;
+        } else {
+          return null;
+        }
+      }
+    }
+    if (cResult[3] === (undefined !== renderForScreenshot && renderForScreenshot)) {
+      let tmp14;
+      if (cResult[4] === content) {
+        tmp14 = cResult[5];
+      }
+      return tmp14;
+    }
+    const tmp17 = jsx(GamingLikeEntryRowDefault, { content, renderForScreenshot: undefined !== renderForScreenshot && renderForScreenshot });
+    cResult[3] = undefined !== renderForScreenshot && renderForScreenshot;
+    cResult[4] = content;
+    cResult[5] = tmp17;
+    tmp14 = tmp17;
+  }
+}) : ((content) => {
   content = content.content;
   let flag = content.renderForScreenshot;
   if (flag === undefined) {
@@ -23,26 +93,29 @@ export default function ContentInventoryEntryRow(content) {
   }
   let flag2 = content.visible;
   const items = [RelationshipStore];
+  const obj = content(504);
   if (obj.useStateFromStores(items, () => RelationshipStore.isBlockedOrIgnored(content.author_id))) {
     return null;
   } else {
     const content_type = content.content_type;
-    if (tmp(7769).ContentInventoryEntryType.TOP_GAME !== content_type) {
-      if (tmp(7769).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
-        if (tmp(7769).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
-          const obj2 = { content, renderForScreenshot: flag, visible: null };
+    if (content(7813).ContentInventoryEntryType.TOP_GAME !== content_type) {
+      if (content(7813).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
+        if (content(7813).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
+          const obj2 = { content, renderForScreenshot: flag, visible: flag2 };
+          const tmp4 = jsx;
+          const tmp6 = CustomStatusEntryRowDefault;
           if (flag2 == null) {
             flag2 = false;
           }
-          obj2.visible = flag2;
-          return jsx(CustomStatusEntryRowDefault, { content, renderForScreenshot: flag, visible: null });
+          return tmp4(tmp6, obj2);
         } else {
           return null;
         }
       }
     }
-    const obj3 = { content, renderForScreenshot: flag };
     return jsx(GamingLikeEntryRowDefault, { content, renderForScreenshot: flag });
   }
-  obj = content(504);
-};
+});
+const result = size.fileFinishedImporting("modules/icymi/native/ContentInventoryEntryRow.tsx");
+
+export default tmp3;

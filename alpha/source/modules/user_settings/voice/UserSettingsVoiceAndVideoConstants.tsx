@@ -1,9 +1,9 @@
-// Module ID: 13748
-// Function ID: 13749
+// Module ID: 13814
+// Function ID: 13815
 // Name: UserSettingsVoiceAndVideoConstants
 // Dependencies: [2]
 
-// Module 13748 (UserSettingsVoiceAndVideoConstants)
+// Module 13814 (UserSettingsVoiceAndVideoConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/voice/UserSettingsVoiceAndVideoConstants.tsx");

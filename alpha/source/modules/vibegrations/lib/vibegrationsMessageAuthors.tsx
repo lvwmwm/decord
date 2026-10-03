@@ -1,25 +1,28 @@
-// Module ID: 16570
-// Function ID: 16571
+// Module ID: 16647
+// Function ID: 16648
 // Name: vibegrationsMessageAuthors
-// Dependencies: [1372, 7808, 2]
+// Dependencies: [1377, 7852, 2]
 // Exports: requestMessageAuthor, resolveMessageAuthor
 
-// Module 16570 (vibegrationsMessageAuthors)
-import UserActionCreatorsAll from "UserActionCreators" /* 7808 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 16647 (vibegrationsMessageAuthors)
+import UserActionCreatorsAll from "UserActionCreators" /* 7852 */;
+import UserStore from "UserStore" /* 1377 */;
+import size from "module_2" /* 2 */;
+
+let importAll;
 
 const set = new Set();
 const map = new Map();
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/vibegrations/lib/vibegrationsMessageAuthors.tsx");
 
-export const resolveMessageAuthor = function resolveMessageAuthor(stateFromStores, user, currentUser) {
-  if (null == stateFromStores) {
+export const resolveMessageAuthor = function resolveMessageAuthor(arg0, user, currentUser) {
+  let tmp;
+  if (null == arg0) {
     let tmp2 = currentUser;
     if (currentUser == null) {
       tmp2 = null;
     }
-    let tmp = tmp2;
+    tmp = tmp2;
   } else {
     tmp = user;
     if (user == null) {
@@ -28,27 +31,29 @@ export const resolveMessageAuthor = function resolveMessageAuthor(stateFromStore
   }
   return tmp;
 };
-export const requestMessageAuthor = function requestMessageAuthor(stateFromStores) {
-  importAll = stateFromStores;
-  if (null != stateFromStores) {
-    if (!set.has(stateFromStores)) {
-      if (null == UserStore.getUser(stateFromStores)) {
-        let num = map.get(stateFromStores);
+export const requestMessageAuthor = function requestMessageAuthor(arg0) {
+  let closure_0;
+  importAll = arg0;
+  if (null != arg0) {
+    const obj2 = set;
+    if (!set.has(arg0)) {
+      if (null == UserStore.getUser(arg0)) {
+        let num = map.get(arg0);
+        const obj3 = map;
         if (num == null) {
           num = 0;
         }
         if (num < 3) {
-          const result = obj3.set(stateFromStores, num + 1);
-          obj2.add(stateFromStores);
-          const user = UserActionCreatorsAll.getUser(stateFromStores);
-          user.finally(() => set.delete(closure_0)).catch(() => {
+          const result = obj3.set(arg0, num + 1);
+          obj2.add(arg0);
+          const obj = UserActionCreatorsAll;
+          const user = obj.getUser(arg0);
+          const cleanupPromise = user.finally(() => set.delete(closure_0));
+          cleanupPromise.catch(() => {
 
           });
-          const cleanupPromise = user.finally(() => set.delete(closure_0));
         }
-        obj3 = map;
       }
     }
-    obj2 = set;
   }
 };

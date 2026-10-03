@@ -1,37 +1,239 @@
-// Module ID: 12773
-// Function ID: 12774
+// Module ID: 12809
+// Function ID: 12810
 // Name: ShopThisLookMarketingCoachmark
-// Dependencies: [19, 17, 2041, 6815, 21, 4845, 12774, 12768, 1115, 10789, 2]
-// Exports: default
+// Dependencies: [19, 17, 2048, 6707, 21, 4890, 558, 576, 12810, 12804, 1126, 9882, 2]
 
-// Module 12773 (ShopThisLookMarketingCoachmark)
-import util from "util" /* 1115 */;
-import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 12768 */;
-import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 12774 */;
-import noop from "module_19" /* 19 */;
+// Module 12809 (ShopThisLookMarketingCoachmark)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import intl4 from "intl" /* 1126 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import Constants from "Constants" /* 6707 */;
+import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 12804 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-function ShopThisLookMarketingCoachmarkImage() {
-  return <View style={closure_7().imageContainer}>{jsx(BumpingFistsSpotIllustration.BumpingFistsSpotIllustration, { width: 100, height: 56, resizeMode: "contain" })}</View>;
-}
-const View = fn(17).View;
-const ContentDismissActionType = fn(2041).ContentDismissActionType;
-const UserProfileThemeTypes = fn(6815).UserProfileThemeTypes;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
+let visible;
+
+let tmp;
+const BumpingFistsSpotIllustration = tmp(12810);
+const View = react_native.View;
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+const UserProfileThemeTypes = Constants.UserProfileThemeTypes;
+const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" } });
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/collectibles/shop_this_look/native/ShopThisLookMarketingCoachmark.tsx");
-
-export default function ShopThisLookMarketingCoachmark(visible) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(3);
+  const tmp4 = closure_7();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp7 = jsx(BumpingFistsSpotIllustration.BumpingFistsSpotIllustration, { width: 100, height: 56, resizeMode: "contain" });
+    cResult[0] = tmp7;
+    first = tmp7;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== tmp4.imageContainer) {
+    const tmp11 = <View style={tmp4.imageContainer}>{first}</View>;
+    cResult[1] = tmp4.imageContainer;
+    cResult[2] = tmp11;
+    tmp8 = tmp11;
+  } else {
+    tmp8 = cResult[2];
+  }
+  return tmp8;
+}) : (() => <View style={closure_7().imageContainer}>{jsx(BumpingFistsSpotIllustration.BumpingFistsSpotIllustration, { width: 100, height: 56, resizeMode: "contain" })}</View>);
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
+  let constants2;
+  let onDismiss;
+  let tmp10;
+  let tmp9;
+  let tmp = visible;
+  let obj = visible(onDismiss[7]);
+  const cResult = obj.c(20);
+  visible = visible.visible;
+  onDismiss = visible.onDismiss;
+  const onPress = visible.onPress;
+  let closure_3 = onPress.useRef(false);
+  if (cResult[0] === onDismiss) {
+    let tmp4;
+    let tmp7;
+    let tmp6;
+    if (cResult[1] === onPress) {
+      tmp4 = cResult[2];
+    }
+    if (cResult[3] !== onDismiss) {
+      class E {
+        constructor() {
+          closure_3.current = true;
+          onDismiss(ContentDismissActionType.USER_DISMISS);
+        }
+      }
+      cResult[3] = onDismiss;
+      cResult[4] = E;
+    } else {
+      class E {
+        constructor() {
+          closure_3.current = true;
+          onDismiss(ContentDismissActionType.USER_DISMISS);
+        }
+      }
+    }
+    if (cResult[5] !== visible) {
+      class I {
+        constructor() {
+          const tmp = visible;
+          if (tmp) {
+            const obj = ShopThisLookAnalyticsUtils;
+            const result = obj.trackShopThisLookMenuAction(ShopThisLookAnalyticsUtils.ShopThisLookMenuAction.COACHMARK_VIEWED, UserProfileThemeTypes.ACTION_SHEET);
+          }
+        }
+      }
+      const items = [visible];
+      cResult[5] = visible;
+      cResult[6] = I;
+      cResult[7] = items;
+      tmp7 = items;
+      tmp6 = I;
+    } else {
+      class I {
+        constructor() {
+          const tmp = visible;
+          if (tmp) {
+            const obj = ShopThisLookAnalyticsUtils;
+            const result = obj.trackShopThisLookMenuAction(ShopThisLookAnalyticsUtils.ShopThisLookMenuAction.COACHMARK_VIEWED, UserProfileThemeTypes.ACTION_SHEET);
+          }
+        }
+      }
+      tmp7 = cResult[7];
+    }
+    const effect = obj2.useEffect(tmp6, tmp7);
+    if (cResult[8] === onDismiss) {
+      let tmp14;
+      let tmp13;
+      let tmp18;
+      let tmp17;
+      class I {
+        constructor() {
+          const tmp = visible;
+          if (tmp) {
+            const obj = ShopThisLookAnalyticsUtils;
+            const result = obj.trackShopThisLookMenuAction(ShopThisLookAnalyticsUtils.ShopThisLookMenuAction.COACHMARK_VIEWED, UserProfileThemeTypes.ACTION_SHEET);
+          }
+        }
+      }
+      const effect1 = obj2.useEffect(tmp9, tmp10);
+      const _Symbol = Symbol;
+      if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+        class I {
+          constructor() {
+            const tmp = visible;
+            if (tmp) {
+              const obj = ShopThisLookAnalyticsUtils;
+              const result = obj.trackShopThisLookMenuAction(ShopThisLookAnalyticsUtils.ShopThisLookMenuAction.COACHMARK_VIEWED, UserProfileThemeTypes.ACTION_SHEET);
+            }
+          }
+        }
+        const stringResult = obj3.string(tmp(onDismiss[10]).t.TrOccu);
+        const intl = tmp(tmp2[10]).intl;
+        const stringResult1 = intl.string(tmp(onDismiss[10]).t["Eh5+1F"]);
+        cResult[12] = stringResult;
+        cResult[13] = stringResult1;
+        tmp14 = stringResult1;
+        tmp13 = stringResult;
+      } else {
+        class I {
+          constructor() {
+            const tmp = visible;
+            if (tmp) {
+              const obj = ShopThisLookAnalyticsUtils;
+              const result = obj.trackShopThisLookMenuAction(ShopThisLookAnalyticsUtils.ShopThisLookMenuAction.COACHMARK_VIEWED, UserProfileThemeTypes.ACTION_SHEET);
+            }
+          }
+        }
+        tmp14 = cResult[13];
+      }
+      const _Symbol2 = Symbol;
+      if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+        class L {
+          constructor() {
+            return <closure_1_8 />;
+          }
+        }
+        const intl2 = tmp(tmp2[10]).intl;
+        const stringResult2 = intl2.string(tmp(onDismiss[10]).t["bqZVd/"]);
+        cResult[14] = stringResult2;
+        cResult[15] = L;
+        tmp18 = L;
+        tmp17 = stringResult2;
+      } else {
+        class L {
+          constructor() {
+            return <closure_1_8 />;
+          }
+        }
+        tmp18 = cResult[15];
+      }
+      if (cResult[16] === tmp4) {
+        class L {
+          constructor() {
+            return <closure_1_8 />;
+          }
+        }
+      }
+      const obj4 = { title: tmp13, description: tmp14, visible, position: "bottom", renderImgComponent: tmp18, buttonLabel: tmp17, buttonVariant: "primary", onButtonPress: tmp4, onDismiss: tmp5 };
+      cResult[16] = tmp4;
+      cResult[17] = tmp5;
+      cResult[18] = visible;
+      cResult[19] = obj4;
+    }
+    const fn2 = function f() {
+      let ref;
+      return visible ? (() => {
+        const obj = visible(onDismiss[9]);
+        const result = obj.trackShopThisLookMenuAction(visible(onDismiss[9]).ShopThisLookMenuAction.COACHMARK_DISMISSED, constants2.ACTION_SHEET);
+        if (!ref.current) {
+          closure_1_1(constants.AUTO_DISMISS);
+        }
+      }) : undefined;
+    };
+    const items1 = [visible, onDismiss];
+    cResult[8] = onDismiss;
+    cResult[9] = visible;
+    cResult[10] = fn2;
+    cResult[11] = items1;
+    tmp10 = items1;
+    tmp9 = fn2;
+  }
+  const fn = function u() {
+    closure_3.current = true;
+    const obj = ShopThisLookAnalyticsUtils;
+    const result = obj.trackShopThisLookMenuAction(ShopThisLookAnalyticsUtils.ShopThisLookMenuAction.COACHMARK_CTA_CLICKED, UserProfileThemeTypes.ACTION_SHEET);
+    onDismiss(ContentDismissActionType.TAKE_ACTION);
+    onPress();
+  };
+  cResult[0] = onDismiss;
+  cResult[1] = onPress;
+  cResult[2] = fn;
+  tmp4 = fn;
+}) : ((visible) => {
   visible = visible.visible;
   const onDismiss = visible.onDismiss;
   const onPress = visible.onPress;
-  closure_3 = onPress.useRef(false);
+  const targetRef = visible.targetRef;
+  let closure_3 = onPress.useRef(false);
   const items = [onDismiss, onPress];
   const onButtonPress = onPress.useCallback(() => {
     closure_3.current = true;
-    const result = ShopThisLookAnalyticsUtils.trackShopThisLookMenuAction(ShopThisLookAnalyticsUtils.ShopThisLookMenuAction.COACHMARK_CTA_CLICKED, UserProfileThemeTypes.ACTION_SHEET);
+    const obj = ShopThisLookAnalyticsUtils;
+    const result = obj.trackShopThisLookMenuAction(ShopThisLookAnalyticsUtils.ShopThisLookMenuAction.COACHMARK_CTA_CLICKED, UserProfileThemeTypes.ACTION_SHEET);
     onDismiss(ContentDismissActionType.TAKE_ACTION);
     onPress();
   }, items);
@@ -42,34 +244,50 @@ export default function ShopThisLookMarketingCoachmark(visible) {
   }, items1);
   const items2 = [visible];
   const effect = onPress.useEffect(() => {
-    if (visible) {
-      const result = ShopThisLookAnalyticsUtils.trackShopThisLookMenuAction(ShopThisLookAnalyticsUtils.ShopThisLookMenuAction.COACHMARK_VIEWED, UserProfileThemeTypes.ACTION_SHEET);
+    const tmp = visible;
+    if (tmp) {
+      const obj = ShopThisLookAnalyticsUtils;
+      const result = obj.trackShopThisLookMenuAction(ShopThisLookAnalyticsUtils.ShopThisLookMenuAction.COACHMARK_VIEWED, UserProfileThemeTypes.ACTION_SHEET);
     }
   }, items2);
   const items3 = [visible, onDismiss];
-  const effect1 = onPress.useEffect(() => visible ? (() => {
-    const result = visible(onDismiss[7]).trackShopThisLookMenuAction(visible(onDismiss[7]).ShopThisLookMenuAction.COACHMARK_DISMISSED, callback1.ACTION_SHEET);
-    if (!ref.current) {
-      closure_1_1(callback.AUTO_DISMISS);
-    }
-  }) : undefined, items3);
+  const effect1 = onPress.useEffect(() => {
+    let ref;
+    return visible ? (() => {
+      const obj = visible(onDismiss[9]);
+      const result = obj.trackShopThisLookMenuAction(visible(onDismiss[9]).ShopThisLookMenuAction.COACHMARK_DISMISSED, callback1.ACTION_SHEET);
+      if (!ref.current) {
+        closure_1_1(callback.AUTO_DISMISS);
+      }
+    }) : undefined;
+  }, items3);
   const items4 = [visible, onButtonPress, callback1];
   const memo = onPress.useMemo(() => {
-    const obj = { title: null, description: null, visible: null, position: "bottom", renderImgComponent: null, buttonLabel: null, buttonVariant: "primary", onButtonPress: null, onDismiss: null };
-    const intl = util.intl;
-    obj.title = intl.string(util.t.TrOccu);
-    const intl2 = util.intl;
-    obj.description = intl2.string(util.t["Eh5+1F"]);
-    obj.visible = visible;
-    obj.renderImgComponent = function renderImgComponent() {
-      return closure_1_6(closure_1_8, {});
+    let intl;
+    let intl2;
+    let intl3;
+    const obj = {
+      title: intl.string(intl4.t.TrOccu),
+      description: intl2.string(intl4.t["Eh5+1F"]),
+      visible,
+      position: "bottom",
+      renderImgComponent() {
+        return closure_1_6(closure_1_8, {});
+      },
+      buttonLabel: intl3.string(intl4.t["bqZVd/"]),
+      buttonVariant: "primary",
+      onButtonPress,
+      onDismiss: callback1
     };
-    const intl3 = util.intl;
-    obj.buttonLabel = intl3.string(util.t["bqZVd/"]);
-    obj.onButtonPress = onButtonPress;
-    obj.onDismiss = callback1;
+    intl = intl4.intl;
+    intl2 = intl4.intl;
+    intl3 = intl4.intl;
     return obj;
   }, items4);
-  const coachmark = visible(onDismiss[9]).useCoachmark(visible.targetRef, memo);
+  let obj = visible(onDismiss[11]);
+  const coachmark = obj.useCoachmark(targetRef, memo);
   return null;
-};
+});
+let result = size.fileFinishedImporting("modules/collectibles/shop_this_look/native/ShopThisLookMarketingCoachmark.tsx");
+
+export default tmp2;

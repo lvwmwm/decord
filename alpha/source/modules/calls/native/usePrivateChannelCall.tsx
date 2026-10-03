@@ -1,126 +1,321 @@
-// Module ID: 12903
-// Function ID: 12904
+// Module ID: 12957
+// Function ID: 12958
 // Name: usePrivateChannelCall
-// Dependencies: [5, 19, 2044, 504, 1115, 10524, 4858, 2]
-// Exports: default
+// Dependencies: [5, 19, 2051, 558, 576, 1126, 10603, 504, 4903, 2]
 
-// Module 12903 (usePrivateChannelCall)
-import util from "util" /* 1115 */;
-import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 10524 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
+// Module 12957 (usePrivateChannelCall)
+import intl3 from "intl" /* 1126 */;
+import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 10603 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, c2, c3, dependencyMap;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/calls/native/usePrivateChannelCall.tsx");
-
-export default function usePrivateChannelCall(arg0, arg1, arg2) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+  let accessibilityHint;
+  let closure_0;
+  let closure_2;
+  let first;
+  let inCall;
+  let text;
   _require = arg0;
-  closure_1 = arg1;
+  let closure_1 = arg1;
   dependencyMap = arg2;
-  const items = [ChannelStore];
-  const items1 = [arg1, arg0];
-  const stateFromStoresObject = require("initialize").useStateFromStoresObject(items, () => {
-    const channel = ChannelStore.getChannel(ChannelStore.getDMFromUserId(closure_0));
-    if (null != channel) {
-      if (channel.isPrivate()) {
-        ({ text: obj2.text, accessibilityHint: obj2.accessibilityHint, inCall: obj2.inCall } = getPrivateChannelCallDefault(channel, closure_1));
-        return { text: null, accessibilityHint: null, inCall: null };
+  const tmp = _require;
+  const tmp2 = dependencyMap;
+  let obj = require("react");
+  const cResult = obj.c(14);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg1) {
+    let tmp6;
+    let tmp7;
+    if (cResult[2] === arg0) {
+      tmp6 = cResult[3];
+      tmp7 = cResult[4];
+    }
+    const tmpResult = tmp(504);
+    const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp6, tmp7);
+    ({ text, accessibilityHint, inCall } = stateFromStoresObject);
+    if (cResult[5] === arg1) {
+      if (cResult[6] === arg2) {
+        let tmp9;
+        if (cResult[7] === arg0) {
+          tmp9 = cResult[8];
+        }
+        if (cResult[9] === accessibilityHint) {
+          if (cResult[10] === tmp9) {
+            if (cResult[11] === inCall) {
+              let tmp11;
+              if (cResult[12] === text) {
+                tmp11 = cResult[13];
+              }
+              return tmp11;
+            }
+          }
+        }
+        let obj2 = { text, inCall, accessibilityHint, handlePress: tmp9 };
+        cResult[9] = accessibilityHint;
+        cResult[10] = tmp9;
+        cResult[11] = inCall;
+        cResult[12] = text;
+        cResult[13] = obj2;
+        tmp11 = obj2;
       }
     }
-    const intl = util.intl;
-    const string = intl.string;
-    const t = util.t;
-    if (closure_1) {
-      let stringResult = string(t["7AWk50"]);
-      let tmp10 = tmp6;
-    } else {
-      stringResult = string(t["EZgS+9"]);
-      tmp10 = tmp6;
-    }
-    const obj3 = { text: stringResult, accessibilityHint: null, inCall: false };
-    const intl2 = tmp10(1115).intl;
-    const string2 = intl2.string;
-    const t2 = tmp10(1115).t;
-    if (closure_1) {
-      let string2Result = string2(t2.oCqlGG);
-    } else {
-      string2Result = string2(t2.focH1t);
-    }
-    obj3.accessibilityHint = string2Result;
-    return obj3;
-  }, items1);
-  const obj2 = { text: stateFromStoresObject.text, inCall: stateFromStoresObject.inCall, accessibilityHint: stateFromStoresObject.accessibilityHint, handlePress: null };
-  const items2 = [arg0, arg1, arg2];
-  obj2.handlePress = noop.useCallback(asyncGeneratorStep(async (arg0, value) => {
-    if (c3 === 2) {
-      c3 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp5 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj5 = { value, done: true };
-        return obj5;
+    let tmp10 = _asyncToGenerator;
+    _require = _asyncToGenerator(async (arg0, value) => {
+      let obj4;
+      let v1;
+      if (c3 === 2) {
+        c3 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj5 = { value, done: true };
+          return obj5;
+        } else {
+          return { value: "IconComponent", done: "IconComponent" };
+        }
       } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c3 = 2;
-        if (0 === dependencyMap) {
-          if (arg0 === 1) {
+        try {
+          let channel;
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              const obj6 = { value, done: true };
+              return obj6;
+            } else {
+              channel = undefined;
+              closure_1 = undefined;
+              const tmp30 = channel;
+              channel = authStore.getChannel(authStore.getDMFromUserId(channel));
+              if (null == channel) {
+                c2 = 1;
+                c3 = 1;
+                const obj7 = { value: obj4.ensurePrivateChannel(tmp30), done: false };
+                obj4 = closure_2_1(closure_2_2[8]);
+                return obj7;
+              }
+            }
+          } else if (arg0 === 1) {
             c3 = 3;
             throw value;
           } else if (arg0 === 2) {
             c3 = 3;
-            const obj6 = { value, done: true };
-            return obj6;
+            const obj = { value, done: true };
+            return obj;
           } else {
-            closure_0 = tmp2;
-            let channel;
-            closure_128_1 = undefined;
-            channel = authStore.getChannel(authStore.getDMFromUserId(closure_0));
-            if (null == channel) {
-              dependencyMap = 1;
-              c3 = 1;
-              const obj7 = { value: tmp3(4858).ensurePrivateChannel(tmp32), done: false };
-              return obj7;
-            }
-            tmp32 = closure_0;
+            closure_1 = value;
+            channel = authStore.getChannel(closure_1);
           }
-        } else if (arg0 === 1) {
+          let isPrivateResult;
+          const obj2 = channel;
+          if (channel != null) {
+            isPrivateResult = obj2.isPrivate();
+          }
+          if (isPrivateResult) {
+            const obj3 = closure_2_1(closure_2_2[6])(channel, closure_1);
+            obj3.onPress();
+          }
+          if (c2 != null) {
+            c2();
+          }
           c3 = 3;
-          throw value;
-        } else if (arg0 === 2) {
+          return { value: "IconComponent", done: "IconComponent" };
+        } catch (tmp24) {
           c3 = 3;
-          const obj = { value, done: true };
-          return obj;
-        } else {
-          closure_128_1 = value;
-          channel = authStore.getChannel(closure_128_1);
+          throw tmp24;
         }
-        let isPrivateResult;
-        if (channel != null) {
-          isPrivateResult = channel.isPrivate();
-        }
-        if (isPrivateResult) {
-          tmp3(10524)(channel, closure_129_1).onPress();
-          const obj3 = tmp3(10524)(channel, closure_129_1);
-        }
-        if (closure_129_2 != null) {
-          closure_129_2();
-        }
-        c3 = 3;
-        return { value: "HermesInternal", done: null };
-      } catch (tmp25) {
-        c3 = tmp;
-        throw tmp25;
+      }
+    });
+    const fn2 = function() {
+      return closure_0(...arguments);
+    };
+    cResult[5] = arg1;
+    cResult[6] = arg2;
+    cResult[7] = arg0;
+    cResult[8] = fn2;
+    tmp9 = fn2;
+  }
+  const fn = function o() {
+    let string2Result;
+    let stringResult;
+    let tmp10;
+    const channel = ChannelStore.getChannel(ChannelStore.getDMFromUserId(closure_0));
+    if (null != channel) {
+      if (channel.isPrivate()) {
+        const obj = { text: null, accessibilityHint: null, inCall: null };
+        ({ text: obj2.text, accessibilityHint: obj2.accessibilityHint, inCall: obj2.inCall } = getPrivateChannelCallDefault(channel, closure_1));
+        getPrivateChannelCallDefault(channel, closure_1);
+        return obj;
       }
     }
-  }), items2);
+    const intl = intl3.intl;
+    const string = intl.string;
+    const t = intl3.t;
+    if (closure_1) {
+      stringResult = string(t["7AWk50"]);
+      tmp10 = tmp6;
+    } else {
+      stringResult = string(t["EZgS+9"]);
+      tmp10 = tmp6;
+    }
+    const obj3 = { text: stringResult, accessibilityHint: string2Result, inCall: false };
+    const intl2 = tmp10(1126).intl;
+    const string2 = intl2.string;
+    const t2 = tmp10(1126).t;
+    if (closure_1) {
+      string2Result = string2(t2.oCqlGG);
+    } else {
+      string2Result = string2(t2.focH1t);
+    }
+    return obj3;
+  };
+  const items1 = [arg1, arg0];
+  cResult[1] = arg1;
+  cResult[2] = arg0;
+  cResult[3] = fn;
+  cResult[4] = items1;
+  tmp7 = items1;
+  tmp6 = fn;
+}) : ((arg0, arg1, arg2) => {
+  let closure_0;
+  let closure_2;
+  let items2;
+  _require = arg0;
+  let closure_1 = arg1;
+  dependencyMap = arg2;
+  let obj = require("get initialized");
+  const items = [ChannelStore];
+  const items1 = [arg1, arg0];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    let string2Result;
+    let stringResult;
+    let tmp10;
+    const channel = ChannelStore.getChannel(ChannelStore.getDMFromUserId(closure_0));
+    if (null != channel) {
+      if (channel.isPrivate()) {
+        const obj = { text: null, accessibilityHint: null, inCall: null };
+        ({ text: obj2.text, accessibilityHint: obj2.accessibilityHint, inCall: obj2.inCall } = getPrivateChannelCallDefault(channel, closure_1));
+        getPrivateChannelCallDefault(channel, closure_1);
+        return obj;
+      }
+    }
+    const intl = intl3.intl;
+    const string = intl.string;
+    const t = intl3.t;
+    if (closure_1) {
+      stringResult = string(t["7AWk50"]);
+      tmp10 = tmp6;
+    } else {
+      stringResult = string(t["EZgS+9"]);
+      tmp10 = tmp6;
+    }
+    const obj3 = { text: stringResult, accessibilityHint: string2Result, inCall: false };
+    const intl2 = tmp10(1126).intl;
+    const string2 = intl2.string;
+    const t2 = tmp10(1126).t;
+    if (closure_1) {
+      string2Result = string2(t2.oCqlGG);
+    } else {
+      string2Result = string2(t2.focH1t);
+    }
+    return obj3;
+  }, items1);
+  let obj2 = {
+    text: stateFromStoresObject.text,
+    inCall: stateFromStoresObject.inCall,
+    accessibilityHint: stateFromStoresObject.accessibilityHint,
+    handlePress: react.useCallback(_asyncToGenerator(async (arg0, value) => {
+      if (c3 === 2) {
+        c3 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj5 = { value, done: true };
+          return obj5;
+        } else {
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } else {
+        try {
+          let channel;
+          let tmp2;
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              const obj6 = { value, done: true };
+              return obj6;
+            } else {
+              channel = undefined;
+              tmp2 = undefined;
+              const tmp30 = channel;
+              channel = authStore.getChannel(authStore.getDMFromUserId(channel));
+              if (null == channel) {
+                const obj4 = tmp2(c2[8]);
+                c2 = 1;
+                c3 = 1;
+                const obj7 = { value: obj4.ensurePrivateChannel(tmp30), done: false };
+                return obj7;
+              }
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj = { value, done: true };
+            return obj;
+          } else {
+            tmp2 = value;
+            channel = authStore.getChannel(tmp2);
+          }
+          let isPrivateResult;
+          const obj2 = channel;
+          if (channel != null) {
+            isPrivateResult = obj2.isPrivate();
+          }
+          if (isPrivateResult) {
+            const obj3 = tmp2(c2[6])(channel, closure_129_1);
+            obj3.onPress();
+          }
+          if (closure_129_2 != null) {
+            closure_129_2();
+          }
+          c3 = 3;
+          return { value: "IconComponent", done: "IconComponent" };
+        } catch (tmp24) {
+          c3 = 3;
+          throw tmp24;
+        }
+      }
+    }), items2)
+  };
+  items2 = [arg0, arg1, arg2];
   return obj2;
-};
+});
+const result = size.fileFinishedImporting("modules/calls/native/usePrivateChannelCall.tsx");
+
+export default tmp2;

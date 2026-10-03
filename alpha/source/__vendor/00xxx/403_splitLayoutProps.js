@@ -20,119 +20,178 @@ export default function splitLayoutProps(arg0) {
       let tmp7 = item10015;
       switch (item10015) {
         case "margin":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "marginHorizontal":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "marginVertical":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "marginBottom":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "marginTop":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "marginLeft":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "marginRight":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "flex":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "flexGrow":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "flexShrink":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "flexBasis":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "alignSelf":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "height":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "minHeight":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "maxHeight":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "width":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "minWidth":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "maxWidth":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "position":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "left":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "right":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "bottom":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "top":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "transform":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "transformOrigin":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "rowGap":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "columnGap":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         case "gap":
+        {
           obj[tmp7] = arg0[tmp7];
           continue;
-        break;
+          break;
+        }
         default:
+        {
           obj2[tmp7] = arg0[tmp7];
+          break;
+        }
       }
     }
   }

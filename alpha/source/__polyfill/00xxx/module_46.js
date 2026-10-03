@@ -4,13 +4,13 @@
 // Exports: beginAsyncEvent, beginEvent, counterEvent, endAsyncEvent, endEvent, isEnabled, setEnabled
 
 // Module 46
-const global = arg0;
 let c1 = 8192;
 let closure_2 = 0;
 
 export const isEnabled = function isEnabled() {
+  let nativeTraceIsTracingResult;
   if (global.nativeTraceIsTracing) {
-    let nativeTraceIsTracingResult = obj.nativeTraceIsTracing(c1);
+    nativeTraceIsTracingResult = obj.nativeTraceIsTracing(c1);
   } else {
     const _Boolean = Boolean;
     nativeTraceIsTracingResult = Boolean(obj.__RCTProfileIsProfiling);
@@ -21,8 +21,9 @@ export function setEnabled(arg0) {
 
 }
 export const beginEvent = function beginEvent(fn, arg1) {
+  let nativeTraceIsTracingResult;
   if (global.nativeTraceIsTracing) {
-    let nativeTraceIsTracingResult = obj.nativeTraceIsTracing(c1);
+    nativeTraceIsTracingResult = obj.nativeTraceIsTracing(c1);
   } else {
     const _Boolean = Boolean;
     nativeTraceIsTracingResult = Boolean(obj.__RCTProfileIsProfiling);
@@ -36,8 +37,9 @@ export const beginEvent = function beginEvent(fn, arg1) {
   }
 };
 export const endEvent = function endEvent(arg0) {
+  let nativeTraceIsTracingResult;
   if (global.nativeTraceIsTracing) {
-    let nativeTraceIsTracingResult = obj.nativeTraceIsTracing(c1);
+    nativeTraceIsTracingResult = obj.nativeTraceIsTracing(c1);
   } else {
     const _Boolean = Boolean;
     nativeTraceIsTracingResult = Boolean(obj.__RCTProfileIsProfiling);
@@ -47,8 +49,9 @@ export const endEvent = function endEvent(arg0) {
   }
 };
 export const beginAsyncEvent = function beginAsyncEvent(fn, arg1) {
+  let nativeTraceIsTracingResult;
   if (global.nativeTraceIsTracing) {
-    let nativeTraceIsTracingResult = obj.nativeTraceIsTracing(c1);
+    nativeTraceIsTracingResult = obj.nativeTraceIsTracing(c1);
   } else {
     const _Boolean = Boolean;
     nativeTraceIsTracingResult = Boolean(obj.__RCTProfileIsProfiling);
@@ -64,8 +67,9 @@ export const beginAsyncEvent = function beginAsyncEvent(fn, arg1) {
   return closure_2;
 };
 export const endAsyncEvent = function endAsyncEvent(fn, arg1, arg2) {
+  let nativeTraceIsTracingResult;
   if (global.nativeTraceIsTracing) {
-    let nativeTraceIsTracingResult = obj.nativeTraceIsTracing(c1);
+    nativeTraceIsTracingResult = obj.nativeTraceIsTracing(c1);
   } else {
     const _Boolean = Boolean;
     nativeTraceIsTracingResult = Boolean(obj.__RCTProfileIsProfiling);
@@ -79,8 +83,9 @@ export const endAsyncEvent = function endAsyncEvent(fn, arg1, arg2) {
   }
 };
 export const counterEvent = function counterEvent(pending_js_to_native_queue, length) {
+  let nativeTraceIsTracingResult;
   if (global.nativeTraceIsTracing) {
-    let nativeTraceIsTracingResult = obj.nativeTraceIsTracing(c1);
+    nativeTraceIsTracingResult = obj.nativeTraceIsTracing(c1);
   } else {
     const _Boolean = Boolean;
     nativeTraceIsTracingResult = Boolean(obj.__RCTProfileIsProfiling);
@@ -90,8 +95,8 @@ export const counterEvent = function counterEvent(pending_js_to_native_queue, le
     if (typeof pending_js_to_native_queue === "function") {
       tmp5 = pending_js_to_native_queue();
     }
-    if (obj.nativeTraceCounter) {
-      obj.nativeTraceCounter(c1, tmp5, length);
+    if (global.nativeTraceCounter) {
+      global.nativeTraceCounter(c1, tmp5, length);
     }
   }
 };

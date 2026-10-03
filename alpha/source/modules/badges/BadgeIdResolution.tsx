@@ -1,19 +1,20 @@
-// Module ID: 7820
-// Function ID: 7821
+// Module ID: 7864
+// Function ID: 7865
 // Name: BadgeIdResolution
-// Dependencies: [7821, 7810, 7822, 7811, 7823, 2]
+// Dependencies: [7865, 7854, 7866, 7855, 7867, 2]
 // Exports: isLegacyBadgeId, legacyBadgeIdToBadgeId, resolveProfileBadgeId, toProfileBadgeLegacyId
 
-// Module 7820 (BadgeIdResolution)
-import Constants from "Constants" /* 7810 */;
-import BadgeId from "BadgeId" /* 7811 */;
-import Constants2 from "Constants" /* 7821 */;
-import LegacyBadgeIdMap from "LegacyBadgeIdMap" /* 7822 */;
-import types from "types" /* 7823 */;
+// Module 7864 (BadgeIdResolution)
+import Constants from "Constants" /* 7854 */;
+import BadgeId from "BadgeId" /* 7855 */;
+import Constants2 from "Constants" /* 7865 */;
+import LegacyBadgeIdMap from "LegacyBadgeIdMap" /* 7866 */;
+import types from "types" /* 7867 */;
 import size from "module_2" /* 2 */;
 
+const DEFAULT_PREMIUM_BADGE_ID = Constants2.DEFAULT_PREMIUM_BADGE_ID;
 const getBadgeName = Constants.getBadgeName;
-const items = [BadgeId.BadgeId.PREMIUM_TENURE, Constants2.DEFAULT_PREMIUM_BADGE_ID];
+const items = [BadgeId.BadgeId.PREMIUM_TENURE, DEFAULT_PREMIUM_BADGE_ID];
 const items1 = [items, ];
 const items2 = [BadgeId.BadgeId.ORB_PROFILE, types.OrbBadges.ORB_PROFILE_BADGE];
 items1[1] = items2;
@@ -38,7 +39,7 @@ export const resolveProfileBadgeId = function resolveProfileBadgeId(id) {
   }
 };
 export const toProfileBadgeLegacyId = function toProfileBadgeLegacyId(badge_id) {
-  value = map.get(badge_id);
+  let value = map.get(badge_id);
   if (value == null) {
     value = getBadgeName(badge_id);
   }

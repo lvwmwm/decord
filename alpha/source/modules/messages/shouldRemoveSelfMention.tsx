@@ -1,11 +1,11 @@
-// Module ID: 7225
-// Function ID: 7226
+// Module ID: 7123
+// Function ID: 7124
 // Name: shouldRemoveSelfMention
-// Dependencies: [1074, 2]
+// Dependencies: [1085, 2]
 // Exports: default
 
-// Module 7225 (shouldRemoveSelfMention)
-import Constants from "Constants" /* 1074 */;
+// Module 7123 (shouldRemoveSelfMention)
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const MessageTypesSets = Constants.MessageTypesSets;
@@ -15,7 +15,7 @@ export default function shouldRemoveSelfMention(type, arg1) {
   const SELF_MENTIONABLE_SYSTEM = MessageTypesSets.SELF_MENTIONABLE_SYSTEM;
   const hasItem = SELF_MENTIONABLE_SYSTEM.has(type.type);
   let tmp2 = !hasItem;
-  if (!hasItem) {
+  if (tmp2) {
     const author = type.author;
     let id;
     if (author != null) {

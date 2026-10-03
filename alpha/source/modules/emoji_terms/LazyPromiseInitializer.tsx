@@ -1,50 +1,50 @@
-// Module ID: 5966
-// Function ID: 5967
+// Module ID: 5647
+// Function ID: 5648
 // Name: LazyPromiseInitializer
 // Dependencies: [2]
 
-// Module 5966 (LazyPromiseInitializer)
+// Module 5647 (LazyPromiseInitializer)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/emoji_terms/LazyPromiseInitializer.tsx");
 class LazyPromiseInitializer {
-  constructor(arg0) {
-    merged = Object.assign({ loading: false, loaded: false });
-    merged.loader = global;
+  constructor(loader) {
+    const merged = Object.assign({ loading: false, loaded: false });
+    merged.loader = loader;
     return merged;
   }
-}
-const prototype = LazyPromiseInitializer.prototype;
-prototype["setParams"] = function setParams(param) {
-  const self = this;
-  if (this.param !== param) {
-    self.param = param;
-    self.loading = false;
-    self.loaded = false;
+  setParams(param) {
+    const self = this;
+    if (this.param !== param) {
+      self.param = param;
+      self.loading = false;
+      self.loaded = false;
+    }
   }
-};
-prototype["get"] = function get() {
-  this.ensureLoaded();
-  return this.val;
-};
-prototype["ensureLoaded"] = function ensureLoaded() {
-  const self = this;
-  if (!this.loaded) {
-    if (!self.loading) {
-      if (undefined !== self.param) {
-        const param = self.param;
-        self.loading = true;
-        self.loader(param).then((result) => {
-          if (param === self.param) {
-            tmp.val = result;
-            tmp.loading = false;
-            tmp.loaded = true;
-          }
-        });
-        const loaderResult = self.loader(param);
+  get() {
+    this.ensureLoaded();
+    return this.val;
+  }
+  ensureLoaded() {
+    const self = this;
+    if (!this.loaded) {
+      if (!self.loading) {
+        if (undefined !== self.param) {
+          const param = self.param;
+          self.loading = true;
+          const loaderResult = self.loader(param);
+          loaderResult.then((result) => {
+            if (param === self.param) {
+              self.val = result;
+              self.loading = false;
+              self.loaded = true;
+            }
+          });
+        }
       }
     }
   }
-};
+}
+const prototype = LazyPromiseInitializer.prototype;
 
 export default LazyPromiseInitializer;

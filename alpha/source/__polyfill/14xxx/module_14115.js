@@ -1,44 +1,17 @@
 // Module ID: 14115
 // Function ID: 14116
-// Dependencies: []
-// Exports: default
+// Dependencies: [14062, 14113, 14096]
 
 // Module 14115
+import _mod14062 from "module_14062" /* 14062 */;
+import _mod14096 from "module_14096" /* 14096 */;
+import defineProperty2 from "defineProperty2" /* 14113 */;
 
-export default () => (startTimer) => {
-  closure_0 = startTimer;
-  startTimer = startTimer.startTimer;
-  return {
-    features: {
-      benchmark(title) {
-        const items = [];
-        closure_2 = items();
-        function step(title) {
-          let num = 0;
-          if (0 !== items.length) {
-            num = arr[arr.length - 1].time;
-          }
-          const tmp = closure_2();
-          items.push({ title, time: tmp, delta: tmp - num });
-        }
-        items.push({ title, time: 0, delta: 0 });
-        function stop(title) {
-          if (typeof step === "function") {
-            let num = 0;
-            if (0 !== items.length) {
-              num = arr[arr.length - 1].time;
-            }
-            const tmp3 = closure_2();
-            const obj = { title, time: tmp3, delta: tmp3 - num };
-            items.push(obj);
-            const obj2 = { title, steps: items };
-            title.send("benchmark.report", obj2);
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        }
-        return { step, stop, last: stop };
-      }
-    }
-  };
-};
+
+export default _mod14062 ? ((arg0, arg1, arg2) => {
+  const obj = defineProperty2;
+  return obj.f(arg0, arg1, _mod14096(1, arg2));
+}) : ((arg0, arg1, arg2) => {
+  arg0[arg1] = arg2;
+  return arg0;
+});

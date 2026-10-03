@@ -1,57 +1,160 @@
-// Module ID: 15095
-// Function ID: 15096
+// Module ID: 15152
+// Function ID: 15153
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [19, 1074, 1391, 7794, 7791, 1241, 1392, 2]
+// Dependencies: [5, 19, 1085, 1396, 6477, 7838, 7835, 1252, 1397, 2]
 // Exports: useDisplayNameStylesHandleApply
 
-// Module 15095 (useDisplayNameStylesHandleApply)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1391 */;
-import DisplayNameFont from "DisplayNameFont" /* 1392 */;
-import noop from "module_19" /* 19 */;
+// Module 15152 (useDisplayNameStylesHandleApply)
+import Constants from "Constants" /* 1085 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const size = fn(2);
+let c4;
+
+const AnalyticEvents = Constants.AnalyticEvents;
 let result = size.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesHandleApply.tsx");
 
 export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHandleApply(hasChanges) {
   hasChanges = hasChanges.hasChanges;
   const selectedFontId = hasChanges.selectedFontId;
-  const selectedEffectId = hasChanges.selectedEffectId;
+  let selectedEffectId = hasChanges.selectedEffectId;
   const selectedColors = hasChanges.selectedColors;
   const defaultColor = hasChanges.defaultColor;
-  const guildId = hasChanges.guildId;
+  let guildId = hasChanges.guildId;
   const isTryItOut = hasChanges.isTryItOut;
   const onClose = hasChanges.onClose;
-  let items = [hasChanges, selectedFontId, selectedEffectId, selectedColors, defaultColor, onClose, guildId, isTryItOut];
-  return selectedColors.useCallback(() => {
-    if (hasChanges) {
-      let tmp4 = selectedEffectId === DisplayNameEffect.DisplayNameEffect.SOLID;
-      if (tmp4) {
-        tmp4 = arr.length > 0;
-      }
-      if (tmp4) {
-        tmp4 = arr[0] === defaultColor;
-      }
-      let items = arr;
-      if (tmp4) {
-        items = [];
-      }
-      const obj = { fontId: selectedFontId, effectId: selectedEffectId, colors: items };
-      if (isTryItOut) {
-        const result = tmp2(7794).setTryItOutDisplayNameStyles(obj);
-        const tmp2Result = tmp2(7794);
+  let flag = hasChanges.shouldSaveWithoutPendingChanges;
+  if (flag === undefined) {
+    flag = false;
+  }
+  const onSaveError = hasChanges.onSaveError;
+  let closure_10 = defaultColor.useRef(false);
+  let items = [hasChanges, selectedFontId, selectedEffectId, selectedColors, defaultColor, onClose, guildId, isTryItOut, flag, onSaveError];
+  return defaultColor.useCallback(selectedColors(function*(arg0, value) {
+    let closure_0;
+    let closure_1;
+    let closure_2;
+    let obj9;
+    if (guildId === 2) {
+      guildId = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        const obj2 = { guildId, displayNameStyles: obj };
-        tmp2(7791).setPendingChanges(obj2);
-        const tmp2Result2 = tmp2(7791);
+        return { value: "IconComponent", done: "IconComponent" };
       }
-      const obj3 = { font_name: DisplayNameFont.DisplayNameFont[selectedFontId], effect_name: DisplayNameEffect.DisplayNameEffect[selectedEffectId], colors: selectedColors };
-      AnalyticsUtilsDefault.track(AnalyticEvents.DISPLAY_NAME_STYLES_APPLIED, obj3);
-      if (onClose != null) {
-        onClose();
+    } else {
+      let c3;
+      try {
+        guildId = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            guildId = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            guildId = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            hasChanges = undefined;
+            const tmp65 = hasChanges;
+            if (tmp65) {
+              if (!ref.current) {
+                let items = selectedColors;
+                const tmp28 = selectedEffectId === hasChanges(selectedEffectId[3]).DisplayNameEffect.SOLID && selectedColors.length > 0 && selectedColors[0] === defaultColor;
+                if (tmp28) {
+                  items = [];
+                }
+                const obj4 = { fontId: selectedFontId, effectId: selectedEffectId, colors: items };
+                if (true) {
+                  ref.current = true;
+                  c3 = 2;
+                  const obj5 = { displayNameStyles: obj4 };
+                  c4 = 3;
+                  guildId = 1;
+                  const obj6 = { value: obj9.saveProfileAndAccountChanges(obj5), done: false };
+                  obj9 = hasChanges(selectedEffectId[4]);
+                  return obj6;
+                } else if (isTryItOut) {
+                  const tmp36Result = hasChanges(selectedEffectId[5]);
+                  const result = tmp36Result.setTryItOutDisplayNameStyles(obj4);
+                } else {
+                  const obj7 = { guildId, displayNameStyles: obj4 };
+                  const tmp36Result2 = hasChanges(selectedEffectId[6]);
+                  tmp36Result2.setPendingChanges(obj7);
+                }
+              }
+            }
+            guildId = 3;
+            return { value: "IconComponent", done: "IconComponent" };
+          }
+        } else if (1 === c4) {
+          c3 = 0;
+          closure_129_10.current = false;
+          throw selectedEffectId;
+        } else if (2 === c4) {
+          c3 = 1;
+          if (closure_129_9 != null) {
+            closure_129_9();
+          }
+          c3 = 0;
+          closure_129_10.current = false;
+          guildId = 3;
+          const obj8 = { value: undefined, done: true };
+          return obj8;
+        } else if (arg0 === 1) {
+          guildId = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 0;
+          closure_129_10.current = false;
+          guildId = 3;
+          const obj10 = { value, done: true };
+          return obj10;
+        } else {
+          hasChanges = value;
+          let ok;
+          if (hasChanges != null) {
+            ok = hasChanges.ok;
+          }
+          if (true !== ok) {
+            if (closure_129_9 != null) {
+              closure_129_9();
+            }
+            c3 = 0;
+            closure_129_10.current = false;
+            guildId = 3;
+            const obj = { value: undefined, done: true };
+            return obj;
+          } else {
+            c3 = 0;
+            closure_129_10.current = false;
+          }
+        }
+        const obj11 = { font_name: hasChanges(selectedEffectId[8]).DisplayNameFont[closure_129_1], effect_name: hasChanges(selectedEffectId[3]).DisplayNameEffect[closure_129_2], colors: closure_129_3 };
+        const track = tmp(selectedEffectId[7]).track;
+        const DISPLAY_NAME_STYLES_APPLIED = guildId.DISPLAY_NAME_STYLES_APPLIED;
+        const tmp44 = tmp(selectedEffectId[7]);
+        track(DISPLAY_NAME_STYLES_APPLIED, obj11);
+        if (closure_129_7 != null) {
+          closure_129_7();
+        }
+      } catch (tmp58) {
+        selectedEffectId = tmp58;
+        if (0 === c3) {
+          guildId = 3;
+          throw tmp58;
+        } else if (1 === tmp60) {
+          c4 = 1;
+        } else {
+          c4 = 2;
+        }
       }
     }
-  }, items);
+  }), items);
 };

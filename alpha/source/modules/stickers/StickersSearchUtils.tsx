@@ -1,27 +1,33 @@
-// Module ID: 10048
-// Function ID: 10049
+// Module ID: 10118
+// Function ID: 10119
 // Name: StickersSearchUtils
-// Dependencies: [5940, 6942, 2]
+// Dependencies: [5621, 6840, 2]
 // Exports: searchAllStickers, searchSendableStickers, searchUnsendableStickers
 
-// Module 10048 (StickersSearchUtils)
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5940 */;
-import StickerSendability from "StickerSendability" /* 6942 */;
+// Module 10118 (StickersSearchUtils)
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5621 */;
+import StickerSendability from "StickerSendability" /* 6840 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/stickers/StickersSearchUtils.tsx");
 
 export const searchAllStickers = function searchAllStickers(arg0) {
   const items = [arg0];
-  return AutocompleteUtilsDefault.queryStickers(items, true).map((sticker) => sticker.sticker);
+  const obj = AutocompleteUtilsDefault;
+  const queryStickersResult = obj.queryStickers(items, true);
+  return queryStickersResult.map((sticker) => sticker.sticker);
 };
 export const searchSendableStickers = function searchSendableStickers(arg0, arg1) {
   const items = [arg0];
   const items1 = [arg1, (arg0, arg1) => arg1 === StickerSendability.StickerSendability.SENDABLE];
-  return AutocompleteUtilsDefault.queryStickers(items, true, items1).map((sticker) => sticker.sticker);
+  const obj = AutocompleteUtilsDefault;
+  const queryStickersResult = obj.queryStickers(items, true, items1);
+  return queryStickersResult.map((sticker) => sticker.sticker);
 };
 export const searchUnsendableStickers = function searchUnsendableStickers(arg0, arg1) {
   const items = [arg0];
   const items1 = [arg1, (arg0, arg1) => arg1 !== StickerSendability.StickerSendability.SENDABLE];
-  return AutocompleteUtilsDefault.queryStickers(items, true, items1).map((sticker) => sticker.sticker);
+  const obj = AutocompleteUtilsDefault;
+  const queryStickersResult = obj.queryStickers(items, true, items1);
+  return queryStickersResult.map((sticker) => sticker.sticker);
 };

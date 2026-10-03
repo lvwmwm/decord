@@ -1,10 +1,12 @@
-// Module ID: 9646
-// Function ID: 9647
+// Module ID: 9675
+// Function ID: 9676
 // Name: getEffectiveNoiseCancellation
-// Dependencies: [1364, 9647, 2]
+// Dependencies: [1369, 9676, 2]
 // Exports: default
 
-// Module 9646 (getEffectiveNoiseCancellation)
+// Module 9675 (getEffectiveNoiseCancellation)
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import WindowsEffectsExperiment from "WindowsEffectsExperiment" /* 9676 */;
 import size from "module_2" /* 2 */;
 
 const deep_noise_suppression = "deep_noise_suppression";
@@ -12,24 +14,24 @@ const set = new Set(["voice_isolation", "wide_spectrum"]);
 const result = size.fileFinishedImporting("modules/noise_cancellation/getEffectiveNoiseCancellation.tsx");
 
 export default function getEffectiveNoiseCancellation(arg0, arg1) {
+  const obj = PlatformUtils;
   if (!obj.isIOS()) {
+    let tmp3;
+    const tmpResult = PlatformUtils;
     if (!tmpResult.isMac()) {
-      let tmp3 = arg0;
-      if (arg0) {
-        let tmp5 = null == arg1;
+      tmp3 = arg0;
+      if (tmp3) {
+        let tmp5 = null == arg1 || "" === arg1;
         if (!tmp5) {
-          tmp5 = "" === arg1;
-        }
-        if (!tmp5) {
-          tmp5 = !tmp(1364).isWindows();
-          const tmpResult3 = tmp(1364);
+          const tmpResult3 = PlatformUtils;
+          tmp5 = !tmpResult3.isWindows();
         }
         if (!tmp5) {
           tmp5 = arg1 !== deep_noise_suppression;
         }
         if (!tmp5) {
-          tmp5 = !tmp(9647).getWindowsAudioEffectsExperimentConfig({ location: "setNoiseCancellation" }).preferSystemEffects;
-          const tmpResult4 = tmp(9647);
+          const tmpResult4 = WindowsEffectsExperiment;
+          tmp5 = !tmpResult4.getWindowsAudioEffectsExperimentConfig({ location: "setNoiseCancellation" }).preferSystemEffects;
         }
         if (tmp5) {
           tmp5 = arg0;
@@ -40,10 +42,6 @@ export default function getEffectiveNoiseCancellation(arg0, arg1) {
     return tmp3;
   }
   const hasItem = set.has(arg1);
-  let tmp8 = !hasItem;
-  if (!hasItem) {
-    tmp8 = arg0;
-  }
-  tmp3 = tmp8;
+  tmp3 = !hasItem && arg0;
 };
 export const WINDOWS_NOISE_SUPPRESSION_EFFECT = "deep_noise_suppression";

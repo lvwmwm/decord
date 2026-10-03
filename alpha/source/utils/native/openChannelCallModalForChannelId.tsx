@@ -1,30 +1,28 @@
-// Module ID: 12655
-// Function ID: 12656
+// Module ID: 12695
+// Function ID: 12696
 // Name: openChannelCallModalForChannelId
-// Dependencies: [2044, 8025, 5052, 2]
+// Dependencies: [2051, 8069, 5097, 2]
 // Exports: default
 
-// Module 12655 (openChannelCallModalForChannelId)
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5052 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8025 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
+// Module 12695 (openChannelCallModalForChannelId)
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5097 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8069 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("utils/native/openChannelCallModalForChannelId.tsx");
 
 export default function openChannelCallModalForChannelId(arg0, arg1) {
   const channel = ChannelStore.getChannel(arg0);
   if (null != channel) {
-    let isGuildStageVoiceResult = arg1;
-    if (arg1) {
-      isGuildStageVoiceResult = channel.isGuildStageVoice();
+    let tmp = arg1 && channel.isGuildStageVoice();
+    if (tmp) {
+      const obj2 = StageChannelModalActionCreators;
+      tmp = false === obj2.connectToStage(channel);
     }
-    if (isGuildStageVoiceResult) {
-      isGuildStageVoiceResult = false === StageChannelModalActionCreators.connectToStage(channel);
-    }
-    if (!isGuildStageVoiceResult) {
-      PrivateChannelCallUtils.openChannelCallModal(channel);
+    if (!tmp) {
+      const obj3 = PrivateChannelCallUtils;
+      obj3.openChannelCallModal(channel);
     }
   }
 };

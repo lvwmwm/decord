@@ -1,25 +1,26 @@
-// Module ID: 7164
-// Function ID: 7165
+// Module ID: 7067
+// Function ID: 7068
 // Name: CollectiblesDebugStore
-// Dependencies: [560, 2]
+// Dependencies: [570, 2]
 // Exports: addDebugLog
 
-// Module 7164 (CollectiblesDebugStore)
-import module_560 from "module_560" /* 560 */;
+// Module 7067 (CollectiblesDebugStore)
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
-const useCollectiblesDebugStore = module_560.create((arg0) => {
-  closure_0 = arg0;
-  return {
+const useCollectiblesDebugStore = module_570.create((arg0) => {
+  let closure_0 = arg0;
+  let obj = {
     logs: [],
     addLog(arg0) {
       closure_0 = arg0;
       return closure_0((logs) => {
-        const obj = { logs: null };
-        const items = [...logs.logs];
+        let items;
+        const obj = { logs: items };
+        items = [...logs.logs];
         const date = new Date();
-        items[tmp] = "[" + new Date().toISOString().split("T")[0] + "] " + closure_0;
-        obj.logs = items;
+        const str = date.toISOString();
+        items[tmp] = "[" + str.split("T")[0] + "] " + closure_0;
         return obj;
       });
     },
@@ -27,12 +28,14 @@ const useCollectiblesDebugStore = module_560.create((arg0) => {
       return closure_0({ logs: [] });
     }
   };
+  return obj;
 });
 const result = size.fileFinishedImporting("modules/collectibles/CollectiblesDebugStore.tsx");
 
 export { useCollectiblesDebugStore };
 export const addDebugLog = function addDebugLog(arg0) {
   const date = new Date();
+  const toLocaleTimeStringResult = date.toLocaleTimeString("en-US", { hour12: false });
   const state = obj.getState();
-  state.addLog("[" + new Date().toLocaleTimeString("en-US", { hour12: false }) + "] " + arg0);
+  state.addLog("[" + toLocaleTimeStringResult + "] " + arg0);
 };

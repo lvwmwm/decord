@@ -1,13 +1,13 @@
-// Module ID: 4506
-// Function ID: 4507
+// Module ID: 4517
+// Function ID: 4518
 // Name: ThreadActionUtils
 // Dependencies: [502, 2]
 // Exports: doesThreadMembersActionAffectMe
 
-// Module 4506 (ThreadActionUtils)
+// Module 4517 (ThreadActionUtils)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/threads/ThreadActionUtils.tsx");
 
 export const doesThreadMembersActionAffectMe = function doesThreadMembersActionAffectMe(removedMemberIds) {

@@ -3,24 +3,27 @@
 // Dependencies: [196, 123, 197]
 
 // Module 195
-import polyfillObjectProperty from "polyfillObjectProperty" /* 123 */;
+import defineLazyObjectProperty from "defineLazyObjectProperty" /* 123 */;
 import _mod196 from "module_196" /* 196 */;
-import define from "define" /* 197 */;
+import _mod197 from "module_197" /* 197 */;
 
+let c0;
+
+let flag;
 try {
   const _module = _mod196;
-  let flag = _module.hasNativeConstructor(function*(arg0, value) {
+  flag = _module.hasNativeConstructor(function*(arg0, value) {
     if (c0 === 2) {
       c0 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    } else if (tmp2 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -34,21 +37,21 @@ try {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
-      } catch (tmp4) {
-        c0 = tmp;
-        throw tmp4;
+      } catch (tmp3) {
+        c0 = 3;
+        throw tmp3;
       }
     }
   }, "GeneratorFunction");
-  if (!flag) {
-    const _module1 = polyfillObjectProperty;
-    _module1.polyfillGlobal("regeneratorRuntime", () => {
-      delete tmp2[tmp];
-      return define;
-    });
-  }
 } catch (err) {
   flag = false;
+}
+if (!flag) {
+  const _module1 = defineLazyObjectProperty;
+  _module1.polyfillGlobal("regeneratorRuntime", () => {
+    delete global["regeneratorRuntime"];
+    return _mod197;
+  });
 }

@@ -1,14 +1,14 @@
-// Module ID: 1248
-// Function ID: 1249
-// Name: ReactBatchUpdates
+// Module ID: 1259
+// Function ID: 1260
+// Name: react-native
 // Dependencies: [17, 2]
 // Exports: batchUpdates
 
-// Module 1248 (ReactBatchUpdates)
-import _mod17 from "module_17" /* 17 */;
+// Module 1259 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const unstable_batchedUpdates = _mod17.unstable_batchedUpdates;
+const unstable_batchedUpdates = react_native.unstable_batchedUpdates;
 const result = size.fileFinishedImporting("../discord_common/js/shared/utils/ReactBatchUpdates.native.tsx");
 
 export const batchUpdates = function batchUpdates(fn) {

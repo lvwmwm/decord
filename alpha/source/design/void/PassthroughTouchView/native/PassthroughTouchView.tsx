@@ -1,22 +1,59 @@
-// Module ID: 13864
-// Function ID: 13865
+// Module ID: 13931
+// Function ID: 13932
 // Name: PassthroughTouchView
-// Dependencies: [19, 21, 13865, 2]
-// Exports: default
+// Dependencies: [109, 19, 21, 558, 576, 13932, 2]
 
-// Module 13864 (PassthroughTouchView)
-import PassthroughTouchNativeComponentDefault from "PassthroughTouchNativeComponent" /* 13865 */;
-import noop from "module_19" /* 19 */;
+// Module 13931 (PassthroughTouchView)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import PassthroughTouchNativeComponentDefault from "PassthroughTouchNativeComponent" /* 13932 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const jsx = fn(21).jsx;
-const size = fn(2);
+let onTouchDown;
+
+let closure_3 = ["onTouchDown"];
+const jsx = Fragment.jsx;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTouchDown) => {
+  let tmp3;
+  let tmp4;
+  const obj = react2;
+  const cResult = obj.c(6);
+  if (cResult[0] !== onTouchDown) {
+    onTouchDown = onTouchDown.onTouchDown;
+    const tmp7 = _objectWithoutProperties(onTouchDown, closure_3);
+    cResult[0] = onTouchDown;
+    cResult[1] = onTouchDown;
+    cResult[2] = tmp7;
+    tmp4 = tmp7;
+    tmp3 = onTouchDown;
+  } else {
+    tmp3 = cResult[1];
+    tmp4 = cResult[2];
+  }
+  if (cResult[3] === tmp3) {
+    let tmp8;
+    if (cResult[4] === tmp4) {
+      tmp8 = cResult[5];
+    }
+    return tmp8;
+  }
+  PassthroughTouchNativeComponentDefault;
+  const merged = Object.assign(tmp4);
+  const tmp11 = <tmp9 onTouchDown={tmp3} pointerEvents="box-none" />;
+  cResult[3] = tmp3;
+  cResult[4] = tmp4;
+  cResult[5] = tmp11;
+  tmp8 = tmp11;
+}) : ((onTouchDown) => {
+  onTouchDown = onTouchDown.onTouchDown;
+  const merged = Object.assign(onTouchDown, Object.assign({ onTouchDown: 0 }));
+  PassthroughTouchNativeComponentDefault;
+  const merged1 = Object.assign(merged);
+  return <tmp2 onTouchDown={onTouchDown} pointerEvents="box-none" />;
+});
 const result = size.fileFinishedImporting("design/void/PassthroughTouchView/native/PassthroughTouchView.tsx");
 
-export default function PassthroughTouchView(onTouchDown) {
-  const merged = Object.assign(onTouchDown, Object.assign({ onTouchDown: 0 }));
-  const obj = {};
-  const merged1 = Object.assign(merged);
-  obj.onTouchDown = onTouchDown.onTouchDown;
-  obj.pointerEvents = "box-none";
-  return jsx(PassthroughTouchNativeComponentDefault, {});
-};
+export default tmp3;

@@ -1,123 +1,459 @@
-// Module ID: 17418
-// Function ID: 17419
+// Module ID: 17508
+// Function ID: 17509
 // Name: InteractionIframeModal
-// Dependencies: [32, 19, 17, 1349, 21, 4845, 576, 17406, 6588, 7962, 17419, 5460, 4557, 1115, 9115, 9124, 5621, 4794, 4841, 8933, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 1360, 21, 4890, 587, 1266, 558, 576, 17496, 6471, 8008, 17509, 5780, 4568, 1126, 4795, 5909, 4886, 8961, 9147, 17128, 2]
 
-// Module 17418 (InteractionIframeModal)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4557 */;
-import closeIFrameModalDefault from "closeIFrameModal" /* 17419 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 17508 (InteractionIframeModal)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import v1 from "v1" /* 1266 */;
+import ApplicationConstants from "ApplicationConstants" /* 1360 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
+import closeIFrameModalDefault from "closeIFrameModal" /* 17509 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-require = fn;
-const View = fn(17).View;
-const BotTagTypes = fn(1349).BotTagTypes;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4845);
-let obj2 = { wrapper: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, flex: 1 }, header: { flexDirection: "row", padding: 16, justifyContent: "space-between", alignItems: "center" }, headerCenterContainer: { flexDirection: "column", alignItems: "center" }, headerTitleContainer: { flexDirection: "row", marginBottom: 2 }, closeButton: { marginEnd: 8 }, spacerView: { marginStart: 8, width: 32 }, botTag: { marginStart: 4 } };
-let closure_9 = createStyles.createStyles(obj2);
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/interaction_components/native/InteractionIframeModal.tsx");
-
-export default function InteractionIframeModal(children) {
-  const tmp = closure_9();
-  const application = children.application;
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+function makeIframeId() {
+  const obj = v1;
+  return obj.v4();
+}
+const View = react_native.View;
+const BotTagTypes = ApplicationConstants.BotTagTypes;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+const interaction_iframe_modal = "interaction_iframe_modal";
+let obj = { wrapper: obj2, header: { flexDirection: "row", padding: 16, justifyContent: "space-between", alignItems: "center" }, headerCenterContainer: { flexDirection: "column", alignItems: "center" }, headerTitleContainer: { flexDirection: "row", marginBottom: 2 }, closeButton: { marginEnd: 8 }, spacerView: { marginStart: 8, width: 32 }, botTag: { marginStart: 4 } };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, flex: 1 };
+let closure_10 = createStyles.createStyles(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let application;
+  let first;
+  let id;
+  let iframeUrl;
+  let items1;
+  let queryParams;
+  let title;
+  let tmp10;
+  let tmp13;
+  let tmp9;
+  const tmp = id;
+  let obj = id(R[9]);
+  const cResult = obj.c(57);
+  const tmp4 = closure_10();
+  ({ application, title } = arg0);
+  id = application.id;
+  const obj2 = id(R[10]);
+  const iframeModalState = obj2.useIframeModalState(arg0);
+  ({ queryParams, iframeUrl } = iframeModalState);
+  [r10027, importDefault] = react.useState(makeIframeId);
+  _slicedToArray(react.useState(makeIframeId), 2);
+  const obj3 = react;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj4 = { includeKeyboardHeight: true };
+    cResult[0] = obj4;
+    first = obj4;
+  } else {
+    first = cResult[0];
+  }
+  const insets = require("useSafeAreaInsetsKeyboardAware")(first).insets;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function k() {
+      let obj = id(R[12]);
+      obj.lockOrientation("PORTRAIT");
+      return () => {
+        const obj = id(closure_1_2[12]);
+        const result = obj.restoreDefaultOrientation();
+      };
+    };
+    const items = [];
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp10 = items;
+    tmp9 = fn;
+  } else {
+    tmp9 = cResult[1];
+    tmp10 = cResult[2];
+  }
+  const layoutEffect = obj3.useLayoutEffect(tmp9, tmp10);
+  if (cResult[3] !== id) {
+    class R {
+      constructor() {
+        closeIFrameModalDefault(id, undefined);
+      }
+    }
+    cResult[3] = id;
+    cResult[4] = R;
+  } else {
+    class R {
+      constructor() {
+        closeIFrameModalDefault(id, undefined);
+      }
+    }
+  }
+  R = tmp12;
+  if (cResult[5] !== tmp12) {
+    class H {
+      constructor() {
+        R();
+        return true;
+      }
+    }
+    cResult[5] = tmp12;
+    cResult[6] = H;
+    tmp13 = H;
+  } else {
+    class H {
+      constructor() {
+        R();
+        return true;
+      }
+    }
+  }
+  require("useBackPressHandler")(tmp13);
+  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    class E {
+      constructor() {
+        const obj = v1;
+        importDefault(obj.v4());
+      }
+    }
+    cResult[7] = E;
+  } else {
+    class E {
+      constructor() {
+        const obj = v1;
+        importDefault(obj.v4());
+      }
+    }
+  }
+  if (cResult[8] !== tmp12) {
+    class A {
+      constructor() {
+        let intl;
+        const obj = { key: interaction_iframe_modal, content: intl.string(intl2.t.HehpFW) };
+        const open = ToastActionCreatorsDefault.open;
+        ToastActionCreatorsDefault;
+        intl = intl2.intl;
+        open(obj);
+        R();
+      }
+    }
+    cResult[8] = tmp12;
+    cResult[9] = A;
+  } else {
+    class A {
+      constructor() {
+        let intl;
+        const obj = { key: interaction_iframe_modal, content: intl.string(intl2.t.HehpFW) };
+        const open = ToastActionCreatorsDefault.open;
+        ToastActionCreatorsDefault;
+        intl = intl2.intl;
+        open(obj);
+        R();
+      }
+    }
+  }
+  if (cResult[10] === insets.bottom) {
+    class A {
+      constructor() {
+        let intl;
+        const obj = { key: interaction_iframe_modal, content: intl.string(intl2.t.HehpFW) };
+        const open = ToastActionCreatorsDefault.open;
+        ToastActionCreatorsDefault;
+        intl = intl2.intl;
+        open(obj);
+        R();
+      }
+    }
+    if (cResult[13] === tmp4.wrapper) {
+      let tmp19;
+      let tmp21;
+      class A {
+        constructor() {
+          let intl;
+          const obj = { key: interaction_iframe_modal, content: intl.string(intl2.t.HehpFW) };
+          const open = ToastActionCreatorsDefault.open;
+          ToastActionCreatorsDefault;
+          intl = intl2.intl;
+          open(obj);
+          R();
+        }
+      }
+      const _Symbol = Symbol;
+      const header = tmp4.header;
+      if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+        class A {
+          constructor() {
+            let intl;
+            const obj = { key: interaction_iframe_modal, content: intl.string(intl2.t.HehpFW) };
+            const open = ToastActionCreatorsDefault.open;
+            ToastActionCreatorsDefault;
+            intl = intl2.intl;
+            open(obj);
+            R();
+          }
+        }
+        const stringResult = obj6.string(tmp(R[16]).t.cpT0Cq);
+        cResult[16] = stringResult;
+        tmp19 = stringResult;
+      } else {
+        class A {
+          constructor() {
+            let intl;
+            const obj = { key: interaction_iframe_modal, content: intl.string(intl2.t.HehpFW) };
+            const open = ToastActionCreatorsDefault.open;
+            ToastActionCreatorsDefault;
+            intl = intl2.intl;
+            open(obj);
+            R();
+          }
+        }
+      }
+      const _Symbol2 = Symbol;
+      if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
+        class A {
+          constructor() {
+            let intl;
+            const obj = { key: interaction_iframe_modal, content: intl.string(intl2.t.HehpFW) };
+            const open = ToastActionCreatorsDefault.open;
+            ToastActionCreatorsDefault;
+            intl = intl2.intl;
+            open(obj);
+            R();
+          }
+        }
+        const tmp22 = closure_7(tmp(R[17]).XLargeIcon, {});
+        cResult[17] = tmp22;
+        tmp21 = tmp22;
+      } else {
+        class A {
+          constructor() {
+            let intl;
+            const obj = { key: interaction_iframe_modal, content: intl.string(intl2.t.HehpFW) };
+            const open = ToastActionCreatorsDefault.open;
+            ToastActionCreatorsDefault;
+            intl = intl2.intl;
+            open(obj);
+            R();
+          }
+        }
+      }
+      if (cResult[18] === tmp12) {
+        class A {
+          constructor() {
+            let intl;
+            const obj = { key: interaction_iframe_modal, content: intl.string(intl2.t.HehpFW) };
+            const open = ToastActionCreatorsDefault.open;
+            ToastActionCreatorsDefault;
+            intl = intl2.intl;
+            open(obj);
+            R();
+          }
+        }
+        if (cResult[21] !== application.name) {
+          class A {
+            constructor() {
+              let intl;
+              const obj = { key: interaction_iframe_modal, content: intl.string(intl2.t.HehpFW) };
+              const open = ToastActionCreatorsDefault.open;
+              ToastActionCreatorsDefault;
+              intl = intl2.intl;
+              open(obj);
+              R();
+            }
+          }
+          const obj5 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", children: application.name };
+          cResult[21] = application.name;
+          cResult[22] = closure_7(tmp(R[19]).Text, obj5);
+          const tmp27 = closure_7(tmp(R[19]).Text, obj5);
+        } else {
+          class A {
+            constructor() {
+              let intl;
+              const obj = { key: interaction_iframe_modal, content: intl.string(intl2.t.HehpFW) };
+              const open = ToastActionCreatorsDefault.open;
+              ToastActionCreatorsDefault;
+              intl = intl2.intl;
+              open(obj);
+              R();
+            }
+          }
+        }
+        if (application.bot != null) {
+          class A {
+            constructor() {
+              let intl;
+              const obj = { key: interaction_iframe_modal, content: intl.string(intl2.t.HehpFW) };
+              const open = ToastActionCreatorsDefault.open;
+              ToastActionCreatorsDefault;
+              intl = intl2.intl;
+              open(obj);
+              R();
+            }
+          }
+        }
+        if (cResult[23] === tmp4.botTag) {
+          class A {
+            constructor() {
+              let intl;
+              const obj = { key: interaction_iframe_modal, content: intl.string(intl2.t.HehpFW) };
+              const open = ToastActionCreatorsDefault.open;
+              ToastActionCreatorsDefault;
+              intl = intl2.intl;
+              open(obj);
+              R();
+            }
+          }
+          if (cResult[26] === tmp4.headerTitleContainer) {
+            class A {
+              constructor() {
+                let intl;
+                const obj = { key: interaction_iframe_modal, content: intl.string(intl2.t.HehpFW) };
+                const open = ToastActionCreatorsDefault.open;
+                ToastActionCreatorsDefault;
+                intl = intl2.intl;
+                open(obj);
+                R();
+              }
+            }
+          }
+          const obj7 = { style: tmp4.headerTitleContainer, children: items1 };
+          items1 = [tmp26, tmp30];
+          cResult[26] = tmp4.headerTitleContainer;
+          cResult[27] = tmp26;
+          cResult[28] = tmp30;
+          cResult[29] = closure_8(View, obj7);
+          const tmp37 = closure_8(View, obj7);
+        }
+        const obj8 = { type: BotTagTypes.BOT, verified: undefined, style: tmp4.botTag };
+        cResult[23] = tmp4.botTag;
+        cResult[24] = undefined;
+        cResult[25] = closure_7(require("BotTag"), obj8);
+        const tmp33 = closure_7(require("BotTag"), obj8);
+      }
+      const obj9 = { accessibilityRole: "button", accessibilityLabel: tmp19, onPress: tmp12, style: tmp4.closeButton, children: tmp21 };
+      cResult[18] = tmp12;
+      cResult[19] = tmp4.closeButton;
+      cResult[20] = closure_7(tmp(R[18]).PressableOpacity, obj9);
+      const tmp25 = closure_7(tmp(R[18]).PressableOpacity, obj9);
+    }
+    const items2 = [tmp4.wrapper, tmp17];
+    cResult[13] = tmp4.wrapper;
+    cResult[14] = tmp17;
+    cResult[15] = items2;
+  }
+  const obj10 = { paddingTop: insets.top, paddingBottom: insets.bottom };
+  cResult[10] = insets.bottom;
+  cResult[11] = insets.top;
+  cResult[12] = obj10;
+}) : ((application) => {
+  let callback;
+  let intl;
+  let items2;
+  let items3;
+  let items4;
+  let items5;
+  let items6;
+  let onDisallowedNavigation;
+  let tmp2Result;
+  let tmp6;
+  let verified;
+  const tmp = closure_10();
+  application = application.application;
   const id = application.id;
-  const iframeModalState = id(onPress[7]).useIframeModalState(children);
+  const title = application.title;
+  let obj = id(onDisallowedNavigation[10]);
+  const iframeModalState = obj.useIframeModalState(application);
   const queryParams = iframeModalState.queryParams;
-  const tmp5 = _slicedToArray(noop.useState(false), 2);
-  importDefault = tmp5[1];
+  const iframeUrl = iframeModalState.iframeUrl;
+  [tmp6, importDefault] = react.useState(makeIframeId);
+  _slicedToArray(react.useState(makeIframeId), 2);
   const insets = require("useSafeAreaInsetsKeyboardAware")({ includeKeyboardHeight: true }).insets;
-  const layoutEffect = noop.useLayoutEffect(() => {
-    id(callback[9]).lockOrientation("PORTRAIT");
+  const layoutEffect = react.useLayoutEffect(() => {
+    let obj = id(callback[12]);
+    obj.lockOrientation("PORTRAIT");
     return () => {
-      const result = id(onPress[9]).restoreDefaultOrientation();
+      const obj = id(callback[12]);
+      const result = obj.restoreDefaultOrientation();
     };
   }, []);
   const items = [id];
-  onPress = noop.useCallback(() => {
+  onDisallowedNavigation = react.useCallback(() => {
     closeIFrameModalDefault(id, undefined);
   }, items);
-  const items1 = [onPress];
-  const callback1 = noop.useCallback(() => {
+  const items1 = [onDisallowedNavigation];
+  const callback1 = react.useCallback(() => {
     callback();
     return true;
   }, items1);
   require("useBackPressHandler")(callback1);
-  let tmp11 = null;
-  if (!tmp5[0]) {
-    const obj3 = {
-      onActivityCrash() {
-          closure_1(true);
-          const timerId = setTimeout(() => closure_1_1(false), 0);
-        },
-      applicationId: application.id,
-      channelId: null,
-      guildId: null,
-      activityUrl: null,
-      activitySessionId: null,
-      queryParams: null,
-      onLoadError: null,
-      allowPopups: null,
-      referrerPolicy: "origin",
-      isPipOrGridMode: false,
-      webViewKey: "flex",
-      ignoreSilentHardwareSwitch: "en-CH"
-    };
-    ({ channel_id: obj2.channelId, guild_id: obj2.guildId } = queryParams);
-    obj3.activityUrl = iframeModalState.iframeUrl;
-    obj3.activitySessionId = queryParams.instance_id;
-    obj3.queryParams = queryParams;
-    obj3.onLoadError = function onLoadError() {
-      const obj2 = { key: "interaction_iframe_modal", content: null };
-      const intl = util.intl;
-      obj2.content = intl.string(util.t.HehpFW);
-      ToastActionCreatorsDefault.open(obj2);
-      callback();
-    };
-    const tmp6Result = tmp6(tmp3[14]);
-    obj3.allowPopups = tmp2(tmp3[15]).allowPopups(application);
-    tmp11 = closure_7(tmp6Result, obj3);
-    const tmp2Result = tmp2(tmp3[15]);
-  }
-  const obj4 = { style: null, children: null };
-  const items2 = [tmp.wrapper, { paddingTop: insets.top, paddingBottom: insets.bottom }];
-  obj4.style = items2;
-  const obj5 = { style: tmp.header, children: null };
-  const obj6 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
-  let intl = tmp2(tmp3[13]).intl;
-  obj6.accessibilityLabel = intl.string(id(onPress[13]).t.cpT0Cq);
-  obj6.onPress = onPress;
-  obj6.style = tmp.closeButton;
-  obj6.children = closure_7(id(onPress[17]).XLargeIcon, {});
-  const items3 = [closure_7(id(onPress[16]).PressableOpacity, obj6), , ];
-  const obj7 = { style: tmp.headerCenterContainer, children: null };
-  const obj8 = { style: tmp.headerTitleContainer, children: null };
-  const items4 = [closure_7(id(onPress[18]).Text, { variant: "heading-sm/bold", color: "mobile-text-heading-primary", children: application.name }), ];
-  const obj10 = { type: BotTagTypes.BOT, verified: null, style: null };
+  const obj2 = { style: items2, children: items6 };
+  items2 = [tmp.wrapper, { paddingTop: insets.top, paddingBottom: insets.bottom }];
+  const obj3 = { style: tmp.header, children: items3 };
+  const obj4 = { accessibilityRole: "button", accessibilityLabel: intl.string(id(onDisallowedNavigation[16]).t.cpT0Cq), onPress: onDisallowedNavigation, style: tmp.closeButton, children: closure_7(id(onDisallowedNavigation[17]).XLargeIcon, {}) };
+  const PressableOpacity = id(onDisallowedNavigation[18]).PressableOpacity;
+  intl = id(onDisallowedNavigation[16]).intl;
+  items3 = [closure_7(PressableOpacity, obj4), , ];
+  const obj6 = { style: tmp.headerTitleContainer, children: items4 };
+  items4 = [, ];
+  const obj5 = { style: tmp.headerCenterContainer, children: items5 };
+  const obj7 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", children: application.name };
+  items4[0] = closure_7(id(onDisallowedNavigation[19]).Text, obj7);
   const bot = application.bot;
-  let verified;
-  const obj = id(onPress[7]);
-  const obj9 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", children: application.name };
+  const obj8 = { type: BotTagTypes.BOT, verified, style: tmp.botTag };
+  verified = undefined;
+  const tmp15 = require("BotTag");
+  const tmp7 = importDefault;
   if (bot != null) {
     verified = bot.verified;
   }
-  obj10.verified = verified;
-  obj10.style = tmp.botTag;
-  items4[1] = closure_7(require("BotTag"), obj10);
-  obj8.children = items4;
-  const items5 = [closure_8(View, obj8), closure_7(id(onPress[18]).Text, { variant: "text-xs/medium", color: "interactive-text-default", children: children.title })];
-  obj7.children = items5;
-  items3[1] = closure_8(View, obj7);
-  items3[2] = closure_7(View, { style: tmp.spacerView });
-  obj5.children = items3;
-  const items6 = [closure_8(View, obj5), tmp11];
-  obj4.children = items6;
-  return closure_8(View, obj4);
-};
+  items4[1] = closure_7(tmp15, obj8);
+  items5 = [closure_8(View, obj6), closure_7(id(tmp3[19]).Text, { variant: "text-xs/medium", color: "interactive-text-default", children: title })];
+  items3[1] = closure_8(View, obj5);
+  const obj9 = { style: tmp.spacerView };
+  items3[2] = closure_7(View, obj9);
+  items6 = [closure_8(View, obj3), ];
+  const obj10 = {
+    iframeId: tmp6,
+    onDisallowedNavigation,
+    onActivityCrash() {
+      const obj = v1;
+      importDefault(obj.v4());
+    },
+    applicationId: application.id,
+    channelId: queryParams.channel_id,
+    guildId: queryParams.guild_id,
+    activityUrl: iframeUrl,
+    activitySessionId: queryParams.instance_id,
+    queryParams,
+    onLoadError() {
+      let intl;
+      const obj = { key: interaction_iframe_modal, content: intl.string(intl2.t.HehpFW) };
+      const open = ToastActionCreatorsDefault.open;
+      ToastActionCreatorsDefault;
+      intl = intl2.intl;
+      open(obj);
+      callback();
+    },
+    allowPopups: tmp2Result.allowPopups(application),
+    referrerPolicy: "origin",
+    isPipOrGridMode: false,
+    ignoreSilentHardwareSwitch: false
+  };
+  const tmp7Result = tmp7(onDisallowedNavigation[22]);
+  tmp2Result = id(onDisallowedNavigation[21]);
+  items6[1] = closure_7(tmp7Result, obj10, tmp6);
+  return closure_8(View, obj2);
+});
+let result = size.fileFinishedImporting("modules/interaction_components/native/InteractionIframeModal.tsx");
+
+export default tmp3;

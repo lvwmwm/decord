@@ -1,31 +1,34 @@
-// Module ID: 6106
-// Function ID: 6107
+// Module ID: 5996
+// Function ID: 5997
 // Name: CardTokens
-// Dependencies: [4845, 576, 2]
+// Dependencies: [4890, 587, 2]
 // Exports: createCardShadowToken
 
-// Module 6106 (CardTokens)
-import nativeDefault from "native" /* 576 */;
+// Module 5996 (CardTokens)
+import nativeDefault from "native" /* 587 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
 const result = size.fileFinishedImporting("design/components/Card/native/CardTokens.native.tsx");
 
 export const createCardShadowToken = function createCardShadowToken(arg0) {
+  let closure_0;
   _require = arg0;
-  return require("createStyles").experimental_createToken((gradient) => {
+  const obj = require("createStyles");
+  return obj.experimental_createToken((gradient) => {
     if (null == gradient.gradient) {
       if ("none" !== closure_0) {
-        if ("border" === tmp11) {
+        if ("border" === closure_0) {
           return nativeDefault.shadows.SHADOW_BORDER;
-        } else if ("high" === tmp11) {
+        } else if ("high" === closure_0) {
           return nativeDefault.shadows.SHADOW_HIGH;
-        } else if ("ledge" === tmp11) {
+        } else if ("ledge" === closure_0) {
           return nativeDefault.shadows.SHADOW_LEDGE;
-        } else if ("low" === tmp11) {
+        } else if ("low" === closure_0) {
           return nativeDefault.shadows.SHADOW_LOW;
-        } else if ("medium" === tmp11) {
+        } else if ("medium" === closure_0) {
           return nativeDefault.shadows.SHADOW_MEDIUM;
         }
       }

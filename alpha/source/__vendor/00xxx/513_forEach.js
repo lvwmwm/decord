@@ -9,8 +9,9 @@ import castFunction from "castFunction" /* 548 */;
 
 
 export default function forEach(arg0, arg1) {
+  let tmpResult;
   if (_mod514(arg0)) {
-    let tmpResult = tmp(515);
+    tmpResult = tmp(515);
   } else {
     tmpResult = tmp(516);
   }

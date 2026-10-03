@@ -1,16 +1,17 @@
-// Module ID: 10581
-// Function ID: 10582
+// Module ID: 10662
+// Function ID: 10663
 // Name: getNavigationModalPresentation
-// Dependencies: [1364, 6550, 4821, 7962, 2]
+// Dependencies: [1369, 6433, 4866, 8008, 2]
 // Exports: default
 
-// Module 10581 (getNavigationModalPresentation)
-import DeviceUtils from "DeviceUtils" /* 4821 */;
-import useIsWindowLarge from "useIsWindowLarge" /* 6550 */;
-import DeviceOrientation from "DeviceOrientation" /* 7962 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1364 */;
+// Module 10662 (getNavigationModalPresentation)
+import DeviceUtils from "DeviceUtils" /* 4866 */;
+import useIsWindowLarge from "useIsWindowLarge" /* 6433 */;
+import DeviceOrientation from "DeviceOrientation" /* 8008 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
 import size from "module_2" /* 2 */;
 
+let str;
 let PlatformUtils = PlatformUtils_mod;
 if (PlatformUtils.isAndroid()) {
   const _module1 = useIsWindowLarge;
@@ -18,7 +19,7 @@ if (PlatformUtils.isAndroid()) {
   if (_module1.getIsWindowLarge()) {
     str2 = "fullScreenModal";
   }
-  let str = str2;
+  str = str2;
 } else {
   const _module2 = DeviceUtils;
   str = "modal";
@@ -26,12 +27,12 @@ if (PlatformUtils.isAndroid()) {
     str = "fullScreenModal";
   }
 }
-let obj = { presentation: str, lockOrientation: null };
-let PlatformUtils = PlatformUtils_mod;
-obj.lockOrientation = !PlatformUtils.isAndroid();
+let obj = { presentation: str, lockOrientation: !PlatformUtils.isAndroid() };
+PlatformUtils = PlatformUtils_mod;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/utils/getNavigationModalPresentation.tsx");
 
 export default function getNavigationModalPresentation() {
+  let tmp4;
   let tmp = arg0;
   if (arg0 === undefined) {
     tmp = obj;
@@ -42,29 +43,26 @@ export default function getNavigationModalPresentation() {
   }
   let lockOrientation = tmp.lockOrientation;
   if (lockOrientation === undefined) {
-    let lockOrientation2 = obj.lockOrientation;
-    if (lockOrientation2) {
-      lockOrientation2 = "transparentModal" !== presentation;
-    }
+    const lockOrientation2 = obj.lockOrientation && "transparentModal" !== presentation;
     lockOrientation = lockOrientation2;
   }
-  obj = { presentation, orientation: null };
-  let tmp4;
+  obj = { presentation, orientation: tmp4 };
+  tmp4 = undefined;
   if (lockOrientation) {
-    const orientationLock = DeviceOrientation.getOrientationLock();
+    const obj2 = DeviceOrientation;
+    const orientationLock = obj2.getOrientationLock();
     let str2 = "landscape";
     let str4 = "landscape";
     if ("LANDSCAPE" !== orientationLock) {
       if (null != orientationLock) {
         str2 = "portrait";
       } else {
-        const orientation = tmp5(7962).getOrientation();
-        const tmp5Result = tmp5(7962);
+        const tmp5Result = DeviceOrientation;
+        const orientation = tmp5Result.getOrientation();
       }
       str4 = str2;
     }
     tmp4 = str4;
   }
-  obj.orientation = tmp4;
   return obj;
 };

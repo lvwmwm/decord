@@ -1,70 +1,231 @@
-// Module ID: 9629
-// Function ID: 9630
+// Module ID: 9657
+// Function ID: 9658
 // Name: UserSettingsVoice
-// Dependencies: [19, 17, 9630, 9631, 21, 4845, 6185, 9632, 9633, 5463, 9634, 9636, 4841, 1115, 9640, 9641, 9643, 9651, 6730, 2]
-// Exports: UserSettingsTableRowGroup, default
+// Dependencies: [19, 17, 9658, 9659, 21, 4890, 558, 576, 6074, 9660, 9661, 9663, 9665, 1126, 4886, 9669, 9670, 9672, 9680, 6619, 5593, 2]
 
-// Module 9629 (UserSettingsVoice)
-import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import Stack_Stack from "Stack/Stack" /* 5463 */;
-import TableRowGroup from "TableRowGroup" /* 6185 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6730 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 9632 */;
-import useIsVideoBackgroundSupportedDefault from "useIsVideoBackgroundSupported" /* 9633 */;
-import UserSettingsVoiceInputOptionsDefault from "UserSettingsVoiceInputOptions" /* 9634 */;
-import UserSettingsSoundboardVolumeDefault from "UserSettingsSoundboardVolume" /* 9640 */;
-import UserSettingsVoiceOverlayDefault from "UserSettingsVoiceOverlay" /* 9641 */;
-import UserSettingsVoiceProcessingDefault from "UserSettingsVoiceProcessing" /* 9643 */;
-import noop from "module_19" /* 19 */;
+// Module 9657 (UserSettingsVoice)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import intl3 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Stack_Stack from "Stack/Stack" /* 5593 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
+import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 9658 */;
+import UserSettingsVoiceConstants from "UserSettingsVoiceConstants" /* 9659 */;
+import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 9660 */;
+import useIsVideoBackgroundEnabledDefault from "useIsVideoBackgroundEnabled" /* 9661 */;
+import UserSettingsVoiceInputOptionsDefault from "UserSettingsVoiceInputOptions" /* 9663 */;
+import UserSettingsSoundboardVolumeDefault from "UserSettingsSoundboardVolume" /* 9669 */;
+import UserSettingsVoiceOverlayDefault from "UserSettingsVoiceOverlay" /* 9670 */;
+import UserSettingsVoiceProcessingDefault from "UserSettingsVoiceProcessing" /* 9672 */;
+import VideoBackgroundOptionsRadioGroupDefault from "VideoBackgroundOptionsRadioGroup" /* 9680 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const isMobileOverlaySupported = fn(9630).isMobileOverlaySupported;
-const guideURL = fn(9631).USER_SETTINGS_VOICE_GUILD_URL;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4845);
+let metroImportDefault;
+let metroRequire;
+let tmp;
+const TableRowGroup2 = tmp(6074);
+const View = react_native.View;
+const isMobileOverlaySupported = MobileVoiceOverlayStore.isMobileOverlaySupported;
+const guideURL = UserSettingsVoiceConstants.USER_SETTINGS_VOICE_GUILD_URL;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ container: { paddingHorizontal: 16 }, tableRow: { marginTop: 12 } });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoice.tsx");
-
-export default function UserSettingsVoice() {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp4;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] !== arg0) {
+    const obj2 = {};
+    const TableRowGroup = TableRowGroup2.TableRowGroup;
+    const merged = Object.assign(arg0);
+    const tmp9 = metroRequire(TableRowGroup, obj2);
+    cResult[0] = arg0;
+    cResult[1] = tmp9;
+    tmp4 = tmp9;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : ((arg0) => {
+  const obj = {};
+  const TableRowGroup = TableRowGroup2.TableRowGroup;
+  const merged = Object.assign(arg0);
+  return metroRequire(TableRowGroup, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let intl2;
+  let items;
+  let tmp11;
+  let tmp14;
+  let tmp17;
+  let tmp20;
+  let tmp21;
+  let tmp22;
+  let tmp28;
+  let tmp32;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(20);
+  const tmp4 = closure_8();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { location: "NewUserSettingsVoice" };
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  const obj3 = MobileAudioOutputExperimentDefault;
+  const nonContextualStreamOutputPresent = obj3.useConfig(first).nonContextualStreamOutputPresent;
+  const tmp7 = useIsVideoBackgroundEnabledDefault("UserSettingsVoice");
+  const container = tmp4.container;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp10 = metroRequire(UserSettingsVoiceInputOptionsDefault, {});
+    cResult[1] = tmp10;
+    tmp8 = tmp10;
+  } else {
+    tmp8 = cResult[1];
+  }
+  if (cResult[2] !== nonContextualStreamOutputPresent) {
+    const tmp12 = nonContextualStreamOutputPresent && metroRequire(tmp6(9665), {});
+    cResult[2] = nonContextualStreamOutputPresent;
+    cResult[3] = tmp12;
+    tmp11 = tmp12;
+  } else {
+    tmp11 = cResult[3];
+  }
+  const tableRow = tmp4.tableRow;
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1126).intl;
+    const obj4 = { guideURL };
+    const formatResult = intl.format(intl3.t["V+B3FH"], obj4);
+    cResult[4] = formatResult;
+    tmp14 = formatResult;
+  } else {
+    tmp14 = cResult[4];
+  }
+  if (cResult[5] !== tmp4.tableRow) {
+    const obj5 = { style: tableRow, variant: "text-sm/medium", children: tmp14 };
+    const tmp19 = metroRequire(Text_Text.Text, obj5);
+    cResult[5] = tmp4.tableRow;
+    cResult[6] = tmp19;
+    tmp17 = tmp19;
+  } else {
+    tmp17 = cResult[6];
+  }
+  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp24 = metroRequire(UserSettingsSoundboardVolumeDefault, {});
+    const tmp26 = isMobileOverlaySupported() && metroRequire(UserSettingsVoiceOverlayDefault, {});
+    const tmp23Result = metroRequire(UserSettingsVoiceProcessingDefault, {});
+    cResult[7] = tmp24;
+    cResult[8] = tmp26;
+    cResult[9] = tmp23Result;
+    tmp21 = tmp26;
+    tmp22 = tmp23Result;
+    tmp20 = tmp24;
+  } else {
+    tmp20 = cResult[7];
+    tmp21 = cResult[8];
+    tmp22 = cResult[9];
+  }
+  if (cResult[10] !== tmp7) {
+    let tmp29 = tmp7;
+    if (tmp29) {
+      const obj6 = { title: intl2.string(intl3.t.lZTUPs) };
+      const tmp6Result = VideoBackgroundOptionsRadioGroupDefault;
+      intl2 = tmp(1126).intl;
+      tmp29 = metroRequire(tmp6Result, obj6);
+    }
+    cResult[10] = tmp7;
+    cResult[11] = tmp29;
+    tmp28 = tmp29;
+  } else {
+    tmp28 = cResult[11];
+  }
+  if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp34 = metroRequire(common_SafeAreaView.SafeAreaPaddingView, { bottom: true });
+    cResult[12] = tmp34;
+    tmp32 = tmp34;
+  } else {
+    tmp32 = cResult[12];
+  }
+  if (cResult[13] === tmp28) {
+    if (cResult[14] === tmp11) {
+      let tmp35;
+      if (cResult[15] === tmp17) {
+        tmp35 = cResult[16];
+      }
+      if (cResult[17] === tmp4.container) {
+        let tmp37;
+        if (cResult[18] === tmp35) {
+          tmp37 = cResult[19];
+        }
+        return tmp37;
+      }
+      const obj7 = { style: container, children: tmp35 };
+      const tmp40 = metroRequire(View, obj7);
+      cResult[17] = tmp4.container;
+      cResult[18] = tmp35;
+      cResult[19] = tmp40;
+      tmp37 = tmp40;
+    }
+  }
+  const obj8 = { spacing: 24, children: items };
+  items = [tmp8, tmp11, tmp17, tmp20, tmp21, tmp22, tmp28, tmp32];
+  const tmp36 = metroImportDefault(Stack_Stack.Stack, obj8);
+  cResult[13] = tmp28;
+  cResult[14] = tmp11;
+  cResult[15] = tmp17;
+  cResult[16] = tmp36;
+  tmp35 = tmp36;
+}) : (() => {
+  let Stack;
+  let intl;
+  let intl2;
+  let obj4;
+  let obj6;
+  let tmp7;
   const tmp = closure_8();
-  let nonContextualStreamOutputPresent = MobileAudioOutputExperimentDefault.useConfig({ location: "NewUserSettingsVoice" }).nonContextualStreamOutputPresent;
-  const tmp4 = useIsVideoBackgroundSupportedDefault();
-  const obj2 = { style: tmp.container, children: null };
-  const items = [timestampProducer(UserSettingsVoiceInputOptionsDefault, {}), , , , , , , ];
+  const obj = MobileAudioOutputExperimentDefault;
+  let nonContextualStreamOutputPresent = obj.useConfig({ location: "NewUserSettingsVoice" }).nonContextualStreamOutputPresent;
+  const obj2 = { style: tmp.container, children: tmp7(Stack, obj6) };
+  const tmp4 = useIsVideoBackgroundEnabledDefault("UserSettingsVoice");
+  Stack = Stack_Stack.Stack;
+  const items = [metroRequire(UserSettingsVoiceInputOptionsDefault, {}), , , , , , , ];
+  const tmp6 = View;
+  tmp7 = metroImportDefault;
   if (nonContextualStreamOutputPresent) {
-    nonContextualStreamOutputPresent = tmp5(tmp2(9636), {});
+    nonContextualStreamOutputPresent = tmp5(tmp2(9665), {});
   }
   items[1] = nonContextualStreamOutputPresent;
-  const obj3 = { style: tmp.tableRow, variant: "text-sm/medium", children: null };
-  const intl = tmp8(1115).intl;
-  obj3.children = intl.format(util.t["V+B3FH"], { guideURL });
-  items[2] = timestampProducer(Text_Text.Text, obj3);
-  items[3] = timestampProducer(UserSettingsSoundboardVolumeDefault, {});
-  const obj4 = { guideURL };
-  const tmp6 = View;
-  const tmp7 = React5;
-  items[4] = isMobileOverlaySupported() && timestampProducer(UserSettingsVoiceOverlayDefault, {});
-  items[5] = timestampProducer(UserSettingsVoiceProcessingDefault, {});
+  const obj3 = { style: tmp.tableRow, variant: "text-sm/medium", children: intl.format(intl3.t["V+B3FH"], obj4) };
+  const Text = tmp8(4886).Text;
+  intl = tmp8(1126).intl;
+  obj4 = { guideURL };
+  items[2] = metroRequire(Text, obj3);
+  items[3] = metroRequire(UserSettingsSoundboardVolumeDefault, {});
+  items[4] = isMobileOverlaySupported() && metroRequire(UserSettingsVoiceOverlayDefault, {});
+  isMobileOverlaySupported() && metroRequire(UserSettingsVoiceOverlayDefault, {});
+  items[5] = metroRequire(UserSettingsVoiceProcessingDefault, {});
   let tmp5Result = tmp4;
-  if (tmp4) {
-    const obj5 = { title: null };
-    const intl2 = tmp8(1115).intl;
-    obj5.title = intl2.string(tmp8(1115).t.lZTUPs);
-    tmp5Result = tmp5(tmp2(9651), obj5);
-    const tmp2Result = tmp2(9651);
+  if (tmp5Result) {
+    const obj5 = { title: intl2.string(intl3.t.lZTUPs) };
+    const tmp2Result = VideoBackgroundOptionsRadioGroupDefault;
+    intl2 = tmp8(1126).intl;
+    tmp5Result = tmp5(tmp2Result, obj5);
   }
-  const obj6 = { spacing: 24, children: null };
+  obj6 = { spacing: 24, children: items };
   items[6] = tmp5Result;
-  items[7] = timestampProducer(common_SafeAreaView.SafeAreaPaddingView, { bottom: true });
-  obj6.children = items;
-  obj2.children = tmp7(Stack_Stack.Stack, obj6);
-  return timestampProducer(tmp6, obj2);
-};
-export const UserSettingsTableRowGroup = function UserSettingsTableRowGroup(arg0) {
-  const merged = Object.assign(arg0);
-  return timestampProducer(TableRowGroup.TableRowGroup, {});
-};
+  items[7] = metroRequire(common_SafeAreaView.SafeAreaPaddingView, { bottom: true });
+  return metroRequire(tmp6, obj2);
+});
+const result = size.fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoice.tsx");
+
+export default tmp5;
+export const UserSettingsTableRowGroup = tmp4;

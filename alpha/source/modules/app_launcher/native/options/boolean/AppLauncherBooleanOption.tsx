@@ -1,62 +1,126 @@
-// Module ID: 11870
-// Function ID: 11871
+// Module ID: 11803
+// Function ID: 11804
 // Name: AppLauncherBooleanOption
-// Dependencies: [32, 19, 21, 4845, 576, 8239, 2]
-// Exports: default
+// Dependencies: [32, 19, 21, 4890, 587, 558, 576, 8895, 2]
 
-// Module 11870 (AppLauncherBooleanOption)
-import nativeDefault from "native" /* 576 */;
-import Form from "Form" /* 8239 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 11803 (AppLauncherBooleanOption)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
-const obj2 = { container: { flexDirection: "row", width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, alignItems: "center" } };
-let closure_5 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/app_launcher/native/options/boolean/AppLauncherBooleanOption.tsx");
+let onPress;
 
-export default function AppLauncherBooleanOption(arg0) {
-  ({ initialValue: require, onPress: dependencyMap } = arg0);
-  selected = undefined;
+let obj2;
+let tmp;
+const Form = tmp(8895);
+const jsx = Fragment.jsx;
+let obj = { container: obj2 };
+obj2 = { flexDirection: "row", width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, alignItems: "center" };
+let closure_5 = createStyles.createStyles(obj);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+  let closure_3;
+  let first;
+  let initialValue;
+  let option;
+  let style;
+  let tmp5;
+  const tmp = require;
+  const obj = react2;
+  const cResult = obj.c(14);
+  ({ style, option, initialValue } = onPress);
+  onPress = onPress.onPress;
+  const hasError = onPress.hasError;
+  const tmp4 = closure_5();
+  if (cResult[0] !== initialValue) {
+    const fn = function c() {
+      return null != initialValue && "text" === tmp.type && "true" === tmp.text;
+    };
+    cResult[0] = initialValue;
+    cResult[1] = fn;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+  }
+  [first, closure_3] = react.useState(tmp5);
+  if (cResult[2] === style) {
+    let tmp8;
+    if (cResult[3] === tmp4.container) {
+      tmp8 = cResult[4];
+    }
+    if (cResult[5] === onPress) {
+      let tmp9;
+      if (cResult[6] === first) {
+        tmp9 = cResult[7];
+      }
+      if (cResult[8] === hasError) {
+        if (cResult[9] === option.displayName) {
+          if (cResult[10] === first) {
+            if (cResult[11] === tmp8) {
+              let tmp10;
+              if (cResult[12] === tmp9) {
+                tmp10 = cResult[13];
+              }
+              return tmp10;
+            }
+          }
+        }
+      }
+      const tmp12 = jsx(Form.FormCheckboxRow, { start: true, end: true, style: tmp8, hasError, label: option.displayName, selected: first, onPress: tmp9 });
+      cResult[8] = hasError;
+      cResult[9] = option.displayName;
+      cResult[10] = first;
+      cResult[11] = tmp8;
+      cResult[12] = tmp9;
+      cResult[13] = tmp12;
+      tmp10 = tmp12;
+    }
+    const fn2 = function v() {
+      closure_3(!first);
+      onPress(!first);
+    };
+    cResult[5] = onPress;
+    cResult[6] = first;
+    cResult[7] = fn2;
+    tmp9 = fn2;
+  }
+  const items = [tmp4.container, style];
+  cResult[2] = style;
+  cResult[3] = tmp4.container;
+  cResult[4] = items;
+  tmp8 = items;
+}) : ((arg0) => {
+  let closure_129_0;
+  let closure_129_1;
+  let closure_3;
+  let first;
+  let hasError;
+  let option;
+  let style;
+  ({ initialValue: closure_129_0, onPress: closure_129_1 } = arg0);
+  first = undefined;
   closure_3 = undefined;
   ({ style, option, hasError } = arg0);
-  [selected, closure_3] = noop.useState(() => {
-    let tmp2 = null != require;
-    if (tmp2) {
-      tmp2 = "text" === tmp.type;
-    }
-    if (tmp2) {
-      tmp2 = "true" === tmp.text;
-    }
-    return tmp2;
-  });
-  const obj = {
-    start: true,
-    end: true,
-    style: null,
-    hasError,
-    label: option.displayName,
-    selected,
-    onPress() {
-      closure_3(!first);
-      dependencyMap(!first);
-    }
-  };
-  const items = [closure_5().container, style];
-  obj.style = items;
+  const tmp = closure_5();
+  [first, closure_3] = react.useState(() => null != closure_1_0 && "text" === tmp.type && "true" === tmp.text);
+  const items = [tmp.container, style];
   return jsx(Form.FormCheckboxRow, {
     start: true,
     end: true,
-    style: null,
+    style: items,
     hasError,
     label: option.displayName,
-    selected,
+    selected: first,
     onPress() {
       closure_3(!first);
-      dependencyMap(!first);
+      closure_1_1(!first);
     }
   });
-};
+});
+const result = size.fileFinishedImporting("modules/app_launcher/native/options/boolean/AppLauncherBooleanOption.tsx");
+
+export default tmp2;

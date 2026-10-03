@@ -1,22 +1,22 @@
-// Module ID: 12234
-// Function ID: 12235
+// Module ID: 12184
+// Function ID: 12185
 // Name: GuildBoostingMarketingUtils
-// Dependencies: [1374, 8407, 12235, 10035, 12237, 12239, 8865, 9226, 11408, 9891, 5595, 9766, 2]
+// Dependencies: [1379, 8411, 12185, 10105, 12187, 12189, 8878, 9232, 11324, 9943, 5881, 12190, 2]
 // Exports: getIconForPerk
 
-// Module 12234 (GuildBoostingMarketingUtils)
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import StageIcon from "StageIcon" /* 5595 */;
-import ReactionIcon from "ReactionIcon" /* 8407 */;
-import UploadIcon from "UploadIcon" /* 8865 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 9226 */;
-import StickerIcon from "StickerIcon" /* 9766 */;
-import StarIcon from "StarIcon" /* 9891 */;
-import GifIcon from "GifIcon" /* 10035 */;
-import ImagesIcon from "ImagesIcon" /* 11408 */;
-import SoundboardIcon from "SoundboardIcon" /* 12235 */;
-import HeadphonesIcon from "HeadphonesIcon" /* 12237 */;
-import ScreenArrowIcon from "ScreenArrowIcon" /* 12239 */;
+// Module 12184 (GuildBoostingMarketingUtils)
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import StageIcon from "StageIcon" /* 5881 */;
+import ReactionIcon from "ReactionIcon" /* 8411 */;
+import UploadIcon from "UploadIcon" /* 8878 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 9232 */;
+import StarIcon from "StarIcon" /* 9943 */;
+import GifIcon from "GifIcon" /* 10105 */;
+import ImagesIcon from "ImagesIcon" /* 11324 */;
+import SoundboardIcon from "SoundboardIcon" /* 12185 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 12187 */;
+import ScreenArrowIcon from "ScreenArrowIcon" /* 12189 */;
+import StickerIcon from "StickerIcon" /* 12190 */;
 import size from "module_2" /* 2 */;
 
 const PerkIcons = PremiumConstants.PerkIcons;
@@ -25,25 +25,25 @@ const result = size.fileFinishedImporting("modules/guild_boosting/native/GuildBo
 export const getIconForPerk = function getIconForPerk(perkIcon) {
   if (PerkIcons.EMOJI === perkIcon) {
     return ReactionIcon.ReactionIcon;
-  } else if (tmp.SOUNDBOARD === perkIcon) {
+  } else if (PerkIcons.SOUNDBOARD === perkIcon) {
     return SoundboardIcon.SoundboardIcon;
-  } else if (tmp.ANIMATED === perkIcon) {
+  } else if (PerkIcons.ANIMATED === perkIcon) {
     return GifIcon.GifIcon;
-  } else if (tmp.AUDIO === perkIcon) {
+  } else if (PerkIcons.AUDIO === perkIcon) {
     return HeadphonesIcon.HeadphonesIcon;
-  } else if (tmp.STREAM === perkIcon) {
+  } else if (PerkIcons.STREAM === perkIcon) {
     return ScreenArrowIcon.ScreenArrowIcon;
-  } else if (tmp.UPLOAD === perkIcon) {
+  } else if (PerkIcons.UPLOAD === perkIcon) {
     return UploadIcon.UploadIcon;
-  } else if (tmp.CUSTOM_ROLE_ICON === perkIcon) {
+  } else if (PerkIcons.CUSTOM_ROLE_ICON === perkIcon) {
     return ShieldUserIcon.ShieldUserIcon;
-  } else if (tmp.CUSTOMIZATION === perkIcon) {
+  } else if (PerkIcons.CUSTOMIZATION === perkIcon) {
     return ImagesIcon.ImagesIcon;
-  } else if (tmp.VANITY === perkIcon) {
+  } else if (PerkIcons.VANITY === perkIcon) {
     return StarIcon.StarIcon;
-  } else if (tmp.STAGE_VIDEO === perkIcon) {
+  } else if (PerkIcons.STAGE_VIDEO === perkIcon) {
     return StageIcon.StageIcon;
-  } else if (tmp.STICKER === perkIcon) {
+  } else if (PerkIcons.STICKER === perkIcon) {
     return StickerIcon.StickerIcon;
   } else {
     return ReactionIcon.ReactionIcon;

@@ -1,24 +1,26 @@
-// Module ID: 17777
-// Function ID: 17778
+// Module ID: 17863
+// Function ID: 17864
 // Name: formatDurationFromDays
-// Dependencies: [1115, 2]
+// Dependencies: [1126, 2]
 // Exports: default
 
-// Module 17777 (formatDurationFromDays)
-import util from "util" /* 1115 */;
+// Module 17863 (formatDurationFromDays)
+import intl3 from "intl" /* 1126 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/formatDurationFromDays.tsx");
 
 export default function formatDurationFromDays(days) {
   if (days > 0) {
+    let formatToPlainStringResult;
     if (days % 7 === 0) {
-      const intl2 = util.intl;
+      const intl2 = intl3.intl;
       const obj2 = { weeks: days / 7 };
-      let formatToPlainStringResult = intl2.formatToPlainString(util.t.EmoBD2, obj2);
+      formatToPlainStringResult = intl2.formatToPlainString(intl3.t.EmoBD2, obj2);
     }
     return formatToPlainStringResult;
   }
-  const intl = util.intl;
-  formatToPlainStringResult = intl.formatToPlainString(util.t["k2UNz+"], { days });
+  const intl = intl3.intl;
+  const obj = { days };
+  formatToPlainStringResult = intl.formatToPlainString(intl3.t["k2UNz+"], obj);
 };

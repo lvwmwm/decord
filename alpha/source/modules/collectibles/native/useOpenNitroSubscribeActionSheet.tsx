@@ -1,29 +1,61 @@
-// Module ID: 12927
-// Function ID: 12928
+// Module ID: 12982
+// Function ID: 12983
 // Name: useOpenNitroSubscribeActionSheet
-// Dependencies: [19, 1074, 1374, 6769, 7030, 2]
-// Exports: default
+// Dependencies: [19, 1085, 1379, 558, 576, 6657, 6928, 2]
 
-// Module 12927 (useOpenNitroSubscribeActionSheet)
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7030 */;
-import noop from "module_19" /* 19 */;
+// Module 12982 (useOpenNitroSubscribeActionSheet)
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 6928 */;
+import react from "react" /* 19 */;
+import Constants from "Constants" /* 1085 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const Constants = fn(1074);
-({ AnalyticsPages: c3, AnalyticsSections: closure_4 } = Constants);
-const PremiumTypes = fn(1374).PremiumTypes;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/collectibles/native/useOpenNitroSubscribeActionSheet.tsx");
-
-export default function useOpenNitroSubscribeActionSheet() {
+let closure_4;
+let hasOwnProperty;
+({ AnalyticsPages: closure_4, AnalyticsSections: hasOwnProperty } = Constants);
+const PremiumTypes = PremiumConstants.PremiumTypes;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let analyticsLocations;
+  let COLLECTIBLES_SHOP = arg0;
+  let obj = COLLECTIBLES_SHOP(576);
+  const cResult = obj.c(3);
+  if (undefined === arg0) {
+    COLLECTIBLES_SHOP = constants2.COLLECTIBLES_SHOP;
+  }
+  analyticsLocations = analyticsLocations(6657)().analyticsLocations;
+  if (cResult[0] === analyticsLocations) {
+    let tmp4;
+    if (cResult[1] === COLLECTIBLES_SHOP) {
+      tmp4 = cResult[2];
+    }
+    return tmp4;
+  }
+  const fn = function n() {
+    let obj2;
+    const obj = { analyticsLocation: obj2, analyticsLocations, premiumType: PremiumTypes.TIER_2 };
+    obj2 = { page: constants.COLLECTIBLES_SHOP, section: COLLECTIBLES_SHOP };
+    openPremiumPlanSelectionActionSheetDefault(obj);
+  };
+  cResult[0] = analyticsLocations;
+  cResult[1] = COLLECTIBLES_SHOP;
+  cResult[2] = fn;
+  tmp4 = fn;
+}) : (() => {
   let COLLECTIBLES_SHOP = arg0;
   if (arg0 === undefined) {
     COLLECTIBLES_SHOP = constants2.COLLECTIBLES_SHOP;
   }
   let analyticsLocations;
-  analyticsLocations = COLLECTIBLES_SHOP(analyticsLocations[3])().analyticsLocations;
+  analyticsLocations = analyticsLocations(6657)().analyticsLocations;
   const items = [analyticsLocations, COLLECTIBLES_SHOP];
-  return noop.useCallback(() => {
-    const obj = { analyticsLocation: { page: constants.COLLECTIBLES_SHOP, section: COLLECTIBLES_SHOP }, analyticsLocations, premiumType: PremiumTypes.TIER_2 };
+  return react.useCallback(() => {
+    let obj2;
+    const obj = { analyticsLocation: obj2, analyticsLocations, premiumType: PremiumTypes.TIER_2 };
+    obj2 = { page: constants.COLLECTIBLES_SHOP, section: COLLECTIBLES_SHOP };
     openPremiumPlanSelectionActionSheetDefault(obj);
   }, items);
-};
+});
+const result = size.fileFinishedImporting("modules/collectibles/native/useOpenNitroSubscribeActionSheet.tsx");
+
+export default tmp3;

@@ -1,21 +1,37 @@
-// Module ID: 15779
-// Function ID: 15780
+// Module ID: 15856
+// Function ID: 15857
 // Name: RiveAppStatePlaybackExperiment
-// Dependencies: [1435, 2]
-// Exports: useRiveAppStatePlaybackExperiment
+// Dependencies: [1440, 558, 576, 2]
 
-// Module 15779 (RiveAppStatePlaybackExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 15856 (RiveAppStatePlaybackExperiment)
+import react from "react" /* 576 */;
+import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-06-rive-app-state-playback", kind: "user", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+let obj = { name: "2026-06-rive-app-state-playback", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  let tmp2;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] !== location) {
+    const obj2 = { location };
+    cResult[0] = location;
+    cResult[1] = obj2;
+    tmp2 = obj2;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return apexExperiment.useConfig(tmp2).enabled;
+}) : ((location) => {
+  const obj = { location };
+  return apexExperiment.useConfig(obj).enabled;
+});
 const result = size.fileFinishedImporting("modules/design/RiveAppStatePlaybackExperiment.tsx");
 
 export default apexExperiment;
-export const useRiveAppStatePlaybackExperiment = function useRiveAppStatePlaybackExperiment(AppContainer) {
-  return apexExperiment.useConfig({ location: AppContainer }).enabled;
-};
+export const useRiveAppStatePlaybackExperiment = tmp3;

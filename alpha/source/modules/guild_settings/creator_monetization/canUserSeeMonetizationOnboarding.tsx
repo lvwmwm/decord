@@ -1,29 +1,33 @@
-// Module ID: 6864
-// Function ID: 6865
+// Module ID: 6762
+// Function ID: 6763
 // Name: canUserSeeMonetizationOnboarding
-// Dependencies: [1372, 6865, 6866, 4490, 2]
+// Dependencies: [1377, 6763, 6764, 4501, 2]
 // Exports: canUserSeeMonetizationOnboarding
 
-// Module 6864 (canUserSeeMonetizationOnboarding)
-import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4490 */;
-import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 6865 */;
-import CreatorMonetizationEligibilityExperimentUtils from "CreatorMonetizationEligibilityExperimentUtils" /* 6866 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 6762 (canUserSeeMonetizationOnboarding)
+import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4501 */;
+import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 6763 */;
+import CreatorMonetizationEligibilityExperimentUtils from "CreatorMonetizationEligibilityExperimentUtils" /* 6764 */;
+import UserStore from "UserStore" /* 1377 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_settings/creator_monetization/canUserSeeMonetizationOnboarding.tsx");
 
 export const canUserSeeMonetizationOnboarding = function canUserSeeMonetizationOnboarding(guild) {
+  let obj2;
+  let obj3;
+  let obj4;
+  const ownerId = guild.ownerId;
   const currentUser = UserStore.getCurrentUser();
   let id;
   if (currentUser != null) {
     id = currentUser.id;
   }
-  const obj2 = { guild, isOwner: guild.ownerId === id, canManageGuildRoleSubscriptions: null, isUserInCreatorMonetizationEligibleCountry: null, shouldRestrictUpdatingRoleSubscriptionSettings: null };
-  const obj = GuildRoleSubscriptionSettingUtils;
-  obj2.canManageGuildRoleSubscriptions = GuildRoleSubscriptionSettingUtils.canManageGuildRoleSubscriptions(guild);
-  obj2.isUserInCreatorMonetizationEligibleCountry = CreatorMonetizationEligibilityExperimentUtils.isUserInCreatorMonetizationEligibleCountry();
-  obj2.shouldRestrictUpdatingRoleSubscriptionSettings = CreatorMonetizationRestrictionsUtils.shouldRestrictUpdatingCreatorMonetizationSettings(guild.id);
-  return obj.canSeeGuildRoleSubscriptionSettings(obj2);
+  const obj = { guild, isOwner: ownerId === id, canManageGuildRoleSubscriptions: obj2.canManageGuildRoleSubscriptions(guild), isUserInCreatorMonetizationEligibleCountry: obj3.isUserInCreatorMonetizationEligibleCountry(), shouldRestrictUpdatingRoleSubscriptionSettings: obj4.shouldRestrictUpdatingCreatorMonetizationSettings(guild.id) };
+  const canSeeGuildRoleSubscriptionSettings = GuildRoleSubscriptionSettingUtils.canSeeGuildRoleSubscriptionSettings;
+  GuildRoleSubscriptionSettingUtils;
+  obj2 = GuildRoleSubscriptionSettingUtils;
+  obj3 = CreatorMonetizationEligibilityExperimentUtils;
+  obj4 = CreatorMonetizationRestrictionsUtils;
+  return canSeeGuildRoleSubscriptionSettings(obj);
 };

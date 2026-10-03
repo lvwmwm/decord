@@ -1,31 +1,33 @@
-// Module ID: 7329
-// Function ID: 7330
+// Module ID: 7227
+// Function ID: 7228
 // Name: GuildProfileUtils
-// Dependencies: [2048, 1074, 2058, 2]
+// Dependencies: [2055, 1085, 2066, 2]
 // Exports: getEstablishedDate, guildInviteCanEmbedProfile
 
-// Module 7329 (GuildProfileUtils)
-import Constants from "Constants" /* 1074 */;
-import ChannelRecord from "ChannelRecord" /* 2048 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2058 */;
+// Module 7227 (GuildProfileUtils)
+import Constants from "Constants" /* 1085 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2066 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = ChannelRecord.createChannelRecordFromInvite;
 const GuildFeatures = Constants.GuildFeatures;
 const result = size.fileFinishedImporting("modules/guild_profile/GuildProfileUtils.tsx");
 
-export const getEstablishedDate = function getEstablishedDate(tmpResult4, locale) {
-  if (null != tmpResult4) {
-    if ("" !== tmpResult4) {
+export const getEstablishedDate = function getEstablishedDate(tmp2Result4, stateFromStores) {
+  if (null != tmp2Result4) {
+    if ("" !== tmp2Result4) {
       const _Date = Date;
-      const date = new Date(tmpResult4);
+      const self = this;
+      const self2 = this;
+      const date = new Date(tmp2Result4);
       const _Date2 = Date;
       let toLocaleDateStringResult = null;
       if (date instanceof Date) {
         const _isNaN = isNaN;
         toLocaleDateStringResult = null;
         if (!isNaN(date.getTime())) {
-          toLocaleDateStringResult = date.toLocaleDateString(locale, { year: "numeric", month: "short" });
+          toLocaleDateStringResult = date.toLocaleDateString(stateFromStores, { year: "numeric", month: "short" });
         }
       }
       return toLocaleDateStringResult;
@@ -37,7 +39,8 @@ export const guildInviteCanEmbedProfile = function guildInviteCanEmbedProfile(gu
   if (null == guild.guild) {
     return false;
   } else {
-    const features = GuildRecordUtils.fromInviteGuild(guild.guild).features;
+    const obj = GuildRecordUtils;
+    const features = obj.fromInviteGuild(guild.guild).features;
     if (features.has(GuildFeatures.HUB)) {
       return false;
     } else {

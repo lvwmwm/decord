@@ -1,32 +1,33 @@
-// Module ID: 14834
-// Function ID: 14835
+// Module ID: 14890
+// Function ID: 14891
 // Name: QuestDockStore
-// Dependencies: [5942, 504, 14835, 573, 2]
+// Dependencies: [5623, 504, 14891, 584, 2]
 
-// Module 14834 (QuestDockStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import QuestConstants from "QuestConstants" /* 5942 */;
-import QuestDockUtils from "QuestDockUtils" /* 14835 */;
+// Module 14890 (QuestDockStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import QuestConstants from "QuestConstants" /* 5623 */;
+import QuestDockUtils from "QuestDockUtils" /* 14891 */;
 import size from "module_2" /* 2 */;
 
 const QuestDockMode = QuestConstants.QuestDockMode;
 let COLLAPSED = QuestDockMode.COLLAPSED;
-let c3 = null;
+const _false = null;
 let isEligibleToBeVisible = false;
-const PersistedStore = initializeDefault.PersistedStore;
+const PersistedStore = get_initializedDefault.PersistedStore;
 class QuestDockStore extends PersistedStore {
+  initialize(questDockSoftDismissedAt) {
+    if (null != questDockSoftDismissedAt) {
+      let c3 = questDockSoftDismissedAt.questDockSoftDismissedAt;
+      const obj = QuestDockUtils;
+      COLLAPSED = obj.isSoftDismissed(c3) ? tmp4.SOFT_DISMISSED : tmp4.COLLAPSED;
+    }
+  }
+  getState() {
+    return { prevRestingQuestDockMode: COLLAPSED, questDockSoftDismissedAt };
+  }
 }
 const prototype = QuestDockStore.prototype;
-prototype["initialize"] = function initialize(questDockSoftDismissedAt) {
-  if (null != questDockSoftDismissedAt) {
-    c3 = questDockSoftDismissedAt.questDockSoftDismissedAt;
-    COLLAPSED = QuestDockUtils.isSoftDismissed(c3) ? tmp4.SOFT_DISMISSED : tmp4.COLLAPSED;
-  }
-};
-prototype["getState"] = function getState() {
-  return { prevRestingQuestDockMode: COLLAPSED, questDockSoftDismissedAt };
-};
 Object.defineProperty(prototype, "prevRestingQuestDockMode", {
   get: function prevRestingQuestDockMode() {
     return COLLAPSED;
@@ -47,7 +48,7 @@ Object.defineProperty(prototype, "isEligibleToBeVisible", {
 });
 QuestDockStore.displayName = "QuestDockStore";
 QuestDockStore.persistKey = "QuestDockStore";
-const questDockStore = new QuestDockStore(DispatcherDefault, {
+let obj = {
   QUESTS_PREV_RESTING_QUEST_DOCK_MODE_UPDATE: function handlePrevRestingQuestDockModeUpdate(mode) {
     COLLAPSED = mode.mode;
     if (mode.mode !== COLLAPSED) {
@@ -56,18 +57,19 @@ const questDockStore = new QuestDockStore(DispatcherDefault, {
         const _Date = Date;
         timestamp = Date.now();
       }
-      c3 = timestamp;
+      let c3 = timestamp;
     }
     return mode.mode !== COLLAPSED;
   },
   QUESTS_DOCK_RESET_SOFT_DISMISSAL: function handleResetSoftDismissal() {
     COLLAPSED = QuestDockMode.COLLAPSED;
-    c3 = null;
+    let c3 = null;
   },
   QUESTS_DOCK_VISIBILITY_ELIGIBILITY_UPDATE: function handleQuestDockEligibilityUpdate(isEligibleToBeVisible) {
     isEligibleToBeVisible = isEligibleToBeVisible.isEligibleToBeVisible;
   }
-});
+};
+const questDockStore = new QuestDockStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockStore.tsx");
 
 export default questDockStore;

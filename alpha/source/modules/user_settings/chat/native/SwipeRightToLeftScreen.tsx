@@ -1,29 +1,64 @@
-// Module ID: 15238
-// Function ID: 15239
+// Module ID: 15294
+// Function ID: 15295
 // Name: SwipeRightToLeftScreen
-// Dependencies: [19, 7590, 21, 11215, 14460, 2]
-// Exports: default
+// Dependencies: [19, 7634, 21, 558, 576, 11129, 14495, 2]
 
-// Module 15238 (SwipeRightToLeftScreen)
-import SettingBuilders from "SettingBuilders" /* 11215 */;
-import SettingLayoutDefault from "SettingLayout" /* 14460 */;
-import noop from "module_19" /* 19 */;
+// Module 15294 (SwipeRightToLeftScreen)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingLayoutDefault from "SettingLayout" /* 14495 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const MobileUserSettings = fn(7590).MobileUserSettings;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/chat/native/SwipeRightToLeftScreen.tsx");
-
-export default function UserSettingsSwipeRightToLeft() {
-  const node = noop.useMemo(() => {
-    const obj2 = { sections: null };
-    const obj3 = { settings: null };
-    const items = [constants.CHAT_GESTURES];
-    obj3.settings = items;
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let items;
+  let items2;
+  let tmp12;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { settings: items };
+    items = [MobileUserSettings.CHAT_GESTURES];
     const items1 = [obj3];
-    obj2.sections = items1;
-    return SettingBuilders.createList(obj2);
+    const obj2 = { sections: items2 };
+    items2 = [];
+    const createList = tmp2(11129).createList;
+    SettingBuilders;
+    HermesBuiltin.arraySpread(items2, items1, 0);
+    const list = createList(obj2);
+    cResult[0] = list;
+    first = list;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp15 = jsx(SettingLayoutDefault, { node: first });
+    cResult[1] = tmp15;
+    tmp12 = tmp15;
+  } else {
+    tmp12 = cResult[1];
+  }
+  return tmp12;
+}) : (() => {
+  const node = react.useMemo(() => {
+    let items;
+    let items2;
+    const obj3 = { settings: items };
+    items = [constants.CHAT_GESTURES];
+    const items1 = [obj3];
+    const obj2 = { sections: items2 };
+    items2 = [...items1];
+    const obj = SettingBuilders;
+    return obj.createList(obj2);
   }, []);
   return jsx(SettingLayoutDefault, { node });
-};
+});
+const result = size.fileFinishedImporting("modules/user_settings/chat/native/SwipeRightToLeftScreen.tsx");
+
+export default tmp2;

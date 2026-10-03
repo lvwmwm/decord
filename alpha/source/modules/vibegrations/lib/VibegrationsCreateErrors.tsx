@@ -1,39 +1,42 @@
-// Module ID: 12663
-// Function ID: 12664
+// Module ID: 12697
+// Function ID: 12698
 // Name: VibegrationsCreateErrors
-// Dependencies: [1074, 1115, 3714, 2]
+// Dependencies: [1085, 1126, 3723, 2]
 // Exports: classifyCreateFailure, createFailureStatus, getVibegrationsCreateErrorMessage
 
-// Module 12663 (VibegrationsCreateErrors)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import _modDef3714 from "module_3714" /* 3714 */;
+// Module 12697 (VibegrationsCreateErrors)
+import Constants from "Constants" /* 1085 */;
+import intl4 from "intl" /* 1126 */;
+import _modDef3723 from "module_3723" /* 3723 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;
-const prototype = function VibegrationsCreateError(reason, failureStatus) {
-  const tmp2 = new tmp("vibegrations create failed: " + reason + " [" + failureStatus + "]", " [", failureStatus, "]");
-  tmp2.name = "VibegrationsCreateError";
-  tmp2.reason = reason;
-  tmp2.status = failureStatus;
-  return tmp2;
-}.prototype;
-class prototype extends Error {
+class VibegrationsCreateError extends Error {
+  constructor(reason, failureStatus) {
+    const tmp2 = new tmp("vibegrations create failed: " + reason + " [" + failureStatus + "]", " [", failureStatus, "]");
+    tmp2.name = "VibegrationsCreateError";
+    tmp2.reason = reason;
+    tmp2.status = failureStatus;
+    return tmp2;
+  }
 }
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsCreateErrors.tsx");
 
-export const VibegrationsCreateError = prototype;
-export const classifyCreateFailure = function classifyCreateFailure(obj) {
-  if (typeof obj === "object") {
-    if (null !== obj) {
-      ({ status, body } = obj);
+export { VibegrationsCreateError };
+export const classifyCreateFailure = function classifyCreateFailure(value) {
+  let body;
+  let status;
+  if (typeof value === "object") {
+    if (null !== value) {
+      ({ status, body } = value);
       if (typeof status !== "number") {
         return "unknown";
       } else if (429 === status) {
         return "rate_limited";
       } else {
+        let code;
         if (body != null) {
-          const code = body.code;
+          code = body.code;
         }
         let str2 = "unknown";
         if (409 === status) {
@@ -61,17 +64,17 @@ export const createFailureStatus = function createFailureStatus(status) {
 };
 export const getVibegrationsCreateErrorMessage = function getVibegrationsCreateErrorMessage(reason) {
   let str = "unknown";
-  if (reason instanceof prototype) {
+  if (reason instanceof VibegrationsCreateError) {
     str = reason.reason;
   }
   if ("project_limit" === str) {
-    const intl3 = util.intl;
-    return intl3.string(_modDef3714.Asusmn);
+    const intl3 = intl4.intl;
+    return intl3.string(_modDef3723.Asusmn);
   } else if ("rate_limited" === str) {
-    const intl2 = util.intl;
-    return intl2.string(_modDef3714.DT6qly);
+    const intl2 = intl4.intl;
+    return intl2.string(_modDef3723.DT6qly);
   } else {
-    const intl = util.intl;
-    return intl.string(_modDef3714.KKkp5Y);
+    const intl = intl4.intl;
+    return intl.string(_modDef3723.KKkp5Y);
   }
 };

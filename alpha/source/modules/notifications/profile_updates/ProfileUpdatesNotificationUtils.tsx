@@ -1,14 +1,14 @@
-// Module ID: 15272
-// Function ID: 15273
+// Module ID: 15328
+// Function ID: 15329
 // Name: ProfileUpdatesNotificationUtils
-// Dependencies: [4511, 1074, 2021, 1241, 2]
+// Dependencies: [4522, 1085, 2028, 1252, 2]
 // Exports: onProfileUpdatesNotificationSettingsChanged
 
-// Module 15272 (ProfileUpdatesNotificationUtils)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import NotificationConstants from "NotificationConstants" /* 4511 */;
+// Module 15328 (ProfileUpdatesNotificationUtils)
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import NotificationConstants from "NotificationConstants" /* 4522 */;
 import size from "module_2" /* 2 */;
 
 const constants = NotificationConstants.NotificationSettingsUpdateType;
@@ -18,5 +18,7 @@ const result = size.fileFinishedImporting("modules/notifications/profile_updates
 export const onProfileUpdatesNotificationSettingsChanged = function onProfileUpdatesNotificationSettingsChanged(profile_updates_notifications) {
   const EnableProfileUpdatesNotifications = UserSettings.EnableProfileUpdatesNotifications;
   EnableProfileUpdatesNotifications.updateSetting(profile_updates_notifications);
-  AnalyticsUtilsDefault.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, { update_type: constants.ACCOUNT, profile_updates_notifications });
+  const obj = AnalyticsUtilsDefault;
+  const obj2 = { update_type: constants.ACCOUNT, profile_updates_notifications };
+  obj.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, obj2);
 };

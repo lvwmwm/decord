@@ -1,24 +1,32 @@
-// Module ID: 11261
-// Function ID: 11262
+// Module ID: 11175
+// Function ID: 11176
 // Name: CategoryCollapseActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [584, 2]
 // Exports: categoryCollapse, categoryCollapseAll, categoryExpand, categoryExpandAll
 
-// Module 11261 (CategoryCollapseActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 11175 (CategoryCollapseActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("actions/CategoryCollapseActionCreators.tsx");
 
-export const categoryCollapse = function categoryCollapse(channel) {
-  DispatcherDefault.dispatch({ type: "CATEGORY_COLLAPSE", id: channel });
+export const categoryCollapse = function categoryCollapse(id) {
+  const obj = DispatcherDefault;
+  const obj2 = { type: "CATEGORY_COLLAPSE", id };
+  obj.dispatch(obj2);
 };
-export const categoryExpand = function categoryExpand(channel) {
-  DispatcherDefault.dispatch({ type: "CATEGORY_EXPAND", id: channel });
+export const categoryExpand = function categoryExpand(id) {
+  const obj = DispatcherDefault;
+  const obj2 = { type: "CATEGORY_EXPAND", id };
+  obj.dispatch(obj2);
 };
 export const categoryCollapseAll = function categoryCollapseAll(guildId) {
-  DispatcherDefault.dispatch({ type: "CATEGORY_COLLAPSE_ALL", guildId });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "CATEGORY_COLLAPSE_ALL", guildId };
+  obj.dispatch(obj2);
 };
 export const categoryExpandAll = function categoryExpandAll(guildId) {
-  DispatcherDefault.dispatch({ type: "CATEGORY_EXPAND_ALL", guildId });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "CATEGORY_EXPAND_ALL", guildId };
+  obj.dispatch(obj2);
 };

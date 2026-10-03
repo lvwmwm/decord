@@ -1,18 +1,21 @@
-// Module ID: 5498
-// Function ID: 5499
+// Module ID: 5797
+// Function ID: 5798
 // Name: useChannelRoleSubscriptionStatus
-// Dependencies: [2099, 2044, 4498, 1074, 504, 2]
-// Exports: default
+// Dependencies: [2104, 2051, 4509, 1085, 558, 576, 504, 2]
 
-// Module 5498 (useChannelRoleSubscriptionStatus)
-import GatedChannelStore from "GatedChannelStore" /* 2099 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import PermissionStore from "PermissionStore" /* 4498 */;
+// Module 5797 (useChannelRoleSubscriptionStatus)
+import Constants from "Constants" /* 1085 */;
+import GatedChannelStore from "GatedChannelStore" /* 2104 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
 function getChannelRoleSubscriptionStatus(id, ChannelStore, GatedChannelStore, PermissionStore) {
+  let obj3;
   let obj = ChannelStore;
   if (ChannelStore === undefined) {
     obj = ChannelStore;
@@ -31,33 +34,68 @@ function getChannelRoleSubscriptionStatus(id, ChannelStore, GatedChannelStore, P
     result = channel.isRoleSubscriptionTemplatePreviewChannel();
   }
   if (result) {
-    let obj3 = { isSubscriptionGated: true, needSubscriptionToAccess: true };
+    obj3 = { isSubscriptionGated: true, needSubscriptionToAccess: true };
   } else {
     if (null != channel) {
       if (obj2.isChannelGated(channel.guild_id, channel.id)) {
+        let tmp4;
         const can = tmp.can;
-        let obj4 = Permissions;
         if (channel.isGuildVocal()) {
-          let tmp3 = !can(obj4.CONNECT, channel);
+          tmp4 = !can(tmp3.CONNECT, channel);
         } else {
-          tmp3 = !can(obj4.VIEW_CHANNEL, channel);
+          tmp4 = !can(tmp3.VIEW_CHANNEL, channel);
         }
-        obj4 = { isSubscriptionGated: true, needSubscriptionToAccess: tmp3 };
+        obj3 = { isSubscriptionGated: true, needSubscriptionToAccess: tmp4 };
+        const obj4 = { isSubscriptionGated: true, needSubscriptionToAccess: tmp4 };
       }
     }
     obj3 = closure_6;
   }
   return obj3;
 }
-const Permissions = fn(1074).Permissions;
+const Permissions = Constants.Permissions;
 let closure_6 = { needSubscriptionToAccess: false, isSubscriptionGated: false };
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/guild_role_subscriptions/useChannelRoleSubscriptionStatus.tsx");
-
-export default function useChannelRoleSubscriptionStatus(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp8;
+  let tmp9;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(4);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore, GatedChannelStore, PermissionStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function c() {
+      return getChannelRoleSubscriptionStatus(closure_0, ChannelStore, GatedChannelStore, PermissionStore);
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp9 = items1;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStoresObject(first, tmp8, tmp9);
+}) : ((arg0) => {
+  let closure_0;
   _require = arg0;
   const items = [ChannelStore, GatedChannelStore, PermissionStore];
   const items1 = [arg0];
-  return require("initialize").useStateFromStoresObject(items, () => getChannelRoleSubscriptionStatus(closure_0, ChannelStore, GatedChannelStore, PermissionStore), items1);
-};
+  const obj = require("get initialized");
+  return obj.useStateFromStoresObject(items, () => getChannelRoleSubscriptionStatus(closure_0, ChannelStore, GatedChannelStore, PermissionStore), items1);
+});
+let result = size.fileFinishedImporting("modules/guild_role_subscriptions/useChannelRoleSubscriptionStatus.tsx");
+
+export default tmp2;
 export { getChannelRoleSubscriptionStatus };

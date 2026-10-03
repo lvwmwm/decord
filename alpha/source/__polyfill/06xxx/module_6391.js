@@ -1,140 +1,155 @@
 // Module ID: 6391
 // Function ID: 6392
-// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 6392]
+// Dependencies: [17, 19, 21, 6359, 6392, 6393, 6394]
+// Exports: useSecondaryProps
 
 // Module 6391
-import _modDef6392 from "module_6392" /* 6392 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import metroRequire from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import noop from "module_19" /* 19 */;
+import react2 from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react_native from "react-native" /* 6392 */;
+import react3 from "react" /* 6393 */;
+import react_native2 from "react-native" /* 6394 */;
+import react_native3 from "react-native" /* 17 */;
 
-const TouchableHighlight = fn;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
+const react = react2;
+
+let c2;
+let c3;
+({ Animated: c2, RefreshControl: c3 } = react_native3);
+const useMemo = react2.useMemo;
+const jsx = Fragment.jsx;
+
+export const useSecondaryProps = function useSecondaryProps(ListHeaderComponent) {
+  let items5;
+  let tmp;
+  let tmp5Result;
+  ListHeaderComponent = ListHeaderComponent.ListHeaderComponent;
+  const ListHeaderComponentStyle = ListHeaderComponent.ListHeaderComponentStyle;
+  const ListFooterComponent = ListHeaderComponent.ListFooterComponent;
+  const ListFooterComponentStyle = ListHeaderComponent.ListFooterComponentStyle;
+  const ListEmptyComponent = ListHeaderComponent.ListEmptyComponent;
+  const ListEmptyComponentStyle = ListHeaderComponent.ListEmptyComponentStyle;
+  const renderScrollComponent = ListHeaderComponent.renderScrollComponent;
+  const refreshing = ListHeaderComponent.refreshing;
+  const progressViewOffset = ListHeaderComponent.progressViewOffset;
+  const onRefresh = ListHeaderComponent.onRefresh;
+  const data = ListHeaderComponent.data;
+  const refreshControl = ListHeaderComponent.refreshControl;
+  const stickyHeaderConfig = ListHeaderComponent.stickyHeaderConfig;
+  let invertedTransformStyle;
+  if (ListHeaderComponent.inverted) {
+    let tmp3 = ListHeaderComponent;
+    let tmp4 = ListHeaderComponentStyle;
+    let obj = ListHeaderComponent(ListHeaderComponentStyle[3]);
+    invertedTransformStyle = obj.getInvertedTransformStyle(tmp);
   }
-}
-let closure_3 = ["style"];
-get_ActivityIndicator = fn(17);
-({ StyleSheet: closure_9, View: c10 } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-class TouchableHighlight {
-  constructor(arg0) {
-    self = this;
-    tmp = hasOwnProperty(this, TouchableHighlight);
-    items = [];
-    items[0] = global;
-    tmp2 = closure_7;
-    obj = closure_7(TouchableHighlight);
-    tmp3 = metroRequire;
-    if (closure_12()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items);
+  const tmp5 = ListEmptyComponentStyle;
+  let items = [onRefresh, refreshing, progressViewOffset, refreshControl];
+  const items1 = [ListHeaderComponent, ListHeaderComponentStyle, invertedTransformStyle];
+  const items2 = [ListFooterComponent, ListFooterComponentStyle, invertedTransformStyle];
+  const tmp6 = ListEmptyComponentStyle(() => {
+    let tmp = refreshControl;
+    if (!tmp) {
+      let tmp3;
+      if (onRefresh) {
+        const _Boolean = Boolean;
+        tmp3 = <_false refreshing={Boolean(refreshing)} progressViewOffset={progressViewOffset} onRefresh={tmp2} />;
+      }
+      tmp = tmp3;
     }
-    tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.showUnderlay = () => {
-      if (closure_0.hasPressHandler()) {
-        const obj2 = { extraChildStyle: null, extraUnderlayStyle: null };
-        const obj3 = { opacity: obj.props.activeOpacity };
-        obj2.extraChildStyle = obj3;
-        const obj4 = { backgroundColor: obj.props.underlayColor };
-        obj2.extraUnderlayStyle = obj4;
-        obj.setState(obj2);
-        const props = obj.props;
-        const onShowUnderlay = props.onShowUnderlay;
-        if (onShowUnderlay != null) {
-          onShowUnderlay();
-        }
-      }
-    };
-    tmp3Result.hasPressHandler = () => closure_0.props.onPress || closure_0.props.onPressIn || closure_0.props.onPressOut || closure_0.props.onLongPress;
-    tmp3Result.hideUnderlay = () => {
-      closure_0.setState({ extraChildStyle: null, extraUnderlayStyle: null });
-      const props = closure_0.props;
-      const onHideUnderlay = props.onHideUnderlay;
-      if (onHideUnderlay != null) {
-        onHideUnderlay();
-      }
-    };
-    tmp3Result.onStateChange = (arg0, arg1) => {
-      if (arg1 === TouchableHighlight(6392).TOUCHABLE_STATE.BEGAN) {
-        closure_0.showUnderlay();
+    return tmp;
+  }, items);
+  let tmp7 = ListEmptyComponentStyle(() => {
+    let tmp2 = null;
+    if (ListHeaderComponent) {
+      const items = [ListHeaderComponentStyle, invertedTransformStyle];
+      const CompatView = react_native.CompatView;
+      tmp2 = <CompatView style={items}>{react3.getValidComponent(tmp)}</CompatView>;
+    }
+    return tmp2;
+  }, items1);
+  const items3 = [ListEmptyComponent, data, invertedTransformStyle, ListEmptyComponentStyle];
+  const tmp8 = ListEmptyComponentStyle(() => {
+    let tmp2 = null;
+    if (ListFooterComponent) {
+      const items = [ListFooterComponentStyle, invertedTransformStyle];
+      const CompatView = react_native.CompatView;
+      tmp2 = <CompatView style={items}>{react3.getValidComponent(tmp)}</CompatView>;
+    }
+    return tmp2;
+  }, items2);
+  let backdropComponent;
+  const tmp9 = ListEmptyComponentStyle(() => {
+    if (ListEmptyComponent) {
+      let tmp7;
+      const obj = react3;
+      const validComponent = obj.getValidComponent(tmp);
+      const tmp2 = require;
+      if (invertedTransformStyle) {
+        const items = [ListEmptyComponentStyle, tmp5];
+        tmp7 = jsx(tmp2(6392).CompatView, { style: items, children: validComponent });
       } else {
-        if (!tmp3) {
-          closure_0.hideUnderlay();
+        tmp7 = validComponent;
+      }
+      return tmp7;
+    }
+    return null;
+  }, items3);
+  if (stickyHeaderConfig != null) {
+    backdropComponent = stickyHeaderConfig.backdropComponent;
+  }
+  const items4 = [backdropComponent, invertedTransformStyle];
+  let obj2 = {
+    refreshControl: tmp6,
+    renderHeader: tmp7,
+    renderFooter: tmp8,
+    renderEmpty: tmp9,
+    CompatScrollView: tmp5(() => {
+      let forwardRefResult;
+      const CompatAnimatedScroller = react_native2.CompatAnimatedScroller;
+      if (typeof renderScrollComponent === "function") {
+        const tmpResult = react3;
+        if (!tmpResult.isComponentClass(renderScrollComponent)) {
+          forwardRefResult = react.forwardRef((arg0, ref) => {
+            const obj = { ref };
+            const merged = Object.assign(arg0);
+            return renderScrollComponent(obj);
+          });
+          forwardRefResult.displayName = "CustomScrollView";
         }
-        tmp3 = arg1 !== tmp(6392).TOUCHABLE_STATE.UNDETERMINED && arg1 !== tmp(6392).TOUCHABLE_STATE.MOVED_OUTSIDE;
+        return React2.createAnimatedComponent(forwardRefResult);
       }
-    };
-    tmp3Result.state = { extraChildStyle: null, extraUnderlayStyle: null };
-    return tmp3Result;
-  }
-}
-_inherits(TouchableHighlight, fn(19).Component);
-const entry = {
-  key: "renderChildren",
-  value: function renderChildren() {
-    const self = this;
-    if (this.props.children) {
-      const Children = noop.Children;
-      const onlyResult = Children.only(self.props.children);
-      const obj = { style: React7.compose(onlyResult.props.style, self.state.extraChildStyle) };
-      return noop.cloneElement(onlyResult, obj);
-    } else {
-      return <closure_1_10 />;
+      forwardRefResult = CompatAnimatedScroller;
+      if (renderScrollComponent) {
+        forwardRefResult = tmp3;
+      }
+    }, items5),
+    renderStickyHeaderBackdrop: tmp5Result
+  };
+  items5 = [renderScrollComponent];
+  tmp5Result = tmp5(() => {
+    let backdropComponent1;
+    let getValidComponent;
+    let items;
+    let backdropComponent;
+    if (stickyHeaderConfig != null) {
+      backdropComponent = tmp.backdropComponent;
     }
-  }
+    let tmp4Result = null;
+    if (backdropComponent) {
+      const obj = { style: items, children: getValidComponent(backdropComponent1) };
+      items = [{ position: "absolute", inset: 0, pointerEvents: "none" }, invertedTransformStyle];
+      const CompatView = react_native.CompatView;
+      backdropComponent1 = undefined;
+      getValidComponent = react3.getValidComponent;
+      react3;
+      const tmp4 = jsx;
+      if (stickyHeaderConfig != null) {
+        backdropComponent1 = tmp.backdropComponent;
+      }
+      tmp4Result = tmp4(CompatView, obj);
+    }
+    return tmp4Result;
+  }, items4);
+  return obj2;
 };
-let items = [
-  entry,
-  {
-    key: "render",
-    value: function render() {
-      const self = this;
-      const props = this.props;
-      let style = props.style;
-      if (undefined === style) {
-        style = {};
-      }
-      const obj = {};
-      const tmp = _objectWithoutProperties(props, closure_3);
-      const merged = Object.assign(tmp);
-      const items = [style, self.state.extraUnderlayStyle];
-      obj.style = items;
-      obj.onStateChange = self.onStateChange;
-      obj.children = self.renderChildren();
-      return jsx(_modDef6392, {});
-    }
-  }
-];
-const importDefaultResultResult = _createClass(TouchableHighlight, items);
-let obj = {};
-let merged = Object.assign(_modDef6392.defaultProps);
-obj.activeOpacity = 0.85;
-obj.delayPressOut = 100;
-obj.underlayColor = "black";
-importDefaultResultResult.defaultProps = obj;
-
-export default importDefaultResultResult;

@@ -1,26 +1,26 @@
-// Module ID: 17974
-// Function ID: 17975
+// Module ID: 18060
+// Function ID: 18061
 // Name: UserApplicationIdentityManager
-// Dependencies: [8679, 6725, 2]
+// Dependencies: [8692, 6613, 2]
 
-// Module 17974 (UserApplicationIdentityManager)
-import UserApplicationIdentityActionCreators from "UserApplicationIdentityActionCreators" /* 8679 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
+// Module 18060 (UserApplicationIdentityManager)
+import UserApplicationIdentityActionCreators from "UserApplicationIdentityActionCreators" /* 8692 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function handleUserApplicationIdentityGatewayEvent(user_id) {
   const useUserApplicationIdentities = UserApplicationIdentityActionCreators.useUserApplicationIdentities;
   useUserApplicationIdentities.refetch(user_id.user_id);
 }
-const prototype = function UserApplicationIdentityManager() {
-  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  applyArgumentsResult.actions = { USER_APPLICATION_IDENTITY_UPDATE: handleUserApplicationIdentityGatewayEvent, USER_APPLICATION_IDENTITY_REMOVE: handleUserApplicationIdentityGatewayEvent };
-  return applyArgumentsResult;
-}.prototype;
-class prototype extends tmp2 {
+class UserApplicationIdentityManager extends AutomaticLifecycleManager {
+  constructor() {
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    const obj = { USER_APPLICATION_IDENTITY_UPDATE: handleUserApplicationIdentityGatewayEvent, USER_APPLICATION_IDENTITY_REMOVE: handleUserApplicationIdentityGatewayEvent };
+    applyArgumentsResult.actions = obj;
+    return applyArgumentsResult;
+  }
 }
-const prototype1 = new prototype();
-const size = fn(2);
+const userApplicationIdentityManager = new UserApplicationIdentityManager();
 const result = size.fileFinishedImporting("modules/user_application_identity/UserApplicationIdentityManager.tsx");
 
-export default prototype1;
+export default userApplicationIdentityManager;

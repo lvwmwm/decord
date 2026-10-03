@@ -1,26 +1,63 @@
-// Module ID: 14683
-// Function ID: 14684
+// Module ID: 14739
+// Function ID: 14740
 // Name: useTimeValue
-// Dependencies: [19, 2, 9738]
-// Exports: default
+// Dependencies: [19, 558, 576, 2, 12468]
 
-// Module 14683 (useTimeValue)
-import noop from "module_19" /* 19 */;
+// Module 14739 (useTimeValue)
+import react2 from "react" /* 576 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 12468 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/parent_tools/hooks/useTimeValue.tsx");
+let initial;
 
-export default function useTimeValue(arg0) {
-  ({ initial: noop, defaultValue: closure_1 } = arg0);
-  return noop.useState(() => {
-    if (null != noop) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((initial) => {
+  const obj = react2;
+  const cResult = obj.c(3);
+  initial = initial.initial;
+  const defaultValue = initial.defaultValue;
+  if (cResult[0] === defaultValue) {
+    let tmp2;
+    if (cResult[1] === initial) {
+      tmp2 = cResult[2];
+    }
+    return react.useState(tmp2);
+  }
+  const fn = function n() {
+    let tmp2;
+    const tmp = initial;
+    if (null != initial) {
       const time = { hours: null, minutes: null };
-      ({ hours: obj.hours, minutes: obj.minutes } = noop);
-      let tmp2 = time;
+      ({ hours: obj.hours, minutes: obj.minutes } = tmp);
+      tmp2 = time;
+    } else {
+      tmp2 = defaultValue;
+    }
+    return tmp2;
+  };
+  cResult[0] = defaultValue;
+  cResult[1] = initial;
+  cResult[2] = fn;
+  tmp2 = fn;
+}) : ((arg0) => {
+  let closure_129_0;
+  let closure_129_1;
+  ({ initial: closure_129_0, defaultValue: closure_129_1 } = arg0);
+  return react.useState(() => {
+    let tmp2;
+    const tmp = closure_1_0;
+    if (null != closure_1_0) {
+      const time = { hours: null, minutes: null };
+      ({ hours: obj.hours, minutes: obj.minutes } = tmp);
+      tmp2 = time;
     } else {
       tmp2 = closure_1_1;
     }
     return tmp2;
   });
-};
-export const timeToMinutes = fn(9738).timeToMinutes;
+});
+const result = size.fileFinishedImporting("modules/parent_tools/hooks/useTimeValue.tsx");
+
+export default tmp2;
+export const timeToMinutes = FamilyCenterRestrictedHoursUtils.timeToMinutes;

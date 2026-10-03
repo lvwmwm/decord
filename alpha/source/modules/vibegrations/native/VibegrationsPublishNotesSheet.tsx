@@ -1,50 +1,95 @@
-// Module ID: 16468
-// Function ID: 16469
+// Module ID: 16545
+// Function ID: 16546
 // Name: VibegrationsPublishNotesSheet
-// Dependencies: [5, 32, 19, 17, 4496, 2066, 4508, 1372, 4838, 21, 4845, 576, 6588, 504, 5554, 8796, 16469, 4809, 11081, 1115, 3714, 7268, 7064, 6804, 6756, 4841, 6692, 4998, 5465, 2]
+// Dependencies: [5, 32, 19, 17, 4507, 2074, 4519, 1377, 4883, 21, 4890, 587, 6471, 504, 6746, 8809, 16546, 4854, 12103, 1126, 3723, 7166, 6965, 6701, 6644, 4886, 6580, 5043, 5594, 2]
 // Exports: default
 
-// Module 16468 (VibegrationsPublishNotesSheet)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import _modDef3714 from "module_3714" /* 3714 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4809 */;
-import VibegrationsUtils from "VibegrationsUtils" /* 5554 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11081 */;
-import VibegrationsPatchNotesChannel from "VibegrationsPatchNotesChannel" /* 16469 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4496 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import RelationshipStore from "RelationshipStore" /* 4508 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 16545 (VibegrationsPublishNotesSheet)
+import nativeDefault from "native" /* 587 */;
+import intl14 from "intl" /* 1126 */;
+import _modDef3723 from "module_3723" /* 3723 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4507 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4854 */;
+import MessageConstants from "MessageConstants" /* 4883 */;
+import VibegrationsUtils from "VibegrationsUtils" /* 6746 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 12103 */;
+import VibegrationsPatchNotesChannel from "VibegrationsPatchNotesChannel" /* 16546 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ ActivityIndicator: metroRequire, View: closure_7 } = get_ActivityIndicator);
-let closure_9 = fn(4496).GUILD_SELECTABLE_CHANNELS_KEY;
-const MessageSendLocation = fn(4838).MessageSendLocation;
-const jsxProd = fn(21);
-({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const VibegrationsPublishNotesSheet = "VibegrationsPublishNotesSheet";
-const createStyles = fn(4845);
+const GuildChannelStore = GuildChannelStore2;
+let c3, c4, channel, closure_12;
+
+let closure_14;
+let closure_15;
+let metroImportDefault;
+let metroRequire;
+({ ActivityIndicator: metroRequire, View: metroImportDefault } = react_native);
+let closure_9 = GuildChannelStore2.GUILD_SELECTABLE_CHANNELS_KEY;
+const MessageSendLocation = MessageConstants.MessageSendLocation;
+({ jsx: closure_14, jsxs: closure_15 } = Fragment);
+const VibegrationsPublishNotesSheet_str = "VibegrationsPublishNotesSheet";
 let closure_17 = createStyles.createStyles((paddingBottom) => {
-  const obj = { container: { gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom }, section: null, notesSection: null, statusRow: null, actions: null };
-  const obj2 = { gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom };
-  obj.section = { gap: nativeDefault.space.PX_8 };
-  const obj3 = { gap: nativeDefault.space.PX_8 };
-  obj.notesSection = { gap: nativeDefault.space.PX_4 };
-  const obj4 = { gap: nativeDefault.space.PX_4 };
-  obj.statusRow = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
-  const obj5 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
-  obj.actions = { flexDirection: "row", gap: nativeDefault.space.PX_8 };
+  const obj = { container: { gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom }, section: { gap: nativeDefault.space.PX_8 }, notesSection: { gap: nativeDefault.space.PX_4 }, statusRow: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 }, actions: { flexDirection: "row", gap: nativeDefault.space.PX_8 } };
+  ({ gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom });
+  ({ gap: nativeDefault.space.PX_8 });
+  ({ gap: nativeDefault.space.PX_4 });
+  ({ flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 });
+  ({ flexDirection: "row", gap: nativeDefault.space.PX_8 });
   return obj;
 });
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsPublishNotesSheet.tsx");
 
 export default function VibegrationsPublishNotesSheet(guildId) {
+  let BottomSheetTitleHeader;
+  let NmaE9T;
+  let _undefined;
+  let _undefined2;
+  let _undefined22;
+  let c11;
+  let c13;
+  let c14;
+  let c15;
+  let c7;
+  let c8;
+  let fn;
+  let intl;
+  let intl13;
+  let intl2;
+  let intl4;
+  let intl5;
+  let intl6;
+  let items10;
+  let items11;
+  let items12;
+  let items8;
+  let items9;
+  let obj12;
+  let obj14;
+  let obj6;
+  let obj7;
+  let projectName;
+  let publish;
+  let str;
+  let string;
+  let stringResult;
+  let stringResult1;
+  let stringResult2;
+  let tmp10;
+  let tmp12;
+  let tmp19;
+  let tmp21;
+  let tmp23;
+  let tmp34Result;
+  let tmpResult;
   guildId = guildId.guildId;
   const applicationId = guildId.applicationId;
   ({ projectName, publish } = guildId);
@@ -57,41 +102,44 @@ export default function VibegrationsPublishNotesSheet(guildId) {
   c15 = undefined;
   let ref;
   let trimmed;
-  c20 = undefined;
+  let c20;
   let callback2;
+  let tmp = applicationId;
+  let tmp2 = publish;
   const tmp3 = ref(applicationId(publish[12])({ includeKeyboardHeight: true }).insets.bottom);
+  const tmp4 = guildId;
+  let obj = guildId(publish[13]);
   const items = [c8];
-  const stateFromStores = guildId(publish[13]).useStateFromStores(items, () => {
-    found = GuildChannelStore.getChannels(guildId)[closure_9].filter((channel) => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    const arr = GuildChannelStore.getChannels(guildId)[closure_9];
+    found = arr.filter((channel) => {
       channel = channel.channel;
       const isGuildVocalResult = channel.isGuildVocal();
-      let tmp2 = !isGuildVocalResult;
-      if (!isGuildVocalResult) {
-        tmp2 = !channel.isThread();
-      }
-      if (tmp2) {
-        tmp2 = !channel.isForumLikeChannel();
-      }
+      const tmp2 = !isGuildVocalResult && !channel.isThread() && !channel.isForumLikeChannel();
       return tmp2;
     });
     return found.map((channel) => channel.channel);
   });
-  let obj = guildId(publish[13]);
+  let obj2 = guildId(publish[13]);
   const items1 = [c8];
   const items2 = [guildId, applicationId];
-  const stateFromStores1 = guildId(publish[13]).useStateFromStores(items1, () => VibegrationsUtils.findVibegrationChannelId(guildId, applicationId), items2);
-  let obj2 = guildId(publish[13]);
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => {
+    const obj = VibegrationsUtils;
+    return obj.findVibegrationChannelId(guildId, applicationId);
+  }, items2);
   const tmp6 = applicationId(publish[15])();
-  const diff = tmp6 - guildId(publish[16]).formatPlaySuffix(guildId(publish[16]).PLAY_LINE_CHANNEL_PLACEHOLDER).length;
+  let obj3 = guildId(publish[16]);
+  const diff = tmp6 - obj3.formatPlaySuffix(guildId(publish[16]).PLAY_LINE_CHANNEL_PLACEHOLDER).length;
+  let obj4 = stateFromStores1;
   ref = stateFromStores1.useRef(diff);
   ref.current = diff;
-  let obj3 = guildId(publish[16]);
   [tmp10, c7] = stateFromStores(stateFromStores1.useState("publishing"), 2);
   const tmp9 = stateFromStores(stateFromStores1.useState("publishing"), 2);
   [tmp12, c8] = stateFromStores(stateFromStores1.useState(null), 2);
+  const tmp11 = stateFromStores(stateFromStores1.useState(null), 2);
   const tmp13 = stateFromStores(stateFromStores1.useState(() => {
-    const result = VibegrationsPatchNotesChannel.lastPatchNotesChannel(applicationId);
-    guildId = result;
+    const obj = VibegrationsPatchNotesChannel;
+    const result = obj.lastPatchNotesChannel(applicationId);
     let tmp2 = null;
     if (null != result) {
       tmp2 = null;
@@ -102,35 +150,39 @@ export default function VibegrationsPublishNotesSheet(guildId) {
     return tmp2;
   }), 2);
   const first = tmp13[0];
-  closure_10 = tmp13[1];
-  const tmp11 = stateFromStores(stateFromStores1.useState(null), 2);
+  let closure_10 = tmp13[1];
   [str, c11] = stateFromStores(stateFromStores1.useState(""), 2);
+  const tmp15 = stateFromStores(stateFromStores1.useState(""), 2);
   const tmp16 = stateFromStores(stateFromStores1.useState(true), 2);
   closure_12 = tmp16[1];
-  const tmp15 = stateFromStores(stateFromStores1.useState(""), 2);
-  [tmp18, c13] = stateFromStores(stateFromStores1.useState(false), 2);
-  const tmp17 = stateFromStores(stateFromStores1.useState(false), 2);
-  [tmp20, c14] = stateFromStores(stateFromStores1.useState(false), 2);
-  const tmp19 = stateFromStores(stateFromStores1.useState(false), 2);
-  [tmp22, c15] = stateFromStores(stateFromStores1.useState(false), 2);
-  closure_16 = stateFromStores1.useRef(false);
+  const first1 = tmp16[0];
+  [tmp19, c13] = stateFromStores(stateFromStores1.useState(false), 2);
+  const tmp18 = stateFromStores(stateFromStores1.useState(false), 2);
+  [tmp21, c14] = stateFromStores(stateFromStores1.useState(false), 2);
+  const tmp20 = stateFromStores(stateFromStores1.useState(false), 2);
+  [tmp23, c15] = stateFromStores(stateFromStores1.useState(false), 2);
+  const tmp22 = stateFromStores(stateFromStores1.useState(false), 2);
+  let closure_16 = stateFromStores1.useRef(false);
   ref = stateFromStores1.useRef(null != first);
   const items3 = [publish];
   const effect = stateFromStores1.useEffect(() => {
-    c0 = false;
+    let c0 = false;
     publish.then(() => {
-      if (!c0) {
+      const tmp = c0;
+      if (!tmp) {
         c7("succeeded");
       }
     }, (message) => {
-      if (!c0) {
+      const tmp = c0;
+      if (!tmp) {
         c7("failed");
         const _Error = Error;
         message = null;
+        const tmp5 = c8;
         if (message instanceof Error) {
           message = message.message;
         }
-        c8(message);
+        tmp5(message);
       }
     });
     return () => {
@@ -140,29 +192,25 @@ export default function VibegrationsPublishNotesSheet(guildId) {
   const items4 = [stateFromStores1];
   const effect1 = stateFromStores1.useEffect(() => {
     let current = null == stateFromStores1;
+    const tmp = stateFromStores1;
     if (!current) {
       current = ref.current;
     }
     if (!current) {
-      closure_10(stateFromStores1);
+      closure_10(tmp);
     }
   }, items4);
   const items5 = [initialDraft];
   const effect2 = stateFromStores1.useEffect(() => {
-    c0 = false;
+    let c0 = false;
     initialDraft.then((ok) => {
-      if (!c0) {
+      const tmp = c0;
+      if (!tmp) {
         closure_12(false);
         if (true !== ok.ok) {
           c13(true);
         } else {
-          let current = null == ok.notes;
-          if (!current) {
-            current = "" === ok.notes;
-          }
-          if (!current) {
-            current = ref.current;
-          }
+          const current = null == ok.notes || "" === ok.notes || ref.current;
           if (!current) {
             const notes = ok.notes;
             c11(notes.slice(0, ref.current));
@@ -170,7 +218,8 @@ export default function VibegrationsPublishNotesSheet(guildId) {
         }
       }
     }, () => {
-      if (!c0) {
+      const tmp = c0;
+      if (!tmp) {
         closure_12(false);
         c13(true);
       }
@@ -182,7 +231,7 @@ export default function VibegrationsPublishNotesSheet(guildId) {
   let found = null;
   const callback = stateFromStores1.useCallback((arg0) => {
     closure_16.current = true;
-    _undefined2(false);
+    _undefined22(false);
     _undefined(arg0);
   }, []);
   if (null != first) {
@@ -194,46 +243,56 @@ export default function VibegrationsPublishNotesSheet(guildId) {
   trimmed = str.trim();
   let formatPlaySuffixResult = null;
   if (null != stateFromStores1) {
+    const tmp30 = globalThis;
     let _HermesInternal = HermesInternal;
-    formatPlaySuffixResult = tmp4(tmp2[16]).formatPlaySuffix("<#" + stateFromStores1 + ">");
     const tmp4Result = tmp4(tmp2[16]);
+    formatPlaySuffixResult = tmp4Result.formatPlaySuffix("<#" + stateFromStores1 + ">");
   }
   c20 = formatPlaySuffixResult;
   const items6 = [stateFromStores, guildId, found];
   const callback1 = obj4.useCallback(() => {
-    const obj2 = { content: null, key: "VibegrationsPatchNotesChannelSheet", stackingBehavior: "stack" };
-    const obj3 = { header: null, guild: null, channels: null, selectedChannel: null, onSelect: null };
-    const obj4 = { title: null };
-    const obj = ActionSheetActionCreators;
-    const intl = util.intl;
-    obj4.title = intl.string(_modDef3714.IcSdnu);
-    obj3.header = obj4;
-    obj3.guild = GuildStore.getGuild(guildId);
-    obj3.channels = stateFromStores;
-    obj3.selectedChannel = found;
-    obj3.onSelect = function onSelect(id) {
-      ref.current = true;
-      closure_1_10(id.id);
+    let intl;
+    let obj2;
+    let obj3;
+    let tmp2;
+    const tmp = ActionSheetActionCreators;
+    const showActionSheet = tmp.showActionSheet;
+    const obj = { content: authStore2(tmp2, obj2), key: "VibegrationsPatchNotesChannelSheet", stackingBehavior: "stack" };
+    obj2 = {
+      header: obj3,
+      guild: GuildStore.getGuild(guildId),
+      channels: stateFromStores,
+      selectedChannel: found,
+      onSelect(id) {
+        ref.current = true;
+        closure_1_10(id.id);
+      }
     };
-    obj2.content = closure_2_14(ChannelPickerActionSheetDefault, obj3);
-    obj.showActionSheet(obj2);
+    obj3 = { title: intl.string(_modDef3723.IcSdnu) };
+    tmp2 = ChannelPickerActionSheetDefault;
+    intl = intl14.intl;
+    showActionSheet(obj);
   }, items6);
   callback2 = obj4.useCallback(() => {
-    applicationId(publish[17]).hideActionSheet(closure_16);
+    const obj = applicationId(publish[17]);
+    obj.hideActionSheet(closure_16);
   }, []);
   const items7 = [found, trimmed, formatPlaySuffixResult, applicationId, callback2];
   const callback3 = obj4.useCallback(initialDraft(function*(arg0, value) {
+    let c2;
+    let closure_0;
+    let closure_1;
     if (c4 === 2) {
       c4 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp6 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -244,100 +303,106 @@ export default function VibegrationsPublishNotesSheet(guildId) {
             throw value;
           } else if (arg0 === 2) {
             c4 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
+            const obj3 = { value, done: true };
+            return obj3;
           } else {
-            guildId = tmp7;
-            closure_128_0 = undefined;
+            guildId = undefined;
             if (null != found) {
               if ("" !== trimmed) {
-                _undefined(true);
-                _undefined2(false);
-                dependencyMap = 1;
-                let combined = tmp26;
+                _undefined2(true);
+                _undefined22(false);
+                publish = 1;
+                let combined = tmp21;
+                const parse = tmp(publish[21]).parse;
+                const tmp26 = tmp;
+                const tmp28 = tmp(publish[21]);
+                const tmp29 = found;
                 if (null != c20) {
                   const _HermesInternal = HermesInternal;
-                  combined = "" + tmp26 + tmp34;
+                  combined = "" + tmp21 + tmp30;
                 }
-                const parsed = tmp3(7268).parse(found, combined);
-                const tmp31Result = tmp3(7064);
-                const obj5 = { location: constants.VIBEGRATIONS_PATCH_NOTES };
+                const parsed = parse(tmp29, combined);
+                const tmp26Result = tmp26(publish[22]);
+                const obj4 = { location: constants.VIBEGRATIONS_PATCH_NOTES };
                 c3 = 2;
                 c4 = 1;
-                const obj6 = { value: tmp31Result.sendMessage(found.id, parsed, false, obj5), done: false };
-                return obj6;
+                const obj5 = { value: tmp26Result.sendMessage(found.id, parsed, false, obj4), done: false };
+                return obj5;
               }
             }
           }
+        } else if (1 === c3) {
+          publish = 0;
+          closure_129_15(true);
+          closure_129_14(false);
+        } else if (arg0 === 1) {
+          c4 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          publish = 0;
+          c4 = 3;
+          const obj6 = { value, done: true };
+          return obj6;
         } else {
-          if (1 === tmp7) {
-            dependencyMap = 0;
-            closure_129_15(true);
-            closure_129_14(false);
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            dependencyMap = 0;
-            c4 = 3;
-            const obj7 = { value, done: true };
-            return obj7;
-          } else {
-            closure_128_0 = value;
-            let ok;
-            if (closure_128_0 != null) {
-              ok = closure_128_0.ok;
-            }
-            if (false !== ok) {
-              const result = guildId(16469).rememberPatchNotesChannel(closure_129_1, closure_129_18.id);
-              closure_129_21();
-              dependencyMap = 0;
-              const obj = guildId(16469);
-            }
+          guildId = value;
+          let ok;
+          if (guildId != null) {
+            ok = guildId.ok;
           }
-          const _Error = Error;
-          const error = new Error("send failed");
-          throw error;
+          if (false === ok) {
+            const _Error = Error;
+            const self = this;
+            const self2 = this;
+            const error = new Error("send failed");
+            throw error;
+          } else {
+            const obj = guildId(publish[16]);
+            const result = obj.rememberPatchNotesChannel(closure_129_1, closure_129_18.id);
+            closure_129_21();
+            publish = 0;
+          }
         }
         c4 = 3;
-      } catch (tmp42) {
-        if (tmp4 === dependencyMap) {
-          c4 = tmp2;
-          throw tmp42;
+        return { value: "IconComponent", done: "IconComponent" };
+      } catch (tmp38) {
+        if (0 === publish) {
+          c4 = 3;
+          throw tmp38;
         } else {
-          c3 = tmp;
+          c3 = 1;
         }
       }
     }
   }), items7);
-  let obj5 = { startExpanded: true, header: null, children: null };
-  let obj6 = { title: null };
-  let intl = tmp4(tmp2[19]).intl;
-  obj6.title = intl.formatToPlainString(applicationId(publish[20]).gOv8LL, { projectName });
-  obj5.header = c14(guildId(publish[24]).BottomSheetTitleHeader, obj6);
-  let obj7 = { style: tmp3.container, children: null };
-  const obj8 = { style: tmp3.section, children: null };
-  const obj9 = { variant: "heading-md/semibold", color: "text-default", children: null };
-  const intl2 = tmp4(tmp2[19]).intl;
-  obj9.children = intl2.string(applicationId(publish[20]).tqtMyS);
-  const items8 = [c14(guildId(publish[25]).Text, obj9), ];
+  let obj5 = { startExpanded: true, header: c14(BottomSheetTitleHeader, obj6), children: tmp35(tmp36, obj7) };
+  const ActionSheet = tmp4(tmp2[23]).ActionSheet;
+  obj6 = { title: intl.formatToPlainString(tmp(tmp2[20]).gOv8LL, { projectName }) };
+  BottomSheetTitleHeader = tmp4(tmp2[24]).BottomSheetTitleHeader;
+  intl = tmp4(tmp2[19]).intl;
+  obj7 = { style: tmp3.container, children: items10 };
+  const obj8 = { style: tmp3.section, children: items8 };
+  const obj9 = { variant: "heading-md/semibold", color: "text-default", children: intl2.string(tmp(tmp2[20]).tqtMyS) };
+  const Text = tmp4(tmp2[25]).Text;
+  intl2 = tmp4(tmp2[19]).intl;
+  items8 = [c14(Text, obj9), ];
   if ("publishing" === tmp10) {
-    const obj10 = { style: tmp3.statusRow, children: null };
-    const items9 = [tmp33(ref, { size: "small" }), ];
-    const obj11 = { variant: "text-md/medium", color: "text-subtle", children: null };
-    const intl5 = tmp4(tmp2[19]).intl;
-    const obj12 = { projectName };
-    obj11.children = intl5.formatToPlainString(tmp(tmp2[20]).g5fncX, obj12);
-    items9[1] = tmp33(tmp4(tmp2[25]).Text, obj11);
-    obj10.children = items9;
-    let tmp33Result = tmp34(tmp35, obj10);
+    const tmp38 = ref;
+    const obj10 = { style: tmp3.statusRow, children: items9 };
+    items9 = [tmp34(ref, { size: "small" }), ];
+    const obj11 = { variant: "text-md/medium", color: "text-subtle", children: intl5.formatToPlainString(tmp(tmp2[20]).g5fncX, obj12) };
+    const Text2 = tmp4(tmp2[25]).Text;
+    intl5 = tmp4(tmp2[19]).intl;
+    obj12 = { projectName };
+    items9[1] = c14(Text2, obj11);
+    tmp34Result = tmp35(tmp36, obj10);
   } else {
+    let obj15;
+    const Text4 = tmp4(tmp2[25]).Text;
     if ("succeeded" === tmp10) {
-      const obj13 = { variant: "text-md/medium", color: "text-feedback-positive", children: null };
-      const intl4 = tmp4(tmp2[19]).intl;
-      const obj14 = { projectName };
-      obj13.children = intl4.formatToPlainString(tmp(tmp2[20]).CC69wK, obj14);
-      let obj15 = obj13;
+      const obj13 = { variant: "text-md/medium", color: "text-feedback-positive", children: intl4.formatToPlainString(tmp(tmp2[20]).CC69wK, obj14) };
+      intl4 = tmp4(tmp2[19]).intl;
+      obj15 = obj13;
+      obj14 = { projectName };
     } else {
       if (stringResult == null) {
         const intl3 = tmp4(tmp2[19]).intl;
@@ -345,81 +410,72 @@ export default function VibegrationsPublishNotesSheet(guildId) {
       }
       obj15 = { variant: "text-md/medium", color: "text-feedback-critical", children: stringResult };
     }
-    tmp33Result = tmp33(tmp4(tmp2[25]).Text, obj15);
+    tmp34Result = tmp34(Text4, obj15);
   }
-  items8[1] = tmp33Result;
-  obj8.children = items8;
-  const items10 = [c15(c7, obj8), , ];
-  let tmp34Result2 = null;
+  items8[1] = tmp34Result;
+  items10 = [tmp35(tmp36, obj8), , ];
+  let tmp35Result2 = null;
   if (stateFromStores.length > 0) {
-    const obj16 = { style: tmp3.notesSection, children: null };
-    const obj17 = { label: null, placeholder: null, description: null, errorMessage: null, maxLength: null, value: null, onChange: null, disabled: null };
-    const intl6 = tmp4(tmp2[19]).intl;
-    obj17.label = intl6.string(tmp(tmp2[20]).oouynk);
+    let combined;
+    const obj16 = { style: tmp3.notesSection, children: items11 };
+    const obj17 = { label: intl6.string(tmp(tmp2[20]).oouynk), placeholder: string(first1 ? tmpResult.VQhlkB : tmpResult.xkxDN1), description: stringResult1, errorMessage: stringResult2, maxLength: diff, value: str, onChange: callback, disabled: tmp21 };
+    const TextArea = tmp4(tmp2[26]).TextArea;
+    intl6 = tmp4(tmp2[19]).intl;
     const intl7 = tmp4(tmp2[19]).intl;
-    const tmpResult = tmp(tmp2[20]);
-    obj17.placeholder = intl7.string(tmp16[0] ? tmpResult.VQhlkB : tmpResult.xkxDN1);
-    let stringResult1;
-    if (tmp18) {
+    string = intl7.string;
+    tmpResult = tmp(tmp2[20]);
+    stringResult1 = undefined;
+    if (tmp19) {
       const intl8 = tmp4(tmp2[19]).intl;
       stringResult1 = intl8.string(tmp(tmp2[20]).PCST1n);
     }
-    obj17.description = stringResult1;
-    let stringResult2;
-    if (tmp22) {
+    stringResult2 = undefined;
+    if (tmp23) {
       const intl9 = tmp4(tmp2[19]).intl;
       stringResult2 = intl9.string(tmp(tmp2[20]).P6SoGm);
     }
-    obj17.errorMessage = stringResult2;
-    obj17.maxLength = diff;
-    obj17.value = str;
-    obj17.onChange = callback;
-    obj17.disabled = tmp20;
-    const items11 = [tmp33(tmp4(tmp2[26]).TextArea, obj17), ];
+    items11 = [tmp34(TextArea, obj17), ];
+    const Text3 = tmp4(tmp2[25]).Text;
     const intl10 = tmp4(tmp2[19]).intl;
+    const format = intl10.format;
+    const unJ01l = tmp(tmp2[20]).unJ01l;
     if (null != found) {
       const _HermesInternal2 = HermesInternal;
-      let combined = "#" + tmp4(tmp2[27]).computeChannelName(found, closure_12, c11);
       const tmp4Result2 = tmp4(tmp2[27]);
+      combined = "#" + tmp4Result2.computeChannelName(found, closure_12, c11);
     } else {
       const intl11 = tmp4(tmp2[19]).intl;
       combined = intl11.string(tmp(tmp2[20])["8qO519"]);
     }
-    const obj18 = { channel: combined, onPick: null };
-    let fn = callback1;
-    if (tmp20) {
+    const obj18 = { channel: combined, onPick: fn };
+    fn = callback1;
+    if (tmp21) {
       fn = () => {
 
       };
     }
-    const obj19 = { variant: "text-md/medium", color: "text-subtle", children: null };
-    obj18.onPick = fn;
-    obj19.children = intl10.format(tmp(tmp2[20]).unJ01l, obj18);
-    items11[1] = tmp33(tmp4(tmp2[25]).Text, obj19);
-    obj16.children = items11;
-    tmp34Result2 = tmp34(tmp35, obj16);
+    const obj19 = { variant: "text-md/medium", color: "text-subtle", children: format(unJ01l, obj18) };
+    items11[1] = c14(Text3, obj19);
+    tmp35Result2 = tmp35(tmp36, obj16);
   }
-  items10[1] = tmp34Result2;
-  const obj20 = { style: tmp3.actions, children: null };
+  items10[1] = tmp35Result2;
+  const obj20 = { style: tmp3.actions, children: items12 };
+  const Button = tmp4(tmp2[28]).Button;
   const intl12 = tmp4(tmp2[19]).intl;
+  const string2 = intl12.string;
   if ("failed" === tmp10) {
-    let NmaE9T = tmp4(tmp2[19]).t.cpT0Cq;
+    NmaE9T = tmp4(tmp2[19]).t.cpT0Cq;
   } else {
     NmaE9T = tmp(tmp2[20]).NmaE9T;
   }
-  const tmp21 = stateFromStores(stateFromStores1.useState(false), 2);
-  const items12 = [c14(guildId(publish[28]).Button, { variant: "tertiary", grow: true, text: intl12.string(NmaE9T), onPress: callback2 }), ];
-  const obj22 = { variant: "primary", grow: true, text: null, loading: null, disabled: null, onPress: null };
-  const intl13 = tmp4(tmp2[19]).intl;
-  obj22.text = intl13.string(applicationId(publish[20]).dx7eQG);
-  obj22.loading = tmp20;
-  obj22.disabled = "succeeded" !== tmp10 || "" === trimmed || trimmed.length > diff || null == found || tmp20;
-  obj22.onPress = callback3;
-  items12[1] = c14(guildId(publish[28]).Button, obj22);
-  obj20.children = items12;
+  items12 = [, ];
+  const obj21 = { variant: "tertiary", grow: true, text: string2(NmaE9T), onPress: callback2 };
+  items12[0] = c14(Button, obj21);
+  const obj22 = { variant: "primary", grow: true, text: intl13.string(tmp(tmp2[20]).dx7eQG), loading: tmp21, disabled: "succeeded" !== tmp10 || "" === trimmed || trimmed.length > diff || null == found || tmp21, onPress: callback3 };
+  const Button2 = tmp4(tmp2[28]).Button;
+  intl13 = tmp4(tmp2[19]).intl;
+  items12[1] = c14(Button2, obj22);
   items10[2] = c15(c7, obj20);
-  obj7.children = items10;
-  obj5.children = c15(c7, obj7);
-  return c14(guildId(publish[23]).ActionSheet, obj5);
+  return c14(ActionSheet, obj5);
 };
 export const VIBEGRATIONS_PUBLISH_NOTES_SHEET_KEY = "VibegrationsPublishNotesSheet";

@@ -1,37 +1,50 @@
-// Module ID: 12670
-// Function ID: 12671
+// Module ID: 12704
+// Function ID: 12705
 // Name: useDisplayableBoardWidgets
-// Dependencies: [19, 7220, 7217, 7210, 12671, 2]
-// Exports: useDisplayableBoardWidgets
+// Dependencies: [19, 7115, 7116, 7113, 558, 576, 12705, 2]
 
-// Module 12670 (useDisplayableBoardWidgets)
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7220 */;
-import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 12671 */;
-import noop from "module_19" /* 19 */;
+// Module 12704 (useDisplayableBoardWidgets)
+import react2 from "react" /* 576 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7113 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7115 */;
+import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 12705 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function isNonEmptyBoardWidget(games) {
   let tmp3 = games instanceof UserProfileApplicationWidgetTypes.ApplicationWidget;
   if (!tmp3) {
-    let tmp4 = games instanceof tmp(7217).UserProfilePersonalWidget;
+    let tmp4 = games instanceof tmp(7116).UserProfilePersonalWidget;
     if (!tmp4) {
-      let isGameWidgetResult = tmp(7210).isGameWidget(games);
-      if (isGameWidgetResult) {
-        isGameWidgetResult = games.games.length > 0;
-      }
-      tmp4 = isGameWidgetResult;
-      const tmpResult = tmp(7210);
+      const tmpResult = UserProfileGameWidgetTypes;
+      tmp4 = tmpResult.isGameWidget(games) && games.games.length > 0;
+      const isGameWidgetResult = tmpResult.isGameWidget(games) && games.games.length > 0;
     }
     tmp3 = tmp4;
   }
   return tmp3;
 }
-const size = fn(2);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp2;
+  const obj = react2;
+  const cResult = obj.c(2);
+  const arr = useUserProfileWidgetsDefault(arg0);
+  if (cResult[0] !== arr) {
+    const found = arr.filter(isNonEmptyBoardWidget);
+    cResult[0] = arr;
+    cResult[1] = found;
+    tmp2 = found;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return tmp2;
+}) : ((arg0) => {
+  const tmp = useUserProfileWidgetsDefault(arg0);
+  let closure_0 = tmp;
+  const items = [tmp];
+  return react.useMemo(() => closure_0.filter(isNonEmptyBoardWidget), items);
+});
 const result = size.fileFinishedImporting("modules/user_profile/hooks/useDisplayableBoardWidgets.tsx");
 
-export const useDisplayableBoardWidgets = function useDisplayableBoardWidgets(id) {
-  const tmp = useUserProfileWidgetsDefault(id);
-  closure_0 = tmp;
-  const items = [tmp];
-  return noop.useMemo(() => closure_0.filter(isNonEmptyBoardWidget), items);
-};
+export const useDisplayableBoardWidgets = tmp2;

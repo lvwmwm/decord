@@ -1,66 +1,105 @@
-// Module ID: 16626
-// Function ID: 16627
+// Module ID: 16695
+// Function ID: 16696
 // Name: VibegrationsIdeasOffer
-// Dependencies: [19, 4834, 21, 504, 4595, 4846, 16576, 1115, 3714, 5463, 5465, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 558, 576, 16656, 1126, 3723, 5593, 5594, 2]
 
-// Module 16626 (VibegrationsIdeasOffer)
-import timing from "timing" /* 4846 */;
-import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4834 */;
+// Module 16695 (VibegrationsIdeasOffer)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import intl3 from "intl" /* 1126 */;
+import _modDef3723 from "module_3723" /* 3723 */;
+import Stack_Stack from "Stack/Stack" /* 5593 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import VibegrationsNativeMarkdownDefault from "VibegrationsNativeMarkdown" /* 16656 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const __initData = { code: "function VibegrationsIdeasOfferTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsIdeasOffer.tsx");
-
-export default function VibegrationsIdeasOffer(onAsk) {
-  onAsk = onAsk.onAsk;
-  let stateFromStores;
-  let sharedValue;
-  ({ style, attribution } = onAsk);
-  const items = [AccessibilityStore];
-  stateFromStores = stateFromStores(504).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj = stateFromStores(504);
-  let num = 0;
-  if (stateFromStores) {
-    num = 1;
+let closure_4;
+let hasOwnProperty;
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let attribution;
+  let first;
+  let intl;
+  let items;
+  let onAsk;
+  let style;
+  let tmp10;
+  const obj = react2;
+  const cResult = obj.c(9);
+  ({ style, attribution, onAsk } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { source: intl.string(_modDef3723.tG5PBo) };
+    const tmp7 = VibegrationsNativeMarkdownDefault;
+    intl = tmp(1126).intl;
+    const tmp8 = React3(tmp7, obj2);
+    cResult[0] = tmp8;
+    first = tmp8;
+  } else {
+    first = cResult[0];
   }
-  sharedValue = stateFromStores(4595).useSharedValue(num);
-  const items1 = [sharedValue, stateFromStores];
-  const effect = noop.useEffect(() => {
-    let num = 1;
-    if (!stateFromStores) {
-      num = timing.withTiming(1, { duration: 180 });
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl2 = tmp(1126).intl;
+    const stringResult = intl2.string(_modDef3723.cwTe5o);
+    cResult[1] = stringResult;
+    tmp10 = stringResult;
+  } else {
+    tmp10 = cResult[1];
+  }
+  if (cResult[2] === onAsk) {
+    let tmp13;
+    if (cResult[3] === null == onAsk) {
+      tmp13 = cResult[4];
     }
-    const result = sharedValue.set(num);
-    return () => stateFromStores(dependencyMap[4]).cancelAnimation(sharedValue);
-  }, items1);
-  const obj2 = stateFromStores(4595);
-  const fn = function b() {
-    return { opacity: sharedValue.get() };
-  };
-  fn.__closure = { opacity: sharedValue };
-  fn.__workletHash = 14150175995676;
-  fn.__initData = __initData;
-  const animatedStyle = stateFromStores(4595).useAnimatedStyle(fn);
-  const obj3 = { style: null, children: null };
-  const items2 = [style, animatedStyle];
-  obj3.style = items2;
-  const items3 = [attribution, , ];
-  const obj4 = { source: null };
-  const tmpResult = stateFromStores(4595);
-  const intl = tmp(1115).intl;
-  obj4.source = intl.string(sharedValue(3714).tG5PBo);
-  items3[1] = closure_5(sharedValue(16576), obj4);
-  const obj5 = { direction: "horizontal", children: null };
-  const obj6 = { variant: "secondary", size: "sm", disabled: null == onAsk, onPress: onAsk, text: null };
-  const intl2 = tmp(1115).intl;
-  obj6.text = intl2.string(sharedValue(3714).cwTe5o);
-  obj5.children = closure_5(stateFromStores(5465).Button, obj6);
-  items3[2] = closure_5(stateFromStores(5463).Stack, obj5);
-  obj3.children = items3;
-  return closure_6(sharedValue(4595).View, obj3);
-};
+    if (cResult[5] === attribution) {
+      if (cResult[6] === style) {
+        let tmp15;
+        if (cResult[7] === tmp13) {
+          tmp15 = cResult[8];
+        }
+        return tmp15;
+      }
+    }
+    const obj3 = { style, children: items };
+    items = [attribution, first, tmp13];
+    const tmp18 = hasOwnProperty(View, obj3);
+    cResult[5] = attribution;
+    cResult[6] = style;
+    cResult[7] = tmp13;
+    cResult[8] = tmp18;
+    tmp15 = tmp18;
+  }
+  const obj4 = { direction: "horizontal", children: React3(components_Button_Button.Button, { variant: "secondary", size: "sm", disabled: null == onAsk, onPress: onAsk, text: tmp10 }) };
+  const Stack = tmp(5593).Stack;
+  const tmp14 = React3(Stack, obj4);
+  cResult[2] = onAsk;
+  cResult[3] = null == onAsk;
+  cResult[4] = tmp14;
+  tmp13 = tmp14;
+}) : ((onAsk) => {
+  let Button;
+  let intl;
+  let intl2;
+  let items;
+  let obj4;
+  onAsk = onAsk.onAsk;
+  const obj = { style: onAsk.style, children: items };
+  items = [onAsk.attribution, , ];
+  const obj2 = { source: intl.string(_modDef3723.tG5PBo) };
+  const tmp = VibegrationsNativeMarkdownDefault;
+  intl = intl3.intl;
+  items[1] = React3(tmp, obj2);
+  const obj3 = { direction: "horizontal", children: React3(Button, obj4) };
+  const Stack = Stack_Stack.Stack;
+  obj4 = { variant: "secondary", size: "sm", disabled: null == onAsk, onPress: onAsk, text: intl2.string(_modDef3723.cwTe5o) };
+  Button = components_Button_Button.Button;
+  intl2 = intl3.intl;
+  items[2] = React3(Stack, obj3);
+  return hasOwnProperty(View, obj);
+});
+const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsIdeasOffer.tsx");
+
+export default tmp4;

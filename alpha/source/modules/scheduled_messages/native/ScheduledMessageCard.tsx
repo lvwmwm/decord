@@ -1,90 +1,406 @@
-// Module ID: 11906
-// Function ID: 11907
+// Module ID: 11843
+// Function ID: 11844
 // Name: ScheduledMessageCard
-// Dependencies: [19, 17, 2044, 1074, 21, 4845, 576, 504, 1101, 5048, 6105, 11907, 6075, 11908, 9764, 4841, 1115, 7439, 11909, 11901, 11910, 2]
+// Dependencies: [19, 17, 2051, 1085, 21, 4890, 587, 558, 576, 504, 1112, 5093, 11844, 5968, 11845, 10369, 4886, 1126, 5995, 7475, 11846, 11847, 11838, 2]
 
-// Module 11906 (ScheduledMessageCard)
-import nativeDefault from "native" /* 576 */;
-import router_utils from "router_utils" /* 1101 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5048 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 7439 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 11901 */;
-import ForLaterCardStatusHeader from "ForLaterCardStatusHeader" /* 11909 */;
-import ScheduledMessageCardActionButtonsDefault from "ScheduledMessageCardActionButtons" /* 11910 */;
-import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
+// Module 11843 (ScheduledMessageCard)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import router_utils from "router_utils" /* 1112 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 7475 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 11838 */;
+import ScheduledMessageCardActionButtonsDefault from "ScheduledMessageCardActionButtons" /* 11846 */;
+import ForLaterCardStatusHeader2 from "ForLaterCardStatusHeader" /* 11847 */;
+import react from "react" /* 19 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-function ScheduledMessageCardStatusHeader(isPendingRemoval) {
-  const scheduledMessage = isPendingRemoval.scheduledMessage;
-  const messageForState = ScheduledMessageUtils.getMessageForState(scheduledMessage.state);
-  ({ isError, stateMessage } = messageForState);
-  const obj2 = { IconComponent: CalendarPlusIcon.CalendarPlusIcon, label: null, isCritical: null, lineClamp: 2, actions: null };
-  if (!isError) {
-    const intl = tmp(1115).intl;
-    const obj3 = { timestamp: null };
-    const _Date = Date;
-    const date = new Date(scheduledMessage.sendAtTimestamp);
-    obj3.timestamp = date.valueOf();
-    stateMessage = intl.formatToPlainString(tmp(1115).t.ZN3tIx, obj3);
-  }
-  obj2.label = stateMessage;
-  obj2.isCritical = isError;
-  obj2.actions = React5(ScheduledMessageCardActionButtonsDefault, { scheduledMessage, isPendingRemoval: isPendingRemoval.isPendingRemoval });
-  return React5(ForLaterCardStatusHeader.ForLaterCardStatusHeader, obj2);
-}
-const View = fn(17).View;
-const Routes = fn(1074).Routes;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4845);
-let obj = { card: { gap: 16, marginBottom: 16 }, cardDivider: { marginHorizontal: -16, height: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED }, attachmentCount: { flexDirection: "row", alignItems: "center", gap: 4 }, pendingRemoval: { alignItems: "center", paddingVertical: 16 } };
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+const View = react_native.View;
+const Routes = Constants.Routes;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let obj = { card: { gap: 16, marginBottom: 16 }, cardDivider: obj2, attachmentCount: { flexDirection: "row", alignItems: "center", gap: 4 }, pendingRemoval: { alignItems: "center", paddingVertical: 16 } };
+obj2 = { marginHorizontal: -16, height: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 let closure_9 = createStyles.createStyles(obj);
-let obj3 = { marginHorizontal: -16, height: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/scheduled_messages/native/ScheduledMessageCard.tsx");
-
-export default noop.memo(function ScheduledMessageCard(scheduledMessage) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) => {
+  let first;
+  let intl;
+  let items1;
+  let obj8;
+  let tmp7;
+  const obj = scheduledMessage(576);
+  const cResult = obj.c(25);
+  scheduledMessage = scheduledMessage.scheduledMessage;
+  const isPendingRemoval = scheduledMessage.isPendingRemoval;
+  const tmp4 = closure_9();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== scheduledMessage.createArgs.channelId) {
+    const fn = function v() {
+      return ChannelStore.getChannel(scheduledMessage.createArgs.channelId);
+    };
+    cResult[1] = scheduledMessage.createArgs.channelId;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult = scheduledMessage(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
+  if (cResult[3] !== stateFromStores) {
+    class R {
+      constructor() {
+        if (null != stateFromStores) {
+          const obj2 = router_utils;
+          obj2.transitionTo(Routes.CHANNEL(stateFromStores.getGuildId(), stateFromStores.id));
+          const arr = ModalActionCreatorsDefault;
+          arr.pop();
+        }
+      }
+    }
+    cResult[3] = stateFromStores;
+    cResult[4] = R;
+  } else {
+    class R {
+      constructor() {
+        if (null != stateFromStores) {
+          const obj2 = router_utils;
+          obj2.transitionTo(Routes.CHANNEL(stateFromStores.getGuildId(), stateFromStores.id));
+          const arr = ModalActionCreatorsDefault;
+          arr.pop();
+        }
+      }
+    }
+  }
+  if (null == stateFromStores) {
+    class R {
+      constructor() {
+        if (null != stateFromStores) {
+          const obj2 = router_utils;
+          obj2.transitionTo(Routes.CHANNEL(stateFromStores.getGuildId(), stateFromStores.id));
+          const arr = ModalActionCreatorsDefault;
+          arr.pop();
+        }
+      }
+    }
+  } else {
+    class R {
+      constructor() {
+        if (null != stateFromStores) {
+          const obj2 = router_utils;
+          obj2.transitionTo(Routes.CHANNEL(stateFromStores.getGuildId(), stateFromStores.id));
+          const arr = ModalActionCreatorsDefault;
+          arr.pop();
+        }
+      }
+    }
+    if (cResult[5] === isPendingRemoval) {
+      let tmp20Result;
+      class R {
+        constructor() {
+          if (null != stateFromStores) {
+            const obj2 = router_utils;
+            obj2.transitionTo(Routes.CHANNEL(stateFromStores.getGuildId(), stateFromStores.id));
+            const arr = ModalActionCreatorsDefault;
+            arr.pop();
+          }
+        }
+      }
+      if (cResult[8] !== stateFromStores) {
+        class R {
+          constructor() {
+            if (null != stateFromStores) {
+              const obj2 = router_utils;
+              obj2.transitionTo(Routes.CHANNEL(stateFromStores.getGuildId(), stateFromStores.id));
+              const arr = ModalActionCreatorsDefault;
+              arr.pop();
+            }
+          }
+        }
+        let obj2 = { channel: stateFromStores, actions: null };
+        cResult[8] = stateFromStores;
+        cResult[9] = closure_7(scheduledMessage(11844).ForLaterCardHeader, obj2);
+        const tmp15 = closure_7(scheduledMessage(11844).ForLaterCardHeader, obj2);
+      } else {
+        class R {
+          constructor() {
+            if (null != stateFromStores) {
+              const obj2 = router_utils;
+              obj2.transitionTo(Routes.CHANNEL(stateFromStores.getGuildId(), stateFromStores.id));
+              const arr = ModalActionCreatorsDefault;
+              arr.pop();
+            }
+          }
+        }
+      }
+      if (cResult[10] !== tmp4.cardDivider) {
+        class R {
+          constructor() {
+            if (null != stateFromStores) {
+              const obj2 = router_utils;
+              obj2.transitionTo(Routes.CHANNEL(stateFromStores.getGuildId(), stateFromStores.id));
+              const arr = ModalActionCreatorsDefault;
+              arr.pop();
+            }
+          }
+        }
+        const obj3 = { style: tmp4.cardDivider };
+        cResult[10] = tmp4.cardDivider;
+        cResult[11] = closure_7(View, obj3);
+        const tmp18 = closure_7(View, obj3);
+      } else {
+        class R {
+          constructor() {
+            if (null != stateFromStores) {
+              const obj2 = router_utils;
+              obj2.transitionTo(Routes.CHANNEL(stateFromStores.getGuildId(), stateFromStores.id));
+              const arr = ModalActionCreatorsDefault;
+              arr.pop();
+            }
+          }
+        }
+      }
+      if (cResult[12] === tmp26) {
+        class R {
+          constructor() {
+            if (null != stateFromStores) {
+              const obj2 = router_utils;
+              obj2.transitionTo(Routes.CHANNEL(stateFromStores.getGuildId(), stateFromStores.id));
+              const arr = ModalActionCreatorsDefault;
+              arr.pop();
+            }
+          }
+        }
+      }
+      if (isPendingRemoval) {
+        class R {
+          constructor() {
+            if (null != stateFromStores) {
+              const obj2 = router_utils;
+              obj2.transitionTo(Routes.CHANNEL(stateFromStores.getGuildId(), stateFromStores.id));
+              const arr = ModalActionCreatorsDefault;
+              arr.pop();
+            }
+          }
+        }
+        const obj4 = { style: tmp4.pendingRemoval, children: closure_7(scheduledMessage(5968).ActivityIndicator, { size: "small" }) };
+        tmp20Result = tmp20(View, obj4);
+      } else {
+        class R {
+          constructor() {
+            if (null != stateFromStores) {
+              const obj2 = router_utils;
+              obj2.transitionTo(Routes.CHANNEL(stateFromStores.getGuildId(), stateFromStores.id));
+              const arr = ModalActionCreatorsDefault;
+              arr.pop();
+            }
+          }
+        }
+        tmp21[0] = scheduledMessage.record;
+        let tmp22;
+        const ForLaterMessageRow = tmp(11845).ForLaterMessageRow;
+        if (tmp26 > 0) {
+          class R {
+            constructor() {
+              if (null != stateFromStores) {
+                const obj2 = router_utils;
+                obj2.transitionTo(Routes.CHANNEL(stateFromStores.getGuildId(), stateFromStores.id));
+                const arr = ModalActionCreatorsDefault;
+                arr.pop();
+              }
+            }
+          }
+          const obj5 = { style: tmp4.attachmentCount, children: items1 };
+          const obj6 = { size: "xxs", color: stateFromStores(587).colors.TEXT_MUTED };
+          const AttachmentIcon = tmp(10369).AttachmentIcon;
+          items1 = [closure_7(AttachmentIcon, obj6), ];
+          const obj7 = { variant: "text-sm/normal", color: "text-muted", children: intl.format(scheduledMessage(1126).t.ZJ1tPW, obj8) };
+          const Text = tmp(4886).Text;
+          intl = tmp(1126).intl;
+          obj8 = { count: tmp26 };
+          items1[1] = closure_7(Text, obj7);
+          tmp22 = closure_8(View, obj5);
+        }
+        tmp21[3] = tmp22;
+        tmp20Result = tmp20(ForLaterMessageRow, tmp21);
+      }
+      cResult[12] = tmp26;
+      cResult[13] = isPendingRemoval;
+      cResult[14] = scheduledMessage.record;
+      cResult[15] = tmp4.attachmentCount;
+      cResult[16] = tmp4.pendingRemoval;
+      cResult[17] = tmp20Result;
+    }
+    const obj9 = { scheduledMessage, isPendingRemoval };
+    cResult[5] = isPendingRemoval;
+    cResult[6] = scheduledMessage;
+    cResult[7] = closure_7(closure_10, obj9);
+    const tmp13 = closure_7(closure_10, obj9);
+  }
+}) : ((scheduledMessage) => {
+  let intl;
+  let items1;
+  let items2;
+  let obj11;
+  let tmp9Result;
   scheduledMessage = scheduledMessage.scheduledMessage;
   const isPendingRemoval = scheduledMessage.isPendingRemoval;
   const tmp = closure_9();
   const items = [ChannelStore];
-  const stateFromStores = scheduledMessage(504).useStateFromStores(items, () => ChannelStore.getChannel(scheduledMessage.createArgs.channelId));
+  const obj = scheduledMessage(504);
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(scheduledMessage.createArgs.channelId));
   [][0] = stateFromStores;
   if (null == stateFromStores) {
     return null;
   } else {
-    let obj2 = { variant: "primary", border: "subtle", shadow: "none", style: tmp.card, onPress: tmp5, children: null };
+    let tmp10Result;
+    let obj2 = { variant: "primary", border: "subtle", shadow: "none", style: tmp.card, onPress: tmp5, children: items1 };
     const obj3 = { scheduledMessage, isPendingRemoval };
-    const items1 = [closure_7(ScheduledMessageCardStatusHeader, obj3), , , ];
+    const Card = tmp2(5995).Card;
+    items1 = [closure_7(closure_10, obj3), , , ];
     const obj4 = { channel: stateFromStores, actions: null };
-    items1[1] = closure_7(tmp2(11907).ForLaterCardHeader, obj4);
+    items1[1] = closure_7(scheduledMessage(11844).ForLaterCardHeader, obj4);
     const obj5 = { style: tmp.cardDivider };
     items1[2] = closure_7(View, obj5);
     if (isPendingRemoval) {
-      const obj6 = { style: tmp.pendingRemoval, children: tmp10(tmp2(6075).ActivityIndicator, { size: "small" }) };
-      let tmp10Result = tmp10(tmp12, obj6);
+      const obj6 = { style: tmp.pendingRemoval, children: closure_7(scheduledMessage(5968).ActivityIndicator, { size: "small" }) };
+      tmp10Result = tmp10(tmp12, obj6);
     } else {
-      const obj7 = { message: scheduledMessage.record, lineClamp: 10, maxHeight: 400, footer: null };
-      let tmp9Result;
-      if (length > 0) {
-        const obj8 = { style: tmp.attachmentCount, children: null };
-        const obj9 = { size: "xxs", color: stateFromStores(576).colors.TEXT_MUTED };
-        const items2 = [tmp10(tmp2(9764).AttachmentIcon, obj9), ];
-        const obj10 = { variant: "text-sm/normal", color: "text-muted", children: null };
-        const intl = tmp2(1115).intl;
-        const obj11 = { count: length };
-        obj10.children = intl.format(tmp2(1115).t.ZJ1tPW, obj11);
-        items2[1] = tmp10(tmp2(4841).Text, obj10);
-        obj8.children = items2;
+      const obj7 = { message: scheduledMessage.record, lineClamp: 10, maxHeight: 400, footer: tmp9Result };
+      tmp9Result = undefined;
+      const ForLaterMessageRow = tmp2(11845).ForLaterMessageRow;
+      if (scheduledMessage.attachmentUploads.length > 0) {
+        const obj8 = { style: tmp.attachmentCount, children: items2 };
+        const obj9 = { size: "xxs", color: stateFromStores(587).colors.TEXT_MUTED };
+        const AttachmentIcon = tmp2(10369).AttachmentIcon;
+        items2 = [closure_7(AttachmentIcon, obj9), ];
+        const obj10 = { variant: "text-sm/normal", color: "text-muted", children: intl.format(scheduledMessage(1126).t.ZJ1tPW, obj11) };
+        const Text = tmp2(4886).Text;
+        intl = tmp2(1126).intl;
+        obj11 = { count: scheduledMessage.attachmentUploads.length };
+        items2[1] = closure_7(Text, obj10);
         tmp9Result = tmp9(tmp12, obj8);
       }
-      obj7.footer = tmp9Result;
-      tmp10Result = tmp10(tmp2(11908).ForLaterMessageRow, obj7);
+      tmp10Result = tmp10(ForLaterMessageRow, obj7);
     }
     items1[3] = tmp10Result;
-    obj2.children = items1;
-    return closure_8(tmp2(6105).Card, obj2);
+    return closure_8(Card, obj2);
   }
-  const obj = scheduledMessage(504);
 });
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+  let date;
+  let isError;
+  let isPendingRemoval;
+  let scheduledMessage;
+  let stateMessage;
+  let tmp4;
+  const obj = react2;
+  const cResult = obj.c(13);
+  ({ scheduledMessage, isPendingRemoval } = arg0);
+  if (cResult[0] !== scheduledMessage.state) {
+    const tmpResult = ScheduledMessageUtils;
+    const messageForState = tmpResult.getMessageForState(scheduledMessage.state);
+    cResult[0] = scheduledMessage.state;
+    cResult[1] = messageForState;
+    tmp4 = messageForState;
+  } else {
+    tmp4 = cResult[1];
+  }
+  ({ isError, stateMessage } = tmp4);
+  if (cResult[2] === isError) {
+    if (cResult[3] === scheduledMessage.sendAtTimestamp) {
+      let tmp6;
+      if (cResult[4] === stateMessage) {
+        tmp6 = cResult[5];
+      }
+      if (cResult[6] === isPendingRemoval) {
+        let tmp10;
+        if (cResult[7] === scheduledMessage) {
+          tmp10 = cResult[8];
+        }
+        if (cResult[9] === isError) {
+          if (cResult[10] === tmp6) {
+            let tmp14;
+            if (cResult[11] === tmp10) {
+              tmp14 = cResult[12];
+            }
+            return tmp14;
+          }
+        }
+        const obj2 = { IconComponent: CalendarPlusIcon.CalendarPlusIcon, label: tmp6, isCritical: isError, lineClamp: 2, actions: tmp10 };
+        const ForLaterCardStatusHeader = tmp(11847).ForLaterCardStatusHeader;
+        const tmp16 = metroImportDefault(ForLaterCardStatusHeader, obj2);
+        cResult[9] = isError;
+        cResult[10] = tmp6;
+        cResult[11] = tmp10;
+        cResult[12] = tmp16;
+        tmp14 = tmp16;
+      }
+      const obj3 = { scheduledMessage, isPendingRemoval };
+      const tmp13 = metroImportDefault(ScheduledMessageCardActionButtonsDefault, obj3);
+      cResult[6] = isPendingRemoval;
+      cResult[7] = scheduledMessage;
+      cResult[8] = tmp13;
+      tmp10 = tmp13;
+    }
+  }
+  let formatToPlainStringResult = stateMessage;
+  if (!isError) {
+    const intl = tmp(1126).intl;
+    const formatToPlainString = intl.formatToPlainString;
+    const _Date = Date;
+    const self = this;
+    const self2 = this;
+    const obj4 = { timestamp: date.valueOf() };
+    const ZN3tIx = tmp(1126).t.ZN3tIx;
+    date = new Date(scheduledMessage.sendAtTimestamp);
+    formatToPlainStringResult = formatToPlainString(ZN3tIx, obj4);
+  }
+  cResult[2] = isError;
+  cResult[3] = scheduledMessage.sendAtTimestamp;
+  cResult[4] = stateMessage;
+  cResult[5] = formatToPlainStringResult;
+  tmp6 = formatToPlainStringResult;
+}) : (function(scheduledMessage) {
+  let date;
+  let isError;
+  let stateMessage;
+  scheduledMessage = scheduledMessage.scheduledMessage;
+  const isPendingRemoval = scheduledMessage.isPendingRemoval;
+  const obj = ScheduledMessageUtils;
+  const messageForState = obj.getMessageForState(scheduledMessage.state);
+  ({ isError, stateMessage } = messageForState);
+  const obj2 = { IconComponent: CalendarPlusIcon.CalendarPlusIcon, label: stateMessage, isCritical: isError, lineClamp: 2, actions: metroImportDefault(ScheduledMessageCardActionButtonsDefault, { scheduledMessage, isPendingRemoval }) };
+  const ForLaterCardStatusHeader = ForLaterCardStatusHeader2.ForLaterCardStatusHeader;
+  if (!isError) {
+    const intl = tmp(1126).intl;
+    const formatToPlainString = intl.formatToPlainString;
+    const _Date = Date;
+    const self = this;
+    const self2 = this;
+    const obj3 = { timestamp: date.valueOf() };
+    const ZN3tIx = tmp(1126).t.ZN3tIx;
+    date = new Date(scheduledMessage.sendAtTimestamp);
+    stateMessage = formatToPlainString(ZN3tIx, obj3);
+  }
+  return metroImportDefault(ForLaterCardStatusHeader, obj2);
+});
+const memoResult = react.memo(tmp3);
+const result = size.fileFinishedImporting("modules/scheduled_messages/native/ScheduledMessageCard.tsx");
+
+export default memoResult;

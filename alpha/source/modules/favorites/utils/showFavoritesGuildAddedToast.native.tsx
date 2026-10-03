@@ -1,21 +1,22 @@
-// Module ID: 9890
-// Function ID: 9891
+// Module ID: 10046
+// Function ID: 10047
 // Name: showFavoritesGuildAddedToast
-// Dependencies: [4557, 1115, 9891, 2]
+// Dependencies: [4568, 1126, 9943, 2]
 // Exports: default
 
-// Module 9890 (showFavoritesGuildAddedToast)
-import util from "util" /* 1115 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4557 */;
-import StarIcon from "StarIcon" /* 9891 */;
+// Module 10046 (showFavoritesGuildAddedToast)
+import intl2 from "intl" /* 1126 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
+import StarIcon from "StarIcon" /* 9943 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/favorites/utils/showFavoritesGuildAddedToast.native.tsx");
 
 export default function showFavoritesGuildAddedToast() {
-  const obj2 = { key: "FAVORITE_ADDED", content: null, IconComponent: null };
-  const intl = util.intl;
-  obj2.content = intl.string(util.t["4tSWQg"]);
-  obj2.IconComponent = StarIcon.StarIcon;
-  ToastActionCreatorsDefault.open(obj2);
+  let intl;
+  const obj = { key: "FAVORITE_ADDED", content: intl.string(intl2.t["4tSWQg"]), IconComponent: StarIcon.StarIcon };
+  const open = ToastActionCreatorsDefault.open;
+  ToastActionCreatorsDefault;
+  intl = intl2.intl;
+  open(obj);
 };

@@ -1,66 +1,68 @@
-// Module ID: 8322
-// Function ID: 8323
+// Module ID: 8327
+// Function ID: 8328
 // Name: GameProfileStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 584, 2]
 
-// Module 8322 (GameProfileStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 8327 (GameProfileStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import size from "module_2" /* 2 */;
 
-let closure_0 = {};
-let closure_1 = {};
-let closure_2 = {};
-let closure_3 = {};
-let closure_4 = {};
-let closure_5 = {};
-let closure_6 = {};
+let _null;
+
+const React = {};
+const React2 = {};
+const _false = {};
+const React3 = {};
+const hasOwnProperty = {};
+const metroRequire = {};
 let c7 = null;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class GameProfileStore extends Store {
+  getSimilarGames(arg0) {
+    return closure_0[arg0];
+  }
+  getShopCollectionSkuIds(arg0) {
+    return closure_1[arg0];
+  }
+  hasShopCollectionBeenFetched(arg0) {
+    let flag = closure_2[arg0];
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
+  }
+  isShopCollectionFetching(arg0) {
+    let flag = closure_3[arg0];
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
+  }
+  getAnnouncements(arg0) {
+    return closure_4[arg0];
+  }
+  hasAnnouncementsBeenFetched(arg0) {
+    let flag = closure_5[arg0];
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
+  }
+  isAnnouncementsFetching(arg0) {
+    let flag = closure_6[arg0];
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
+  }
+  getPendingReturn() {
+    return c7;
+  }
 }
 const prototype = GameProfileStore.prototype;
-prototype["getSimilarGames"] = function getSimilarGames(arg0) {
-  return closure_0[arg0];
-};
-prototype["getShopCollectionSkuIds"] = function getShopCollectionSkuIds(skuIds) {
-  return closure_1[skuIds];
-};
-prototype["hasShopCollectionBeenFetched"] = function hasShopCollectionBeenFetched(skuIds) {
-  let flag = closure_2[skuIds];
-  if (flag == null) {
-    flag = false;
-  }
-  return flag;
-};
-prototype["isShopCollectionFetching"] = function isShopCollectionFetching(skuIds) {
-  let flag = closure_3[skuIds];
-  if (flag == null) {
-    flag = false;
-  }
-  return flag;
-};
-prototype["getAnnouncements"] = function getAnnouncements(arg0) {
-  return closure_4[arg0];
-};
-prototype["hasAnnouncementsBeenFetched"] = function hasAnnouncementsBeenFetched(arg0) {
-  let flag = closure_5[arg0];
-  if (flag == null) {
-    flag = false;
-  }
-  return flag;
-};
-prototype["isAnnouncementsFetching"] = function isAnnouncementsFetching(arg0) {
-  let flag = closure_6[arg0];
-  if (flag == null) {
-    flag = false;
-  }
-  return flag;
-};
-prototype["getPendingReturn"] = function getPendingReturn() {
-  return c7;
-};
 GameProfileStore.displayName = "GameProfileStore";
-const gameProfileStore = new GameProfileStore(DispatcherDefault, {
+const obj = {
   GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS: function handleGetSimilarGamesSuccess(gameId) {
     closure_0[gameId.gameId] = gameId.games;
   },
@@ -93,6 +95,9 @@ const gameProfileStore = new GameProfileStore(DispatcherDefault, {
     closure_6[gameId] = false;
   },
   GAME_PROFILE_SET_PENDING_RETURN: function handleSetPendingReturn(arg0) {
+    let channelId;
+    let gameId;
+    let initialScrollOffset;
     ({ gameId, channelId, initialScrollOffset } = arg0);
     let gameId1;
     if (_null != null) {
@@ -123,8 +128,8 @@ const gameProfileStore = new GameProfileStore(DispatcherDefault, {
     }
     return false;
   }
-});
-const size = fn(2);
+};
+const gameProfileStore = new GameProfileStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/game_profile/GameProfileStore.tsx");
 
 export default gameProfileStore;

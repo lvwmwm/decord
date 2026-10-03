@@ -1,39 +1,45 @@
-// Module ID: 17908
-// Function ID: 17909
+// Module ID: 17994
+// Function ID: 17995
 // Name: SocialRpcNetworkConfigManager
-// Dependencies: [17, 2111, 502, 1241, 1271, 6725, 1364, 2]
+// Dependencies: [17, 2116, 502, 1252, 1282, 6613, 1369, 2]
 
-// Module 17908 (SocialRpcNetworkConfigManager)
-import _mod17 from "module_17" /* 17 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import LocaleStore from "LocaleStore" /* 2111 */;
+// Module 17994 (SocialRpcNetworkConfigManager)
+import react_native from "react-native" /* 17 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
 import size from "module_2" /* 2 */;
 
 function updateSocialRpcNetworkConfig() {
-  const obj = { "X-Super-Properties": AnalyticsUtilsDefault.getSuperPropertiesBase64(), "X-Fingerprint": AuthenticationStore.getFingerprint(), "X-Installation-ID": AuthenticationStore.getInstallationForTracking(), "X-Discord-Locale": LocaleStore.locale };
+  let obj2;
+  let obj4;
+  const obj = { "X-Super-Properties": obj2.getSuperPropertiesBase64(), "X-Fingerprint": AuthenticationStore.getFingerprint(), "X-Installation-ID": AuthenticationStore.getInstallationForTracking(), "X-Discord-Locale": LocaleStore.locale };
   const NativeCacheModule = NativeModules.NativeCacheModule;
+  obj2 = AnalyticsUtilsDefault;
   if (NativeCacheModule != null) {
     const _JSON = JSON;
-    const obj3 = { apiBaseUrl: HTTPUtils.getAPIBaseURL(), headers: obj };
-    const result = NativeCacheModule.setItem("socialRpcNetworkRequest", JSON.stringify(obj3));
+    const setItem = NativeCacheModule.setItem;
+    const obj3 = { apiBaseUrl: obj4.getAPIBaseURL(), headers: obj };
+    obj4 = HTTPUtils;
+    const result = setItem("socialRpcNetworkRequest", stringify(obj3));
   }
 }
-const NativeModules = _mod17.NativeModules;
-const prototype = function SocialRpcNetworkConfigManager() {
-  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  applyArgumentsResult.handleUpdate = PlatformUtils.isAndroid() ? updateSocialRpcNetworkConfig : (() => {
+const NativeModules = react_native.NativeModules;
+class SocialRpcNetworkConfigManager extends AutomaticLifecycleManager {
+  constructor() {
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    const obj = PlatformUtils;
+    applyArgumentsResult.handleUpdate = obj.isAndroid() ? updateSocialRpcNetworkConfig : (() => {
 
-  });
-  applyArgumentsResult.actions = { POST_CONNECTION_OPEN: applyArgumentsResult.handleUpdate };
-  return applyArgumentsResult;
-}.prototype;
-class prototype extends tmp2 {
+    });
+    applyArgumentsResult.actions = { POST_CONNECTION_OPEN: applyArgumentsResult.handleUpdate };
+    return applyArgumentsResult;
+  }
 }
-const prototype1 = new prototype();
+const socialRpcNetworkConfigManager = new SocialRpcNetworkConfigManager();
 let result = size.fileFinishedImporting("modules/rpc/native/SocialRpcNetworkConfigManager.tsx");
 
-export default prototype1;
+export default socialRpcNetworkConfigManager;

@@ -1,0 +1,134 @@
+// Module ID: 16655
+// Function ID: 16656
+// Name: VibegrationsPlanAutomodOutcomes
+// Dependencies: [2114, 1126, 3723, 4877, 2]
+// Exports: groupPlanAutomodExamples, planAutomodReasonText, renderPlanAutomodExampleContent
+
+// Module 16655 (VibegrationsPlanAutomodOutcomes)
+import intl7 from "intl" /* 1126 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2114 */;
+import _modDef3723 from "module_3723" /* 3723 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 4877 */;
+import size from "module_2" /* 2 */;
+
+const getFriendlyDurationString = GuildDisableCommunicationConstants.getFriendlyDurationString;
+let obj = {
+  alert: {
+    label() {
+      const intl = intl7.intl;
+      return intl.string(_modDef3723.EVMdYA);
+    },
+    blockedStyle: false
+  },
+  block: {
+    label() {
+      const intl = intl7.intl;
+      return intl.string(_modDef3723.OlKZgi);
+    },
+    blockedStyle: true
+  },
+  timeout: {
+    label() {
+      const intl = intl7.intl;
+      return intl.string(_modDef3723["mtBG+G"]);
+    },
+    blockedStyle: true
+  },
+  allow: {
+    label() {
+      const intl = intl7.intl;
+      return intl.string(_modDef3723.DLAXIs);
+    },
+    blockedStyle: false
+  }
+};
+let obj2 = {
+  blocked: {
+    label() {
+      const intl = intl7.intl;
+      return intl.string(_modDef3723.OlKZgi);
+    },
+    tone: "red"
+  },
+  alert: {
+    label() {
+      const intl = intl7.intl;
+      return intl.string(_modDef3723["5hI77G"]);
+    },
+    tone: "blurple"
+  },
+  allowed: {
+    label() {
+      const intl = intl7.intl;
+      return intl.string(_modDef3723.DLAXIs);
+    },
+    tone: "green"
+  }
+};
+let closure_4 = ["blocked", "alert", "allowed"];
+let closure_5 = { block: "blocked", timeout: "blocked", alert: "alert", allow: "allowed" };
+let c6 = 604800;
+const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsPlanAutomodOutcomes.tsx");
+
+export const VIBEGRATIONS_PLAN_AUTOMOD_OUTCOMES = obj;
+export const VIBEGRATIONS_PLAN_AUTOMOD_SECTIONS = obj2;
+export const groupPlanAutomodExamples = function groupPlanAutomodExamples(examples) {
+  const mapped = closure_4.map((section) => {
+    examples = section;
+    const obj = { section, examples: examples.filter((item) => closure_2_5[item.outcome] === closure_0) };
+    return obj;
+  });
+  return mapped.filter((examples) => examples.examples.length > 0);
+};
+export const planAutomodReasonText = function planAutomodReasonText(example) {
+  let formatToPlainStringResult1 = null;
+  if ("timeout" === example.outcome) {
+    formatToPlainStringResult1 = null;
+    if (null != example.timeout_seconds) {
+      const intl = intl7.intl;
+      const formatToPlainString = intl.formatToPlainString;
+      const timeout_seconds = example.timeout_seconds;
+      const v3LYql6 = intl7.t["3LYql6"];
+      let tmp6 = getFriendlyDurationString(timeout_seconds);
+      if (null == tmp6) {
+        let formatToPlainStringResult;
+        if (timeout_seconds % c6 === 0) {
+          const intl6 = tmp2(1126).intl;
+          const obj2 = { weeks: timeout_seconds / tmp10 };
+          formatToPlainStringResult = intl6.formatToPlainString(tmp2(1126).t.EmoBD2, obj2);
+        } else if (timeout_seconds % 86400 === 0) {
+          const intl5 = tmp2(1126).intl;
+          const obj3 = { days: timeout_seconds / 86400 };
+          formatToPlainStringResult = intl5.formatToPlainString(tmp2(1126).t["k2UNz+"], obj3);
+        } else if (timeout_seconds % 3600 === 0) {
+          const intl4 = tmp2(1126).intl;
+          const obj4 = { hours: timeout_seconds / 3600 };
+          formatToPlainStringResult = intl4.formatToPlainString(tmp2(1126).t.xCjYxK, obj4);
+        } else if (timeout_seconds % 60 === 0) {
+          const intl3 = tmp2(1126).intl;
+          const obj5 = { mins: timeout_seconds / 60 };
+          formatToPlainStringResult = intl3.formatToPlainString(tmp2(1126).t.opVZ9q, obj5);
+        } else {
+          const intl2 = tmp2(1126).intl;
+          const obj = { secs: timeout_seconds };
+          formatToPlainStringResult = intl2.formatToPlainString(tmp2(1126).t["4zv/jq"], obj);
+        }
+        tmp6 = formatToPlainStringResult;
+      }
+      const obj6 = { duration: tmp6 };
+      formatToPlainStringResult1 = formatToPlainString(v3LYql6, obj6);
+    }
+  }
+  const items = [formatToPlainStringResult1, example.reason];
+  const found = items.filter((item) => null != item && "" !== item);
+  const joined = found.join(" ");
+  let tmp9 = null;
+  if ("" !== joined) {
+    tmp9 = joined;
+  }
+  return tmp9;
+};
+export const renderPlanAutomodExampleContent = function renderPlanAutomodExampleContent(content) {
+  const obj = MarkupUtilsDefault;
+  return obj.parseEmbedTitleWithoutLinks(content, true);
+};

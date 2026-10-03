@@ -1,23 +1,22 @@
-// Module ID: 9176
-// Function ID: 9177
+// Module ID: 9180
+// Function ID: 9181
 // Name: EntityUtils
-// Dependencies: [2044, 2050, 2]
+// Dependencies: [2051, 2057, 2]
 // Exports: getChannelFromEvent, getChannelTypeFromEntity, getLocationFromEvent, getLocationFromEventData
 
-// Module 9176 (EntityUtils)
-import ChannelStore from "ChannelStore" /* 2044 */;
+// Module 9180 (EntityUtils)
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
+import size from "module_2" /* 2 */;
 
-const GuildScheduledEventsConstants = fn(2050);
-({ GuildScheduledEventEntityTypes: closure_1, EntityChannelTypes: c2 } = GuildScheduledEventsConstants);
-const size = fn(2);
+let c2;
+let map;
+({ GuildScheduledEventEntityTypes: map, EntityChannelTypes: c2 } = GuildScheduledEventsConstants);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/utils/EntityUtils.tsx");
 
 export const getChannelFromEvent = function getChannelFromEvent(entity_type) {
-  let tmp2 = entity_type.entity_type in React2;
-  if (tmp2) {
-    tmp2 = null != tmp;
-  }
   let tmp4;
+  const tmp2 = entity_type.entity_type in React2 && null != tmp;
   if (tmp2) {
     const channel = ChannelStore.getChannel(entity_type.channel_id);
     tmp4 = channel;
@@ -26,14 +25,8 @@ export const getChannelFromEvent = function getChannelFromEvent(entity_type) {
 };
 export const getLocationFromEvent = function getLocationFromEvent(event) {
   const entity_metadata = event.entity_metadata;
-  let tmp = event.entity_type === constants.EXTERNAL;
-  if (tmp) {
-    tmp = null != entity_metadata;
-  }
-  if (tmp) {
-    tmp = "location" in entity_metadata;
-  }
   let _location = null;
+  const tmp = event.entity_type === map.EXTERNAL && null != entity_metadata && "location" in entity_metadata;
   if (tmp) {
     _location = entity_metadata.location;
   }
@@ -41,22 +34,17 @@ export const getLocationFromEvent = function getLocationFromEvent(event) {
 };
 export const getLocationFromEventData = function getLocationFromEventData(guildEvent) {
   const entityMetadata = guildEvent.entityMetadata;
-  let tmp = guildEvent.entityType === constants.EXTERNAL;
-  if (tmp) {
-    tmp = null != entityMetadata;
-  }
-  if (tmp) {
-    tmp = "location" in entityMetadata;
-  }
   let _location = null;
+  const tmp = guildEvent.entityType === map.EXTERNAL && null != entityMetadata && "location" in entityMetadata;
   if (tmp) {
     _location = entityMetadata.location;
   }
   return _location;
 };
 export const getChannelTypeFromEntity = function getChannelTypeFromEntity(entityType) {
-  if (entityType === constants.VOICE) {
-    const tmp2 = React2[entityType];
+  let tmp2;
+  if (entityType === map.VOICE) {
+    tmp2 = React2[entityType];
   }
   return tmp2;
 };

@@ -1,32 +1,39 @@
-// Module ID: 15278
-// Function ID: 15279
+// Module ID: 15334
+// Function ID: 15335
 // Name: SummaryReminderNotificationSetting
-// Dependencies: [7590, 11215, 1115, 2021, 15279, 2]
+// Dependencies: [7634, 558, 15335, 11129, 1126, 2028, 15336, 2]
 
-// Module 15278 (SummaryReminderNotificationSetting)
-import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import SettingsConstants from "SettingsConstants" /* 7590 */;
-import SummaryReminderNotificationUtils from "SummaryReminderNotificationUtils" /* 15279 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 15334 (SummaryReminderNotificationSetting)
+import intl2 from "intl" /* 1126 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import SummaryReminderNotificationExperiment from "SummaryReminderNotificationExperiment" /* 15335 */;
+import SummaryReminderNotificationUtils from "SummaryReminderNotificationUtils" /* 15336 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.xEqC6q);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.xEqC6q);
   },
   useDescription() {
-    const intl = util.intl;
-    return intl.string(util.t.KmVXll);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.KmVXll);
   },
-  parent: SettingsConstants.MobileUserSettings.NOTIFICATIONS,
+  parent: MobileUserSettings.NOTIFICATIONS,
   useValue: UserSettings.EnableSummaryReminderNotifications.useSetting,
   onValueChange: SummaryReminderNotificationUtils.onSummaryReminderNotificationSettingsChanged,
-  usePredicate() {
-    return false;
+  usePredicate: () => {
+    const obj = SummaryReminderNotificationExperiment;
+    return obj.useSummaryReminderNotificationExperiment("tabsV2Settings").showSettingsToggle;
   }
-});
-const result = size.fileFinishedImporting("modules/user_settings/defs/native/SummaryReminderNotificationSetting.tsx");
+};
+const toggle = SettingBuilders.createToggle(obj);
+const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/SummaryReminderNotificationSetting.tsx");
 
 export default toggle;

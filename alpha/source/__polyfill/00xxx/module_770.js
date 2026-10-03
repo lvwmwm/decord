@@ -1,24 +1,37 @@
 // Module ID: 770
 // Function ID: 771
-// Dependencies: [769]
-// Exports: getTraceMetaTags
+// Dependencies: [713, 740]
+// Exports: createCheckInEnvelope
 
 // Module 770
-import _mod769 from "module_769" /* 769 */;
+import _mod713 from "module_713" /* 713 */;
+import _mod740 from "module_740" /* 740 */;
 
-require = arg1;
-const dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const getTraceMetaTags = function getTraceMetaTags(arg0) {
-  let traceData = arg0;
-  if (!arg0) {
-    traceData = _mod769.getTraceData();
+export const createCheckInEnvelope = function createCheckInEnvelope(arg0, trace, sdk, arg3, arg4) {
+  let date;
+  const obj = { sent_at: date.toISOString() };
+  sdk = undefined;
+  date = new Date();
+  if (sdk != null) {
+    sdk = sdk.sdk;
   }
-  const entries = Object.entries(traceData);
-  const mapped = entries.map((item) => {
-    [tmp, tmp2] = item;
-    return "<meta name=\"" + tmp + "\" content=\"" + tmp2 + "\"/>";
-  });
-  return mapped.join("\n");
+  if (sdk) {
+    const obj2 = { name: sdk.sdk.name, version: sdk.sdk.version };
+    obj.sdk = obj2;
+  }
+  const tmp2 = arg3 && arg4;
+  if (tmp2) {
+    const obj4 = _mod713;
+    obj.dsn = obj4.dsnToString(arg4);
+  }
+  const tmp5 = trace;
+  if (tmp5) {
+    obj.trace = trace;
+  }
+  const items = [{ type: "check_in" }, arg0];
+  const items1 = [items];
+  const obj5 = _mod740;
+  return obj5.createEnvelope(obj, items1);
 };

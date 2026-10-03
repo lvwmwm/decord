@@ -1,9 +1,9 @@
 // Module ID: 15377
 // Function ID: 15378
-// Dependencies: [1121]
+// Dependencies: [7973]
 
 // Module 15377
-import registerAsset from "module_1121" /* 1121 */;
+const require = globalThis.__r;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "fa8fba4f08666ddc130e1c29719257b7", name: "PawPrintIcon", type: "png" });
+export const WebView = require("WebView").WebView;

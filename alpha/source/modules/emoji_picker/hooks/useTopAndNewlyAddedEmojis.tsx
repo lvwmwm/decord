@@ -1,60 +1,125 @@
-// Module ID: 9937
-// Function ID: 9938
+// Module ID: 9874
+// Function ID: 9875
 // Name: useTopAndNewlyAddedEmojis
-// Dependencies: [5957, 1375, 563, 2]
-// Exports: default, getTopAndNewlyAddedEmojis
+// Dependencies: [5638, 1380, 558, 576, 573, 2]
+// Exports: getTopAndNewlyAddedEmojis
 
-// Module 9937 (useTopAndNewlyAddedEmojis)
-import EmojiStore from "EmojiStore" /* 5957 */;
+// Module 9874 (useTopAndNewlyAddedEmojis)
+import EmojiConstants from "EmojiConstants" /* 1380 */;
+import EmojiStore from "EmojiStore" /* 5638 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-const require = fn;
-const EmojiIntention = fn(1375).EmojiIntention;
+const EmojiIntention = EmojiConstants.EmojiIntention;
 let closure_4 = [];
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/emoji_picker/hooks/useTopAndNewlyAddedEmojis.tsx");
-
-export default function useTopAndNewlyAddedEmojis(arg0, arg1) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
+  let first;
   _require = arg0;
   dependencyMap = arg1;
-  const items = [EmojiStore];
-  const items1 = [arg0, arg1];
-  return require("useStateFromStores").useStateFromStoresObject(items, () => {
+  const tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [EmojiStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg0) {
+    let tmp6;
+    let tmp7;
+    if (cResult[2] === arg1) {
+      tmp6 = cResult[3];
+      tmp7 = cResult[4];
+    }
+    const tmpResult = tmp(573);
+    return tmpResult.useStateFromStoresObject(first, tmp6, tmp7);
+  }
+  const fn = function c() {
+    let newlyAddedEmoji;
     if (EmojiStore !== undefined) {
-      if (tmp2 !== EmojiIntention.REACTION) {
-        let topEmoji = obj.getTopEmoji(tmp);
+      let topEmoji;
+      const tmp3 = EmojiIntention;
+      if (closure_1 !== EmojiIntention.REACTION) {
+        topEmoji = obj.getTopEmoji(tmp);
       } else {
         topEmoji = closure_4;
       }
-      const obj2 = { topEmojis: topEmoji, newlyAddedEmojis: null };
-      if (tmp2 !== EmojiIntention.REACTION) {
-        let newlyAddedEmoji = obj.getNewlyAddedEmoji(tmp);
+      const obj2 = { topEmojis: topEmoji, newlyAddedEmojis: newlyAddedEmoji };
+      if (closure_1 !== tmp3.REACTION) {
+        newlyAddedEmoji = obj.getNewlyAddedEmoji(tmp);
       } else {
         newlyAddedEmoji = closure_4;
       }
-      obj2.newlyAddedEmojis = newlyAddedEmoji;
+      return obj2;
+    }
+  };
+  const items1 = [arg0, arg1];
+  cResult[1] = arg0;
+  cResult[2] = arg1;
+  cResult[3] = fn;
+  cResult[4] = items1;
+  tmp7 = items1;
+  tmp6 = fn;
+}) : ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
+  _require = arg0;
+  dependencyMap = arg1;
+  const obj = require("useStateFromStores");
+  const items = [EmojiStore];
+  const items1 = [arg0, arg1];
+  return obj.useStateFromStoresObject(items, () => {
+    let newlyAddedEmoji;
+    if (EmojiStore !== undefined) {
+      let topEmoji;
+      const tmp3 = EmojiIntention;
+      if (closure_1 !== EmojiIntention.REACTION) {
+        topEmoji = obj.getTopEmoji(tmp);
+      } else {
+        topEmoji = closure_4;
+      }
+      const obj2 = { topEmojis: topEmoji, newlyAddedEmojis: newlyAddedEmoji };
+      if (closure_1 !== tmp3.REACTION) {
+        newlyAddedEmoji = obj.getNewlyAddedEmoji(tmp);
+      } else {
+        newlyAddedEmoji = closure_4;
+      }
       return obj2;
     }
   }, items1);
-};
-export const getTopAndNewlyAddedEmojis = function getTopAndNewlyAddedEmojis(emojiStoreInstance) {
+});
+function getTopAndNewlyAddedEmojis(emojiStoreInstance) {
+  let guildId;
+  let newlyAddedEmoji;
+  let pickerIntention;
+  let topEmoji;
   emojiStoreInstance = emojiStoreInstance.emojiStoreInstance;
   if (emojiStoreInstance === undefined) {
     emojiStoreInstance = EmojiStore;
   }
   ({ guildId, pickerIntention } = emojiStoreInstance);
+  const tmp = EmojiIntention;
   if (pickerIntention !== EmojiIntention.REACTION) {
-    let topEmoji = emojiStoreInstance.getTopEmoji(guildId);
+    topEmoji = emojiStoreInstance.getTopEmoji(guildId);
   } else {
     topEmoji = closure_4;
   }
-  const obj = { topEmojis: topEmoji, newlyAddedEmojis: null };
-  if (pickerIntention !== EmojiIntention.REACTION) {
-    let newlyAddedEmoji = emojiStoreInstance.getNewlyAddedEmoji(guildId);
+  const obj = { topEmojis: topEmoji, newlyAddedEmojis: newlyAddedEmoji };
+  if (pickerIntention !== tmp.REACTION) {
+    newlyAddedEmoji = emojiStoreInstance.getNewlyAddedEmoji(guildId);
   } else {
     newlyAddedEmoji = closure_4;
   }
-  obj.newlyAddedEmojis = newlyAddedEmoji;
   return obj;
-};
+}
+const result = size.fileFinishedImporting("modules/emoji_picker/hooks/useTopAndNewlyAddedEmojis.tsx");
+
+export default tmp2;
+export { getTopAndNewlyAddedEmojis };

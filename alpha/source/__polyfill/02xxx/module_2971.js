@@ -1,9 +1,0 @@
-// Module ID: 2971
-// Function ID: 2972
-// Dependencies: [1121]
-
-// Module 2971
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/game_server", scales: [1], hash: "b965678ebf8b66d4d84833f3d0cfaba0", name: "GameServer.compiled.messages", type: "jsona" });

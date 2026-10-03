@@ -1,56 +1,211 @@
-// Module ID: 10662
-// Function ID: 10663
+// Module ID: 10736
+// Function ID: 10737
 // Name: useVibegrationsChannelProject
-// Dependencies: [19, 2107, 2066, 4498, 8686, 1074, 5554, 504, 8687, 11, 5555, 2]
-// Exports: default
+// Dependencies: [19, 2112, 2074, 4509, 8699, 1085, 558, 576, 6746, 504, 8700, 11, 6747, 2]
 
-// Module 10662 (useVibegrationsChannelProject)
-import VibegrationsActionCreators from "VibegrationsActionCreators" /* 8687 */;
-import noop from "module_19" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2107 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import PermissionStore from "PermissionStore" /* 4498 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8686 */;
+// Module 10736 (useVibegrationsChannelProject)
+import Constants from "Constants" /* 1085 */;
+import VibegrationsProjectStore2 from "VibegrationsProjectStore" /* 8699 */;
+import VibegrationsActionCreators from "VibegrationsActionCreators" /* 8700 */;
+import react from "react" /* 19 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const isProjectOwner = fn(8686).isProjectOwner;
-const Permissions = fn(1074).Permissions;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/vibegrations/lib/useVibegrationsChannelProject.tsx");
+const VibegrationsProjectStore = VibegrationsProjectStore2;
+let _require, guild_id;
 
-export default function useVibegrationsChannelProject(topic) {
-  topic = undefined;
-  if (topic != null) {
-    topic = topic.topic;
+const isProjectOwner = VibegrationsProjectStore2.isProjectOwner;
+const Permissions = Constants.Permissions;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
+  let closure_0;
+  let stateFromStoresArray;
+  let tmp11;
+  let tmp12;
+  let tmp14;
+  let tmp16;
+  let tmp17;
+  let tmp4;
+  let tmp8;
+  let tmp = _require;
+  const tmp2 = guild_id;
+  let obj = require("react");
+  const cResult = obj.c(27);
+  if (cResult[0] !== guild_id) {
+    const tmpResult = tmp(tmp2[8]);
+    let result = tmpResult.vibegrationsChannelAppId(guild_id);
+    cResult[0] = guild_id;
+    cResult[1] = result;
+    tmp4 = result;
+  } else {
+    tmp4 = cResult[1];
   }
-  let result = require("VibegrationsUtils").vibegrationsAppIdFromTopic(topic);
-  require = result;
-  closure_1 = tmp5;
+  _require = tmp4;
+  const tmp6 = null != tmp4;
+  let closure_1 = tmp6;
   guild_id = undefined;
-  if (topic != null) {
-    guild_id = topic.guild_id;
+  if (guild_id != null) {
+    guild_id = guild_id.guild_id;
   }
   if (guild_id == null) {
     guild_id = null;
   }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [GuildStore, ];
+    let tmp10 = PermissionStore;
+    items[1] = PermissionStore;
+    cResult[2] = items;
+    tmp8 = items;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] !== guild_id) {
+    const fn = function b() {
+      let guild = null;
+      if (null != guild_id) {
+        guild = GuildStore.getGuild(tmp);
+      }
+      const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
+      return canResult;
+    };
+    const items1 = [guild_id];
+    cResult[3] = guild_id;
+    cResult[4] = fn;
+    cResult[5] = items1;
+    tmp12 = items1;
+    tmp11 = fn;
+  } else {
+    tmp11 = cResult[4];
+    tmp12 = cResult[5];
+  }
+  const tmpResult3 = tmp(tmp2[9]);
+  const stateFromStores = tmpResult3.useStateFromStores(tmp8, tmp11, tmp12);
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [stateFromStoresArray];
+    cResult[6] = items2;
+    tmp14 = items2;
+  } else {
+    tmp14 = cResult[6];
+  }
+  if (cResult[7] !== guild_id) {
+    class G {
+      constructor() {
+        let items;
+        if (null != guild_id) {
+          const selfMember = GuildMemberStore.getSelfMember(tmp);
+          let roles;
+          if (selfMember != null) {
+            roles = selfMember.roles;
+          }
+          if (roles == null) {
+            roles = [];
+          }
+          items = roles;
+        } else {
+          items = [];
+        }
+        return items;
+      }
+    }
+    const items3 = [guild_id];
+    cResult[7] = guild_id;
+    cResult[8] = G;
+    cResult[9] = items3;
+    tmp17 = items3;
+    tmp16 = G;
+  } else {
+    class G {
+      constructor() {
+        let items;
+        if (null != guild_id) {
+          const selfMember = GuildMemberStore.getSelfMember(tmp);
+          let roles;
+          if (selfMember != null) {
+            roles = selfMember.roles;
+          }
+          if (roles == null) {
+            roles = [];
+          }
+          items = roles;
+        } else {
+          items = [];
+        }
+        return items;
+      }
+    }
+    tmp17 = cResult[9];
+  }
+  const tmpResult4 = tmp(tmp2[9]);
+  stateFromStoresArray = tmpResult4.useStateFromStoresArray(tmp14, tmp16, tmp17);
+  if (cResult[10] === tmp4) {
+    class G {
+      constructor() {
+        let items;
+        if (null != guild_id) {
+          const selfMember = GuildMemberStore.getSelfMember(tmp);
+          let roles;
+          if (selfMember != null) {
+            roles = selfMember.roles;
+          }
+          if (roles == null) {
+            roles = [];
+          }
+          items = roles;
+        } else {
+          items = [];
+        }
+        return items;
+      }
+    }
+  }
+  class E {
+    constructor() {
+      const tmp = closure_1 && null != closure_0;
+      if (tmp) {
+        const listProjects = VibegrationsActionCreators.listProjects;
+        VibegrationsActionCreators;
+        listProjects(guild_id);
+      }
+    }
+  }
+  cResult[10] = tmp4;
+  cResult[11] = guild_id;
+  cResult[12] = tmp6;
+  cResult[13] = E;
+}) : ((guild_id) => {
+  let require;
+  let stateFromStoresArray;
+  let tmp = require;
+  const tmp2 = guild_id;
   let obj = require("VibegrationsUtils");
+  const result = obj.vibegrationsChannelAppId(guild_id);
+  require = result;
+  let closure_1 = tmp4;
+  guild_id = undefined;
+  if (guild_id != null) {
+    guild_id = guild_id.guild_id;
+  }
+  if (guild_id == null) {
+    guild_id = null;
+  }
   let items = [GuildStore, PermissionStore];
   const items1 = [guild_id];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
+  const tmpResult = tmp(tmp2[9]);
+  const stateFromStores = tmpResult.useStateFromStores(items, () => {
     let guild = null;
     if (null != guild_id) {
       guild = GuildStore.getGuild(tmp);
     }
-    let canResult = null != guild;
-    if (canResult) {
-      canResult = PermissionStore.can(Permissions.MANAGE_GUILD, guild);
-    }
+    const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
     return canResult;
   }, items1);
-  const tmpResult = require("initialize");
   const items2 = [stateFromStoresArray];
   const items3 = [guild_id];
-  stateFromStoresArray = require("initialize").useStateFromStoresArray(items2, () => {
+  const tmpResult3 = tmp(tmp2[9]);
+  stateFromStoresArray = tmpResult3.useStateFromStoresArray(items2, () => {
+    let items;
     if (null != guild_id) {
       const selfMember = GuildMemberStore.getSelfMember(tmp);
       let roles;
@@ -60,57 +215,61 @@ export default function useVibegrationsChannelProject(topic) {
       if (roles == null) {
         roles = [];
       }
-      let items = roles;
+      items = roles;
     } else {
       items = [];
     }
     return items;
   }, items3);
-  const items4 = [null != result, result, guild_id, stateFromStores, stateFromStoresArray];
+  const items4 = [tmp4, result, guild_id, stateFromStores, stateFromStoresArray];
   const effect = stateFromStores.useEffect(() => {
-    let tmp = closure_1;
-    if (closure_1) {
-      tmp = null != result;
-    }
+    const tmp = closure_1 && null != require;
     if (tmp) {
-      VibegrationsActionCreators.listProjects(guild_id);
+      const listProjects = VibegrationsActionCreators.listProjects;
+      VibegrationsActionCreators;
+      listProjects(guild_id);
     }
   }, items4);
-  const tmpResult3 = require("initialize");
   const items5 = [VibegrationsProjectStore];
   const items6 = [result, stateFromStores, stateFromStoresArray, guild_id];
-  return require("initialize").useStateFromStores(items5, () => {
+  const tmpResult4 = tmp(tmp2[9]);
+  return tmpResult4.useStateFromStores(items5, () => {
+    let result1;
     if (null == result1) {
       return null;
     } else {
-      result = VibegrationsProjectStore.findProjectByApplicationId(tmp);
-      if (null != result) {
-        if (!isProjectOwner(result)) {
+      const require = VibegrationsProjectStore.findProjectByApplicationId(tmp);
+      if (null != require) {
+        if (!isProjectOwner(require)) {
           result1 = null;
           if (null != guild_id) {
-            result1 = closure_1(guild_id[9]).castGuildIdAsEveryoneGuildRoleId(tmp2);
-            const obj = closure_1(guild_id[9]);
+            const obj = closure_1(guild_id[11]);
+            result1 = obj.castGuildIdAsEveryoneGuildRoleId(tmp2);
           }
-          let prop = result.collaborator_role_ids;
+          let prop = require.collaborator_role_ids;
           if (prop == null) {
             prop = [];
           }
           let tmp7 = null;
-          if (result.guild_id === guild_id) {
+          if (require.guild_id === guild_id) {
             tmp7 = null;
-            if (obj2.isProjectPublic(result)) {
-              if (stateFromStores) {
-                tmp7 = result;
+            const obj2 = require("VibegrationsTypes");
+            if (obj2.isProjectPublic(require)) {
+              const tmp10 = stateFromStores;
+              if (tmp10) {
+                tmp7 = require;
               } else {
                 tmp7 = null;
               }
             }
-            obj2 = result(guild_id[10]);
           }
           return tmp7;
         }
       }
-      return result;
+      return require;
     }
   }, items6);
-};
+});
+let result = size.fileFinishedImporting("modules/vibegrations/lib/useVibegrationsChannelProject.tsx");
+
+export default tmp2;

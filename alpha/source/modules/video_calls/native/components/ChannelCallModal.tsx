@@ -1,80 +1,215 @@
-// Module ID: 9028
-// Function ID: 9029
+// Module ID: 9056
+// Function ID: 9057
 // Name: ChannelCallModal
-// Dependencies: [32, 19, 4861, 2044, 9022, 9023, 9029, 1074, 21, 9026, 9030, 4721, 9035, 9130, 9032, 9131, 4595, 4730, 12509, 504, 1479, 9031, 12510, 6769, 6789, 12654, 5052, 6259, 9060, 2]
+// Dependencies: [32, 19, 4906, 2051, 9050, 9051, 9057, 1085, 21, 558, 576, 9054, 9058, 4736, 9063, 9154, 9060, 9155, 4612, 4745, 12549, 504, 1484, 9059, 12550, 6657, 6681, 12694, 5097, 6140, 9087, 2]
 
-// Module 9028 (ChannelCallModal)
-import ReanimatedRexport from "ReanimatedRexport" /* 4595 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4721 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5052 */;
-import VoiceChatHooks from "VoiceChatHooks" /* 9026 */;
-import RevealProvider from "RevealProvider" /* 9030 */;
-import CameraPreviewDefault from "CameraPreview" /* 9035 */;
-import ChannelCallModalManagerDefault from "ChannelCallModalManager" /* 9130 */;
-import ChannelCallNavigatorDefault from "ChannelCallNavigator" /* 9131 */;
-import PanGestureAnimations from "PanGestureAnimations" /* 12509 */;
-import RouteManagerUtils from "RouteManagerUtils" /* 12510 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4861 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
+// Module 9056 (ChannelCallModal)
+import react2 from "react" /* 576 */;
+import Constants2 from "Constants" /* 1085 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4736 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5097 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 9051 */;
+import VoiceChatHooks from "VoiceChatHooks" /* 9054 */;
+import RevealProvider from "RevealProvider" /* 9058 */;
+import CameraPreviewDefault from "CameraPreview" /* 9063 */;
+import ChannelCallModalManagerDefault from "ChannelCallModalManager" /* 9154 */;
+import ChannelCallNavigatorDefault from "ChannelCallNavigator" /* 9155 */;
+import PanGestureAnimations from "PanGestureAnimations" /* 12549 */;
+import RouteManagerUtils from "RouteManagerUtils" /* 12550 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelCallStore from "ChannelCallStore" /* 9050 */;
+import Constants from "Constants" /* 9057 */;
+import Fragment from "Fragment" /* 21 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-class ChannelCallCameraPreview {
-  constructor(arg0) {
-    channel = global.channel;
-    tmp3 = closure_2;
-    tmp = useIsVoiceChatFocused();
-    tmp2 = closure_0;
-    obj = closure_0(closure_2[9]);
-    isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
-    tmp5 = useChannelCallStore((focus) => focus.focus);
-    obj2 = closure_0(closure_2[10]);
-    revealProviderValue = obj2.useRevealProviderValue(tmp5, channel);
-    tmp7 = closure_0(closure_2[11]);
-    tmp9 = null;
-    if (isConnectedToVoiceChannel) {
-      tmp10 = jsx;
-      obj1 = { value: null, children: null };
-      obj1.value = revealProviderValue;
-      tmp11 = closure_1;
-      obj5 = { channel: null, participantScreenIsFocused: null, isChannelCallModalOpen: null };
-      obj5.channel = channel;
-      obj5.participantScreenIsFocused = !tmp;
-      obj5.isChannelCallModalOpen = tmp8;
-      obj1.children = jsx(closure_1(tmp3[12]), obj5);
-      tmp9 = jsx(tmp2(tmp3[10]).RevealContext.Provider, obj1);
-    }
-    return tmp9;
-  }
-}
-class ChannelCallModal {
-  constructor(arg0) {
-    channel = global.channel;
-    obj = { channelId: channel.id, guildId: channel.guild_id };
-    return jsx(closure_30, obj);
-  }
-}
-const ChannelCallStore = fn(9022);
-({ useChannelCallOrientationHandlers: closure_7, resetChannelCallStore: closure_8, useChannelCallStore: closure_9, setVoiceChatDrawerState: c10, useIsVoiceChatFocused: closure_11 } = ChannelCallStore);
-let VoiceChatDrawerState = fn(9023).VoiceChatDrawerState;
-const Constants = fn(9029);
+const PanGestureAnimationsDefault = PanGestureAnimations;
+let initializeResult, set;
+
+let c10;
+let c9;
+let closure_14;
+let closure_15;
+let closure_16;
+let map1;
+let metroImportAll;
+let metroImportDefault;
+let unpackModuleId;
+({ useChannelCallOrientationHandlers: metroImportDefault, resetChannelCallStore: metroImportAll, useChannelCallStore: c9, setVoiceChatDrawerState: c10, useIsVoiceChatFocused: unpackModuleId } = ChannelCallStore);
+let VoiceChatDrawerState = ChannelCallConstants.VoiceChatDrawerState;
 ({ PAN_GESTURE_FAIL_OFFSET_Y: map1, SWIPE_TO_CHAT_ACTIVE_OFFSET: closure_14 } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
-let closure_18 = noop.memo((arg0) => {
-  const channel = _slicedToArray(noop.useState(ChannelStore.getChannel(arg0.channelId)), 1)[0];
+const ModalAnimation = Constants2.ModalAnimation;
+({ jsx: closure_15, jsxs: closure_16 } = Fragment);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let first;
+  let obj4;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(7);
+  channel = channel.channel;
+  const tmp4 = unpackModuleId();
+  const obj2 = VoiceChatHooks;
+  const isConnectedToVoiceChannel = obj2.useIsConnectedToVoiceChannel(channel);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function n(focus) {
+      return focus.focus;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  const tmp7 = state(first);
+  const tmpResult = RevealProvider;
+  const revealProviderValue = tmpResult.useRevealProviderValue(tmp7, channel);
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult2 = NavigationRouteUtils;
+    const isModalOpenResult = tmpResult2.isModalOpen(closure_34);
+    cResult[1] = isModalOpenResult;
+    tmp9 = isModalOpenResult;
+  } else {
+    tmp9 = cResult[1];
+  }
+  if (cResult[2] === channel) {
+    if (cResult[3] === isConnectedToVoiceChannel) {
+      if (cResult[4] === tmp4) {
+        let tmp12;
+        if (cResult[5] === revealProviderValue) {
+          tmp12 = cResult[6];
+        }
+        return tmp12;
+      }
+    }
+  }
+  let tmp13 = null;
+  if (isConnectedToVoiceChannel) {
+    const obj3 = { value: revealProviderValue, children: closure_15(CameraPreviewDefault, obj4) };
+    const Provider = tmp(9058).RevealContext.Provider;
+    obj4 = { channel, participantScreenIsFocused: !tmp4, isChannelCallModalOpen: tmp9 };
+    tmp13 = closure_15(Provider, obj3);
+  }
+  cResult[2] = channel;
+  cResult[3] = isConnectedToVoiceChannel;
+  cResult[4] = tmp4;
+  cResult[5] = revealProviderValue;
+  cResult[6] = tmp13;
+  tmp12 = tmp13;
+}) : ((channel) => {
+  let obj4;
+  channel = channel.channel;
+  const tmp = unpackModuleId();
+  const obj = VoiceChatHooks;
+  const isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
+  const tmp5 = state((focus) => focus.focus);
+  const obj2 = RevealProvider;
+  const revealProviderValue = obj2.useRevealProviderValue(tmp5, channel);
+  NavigationRouteUtils;
+  let tmp9 = null;
+  if (isConnectedToVoiceChannel) {
+    const obj3 = { value: revealProviderValue, children: closure_15(CameraPreviewDefault, obj4) };
+    const Provider = RevealProvider.RevealContext.Provider;
+    obj4 = { channel, participantScreenIsFocused: !tmp, isChannelCallModalOpen: tmp8 };
+    tmp9 = closure_15(Provider, obj3);
+  }
+  return tmp9;
+});
+let closure_17 = tmp5;
+const memo = react.memo;
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  let first;
+  let tmp2;
+  let tmp7;
+  let tmp8;
+  let obj = first(576);
+  const cResult = obj.c(7);
+  channelId = channelId.channelId;
+  if (cResult[0] !== channelId) {
+    const channel = ChannelStore.getChannel(channelId);
+    cResult[0] = channelId;
+    cResult[1] = channel;
+    tmp2 = channel;
+  } else {
+    tmp2 = cResult[1];
+  }
+  let obj2 = react;
+  first = _slicedToArray(react.useState(tmp2), 1)[0];
+  closure_7(first);
+  if (cResult[2] !== first) {
+    class C {
+      constructor() {
+        if (null != closure_0) {
+          tmp2 = closure_1;
+          tmp3 = closure_2;
+          obj = closure_1(closure_2[15]);
+          initializeResult = obj.initialize(tmp);
+          return () => { /* body not rendered: F139214 */ };
+        } else {
+          return;
+        }
+      }
+    }
+    const items = [first];
+    cResult[2] = first;
+    cResult[3] = C;
+    cResult[4] = items;
+    tmp8 = items;
+    tmp7 = C;
+  } else {
+    class C {
+      constructor() {
+        if (null != closure_0) {
+          tmp2 = closure_1;
+          tmp3 = closure_2;
+          obj = closure_1(closure_2[15]);
+          initializeResult = obj.initialize(tmp);
+          return () => { /* body not rendered: F139214 */ };
+        } else {
+          return;
+        }
+      }
+    }
+    tmp8 = cResult[4];
+  }
+  const effect = obj2.useEffect(tmp7, tmp8);
+  let tmp10 = null;
+  if (null != first) {
+    class C {
+      constructor() {
+        if (null != closure_0) {
+          tmp2 = closure_1;
+          tmp3 = closure_2;
+          obj = closure_1(closure_2[15]);
+          initializeResult = obj.initialize(tmp);
+          return () => { /* body not rendered: F139214 */ };
+        } else {
+          return;
+        }
+      }
+    }
+    tmp10 = tmp11;
+  }
+  return tmp10;
+}) : ((arg0) => {
+  const channel = _slicedToArray(react.useState(ChannelStore.getChannel(arg0.channelId)), 1)[0];
   closure_7(channel);
   const items = [channel];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     if (null != first) {
-      ChannelCallModalManagerDefault.initialize(tmp);
+      let obj = ChannelCallModalManagerDefault;
+      obj.initialize(tmp);
       return () => {
-        closure_1_1(9130).terminate();
-        const obj = closure_1_1(9130);
-        closure_1_1(9032).setHidden(false);
-        const obj2 = closure_1_1(9032);
-        if (!obj3.isModalOpen(closure_1_31)) {
+        const obj = closure_1_1(closure_1_2[15]);
+        obj.terminate();
+        const obj2 = closure_1_1(closure_1_2[16]);
+        obj2.setHidden(false);
+        const obj3 = channel(closure_1_2[13]);
+        if (!obj3.isModalOpen(closure_1_34)) {
           closure_1_8();
         }
       };
@@ -86,59 +221,179 @@ let closure_18 = noop.memo((arg0) => {
     tmp4 = closure_15(ChannelCallNavigatorDefault, obj);
   }
   return tmp4;
-});
+}));
 const __initData = { code: "function ChannelCallModalTsx1(){const{width}=this.__closure;return[0,-width];}" };
 const __initData2 = { code: "function ChannelCallModalTsx2(){const{runOnJS,dismissKeyboard}=this.__closure;runOnJS(dismissKeyboard)();}" };
-const __initData3 = { code: "function ChannelCallModalTsx3(){const{voiceChatDrawerStoreState}=this.__closure;return voiceChatDrawerStoreState;}" };
-let closure_22 = { code: "function ChannelCallModalTsx4(){const{translateX,width}=this.__closure;translateX.set(-width);}" };
-const __initData4 = { code: "function ChannelCallModalTsx5(){const{isSwipeToChatInProgress,translateX,width,voiceChatDrawerState,VoiceChatDrawerState}=this.__closure;const chatGestureFinished=!isSwipeToChatInProgress.get();const drawerIsInSettledPosition=translateX.get()===-width||translateX.get()===0;const chatOpen=voiceChatDrawerState.get()===VoiceChatDrawerState.OPEN;const chatClosed=voiceChatDrawerState.get()===VoiceChatDrawerState.CLOSED;if(chatGestureFinished&&drawerIsInSettledPosition){return translateX.get()===-width?VoiceChatDrawerState.OPEN:VoiceChatDrawerState.CLOSED;}else if(chatOpen&&translateX.get()>-width){return VoiceChatDrawerState.CLOSING;}else if(chatClosed&&translateX.get()<0){return VoiceChatDrawerState.OPENING;}else{return null;}}" };
-const __initData5 = { code: "function ChannelCallModalTsx6(state,previousState){const{runOnJS,setVoiceChatDrawerState,channelId,VoiceChatDrawerState,transitionToVoiceRoute,guildId}=this.__closure;if(state===previousState)return;if(state!=null&&state!==previousState){runOnJS(setVoiceChatDrawerState)(channelId,state);if(state===VoiceChatDrawerState.OPEN){runOnJS(transitionToVoiceRoute)(guildId,channelId);}}}" };
-const __initData6 = { code: "function ChannelCallModalTsx7(){const{voiceChatDrawerState}=this.__closure;return voiceChatDrawerState.get();}" };
-const __initData7 = { code: "function ChannelCallModalTsx8(drawerState,drawerStatePrev){const{VoiceChatDrawerState,translateX,withPanGestureTiming}=this.__closure;if(drawerState===VoiceChatDrawerState.CLOSED&&drawerStatePrev===VoiceChatDrawerState.OPEN){translateX.set(withPanGestureTiming(0));}}" };
-const __initData8 = { code: "function ChannelCallModalTsx9(){const{interpolate,translateY,maxVerticalTranslate}=this.__closure;return{flex:1,transform:[{translateY:interpolate(translateY.get(),[0,maxVerticalTranslate],[0,maxVerticalTranslate])}]};}" };
-let closure_28 = { code: "function ChannelCallModalTsx10(){const{immediate,translateX,width,withPanGestureTiming}=this.__closure;if(immediate===true){translateX.set(-width);}else{translateX.set(withPanGestureTiming(-width));}}" };
-let closure_29 = { code: "function ChannelCallModalTsx11(){const{translateX,withPanGestureTiming}=this.__closure;translateX.set(withPanGestureTiming(0));}" };
-let closure_30 = noop.memo((channelId) => {
+const __initData3 = { code: "function ChannelCallModalTsx3(){const{width}=this.__closure;return[0,-width];}" };
+const __initData4 = { code: "function ChannelCallModalTsx4(){const{runOnJS,dismissKeyboard}=this.__closure;runOnJS(dismissKeyboard)();}" };
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let enabled;
+  let first;
+  let isGestureInProgress;
+  let translateX;
+  let width;
+  let obj = width(576);
+  const cResult = obj.c(9);
+  ({ translateX, width } = arg0);
+  ({ enabled, isGestureInProgress } = arg0);
+  const fn = function n() {
+    const items = [0, -width];
+    return items;
+  };
+  fn.__closure = { width };
+  fn.__workletHash = 15383459308604;
+  fn.__initData = __initData;
+  const obj2 = width(4612);
+  const derivedValue = obj2.useDerivedValue(fn);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function l() {
+      const obj = width(dependencyMap[18]);
+      obj.runOnJS(width(dependencyMap[19]).dismissKeyboard)();
+    };
+    fn2.__closure = { runOnJS: width(4612).runOnJS, dismissKeyboard: width(4745).dismissKeyboard };
+    fn2.__workletHash = 4086900686382;
+    fn2.__initData = __initData2;
+    cResult[0] = fn2;
+    first = fn2;
+    const obj3 = { runOnJS: width(4612).runOnJS, dismissKeyboard: width(4745).dismissKeyboard };
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === isGestureInProgress) {
+    if (cResult[2] === derivedValue) {
+      if (cResult[3] === -width) {
+        let tmp8;
+        if (cResult[4] === translateX) {
+          tmp8 = cResult[5];
+        }
+        const obj5 = PanGestureAnimationsDefault(tmp8);
+        if (cResult[6] === enabled) {
+          let tmp10;
+          if (cResult[7] === obj5) {
+            tmp10 = cResult[8];
+          }
+          return tmp10;
+        }
+        let items = [-closure_13, closure_13];
+        const items1 = [-closure_14, closure_14];
+        const enabledResult = obj5.enabled(enabled);
+        const failOffsetYResult = enabledResult.failOffsetY(items);
+        const activeOffsetXResult = failOffsetYResult.activeOffsetX(items1);
+        cResult[6] = enabled;
+        cResult[7] = obj5;
+        cResult[8] = activeOffsetXResult;
+        tmp10 = activeOffsetXResult;
+      }
+    }
+  }
+  const obj4 = { lowerBounds: -width, upperBounds: 0, translate: translateX, vertical: false, snapPositions: derivedValue, onStart: first, isGestureInProgress };
+  cResult[1] = isGestureInProgress;
+  cResult[2] = derivedValue;
+  cResult[3] = -width;
+  cResult[4] = translateX;
+  cResult[5] = obj4;
+  tmp8 = obj4;
+}) : ((width) => {
+  let enabled;
+  let isGestureInProgress;
+  let translateX;
+  width = width.width;
+  ({ translateX, enabled, isGestureInProgress } = width);
+  let obj = width(4612);
+  const fn = function u() {
+    const items = [0, -width];
+    return items;
+  };
+  fn.__closure = { width };
+  fn.__workletHash = 11365418877886;
+  fn.__initData = __initData3;
+  const fn2 = function c() {
+    const obj = width(dependencyMap[18]);
+    obj.runOnJS(width(dependencyMap[19]).dismissKeyboard)();
+  };
+  const obj2 = { runOnJS: width(4612).runOnJS, dismissKeyboard: width(4745).dismissKeyboard };
+  const derivedValue = obj.useDerivedValue(fn);
+  const useCallback = react.useCallback;
+  fn2.__closure = obj2;
+  fn2.__workletHash = 17381416484264;
+  fn2.__initData = __initData4;
+  const callback = useCallback(fn2, []);
+  const obj3 = { lowerBounds: -width, upperBounds: 0, translate: translateX, vertical: false, snapPositions: derivedValue, onStart: callback, isGestureInProgress };
+  let items = [-closure_13, closure_13];
+  const obj4 = PanGestureAnimationsDefault(obj3);
+  const items1 = [-closure_14, closure_14];
+  const enabledResult = obj4.enabled(enabled);
+  const failOffsetYResult = enabledResult.failOffsetY(items);
+  return failOffsetYResult.activeOffsetX(items1);
+});
+const __initData5 = { code: "function ChannelCallModalTsx5(){const{voiceChatDrawerStoreState}=this.__closure;return voiceChatDrawerStoreState;}" };
+let closure_25 = { code: "function ChannelCallModalTsx6(){const{translateX,width}=this.__closure;translateX.set(-width);}" };
+const __initData6 = { code: "function ChannelCallModalTsx7(){const{isSwipeToChatInProgress,translateX,width,voiceChatDrawerState,VoiceChatDrawerState}=this.__closure;const chatGestureFinished=!isSwipeToChatInProgress.get();const drawerIsInSettledPosition=translateX.get()===-width||translateX.get()===0;const chatOpen=voiceChatDrawerState.get()===VoiceChatDrawerState.OPEN;const chatClosed=voiceChatDrawerState.get()===VoiceChatDrawerState.CLOSED;if(chatGestureFinished&&drawerIsInSettledPosition){return translateX.get()===-width?VoiceChatDrawerState.OPEN:VoiceChatDrawerState.CLOSED;}else if(chatOpen&&translateX.get()>-width){return VoiceChatDrawerState.CLOSING;}else if(chatClosed&&translateX.get()<0){return VoiceChatDrawerState.OPENING;}else{return null;}}" };
+const __initData7 = { code: "function ChannelCallModalTsx8(state,previousState){const{runOnJS,setVoiceChatDrawerState,channelId,VoiceChatDrawerState,transitionToVoiceRoute,guildId}=this.__closure;if(state===previousState)return;if(state!=null&&state!==previousState){runOnJS(setVoiceChatDrawerState)(channelId,state);if(state===VoiceChatDrawerState.OPEN){runOnJS(transitionToVoiceRoute)(guildId,channelId);}}}" };
+const __initData8 = { code: "function ChannelCallModalTsx9(){const{voiceChatDrawerState}=this.__closure;return voiceChatDrawerState.get();}" };
+const __initData9 = { code: "function ChannelCallModalTsx10(drawerState,drawerStatePrev){const{VoiceChatDrawerState,translateX,withPanGestureTiming}=this.__closure;if(drawerState===VoiceChatDrawerState.CLOSED&&drawerStatePrev===VoiceChatDrawerState.OPEN){translateX.set(withPanGestureTiming(0));}}" };
+const __initData10 = { code: "function ChannelCallModalTsx11(){const{interpolate,translateY,maxVerticalTranslate}=this.__closure;return{flex:1,transform:[{translateY:interpolate(translateY.get(),[0,maxVerticalTranslate],[0,maxVerticalTranslate])}]};}" };
+let closure_31 = { code: "function ChannelCallModalTsx12(){const{immediate,translateX,width,withPanGestureTiming}=this.__closure;if(immediate===true){translateX.set(-width);}else{translateX.set(withPanGestureTiming(-width));}}" };
+let closure_32 = { code: "function ChannelCallModalTsx13(){const{translateX,withPanGestureTiming}=this.__closure;translateX.set(withPanGestureTiming(0));}" };
+let closure_33 = react.memo((channelId) => {
+  let Gesture;
+  let GestureDetector;
+  let Provider;
+  let View;
+  let c12;
+  let c13;
+  let items5;
+  let obj15;
+  let obj16;
+  let obj18;
+  let setIsSwipeToChatDisabled;
+  let tmp15;
+  let tmp25;
   channelId = channelId.channelId;
-  const guildId = channelId.guildId;
+  let guildId = channelId.guildId;
   let ref2;
   let sharedValue;
   let derivedValue;
   c13 = undefined;
   let obj2;
   let ref;
+  const tmp = channelId;
+  let tmp2 = ref;
+  let obj = channelId(ref[21]);
   let items = [sharedValue];
   let items1 = [channelId];
-  const stateFromStores = channelId(ref[19]).useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
+  let obj3 = ref2;
   ref = ref2.useRef(undefined);
   const ref1 = ref2.useRef(undefined);
   ref2 = ref2.useRef(undefined);
   const ref3 = ref2.useRef(undefined);
-  let obj = channelId(ref[19]);
-  sharedValue = channelId(ref[16]).useSharedValue(0);
-  const obj4 = channelId(ref[16]);
-  const sharedValue1 = channelId(ref[16]).useSharedValue(0);
+  const obj4 = channelId(ref[18]);
+  sharedValue = obj4.useSharedValue(0);
+  const obj5 = channelId(ref[18]);
+  const sharedValue1 = obj5.useSharedValue(0);
   const voiceChatDrawerState = derivedValue().voiceChatDrawerState;
-  const obj5 = channelId(ref[16]);
   let fn = function c() {
     return voiceChatDrawerState;
   };
   fn.__closure = { voiceChatDrawerStoreState: voiceChatDrawerState };
-  fn.__workletHash = 4903837231689;
-  fn.__initData = __initData3;
-  derivedValue = channelId(ref[16]).useDerivedValue(fn);
-  const size = guildId(ref[20])();
+  fn.__workletHash = 1850293898191;
+  fn.__initData = __initData5;
+  const obj6 = channelId(ref[18]);
+  derivedValue = obj6.useDerivedValue(fn);
+  size = guildId(ref[22])();
   const width = size.width;
   const height = size.height;
-  const obj6 = channelId(ref[16]);
-  const sharedValue2 = channelId(ref[16]).useSharedValue(false);
+  const obj7 = channelId(ref[18]);
+  const sharedValue2 = obj7.useSharedValue(false);
   let result = 0.8 * height;
   VoiceChatDrawerState = result;
-  const tmp13 = guildId(ref[21])(channelId);
-  const obj7 = channelId(ref[16]);
+  const tmp13 = guildId(ref[23])(channelId);
   [tmp15, c13] = ref1(ref2.useState(false), 2);
   let tmp16 = !tmp13;
-  if (!tmp13) {
+  ref1(ref2.useState(false), 2);
+  if (tmp16) {
     let isGuildStageVoiceResult;
     if (stateFromStores != null) {
       isGuildStageVoiceResult = stateFromStores.isGuildStageVoice();
@@ -148,182 +403,185 @@ let closure_30 = noop.memo((channelId) => {
   obj2 = { channelId, guildId };
   ref = obj3.useRef(obj2);
   const effect = obj3.useEffect(() => {
-    closure_15.current = obj2;
+    ref.current = obj2;
   });
   let items2 = [width, sharedValue];
   const effect1 = obj3.useEffect(() => {
     const current = ref.current;
     channelId = current.channelId;
-    let chatOpen = state.getState().voiceChatDrawerState === VoiceChatDrawerState.OPEN;
-    if (!chatOpen) {
-      chatOpen = ChannelRTCStore.getChatOpen(channelId);
-    }
+    guildId = current.guildId;
+    const chatOpen = derivedValue.getState().voiceChatDrawerState === VoiceChatDrawerState.OPEN || ChannelRTCStore.getChatOpen(channelId);
     if (chatOpen) {
       const fn = function t() {
         const result = sharedValue.set(-width);
       };
       obj2 = { translateX: sharedValue, width };
       fn.__closure = obj2;
-      fn.__workletHash = 15726690166344;
+      fn.__workletHash = 9701831910602;
       fn.__initData = __initData;
-      ReanimatedRexport.runOnUI(fn)();
-      ReanimatedRexport.runOnJS(RouteManagerUtils.transitionToVoiceRoute)(current.guildId, channelId);
+      const obj = ReanimatedRexport;
+      obj.runOnUI(fn)();
+      const obj3 = ReanimatedRexport;
+      obj3.runOnJS(RouteManagerUtils.transitionToVoiceRoute)(guildId, channelId);
     }
   }, items2);
-  const tmp14 = ref1(ref2.useState(false), 2);
-  const tmp10Result = guildId(ref[23]);
-  function ae() {
-    value = sharedValue2.get();
-    let tmp3 = sharedValue.get() === -width;
-    if (!tmp3) {
-      tmp3 = 0 === obj.get();
-    }
+  const tmp10Result = guildId(tmp2[25]);
+  const analyticsLocations = tmp10Result(tmp10(tmp2[26]).CHANNEL_CALL).analyticsLocations;
+  function ee() {
+    let CLOSING;
+    let tmp7;
+    const value = sharedValue2.get();
+    const tmp3 = sharedValue.get() === -width || 0 === obj.get();
     const value3 = derivedValue.get();
+    const OPEN = VoiceChatDrawerState.OPEN;
     const value4 = derivedValue.get();
+    const CLOSED = VoiceChatDrawerState.CLOSED;
     if (!value) {
       if (tmp3) {
-        return obj.get() === -tmp2 ? tmp5.OPEN : tmp5.CLOSED;
+        tmp7 = obj.get() === -tmp2 ? tmp5.OPEN : tmp5.CLOSED;
       }
+      return tmp7;
     }
-    if (value3 !== VoiceChatDrawerState.OPEN) {
-      let OPENING = null;
-      if (value4 === VoiceChatDrawerState.CLOSED) {
-        OPENING = null;
-        if (obj.get() < 0) {
-          OPENING = tmp5.OPENING;
-        }
+    if (value3 === OPEN) {
+      if (sharedValue.get() > -width) {
+        CLOSING = tmp5.CLOSING;
       }
+      tmp7 = CLOSING;
     }
-    OPENING = tmp5.CLOSING;
-  }
-  ae.__closure = { isSwipeToChatInProgress: sharedValue2, translateX: sharedValue, width, voiceChatDrawerState: derivedValue, VoiceChatDrawerState };
-  ae.__workletHash = 16786813095205;
-  ae.__initData = __initData4;
-  function te(arg0, arg1) {
-    let tmp2 = tmp;
-    if (arg0 !== arg1) {
-      tmp2 = null != arg0;
-    }
-    if (tmp2) {
-      tmp2 = tmp;
-    }
-    if (tmp2) {
-      ReanimatedRexport.runOnJS(closure_2_10)(channelId, arg0);
-      if (arg0 === VoiceChatDrawerState.OPEN) {
-        tmp4(4595).runOnJS(tmp4(12510).transitionToVoiceRoute)(guildId, tmp7);
-        const tmp4Result = tmp4(4595);
+    CLOSING = null;
+    if (value4 === CLOSED) {
+      CLOSING = null;
+      if (sharedValue.get() < 0) {
+        CLOSING = tmp5.OPENING;
       }
-      tmp7 = channelId;
     }
   }
   const obj8 = { isSwipeToChatInProgress: sharedValue2, translateX: sharedValue, width, voiceChatDrawerState: derivedValue, VoiceChatDrawerState };
-  const tmpResult = channelId(ref[16]);
-  te.__closure = { runOnJS: channelId(ref[16]).runOnJS, setVoiceChatDrawerState: width, channelId, VoiceChatDrawerState, transitionToVoiceRoute: channelId(ref[22]).transitionToVoiceRoute, guildId };
-  te.__workletHash = 14188334620807;
-  te.__initData = __initData5;
-  const animatedReaction = tmpResult.useAnimatedReaction(ae, te);
-  const obj9 = { runOnJS: channelId(ref[16]).runOnJS, setVoiceChatDrawerState: width, channelId, VoiceChatDrawerState, transitionToVoiceRoute: channelId(ref[22]).transitionToVoiceRoute, guildId };
-  function re() {
+  ee.__closure = obj8;
+  ee.__workletHash = 11845527104167;
+  ee.__initData = __initData6;
+  const fn2 = function $(arg0, arg1) {
+    const tmp2 = tmp && null != arg0 && tmp;
+    if (tmp2) {
+      const obj = ReanimatedRexport;
+      obj.runOnJS(authStore)(channelId, arg0);
+      const tmp7 = channelId;
+      if (arg0 === VoiceChatDrawerState.OPEN) {
+        const tmp4Result = ReanimatedRexport;
+        tmp4Result.runOnJS(RouteManagerUtils.transitionToVoiceRoute)(guildId, tmp7);
+      }
+    }
+  };
+  const tmpResult = tmp(tmp2[18]);
+  fn2.__closure = { runOnJS: tmp(tmp2[18]).runOnJS, setVoiceChatDrawerState: width, channelId, VoiceChatDrawerState, transitionToVoiceRoute: tmp(tmp2[24]).transitionToVoiceRoute, guildId };
+  fn2.__workletHash = 11787615109897;
+  fn2.__initData = __initData7;
+  ({ runOnJS: tmp(tmp2[18]).runOnJS, setVoiceChatDrawerState: width, channelId, VoiceChatDrawerState, transitionToVoiceRoute: tmp(tmp2[24]).transitionToVoiceRoute, guildId });
+  const animatedReaction = tmpResult.useAnimatedReaction(ee, fn2);
+  function ae() {
     return derivedValue.get();
   }
-  re.__closure = { voiceChatDrawerState: derivedValue };
-  re.__workletHash = 14044794538420;
-  re.__initData = __initData6;
-  function ne(arg0, arg1) {
-    let tmp2 = arg0 === VoiceChatDrawerState.CLOSED;
+  ae.__closure = { voiceChatDrawerState: derivedValue };
+  ae.__workletHash = 13861048977978;
+  ae.__initData = __initData8;
+  function te(arg0, arg1) {
+    const tmp2 = arg0 === VoiceChatDrawerState.CLOSED && arg1 === tmp.OPEN;
     if (tmp2) {
-      tmp2 = arg1 === tmp.OPEN;
-    }
-    if (tmp2) {
-      const result = sharedValue.set(PanGestureAnimations.withPanGestureTiming(0));
+      set = sharedValue.set;
+      const obj = PanGestureAnimations;
+      const result = set(obj.withPanGestureTiming(0));
     }
   }
-  const tmpResult4 = channelId(ref[16]);
-  ne.__closure = { VoiceChatDrawerState, translateX: sharedValue, withPanGestureTiming: channelId(ref[18]).withPanGestureTiming };
-  ne.__workletHash = 260500087614;
-  ne.__initData = __initData7;
-  const animatedReaction1 = tmpResult4.useAnimatedReaction(re, ne);
-  let tmp24 = !tmp15;
+  const tmpResult3 = tmp(tmp2[18]);
+  te.__closure = { VoiceChatDrawerState, translateX: sharedValue, withPanGestureTiming: tmp(tmp2[20]).withPanGestureTiming };
+  te.__workletHash = 13290580455783;
+  te.__initData = __initData9;
+  ({ VoiceChatDrawerState, translateX: sharedValue, withPanGestureTiming: tmp(tmp2[20]).withPanGestureTiming });
+  const animatedReaction1 = tmpResult3.useAnimatedReaction(ae, te);
+  const obj11 = { isGestureInProgress: sharedValue2, channelId, width, translateX: sharedValue, enabled: tmp25 };
+  tmp25 = !tmp15;
+  const tmp24 = closure_23;
   if (!tmp15) {
-    tmp24 = !tmp13;
+    tmp25 = !tmp13;
   }
-  closure_129_0 = width;
-  const obj10 = { VoiceChatDrawerState, translateX: sharedValue, withPanGestureTiming: channelId(ref[18]).withPanGestureTiming };
-  const fn2 = function u() {
-    const items = [0, -channelId];
-    return items;
-  };
-  fn2.__closure = { width };
-  fn2.__workletHash = 15383459308604;
-  fn2.__initData = __initData;
-  const fn3 = function c() {
-    channelId(ref[16]).runOnJS(channelId(ref[17]).dismissKeyboard)();
-  };
-  const obj11 = { runOnJS: null, dismissKeyboard: null };
-  const derivedValue1 = channelId(ref[16]).useDerivedValue(fn2);
-  obj11.runOnJS = channelId(ref[16]).runOnJS;
-  obj11.dismissKeyboard = channelId(ref[17]).dismissKeyboard;
-  fn3.__closure = obj11;
-  fn3.__workletHash = 4086900686382;
-  fn3.__initData = __initData2;
-  const callback = obj3.useCallback(fn3, []);
-  const obj12 = { lowerBounds: -width, upperBounds: 0, translate: sharedValue, vertical: false, snapPositions: derivedValue1, onStart: callback, isGestureInProgress: sharedValue2 };
-  const tmpResult5 = channelId(ref[16]);
-  const obj17 = guildId(ref[18])({ lowerBounds: -width, upperBounds: 0, translate: sharedValue, vertical: false, snapPositions: derivedValue1, onStart: callback, isGestureInProgress: sharedValue2 });
-  const items3 = [-c13, c13];
-  const enabledResult = guildId(ref[18])({ lowerBounds: -width, upperBounds: 0, translate: sharedValue, vertical: false, snapPositions: derivedValue1, onStart: callback, isGestureInProgress: sharedValue2 }).enabled(tmp24);
-  const items4 = [-obj2, obj2];
-  const failOffsetYResult = guildId(ref[18])({ lowerBounds: -width, upperBounds: 0, translate: sharedValue, vertical: false, snapPositions: derivedValue1, onStart: callback, isGestureInProgress: sharedValue2 }).enabled(tmp24).failOffsetY(items3);
-  const activeOffsetXResult = guildId(ref[18])({ lowerBounds: -width, upperBounds: 0, translate: sharedValue, vertical: false, snapPositions: derivedValue1, onStart: callback, isGestureInProgress: sharedValue2 }).enabled(tmp24).failOffsetY(items3).activeOffsetX(items4);
-  const obj13 = { gestureEnabled: tmp16, height, maxTranslate: result, thresholdTranslate: 0.5 * height, translateY: sharedValue1 };
-  const withRefResult = guildId(ref[18])({ lowerBounds: -width, upperBounds: 0, translate: sharedValue, vertical: false, snapPositions: derivedValue1, onStart: callback, isGestureInProgress: sharedValue2 }).enabled(tmp24).failOffsetY(items3).activeOffsetX(items4).withRef(ref);
-  const obj22 = guildId(ref[25])({ gestureEnabled: tmp16, height, maxTranslate: result, thresholdTranslate: 0.5 * height, translateY: sharedValue1 });
-  const items5 = [channelId];
-  let result1 = guildId(ref[25])({ gestureEnabled: tmp16, height, maxTranslate: result, thresholdTranslate: 0.5 * height, translateY: sharedValue1 }).withRef(ref3).requireExternalGestureToFail(ref2, ref1);
+  const obj12 = { gestureEnabled: tmp16, height, maxTranslate: result, thresholdTranslate: 0.5 * height, translateY: sharedValue1 };
+  const tmp24Result = tmp24(obj11);
+  const withRefResult = tmp24Result.withRef(ref);
+  const items3 = [channelId];
+  const obj17 = guildId(tmp2[27])(obj12);
+  const withRefResult1 = obj17.withRef(ref3);
+  let result1 = withRefResult1.requireExternalGestureToFail(ref2, ref1);
   const layoutEffect = obj3.useLayoutEffect(() => {
-    const result = PrivateChannelCallUtils.maybeShowAgeGateModal(channelId);
-  }, items5);
-  const withRefResult1 = guildId(ref[25])({ gestureEnabled: tmp16, height, maxTranslate: result, thresholdTranslate: 0.5 * height, translateY: sharedValue1 }).withRef(ref3);
-  function oe() {
-    const obj = { flex: 1, transform: null };
-    obj2 = { translateY: null };
-    const items = [0, c12];
-    const items1 = [0, c12];
-    obj2.translateY = ReanimatedRexport.interpolate(sharedValue1.get(), items, items1);
-    const items2 = [obj2];
-    obj.transform = items2;
+    const obj = PrivateChannelCallUtils;
+    const result = obj.maybeShowAgeGateModal(channelId);
+  }, items3);
+  function se() {
+    let items;
+    let items1;
+    let items2;
+    let obj3;
+    const obj = { flex: 1, transform: items2 };
+    obj2 = { translateY: obj3.interpolate(sharedValue1.get(), items, items1) };
+    items = [0, c12];
+    items1 = [0, c12];
+    items2 = [obj2];
+    obj3 = ReanimatedRexport;
     return obj;
   }
-  const tmpResult6 = channelId(ref[16]);
-  oe.__closure = { interpolate: channelId(ref[16]).interpolate, translateY: sharedValue1, maxVerticalTranslate: result };
-  oe.__workletHash = 8643926178558;
-  oe.__initData = __initData8;
-  const items6 = [ref2, ref3, ref, ref1, sharedValue, width, channelId];
-  const animatedStyle = tmpResult6.useAnimatedStyle(oe);
-  let tmp32 = null;
+  const tmpResult4 = tmp(tmp2[18]);
+  se.__closure = { interpolate: tmp(tmp2[18]).interpolate, translateY: sharedValue1, maxVerticalTranslate: result };
+  se.__workletHash = 8383937622055;
+  se.__initData = __initData10;
+  const items4 = [ref2, ref3, ref, ref1, sharedValue, width, channelId];
+  ({ interpolate: tmp(tmp2[18]).interpolate, translateY: sharedValue1, maxVerticalTranslate: result });
+  const animatedStyle = tmpResult4.useAnimatedStyle(se);
+  let tmp31 = null;
   if (null != stateFromStores) {
-    const obj15 = { value: tmp10Result(tmp10(tmp2[24]).CHANNEL_CALL).analyticsLocations, children: null };
-    const obj16 = { gesture: null, children: null };
-    const Gesture = tmp(tmp2[27]).Gesture;
-    obj16.gesture = Gesture.Exclusive(withRefResult, result1);
-    const obj18 = { style: animatedStyle, children: null };
-    const obj19 = { value: tmp31, children: null };
-    const obj20 = { channelId };
-    const items7 = [ref(closure_18, obj20), ];
-    const obj21 = { channel: stateFromStores };
-    items7[1] = ref(ChannelCallCameraPreview, obj21);
-    obj19.children = items7;
-    obj18.children = closure_16(tmp(tmp2[28]).VoiceChatNavigationContext.Provider, obj19);
-    obj16.children = ref(tmp10(tmp2[16]).View, obj18);
-    obj15.children = ref(tmp(tmp2[27]).GestureDetector, obj16);
-    tmp32 = ref(tmp(tmp2[23]).AnalyticsLocationProvider, obj15);
+    const obj14 = { value: analyticsLocations, children: ref(GestureDetector, obj15) };
+    const AnalyticsLocationProvider = tmp(tmp2[25]).AnalyticsLocationProvider;
+    obj15 = { gesture: Gesture.Exclusive(withRefResult, result1), children: ref(View, obj16) };
+    GestureDetector = tmp(tmp2[29]).GestureDetector;
+    Gesture = tmp(tmp2[29]).Gesture;
+    obj16 = { style: animatedStyle, children: closure_16(Provider, obj18) };
+    View = tmp10(tmp2[18]).View;
+    obj18 = { value: tmp30, children: items5 };
+    const obj19 = { channelId };
+    Provider = tmp(tmp2[30]).VoiceChatNavigationContext.Provider;
+    items5 = [ref(closure_18, obj19), ];
+    const obj20 = { channel: stateFromStores };
+    items5[1] = ref(closure_17, obj20);
+    tmp31 = ref(AnalyticsLocationProvider, obj14);
   }
-  return tmp32;
+  return tmp31;
 });
-ChannelCallModal.modalConfig = { animation: fn(1074).ModalAnimation.SLIDE_UP, shouldPersistUnderModals: true };
-let size = fn(2);
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  const obj = react2;
+  const cResult = obj.c(3);
+  channel = channel.channel;
+  if (cResult[0] === channel.guild_id) {
+    let tmp2;
+    if (cResult[1] === channel.id) {
+      tmp2 = cResult[2];
+    }
+    return tmp2;
+  }
+  const obj2 = { channelId: channel.id, guildId: channel.guild_id };
+  const tmp3 = closure_15(closure_33, obj2);
+  cResult[0] = channel.guild_id;
+  cResult[1] = channel.id;
+  cResult[2] = tmp3;
+  tmp2 = tmp3;
+}) : ((channel) => {
+  channel = channel.channel;
+  const obj = { channelId: channel.id, guildId: channel.guild_id };
+  return closure_15(closure_33, obj);
+});
+let closure_34 = tmp6;
+tmp6.modalConfig = { animation: ModalAnimation.SLIDE_UP, shouldPersistUnderModals: true };
+let size = size_mod;
 let result = size.fileFinishedImporting("modules/video_calls/native/components/ChannelCallModal.tsx");
 
-export default ChannelCallModal;
-export { ChannelCallCameraPreview };
-export { ChannelCallModal };
+export default tmp6;
+export const ChannelCallCameraPreview = tmp5;
+export const ChannelCallModal = tmp6;

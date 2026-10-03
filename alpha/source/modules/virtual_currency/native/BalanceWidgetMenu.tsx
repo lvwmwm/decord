@@ -1,151 +1,328 @@
-// Module ID: 15510
-// Function ID: 15511
+// Module ID: 15571
+// Function ID: 15572
 // Name: BalanceWidgetMenu
-// Dependencies: [19, 1074, 1076, 2041, 5942, 21, 6103, 4841, 1115, 10281, 2029, 1241, 10883, 5945, 15511, 8503, 4809, 10764, 1981, 6789, 7149, 10763, 4683, 5481, 2]
-// Exports: default
+// Dependencies: [19, 1085, 1087, 2048, 5623, 21, 558, 576, 4886, 1126, 5993, 2036, 10354, 1252, 10908, 5626, 15572, 8508, 4854, 11011, 1987, 6681, 7052, 11010, 4698, 5609, 2]
 
-// Module 15510 (BalanceWidgetMenu)
-import util from "util" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import dismissible_content from "dismissible_content" /* 2029 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4683 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import QuestTypes from "QuestTypes" /* 5945 */;
-import TableRow from "TableRow" /* 6103 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6789 */;
-import _mod8503 from "module_8503" /* 8503 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10281 */;
-import BalanceWidgetPillButtonDefault from "BalanceWidgetPillButton" /* 10763 */;
-import QuestUtils from "QuestUtils" /* 10883 */;
-import noop from "module_19" /* 19 */;
+// Module 15571 (BalanceWidgetMenu)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1085 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
+import intl3 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4698 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import QuestConstants from "QuestConstants" /* 5623 */;
+import QuestTypes from "QuestTypes" /* 5626 */;
+import TableRow2 from "TableRow" /* 5993 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
+import _mod8508 from "module_8508" /* 8508 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10354 */;
+import QuestUtils from "QuestUtils" /* 10908 */;
+import BalanceWidgetPillButtonDefault from "BalanceWidgetPillButton" /* 11010 */;
+import react from "react" /* 19 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-function OrbsBalanceRow(isBusy) {
-  let flag = isBusy.isBusy;
-  ({ onPress, accessibilityLabel, trailing } = isBusy);
-  if (flag === undefined) {
-    flag = false;
-  }
-  const obj = { label: null, accessibilityLabel: null, accessibilityState: null, onPress: null, trailing: null, start: true, end: true };
-  const obj2 = { variant: "text-sm/semibold", color: "text-default", children: null };
-  const intl = util.intl;
-  obj2.children = intl.string(util.t.gGtZpz);
-  obj.label = jsx(Text_Text.Text, { variant: "text-sm/semibold", color: "text-default", children: null });
-  obj.accessibilityLabel = accessibilityLabel;
-  let obj3;
-  if (flag) {
-    obj3 = { busy: true };
-  }
-  obj.accessibilityState = obj3;
-  obj.onPress = onPress;
-  obj.trailing = trailing;
-  return jsx(TableRow.TableRow, { label: null, accessibilityLabel: null, accessibilityState: null, onPress: null, trailing: null, start: true, end: true });
-}
-class OrbsOnboardingMenuDismissibleContent {
-  constructor() {
-    obj = { contentTypes: null, groupName: null, children: null };
-    tmp = closure_1(closure_2[9]);
-    items = [];
-    items[0] = closure_0(closure_2[10]).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL;
-    obj.contentTypes = items;
-    obj.groupName = closure_7.VIRTUAL_CURRENCY_MOBILE_ONBOARDING;
-    obj.children = function children(markAsDismissed) {
-      markAsDismissed = markAsDismissed.markAsDismissed;
-      if (markAsDismissed.visibleContent === markAsDismissed(2029).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL) {
-        let obj = { accessibilityLabel: null, onPress: null, trailing: null };
-        const intl = tmp(1115).intl;
-        obj.accessibilityLabel = intl.string(tmp(1115).t.Kt2QDh);
-        obj.onPress = function onPress() {
-          markAsDismissed(constants2.TAKE_ACTION);
-          AnalyticsUtilsDefault.track(constants.USER_PROFILE_ACTION, { profile_action: "ORBS_BALANCE_PRESSED" });
-          const obj2 = QuestUtils;
-          obj2.openQuestHome({ filter: constants3.VIRTUAL_CURRENCY, fromContent: QuestTypes.QuestContent.MOBILE_ORBS_ONBOARDING_DC });
-        };
-        obj.trailing = closure_9(closure_1(15511), {});
-        return closure_9(closure_10, obj);
-      } else {
-        return null;
+let metroImportDefault;
+let metroRequire;
+let tmp;
+const dismissible_content = tmp(2036);
+function BalanceWidgetMenu() {
+  let constants2;
+  let constants3;
+  let str;
+  let obj = str(8508);
+  str = obj.useFetchVirtualCurrencyBalance().balance;
+  let items = [str];
+  const callback = react.useCallback(() => {
+    let balance;
+    let intl;
+    let intl2;
+    let obj3;
+    let obj4;
+    let paths;
+    let obj = AnalyticsUtilsDefault;
+    obj.track(AnalyticEvents.USER_PROFILE_ACTION, { profile_action: "ORBS_BALANCE_PRESSED" });
+    let obj2 = { balance: str, primaryButtonConfig: obj3, secondaryButtonConfig: obj4, source: AnalyticsLocationDefault.YOU_SCREEN };
+    obj3 = {
+      buttonText: intl.string(intl3.t.WrzJBf),
+      onButtonPress() {
+        let items;
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { type: "GO_TO_SHOP", source: AnalyticsLocationDefault.YOU_SCREEN, balance };
+        obj.track(constants.ORB_BALANCE_ACTION_SHEET_ACTION, obj2);
+        const obj3 = ActionSheetActionCreatorsDefault;
+        obj3.hideActionSheet();
+        const obj4 = { analyticsLocations: items, analyticsSource: AnalyticsLocationDefault.COLLECTIBLES_SHOP, screen: constants2.ORBS };
+        const openCollectiblesShopMobile = str(dependencyMap[22]).openCollectiblesShopMobile;
+        items = [];
+        str(dependencyMap[22]);
+        items[0] = AnalyticsLocationDefault.COLLECTIBLES_SHOP;
+        const result = openCollectiblesShopMobile(obj4);
       }
     };
-    return jsx(tmp, obj);
-  }
-}
-function BalanceWidgetMenu() {
-  str = str(8503).useFetchVirtualCurrencyBalance().balance;
-  let items = [str];
-  const callback = noop.useCallback(() => {
-    AnalyticsUtilsDefault.track(AnalyticEvents.USER_PROFILE_ACTION, { profile_action: "ORBS_BALANCE_PRESSED" });
-    let obj3 = { balance: str, primaryButtonConfig: null, secondaryButtonConfig: null, source: null };
-    let obj4 = { buttonText: null, onButtonPress: null };
-    const intl = util.intl;
-    obj4.buttonText = intl.string(util.t.WrzJBf);
-    obj4.onButtonPress = function onButtonPress() {
-      const obj = AnalyticsUtilsDefault;
-      obj.track(constants.ORB_BALANCE_ACTION_SHEET_ACTION, { type: "GO_TO_SHOP", source: AnalyticsLocationDefault.YOU_SCREEN, balance });
-      const obj2 = { type: "GO_TO_SHOP", source: AnalyticsLocationDefault.YOU_SCREEN, balance };
-      ActionSheetActionCreatorsDefault.hideActionSheet();
-      const obj5 = { analyticsLocations: null, analyticsSource: null, screen: null };
-      const items = [AnalyticsLocationDefault.COLLECTIBLES_SHOP];
-      obj5.analyticsLocations = items;
-      obj5.analyticsSource = AnalyticsLocationDefault.COLLECTIBLES_SHOP;
-      obj5.screen = constants2.ORBS;
-      const result = str(7149).openCollectiblesShopMobile(obj5);
+    const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+    ActionSheetActionCreatorsDefault;
+    intl = intl3.intl;
+    obj4 = {
+      buttonText: intl2.string(intl3.t.SymzJC),
+      onButtonPress() {
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { type: "GO_TO_QUEST_HOME", source: AnalyticsLocationDefault.YOU_SCREEN, balance };
+        obj.track(constants.ORB_BALANCE_ACTION_SHEET_ACTION, obj2);
+        const obj3 = ActionSheetActionCreatorsDefault;
+        obj3.hideActionSheet();
+        const obj4 = str(dependencyMap[14]);
+        const obj5 = { mergeExistingRoutes: true, filter: constants3.VIRTUAL_CURRENCY, fromContent: str(dependencyMap[15]).QuestContent.ORBS_BALANCE_MENU };
+        obj4.openQuestHome(obj5);
+      }
     };
-    obj3.primaryButtonConfig = obj4;
-    let obj5 = { buttonText: null, onButtonPress: null };
-    const intl2 = util.intl;
-    obj5.buttonText = intl2.string(util.t.SymzJC);
-    obj5.onButtonPress = function onButtonPress() {
-      const obj = AnalyticsUtilsDefault;
-      obj.track(constants.ORB_BALANCE_ACTION_SHEET_ACTION, { type: "GO_TO_QUEST_HOME", source: AnalyticsLocationDefault.YOU_SCREEN, balance });
-      const obj2 = { type: "GO_TO_QUEST_HOME", source: AnalyticsLocationDefault.YOU_SCREEN, balance };
-      ActionSheetActionCreatorsDefault.hideActionSheet();
-      const obj4 = str(10883);
-      obj4.openQuestHome({ mergeExistingRoutes: true, filter: constants3.VIRTUAL_CURRENCY, fromContent: str(5945).QuestContent.ORBS_BALANCE_MENU });
-    };
-    obj3.secondaryButtonConfig = obj5;
-    obj3.source = AnalyticsLocationDefault.YOU_SCREEN;
-    ActionSheetActionCreatorsDefault.openLazy(() => balance(paths[18])(paths[17], paths.paths).then((result) => result.default), "BalanceWidgetMenu", obj3);
+    intl2 = intl3.intl;
+    openLazy(() => {
+      const promise = balance(paths[20])(paths[19], paths.paths);
+      return promise.then((result) => result.default);
+    }, "BalanceWidgetMenu", obj2);
   }, items);
-  let intl = str(1115).intl;
+  const tmp3 = jsx;
+  let intl = str(1126).intl;
+  const formatToPlainString = intl.formatToPlainString;
   let str2;
+  const zPaLL9 = str(1126).t.zPaLL9;
+  const tmp4 = closure_10;
   if (str != null) {
     str2 = str.toString();
   }
   if (str2 == null) {
     str2 = "";
   }
-  let obj = str(8503);
-  return <tmp4 accessibilityLabel={intl.formatToPlainString(str(1115).t.zPaLL9, { balance: str2 })} onPress={callback} trailing={jsx(BalanceWidgetPillButtonDefault, { balance: str, onPress: callback, accessible: false })} />;
+  let obj2 = { accessibilityLabel: formatToPlainString(zPaLL9, { balance: str2 }), onPress: callback, trailing: tmp3(BalanceWidgetPillButtonDefault, { balance: str, onPress: callback, accessible: false }) };
+  return tmp3(tmp4, obj2);
 }
-const AnalyticEvents = fn(1074).AnalyticEvents;
-let closure_5 = fn(1076).CollectiblesMobileShopScreen;
-const DismissibleContentConstants = fn(2041);
-({ ContentDismissActionType: metroRequire, DismissibleContentGroupName: closure_7 } = DismissibleContentConstants);
-const RewardFilterTypes = fn(5942).RewardFilterTypes;
-const jsx = fn(21).jsx;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/virtual_currency/native/BalanceWidgetMenu.tsx");
-
-export default function BalanceWidgetMenuWrapper() {
-  const balance = _mod8503.useFetchVirtualCurrencyBalance().balance;
+const AnalyticEvents = Constants.AnalyticEvents;
+let closure_5 = CollectiblesShopConstants.CollectiblesMobileShopScreen;
+({ ContentDismissActionType: metroRequire, DismissibleContentGroupName: metroImportDefault } = DismissibleContentConstants);
+const RewardFilterTypes = QuestConstants.RewardFilterTypes;
+const jsx = Fragment.jsx;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let accessibilityLabel;
+  let first;
+  let isBusy;
+  let onPress;
+  let tmp8;
+  let trailing;
+  const obj = react2;
+  const cResult = obj.c(8);
+  ({ onPress, accessibilityLabel, trailing, isBusy } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const Text = tmp(4886).Text;
+    const intl = tmp(1126).intl;
+    const tmp7 = <Text variant="text-sm/semibold" color="text-default">{intl.string(intl3.t.gGtZpz)}</Text>;
+    cResult[0] = tmp7;
+    first = tmp7;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== (undefined !== isBusy && isBusy)) {
+    let obj3;
+    if (undefined !== isBusy && isBusy) {
+      obj3 = { busy: true };
+    }
+    cResult[1] = undefined !== isBusy && isBusy;
+    cResult[2] = obj3;
+    tmp8 = obj3;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] === accessibilityLabel) {
+    if (cResult[4] === onPress) {
+      if (cResult[5] === tmp8) {
+        let tmp9;
+        if (cResult[6] === trailing) {
+          tmp9 = cResult[7];
+        }
+        return tmp9;
+      }
+    }
+  }
+  const tmp10 = jsx(TableRow2.TableRow, { label: first, accessibilityLabel, accessibilityState: tmp8, onPress, trailing, start: true, end: true });
+  cResult[3] = accessibilityLabel;
+  cResult[4] = onPress;
+  cResult[5] = tmp8;
+  cResult[6] = trailing;
+  cResult[7] = tmp10;
+  tmp9 = tmp10;
+}) : ((isBusy) => {
+  let accessibilityLabel;
+  let intl;
+  let obj3;
+  let onPress;
+  let trailing;
+  let flag = isBusy.isBusy;
+  ({ onPress, accessibilityLabel, trailing } = isBusy);
+  if (flag === undefined) {
+    flag = false;
+  }
+  const obj = { label: null, accessibilityLabel, accessibilityState: obj3, onPress, trailing, start: true, end: true };
+  const TableRow = TableRow2.TableRow;
+  ({ variant: "text-sm/semibold", color: "text-default", children: intl.string(intl3.t.gGtZpz) });
+  const Text = Text_Text.Text;
+  intl = intl3.intl;
+  obj3 = undefined;
+  const tmp = jsx;
+  if (flag) {
+    obj3 = { busy: true };
+  }
+  return tmp(TableRow, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let constants2;
+  let constants3;
+  let first;
+  let tmp5;
+  const tmp2 = dependencyMap;
+  const tmp = require;
+  let obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [dismissible_content.DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp9 = jsx(SelectedDismissibleContentDefault, {
+      contentTypes: first,
+      groupName: metroImportDefault.VIRTUAL_CURRENCY_MOBILE_ONBOARDING,
+      children(markAsDismissed) {
+          let intl;
+          markAsDismissed = markAsDismissed.markAsDismissed;
+          if (markAsDismissed.visibleContent === markAsDismissed(closure_2[11]).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL) {
+            let obj = {
+              accessibilityLabel: intl.string(tmp(closure_2[9]).t.Kt2QDh),
+              onPress() {
+                  markAsDismissed(constants2.TAKE_ACTION);
+                  const obj = AnalyticsUtilsDefault;
+                  obj.track(constants.USER_PROFILE_ACTION, { profile_action: "ORBS_BALANCE_PRESSED" });
+                  const obj2 = QuestUtils;
+                  const obj3 = { filter: constants3.VIRTUAL_CURRENCY, fromContent: QuestTypes.QuestContent.MOBILE_ORBS_ONBOARDING_DC };
+                  obj2.openQuestHome(obj3);
+                },
+              trailing: closure_9(closure_1(closure_2[16]), {})
+            };
+            intl = tmp(tmp2[9]).intl;
+            return closure_9(closure_10, obj);
+          } else {
+            return null;
+          }
+        }
+    });
+    cResult[1] = tmp9;
+    tmp5 = tmp9;
+  } else {
+    tmp5 = cResult[1];
+  }
+  return tmp5;
+}) : (() => {
+  let constants2;
+  let constants3;
+  const tmp = SelectedDismissibleContentDefault;
+  const items = [dismissible_content.DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL];
+  return <tmp contentTypes={items} groupName={metroImportDefault.VIRTUAL_CURRENCY_MOBILE_ONBOARDING}>{function children(markAsDismissed) {
+    let intl;
+    markAsDismissed = markAsDismissed.markAsDismissed;
+    if (markAsDismissed.visibleContent === markAsDismissed(closure_2[11]).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL) {
+      let obj = {
+        accessibilityLabel: intl.string(tmp(closure_2[9]).t.Kt2QDh),
+        onPress() {
+            markAsDismissed(constants2.TAKE_ACTION);
+            const obj = AnalyticsUtilsDefault;
+            obj.track(constants.USER_PROFILE_ACTION, { profile_action: "ORBS_BALANCE_PRESSED" });
+            const obj2 = QuestUtils;
+            const obj3 = { filter: constants3.VIRTUAL_CURRENCY, fromContent: QuestTypes.QuestContent.MOBILE_ORBS_ONBOARDING_DC };
+            obj2.openQuestHome(obj3);
+          },
+        trailing: closure_9(closure_1(closure_2[16]), {})
+      };
+      intl = tmp(tmp2[9]).intl;
+      return closure_9(closure_10, obj);
+    } else {
+      return null;
+    }
+  }}</tmp>;
+});
+let closure_11 = tmp3;
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(3);
+  const obj2 = _mod8508;
+  const balance = obj2.useFetchVirtualCurrencyBalance().balance;
   DismissibleContentUnsafeUtils;
   if (null == balance) {
-    const obj2 = { accessibilityLabel: null, trailing: null, isBusy: true };
-    const intl = tmp(1115).intl;
-    obj2.accessibilityLabel = intl.string(tmp(1115).t.cKwv4k);
-    obj2.trailing = jsx(tmp(5481).Ellipsis, { variant: "primary", size: "sm" });
-    let tmp5Result = <OrbsBalanceRow accessibilityLabel={null} trailing={null} isBusy />;
+    let first;
+    const _Symbol3 = Symbol;
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1126).intl;
+      const tmp20 = <closure_10 accessibilityLabel={intl.string(intl3.t.cKwv4k)} trailing={null} isBusy />;
+      cResult[0] = tmp20;
+      first = tmp20;
+    } else {
+      first = cResult[0];
+    }
+    tmp7 = first;
+  } else {
+    let tmp12;
+    if (balance <= 0) {
+      if (!tmp5) {
+        const _Symbol = Symbol;
+        if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+          const tmp10 = <closure_11 />;
+          cResult[2] = tmp10;
+          tmp7 = tmp10;
+        } else {
+          tmp7 = cResult[2];
+        }
+      }
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+      const tmp15 = <BalanceWidgetMenu />;
+      cResult[1] = tmp15;
+      tmp12 = tmp15;
+    } else {
+      tmp12 = cResult[1];
+    }
+    tmp7 = tmp12;
+  }
+  return tmp7;
+}) : (() => {
+  let tmp5Result;
+  const obj = _mod8508;
+  const balance = obj.useFetchVirtualCurrencyBalance().balance;
+  DismissibleContentUnsafeUtils;
+  if (null == balance) {
+    const intl = tmp(1126).intl;
+    tmp5Result = <closure_10 accessibilityLabel={intl.string(intl3.t.cKwv4k)} trailing={null} isBusy />;
   } else {
     if (balance <= 0) {
+      let tmp6;
       if (!tmp4) {
-        let tmp6 = OrbsOnboardingMenuDismissibleContent;
+        tmp6 = closure_11;
       }
       tmp5Result = tmp5(tmp6, {});
     }
     tmp6 = BalanceWidgetMenu;
   }
   return tmp5Result;
-};
-export { OrbsOnboardingMenuDismissibleContent };
+});
+let result = size.fileFinishedImporting("modules/virtual_currency/native/BalanceWidgetMenu.tsx");
+
+export default tmp4;
+export const OrbsOnboardingMenuDismissibleContent = tmp3;

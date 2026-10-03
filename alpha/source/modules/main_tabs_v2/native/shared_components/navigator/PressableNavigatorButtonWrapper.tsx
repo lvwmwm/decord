@@ -1,33 +1,56 @@
-// Module ID: 7465
-// Function ID: 7466
+// Module ID: 7504
+// Function ID: 7505
 // Name: PressableNavigatorButtonWrapper
-// Dependencies: [17, 7463, 21, 4845, 576, 2]
-// Exports: default
+// Dependencies: [17, 7499, 21, 4890, 587, 558, 576, 2]
 
-// Module 7465 (PressableNavigatorButtonWrapper)
-import _mod17 from "module_17" /* 17 */;
-import jsxProd from "jsxProd" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import MainTabsV2Constants from "MainTabsV2Constants" /* 7463 */;
-import createStyles from "createStyles" /* 4845 */;
+// Module 7504 (PressableNavigatorButtonWrapper)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import react_native2 from "react-native" /* 7499 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-const View = _mod17.View;
-const MIN_HEADER_HEIGHT = MainTabsV2Constants.MIN_HEADER_HEIGHT;
-const jsx = jsxProd.jsx;
-const obj = { buttonWrapper: null, buttonWrapperModal: null };
-let size = { flexShrink: 0, flexDirection: "row", alignItems: "center", padding: nativeDefault.space.PX_8, height: MIN_HEADER_HEIGHT, width: MIN_HEADER_HEIGHT };
-obj.buttonWrapper = size;
-obj.buttonWrapperModal = { marginLeft: -8 };
-let closure_2 = createStyles.createStyles(obj);
-let size = size_mod;
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorButtonWrapper.tsx");
-
-export default function PressableNavigatorButtonWrapper(children) {
-  let flag = children.isModal;
+let size;
+const View = react_native.View;
+const MIN_HEADER_HEIGHT = react_native2.MIN_HEADER_HEIGHT;
+const jsx = Fragment.jsx;
+let obj = { buttonWrapper: size, buttonWrapperModal: { marginLeft: -8 } };
+size = { flexShrink: 0, flexDirection: "row", alignItems: "center", padding: nativeDefault.space.PX_8, height: MIN_HEADER_HEIGHT, width: MIN_HEADER_HEIGHT };
+let closure_4 = createStyles.createStyles(obj);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let children;
+  let isModal;
+  const obj = react;
+  const cResult = obj.c(3);
+  ({ children, isModal } = arg0);
+  const tmp2 = undefined !== isModal && isModal;
+  const tmp3 = closure_4();
+  const tmp4 = tmp2 ? tmp3.buttonWrapperModal : tmp3.buttonWrapper;
+  if (cResult[0] === children) {
+    let tmp5;
+    if (cResult[1] === tmp4) {
+      tmp5 = cResult[2];
+    }
+    return tmp5;
+  }
+  const tmp6 = <View collapsable={false} style={tmp4} importantForAccessibility="yes">{children}</View>;
+  cResult[0] = children;
+  cResult[1] = tmp4;
+  cResult[2] = tmp6;
+  tmp5 = tmp6;
+}) : ((isModal) => {
+  let flag = isModal.isModal;
+  const children = isModal.children;
   if (flag === undefined) {
     flag = false;
   }
-  const tmp = closure_2();
-  return <View collapsable={false} style={flag ? tmp.buttonWrapperModal : tmp.buttonWrapper} importantForAccessibility="yes">{arg0.children}</View>;
-};
+  const tmp = closure_4();
+  return <View collapsable={false} style={flag ? tmp.buttonWrapperModal : tmp.buttonWrapper} importantForAccessibility="yes">{children}</View>;
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorButtonWrapper.tsx");
+
+export default tmp2;

@@ -1,33 +1,33 @@
-// Module ID: 5039
-// Function ID: 5040
+// Module ID: 5084
+// Function ID: 5085
 // Name: QualtricsResponseStore
-// Dependencies: [560, 2]
+// Dependencies: [570, 2]
 
-// Module 5039 (QualtricsResponseStore)
-import module_560 from "module_560" /* 560 */;
+// Module 5084 (QualtricsResponseStore)
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/qualtrics/QualtricsResponseStore.tsx");
+let responses, set;
 
-export const useQualtricsResponseStore = module_560.create((arg0, arg1) => {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  return {
+let obj = module_570.create((arg0, arg1) => {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let obj = {
     responses: {},
     displayedQuestions: {},
     setResponse(arg0, arg1, arg2) {
       closure_0 = arg0;
       closure_1 = arg1;
-      closure_2 = arg2;
+      let closure_2 = arg2;
       closure_0((responses) => {
-        const obj = { responses: null };
-        const obj2 = {};
+        let obj2;
+        const obj = { responses: obj2 };
+        obj2 = {};
         const merged = Object.assign(responses.responses);
         const obj3 = {};
         const merged1 = Object.assign(responses.responses[closure_0]);
         obj3[closure_1] = closure_2;
         obj2[closure_0] = obj3;
-        obj.responses = obj2;
         return obj;
       });
     },
@@ -43,40 +43,49 @@ export const useQualtricsResponseStore = module_560.create((arg0, arg1) => {
       closure_0((responses) => {
         responses = {};
         const merged = Object.assign(responses.responses);
-        delete tmp3[tmp];
+        delete obj[closure_0];
+        const obj3 = {};
         const merged1 = Object.assign(responses.displayedQuestions);
-        delete tmp2[tmp];
-        return { responses, displayedQuestions: {} };
+        delete obj2[closure_0];
+        return { responses, displayedQuestions: obj3 };
       });
     },
     trackDisplayedQuestions(arg0, arg1) {
       closure_0 = arg0;
       closure_1 = arg1;
-      closure_0((displayedQuestions) => {
-        let set = displayedQuestions.displayedQuestions[closure_0];
+      let tmp = closure_0(function(displayedQuestions) {
+        let obj2;
+        set = displayedQuestions.displayedQuestions[closure_0];
+        const tmp = closure_0;
         if (set == null) {
           const _Set = Set;
+          const self = this;
+          const self2 = this;
           set = new Set();
         }
         const set1 = new Set(set);
         const item = closure_1.forEach((item) => set1.add(item));
-        const obj = { displayedQuestions: null };
-        const obj2 = {};
+        const obj = { displayedQuestions: obj2 };
+        obj2 = {};
         const merged = Object.assign(displayedQuestions.displayedQuestions);
-        obj2[closure_0] = set1;
-        obj.displayedQuestions = obj2;
+        obj2[tmp] = set1;
         return obj;
       });
     },
     getDisplayedQuestions(arg0) {
+      let items;
       const tmp = closure_1().displayedQuestions[arg0];
       if (null != tmp) {
         const _Array = Array;
-        let items = Array.from(tmp);
+        items = Array.from(tmp);
       } else {
         items = [];
       }
       return items;
     }
   };
+  return obj;
 });
+const result = size.fileFinishedImporting("modules/qualtrics/QualtricsResponseStore.tsx");
+
+export const useQualtricsResponseStore = obj;

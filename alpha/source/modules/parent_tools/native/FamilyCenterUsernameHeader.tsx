@@ -1,32 +1,98 @@
-// Module ID: 14640
-// Function ID: 14641
+// Module ID: 14696
+// Function ID: 14697
 // Name: FamilyCenterUsernameHeader
-// Dependencies: [19, 17, 21, 4845, 4707, 4841, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4890, 558, 576, 4722, 4886, 2]
 
-// Module 14640 (FamilyCenterUsernameHeader)
-import UserUtilsDefault from "UserUtils" /* 4707 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import noop from "module_19" /* 19 */;
+// Module 14696 (FamilyCenterUsernameHeader)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import UserUtilsDefault from "UserUtils" /* 4722 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4845);
+let user;
+
+let closure_4;
+let hasOwnProperty;
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ container: { justifyContent: "center" } });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterUsernameHeader.tsx");
-
-export default function FamilyCenterUsernameHeader(user) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+  let items;
+  let tmp10;
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(10);
+  user = user.user;
+  const tmp4 = closure_6();
+  const obj2 = UserUtilsDefault;
+  const name = obj2.useName(user);
+  if (cResult[0] !== user) {
+    const tmp5Result = UserUtilsDefault;
+    const userTag = tmp5Result.getUserTag(user, { decoration: "never" });
+    cResult[0] = user;
+    cResult[1] = userTag;
+    tmp7 = userTag;
+  } else {
+    tmp7 = cResult[1];
+  }
+  const combined = " (@" + tmp7 + ")";
+  if (cResult[2] !== combined) {
+    const obj3 = { variant: "text-md/medium", color: "text-muted", lineClamp: 1, children: combined };
+    const tmp12 = React3(Text_Text.Text, obj3);
+    cResult[2] = combined;
+    cResult[3] = tmp12;
+    tmp10 = tmp12;
+  } else {
+    tmp10 = cResult[3];
+  }
+  if (cResult[4] === name) {
+    let tmp13;
+    if (cResult[5] === tmp10) {
+      tmp13 = cResult[6];
+    }
+    if (cResult[7] === tmp4.container) {
+      let tmp15;
+      if (cResult[8] === tmp13) {
+        tmp15 = cResult[9];
+      }
+      return tmp15;
+    }
+    const obj4 = { style: tmp4.container, children: tmp13 };
+    const tmp18 = React3(View, obj4);
+    cResult[7] = tmp4.container;
+    cResult[8] = tmp13;
+    cResult[9] = tmp18;
+    tmp15 = tmp18;
+  }
+  const obj5 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: items };
+  items = [name, tmp10];
+  const tmp14 = hasOwnProperty(Text_Text.Text, obj5);
+  cResult[4] = name;
+  cResult[5] = tmp10;
+  cResult[6] = tmp14;
+  tmp13 = tmp14;
+}) : ((user) => {
+  let Text;
+  let items;
+  let obj4;
   user = user.user;
   const tmp = closure_6();
-  const name = UserUtilsDefault.useName(user);
-  const obj3 = { style: tmp.container, children: null };
-  const combined = " (@" + UserUtilsDefault.getUserTag(user, { decoration: "never" }) + ")";
-  const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: null };
-  const items = [name, React4(Text_Text.Text, { variant: "text-md/medium", color: "text-muted", lineClamp: 1, children: combined })];
-  obj4.children = items;
-  obj3.children = hasOwnProperty(Text_Text.Text, obj4);
-  return React4(View, obj3);
-};
+  const obj = UserUtilsDefault;
+  const name = obj.useName(user);
+  const obj3 = { style: tmp.container, children: hasOwnProperty(Text, obj4) };
+  const obj2 = UserUtilsDefault;
+  const combined = " (@" + obj2.getUserTag(user, { decoration: "never" }) + ")";
+  obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: items };
+  items = [name, ];
+  Text = Text_Text.Text;
+  items[1] = React3(Text_Text.Text, { variant: "text-md/medium", color: "text-muted", lineClamp: 1, children: combined });
+  return React3(View, obj3);
+});
+const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterUsernameHeader.tsx");
+
+export default tmp4;

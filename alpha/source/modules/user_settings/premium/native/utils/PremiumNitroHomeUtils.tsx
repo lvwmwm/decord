@@ -1,20 +1,23 @@
-// Module ID: 13169
-// Function ID: 13170
+// Module ID: 13228
+// Function ID: 13229
 // Name: PremiumNitroHomeUtils
-// Dependencies: [1074, 1241, 2]
+// Dependencies: [1085, 1252, 2]
 // Exports: trackIfScrolledToBottom
 
-// Module 13169 (PremiumNitroHomeUtils)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+// Module 13228 (PremiumNitroHomeUtils)
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/user_settings/premium/native/utils/PremiumNitroHomeUtils.tsx");
 
 export const trackIfScrolledToBottom = function trackIfScrolledToBottom(trackedType) {
+  let hasTrackedScrolledToBottom;
+  let nativeEvent;
   ({ nativeEvent, hasTrackedScrolledToBottom } = trackedType);
   let current = hasTrackedScrolledToBottom.current;
+  trackedType = trackedType.trackedType;
   if (!current) {
     const _Math = Math;
     const _Math2 = Math;
@@ -24,8 +27,9 @@ export const trackIfScrolledToBottom = function trackIfScrolledToBottom(trackedT
     current = sum < Math.floor(tmp3.height);
   }
   if (!current) {
-    const obj2 = { type: trackedType.trackedType };
-    AnalyticsUtilsDefault.track(AnalyticEvents.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, obj2);
+    const obj2 = { type: trackedType };
+    const obj = AnalyticsUtilsDefault;
+    obj.track(AnalyticEvents.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, obj2);
     hasTrackedScrolledToBottom.current = true;
   }
 };

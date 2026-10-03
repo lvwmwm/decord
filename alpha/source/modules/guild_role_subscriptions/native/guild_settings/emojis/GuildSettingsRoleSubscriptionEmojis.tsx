@@ -1,91 +1,80 @@
-// Module ID: 17866
-// Function ID: 17867
+// Module ID: 17952
+// Function ID: 17953
 // Name: GuildSettingsRoleSubscriptionEmojis
-// Dependencies: [19, 2066, 21, 12, 5962, 17621, 17867, 1115, 17811, 504, 4809, 17868, 1981, 17821, 2]
-// Exports: default
+// Dependencies: [19, 2074, 21, 12, 5643, 17709, 17953, 1126, 17897, 504, 4854, 17954, 1987, 558, 576, 17907, 2]
 
-// Module 17866 (GuildSettingsRoleSubscriptionEmojis)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
-import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 5962 */;
-import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 17821 */;
-import getMaxRoleSubscriptionEmojiSlotsDefault from "getMaxRoleSubscriptionEmojiSlots" /* 17867 */;
-import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import apply from "module_12" /* 12 */;
+// Module 17952 (GuildSettingsRoleSubscriptionEmojis)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 5643 */;
+import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 17907 */;
+import getMaxRoleSubscriptionEmojiSlotsDefault from "getMaxRoleSubscriptionEmojiSlots" /* 17953 */;
+import react from "react" /* 19 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import module_12 from "module_12" /* 12 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+const require = globalThis.__r;
+let _require;
+
 function GuildSettingsRoleSubscriptionEmojisInner(guildId) {
   guildId = guildId.guildId;
-  const roleSubscriptionSettingsDisabled = guildId(17811).useRoleSubscriptionSettingsDisabled();
-  let obj = guildId(17811);
+  let tmp = guildId;
+  let tmp2 = dependencyMap;
+  let obj = guildId(17897);
+  const roleSubscriptionSettingsDisabled = obj.useRoleSubscriptionSettingsDisabled();
   const items = [GuildStore];
-  const stateFromStores = guildId(504).useStateFromStores(items, () => GuildStore.getGuild(guildId));
+  const obj2 = guildId(504);
+  const stateFromStores = obj2.useStateFromStores(items, () => GuildStore.getGuild(guildId));
   if (null == stateFromStores) {
     return null;
   } else {
-    const intl = tmp(1115).intl;
-    const obj3 = { maxSlots: stateFromStores(17867)(stateFromStores) };
-    const obj4 = {
+    const intl = tmp(1126).intl;
+    const formatToPlainString = intl.formatToPlainString;
+    const obj3 = { maxSlots: stateFromStores(17953)(stateFromStores) };
+    const H9Jxp6 = tmp(1126).t.H9Jxp6;
+    formatToPlainString(H9Jxp6, obj3);
+    return jsx(tmp(17709).ManageEmojisModal, {
       guild: stateFromStores,
-      headerDescription: intl.formatToPlainString(tmp(1115).t.H9Jxp6, obj3),
+      headerDescription: formatToPlainString(H9Jxp6, obj3),
       computeEmojiItems,
       onSelectRolesForEmoji(emoji) {
+          let rejectResult;
           if (null == stateFromStores) {
             const _Error = Error;
+            const self3 = this;
+            const self4 = this;
             let error = new Error("guild cannot be null");
-            let rejectResult = Promise.reject(error);
+            rejectResult = reject(error);
           } else {
+            const tmp = globalThis;
+            const self = this;
+            const self2 = this;
             rejectResult = new Promise((arg0, arg1) => {
               emoji = arg0;
-              closure_1 = arg1;
-              const obj = ActionSheetActionCreatorsDefault;
-              obj.openLazy(asyncRequireImpl(17868, dependencyMap.paths), "role-subscription-emoji-" + stateFromStores.id, {
+              let closure_1 = arg1;
+              const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+              ActionSheetActionCreatorsDefault;
+              let obj = {
                 guildId: stateFromStores.id,
                 emoji,
                 onSave(arg0) {
-                  stateFromStores(4809).hideActionSheet();
+                  const obj = closure_2_1(closure_2_2[10]);
+                  obj.hideActionSheet();
                   closure_0(arg0);
                 },
                 onCancel() {
-                  stateFromStores(4809).hideActionSheet();
+                  const obj = closure_2_1(closure_2_2[10]);
+                  obj.hideActionSheet();
                   const error = new Error("User cancelled");
                   closure_1(error);
                 }
-              });
-            });
-          }
-          return rejectResult;
-        },
-      disabled: roleSubscriptionSettingsDisabled
-    };
-    return jsx(tmp(17621).ManageEmojisModal, {
-      guild: stateFromStores,
-      headerDescription: intl.formatToPlainString(tmp(1115).t.H9Jxp6, obj3),
-      computeEmojiItems,
-      onSelectRolesForEmoji(emoji) {
-          if (null == stateFromStores) {
-            const _Error = Error;
-            let error = new Error("guild cannot be null");
-            let rejectResult = Promise.reject(error);
-          } else {
-            rejectResult = new Promise((arg0, arg1) => {
-              emoji = arg0;
-              closure_1 = arg1;
-              const obj = ActionSheetActionCreatorsDefault;
-              obj.openLazy(asyncRequireImpl(17868, dependencyMap.paths), "role-subscription-emoji-" + stateFromStores.id, {
-                guildId: stateFromStores.id,
-                emoji,
-                onSave(arg0) {
-                  stateFromStores(4809).hideActionSheet();
-                  closure_0(arg0);
-                },
-                onCancel() {
-                  stateFromStores(4809).hideActionSheet();
-                  const error = new Error("User cancelled");
-                  closure_1(error);
-                }
-              });
+              };
+              const tmp2 = asyncRequire(17954, dependencyMap.paths);
+              openLazy(tmp2, "role-subscription-emoji-" + stateFromStores.id, obj);
             });
           }
           return rejectResult;
@@ -93,29 +82,59 @@ function GuildSettingsRoleSubscriptionEmojisInner(guildId) {
       disabled: roleSubscriptionSettingsDisabled
     });
   }
-  const obj2 = guildId(504);
 }
-const jsx = fn(21).jsx;
-const computeEmojiItems = apply.memoize((arr, arg1) => {
+const jsx = Fragment.jsx;
+const computeEmojiItems = module_12.memoize((arr, arg1) => {
+  let id;
   _require = arg1;
-  const found = arr.filter((item) => RoleSubscriptionEmojiUtils.isRoleSubscriptionEmoji(item, id.id));
+  const found = arr.filter((item) => {
+    const obj = RoleSubscriptionEmojiUtils;
+    return obj.isRoleSubscriptionEmoji(item, id.id);
+  });
   if (0 === found.length) {
     return [];
   } else {
     const mapped = found.map(require("GuildSettingsModalEmoji").computeEmojiItem);
     const reversed = mapped.reverse();
-    const tmp4 = getMaxRoleSubscriptionEmojiSlotsDefault(arg1);
-    const intl = require("util").intl;
-    const items = [require("GuildSettingsModalEmoji").computeSectionItem(intl.string(require("util").t.sMOuuS), reversed.length, tmp4)];
-    HermesBuiltin.arraySpread(reversed, 1);
+    const tmp5 = getMaxRoleSubscriptionEmojiSlotsDefault(arg1);
+    const computeSectionItem = require("GuildSettingsModalEmoji").computeSectionItem;
+    require("GuildSettingsModalEmoji");
+    const intl = require("intl").intl;
+    const items = [computeSectionItem(intl.string(require("intl").t.sMOuuS), reversed.length, tmp5)];
+    HermesBuiltin.arraySpread(items, reversed, 1);
     return items;
   }
 });
-const size = fn(2);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let tmp3;
+  const obj = react2;
+  const cResult = obj.c(5);
+  guildId = guildId.guildId;
+  if (cResult[0] !== guildId) {
+    const tmp6 = <GuildSettingsRoleSubscriptionEmojisInner guildId={guildId} />;
+    cResult[0] = guildId;
+    cResult[1] = tmp6;
+    tmp3 = tmp6;
+  } else {
+    tmp3 = cResult[1];
+  }
+  if (cResult[2] === guildId) {
+    let tmp7;
+    if (cResult[3] === tmp3) {
+      tmp7 = cResult[4];
+    }
+    return tmp7;
+  }
+  const tmp8 = jsx(GuildSettingsRoleSubscriptionContainerDefault, { guildId, children: tmp3 });
+  cResult[2] = guildId;
+  cResult[3] = tmp3;
+  cResult[4] = tmp8;
+  tmp7 = tmp8;
+}) : ((guildId) => {
+  guildId = guildId.guildId;
+  GuildSettingsRoleSubscriptionContainerDefault;
+  return <tmp guildId={guildId}>{null}</tmp>;
+});
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/emojis/GuildSettingsRoleSubscriptionEmojis.tsx");
 
-export default function GuildSettingsRoleSubscriptionEmojis(guildId) {
-  guildId = guildId.guildId;
-  const obj = { guildId, children: <GuildSettingsRoleSubscriptionEmojisInner guildId={guildId} /> };
-  return jsx(GuildSettingsRoleSubscriptionContainerDefault, { guildId, children: <GuildSettingsRoleSubscriptionEmojisInner guildId={guildId} /> });
-};
+export default tmp3;

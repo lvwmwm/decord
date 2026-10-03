@@ -1,46 +1,735 @@
-// Module ID: 12101
-// Function ID: 12102
+// Module ID: 12037
+// Function ID: 12038
 // Name: ApplicationCommandDiscovery
-// Dependencies: [32, 19, 17, 5489, 12102, 9919, 1074, 21, 12103, 4845, 576, 5472, 12104, 8911, 1979, 8790, 4570, 1115, 5025, 12, 12105, 7131, 12106, 12107, 1177, 10074, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 5788, 12038, 10072, 1085, 21, 12039, 4890, 587, 558, 576, 5602, 12040, 1985, 8803, 8939, 4590, 1126, 5070, 12, 1188, 10147, 7034, 12041, 12042, 12043, 2]
 
-// Module 12101 (ApplicationCommandDiscovery)
+// Module 12037 (ApplicationCommandDiscovery)
 import _modDef12 from "module_12" /* 12 */;
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
-import Server from "Server" /* 1979 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4570 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5025 */;
-import useFontScale from "useFontScale" /* 5472 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7131 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 8790 */;
-import ApplicationSectionHeader from "ApplicationSectionHeader" /* 12103 */;
-import ApplicationCommandDiscoveryManager from "ApplicationCommandDiscoveryManager" /* 12104 */;
-import ApplicationCommandsCategoriesDefault from "ApplicationCommandsCategories" /* 12105 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import Server from "Server" /* 1985 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5070 */;
+import useFontScale from "useFontScale" /* 5602 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 8803 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10072 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10147 */;
+import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 12038 */;
+import ApplicationSectionHeader from "ApplicationSectionHeader" /* 12039 */;
+import ApplicationCommandDiscoveryManager from "ApplicationCommandDiscoveryManager" /* 12040 */;
+import ApplicationCommandsCategoriesDefault from "ApplicationCommandsCategories" /* 12043 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5788 */;
+import Constants from "Constants" /* 1085 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
+const require = globalThis.__r;
 const ApplicationSectionHeaderDefault = ApplicationSectionHeader;
+let dependencyMap;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: metroRequire, SectionList: closure_7 } = get_ActivityIndicator);
-const ApplicationCommandConstants = fn(5489);
-({ BuiltInSectionId: closure_8, DISCOVERY_COMMANDS_QUERY_LIMIT: closure_9 } = ApplicationCommandConstants);
-const ITEM_HEIGHT = fn(12102).ITEM_HEIGHT;
-const AUTOCOMPLETE_ROW_HEIGHT = fn(9919).AUTOCOMPLETE_ROW_HEIGHT;
-const Constants = fn(1074);
+let c9;
+let closure_12;
+let closure_14;
+let closure_15;
+let closure_16;
+let map1;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+({ View: metroRequire, SectionList: metroImportDefault } = react_native);
+({ BuiltInSectionId: metroImportAll, DISCOVERY_COMMANDS_QUERY_LIMIT: c9 } = ApplicationCommandConstants);
+const ITEM_HEIGHT = ApplicationCommandsCategoriesConstants.ITEM_HEIGHT;
+const AUTOCOMPLETE_ROW_HEIGHT = ApplicationCommandsConstants.AUTOCOMPLETE_ROW_HEIGHT;
 ({ AnalyticEvents: closure_12, SectionListElementType: map1 } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = jsxProd);
-const createStyles = fn(4845);
-let obj2 = { discoveryWrapper: { flex: 1 }, noCommandsImage: { height: 50, width: 50, marginBottom: 16 }, noCommandsContainer: { padding: 0, height: 100 }, commandsList: { backgroundColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND } };
-let closure_17 = createStyles.createStyles(obj2);
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/application_commands/native/ApplicationCommandDiscovery.tsx");
-
-export default function ApplicationCommandDiscovery(channel) {
+({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = Fragment);
+let obj = { discoveryWrapper: { flex: 1 }, noCommandsImage: { height: 50, width: 50, marginBottom: 16 }, noCommandsContainer: { padding: 0, height: 100 }, commandsList: obj2 };
+obj2 = { backgroundColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
+let closure_17 = createStyles.createStyles(obj);
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onHeightChange) => {
+  let closure_18;
+  let closure_3;
+  let closure_6;
+  let commandsByActiveSection;
+  let filteredSectionId;
+  let first;
+  let loading;
+  let onPressSlashItem;
+  let ref;
+  let sectionDescriptors;
+  let style;
+  let sum;
+  let tmp11;
+  let tmp12;
+  let tmp35;
+  let tmp8;
+  let tmp = onPressSlashItem;
+  let tmp2 = dependencyMap;
+  let obj = onPressSlashItem(576);
+  const cResult = obj.c(78);
+  ({ style, onPressSlashItem } = onHeightChange);
+  onHeightChange = onHeightChange.onHeightChange;
+  const channel = onHeightChange.channel;
+  const canOnlyUseTextCommands = onHeightChange.canOnlyUseTextCommands;
+  let tmp4 = sum();
+  dependencyMap = tmp4;
+  const obj2 = onPressSlashItem(5602);
+  const bound = Math.max(obj2.useFontScale() * commandsByActiveSection, commandsByActiveSection);
+  let obj3 = ref;
+  ref = ref.useRef(null);
+  let tmp7 = bound(ref.useState(0), 2);
+  [r10036, tmp8] = tmp7;
+  ref = ref.useRef(false);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function l(initialSectionId) {
+      return initialSectionId.initialSectionId;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  let tmpResult = tmp(12040);
+  const commandDiscoveryManager = tmpResult.useCommandDiscoveryManager(first);
+  if (cResult[1] !== channel) {
+    const obj4 = { channel, type: "channel" };
+    let num = 1;
+    cResult[1] = channel;
+    cResult[2] = obj4;
+    tmp11 = obj4;
+  } else {
+    tmp11 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [tmp(1985).ApplicationCommandType.CHAT];
+    let num2 = 3;
+    cResult[3] = items;
+    tmp12 = items;
+  } else {
+    tmp12 = cResult[3];
+  }
+  const BuiltInCommandFilter = tmp(8803).BuiltInCommandFilter;
+  let tmp13 = canOnlyUseTextCommands ? BuiltInCommandFilter.ONLY_TEXT : BuiltInCommandFilter.ALLOW;
+  let tmp14 = !canOnlyUseTextCommands;
+  if (cResult[4] === tmp13) {
+    let tmp15;
+    let tmp16;
+    if (cResult[5] === tmp14) {
+      tmp15 = cResult[6];
+    }
+    const _Symbol = Symbol;
+    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+      let obj5 = { placeholderCount: 3, limit: sectionDescriptors, includeFrecency: true };
+      let num3 = 7;
+      cResult[7] = obj5;
+      tmp16 = obj5;
+    } else {
+      tmp16 = cResult[7];
+    }
+    if (cResult[8] === tmp11) {
+      let tmp18;
+      if (cResult[9] === tmp15) {
+        tmp18 = cResult[10];
+      }
+      let tmp19 = channel;
+      const obj9 = channel(8939);
+      const discovery = obj9.useDiscovery(tmp18);
+      sectionDescriptors = discovery.sectionDescriptors;
+      const activeSections = discovery.activeSections;
+      commandsByActiveSection = discovery.commandsByActiveSection;
+      const hasMoreAfter = discovery.hasMoreAfter;
+      ({ loading, filteredSectionId } = discovery);
+      const scrollDown = discovery.scrollDown;
+      const filterSection = discovery.filterSection;
+      if (cResult[11] === filterSection) {
+        if (cResult[12] === commandDiscoveryManager) {
+          let tmp21;
+          let tmp22;
+          let tmp25;
+          let tmp24;
+          if (cResult[13] === sectionDescriptors) {
+            tmp21 = cResult[14];
+            tmp22 = cResult[15];
+          }
+          const effect = obj3.useEffect(tmp22, tmp21);
+          const _Symbol2 = Symbol;
+          if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+            const fn2 = function j() {
+              const AccessibilityAnnouncer = onPressSlashItem(closure_3[18]).AccessibilityAnnouncer;
+              const announce = AccessibilityAnnouncer.announce;
+              const intl = onPressSlashItem(closure_3[19]).intl;
+              announce(intl.string(onPressSlashItem(closure_3[19]).t["2wfLMm"]));
+              let obj = onPressSlashItem(closure_3[20]);
+              obj.trackWithMetadata(hasMoreAfter.APPLICATION_COMMAND_BROWSER_OPENED);
+              return () => {
+                const obj = onPressSlashItem(closure_1_3[14]);
+                const result = obj.updateInitialSectionId(undefined);
+              };
+            };
+            const items1 = [];
+            cResult[16] = fn2;
+            cResult[17] = items1;
+            tmp25 = items1;
+            tmp24 = fn2;
+          } else {
+            tmp24 = cResult[16];
+            tmp25 = cResult[17];
+          }
+          const effect1 = obj3.useEffect(tmp24, tmp25);
+          if (cResult[18] === commandsByActiveSection) {
+            if (cResult[19] === onHeightChange) {
+              let tmp27;
+              let tmp28;
+              if (cResult[20] === bound) {
+                tmp27 = cResult[21];
+                tmp28 = cResult[22];
+              }
+              const effect2 = obj3.useEffect(tmp27, tmp28);
+              if (cResult[23] === filterSection) {
+                if (cResult[24] === filteredSectionId) {
+                  let items2;
+                  if (cResult[25] === sectionDescriptors) {
+                    let tmp30 = cResult[26];
+                  }
+                  const _Symbol3 = Symbol;
+                  if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
+                    function re() {
+                      ref.current = true;
+                      const obj = AppAnalyticsUtils;
+                      obj.trackWithMetadata(hasMoreAfter.APPLICATION_COMMAND_BROWSER_SCROLLED);
+                    }
+                    cResult[27] = re;
+                    let tmp31 = re;
+                  } else {
+                    tmp31 = cResult[27];
+                  }
+                  const _Symbol4 = Symbol;
+                  if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
+                    function le(nativeEvent) {
+                      nativeEvent = nativeEvent.nativeEvent;
+                      const targetContentOffset = nativeEvent.targetContentOffset;
+                      let y1;
+                      const y = nativeEvent.contentOffset.y;
+                      if (targetContentOffset != null) {
+                        y1 = targetContentOffset.y;
+                      }
+                      if (y === y1) {
+                        ref.current = false;
+                      }
+                    }
+                    cResult[28] = le;
+                    let tmp32 = le;
+                  } else {
+                    tmp32 = cResult[28];
+                  }
+                  const _Symbol5 = Symbol;
+                  if (cResult[29] === Symbol.for("react.memo_cache_sentinel")) {
+                    function se(arg0) {
+                      ref.current = false;
+                    }
+                    cResult[29] = se;
+                    let tmp33 = se;
+                  } else {
+                    tmp33 = cResult[29];
+                  }
+                  sum = 0;
+                  if (cResult[30] === commandsByActiveSection) {
+                    if (cResult[31] === bound) {
+                      if (cResult[32] === sectionDescriptors) {
+                        let tmp40;
+                        let tmp34 = sum;
+                        if (cResult[33] === sum) {
+                          items2 = cResult[34];
+                          sum = cResult[35];
+                        }
+                        if (cResult[36] !== tmp35) {
+                          let tmp41 = onHeightChange;
+                          let tmp42 = dependencyMap;
+                          const obj10 = onHeightChange(12);
+                          const throttleResult = obj10.throttle((arg0) => {
+                            let num = 0;
+                            if (0 < tmp35.length) {
+                              let num2 = 0;
+                              let num3 = 0;
+                              if (0 === tmp35[0]) {
+                                sum = num3 + 1;
+                                const sum1 = num2 + 1;
+                                num = sum;
+                                while (sum1 < tmp35.length) {
+                                  num2 = sum1;
+                                  num3 = sum;
+                                  if (0 === tmp5[sum1]) {
+                                    continue;
+                                  } else {
+                                    num2 = sum1;
+                                    num3 = sum;
+                                    num = sum;
+                                    if (arg0 < tmp5[sum1]) {
+                                      break;
+                                    }
+                                  }
+                                  continue;
+                                }
+                              } else {
+                                num2 = 0;
+                                num3 = 0;
+                                num = 0;
+                              }
+                            }
+                            tmp8(num);
+                          }, 100);
+                          cResult[36] = tmp35;
+                          cResult[37] = throttleResult;
+                          tmp40 = throttleResult;
+                        } else {
+                          tmp40 = cResult[37];
+                        }
+                        let closure_19 = tmp40;
+                        if (cResult[38] === activeSections) {
+                          if (cResult[39] === commandsByActiveSection) {
+                            if (cResult[40] === hasMoreAfter) {
+                              if (cResult[41] === bound) {
+                                if (cResult[42] === scrollDown) {
+                                  if (cResult[45] !== bound) {
+                                    class Se {
+                                      constructor(arg0, index) {
+                                        if (null == arg0) {
+                                          return { length: 0, offset: 0, index };
+                                        } else {
+                                          let num = 0;
+                                          let num2 = 0;
+                                          let num3 = 0;
+                                          let ROW = map1.ROW;
+                                          const iter = arg0[Symbol.iterator]();
+                                          const nextResult = iter.next();
+                                          while (iter !== undefined) {
+                                            let num4;
+                                            let tmp4 = nextResult;
+                                            if (num + num2 + nextResult.data.length + num3 + 1 >= index) {
+                                              if (index === num + num2 + num3) {
+                                                ROW = map1.HEADER;
+                                              } else if (index === num + num2 + tmp4.data.length + num3 + 1) {
+                                                num = num + 1;
+                                                num2 = num2 + nextResult.data.length;
+                                                ROW = map1.FOOTER;
+                                              } else {
+                                                sum = num + 1;
+                                                num = sum;
+                                                num2 = num2 + (index - sum - num2 - num3);
+                                                ROW = map1.ROW;
+                                              }
+                                              iter.return();
+                                              break;
+                                            } else {
+                                              num = num + 1;
+                                              num2 = num2 + tmp4.data.length;
+                                              num3 = num3 + 1;
+                                              continue;
+                                            }
+                                            let tmp28 = map1;
+                                            if (map1.ROW === ROW) {
+                                              num4 = bound;
+                                            } else if (tmp29.HEADER === ROW) {
+                                              num4 = ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT;
+                                            } else {
+                                              let FOOTER = tmp28.FOOTER;
+                                              num4 = 0;
+                                            }
+                                            let obj = { length: num4, offset: num * ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT + num2 * bound, index };
+                                            return obj;
+                                          }
+                                        }
+                                      }
+                                    }
+                                    cResult[45] = bound;
+                                    cResult[46] = Se;
+                                  } else {
+                                    class Se {
+                                      constructor(arg0, index) {
+                                        if (null == arg0) {
+                                          return { length: 0, offset: 0, index };
+                                        } else {
+                                          let num = 0;
+                                          let num2 = 0;
+                                          let num3 = 0;
+                                          let ROW = map1.ROW;
+                                          const iter = arg0[Symbol.iterator]();
+                                          const nextResult = iter.next();
+                                          while (iter !== undefined) {
+                                            let num4;
+                                            let tmp4 = nextResult;
+                                            if (num + num2 + nextResult.data.length + num3 + 1 >= index) {
+                                              if (index === num + num2 + num3) {
+                                                ROW = map1.HEADER;
+                                              } else if (index === num + num2 + tmp4.data.length + num3 + 1) {
+                                                num = num + 1;
+                                                num2 = num2 + nextResult.data.length;
+                                                ROW = map1.FOOTER;
+                                              } else {
+                                                sum = num + 1;
+                                                num = sum;
+                                                num2 = num2 + (index - sum - num2 - num3);
+                                                ROW = map1.ROW;
+                                              }
+                                              iter.return();
+                                              break;
+                                            } else {
+                                              num = num + 1;
+                                              num2 = num2 + tmp4.data.length;
+                                              num3 = num3 + 1;
+                                              continue;
+                                            }
+                                            let tmp28 = map1;
+                                            if (map1.ROW === ROW) {
+                                              num4 = bound;
+                                            } else if (tmp29.HEADER === ROW) {
+                                              num4 = ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT;
+                                            } else {
+                                              let FOOTER = tmp28.FOOTER;
+                                              num4 = 0;
+                                            }
+                                            let obj = { length: num4, offset: num * ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT + num2 * bound, index };
+                                            return obj;
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  if (cResult[47] === channel.guild_id) {
+                                    class Se {
+                                      constructor(arg0, index) {
+                                        if (null == arg0) {
+                                          return { length: 0, offset: 0, index };
+                                        } else {
+                                          let num = 0;
+                                          let num2 = 0;
+                                          let num3 = 0;
+                                          let ROW = map1.ROW;
+                                          const iter = arg0[Symbol.iterator]();
+                                          const nextResult = iter.next();
+                                          while (iter !== undefined) {
+                                            let num4;
+                                            let tmp4 = nextResult;
+                                            if (num + num2 + nextResult.data.length + num3 + 1 >= index) {
+                                              if (index === num + num2 + num3) {
+                                                ROW = map1.HEADER;
+                                              } else if (index === num + num2 + tmp4.data.length + num3 + 1) {
+                                                num = num + 1;
+                                                num2 = num2 + nextResult.data.length;
+                                                ROW = map1.FOOTER;
+                                              } else {
+                                                sum = num + 1;
+                                                num = sum;
+                                                num2 = num2 + (index - sum - num2 - num3);
+                                                ROW = map1.ROW;
+                                              }
+                                              iter.return();
+                                              break;
+                                            } else {
+                                              num = num + 1;
+                                              num2 = num2 + tmp4.data.length;
+                                              num3 = num3 + 1;
+                                              continue;
+                                            }
+                                            let tmp28 = map1;
+                                            if (map1.ROW === ROW) {
+                                              num4 = bound;
+                                            } else if (tmp29.HEADER === ROW) {
+                                              num4 = ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT;
+                                            } else {
+                                              let FOOTER = tmp28.FOOTER;
+                                              num4 = 0;
+                                            }
+                                            let obj = { length: num4, offset: num * ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT + num2 * bound, index };
+                                            return obj;
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  function renderSectionHeader(section) {
+                                    let intl;
+                                    let obj5;
+                                    section = section.section;
+                                    const children = [, ];
+                                    const obj = { section: section.section, guildId: channel.guild_id };
+                                    children[0] = authStore2(ApplicationSectionHeaderDefault, obj, section.section.id);
+                                    let tmp3Result = 0 === section.data.length;
+                                    const tmp = authStore3;
+                                    const tmp2 = closure_15;
+                                    const tmp3 = authStore2;
+                                    if (tmp3Result) {
+                                      const obj3 = { lightSource: AssetRegistryDefault, darkSource: AssetRegistryDefault, body: intl.format(intl2.t.WoQXT6, obj5), containerStyle: null, imageStyle: null };
+                                      const ThemedEmptyState = native.ThemedEmptyState;
+                                      intl = intl2.intl;
+                                      obj5 = { applicationName: section.section.name };
+                                      ({ noCommandsContainer: obj2.containerStyle, noCommandsImage: obj2.imageStyle } = closure_3);
+                                      tmp3Result = tmp3(ThemedEmptyState, obj3);
+                                    }
+                                    children[1] = tmp3Result;
+                                    return tmp(tmp2, { children });
+                                  }
+                                  cResult[47] = channel.guild_id;
+                                  cResult[48] = tmp4.noCommandsContainer;
+                                  cResult[49] = tmp4.noCommandsImage;
+                                  cResult[50] = renderSectionHeader;
+                                }
+                              }
+                            }
+                          }
+                        }
+                        function onScroll(nativeEvent) {
+                          let contentInset;
+                          let contentSize;
+                          let layoutMeasurement;
+                          nativeEvent = nativeEvent.nativeEvent;
+                          ({ layoutMeasurement, contentSize, contentInset } = nativeEvent);
+                          const y = nativeEvent.contentOffset.y;
+                          closure_19(y);
+                          const tmp2 = !ref.current && activeSections.length > 0;
+                          if (tmp2) {
+                            if (y < contentInset.top) {
+                              const current = ref.current;
+                              if (current != null) {
+                                current.scrollToLocation({ sectionIndex: 0, itemIndex: 0, viewPosition: 0, animated: false });
+                              }
+                            } else if (y > contentSize.height - layoutMeasurement.height - contentInset.bottom) {
+                              const current2 = ref.current;
+                              if (current2 != null) {
+                                const _Math = Math;
+                                const scrollToLocation = current2.scrollToLocation;
+                                const obj = { sectionIndex: activeSections.length - 1, itemIndex: Math.max(commandsByActiveSection[commandsByActiveSection.length - 1].data.length - 1, 0), viewPosition: 1, animated: false };
+                                scrollToLocation(obj);
+                              }
+                            }
+                          }
+                          const tmp7 = hasMoreAfter && y + layoutMeasurement.height >= contentSize.height - 3 * bound;
+                          if (tmp7) {
+                            scrollDown();
+                          }
+                        }
+                        cResult[38] = activeSections;
+                        cResult[39] = commandsByActiveSection;
+                        cResult[40] = hasMoreAfter;
+                        cResult[41] = bound;
+                        cResult[42] = scrollDown;
+                        cResult[43] = tmp40;
+                        class X {
+                          constructor() {
+                            if (null != commandDiscoveryManager) {
+                              filterSection(tmp);
+                              const findIndexResult = sectionDescriptors.findIndex((id) => id.id === commandDiscoveryManager);
+                              let num2 = 0;
+                              const tmp6 = closure_6;
+                              if (-1 !== findIndexResult) {
+                                num2 = findIndexResult;
+                              }
+                              tmp6(num2);
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  items2 = [];
+                  for (const item10189 of sectionDescriptors) {
+                    class Se {
+                      constructor(arg0, index) {
+                        if (null == arg0) {
+                          return { length: 0, offset: 0, index };
+                        } else {
+                          let num = 0;
+                          let num2 = 0;
+                          let num3 = 0;
+                          let ROW = map1.ROW;
+                          const iter = arg0[Symbol.iterator]();
+                          const nextResult = iter.next();
+                          while (iter !== undefined) {
+                            let num4;
+                            let tmp4 = nextResult;
+                            if (num + num2 + nextResult.data.length + num3 + 1 >= index) {
+                              if (index === num + num2 + num3) {
+                                ROW = map1.HEADER;
+                              } else if (index === num + num2 + tmp4.data.length + num3 + 1) {
+                                num = num + 1;
+                                num2 = num2 + nextResult.data.length;
+                                ROW = map1.FOOTER;
+                              } else {
+                                sum = num + 1;
+                                num = sum;
+                                num2 = num2 + (index - sum - num2 - num3);
+                                ROW = map1.ROW;
+                              }
+                              iter.return();
+                              break;
+                            } else {
+                              num = num + 1;
+                              num2 = num2 + tmp4.data.length;
+                              num3 = num3 + 1;
+                              continue;
+                            }
+                            let tmp28 = map1;
+                            if (map1.ROW === ROW) {
+                              num4 = bound;
+                            } else if (tmp29.HEADER === ROW) {
+                              num4 = ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT;
+                            } else {
+                              let FOOTER = tmp28.FOOTER;
+                              num4 = 0;
+                            }
+                            let obj = { length: num4, offset: num * ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT + num2 * bound, index };
+                            return obj;
+                          }
+                        }
+                      }
+                    }
+                    continue;
+                  }
+                  cResult[30] = commandsByActiveSection;
+                  class X {
+                    constructor() {
+                      if (null != commandDiscoveryManager) {
+                        filterSection(tmp);
+                        const findIndexResult = sectionDescriptors.findIndex((id) => id.id === commandDiscoveryManager);
+                        let num2 = 0;
+                        const tmp6 = closure_6;
+                        if (-1 !== findIndexResult) {
+                          num2 = findIndexResult;
+                        }
+                        tmp6(num2);
+                      }
+                    }
+                  }
+                  cResult[32] = sectionDescriptors;
+                  cResult[33] = sum;
+                  cResult[34] = items2;
+                  let tmp39 = sum;
+                  cResult[35] = sum;
+                  tmp35 = items2;
+                }
+              }
+              const fn4 = function q(arg0) {
+                let tmp8;
+                if (sectionDescriptors[arg0].id !== filteredSectionId) {
+                  if (sectionDescriptors[arg0].id !== metroImportAll.FRECENCY) {
+                    filterSection(sectionDescriptors[arg0].id);
+                    tmp8(arg0);
+                  }
+                  const obj = ApplicationCommandDiscoveryManager;
+                  const result = obj.updateInitialSectionId(undefined);
+                }
+                filterSection(null);
+                tmp8 = tmp8(0);
+              };
+              cResult[23] = filterSection;
+              cResult[24] = filteredSectionId;
+              cResult[25] = sectionDescriptors;
+              cResult[26] = fn4;
+              tmp30 = fn4;
+            }
+          }
+          const fn3 = function z() {
+            if (onHeightChange != null) {
+              let closure_0 = bound;
+              let num2 = 0;
+              const arr = commandsByActiveSection;
+              if (0 !== commandsByActiveSection.length) {
+                num2 = arr.reduce((acc, data) => {
+                  let sum;
+                  if (0 === data.data.length) {
+                    sum = closure_2_0(closure_2_3[8]).APPLICATION_SECTION_HEADER_HEIGHT + 160;
+                  } else {
+                    sum = acc + (closure_2_0(closure_2_3[8]).APPLICATION_SECTION_HEADER_HEIGHT + (closure_0 + sectionDescriptors) * data.data.length);
+                  }
+                  return sum;
+                }, 0);
+              }
+              tmp(num2);
+            }
+          };
+          const items3 = [commandsByActiveSection, onHeightChange, bound];
+          cResult[18] = commandsByActiveSection;
+          cResult[19] = onHeightChange;
+          cResult[20] = bound;
+          cResult[21] = fn3;
+          class X {
+            constructor() {
+              if (null != commandDiscoveryManager) {
+                filterSection(tmp);
+                const findIndexResult = sectionDescriptors.findIndex((id) => id.id === commandDiscoveryManager);
+                let num2 = 0;
+                const tmp6 = closure_6;
+                if (-1 !== findIndexResult) {
+                  num2 = findIndexResult;
+                }
+                tmp6(num2);
+              }
+            }
+          }
+          cResult[22] = items3;
+          tmp28 = items3;
+          tmp27 = fn3;
+        }
+      }
+      class X {
+        constructor() {
+          if (null != commandDiscoveryManager) {
+            filterSection(tmp);
+            const findIndexResult = sectionDescriptors.findIndex((id) => id.id === commandDiscoveryManager);
+            let num2 = 0;
+            const tmp6 = closure_6;
+            if (-1 !== findIndexResult) {
+              num2 = findIndexResult;
+            }
+            tmp6(num2);
+          }
+        }
+      }
+      const items4 = [filterSection, commandDiscoveryManager, tmp8, sectionDescriptors];
+      cResult[11] = filterSection;
+      cResult[12] = commandDiscoveryManager;
+      cResult[13] = sectionDescriptors;
+      cResult[14] = items4;
+      cResult[15] = X;
+      tmp22 = X;
+      tmp21 = items4;
+    }
+    const obj6 = { context: tmp11, filters: tmp15, options: tmp16, allowFetch: true };
+    let num4 = 8;
+    cResult[8] = tmp11;
+    cResult[9] = tmp15;
+    cResult[10] = obj6;
+    tmp18 = obj6;
+  }
+  const obj7 = { commandTypes: tmp12, builtIns: tmp13, applicationCommands: tmp14 };
+  cResult[4] = tmp13;
+  cResult[5] = tmp14;
+  cResult[6] = obj7;
+  tmp15 = obj7;
+}) : (function ApplicationCommandDiscovery(channel) {
+  let BuiltInCommandFilter;
+  let _undefined;
+  let _undefined2;
+  let c11;
+  let c13;
+  let c15;
+  let closure_3;
+  let commandsByActiveSection;
+  let filterSection;
+  let filteredSectionId;
+  let items;
+  let items8;
+  let items9;
+  let obj5;
+  let obj6;
+  let obj9;
+  let onHeightChange;
+  let require;
   ({ onPressSlashItem: require, onHeightChange } = channel);
   channel = channel.channel;
   const canOnlyUseTextCommands = channel.canOnlyUseTextCommands;
@@ -52,179 +741,197 @@ export default function ApplicationCommandDiscovery(channel) {
   c15 = undefined;
   filterSection = undefined;
   let onPressSection;
+  const style = channel.style;
   let tmp = onPressSection();
   dependencyMap = tmp;
-  const bound = Math.max(useFontScale.useFontScale() * c11, c11);
+  let obj = useFontScale;
+  const bound = Math.max(obj.useFontScale() * c11, c11);
+  const obj2 = ref;
   ref = ref.useRef(null);
   let tmp4 = bound(ref.useState(0), 2);
   const selectedIndex = tmp4[0];
-  closure_7 = tmp6;
+  let tmp6 = tmp4[1];
+  let closure_7 = tmp6;
   ref = ref.useRef(false);
-  const commandDiscoveryManager = ApplicationCommandDiscoveryManager.useCommandDiscoveryManager((initialSectionId) => initialSectionId.initialSectionId);
-  let obj5 = { context: { channel, type: "channel" }, filters: null, options: null, allowFetch: true };
-  const obj6 = { commandTypes: null, builtIns: null, applicationCommands: null };
-  let items = [Server.ApplicationCommandType.CHAT];
-  obj6.commandTypes = items;
-  const BuiltInCommandFilter = ApplicationCommandQueryTypes.BuiltInCommandFilter;
-  obj6.builtIns = canOnlyUseTextCommands ? BuiltInCommandFilter.ONLY_TEXT : BuiltInCommandFilter.ALLOW;
-  obj6.applicationCommands = !canOnlyUseTextCommands;
-  obj5.filters = obj6;
-  obj5.options = { placeholderCount: 3, limit: commandDiscoveryManager, includeFrecency: true };
-  const discovery = channel(8911).useDiscovery(obj5);
+  let obj3 = ApplicationCommandDiscoveryManager;
+  const commandDiscoveryManager = obj3.useCommandDiscoveryManager((initialSectionId) => initialSectionId.initialSectionId);
+  let tmp8 = channel(8939);
+  const obj4 = { context: { channel, type: "channel" }, filters: obj5, options: obj6, allowFetch: true };
+  obj5 = { commandTypes: items, builtIns: canOnlyUseTextCommands ? BuiltInCommandFilter.ONLY_TEXT : BuiltInCommandFilter.ALLOW, applicationCommands: !canOnlyUseTextCommands };
+  const useDiscovery = tmp8.useDiscovery;
+  items = [Server.ApplicationCommandType.CHAT];
+  BuiltInCommandFilter = ApplicationCommandQueryTypes.BuiltInCommandFilter;
+  obj6 = { placeholderCount: 3, limit: commandDiscoveryManager, includeFrecency: true };
+  const discovery = useDiscovery(obj4);
   const sectionDescriptors = discovery.sectionDescriptors;
   ({ activeSections: c11, commandsByActiveSection } = discovery);
   ({ hasMoreAfter: c13, filteredSectionId } = discovery);
   ({ scrollDown: c15, filterSection } = discovery);
-  const items1 = [filterSection, commandDiscoveryManager, tmp4[1], sectionDescriptors];
+  const items1 = [filterSection, commandDiscoveryManager, tmp6, sectionDescriptors];
+  const loading = discovery.loading;
   const effect = obj2.useEffect(() => {
     if (null != commandDiscoveryManager) {
       filterSection(tmp);
       const findIndexResult = sectionDescriptors.findIndex((id) => id.id === commandDiscoveryManager);
       let num2 = 0;
+      const tmp6 = closure_7;
       if (-1 !== findIndexResult) {
         num2 = findIndexResult;
       }
-      closure_7(num2);
+      tmp6(num2);
     }
   }, items1);
   const effect1 = obj2.useEffect(() => {
-    const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-    const intl = util.intl;
-    AccessibilityAnnouncer.announce(intl.string(util.t["2wfLMm"]));
-    AppAnalyticsUtils.trackWithMetadata(commandsByActiveSection.APPLICATION_COMMAND_BROWSER_OPENED);
+    const AccessibilityAnnouncer = require("AccessibilityAnnouncer").AccessibilityAnnouncer;
+    const announce = AccessibilityAnnouncer.announce;
+    const intl = require("intl").intl;
+    announce(intl.string(require("intl").t["2wfLMm"]));
+    let obj = require("AppAnalyticsUtils");
+    obj.trackWithMetadata(commandsByActiveSection.APPLICATION_COMMAND_BROWSER_OPENED);
     return () => {
-      const result = closure_1_0(dependencyMap[12]).updateInitialSectionId(undefined);
+      const obj = closure_1_0(closure_1_3[14]);
+      const result = obj.updateInitialSectionId(undefined);
     };
   }, []);
   const items2 = [commandsByActiveSection, onHeightChange, bound];
   const effect2 = obj2.useEffect(() => {
     if (onHeightChange != null) {
-      closure_0 = bound;
+      let closure_0 = bound;
       let num2 = 0;
+      const arr = commandsByActiveSection;
       if (0 !== commandsByActiveSection.length) {
         num2 = arr.reduce((acc, data) => {
+          let sum;
           if (0 === data.data.length) {
-            let sum = ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT + 160;
+            sum = closure_2_0(closure_2_3[8]).APPLICATION_SECTION_HEADER_HEIGHT + 160;
           } else {
-            sum = acc + (ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT + (closure_0 + sectionDescriptors) * data.data.length);
+            sum = acc + (closure_2_0(closure_2_3[8]).APPLICATION_SECTION_HEADER_HEIGHT + (closure_0 + sectionDescriptors) * data.data.length);
           }
           return sum;
         }, 0);
       }
       tmp(num2);
-      arr = commandsByActiveSection;
     }
   }, items2);
   const items3 = [sectionDescriptors, filterSection, filteredSectionId];
   onPressSection = obj2.useCallback((arg0) => {
     if (sectionDescriptors[arg0].id !== filteredSectionId) {
-      if (tmp.id !== constants.FRECENCY) {
-        filterSection(tmp.id);
+      if (sectionDescriptors[arg0].id !== metroImportAll.FRECENCY) {
+        filterSection(sectionDescriptors[arg0].id);
         closure_7(arg0);
       }
-      const result = ApplicationCommandDiscoveryManager.updateInitialSectionId(undefined);
+      const obj = ApplicationCommandDiscoveryManager;
+      const result = obj.updateInitialSectionId(undefined);
     }
     filterSection(null);
     closure_7(0);
   }, items3);
   const callback1 = obj2.useCallback(() => {
-    closure_8.current = true;
-    AppAnalyticsUtils.trackWithMetadata(constants2.APPLICATION_COMMAND_BROWSER_SCROLLED);
+    ref.current = true;
+    const obj = AppAnalyticsUtils;
+    obj.trackWithMetadata(commandsByActiveSection.APPLICATION_COMMAND_BROWSER_SCROLLED);
   }, []);
   const callback2 = obj2.useCallback((nativeEvent) => {
     nativeEvent = nativeEvent.nativeEvent;
     const targetContentOffset = nativeEvent.targetContentOffset;
-    let y;
+    let y1;
+    const y = nativeEvent.contentOffset.y;
     if (targetContentOffset != null) {
-      y = targetContentOffset.y;
+      y1 = targetContentOffset.y;
     }
-    if (nativeEvent.contentOffset.y === y) {
-      closure_8.current = false;
+    if (y === y1) {
+      ref.current = false;
     }
   }, []);
   const items4 = [sectionDescriptors, commandsByActiveSection, bound];
-  const callback3 = obj2.useCallback(() => {
-    closure_8.current = false;
+  const callback3 = obj2.useCallback((arg0) => {
+    ref.current = false;
   }, []);
   const memo = obj2.useMemo(() => {
-    c0 = 0;
+    function _loop2(item10008) {
+      let closure_0 = item10008;
+      const findIndexResult = commandsByActiveSection.findIndex((section) => section.section.id === id.id);
+      const tmp = commandsByActiveSection;
+      if (findIndexResult >= 0) {
+        const result = tmp[findIndexResult].data.length * bound;
+        const sum = result + ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT + c0;
+        items.push(sum);
+        c0 = sum;
+      } else {
+        items.push(c0);
+      }
+    }
+    let c0 = 0;
     const items = [];
     for (const item10008 of sectionDescriptors) {
-      let tmp = (function _loop(item10008) {
-        const findIndexResult = commandsByActiveSection.findIndex((section) => section.section.id === item10008.id);
-        if (findIndexResult >= 0) {
-          const result = commandsByActiveSection[findIndexResult].data.length * bound;
-          const sum = result + ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT + c0;
-          items.push(sum);
-          c0 = sum;
-        } else {
-          items.push(c0);
-        }
-      })(item10008);
+      let tmp = _loop2(item10008);
       continue;
     }
     return items;
   }, items4);
   const items5 = [memo];
-  closure_19 = obj2.useMemo(() => _modDef12.throttle((arg0) => {
-    let num = 0;
-    if (0 < memo.length) {
-      let num2 = 0;
-      let num3 = 0;
-      if (0 === tmp[0]) {
-        const sum = num3 + 1;
-        const sum1 = num2 + 1;
-        num = sum;
-        while (sum1 < memo.length) {
-          num2 = sum1;
-          num3 = sum;
-          if (0 === tmp5[sum1]) {
-            continue;
-          } else {
+  let closure_19 = obj2.useMemo(() => {
+    const obj = _modDef12;
+    return obj.throttle((arg0) => {
+      let num = 0;
+      if (0 < memo.length) {
+        let num2 = 0;
+        let num3 = 0;
+        if (0 === memo[0]) {
+          const sum = num3 + 1;
+          const sum1 = num2 + 1;
+          num = sum;
+          while (sum1 < memo.length) {
             num2 = sum1;
             num3 = sum;
-            num = sum;
-            if (arg0 < tmp5[sum1]) {
-              break;
+            if (0 === tmp5[sum1]) {
+              continue;
+            } else {
+              num2 = sum1;
+              num3 = sum;
+              num = sum;
+              if (arg0 < tmp5[sum1]) {
+                break;
+              }
             }
+            continue;
           }
-          continue;
+        } else {
+          num2 = 0;
+          num3 = 0;
+          num = 0;
         }
-      } else {
-        num2 = 0;
-        num3 = 0;
-        num = 0;
       }
-    }
-    closure_1_7(num);
-  }, 100), items5);
+      closure_1_7(num);
+    }, 100);
+  }, items5);
   const items6 = [bound];
   const items7 = [channel.guild_id, onPressSection, sectionDescriptors, selectedIndex];
   const callback4 = obj2.useCallback((arg0, index) => {
     if (null == arg0) {
-      const obj2 = { length: 0, offset: 0, index };
-      return obj2;
+      return { length: 0, offset: 0, index };
     } else {
       let num = 0;
       let num2 = 0;
       let num3 = 0;
-      let ROW = constants3.ROW;
+      let ROW = map1.ROW;
       const iter = arg0[Symbol.iterator]();
       const nextResult = iter.next();
       while (iter !== undefined) {
+        let num4;
         let tmp4 = nextResult;
         if (num + num2 + nextResult.data.length + num3 + 1 >= index) {
           if (index === num + num2 + num3) {
-            ROW = constants3.HEADER;
+            ROW = map1.HEADER;
           } else if (index === num + num2 + tmp4.data.length + num3 + 1) {
             num = num + 1;
             num2 = num2 + nextResult.data.length;
-            ROW = constants3.FOOTER;
+            ROW = map1.FOOTER;
           } else {
             let sum = num + 1;
             num = sum;
             num2 = num2 + (index - sum - num2 - num3);
-            ROW = constants3.ROW;
+            ROW = map1.ROW;
           }
           iter.return();
           break;
@@ -234,26 +941,23 @@ export default function ApplicationCommandDiscovery(channel) {
           num3 = num3 + 1;
           continue;
         }
-        let tmp28 = constants3;
-        if (constants3.ROW === ROW) {
-          let num4 = bound;
+        let tmp28 = map1;
+        if (map1.ROW === ROW) {
+          num4 = bound;
         } else if (tmp29.HEADER === ROW) {
           num4 = ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT;
         } else {
           let FOOTER = tmp28.FOOTER;
           num4 = 0;
         }
-        let obj = { length: num4, offset: null, index: null };
-        obj.offset = num * ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT + num2 * bound;
-        obj.index = index;
+        let obj = { length: num4, offset: num * ApplicationSectionHeader.APPLICATION_SECTION_HEADER_HEIGHT + num2 * bound, index };
         return obj;
       }
     }
   }, items6);
-  const obj8 = { style: null, children: null };
-  const items8 = [tmp.discoveryWrapper, channel.style];
-  obj8.style = items8;
-  const obj9 = {
+  const obj7 = { style: items8, children: items9 };
+  items8 = [tmp.discoveryWrapper, style];
+  const obj8 = {
     ref,
     sections: commandsByActiveSection,
     style: tmp.commandsList,
@@ -261,35 +965,31 @@ export default function ApplicationCommandDiscovery(channel) {
     onScrollEndDrag: callback2,
     onMomentumScrollEnd: callback3,
     onScroll(nativeEvent) {
+      let contentInset;
+      let contentSize;
+      let layoutMeasurement;
       nativeEvent = nativeEvent.nativeEvent;
       ({ layoutMeasurement, contentSize, contentInset } = nativeEvent);
       const y = nativeEvent.contentOffset.y;
       closure_19(y);
-      const current = ref.current;
-      let tmp2 = !current;
-      if (!current) {
-        tmp2 = _undefined.length > 0;
-      }
+      const tmp2 = !ref.current && _undefined.length > 0;
       if (tmp2) {
         if (y < contentInset.top) {
-          const current2 = ref.current;
-          if (current2 != null) {
-            current2.scrollToLocation({ sectionIndex: 0, itemIndex: 0, viewPosition: 0, animated: false });
+          const current = ref.current;
+          if (current != null) {
+            current.scrollToLocation({ sectionIndex: 0, itemIndex: 0, viewPosition: 0, animated: false });
           }
         } else if (y > contentSize.height - layoutMeasurement.height - contentInset.bottom) {
-          const current3 = ref.current;
-          if (current3 != null) {
-            const obj = { sectionIndex: _undefined.length - 1, itemIndex: null, viewPosition: 1, animated: false };
+          const current2 = ref.current;
+          if (current2 != null) {
             const _Math = Math;
-            obj.itemIndex = Math.max(commandsByActiveSection[commandsByActiveSection.length - 1].data.length - 1, 0);
-            current3.scrollToLocation(obj);
+            const scrollToLocation = current2.scrollToLocation;
+            const obj = { sectionIndex: _undefined.length - 1, itemIndex: Math.max(commandsByActiveSection[commandsByActiveSection.length - 1].data.length - 1, 0), viewPosition: 1, animated: false };
+            scrollToLocation(obj);
           }
         }
       }
-      let tmp7 = c13;
-      if (c13) {
-        tmp7 = y + layoutMeasurement.height >= contentSize.height - 3 * bound;
-      }
+      const tmp7 = c13 && y + layoutMeasurement.height >= contentSize.height - 3 * bound;
       if (tmp7) {
         _undefined2();
       }
@@ -298,59 +998,72 @@ export default function ApplicationCommandDiscovery(channel) {
     keyExtractor(id) {
       return id.id;
     },
-    maintainVisibleContentPosition: null,
-    renderItem: null,
-    renderSectionHeader: null,
-    getItemLayout: null,
+    maintainVisibleContentPosition: obj9,
+    renderItem(item) {
+      item = item.item;
+      const section = item.section;
+      let found;
+      const tmp = closure_3;
+      if (item.inputType === require("ApplicationCommandTypes").ApplicationCommandInputType.PLACEHOLDER) {
+        return filteredSectionId(onHeightChange(tmp[25]), {});
+      } else {
+        found = sectionDescriptors.find((id) => id.id === item.applicationId);
+        const obj = {
+          command: item,
+          onPress() {
+              let tmpResult;
+              if (_require != null) {
+                tmpResult = tmp(item, found, section.section);
+              }
+              return tmpResult;
+            },
+          section: found,
+          showIcon: item.applicationId !== section.section.id,
+          guildId: found.guild_id
+        };
+        return filteredSectionId(onHeightChange(tmp[26]), obj);
+      }
+    },
+    renderSectionHeader(section) {
+      let intl;
+      let obj5;
+      section = section.section;
+      const children = [, ];
+      const obj = { section: section.section, guildId: channel.guild_id };
+      children[0] = authStore2(ApplicationSectionHeaderDefault, obj, section.section.id);
+      let tmp3Result = 0 === section.data.length;
+      const tmp = authStore3;
+      const tmp2 = closure_15;
+      const tmp3 = authStore2;
+      if (tmp3Result) {
+        const obj3 = { lightSource: AssetRegistryDefault, darkSource: AssetRegistryDefault, body: intl.format(intl2.t.WoQXT6, obj5), containerStyle: null, imageStyle: null };
+        const ThemedEmptyState = native.ThemedEmptyState;
+        intl = intl2.intl;
+        obj5 = { applicationName: section.section.name };
+        ({ noCommandsContainer: obj2.containerStyle, noCommandsImage: obj2.imageStyle } = closure_3);
+        tmp3Result = tmp3(ThemedEmptyState, obj3);
+      }
+      children[1] = tmp3Result;
+      return tmp(tmp2, { children });
+    },
+    getItemLayout: callback4,
     stickySectionHeadersEnabled: true
   };
-  let obj10 = null;
-  const memo1 = obj2.useMemo(() => closure_2_14(ApplicationCommandsCategoriesDefault, { onPressSection, sections: sectionDescriptors, selectedIndex, guildId: channel.guild_id }), items7);
-  if (discovery.loading) {
-    obj10 = { minIndexForVisible: 1 };
+  obj9 = null;
+  const memo1 = obj2.useMemo(() => {
+    const obj = { onPressSection, sections: sectionDescriptors, selectedIndex, guildId: channel.guild_id };
+    return authStore2(ApplicationCommandsCategoriesDefault, obj);
+  }, items7);
+  let tmp20 = filterSection;
+  let tmp21 = selectedIndex;
+  let tmp22 = filteredSectionId;
+  let tmp23 = closure_7;
+  if (loading) {
+    obj9 = { minIndexForVisible: 1 };
   }
-  obj9.maintainVisibleContentPosition = obj10;
-  obj9.renderItem = function renderItem(item) {
-    item = item.item;
-    const section = item.section;
-    let found;
-    if (item.inputType === ApplicationCommandTypes.ApplicationCommandInputType.PLACEHOLDER) {
-      return filteredSectionId(onHeightChange(12106), {});
-    } else {
-      found = sectionDescriptors.find((id) => id.id === item.applicationId);
-      const obj = {
-        command: item,
-        onPress() {
-            let tmpResult;
-            if (require != null) {
-              tmpResult = tmp(item, found, section.section);
-            }
-            return tmpResult;
-          },
-        section: found,
-        showIcon: item.applicationId !== section.section.id,
-        guildId: found.guild_id
-      };
-      return filteredSectionId(onHeightChange(12107), obj);
-    }
-  };
-  obj9.renderSectionHeader = function renderSectionHeader(section) {
-    section = section.section;
-    const children = [closure_2_14(ApplicationSectionHeaderDefault, { section: section.section, guildId: channel.guild_id }, section.section.id), ];
-    let tmp3Result = 0 === section.data.length;
-    if (tmp3Result) {
-      const obj3 = { lightSource: tmp4(10074), darkSource: tmp4(10074), body: null, containerStyle: null, imageStyle: null };
-      const intl = util.intl;
-      const obj5 = { applicationName: section.section.name };
-      obj3.body = intl.format(util.t.WoQXT6, obj5);
-      ({ noCommandsContainer: obj2.containerStyle, noCommandsImage: obj2.imageStyle } = closure_3);
-      tmp3Result = closure_2_14(native.ThemedEmptyState, obj3);
-    }
-    children[1] = tmp3Result;
-    return value2(__initData, { children });
-  };
-  obj9.getItemLayout = callback4;
-  const items9 = [filteredSectionId(closure_7, obj9), memo1];
-  obj8.children = items9;
-  return filterSection(selectedIndex, obj8);
-};
+  items9 = [tmp22(tmp23, obj8), memo1];
+  return tmp20(tmp21, obj7);
+});
+let result = size.fileFinishedImporting("modules/application_commands/native/ApplicationCommandDiscovery.tsx");
+
+export default tmp6;

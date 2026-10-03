@@ -1,61 +1,40 @@
 // Module ID: 1862
 // Function ID: 1863
-// Dependencies: [19, 17, 21, 1857, 1832, 1863, 1830, 1856]
+// Dependencies: [19, 17, 21, 1837]
 // Exports: default
 
 // Module 1862
-import _mod1830 from "module_1830" /* 1830 */;
-import "module_19";
+import react2 from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react_native from "react-native" /* 17 */;
 
-require = fn;
-const noop = fn(19);
-({ useCallback: c3, useMemo: closure_4 } = noop);
-get_ActivityIndicator = fn(17);
-({ StyleSheet, Text: hasOwnProperty } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const doneButtonContainer = StyleSheet.create({ doneButton: { fontWeight: "600", fontSize: 15 }, doneButtonContainer: { marginRight: 16, marginLeft: 8 } });
+let Platform;
+let TouchableOpacity;
+let c3;
+let closure_4;
+const useMemo = react2.useMemo;
+({ Platform, TouchableNativeFeedback: c3, TouchableOpacity, View: closure_4 } = react_native);
+const jsx = Fragment.jsx;
 
-export default function _default(rippleRadius) {
-  ({ children, onPress } = rippleRadius);
-  let num = rippleRadius.rippleRadius;
+export default function _default(disabled) {
+  let accessibilityHint;
+  let accessibilityLabel;
+  let children;
+  let onPress;
+  let style;
+  let testID;
+  let theme;
+  disabled = disabled.disabled;
+  let num = disabled.rippleRadius;
+  ({ children, onPress, accessibilityLabel, accessibilityHint, testID } = disabled);
   if (num === undefined) {
-    num = 28;
+    num = 18;
   }
-  ({ button, text } = rippleRadius);
-  if (button === undefined) {
-    button = keyboardState(theme[3]);
-  }
-  theme = undefined;
-  keyboardState = onPress(theme[4]).useKeyboardState((appearance) => appearance.appearance);
-  const obj = onPress(theme[4]);
-  theme = onPress(theme[5]).useToolbarContext().theme;
-  let items = [keyboardState, theme];
-  const items1 = [onPress];
-  const obj2 = onPress(theme[5]);
-  const obj3 = { accessibilityHint: "Closes the keyboard", accessibilityLabel: "Done", rippleRadius: num, style: doneButtonContainer.doneButtonContainer, testID: null, theme: null, onPress: null, children: null };
-  const tmp4 = closure_4(() => {
-    const items = [doneButton.doneButton, { color: theme[keyboardState].primary }];
-    return items;
-  }, items);
-  obj3.testID = onPress(theme[7]).TEST_ID_KEYBOARD_TOOLBAR_DONE;
-  obj3.theme = theme;
-  obj3.onPress = closure_3((isDefaultPrevented) => {
-    if (onPress != null) {
-      tmp(isDefaultPrevented);
-    }
-    if (!isDefaultPrevented.isDefaultPrevented()) {
-      const KeyboardController = _mod1830.KeyboardController;
-      KeyboardController.dismiss();
-    }
-  }, items1);
-  const obj4 = { maxFontSizeMultiplier: 1.3, style: tmp4, children: null };
-  if (children == null) {
-    children = text;
-  }
-  if (children == null) {
-    children = "Done";
-  }
-  obj4.children = children;
-  obj3.children = <closure_5 maxFontSizeMultiplier={1.3} style={tmp4}>{null}</closure_5>;
-  return <button accessibilityHint="Closes the keyboard" accessibilityLabel="Done" rippleRadius={num} style={doneButtonContainer.doneButtonContainer} testID={null} theme={null} onPress={null}>{null}</button>;
+  ({ style, theme } = disabled);
+  const obj = disabled(num[3]);
+  const keyboardState = obj.useKeyboardState((appearance) => appearance.appearance);
+  const items = [disabled];
+  const items1 = [keyboardState, num, theme];
+  const tmp2 = theme(() => ({ disabled }), items);
+  return <keyboardState accessibilityHint={accessibilityHint} accessibilityLabel={accessibilityLabel} accessibilityRole="button" accessibilityState={tmp2} background={theme(() => _false.Ripple(theme[keyboardState].ripple, true, num), items1)} style={style} testID={testID} onPress={onPress}><closure_4 style={style}>{children}</closure_4></keyboardState>;
 };

@@ -1,14 +1,13 @@
-// Module ID: 2075
-// Function ID: 2076
-// Dependencies: [2, 2076]
+// Module ID: 2080
+// Function ID: 2081
+// Dependencies: [2, 2081]
 
-// Module 2075
+// Module 2080
+import react_native from "react-native" /* 2081 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-
 const result = size.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/implementation/index.tsx");
-for (const key10018 in require("Classic")) {
-  arg5[key10018] = require("Classic")[key10018];
+for (const key10018 in react_native) {
+  exports[key10018] = react_native[key10018];
   continue;
 }

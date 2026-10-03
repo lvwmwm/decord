@@ -1,45 +1,50 @@
-// Module ID: 14210
-// Function ID: 14211
+// Module ID: 14278
+// Function ID: 14279
 // Name: BackPressManager
-// Dependencies: [17, 4732, 1611, 1483, 1983, 1364, 2]
+// Dependencies: [17, 4747, 1616, 1488, 1989, 1369, 2]
 
-// Module 14210 (BackPressManager)
-import _mod17 from "module_17" /* 17 */;
-import KeyboardTypes from "KeyboardTypes" /* 1611 */;
-import useKeyboardType from "useKeyboardType" /* 4732 */;
-import LifecycleManager from "LifecycleManager" /* 1983 */;
+// Module 14278 (BackPressManager)
+import react_native from "react-native" /* 17 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import KeyboardUIStore from "KeyboardUIStore" /* 1488 */;
+import KeyboardTypes from "KeyboardTypes" /* 1616 */;
+import useKeyboardType from "useKeyboardType" /* 4747 */;
+import LifecycleManager from "LifecycleManager" /* 1989 */;
 import size from "module_2" /* 2 */;
 
 function handleBackPress() {
-  const keyboardType = useKeyboardType.getKeyboardType();
+  const obj = useKeyboardType;
+  const keyboardType = obj.getKeyboardType();
   let flag = keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM;
   if (flag) {
-    const obj2 = { type: tmp(1611).KeyboardTypes.SYSTEM };
-    tmp(1483).setKeyboardType(obj2);
+    const obj2 = { type: KeyboardTypes.KeyboardTypes.SYSTEM };
+    const setKeyboardType = KeyboardUIStore.setKeyboardType;
+    KeyboardUIStore;
+    setKeyboardType(obj2);
     flag = true;
-    const tmpResult = tmp(1483);
   }
   return flag;
 }
-_mod17.BackHandler;
-class BackPressManager extends tmp2 {
+const BackHandler = react_native.BackHandler;
+class BackPressManager extends LifecycleManager {
+  _initialize() {
+    const obj = PlatformUtils;
+    if (obj.isAndroid()) {
+      const self = this;
+      const result = this._initializeGlobalBackPressListener();
+    }
+  }
+  _initializeGlobalBackPressListener() {
+    this._backPressEventSubscription = BackHandler.addEventListener("hardwareBackPress", handleBackPress);
+  }
+  _terminate() {
+    const _backPressEventSubscription = this._backPressEventSubscription;
+    if (_backPressEventSubscription != null) {
+      _backPressEventSubscription.remove();
+    }
+  }
 }
 const prototype = BackPressManager.prototype;
-prototype["_initialize"] = function _initialize() {
-  if (obj.isAndroid()) {
-    const self = this;
-    const result = this._initializeGlobalBackPressListener();
-  }
-};
-prototype["_initializeGlobalBackPressListener"] = function _initializeGlobalBackPressListener() {
-  this._backPressEventSubscription = BackHandler.addEventListener("hardwareBackPress", handleBackPress);
-};
-prototype["_terminate"] = function _terminate() {
-  const _backPressEventSubscription = this._backPressEventSubscription;
-  if (_backPressEventSubscription != null) {
-    _backPressEventSubscription.remove();
-  }
-};
 const backPressManager = new BackPressManager();
 let result = size.fileFinishedImporting("modules/routing/native/BackPressManager.tsx");
 

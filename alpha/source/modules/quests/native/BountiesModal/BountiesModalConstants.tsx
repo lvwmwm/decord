@@ -1,10 +1,10 @@
-// Module ID: 14755
-// Function ID: 14756
+// Module ID: 14811
+// Function ID: 14812
 // Name: BountiesModalConstants
 // Dependencies: [2]
 // Exports: getBountyVideoEndAppStoreSheetHeight, getBountyVideoEndPeekClipHeight, getBountyVideoEndPeekScale, getBountyVideoEndPeekTargetScale
 
-// Module 14755 (BountiesModalConstants)
+// Module 14811 (BountiesModalConstants)
 import size from "module_2" /* 2 */;
 
 function getBountyVideoEndPeekScale(arg0, arg1) {
@@ -27,13 +27,14 @@ export const getBountyVideoEndAppStoreSheetHeight = function getBountyVideoEndAp
 };
 export const getBountyVideoEndPeekTargetScale = function getBountyVideoEndPeekTargetScale(windowHeight) {
   windowHeight = windowHeight.windowHeight;
+  const videoTop = windowHeight.videoTop;
   const bound = Math.min(windowHeight.videoWidth, windowHeight.videoHeight);
   if (bound <= 0) {
     return 1;
   } else {
     const _Math = Math;
     const _Math2 = Math;
-    return Math.min(1, Math.max(0.1, (windowHeight - 0.6 * windowHeight - windowHeight.videoTop - 8) / bound));
+    return Math.min(1, Math.max(0.1, (windowHeight - 0.6 * windowHeight - videoTop - 8) / bound));
   }
 };
 export { getBountyVideoEndPeekScale };

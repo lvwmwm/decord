@@ -1,30 +1,30 @@
 // Module ID: 6406
 // Function ID: 6407
-// Dependencies: [19]
-// Exports: useStableCallback
+// Dependencies: []
+// Exports: useDataMultiplier
 
 // Module 6406
-import noop from "module_19" /* 19 */;
 
-({ useCallback: closure_0, useEffect: closure_1, useLayoutEffect: c2, useRef: c3 } = noop);
-
-export const useStableCallback = function useStableCallback(current) {
-  React3(undefined);
-  React2(() => {
-    closure_1.current = current;
-  });
-  framebus(() => () => {
-    ref.current = undefined;
-  }, []);
-  return React(() => {
-    const items = [...arguments];
-    current = ref.current;
-    let applyResult;
-    if (current != null) {
-      const items1 = [];
-      HermesBuiltin.arraySpread(items, 0);
-      applyResult = HermesBuiltin.apply(items1, tmp);
+export const useDataMultiplier = function useDataMultiplier(arg0, arg1) {
+  let num;
+  const length = arg0.length;
+  const array = new Array(arg1);
+  let flag = false;
+  if (typeof arg0[0] === "object") {
+    flag = true;
+  }
+  for (let num = 0; num < arg1; num = num + 1) {
+    let tmp4;
+    let tmp2 = arg0[num % length];
+    if (flag) {
+      let obj = {};
+      let merged = Object.assign(tmp2);
+      tmp4 = obj;
+    } else {
+      tmp4 = tmp2;
     }
-    return applyResult;
-  }, []);
+    array[num] = tmp4;
+  }
+  const items = [array];
+  return items;
 };

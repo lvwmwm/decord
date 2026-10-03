@@ -1,26 +1,48 @@
-// Module ID: 11410
-// Function ID: 11411
+// Module ID: 11326
+// Function ID: 11327
 // Name: CheckpointForwardPreview
-// Dependencies: [5070, 21, 11411, 2]
-// Exports: default
+// Dependencies: [5115, 21, 558, 576, 11327, 2]
 
-// Module 11410 (CheckpointForwardPreview)
-import jsxProd from "jsxProd" /* 21 */;
-import CheckpointConstants from "CheckpointConstants" /* 5070 */;
-import Checkpoint2025ForwardPreviewDefault from "Checkpoint2025ForwardPreview" /* 11411 */;
+// Module 11326 (CheckpointForwardPreview)
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 576 */;
+import CheckpointConstants from "CheckpointConstants" /* 5115 */;
+import Checkpoint2025ForwardPreviewDefault from "Checkpoint2025ForwardPreview" /* 11327 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const CheckpointVersions = CheckpointConstants.CheckpointVersions;
-const jsx = jsxProd.jsx;
-const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointForwardPreview.tsx");
+let checkpointData;
 
-export default function CheckpointForwardPreview(checkpointData) {
+const CheckpointVersions = CheckpointConstants.CheckpointVersions;
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((checkpointData) => {
+  const obj = react;
+  const cResult = obj.c(2);
   checkpointData = checkpointData.checkpointData;
   if (CheckpointVersions.V2025 === checkpointData.version) {
-    const obj = { checkpointData };
+    let tmp5;
+    if (cResult[0] !== checkpointData) {
+      const tmp8 = jsx(Checkpoint2025ForwardPreviewDefault, { checkpointData });
+      cResult[0] = checkpointData;
+      cResult[1] = tmp8;
+      tmp5 = tmp8;
+    } else {
+      tmp5 = cResult[1];
+    }
+    return tmp5;
+  } else {
+    const V2026 = tmp3.V2026;
+    return null;
+  }
+}) : ((checkpointData) => {
+  checkpointData = checkpointData.checkpointData;
+  if (CheckpointVersions.V2025 === checkpointData.version) {
     return jsx(Checkpoint2025ForwardPreviewDefault, { checkpointData });
   } else {
     const V2026 = tmp.V2026;
     return null;
   }
-};
+});
+const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointForwardPreview.tsx");
+
+export default tmp2;

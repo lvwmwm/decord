@@ -1,11 +1,11 @@
-// Module ID: 16571
-// Function ID: 16572
+// Module ID: 16648
+// Function ID: 16649
 // Name: VibegrationsMessageTime
-// Dependencies: [4541, 2]
+// Dependencies: [4552, 2]
 // Exports: describeMessageTime
 
-// Module 16571 (VibegrationsMessageTime)
-import DateUtils from "DateUtils" /* 4541 */;
+// Module 16648 (VibegrationsMessageTime)
+import DateUtils from "DateUtils" /* 4552 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsMessageTime.tsx");
@@ -22,8 +22,12 @@ export const describeMessageTime = function describeMessageTime(at) {
   let calendarFormatResult = null;
   if (isFiniteResult) {
     const _Date = Date;
+    const self = this;
+    const self2 = this;
+    const calendarFormat = DateUtils.calendarFormat;
+    DateUtils;
     const date = new Date(at);
-    calendarFormatResult = DateUtils.calendarFormat(date, true);
+    calendarFormatResult = calendarFormat(date, true);
   }
   return calendarFormatResult;
 };

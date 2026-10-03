@@ -1,19 +1,20 @@
-// Module ID: 4983
-// Function ID: 4984
+// Module ID: 5028
+// Function ID: 5029
 // Name: getFrontierTuningConfigIfEligible
-// Dependencies: [2066, 1074, 1970, 4517, 4984, 2]
+// Dependencies: [2074, 1085, 1976, 4528, 5029, 2]
 // Exports: default
 
-// Module 4983 (getFrontierTuningConfigIfEligible)
-import PremiumUtilsDefault from "PremiumUtils" /* 4517 */;
-import GuildStore from "GuildStore" /* 2066 */;
+// Module 5028 (getFrontierTuningConfigIfEligible)
+import Constants from "Constants" /* 1085 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1976 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4528 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const BoostedGuildTiers = fn(1074).BoostedGuildTiers;
-const size = fn(2);
+const BoostedGuildTiers = Constants.BoostedGuildTiers;
 const result = size.fileFinishedImporting("modules/go_live/utils/getFrontierTuningConfigIfEligible.tsx");
 
-export default function getFrontierTuningConfigIfEligible(location, currentUser, guildId) {
+export default function getFrontierTuningConfigIfEligible(location, user, guildId) {
   if (null != guildId) {
     const guild = GuildStore.getGuild(guildId);
     let premiumTier;
@@ -21,18 +22,20 @@ export default function getFrontierTuningConfigIfEligible(location, currentUser,
       premiumTier = guild.premiumTier;
     }
     if (premiumTier === BoostedGuildTiers.NONE) {
-      if (!obj4.isPremium(currentUser)) {
-        if (!obj.canStreamQuality(PremiumUtilsDefault.StreamQuality.MID, currentUser)) {
+      const obj4 = PremiumTypeUtils;
+      if (!obj4.isPremium(user)) {
+        const obj = PremiumUtilsDefault;
+        const tmp3 = importDefault;
+        if (!obj.canStreamQuality(PremiumUtilsDefault.StreamQuality.MID, user)) {
           const obj2 = { location, guildId };
-          const config = tmp3(4984).getConfig(obj2);
+          const tmp3Result = tmp3(5029);
+          const config = tmp3Result.getConfig(obj2);
           let tmp6 = null;
           if (null != config.maxBitrate) {
             tmp6 = config;
           }
           return tmp6;
         }
-        obj = PremiumUtilsDefault;
-        tmp3 = importDefault;
       }
       return null;
     }

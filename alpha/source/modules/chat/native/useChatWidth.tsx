@@ -1,51 +1,76 @@
-// Module ID: 11229
-// Function ID: 11230
+// Module ID: 11143
+// Function ID: 11144
 // Name: useChatWidth
-// Dependencies: [19, 4724, 4726, 11230, 11231, 2]
-// Exports: default, getChatWidth
+// Dependencies: [19, 4739, 4741, 11144, 558, 11145, 2]
+// Exports: getChatWidth
 
-// Module 11229 (useChatWidth)
-import useChatLayout from "useChatLayout" /* 4724 */;
-import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4726 */;
-import useDrawerWidth from "useDrawerWidth" /* 11230 */;
-import ChatViewWidthContextDefault from "ChatViewWidthContext" /* 11231 */;
-import noop from "module_19" /* 19 */;
+// Module 11143 (useChatWidth)
+import useChatLayout from "useChatLayout" /* 4739 */;
+import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4741 */;
+import useDrawerWidth from "useDrawerWidth" /* 11144 */;
+import reactDefault from "react" /* 11145 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const useChatLayoutDefault = useChatLayout;
 const useBaseAppContainerDimensionsDefault = useBaseAppContainerDimensions;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/chat/native/useChatWidth.tsx");
-
-export default function useChatWidth(arg0) {
-  let context = noop.useContext(ChatViewWidthContextDefault);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let context = react.useContext(reactDefault);
+  const isChatLockedOpen = useChatLayoutDefault().isChatLockedOpen;
   const width = useBaseAppContainerDimensionsDefault().width;
   useDrawerWidth;
   if (null == context) {
+    let tmp5;
     if (null == arg0) {
       let diff = width;
-      if (useChatLayoutDefault().isChatLockedOpen) {
+      if (isChatLockedOpen) {
         diff = width - tmp3;
       }
-      let tmp5 = diff;
+      tmp5 = diff;
     } else {
       tmp5 = width;
     }
     context = tmp5;
   }
   return context;
-};
+}) : ((arg0) => {
+  let context = react.useContext(reactDefault);
+  const isChatLockedOpen = useChatLayoutDefault().isChatLockedOpen;
+  const width = useBaseAppContainerDimensionsDefault().width;
+  useDrawerWidth;
+  if (null == context) {
+    let tmp5;
+    if (null == arg0) {
+      let diff = width;
+      if (isChatLockedOpen) {
+        diff = width - tmp3;
+      }
+      tmp5 = diff;
+    } else {
+      tmp5 = width;
+    }
+    context = tmp5;
+  }
+  return context;
+});
+const result = size.fileFinishedImporting("modules/chat/native/useChatWidth.tsx");
+
+export default tmp2;
 export const getChatWidth = function getChatWidth(arg0) {
+  let tmp3;
   const obj = useChatLayout;
-  const width = useBaseAppContainerDimensions.getBaseAppContainerDimensions().width;
+  const isChatLockedOpen = obj.getChatLayout().isChatLockedOpen;
+  const obj2 = useBaseAppContainerDimensions;
+  const width = obj2.getBaseAppContainerDimensions().width;
   if (null == arg0) {
     let diff = width;
-    if (obj.getChatLayout().isChatLockedOpen) {
-      diff = width - useDrawerWidth.getDrawerWidth();
+    if (isChatLockedOpen) {
       const tmpResult = useDrawerWidth;
+      diff = width - tmpResult.getDrawerWidth();
     }
-    let tmp3 = diff;
+    tmp3 = diff;
   } else {
     tmp3 = width;
   }

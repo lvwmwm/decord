@@ -1,119 +1,132 @@
-// Module ID: 17446
-// Function ID: 17447
+// Module ID: 17533
+// Function ID: 17534
 // Name: resolveStorefrontCodedLink
-// Dependencies: [32, 5, 6008, 17433, 11235, 4830, 573, 17447, 10458, 2]
+// Dependencies: [32, 5, 5695, 17523, 11149, 4875, 584, 17534, 10532, 2]
 // Exports: default
 
-// Module 17446 (resolveStorefrontCodedLink)
-import _slicedToArray from "module_32" /* 32 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import SKUStore from "SKUStore" /* 6008 */;
+// Module 17533 (resolveStorefrontCodedLink)
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import SKUStore from "SKUStore" /* 5695 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
+let c1, c4, closure_2;
+
 const set = new Set();
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/slayer_storefront/resolveStorefrontCodedLink.tsx");
 
 export default function resolveStorefrontCodedLink(arg0, code) {
-  const result = obj3(11235).parseStorefrontCodedLink(code);
+  let obj3;
+  const tmp = obj3;
+  const tmp2 = dependencyMap;
+  let obj = obj3(11149);
+  const result = obj.parseStorefrontCodedLink(code);
   if (null != result) {
-    if (arg0 === tmp(4830).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
+    if (arg0 === tmp(4875).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
       let obj2 = { type: "application", applicationId: result.scopeId };
       obj3 = obj2;
     } else {
       obj3 = { type: "guild", guildId: result.scopeId };
     }
     if (result.skuIds.length <= 1) {
-      const skuId = _slicedToArray(result.skuIds, 1)[0];
+      let skuId = _slicedToArray(result.skuIds, 1)[0];
+      const tmp4 = null != SKUStore.get(skuId) || obj9.isFetching(skuId) || obj9.didFetchingSkuFail(skuId);
       if (!tmp4) {
-        const obj5 = { type: "STORE_LISTINGS_FETCH_START", skuId };
-        skuId(573).dispatch(obj5);
-        let obj4 = skuId(573);
+        let obj4 = skuId(584);
+        let obj5 = { type: "STORE_LISTINGS_FETCH_START", skuId };
+        obj4.dispatch(obj5);
         const items = [skuId];
-        const storefrontCodedLink = tmp(11235).makeStorefrontCodedLink(items, result.scopeId);
-        closure_129_0 = storefrontCodedLink;
-        closure_129_1 = asyncGeneratorStep(async (arg0, value) => {
-          if (v3 === 2) {
-            v3 = 3;
+        const tmpResult = tmp(11149);
+        const storefrontCodedLink = tmpResult.makeStorefrontCodedLink(items, result.scopeId);
+        const tmp8 = _asyncToGenerator;
+        skuId = _asyncToGenerator(async (arg0, value) => {
+          let v1;
+          let v3;
+          if (obj3 === 2) {
+            obj3 = 3;
             throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp3 === 3) {
+          } else if (tmp2 === 3) {
             if (arg0 === 1) {
               throw value;
             } else if (arg0 === 2) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             try {
-              v3 = 2;
-              if (0 === v1) {
+              obj3 = 2;
+              if (0 === skuId) {
                 if (arg0 === 1) {
-                  v3 = 3;
+                  obj3 = 3;
                   throw value;
                 } else if (arg0 === 2) {
-                  v3 = 3;
+                  obj3 = 3;
                   const obj4 = { value, done: true };
                   return obj4;
                 } else {
-                  const tmp16 = v1(dependencyMap[7])();
+                  const tmp14 = skuId(dependencyMap[7])();
                   if ("application" === obj3.type) {
-                    v1 = 2;
-                    v3 = 1;
-                    const obj6 = { value: v3(tmp15[8]).fetchSocialLayerStorefrontSkuForApplication(tmp17.applicationId, first, tmp16), done: false };
+                    skuId = 2;
+                    const obj5 = obj3(dependencyMap[8]);
+                    obj3 = 1;
+                    const obj6 = { value: obj5.fetchSocialLayerStorefrontSkuForApplication(obj3.applicationId, first, tmp14), done: false };
                     return obj6;
                   } else {
-                    obj3 = v3(tmp15[8]);
-                    v1 = 1;
-                    v3 = 1;
-                    const obj7 = { value: obj3.fetchSocialLayerStorefrontSku(tmp17.guildId, first, tmp16), done: false };
+                    obj3(dependencyMap[8]);
+                    skuId = 1;
+                    obj3 = 1;
+                    const obj7 = { value: obj3.fetchSocialLayerStorefrontSku(obj3.guildId, first, tmp14), done: false };
                     return obj7;
                   }
                 }
               } else {
-                if (1 === tmp4) {
+                if (1 === tmp3) {
                   if (arg0 === 1) {
-                    v3 = 3;
+                    obj3 = 3;
                     throw value;
                   } else if (arg0 === 2) {
-                    v3 = 3;
+                    obj3 = 3;
                     const obj8 = { value, done: true };
                     return obj8;
                   }
                 } else if (arg0 === 1) {
-                  v3 = 3;
+                  obj3 = 3;
                   throw value;
                 } else if (arg0 === 2) {
-                  v3 = 3;
+                  obj3 = 3;
                   const obj = { value, done: true };
                   return obj;
                 }
-                v3 = 3;
-                return { value: "HermesInternal", done: null };
+                obj3 = 3;
+                return { value: "IconComponent", done: "IconComponent" };
               }
-            } catch (tmp9) {
-              v3 = tmp;
-              throw tmp9;
+            } catch (tmp8) {
+              obj3 = 3;
+              throw tmp8;
             }
           }
         });
+        let obj7 = set;
         if (!set.has(storefrontCodedLink)) {
           obj7.add(storefrontCodedLink);
-          const result1 = tmp(17433).queueMessageLinkFetch(tmp8(function*(arg0, value) {
+          const tmpResult2 = tmp(17523);
+          const result1 = tmpResult2.queueMessageLinkFetch(tmp8(function*(arg0, value) {
             if (c4 === 2) {
               c4 = 3;
               throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp6 === 3) {
+            } else if (tmp3 === 3) {
               if (arg0 === 1) {
                 throw value;
               } else if (arg0 === 2) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } else {
+              let c3;
               try {
                 c4 = 2;
                 if (0 === c1) {
@@ -125,14 +138,14 @@ export default function resolveStorefrontCodedLink(arg0, code) {
                     obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    closure_0 = tmp3;
+                    let closure_0 = tmp;
                     c3 = 1;
                     c1 = 2;
                     c4 = 1;
-                    const obj4 = { value: first(), done: false };
+                    const obj4 = { value: v1(), done: false };
                     return obj4;
                   }
-                } else if (1 === tmp7) {
+                } else if (1 === tmp4) {
                   c3 = 0;
                   set.delete(closure_128_0);
                   throw closure_2;
@@ -149,26 +162,21 @@ export default function resolveStorefrontCodedLink(arg0, code) {
                   c3 = 0;
                   set.delete(closure_128_0);
                   c4 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "IconComponent", done: "IconComponent" };
                 }
-              } catch (tmp23) {
-                closure_2 = tmp23;
-                if (tmp4 === c3) {
-                  c4 = tmp2;
-                  throw tmp23;
+              } catch (tmp20) {
+                closure_2 = tmp20;
+                if (0 === c3) {
+                  c4 = 3;
+                  throw tmp20;
                 } else {
-                  c1 = tmp;
+                  c1 = 1;
                 }
               }
             }
           }));
-          const tmpResult2 = tmp(17433);
         }
-        obj7 = set;
-        tmp8 = asyncGeneratorStep;
-        const tmpResult = tmp(11235);
       }
-      tmp4 = null != SKUStore.get(skuId) || SKUStore.isFetching(skuId) || SKUStore.didFetchingSkuFail(skuId);
     }
   }
 };

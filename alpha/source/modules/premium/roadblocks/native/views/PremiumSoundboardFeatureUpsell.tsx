@@ -1,33 +1,67 @@
-// Module ID: 17145
-// Function ID: 17146
+// Module ID: 17221
+// Function ID: 17222
 // Name: PremiumSoundboardFeatureUpsell
-// Dependencies: [19, 17, 21, 4845, 576, 1613, 1094, 9615, 7447, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1618, 1105, 9643, 7483, 2]
 
-// Module 17145 (PremiumSoundboardFeatureUpsell)
-import nativeDefault from "native" /* 576 */;
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7447 */;
-import PremiumFeatureUpsellDefault from "PremiumFeatureUpsell" /* 9615 */;
-import noop from "module_19" /* 19 */;
+// Module 17221 (PremiumSoundboardFeatureUpsell)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import ConstantsIOS from "ConstantsIOS" /* 1105 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
+let shouldShow;
+
+let tmp;
+let tmp4;
+const EntitlementFeatureNames = tmp(7483);
+const PremiumFeatureUpsellDefault = tmp4(9643);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles((arg0) => {
-  const obj = { container: null };
-  const rect = { position: "absolute", bottom: arg0 + nativeDefault.space.PX_12, left: 0, right: 0, marginHorizontal: nativeDefault.space.PX_12 };
-  obj.container = rect;
+  let rect;
+  const obj = { container: rect };
+  rect = { position: "absolute", bottom: arg0 + nativeDefault.space.PX_12, left: 0, right: 0, marginHorizontal: nativeDefault.space.PX_12 };
   return obj;
 });
-const size = fn(2);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((shouldShow) => {
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(5);
+  shouldShow = shouldShow.shouldShow;
+  const tmp5 = closure_5(ConstantsIOS.EXPRESSION_FOOTER_HEIGHT + useSafeAreaInsetsDefault().bottom);
+  if (cResult[0] !== shouldShow) {
+    PremiumFeatureUpsellDefault;
+    const tmp9 = <tmp4Result shouldShow={shouldShow} featureName={EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE} />;
+    cResult[0] = shouldShow;
+    cResult[1] = tmp9;
+    tmp6 = tmp9;
+  } else {
+    tmp6 = cResult[1];
+  }
+  if (cResult[2] === tmp5.container) {
+    let tmp10;
+    if (cResult[3] === tmp6) {
+      tmp10 = cResult[4];
+    }
+    return tmp10;
+  }
+  const tmp11 = <View style={tmp5.container}>{tmp6}</View>;
+  cResult[2] = tmp5.container;
+  cResult[3] = tmp6;
+  cResult[4] = tmp11;
+  tmp10 = tmp11;
+}) : ((shouldShow) => {
+  shouldShow = shouldShow.shouldShow;
+  ({ shouldShow, featureName: EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE });
+  PremiumFeatureUpsellDefault;
+  return <View style={closure_5(ConstantsIOS.EXPRESSION_FOOTER_HEIGHT + useSafeAreaInsetsDefault().bottom).container}>{null}</View>;
+});
 const result = size.fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumSoundboardFeatureUpsell.tsx");
 
-export default function PremiumSoundboardFeatureUpsell(shouldShow) {
-  const obj = { style: closure_5(ConstantsIOS.EXPRESSION_FOOTER_HEIGHT + useSafeAreaInsetsDefault().bottom).container, children: null };
-  const obj2 = { shouldShow: shouldShow.shouldShow, featureName: EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE };
-  obj.children = jsx(PremiumFeatureUpsellDefault, { shouldShow: shouldShow.shouldShow, featureName: EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE });
-  return <View style={closure_5(ConstantsIOS.EXPRESSION_FOOTER_HEIGHT + useSafeAreaInsetsDefault().bottom).container}>{null}</View>;
-};
+export default tmp3;

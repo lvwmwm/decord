@@ -1,16 +1,16 @@
-// Module ID: 13042
-// Function ID: 13043
+// Module ID: 13099
+// Function ID: 13100
 // Name: VideoGuardExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1440, 2]
 
-// Module 13042 (VideoGuardExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 13099 (VideoGuardExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-08-video-guard", kind: "user", defaultConfig: { videoEnabled: true }, variations: null };
-const obj2 = { 1: null, 2: { videoEnabled: false } };
+let obj2;
+const obj = { name: "2026-08-video-guard", kind: "user", defaultConfig: { videoEnabled: true }, variations: obj2 };
+obj2 = { 1: null, 2: { videoEnabled: false } };
 obj2[2] = { videoEnabled: false };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/media_engine/VideoGuardExperiment.tsx");
 

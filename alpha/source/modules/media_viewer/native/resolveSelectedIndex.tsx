@@ -1,13 +1,16 @@
-// Module ID: 7925
-// Function ID: 7926
+// Module ID: 7970
+// Function ID: 7971
 // Name: resolveSelectedIndex
 // Dependencies: [2]
 // Exports: resolveSelectedIndex
 
-// Module 7925 (resolveSelectedIndex)
+// Module 7970 (resolveSelectedIndex)
 import size from "module_2" /* 2 */;
 
 function resolveSelectedIndex(arg0) {
+  let maxIndex;
+  let offsetX;
+  let pageSize;
   ({ offsetX, pageSize, maxIndex } = arg0);
   if (pageSize > 0) {
     const _Number = Number;

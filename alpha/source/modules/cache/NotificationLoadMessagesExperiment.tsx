@@ -1,16 +1,16 @@
-// Module ID: 17907
-// Function ID: 17908
+// Module ID: 17993
+// Function ID: 17994
 // Name: NotificationLoadMessagesExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1440, 2]
 
-// Module 17907 (NotificationLoadMessagesExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 17993 (NotificationLoadMessagesExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-03-notification-load-messages", kind: "user", defaultConfig: { enabled: false, limit: 1, cooldownMs: 0, debounceMs: 0 }, variations: null };
-const obj2 = { 1: null, 2: { enabled: true, limit: 1, cooldownMs: 60000, debounceMs: 3000 }, 3: { enabled: true, limit: 25, cooldownMs: 60000, debounceMs: 3000 }, 4: { enabled: true, limit: 10, cooldownMs: 60000, debounceMs: 3000 }, 5: { enabled: true, limit: 25, cooldownMs: 0, debounceMs: 3000 }, 6: { enabled: true, limit: 10, cooldownMs: 0, debounceMs: 3000 }, 7: { enabled: true, limit: 25, cooldownMs: 0, debounceMs: 0 } };
+let obj2;
+const obj = { name: "2026-03-notification-load-messages", kind: "user", defaultConfig: { enabled: false, limit: 1, cooldownMs: 0, debounceMs: 0 }, variations: obj2 };
+obj2 = { 1: null, 2: { enabled: true, limit: 1, cooldownMs: 60000, debounceMs: 3000 }, 3: { enabled: true, limit: 25, cooldownMs: 60000, debounceMs: 3000 }, 4: { enabled: true, limit: 10, cooldownMs: 60000, debounceMs: 3000 }, 5: { enabled: true, limit: 25, cooldownMs: 0, debounceMs: 3000 }, 6: { enabled: true, limit: 10, cooldownMs: 0, debounceMs: 3000 }, 7: { enabled: true, limit: 25, cooldownMs: 0, debounceMs: 0 } };
 obj2[7] = { enabled: true, limit: 10, cooldownMs: 0, debounceMs: 0 };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/cache/NotificationLoadMessagesExperiment.tsx");
 

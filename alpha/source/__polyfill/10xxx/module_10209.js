@@ -1,27 +1,23 @@
 // Module ID: 10209
 // Function ID: 10210
-// Dependencies: [41, 42, 93, 95, 98, 10109]
+// Dependencies: [41, 42, 93, 95, 98, 10179]
 
 // Module 10209
-import _mod10109 from "module_10109" /* 10109 */;
-import _classCallCheck_mod from "_classCallCheck" /* 41 */;
+import _mod10179 from "module_10179" /* 10179 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
+import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
-    const call = valueOf.call;
     const _Reflect = Reflect;
     const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
     _isNativeReflectConstruct = function _isNativeReflectConstruct() {
       return closure_0;
     };
@@ -29,50 +25,47 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let _classCallCheck = _classCallCheck_mod;
 let fn = this;
 if (this) {
   fn = this.__importDefault;
 }
 if (!fn) {
   fn = (__esModule) => {
-    if (!__esModule) {
+    let tmp2;
+    const tmp = __esModule;
+    if (!tmp) {
+      tmp2 = { default: __esModule };
       const obj = { default: __esModule };
-      let tmp = obj;
     } else {
-      tmp = __esModule;
+      tmp2 = __esModule;
     }
-    return tmp;
+    return tmp2;
   };
 }
-class ZHHantMergeDateTimeRefiner {
+class DEMergeDateRangeRefiner {
   constructor() {
-    self = this;
-    tmp = closure_0(this, ZHHantMergeDateTimeRefiner);
-    tmp2 = c2;
-    obj = c2(ZHHantMergeDateTimeRefiner);
-    tmp3 = closure_1;
-    if (closure_3()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, DEMergeDateRangeRefiner);
+    const obj = _getPrototypeOf(DEMergeDateRangeRefiner);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
       constructResult = obj(...arguments);
     }
     return tmp3(self, constructResult);
   }
 }
-_classCallCheck = ZHHantMergeDateTimeRefiner;
-_inherits(ZHHantMergeDateTimeRefiner, fn(_mod10109).default);
+_inherits(DEMergeDateRangeRefiner, fn(_mod10179).default);
 const entry = {
   key: "patternBetween",
   value: function patternBetween() {
-    return /^\s*$/i;
+    return /^\s*(bis(?:\s*(?:am|zum))?|-)\s*$/i;
   }
 };
 const items = [entry];
 
-export default _createClass(ZHHantMergeDateTimeRefiner, items);
+export default _createClass(DEMergeDateRangeRefiner, items);

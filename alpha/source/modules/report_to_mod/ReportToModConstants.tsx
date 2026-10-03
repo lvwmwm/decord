@@ -1,14 +1,15 @@
-// Module ID: 6893
-// Function ID: 6894
+// Module ID: 6791
+// Function ID: 6792
 // Name: ReportToModConstants
-// Dependencies: [1074, 1086, 2]
+// Dependencies: [1085, 1097, 2]
 
-// Module 6893 (ReportToModConstants)
-import Constants from "Constants" /* 1074 */;
-import BigFlagUtils from "BigFlagUtils" /* 1086 */;
+// Module 6791 (ReportToModConstants)
+import Constants from "Constants" /* 1085 */;
+import BigFlagUtils from "BigFlagUtils" /* 1097 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;
+const combineResult = BigFlagUtils.combine(Permissions.ADMINISTRATOR, Permissions.BAN_MEMBERS, Permissions.KICK_MEMBERS, Permissions.MODERATE_MEMBERS);
 const result = size.fileFinishedImporting("modules/report_to_mod/ReportToModConstants.tsx");
 
-export const ReportToModPermissions = BigFlagUtils.combine(Permissions.ADMINISTRATOR, Permissions.BAN_MEMBERS, Permissions.KICK_MEMBERS, Permissions.MODERATE_MEMBERS);
+export const ReportToModPermissions = combineResult;

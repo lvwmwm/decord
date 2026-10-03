@@ -1,36 +1,69 @@
-// Module ID: 9960
-// Function ID: 9961
+// Module ID: 9909
+// Function ID: 9910
 // Name: PremiumUpsellGradientBackground
-// Dependencies: [19, 17, 7040, 21, 4845, 5477, 1094, 2]
-// Exports: PremiumUpsellGradientBackground
+// Dependencies: [19, 17, 6938, 21, 4890, 558, 576, 5605, 1105, 2]
 
-// Module 9960 (PremiumUpsellGradientBackground)
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import LinearGradientDefault from "LinearGradient" /* 5477 */;
-import noop from "module_19" /* 19 */;
+// Module 9909 (PremiumUpsellGradientBackground)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import ConstantsIOS from "ConstantsIOS" /* 1105 */;
+import LinearGradientDefault from "LinearGradient" /* 5605 */;
+import ColorConstants from "ColorConstants" /* 6938 */;
+import react from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Gradients = fn(7040).Gradients;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
-const obj2 = { gradient: null };
-const merged = Object.assign(fn(17).StyleSheet.absoluteFillObject);
-obj2.gradient = { opacity: 0.1 };
-let closure_5 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumUpsellGradientBackground.tsx");
+let useTier0UpsellContent;
 
-export const PremiumUpsellGradientBackground = function PremiumUpsellGradientBackground(useTier0UpsellContent) {
-  const obj = { style: closure_5().gradient, start: null, end: null, colors: null };
-  const tmp = closure_5();
-  const tmp2 = jsx;
-  obj.start = ConstantsIOS.HorizontalGradient.START;
-  obj.end = ConstantsIOS.HorizontalGradient.END;
-  if (true === useTier0UpsellContent.useTier0UpsellContent) {
-    let PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_0;
+let obj2;
+const StyleSheet = react_native.StyleSheet;
+const Gradients = ColorConstants.Gradients;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { gradient: obj2 };
+createStyles = createStyles.createStyles;
+obj2 = { opacity: 0.1 };
+const merged = Object.assign(StyleSheet.absoluteFillObject);
+let closure_5 = createStyles(obj);
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((useTier0UpsellContent) => {
+  let PREMIUM_TIER_2_TRI_COLOR;
+  const obj = react2;
+  const cResult = obj.c(3);
+  useTier0UpsellContent = useTier0UpsellContent.useTier0UpsellContent;
+  const tmp4 = closure_5();
+  if (true === useTier0UpsellContent) {
+    PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_0;
   } else {
     PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_2_TRI_COLOR;
   }
-  obj.colors = PREMIUM_TIER_2_TRI_COLOR;
-  return tmp2(LinearGradientDefault, obj);
-};
+  if (cResult[0] === tmp4.gradient) {
+    let tmp7;
+    if (cResult[1] === PREMIUM_TIER_2_TRI_COLOR) {
+      tmp7 = cResult[2];
+    }
+    return tmp7;
+  }
+  LinearGradientDefault;
+  const tmp9 = <tmp8 style={tmp4.gradient} start={ConstantsIOS.HorizontalGradient.START} end={ConstantsIOS.HorizontalGradient.END} colors={PREMIUM_TIER_2_TRI_COLOR} />;
+  cResult[0] = tmp4.gradient;
+  cResult[1] = PREMIUM_TIER_2_TRI_COLOR;
+  cResult[2] = tmp9;
+  tmp7 = tmp9;
+}) : ((useTier0UpsellContent) => {
+  let PREMIUM_TIER_2_TRI_COLOR;
+  useTier0UpsellContent = useTier0UpsellContent.useTier0UpsellContent;
+  const obj = { style: closure_5().gradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: PREMIUM_TIER_2_TRI_COLOR };
+  const tmp2 = jsx;
+  const tmp3 = LinearGradientDefault;
+  if (true === useTier0UpsellContent) {
+    PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_0;
+  } else {
+    PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_2_TRI_COLOR;
+  }
+  return tmp2(tmp3, obj);
+});
+const result = size.fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumUpsellGradientBackground.tsx");
+
+export const PremiumUpsellGradientBackground = tmp5;

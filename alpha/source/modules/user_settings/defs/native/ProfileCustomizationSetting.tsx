@@ -1,30 +1,32 @@
-// Module ID: 14352
-// Function ID: 14353
+// Module ID: 14406
+// Function ID: 14407
 // Name: ProfileCustomizationSetting
-// Dependencies: [1074, 11215, 1115, 14353, 2]
+// Dependencies: [1085, 11129, 1126, 14407, 2]
 
-// Module 14352 (ProfileCustomizationSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 14406 (ProfileCustomizationSetting)
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.LYju5J);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.LYju5J);
   },
   parent: null,
   unsearchable: true,
   screen: {
-    route: Constants.UserSettingsSections.PROFILE_CUSTOMIZATION,
+    route: UserSettingsSections.PROFILE_CUSTOMIZATION,
     getComponent() {
       return require("ProfileCustomizationSettingScreen").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/ProfileCustomizationSetting.tsx");
 
 export default route;

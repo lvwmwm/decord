@@ -1,24 +1,34 @@
-// Module ID: 14256
-// Function ID: 14257
+// Module ID: 14324
+// Function ID: 14325
 // Name: openActivityShareLinkModal
-// Dependencies: [4730, 5048, 14257, 1981, 2]
+// Dependencies: [4745, 5093, 14325, 1987, 2]
 // Exports: closeActivityShareLinkModal, openActivityShareLinkModal
 
-// Module 14256 (openActivityShareLinkModal)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ChatInputUtils from "ChatInputUtils" /* 4730 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5048 */;
+// Module 14324 (openActivityShareLinkModal)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ChatInputUtils from "ChatInputUtils" /* 4745 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
 import size from "module_2" /* 2 */;
 
 const ACTIVITY_SHARE_LINK_MODAL = "ACTIVITY_SHARE_LINK_MODAL";
 const result = size.fileFinishedImporting("modules/activities/openActivityShareLinkModal.native.tsx");
+const ACTIVITY_SHARE_LINK_MODAL_export = "ACTIVITY_SHARE_LINK_MODAL";
 
-export const ACTIVITY_SHARE_LINK_MODAL = "ACTIVITY_SHARE_LINK_MODAL";
+export { ACTIVITY_SHARE_LINK_MODAL_export as ACTIVITY_SHARE_LINK_MODAL };
 export const openActivityShareLinkModal = function openActivityShareLinkModal(arg0) {
+  let applicationId;
+  let customId;
+  let linkId;
+  let message;
+  let onShare;
   ({ applicationId, customId, linkId, message, onShare } = arg0);
-  ChatInputUtils.dismissKeyboard();
-  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(14257, dependencyMap.paths), { applicationId, customId, linkId, message, onShare }, ACTIVITY_SHARE_LINK_MODAL, { presentation: "modal" });
+  const obj = ChatInputUtils;
+  obj.dismissKeyboard();
+  const obj2 = ModalActionCreatorsDefault;
+  const obj3 = { applicationId, customId, linkId, message, onShare };
+  obj2.pushLazy(asyncRequire(14325, dependencyMap.paths), obj3, ACTIVITY_SHARE_LINK_MODAL, { presentation: "modal" });
 };
 export const closeActivityShareLinkModal = function closeActivityShareLinkModal() {
-  ModalActionCreatorsDefault.popWithKey(ACTIVITY_SHARE_LINK_MODAL);
+  const obj = ModalActionCreatorsDefault;
+  obj.popWithKey(ACTIVITY_SHARE_LINK_MODAL);
 };

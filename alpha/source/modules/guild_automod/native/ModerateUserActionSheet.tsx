@@ -1,212 +1,257 @@
-// Module ID: 11525
-// Function ID: 11526
+// Module ID: 11445
+// Function ID: 11446
 // Name: ModerateUserActionSheet
-// Dependencies: [19, 2107, 2066, 4498, 1372, 1074, 21, 4845, 504, 11526, 8898, 4997, 4809, 6806, 1115, 6985, 5048, 11527, 1981, 11524, 4485, 11545, 11531, 4782, 11547, 8928, 11549, 6757, 6756, 11551, 6185, 2]
+// Dependencies: [19, 2112, 2074, 4509, 1377, 1085, 21, 4890, 504, 11446, 8926, 5042, 4854, 6697, 1126, 6883, 5093, 11447, 1987, 11444, 4496, 11465, 11451, 4837, 11467, 8956, 11469, 6645, 6644, 11471, 6074, 2]
 
-// Module 11525 (ModerateUserActionSheet)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5048 */;
-import useCanToggleCommunicationDisableOnUser from "useCanToggleCommunicationDisableOnUser" /* 8898 */;
-import GuildMemberUtils from "GuildMemberUtils" /* 11526 */;
-import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 11531 */;
-import showKickConfirmModalDefault from "showKickConfirmModal" /* 11547 */;
-import showBanConfirmModalDefault from "showBanConfirmModal" /* 11549 */;
-import noop from "module_19" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2107 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import PermissionStore from "PermissionStore" /* 4498 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 11445 (ModerateUserActionSheet)
+import Constants from "Constants" /* 1085 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import useCanToggleCommunicationDisableOnUser from "useCanToggleCommunicationDisableOnUser" /* 8926 */;
+import GuildMemberUtils from "GuildMemberUtils" /* 11446 */;
+import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 11451 */;
+import showKickConfirmModalDefault from "showKickConfirmModal" /* 11467 */;
+import showBanConfirmModalDefault from "showBanConfirmModal" /* 11469 */;
+import react from "react" /* 19 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import UserStore from "UserStore" /* 1377 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Permissions = fn(1074).Permissions;
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4845);
+let BottomSheet, user;
+
+let c10;
+let c9;
+const Permissions = Constants.Permissions;
+({ jsx: c9, jsxs: c10 } = Fragment);
 let closure_11 = createStyles.createStyles({ container: { padding: 16, gap: 16 }, memberRoles: { justifyContent: "flex-start" } });
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/guild_automod/native/ModerateUserActionSheet.tsx");
-
-export default noop.memo((user) => {
+const memoResult = react.memo((user) => {
+  let BottomSheetTitleHeader;
+  let Icon;
+  let Icon2;
+  let Icon3;
+  let Icon4;
+  let canBanUser;
+  let canKickUser;
+  let intl;
+  let intl3;
+  let intl4;
+  let intl5;
+  let items5;
+  let items6;
+  let obj11;
+  let obj12;
+  let obj3;
+  let obj5;
+  let obj7;
+  let obj9;
   user = user.user;
   const guild = user.guild;
   let stateFromStores;
   let hideActionSheet;
-  c4 = undefined;
+  let c4;
   const tmp = closure_11();
+  let obj = user(stateFromStores[8]);
   let items = [c4];
   const items1 = [user, guild];
-  stateFromStores = user(stateFromStores[8]).useStateFromStores(items, () => {
+  stateFromStores = obj.useStateFromStores(items, () => {
     let id;
+    const getMember = GuildMemberStore.getMember;
     if (guild != null) {
       id = guild.id;
     }
-    return GuildMemberStore.getMember(id, user.id);
+    return getMember(id, user.id);
   }, items1);
-  let obj = user(stateFromStores[8]);
-  const tmp5 = null != stateFromStores ? stateFromStores.roles : [];
   const items2 = [PermissionStore, UserStore, GuildStore];
   const items3 = [user, guild];
-  const stateFromStoresObject = user(stateFromStores[8]).useStateFromStoresObject(items2, () => {
+  const tmp5 = null != stateFromStores ? stateFromStores.roles : [];
+  const tmp2Result = user(stateFromStores[8]);
+  const stateFromStoresObject = tmp2Result.useStateFromStoresObject(items2, () => {
+    let canBanMemberResult;
+    let canManageUserResult;
+    let canResult;
+    let result;
     let canKickMemberResult = null != guild;
     if (canKickMemberResult) {
-      canKickMemberResult = GuildMemberUtils.canKickMember(user, tmp);
+      const obj = GuildMemberUtils;
+      canKickMemberResult = obj.canKickMember(user, tmp);
     }
-    const obj2 = { canKickUser: canKickMemberResult, canBanUser: null, canChangeNick: null, canManageRoles: null, canModerateMembers: null };
-    let canBanMemberResult = null != tmp;
+    const obj2 = { canKickUser: canKickMemberResult, canBanUser: canBanMemberResult, canChangeNick: canManageUserResult, canManageRoles: canResult, canModerateMembers: result };
+    canBanMemberResult = null != tmp;
     if (canBanMemberResult) {
-      canBanMemberResult = GuildMemberUtils.canBanMember(user, tmp);
+      const obj3 = GuildMemberUtils;
+      canBanMemberResult = obj3.canBanMember(user, tmp);
     }
-    obj2.canBanUser = canBanMemberResult;
-    let canManageUserResult = null != tmp;
-    if (canManageUserResult) {
-      canManageUserResult = PermissionStore.canManageUser(Permissions.MANAGE_NICKNAMES, user, tmp);
-    }
-    obj2.canChangeNick = canManageUserResult;
-    let canResult = null != tmp;
-    if (canResult) {
-      canResult = PermissionStore.can(Permissions.MANAGE_ROLES, tmp);
-    }
-    obj2.canManageRoles = canResult;
-    let result = null != tmp;
+    canManageUserResult = null != tmp && PermissionStore.canManageUser(Permissions.MANAGE_NICKNAMES, user, tmp);
+    result = null != tmp;
+    canResult = null != tmp && PermissionStore.can(Permissions.MANAGE_ROLES, tmp);
     if (result) {
       const items = [UserStore, GuildStore, PermissionStore];
-      result = useCanToggleCommunicationDisableOnUser.canToggleCommunicationDisableOnUser(tmp.id, user.id, items);
+      const obj4 = useCanToggleCommunicationDisableOnUser;
+      result = obj4.canToggleCommunicationDisableOnUser(tmp.id, user.id, items);
     }
-    obj2.canModerateMembers = result;
     return obj2;
   }, items3);
   ({ canKickUser, canBanUser } = stateFromStoresObject);
   if (null != guild) {
     if (null != stateFromStores) {
-      const name = guild(tmp3[11]).getName(guild.id, undefined, user);
+      const obj17 = guild(stateFromStores[11]);
+      const name = obj17.getName(guild.id, undefined, user);
       hideActionSheet = guild(tmp3[12]).hideActionSheet;
       let tmp11 = null != stateFromStores;
+      const tmp26 = guild;
       if (tmp11) {
-        let tmp10 = canKickUser;
-        if (!canKickUser) {
-          tmp10 = canBanUser;
-        }
-        if (!tmp10) {
-          tmp10 = tmp7;
-        }
-        if (!tmp10) {
-          tmp10 = tmp8;
-        }
-        tmp11 = tmp10;
+        tmp11 = canKickUser || canBanUser || tmp7 || tmp8;
       }
       if (tmp11) {
         tmp11 = !user.isNonUserBot();
       }
       const items4 = [];
       if (tmp11) {
-        let obj2 = { label: null, icon: null, onPress: null };
-        const intl = tmp2(tmp3[14]).intl;
-        obj2.label = intl.string(tmp2(tmp3[14]).t.HxrBOZ);
-        let obj3 = { IconComponent: tmp2(tmp3[15]).SettingsIcon };
-        obj2.icon = closure_9(tmp2(tmp3[13]).ActionSheetRow.Icon, obj3);
-        obj2.onPress = function onPress() {
-          hideActionSheet();
-          ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(11527, dependencyMap.paths), {
-            userId: user.id,
-            guildId: guild.id,
-            onClose() {
-              guild(stateFromStores[16]).pop();
-              guild(stateFromStores[19])({ guild, user });
-            },
-            onRemove() {
-              guild(stateFromStores[16]).pop();
-            }
-          });
+        const push = items4.push;
+        let obj2 = {
+          label: intl.string(tmp2(tmp3[14]).t.HxrBOZ),
+          icon: closure_9(Icon, obj3),
+          onPress() {
+                  hideActionSheet();
+                  let obj = ModalActionCreatorsDefault;
+                  const obj2 = {
+                    userId: user.id,
+                    guildId: guild.id,
+                    onClose() {
+                      const arr = guild(stateFromStores[16]);
+                      arr.pop();
+                      const obj = { guild, user };
+                      guild(stateFromStores[19])(obj);
+                    },
+                    onRemove() {
+                      const arr = guild(stateFromStores[16]);
+                      arr.pop();
+                    }
+                  };
+                  obj.pushLazy(asyncRequire(11447, dependencyMap.paths), obj2);
+                }
         };
-        items4.push(closure_9(tmp2(tmp3[13]).ActionSheetRow, obj2));
+        const ActionSheetRow = tmp2(tmp3[13]).ActionSheetRow;
+        intl = tmp2(tmp3[14]).intl;
+        obj3 = { IconComponent: tmp2(tmp3[15]).SettingsIcon };
+        Icon = tmp2(tmp3[13]).ActionSheetRow.Icon;
+        let arr = push(closure_9(ActionSheetRow, obj2));
       }
       if (null != stateFromStores) {
         if (tmp9) {
-          let result = tmp2(tmp3[20]).isMemberCommunicationDisabled(stateFromStores);
+          let stringResult;
+          const tmp2Result2 = user(stateFromStores[20]);
+          let result = tmp2Result2.isMemberCommunicationDisabled(stateFromStores);
           c4 = result;
-          let ClockWarningIcon = tmp2(tmp3[14]).intl;
-          let Icon = ClockWarningIcon.string;
-          let t = tmp2(tmp3[14]).t;
+          const push2 = items4.push;
+          const ActionSheetRow2 = tmp2(tmp3[13]).ActionSheetRow;
+          const intl2 = tmp2(tmp3[14]).intl;
+          const string = intl2.string;
+          const t = tmp2(tmp3[14]).t;
           if (result) {
-            let IconResult = Icon(t.qXtNtS);
+            stringResult = string(t.qXtNtS);
           } else {
-            IconResult = Icon(t.xpsADY);
+            stringResult = string(t.xpsADY);
           }
-          let obj4 = { label: IconResult, icon: null, onPress: null };
-          Icon = tmp2(tmp3[13]).ActionSheetRow.Icon;
-          let obj5 = { IconComponent: null };
-          ClockWarningIcon = tmp2(tmp3[21]).ClockWarningIcon;
-          obj5.IconComponent = ClockWarningIcon;
-          obj4.icon = closure_9(Icon, obj5);
-          obj4.onPress = function onPress() {
-            hideActionSheet();
-            const obj = GuildDisableCommunicationActionCreators;
-            if (c4) {
-              ({ guildId: obj3.guildId, userId: obj3.userId } = stateFromStores);
-              const result = obj.openEnableCommunication({ guildId: null, userId: null });
-              const obj5 = { guildId: null, userId: null };
-            } else {
-              ({ guildId: obj2.guildId, userId: obj2.userId } = stateFromStores);
-              const result1 = obj.openDisableCommunication({ guildId: null, userId: null });
-              const obj6 = { guildId: null, userId: null };
-            }
+          let obj4 = {
+            label: stringResult,
+            icon: tmp15(Icon2, obj5),
+            onPress() {
+                      hideActionSheet();
+                      const obj = GuildDisableCommunicationActionCreators;
+                      if (c4) {
+                        const obj5 = { guildId: null, userId: null };
+                        ({ guildId: obj3.guildId, userId: obj3.userId } = stateFromStores);
+                        const result = obj.openEnableCommunication(obj5);
+                      } else {
+                        const obj6 = { guildId: null, userId: null };
+                        ({ guildId: obj2.guildId, userId: obj2.userId } = stateFromStores);
+                        const result1 = obj.openDisableCommunication(obj6);
+                      }
+                    }
           };
-          t = items4.push(tmp15(tmp2(tmp3[13]).ActionSheetRow, obj4));
-          const tmp2Result2 = tmp2(tmp3[20]);
+          obj5 = { IconComponent: tmp2(tmp3[21]).ClockWarningIcon };
+          Icon2 = tmp2(tmp3[13]).ActionSheetRow.Icon;
+          push2(closure_9(ActionSheetRow2, obj4));
         }
       }
-      if (tmp17) {
-        let obj6 = { label: null, icon: null, variant: "danger", onPress: null };
-        const intl2 = tmp2(tmp3[14]).intl;
-        obj6.label = intl2.string(tmp2(tmp3[14]).t["3glT6Z"]);
-        const obj7 = { IconComponent: tmp2(tmp3[23]).UserMinusIcon };
-        obj6.icon = closure_9(tmp2(tmp3[13]).ActionSheetRow.Icon, obj7);
-        obj6.onPress = function onPress() {
-          showKickConfirmModalDefault({
-            guildId: guild.id,
-            userId: user.id,
-            cancelButtonCallback() {
-              return guild(stateFromStores[19])({ guild, user });
-            }
-          });
+      const tmp18 = null != stateFromStores && canKickUser;
+      if (tmp18) {
+        const push3 = items4.push;
+        let obj6 = {
+          label: intl3.string(tmp2(tmp3[14]).t["3glT6Z"]),
+          icon: closure_9(Icon3, obj7),
+          variant: "danger",
+          onPress() {
+                  let obj = {
+                    guildId: guild.id,
+                    userId: user.id,
+                    cancelButtonCallback() {
+                      const obj = { guild, user };
+                      return guild(stateFromStores[19])(obj);
+                    }
+                  };
+                  showKickConfirmModalDefault(obj);
+                }
         };
-        items4.push(closure_9(tmp2(tmp3[13]).ActionSheetRow, obj6));
+        const ActionSheetRow3 = tmp2(tmp3[13]).ActionSheetRow;
+        intl3 = tmp2(tmp3[14]).intl;
+        obj7 = { IconComponent: user(stateFromStores[23]).UserMinusIcon };
+        Icon3 = tmp2(tmp3[13]).ActionSheetRow.Icon;
+        push3(closure_9(ActionSheetRow3, obj6));
       }
-      if (tmp20) {
-        const obj8 = { label: null, icon: null, variant: "danger", onPress: null };
-        const intl3 = tmp2(tmp3[14]).intl;
-        obj8.label = intl3.string(tmp2(tmp3[14]).t["5MBJ5M"]);
-        const obj9 = { IconComponent: tmp2(tmp3[25]).HammerIcon };
-        obj8.icon = closure_9(tmp2(tmp3[13]).ActionSheetRow.Icon, obj9);
-        obj8.onPress = function onPress() {
-          showBanConfirmModalDefault({
-            guildId: guild.id,
-            userId: user.id,
-            cancelButtonCallback() {
-              return guild(stateFromStores[19])({ guild, user });
-            }
-          });
+      const tmp21 = null != stateFromStores && canBanUser;
+      if (tmp21) {
+        const push4 = items4.push;
+        const obj8 = {
+          label: intl4.string(user(stateFromStores[14]).t["5MBJ5M"]),
+          icon: closure_9(Icon4, obj9),
+          variant: "danger",
+          onPress() {
+                  let obj = {
+                    guildId: guild.id,
+                    userId: user.id,
+                    cancelButtonCallback() {
+                      const obj = { guild, user };
+                      return guild(stateFromStores[19])(obj);
+                    }
+                  };
+                  showBanConfirmModalDefault(obj);
+                }
         };
-        items4.push(closure_9(tmp2(tmp3[13]).ActionSheetRow, obj8));
+        const ActionSheetRow4 = tmp2(tmp3[13]).ActionSheetRow;
+        intl4 = tmp2(tmp3[14]).intl;
+        obj9 = { IconComponent: user(stateFromStores[25]).HammerIcon };
+        Icon4 = tmp2(tmp3[13]).ActionSheetRow.Icon;
+        push4(closure_9(ActionSheetRow4, obj8));
       }
-      const obj10 = { header: null, bodyStyles: null, children: null };
-      const obj11 = { title: null };
-      const intl4 = tmp2(tmp3[14]).intl;
-      const obj12 = { nick: name };
-      obj11.title = intl4.formatToPlainString(tmp2(tmp3[14]).t["792QKT"], obj12);
-      obj10.header = closure_9(tmp2(tmp3[28]).BottomSheetTitleHeader, obj11);
-      obj10.bodyStyles = tmp.container;
-      const obj13 = { style: null, guild: null, userRoles: null };
-      const items5 = [tmp.memberRoles];
-      obj13.style = items5;
-      obj13.guild = guild;
-      obj13.userRoles = tmp5;
-      const items6 = [closure_9(guild(tmp3[29]), obj13), ];
-      const obj14 = { hasIcons: true, children: items4.map((children, index) => closure_1_9(hideActionSheet.Fragment, { children }, "action_" + index)) };
-      items6[1] = closure_9(tmp2(tmp3[30]).TableRowGroup, obj14);
-      obj10.children = items6;
-      return closure_10(tmp2(tmp3[27]).BottomSheet, obj10);
+      const obj10 = { header: closure_9(BottomSheetTitleHeader, obj11), bodyStyles: tmp.container, children: items6 };
+      BottomSheet = tmp2(tmp3[27]).BottomSheet;
+      obj11 = { title: intl5.formatToPlainString(user(stateFromStores[14]).t["792QKT"], obj12) };
+      BottomSheetTitleHeader = tmp2(tmp3[28]).BottomSheetTitleHeader;
+      intl5 = tmp2(tmp3[14]).intl;
+      const obj13 = { style: items5, guild, userRoles: tmp5 };
+      items5 = [tmp.memberRoles];
+      obj12 = { nick: name };
+      items6 = [closure_9(tmp26(tmp3[29]), obj13), ];
+      const obj14 = {
+        hasIcons: true,
+        children: items4.map((children, index) => {
+              const obj = { children };
+              return closure_1_9(hideActionSheet.Fragment, obj, "action_" + index);
+            })
+      };
+      const TableRowGroup = tmp2(tmp3[30]).TableRowGroup;
+      items6[1] = closure_9(TableRowGroup, obj14);
+      return closure_10(BottomSheet, obj10);
     }
   }
   return null;
 });
+let result = size.fileFinishedImporting("modules/guild_automod/native/ModerateUserActionSheet.tsx");
+
+export default memoResult;

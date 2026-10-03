@@ -1,33 +1,36 @@
-// Module ID: 1882
-// Function ID: 1883
+// Module ID: 1888
+// Function ID: 1889
 // Name: NumberUtils
-// Dependencies: [1883, 2]
+// Dependencies: [1889, 2]
 // Exports: formatPercent, humanizeValue, parseInteger, shortenAndLocalizeNumber, truncateAndLocalizeNumber
 
-// Module 1882 (NumberUtils)
-import module_1883 from "module_1883" /* 1883 */;
+// Module 1888 (NumberUtils)
+import module_1889 from "module_1889" /* 1889 */;
+import size from "module_2" /* 2 */;
 
 let c1 = 1000000;
 const map = new Map();
-const size = fn(2);
 let result = size.fileFinishedImporting("../discord_common/js/shared/utils/NumberUtils.tsx");
 
 export const shortenAndLocalizeNumber = function shortenAndLocalizeNumber(count) {
   if (count < c1) {
-    locale = module_1883.getLocale();
+    const locale = module_1889.getLocale();
     const _HermesInternal = HermesInternal;
     const combined = "" + locale + "|" + "";
-    value = map.get(combined);
+    let value = map.get(combined);
+    const obj3 = map;
     if (null == value) {
       const _Intl = Intl;
+      const self = this;
+      const self2 = this;
       const numberFormat = new Intl.NumberFormat(locale, undefined);
-      const result = map.set(combined, numberFormat);
+      const result = obj3.set(combined, numberFormat);
       value = numberFormat;
     }
     return value.format(count);
   } else {
     const result1 = count / tmp;
-    const NUMBER_ABBREVIATIONS_MILLION = module_1883.Messages.NUMBER_ABBREVIATIONS_MILLION;
+    const NUMBER_ABBREVIATIONS_MILLION = module_1889.Messages.NUMBER_ABBREVIATIONS_MILLION;
     const obj = { num: result1.toFixed(1) };
     return NUMBER_ABBREVIATIONS_MILLION.format(obj);
   }
@@ -36,39 +39,45 @@ export const humanizeValue = function humanizeValue(newPostCount, stateFromStore
   if (newPostCount < 1000) {
     const _HermesInternal = HermesInternal;
     const combined = "" + stateFromStores + "|" + "";
-    value = map.get(combined);
+    let value = map.get(combined);
+    const obj4 = map;
     if (null == value) {
       const _Intl2 = Intl;
+      const self3 = this;
+      const self4 = this;
       const numberFormat = new Intl.NumberFormat(stateFromStores, undefined);
-      const result = map.set(combined, numberFormat);
+      const result = obj4.set(combined, numberFormat);
       value = numberFormat;
     }
     const _Math2 = Math;
     return value.format(Math.floor(newPostCount));
   } else if (newPostCount < c1) {
-    const NUMBER_ABBREVIATIONS_THOUSAND = module_1883.Messages.NUMBER_ABBREVIATIONS_THOUSAND;
-    const obj = { num: null };
+    const NUMBER_ABBREVIATIONS_THOUSAND = module_1889.Messages.NUMBER_ABBREVIATIONS_THOUSAND;
     const _Math = Math;
-    obj.num = Math.floor(newPostCount / 1000);
-    return NUMBER_ABBREVIATIONS_THOUSAND.format(obj);
+    const format = NUMBER_ABBREVIATIONS_THOUSAND.format;
+    const obj = { num: Math.floor(newPostCount / 1000) };
+    return format(obj);
   } else {
     const _Math3 = Math;
     const _HermesInternal2 = HermesInternal;
-    const result1 = Math.floor(10 * newPostCount / tmp19) / 10;
+    const result1 = Math.floor(10 * newPostCount / tmp15) / 10;
     const combined1 = "" + stateFromStores + "|" + 1;
-    value2 = map.get(combined1);
+    let value2 = map.get(combined1);
+    const obj6 = map;
     if (null == value2) {
       const _Intl = Intl;
+      const self = this;
+      const self2 = this;
       const numberFormat1 = new Intl.NumberFormat(stateFromStores, { maximumFractionDigits: 1 });
-      const result2 = map.set(combined1, numberFormat1);
+      const result2 = obj6.set(combined1, numberFormat1);
       value2 = numberFormat1;
     }
-    const NUMBER_ABBREVIATIONS_MILLION = module_1883.Messages.NUMBER_ABBREVIATIONS_MILLION;
+    const NUMBER_ABBREVIATIONS_MILLION = module_1889.Messages.NUMBER_ABBREVIATIONS_MILLION;
     const obj2 = { num: value2.format(result1) };
     return NUMBER_ABBREVIATIONS_MILLION.format(obj2);
   }
 };
-export const truncateAndLocalizeNumber = (arg0, arg1) => {
+export const truncateAndLocalizeNumber = function(arg0, arg1) {
   if (arg0 < 1000000) {
     let num2 = 1;
     if (tmp % 1 === 0) {
@@ -76,12 +85,15 @@ export const truncateAndLocalizeNumber = (arg0, arg1) => {
     }
     const _HermesInternal2 = HermesInternal;
     const combined = "" + arg1 + "|" + num2;
-    value = map.get(combined);
+    let value = map.get(combined);
+    const obj5 = map;
     if (null == value) {
       const _Intl2 = Intl;
+      const self3 = this;
+      const self4 = this;
       const obj2 = { maximumFractionDigits: num2 };
       const numberFormat = new Intl.NumberFormat(arg1, obj2);
-      const result = map.set(combined, numberFormat);
+      const result = obj5.set(combined, numberFormat);
       value = numberFormat;
     }
     return value.format(arg0);
@@ -93,15 +105,18 @@ export const truncateAndLocalizeNumber = (arg0, arg1) => {
     }
     const _HermesInternal = HermesInternal;
     const combined1 = "" + arg1 + "|" + num;
-    value2 = map.get(combined1);
+    let value2 = map.get(combined1);
+    const obj = map;
     if (null == value2) {
       const _Intl = Intl;
+      const self = this;
+      const self2 = this;
       const obj3 = { maximumFractionDigits: num };
       const numberFormat1 = new Intl.NumberFormat(arg1, obj3);
-      const result1 = map.set(combined1, numberFormat1);
+      const result1 = obj.set(combined1, numberFormat1);
       value2 = numberFormat1;
     }
-    const NUMBER_ABBREVIATIONS_MILLION = module_1883.Messages.NUMBER_ABBREVIATIONS_MILLION;
+    const NUMBER_ABBREVIATIONS_MILLION = module_1889.Messages.NUMBER_ABBREVIATIONS_MILLION;
     const obj4 = { num: value2.format(arg0 / 1000000) };
     return NUMBER_ABBREVIATIONS_MILLION.format(obj4);
   }
@@ -128,6 +143,8 @@ export const formatPercent = function formatPercent(arg0, arg1) {
   if (arg2 === undefined) {
     obj = {};
   }
+  const obj2 = { style: "percent", minimumFractionDigits: 0 };
   const merged = Object.assign(obj);
-  return Intl.NumberFormat(arg0, { style: "percent", minimumFractionDigits: 0 }).format(arg1);
+  const NumberFormatResult = NumberFormat(arg0, obj2);
+  return NumberFormatResult.format(arg1);
 };

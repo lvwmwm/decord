@@ -1,27 +1,28 @@
-// Module ID: 17367
-// Function ID: 17368
+// Module ID: 17459
+// Function ID: 17460
 // Name: DeclarativeSystemNotifPermissionManager
-// Dependencies: [15762, 6725, 2]
+// Dependencies: [15825, 6613, 2]
 
-// Module 17367 (DeclarativeSystemNotifPermissionManager)
-import DeclarativeSystemNotifPermissionActionCreators from "DeclarativeSystemNotifPermissionActionCreators" /* 15762 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
+// Module 17459 (DeclarativeSystemNotifPermissionManager)
+import DeclarativeSystemNotifPermissionActionCreators from "DeclarativeSystemNotifPermissionActionCreators" /* 15825 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function handleAppStateChanged(state) {
   if ("active" === state.state) {
-    const result = DeclarativeSystemNotifPermissionActionCreators.refreshSystemNotifPermissionsAsync("app_state_active");
+    const obj = DeclarativeSystemNotifPermissionActionCreators;
+    const result = obj.refreshSystemNotifPermissionsAsync("app_state_active");
   }
 }
-const prototype = function DeclarativeSystemNotifPermissionManager() {
-  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  applyArgumentsResult.actions = { APP_STATE_UPDATE: handleAppStateChanged };
-  return applyArgumentsResult;
-}.prototype;
-class prototype extends tmp2 {
+class DeclarativeSystemNotifPermissionManager extends AutomaticLifecycleManager {
+  constructor() {
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    const obj = { APP_STATE_UPDATE: handleAppStateChanged };
+    applyArgumentsResult.actions = obj;
+    return applyArgumentsResult;
+  }
 }
-const prototype1 = new prototype();
-const size = fn(2);
+const declarativeSystemNotifPermissionManager = new DeclarativeSystemNotifPermissionManager();
 let result = size.fileFinishedImporting("modules/notifications/settings/DeclarativeSystemNotifPermissionManager.tsx");
 
-export default prototype1;
+export default declarativeSystemNotifPermissionManager;

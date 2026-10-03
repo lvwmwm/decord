@@ -1,31 +1,33 @@
-// Module ID: 14693
-// Function ID: 14694
+// Module ID: 14749
+// Function ID: 14750
 // Name: DevicesSetting
-// Dependencies: [1074, 11215, 1115, 14694, 14696, 2]
+// Dependencies: [1085, 11129, 1126, 14750, 14752, 2]
 
-// Module 14693 (DevicesSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import LaptopPhoneIcon from "LaptopPhoneIcon" /* 14694 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 14749 (DevicesSetting)
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import LaptopPhoneIcon from "LaptopPhoneIcon" /* 14750 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["+1h0k/"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["+1h0k/"]);
   },
   parent: null,
   IconComponent: LaptopPhoneIcon.LaptopPhoneIcon,
   screen: {
-    route: Constants.UserSettingsSections.SESSIONS,
+    route: UserSettingsSections.SESSIONS,
     getComponent() {
       return require("UserSettingsSessions").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/DevicesSetting.tsx");
 
 export default route;

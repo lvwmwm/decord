@@ -1,112 +1,121 @@
-// Module ID: 7761
-// Function ID: 7762
+// Module ID: 7805
+// Function ID: 7806
 // Name: NativeSearchableSelectActionComponentUtils
-// Dependencies: [2044, 2101, 2066, 1372, 1074, 5076, 1370, 1400, 6794, 7762, 1092, 576, 7763, 5519, 2]
+// Dependencies: [2051, 2106, 2074, 1377, 1085, 5122, 1375, 1405, 6686, 7806, 1103, 587, 7807, 5812, 2]
 // Exports: getChannelIconData, transformSearchableSelectOptions
 
-// Module 7761 (NativeSearchableSelectActionComponentUtils)
-import nativeDefault from "native" /* 576 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 5076 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5519 */;
-import _modDef7762 from "module_7762" /* 7762 */;
-import _modDef7763 from "module_7763" /* 7763 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildRoleStore from "GuildRoleStore" /* 2101 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 7805 (NativeSearchableSelectActionComponentUtils)
+import nativeDefault from "native" /* 587 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1405 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 5122 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5812 */;
+import RoleIconUtils from "RoleIconUtils" /* 6686 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7806 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7807 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, type;
 
-require = fn;
-const Constants = fn(1074);
-({ ChannelTypes: closure_7, DEFAULT_ROLE_COLOR: closure_8 } = Constants);
-const size = fn(2);
+let metroImportAll;
+let metroImportDefault;
+({ ChannelTypes: metroImportDefault, DEFAULT_ROLE_COLOR: metroImportAll } = Constants);
 const result = size.fileFinishedImporting("modules/interaction_components/native/NativeSearchableSelectActionComponentUtils.tsx");
 
 export const transformSearchableSelectOptions = function transformSearchableSelectOptions(initialSnowflakeSelectOptions, guildId) {
+  let closure_1;
   _require = guildId;
   const guild = GuildStore.getGuild(guildId);
   const mapped = initialSnowflakeSelectOptions.map((type) => {
+    let channelIconWithGuild;
+    let customIconSrc;
+    let ensureAvatarSource;
+    let hex2intResult;
+    let obj4;
+    let tmpResult;
+    let tmpResult10;
+    let tmpResult14;
+    let unicodeEmoji;
     type = type.type;
     if (InteractionComponentTypes.SelectOptionType.USER === type) {
       const user = UserStore.getUser(type.value);
-      let tmp34 = type;
+      let tmp32 = type;
+      const tmp29 = guildId;
       if (null != user) {
-        const obj = {};
+        const obj = { iconSrc: tmpResult.ensureAvatarSource(user.getAvatarSource(tmp29, false)).uri };
         const merged = Object.assign(type);
-        obj.iconSrc = tmp(1400).ensureAvatarSource(user.getAvatarSource(closure_0, false)).uri;
-        tmp34 = obj;
-        const tmpResult = tmp(1400);
+        tmp32 = obj;
+        tmpResult = utils_AvatarUtils;
       }
-      return tmp34;
-    } else if (tmp(5076).SelectOptionType.ROLE === type) {
+      return tmp32;
+    } else if (InteractionComponentTypes.SelectOptionType.ROLE === type) {
       let role = null;
       if (null != closure_1) {
-        role = GuildRoleStore.getRole(tmp14.id, type.value);
+        role = GuildRoleStore.getRole(tmp12.id, type.value);
       }
-      let tmp18 = type;
+      let tmp16 = type;
       if (null != role) {
-        tmp18 = type;
-        if (null != tmp14) {
+        tmp16 = type;
+        if (null != closure_1) {
           let roleIconData = null;
-          if (tmpResult7.canGuildUseRoleIcons(tmp14, role)) {
-            roleIconData = tmp(6794).getRoleIconData(role);
-            const tmpResult8 = tmp(6794);
+          const tmpResult8 = RoleIconUtils;
+          if (tmpResult8.canGuildUseRoleIcons(closure_1, role)) {
+            const tmpResult9 = RoleIconUtils;
+            roleIconData = tmpResult9.getRoleIconData(role);
           }
           if (null == roleIconData) {
-            const obj2 = {};
+            const obj2 = { iconSrc: tmpResult10.ensureAvatarSource(AssetRegistryDefault).uri, iconColor: 4278190080 | hex2intResult };
             const merged1 = Object.assign(type);
-            obj2.iconSrc = tmp(1400).ensureAvatarSource(_modDef7762).uri;
+            tmpResult10 = utils_AvatarUtils;
             if (null != role.colorString) {
-              let hex2intResult = tmp(1092).hex2int(role.colorString);
-              const tmpResult10 = tmp(1092);
+              const tmpResult11 = utils_ColorUtils;
+              hex2intResult = tmpResult11.hex2int(role.colorString);
             } else {
-              hex2intResult = React6;
+              hex2intResult = metroImportAll;
             }
-            obj2.iconColor = 4278190080 | hex2intResult;
-            tmp18 = obj2;
-            const tmpResult9 = tmp(1400);
+            tmp16 = obj2;
           } else {
             ({ customIconSrc, unicodeEmoji } = roleIconData);
             if (null != unicodeEmoji) {
-              const obj3 = {};
+              const obj3 = { iconEmoji: obj4 };
               const merged2 = Object.assign(type);
-              ({ id: obj8.id, name: obj8.name, animated: obj8.animated, url: obj8.src, surrogates: obj8.surrogates } = unicodeEmoji);
-              obj3.iconEmoji = { id: null, name: null, animated: null, src: null, surrogates: null };
-              tmp18 = obj3;
-              const obj4 = { id: null, name: null, animated: null, src: null, surrogates: null };
+              obj4 = { id: null, name: null, animated: null, src: null, surrogates: null };
+              ({ id: obj9.id, name: obj9.name, animated: obj9.animated, url: obj9.src, surrogates: obj9.surrogates } = unicodeEmoji);
+              tmp16 = obj3;
             } else if (null != customIconSrc) {
-              const obj5 = {};
+              const obj5 = { iconSrc: customIconSrc };
               const merged3 = Object.assign(type);
-              obj5.iconSrc = customIconSrc;
-              tmp18 = obj5;
+              tmp16 = obj5;
             }
           }
-          tmpResult7 = tmp(6794);
         }
       }
-      return tmp18;
-    } else if (tmp(5076).SelectOptionType.CHANNEL === type) {
+      return tmp16;
+    } else if (InteractionComponentTypes.SelectOptionType.CHANNEL === type) {
       const channel = ChannelStore.getChannel(type.value);
-      if (null == channel) {
-        return type;
-      } else {
-        const obj6 = {};
+      let tmp8 = type;
+      const tmp4 = closure_1;
+      if (null != channel) {
+        const obj6 = { iconSrc: ensureAvatarSource(channelIconWithGuild).uri, iconColor: 4278190080 | tmpResult14.hex2int(nativeDefault.unsafe_rawColors.PRIMARY_330) };
         const merged4 = Object.assign(type);
-        let tmpResult11 = tmp(1400);
-        let hex2int = tmpResult11.ensureAvatarSource;
-        if (channel.type === constants.GUILD_CATEGORY) {
-          let channelIconWithGuild = _modDef7763;
+        ensureAvatarSource = utils_AvatarUtils.ensureAvatarSource;
+        utils_AvatarUtils;
+        if (channel.type === metroImportDefault.GUILD_CATEGORY) {
+          channelIconWithGuild = AssetRegistryDefault2;
         } else {
-          channelIconWithGuild = tmp(5519).getChannelIconWithGuild(channel, tmp4);
-          const tmpResult12 = tmp(5519);
+          const tmpResult13 = utils_ChannelUtils;
+          channelIconWithGuild = tmpResult13.getChannelIconWithGuild(channel, tmp4);
         }
-        obj6.iconSrc = hex2int(channelIconWithGuild).uri;
-        tmpResult11 = tmp(1092);
-        hex2int = tmpResult11.hex2int;
-        obj6.iconColor = 4278190080 | hex2int(nativeDefault.unsafe_rawColors.PRIMARY_330);
+        tmp8 = obj6;
+        tmpResult14 = utils_ColorUtils;
       }
-      tmp4 = closure_1;
+      return tmp8;
     } else {
       return null;
     }
@@ -114,10 +123,12 @@ export const transformSearchableSelectOptions = function transformSearchableSele
   return mapped.filter(require("GlobalUtils").isNotNullish);
 };
 export const getChannelIconData = function getChannelIconData(channel, guild) {
-  if (channel.type === constants.GUILD_CATEGORY) {
-    let channelIconWithGuild = _modDef7763;
+  let channelIconWithGuild;
+  if (channel.type === metroImportDefault.GUILD_CATEGORY) {
+    channelIconWithGuild = AssetRegistryDefault2;
   } else {
-    channelIconWithGuild = utils_ChannelUtils.getChannelIconWithGuild(channel, guild);
+    const obj = utils_ChannelUtils;
+    channelIconWithGuild = obj.getChannelIconWithGuild(channel, guild);
   }
   return channelIconWithGuild;
 };

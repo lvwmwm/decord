@@ -1,18 +1,21 @@
-// Module ID: 13885
-// Function ID: 13886
+// Module ID: 13952
+// Function ID: 13953
 // Name: fetchExperiments
-// Dependencies: [1074, 1271, 2]
+// Dependencies: [1085, 1282, 2]
 // Exports: fetchExperiments
 
-// Module 13885 (fetchExperiments)
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 13952 (fetchExperiments)
+import Constants from "Constants" /* 1085 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/experiments/fetchExperiments.tsx");
 
 export const fetchExperiments = function fetchExperiments(arg0) {
+  let context;
+  let headers;
+  let withGuildExperiments;
   ({ withGuildExperiments, headers, context } = arg0);
   const HTTP = HTTPUtils.HTTP;
   const request = { url: Endpoints.EXPERIMENTS, query: { with_guild_experiments: withGuildExperiments }, headers, context, retries: 3, oldFormErrors: true, rejectWithError: false };

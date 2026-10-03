@@ -1,26 +1,63 @@
-// Module ID: 12412
-// Function ID: 12413
+// Module ID: 12351
+// Function ID: 12352
 // Name: ContactSyncBackToLanding
-// Dependencies: [1485, 6122, 12386, 2]
-// Exports: default
+// Dependencies: [558, 576, 1490, 6010, 12325, 2]
 
-// Module 12412 (ContactSyncBackToLanding)
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12386 */;
+// Module 12351 (ContactSyncBackToLanding)
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12325 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap, navigation;
 
-let result = size.fileFinishedImporting("modules/contact_sync/native/components/ContactSyncBackToLanding.tsx");
-
-export default function ContactSyncBackToLanding(arg0) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
   _require = arg0;
-  dependencyMap = require("useNavigation").useNavigation();
-  const obj = require("useNavigation");
-  return require("NavigatorHeader").getHeaderBackButton(() => {
+  let obj = require("react");
+  const cResult = obj.c(3);
+  let obj2 = require("useNavigation");
+  const tmp2 = navigation;
+  navigation = obj2.useNavigation();
+  const tmp = _require;
+  if (cResult[0] === navigation) {
+    let tmp5;
+    if (cResult[1] === arg0) {
+      tmp5 = cResult[2];
+    }
+    return tmp5;
+  }
+  const tmpResult = tmp(tmp2[3]);
+  const tmp6 = tmpResult.getHeaderBackButton(() => {
+    const obj = closure_0;
     if (null != closure_0.navigateToLandingPage) {
-      const result = closure_0.navigateToLandingPage();
+      const result = obj.navigateToLandingPage();
     } else {
-      ContactSyncModalActionCreators.goBackToLanding(closure_1);
+      const obj2 = ContactSyncModalActionCreators;
+      obj2.goBackToLanding(navigation);
     }
   }, true)(arg0);
-};
+  cResult[0] = navigation;
+  cResult[1] = arg0;
+  cResult[2] = tmp6;
+  tmp5 = tmp6;
+}) : ((arg0) => {
+  let closure_0;
+  let closure_1;
+  _require = arg0;
+  let obj = require("useNavigation");
+  dependencyMap = obj.useNavigation();
+  let obj2 = require("NavigatorHeader");
+  return obj2.getHeaderBackButton(() => {
+    const obj = closure_0;
+    if (null != closure_0.navigateToLandingPage) {
+      const result = obj.navigateToLandingPage();
+    } else {
+      const obj2 = ContactSyncModalActionCreators;
+      obj2.goBackToLanding(closure_1);
+    }
+  }, true)(arg0);
+});
+let result = size.fileFinishedImporting("modules/contact_sync/native/components/ContactSyncBackToLanding.tsx");
+
+export default tmp2;

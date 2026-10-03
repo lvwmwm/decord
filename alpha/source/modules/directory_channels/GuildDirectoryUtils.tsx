@@ -1,64 +1,70 @@
-// Module ID: 11997
-// Function ID: 11998
+// Module ID: 11932
+// Function ID: 11933
 // Name: GuildDirectoryUtils
-// Dependencies: [11998, 38, 12, 2]
+// Dependencies: [11933, 38, 12, 2]
 // Exports: guildDirectoryEntryFromServer, orderByDateAdded, orderByTotalMemberCount, rankByDateAdded, rankGuildEntries
 
-// Module 11997 (GuildDirectoryUtils)
+// Module 11932 (GuildDirectoryUtils)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
-import GuildDirectoryConstants from "GuildDirectoryConstants" /* 11998 */;
+import GuildDirectoryConstants from "GuildDirectoryConstants" /* 11933 */;
 import size from "module_2" /* 2 */;
 
+const f109647 = (approximateMemberCount) => approximateMemberCount.approximateMemberCount;
+const f109648 = (createdAt) => createdAt.createdAt;
 const DirectoryEntryTypes = GuildDirectoryConstants.DirectoryEntryTypes;
 const result = size.fileFinishedImporting("modules/directory_channels/GuildDirectoryUtils.tsx");
 
 export const guildDirectoryEntryFromServer = function guildDirectoryEntryFromServer(entry) {
+  let _Set1;
+  let guild;
+  let icon;
+  let name;
+  let prop;
+  let prop1;
+  let prop2;
+  let splash;
   if (entry.type === DirectoryEntryTypes.GUILD) {
-    const obj = { channelId: null, guildId: null, type: null, authorId: null, createdAt: null, description: null, primaryCategoryId: null, name: null, icon: null, splash: null, features: null, approximateMemberCount: null, approximatePresenceCount: null, featurableInDirectory: null };
+    const obj = { channelId: null, guildId: null, type: null, authorId: null, createdAt: null, description: null, primaryCategoryId: null, name, icon, splash, features: _Set1, approximateMemberCount: prop, approximatePresenceCount: prop1, featurableInDirectory: prop2 };
     ({ directory_channel_id: obj.channelId, entity_id: obj.guildId, type: obj.type, author_id: obj.authorId, created_at: obj.createdAt, description: obj.description, primary_category_id: obj.primaryCategoryId, guild } = entry);
-    let name;
+    name = undefined;
     if (guild != null) {
       name = guild.name;
     }
-    obj.name = name;
     const guild2 = entry.guild;
-    let icon;
+    icon = undefined;
     if (guild2 != null) {
       icon = guild2.icon;
     }
-    obj.icon = icon;
     const guild3 = entry.guild;
-    let splash;
+    splash = undefined;
     if (guild3 != null) {
       splash = guild3.splash;
     }
-    obj.splash = splash;
     const guild4 = entry.guild;
     let features;
+    const _Set = Set;
     if (guild4 != null) {
       features = guild4.features;
     }
-    const set = new Set(features);
-    obj.features = set;
+    const self = this;
+    const self2 = this;
+    _Set1 = new _Set(features);
     const guild5 = entry.guild;
-    let prop;
+    prop = undefined;
     if (guild5 != null) {
       prop = guild5.approximate_member_count;
     }
-    obj.approximateMemberCount = prop;
     const guild6 = entry.guild;
-    let prop1;
+    prop1 = undefined;
     if (guild6 != null) {
       prop1 = guild6.approximate_presence_count;
     }
-    obj.approximatePresenceCount = prop1;
     const guild7 = entry.guild;
-    let prop2;
+    prop2 = undefined;
     if (guild7 != null) {
       prop2 = guild7.featurable_in_directory;
     }
-    obj.featurableInDirectory = prop2;
     return obj;
   } else {
     const type = entry.type;
@@ -67,19 +73,24 @@ export const guildDirectoryEntryFromServer = function guildDirectoryEntryFromSer
 };
 export const MAX_CATEGORY_SERVERS = 5;
 export const orderByTotalMemberCount = function orderByTotalMemberCount(found) {
-  const items = [(approximateMemberCount) => approximateMemberCount.approximateMemberCount];
-  return _modDef12.orderBy(found, items, ["desc"]);
+  const items = [f109647];
+  const obj = _modDef12;
+  return obj.orderBy(found, items, ["desc"]);
 };
-export const orderByDateAdded = function orderByDateAdded(reactions) {
-  const items = [(createdAt) => createdAt.createdAt];
-  return _modDef12.orderBy(reactions, items, ["desc"]);
+export const orderByDateAdded = function orderByDateAdded(items) {
+  items = [f109648];
+  const obj = _modDef12;
+  return obj.orderBy(items, items, ["desc"]);
 };
 export const rankByDateAdded = function rankByDateAdded(arr) {
   const found = arr.filter((featurableInDirectory) => featurableInDirectory.featurableInDirectory);
-  const items = [(createdAt) => createdAt.createdAt];
-  return _modDef12.orderBy(found, items, ["desc"]).slice(0, 5);
+  const items = [f109648];
+  const obj = _modDef12;
+  const orderByResult = obj.orderBy(found, items, ["desc"]);
+  return orderByResult.slice(0, 5);
 };
 export const rankGuildEntries = function rankGuildEntries(arr) {
-  const items = [(approximateMemberCount) => approximateMemberCount.approximateMemberCount];
-  return _modDef12.orderBy(arr, items, ["desc"]);
+  const items = [f109647];
+  const obj = _modDef12;
+  return obj.orderBy(arr, items, ["desc"]);
 };

@@ -1,22 +1,35 @@
-// Module ID: 12112
-// Function ID: 12113
+// Module ID: 12048
+// Function ID: 12049
 // Name: ChatInputAppCommandManager
-// Dependencies: [32, 19, 7371, 7372, 2001, 5604, 1372, 5490, 4845, 576, 11685, 12, 6914, 504, 5608, 11686, 11684, 8911, 1979, 12113, 2]
+// Dependencies: [32, 19, 7407, 7408, 2007, 5892, 1377, 5789, 4890, 587, 11606, 558, 576, 12, 6812, 5896, 504, 11607, 11605, 8939, 1985, 12049, 2]
 
-// Module 12112 (ChatInputAppCommandManager)
-import nativeDefault from "native" /* 576 */;
-import useGameProfileObscured from "useGameProfileObscured" /* 5608 */;
-import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 11684 */;
-import ApplicationCommandManagerDefault from "ApplicationCommandManager" /* 12113 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 7371 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 7372 */;
-import GameStore from "GameStore" /* 2001 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 5604 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 12048 (ChatInputAppCommandManager)
+import nativeDefault from "native" /* 587 */;
+import useGameProfileObscured from "useGameProfileObscured" /* 5896 */;
+import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 11605 */;
+import ApplicationCommandManagerDefault from "ApplicationCommandManager" /* 12049 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 7407 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 7408 */;
+import GameStore from "GameStore" /* 2007 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 5892 */;
+import UserStore from "UserStore" /* 1377 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5789 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let chatInputRef, map, set;
+
+let closure_12;
+let map1;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+let unpackModuleId;
 function areResolvedGamesEqual(size, size2) {
   if (size === size2) {
     return true;
@@ -26,7 +39,7 @@ function areResolvedGamesEqual(size, size2) {
         if (size.size === size2.size) {
           const keys = size.keys();
           for (const item10011 of keys) {
-            if (arg1.has(item10011)) {
+            if (size2.has(item10011)) {
               continue;
             } else {
               obj.return();
@@ -41,211 +54,509 @@ function areResolvedGamesEqual(size, size2) {
     return false;
   }
 }
-const ChannelAutocompleteConstants = fn(5490);
-({ extractGameMentionIds: closure_11, GAME_MENTION_RAW_RE_GLOBAL: closure_12, GAME_MENTION_SENTINEL: map1 } = ChannelAutocompleteConstants);
-const createStyles = fn(4845);
-let obj = { commandOption: { backgroundColor: nativeDefault.colors.KEYWORD_HIGHLIGHT_BACKGROUND, color: nativeDefault.colors.TEXT_DEFAULT, borderRadius: nativeDefault.radii.xs, fontSize: 14 }, commandErrorOption: null, gameMention: null, timestampMention: null, autocomplete: null };
-let obj3 = { backgroundColor: nativeDefault.colors.KEYWORD_HIGHLIGHT_BACKGROUND, color: nativeDefault.colors.TEXT_DEFAULT, borderRadius: nativeDefault.radii.xs, fontSize: 14 };
-obj.commandErrorOption = { backgroundColor: nativeDefault.colors.KEYWORD_HIGHLIGHT_BACKGROUND, color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.xs, fontSize: 14 };
-let obj4 = { backgroundColor: nativeDefault.colors.KEYWORD_HIGHLIGHT_BACKGROUND, color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.xs, fontSize: 14 };
-obj.gameMention = { backgroundColor: nativeDefault.colors.MENTION_BACKGROUND, color: nativeDefault.colors.MENTION_FOREGROUND, borderRadius: nativeDefault.radii.xs, fontSize: 14, fontWeight: "bold" };
-const obj5 = { backgroundColor: nativeDefault.colors.MENTION_BACKGROUND, color: nativeDefault.colors.MENTION_FOREGROUND, borderRadius: nativeDefault.radii.xs, fontSize: 14, fontWeight: "bold" };
-obj.timestampMention = { backgroundColor: nativeDefault.colors.MENTION_BACKGROUND, color: nativeDefault.colors.MENTION_FOREGROUND, borderRadius: nativeDefault.radii.xs, fontSize: 14, fontWeight: "bold" };
-let obj6 = { backgroundColor: nativeDefault.colors.MENTION_BACKGROUND, color: nativeDefault.colors.MENTION_FOREGROUND, borderRadius: nativeDefault.radii.xs, fontSize: 14, fontWeight: "bold" };
-obj.autocomplete = { color: nativeDefault.colors.TEXT_BRAND, fontWeight: "bold" };
-let closure_14 = createStyles.createStyles(obj);
-const forwardRefResult = noop.forwardRef((chatInputRef, ref) => {
-  chatInputRef = chatInputRef.chatInputRef;
-  const chatInputStateRef = chatInputRef.chatInputStateRef;
-  const channel = chatInputRef.channel;
-  const commandsDisabled = chatInputRef.commandsDisabled;
-  let stateFromStores1;
-  first = undefined;
-  let stateFromStores2;
-  let callback1;
-  let tmp = stateFromStores2();
-  _slicedToArray = tmp;
-  const applicationCommandOptionValueParser = chatInputRef(commandsDisabled[15]).useApplicationCommandOptionValueParser({ channel });
-  let obj = chatInputRef(commandsDisabled[15]);
-  const items = [stateFromStores1];
-  const stateFromStores = chatInputRef(commandsDisabled[13]).useStateFromStores(items, () => ApplicationCommandStore.getActiveCommand(channel.id));
-  let obj2 = chatInputRef(commandsDisabled[13]);
-  const items1 = [stateFromStores];
-  stateFromStores1 = chatInputRef(commandsDisabled[13]).useStateFromStores(items1, () => ApplicationCommandAutocompleteStore.getLastResponseNonce(channel.id));
-  let obj3 = chatInputRef(commandsDisabled[13]);
-  let text = chatInputRef(commandsDisabled[16]).getTextBeforeFirstOption(chatInputStateRef.current.text).text;
-  let substr = text.slice(1);
-  ref = applicationCommandOptionValueParser.useRef(substr.trimEnd());
-  const tmp6 = _slicedToArray(applicationCommandOptionValueParser.useState(ref.current), 2);
-  closure_9 = tmp6[1];
-  let obj4 = chatInputRef(commandsDisabled[16]);
-  const commands = channel(commandsDisabled[17]).useCachedResults({ type: "channel", channel }, chatInputRef(commandsDisabled[18]).ApplicationCommandType.CHAT, tmp6[0]).commands;
-  ref = applicationCommandOptionValueParser.useRef(undefined);
-  closure_129_1 = undefined;
-  [first, closure_129_1] = applicationCommandOptionValueParser.useState([]);
-  closure_129_0 = first;
-  const callback = applicationCommandOptionValueParser.useCallback((arg0) => {
-    closure_0 = closure_2_11(arg0);
-    chatInputStateRef((arg0) => {
+let _slicedToArray = _slicedToArray_mod;
+({ extractGameMentionIds: unpackModuleId, GAME_MENTION_RAW_RE_GLOBAL: closure_12, GAME_MENTION_SENTINEL: map1 } = ChannelAutocompleteConstants);
+let createStyles = createStyles_mod;
+let obj = { commandOption: obj2, commandErrorOption: obj3, gameMention: obj4, timestampMention: obj5, autocomplete: obj6 };
+obj2 = { backgroundColor: nativeDefault.colors.KEYWORD_HIGHLIGHT_BACKGROUND, color: nativeDefault.colors.TEXT_DEFAULT, borderRadius: nativeDefault.radii.xs, fontSize: 14 };
+createStyles = createStyles.createStyles;
+obj3 = { backgroundColor: nativeDefault.colors.KEYWORD_HIGHLIGHT_BACKGROUND, color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.xs, fontSize: 14 };
+obj4 = { backgroundColor: nativeDefault.colors.MENTION_BACKGROUND, color: nativeDefault.colors.MENTION_FOREGROUND, borderRadius: nativeDefault.radii.xs, fontSize: 14, fontWeight: "bold" };
+obj5 = { backgroundColor: nativeDefault.colors.MENTION_BACKGROUND, color: nativeDefault.colors.MENTION_FOREGROUND, borderRadius: nativeDefault.radii.xs, fontSize: 14, fontWeight: "bold" };
+obj6 = { color: nativeDefault.colors.TEXT_BRAND, fontWeight: "bold" };
+let closure_14 = createStyles(obj);
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let closure_1;
+  let first;
+  let first1;
+  let obj2;
+  let tmp11;
+  let tmp14;
+  let tmp15;
+  let tmp6;
+  let tmp7;
+  let tmp = first1;
+  let obj = first1(576);
+  const cResult = obj.c(12);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  [first1, closure_1] = react.useState(first);
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function u(arg0) {
+      let closure_0 = unpackModuleId(arg0);
+      let tmp = closure_1((arg0) => {
+        let tmp = closure_0;
+        const obj = closure_2_1(closure_2_3[13]);
+        if (obj.isEqual(arg0, closure_0)) {
+          tmp = arg0;
+        }
+        return tmp;
+      });
+    };
+    cResult[1] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[1];
+  }
+  if (cResult[2] !== first1) {
+    let tmp8;
+    const _Symbol = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      class C {
+        constructor(item) {
+          return null == gameById.getGameById(item);
+        }
+      }
+      cResult[4] = C;
+      tmp8 = C;
+    } else {
+      class C {
+        constructor(item) {
+          return null == gameById.getGameById(item);
+        }
+      }
+    }
+    const found = first1.filter(tmp8);
+    cResult[2] = first1;
+    cResult[3] = found;
+    tmp7 = found;
+  } else {
+    class C {
+      constructor(item) {
+        return null == gameById.getGameById(item);
+      }
+    }
+  }
+  const tmpResult = tmp(6812);
+  const games = tmpResult.useGames(tmp7);
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor(item) {
+        return null == gameById.getGameById(item);
+      }
+    }
+    const items1 = [GameStore, , ];
+    let tmp12 = UserStore;
+    items1[1] = UserStore;
+    let tmp13 = GameAutocompleteStore;
+    items1[2] = GameAutocompleteStore;
+    cResult[5] = items1;
+    tmp11 = items1;
+  } else {
+    class C {
+      constructor(item) {
+        return null == gameById.getGameById(item);
+      }
+    }
+  }
+  if (cResult[6] !== first1) {
+    class I {
+      constructor() {
+        let media;
+        if (0 === first1.length) {
+          return null;
+        } else {
+          let nsfwAllowed;
+          const currentUser = UserStore.getCurrentUser();
+          if (currentUser != null) {
+            nsfwAllowed = currentUser.nsfwAllowed;
+          }
+          const _Map = Map;
+          const self = this;
+          const self2 = this;
+          map = new Map();
+          for (const item10017 of tmp) {
+            let tmp6 = item10017;
+            let game = GameStore.getGame(item10017);
+            let tmp9 = game;
+            if (null == game) {
+              gameById = GameAutocompleteStore.getGameById(tmp6);
+              if (null != gameById) {
+                let result = map.set(tmp6, tmp20);
+              }
+            } else {
+              let obj2 = useGameProfileObscured;
+              if (!obj2.isGameProfileObscured(tmp9, nsfwAllowed)) {
+                let obj = { id: tmp6, name: null, icon };
+                ({ name: obj3.name, media } = tmp9);
+                let icon;
+                set = map.set;
+                if (media != null) {
+                  icon = media.icon;
+                }
+                if (icon == null) {
+                  icon = null;
+                }
+                let result1 = set(tmp6, obj);
+              }
+            }
+            continue;
+          }
+          let tmp24 = null;
+          if (map.size > 0) {
+            tmp24 = map;
+          }
+          return tmp24;
+        }
+      }
+    }
+    const items2 = [first1];
+    cResult[6] = first1;
+    cResult[7] = I;
+    cResult[8] = items2;
+    tmp15 = items2;
+    tmp14 = I;
+  } else {
+    class I {
+      constructor() {
+        let media;
+        if (0 === first1.length) {
+          return null;
+        } else {
+          let nsfwAllowed;
+          const currentUser = UserStore.getCurrentUser();
+          if (currentUser != null) {
+            nsfwAllowed = currentUser.nsfwAllowed;
+          }
+          const _Map = Map;
+          const self = this;
+          const self2 = this;
+          map = new Map();
+          for (const item10017 of tmp) {
+            let tmp6 = item10017;
+            let game = GameStore.getGame(item10017);
+            let tmp9 = game;
+            if (null == game) {
+              gameById = GameAutocompleteStore.getGameById(tmp6);
+              if (null != gameById) {
+                let result = map.set(tmp6, tmp20);
+              }
+            } else {
+              let obj2 = useGameProfileObscured;
+              if (!obj2.isGameProfileObscured(tmp9, nsfwAllowed)) {
+                let obj = { id: tmp6, name: null, icon };
+                ({ name: obj3.name, media } = tmp9);
+                let icon;
+                set = map.set;
+                if (media != null) {
+                  icon = media.icon;
+                }
+                if (icon == null) {
+                  icon = null;
+                }
+                let result1 = set(tmp6, obj);
+              }
+            }
+            continue;
+          }
+          let tmp24 = null;
+          if (map.size > 0) {
+            tmp24 = map;
+          }
+          return tmp24;
+        }
+      }
+    }
+    tmp15 = cResult[8];
+  }
+  const tmpResult2 = tmp(504);
+  const stateFromStores = tmpResult2.useStateFromStores(tmp11, tmp14, tmp15, areResolvedGamesEqual);
+  if (cResult[9] === first1) {
+    class I {
+      constructor() {
+        let media;
+        if (0 === first1.length) {
+          return null;
+        } else {
+          let nsfwAllowed;
+          const currentUser = UserStore.getCurrentUser();
+          if (currentUser != null) {
+            nsfwAllowed = currentUser.nsfwAllowed;
+          }
+          const _Map = Map;
+          const self = this;
+          const self2 = this;
+          map = new Map();
+          for (const item10017 of tmp) {
+            let tmp6 = item10017;
+            let game = GameStore.getGame(item10017);
+            let tmp9 = game;
+            if (null == game) {
+              gameById = GameAutocompleteStore.getGameById(tmp6);
+              if (null != gameById) {
+                let result = map.set(tmp6, tmp20);
+              }
+            } else {
+              let obj2 = useGameProfileObscured;
+              if (!obj2.isGameProfileObscured(tmp9, nsfwAllowed)) {
+                let obj = { id: tmp6, name: null, icon };
+                ({ name: obj3.name, media } = tmp9);
+                let icon;
+                set = map.set;
+                if (media != null) {
+                  icon = media.icon;
+                }
+                if (icon == null) {
+                  icon = null;
+                }
+                let result1 = set(tmp6, obj);
+              }
+            }
+            continue;
+          }
+          let tmp24 = null;
+          if (map.size > 0) {
+            tmp24 = map;
+          }
+          return tmp24;
+        }
+      }
+    }
+    return obj2;
+  }
+  obj2 = { syncRawGameMentionIdsFromText: tmp6, rawGameMentionIds: first1, resolvedGameMentions: stateFromStores };
+  cResult[9] = first1;
+  cResult[10] = stateFromStores;
+  cResult[11] = obj2;
+}) : (() => {
+  let closure_1;
+  let rawGameMentionIds;
+  [rawGameMentionIds, closure_1] = react.useState([]);
+  const items = [rawGameMentionIds];
+  const callback = react.useCallback((arg0) => {
+    let closure_0 = unpackModuleId(arg0);
+    let tmp = closure_1((arg0) => {
       let tmp = closure_0;
+      const obj = closure_2_1(closure_2_3[13]);
       if (obj.isEqual(arg0, closure_0)) {
         tmp = arg0;
       }
       return tmp;
     });
   }, []);
-  const items2 = [first];
-  const memo = applicationCommandOptionValueParser.useMemo(() => chatInputRef.filter((item) => null == gameById.getGameById(item)), items2);
-  const obj6 = channel(commandsDisabled[17]);
-  const games = chatInputRef(commandsDisabled[12]).useGames(memo);
-  const obj7 = chatInputRef(commandsDisabled[12]);
-  const items3 = [ref, commands, closure_9];
-  const items4 = [first];
-  stateFromStores2 = chatInputRef(commandsDisabled[13]).useStateFromStores(items3, () => {
-    if (0 === chatInputRef.length) {
-      return null;
-    } else {
-      const currentUser = UserStore.getCurrentUser();
-      if (currentUser != null) {
-        const nsfwAllowed = currentUser.nsfwAllowed;
-      }
-      const _Map = Map;
-      const map = new Map();
-      for (const item10017 of tmp) {
-        let tmp8 = item10017;
-        let game = GameStore.getGame(item10017);
-        let tmp11 = game;
-        if (null == game) {
-          let gameById = GameAutocompleteStore.getGameById(tmp8);
-          if (null != gameById) {
-            let result = map.set(tmp8, tmp22);
-          }
-        } else {
-          let obj2 = useGameProfileObscured;
-          if (!obj2.isGameProfileObscured(tmp11, nsfwAllowed)) {
-            let obj = { id: tmp8, name: null, icon: null };
-            ({ name: obj3.name, media } = tmp11);
-            let icon;
-            if (media != null) {
-              icon = media.icon;
-            }
-            if (icon == null) {
-              icon = null;
-            }
-            obj.icon = icon;
-            let result1 = map.set(tmp8, obj);
-          }
+  const memo = react.useMemo(() => {
+    let gameById;
+    return first.filter((item) => null == gameById.getGameById(item));
+  }, items);
+  let obj = rawGameMentionIds(6812);
+  const games = obj.useGames(memo);
+  let obj2 = rawGameMentionIds(504);
+  const items1 = [GameStore, UserStore, GameAutocompleteStore];
+  const items2 = [rawGameMentionIds];
+  const obj3 = {
+    syncRawGameMentionIdsFromText: callback,
+    rawGameMentionIds,
+    resolvedGameMentions: obj2.useStateFromStores(items1, function() {
+      let media;
+      if (0 === first.length) {
+        return null;
+      } else {
+        let nsfwAllowed;
+        const currentUser = UserStore.getCurrentUser();
+        if (currentUser != null) {
+          nsfwAllowed = currentUser.nsfwAllowed;
         }
-        continue;
+        const _Map = Map;
+        const self = this;
+        const self2 = this;
+        map = new Map();
+        for (const item10017 of tmp) {
+          let tmp6 = item10017;
+          let game = GameStore.getGame(item10017);
+          let tmp9 = game;
+          if (null == game) {
+            let gameById = GameAutocompleteStore.getGameById(tmp6);
+            if (null != gameById) {
+              let result = map.set(tmp6, tmp20);
+            }
+          } else {
+            let obj2 = useGameProfileObscured;
+            if (!obj2.isGameProfileObscured(tmp9, nsfwAllowed)) {
+              let obj = { id: tmp6, name: null, icon };
+              ({ name: obj3.name, media } = tmp9);
+              let icon;
+              set = map.set;
+              if (media != null) {
+                icon = media.icon;
+              }
+              if (icon == null) {
+                icon = null;
+              }
+              let result1 = set(tmp6, obj);
+            }
+          }
+          continue;
+        }
+        let tmp24 = null;
+        if (map.size > 0) {
+          tmp24 = map;
+        }
+        return tmp24;
       }
-      let tmp26 = null;
-      if (map.size > 0) {
-        tmp26 = map;
-      }
-      return tmp26;
-    }
-  }, items4, callback1);
-  const items5 = [stateFromStores, channel, chatInputRef, chatInputStateRef, commandsDisabled, stateFromStores1, applicationCommandOptionValueParser, commands, tmp, callback];
-  callback1 = applicationCommandOptionValueParser.useCallback(() => {
+    }, items2, areResolvedGamesEqual)
+  };
+  return obj3;
+});
+const forwardRefResult = react.forwardRef((chatInputRef, ref) => {
+  let closure_4;
+  let closure_9;
+  let first;
+  chatInputRef = chatInputRef.chatInputRef;
+  const chatInputStateRef = chatInputRef.chatInputStateRef;
+  const channel = chatInputRef.channel;
+  const commandsDisabled = chatInputRef.commandsDisabled;
+  let stateFromStores1;
+  closure_9 = undefined;
+  let resolvedGameMentions;
+  let tmp = resolvedGameMentions();
+  _slicedToArray = tmp;
+  let obj = chatInputRef(commandsDisabled[17]);
+  const applicationCommandOptionValueParser = obj.useApplicationCommandOptionValueParser({ channel });
+  let obj2 = chatInputRef(commandsDisabled[16]);
+  const items = [stateFromStores1];
+  const stateFromStores = obj2.useStateFromStores(items, () => ApplicationCommandStore.getActiveCommand(channel.id));
+  let obj3 = chatInputRef(commandsDisabled[16]);
+  const items1 = [stateFromStores];
+  stateFromStores1 = obj3.useStateFromStores(items1, () => ApplicationCommandAutocompleteStore.getLastResponseNonce(channel.id));
+  const useRef = applicationCommandOptionValueParser.useRef;
+  let obj4 = chatInputRef(commandsDisabled[18]);
+  let text = obj4.getTextBeforeFirstOption(chatInputStateRef.current.text).text;
+  let substr = text.slice(1);
+  ref = useRef(substr.trimEnd());
+  [first, closure_9] = applicationCommandOptionValueParser.useState(ref.current);
+  const obj6 = channel(commandsDisabled[19]);
+  const commands = obj6.useCachedResults({ type: "channel", channel }, chatInputRef(commandsDisabled[20]).ApplicationCommandType.CHAT, first).commands;
+  ref = applicationCommandOptionValueParser.useRef(undefined);
+  const tmp8 = closure_16();
+  const syncRawGameMentionIdsFromText = tmp8.syncRawGameMentionIdsFromText;
+  const rawGameMentionIds = tmp8.rawGameMentionIds;
+  resolvedGameMentions = tmp8.resolvedGameMentions;
+  const items2 = [stateFromStores, channel, chatInputRef, chatInputStateRef, commandsDisabled, stateFromStores1, applicationCommandOptionValueParser, commands, tmp, syncRawGameMentionIdsFromText];
+  const callback = applicationCommandOptionValueParser.useCallback(function() {
+    let editId;
+    let focused;
+    let obj3;
+    let selectionEnd;
+    let selectionStart;
     const current = chatInputStateRef.current;
     const text = current.text;
     ({ editId, focused, selectionStart, selectionEnd } = current);
-    callback(text);
+    syncRawGameMentionIdsFromText(text);
     const obj = { activeCommand: stateFromStores, channel, commandsDisabled, editId, focused, lastCommandAutocompleteResponseNonce: stateFromStores1, queryCommands: commands, selectionStart, selectionEnd, text };
     if (null == ref.current) {
-      const obj2 = { props: obj, ref: chatInputRef, optionValueParser: applicationCommandOptionValueParser, styles: null };
-      closure_0 = closure_4;
-      const obj3 = {
+      let closure_0 = closure_4;
+      const obj2 = { props: obj, ref: chatInputRef, optionValueParser: applicationCommandOptionValueParser, styles: obj3 };
+      const self = this;
+      const self2 = this;
+      obj3 = {
         commandOption() {
-            return chatInputRef(commandsDisabled[10]).convertToNativeStyle(closure_0.commandOption);
+            const obj = chatInputRef(commandsDisabled[10]);
+            return obj.convertToNativeStyle(closure_0.commandOption);
           },
         commandErrorOption() {
-            return chatInputRef(commandsDisabled[10]).convertToNativeStyle(closure_0.commandErrorOption);
+            const obj = chatInputRef(commandsDisabled[10]);
+            return obj.convertToNativeStyle(closure_0.commandErrorOption);
           },
         gameMention() {
-            return chatInputRef(commandsDisabled[10]).convertToNativeStyle(closure_0.gameMention);
+            const obj = chatInputRef(commandsDisabled[10]);
+            return obj.convertToNativeStyle(closure_0.gameMention);
           },
         timestampMention() {
-            return chatInputRef(commandsDisabled[10]).convertToNativeStyle(closure_0.timestampMention);
+            const obj = chatInputRef(commandsDisabled[10]);
+            return obj.convertToNativeStyle(closure_0.timestampMention);
           },
         autocomplete(color) {
+            let autocomplete;
+            const convertToNativeStyle = chatInputRef(commandsDisabled[10]).convertToNativeStyle;
+            chatInputRef(commandsDisabled[10]);
             if (null == color) {
-              let autocomplete = closure_0.autocomplete;
+              autocomplete = closure_0.autocomplete;
             } else {
-              autocomplete = {};
+              autocomplete = { color };
               const merged = Object.assign(closure_0.autocomplete);
-              autocomplete.color = color;
             }
-            return chatInputRef(commandsDisabled[10]).convertToNativeStyle(autocomplete);
+            return convertToNativeStyle(autocomplete);
           }
       };
-      obj2.styles = obj3;
-      const tmp12 = new ApplicationCommandManagerDefault(obj2);
-      tmp2.current = tmp12;
+      ref.current = new ApplicationCommandManagerDefault(obj2);
+      const tmp10 = new ApplicationCommandManagerDefault(obj2);
     } else {
       const current2 = tmp2.current;
       const obj4 = { newState: obj };
       const result = current2.updateApplicationCommandManagerState(obj4);
     }
-    const text1 = ChatInputCommandOptionParser.getTextBeforeFirstOption(text).text;
+    const obj5 = ChatInputCommandOptionParser;
+    const text1 = obj5.getTextBeforeFirstOption(text).text;
     const substr = text1.slice(1);
     const trimEndResult = substr.trimEnd();
     if (ref.current !== trimEndResult) {
       closure_9(trimEndResult);
-      tmp15.current = trimEndResult;
+      tmp13.current = trimEndResult;
     }
-  }, items5);
-  const items6 = [callback1];
+  }, items2);
+  const items3 = [callback];
   const effect = applicationCommandOptionValueParser.useEffect(() => {
-    callback1();
-  }, items6);
-  const items7 = [tmp];
+    callback();
+  }, items3);
+  const items4 = [tmp];
   const effect1 = applicationCommandOptionValueParser.useEffect(() => {
     const current = ref.current;
     if (current != null) {
-      closure_0 = closure_4;
-      const obj = {
+      let closure_0 = closure_4;
+      let obj = {
         commandOption() {
-            return chatInputRef(commandsDisabled[10]).convertToNativeStyle(closure_0.commandOption);
+            const obj = chatInputRef(commandsDisabled[10]);
+            return obj.convertToNativeStyle(closure_0.commandOption);
           },
         commandErrorOption() {
-            return chatInputRef(commandsDisabled[10]).convertToNativeStyle(closure_0.commandErrorOption);
+            const obj = chatInputRef(commandsDisabled[10]);
+            return obj.convertToNativeStyle(closure_0.commandErrorOption);
           },
         gameMention() {
-            return chatInputRef(commandsDisabled[10]).convertToNativeStyle(closure_0.gameMention);
+            const obj = chatInputRef(commandsDisabled[10]);
+            return obj.convertToNativeStyle(closure_0.gameMention);
           },
         timestampMention() {
-            return chatInputRef(commandsDisabled[10]).convertToNativeStyle(closure_0.timestampMention);
+            const obj = chatInputRef(commandsDisabled[10]);
+            return obj.convertToNativeStyle(closure_0.timestampMention);
           },
         autocomplete(color) {
+            let autocomplete;
+            const convertToNativeStyle = chatInputRef(commandsDisabled[10]).convertToNativeStyle;
+            chatInputRef(commandsDisabled[10]);
             if (null == color) {
-              let autocomplete = closure_0.autocomplete;
+              autocomplete = closure_0.autocomplete;
             } else {
-              autocomplete = {};
+              autocomplete = { color };
               const merged = Object.assign(closure_0.autocomplete);
-              autocomplete.color = color;
             }
-            return chatInputRef(commandsDisabled[10]).convertToNativeStyle(autocomplete);
+            return convertToNativeStyle(autocomplete);
           }
       };
       current.updateStyles(obj);
     }
-  }, items7);
-  const items8 = [stateFromStores2, first, chatInputRef, chatInputStateRef, callback1];
+  }, items4);
+  const items5 = [resolvedGameMentions, rawGameMentionIds, chatInputRef, chatInputStateRef, callback];
   const effect2 = applicationCommandOptionValueParser.useEffect(() => {
     const current = ref.current;
-    if (null != stateFromStores2) {
-      if (0 !== first.length) {
+    if (null != resolvedGameMentions) {
+      if (0 !== rawGameMentionIds.length) {
         if (null != current) {
-          const mapped = closure_2_11(chatInputStateRef.current.text).map((item) => stateFromStores2.get(item));
+          const arr = unpackModuleId(chatInputStateRef.current.text);
+          const mapped = arr.map((item) => resolvedGameMentions.get(item));
           const found = mapped.filter((item) => null != item);
           if (0 !== found.length) {
-            const replaced = str.replace(closure_2_12, (arg0, arg1) => {
+            const replaced = str.replace(closure_12, (arg0, arg1) => {
               let combined = arg0;
-              value = stateFromStores2.get(arg1);
+              const value = resolvedGameMentions.get(arg1);
               if (null != value) {
                 const _HermesInternal = HermesInternal;
-                combined = "" + first + value.name;
+                combined = "" + rawGameMentionIds + value.name;
               }
               return combined;
             });
@@ -255,28 +566,26 @@ const forwardRefResult = noop.forwardRef((chatInputRef, ref) => {
             }
             const current2 = chatInputRef.current;
             current2.setText(replaced);
-            chatInputStateRef.current.textPrev = str;
+            chatInputStateRef.current.textPrev = chatInputStateRef.current.text;
             chatInputStateRef.current.text = replaced;
-            callback1();
+            callback();
           }
-          const arr = closure_2_11(chatInputStateRef.current.text);
         }
       }
     }
-  }, items8);
+  }, items5);
   const imperativeHandle = applicationCommandOptionValueParser.useImperativeHandle(ref, () => ({
     getApplicationCommandManager() {
       return ref.current;
     },
     updateState() {
-      return callback1();
+      return callback();
     }
   }));
   return null;
 });
 forwardRefResult.displayName = "ChatInputAppCommandManager";
-let obj7 = { color: nativeDefault.colors.TEXT_BRAND, fontWeight: "bold" };
-const size = fn(2);
+const memoResult = react.memo(forwardRefResult);
 let result = size.fileFinishedImporting("modules/chat_input/native/ChatInputAppCommandManager.tsx");
 
-export default noop.memo(forwardRefResult);
+export default memoResult;

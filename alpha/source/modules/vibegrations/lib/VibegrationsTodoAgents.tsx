@@ -1,53 +1,54 @@
-// Module ID: 16608
-// Function ID: 16609
+// Module ID: 16688
+// Function ID: 16689
 // Name: VibegrationsTodoAgents
-// Dependencies: [16581, 2]
+// Dependencies: [16661, 2]
 // Exports: groupAgentsByTodo, runningTodoAgents, splitAgentOverflow
 
-// Module 16608 (VibegrationsTodoAgents)
-import VibegrationsTimelineTree from "VibegrationsTimelineTree" /* 16581 */;
+// Module 16688 (VibegrationsTodoAgents)
+import VibegrationsTimelineTree from "VibegrationsTimelineTree" /* 16661 */;
 import size from "module_2" /* 2 */;
+
+let map;
 
 let result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsTodoAgents.tsx");
 
 export const MAX_SHOWN_AGENTS = 3;
 export const runningTodoAgents = function runningTodoAgents(tasks) {
+  let obj;
+  let taskId;
   const items = [];
   const iter = tasks[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp2 = nextResult;
     if ("running" === nextResult.task.status) {
-      let obj2 = { key: null, name: null, task: null, todoId: null };
-      obj2.key = tmp2.taskId;
-      let taskId = tmp2.task.helperName;
+      let obj2 = { key: tmp2.taskId, name: taskId, task: obj.describeNode(tmp2.task), todoId: tmp2.task.todoId };
+      taskId = tmp2.task.helperName;
+      let push = items.push;
       if (taskId == null) {
         taskId = tmp2.taskId;
       }
-      obj2.name = taskId;
-      let obj = VibegrationsTimelineTree;
-      obj2.task = obj.describeNode(tmp2.task);
-      obj2.todoId = tmp2.task.todoId;
-      let arr = items.push(obj2);
+      obj = VibegrationsTimelineTree;
+      let arr = push(obj2);
     }
     continue;
   }
   return items;
 };
-export const groupAgentsByTodo = function groupAgentsByTodo(items) {
-  const map = new Map();
-  const iter = items[Symbol.iterator]();
+export const groupAgentsByTodo = function groupAgentsByTodo(cResult) {
+  map = new Map();
+  const iter = cResult[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp2 = nextResult;
     if (null != nextResult.todoId) {
       if ("" !== tmp2.todoId) {
-        value = map.get(tmp2.todoId);
+        let value = map.get(tmp2.todoId);
         let arr = value;
         if (null != value) {
           let arr2 = arr.push(tmp2);
         } else {
-          items = [tmp2];
+          let items = [tmp2];
           let result = map.set(tmp2.todoId, items);
         }
       }
@@ -57,13 +58,14 @@ export const groupAgentsByTodo = function groupAgentsByTodo(items) {
   return map;
 };
 export const splitAgentOverflow = function splitAgentOverflow(agents) {
+  let obj;
   let num = arg1;
   if (arg1 === undefined) {
     num = 3;
   }
   if (agents.length <= num) {
+    obj = { shown: agents, overflow: 0 };
     const obj2 = { shown: agents, overflow: 0 };
-    let obj = obj2;
   } else {
     obj = { shown: agents.slice(0, num), overflow: agents.length - num };
   }

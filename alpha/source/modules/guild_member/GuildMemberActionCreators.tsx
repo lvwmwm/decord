@@ -1,18 +1,18 @@
-// Module ID: 6727
-// Function ID: 6728
+// Module ID: 6615
+// Function ID: 6616
 // Name: GuildMemberActionCreators
-// Dependencies: [2100, 1074, 6049, 573, 1271, 2]
+// Dependencies: [2105, 1085, 5942, 584, 1282, 2]
 // Exports: updateGuildSelfMember
 
-// Module 6727 (GuildMemberActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import ImpersonateActionCreators from "ImpersonateActionCreators" /* 6049 */;
-import ImpersonateStore from "ImpersonateStore" /* 2100 */;
+// Module 6615 (GuildMemberActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import ImpersonateActionCreators from "ImpersonateActionCreators" /* 5942 */;
+import ImpersonateStore from "ImpersonateStore" /* 2105 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Endpoints = fn(1074).Endpoints;
-const size = fn(2);
+const Endpoints = Constants.Endpoints;
 let result = size.fileFinishedImporting("modules/guild_member/GuildMemberActionCreators.tsx");
 
 export const updateGuildSelfMember = function updateGuildSelfMember(guildId, memberOptions) {
@@ -22,13 +22,16 @@ export const updateGuildSelfMember = function updateGuildSelfMember(guildId, mem
   }
   if (ImpersonateStore.isFullServerPreview(guildId)) {
     const obj3 = { memberOptions };
-    const result = ImpersonateActionCreators.updateImpersonatedData(guildId, obj3);
+    const obj4 = ImpersonateActionCreators;
+    const result = obj4.updateImpersonatedData(guildId, obj3);
   } else {
     const obj5 = { type: "GUILD_MEMBER_UPDATE_LOCAL", guildId, roles: null, flags: null };
     ({ roles: obj2.roles, flags: obj2.flags } = memberOptions);
-    DispatcherDefault.dispatch(obj5);
+    const obj = DispatcherDefault;
+    obj.dispatch(obj5);
     const HTTP = HTTPUtils.HTTP;
     const request = { url: Endpoints.SET_GUILD_MEMBER(guildId), body: memberOptions, oldFormErrors: flag || undefined, rejectWithError: false };
-    return HTTP.patch(request);
+    const patch = HTTP.patch;
+    return patch(request);
   }
 };

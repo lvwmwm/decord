@@ -1,16 +1,18 @@
-// Module ID: 4568
-// Function ID: 4569
+// Module ID: 4588
+// Function ID: 4589
 // Name: getGradientThemeFromFlags
-// Dependencies: [4569, 2]
+// Dependencies: [4589, 2]
 // Exports: getGradientThemeFromFlags
 
-// Module 4568 (getGradientThemeFromFlags)
-import native from "native" /* 4569 */;
+// Module 4588 (getGradientThemeFromFlags)
+import native from "native" /* 4589 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/components/ThemeContextProvider/native/getGradientThemeFromFlags.tsx");
 
-export const getGradientThemeFromFlags = function getGradientThemeFromFlags(themeContext) {
+export const getGradientThemeFromFlags = function getGradientThemeFromFlags(primaryColor) {
+  const obj = native;
+  const hasThemeFlagResult = obj.hasThemeFlag(primaryColor, native.ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED);
   native;
   let str = "dark";
   if (!hasThemeFlagResult) {

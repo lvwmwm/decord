@@ -1,48 +1,83 @@
-// Module ID: 14726
-// Function ID: 14727
+// Module ID: 14782
+// Function ID: 14783
 // Name: FriendRequestsMutualFriendsSetting
-// Dependencies: [19, 7590, 1074, 14565, 2021, 6602, 1385, 11215, 1115, 2]
+// Dependencies: [19, 7634, 1085, 558, 14621, 576, 2028, 6491, 1390, 11129, 1126, 2]
 
-// Module 14726 (FriendRequestsMutualFriendsSetting)
-import util from "util" /* 1115 */;
-import FlagUtilsAll from "FlagUtils" /* 1385 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6602 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14565 */;
-import noop from "module_19" /* 19 */;
+// Module 14782 (FriendRequestsMutualFriendsSetting)
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import FlagUtilsAll from "FlagUtils" /* 1390 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14621 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const FriendSourceFlags = fn(1074).FriendSourceFlags;
-const SettingBuilders = fn(11215);
-const toggle = SettingBuilders.createToggle({
+let tmp;
+const UserSettingsUtils = tmp(6491);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const FriendSourceFlags = Constants.FriendSourceFlags;
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating.isReactCompilerEnabled();
+ReactCompilerGating = ReactCompilerGating_mod;
+const fn = () => {
+  const obj = useParentalControlSettings;
+  return obj.useIsParentallyControlled();
+};
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(2);
+  const FriendSourceFlagsSetting = UserSettings.FriendSourceFlagsSetting;
+  const setting = FriendSourceFlagsSetting.useSetting();
+  if (cResult[0] !== setting) {
+    const tmpResult = UserSettingsUtils;
+    const flags = tmpResult.computeFlags(setting);
+    cResult[0] = setting;
+    cResult[1] = flags;
+    tmp5 = flags;
+  } else {
+    tmp5 = cResult[1];
+  }
+  return tmp5.mutualFriends;
+}) : (() => {
+  let setting;
+  const FriendSourceFlagsSetting = setting(2028).FriendSourceFlagsSetting;
+  setting = FriendSourceFlagsSetting.useSetting();
+  const items = [setting];
+  return react.useMemo(() => {
+    const obj = UserSettingsUtils;
+    return obj.computeFlags(setting);
+  }, items).mutualFriends;
+});
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.IqlCSq);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.IqlCSq);
   },
-  parent: fn(7590).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
-  useValue: function useFriendRequestsMutualFriendsSettingValue() {
-    const FriendSourceFlagsSetting = setting(2021).FriendSourceFlagsSetting;
-    setting = FriendSourceFlagsSetting.useSetting();
-    const items = [setting];
-    return noop.useMemo(() => UserSettingsUtils.computeFlags(setting), items).mutualFriends;
-  },
+  parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  useValue: tmp3,
   onValueChange: function onFriendRequestsMutualFriendsSettingValueChange(arg0) {
+    let addFlagResult;
     const FriendSourceFlagsSetting = UserSettings.FriendSourceFlagsSetting;
     const setting = FriendSourceFlagsSetting.getSetting();
     const FriendSourceFlagsSetting2 = UserSettings.FriendSourceFlagsSetting;
+    const updateSetting = FriendSourceFlagsSetting2.updateSetting;
     const obj = FlagUtilsAll;
-    if (arg0) {
-      let addFlagResult = obj.addFlag(setting, FriendSourceFlags.MUTUAL_FRIENDS);
+    const tmp2 = arg0;
+    if (tmp2) {
+      addFlagResult = obj.addFlag(setting, FriendSourceFlags.MUTUAL_FRIENDS);
     } else {
       addFlagResult = obj.removeFlags(setting, FriendSourceFlags.MUTUAL_FRIENDS, FriendSourceFlags.NO_RELATION);
     }
-    FriendSourceFlagsSetting2.updateSetting(addFlagResult);
+    updateSetting(addFlagResult);
   },
-  useIsDisabled() {
-    return useParentalControlSettings.useIsParentallyControlled();
-  }
-});
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/defs/native/FriendRequestsMutualFriendsSetting.tsx");
+  useIsDisabled: fn
+};
+const toggle = SettingBuilders.createToggle(obj);
+const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/FriendRequestsMutualFriendsSetting.tsx");
 
 export default toggle;

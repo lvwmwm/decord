@@ -1,15 +1,15 @@
-// Module ID: 4904
-// Function ID: 4905
+// Module ID: 4949
+// Function ID: 4950
 // Name: Video
-// Dependencies: [4905, 2]
+// Dependencies: [4950, 2]
 
-// Module 4904 (Video)
-import DirectVideoDefault from "DirectVideo" /* 4905 */;
+// Module 4949 (Video)
+import DirectVideoDefault from "DirectVideo" /* 4950 */;
 import size from "module_2" /* 2 */;
 
 class Video {
   constructor(arg0) {
-    return closure_0(closure_1[0])(global, Video.onContainerResized);
+    return DirectVideoDefault(arg0, Video.onContainerResized);
   }
 }
 Video.onContainerResized = () => {

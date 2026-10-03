@@ -1,21 +1,24 @@
-// Module ID: 10621
-// Function ID: 10622
+// Module ID: 10699
+// Function ID: 10700
 // Name: showThreadBrowserModal
-// Dependencies: [10572, 7373, 4722, 2]
+// Dependencies: [10653, 7409, 4737, 2]
 // Exports: default
 
-// Module 10621 (showThreadBrowserModal)
-import RootNavigationRef from "RootNavigationRef" /* 4722 */;
-import ThreadUtils from "ThreadUtils" /* 7373 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10572 */;
+// Module 10699 (showThreadBrowserModal)
+import RootNavigationRef from "RootNavigationRef" /* 4737 */;
+import ThreadUtils from "ThreadUtils" /* 7409 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10653 */;
 import size from "module_2" /* 2 */;
 
 const constants = ChannelDetailsConstants.ChannelDetailsNavigatorScreens;
 let result = size.fileFinishedImporting("modules/threads/native/showThreadBrowserModal.tsx");
 
 export default function showThreadBrowserModal(id) {
-  const result = ThreadUtils.trackThreadBrowserOpened();
-  const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
+  const obj = ThreadUtils;
+  const result = obj.trackThreadBrowserOpened();
+  const obj2 = RootNavigationRef;
+  const rootNavigationRef = obj2.getRootNavigationRef();
+  const tmp2 = null != rootNavigationRef && rootNavigationRef.isReady();
   if (tmp2) {
     const obj3 = { channelId: id.id, initialRouteName: constants.THREADS };
     rootNavigationRef.navigate("sidebar", obj3);

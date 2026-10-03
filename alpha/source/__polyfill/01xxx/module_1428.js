@@ -1,9 +1,0 @@
-// Module ID: 1428
-// Function ID: 1429
-// Dependencies: [1121]
-
-// Module 1428
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images", width: 498, height: 498, scales: [1], hash: "df3228db1e67e406cba743551d2b055e", name: "clyde-avatar", type: "png" });

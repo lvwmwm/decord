@@ -1,49 +1,196 @@
-// Module ID: 13028
-// Function ID: 13029
+// Module ID: 13089
+// Function ID: 13090
 // Name: ConversationFocusScreen
-// Dependencies: [19, 7200, 21, 1488, 504, 13029, 2]
-// Exports: default
+// Dependencies: [19, 7103, 21, 558, 576, 1493, 504, 13090, 2]
 
-// Module 13028 (ConversationFocusScreen)
-import noop from "module_19" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7200 */;
+// Module 13089 (ConversationFocusScreen)
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7103 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/conversations/components/native/ConversationFocusScreen.tsx");
-
-export default function ConversationFocusScreen() {
-  const params = channelId(1488).useRoute().params;
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let channelId;
+  let first;
+  let fullyHydrated;
+  let isFullFetchPending;
+  let startMessageId;
+  let tmp = channelId;
+  let obj = channelId(576);
+  const cResult = obj.c(17);
+  let obj2 = channelId(1493);
+  const params = obj2.useRoute().params;
   channelId = params.channelId;
   const conversationId = params.conversationId;
-  const obj = channelId(1488);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelConversationsStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === channelId) {
+    let tmp6;
+    let tmp7;
+    let tmp9;
+    if (cResult[2] === conversationId) {
+      tmp6 = cResult[3];
+      tmp7 = cResult[4];
+    }
+    const tmpResult = tmp(504);
+    const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const items1 = [ChannelConversationsStore];
+      cResult[5] = items1;
+      tmp9 = items1;
+    } else {
+      tmp9 = cResult[5];
+    }
+    if (cResult[6] === channelId) {
+      let tmp11;
+      let tmp12;
+      if (cResult[7] === conversationId) {
+        tmp11 = cResult[8];
+        tmp12 = cResult[9];
+      }
+      const tmpResult2 = tmp(504);
+      const stateFromStoresObject = tmpResult2.useStateFromStoresObject(tmp9, tmp11, tmp12);
+      ({ fullyHydrated, isFullFetchPending, startMessageId } = stateFromStoresObject);
+      if (cResult[10] === channelId) {
+        if (cResult[11] === conversationId) {
+          if (cResult[12] === fullyHydrated) {
+            if (cResult[13] === isFullFetchPending) {
+              if (cResult[14] === stateFromStores) {
+                let tmp14;
+                if (cResult[15] === startMessageId) {
+                  tmp14 = cResult[16];
+                }
+                return tmp14;
+              }
+            }
+          }
+        }
+      }
+      class I {
+        constructor() {
+          let startMessageId;
+          const conversationMetadata = ChannelConversationsStore.getConversationMetadata(channelId, conversationId);
+          let flag;
+          const obj = ChannelConversationsStore;
+          const tmp = conversationId;
+          if (conversationMetadata != null) {
+            flag = conversationMetadata.fullyHydrated;
+          }
+          if (flag == null) {
+            flag = false;
+          }
+          const obj2 = { fullyHydrated: flag, isFullFetchPending: obj.isConversationFetchPending(tmp, true), startMessageId };
+          startMessageId = undefined;
+          if (conversationMetadata != null) {
+            startMessageId = conversationMetadata.conversation.startMessageId;
+          }
+          if (startMessageId == null) {
+            startMessageId = null;
+          }
+          return obj2;
+        }
+      }
+      const tmp16 = jsx(conversationId(13090), { channelId, conversationId, messages: stateFromStores, fullyHydrated, isFullFetchPending, startMessageId });
+      cResult[10] = channelId;
+      cResult[11] = conversationId;
+      cResult[12] = fullyHydrated;
+      cResult[13] = isFullFetchPending;
+      cResult[14] = stateFromStores;
+      cResult[15] = startMessageId;
+      cResult[16] = tmp16;
+      tmp14 = tmp16;
+    }
+    class I {
+      constructor() {
+        let startMessageId;
+        const conversationMetadata = ChannelConversationsStore.getConversationMetadata(channelId, conversationId);
+        let flag;
+        const obj = ChannelConversationsStore;
+        const tmp = conversationId;
+        if (conversationMetadata != null) {
+          flag = conversationMetadata.fullyHydrated;
+        }
+        if (flag == null) {
+          flag = false;
+        }
+        const obj2 = { fullyHydrated: flag, isFullFetchPending: obj.isConversationFetchPending(tmp, true), startMessageId };
+        startMessageId = undefined;
+        if (conversationMetadata != null) {
+          startMessageId = conversationMetadata.conversation.startMessageId;
+        }
+        if (startMessageId == null) {
+          startMessageId = null;
+        }
+        return obj2;
+      }
+    }
+    const items2 = [channelId, conversationId];
+    cResult[6] = channelId;
+    cResult[7] = conversationId;
+    cResult[8] = I;
+    cResult[9] = items2;
+    tmp12 = items2;
+    tmp11 = I;
+  }
+  const fn = function o() {
+    return ChannelConversationsStore.getHydratedMessages(channelId, conversationId);
+  };
+  const items3 = [channelId, conversationId];
+  cResult[1] = channelId;
+  cResult[2] = conversationId;
+  cResult[3] = fn;
+  cResult[4] = items3;
+  tmp7 = items3;
+  tmp6 = fn;
+}) : (() => {
+  let channelId;
+  let fullyHydrated;
+  let isFullFetchPending;
+  let startMessageId;
+  let obj = channelId(1493);
+  const params = obj.useRoute().params;
+  channelId = params.channelId;
+  const conversationId = params.conversationId;
+  let obj2 = channelId(504);
   const items = [ChannelConversationsStore];
   const items1 = [channelId, conversationId];
-  const messages = channelId(504).useStateFromStores(items, () => ChannelConversationsStore.getHydratedMessages(channelId, conversationId), items1);
-  let obj2 = channelId(504);
+  const messages = obj2.useStateFromStores(items, () => ChannelConversationsStore.getHydratedMessages(channelId, conversationId), items1);
   const items2 = [ChannelConversationsStore];
   const items3 = [channelId, conversationId];
-  const stateFromStoresObject = channelId(504).useStateFromStoresObject(items2, () => {
+  const obj3 = channelId(504);
+  const stateFromStoresObject = obj3.useStateFromStoresObject(items2, () => {
+    let startMessageId;
     const conversationMetadata = ChannelConversationsStore.getConversationMetadata(channelId, conversationId);
     let flag;
+    const obj = ChannelConversationsStore;
+    const tmp = conversationId;
     if (conversationMetadata != null) {
       flag = conversationMetadata.fullyHydrated;
     }
     if (flag == null) {
       flag = false;
     }
-    const obj2 = { fullyHydrated: flag, isFullFetchPending: ChannelConversationsStore.isConversationFetchPending(conversationId, true), startMessageId: null };
-    let startMessageId;
+    const obj2 = { fullyHydrated: flag, isFullFetchPending: obj.isConversationFetchPending(tmp, true), startMessageId };
+    startMessageId = undefined;
     if (conversationMetadata != null) {
       startMessageId = conversationMetadata.conversation.startMessageId;
     }
     if (startMessageId == null) {
       startMessageId = null;
     }
-    obj2.startMessageId = startMessageId;
     return obj2;
   }, items3);
   ({ fullyHydrated, isFullFetchPending, startMessageId } = stateFromStoresObject);
-  return jsx(conversationId(13029), { channelId, conversationId, messages, fullyHydrated, isFullFetchPending, startMessageId });
-};
+  return jsx(conversationId(13090), { channelId, conversationId, messages, fullyHydrated, isFullFetchPending, startMessageId });
+});
+const result = size.fileFinishedImporting("modules/conversations/components/native/ConversationFocusScreen.tsx");
+
+export default tmp3;

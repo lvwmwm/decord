@@ -1,1276 +1,1145 @@
 // Module ID: 1678
 // Function ID: 1679
-// Dependencies: [1641, 1663, 1649, 1679, 1680, 1681, 1645]
-// Exports: assertEasingIsWorklet, cancelAnimation, defineAnimation, getReduceMotionForAnimation, initialUpdaterRun, isValidLayoutAnimationProp
+// Dependencies: [41, 42, 93, 95, 98, 1679, 19, 17, 21, 1646, 1697, 38, 1738, 1739, 1747, 1749, 1687, 1668, 1750, 1752, 1746, 1730, 1683, 1672, 1654, 1756, 1671, 1740, 1742, 1757, 1758, 1759, 1781, 1782]
+// Exports: createAnimatedComponent
 
 // Module 1678
-import runWorkletOnJS from "runWorkletOnJS" /* 1645 */;
-import _mod1649 from "module_1649" /* 1649 */;
-import _mod1663 from "module_1663" /* 1663 */;
-import _mod1679 from "module_1679" /* 1679 */;
-import _mod1680 from "module_1680" /* 1680 */;
-import _mod1681 from "module_1681" /* 1681 */;
-import module_1641_mod from "module_1641" /* 1641 */;
+import Fragment from "Fragment" /* 21 */;
+import _modDef38 from "module_38" /* 38 */;
+import LayoutAnimationType from "LayoutAnimationType" /* 1668 */;
+import startWebLayoutAnimation from "startWebLayoutAnimation" /* 1697 */;
+import _modDef1738 from "module_1738" /* 1738 */;
+import _mod1739 from "module_1739" /* 1739 */;
+import PropsFilter from "PropsFilter" /* 1747 */;
+import setAndForwardRefDefault from "setAndForwardRef" /* 1749 */;
+import NativeEventsManager from "NativeEventsManager" /* 1750 */;
+import _mod1757 from "module_1757" /* 1757 */;
+import maybeBuild2 from "maybeBuild" /* 1758 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import hasOwnProperty from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import module_1679 from "module_1679" /* 1679 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import module_1646_mod from "module_1646" /* 1646 */;
 
-const React2 = false;
-let module_1641 = module_1641_mod;
-module_1641 = module_1641.shouldBeUseWeb();
-const size = { originX: true, originY: true, width: true, height: true, borderRadius: true, globalOriginX: true, globalOriginY: true, opacity: true, transform: true, backgroundColor: true };
-function isValidLayoutAnimationProp(arg0) {
-  return arg0 in size;
-}
-isValidLayoutAnimationProp.__closure = { LAYOUT_ANIMATION_SUPPORTED_PROPS: size };
-isValidLayoutAnimationProp.__workletHash = 13235833688548;
-isValidLayoutAnimationProp.__initData = { code: "function isValidLayoutAnimationProp_Pnpm_utilTs1(prop){const{LAYOUT_ANIMATION_SUPPORTED_PROPS}=this.__closure;return prop in LAYOUT_ANIMATION_SUPPORTED_PROPS;}" };
-function assertEasingIsWorklet(factory) {
-  if (!globalThis._WORKLET) {
-    if (!module_1641) {
-      factory = undefined;
-      if (factory != null) {
-        factory = factory.factory;
-      }
-      if (!factory) {
-        if (!obj.isWorkletFunction(factory)) {
-          const reanimatedError = new tmp5(1649).ReanimatedError("The easing function is not a worklet. Please make sure you import `Easing` from react-native-reanimated.");
-          throw reanimatedError;
-        }
-        obj = _mod1663;
-        tmp5 = require;
-      }
-    }
-  }
-}
-assertEasingIsWorklet.__closure = { SHOULD_BE_USE_WEB: module_1641, isWorkletFunction: _mod1663.isWorkletFunction };
-assertEasingIsWorklet.__workletHash = 8431488219943;
-assertEasingIsWorklet.__initData = { code: "function assertEasingIsWorklet_Pnpm_utilTs2(easing){const{SHOULD_BE_USE_WEB,isWorkletFunction}=this.__closure;if(_WORKLET){return;}if(SHOULD_BE_USE_WEB){return;}if(easing!==null&&easing!==void 0&&easing.factory){return;}if(!isWorkletFunction(easing)){throw new ReanimatedError('The easing function is not a worklet. Please make sure you import `Easing` from react-native-reanimated.');}}" };
-function recognizePrefixSuffix(current) {
-  if (typeof current === "string") {
-    const match = current.match(/([A-Za-z]*)(-?\d*\.?\d*)([eE][-+]?[0-9]+)?([A-Za-z%]*)/);
-    if (match) {
-      let str2 = match[3];
-      if (str2 == null) {
-        str2 = "";
-      }
-      const obj = { prefix: match[1], suffix: match[4], strippedValue: null };
-      const _parseFloat = parseFloat;
-      obj.strippedValue = parseFloat(match[2] + str2);
-      return obj;
-    } else {
-      const reanimatedError = new _mod1649.ReanimatedError("Couldn't parse animation value.");
-      throw reanimatedError;
-    }
-  } else {
-    const obj2 = { strippedValue: current };
-    return obj2;
-  }
-}
-recognizePrefixSuffix.__closure = {};
-recognizePrefixSuffix.__workletHash = 11076682371077;
-recognizePrefixSuffix.__initData = { code: "function recognizePrefixSuffix_Pnpm_utilTs3(value){if(typeof value==='string'){var _match$;const match=value.match(/([A-Za-z]*)(-?\\d*\\.?\\d*)([eE][-+]?[0-9]+)?([A-Za-z%]*)/);if(!match){throw new ReanimatedError(\"Couldn't parse animation value.\");}const prefix=match[1];const suffix=match[4];const number=match[2]+((_match$=match[3])!==null&&_match$!==void 0?_match$:'');return{prefix:prefix,suffix:suffix,strippedValue:parseFloat(number)};}else{return{strippedValue:value};}}" };
-const uiValue = _mod1679.ReducedMotionManager.uiValue;
-function getReduceMotionFromConfig(reduceMotion) {
-  if (reduceMotion) {
-    if (reduceMotion !== _mod1663.ReduceMotion.System) {
-      value = reduceMotion === _mod1663.ReduceMotion.Always;
-    }
-    return value;
-  }
-  value = uiValue.value;
-}
-let obj = { SHOULD_BE_USE_WEB: module_1641, isWorkletFunction: _mod1663.isWorkletFunction };
-getReduceMotionFromConfig.__closure = { ReduceMotion: _mod1663.ReduceMotion, isReduceMotionOnUI: uiValue };
-getReduceMotionFromConfig.__workletHash = 7977910521960;
-getReduceMotionFromConfig.__initData = { code: "function getReduceMotionFromConfig_Pnpm_utilTs4(config){const{ReduceMotion,isReduceMotionOnUI}=this.__closure;return!config||config===ReduceMotion.System?isReduceMotionOnUI.value:config===ReduceMotion.Always;}" };
-function getReduceMotionForAnimation(reduceMotion) {
-  if (reduceMotion) {
-    if (typeof getReduceMotionFromConfig === "function") {
-      if (reduceMotion) {
-        if (reduceMotion !== _mod1663.ReduceMotion.System) {
-          value = reduceMotion === _mod1663.ReduceMotion.Always;
-        }
-        return value;
-      }
-      value = uiValue.value;
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  }
-}
-getReduceMotionForAnimation.__closure = { getReduceMotionFromConfig };
-getReduceMotionForAnimation.__workletHash = 10866808344662;
-getReduceMotionForAnimation.__initData = { code: "function getReduceMotionForAnimation_Pnpm_utilTs5(config){const{getReduceMotionFromConfig}=this.__closure;if(!config){return undefined;}return getReduceMotionFromConfig(config);}" };
-function applyProgressToMatrix(arg0, arr, arr) {
-  const obj = _mod1680;
-  const obj2 = _mod1680;
-  return obj.addMatrices(arr, obj2.scaleMatrix(_mod1680.subtractMatrices(arr, arr), arg0));
-}
-let obj2 = { ReduceMotion: _mod1663.ReduceMotion, isReduceMotionOnUI: uiValue };
-applyProgressToMatrix.__closure = { addMatrices: _mod1680.addMatrices, scaleMatrix: _mod1680.scaleMatrix, subtractMatrices: _mod1680.subtractMatrices };
-applyProgressToMatrix.__workletHash = 4822273347900;
-applyProgressToMatrix.__initData = { code: "function applyProgressToMatrix_Pnpm_utilTs6(progress,a,b){const{addMatrices,scaleMatrix,subtractMatrices}=this.__closure;return addMatrices(a,scaleMatrix(subtractMatrices(b,a),progress));}" };
-function applyProgressToNumber(arg0, arg1, arg2) {
-  return arg1 + arg0 * (arg2 - arg1);
-}
-applyProgressToNumber.__closure = {};
-applyProgressToNumber.__workletHash = 954128472665;
-applyProgressToNumber.__initData = { code: "function applyProgressToNumber_Pnpm_utilTs7(progress,a,b){return a+progress*(b-a);}" };
-function decorateAnimation(isHigherOrder) {
-  ({ onStart: require, onFrame: dependencyMap } = isHigherOrder);
-  if (isHigherOrder.isHigherOrder) {
-    isHigherOrder.onStart = (reduceMotion, arg1, arg2, arg3) => {
-      if (undefined === reduceMotion.reduceMotion) {
-        if (typeof getReduceMotionFromConfig === "function") {
-          reduceMotion.reduceMotion = value.value;
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-      }
-      return fn(reduceMotion, arg1, arg2, arg3);
+const require = globalThis.__r;
+let _require, dependencyMap, disableReactSync, importDefault, set;
+
+let Platform;
+let c10;
+let c9;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
     };
-  } else {
-    const _Object = Object;
-    closure_2 = Object.assign({}, isHigherOrder);
-    delete tmp2[tmp];
-    function prefNumberSuffOnFrame(strippedCurrent, arg1) {
-      strippedCurrent.current = strippedCurrent.strippedCurrent;
-      ({ current: strippedCurrent.strippedCurrent, __prefix } = strippedCurrent);
-      if (__prefix == null) {
-        __prefix = "";
-      }
-      let str = strippedCurrent.__suffix;
-      const sum = __prefix + strippedCurrent.current;
-      if (str == null) {
-        str = "";
-      }
-      strippedCurrent.current = sum + str;
-      return dependencyMap(strippedCurrent, arg1);
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+({ Platform, processColor: c9, StyleSheet: c10 } = react_native);
+const jsx = Fragment.jsx;
+let module_1646 = module_1646_mod;
+module_1646.isWeb();
+module_1646 = module_1646_mod;
+let closure_14 = module_1646.isJest();
+module_1646 = module_1646_mod;
+let closure_15 = module_1646.isReact19();
+module_1646 = module_1646_mod;
+let closure_16 = module_1646.shouldBeUseWeb();
+if (module_1646) {
+  const _module6 = startWebLayoutAnimation;
+  let result = _module6.configureWebLayoutAnimations();
+}
+let closure_17 = 0;
+
+export const createAnimatedComponent = function createAnimatedComponent(name, arg1) {
+  let closure_2;
+  _require = name;
+  importDefault = arg1;
+  let tmp = closure_15;
+  if (!tmp) {
+    let tmp2 = importDefault;
+    let tmp3 = dependencyMap;
+    let tmp5 = typeof name !== "function";
+    let tmp4 = _modDef38;
+    if (typeof name === "function") {
+      const tmp6 = name.prototype && name.prototype.isReactComponent;
+      tmp5 = tmp6;
     }
-    closure_4 = ["R", "G", "B", "A"];
-    function colorOnFrame(nonscaledCurrent, arg1) {
-      closure_1 = arg1;
-      const items = [];
-      c3 = true;
-      nonscaledCurrent.current = nonscaledCurrent.nonscaledCurrent;
-      const item = closure_4.forEach((item) => {
-        let onFrameResult = c3;
-        if (c3) {
-          onFrameResult = obj.onFrame(nonscaledCurrent[item], closure_1);
-        }
-        c3 = onFrameResult;
-        items.push(nonscaledCurrent[item].current);
-      });
-      nonscaledCurrent(1681).clampRGBA(items);
-      nonscaledCurrent.nonscaledCurrent = items;
-      const obj = nonscaledCurrent(1681);
-      const obj2 = nonscaledCurrent(1681);
-      nonscaledCurrent.current = obj2.rgbaArrayToRGBAColor(nonscaledCurrent(1681).toGammaSpace(items));
-      return c3;
-    }
-    function transformationMatrixOnFrame(arg0, arg1) {
-      const stopMatrices = arg0;
-      const first = arg0[0];
-      dependencyMap = arg0[0].current / 100;
-      const items = [];
-      const items1 = ["translationMatrix", "scaleMatrix", "skewMatrix"];
-      const item = items1.forEach((item, index) => {
-        if (typeof objectOnFrame === "function") {
-          const obj = fn(1680);
-          const obj2 = fn(1680);
-          return tmp2(obj.addMatrices(tmp4, obj2.scaleMatrix(fn(1680).subtractMatrices(tmp5, tmp4), tmp3)));
+    let tmp7 = globalThis;
+    class AnimatedComponent {
+      constructor(arg0) {
+        let constructResult;
+        const self = this;
+        let tmp = _classCallCheck(this, AnimatedComponent);
+        const items = [arg0];
+        let tmp2 = _getPrototypeOf;
+        const obj = _getPrototypeOf(AnimatedComponent);
+        const tmp3 = hasOwnProperty;
+        if (_isNativeReflectConstruct()) {
+          const _Reflect = Reflect;
+          constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
         } else {
-          throw new TypeError("Trying to call a non-function");
+          constructResult = obj.apply(self, items);
         }
-      });
-      const items2 = [];
-      const items3 = ["x", "y", "z"];
-      [tmp3, tmp4, tmp5] = items;
-      const item1 = items3.forEach((item, index) => {
-        if (typeof closure_2_9 === "function") {
-          const sum = tmp2 + tmp * (stopMatrices.stopMatrices["r" + item] - tmp2);
-          items2.push(fn(1680).getRotationMatrix(sum, item));
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-      });
-      [tmp7, tmp8, tmp9] = items2;
-      const onFrameResult = first.onFrame(arg0[0], arg1);
-      let obj2 = stopMatrices(1680);
-      const obj3 = stopMatrices(1680);
-      const multiplyMatricesResult = obj2.multiplyMatrices(tmp7, stopMatrices(1680).multiplyMatrices(tmp8, tmp9));
-      const obj4 = stopMatrices(1680);
-      const obj5 = stopMatrices(1680);
-      const obj6 = stopMatrices(1680);
-      arg0.current = obj4.flatten(obj5.multiplyMatrices(obj6.multiplyMatrices(tmp4, stopMatrices(1680).multiplyMatrices(tmp5, multiplyMatricesResult)), tmp3));
-      return onFrameResult;
-    }
-    function arrayOnFrame(current, arg1) {
-      dependencyMap = current;
-      closure_1 = arg1;
-      c2 = true;
-      current = current.current;
-      const item = current.forEach((item, index) => {
-        let onFrameResult = c2;
-        if (c2) {
-          onFrameResult = obj.onFrame(dependencyMap[index], closure_1);
-        }
-        c2 = onFrameResult;
-        dependencyMap.current[index] = dependencyMap[index].current;
-      });
-      return c2;
-    }
-    function objectOnFrame(current, arg1) {
-      const obj = {};
-      let flag = true;
-      let flag2 = true;
-      const keys = Object.keys();
-      if (keys !== undefined) {
-        flag2 = flag;
-        while (keys[tmp] !== undefined) {
-          let obj2 = current[tmp4];
-          let onFrameResult = flag;
-          if (flag) {
-            onFrameResult = obj2.onFrame(current[tmp4], arg1);
+        const tmp3Result = tmp3(self, constructResult);
+        let closure_0 = tmp3Result;
+        tmp3Result._styles = null;
+        tmp3Result._isFirstRender = true;
+        tmp3Result.jestAnimatedStyle = { value: {} };
+        tmp3Result.jestAnimatedProps = { value: {} };
+        tmp3Result._componentRef = null;
+        tmp3Result._componentDOMRef = null;
+        tmp3Result._sharedElementTransition = null;
+        tmp3Result._jsPropsUpdater = new _modDef1738();
+        const tmp7 = new _modDef1738();
+        const inlinePropManager = new _mod1739.InlinePropManager();
+        tmp3Result._InlinePropManager = inlinePropManager;
+        const propsFilter = new PropsFilter.PropsFilter();
+        tmp3Result._PropsFilter = propsFilter;
+        closure_17 = tmp11 + 1;
+        tmp3Result.reanimatedID = +closure_17;
+        tmp3Result._willUnmount = false;
+        tmp3Result._resolveComponentRef = (getAnimatableRef) => {
+          let animatableRef;
+          const tmp = getAnimatableRef;
+          if (tmp) {
+            if (getAnimatableRef.getAnimatableRef) {
+              animatableRef = getAnimatableRef.getAnimatableRef();
+            }
+            return animatableRef;
           }
-          obj[tmp4] = current[tmp4].current;
-          flag = onFrameResult;
-          continue;
+          animatableRef = getAnimatableRef;
+          if (closure_2_16) {
+            if (getAnimatableRef) {
+              if (getAnimatableRef.elementRef) {
+                closure_0._componentDOMRef = getAnimatableRef.elementRef.current;
+                animatableRef = getAnimatableRef;
+              }
+            }
+            closure_0._componentDOMRef = getAnimatableRef;
+            animatableRef = getAnimatableRef;
+          }
+        };
+        let obj2 = {
+          getForwardedRef() {
+            return closure_0.props.forwardedRef;
+          },
+          setLocalRef(arg0) {
+            let entering;
+            let sharedTransitionTag;
+            const tmp = arg0;
+            if (tmp) {
+              let current;
+              if (arg0 !== closure_0._componentRef) {
+                closure_0._componentRef = closure_0._resolveComponentRef(arg0);
+                closure_0._viewInfo = undefined;
+              }
+              const props = obj.props;
+              ({ entering, sharedTransitionTag } = props);
+              const tmp2 = closure_2_16;
+              if (!tmp2) {
+                const obj2 = AnimatedComponent(closure_2_2[16]);
+                const result = obj2.enableLayoutAnimations(true, false);
+              }
+              if (sharedTransitionTag) {
+                const result1 = obj._configureSharedTransition();
+              }
+              const context = obj.context;
+              if (context != null) {
+                current = context.current;
+              }
+              let isFabricResult = !entering;
+              if (entering) {
+                const obj3 = AnimatedComponent(closure_2_2[9]);
+                isFabricResult = obj3.isFabric();
+              }
+              if (!isFabricResult) {
+                isFabricResult = current;
+              }
+              if (!isFabricResult) {
+                isFabricResult = closure_2_13;
+              }
+              if (!isFabricResult) {
+                const result2 = obj._configureLayoutAnimation(AnimatedComponent(closure_2_2[17]).LayoutAnimationType.ENTERING, obj.props.entering);
+              }
+            }
+          }
+        };
+        tmp3Result._setComponentRef = setAndForwardRefDefault(obj2);
+        const tmp12 = closure_14;
+        if (tmp12) {
+          let obj3 = { value: {} };
+          tmp3Result.jestAnimatedStyle = obj3;
+          const obj4 = { value: {} };
+          tmp3Result.jestAnimatedProps = obj4;
         }
+        tmp3Result.state = { settledProps: {}, reanimatedProps: {} };
+        let context = tmp3Result.context;
+        let current;
+        if (context != null) {
+          current = context.current;
+        }
+        const tmp8Result = module_1646;
+        const tmp14 = tmp8Result.isFabric() && !current;
+        if (tmp14) {
+          let result = tmp3Result._configureLayoutAnimation(tmp8(1668).LayoutAnimationType.ENTERING, tmp3Result.props.entering);
+        }
+        return tmp3Result;
       }
-      current.current = obj;
-      return flag2;
     }
-    isHigherOrder.onStart = (reduceMotion, current, arg2, current2) => {
-      if (undefined === reduceMotion.reduceMotion) {
-        if (typeof arrayOnFrame === "function") {
-          reduceMotion.reduceMotion = transformationMatrixOnFrame.value;
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-      }
-      if (reduceMotion.reduceMotion) {
-        if (undefined !== reduceMotion.toValue) {
-          reduceMotion.current = reduceMotion.toValue;
-        } else {
-          toValue(reduceMotion, current, arg2, current2);
-        }
-        reduceMotion.startTime = 0;
-        reduceMotion.onFrame = () => true;
+    const str = "` to `createAnimatedComponent` function which supports only class components. Please wrap your function component with `React.forwardRef()` or use a class component instead.";
+    let tmp4Result = tmp4(tmp5, "Looks like you're passing a function component `" + name.name + "` to `createAnimatedComponent` function which supports only class components. Please wrap your function component with `React.forwardRef()` or use a class component instead.");
+  }
+  class AnimatedComponent {
+    constructor(arg0) {
+      let constructResult;
+      const self = this;
+      let tmp = _classCallCheck(this, AnimatedComponent);
+      const items = [arg0];
+      let tmp2 = _getPrototypeOf;
+      const obj = _getPrototypeOf(AnimatedComponent);
+      const tmp3 = hasOwnProperty;
+      if (_isNativeReflectConstruct()) {
+        const _Reflect = Reflect;
+        constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
       } else {
-        if (obj.isColor(current)) {
-          closure_129_0 = reduceMotion;
-          closure_129_1 = arg2;
-          closure_129_2 = current2;
-          const items = [];
-          closure_129_6 = items;
-          if (tmp3Result.isColor(current)) {
-            const tmp3Result13 = tmp3(1681);
-            closure_129_4 = tmp3Result13.toLinearSpace(tmp3(1681).convertToRGBA(reduceMotion.current));
-            const tmp3Result14 = tmp3(1681);
-            const tmp3Result15 = tmp3(1681);
-            closure_129_3 = tmp3Result15.toLinearSpace(tmp3(1681).convertToRGBA(current));
-            if (reduceMotion.toValue) {
-              const tmp3Result17 = tmp3(1681);
-              closure_129_5 = tmp3Result17.toLinearSpace(tmp3(1681).convertToRGBA(reduceMotion.toValue));
-              const tmp3Result18 = tmp3(1681);
-            }
-            const tmp3Result16 = tmp3(1681);
+        constructResult = obj.apply(self, items);
+      }
+      const tmp3Result = tmp3(self, constructResult);
+      let closure_0 = tmp3Result;
+      tmp3Result._styles = null;
+      tmp3Result._isFirstRender = true;
+      tmp3Result.jestAnimatedStyle = { value: {} };
+      tmp3Result.jestAnimatedProps = { value: {} };
+      tmp3Result._componentRef = null;
+      tmp3Result._componentDOMRef = null;
+      tmp3Result._sharedElementTransition = null;
+      tmp3Result._jsPropsUpdater = new _modDef1738();
+      const tmp7 = new _modDef1738();
+      const inlinePropManager = new _mod1739.InlinePropManager();
+      tmp3Result._InlinePropManager = inlinePropManager;
+      const propsFilter = new PropsFilter.PropsFilter();
+      tmp3Result._PropsFilter = propsFilter;
+      closure_17 = tmp11 + 1;
+      tmp3Result.reanimatedID = +closure_17;
+      tmp3Result._willUnmount = false;
+      tmp3Result._resolveComponentRef = (getAnimatableRef) => {
+        let animatableRef;
+        const tmp = getAnimatableRef;
+        if (tmp) {
+          if (getAnimatableRef.getAnimatableRef) {
+            animatableRef = getAnimatableRef.getAnimatableRef();
           }
-          const item = closure_4.forEach((item, index) => {
-            toValue[item] = Object.assign({}, dependencyMap);
-            toValue[item].current = closure_1_4[index];
-            let tmp2;
-            if (colorOnFrame) {
-              tmp2 = colorOnFrame[index];
+          return animatableRef;
+        }
+        animatableRef = getAnimatableRef;
+        if (closure_2_16) {
+          if (getAnimatableRef) {
+            if (getAnimatableRef.elementRef) {
+              closure_0._componentDOMRef = getAnimatableRef.elementRef.current;
+              animatableRef = getAnimatableRef;
             }
-            toValue[item].toValue = tmp2;
-            let tmp4;
-            if (dependencyMap) {
-              tmp4 = dependencyMap[item];
+          }
+          closure_0._componentDOMRef = getAnimatableRef;
+          animatableRef = getAnimatableRef;
+        }
+      };
+      let obj2 = {
+        getForwardedRef() {
+          return closure_0.props.forwardedRef;
+        },
+        setLocalRef(arg0) {
+          let entering;
+          let sharedTransitionTag;
+          const tmp = arg0;
+          if (tmp) {
+            let current;
+            if (arg0 !== closure_0._componentRef) {
+              closure_0._componentRef = closure_0._resolveComponentRef(arg0);
+              closure_0._viewInfo = undefined;
             }
-            toValue[item].onStart(toValue[item], prefNumberSuffOnFrame[index], closure_1, tmp4);
-            transformationMatrixOnFrame.push(toValue[item].current);
-          });
-          reduceMotion.unroundedCurrent = items;
-          tmp3Result = tmp3(1681);
-          tmp3(1681).clampRGBA(items);
-          const tmp3Result19 = tmp3(1681);
-          const tmp3Result20 = tmp3(1681);
-          reduceMotion.current = tmp3Result20.rgbaArrayToRGBAColor(tmp3(1681).toGammaSpace(items));
-          reduceMotion.onFrame = colorOnFrame;
-          const tmp3Result21 = tmp3(1681);
-        } else {
-          if (tmp3Result22.isAffineMatrixFlat(current)) {
-            reduceMotion.startMatrices = tmp3(1680).decomposeMatrixIntoMatricesAndAngles(current);
-            const tmp3Result23 = tmp3(1680);
-            reduceMotion.stopMatrices = tmp3(1680).decomposeMatrixIntoMatricesAndAngles(reduceMotion.toValue);
-            const _Object = Object;
-            reduceMotion[0] = Object.assign({}, dependencyMap);
-            reduceMotion[0].current = 0;
-            reduceMotion[0].toValue = 100;
-            const first = reduceMotion[0];
-            const first1 = reduceMotion[0];
-            let first2;
-            if (current2) {
-              first2 = current2[0];
+            const props = obj.props;
+            ({ entering, sharedTransitionTag } = props);
+            const tmp2 = closure_2_16;
+            if (!tmp2) {
+              const obj2 = AnimatedComponent(closure_2_2[16]);
+              const result = obj2.enableLayoutAnimations(true, false);
             }
-            first.onStart(first1, 0, arg2, first2);
-            reduceMotion.current = current;
-            reduceMotion.onFrame = transformationMatrixOnFrame;
-            const tmp3Result24 = tmp3(1680);
+            if (sharedTransitionTag) {
+              const result1 = obj._configureSharedTransition();
+            }
+            const context = obj.context;
+            if (context != null) {
+              current = context.current;
+            }
+            let isFabricResult = !entering;
+            if (entering) {
+              const obj3 = AnimatedComponent(closure_2_2[9]);
+              isFabricResult = obj3.isFabric();
+            }
+            if (!isFabricResult) {
+              isFabricResult = current;
+            }
+            if (!isFabricResult) {
+              isFabricResult = closure_2_13;
+            }
+            if (!isFabricResult) {
+              const result2 = obj._configureLayoutAnimation(AnimatedComponent(closure_2_2[17]).LayoutAnimationType.ENTERING, obj.props.entering);
+            }
+          }
+        }
+      };
+      tmp3Result._setComponentRef = setAndForwardRefDefault(obj2);
+      const tmp12 = closure_14;
+      if (tmp12) {
+        let obj3 = { value: {} };
+        tmp3Result.jestAnimatedStyle = obj3;
+        const obj4 = { value: {} };
+        tmp3Result.jestAnimatedProps = obj4;
+      }
+      tmp3Result.state = { settledProps: {}, reanimatedProps: {} };
+      let context = tmp3Result.context;
+      let current;
+      if (context != null) {
+        current = context.current;
+      }
+      const tmp8Result = module_1646;
+      const tmp14 = tmp8Result.isFabric() && !current;
+      if (tmp14) {
+        let result = tmp3Result._configureLayoutAnimation(tmp8(1668).LayoutAnimationType.ENTERING, tmp3Result.props.entering);
+      }
+      return tmp3Result;
+    }
+  }
+  _inherits(AnimatedComponent, react.Component);
+  const entry = {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      let firstChild1;
+      const self = this;
+      if (!module_1646) {
+        const self2 = this;
+        const self3 = this;
+        const nativeEventsManager = new NativeEventsManager.NativeEventsManager(self, disableReactSync);
+        self._NativeEventsManager = nativeEventsManager;
+      }
+      const _NativeEventsManager = self._NativeEventsManager;
+      if (_NativeEventsManager != null) {
+        _NativeEventsManager.attachEvents();
+      }
+      const _jsPropsUpdater = self._jsPropsUpdater;
+      const result = _jsPropsUpdater.addOnJSPropsChangeListener(self);
+      const result1 = self._attachAnimatedStyles();
+      const _InlinePropManager = self._InlinePropManager;
+      _InlinePropManager.attachInlineProps(self, self._getViewInfo());
+      const componentViewTag = self.getComponentViewTag();
+      const obj = module_1646;
+      const isFabricResult = obj.isFabric() && -1 !== componentViewTag;
+      if (isFabricResult) {
+        const PropsRegistryGarbageCollector = tmp13(1752).PropsRegistryGarbageCollector;
+        PropsRegistryGarbageCollector.registerView(componentViewTag, self);
+      }
+      if (-1 !== componentViewTag) {
+        const ComponentRegistry = tmp13(1746).ComponentRegistry;
+        ComponentRegistry.register(componentViewTag, self);
+      }
+      const result2 = self._configureLayoutAnimation(tmp13(1668).LayoutAnimationType.LAYOUT, self.props.layout);
+      const result3 = self._configureLayoutAnimation(tmp13(1668).LayoutAnimationType.EXITING, self.props.exiting);
+      let tmp21 = tmp13;
+      if (module_1646) {
+        tmp21 = tmp13;
+        if (self._componentDOMRef) {
+          const _componentDOMRef = self._componentDOMRef;
+          const dummyClone = _componentDOMRef.dummyClone;
+          let firstChild;
+          if (dummyClone != null) {
+            firstChild = dummyClone.firstChild;
+          }
+          if (firstChild) {
+            do {
+              let appendChildResult = _componentDOMRef.appendChild(dummyClone.firstChild);
+              firstChild1 = undefined;
+              if (dummyClone != null) {
+                firstChild1 = dummyClone.firstChild;
+              }
+            } while (firstChild1);
+          }
+          delete _componentDOMRef["dummyClone"];
+          if (self.props.exiting) {
+            const obj2 = startWebLayoutAnimation;
+            obj2.saveSnapshot(_componentDOMRef);
+          }
+          if (self.props.entering) {
+            const obj3 = startWebLayoutAnimation;
+            if (obj3.getReducedMotionFromConfig(self.props.entering)) {
+              self._isFirstRender = false;
+              const entering = self.props.entering;
+              const callbackV = entering.callbackV;
+              if (callbackV != null) {
+                callbackV(true);
+              }
+            } else {
+              const context = self.context;
+              let current;
+              if (context != null) {
+                current = context.current;
+              }
+              if (current) {
+                tmp21 = tmp28;
+                if (_componentDOMRef.style) {
+                  _componentDOMRef.style.visibility = "initial";
+                  tmp21 = tmp28;
+                }
+              } else {
+                const tmp28Result = startWebLayoutAnimation;
+                const result4 = tmp28Result.startWebLayoutAnimation(self.props, _componentDOMRef, tmp28(1668).LayoutAnimationType.ENTERING);
+                tmp21 = tmp28;
+              }
+            }
           } else {
-            prefix = globalThis;
-            const _Array = Array;
-            if (Array.isArray(current)) {
-              toValue = reduceMotion;
-              closure_1 = arg2;
-              dependencyMap = current2;
-              const item1 = current.forEach((current, index) => {
-                toValue[index] = Object.assign({}, dependencyMap);
-                toValue[index].current = current;
-                toValue[index].toValue = toValue.toValue[index];
-                let tmp2;
-                if (dependencyMap) {
-                  tmp2 = dependencyMap[index];
-                }
-                toValue[index].onStart(toValue[index], current, closure_1, tmp2);
-              });
-              const items1 = [];
-              HermesBuiltin.arraySpread(current, 0);
-              reduceMotion.current = items1;
-              reduceMotion.onFrame = arrayOnFrame;
-            } else if (typeof current === "string") {
-              if (typeof colorOnFrame === "function") {
-                if (typeof current === "string") {
-                  const match = current.match(/([A-Za-z]*)(-?\d*\.?\d*)([eE][-+]?[0-9]+)?([A-Za-z%]*)/);
-                  if (match) {
-                    let str2 = match[3];
-                    if (str2 == null) {
-                      str2 = "";
-                    }
-                    const obj2 = { prefix: match[1], suffix: match[4], strippedValue: null };
-                    const _parseFloat = parseFloat;
-                    obj2.strippedValue = parseFloat(match[2] + str2);
-                    let obj3 = obj2;
-                  } else {
-                    const reanimatedError = new tmp3(1649).ReanimatedError("Couldn't parse animation value.");
-                    throw reanimatedError;
-                  }
-                } else {
-                  obj3 = { strippedValue: current };
-                }
-                ({ strippedValue, prefix: reduceMotion.__prefix, suffix: reduceMotion.__suffix } = obj3);
-                reduceMotion.strippedCurrent = strippedValue;
-                if (typeof tmp21 === "function") {
-                  if (typeof str3 === "string") {
-                    const match1 = str3.match(/([A-Za-z]*)(-?\d*\.?\d*)([eE][-+]?[0-9]+)?([A-Za-z%]*)/);
-                    if (match1) {
-                      let str5 = match1[3];
-                      if (str5 == null) {
-                        str5 = "";
-                      }
-                      const obj4 = { prefix: match1[1], suffix: match1[4], strippedValue: null };
-                      const _parseFloat2 = parseFloat;
-                      obj4.strippedValue = parseFloat(match1[2] + str5);
-                      let obj5 = obj4;
-                    } else {
-                      const reanimatedError1 = new tmp3(1649).ReanimatedError("Couldn't parse animation value.");
-                      throw reanimatedError1;
-                    }
-                  } else {
-                    obj5 = { strippedValue: str3 };
-                  }
-                  reduceMotion.current = strippedValue;
-                  reduceMotion.startValue = strippedValue;
-                  reduceMotion.toValue = obj5.strippedValue;
-                  if (current2) {
-                    if (current2 !== reduceMotion) {
-                      if (typeof tmp21 === "function") {
-                        if (typeof str7 === "string") {
-                          const match2 = str7.match(/([A-Za-z]*)(-?\d*\.?\d*)([eE][-+]?[0-9]+)?([A-Za-z%]*)/);
-                          if (match2) {
-                            let str8 = match2[3];
-                            if (str8 == null) {
-                              str8 = "";
-                            }
-                            const obj6 = { prefix: match2[1], suffix: match2[4], strippedValue: prefix.parseFloat(match2[2] + str8) };
-                            let obj7 = obj6;
-                          } else {
-                            const reanimatedError2 = new tmp3(1649).ReanimatedError("Couldn't parse animation value.");
-                            throw reanimatedError2;
-                          }
-                        } else {
-                          obj7 = { strippedValue: str7 };
-                        }
-                        ({ prefix, strippedValue: current2.current } = obj7);
-                        current2.__prefix = prefix;
-                        current2.__suffix = obj7.suffix;
-                      } else {
-                        throw new TypeError("Trying to call a non-function");
-                      }
-                    }
-                  }
-                  toValue(reduceMotion, strippedValue, arg2, current2);
-                  let str9 = reduceMotion.__prefix;
-                  if (str9 == null) {
-                    str9 = "";
-                  }
-                  let str10 = reduceMotion.__suffix;
-                  const sum = str9 + reduceMotion.current;
-                  if (str10 == null) {
-                    str10 = "";
-                  }
-                  reduceMotion.current = sum + str10;
-                  let tmp48 = current2;
-                  if (current2) {
-                    tmp48 = current2 !== reduceMotion;
-                  }
-                  if (tmp48) {
-                    let str11 = current2.__prefix;
-                    if (str11 == null) {
-                      str11 = "";
-                    }
-                    let str12 = current2.__suffix;
-                    const sum1 = str11 + current2.current;
-                    if (str12 == null) {
-                      str12 = "";
-                    }
-                    current2.current = sum1 + str12;
-                  }
-                  reduceMotion.onFrame = prefNumberSuffOnFrame;
-                } else {
-                  throw new TypeError("Trying to call a non-function");
-                }
-              } else {
-                throw new TypeError("Trying to call a non-function");
-              }
-            } else {
-              if (typeof current === "object") {
-                if (null !== current) {
-                  for (const key10034 in arg1) {
-                    let _Object2 = Object;
-                    arg0[key10034] = Object.assign({}, dependencyMap);
-                    arg0[key10034].onStart = arg0.onStart;
-                    arg0[key10034].current = arg1[key10034];
-                    arg0[key10034].toValue = arg0.toValue[key10034];
-                    let obj22 = arg0[key10034];
-                    let tmp79 = arg0[key10034];
-                    let tmp80 = arg1[key10034];
-                    let tmp13;
-                    if (arg3) {
-                      tmp13 = arg3[key10034];
-                    }
-                    let onStartResult1 = obj22.onStart(tmp79, tmp80, arg2, tmp13);
-                    continue;
-                  }
-                  reduceMotion.current = current;
-                  reduceMotion.onFrame = objectOnFrame;
-                }
-              }
-              toValue(reduceMotion, current, arg2, current2);
-            }
+            self._isFirstRender = false;
           }
-          tmp3Result22 = tmp3(1680);
         }
-        return tmp11;
       }
-    };
-  }
-}
-let obj3 = { addMatrices: _mod1680.addMatrices, scaleMatrix: _mod1680.scaleMatrix, subtractMatrices: _mod1680.subtractMatrices };
-decorateAnimation.__closure = { getReduceMotionFromConfig, recognizePrefixSuffix, isColor: _mod1681.isColor, toLinearSpace: _mod1681.toLinearSpace, convertToRGBA: _mod1681.convertToRGBA, clampRGBA: _mod1681.clampRGBA, rgbaArrayToRGBAColor: _mod1681.rgbaArrayToRGBAColor, toGammaSpace: _mod1681.toGammaSpace, decomposeMatrixIntoMatricesAndAngles: _mod1680.decomposeMatrixIntoMatricesAndAngles, applyProgressToMatrix, applyProgressToNumber, getRotationMatrix: _mod1680.getRotationMatrix, multiplyMatrices: _mod1680.multiplyMatrices, flatten: _mod1680.flatten, isAffineMatrixFlat: _mod1680.isAffineMatrixFlat };
-decorateAnimation.__workletHash = 6240615473022;
-decorateAnimation.__initData = { code: "function decorateAnimation_Pnpm_utilTs8(animation){const{getReduceMotionFromConfig,recognizePrefixSuffix,isColor,toLinearSpace,convertToRGBA,clampRGBA,rgbaArrayToRGBAColor,toGammaSpace,decomposeMatrixIntoMatricesAndAngles,applyProgressToMatrix,applyProgressToNumber,getRotationMatrix,multiplyMatrices,flatten,isAffineMatrixFlat}=this.__closure;const baseOnStart=animation.onStart;const baseOnFrame=animation.onFrame;if(animation.isHigherOrder){animation.onStart=function(animation,value,timestamp,previousAnimation){if(animation.reduceMotion===undefined){animation.reduceMotion=getReduceMotionFromConfig();}return baseOnStart(animation,value,timestamp,previousAnimation);};return;}const animationCopy=Object.assign({},animation);delete animationCopy.callback;const prefNumberSuffOnStart=function(animation,value,timestamp,previousAnimation){var _animation$__prefix,_animation$__suffix;const{prefix:prefix,suffix:suffix,strippedValue:strippedValue}=recognizePrefixSuffix(value);animation.__prefix=prefix;animation.__suffix=suffix;animation.strippedCurrent=strippedValue;const{strippedValue:strippedToValue}=recognizePrefixSuffix(animation.toValue);animation.current=strippedValue;animation.startValue=strippedValue;animation.toValue=strippedToValue;if(previousAnimation&&previousAnimation!==animation){const{prefix:paPrefix,suffix:paSuffix,strippedValue:paStrippedValue}=recognizePrefixSuffix(previousAnimation.current);previousAnimation.current=paStrippedValue;previousAnimation.__prefix=paPrefix;previousAnimation.__suffix=paSuffix;}baseOnStart(animation,strippedValue,timestamp,previousAnimation);animation.current=((_animation$__prefix=animation.__prefix)!==null&&_animation$__prefix!==void 0?_animation$__prefix:'')+animation.current+((_animation$__suffix=animation.__suffix)!==null&&_animation$__suffix!==void 0?_animation$__suffix:'');if(previousAnimation&&previousAnimation!==animation){var _previousAnimation$__,_previousAnimation$__2;previousAnimation.current=((_previousAnimation$__=previousAnimation.__prefix)!==null&&_previousAnimation$__!==void 0?_previousAnimation$__:'')+previousAnimation.current+((_previousAnimation$__2=previousAnimation.__suffix)!==null&&_previousAnimation$__2!==void 0?_previousAnimation$__2:'');}};const prefNumberSuffOnFrame=function(animation,timestamp){var _animation$__prefix2,_animation$__suffix2;animation.current=animation.strippedCurrent;const res=baseOnFrame(animation,timestamp);animation.strippedCurrent=animation.current;animation.current=((_animation$__prefix2=animation.__prefix)!==null&&_animation$__prefix2!==void 0?_animation$__prefix2:'')+animation.current+((_animation$__suffix2=animation.__suffix)!==null&&_animation$__suffix2!==void 0?_animation$__suffix2:'');return res;};const tab=['R','G','B','A'];const colorOnStart=function(animation,value,timestamp,previousAnimation){let RGBAValue;let RGBACurrent;let RGBAToValue;const res=[];if(isColor(value)){RGBACurrent=toLinearSpace(convertToRGBA(animation.current));RGBAValue=toLinearSpace(convertToRGBA(value));if(animation.toValue){RGBAToValue=toLinearSpace(convertToRGBA(animation.toValue));}}tab.forEach(function(i,index){animation[i]=Object.assign({},animationCopy);animation[i].current=RGBACurrent[index];animation[i].toValue=RGBAToValue?RGBAToValue[index]:undefined;animation[i].onStart(animation[i],RGBAValue[index],timestamp,previousAnimation?previousAnimation[i]:undefined);res.push(animation[i].current);});animation.unroundedCurrent=res;clampRGBA(res);animation.current=rgbaArrayToRGBAColor(toGammaSpace(res));};const colorOnFrame=function(animation,timestamp){const res=[];let finished=true;animation.current=animation.nonscaledCurrent;tab.forEach(function(i){const result=animation[i].onFrame(animation[i],timestamp);finished=finished&&result;res.push(animation[i].current);});clampRGBA(res);animation.nonscaledCurrent=res;animation.current=rgbaArrayToRGBAColor(toGammaSpace(res));return finished;};const transformationMatrixOnStart=function(animation,value,timestamp,previousAnimation){const toValue=animation.toValue;animation.startMatrices=decomposeMatrixIntoMatricesAndAngles(value);animation.stopMatrices=decomposeMatrixIntoMatricesAndAngles(toValue);animation[0]=Object.assign({},animationCopy);animation[0].current=0;animation[0].toValue=100;animation[0].onStart(animation[0],0,timestamp,previousAnimation?previousAnimation[0]:undefined);animation.current=value;};const transformationMatrixOnFrame=function(animation,timestamp){let finished=true;const result=animation[0].onFrame(animation[0],timestamp);finished=finished&&result;const progress=animation[0].current/100;const transforms=['translationMatrix','scaleMatrix','skewMatrix'];const mappedTransforms=[];transforms.forEach(function(key,_){return mappedTransforms.push(applyProgressToMatrix(progress,animation.startMatrices[key],animation.stopMatrices[key]));});const[currentTranslation,currentScale,skewMatrix]=mappedTransforms;const rotations=['x','y','z'];const mappedRotations=[];rotations.forEach(function(key,_){const angle=applyProgressToNumber(progress,animation.startMatrices['r'+key],animation.stopMatrices['r'+key]);mappedRotations.push(getRotationMatrix(angle,key));});const[rotationMatrixX,rotationMatrixY,rotationMatrixZ]=mappedRotations;const rotationMatrix=multiplyMatrices(rotationMatrixX,multiplyMatrices(rotationMatrixY,rotationMatrixZ));const updated=flatten(multiplyMatrices(multiplyMatrices(currentScale,multiplyMatrices(skewMatrix,rotationMatrix)),currentTranslation));animation.current=updated;return finished;};const arrayOnStart=function(animation,value,timestamp,previousAnimation){value.forEach(function(v,i){animation[i]=Object.assign({},animationCopy);animation[i].current=v;animation[i].toValue=animation.toValue[i];animation[i].onStart(animation[i],v,timestamp,previousAnimation?previousAnimation[i]:undefined);});animation.current=[...value];};const arrayOnFrame=function(animation,timestamp){let finished=true;animation.current.forEach(function(_,i){const result=animation[i].onFrame(animation[i],timestamp);finished=finished&&result;animation.current[i]=animation[i].current;});return finished;};const objectOnStart=function(animation,value,timestamp,previousAnimation){for(const key in value){animation[key]=Object.assign({},animationCopy);animation[key].onStart=animation.onStart;animation[key].current=value[key];animation[key].toValue=animation.toValue[key];animation[key].onStart(animation[key],value[key],timestamp,previousAnimation?previousAnimation[key]:undefined);}animation.current=value;};const objectOnFrame=function(animation,timestamp){let finished=true;const newObject={};for(const key in animation.current){const result=animation[key].onFrame(animation[key],timestamp);finished=finished&&result;newObject[key]=animation[key].current;}animation.current=newObject;return finished;};animation.onStart=function(animation,value,timestamp,previousAnimation){if(animation.reduceMotion===undefined){animation.reduceMotion=getReduceMotionFromConfig();}if(animation.reduceMotion){if(animation.toValue!==undefined){animation.current=animation.toValue;}else{baseOnStart(animation,value,timestamp,previousAnimation);}animation.startTime=0;animation.onFrame=function(){return true;};return;}if(isColor(value)){colorOnStart(animation,value,timestamp,previousAnimation);animation.onFrame=colorOnFrame;return;}else if(isAffineMatrixFlat(value)){transformationMatrixOnStart(animation,value,timestamp,previousAnimation);animation.onFrame=transformationMatrixOnFrame;return;}else if(Array.isArray(value)){arrayOnStart(animation,value,timestamp,previousAnimation);animation.onFrame=arrayOnFrame;return;}else if(typeof value==='string'){prefNumberSuffOnStart(animation,value,timestamp,previousAnimation);animation.onFrame=prefNumberSuffOnFrame;return;}else if(typeof value==='object'&&value!==null){objectOnStart(animation,value,timestamp,previousAnimation);animation.onFrame=objectOnFrame;return;}baseOnStart(animation,value,timestamp,previousAnimation);};}" };
-const __initData = { code: "function pnpm_utilTs10(){const{factory,decorateAnimation}=this.__closure;const animation=factory();decorateAnimation(animation);return animation;}" };
-function defineAnimation(substr, fn) {
-  closure_0 = fn;
-  if (c2) {
-    return substr;
-  } else {
-    fn = function o() {
-      const tmp3 = closure_0();
-      if (typeof decorateAnimation === "function") {
-        ({ onStart: closure_0, onFrame: closure_1 } = tmp3);
-        if (tmp3.isHigherOrder) {
-          tmp3.onStart = (reduceMotion, arg1, arg2, arg3) => {
-            if (undefined === reduceMotion.reduceMotion) {
-              if (typeof getReduceMotionFromConfig === "function") {
-                reduceMotion.reduceMotion = value.value;
-              } else {
-                throw new TypeError("Trying to call a non-function");
-              }
-            }
-            return fn(reduceMotion, arg1, arg2, arg3);
-          };
-        } else {
-          let _Object = Object;
-          closure_2 = Object.assign({}, tmp3);
-          delete tmp2[tmp];
-          function prefNumberSuffOnFrame(strippedCurrent, arg1) {
-            strippedCurrent.current = strippedCurrent.strippedCurrent;
-            ({ current: strippedCurrent.strippedCurrent, __prefix } = strippedCurrent);
-            if (__prefix == null) {
-              __prefix = "";
-            }
-            let str = strippedCurrent.__suffix;
-            const sum = __prefix + strippedCurrent.current;
-            if (str == null) {
-              str = "";
-            }
-            strippedCurrent.current = sum + str;
-            return dependencyMap(strippedCurrent, arg1);
-          }
-          closure_4 = ["R", "G", "B", "A"];
-          function colorOnFrame(nonscaledCurrent, arg1) {
-            closure_1 = arg1;
-            const items = [];
-            c3 = true;
-            nonscaledCurrent.current = nonscaledCurrent.nonscaledCurrent;
-            const item = closure_4.forEach((item) => {
-              let onFrameResult = c3;
-              if (c3) {
-                onFrameResult = obj.onFrame(nonscaledCurrent[item], closure_1);
-              }
-              c3 = onFrameResult;
-              items.push(nonscaledCurrent[item].current);
-            });
-            nonscaledCurrent(1681).clampRGBA(items);
-            nonscaledCurrent.nonscaledCurrent = items;
-            const obj = nonscaledCurrent(1681);
-            const obj2 = nonscaledCurrent(1681);
-            nonscaledCurrent.current = obj2.rgbaArrayToRGBAColor(nonscaledCurrent(1681).toGammaSpace(items));
-            return c3;
-          }
-          function transformationMatrixOnFrame(arg0, arg1) {
-            const stopMatrices = arg0;
-            const first = arg0[0];
-            dependencyMap = arg0[0].current / 100;
-            const items = [];
-            const items1 = ["translationMatrix", "scaleMatrix", "skewMatrix"];
-            const item = items1.forEach((item, index) => {
-              if (typeof objectOnFrame === "function") {
-                const obj = fn(1680);
-                const obj2 = fn(1680);
-                return tmp2(obj.addMatrices(tmp4, obj2.scaleMatrix(fn(1680).subtractMatrices(tmp5, tmp4), tmp3)));
-              } else {
-                throw new TypeError("Trying to call a non-function");
-              }
-            });
-            const items2 = [];
-            const items3 = ["x", "y", "z"];
-            [tmp3, tmp4, tmp5] = items;
-            const item1 = items3.forEach((item, index) => {
-              if (typeof closure_2_9 === "function") {
-                const sum = tmp2 + tmp * (stopMatrices.stopMatrices["r" + item] - tmp2);
-                items2.push(fn(1680).getRotationMatrix(sum, item));
-              } else {
-                throw new TypeError("Trying to call a non-function");
-              }
-            });
-            [tmp7, tmp8, tmp9] = items2;
-            const onFrameResult = first.onFrame(arg0[0], arg1);
-            let obj2 = stopMatrices(1680);
-            const obj3 = stopMatrices(1680);
-            const multiplyMatricesResult = obj2.multiplyMatrices(tmp7, stopMatrices(1680).multiplyMatrices(tmp8, tmp9));
-            const obj4 = stopMatrices(1680);
-            const obj5 = stopMatrices(1680);
-            const obj6 = stopMatrices(1680);
-            arg0.current = obj4.flatten(obj5.multiplyMatrices(obj6.multiplyMatrices(tmp4, stopMatrices(1680).multiplyMatrices(tmp5, multiplyMatricesResult)), tmp3));
-            return onFrameResult;
-          }
-          function arrayOnFrame(current, arg1) {
-            dependencyMap = current;
-            closure_1 = arg1;
-            c2 = true;
-            current = current.current;
-            const item = current.forEach((item, index) => {
-              let onFrameResult = c2;
-              if (c2) {
-                onFrameResult = obj.onFrame(dependencyMap[index], closure_1);
-              }
-              c2 = onFrameResult;
-              dependencyMap.current[index] = dependencyMap[index].current;
-            });
-            return c2;
-          }
-          function objectOnFrame(current, arg1) {
-            const obj = {};
-            let flag = true;
-            let flag2 = true;
-            const keys = Object.keys();
-            if (keys !== undefined) {
-              flag2 = flag;
-              while (keys[tmp] !== undefined) {
-                let obj2 = current[tmp4];
-                let onFrameResult = flag;
-                if (flag) {
-                  onFrameResult = obj2.onFrame(current[tmp4], arg1);
-                }
-                obj[tmp4] = current[tmp4].current;
-                flag = onFrameResult;
-                continue;
-              }
-            }
-            current.current = obj;
-            return flag2;
-          }
-          tmp3.onStart = (reduceMotion, current, arg2, current2) => {
-            if (undefined === reduceMotion.reduceMotion) {
-              if (typeof arrayOnFrame === "function") {
-                reduceMotion.reduceMotion = transformationMatrixOnFrame.value;
-              } else {
-                throw new TypeError("Trying to call a non-function");
-              }
-            }
-            if (reduceMotion.reduceMotion) {
-              if (undefined !== reduceMotion.toValue) {
-                reduceMotion.current = reduceMotion.toValue;
-              } else {
-                toValue(reduceMotion, current, arg2, current2);
-              }
-              reduceMotion.startTime = 0;
-              reduceMotion.onFrame = () => true;
-            } else {
-              if (obj.isColor(current)) {
-                closure_129_0 = reduceMotion;
-                closure_129_1 = arg2;
-                closure_129_2 = current2;
-                const items = [];
-                closure_129_6 = items;
-                if (tmp3Result.isColor(current)) {
-                  const tmp3Result13 = tmp3(1681);
-                  closure_129_4 = tmp3Result13.toLinearSpace(tmp3(1681).convertToRGBA(reduceMotion.current));
-                  const tmp3Result14 = tmp3(1681);
-                  const tmp3Result15 = tmp3(1681);
-                  closure_129_3 = tmp3Result15.toLinearSpace(tmp3(1681).convertToRGBA(current));
-                  if (reduceMotion.toValue) {
-                    const tmp3Result17 = tmp3(1681);
-                    closure_129_5 = tmp3Result17.toLinearSpace(tmp3(1681).convertToRGBA(reduceMotion.toValue));
-                    const tmp3Result18 = tmp3(1681);
-                  }
-                  const tmp3Result16 = tmp3(1681);
-                }
-                const item = closure_4.forEach((item, index) => {
-                  toValue[item] = Object.assign({}, dependencyMap);
-                  toValue[item].current = closure_1_4[index];
-                  let tmp2;
-                  if (colorOnFrame) {
-                    tmp2 = colorOnFrame[index];
-                  }
-                  toValue[item].toValue = tmp2;
-                  let tmp4;
-                  if (dependencyMap) {
-                    tmp4 = dependencyMap[item];
-                  }
-                  toValue[item].onStart(toValue[item], prefNumberSuffOnFrame[index], closure_1, tmp4);
-                  transformationMatrixOnFrame.push(toValue[item].current);
-                });
-                reduceMotion.unroundedCurrent = items;
-                tmp3Result = tmp3(1681);
-                tmp3(1681).clampRGBA(items);
-                const tmp3Result19 = tmp3(1681);
-                const tmp3Result20 = tmp3(1681);
-                reduceMotion.current = tmp3Result20.rgbaArrayToRGBAColor(tmp3(1681).toGammaSpace(items));
-                reduceMotion.onFrame = colorOnFrame;
-                const tmp3Result21 = tmp3(1681);
-              } else {
-                if (tmp3Result22.isAffineMatrixFlat(current)) {
-                  reduceMotion.startMatrices = tmp3(1680).decomposeMatrixIntoMatricesAndAngles(current);
-                  const tmp3Result23 = tmp3(1680);
-                  reduceMotion.stopMatrices = tmp3(1680).decomposeMatrixIntoMatricesAndAngles(reduceMotion.toValue);
-                  const _Object = Object;
-                  reduceMotion[0] = Object.assign({}, dependencyMap);
-                  reduceMotion[0].current = 0;
-                  reduceMotion[0].toValue = 100;
-                  const first = reduceMotion[0];
-                  const first1 = reduceMotion[0];
-                  let first2;
-                  if (current2) {
-                    first2 = current2[0];
-                  }
-                  first.onStart(first1, 0, arg2, first2);
-                  reduceMotion.current = current;
-                  reduceMotion.onFrame = transformationMatrixOnFrame;
-                  const tmp3Result24 = tmp3(1680);
-                } else {
-                  prefix = globalThis;
-                  const _Array = Array;
-                  if (Array.isArray(current)) {
-                    toValue = reduceMotion;
-                    closure_1 = arg2;
-                    dependencyMap = current2;
-                    const item1 = current.forEach((current, index) => {
-                      toValue[index] = Object.assign({}, dependencyMap);
-                      toValue[index].current = current;
-                      toValue[index].toValue = toValue.toValue[index];
-                      let tmp2;
-                      if (dependencyMap) {
-                        tmp2 = dependencyMap[index];
-                      }
-                      toValue[index].onStart(toValue[index], current, closure_1, tmp2);
-                    });
-                    const items1 = [];
-                    HermesBuiltin.arraySpread(current, 0);
-                    reduceMotion.current = items1;
-                    reduceMotion.onFrame = arrayOnFrame;
-                  } else if (typeof current === "string") {
-                    if (typeof colorOnFrame === "function") {
-                      if (typeof current === "string") {
-                        const match = current.match(/([A-Za-z]*)(-?\d*\.?\d*)([eE][-+]?[0-9]+)?([A-Za-z%]*)/);
-                        if (match) {
-                          let str2 = match[3];
-                          if (str2 == null) {
-                            str2 = "";
-                          }
-                          const obj2 = { prefix: match[1], suffix: match[4], strippedValue: null };
-                          const _parseFloat = parseFloat;
-                          obj2.strippedValue = parseFloat(match[2] + str2);
-                          let obj3 = obj2;
-                        } else {
-                          const reanimatedError = new tmp3(1649).ReanimatedError("Couldn't parse animation value.");
-                          throw reanimatedError;
-                        }
-                      } else {
-                        obj3 = { strippedValue: current };
-                      }
-                      ({ strippedValue, prefix: reduceMotion.__prefix, suffix: reduceMotion.__suffix } = obj3);
-                      reduceMotion.strippedCurrent = strippedValue;
-                      if (typeof tmp21 === "function") {
-                        if (typeof str3 === "string") {
-                          const match1 = str3.match(/([A-Za-z]*)(-?\d*\.?\d*)([eE][-+]?[0-9]+)?([A-Za-z%]*)/);
-                          if (match1) {
-                            let str5 = match1[3];
-                            if (str5 == null) {
-                              str5 = "";
-                            }
-                            const obj4 = { prefix: match1[1], suffix: match1[4], strippedValue: null };
-                            const _parseFloat2 = parseFloat;
-                            obj4.strippedValue = parseFloat(match1[2] + str5);
-                            let obj5 = obj4;
-                          } else {
-                            const reanimatedError1 = new tmp3(1649).ReanimatedError("Couldn't parse animation value.");
-                            throw reanimatedError1;
-                          }
-                        } else {
-                          obj5 = { strippedValue: str3 };
-                        }
-                        reduceMotion.current = strippedValue;
-                        reduceMotion.startValue = strippedValue;
-                        reduceMotion.toValue = obj5.strippedValue;
-                        if (current2) {
-                          if (current2 !== reduceMotion) {
-                            if (typeof tmp21 === "function") {
-                              if (typeof str7 === "string") {
-                                const match2 = str7.match(/([A-Za-z]*)(-?\d*\.?\d*)([eE][-+]?[0-9]+)?([A-Za-z%]*)/);
-                                if (match2) {
-                                  let str8 = match2[3];
-                                  if (str8 == null) {
-                                    str8 = "";
-                                  }
-                                  const obj6 = { prefix: match2[1], suffix: match2[4], strippedValue: prefix.parseFloat(match2[2] + str8) };
-                                  let obj7 = obj6;
-                                } else {
-                                  const reanimatedError2 = new tmp3(1649).ReanimatedError("Couldn't parse animation value.");
-                                  throw reanimatedError2;
-                                }
-                              } else {
-                                obj7 = { strippedValue: str7 };
-                              }
-                              ({ prefix, strippedValue: current2.current } = obj7);
-                              current2.__prefix = prefix;
-                              current2.__suffix = obj7.suffix;
-                            } else {
-                              throw new TypeError("Trying to call a non-function");
-                            }
-                          }
-                        }
-                        toValue(reduceMotion, strippedValue, arg2, current2);
-                        let str9 = reduceMotion.__prefix;
-                        if (str9 == null) {
-                          str9 = "";
-                        }
-                        let str10 = reduceMotion.__suffix;
-                        const sum = str9 + reduceMotion.current;
-                        if (str10 == null) {
-                          str10 = "";
-                        }
-                        reduceMotion.current = sum + str10;
-                        let tmp48 = current2;
-                        if (current2) {
-                          tmp48 = current2 !== reduceMotion;
-                        }
-                        if (tmp48) {
-                          let str11 = current2.__prefix;
-                          if (str11 == null) {
-                            str11 = "";
-                          }
-                          let str12 = current2.__suffix;
-                          const sum1 = str11 + current2.current;
-                          if (str12 == null) {
-                            str12 = "";
-                          }
-                          current2.current = sum1 + str12;
-                        }
-                        reduceMotion.onFrame = prefNumberSuffOnFrame;
-                      } else {
-                        throw new TypeError("Trying to call a non-function");
-                      }
-                    } else {
-                      throw new TypeError("Trying to call a non-function");
-                    }
-                  } else {
-                    if (typeof current === "object") {
-                      if (null !== current) {
-                        for (const key10034 in arg1) {
-                          let _Object2 = Object;
-                          arg0[key10034] = Object.assign({}, dependencyMap);
-                          arg0[key10034].onStart = arg0.onStart;
-                          arg0[key10034].current = arg1[key10034];
-                          arg0[key10034].toValue = arg0.toValue[key10034];
-                          let obj22 = arg0[key10034];
-                          let tmp79 = arg0[key10034];
-                          let tmp80 = arg1[key10034];
-                          let tmp13;
-                          if (arg3) {
-                            tmp13 = arg3[key10034];
-                          }
-                          let onStartResult1 = obj22.onStart(tmp79, tmp80, arg2, tmp13);
-                          continue;
-                        }
-                        reduceMotion.current = current;
-                        reduceMotion.onFrame = objectOnFrame;
-                      }
-                    }
-                    toValue(reduceMotion, current, arg2, current2);
-                  }
-                }
-                tmp3Result22 = tmp3(1680);
-              }
-              return tmp11;
-            }
-          };
-        }
-        return tmp3;
-      } else {
-        throw new TypeError("Trying to call a non-function");
+      let _willUnmount = !closure_16;
+      if (_willUnmount) {
+        const tmp21Result = tmp21(1646);
+        _willUnmount = tmp21Result.isFabric();
       }
-    };
-    let obj = { factory: fn, decorateAnimation };
-    fn.__closure = obj;
-    fn.__workletHash = 9825023081203;
-    fn.__initData = __initData;
-    if (!globalThis._WORKLET) {
-      if (!module_1641) {
-        fn.__isAnimationDefinition = true;
+      if (_willUnmount) {
+        _willUnmount = self._willUnmount;
       }
-      return fn;
+      if (_willUnmount) {
+        _willUnmount = typeof componentViewTag === "number";
+      }
+      if (_willUnmount) {
+        const tmp21Result2 = tmp21(1687);
+        const result5 = tmp21Result2.unmarkNodeAsRemovable(componentViewTag);
+      }
+      self._isFirstRender = false;
     }
-    const tmp7 = fn();
-    if (typeof tmp3 === "function") {
-      ({ onStart: closure_129_0, onFrame: closure_129_1 } = tmp7);
-      if (tmp7.isHigherOrder) {
-        tmp7.onStart = (reduceMotion, arg1, arg2, arg3) => {
-          if (undefined === reduceMotion.reduceMotion) {
-            if (typeof getReduceMotionFromConfig === "function") {
-              reduceMotion.reduceMotion = value.value;
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          }
-          return fn(reduceMotion, arg1, arg2, arg3);
-        };
-        fn = tmp7;
-      } else {
-        let _Object = Object;
-        closure_129_2 = Object.assign({}, tmp7);
-        delete tmp2[tmp];
-        closure_129_3 = function prefNumberSuffOnFrame(strippedCurrent, arg1) {
-          strippedCurrent.current = strippedCurrent.strippedCurrent;
-          ({ current: strippedCurrent.strippedCurrent, __prefix } = strippedCurrent);
-          if (__prefix == null) {
-            __prefix = "";
-          }
-          let str = strippedCurrent.__suffix;
-          const sum = __prefix + strippedCurrent.current;
-          if (str == null) {
-            str = "";
-          }
-          strippedCurrent.current = sum + str;
-          return dependencyMap(strippedCurrent, arg1);
-        };
-        closure_129_4 = ["R", "G", "B", "A"];
-        closure_129_5 = function colorOnFrame(nonscaledCurrent, arg1) {
-          closure_1 = arg1;
-          const items = [];
-          c3 = true;
-          nonscaledCurrent.current = nonscaledCurrent.nonscaledCurrent;
-          const item = closure_4.forEach((item) => {
-            let onFrameResult = c3;
-            if (c3) {
-              onFrameResult = obj.onFrame(nonscaledCurrent[item], closure_1);
-            }
-            c3 = onFrameResult;
-            items.push(nonscaledCurrent[item].current);
-          });
-          nonscaledCurrent(1681).clampRGBA(items);
-          nonscaledCurrent.nonscaledCurrent = items;
-          const obj = nonscaledCurrent(1681);
-          const obj2 = nonscaledCurrent(1681);
-          nonscaledCurrent.current = obj2.rgbaArrayToRGBAColor(nonscaledCurrent(1681).toGammaSpace(items));
-          return c3;
-        };
-        closure_129_6 = function transformationMatrixOnFrame(arg0, arg1) {
-          const stopMatrices = arg0;
-          const first = arg0[0];
-          dependencyMap = arg0[0].current / 100;
-          const items = [];
-          const items1 = ["translationMatrix", "scaleMatrix", "skewMatrix"];
-          const item = items1.forEach((item, index) => {
-            if (typeof objectOnFrame === "function") {
-              const obj = fn(1680);
-              const obj2 = fn(1680);
-              return tmp2(obj.addMatrices(tmp4, obj2.scaleMatrix(fn(1680).subtractMatrices(tmp5, tmp4), tmp3)));
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          });
-          const items2 = [];
-          const items3 = ["x", "y", "z"];
-          [tmp3, tmp4, tmp5] = items;
-          const item1 = items3.forEach((item, index) => {
-            if (typeof closure_2_9 === "function") {
-              const sum = tmp2 + tmp * (stopMatrices.stopMatrices["r" + item] - tmp2);
-              items2.push(fn(1680).getRotationMatrix(sum, item));
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          });
-          [tmp7, tmp8, tmp9] = items2;
-          const onFrameResult = first.onFrame(arg0[0], arg1);
-          let obj2 = stopMatrices(1680);
-          const obj3 = stopMatrices(1680);
-          const multiplyMatricesResult = obj2.multiplyMatrices(tmp7, stopMatrices(1680).multiplyMatrices(tmp8, tmp9));
-          const obj4 = stopMatrices(1680);
-          const obj5 = stopMatrices(1680);
-          const obj6 = stopMatrices(1680);
-          arg0.current = obj4.flatten(obj5.multiplyMatrices(obj6.multiplyMatrices(tmp4, stopMatrices(1680).multiplyMatrices(tmp5, multiplyMatricesResult)), tmp3));
-          return onFrameResult;
-        };
-        closure_129_7 = function arrayOnFrame(current, arg1) {
-          dependencyMap = current;
-          closure_1 = arg1;
-          c2 = true;
-          current = current.current;
-          const item = current.forEach((item, index) => {
-            let onFrameResult = c2;
-            if (c2) {
-              onFrameResult = obj.onFrame(dependencyMap[index], closure_1);
-            }
-            c2 = onFrameResult;
-            dependencyMap.current[index] = dependencyMap[index].current;
-          });
-          return c2;
-        };
-        closure_129_8 = function objectOnFrame(current, arg1) {
-          const obj = {};
-          let flag = true;
-          let flag2 = true;
-          const keys = Object.keys();
-          if (keys !== undefined) {
-            flag2 = flag;
-            while (keys[tmp] !== undefined) {
-              let obj2 = current[tmp4];
-              let onFrameResult = flag;
-              if (flag) {
-                onFrameResult = obj2.onFrame(current[tmp4], arg1);
+  };
+  let items = [
+    entry,
+    {
+      key: "componentWillUnmount",
+      value: function componentWillUnmount() {
+        let _componentDOMRef;
+        let props;
+        const self = this;
+        const _NativeEventsManager = this._NativeEventsManager;
+        if (_NativeEventsManager != null) {
+          _NativeEventsManager.detachEvents();
+        }
+        const _jsPropsUpdater = self._jsPropsUpdater;
+        const result = _jsPropsUpdater.removeOnJSPropsChangeListener(self);
+        const componentViewTag = self.getComponentViewTag();
+        const obj = name(closure_2[9]);
+        const isFabricResult = obj.isFabric() && -1 !== componentViewTag;
+        if (isFabricResult) {
+          const PropsRegistryGarbageCollector = tmp4(tmp5[19]).PropsRegistryGarbageCollector;
+          PropsRegistryGarbageCollector.unregisterView(componentViewTag);
+        }
+        self._detachStyles();
+        const _InlinePropManager = self._InlinePropManager;
+        _InlinePropManager.detachInlineProps();
+        if (self.props.sharedTransitionTag) {
+          const result1 = self._configureSharedTransition(true);
+        }
+        const _sharedElementTransition = self._sharedElementTransition;
+        if (_sharedElementTransition != null) {
+          _sharedElementTransition.unregisterTransition(self.getComponentViewTag(), true);
+        }
+        const exiting = self.props.exiting;
+        if (-1 !== componentViewTag) {
+          const ComponentRegistry = tmp4(tmp5[20]).ComponentRegistry;
+          ComponentRegistry.unregister(componentViewTag);
+        }
+        if (module_1646) {
+          if (self._componentDOMRef) {
+            if (exiting) {
+              const tmp4Result = name(closure_2[10]);
+              if (tmp4Result.getReducedMotionFromConfig(exiting)) {
+                const callbackV = exiting.callbackV;
+                if (callbackV != null) {
+                  callbackV(true);
+                }
+              } else {
+                const tmp4Result8 = name(closure_2[21]);
+                const result2 = tmp4Result8.addHTMLMutationObserver();
+                ({ props, _componentDOMRef } = self);
+                const tmp4Result9 = name(closure_2[10]);
+                const result3 = tmp4Result9.startWebLayoutAnimation(props, _componentDOMRef, tmp4(tmp5[17]).LayoutAnimationType.EXITING);
               }
-              obj[tmp4] = current[tmp4].current;
-              flag = onFrameResult;
+            }
+            const _viewInfo = self._viewInfo;
+            let isFabricResult1 = !closure_1_16;
+            if (isFabricResult1) {
+              const tmp4Result10 = name(closure_2[9]);
+              isFabricResult1 = tmp4Result10.isFabric();
+            }
+            if (isFabricResult1) {
+              isFabricResult1 = shadowNodeWrapper;
+            }
+            if (isFabricResult1) {
+              const tmp4Result11 = name(closure_2[16]);
+              tmp4Result11.markNodeAsRemovable(shadowNodeWrapper);
+            }
+            self._willUnmount = true;
+          }
+        }
+        if (exiting) {
+          if (!module_1646) {
+            const tmp4Result12 = name(closure_2[9]);
+            if (!tmp4Result12.isFabric()) {
+              if ("getReduceMotion" in exiting) {
+                let reduceMotionFromConfig;
+                if (typeof exiting.getReduceMotion === "function") {
+                  const tmp4Result13 = name(closure_2[22]);
+                  reduceMotionFromConfig = tmp4Result13.getReduceMotionFromConfig(exiting.getReduceMotion());
+                }
+                if (!reduceMotionFromConfig) {
+                  const result4 = self._configureLayoutAnimation(tmp4(tmp5[17]).LayoutAnimationType.EXITING, exiting);
+                }
+              }
+              const tmp4Result14 = name(closure_2[22]);
+              reduceMotionFromConfig = tmp4Result14.getReduceMotionFromConfig();
+            }
+          }
+        }
+      }
+    },
+    {
+      key: "_syncStylePropsBackToReact",
+      value: function _syncStylePropsBackToReact(arg0) {
+        let closure_0 = arg0;
+        this.setState((settledProps) => {
+          let obj2;
+          const obj = { settledProps: obj2 };
+          obj2 = {};
+          const merged = Object.assign(settledProps.settledProps);
+          const merged1 = Object.assign(closure_0);
+          return obj;
+        });
+      }
+    },
+    {
+      key: "getComponentViewTag",
+      value: function getComponentViewTag() {
+        return this._getViewInfo().viewTag;
+      }
+    },
+    {
+      key: "_detachStyles",
+      value: function _detachStyles() {
+        const self = this;
+        const componentViewTag = this.getComponentViewTag();
+        if (-1 !== componentViewTag) {
+          if (null !== self._styles) {
+            const _styles = self._styles;
+            for (const item10009 of _styles) {
+              let viewDescriptors = item10009.viewDescriptors;
+              let removeResult = viewDescriptors.remove(componentViewTag);
               continue;
             }
+            const animatedProps = self.props.animatedProps;
+            let viewDescriptors1;
+            if (animatedProps != null) {
+              viewDescriptors1 = animatedProps.viewDescriptors;
+            }
+            if (viewDescriptors1) {
+              const viewDescriptors2 = self.props.animatedProps.viewDescriptors;
+              viewDescriptors2.remove(componentViewTag);
+            }
           }
-          current.current = obj;
-          return flag2;
+        }
+      }
+    },
+    {
+      key: "_updateFromNative",
+      value: function _updateFromNative(props) {
+        let setNativeProps1;
+        if (disableReactSync != null) {
+          setNativeProps1 = obj.setNativeProps;
+        }
+        const self = this;
+        if (setNativeProps1) {
+          disableReactSync.setNativeProps(self._componentRef, props);
+        } else {
+          const _componentRef = self._componentRef;
+          if (_componentRef != null) {
+            const setNativeProps = _componentRef.setNativeProps;
+            if (setNativeProps != null) {
+              setNativeProps(props);
+            }
+          }
+        }
+      }
+    },
+    {
+      key: "_updateReanimatedProps",
+      value: function _updateReanimatedProps(obj) {
+        disableReactSync = undefined;
+        if (disableReactSync != null) {
+          disableReactSync = disableReactSync.disableReactSync;
+        }
+        if (!disableReactSync) {
+          obj = {};
+          for (const key10015 in obj) {
+            let tmp4;
+            let tmp8 = obj[key10015];
+            if ("color" === key10015) {
+              if (tmp8) {
+                if (typeof tmp8 === "string") {
+                  tmp4 = React4(tmp8);
+                  obj[key10015] = tmp4;
+                  continue;
+                }
+              }
+            }
+            if ("top" != key10015) {
+              if ("bottom" != key10015) {
+                if (!key10015.startsWith("margin")) {
+                  tmp4 = tmp8;
+                }
+              }
+            }
+          }
+          const self = this;
+          this.setState((reanimatedProps) => {
+            let obj2;
+            obj = { reanimatedProps: obj2 };
+            obj2 = {};
+            const merged = Object.assign(reanimatedProps.reanimatedProps);
+            const merged1 = Object.assign(obj);
+            return obj;
+          });
+        }
+      }
+    },
+    {
+      key: "_getViewInfo",
+      value: function _getViewInfo() {
+        let _componentDOMRef;
+        let viewConfig;
+        let viewName;
+        let viewTag;
+        const self = this;
+        if (undefined !== this._viewInfo) {
+          return self._viewInfo;
+        } else {
+          let shadowNodeWrapperFromRef;
+          const tmp8 = closure_1_16;
+          if (tmp8) {
+            ({ _componentRef: viewTag, _componentDOMRef } = self);
+            shadowNodeWrapperFromRef = null;
+            viewConfig = null;
+            viewName = null;
+          } else {
+            const obj = name(closure_2[23]);
+            const findHostInstanceResult = obj.findHostInstance(self);
+            if (findHostInstanceResult) {
+              const tmpResult = name(closure_2[25]);
+              const viewInfo = tmpResult.getViewInfo(findHostInstanceResult);
+              ({ viewTag, viewName, viewConfig } = viewInfo);
+              shadowNodeWrapperFromRef = null;
+              const tmpResult3 = name(closure_2[9]);
+              if (tmpResult3.isFabric()) {
+                const tmpResult4 = name(closure_2[26]);
+                shadowNodeWrapperFromRef = tmpResult4.getShadowNodeWrapperFromRef(self, findHostInstanceResult);
+              }
+              _componentDOMRef = null;
+            } else {
+              const self2 = this;
+              const self3 = this;
+              const reanimatedError = new tmp(tmp2[24]).ReanimatedError("Cannot find host instance for this component. Maybe it renders nothing?");
+              throw reanimatedError;
+            }
+          }
+          const obj2 = { viewTag, viewName, shadowNodeWrapper: shadowNodeWrapperFromRef, viewConfig };
+          self._viewInfo = obj2;
+          if (_componentDOMRef) {
+            self._viewInfo.DOMElement = _componentDOMRef;
+          }
+          return self._viewInfo;
+        }
+      }
+    },
+    {
+      key: "_attachAnimatedStyles",
+      value: function _attachAnimatedStyles() {
+        let _styles;
+        let isStyleAttached;
+        let items;
+        function onlyAnimatedStyles(arr) {
+          return arr.filter((viewDescriptors) => {
+            viewDescriptors = undefined;
+            if (viewDescriptors != null) {
+              viewDescriptors = viewDescriptors.viewDescriptors;
+            }
+            return viewDescriptors;
+          });
+        }
+        const self = this;
+        if (this.props.style) {
+          let tmp = isStyleAttached;
+          let tmp2 = _styles;
+          let obj = isStyleAttached(_styles[27]);
+          items = onlyAnimatedStyles(obj.flattenArray(self.props.style));
+        } else {
+          items = [];
+        }
+        const animatedProps = self.props.animatedProps;
+        _styles = self._styles;
+        self._styles = items;
+        const _animatedProps = self._animatedProps;
+        self._animatedProps = animatedProps;
+        const _getViewInfoResult = self._getViewInfo();
+        const viewTag = _getViewInfoResult.viewTag;
+        const viewName = _getViewInfoResult.viewName;
+        const shadowNodeWrapper = _getViewInfoResult.shadowNodeWrapper;
+        const viewConfig = _getViewInfoResult.viewConfig;
+        const animatedProps2 = self.props.animatedProps;
+        let viewDescriptors1;
+        if (animatedProps2 != null) {
+          viewDescriptors1 = animatedProps2.viewDescriptors;
+        }
+        if (!viewDescriptors1) {
+          viewDescriptors1 = items.length;
+        }
+        if (viewDescriptors1) {
+          viewDescriptors1 = viewConfig;
+        }
+        if (viewDescriptors1) {
+          let obj2 = isStyleAttached(_styles[28]);
+          obj2.adaptViewConfig(viewConfig);
+        }
+        isStyleAttached = function isStyleAttached(_styles) {
+
         };
-        tmp7.onStart = (reduceMotion, current, arg2, current2) => {
-          if (undefined === reduceMotion.reduceMotion) {
-            if (typeof arrayOnFrame === "function") {
-              reduceMotion.reduceMotion = transformationMatrixOnFrame.value;
+        set = new Set(items);
+        const tmp8 = null != _styles && items.length === _styles.length && items.every((viewDescriptors, index) => {
+          let hasItem = viewDescriptors === _styles[index];
+          if (hasItem) {
+            if (typeof isStyleAttached === "function") {
+              viewDescriptors = viewDescriptors.viewDescriptors;
+              hasItem = viewDescriptors.has(viewTag);
             } else {
               throw new TypeError("Trying to call a non-function");
             }
           }
-          if (reduceMotion.reduceMotion) {
-            if (undefined !== reduceMotion.toValue) {
-              reduceMotion.current = reduceMotion.toValue;
-            } else {
-              toValue(reduceMotion, current, arg2, current2);
-            }
-            reduceMotion.startTime = 0;
-            reduceMotion.onFrame = () => true;
-          } else {
-            if (obj.isColor(current)) {
-              closure_129_0 = reduceMotion;
-              closure_129_1 = arg2;
-              closure_129_2 = current2;
-              const items = [];
-              closure_129_6 = items;
-              if (tmp3Result.isColor(current)) {
-                const tmp3Result13 = tmp3(1681);
-                closure_129_4 = tmp3Result13.toLinearSpace(tmp3(1681).convertToRGBA(reduceMotion.current));
-                const tmp3Result14 = tmp3(1681);
-                const tmp3Result15 = tmp3(1681);
-                closure_129_3 = tmp3Result15.toLinearSpace(tmp3(1681).convertToRGBA(current));
-                if (reduceMotion.toValue) {
-                  const tmp3Result17 = tmp3(1681);
-                  closure_129_5 = tmp3Result17.toLinearSpace(tmp3(1681).convertToRGBA(reduceMotion.toValue));
-                  const tmp3Result18 = tmp3(1681);
-                }
-                const tmp3Result16 = tmp3(1681);
-              }
-              const item = closure_4.forEach((item, index) => {
-                toValue[item] = Object.assign({}, dependencyMap);
-                toValue[item].current = closure_1_4[index];
-                let tmp2;
-                if (colorOnFrame) {
-                  tmp2 = colorOnFrame[index];
-                }
-                toValue[item].toValue = tmp2;
-                let tmp4;
-                if (dependencyMap) {
-                  tmp4 = dependencyMap[item];
-                }
-                toValue[item].onStart(toValue[item], prefNumberSuffOnFrame[index], closure_1, tmp4);
-                transformationMatrixOnFrame.push(toValue[item].current);
-              });
-              reduceMotion.unroundedCurrent = items;
-              tmp3Result = tmp3(1681);
-              tmp3(1681).clampRGBA(items);
-              const tmp3Result19 = tmp3(1681);
-              const tmp3Result20 = tmp3(1681);
-              reduceMotion.current = tmp3Result20.rgbaArrayToRGBAColor(tmp3(1681).toGammaSpace(items));
-              reduceMotion.onFrame = colorOnFrame;
-              const tmp3Result21 = tmp3(1681);
-            } else {
-              if (tmp3Result22.isAffineMatrixFlat(current)) {
-                reduceMotion.startMatrices = tmp3(1680).decomposeMatrixIntoMatricesAndAngles(current);
-                const tmp3Result23 = tmp3(1680);
-                reduceMotion.stopMatrices = tmp3(1680).decomposeMatrixIntoMatricesAndAngles(reduceMotion.toValue);
-                const _Object = Object;
-                reduceMotion[0] = Object.assign({}, dependencyMap);
-                reduceMotion[0].current = 0;
-                reduceMotion[0].toValue = 100;
-                const first = reduceMotion[0];
-                const first1 = reduceMotion[0];
-                let first2;
-                if (current2) {
-                  first2 = current2[0];
-                }
-                first.onStart(first1, 0, arg2, first2);
-                reduceMotion.current = current;
-                reduceMotion.onFrame = transformationMatrixOnFrame;
-                const tmp3Result24 = tmp3(1680);
-              } else {
-                prefix = globalThis;
-                const _Array = Array;
-                if (Array.isArray(current)) {
-                  toValue = reduceMotion;
-                  closure_1 = arg2;
-                  dependencyMap = current2;
-                  const item1 = current.forEach((current, index) => {
-                    toValue[index] = Object.assign({}, dependencyMap);
-                    toValue[index].current = current;
-                    toValue[index].toValue = toValue.toValue[index];
-                    let tmp2;
-                    if (dependencyMap) {
-                      tmp2 = dependencyMap[index];
-                    }
-                    toValue[index].onStart(toValue[index], current, closure_1, tmp2);
-                  });
-                  const items1 = [];
-                  HermesBuiltin.arraySpread(current, 0);
-                  reduceMotion.current = items1;
-                  reduceMotion.onFrame = arrayOnFrame;
-                } else if (typeof current === "string") {
-                  if (typeof colorOnFrame === "function") {
-                    if (typeof current === "string") {
-                      const match = current.match(/([A-Za-z]*)(-?\d*\.?\d*)([eE][-+]?[0-9]+)?([A-Za-z%]*)/);
-                      if (match) {
-                        let str2 = match[3];
-                        if (str2 == null) {
-                          str2 = "";
-                        }
-                        const obj2 = { prefix: match[1], suffix: match[4], strippedValue: null };
-                        const _parseFloat = parseFloat;
-                        obj2.strippedValue = parseFloat(match[2] + str2);
-                        let obj3 = obj2;
-                      } else {
-                        const reanimatedError = new tmp3(1649).ReanimatedError("Couldn't parse animation value.");
-                        throw reanimatedError;
-                      }
-                    } else {
-                      obj3 = { strippedValue: current };
-                    }
-                    ({ strippedValue, prefix: reduceMotion.__prefix, suffix: reduceMotion.__suffix } = obj3);
-                    reduceMotion.strippedCurrent = strippedValue;
-                    if (typeof tmp21 === "function") {
-                      if (typeof str3 === "string") {
-                        const match1 = str3.match(/([A-Za-z]*)(-?\d*\.?\d*)([eE][-+]?[0-9]+)?([A-Za-z%]*)/);
-                        if (match1) {
-                          let str5 = match1[3];
-                          if (str5 == null) {
-                            str5 = "";
-                          }
-                          const obj4 = { prefix: match1[1], suffix: match1[4], strippedValue: null };
-                          const _parseFloat2 = parseFloat;
-                          obj4.strippedValue = parseFloat(match1[2] + str5);
-                          let obj5 = obj4;
-                        } else {
-                          const reanimatedError1 = new tmp3(1649).ReanimatedError("Couldn't parse animation value.");
-                          throw reanimatedError1;
-                        }
-                      } else {
-                        obj5 = { strippedValue: str3 };
-                      }
-                      reduceMotion.current = strippedValue;
-                      reduceMotion.startValue = strippedValue;
-                      reduceMotion.toValue = obj5.strippedValue;
-                      if (current2) {
-                        if (current2 !== reduceMotion) {
-                          if (typeof tmp21 === "function") {
-                            if (typeof str7 === "string") {
-                              const match2 = str7.match(/([A-Za-z]*)(-?\d*\.?\d*)([eE][-+]?[0-9]+)?([A-Za-z%]*)/);
-                              if (match2) {
-                                let str8 = match2[3];
-                                if (str8 == null) {
-                                  str8 = "";
-                                }
-                                const obj6 = { prefix: match2[1], suffix: match2[4], strippedValue: prefix.parseFloat(match2[2] + str8) };
-                                let obj7 = obj6;
-                              } else {
-                                const reanimatedError2 = new tmp3(1649).ReanimatedError("Couldn't parse animation value.");
-                                throw reanimatedError2;
-                              }
-                            } else {
-                              obj7 = { strippedValue: str7 };
-                            }
-                            ({ prefix, strippedValue: current2.current } = obj7);
-                            current2.__prefix = prefix;
-                            current2.__suffix = obj7.suffix;
-                          } else {
-                            throw new TypeError("Trying to call a non-function");
-                          }
-                        }
-                      }
-                      toValue(reduceMotion, strippedValue, arg2, current2);
-                      let str9 = reduceMotion.__prefix;
-                      if (str9 == null) {
-                        str9 = "";
-                      }
-                      let str10 = reduceMotion.__suffix;
-                      const sum = str9 + reduceMotion.current;
-                      if (str10 == null) {
-                        str10 = "";
-                      }
-                      reduceMotion.current = sum + str10;
-                      let tmp48 = current2;
-                      if (current2) {
-                        tmp48 = current2 !== reduceMotion;
-                      }
-                      if (tmp48) {
-                        let str11 = current2.__prefix;
-                        if (str11 == null) {
-                          str11 = "";
-                        }
-                        let str12 = current2.__suffix;
-                        const sum1 = str11 + current2.current;
-                        if (str12 == null) {
-                          str12 = "";
-                        }
-                        current2.current = sum1 + str12;
-                      }
-                      reduceMotion.onFrame = prefNumberSuffOnFrame;
-                    } else {
-                      throw new TypeError("Trying to call a non-function");
-                    }
+          return hasItem;
+        });
+        const animatedProps3 = self.props.animatedProps;
+        let viewDescriptors4;
+        if (animatedProps3 != null) {
+          viewDescriptors4 = animatedProps3.viewDescriptors;
+        }
+        let tmp10 = !viewDescriptors4;
+        if (viewDescriptors4) {
+          let hasItem = _animatedProps === self.props.animatedProps;
+          if (hasItem) {
+            let viewDescriptors = self.props.animatedProps.viewDescriptors;
+            hasItem = viewDescriptors.has(viewTag);
+          }
+          tmp10 = hasItem;
+        }
+        if (!tmp8) {
+          if (_styles) {
+            function _loop(iter) {
+              let closure_0 = iter;
+              if (!items.some((viewDescriptors) => {
+                let tmp = viewDescriptors !== iter;
+                if (!tmp) {
+                  if (typeof isStyleAttached === "function") {
+                    viewDescriptors = viewDescriptors.viewDescriptors;
+                    tmp = !viewDescriptors.has(viewTag);
                   } else {
                     throw new TypeError("Trying to call a non-function");
                   }
-                } else {
-                  if (typeof current === "object") {
-                    if (null !== current) {
-                      for (const key10034 in arg1) {
-                        let _Object2 = Object;
-                        arg0[key10034] = Object.assign({}, dependencyMap);
-                        arg0[key10034].onStart = arg0.onStart;
-                        arg0[key10034].current = arg1[key10034];
-                        arg0[key10034].toValue = arg0.toValue[key10034];
-                        let obj22 = arg0[key10034];
-                        let tmp79 = arg0[key10034];
-                        let tmp80 = arg1[key10034];
-                        let tmp13;
-                        if (arg3) {
-                          tmp13 = arg3[key10034];
-                        }
-                        let onStartResult1 = obj22.onStart(tmp79, tmp80, arg2, tmp13);
-                        continue;
-                      }
-                      reduceMotion.current = current;
-                      reduceMotion.onFrame = objectOnFrame;
-                    }
+                }
+                return !tmp;
+              })) {
+                let viewDescriptors = iter.viewDescriptors;
+                let tmp = viewTag;
+                viewDescriptors.remove(viewTag);
+              }
+            }
+            const iter = _styles[Symbol.iterator]();
+            while (iter !== undefined) {
+              let _loopResult = _loop(iter.next());
+              continue;
+            }
+          }
+          const tmp16 = animatedProps && closure_14;
+          if (tmp16) {
+            const jestAnimatedProps = self.jestAnimatedProps;
+            const obj3 = {};
+            let merged = Object.assign(self.jestAnimatedProps.value);
+            let value;
+            if (animatedProps != null) {
+              if (animatedProps.initial != null) {
+                value = iter2.value;
+              }
+            }
+            let merged1 = Object.assign(value);
+            jestAnimatedProps.value = obj3;
+            let jestAnimatedValues;
+            if (animatedProps != null) {
+              jestAnimatedValues = animatedProps.jestAnimatedValues;
+            }
+            if (jestAnimatedValues) {
+              animatedProps.jestAnimatedValues.current = self.jestAnimatedProps;
+            }
+          }
+          if (!tmp8) {
+            const item = set.forEach((viewDescriptors) => {
+              viewDescriptors = viewDescriptors.viewDescriptors;
+              const obj = { tag: viewTag, name: viewName, shadowNodeWrapper };
+              viewDescriptors.add(obj, viewDescriptors.styleUpdaterContainer);
+              const tmp2 = closure_2_14;
+              if (tmp2) {
+                const jestAnimatedStyle = self.jestAnimatedStyle;
+                const obj2 = {};
+                const merged = Object.assign(self.jestAnimatedStyle.value);
+                const merged1 = Object.assign(viewDescriptors.initial.value);
+                jestAnimatedStyle.value = obj2;
+                viewDescriptors.jestAnimatedValues.current = self.jestAnimatedStyle;
+              }
+            });
+          }
+          const tmp26 = _animatedProps && _animatedProps !== self.props.animatedProps;
+          if (tmp26) {
+            const viewDescriptors2 = _animatedProps.viewDescriptors;
+            viewDescriptors2.remove(viewTag);
+          }
+          let tmp28 = !tmp10;
+          if (tmp28) {
+            const animatedProps4 = self.props.animatedProps;
+            let viewDescriptors5;
+            if (animatedProps4 != null) {
+              viewDescriptors5 = animatedProps4.viewDescriptors;
+            }
+            tmp28 = viewDescriptors5;
+          }
+          if (tmp28) {
+            const viewDescriptors3 = self.props.animatedProps.viewDescriptors;
+            const obj4 = { tag: viewTag, name: viewName, shadowNodeWrapper };
+            viewDescriptors3.add(obj4, self.props.animatedProps.styleUpdaterContainer);
+          }
+        }
+      }
+    },
+    {
+      key: "componentDidUpdate",
+      value: function componentDidUpdate(layout, arg1, arg2) {
+        const self = this;
+        const result = this._configureLayoutAnimation(name(closure_2[17]).LayoutAnimationType.LAYOUT, this.props.layout, layout.layout);
+        const result1 = this._configureLayoutAnimation(name(closure_2[17]).LayoutAnimationType.EXITING, this.props.exiting, layout.exiting);
+        const tmp5 = undefined === this.props.sharedTransitionTag && undefined === layout.sharedTransitionTag;
+        if (!tmp5) {
+          const result2 = self._configureSharedTransition();
+        }
+        const _NativeEventsManager = self._NativeEventsManager;
+        if (_NativeEventsManager != null) {
+          _NativeEventsManager.updateEvents(layout);
+        }
+        const result3 = self._attachAnimatedStyles();
+        const _InlinePropManager = self._InlinePropManager;
+        _InlinePropManager.attachInlineProps(self, self._getViewInfo());
+        const _componentDOMRef = module_1646 && self.props.exiting && self._componentDOMRef;
+        if (_componentDOMRef) {
+          const tmpResult = name(closure_2[10]);
+          tmpResult.saveSnapshot(self._componentDOMRef);
+        }
+        if (module_1646) {
+          const tmp12 = arg2;
+          if (tmp12) {
+            if (self.props.layout) {
+              const tmpResult3 = name(closure_2[10]);
+              if (tmpResult3.getReducedMotionFromConfig(self.props.layout)) {
+                layout = self.props.layout;
+                const callbackV = layout.callbackV;
+                if (callbackV != null) {
+                  callbackV(true);
+                }
+              } else {
+                const tmpResult4 = name(closure_2[10]);
+                const result4 = tmpResult4.tryActivateLayoutTransition(self.props, self._componentDOMRef, arg2);
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      key: "_configureLayoutAnimation",
+      value: function _configureLayoutAnimation(EXITING, exiting, exiting2) {
+        const tmp = module_1646;
+        if (!tmp) {
+          if (exiting !== exiting2) {
+            const self = this;
+            const updateLayoutAnimations = _mod1757.updateLayoutAnimations;
+            _mod1757;
+            const obj = module_1646;
+            if (obj.isFabric()) {
+              let reanimatedID;
+              if (EXITING === LayoutAnimationType.LayoutAnimationType.ENTERING) {
+                reanimatedID = self.reanimatedID;
+              }
+              let maybeBuildResult = tmp4;
+              if (maybeBuildResult) {
+                const maybeBuild = maybeBuild2.maybeBuild;
+                let tmp11;
+                maybeBuild2;
+                if (EXITING !== LayoutAnimationType.LayoutAnimationType.LAYOUT) {
+                  const props = self.props;
+                  let style;
+                  if (props != null) {
+                    style = props.style;
                   }
-                  toValue(reduceMotion, current, arg2, current2);
+                  tmp11 = style;
+                }
+                maybeBuildResult = maybeBuild(tmp4, tmp11, AnimatedComponent.displayName);
+              }
+              const result = updateLayoutAnimations(reanimatedID, EXITING, maybeBuildResult);
+            }
+            reanimatedID = self.getComponentViewTag();
+          }
+        }
+      }
+    },
+    {
+      key: "_configureSharedTransition",
+      value: function _configureSharedTransition(flag) {
+        if (flag === undefined) {
+          flag = false;
+        }
+        const tmp = module_1646;
+        if (!tmp) {
+          const self = this;
+          const sharedTransitionTag = this.props.sharedTransitionTag;
+          if (sharedTransitionTag) {
+            let _sharedElementTransition2 = self.props.sharedTransitionStyle;
+            if (_sharedElementTransition2 == null) {
+              _sharedElementTransition2 = self._sharedElementTransition;
+            }
+            if (_sharedElementTransition2 == null) {
+              const self2 = this;
+              const self3 = this;
+              _sharedElementTransition2 = new name(closure_2[31]).SharedTransition();
+            }
+            _sharedElementTransition2.registerTransition(self.getComponentViewTag(), sharedTransitionTag, flag);
+            self._sharedElementTransition = _sharedElementTransition2;
+          } else {
+            const _sharedElementTransition = self._sharedElementTransition;
+            if (_sharedElementTransition != null) {
+              _sharedElementTransition.unregisterTransition(self.getComponentViewTag(), flag);
+            }
+            self._sharedElementTransition = null;
+          }
+        }
+      }
+    },
+    {
+      key: "_isReducedMotion",
+      value: function _isReducedMotion(getReduceMotion) {
+        const tmp = getReduceMotion;
+        if (tmp) {
+          if ("getReduceMotion" in getReduceMotion) {
+            let reduceMotionFromConfig;
+            if (typeof getReduceMotion.getReduceMotion === "function") {
+              const obj2 = name(closure_2[22]);
+              reduceMotionFromConfig = obj2.getReduceMotionFromConfig(getReduceMotion.getReduceMotion());
+            }
+            return reduceMotionFromConfig;
+          }
+        }
+        const obj = name(closure_2[22]);
+        reduceMotionFromConfig = obj.getReduceMotionFromConfig();
+      }
+    },
+    {
+      key: "getSnapshotBeforeUpdate",
+      value: function getSnapshotBeforeUpdate() {
+        let boundingClientRect = null;
+        if (module_1646) {
+          const self = this;
+          boundingClientRect = null;
+          if (this.props.layout) {
+            const _componentDOMRef = self._componentDOMRef;
+            let prop;
+            if (_componentDOMRef != null) {
+              prop = _componentDOMRef.getBoundingClientRect;
+            }
+            boundingClientRect = null;
+            if (prop) {
+              const _componentDOMRef2 = self._componentDOMRef;
+              boundingClientRect = _componentDOMRef2.getBoundingClientRect();
+            }
+          }
+        }
+        return boundingClientRect;
+      }
+    },
+    {
+      key: "render",
+      value: function render() {
+        let combined1;
+        let obj5;
+        const f84348 = (item) => !(item && "viewDescriptors" in item);
+        const f84349 = (viewDescriptors) => {
+          let tmp = viewDescriptors;
+          if (Array.isArray(viewDescriptors)) {
+            let tmp2 = viewDescriptors;
+            if (tmp2) {
+              let mapped;
+              const _Array = Array;
+              if (Array.isArray(viewDescriptors)) {
+                const found = viewDescriptors.filter(f84348);
+                mapped = found.map(f84349);
+              } else {
+                viewDescriptors = undefined;
+                if (viewDescriptors != null) {
+                  viewDescriptors = viewDescriptors.viewDescriptors;
+                }
+                mapped = viewDescriptors;
+                if (viewDescriptors) {
+                  mapped = {};
                 }
               }
-              tmp3Result22 = tmp3(1680);
+              tmp2 = mapped;
             }
-            return tmp11;
+            tmp = tmp2;
           }
+          return tmp;
         };
-        fn = tmp7;
+        const self = this;
+        const _PropsFilter = this._PropsFilter;
+        const result = _PropsFilter.filterNonAnimatedProps(this);
+        let tmp2 = closure_14;
+        if (tmp2) {
+          ({ jestAnimatedStyle: tmp.jestAnimatedStyle, jestAnimatedProps: tmp.jestAnimatedProps } = self);
+        }
+        let tmp3 = self._isFirstRender && module_1646 && result.entering;
+        if (tmp3) {
+          const obj = startWebLayoutAnimation;
+          tmp3 = !obj.getReducedMotionFromConfig(result.entering);
+        }
+        if (tmp3) {
+          let combined;
+          let _Array = Array;
+          const style = result.style;
+          if (Array.isArray(result.style)) {
+            const items = [{ visibility: "hidden" }];
+            combined = style.concat(items);
+          } else {
+            let obj2 = style;
+            if (style == null) {
+              obj2 = {};
+            }
+            combined = { visibility: "hidden" };
+            const merged = Object.assign(obj2);
+          }
+          result.style = combined;
+        }
+        const context = self.context;
+        let current;
+        if (context != null) {
+          current = context.current;
+        }
+        if (!current) {
+          const obj4 = module_1646;
+          if (obj4.isFabric()) {
+            const _HermesInternal = HermesInternal;
+            combined1 = "" + self.reanimatedID;
+          }
+        }
+        if (tmp2) {
+          let style2 = self.props.style;
+          if (style2) {
+            const style1 = self.props.style;
+            let tmp16 = style1;
+            if (tmp16) {
+              let mapped;
+              const _Array2 = Array;
+              if (Array.isArray(style1)) {
+                let found = style1.filter(f84348);
+                mapped = found.map(f84349);
+              } else {
+                let viewDescriptors;
+                if (style1 != null) {
+                  viewDescriptors = style1.viewDescriptors;
+                }
+                mapped = style1;
+                if (viewDescriptors) {
+                  mapped = {};
+                }
+              }
+              tmp16 = mapped;
+            }
+            style2 = tmp16;
+          }
+          const obj3 = { jestInlineStyle: style2, jestAnimatedStyle: null, jestAnimatedProps: null };
+          ({ jestAnimatedStyle: obj7.jestAnimatedStyle, jestAnimatedProps: obj7.jestAnimatedProps } = self);
+          obj5 = obj3;
+        } else {
+          obj5 = {};
+        }
+        const obj6 = { collapsable: false };
+        const obj9 = module_1646;
+        if (obj9.isFabric()) {
+          const obj8 = {};
+          const merged1 = Object.assign(authStore.flatten(result.style));
+          const merged2 = Object.assign(self.state.settledProps);
+          const merged3 = Object.assign(result);
+          const merged4 = Object.assign(obj5);
+          const merged5 = Object.assign(self.state.settledProps);
+          const merged6 = Object.assign(self.state.reanimatedProps);
+          const merged7 = Object.assign(obj6);
+          return <name nativeID={combined1} style={obj8} ref={self._setComponentRef} />;
+        } else {
+          const merged8 = Object.assign(result);
+          const merged9 = Object.assign(obj5);
+          const merged10 = Object.assign(self.state.reanimatedProps);
+          const merged11 = Object.assign(obj6);
+          return <name nativeID={combined1} ref={self._setComponentRef} />;
+        }
       }
-    } else {
-      throw new TypeError("Trying to call a non-function");
     }
-    tmp3 = decorateAnimation;
-  }
-}
-defineAnimation.__closure = { IN_STYLE_UPDATER: React2, decorateAnimation, SHOULD_BE_USE_WEB: module_1641 };
-defineAnimation.__workletHash = 8998026617746;
-defineAnimation.__initData = { code: "function defineAnimation_Pnpm_utilTs9(starting,factory){const{IN_STYLE_UPDATER,decorateAnimation,SHOULD_BE_USE_WEB}=this.__closure;if(IN_STYLE_UPDATER){return starting;}const create=function(){'worklet';const animation=factory();decorateAnimation(animation);return animation;};if(_WORKLET||SHOULD_BE_USE_WEB){return create();}create.__isAnimationDefinition=true;return create;}" };
-const __initData2 = { code: "function pnpm_utilTs12(){const{sharedValue}=this.__closure;sharedValue.value=sharedValue.value;}" };
-let cancelAnimationWeb = function cancelAnimationNative(value) {
-  if (globalThis._WORKLET) {
-    value.value = value.value;
-  } else {
-    const fn = function n() {
-      value.value = value.value;
-    };
-    const obj2 = { sharedValue: value };
-    fn.__closure = obj2;
-    fn.__workletHash = 14261344384038;
-    fn.__initData = __initData2;
-    runWorkletOnJS.runOnUI(fn)();
-  }
+  ];
+  let tmp10 = _createClass(AnimatedComponent, items);
+  dependencyMap = tmp10;
+  let tmp11 = _require;
+  let tmp12 = dependencyMap;
+  tmp10.contextType = require("module_1781").SkipEnteringContext;
+  const tmp13 = name.displayName || name.name || "Component";
+  tmp10.displayName = "AnimatedComponent(" + tmp13 + ")";
+  const tmp11Result = tmp11(1782);
+  const componentWithRefResult = tmp11Result.componentWithRef((arg0, forwardedRef) => {
+    const obj = {};
+    const merged = Object.assign(arg0);
+    let tmp4 = null;
+    const tmp = jsx;
+    const tmp2 = closure_2;
+    if (null !== forwardedRef) {
+      tmp4 = { forwardedRef };
+      const obj2 = { forwardedRef };
+    }
+    const merged1 = Object.assign(tmp4);
+    return tmp(tmp2, obj);
+  });
+  componentWithRefResult.displayName = name.displayName || name.name || "Component";
+  return componentWithRefResult;
 };
-let obj4 = { getReduceMotionFromConfig, recognizePrefixSuffix, isColor: _mod1681.isColor, toLinearSpace: _mod1681.toLinearSpace, convertToRGBA: _mod1681.convertToRGBA, clampRGBA: _mod1681.clampRGBA, rgbaArrayToRGBAColor: _mod1681.rgbaArrayToRGBAColor, toGammaSpace: _mod1681.toGammaSpace, decomposeMatrixIntoMatricesAndAngles: _mod1680.decomposeMatrixIntoMatricesAndAngles, applyProgressToMatrix, applyProgressToNumber, getRotationMatrix: _mod1680.getRotationMatrix, multiplyMatrices: _mod1680.multiplyMatrices, flatten: _mod1680.flatten, isAffineMatrixFlat: _mod1680.isAffineMatrixFlat };
-let obj5 = { IN_STYLE_UPDATER: React2, decorateAnimation, SHOULD_BE_USE_WEB: module_1641 };
-cancelAnimationWeb.__closure = { runOnUI: runWorkletOnJS.runOnUI };
-cancelAnimationWeb.__workletHash = 796831326214;
-cancelAnimationWeb.__initData = { code: "function cancelAnimationNative_Pnpm_utilTs11(sharedValue){const{runOnUI}=this.__closure;if(_WORKLET){sharedValue.value=sharedValue.value;}else{runOnUI(function(){'worklet';sharedValue.value=sharedValue.value;})();}}" };
-if (module_1641) {
-  cancelAnimationWeb = function cancelAnimationWeb(value) {
-    value.value = value.value;
-  };
-}
-
-export { isValidLayoutAnimationProp };
-export { assertEasingIsWorklet };
-export const initialUpdaterRun = function initialUpdaterRun(updater) {
-  c2 = false;
-  return updater();
-};
-export { recognizePrefixSuffix };
-export { getReduceMotionFromConfig };
-export { getReduceMotionForAnimation };
-export { defineAnimation };
-export const cancelAnimation = cancelAnimationWeb;

@@ -1,35 +1,64 @@
-// Module ID: 15694
-// Function ID: 15695
+// Module ID: 15757
+// Function ID: 15758
 // Name: SecureFramesPersistentCodesSetting
-// Dependencies: [9357, 7590, 504, 9359, 11215, 1115, 2]
+// Dependencies: [9365, 7634, 558, 576, 504, 9367, 11129, 1126, 2]
 
-// Module 15694 (SecureFramesPersistentCodesSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9359 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 9357 */;
+// Module 15757 (SecureFramesPersistentCodesSetting)
+import react from "react" /* 576 */;
+import intl2 from "intl" /* 1126 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9367 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 9365 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11215);
-const toggle = SettingBuilders.createToggle({
+let tmp;
+const get_initialized = tmp(504);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let persistentCodesEnabled;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SecureFramesPersistedStore];
+    const fn = function n() {
+      return persistentCodesEnabled.getPersistentCodesEnabled();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let persistentCodesEnabled;
+  const items = [SecureFramesPersistedStore];
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => persistentCodesEnabled.getPersistentCodesEnabled());
+});
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["opi/XK"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["opi/XK"]);
   },
   useDescription() {
-    const intl = util.intl;
-    return intl.string(util.t.opw5ls);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.opw5ls);
   },
-  parent: fn(7590).MobileUserSettings.DATA_AND_PRIVACY,
-  useValue: function useSecureFramesPersistentCodesValue() {
-    const items = [SecureFramesPersistedStore];
-    return initialize.useStateFromStores(items, () => persistentCodesEnabled.getPersistentCodesEnabled());
-  },
+  parent: MobileUserSettings.DATA_AND_PRIVACY,
+  useValue: tmp2,
   onValueChange: function handleSecureFramesPersistentCodesToggle(arg0) {
-    const result = SecureFramesActionCreatorsDefault.updatePersistentCodesEnabled(arg0);
+    const obj = SecureFramesActionCreatorsDefault;
+    const result = obj.updatePersistentCodesEnabled(arg0);
   }
-});
-const size = fn(2);
+};
+const toggle = SettingBuilders.createToggle(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/SecureFramesPersistentCodesSetting.tsx");
 
 export default toggle;

@@ -1,17 +1,20 @@
-// Module ID: 7757
-// Function ID: 7758
-// Name: SkemaUtils
+// Module ID: 7801
+// Function ID: 7802
+// Name: _slicedToArray
 // Dependencies: [32, 2]
 // Exports: getFirstSkemaError
 
-// Module 7757 (SkemaUtils)
-import _slicedToArray from "module_32" /* 32 */;
+// Module 7801 (_slicedToArray)
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import size from "module_2" /* 2 */;
 
 function getFirstSkemaFieldError(errors, arg1) {
+  let first;
+  let tmp9;
   if (null != errors[_errors]) {
     const _Array = Array;
-    if (Array.isArray(tmp)) {
-      return tmp[0];
+    if (Array.isArray(errors[_errors])) {
+      return errors[_errors][0];
     }
   }
   const entries = Object.entries(errors);
@@ -37,7 +40,6 @@ function getFirstSkemaFieldError(errors, arg1) {
   return null;
 }
 const _errors = "_errors";
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/interactions/SkemaUtils.tsx");
 
 export const getFirstSkemaError = function getFirstSkemaError(errors) {

@@ -1,13 +1,13 @@
-// Module ID: 1341
-// Function ID: 1342
-// Name: NativeMetaQuestModule
+// Module ID: 1352
+// Function ID: 1353
+// Name: react-native
 // Dependencies: [17, 2]
 
-// Module 1341 (NativeMetaQuestModule)
-import _mod17 from "module_17" /* 17 */;
+// Module 1352 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const TurboModuleRegistry = _mod17.TurboModuleRegistry;
+const TurboModuleRegistry = react_native.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeMetaQuestModule");
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeMetaQuestModule.tsx");
 

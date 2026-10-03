@@ -1,75 +1,86 @@
-// Module ID: 17395
-// Function ID: 17396
+// Module ID: 17485
+// Function ID: 17486
 // Name: HolidayEventsManager
-// Dependencies: [1235, 9553, 9554, 6725, 17396, 17400, 17401, 17402, 9555, 2]
+// Dependencies: [1246, 9563, 9564, 6613, 17486, 17490, 17491, 17492, 9565, 2]
 
-// Module 17395 (HolidayEventsManager)
-import getSoundsForPackDefault from "getSoundsForPack" /* 9555 */;
-import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 17396 */;
-import HolidayEventsUtilsDefault from "HolidayEventsUtils" /* 17400 */;
-import SoundpackActions from "SoundpackActions" /* 17401 */;
-import setIncomingRingtone from "setIncomingRingtone" /* 17402 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
-import SoundpackStore from "SoundpackStore" /* 9553 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
+// Module 17485 (HolidayEventsManager)
+import Constants from "Constants" /* 9564 */;
+import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 17486 */;
+import HolidayEventsUtilsDefault from "HolidayEventsUtils" /* 17490 */;
+import SoundpackActions from "SoundpackActions" /* 17491 */;
+import react_native from "react-native" /* 17492 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
+import SoundpackStore from "SoundpackStore" /* 9563 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Soundpacks = fn(9554).Soundpacks;
-class HolidayEventsManager extends tmp2 {
+let map;
+
+let tmp;
+const getSoundsForPackDefault = tmp(9565);
+const Soundpacks = Constants.Soundpacks;
+class HolidayEventsManager extends AutomaticLifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    closure_0 = applyArgumentsResult;
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    require = applyArgumentsResult;
     map = new Map();
-    applyArgumentsResult.stores = map.set(closure_3, () => applyArgumentsResult.handleExperimentUpdated());
+    applyArgumentsResult.stores = map.set(ApexExperimentStore, () => require.handleExperimentUpdated());
     applyArgumentsResult.actions = { NOTIFICATIONS_SET_DISABLED_SOUNDS: applyArgumentsResult.updateRingtone };
     applyArgumentsResult.handleExperimentUpdated = function handleExperimentUpdated() {
-      if (!HolidayEventsConfigDefault.isDesktopOnly) {
-        applyArgumentsResult.updateSoundpack();
-        applyArgumentsResult.updateRingtone();
+      const tmp = !HolidayEventsConfigDefault.isDesktopOnly;
+      if (tmp) {
+        require.updateSoundpack();
+        require.updateRingtone();
       }
     };
     return applyArgumentsResult;
   }
+  updateSoundpack() {
+    let name;
+    const soundpack = SoundpackStore.getSoundpack();
+    const lastSoundpackExperimentId = SoundpackStore.getLastSoundpackExperimentId();
+    const experiment = HolidayEventsConfigDefault.experiment;
+    if (experiment != null) {
+      name = experiment.definition.name;
+    }
+    const tmp3Result = HolidayEventsUtilsDefault;
+    let isEligibleResult = tmp3Result.isEligible();
+    if (isEligibleResult) {
+      if (isEligibleResult) {
+        isEligibleResult = null != tmp3(17486).soundpack;
+      }
+      if (isEligibleResult) {
+        isEligibleResult = name !== lastSoundpackExperimentId;
+      }
+      if (isEligibleResult) {
+        isEligibleResult = soundpack !== tmp3(17486).soundpack;
+      }
+      if (isEligibleResult) {
+        const obj3 = SoundpackActions;
+        obj3.setSoundpack(HolidayEventsConfigDefault.soundpack, name);
+      }
+    } else {
+      const obj2 = SoundpackActions;
+      obj2.setSoundpack(Soundpacks.CLASSIC, null);
+    }
+  }
+  updateRingtone() {
+    const obj = HolidayEventsUtilsDefault;
+    if (obj.isEligible()) {
+      const tmpResult = getSoundsForPackDefault;
+      const tmpResultResult = tmpResult(SoundpackStore.getSoundpack());
+      if (null != tmpResultResult.call_ringing) {
+        const obj3 = react_native;
+        obj3.setIncomingRingtone("call_ringing", `${tmp7.call_ringing}.mp3`);
+      }
+    } else {
+      const obj2 = react_native;
+      obj2.setIncomingRingtone("call_ringing", "call_ringing.mp3");
+    }
+  }
 }
 const prototype = HolidayEventsManager.prototype;
-prototype["updateSoundpack"] = function updateSoundpack() {
-  const soundpack = SoundpackStore.getSoundpack();
-  const lastSoundpackExperimentId = SoundpackStore.getLastSoundpackExperimentId();
-  const experiment = HolidayEventsConfigDefault.experiment;
-  if (experiment != null) {
-    const name = experiment.definition.name;
-  }
-  let isEligibleResult = HolidayEventsUtilsDefault.isEligible();
-  if (isEligibleResult) {
-    if (isEligibleResult) {
-      isEligibleResult = null != tmp3(17396).soundpack;
-    }
-    if (isEligibleResult) {
-      isEligibleResult = name !== lastSoundpackExperimentId;
-    }
-    if (isEligibleResult) {
-      isEligibleResult = soundpack !== tmp3(17396).soundpack;
-    }
-    if (isEligibleResult) {
-      SoundpackActions.setSoundpack(tmp3(17396).soundpack, name);
-    }
-  } else {
-    SoundpackActions.setSoundpack(Soundpacks.CLASSIC, null);
-  }
-};
-prototype["updateRingtone"] = function updateRingtone() {
-  if (obj.isEligible()) {
-    const tmpResult = getSoundsForPackDefault;
-    if (null != tmpResultResult.call_ringing) {
-      setIncomingRingtone.setIncomingRingtone("call_ringing", `${tmp7.call_ringing}.mp3`);
-    }
-    tmpResultResult = getSoundsForPackDefault(SoundpackStore.getSoundpack());
-  } else {
-    setIncomingRingtone.setIncomingRingtone("call_ringing", "call_ringing.mp3");
-  }
-};
 const holidayEventsManager = new HolidayEventsManager();
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/holidays/HolidayEventsManager.tsx");
 
 export default holidayEventsManager;

@@ -1,19 +1,22 @@
-// Module ID: 16562
-// Function ID: 16563
+// Module ID: 16640
+// Function ID: 16641
 // Name: intl/migration
-// Dependencies: [1115, 1154, 2]
+// Dependencies: [1126, 1165, 2]
 // Exports: improperGetEnglishIntlMessageText
 
-// Module 16562 (intl/migration)
-import util from "util" /* 1115 */;
-import _mod1154 from "module_1154" /* 1154 */;
+// Module 16640 (intl/migration)
+import intl from "intl" /* 1126 */;
+import _mod1165 from "module_1165" /* 1165 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("intl/migration.tsx");
 
 export const improperGetEnglishIntlMessageText = function newGetEnglishMessageText(code) {
-  ({ intl, t } = util);
-  const obj = _mod1154;
+  let intl;
+  let t;
+  ({ intl, t } = intl);
+  intl;
+  const obj = _mod1165;
   intl.currentLocale = intl.currentLocale;
   return intl.string(t[obj.runtimeHashMessageKey(obj, code)]);
 };

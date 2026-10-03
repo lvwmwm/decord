@@ -1,24 +1,42 @@
-// Module ID: 6899
-// Function ID: 6900
+// Module ID: 6797
+// Function ID: 6798
 // Name: SensitiveContentSelfHarmExperiment
-// Dependencies: [1435, 2]
-// Exports: isSensitiveContentSelfHarmEnabled, useIsSensitiveContentSelfHarmEnabled
+// Dependencies: [1440, 558, 576, 2]
+// Exports: isSensitiveContentSelfHarmEnabled
 
-// Module 6899 (SensitiveContentSelfHarmExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 6797 (SensitiveContentSelfHarmExperiment)
+import react from "react" /* 576 */;
+import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2025-09-sensitive-content-self-harm", kind: "user", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+let obj = { name: "2025-09-sensitive-content-self-harm", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  let tmp2;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] !== location) {
+    const obj2 = { location };
+    cResult[0] = location;
+    cResult[1] = obj2;
+    tmp2 = obj2;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return apexExperiment.useConfig(tmp2).enabled;
+}) : ((location) => {
+  const obj = { location };
+  return apexExperiment.useConfig(obj).enabled;
+});
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/SensitiveContentSelfHarmExperiment.tsx");
 
 export const SensitiveContentSelfHarmExperiment = apexExperiment;
-export const useIsSensitiveContentSelfHarmEnabled = function useIsSensitiveContentSelfHarmEnabled(location) {
-  return apexExperiment.useConfig({ location }).enabled;
-};
+export const useIsSensitiveContentSelfHarmEnabled = tmp3;
 export const isSensitiveContentSelfHarmEnabled = function isSensitiveContentSelfHarmEnabled(location) {
-  return apexExperiment.getConfig({ location }).enabled;
+  const obj = { location };
+  return apexExperiment.getConfig(obj).enabled;
 };

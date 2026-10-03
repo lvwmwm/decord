@@ -1,24 +1,31 @@
-// Module ID: 7655
-// Function ID: 7656
+// Module ID: 7699
+// Function ID: 7700
 // Name: StageSpeakerSystemMessage
-// Dependencies: [7575, 1115, 7577, 7579, 2]
+// Dependencies: [7619, 1126, 7621, 7623, 2]
 // Exports: createStageSpeakerSystemMessage
 
-// Module 7655 (StageSpeakerSystemMessage)
-import util from "util" /* 1115 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7575 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7577 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7579 */;
+// Module 7699 (StageSpeakerSystemMessage)
+import intl2 from "intl" /* 1126 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7619 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7621 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7623 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/StageSpeakerSystemMessage.tsx");
 
-export const createStageSpeakerSystemMessage = function createStageSpeakerSystemMessage(roleStyle) {
-  const message = roleStyle.message;
-  const messageAuthorWithProcessedColor = useAuthorWithProcessedColor.getMessageAuthorWithProcessedColor(message);
-  const obj2 = { content: null };
-  const intl = util.intl;
-  obj2.content = intl.formatToParts(util.t.V4uCm4, { username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) });
-  const merged = Object.assign(createCommonMessageDefault(roleStyle));
+export const createStageSpeakerSystemMessage = function createStageSpeakerSystemMessage(message) {
+  let V4uCm4;
+  let formatToParts;
+  let obj3;
+  message = message.message;
+  const roleStyle = message.roleStyle;
+  const obj = useAuthorWithProcessedColor;
+  const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
+  const obj2 = { content: formatToParts(V4uCm4, obj3) };
+  const intl = intl2.intl;
+  formatToParts = intl.formatToParts;
+  obj3 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle }) };
+  V4uCm4 = intl2.t.V4uCm4;
+  const merged = Object.assign(createCommonMessageDefault(message));
   return obj2;
 };

@@ -1,21 +1,26 @@
-// Module ID: 17447
-// Function ID: 17448
+// Module ID: 17534
+// Function ID: 17535
 // Name: getStorefrontSkuFetchOptions
-// Dependencies: [6847, 1074, 1365, 2]
+// Dependencies: [6741, 1085, 1370, 2]
 // Exports: default
 
-// Module 17447 (getStorefrontSkuFetchOptions)
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
-import GenericIAPStore from "GenericIAPStore" /* 6847 */;
+// Module 17534 (getStorefrontSkuFetchOptions)
+import Constants from "Constants" /* 1085 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
+import GenericIAPStore from "GenericIAPStore" /* 6741 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const PaymentGateways = fn(1074).PaymentGateways;
-const size = fn(2);
+const PaymentGateways = Constants.PaymentGateways;
 const result = size.fileFinishedImporting("modules/slayer_storefront/getStorefrontSkuFetchOptions.native.tsx");
 
 export default function getStorefrontSkuFetchOptions() {
-  const obj = { withGoogleSkuIds: utils_PlatformUtils.isAndroid(), countryCode: null, paymentGateway: null };
+  let APPLE;
+  let obj2;
   let tmp3;
+  const obj = { withGoogleSkuIds: obj2.isAndroid(), countryCode: tmp3, paymentGateway: APPLE };
+  tmp3 = undefined;
+  obj2 = utils_PlatformUtils;
+  const obj3 = utils_PlatformUtils;
   if (obj3.isIOS()) {
     const storeFront = GenericIAPStore.getStoreFront();
     let country;
@@ -24,12 +29,10 @@ export default function getStorefrontSkuFetchOptions() {
     }
     tmp3 = country;
   }
-  obj.countryCode = tmp3;
-  obj3 = utils_PlatformUtils;
-  let APPLE;
+  APPLE = undefined;
+  const tmpResult = utils_PlatformUtils;
   if (tmpResult.isIOS()) {
     APPLE = PaymentGateways.APPLE;
   }
-  obj.paymentGateway = APPLE;
   return obj;
 };

@@ -1,21 +1,21 @@
-// Module ID: 6645
-// Function ID: 6646
+// Module ID: 6534
+// Function ID: 6535
 // Name: RunAfterInteractionsUtils
-// Dependencies: [17, 2039, 2]
+// Dependencies: [17, 2046, 2]
 // Exports: runAfterInteractions
 
-// Module 6645 (RunAfterInteractionsUtils)
-import _mod17 from "module_17" /* 17 */;
-import Timers from "Timers" /* 2039 */;
+// Module 6534 (RunAfterInteractionsUtils)
+import react_native from "react-native" /* 17 */;
+import Timers from "Timers" /* 2046 */;
 import size from "module_2" /* 2 */;
 
 function runAfterInteractions(arg0, MINUTE) {
-  closure_0 = arg0;
+  let closure_0 = arg0;
   let num = MINUTE;
   if (MINUTE === undefined) {
     num = 2000;
   }
-  closure_1 = InteractionManager.runAfterInteractions(() => {
+  let closure_1 = InteractionManager.runAfterInteractions(() => {
     delayedCall.cancel();
     closure_0();
   });
@@ -31,7 +31,7 @@ function runAfterInteractions(arg0, MINUTE) {
     }
   };
 }
-const InteractionManager = _mod17.InteractionManager;
+const InteractionManager = react_native.InteractionManager;
 const result = size.fileFinishedImporting("utils/native/RunAfterInteractionsUtils.tsx");
 
 export default { runAfterInteractions };

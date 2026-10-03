@@ -1,17 +1,17 @@
-// Module ID: 12696
-// Function ID: 12697
+// Module ID: 12732
+// Function ID: 12733
 // Name: shouldShowVoiceChannelChangeConfirmation
-// Dependencies: [4862, 1184, 502, 2066, 4864, 2]
+// Dependencies: [4907, 1195, 502, 2074, 4909, 2]
 // Exports: shouldShowVoiceChannelChangeConfirmation
 
-// Module 12696 (shouldShowVoiceChannelChangeConfirmation)
-import GameConsoleStore from "GameConsoleStore" /* 4862 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
+// Module 12732 (shouldShowVoiceChannelChangeConfirmation)
+import GameConsoleStore from "GameConsoleStore" /* 4907 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import VoiceStateStore from "VoiceStateStore" /* 4864 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/channel/shouldShowVoiceChannelChangeConfirmation.tsx");
 
 export const shouldShowVoiceChannelChangeConfirmation = function shouldShowVoiceChannelChangeConfirmation(id) {
@@ -21,8 +21,8 @@ export const shouldShowVoiceChannelChangeConfirmation = function shouldShowVoice
     const remoteSessionId = GameConsoleStore.getRemoteSessionId();
     if (null != VoiceStateStore.getVoiceStateForSession(AuthenticationStore.getId(), remoteSessionId)) {
       return false;
-    } else if (obj.isCurrentClientInVoiceChannel()) {
-      if (obj.isInChannel(id.id)) {
+    } else if (VoiceStateStore.isCurrentClientInVoiceChannel()) {
+      if (VoiceStateStore.isInChannel(id.id)) {
         return false;
       } else {
         const guild = GuildStore.getGuild(id.getGuildId());
@@ -30,7 +30,8 @@ export const shouldShowVoiceChannelChangeConfirmation = function shouldShowVoice
         if (guild != null) {
           afkChannelId = guild.afkChannelId;
         }
-        return null == afkChannelId || !obj.isInChannel(guild.afkChannelId);
+        const tmp9 = null == afkChannelId || !VoiceStateStore.isInChannel(guild.afkChannelId);
+        return tmp9;
       }
     } else {
       return false;

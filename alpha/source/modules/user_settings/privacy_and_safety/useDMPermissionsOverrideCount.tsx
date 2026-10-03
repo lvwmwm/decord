@@ -1,26 +1,72 @@
-// Module ID: 15713
-// Function ID: 15714
+// Module ID: 15776
+// Function ID: 15777
 // Name: useDMPermissionsOverrideCount
-// Dependencies: [2066, 2021, 15714, 504, 2]
-// Exports: useDMPermissionsOverrideCount
+// Dependencies: [2074, 558, 576, 2028, 15777, 504, 2]
 
-// Module 15713 (useDMPermissionsOverrideCount)
-import GuildStore from "GuildStore" /* 2066 */;
+// Module 15776 (useDMPermissionsOverrideCount)
+import GuildStore from "GuildStore" /* 2074 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/useDMPermissionsOverrideCount.tsx");
+let guildIds, set;
 
-export const useDMPermissionsOverrideCount = function useDMPermissionsOverrideCount() {
-  const RestrictedGuildIds = setting(defaultGuildsRestricted[1]).RestrictedGuildIds;
-  setting = RestrictedGuildIds.useSetting();
-  defaultGuildsRestricted = setting(defaultGuildsRestricted[2]).useDefaultGuildsRestricted();
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let defaultGuildsRestricted;
+  let first;
+  let setting;
   const obj = setting(defaultGuildsRestricted[2]);
+  const cResult = obj.c(5);
+  const RestrictedGuildIds = setting(defaultGuildsRestricted[3]).RestrictedGuildIds;
+  const tmp = setting;
+  setting = RestrictedGuildIds.useSetting();
+  const obj2 = setting(defaultGuildsRestricted[4]);
+  const tmp2 = defaultGuildsRestricted;
+  defaultGuildsRestricted = obj2.useDefaultGuildsRestricted();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === defaultGuildsRestricted) {
+    let tmp8;
+    let tmp9;
+    if (cResult[2] === setting) {
+      tmp8 = cResult[3];
+      tmp9 = cResult[4];
+    }
+    const tmpResult = tmp(tmp2[5]);
+    return tmpResult.useStateFromStores(first, tmp8, tmp9);
+  }
+  const fn = function u() {
+    set = new Set(set);
+    guildIds = guildIds.getGuildIds();
+    return guildIds.filter((item) => set.has(item) !== defaultGuildsRestricted).length;
+  };
+  const items1 = [setting, defaultGuildsRestricted];
+  cResult[1] = defaultGuildsRestricted;
+  cResult[2] = setting;
+  cResult[3] = fn;
+  cResult[4] = items1;
+  tmp9 = items1;
+  tmp8 = fn;
+}) : (() => {
+  let defaultGuildsRestricted;
+  let setting;
+  const RestrictedGuildIds = setting(defaultGuildsRestricted[3]).RestrictedGuildIds;
+  setting = RestrictedGuildIds.useSetting();
+  const obj = setting(defaultGuildsRestricted[4]);
+  defaultGuildsRestricted = obj.useDefaultGuildsRestricted();
   const items = [GuildStore];
   const items1 = [setting, defaultGuildsRestricted];
-  return setting(defaultGuildsRestricted[3]).useStateFromStores(items, () => {
+  const obj2 = setting(defaultGuildsRestricted[5]);
+  return obj2.useStateFromStores(items, () => {
     set = new Set(set);
     guildIds = guildIds.getGuildIds();
     return guildIds.filter((item) => set.has(item) !== defaultGuildsRestricted).length;
   }, items1);
-};
+});
+const result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/useDMPermissionsOverrideCount.tsx");
+
+export const useDMPermissionsOverrideCount = tmp2;

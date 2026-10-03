@@ -1,16 +1,18 @@
-// Module ID: 14096
-// Function ID: 14097
+// Module ID: 14164
+// Function ID: 14165
 // Name: MemoryExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1440, 2]
 
-// Module 14096 (MemoryExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 14164 (MemoryExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2025-12-shadow-node-spike", kind: "user", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let enabled;
+
+let obj2;
+const obj = { name: "2025-12-shadow-node-spike", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
 const config = ApexExperiment.createApexExperiment(obj);
 const interval = setInterval(() => {
   let tmp = enabled;

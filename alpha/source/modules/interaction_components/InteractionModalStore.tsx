@@ -1,28 +1,31 @@
-// Module ID: 14093
-// Function ID: 14094
+// Module ID: 14160
+// Function ID: 14161
 // Name: InteractionModalStore
-// Dependencies: [1979, 38, 7756, 1091, 7064, 504, 573, 2]
+// Dependencies: [1985, 38, 7800, 1102, 6965, 504, 584, 2]
 
-// Module 14093 (InteractionModalStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7064 */;
-import InteractionActionCreators from "InteractionActionCreators" /* 7756 */;
+// Module 14160 (InteractionModalStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 6965 */;
+import InteractionActionCreators from "InteractionActionCreators" /* 7800 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let ERRORED, c3, c5, c6, c7;
+
 const InteractionModalState = { IN_FLIGHT: 0, [0]: "IN_FLIGHT", ERRORED: 1, [1]: "ERRORED", SUCCEEDED: 2, [2]: "SUCCEEDED" };
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class InteractionModalStore extends Store {
-}
-InteractionModalStore.prototype["getModalState"] = function getModalState(arg0) {
-  let tmp = null;
-  if (arg0 === c3) {
-    tmp = ERRORED;
+  getModalState(arg0) {
+    let tmp = null;
+    if (arg0 === c3) {
+      tmp = ERRORED;
+    }
+    return tmp;
   }
-  return tmp;
-};
+}
+const prototype = InteractionModalStore.prototype;
 InteractionModalStore.displayName = "InteractionModalStore";
-const interactionModalStore = new InteractionModalStore(DispatcherDefault, {
+const obj2 = {
   LOGOUT: function handleInit() {
     c3 = null;
     ERRORED = null;
@@ -33,7 +36,8 @@ const interactionModalStore = new InteractionModalStore(DispatcherDefault, {
   },
   INTERACTION_MODAL_CREATE: function handleInteractionModalCreate(nonce) {
     if (nonce.nonce === c7) {
-      MessageActionCreatorsDefault.deleteMessage(c6, c5, true);
+      const obj = MessageActionCreatorsDefault;
+      obj.deleteMessage(c6, c5, true);
       c5 = null;
       c6 = null;
       c7 = null;
@@ -42,7 +46,8 @@ const interactionModalStore = new InteractionModalStore(DispatcherDefault, {
   },
   INTERACTION_IFRAME_MODAL_CREATE: function handleInteractionIframeModalCreate(nonce) {
     if (nonce.nonce === c7) {
-      MessageActionCreatorsDefault.deleteMessage(c6, c5, true);
+      const obj = MessageActionCreatorsDefault;
+      obj.deleteMessage(c6, c5, true);
       c5 = null;
       c6 = null;
       c7 = null;
@@ -50,98 +55,74 @@ const interactionModalStore = new InteractionModalStore(DispatcherDefault, {
     return false;
   },
   INTERACTION_QUEUE: function handleInteractionQueue(nonce) {
+    let IN_FLIGHT;
+    let data;
+    let obj;
+    let preflight;
+    const f143358 = () => {
+      let tmp2 = nonce === closure_1_0;
+      const tmp = closure_1_0;
+      if (tmp2) {
+        tmp2 = IN_FLIGHT === constants.IN_FLIGHT;
+      }
+      if (tmp2) {
+        const obj = nonce(dependencyMap[2]);
+        obj.setFailed(tmp);
+      }
+    };
     nonce = nonce.nonce;
     ({ data, preflight } = nonce);
     let startTimeout;
     const interactionType = data.interactionType;
-    if (nonce(1979).InteractionTypes.APPLICATION_COMMAND === interactionType) {
-      const messageId = nonce.messageId;
+    let tmp2 = dependencyMap;
+    const messageId = nonce.messageId;
+    let tmp = nonce;
+    if (nonce(1985).InteractionTypes.APPLICATION_COMMAND === interactionType) {
       const channelId = data.channelId;
       return false;
-    } else if (tmp(1979).InteractionTypes.MODAL_SUBMIT === interactionType) {
+    } else if (tmp(1985).InteractionTypes.MODAL_SUBMIT === interactionType) {
       let tmp7 = null == nonce;
+      const tmp4 = startTimeout(38);
       if (!tmp7) {
         tmp7 = IN_FLIGHT === obj.ERRORED;
       }
       if (!tmp7) {
         tmp7 = IN_FLIGHT === obj.SUCCEEDED;
       }
-      startTimeout(38)(tmp7, "cannot submit multiple modals at once");
+      tmp4(tmp7, "cannot submit multiple modals at once");
       IN_FLIGHT = obj.IN_FLIGHT;
       startTimeout = function startTimeout(dependencyMap) {
 
       };
       if (null != preflight) {
         const _setTimeout2 = setTimeout;
-        let timerId = setTimeout(() => {
-          let tmp2 = nonce === closure_1_0;
-          if (tmp2) {
-            tmp2 = IN_FLIGHT === constants.IN_FLIGHT;
-          }
-          if (tmp2) {
-            nonce(dependencyMap[2]).setFailed(closure_1_0);
-            const obj = nonce(dependencyMap[2]);
-          }
-        }, 2 * tmp3(1091).Millis.MINUTE);
-        preflight.then(() => {
-          if (typeof startTimeout === "function") {
-            const _setTimeout = setTimeout;
-            const timerId = setTimeout(() => {
-              let tmp2 = nonce === closure_1_0;
-              if (tmp2) {
-                tmp2 = IN_FLIGHT === constants.IN_FLIGHT;
-              }
-              if (tmp2) {
-                nonce(dependencyMap[2]).setFailed(closure_1_0);
-                const obj = nonce(dependencyMap[2]);
-              }
-            }, tmp);
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        }).catch(() => InteractionActionCreators.setFailed(nonce));
+        let timerId = setTimeout(f143358, 2 * tmp3(1102).Millis.MINUTE);
         const nextPromise = preflight.then(() => {
+          let tmp;
           if (typeof startTimeout === "function") {
+            let tmp2 = globalThis;
             const _setTimeout = setTimeout;
-            const timerId = setTimeout(() => {
-              let tmp2 = nonce === closure_1_0;
-              if (tmp2) {
-                tmp2 = IN_FLIGHT === constants.IN_FLIGHT;
-              }
-              if (tmp2) {
-                nonce(dependencyMap[2]).setFailed(closure_1_0);
-                const obj = nonce(dependencyMap[2]);
-              }
-            }, tmp);
+            const timerId = setTimeout(f143358, tmp);
           } else {
             throw new TypeError("Trying to call a non-function");
           }
         });
+        nextPromise.catch(() => {
+          const obj = InteractionActionCreators;
+          return obj.setFailed(nonce);
+        });
       } else {
         let _setTimeout = setTimeout;
-        const timerId1 = setTimeout(() => {
-          let tmp2 = nonce === closure_1_0;
-          if (tmp2) {
-            tmp2 = IN_FLIGHT === constants.IN_FLIGHT;
-          }
-          if (tmp2) {
-            nonce(dependencyMap[2]).setFailed(closure_1_0);
-            const obj = nonce(dependencyMap[2]);
-          }
-        }, 10 * tmp3(1091).Millis.SECOND);
+        const timerId1 = setTimeout(f143358, 10 * tmp3(1102).Millis.SECOND);
       }
       return true;
     } else {
       return false;
     }
-    tmp = nonce;
   },
   INTERACTION_SUCCESS: function handleInteractionSuccess(nonce) {
     nonce = nonce.nonce;
-    let flag = null != nonce;
-    if (flag) {
-      flag = nonce === c3;
-    }
+    let flag = null != nonce && nonce === c3;
     if (flag) {
       ERRORED = obj.SUCCEEDED;
       flag = true;
@@ -150,18 +131,15 @@ const interactionModalStore = new InteractionModalStore(DispatcherDefault, {
   },
   INTERACTION_FAILURE: function handleInteractionFailure(nonce) {
     nonce = nonce.nonce;
-    let flag = null != nonce;
-    if (flag) {
-      flag = nonce === c3;
-    }
+    let flag = null != nonce && nonce === c3;
     if (flag) {
       ERRORED = obj.ERRORED;
       flag = true;
     }
     return flag;
   }
-});
-const size = fn(2);
+};
+const interactionModalStore = new InteractionModalStore(DispatcherDefault, obj2);
 const result = size.fileFinishedImporting("modules/interaction_components/InteractionModalStore.tsx");
 
 export default interactionModalStore;

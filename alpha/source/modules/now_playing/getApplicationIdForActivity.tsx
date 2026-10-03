@@ -1,17 +1,17 @@
-// Module ID: 13497
-// Function ID: 13498
+// Module ID: 13557
+// Function ID: 13558
 // Name: getApplicationIdForActivity
-// Dependencies: [13006, 13498, 13499, 2005, 10545, 7887, 12785, 2]
+// Dependencies: [13067, 13558, 13559, 2011, 10625, 7931, 12825, 2]
 // Exports: default
 
-// Module 13497 (getApplicationIdForActivity)
-import Constants from "Constants" /* 2005 */;
-import isStreamingDefault from "isStreaming" /* 7887 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10545 */;
-import isOnXboxDefault from "isOnXbox" /* 12785 */;
-import SpotifyApplicationRecord from "SpotifyApplicationRecord" /* 13006 */;
-import TwitchApplicationRecord from "TwitchApplicationRecord" /* 13498 */;
-import XboxApplicationRecord from "XboxApplicationRecord" /* 13499 */;
+// Module 13557 (getApplicationIdForActivity)
+import Constants from "Constants" /* 2011 */;
+import isStreamingDefault from "isStreaming" /* 7931 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10625 */;
+import isOnXboxDefault from "isOnXbox" /* 12825 */;
+import SpotifyApplicationRecord from "SpotifyApplicationRecord" /* 13067 */;
+import TwitchApplicationRecord from "TwitchApplicationRecord" /* 13558 */;
+import XboxApplicationRecord from "XboxApplicationRecord" /* 13559 */;
 import size from "module_2" /* 2 */;
 
 const SpotifyApplication = SpotifyApplicationRecord.SpotifyApplication;
@@ -21,10 +21,11 @@ let closure_5 = Constants.XBOX_ACTIVITY_APPLICATION_ID;
 const result = size.fileFinishedImporting("modules/now_playing/getApplicationIdForActivity.tsx");
 
 export default function getApplicationIdForActivity(party) {
+  let id;
   if (isListeningOnSpotifyDefault(party)) {
     if (null != party.party) {
       if (null != party.party.id) {
-        let id = SpotifyApplication.id;
+        id = SpotifyApplication.id;
       }
       return id;
     }

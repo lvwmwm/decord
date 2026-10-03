@@ -1,17 +1,17 @@
-// Module ID: 16358
-// Function ID: 16359
+// Module ID: 16439
+// Function ID: 16440
 // Name: getIconForChannel
-// Dependencies: [1074, 5592, 5599, 5595, 5578, 5586, 5585, 2]
+// Dependencies: [1085, 5878, 5885, 5881, 5864, 5872, 5871, 2]
 // Exports: getIconForChannel
 
-// Module 16358 (getIconForChannel)
-import Constants from "Constants" /* 1074 */;
-import TextIcon from "TextIcon" /* 5578 */;
-import ImageIcon from "ImageIcon" /* 5585 */;
-import ForumIcon from "ForumIcon" /* 5586 */;
-import AnnouncementsIcon from "AnnouncementsIcon" /* 5592 */;
-import StageIcon from "StageIcon" /* 5595 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 5599 */;
+// Module 16439 (getIconForChannel)
+import Constants from "Constants" /* 1085 */;
+import TextIcon from "TextIcon" /* 5864 */;
+import ImageIcon from "ImageIcon" /* 5871 */;
+import ForumIcon from "ForumIcon" /* 5872 */;
+import AnnouncementsIcon from "AnnouncementsIcon" /* 5878 */;
+import StageIcon from "StageIcon" /* 5881 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 5885 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;
@@ -21,15 +21,15 @@ export const getIconForChannel = function getIconForChannel(stateFromStores) {
   const type = stateFromStores.type;
   if (ChannelTypes.GUILD_ANNOUNCEMENT === type) {
     return AnnouncementsIcon.AnnouncementsIcon;
-  } else if (tmp.GUILD_VOICE === type) {
+  } else if (ChannelTypes.GUILD_VOICE === type) {
     return VoiceNormalIcon.VoiceNormalIcon;
-  } else if (tmp.GUILD_STAGE_VOICE === type) {
+  } else if (ChannelTypes.GUILD_STAGE_VOICE === type) {
     return StageIcon.StageIcon;
-  } else if (tmp.GUILD_TEXT === type) {
+  } else if (ChannelTypes.GUILD_TEXT === type) {
     return TextIcon.TextIcon;
-  } else if (tmp.GUILD_FORUM === type) {
+  } else if (ChannelTypes.GUILD_FORUM === type) {
     return ForumIcon.ForumIcon;
-  } else if (tmp.GUILD_MEDIA === type) {
+  } else if (ChannelTypes.GUILD_MEDIA === type) {
     return ImageIcon.ImageIcon;
   } else {
     return TextIcon.TextIcon;

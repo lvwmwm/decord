@@ -1,280 +1,1187 @@
-// Module ID: 13485
-// Function ID: 13486
+// Module ID: 13545
+// Function ID: 13546
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 2044, 1372, 13486, 1074, 21, 4845, 576, 4841, 4997, 1115, 504, 1370, 1177, 11516, 10566, 4801, 4796, 1241, 6804, 11125, 6185, 6103, 5465, 4809, 13487, 4858, 2]
-// Exports: default
+// Dependencies: [19, 17, 2051, 1377, 13546, 1085, 21, 4890, 587, 4886, 5042, 1126, 558, 576, 504, 1375, 1188, 11435, 10648, 4792, 4812, 1252, 4854, 13547, 4903, 6701, 9804, 6074, 5993, 5594, 2]
 
-// Module 13485 (BlockedUserInGdmActionSheet)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4858 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4997 */;
-import TableRow from "TableRow" /* 6103 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 13487 */;
-import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 13545 (BlockedUserInGdmActionSheet)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl7 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 4792 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4812 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4903 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
+import TableRow2 from "TableRow" /* 5993 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 13547 */;
+import react_mod from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import UserStore from "UserStore" /* 1377 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 13546 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let dependencyMap, userIds;
+
+let c9;
+let closure_12;
+let closure_4;
+let hasOwnProperty;
+let map1;
+let metroImportAll;
+let obj2;
+let obj3;
+let unpackModuleId;
 function getUserCalloutRowText(arg0) {
+  let calledOutUserIds;
+  let closure_2;
+  let formatResult;
+  let require;
+  let totalUsers;
+  let user;
   ({ calledOutUserIds, totalUsers, guildId: require, channelId: importDefault } = arg0);
   const items = [...calledOutUserIds];
   dependencyMap = items.map((item) => user.getUser(item));
   if (totalUsers >= 4) {
-    const intl4 = util.intl;
-    const obj2 = {
+    const intl4 = intl7.intl;
+    let obj2 = {
       usernameHook1() {
-          const obj = { variant: "text-md/semibold", children: NicknameUtilsDefault.getName(closure_1_0, closure_1_1, 19) };
-          return closure_2_11(Text_Text.Text, obj);
+          let obj2;
+          const first = closure_2[0];
+          const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, first) };
+          const Text = Text_Text.Text;
+          obj2 = NicknameUtilsDefault;
+          return unpackModuleId(Text, obj);
         },
       usernameHook2() {
-          const obj = { variant: "text-md/semibold", children: NicknameUtilsDefault.getName(closure_1_0, closure_1_1, 17) };
-          return closure_2_11(Text_Text.Text, obj);
+          let obj2;
+          let tmp;
+          const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, tmp) };
+          tmp = closure_2[1];
+          const Text = Text_Text.Text;
+          obj2 = NicknameUtilsDefault;
+          return unpackModuleId(Text, obj);
         },
       numberOfOtherUsers: totalUsers - calledOutUserIds.length
     };
-    let formatResult = intl4.format(util.t.qfo6KR, obj2);
+    formatResult = intl4.format(intl7.t.qfo6KR, obj2);
   } else if (3 === totalUsers) {
-    const intl3 = util.intl;
+    const intl3 = intl7.intl;
     const obj3 = {
       usernameHook1() {
-          const obj = { variant: "text-md/semibold", children: NicknameUtilsDefault.getName(closure_1_0, closure_1_1, 19) };
-          return closure_2_11(Text_Text.Text, obj);
+          let obj2;
+          const first = closure_2[0];
+          const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, first) };
+          const Text = Text_Text.Text;
+          obj2 = NicknameUtilsDefault;
+          return unpackModuleId(Text, obj);
         },
       usernameHook2() {
-          const obj = { variant: "text-md/semibold", children: NicknameUtilsDefault.getName(closure_1_0, closure_1_1, 17) };
-          return closure_2_11(Text_Text.Text, obj);
+          let obj2;
+          let tmp;
+          const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, tmp) };
+          tmp = closure_2[1];
+          const Text = Text_Text.Text;
+          obj2 = NicknameUtilsDefault;
+          return unpackModuleId(Text, obj);
         }
     };
-    formatResult = intl3.format(util.t["67ZE+9"], obj3);
+    formatResult = intl3.format(intl7.t["67ZE+9"], obj3);
   } else if (2 === totalUsers) {
-    const intl2 = util.intl;
+    const intl2 = intl7.intl;
     const obj4 = {
       usernameHook1() {
-          const obj = { variant: "text-md/semibold", children: NicknameUtilsDefault.getName(closure_1_0, closure_1_1, 19) };
-          return closure_2_11(Text_Text.Text, obj);
+          let obj2;
+          const first = closure_2[0];
+          const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, first) };
+          const Text = Text_Text.Text;
+          obj2 = NicknameUtilsDefault;
+          return unpackModuleId(Text, obj);
         },
       usernameHook2() {
-          const obj = { variant: "text-md/semibold", children: NicknameUtilsDefault.getName(closure_1_0, closure_1_1, 17) };
-          return closure_2_11(Text_Text.Text, obj);
+          let obj2;
+          let tmp;
+          const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, tmp) };
+          tmp = closure_2[1];
+          const Text = Text_Text.Text;
+          obj2 = NicknameUtilsDefault;
+          return unpackModuleId(Text, obj);
         }
     };
-    formatResult = intl2.format(util.t.veV4IN, obj4);
+    formatResult = intl2.format(intl7.t.veV4IN, obj4);
   } else {
-    const intl = util.intl;
+    let tmp = require;
+    const intl = intl7.intl;
     let obj = {
       usernameHook() {
-          const obj = { variant: "text-md/semibold", children: NicknameUtilsDefault.getName(closure_1_0, closure_1_1, 19) };
-          return closure_2_11(Text_Text.Text, obj);
+          let obj2;
+          const first = closure_2[0];
+          const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, first) };
+          const Text = Text_Text.Text;
+          obj2 = NicknameUtilsDefault;
+          return unpackModuleId(Text, obj);
         }
     };
-    formatResult = intl.format(util.t["4WHCtq"], obj);
+    formatResult = intl.format(intl7.t["4WHCtq"], obj);
   }
   return formatResult;
 }
-function UserCalloutAvatars(userIds) {
+function getBlockedUserInGDMTableRows(arg0) {
+  let blockedUserIds;
+  let channelId;
+  let guild_id;
+  let guild_id1;
+  let guild_id2;
+  let guild_id3;
+  let ignoredUserIds;
+  let intl;
+  let intl2;
+  let obj5;
+  let obj8;
+  let substr1;
+  let tmp16;
+  let tmp28;
+  ({ channelId, blockedUserIds, ignoredUserIds } = arg0);
+  const channel = ChannelStore.getChannel(channelId);
+  const obj = { icon: unpackModuleId(CircleCheckIcon.CircleCheckIcon, {}), label: intl.string(intl7.t.RIMw54) };
+  const tmp4 = ignoredUserIds.length > 0;
+  intl = intl7.intl;
+  const items = [obj, ];
+  const obj2 = { icon: unpackModuleId(CircleInformationIcon.CircleInformationIcon, {}), label: intl2.string(intl7.t.bejNWN) };
+  intl2 = intl7.intl;
+  items[1] = obj2;
+  if (blockedUserIds.length > 0) {
+    if (tmp4) {
+      const items1 = [];
+      HermesBuiltin.arraySpread(items1, ignoredUserIds, HermesBuiltin.arraySpread(items1, blockedUserIds, 0));
+      const substr = items1.slice(0, 2);
+      const obj3 = { userIds: substr, guildId: guild_id };
+      guild_id = undefined;
+      const unshift2 = items.unshift;
+      const tmp25 = closure_16;
+      if (channel != null) {
+        guild_id = channel.guild_id;
+      }
+      const obj4 = { icon: unpackModuleId(tmp25, obj3), label: tmp28(obj5) };
+      obj5 = { calledOutUserIds: substr, totalUsers: items1.length, channelId, guildId: guild_id1 };
+      guild_id1 = undefined;
+      tmp28 = getUserCalloutRowText;
+      if (channel != null) {
+        guild_id1 = channel.guild_id;
+      }
+      unshift2(obj4);
+    }
+    return items;
+  }
+  const items2 = [];
+  if (blockedUserIds.length > 0) {
+    HermesBuiltin.arraySpread(items2, blockedUserIds, 0);
+    substr1 = items2.slice(0, 2);
+  } else {
+    HermesBuiltin.arraySpread(items2, ignoredUserIds, 0);
+    substr1 = items2.slice(0, 2);
+  }
+  const obj6 = { userIds: substr1, guildId: guild_id2 };
+  guild_id2 = undefined;
+  const unshift = items.unshift;
+  const tmp13 = blockedUserIds.length > 0 ? blockedUserIds.length : ignoredUserIds.length;
+  const tmp14 = closure_16;
+  if (channel != null) {
+    guild_id2 = channel.guild_id;
+  }
+  const obj7 = { icon: unpackModuleId(tmp14, obj6), label: tmp16(obj8) };
+  obj8 = { calledOutUserIds: substr1, totalUsers: tmp13, channelId, guildId: guild_id3 };
+  guild_id3 = undefined;
+  tmp16 = getUserCalloutRowText;
+  if (channel != null) {
+    guild_id3 = channel.guild_id;
+  }
+  unshift(obj7);
+}
+let react = react_mod;
+({ Image: closure_4, View: hasOwnProperty } = react_native);
+({ BlockWarningEngagements: metroImportAll, GdmWarningMedium: c9 } = SharedSpaceWarningConstants);
+const AnalyticEvents = Constants.AnalyticEvents;
+({ jsx: unpackModuleId, Fragment: closure_12, jsxs: map1 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, headerImage: { alignSelf: "center", width: 73, height: 86 }, title: { textAlign: "center", alignSelf: "center" }, description: { textAlign: "center", alignSelf: "center" }, tableGroup: obj3, buttons: { gap: 8 }, icon: { display: "flex", justifyContent: "center", alignItems: "center", minWidth: 32 } };
+obj2 = { paddingTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, textAlign: "center" };
+createStyles = createStyles.createStyles;
+obj3 = { paddingVertical: nativeDefault.space.PX_24 };
+let closure_14 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
+  let first;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  const obj = userIds(576);
+  const cResult = obj.c(14);
   userIds = userIds.userIds;
-  let REFRESH_MEDIUM_32 = dependencyMap;
+  const guildId = userIds.guildId;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== userIds) {
+    const fn = function l() {
+      let user;
+      return userIds.map((item) => user.getUser(item));
+    };
+    const items1 = [userIds];
+    cResult[1] = userIds;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const tmpResult = userIds(504);
+  const stateFromStoresArray = tmpResult.useStateFromStoresArray(first, tmp6, tmp7);
+  if (cResult[4] !== stateFromStoresArray) {
+    const found = stateFromStoresArray.filter(tmp(1375).isNotNullish);
+    cResult[4] = stateFromStoresArray;
+    cResult[5] = found;
+    tmp8 = found;
+  } else {
+    tmp8 = cResult[5];
+  }
+  if (1 === userIds.length) {
+    let tmp13;
+    let tmp19;
+    if (cResult[6] !== userIds[0]) {
+      const user = UserStore.getUser(userIds[0]);
+      cResult[6] = userIds[0];
+      cResult[7] = user;
+      tmp13 = user;
+    } else {
+      tmp13 = cResult[7];
+    }
+    if (cResult[8] === guildId) {
+      if (cResult[9] === tmp13) {
+        let tmp16;
+        if (cResult[10] === tmp8) {
+          tmp16 = cResult[11];
+        }
+        return tmp16;
+      }
+    }
+    if (null != tmp13) {
+      const obj2 = { user: tmp8[0], guildId, size: userIds(1188).AvatarSizes.REFRESH_MEDIUM_32, "aria-hidden": true };
+      const Avatar = tmp(1188).Avatar;
+      tmp19 = closure_11(Avatar, obj2);
+    } else {
+      tmp19 = closure_11(tmp(11435).UserIcon, {});
+    }
+    cResult[8] = guildId;
+    cResult[9] = tmp13;
+    cResult[10] = tmp8;
+    cResult[11] = tmp19;
+    tmp16 = tmp19;
+  } else {
+    let tmp10;
+    if (cResult[12] !== tmp8) {
+      const obj3 = { users: tmp8, size: userIds(1188).AvatarSizes.REFRESH_MEDIUM_32 };
+      const FacepileGroupDMAvatar = tmp(10648).FacepileGroupDMAvatar;
+      const tmp12 = closure_11(FacepileGroupDMAvatar, obj3);
+      cResult[12] = tmp8;
+      cResult[13] = tmp12;
+      tmp10 = tmp12;
+    } else {
+      tmp10 = cResult[13];
+    }
+    return tmp10;
+  }
+}) : ((userIds) => {
+  let tmp5;
+  userIds = userIds.userIds;
+  const guildId = userIds.guildId;
   const items = [UserStore];
   const items1 = [userIds];
-  const stateFromStoresArray = userIds(504).useStateFromStoresArray(items, () => userIds.map((item) => user.getUser(item)), items1);
-  let found = stateFromStoresArray.filter(userIds(1370).isNotNullish);
+  const obj = userIds(504);
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
+    let user;
+    return userIds.map((item) => user.getUser(item));
+  }, items1);
+  const found = stateFromStoresArray.filter(userIds(1375).isNotNullish);
+  const obj2 = UserStore;
   if (1 === userIds.length) {
-    if (null != UserStore.getUser(userIds[0])) {
-      const obj3 = { user: null, guildId: null, size: null, "aria-hidden": true };
-      found = found[0];
-      obj3.user = found;
-      obj3.guildId = userIds.guildId;
-      REFRESH_MEDIUM_32 = tmp(1177).AvatarSizes.REFRESH_MEDIUM_32;
-      obj3.size = REFRESH_MEDIUM_32;
-      let tmp6 = closure_11(tmp(1177).Avatar, obj3);
+    let tmp8;
+    if (null != obj2.getUser(userIds[0])) {
+      const obj3 = { user: found[0], guildId, size: userIds(1188).AvatarSizes.REFRESH_MEDIUM_32, "aria-hidden": true };
+      const Avatar = tmp(1188).Avatar;
+      tmp8 = closure_11(Avatar, obj3);
     } else {
-      tmp6 = closure_11(tmp(11516).UserIcon, {});
+      tmp8 = closure_11(tmp(11435).UserIcon, {});
     }
+    tmp5 = tmp8;
   } else {
-    const obj4 = { users: found, size: tmp(1177).AvatarSizes.REFRESH_MEDIUM_32 };
-    return closure_11(tmp(10566).FacepileGroupDMAvatar, obj4);
+    const obj4 = { users: found, size: userIds(1188).AvatarSizes.REFRESH_MEDIUM_32 };
+    const FacepileGroupDMAvatar = tmp(10648).FacepileGroupDMAvatar;
+    tmp5 = closure_11(FacepileGroupDMAvatar, obj4);
   }
-}
-function BlockedUserInGDMDescription(arg0) {
+  return tmp5;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let items;
+  let items1;
+  let items2;
+  let numOfBlockedUsers;
+  let numOfIgnoredUsers;
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(12);
   ({ numOfBlockedUsers, numOfIgnoredUsers } = arg0);
   if (numOfBlockedUsers > 0) {
-    if (tmp2) {
-      const obj2 = { children: null };
-      const intl5 = util.intl;
-      const items = [intl5.string(util.t.xbRNI3), "\n", ];
-      const intl6 = util.intl;
-      items[2] = intl6.string(util.t["Bp2/ni"]);
-      obj2.children = items;
-      let tmp3 = map1(closure_1_12, obj2);
+    if (numOfIgnoredUsers > 0) {
+      let first;
+      let tmp28;
+      const _Symbol3 = Symbol;
+      if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl5 = tmp(1126).intl;
+        const stringResult = intl5.string(intl7.t.xbRNI3);
+        cResult[0] = stringResult;
+        first = stringResult;
+      } else {
+        first = cResult[0];
+      }
+      const _Symbol4 = Symbol;
+      if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+        const obj2 = { children: items };
+        items = [first, "\n", ];
+        const intl6 = tmp(1126).intl;
+        items[2] = intl6.string(intl7.t["Bp2/ni"]);
+        const tmp31 = map1(closure_12, obj2);
+        cResult[1] = tmp31;
+        tmp28 = tmp31;
+      } else {
+        tmp28 = cResult[1];
+      }
+      tmp6 = tmp28;
+    }
+    return tmp6;
+  }
+  if (numOfBlockedUsers > 0) {
+    let tmp16;
+    let tmp19;
+    let tmp21;
+    if (cResult[2] !== numOfBlockedUsers) {
+      const intl3 = tmp(1126).intl;
+      const obj3 = { n: numOfBlockedUsers };
+      const formatResult = intl3.format(intl7.t.iKtixW, obj3);
+      cResult[2] = numOfBlockedUsers;
+      cResult[3] = formatResult;
+      tmp16 = formatResult;
+    } else {
+      tmp16 = cResult[3];
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl4 = tmp(1126).intl;
+      const stringResult1 = intl4.string(intl7.t.SN1hrl);
+      cResult[4] = stringResult1;
+      tmp19 = stringResult1;
+    } else {
+      tmp19 = cResult[4];
+    }
+    if (cResult[5] !== tmp16) {
+      const obj4 = { children: items1 };
+      items1 = [tmp16, "\n", tmp19];
+      const tmp24 = map1(closure_12, obj4);
+      cResult[5] = tmp16;
+      cResult[6] = tmp24;
+      tmp21 = tmp24;
+    } else {
+      tmp21 = cResult[6];
+    }
+    tmp6 = tmp21;
+  } else {
+    tmp6 = null;
+    if (numOfIgnoredUsers > 0) {
+      let tmp7;
+      let tmp10;
+      let tmp12;
+      if (cResult[7] !== numOfIgnoredUsers) {
+        const intl = tmp(1126).intl;
+        const obj5 = { n: numOfIgnoredUsers };
+        const formatResult1 = intl.format(intl7.t["6IRwua"], obj5);
+        cResult[7] = numOfIgnoredUsers;
+        cResult[8] = formatResult1;
+        tmp7 = formatResult1;
+      } else {
+        tmp7 = cResult[8];
+      }
+      const _Symbol = Symbol;
+      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl2 = tmp(1126).intl;
+        const stringResult2 = intl2.string(intl7.t["6AKLRt"]);
+        cResult[9] = stringResult2;
+        tmp10 = stringResult2;
+      } else {
+        tmp10 = cResult[9];
+      }
+      if (cResult[10] !== tmp7) {
+        const obj6 = { children: items2 };
+        items2 = [tmp7, "\n", tmp10];
+        const tmp15 = map1(closure_12, obj6);
+        cResult[10] = tmp7;
+        cResult[11] = tmp15;
+        tmp12 = tmp15;
+      } else {
+        tmp12 = cResult[11];
+      }
+      tmp6 = tmp12;
+    }
+  }
+}) : ((arg0) => {
+  let items;
+  let items1;
+  let items2;
+  let numOfBlockedUsers;
+  let numOfIgnoredUsers;
+  let tmp3;
+  ({ numOfBlockedUsers, numOfIgnoredUsers } = arg0);
+  if (numOfBlockedUsers > 0) {
+    if (numOfIgnoredUsers > 0) {
+      const obj2 = { children: items };
+      const intl5 = intl7.intl;
+      items = [intl5.string(intl7.t.xbRNI3), "\n", ];
+      const intl6 = intl7.intl;
+      items[2] = intl6.string(intl7.t["Bp2/ni"]);
+      tmp3 = map1(closure_12, obj2);
     }
     return tmp3;
   }
   if (numOfBlockedUsers > 0) {
-    const obj3 = { children: null };
-    const intl3 = util.intl;
+    const obj3 = { children: items1 };
+    const intl3 = intl7.intl;
     const obj4 = { n: numOfBlockedUsers };
-    const items1 = [intl3.format(util.t.iKtixW, obj4), "\n", ];
-    const intl4 = util.intl;
-    items1[2] = intl4.string(util.t.SN1hrl);
-    obj3.children = items1;
-    tmp3 = map1(closure_1_12, obj3);
+    items1 = [intl3.format(intl7.t.iKtixW, obj4), "\n", ];
+    const intl4 = intl7.intl;
+    items1[2] = intl4.string(intl7.t.SN1hrl);
+    tmp3 = map1(closure_12, obj3);
   } else {
     tmp3 = null;
-    if (tmp2) {
-      const obj = { children: null };
-      const intl = util.intl;
+    if (numOfIgnoredUsers > 0) {
+      const obj = { children: items2 };
+      const intl = intl7.intl;
       const obj5 = { n: numOfIgnoredUsers };
-      const items2 = [intl.format(util.t["6IRwua"], obj5), "\n", ];
-      const intl2 = util.intl;
-      items2[2] = intl2.string(util.t["6AKLRt"]);
-      obj.children = items2;
-      tmp3 = map1(closure_1_12, obj);
+      items2 = [intl.format(intl7.t["6IRwua"], obj5), "\n", ];
+      const intl2 = intl7.intl;
+      items2[2] = intl2.string(intl7.t["6AKLRt"]);
+      tmp3 = map1(closure_12, obj);
     }
   }
-}
-get_ActivityIndicator = fn(17);
-({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const SharedSpaceWarningConstants = fn(13486);
-({ BlockWarningEngagements: closure_8, GdmWarningMedium: closure_9 } = SharedSpaceWarningConstants);
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const jsxProd = fn(21);
-({ jsx: closure_11, Fragment: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4845);
-let obj2 = { container: { paddingTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, textAlign: "center" }, headerImage: { alignSelf: "center", width: 73, height: 86 }, title: { textAlign: "center", alignSelf: "center" }, description: { textAlign: "center", alignSelf: "center" }, tableGroup: null, buttons: null, icon: null };
-let obj3 = { paddingTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, textAlign: "center" };
-obj2.tableGroup = { paddingVertical: nativeDefault.space.PX_24 };
-obj2.buttons = { gap: 8 };
-obj2.icon = { display: "flex", justifyContent: "center", alignItems: "center", minWidth: 32 };
-let closure_14 = createStyles.createStyles(obj2);
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/shared_space_warnings/native/BlockedUserInGdmActionSheet.tsx");
-
-export default function BlockedUserInGdmActionSheet(channelId) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  let icon;
+  let ignoredUserIds;
+  let items;
+  let items1;
+  let items2;
+  let obj = channelId(ignoredUserIds[13]);
+  const cResult = obj.c(78);
+  channelId = channelId.channelId;
+  const blockedUserIds = channelId.blockedUserIds;
+  ignoredUserIds = channelId.ignoredUserIds;
+  const tmp4 = closure_14();
+  react = tmp4;
+  if (cResult[0] === blockedUserIds) {
+    if (cResult[1] === channelId) {
+      let tmp5;
+      let tmp6;
+      if (cResult[2] === ignoredUserIds) {
+        tmp5 = cResult[3];
+        tmp6 = cResult[4];
+      }
+      const effect = react.useEffect(tmp5, tmp6);
+      if (cResult[5] === blockedUserIds) {
+        if (cResult[6] === channelId) {
+          let tmp9;
+          if (cResult[7] === ignoredUserIds) {
+            tmp9 = cResult[8];
+          }
+          if (cResult[9] === blockedUserIds) {
+            if (cResult[10] === channelId) {
+              let tmp10;
+              let tmp21;
+              let tmp28;
+              let tmp30;
+              let tmp19;
+              let tmp18;
+              let tmp17;
+              let tmp16;
+              let flag2;
+              let flag;
+              let tmp15;
+              let tmp14;
+              let tmp12;
+              let tmp11;
+              if (cResult[11] === ignoredUserIds) {
+                tmp10 = cResult[12];
+              }
+              if (cResult[13] === blockedUserIds) {
+                if (cResult[14] === channelId) {
+                  if (cResult[15] === ignoredUserIds) {
+                    if (cResult[16] === tmp4.container) {
+                      if (cResult[17] === tmp4.description) {
+                        if (cResult[18] === tmp4.headerImage) {
+                          if (cResult[19] === tmp4.icon) {
+                            if (cResult[20] === tmp4.tableGroup) {
+                              if (cResult[21] === tmp4.title) {
+                                tmp11 = cResult[22];
+                                tmp12 = cResult[23];
+                                class T {
+                                  constructor() {
+                                    const obj = ActionSheetActionCreatorsDefault;
+                                    obj.hideActionSheet();
+                                    const obj2 = SharedSpacesWarningActionCreators;
+                                    const result = obj2.dismissGdmBlockedUserWarning(channelId);
+                                    const obj3 = ChannelActionCreatorsDefault;
+                                    obj3.closePrivateChannel(channelId, true, true);
+                                    const obj4 = AnalyticsUtilsDefault;
+                                    const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+                                    obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+                                  }
+                                }
+                                tmp14 = cResult[25];
+                                tmp15 = cResult[26];
+                                flag = cResult[27];
+                                flag2 = cResult[28];
+                                tmp16 = cResult[29];
+                                tmp17 = cResult[30];
+                                tmp18 = cResult[31];
+                                tmp19 = cResult[32];
+                              }
+                              if (cResult[49] === tmp11) {
+                                if (cResult[50] === flag2) {
+                                  let tmp44;
+                                  if (cResult[51] === tmp16) {
+                                    tmp44 = cResult[52];
+                                  }
+                                  if (cResult[53] === tmp12) {
+                                    if (cResult[54] === tmp44) {
+                                      let tmp46;
+                                      let tmp49;
+                                      let tmp51;
+                                      let tmp54;
+                                      let tmp56;
+                                      if (cResult[55] === tmp17) {
+                                        tmp46 = cResult[56];
+                                      }
+                                      class T {
+                                        constructor() {
+                                          const obj = ActionSheetActionCreatorsDefault;
+                                          obj.hideActionSheet();
+                                          const obj2 = SharedSpacesWarningActionCreators;
+                                          const result = obj2.dismissGdmBlockedUserWarning(channelId);
+                                          const obj3 = ChannelActionCreatorsDefault;
+                                          obj3.closePrivateChannel(channelId, true, true);
+                                          const obj4 = AnalyticsUtilsDefault;
+                                          const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+                                          obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+                                        }
+                                      }
+                                      const buttons = tmp4.buttons;
+                                      if (cResult[57] === Symbol.for("react.memo_cache_sentinel")) {
+                                        const string2 = tmp(tmp2[11]).intl.string;
+                                        class T {
+                                          constructor() {
+                                            const obj = ActionSheetActionCreatorsDefault;
+                                            obj.hideActionSheet();
+                                            const obj2 = SharedSpacesWarningActionCreators;
+                                            const result = obj2.dismissGdmBlockedUserWarning(channelId);
+                                            const obj3 = ChannelActionCreatorsDefault;
+                                            obj3.closePrivateChannel(channelId, true, true);
+                                            const obj4 = AnalyticsUtilsDefault;
+                                            const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+                                            obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+                                          }
+                                        }
+                                        cResult[57] = tmp50;
+                                        tmp49 = tmp50;
+                                      } else {
+                                        tmp49 = cResult[57];
+                                      }
+                                      if (cResult[58] !== tmp10) {
+                                        let obj2 = { size: "lg", onPress: null, text: tmp49 };
+                                        class T {
+                                          constructor() {
+                                            const obj = ActionSheetActionCreatorsDefault;
+                                            obj.hideActionSheet();
+                                            const obj2 = SharedSpacesWarningActionCreators;
+                                            const result = obj2.dismissGdmBlockedUserWarning(channelId);
+                                            const obj3 = ChannelActionCreatorsDefault;
+                                            obj3.closePrivateChannel(channelId, true, true);
+                                            const obj4 = AnalyticsUtilsDefault;
+                                            const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+                                            obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+                                          }
+                                        }
+                                        const tmp53 = closure_11(channelId(ignoredUserIds[29]).Button, obj2);
+                                        cResult[58] = tmp10;
+                                        cResult[59] = tmp53;
+                                        tmp51 = tmp53;
+                                      } else {
+                                        tmp51 = cResult[59];
+                                      }
+                                      const _Symbol2 = Symbol;
+                                      if (cResult[60] === Symbol.for("react.memo_cache_sentinel")) {
+                                        const string3 = tmp(tmp2[11]).intl.string;
+                                        class T {
+                                          constructor() {
+                                            const obj = ActionSheetActionCreatorsDefault;
+                                            obj.hideActionSheet();
+                                            const obj2 = SharedSpacesWarningActionCreators;
+                                            const result = obj2.dismissGdmBlockedUserWarning(channelId);
+                                            const obj3 = ChannelActionCreatorsDefault;
+                                            obj3.closePrivateChannel(channelId, true, true);
+                                            const obj4 = AnalyticsUtilsDefault;
+                                            const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+                                            obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+                                          }
+                                        }
+                                        cResult[60] = tmp55;
+                                        tmp54 = tmp55;
+                                      } else {
+                                        tmp54 = cResult[60];
+                                      }
+                                      if (cResult[61] !== tmp9) {
+                                        let obj3 = { size: "lg", variant: "secondary", onPress: null, text: tmp54 };
+                                        class T {
+                                          constructor() {
+                                            const obj = ActionSheetActionCreatorsDefault;
+                                            obj.hideActionSheet();
+                                            const obj2 = SharedSpacesWarningActionCreators;
+                                            const result = obj2.dismissGdmBlockedUserWarning(channelId);
+                                            const obj3 = ChannelActionCreatorsDefault;
+                                            obj3.closePrivateChannel(channelId, true, true);
+                                            const obj4 = AnalyticsUtilsDefault;
+                                            const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+                                            obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+                                          }
+                                        }
+                                        const tmp58 = closure_11(channelId(ignoredUserIds[29]).Button, obj3);
+                                        cResult[61] = tmp9;
+                                        cResult[62] = tmp58;
+                                        tmp56 = tmp58;
+                                      } else {
+                                        tmp56 = cResult[62];
+                                      }
+                                      if (cResult[63] === tmp4.buttons) {
+                                        if (cResult[64] === tmp51) {
+                                          let tmp59;
+                                          if (cResult[65] === tmp56) {
+                                            tmp59 = cResult[66];
+                                          }
+                                          if (cResult[67] === tmp13) {
+                                            if (cResult[68] === tmp15) {
+                                              if (cResult[69] === tmp46) {
+                                                if (cResult[70] === tmp59) {
+                                                  if (cResult[71] === tmp18) {
+                                                    let tmp63;
+                                                    if (cResult[72] === tmp19) {
+                                                      tmp63 = cResult[73];
+                                                    }
+                                                    if (cResult[74] === tmp14) {
+                                                      if (cResult[75] === flag) {
+                                                        let tmp65;
+                                                        if (cResult[76] === tmp63) {
+                                                          tmp65 = cResult[77];
+                                                        }
+                                                        return tmp65;
+                                                      }
+                                                    }
+                                                    class T {
+                                                      constructor() {
+                                                        const obj = ActionSheetActionCreatorsDefault;
+                                                        obj.hideActionSheet();
+                                                        const obj2 = SharedSpacesWarningActionCreators;
+                                                        const result = obj2.dismissGdmBlockedUserWarning(channelId);
+                                                        const obj3 = ChannelActionCreatorsDefault;
+                                                        obj3.closePrivateChannel(channelId, true, true);
+                                                        const obj4 = AnalyticsUtilsDefault;
+                                                        const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+                                                        obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+                                                      }
+                                                    }
+                                                    let obj4 = { startExpanded: flag, children: tmp63 };
+                                                    const tmp66 = closure_11(tmp14, obj4);
+                                                    cResult[74] = tmp14;
+                                                    cResult[75] = flag;
+                                                    cResult[76] = tmp63;
+                                                    cResult[77] = tmp66;
+                                                    tmp65 = tmp66;
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                          class T {
+                                            constructor() {
+                                              const obj = ActionSheetActionCreatorsDefault;
+                                              obj.hideActionSheet();
+                                              const obj2 = SharedSpacesWarningActionCreators;
+                                              const result = obj2.dismissGdmBlockedUserWarning(channelId);
+                                              const obj3 = ChannelActionCreatorsDefault;
+                                              obj3.closePrivateChannel(channelId, true, true);
+                                              const obj4 = AnalyticsUtilsDefault;
+                                              const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+                                              obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+                                            }
+                                          }
+                                          let obj5 = { style: tmp18, children: items };
+                                          items = [tmp19, tmp15, tmp46, tmp59];
+                                          const tmp64 = closure_13(tmp13, obj5);
+                                          cResult[67] = tmp13;
+                                          cResult[68] = tmp15;
+                                          cResult[69] = tmp46;
+                                          cResult[70] = tmp59;
+                                          cResult[71] = tmp18;
+                                          cResult[72] = tmp19;
+                                          cResult[73] = tmp64;
+                                          tmp63 = tmp64;
+                                        }
+                                      }
+                                      const obj6 = { style: buttons, children: items1 };
+                                      items1 = [tmp51, tmp56];
+                                      const tmp62 = closure_13(closure_5, obj6);
+                                      cResult[63] = tmp4.buttons;
+                                      cResult[64] = tmp51;
+                                      cResult[65] = tmp56;
+                                      cResult[66] = tmp62;
+                                      tmp59 = tmp62;
+                                    }
+                                  }
+                                  class T {
+                                    constructor() {
+                                      const obj = ActionSheetActionCreatorsDefault;
+                                      obj.hideActionSheet();
+                                      const obj2 = SharedSpacesWarningActionCreators;
+                                      const result = obj2.dismissGdmBlockedUserWarning(channelId);
+                                      const obj3 = ChannelActionCreatorsDefault;
+                                      obj3.closePrivateChannel(channelId, true, true);
+                                      const obj4 = AnalyticsUtilsDefault;
+                                      const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+                                      obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+                                    }
+                                  }
+                                  const obj7 = { style: tmp17, children: tmp44 };
+                                  const tmp47 = closure_11(tmp12, obj7);
+                                  cResult[53] = tmp12;
+                                  cResult[54] = tmp44;
+                                  cResult[55] = tmp17;
+                                  cResult[56] = tmp47;
+                                  tmp46 = tmp47;
+                                }
+                              }
+                              class T {
+                                constructor() {
+                                  const obj = ActionSheetActionCreatorsDefault;
+                                  obj.hideActionSheet();
+                                  const obj2 = SharedSpacesWarningActionCreators;
+                                  const result = obj2.dismissGdmBlockedUserWarning(channelId);
+                                  const obj3 = ChannelActionCreatorsDefault;
+                                  obj3.closePrivateChannel(channelId, true, true);
+                                  const obj4 = AnalyticsUtilsDefault;
+                                  const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+                                  obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+                                }
+                              }
+                              const obj8 = { hasIcons: flag2, children: tmp16 };
+                              const tmp45 = closure_11(tmp11, obj8);
+                              cResult[49] = tmp11;
+                              cResult[50] = flag2;
+                              cResult[51] = tmp16;
+                              cResult[52] = tmp45;
+                              tmp44 = tmp45;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              class T {
+                constructor() {
+                  const obj = ActionSheetActionCreatorsDefault;
+                  obj.hideActionSheet();
+                  const obj2 = SharedSpacesWarningActionCreators;
+                  const result = obj2.dismissGdmBlockedUserWarning(channelId);
+                  const obj3 = ChannelActionCreatorsDefault;
+                  obj3.closePrivateChannel(channelId, true, true);
+                  const obj4 = AnalyticsUtilsDefault;
+                  const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+                  obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+                }
+              }
+              const obj9 = { channelId, blockedUserIds, ignoredUserIds };
+              const arr4 = getBlockedUserInGDMTableRows(obj9);
+              const ActionSheet = tmp(tmp2[25]).ActionSheet;
+              const container = tmp4.container;
+              if (cResult[33] !== tmp4.headerImage) {
+                class T {
+                  constructor() {
+                    const obj = ActionSheetActionCreatorsDefault;
+                    obj.hideActionSheet();
+                    const obj2 = SharedSpacesWarningActionCreators;
+                    const result = obj2.dismissGdmBlockedUserWarning(channelId);
+                    const obj3 = ChannelActionCreatorsDefault;
+                    obj3.closePrivateChannel(channelId, true, true);
+                    const obj4 = AnalyticsUtilsDefault;
+                    const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+                    obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+                  }
+                }
+                tmp24[0] = blockedUserIds(ignoredUserIds[26]);
+                tmp24[1] = tmp4.headerImage;
+                const tmp26 = closure_11(closure_4, tmp24);
+                cResult[33] = tmp4.headerImage;
+                cResult[34] = tmp26;
+                tmp21 = tmp26;
+              } else {
+                tmp21 = cResult[34];
+              }
+              const _Symbol = Symbol;
+              const title = tmp4.title;
+              if (cResult[35] === Symbol.for("react.memo_cache_sentinel")) {
+                const string = tmp(tmp2[11]).intl.string;
+                class T {
+                  constructor() {
+                    const obj = ActionSheetActionCreatorsDefault;
+                    obj.hideActionSheet();
+                    const obj2 = SharedSpacesWarningActionCreators;
+                    const result = obj2.dismissGdmBlockedUserWarning(channelId);
+                    const obj3 = ChannelActionCreatorsDefault;
+                    obj3.closePrivateChannel(channelId, true, true);
+                    const obj4 = AnalyticsUtilsDefault;
+                    const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+                    obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+                  }
+                }
+                cResult[35] = tmp29;
+                tmp28 = tmp29;
+              } else {
+                tmp28 = cResult[35];
+              }
+              if (cResult[36] !== tmp4.title) {
+                const obj10 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: null, children: tmp28 };
+                class T {
+                  constructor() {
+                    const obj = ActionSheetActionCreatorsDefault;
+                    obj.hideActionSheet();
+                    const obj2 = SharedSpacesWarningActionCreators;
+                    const result = obj2.dismissGdmBlockedUserWarning(channelId);
+                    const obj3 = ChannelActionCreatorsDefault;
+                    obj3.closePrivateChannel(channelId, true, true);
+                    const obj4 = AnalyticsUtilsDefault;
+                    const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+                    obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+                  }
+                }
+                const tmp32 = closure_11(channelId(ignoredUserIds[9]).Text, obj10);
+                cResult[36] = tmp4.title;
+                cResult[37] = tmp32;
+                tmp30 = tmp32;
+              } else {
+                tmp30 = cResult[37];
+              }
+              if (cResult[38] === blockedUserIds.length) {
+                let tmp33;
+                if (cResult[39] === ignoredUserIds.length) {
+                  tmp33 = cResult[40];
+                }
+                if (cResult[41] === tmp4.description) {
+                  let tmp37;
+                  if (cResult[42] === tmp33) {
+                    tmp37 = cResult[43];
+                  }
+                  if (cResult[44] === tmp30) {
+                    let tmp39;
+                    let tmp42;
+                    if (cResult[45] === tmp37) {
+                      tmp39 = cResult[46];
+                    }
+                    const tableGroup = tmp4.tableGroup;
+                    class T {
+                      constructor() {
+                        const obj = ActionSheetActionCreatorsDefault;
+                        obj.hideActionSheet();
+                        const obj2 = SharedSpacesWarningActionCreators;
+                        const result = obj2.dismissGdmBlockedUserWarning(channelId);
+                        const obj3 = ChannelActionCreatorsDefault;
+                        obj3.closePrivateChannel(channelId, true, true);
+                        const obj4 = AnalyticsUtilsDefault;
+                        const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+                        obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+                      }
+                    }
+                    if (cResult[47] !== tmp4.icon) {
+                      const fn3 = function j(arg0, arg1) {
+                        let label;
+                        let obj2;
+                        ({ icon, label } = arg0);
+                        const obj = { icon: unpackModuleId(hasOwnProperty, obj2), label };
+                        obj2 = { style: icon.icon, children: icon };
+                        const TableRow = TableRow2.TableRow;
+                        return unpackModuleId(TableRow, obj, arg1);
+                      };
+                      class T {
+                        constructor() {
+                          const obj = ActionSheetActionCreatorsDefault;
+                          obj.hideActionSheet();
+                          const obj2 = SharedSpacesWarningActionCreators;
+                          const result = obj2.dismissGdmBlockedUserWarning(channelId);
+                          const obj3 = ChannelActionCreatorsDefault;
+                          obj3.closePrivateChannel(channelId, true, true);
+                          const obj4 = AnalyticsUtilsDefault;
+                          const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+                          obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+                        }
+                      }
+                      cResult[48] = fn3;
+                      tmp42 = fn3;
+                    } else {
+                      tmp42 = cResult[48];
+                    }
+                    const mapped = arr4.map(tmp42);
+                    cResult[13] = blockedUserIds;
+                    cResult[14] = channelId;
+                    cResult[15] = ignoredUserIds;
+                    cResult[16] = tmp4.container;
+                    cResult[17] = tmp4.description;
+                    cResult[18] = tmp4.headerImage;
+                    cResult[19] = tmp4.icon;
+                    cResult[20] = tmp4.tableGroup;
+                    cResult[21] = tmp4.title;
+                    cResult[22] = tmp41;
+                    cResult[23] = closure_5;
+                    cResult[24] = closure_5;
+                    cResult[25] = ActionSheet;
+                    cResult[26] = tmp39;
+                    cResult[27] = true;
+                    cResult[28] = true;
+                    cResult[29] = mapped;
+                    cResult[30] = tableGroup;
+                    cResult[31] = container;
+                    cResult[32] = tmp21;
+                    tmp19 = tmp21;
+                    tmp18 = container;
+                    tmp17 = tableGroup;
+                    tmp16 = mapped;
+                    flag2 = true;
+                    flag = true;
+                    tmp15 = tmp39;
+                    tmp14 = ActionSheet;
+                    tmp12 = tmp20;
+                    tmp11 = tmp41;
+                  }
+                  class T {
+                    constructor() {
+                      const obj = ActionSheetActionCreatorsDefault;
+                      obj.hideActionSheet();
+                      const obj2 = SharedSpacesWarningActionCreators;
+                      const result = obj2.dismissGdmBlockedUserWarning(channelId);
+                      const obj3 = ChannelActionCreatorsDefault;
+                      obj3.closePrivateChannel(channelId, true, true);
+                      const obj4 = AnalyticsUtilsDefault;
+                      const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+                      obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+                    }
+                  }
+                  const obj11 = { children: items2 };
+                  items2 = [tmp30, tmp37];
+                  const tmp40 = closure_13(closure_5, obj11);
+                  cResult[44] = tmp30;
+                  cResult[45] = tmp37;
+                  cResult[46] = tmp40;
+                  tmp39 = tmp40;
+                }
+                class T {
+                  constructor() {
+                    const obj = ActionSheetActionCreatorsDefault;
+                    obj.hideActionSheet();
+                    const obj2 = SharedSpacesWarningActionCreators;
+                    const result = obj2.dismissGdmBlockedUserWarning(channelId);
+                    const obj3 = ChannelActionCreatorsDefault;
+                    obj3.closePrivateChannel(channelId, true, true);
+                    const obj4 = AnalyticsUtilsDefault;
+                    const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+                    obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+                  }
+                }
+                const obj12 = { variant: "text-md/medium", color: "text-default", style: tmp4.description, children: tmp33 };
+                const tmp38 = closure_11(channelId(ignoredUserIds[9]).Text, obj12);
+                cResult[41] = tmp4.description;
+                cResult[42] = tmp33;
+                cResult[43] = tmp38;
+                tmp37 = tmp38;
+              }
+              const obj13 = { numOfBlockedUsers: blockedUserIds.length, numOfIgnoredUsers: ignoredUserIds.length };
+              const tmp36 = closure_11(closure_17, obj13);
+              cResult[38] = blockedUserIds.length;
+              cResult[39] = ignoredUserIds.length;
+              cResult[40] = tmp36;
+              tmp33 = tmp36;
+            }
+          }
+          class T {
+            constructor() {
+              const obj = ActionSheetActionCreatorsDefault;
+              obj.hideActionSheet();
+              const obj2 = SharedSpacesWarningActionCreators;
+              const result = obj2.dismissGdmBlockedUserWarning(channelId);
+              const obj3 = ChannelActionCreatorsDefault;
+              obj3.closePrivateChannel(channelId, true, true);
+              const obj4 = AnalyticsUtilsDefault;
+              const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+              obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+            }
+          }
+          cResult[9] = blockedUserIds;
+          cResult[10] = channelId;
+          cResult[11] = ignoredUserIds;
+          cResult[12] = T;
+          tmp10 = T;
+        }
+      }
+      const fn2 = function u() {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet();
+        const obj2 = SharedSpacesWarningActionCreators;
+        const result = obj2.dismissGdmBlockedUserWarning(channelId);
+        const obj3 = AnalyticsUtilsDefault;
+        const obj4 = { action: metroImportAll.CLICK_TO_STAY, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+        obj3.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj4);
+      };
+      cResult[5] = blockedUserIds;
+      cResult[6] = channelId;
+      cResult[7] = ignoredUserIds;
+      cResult[8] = fn2;
+      tmp9 = fn2;
+    }
+  }
+  const fn = function o() {
+    const obj = AnalyticsUtilsDefault;
+    const obj2 = { channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+    obj.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_VIEWED, obj2);
+  };
+  const items3 = [channelId, blockedUserIds, ignoredUserIds];
+  cResult[0] = blockedUserIds;
+  cResult[1] = channelId;
+  cResult[2] = ignoredUserIds;
+  cResult[3] = fn;
+  cResult[4] = items3;
+  tmp6 = items3;
+  tmp5 = fn;
+}) : ((channelId) => {
+  let TableRowGroup;
+  let icon;
+  let intl;
+  let intl2;
+  let intl3;
+  let items1;
+  let items2;
+  let items3;
+  let obj2;
+  let obj7;
+  let obj9;
   channelId = channelId.channelId;
   const blockedUserIds = channelId.blockedUserIds;
   const ignoredUserIds = channelId.ignoredUserIds;
   const tmp = closure_14();
-  noop = tmp;
+  react = tmp;
   const items = [channelId, blockedUserIds, ignoredUserIds];
-  const effect = noop.useEffect(() => {
-    AnalyticsUtilsDefault.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_VIEWED, { channel_id: channelId, warning_medium: constants2.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds });
+  const effect = react.useEffect(() => {
+    const obj = AnalyticsUtilsDefault;
+    const obj2 = { channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+    obj.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_VIEWED, obj2);
   }, items);
-  const channel = ChannelStore.getChannel(channelId);
-  let obj = { icon: closure_11(channelId(ignoredUserIds[17]).CircleCheckIcon, {}), label: null };
-  const intl = channelId(ignoredUserIds[11]).intl;
-  obj.label = intl.string(channelId(ignoredUserIds[11]).t.RIMw54);
-  const items1 = [obj, ];
-  let obj2 = { icon: closure_11(channelId(ignoredUserIds[18]).CircleInformationIcon, {}), label: null };
-  const intl2 = channelId(ignoredUserIds[11]).intl;
-  obj2.label = intl2.string(channelId(ignoredUserIds[11]).t.bejNWN);
-  items1[1] = obj2;
-  if (blockedUserIds.length > 0) {
-    if (tmp5) {
-      const items2 = [];
-      HermesBuiltin.arraySpread(ignoredUserIds, HermesBuiltin.arraySpread(blockedUserIds, 0));
-      const substr = items2.slice(0, 2);
-      let obj3 = { userIds: substr, guildId: null };
-      let guild_id;
-      if (channel != null) {
-        guild_id = channel.guild_id;
-      }
-      const obj4 = { icon: null, label: null };
-      obj3.guildId = guild_id;
-      obj4.icon = tmp6(UserCalloutAvatars, obj3);
-      const obj5 = { calledOutUserIds: substr, totalUsers: items2.length, channelId, guildId: null };
-      let guild_id1;
-      if (channel != null) {
-        guild_id1 = channel.guild_id;
-      }
-      obj5.guildId = guild_id1;
-      obj4.label = getUserCalloutRowText(obj5);
-      items1.unshift(obj4);
-    }
-    const obj6 = { startExpanded: true, children: null };
-    const obj7 = { style: tmp.container, children: null };
-    const obj8 = { source: blockedUserIds(tmp8[21]), style: tmp.headerImage };
-    const items3 = [tmp6(closure_4, obj8), , , ];
-    const obj9 = { children: null };
-    const obj10 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, children: null };
-    const intl3 = tmp7(tmp8[11]).intl;
-    obj10.children = intl3.string(tmp7(tmp8[11]).t["mwJJ+f"]);
-    const items4 = [tmp6(tmp7(tmp8[9]).Text, obj10), ];
-    const obj11 = { variant: "text-md/medium", color: "text-default", style: tmp.description, children: null };
-    const obj12 = { numOfBlockedUsers: blockedUserIds.length, numOfIgnoredUsers: ignoredUserIds.length };
-    obj11.children = tmp6(BlockedUserInGDMDescription, obj12);
-    items4[1] = tmp6(tmp7(tmp8[9]).Text, obj11);
-    obj9.children = items4;
-    items3[1] = closure_13(closure_5, obj9);
-    const obj13 = { style: tmp.tableGroup, children: null };
-    const obj14 = {
-      hasIcons: true,
-      children: items1.map((item, index) => {
-          ({ icon, label } = item);
-          const obj = { icon: closure_2_11(hasOwnProperty, { style: icon.icon, children: icon }), label };
-          return closure_2_11(TableRow.TableRow, obj, index);
-        })
-    };
-    obj13.children = tmp6(tmp7(tmp8[22]).TableRowGroup, obj14);
-    items3[2] = tmp6(closure_5, obj13);
-    const obj15 = { style: tmp.buttons, children: null };
-    const obj16 = {
-      size: "lg",
-      onPress() {
-          ActionSheetActionCreatorsDefault.hideActionSheet();
-          const result = SharedSpacesWarningActionCreators.dismissGdmBlockedUserWarning(channelId);
-          ChannelActionCreatorsDefault.closePrivateChannel(channelId, true, true);
-          AnalyticsUtilsDefault.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, { action: constants.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants2.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds });
-        },
-      text: null
-    };
-    const intl4 = tmp7(tmp8[11]).intl;
-    obj16.text = intl4.string(tmp7(tmp8[11]).t.I4q1kA);
-    const items5 = [tmp6(tmp7(tmp8[24]).Button, obj16), ];
-    const obj17 = {
-      size: "lg",
-      variant: "secondary",
-      onPress() {
-          ActionSheetActionCreatorsDefault.hideActionSheet();
-          const result = SharedSpacesWarningActionCreators.dismissGdmBlockedUserWarning(channelId);
-          AnalyticsUtilsDefault.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, { action: constants.CLICK_TO_STAY, channel_id: channelId, warning_medium: constants2.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds });
-        },
-      text: null
-    };
-    const intl5 = tmp7(tmp8[11]).intl;
-    obj17.text = intl5.string(tmp7(tmp8[11]).t.DRJhmT);
-    items5[1] = tmp6(tmp7(tmp8[24]).Button, obj17);
-    obj15.children = items5;
-    items3[3] = closure_13(closure_5, obj15);
-    obj7.children = items3;
-    obj6.children = closure_13(closure_5, obj7);
-    return tmp6(tmp7(tmp8[20]).ActionSheet, obj6);
-  }
-  const items6 = [];
-  if (blockedUserIds.length > 0) {
-    HermesBuiltin.arraySpread(blockedUserIds, 0);
-    let substr1 = items6.slice(0, 2);
-  } else {
-    HermesBuiltin.arraySpread(ignoredUserIds, 0);
-    substr1 = items6.slice(0, 2);
-  }
-  const obj18 = { userIds: substr1, guildId: null };
-  let guild_id2;
-  if (channel != null) {
-    guild_id2 = channel.guild_id;
-  }
-  const obj19 = { icon: closure_11(UserCalloutAvatars, obj18), label: null };
-  obj18.guildId = guild_id2;
-  const obj20 = { calledOutUserIds: substr1, totalUsers: blockedUserIds.length > 0 ? blockedUserIds.length : ignoredUserIds.length, channelId, guildId: null };
-  let guild_id3;
-  if (channel != null) {
-    guild_id3 = channel.guild_id;
-  }
-  obj20.guildId = guild_id3;
-  obj19.label = getUserCalloutRowText(obj20);
-  items1.unshift(obj19);
-};
+  let obj = { startExpanded: true, children: closure_13(closure_5, obj2) };
+  obj2 = { style: tmp.container, children: items1 };
+  let obj3 = { source: blockedUserIds(ignoredUserIds[26]), style: tmp.headerImage };
+  const arr4 = getBlockedUserInGDMTableRows({ channelId, blockedUserIds, ignoredUserIds });
+  const ActionSheet = channelId(ignoredUserIds[25]).ActionSheet;
+  items1 = [closure_11(closure_4, obj3), , , ];
+  let obj4 = { children: items2 };
+  let obj5 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, children: intl.string(channelId(ignoredUserIds[11]).t["mwJJ+f"]) };
+  const Text = channelId(ignoredUserIds[9]).Text;
+  intl = channelId(ignoredUserIds[11]).intl;
+  items2 = [closure_11(Text, obj5), ];
+  const obj6 = { variant: "text-md/medium", color: "text-default", style: tmp.description, children: closure_11(closure_17, obj7) };
+  obj7 = { numOfBlockedUsers: blockedUserIds.length, numOfIgnoredUsers: ignoredUserIds.length };
+  const Text2 = channelId(ignoredUserIds[9]).Text;
+  items2[1] = closure_11(Text2, obj6);
+  items1[1] = closure_13(closure_5, obj4);
+  const obj8 = { style: tmp.tableGroup, children: closure_11(TableRowGroup, obj9) };
+  obj9 = {
+    hasIcons: true,
+    children: arr4.map((item, index) => {
+      let label;
+      let obj2;
+      ({ icon, label } = item);
+      const obj = { icon: unpackModuleId(hasOwnProperty, obj2), label };
+      obj2 = { style: icon.icon, children: icon };
+      const TableRow = TableRow2.TableRow;
+      return unpackModuleId(TableRow, obj, index);
+    })
+  };
+  TableRowGroup = channelId(ignoredUserIds[27]).TableRowGroup;
+  items1[2] = closure_11(closure_5, obj8);
+  const obj10 = { style: tmp.buttons, children: items3 };
+  const obj11 = {
+    size: "lg",
+    onPress() {
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet();
+      const obj2 = SharedSpacesWarningActionCreators;
+      const result = obj2.dismissGdmBlockedUserWarning(channelId);
+      const obj3 = ChannelActionCreatorsDefault;
+      obj3.closePrivateChannel(channelId, true, true);
+      const obj4 = AnalyticsUtilsDefault;
+      const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+      obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+    },
+    text: intl2.string(channelId(ignoredUserIds[11]).t.I4q1kA)
+  };
+  const Button = channelId(ignoredUserIds[29]).Button;
+  intl2 = channelId(ignoredUserIds[11]).intl;
+  items3 = [closure_11(Button, obj11), ];
+  const obj12 = {
+    size: "lg",
+    variant: "secondary",
+    onPress() {
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet();
+      const obj2 = SharedSpacesWarningActionCreators;
+      const result = obj2.dismissGdmBlockedUserWarning(channelId);
+      const obj3 = AnalyticsUtilsDefault;
+      const obj4 = { action: metroImportAll.CLICK_TO_STAY, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+      obj3.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj4);
+    },
+    text: intl3.string(channelId(ignoredUserIds[11]).t.DRJhmT)
+  };
+  const Button2 = channelId(ignoredUserIds[29]).Button;
+  intl3 = channelId(ignoredUserIds[11]).intl;
+  items3[1] = closure_11(Button2, obj12);
+  items1[3] = closure_13(closure_5, obj10);
+  return closure_11(ActionSheet, obj);
+});
+let result = size.fileFinishedImporting("modules/shared_space_warnings/native/BlockedUserInGdmActionSheet.tsx");
+
+export default tmp6;
 export { getUserCalloutRowText };

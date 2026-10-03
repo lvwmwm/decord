@@ -1,29 +1,95 @@
-// Module ID: 16630
-// Function ID: 16631
+// Module ID: 16716
+// Function ID: 16717
 // Name: useVibegrationsDraftHasText
-// Dependencies: [32, 19, 16631, 2]
-// Exports: default
+// Dependencies: [32, 19, 16717, 558, 576, 2]
 
-// Module 16630 (useVibegrationsDraftHasText)
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import VibegrationsComposerDraftStore from "VibegrationsComposerDraftStore" /* 16631 */;
+// Module 16716 (useVibegrationsDraftHasText)
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import VibegrationsComposerDraftStore from "VibegrationsComposerDraftStore" /* 16717 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/vibegrations/lib/useVibegrationsDraftHasText.tsx");
+const require = globalThis.__r;
+let _require;
 
-export default function useVibegrationsDraftHasText(arg0) {
-  _slicedToArray = arg0;
-  [tmp2, tmp3] = noop.useState(() => "" !== VibegrationsComposerDraftStore.getDraft(closure_0).trim());
-  const tmp4 = _slicedToArray(noop.useState(arg0), 2);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let tmp2;
+  let tmp4;
+  let tmp5;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(8);
+  if (cResult[0] !== arg0) {
+    const fn = function u() {
+      const str = VibegrationsComposerDraftStore.getDraft(closure_0);
+      return "" !== str.trim();
+    };
+    cResult[0] = arg0;
+    cResult[1] = fn;
+    tmp2 = fn;
+  } else {
+    tmp2 = cResult[1];
+  }
+  [tmp4, tmp5] = react.useState(tmp2);
+  _slicedToArray(react.useState(tmp2), 2);
+  const tmp8 = _slicedToArray(react.useState(arg0), 2)[0] !== arg0;
+  if (cResult[2] === tmp4) {
+    if (cResult[3] === arg0) {
+      let tmp9;
+      let tmp14;
+      if (cResult[4] === tmp8) {
+        tmp9 = cResult[5];
+      }
+      if (tmp8) {
+        tmp7(arg0);
+        tmp5(tmp9);
+      }
+      if (cResult[6] !== tmp9) {
+        const items = [tmp9, tmp5];
+        cResult[6] = tmp9;
+        cResult[7] = items;
+        tmp14 = items;
+      } else {
+        tmp14 = cResult[7];
+      }
+      return tmp14;
+    }
+  }
+  let tmp10 = tmp4;
+  if (tmp8) {
+    let str = VibegrationsComposerDraftStore.getDraft(arg0);
+    tmp10 = "" !== str.trim();
+  }
+  cResult[2] = tmp4;
+  cResult[3] = arg0;
+  cResult[4] = tmp8;
+  cResult[5] = tmp10;
+  tmp9 = tmp10;
+}) : ((arg0) => {
+  let tmp2;
+  let tmp3;
+  const f126017 = () => {
+    const str = VibegrationsComposerDraftStore.getDraft(closure_0);
+    return "" !== str.trim();
+  };
+  let closure_0 = arg0;
+  [tmp2, tmp3] = react.useState(f126017);
+  _slicedToArray(react.useState(f126017), 2);
+  const tmp4 = _slicedToArray(react.useState(arg0), 2);
+  const tmp5 = tmp4[1];
   if (tmp4[0] !== arg0) {
-    tmp2 = "" !== VibegrationsComposerDraftStore.getDraft(arg0).trim();
-    const str = VibegrationsComposerDraftStore.getDraft(arg0);
+    let str = VibegrationsComposerDraftStore.getDraft(arg0);
+    tmp2 = "" !== str.trim();
   }
   if (tmp4[0] !== arg0) {
-    tmp4[1](arg0);
+    tmp5(arg0);
     tmp3(tmp2);
   }
   const items = [tmp2, tmp3];
   return items;
-};
+});
+const result = size.fileFinishedImporting("modules/vibegrations/lib/useVibegrationsDraftHasText.tsx");
+
+export default tmp2;

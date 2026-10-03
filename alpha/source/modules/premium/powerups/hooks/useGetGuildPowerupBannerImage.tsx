@@ -1,40 +1,26 @@
-// Module ID: 12227
-// Function ID: 12228
+// Module ID: 12177
+// Function ID: 12178
 // Name: useGetGuildPowerupBannerImage
-// Dependencies: [4834, 504, 2]
-// Exports: default, getGuildPowerupBannerImage
+// Dependencies: [4879, 558, 576, 504, 2]
+// Exports: getGuildPowerupBannerImage
 
-// Module 12227 (useGetGuildPowerupBannerImage)
-import initialize from "initialize" /* 504 */;
-import AccessibilityStore from "AccessibilityStore" /* 4834 */;
+// Module 12177 (useGetGuildPowerupBannerImage)
+import react from "react" /* 576 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGetGuildPowerupBannerImage.tsx");
-
-export default function useGetGuildPowerupBannerImage(animatedImageUrl, arg1, arg2) {
-  initialize;
-  [][0] = AccessibilityStore;
-  if (null != animatedImageUrl) {
-    if (!tmp2) {
-      if (false !== arg1) {
-        if (!arg2) {
-          let staticImageUrl = animatedImageUrl.animatedImageUrl;
-          if (staticImageUrl == null) {
-            staticImageUrl = animatedImageUrl.staticImageUrl;
-          }
-        }
-      }
-    }
-    staticImageUrl = animatedImageUrl.staticImageUrl;
-  }
-};
-export const getGuildPowerupBannerImage = function getGuildPowerupBannerImage(arr, stateFromStores1, arg2, arg3) {
+let tmp;
+const get_initialized = tmp(504);
+function getGuildPowerupBannerImage(arr, stateFromStores1, arg2, arg3) {
   if (null != arr) {
-    if (!stateFromStores1) {
+    const tmp = stateFromStores1;
+    if (!tmp) {
       if (false !== arg2) {
-        if (!arg3) {
-          let staticImageUrl = arr.animatedImageUrl;
+        let staticImageUrl;
+        const tmp3 = arg3;
+        if (!tmp3) {
+          staticImageUrl = arr.animatedImageUrl;
           if (staticImageUrl == null) {
             staticImageUrl = arr.staticImageUrl;
           }
@@ -44,4 +30,84 @@ export const getGuildPowerupBannerImage = function getGuildPowerupBannerImage(ar
     }
     staticImageUrl = arr.staticImageUrl;
   }
-};
+}
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((animatedImageUrl, arg1, arg2) => {
+  let tmp4;
+  let tmp5;
+  let useReducedMotion;
+  const obj = react;
+  const cResult = obj.c(7);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AccessibilityStore];
+    const fn = function s() {
+      return useReducedMotion.useReducedMotion;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === arg2) {
+    if (cResult[3] === arg1) {
+      if (cResult[4] === animatedImageUrl) {
+        let tmp8;
+        if (cResult[5] === stateFromStores) {
+          tmp8 = cResult[6];
+        }
+        return tmp8;
+      }
+    }
+  }
+  let tmp9;
+  if (null != animatedImageUrl) {
+    if (!stateFromStores) {
+      if (false !== arg1) {
+        let staticImageUrl;
+        if (!arg2) {
+          staticImageUrl = animatedImageUrl.animatedImageUrl;
+          if (staticImageUrl == null) {
+            staticImageUrl = animatedImageUrl.staticImageUrl;
+          }
+        }
+        tmp9 = staticImageUrl;
+      }
+    }
+    staticImageUrl = animatedImageUrl.staticImageUrl;
+  }
+  cResult[2] = arg2;
+  cResult[3] = arg1;
+  cResult[4] = animatedImageUrl;
+  cResult[5] = stateFromStores;
+  cResult[6] = tmp9;
+  tmp8 = tmp9;
+}) : ((animatedImageUrl, arg1, arg2) => {
+  let useReducedMotion;
+  const items = [AccessibilityStore];
+  let tmp;
+  const obj = get_initialized;
+  if (null != animatedImageUrl) {
+    if (!obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion)) {
+      if (false !== arg1) {
+        let staticImageUrl;
+        const tmp3 = arg2;
+        if (!tmp3) {
+          staticImageUrl = animatedImageUrl.animatedImageUrl;
+          if (staticImageUrl == null) {
+            staticImageUrl = animatedImageUrl.staticImageUrl;
+          }
+        }
+        tmp = staticImageUrl;
+      }
+    }
+    staticImageUrl = animatedImageUrl.staticImageUrl;
+  }
+  return tmp;
+});
+const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGetGuildPowerupBannerImage.tsx");
+
+export default tmp2;
+export { getGuildPowerupBannerImage };

@@ -1,15 +1,17 @@
-// Module ID: 6853
-// Function ID: 6854
+// Module ID: 6751
+// Function ID: 6752
 // Name: DiceRollActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [584, 2]
 // Exports: startDiceRoll
 
-// Module 6853 (DiceRollActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 6751 (DiceRollActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/dice_roll/DiceRollActionCreators.tsx");
 
 export const startDiceRoll = function startDiceRoll(channelId, diceCount, diceSides) {
-  DispatcherDefault.dispatch({ type: "DICE_ROLL_START", channelId, diceCount, diceSides });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "DICE_ROLL_START", channelId, diceCount, diceSides };
+  obj.dispatch(obj2);
 };

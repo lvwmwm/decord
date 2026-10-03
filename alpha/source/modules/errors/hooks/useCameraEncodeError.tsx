@@ -1,24 +1,58 @@
-// Module ID: 17205
-// Function ID: 17206
+// Module ID: 17253
+// Function ID: 17254
 // Name: useCameraEncodeError
-// Dependencies: [502, 9067, 504, 9068, 2]
-// Exports: default
+// Dependencies: [502, 9094, 558, 576, 9095, 504, 2]
 
-// Module 17205 (useCameraEncodeError)
-import AVError from "AVError" /* 9068 */;
+// Module 17253 (useCameraEncodeError)
+import AVError from "AVError" /* 9095 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AVErrorStore from "AVErrorStore" /* 9067 */;
+import AVErrorStore from "AVErrorStore" /* 9094 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/errors/hooks/useCameraEncodeError.tsx");
-
-export default function useCameraEncodeError(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp7;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(3);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AVErrorStore, AuthenticationStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      if (AuthenticationStore.getId() === closure_0) {
+        const first = AVErrorStore.getActiveErrorsOfType(AVError.AVError.CAMERA_SEND_LOW_FPS)[0];
+        let type;
+        if (first != null) {
+          type = first.type;
+        }
+        return type;
+      }
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp7);
+}) : ((arg0) => {
+  let closure_0;
   _require = arg0;
   const items = [AVErrorStore, AuthenticationStore];
-  return require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
     if (AuthenticationStore.getId() === closure_0) {
       const first = AVErrorStore.getActiveErrorsOfType(AVError.AVError.CAMERA_SEND_LOW_FPS)[0];
       let type;
@@ -28,4 +62,7 @@ export default function useCameraEncodeError(arg0) {
       return type;
     }
   });
-};
+});
+const result = size.fileFinishedImporting("modules/errors/hooks/useCameraEncodeError.tsx");
+
+export default tmp2;

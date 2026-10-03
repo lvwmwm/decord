@@ -1,102 +1,110 @@
-// Module ID: 9273
-// Function ID: 9274
+// Module ID: 9279
+// Function ID: 9280
 // Name: guild_scheduled_events/GuildScheduledEventModalActionCreators
-// Dependencies: [5, 2050, 9170, 4809, 9274, 1981, 9139, 9289, 2]
+// Dependencies: [5, 2057, 9175, 4854, 9280, 1987, 9163, 9298, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
-// Module 9273 (guild_scheduled_events/GuildScheduledEventModalActionCreators)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+// Module 9279 (guild_scheduled_events/GuildScheduledEventModalActionCreators)
+import asyncRequire from "asyncRequire" /* 1987 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 9175 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import size from "module_2" /* 2 */;
 
-const ScheduleUtils = tmp2(9139);
-require = fn;
+let closure_2, closure_3;
+
+let tmp3;
+const ScheduleUtils = tmp3(9163);
 function openGuildEventDetails(arg0) {
+  let event;
+  let eventId;
+  let onClose;
+  let recurrenceId;
   ({ event, recurrenceId } = arg0);
   ({ eventId, onClose } = arg0);
-  const obj = ActionSheetActionCreatorsDefault;
-  const obj2 = { eventId, event, onCloseActionSheet: onClose, recurrenceId: null };
+  const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+  ActionSheetActionCreatorsDefault;
+  obj = { eventId, event, onCloseActionSheet: onClose, recurrenceId };
+  const tmp4 = asyncRequire(9280, dependencyMap.paths);
+  const tmp5 = closure_5;
   if (recurrenceId == null) {
-    recurrenceId = ScheduleUtils.getNextRecurrenceIdInEvent(event);
-    const tmp2Result = ScheduleUtils;
+    const tmp3Result = ScheduleUtils;
+    recurrenceId = tmp3Result.getNextRecurrenceIdInEvent(event);
   }
-  obj2.recurrenceId = recurrenceId;
-  obj.openLazy(asyncRequireImpl(9274, dependencyMap.paths), closure_5, obj2, "stack");
+  openLazy(tmp4, tmp5, obj, "stack");
 }
-let closure_7 = async function _transitionToEventDetailsFromInvite(arg0, value) {
-  if (c5 === 2) {
-    c5 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp4 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c5 = 2;
-      if (0 === c4) {
+let obj = function _transitionToEventDetailsFromInvite() {
+  obj = _asyncToGenerator(async (event, arg1) => {
+    let recurrenceId = arg1;
+    let c4 = 0;
+    let c5 = 0;
+    return (async (arg0, value) => {
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
-          c5 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c5 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
+          return { value, done: true };
         } else {
-          closure_3 = tmp5;
-          closure_2 = tmp2;
-          closure_130_0 = closure_0;
-          closure_130_1 = closure_1;
-          c4 = 1;
-          c5 = 1;
-          const obj4 = { value: Promise.resolve(), done: false };
-          return obj4;
+          return { value: "IconComponent", done: "IconComponent" };
         }
-      } else if (arg0 === 1) {
-        c5 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c5 = 3;
-        const obj5 = { value, done: true };
-        return obj5;
       } else {
-        const obj = { eventId: closure_130_0.id, event: closure_130_0, recurrenceId: null };
-        let recurrenceId;
-        if (closure_130_1 != null) {
-          recurrenceId = closure_130_1.recurrenceId;
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              return { value, done: true };
+            } else {
+              closure_3 = tmp4;
+              closure_2 = tmp;
+              c4 = 1;
+              c5 = 1;
+              const obj4 = { value: Promise.resolve(), done: false };
+              return obj4;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            return { value, done: true };
+          } else {
+            obj = { eventId: event.id, event, recurrenceId };
+            recurrenceId = undefined;
+            const tmp7 = closure_131_6;
+            if (recurrenceId != null) {
+              recurrenceId = recurrenceId.recurrenceId;
+            }
+            tmp7(obj);
+            c5 = 3;
+            return { value: "IconComponent", done: "IconComponent" };
+          }
+        } catch (tmp16) {
+          c5 = 3;
+          throw tmp16;
         }
-        obj.recurrenceId = recurrenceId;
-        closure_131_6(obj);
-        c5 = 3;
-        return { value: "HermesInternal", done: null };
       }
-    } catch (tmp17) {
-      c5 = tmp;
-      throw tmp17;
-    }
-  }
+    })();
+  });
+  return obj(...arguments);
 };
-let closure_4 = fn(2050).EXPLICIT_END_EVENT_SHEET_KEY;
-let closure_5 = fn(9170).GUILD_EVENT_INFO_ACTION_SHEET_KEY;
-const size = fn(2);
+let closure_4 = GuildScheduledEventsConstants.EXPLICIT_END_EVENT_SHEET_KEY;
+let closure_5 = GuildEventModalConstants.GUILD_EVENT_INFO_ACTION_SHEET_KEY;
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventModalActionCreators.native.tsx");
 
 export { openGuildEventDetails };
 export const transitionToEventDetailsFromInvite = function transitionToEventDetailsFromInvite() {
-  const self = this;
-  const apply = closure_7.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
 export const openEndEventModal = function openEndEventModal(channel) {
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9289, dependencyMap.paths), closure_4, { channel });
+  obj = ActionSheetActionCreatorsDefault;
+  const obj2 = { channel };
+  obj.openLazy(asyncRequire(9298, dependencyMap.paths), closure_4, obj2);
 };

@@ -1,38 +1,42 @@
-// Module ID: 14500
-// Function ID: 14501
+// Module ID: 14535
+// Function ID: 14536
 // Name: AccountAgeGroupAssignedAdultSetting
-// Dependencies: [7590, 1074, 11215, 1115, 3038, 14501, 14496, 2]
+// Dependencies: [7634, 1085, 11129, 1126, 3045, 14536, 14531, 2]
 
-// Module 14500 (AccountAgeGroupAssignedAdultSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import _modDef3038 from "module_3038" /* 3038 */;
-import SettingsConstants from "SettingsConstants" /* 7590 */;
-import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 14501 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 14535 (AccountAgeGroupAssignedAdultSetting)
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import _modDef3045 from "module_3045" /* 3045 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 14536 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.piqs0o);
+    const intl = intl3.intl;
+    return intl.string(intl3.t.piqs0o);
   },
-  parent: SettingsConstants.MobileUserSettings.ACCOUNT,
+  parent: MobileUserSettings.ACCOUNT,
   useTrailing() {
-    const intl = util.intl;
-    const intl2 = util.intl;
-    return "" + intl.string(util.t.XxRj7f) + " \u2022 " + intl2.string(_modDef3038.FTawSP);
+    const intl = intl3.intl;
+    const stringResult = intl.string(intl3.t.XxRj7f);
+    const intl2 = intl3.intl;
+    return "" + stringResult + " \u2022 " + intl2.string(_modDef3045.FTawSP);
   },
   usePredicate: AgeGroupScreenRowProps.useShowAssignedAdultAgeGroupRow,
   screen: {
-    route: Constants.UserSettingsSections.AGE_GROUP,
+    route: UserSettingsSections.AGE_GROUP,
     getComponent() {
       return require("SettingsAgeGroupScreen").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountAgeGroupAssignedAdultSetting.tsx");
 
 export default route;

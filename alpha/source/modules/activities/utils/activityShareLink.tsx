@@ -1,23 +1,24 @@
-// Module ID: 14258
-// Function ID: 14259
+// Module ID: 14326
+// Function ID: 14327
 // Name: activityShareLink
-// Dependencies: [4825, 1366, 1115, 2]
+// Dependencies: [4870, 1371, 1126, 2]
 // Exports: resolveActivityShareMessageContent
 
-// Module 14258 (activityShareLink)
-import URLUtilsDefault from "URLUtils" /* 1366 */;
-import findCodedLinks from "findCodedLinks" /* 4825 */;
+// Module 14326 (activityShareLink)
+import URLUtilsDefault from "URLUtils" /* 1371 */;
+import findCodedLinks from "findCodedLinks" /* 4870 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, c0;
 
 const items = [findCodedLinks.parseQuestsEmbedCode];
 const result = size.fileFinishedImporting("modules/activities/utils/activityShareLink.tsx");
 
-export const resolveActivityShareMessageContent = function resolveActivityShareMessageContent(str, name, link) {
+export const resolveActivityShareMessageContent = function resolveActivityShareMessageContent(c3, name, link) {
   _require = false;
-  const replaced = str.replaceAll(URLUtilsDefault.URL_REGEX, (arg0) => {
-    closure_0 = arg0;
+  const replaced = c3.replaceAll(URLUtilsDefault.URL_REGEX, (arg0) => {
+    let closure_0 = arg0;
     const someResult = items.some((fn) => null != fn(closure_0));
     if (someResult) {
       c0 = true;
@@ -31,10 +32,10 @@ export const resolveActivityShareMessageContent = function resolveActivityShareM
   });
   let combined = replaced;
   if (!_require) {
-    const intl = require("util").intl;
-    const obj = { applicationName: name.name, link };
+    const intl = require("intl").intl;
     let _HermesInternal = HermesInternal;
-    combined = "" + replaced + "\n\n" + intl.formatToMarkdownString(require("util").t.dZJpdG, obj);
+    const obj = { applicationName: name.name, link };
+    combined = "" + replaced + "\n\n" + intl.formatToMarkdownString(require("intl").t.dZJpdG, obj);
   }
   return combined;
 };

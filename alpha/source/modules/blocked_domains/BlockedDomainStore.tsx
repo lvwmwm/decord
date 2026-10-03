@@ -1,30 +1,32 @@
-// Module ID: 8003
-// Function ID: 8004
+// Module ID: 8048
+// Function ID: 8049
 // Name: BlockedDomainStore
-// Dependencies: [1074, 1350, 1241, 2]
+// Dependencies: [1085, 562, 1252, 2]
 
-// Module 8003 (BlockedDomainStore)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import js_shim_shim from "js_shim/shim" /* 1350 */;
+// Module 8048 (BlockedDomainStore)
+import shim from "shim" /* 562 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
-const prototype = function BlockedDomainStore() {
-  return Object.create(new.target.prototype);
-}.prototype;
-prototype["isBlockedDomain"] = function isBlockedDomain(arg0) {
-  let isBlockedDomainResult = null;
-  if (obj.isLibdiscoreInitialized()) {
-    isBlockedDomainResult = js_shim_shim.isBlockedDomain(arg0);
-    const tmpResult = js_shim_shim;
+class BlockedDomainStore {
+  static isBlockedDomain(arg0) {
+    let isBlockedDomainResult = null;
+    const obj = shim;
+    if (obj.isLibdiscoreInitialized()) {
+      const tmpResult = shim;
+      isBlockedDomainResult = tmpResult.isBlockedDomain(arg0);
+    }
+    const tmp5 = "" !== isBlockedDomainResult && null !== isBlockedDomainResult;
+    if (tmp5) {
+      const obj2 = { blocked_domain: isBlockedDomainResult };
+      const obj3 = AnalyticsUtilsDefault;
+      obj3.track(AnalyticEvents.LINK_SECURITY_CHECK_BLOCKED, obj2);
+    }
+    return isBlockedDomainResult;
   }
-  if (tmp5) {
-    const obj2 = { blocked_domain: isBlockedDomainResult };
-    AnalyticsUtilsDefault.track(AnalyticEvents.LINK_SECURITY_CHECK_BLOCKED, obj2);
-  }
-  return isBlockedDomainResult;
-};
+}
 const result = size.fileFinishedImporting("modules/blocked_domains/BlockedDomainStore.tsx");
 
-export default prototype;
+export default BlockedDomainStore;

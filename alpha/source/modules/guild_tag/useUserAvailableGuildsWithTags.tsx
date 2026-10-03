@@ -1,25 +1,71 @@
-// Module ID: 14407
-// Function ID: 14408
+// Module ID: 14466
+// Function ID: 14467
 // Name: useUserAvailableGuildsWithTags
-// Dependencies: [2107, 2066, 504, 7792, 2]
-// Exports: useUserAvailableGuildsWithTags
+// Dependencies: [2112, 2074, 558, 576, 7836, 504, 2]
 
-// Module 14407 (useUserAvailableGuildsWithTags)
-import initialize from "initialize" /* 504 */;
-import GuildMemberStore from "GuildMemberStore" /* 2107 */;
-import GuildStore from "GuildStore" /* 2066 */;
+// Module 14466 (useUserAvailableGuildsWithTags)
+import react from "react" /* 576 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_tag/useUserAvailableGuildsWithTags.tsx");
+let guildsArray, selfMember;
 
-export const useUserAvailableGuildsWithTags = function useUserAvailableGuildsWithTags() {
+let tmp;
+const get_initialized = tmp(504);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  let tmp5;
+  let obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore, GuildMemberStore];
+    const fn = function u() {
+      guildsArray = guildsArray.getGuildsArray();
+      return guildsArray.filter((id) => {
+        selfMember = selfMember.getSelfMember(id.id);
+        const obj = closure_1_0(closure_1_1[4]);
+        let guildSupportsTagsResult = obj.guildSupportsTags(id);
+        if (guildSupportsTagsResult) {
+          let joinedAt;
+          if (selfMember != null) {
+            joinedAt = selfMember.joinedAt;
+          }
+          guildSupportsTagsResult = null != joinedAt;
+        }
+        if (guildSupportsTagsResult) {
+          guildSupportsTagsResult = true !== selfMember.isPending;
+        }
+        if (guildSupportsTagsResult) {
+          const profile = id.profile;
+          let tag;
+          if (profile != null) {
+            tag = profile.tag;
+          }
+          guildSupportsTagsResult = null != tag;
+        }
+        return guildSupportsTagsResult;
+      });
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStoresArray(tmp4, tmp5);
+}) : (() => {
+  let obj = get_initialized;
   const items = [GuildStore, GuildMemberStore];
-  return initialize.useStateFromStoresArray(items, () => {
+  return obj.useStateFromStoresArray(items, () => {
     guildsArray = guildsArray.getGuildsArray();
     return guildsArray.filter((id) => {
       selfMember = selfMember.getSelfMember(id.id);
-      let guildSupportsTagsResult = closure_1_0(closure_1_1[3]).guildSupportsTags(id);
+      const obj = closure_1_0(closure_1_1[4]);
+      let guildSupportsTagsResult = obj.guildSupportsTags(id);
       if (guildSupportsTagsResult) {
         let joinedAt;
         if (selfMember != null) {
@@ -41,4 +87,7 @@ export const useUserAvailableGuildsWithTags = function useUserAvailableGuildsWit
       return guildSupportsTagsResult;
     });
   });
-};
+});
+const result = size.fileFinishedImporting("modules/guild_tag/useUserAvailableGuildsWithTags.tsx");
+
+export const useUserAvailableGuildsWithTags = tmp2;

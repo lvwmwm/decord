@@ -1,139 +1,155 @@
-// Module ID: 17009
-// Function ID: 17010
+// Module ID: 17098
+// Function ID: 17099
 // Name: AccountLinkManager
-// Dependencies: [32, 5, 6714, 17010, 1074, 1091, 1271, 6725, 2]
+// Dependencies: [32, 5, 6602, 17099, 1085, 1102, 1282, 6613, 2]
 // Exports: claimIncentivizedAccountLinkingReward
 
-// Module 17009 (AccountLinkManager)
-import DurationsDefault from "Durations" /* 1091 */;
-import _slicedToArray from "module_32" /* 32 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6714 */;
-import AccountLinkStore from "AccountLinkStore" /* 17010 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
+// Module 17098 (AccountLinkManager)
+import DurationsDefault from "Durations" /* 1102 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6602 */;
+import AccountLinkStore from "AccountLinkStore" /* 17099 */;
+import Constants from "Constants" /* 1085 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
+import size from "module_2" /* 2 */;
 
-let require = fn;
-let closure_9 = async function _claimIncentivizedAccountLinkingReward(arg0, arg1) {
-  closure_2 = tmp3;
-  closure_1 = tmp5;
-  ({ applicationId: closure_129_0, onSuccess: closure_129_1, onError: closure_129_2 } = closure_0);
-  await "flex";
-  const HTTP = closure_130_0(closure_130_1[6]).HTTP;
-  const request = { url: closure_130_7.OAUTH2_ACCOUNT_LINKING_ACHIEVEMENT, body: { application_id: closure_129_0 }, rejectWithError: true };
-  await HTTP.post(request);
-  if (2 === tmp8) {
-    c4 = 0;
-    closure_129_3 = closure_3;
-    if (closure_129_2 != null) {
-      tmp14(closure_129_3);
-    }
-    c6 = 3;
-  } else if (arg0 === 1) {
-    c6 = 3;
-    throw arg1;
-  } else if (arg0 !== 2) {
-    if (closure_129_1 != null) {
-      closure_129_1();
-    }
-    c4 = 0;
-  }
-  return arg1;
+let postResult;
+
+let metroImportDefault;
+let metroRequire;
+let obj = function _claimIncentivizedAccountLinkingReward() {
+  obj = _asyncToGenerator(async (application_id) => {
+    let closure_2;
+    let closure_3;
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    const iter = (async (arg0, value) => {
+      let c0;
+      let c1;
+      let c2;
+      let obj5;
+      const HTTP = closure_130_0(closure_130_1[6]).HTTP;
+      const request = { url: closure_130_7.OAUTH2_ACCOUNT_LINKING_ACHIEVEMENT, body: obj5, rejectWithError: true };
+      obj5 = { application_id };
+      postResult = HTTP.post(request);
+      await postResult;
+      if (2 === c5) {
+        c4 = 0;
+        postResult = c2;
+        if (c2 != null) {
+          postResult(closure_3);
+        }
+      } else if (arg0 === 1) {
+        c6 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c4 = 0;
+        c6 = 3;
+        return { value, done: true };
+      } else {
+        if (postResult != null) {
+          postResult();
+        }
+        c4 = 0;
+      }
+      await "IconComponent";
+      ({ applicationId: c0, onSuccess: c1, onError: c2 } = closure_0);
+      return "Reflect";
+    })();
+    iter.next();
+    return iter;
+  });
+  return obj(...arguments);
 };
-const Constants = fn(1074);
-({ AppStates: metroRequire, Endpoints: closure_7 } = Constants);
+({ AppStates: metroRequire, Endpoints: metroImportDefault } = Constants);
 let closure_8 = 20 * DurationsDefault.Millis.MINUTE;
-class AccountLinkManager extends tmp3 {
+class AccountLinkManager extends AutomaticLifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    closure_0 = applyArgumentsResult;
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     applyArgumentsResult.actions = {
       OAUTH2_TOKEN_CREATE(arg0) {
-            return applyArgumentsResult.handleOAuth2TokenCreate(arg0);
-          },
+        return applyArgumentsResult.handleOAuth2TokenCreate(arg0);
+      },
       USER_AUTHORIZED_APPS_UPDATE() {
-            return applyArgumentsResult.handleAuthorizedAppsUpdate();
-          },
+        return applyArgumentsResult.handleAuthorizedAppsUpdate();
+      },
       APP_STATE_UPDATE(arg0) {
-            return applyArgumentsResult.handleAppStateUpdate(arg0);
-          },
+        return applyArgumentsResult.handleAppStateUpdate(arg0);
+      },
       ACCOUNT_LINK_AUTHORIZATION_COMPLETED(applicationId) {
-            return applyArgumentsResult.handleAccountLinkAuthorizationCompleted(applicationId);
-          }
+        return applyArgumentsResult.handleAccountLinkAuthorizationCompleted(applicationId);
+      }
     };
     return applyArgumentsResult;
   }
-}
-const prototype = AccountLinkManager.prototype;
-prototype["evaluatePending"] = function evaluatePending() {
-  const pendingAuthorizations = AccountLinkStore.getPendingAuthorizations();
-  if (0 !== pendingAuthorizations.size) {
-    const _Date = Date;
-    const timestamp = Date.now();
-    const tmp26 = pendingAuthorizations[Symbol.iterator]();
-    while (tmp26 !== undefined) {
-      let tmp6 = _slicedToArray(tmp3, 2);
-      [tmp7, tmp8] = tmp6;
-      let tmp9 = tmp8;
-      if (timestamp - tmp8.startedAt > closure_8) {
-        let result = AccountLinkStore.deletePendingAuthorization(tmp7);
-        let accountLinkCallbacks2 = tmp9.accountLinkCallbacks;
-        if (accountLinkCallbacks2 != null) {
-          let onError = accountLinkCallbacks2.onError;
-          if (onError != null) {
-            let onErrorResult = onError("Account link authorization timed out");
+  evaluatePending() {
+    let tmp7;
+    let tmp8;
+    const pendingAuthorizations = AccountLinkStore.getPendingAuthorizations();
+    if (0 !== pendingAuthorizations.size) {
+      const _Date = Date;
+      const timestamp = Date.now();
+      const tmp26 = pendingAuthorizations[Symbol.iterator]();
+      while (tmp26 !== undefined) {
+        let tmp6 = _slicedToArray(tmp3, 2);
+        [tmp7, tmp8] = tmp6;
+        let tmp9 = tmp8;
+        if (timestamp - tmp8.startedAt > closure_8) {
+          let result = AccountLinkStore.deletePendingAuthorization(tmp7);
+          let accountLinkCallbacks2 = tmp9.accountLinkCallbacks;
+          if (accountLinkCallbacks2 != null) {
+            let onError = accountLinkCallbacks2.onError;
+            if (onError != null) {
+              let onErrorResult = onError("Account link authorization timed out");
+            }
           }
-        }
-      } else if (null != AuthorizedAppsStore.getNewestTokenForApplication(tmp7)) {
-        let accountLinkCallbacks = tmp9.accountLinkCallbacks;
-        if (accountLinkCallbacks != null) {
-          let onSuccess = accountLinkCallbacks.onSuccess;
-          if (onSuccess != null) {
-            let onSuccessResult = onSuccess();
+        } else if (null != AuthorizedAppsStore.getNewestTokenForApplication(tmp7)) {
+          let accountLinkCallbacks = tmp9.accountLinkCallbacks;
+          if (accountLinkCallbacks != null) {
+            let onSuccess = accountLinkCallbacks.onSuccess;
+            if (onSuccess != null) {
+              let onSuccessResult = onSuccess();
+            }
           }
+          let result1 = AccountLinkStore.deletePendingAuthorization(tmp7);
         }
-        let result1 = AccountLinkStore.deletePendingAuthorization(tmp7);
+        continue;
       }
-      continue;
     }
   }
-};
-prototype["handleOAuth2TokenCreate"] = function handleOAuth2TokenCreate(application) {
-  const pendingAuthorizations = AccountLinkStore.getPendingAuthorizations();
-  if (pendingAuthorizations.has(application.application.id)) {
-    const self = this;
+  handleOAuth2TokenCreate(application) {
+    const pendingAuthorizations = AccountLinkStore.getPendingAuthorizations();
+    if (pendingAuthorizations.has(application.application.id)) {
+      const self = this;
+      this.evaluatePending();
+    }
+  }
+  handleAuthorizedAppsUpdate() {
     this.evaluatePending();
   }
-};
-prototype["handleAuthorizedAppsUpdate"] = function handleAuthorizedAppsUpdate() {
-  this.evaluatePending();
-};
-prototype["handleAccountLinkAuthorizationCompleted"] = function handleAccountLinkAuthorizationCompleted(applicationId) {
-  const pendingAuthorizations = AccountLinkStore.getPendingAuthorizations();
-  if (pendingAuthorizations.has(applicationId.applicationId)) {
-    const self = this;
-    this.evaluatePending();
+  handleAccountLinkAuthorizationCompleted(applicationId) {
+    const pendingAuthorizations = AccountLinkStore.getPendingAuthorizations();
+    if (pendingAuthorizations.has(applicationId.applicationId)) {
+      const self = this;
+      this.evaluatePending();
+    }
   }
-};
-prototype["handleAppStateUpdate"] = function handleAppStateUpdate(state) {
-  if (state.state === constants.ACTIVE) {
-    const self = this;
-    this.evaluatePending();
+  handleAppStateUpdate(state) {
+    if (state.state === metroRequire.ACTIVE) {
+      const self = this;
+      this.evaluatePending();
+    }
   }
-};
+}
+const prototype = AccountLinkManager.prototype;
 AccountLinkManager.displayName = "AccountLinkManager";
 const accountLinkManager = new AccountLinkManager();
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/application_account_linking/AccountLinkManager.tsx");
 
 export default accountLinkManager;
 export const claimIncentivizedAccountLinkingReward = function claimIncentivizedAccountLinkingReward() {
-  const self = this;
-  const apply = closure_9.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
 export { AccountLinkManager };

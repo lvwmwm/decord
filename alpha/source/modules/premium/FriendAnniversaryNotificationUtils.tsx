@@ -1,14 +1,14 @@
-// Module ID: 15265
-// Function ID: 15266
+// Module ID: 15321
+// Function ID: 15322
 // Name: FriendAnniversaryNotificationUtils
-// Dependencies: [1074, 4511, 2021, 1241, 2]
+// Dependencies: [1085, 4522, 2028, 1252, 2]
 // Exports: onFriendAnniversaryNotificationSettingsChanged
 
-// Module 15265 (FriendAnniversaryNotificationUtils)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import NotificationConstants from "NotificationConstants" /* 4511 */;
+// Module 15321 (FriendAnniversaryNotificationUtils)
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import NotificationConstants from "NotificationConstants" /* 4522 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -18,5 +18,7 @@ const result = size.fileFinishedImporting("modules/premium/FriendAnniversaryNoti
 export const onFriendAnniversaryNotificationSettingsChanged = function onFriendAnniversaryNotificationSettingsChanged(friend_anniversary_notifications) {
   const EnableFriendAnniversaryNotifications = UserSettings.EnableFriendAnniversaryNotifications;
   EnableFriendAnniversaryNotifications.updateSetting(friend_anniversary_notifications);
-  AnalyticsUtilsDefault.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, { update_type: constants.ACCOUNT, friend_anniversary_notifications });
+  const obj = AnalyticsUtilsDefault;
+  const obj2 = { update_type: constants.ACCOUNT, friend_anniversary_notifications };
+  obj.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, obj2);
 };

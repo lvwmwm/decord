@@ -1,22 +1,23 @@
-// Module ID: 4963
-// Function ID: 4964
+// Module ID: 5009
+// Function ID: 5010
 // Name: transformStatsUtils
 // Dependencies: [2]
 // Exports: formatSinkWantAsInt, formatSinkWantStat
 
-// Module 4963 (transformStatsUtils)
+// Module 5009 (transformStatsUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/media-engine/utils/transformStatsUtils.tsx");
 
 export const formatSinkWantStat = function formatSinkWantStat(id, ssrc, arg2) {
+  let str1;
   if (null == id[ssrc]) {
     let str2 = "100";
     if (arg2) {
       const _HermesInternal = HermesInternal;
       str2 = "" + id.any + " (any)";
     }
-    let str1 = str2;
+    str1 = str2;
   } else {
     str1 = str.toString();
   }

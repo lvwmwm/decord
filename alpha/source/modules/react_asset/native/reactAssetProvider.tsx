@@ -1,27 +1,29 @@
-// Module ID: 17991
-// Function ID: 17992
+// Module ID: 18077
+// Function ID: 18078
 // Name: reactAssetProvider
-// Dependencies: [17, 1364, 17992, 17993, 2]
+// Dependencies: [17, 1369, 18078, 18079, 2]
 // Exports: default
 
-// Module 17991 (reactAssetProvider)
-import NativeReactAssetModuleDefault from "NativeReactAssetModule" /* 17992 */;
-import native_required_assets from "native_required_assets" /* 17993 */;
-import get_ActivityIndicator from "module_17" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
+// Module 18077 (reactAssetProvider)
+import react_nativeDefault from "react-native" /* 18078 */;
+import native_required_assets from "native_required_assets" /* 18079 */;
+import react_native from "react-native" /* 17 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
 import size from "module_2" /* 2 */;
 
-({ Image: c2, NativeModules } = get_ActivityIndicator);
+let NativeModules;
+let c2;
+({ Image: c2, NativeModules } = react_native);
 if (PlatformUtils.isAndroid()) {
-  let NativeReactAssetModule = NativeReactAssetModuleDefault;
+  let NativeReactAssetModule = react_nativeDefault;
 } else {
   NativeReactAssetModule = NativeModules.NativeReactAssetModule;
 }
 const result = size.fileFinishedImporting("modules/react_asset/native/reactAssetProvider.tsx");
 
 export default function reactAssetProvider() {
-  return new Promise((arg0) => {
-    closure_0 = arg0;
+  const promise = new Promise((arg0) => {
+    let closure_0 = arg0;
     closure_3.keysRequest((arr) => {
       const NATIVE_REQUIRED_ASSETS = native_required_assets.NATIVE_REQUIRED_ASSETS;
       NativeReactAssetModule.valuesResult(arr.map((item) => {
@@ -34,4 +36,5 @@ export default function reactAssetProvider() {
       closure_0(true);
     });
   });
+  return promise;
 };

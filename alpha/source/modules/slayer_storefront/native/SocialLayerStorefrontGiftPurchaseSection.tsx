@@ -1,155 +1,405 @@
-// Module ID: 10668
-// Function ID: 10669
+// Module ID: 10556
+// Function ID: 10557
 // Name: SocialLayerStorefrontGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 7032, 1372, 1074, 1374, 21, 4845, 576, 6588, 6775, 504, 1241, 10669, 10469, 1364, 573, 10457, 1115, 10475, 4841, 5465, 2]
-// Exports: default
+// Dependencies: [5, 32, 19, 17, 6930, 1377, 1085, 1379, 21, 4890, 587, 558, 576, 6471, 6663, 504, 1252, 10557, 1369, 584, 10531, 10543, 1126, 4886, 10549, 5594, 2]
 
-// Module 10668 (SocialLayerStorefrontGiftPurchaseSection)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10457 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 10556 (SocialLayerStorefrontGiftPurchaseSection)
+import react_native from "react-native" /* 17 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 6930 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10531 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import UserStore from "UserStore" /* 1377 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-let useNativeCheckoutStore = fn(7032).useNativeCheckoutStore;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const GiftingOrigin = fn(1374).GiftingOrigin;
-const jsxProd = fn(21);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4845);
+let c1, c2, recipient, skuId;
+
+let closure_12;
+let unpackModuleId;
+const View = react_native.View;
+let useNativeCheckoutStore = NativeCheckoutStore.useNativeCheckoutStore;
+let AnalyticEvents = Constants.AnalyticEvents;
+const GiftingOrigin = PremiumConstants.GiftingOrigin;
+({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let closure_13 = createStyles.createStyles((arg0) => {
-  const obj = { container: null, legalCopy: null };
+  let obj2;
+  const obj = { container: obj2, legalCopy: { display: "flex", flexDirection: "column", gap: nativeDefault.space.PX_4 } };
+  obj2 = { paddingBottom: nativeDefault.space.PX_12 + arg0, paddingTop: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
   const merged = Object.assign(nativeDefault.shadows.SHADOW_TOP_HIGH);
-  obj.container = { paddingBottom: nativeDefault.space.PX_12 + arg0, paddingTop: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-  const obj2 = { paddingBottom: nativeDefault.space.PX_12 + arg0, paddingTop: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-  obj.legalCopy = { display: "flex", flexDirection: "column", gap: nativeDefault.space.PX_4 };
+  ({ display: "flex", flexDirection: "column", gap: nativeDefault.space.PX_4 });
   return obj;
 });
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontGiftPurchaseSection.tsx");
-
-export default function SocialLayerStorefrontGiftPurchaseSection(skuId) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
+  let closure_7;
+  let first;
+  let giftOptions;
+  let isPurchaseDisabled;
+  let ref;
+  let tmp11;
+  let tmp13;
+  let tmp16;
+  let tmp18;
+  const tmp = skuId;
+  let obj = skuId(giftOptions[12]);
+  const cResult = obj.c(58);
   skuId = skuId.skuId;
   const sku = skuId.sku;
   ({ isPurchaseDisabled, giftOptions } = skuId);
-  ({ giftingOrigin: asyncGeneratorStep, analyticsLocations } = skuId);
-  noop = undefined;
-  closure_6 = undefined;
-  useNativeCheckoutStore = undefined;
-  c8 = undefined;
-  let onPurchaseError;
-  let awaitSync;
-  closure_12 = undefined;
-  const tmp3 = closure_13(sku(giftOptions[11])().insets.bottom);
+  const giftingOrigin = skuId.giftingOrigin;
+  const analyticsLocations = skuId.analyticsLocations;
+  closure_13(sku(giftOptions[13])().insets.bottom);
   let applicationId;
+  const useGetOrFetchApplication = skuId(giftOptions[14]).useGetOrFetchApplication;
+  skuId(giftOptions[14]);
+  const tmp4 = sku;
   if (sku != null) {
     applicationId = sku.applicationId;
   }
-  const getOrFetchApplication = skuId(giftOptions[12]).useGetOrFetchApplication(applicationId);
-  let obj = skuId(giftOptions[12]);
+  const getOrFetchApplication = useGetOrFetchApplication(applicationId);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp10 = UserStore;
+    const items = [UserStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== giftOptions.recipient_id) {
+    const fn = function f() {
+      return UserStore.getUser(giftOptions.recipient_id);
+    };
+    cResult[1] = giftOptions.recipient_id;
+    cResult[2] = fn;
+    tmp11 = fn;
+  } else {
+    tmp11 = cResult[2];
+  }
+  const tmpResult = tmp(tmp2[15]);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp11);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class A {
+      constructor(analyticsFields) {
+        return analyticsFields.analyticsFields;
+      }
+    }
+    cResult[3] = A;
+    tmp13 = A;
+  } else {
+    class A {
+      constructor(analyticsFields) {
+        return analyticsFields.analyticsFields;
+      }
+    }
+  }
+  const tmp15 = useNativeCheckoutStore(tmp13);
+  let closure_6 = tmp15;
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class D {
+      constructor(setCheckoutFailed) {
+        return setCheckoutFailed.setCheckoutFailed;
+      }
+    }
+    cResult[4] = D;
+    tmp16 = D;
+  } else {
+    class D {
+      constructor(setCheckoutFailed) {
+        return setCheckoutFailed.setCheckoutFailed;
+      }
+    }
+  }
+  const tmp14Result = useNativeCheckoutStore(tmp16);
+  useNativeCheckoutStore = tmp14Result;
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class R {
+      constructor(isPatchOrderLoading) {
+        return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
+      }
+    }
+    cResult[5] = R;
+    tmp18 = R;
+  } else {
+    class R {
+      constructor(isPatchOrderLoading) {
+        return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
+      }
+    }
+  }
+  useNativeCheckoutStore(tmp18);
+  [r10083, UserStore] = analyticsLocations(stateFromStores.useState(false), 2);
+  analyticsLocations(stateFromStores.useState(false), 2);
+  AnalyticEvents = stateFromStores.useRef(false);
+  if (cResult[6] === tmp15) {
+    let tmp21;
+    class R {
+      constructor(isPatchOrderLoading) {
+        return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
+      }
+    }
+    const _Symbol = Symbol;
+    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+      class X {
+        constructor(orderRecord) {
+          return orderRecord.orderRecord;
+        }
+      }
+      cResult[9] = X;
+      tmp21 = X;
+    } else {
+      class X {
+        constructor(orderRecord) {
+          return orderRecord.orderRecord;
+        }
+      }
+    }
+    const tmp14Result4 = useNativeCheckoutStore(tmp21);
+    const awaitSync = tmp4(tmp2[17])(tmp14Result4, giftOptions).awaitSync;
+    if (cResult[10] !== giftOptions) {
+      class X {
+        constructor(orderRecord) {
+          return orderRecord.orderRecord;
+        }
+      }
+      tmp24[1] = giftOptions;
+      cResult[10] = giftOptions;
+      cResult[11] = tmp24;
+    } else {
+      class X {
+        constructor(orderRecord) {
+          return orderRecord.orderRecord;
+        }
+      }
+    }
+    if (tmp14Result4 != null) {
+      class X {
+        constructor(orderRecord) {
+          return orderRecord.orderRecord;
+        }
+      }
+    }
+    if (cResult[12] === analyticsLocations) {
+      class X {
+        constructor(orderRecord) {
+          return orderRecord.orderRecord;
+        }
+      }
+    }
+    cResult[12] = analyticsLocations;
+    cResult[13] = tmp15;
+    cResult[14] = giftOptions.recipient_id;
+    cResult[15] = giftingOrigin;
+    cResult[16] = stateFromStores;
+    if (sku != null) {
+      class X {
+        constructor(orderRecord) {
+          return orderRecord.orderRecord;
+        }
+      }
+    }
+    class V {
+      constructor() {
+        let orbsReward;
+        ref.current = false;
+        const obj = PlatformUtils;
+        if (obj.isIOS()) {
+          const obj2 = AnalyticsUtilsDefault;
+          obj2.track(AnalyticEvents.PAYMENT_FLOW_SUCCEEDED, closure_6);
+        }
+        UserStore(false);
+        let tmp9 = null == giftOptions.recipient_id;
+        const tmp8 = giftOptions;
+        if (!tmp9) {
+          tmp9 = giftingOrigin !== GiftingOrigin.USER_PROFILE_WISHLIST && tmp10 !== GiftingOrigin.DM_CHANNEL_WISHLIST;
+        }
+        if (!tmp9) {
+          const obj4 = { type: "WISHLIST_GIFT_SENT", skuId, recipientId: tmp8.recipient_id };
+          const obj3 = DispatcherDefault;
+          obj3.dispatch(obj4);
+        }
+        const obj5 = { skuId, orbsReward, recipient: stateFromStores, analyticsLocations };
+        orbsReward = undefined;
+        const openSocialLayerStorefrontProductGiftPurchaseSuccessModal = SocialLayerStorefrontNativeActionCreators.openSocialLayerStorefrontProductGiftPurchaseSuccessModal;
+        SocialLayerStorefrontNativeActionCreators;
+        if (sku != null) {
+          orbsReward = sku.orbsReward;
+        }
+        const result = openSocialLayerStorefrontProductGiftPurchaseSuccessModal(obj5);
+        result.then(SocialLayerStorefrontNativeActionCreators.closeSocialLayerStorefrontGiftModal);
+      }
+    }
+    cResult[17] = undefined;
+    cResult[18] = skuId;
+    cResult[19] = V;
+  }
+  class G {
+    constructor() {
+      if (ref.current) {
+        tmp.current = false;
+        const obj = AnalyticsUtilsDefault;
+        obj.track(AnalyticEvents.PAYMENT_FLOW_FAILED, closure_6);
+        closure_7();
+      }
+      UserStore(false);
+    }
+  }
+  cResult[6] = tmp15;
+  cResult[7] = tmp14Result;
+  cResult[8] = G;
+}) : ((skuId) => {
+  let _undefined;
+  let analyticsLocations;
+  let c8;
+  let closure_7;
+  let giftOptions;
+  let id;
+  let isPurchaseDisabled;
+  let items3;
+  let mobileFinePrintMessageForApplication;
+  let tmp12;
+  skuId = skuId.skuId;
+  const sku = skuId.sku;
+  ({ isPurchaseDisabled, giftOptions } = skuId);
+  ({ giftingOrigin: _asyncToGenerator, analyticsLocations } = skuId);
+  recipient = undefined;
+  let closure_6;
+  useNativeCheckoutStore = undefined;
+  c8 = undefined;
+  let ref;
+  let onPurchaseError;
+  let awaitSync;
+  closure_12 = undefined;
+  const tmp = sku;
+  const tmp2 = giftOptions;
+  const tmp3 = closure_13(sku(giftOptions[13])().insets.bottom);
+  let applicationId;
+  const useGetOrFetchApplication = skuId(giftOptions[14]).useGetOrFetchApplication;
+  const tmp5 = skuId(giftOptions[14]);
+  if (sku != null) {
+    applicationId = sku.applicationId;
+  }
+  const getOrFetchApplication = useGetOrFetchApplication(applicationId);
   const items = [c8];
-  noop = skuId(giftOptions[13]).useStateFromStores(items, () => UserStore.getUser(giftOptions.recipient_id));
-  const tmp7 = useNativeCheckoutStore((analyticsFields) => analyticsFields.analyticsFields);
-  closure_6 = tmp7;
-  let tmp8 = useNativeCheckoutStore((setCheckoutFailed) => setCheckoutFailed.setCheckoutFailed);
-  useNativeCheckoutStore = tmp8;
-  const tmp4Result = skuId(giftOptions[13]);
-  let tmp9 = useNativeCheckoutStore((isPatchOrderLoading) => isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading);
-  [tmp11, c8] = analyticsLocations(noop.useState(false), 2);
-  noop.useRef(false);
-  const items1 = [tmp7, tmp8];
-  onPurchaseError = noop.useCallback(() => {
+  const tmp4Result = skuId(tmp2[15]);
+  recipient = tmp4Result.useStateFromStores(items, () => UserStore.getUser(giftOptions.recipient_id));
+  let tmp8 = useNativeCheckoutStore((analyticsFields) => analyticsFields.analyticsFields);
+  closure_6 = tmp8;
+  let tmp9 = useNativeCheckoutStore((setCheckoutFailed) => setCheckoutFailed.setCheckoutFailed);
+  useNativeCheckoutStore = tmp9;
+  const tmp10 = useNativeCheckoutStore((isPatchOrderLoading) => isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading);
+  const tmp11 = analyticsLocations(recipient.useState(false), 2);
+  [tmp12, c8] = tmp11;
+  ref = recipient.useRef(false);
+  const items1 = [tmp8, tmp9];
+  onPurchaseError = recipient.useCallback(() => {
     if (ref.current) {
       tmp.current = false;
-      AnalyticsUtilsDefault.track(AnalyticEvents.PAYMENT_FLOW_FAILED, closure_6);
+      const obj = AnalyticsUtilsDefault;
+      obj.track(AnalyticEvents.PAYMENT_FLOW_FAILED, closure_6);
       closure_7();
     }
     _undefined(false);
   }, items1);
-  const tmp13 = useNativeCheckoutStore((orderRecord) => orderRecord.orderRecord);
-  awaitSync = tmp(tmp2[15])(tmp13, giftOptions).awaitSync;
+  const tmp14 = useNativeCheckoutStore((orderRecord) => orderRecord.orderRecord);
+  awaitSync = tmp(tmp2[17])(tmp14, giftOptions).awaitSync;
   const items2 = [giftOptions];
-  const memo = noop.useMemo(() => ({ isGift: true, options: giftOptions }), items2);
-  let obj2 = { skuId, sku, giftParams: memo, analyticsLoadId: tmp7.load_id, analyticsLocations, orderId: null, analyticsData: null, onPurchaseComplete: null, onPurchaseError: null, onPurchasePending: null };
-  let id;
-  const tmp10 = analyticsLocations(noop.useState(false), 2);
-  if (tmp13 != null) {
-    id = tmp13.id;
-  }
-  obj2.orderId = id;
-  obj2.analyticsData = tmp7;
-  obj2.onPurchaseComplete = function onPurchaseComplete() {
-    closure_9.current = false;
-    if (obj.isIOS()) {
-      AnalyticsUtilsDefault.track(AnalyticEvents.PAYMENT_FLOW_SUCCEEDED, closure_6);
-    }
-    _undefined(false);
-    let tmp9 = null == giftOptions.recipient_id;
-    if (!tmp9) {
-      tmp9 = asyncGeneratorStep !== GiftingOrigin.USER_PROFILE_WISHLIST && tmp10 !== GiftingOrigin.DM_CHANNEL_WISHLIST;
-      const tmp11 = asyncGeneratorStep !== GiftingOrigin.USER_PROFILE_WISHLIST && tmp10 !== GiftingOrigin.DM_CHANNEL_WISHLIST;
-    }
-    if (!tmp9) {
-      const obj4 = { type: "WISHLIST_GIFT_SENT", skuId, recipientId: tmp8.recipient_id };
-      DispatcherDefault.dispatch(obj4);
-    }
-    obj = PlatformUtils;
-    tmp8 = giftOptions;
-    const obj5 = { skuId, orbsReward: null, recipient: null, analyticsLocations: null };
-    let orbsReward;
-    if (sku != null) {
-      orbsReward = sku.orbsReward;
-    }
-    obj5.orbsReward = orbsReward;
-    obj5.recipient = recipient;
-    obj5.analyticsLocations = analyticsLocations;
-    const result = SocialLayerStorefrontNativeActionCreators.openSocialLayerStorefrontProductGiftPurchaseSuccessModal(obj5);
-    result.then(SocialLayerStorefrontNativeActionCreators.closeSocialLayerStorefrontGiftModal);
-  };
-  obj2.onPurchaseError = onPurchaseError;
-  obj2.onPurchasePending = function onPurchasePending() {
+  const memo = recipient.useMemo(() => ({ isGift: true, options: giftOptions }), items2);
+  let obj = {
+    skuId,
+    sku,
+    giftParams: memo,
+    analyticsLoadId: tmp8.load_id,
+    analyticsLocations,
+    orderId: id,
+    analyticsData: tmp8,
+    onPurchaseComplete() {
+      let orbsReward;
+      ref.current = false;
+      const obj = PlatformUtils;
+      if (obj.isIOS()) {
+        const obj2 = AnalyticsUtilsDefault;
+        obj2.track(AnalyticEvents.PAYMENT_FLOW_SUCCEEDED, closure_6);
+      }
+      _undefined(false);
+      let tmp9 = null == giftOptions.recipient_id;
+      const tmp8 = giftOptions;
+      if (!tmp9) {
+        tmp9 = _asyncToGenerator !== GiftingOrigin.USER_PROFILE_WISHLIST && tmp10 !== GiftingOrigin.DM_CHANNEL_WISHLIST;
+      }
+      if (!tmp9) {
+        const obj4 = { type: "WISHLIST_GIFT_SENT", skuId, recipientId: tmp8.recipient_id };
+        const obj3 = DispatcherDefault;
+        obj3.dispatch(obj4);
+      }
+      const obj5 = { skuId, orbsReward, recipient, analyticsLocations };
+      orbsReward = undefined;
+      const openSocialLayerStorefrontProductGiftPurchaseSuccessModal = SocialLayerStorefrontNativeActionCreators.openSocialLayerStorefrontProductGiftPurchaseSuccessModal;
+      SocialLayerStorefrontNativeActionCreators;
+      if (sku != null) {
+        orbsReward = sku.orbsReward;
+      }
+      const result = openSocialLayerStorefrontProductGiftPurchaseSuccessModal(obj5);
+      result.then(SocialLayerStorefrontNativeActionCreators.closeSocialLayerStorefrontGiftModal);
+    },
+    onPurchaseError,
+    onPurchasePending() {
 
+    }
   };
-  closure_12 = sku(giftOptions[16])(obj2);
-  const intl = tmp4(tmp2[20]).intl;
-  const stringResult = intl.string(skuId(giftOptions[20]).t.ouo4FK);
-  let obj3 = { style: tmp3.container, children: null };
-  let obj4 = { style: tmp3.legalCopy, children: null };
-  const tmp18 = closure_12;
-  const tmpResult = sku(giftOptions[16]);
-  const mobileFinePrintMessageForApplication = skuId(giftOptions[21]).getMobileFinePrintMessageForApplication(getOrFetchApplication, stringResult, { shouldAppendDisclaimer: true });
-  obj4.children = mobileFinePrintMessageForApplication.map((children, index) => awaitSync(skuId(giftOptions[22]).Text, { variant: "text-xs/normal", color: "text-muted", children }, index));
-  const items3 = [awaitSync(closure_6, obj4), ];
+  id = undefined;
+  const tmpResult = tmp(tmp2[21]);
+  if (tmp14 != null) {
+    id = tmp14.id;
+  }
+  closure_12 = tmpResult(obj);
+  const intl = tmp4(tmp2[22]).intl;
+  const stringResult = intl.string(skuId(tmp2[22]).t.ouo4FK);
+  let obj2 = { style: tmp3.container, children: items3 };
+  let obj3 = {
+    style: tmp3.legalCopy,
+    children: mobileFinePrintMessageForApplication.map((children, index) => {
+      const obj = { variant: "text-xs/normal", color: "text-muted", children };
+      return awaitSync(skuId(giftOptions[23]).Text, obj, index);
+    })
+  };
+  const getMobileFinePrintMessageForApplication = tmp4(tmp2[24]).getMobileFinePrintMessageForApplication;
+  skuId(tmp2[24]);
+  mobileFinePrintMessageForApplication = getMobileFinePrintMessageForApplication(getOrFetchApplication, stringResult, { shouldAppendDisclaimer: true });
+  items3 = [awaitSync(closure_6, obj3), ];
+  const Button = tmp4(tmp2[25]).Button;
+  const tmp19 = closure_12;
   if (!isPurchaseDisabled) {
-    isPurchaseDisabled = tmp11;
+    isPurchaseDisabled = tmp12;
   }
   if (!isPurchaseDisabled) {
-    isPurchaseDisabled = tmp9;
+    isPurchaseDisabled = tmp10;
   }
-  const tmp4Result2 = skuId(giftOptions[21]);
-  items3[1] = awaitSync(skuId(giftOptions[23]).Button, {
+  let obj4 = {
     variant: "active",
     disabled: isPurchaseDisabled,
-    loading: tmp11,
+    loading: tmp12,
     text: stringResult,
-    onPress: asyncGeneratorStep(async (arg0, value) => {
+    onPress: _asyncToGenerator(async (arg0, value) => {
       if (c2 === 2) {
         c2 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
+      } else if (tmp2 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -163,8 +413,8 @@ export default function SocialLayerStorefrontGiftPurchaseSection(skuId) {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              closure_0 = tmp4;
-              closure_9.current = true;
+              let closure_0 = tmp3;
+              ref.current = true;
               _undefined(true);
               c1 = 1;
               c2 = 1;
@@ -180,20 +430,24 @@ export default function SocialLayerStorefrontGiftPurchaseSection(skuId) {
             return obj;
           } else {
             if (value) {
-              closure_128_12().catch(closure_128_10);
               const promise = closure_128_12();
+              promise.catch(closure_128_10);
             } else {
               closure_128_10();
             }
             c2 = 3;
+            return { value: "IconComponent", done: "IconComponent" };
           }
-        } catch (tmp15) {
-          c2 = tmp;
-          throw tmp15;
+        } catch (tmp14) {
+          c2 = 3;
+          throw tmp14;
         }
       }
     })
-  });
-  obj3.children = items3;
-  return tmp18(closure_6, obj3);
-};
+  };
+  items3[1] = awaitSync(Button, obj4);
+  return tmp19(closure_6, obj2);
+});
+let result = size.fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontGiftPurchaseSection.tsx");
+
+export default tmp3;

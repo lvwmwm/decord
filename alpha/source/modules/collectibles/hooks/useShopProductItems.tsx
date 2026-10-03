@@ -1,19 +1,47 @@
-// Module ID: 7798
-// Function ID: 7799
+// Module ID: 7842
+// Function ID: 7843
 // Name: useShopProductItems
-// Dependencies: [19, 1974, 1115, 2]
-// Exports: getBundleItemNames, getProductItems, getPurchasedItem, useShopProductItems
+// Dependencies: [19, 1980, 558, 576, 1126, 2]
+// Exports: getBundleItemNames, getProductItems, getPurchasedItem
 
-// Module 7798 (useShopProductItems)
-import util from "util" /* 1115 */;
-import noop from "module_19" /* 19 */;
+// Module 7842 (useShopProductItems)
+import react2 from "react" /* 576 */;
+import intl4 from "intl" /* 1126 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+const require = globalThis.__r;
+let map;
+
 class ItemsSortingHat {
-  constructor(arg0) {
-    obj = Object.create(new.target.prototype);
-    obj.itemsByTypes = obj.sortByTypes(global);
+  constructor(items) {
+    const obj = Object.create(new.target.prototype);
+    obj.itemsByTypes = obj.sortByTypes(items);
     return obj;
+  }
+  getFirstItemByType(AVATAR_DECORATION) {
+    const itemsByTypes = this.itemsByTypes;
+    let items = itemsByTypes.get(AVATAR_DECORATION);
+    if (items == null) {
+      items = [];
+    }
+    const first = items[0];
+    return null != first ? first : undefined;
+  }
+  sortByTypes(items) {
+    const reduce = items.reduce;
+    map = new Map();
+    return reduce((get, type) => {
+      const value = get.get(type.type);
+      if (null != value) {
+        value.push(type);
+      } else {
+        const items = [type];
+        const result = get.set(type.type, items);
+      }
+      return get;
+    }, map);
   }
 }
 const prototype = ItemsSortingHat.prototype;
@@ -41,77 +69,81 @@ Object.defineProperty(prototype, "firstProfileFrame", {
   },
   set: undefined
 });
-prototype["getFirstItemByType"] = function getFirstItemByType(AVATAR_DECORATION) {
-  const itemsByTypes = this.itemsByTypes;
-  let items = itemsByTypes.get(AVATAR_DECORATION);
-  if (items == null) {
-    items = [];
-  }
-  const first = items[0];
-  return null != first ? first : undefined;
-};
-prototype["sortByTypes"] = function sortByTypes(arr) {
-  return arr.reduce((get, type) => {
-    value = get.get(type.type);
-    if (null != value) {
-      value.push(type);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+  let tmp2;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] !== arg0) {
+    const self = this;
+    if (typeof ItemsSortingHat === "function") {
+      const obj2 = Object.create(ItemsSortingHat.prototype);
+      obj2.itemsByTypes = obj2.sortByTypes(tmp3);
+      const obj5 = { firstProfileEffect: null, firstAvatarDecoration: null, firstNameplate: null, firstProfileFrame: null };
+      ({ firstProfileEffect: obj3.firstProfileEffect, firstAvatarDecoration: obj3.firstAvatarDecoration, firstNameplate: obj3.firstNameplate, firstProfileFrame: obj3.firstProfileFrame } = obj2);
+      cResult[0] = arg0;
+      cResult[1] = obj5;
+      tmp2 = obj5;
     } else {
-      const items = [type];
-      const result = get.set(type.type, items);
+      throw new TypeError("Trying to call a non-function");
     }
-    return get;
-  }, new Map());
-};
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/collectibles/hooks/useShopProductItems.tsx");
-
-export { ItemsSortingHat };
-export const getProductItems = function getProductItems(arg0) {
+  } else {
+    tmp2 = cResult[1];
+  }
+  return tmp2;
+}) : ((arg0) => {
+  let closure_0 = arg0;
+  const items = [arg0];
+  return react.useMemo(() => {
+    if (typeof ItemsSortingHat === "function") {
+      const obj = Object.create(ItemsSortingHat.prototype);
+      obj.itemsByTypes = obj.sortByTypes(tmp);
+      const obj3 = { firstProfileEffect: null, firstAvatarDecoration: null, firstNameplate: null, firstProfileFrame: null };
+      ({ firstProfileEffect: obj2.firstProfileEffect, firstAvatarDecoration: obj2.firstAvatarDecoration, firstNameplate: obj2.firstNameplate, firstProfileFrame: obj2.firstProfileFrame } = obj);
+      return obj3;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  }, items);
+});
+function getProductItems(type) {
   if (typeof ItemsSortingHat === "function") {
     const obj = Object.create(ItemsSortingHat.prototype);
     obj.itemsByTypes = obj.sortByTypes(tmp);
+    const obj3 = { firstProfileEffect: null, firstAvatarDecoration: null, firstNameplate: null, firstProfileFrame: null };
     ({ firstProfileEffect: obj2.firstProfileEffect, firstAvatarDecoration: obj2.firstAvatarDecoration, firstNameplate: obj2.firstNameplate, firstProfileFrame: obj2.firstProfileFrame } = obj);
-    return { firstProfileEffect: null, firstAvatarDecoration: null, firstNameplate: null, firstProfileFrame: null };
+    return obj3;
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-};
+}
+let result = size.fileFinishedImporting("modules/collectibles/hooks/useShopProductItems.tsx");
+
+export { ItemsSortingHat };
+export { getProductItems };
 export const getPurchasedItem = function getPurchasedItem(arg0, firstAvatarDecoration) {
   let tmp;
   if (null != arg0) {
+    const self = this;
     if (typeof ItemsSortingHat === "function") {
       const obj = Object.create(tmp2.prototype);
       obj.itemsByTypes = obj.sortByTypes(tmp3);
-      ({ firstProfileEffect: obj2.firstProfileEffect, firstAvatarDecoration: obj2.firstAvatarDecoration, firstNameplate: obj2.firstNameplate, firstProfileFrame: obj2.firstProfileFrame } = obj);
-      tmp = { firstProfileEffect: null, firstAvatarDecoration: null, firstNameplate: null, firstProfileFrame: null }[firstAvatarDecoration];
       const obj3 = { firstProfileEffect: null, firstAvatarDecoration: null, firstNameplate: null, firstProfileFrame: null };
+      ({ firstProfileEffect: obj2.firstProfileEffect, firstAvatarDecoration: obj2.firstAvatarDecoration, firstNameplate: obj2.firstNameplate, firstProfileFrame: obj2.firstProfileFrame } = obj);
+      tmp = obj3[firstAvatarDecoration];
     } else {
       throw new TypeError("Trying to call a non-function");
     }
   }
   return tmp;
 };
-export const useShopProductItems = function useShopProductItems(product) {
-  closure_0 = product;
-  const items = [product];
-  return noop.useMemo(() => {
-    if (typeof ItemsSortingHat === "function") {
-      const obj = Object.create(ItemsSortingHat.prototype);
-      obj.itemsByTypes = obj.sortByTypes(tmp);
-      ({ firstProfileEffect: obj2.firstProfileEffect, firstAvatarDecoration: obj2.firstAvatarDecoration, firstNameplate: obj2.firstNameplate, firstProfileFrame: obj2.firstProfileFrame } = obj);
-      return { firstProfileEffect: null, firstAvatarDecoration: null, firstNameplate: null, firstProfileFrame: null };
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  }, items);
-};
+export const useShopProductItems = tmp2;
 export const getBundleItemNames = function getBundleItemNames(bundledProducts) {
-  const intl = util.intl;
-  let stringResult = intl.string(util.t["7v0T9P"]);
-  const intl2 = util.intl;
-  let stringResult1 = intl2.string(util.t.wR5wOo);
-  const intl3 = util.intl;
-  let stringResult2 = intl3.string(util.t.x5CoXR);
+  const intl = intl4.intl;
+  let stringResult = intl.string(intl4.t["7v0T9P"]);
+  const intl2 = intl4.intl;
+  let stringResult1 = intl2.string(intl4.t.wR5wOo);
+  const intl3 = intl4.intl;
+  let stringResult2 = intl3.string(intl4.t.x5CoXR);
   let itemThreeName = stringResult2;
   let itemTwoName = stringResult1;
   let itemOneName = stringResult;

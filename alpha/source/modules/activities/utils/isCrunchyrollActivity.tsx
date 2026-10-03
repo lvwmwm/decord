@@ -1,11 +1,11 @@
-// Module ID: 7974
-// Function ID: 7975
+// Module ID: 8020
+// Function ID: 8021
 // Name: isCrunchyrollActivity
-// Dependencies: [7968, 2]
+// Dependencies: [8014, 2]
 // Exports: default
 
-// Module 7974 (isCrunchyrollActivity)
-import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 7968 */;
+// Module 8020 (isCrunchyrollActivity)
+import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 8014 */;
 import size from "module_2" /* 2 */;
 
 const CRUNCHYROLL_CLIENT_ID = CrunchyrollConnectionConstants.CRUNCHYROLL_CLIENT_ID;

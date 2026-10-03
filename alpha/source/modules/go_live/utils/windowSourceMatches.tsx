@@ -1,13 +1,13 @@
-// Module ID: 13577
-// Function ID: 13578
-// Name: windowSourceMatches
+// Module ID: 13639
+// Function ID: 13640
+// Name: _slicedToArray
 // Dependencies: [32, 2]
 // Exports: default
 
-// Module 13577 (windowSourceMatches)
-import _slicedToArray from "module_32" /* 32 */;
+// Module 13639 (_slicedToArray)
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/go_live/utils/windowSourceMatches.tsx");
 
 export default function windowSourceMatches(str, arg1) {

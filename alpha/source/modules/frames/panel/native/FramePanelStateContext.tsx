@@ -1,13 +1,14 @@
-// Module ID: 17109
-// Function ID: 17110
+// Module ID: 17170
+// Function ID: 17171
 // Name: FramePanelStateContext
-// Dependencies: [19, 17083, 2]
+// Dependencies: [19, 17144, 2]
 
-// Module 17109 (FramePanelStateContext)
-import noop from "module_19" /* 19 */;
+// Module 17170 (FramePanelStateContext)
+import ActivityPanelStateContext from "ActivityPanelStateContext" /* 17144 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const context = noop.createContext(fn(17083).activityPanelStateContextDefault);
-const size = fn(2);
+const context = react.createContext(ActivityPanelStateContext.activityPanelStateContextDefault);
 const result = size.fileFinishedImporting("modules/frames/panel/native/FramePanelStateContext.tsx");
 
 export default context;

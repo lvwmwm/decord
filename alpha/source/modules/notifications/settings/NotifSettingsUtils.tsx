@@ -1,54 +1,111 @@
-// Module ID: 13428
-// Function ID: 13429
+// Module ID: 13488
+// Function ID: 13489
 // Name: settings/NotifSettingsUtils
-// Dependencies: [13429, 1222, 13430, 504, 2]
-// Exports: b64ToDeclarativeSettingsProto, useNotifSettingRadioValue, useNotifSettingToggleValue, useNotifSettingValue
+// Dependencies: [13489, 1233, 13490, 558, 576, 504, 2]
+// Exports: b64ToDeclarativeSettingsProto
 
-// Module 13428 (settings/NotifSettingsUtils)
-import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1222 */;
-import notification_settings from "notification_settings" /* 13430 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 13429 */;
+// Module 13488 (settings/NotifSettingsUtils)
+import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1233 */;
+import notification_settings from "notification_settings" /* 13490 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 13489 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/notifications/settings/NotifSettingsUtils.tsx");
-
-export const b64ToDeclarativeSettingsProto = function b64ToDeclarativeSettingsProto(declarative_settings_proto) {
-  return user_settings_UserSettingsUtils.b64ToProto(notification_settings.DeclarativeSettings, declarative_settings_proto);
-};
-export const useNotifSettingValue = function useNotifSettingValue(arg0) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  let tmp7;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(4);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [NotifSettingsProtoStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      return NotifSettingsProtoStore.getSetting(closure_0);
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6, tmp7);
+}) : ((arg0) => {
+  let closure_0;
   _require = arg0;
   const items = [NotifSettingsProtoStore];
   const items1 = [arg0];
-  return require("initialize").useStateFromStores(items, () => NotifSettingsProtoStore.getSetting(closure_0), items1);
-};
-export const useNotifSettingToggleValue = function useNotifSettingToggleValue(GAMING_DEFAULT) {
-  _require = GAMING_DEFAULT;
-  const items = [NotifSettingsProtoStore];
-  const items1 = [GAMING_DEFAULT];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => NotifSettingsProtoStore.getSetting(closure_0), items1);
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => NotifSettingsProtoStore.getSetting(closure_0), items1);
+});
+let closure_3 = tmp2;
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const tmp = closure_3(arg0);
   let flag;
-  if (stateFromStores != null) {
-    flag = stateFromStores.toggle;
+  if (tmp != null) {
+    flag = tmp.toggle;
   }
   if (flag == null) {
     flag = true;
   }
   return flag;
-};
-export const useNotifSettingRadioValue = function useNotifSettingRadioValue(arg0) {
-  _require = arg0;
-  const items = [NotifSettingsProtoStore];
-  const items1 = [arg0];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => NotifSettingsProtoStore.getSetting(closure_0), items1);
+}) : ((arg0) => {
+  const tmp = closure_3(arg0);
+  let flag;
+  if (tmp != null) {
+    flag = tmp.toggle;
+  }
+  if (flag == null) {
+    flag = true;
+  }
+  return flag;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const tmp = closure_3(arg0);
   let num;
-  if (stateFromStores != null) {
-    num = stateFromStores.radio;
+  if (tmp != null) {
+    num = tmp.radio;
   }
   if (num == null) {
     num = 0;
   }
   return num;
+}) : ((arg0) => {
+  const tmp = closure_3(arg0);
+  let num;
+  if (tmp != null) {
+    num = tmp.radio;
+  }
+  if (num == null) {
+    num = 0;
+  }
+  return num;
+});
+const result = size.fileFinishedImporting("modules/notifications/settings/NotifSettingsUtils.tsx");
+
+export const b64ToDeclarativeSettingsProto = function b64ToDeclarativeSettingsProto(declarative_settings_proto) {
+  const obj = user_settings_UserSettingsUtils;
+  return obj.b64ToProto(notification_settings.DeclarativeSettings, declarative_settings_proto);
 };
+export const useNotifSettingValue = tmp2;
+export const useNotifSettingToggleValue = tmp3;
+export const useNotifSettingRadioValue = tmp4;

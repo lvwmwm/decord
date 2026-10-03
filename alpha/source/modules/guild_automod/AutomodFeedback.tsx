@@ -1,11 +1,11 @@
-// Module ID: 7126
-// Function ID: 7127
+// Module ID: 7027
+// Function ID: 7028
 // Name: AutomodFeedback
-// Dependencies: [1115, 2]
+// Dependencies: [1126, 2]
 // Exports: generateFeedbackOptions, getMostImportantRaidResolutionType
 
-// Module 7126 (AutomodFeedback)
-import util from "util" /* 1115 */;
+// Module 7027 (AutomodFeedback)
+import intl3 from "intl" /* 1126 */;
 import size from "module_2" /* 2 */;
 
 const Feedback = { BUG: "BUG", ALLOWED: "ALLOWED", MENTION_RAID_REMOVE_RESTRICTION: "MENTION_RAID_REMOVE_RESTRICTION" };
@@ -14,24 +14,24 @@ const result = size.fileFinishedImporting("modules/guild_automod/AutomodFeedback
 
 export { Feedback };
 export const generateFeedbackOptions = function generateFeedbackOptions() {
-  const obj = { name: null, value: null };
-  const intl = util.intl;
-  obj.name = intl.string(util.t["+MbOX4"]);
-  obj.value = obj.BUG;
+  let intl;
+  let intl2;
+  let obj;
+  obj = { name: intl.string(intl3.t["+MbOX4"]), value: obj.BUG };
+  intl = intl3.intl;
   const items = [obj, ];
-  obj2 = { name: null, value: null };
-  const intl2 = util.intl;
-  obj2.name = intl2.string(util.t.CRsCRC);
-  obj2.value = obj.ALLOWED;
+  obj2 = { name: intl2.string(intl3.t.CRsCRC), value: obj.ALLOWED };
+  intl2 = intl3.intl;
   items[1] = obj2;
   return items;
 };
 export const RaidAlertType = { JOIN_RAID: "JOIN_RAID", MENTION_RAID: "MENTION_RAID" };
 export const RaidResolutionType = obj2;
 export const getMostImportantRaidResolutionType = function getMostImportantRaidResolutionType(c3) {
+  let DM_SPAM;
   if (c3.includes(obj2.LEGITIMATE_ACTIVITY)) {
-    let DM_SPAM = tmp.LEGITIMATE_ACTIVITY;
-  } else if (c3.includes(tmp.DM_SPAM)) {
+    DM_SPAM = tmp.LEGITIMATE_ACTIVITY;
+  } else if (c3.includes(obj2.DM_SPAM)) {
     DM_SPAM = tmp.DM_SPAM;
   } else {
     DM_SPAM = c3.includes(tmp.JOIN_RAID) ? tmp.JOIN_RAID : tmp.OTHER;

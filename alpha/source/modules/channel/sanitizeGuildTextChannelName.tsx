@@ -1,16 +1,17 @@
-// Module ID: 5000
-// Function ID: 5001
+// Module ID: 5045
+// Function ID: 5046
 // Name: sanitizeGuildTextChannelName
 // Dependencies: [2]
 // Exports: default
 
-// Module 5000 (sanitizeGuildTextChannelName)
+// Module 5045 (sanitizeGuildTextChannelName)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/channel/sanitizeGuildTextChannelName.tsx");
 
 export default function sanitizeGuildTextChannelName(str) {
   str = str.replace(/[\s-~]+/g, "-");
-  const str2 = str.replace(/[\s-~]+/g, "-").replace(/^-+/, "");
-  return str.replace(/[\s-~]+/g, "-").replace(/^-+/, "").replace(/[\\'!"#$%&()*+,./:;<=>?@[\]^`{|}~]/g, "").toLowerCase();
+  const str2 = str.replace(/^-+/, "");
+  const str3 = str2.replace(/[\\'!"#$%&()*+,./:;<=>?@[\]^`{|}~]/g, "");
+  return str3.toLowerCase();
 };

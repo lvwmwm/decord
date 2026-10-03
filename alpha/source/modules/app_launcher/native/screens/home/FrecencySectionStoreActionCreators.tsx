@@ -1,15 +1,17 @@
-// Module ID: 11748
-// Function ID: 11749
+// Module ID: 11669
+// Function ID: 11670
 // Name: FrecencySectionStoreActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [584, 2]
 // Exports: setFrecencySectionSelection
 
-// Module 11748 (FrecencySectionStoreActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 11669 (FrecencySectionStoreActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_launcher/native/screens/home/FrecencySectionStoreActionCreators.tsx");
 
 export const setFrecencySectionSelection = function setFrecencySectionSelection(APPS) {
-  DispatcherDefault.dispatch({ type: "FRECENCY_SECTION_SET_SELECTION", selection: APPS });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "FRECENCY_SECTION_SET_SELECTION", selection: APPS };
+  obj.dispatch(obj2);
 };

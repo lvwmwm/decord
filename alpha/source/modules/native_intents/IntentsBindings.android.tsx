@@ -1,14 +1,12 @@
-// Module ID: 17947
-// Function ID: 17948
+// Module ID: 18033
+// Function ID: 18034
 // Name: IntentsBindings
 // Dependencies: [2]
 
-// Module 17947 (IntentsBindings)
+// Module 18033 (IntentsBindings)
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/native_intents/IntentsBindings.android.tsx");
-
-export default {
+const obj = {
   hasSearch() {
     return false;
   },
@@ -34,3 +32,6 @@ export default {
 
   }
 };
+const result = size.fileFinishedImporting("modules/native_intents/IntentsBindings.android.tsx");
+
+export default obj;

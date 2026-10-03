@@ -1,13 +1,15 @@
-// Module ID: 13506
-// Function ID: 13507
+// Module ID: 13566
+// Function ID: 13567
 // Name: GuildMFAWarningStore
-// Dependencies: [4496, 1372, 1074, 504, 573, 2]
+// Dependencies: [4507, 1377, 1085, 504, 584, 2]
 
-// Module 13506 (GuildMFAWarningStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildChannelStore from "GuildChannelStore" /* 4496 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 13566 (GuildMFAWarningStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import UserStore from "UserStore" /* 1377 */;
+import size from "module_2" /* 2 */;
 
 function handleUserStoreUpdates() {
   const currentUser = UserStore.getCurrentUser();
@@ -18,38 +20,29 @@ function handleUserStoreUpdates() {
   }
   return false;
 }
-const MFALevels = fn(1074).MFALevels;
+const MFALevels = Constants.MFALevels;
 let mfaEnabled = null;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class GuildMFAWarningStore extends Store {
+  initialize() {
+    this.waitFor(UserStore, GuildChannelStore);
+    const items = [UserStore, GuildChannelStore];
+    this.syncWith(items, handleUserStoreUpdates);
+  }
+  isVisible(mfaLevel) {
+    const result = null != mfaLevel && mfaLevel.mfaLevel === MFALevels.ELEVATED && false === mfaEnabled && GuildChannelStore.hasElevatedPermissions(mfaLevel.id);
+    return result;
+  }
 }
 const prototype = GuildMFAWarningStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.waitFor(UserStore, GuildChannelStore);
-  const items = [UserStore, GuildChannelStore];
-  this.syncWith(items, handleUserStoreUpdates);
-};
-prototype["isVisible"] = function isVisible(mfaLevel) {
-  let result = null != mfaLevel;
-  if (result) {
-    result = mfaLevel.mfaLevel === MFALevels.ELEVATED;
-  }
-  if (result) {
-    result = false === mfaEnabled;
-  }
-  if (result) {
-    result = GuildChannelStore.hasElevatedPermissions(mfaLevel.id);
-  }
-  return result;
-};
 GuildMFAWarningStore.displayName = "GuildMFAWarningStore";
-const guildMFAWarningStore = new GuildMFAWarningStore(DispatcherDefault, {
+const obj = {
   CONNECTION_OPEN: handleUserStoreUpdates,
   GUILD_UPDATE: function handleGuildPermissionsUpdate() {
     return true;
   }
-});
-const size = fn(2);
+};
+const guildMFAWarningStore = new GuildMFAWarningStore(DispatcherDefault, obj);
 let result = size.fileFinishedImporting("stores/channel_notices/GuildMFAWarningStore.tsx");
 
 export default guildMFAWarningStore;

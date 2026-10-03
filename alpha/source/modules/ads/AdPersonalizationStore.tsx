@@ -1,22 +1,25 @@
-// Module ID: 13433
-// Function ID: 13434
+// Module ID: 13493
+// Function ID: 13494
 // Name: AdPersonalizationStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 584, 2]
 
-// Module 13433 (AdPersonalizationStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 13493 (AdPersonalizationStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import size from "module_2" /* 2 */;
 
 function reset() {
 
 }
-const Store = initializeDefault.Store;
+let flag = false;
+const Store = get_initializedDefault.Store;
 class AdPersonalizationStore extends Store {
+  isTogglesDisabled() {
+    return flag;
+  }
 }
-AdPersonalizationStore.prototype["isTogglesDisabled"] = function isTogglesDisabled() {
-  return flag;
-};
-const adPersonalizationStore = new AdPersonalizationStore(DispatcherDefault, {
+const prototype = AdPersonalizationStore.prototype;
+const obj = {
   AD_PERSONALIZATION_TOGGLES_RESTRICTED: function handleAdPersonalizationTogglesRestricted(disabled) {
     flag = disabled.disabled;
     if (flag == null) {
@@ -25,8 +28,8 @@ const adPersonalizationStore = new AdPersonalizationStore(DispatcherDefault, {
   },
   CONNECTION_OPEN: reset,
   LOGOUT: reset
-});
-const size = fn(2);
+};
+const adPersonalizationStore = new AdPersonalizationStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/ads/AdPersonalizationStore.tsx");
 
 export default adPersonalizationStore;

@@ -1,20 +1,18 @@
-// Module ID: 13891
-// Function ID: 13892
+// Module ID: 13958
+// Function ID: 13959
 // Name: polyfills
-// Dependencies: [13892, 13988, 2]
+// Dependencies: [13959, 14055, 2]
 
-// Module 13891 (polyfills)
-import module_13892 from "module_13892" /* 13892 */;
-import polyfillsNative from "polyfillsNative" /* 13988 */;
+// Module 13958 (polyfills)
+import Locale from "Locale" /* 13959 */;
+import polyfillsNative from "polyfillsNative" /* 14055 */;
 import size from "module_2" /* 2 */;
 
 String.prototype.toLocaleLowerCase = function toLocaleLowerCase() {
-  const self = this;
-  if (0 === this.length) {
-    return "";
-  } else {
-    const call = toLocaleLowerCase.call;
-    typeof call === "unknown" ? toLocaleLowerCase() : call(self);
+  let str = "";
+  if (0 !== this.length) {
+    str = toLocaleLowerCase.call(tmp);
   }
+  return str;
 };
 const result = size.fileFinishedImporting("polyfills.android.tsx");

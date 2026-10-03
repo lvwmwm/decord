@@ -1,18 +1,18 @@
-// Module ID: 1612
-// Function ID: 1613
+// Module ID: 1617
+// Function ID: 1618
 // Name: ChatInputFocused
 // Dependencies: [2]
 // Exports: getIsAnyChatInputFocused, setIsAnyChatInputFocused
 
-// Module 1612 (ChatInputFocused)
+// Module 1617 (ChatInputFocused)
 import size from "module_2" /* 2 */;
 
-let global = false;
+let c0 = false;
 const result = size.fileFinishedImporting("modules/keyboard/native/ChatInputFocused.tsx");
 
 export function setIsAnyChatInputFocused(arg0) {
-  global = arg0;
+  c0 = arg0;
 }
 export function getIsAnyChatInputFocused() {
-  return global;
+  return c0;
 }

@@ -1,13 +1,14 @@
-// Module ID: 17397
-// Function ID: 17398
+// Module ID: 17487
+// Function ID: 17488
 // Name: HalloweenHolidayExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1440, 2]
 
-// Module 17397 (HalloweenHolidayExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 17487 (HalloweenHolidayExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
-const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-09-halloween-holiday", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
+const obj = { name: "2026-09-halloween-holiday", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/holidays/HalloweenHolidayExperiment.tsx");
 
 export default apexExperiment;

@@ -1,41 +1,51 @@
-// Module ID: 9474
-// Function ID: 9475
+// Module ID: 9485
+// Function ID: 9486
 // Name: DefaultInviteExpirationExperiments
-// Dependencies: [2066, 1074, 9472, 4759, 563, 2]
-// Exports: useDefaultInviteExpiration, useMaxAgeOptions
+// Dependencies: [2074, 1085, 9483, 4774, 558, 576, 573, 2]
 
-// Module 9474 (DefaultInviteExpirationExperiments)
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9472 */;
-import GuildStore from "GuildStore" /* 2066 */;
+// Module 9485 (DefaultInviteExpirationExperiments)
+import react from "react" /* 576 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9483 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import Constants from "Constants" /* 1085 */;
+import createExperiment_mod from "module_4774" /* 4774 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
+let closure_4;
+let hasOwnProperty;
+let items;
+let items1;
 function getDefaultInviteExpiration(arg0) {
+  let experimentConfig;
+  let guild;
   ({ guild, experimentConfig } = arg0);
   let hasItem;
   if (guild != null) {
     const features = guild.features;
-    hasItem = features.has(constants.HUB);
+    hasItem = features.has(hasOwnProperty.HUB);
   }
   if (hasItem) {
     return InstantInviteUtilsDefault.INVITE_OPTIONS_FOREVER.value;
   } else if (null != experimentConfig) {
     let defaultMaxAge2 = experimentConfig.defaultMaxAge;
     if (defaultMaxAge2 == null) {
-      defaultMaxAge2 = value;
+      defaultMaxAge2 = metroRequire;
     }
     return defaultMaxAge2;
   } else {
+    let defaultMaxAge;
     let id;
     if (guild != null) {
       id = guild.id;
     }
     if (id == null) {
-      id = React4;
+      id = React3;
     }
     const obj = { guildId: id, location: "getDefaultInviteExpiration" };
     const currentConfig = experiment.getCurrentConfig(obj);
-    if (currentConfig.defaultMaxAge !== value) {
-      let defaultMaxAge = currentConfig.defaultMaxAge;
+    if (currentConfig.defaultMaxAge !== metroRequire) {
+      defaultMaxAge = currentConfig.defaultMaxAge;
     } else {
       const obj2 = { guildId: id, location: "getDefaultInviteExpiration" };
       defaultMaxAge = experiment1.getCurrentConfig(obj2).defaultMaxAge;
@@ -46,28 +56,101 @@ function getDefaultInviteExpiration(arg0) {
     return defaultMaxAge;
   }
 }
-const Constants = fn(1074);
 ({ EMPTY_STRING_SNOWFLAKE_ID: closure_4, GuildFeatures: hasOwnProperty } = Constants);
 const value = InstantInviteUtilsDefault.INVITE_OPTIONS_7_DAYS.value;
 const metroRequire = value;
-let createExperiment = fn(4759);
-let obj2 = { kind: "guild", id: "2025-08_default_invite_expiration_guild", label: "Default Invite Expiration Guild", defaultConfig: { defaultMaxAge: 604800 }, treatments: null };
-let items = [{ id: 1, label: "14 days", config: { defaultMaxAge: 1209600 } }, { id: 2, label: "30 days", config: { defaultMaxAge: 2592000 } }, { id: 3, label: "60 days", config: { defaultMaxAge: 5184000 } }];
-obj2.treatments = items;
-let experiment = createExperiment.createExperiment(obj2);
-createExperiment = fn(4759);
-const obj4 = { kind: "guild", id: "2026-05_default_invite_expiration_guild_web", label: "Default Invite Expiration Guild Web", defaultConfig: { defaultMaxAge: 604800 }, treatments: null };
-const items1 = [{ id: 1, label: "14 days", config: { defaultMaxAge: 1209600 } }, { id: 2, label: "30 days", config: { defaultMaxAge: 2592000 } }, { id: 3, label: "60 days", config: { defaultMaxAge: 5184000 } }];
-obj4.treatments = items1;
-let experiment1 = createExperiment.createExperiment(obj4);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/instant_invite/DefaultInviteExpirationExperiments.tsx");
-
-export const DEFAULT_MAX_AGE = value;
-export const DefaultInviteExpirationGuildExperiment = experiment;
-export const DefaultInviteExpirationGuildWebExperiment = experiment1;
-export { getDefaultInviteExpiration };
-export const useDefaultInviteExpiration = function useDefaultInviteExpiration(guildId) {
+let createExperiment = createExperiment_mod;
+let obj = { kind: "guild", id: "2025-08_default_invite_expiration_guild", label: "Default Invite Expiration Guild", defaultConfig: { defaultMaxAge: 604800 }, treatments: items };
+items = [{ id: 1, label: "14 days", config: { defaultMaxAge: 1209600 } }, { id: 2, label: "30 days", config: { defaultMaxAge: 2592000 } }, { id: 3, label: "60 days", config: { defaultMaxAge: 5184000 } }];
+let experiment = createExperiment.createExperiment(obj);
+createExperiment = createExperiment_mod;
+let obj2 = { kind: "guild", id: "2026-05_default_invite_expiration_guild_web", label: "Default Invite Expiration Guild Web", defaultConfig: { defaultMaxAge: 604800 }, treatments: items1 };
+items1 = [{ id: 1, label: "14 days", config: { defaultMaxAge: 1209600 } }, { id: 2, label: "30 days", config: { defaultMaxAge: 2592000 } }, { id: 3, label: "60 days", config: { defaultMaxAge: 5184000 } }];
+let experiment1 = createExperiment.createExperiment(obj2);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  const obj = guildId(576);
+  const cResult = obj.c(12);
+  const tmp = guildId;
+  guildId = guildId.guildId;
+  const _location = guildId.location;
+  let tmp4 = guildId;
+  if (guildId == null) {
+    tmp4 = closure_4;
+  }
+  if (cResult[0] === _location) {
+    let tmp5;
+    if (cResult[1] === tmp4) {
+      tmp5 = cResult[2];
+    }
+    experiment = experiment.useExperiment(tmp5);
+    if (cResult[3] === _location) {
+      let tmp8;
+      let tmp14;
+      let tmp16;
+      if (cResult[4] === tmp4) {
+        tmp8 = cResult[5];
+      }
+      experiment1 = experiment1.useExperiment(tmp8);
+      let defaultMaxAge;
+      if (experiment != null) {
+        defaultMaxAge = experiment.defaultMaxAge;
+      }
+      if (defaultMaxAge !== closure_6) {
+        experiment1 = experiment;
+      }
+      const _Symbol = Symbol;
+      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+        const items = [GuildStore];
+        cResult[6] = items;
+        tmp14 = items;
+      } else {
+        tmp14 = cResult[6];
+      }
+      if (cResult[7] !== guildId) {
+        class M {
+          constructor() {
+            return closure_3.getGuild(guildId);
+          }
+        }
+        cResult[7] = guildId;
+        cResult[8] = M;
+        tmp16 = M;
+      } else {
+        class M {
+          constructor() {
+            return closure_3.getGuild(guildId);
+          }
+        }
+      }
+      const tmpResult = tmp(573);
+      const stateFromStores = tmpResult.useStateFromStores(tmp14, tmp16);
+      if (null != guildId) {
+        class M {
+          constructor() {
+            return closure_3.getGuild(guildId);
+          }
+        }
+        const obj2 = { guild: stateFromStores, experimentConfig: experiment1 };
+        cResult[9] = experiment1;
+        cResult[10] = stateFromStores;
+        cResult[11] = getDefaultInviteExpiration(obj2);
+        const tmp21 = getDefaultInviteExpiration(obj2);
+      }
+      return null;
+    }
+    const obj3 = { guildId: tmp4, location: _location };
+    cResult[3] = _location;
+    cResult[4] = tmp4;
+    cResult[5] = obj3;
+    tmp8 = obj3;
+  }
+  const obj4 = { guildId: tmp4, location: _location };
+  cResult[0] = _location;
+  cResult[1] = tmp4;
+  cResult[2] = obj4;
+  tmp5 = obj4;
+}) : ((guildId) => {
   guildId = guildId.guildId;
   const _location = guildId.location;
   let tmp = guildId;
@@ -83,7 +166,7 @@ export const useDefaultInviteExpiration = function useDefaultInviteExpiration(gu
   if (defaultMaxAge !== closure_6) {
     experiment1 = experiment;
   }
-  guildId(563);
+  guildId(573);
   [][0] = GuildStore;
   let tmp7 = null;
   if (null != guildId) {
@@ -91,11 +174,83 @@ export const useDefaultInviteExpiration = function useDefaultInviteExpiration(gu
     tmp7 = getDefaultInviteExpiration(obj);
   }
   return tmp7;
-};
-export const useMaxAgeOptions = function useMaxAgeOptions(arg0) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let _location;
+  let guildId;
+  let items;
+  const obj = react;
+  const cResult = obj.c(8);
   ({ guildId, location: _location } = arg0);
   if (guildId == null) {
-    guildId = React4;
+    guildId = React3;
+  }
+  if (cResult[0] === _location) {
+    let tmp3;
+    if (cResult[1] === guildId) {
+      tmp3 = cResult[2];
+    }
+    experiment = experiment.useExperiment(tmp3);
+    if (cResult[3] === _location) {
+      let tmp6;
+      let tmp13;
+      if (cResult[4] === guildId) {
+        tmp6 = cResult[5];
+      }
+      experiment1 = experiment1.useExperiment(tmp6);
+      let defaultMaxAge;
+      if (experiment != null) {
+        defaultMaxAge = experiment.defaultMaxAge;
+      }
+      if (defaultMaxAge !== metroRequire) {
+        experiment1 = experiment;
+      }
+      let defaultMaxAge1;
+      const tmp11 = cResult[6];
+      if (experiment1 != null) {
+        defaultMaxAge1 = experiment1.defaultMaxAge;
+      }
+      if (tmp11 !== defaultMaxAge1) {
+        let defaultMaxAge2;
+        const getMaxAgeOptions = InstantInviteUtilsDefault.getMaxAgeOptions;
+        InstantInviteUtilsDefault;
+        if (experiment1 != null) {
+          defaultMaxAge2 = experiment1.defaultMaxAge;
+        }
+        const obj2 = { includeExperimentalValues: items };
+        items = [defaultMaxAge2];
+        const maxAgeOptions = getMaxAgeOptions(obj2);
+        let defaultMaxAge3;
+        if (experiment1 != null) {
+          defaultMaxAge3 = experiment1.defaultMaxAge;
+        }
+        cResult[6] = defaultMaxAge3;
+        cResult[7] = maxAgeOptions;
+        tmp13 = maxAgeOptions;
+      } else {
+        tmp13 = cResult[7];
+      }
+      return tmp13;
+    }
+    const obj3 = { guildId, location: _location };
+    cResult[3] = _location;
+    cResult[4] = guildId;
+    cResult[5] = obj3;
+    tmp6 = obj3;
+  }
+  const obj4 = { guildId, location: _location };
+  cResult[0] = _location;
+  cResult[1] = guildId;
+  cResult[2] = obj4;
+  tmp3 = obj4;
+}) : ((arg0) => {
+  let _location;
+  let guildId;
+  let items;
+  ({ guildId, location: _location } = arg0);
+  if (guildId == null) {
+    guildId = React3;
   }
   experiment = experiment.useExperiment({ guildId, location: _location });
   experiment1 = experiment1.useExperiment({ guildId, location: _location });
@@ -103,15 +258,24 @@ export const useMaxAgeOptions = function useMaxAgeOptions(arg0) {
   if (experiment != null) {
     defaultMaxAge = experiment.defaultMaxAge;
   }
-  if (defaultMaxAge !== value) {
+  if (defaultMaxAge !== metroRequire) {
     experiment1 = experiment;
   }
   let defaultMaxAge1;
+  const getMaxAgeOptions = InstantInviteUtilsDefault.getMaxAgeOptions;
+  InstantInviteUtilsDefault;
   if (experiment1 != null) {
     defaultMaxAge1 = experiment1.defaultMaxAge;
   }
-  const obj2 = { includeExperimentalValues: null };
-  const items = [defaultMaxAge1];
-  obj2.includeExperimentalValues = items;
-  return InstantInviteUtilsDefault.getMaxAgeOptions(obj2);
-};
+  const obj = { includeExperimentalValues: items };
+  items = [defaultMaxAge1];
+  return getMaxAgeOptions(obj);
+});
+const result = size.fileFinishedImporting("modules/instant_invite/DefaultInviteExpirationExperiments.tsx");
+
+export const DEFAULT_MAX_AGE = value;
+export const DefaultInviteExpirationGuildExperiment = experiment;
+export const DefaultInviteExpirationGuildWebExperiment = experiment1;
+export { getDefaultInviteExpiration };
+export const useDefaultInviteExpiration = tmp5;
+export const useMaxAgeOptions = tmp6;

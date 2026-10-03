@@ -1,25 +1,51 @@
 // Module ID: 1663
 // Function ID: 1664
-// Dependencies: []
-// Exports: isWorkletFunction
+// Dependencies: [41, 42, 90, 91, 1664, 1665, 1654]
+// Exports: createNativeWorkletsModule
 
 // Module 1663
-function isWorkletFunction(onUpdate) {
-  let __workletHash = typeof onUpdate === "function";
-  if (typeof onUpdate === "function") {
-    __workletHash = onUpdate.__workletHash;
-  }
-  return __workletHash;
-}
-isWorkletFunction.__closure = {};
-isWorkletFunction.__workletHash = 327007448384;
-isWorkletFunction.__initData = { code: "function isWorkletFunction_Pnpm_commonTypesTs1(value){return(typeof value==='function'&&!!value.__workletHash);}" };
+import _classPrivateFieldKeyDefault from "_classPrivateFieldKey" /* 91 */;
+import ReanimatedError from "ReanimatedError" /* 1654 */;
+import _mod1664 from "module_1664" /* 1664 */;
+import react_native from "react-native" /* 1665 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import _classPrivateFieldBase from "_classPrivateFieldBase" /* 90 */;
 
-export const LayoutAnimationType = { ENTERING: 1, [1]: "ENTERING", EXITING: 2, [2]: "EXITING", LAYOUT: 3, [3]: "LAYOUT", SHARED_ELEMENT_TRANSITION: 4, [4]: "SHARED_ELEMENT_TRANSITION", SHARED_ELEMENT_TRANSITION_PROGRESS: 5, [5]: "SHARED_ELEMENT_TRANSITION_PROGRESS" };
-export const SharedTransitionType = { ANIMATION: "animation", PROGRESS_ANIMATION: "progressAnimation" };
-export { isWorkletFunction };
-export const SensorType = { ACCELEROMETER: 1, [1]: "ACCELEROMETER", GYROSCOPE: 2, [2]: "GYROSCOPE", GRAVITY: 3, [3]: "GRAVITY", MAGNETIC_FIELD: 4, [4]: "MAGNETIC_FIELD", ROTATION: 5, [5]: "ROTATION" };
-export const IOSReferenceFrame = { XArbitraryZVertical: 0, [0]: "XArbitraryZVertical", XArbitraryCorrectedZVertical: 1, [1]: "XArbitraryCorrectedZVertical", XMagneticNorthZVertical: 2, [2]: "XMagneticNorthZVertical", XTrueNorthZVertical: 3, [3]: "XTrueNorthZVertical", Auto: 4, [4]: "Auto" };
-export const InterfaceOrientation = { ROTATION_0: 0, [0]: "ROTATION_0", ROTATION_90: 90, [90]: "ROTATION_90", ROTATION_180: 180, [180]: "ROTATION_180", ROTATION_270: 270, [270]: "ROTATION_270" };
-export const KeyboardState = { UNKNOWN: 0, [0]: "UNKNOWN", OPENING: 1, [1]: "OPENING", OPEN: 2, [2]: "OPEN", CLOSING: 3, [3]: "CLOSING", CLOSED: 4, [4]: "CLOSED" };
-export const ReduceMotion = { System: "system", Always: "always", Never: "never" };
+let closure_5 = _classPrivateFieldKeyDefault("workletsModuleProxy");
+class NativeWorklets {
+  constructor() {
+    _classCallCheck(this, NativeWorklets);
+    Object.defineProperty(this, closure_5, { writable: true, value: "a" });
+    if (undefined === global.__workletsModuleProxy) {
+      const obj = _mod1664;
+      const valueUnpackerCode = obj.getValueUnpackerCode();
+      const WorkletsTurboModule = react_native.WorkletsTurboModule;
+      if (WorkletsTurboModule != null) {
+        WorkletsTurboModule.installTurboModule(valueUnpackerCode);
+      }
+    }
+    if (undefined === global.__workletsModuleProxy) {
+      const self = this;
+      const self2 = this;
+      const reanimatedError = new ReanimatedError.ReanimatedError("Native part of Reanimated doesn't seem to be initialized (Worklets).\nSee https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#native-part-of-reanimated-doesnt-seem-to-be-initialized for more details.");
+      throw reanimatedError;
+    } else {
+      _classPrivateFieldBase(this, closure_5)[closure_5] = global.__workletsModuleProxy;
+    }
+  }
+}
+const entry = {
+  key: "makeShareableClone",
+  value: function makeShareableClone(arg0, arg1, arg2) {
+    const obj = _classPrivateFieldBase(this, closure_5)[closure_5];
+    return obj.makeShareableClone(arg0, arg1, arg2);
+  }
+};
+const items = [entry];
+let closure_6 = _createClass(NativeWorklets, items);
+
+export const createNativeWorkletsModule = function createNativeWorkletsModule() {
+  const tmp = new closure_6();
+  return tmp;
+};

@@ -1,31 +1,59 @@
-// Module ID: 16277
-// Function ID: 16278
+// Module ID: 16353
+// Function ID: 16354
 // Name: useGetOrFetchNotificationCenterItemApplications
-// Dependencies: [19, 7227, 6775, 2]
-// Exports: useGetOrFetchNotificationCenterItemsApplications
+// Dependencies: [19, 7125, 558, 576, 6663, 2]
 
-// Module 16277 (useGetOrFetchNotificationCenterItemApplications)
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6775 */;
-import noop from "module_19" /* 19 */;
+// Module 16353 (useGetOrFetchNotificationCenterItemApplications)
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6663 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7125 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-let items = [fn(7227).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS, fn(7227).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, fn(7227).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS, fn(7227).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED];
+const require = globalThis.__r;
+let _require, applicationId;
+
+let items = [NotificationCenterItemsTypes.NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS, NotificationCenterItemsTypes.NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, NotificationCenterItemsTypes.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS, NotificationCenterItemsTypes.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED];
 let set = new Set(items);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/notification_center/useGetOrFetchNotificationCenterItemApplications.tsx");
-
-export const useGetOrFetchNotificationCenterItemsApplications = function useGetOrFetchNotificationCenterItemsApplications(stateFromStores1) {
-  importDefault = stateFromStores1;
-  let items = [stateFromStores1];
-  const memo = noop.useMemo(() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arr) {
+  let closure_0;
+  let tmp3;
+  const obj = require("react");
+  const cResult = obj.c(2);
+  if (cResult[0] !== arr) {
+    const _Set = Set;
+    const self = this;
+    const self2 = this;
     set = new Set();
     const items = [];
-    const item = stateFromStores1.forEach((applicationId) => {
+    _require = items;
+    const item = arr.forEach((applicationId) => {
       applicationId = applicationId.applicationId;
       if (set.has(applicationId.type)) {
-        let hasItem = null == applicationId;
+        const hasItem = null == applicationId || set.has(applicationId);
         if (!hasItem) {
-          hasItem = set.has(applicationId);
+          set.add(applicationId);
+          closure_0.push(applicationId);
         }
+      }
+    });
+    cResult[0] = arr;
+    cResult[1] = items;
+    tmp3 = items;
+  } else {
+    _require = cResult[1];
+  }
+  return set(6663)(tmp3);
+}) : ((arg0) => {
+  let closure_0 = arg0;
+  let items = [arg0];
+  const memo = react.useMemo(() => {
+    set = new Set();
+    const items = [];
+    const item = closure_0.forEach((applicationId) => {
+      applicationId = applicationId.applicationId;
+      if (set.has(applicationId.type)) {
+        const hasItem = null == applicationId || set.has(applicationId);
         if (!hasItem) {
           set.add(applicationId);
           items.push(applicationId);
@@ -35,4 +63,7 @@ export const useGetOrFetchNotificationCenterItemsApplications = function useGetO
     return items;
   }, items);
   return useGetOrFetchApplicationsDefault(memo);
-};
+});
+const result = size.fileFinishedImporting("modules/notification_center/useGetOrFetchNotificationCenterItemApplications.tsx");
+
+export const useGetOrFetchNotificationCenterItemsApplications = tmp3;

@@ -1,26 +1,27 @@
-// Module ID: 15092
-// Function ID: 15093
+// Module ID: 15149
+// Function ID: 15150
 // Name: DisplayNameStylesRouteSetting
-// Dependencies: [1074, 11215, 1115, 2876, 15093, 2]
+// Dependencies: [1085, 11129, 1126, 2883, 15150, 2]
 
-// Module 15092 (DisplayNameStylesRouteSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import _modDef2876 from "module_2876" /* 2876 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 15149 (DisplayNameStylesRouteSetting)
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import _modDef2883 from "module_2883" /* 2883 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(_modDef2876.ZPMAlX);
+    const intl = intl2.intl;
+    return intl.string(_modDef2883.ZPMAlX);
   },
   parent: null,
   unsearchable: true,
   screen: {
-    route: Constants.UserSettingsSections.DISPLAY_NAME_STYLES,
+    route: UserSettingsSections.DISPLAY_NAME_STYLES,
     getComponent() {
       return require("DisplayNameStylesEditScreen").default;
     }
@@ -28,7 +29,8 @@ const route = SettingBuilders.createRoute({
   usePredicate() {
     return true;
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/DisplayNameStylesRouteSetting.tsx");
 
 export default route;

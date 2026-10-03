@@ -1,15 +1,13 @@
-// Module ID: 8324
-// Function ID: 8325
+// Module ID: 8329
+// Function ID: 8330
 // Name: GameUtils
 // Dependencies: [2]
 
-// Module 8324 (GameUtils)
+// Module 8329 (GameUtils)
 import size from "module_2" /* 2 */;
 
 let c0 = "not supported";
-const result = size.fileFinishedImporting("utils/GameUtils.native.tsx");
-
-export default {
+const obj = {
   waitSubscribed() {
     return Promise.resolve();
   },
@@ -30,11 +28,11 @@ export default {
   },
   launch() {
     const error = new Error(c0);
-    return Promise.reject(error);
+    return reject(error);
   },
   launchDispatchApplication() {
     const error = new Error(c0);
-    return Promise.reject(error);
+    return reject(error);
   },
   removeShortcuts() {
     return Promise.resolve(false);
@@ -44,7 +42,7 @@ export default {
   },
   launchGame() {
     const error = new Error(c0);
-    return Promise.reject(error);
+    return reject(error);
   },
   isProtocolRegistered() {
     return Promise.resolve(false);
@@ -53,3 +51,6 @@ export default {
 
   }
 };
+const result = size.fileFinishedImporting("utils/GameUtils.native.tsx");
+
+export default obj;

@@ -1,55 +1,175 @@
-// Module ID: 12281
-// Function ID: 12282
+// Module ID: 12233
+// Function ID: 12234
 // Name: GuildPowerupsGameServerCard
-// Dependencies: [19, 17, 4834, 7628, 21, 4845, 576, 504, 12282, 12283, 12274, 12278, 4663, 2]
-// Exports: default
+// Dependencies: [19, 17, 4879, 7672, 21, 4890, 587, 558, 576, 504, 12234, 12235, 12225, 4678, 12230, 2]
 
-// Module 12281 (GuildPowerupsGameServerCard)
-import nativeDefault from "native" /* 576 */;
-import useGameServerPowerupStatusDefault from "useGameServerPowerupStatus" /* 12282 */;
-import useGameServerPerkDefault from "useGameServerPerk" /* 12283 */;
-import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4834 */;
-import GameServerStore from "GameServerStore" /* 7628 */;
+// Module 12233 (GuildPowerupsGameServerCard)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 587 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12225 */;
+import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 12230 */;
+import useGameServerPowerupStatusDefault from "useGameServerPowerupStatus" /* 12234 */;
+import useGameServerPerkDefault from "useGameServerPerk" /* 12235 */;
+import react from "react" /* 19 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import GameServerStore from "GameServerStore" /* 7672 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const GuildPowerupsPerkCardDefault = tmp5(12278);
-const require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
-const obj2 = { riveContainer: { flex: 1, paddingVertical: nativeDefault.space.PX_8 } };
-let closure_7 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsGameServerCard.tsx");
+let guildId;
 
-export default function GuildPowerupsGameServerCard(guildId) {
+let obj2;
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let obj = { riveContainer: obj2 };
+obj2 = { flex: 1, paddingVertical: nativeDefault.space.PX_8 };
+let closure_7 = createStyles.createStyles(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let first;
+  let tmp12;
+  let tmp13;
+  let tmp7;
+  let useReducedMotion;
+  const obj = guildId(576);
+  const cResult = obj.c(17);
   guildId = guildId.guildId;
-  const tmp = closure_7();
-  const tmp2 = guildId;
+  const tmp4 = closure_7();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GameServerStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== guildId) {
+    const fn = function v() {
+      return GameServerStore.getStateForGuild(guildId);
+    };
+    cResult[1] = guildId;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult = guildId(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
+  const tmp10 = useGameServerPowerupStatusDefault(guildId);
+  const tmp11 = useGameServerPerkDefault(guildId);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [AccessibilityStore];
+    class C {
+      constructor() {
+        return useReducedMotion.useReducedMotion;
+      }
+    }
+    cResult[3] = items1;
+    cResult[4] = C;
+    tmp13 = C;
+    tmp12 = items1;
+  } else {
+    tmp12 = cResult[3];
+    tmp13 = cResult[4];
+  }
+  const tmpResult2 = guildId(504);
+  const stateFromStores1 = tmpResult2.useStateFromStores(tmp12, tmp13);
+  const tmp16 = useGuildPowerupOnShowMoreDefault(guildId, tmp11);
+  let tmp17 = null;
+  if (null != stateFromStores) {
+    tmp17 = null;
+    if (null != tmp11) {
+      let tmp18;
+      if (cResult[5] !== stateFromStores1) {
+        const obj3 = { reducedMotion: null };
+        class C {
+          constructor() {
+            return useReducedMotion.useReducedMotion;
+          }
+        }
+        const tmp20 = jsx(guildId(4678).GameServerHostingRive, { stateMachine: "SM_Auto", dataBinding: obj3 });
+        cResult[5] = stateFromStores1;
+        cResult[6] = tmp20;
+        tmp18 = tmp20;
+      } else {
+        tmp18 = cResult[6];
+      }
+      if (cResult[7] === tmp4.riveContainer) {
+        let tmp21;
+        if (cResult[8] === tmp18) {
+          tmp21 = cResult[9];
+        }
+        if (cResult[10] === tmp11.cost) {
+          if (cResult[11] === tmp11.description) {
+            if (cResult[12] === tmp11.title) {
+              if (cResult[13] === tmp16) {
+                if (cResult[14] === tmp10) {
+                  let tmp24;
+                  if (cResult[15] === tmp21) {
+                    tmp24 = cResult[16];
+                  }
+                  tmp17 = tmp24;
+                }
+              }
+            }
+          }
+        }
+        class C {
+          constructor() {
+            return useReducedMotion.useReducedMotion;
+          }
+        }
+        ({ title: tmp26[0], description: tmp26[1], cost: tmp26[2] } = tmp11);
+        tmp26[4] = tmp21;
+        tmp26[6] = tmp10;
+        tmp26[7] = tmp16;
+        const tmp27 = jsx(GuildPowerupsPerkCardDefault, tmp26);
+        cResult[10] = tmp11.cost;
+        cResult[11] = tmp11.description;
+        cResult[12] = tmp11.title;
+        cResult[13] = tmp16;
+        cResult[14] = tmp10;
+        cResult[15] = tmp21;
+        cResult[16] = tmp27;
+        tmp24 = tmp27;
+      }
+      class C {
+        constructor() {
+          return useReducedMotion.useReducedMotion;
+        }
+      }
+      const tmp23 = <View style={tmp4.riveContainer}>{tmp18}</View>;
+      cResult[7] = tmp4.riveContainer;
+      cResult[8] = tmp18;
+      cResult[9] = tmp23;
+      tmp21 = tmp23;
+    }
+  }
+  return tmp17;
+}) : ((guildId) => {
+  let useReducedMotion;
+  guildId = guildId.guildId;
   const items = [GameServerStore];
-  const stateFromStores = guildId(504).useStateFromStores(items, () => GameServerStore.getStateForGuild(guildId));
+  const tmp = closure_7();
   const obj = guildId(504);
-  const tmp7 = useGameServerPerkDefault(guildId);
+  const stateFromStores = obj.useStateFromStores(items, () => GameServerStore.getStateForGuild(guildId));
   const tmp6 = useGameServerPowerupStatusDefault(guildId);
+  const tmp7 = useGameServerPerkDefault(guildId);
   const items1 = [AccessibilityStore];
-  const stateFromStores1 = guildId(504).useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
+  const obj2 = guildId(504);
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
   let tmp10 = null;
   if (null != stateFromStores) {
     tmp10 = null;
     if (null != tmp7) {
-      const obj4 = { title: null, description: null, cost: null, costDecorator: "+", riveComponent: null, badge: "beta", status: null, onPress: null };
       ({ title: obj3.title, description: obj3.description, cost: obj3.cost } = tmp7);
-      const obj5 = { style: tmp.riveContainer, children: null };
-      const obj6 = { stateMachine: "SM_Auto", dataBinding: null };
       const obj10 = { reducedMotion: stateFromStores1 };
-      obj6.dataBinding = obj10;
-      obj5.children = jsx(tmp2(4663).GameServerHostingRive, { stateMachine: "SM_Auto", dataBinding: null });
-      obj4.riveComponent = <View style={tmp.riveContainer}>{null}</View>;
-      obj4.status = tmp6;
-      obj4.onPress = tmp9;
-      tmp10 = jsx(GuildPowerupsPerkCardDefault, { title: null, description: null, cost: null, costDecorator: "+", riveComponent: null, badge: "beta", status: null, onPress: null });
-      const tmp5Result = GuildPowerupsPerkCardDefault;
+      GuildPowerupsPerkCardDefault;
+      tmp10 = <tmp5Result title={null} description={null} cost={null} costDecorator="+" riveComponent={null} badge="beta" status={tmp6} onPress={tmp9} />;
     }
   }
   return tmp10;
-};
+});
+const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsGameServerCard.tsx");
+
+export default tmp3;

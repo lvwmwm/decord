@@ -1,13 +1,13 @@
-// Module ID: 9772
-// Function ID: 9773
-// Name: NativeFontModule
+// Module ID: 10724
+// Function ID: 10725
+// Name: react-native
 // Dependencies: [17, 2]
 
-// Module 9772 (NativeFontModule)
-import _mod17 from "module_17" /* 17 */;
+// Module 10724 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const TurboModuleRegistry = _mod17.TurboModuleRegistry;
+const TurboModuleRegistry = react_native.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeFontModule");
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeFontModule.tsx");
 

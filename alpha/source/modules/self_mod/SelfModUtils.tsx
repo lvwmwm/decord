@@ -1,13 +1,13 @@
-// Module ID: 6896
-// Function ID: 6897
+// Module ID: 6794
+// Function ID: 6795
 // Name: SelfModUtils
-// Dependencies: [1372, 2]
+// Dependencies: [1377, 2]
 // Exports: isCurrentUserTeen
 
-// Module 6896 (SelfModUtils)
-import UserStore from "UserStore" /* 1372 */;
+// Module 6794 (SelfModUtils)
+import UserStore from "UserStore" /* 1377 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/self_mod/SelfModUtils.tsx");
 
 export const isCurrentUserTeen = function isCurrentUserTeen() {

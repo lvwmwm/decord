@@ -1,26 +1,83 @@
-// Module ID: 8424
-// Function ID: 8425
+// Module ID: 8428
+// Function ID: 8429
 // Name: HeartIcon
-// Dependencies: [19, 21, 576, 4559, 8425, 2]
-// Exports: HeartIcon
+// Dependencies: [109, 19, 21, 558, 576, 587, 8429, 4579, 2]
 
-// Module 8424 (HeartIcon)
-import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4559 */;
-import _mod8425 from "module_8425" /* 8425 */;
-import noop from "module_19" /* 19 */;
+// Module 8428 (HeartIcon)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import BaseIconImage2 from "BaseIconImage" /* 4579 */;
+import AssetRegistry from "AssetRegistry" /* 8429 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("design/components/Icon/native/redesign/generated/HeartIcon.tsx");
-
-export const HeartIcon = function HeartIcon(color) {
+let closure_3 = ["style", "color"];
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let INTERACTIVE_ICON_DEFAULT;
+  let color;
+  let style;
+  let tmp10;
+  let tmp4;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(9);
+  if (cResult[0] !== arg0) {
+    ({ style, color } = arg0);
+    const tmp8 = _objectWithoutProperties(arg0, closure_3);
+    cResult[0] = arg0;
+    cResult[1] = tmp8;
+    cResult[2] = style;
+    cResult[3] = color;
+    INTERACTIVE_ICON_DEFAULT = color;
+    tmp5 = style;
+    tmp4 = tmp8;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+    INTERACTIVE_ICON_DEFAULT = cResult[3];
+  }
+  if (undefined === INTERACTIVE_ICON_DEFAULT) {
+    INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = AssetRegistry;
+    cResult[4] = tmpResult;
+    tmp10 = tmpResult;
+  } else {
+    tmp10 = cResult[4];
+  }
+  if (cResult[5] === INTERACTIVE_ICON_DEFAULT) {
+    if (cResult[6] === tmp4) {
+      let tmp12;
+      if (cResult[7] === tmp5) {
+        tmp12 = cResult[8];
+      }
+      return tmp12;
+    }
+  }
+  const BaseIconImage = tmp(4579).BaseIconImage;
+  const merged = Object.assign(tmp4);
+  const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
+  cResult[5] = INTERACTIVE_ICON_DEFAULT;
+  cResult[6] = tmp4;
+  cResult[7] = tmp5;
+  cResult[8] = tmp14;
+  tmp12 = tmp14;
+}) : ((color) => {
   let INTERACTIVE_ICON_DEFAULT = color.color;
+  const style = color.style;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
+  const BaseIconImage = BaseIconImage2.BaseIconImage;
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8425, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
-};
+  return <BaseIconImage source={AssetRegistry} color={INTERACTIVE_ICON_DEFAULT} style={style} />;
+});
+const result = size.fileFinishedImporting("design/components/Icon/native/redesign/generated/HeartIcon.tsx");
+
+export const HeartIcon = tmp3;

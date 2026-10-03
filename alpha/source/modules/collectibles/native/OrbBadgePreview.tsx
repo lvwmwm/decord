@@ -1,33 +1,81 @@
-// Module ID: 12920
-// Function ID: 12921
+// Module ID: 12975
+// Function ID: 12976
 // Name: OrbBadgePreview
-// Dependencies: [19, 17, 21, 4845, 7805, 10772, 8501, 1115, 2]
-// Exports: OrbBadgePreview
+// Dependencies: [19, 17, 21, 4890, 558, 576, 7849, 8506, 1126, 10825, 2]
 
-// Module 12920 (OrbBadgePreview)
-import util from "util" /* 1115 */;
-import useCurrentUser from "useCurrentUser" /* 7805 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8501 */;
-import UserProfilePreviewDefault from "UserProfilePreview" /* 10772 */;
-import noop from "module_19" /* 19 */;
+// Module 12975 (OrbBadgePreview)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import intl2 from "intl" /* 1126 */;
+import useCurrentUser from "useCurrentUser" /* 7849 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8506 */;
+import UserProfilePreviewDefault from "UserProfilePreview" /* 10825 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ container: { flex: 1, justifyContent: "center", alignItems: "center" } });
-const size = fn(2);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp6;
+  let tmp7;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(7);
+  const tmp4 = closure_5();
+  const obj2 = useCurrentUser;
+  const currentUser = obj2.useCurrentUser();
+  const container = tmp4.container;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [];
+    const tmpResult = collectibles_CollectiblesUtils;
+    items[0] = tmpResult.createOrbProfileBadge();
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(intl2.t.bxcI6Y);
+    cResult[0] = items;
+    cResult[1] = stringResult;
+    tmp6 = items;
+    tmp7 = stringResult;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  if (cResult[2] !== currentUser) {
+    const tmp12 = jsx(UserProfilePreviewDefault, { compact: true, user: currentUser, additionalBadges: tmp6, accessibilityLabel: tmp7 });
+    cResult[2] = currentUser;
+    cResult[3] = tmp12;
+    tmp9 = tmp12;
+  } else {
+    tmp9 = cResult[3];
+  }
+  if (cResult[4] === tmp4.container) {
+    let tmp13;
+    if (cResult[5] === tmp9) {
+      tmp13 = cResult[6];
+    }
+    return tmp13;
+  }
+  const tmp14 = <View style={container}>{tmp9}</View>;
+  cResult[4] = tmp4.container;
+  cResult[5] = tmp9;
+  cResult[6] = tmp14;
+  tmp13 = tmp14;
+}) : (() => {
+  let intl;
+  let items;
+  const tmp = closure_5();
+  const obj = useCurrentUser;
+  const currentUser = obj.useCurrentUser();
+  ({ compact: true, user: currentUser, additionalBadges: items, accessibilityLabel: intl.string(intl2.t.bxcI6Y) });
+  UserProfilePreviewDefault;
+  items = [];
+  const obj4 = collectibles_CollectiblesUtils;
+  items[0] = obj4.createOrbProfileBadge();
+  intl = intl2.intl;
+  return <View style={tmp.container}>{null}</View>;
+});
 const result = size.fileFinishedImporting("modules/collectibles/native/OrbBadgePreview.tsx");
 
-export const OrbBadgePreview = function OrbBadgePreview() {
-  const tmp = closure_5();
-  const obj2 = { style: tmp.container, children: null };
-  const currentUser = useCurrentUser.useCurrentUser();
-  const obj3 = { compact: true, user: currentUser, additionalBadges: null, accessibilityLabel: null };
-  const items = [collectibles_CollectiblesUtils.createOrbProfileBadge()];
-  obj3.additionalBadges = items;
-  const intl = util.intl;
-  obj3.accessibilityLabel = intl.string(util.t.bxcI6Y);
-  obj2.children = <tmp3 compact user={currentUser} additionalBadges={null} accessibilityLabel={null} />;
-  return <View style={tmp.container}>{null}</View>;
-};
+export const OrbBadgePreview = tmp3;

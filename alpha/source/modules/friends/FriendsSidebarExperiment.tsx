@@ -1,13 +1,14 @@
-// Module ID: 6888
-// Function ID: 6889
+// Module ID: 6786
+// Function ID: 6787
 // Name: FriendsSidebarExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1440, 2]
 
-// Module 6888 (FriendsSidebarExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 6786 (FriendsSidebarExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
-const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-09-friends-sidebar", kind: "user", defaultConfig: { sidebarEnabled: false, appBarToggleEnabled: false }, variations: { 0: { sidebarEnabled: false, appBarToggleEnabled: false }, 1: { sidebarEnabled: true, appBarToggleEnabled: false }, 2: { sidebarEnabled: true, appBarToggleEnabled: true } } });
+const obj = { name: "2026-09-friends-sidebar", kind: "user", defaultConfig: { sidebarEnabled: false, appBarToggleEnabled: false }, variations: { 0: { sidebarEnabled: false, appBarToggleEnabled: false }, 1: { sidebarEnabled: true, appBarToggleEnabled: false }, 2: { sidebarEnabled: true, appBarToggleEnabled: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/friends/FriendsSidebarExperiment.tsx");
 
 export default apexExperiment;

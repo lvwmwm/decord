@@ -1,19 +1,40 @@
-// Module ID: 16953
-// Function ID: 16954
+// Module ID: 17042
+// Function ID: 17043
 // Name: MessageRequestEmpty
-// Dependencies: [19, 21, 1177, 16954, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 1188, 17043, 2]
 
-// Module 16953 (MessageRequestEmpty)
-import native from "native" /* 1177 */;
-import Pending from "Pending" /* 16954 */;
-import noop from "module_19" /* 19 */;
+// Module 17042 (MessageRequestEmpty)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import native from "native" /* 1188 */;
+import Pending from "Pending" /* 17043 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let bodyText;
+
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((bodyText) => {
+  let tmp4;
+  const obj = react2;
+  const cResult = obj.c(2);
+  bodyText = bodyText.bodyText;
+  if (cResult[0] !== bodyText) {
+    const EmptyState = tmp(1188).EmptyState;
+    const tmp6 = <EmptyState Illustration={Pending.Pending} body={bodyText} />;
+    cResult[0] = bodyText;
+    cResult[1] = tmp6;
+    tmp4 = tmp6;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : ((bodyText) => {
+  bodyText = bodyText.bodyText;
+  const EmptyState = native.EmptyState;
+  return <EmptyState Illustration={Pending.Pending} body={bodyText} />;
+});
 const result = size.fileFinishedImporting("modules/message_request/native/MessageRequestEmpty.tsx");
 
-export default function MessageRequestEmpty(body) {
-  return jsx(native.EmptyState, { Illustration: Pending.Pending, body: body.bodyText });
-};
+export default tmp3;

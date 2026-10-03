@@ -1,38 +1,164 @@
-// Module ID: 9952
-// Function ID: 9953
+// Module ID: 9901
+// Function ID: 9902
 // Name: RoleSubscriptionEmojiUpsellAlert
-// Dependencies: [19, 2066, 2051, 21, 8806, 1115, 1479, 504, 6018, 5484, 9953, 8814, 2]
-// Exports: default
+// Dependencies: [19, 2074, 2058, 21, 8819, 1126, 558, 576, 1484, 504, 5705, 9902, 8827, 5783, 2]
 
-// Module 9952 (RoleSubscriptionEmojiUpsellAlert)
-import util from "util" /* 1115 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6018 */;
-import _modDef8806 from "module_8806" /* 8806 */;
-import CreatorRevenueButton from "CreatorRevenueButton" /* 9953 */;
-import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2066 */;
+// Module 9901 (RoleSubscriptionEmojiUpsellAlert)
+import Fragment from "Fragment" /* 21 */;
+import intl4 from "intl" /* 1126 */;
+import ChannelConstants from "ChannelConstants" /* 2058 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5705 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8819 */;
+import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9902 */;
+import react from "react" /* 19 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let dependencyMap, guildId;
 
-require = fn;
-const StaticChannelRoute = fn(2051).StaticChannelRoute;
-const jsx = fn(21).jsx;
-let size = fn(2);
-let result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/emoji_upsell/RoleSubscriptionEmojiUpsellAlert.tsx");
-
-export default function RoleSubscriptionEmojiUpsellAlert(arg0) {
+const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let first;
+  let intl;
+  let intl2;
+  let obj3;
+  let onPress;
+  let tmp11;
+  let tmp8;
+  const tmp = guildId;
+  let obj = guildId(576);
+  const cResult = obj.c(18);
+  guildId = guildId.guildId;
+  const onClose = guildId.onClose;
+  size = onClose(1484)();
+  const diff = Math.min(0.9 * Math.min(size.width, size.height), 500) - 32;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== guildId) {
+    const fn = function u() {
+      let guild = null;
+      if (null != guildId) {
+        guild = GuildStore.getGuild(tmp);
+      }
+      return guild;
+    };
+    cResult[1] = guildId;
+    cResult[2] = fn;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
+  let name;
+  if (stateFromStores != null) {
+    name = stateFromStores.name;
+  }
+  if (cResult[3] !== name) {
+    const obj2 = { image: onClose(8819), title: intl.string(tmp(1126).t.cBjkcx), description: intl2.formatToPlainString(tmp(1126).t["h0u/Hi"], obj3) };
+    intl = tmp(1126).intl;
+    intl2 = tmp(1126).intl;
+    obj3 = { serverName: name };
+    cResult[3] = name;
+    cResult[4] = obj2;
+    tmp11 = obj2;
+  } else {
+    tmp11 = cResult[4];
+  }
+  if (cResult[5] === guildId) {
+    let tmp12;
+    let tmp13;
+    let tmp15;
+    if (cResult[6] === onClose) {
+      tmp12 = cResult[7];
+    }
+    dependencyMap = tmp12;
+    const _Symbol = Symbol;
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl3 = tmp(1126).intl;
+      const stringResult = intl3.string(tmp(1126).t.cpT0Cq);
+      cResult[8] = stringResult;
+      tmp13 = stringResult;
+    } else {
+      tmp13 = cResult[8];
+    }
+    if (cResult[9] !== tmp12) {
+      const fn2 = function x() {
+        const CreatorRevenueButton = CreatorRevenueButton2.CreatorRevenueButton;
+        const intl = intl4.intl;
+        return <CreatorRevenueButton onPress={onPress} text={intl.string(intl4.t.p8FG1D)} />;
+      };
+      cResult[9] = tmp12;
+      cResult[10] = fn2;
+      tmp15 = fn2;
+    } else {
+      tmp15 = cResult[10];
+    }
+    if (cResult[11] === diff) {
+      let tmp16;
+      if (cResult[12] === tmp11) {
+        tmp16 = cResult[13];
+      }
+      if (cResult[14] === onClose) {
+        if (cResult[15] === tmp15) {
+          let tmp19;
+          if (cResult[16] === tmp16) {
+            tmp19 = cResult[17];
+          }
+          return tmp19;
+        }
+      }
+      const tmp21 = jsx(onClose(5783), { cancelText: tmp13, onClose, renderConfirmButton: tmp15, children: tmp16 });
+      cResult[14] = onClose;
+      cResult[15] = tmp15;
+      cResult[16] = tmp16;
+      cResult[17] = tmp21;
+      tmp19 = tmp21;
+    }
+    const tmp18 = jsx(tmp(8827).PremiumUpsellItem, { alertWidth: diff, upsellItem: tmp11 });
+    cResult[11] = diff;
+    cResult[12] = tmp11;
+    cResult[13] = tmp18;
+    tmp16 = tmp18;
+  }
+  class T {
+    constructor() {
+      const obj = GuildActionCreatorsDefault;
+      const result = obj.transitionToGuildSync(guildId, undefined, StaticChannelRoute.ROLE_SUBSCRIPTIONS);
+      if (onClose != null) {
+        onClose();
+      }
+    }
+  }
+  cResult[5] = guildId;
+  cResult[6] = onClose;
+  cResult[7] = T;
+  tmp12 = T;
+}) : ((arg0) => {
+  let onClose;
   ({ guildId: require, onClose } = arg0);
   let stateFromStores;
   function handleConfirm() {
-    const result = GuildActionCreatorsDefault.transitionToGuildSync(require, undefined, StaticChannelRoute.ROLE_SUBSCRIPTIONS);
+    const obj = GuildActionCreatorsDefault;
+    const result = obj.transitionToGuildSync(require, undefined, StaticChannelRoute.ROLE_SUBSCRIPTIONS);
     if (onClose != null) {
       onClose();
     }
   }
-  const size = onClose(stateFromStores[6])();
+  const tmp = onClose;
+  size = onClose(stateFromStores[8])();
   const diff = Math.min(0.9 * Math.min(size.width, size.height), 500) - 32;
+  let obj = require("get initialized");
   const items = [GuildStore];
-  stateFromStores = require("initialize").useStateFromStores(items, () => {
+  stateFromStores = obj.useStateFromStores(items, () => {
     let guild = null;
     if (null != require) {
       guild = GuildStore.getGuild(tmp);
@@ -40,33 +166,32 @@ export default function RoleSubscriptionEmojiUpsellAlert(arg0) {
     return guild;
   });
   let name;
+  const useMemo = handleConfirm.useMemo;
   if (stateFromStores != null) {
     name = stateFromStores.name;
   }
   const items1 = [name];
-  const memo = handleConfirm.useMemo(() => {
+  const memo = useMemo(() => {
+    let intl;
+    let intl2;
     let name;
     if (stateFromStores != null) {
       name = stateFromStores.name;
     }
-    const obj = { image: _modDef8806, title: null, description: null };
-    const intl = util.intl;
-    obj.title = intl.string(util.t.cBjkcx);
-    const intl2 = util.intl;
-    obj.description = intl2.formatToPlainString(util.t["h0u/Hi"], { serverName: name });
+    const obj = { image: AssetRegistryDefault, title: intl.string(intl4.t.cBjkcx), description: intl2.formatToPlainString(intl4.t["h0u/Hi"], { serverName: name }) };
+    intl = intl4.intl;
+    intl2 = intl4.intl;
     return obj;
   }, items1);
-  const obj2 = { cancelText: null, onClose: null, renderConfirmButton: null, children: null };
-  let obj = require("initialize");
+  tmp(stateFromStores[13]);
   let intl = tmp4(tmp2[5]).intl;
-  obj2.cancelText = intl.string(require("util").t.cpT0Cq);
-  obj2.onClose = onClose;
-  obj2.renderConfirmButton = function renderConfirmButton() {
-    const obj = { onPress: handleConfirm, text: null };
-    const intl = util.intl;
-    obj.text = intl.string(util.t.p8FG1D);
-    return jsx(CreatorRevenueButton.CreatorRevenueButton, { onPress: handleConfirm, text: null });
-  };
-  obj2.children = jsx(require("PremiumUpsellAlert").PremiumUpsellItem, { alertWidth: diff, upsellItem: memo });
-  return jsx(onClose(stateFromStores[9]), { cancelText: null, onClose: null, renderConfirmButton: null, children: null });
-};
+  return <tmpResult cancelText={intl.string(require("intl").t.cpT0Cq)} onClose={onClose} renderConfirmButton={function renderConfirmButton() {
+    const CreatorRevenueButton = CreatorRevenueButton2.CreatorRevenueButton;
+    const intl = intl4.intl;
+    return <CreatorRevenueButton onPress={handleConfirm} text={intl.string(intl4.t.p8FG1D)} />;
+  }}>{null}</tmpResult>;
+});
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/emoji_upsell/RoleSubscriptionEmojiUpsellAlert.tsx");
+
+export default tmp2;

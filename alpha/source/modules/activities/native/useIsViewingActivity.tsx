@@ -1,26 +1,67 @@
-// Module ID: 9044
-// Function ID: 9045
+// Module ID: 9072
+// Function ID: 9073
 // Name: useIsViewingActivity
-// Dependencies: [4861, 9031, 4721, 9028, 504, 2]
-// Exports: useIsViewingActivity
+// Dependencies: [4906, 558, 576, 9059, 4736, 9056, 504, 2]
 
-// Module 9044 (useIsViewingActivity)
-import ChannelCallModalDefault from "ChannelCallModal" /* 9028 */;
-import useIsActivityFocusedDefault from "useIsActivityFocused" /* 9031 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4861 */;
+// Module 9072 (useIsViewingActivity)
+import ChannelCallModalDefault from "ChannelCallModal" /* 9056 */;
+import useIsActivityFocusedDefault from "useIsActivityFocused" /* 9059 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/activities/native/useIsViewingActivity.tsx");
+let channelId;
 
-export const useIsViewingActivity = function useIsViewingActivity(channelId) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  let first;
+  let tmp8;
+  let tmp9;
+  const obj = channelId(576);
+  const cResult = obj.c(4);
+  const tmp = channelId;
+  channelId = channelId.channelId;
+  let tmp4 = useIsActivityFocusedDefault(channelId);
+  const obj2 = channelId(4736);
+  const isModalOpen = obj2.useIsModalOpen(ChannelCallModalDefault);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelRTCStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channelId) {
+    const fn = function o() {
+      return ChannelRTCStore.getChatOpen(channelId);
+    };
+    const items1 = [channelId];
+    cResult[1] = channelId;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp9 = items1;
+    tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp8, tmp9);
+  if (tmp4) {
+    tmp4 = isModalOpen;
+  }
+  if (tmp4) {
+    tmp4 = !stateFromStores;
+  }
+  return tmp4;
+}) : ((channelId) => {
   channelId = channelId.channelId;
   let tmp = useIsActivityFocusedDefault(channelId);
-  const isModalOpen = channelId(4721).useIsModalOpen(ChannelCallModalDefault);
-  const obj = channelId(4721);
+  const obj = channelId(4736);
+  const isModalOpen = obj.useIsModalOpen(ChannelCallModalDefault);
   const items = [ChannelRTCStore];
   const items1 = [channelId];
-  const stateFromStores = channelId(504).useStateFromStores(items, () => ChannelRTCStore.getChatOpen(channelId), items1);
+  const obj2 = channelId(504);
+  const stateFromStores = obj2.useStateFromStores(items, () => ChannelRTCStore.getChatOpen(channelId), items1);
   if (tmp) {
     tmp = isModalOpen;
   }
@@ -28,4 +69,7 @@ export const useIsViewingActivity = function useIsViewingActivity(channelId) {
     tmp = !stateFromStores;
   }
   return tmp;
-};
+});
+const result = size.fileFinishedImporting("modules/activities/native/useIsViewingActivity.tsx");
+
+export const useIsViewingActivity = tmp2;

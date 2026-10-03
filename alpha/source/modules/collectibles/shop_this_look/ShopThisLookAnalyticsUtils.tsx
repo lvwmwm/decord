@@ -1,13 +1,13 @@
-// Module ID: 12768
-// Function ID: 12769
+// Module ID: 12804
+// Function ID: 12805
 // Name: ShopThisLookAnalyticsUtils
-// Dependencies: [1074, 1974, 1241, 2]
+// Dependencies: [1085, 1980, 1252, 2]
 // Exports: trackShopThisLookMenuAction, trackShopThisLookRowAction
 
-// Module 12768 (ShopThisLookAnalyticsUtils)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
+// Module 12804 (ShopThisLookAnalyticsUtils)
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -18,25 +18,35 @@ export const ShopThisLookMenuAction = { MENU_VIEWED: "menu_viewed", COACHMARK_VI
 export const ShopThisLookRowAction = { ROW_VIEWED: "row_viewed", ROW_CLICKED: "row_clicked" };
 export { ShopThisLookProductType };
 export const trackShopThisLookMenuAction = function trackShopThisLookMenuAction(COACHMARK_CTA_CLICKED, ACTION_SHEET) {
-  const obj2 = { action: COACHMARK_CTA_CLICKED, source: ACTION_SHEET };
-  AnalyticsUtilsDefault.track(AnalyticEvents.SHOP_THIS_LOOK_MENU_ACTION, obj2);
+  let tmp;
+  const obj = { action: COACHMARK_CTA_CLICKED, source: tmp };
+  const track = AnalyticsUtilsDefault.track;
+  const SHOP_THIS_LOOK_MENU_ACTION = AnalyticEvents.SHOP_THIS_LOOK_MENU_ACTION;
+  AnalyticsUtilsDefault;
+  track(SHOP_THIS_LOOK_MENU_ACTION, obj);
+  tmp = ACTION_SHEET;
 };
 export const trackShopThisLookRowAction = function trackShopThisLookRowAction(arg0) {
+  let NAMEPLATE;
+  let action;
+  let isDisabled;
+  let productType;
+  let skuId;
+  let source;
   ({ productType, source } = arg0);
   ({ action, skuId, isDisabled } = arg0);
-  const obj = AnalyticsUtilsDefault;
-  const obj2 = { action, sku_id: skuId, product_type: null, is_disabled: null, source: null };
+  const obj = { action, sku_id: skuId, product_type: NAMEPLATE, is_disabled: isDisabled, source };
+  const track = AnalyticsUtilsDefault.track;
+  const SHOP_THIS_LOOK_ROW_ACTION = AnalyticEvents.SHOP_THIS_LOOK_ROW_ACTION;
+  AnalyticsUtilsDefault;
   if (CollectiblesItemType.CollectiblesItemType.PROFILE_FRAME === productType) {
-    let NAMEPLATE = obj.PROFILE_FRAME;
-  } else if (tmp2(1974).CollectiblesItemType.PROFILE_EFFECT === productType) {
+    NAMEPLATE = obj.PROFILE_FRAME;
+  } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_EFFECT === productType) {
     NAMEPLATE = obj.PROFILE_EFFECT;
-  } else if (tmp2(1974).CollectiblesItemType.AVATAR_DECORATION === productType) {
+  } else if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === productType) {
     NAMEPLATE = obj.AVATAR_DECORATION;
-  } else if (tmp2(1974).CollectiblesItemType.NAMEPLATE === productType) {
+  } else if (CollectiblesItemType.CollectiblesItemType.NAMEPLATE === productType) {
     NAMEPLATE = obj.NAMEPLATE;
   }
-  obj2.product_type = NAMEPLATE;
-  obj2.is_disabled = isDisabled;
-  obj2.source = source;
-  obj.track(AnalyticEvents.SHOP_THIS_LOOK_ROW_ACTION, obj2);
+  track(SHOP_THIS_LOOK_ROW_ACTION, obj);
 };

@@ -1,63 +1,168 @@
 // Module ID: 6367
 // Function ID: 6368
-// Dependencies: [6327, 6264, 6302]
-// Exports: useComposedGesture
+// Dependencies: [6351, 6352, 6368]
 
 // Module 6367
-const require = arg1;
-const dependencyMap = arg6;
+import _createClassDefault from "_createClass" /* 6352 */;
+import _classCallCheck from "_classCallCheck" /* 6351 */;
 
-export const useComposedGesture = function useComposedGesture(type) {
-  const substr = [...arguments].slice();
-  const flatMapResult = substr.flatMap((handlerTags) => {
-    if (obj.isComposedGesture(handlerTags)) {
-      handlerTags = handlerTags.handlerTags;
-    } else {
-      handlerTags = [handlerTags.handlerTag];
-    }
-    return handlerTags;
-  });
-  if (obj.containsDuplicates(flatMapResult)) {
-    const _Error2 = Error;
-    const error = new Error(tmp2(6264).tagMessage("Each gesture can be used only once in the gesture composition."));
-    throw error;
-  } else {
-    const obj2 = { shouldUseReanimatedDetector: substr.some((config) => config.config.shouldUseReanimatedDetector), dispatchesAnimatedEvents: substr.some((config) => config.config.dispatchesAnimatedEvents) };
-    if (obj2.shouldUseReanimatedDetector) {
-      if (obj2.dispatchesAnimatedEvents) {
-        const _Error = Error;
-        const error1 = new Error(tmp2(6264).tagMessage("Composed gestures cannot use both Reanimated and Animated events at the same time."));
-        throw error1;
-      }
-    }
-    const Reanimated = tmp2(6302).Reanimated;
-    let composedEventHandler;
-    if (Reanimated != null) {
-      composedEventHandler = Reanimated.useComposedEventHandler(substr.map((detectorCallbacks) => detectorCallbacks.detectorCallbacks.reanimatedEventHandler || null));
-    }
-    const found = substr.filter((detectorCallbacks) => undefined !== detectorCallbacks.detectorCallbacks.animatedEventHandler);
-    let animatedEventHandler;
-    if (found.length > 0) {
-      animatedEventHandler = found[0].detectorCallbacks.animatedEventHandler;
-    }
-    const obj3 = { handlerTags: flatMapResult, type, config: obj2, detectorCallbacks: null, externalSimultaneousHandlers: null, gestures: null };
-    const obj4 = {
-      jsEventHandler(arg0) {
-          for (const item10007 of substr) {
-            if (item10007.detectorCallbacks.jsEventHandler) {
-              let detectorCallbacks = tmp.detectorCallbacks;
-              let jsEventHandlerResult = detectorCallbacks.jsEventHandler(arg0);
-            }
-            continue;
-          }
-        },
-      reanimatedEventHandler: composedEventHandler,
-      animatedEventHandler
+let updateViewableItems;
+
+class ViewabilityManager {
+  constructor(rvManager) {
+    const self = this;
+    let closure_0 = rvManager;
+    let tmp = _classCallCheck(this, ViewabilityManager);
+    this.viewabilityHelpers = [];
+    this.hasInteracted = false;
+    this.dispose = () => {
+      const viewabilityHelpers = self.viewabilityHelpers;
+      const item = viewabilityHelpers.forEach((dispose) => dispose.dispose());
     };
-    obj3.detectorCallbacks = obj4;
-    obj3.externalSimultaneousHandlers = [];
-    obj3.gestures = substr;
-    return obj3;
+    this.onVisibleIndicesChanged = (arg0) => {
+      self.updateViewableItems(arg0);
+    };
+    this.recordInteraction = () => {
+      if (!self.hasInteracted) {
+        self.hasInteracted = true;
+        const viewabilityHelpers = obj.viewabilityHelpers;
+        const item = viewabilityHelpers.forEach((item) => {
+          item.hasInteracted = true;
+        });
+        self.updateViewableItems();
+      }
+    };
+    this.updateViewableItems = (arg0) => {
+      let windowSize;
+      closure_0 = arg0;
+      let rvManager = windowSize.rvManager;
+      windowSize = rvManager.getWindowSize();
+      if (undefined !== windowSize) {
+        if (windowSize.shouldListenToVisibleIndices) {
+          const rvManager2 = tmp.rvManager;
+          let num = rvManager2.getAbsoluteLastScrollOffset();
+          if (num == null) {
+            num = 0;
+          }
+          let closure_2 = num - tmp.rvManager.firstItemOffset;
+          const bottomViewabilityInsetRef = tmp.rvManager.props.bottomViewabilityInsetRef;
+          let num2;
+          if (bottomViewabilityInsetRef != null) {
+            num2 = bottomViewabilityInsetRef.current;
+          }
+          if (num2 == null) {
+            num2 = 0;
+          }
+          const viewabilityHelpers = tmp.viewabilityHelpers;
+          const item = viewabilityHelpers.forEach((updateViewableItems) => {
+            let flag = self.rvManager.props.horizontal;
+            updateViewableItems = updateViewableItems.updateViewableItems;
+            if (flag == null) {
+              flag = false;
+            }
+            updateViewableItems(flag, closure_2, num2, windowSize, (arg0) => {
+              rvManager = rvManager.rvManager;
+              return rvManager.getLayout(arg0);
+            }, closure_0);
+          });
+        }
+      }
+    };
+    this.clearLastReportedViewableIndices = () => {
+      const viewabilityHelpers = self.viewabilityHelpers;
+      const item = viewabilityHelpers.forEach((clearLastReportedViewableIndices) => clearLastReportedViewableIndices.clearLastReportedViewableIndices());
+    };
+    this.createViewabilityHelper = (arg0, arg1) => {
+      closure_0 = arg1;
+      const tmp = new closure_0(self[2])(arg0, (arr, arr2, arr3) => {
+        let items;
+        if (closure_0 != null) {
+          let obj = {
+            viewableItems: arr.map((item) => {
+                if (undefined !== closure_1_1.rvManager.props.data[item]) {
+                  let keyExtractorResult;
+                  if (undefined !== closure_1_1.rvManager.props.keyExtractor) {
+                    const props = tmp.rvManager.props;
+                    keyExtractorResult = props.keyExtractor(tmp2, item);
+                  }
+                  const _Date = Date;
+                  const obj = { index: item, isViewable: true, item: closure_1_1.rvManager.props.data[item], key: keyExtractorResult, timestamp: Date.now() };
+                  return obj;
+                }
+                keyExtractorResult = item.toString();
+              }),
+            changed: items
+          };
+          items = [];
+          const arraySpreadResult = HermesBuiltin.arraySpread(items, arr2.map((item) => {
+            if (undefined !== closure_1_1.rvManager.props.data[item]) {
+              let keyExtractorResult;
+              if (undefined !== closure_1_1.rvManager.props.keyExtractor) {
+                const props = tmp.rvManager.props;
+                keyExtractorResult = props.keyExtractor(tmp2, item);
+              }
+              const _Date = Date;
+              const obj = { index: item, isViewable: true, item: closure_1_1.rvManager.props.data[item], key: keyExtractorResult, timestamp: Date.now() };
+              return obj;
+            }
+            keyExtractorResult = item.toString();
+          }), 0);
+          HermesBuiltin.arraySpread(items, arr3.map((item) => {
+            if (undefined !== closure_1_1.rvManager.props.data[item]) {
+              let keyExtractorResult;
+              if (undefined !== closure_1_1.rvManager.props.keyExtractor) {
+                const props = tmp.rvManager.props;
+                keyExtractorResult = props.keyExtractor(tmp2, item);
+              }
+              const _Date = Date;
+              const obj = { index: item, isViewable: false, item: closure_1_1.rvManager.props.data[item], key: keyExtractorResult, timestamp: Date.now() };
+              return obj;
+            }
+            keyExtractorResult = item.toString();
+          }), arraySpreadResult);
+          tmp2(obj);
+        }
+      });
+      return tmp;
+    };
+    this.rvManager = rvManager;
+    const tmp2 = null !== rvManager.props.onViewableItemsChanged && undefined !== rvManager.props.onViewableItemsChanged;
+    if (tmp2) {
+      let viewabilityHelpers = self.viewabilityHelpers;
+      viewabilityHelpers.push(self.createViewabilityHelper(rvManager.props.viewabilityConfig, (arg0) => {
+        const props = closure_0.props;
+        const onViewableItemsChanged = props.onViewableItemsChanged;
+        if (onViewableItemsChanged != null) {
+          const result = onViewableItemsChanged(arg0);
+        }
+      }));
+    }
+    let prop = rvManager.props.viewabilityConfigCallbackPairs;
+    if (prop == null) {
+      prop = [];
+    }
+    let item = prop.forEach((viewabilityConfig, index) => {
+      const viewabilityHelpers = self.viewabilityHelpers;
+      viewabilityHelpers.push(self.createViewabilityHelper(viewabilityConfig.viewabilityConfig, (arg0) => {
+        let prop;
+        if (index.props.viewabilityConfigCallbackPairs != null) {
+          if (index.props.viewabilityConfigCallbackPairs[index] != null) {
+            prop = tmp3.onViewableItemsChanged;
+          }
+        }
+        if (prop != null) {
+          prop(arg0);
+        }
+      }));
+    });
   }
-  obj = substr(6327);
+}
+let obj = {
+  key: "shouldListenToVisibleIndices",
+  get() {
+    return this.viewabilityHelpers.length > 0;
+  }
 };
+let items = [obj];
+
+export default _createClassDefault(ViewabilityManager, items);

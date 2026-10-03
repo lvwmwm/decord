@@ -1,132 +1,146 @@
-// Module ID: 16688
-// Function ID: 16689
+// Module ID: 16776
+// Function ID: 16777
 // Name: SearchFilterUtils
-// Dependencies: [7477, 7476, 1074, 1115, 11516, 9764, 13592, 5588, 9269, 16689, 11901, 8930, 12034, 12055, 12031, 4809, 9188, 1981, 12052, 2]
+// Dependencies: [7513, 7512, 1085, 1126, 11435, 10369, 13654, 5874, 9275, 16777, 11838, 8958, 11969, 11985, 11966, 4854, 9194, 1987, 11982, 2]
 // Exports: getSearchFilterSuggestions, getSearchTokenIcon, getSearchTokenLabel, getSearchTokenPressHandler, getSearchTokenSubLabel
 
-// Module 16688 (SearchFilterUtils)
-import util from "util" /* 1115 */;
-import AtIcon from "AtIcon" /* 5588 */;
-import TrackingConstants from "TrackingConstants" /* 7476 */;
-import RobotIcon from "RobotIcon" /* 8930 */;
-import CalendarIcon from "CalendarIcon" /* 9269 */;
-import AttachmentIcon from "AttachmentIcon" /* 9764 */;
-import UserIcon from "UserIcon" /* 11516 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 11901 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12031 */;
-import SearchTokensDefault from "SearchTokens" /* 12034 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12055 */;
-import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 13592 */;
-import CalendarMinusIcon from "CalendarMinusIcon" /* 16689 */;
-import SearchConstants from "SearchConstants" /* 7477 */;
-import Constants from "Constants" /* 1074 */;
+// Module 16776 (SearchFilterUtils)
+import intl10 from "intl" /* 1126 */;
+import AtIcon from "AtIcon" /* 5874 */;
+import TrackingConstants from "TrackingConstants" /* 7512 */;
+import RobotIcon from "RobotIcon" /* 8958 */;
+import CalendarIcon from "CalendarIcon" /* 9275 */;
+import AttachmentIcon from "AttachmentIcon" /* 10369 */;
+import UserIcon from "UserIcon" /* 11435 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 11838 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 11966 */;
+import SearchTokens from "SearchTokens" /* 11969 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 11985 */;
+import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 13654 */;
+import CalendarMinusIcon from "CalendarMinusIcon" /* 16777 */;
+import SearchConstants from "SearchConstants" /* 7513 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const SearchPlatformUtilsDefault = SearchPlatformUtils;
+const SearchTokensDefault = SearchTokens;
 
+let c3;
+let closure_4;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
 ({ EMPTY_SEARCH_QUERY_STRING: c3, SearchQueryTagTypes: closure_4 } = SearchConstants);
 const SearchFilterAddLocations = TrackingConstants.SearchFilterAddLocations;
-({ SEARCH_DATE_FORMAT: metroRequire, SearchTokenTypes: closure_7, SearchTypes: closure_8 } = Constants);
+({ SEARCH_DATE_FORMAT: metroRequire, SearchTokenTypes: metroImportDefault, SearchTypes: metroImportAll } = Constants);
 let result = size.fileFinishedImporting("modules/search/native/components/layout/autocomplete/SearchFilterUtils.tsx");
 
-export const getSearchTokenLabel = function getSearchTokenLabel(type, item) {
-  if (constants.FILTER_FROM === item) {
-    const intl9 = util.intl;
-    return intl9.string(util.t["6iuVMn"]);
-  } else if (tmp.FILTER_HAS === item) {
-    const intl8 = util.intl;
-    return intl8.string(util.t.DMAzx8);
-  } else if (tmp.FILTER_MENTIONS === item) {
-    const intl7 = util.intl;
-    return intl7.string(util.t.CMKzQx);
-  } else if (tmp.FILTER_IN === item) {
-    if (type.type === constants2.DMS) {
-      const intl6 = util.intl;
-      let stringResult = intl6.string(util.t["8Fmo42"]);
+export const getSearchTokenLabel = function getSearchTokenLabel(searchContext, item) {
+  if (metroImportDefault.FILTER_FROM === item) {
+    const intl9 = intl10.intl;
+    return intl9.string(intl10.t["6iuVMn"]);
+  } else if (metroImportDefault.FILTER_HAS === item) {
+    const intl8 = intl10.intl;
+    return intl8.string(intl10.t.DMAzx8);
+  } else if (metroImportDefault.FILTER_MENTIONS === item) {
+    const intl7 = intl10.intl;
+    return intl7.string(intl10.t.CMKzQx);
+  } else if (metroImportDefault.FILTER_IN === item) {
+    let stringResult;
+    if (searchContext.type === metroImportAll.DMS) {
+      const intl6 = intl10.intl;
+      stringResult = intl6.string(intl10.t["8Fmo42"]);
     } else {
-      const intl5 = util.intl;
-      stringResult = intl5.string(util.t.cdPmq8);
+      const intl5 = intl10.intl;
+      stringResult = intl5.string(intl10.t.cdPmq8);
     }
     return stringResult;
-  } else if (tmp.FILTER_ON === item) {
-    const intl4 = util.intl;
-    return intl4.string(util.t.h4qGfp);
-  } else if (tmp.FILTER_BEFORE === item) {
-    const intl3 = util.intl;
-    return intl3.string(util.t.c9qSBR);
-  } else if (tmp.FILTER_AFTER === item) {
-    const intl2 = util.intl;
-    return intl2.string(util.t.hcMwDW);
-  } else if (tmp.FILTER_AUTHOR_TYPE === item) {
-    const intl = util.intl;
-    return intl.string(util.t.C4r6xL);
+  } else if (metroImportDefault.FILTER_ON === item) {
+    const intl4 = intl10.intl;
+    return intl4.string(intl10.t.h4qGfp);
+  } else if (metroImportDefault.FILTER_BEFORE === item) {
+    const intl3 = intl10.intl;
+    return intl3.string(intl10.t.c9qSBR);
+  } else if (metroImportDefault.FILTER_AFTER === item) {
+    const intl2 = intl10.intl;
+    return intl2.string(intl10.t.hcMwDW);
+  } else if (metroImportDefault.FILTER_AUTHOR_TYPE === item) {
+    const intl = intl10.intl;
+    return intl.string(intl10.t.C4r6xL);
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
+    const self = this;
+    const self2 = this;
     const error = new Error("[getSearchTokenLabel] Unhandled search token type: " + item);
     throw error;
   }
 };
-export const getSearchTokenSubLabel = function getSearchTokenSubLabel(searchTokenType) {
-  if (constants.FILTER_FROM === searchTokenType) {
-    const intl8 = util.intl;
-    return intl8.string(util.t.kkGlww);
-  } else if (tmp.FILTER_HAS === searchTokenType) {
-    const intl7 = util.intl;
-    return intl7.string(util.t.gUfZa2);
-  } else if (tmp.FILTER_IN === searchTokenType) {
-    const intl6 = util.intl;
-    return intl6.string(util.t.qDUdlT);
-  } else if (tmp.FILTER_MENTIONS === searchTokenType) {
-    const intl5 = util.intl;
-    return intl5.string(util.t.ILtwK5);
-  } else if (tmp.FILTER_ON === searchTokenType) {
-    const intl4 = util.intl;
-    return intl4.string(util.t.t8bWvr);
-  } else if (tmp.FILTER_BEFORE === searchTokenType) {
-    const intl3 = util.intl;
-    return intl3.string(util.t.YEN3uU);
-  } else if (tmp.FILTER_AFTER === searchTokenType) {
-    const intl2 = util.intl;
-    return intl2.string(util.t.hwbB7s);
-  } else if (tmp.FILTER_AUTHOR_TYPE === searchTokenType) {
-    const intl = util.intl;
-    return intl.string(util.t.tJPdhZ);
+export const getSearchTokenSubLabel = function getSearchTokenSubLabel(cResult) {
+  if (metroImportDefault.FILTER_FROM === cResult) {
+    const intl8 = intl10.intl;
+    return intl8.string(intl10.t.kkGlww);
+  } else if (metroImportDefault.FILTER_HAS === cResult) {
+    const intl7 = intl10.intl;
+    return intl7.string(intl10.t.gUfZa2);
+  } else if (metroImportDefault.FILTER_IN === cResult) {
+    const intl6 = intl10.intl;
+    return intl6.string(intl10.t.qDUdlT);
+  } else if (metroImportDefault.FILTER_MENTIONS === cResult) {
+    const intl5 = intl10.intl;
+    return intl5.string(intl10.t.ILtwK5);
+  } else if (metroImportDefault.FILTER_ON === cResult) {
+    const intl4 = intl10.intl;
+    return intl4.string(intl10.t.t8bWvr);
+  } else if (metroImportDefault.FILTER_BEFORE === cResult) {
+    const intl3 = intl10.intl;
+    return intl3.string(intl10.t.YEN3uU);
+  } else if (metroImportDefault.FILTER_AFTER === cResult) {
+    const intl2 = intl10.intl;
+    return intl2.string(intl10.t.hwbB7s);
+  } else if (metroImportDefault.FILTER_AUTHOR_TYPE === cResult) {
+    const intl = intl10.intl;
+    return intl.string(intl10.t.tJPdhZ);
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
-    const error = new Error("[getSearchTokenSubLabel] Unhandled search token type: " + searchTokenType);
+    const self = this;
+    const self2 = this;
+    const error = new Error("[getSearchTokenSubLabel] Unhandled search token type: " + cResult);
     throw error;
   }
 };
-export const getSearchTokenIcon = function getSearchTokenIcon(searchTokenType) {
-  if (constants.FILTER_FROM === searchTokenType) {
+export const getSearchTokenIcon = function getSearchTokenIcon(cResult) {
+  if (metroImportDefault.FILTER_FROM === cResult) {
     return UserIcon.UserIcon;
-  } else if (tmp.FILTER_HAS === searchTokenType) {
+  } else if (metroImportDefault.FILTER_HAS === cResult) {
     return AttachmentIcon.AttachmentIcon;
-  } else if (tmp.FILTER_IN === searchTokenType) {
+  } else if (metroImportDefault.FILTER_IN === cResult) {
     return ChannelListMagnifyingGlassIcon.ChannelListMagnifyingGlassIcon;
-  } else if (tmp.FILTER_MENTIONS === searchTokenType) {
+  } else if (metroImportDefault.FILTER_MENTIONS === cResult) {
     return AtIcon.AtIcon;
-  } else if (tmp.FILTER_ON === searchTokenType) {
+  } else if (metroImportDefault.FILTER_ON === cResult) {
     return CalendarIcon.CalendarIcon;
-  } else if (tmp.FILTER_BEFORE === searchTokenType) {
+  } else if (metroImportDefault.FILTER_BEFORE === cResult) {
     return CalendarMinusIcon.CalendarMinusIcon;
-  } else if (tmp.FILTER_AFTER === searchTokenType) {
+  } else if (metroImportDefault.FILTER_AFTER === cResult) {
     return CalendarPlusIcon.CalendarPlusIcon;
-  } else if (tmp.FILTER_AUTHOR_TYPE === searchTokenType) {
+  } else if (metroImportDefault.FILTER_AUTHOR_TYPE === cResult) {
     return RobotIcon.RobotIcon;
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
-    const error = new Error("[getSearchTokenIcon] Unhandled search token type: " + searchTokenType);
+    const self = this;
+    const self2 = this;
+    const error = new Error("[getSearchTokenIcon] Unhandled search token type: " + cResult);
     throw error;
   }
 };
-export const getSearchTokenPressHandler = function getSearchTokenPressHandler(arg0, token, CONTEXT_MENU) {
-  closure_0 = arg0;
-  closure_1 = token;
-  closure_2 = CONTEXT_MENU;
+export const getSearchTokenPressHandler = function getSearchTokenPressHandler(searchContext, token, CONTEXT_MENU) {
+  let closure_0 = searchContext;
+  let closure_1 = token;
+  let closure_2 = CONTEXT_MENU;
+  let tmp = constants;
   if (constants.FILTER_FROM !== token) {
     if (tmp.FILTER_IN !== token) {
       if (tmp.FILTER_HAS !== token) {
@@ -137,47 +151,59 @@ export const getSearchTokenPressHandler = function getSearchTokenPressHandler(ar
                 if (tmp.FILTER_AFTER !== token) {
                   const _Error = Error;
                   const _HermesInternal = HermesInternal;
+                  const str = "[getSearchTokenPressHandler] Unhandled search token type: ";
+                  const self = this;
+                  const self2 = this;
                   const error = new Error("[getSearchTokenPressHandler] Unhandled search token type: " + token);
+                  let tmp4 = error;
                   throw error;
                 }
               }
             }
             return () => {
-              let result = SearchPlatformUtils.performKeyboardAwareNavigation(() => {
-                searchTokenType(paths[15]).openLazy(searchContext(paths[17])(paths[16], paths.paths), "DatePicker", {
+              let paths;
+              let obj = SearchPlatformUtils;
+              let result = obj.performKeyboardAwareNavigation(() => {
+                let _location;
+                let searchTokenType;
+                let obj = token(paths[15]);
+                let obj2 = {
                   onSubmit(format) {
                     searchContext = format.format(closure_1_6);
-                    searchTokenType(_location[13]).updateSearchQuery(searchContext, (setTextInputValue) => {
+                    let obj = searchTokenType(_location[13]);
+                    obj.updateSearchQuery(searchContext, (setTextInputValue) => {
+                      let key;
+                      const tmp = _location;
                       if (_location === constants2.SEARCH_INPUT_DROPDOWN) {
                         setTextInputValue.setTextInputValue(closure_3_3);
                       }
                       setTextInputValue.removePrefixTags();
-                      const obj = { type: constants.COMPLETE, text: null, searchTokenType: null, location: null };
+                      const addTag = setTextInputValue.addTag;
+                      const obj = { type: constants.COMPLETE, text: "" + key + " " + closure_0, searchTokenType, location: tmp };
                       let tmp7 = closure_1(closure_2[12])[searchTokenType];
+                      const tmp5 = closure_1;
                       if (null == tmp7) {
-                        const result = closure_0(tmp6[12]).rebuildSearchTokenConfigs();
-                        tmp7 = closure_1(tmp6[12])[str];
-                        const obj2 = closure_0(tmp6[12]);
+                        const obj2 = closure_0(closure_2[12]);
+                        const result = obj2.rebuildSearchTokenConfigs();
+                        tmp7 = tmp5(tmp6[12])[str];
                       }
-                      let key;
+                      key = undefined;
                       if (tmp7 != null) {
                         key = tmp7.key;
                       }
                       if (key == null) {
                         key = str.toString();
                       }
-                      obj.text = "" + key + " " + closure_0;
-                      obj.searchTokenType = searchTokenType;
-                      obj.location = _location;
-                      setTextInputValue.addTag(obj);
+                      addTag(obj);
                     });
-                    let obj = searchTokenType(_location[13]);
-                    searchTokenType(_location[18]).trackSearchFilterAdd({ searchContext, searchTokenType, location: _location });
                     let obj2 = searchTokenType(_location[18]);
                     const obj3 = { searchContext, searchTokenType, location: _location };
-                    const initialMessages = searchTokenType(_location[14]).fetchInitialMessages(searchContext);
+                    obj2.trackSearchFilterAdd(obj3);
+                    const obj4 = searchTokenType(_location[14]);
+                    const initialMessages = obj4.fetchInitialMessages(searchContext);
                   }
-                });
+                };
+                obj.openLazy(searchContext(paths[17])(paths[16], paths.paths), "DatePicker", obj2);
               });
             };
           }
@@ -186,45 +212,53 @@ export const getSearchTokenPressHandler = function getSearchTokenPressHandler(ar
     }
   }
   return () => {
-    const searchTokenType = _location;
-    _location = closure_2;
-    SearchPlatformActionCreatorsDefault.updateSearchQuery(searchTokenType, (saveDraftTextInputValue) => {
-      if (_location === constants2.CONTEXT_MENU) {
+    let closure_0 = closure_1;
+    closure_1 = CONTEXT_MENU;
+    let obj = SearchPlatformActionCreatorsDefault;
+    obj.updateSearchQuery(closure_0, (saveDraftTextInputValue) => {
+      let key;
+      const tmp = closure_1;
+      if (closure_1 === constants2.CONTEXT_MENU) {
         const result = saveDraftTextInputValue.saveDraftTextInputValue();
       }
       saveDraftTextInputValue.setTextInputValue(closure_2_3);
-      const obj = { type: constants.PREFIX, searchTokenType, location: _location, text: null };
-      let tmp6 = _location(closure_2[12])[searchTokenType];
+      const addTag = saveDraftTextInputValue.addTag;
+      const obj = { type: constants.PREFIX, searchTokenType, location: tmp, text: key };
+      let tmp6 = token(CONTEXT_MENU[12])[searchTokenType];
+      const tmp4 = token;
       if (null == tmp6) {
-        const result1 = searchTokenType(tmp5[12]).rebuildSearchTokenConfigs();
-        tmp6 = _location(tmp5[12])[str];
-        const obj2 = searchTokenType(tmp5[12]);
+        const obj2 = searchContext(CONTEXT_MENU[12]);
+        const result1 = obj2.rebuildSearchTokenConfigs();
+        tmp6 = tmp4(tmp5[12])[str];
       }
-      let key;
+      key = undefined;
       if (tmp6 != null) {
         key = tmp6.key;
       }
       if (key == null) {
         key = str.toString();
       }
-      obj.text = key;
-      saveDraftTextInputValue.addTag(obj);
+      addTag(obj);
     });
-    SearchPlatformUtilsDefault.syncAutocomplete(searchTokenType);
+    let obj2 = SearchPlatformUtilsDefault;
+    obj2.syncAutocomplete(closure_0);
   };
 };
 export const getSearchFilterSuggestions = function getSearchFilterSuggestions(textInputValue) {
-  closure_0 = textInputValue;
+  let closure_0 = textInputValue;
   const items = [];
-  const keys = Object.keys(items(12034));
-  const item = keys.forEach((token) => {
+  const keys = Object.keys(items(11969));
+  const item = keys.forEach(function(token) {
+    const obj = SearchTokens;
     if (obj.isSearchFilterTokenType(token)) {
       const plainText = SearchTokensDefault[token].plainText;
       if (null != plainText) {
         const _RegExp = RegExp;
         const _HermesInternal = HermesInternal;
+        const self = this;
+        const self2 = this;
         const regExp = new RegExp("^" + plainText + "(?:: ?)?$", "i");
-        if (regExp.test(closure_0)) {
+        if (regExp.test(textInputValue)) {
           const obj2 = { token, text: plainText };
           items.push(obj2);
         }

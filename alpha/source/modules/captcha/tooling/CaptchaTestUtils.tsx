@@ -1,22 +1,27 @@
-// Module ID: 15497
-// Function ID: 15498
+// Module ID: 15558
+// Function ID: 15559
 // Name: CaptchaTestUtils
-// Dependencies: [15498, 2]
+// Dependencies: [15559, 2]
 
-// Module 15497 (CaptchaTestUtils)
-import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 15498 */;
+// Module 15558 (CaptchaTestUtils)
+import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 15559 */;
 import size from "module_2" /* 2 */;
 
 const entries = Object.entries(CaptchaTestActionCreators.HCaptchaDifficulty);
 const mapped = entries.map((item) => {
+  let str;
+  let tmp;
   [tmp, str] = item;
-  return { id: str.toString(), label: tmp, value: str };
+  const obj = { id: str.toString(), label: tmp, value: str };
+  return obj;
 });
 const found = mapped.filter(function isHCaptchaDifficulty(value) {
   return typeof value.value !== "string";
 });
 const entries1 = Object.entries(CaptchaTestActionCreators.CaptchaDeciderType);
 const mapped1 = entries1.map((item) => {
+  let tmp;
+  let tmp2;
   [tmp, tmp2] = item;
   return { id, label, value: id };
 });

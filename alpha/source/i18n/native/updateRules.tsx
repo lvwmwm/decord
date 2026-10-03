@@ -1,96 +1,177 @@
-// Module ID: 17300
-// Function ID: 17301
+// Module ID: 17393
+// Function ID: 17394
 // Name: updateRules
-// Dependencies: [19, 1074, 21, 4579, 4560, 576, 4554, 1930, 1177, 2]
+// Dependencies: [19, 1085, 21, 558, 576, 4596, 4580, 587, 4565, 1936, 1188, 2]
 // Exports: default
 
-// Module 17300 (updateRules)
-import native from "native" /* 1177 */;
-import _modDef1930 from "module_1930" /* 1930 */;
-import LinkingDefault from "Linking" /* 4554 */;
-import noop from "module_19" /* 19 */;
+// Module 17393 (updateRules)
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import native from "native" /* 1188 */;
+import _modDef1936 from "module_1936" /* 1936 */;
+import LinkingDefault from "Linking" /* 4565 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-class I18nLink {
-  constructor(arg0) {
-    node = global.node;
-    alwaysShowLinkDecorations = undefined;
-    closure_2 = undefined;
-    obj = {};
-    ({ output, state } = global);
-    tmp = node;
-    tmp2 = closure_2;
-    alwaysShowLinkDecorations = closure_3.useContext(node(closure_2[3]).AccessibilityPreferencesContext).alwaysShowLinkDecorations;
-    obj2 = node(closure_2[4]);
-    token = obj2.useToken(alwaysShowLinkDecorations(closure_2[5]).colors.TEXT_LINK);
-    closure_2 = token;
-    items = [, ];
-    items[0] = token;
-    items[1] = alwaysShowLinkDecorations;
-    memo = closure_3.useMemo(() => {
-      const obj = { color: token, textDecorationLine: null };
-      let str = "none";
-      if (alwaysShowLinkDecorations) {
-        str = "underline";
-      }
-      obj.textDecorationLine = str;
-      return obj;
-    }, items);
+const Fonts = Constants.Fonts;
+const jsx = Fragment.jsx;
+let paragraph = { strong: { fontFamily: Fonts.PRIMARY_SEMIBOLD }, italic: { fontStyle: "italic" }, underline: { textDecorationLine: "underline" } };
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
+  let output;
+  let state;
+  let obj = node(576);
+  const cResult = obj.c(9);
+  node = node.node;
+  ({ output, state } = node);
+  const alwaysShowLinkDecorations = react.useContext(node(4596).AccessibilityPreferencesContext).alwaysShowLinkDecorations;
+  const obj2 = node(4580);
+  const token = obj2.useToken(nativeDefault.colors.TEXT_LINK);
+  let str = "none";
+  if (alwaysShowLinkDecorations) {
+    str = "underline";
+  }
+  if (cResult[0] === token) {
+    const obj3 = {};
     if (null != node.context) {
-      tmp5 = node.context[node.target];
-      if (tmp5) {
-        if (tmp5.onClick) {
-          obj.onClick = tmp5.onClick;
+      if (node.context[node.target]) {
+        if (node.context[node.target].onClick) {
+          obj3.onClick = node.context[node.target].onClick;
         }
       }
-      obj.onClick = tmp5;
+      obj3.onClick = node.context[node.target];
     }
-    if (null == obj.onClick) {
-      obj.onClick = () => {
-        const obj = LinkingDefault;
-        return obj.openURL(_modDef1930.sanitizeUrl(node.target));
-      };
+    if (null == obj3.onClick) {
+      let tmp6;
+      if (cResult[3] !== node.target) {
+        class L {
+          constructor() {
+            tmp = closure_1(closure_2[8]);
+            openURL = tmp.openURL;
+            obj = closure_1(closure_2[9]);
+            return openURL(obj.sanitizeUrl(node.target));
+          }
+        }
+        cResult[3] = node.target;
+        cResult[4] = L;
+        tmp6 = L;
+      } else {
+        class L {
+          constructor() {
+            tmp = closure_1(closure_2[8]);
+            openURL = tmp.openURL;
+            obj = closure_1(closure_2[9]);
+            return openURL(obj.sanitizeUrl(node.target));
+          }
+        }
+      }
+      obj3.onClick = tmp6;
     }
-    obj1 = { accessible: true, accessibilityRole: "link", onPress: obj.onClick, style: memo, children: output(node.content, state) };
-    return jsx(tmp(tmp2[8]).LegacyText, obj1);
+    if (cResult[5] === node.content) {
+      class L {
+        constructor() {
+          tmp = closure_1(closure_2[8]);
+          openURL = tmp.openURL;
+          obj = closure_1(closure_2[9]);
+          return openURL(obj.sanitizeUrl(node.target));
+        }
+      }
+    }
+    cResult[5] = node.content;
+    cResult[6] = output;
+    cResult[7] = state;
+    cResult[8] = output(node.content, state);
+    const outputResult = output(node.content, state);
   }
-}
-const jsx = fn(21).jsx;
-let paragraph = { strong: { fontFamily: fn(1074).Fonts.PRIMARY_SEMIBOLD }, italic: { fontStyle: "italic" }, underline: { textDecorationLine: "underline" } };
-const size = fn(2);
+  const obj4 = { color: token, textDecorationLine: str };
+  cResult[0] = token;
+  cResult[1] = str;
+  cResult[2] = obj4;
+}) : ((node) => {
+  let output;
+  let state;
+  node = node.node;
+  let token;
+  let obj = {};
+  ({ output, state } = node);
+  const tmp = node;
+  const alwaysShowLinkDecorations = react.useContext(node(token[5]).AccessibilityPreferencesContext).alwaysShowLinkDecorations;
+  const obj2 = node(token[6]);
+  const tmp2 = token;
+  token = obj2.useToken(alwaysShowLinkDecorations(token[7]).colors.TEXT_LINK);
+  const items = [token, alwaysShowLinkDecorations];
+  const memo = react.useMemo(() => {
+    let str;
+    const obj = { color: token, textDecorationLine: str };
+    str = "none";
+    if (alwaysShowLinkDecorations) {
+      str = "underline";
+    }
+    return obj;
+  }, items);
+  if (null != node.context) {
+    if (node.context[node.target]) {
+      if (node.context[node.target].onClick) {
+        obj.onClick = node.context[node.target].onClick;
+      }
+    }
+    obj.onClick = node.context[node.target];
+  }
+  if (null == obj.onClick) {
+    obj.onClick = () => {
+      const openURL = LinkingDefault.openURL;
+      LinkingDefault;
+      const obj = _modDef1936;
+      return openURL(obj.sanitizeUrl(node.target));
+    };
+  }
+  const LegacyText = tmp(tmp2[10]).LegacyText;
+  return <LegacyText accessible accessibilityRole="link" onPress={obj.onClick} style={memo}>{output(node.content, state)}</LegacyText>;
+});
+let closure_6 = tmp2;
 const result = size.fileFinishedImporting("i18n/native/updateRules.tsx");
 
 export default function updateRules(paragraph) {
-  paragraph = {};
+  paragraph = {
+    react(content, fn, key) {
+      const LegacyText = native.LegacyText;
+      return <LegacyText key={arg2.key}>{arg1(arg0.content, arg2)}</LegacyText>;
+    }
+  };
   const merged = Object.assign(paragraph.paragraph);
-  paragraph.react = function react(content, fn, key) {
-    return jsx(native.LegacyText, { children: fn(content.content, key) }, key.key);
-  };
   paragraph.paragraph = paragraph;
-  const obj2 = {};
+  const obj2 = {
+    react(content, fn, key) {
+      const LegacyText = native.LegacyText;
+      return <LegacyText key={arg2.key} style={paragraph.strong}>{arg1(arg0.content, arg2)}</LegacyText>;
+    }
+  };
   const merged1 = Object.assign(paragraph.strong);
-  obj2.react = function react(content, fn, key) {
-    return jsx(native.LegacyText, { style: paragraph.strong, children: fn(content.content, key) }, key.key);
-  };
   paragraph.strong = obj2;
-  const obj3 = {};
+  const obj3 = {
+    react(content, fn, key) {
+      const LegacyText = native.LegacyText;
+      return <LegacyText key={arg2.key} style={paragraph.italic}>{arg1(arg0.content, arg2)}</LegacyText>;
+    }
+  };
   const merged2 = Object.assign(paragraph.em);
-  obj3.react = function react(content, fn, key) {
-    return jsx(native.LegacyText, { style: paragraph.italic, children: fn(content.content, key) }, key.key);
-  };
   paragraph.em = obj3;
-  const obj4 = {};
+  const obj4 = {
+    react(content, fn, key) {
+      const LegacyText = native.LegacyText;
+      return <LegacyText key={arg2.key} style={paragraph.underline}>{arg1(arg0.content, arg2)}</LegacyText>;
+    }
+  };
   const merged3 = Object.assign(paragraph.u);
-  obj4.react = function react(content, fn, key) {
-    return jsx(native.LegacyText, { style: paragraph.underline, children: fn(content.content, key) }, key.key);
-  };
   paragraph.u = obj4;
-  const obj5 = {};
-  const merged4 = Object.assign(paragraph.link);
-  obj5.react = function react(node, output, state) {
-    return <I18nLink key={arg2.key} node={arg0} output={arg1} state={arg2} />;
+  const obj5 = {
+    react(node, output, state) {
+      return <closure_1_6 key={arg2.key} node={arg0} output={arg1} state={arg2} />;
+    }
   };
+  const merged4 = Object.assign(paragraph.link);
   paragraph.link = obj5;
   return paragraph;
 };
-export { I18nLink };
+export const I18nLink = tmp2;

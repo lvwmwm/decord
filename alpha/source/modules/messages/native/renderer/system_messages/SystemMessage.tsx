@@ -1,164 +1,210 @@
-// Module ID: 7573
-// Function ID: 7574
+// Module ID: 7617
+// Function ID: 7618
 // Name: SystemMessage
-// Dependencies: [1074, 7574, 7593, 7594, 7597, 7598, 7599, 7600, 7619, 7621, 7632, 7633, 7634, 7635, 7637, 7638, 7639, 7649, 7650, 7652, 7653, 7654, 7655, 7656, 7657, 7658, 7659, 7666, 7667, 7668, 7670, 7671, 7672, 7673, 7679, 7696, 7700, 7702, 7713, 2]
+// Dependencies: [1085, 7618, 7637, 7638, 7641, 7642, 7643, 7644, 7663, 7665, 7676, 7677, 7678, 7679, 7681, 7682, 7683, 7693, 7694, 7696, 7697, 7698, 7699, 7700, 7701, 7702, 7703, 7710, 7711, 7712, 7714, 7715, 7716, 7717, 7723, 7740, 7744, 7746, 7757, 2]
 // Exports: createSystemMessageContent
 
-// Module 7573 (SystemMessage)
-import AddRecipientSystemMessage from "AddRecipientSystemMessage" /* 7574 */;
-import RemoveRecipientSystemMessage from "RemoveRecipientSystemMessage" /* 7593 */;
-import CallSystemMessage from "CallSystemMessage" /* 7594 */;
-import ChangeChannelNameSystemMessage from "ChangeChannelNameSystemMessage" /* 7597 */;
-import ChangeChannelIconSystemMessage from "ChangeChannelIconSystemMessage" /* 7598 */;
-import ChannelPinnedMessageSystemMessage from "ChannelPinnedMessageSystemMessage" /* 7599 */;
-import UserJoinSystemMessage from "UserJoinSystemMessage" /* 7600 */;
-import UserPremiumGuildSubscriptionSystemMessage from "UserPremiumGuildSubscriptionSystemMessage" /* 7619 */;
-import UserPremiumGuildSubscriptionTierAchievedSystemMessage from "UserPremiumGuildSubscriptionTierAchievedSystemMessage" /* 7621 */;
-import ChannelFollowAddSystemMessage from "ChannelFollowAddSystemMessage" /* 7632 */;
-import GuildStreamSystemMessage from "GuildStreamSystemMessage" /* 7633 */;
-import GuildDiscoverySystemMessage from "GuildDiscoverySystemMessage" /* 7634 */;
-import ApplicationCommandSourceSystemMessage from "ApplicationCommandSourceSystemMessage" /* 7635 */;
-import NewThreadSystemMessage from "NewThreadSystemMessage" /* 7637 */;
-import ThreadStarterSystemMessage from "ThreadStarterSystemMessage" /* 7638 */;
-import AutoModerationActionSystemMessage from "AutoModerationActionSystemMessage" /* 7639 */;
-import RoleSubscriptionPurchaseSystemMessage from "RoleSubscriptionPurchaseSystemMessage" /* 7649 */;
-import PurchaseNotificationSystemMessage from "PurchaseNotificationSystemMessage" /* 7650 */;
-import StageStartSystemMessage from "StageStartSystemMessage" /* 7652 */;
-import StageEndSystemMessage from "StageEndSystemMessage" /* 7653 */;
-import StageTopicSystemMessage from "StageTopicSystemMessage" /* 7654 */;
-import StageSpeakerSystemMessage from "StageSpeakerSystemMessage" /* 7655 */;
-import StageRaiseHandSystemMessage from "StageRaiseHandSystemMessage" /* 7656 */;
-import ApplicationSubscriptionPurchaseSystemMessage from "ApplicationSubscriptionPurchaseSystemMessage" /* 7657 */;
-import PrivateChannelIntegrationSystemMessage from "PrivateChannelIntegrationSystemMessage" /* 7658 */;
-import GuildAlertModeSystemMessage from "GuildAlertModeSystemMessage" /* 7659 */;
-import GuildReportRaidSystemMessage from "GuildReportRaidSystemMessage" /* 7666 */;
-import GuildReportFalseAlarmSystemMessage from "GuildReportFalseAlarmSystemMessage" /* 7667 */;
-import PollResultSystemMessage from "PollResultSystemMessage" /* 7668 */;
-import ChannelLinkedToLobbySystemMessage from "ChannelLinkedToLobbySystemMessage" /* 7670 */;
-import InGameMessageNuxSystemMessage from "InGameMessageNuxSystemMessage" /* 7671 */;
-import JoinRequestNotificationSystemMessage from "JoinRequestNotificationSystemMessage" /* 7672 */;
-import PremiumGroupInviteSystemMessage from "PremiumGroupInviteSystemMessage" /* 7673 */;
-import ReferralSystemMessage from "ReferralSystemMessage" /* 7679 */;
-import VoiceSessionSystemMessage from "VoiceSessionSystemMessage" /* 7696 */;
-import FriendRequestAcceptedSystemMessage from "FriendRequestAcceptedSystemMessage" /* 7700 */;
-import GiftIntentSystemMessage from "GiftIntentSystemMessage" /* 7702 */;
-import GuildSpaceSystemMessage from "GuildSpaceSystemMessage" /* 7713 */;
-import Constants from "Constants" /* 1074 */;
+// Module 7617 (SystemMessage)
+import AddRecipientSystemMessage from "AddRecipientSystemMessage" /* 7618 */;
+import RemoveRecipientSystemMessage from "RemoveRecipientSystemMessage" /* 7637 */;
+import CallSystemMessage from "CallSystemMessage" /* 7638 */;
+import ChangeChannelNameSystemMessage from "ChangeChannelNameSystemMessage" /* 7641 */;
+import ChangeChannelIconSystemMessage from "ChangeChannelIconSystemMessage" /* 7642 */;
+import ChannelPinnedMessageSystemMessage from "ChannelPinnedMessageSystemMessage" /* 7643 */;
+import UserJoinSystemMessage from "UserJoinSystemMessage" /* 7644 */;
+import UserPremiumGuildSubscriptionSystemMessage from "UserPremiumGuildSubscriptionSystemMessage" /* 7663 */;
+import UserPremiumGuildSubscriptionTierAchievedSystemMessage from "UserPremiumGuildSubscriptionTierAchievedSystemMessage" /* 7665 */;
+import ChannelFollowAddSystemMessage from "ChannelFollowAddSystemMessage" /* 7676 */;
+import GuildStreamSystemMessage from "GuildStreamSystemMessage" /* 7677 */;
+import GuildDiscoverySystemMessage from "GuildDiscoverySystemMessage" /* 7678 */;
+import ApplicationCommandSourceSystemMessage from "ApplicationCommandSourceSystemMessage" /* 7679 */;
+import NewThreadSystemMessage from "NewThreadSystemMessage" /* 7681 */;
+import ThreadStarterSystemMessage from "ThreadStarterSystemMessage" /* 7682 */;
+import AutoModerationActionSystemMessage from "AutoModerationActionSystemMessage" /* 7683 */;
+import RoleSubscriptionPurchaseSystemMessage from "RoleSubscriptionPurchaseSystemMessage" /* 7693 */;
+import PurchaseNotificationSystemMessage from "PurchaseNotificationSystemMessage" /* 7694 */;
+import StageStartSystemMessage from "StageStartSystemMessage" /* 7696 */;
+import StageEndSystemMessage from "StageEndSystemMessage" /* 7697 */;
+import StageTopicSystemMessage from "StageTopicSystemMessage" /* 7698 */;
+import StageSpeakerSystemMessage from "StageSpeakerSystemMessage" /* 7699 */;
+import StageRaiseHandSystemMessage from "StageRaiseHandSystemMessage" /* 7700 */;
+import ApplicationSubscriptionPurchaseSystemMessage from "ApplicationSubscriptionPurchaseSystemMessage" /* 7701 */;
+import PrivateChannelIntegrationSystemMessage from "PrivateChannelIntegrationSystemMessage" /* 7702 */;
+import GuildAlertModeSystemMessage from "GuildAlertModeSystemMessage" /* 7703 */;
+import GuildReportRaidSystemMessage from "GuildReportRaidSystemMessage" /* 7710 */;
+import GuildReportFalseAlarmSystemMessage from "GuildReportFalseAlarmSystemMessage" /* 7711 */;
+import PollResultSystemMessage from "PollResultSystemMessage" /* 7712 */;
+import ChannelLinkedToLobbySystemMessage from "ChannelLinkedToLobbySystemMessage" /* 7714 */;
+import InGameMessageNuxSystemMessage from "InGameMessageNuxSystemMessage" /* 7715 */;
+import JoinRequestNotificationSystemMessage from "JoinRequestNotificationSystemMessage" /* 7716 */;
+import PremiumGroupInviteSystemMessage from "PremiumGroupInviteSystemMessage" /* 7717 */;
+import ReferralSystemMessage from "ReferralSystemMessage" /* 7723 */;
+import VoiceSessionSystemMessage from "VoiceSessionSystemMessage" /* 7740 */;
+import FriendRequestAcceptedSystemMessage from "FriendRequestAcceptedSystemMessage" /* 7744 */;
+import GiftIntentSystemMessage from "GiftIntentSystemMessage" /* 7746 */;
+import GuildSpaceSystemMessage from "GuildSpaceSystemMessage" /* 7757 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
+let c2;
+let c3;
 ({ MessageTypes: c2, BoostedGuildTiers: c3 } = Constants);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/SystemMessage.tsx");
 
 export const createSystemMessageContent = function createSystemMessageContent(message) {
   const type = message.message.type;
   if (constants.RECIPIENT_ADD === type) {
-    return AddRecipientSystemMessage.createAddRecipientSystemMessage(message);
-  } else if (tmp.RECIPIENT_REMOVE === type) {
-    return RemoveRecipientSystemMessage.createRemoveRecipientSystemMessage(message);
-  } else if (tmp.CALL === type) {
-    return CallSystemMessage.createCallSystemMessage(message);
-  } else if (tmp.CHANNEL_NAME_CHANGE === type) {
-    return ChangeChannelNameSystemMessage.createChangeChannelNameSystemMessage(message);
-  } else if (tmp.CHANNEL_ICON_CHANGE === type) {
-    return ChangeChannelIconSystemMessage.createChangeChannelIconSystemMessage(message);
-  } else if (tmp.CHANNEL_PINNED_MESSAGE === type) {
-    return ChannelPinnedMessageSystemMessage.createChannelPinnedMessageSystemMessage(message);
-  } else if (tmp.USER_JOIN === type) {
-    return UserJoinSystemMessage.createUserJoinSystemMessage(message);
-  } else if (tmp.GUILD_BOOST === type) {
-    return UserPremiumGuildSubscriptionSystemMessage.createUserPremiumGuildSubscriptionSystemMessage(message);
-  } else if (tmp.GUILD_BOOST_TIER_1 === type) {
-    return UserPremiumGuildSubscriptionTierAchievedSystemMessage.createUserPremiumGuildSubscriptionTierAchievedSystemMessage(message, React3.TIER_1);
-  } else if (tmp.GUILD_BOOST_TIER_2 === type) {
-    return UserPremiumGuildSubscriptionTierAchievedSystemMessage.createUserPremiumGuildSubscriptionTierAchievedSystemMessage(message, React3.TIER_2);
-  } else if (tmp.GUILD_BOOST_TIER_3 === type) {
-    return UserPremiumGuildSubscriptionTierAchievedSystemMessage.createUserPremiumGuildSubscriptionTierAchievedSystemMessage(message, React3.TIER_3);
-  } else if (tmp.CHANNEL_FOLLOW_ADD === type) {
-    return ChannelFollowAddSystemMessage.createChannelFollowAddSystemMessage(message);
-  } else if (tmp.GUILD_STREAM === type) {
-    return GuildStreamSystemMessage.createGuildStreamSystemMessage(message);
-  } else if (tmp.GUILD_DISCOVERY_DISQUALIFIED === type) {
-    return GuildDiscoverySystemMessage.createGuildDiscoveryDisqualifiedSystemMessage(message);
-  } else if (tmp.GUILD_DISCOVERY_REQUALIFIED === type) {
-    return GuildDiscoverySystemMessage.createGuildDiscoveryRequalifiedSystemMessage(message);
-  } else if (tmp.GUILD_DISCOVERY_GRACE_PERIOD_INITIAL_WARNING === type) {
-    return GuildDiscoverySystemMessage.createGuildDiscoveryGracePeriodInitialWarningSystemMessage(message);
-  } else if (tmp.GUILD_DISCOVERY_GRACE_PERIOD_FINAL_WARNING === type) {
-    return GuildDiscoverySystemMessage.createGuildDiscoveryGracePeriodFinalWarningSystemMessage(message);
+    const obj44 = AddRecipientSystemMessage;
+    return obj44.createAddRecipientSystemMessage(message);
+  } else if (constants.RECIPIENT_REMOVE === type) {
+    const obj43 = RemoveRecipientSystemMessage;
+    return obj43.createRemoveRecipientSystemMessage(message);
+  } else if (constants.CALL === type) {
+    const obj42 = CallSystemMessage;
+    return obj42.createCallSystemMessage(message);
+  } else if (constants.CHANNEL_NAME_CHANGE === type) {
+    const obj41 = ChangeChannelNameSystemMessage;
+    return obj41.createChangeChannelNameSystemMessage(message);
+  } else if (constants.CHANNEL_ICON_CHANGE === type) {
+    const obj40 = ChangeChannelIconSystemMessage;
+    return obj40.createChangeChannelIconSystemMessage(message);
+  } else if (constants.CHANNEL_PINNED_MESSAGE === type) {
+    const obj39 = ChannelPinnedMessageSystemMessage;
+    return obj39.createChannelPinnedMessageSystemMessage(message);
+  } else if (constants.USER_JOIN === type) {
+    const obj38 = UserJoinSystemMessage;
+    return obj38.createUserJoinSystemMessage(message);
+  } else if (constants.GUILD_BOOST === type) {
+    const obj37 = UserPremiumGuildSubscriptionSystemMessage;
+    return obj37.createUserPremiumGuildSubscriptionSystemMessage(message);
+  } else if (constants.GUILD_BOOST_TIER_1 === type) {
+    const obj36 = UserPremiumGuildSubscriptionTierAchievedSystemMessage;
+    return obj36.createUserPremiumGuildSubscriptionTierAchievedSystemMessage(message, _false.TIER_1);
+  } else if (constants.GUILD_BOOST_TIER_2 === type) {
+    const obj35 = UserPremiumGuildSubscriptionTierAchievedSystemMessage;
+    return obj35.createUserPremiumGuildSubscriptionTierAchievedSystemMessage(message, _false.TIER_2);
+  } else if (constants.GUILD_BOOST_TIER_3 === type) {
+    const obj34 = UserPremiumGuildSubscriptionTierAchievedSystemMessage;
+    return obj34.createUserPremiumGuildSubscriptionTierAchievedSystemMessage(message, _false.TIER_3);
+  } else if (constants.CHANNEL_FOLLOW_ADD === type) {
+    const obj33 = ChannelFollowAddSystemMessage;
+    return obj33.createChannelFollowAddSystemMessage(message);
+  } else if (constants.GUILD_STREAM === type) {
+    const obj32 = GuildStreamSystemMessage;
+    return obj32.createGuildStreamSystemMessage(message);
+  } else if (constants.GUILD_DISCOVERY_DISQUALIFIED === type) {
+    const obj31 = GuildDiscoverySystemMessage;
+    return obj31.createGuildDiscoveryDisqualifiedSystemMessage(message);
+  } else if (constants.GUILD_DISCOVERY_REQUALIFIED === type) {
+    const obj30 = GuildDiscoverySystemMessage;
+    return obj30.createGuildDiscoveryRequalifiedSystemMessage(message);
+  } else if (constants.GUILD_DISCOVERY_GRACE_PERIOD_INITIAL_WARNING === type) {
+    const obj29 = GuildDiscoverySystemMessage;
+    return obj29.createGuildDiscoveryGracePeriodInitialWarningSystemMessage(message);
+  } else if (constants.GUILD_DISCOVERY_GRACE_PERIOD_FINAL_WARNING === type) {
+    const obj28 = GuildDiscoverySystemMessage;
+    return obj28.createGuildDiscoveryGracePeriodFinalWarningSystemMessage(message);
   } else {
-    if (tmp.CHAT_INPUT_COMMAND !== type) {
-      if (tmp.CONTEXT_MENU_COMMAND !== type) {
-        if (tmp.GUILD_INVITE_REMINDER === type) {
+    if (constants.CHAT_INPUT_COMMAND !== type) {
+      if (constants.CONTEXT_MENU_COMMAND !== type) {
+        if (constants.GUILD_INVITE_REMINDER === type) {
           return null;
-        } else if (tmp.THREAD_CREATED === type) {
-          return NewThreadSystemMessage.createNewThreadSystemMessage(message);
-        } else if (tmp.THREAD_STARTER_MESSAGE === type) {
-          return ThreadStarterSystemMessage.createThreadStarterSystemMessage(message);
-        } else if (tmp.AUTO_MODERATION_ACTION === type) {
-          return AutoModerationActionSystemMessage.createAutoModerationActionSystemMessage(message);
-        } else if (tmp.ROLE_SUBSCRIPTION_PURCHASE === type) {
-          return RoleSubscriptionPurchaseSystemMessage.createRoleSubscriptionPurchaseSystemMessage(message);
-        } else if (tmp.PURCHASE_NOTIFICATION === type) {
-          return PurchaseNotificationSystemMessage.createPurchaseNotificationSystemMessage(message);
-        } else if (tmp.STAGE_START === type) {
-          return StageStartSystemMessage.createStageStartSystemMessage(message);
-        } else if (tmp.STAGE_END === type) {
-          return StageEndSystemMessage.createStageEndSystemMessage(message);
-        } else if (tmp.STAGE_TOPIC === type) {
-          return StageTopicSystemMessage.createStageTopicSystemMessage(message);
-        } else if (tmp.STAGE_SPEAKER === type) {
-          return StageSpeakerSystemMessage.createStageSpeakerSystemMessage(message);
-        } else if (tmp.STAGE_RAISE_HAND === type) {
-          return StageRaiseHandSystemMessage.createStageRaiseHandSystemMessage(message);
-        } else if (tmp.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION === type) {
-          return ApplicationSubscriptionPurchaseSystemMessage.createApplicationSubscriptionPurchaseSystemMessage(message);
+        } else if (constants.THREAD_CREATED === type) {
+          const obj26 = NewThreadSystemMessage;
+          return obj26.createNewThreadSystemMessage(message);
+        } else if (constants.THREAD_STARTER_MESSAGE === type) {
+          const obj25 = ThreadStarterSystemMessage;
+          return obj25.createThreadStarterSystemMessage(message);
+        } else if (constants.AUTO_MODERATION_ACTION === type) {
+          const obj24 = AutoModerationActionSystemMessage;
+          return obj24.createAutoModerationActionSystemMessage(message);
+        } else if (constants.ROLE_SUBSCRIPTION_PURCHASE === type) {
+          const obj23 = RoleSubscriptionPurchaseSystemMessage;
+          return obj23.createRoleSubscriptionPurchaseSystemMessage(message);
+        } else if (constants.PURCHASE_NOTIFICATION === type) {
+          const obj22 = PurchaseNotificationSystemMessage;
+          return obj22.createPurchaseNotificationSystemMessage(message);
+        } else if (constants.STAGE_START === type) {
+          const obj21 = StageStartSystemMessage;
+          return obj21.createStageStartSystemMessage(message);
+        } else if (constants.STAGE_END === type) {
+          const obj20 = StageEndSystemMessage;
+          return obj20.createStageEndSystemMessage(message);
+        } else if (constants.STAGE_TOPIC === type) {
+          const obj19 = StageTopicSystemMessage;
+          return obj19.createStageTopicSystemMessage(message);
+        } else if (constants.STAGE_SPEAKER === type) {
+          const obj18 = StageSpeakerSystemMessage;
+          return obj18.createStageSpeakerSystemMessage(message);
+        } else if (constants.STAGE_RAISE_HAND === type) {
+          const obj17 = StageRaiseHandSystemMessage;
+          return obj17.createStageRaiseHandSystemMessage(message);
+        } else if (constants.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION === type) {
+          const obj16 = ApplicationSubscriptionPurchaseSystemMessage;
+          return obj16.createApplicationSubscriptionPurchaseSystemMessage(message);
         } else {
-          if (tmp.PRIVATE_CHANNEL_INTEGRATION_ADDED !== type) {
-            if (tmp.PRIVATE_CHANNEL_INTEGRATION_REMOVED !== type) {
-              if (tmp.GUILD_INCIDENT_ALERT_MODE_ENABLED === type) {
-                return GuildAlertModeSystemMessage.createGuildAlertModeEnabledSystemMessage(message);
-              } else if (tmp.GUILD_INCIDENT_ALERT_MODE_DISABLED === type) {
-                return GuildAlertModeSystemMessage.createGuildAlertModeDisabledSystemMessage(message);
-              } else if (tmp.GUILD_INCIDENT_REPORT_RAID === type) {
-                return GuildReportRaidSystemMessage.createGuildReportRaidSystemMessage(message);
-              } else if (tmp.GUILD_INCIDENT_REPORT_FALSE_ALARM === type) {
-                return GuildReportFalseAlarmSystemMessage.createGuildReportFalseAlarmSystemMessage(message);
-              } else if (tmp.POLL_RESULT === type) {
-                return PollResultSystemMessage.createPollResultSystemMessage(message);
-              } else if (tmp.CHANNEL_LINKED_TO_LOBBY === type) {
-                return ChannelLinkedToLobbySystemMessage.createChannelLinkedToLobbySystemMessage(message);
-              } else if (tmp.IN_GAME_MESSAGE_NUX === type) {
-                return InGameMessageNuxSystemMessage.createInGameMessageNuxSystemMessage(message);
+          if (constants.PRIVATE_CHANNEL_INTEGRATION_ADDED !== type) {
+            if (constants.PRIVATE_CHANNEL_INTEGRATION_REMOVED !== type) {
+              if (constants.GUILD_INCIDENT_ALERT_MODE_ENABLED === type) {
+                const obj14 = GuildAlertModeSystemMessage;
+                return obj14.createGuildAlertModeEnabledSystemMessage(message);
+              } else if (constants.GUILD_INCIDENT_ALERT_MODE_DISABLED === type) {
+                const obj13 = GuildAlertModeSystemMessage;
+                return obj13.createGuildAlertModeDisabledSystemMessage(message);
+              } else if (constants.GUILD_INCIDENT_REPORT_RAID === type) {
+                const obj12 = GuildReportRaidSystemMessage;
+                return obj12.createGuildReportRaidSystemMessage(message);
+              } else if (constants.GUILD_INCIDENT_REPORT_FALSE_ALARM === type) {
+                const obj11 = GuildReportFalseAlarmSystemMessage;
+                return obj11.createGuildReportFalseAlarmSystemMessage(message);
+              } else if (constants.POLL_RESULT === type) {
+                const obj10 = PollResultSystemMessage;
+                return obj10.createPollResultSystemMessage(message);
+              } else if (constants.CHANNEL_LINKED_TO_LOBBY === type) {
+                const obj9 = ChannelLinkedToLobbySystemMessage;
+                return obj9.createChannelLinkedToLobbySystemMessage(message);
+              } else if (constants.IN_GAME_MESSAGE_NUX === type) {
+                const obj8 = InGameMessageNuxSystemMessage;
+                return obj8.createInGameMessageNuxSystemMessage(message);
               } else {
-                if (tmp.GUILD_JOIN_REQUEST_ACCEPT_NOTIFICATION !== type) {
-                  if (tmp.GUILD_JOIN_REQUEST_REJECT_NOTIFICATION !== type) {
-                    if (tmp.GUILD_JOIN_REQUEST_WITHDRAWN_NOTIFICATION !== type) {
-                      if (tmp.PREMIUM_GROUP_INVITE === type) {
-                        return PremiumGroupInviteSystemMessage.createPremiumGroupInviteSystemMessage(message);
-                      } else if (tmp.PREMIUM_REFERRAL === type) {
-                        return ReferralSystemMessage.createReferralSystemMessage(message);
-                      } else if (tmp.VOICE_SESSION === type) {
-                        return VoiceSessionSystemMessage.createVoiceSessionSystemMessage(message);
-                      } else if (tmp.FRIEND_REQUEST_ACCEPTED === type) {
-                        return FriendRequestAcceptedSystemMessage.createFriendRequestAcceptedSystemMessage(message);
-                      } else if (tmp.GIFTING_PROMPT === type) {
-                        return GiftIntentSystemMessage.createGiftIntentSystemMessage(message);
-                      } else if (tmp.GUILD_SPACE_MESSAGE === type) {
-                        return GuildSpaceSystemMessage.createGuildSpaceSystemMessage(message);
+                if (constants.GUILD_JOIN_REQUEST_ACCEPT_NOTIFICATION !== type) {
+                  if (constants.GUILD_JOIN_REQUEST_REJECT_NOTIFICATION !== type) {
+                    if (constants.GUILD_JOIN_REQUEST_WITHDRAWN_NOTIFICATION !== type) {
+                      if (constants.PREMIUM_GROUP_INVITE === type) {
+                        const obj6 = PremiumGroupInviteSystemMessage;
+                        return obj6.createPremiumGroupInviteSystemMessage(message);
+                      } else if (constants.PREMIUM_REFERRAL === type) {
+                        const obj5 = ReferralSystemMessage;
+                        return obj5.createReferralSystemMessage(message);
+                      } else if (constants.VOICE_SESSION === type) {
+                        const obj4 = VoiceSessionSystemMessage;
+                        return obj4.createVoiceSessionSystemMessage(message);
+                      } else if (constants.FRIEND_REQUEST_ACCEPTED === type) {
+                        const obj3 = FriendRequestAcceptedSystemMessage;
+                        return obj3.createFriendRequestAcceptedSystemMessage(message);
+                      } else if (constants.GIFTING_PROMPT === type) {
+                        const obj2 = GiftIntentSystemMessage;
+                        return obj2.createGiftIntentSystemMessage(message);
+                      } else if (constants.GUILD_SPACE_MESSAGE === type) {
+                        const obj = GuildSpaceSystemMessage;
+                        return obj.createGuildSpaceSystemMessage(message);
                       } else {
                         return null;
                       }
                     }
                   }
                 }
-                return JoinRequestNotificationSystemMessage.createJoinRequestNotificationSystemMessage(message);
+                const obj7 = JoinRequestNotificationSystemMessage;
+                return obj7.createJoinRequestNotificationSystemMessage(message);
               }
             }
           }
-          return PrivateChannelIntegrationSystemMessage.createPrivateChannelIntegrationSystemMessage(message, message.message.type);
+          const obj15 = PrivateChannelIntegrationSystemMessage;
+          return obj15.createPrivateChannelIntegrationSystemMessage(message, message.message.type);
         }
       }
     }
-    return ApplicationCommandSourceSystemMessage.createApplicationCommandSourceSystemMessage(message);
+    const obj27 = ApplicationCommandSourceSystemMessage;
+    return obj27.createApplicationCommandSourceSystemMessage(message);
   }
 };

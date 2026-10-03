@@ -1,31 +1,36 @@
-// Module ID: 16583
-// Function ID: 16584
+// Module ID: 16663
+// Function ID: 16664
 // Name: VibegrationsTaskOutcome
-// Dependencies: [1115, 3714, 16582, 2]
+// Dependencies: [1126, 3723, 16662, 2]
 // Exports: describeTaskOutcome, taskTitle
 
-// Module 16583 (VibegrationsTaskOutcome)
-import util from "util" /* 1115 */;
-import _modDef3714 from "module_3714" /* 3714 */;
-import VibegrationsDuration from "VibegrationsDuration" /* 16582 */;
+// Module 16663 (VibegrationsTaskOutcome)
+import intl7 from "intl" /* 1126 */;
+import _modDef3723 from "module_3723" /* 3723 */;
+import VibegrationsDuration from "VibegrationsDuration" /* 16662 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsTaskOutcome.tsx");
 
 export const taskTitle = function taskTitle(task) {
   if (null != task.labelText) {
+    let labelText;
     if ("" !== task.labelText) {
-      let labelText = task.labelText;
+      labelText = task.labelText;
     }
     return labelText;
   }
-  const intl = util.intl;
-  labelText = intl.string(_modDef3714.MdXWEK);
+  const intl = intl7.intl;
+  labelText = intl.string(_modDef3723.MdXWEK);
 };
 export const describeTaskOutcome = function describeTaskOutcome(task) {
+  let obj;
+  let obj2;
+  let obj6;
   if (null != task.labelText) {
+    let str2;
     if ("" !== task.labelText) {
-      let str2 = task.labelText;
+      str2 = task.labelText;
     }
     const items = [str2.charAt(0), str2.charAt(1)];
     [obj, obj2] = items;
@@ -33,36 +38,40 @@ export const describeTaskOutcome = function describeTaskOutcome(task) {
     if (obj === obj.toLocaleUpperCase()) {
       sum = str2;
       if (obj2 === obj2.toLocaleLowerCase()) {
-        sum = obj.toLocaleLowerCase() + str2.slice(1);
         const toLocaleLowerCaseResult = obj.toLocaleLowerCase();
+        sum = toLocaleLowerCaseResult + str2.slice(1);
       }
     }
     const status = task.status;
     if ("failed" === status) {
-      const intl6 = util.intl;
+      const intl6 = intl7.intl;
       const obj3 = { task: sum };
-      return intl6.formatToPlainString(_modDef3714["5uv8y0"], obj3);
+      return intl6.formatToPlainString(_modDef3723["5uv8y0"], obj3);
     } else if ("cancelled" === status) {
-      const intl5 = util.intl;
+      const intl5 = intl7.intl;
       const obj4 = { task: sum };
-      return intl5.formatToPlainString(_modDef3714["oEzDO/"], obj4);
+      return intl5.formatToPlainString(_modDef3723["oEzDO/"], obj4);
     } else if ("done" === status) {
+      let formatToPlainStringResult;
       if (null != task.durationMs) {
-        const intl4 = util.intl;
-        const obj5 = { task: sum, duration: VibegrationsDuration.describeDuration(task.durationMs) };
-        let formatToPlainStringResult = intl4.formatToPlainString(_modDef3714.vuv9bT, obj5);
+        const intl4 = intl7.intl;
+        const formatToPlainString = intl4.formatToPlainString;
+        const obj5 = { task: sum, duration: obj6.describeDuration(task.durationMs) };
+        const vuv9bT = _modDef3723.vuv9bT;
+        obj6 = VibegrationsDuration;
+        formatToPlainStringResult = formatToPlainString(vuv9bT, obj5);
       } else {
-        const intl3 = util.intl;
+        const intl3 = intl7.intl;
         const obj7 = { task: sum };
-        formatToPlainStringResult = intl3.formatToPlainString(_modDef3714.KS49RN, obj7);
+        formatToPlainStringResult = intl3.formatToPlainString(_modDef3723.KS49RN, obj7);
       }
       return formatToPlainStringResult;
     } else {
-      const intl2 = util.intl;
+      const intl2 = intl7.intl;
       const obj8 = { task: sum };
-      return intl2.formatToPlainString(_modDef3714.KS49RN, obj8);
+      return intl2.formatToPlainString(_modDef3723.KS49RN, obj8);
     }
   }
-  const intl = util.intl;
-  str2 = intl.string(_modDef3714.MdXWEK);
+  const intl = intl7.intl;
+  str2 = intl.string(_modDef3723.MdXWEK);
 };

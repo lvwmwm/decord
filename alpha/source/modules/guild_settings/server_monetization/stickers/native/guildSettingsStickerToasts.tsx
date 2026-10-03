@@ -1,27 +1,31 @@
-// Module ID: 17640
-// Function ID: 17641
+// Module ID: 17728
+// Function ID: 17729
 // Name: guildSettingsStickerToasts
-// Dependencies: [4557, 6214, 1115, 4796, 2]
+// Dependencies: [4568, 4800, 1126, 4812, 2]
 // Exports: showGuildSettingsStickerError, showGuildSettingsStickerSuccess
 
-// Module 17640 (guildSettingsStickerToasts)
-import util from "util" /* 1115 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4557 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4796 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6214 */;
+// Module 17728 (guildSettingsStickerToasts)
+import intl2 from "intl" /* 1126 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 4800 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4812 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_settings/server_monetization/stickers/native/guildSettingsStickerToasts.tsx");
 
 export const showGuildSettingsStickerError = function showGuildSettingsStickerError() {
-  const obj2 = { key: "GUILD_SETTINGS_STICKER_ERROR", IconComponent: CircleErrorIcon.CircleErrorIcon, content: null };
-  const intl = util.intl;
-  obj2.content = intl.string(util.t["5NMPSS"]);
-  ToastActionCreatorsDefault.open(obj2);
+  let intl;
+  const tmp = ToastActionCreatorsDefault;
+  const open = tmp.open;
+  const obj = { key: "GUILD_SETTINGS_STICKER_ERROR", IconComponent: CircleErrorIcon.CircleErrorIcon, content: intl.string(intl2.t["5NMPSS"]) };
+  intl = intl2.intl;
+  open(obj);
 };
 export const showGuildSettingsStickerSuccess = function showGuildSettingsStickerSuccess() {
-  const obj2 = { key: "GUILD_SETTINGS_STICKER_SUCCESS", IconComponent: CircleInformationIcon.CircleInformationIcon, content: null };
-  const intl = util.intl;
-  obj2.content = intl.string(util.t["+c5xtT"]);
-  ToastActionCreatorsDefault.open(obj2);
+  let intl;
+  const tmp = ToastActionCreatorsDefault;
+  const open = tmp.open;
+  const obj = { key: "GUILD_SETTINGS_STICKER_SUCCESS", IconComponent: CircleInformationIcon.CircleInformationIcon, content: intl.string(intl2.t["+c5xtT"]) };
+  intl = intl2.intl;
+  open(obj);
 };

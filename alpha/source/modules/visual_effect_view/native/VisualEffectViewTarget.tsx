@@ -1,15 +1,15 @@
-// Module ID: 16861
-// Function ID: 16862
+// Module ID: 16950
+// Function ID: 16951
 // Name: VisualEffectViewTarget
-// Dependencies: [17, 1364, 16862, 2]
+// Dependencies: [17, 1369, 16951, 2]
 
-// Module 16861 (VisualEffectViewTarget)
-import _mod17 from "module_17" /* 17 */;
-import VisualEffectViewTargetAndroidNativeComponentDefault from "VisualEffectViewTargetAndroidNativeComponent" /* 16862 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
+// Module 16950 (VisualEffectViewTarget)
+import react_native from "react-native" /* 17 */;
+import VisualEffectViewTargetAndroidNativeComponentDefault from "VisualEffectViewTargetAndroidNativeComponent" /* 16951 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
 import size from "module_2" /* 2 */;
 
-let View = _mod17.View;
+let View = react_native.View;
 if (PlatformUtils.isAndroid()) {
   View = VisualEffectViewTargetAndroidNativeComponentDefault;
 }

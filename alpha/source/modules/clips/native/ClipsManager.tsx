@@ -1,44 +1,45 @@
-// Module ID: 17890
-// Function ID: 17891
+// Module ID: 17976
+// Function ID: 17977
 // Name: ClipsManager
-// Dependencies: [5630, 17891, 4557, 1115, 2]
+// Dependencies: [7231, 17977, 4568, 1126, 2]
 
-// Module 17890 (ClipsManager)
-import util from "util" /* 1115 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4557 */;
-import ClipsConstants from "ClipsConstants" /* 5630 */;
-import ClipsManager from "clips/ClipsManager" /* 17891 */;
+// Module 17976 (ClipsManager)
+import intl2 from "intl" /* 1126 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
+import ClipsConstants from "ClipsConstants" /* 7231 */;
+import ClipsManager2 from "clips/ClipsManager" /* 17977 */;
 import size from "module_2" /* 2 */;
 
 const CLIPS_TOAST_DURATION = ClipsConstants.CLIPS_TOAST_DURATION;
-class ClipsManager extends tmp2 {
+class ClipsManager extends ClipsManager2 {
+  showClipsToast() {
+    let intl;
+    const obj = { key: "CLIPS_IN_CALL_WARNING", content: intl.string(intl2.t["d+41qJ"]), toastDurationMs: CLIPS_TOAST_DURATION };
+    const open = ToastActionCreatorsDefault.open;
+    ToastActionCreatorsDefault;
+    intl = intl2.intl;
+    open(obj);
+  }
+  applyNativeClipsSettings() {
+
+  }
+  handleClipsInitOnToggleDetection() {
+
+  }
+  handleClipsInitOnGamesChange() {
+
+  }
+  fireClipsInitEvent() {
+
+  }
+  handleStreamEnded() {
+
+  }
+  maybeStartNtpClock() {
+
+  }
 }
 const prototype = ClipsManager.prototype;
-prototype["showClipsToast"] = function showClipsToast() {
-  const obj2 = { key: "CLIPS_IN_CALL_WARNING", content: null, toastDurationMs: null };
-  const intl = util.intl;
-  obj2.content = intl.string(util.t["d+41qJ"]);
-  obj2.toastDurationMs = CLIPS_TOAST_DURATION;
-  ToastActionCreatorsDefault.open(obj2);
-};
-prototype["applyNativeClipsSettings"] = function applyNativeClipsSettings() {
-
-};
-prototype["handleClipsInitOnToggleDetection"] = function handleClipsInitOnToggleDetection() {
-
-};
-prototype["handleClipsInitOnGamesChange"] = function handleClipsInitOnGamesChange() {
-
-};
-prototype["fireClipsInitEvent"] = function fireClipsInitEvent() {
-
-};
-prototype["handleStreamEnded"] = function handleStreamEnded() {
-
-};
-prototype["maybeStartNtpClock"] = function maybeStartNtpClock() {
-
-};
 const clipsManager = new ClipsManager();
 const result = size.fileFinishedImporting("modules/clips/native/ClipsManager.tsx");
 

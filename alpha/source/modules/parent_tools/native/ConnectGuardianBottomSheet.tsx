@@ -1,86 +1,295 @@
-// Module ID: 14627
-// Function ID: 14628
+// Module ID: 14683
+// Function ID: 14684
 // Name: ConnectGuardianBottomSheet
-// Dependencies: [19, 17, 7145, 7146, 21, 4845, 576, 563, 4809, 14628, 6757, 4841, 1115, 2486, 14629, 5465, 2]
-// Exports: default
+// Dependencies: [19, 17, 7048, 7049, 21, 4890, 587, 558, 576, 573, 4854, 14684, 1126, 2493, 4886, 14685, 5594, 6645, 2]
 
-// Module 14627 (ConnectGuardianBottomSheet)
-import useStateFromStores from "useStateFromStores" /* 563 */;
-import nativeDefault from "native" /* 576 */;
-import _modDef2486 from "module_2486" /* 2486 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import components_Button_Button from "components/Button/Button" /* 5465 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6757 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 14628 */;
-import ConnectGuardianCard from "ConnectGuardianCard" /* 14629 */;
-import noop from "module_19" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7145 */;
+// Module 14683 (ConnectGuardianBottomSheet)
+import react_native from "react-native" /* 17 */;
+import useStateFromStores from "useStateFromStores" /* 573 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import _modDef2493 from "module_2493" /* 2493 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7049 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 14684 */;
+import react from "react" /* 19 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7048 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-let closure_6 = fn(7146).CONNECT_GUARDIAN_BOTTOM_SHEET_KEY;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4845);
-const obj2 = { container: { paddingHorizontal: nativeDefault.space.PX_24, paddingVertical: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 }, info: null, centered: null, cardContainer: null };
-let obj3 = { paddingHorizontal: nativeDefault.space.PX_24, paddingVertical: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 };
-obj2.info = { alignItems: "center", gap: nativeDefault.space.PX_8 };
-obj2.centered = { textAlign: "center" };
-obj2.cardContainer = { alignItems: "center" };
-let closure_9 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/parent_tools/native/ConnectGuardianBottomSheet.tsx");
+let BottomSheet;
 
-export default function ConnectGuardianBottomSheet(arg0) {
-  ({ title, body } = arg0);
-  ({ linkCode, expiresAt, onRefresh } = arg0);
-  const tmp = closure_9();
-  const items = [FamilyCenterStore];
-  let stateFromStores = useStateFromStores.useStateFromStores(items, () => FamilyCenterStore.getLinkCode());
-  const items1 = [FamilyCenterStore];
-  let stateFromStores1 = useStateFromStores.useStateFromStores(items1, () => FamilyCenterStore.getLinkCodeExpiresAt());
-  const callback = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.hideActionSheet(closure_1_6);
-  }, []);
-  useOnNewPendingRequestDefault(callback);
-  const obj3 = { style: tmp.container, children: null };
-  const obj4 = { style: tmp.info, children: null };
-  const obj5 = { style: tmp.centered, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
-  if (title == null) {
-    const intl = tmp2(1115).intl;
-    title = intl.string(tmp7(2486).aCUVfL);
+let metroImportAll;
+let metroImportDefault;
+let obj2;
+let obj3;
+const View = react_native.View;
+let closure_6 = FamilyCenterConstants.CONNECT_GUARDIAN_BOTTOM_SHEET_KEY;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let c9 = "https://support.discord.com/hc/articles/14155060633623";
+let createStyles = createStyles_mod;
+let obj = { container: obj2, info: obj3, centered: { textAlign: "center" }, cardContainer: { alignItems: "center" } };
+obj2 = { paddingHorizontal: nativeDefault.space.PX_24, paddingVertical: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 };
+createStyles = createStyles.createStyles;
+obj3 = { alignItems: "center", gap: nativeDefault.space.PX_8 };
+let closure_10 = createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let body;
+  let expiresAt;
+  let items2;
+  let linkCode;
+  let onRefresh;
+  let title;
+  let tmp10;
+  let tmp5;
+  let tmp6;
+  let tmp9;
+  let obj = react2;
+  const cResult = obj.c(31);
+  ({ onRefresh, title, body } = arg0);
+  ({ linkCode, expiresAt } = arg0);
+  const tmp4 = closure_10();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [FamilyCenterStore];
+    const fn = function p() {
+      return FamilyCenterStore.getLinkCode();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
   }
-  obj5.children = title;
-  const items2 = [React5(Text_Text.Text, obj5), ];
-  const obj6 = { style: tmp.centered, variant: "text-md/medium", color: "text-default", children: null };
-  if (body == null) {
-    const intl2 = tmp2(1115).intl;
-    body = intl2.format(tmp7(2486)["2O6ltn"], { link: "https://support.discord.com/hc/articles/14155060633623" });
+  const tmpResult = useStateFromStores;
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [FamilyCenterStore];
+    class A {
+      constructor() {
+        return FamilyCenterStore.getLinkCodeExpiresAt();
+      }
+    }
+    cResult[2] = items1;
+    cResult[3] = A;
+    tmp10 = A;
+    tmp9 = items1;
+  } else {
+    tmp9 = cResult[2];
+    tmp10 = cResult[3];
   }
-  obj6.children = body;
-  items2[1] = React5(Text_Text.Text, obj6);
-  obj4.children = items2;
-  const items3 = [React6(View, obj4), , ];
-  const obj7 = { style: tmp.cardContainer, children: null };
-  if (stateFromStores == null) {
-    stateFromStores = linkCode;
-  }
-  const obj8 = { linkCode: stateFromStores, expiresAt: null, onRefresh: null };
+  const tmpResult2 = useStateFromStores;
+  let stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp10);
   if (stateFromStores1 == null) {
     stateFromStores1 = expiresAt;
   }
-  const obj9 = { startExpanded: true, children: null };
-  obj8.expiresAt = stateFromStores1;
-  obj8.onRefresh = onRefresh;
-  obj7.children = React5(ConnectGuardianCard.ConnectGuardianCard, obj8);
-  items3[1] = React5(View, obj7);
-  const obj10 = { variant: "secondary", size: "md", text: null, onPress: null };
-  const intl3 = tmp2(1115).intl;
-  obj10.text = intl3.string(_modDef2486.Hsm5IF);
-  obj10.onPress = callback;
-  items3[2] = React5(components_Button_Button.Button, obj10);
-  obj3.children = items3;
-  obj9.children = React6(View, obj3);
-  return React5(Sheet_BottomSheet.BottomSheet, obj9);
-};
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class R {
+      constructor() {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet(closure_1_6);
+      }
+    }
+    cResult[4] = R;
+    class A {
+      constructor() {
+        return FamilyCenterStore.getLinkCodeExpiresAt();
+      }
+    }
+  } else {
+    class R {
+      constructor() {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet(closure_1_6);
+      }
+    }
+  }
+  useOnNewPendingRequestDefault(tmp14);
+  if (cResult[5] !== title) {
+    let stringResult;
+    class R {
+      constructor() {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet(closure_1_6);
+      }
+    }
+    if (title == null) {
+      class R {
+        constructor() {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet(closure_1_6);
+        }
+      }
+      stringResult = obj4.string(_modDef2493.aCUVfL);
+    }
+    class A {
+      constructor() {
+        return FamilyCenterStore.getLinkCodeExpiresAt();
+      }
+    }
+    cResult[6] = stringResult;
+  } else {
+    class R {
+      constructor() {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet(closure_1_6);
+      }
+    }
+  }
+  if (cResult[7] === tmp4.centered) {
+    class R {
+      constructor() {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet(closure_1_6);
+      }
+    }
+    if (cResult[10] !== body) {
+      let formatResult;
+      class R {
+        constructor() {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet(closure_1_6);
+        }
+      }
+      if (body == null) {
+        class R {
+          constructor() {
+            const obj = ActionSheetActionCreatorsDefault;
+            obj.hideActionSheet(closure_1_6);
+          }
+        }
+        const format = tmp23.format;
+        const obj2 = { link };
+        class A {
+          constructor() {
+            return FamilyCenterStore.getLinkCodeExpiresAt();
+          }
+        }
+        formatResult = format(_modDef2493["2O6ltn"], obj2);
+      }
+      class A {
+        constructor() {
+          return FamilyCenterStore.getLinkCodeExpiresAt();
+        }
+      }
+      cResult[11] = formatResult;
+    } else {
+      class R {
+        constructor() {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet(closure_1_6);
+        }
+      }
+    }
+    if (cResult[12] === tmp4.centered) {
+      class R {
+        constructor() {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet(closure_1_6);
+        }
+      }
+      if (cResult[15] === tmp4.info) {
+        class R {
+          constructor() {
+            const obj = ActionSheetActionCreatorsDefault;
+            obj.hideActionSheet(closure_1_6);
+          }
+        }
+      }
+      class A {
+        constructor() {
+          return FamilyCenterStore.getLinkCodeExpiresAt();
+        }
+      }
+      const obj3 = { style: tmp4.info, children: items2 };
+      items2 = [tmp19, tmp24];
+      cResult[15] = tmp4.info;
+      cResult[16] = tmp19;
+      cResult[17] = tmp24;
+      cResult[18] = metroImportAll(View, obj3);
+      const tmp28 = metroImportAll(View, obj3);
+    }
+    class A {
+      constructor() {
+        return FamilyCenterStore.getLinkCodeExpiresAt();
+      }
+    }
+    const obj5 = { style: tmp4.centered, variant: "text-md/medium", color: "text-default", children: tmp21 };
+    cResult[12] = tmp4.centered;
+    cResult[13] = tmp21;
+    cResult[14] = metroImportDefault(Text_Text.Text, obj5);
+    const tmp25 = metroImportDefault(Text_Text.Text, obj5);
+  }
+  const obj6 = { style: tmp4.centered, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: tmp17 };
+  cResult[7] = tmp4.centered;
+  cResult[8] = tmp17;
+  cResult[9] = metroImportDefault(Text_Text.Text, obj6);
+  const tmp20 = metroImportDefault(Text_Text.Text, obj6);
+}) : ((arg0) => {
+  let ConnectGuardianCard;
+  let body;
+  let expiresAt;
+  let intl3;
+  let items2;
+  let items3;
+  let linkCode;
+  let obj9;
+  let onRefresh;
+  let title;
+  ({ title, body } = arg0);
+  ({ linkCode, expiresAt, onRefresh } = arg0);
+  const tmp = closure_10();
+  let obj = useStateFromStores;
+  const items = [FamilyCenterStore];
+  let stateFromStores = obj.useStateFromStores(items, () => FamilyCenterStore.getLinkCode());
+  const items1 = [FamilyCenterStore];
+  const obj2 = useStateFromStores;
+  let stateFromStores1 = obj2.useStateFromStores(items1, () => FamilyCenterStore.getLinkCodeExpiresAt());
+  const callback = react.useCallback(() => {
+    const obj = ActionSheetActionCreatorsDefault;
+    obj.hideActionSheet(closure_1_6);
+  }, []);
+  useOnNewPendingRequestDefault(callback);
+  const obj3 = { style: tmp.container, children: items3 };
+  const obj4 = { style: tmp.info, children: items2 };
+  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  const obj5 = { style: tmp.centered, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: title };
+  const Text = Text_Text.Text;
+  if (title == null) {
+    const intl = tmp2(1126).intl;
+    title = intl.string(tmp7(2493).aCUVfL);
+  }
+  items2 = [metroImportDefault(Text, obj5), ];
+  const obj6 = { style: tmp.centered, variant: "text-md/medium", color: "text-default", children: body };
+  const Text2 = tmp2(4886).Text;
+  if (body == null) {
+    const intl2 = tmp2(1126).intl;
+    const obj7 = { link };
+    body = intl2.format(tmp7(2493)["2O6ltn"], obj7);
+  }
+  items2[1] = metroImportDefault(Text2, obj6);
+  items3 = [metroImportAll(View, obj4), , ];
+  const obj8 = { style: tmp.cardContainer, children: metroImportDefault(ConnectGuardianCard, obj9) };
+  ConnectGuardianCard = tmp2(14685).ConnectGuardianCard;
+  if (stateFromStores == null) {
+    stateFromStores = linkCode;
+  }
+  obj9 = { linkCode: stateFromStores, expiresAt: stateFromStores1, onRefresh };
+  if (stateFromStores1 == null) {
+    stateFromStores1 = expiresAt;
+  }
+  const obj10 = { startExpanded: true, children: metroImportAll(View, obj3) };
+  items3[1] = metroImportDefault(View, obj8);
+  const obj11 = { variant: "secondary", size: "md", text: intl3.string(_modDef2493.Hsm5IF), onPress: callback };
+  const Button = tmp2(5594).Button;
+  intl3 = tmp2(1126).intl;
+  items3[2] = metroImportDefault(Button, obj11);
+  return metroImportDefault(BottomSheet, obj10);
+});
+const result = size.fileFinishedImporting("modules/parent_tools/native/ConnectGuardianBottomSheet.tsx");
+
+export default tmp4;

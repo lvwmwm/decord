@@ -1,34 +1,40 @@
-// Module ID: 10657
-// Function ID: 10658
+// Module ID: 10731
+// Function ID: 10732
 // Name: getChannelListRecord
-// Dependencies: [2044, 4496, 1074, 2069, 2]
+// Dependencies: [2051, 4507, 1085, 2077, 2]
 // Exports: default
 
-// Module 10657 (getChannelListRecord)
-import FavoritesUtils from "FavoritesUtils" /* 2069 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4496 */;
+// Module 10731 (getChannelListRecord)
+import Constants from "Constants" /* 1085 */;
+import FavoritesUtils from "FavoritesUtils" /* 2077 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4507 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let GuildChannelStore = fn(4496);
-({ GUILD_SELECTABLE_CHANNELS_KEY: c3, GUILD_VOCAL_CHANNELS_KEY: closure_4 } = GuildChannelStore);
+let c3;
+let closure_4;
 let GuildChannelStore = GuildChannelStore_mod;
-const ChannelTypes = fn(1074).ChannelTypes;
-const size = fn(2);
+({ GUILD_SELECTABLE_CHANNELS_KEY: c3, GUILD_VOCAL_CHANNELS_KEY: closure_4 } = GuildChannelStore);
+GuildChannelStore = GuildChannelStore_mod;
+const ChannelTypes = Constants.ChannelTypes;
 const result = size.fileFinishedImporting("modules/channel_sorting/getChannelListRecord.tsx");
 
 export default function getChannelListRecord(guildId, id) {
-  closure_0 = id;
+  let closure_0 = id;
   if (null != guildId) {
     if (null != id) {
+      const obj = FavoritesUtils;
       if (obj.isFavoritesGuildId(guildId)) {
         const channels = GuildChannelStore.getChannels(guildId);
-        let found = channels[React3].find((channel) => channel.channel.id === closure_0);
+        const arr = channels[_false];
+        let found = arr.find((channel) => channel.channel.id === closure_0);
         if (found == null) {
-          found = channels[React4].find((channel) => channel.channel.id === closure_0);
+          const arr2 = channels[React3];
+          found = arr2.find((channel) => channel.channel.id === closure_0);
         }
         if (found == null) {
-          found = channels[ChannelTypes.GUILD_CATEGORY].find((channel) => channel.channel.id === closure_0);
+          const arr3 = channels[ChannelTypes.GUILD_CATEGORY];
+          found = arr3.find((channel) => channel.channel.id === closure_0);
         }
         let channel;
         if (found != null) {
@@ -38,7 +44,6 @@ export default function getChannelListRecord(guildId, id) {
       } else {
         return ChannelStore.getChannel(id);
       }
-      obj = FavoritesUtils;
     }
   }
   return null;

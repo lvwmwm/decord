@@ -5,6 +5,8 @@
 // Module 306
 import get from "module_30" /* 30 */;
 
+let constants;
+
 const enforcing = get.getEnforcing("StatusBarManager");
 let closure_1 = null;
 

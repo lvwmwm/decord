@@ -1,47 +1,43 @@
-// Module ID: 12956
-// Function ID: 12957
+// Module ID: 13015
+// Function ID: 13016
 // Name: InteractionStatus
-// Dependencies: [7755, 1115, 2]
+// Dependencies: [7799, 1126, 2]
 // Exports: createInteractionStatus
 
-// Module 12956 (InteractionStatus)
-import InteractionUtils from "InteractionUtils" /* 7755 */;
+// Module 13015 (InteractionStatus)
+import intl5 from "intl" /* 1126 */;
+import InteractionUtils from "InteractionUtils" /* 7799 */;
 import size from "module_2" /* 2 */;
 
 const constants = { LOADING: 0, [0]: "LOADING", FAILED: 1, [1]: "FAILED", EPHEMERAL_SUCCESS: 999, [999]: "EPHEMERAL_SUCCESS" };
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/interaction/InteractionStatus.tsx");
 
 export const createInteractionStatus = function createInteractionStatus(message, interaction) {
-  const interactionStatusViewState = InteractionUtils.getInteractionStatusViewState(message, interaction);
+  let intl2;
+  let intl3;
+  let intl4;
+  const obj = InteractionUtils;
+  const interactionStatusViewState = obj.getInteractionStatusViewState(message, interaction);
   if (InteractionUtils.InteractionStatusViewState.SENDING === interactionStatusViewState) {
-    const obj2 = { text: null, state: null };
-    const intl4 = tmp(1115).intl;
-    obj2.text = intl4.string(tmp(1115).t.RiLfBY);
-    obj2.state = constants.LOADING;
+    const obj2 = { text: intl4.string(intl5.t.RiLfBY), state: constants.LOADING };
+    intl4 = tmp(1126).intl;
     return obj2;
-  } else if (tmp(7755).InteractionStatusViewState.CREATED === interactionStatusViewState) {
-    const obj3 = { text: null, state: null };
-    const intl3 = tmp(1115).intl;
-    const obj4 = { applicationName: message.author.username };
-    obj3.text = intl3.formatToPlainString(tmp(1115).t["7ePV4t"], obj4);
-    obj3.state = constants.LOADING;
+  } else if (InteractionUtils.InteractionStatusViewState.CREATED === interactionStatusViewState) {
+    const obj3 = { text: intl3.formatToPlainString(intl5.t["7ePV4t"], obj4), state: constants.LOADING };
+    intl3 = tmp(1126).intl;
     return obj3;
-  } else if (tmp(7755).InteractionStatusViewState.TIMED_OUT === interactionStatusViewState) {
-    const obj5 = { text: null, state: null };
-    const intl2 = tmp(1115).intl;
-    obj5.text = intl2.string(tmp(1115).t.h8hzPd);
-    obj5.state = constants.FAILED;
+  } else if (InteractionUtils.InteractionStatusViewState.TIMED_OUT === interactionStatusViewState) {
+    const obj5 = { text: intl2.string(intl5.t.h8hzPd), state: constants.FAILED };
+    intl2 = tmp(1126).intl;
     return obj5;
-  } else if (tmp(7755).InteractionStatusViewState.FAILED === interactionStatusViewState) {
+  } else if (InteractionUtils.InteractionStatusViewState.FAILED === interactionStatusViewState) {
     let interactionError = message.interactionError;
     if (interactionError == null) {
-      const intl = tmp(1115).intl;
-      interactionError = intl.string(tmp(1115).t.VCsUJu);
+      const intl = tmp(1126).intl;
+      interactionError = intl.string(tmp(1126).t.VCsUJu);
     }
-    const obj6 = { text: interactionError, state: constants.FAILED };
-    return obj6;
-  } else if (tmp(7755).InteractionStatusViewState.EPHEMERAL_SUCCESS === interactionStatusViewState) {
-    const obj7 = { text: "", state: constants.EPHEMERAL_SUCCESS };
-    return obj7;
+    return { text: interactionError, state: constants.FAILED };
+  } else if (InteractionUtils.InteractionStatusViewState.EPHEMERAL_SUCCESS === interactionStatusViewState) {
+    return { text: "", state: constants.EPHEMERAL_SUCCESS };
   }
 };

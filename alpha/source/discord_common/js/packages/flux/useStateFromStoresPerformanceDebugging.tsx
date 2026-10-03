@@ -1,35 +1,31 @@
-// Module ID: 15431
-// Function ID: 15432
+// Module ID: 15488
+// Function ID: 15489
 // Name: useStateFromStoresPerformanceDebugging
 // Dependencies: [32, 4, 510, 2]
 // Exports: getUseStateFromStoresDebuggingEnabled, getUseStateFromStoresExecutionCountWarningThreshold, getUseStateFromStoresExecutionTimeWarningThresholdMs, getUseStateFromStoresExecutionWindowThresholdMs, getUseStateFromStoresHookInfo, getUseStateFromStoresSpecificHookFilter, setUseStateFromStoresDebuggingEnabled, setUseStateFromStoresExecutionCountWarningThreshold, setUseStateFromStoresExecutionTimeWarningThresholdMs, setUseStateFromStoresExecutionWindowThresholdMs, setUseStateFromStoresSpecificHookFilter, trackGetStateFromStoresPerformance
 
-// Module 15431 (useStateFromStoresPerformanceDebugging)
+// Module 15488 (useStateFromStoresPerformanceDebugging)
+import logger_Logger from "logger/Logger" /* 4 */;
 import Storage2 from "Storage" /* 510 */;
-import _slicedToArray from "module_32" /* 32 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function hasExceededThreshold(name) {
   let tmp = "anonymous" !== name.name;
   if (tmp) {
-    let tmp3 = "" === global;
-    if (!tmp3) {
-      tmp3 = name.name === global;
-    }
+    let tmp3 = "" === c7 || name.name === c7;
     if (tmp3) {
-      let tmp6 = name.execCount > global;
-      if (!tmp6) {
-        tmp6 = name.execTime > global;
-      }
-      tmp3 = tmp6;
+      tmp3 = name.execCount > c6 || name.execTime > c5;
+      const tmp6 = name.execCount > c6 || name.execTime > c5;
     }
     tmp = tmp3;
   }
   return tmp;
 }
 function flushViolators() {
-  if (!(function hasViolator() {
-    const obj = dependencyMap[Symbol.iterator]();
+  let tmp13;
+  function hasViolator() {
+    const obj = map[Symbol.iterator]();
     while (obj !== undefined) {
       let tmp4 = _slicedToArray(tmp2, 2);
       let first = tmp4[0];
@@ -40,13 +36,10 @@ function flushViolators() {
       }
     }
     return false;
-  })()) {
-    if ("" === global) {
-      logger.log("No violators found");
-    }
-    map[Symbol.iterator]();
   }
-  (function printViolators() {
+  function printViolators() {
+    let obj;
+    let tmp14;
     const num = 34;
     const num2 = 20;
     const num3 = 20;
@@ -56,14 +49,16 @@ function flushViolators() {
     logger.log(`${"|".padEnd(tmp, "-")}|`);
     logger.log(`${"| Consumers of `useStateFromStores` exceeding warning thresholds:".padEnd(tmp, " ")}|`);
     logger.log(`${"|".padEnd(tmp, "-")}|`);
+    const log = logger.log;
     const padEndResult = "Function/Component Name".padEnd(num, " ");
-    logger.log("| " + padEndResult + "| " + "Total Exec Time".padEnd(num2, " ") + "| " + "Total Exec Count".padEnd(num3, " ") + "|");
-    logger.log(`${"|".padEnd(tmp, "-")}|`);
     const padEndResult1 = "Total Exec Time".padEnd(num2, " ");
+    log("| " + padEndResult + "| " + padEndResult1 + "| " + "Total Exec Count".padEnd(num3, " ") + "|");
+    logger.log(`${"|".padEnd(tmp, "-")}|`);
+    const tmp10 = map[Symbol.iterator]();
     while (tmp10 !== undefined) {
       let tmp13 = _slicedToArray(tmp11, 2);
       [obj, tmp14] = tmp13;
-      let tmp16 = "" !== global;
+      let tmp16 = "" !== closure_1_7;
       if (tmp16) {
         tmp16 = obj === tmp15;
       }
@@ -71,6 +66,7 @@ function flushViolators() {
         tmp16 = hasExceededThreshold(tmp14);
       }
       if (tmp16) {
+        let log2 = logger.log;
         let padEndResult2 = obj.padEnd(num, " ");
         let execTime = tmp14.execTime;
         let text = `${execTime.toFixed(2)}ms`;
@@ -82,19 +78,45 @@ function flushViolators() {
         let str3 = "| ";
         let str4 = "| ";
         let str5 = "|";
-        let logResult5 = logger.log("| " + padEndResult2 + "| " + padEndResult3 + "| " + str1.padEnd(num3, " ") + "|");
+        let log2Result = log2("| " + padEndResult2 + "| " + padEndResult3 + "| " + str1.padEnd(num3, " ") + "|");
       }
       continue;
     }
     logger.log(`${"|".padEnd(tmp, "-")}|`);
-  })();
+  }
+  if (!hasViolator()) {
+    const tmp = c7;
+    let str = "";
+    if ("" === c7) {
+      const tmp2 = logger;
+      let str2 = "No violators found";
+      logger.log("No violators found");
+    }
+    let tmp6 = map;
+    let tmp7 = map[Symbol.iterator]();
+    let num = 2;
+    let flag = false;
+    let tmp10 = tmp7;
+    while (tmp7 !== undefined) {
+      let tmp11 = _slicedToArray;
+      let tmp12 = _slicedToArray(tmp9, 2);
+      [r10022, tmp13] = tmp12;
+      tmp13.warned = false;
+      tmp13.execTime = 0;
+      tmp13.execCount = 0;
+      continue;
+    }
+  }
+  let tmp4 = printViolators();
 }
-const logger = new fn(4).Logger("useStateFromStores");
-let global = "";
-global = false;
+const logger = new logger_Logger.Logger("useStateFromStores");
+let c4 = 60000;
+let c5 = 10;
+let c6 = 1000;
+let c7 = "";
+let c8 = false;
 let c9;
 const map = new Map();
-const size = fn(2);
 let result = size.fileFinishedImporting("../discord_common/js/packages/flux/useStateFromStoresPerformanceDebugging.tsx");
 
 export function getUseStateFromStoresExecutionWindowThresholdMs() {
@@ -105,13 +127,15 @@ export function getUseStateFromStoresExecutionWindowThresholdMs() {
   return num;
 }
 export const setUseStateFromStoresExecutionWindowThresholdMs = function setUseStateFromStoresExecutionWindowThresholdMs(arg0) {
-  global = arg0;
+  let interval;
+  c4 = arg0;
   const Storage = Storage2.Storage;
   const result = Storage.set("useStateFromStoresExecutionWindowThresholdMs", arg0);
   clearInterval(interval);
-  if (global) {
+  const tmp3 = c8;
+  if (tmp3) {
     const _setInterval = setInterval;
-    interval = setInterval(flushViolators, global);
+    interval = setInterval(flushViolators, c4);
   }
 };
 export function getUseStateFromStoresExecutionTimeWarningThresholdMs() {
@@ -122,7 +146,7 @@ export function getUseStateFromStoresExecutionTimeWarningThresholdMs() {
   return num;
 }
 export const setUseStateFromStoresExecutionTimeWarningThresholdMs = function setUseStateFromStoresExecutionTimeWarningThresholdMs(arg0) {
-  global = arg0;
+  c5 = arg0;
   const Storage = Storage2.Storage;
   const result = Storage.set("useStateFromStoresExecutionTimeWarningThresholdMs", arg0);
 };
@@ -134,12 +158,12 @@ export function getUseStateFromStoresExecutionCountWarningThreshold() {
   return num;
 }
 export const setUseStateFromStoresExecutionCountWarningThreshold = function setUseStateFromStoresExecutionCountWarningThreshold(arg0) {
-  global = arg0;
+  c6 = arg0;
   const Storage = Storage2.Storage;
   const result = Storage.set("useStateFromStoresExecutionCountWarningThreshold", arg0);
 };
 export const setUseStateFromStoresSpecificHookFilter = function setUseStateFromStoresSpecificHookFilter(first1) {
-  global = first1;
+  c7 = first1;
   const Storage = Storage2.Storage;
   const result = Storage.set("useStateFromStoresSpecificHookFilter", first1);
 };
@@ -157,13 +181,14 @@ export function getUseStateFromStoresDebuggingEnabled() {
   }
   return flag;
 }
-export const setUseStateFromStoresDebuggingEnabled = function setUseStateFromStoresDebuggingEnabled(arg0) {
-  global = arg0;
+export const setUseStateFromStoresDebuggingEnabled = function setUseStateFromStoresDebuggingEnabled(first1) {
+  let interval;
+  c8 = first1;
   const Storage = Storage2.Storage;
-  const result = Storage.set("useStateFromStoresDebuggingEnabled", arg0);
-  if (global) {
+  const result = Storage.set("useStateFromStoresDebuggingEnabled", first1);
+  if (c8) {
     const _setInterval = setInterval;
-    let interval = setInterval(flushViolators, global);
+    interval = setInterval(flushViolators, c4);
   } else {
     const _clearInterval = clearInterval;
     clearInterval(interval);
@@ -171,8 +196,11 @@ export const setUseStateFromStoresDebuggingEnabled = function setUseStateFromSto
   }
 };
 export const getUseStateFromStoresHookInfo = function getUseStateFromStoresHookInfo() {
-  if (global) {
+  const tmp = c8;
+  if (tmp) {
     const _Error = Error;
+    const self = this;
+    const self2 = this;
     const error = new Error();
     let parts;
     if (error.stack != null) {
@@ -187,11 +215,11 @@ export const getUseStateFromStoresHookInfo = function getUseStateFromStoresHookI
       while (true) {
         let str9 = parts[num];
         let str10 = str9.trim();
-        let tmp7 = str10.split(" ")[1];
-        if ("useStateFromStores" !== tmp7) {
-          if ("useStateFromStoresArray" !== tmp7) {
-            str8 = tmp7;
-            if ("useStateFromStoresObject" !== tmp7) {
+        let tmp6 = str10.split(" ")[1];
+        if ("useStateFromStores" !== tmp6) {
+          if ("useStateFromStoresArray" !== tmp6) {
+            str8 = tmp6;
+            if ("useStateFromStoresObject" !== tmp6) {
               break;
             }
           }
@@ -205,46 +233,43 @@ export const getUseStateFromStoresHookInfo = function getUseStateFromStoresHookI
         }
       }
     }
-    value = map.get(str8);
+    let value = map.get(str8);
+    const obj = map;
     if (value == null) {
+      value = { name: str8, execCount: 0, execTime: 0, warned: false };
       const obj2 = { name: str8, execCount: 0, execTime: 0, warned: false };
-      value = obj2;
     }
-    const result = map.set(str8, value);
+    const result = obj.set(str8, value);
     return value;
   }
 };
 export const trackGetStateFromStoresPerformance = function trackGetStateFromStoresPerformance(execTime, fn) {
-  if (global) {
+  const tmp = c8;
+  if (tmp) {
     if (null != execTime) {
       const _performance = performance;
       const _performance2 = performance;
       const nowResult = performance.now();
+      const tmp15 = fn();
       execTime.execTime = execTime.execTime + (performance.now() - nowResult);
       execTime.execCount = execTime.execCount + 1;
       if (false === execTime.warned) {
-        let tmp9 = "anonymous" !== execTime.name;
-        if (tmp9) {
-          let tmp4 = "" === global;
-          if (!tmp4) {
-            tmp4 = execTime.name === global;
+        let tmp10 = "anonymous" !== execTime.name;
+        if (tmp10) {
+          let tmp5 = "" === c7 || execTime.name === c7;
+          if (tmp5) {
+            tmp5 = execTime.execCount > c6 || execTime.execTime > c5;
+            const tmp8 = execTime.execCount > c6 || execTime.execTime > c5;
           }
-          if (tmp4) {
-            let tmp7 = execTime.execCount > global;
-            if (!tmp7) {
-              tmp7 = execTime.execTime > global;
-            }
-            tmp4 = tmp7;
-          }
-          tmp9 = tmp4;
+          tmp10 = tmp5;
         }
-        if (tmp9) {
+        if (tmp10) {
           execTime.warned = true;
           const _HermesInternal = HermesInternal;
           logger.log("" + execTime.name + " cumulatively used " + execTime.execTime + "ms of execution time and ran " + execTime.execCount + " times.");
         }
       }
-      return fn();
+      return tmp15;
     }
   }
   return fn();

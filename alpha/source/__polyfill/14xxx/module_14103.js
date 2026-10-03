@@ -1,37 +1,41 @@
 // Module ID: 14103
 // Function ID: 14104
-// Dependencies: []
-// Exports: getReactNativeDimensionsWithDimensions
+// Dependencies: [14066, 14064, 14082, 14104, 14105]
 
 // Module 14103
+import _mod14064 from "module_14064" /* 14064 */;
+import _mod14066 from "module_14066" /* 14066 */;
+import _mod14082 from "module_14082" /* 14082 */;
+import _mod14104 from "module_14104" /* 14104 */;
 
-export const getReactNativeDimensionsWithDimensions = function getReactNativeDimensionsWithDimensions(width, value) {
-  try {
-    let obj = {};
-    let obj2 = {};
-    if (width) {
-      const obj5 = { screenWidth: null, screenHeight: null, screenScale: null, screenFontScale: null };
-      const _Math = Math;
-      obj5.screenWidth = Math.ceil(width.width);
-      const _Math2 = Math;
-      obj5.screenHeight = Math.ceil(width.height);
-      ({ scale: obj3.screenScale, fontScale: obj3.screenFontScale } = width);
-      obj = obj5;
+let closure_2 = _mod14066([].push);
+
+export default (arg0, arg1) => {
+  let num;
+  const tmp = _mod14064(arg0);
+  const items = [];
+  for (const key10010 in tmp) {
+    let tmp12 = require;
+    let tmp14 = _mod14082;
+    let tmp14Result = tmp14(_mod14104, key10010);
+    let tmp2 = !tmp14Result && tmp12(14082)(tmp, key10010);
+    if (!tmp2) {
+      continue;
+    } else {
+      let tmp4 = closure_2(items, key10010);
+      continue;
     }
-    if (value) {
-      const obj9 = { windowWidth: null, windowHeight: null, windowScale: null, windowFontScale: null };
-      const _Math3 = Math;
-      obj9.windowWidth = Math.ceil(value.width);
-      const _Math4 = Math;
-      obj9.windowHeight = Math.ceil(value.height);
-      ({ scale: obj4.windowScale, fontScale: obj4.windowFontScale } = value);
-      obj2 = obj9;
-    }
-    const obj10 = {};
-    const merged = Object.assign(obj);
-    const merged1 = Object.assign(obj2);
-    return obj10;
-  } catch (err) {
-    return null;
+    continue;
   }
+  for (let num = 0; arg1.length > num; num = num + 1) {
+    let tmp5 = require;
+    let tmp7 = arg1[num];
+    if (_mod14082(tmp, tmp7)) {
+      let tmp5Result = tmp5(14105);
+      if (!(~tmp5Result.indexOf(items, tmp7))) {
+        let tmp10 = closure_2(items, tmp7);
+      }
+    }
+  }
+  return items;
 };

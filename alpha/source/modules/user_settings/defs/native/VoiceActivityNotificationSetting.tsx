@@ -1,37 +1,41 @@
-// Module ID: 15266
-// Function ID: 15267
+// Module ID: 15322
+// Function ID: 15323
 // Name: VoiceActivityNotificationSetting
-// Dependencies: [7590, 1074, 4511, 11215, 1115, 2021, 1241, 2]
+// Dependencies: [7634, 1085, 4522, 11129, 1126, 2028, 1252, 2]
 
-// Module 15266 (VoiceActivityNotificationSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import NotificationConstants from "NotificationConstants" /* 4511 */;
-import SettingsConstants from "SettingsConstants" /* 7590 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 15322 (VoiceActivityNotificationSetting)
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import NotificationConstants from "NotificationConstants" /* 4522 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const AnalyticEvents = Constants.AnalyticEvents;
 const constants = NotificationConstants.NotificationSettingsUpdateType;
-const toggle = SettingBuilders.createToggle({
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.wtk08S);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.wtk08S);
   },
-  parent: SettingsConstants.MobileUserSettings.NOTIFICATIONS,
+  parent: MobileUserSettings.NOTIFICATIONS,
   useValue: UserSettings.EnableVoiceActivityNotifications.useSetting,
   useDescription() {
-    const intl = util.intl;
-    return intl.string(util.t.rngMNx);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.rngMNx);
   },
   onValueChange(voice_activity_notifications) {
     const EnableVoiceActivityNotifications = UserSettings.EnableVoiceActivityNotifications;
     EnableVoiceActivityNotifications.updateSetting(voice_activity_notifications);
-    AnalyticsUtilsDefault.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, { update_type: constants.ACCOUNT, voice_activity_notifications });
+    const obj = AnalyticsUtilsDefault;
+    const obj2 = { update_type: constants.ACCOUNT, voice_activity_notifications };
+    obj.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, obj2);
   }
-});
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/VoiceActivityNotificationSetting.tsx");
 
 export default toggle;

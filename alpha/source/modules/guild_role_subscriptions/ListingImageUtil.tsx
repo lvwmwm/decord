@@ -1,20 +1,22 @@
-// Module ID: 17809
-// Function ID: 17810
+// Module ID: 17895
+// Function ID: 17896
 // Name: ListingImageUtil
-// Dependencies: [5276, 2]
+// Dependencies: [5322, 2]
 // Exports: getSource
 
-// Module 17809 (ListingImageUtil)
-import StoreUtils from "StoreUtils" /* 5276 */;
+// Module 17895 (ListingImageUtil)
+import StoreUtils from "StoreUtils" /* 5322 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/ListingImageUtil.tsx");
 
 export const getSource = function getSource(image_asset) {
+  let obj2;
   if (null == image_asset.image_asset) {
-    let obj2 = { uri: "" };
+    obj2 = { uri: "" };
   } else {
-    let str = StoreUtils.getAssetURL(image_asset.application_id, image_asset.image_asset);
+    const obj = StoreUtils;
+    let str = obj.getAssetURL(image_asset.application_id, image_asset.image_asset);
     if (str == null) {
       str = "";
     }

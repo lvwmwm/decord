@@ -1,162 +1,334 @@
-// Module ID: 17662
-// Function ID: 17663
+// Module ID: 17750
+// Function ID: 17751
 // Name: GuildSettingsRoles
-// Dependencies: [32, 19, 17, 1182, 2102, 502, 4765, 2101, 2066, 4498, 6735, 17663, 17664, 1074, 21, 4845, 576, 6022, 1241, 17665, 504, 15992, 9241, 1485, 6550, 4503, 5025, 17666, 17675, 17676, 6185, 1115, 5621, 11844, 4841, 4714, 17677, 17678, 17679, 17680, 6085, 5465, 17681, 6982, 12501, 1364, 17673, 6018, 6736, 6657, 8239, 1177, 9228, 16239, 6647, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 2107, 502, 4780, 2106, 2074, 4509, 6623, 17751, 17752, 1085, 21, 4890, 587, 5915, 558, 576, 1252, 17753, 504, 16066, 9247, 1490, 4514, 5070, 17754, 17763, 17764, 6074, 1126, 5909, 11775, 4886, 17765, 5594, 17767, 6880, 12442, 1369, 17761, 5705, 6624, 6547, 8895, 1188, 9234, 16315, 6536, 2]
 
-// Module 17662 (GuildSettingsRoles)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4503 */;
-import shared from "shared" /* 4714 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5025 */;
-import components_Button_Button from "components/Button/Button" /* 5465 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6018 */;
-import FastImageDefault from "FastImage" /* 6085 */;
-import TableRowGroup from "TableRowGroup" /* 6185 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6550 */;
-import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 6736 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9241 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 15992 */;
-import SortableListViewDefault from "SortableListView" /* 16239 */;
-import GuildSettingsRolesManager from "GuildSettingsRolesManager" /* 17665 */;
-import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 17673 */;
-import actions_GuildActionCreators from "actions/GuildActionCreators" /* 17675 */;
-import GuildSettingsModalRolesActionCreatorsDefault from "GuildSettingsModalRolesActionCreators" /* 17676 */;
-import GuildSettingsRoleItemDefault from "GuildSettingsRoleItem" /* 17681 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
+// Module 17750 (GuildSettingsRoles)
+import nativeDefault from "native" /* 587 */;
+import intl5 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2107 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4514 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5070 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5705 */;
+import TableRowGroup from "TableRowGroup" /* 6074 */;
+import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 6624 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 16066 */;
+import GuildSettingsConstants from "GuildSettingsConstants" /* 17752 */;
+import GuildSettingsRolesManager from "GuildSettingsRolesManager" /* 17753 */;
+import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 17761 */;
+import actions_GuildActionCreators from "actions/GuildActionCreators" /* 17763 */;
+import GuildSettingsModalRolesActionCreatorsDefault from "GuildSettingsModalRolesActionCreators" /* 17764 */;
+import MemberRolesAbstractUI from "MemberRolesAbstractUI" /* 17765 */;
+import GuildSettingsRoleItemDefault from "GuildSettingsRoleItem" /* 17767 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4765 */;
-import GuildRoleStore from "GuildRoleStore" /* 2101 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import PermissionStore from "PermissionStore" /* 4498 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 6735 */;
-import GuildSettingsModalRolesStore from "GuildSettingsModalRolesStore" /* 17663 */;
-import TextStyles from "TextStyles" /* 6022 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4780 */;
+import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import GuildStore_mod from "GuildStore" /* 2074 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 6623 */;
+import GuildSettingsModalRolesStore from "GuildSettingsModalRolesStore" /* 17751 */;
+import Constants from "Constants" /* 1085 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import TextStyles from "TextStyles" /* 5915 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const GuildSettingsRoleCreateModalActionCreatorsDefault = tmp(17666);
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: metroRequire, StyleSheet } = get_ActivityIndicator);
-const isEveryoneRole = fn(2102).isEveryoneRole;
-let closure_16 = fn(17664).GuildSettingsRoleEditSections;
-const Constants = fn(1074);
-({ GuildSettingsSections: closure_17, AnalyticEvents: closure_18, AnalyticsSections: closure_19, Permissions: closure_20, Fonts } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_21, jsxs: closure_22, Fragment: closure_23 } = jsxProd);
-const createStyles = fn(4845);
-let obj2 = { container: { flex: 1 }, scrollContainer: { paddingHorizontal: 12 }, searchWrapper: { paddingVertical: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_12 }, subheaderContainer: null, emptySubheaderContainer: null, emptyIlloContainer: null, emptyIllo: null, emptyIlloLarge: null, emptySubheaderBody: null, subheader: null, subheaderBody: null, subheaderButton: null, subheaderDescription: null, divider: null, everyoneWrapper: null, edittingRolesHeader: null, rolesHeader: null, reorderButton: null, reorderButtonText: null, rolesBody: null, emptyRolesIcon: null };
-let obj3 = { paddingVertical: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_12 };
-obj2.subheaderContainer = { paddingBottom: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
-obj2.emptySubheaderContainer = { paddingBottom: 16, alignItems: "center" };
-let obj4 = { paddingBottom: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
-obj2.emptyIlloContainer = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, width: "100%", flex: 1, alignItems: "center" };
-obj2.emptyIllo = { marginTop: 28, width: "100%" };
-obj2.emptyIlloLarge = { marginTop: 0, aspectRatio: 2.75, width: "100%", height: "auto" };
-obj2.emptySubheaderBody = { paddingHorizontal: 16, paddingTop: 8, paddingBottom: 24, alignItems: "center" };
-let obj6 = {};
+const require = globalThis.__r;
+let _require, closure_12, guildId, importDefault, navigation, role, str2, tmp12, tmp8Result, to, trackResult;
+
+let Fonts;
+let StyleSheet;
+let closure_16;
+let closure_17;
+let closure_18;
+let closure_19;
+let closure_20;
+let closure_21;
+let closure_22;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let tmp;
+const GuildSettingsRoleCreateModalActionCreatorsDefault = tmp(17754);
+let react = react_mod;
+({ View: metroRequire, StyleSheet } = react_native);
+const isEveryoneRole = GuildRoleRecord.isEveryoneRole;
+let GuildStore = GuildStore_mod;
+let closure_15 = GuildSettingsConstants.GuildSettingsRoleEditSections;
+({ GuildSettingsSections: closure_16, AnalyticEvents: closure_17, AnalyticsSections: closure_18, Permissions: closure_19, Fonts } = Constants);
+({ jsx: closure_20, jsxs: closure_21, Fragment: closure_22 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: { flex: 1 }, scrollContainer: { paddingHorizontal: 12 }, searchWrapper: obj2, subheaderContainer: obj3, emptySubheaderContainer: { paddingBottom: 16, alignItems: "center" }, emptyIlloContainer: { width: "100%", flex: 1, alignItems: "center", paddingTop: 28 }, emptySubheaderBody: { paddingHorizontal: 16, paddingTop: 8, paddingBottom: 24, alignItems: "center" }, subheader: obj4, subheaderBody: { marginTop: 8, textAlign: "center" }, subheaderButton: { flexGrow: 0, marginTop: 16 }, subheaderDescription: { lineHeight: 18, textAlign: "center" }, divider: { height: StyleSheet.hairlineWidth, width: "100%" }, everyoneWrapper: { marginTop: 2, marginBottom: 24 }, edittingRolesHeader: obj5, rolesHeader: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, reorderButton: { marginBottom: 8, flexDirection: "row", alignItems: "center" }, reorderButtonText: { marginLeft: 8 }, rolesBody: { padding: 16, paddingTop: 8, lineHeight: 18 }, emptyRolesIcon: { opacity: 0.4 } };
+obj2 = { paddingVertical: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_12 };
+createStyles = createStyles.createStyles;
+obj3 = { paddingBottom: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
+obj4 = { marginTop: 16 };
 let merged = Object.assign(TextStyles(Fonts.DISPLAY_EXTRABOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
-obj6.marginTop = 16;
-obj2.subheader = obj6;
-obj2.subheaderBody = { marginTop: 8, textAlign: "center" };
-obj2.subheaderButton = { flexGrow: 0, marginTop: 16 };
-obj2.subheaderDescription = { lineHeight: 18, textAlign: "center" };
-obj2.divider = { height: StyleSheet.hairlineWidth, width: "100%" };
-obj2.everyoneWrapper = { marginTop: 2, marginBottom: 24 };
-let obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, width: "100%", flex: 1, alignItems: "center" };
-obj2.edittingRolesHeader = { marginTop: nativeDefault.space.PX_16, marginLeft: nativeDefault.space.PX_16 };
-obj2.rolesHeader = { flexDirection: "row", justifyContent: "space-between", alignItems: "center" };
-obj2.reorderButton = { marginBottom: 8, flexDirection: "row", alignItems: "center" };
-obj2.reorderButtonText = { marginLeft: 8 };
-obj2.rolesBody = { padding: 16, paddingTop: 8, lineHeight: 18 };
-obj2.emptyRolesIcon = { opacity: 0.4 };
-let closure_24 = createStyles.createStyles(obj2);
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRoles.tsx");
-
-export default function ConnectedGuildSettingsModalRoles(guildId) {
-  guildId = guildId.guildId;
-  let guild;
-  let memberCount;
-  let sortedGuildRoles;
-  let rolesOrder;
-  let currentUserId;
-  let highestRole;
-  let sorting;
-  closure_14 = undefined;
-  c15 = undefined;
-  closure_22 = undefined;
-  let callback2;
-  let callback3;
-  let callback4;
-  let callback5;
-  let callback6;
-  let callback7;
-  let tmp = callback3();
-  importDefault = tmp;
-  const ref = guild.useRef(null);
-  const navigation = guildId(1485).useNavigation();
-  const tmp7 = useIsWindowLargeDefault();
-  dependencyMap = tmp7;
-  let obj2 = guildId(1485);
-  let items = [memberCount];
-  const stateFromStores = guildId(504).useStateFromStores(items, () => memberCount.theme);
-  let obj3 = guildId(504);
-  let items1 = [highestRole, currentUserId, sortedGuildRoles, c15, closure_14, rolesOrder];
-  const stateFromStoresObject = guildId(504).useStateFromStoresObject(items1, () => {
-    guild = GuildStore.getGuild(guildId);
-    const id = AuthenticationStore.getId();
-    const obj = { guild, guildEveryoneRole: null, memberCount: null, roleMemberCount: null, sortedGuildRoles: null, rolesOrder: null, currentUserId: null, highestRole: null };
-    let everyoneRole = null;
-    if (null != guild) {
-      everyoneRole = GuildRoleStore.getEveryoneRole(guild);
+obj5 = { marginTop: nativeDefault.space.PX_16, marginLeft: nativeDefault.space.PX_16 };
+let closure_23 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
+  let closure_3;
+  let first;
+  let ref;
+  let tmp5;
+  _require = arg0;
+  importDefault = arg1;
+  let obj = require("react");
+  const cResult = obj.c(16);
+  let tmp2 = _slicedToArray;
+  [first, dependencyMap] = react.useState("");
+  if (cResult[0] !== arg0) {
+    const fn = function o() {
+      return closure_0;
+    };
+    cResult[0] = arg0;
+    cResult[1] = fn;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+  }
+  [r10027, _slicedToArray] = tmp2(react.useState(tmp5), 2);
+  tmp2(react.useState(tmp5), 2);
+  react = obj2.useRef(false);
+  if (cResult[2] !== arg0) {
+    class R {
+      constructor(arg0) {
+        closure_0 = arg0;
+        str = arg0.toLowerCase();
+        trimmed = str.trim();
+        closure_0 = trimmed;
+        current = closure_5.current;
+        tmp2 = closure_5;
+        if (!current) {
+          str2 = "";
+          current = "" === trimmed;
+        }
+        if (!current) {
+          flag = true;
+          tmp2.current = true;
+          tmp3 = closure_1;
+          tmp4 = closure_3;
+          obj = closure_1(closure_3[19]);
+          tmp5 = AnalyticEvents;
+          trackResult = obj.track(AnalyticEvents.SEARCH_STARTED, { search_type: "Roles" });
+        }
+        tmp7 = closure_3(trimmed);
+        tmp8 = closure_4;
+        if ("" === trimmed) {
+          found = closure_0;
+        } else {
+          tmp9 = closure_0;
+          found = closure_0.filter((name) => {
+            const str = name.name;
+            const formatted = str.toLowerCase();
+            return formatted.includes(trimmed);
+          });
+        }
+        tmp8Result = tmp8(found);
+        return;
+      }
     }
-    obj.guildEveryoneRole = everyoneRole;
-    let id1;
-    if (guild != null) {
-      id1 = guild.id;
+    cResult[2] = arg0;
+    cResult[3] = R;
+  } else {
+    class R {
+      constructor(arg0) {
+        closure_0 = arg0;
+        str = arg0.toLowerCase();
+        trimmed = str.trim();
+        closure_0 = trimmed;
+        current = closure_5.current;
+        tmp2 = closure_5;
+        if (!current) {
+          str2 = "";
+          current = "" === trimmed;
+        }
+        if (!current) {
+          flag = true;
+          tmp2.current = true;
+          tmp3 = closure_1;
+          tmp4 = closure_3;
+          obj = closure_1(closure_3[19]);
+          tmp5 = AnalyticEvents;
+          trackResult = obj.track(AnalyticEvents.SEARCH_STARTED, { search_type: "Roles" });
+        }
+        tmp7 = closure_3(trimmed);
+        tmp8 = closure_4;
+        if ("" === trimmed) {
+          found = closure_0;
+        } else {
+          tmp9 = closure_0;
+          found = closure_0.filter((name) => {
+            const str = name.name;
+            const formatted = str.toLowerCase();
+            return formatted.includes(trimmed);
+          });
+        }
+        tmp8Result = tmp8(found);
+        return;
+      }
     }
-    let num = GuildMemberCountStore.getMemberCount(id1);
-    if (num == null) {
-      num = 0;
+  }
+  let closure_6 = tmp7;
+  if (cResult[4] === arg1) {
+    class R {
+      constructor(arg0) {
+        closure_0 = arg0;
+        str = arg0.toLowerCase();
+        trimmed = str.trim();
+        closure_0 = trimmed;
+        current = closure_5.current;
+        tmp2 = closure_5;
+        if (!current) {
+          str2 = "";
+          current = "" === trimmed;
+        }
+        if (!current) {
+          flag = true;
+          tmp2.current = true;
+          tmp3 = closure_1;
+          tmp4 = closure_3;
+          obj = closure_1(closure_3[19]);
+          tmp5 = AnalyticEvents;
+          trackResult = obj.track(AnalyticEvents.SEARCH_STARTED, { search_type: "Roles" });
+        }
+        tmp7 = closure_3(trimmed);
+        tmp8 = closure_4;
+        if ("" === trimmed) {
+          found = closure_0;
+        } else {
+          tmp9 = closure_0;
+          found = closure_0.filter((name) => {
+            const str = name.name;
+            const formatted = str.toLowerCase();
+            return formatted.includes(trimmed);
+          });
+        }
+        tmp8Result = tmp8(found);
+        return;
+      }
     }
-    obj.memberCount = num;
-    let id2;
-    if (guild != null) {
-      id2 = guild.id;
+  }
+  class E {
+    constructor() {
+      const tmp = closure_1;
+      if (!tmp) {
+        const tmp2 = first;
+        if ("" !== first.trim()) {
+          closure_6(tmp2);
+        } else {
+          _slicedToArray(closure_0);
+        }
+      }
     }
-    obj.roleMemberCount = GuildRoleMemberCountStore.getRoleMemberCount(id2);
-    obj.sortedGuildRoles = GuildRoleStore.getSortedRoles(guildId);
-    obj.rolesOrder = GuildSettingsModalRolesStore.order;
-    obj.currentUserId = id;
-    highestRole = undefined;
-    if (null != guild) {
-      highestRole = PermissionUtilsAll.getHighestRole(guild, id);
+  }
+  const items = [arg1, first, arg0, tmp7];
+  cResult[4] = arg1;
+  cResult[5] = first;
+  cResult[6] = tmp7;
+  cResult[7] = arg0;
+  cResult[8] = E;
+  cResult[9] = items;
+}) : ((arg0, arg1) => {
+  let closure_3;
+  let closure_4;
+  let first;
+  let ref;
+  let str;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  [str, closure_3] = react.useState("");
+  [first, _slicedToArray] = react.useState(() => closure_0);
+  react = react.useRef(false);
+  const items = [arg0];
+  const setSearchQuery = react.useCallback((str) => {
+    let found;
+    str = str.toLowerCase();
+    const trimmed = str.trim();
+    let current = ref.current;
+    const tmp2 = ref;
+    if (!current) {
+      current = "" === trimmed;
     }
-    obj.highestRole = highestRole;
-    return obj;
-  });
-  guild = stateFromStoresObject.guild;
-  const guildEveryoneRole = stateFromStoresObject.guildEveryoneRole;
-  memberCount = stateFromStoresObject.memberCount;
-  const roleMemberCount = stateFromStoresObject.roleMemberCount;
-  sortedGuildRoles = stateFromStoresObject.sortedGuildRoles;
-  rolesOrder = stateFromStoresObject.rolesOrder;
-  currentUserId = stateFromStoresObject.currentUserId;
-  highestRole = stateFromStoresObject.highestRole;
-  closure_129_0 = ref;
-  let obj4 = guildId(504);
-  const guildSettingsRolesManagerState = guildId(17665).useGuildSettingsRolesManagerState((roleJustCreated) => roleJustCreated.roleJustCreated);
-  closure_129_1 = guildSettingsRolesManagerState;
-  let items2 = [ref, guildSettingsRolesManagerState];
-  const layoutEffect = guild.useLayoutEffect(() => {
-    if (closure_1) {
+    if (!current) {
+      tmp2.current = true;
+      const obj = AnalyticsUtilsDefault;
+      obj.track(constants.SEARCH_STARTED, { search_type: "Roles" });
+    }
+    closure_3(trimmed);
+    const tmp8 = closure_4;
+    if ("" === trimmed) {
+      found = closure_0;
+    } else {
+      found = closure_0.filter((name) => {
+        str = name.name;
+        const formatted = str.toLowerCase();
+        return formatted.includes(trimmed);
+      });
+    }
+    tmp8(found);
+  }, items);
+  const items1 = [arg1, str, arg0, setSearchQuery];
+  const effect = react.useEffect(() => {
+    const tmp = closure_1;
+    if (!tmp) {
+      const tmp2 = str;
+      if ("" !== "".trim()) {
+        callback(tmp2);
+      } else {
+        closure_4(closure_0);
+      }
+    }
+  }, items1);
+  let obj = { hasSearchQuery: "" !== str.trim(), filteredRoles: first, setSearchQuery };
+  return obj;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  _require = arg0;
+  let obj = require("react");
+  const cResult = obj.c(5);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function n(roleJustCreated) {
+      return roleJustCreated.roleJustCreated;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  const tmpResult = tmp(17753);
+  const guildSettingsRolesManagerState = tmpResult.useGuildSettingsRolesManagerState(first);
+  if (cResult[1] === arg0) {
+    let tmp6;
+    let tmp7;
+    if (cResult[2] === guildSettingsRolesManagerState) {
+      tmp6 = cResult[3];
+      tmp7 = cResult[4];
+    }
+    const layoutEffect = react.useLayoutEffect(tmp6, tmp7);
+  }
+  const fn2 = function o() {
+    if (guildSettingsRolesManagerState) {
       const _setTimeout = setTimeout;
-      setTimeout(() => {
+      const ref = setTimeout(() => {
         const current = ref.current;
         if (current != null) {
           const _listRef = current._listRef;
@@ -167,510 +339,1300 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
             }
           }
         }
-        guildId(closure_3[19]).setRoleJustCreated(false);
+        const obj = ref(dependencyMap[20]);
+        obj.setRoleJustCreated(false);
       }, 1000);
       return () => {
-        clearTimeout(closure_0);
-        GuildSettingsRolesManager.setRoleJustCreated(false);
+        clearTimeout(ref);
+        const obj = GuildSettingsRolesManager;
+        obj.setRoleJustCreated(false);
       };
     }
-  }, items2);
-  closure_130_0 = guildId;
-  let obj5 = guildId(17665);
-  let items3 = [highestRole, sorting];
-  const stateFromStoresObject1 = guildId(504).useStateFromStoresObject(items3, () => {
-    guild = GuildStore.getGuild(guildId);
-    let result = null != guild;
-    if (result) {
-      result = PermissionStore.canAccessGuildSettings(guild);
+  };
+  const items = [arg0, guildSettingsRolesManagerState];
+  cResult[1] = arg0;
+  cResult[2] = guildSettingsRolesManagerState;
+  cResult[3] = fn2;
+  cResult[4] = items;
+  tmp7 = items;
+  tmp6 = fn2;
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  let obj = require("GuildSettingsRolesManager");
+  const guildSettingsRolesManagerState = obj.useGuildSettingsRolesManagerState((roleJustCreated) => roleJustCreated.roleJustCreated);
+  const items = [arg0, guildSettingsRolesManagerState];
+  const layoutEffect = react.useLayoutEffect(() => {
+    if (guildSettingsRolesManagerState) {
+      const _setTimeout = setTimeout;
+      const ref = setTimeout(() => {
+        const current = ref.current;
+        if (current != null) {
+          const _listRef = current._listRef;
+          if (_listRef != null) {
+            const current2 = _listRef.current;
+            if (current2 != null) {
+              current2.scrollToEnd();
+            }
+          }
+        }
+        const obj = ref(dependencyMap[20]);
+        obj.setRoleJustCreated(false);
+      }, 1000);
+      return () => {
+        clearTimeout(ref);
+        const obj = GuildSettingsRolesManager;
+        obj.setRoleJustCreated(false);
+      };
     }
-    return { canAccessSettings: result, canManageRoles: PermissionStore.can(constants4.MANAGE_ROLES, guild) };
-  });
-  const canAccessSettings = stateFromStoresObject1.canAccessSettings;
-  closure_130_1 = canAccessSettings;
-  const canManageRoles = stateFromStoresObject1.canManageRoles;
-  closure_130_2 = canManageRoles;
-  let items4 = [canManageRoles, canAccessSettings];
-  const effect = guild.useEffect(() => {
-    let tmp = navigation;
-    if (navigation) {
-      tmp = closure_1;
+  }, items);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp7;
+  _require = arg0;
+  let tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(7);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore, PermissionStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function l() {
+      const guild = GuildStore.getGuild(closure_0);
+      const result = null != guild && PermissionStore.canAccessGuildSettings(guild);
+      const obj = { canAccessSettings: result, canManageRoles: PermissionStore.can(constants.MANAGE_ROLES, guild) };
+      return obj;
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp7);
+  const canAccessSettings = stateFromStoresObject.canAccessSettings;
+  const canManageRoles = stateFromStoresObject.canManageRoles;
+  if (cResult[3] === canAccessSettings) {
+    let tmp9;
+    let tmp10;
+    if (cResult[4] === canManageRoles) {
+      tmp9 = cResult[5];
+      tmp10 = cResult[6];
     }
+    const effect = react.useEffect(tmp9, tmp10);
+  }
+  const fn2 = function s() {
+    const tmp = canManageRoles && canAccessSettings;
     if (!tmp) {
-      GuildSettingsModalChannelsActionCreatorsDefault.terminate();
-      GuildSettingsActionCreatorsDefault.close();
+      const obj = GuildSettingsModalChannelsActionCreatorsDefault;
+      obj.terminate();
+      const obj2 = GuildSettingsActionCreatorsDefault;
+      obj2.close();
     }
-  }, items4);
-  let tmp14 = stateFromStores(guild.useState(false), 2);
-  sorting = tmp14[0];
-  closure_14 = tmp14[1];
-  closure_131_0 = sortedGuildRoles;
-  closure_131_1 = sorting;
-  closure_131_4 = undefined;
-  const tmp16 = stateFromStores(guild.useState(""), 2);
-  closure_131_2 = str;
-  closure_131_3 = tmp16[1];
-  let obj6 = guildId(504);
-  [tmp18, closure_131_4] = stateFromStores(guild.useState(() => guildId), 2);
-  closure_131_5 = guild.useRef(false);
-  const items5 = [sortedGuildRoles];
-  const callback = guild.useCallback((str) => {
-    const trimmed = str.toLowerCase().trim();
-    let current = guild.current;
-    if (!current) {
-      current = "" === trimmed;
+  };
+  const items1 = [canManageRoles, canAccessSettings];
+  cResult[3] = canAccessSettings;
+  cResult[4] = canManageRoles;
+  cResult[5] = fn2;
+  cResult[6] = items1;
+  tmp10 = items1;
+  tmp9 = fn2;
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  let obj = require("get initialized");
+  const items = [GuildStore, PermissionStore];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    const guild = GuildStore.getGuild(closure_0);
+    const result = null != guild && PermissionStore.canAccessGuildSettings(guild);
+    const obj = { canAccessSettings: result, canManageRoles: PermissionStore.can(constants.MANAGE_ROLES, guild) };
+    return obj;
+  });
+  const canAccessSettings = stateFromStoresObject.canAccessSettings;
+  const canManageRoles = stateFromStoresObject.canManageRoles;
+  const items1 = [canManageRoles, canAccessSettings];
+  const effect = react.useEffect(() => {
+    const tmp = canManageRoles && canAccessSettings;
+    if (!tmp) {
+      const obj = GuildSettingsModalChannelsActionCreatorsDefault;
+      obj.terminate();
+      const obj2 = GuildSettingsActionCreatorsDefault;
+      obj2.close();
     }
-    if (!current) {
-      guild.current = true;
-      AnalyticsUtilsDefault.track(constants2.SEARCH_STARTED, { search_type: "Roles" });
-    }
-    dependencyMap(trimmed);
-    if ("" === trimmed) {
-      let found = guildId;
-    } else {
-      found = guildId.filter((name) => {
-        const formatted = name.name.toLowerCase();
-        return formatted.includes(trimmed);
-      });
-    }
-    stateFromStores(found);
-  }, items5);
-  closure_131_6 = callback;
-  const items6 = [sorting, tmp16[0], sortedGuildRoles, callback];
-  const effect1 = guild.useEffect(() => {
-    if (!closure_1) {
-      if ("" !== navigation.trim()) {
-        guildEveryoneRole(tmp);
-      } else {
-        stateFromStores(guildId);
+  }, items1);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let closure_11;
+  let currentUserId;
+  let filteredRoles;
+  let first;
+  let first1;
+  let guild;
+  let hasSearchQuery;
+  let highestRole;
+  let length;
+  let memberCount;
+  let onLongPress;
+  let onPress;
+  let onPress2;
+  let onPress3;
+  let rolesOrder;
+  let setSearchQuery;
+  let sortedGuildRoles;
+  let tmp14;
+  let tmp = guildId;
+  const tmp2 = guild;
+  let obj = guildId(guild[18]);
+  const cResult = obj.c(135);
+  guildId = guildId.guildId;
+  const tmp4 = closure_23();
+  let closure_1 = tmp4;
+  let obj2 = memberCount;
+  const ref = memberCount.useRef(null);
+  let obj3 = guildId(guild[24]);
+  navigation = obj3.useNavigation();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [GuildStore, , , , , ];
+    items[1] = first1;
+    items[2] = currentUserId;
+    items[3] = GuildSettingsModalRolesStore;
+    items[4] = setSearchQuery;
+    items[5] = highestRole;
+    let num = 0;
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== guildId) {
+    class R {
+      constructor() {
+        tmp = guildId;
+        guild = closure_11.getGuild(guildId);
+        id = closure_8.getId();
+        obj = { guild, guildEveryoneRole: null, memberCount: null, roleMemberCount: null, sortedGuildRoles: null, rolesOrder: null, currentUserId: null, highestRole: null };
+        everyoneRole = null;
+        if (null != guild) {
+          tmp5 = closure_10;
+          everyoneRole = closure_10.getEveryoneRole(guild);
+        }
+        obj.guildEveryoneRole = everyoneRole;
+        id1 = undefined;
+        tmp6 = closure_9;
+        getMemberCount = closure_9.getMemberCount;
+        if (guild != null) {
+          id1 = guild.id;
+        }
+        num = getMemberCount(id1);
+        if (num == null) {
+          num = 0;
+        }
+        obj.memberCount = num;
+        id2 = undefined;
+        tmp8 = closure_13;
+        getRoleMemberCount = closure_13.getRoleMemberCount;
+        if (guild != null) {
+          id2 = guild.id;
+        }
+        obj.roleMemberCount = getRoleMemberCount(id2);
+        obj.sortedGuildRoles = closure_10.getSortedRoles(tmp);
+        obj.rolesOrder = closure_14.order;
+        obj.currentUserId = id;
+        highestRole = undefined;
+        if (null != guild) {
+          tmp11 = closure_2;
+          tmp12 = closure_3;
+          obj2 = closure_2(closure_3[25]);
+          highestRole = obj2.getHighestRole(guild, id);
+        }
+        obj.highestRole = highestRole;
+        return obj;
       }
-      tmp = navigation;
     }
-  }, items6);
-  const tmp21 = "" !== tmp16[0].trim();
-  c15 = tmp18;
-  constants = tmp21;
-  let tmp17 = stateFromStores(guild.useState(() => guildId), 2);
-  const items7 = [currentUserId];
-  const stateFromStoresArray = guildId(504).useStateFromStoresArray(items7, () => {
+    cResult[1] = guildId;
+    cResult[2] = R;
+    tmp14 = R;
+  } else {
+    class R {
+      constructor() {
+        tmp = guildId;
+        guild = closure_11.getGuild(guildId);
+        id = closure_8.getId();
+        obj = { guild, guildEveryoneRole: null, memberCount: null, roleMemberCount: null, sortedGuildRoles: null, rolesOrder: null, currentUserId: null, highestRole: null };
+        everyoneRole = null;
+        if (null != guild) {
+          tmp5 = closure_10;
+          everyoneRole = closure_10.getEveryoneRole(guild);
+        }
+        obj.guildEveryoneRole = everyoneRole;
+        id1 = undefined;
+        tmp6 = closure_9;
+        getMemberCount = closure_9.getMemberCount;
+        if (guild != null) {
+          id1 = guild.id;
+        }
+        num = getMemberCount(id1);
+        if (num == null) {
+          num = 0;
+        }
+        obj.memberCount = num;
+        id2 = undefined;
+        tmp8 = closure_13;
+        getRoleMemberCount = closure_13.getRoleMemberCount;
+        if (guild != null) {
+          id2 = guild.id;
+        }
+        obj.roleMemberCount = getRoleMemberCount(id2);
+        obj.sortedGuildRoles = closure_10.getSortedRoles(tmp);
+        obj.rolesOrder = closure_14.order;
+        obj.currentUserId = id;
+        highestRole = undefined;
+        if (null != guild) {
+          tmp11 = closure_2;
+          tmp12 = closure_3;
+          obj2 = closure_2(closure_3[25]);
+          highestRole = obj2.getHighestRole(guild, id);
+        }
+        obj.highestRole = highestRole;
+        return obj;
+      }
+    }
+  }
+  let tmpResult = tmp(tmp2[21]);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp14);
+  guild = stateFromStoresObject.guild;
+  const guildEveryoneRole = stateFromStoresObject.guildEveryoneRole;
+  memberCount = stateFromStoresObject.memberCount;
+  const roleMemberCount = stateFromStoresObject.roleMemberCount;
+  ({ sortedGuildRoles, rolesOrder } = stateFromStoresObject);
+  currentUserId = stateFromStoresObject.currentUserId;
+  highestRole = stateFromStoresObject.highestRole;
+  closure_25(ref);
+  closure_26(guildId);
+  const tmp18 = guildEveryoneRole(obj2.useState(false), 2);
+  first1 = tmp18[0];
+  GuildStore = tmp18[1];
+  const tmp20 = closure_24(sortedGuildRoles, first1);
+  ({ filteredRoles, hasSearchQuery } = tmp20);
+  setSearchQuery = tmp20.setSearchQuery;
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class R {
+      constructor() {
+        tmp = guildId;
+        guild = closure_11.getGuild(guildId);
+        id = closure_8.getId();
+        obj = { guild, guildEveryoneRole: null, memberCount: null, roleMemberCount: null, sortedGuildRoles: null, rolesOrder: null, currentUserId: null, highestRole: null };
+        everyoneRole = null;
+        if (null != guild) {
+          tmp5 = closure_10;
+          everyoneRole = closure_10.getEveryoneRole(guild);
+        }
+        obj.guildEveryoneRole = everyoneRole;
+        id1 = undefined;
+        tmp6 = closure_9;
+        getMemberCount = closure_9.getMemberCount;
+        if (guild != null) {
+          id1 = guild.id;
+        }
+        num = getMemberCount(id1);
+        if (num == null) {
+          num = 0;
+        }
+        obj.memberCount = num;
+        id2 = undefined;
+        tmp8 = closure_13;
+        getRoleMemberCount = closure_13.getRoleMemberCount;
+        if (guild != null) {
+          id2 = guild.id;
+        }
+        obj.roleMemberCount = getRoleMemberCount(id2);
+        obj.sortedGuildRoles = closure_10.getSortedRoles(tmp);
+        obj.rolesOrder = closure_14.order;
+        obj.currentUserId = id;
+        highestRole = undefined;
+        if (null != guild) {
+          tmp11 = closure_2;
+          tmp12 = closure_3;
+          obj2 = closure_2(closure_3[25]);
+          highestRole = obj2.getHighestRole(guild, id);
+        }
+        obj.highestRole = highestRole;
+        return obj;
+      }
+    }
+    let items1 = [first1];
+    cResult[3] = items1;
+  } else {
+    class R {
+      constructor() {
+        tmp = guildId;
+        guild = closure_11.getGuild(guildId);
+        id = closure_8.getId();
+        obj = { guild, guildEveryoneRole: null, memberCount: null, roleMemberCount: null, sortedGuildRoles: null, rolesOrder: null, currentUserId: null, highestRole: null };
+        everyoneRole = null;
+        if (null != guild) {
+          tmp5 = closure_10;
+          everyoneRole = closure_10.getEveryoneRole(guild);
+        }
+        obj.guildEveryoneRole = everyoneRole;
+        id1 = undefined;
+        tmp6 = closure_9;
+        getMemberCount = closure_9.getMemberCount;
+        if (guild != null) {
+          id1 = guild.id;
+        }
+        num = getMemberCount(id1);
+        if (num == null) {
+          num = 0;
+        }
+        obj.memberCount = num;
+        id2 = undefined;
+        tmp8 = closure_13;
+        getRoleMemberCount = closure_13.getRoleMemberCount;
+        if (guild != null) {
+          id2 = guild.id;
+        }
+        obj.roleMemberCount = getRoleMemberCount(id2);
+        obj.sortedGuildRoles = closure_10.getSortedRoles(tmp);
+        obj.rolesOrder = closure_14.order;
+        obj.currentUserId = id;
+        highestRole = undefined;
+        if (null != guild) {
+          tmp11 = closure_2;
+          tmp12 = closure_3;
+          obj2 = closure_2(closure_3[25]);
+          highestRole = obj2.getHighestRole(guild, id);
+        }
+        obj.highestRole = highestRole;
+        return obj;
+      }
+    }
+  }
+  if (cResult[4] === guildId) {
+    let tmp25;
+    let tmp27;
+    class R {
+      constructor() {
+        tmp = guildId;
+        guild = closure_11.getGuild(guildId);
+        id = closure_8.getId();
+        obj = { guild, guildEveryoneRole: null, memberCount: null, roleMemberCount: null, sortedGuildRoles: null, rolesOrder: null, currentUserId: null, highestRole: null };
+        everyoneRole = null;
+        if (null != guild) {
+          tmp5 = closure_10;
+          everyoneRole = closure_10.getEveryoneRole(guild);
+        }
+        obj.guildEveryoneRole = everyoneRole;
+        id1 = undefined;
+        tmp6 = closure_9;
+        getMemberCount = closure_9.getMemberCount;
+        if (guild != null) {
+          id1 = guild.id;
+        }
+        num = getMemberCount(id1);
+        if (num == null) {
+          num = 0;
+        }
+        obj.memberCount = num;
+        id2 = undefined;
+        tmp8 = closure_13;
+        getRoleMemberCount = closure_13.getRoleMemberCount;
+        if (guild != null) {
+          id2 = guild.id;
+        }
+        obj.roleMemberCount = getRoleMemberCount(id2);
+        obj.sortedGuildRoles = closure_10.getSortedRoles(tmp);
+        obj.rolesOrder = closure_14.order;
+        obj.currentUserId = id;
+        highestRole = undefined;
+        if (null != guild) {
+          tmp11 = closure_2;
+          tmp12 = closure_3;
+          obj2 = closure_2(closure_3[25]);
+          highestRole = obj2.getHighestRole(guild, id);
+        }
+        obj.highestRole = highestRole;
+        return obj;
+      }
+    }
+    tmp(tmp2[21]);
     if (null != rolesOrder) {
-      let manyRoles = GuildRoleStore.getManyRoles(guildId, tmp);
+      class R {
+        constructor() {
+          tmp = guildId;
+          guild = closure_11.getGuild(guildId);
+          id = closure_8.getId();
+          obj = { guild, guildEveryoneRole: null, memberCount: null, roleMemberCount: null, sortedGuildRoles: null, rolesOrder: null, currentUserId: null, highestRole: null };
+          everyoneRole = null;
+          if (null != guild) {
+            tmp5 = closure_10;
+            everyoneRole = closure_10.getEveryoneRole(guild);
+          }
+          obj.guildEveryoneRole = everyoneRole;
+          id1 = undefined;
+          tmp6 = closure_9;
+          getMemberCount = closure_9.getMemberCount;
+          if (guild != null) {
+            id1 = guild.id;
+          }
+          num = getMemberCount(id1);
+          if (num == null) {
+            num = 0;
+          }
+          obj.memberCount = num;
+          id2 = undefined;
+          tmp8 = closure_13;
+          getRoleMemberCount = closure_13.getRoleMemberCount;
+          if (guild != null) {
+            id2 = guild.id;
+          }
+          obj.roleMemberCount = getRoleMemberCount(id2);
+          obj.sortedGuildRoles = closure_10.getSortedRoles(tmp);
+          obj.rolesOrder = closure_14.order;
+          obj.currentUserId = id;
+          highestRole = undefined;
+          if (null != guild) {
+            tmp11 = closure_2;
+            tmp12 = closure_3;
+            obj2 = closure_2(closure_3[25]);
+            highestRole = obj2.getHighestRole(guild, id);
+          }
+          obj.highestRole = highestRole;
+          return obj;
+        }
+      }
+    }
+    if (cResult[7] === currentUserId) {
+      class R {
+        constructor() {
+          tmp = guildId;
+          guild = closure_11.getGuild(guildId);
+          id = closure_8.getId();
+          obj = { guild, guildEveryoneRole: null, memberCount: null, roleMemberCount: null, sortedGuildRoles: null, rolesOrder: null, currentUserId: null, highestRole: null };
+          everyoneRole = null;
+          if (null != guild) {
+            tmp5 = closure_10;
+            everyoneRole = closure_10.getEveryoneRole(guild);
+          }
+          obj.guildEveryoneRole = everyoneRole;
+          id1 = undefined;
+          tmp6 = closure_9;
+          getMemberCount = closure_9.getMemberCount;
+          if (guild != null) {
+            id1 = guild.id;
+          }
+          num = getMemberCount(id1);
+          if (num == null) {
+            num = 0;
+          }
+          obj.memberCount = num;
+          id2 = undefined;
+          tmp8 = closure_13;
+          getRoleMemberCount = closure_13.getRoleMemberCount;
+          if (guild != null) {
+            id2 = guild.id;
+          }
+          obj.roleMemberCount = getRoleMemberCount(id2);
+          obj.sortedGuildRoles = closure_10.getSortedRoles(tmp);
+          obj.rolesOrder = closure_14.order;
+          obj.currentUserId = id;
+          highestRole = undefined;
+          if (null != guild) {
+            tmp11 = closure_2;
+            tmp12 = closure_3;
+            obj2 = closure_2(closure_3[25]);
+            highestRole = obj2.getHighestRole(guild, id);
+          }
+          obj.highestRole = highestRole;
+          return obj;
+        }
+      }
+    }
+    const _Symbol = Symbol;
+    if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+      class R {
+        constructor() {
+          tmp = guildId;
+          guild = closure_11.getGuild(guildId);
+          id = closure_8.getId();
+          obj = { guild, guildEveryoneRole: null, memberCount: null, roleMemberCount: null, sortedGuildRoles: null, rolesOrder: null, currentUserId: null, highestRole: null };
+          everyoneRole = null;
+          if (null != guild) {
+            tmp5 = closure_10;
+            everyoneRole = closure_10.getEveryoneRole(guild);
+          }
+          obj.guildEveryoneRole = everyoneRole;
+          id1 = undefined;
+          tmp6 = closure_9;
+          getMemberCount = closure_9.getMemberCount;
+          if (guild != null) {
+            id1 = guild.id;
+          }
+          num = getMemberCount(id1);
+          if (num == null) {
+            num = 0;
+          }
+          obj.memberCount = num;
+          id2 = undefined;
+          tmp8 = closure_13;
+          getRoleMemberCount = closure_13.getRoleMemberCount;
+          if (guild != null) {
+            id2 = guild.id;
+          }
+          obj.roleMemberCount = getRoleMemberCount(id2);
+          obj.sortedGuildRoles = closure_10.getSortedRoles(tmp);
+          obj.rolesOrder = closure_14.order;
+          obj.currentUserId = id;
+          highestRole = undefined;
+          if (null != guild) {
+            tmp11 = closure_2;
+            tmp12 = closure_3;
+            obj2 = closure_2(closure_3[25]);
+            highestRole = obj2.getHighestRole(guild, id);
+          }
+          obj.highestRole = highestRole;
+          return obj;
+        }
+      }
+      cResult[14] = tmp26;
+      tmp25 = tmp26;
+    } else {
+      class R {
+        constructor() {
+          tmp = guildId;
+          guild = closure_11.getGuild(guildId);
+          id = closure_8.getId();
+          obj = { guild, guildEveryoneRole: null, memberCount: null, roleMemberCount: null, sortedGuildRoles: null, rolesOrder: null, currentUserId: null, highestRole: null };
+          everyoneRole = null;
+          if (null != guild) {
+            tmp5 = closure_10;
+            everyoneRole = closure_10.getEveryoneRole(guild);
+          }
+          obj.guildEveryoneRole = everyoneRole;
+          id1 = undefined;
+          tmp6 = closure_9;
+          getMemberCount = closure_9.getMemberCount;
+          if (guild != null) {
+            id1 = guild.id;
+          }
+          num = getMemberCount(id1);
+          if (num == null) {
+            num = 0;
+          }
+          obj.memberCount = num;
+          id2 = undefined;
+          tmp8 = closure_13;
+          getRoleMemberCount = closure_13.getRoleMemberCount;
+          if (guild != null) {
+            id2 = guild.id;
+          }
+          obj.roleMemberCount = getRoleMemberCount(id2);
+          obj.sortedGuildRoles = closure_10.getSortedRoles(tmp);
+          obj.rolesOrder = closure_14.order;
+          obj.currentUserId = id;
+          highestRole = undefined;
+          if (null != guild) {
+            tmp11 = closure_2;
+            tmp12 = closure_3;
+            obj2 = closure_2(closure_3[25]);
+            highestRole = obj2.getHighestRole(guild, id);
+          }
+          obj.highestRole = highestRole;
+          return obj;
+        }
+      }
+    }
+    if (cResult[15] !== roleMemberCount) {
+      class R {
+        constructor() {
+          tmp = guildId;
+          guild = closure_11.getGuild(guildId);
+          id = closure_8.getId();
+          obj = { guild, guildEveryoneRole: null, memberCount: null, roleMemberCount: null, sortedGuildRoles: null, rolesOrder: null, currentUserId: null, highestRole: null };
+          everyoneRole = null;
+          if (null != guild) {
+            tmp5 = closure_10;
+            everyoneRole = closure_10.getEveryoneRole(guild);
+          }
+          obj.guildEveryoneRole = everyoneRole;
+          id1 = undefined;
+          tmp6 = closure_9;
+          getMemberCount = closure_9.getMemberCount;
+          if (guild != null) {
+            id1 = guild.id;
+          }
+          num = getMemberCount(id1);
+          if (num == null) {
+            num = 0;
+          }
+          obj.memberCount = num;
+          id2 = undefined;
+          tmp8 = closure_13;
+          getRoleMemberCount = closure_13.getRoleMemberCount;
+          if (guild != null) {
+            id2 = guild.id;
+          }
+          obj.roleMemberCount = getRoleMemberCount(id2);
+          obj.sortedGuildRoles = closure_10.getSortedRoles(tmp);
+          obj.rolesOrder = closure_14.order;
+          obj.currentUserId = id;
+          highestRole = undefined;
+          if (null != guild) {
+            tmp11 = closure_2;
+            tmp12 = closure_3;
+            obj2 = closure_2(closure_3[25]);
+            highestRole = obj2.getHighestRole(guild, id);
+          }
+          obj.highestRole = highestRole;
+          return obj;
+        }
+      }
+      cResult[15] = roleMemberCount;
+      cResult[16] = tmp28;
+      tmp27 = tmp28;
+    } else {
+      class R {
+        constructor() {
+          tmp = guildId;
+          guild = closure_11.getGuild(guildId);
+          id = closure_8.getId();
+          obj = { guild, guildEveryoneRole: null, memberCount: null, roleMemberCount: null, sortedGuildRoles: null, rolesOrder: null, currentUserId: null, highestRole: null };
+          everyoneRole = null;
+          if (null != guild) {
+            tmp5 = closure_10;
+            everyoneRole = closure_10.getEveryoneRole(guild);
+          }
+          obj.guildEveryoneRole = everyoneRole;
+          id1 = undefined;
+          tmp6 = closure_9;
+          getMemberCount = closure_9.getMemberCount;
+          if (guild != null) {
+            id1 = guild.id;
+          }
+          num = getMemberCount(id1);
+          if (num == null) {
+            num = 0;
+          }
+          obj.memberCount = num;
+          id2 = undefined;
+          tmp8 = closure_13;
+          getRoleMemberCount = closure_13.getRoleMemberCount;
+          if (guild != null) {
+            id2 = guild.id;
+          }
+          obj.roleMemberCount = getRoleMemberCount(id2);
+          obj.sortedGuildRoles = closure_10.getSortedRoles(tmp);
+          obj.rolesOrder = closure_14.order;
+          obj.currentUserId = id;
+          highestRole = undefined;
+          if (null != guild) {
+            tmp11 = closure_2;
+            tmp12 = closure_3;
+            obj2 = closure_2(closure_3[25]);
+            highestRole = obj2.getHighestRole(guild, id);
+          }
+          obj.highestRole = highestRole;
+          return obj;
+        }
+      }
+    }
+    const found = filteredRoles.filter(tmp25);
+    const mapped = found.map(tmp27);
+    if (null != guild) {
+      class R {
+        constructor() {
+          tmp = guildId;
+          guild = closure_11.getGuild(guildId);
+          id = closure_8.getId();
+          obj = { guild, guildEveryoneRole: null, memberCount: null, roleMemberCount: null, sortedGuildRoles: null, rolesOrder: null, currentUserId: null, highestRole: null };
+          everyoneRole = null;
+          if (null != guild) {
+            tmp5 = closure_10;
+            everyoneRole = closure_10.getEveryoneRole(guild);
+          }
+          obj.guildEveryoneRole = everyoneRole;
+          id1 = undefined;
+          tmp6 = closure_9;
+          getMemberCount = closure_9.getMemberCount;
+          if (guild != null) {
+            id1 = guild.id;
+          }
+          num = getMemberCount(id1);
+          if (num == null) {
+            num = 0;
+          }
+          obj.memberCount = num;
+          id2 = undefined;
+          tmp8 = closure_13;
+          getRoleMemberCount = closure_13.getRoleMemberCount;
+          if (guild != null) {
+            id2 = guild.id;
+          }
+          obj.roleMemberCount = getRoleMemberCount(id2);
+          obj.sortedGuildRoles = closure_10.getSortedRoles(tmp);
+          obj.rolesOrder = closure_14.order;
+          obj.currentUserId = id;
+          highestRole = undefined;
+          if (null != guild) {
+            tmp11 = closure_2;
+            tmp12 = closure_3;
+            obj2 = closure_2(closure_3[25]);
+            highestRole = obj2.getHighestRole(guild, id);
+          }
+          obj.highestRole = highestRole;
+          return obj;
+        }
+      }
+    }
+    cResult[7] = currentUserId;
+    cResult[8] = guild;
+    cResult[9] = highestRole;
+    cResult[10] = filteredRoles;
+    cResult[11] = roleMemberCount;
+    cResult[12] = mapped;
+    cResult[13] = 0;
+    let tmp24 = num8;
+  }
+  class W {
+    constructor() {
+      if (null != rolesOrder) {
+        tmp2 = closure_10;
+        tmp3 = guildId;
+        manyRoles = closure_10.getManyRoles(guildId, tmp);
+      } else {
+        manyRoles = [];
+      }
+      return manyRoles;
+    }
+  }
+  cResult[4] = guildId;
+  cResult[5] = rolesOrder;
+  cResult[6] = W;
+}) : ((guildId) => {
+  let Icon;
+  let Text;
+  let closure_1;
+  let intl;
+  let items21;
+  let obj12;
+  let obj6;
+  let obj8;
+  let obj9;
+  let tmp32Result2;
+  let tmp42;
+  let tmp47;
+  guildId = guildId.guildId;
+  let guild;
+  let memberCount;
+  let rolesOrder;
+  let currentUserId;
+  let highestRole;
+  let sorting;
+  let filteredRoles;
+  let hasSearchQuery;
+  let closure_20;
+  let callback1;
+  let callback2;
+  let callback3;
+  let callback4;
+  let callback5;
+  let callback6;
+  const contentContainerStyle = guildId.contentContainerStyle;
+  let tmp = callback3();
+  importDefault = tmp;
+  let obj = memberCount;
+  const ref = memberCount.useRef(null);
+  let tmp3 = guildId;
+  const tmp4 = guild;
+  let obj2 = guildId(guild[24]);
+  navigation = obj2.useNavigation();
+  let obj3 = guildId(guild[21]);
+  let items = [sorting, highestRole, rolesOrder, hasSearchQuery, filteredRoles, currentUserId];
+  const stateFromStoresObject = obj3.useStateFromStoresObject(items, () => {
+    let everyoneRole;
+    let getRoleMemberCount;
+    let id2;
+    let num;
+    let tmp;
+    guild = GuildStore.getGuild(guildId);
+    const id = AuthenticationStore.getId();
+    const obj = { guild, guildEveryoneRole: everyoneRole, memberCount: num, roleMemberCount: getRoleMemberCount(id2), sortedGuildRoles: GuildRoleStore.getSortedRoles(tmp), rolesOrder: GuildSettingsModalRolesStore.order, currentUserId: id, highestRole };
+    everyoneRole = null;
+    tmp = guildId;
+    if (null != guild) {
+      everyoneRole = GuildRoleStore.getEveryoneRole(guild);
+    }
+    let id1;
+    const getMemberCount = GuildMemberCountStore.getMemberCount;
+    if (guild != null) {
+      id1 = guild.id;
+    }
+    num = getMemberCount(id1);
+    if (num == null) {
+      num = 0;
+    }
+    id2 = undefined;
+    getRoleMemberCount = GuildRoleMemberCountStore.getRoleMemberCount;
+    if (guild != null) {
+      id2 = guild.id;
+    }
+    highestRole = undefined;
+    if (null != guild) {
+      const obj2 = PermissionUtilsAll;
+      highestRole = obj2.getHighestRole(guild, id);
+    }
+    return obj;
+  });
+  guild = stateFromStoresObject.guild;
+  const guildEveryoneRole = stateFromStoresObject.guildEveryoneRole;
+  memberCount = stateFromStoresObject.memberCount;
+  const roleMemberCount = stateFromStoresObject.roleMemberCount;
+  const sortedGuildRoles = stateFromStoresObject.sortedGuildRoles;
+  rolesOrder = stateFromStoresObject.rolesOrder;
+  currentUserId = stateFromStoresObject.currentUserId;
+  highestRole = stateFromStoresObject.highestRole;
+  const tmp7 = callback5(ref);
+  callback6(guildId);
+  const tmp9 = guildEveryoneRole(memberCount.useState(false), 2);
+  sorting = tmp9[0];
+  closure_12 = tmp9[1];
+  const tmp11 = callback4(sortedGuildRoles, sorting);
+  filteredRoles = tmp11.filteredRoles;
+  hasSearchQuery = tmp11.hasSearchQuery;
+  const setSearchQuery = tmp11.setSearchQuery;
+  let obj4 = guildId(guild[21]);
+  let items1 = [highestRole];
+  const stateFromStoresArray = obj4.useStateFromStoresArray(items1, () => {
+    let manyRoles;
+    if (null != rolesOrder) {
+      manyRoles = GuildRoleStore.getManyRoles(guildId, tmp);
     } else {
       manyRoles = [];
     }
     return manyRoles;
   });
-  const items8 = [sortedGuildRoles, stateFromStoresArray, rolesOrder, roleMemberCount, tmp18, guild, currentUserId, highestRole];
-  const memo = guild.useMemo(() => {
-    const found = null != rolesOrder ? stateFromStoresArray : c15.filter((item) => !roleMemberCount(item));
+  let items2 = [sortedGuildRoles, stateFromStoresArray, rolesOrder, roleMemberCount, filteredRoles, guild, currentUserId, highestRole];
+  const memo = memberCount.useMemo(() => {
+    const arr = null != rolesOrder ? stateFromStoresArray : filteredRoles;
+    const found = arr.filter((item) => !sortedGuildRoles(item));
     const mapped = found.map((role) => {
-      const obj = { role, memberCount: null };
       let num;
+      const obj = { role, memberCount: num };
+      num = undefined;
       if (roleMemberCount != null) {
         num = tmp[role.id];
       }
       if (num == null) {
         num = 0;
       }
-      obj.memberCount = num;
       return obj;
     });
     let num = 0;
     if (null != guild) {
-      num = mapped.findIndex((role) => navigation(closure_3[25]).isRoleHigher(guild, currentUserId, highestRole, role.role));
+      num = mapped.findIndex((role) => {
+        const obj = navigation(guild[25]);
+        return obj.isRoleHigher(closure_1_3, currentUserId, highestRole, role.role);
+      });
     }
     const diff = sortedGuildRoles.length - 1;
-    return { roleData: mapped, firstEditableIndex: num, numSortableRoles: diff, hasRoles: diff > 0 };
-  }, items8);
+    let obj = { roleData: mapped, firstEditableIndex: num, numSortableRoles: diff, hasRoles: diff > 0 };
+    return obj;
+  }, items2);
   const roleData = memo.roleData;
   const firstEditableIndex = memo.firstEditableIndex;
   const hasRoles = memo.hasRoles;
-  let tmp25 = sorting;
-  if (!sorting) {
-    tmp25 = tmp24 < 10;
+  let tmp15 = sorting;
+  if (!tmp15) {
+    let num = 10;
+    tmp15 = tmp14 < 10;
   }
-  closure_22 = tmp25;
-  const items9 = [callback];
-  const items10 = [guild];
-  const callback1 = obj.useCallback((str) => {
-    callback(str.toLowerCase());
-  }, items9);
-  callback2 = obj.useCallback(() => {
-    const obj = AnalyticsUtilsDefault;
-    const obj2 = { type: constants3.GUILD_ROLE_CREATION_MODAL };
+  closure_20 = tmp15;
+  let items3 = [setSearchQuery];
+  const items4 = [guild];
+  const callback = obj.useCallback((str) => {
+    setSearchQuery(str.toLowerCase());
+  }, items3);
+  callback1 = obj.useCallback(() => {
+    const track = AnalyticsUtilsDefault.track;
+    const OPEN_MODAL = roleData.OPEN_MODAL;
+    const obj = { type: firstEditableIndex.GUILD_ROLE_CREATION_MODAL };
+    AnalyticsUtilsDefault;
     let id;
+    const collectGuildAnalyticsMetadata = AppAnalyticsUtils.collectGuildAnalyticsMetadata;
+    AppAnalyticsUtils;
     if (guild != null) {
       id = guild.id;
     }
-    const merged = Object.assign(AppAnalyticsUtils.collectGuildAnalyticsMetadata(id));
-    obj.track(constants2.OPEN_MODAL, obj2);
-    GuildSettingsRoleCreateModalActionCreatorsDefault.open();
-  }, items10);
-  const items11 = [navigation];
-  callback3 = obj.useCallback((role) => {
+    const merged = Object.assign(collectGuildAnalyticsMetadata(id));
+    track(OPEN_MODAL, obj);
+    const tmpResult = GuildSettingsRoleCreateModalActionCreatorsDefault;
+    tmpResult.open();
+  }, items4);
+  const items5 = [navigation];
+  callback2 = obj.useCallback((role) => {
     let flag = arg1;
     if (arg1 === undefined) {
       flag = false;
     }
-    navigation.push(constants.ROLE_EDIT_REFRESH, { role, newRole: flag, section: constants.DISPLAY });
-  }, items11);
-  const items12 = [callback];
+    const obj = { role, newRole: flag, section: setSearchQuery.DISPLAY };
+    navigation.push(stateFromStoresArray.ROLE_EDIT_REFRESH, obj);
+  }, items5);
+  const items6 = [setSearchQuery];
+  callback3 = obj.useCallback(() => {
+    closure_12(true);
+    setSearchQuery("");
+  }, items6);
+  const items7 = [setSearchQuery];
   callback4 = obj.useCallback(() => {
-    closure_14(true);
-    callback("");
-  }, items12);
-  const items13 = [callback];
+    setSearchQuery("");
+    closure_12((arg0) => !arg0);
+  }, items7);
+  const items8 = [guild, callback4];
   callback5 = obj.useCallback(() => {
-    callback("");
-    closure_14((arg0) => !arg0);
-  }, items13);
-  const items14 = [guild, callback5];
-  callback6 = obj.useCallback(() => {
     const updates = GuildSettingsModalRolesStore.getUpdates();
-    let tmp = updates.length > 0;
+    const tmp = updates.length > 0 && null != guild;
     if (tmp) {
-      tmp = null != guild;
+      const obj = actions_GuildActionCreators;
+      obj.batchRoleUpdate(guild.id, updates);
     }
-    if (tmp) {
-      actions_GuildActionCreators.batchRoleUpdate(guild.id, updates);
-    }
-    callback5();
-  }, items14);
-  const items15 = [firstEditableIndex];
-  callback7 = obj.useCallback((to) => {
+    callback4();
+  }, items8);
+  const items9 = [firstEditableIndex];
+  callback6 = obj.useCallback((to) => {
     if (firstEditableIndex >= 0) {
       const _Math = Math;
       to = Math.max(to.to, tmp);
     } else {
       to = to.to;
     }
-    GuildSettingsModalRolesActionCreatorsDefault.updateRoleOrder(to.from, to);
-  }, items15);
-  const items16 = [tmp, roleData, tmp21, sorting, callback5];
-  const callback8 = obj.useCallback(() => {
+    const obj = GuildSettingsModalRolesActionCreatorsDefault;
+    obj.updateRoleOrder(to.from, to);
+  }, items9);
+  const items10 = [tmp, roleData, hasSearchQuery, sorting, callback4];
+  const callback7 = obj.useCallback(() => {
+    let formatToPlainString;
+    let intl2;
+    let intl3;
+    let intl4;
+    let items1;
+    let items2;
+    let obj3;
+    let v38N3Vz;
     const items = [closure_1.rolesHeader, ];
     let edittingRolesHeader;
     if (first) {
       edittingRolesHeader = tmp3.edittingRolesHeader;
     }
-    const obj = { style: items, children: null };
+    const obj = { style: items, children: items1 };
     items[1] = edittingRolesHeader;
-    const obj2 = { title: null };
-    const intl = util.intl;
-    obj2.title = intl.formatToPlainString(util.t["38N3Vz"], { numRoles: "" + roleData.length });
-    const items1 = [__initData(TableRowGroup.TableRowGroupTitle, obj2), ];
+    const obj2 = { title: formatToPlainString(v38N3Vz, obj3) };
+    const TableRowGroupTitle = TableRowGroup.TableRowGroupTitle;
+    const intl = intl5.intl;
+    formatToPlainString = intl.formatToPlainString;
+    obj3 = { numRoles: "" + roleData.length };
+    v38N3Vz = intl5.t["38N3Vz"];
+    items1 = [closure_20(TableRowGroupTitle, obj2), ];
     let tmpResult = null;
     if (!first) {
       tmpResult = null;
-      if (!closure_16) {
-        const obj4 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
-        const intl2 = tmp7(1115).intl;
-        obj4.accessibilityLabel = intl2.string(tmp7(1115).t["0dOFq+"]);
-        obj4.onPress = callback5;
-        obj4.style = tmp3.reorderButton;
+      if (!hasSearchQuery) {
+        const obj4 = { accessibilityRole: "button", accessibilityLabel: intl2.string(intl5.t["0dOFq+"]), onPress: callback4, style: closure_1.reorderButton, children: items2 };
+        const PressableOpacity = tmp7(5909).PressableOpacity;
+        intl2 = tmp7(1126).intl;
         const obj5 = { color: nativeDefault.colors.TEXT_LINK, size: "sm" };
-        const items2 = [tmp6(tmp7(11844).ArrowsUpDownIcon, obj5), ];
-        const obj6 = { style: tmp3.reorderButtonText, variant: "text-sm/medium", color: "text-link", children: null };
-        const intl3 = tmp7(1115).intl;
-        obj6.children = intl3.string(tmp7(1115).t["0dOFq+"]);
-        items2[1] = tmp6(tmp7(4841).Text, obj6);
-        obj4.children = items2;
-        tmpResult = tmp(tmp7(5621).PressableOpacity, obj4);
+        const ArrowsUpDownIcon = tmp7(11775).ArrowsUpDownIcon;
+        items2 = [closure_20(ArrowsUpDownIcon, obj5), ];
+        const obj6 = { style: closure_1.reorderButtonText, variant: "text-sm/medium", color: "text-link", children: intl3.string(intl5.t["0dOFq+"]) };
+        const Text = tmp7(4886).Text;
+        intl3 = tmp7(1126).intl;
+        items2[1] = closure_20(Text, obj6);
+        tmpResult = tmp(PressableOpacity, obj4);
       }
     }
     items1[1] = tmpResult;
-    obj.children = items1;
-    const children = [__initData2(timestampProducer, obj), ];
+    const children = [callback1(metroRequire, obj), ];
     let tmp6Result = null;
     if (first) {
-      const obj7 = { style: tmp3.rolesBody, variant: "text-sm/medium", color: "interactive-text-default", children: null };
-      const intl4 = tmp7(1115).intl;
-      obj7.children = intl4.string(tmp7(1115).t.nHcwVl);
-      tmp6Result = tmp6(tmp7(4841).Text, obj7);
+      const obj7 = { style: closure_1.rolesBody, variant: "text-sm/medium", color: "interactive-text-default", children: intl4.string(intl5.t.nHcwVl) };
+      const Text2 = tmp7(4886).Text;
+      intl4 = tmp7(1126).intl;
+      tmp6Result = tmp6(Text2, obj7);
     }
     children[1] = tmp6Result;
-    return __initData2(timestampProducer, { children });
-  }, items16);
-  const items17 = [tmp, callback2, hasRoles, stateFromStores, tmp7, tmp25];
-  const items18 = [tmp, callback3, guild, currentUserId, highestRole, guildEveryoneRole];
-  const callback9 = obj.useCallback(() => {
-    const isThemeDarkResult = shared.isThemeDark(stateFromStores);
-    let tmp4 = dependencyMap;
-    if (closure_3) {
-      if (isThemeDarkResult) {
-        tmp4 = 17677;
-        let tmp3Result = tmp3(tmp4);
-      } else {
-        tmp3Result = tmp3(17678);
+    return callback1(metroRequire, { children });
+  }, items10);
+  const items11 = [tmp, callback1, hasRoles, tmp15];
+  const items12 = [tmp, callback2, guild, currentUserId, highestRole, guildEveryoneRole];
+  const callback8 = obj.useCallback(() => {
+    let Button;
+    let Text2;
+    let intl;
+    let intl2;
+    let intl3;
+    let intl4;
+    let items1;
+    let items2;
+    let items3;
+    let obj12;
+    let obj5;
+    let tmpResult;
+    if (hasRoles) {
+      const items = [closure_1.subheaderContainer, ];
+      let num = 0;
+      const tmp38 = afk;
+      const tmp39 = closure_20;
+      const tmp40 = metroRequire;
+      if (closure_20) {
+        num = nativeDefault.space.PX_16;
       }
+      const obj2 = { children: items1 };
+      const obj4 = { paddingTop: num };
+      items[1] = obj4;
+      const obj3 = { style: items, children: closure_20(Text2, obj5) };
+      obj5 = { style: closure_1.subheaderDescription, variant: "text-sm/medium", color: "interactive-text-default", children: intl4.string(intl5.t["1ydhVp"]) };
+      Text2 = Text_Text.Text;
+      intl4 = intl5.intl;
+      items1 = [tmp39(tmp40, obj3), ];
+      const obj6 = { style: closure_1.divider };
+      items1[1] = closure_20(metroRequire, obj6);
+      tmpResult = tmp(tmp38, obj2);
     } else {
-      if (isThemeDarkResult) {
-        let tmp3Result2 = tmp3(17679);
-      } else {
-        tmp3Result2 = tmp3(17680);
-      }
-      if (hasRoles) {
-        const items = [closure_1.subheaderContainer, ];
-        let num = 0;
-        if (closure_22) {
-          num = nativeDefault.space.PX_16;
-        }
-        const obj2 = { children: null };
-        const obj3 = { style: null, children: null };
-        const obj4 = { paddingTop: num };
-        items[1] = obj4;
-        obj3.style = items;
-        const obj5 = { style: closure_1.subheaderDescription, variant: "text-sm/medium", color: "interactive-text-default", children: null };
-        const intl4 = util.intl;
-        obj5.children = intl4.string(util.t["1ydhVp"]);
-        obj3.children = __initData(Text_Text.Text, obj5);
-        const items1 = [__initData(timestampProducer, obj3), ];
-        const obj6 = { style: closure_1.divider };
-        items1[1] = __initData(timestampProducer, obj6);
-        obj2.children = items1;
-        let tmp9Result = tmp9(__initData3, obj2);
-      } else {
-        const obj7 = { style: closure_1.emptySubheaderContainer, children: null };
-        const obj8 = { style: closure_1.emptyIlloContainer, children: null };
-        const items2 = [closure_1.emptyIllo, ];
-        let emptyIlloLarge = null;
-        if (closure_3) {
-          emptyIlloLarge = tmp11.emptyIlloLarge;
-        }
-        const obj9 = { style: null, source: null };
-        items2[1] = emptyIlloLarge;
-        obj9.style = items2;
-        obj9.source = tmp3Result2;
-        obj8.children = __initData(FastImageDefault, obj9);
-        const items3 = [__initData(timestampProducer, obj8), , ];
-        const obj10 = { style: closure_1.emptySubheaderBody, children: null };
-        const obj11 = { style: closure_1.subheader, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-        const intl = util.intl;
-        obj11.children = intl.string(util.t.ALlnbi);
-        const items4 = [__initData(Text_Text.Heading, obj11), , ];
-        const obj12 = { style: closure_1.subheaderBody, variant: "text-sm/medium", color: "text-default", children: null };
-        const intl2 = util.intl;
-        obj12.children = intl2.string(util.t["1ydhVp"]);
-        items4[1] = __initData(Text_Text.Text, obj12);
-        const obj13 = { style: closure_1.subheaderButton, children: null };
-        const obj14 = { text: null, onPress: null };
-        const intl3 = util.intl;
-        obj14.text = intl3.string(util.t.JZZjQK);
-        obj14.onPress = callback2;
-        obj13.children = __initData(components_Button_Button.Button, obj14);
-        items4[2] = __initData(timestampProducer, obj13);
-        obj10.children = items4;
-        items3[1] = __initData2(timestampProducer, obj10);
-        const obj15 = { style: closure_1.divider };
-        items3[2] = __initData(timestampProducer, obj15);
-        obj7.children = items3;
-        tmp9Result = tmp9(timestampProducer, obj7);
-      }
-      return tmp9Result;
+      const obj = { style: closure_1.emptySubheaderContainer, children: items2 };
+      const obj7 = { style: closure_1.emptyIlloContainer, children: closure_20(MemberRolesAbstractUI.MemberRolesAbstractUI, {}) };
+      items2 = [closure_20(metroRequire, obj7), , ];
+      const obj8 = { style: closure_1.emptySubheaderBody, children: items3 };
+      const obj9 = { style: closure_1.subheader, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl5.t.ALlnbi) };
+      const Heading = Text_Text.Heading;
+      intl = intl5.intl;
+      items3 = [closure_20(Heading, obj9), , ];
+      const obj10 = { style: closure_1.subheaderBody, variant: "text-sm/medium", color: "text-default", children: intl2.string(intl5.t["1ydhVp"]) };
+      const Text = Text_Text.Text;
+      intl2 = intl5.intl;
+      items3[1] = closure_20(Text, obj10);
+      const obj11 = { style: closure_1.subheaderButton, children: closure_20(Button, obj12) };
+      obj12 = { text: intl3.string(intl5.t.JZZjQK), onPress: callback1 };
+      Button = components_Button_Button.Button;
+      intl3 = intl5.intl;
+      items3[2] = closure_20(metroRequire, obj11);
+      items2[1] = callback1(metroRequire, obj8);
+      const obj13 = { style: closure_1.divider };
+      items2[2] = closure_20(metroRequire, obj13);
+      tmpResult = tmp(metroRequire, obj);
     }
-  }, items17);
-  const items19 = [guild, roleData.length, currentUserId, highestRole, sorting, callback3, callback4, callback7];
-  const callback10 = obj.useCallback(() => {
+    return tmpResult;
+  }, items11);
+  const items13 = [guild, roleData.length, currentUserId, highestRole, sorting, callback2, callback3, callback6];
+  const callback9 = obj.useCallback(() => {
+    let obj3;
     if (null != guild) {
       if (null != guildEveryoneRole) {
         const obj = PermissionUtilsAll;
-        const obj2 = { style: closure_1.everyoneWrapper, children: null };
-        const obj3 = {
-          role: tmp2,
-          locked: !obj.isRoleHigher(tmp, currentUserId, highestRole, tmp2),
+        const obj2 = { style: closure_1.everyoneWrapper, children: closure_20(GuildSettingsRoleItemDefault, obj3) };
+        obj3 = {
+          role: guildEveryoneRole,
+          locked: !obj.isRoleHigher(guild, currentUserId, highestRole, guildEveryoneRole),
           onPress() {
-                return callback3(guildEveryoneRole);
+                return callback2(guildEveryoneRole);
               },
-          guildId: tmp.id,
+          guildId: guild.id,
           sorting: false,
           numMembers: 0,
           isEveryoneRole: true,
           isLastRole: true,
           isFirstRole: true
         };
-        obj2.children = __initData(GuildSettingsRoleItemDefault, obj3);
-        return __initData(timestampProducer, obj2);
+        !obj.isRoleHigher(guild, currentUserId, highestRole, guildEveryoneRole);
+        return closure_20(metroRequire, obj2);
       }
     }
     return null;
-  }, items18);
-  const callback11 = obj.useCallback((role, from) => {
+  }, items12);
+  const callback10 = obj.useCallback((role, from) => {
+    let fn;
+    let fn2;
+    let id;
+    let tmp19;
+    let tmp3;
     if (null == guild) {
-      return hasRoles(callback2, {});
+      return closure_20(callback2, {});
     } else {
       role = role.role;
-      const obj = navigation(4503);
+      memberCount = role.memberCount;
+      let obj = navigation(guild[25]);
       const diff = roleData.length - 1;
-      const obj2 = { sorting, isEveryoneRole: null, role: null, locked: null, guildId: null, numMembers: null, isFirstRole: null, isLastRole: null, onPress: null, onLongPress: null, onMoveUp: null, onMoveDown: null };
-      let tmp3 = null != tmp;
-      const tmp19 = !obj.isRoleHigher(tmp, currentUserId, highestRole, role);
-      const tmp22 = hasRoles;
+      const obj2 = { sorting, isEveryoneRole: tmp3, role, locked: tmp19, guildId: id, numMembers: memberCount, isFirstRole: 0 === from, isLastRole: from === diff, onPress: callback2, onLongPress: callback3, onMoveUp: fn, onMoveDown: fn2 };
+      tmp3 = null != tmp;
+      tmp19 = !obj.isRoleHigher(guild, currentUserId, highestRole, role);
+      const tmp22 = closure_20;
+      const tmp24 = closure_1(guild[37]);
       if (tmp3) {
-        tmp3 = roleMemberCount(role);
+        tmp3 = sortedGuildRoles(role);
       }
-      obj2.isEveryoneRole = tmp3;
-      obj2.role = role;
-      obj2.locked = tmp19;
-      let id;
-      if (tmp != null) {
+      id = undefined;
+      if (guild != null) {
         id = tmp.id;
       }
-      obj2.guildId = id;
-      obj2.numMembers = role.memberCount;
-      obj2.isFirstRole = 0 === from;
-      obj2.isLastRole = from === diff;
-      obj2.onPress = callback3;
-      obj2.onLongPress = callback4;
-      let fn;
+      fn = undefined;
       if (0 !== from) {
         fn = () => {
-          callback7({ from, to: from - 1 });
+          const obj = { from, to: from - 1 };
+          callback6(obj);
         };
       }
-      obj2.onMoveUp = fn;
-      let fn2;
+      fn2 = undefined;
       if (from !== diff) {
         fn2 = () => {
-          callback7({ from, to: from + 1 });
+          const obj = { from, to: from + 1 };
+          callback6(obj);
         };
       }
-      obj2.onMoveDown = fn2;
-      return tmp22(closure_1(17681), obj2, role.id);
+      return tmp22(tmp24, obj2, role.id);
     }
-  }, items19);
-  const items20 = [callback2, callback6, callback5, hasRoles, sorting, navigation];
-  const callback12 = obj.useCallback((arg0, arg1) => arg0 !== arg1, []);
-  const effect2 = obj.useEffect(() => {
+  }, items13);
+  const items14 = [callback1, callback5, callback4, hasRoles, sorting, navigation];
+  const callback11 = obj.useCallback((arg0, arg1) => arg0 !== arg1, []);
+  const effect = obj.useEffect(() => {
+    let fn2;
+    let intl;
+    let onPress;
+    let onPress2;
+    let onPress3;
     let fn;
+    const setOptions = navigation.setOptions;
     if (first) {
       fn = () => {
-        const obj = { onPress: onPress2, text: null };
-        const intl = guildId(1115).intl;
-        obj.text = intl.string(guildId(1115).t["ETE/oC"]);
-        return hasRoles(guildId(6982).HeaderActionButton, obj);
+        let intl;
+        const obj = { onPress: onPress2, text: intl.string(guildId(guild[31]).t["ETE/oC"]) };
+        const HeaderActionButton = guildId(guild[38]).HeaderActionButton;
+        intl = guildId(guild[31]).intl;
+        return closure_20(HeaderActionButton, obj);
       };
     }
-    let obj = { headerLeft: fn, headerRight: null, headerTitle: null };
+    let obj = { headerLeft: fn, headerRight: fn2, headerTitle: intl.string(intl5.t.UvdTMj) };
     if (first) {
-      let fn2 = () => {
-        const obj = { onPress: onPress3, text: null };
-        const intl = guildId(1115).intl;
-        obj.text = intl.string(guildId(1115).t["R3BPH+"]);
-        return hasRoles(guildId(6982).HeaderActionButton, obj);
+      fn2 = () => {
+        let intl;
+        const obj = { onPress: onPress3, text: intl.string(guildId(guild[31]).t["R3BPH+"]) };
+        const HeaderActionButton = guildId(guild[38]).HeaderActionButton;
+        intl = guildId(guild[31]).intl;
+        return closure_20(HeaderActionButton, obj);
       };
     } else if (hasRoles) {
       fn2 = () => {
-        const obj = { onPress, source: closure_1(12501), accessibilityLabel: null };
-        const intl = guildId(1115).intl;
-        obj.accessibilityLabel = intl.string(guildId(1115).t.JZZjQK);
-        return hasRoles(guildId(6982).HeaderActionButton, obj);
+        let intl;
+        const obj = { onPress, source: closure_1(guild[39]), accessibilityLabel: intl.string(guildId(guild[31]).t.JZZjQK) };
+        const HeaderActionButton = guildId(guild[38]).HeaderActionButton;
+        intl = guildId(guild[31]).intl;
+        return closure_20(HeaderActionButton, obj);
       };
     }
-    obj.headerRight = fn2;
-    let intl = util.intl;
-    obj.headerTitle = intl.string(util.t.UvdTMj);
-    navigation.setOptions(obj);
-  }, items20);
-  const items21 = [guild, sorting, navigation];
-  const effect3 = obj.useEffect(() => {
+    intl = intl5.intl;
+    setOptions(obj);
+  }, items14);
+  const items15 = [guild, sorting, navigation];
+  const effect1 = obj.useEffect(() => {
     if (first) {
       if (null != guild) {
-        GuildSettingsModalRolesActionCreatorsDefault.startReordering(tmp2.id);
+        const obj2 = GuildSettingsModalRolesActionCreatorsDefault;
+        obj2.startReordering(tmp2.id);
       }
+      const obj3 = PlatformUtils;
       if (obj3.isIOS()) {
         const obj4 = { gestureEnabled: !tmp };
         navigation.setOptions(obj4);
       }
     }
-    GuildSettingsModalRolesActionCreatorsDefault.stopReordering();
-  }, items21);
-  const items22 = [guild, memberCount];
-  const effect4 = obj.useEffect(() => {
+    const obj = GuildSettingsModalRolesActionCreatorsDefault;
+    obj.stopReordering();
+  }, items15);
+  const items16 = [guild, memberCount];
+  const effect2 = obj.useEffect(() => {
     if (null != guild) {
       if (memberCount <= GuildSettingsRolesUtils.MAX_PREFETCH_MEMBER_COUNT) {
         const obj = GuildActionCreatorsDefault;
         const members = obj.requestMembers(tmp.id, "", 0, false);
       }
-      const memberCounts = GuildRoleMemberActionCreatorsAll.fetchMemberCounts(tmp.id);
+      const obj2 = GuildRoleMemberActionCreatorsAll;
+      const memberCounts = obj2.fetchMemberCounts(tmp.id);
     }
-  }, items22);
-  const items23 = [sorting];
-  const effect5 = obj.useEffect(() => () => {
-    if (sorting) {
-      closure_1(dependencyMap[29]).stopReordering();
-      const obj = closure_1(dependencyMap[29]);
+  }, items16);
+  const items17 = [sorting];
+  const effect3 = obj.useEffect(() => () => {
+    const tmp = sorting;
+    if (tmp) {
+      const obj = closure_1(guild[29]);
+      obj.stopReordering();
     }
-  }, items23);
-  let tmp44 = null;
-  if (!tmp25) {
-    let obj8 = { style: tmp.searchWrapper, children: null };
-    let obj9 = { size: "md", onChange: callback1 };
-    obj8.children = hasRoles(tmp3(6657).SearchField, obj9);
-    tmp44 = hasRoles(guildEveryoneRole, obj8);
+  }, items17);
+  let tmp34 = null;
+  if (!tmp15) {
+    let obj5 = { style: tmp.searchWrapper, children: closure_20(tmp3(tmp4[44]).SearchField, obj6) };
+    obj6 = { size: "md", onChange: callback };
+    tmp34 = closure_20(roleMemberCount, obj5);
   }
-  const items24 = [tmp44, , , ];
-  let tmp42Result = null;
+  const items18 = [tmp34, , , ];
+  let tmp38 = roleMemberCount;
+  let tmp32Result = null;
   if (sorting) {
-    const items25 = [callback8(), ];
-    let tmp47Result = null;
+    const items19 = [callback7(), ];
+    let tmp37Result = null;
     if (!hasRoles) {
-      let obj10 = { leading: null, label: null };
-      let obj11 = { style: tmp.emptyRolesIcon, size: tmp3(1177).Icon.Sizes.LARGE, source: tmp6(9228) };
-      obj10.leading = tmp47(tmp3(1177).Icon, obj11);
-      let obj12 = { variant: "text-md/semibold", color: "interactive-text-default", children: null };
-      let intl = tmp3(1115).intl;
-      obj12.children = intl.string(tmp3(1115).t.nZfHsf);
-      obj10.label = tmp47(tmp3(4841).Text, obj12);
-      tmp47Result = tmp47(tmp3(8239).FormRow, obj10);
+      let obj7 = { leading: closure_20(Icon, obj8), label: closure_20(Text, obj9) };
+      const FormRow = tmp3(tmp4[45]).FormRow;
+      obj8 = { style: tmp.emptyRolesIcon, size: tmp3(tmp4[46]).Icon.Sizes.LARGE, source: require("AssetRegistry") };
+      Icon = tmp3(tmp4[46]).Icon;
+      obj9 = { variant: "text-md/semibold", color: "interactive-text-default", children: intl.string(tmp3(tmp4[31]).t.nZfHsf) };
+      Text = tmp3(tmp4[34]).Text;
+      intl = tmp3(tmp4[31]).intl;
+      tmp37Result = tmp37(FormRow, obj7);
     }
-    let obj13 = { children: null };
-    items25[1] = tmp47Result;
-    obj13.children = items25;
-    tmp42Result = tmp42(tmp43, obj13);
+    let obj10 = { children: items19 };
+    items19[1] = tmp37Result;
+    tmp32Result = tmp32(tmp33, obj10);
   }
-  items24[1] = hasRoles(guildEveryoneRole, { children: tmp42Result });
-  let obj14 = { style: tmp.container, children: null };
-  let obj15 = { ref, header: null, wrapperStyles: null, contentContainerStyle: null, data: null, rowHasChanged: null, onRowMoved: null, disableSorting: null, minDraggableIndex: null, renderRow: null, keyboardShouldPersistTaps: "handled", scrollEventThrottle: 16, scrollEnabled: true };
-  let tmp42Result2 = null;
-  let obj7 = guildId(504);
+  items18[1] = closure_20(tmp38, { children: tmp32Result });
+  let obj11 = { style: tmp.container, children: closure_20(tmp42, obj12) };
+  obj12 = { ref, header: tmp32Result2, wrapperStyles: tmp.container, contentContainerStyle: items21, data: roleData, rowHasChanged: callback11, onRowMoved: callback6, disableSorting: !sorting, minDraggableIndex: tmp47, renderRow: callback10, keyboardShouldPersistTaps: "handled", scrollEventThrottle: 16, scrollEnabled: true };
+  tmp32Result2 = null;
+  tmp42 = require("SortableListView");
   if (!sorting) {
-    let callback9Result = null;
-    if (!tmp21) {
-      callback9Result = callback9();
-    }
-    const items26 = [callback9Result, , ];
-    let callback10Result = null;
-    if (!tmp21) {
-      callback10Result = callback10();
-    }
-    items26[1] = callback10Result;
     let callback8Result = null;
-    if (hasRoles) {
+    if (!hasSearchQuery) {
       callback8Result = callback8();
     }
-    const obj16 = { children: null };
-    items26[2] = callback8Result;
-    obj16.children = items26;
-    tmp42Result2 = tmp42(tmp43, obj16);
+    const items20 = [callback8Result, , ];
+    let callback9Result = null;
+    if (!hasSearchQuery) {
+      callback9Result = callback9();
+    }
+    items20[1] = callback9Result;
+    let callback7Result = null;
+    if (hasRoles) {
+      callback7Result = callback7();
+    }
+    let obj13 = { children: items20 };
+    items20[2] = callback7Result;
+    tmp32Result2 = tmp32(tmp33, obj13);
   }
-  obj15.header = tmp42Result2;
-  obj15.wrapperStyles = tmp.container;
-  const items27 = [tmp.scrollContainer, guildId.contentContainerStyle];
-  obj15.contentContainerStyle = items27;
-  obj15.data = roleData;
-  obj15.rowHasChanged = callback12;
-  obj15.onRowMoved = callback7;
-  obj15.disableSorting = !sorting;
-  let tmp56;
+  items21 = [tmp.scrollContainer, contentContainerStyle];
+  tmp47 = undefined;
   if (firstEditableIndex >= 0) {
-    tmp56 = firstEditableIndex;
+    tmp47 = firstEditableIndex;
   }
-  const obj17 = { children: null };
-  obj15.minDraggableIndex = tmp56;
-  obj15.renderRow = callback11;
-  obj14.children = hasRoles(SortableListViewDefault, obj15);
-  items24[2] = hasRoles(guildEveryoneRole, obj14);
-  items24[3] = hasRoles(guildId(6647).NavScrim, {});
-  obj17.children = items24;
-  return closure_22(callback2, obj17);
-};
+  const obj14 = { children: items18 };
+  items18[2] = closure_20(tmp38, obj11);
+  items18[3] = closure_20(tmp3(tmp4[49]).NavScrim, {});
+  return callback1(callback2, obj14);
+});
+let result = size.fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRoles.tsx");
+
+export default tmp8;

@@ -1,129 +1,141 @@
 // Module ID: 1588
 // Function ID: 1589
-// Dependencies: [32, 19, 17, 21, 1589, 1488, 1591, 1592, 1593, 1595, 1596, 1585]
+// Dependencies: [109, 19, 21, 1493, 1589, 1591]
+// Exports: createStandardNavigationFactories
 
 // Module 1588
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import BaseNavigationContainer from "BaseNavigationContainer" /* 1493 */;
+import _mod1589 from "module_1589" /* 1589 */;
+import react2 from "react" /* 1591 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import react from "react" /* 19 */;
 
-const require = fn;
-const I18nManager = fn(17).I18nManager;
-const jsx = fn(21).jsx;
-const weakMap = new WeakMap();
-globalThis.REACT_NAVIGATION_DEVTOOLS = weakMap;
+const require = globalThis.__r;
+let _require, closure_1, dependencyMap, navigation;
 
-export const NavigationContainer = noop.forwardRef(function NavigationContainerInner(direction, ref) {
-  direction = direction.direction;
-  if (direction === undefined) {
-    let str = "ltr";
-    if (I18nManager.getConstants().isRTL) {
-      str = "rtl";
+let closure_2 = ["children", "id", "initialRouteName", "layout", "screenLayout", "screenListeners", "screenOptions", "UNSTABLE_routeNamesChangeBehavior", "UNSTABLE_router"];
+const jsx = Fragment.jsx;
+
+export const createStandardNavigationFactories = function createStandardNavigationFactories(arg0, arg1, arg2) {
+  let closure_0;
+  let obj2;
+  let obj3;
+  let type;
+  let version;
+  _require = arg1;
+  dependencyMap = arg2;
+  ({ type, version, NavigatorContent: closure_2 } = arg0);
+  if ("standard" !== type) {
+    let str3 = "unknown type.";
+    const _Error2 = Error;
+    if (typeof type === "string") {
+      const _HermesInternal2 = HermesInternal;
+      str3 = "type \"" + type + "\".";
     }
-    direction = str;
-  }
-  let DefaultTheme = direction.theme;
-  if (DefaultTheme === undefined) {
-    DefaultTheme = linking(1589).DefaultTheme;
-  }
-  linking = direction.linking;
-  let fallback = direction.fallback;
-  if (fallback === undefined) {
-    fallback = null;
-  }
-  let merged = Object.assign(direction, Object.assign({ direction: 0, theme: 0, linking: 0, fallback: 0, documentTitle: 0 }));
-  dependencyMap = undefined;
-  ref = undefined;
-  let tmp6 = linking;
-  if (tmp6) {
-    tmp6 = false !== linking.enabled;
-  }
-  dependencyMap = tmp6;
-  let config;
-  if (linking != null) {
-    config = linking.config;
-  }
-  if (config) {
-    linking(1488).validatePathConfig(linking.config);
-    let obj = linking(1488);
-  }
-  ref = noop.useRef(null);
-  const backButton = linking(1591).useBackButton(ref);
-  const obj2 = linking(1591);
-  const documentTitle = linking(1592).useDocumentTitle(ref, direction.documentTitle);
-  const obj3 = linking(1592);
-  const merged1 = Object.assign(linking);
-  const items = [linking];
-  const memo = noop.useMemo(() => ({ options: linking }), items);
-  const effect = noop.useEffect(() => {
-    if (ref.current) {
-      let obj = {};
-      Object.defineProperty(obj, "linking", {
-        get: () => {
-            const obj = {};
-            const merged = Object.assign(closure_1_0);
-            obj.enabled = enabled;
-            let prefixes;
-            if (closure_1_0 != null) {
-              prefixes = tmp.prefixes;
-            }
-            if (prefixes == null) {
-              prefixes = [];
-            }
-            obj.prefixes = prefixes;
-            let getStateFromPath;
-            if (closure_1_0 != null) {
-              getStateFromPath = tmp.getStateFromPath;
-            }
-            if (getStateFromPath == null) {
-              getStateFromPath = linking(enabled[5]).getStateFromPath;
-            }
-            obj.getStateFromPath = getStateFromPath;
-            let getPathFromState;
-            if (closure_1_0 != null) {
-              getPathFromState = tmp.getPathFromState;
-            }
-            if (getPathFromState == null) {
-              getPathFromState = linking(enabled[5]).getPathFromState;
-            }
-            obj.getPathFromState = getPathFromState;
-            let getActionFromState;
-            if (closure_1_0 != null) {
-              getActionFromState = tmp.getActionFromState;
-            }
-            if (getActionFromState == null) {
-              getActionFromState = linking(enabled[5]).getActionFromState;
-            }
-            obj.getActionFromState = getActionFromState;
-            return obj;
-          },
-        set: undefined
-      });
-      const result = globalThis.REACT_NAVIGATION_DEVTOOLS.set(tmp.current, obj);
-    }
-  });
-  const obj4 = linking(1593);
-  const obj5 = { enabled: tmp6, prefixes: [] };
-  const obj6 = linking(1595);
-  [tmp20, initialState] = ref(linking(1595).useThenable(obj4.useLinking(ref, obj5).getInitialState), 2);
-  const imperativeHandle = noop.useImperativeHandle(ref, () => ref.current);
-  const obj7 = { value: direction, children: null };
-  if (tmp22) {
-    const obj8 = { value: memo, children: null };
-    const obj9 = {};
-    const merged2 = Object.assign(merged);
-    obj9.theme = DefaultTheme;
-    if (null != merged.initialState) {
-      initialState = merged.initialState;
-    }
-    obj9.initialState = initialState;
-    obj9.ref = ref;
-    obj8.children = tmp23(tmp12(1488).BaseNavigationContainer, obj9);
-    obj7.children = tmp23(tmp12(1585).LinkingContext.Provider, obj8);
-    let tmp24 = obj7;
+    const self3 = this;
+    const self4 = this;
+    const _Error21 = new _Error2("createStandardNavigationFactories only works with standard navigator objects, but got navigator of " + str3);
+    throw _Error21;
+  } else if (1 !== version) {
+    const _Error = Error;
+    const _HermesInternal = HermesInternal;
+    const self = this;
+    const self2 = this;
+    const error = new Error("createStandardNavigationFactories only works with version 1 of standard navigator objects, but got version " + version + ".");
+    throw error;
   } else {
-    const obj10 = { value: DefaultTheme, children: fallback };
-    obj7.children = tmp23(tmp12(1488).ThemeProvider, obj10);
-    tmp24 = obj7;
+    let obj = {
+      createNavigator: obj2.createNavigatorFactory(function StandardNavigationNavigator(UNSTABLE_routeNamesChangeBehavior) {
+          let UNSTABLE_router;
+          let children;
+          let id;
+          let initialRouteName;
+          let layout;
+          let screenLayout;
+          let screenListeners;
+          let screenOptions;
+          let obj = BaseNavigationContainer;
+          const navigationBuilder = obj.useNavigationBuilder(closure_0, UNSTABLE_routeNamesChangeBehavior);
+          const obj3 = _mod1589;
+          closure_1 = obj3.useBuildHref();
+          let tmp = react2;
+          if ("preloadedRoutes" in navigationBuilder.state) {
+            let combined;
+            const _Array = Array;
+            if (Array.isArray(navigationBuilder.state.preloadedRoutes)) {
+              const routes = navigationBuilder.state.routes;
+              combined = routes.concat(navigationBuilder.state.preloadedRoutes);
+            }
+            const tmp2Result = tmp2(combined.map((key) => {
+              const tmp = closure_1(key.name, key.params);
+              const items = [, ];
+              const obj = { key: key.key, name: key.name, params: key.params, href: tmp };
+              items[0] = obj;
+              const items1 = [, , , ];
+              ({ key: arr2[0], name: arr2[1], params: arr2[2] } = key);
+              items1[3] = tmp;
+              items[1] = items1;
+              return items;
+            }));
+            closure_2 = tmp2Result;
+            let items = [navigationBuilder.state.index, tmp2Result];
+            const memo = react.useMemo(() => ({ index: navigationBuilder.state.index, routes }), items);
+            const obj2 = {};
+            const routes2 = memo.routes;
+            const iter = routes2[Symbol.iterator]();
+            const nextResult = iter.next();
+            while (iter !== undefined) {
+              let tmp12 = nextResult;
+              let describeResult = navigationBuilder.descriptors[nextResult.key];
+              if (describeResult == null) {
+                describeResult = navigationBuilder.describe(tmp12, true);
+              }
+              let obj4 = { options: null, render: null };
+              ({ options: obj5.options, render: obj5.render } = describeResult);
+              obj2[tmp12.key] = obj4;
+              continue;
+            }
+            let items1 = [navigationBuilder.navigation, navigationBuilder.state.key];
+            const items2 = [navigationBuilder.navigation];
+            const memo1 = react.useMemo(() => {
+              let obj = {
+                navigate(arg0, arg1) {
+                  navigation = closure_1_0.navigation;
+                  const dispatch = navigation.dispatch;
+                  const obj = { target: closure_1_0.state.key };
+                  const CommonActions = navigationBuilder(closure_1[3]).CommonActions;
+                  const merged = Object.assign(CommonActions.navigate(arg0, arg1));
+                  dispatch(obj);
+                },
+                back() {
+                  navigation = navigationBuilder.navigation;
+                  navigation.goBack();
+                }
+              };
+              return obj;
+            }, items1);
+            let tmp19Result;
+            const memo2 = react.useMemo(() => ({ emit: navigationBuilder.navigation.emit }), items2);
+            if (closure_1 != null) {
+              const obj7 = { state: null, navigation: null };
+              ({ state: obj6.state, navigation: obj6.navigation } = navigationBuilder);
+              tmp19Result = tmp19(obj7);
+            }
+            ({ children, id, initialRouteName, layout, screenLayout, screenListeners, screenOptions, UNSTABLE_routeNamesChangeBehavior, UNSTABLE_router } = UNSTABLE_routeNamesChangeBehavior);
+            const NavigationContent = navigationBuilder.NavigationContent;
+            let merged = Object.assign(_objectWithoutProperties(UNSTABLE_routeNamesChangeBehavior, closure_2));
+            const merged1 = Object.assign(tmp19Result);
+            return <NavigationContent>{null}</NavigationContent>;
+          }
+          combined = navigationBuilder.state.routes;
+        }),
+      createScreen: obj3.createScreenFactory()
+    };
+    let tmp = _require;
+    const tmp2 = dependencyMap;
+    obj2 = require("BaseNavigationContainer");
+    obj3 = require("BaseNavigationContainer");
+    return obj;
   }
-  return jsx(linking(1596).LocaleDirContext.Provider, tmp24);
-});
+};

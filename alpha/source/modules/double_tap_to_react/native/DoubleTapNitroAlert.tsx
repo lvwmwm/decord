@@ -1,55 +1,331 @@
-// Module ID: 7589
-// Function ID: 7590
+// Module ID: 7633
+// Function ID: 7634
 // Name: DoubleTapNitroAlert
-// Dependencies: [19, 17, 7584, 1074, 7590, 21, 4845, 6987, 5389, 5393, 6214, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 7628, 1085, 7634, 21, 4890, 558, 576, 6885, 5709, 4800, 1126, 5713, 2]
 
-// Module 7589 (DoubleTapNitroAlert)
-import util from "util" /* 1115 */;
-import AlertModal from "AlertModal" /* 5393 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6214 */;
-import openUserSettings from "openUserSettings" /* 6987 */;
-import noop from "module_19" /* 19 */;
+// Module 7633 (DoubleTapNitroAlert)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1085 */;
+import intl5 from "intl" /* 1126 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 4800 */;
+import AlertModal2 from "AlertModal" /* 5713 */;
+import DoubleTapToRaectConstants from "DoubleTapToRaectConstants" /* 7628 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const NITRO_UPSELL_ALERT_KEY = fn(7584).NITRO_UPSELL_ALERT_KEY;
-const UserSettingsSections = fn(1074).UserSettingsSections;
-const MobileUserSettings = fn(7590).MobileUserSettings;
-const jsxProd = fn(21);
-({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4845);
+const require = globalThis.__r;
+let emojiName, openUserSettingsResult;
+
+let c9;
+let metroImportAll;
+let metroImportDefault;
+const View = react_native.View;
+const NITRO_UPSELL_ALERT_KEY = DoubleTapToRaectConstants.NITRO_UPSELL_ALERT_KEY;
+const UserSettingsSections = Constants.UserSettingsSections;
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
 let closure_10 = createStyles.createStyles({ icon: { alignItems: "center", justifyContent: "center" } });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/double_tap_to_react/native/DoubleTapNitroAlert.tsx");
-
-export default function DoubleTapNitroAlert(emojiName) {
-  const callback = noop.useCallback(() => {
-    const obj2 = { screen: constants.TEXT, params: { initialSetting: constants2.DOUBLE_TAP_EMOJI } };
-    openUserSettings.openUserSettings(obj2);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiName) => {
+  let constants2;
+  let first;
+  let intl;
+  let intl2;
+  let items;
+  let tmp12;
+  let tmp16;
+  let tmp18;
+  let tmp22;
+  let tmp6;
+  let tmp7;
+  let obj = react2;
+  const cResult = obj.c(13);
+  emojiName = emojiName.emojiName;
+  const tmp4 = closure_10();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function l() {
+      let obj3;
+      const obj2 = { screen: constants.TEXT, params: obj3 };
+      obj3 = { initialSetting: constants2.DOUBLE_TAP_EMOJI };
+      const obj = require("openUserSettings");
+      obj.openUserSettings(obj2);
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    class E {
+      constructor() {
+        obj = closure_1_0(closure_1_1[9]);
+        obj1 = { screen: closure_1_5.PREMIUM };
+        openUserSettingsResult = obj.openUserSettings(obj1, () => {
+          const obj = closure_1_0(closure_1_1[10]);
+          obj.dismissAlert(closure_1_4);
+        });
+        return;
+      }
+    }
+    cResult[1] = E;
+    tmp6 = E;
+  } else {
+    class E {
+      constructor() {
+        obj = closure_1_0(closure_1_1[9]);
+        obj1 = { screen: closure_1_5.PREMIUM };
+        openUserSettingsResult = obj.openUserSettings(obj1, () => {
+          const obj = closure_1_0(closure_1_1[10]);
+          obj.dismissAlert(closure_1_4);
+        });
+        return;
+      }
+    }
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    class E {
+      constructor() {
+        obj = closure_1_0(closure_1_1[9]);
+        obj1 = { screen: closure_1_5.PREMIUM };
+        openUserSettingsResult = obj.openUserSettings(obj1, () => {
+          const obj = closure_1_0(closure_1_1[10]);
+          obj.dismissAlert(closure_1_4);
+        });
+        return;
+      }
+    }
+    let obj2 = { size: "custom", style: { width: 40, height: 40 } };
+    const tmp8 = metroImportDefault(CircleErrorIcon.CircleErrorIcon, obj2);
+    cResult[2] = tmp8;
+    tmp7 = tmp8;
+  } else {
+    class E {
+      constructor() {
+        obj = closure_1_0(closure_1_1[9]);
+        obj1 = { screen: closure_1_5.PREMIUM };
+        openUserSettingsResult = obj.openUserSettings(obj1, () => {
+          const obj = closure_1_0(closure_1_1[10]);
+          obj.dismissAlert(closure_1_4);
+        });
+        return;
+      }
+    }
+  }
+  if (cResult[3] !== tmp4.icon) {
+    class E {
+      constructor() {
+        obj = closure_1_0(closure_1_1[9]);
+        obj1 = { screen: closure_1_5.PREMIUM };
+        openUserSettingsResult = obj.openUserSettings(obj1, () => {
+          const obj = closure_1_0(closure_1_1[10]);
+          obj.dismissAlert(closure_1_4);
+        });
+        return;
+      }
+    }
+    let obj3 = { style: tmp4.icon, children: tmp7 };
+    cResult[3] = tmp4.icon;
+    cResult[4] = metroImportDefault(View, obj3);
+    const tmp11 = metroImportDefault(View, obj3);
+  } else {
+    class E {
+      constructor() {
+        obj = closure_1_0(closure_1_1[9]);
+        obj1 = { screen: closure_1_5.PREMIUM };
+        openUserSettingsResult = obj.openUserSettings(obj1, () => {
+          const obj = closure_1_0(closure_1_1[10]);
+          obj.dismissAlert(closure_1_4);
+        });
+        return;
+      }
+    }
+  }
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class E {
+      constructor() {
+        obj = closure_1_0(closure_1_1[9]);
+        obj1 = { screen: closure_1_5.PREMIUM };
+        openUserSettingsResult = obj.openUserSettings(obj1, () => {
+          const obj = closure_1_0(closure_1_1[10]);
+          obj.dismissAlert(closure_1_4);
+        });
+        return;
+      }
+    }
+    const stringResult = obj4.string(intl5.t.HRAWfC);
+    cResult[5] = stringResult;
+    tmp12 = stringResult;
+  } else {
+    class E {
+      constructor() {
+        obj = closure_1_0(closure_1_1[9]);
+        obj1 = { screen: closure_1_5.PREMIUM };
+        openUserSettingsResult = obj.openUserSettings(obj1, () => {
+          const obj = closure_1_0(closure_1_1[10]);
+          obj.dismissAlert(closure_1_4);
+        });
+        return;
+      }
+    }
+  }
+  if (cResult[6] !== emojiName) {
+    class E {
+      constructor() {
+        obj = closure_1_0(closure_1_1[9]);
+        obj1 = { screen: closure_1_5.PREMIUM };
+        openUserSettingsResult = obj.openUserSettings(obj1, () => {
+          const obj = closure_1_0(closure_1_1[10]);
+          obj.dismissAlert(closure_1_4);
+        });
+        return;
+      }
+    }
+    const obj6 = { emojiName, onRenewNitro: tmp6 };
+    cResult[6] = emojiName;
+    cResult[7] = obj5.format(intl5.t["3u/Je4"], obj6);
+    const formatResult = obj5.format(intl5.t["3u/Je4"], obj6);
+  } else {
+    class E {
+      constructor() {
+        obj = closure_1_0(closure_1_1[9]);
+        obj1 = { screen: closure_1_5.PREMIUM };
+        openUserSettingsResult = obj.openUserSettings(obj1, () => {
+          const obj = closure_1_0(closure_1_1[10]);
+          obj.dismissAlert(closure_1_4);
+        });
+        return;
+      }
+    }
+  }
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class E {
+      constructor() {
+        obj = closure_1_0(closure_1_1[9]);
+        obj1 = { screen: closure_1_5.PREMIUM };
+        openUserSettingsResult = obj.openUserSettings(obj1, () => {
+          const obj = closure_1_0(closure_1_1[10]);
+          obj.dismissAlert(closure_1_4);
+        });
+        return;
+      }
+    }
+    const obj7 = { onPress: first, text: intl.string(intl5.t.LIIHRy) };
+    const AlertActionButton = tmp(5713).AlertActionButton;
+    intl = tmp(1126).intl;
+    const tmp17 = metroImportDefault(AlertActionButton, obj7, "confirm");
+    cResult[8] = tmp17;
+    tmp16 = tmp17;
+  } else {
+    class E {
+      constructor() {
+        obj = closure_1_0(closure_1_1[9]);
+        obj1 = { screen: closure_1_5.PREMIUM };
+        openUserSettingsResult = obj.openUserSettings(obj1, () => {
+          const obj = closure_1_0(closure_1_1[10]);
+          obj.dismissAlert(closure_1_4);
+        });
+        return;
+      }
+    }
+  }
+  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    class E {
+      constructor() {
+        obj = closure_1_0(closure_1_1[9]);
+        obj1 = { screen: closure_1_5.PREMIUM };
+        openUserSettingsResult = obj.openUserSettings(obj1, () => {
+          const obj = closure_1_0(closure_1_1[10]);
+          obj.dismissAlert(closure_1_4);
+        });
+        return;
+      }
+    }
+    const obj8 = { children: items };
+    items = [tmp16, ];
+    const obj9 = { variant: "secondary", text: intl2.string(intl5.t["Nr6v2+"]) };
+    const AlertActionButton2 = tmp(5713).AlertActionButton;
+    intl2 = tmp(1126).intl;
+    items[1] = metroImportDefault(AlertActionButton2, obj9, "cancel");
+    const tmp21 = React4(metroImportAll, obj8);
+    cResult[9] = tmp21;
+    tmp18 = tmp21;
+  } else {
+    class E {
+      constructor() {
+        obj = closure_1_0(closure_1_1[9]);
+        obj1 = { screen: closure_1_5.PREMIUM };
+        openUserSettingsResult = obj.openUserSettings(obj1, () => {
+          const obj = closure_1_0(closure_1_1[10]);
+          obj.dismissAlert(closure_1_4);
+        });
+        return;
+      }
+    }
+  }
+  if (cResult[10] === tmp9) {
+    class E {
+      constructor() {
+        obj = closure_1_0(closure_1_1[9]);
+        obj1 = { screen: closure_1_5.PREMIUM };
+        openUserSettingsResult = obj.openUserSettings(obj1, () => {
+          const obj = closure_1_0(closure_1_1[10]);
+          obj.dismissAlert(closure_1_4);
+        });
+        return;
+      }
+    }
+    return tmp22;
+  }
+  tmp22 = metroImportDefault(AlertModal2.AlertModal, { header: tmp9, title: tmp12, content: tmp14, actions: tmp18 });
+  cResult[10] = tmp9;
+  cResult[11] = tmp14;
+  cResult[12] = tmp22;
+}) : ((emojiName) => {
+  let constants2;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let items;
+  let obj2;
+  let obj3;
+  emojiName = emojiName.emojiName;
+  const tmp = closure_10();
+  const callback = react.useCallback(() => {
+    let obj3;
+    const obj2 = { screen: constants.TEXT, params: obj3 };
+    obj3 = { initialSetting: constants2.DOUBLE_TAP_EMOJI };
+    const obj = require("openUserSettings");
+    obj.openUserSettings(obj2);
   }, []);
-  const callback1 = noop.useCallback(() => {
-    openUserSettings.openUserSettings({ screen: constants.PREMIUM }, () => {
-      closure_1_0(dependencyMap[8]).dismissAlert(closure_1_4);
+  const callback1 = react.useCallback(() => {
+    let obj = require("openUserSettings");
+    const obj2 = { screen: constants.PREMIUM };
+    obj.openUserSettings(obj2, () => {
+      const obj = closure_1_0(closure_1_1[10]);
+      obj.dismissAlert(closure_1_4);
     });
   }, []);
-  const obj = { header: null, title: null, content: null, actions: null };
-  const tmp = closure_10();
-  obj.header = React5(View, { style: closure_10().icon, children: React5(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) });
-  const intl = util.intl;
-  obj.title = intl.string(util.t.HRAWfC);
-  const intl2 = util.intl;
-  obj.content = intl2.format(util.t["3u/Je4"], { emojiName: emojiName.emojiName, onRenewNitro: callback1 });
-  const obj3 = { children: null };
-  const obj4 = { onPress: callback, text: null };
-  const intl3 = util.intl;
-  obj4.text = intl3.string(util.t.LIIHRy);
-  const items = [React5(AlertModal.AlertActionButton, obj4, "confirm"), ];
-  const obj5 = { variant: "secondary", text: null };
-  const intl4 = util.intl;
-  obj5.text = intl4.string(util.t["Nr6v2+"]);
-  items[1] = React5(AlertModal.AlertActionButton, obj5, "cancel");
-  obj3.children = items;
-  obj.actions = React7(React6, obj3);
-  return React5(AlertModal.AlertModal, obj);
-};
+  let obj = { header: metroImportDefault(View, obj2), title: intl.string(intl5.t.HRAWfC), content: intl2.format(intl5.t["3u/Je4"], { emojiName, onRenewNitro: callback1 }), actions: React4(metroImportAll, obj3) };
+  obj2 = { style: tmp.icon, children: metroImportDefault(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
+  const AlertModal = AlertModal2.AlertModal;
+  intl = intl5.intl;
+  intl2 = intl5.intl;
+  obj3 = { children: items };
+  const obj4 = { onPress: callback, text: intl3.string(intl5.t.LIIHRy) };
+  const AlertActionButton = AlertModal2.AlertActionButton;
+  intl3 = intl5.intl;
+  items = [metroImportDefault(AlertActionButton, obj4, "confirm"), ];
+  const obj5 = { variant: "secondary", text: intl4.string(intl5.t["Nr6v2+"]) };
+  const AlertActionButton2 = AlertModal2.AlertActionButton;
+  intl4 = intl5.intl;
+  items[1] = metroImportDefault(AlertActionButton2, obj5, "cancel");
+  return metroImportDefault(AlertModal, obj);
+});
+const result = size.fileFinishedImporting("modules/double_tap_to_react/native/DoubleTapNitroAlert.tsx");
+
+export default tmp3;

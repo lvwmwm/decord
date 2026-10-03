@@ -1,106 +1,392 @@
-// Module ID: 12006
-// Function ID: 12007
+// Module ID: 11941
+// Function ID: 11942
 // Name: GuildDirectoryMoreMenu
-// Dependencies: [19, 21, 12000, 12007, 5388, 1115, 12009, 1177, 8275, 9906, 4799, 8311, 7531, 7536, 7538, 576, 2]
-// Exports: default
+// Dependencies: [109, 19, 21, 558, 576, 11935, 11942, 5708, 1126, 11944, 1188, 8279, 10058, 4847, 8315, 7575, 7577, 587, 7579, 2]
 
-// Module 12006 (GuildDirectoryMoreMenu)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5388 */;
-import ReportModals from "ReportModals" /* 8275 */;
-import useCanManageGuildDirectoryEntryDefault from "useCanManageGuildDirectoryEntry" /* 12000 */;
-import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 12007 */;
-import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 12009 */;
-import noop from "module_19" /* 19 */;
+// Module 11941 (GuildDirectoryMoreMenu)
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 587 */;
+import intl5 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
+import ReportModals from "ReportModals" /* 8279 */;
+import useCanManageGuildDirectoryEntryDefault from "useCanManageGuildDirectoryEntry" /* 11935 */;
+import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 11942 */;
+import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 11944 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryMoreMenu.tsx");
+let entry, obj1, showResult;
 
-export default function GuildDirectoryMoreMenu(entry) {
+let closure_4 = ["ref"];
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
+  let canEdit;
+  let canRemove;
+  let isEntryAdmin;
+  let obj2;
+  let tmp5;
+  let tmp = entry;
+  let obj = entry(576);
+  const cResult = obj.c(25);
+  entry = entry.entry;
+  ({ isEntryAdmin, canEdit, canRemove } = useCanManageGuildDirectoryEntryDefault(entry));
+  useCanManageGuildDirectoryEntryDefault(entry);
+  if (cResult[0] !== entry) {
+    const fn = function c() {
+      const obj = GuildDirectoryEditDescriptionModalActionCreatorsDefault;
+      const obj2 = { entry };
+      obj.open(obj2);
+    };
+    cResult[0] = entry;
+    cResult[1] = fn;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] !== entry) {
+    class I {
+      constructor() {
+        tmp = closure_1(closure_3[7]);
+        obj = { title: null, body: null, onConfirm: null, confirmColor: null, confirmText: null, cancelText: null, onCancel: null, isDismissable: false };
+        show = tmp.show;
+        intl = closure_0(closure_3[8]).intl;
+        obj.title = intl.string(closure_0(closure_3[8]).t.KUxYWH);
+        intl2 = closure_0(closure_3[8]).intl;
+        obj1 = { guildName: entry.name };
+        obj.body = intl2.formatToPlainString(closure_0(closure_3[8]).t["/5y0uV"], obj1);
+        obj.onConfirm = function onConfirm() {
+          const obj = GuildDirectoryActionCreatorsAll;
+          const result = obj.removeDirectoryGuildEntry(entry.channelId, entry.guildId);
+        };
+        obj.confirmColor = closure_0(closure_3[10]).ButtonColors.RED;
+        intl3 = closure_0(closure_3[8]).intl;
+        obj.confirmText = intl3.string(closure_0(closure_3[8]).t.N86XcP);
+        intl4 = closure_0(closure_3[8]).intl;
+        obj.cancelText = intl4.string(closure_0(closure_3[8]).t["ETE/oC"]);
+        obj.onCancel = function onCancel() {
+          const obj = closure_1_1(closure_1_3[7]);
+          obj.close();
+        };
+        showResult = show(obj);
+        return;
+      }
+    }
+    cResult[2] = entry;
+    cResult[3] = I;
+  } else {
+    class I {
+      constructor() {
+        tmp = closure_1(closure_3[7]);
+        obj = { title: null, body: null, onConfirm: null, confirmColor: null, confirmText: null, cancelText: null, onCancel: null, isDismissable: false };
+        show = tmp.show;
+        intl = closure_0(closure_3[8]).intl;
+        obj.title = intl.string(closure_0(closure_3[8]).t.KUxYWH);
+        intl2 = closure_0(closure_3[8]).intl;
+        obj1 = { guildName: entry.name };
+        obj.body = intl2.formatToPlainString(closure_0(closure_3[8]).t["/5y0uV"], obj1);
+        obj.onConfirm = function onConfirm() {
+          const obj = GuildDirectoryActionCreatorsAll;
+          const result = obj.removeDirectoryGuildEntry(entry.channelId, entry.guildId);
+        };
+        obj.confirmColor = closure_0(closure_3[10]).ButtonColors.RED;
+        intl3 = closure_0(closure_3[8]).intl;
+        obj.confirmText = intl3.string(closure_0(closure_3[8]).t.N86XcP);
+        intl4 = closure_0(closure_3[8]).intl;
+        obj.cancelText = intl4.string(closure_0(closure_3[8]).t["ETE/oC"]);
+        obj.onCancel = function onCancel() {
+          const obj = closure_1_1(closure_1_3[7]);
+          obj.close();
+        };
+        showResult = show(obj);
+        return;
+      }
+    }
+  }
+  if (cResult[4] !== entry) {
+    class C {
+      constructor() {
+        const obj = ReportModals;
+        const result = obj.showReportModalForGuildDirectoryEntry(entry);
+      }
+    }
+    cResult[4] = entry;
+    cResult[5] = C;
+  } else {
+    class C {
+      constructor() {
+        const obj = ReportModals;
+        const result = obj.showReportModalForGuildDirectoryEntry(entry);
+      }
+    }
+  }
+  if (cResult[6] === canEdit) {
+    class C {
+      constructor() {
+        const obj = ReportModals;
+        const result = obj.showReportModalForGuildDirectoryEntry(entry);
+      }
+    }
+  }
+  const items = [];
+  if (canEdit) {
+    let tmp8;
+    let tmp10;
+    class C {
+      constructor() {
+        const obj = ReportModals;
+        const result = obj.showReportModalForGuildDirectoryEntry(entry);
+      }
+    }
+    const _Symbol = Symbol;
+    if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+      class C {
+        constructor() {
+          const obj = ReportModals;
+          const result = obj.showReportModalForGuildDirectoryEntry(entry);
+        }
+      }
+      const stringResult = obj2.string(tmp(1126).t.XnuOvN);
+      cResult[13] = stringResult;
+      tmp8 = stringResult;
+    } else {
+      class C {
+        constructor() {
+          const obj = ReportModals;
+          const result = obj.showReportModalForGuildDirectoryEntry(entry);
+        }
+      }
+    }
+    if (cResult[14] !== tmp5) {
+      class C {
+        constructor() {
+          const obj = ReportModals;
+          const result = obj.showReportModalForGuildDirectoryEntry(entry);
+        }
+      }
+      tmp11[0] = tmp8;
+      tmp11[1] = tmp(10058).PencilIcon;
+      tmp11[2] = tmp5;
+      cResult[14] = tmp5;
+      cResult[15] = tmp11;
+      tmp10 = tmp11;
+    } else {
+      class C {
+        constructor() {
+          const obj = ReportModals;
+          const result = obj.showReportModalForGuildDirectoryEntry(entry);
+        }
+      }
+    }
+    items.push(tmp10);
+  }
+  if (canRemove) {
+    let tmp13;
+    let tmp15;
+    class C {
+      constructor() {
+        const obj = ReportModals;
+        const result = obj.showReportModalForGuildDirectoryEntry(entry);
+      }
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+      class C {
+        constructor() {
+          const obj = ReportModals;
+          const result = obj.showReportModalForGuildDirectoryEntry(entry);
+        }
+      }
+      const stringResult1 = obj3.string(tmp(1126).t.KUxYWH);
+      cResult[16] = stringResult1;
+      tmp13 = stringResult1;
+    } else {
+      class C {
+        constructor() {
+          const obj = ReportModals;
+          const result = obj.showReportModalForGuildDirectoryEntry(entry);
+        }
+      }
+    }
+    if (cResult[17] !== tmp6) {
+      class C {
+        constructor() {
+          const obj = ReportModals;
+          const result = obj.showReportModalForGuildDirectoryEntry(entry);
+        }
+      }
+      tmp16[0] = tmp13;
+      tmp16[1] = tmp(4847).TrashIcon;
+      tmp16[3] = tmp6;
+      cResult[17] = tmp6;
+      cResult[18] = tmp16;
+      tmp15 = tmp16;
+    } else {
+      class C {
+        constructor() {
+          const obj = ReportModals;
+          const result = obj.showReportModalForGuildDirectoryEntry(entry);
+        }
+      }
+    }
+    items.push(tmp15);
+  }
+  if (!isEntryAdmin) {
+    let tmp18;
+    let tmp20;
+    class C {
+      constructor() {
+        const obj = ReportModals;
+        const result = obj.showReportModalForGuildDirectoryEntry(entry);
+      }
+    }
+    const _Symbol3 = Symbol;
+    if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
+      class C {
+        constructor() {
+          const obj = ReportModals;
+          const result = obj.showReportModalForGuildDirectoryEntry(entry);
+        }
+      }
+      const stringResult2 = obj4.string(tmp(1126).t.Aen9eh);
+      cResult[19] = stringResult2;
+      tmp18 = stringResult2;
+    } else {
+      class C {
+        constructor() {
+          const obj = ReportModals;
+          const result = obj.showReportModalForGuildDirectoryEntry(entry);
+        }
+      }
+    }
+    if (cResult[20] !== tmp7) {
+      class C {
+        constructor() {
+          const obj = ReportModals;
+          const result = obj.showReportModalForGuildDirectoryEntry(entry);
+        }
+      }
+      tmp21[0] = tmp18;
+      tmp21[1] = tmp(8315).FlagIcon;
+      tmp21[3] = tmp7;
+      cResult[20] = tmp7;
+      cResult[21] = tmp21;
+      tmp20 = tmp21;
+    } else {
+      class C {
+        constructor() {
+          const obj = ReportModals;
+          const result = obj.showReportModalForGuildDirectoryEntry(entry);
+        }
+      }
+    }
+    items.push(tmp20);
+  }
+  cResult[6] = canEdit;
+  cResult[7] = canRemove;
+  cResult[8] = tmp5;
+  cResult[9] = tmp6;
+  cResult[10] = tmp7;
+  cResult[11] = isEntryAdmin;
+  cResult[12] = items;
+}) : ((entry) => {
+  let canRemove;
+  let intl;
+  let intl2;
+  let intl3;
+  let isEntryAdmin;
   entry = entry.entry;
   const tmp2 = useCanManageGuildDirectoryEntryDefault(entry);
   const items = [];
   ({ isEntryAdmin, canRemove } = tmp2);
   if (tmp2.canEdit) {
-    let obj = { label: null, IconComponent: null, action: null };
-    let intl = entry(1115).intl;
-    obj.label = intl.string(entry(1115).t.XnuOvN);
-    obj.IconComponent = entry(9906).PencilIcon;
-    obj.action = function handleEdit() {
-      GuildDirectoryEditDescriptionModalActionCreatorsDefault.open({ entry });
+    let obj = {
+      label: intl.string(entry(1126).t.XnuOvN),
+      IconComponent: entry(10058).PencilIcon,
+      action: function handleEdit() {
+          const obj = GuildDirectoryEditDescriptionModalActionCreatorsDefault;
+          const obj2 = { entry };
+          obj.open(obj2);
+        }
     };
-    items.push(obj);
+    const push = items.push;
+    intl = entry(1126).intl;
+    push(obj);
   }
   if (canRemove) {
-    let obj2 = { label: null, IconComponent: null, variant: "destructive", action: null };
-    let intl2 = entry(1115).intl;
-    obj2.label = intl2.string(entry(1115).t.KUxYWH);
-    obj2.IconComponent = entry(4799).TrashIcon;
-    obj2.action = function handleRemove() {
-      const obj2 = { title: null, body: null, onConfirm: null, confirmColor: null, confirmText: null, cancelText: null, onCancel: null, isDismissable: false };
-      const intl = util.intl;
-      obj2.title = intl.string(util.t.KUxYWH);
-      const intl2 = util.intl;
-      obj2.body = intl2.formatToPlainString(util.t["/5y0uV"], { guildName: entry.name });
-      obj2.onConfirm = function onConfirm() {
-        const result = GuildDirectoryActionCreatorsAll.removeDirectoryGuildEntry(entry.channelId, entry.guildId);
-      };
-      obj2.confirmColor = native.ButtonColors.RED;
-      const intl3 = util.intl;
-      obj2.confirmText = intl3.string(util.t.N86XcP);
-      const intl4 = util.intl;
-      obj2.cancelText = intl4.string(util.t["ETE/oC"]);
-      obj2.onCancel = function onCancel() {
-        closure_1_1(dependencyMap[4]).close();
-      };
-      actions_AlertActionCreatorsDefault.show(obj2);
+    let obj2 = {
+      label: intl2.string(entry(1126).t.KUxYWH),
+      IconComponent: entry(4847).TrashIcon,
+      variant: "destructive",
+      action: function handleRemove() {
+          let intl;
+          let intl2;
+          let intl3;
+          let intl4;
+          let obj2;
+          let obj = {
+            title: intl.string(intl5.t.KUxYWH),
+            body: intl2.formatToPlainString(intl5.t["/5y0uV"], obj2),
+            onConfirm() {
+              const obj = GuildDirectoryActionCreatorsAll;
+              const result = obj.removeDirectoryGuildEntry(entry.channelId, entry.guildId);
+            },
+            confirmColor: native.ButtonColors.RED,
+            confirmText: intl3.string(intl5.t.N86XcP),
+            cancelText: intl4.string(intl5.t["ETE/oC"]),
+            onCancel() {
+              const obj = closure_1_1(closure_1_3[7]);
+              obj.close();
+            },
+            isDismissable: false
+          };
+          const show = actions_AlertActionCreatorsDefault.show;
+          actions_AlertActionCreatorsDefault;
+          intl = intl5.intl;
+          intl2 = intl5.intl;
+          obj2 = { guildName: entry.name };
+          intl3 = intl5.intl;
+          intl4 = intl5.intl;
+          show(obj);
+        }
     };
-    items.push(obj2);
+    const push2 = items.push;
+    intl2 = entry(1126).intl;
+    push2(obj2);
   }
   if (!isEntryAdmin) {
-    const obj3 = { label: null, IconComponent: null, variant: "destructive", action: null };
-    let intl3 = entry(1115).intl;
-    obj3.label = intl3.string(entry(1115).t.Aen9eh);
-    obj3.IconComponent = entry(8311).FlagIcon;
-    obj3.action = function handleReport() {
-      const result = ReportModals.showReportModalForGuildDirectoryEntry(entry);
+    const push3 = items.push;
+    const obj3 = {
+      label: intl3.string(entry(1126).t.Aen9eh),
+      IconComponent: entry(8315).FlagIcon,
+      variant: "destructive",
+      action: function handleReport() {
+          const obj = ReportModals;
+          const result = obj.showReportModalForGuildDirectoryEntry(entry);
+        }
     };
-    items.push(obj3);
+    intl3 = entry(1126).intl;
+    push3(obj3);
   }
   let tmp9 = null;
   if (0 !== items.length) {
-    const obj4 = {
+    tmp9 = jsx(entry(7579).ContextMenu, {
       items,
       children(ref) {
+          ref = ref.ref;
           const merged = Object.assign(ref, Object.assign({ ref: 0 }));
-          const obj = { ref: ref.ref };
+          const IconButton = entry(dependencyMap[15]).IconButton;
           const merged1 = Object.assign(merged);
-          obj.size = "sm";
-          obj.variant = "secondary";
-          const intl = entry(1115).intl;
-          obj.accessibilityLabel = intl.string(entry(1115).t.PdRCRg);
-          obj.icon = jsx(entry(7538).MoreHorizontalIcon, { size: "sm", color: nativeDefault.colors.WHITE });
-          return jsx(entry(7536).IconButton, { ref: ref.ref });
-        }
-    };
-    tmp9 = jsx(entry(7531).ContextMenu, {
-      items,
-      children(ref) {
-          const merged = Object.assign(ref, Object.assign({ ref: 0 }));
-          const obj = { ref: ref.ref };
-          const merged1 = Object.assign(merged);
-          obj.size = "sm";
-          obj.variant = "secondary";
-          const intl = entry(1115).intl;
-          obj.accessibilityLabel = intl.string(entry(1115).t.PdRCRg);
-          obj.icon = jsx(entry(7538).MoreHorizontalIcon, { size: "sm", color: nativeDefault.colors.WHITE });
-          return jsx(entry(7536).IconButton, { ref: ref.ref });
+          const intl = entry(dependencyMap[8]).intl;
+          const MoreHorizontalIcon = entry(dependencyMap[16]).MoreHorizontalIcon;
+          return <IconButton ref={ref} size="sm" variant="secondary" accessibilityLabel={intl.string(entry(dependencyMap[8]).t.PdRCRg)} icon={<MoreHorizontalIcon size="sm" color={nativeDefault.colors.WHITE} />} />;
         }
     });
   }
   return tmp9;
-};
+});
+let result = size.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryMoreMenu.tsx");
+
+export default tmp3;

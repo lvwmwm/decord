@@ -1,96 +1,103 @@
-// Module ID: 8215
-// Function ID: 8216
+// Module ID: 8256
+// Function ID: 8257
 // Name: PlayAgeSignals
-// Dependencies: [5, 8216, 8217, 2]
+// Dependencies: [5, 8257, 8258, 2]
 // Exports: getAgeSignals
 
-// Module 8215 (PlayAgeSignals)
-import NativePlayAgeSignalsModuleDefault from "NativePlayAgeSignalsModule" /* 8216 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+// Module 8256 (PlayAgeSignals)
+import react_nativeDefault from "react-native" /* 8257 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-let closure_4 = async function _getAgeSignals(arg0, value) {
-  if (c0 === 2) {
-    c0 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
+let c0, c1;
+
+let obj = function _getAgeSignals() {
+  obj = _asyncToGenerator(async function(arg0, value) {
+    let tmp4Result;
+    function applyFakeAgeSignalsScenarioFromExperiment() {
+      let enabled;
+      let scenario;
+      if (null != closure_1_1(closure_1_2[1])) {
+        obj = closure_1_0(closure_1_2[2]);
+        const fakePlayAgeSignalsConfig = obj.getFakePlayAgeSignalsConfig("PlayAgeSignals.getAgeSignals");
+        ({ enabled, scenario } = fakePlayAgeSignalsConfig);
+        let str2 = "";
+        const setFakeAgeSignalsScenario = tmp(closure_1_2[1]).setFakeAgeSignalsScenario;
+        closure_1_1(closure_1_2[1]);
+        if (enabled) {
+          str2 = scenario;
+        }
+        const result = setFakeAgeSignalsScenario(str2);
+      }
     }
-  } else {
-    try {
-      c0 = 2;
-      if (0 === c1) {
-        if (arg0 === 1) {
+    if (c0 === 2) {
+      c0 = 3;
+      let str2 = "Generator functions may not be called on executing generators";
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: "IconComponent" };
+      }
+    } else {
+      try {
+        c0 = 2;
+        if (0 === c1) {
+          if (arg0 === 1) {
+            c0 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c0 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            const tmp4 = importDefault;
+            const tmp5 = dependencyMap;
+            if (null == react_nativeDefault) {
+              const _Error = Error;
+              const self = this;
+              const str = "NativePlayAgeSignalsModule is not available on this platform";
+              const self2 = this;
+              const error = new Error("NativePlayAgeSignalsModule is not available on this platform");
+              throw error;
+            } else {
+              applyFakeAgeSignalsScenarioFromExperiment();
+              c1 = 1;
+              c0 = 1;
+              const obj4 = { value: tmp4Result.getAgeSignals(), done: false };
+              tmp4Result = tmp4(tmp5[1]);
+              return obj4;
+            }
+          }
+        } else if (arg0 === 1) {
           c0 = 3;
           throw value;
         } else if (arg0 === 2) {
           c0 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
+          const obj5 = { value, done: true };
+          return obj5;
         } else {
-          if (null == NativePlayAgeSignalsModuleDefault) {
-            const _Error = Error;
-            const error = new Error("NativePlayAgeSignalsModule is not available on this platform");
-            throw error;
-          } else {
-            (function applyFakeAgeSignalsScenarioFromExperiment() {
-              if (null != closure_1_1(closure_1_2[1])) {
-                const fakePlayAgeSignalsConfig = closure_1_0(tmp2[2]).getFakePlayAgeSignalsConfig("PlayAgeSignals.getAgeSignals");
-                ({ enabled, scenario } = fakePlayAgeSignalsConfig);
-                const obj = closure_1_0(tmp2[2]);
-                let str2 = "";
-                if (enabled) {
-                  str2 = scenario;
-                }
-                const result = closure_1_1(tmp2[1]).setFakeAgeSignalsScenario(str2);
-                const tmpResult = closure_1_1(tmp2[1]);
-              }
-            })();
-            c1 = 1;
-            c0 = 1;
-            const obj4 = { value: tmp5(tmp6[1]).getAgeSignals(), done: false };
-            return obj4;
-          }
-          tmp5 = importDefault;
-          tmp6 = dependencyMap;
+          c0 = 3;
+          obj = { value, done: true };
+          return obj;
         }
-      } else if (arg0 === 1) {
+      } catch (tmp11) {
         c0 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c0 = 3;
-        const obj5 = { value, done: true };
-        return obj5;
-      } else {
-        c0 = 3;
-        let obj = { value, done: true };
-        return obj;
+        throw tmp11;
       }
-    } catch (tmp14) {
-      c0 = tmp;
-      throw tmp14;
     }
-  }
+  });
+  return obj(...arguments);
 };
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/age_assurance/native/PlayAgeSignals.tsx");
 
 export const AgeSignalsStatus = { UNSPECIFIED: 0, SHARED: 1, NOT_SHARED: 2, VERIFICATION_REQUIRED: 3 };
 export const AgeRangeSource = { UNSPECIFIED: 0, TIER_A: 1, TIER_B: 2, TIER_C: 3, TIER_D: 4 };
 export const SignificantChangeStatus = { UNSPECIFIED: 0, APPROVED: 1, PENDING: 2, DECLINED: 3 };
 export const getAgeSignals = function getAgeSignals() {
-  const self = this;
-  const apply = closure_4.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };

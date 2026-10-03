@@ -1,87 +1,186 @@
-// Module ID: 12942
-// Function ID: 12943
+// Module ID: 12997
+// Function ID: 12998
 // Name: HeadlessCollectiblesPurchaseFlow
-// Dependencies: [19, 1074, 1085, 21, 8857, 8491, 10674, 1364, 4530, 10477, 10464, 4809, 7803, 12943, 2]
-// Exports: default
+// Dependencies: [19, 1085, 1096, 21, 558, 576, 8870, 8496, 10745, 1369, 4541, 4854, 7847, 12998, 10551, 10538, 2]
 
-// Module 12942 (HeadlessCollectiblesPurchaseFlow)
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 7803 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 8491 */;
-import ACOMExperiments from "ACOMExperiments" /* 8857 */;
-import NativePaymentContext from "NativePaymentContext" /* 10477 */;
-import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 10674 */;
-import HeadlessCollectiblesPurchaseRunner from "HeadlessCollectiblesPurchaseRunner" /* 12943 */;
-import noop from "module_19" /* 19 */;
+// Module 12997 (HeadlessCollectiblesPurchaseFlow)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1085 */;
+import Constants2 from "Constants" /* 1096 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 4541 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 8496 */;
+import ACOMExperiments from "ACOMExperiments" /* 8870 */;
+import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 10745 */;
+import HeadlessCollectiblesPurchaseRunner from "HeadlessCollectiblesPurchaseRunner" /* 12998 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const NativeCheckoutStoreProviderDefault = tmp3(10464);
-require = fn;
-const application_id = fn(1074).COLLECTIBLES_APPLICATION_ID;
-const PaymentGateways = fn(1085).PaymentGateways;
-const jsx = fn(21).jsx;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/collectibles/native/headless_components/HeadlessCollectiblesPurchaseFlow.tsx");
-
-export default function HeadlessCollectiblesPurchaseFlow(arg0) {
+let tmp3;
+const NativeCheckoutStoreProviderDefault = tmp3(10538);
+const application_id = Constants.COLLECTIBLES_APPLICATION_ID;
+const PaymentGateways = Constants2.PaymentGateways;
+const jsx = Fragment.jsx;
+tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let analyticsLocations;
+  let attempt;
+  let first;
+  let onBuySettled;
+  let product;
+  let result;
+  let stageCollectibleChangeForEditProfile;
+  let obj = react2;
+  const cResult = obj.c(24);
+  ({ product, attempt, analyticsLocations, onBuySettled, stageCollectibleChangeForEditProfile } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { location: "CollectiblesPurchaseFlow" };
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  const OTPACOMOrderExperiment = tmp(8870).OTPACOMOrderExperiment;
+  const enabled = OTPACOMOrderExperiment.useConfig(first).enabled;
+  const tmpResult = useProductPurchaseState;
+  const isPurchased = tmpResult.useProductPurchaseState(product).isPurchased;
+  useCollectiblesExternalGatewayFacetDefault(product);
+  const tmpResult2 = PlatformUtils;
+  if (tmpResult2.isIOS()) {
+    let GOOGLE = tmp6.APPLE_ADVANCED_COMMERCE;
+  } else {
+    GOOGLE = tmp6.GOOGLE;
+  }
+  if (cResult[1] === isPurchased) {
+    const _Symbol = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const items = [];
+      cResult[4] = items;
+    }
+    if (cResult[5] !== product.skuId) {
+      const items1 = [product.skuId];
+      cResult[5] = product.skuId;
+      cResult[6] = items1;
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+      class S {
+        constructor() {
+          obj = closure_1_1(closure_1_2[11]);
+          return obj.hideActionSheet(closure_1_0(closure_1_2[12]).PRODUCT_DETAILS_ACTION_SHEET_KEY);
+        }
+      }
+      cResult[7] = S;
+    } else {
+      class S {
+        constructor() {
+          obj = closure_1_1(closure_1_2[11]);
+          return obj.hideActionSheet(closure_1_0(closure_1_2[12]).PRODUCT_DETAILS_ACTION_SHEET_KEY);
+        }
+      }
+    }
+    if (cResult[8] === analyticsLocations) {
+      class S {
+        constructor() {
+          obj = closure_1_1(closure_1_2[11]);
+          return obj.hideActionSheet(closure_1_0(closure_1_2[12]).PRODUCT_DETAILS_ACTION_SHEET_KEY);
+        }
+      }
+      if (cResult[11] === analyticsLocations) {
+        class S {
+          constructor() {
+            obj = closure_1_1(closure_1_2[11]);
+            return obj.hideActionSheet(closure_1_0(closure_1_2[12]).PRODUCT_DETAILS_ACTION_SHEET_KEY);
+          }
+        }
+      }
+      cResult[11] = analyticsLocations;
+      cResult[12] = attempt;
+      cResult[13] = onBuySettled;
+      cResult[14] = product;
+      cResult[15] = stageCollectibleChangeForEditProfile;
+      cResult[16] = jsx(HeadlessCollectiblesPurchaseRunner.HeadlessCollectiblesPurchaseRunner, { product, attempt, analyticsLocations, onBuySettled, stageCollectibleChangeForEditProfile });
+      const tmp19 = jsx(HeadlessCollectiblesPurchaseRunner.HeadlessCollectiblesPurchaseRunner, { product, attempt, analyticsLocations, onBuySettled, stageCollectibleChangeForEditProfile });
+    }
+    const obj4 = { is_gift: false, location_stack: analyticsLocations, payment_type: "sku", sku_id: product.skuId, application_id };
+    cResult[8] = analyticsLocations;
+    cResult[9] = product.skuId;
+    cResult[10] = obj4;
+  }
+  let tmp9 = !isPurchased;
+  if (tmp9) {
+    class S {
+      constructor() {
+        obj = closure_1_1(closure_1_2[11]);
+        return obj.hideActionSheet(closure_1_0(closure_1_2[12]).PRODUCT_DETAILS_ACTION_SHEET_KEY);
+      }
+    }
+    if (!tmp10) {
+      class S {
+        constructor() {
+          obj = closure_1_1(closure_1_2[11]);
+          return obj.hideActionSheet(closure_1_0(closure_1_2[12]).PRODUCT_DETAILS_ACTION_SHEET_KEY);
+        }
+      }
+      if (result) {
+        class S {
+          constructor() {
+            obj = closure_1_1(closure_1_2[11]);
+            return obj.hideActionSheet(closure_1_0(closure_1_2[12]).PRODUCT_DETAILS_ACTION_SHEET_KEY);
+          }
+        }
+        result = obj5.isGooglePlayBillingSupported();
+      }
+    }
+    tmp9 = tmp10;
+  }
+  cResult[1] = isPurchased;
+  cResult[2] = enabled;
+  cResult[3] = tmp9;
+}) : ((arg0) => {
+  let GOOGLE;
+  let analyticsLocations;
+  let attempt;
+  let onBuySettled;
+  let product;
+  let stageCollectibleChangeForEditProfile;
+  let tmp6;
   ({ product, analyticsLocations } = arg0);
   ({ attempt, onBuySettled, stageCollectibleChangeForEditProfile } = arg0);
   const OTPACOMOrderExperiment = ACOMExperiments.OTPACOMOrderExperiment;
-  const isPurchased = useProductPurchaseState.useProductPurchaseState(product).isPurchased;
+  const enabled = OTPACOMOrderExperiment.useConfig({ location: "CollectiblesPurchaseFlow" }).enabled;
+  let obj = useProductPurchaseState;
+  const isPurchased = obj.useProductPurchaseState(product).isPurchased;
   const tmp4 = useCollectiblesExternalGatewayFacetDefault(product);
+  const obj2 = PlatformUtils;
   if (obj2.isIOS()) {
-    let GOOGLE = tmp5.APPLE_ADVANCED_COMMERCE;
-    let tmp6 = tmp5;
+    GOOGLE = tmp5.APPLE_ADVANCED_COMMERCE;
+    tmp6 = tmp5;
   } else {
     GOOGLE = tmp5.GOOGLE;
     tmp6 = tmp5;
   }
   let tmp7 = !isPurchased;
-  if (!isPurchased) {
-    let tmp8 = GOOGLE === tmp6.APPLE_ADVANCED_COMMERCE && OTPACOMOrderExperiment.useConfig({ location: "CollectiblesPurchaseFlow" }).enabled;
+  if (tmp7) {
+    let tmp8 = GOOGLE === tmp6.APPLE_ADVANCED_COMMERCE && enabled;
     if (!tmp8) {
       let result = GOOGLE === tmp6.GOOGLE;
       if (result) {
-        result = tmp(4530).isGooglePlayBillingSupported();
-        const tmpResult = tmp(4530);
+        const tmpResult = BillingPlatformUtils;
+        result = tmpResult.isGooglePlayBillingSupported();
       }
       tmp8 = result;
     }
     tmp7 = tmp8;
   }
-  const obj3 = { skuIDs: [], activeSubscription: null, children: null };
-  const obj4 = {
-    headless: true,
-    paymentGateway: GOOGLE,
-    orderRequired: tmp7,
-    skuIds: null,
-    isGift: false,
-    activeSubscription: null,
-    initialExternalGatewayFacet: tmp4,
-    onOrderRetryCancellation() {
-      return ActionSheetActionCreatorsDefault.hideActionSheet(openProductDetailsActionSheet.PRODUCT_DETAILS_ACTION_SHEET_KEY);
-    },
-    checkoutAnalyticsFields: { is_gift: false, location_stack: analyticsLocations, payment_type: "sku", sku_id: product.skuId, application_id },
-    children: null
-  };
+  const NativePaymentContextProvider = tmp(10551).NativePaymentContextProvider;
   const items = [product.skuId];
-  obj4.skuIds = items;
-  obj2 = PlatformUtils;
   const obj5 = { is_gift: false, location_stack: analyticsLocations, payment_type: "sku", sku_id: product.skuId, application_id };
-  obj4.children = jsx(HeadlessCollectiblesPurchaseRunner.HeadlessCollectiblesPurchaseRunner, { product, attempt, analyticsLocations, onBuySettled, stageCollectibleChangeForEditProfile });
-  obj3.children = jsx(NativeCheckoutStoreProviderDefault, {
-    headless: true,
-    paymentGateway: GOOGLE,
-    orderRequired: tmp7,
-    skuIds: null,
-    isGift: false,
-    activeSubscription: null,
-    initialExternalGatewayFacet: tmp4,
-    onOrderRetryCancellation() {
-      return ActionSheetActionCreatorsDefault.hideActionSheet(openProductDetailsActionSheet.PRODUCT_DETAILS_ACTION_SHEET_KEY);
-    },
-    checkoutAnalyticsFields: { is_gift: false, location_stack: analyticsLocations, payment_type: "sku", sku_id: product.skuId, application_id },
-    children: null
-  }, product.skuId);
-  return jsx(NativePaymentContext.NativePaymentContextProvider, { skuIDs: [], activeSubscription: null, children: null });
-};
+  NativeCheckoutStoreProviderDefault;
+  return <NativePaymentContextProvider skuIDs={[]} activeSubscription={null}>{null}</NativePaymentContextProvider>;
+});
+let result = size.fileFinishedImporting("modules/collectibles/native/headless_components/HeadlessCollectiblesPurchaseFlow.tsx");
+
+export default tmp3;

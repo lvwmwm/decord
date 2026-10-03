@@ -1,11 +1,12 @@
-// Module ID: 6010
-// Function ID: 6011
+// Module ID: 5697
+// Function ID: 5698
 // Name: SKUConstants
 // Dependencies: [2]
 
-// Module 6010 (SKUConstants)
+// Module 5697 (SKUConstants)
 import size from "module_2" /* 2 */;
 
+const set = new Set(["500428425362931713", "451550535720501248", "471376328319303681", "466696214818193408"]);
 const result = size.fileFinishedImporting("modules/skus/SKUConstants.tsx");
 
-export const THE_GAME_AWARD_WINNER_SKUS = new Set(["500428425362931713", "451550535720501248", "471376328319303681", "466696214818193408"]);
+export const THE_GAME_AWARD_WINNER_SKUS = set;

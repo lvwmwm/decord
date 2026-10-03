@@ -1,109 +1,253 @@
-// Module ID: 6085
-// Function ID: 6086
+// Module ID: 5974
+// Function ID: 5975
 // Name: FastImage
-// Dependencies: [19, 17, 21, 4845, 6086, 1364, 2]
+// Dependencies: [109, 19, 17, 21, 4890, 558, 576, 5975, 1369, 2]
 
-// Module 6085 (FastImage)
-import FastImageNativeComponentDefault from "FastImageNativeComponent" /* 6086 */;
-import noop from "module_19" /* 19 */;
+// Module 5974 (FastImage)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import FastImageNativeComponentDefault from "FastImageNativeComponent" /* 5975 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import size from "module_2" /* 2 */;
 
-class FastImageAndroid {
-  constructor(arg0) {
-    obj = {};
-    merged = Object.assign(global);
-    obj.defaultSource = global.placeholder;
-    obj.fadeDuration = 0;
-    return jsx(Image, obj);
+let accessible;
+
+let closure_3 = ["tintColor"];
+let closure_4 = ["tintColor"];
+const Image = react_native.Image;
+const jsx = Fragment.jsx;
+let closure_8 = createStyles.createStyles({ base: { overflow: "hidden" } });
+const memo = react.memo;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((accessible) => {
+  let enableAnimation;
+  let fade;
+  let manualPlayback;
+  let paused;
+  let placeholder;
+  let source;
+  let style;
+  let tintColor;
+  let usesSmallCache;
+  const obj = react2;
+  const cResult = obj.c(22);
+  const tmp3 = closure_8();
+  accessible = accessible.accessible;
+  if (accessible == null) {
+    accessible = null != accessible.accessibilityLabel || undefined;
   }
-}
-get_ActivityIndicator = fn(17);
-({ Image: c2, NativeModules: c3 } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
-let closure_5 = createStyles.createStyles({ base: { overflow: "hidden" } });
-let merged = Object.assign(noop.memo((fade) => {
-  ({ source, placeholder, enableAnimation } = fade);
-  let tmp2 = undefined === enableAnimation;
-  if (!tmp2) {
-    tmp2 = enableAnimation;
-  }
-  fade = fade.fade;
-  let tmp3 = undefined === fade;
-  ({ paused, manualPlayback } = fade);
-  if (!tmp3) {
-    tmp3 = fade;
-  }
-  const usesSmallCache = fade.usesSmallCache;
+  ({ source, style, tintColor, placeholder, enableAnimation, paused, manualPlayback, fade, usesSmallCache } = accessible);
   if (typeof source === "number") {
-    const obj2 = {};
-    const merged = Object.assign(fade);
-    return <React2 />;
-  } else {
-    let assetSource = null;
-    if (null != placeholder) {
-      assetSource = React2.resolveAssetSource(placeholder);
+    if (cResult[0] === accessible) {
+      let tmp28;
+      if (cResult[1] === accessible) {
+        tmp28 = cResult[2];
+      }
+      return tmp28;
     }
-    const obj = {};
-    const merged1 = Object.assign(fade);
+    const merged = Object.assign(accessible);
+    const tmp34 = <Image accessible={accessible} />;
+    cResult[0] = accessible;
+    cResult[1] = accessible;
+    cResult[2] = tmp34;
+    tmp28 = tmp34;
+  } else {
+    let tmp8;
+    let items1;
+    if (cResult[3] !== placeholder) {
+      let assetSource = null;
+      if (null != placeholder) {
+        assetSource = Image.resolveAssetSource(placeholder);
+      }
+      cResult[3] = placeholder;
+      cResult[4] = assetSource;
+      tmp8 = assetSource;
+    } else {
+      tmp8 = cResult[4];
+    }
+    let tmp11 = accessible;
+    if ("tintColor" in accessible) {
+      let tmp12;
+      if (cResult[5] !== accessible) {
+        const tintColor2 = accessible.tintColor;
+        const tmp15 = _objectWithoutProperties(accessible, closure_3);
+        cResult[5] = accessible;
+        cResult[6] = tmp15;
+        tmp12 = tmp15;
+      } else {
+        tmp12 = cResult[6];
+      }
+      tmp11 = tmp12;
+    }
     const _Array = Array;
     let first = source;
     if (Array.isArray(source)) {
       first = source[0];
     }
-    obj.source = first;
-    const items = [tmp.base, fade.style];
-    obj.style = items;
-    let uri;
+    if (cResult[7] === style) {
+      if (cResult[8] === tmp3.base) {
+        let tmp18;
+        if (cResult[9] === tintColor) {
+          tmp18 = cResult[10];
+        }
+        let uri;
+        if (tmp8 != null) {
+          uri = tmp8.uri;
+        }
+        if (cResult[11] === accessible) {
+          if (cResult[12] === (undefined === enableAnimation || enableAnimation)) {
+            if (cResult[13] === (undefined === fade || fade)) {
+              if (cResult[14] === manualPlayback) {
+                if (cResult[15] === tmp11) {
+                  if (cResult[16] === paused) {
+                    if (cResult[17] === first) {
+                      if (cResult[18] === tmp18) {
+                        if (cResult[19] === uri) {
+                          let tmp20;
+                          if (cResult[20] === (undefined !== usesSmallCache && usesSmallCache)) {
+                            tmp20 = cResult[21];
+                          }
+                          return tmp20;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        FastImageNativeComponentDefault;
+        const merged1 = Object.assign(tmp11);
+        const tmp27 = <tmp23 accessible={accessible} source={first} style={tmp18} placeholder={uri} enableAnimation={undefined === enableAnimation || enableAnimation} paused={paused} manualPlayback={manualPlayback} fade={undefined === fade || fade} usesSmallCache={undefined !== usesSmallCache && usesSmallCache} />;
+        cResult[11] = accessible;
+        cResult[12] = undefined === enableAnimation || enableAnimation;
+        cResult[13] = undefined === fade || fade;
+        cResult[14] = manualPlayback;
+        cResult[15] = tmp11;
+        cResult[16] = paused;
+        cResult[17] = first;
+        cResult[18] = tmp18;
+        cResult[19] = uri;
+        cResult[20] = undefined !== usesSmallCache && usesSmallCache;
+        cResult[21] = tmp27;
+        tmp20 = tmp27;
+      }
+    }
+    if (null == tintColor) {
+      const items = [tmp3.base, style];
+      items1 = items;
+    } else {
+      items1 = [tmp3.base, style, ];
+      const obj4 = { tintColor };
+      items1[2] = obj4;
+    }
+    cResult[7] = style;
+    cResult[8] = tmp3.base;
+    cResult[9] = tintColor;
+    cResult[10] = items1;
+    tmp18 = items1;
+  }
+}) : ((accessible) => {
+  let enableAnimation;
+  let first;
+  let items1;
+  let manualPlayback;
+  let paused;
+  let placeholder;
+  let source;
+  let style;
+  let tintColor;
+  let uri;
+  const tmp = closure_8();
+  accessible = accessible.accessible;
+  if (accessible == null) {
+    accessible = null != accessible.accessibilityLabel || undefined;
+  }
+  ({ source, style, tintColor, placeholder, enableAnimation } = accessible);
+  const fade = accessible.fade;
+  let tmp4 = undefined === fade;
+  const tmp3 = undefined === enableAnimation || enableAnimation;
+  ({ paused, manualPlayback } = accessible);
+  if (!tmp4) {
+    tmp4 = fade;
+  }
+  const usesSmallCache = accessible.usesSmallCache;
+  const tmp5 = undefined !== usesSmallCache && usesSmallCache;
+  if (typeof source === "number") {
+    const merged = Object.assign(accessible);
+    return <Image accessible={accessible} />;
+  } else {
+    let assetSource = null;
+    if (null != placeholder) {
+      assetSource = Image.resolveAssetSource(placeholder);
+    }
+    let tmp8 = accessible;
+    if ("tintColor" in accessible) {
+      const tintColor2 = accessible.tintColor;
+      tmp8 = _objectWithoutProperties(accessible, closure_4);
+    }
+    const obj = { accessible, source: first, style: items1, placeholder: uri, enableAnimation: tmp3, paused, manualPlayback, fade: tmp4, usesSmallCache: tmp5 };
+    const tmp14 = FastImageNativeComponentDefault;
+    const merged1 = Object.assign(tmp8);
+    const _Array = Array;
+    first = source;
+    const tmp11 = jsx;
+    if (Array.isArray(source)) {
+      first = source[0];
+    }
+    if (null == tintColor) {
+      const items = [tmp.base, style];
+      items1 = items;
+    } else {
+      items1 = [tmp.base, style, ];
+      const obj3 = { tintColor };
+      items1[2] = obj3;
+    }
+    uri = undefined;
     if (assetSource != null) {
       uri = assetSource.uri;
     }
-    obj.placeholder = uri;
-    obj.enableAnimation = tmp2;
-    obj.paused = paused;
-    obj.manualPlayback = manualPlayback;
-    obj.fade = tmp3;
-    obj.usesSmallCache = tmp4;
-    return jsx(FastImageNativeComponentDefault, {});
+    return tmp11(tmp14, obj);
   }
-  tmp = closure_5();
-  tmp4 = undefined !== usesSmallCache && usesSmallCache;
-}), {
-  preload(arg0) {
-    closure_0 = arg0;
-    const items = [
-      new Promise((arg0) => {
-        ImageManager = ImageManager.ImageManager;
-        ImageManager.preload(closure_0, arg0);
-      }),
-
-    ];
-    const promise = new Promise((arg0) => {
-      ImageManager = ImageManager.ImageManager;
-      ImageManager.preload(closure_0, arg0);
-    });
-    items[1] = new Promise((arg0) => setTimeout(arg0, num));
-    return Promise.race(items);
+}));
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((accessible) => {
+  const obj = react2;
+  const cResult = obj.c(3);
+  accessible = accessible.accessible;
+  if (accessible == null) {
+    accessible = null != accessible.accessibilityLabel || undefined;
   }
+  if (cResult[0] === accessible) {
+    let tmp3;
+    if (cResult[1] === accessible) {
+      tmp3 = cResult[2];
+    }
+    return tmp3;
+  }
+  const merged = Object.assign(accessible);
+  const tmp5 = <Image accessible={accessible} defaultSource={arg0.placeholder} fadeDuration={0} />;
+  cResult[0] = accessible;
+  cResult[1] = accessible;
+  cResult[2] = tmp5;
+  tmp3 = tmp5;
+}) : ((accessible) => {
+  accessible = accessible.accessible;
+  if (accessible == null) {
+    accessible = null != accessible.accessibilityLabel || undefined;
+  }
+  const merged = Object.assign(accessible);
+  return <Image accessible={accessible} defaultSource={arg0.placeholder} fadeDuration={0} />;
 });
-FastImageAndroid.preload = (arg0, arg1) => {
-  closure_0 = arg1;
-  const catchPromise = React2.prefetch(arg0).catch(() => {
-
-  });
-  let racePromise = catchPromise;
-  if (null != arg1) {
-    const items = [catchPromise, ];
-    const promise = new Promise((arg0) => setTimeout(arg0, closure_0));
-    items[1] = promise;
-    racePromise = Promise.race(items);
-  }
-  return racePromise;
-};
-const PlatformUtils = fn(1364);
 if (PlatformUtils.isAndroid()) {
-  merged = FastImageAndroid;
+  memoResult = tmp4;
 }
-const size = fn(2);
 const result = size.fileFinishedImporting("components_native/common/FastImage.tsx");
 
-export default merged;
+export default memoResult;

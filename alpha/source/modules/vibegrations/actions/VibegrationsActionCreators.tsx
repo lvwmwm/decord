@@ -1,516 +1,420 @@
-// Module ID: 8687
-// Function ID: 8688
+// Module ID: 8700
+// Function ID: 8701
 // Name: VibegrationsActionCreators
-// Dependencies: [5, 4860, 8686, 1074, 5027, 573, 8688, 8689, 1271, 4874, 12663, 5555, 6770, 8682, 2]
-// Exports: createProject, deleteProjectInBackground, markLogsSeen, refreshPublishedProject, reloadVibegrationsProjectFrames, renameProject, setBuilderPreviewApplicationId, setBuilderPreviewMobile, setChatSidebarWidth, setComposerDraft, setGuildHints, setProjectIcon, setSelectedProjectForGuild, trackPublishFailed, updateProjectSettings
+// Dependencies: [5, 4905, 1377, 8699, 1085, 5072, 584, 8701, 8702, 1282, 4919, 12697, 6747, 6658, 8695, 2]
+// Exports: createProject, deleteProjectInBackground, fetchProjectLimit, markLogsSeen, refreshPublishedProject, reloadVibegrationsProjectFrames, renameProject, setBuilderPreviewApplicationId, setBuilderPreviewMobile, setChatSidebarWidth, setComposerDraft, setGuildHints, setProjectIcon, setSelectedProjectForGuild, trackPublishFailed, updateProjectSettings
 
-// Module 8687 (VibegrationsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5555 */;
-import VibegrationsAnalytics from "VibegrationsAnalytics" /* 8688 */;
-import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 8689 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ReadStateStore from "ReadStateStore" /* 4860 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8686 */;
+// Module 8700 (VibegrationsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import ReadStateConstants from "ReadStateConstants" /* 5072 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 6747 */;
+import VibegrationsAnalytics from "VibegrationsAnalytics" /* 8701 */;
+import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 8702 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import ReadStateStore from "ReadStateStore" /* 4905 */;
+import UserStore from "UserStore" /* 1377 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8699 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let c7, closure_10, closure_11, closure_17, currentUser, projectsFetchState, resourceIds;
+
 function reloadVibegrationsAppFrames(application_id) {
-  VibegrationsPlatformUtilsDefault.reloadAppFrames(application_id);
+  obj = VibegrationsPlatformUtilsDefault;
+  obj.reloadAppFrames(application_id);
 }
 function listProjects() {
-  const self = this;
-  const apply = closure_12.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 }
-let closure_12 = async function _listProjects(arg0, value) {
-  if (c6 === 2) {
-    c6 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp6 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c6 = 2;
-      let tmp7 = c5;
-      if (0 === c5) {
+let obj = function _listProjects() {
+  obj = _asyncToGenerator(async (guildId) => {
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    return (async (arg0, value) => {
+      let tmp44;
+      function forgetMissingProjects() {
+        return closure_1_15(...arguments);
+      }
+      if (c6 === 2) {
+        c6 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
-          c6 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c6 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
+          return { value, done: true };
         } else {
-          closure_3 = tmp3;
-          closure_2 = tmp7;
-          closure_130_0 = undefined;
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } else {
+        try {
           let body;
-          closure_130_2 = undefined;
-          c1 = closure_0;
-          if (closure_0 == null) {
-            c1 = null;
-          }
-          closure_130_0 = c1;
-          projectsFetchState = projectsFetchState.getProjectsFetchState();
-          let type;
-          if (projectsFetchState != null) {
-            type = projectsFetchState.type;
-          }
-          if ("loading" !== type) {
-            closure_9 = tmp33;
-            const obj5 = { type: "VIBEGRATIONS_PROJECTS_FETCH_START", guildId: tmp33 };
-            DispatcherDefault.dispatch(obj5);
-            c4 = 1;
-            const HTTP = HTTPUtils.HTTP;
-            const request = { url: constants.VIBEGRATIONS_PROJECTS, query: null, rejectWithError: true };
-            let tmp44;
-            if (null != tmp52) {
-              const obj7 = { guild_id: tmp52 };
-              tmp44 = obj7;
-            }
-            request.query = tmp44;
-            c5 = 2;
-            c6 = 1;
-            const obj8 = { value: HTTP.get(request), done: false };
-            return obj8;
-          } else {
-            tmp7 = null != tmp33;
-            if (tmp7) {
-              tmp7 = tmp33 !== closure_9;
-            }
-            if (tmp7) {
-              closure_10 = tmp33;
-            }
-          }
-        }
-      } else {
-        if (1 === tmp7) {
-          c4 = 0;
-          const obj9 = { type: "VIBEGRATIONS_PROJECTS_FETCH_FAIL", guildId: closure_130_0 };
-          closure_131_1(closure_131_2[5]).dispatch(obj9);
-          const obj4 = closure_131_1(closure_131_2[5]);
-        } else if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 0;
-          c6 = 3;
-          const obj10 = { value, done: true };
-          return obj10;
-        } else {
-          body = value.body;
-          const obj11 = { type: "VIBEGRATIONS_PROJECTS_FETCH_SUCCESS", projects: body, guildId: closure_130_0 };
-          closure_131_1(closure_131_2[5]).dispatch(obj11);
-          (function forgetMissingProjects() {
-            const self = this;
-            const apply = closure_1_14.apply;
-            if (typeof apply === "unknown") {
-              let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
             } else {
-              applyArgumentsResult = apply(self, arguments);
-            }
-            return applyArgumentsResult;
-          })();
-          c4 = 0;
-          const obj = closure_131_1(closure_131_2[5]);
-        }
-        closure_130_2 = closure_131_10;
-        closure_131_10 = null;
-        tmp7 = null != closure_130_2;
-        if (tmp7) {
-          tmp7 = closure_130_2 !== closure_130_0;
-        }
-        if (tmp7) {
-          tmp7 = closure_131_11(closure_130_2);
-        }
-      }
-      c6 = 3;
-    } catch (tmp45) {
-      if (tmp4 === c4) {
-        c6 = tmp2;
-        throw tmp45;
-      } else {
-        c5 = tmp;
-      }
-    }
-  }
-};
-let closure_14 = async function _forgetMissingProjects(arg0, value) {
-  if (c7 === 2) {
-    c7 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj3 = { value, done: true };
-      return obj3;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    while (true) {
-      c7 = 2;
-      let tmp4 = c6;
-      if (0 === c6) {
-        if (arg0 === 1) {
-          c7 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c7 = 3;
-          let obj4 = { value, done: true };
-          return obj4;
-        } else {
-          closure_3 = tmp;
-          closure_2 = tmp4;
-          closure_130_0 = undefined;
-          closure_130_1 = undefined;
-          if (!c13) {
-            c13 = true;
-            resourceIds = resourceIds.getResourceIds(constants.CONJURING_PROJECT);
-            _require = resourceIds[Symbol.iterator]();
-            if (_require !== undefined) {
-              c5 = 1;
-              closure_130_0 = tmp36;
-              if (null == closure_131_5.getProject(closure_130_0)) {
-                if (0 !== closure_131_4.getMentionCount(closure_130_0, closure_131_7.CONJURING_PROJECT)) {
-                  let obj5 = closure_131_0(closure_131_2[9]);
-                  let _Math = Math;
-                  c6 = 2;
-                  c7 = 1;
-                  let obj6 = { value: obj5.sleep(5000 * Math.random()), done: false };
-                  return obj6;
-                } else {
-                  let tmp46 = closure_131_15(closure_130_0);
+              closure_3 = tmp;
+              guildId = undefined;
+              body = undefined;
+              closure_2 = undefined;
+              if (guildId == null) {
+                guildId = null;
+              }
+              projectsFetchState = projectsFetchState.getProjectsFetchState();
+              let type;
+              if (projectsFetchState != null) {
+                type = projectsFetchState.type;
+              }
+              if ("loading" !== type) {
+                closure_10 = tmp32;
+                const obj5 = { type: "VIBEGRATIONS_PROJECTS_FETCH_START", guildId };
+                const obj6 = DispatcherDefault;
+                obj6.dispatch(obj5);
+                c4 = 1;
+                const HTTP = HTTPUtils.HTTP;
+                const request = { url: constants.VIBEGRATIONS_PROJECTS, query: tmp44, rejectWithError: true };
+                tmp44 = undefined;
+                const get = HTTP.get;
+                if (null != guildId) {
+                  tmp44 = { guild_id: guildId };
+                  const obj7 = { guild_id: guildId };
+                }
+                c5 = 2;
+                c6 = 1;
+                const obj8 = { value: get(request), done: false };
+                return obj8;
+              } else {
+                const tmp36 = null != tmp32 && tmp32 !== closure_10;
+                if (tmp36) {
+                  closure_11 = tmp32;
                 }
               }
             }
+          } else {
+            if (1 === c5) {
+              c4 = 0;
+              const obj9 = { type: "VIBEGRATIONS_PROJECTS_FETCH_FAIL", guildId };
+              const obj4 = closure_131_1(closure_131_2[6]);
+              obj4.dispatch(obj9);
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 0;
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              body = value.body;
+              const obj11 = { type: "VIBEGRATIONS_PROJECTS_FETCH_SUCCESS", projects: body, guildId };
+              obj = closure_131_1(closure_131_2[6]);
+              obj.dispatch(obj11);
+              forgetMissingProjects();
+              c4 = 0;
+            }
+            closure_2 = c11;
+            c11 = null;
+            const tmp23 = null != closure_2 && closure_2 !== guildId;
+            if (tmp23) {
+              closure_131_12(closure_2);
+            }
           }
-          c7 = 3;
-          return { value: "HermesInternal", done: null };
-        }
-      } else if (1 === tmp4) {
-        c5 = 0;
-        _require.return();
-        throw ReadStateStore;
-      } else if (2 === tmp4) {
-        if (arg0 === 1) {
-          c7 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 0;
-          _require.return();
-          c7 = 3;
-          let obj7 = { value, done: true };
-          return obj7;
-        } else if (null == closure_131_5.getProject(closure_130_0)) {
-          c5 = 2;
-          c6 = 4;
-          c7 = 1;
-          let obj8 = { value: closure_131_16(closure_130_0), done: false };
-          return obj8;
-        }
-      } else if (3 === tmp4) {
-        c5 = 1;
-        closure_130_2 = ReadStateStore;
-        let obj2 = closure_131_0(closure_131_2[10]);
-        closure_130_1 = obj2.createFailureStatus(closure_130_2);
-        let tmp14 = 403 !== closure_130_1;
-        if (tmp14) {
-          tmp14 = 404 !== closure_130_1;
-        }
-        if (!tmp14) {
-          let tmp21 = closure_131_15(closure_130_0);
-        }
-      } else if (arg0 === 1) {
-        c7 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c5 = 0;
-        _require.return();
-        c7 = 3;
-        let obj = { value, done: true };
-        return obj;
-      } else {
-        c5 = 1;
-      }
-      c5 = 0;
-    }
-  }
-};
-function forgetProject(projectId) {
-  DispatcherDefault.dispatch({ type: "VIBEGRATIONS_PROJECT_DELETE_SUCCESS", projectId });
-}
-function getProject() {
-  const self = this;
-  const apply = closure_17.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-}
-let closure_17 = async function _getProject(arg0, signal) {
-  closure_0 = arg0;
-  c4 = 0;
-  c5 = 0;
-  return (async (arg0, value) => {
-    closure_3 = tmp3;
-    closure_2 = tmp2;
-    closure_130_0 = closure_0;
-    closure_130_1 = signal;
-    const HTTP = HTTPUtils.HTTP;
-    closure_130_2 = await HTTP.get({ url: Endpoints.VIBEGRATIONS_PROJECT(closure_0), rejectWithError: false, signal });
-    if (closure_130_1 != null) {
-      const aborted = closure_130_1.aborted;
-    }
-    let ok = true !== aborted;
-    if (ok) {
-      ok = closure_130_2.ok;
-    }
-    if (ok) {
-      closure_131_1(closure_131_2[5]).dispatch({ type: "VIBEGRATIONS_PROJECT_UPDATE_SUCCESS", project: closure_130_2.body.project });
-      (function updateIntegrationStatus(projectId, integrationStatus) {
-        signal(closure_1_2[5]).dispatch({ type: "VIBEGRATIONS_PROJECT_INTEGRATION_STATUS_UPDATE", projectId, integrationStatus });
-      })(closure_130_0, { bot_permissions_changed: closure_130_2.body.bot_permissions_changed, integration_installed: closure_130_2.body.integration_installed, preview_ready: closure_130_2.body.preview_ready, has_activity: closure_130_2.body.has_activity, owner_authorization_revoked: closure_130_2.body.owner_authorization_revoked });
-      closure_131_1(closure_131_2[5]);
-    }
-    return closure_130_2;
-  })();
-};
-let closure_18 = async function _createProject(arg0, value) {
-  if (c6 === 2) {
-    c6 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp6 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c6 = 2;
-      if (0 === c5) {
-        if (arg0 === 1) {
           c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c6 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          closure_2 = tmp3;
-          closure_1 = tmp7;
-          let body;
-          c4 = 1;
-          const HTTP = HTTPUtils.HTTP;
-          const request = { url: constants.VIBEGRATIONS_PROJECTS, body: null, rejectWithError: false };
-          const obj4 = { flags: VibegrationsTypes.VibegrationsProjectFlags.PUBLIC };
-          const merged = Object.assign(closure_0);
-          request.body = obj4;
-          c5 = 2;
-          c6 = 1;
-          const obj7 = { value: HTTP.post(request), done: false };
-          return obj7;
+          return { value: "IconComponent", done: "IconComponent" };
+        } catch (tmp45) {
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp45;
+          } else {
+            c5 = 1;
+          }
         }
-      } else if (1 === tmp7) {
-        c4 = 0;
-        closure_129_1 = closure_3;
-        const result = closure_130_0(closure_130_2[10]).classifyCreateFailure(closure_129_1);
-        const obj5 = closure_130_0(closure_130_2[10]);
-        const vibegrationsCreateError = new closure_130_0(closure_130_2[10]).VibegrationsCreateError(result, closure_130_0(closure_130_2[10]).createFailureStatus(closure_129_1));
-        throw vibegrationsCreateError;
-      } else if (arg0 === 1) {
-        c6 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 0;
-        c6 = 3;
-        const obj8 = { value, done: true };
-        return obj8;
-      } else {
-        body = value.body;
-        c4 = 0;
-        const obj9 = { type: "VIBEGRATIONS_PROJECT_CREATE_SUCCESS", project: body };
-        closure_130_1(closure_130_2[5]).dispatch(obj9);
-        c6 = 3;
-        const obj10 = { value: body.id, done: true };
-        return obj10;
       }
-    } catch (tmp34) {
-      closure_3 = tmp34;
-      if (tmp4 === c4) {
-        c6 = tmp2;
-        throw tmp34;
-      } else {
-        c5 = tmp;
-      }
-    }
-  }
+    })();
+  });
+  return obj(...arguments);
 };
-function patchProject() {
-  const self = this;
-  const apply = closure_20.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-}
-let closure_20 = async function _patchProject(arg0, body) {
-  closure_0 = arg0;
-  c4 = 0;
-  c5 = 0;
-  return (async (arg0, value) => {
-    closure_3 = tmp2;
-    closure_2 = tmp5;
-    const HTTP = HTTPUtils.HTTP;
-    const request = { url: Endpoints.VIBEGRATIONS_PROJECT(closure_0), body, rejectWithError: false };
-    closure_130_0 = await HTTP.patch(request);
-    if (closure_130_0.ok) {
-      closure_131_1(closure_131_2[5]).dispatch({ type: "VIBEGRATIONS_PROJECT_UPDATE_SUCCESS", project: closure_130_0.body });
-      closure_131_1(closure_131_2[5]);
-    }
-    return closure_130_0;
-  })();
-};
-let closure_21 = async function _setProjectIcon(arg0, icon) {
-  closure_0 = arg0;
-  c5 = 0;
-  c6 = 0;
-  c4 = 0;
-  return (async (arg0, value) => {
-    if (c6 === 2) {
-      c6 = 3;
+obj = function _forgetMissingProjects() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    if (c7 === 2) {
+      c7 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp6 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
-      try {
-        c6 = 2;
-        if (0 === c5) {
+      while (true) {
+        let closure_2;
+        let c0;
+        let closure_1;
+        let closure_0;
+        c7 = 2;
+        let tmp4 = c6;
+        if (0 === c6) {
           if (arg0 === 1) {
-            c6 = 3;
+            c7 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c6 = 3;
-            const obj4 = { value, done: true };
+            c7 = 3;
+            let obj4 = { value, done: true };
             return obj4;
           } else {
-            closure_3 = tmp3;
-            closure_2 = tmp7;
-            closure_130_0 = undefined;
-            closure_130_1 = undefined;
-            const obj5 = { icon };
-            c5 = 1;
-            c6 = 1;
-            const obj6 = { value: patchProject(closure_0, obj5), done: false };
-            return obj6;
-          }
-        } else {
-          if (1 === tmp7) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              const obj7 = { value, done: true };
-              return obj7;
-            } else {
-              closure_130_0 = value;
-              if (closure_130_0.ok) {
-                closure_130_1 = closure_130_0.body.preview_application_id;
-                if (null != closure_130_1) {
-                  c4 = 1;
-                  c5 = 3;
-                  c6 = 1;
-                  const obj8 = { value: closure_131_0(closure_131_2[12]).fetchApplication(closure_130_1), done: false };
-                  return obj8;
+            let closure_3 = tmp;
+            closure_2 = tmp4;
+            c0 = undefined;
+            closure_1 = undefined;
+            let tmp59 = c14;
+            if (!tmp59) {
+              c14 = true;
+              resourceIds = resourceIds.getResourceIds(constants.CONJURING_PROJECT);
+              closure_0 = resourceIds[Symbol.iterator]();
+              if (closure_0 !== undefined) {
+                let c5 = 1;
+                c0 = tmp36;
+                if (null == closure_131_6.getProject(c0)) {
+                  if (0 !== closure_131_4.getMentionCount(c0, closure_131_8.CONJURING_PROJECT)) {
+                    let obj5 = closure_131_0(closure_131_2[10]);
+                    let _Math = Math;
+                    c6 = 2;
+                    c7 = 1;
+                    let obj6 = { value: obj5.sleep(5000 * Math.random()), done: false };
+                    return obj6;
+                  } else {
+                    let tmp46 = closure_131_16(c0);
+                  }
                 }
               }
             }
-          } else {
-            if (2 === tmp7) {
-              c4 = 0;
-            } else if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 !== 2) {
-              c4 = 0;
-            }
-            c4 = 0;
-            c6 = 3;
-            const obj = { value, done: true };
-            return obj;
+            c7 = 3;
+            return { value: "IconComponent", done: "IconComponent" };
           }
-          c6 = 3;
-        }
-      } catch (tmp21) {
-        if (tmp4 === c4) {
-          c6 = tmp2;
-          throw tmp21;
+        } else if (1 === tmp4) {
+          c5 = 0;
+          closure_0.return();
+          throw closure_1_4;
+        } else if (2 === tmp4) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 0;
+            closure_0.return();
+            c7 = 3;
+            let obj7 = { value, done: true };
+            return obj7;
+          } else if (null == closure_131_6.getProject(c0)) {
+            c5 = 2;
+            c6 = 4;
+            c7 = 1;
+            let obj8 = { value: closure_131_19(c0), done: false };
+            return obj8;
+          }
+        } else if (3 === tmp4) {
+          c5 = 1;
+          closure_2 = closure_1_4;
+          let obj2 = closure_131_0(closure_131_2[11]);
+          closure_1 = obj2.createFailureStatus(closure_2);
+          let tmp14 = 403 !== closure_1;
+          if (tmp14) {
+            tmp14 = 404 !== closure_1;
+          }
+          if (!tmp14) {
+            let tmp21 = closure_131_16(c0);
+          }
+        } else if (arg0 === 1) {
+          c7 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c5 = 0;
+          closure_0.return();
+          c7 = 3;
+          obj = { value, done: true };
+          return obj;
         } else {
-          c5 = tmp;
+          c5 = 1;
         }
+        c5 = 0;
       }
     }
-  })();
+  });
+  return obj(...arguments);
 };
-function deleteProject() {
-  const self = this;
-  const apply = closure_23.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+function forgetProject(projectId) {
+  obj = DispatcherDefault;
+  const obj2 = { type: "VIBEGRATIONS_PROJECT_DELETE_SUCCESS", projectId };
+  obj.dispatch(obj2);
 }
-let closure_23 = async function _deleteProject(projectId) {
-  c5 = 0;
-  c6 = 0;
-  c4 = 0;
-  return (async (arg0, value) => {
-    if (c6 === 2) {
-      c6 = 3;
+obj = function _fetchProjectLimit() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    if (c5 === 2) {
+      c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp6 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
+      let c3;
       try {
+        let closure_0;
+        let max_projects;
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_2 = tmp;
+            let closure_1 = tmp4;
+            closure_0 = undefined;
+            max_projects = undefined;
+            currentUser = currentUser.getCurrentUser();
+            let id;
+            if (currentUser != null) {
+              id = currentUser.id;
+            }
+            let c0 = id;
+            if (id == null) {
+              c0 = null;
+            }
+            closure_0 = c0;
+            if (null != c0) {
+              if (closure_17 !== c0) {
+                if (!VibegrationsProjectStore.hasFetchedProjectLimit()) {
+                  closure_17 = tmp16;
+                  max_projects = null;
+                  c3 = 1;
+                  const HTTP = HTTPUtils.HTTP;
+                  const obj4 = { url: constants.VIBEGRATIONS_PROJECT_LIMIT, rejectWithError: true };
+                  c4 = 2;
+                  c5 = 1;
+                  const obj5 = { value: HTTP.get(obj4), done: false };
+                  return obj5;
+                }
+              }
+            }
+          }
+        } else {
+          if (1 === c4) {
+            c3 = 0;
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 0;
+            c5 = 3;
+            obj = { value, done: true };
+            return obj;
+          } else {
+            max_projects = value.body.max_projects;
+            c3 = 0;
+          }
+          if (c17 === closure_0) {
+            c17 = null;
+          }
+          const currentUser1 = currentUser.getCurrentUser();
+          let id1;
+          if (currentUser1 != null) {
+            id1 = currentUser1.id;
+          }
+          if (id1 === closure_0) {
+            const obj7 = { type: "VIBEGRATIONS_PROJECT_LIMIT_FETCH_SETTLE", maxProjects: max_projects };
+            const obj6 = closure_130_1(closure_130_2[6]);
+            obj6.dispatch(obj7);
+          }
+        }
+        c5 = 3;
+        return { value: "IconComponent", done: "IconComponent" };
+      } catch (tmp21) {
+        if (0 === c3) {
+          c5 = 3;
+          throw tmp21;
+        } else {
+          c4 = 1;
+        }
+      }
+    }
+  });
+  return obj(...arguments);
+};
+function getProject() {
+  return obj(...arguments);
+}
+obj = function _getProject() {
+  obj = _asyncToGenerator(async (arg0, signal) => {
+    let closure_3;
+    let closure_0 = arg0;
+    let c4 = 0;
+    let c5 = 0;
+    return (async (arg0, value) => {
+      let aborted;
+      function updateIntegrationStatus(projectId, integrationStatus) {
+        obj = signal(closure_1_2[6]);
+        const obj2 = { type: "VIBEGRATIONS_PROJECT_INTEGRATION_STATUS_UPDATE", projectId, integrationStatus };
+        obj.dispatch(obj2);
+      }
+      const HTTP = HTTPUtils.HTTP;
+      const get = HTTP.get;
+      const obj4 = { url: Endpoints.VIBEGRATIONS_PROJECT(closure_0), rejectWithError: false, signal };
+      value = await get(obj4);
+      if (signal != null) {
+        aborted = signal.aborted;
+      }
+      const ok = true !== aborted && value.ok;
+      if (ok) {
+        obj = closure_131_1(closure_131_2[6]);
+        const obj7 = { type: "VIBEGRATIONS_PROJECT_UPDATE_SUCCESS", project: value.body.project };
+        obj.dispatch(obj7);
+        const obj8 = { bot_permissions_changed: value.body.bot_permissions_changed, integration_installed: value.body.integration_installed, preview_ready: value.body.preview_ready, has_activity: value.body.has_activity, owner_authorization_revoked: value.body.owner_authorization_revoked };
+        updateIntegrationStatus(closure_0, obj8);
+      }
+      return value;
+    })();
+  });
+  return obj(...arguments);
+};
+obj = function _createProject() {
+  obj = _asyncToGenerator(async function(arg0, value) {
+    let obj4;
+    let closure_0 = arg0;
+    if (c6 === 2) {
+      c6 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: "IconComponent" };
+      }
+    } else {
+      let c4;
+      try {
+        let closure_1;
+        let body;
         c6 = 2;
         if (0 === c5) {
           if (arg0 === 1) {
@@ -521,234 +425,401 @@ let closure_23 = async function _deleteProject(projectId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            closure_2 = tmp3;
-            closure_1 = tmp7;
-            closure_129_0 = projectId;
-            closure_129_1 = undefined;
-            const obj4 = { type: "VIBEGRATIONS_PROJECT_DELETE_START", projectId };
-            DispatcherDefault.dispatch(obj4);
+            let closure_2 = tmp;
+            closure_1 = tmp4;
+            body = undefined;
             c4 = 1;
             const HTTP = HTTPUtils.HTTP;
-            const obj6 = { url: Endpoints.VIBEGRATIONS_PROJECT(projectId), rejectWithError: false };
+            const request = { url: constants.VIBEGRATIONS_PROJECTS, body: obj4, rejectWithError: false };
+            obj4 = { flags: VibegrationsTypes.VibegrationsProjectFlags.PUBLIC };
+            const post = HTTP.post;
+            const merged = Object.assign(closure_0);
             c5 = 2;
             c6 = 1;
-            const obj7 = { value: HTTP.del(obj6), done: false };
+            const obj7 = { value: post(request), done: false };
             return obj7;
           }
-        } else if (1 === tmp7) {
+        } else if (1 === c5) {
           c4 = 0;
-          closure_129_2 = closure_3;
-          const obj8 = { type: "VIBEGRATIONS_PROJECT_DELETE_FAIL", projectId: closure_129_0 };
-          closure_130_1(closure_130_2[5]).dispatch(obj8);
-          throw closure_129_2;
+          closure_1 = closure_3;
+          const VibegrationsCreateError = closure_130_0(closure_130_2[11]).VibegrationsCreateError;
+          const obj5 = closure_130_0(closure_130_2[11]);
+          const result = obj5.classifyCreateFailure(closure_1);
+          const self = this;
+          const self2 = this;
+          const obj6 = closure_130_0(closure_130_2[11]);
+          const vibegrationsCreateError = new VibegrationsCreateError(result, obj6.createFailureStatus(closure_1));
+          throw vibegrationsCreateError;
         } else if (arg0 === 1) {
           c6 = 3;
           throw value;
         } else if (arg0 === 2) {
           c4 = 0;
           c6 = 3;
-          const obj9 = { value, done: true };
-          return obj9;
+          const obj8 = { value, done: true };
+          return obj8;
         } else {
-          closure_129_1 = value;
+          body = value.body;
           c4 = 0;
-          let str = "VIBEGRATIONS_PROJECT_DELETE_FAIL";
-          if (closure_129_1.ok) {
-            str = "VIBEGRATIONS_PROJECT_DELETE_SUCCESS";
-          }
-          const obj11 = { type: str, projectId: closure_129_0 };
-          closure_130_1(closure_130_2[5]).dispatch(obj11);
+          const obj9 = { type: "VIBEGRATIONS_PROJECT_CREATE_SUCCESS", project: body };
+          obj = closure_130_1(closure_130_2[6]);
+          obj.dispatch(obj9);
           c6 = 3;
-          const obj12 = { value: closure_129_1, done: true };
+          const obj10 = { value: body.id, done: true };
+          return obj10;
+        }
+      } catch (tmp29) {
+        closure_3 = tmp29;
+        if (0 === c4) {
+          c6 = 3;
+          throw tmp29;
+        } else {
+          c5 = 1;
+        }
+      }
+    }
+  });
+  return obj(...arguments);
+};
+function patchProject() {
+  return obj(...arguments);
+}
+obj = function _patchProject() {
+  obj = _asyncToGenerator(async (value, body) => {
+    let closure_2;
+    let closure_3;
+    let c4 = 0;
+    let c5 = 0;
+    return (async (arg0, value) => {
+      const HTTP = HTTPUtils.HTTP;
+      const request = { url: Endpoints.VIBEGRATIONS_PROJECT(value), body, rejectWithError: false };
+      const patch = HTTP.patch;
+      value = await patch(request);
+      if (value.ok) {
+        const obj6 = { type: "VIBEGRATIONS_PROJECT_UPDATE_SUCCESS", project: value.body };
+        obj = closure_131_1(closure_131_2[6]);
+        obj.dispatch(obj6);
+      }
+      return value;
+    })();
+  });
+  return obj(...arguments);
+};
+obj = function _setProjectIcon() {
+  obj = _asyncToGenerator(async (value, icon) => {
+    let closure_2;
+    let closure_3;
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    return (async (arg0, value) => {
+      let obj3;
+      const obj5 = { icon };
+      await patchProject(value, obj5);
+      if (1 === c5) {
+        if (arg0 === 1) {
+          c6 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c6 = 3;
+          return { value, done: true };
+        } else if (value.ok) {
+          const preview_application_id = value.body.preview_application_id;
+          if (null != preview_application_id) {
+            c4 = 1;
+            c5 = 3;
+            c6 = 1;
+            const obj8 = { value: obj3.fetchApplication(preview_application_id), done: false };
+            obj3 = closure_131_0(closure_131_2[13]);
+            return obj8;
+          }
+        }
+      } else if (2 === c5) {
+        c4 = 0;
+      } else if (arg0 === 1) {
+        c6 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c4 = 0;
+        c6 = 3;
+        return { value, done: true };
+      } else {
+        c4 = 0;
+      }
+      return value;
+    })();
+  });
+  return obj(...arguments);
+};
+function deleteProject() {
+  return obj(...arguments);
+}
+obj = function _deleteProject() {
+  obj = _asyncToGenerator(async (projectId) => {
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    return (async (arg0, value) => {
+      if (c6 === 2) {
+        c6 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp;
+              value = undefined;
+              const obj5 = { type: "VIBEGRATIONS_PROJECT_DELETE_START", projectId };
+              const obj9 = DispatcherDefault;
+              obj9.dispatch(obj5);
+              c4 = 1;
+              const HTTP = HTTPUtils.HTTP;
+              const del = HTTP.del;
+              c5 = 2;
+              c6 = 1;
+              const obj6 = { url: Endpoints.VIBEGRATIONS_PROJECT(projectId), rejectWithError: false };
+              const obj7 = { value: del(obj6), done: false };
+              return obj7;
+            }
+          } else if (1 === c5) {
+            c4 = 0;
+            closure_2 = closure_3;
+            const obj8 = { type: "VIBEGRATIONS_PROJECT_DELETE_FAIL", projectId };
+            const obj4 = closure_130_1(closure_130_2[6]);
+            obj4.dispatch(obj8);
+            throw closure_2;
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            c6 = 3;
+            return { value, done: true };
+          } else {
+            c4 = 0;
+            let str = "VIBEGRATIONS_PROJECT_DELETE_FAIL";
+            const dispatch = closure_130_1(closure_130_2[6]).dispatch;
+            closure_130_1(closure_130_2[6]);
+            if (value.ok) {
+              str = "VIBEGRATIONS_PROJECT_DELETE_SUCCESS";
+            }
+            obj = { type: str, projectId };
+            dispatch(obj);
+            c6 = 3;
+            return { value, done: true };
+          }
+        } catch (tmp23) {
+          closure_3 = tmp23;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp23;
+          } else {
+            c5 = 1;
+          }
+        }
+      }
+    })();
+  });
+  return obj(...arguments);
+};
+obj = function _refreshPublishedProject() {
+  obj = _asyncToGenerator(async (arg0, arg1) => {
+    let closure_2;
+    let closure_3;
+    let closure_0 = arg0;
+    let isPreview = arg1;
+    let c4 = 0;
+    let c5 = 0;
+    const iter = (async (arg0, value) => {
+      let application_id;
+      let bot_permissions_changed;
+      let integration_installed;
+      let obj7;
+      await closure_131_19(closure_0);
+      if (2 === c4) {
+        if (arg0 === 1) {
+          c5 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c5 = 3;
+          return { value, done: true };
+        } else {
+          const body = value.body;
+          bot_permissions_changed = body.bot_permissions_changed;
+          integration_installed = body.integration_installed;
+          const project = body.project;
+          if (isPreview) {
+            application_id = tmp52.preview_application_id;
+          } else {
+            application_id = tmp52.application_id;
+          }
+          if (null != application_id) {
+            c4 = 3;
+            c5 = 1;
+            const obj10 = { value: obj7.fetchApplication(application_id), done: false };
+            obj7 = closure_131_0(closure_131_2[13]);
+            return obj10;
+          }
+        }
+      } else if (3 === c4) {
+        if (arg0 === 1) {
+          c5 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c5 = 3;
+          return { value, done: true };
+        } else {
+          const obj2 = closure_131_0(closure_131_2[14]);
+          const widgetConfigs = obj2.fetchWidgetConfigs(application_id, { force: true });
+          c4 = 4;
+          c5 = 1;
+          const obj12 = {
+            value: widgetConfigs.catch(() => {
+
+                }),
+            done: false
+          };
           return obj12;
         }
-      } catch (tmp25) {
-        closure_3 = tmp25;
-        if (tmp4 === c4) {
-          c6 = tmp2;
-          throw tmp25;
-        } else {
-          c5 = tmp;
-        }
-      }
-    }
-  })();
-};
-let closure_24 = async function _refreshPublishedProject(arg0, arg1) {
-  closure_0 = arg0;
-  let isPreview = arg1;
-  c4 = 0;
-  c5 = 0;
-  let iter = (async (arg0, value) => {
-    closure_2 = tmp2;
-    closure_130_0 = closure_0;
-    const isPreview2 = isPreview.isPreview;
-    await "flex";
-    await closure_131_16(closure_130_0);
-    if (2 === tmp5) {
-      if (arg0 === 1) {
+      } else if (arg0 === 1) {
         c5 = 3;
         throw value;
       } else if (arg0 === 2) {
         c5 = 3;
         return { value, done: true };
       } else {
-        const body = value.body;
-        closure_130_3 = body.bot_permissions_changed;
-        closure_130_4 = body.integration_installed;
-        const project = body.project;
-        if (isPreview2) {
-          let application_id = tmp54.preview_application_id;
-        } else {
-          application_id = tmp54.application_id;
+        let tmp7 = !isPreview;
+        if (!tmp7) {
+          tmp7 = integration_installed && !bot_permissions_changed;
+          const tmp9 = integration_installed && !bot_permissions_changed;
         }
-        closure_130_6 = application_id;
-        if (null != closure_130_6) {
-          c4 = 3;
-          c5 = 1;
-          return { value: closure_131_0(closure_131_2[12]).fetchApplication(closure_130_6), done: false };
-        } else {
-          const result = closure_131_0(closure_131_2[6]).trackVibegrationDeployed(closure_130_0, { isPreview: isPreview2 });
-          c5 = 3;
-          closure_131_0(closure_131_2[6]);
+        if (tmp7) {
+          closure_131_9(application_id);
         }
       }
-    } else if (3 === tmp5) {
-      if (arg0 === 1) {
-        c5 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c5 = 3;
-        return { value, done: true };
-      } else {
-        const widgetConfigs = closure_131_0(closure_131_2[13]).fetchWidgetConfigs(closure_130_6, { force: true });
-        c4 = 4;
-        c5 = 1;
-        return {
-          value: widgetConfigs.catch(() => {
-
-              }),
-          done: false
-        };
-      }
-    } else if (arg0 === 1) {
-      c5 = 3;
-      throw value;
-    } else if (arg0 !== 2) {
-      let tmp8 = !isPreview2;
-      if (isPreview2) {
-        let tmp10 = closure_130_4;
-        if (closure_130_4) {
-          tmp10 = !closure_130_3;
-        }
-        tmp8 = tmp10;
-      }
-      if (tmp8) {
-        closure_131_8(closure_130_6);
-      }
-    }
-    return value;
-  })();
-  iter.next();
-  return iter;
+      const obj13 = { isPreview };
+      const obj5 = closure_131_0(closure_131_2[7]);
+      const result = obj5.trackVibegrationDeployed(closure_0, obj13);
+      await "IconComponent";
+      isPreview = isPreview.isPreview;
+      return "Reflect";
+    })();
+    iter.next();
+    return iter;
+  });
+  return obj(...arguments);
 };
-const Endpoints = fn(1074).Endpoints;
-const ReadStateTypes = fn(5027).ReadStateTypes;
-let c9 = null;
+const Endpoints = Constants.Endpoints;
+const ReadStateTypes = ReadStateConstants.ReadStateTypes;
 let c10 = null;
-let c13 = false;
-const size = fn(2);
+let c11 = null;
+let c14 = false;
+let c17 = null;
 let result = size.fileFinishedImporting("modules/vibegrations/actions/VibegrationsActionCreators.tsx");
 
 export const trackPublishFailed = function trackPublishFailed(projectId, message, isPreview) {
-  const obj2 = { location: "publish", code: VibegrationsAnalytics.VibegrationErrorCodes.PUBLISH_FAILED, message: null, details: null, isPreview: null };
-  let str = "";
+  let str;
+  const tmp = VibegrationsAnalytics;
+  const trackVibegrationErrored = tmp.trackVibegrationErrored;
+  obj = { location: "publish", code: VibegrationsAnalytics.VibegrationErrorCodes.PUBLISH_FAILED, message: "publish" + str + " failed", details: message, isPreview };
+  str = "";
   if (isPreview) {
     str = "-preview";
   }
-  obj2.message = "publish" + str + " failed";
-  obj2.details = message;
-  obj2.isPreview = isPreview;
-  const result = VibegrationsAnalytics.trackVibegrationErrored(projectId, obj2);
+  const result = trackVibegrationErrored(projectId, obj);
 };
 export { reloadVibegrationsAppFrames };
 export const reloadVibegrationsProjectFrames = function reloadVibegrationsProjectFrames(arg0) {
   const project = VibegrationsProjectStore.getProject(arg0);
   if (null != project) {
-    VibegrationsPlatformUtilsDefault.reloadAppFrames(project.application_id);
+    const application_id = project.application_id;
+    obj = VibegrationsPlatformUtilsDefault;
+    obj.reloadAppFrames(application_id);
     let prop = project.preview_application_id;
+    const tmp2 = importDefault;
     if (prop == null) {
       prop = null;
     }
-    VibegrationsPlatformUtilsDefault.reloadAppFrames(prop);
-    const tmp2Result = VibegrationsPlatformUtilsDefault;
+    const tmp2Result = tmp2(8702);
+    tmp2Result.reloadAppFrames(prop);
   }
 };
 export { listProjects };
+export const fetchProjectLimit = function fetchProjectLimit() {
+  return obj(...arguments);
+};
 export { getProject };
 export const createProject = function createProject() {
-  const self = this;
-  const apply = closure_18.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
 export const renameProject = function renameProject(projectId, name) {
-  return patchProject(projectId, { name });
+  obj = { name };
+  return patchProject(projectId, obj);
 };
-export const updateProjectSettings = function updateProjectSettings(first1, arg1) {
-  return patchProject(first1, arg1);
+export const updateProjectSettings = function updateProjectSettings(first2, arg1) {
+  return patchProject(first2, arg1);
 };
 export const setProjectIcon = function setProjectIcon() {
-  const self = this;
-  const apply = closure_21.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
-export const setGuildHints = function setGuildHints(first1, arg1) {
-  return patchProject(first1, arg1);
+export const setGuildHints = function setGuildHints(first2, arg1) {
+  return patchProject(first2, arg1);
 };
 export { deleteProject };
 export const deleteProjectInBackground = function deleteProjectInBackground(id, arg1) {
-  closure_0 = arg1;
-  deleteProject(id).then((ok) => {
+  let closure_0 = arg1;
+  const promise = deleteProject(id);
+  promise.then((ok) => {
     if (!ok.ok) {
       closure_0();
     }
   }, arg1);
 };
 export const setSelectedProjectForGuild = function setSelectedProjectForGuild(guildId, projectId) {
-  DispatcherDefault.dispatch({ type: "VIBEGRATIONS_PROJECT_SELECT", guildId, projectId });
+  obj = DispatcherDefault;
+  const obj2 = { type: "VIBEGRATIONS_PROJECT_SELECT", guildId, projectId };
+  obj.dispatch(obj2);
 };
 export const refreshPublishedProject = function refreshPublishedProject() {
-  const self = this;
-  const apply = closure_24.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
 export const setComposerDraft = function setComposerDraft(projectId, draft) {
-  DispatcherDefault.dispatch({ type: "VIBEGRATIONS_COMPOSER_DRAFT_SET", projectId, draft });
+  obj = DispatcherDefault;
+  const obj2 = { type: "VIBEGRATIONS_COMPOSER_DRAFT_SET", projectId, draft };
+  obj.dispatch(obj2);
 };
 export const setChatSidebarWidth = function setChatSidebarWidth(width) {
-  DispatcherDefault.dispatch({ type: "VIBEGRATIONS_CHAT_SIDEBAR_WIDTH_SET", width });
+  obj = DispatcherDefault;
+  const obj2 = { type: "VIBEGRATIONS_CHAT_SIDEBAR_WIDTH_SET", width };
+  obj.dispatch(obj2);
 };
 export const setBuilderPreviewApplicationId = function setBuilderPreviewApplicationId(applicationId) {
-  DispatcherDefault.dispatch({ type: "VIBEGRATIONS_BUILDER_PREVIEW_APPLICATION_SET", applicationId });
+  obj = DispatcherDefault;
+  const obj2 = { type: "VIBEGRATIONS_BUILDER_PREVIEW_APPLICATION_SET", applicationId };
+  obj.dispatch(obj2);
 };
 export const setBuilderPreviewMobile = function setBuilderPreviewMobile(enabled) {
-  DispatcherDefault.dispatch({ type: "VIBEGRATIONS_BUILDER_PREVIEW_MOBILE_SET", enabled });
+  obj = DispatcherDefault;
+  const obj2 = { type: "VIBEGRATIONS_BUILDER_PREVIEW_MOBILE_SET", enabled };
+  obj.dispatch(obj2);
 };
 export const markLogsSeen = function markLogsSeen(projectId) {
-  DispatcherDefault.dispatch({ type: "VIBEGRATIONS_LOGS_SEEN", projectId });
+  obj = DispatcherDefault;
+  const obj2 = { type: "VIBEGRATIONS_LOGS_SEEN", projectId };
+  obj.dispatch(obj2);
 };

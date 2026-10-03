@@ -1,16 +1,16 @@
-// Module ID: 9632
-// Function ID: 9633
+// Module ID: 9660
+// Function ID: 9661
 // Name: MobileAudioOutputExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1440, 2]
 
-// Module 9632 (MobileAudioOutputExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 9660 (MobileAudioOutputExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-02-mobile-volume-output-slider-removal", kind: "user", defaultConfig: { audioOutputPresent: true, nonContextualStreamOutputPresent: true, showTileVolumeIndicator: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+const obj = { name: "2026-02-mobile-volume-output-slider-removal", kind: "user", defaultConfig: { audioOutputPresent: true, nonContextualStreamOutputPresent: true, showTileVolumeIndicator: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { audioOutputPresent: false, nonContextualStreamOutputPresent: false, showTileVolumeIndicator: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/media_engine/MobileAudioOutputExperiment.tsx");
 

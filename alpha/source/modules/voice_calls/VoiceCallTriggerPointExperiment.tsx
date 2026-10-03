@@ -1,16 +1,17 @@
-// Module ID: 17365
-// Function ID: 17366
+// Module ID: 17457
+// Function ID: 17458
 // Name: VoiceCallTriggerPointExperiment
-// Dependencies: [4762, 4759, 2]
+// Dependencies: [4777, 4774, 2]
 
-// Module 17365 (VoiceCallTriggerPointExperiment)
-import ExperimentConstants from "ExperimentConstants" /* 4762 */;
-import createExperiment from "module_4759" /* 4759 */;
+// Module 17457 (VoiceCallTriggerPointExperiment)
+import ExperimentConstants from "ExperimentConstants" /* 4777 */;
+import createExperiment from "module_4774" /* 4774 */;
 import size from "module_2" /* 2 */;
 
-const obj = { kind: "guild", id: "2026-04_voice_call_trigger_point", label: "Voice Call Trigger Point Experiment", commonTriggerPoint: ExperimentConstants.CommonTriggerPoints.VOICE_CALL, defaultConfig: { enabled: false }, treatments: null };
-const items = [{ id: 1, label: "Treatment", config: { enabled: true } }];
-obj.treatments = items;
+let items;
+const CommonTriggerPoints = ExperimentConstants.CommonTriggerPoints;
+const obj = { kind: "guild", id: "2026-04_voice_call_trigger_point", label: "Voice Call Trigger Point Experiment", commonTriggerPoint: CommonTriggerPoints.VOICE_CALL, defaultConfig: { enabled: false }, treatments: items };
+items = [{ id: 1, label: "Treatment", config: { enabled: true } }];
 const experiment = createExperiment.createExperiment(obj);
 const result = size.fileFinishedImporting("modules/voice_calls/VoiceCallTriggerPointExperiment.tsx");
 

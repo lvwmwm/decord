@@ -1,38 +1,73 @@
-// Module ID: 13304
-// Function ID: 13305
+// Module ID: 13363
+// Function ID: 13364
 // Name: useOutboundPromotionRedemptionEndDate
-// Dependencies: [19, 4450, 4541, 2]
-// Exports: default
+// Dependencies: [19, 4461, 558, 576, 4552, 2]
 
-// Module 13304 (useOutboundPromotionRedemptionEndDate)
-import DateUtils from "DateUtils" /* 4541 */;
-import noop from "module_19" /* 19 */;
-import hooks from "module_4450" /* 4450 */;
+// Module 13363 (useOutboundPromotionRedemptionEndDate)
+import react2 from "react" /* 576 */;
+import DateUtils from "DateUtils" /* 4552 */;
+import react from "react" /* 19 */;
+import module_4461 from "module_4461" /* 4461 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_4 = hooks.duration(30, "days");
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/premium/hooks/useOutboundPromotionRedemptionEndDate.tsx");
-
-export default function useOutboundPromotionRedemptionEndDate(arg0, arg1) {
-  closure_0 = arg0;
-  closure_1 = arg1;
+let closure_4 = module_4461.duration(30, "days");
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((endDate, arg1) => {
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(4);
+  if (cResult[0] === arg1) {
+    if (cResult[1] === endDate.endDate) {
+      let tmp4;
+      if (cResult[2] === endDate.outboundRedemptionEndDate) {
+        tmp4 = cResult[3];
+      }
+      return tmp4;
+    }
+  }
+  const dateFormat = tmp(4552).dateFormat;
+  DateUtils;
+  if (arg1) {
+    let addResult;
+    if (null != endDate.outboundRedemptionEndDate) {
+      addResult = module_4461(endDate.outboundRedemptionEndDate);
+    } else {
+      const obj2 = module_4461(endDate.endDate);
+      addResult = obj2.add(closure_4);
+    }
+    tmp7 = addResult;
+  } else {
+    tmp7 = module_4461(endDate.endDate);
+  }
+  const dateFormatResult = dateFormat(tmp7, "LL");
+  cResult[0] = arg1;
+  cResult[1] = endDate.endDate;
+  cResult[2] = endDate.outboundRedemptionEndDate;
+  cResult[3] = dateFormatResult;
+  tmp4 = dateFormatResult;
+}) : ((arg0, arg1) => {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
   const items = [arg0, arg1];
-  return noop.useMemo(() => {
-    let tmp = dependencyMap;
+  return react.useMemo(() => {
+    let tmp5;
+    const dateFormat = DateUtils.dateFormat;
     DateUtils;
     if (closure_1) {
-      let outboundRedemptionEndDate = closure_0;
+      let addResult;
       if (null != closure_0.outboundRedemptionEndDate) {
-        tmp = hooks;
-        outboundRedemptionEndDate = outboundRedemptionEndDate.outboundRedemptionEndDate;
-        let addResult = tmp(outboundRedemptionEndDate);
+        addResult = module_4461(tmp6.outboundRedemptionEndDate);
       } else {
-        addResult = hooks(outboundRedemptionEndDate.endDate).add(closure_4);
-        const obj = hooks(outboundRedemptionEndDate.endDate);
+        const obj = module_4461(closure_0.endDate);
+        addResult = obj.add(closure_4);
       }
+      tmp5 = addResult;
     } else {
-      return tmp3(hooks(closure_0.endDate), "LL");
+      tmp5 = module_4461(closure_0.endDate);
     }
+    return dateFormat(tmp5, "LL");
   }, items);
-};
+});
+const result = size.fileFinishedImporting("modules/premium/hooks/useOutboundPromotionRedemptionEndDate.tsx");
+
+export default tmp2;

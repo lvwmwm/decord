@@ -1,10 +1,10 @@
-// Module ID: 11373
-// Function ID: 11374
+// Module ID: 11288
+// Function ID: 11289
 // Name: countContentTypes
 // Dependencies: [2]
 // Exports: default
 
-// Module 11373 (countContentTypes)
+// Module 11288 (countContentTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/countContentTypes.tsx");
@@ -19,6 +19,7 @@ export default function countContentTypes(content) {
     sum = num + 1;
   }
   let sum1 = sum;
+  const tmp2 = content.stickers.length > 0 || content.stickerItems.length > 0;
   if (tmp2) {
     sum1 = sum + 1;
   }

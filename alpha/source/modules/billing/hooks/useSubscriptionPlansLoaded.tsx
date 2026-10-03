@@ -1,47 +1,54 @@
-// Module ID: 13144
-// Function ID: 13145
+// Module ID: 13203
+// Function ID: 13204
 // Name: useSubscriptionPlansLoaded
-// Dependencies: [4520, 4522, 4523, 1374, 3, 504, 2]
+// Dependencies: [4531, 4533, 4534, 1379, 3, 504, 2]
 // Exports: useSubscriptionPlansLoaded
 
-// Module 13144 (useSubscriptionPlansLoaded)
+// Module 13203 (useSubscriptionPlansLoaded)
 import LoggerDefault from "Logger" /* 3 */;
-import PaymentSourceStore from "PaymentSourceStore" /* 4520 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4522 */;
-import SubscriptionStore from "SubscriptionStore" /* 4523 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import PaymentSourceStore from "PaymentSourceStore" /* 4531 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4533 */;
+import SubscriptionStore from "SubscriptionStore" /* 4534 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
 function getSubscriptionPlansLoaded(items, items2) {
-  let tmp = items;
+  let defaultPaymentSourceId;
+  let obj;
+  let obj2;
+  let paymentSourceIds;
+  let tmp10;
+  let tmp2 = items;
   if (items === undefined) {
     items = [];
-    HermesBuiltin.arraySpread(ACTIVE_PREMIUM_SKUS, 0);
-    tmp = items;
+    HermesBuiltin.arraySpread(items, ACTIVE_PREMIUM_SKUS, 0);
+    tmp2 = items;
   }
-  let tmp5 = items2;
+  let tmp6 = items2;
   if (items2 === undefined) {
     const items1 = [PaymentSourceStore, SubscriptionPlanStore, SubscriptionStore];
-    tmp5 = items1;
+    tmp6 = items1;
   }
-  [tmp9, obj, obj2] = tmp5;
-  ({ paymentSourceIds, defaultPaymentSourceId } = tmp9);
+  [tmp10, obj, obj2] = tmp6;
+  ({ paymentSourceIds, defaultPaymentSourceId } = tmp10);
+  const isLoadedForSKUsResult = obj.isLoadedForSKUs(tmp2);
   const premiumTypeSubscription = obj2.getPremiumTypeSubscription();
   let paymentSourceId;
   if (premiumTypeSubscription != null) {
     paymentSourceId = premiumTypeSubscription.paymentSourceId;
   }
   if (null != paymentSourceId) {
-    if (!obj.hasPaymentSourceForSKUIds(paymentSourceId, tmp)) {
+    if (!obj.hasPaymentSourceForSKUIds(paymentSourceId, tmp2)) {
       return false;
     }
   }
   if (null != defaultPaymentSourceId) {
-    if (!obj.hasPaymentSourceForSKUIds(defaultPaymentSourceId, tmp)) {
+    if (!obj.hasPaymentSourceForSKUIds(defaultPaymentSourceId, tmp2)) {
       return false;
     }
   }
   for (const item10046 of paymentSourceIds) {
-    if (obj.hasPaymentSourceForSKUIds(item10046, tmp)) {
+    if (obj.hasPaymentSourceForSKUIds(item10046, tmp2)) {
       continue;
     } else {
       obj3.return();
@@ -49,24 +56,25 @@ function getSubscriptionPlansLoaded(items, items2) {
       return false;
     }
   }
-  return obj.isLoadedForSKUs(tmp);
+  return isLoadedForSKUsResult;
 }
-const ACTIVE_PREMIUM_SKUS = fn(1374).ACTIVE_PREMIUM_SKUS;
-new LoggerDefault("useSubscriptionPlansLoaded");
-const size = fn(2);
+const ACTIVE_PREMIUM_SKUS = PremiumConstants.ACTIVE_PREMIUM_SKUS;
+let tmp2 = new LoggerDefault("useSubscriptionPlansLoaded");
 const result = size.fileFinishedImporting("modules/billing/hooks/useSubscriptionPlansLoaded.tsx");
 
 export const useSubscriptionPlansLoaded = function useSubscriptionPlansLoaded() {
-  let tmp = arg0;
+  let items;
+  let tmp2 = arg0;
   if (arg0 === undefined) {
-    let items = [];
-    HermesBuiltin.arraySpread(ACTIVE_PREMIUM_SKUS, 0);
-    tmp = items;
+    items = [];
+    HermesBuiltin.arraySpread(items, ACTIVE_PREMIUM_SKUS, 0);
+    tmp2 = items;
   }
-  items = tmp;
+  items = tmp2;
   const items1 = [PaymentSourceStore, SubscriptionPlanStore, SubscriptionStore];
-  const items2 = [tmp];
-  return items(504).useStateFromStores(items1, () => {
+  const items2 = [tmp2];
+  const obj = items(504);
+  return obj.useStateFromStores(items1, () => {
     items = [PaymentSourceStore, SubscriptionPlanStore, SubscriptionStore];
     return getSubscriptionPlansLoaded(items, items);
   }, items2);

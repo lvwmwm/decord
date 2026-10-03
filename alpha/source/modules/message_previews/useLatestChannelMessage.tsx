@@ -1,48 +1,136 @@
-// Module ID: 15077
-// Function ID: 15078
+// Module ID: 15134
+// Function ID: 15135
 // Name: useLatestChannelMessage
-// Dependencies: [32, 19, 13467, 504, 15078, 2]
-// Exports: default
+// Dependencies: [32, 19, 13527, 558, 576, 504, 15135, 2]
 
-// Module 15077 (useLatestChannelMessage)
-import MessagePreviewManagerDefault from "MessagePreviewManager" /* 15078 */;
-import _slicedToArray from "module_32" /* 32 */;
-import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 13467 */;
+// Module 15134 (useLatestChannelMessage)
+import react from "react" /* 19 */;
+import MessagePreviewManagerDefault from "MessagePreviewManager" /* 15135 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 13527 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const useEffect = fn(19).useEffect;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/message_previews/useLatestChannelMessage.tsx");
+const require = globalThis.__r;
+let _require, guild_id;
 
-export default function useLatestChannelMessage(arg0) {
+let _slicedToArray = _slicedToArray_mod;
+const useEffect = react.useEffect;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id, arg1) => {
+  let closure_0;
+  let closure_3;
+  let first;
+  let id;
+  let tmp = _require;
+  let tmp2 = id;
+  let obj = require("react");
+  const cResult = obj.c(9);
+  _require = tmp4;
+  guild_id = guild_id.guild_id;
+  id = guild_id.id;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [MessagePreviewStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === id) {
+    if (cResult[2] === (undefined !== arg1 && arg1)) {
+      let tmp7;
+      if (cResult[3] === guild_id) {
+        tmp7 = cResult[4];
+      }
+      const tmpResult = tmp(tmp2[5]);
+      const tmp11 = _slicedToArray(tmpResult.useStateFromStoresArray(first, tmp7), 2)[1];
+      _slicedToArray = tmp11;
+      if (cResult[5] === id) {
+        let tmp12;
+        let tmp13;
+        if (cResult[6] === tmp11) {
+          tmp12 = cResult[7];
+          tmp13 = cResult[8];
+        }
+        useEffect(tmp12, tmp13);
+        return tmp10;
+      }
+      const fn2 = function p() {
+        let tmp2 = null == id;
+        const tmp = id;
+        if (!tmp2) {
+          tmp2 = closure_3;
+        }
+        if (!tmp2) {
+          const obj = MessagePreviewManagerDefault;
+          obj.addWant(tmp);
+        }
+      };
+      let items1 = [id, tmp11];
+      cResult[5] = id;
+      cResult[6] = tmp11;
+      cResult[7] = fn2;
+      cResult[8] = items1;
+      tmp13 = items1;
+      tmp12 = fn2;
+    }
+  }
+  const fn = function c() {
+    let items1;
+    const tmp = closure_0;
+    if (tmp) {
+      const items = [null, true];
+      items1 = items;
+    } else {
+      items1 = [MessagePreviewStore.message(guild_id, id), MessagePreviewStore.isLatest(guild_id, id)];
+    }
+    return items1;
+  };
+  cResult[1] = id;
+  cResult[2] = undefined !== arg1 && arg1;
+  cResult[3] = guild_id;
+  cResult[4] = fn;
+  tmp7 = fn;
+}) : ((arg0) => {
+  let c1;
+  let closure_3;
+  let first;
+  let id;
+  let tmp3;
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }
   c1 = undefined;
   id = undefined;
-  _slicedToArray = undefined;
   ({ guild_id: c1, id } = arg0);
+  let obj = flag(id[5]);
   let items = [MessagePreviewStore];
-  const tmp = _slicedToArray(flag(id[3]).useStateFromStoresArray(items, () => {
-    if (flag) {
+  [first, tmp3] = obj.useStateFromStoresArray(items, () => {
+    let items1;
+    const tmp = flag;
+    if (tmp) {
       const items = [null, true];
-      let items1 = items;
+      items1 = items;
     } else {
       items1 = [MessagePreviewStore.message(c1, id), MessagePreviewStore.isLatest(c1, id)];
     }
     return items1;
-  }), 2);
-  _slicedToArray = tmp2;
-  let items1 = [id, tmp[1]];
+  });
+  _slicedToArray = tmp3;
+  let items1 = [id, tmp3];
   useEffect(() => {
     let tmp2 = null == id;
+    const tmp = id;
     if (!tmp2) {
       tmp2 = closure_3;
     }
     if (!tmp2) {
-      MessagePreviewManagerDefault.addWant(id);
+      const obj = MessagePreviewManagerDefault;
+      obj.addWant(tmp);
     }
   }, items1);
-  return tmp[0];
-};
+  return first;
+});
+const result = size.fileFinishedImporting("modules/message_previews/useLatestChannelMessage.tsx");
+
+export default tmp2;

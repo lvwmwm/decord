@@ -1,42 +1,42 @@
-// Module ID: 16548
-// Function ID: 16549
+// Module ID: 16624
+// Function ID: 16625
 // Name: FeedbackOverrideStore
-// Dependencies: [16547, 504, 573, 2]
+// Dependencies: [16625, 504, 584, 2]
 
-// Module 16548 (FeedbackOverrideStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import feedback_FeedbackManager from "feedback/FeedbackManager" /* 16547 */;
+// Module 16624 (FeedbackOverrideStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import FeedbackConfig from "FeedbackConfig" /* 16625 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_2 = {};
-const Store = initializeDefault.Store;
+const React2 = {};
+const Store = get_initializedDefault.Store;
 class HotspotStore extends Store {
+  initialize() {
+
+  }
+  getFeedbackConfig(ACTIVITY) {
+    return closure_2[ACTIVITY];
+  }
 }
 const prototype = HotspotStore.prototype;
-prototype["initialize"] = function initialize() {
-
-};
-prototype["getFeedbackConfig"] = function getFeedbackConfig(ACTIVITY) {
-  return closure_2[ACTIVITY];
-};
 HotspotStore.displayName = "FeedbackOverrideStore";
 HotspotStore.persistKey = "feedbackOverrides";
-const hotspotStore = new HotspotStore(DispatcherDefault, {
+let obj = {
   FEEDBACK_OVERRIDE_SET: function handleSetFeedbackOverride(feedbackType) {
+    let chance;
+    let cooldown;
     feedbackType = feedbackType.feedbackType;
-    const obj = {};
+    const obj = { cooldown, chance };
     ({ cooldown, chance } = feedbackType);
-    const merged = Object.assign(feedback_FeedbackManager.FeedbackConfig[feedbackType]);
-    obj.cooldown = cooldown;
-    obj.chance = chance;
+    const merged = Object.assign(FeedbackConfig.FeedbackConfig[feedbackType]);
     closure_2[feedbackType] = obj;
   },
   FEEDBACK_OVERRIDE_CLEAR: function handleClearFeedbackOverride(arg0) {
-    delete tmp[tmp2];
+    delete closure_2[arg0.feedbackType];
   }
-});
-const size = fn(2);
+};
+const hotspotStore = new HotspotStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/feedback/FeedbackOverrideStore.tsx");
 
 export default hotspotStore;

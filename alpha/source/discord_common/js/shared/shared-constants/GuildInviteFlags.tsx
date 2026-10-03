@@ -1,12 +1,13 @@
-// Module ID: 8024
-// Function ID: 8025
+// Module ID: 8068
+// Function ID: 8069
 // Name: GuildInviteFlags
 // Dependencies: [2]
 
-// Module 8024 (GuildInviteFlags)
+// Module 8068 (GuildInviteFlags)
 import size from "module_2" /* 2 */;
 
 const obj = { ALL: new Set([1, 2, 4, 16]) };
+new Set([1, 2, 4, 16]);
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/GuildInviteFlags.tsx");
 
 export const GuildInviteFlags = { IS_GUEST_INVITE: 1, [1]: "IS_GUEST_INVITE", IS_VIEWED: 2, [2]: "IS_VIEWED", IS_ENHANCED: 4, [4]: "IS_ENHANCED", IS_APPLICATION_BYPASS: 8, [8]: "IS_APPLICATION_BYPASS", HAS_TARGET_USERS_JOB_STATUS: 16, [16]: "HAS_TARGET_USERS_JOB_STATUS", ASSIGNABLE_FLAGS_MASK: 9, [9]: "ASSIGNABLE_FLAGS_MASK" };

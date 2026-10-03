@@ -1,11 +1,11 @@
-// Module ID: 10794
-// Function ID: 10795
+// Module ID: 9887
+// Function ID: 9888
 // Name: TooltipConstants
-// Dependencies: [5464, 2]
+// Dependencies: [5597, 2]
 // Exports: tooltipEnterExitAnimation
 
-// Module 10794 (TooltipConstants)
-import spring from "spring" /* 5464 */;
+// Module 9887 (TooltipConstants)
+import spring from "spring" /* 5597 */;
 import size from "module_2" /* 2 */;
 
 const TOOLTIP_SPRING = { overshootClamping: true, damping: 35, stiffness: 450, mass: 0.5, restDisplacementThreshold: 0.001 };
@@ -17,16 +17,19 @@ export const tooltipEnterExitAnimation = function tooltipEnterExitAnimation(posi
   if ("top" === position) {
     num = 8;
   }
-  const fn = function o(targetHeight, fn2) {
-    num = 0;
-    const obj2 = { transform: null, opacity: null };
-    const items = [{ translateY: spring.withSpring(num, closure_2, "respect-motion-settings", fn2) }];
-    obj2.transform = items;
-    const obj3 = { translateY: spring.withSpring(num, closure_2, "respect-motion-settings", fn2) };
-    obj2.opacity = spring.withSpring(targetHeight, closure_2, "respect-motion-settings", fn2);
-    return obj2;
+  const fn = function o(value, fn2) {
+    let items;
+    let tmpResult;
+    const withSpring = spring.withSpring;
+    spring;
+    const obj = { transform: items, opacity: tmpResult.withSpring(value, TOOLTIP_SPRING, "respect-motion-settings", fn2) };
+    items = [{ translateY: withSpring(num, TOOLTIP_SPRING, "respect-motion-settings", fn2) }];
+    ({ translateY: withSpring(0, TOOLTIP_SPRING, "respect-motion-settings", fn2) });
+    tmpResult = spring;
+    return obj;
   };
-  fn.__closure = { withSpring: num(5464).withSpring, translateY: num, TOOLTIP_SPRING };
+  let obj = { withSpring: num(5597).withSpring, translateY: num, TOOLTIP_SPRING };
+  fn.__closure = obj;
   fn.__workletHash = 7727487832145;
   fn.__initData = __initData;
   return fn;

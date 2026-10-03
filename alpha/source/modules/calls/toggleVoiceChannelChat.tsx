@@ -1,19 +1,20 @@
-// Module ID: 14283
-// Function ID: 14284
+// Module ID: 14351
+// Function ID: 14352
 // Name: toggleVoiceChannelChat
-// Dependencies: [2044, 4868, 4861, 5046, 2]
+// Dependencies: [2051, 4913, 4906, 5091, 2]
 // Exports: toggleVoiceChannelChat
 
-// Module 14283 (toggleVoiceChannelChat)
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5046 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4868 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4861 */;
+// Module 14351 (toggleVoiceChannelChat)
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5091 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/calls/toggleVoiceChannelChat.tsx");
 
 export const toggleVoiceChannelChat = function toggleVoiceChannelChat(open) {
+  const obj = RTCConnectionStore;
   if (RTCConnectionStore.isConnected()) {
     const channelId = obj.getChannelId();
     if (null == channelId) {
@@ -26,9 +27,9 @@ export const toggleVoiceChannelChat = function toggleVoiceChannelChat(open) {
           if (open == null) {
             tmp3 = !ChannelRTCStore.getChatOpen(channelId);
           }
-          ChannelRTCActionCreatorsDefault.updateChatOpen(channelId, tmp3);
-          const obj2 = { channelId, chatOpen: tmp3 };
-          return obj2;
+          const obj3 = ChannelRTCActionCreatorsDefault;
+          obj3.updateChatOpen(channelId, tmp3);
+          return { channelId, chatOpen: tmp3 };
         }
       }
       return null;
@@ -36,5 +37,4 @@ export const toggleVoiceChannelChat = function toggleVoiceChannelChat(open) {
   } else {
     return null;
   }
-  obj = RTCConnectionStore;
 };

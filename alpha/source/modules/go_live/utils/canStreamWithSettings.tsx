@@ -1,23 +1,26 @@
-// Module ID: 9606
-// Function ID: 9607
+// Module ID: 9634
+// Function ID: 9635
 // Name: canStreamWithSettings
-// Dependencies: [4892, 9607, 9608, 2]
+// Dependencies: [4937, 9635, 9636, 2]
 // Exports: default
 
-// Module 9606 (canStreamWithSettings)
-import GoLiveAutoQualityExperiment from "GoLiveAutoQualityExperiment" /* 9607 */;
-import canUseStreamSettingDefault from "canUseStreamSetting" /* 9608 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 4892 */;
+// Module 9634 (canStreamWithSettings)
+import GoLiveAutoQualityExperiment from "GoLiveAutoQualityExperiment" /* 9635 */;
+import canUseStreamSettingDefault from "canUseStreamSetting" /* 9636 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 4937 */;
 import size from "module_2" /* 2 */;
 
+let c3;
+let closure_4;
 ({ ApplicationStreamSettingRequirements: c3, ApplicationStreamPresets: closure_4 } = StreamSettingsConstants);
 const result = size.fileFinishedImporting("modules/go_live/utils/canStreamWithSettings.tsx");
 
 export default function canStreamWithSettings(arg0, arg1, arg2, arg3, arg4, arg5) {
   if (arg0 === constants.PRESET_AUTO) {
-    return GoLiveAutoQualityExperiment.getGoLiveAutoQualityExperimentConfig({ location: "canStreamWithSettings" }).allowAutoQuality;
+    const obj = GoLiveAutoQualityExperiment;
+    return obj.getGoLiveAutoQualityExperimentConfig({ location: "canStreamWithSettings" }).allowAutoQuality;
   } else {
-    const iter = dependencyMap[Symbol.iterator]();
+    const iter = _false[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
       let tmp4 = nextResult;

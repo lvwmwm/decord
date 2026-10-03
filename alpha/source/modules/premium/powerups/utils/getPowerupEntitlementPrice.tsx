@@ -1,15 +1,16 @@
-// Module ID: 7629
-// Function ID: 7630
+// Module ID: 7673
+// Function ID: 7674
 // Name: getPowerupEntitlementPrice
 // Dependencies: [2]
 // Exports: default
 
-// Module 7629 (getPowerupEntitlementPrice)
+// Module 7673 (getPowerupEntitlementPrice)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/utils/getPowerupEntitlementPrice.tsx");
 
 export default function getPowerupEntitlementPrice(tenant_metadata) {
+  let guild_monetization;
   let guild_monetization1;
   if (tenant_metadata != null) {
     tenant_metadata = tenant_metadata.tenant_metadata;
@@ -22,7 +23,7 @@ export default function getPowerupEntitlementPrice(tenant_metadata) {
     if (sku != null) {
       const tenant_metadata2 = sku.tenant_metadata;
       if (tenant_metadata2 != null) {
-        const guild_monetization = tenant_metadata2.guild_monetization;
+        guild_monetization = tenant_metadata2.guild_monetization;
       }
     }
   }

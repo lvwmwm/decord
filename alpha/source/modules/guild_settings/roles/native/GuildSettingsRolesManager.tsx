@@ -1,21 +1,23 @@
-// Module ID: 17665
-// Function ID: 17666
+// Module ID: 17753
+// Function ID: 17754
 // Name: GuildSettingsRolesManager
-// Dependencies: [560, 1248, 2]
+// Dependencies: [570, 1259, 2]
 // Exports: setRoleJustCreated
 
-// Module 17665 (GuildSettingsRolesManager)
-import module_560 from "module_560" /* 560 */;
+// Module 17753 (GuildSettingsRolesManager)
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const useGuildSettingsRolesManagerState = module_560.create(() => ({ roleJustCreated: false }));
+const useGuildSettingsRolesManagerState = module_570.create(() => ({ roleJustCreated: false }));
 const result = size.fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRolesManager.tsx");
 
 export const setRoleJustCreated = function setRoleJustCreated(roleJustCreated) {
   _require = roleJustCreated;
-  require("ReactBatchUpdates").batchUpdates(() => {
+  let obj = require("react-native");
+  obj.batchUpdates(() => {
     const obj = { roleJustCreated };
     return obj.setState(obj);
   });

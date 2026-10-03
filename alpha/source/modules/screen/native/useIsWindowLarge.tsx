@@ -1,21 +1,26 @@
-// Module ID: 6550
-// Function ID: 6551
+// Module ID: 6433
+// Function ID: 6434
 // Name: useIsWindowLarge
-// Dependencies: [4725, 2]
+// Dependencies: [4740, 558, 2]
 // Exports: default, getIsWindowLarge
 
-// Module 6550 (useIsWindowLarge)
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 4725 */;
+// Module 6433 (useIsWindowLarge)
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 4740 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const useWindowSizeClassifierDefault = useWindowSizeClassifier;
 
-const result = size.fileFinishedImporting("modules/screen/native/useIsWindowLarge.tsx");
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const result1 = size.fileFinishedImporting("modules/screen/native/useIsWindowLarge.tsx");
 
-export default function useIsWindowLarge() {
-  return useWindowSizeClassifierDefault() >= useWindowSizeClassifier.WindowSizeClassifier.LARGE;
+export default () => {
+  const tmp = useWindowSizeClassifierDefault();
+  return tmp >= useWindowSizeClassifier.WindowSizeClassifier.LARGE;
 };
 export const getIsWindowLarge = function getIsWindowLarge() {
-  const windowSizeClassifier = useWindowSizeClassifier.getWindowSizeClassifier();
+  const obj = useWindowSizeClassifier;
+  const windowSizeClassifier = obj.getWindowSizeClassifier();
   return windowSizeClassifier >= useWindowSizeClassifier.WindowSizeClassifier.LARGE;
 };

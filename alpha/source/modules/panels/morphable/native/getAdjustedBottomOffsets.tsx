@@ -1,16 +1,18 @@
-// Module ID: 17080
-// Function ID: 17081
+// Module ID: 17141
+// Function ID: 17142
 // Name: getAdjustedBottomOffsets
-// Dependencies: [1364, 2]
+// Dependencies: [1369, 2]
 // Exports: default
 
-// Module 17080 (getAdjustedBottomOffsets)
-import PlatformUtils_mod from "PlatformUtils" /* 1364 */;
+// Module 17141 (getAdjustedBottomOffsets)
+import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
 import size from "module_2" /* 2 */;
 
 let PlatformUtils = PlatformUtils_mod;
 PlatformUtils = PlatformUtils.isAndroid();
 const fn = function t(arg0) {
+  let keyboardHeight;
+  let screenBottomOffset;
   ({ screenBottomOffset, keyboardHeight } = arg0);
   let bottomOffset = screenBottomOffset;
   if (keyboardHeight > 0) {

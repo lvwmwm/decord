@@ -1,189 +1,378 @@
 // Module ID: 895
 // Function ID: 896
-// Dependencies: [41, 42, 93, 95, 96, 98, 893, 682, 896]
-// Exports: applyDefaultOptions
+// Dependencies: []
 
 // Module 895
-import _mod682 from "module_682" /* 682 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _get from "_get" /* 96 */;
-import _inherits from "_inherits" /* 98 */;
+function noop() {
 
-let BrowserClient = require;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
 }
-Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-class BrowserClient {
-  constructor(arg0) {
-    self = this;
-    tmp = BrowserClient;
-    tmp2 = c2(this, BrowserClient);
-    if (typeof globalThis.__SENTRY_RELEASE__ === "string") {
-      id = globalThis.__SENTRY_RELEASE__;
+class Promise {
+  constructor(fn) {
+    const self = this;
+    if (typeof this !== "object") {
+      const _TypeError2 = TypeError;
+      const self4 = this;
+      const self5 = this;
+      const typeError = new TypeError("Promises must be constructed via new");
+      throw typeError;
+    } else if (typeof fn !== "function") {
+      const _TypeError = TypeError;
+      const self2 = this;
+      const self3 = this;
+      const typeError1 = new TypeError("Promise constructor's argument is not a function");
+      throw typeError1;
     } else {
-      tmp16 = closure_0;
-      tmp17 = closure_1;
-      SENTRY_RELEASE = closure_0(closure_1[6]).WINDOW.SENTRY_RELEASE;
-      tmp18 = null;
-      if (SENTRY_RELEASE != null) {
-        id = SENTRY_RELEASE.id;
+      self._40 = 0;
+      self._65 = 0;
+      self._55 = null;
+      self._72 = null;
+      if (fn !== noop) {
+        doResolve(fn, self);
       }
     }
-    obj = { release: id, sendClientReports: true, parentSpanIsAlwaysRootSpan: true };
-    merged = Object.assign(global);
-    tmp4 = closure_0;
-    tmp5 = closure_1;
-    SENTRY_SDK_SOURCE = closure_0(closure_1[6]).WINDOW.SENTRY_SDK_SOURCE;
-    if (!SENTRY_SDK_SOURCE) {
-      tmp4Result = tmp4(tmp5[7]);
-      SENTRY_SDK_SOURCE = tmp4Result.getSDKSource();
-    }
-    tmp4Result1 = tmp4(tmp5[7]);
-    applySdkMetadataResult = tmp4Result1.applySdkMetadata(obj, "browser", ["browser"], SENTRY_SDK_SOURCE);
-    _metadata = obj._metadata;
-    sdk = undefined;
-    if (_metadata != null) {
-      sdk = _metadata.sdk;
-    }
-    if (sdk) {
-      str = "never";
-      if (obj.sendDefaultPii) {
-        str = "auto";
-      }
-      obj1 = { infer_ip: null };
-      obj1.infer_ip = str;
-      tmp8 = obj1;
-      merged1 = Object.assign(obj._metadata.sdk.settings);
-      obj._metadata.sdk.settings = obj1;
-    }
-    items = [];
-    items[0] = obj;
-    tmp10 = closure_4;
-    obj5 = closure_4(tmp);
-    tmp11 = closure_3;
-    if (metroRequire()) {
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj5, items, tmp10(self).constructor);
-    } else {
-      constructResult = obj5.apply(self, items);
-    }
-    tmp11Result = tmp11(self, constructResult);
-    closure_0 = tmp11Result;
-    _options = tmp11Result._options;
-    sendClientReports = _options.sendClientReports;
-    enableLogs = _options.enableLogs;
-    ({ _experiments, enableMetrics, sendDefaultPii } = _options);
-    if (enableMetrics == null) {
-      enableMetrics1 = undefined;
-      if (_experiments != null) {
-        enableMetrics1 = _experiments.enableMetrics;
-      }
-      enableMetrics = enableMetrics1;
-    }
-    if (enableMetrics == null) {
-      enableMetrics = true;
-    }
-    c3 = enableMetrics;
-    _document = tmp4(tmp5[6]).WINDOW.document;
-    if (_document) {
-      if (!sendClientReports) {
-        sendClientReports = enableLogs;
-      }
-      if (!sendClientReports) {
-        sendClientReports = enableMetrics;
-      }
-      _document = sendClientReports;
-    }
-    if (_document) {
-      _document2 = tmp4(tmp5[6]).WINDOW.document;
-      str2 = "visibilitychange";
-      listener = _document2.addEventListener("visibilitychange", () => {
-        if ("hidden" === BrowserClient(893).WINDOW.document.visibilityState) {
-          if (sendClientReports) {
-            closure_0._flushOutcomes();
+  }
+  then(fn, fn2) {
+    let tmp5;
+    let tmp6;
+    let self = this;
+    if (this.constructor !== Promise) {
+      let closure_1 = fn;
+      closure_2 = fn2;
+      const self4 = this;
+      const self5 = this;
+      const constructor = new self.constructor(function(arg0, arg1) {
+        let tmp11;
+        let tmp12;
+        const obj3 = Object.create(Promise.prototype);
+        if (typeof obj3 !== "object") {
+          const _TypeError = TypeError;
+          self = this;
+          const self2 = this;
+          const typeError = new TypeError("Promises must be constructed via new");
+          throw typeError;
+        } else {
+          obj3._40 = 0;
+          obj3._65 = 0;
+          obj3._55 = null;
+          obj3._72 = null;
+          // // eliminated: always false
+          obj3.then(arg0, arg1);
+          Object.create(Handler.prototype);
+          const obj = { onFulfilled: tmp11, onRejected: tmp12, promise: obj3 };
+          tmp11 = null;
+          const tmp5 = handle;
+          const tmp6 = self;
+          const tmp8 = fn;
+          if (typeof fn === "function") {
+            tmp11 = tmp8;
           }
-          if (enableLogs) {
-            const result = tmp(682)._INTERNAL_flushLogsBuffer(closure_0);
-            const tmpResult = tmp(682);
+          tmp12 = null;
+          if (typeof fn2 === "function") {
+            tmp12 = tmp9;
           }
-          if (enableMetrics) {
-            const result1 = tmp(682)._INTERNAL_flushMetricsBuffer(closure_0);
-            const tmpResult2 = tmp(682);
-          }
+          tmp5(tmp6, obj);
         }
       });
+      let tmp12 = constructor;
+      return constructor;
+    } else {
+      let obj3 = Object.create(tmp.prototype);
+      if (typeof obj3 !== "object") {
+        let tmp8 = globalThis;
+        let _TypeError = TypeError;
+        let self2 = this;
+        const self3 = this;
+        let typeError = new TypeError("Promises must be constructed via new");
+        throw typeError;
+      } else {
+        obj3._40 = 0;
+        obj3._65 = 0;
+        obj3._55 = null;
+        obj3._72 = null;
+        // // eliminated: always false
+        Object.create(Handler.prototype);
+        let obj = { onFulfilled: tmp5, onRejected: tmp6, promise: obj3 };
+        tmp5 = null;
+        const tmp2 = handle;
+        if (typeof fn === "function") {
+          tmp5 = fn;
+        }
+        tmp6 = null;
+        if (typeof fn2 === "function") {
+          tmp6 = fn2;
+        }
+        tmp2(self, obj);
+        return obj3;
+      }
     }
-    if (sendDefaultPii) {
-      str3 = "beforeSendSession";
-      onResult = tmp11Result.on("beforeSendSession", tmp4(tmp5[7]).addAutoIpAddressToSession);
-    }
-    return tmp11Result;
   }
 }
-_inherits(BrowserClient, _mod682.Client);
-const entry = {
-  key: "eventFromException",
-  value: function eventFromException(arg0, arg1) {
-    return BrowserClient(896).eventFromException(this._options.stackParser, arg0, arg1, this._options.attachStacktrace);
+function handle(_65, _72) {
+  let tmp7;
+  let tmp = _65;
+  let tmp2 = _65;
+  if (3 === _65._65) {
+    do {
+      _55 = tmp._55;
+      tmp = _55;
+      tmp2 = _55;
+      _65 = _55._65;
+    } while (3 === _65);
   }
-};
-let items = [
-  entry,
-  {
-    key: "eventFromMessage",
-    value: function eventFromMessage(arg0) {
-      let str = arg1;
-      if (arg1 === undefined) {
-        str = "info";
-      }
-      return BrowserClient(896).eventFromMessage(this._options.stackParser, arg0, str, arg2, this._options.attachStacktrace);
-    }
-  },
-  {
-    key: "_prepareEvent",
-    value: function _prepareEvent(platform, arg1, arg2, arg3) {
-      platform.platform = platform.platform || "javascript";
-      const self = this;
-      let fn = hasOwnProperty(_getPrototypeOf(BrowserClient.prototype), "_prepareEvent", this);
-      if (typeof fn === "function") {
-        fn = (items) => fn.apply(self, items);
-      }
-      const items = [platform, arg1, arg2, arg3];
-      return fn(items);
-    }
+  let obj = Promise;
+  if (Promise._37) {
+    obj._37(tmp2);
   }
-];
-
-export const BrowserClient = _createClass(BrowserClient, items);
-export const applyDefaultOptions = function applyDefaultOptions(arg0) {
-  if (typeof globalThis.__SENTRY_RELEASE__ === "string") {
-    let id = globalThis.__SENTRY_RELEASE__;
+  if (0 === tmp2._65) {
+    if (0 === tmp2._40) {
+      tmp2._40 = 1;
+      tmp2._72 = _72;
+    } else if (1 === tmp2._40) {
+      let num2 = 2;
+      tmp2._40 = 2;
+      const items = [tmp2._72, _72];
+      tmp2._72 = items;
+    } else {
+      _72 = tmp2._72;
+      _72.push(_72);
+    }
+    return tmp7;
   } else {
-    const SENTRY_RELEASE = BrowserClient(893).WINDOW.SENTRY_RELEASE;
-    if (SENTRY_RELEASE != null) {
-      id = SENTRY_RELEASE.id;
+    _55 = _72;
+    const _setImmediate = setImmediate;
+    setImmediate(() => {
+      let length;
+      let length2;
+      let onRejected;
+      let tmp2;
+      function tryCallOne(onRejected, _55) {
+        try {
+          return onRejected(_55);
+        } catch (tmp3) {
+          closure_1 = tmp3;
+          return closure_1_2;
+        }
+      }
+      if (1 === _55._65) {
+        const tmp3 = _55;
+        onRejected = _55.onFulfilled;
+        tmp2 = _55;
+      } else {
+        tmp2 = _55;
+        onRejected = _55.onRejected;
+      }
+      if (null !== onRejected) {
+        const tmp11 = tryCallOne(onRejected, _55._55);
+        if (tmp11 === closure_2) {
+          tmp2.promise._65 = 2;
+          tmp2.promise._55 = _55;
+          const obj = Promise;
+          if (Promise._87) {
+            obj._87(tmp2.promise, tmp15);
+          }
+          if (1 === tmp2.promise._40) {
+            handle(tmp2.promise, tmp2.promise._72);
+            tmp2.promise._72 = null;
+          }
+          if (2 === tmp2.promise._40) {
+            let num6 = 0;
+            if (0 < tmp2.promise._72.length) {
+              do {
+                let tmp20 = handle(promise, promise._72[num6]);
+                num6 = num6 + 1;
+                length2 = promise._72.length;
+              } while (num6 < length2);
+            }
+            tmp2.promise._72 = null;
+          }
+        } else {
+          resolve(tmp2.promise, tmp11);
+        }
+      } else if (1 === _55._65) {
+        resolve(tmp2.promise, _55._55);
+      } else {
+        _55 = tmp._55;
+        tmp2.promise._65 = 2;
+        tmp2.promise._55 = _55;
+        const obj2 = Promise;
+        if (Promise._87) {
+          obj2._87(tmp2.promise, _55);
+        }
+        if (1 === tmp2.promise._40) {
+          handle(tmp2.promise, tmp2.promise._72);
+          tmp2.promise._72 = null;
+        }
+        if (2 === tmp2.promise._40) {
+          let num2 = 0;
+          if (0 < tmp2.promise._72.length) {
+            do {
+              let tmp8 = handle(promise2, promise2._72[num2]);
+              num2 = num2 + 1;
+              length = promise2._72.length;
+            } while (num2 < length);
+          }
+          tmp2.promise._72 = null;
+        }
+      }
+    });
+  }
+}
+function resolve(_40, _55) {
+  let length;
+  let length2;
+  let length3;
+  let length4;
+  function getThen(_55) {
+    try {
+      return _55.then;
+    } catch (tmp2) {
+      closure_1 = tmp2;
+      return closure_1_2;
     }
   }
-  const merged = Object.assign(arg0);
-  return { release: id, sendClientReports: true, parentSpanIsAlwaysRootSpan: true };
-};
+  if (_55 === _40) {
+    const _TypeError = TypeError;
+    const self = this;
+    const self2 = this;
+    const typeError = new TypeError("A promise cannot be resolved with itself.");
+    _40._65 = 2;
+    _40._55 = typeError;
+    const obj3 = Promise;
+    if (Promise._87) {
+      obj3._87(_40, typeError);
+    }
+    if (1 === _40._40) {
+      handle(_40, _40._72);
+      _40._72 = null;
+    }
+    if (2 === _40._40) {
+      let num18 = 0;
+      if (0 < _40._72.length) {
+        do {
+          let tmp33 = handle(_40, _40._72[num18]);
+          num18 = num18 + 1;
+          length4 = _40._72.length;
+        } while (num18 < length4);
+      }
+      _40._72 = null;
+    }
+  } else {
+    if (_55) {
+      if (typeof _55 === "object") {
+        const obj = getThen(_55);
+        if (obj === closure_2) {
+          _40._65 = 2;
+          _40._55 = _55;
+          const obj2 = Promise;
+          if (Promise._87) {
+            obj2._87(_40, tmp17);
+          }
+          if (1 === _40._40) {
+            handle(_40, _40._72);
+            _40._72 = null;
+          }
+          if (2 === _40._40) {
+            let num13 = 0;
+            if (0 < _40._72.length) {
+              do {
+                let tmp23 = handle(_40, _40._72[num13]);
+                num13 = num13 + 1;
+                length3 = _40._72.length;
+              } while (num13 < length3);
+            }
+            _40._72 = null;
+          }
+        } else {
+          if (obj === _40.then) {
+            const tmp2 = Promise;
+            if (_55 instanceof Promise) {
+              _40._65 = 3;
+              _40._55 = _55;
+              if (1 === _40._40) {
+                handle(_40, _40._72);
+                _40._72 = null;
+              }
+              if (2 === _40._40) {
+                let num10 = 0;
+                if (0 < _40._72.length) {
+                  do {
+                    let tmp15 = handle(_40, _40._72[num10]);
+                    num10 = num10 + 1;
+                    length2 = _40._72.length;
+                  } while (num10 < length2);
+                }
+                _40._72 = null;
+              }
+            }
+          }
+          if (typeof obj === "function") {
+            doResolve(obj.bind(_55), _40);
+          }
+        }
+      }
+    }
+    _40._65 = 1;
+    _40._55 = _55;
+    if (1 === _40._40) {
+      handle(_40, _40._72);
+      _40._72 = null;
+    }
+    if (2 === _40._40) {
+      let num6 = 0;
+      if (0 < _40._72.length) {
+        do {
+          let tmp7 = handle(_40, _40._72[num6]);
+          num6 = num6 + 1;
+          length = _40._72.length;
+        } while (num6 < length);
+      }
+      _40._72 = null;
+    }
+  }
+}
+function Handler(fn, fn2, promise) {
+
+}
+function doResolve(arg0, _40) {
+  let length;
+  let tmp;
+  _55 = false;
+  let tmp2 = _55;
+  if (!tmp2) {
+    const tmp3 = closure_2;
+    tmp2 = tmp !== closure_2;
+  }
+  if (!tmp2) {
+    _55 = true;
+    _40._65 = 2;
+    _40._55 = _55;
+    let obj = Promise;
+    if (Promise._87) {
+      obj._87(_40, tmp4);
+    }
+    if (1 === _40._40) {
+      handle(_40, _40._72);
+      let tmp8 = null;
+      _40._72 = null;
+    }
+    if (2 === _40._40) {
+      let num3 = 0;
+      if (0 < _40._72.length) {
+        do {
+          let tmp9 = handle;
+          let tmp10 = handle(_40, _40._72[num3]);
+          num3 = num3 + 1;
+          length = _40._72.length;
+        } while (num3 < length);
+      }
+      _40._72 = null;
+    }
+  }
+}
+let c1 = null;
+let closure_2 = {};
+Promise._37 = null;
+Promise._87 = null;
+Promise._61 = noop;
+
+export default Promise;

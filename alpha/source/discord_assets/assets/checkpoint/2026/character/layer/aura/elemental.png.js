@@ -1,8 +1,8 @@
-// Module ID: 5254
-// Function ID: 5255
+// Module ID: 5300
+// Function ID: 5301
 // Dependencies: [2]
 
-// Module 5254
+// Module 5300
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/aura/elemental.png.js");

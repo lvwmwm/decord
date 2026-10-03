@@ -1,31 +1,34 @@
-// Module ID: 16006
-// Function ID: 16007
+// Module ID: 16080
+// Function ID: 16081
 // Name: useGuildThemeNuxTrigger
-// Dependencies: [19, 4550, 504, 16007, 16007, 1981, 4809, 16012, 2]
+// Dependencies: [19, 4561, 504, 16081, 16081, 1987, 4854, 16086, 2]
 // Exports: default
 
-// Module 16006 (useGuildThemeNuxTrigger)
-import initialize from "initialize" /* 504 */;
-import guild_themes_useGuildThemeNuxTriggerDefault from "guild_themes/useGuildThemeNuxTrigger" /* 16012 */;
-import noop from "module_19" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4550 */;
+// Module 16080 (useGuildThemeNuxTrigger)
+import get_initialized from "get initialized" /* 504 */;
+import useGuildThemeNuxTriggerDefault from "useGuildThemeNuxTrigger" /* 16086 */;
+import react from "react" /* 19 */;
+import ActionSheetStore from "ActionSheetStore" /* 4561 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let key;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_themes/native/useGuildThemeNuxTrigger.tsx");
 
 export default function useGuildThemeNuxTrigger(arg0) {
+  let paths;
+  let obj = get_initialized;
   const items = [ActionSheetStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
     key = key.getKey();
     return key === require("GuildThemeNuxActionSheet").GUILD_THEME_NUX_ACTION_SHEET_KEY;
   });
-  const callback = noop.useCallback((arg0) => {
-    const tmp = require("asyncRequireImpl")(paths[4], paths.paths);
-    require("ActionSheetActionCreators").openLazy(tmp, require("GuildThemeNuxActionSheet").GUILD_THEME_NUX_ACTION_SHEET_KEY, arg0, "stack");
+  const callback = react.useCallback((arg0) => {
+    const tmp = require("asyncRequire")(paths[4], paths.paths);
+    const obj = require("ActionSheetActionCreators");
+    obj.openLazy(tmp, require("GuildThemeNuxActionSheet").GUILD_THEME_NUX_ACTION_SHEET_KEY, arg0, "stack");
     return tmp;
   }, []);
-  guild_themes_useGuildThemeNuxTriggerDefault(arg0, { isNuxOpen: stateFromStores, openNux: callback });
+  useGuildThemeNuxTriggerDefault(arg0, { isNuxOpen: stateFromStores, openNux: callback });
 };

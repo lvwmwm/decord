@@ -1,45 +1,102 @@
-// Module ID: 9704
-// Function ID: 9705
+// Module ID: 9733
+// Function ID: 9734
 // Name: useIsGuestOrLurker
-// Dependencies: [2107, 2066, 1074, 504, 2]
-// Exports: default, isGuestOrLurkerInGuild
+// Dependencies: [2112, 2074, 1085, 558, 576, 504, 2]
+// Exports: isGuestOrLurkerInGuild
 
-// Module 9704 (useIsGuestOrLurker)
-import GuildMemberStore from "GuildMemberStore" /* 2107 */;
-import GuildStore from "GuildStore" /* 2066 */;
+// Module 9733 (useIsGuestOrLurker)
+import Constants from "Constants" /* 1085 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-const require = fn;
-const GuildFeatures = fn(1074).GuildFeatures;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_member/useIsGuestOrLurker.tsx");
-
-export default function useIsGuestOrLurker(arg0, arg1) {
+const GuildFeatures = Constants.GuildFeatures;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
+  let first;
   _require = arg0;
   dependencyMap = arg1;
-  const items = [GuildStore, GuildMemberStore];
-  const items1 = [arg0, arg1];
-  return require("initialize").useStateFromStores(items, () => {
+  let tmp = _require;
+  let tmp2 = dependencyMap;
+  let obj = require("react");
+  const cResult = obj.c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore, ];
+    let tmp6 = GuildMemberStore;
+    items[1] = GuildMemberStore;
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg0) {
+    let tmp7;
+    let tmp8;
+    if (cResult[2] === arg1) {
+      tmp7 = cResult[3];
+      tmp8 = cResult[4];
+    }
+    const tmpResult = tmp(504);
+    return tmpResult.useStateFromStores(first, tmp7, tmp8);
+  }
+  const fn = function o() {
     const guild = GuildStore.getGuild(closure_0);
     let hasItem;
+    const obj = GuildMemberStore;
+    const tmp = closure_0;
+    const tmp2 = closure_1;
     if (guild != null) {
       const features = guild.features;
       hasItem = features.has(GuildFeatures.CONFERENCE);
     }
-    return true !== hasItem && GuildMemberStore.isGuestOrLurker(closure_0, closure_1);
+    const tmp6 = true !== hasItem && obj.isGuestOrLurker(tmp, tmp2);
+    return tmp6;
+  };
+  const items1 = [arg0, arg1];
+  cResult[1] = arg0;
+  cResult[2] = arg1;
+  cResult[3] = fn;
+  cResult[4] = items1;
+  tmp8 = items1;
+  tmp7 = fn;
+}) : ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
+  _require = arg0;
+  dependencyMap = arg1;
+  let obj = require("get initialized");
+  const items = [GuildStore, GuildMemberStore];
+  const items1 = [arg0, arg1];
+  return obj.useStateFromStores(items, () => {
+    const guild = GuildStore.getGuild(closure_0);
+    let hasItem;
+    const obj = GuildMemberStore;
+    const tmp = closure_0;
+    const tmp2 = closure_1;
+    if (guild != null) {
+      const features = guild.features;
+      hasItem = features.has(GuildFeatures.CONFERENCE);
+    }
+    const tmp6 = true !== hasItem && obj.isGuestOrLurker(tmp, tmp2);
+    return tmp6;
   }, items1);
-};
+});
+const result = size.fileFinishedImporting("modules/guild_member/useIsGuestOrLurker.tsx");
+
+export default tmp2;
 export const isGuestOrLurkerInGuild = function isGuestOrLurkerInGuild(guild_id, id) {
   const guild = GuildStore.getGuild(guild_id);
   let hasItem;
+  const obj = GuildMemberStore;
   if (guild != null) {
     const features = guild.features;
     hasItem = features.has(GuildFeatures.CONFERENCE);
   }
-  let isGuestOrLurkerResult = true !== hasItem;
-  if (isGuestOrLurkerResult) {
-    isGuestOrLurkerResult = GuildMemberStore.isGuestOrLurker(guild_id, id);
-  }
+  const isGuestOrLurkerResult = true !== hasItem && obj.isGuestOrLurker(guild_id, id);
   return isGuestOrLurkerResult;
 };

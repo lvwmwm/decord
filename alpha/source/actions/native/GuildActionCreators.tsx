@@ -1,37 +1,43 @@
-// Module ID: 17675
-// Function ID: 17676
+// Module ID: 17763
+// Function ID: 17764
 // Name: actions/GuildActionCreators
-// Dependencies: [1074, 573, 1271, 2]
+// Dependencies: [1085, 584, 1282, 2]
 // Exports: batchChannelUpdate, batchRoleUpdate
 
-// Module 17675 (actions/GuildActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 17763 (actions/GuildActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
 import size from "module_2" /* 2 */;
 
 function batchChannelUpdate(guildId, body) {
   if (body.length > 0) {
     function onEnd() {
-      return DispatcherDefault.dispatch({ type: "GUILD_SETTINGS_SUBMIT_SUCCESS" });
+      const obj = DispatcherDefault;
+      return obj.dispatch({ type: "GUILD_SETTINGS_SUBMIT_SUCCESS" });
     }
-    DispatcherDefault.dispatch({ type: "GUILD_SETTINGS_SUBMIT" });
+    let obj = DispatcherDefault;
+    obj.dispatch({ type: "GUILD_SETTINGS_SUBMIT" });
     const HTTP = HTTPUtils.HTTP;
     const request = { url: Endpoints.GUILD_CHANNELS(guildId), body, oldFormErrors: true, rejectWithError: true };
-    HTTP.patch(request).then(onEnd, onEnd);
-    const patchResult = HTTP.patch(request);
+    const patch = HTTP.patch;
+    const patchResult = patch(request);
+    patchResult.then(onEnd, onEnd);
   }
 }
 function batchRoleUpdate(arg0, body) {
   if (body.length > 0) {
     function onEnd() {
-      return DispatcherDefault.dispatch({ type: "GUILD_SETTINGS_SUBMIT_SUCCESS" });
+      const obj = DispatcherDefault;
+      return obj.dispatch({ type: "GUILD_SETTINGS_SUBMIT_SUCCESS" });
     }
-    DispatcherDefault.dispatch({ type: "GUILD_SETTINGS_SUBMIT" });
+    let obj = DispatcherDefault;
+    obj.dispatch({ type: "GUILD_SETTINGS_SUBMIT" });
     const HTTP = HTTPUtils.HTTP;
     const request = { url: Endpoints.GUILD_ROLES(arg0), body, oldFormErrors: true, rejectWithError: true };
-    HTTP.patch(request).then(onEnd, onEnd);
-    const patchResult = HTTP.patch(request);
+    const patch = HTTP.patch;
+    const patchResult = patch(request);
+    patchResult.then(onEnd, onEnd);
   }
 }
 const Endpoints = Constants.Endpoints;

@@ -1,18 +1,17 @@
-// Module ID: 14277
-// Function ID: 14278
+// Module ID: 14345
+// Function ID: 14346
 // Name: platformBehaviors
-// Dependencies: [1085, 2]
+// Dependencies: [1096, 2]
 
-// Module 14277 (platformBehaviors)
-import Constants from "Constants" /* 1085 */;
+// Module 14345 (platformBehaviors)
+import Constants from "Constants" /* 1096 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/rpc/server/commands/platformBehaviors.tsx");
-
-export default {
-  [Constants.RPCCommands.GET_PLATFORM_BEHAVIORS]: {
-    handler() {
-      return { iosKeyboardResizesView: true };
-    }
+const obj = {
+  handler() {
+    return { iosKeyboardResizesView: true };
   }
 };
+const result = size.fileFinishedImporting("modules/rpc/server/commands/platformBehaviors.tsx");
+
+export default { [Constants.RPCCommands.GET_PLATFORM_BEHAVIORS]: obj };

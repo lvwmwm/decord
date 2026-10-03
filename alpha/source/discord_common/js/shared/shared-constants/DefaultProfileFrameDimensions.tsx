@@ -1,9 +1,9 @@
-// Module ID: 7838
-// Function ID: 7839
+// Module ID: 7882
+// Function ID: 7883
 // Name: DefaultProfileFrameDimensions
 // Dependencies: [2]
 
-// Module 7838 (DefaultProfileFrameDimensions)
+// Module 7882 (DefaultProfileFrameDimensions)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/DefaultProfileFrameDimensions.tsx");

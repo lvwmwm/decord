@@ -1,22 +1,60 @@
-// Module ID: 8495
-// Function ID: 8496
+// Module ID: 8500
+// Function ID: 8501
 // Name: FractionalNitroCoinIllustration
-// Dependencies: [19, 1076, 21, 8496, 8498, 2]
-// Exports: FractionalNitroCoinIllustration
+// Dependencies: [19, 1087, 21, 558, 576, 8501, 8503, 2]
 
-// Module 8495 (FractionalNitroCoinIllustration)
-import NitroCoinSpotIllustration from "NitroCoinSpotIllustration" /* 8496 */;
-import NitroCoinStackSpotIllustration2 from "NitroCoinStackSpotIllustration" /* 8498 */;
-import noop from "module_19" /* 19 */;
+// Module 8500 (FractionalNitroCoinIllustration)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
+import NitroCoinSpotIllustration from "NitroCoinSpotIllustration" /* 8501 */;
+import NitroCoinStackSpotIllustration2 from "NitroCoinStackSpotIllustration" /* 8503 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const EXTERNAL_PRODUCT_SKU_IDS = fn(1076).EXTERNAL_PRODUCT_SKU_IDS;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/collectibles/native/FractionalNitroCoinIllustration.tsx");
-
-export const FRACTIONAL_NITRO_COIN_SIZE = { CARD: 80, CHECKOUT: 45, COLLECTED_SHEET: 68 };
-export const FractionalNitroCoinIllustration = function FractionalNitroCoinIllustration(resizeMode) {
+const EXTERNAL_PRODUCT_SKU_IDS = CollectiblesShopConstants.EXTERNAL_PRODUCT_SKU_IDS;
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
+  let NitroCoinStackSpotIllustration;
+  let height;
+  let resizeMode;
+  let width;
+  const obj = react2;
+  const cResult = obj.c(5);
+  ({ width, height, resizeMode } = skuId);
+  let str = "contain";
+  skuId = skuId.skuId;
+  if (undefined !== resizeMode) {
+    str = resizeMode;
+  }
+  if (skuId === EXTERNAL_PRODUCT_SKU_IDS.FRACTIONAL_PREMIUM_1_DAY) {
+    NitroCoinStackSpotIllustration = tmp(8501).NitroCoinSpotIllustration;
+  } else {
+    NitroCoinStackSpotIllustration = tmp(8503).NitroCoinStackSpotIllustration;
+  }
+  if (cResult[0] === NitroCoinStackSpotIllustration) {
+    if (cResult[1] === height) {
+      if (cResult[2] === str) {
+        let tmp4;
+        if (cResult[3] === width) {
+          tmp4 = cResult[4];
+        }
+        return tmp4;
+      }
+    }
+  }
+  const tmp5 = <NitroCoinStackSpotIllustration width={width} height={height} resizeMode={str} />;
+  cResult[0] = NitroCoinStackSpotIllustration;
+  cResult[1] = height;
+  cResult[2] = str;
+  cResult[3] = width;
+  cResult[4] = tmp5;
+  tmp4 = tmp5;
+}) : ((resizeMode) => {
+  let height;
+  let skuId;
+  let width;
   resizeMode = resizeMode.resizeMode;
   ({ skuId, width, height } = resizeMode);
   if (resizeMode === undefined) {
@@ -28,4 +66,8 @@ export const FractionalNitroCoinIllustration = function FractionalNitroCoinIllus
     NitroCoinStackSpotIllustration = NitroCoinStackSpotIllustration2.NitroCoinStackSpotIllustration;
   }
   return <NitroCoinStackSpotIllustration width={width} height={height} resizeMode={resizeMode} />;
-};
+});
+const result = size.fileFinishedImporting("modules/collectibles/native/FractionalNitroCoinIllustration.tsx");
+
+export const FRACTIONAL_NITRO_COIN_SIZE = { CARD: 80, CHECKOUT: 45, COLLECTED_SHEET: 68 };
+export const FractionalNitroCoinIllustration = tmp3;

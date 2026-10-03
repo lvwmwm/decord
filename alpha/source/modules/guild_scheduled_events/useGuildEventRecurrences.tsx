@@ -1,56 +1,305 @@
-// Module ID: 9281
-// Function ID: 9282
+// Module ID: 9287
+// Function ID: 9288
 // Name: useGuildEventRecurrences
-// Dependencies: [32, 19, 7134, 504, 9282, 9139, 12, 11, 1091, 9265, 2]
-// Exports: default
+// Dependencies: [32, 19, 7037, 558, 576, 504, 9288, 9163, 12, 11, 1102, 9271, 2]
 
-// Module 9281 (useGuildEventRecurrences)
+// Module 9287 (useGuildEventRecurrences)
 import _modDef12 from "module_12" /* 12 */;
-import ScheduleUtils from "ScheduleUtils" /* 9139 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9265 */;
-import usePrevValueDefault from "usePrevValue" /* 9282 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7134 */;
+import ScheduleUtils from "ScheduleUtils" /* 9163 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9271 */;
+import reactDefault from "react" /* 9288 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7037 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap, importDefault, tmp5;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_scheduled_events/useGuildEventRecurrences.tsx");
-
-export default function useGuildEventRecurrences(arg0, arg1, byWeekday) {
+let react = react_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, byWeekday) {
+  let closure_0;
+  let closure_1;
+  let closure_4;
+  let first;
+  let first1;
+  let tmp6;
+  let tmp9;
   _require = arg0;
   importDefault = arg1;
   dependencyMap = byWeekday;
+  const tmp = _require;
+  const tmp2 = dependencyMap;
+  let obj = require("react");
+  const cResult = obj.c(29);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [first1];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function f() {
+      return GuildScheduledEventStore.getGuildScheduledEvent(closure_0);
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  const tmp8 = reactDefault(byWeekday);
+  react = tmp8;
+  if (cResult[3] === stateFromStores) {
+    if (cResult[4] === byWeekday) {
+      tmp9 = cResult[5];
+    }
+    const tmp15 = stateFromStores(react.useState(tmp9), 2);
+    first1 = tmp15[0];
+    let closure_6 = tmp15[1];
+    if (cResult[6] === stateFromStores) {
+      if (cResult[7] === tmp8) {
+        if (cResult[8] === byWeekday) {
+          let tmp16;
+          let tmp17;
+          if (cResult[9] === first1.length) {
+            tmp16 = cResult[10];
+            tmp17 = cResult[11];
+          }
+          const effect = obj4.useEffect(tmp16, tmp17);
+          if (cResult[12] === arg0) {
+            if (cResult[13] === arg1) {
+              let tmp19;
+              let tmp20;
+              if (cResult[14] === first1) {
+                tmp19 = cResult[15];
+                tmp20 = cResult[16];
+              }
+              const effect1 = obj4.useEffect(tmp19, tmp20);
+              if (cResult[17] === stateFromStores) {
+                if (cResult[18] === byWeekday) {
+                  let tmp22;
+                  if (cResult[19] === first1) {
+                    tmp22 = cResult[20];
+                  }
+                  class M {
+                    constructor() {
+                      if (null != byWeekday) {
+                        if (null != stateFromStores) {
+                          const obj = ScheduleUtils;
+                          const rRule = obj.getRRule(tmp2);
+                          const items = [];
+                          const arraySpreadResult = HermesBuiltin.arraySpread(items, first1, 0);
+                          const obj2 = ScheduleUtils;
+                          HermesBuiltin.arraySpread(items, obj2.generateNextRecurrences(4, rRule, first1[first1.length - 1], true), arraySpreadResult);
+                          closure_6(items);
+                        }
+                      }
+                    }
+                  }
+                  if (cResult[25] === false) {
+                    if (cResult[26] === first1) {
+                      let tmp24;
+                      if (cResult[27] === tmp22) {
+                        tmp24 = cResult[28];
+                      }
+                      return tmp24;
+                    }
+                  }
+                  let obj2 = { recurrenceStartTimes: first1, canViewMoreRecurrences: flag, updateRecurrenceStartTimes: tmp22 };
+                  cResult[25] = false;
+                  cResult[26] = first1;
+                  cResult[27] = tmp22;
+                  cResult[28] = obj2;
+                  tmp24 = obj2;
+                }
+              }
+              class M {
+                constructor() {
+                  if (null != byWeekday) {
+                    if (null != stateFromStores) {
+                      const obj = ScheduleUtils;
+                      const rRule = obj.getRRule(tmp2);
+                      const items = [];
+                      const arraySpreadResult = HermesBuiltin.arraySpread(items, first1, 0);
+                      const obj2 = ScheduleUtils;
+                      HermesBuiltin.arraySpread(items, obj2.generateNextRecurrences(4, rRule, first1[first1.length - 1], true), arraySpreadResult);
+                      closure_6(items);
+                    }
+                  }
+                }
+              }
+              cResult[17] = stateFromStores;
+              cResult[18] = byWeekday;
+              cResult[19] = first1;
+              cResult[20] = M;
+              tmp22 = M;
+            }
+          }
+          class N {
+            constructor() {
+              if (null != closure_1) {
+                tmp2 = closure_5;
+                tmp4 = closure_1;
+                tmp5 = closure_2;
+                mapped = closure_5.map((getTime) => {
+                  const fromTimestamp = closure_1_1(byWeekday[9]).fromTimestamp;
+                  closure_1_1(byWeekday[9]);
+                  const time = getTime.getTime();
+                  const floorResult = floor(time / closure_1_1(byWeekday[10]).Millis.SECOND);
+                  return fromTimestamp(floorResult * closure_1_1(byWeekday[10]).Millis.SECOND);
+                });
+                obj = closure_1(closure_2[11]);
+                tmp6 = closure_0;
+                guildEventUserCounts = obj.getGuildEventUserCounts(tmp, closure_0, mapped);
+              }
+              return;
+            }
+          }
+          const items1 = [arg0, arg1, first1];
+          cResult[12] = arg0;
+          cResult[13] = arg1;
+          cResult[14] = first1;
+          cResult[15] = N;
+          cResult[16] = items1;
+          tmp20 = items1;
+          tmp19 = N;
+        }
+      }
+    }
+    const fn2 = function v() {
+      if (null != closure_4) {
+        if (null != byWeekday) {
+          if (null != stateFromStores) {
+            const obj2 = _modDef12;
+            if (!obj2.isEqual(tmp, byWeekday)) {
+              const obj = ScheduleUtils;
+              const rRule = obj.getRRule(tmp11);
+              const _Date = Date;
+              const self = this;
+              const self2 = this;
+              const generateNextRecurrences = ScheduleUtils.generateNextRecurrences;
+              const length = first1.length;
+              ScheduleUtils;
+              const date = new Date(tmp12.scheduled_start_time);
+              closure_6(generateNextRecurrences(length, rRule, date));
+            }
+          }
+        }
+      }
+    };
+    const items2 = [byWeekday, first1.length, stateFromStores, tmp8];
+    cResult[6] = stateFromStores;
+    cResult[7] = tmp8;
+    cResult[8] = byWeekday;
+    cResult[9] = first1.length;
+    cResult[10] = fn2;
+    cResult[11] = items2;
+    tmp17 = items2;
+    tmp16 = fn2;
+  }
+  if (null != byWeekday) {
+    let nextRecurrences;
+    if (null != stateFromStores) {
+      let generateNextRecurrences = tmp(9163).generateNextRecurrences;
+      tmp(9163);
+      const tmpResult4 = tmp(9163);
+      class M {
+        constructor() {
+          if (null != byWeekday) {
+            if (null != stateFromStores) {
+              const obj = ScheduleUtils;
+              const rRule = obj.getRRule(tmp2);
+              const items = [];
+              const arraySpreadResult = HermesBuiltin.arraySpread(items, first1, 0);
+              const obj2 = ScheduleUtils;
+              HermesBuiltin.arraySpread(items, obj2.generateNextRecurrences(4, rRule, first1[first1.length - 1], true), arraySpreadResult);
+              closure_6(items);
+            }
+          }
+        }
+      }
+      let self = this;
+      let self2 = this;
+      let rRule = tmpResult4.getRRule(byWeekday);
+      let date = new Date(stateFromStores.scheduled_start_time);
+      nextRecurrences = generateNextRecurrences(4, rRule, date);
+    }
+    cResult[3] = stateFromStores;
+    class M {
+      constructor() {
+        if (null != byWeekday) {
+          if (null != stateFromStores) {
+            const obj = ScheduleUtils;
+            const rRule = obj.getRRule(tmp2);
+            const items = [];
+            const arraySpreadResult = HermesBuiltin.arraySpread(items, first1, 0);
+            const obj2 = ScheduleUtils;
+            HermesBuiltin.arraySpread(items, obj2.generateNextRecurrences(4, rRule, first1[first1.length - 1], true), arraySpreadResult);
+            closure_6(items);
+          }
+        }
+      }
+    }
+    cResult[4] = byWeekday;
+    cResult[5] = nextRecurrences;
+    tmp9 = nextRecurrences;
+  }
+  nextRecurrences = [];
+}) : (function(arg0, arg1, byWeekday) {
+  let closure_0;
+  let closure_1;
+  let recurrenceStartTimes;
+  _require = arg0;
+  importDefault = arg1;
+  dependencyMap = byWeekday;
+  const tmp = _require;
+  const tmp2 = dependencyMap;
+  let obj = require("get initialized");
   let items = [recurrenceStartTimes];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => GuildScheduledEventStore.getGuildScheduledEvent(closure_0));
-  const tmp4 = usePrevValueDefault(byWeekday);
-  closure_4 = tmp4;
+  const stateFromStores = obj.useStateFromStores(items, () => GuildScheduledEventStore.getGuildScheduledEvent(closure_0));
+  const tmp4 = reactDefault(byWeekday);
+  let closure_4 = tmp4;
+  let obj2 = closure_4;
   if (null != byWeekday) {
     if (null != stateFromStores) {
-      const tmpResult = tmp(9139);
+      let generateNextRecurrences = tmp(9163).generateNextRecurrences;
+      tmp(9163);
       let _Date = Date;
-      let rRule = tmp(9139).getRRule(byWeekday);
+      let self = this;
+      let self2 = this;
+      const tmpResult2 = tmp(9163);
+      let rRule = tmpResult2.getRRule(byWeekday);
       let date = new Date(stateFromStores.scheduled_start_time);
-      const nextRecurrences = tmpResult.generateNextRecurrences(4, rRule, date);
-      const tmpResult2 = tmp(9139);
+      const tmp11 = date;
+      const nextRecurrences = generateNextRecurrences(4, rRule, date);
     }
-    const tmp14 = stateFromStores(tmp5([]), 2);
-    recurrenceStartTimes = tmp14[0];
-    closure_6 = tmp14[1];
+    const tmp12 = stateFromStores;
+    const tmp13 = stateFromStores(tmp5([]), 2);
+    recurrenceStartTimes = tmp13[0];
+    let closure_6 = tmp13[1];
     const items1 = [byWeekday, recurrenceStartTimes.length, stateFromStores, tmp4];
-    const effect = obj2.useEffect(() => {
+    const effect = obj2.useEffect(function() {
       if (null != closure_4) {
-        if (null != closure_2) {
+        if (null != byWeekday) {
           if (null != stateFromStores) {
-            if (!obj3.isEqual(tmp, tmp12)) {
-              const rRule = ScheduleUtils.getRRule(tmp12);
+            const obj2 = _modDef12;
+            if (!obj2.isEqual(tmp, byWeekday)) {
+              const obj = ScheduleUtils;
+              const rRule = obj.getRRule(tmp11);
               const _Date = Date;
-              const date = new Date(tmp13.scheduled_start_time);
-              closure_6(ScheduleUtils.generateNextRecurrences(first.length, rRule, date));
+              const self = this;
+              const self2 = this;
+              const generateNextRecurrences = ScheduleUtils.generateNextRecurrences;
+              const length = first.length;
+              ScheduleUtils;
+              const date = new Date(tmp12.scheduled_start_time);
+              closure_6(generateNextRecurrences(length, rRule, date));
             }
-            obj3 = _modDef12;
           }
         }
       }
@@ -59,23 +308,27 @@ export default function useGuildEventRecurrences(arg0, arg1, byWeekday) {
     const effect1 = obj2.useEffect(() => {
       if (null != closure_1) {
         const mapped = first.map((getTime) => {
+          const fromTimestamp = closure_1_1(byWeekday[9]).fromTimestamp;
+          closure_1_1(byWeekday[9]);
           const time = getTime.getTime();
-          const rounded = Math.floor(time / closure_1_1(1091).Millis.SECOND);
-          return closure_1_1(11).fromTimestamp(rounded * closure_1_1(1091).Millis.SECOND);
+          const floorResult = floor(time / closure_1_1(byWeekday[10]).Millis.SECOND);
+          return fromTimestamp(floorResult * closure_1_1(byWeekday[10]).Millis.SECOND);
         });
-        const guildEventUserCounts = GuildScheduledEventManagerDefault.getGuildEventUserCounts(tmp, closure_0, mapped);
+        const obj = GuildScheduledEventManagerDefault;
+        const guildEventUserCounts = obj.getGuildEventUserCounts(tmp, closure_0, mapped);
       }
     }, items2);
     const items3 = [byWeekday, recurrenceStartTimes, ];
     let scheduled_start_time;
+    const useMemo = obj2.useMemo;
     if (stateFromStores != null) {
       scheduled_start_time = stateFromStores.scheduled_start_time;
     }
     items3[2] = scheduled_start_time;
-    let obj3 = {
+    const obj3 = {
       recurrenceStartTimes,
-      canViewMoreRecurrences: obj2.useMemo(() => {
-          if (null != closure_2) {
+      canViewMoreRecurrences: useMemo(function() {
+          if (null != byWeekday) {
             if (0 !== first.length) {
               let scheduled_start_time;
               if (stateFromStores != null) {
@@ -83,11 +336,16 @@ export default function useGuildEventRecurrences(arg0, arg1, byWeekday) {
               }
               if (null != scheduled_start_time) {
                 const _Date = Date;
+                const self = this;
+                const self2 = this;
                 const date = new Date();
+                const setFullYear = date.setFullYear;
                 const fullYear = date.getFullYear();
-                date.setFullYear(fullYear + ScheduleUtils.MAX_YEARS_AHEAD_RECURRING_EVENT);
-                const rRule = ScheduleUtils.getRRule(tmp);
-                const afterResult = rRule.after(arr[arr.length - 1]);
+                setFullYear(fullYear + ScheduleUtils.MAX_YEARS_AHEAD_RECURRING_EVENT);
+                const tmp10 = first[first.length - 1];
+                const obj2 = ScheduleUtils;
+                const rRule = obj2.getRRule(tmp);
+                const afterResult = rRule.after(tmp10);
                 return null != afterResult && afterResult <= date;
               }
             }
@@ -95,13 +353,14 @@ export default function useGuildEventRecurrences(arg0, arg1, byWeekday) {
           return false;
         }, items3),
       updateRecurrenceStartTimes() {
-          if (null != closure_2) {
+          if (null != byWeekday) {
             if (null != stateFromStores) {
-              const rRule = ScheduleUtils.getRRule(tmp);
+              const obj = ScheduleUtils;
+              const rRule = obj.getRRule(tmp2);
               const items = [];
-              const arraySpreadResult = HermesBuiltin.arraySpread(first, 0);
+              const arraySpreadResult = HermesBuiltin.arraySpread(items, first, 0);
               const obj2 = ScheduleUtils;
-              HermesBuiltin.arraySpread(obj2.generateNextRecurrences(4, rRule, first[first.length - 1], true), arraySpreadResult);
+              HermesBuiltin.arraySpread(items, obj2.generateNextRecurrences(4, rRule, first[first.length - 1], true), arraySpreadResult);
               closure_6(items);
             }
           }
@@ -109,4 +368,7 @@ export default function useGuildEventRecurrences(arg0, arg1, byWeekday) {
     };
     return obj3;
   }
-};
+});
+const result = size.fileFinishedImporting("modules/guild_scheduled_events/useGuildEventRecurrences.tsx");
+
+export default tmp2;

@@ -1,25 +1,63 @@
-// Module ID: 16062
-// Function ID: 16063
+// Module ID: 16136
+// Function ID: 16137
 // Name: useSubmittedGuildJoinRequestTotal
-// Dependencies: [6039, 504, 2]
-// Exports: useSubmittedGuildJoinRequestTotal
+// Dependencies: [5932, 558, 576, 504, 2]
 
-// Module 16062 (useSubmittedGuildJoinRequestTotal)
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6039 */;
+// Module 16136 (useSubmittedGuildJoinRequestTotal)
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5932 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_member_verification/hooks/useSubmittedGuildJoinRequestTotal.tsx");
+let guildId;
 
-export const useSubmittedGuildJoinRequestTotal = function useSubmittedGuildJoinRequestTotal(guildId) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let first;
+  let tmp6;
+  let tmp7;
+  const tmp = guildId;
+  const obj = guildId(576);
+  const cResult = obj.c(4);
+  guildId = guildId.guildId;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildJoinRequestStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== guildId) {
+    const fn = function l() {
+      let submittedGuildJoinRequestTotal;
+      if (null != guildId) {
+        submittedGuildJoinRequestTotal = GuildJoinRequestStore.getSubmittedGuildJoinRequestTotal(tmp);
+      }
+      return submittedGuildJoinRequestTotal;
+    };
+    const items1 = [guildId];
+    cResult[1] = guildId;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6, tmp7);
+}) : ((guildId) => {
   guildId = guildId.guildId;
   const items = [GuildJoinRequestStore];
   const items1 = [guildId];
-  return guildId(504).useStateFromStores(items, () => {
+  const obj = guildId(504);
+  return obj.useStateFromStores(items, () => {
     let submittedGuildJoinRequestTotal;
     if (null != guildId) {
       submittedGuildJoinRequestTotal = GuildJoinRequestStore.getSubmittedGuildJoinRequestTotal(tmp);
     }
     return submittedGuildJoinRequestTotal;
   }, items1);
-};
+});
+const result = size.fileFinishedImporting("modules/guild_member_verification/hooks/useSubmittedGuildJoinRequestTotal.tsx");
+
+export const useSubmittedGuildJoinRequestTotal = tmp2;

@@ -1,42 +1,49 @@
-// Module ID: 17500
-// Function ID: 17501
+// Module ID: 17589
+// Function ID: 17590
 // Name: RelationshipManager
-// Dependencies: [1074, 4714, 1115, 17501, 6725, 2]
+// Dependencies: [1085, 4729, 1126, 17590, 6613, 2]
 
-// Module 17500 (RelationshipManager)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import shared from "shared" /* 4714 */;
-import RelationshipUtilsAll from "RelationshipUtils" /* 17501 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
+// Module 17589 (RelationshipManager)
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import shared from "shared" /* 4729 */;
+import RelationshipUtilsAll from "RelationshipUtils" /* 17590 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
 import size from "module_2" /* 2 */;
 
 function handleRelationshipAdd(relationship) {
   relationship = relationship.relationship;
+  const tmp = relationship.type !== RelationshipTypes.PENDING_INCOMING || relationship.userIgnored;
   if (!tmp) {
     const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
-    const intl = util.intl;
+    const announce = AccessibilityAnnouncer.announce;
+    const intl = intl2.intl;
     const obj = { username: relationship.user.username };
-    AccessibilityAnnouncer.announce(intl.formatToPlainString(util.t.zH0kC7, obj));
-    const result = RelationshipUtilsAll.showPendingNotification(relationship.user);
+    announce(intl.formatToPlainString(intl2.t.zH0kC7, obj));
+    const obj2 = RelationshipUtilsAll;
+    const result = obj2.showPendingNotification(relationship.user);
   }
 }
 function handleFriendRequestAccepted(user) {
   user = user.user;
   const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
-  const intl = util.intl;
-  AccessibilityAnnouncer.announce(intl.formatToPlainString(util.t["/+7xky"], { username: user.username }));
-  const result = RelationshipUtilsAll.showAcceptedNotification(user);
+  const announce = AccessibilityAnnouncer.announce;
+  const intl = intl2.intl;
+  const obj = { username: user.username };
+  announce(intl.formatToPlainString(intl2.t["/+7xky"], obj));
+  const obj2 = RelationshipUtilsAll;
+  const result = obj2.showAcceptedNotification(user);
 }
 const RelationshipTypes = Constants.RelationshipTypes;
-const prototype = function RelationshipManager() {
-  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  applyArgumentsResult.actions = { RELATIONSHIP_ADD: handleRelationshipAdd, FRIEND_REQUEST_ACCEPTED: handleFriendRequestAccepted };
-  return applyArgumentsResult;
-}.prototype;
-class prototype extends tmp2 {
+class RelationshipManager extends AutomaticLifecycleManager {
+  constructor() {
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    const obj = { RELATIONSHIP_ADD: handleRelationshipAdd, FRIEND_REQUEST_ACCEPTED: handleFriendRequestAccepted };
+    applyArgumentsResult.actions = obj;
+    return applyArgumentsResult;
+  }
 }
-const prototype1 = new prototype();
+const relationshipManager = new RelationshipManager();
 let result = size.fileFinishedImporting("modules/relationships/RelationshipManager.tsx");
 
-export default prototype1;
+export default relationshipManager;

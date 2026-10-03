@@ -1,29 +1,31 @@
-// Module ID: 15267
-// Function ID: 15268
+// Module ID: 15323
+// Function ID: 15324
 // Name: FriendOnlineNotificationSetting
-// Dependencies: [7590, 11215, 1115, 2021, 15268, 2]
+// Dependencies: [7634, 11129, 1126, 2028, 15324, 2]
 
-// Module 15267 (FriendOnlineNotificationSetting)
-import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import SettingsConstants from "SettingsConstants" /* 7590 */;
-import FriendOnlineNotificationUtils from "FriendOnlineNotificationUtils" /* 15268 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 15323 (FriendOnlineNotificationSetting)
+import intl2 from "intl" /* 1126 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import FriendOnlineNotificationUtils from "FriendOnlineNotificationUtils" /* 15324 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["uvIi/4"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["uvIi/4"]);
   },
   useDescription() {
-    const intl = util.intl;
-    return intl.string(util.t.E6O06k);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.E6O06k);
   },
-  parent: SettingsConstants.MobileUserSettings.NOTIFICATIONS,
+  parent: MobileUserSettings.NOTIFICATIONS,
   useValue: UserSettings.EnableFriendOnlineNotifications.useSetting,
   onValueChange: FriendOnlineNotificationUtils.onFriendOnlineNotificationSettingsChanged
-});
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/FriendOnlineNotificationSetting.tsx");
 
 export default toggle;

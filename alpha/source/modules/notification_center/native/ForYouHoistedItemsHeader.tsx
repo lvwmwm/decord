@@ -1,21 +1,39 @@
-// Module ID: 16299
-// Function ID: 16300
+// Module ID: 16373
+// Function ID: 16374
 // Name: ForYouHoistedItemsHeader
-// Dependencies: [19, 17, 21, 4845, 576, 2]
-// Exports: ForYouHoistedItemsHeader
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 2]
 
-// Module 16299 (ForYouHoistedItemsHeader)
-import nativeDefault from "native" /* 576 */;
-import noop from "module_19" /* 19 */;
+// Module 16373 (ForYouHoistedItemsHeader)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
-const obj2 = { container: { marginTop: nativeDefault.space.PX_16 } };
-let closure_2 = createStyles.createStyles(obj2);
-const size = fn(2);
+let obj2;
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let obj = { container: obj2 };
+obj2 = { marginTop: nativeDefault.space.PX_16 };
+let closure_4 = createStyles.createStyles(obj);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp3;
+  const obj = react2;
+  const cResult = obj.c(2);
+  const tmp2 = closure_4();
+  if (cResult[0] !== tmp2.container) {
+    const tmp6 = <View style={tmp2.container} />;
+    cResult[0] = tmp2.container;
+    cResult[1] = tmp6;
+    tmp3 = tmp6;
+  } else {
+    tmp3 = cResult[1];
+  }
+  return tmp3;
+}) : (() => <View style={closure_4().container} />);
 const result = size.fileFinishedImporting("modules/notification_center/native/ForYouHoistedItemsHeader.tsx");
 
-export const ForYouHoistedItemsHeader = function ForYouHoistedItemsHeader() {
-  return <View style={closure_2().container} />;
-};
+export const ForYouHoistedItemsHeader = tmp3;

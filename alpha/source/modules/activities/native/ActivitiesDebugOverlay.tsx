@@ -1,49 +1,57 @@
-// Module ID: 17213
-// Function ID: 17214
+// Module ID: 17261
+// Function ID: 17262
 // Name: ActivitiesDebugOverlay
-// Dependencies: [19, 17, 21, 4845, 4712, 576, 8973, 1613, 4841, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4890, 4727, 587, 558, 576, 8992, 1618, 4886, 2]
 
-// Module 17213 (ActivitiesDebugOverlay)
-import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1613 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import useThermalState from "useThermalState" /* 8973 */;
-import noop from "module_19" /* 19 */;
+// Module 17261 (ActivitiesDebugOverlay)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import useThermalState from "useThermalState" /* 8992 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ColorUtils_mod from "ColorUtils" /* 4727 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const useThermalStateDefault = useThermalState;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsxs: closure_4, jsx: hasOwnProperty } = jsxProd);
-const createStyles = fn(4845);
-const obj2 = { container: null, row: null };
-let rect = { position: "absolute", top: 0, left: 0, backgroundColor: null, paddingRight: 16, paddingBottom: 16 };
-const ColorUtils = fn(4712);
-rect.backgroundColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.BLACK, 0.7);
-obj2.container = rect;
-obj2.row = { flexDirection: "row" };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/activities/native/ActivitiesDebugOverlay.tsx");
-
-export default function ActivitiesDebugOverlay() {
-  const tmp = closure_6();
-  const tmp4 = useThermalStateDefault();
+let ColorUtils;
+let closure_4;
+let hasOwnProperty;
+let rect;
+let tmp5;
+const useSafeAreaInsetsDefault = tmp5(1618);
+const View = react_native.View;
+({ jsxs: closure_4, jsx: hasOwnProperty } = Fragment);
+let c6 = 16;
+let createStyles = createStyles_mod;
+let obj = { container: rect, row: { flexDirection: "row" } };
+rect = { position: "absolute", top: 0, left: 0, backgroundColor: ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.BLACK, 0.7), paddingRight: 16, paddingBottom: 16 };
+createStyles = createStyles.createStyles;
+ColorUtils = ColorUtils_mod;
+let closure_7 = createStyles(obj);
+tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let items;
+  const obj = react2;
+  const cResult = obj.c(16);
+  const tmp4 = closure_7();
+  const tmp6 = useThermalStateDefault();
   let str = "text-overlay-light";
   let str2 = "";
-  if (useThermalState.ThermalStates.UNHANDLED !== tmp4) {
+  if (useThermalState.ThermalStates.UNHANDLED !== tmp6) {
     str = "text-feedback-positive";
     str2 = "nominal";
-    if (tmp5(8973).ThermalStates.NOMINAL !== tmp4) {
+    if (useThermalState.ThermalStates.NOMINAL !== tmp6) {
       str = "text-feedback-warning";
       str2 = "fair";
-      if (tmp5(8973).ThermalStates.FAIR !== tmp4) {
+      if (useThermalState.ThermalStates.FAIR !== tmp6) {
         str2 = "serious";
         str = "text-feedback-critical";
-        if (tmp5(8973).ThermalStates.SERIOUS !== tmp4) {
-          if (tmp5(8973).ThermalStates.CRITICAL === tmp4) {
+        if (useThermalState.ThermalStates.SERIOUS !== tmp6) {
+          if (useThermalState.ThermalStates.CRITICAL === tmp6) {
             str2 = "critical";
             str = "text-feedback-critical";
           }
@@ -52,12 +60,113 @@ export default function ActivitiesDebugOverlay() {
     }
   }
   const rect = useSafeAreaInsetsDefault();
-  const obj = { style: null, pointerEvents: "none", children: null };
-  const items = [tmp.container, { paddingTop: rect.top + 16, paddingLeft: rect.left + 16 }];
-  obj.style = items;
-  const obj3 = { style: tmp.row, children: null };
-  const items1 = [React4(Text_Text.Text, { variant: "text-md/normal", color: "text-overlay-light", children: ["thermal state:", " "] }), hasOwnProperty(Text_Text.Text, { variant: "text-md/normal", color: str, children: str2 })];
-  obj3.children = items1;
-  obj.children = React4(View, obj3);
+  const sum = rect.top + c6;
+  const sum1 = rect.left + c6;
+  if (cResult[0] === sum1) {
+    let tmp9;
+    if (cResult[1] === sum) {
+      tmp9 = cResult[2];
+    }
+    if (cResult[3] === tmp4.container) {
+      let tmp10;
+      let tmp12;
+      if (cResult[4] === tmp9) {
+        tmp10 = cResult[5];
+      }
+      const _Symbol = Symbol;
+      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+        const obj2 = { variant: "text-md/normal", color: "text-overlay-light", children: ["thermal state:", " "] };
+        const tmp14 = React3(Text_Text.Text, obj2);
+        cResult[6] = tmp14;
+        tmp12 = tmp14;
+      } else {
+        tmp12 = cResult[6];
+      }
+      if (cResult[7] === str2) {
+        let tmp15;
+        if (cResult[8] === str) {
+          tmp15 = cResult[9];
+        }
+        if (cResult[10] === tmp4.row) {
+          let tmp18;
+          if (cResult[11] === tmp15) {
+            tmp18 = cResult[12];
+          }
+          if (cResult[13] === tmp10) {
+            let tmp22;
+            if (cResult[14] === tmp18) {
+              tmp22 = cResult[15];
+            }
+            return tmp22;
+          }
+          const obj3 = { style: tmp10, pointerEvents: "none", children: tmp18 };
+          const tmp25 = hasOwnProperty(View, obj3);
+          cResult[13] = tmp10;
+          cResult[14] = tmp18;
+          cResult[15] = tmp25;
+          tmp22 = tmp25;
+        }
+        const obj4 = { style: tmp4.row, children: items };
+        items = [tmp12, tmp15];
+        const tmp21 = React3(View, obj4);
+        cResult[10] = tmp4.row;
+        cResult[11] = tmp15;
+        cResult[12] = tmp21;
+        tmp18 = tmp21;
+      }
+      const obj5 = { variant: "text-md/normal", color: str, children: str2 };
+      const tmp17 = hasOwnProperty(Text_Text.Text, obj5);
+      cResult[7] = str2;
+      cResult[8] = str;
+      cResult[9] = tmp17;
+      tmp15 = tmp17;
+    }
+    const items1 = [tmp4.container, tmp9];
+    cResult[3] = tmp4.container;
+    cResult[4] = tmp9;
+    cResult[5] = items1;
+    tmp10 = items1;
+  }
+  const obj6 = { paddingTop: sum, paddingLeft: sum1 };
+  cResult[0] = sum1;
+  cResult[1] = sum;
+  cResult[2] = obj6;
+  tmp9 = obj6;
+}) : (() => {
+  let items;
+  let items1;
+  let obj3;
+  const tmp = closure_7();
+  const tmp4 = useThermalStateDefault();
+  let str = "text-overlay-light";
+  let str2 = "";
+  if (useThermalState.ThermalStates.UNHANDLED !== tmp4) {
+    str = "text-feedback-positive";
+    str2 = "nominal";
+    if (useThermalState.ThermalStates.NOMINAL !== tmp4) {
+      str = "text-feedback-warning";
+      str2 = "fair";
+      if (useThermalState.ThermalStates.FAIR !== tmp4) {
+        str2 = "serious";
+        str = "text-feedback-critical";
+        if (useThermalState.ThermalStates.SERIOUS !== tmp4) {
+          if (useThermalState.ThermalStates.CRITICAL === tmp4) {
+            str2 = "critical";
+            str = "text-feedback-critical";
+          }
+        }
+      }
+    }
+  }
+  const rect = useSafeAreaInsetsDefault();
+  const obj = { style: items, pointerEvents: "none", children: React3(View, obj3) };
+  items = [tmp.container, ];
+  const obj2 = { paddingTop: rect.top + c6, paddingLeft: rect.left + c6 };
+  items[1] = obj2;
+  obj3 = { style: tmp.row, children: items1 };
+  items1 = [React3(Text_Text.Text, { variant: "text-md/normal", color: "text-overlay-light", children: ["thermal state:", " "] }), hasOwnProperty(Text_Text.Text, { variant: "text-md/normal", color: str, children: str2 })];
   return hasOwnProperty(View, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/activities/native/ActivitiesDebugOverlay.tsx");
+
+export default tmp5;

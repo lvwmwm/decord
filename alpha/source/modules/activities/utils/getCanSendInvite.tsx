@@ -1,24 +1,27 @@
-// Module ID: 13011
-// Function ID: 13012
+// Module ID: 13072
+// Function ID: 13073
 // Name: getCanSendInvite
-// Dependencies: [1074, 11467, 6918, 11468, 11469, 11470, 2]
+// Dependencies: [1085, 11386, 6816, 11387, 11388, 11389, 2]
 // Exports: getCanSendInvite
 
-// Module 13011 (getCanSendInvite)
-import isInviteActiveDefault from "isInviteActive" /* 11467 */;
-import getPartySize from "getPartySize" /* 11468 */;
-import hasPartySize from "hasPartySize" /* 11469 */;
-import Constants from "Constants" /* 1074 */;
+// Module 13072 (getCanSendInvite)
+import isInviteActiveDefault from "isInviteActive" /* 11386 */;
+import _slicedToArray from "_slicedToArray" /* 11387 */;
+import hasPartySize from "hasPartySize" /* 11388 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
+let c3;
+let closure_4;
 ({ ActivityFlags: c3, ActivityActionTypes: closure_4 } = Constants);
 const result = size.fileFinishedImporting("modules/activities/utils/getCanSendInvite.tsx");
 
-export const getCanSendInvite = function getCanSendInvite(findActivityResult, author, application1, id2) {
-  if (author.author.id === id2) {
+export const getCanSendInvite = function getCanSendInvite(applicationActivity, author, application1, id4) {
+  if (author.author.id === id4) {
     return false;
   } else {
-    if (isInviteActiveDefault(findActivityResult, author, application1.id)) {
+    const tmp11 = importDefault;
+    if (isInviteActiveDefault(applicationActivity, author, application1.id)) {
       const activity = author.activity;
       let type;
       if (activity != null) {
@@ -26,14 +29,16 @@ export const getCanSendInvite = function getCanSendInvite(findActivityResult, au
       }
       if (type !== constants2.JOIN_REQUEST) {
         return false;
-      } else if (tmp11(6918)(findActivityResult, constants.JOIN)) {
-        const partySize = getPartySize.getPartySize(findActivityResult);
-        const tmp5 = require;
-        const hasPartySizeResult = hasPartySize.hasPartySize(partySize);
+      } else if (tmp11(6816)(applicationActivity, constants.JOIN)) {
+        const obj = _slicedToArray;
+        const partySize = obj.getPartySize(applicationActivity);
+        const obj2 = hasPartySize;
+        const hasPartySizeResult = obj2.hasPartySize(partySize);
         let isPartyFullResult = !hasPartySizeResult;
+        const tmp5 = require;
         if (hasPartySizeResult) {
-          isPartyFullResult = tmp5(11470).isPartyFull(partySize);
-          const tmp5Result = tmp5(11470);
+          const tmp5Result = tmp5(11389);
+          isPartyFullResult = tmp5Result.isPartyFull(partySize);
         }
         return !isPartyFullResult;
       } else {
@@ -42,6 +47,5 @@ export const getCanSendInvite = function getCanSendInvite(findActivityResult, au
     } else {
       return false;
     }
-    tmp11 = importDefault;
   }
 };

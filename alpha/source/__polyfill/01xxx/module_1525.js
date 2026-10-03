@@ -1,21 +1,41 @@
 // Module ID: 1525
 // Function ID: 1526
-// Dependencies: [19, 1526]
-// Exports: useRoute
+// Dependencies: [19, 21]
+// Exports: EnsureSingleNavigator
 
 // Module 1525
-import _mod1526 from "module_1526" /* 1526 */;
-import noop from "module_19" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
 
-require = arg1;
+const jsx = Fragment.jsx;
+const context = react.createContext(undefined);
 
-export const useRoute = function useRoute() {
-  const context = noop.useContext(_mod1526.NavigationRouteContext);
-  if (undefined === context) {
-    const _Error = Error;
-    const error = new Error("Couldn't find a route object. Is your component inside a screen in a navigator?");
-    throw error;
-  } else {
-    return context;
-  }
+export const SingleNavigatorContext = context;
+export const EnsureSingleNavigator = function EnsureSingleNavigator(children) {
+  children = children.children;
+  let closure_0 = react.useRef(undefined);
+  return <context.Provider value={react.useMemo(() => {
+    let ref;
+    return {
+      register(current) {
+        current = ref.current;
+        const tmp = ref;
+        if (undefined !== current) {
+          if (current !== current) {
+            const _Error = Error;
+            const self = this;
+            const self2 = this;
+            const error = new Error("Another navigator is already registered for this container. You likely have multiple navigators under a single \"NavigationContainer\" or \"Screen\". Make sure each navigator is under a separate \"Screen\" container. See https://reactnavigation.org/docs/nesting-navigators for a guide on nesting.");
+            throw error;
+          }
+        }
+        tmp.current = current;
+      },
+      unregister(arg0) {
+        if (arg0 === ref.current) {
+          tmp.current = undefined;
+        }
+      }
+    };
+  }, [])}>{children}</context.Provider>;
 };

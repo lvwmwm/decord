@@ -1,39 +1,54 @@
 // Module ID: 14026
 // Function ID: 14027
-// Dependencies: [14018, 14017, 14025]
+// Dependencies: [14027, 14028, 14030, 1172, 14032, 14031]
+// Exports: getCanonicalLocales
 
 // Module 14026
-import _mod14018 from "module_14018" /* 14018 */;
+import emitUnicodeLanguageId from "emitUnicodeLanguageId" /* 14027 */;
+import canonicalizeUnicodeLanguageId from "canonicalizeUnicodeLanguageId" /* 14028 */;
+import likelySubtags from "likelySubtags" /* 14031 */;
+import _mod14032 from "module_14032" /* 14032 */;
+import module_1172_mod from "module_1172" /* 1172 */;
 
+const require = globalThis.__r;
 
-export default (arg0, arg1) => {
-  if ("string" === arg1) {
-    const toString = arg0.toString;
-    if (_mod14018(toString)) {
-      const tmp4 = tmp(14025)(toString, arg0);
-      if (!tmpResult(tmp4)) {
-        return tmp4;
-      }
-      tmpResult = tmp(14017);
+let module_1172 = module_1172_mod;
+module_1172.__exportStar(emitUnicodeLanguageId, exports);
+module_1172 = module_1172_mod;
+module_1172.__exportStar(_mod14032, exports);
+module_1172 = module_1172_mod;
+module_1172.__exportStar(likelySubtags, exports);
+
+export const getCanonicalLocales = function getCanonicalLocales(items) {
+  if (undefined === items) {
+    items = [];
+  } else {
+    let arr3 = items;
+    if (typeof items === "string") {
+      const items1 = [items];
+      arr3 = items1;
+    }
+    const items2 = [];
+    let num3 = 0;
+    items = items2;
+    if (0 < arr3.length) {
+      do {
+        let tmp = arr3[num3];
+        let emitUnicodeLocaleId = emitUnicodeLanguageId.emitUnicodeLocaleId;
+        let emitUnicodeLocaleIdResult = emitUnicodeLocaleId(canonicalizeUnicodeLanguageId.CanonicalizeUnicodeLocaleId(require("SEPARATOR").parseUnicodeLocaleId(tmp)));
+        if (items2.indexOf(emitUnicodeLocaleIdResult) < 0) {
+          let arr = items2.push(emitUnicodeLocaleIdResult);
+        }
+        num3 = num3 + 1;
+        items = items2;
+      } while (num3 < arr3.length);
     }
   }
-  const valueOf = arg0.valueOf;
-  if (_mod14018(valueOf)) {
-    const tmp8 = tmp5(14025)(valueOf, arg0);
-    if (!tmp5Result(tmp8)) {
-      return tmp8;
-    }
-    tmp5Result = tmp5(14017);
-  }
-  if ("string" !== arg1) {
-    const toString2 = arg0.toString;
-    if (tmp5(14018)(toString2)) {
-      const tmp10 = tmp5(14025)(toString2, arg0);
-      if (!tmp5Result2(tmp10)) {
-        return tmp10;
-      }
-      tmp5Result2 = tmp5(14017);
-    }
-  }
-  throw new TypeError("Can't convert object to primitive value");
+  return items;
 };
+export const isStructurallyValidLanguageTag = require("SEPARATOR").isStructurallyValidLanguageTag;
+export const isUnicodeLanguageSubtag = require("SEPARATOR").isUnicodeLanguageSubtag;
+export const isUnicodeRegionSubtag = require("SEPARATOR").isUnicodeRegionSubtag;
+export const isUnicodeScriptSubtag = require("SEPARATOR").isUnicodeScriptSubtag;
+export const parseUnicodeLanguageId = require("SEPARATOR").parseUnicodeLanguageId;
+export const parseUnicodeLocaleId = require("SEPARATOR").parseUnicodeLocaleId;

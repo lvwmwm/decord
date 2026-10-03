@@ -1,12 +1,12 @@
-// Module ID: 14183
-// Function ID: 14184
+// Module ID: 14251
+// Function ID: 14252
 // Name: TagGroupTypes
-// Dependencies: [14184, 576, 2]
+// Dependencies: [14252, 587, 2]
 // Exports: getTagBorderRadius, getTagGap, getTagGraphicDimension, getTagHorizontalPadding, getTagIconSize, getTagMinHeight, getTagTextVariant, getTagVerticalPadding
 
-// Module 14183 (TagGroupTypes)
-import nativeDefault from "native" /* 576 */;
-import TagGroupShared from "TagGroupShared" /* 14184 */;
+// Module 14251 (TagGroupTypes)
+import nativeDefault from "native" /* 587 */;
+import TagGroupShared from "TagGroupShared" /* 14252 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/components/TagGroup/native/TagGroupTypes.native.tsx");
@@ -28,10 +28,12 @@ export function getTagMinHeight(arg0) {
   }
 }
 export const getTagTextVariant = function getTagTextVariant(arg0) {
-  return TagGroupShared.getTagTextVariant(arg0);
+  const obj = TagGroupShared;
+  return obj.getTagTextVariant(arg0);
 };
 export const getTagIconSize = function getTagIconSize(arg0) {
-  return TagGroupShared.getTagIconSize(arg0);
+  const obj = TagGroupShared;
+  return obj.getTagIconSize(arg0);
 };
 export function getTagGraphicDimension(size) {
   let num = 12;
@@ -41,8 +43,9 @@ export function getTagGraphicDimension(size) {
   return num;
 }
 export const getTagBorderRadius = function getTagBorderRadius(arg0, arg1) {
+  let xs;
   if ("filter" === arg1) {
-    let xs = nativeDefault.radii.round;
+    xs = nativeDefault.radii.round;
   } else if ("md" === arg0) {
     xs = nativeDefault.radii.sm;
   } else {
@@ -51,16 +54,18 @@ export const getTagBorderRadius = function getTagBorderRadius(arg0, arg1) {
   return xs;
 };
 export const getTagHorizontalPadding = function getTagHorizontalPadding(arg0) {
+  let PX_8;
   if ("md" === arg0) {
-    let PX_8 = nativeDefault.space.PX_12;
+    PX_8 = nativeDefault.space.PX_12;
   } else {
     PX_8 = nativeDefault.space.PX_8;
   }
   return PX_8;
 };
 export const getTagGap = function getTagGap(arg0) {
+  let PX_4;
   if ("md" === arg0) {
-    let PX_4 = nativeDefault.space.PX_8;
+    PX_4 = nativeDefault.space.PX_8;
   } else {
     PX_4 = nativeDefault.space.PX_4;
   }

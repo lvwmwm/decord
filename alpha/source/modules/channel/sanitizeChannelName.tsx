@@ -1,21 +1,22 @@
-// Module ID: 9212
-// Function ID: 9213
+// Module ID: 9218
+// Function ID: 9219
 // Name: sanitizeChannelName
-// Dependencies: [1095, 6879, 5000, 2]
+// Dependencies: [1106, 6777, 5045, 2]
 // Exports: default
 
-// Module 9212 (sanitizeChannelName)
-import ChannelTypes from "ChannelTypes" /* 1095 */;
-import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 5000 */;
-import sanitizeThreadNameDefault from "sanitizeThreadName" /* 6879 */;
+// Module 9218 (sanitizeChannelName)
+import ChannelTypes from "ChannelTypes" /* 1106 */;
+import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 5045 */;
+import sanitizeThreadNameDefault from "sanitizeThreadName" /* 6777 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/channel/sanitizeChannelName.tsx");
 
 export default function sanitizeChannelName(arg0, arg1) {
+  let tmp3;
   const THREADS = ChannelTypes.ChannelTypesSets.THREADS;
   if (THREADS.has(arg1)) {
-    let tmp3 = sanitizeThreadNameDefault(arg0, false);
+    tmp3 = sanitizeThreadNameDefault(arg0, false);
   } else {
     const LIMITED_CHANNEL_NAME = ChannelTypes.ChannelTypesSets.LIMITED_CHANNEL_NAME;
     tmp3 = arg0;

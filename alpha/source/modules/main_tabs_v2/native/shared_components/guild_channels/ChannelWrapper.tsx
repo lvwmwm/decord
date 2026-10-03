@@ -1,41 +1,54 @@
-// Module ID: 16303
-// Function ID: 16304
+// Module ID: 16377
+// Function ID: 16378
 // Name: ChannelWrapper
-// Dependencies: [19, 17, 21, 9773, 2]
+// Dependencies: [19, 17, 21, 11698, 2]
 // Exports: renderChannelWrapper
 
-// Module 16303 (ChannelWrapper)
-import ChannelListLayout from "ChannelListLayout" /* 9773 */;
-import noop from "module_19" /* 19 */;
+// Module 16377 (ChannelWrapper)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import ChannelListLayout from "ChannelListLayout" /* 11698 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const View = react_native.View;
+const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelWrapper.tsx");
 
 export const renderChannelWrapper = function renderChannelWrapper(children, fontScale) {
+  let channel;
+  let launchpad;
+  let layout;
+  let paddingThread;
+  let panelVariant;
+  let result;
   ({ channel, layout, launchpad, panelVariant } = fontScale);
+  fontScale = fontScale.fontScale;
   if (panelVariant === undefined) {
     panelVariant = false;
   }
   let isThreadResult;
+  const getScaledChannelRowHeight = ChannelListLayout.getScaledChannelRowHeight;
+  ChannelListLayout;
   if (channel != null) {
     isThreadResult = channel.isThread();
   }
   if (isThreadResult) {
     isThreadResult = !launchpad;
   }
-  const scaledChannelRowHeight = ChannelListLayout.getScaledChannelRowHeight(fontScale.fontScale, layout, isThreadResult);
-  const layoutStyles = ChannelListLayout.getLayoutStyles(layout, launchpad);
+  const scaledChannelRowHeight = getScaledChannelRowHeight(fontScale, layout, isThreadResult);
+  const tmpResult = ChannelListLayout;
+  const layoutStyles = tmpResult.getLayoutStyles(layout, launchpad);
   const items = [{ flex: 1, flexDirection: "row", alignItems: "center", position: "relative" }, , ];
   let isThreadResult1;
+  const tmp7 = jsx;
+  const tmp8 = View;
   if (channel != null) {
     isThreadResult1 = channel.isThread();
   }
   const layout2 = layoutStyles.layout;
   if (isThreadResult1) {
-    let result = 2 * layout2.marginThread.marginVertical;
+    result = 2 * layout2.marginThread.marginVertical;
   } else {
     result = 2 * layout2.margin.marginVertical;
   }
@@ -46,10 +59,11 @@ export const renderChannelWrapper = function renderChannelWrapper(children, font
   }
   const container = layoutStyles.container;
   if (isThreadResult2) {
-    let paddingThread = container.paddingThread;
+    paddingThread = container.paddingThread;
   } else {
     paddingThread = panelVariant ? container.paddingPanels : container.padding;
   }
+  const obj = { style: items, children };
   items[2] = paddingThread;
-  return <View style={items}>{arg0}</View>;
+  return tmp7(tmp8, obj);
 };

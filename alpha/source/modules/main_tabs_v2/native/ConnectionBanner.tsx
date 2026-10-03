@@ -1,190 +1,51 @@
-// Module ID: 16258
-// Function ID: 16259
+// Module ID: 16334
+// Function ID: 16335
 // Name: ConnectionBanner
-// Dependencies: [32, 19, 17, 13435, 14839, 1074, 21, 4845, 576, 1115, 4560, 16259, 16261, 4841, 672, 4595, 6162, 5477, 504, 1241, 14838, 5464, 13436, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 13495, 14895, 1085, 21, 4890, 587, 1126, 558, 576, 4580, 16335, 16337, 4886, 683, 5605, 6052, 4612, 504, 1252, 14894, 5597, 13496, 2]
 
-// Module 16258 (ConnectionBanner)
-import nativeDefault from "native" /* 576 */;
-import _modDef672 from "module_672" /* 672 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import useToken from "useToken" /* 4560 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4595 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import spring from "spring" /* 5464 */;
-import LinearGradientDefault from "LinearGradient" /* 5477 */;
-import _modDef6162 from "module_6162" /* 6162 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import ConnectivityIndicatorStateStore from "ConnectivityIndicatorStateStore" /* 13435 */;
+// Module 16334 (ConnectionBanner)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import _modDef683 from "module_683" /* 683 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import useToken from "useToken" /* 4580 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import spring from "spring" /* 5597 */;
+import LinearGradientDefault from "LinearGradient" /* 5605 */;
+import _modDef6052 from "module_6052" /* 6052 */;
+import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 13495 */;
+import ConnectionIndicatorExperimentDefault from "ConnectionIndicatorExperiment" /* 13496 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import YouBarConstants from "YouBarConstants" /* 14895 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const ReanimatedRexportDefault = ReanimatedRexport;
+const require = globalThis.__r;
+const ConnectivityIndicatorStateStore = ConnectivityIndicatorStateStore2;
+let _require, dependencyMap, importDefault, set;
 
-require = fn;
-function ConnectionBannerIcon(state) {
-  state = state.state;
-  const tmp = closure_21();
-  useToken;
-  if (constants.WAITING_FOR_NETWORK === state) {
-    const obj2 = { style: tmp.leadingSlot, children: null };
-    const obj3 = { size: "small", color: tmp6, style: tmp.spinner };
-    obj2.children = closure_1_12(hasOwnProperty, obj3);
-    return closure_1_12(timestampProducer, obj2);
-  } else if (tmp7.NO_CONNECTION === state) {
-    const obj4 = { style: tmp.leadingSlot, children: null };
-    const obj5 = { size: "xs", color: tmp5(576).colors.INTERACTIVE_ICON_DEFAULT };
-    obj4.children = closure_1_12(tmp2(16259).ConnectionUnknownIcon, obj5);
-    return closure_1_12(timestampProducer, obj4);
-  } else if (tmp7.BACK_ONLINE === state) {
-    const obj = { style: tmp.leadingSlot, children: null };
-    const obj6 = { size: "xs", color: tmp5(576).colors.ICON_FEEDBACK_POSITIVE };
-    obj.children = closure_1_12(tmp2(16261).ConnectionFineIcon, obj6);
-    return closure_1_12(timestampProducer, obj);
-  }
-}
-function ConnectionBannerContent(state) {
-  state = state.state;
-  const obj = { style: closure_21().content, children: null };
-  const items = [closure_1_12(ConnectionBannerIcon, { state }), ];
-  let str = "text-muted";
-  if (state === constants.BACK_ONLINE) {
-    str = "text-feedback-positive";
-  }
-  const obj2 = { variant: "text-sm/medium", color: str, maxFontSizeMultiplier: 1.5, children: null };
-  if (constants.WAITING_FOR_NETWORK === state) {
-    const intl2 = tmp4(1115).intl;
-    let stringResult = intl2.string(tmp4(1115).t.XKk1gp);
-  } else if (tmp6.NO_CONNECTION === state) {
-    const intl = tmp4(1115).intl;
-    stringResult = intl.string(tmp4(1115).t.zPerw8);
-  } else if (tmp6.BACK_ONLINE === state) {
-    const intl3 = tmp4(1115).intl;
-    stringResult = intl3.string(tmp4(1115).t.j8lYE2);
-  }
-  obj2.children = stringResult;
-  items[1] = closure_1_12(Text_Text.Text, obj2);
-  obj.children = items;
-  return map1(timestampProducer, obj);
-}
-function BackOnlineGlow(opacity) {
-  let token;
-  const tmp = closure_21();
-  token = token(4560).useToken(nativeDefault.colors.ICON_FEEDBACK_POSITIVE);
-  let items = [token];
-  const memo = noop.useMemo(() => {
-    const obj = _modDef672(token);
-    const items = [obj.alpha(0).css(), , , ];
-    const alphaResult = obj.alpha(0);
-    items[1] = obj.alpha(0.1).css();
-    const alphaResult1 = obj.alpha(0.1);
-    items[2] = obj.alpha(0.28).css();
-    const alphaResult2 = obj.alpha(0.28);
-    items[3] = obj.alpha(0.55).css();
-    return items;
-  }, items);
-  const obj2 = { style: null, pointerEvents: "none", children: null };
-  const items1 = [tmp.glow, { opacity: opacity.progress }];
-  obj2.style = items1;
-  const obj3 = { style: tmp.glow, maskElement: null, children: null };
-  let obj = token(4560);
-  obj3.maskElement = closure_12(LinearGradientDefault, { style: tmp.glowMaskGradient, colors, locations, start, end });
-  obj3.children = closure_12(LinearGradientDefault, { style: tmp.glowMaskGradient, colors: memo, locations: locations2, start: start2, end: end2 });
-  obj2.children = closure_12(_modDef6162, obj3);
-  return closure_12(ReanimatedRexportDefault.View, obj2);
-}
-function ConnectionBannerInner() {
-  const tmp = closure_21();
-  const youBarBottomMargin = require("useYouBarMargins").useYouBarBottomMargin();
-  let obj = require("useYouBarMargins");
-  let items = [ConnectivityIndicatorStateStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => state.getState());
-  _require = tmp7;
-  importDefault = tmp8;
-  let tmp9 = null;
-  if (stateFromStores !== constants.HIDDEN) {
-    tmp9 = stateFromStores;
-  }
-  const obj2 = require("initialize");
-  const tmp6 = constants;
-  sharedValue = require("ReanimatedRexport").useSharedValue(0);
-  const tmp2Result = require("ReanimatedRexport");
-  [tmp12, tmp13] = sharedValue1.useState(tmp9);
-  _slicedToArray = tmp13;
-  const tmp11 = _slicedToArray(sharedValue1.useState(tmp9), 2);
-  sharedValue1 = require("ReanimatedRexport").useSharedValue(0);
-  if (tmp15) {
-    tmp13(tmp9);
-  }
-  const items1 = [stateFromStores !== constants.HIDDEN, sharedValue1];
-  const effect = obj4.useEffect(() => {
-    let num = 0;
-    if (shouldShowBanner) {
-      num = 1;
-    }
-    const fn = function n(arg0) {
-      if (!tmp) {
-        closure_0(sharedValue[15]).runOnJS(setRenderState)(null);
-        const obj = closure_0(sharedValue[15]);
-      }
-    };
-    let obj = spring;
-    fn.__closure = { shouldShowBanner, runOnJS: ReanimatedRexport.runOnJS, setRenderState };
-    fn.__workletHash = 3065113239920;
-    fn.__initData = __initData;
-    const result = sharedValue1.set(obj.withSpring(num, YOU_BAR_SPRING_CONFIG, "respect-motion-settings", fn));
-  }, items1);
-  const items2 = [stateFromStores === constants.BACK_ONLINE, sharedValue];
-  const effect1 = obj4.useEffect(() => {
-    let num = 0;
-    if (closure_1) {
-      num = 1;
-    }
-    const result = sharedValue.set(spring.withSpring(num, YOU_BAR_SPRING_CONFIG));
-  }, items2);
-  tmp15 = null != tmp9 && tmp12 !== tmp9;
-  const tmp2Result3 = require("ReanimatedRexport");
-  class A {
-    constructor() {
-      obj = { transform: null, opacity: null };
-      obj1 = { translateY: (1 - closure_4.get()) * CONNECTION_BANNER_HEIGHT };
-      items = [];
-      items[0] = obj1;
-      obj.transform = items;
-      obj.opacity = closure_4.get();
-      return obj;
-    }
-  }
-  A.__closure = { progress: sharedValue1, CONNECTION_BANNER_HEIGHT };
-  A.__workletHash = 13973493587548;
-  A.__initData = __initData;
-  const animatedStyle = require("ReanimatedRexport").useAnimatedStyle(A);
-  const obj5 = { pointerEvents: "none", style: null, children: null };
-  const items3 = [tmp.container, { height: youBarBottomMargin + CONNECTION_BANNER_HEIGHT }, animatedStyle];
-  obj5.style = items3;
-  let tmp21 = null;
-  if (tmp12 === tmp6.BACK_ONLINE) {
-    const obj6 = { progress: sharedValue };
-    tmp21 = closure_12(BackOnlineGlow, obj6);
-  }
-  const items4 = [tmp21, ];
-  let tmp24 = null;
-  if (null != tmp12) {
-    const obj7 = { state: tmp12 };
-    tmp24 = closure_12(ConnectionBannerContent, obj7);
-  }
-  items4[1] = tmp24;
-  obj5.children = items4;
-  return closure_13(require("ReanimatedRexport").View, obj5);
-}
-get_ActivityIndicator = fn(17);
-({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const constants = fn(13435).ConnectivityIndicatorState;
-const YouBarConstants = fn(14839);
+let closure_12;
+let hasOwnProperty;
+let items;
+let map1;
+let metroRequire;
+let obj2;
+let rect;
+let tmp2;
+const ReanimatedRexport = tmp2(4612);
+let _slicedToArray = _slicedToArray_mod;
+({ ActivityIndicator: hasOwnProperty, View: metroRequire } = react_native);
+const constants = ConnectivityIndicatorStateStore2.ConnectivityIndicatorState;
 const CONNECTION_BANNER_HEIGHT = YouBarConstants.CONNECTION_BANNER_HEIGHT;
 const YOU_BAR_SPRING_CONFIG = YouBarConstants.YOU_BAR_SPRING_CONFIG;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const jsxProd = fn(21);
-({ jsx: closure_12, jsxs: map1 } = jsxProd);
+const AnalyticEvents = Constants.AnalyticEvents;
+({ jsx: closure_12, jsxs: map1 } = Fragment);
 const colors = ["transparent", "black", "black", "transparent"];
 const locations = [0, 0.25, 0.75, 1];
 const start = { x: 0, y: 0.5 };
@@ -192,58 +53,861 @@ const end = { x: 1, y: 0.5 };
 const locations2 = [0, 0.4, 0.75, 1];
 const start2 = { x: 0, y: 0 };
 const end2 = { x: 0, y: 1 };
-const createStyles = fn(4845);
-let obj2 = { container: { position: "absolute", left: 0, right: 0, bottom: 0 }, glow: { position: "absolute", top: 0, bottom: 0, left: 0, right: 0 }, glowMaskGradient: { flex: 1 }, content: null, leadingSlot: null, spinner: null };
-const rect = { position: "absolute", top: 0, left: 0, right: 0, height: CONNECTION_BANNER_HEIGHT, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_12 };
-obj2.content = rect;
-obj2.leadingSlot = { width: 16, height: 16, alignItems: "center", justifyContent: "center" };
-let obj3 = { transform: null };
-let items = [{ scale: 0.8 }];
-obj3.transform = items;
-obj2.spinner = obj3;
-let closure_21 = createStyles.createStyles(obj2);
-let closure_25 = { code: "function ConnectionBannerTsx1(finished){const{shouldShowBanner,runOnJS,setRenderState}=this.__closure;if(finished===true&&!shouldShowBanner){runOnJS(setRenderState)(null);}}" };
-const __initData = { code: "function ConnectionBannerTsx2(){const{progress,CONNECTION_BANNER_HEIGHT}=this.__closure;return{transform:[{translateY:(1-progress.get())*CONNECTION_BANNER_HEIGHT}],opacity:progress.get()};}" };
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/main_tabs_v2/native/ConnectionBanner.tsx");
-
-export default function ConnectionBanner() {
-  const config = stateFromStores(13436).useConfig({ location: "ConnectionBanner" });
-  const hidden = config.hidden;
-  stateFromStores = undefined;
-  let obj = stateFromStores(13436);
+let obj = { container: { position: "absolute", left: 0, right: 0, bottom: 0 }, glow: { position: "absolute", top: 0, bottom: 0, left: 0, right: 0 }, glowMaskGradient: { flex: 1 }, content: rect, leadingSlot: { width: 16, height: 16, alignItems: "center", justifyContent: "center" }, spinner: obj2 };
+rect = { position: "absolute", top: 0, left: 0, right: 0, height: CONNECTION_BANNER_HEIGHT, flexDirection: "row", alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_12 };
+obj2 = { transform: items };
+items = [{ scale: 0.8 }];
+let closure_21 = createStyles.createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
+  const obj = react2;
+  const cResult = obj.c(12);
+  state = state.state;
+  const tmp4 = closure_21();
+  const obj2 = useToken;
+  const token = obj2.useToken(nativeDefault.colors.INTERACTIVE_ICON_DEFAULT);
+  if (constants.WAITING_FOR_NETWORK === state) {
+    if (cResult[0] === token) {
+      let tmp24;
+      if (cResult[1] === tmp4.spinner) {
+        tmp24 = cResult[2];
+      }
+      if (cResult[3] === tmp4.leadingSlot) {
+        let tmp28;
+        if (cResult[4] === tmp24) {
+          tmp28 = cResult[5];
+        }
+        return tmp28;
+      }
+      const obj3 = { style: tmp4.leadingSlot, children: tmp24 };
+      const tmp31 = closure_12(metroRequire, obj3);
+      cResult[3] = tmp4.leadingSlot;
+      cResult[4] = tmp24;
+      cResult[5] = tmp31;
+      tmp28 = tmp31;
+    }
+    const obj4 = { size: "small", color: token, style: tmp4.spinner };
+    const tmp27 = closure_12(hasOwnProperty, obj4);
+    cResult[0] = token;
+    cResult[1] = tmp4.spinner;
+    cResult[2] = tmp27;
+    tmp24 = tmp27;
+  } else if (constants.NO_CONNECTION === state) {
+    let tmp17;
+    let tmp20;
+    const _Symbol2 = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj5 = { size: "xs", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
+      const ConnectionUnknownIcon = tmp(16335).ConnectionUnknownIcon;
+      const tmp19 = closure_12(ConnectionUnknownIcon, obj5);
+      cResult[6] = tmp19;
+      tmp17 = tmp19;
+    } else {
+      tmp17 = cResult[6];
+    }
+    if (cResult[7] !== tmp4.leadingSlot) {
+      const obj6 = { style: tmp4.leadingSlot, children: tmp17 };
+      const tmp23 = closure_12(metroRequire, obj6);
+      cResult[7] = tmp4.leadingSlot;
+      cResult[8] = tmp23;
+      tmp20 = tmp23;
+    } else {
+      tmp20 = cResult[8];
+    }
+    return tmp20;
+  } else if (constants.BACK_ONLINE === state) {
+    let tmp9;
+    let tmp12;
+    const _Symbol = Symbol;
+    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj7 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
+      const ConnectionFineIcon = tmp(16337).ConnectionFineIcon;
+      const tmp11 = closure_12(ConnectionFineIcon, obj7);
+      cResult[9] = tmp11;
+      tmp9 = tmp11;
+    } else {
+      tmp9 = cResult[9];
+    }
+    if (cResult[10] !== tmp4.leadingSlot) {
+      const obj8 = { style: tmp4.leadingSlot, children: tmp9 };
+      const tmp15 = closure_12(metroRequire, obj8);
+      cResult[10] = tmp4.leadingSlot;
+      cResult[11] = tmp15;
+      tmp12 = tmp15;
+    } else {
+      tmp12 = cResult[11];
+    }
+    return tmp12;
+  }
+}) : ((state) => {
+  let ConnectionFineIcon;
+  let ConnectionUnknownIcon;
+  let obj3;
+  let obj5;
+  let obj6;
+  state = state.state;
+  const tmp = closure_21();
+  useToken;
+  if (constants.WAITING_FOR_NETWORK === state) {
+    const obj2 = { style: tmp.leadingSlot, children: closure_12(hasOwnProperty, obj3) };
+    obj3 = { size: "small", color: tmp6, style: tmp.spinner };
+    return closure_12(metroRequire, obj2);
+  } else if (constants.NO_CONNECTION === state) {
+    const obj4 = { style: tmp.leadingSlot, children: closure_12(ConnectionUnknownIcon, obj5) };
+    obj5 = { size: "xs", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
+    ConnectionUnknownIcon = tmp2(16335).ConnectionUnknownIcon;
+    return closure_12(metroRequire, obj4);
+  } else if (constants.BACK_ONLINE === state) {
+    const obj = { style: tmp.leadingSlot, children: closure_12(ConnectionFineIcon, obj6) };
+    obj6 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
+    ConnectionFineIcon = tmp2(16337).ConnectionFineIcon;
+    return closure_12(metroRequire, obj);
+  }
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
+  let items;
+  let tmp10;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(11);
+  state = state.state;
+  const tmp4 = closure_21();
+  const content = tmp4.content;
+  if (cResult[0] !== state) {
+    const obj2 = { state };
+    const tmp8 = closure_12(closure_22, obj2);
+    cResult[0] = state;
+    cResult[1] = tmp8;
+    tmp5 = tmp8;
+  } else {
+    tmp5 = cResult[1];
+  }
+  let str = "text-muted";
+  if (state === constants.BACK_ONLINE) {
+    str = "text-feedback-positive";
+  }
+  if (cResult[2] !== state) {
+    let stringResult;
+    if (constants.WAITING_FOR_NETWORK === state) {
+      const intl2 = tmp(1126).intl;
+      stringResult = intl2.string(tmp(1126).t.XKk1gp);
+    } else if (constants.NO_CONNECTION === state) {
+      const intl = tmp(1126).intl;
+      stringResult = intl.string(tmp(1126).t.zPerw8);
+    } else if (constants.BACK_ONLINE === state) {
+      const intl3 = tmp(1126).intl;
+      stringResult = intl3.string(tmp(1126).t.j8lYE2);
+    }
+    cResult[2] = state;
+    cResult[3] = stringResult;
+    tmp10 = stringResult;
+  } else {
+    tmp10 = cResult[3];
+  }
+  if (cResult[4] === str) {
+    let tmp12;
+    if (cResult[5] === tmp10) {
+      tmp12 = cResult[6];
+    }
+    if (cResult[7] === tmp4.content) {
+      if (cResult[8] === tmp5) {
+        let tmp14;
+        if (cResult[9] === tmp12) {
+          tmp14 = cResult[10];
+        }
+        return tmp14;
+      }
+    }
+    const obj3 = { style: content, children: items };
+    items = [tmp5, tmp12];
+    const tmp17 = map1(metroRequire, obj3);
+    cResult[7] = tmp4.content;
+    cResult[8] = tmp5;
+    cResult[9] = tmp12;
+    cResult[10] = tmp17;
+    tmp14 = tmp17;
+  }
+  const tmp13 = closure_12(Text_Text.Text, { variant: "text-sm/medium", color: str, maxFontSizeMultiplier: 1.5, children: tmp10 });
+  cResult[4] = str;
+  cResult[5] = tmp10;
+  cResult[6] = tmp13;
+  tmp12 = tmp13;
+}) : ((state) => {
+  let items;
+  let stringResult;
+  state = state.state;
+  const obj = { style: closure_21().content, children: items };
+  items = [closure_12(closure_22, { state }), ];
+  let str = "text-muted";
+  const Text = Text_Text.Text;
+  const tmp = map1;
+  const tmp2 = metroRequire;
+  const tmp3 = closure_12;
+  if (state === constants.BACK_ONLINE) {
+    str = "text-feedback-positive";
+  }
+  const obj2 = { variant: "text-sm/medium", color: str, maxFontSizeMultiplier: 1.5, children: stringResult };
+  if (constants.WAITING_FOR_NETWORK === state) {
+    const intl2 = tmp4(1126).intl;
+    stringResult = intl2.string(tmp4(1126).t.XKk1gp);
+  } else if (constants.NO_CONNECTION === state) {
+    const intl = tmp4(1126).intl;
+    stringResult = intl.string(tmp4(1126).t.zPerw8);
+  } else if (constants.BACK_ONLINE === state) {
+    const intl3 = tmp4(1126).intl;
+    stringResult = intl3.string(tmp4(1126).t.j8lYE2);
+  }
+  items[1] = tmp3(Text, obj2);
+  return tmp(tmp2, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((progress) => {
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(27);
+  progress = progress.progress;
+  const tmp3 = closure_21();
+  const obj2 = useToken;
+  const token = obj2.useToken(nativeDefault.colors.ICON_FEEDBACK_POSITIVE);
+  if (cResult[0] !== token) {
+    const obj3 = _modDef683(token);
+    const alphaResult = obj3.alpha(0);
+    const cssResult = alphaResult.css();
+    const alphaResult1 = obj3.alpha(0.1);
+    const cssResult1 = alphaResult1.css();
+    const alphaResult2 = obj3.alpha(0.28);
+    const cssResult2 = alphaResult2.css();
+    const alphaResult3 = obj3.alpha(0.55);
+    const cssResult3 = alphaResult3.css();
+    cResult[0] = token;
+    cResult[1] = cssResult;
+    cResult[2] = cssResult1;
+    cResult[3] = cssResult2;
+    cResult[4] = cssResult3;
+    tmp9 = cssResult3;
+    tmp8 = cssResult2;
+    tmp7 = cssResult1;
+    tmp6 = cssResult;
+  } else {
+    tmp6 = cResult[1];
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+    tmp9 = cResult[4];
+  }
+  if (cResult[5] === tmp6) {
+    if (cResult[6] === tmp7) {
+      if (cResult[7] === tmp8) {
+        let tmp14;
+        let tmp15;
+        if (cResult[8] === tmp9) {
+          tmp14 = cResult[9];
+        }
+        if (cResult[10] !== progress) {
+          const obj4 = { opacity: progress };
+          cResult[10] = progress;
+          cResult[11] = obj4;
+          tmp15 = obj4;
+        } else {
+          tmp15 = cResult[11];
+        }
+        if (cResult[12] === tmp3.glow) {
+          let tmp16;
+          let tmp17;
+          if (cResult[13] === tmp15) {
+            tmp16 = cResult[14];
+          }
+          if (cResult[15] !== tmp3.glowMaskGradient) {
+            const obj5 = { style: tmp3.glowMaskGradient, colors, locations, start, end };
+            const tmp23 = closure_12(LinearGradientDefault, obj5);
+            cResult[15] = tmp3.glowMaskGradient;
+            cResult[16] = tmp23;
+            tmp17 = tmp23;
+          } else {
+            tmp17 = cResult[16];
+          }
+          if (cResult[17] === tmp14) {
+            let tmp24;
+            if (cResult[18] === tmp3.glowMaskGradient) {
+              tmp24 = cResult[19];
+            }
+            if (cResult[20] === tmp3.glow) {
+              if (cResult[21] === tmp17) {
+                let tmp30;
+                if (cResult[22] === tmp24) {
+                  tmp30 = cResult[23];
+                }
+                if (cResult[24] === tmp30) {
+                  let tmp33;
+                  if (cResult[25] === tmp16) {
+                    tmp33 = cResult[26];
+                  }
+                  return tmp33;
+                }
+                const obj6 = { style: tmp16, pointerEvents: "none", children: tmp30 };
+                const tmp35 = closure_12(ReanimatedRexportDefault.View, obj6);
+                cResult[24] = tmp30;
+                cResult[25] = tmp16;
+                cResult[26] = tmp35;
+                tmp33 = tmp35;
+              }
+            }
+            const obj7 = { style: tmp3.glow, maskElement: tmp17, children: tmp24 };
+            const tmp32 = closure_12(_modDef6052, obj7);
+            cResult[20] = tmp3.glow;
+            cResult[21] = tmp17;
+            cResult[22] = tmp24;
+            cResult[23] = tmp32;
+            tmp30 = tmp32;
+          }
+          const obj8 = { style: tmp3.glowMaskGradient, colors: tmp14, locations: locations2, start: start2, end: end2 };
+          const tmp29 = closure_12(LinearGradientDefault, obj8);
+          cResult[17] = tmp14;
+          cResult[18] = tmp3.glowMaskGradient;
+          cResult[19] = tmp29;
+          tmp24 = tmp29;
+        }
+        const items = [tmp3.glow, tmp15];
+        cResult[12] = tmp3.glow;
+        cResult[13] = tmp15;
+        cResult[14] = items;
+        tmp16 = items;
+      }
+    }
+  }
+  const items1 = [tmp6, tmp7, tmp8, tmp9];
+  cResult[5] = tmp6;
+  cResult[6] = tmp7;
+  cResult[7] = tmp8;
+  cResult[8] = tmp9;
+  cResult[9] = items1;
+  tmp14 = items1;
+}) : ((progress) => {
+  let items1;
+  let obj3;
+  let obj4;
+  let obj5;
+  let tmp4;
+  let token;
+  progress = progress.progress;
+  const tmp = closure_21();
+  let obj = token(4580);
+  token = obj.useToken(nativeDefault.colors.ICON_FEEDBACK_POSITIVE);
+  let items = [token];
+  const memo = react.useMemo(() => {
+    const obj = _modDef683(token);
+    const items = [, , , ];
+    const alphaResult = obj.alpha(0);
+    items[0] = alphaResult.css();
+    const alphaResult1 = obj.alpha(0.1);
+    items[1] = alphaResult1.css();
+    const alphaResult2 = obj.alpha(0.28);
+    items[2] = alphaResult2.css();
+    const alphaResult3 = obj.alpha(0.55);
+    items[3] = alphaResult3.css();
+    return items;
+  }, items);
+  const obj2 = { style: items1, pointerEvents: "none", children: closure_12(tmp4, obj3) };
+  items1 = [tmp.glow, { opacity: progress }];
+  const View = ReanimatedRexportDefault.View;
+  obj3 = { style: tmp.glow, maskElement: closure_12(LinearGradientDefault, obj4), children: closure_12(LinearGradientDefault, obj5) };
+  obj4 = { style: tmp.glowMaskGradient, colors, locations, start, end };
+  obj5 = { style: tmp.glowMaskGradient, colors: memo, locations: locations2, start: start2, end: end2 };
+  tmp4 = _modDef6052;
+  return closure_12(View, obj2);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let ref;
+  let state;
+  let tmp4;
+  let tmp5;
+  _require = arg0;
+  let obj = require("react");
+  const cResult = obj.c(6);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ConnectivityIndicatorStateStore];
+    const fn = function s() {
+      return state.getState();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  dependencyMap = react.useRef(null);
+  const obj3 = react;
+  if (cResult[2] === stateFromStores) {
+    let tmp8;
+    let tmp9;
+    if (cResult[3] === arg0) {
+      tmp8 = cResult[4];
+      tmp9 = cResult[5];
+    }
+    const effect = obj3.useEffect(tmp8, tmp9);
+  }
+  class N {
+    constructor() {
+      const current = ref.current;
+      ref.current = stateFromStores;
+      if (null != current) {
+        if (current === constants.HIDDEN) {
+          if (stateFromStores !== constants.HIDDEN) {
+            if (stateFromStores !== constants.BACK_ONLINE) {
+              let str = "hidden";
+              if (!closure_0) {
+                let str2 = "connecting";
+                if (stateFromStores === constants.NO_CONNECTION) {
+                  str2 = "offline";
+                }
+                str = str2;
+              }
+              const obj2 = { connection_indicator_type: str };
+              const obj = AnalyticsUtilsDefault;
+              obj.track(AnalyticEvents.CONNECTION_INDICATOR_SHOWN, obj2);
+            }
+          }
+        }
+      }
+    }
+  }
+  const items1 = [stateFromStores, arg0];
+  cResult[2] = stateFromStores;
+  cResult[3] = arg0;
+  cResult[4] = N;
+  cResult[5] = items1;
+  tmp9 = items1;
+  tmp8 = N;
+}) : ((arg0) => {
+  let closure_0;
+  let ref;
+  let state;
+  _require = arg0;
+  let obj = require("get initialized");
   const items = [ConnectivityIndicatorStateStore];
-  stateFromStores = hidden(504).useStateFromStores(items, () => state.getState());
-  dependencyMap = noop.useRef(null);
-  const items1 = [stateFromStores, hidden];
-  const effect = noop.useEffect(() => {
+  const stateFromStores = obj.useStateFromStores(items, () => state.getState());
+  dependencyMap = react.useRef(null);
+  const items1 = [stateFromStores, arg0];
+  const effect = react.useEffect(() => {
     const current = ref.current;
     ref.current = stateFromStores;
     if (null != current) {
       if (current === constants.HIDDEN) {
-        if (tmp !== tmp7.HIDDEN) {
-          if (tmp !== tmp7.BACK_ONLINE) {
+        if (stateFromStores !== constants.HIDDEN) {
+          if (stateFromStores !== constants.BACK_ONLINE) {
             let str = "hidden";
-            if (!hidden) {
+            if (!closure_0) {
               let str2 = "connecting";
-              if (tmp === tmp7.NO_CONNECTION) {
+              if (stateFromStores === constants.NO_CONNECTION) {
                 str2 = "offline";
               }
               str = str2;
             }
             const obj2 = { connection_indicator_type: str };
-            AnalyticsUtilsDefault.track(AnalyticEvents.CONNECTION_INDICATOR_SHOWN, obj2);
+            const obj = AnalyticsUtilsDefault;
+            obj.track(AnalyticEvents.CONNECTION_INDICATOR_SHOWN, obj2);
           }
         }
       }
     }
   }, items1);
-  let tmp4 = null;
-  if (null != config.timeoutMs) {
-    tmp4 = null;
+});
+let closure_26 = { code: "function ConnectionBannerTsx1(finished){const{shouldShowBanner,runOnJS,setRenderState}=this.__closure;if(finished===true&&!shouldShowBanner){runOnJS(setRenderState)(null);}}" };
+const __initData = { code: "function ConnectionBannerTsx2(){const{progress,CONNECTION_BANNER_HEIGHT}=this.__closure;return{transform:[{translateY:(1-progress.get())*CONNECTION_BANNER_HEIGHT}],opacity:progress.get()};}" };
+let closure_28 = { code: "function ConnectionBannerTsx3(finished){const{shouldShowBanner,runOnJS,setRenderState}=this.__closure;if(finished===true&&!shouldShowBanner){runOnJS(setRenderState)(null);}}" };
+const __initData2 = { code: "function ConnectionBannerTsx4(){const{progress,CONNECTION_BANNER_HEIGHT}=this.__closure;return{transform:[{translateY:(1-progress.get())*CONNECTION_BANNER_HEIGHT}],opacity:progress.get()};}" };
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let closure_0;
+  let closure_1;
+  let setRenderState;
+  let sharedValue;
+  let sharedValue1;
+  let state;
+  let tmp16;
+  let tmp17;
+  let tmp6;
+  let tmp7;
+  let tmp = _require;
+  let tmp2 = sharedValue;
+  let obj = require("react");
+  const cResult = obj.c(25);
+  let tmp4 = closure_21();
+  const obj2 = require("useYouBarMargins");
+  const youBarBottomMargin = obj2.useYouBarBottomMargin();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [ConnectivityIndicatorStateStore];
+    let fn = function s() {
+      return state.getState();
+    };
+    let num = 0;
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp6 = items;
+    tmp7 = fn;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  const tmpResult = tmp(tmp2[20]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
+  _require = tmp11;
+  importDefault = tmp12;
+  let tmp13 = null;
+  const tmp10 = constants;
+  if (stateFromStores !== constants.HIDDEN) {
+    tmp13 = stateFromStores;
+  }
+  const tmpResult4 = tmp(tmp2[19]);
+  sharedValue = tmpResult4.useSharedValue(0);
+  [tmp16, tmp17] = sharedValue1.useState(tmp13);
+  _slicedToArray(sharedValue1.useState(tmp13), 2);
+  _slicedToArray = tmp17;
+  const tmpResult5 = tmp(tmp2[19]);
+  sharedValue1 = tmpResult5.useSharedValue(0);
+  const tmp19 = null != tmp13 && tmp16 !== tmp13;
+  if (tmp19) {
+    tmp17(tmp13);
+  }
+  if (cResult[2] === sharedValue1) {
+    let tmp21;
+    let tmp22;
+    if (cResult[3] === stateFromStores !== constants.HIDDEN) {
+      tmp21 = cResult[4];
+      tmp22 = cResult[5];
+    }
+    const effect = obj5.useEffect(tmp21, tmp22);
+    if (cResult[6] === sharedValue) {
+      let tmp24;
+      let tmp25;
+      let tmp31;
+      if (cResult[7] === stateFromStores === constants.BACK_ONLINE) {
+        tmp24 = cResult[8];
+        tmp25 = cResult[9];
+      }
+      const effect1 = obj5.useEffect(tmp24, tmp25);
+      const sum = youBarBottomMargin + CONNECTION_BANNER_HEIGHT;
+      const tmpResult6 = tmp(tmp2[19]);
+      class L {
+        constructor() {
+          let items;
+          const obj = { transform: items, opacity: sharedValue1.get() };
+          items = [{ translateY: (1 - sharedValue1.get()) * CONNECTION_BANNER_HEIGHT }];
+          ({ translateY: (1 - sharedValue1.get()) * CONNECTION_BANNER_HEIGHT });
+          return obj;
+        }
+      }
+      const obj3 = { progress: sharedValue1, CONNECTION_BANNER_HEIGHT };
+      L.__closure = obj3;
+      L.__workletHash = 13973493587548;
+      L.__initData = __initData;
+      const animatedStyle = tmpResult6.useAnimatedStyle(L);
+      if (cResult[10] !== sum) {
+        const obj4 = { height: sum };
+        cResult[10] = sum;
+        class L {
+          constructor() {
+            let items;
+            const obj = { transform: items, opacity: sharedValue1.get() };
+            items = [{ translateY: (1 - sharedValue1.get()) * CONNECTION_BANNER_HEIGHT }];
+            ({ translateY: (1 - sharedValue1.get()) * CONNECTION_BANNER_HEIGHT });
+            return obj;
+          }
+        }
+        tmp31 = obj4;
+      } else {
+        tmp31 = cResult[11];
+      }
+      if (cResult[12] === animatedStyle) {
+        if (cResult[13] === tmp4.container) {
+          let tmp32;
+          if (cResult[14] === tmp31) {
+            tmp32 = cResult[15];
+          }
+          if (cResult[16] === sharedValue) {
+            let tmp33;
+            let tmp37;
+            if (cResult[17] === tmp16) {
+              tmp33 = cResult[18];
+            }
+            if (cResult[19] !== tmp16) {
+              let tmp38 = null;
+              if (null != tmp16) {
+                const obj6 = { state: tmp16 };
+                tmp38 = closure_12(closure_23, obj6);
+              }
+              cResult[19] = tmp16;
+              class L {
+                constructor() {
+                  let items;
+                  const obj = { transform: items, opacity: sharedValue1.get() };
+                  items = [{ translateY: (1 - sharedValue1.get()) * CONNECTION_BANNER_HEIGHT }];
+                  ({ translateY: (1 - sharedValue1.get()) * CONNECTION_BANNER_HEIGHT });
+                  return obj;
+                }
+              }
+              tmp37 = tmp38;
+            } else {
+              tmp37 = cResult[20];
+            }
+            if (cResult[21] === tmp32) {
+              if (cResult[22] === tmp33) {
+                let tmp41;
+                if (cResult[23] === tmp37) {
+                  tmp41 = cResult[24];
+                }
+                return tmp41;
+              }
+            }
+            class L {
+              constructor() {
+                let items;
+                const obj = { transform: items, opacity: sharedValue1.get() };
+                items = [{ translateY: (1 - sharedValue1.get()) * CONNECTION_BANNER_HEIGHT }];
+                ({ translateY: (1 - sharedValue1.get()) * CONNECTION_BANNER_HEIGHT });
+                return obj;
+              }
+            }
+            tmp44[1] = tmp32;
+            const items1 = [tmp33, tmp37];
+            tmp44[2] = items1;
+            const tmp45 = closure_13(require("ReanimatedRexport").View, tmp44);
+            cResult[21] = tmp32;
+            cResult[22] = tmp33;
+            cResult[23] = tmp37;
+            cResult[24] = tmp45;
+            tmp41 = tmp45;
+          }
+          let tmp34 = null;
+          if (tmp16 === tmp10.BACK_ONLINE) {
+            const obj7 = { progress: sharedValue };
+            tmp34 = closure_12(closure_24, obj7);
+          }
+          class L {
+            constructor() {
+              let items;
+              const obj = { transform: items, opacity: sharedValue1.get() };
+              items = [{ translateY: (1 - sharedValue1.get()) * CONNECTION_BANNER_HEIGHT }];
+              ({ translateY: (1 - sharedValue1.get()) * CONNECTION_BANNER_HEIGHT });
+              return obj;
+            }
+          }
+          cResult[17] = tmp16;
+          cResult[18] = tmp34;
+          tmp33 = tmp34;
+        }
+      }
+      const items2 = [tmp4.container, tmp31, animatedStyle];
+      cResult[12] = animatedStyle;
+      cResult[13] = tmp4.container;
+      cResult[14] = tmp31;
+      cResult[15] = items2;
+      tmp32 = items2;
+    }
+    const fn3 = function f() {
+      let num = 0;
+      set = sharedValue.set;
+      const withSpring = spring.withSpring;
+      spring;
+      if (closure_1) {
+        num = 1;
+      }
+      const result = set(withSpring(num, YOU_BAR_SPRING_CONFIG));
+    };
+    const items3 = [, sharedValue];
+    cResult[6] = sharedValue;
+    cResult[7] = stateFromStores === constants.BACK_ONLINE;
+    cResult[8] = fn3;
+    cResult[9] = items3;
+    tmp25 = items3;
+    tmp24 = fn3;
+  }
+  const fn2 = function h() {
+    let tmp = sharedValue1;
+    set = sharedValue1.set;
+    let num = 0;
+    const withSpring = spring.withSpring;
+    if (closure_0) {
+      num = 1;
+    }
+    const fn = function t(arg0) {
+      const tmp = true !== arg0 || closure_1_0;
+      if (!tmp) {
+        const obj = closure_0(sharedValue[19]);
+        obj.runOnJS(setRenderState)(null);
+      }
+    };
+    let obj = { shouldShowBanner: tmp5, runOnJS: ReanimatedRexport.runOnJS, setRenderState: _slicedToArray };
+    fn.__closure = obj;
+    fn.__workletHash = 3065113239920;
+    fn.__initData = __initData;
+    const result = set(withSpring(num, YOU_BAR_SPRING_CONFIG, "respect-motion-settings", fn));
+  };
+  const items4 = [stateFromStores !== constants.HIDDEN, sharedValue1];
+  cResult[2] = sharedValue1;
+  cResult[3] = stateFromStores !== constants.HIDDEN;
+  cResult[4] = fn2;
+  cResult[5] = items4;
+  tmp22 = items4;
+  tmp21 = fn2;
+}) : (() => {
+  let closure_0;
+  let closure_1;
+  let items3;
+  let items4;
+  let setRenderState;
+  let sharedValue;
+  let sharedValue1;
+  let state;
+  let tmp12;
+  let tmp13;
+  let tmp2 = _require;
+  const tmp3 = sharedValue;
+  let tmp = closure_21();
+  let obj = require("useYouBarMargins");
+  const youBarBottomMargin = obj.useYouBarBottomMargin();
+  const obj2 = require("get initialized");
+  let items = [ConnectivityIndicatorStateStore];
+  const stateFromStores = obj2.useStateFromStores(items, () => state.getState());
+  _require = tmp7;
+  importDefault = tmp8;
+  let tmp9 = null;
+  const tmp6 = constants;
+  if (stateFromStores !== constants.HIDDEN) {
+    tmp9 = stateFromStores;
+  }
+  const tmp2Result = tmp2(tmp3[19]);
+  sharedValue = tmp2Result.useSharedValue(0);
+  [tmp12, tmp13] = sharedValue1.useState(tmp9);
+  _slicedToArray(sharedValue1.useState(tmp9), 2);
+  _slicedToArray = tmp13;
+  const tmp2Result3 = tmp2(tmp3[19]);
+  sharedValue1 = tmp2Result3.useSharedValue(0);
+  const tmp15 = null != tmp9 && tmp12 !== tmp9;
+  if (tmp15) {
+    tmp13(tmp9);
+  }
+  const items1 = [stateFromStores !== constants.HIDDEN, sharedValue1];
+  const effect = obj4.useEffect(() => {
+    let tmp = sharedValue1;
+    set = sharedValue1.set;
+    let num = 0;
+    const withSpring = spring.withSpring;
+    if (closure_0) {
+      num = 1;
+    }
+    const fn = function t(arg0) {
+      const tmp = true !== arg0 || closure_1_0;
+      if (!tmp) {
+        const obj = closure_0(sharedValue[19]);
+        obj.runOnJS(setRenderState)(null);
+      }
+    };
+    let obj = { shouldShowBanner: tmp5, runOnJS: ReanimatedRexport.runOnJS, setRenderState: _slicedToArray };
+    fn.__closure = obj;
+    fn.__workletHash = 14365072236530;
+    fn.__initData = __initData;
+    const result = set(withSpring(num, YOU_BAR_SPRING_CONFIG, "respect-motion-settings", fn));
+  }, items1);
+  const items2 = [stateFromStores === constants.BACK_ONLINE, sharedValue];
+  const effect1 = obj4.useEffect(() => {
+    let num = 0;
+    set = sharedValue.set;
+    const withSpring = spring.withSpring;
+    spring;
+    if (closure_1) {
+      num = 1;
+    }
+    const result = set(withSpring(num, YOU_BAR_SPRING_CONFIG));
+  }, items2);
+  let fn = function w() {
+    let items;
+    const obj = { transform: items, opacity: sharedValue1.get() };
+    items = [{ translateY: (1 - sharedValue1.get()) * CONNECTION_BANNER_HEIGHT }];
+    ({ translateY: (1 - sharedValue1.get()) * CONNECTION_BANNER_HEIGHT });
+    return obj;
+  };
+  const obj3 = { progress: sharedValue1, CONNECTION_BANNER_HEIGHT };
+  fn.__closure = obj3;
+  fn.__workletHash = 4433680948698;
+  fn.__initData = __initData2;
+  const tmp2Result4 = tmp2(tmp3[19]);
+  const animatedStyle = tmp2Result4.useAnimatedStyle(fn);
+  const obj5 = { pointerEvents: "none", style: items3, children: items4 };
+  items3 = [tmp.container, { height: youBarBottomMargin + CONNECTION_BANNER_HEIGHT }, animatedStyle];
+  let tmp21 = null;
+  const View = require("ReanimatedRexport").View;
+  const tmp20 = closure_13;
+  if (tmp12 === tmp6.BACK_ONLINE) {
+    const obj6 = { progress: sharedValue };
+    tmp21 = closure_12(closure_24, obj6);
+  }
+  items4 = [tmp21, ];
+  let tmp24 = null;
+  if (null != tmp12) {
+    const obj7 = { state: tmp12 };
+    tmp24 = closure_12(closure_23, obj7);
+  }
+  items4[1] = tmp24;
+  return tmp20(View, obj5);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { location: "ConnectionBanner" };
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  const obj3 = ConnectionIndicatorExperimentDefault;
+  const config = obj3.useConfig(first);
+  const hidden = config.hidden;
+  const timeoutMs = config.timeoutMs;
+  closure_25(hidden);
+  let tmp6 = null;
+  if (null != timeoutMs) {
+    tmp6 = null;
     if (!hidden) {
-      tmp4 = closure_12(ConnectionBannerInner, {});
+      let tmp7;
+      const _Symbol = Symbol;
+      if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+        const tmp10 = closure_12(closure_30, {});
+        cResult[1] = tmp10;
+        tmp7 = tmp10;
+      } else {
+        tmp7 = cResult[1];
+      }
+      tmp6 = tmp7;
     }
   }
-  return tmp4;
-};
+  return tmp6;
+}) : (() => {
+  const obj = ConnectionIndicatorExperimentDefault;
+  const config = obj.useConfig({ location: "ConnectionBanner" });
+  const hidden = config.hidden;
+  const timeoutMs = config.timeoutMs;
+  closure_25(hidden);
+  let tmp3 = null;
+  if (null != timeoutMs) {
+    tmp3 = null;
+    if (!hidden) {
+      tmp3 = closure_12(closure_30, {});
+    }
+  }
+  return tmp3;
+});
+let result = size.fileFinishedImporting("modules/main_tabs_v2/native/ConnectionBanner.tsx");
+
+export default tmp5;

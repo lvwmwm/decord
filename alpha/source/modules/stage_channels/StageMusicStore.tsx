@@ -1,35 +1,36 @@
-// Module ID: 9549
-// Function ID: 9550
+// Module ID: 9559
+// Function ID: 9560
 // Name: StageMusicStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 584, 2]
 
-// Module 9549 (StageMusicStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 9559 (StageMusicStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import size from "module_2" /* 2 */;
 
 let muted = false;
 let c1 = false;
-const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;
+const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;
 class StageMusicStore extends DeviceSettingsStore {
+  initialize(arg0) {
+    if (null != arg0) {
+      muted = arg0;
+    }
+  }
+  isMuted() {
+    return muted;
+  }
+  shouldPlay() {
+    return c1;
+  }
+  getUserAgnosticState() {
+    return muted;
+  }
 }
 const prototype = StageMusicStore.prototype;
-prototype["initialize"] = function initialize(arg0) {
-  if (null != arg0) {
-    muted = arg0;
-  }
-};
-prototype["isMuted"] = function isMuted() {
-  return muted;
-};
-prototype["shouldPlay"] = function shouldPlay() {
-  return c1;
-};
-prototype["getUserAgnosticState"] = function getUserAgnosticState() {
-  return muted;
-};
 StageMusicStore.displayName = "StageMusicStore";
 StageMusicStore.persistKey = "StageMusicStore";
-const stageMusicStore = new StageMusicStore(DispatcherDefault, {
+const obj = {
   STAGE_MUSIC_MUTE: function handleMute(muted) {
     muted = muted.muted;
     c1 = false;
@@ -40,8 +41,8 @@ const stageMusicStore = new StageMusicStore(DispatcherDefault, {
   VOICE_CHANNEL_SELECT: function handleConnect() {
     c1 = false;
   }
-});
-const size = fn(2);
+};
+const stageMusicStore = new StageMusicStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/stage_channels/StageMusicStore.tsx");
 
 export default stageMusicStore;

@@ -1,16 +1,17 @@
-// Module ID: 4727
-// Function ID: 4728
+// Module ID: 4742
+// Function ID: 4743
 // Name: HomeDrawerExperiment
-// Dependencies: [1436, 2]
+// Dependencies: [1441, 2]
 
-// Module 4727 (HomeDrawerExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1436 */;
+// Module 4742 (HomeDrawerExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1441 */;
+import size from "module_2" /* 2 */;
 
-const obj = { name: "2025-10-mobile-home-drawer", kind: "user", defaultConfig: { enableHome: false, landOnHome: false, enablePeekHint: false }, variations: null };
-const obj2 = { 1: null, 2: { enableHome: true, landOnHome: false, enablePeekHint: true } };
+let obj2;
+const obj = { name: "2025-10-mobile-home-drawer", kind: "user", defaultConfig: { enableHome: false, landOnHome: false, enablePeekHint: false }, variations: obj2 };
+obj2 = { 1: null, 2: { enableHome: true, landOnHome: false, enablePeekHint: true } };
 obj2[2] = { enableHome: true, landOnHome: true, enablePeekHint: false };
-obj.variations = obj2;
-const size = fn(2);
+const tmp2 = apex_ApexExperimentDefault(obj);
 const result = size.fileFinishedImporting("modules/home_drawer/native/HomeDrawerExperiment.tsx");
 
-export const MobileHomeDrawerExperiment = apex_ApexExperimentDefault(obj);
+export const MobileHomeDrawerExperiment = tmp2;

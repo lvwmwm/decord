@@ -1,37 +1,33 @@
-// Module ID: 17989
-// Function ID: 17990
+// Module ID: 18075
+// Function ID: 18076
 // Name: i18nMessagesProvider
-// Dependencies: [17, 1364, 17990, 1154, 1115, 2]
+// Dependencies: [18076, 1165, 1126, 2]
 // Exports: default
 
-// Module 17989 (i18nMessagesProvider)
-import _mod17 from "module_17" /* 17 */;
-import NativeI18nModuleDefault from "NativeI18nModule" /* 17990 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
+// Module 18075 (i18nMessagesProvider)
+import intl2 from "intl" /* 1126 */;
+import _mod1165 from "module_1165" /* 1165 */;
+import react_nativeDefault from "react-native" /* 18076 */;
 import size from "module_2" /* 2 */;
 
-if (PlatformUtils.isAndroid()) {
-  let i18nManager = NativeI18nModuleDefault;
-} else {
-  i18nManager = _mod17.NativeModules.i18nManager;
-}
 let result = size.fileFinishedImporting("i18n/native/i18nMessagesProvider.tsx");
 
 export default function newIntlMessagesProvider() {
-  return new Promise((arg0) => {
-    closure_0 = arg0;
-    closure_2.keysRequest((arr) => {
-      i18nManager.valuesResult(arr.map((item) => {
-        const result = closure_1_0(1154).runtimeHashMessageKey(item);
-        const tmp4 = closure_1_0(1115).t[result];
-        let str = "";
-        if (null != tmp4) {
-          const intl = closure_1_0(1115).intl;
-          str = intl.reserialize(tmp4);
-        }
-        return str;
-      }));
-      closure_0(true);
-    });
+  let obj = react_nativeDefault;
+  const keys = obj.getKeys();
+  const mapped = keys.map((item) => {
+    const obj = _mod1165;
+    const result = obj.runtimeHashMessageKey(item);
+    const tmp4 = intl2.t[result];
+    let str = "";
+    const tmp = require;
+    const tmp2 = dependencyMap;
+    if (null != tmp4) {
+      const intl = tmp(tmp2[2]).intl;
+      str = intl.reserialize(tmp4);
+    }
+    return str;
   });
+  const obj2 = react_nativeDefault;
+  obj2.valuesResult(mapped);
 };

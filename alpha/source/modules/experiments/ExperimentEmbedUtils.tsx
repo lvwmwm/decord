@@ -1,13 +1,13 @@
-// Module ID: 7490
-// Function ID: 7491
+// Module ID: 7534
+// Function ID: 7535
 // Name: ExperimentEmbedUtils
-// Dependencies: [4766, 7491, 7492, 2]
+// Dependencies: [4781, 7535, 7536, 2]
 // Exports: getExperimentBuckets, getExperimentFromEmbedURL, getExperimentServerAssignmentLabel, getExperimentTreatmentFromEmbedURL, getURLForExperiment, isExperimentEmbedURL
 
-// Module 7490 (ExperimentEmbedUtils)
-import ExperimentManager from "ExperimentManager" /* 4766 */;
-import ExperimentUtilsDefault from "ExperimentUtils" /* 7491 */;
-import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 7492 */;
+// Module 7534 (ExperimentEmbedUtils)
+import ExperimentManager from "ExperimentManager" /* 4781 */;
+import ExperimentUtilsDefault from "ExperimentUtils" /* 7535 */;
+import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 7536 */;
 import size from "module_2" /* 2 */;
 
 const regExp = new RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");
@@ -41,9 +41,10 @@ export const getExperimentTreatmentFromEmbedURL = function getExperimentTreatmen
   return parsed;
 };
 export const getURLForExperiment = function getURLForExperiment(id, arg1) {
+  let combined;
   if (null != arg1) {
     const _HermesInternal2 = HermesInternal;
-    let combined = "dev://experiment/" + id + "/" + arg1;
+    combined = "dev://experiment/" + id + "/" + arg1;
   } else {
     const _HermesInternal = HermesInternal;
     combined = "dev://experiment/" + id;
@@ -54,21 +55,23 @@ export const getExperimentServerAssignmentLabel = function getExperimentServerAs
   if (null != experimentServerAssignment) {
     if (null != system) {
       const system2 = system.system;
+      const tmp4 = require;
       if (ExperimentManager.ExperimentSystem.LEGACY === system2) {
-        return ExperimentUtilsDefault.getExperimentBucketName(experimentServerAssignment.bucket);
-      } else if (tmp4(4766).ExperimentSystem.APEX === system2) {
+        const obj = ExperimentUtilsDefault;
+        return obj.getExperimentBucketName(experimentServerAssignment.bucket);
+      } else if (tmp4(4781).ExperimentSystem.APEX === system2) {
         const _HermesInternal = HermesInternal;
         return "Variant " + experimentServerAssignment.variantId;
       } else {
         system = system.system;
         return null;
       }
-      tmp4 = require;
     }
   }
   return null;
 };
 export const getExperimentBuckets = function getExperimentBuckets(experiment) {
-  const experimentVariantsForDevTools = ExperimentDevToolsUtils.getExperimentVariantsForDevTools(experiment);
+  const obj = ExperimentDevToolsUtils;
+  const experimentVariantsForDevTools = obj.getExperimentVariantsForDevTools(experiment);
   return experimentVariantsForDevTools.map((id) => ({ id: id.id, label: id.label, value: id.id }));
 };

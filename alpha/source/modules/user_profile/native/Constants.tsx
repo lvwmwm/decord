@@ -1,17 +1,18 @@
-// Module ID: 6815
-// Function ID: 6816
+// Module ID: 6707
+// Function ID: 6708
 // Name: Constants
-// Dependencies: [1177, 6224, 2]
+// Dependencies: [1188, 6104, 2]
 
-// Module 6815 (Constants)
-import native from "native" /* 1177 */;
-import IconSize from "IconSize" /* 6224 */;
+// Module 6707 (Constants)
+import native from "native" /* 1188 */;
+import IconSize from "IconSize" /* 6104 */;
 import size from "module_2" /* 2 */;
 
 const XXLARGE = native.AvatarSizes.XXLARGE;
 const tmp2 = native.AVATAR_SIZE_MAP[XXLARGE];
 const sum = tmp2 + 12;
 const result = tmp2 / 2;
+const md = IconSize.ICON_SIZE.md;
 const result1 = size.fileFinishedImporting("modules/user_profile/native/Constants.tsx");
 
 export const ARBITRARY_LARGE_OFFSET = 250;
@@ -26,7 +27,7 @@ export const PROFILE_CONTENT_WITHOUT_STATUS_TOP_PADDING = 12 + result + 6;
 export const PROFILE_CONTENT_BOTTOM_PADDING = 20;
 export const CARD_PADDING = 16;
 export const CARD_ROWS_ICON_SIZE_VARIANT = "md";
-export const CARD_ROWS_ICON_SIZE = IconSize.ICON_SIZE.md;
+export const CARD_ROWS_ICON_SIZE = md;
 export const CARD_ROWS_COLUMN_GAP = 16;
 export const WISHLIST_SUGGESTION_CARD_GAP = 8;
 export const FLOATING_UPSELL_HEIGHT = 140;

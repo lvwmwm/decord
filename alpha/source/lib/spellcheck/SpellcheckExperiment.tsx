@@ -1,17 +1,17 @@
-// Module ID: 6060
-// Function ID: 6061
+// Module ID: 5953
+// Function ID: 5954
 // Name: SpellcheckExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1440, 2]
 // Exports: isElectronMultilangSpellcheckEnabled
 
-// Module 6060 (SpellcheckExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 5953 (SpellcheckExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
-const obj = { kind: "user", name: "2026-05-electron-multilang-spellcheck", defaultConfig: { enableElectronMultilangSpellcheck: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+const obj = { kind: "user", name: "2026-05-electron-multilang-spellcheck", defaultConfig: { enableElectronMultilangSpellcheck: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enableElectronMultilangSpellcheck: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("lib/spellcheck/SpellcheckExperiment.tsx");
 

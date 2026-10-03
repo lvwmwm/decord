@@ -1,15 +1,15 @@
-// Module ID: 6873
-// Function ID: 6874
+// Module ID: 6771
+// Function ID: 6772
 // Name: GuildOfficialMessagesExperiment
-// Dependencies: [4759, 2]
+// Dependencies: [4774, 2]
 
-// Module 6873 (GuildOfficialMessagesExperiment)
-import createExperiment from "module_4759" /* 4759 */;
+// Module 6771 (GuildOfficialMessagesExperiment)
+import createExperiment from "module_4774" /* 4774 */;
 import size from "module_2" /* 2 */;
 
-const obj = { kind: "guild", id: "2026-03_guild_official_messages", label: "Guild Official Messages", defaultConfig: { enabled: false }, treatments: null };
-const items = [{ id: 1, label: "Enable official messages", config: { enabled: true } }];
-obj.treatments = items;
+let items;
+const obj = { kind: "guild", id: "2026-03_guild_official_messages", label: "Guild Official Messages", defaultConfig: { enabled: false }, treatments: items };
+items = [{ id: 1, label: "Enable official messages", config: { enabled: true } }];
 const experiment = createExperiment.createExperiment(obj);
 const result = size.fileFinishedImporting("modules/messages/GuildOfficialMessagesExperiment.tsx");
 

@@ -1,50 +1,42 @@
 // Module ID: 12639
 // Function ID: 12640
-// Dependencies: [12640]
-// Exports: isNodeEnv, loadModule
+// Dependencies: [12571, 12592, 12621]
 
 // Module 12639
-import _mod12640 from "module_12640" /* 12640 */;
+import module_12621 from "module_12621" /* 12621 */;
 
-require = arg1;
-const module = arg4;
-const dependencyMap = arg6;
-function dynamicRequire(require, arg1) {
-  return require.require(arg1);
-}
+let has, toString;
 
-export { dynamicRequire };
-export const isNodeEnv = function isNodeEnv() {
-  const isBrowserBundleResult = _mod12640.isBrowserBundle();
-  if (isBrowserBundleResult) {
-    return !isBrowserBundleResult;
-  } else {
-    const _Object = Object;
-    const call = toString.call;
-    const _process = process;
-    let str = 0;
-    if (typeof process !== "undefined") {
-      str = process;
-    }
-    str = "[object process]";
-    const tmp3 = typeof call === "unknown" ? toString() : call(str);
-  }
-};
-export const loadModule = function loadModule(arg0) {
-  let tmp = arg1;
-  if (arg1 === undefined) {
-    tmp = module;
-  }
-  try {
-    let tmp3 = dynamicRequire(tmp, arg0);
-    if (!tmp3) {
+const weakMap = new WeakMap();
+
+export const functionToStringIntegration = module_12621.defineIntegration(() => {
+  let obj = {
+    name: "FunctionToString",
+    setupOnce() {
+      toString = Function.prototype.toString;
       try {
-        const _HermesInternal = HermesInternal;
-        tmp3 = dynamicRequire(tmp, "" + dynamicRequire(tmp, "process").cwd() + "/node_modules/" + arg0);
+        const _Function = Function;
+        Function.prototype.toString = function() {
+          const items = [...arguments];
+          const obj = closure_1_0(closure_1_1[0]);
+          const originalFunction = obj.getOriginalFunction(this);
+          has = has.has;
+          let self = this;
+          const obj2 = closure_1_0(closure_1_1[1]);
+          if (has(obj2.getClient())) {
+            self = this;
+            if (undefined !== originalFunction) {
+              self = originalFunction;
+            }
+          }
+          return toString.apply(self, items);
+        };
       } catch (err) {
       }
+    },
+    setup(arg0) {
+      const result = weakMap.set(arg0, true);
     }
-    return tmp3;
-  } catch (err) {
-  }
-};
+  };
+  return obj;
+});

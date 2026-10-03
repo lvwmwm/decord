@@ -1,16 +1,19 @@
-// Module ID: 16708
-// Function ID: 16709
+// Module ID: 16796
+// Function ID: 16797
 // Name: useSearchMediaSize
-// Dependencies: [7477, 2]
+// Dependencies: [7513, 2]
 // Exports: default
 
-// Module 16708 (useSearchMediaSize)
-import SearchConstants from "SearchConstants" /* 7477 */;
+// Module 16796 (useSearchMediaSize)
+import SearchConstants from "SearchConstants" /* 7513 */;
 import size from "module_2" /* 2 */;
 
-({ SEARCH_LIST_HORIZONTAL_PADDING: closure_0, MEDIA_NUM_COLUMNS: closure_1, MEDIA_ITEM_GAP_WIDTH: c2 } = SearchConstants);
+let _window;
+let c2;
+let map;
+({ SEARCH_LIST_HORIZONTAL_PADDING: _window, MEDIA_NUM_COLUMNS: map, MEDIA_ITEM_GAP_WIDTH: c2 } = SearchConstants);
 const result = size.fileFinishedImporting("modules/search/native/hooks/useSearchMediaSize.tsx");
 
 export default function useSearchMediaSize(arg0) {
-  return Math.floor((arg0 - 2 * React - React2 * (framebus - 1)) / framebus);
+  return Math.floor((arg0 - 2 * React - React2 * (map - 1)) / map);
 };

@@ -1,42 +1,41 @@
-// Module ID: 13132
-// Function ID: 13133
+// Module ID: 13191
+// Function ID: 13192
 // Name: ApplePurchasesActionCreators
-// Dependencies: [573, 10714, 4532, 2]
+// Dependencies: [584, 10785, 4543, 2]
 // Exports: fetchApplePurchases
 
-// Module 13132 (ApplePurchasesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import BillingUtils from "BillingUtils" /* 4532 */;
-import _mod10714 from "module_10714" /* 10714 */;
+// Module 13191 (ApplePurchasesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import BillingUtils from "BillingUtils" /* 4543 */;
+import _mod10785 from "module_10785" /* 10785 */;
 import size from "module_2" /* 2 */;
 
+let c3;
+
+let cleanupPromise = null;
 let result = size.fileFinishedImporting("modules/billing/native/ApplePurchasesActionCreators.tsx");
 
 export const fetchApplePurchases = function fetchApplePurchases() {
   if (null == cleanupPromise) {
-    DispatcherDefault.dispatch({ type: "APPLE_PURCHASES_FETCH_START" });
-    const availablePurchases = _mod10714.getAvailablePurchases({ onlyIncludeActiveItems: false });
+    let obj = DispatcherDefault;
+    obj.dispatch({ type: "APPLE_PURCHASES_FETCH_START" });
+    let obj2 = _mod10785;
+    const availablePurchases = obj2.getAvailablePurchases({ onlyIncludeActiveItems: false });
     const nextPromise = availablePurchases.then((purchases) => {
-      DispatcherDefault.dispatch({ type: "APPLE_PURCHASES_FETCH_SUCCESS", purchases });
+      const obj = DispatcherDefault;
+      const obj2 = { type: "APPLE_PURCHASES_FETCH_SUCCESS", purchases };
+      obj.dispatch(obj2);
       return true;
     });
-    cleanupPromise = availablePurchases.then((purchases) => {
-      DispatcherDefault.dispatch({ type: "APPLE_PURCHASES_FETCH_SUCCESS", purchases });
-      return true;
-    }).catch((error) => {
-      const result = BillingUtils.captureBillingException(error);
-      DispatcherDefault.dispatch({ type: "APPLE_PURCHASES_FETCH_FAILURE" });
+    const catchPromise = nextPromise.catch((error) => {
+      const obj = BillingUtils;
+      const result = obj.captureBillingException(error);
+      const obj2 = DispatcherDefault;
+      obj2.dispatch({ type: "APPLE_PURCHASES_FETCH_FAILURE" });
       return false;
-    }).finally(() => {
+    });
+    cleanupPromise = catchPromise.finally(() => {
       c3 = null;
-    });
-    const catchPromise = availablePurchases.then((purchases) => {
-      DispatcherDefault.dispatch({ type: "APPLE_PURCHASES_FETCH_SUCCESS", purchases });
-      return true;
-    }).catch((error) => {
-      const result = BillingUtils.captureBillingException(error);
-      DispatcherDefault.dispatch({ type: "APPLE_PURCHASES_FETCH_FAILURE" });
-      return false;
     });
   }
   return cleanupPromise;

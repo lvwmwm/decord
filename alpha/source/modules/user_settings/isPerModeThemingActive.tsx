@@ -1,21 +1,19 @@
-// Module ID: 4710
-// Function ID: 4711
+// Module ID: 4725
+// Function ID: 4726
 // Name: isPerModeThemingActive
-// Dependencies: [1182, 1184, 1185, 2]
+// Dependencies: [1193, 1195, 1196, 2]
 // Exports: isPerModeThemingActive
 
-// Module 4710 (isPerModeThemingActive)
-import ThemeStore from "ThemeStore" /* 1182 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
+// Module 4725 (isPerModeThemingActive)
+import ThemeConstants from "ThemeConstants" /* 1196 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
+import size from "module_2" /* 2 */;
 
-const SystemThemeState = fn(1185).SystemThemeState;
-const size = fn(2);
+const SystemThemeState = ThemeConstants.SystemThemeState;
 let result = size.fileFinishedImporting("modules/user_settings/isPerModeThemingActive.tsx");
 
 export const isPerModeThemingActive = function isPerModeThemingActive() {
-  let result = UnsyncedUserSettingsStore.useSystemTheme === SystemThemeState.ON;
-  if (result) {
-    result = ThemeStore.isSameAsDeviceThemeEnabled();
-  }
+  const result = UnsyncedUserSettingsStore.useSystemTheme === SystemThemeState.ON && ThemeStore.isSameAsDeviceThemeEnabled();
   return result;
 };

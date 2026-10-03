@@ -1,30 +1,35 @@
-// Module ID: 15010
-// Function ID: 15011
+// Module ID: 15067
+// Function ID: 15068
 // Name: SoundboardVolumeSetting
-// Dependencies: [7590, 11215, 1115, 6949, 6943, 6789, 2]
+// Dependencies: [7634, 11129, 1126, 6847, 6841, 6681, 2]
 
-// Module 15010 (SoundboardVolumeSetting)
-import util from "util" /* 1115 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6789 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 6943 */;
-import SoundboardUtils from "SoundboardUtils" /* 6949 */;
-import SettingsConstants from "SettingsConstants" /* 7590 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 15067 (SoundboardVolumeSetting)
+import intl2 from "intl" /* 1126 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 6841 */;
+import SoundboardUtils from "SoundboardUtils" /* 6847 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
-const volumeSlider = SettingBuilders.createVolumeSlider({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.kbFsAD);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.kbFsAD);
   },
-  parent: SettingsConstants.MobileUserSettings.VOICE,
+  parent: MobileUserSettings.VOICE,
   maximum: 100,
   useValue: SoundboardUtils.getAmplitudinalSoundboardVolume,
   onValueChange(volume) {
-    const items = [AnalyticsLocationDefault.USER_SETTINGS];
-    return SoundboardActionCreators.updateUserSoundboardVolume(volume, items);
+    const updateUserSoundboardVolume = SoundboardActionCreators.updateUserSoundboardVolume;
+    const items = [];
+    SoundboardActionCreators;
+    items[0] = AnalyticsLocationDefault.USER_SETTINGS;
+    return updateUserSoundboardVolume(volume, items);
   }
-});
+};
+const volumeSlider = SettingBuilders.createVolumeSlider(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/SoundboardVolumeSetting.tsx");
 
 export default volumeSlider;

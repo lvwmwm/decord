@@ -1,28 +1,33 @@
-// Module ID: 16170
-// Function ID: 16171
+// Module ID: 16245
+// Function ID: 16246
 // Name: transitionGuildsBarToGuildOrOpenSelectedChannel
-// Dependencies: [2098, 4684, 1074, 4722, 4721, 4856, 6947, 2]
+// Dependencies: [2103, 4699, 1085, 4737, 4736, 4901, 6845, 2]
 // Exports: default
 
-// Module 16170 (transitionGuildsBarToGuildOrOpenSelectedChannel)
-import RootNavigationRef from "RootNavigationRef" /* 4722 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4684 */;
+// Module 16245 (transitionGuildsBarToGuildOrOpenSelectedChannel)
+import Constants from "Constants" /* 1085 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4736 */;
+import RootNavigationRef from "RootNavigationRef" /* 4737 */;
+import transitionToChannel from "transitionToChannel" /* 4901 */;
+import transitionToGuild from "transitionToGuild" /* 6845 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ME = fn(1074).ME;
-const size = fn(2);
+const ME = Constants.ME;
 const result = size.fileFinishedImporting("modules/guilds_bar/native/utils/transitionGuildsBarToGuildOrOpenSelectedChannel.tsx");
 
 export default function transitionGuildsBarToGuildOrOpenSelectedChannel(arg0) {
-  const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
+  const obj = RootNavigationRef;
+  const rootNavigationRef = obj.getRootNavigationRef();
   let isReadyResult;
   if (rootNavigationRef != null) {
     isReadyResult = rootNavigationRef.isReady();
   }
   let tmp4;
   if (true === isReadyResult) {
-    const coerceGuildsRouteResult = tmp(4721).coerceGuildsRoute(rootNavigationRef.getCurrentRoute());
+    const tmpResult = NavigationRouteUtils;
+    const coerceGuildsRouteResult = tmpResult.coerceGuildsRoute(rootNavigationRef.getCurrentRoute());
     let drawerOpen;
     if (coerceGuildsRouteResult != null) {
       const params = coerceGuildsRouteResult.params;
@@ -46,13 +51,12 @@ export default function transitionGuildsBarToGuildOrOpenSelectedChannel(arg0) {
       }
       tmp4 = tmp10;
     }
-    const tmpResult = tmp(4721);
   }
   if (null != tmp4) {
-    tmp(4856).transitionToChannel(tmp4);
-    const tmpResult3 = tmp(4856);
+    const tmpResult3 = transitionToChannel;
+    tmpResult3.transitionToChannel(tmp4);
   } else {
-    tmp(6947).transitionToGuild(arg0);
-    const tmpResult4 = tmp(6947);
+    const tmpResult4 = transitionToGuild;
+    tmpResult4.transitionToGuild(arg0);
   }
 };

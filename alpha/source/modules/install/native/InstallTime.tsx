@@ -1,24 +1,27 @@
-// Module ID: 13449
-// Function ID: 13450
+// Module ID: 13509
+// Function ID: 13510
 // Name: InstallTime
-// Dependencies: [502, 510, 13450, 4874, 2]
+// Dependencies: [502, 510, 13510, 4919, 2]
 // Exports: getFirstInstallTimeElapsed
 
-// Module 13449 (InstallTime)
+// Module 13509 (InstallTime)
 import Storage4 from "Storage" /* 510 */;
-import TimeUtils from "TimeUtils" /* 4874 */;
-import NativeInstallTimeModuleDefault from "NativeInstallTimeModule" /* 13450 */;
+import TimeUtils from "TimeUtils" /* 4919 */;
+import react_nativeDefault from "react-native" /* 13510 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function getFirstInstallTimeMillis(arg0) {
-  const firstInstallTimeMillis = NativeInstallTimeModuleDefault.getFirstInstallTimeMillis();
+  let num2;
+  const from = arg0.from;
+  const obj = react_nativeDefault;
+  const firstInstallTimeMillis = obj.getFirstInstallTimeMillis();
   let str = "InstallTimeLaunch";
-  if ("authed" === arg0.from) {
+  if ("authed" === from) {
     str = "InstallTimeAuthed";
   }
   const Storage = Storage4.Storage;
-  value = Storage.get(str);
+  const value = Storage.get(str);
   if (null != value) {
     if (value > 0) {
       let bound = value;
@@ -26,11 +29,11 @@ function getFirstInstallTimeMillis(arg0) {
         const _Math = Math;
         bound = Math.max(value, firstInstallTimeMillis);
       }
-      let num2 = bound;
+      num2 = bound;
     }
     return num2;
   }
-  if ("authed" === arg0.from) {
+  if ("authed" === from) {
     num2 = 0;
     if (AuthenticationStore.isAuthenticated()) {
       const _Date2 = Date;
@@ -49,7 +52,6 @@ function getFirstInstallTimeMillis(arg0) {
     const result1 = Storage2.set(str, num2);
   }
 }
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/install/native/InstallTime.tsx");
 
 export { getFirstInstallTimeMillis };
@@ -63,7 +65,8 @@ export const getFirstInstallTimeElapsed = function getFirstInstallTimeElapsed(un
     const diff = Date.now() - tmp;
     let result = diff;
     if (null != unit) {
-      result = TimeUtils.convertMinutesToGivenTimeUnit(diff / TimeUtils.MS_PER_MINUTE, unit);
+      const obj = TimeUtils;
+      result = obj.convertMinutesToGivenTimeUnit(diff / TimeUtils.MS_PER_MINUTE, unit);
     }
     return result;
   }

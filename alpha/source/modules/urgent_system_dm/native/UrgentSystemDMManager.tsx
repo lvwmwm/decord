@@ -1,24 +1,25 @@
-// Module ID: 17522
-// Function ID: 17523
+// Module ID: 17611
+// Function ID: 17612
 // Name: UrgentSystemDMManager
-// Dependencies: [17523, 5388, 1115, 17525, 2]
+// Dependencies: [17612, 5708, 1126, 17614, 2]
 
-// Module 17522 (UrgentSystemDMManager)
-import util from "util" /* 1115 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5388 */;
-import UrgentSystemDMManagerBaseDefault from "UrgentSystemDMManagerBase" /* 17523 */;
-import navigateToSystemDMDefault from "navigateToSystemDM" /* 17525 */;
+// Module 17611 (UrgentSystemDMManager)
+import intl3 from "intl" /* 1126 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
+import UrgentSystemDMManagerBaseDefault from "UrgentSystemDMManagerBase" /* 17612 */;
+import navigateToSystemDMDefault from "navigateToSystemDM" /* 17614 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
+const tmp2 = new UrgentSystemDMManagerBaseDefault(() => {
+  let intl;
+  let intl2;
+  const obj = { title: intl.string(intl3.t.bAhz9l), body: intl2.string(intl3.t["7KjxW3"]), isDismissable: false, onConfirm: navigateToSystemDMDefault };
+  const show = actions_AlertActionCreatorsDefault.show;
+  actions_AlertActionCreatorsDefault;
+  intl = intl3.intl;
+  intl2 = intl3.intl;
+  return show(obj);
+});
 const result = size.fileFinishedImporting("modules/urgent_system_dm/native/UrgentSystemDMManager.tsx");
 
-export default new UrgentSystemDMManagerBaseDefault(() => {
-  const obj2 = { title: null, body: null, isDismissable: false, onConfirm: null };
-  const intl = util.intl;
-  obj2.title = intl.string(util.t.bAhz9l);
-  const intl2 = util.intl;
-  obj2.body = intl2.string(util.t["7KjxW3"]);
-  obj2.onConfirm = navigateToSystemDMDefault;
-  return actions_AlertActionCreatorsDefault.show(obj2);
-});
+export default tmp2;

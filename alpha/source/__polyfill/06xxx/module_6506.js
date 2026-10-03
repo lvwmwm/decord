@@ -1,47 +1,77 @@
 // Module ID: 6506
 // Function ID: 6507
-// Dependencies: [6461, 19]
-// Exports: useUnmountAwareAnimationFrame, useUnmountAwareTimeout
+// Dependencies: [19, 21, 1621, 6507, 1491, 6508, 6019, 6509]
 
 // Module 6506
-import _slicedToArray from "module_6461" /* 6461 */;
+import Fragment from "Fragment" /* 21 */;
+import Link from "Link" /* 1491 */;
+import react from "react" /* 19 */;
 
-const noop = fn(19);
-({ useCallback: c2, useEffect: c3, useState: closure_4 } = noop);
+const jsx = Fragment.jsx;
 
-export const useUnmountAwareTimeout = function useUnmountAwareTimeout() {
-  const first = _slicedToArray(closure_4(() => new Set()), 1)[0];
-  const items = [first];
-  closure_3(() => () => {
-    const item = set.forEach((item) => closure_1_0.clearTimeout(item));
-    set.clear();
-  }, items);
-  const obj = { setTimeout: null };
-  const items1 = [first];
-  obj.setTimeout = closure_2((arg0, arg1) => {
-    const timerId = first.setTimeout(() => {
-      first.delete(timerId);
-      closure_0();
-    }, arg1);
-    arg0.add(timerId);
-  }, items1);
-  return obj;
-};
-export const useUnmountAwareAnimationFrame = function useUnmountAwareAnimationFrame() {
-  const first = _slicedToArray(closure_4(() => new Set()), 1)[0];
-  const items = [first];
-  closure_3(() => () => {
-    const item = set.forEach((item) => cancelAnimationFrame(item));
-    set.clear();
-  }, items);
-  const obj = { requestAnimationFrame: null };
-  const items1 = [first];
-  obj.requestAnimationFrame = closure_2((arg0) => {
-    const animationFrame = first.requestAnimationFrame((arg0) => {
-      first.delete(animationFrame);
-      closure_0(arg0);
-    });
-    arg0.add(animationFrame);
-  }, items1);
-  return obj;
-};
+export const Header = react.memo(function Header(navigation) {
+  let back;
+  let headerBackTitle;
+  let href;
+  let layout;
+  let num;
+  let options;
+  let progress;
+  let route;
+  let styleInterpolator;
+  let tmp9;
+  let tmpResult2;
+  ({ back, options, route } = navigation);
+  navigation = navigation.navigation;
+  let tmp = route;
+  ({ layout, progress, styleInterpolator } = navigation);
+  const obj = route(navigation[2]);
+  const safeAreaInsets = obj.useSafeAreaInsets();
+  if (undefined !== options.headerBackTitle) {
+    headerBackTitle = options.headerBackTitle;
+  } else if (back) {
+    headerBackTitle = back.title;
+  }
+  const items = [navigation, route.key];
+  const useCallback = react.useCallback;
+  const tmpResult = tmp(navigation[3]);
+  const callback = useCallback(tmpResult.throttle(() => {
+    const tmp = navigation.isFocused() && navigation.canGoBack();
+    if (tmp) {
+      const dispatch = obj.dispatch;
+      const obj2 = { source: route.key };
+      const StackActions = Link.StackActions;
+      const merged = Object.assign(StackActions.pop());
+      dispatch(obj2);
+    }
+  }, 50), items);
+  const context = react.useContext(tmp(tmp2[5]).ModalPresentationContext);
+  if (undefined !== options.headerStatusBarHeight) {
+    num = options.headerStatusBarHeight;
+  } else {
+    num = 0;
+    if (!context) {
+      num = 0;
+      if (!tmp6) {
+        num = safeAreaInsets.top;
+      }
+    }
+  }
+  let obj2 = { title: tmpResult2.getHeaderTitle(options, route.name), progress, layout, modal: context, headerBackTitle, headerStatusBarHeight: num, onGoBack: tmp9, backHref: href, styleInterpolator };
+  const HeaderSegment = tmp(tmp2[7]).HeaderSegment;
+  let merged = Object.assign(options);
+  const tmp7 = jsx;
+  tmpResult2 = tmp(navigation[6]);
+  if (undefined !== options.headerBackTitle) {
+    headerBackTitle = options.headerBackTitle;
+  }
+  tmp9 = undefined;
+  if (back) {
+    tmp9 = callback;
+  }
+  href = undefined;
+  if (back) {
+    href = back.href;
+  }
+  return tmp7(HeaderSegment, obj2);
+});

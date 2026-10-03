@@ -1,38 +1,41 @@
 // Module ID: 760
 // Function ID: 761
-// Dependencies: [688, 689, 713]
-// Exports: initAndBind, setCurrentClient
+// Dependencies: [713, 740]
+// Exports: createLogContainerEnvelopeItem, createLogEnvelope
 
 // Module 760
-import _mod688 from "module_688" /* 688 */;
-import consoleSandbox from "consoleSandbox" /* 689 */;
 import _mod713 from "module_713" /* 713 */;
+import _mod740 from "module_740" /* 740 */;
 
-require = arg1;
-const dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const initAndBind = function initAndBind(arg0, debug) {
-  if (true === debug.debug) {
-    const obj = consoleSandbox;
-    if (_mod688.DEBUG_BUILD) {
-      debug = obj.debug;
-      debug.enable();
-    } else {
-      obj.consoleSandbox(() => {
-        console.warn("[Sentry] Cannot initialize SDK with `debug` option using a non-debug bundle.");
-      });
-    }
-  }
-  const currentScope = _mod713.getCurrentScope();
-  currentScope.update(debug.initialScope);
-  const obj4 = new arg0(debug);
-  const currentScope1 = _mod713.getCurrentScope();
-  currentScope1.setClient(obj4);
-  obj4.init();
-  return obj4;
+export const createLogContainerEnvelopeItem = function createLogContainerEnvelopeItem(items) {
+  items = [, ];
+  const obj = { type: "log", item_count: items.length, content_type: "application/vnd.sentry.items.log+json" };
+  items[0] = obj;
+  items[1] = { items };
+  return items;
 };
-export const setCurrentClient = function setCurrentClient(arg0) {
-  const currentScope = _mod713.getCurrentScope();
-  currentScope.setClient(arg0);
+export const createLogEnvelope = function createLogEnvelope(items, _metadata, tunnel, dsn) {
+  let sdk;
+  if (_metadata != null) {
+    sdk = _metadata.sdk;
+  }
+  const obj = {};
+  if (sdk) {
+    const obj2 = { name: _metadata.sdk.name, version: _metadata.sdk.version };
+    obj.sdk = obj2;
+  }
+  const tmp2 = tunnel && dsn;
+  if (tmp2) {
+    const obj3 = _mod713;
+    obj.dsn = obj3.dsnToString(dsn);
+  }
+  items = [, ];
+  const obj5 = { type: "log", item_count: items.length, content_type: "application/vnd.sentry.items.log+json" };
+  items[0] = obj5;
+  items[1] = { items };
+  const items1 = [items];
+  const obj4 = _mod740;
+  return obj4.createEnvelope(obj, items1);
 };

@@ -1,25 +1,32 @@
-// Module ID: 17138
-// Function ID: 17139
+// Module ID: 17214
+// Function ID: 17215
 // Name: useSoundboardSoundPlayer
-// Dependencies: [19, 5503, 9299, 2021, 17139, 504, 6949, 2]
+// Dependencies: [19, 5680, 9308, 2028, 17215, 504, 6847, 2]
 // Exports: default
 
-// Module 17138 (useSoundboardSoundPlayer)
-import SoundboardUtils from "SoundboardUtils" /* 6949 */;
-import noop from "module_19" /* 19 */;
-import SoundboardStore from "SoundboardStore" /* 5503 */;
+// Module 17214 (useSoundboardSoundPlayer)
+import SoundboardUtils from "SoundboardUtils" /* 6847 */;
+import Constants from "Constants" /* 9308 */;
+import react from "react" /* 19 */;
+import SoundboardStore from "SoundboardStore" /* 5680 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, importDefault;
 
-require = fn;
-const SoundOutputChannel = fn(9299).SoundOutputChannel;
-const size = fn(2);
+const SoundOutputChannel = Constants.SoundOutputChannel;
 const result = size.fileFinishedImporting("modules/soundboard/useSoundboardSoundPlayer.native.tsx");
 
 export default function useSoundboardSoundPlayer(arg0, arg1) {
+  let audioRef;
+  let closure_1;
+  let items2;
+  let soundId;
+  let stateFromStores;
   _require = arg0;
   importDefault = arg1;
   if (arg2 === undefined) {
+    const tmp2 = audioRef;
     const SoundboardSettings = require("UserSettings").SoundboardSettings;
     const setting = SoundboardSettings.getSetting();
     let volume;
@@ -31,24 +38,28 @@ export default function useSoundboardSoundPlayer(arg0, arg1) {
     const DEFAULT = SoundOutputChannel.DEFAULT;
   }
   audioRef = undefined;
-  audioRef = noop.useContext(require("SoundPlayerContext")).audioRef;
+  audioRef = react.useContext(require("react")).audioRef;
+  let obj = require("get initialized");
   const items = [SoundboardStore];
   const items1 = [arg0];
-  const obj2 = { playSoundboardSound: null, isPlayingSound: null, previewSound: null, isPreviewingSound: false };
-  const items2 = [arg0, audioRef, arg1];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => SoundboardStore.isPlayingSound(soundId.soundId), items1);
-  obj2.playSoundboardSound = noop.useCallback((arg0) => {
-    if (null != audioRef.current) {
-      const current = audioRef.current;
-      current.pause();
-    }
-    if (null != closure_1) {
-      SoundboardUtils.playSound(closure_0, tmp2, arg0);
-    }
-  }, items2);
-  obj2.isPlayingSound = stateFromStores;
-  obj2.previewSound = function previewSound() {
-    return Promise.resolve();
+  const obj2 = {
+    playSoundboardSound: react.useCallback((arg0) => {
+      if (null != audioRef.current) {
+        const current = audioRef.current;
+        current.pause();
+      }
+      if (null != closure_1) {
+        const obj = SoundboardUtils;
+        obj.playSound(soundId, tmp2, arg0);
+      }
+    }, items2),
+    isPlayingSound: stateFromStores,
+    previewSound() {
+      return Promise.resolve();
+    },
+    isPreviewingSound: false
   };
+  items2 = [arg0, audioRef, arg1];
+  stateFromStores = obj.useStateFromStores(items, () => SoundboardStore.isPlayingSound(soundId.soundId), items1);
   return obj2;
 };

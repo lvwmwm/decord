@@ -1,33 +1,145 @@
-// Module ID: 14760
-// Function ID: 14761
+// Module ID: 14816
+// Function ID: 14817
 // Name: useBountiesRecapScroll
-// Dependencies: [19, 2]
-// Exports: useBountiesRecapScroll
+// Dependencies: [19, 558, 576, 2]
 
-// Module 14760 (useBountiesRecapScroll)
-import noop from "module_19" /* 19 */;
+// Module 14816 (useBountiesRecapScroll)
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-function getRevealProgress(scrollY, c25, height3) {
+let listRef;
+
+function getRevealProgress(scrollY, lastBountyScrollOffset, height2) {
   let num = 0;
-  if (height3 > 0) {
-    num = (scrollY - c25) / height3;
+  if (height2 > 0) {
+    num = (scrollY - lastBountyScrollOffset) / height2;
   }
   return num;
 }
 getRevealProgress.__closure = {};
 getRevealProgress.__workletHash = 9769647749947;
 getRevealProgress.__initData = { code: "function getRevealProgress_useBountiesRecapScrollTsx1(scrollOffset,startOffset,revealHeight){if(revealHeight<=0){return 0;}return(scrollOffset-startOffset)/revealHeight;}" };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/useBountiesRecapScroll.tsx");
-
-export const RECAP_SNAP_EPSILON = 2;
-export { getRevealProgress };
-export const useBountiesRecapScroll = function useBountiesRecapScroll(listRef) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((listRef) => {
+  let closure_3;
+  let enabled;
+  let tmp2;
+  let obj = listRef(enabled[2]);
+  const cResult = obj.c(17);
+  listRef = listRef.listRef;
+  enabled = listRef.enabled;
+  const offsets = listRef.offsets;
+  if (cResult[0] !== listRef) {
+    const fn = function l(offset) {
+      if (null != listRef.current) {
+        const current = tmp.current;
+        const obj = { offset, animated: true };
+        current.scrollToOffset(obj);
+      }
+    };
+    let num = 0;
+    cResult[0] = listRef;
+    cResult[1] = fn;
+    tmp2 = fn;
+  } else {
+    tmp2 = cResult[1];
+  }
+  getRevealProgress = tmp2;
+  if (cResult[2] === offsets.lastBounty) {
+    if (cResult[3] === tmp2) {
+      const tmp3 = cResult[4];
+    }
+    if (cResult[5] === enabled) {
+      if (cResult[6] === offsets.fullRecap) {
+        if (cResult[7] === offsets.lastBounty) {
+          if (cResult[8] === offsets.revealHeight) {
+            let tmp4;
+            if (cResult[9] === tmp2) {
+              tmp4 = cResult[10];
+            }
+            let closure_4 = tmp4;
+            class B {
+              constructor(arg0) {
+                const tmp = enabled;
+                if (tmp) {
+                  if (arg0 > offsets.lastBounty) {
+                    const revealHeight = tmp3.revealHeight;
+                    if (typeof getRevealProgress === "function") {
+                      let num = 0;
+                      if (revealHeight > 0) {
+                        num = (arg0 - tmp9) / revealHeight;
+                      }
+                      const tmp4 = num >= 0.25 ? offsets.fullRecap : offsets.lastBounty;
+                      const _Math = Math;
+                      if (Math.abs(arg0 - tmp4) >= 2) {
+                        closure_3(tmp4);
+                      }
+                    } else {
+                      throw new TypeError("Trying to call a non-function");
+                    }
+                  }
+                }
+              }
+            }
+            class R {
+              constructor(contentOffset) {
+                const tmp = enabled;
+                if (tmp) {
+                  closure_4(contentOffset.contentOffset.y);
+                }
+              }
+            }
+            cResult[11] = enabled;
+            cResult[12] = tmp4;
+            cResult[13] = R;
+          }
+        }
+      }
+    }
+    class B {
+      constructor(arg0) {
+        const tmp = enabled;
+        if (tmp) {
+          if (arg0 > offsets.lastBounty) {
+            const revealHeight = tmp3.revealHeight;
+            if (typeof getRevealProgress === "function") {
+              let num = 0;
+              if (revealHeight > 0) {
+                num = (arg0 - tmp9) / revealHeight;
+              }
+              const tmp4 = num >= 0.25 ? offsets.fullRecap : offsets.lastBounty;
+              const _Math = Math;
+              if (Math.abs(arg0 - tmp4) >= 2) {
+                closure_3(tmp4);
+              }
+            } else {
+              throw new TypeError("Trying to call a non-function");
+            }
+          }
+        }
+      }
+    }
+    cResult[5] = enabled;
+    cResult[6] = offsets.fullRecap;
+    cResult[7] = offsets.lastBounty;
+    cResult[8] = offsets.revealHeight;
+    cResult[9] = tmp2;
+    cResult[10] = B;
+    tmp4 = B;
+  }
+  const fn2 = function c() {
+    closure_3(offsets.lastBounty);
+  };
+  cResult[2] = offsets.lastBounty;
+  cResult[3] = tmp2;
+  cResult[4] = fn2;
+}) : ((listRef) => {
+  let items3;
   listRef = listRef.listRef;
   const enabled = listRef.enabled;
   const offsets = listRef.offsets;
   const items = [listRef];
-  const callback = listRef.useCallback((offset) => {
+  const callback = offsets.useCallback((offset) => {
     if (null != listRef.current) {
       const current = tmp.current;
       const obj = { offset, animated: true };
@@ -38,22 +150,23 @@ export const useBountiesRecapScroll = function useBountiesRecapScroll(listRef) {
   const items2 = [enabled, , , , ];
   ({ fullRecap: arr3[1], lastBounty: arr3[2], revealHeight: arr3[3] } = offsets);
   items2[4] = callback;
-  const callback1 = listRef.useCallback(() => {
+  const callback1 = offsets.useCallback(() => {
     callback(offsets.lastBounty);
   }, items1);
-  const callback2 = listRef.useCallback((arg0) => {
-    if (enabled) {
+  const callback2 = offsets.useCallback((arg0) => {
+    const tmp = enabled;
+    if (tmp) {
       if (arg0 > offsets.lastBounty) {
-        const revealHeight = tmp2.revealHeight;
+        const revealHeight = tmp3.revealHeight;
         if (typeof getRevealProgress === "function") {
           let num = 0;
           if (revealHeight > 0) {
-            num = (arg0 - tmp8) / revealHeight;
+            num = (arg0 - tmp9) / revealHeight;
           }
-          const tmp3 = num >= 0.25 ? tmp2.fullRecap : tmp2.lastBounty;
+          const tmp4 = num >= 0.25 ? offsets.fullRecap : offsets.lastBounty;
           const _Math = Math;
-          if (Math.abs(arg0 - tmp3) >= 2) {
-            callback(tmp3);
+          if (Math.abs(arg0 - tmp4) >= 2) {
+            callback(tmp4);
           }
         } else {
           throw new TypeError("Trying to call a non-function");
@@ -61,12 +174,20 @@ export const useBountiesRecapScroll = function useBountiesRecapScroll(listRef) {
       }
     }
   }, items2);
-  let obj = { scrollToLastBounty: callback1, handleRecapMomentumEnd: null };
-  const items3 = [enabled, callback2];
-  obj.handleRecapMomentumEnd = listRef.useCallback((contentOffset) => {
-    if (enabled) {
-      callback2(contentOffset.contentOffset.y);
-    }
-  }, items3);
+  let obj = {
+    scrollToLastBounty: callback1,
+    handleRecapMomentumEnd: offsets.useCallback((contentOffset) => {
+      const tmp = enabled;
+      if (tmp) {
+        callback2(contentOffset.contentOffset.y);
+      }
+    }, items3)
+  };
+  items3 = [enabled, callback2];
   return obj;
-};
+});
+const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/useBountiesRecapScroll.tsx");
+
+export const RECAP_SNAP_EPSILON = 2;
+export { getRevealProgress };
+export const useBountiesRecapScroll = tmp2;

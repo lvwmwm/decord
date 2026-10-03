@@ -1,9 +1,9 @@
-// Module ID: 14803
-// Function ID: 14804
+// Module ID: 14859
+// Function ID: 14860
 // Name: shared/ThemeTypes
 // Dependencies: [2]
 
-// Module 14803 (shared/ThemeTypes)
+// Module 14859 (shared/ThemeTypes)
 import size from "module_2" /* 2 */;
 
 const obj = { ASH: "dark", LIGHT: "light", ONYX: "midnight", DARK: "darker" };
@@ -13,8 +13,9 @@ const items1 = [items, ];
 const items2 = [, ];
 ({ ONYX: arr3[0], DARK: arr3[1] } = obj);
 items1[1] = items2;
+const map = new Map(items1);
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/shared/ThemeTypes.tsx");
 
 export const ThemeTypes = obj;
-export const ThemeExtends = new Map(items1);
+export const ThemeExtends = map;
 export const _private = { Themes: obj };

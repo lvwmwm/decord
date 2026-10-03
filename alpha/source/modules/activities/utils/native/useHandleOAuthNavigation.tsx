@@ -1,33 +1,39 @@
-// Module ID: 17082
-// Function ID: 17083
+// Module ID: 17143
+// Function ID: 17144
 // Name: useHandleOAuthNavigation
-// Dependencies: [19, 1074, 8698, 5048, 8704, 1981, 1110, 2]
+// Dependencies: [19, 1085, 8710, 5093, 8716, 1987, 1121, 2]
 // Exports: default
 
-// Module 17082 (useHandleOAuthNavigation)
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
-import noop from "module_19" /* 19 */;
+// Module 17143 (useHandleOAuthNavigation)
+import Constants from "Constants" /* 1085 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
+import Constants2 from "Constants" /* 8710 */;
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ComponentActions = fn(1074).ComponentActions;
-let closure_5 = fn(8698).OAUTH2_AUTHORIZE_MODAL_KEY;
-const size = fn(2);
+const ComponentActions = Constants.ComponentActions;
+let closure_5 = Constants2.OAUTH2_AUTHORIZE_MODAL_KEY;
 const result = size.fileFinishedImporting("modules/activities/utils/native/useHandleOAuthNavigation.tsx");
 
 export default function useHandleOAuthNavigation() {
-  const effect = noop.useEffect(() => {
+  let SHOW_OAUTH2_MODAL;
+  const effect = react.useEffect(() => {
     function showOAuth2Modal(arg0) {
-      closure_1_1(paths[3]).popWithKey(closure_1_5);
-      const obj = closure_1_1(paths[3]);
-      const obj3 = {};
-      const obj2 = closure_1_1(paths[3]);
-      const merged = Object.assign(arg0);
-      obj3.dismissOAuthModal = function dismissOAuthModal() {
-        closure_1_1(paths[3]).popWithKey(closure_1_5);
+      let obj = closure_1_1(paths[3]);
+      obj.popWithKey(closure_1_5);
+      const pushLazy = closure_1_1(paths[3]).pushLazy;
+      const obj2 = {
+        dismissOAuthModal() {
+          const obj = closure_1_1(paths[3]);
+          obj.popWithKey(closure_1_5);
+        }
       };
-      obj2.pushLazy(showOAuth2Modal(paths[5])(paths[4], paths.paths), obj3, closure_1_5);
+      closure_1_1(paths[3]);
+      const tmp3 = showOAuth2Modal(paths[5])(paths[4], paths.paths);
+      const merged = Object.assign(arg0);
+      pushLazy(tmp3, obj2, closure_1_5);
     }
-    let ComponentDispatch = showOAuth2Modal(1110).ComponentDispatch;
+    let ComponentDispatch = showOAuth2Modal(paths[6]).ComponentDispatch;
     const subscription = ComponentDispatch.subscribe(SHOW_OAUTH2_MODAL.SHOW_OAUTH2_MODAL, showOAuth2Modal);
     return () => {
       const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;

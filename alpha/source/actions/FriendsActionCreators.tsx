@@ -1,19 +1,18 @@
-// Module ID: 17502
-// Function ID: 17503
+// Module ID: 17591
+// Function ID: 17592
 // Name: FriendsActionCreators
-// Dependencies: [1074, 573, 1101, 16823, 2]
+// Dependencies: [1085, 584, 1112, 16911, 2]
 
-// Module 17502 (FriendsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
+// Module 17591 (FriendsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import router_utils from "router_utils" /* 1112 */;
 import size from "module_2" /* 2 */;
 
-const router_utils = tmp(1101);
-const trackFriendListClickedDefault = tmp5(16823);
+let tmp5;
+const trackFriendListClickedDefault = tmp5(16911);
 const Routes = Constants.Routes;
-const result = size.fileFinishedImporting("actions/FriendsActionCreators.tsx");
-
-export default {
+let obj = {
   transitionToSection(PENDING, arg1) {
     let obj = arg1;
     if (arg1 === undefined) {
@@ -23,21 +22,30 @@ export default {
     if (flag === undefined) {
       flag = false;
     }
+    const obj2 = router_utils;
     if (obj2.getHistory().location.pathname !== Routes.FRIENDS) {
-      router_utils.transitionTo(tmp3.FRIENDS);
       const tmpResult = router_utils;
+      tmpResult.transitionTo(tmp3.FRIENDS);
     }
-    obj2 = router_utils;
-    DispatcherDefault.dispatch({ type: "FRIENDS_SET_SECTION", section: PENDING });
+    const obj3 = { type: "FRIENDS_SET_SECTION", section: PENDING };
+    const obj4 = DispatcherDefault;
+    obj4.dispatch(obj3);
     if (flag) {
       const obj5 = { tab_opened: PENDING };
       trackFriendListClickedDefault(obj5);
     }
   },
   setSection(section) {
-    DispatcherDefault.dispatch({ type: "FRIENDS_SET_SECTION", section });
+    const obj = DispatcherDefault;
+    const obj2 = { type: "FRIENDS_SET_SECTION", section };
+    obj.dispatch(obj2);
   },
   setInitialSection(section) {
-    DispatcherDefault.dispatch({ type: "FRIENDS_SET_INITIAL_SECTION", section });
+    const obj = DispatcherDefault;
+    const obj2 = { type: "FRIENDS_SET_INITIAL_SECTION", section };
+    obj.dispatch(obj2);
   }
 };
+const result = size.fileFinishedImporting("actions/FriendsActionCreators.tsx");
+
+export default obj;

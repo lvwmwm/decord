@@ -1,70 +1,250 @@
-// Module ID: 12683
-// Function ID: 12684
+// Module ID: 12717
+// Function ID: 12718
 // Name: InAppReportsMuteUserElement
-// Dependencies: [32, 19, 2044, 1074, 1084, 21, 504, 4997, 9794, 5025, 8036, 12679, 1115, 9806, 2]
-// Exports: default
+// Dependencies: [32, 19, 2051, 1085, 1095, 21, 558, 576, 504, 5042, 9800, 5070, 8080, 1126, 9813, 12713, 2]
 
-// Module 12683 (InAppReportsMuteUserElement)
-import NicknameUtilsDefault from "NicknameUtils" /* 4997 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5025 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8036 */;
-import MuteSettingsUtils from "MuteSettingsUtils" /* 9794 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
+// Module 12717 (InAppReportsMuteUserElement)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1085 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8080 */;
+import MuteSettingsUtils from "MuteSettingsUtils" /* 9800 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import ChannelStore_mod from "ChannelStore" /* 2051 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const MuteUntilSeconds = fn(1084).MuteUntilSeconds;
-const jsx = fn(21).jsx;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsMuteUserElement.tsx");
+let channelId, obj1, obj5, obj6, showMuteSuccessToastResult, trackWithMetadataResult, user;
 
-export default function MuteUserElement(user) {
+let ChannelStore = ChannelStore_mod;
+const AnalyticEvents = Constants.AnalyticEvents;
+const MuteUntilSeconds = UserSettingsConstants.MuteUntilSeconds;
+const jsx = Fragment.jsx;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+  let obj3;
+  let reportId;
+  let tmp10;
+  let tmp4;
+  let tmp7;
+  let tmp9;
+  let obj = user(reportId[7]);
+  const cResult = obj.c(28);
+  const tmp = user;
   user = user.user;
-  const channelId = user.channelId;
+  channelId = user.channelId;
+  reportId = user.reportId;
+  if (cResult[0] !== user.id) {
+    const dMFromUserId = ChannelStore.getDMFromUserId(user.id);
+    cResult[0] = user.id;
+    cResult[1] = dMFromUserId;
+    tmp4 = dMFromUserId;
+  } else {
+    tmp4 = cResult[1];
+  }
+  channelId = tmp4;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[2] = items;
+    tmp7 = items;
+  } else {
+    tmp7 = cResult[2];
+  }
+  if (cResult[3] !== channelId) {
+    class T {
+      constructor() {
+        return closure_5.getChannel(channelId);
+      }
+    }
+    const items1 = [channelId];
+    cResult[3] = channelId;
+    cResult[4] = T;
+    cResult[5] = items1;
+    tmp10 = items1;
+    tmp9 = T;
+  } else {
+    class T {
+      constructor() {
+        return closure_5.getChannel(channelId);
+      }
+    }
+    tmp10 = cResult[5];
+  }
+  const tmpResult = tmp(reportId[8]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp9, tmp10);
+  const tmp12 = cResult[6];
+  if (stateFromStores != null) {
+    class T {
+      constructor() {
+        return closure_5.getChannel(channelId);
+      }
+    }
+  }
+  if (tmp12 === undefined) {
+    class T {
+      constructor() {
+        return closure_5.getChannel(channelId);
+      }
+    }
+    const tmp13 = cResult[7];
+    if (stateFromStores != null) {
+      class T {
+        constructor() {
+          return closure_5.getChannel(channelId);
+        }
+      }
+    }
+    if (tmp13 === tmp14) {
+      let tmp17;
+      class T {
+        constructor() {
+          return closure_5.getChannel(channelId);
+        }
+      }
+      if (cResult[10] !== tmp4) {
+        class T {
+          constructor() {
+            return closure_5.getChannel(channelId);
+          }
+        }
+        const muteSettings = obj3.getMuteSettings(tmp4);
+        cResult[10] = tmp4;
+        cResult[11] = muteSettings;
+        tmp17 = muteSettings;
+      } else {
+        class T {
+          constructor() {
+            return closure_5.getChannel(channelId);
+          }
+        }
+      }
+      const muted = tmp17.muted;
+      const useState = react.useState;
+      if (muted == null) {
+        class T {
+          constructor() {
+            return closure_5.getChannel(channelId);
+          }
+        }
+      }
+      [r10085, react] = channelId(useState(muted), 2);
+      channelId(useState(muted), 2);
+      if (cResult[12] === channelId) {
+        class T {
+          constructor() {
+            return closure_5.getChannel(channelId);
+          }
+        }
+      }
+      class E {
+        constructor() {
+          tmp = closure_4(true);
+          obj = closure_1(closure_2[11]);
+          obj1 = { other_user_id: user.id, report_id: reportId };
+          trackWithMetadataResult = obj.trackWithMetadata(AnalyticEvents.IAR_MUTE_USER_BUTTON_CLICKED, obj1);
+          obj3 = closure_0(closure_2[10]);
+          obj6 = { channelId: closure_3, guildId: null, muteDurationSeconds: MuteUntilSeconds.ALWAYS };
+          result = obj3.handleMuteSettingPress(obj6);
+          obj5 = closure_1(closure_2[12]);
+          showMuteSuccessToastResult = obj5.showMuteSuccessToast(user.id, channelId);
+          return;
+        }
+      }
+      cResult[12] = channelId;
+      cResult[13] = tmp4;
+      cResult[14] = reportId;
+      cResult[15] = user.id;
+      cResult[16] = E;
+    }
+  }
+  const getName = channelId(reportId[9]).getName;
+  channelId(reportId[9]);
+  if (stateFromStores != null) {
+    class T {
+      constructor() {
+        return closure_5.getChannel(channelId);
+      }
+    }
+  }
+  if (stateFromStores != null) {
+    class T {
+      constructor() {
+        return closure_5.getChannel(channelId);
+      }
+    }
+  }
+  const name = getName(undefined, undefined, user);
+  if (stateFromStores != null) {
+    class T {
+      constructor() {
+        return closure_5.getChannel(channelId);
+      }
+    }
+  }
+  cResult[6] = undefined;
+  if (stateFromStores != null) {
+    class T {
+      constructor() {
+        return closure_5.getChannel(channelId);
+      }
+    }
+  }
+  cResult[7] = undefined;
+  cResult[8] = user;
+  cResult[9] = name;
+}) : ((user) => {
+  let closure_5;
+  user = user.user;
+  channelId = user.channelId;
   const reportId = user.reportId;
   ChannelStore = undefined;
   const dMFromUserId = ChannelStore.getDMFromUserId(user.id);
+  const tmp2 = user;
+  let obj = user(reportId[8]);
   const items = [ChannelStore];
   const items1 = [channelId];
-  const stateFromStores = user(reportId[6]).useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
   const items2 = [stateFromStores, user];
   const memo = stateFromStores.useMemo(() => {
     let guild_id;
+    const getName = NicknameUtilsDefault.getName;
+    NicknameUtilsDefault;
     if (stateFromStores != null) {
-      guild_id = tmp.guild_id;
+      guild_id = tmp2.guild_id;
     }
     let id;
     if (stateFromStores != null) {
-      id = tmp.id;
+      id = tmp2.id;
     }
-    return NicknameUtilsDefault.getName(guild_id, id, user);
+    return getName(guild_id, id, user);
   }, items2);
   const items3 = [dMFromUserId];
-  let flag = stateFromStores.useMemo(() => MuteSettingsUtils.getMuteSettings(dMFromUserId), items3).muted;
+  let flag = stateFromStores.useMemo(() => {
+    const obj = MuteSettingsUtils;
+    return obj.getMuteSettings(dMFromUserId);
+  }, items3).muted;
+  const useState = stateFromStores.useState;
   if (flag == null) {
     flag = false;
   }
-  const tmp7 = dMFromUserId(stateFromStores.useState(flag), 2);
+  const tmp7 = dMFromUserId(useState(flag), 2);
   ChannelStore = tmp7[1];
   const items4 = [dMFromUserId, channelId, user, reportId];
-  let tmp9 = null;
+  const first = tmp7[0];
+  let tmp10 = null;
   if (null != user) {
-    let obj2 = { title: null, disabledTitle: null, description: null, disabled: null, onPress: null, icon: null };
-    const intl = tmp2(tmp3[12]).intl;
+    channelId(reportId[15]);
+    const intl = tmp2(tmp3[13]).intl;
     let obj3 = { username: memo };
-    obj2.title = intl.formatToPlainString(tmp2(tmp3[12]).t.TRp5wR, obj3);
-    const intl2 = tmp2(tmp3[12]).intl;
+    const intl2 = tmp2(tmp3[13]).intl;
     let obj4 = { username: memo };
-    obj2.disabledTitle = intl2.formatToPlainString(tmp2(tmp3[12]).t.raALhx, obj4);
-    const intl3 = tmp2(tmp3[12]).intl;
-    obj2.description = intl3.string(tmp2(tmp3[12]).t["yM/+AJ"]);
-    obj2.disabled = tmp7[0];
-    obj2.onPress = tmp8;
-    obj2.icon = jsx(tmp2(tmp3[13]).BellSlashIcon, {});
-    tmp9 = jsx(channelId(tmp3[11]), { title: null, disabledTitle: null, description: null, disabled: null, onPress: null, icon: null });
-    const tmp12 = channelId(tmp3[11]);
+    const intl3 = tmp2(tmp3[13]).intl;
+    tmp10 = <tmp13 title={intl.formatToPlainString(tmp2(reportId[13]).t.TRp5wR, obj3)} disabledTitle={intl2.formatToPlainString(tmp2(reportId[13]).t.raALhx, obj4)} description={intl3.string(tmp2(reportId[13]).t["yM/+AJ"])} disabled={first} onPress={tmp9} icon={null} />;
   }
-  return tmp9;
-};
+  return tmp10;
+});
+let result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsMuteUserElement.tsx");
+
+export default tmp2;

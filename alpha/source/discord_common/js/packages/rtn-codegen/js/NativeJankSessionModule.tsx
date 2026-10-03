@@ -1,13 +1,13 @@
-// Module ID: 17424
-// Function ID: 17425
-// Name: NativeJankSessionModule
+// Module ID: 17514
+// Function ID: 17515
+// Name: react-native
 // Dependencies: [17, 2]
 
-// Module 17424 (NativeJankSessionModule)
-import _mod17 from "module_17" /* 17 */;
+// Module 17514 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const TurboModuleRegistry = _mod17.TurboModuleRegistry;
+const TurboModuleRegistry = react_native.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeJankSessionModule");
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeJankSessionModule.tsx");
 

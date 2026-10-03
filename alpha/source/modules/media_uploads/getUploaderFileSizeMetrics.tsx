@@ -1,10 +1,10 @@
-// Module ID: 8804
-// Function ID: 8805
+// Module ID: 8817
+// Function ID: 8818
 // Name: getUploaderFileSizeMetrics
 // Dependencies: [2]
 // Exports: getUploaderChannelId, getUploaderFileSizeMetrics
 
-// Module 8804 (getUploaderFileSizeMetrics)
+// Module 8817 (getUploaderFileSizeMetrics)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/media_uploads/getUploaderFileSizeMetrics.tsx");
@@ -24,6 +24,7 @@ export const getUploaderChannelId = function getUploaderChannelId(file) {
   return channelId;
 };
 export const getUploaderFileSizeMetrics = function getUploaderFileSizeMetrics(totalPreCompressionSize) {
+  const f98535 = (acc, item) => acc + item;
   let items = totalPreCompressionSize.items;
   if (items == null) {
     items = [];
@@ -36,20 +37,20 @@ export const getUploaderFileSizeMetrics = function getUploaderFileSizeMetrics(to
     }
     return currentSize;
   });
-  const obj = { preCompressionFileSizes: mapped, postCompressionFileSizes: mapped1, preCompressionAggregateSize: null, postCompressionAggregateSize: null, numAttachments: null };
+  const obj = { preCompressionFileSizes: mapped, postCompressionFileSizes: mapped1, preCompressionAggregateSize: totalPreCompressionSize, postCompressionAggregateSize: null, numAttachments: null };
   if (totalPreCompressionSize.totalPreCompressionSize > 0) {
     totalPreCompressionSize = totalPreCompressionSize.totalPreCompressionSize;
   } else {
-    totalPreCompressionSize = mapped.reduce((acc, item) => acc + item, 0);
+    totalPreCompressionSize = mapped.reduce(f98535, 0);
   }
-  obj.preCompressionAggregateSize = totalPreCompressionSize;
   if (null != totalPreCompressionSize.totalPostCompressionSize) {
+    let totalPostCompressionSize;
     if (totalPreCompressionSize.totalPostCompressionSize > 0) {
-      let totalPostCompressionSize = totalPreCompressionSize.totalPostCompressionSize;
+      totalPostCompressionSize = totalPreCompressionSize.totalPostCompressionSize;
     }
     obj.postCompressionAggregateSize = totalPostCompressionSize;
     obj.numAttachments = totalPreCompressionSize.attachmentsCount > 0 ? totalPreCompressionSize.attachmentsCount : items.length;
     return obj;
   }
-  totalPostCompressionSize = mapped1.reduce((acc, item) => acc + item, 0);
+  totalPostCompressionSize = mapped1.reduce(f98535, 0);
 };

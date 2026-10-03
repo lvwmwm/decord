@@ -1,13 +1,13 @@
-// Module ID: 9293
-// Function ID: 9294
-// Name: NativeAudioRouteEmitterModule
+// Module ID: 9302
+// Function ID: 9303
+// Name: react-native
 // Dependencies: [17, 2]
 
-// Module 9293 (NativeAudioRouteEmitterModule)
-import _mod17 from "module_17" /* 17 */;
+// Module 9302 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const TurboModuleRegistry = _mod17.TurboModuleRegistry;
+const TurboModuleRegistry = react_native.TurboModuleRegistry;
 const enforcing = TurboModuleRegistry.getEnforcing("NativeAudioRouteEmitterModule");
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/NativeAudioRouteEmitterModule.tsx");
 

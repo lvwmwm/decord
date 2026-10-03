@@ -1,13 +1,13 @@
-// Module ID: 12207
-// Function ID: 12208
+// Module ID: 12157
+// Function ID: 12158
 // Name: getGuildPowerupFormattedDateString
-// Dependencies: [2111, 2]
+// Dependencies: [2116, 2]
 // Exports: default
 
-// Module 12207 (getGuildPowerupFormattedDateString)
-import LocaleStore from "LocaleStore" /* 2111 */;
+// Module 12157 (getGuildPowerupFormattedDateString)
+import LocaleStore from "LocaleStore" /* 2116 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/powerups/utils/getGuildPowerupFormattedDateString.tsx");
 
 export default function getGuildPowerupFormattedDateString(arg0) {
@@ -15,8 +15,10 @@ export default function getGuildPowerupFormattedDateString(arg0) {
   if (arg1 === undefined) {
     date = { month: "numeric", day: "numeric" };
   }
-  const obj = {};
+  const obj = { timeZone: "UTC" };
+  const toLocaleDateString = new Date(arg0).toLocaleDateString;
+  const locale = LocaleStore.locale;
+  new Date(arg0);
   const merged = Object.assign(date);
-  obj.timeZone = "UTC";
-  return new Date(arg0).toLocaleDateString(LocaleStore.locale, obj);
+  return toLocaleDateString(locale, obj);
 };

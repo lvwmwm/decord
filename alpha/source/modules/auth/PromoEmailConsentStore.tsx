@@ -1,25 +1,29 @@
-// Module ID: 6197
-// Function ID: 6198
+// Module ID: 6083
+// Function ID: 6084
 // Name: PromoEmailConsentStore
-// Dependencies: [560, 1248, 2]
+// Dependencies: [570, 1259, 2]
 // Exports: setPromoEmailConsentChecked, setPromoEmailConsentState
 
-// Module 6197 (PromoEmailConsentStore)
-import module_560 from "module_560" /* 560 */;
+// Module 6083 (PromoEmailConsentStore)
+import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const usePromoEmailConsentStore = module_560.create(() => ({ required: false, checked: false, preChecked: false }));
+const usePromoEmailConsentStore = module_570.create(() => ({ required: false, checked: false, preChecked: false }));
 const result = size.fileFinishedImporting("modules/auth/PromoEmailConsentStore.tsx");
 
 export const setPromoEmailConsentState = function setPromoEmailConsentState(arg0) {
+  let closure_0;
   _require = arg0;
-  require("ReactBatchUpdates").batchUpdates(() => obj.setState(closure_0));
+  const obj = require("react-native");
+  obj.batchUpdates(() => obj.setState(closure_0));
 };
 export const setPromoEmailConsentChecked = function setPromoEmailConsentChecked(checked) {
   _require = checked;
-  require("ReactBatchUpdates").batchUpdates(() => {
+  let obj = require("react-native");
+  obj.batchUpdates(() => {
     const obj = { checked };
     return obj.setState(obj);
   });

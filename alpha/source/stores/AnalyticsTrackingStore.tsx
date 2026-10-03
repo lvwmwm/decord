@@ -1,47 +1,59 @@
-// Module ID: 7068
-// Function ID: 7069
+// Module ID: 6969
+// Function ID: 6970
 // Name: stores/AnalyticsTrackingStore
-// Dependencies: [502, 1074, 1249, 573, 7069, 1241, 7080, 7081, 2]
+// Dependencies: [502, 1085, 1260, 584, 6970, 1252, 6981, 6982, 2]
 
-// Module 7068 (stores/AnalyticsTrackingStore)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtils2 from "AnalyticsUtils" /* 1241 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7069 */;
+// Module 6969 (stores/AnalyticsTrackingStore)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtils2 from "AnalyticsUtils" /* 1252 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 6970 */;
+import requestSafeIdleCallback from "requestSafeIdleCallback" /* 6981 */;
+import sendUnloadRequest from "sendUnloadRequest" /* 6982 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const AnalyticsUtils = fn(1249);
-const obj2 = {
+let items;
+const Endpoints = Constants.Endpoints;
+let obj = {
   dispatcher: DispatcherDefault,
   actionHandler: {
     CONNECTION_OPEN(arg0) {
-      return discord_common_AnalyticsUtils.AnalyticsActionHandlers.handleConnectionOpen(arg0);
+      const AnalyticsActionHandlers = AnalyticsUtils.AnalyticsActionHandlers;
+      return AnalyticsActionHandlers.handleConnectionOpen(arg0);
     },
     OVERLAY_INITIALIZE(arg0) {
-      return discord_common_AnalyticsUtils.AnalyticsActionHandlers.handleConnectionOpen(arg0);
+      const AnalyticsActionHandlers = AnalyticsUtils.AnalyticsActionHandlers;
+      return AnalyticsActionHandlers.handleConnectionOpen(arg0);
     },
     CURRENT_USER_UPDATE(arg0) {
-      return discord_common_AnalyticsUtils.AnalyticsActionHandlers.handleConnectionOpen(arg0);
+      const AnalyticsActionHandlers = AnalyticsUtils.AnalyticsActionHandlers;
+      return AnalyticsActionHandlers.handleConnectionOpen(arg0);
     },
     CONNECTION_CLOSED() {
-      return discord_common_AnalyticsUtils.AnalyticsActionHandlers.handleConnectionClosed();
+      const AnalyticsActionHandlers = AnalyticsUtils.AnalyticsActionHandlers;
+      return AnalyticsActionHandlers.handleConnectionClosed();
     },
     FINGERPRINT() {
-      return discord_common_AnalyticsUtils.AnalyticsActionHandlers.handleFingerprint();
+      const AnalyticsActionHandlers = AnalyticsUtils.AnalyticsActionHandlers;
+      return AnalyticsActionHandlers.handleFingerprint();
     },
     TRACK(arg0) {
-      return discord_common_AnalyticsUtils.AnalyticsActionHandlers.handleTrack(arg0);
+      const AnalyticsActionHandlers = AnalyticsUtils.AnalyticsActionHandlers;
+      return AnalyticsActionHandlers.handleTrack(arg0);
     },
     SET_ANALYTICS_TOKEN(arg0) {
-      return discord_common_AnalyticsUtils.AnalyticsActionHandlers.handleSetAnalyticsToken(arg0);
+      const AnalyticsActionHandlers = AnalyticsUtils.AnalyticsActionHandlers;
+      return AnalyticsActionHandlers.handleSetAnalyticsToken(arg0);
     }
   },
-  TRACKING_URL: fn(1074).Endpoints.TRACK,
-  waitFor: null,
+  TRACKING_URL: Endpoints.TRACK,
+  waitFor: items,
   getFingerprint: AuthenticationStore.getFingerprint,
   getSessionId() {
-    const session = SessionHeartbeatScheduler.getSession();
+    const obj = SessionHeartbeatScheduler;
+    const session = obj.getSession();
     return session.then((uuid) => {
       let sessionId;
       if (uuid != null) {
@@ -53,13 +65,11 @@ const obj2 = {
   getLaunchSignature() {
     return AnalyticsUtils2.launchSignature;
   },
-  scheduleWhenIdle: fn(7080).requestSafeIdleCallback,
-  sendUnloadRequest: fn(7081).sendUnloadRequest
+  scheduleWhenIdle: requestSafeIdleCallback.requestSafeIdleCallback,
+  sendUnloadRequest: sendUnloadRequest.sendUnloadRequest
 };
-const items = [AuthenticationStore];
-obj2.waitFor = items;
-const result = AnalyticsUtils.analyticsTrackingStoreMaker(obj2);
-const size = fn(2);
+items = [AuthenticationStore];
+const result = AnalyticsUtils.analyticsTrackingStoreMaker(obj);
 const result1 = size.fileFinishedImporting("stores/AnalyticsTrackingStore.tsx");
 
 export default result;

@@ -1,178 +1,483 @@
-// Module ID: 9375
-// Function ID: 9376
+// Module ID: 9383
+// Function ID: 9384
 // Name: SecureFramesUserVerificationBottomSheet
-// Dependencies: [32, 19, 17, 4868, 1372, 9358, 1074, 21, 4845, 576, 9362, 9376, 9337, 9365, 504, 9368, 7808, 4997, 9356, 9367, 8446, 9377, 4809, 4557, 4801, 1115, 6757, 6756, 6805, 4841, 9369, 5463, 5465, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 4913, 1377, 9366, 1085, 21, 4890, 587, 558, 576, 9370, 9384, 9345, 9373, 504, 9376, 7852, 5042, 9364, 9375, 8451, 9385, 4854, 4568, 4792, 1126, 6644, 6696, 4886, 9377, 5594, 5593, 6645, 2]
 
-// Module 9375 (SecureFramesUserVerificationBottomSheet)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4557 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 4801 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
-import UserActionCreators from "UserActionCreators" /* 7808 */;
-import CheckmarkLargeBoldIcon from "CheckmarkLargeBoldIcon" /* 8446 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9356 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9367 */;
-import XLargeBoldIcon from "XLargeBoldIcon" /* 9377 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4868 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 9383 (SecureFramesUserVerificationBottomSheet)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 4792 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import UserActionCreators from "UserActionCreators" /* 7852 */;
+import CheckmarkLargeBoldIcon2 from "CheckmarkLargeBoldIcon" /* 8451 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9364 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9375 */;
+import XLargeBoldIcon2 from "XLargeBoldIcon" /* 9385 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import UserStore from "UserStore" /* 1377 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9366 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const SecureFramesConstants = fn(9358);
-({ AnalyticsSecureFramesUserVerification: closure_9, SECURE_FRAMES_PUBLIC_KEY_VERSION: c10, USER_VERIFIED_TOAST_KEY: closure_11 } = SecureFramesConstants);
-const AnalyticsLocations = fn(1074).AnalyticsLocations;
-const jsxProd = fn(21);
-({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4845);
-let obj2 = { iconContainer: null, icon: null, content: null, subtitle: null, buttons: null, helpMessage: null };
-let size = { height: 80, width: 80, borderRadius: 40, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, marginBottom: 16 };
-obj2.iconContainer = size;
-obj2.icon = { height: 48, width: 48 };
-obj2.content = { padding: 16, justifyContent: "center", alignItems: "center" };
-obj2.subtitle = { textAlign: "center", marginTop: 8, marginBottom: 40 };
-obj2.buttons = { marginTop: 40 };
-obj2.helpMessage = { marginTop: 16 };
-let closure_15 = createStyles.createStyles(obj2);
-size = fn(2);
-let result = size.fileFinishedImporting("modules/rtc/native/SecureFramesUserVerificationBottomSheet.tsx");
+let BottomSheet, userId;
 
-export default function SecureFramesUserVerificationBottomSheet(userId) {
+let c10;
+let c9;
+let closure_14;
+let hasOwnProperty;
+let map1;
+let metroRequire;
+let size;
+let unpackModuleId;
+let _slicedToArray = _slicedToArray_mod;
+({ ActivityIndicator: hasOwnProperty, View: metroRequire } = react_native);
+({ AnalyticsSecureFramesUserVerification: c9, SECURE_FRAMES_PUBLIC_KEY_VERSION: c10, USER_VERIFIED_TOAST_KEY: unpackModuleId } = SecureFramesConstants);
+const AnalyticsLocations = Constants.AnalyticsLocations;
+({ jsx: map1, jsxs: closure_14 } = Fragment);
+let obj = { iconContainer: size, icon: { height: 48, width: 48 }, content: { padding: 16, justifyContent: "center", alignItems: "center" }, subtitle: { textAlign: "center", marginTop: 8, marginBottom: 40 }, buttons: { marginTop: 40 }, helpMessage: { marginTop: 16 } };
+size = { height: 80, width: 80, borderRadius: 40, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, marginBottom: 16 };
+let closure_15 = createStyles.createStyles(obj);
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+  let connected;
+  let fingerprint;
+  let fingerprint2;
+  let fingerprintUserKey;
+  let guildId;
+  let loading;
+  let tmp5;
+  let tmp2 = fingerprintUserKey;
+  let obj = userId(fingerprintUserKey[11]);
+  const cResult = obj.c(76);
+  userId = userId.userId;
+  const channelId = userId.channelId;
+  ({ guildId, fingerprint } = userId);
+  closure_15();
+  if (cResult[0] !== userId) {
+    let obj2 = { userId };
+    cResult[0] = userId;
+    cResult[1] = obj2;
+    tmp5 = obj2;
+  } else {
+    tmp5 = cResult[1];
+  }
+  const tmpResult = userId(tmp2[12]);
+  const secureFramesPairwiseFingerprint = tmpResult.useSecureFramesPairwiseFingerprint(tmp5);
+  fingerprintUserKey = secureFramesPairwiseFingerprint.fingerprintUserKey;
+  ({ fingerprint: fingerprint2, loading } = secureFramesPairwiseFingerprint);
+  if (cResult[2] !== channelId) {
+    let obj3 = { channelId };
+    cResult[2] = channelId;
+    cResult[3] = obj3;
+  }
+  userId(tmp2[13]);
+  if (cResult[4] === channelId) {
+    if (cResult[5] === fingerprintUserKey) {
+      userId(tmp2[14]);
+      if (cResult[8] === fingerprintUserKey) {
+        let tmp13;
+        let tmp18;
+        let tmp17;
+        let tmp21;
+        let tmp23;
+        if (cResult[9] === userId) {
+          tmp13 = cResult[10];
+        }
+        const tmpResult11 = userId(tmp2[15]);
+        const isPersistentSecureFramesFingerprint = tmpResult11.useIsPersistentSecureFramesFingerprint(tmp13);
+        const isOtherUserKeyPersistent = isPersistentSecureFramesFingerprint.isOtherUserKeyPersistent;
+        const loading2 = isPersistentSecureFramesFingerprint.loading;
+        const _Symbol = Symbol;
+        if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+          const items = [RTCConnectionStore];
+          class H {
+            constructor() {
+              return connected.isConnected();
+            }
+          }
+          cResult[11] = items;
+          cResult[12] = H;
+          tmp18 = H;
+          tmp17 = items;
+        } else {
+          tmp17 = cResult[11];
+          tmp18 = cResult[12];
+        }
+        const _Symbol2 = Symbol;
+        const tmpResult12 = userId(tmp2[16]);
+        const stateFromStores = tmpResult12.useStateFromStores(tmp17, tmp18);
+        if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+          const items1 = [RTCConnectionStore];
+          class H {
+            constructor() {
+              return connected.isConnected();
+            }
+          }
+          cResult[13] = items1;
+          tmp21 = items1;
+        } else {
+          tmp21 = cResult[13];
+        }
+        if (cResult[14] !== userId) {
+          const fn = function w() {
+            return RTCConnectionStore.isUserConnected(userId);
+          };
+          cResult[14] = userId;
+          class H {
+            constructor() {
+              return connected.isConnected();
+            }
+          }
+          cResult[15] = fn;
+          tmp23 = fn;
+        } else {
+          tmp23 = cResult[15];
+        }
+        const tmpResult13 = userId(tmp2[16]);
+        const stateFromStores1 = tmpResult13.useStateFromStores(tmp21, tmp23);
+        if (cResult[16] !== userId) {
+          let obj4 = { userId };
+          class H {
+            constructor() {
+              return connected.isConnected();
+            }
+          }
+          cResult[17] = obj4;
+        }
+        userId(tmp2[17]);
+        if (null != channelId) {
+          let CURRENT_USER_DISCONNECTED;
+          let tmp37;
+          let tmp36;
+          let tmp39;
+          let tmp41;
+          if (stateFromStores) {
+            let OTHER_USER_DISCONNECTED;
+            if (stateFromStores1) {
+              let UNABLE_TO_VERIFY;
+              if (tmp9) {
+                let MATCH;
+                if (tmp12) {
+                  MATCH = constants.OTHER_USER_ALREADY_VERIFIED;
+                } else if (tmp27) {
+                  MATCH = constants.OTHER_USER_INCONSISTENT_KEYS;
+                } else if (fingerprint !== fingerprint2) {
+                  MATCH = constants.FINGERPRINT_MISMATCH;
+                } else {
+                  MATCH = constants.MATCH;
+                }
+                UNABLE_TO_VERIFY = MATCH;
+              } else {
+                UNABLE_TO_VERIFY = constants.UNABLE_TO_VERIFY;
+              }
+              OTHER_USER_DISCONNECTED = UNABLE_TO_VERIFY;
+            } else {
+              OTHER_USER_DISCONNECTED = constants.OTHER_USER_DISCONNECTED;
+            }
+            CURRENT_USER_DISCONNECTED = OTHER_USER_DISCONNECTED;
+          }
+          if (cResult[18] !== userId) {
+            const fn2 = function q() {
+              const obj = UserActionCreators;
+              const user = obj.getUser(userId);
+            };
+            const items2 = [userId];
+            class H {
+              constructor() {
+                return connected.isConnected();
+              }
+            }
+            cResult[18] = userId;
+            cResult[19] = fn2;
+            cResult[20] = items2;
+            tmp37 = items2;
+            tmp36 = fn2;
+          } else {
+            tmp36 = cResult[19];
+            tmp37 = cResult[20];
+          }
+          class H {
+            constructor() {
+              return connected.isConnected();
+            }
+          }
+          const effect = CURRENT_USER_DISCONNECTED.useEffect(tmp36, tmp37);
+          const _Symbol3 = Symbol;
+          if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
+            const items3 = [UserStore];
+            class H {
+              constructor() {
+                return connected.isConnected();
+              }
+            }
+            cResult[21] = items3;
+            tmp39 = items3;
+          } else {
+            tmp39 = cResult[21];
+          }
+          if (cResult[22] !== userId) {
+            class Q {
+              constructor() {
+                return UserStore.getUser(userId);
+              }
+            }
+            cResult[22] = userId;
+            class H {
+              constructor() {
+                return connected.isConnected();
+              }
+            }
+            cResult[23] = Q;
+            tmp41 = Q;
+          } else {
+            class Q {
+              constructor() {
+                return UserStore.getUser(userId);
+              }
+            }
+          }
+          const tmpResult15 = userId(tmp2[16]);
+          const stateFromStores2 = tmpResult15.useStateFromStores(tmp39, tmp41);
+          const obj11 = channelId(tmp2[19]);
+          const name = obj11.useName(guildId, channelId, stateFromStores2);
+          if (cResult[24] === name) {
+            class Q {
+              constructor() {
+                return UserStore.getUser(userId);
+              }
+            }
+            class H {
+              constructor() {
+                return connected.isConnected();
+              }
+            }
+            [r10163, r10164] = tmp48;
+            if (cResult[27] === channelId) {
+              class Q {
+                constructor() {
+                  return UserStore.getUser(userId);
+                }
+              }
+            }
+            function re() {
+              if (constants.OTHER_USER_ALREADY_VERIFIED !== CURRENT_USER_DISCONNECTED) {
+                if (constants.MATCH !== CURRENT_USER_DISCONNECTED) {
+                  const obj2 = { channelId, userId, reason: CURRENT_USER_DISCONNECTED, keyVersion };
+                  const obj = SecureFramesTracking;
+                  const result = obj.trackE2EEUserVerificationFailed(obj2);
+                }
+              }
+            }
+            const items4 = [channelId, CURRENT_USER_DISCONNECTED, userId];
+            cResult[27] = channelId;
+            cResult[28] = userId;
+            cResult[29] = CURRENT_USER_DISCONNECTED;
+            cResult[30] = re;
+            cResult[31] = items4;
+          }
+          const tmpResult16 = userId(tmp2[20]);
+          const userVerifyStateText = tmpResult16.getUserVerifyStateText(CURRENT_USER_DISCONNECTED, name);
+          cResult[24] = name;
+          cResult[25] = CURRENT_USER_DISCONNECTED;
+          cResult[26] = userVerifyStateText;
+        }
+        CURRENT_USER_DISCONNECTED = constants.CURRENT_USER_DISCONNECTED;
+      }
+      tmp14[0] = userId;
+      tmp14[1] = fingerprintUserKey;
+      cResult[8] = fingerprintUserKey;
+      cResult[9] = userId;
+      cResult[10] = tmp14;
+      tmp13 = tmp14;
+    }
+  }
+  const obj5 = { userId, channelId, userKey: fingerprintUserKey };
+  cResult[4] = channelId;
+  cResult[5] = fingerprintUserKey;
+  cResult[6] = userId;
+  cResult[7] = obj5;
+}) : ((userId) => {
+  let BottomSheetTitleHeader;
+  let closure_3;
+  let intl;
+  let intl2;
+  let items10;
+  let obj11;
+  let tmp17;
+  let tmp18;
+  const f100270 = () => {
+    const obj = SecureFramesUtils;
+    return obj.getUserVerifyStateText(memo, name);
+  };
   userId = userId.userId;
   const channelId = userId.channelId;
   const fingerprint = userId.fingerprint;
-  const tmp = closure_15();
+  const guildId = userId.guildId;
+  let tmp = closure_15();
   _slicedToArray = tmp;
-  const secureFramesPairwiseFingerprint = userId(fingerprint[10]).useSecureFramesPairwiseFingerprint({ userId });
+  let tmp2 = userId;
+  let obj = userId(fingerprint[12]);
+  const secureFramesPairwiseFingerprint = obj.useSecureFramesPairwiseFingerprint({ userId });
   const fingerprintUserKey = secureFramesPairwiseFingerprint.fingerprintUserKey;
   const fingerprint2 = secureFramesPairwiseFingerprint.fingerprint;
-  let obj = userId(fingerprint[10]);
-  const isSecureFramesUIEnabled = userId(fingerprint[11]).useIsSecureFramesUIEnabled({ channelId });
-  let obj2 = userId(fingerprint[11]);
-  const isUserSecureFramesVerified = userId(fingerprint[12]).useIsUserSecureFramesVerified({ userId, channelId, userKey: fingerprintUserKey });
-  let obj3 = userId(fingerprint[12]);
-  const isPersistentSecureFramesFingerprint = userId(fingerprint[13]).useIsPersistentSecureFramesFingerprint({ userId, userKey: fingerprintUserKey });
+  const loading = secureFramesPairwiseFingerprint.loading;
+  let obj2 = userId(fingerprint[13]);
+  const isSecureFramesUIEnabled = obj2.useIsSecureFramesUIEnabled({ channelId });
+  let obj3 = userId(fingerprint[14]);
+  const isUserSecureFramesVerified = obj3.useIsUserSecureFramesVerified({ userId, channelId, userKey: fingerprintUserKey });
+  let obj4 = userId(fingerprint[15]);
+  const isPersistentSecureFramesFingerprint = obj4.useIsPersistentSecureFramesFingerprint({ userId, userKey: fingerprintUserKey });
   const isOtherUserKeyPersistent = isPersistentSecureFramesFingerprint.isOtherUserKeyPersistent;
-  let loading = isPersistentSecureFramesFingerprint.loading;
-  let obj4 = userId(fingerprint[13]);
+  let loading2 = isPersistentSecureFramesFingerprint.loading;
   const items = [isUserSecureFramesVerified];
-  const stateFromStores = userId(fingerprint[14]).useStateFromStores(items, () => isUserSecureFramesVerified.isConnected());
-  let obj5 = userId(fingerprint[14]);
+  const obj5 = userId(fingerprint[16]);
+  const stateFromStores = obj5.useStateFromStores(items, () => isUserSecureFramesVerified.isConnected());
   const items1 = [isUserSecureFramesVerified];
-  const stateFromStores1 = userId(fingerprint[14]).useStateFromStores(items1, () => RTCConnectionStore.isUserConnected(userId));
-  const obj6 = userId(fingerprint[14]);
-  const isSecureFramesKeyInconsistent = userId(fingerprint[15]).useIsSecureFramesKeyInconsistent({ userId });
+  const obj6 = userId(fingerprint[16]);
+  const stateFromStores1 = obj6.useStateFromStores(items1, () => RTCConnectionStore.isUserConnected(userId));
+  const obj7 = userId(fingerprint[17]);
+  const isSecureFramesKeyInconsistent = obj7.useIsSecureFramesKeyInconsistent({ userId });
   const items2 = [fingerprint, channelId, fingerprint2, stateFromStores, isSecureFramesKeyInconsistent, stateFromStores1, isSecureFramesUIEnabled, isUserSecureFramesVerified];
   const memo = fingerprintUserKey.useMemo(() => {
     if (null != channelId) {
-      if (stateFromStores) {
-        if (!stateFromStores1) {
-          const OTHER_USER_DISCONNECTED = constants.OTHER_USER_DISCONNECTED;
-        }
-        if (!isSecureFramesUIEnabled) {
-          const UNABLE_TO_VERIFY = constants.UNABLE_TO_VERIFY;
-        }
-        if (isUserSecureFramesVerified) {
-          let MATCH = constants.OTHER_USER_ALREADY_VERIFIED;
-        } else if (isSecureFramesKeyInconsistent) {
-          MATCH = constants.OTHER_USER_INCONSISTENT_KEYS;
-        } else if (fingerprint !== fingerprint2) {
-          MATCH = constants.FINGERPRINT_MISMATCH;
+      let CURRENT_USER_DISCONNECTED;
+      const tmp = stateFromStores;
+      if (tmp) {
+        let OTHER_USER_DISCONNECTED;
+        const tmp2 = stateFromStores1;
+        if (tmp2) {
+          let UNABLE_TO_VERIFY;
+          const tmp4 = isSecureFramesUIEnabled;
+          if (tmp4) {
+            let MATCH;
+            const tmp6 = isUserSecureFramesVerified;
+            if (tmp6) {
+              MATCH = stateFromStores.OTHER_USER_ALREADY_VERIFIED;
+            } else {
+              const tmp7 = isSecureFramesKeyInconsistent;
+              if (tmp7) {
+                MATCH = stateFromStores.OTHER_USER_INCONSISTENT_KEYS;
+              } else if (fingerprint !== fingerprint2) {
+                MATCH = stateFromStores.FINGERPRINT_MISMATCH;
+              } else {
+                MATCH = stateFromStores.MATCH;
+              }
+            }
+            UNABLE_TO_VERIFY = MATCH;
+          } else {
+            UNABLE_TO_VERIFY = stateFromStores.UNABLE_TO_VERIFY;
+          }
+          OTHER_USER_DISCONNECTED = UNABLE_TO_VERIFY;
         } else {
-          MATCH = constants.MATCH;
+          OTHER_USER_DISCONNECTED = stateFromStores.OTHER_USER_DISCONNECTED;
         }
+        CURRENT_USER_DISCONNECTED = OTHER_USER_DISCONNECTED;
       }
+      return CURRENT_USER_DISCONNECTED;
     }
-    return constants.CURRENT_USER_DISCONNECTED;
+    CURRENT_USER_DISCONNECTED = stateFromStores.CURRENT_USER_DISCONNECTED;
   }, items2);
   const items3 = [userId];
   const effect = fingerprintUserKey.useEffect(() => {
-    const user = UserActionCreators.getUser(userId);
+    const obj = UserActionCreators;
+    const user = obj.getUser(userId);
   }, items3);
-  const obj7 = userId(fingerprint[15]);
   const items4 = [isOtherUserKeyPersistent];
-  const stateFromStores2 = userId(fingerprint[14]).useStateFromStores(items4, () => UserStore.getUser(userId));
-  const obj8 = userId(fingerprint[14]);
-  const tmp14 = channelId;
-  const name = channelId(fingerprint[17]).useName(userId.guildId, channelId, stateFromStores2);
+  const obj8 = userId(fingerprint[16]);
+  const stateFromStores2 = obj8.useStateFromStores(items4, () => UserStore.getUser(userId));
+  const obj9 = channelId(fingerprint[19]);
+  const name = obj9.useName(guildId, channelId, stateFromStores2);
   const items5 = [memo, name];
-  const obj9 = channelId(fingerprint[17]);
   const items6 = [channelId, memo, userId];
-  [tmp17, tmp18] = fingerprintUserKey.useMemo(() => SecureFramesUtils.getUserVerifyStateText(memo, name), items5);
+  [tmp17, tmp18] = _slicedToArray(fingerprintUserKey.useMemo(f100270, items5), 2);
+  const tmp16 = _slicedToArray(fingerprintUserKey.useMemo(f100270, items5), 2);
   const effect1 = fingerprintUserKey.useEffect(() => {
-    if (constants.OTHER_USER_ALREADY_VERIFIED !== memo) {
-      if (constants.MATCH !== tmp) {
-        const obj2 = { channelId, userId, reason: tmp, keyVersion };
-        const result = SecureFramesTracking.trackE2EEUserVerificationFailed(obj2);
+    if (stateFromStores.OTHER_USER_ALREADY_VERIFIED !== memo) {
+      if (stateFromStores.MATCH !== memo) {
+        const obj2 = { channelId, userId, reason: memo, keyVersion };
+        const obj = SecureFramesTracking;
+        const result = obj.trackE2EEUserVerificationFailed(obj2);
       }
     }
   }, items6);
   const items7 = [memo, tmp.icon];
   let memo1 = fingerprintUserKey.useMemo(() => {
-    if (constants.OTHER_USER_ALREADY_VERIFIED !== memo) {
-      if (constants.MATCH !== tmp) {
+    if (stateFromStores.OTHER_USER_ALREADY_VERIFIED !== memo) {
+      if (stateFromStores.MATCH !== tmp) {
         const obj = { style: closure_3.icon, color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
-        return map1(XLargeBoldIcon.XLargeBoldIcon, obj);
+        const XLargeBoldIcon = XLargeBoldIcon2.XLargeBoldIcon;
+        return map1(XLargeBoldIcon, obj);
       }
     }
-    return map1(CheckmarkLargeBoldIcon.CheckmarkLargeBoldIcon, { style: closure_3.icon, color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE });
+    const obj2 = { style: closure_3.icon, color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE };
+    const CheckmarkLargeBoldIcon = CheckmarkLargeBoldIcon2.CheckmarkLargeBoldIcon;
+    return map1(CheckmarkLargeBoldIcon, obj2);
   }, items7);
   const callback = fingerprintUserKey.useCallback(() => {
-    channelId(fingerprint[22]).hideActionSheet();
+    const obj = channelId(fingerprint[24]);
+    obj.hideActionSheet();
   }, []);
   const items8 = [channelId, fingerprintUserKey, isOtherUserKeyPersistent, name, userId];
   const callback1 = fingerprintUserKey.useCallback(() => {
-    let tmp2 = null != channelId;
-    if (tmp2) {
-      tmp2 = null != fingerprintUserKey;
-    }
+    let intl;
+    let obj4;
+    const tmp2 = null != channelId && null != fingerprintUserKey;
     if (tmp2) {
       const obj = SecureFramesUtils;
-      obj.addVerification(userId, fingerprintUserKey, isOtherUserKeyPersistent, tmp, AnalyticsLocations.DEEP_LINK);
-      ActionSheetActionCreatorsDefault.hideActionSheet();
-      const obj4 = { key, iconColor: "text-feedback-positive", IconComponent: CircleCheckIcon.CircleCheckIcon, content: null };
-      const intl = util.intl;
-      const obj5 = { username: name };
-      obj4.content = intl.formatToPlainString(util.t.Gwu134, obj5);
-      ToastActionCreatorsDefault.open(obj4);
+      obj.addVerification(userId, fingerprintUserKey, isOtherUserKeyPersistent, channelId, AnalyticsLocations.DEEP_LINK);
+      const obj2 = ActionSheetActionCreatorsDefault;
+      obj2.hideActionSheet();
+      const obj3 = { key: unpackModuleId, iconColor: "text-feedback-positive", IconComponent: CircleCheckIcon.CircleCheckIcon, content: intl.formatToPlainString(intl3.t.Gwu134, obj4) };
+      const open = ToastActionCreatorsDefault.open;
+      ToastActionCreatorsDefault;
+      intl = intl3.intl;
+      obj4 = { username: name };
+      open(obj3);
     }
   }, items8);
-  const obj10 = { startExpanded: true, header: null, children: null };
-  const tmp16 = _slicedToArray(fingerprintUserKey.useMemo(() => SecureFramesUtils.getUserVerifyStateText(memo, name), items5), 2);
-  obj10.header = name(userId(fingerprint[27]).BottomSheetTitleHeader, { title: null, leading: name(userId(fingerprint[28]).ActionSheetCloseButton, { onPress: callback }) });
+  const obj10 = { startExpanded: true, header: name(BottomSheetTitleHeader, obj11), children: null };
+  BottomSheet = userId(fingerprint[34]).BottomSheet;
+  obj11 = { title: null, leading: name(userId(fingerprint[29]).ActionSheetCloseButton, { onPress: callback }) };
+  BottomSheetTitleHeader = userId(fingerprint[28]).BottomSheetTitleHeader;
   const obj12 = { style: tmp.content, children: null };
   const obj13 = { style: tmp.iconContainer, children: null };
-  if (!loading) {
+  const tmp14 = channelId;
+  if (!loading2) {
     obj13.children = memo1;
-    const items9 = [tmp23(tmp25, obj13), , , , ];
+    const items9 = [name(isSecureFramesUIEnabled, obj13), , , , ];
     const obj14 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: tmp17 };
-    items9[1] = tmp23(tmp2(tmp3[29]).Text, obj14);
+    items9[1] = name(tmp2(fingerprint[30]).Text, obj14);
     const obj15 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: tmp18 };
-    items9[2] = tmp23(tmp2(tmp3[29]).Text, obj15);
+    items9[2] = name(tmp2(fingerprint[30]).Text, obj15);
     const obj16 = { style: tmp.helpMessage, userId, userKey: fingerprintUserKey };
-    items9[3] = tmp23(tmp14(tmp3[30]), obj16);
-    const obj17 = { spacing: 12, style: tmp.buttons, children: null };
-    const obj18 = { variant: "primary", onPress: callback1, text: null, disabled: null };
-    let intl = tmp2(tmp3[25]).intl;
-    obj18.text = intl.string(tmp2(tmp3[25]).t["0tvNAn"]);
-    if (!loading) {
-      loading = memo !== stateFromStores.MATCH;
+    items9[3] = name(tmp14(fingerprint[31]), obj16);
+    const obj17 = { spacing: 12, style: tmp.buttons, children: items10 };
+    const Stack = tmp2(tmp3[33]).Stack;
+    const obj18 = { variant: "primary", onPress: callback1, text: intl.string(tmp2(fingerprint[27]).t["0tvNAn"]), disabled: loading2 };
+    const Button = tmp2(tmp3[32]).Button;
+    intl = tmp2(tmp3[27]).intl;
+    if (!loading2) {
+      loading2 = memo !== stateFromStores.MATCH;
     }
-    obj18.disabled = loading;
-    const items10 = [tmp23(tmp2(tmp3[32]).Button, obj18), ];
-    const obj19 = { variant: "secondary", onPress: callback, text: null };
-    const intl2 = tmp2(tmp3[25]).intl;
-    obj19.text = intl2.string(tmp2(tmp3[25]).t["ETE/oC"]);
-    items10[1] = tmp23(tmp2(tmp3[32]).Button, obj19);
-    obj17.children = items10;
-    items9[4] = tmp24(tmp2(tmp3[31]).Stack, obj17);
+    items10 = [name(Button, obj18), ];
+    const obj19 = { variant: "secondary", onPress: callback, text: intl2.string(tmp2(fingerprint[27]).t["ETE/oC"]) };
+    const Button2 = tmp2(tmp3[32]).Button;
+    intl2 = tmp2(tmp3[27]).intl;
+    items10[1] = name(Button2, obj19);
+    items9[4] = closure_14(Stack, obj17);
     obj12.children = items9;
-    obj10.children = tmp24(tmp25, obj12);
-    return tmp23(userId(fingerprint[26]).BottomSheet, obj10);
+    obj10.children = closure_14(isSecureFramesUIEnabled, obj12);
+    return name(BottomSheet, obj10);
   }
   memo1 = tmp23(fingerprint2, {});
-};
+});
+size = size_mod;
+let result = size.fileFinishedImporting("modules/rtc/native/SecureFramesUserVerificationBottomSheet.tsx");
+
+export default tmp5;

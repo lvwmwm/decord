@@ -1,70 +1,74 @@
-// Module ID: 17513
-// Function ID: 17514
+// Module ID: 17602
+// Function ID: 17603
 // Name: StageChannelRequestToSpeakMessageManager
-// Dependencies: [502, 2044, 5065, 4498, 2098, 1372, 1074, 6725, 2052, 17514, 1090, 7064, 2]
+// Dependencies: [502, 2051, 5110, 4509, 2103, 1377, 1085, 6613, 2060, 17603, 1101, 6965, 2]
 
-// Module 17513 (StageChannelRequestToSpeakMessageManager)
-import MessageTypes from "MessageTypes" /* 1090 */;
+// Module 17602 (StageChannelRequestToSpeakMessageManager)
+import Constants from "Constants" /* 1085 */;
+import MessageTypes from "MessageTypes" /* 1101 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import MessageStore from "MessageStore" /* 5065 */;
-import PermissionStore from "PermissionStore" /* 4498 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
-import UserStore from "UserStore" /* 1372 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import MessageStore from "MessageStore" /* 5110 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import UserStore from "UserStore" /* 1377 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const MessageFlags = fn(1074).MessageFlags;
-class StageChannelRequestToSpeakMessageManager extends tmp2 {
+let can, messages, requestToSpeakTimestamp, user;
+
+const MessageFlags = Constants.MessageFlags;
+class StageChannelRequestToSpeakMessageManager extends AutomaticLifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     applyArgumentsResult.actions = { VOICE_STATE_UPDATES: applyArgumentsResult.handleVoiceStateUpdates };
     return applyArgumentsResult;
   }
-}
-StageChannelRequestToSpeakMessageManager.prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates(voiceStates) {
-  voiceStates = voiceStates.voiceStates;
-  const item = voiceStates.forEach((requestToSpeakTimestamp) => {
-    ({ channelId, userId } = requestToSpeakTimestamp);
-    requestToSpeakTimestamp = requestToSpeakTimestamp.requestToSpeakTimestamp;
-    if (voiceChannelId.getVoiceChannelId() === channelId) {
-      if (requestToSpeakTimestamp.suppress) {
-        if (null != channelId) {
-          if (userId !== id.getId()) {
-            if (closure_6.can(userId(2052).MODERATE_STAGE_CHANNEL_PERMISSIONS, channel.getChannel(channelId))) {
-              if (null != requestToSpeakTimestamp) {
-                user = user.getUser(userId);
-                if (null != user) {
-                  const result = tmp11(17514).sendStageRequestToSpeakEphemeralMessage(channelId, user, requestToSpeakTimestamp);
-                  const tmp11Result = tmp11(17514);
-                }
-              } else {
-                messages = messages.getMessages(channelId);
-                const findNewestResult = messages.findNewest((type) => {
-                  let hasFlagResult = type.type === MessageTypes.MessageTypes.STAGE_RAISE_HAND;
-                  if (hasFlagResult) {
-                    hasFlagResult = type.hasFlag(constants.EPHEMERAL);
+  handleVoiceStateUpdates(voiceStates) {
+    let channel;
+    let id;
+    let voiceChannelId;
+    voiceStates = voiceStates.voiceStates;
+    const item = voiceStates.forEach((requestToSpeakTimestamp) => {
+      let channelId;
+      let userId;
+      ({ channelId, userId } = requestToSpeakTimestamp);
+      requestToSpeakTimestamp = requestToSpeakTimestamp.requestToSpeakTimestamp;
+      const suppress = requestToSpeakTimestamp.suppress;
+      if (voiceChannelId.getVoiceChannelId() === channelId) {
+        if (suppress) {
+          if (null != channelId) {
+            if (userId !== id.getId()) {
+              can = can.can;
+              const tmp11 = userId;
+              if (can(userId(closure_2[8]).MODERATE_STAGE_CHANNEL_PERMISSIONS, channel.getChannel(channelId))) {
+                if (null != requestToSpeakTimestamp) {
+                  user = user.getUser(userId);
+                  if (null != user) {
+                    const tmp11Result = tmp11(closure_2[9]);
+                    const result = tmp11Result.sendStageRequestToSpeakEphemeralMessage(channelId, user, requestToSpeakTimestamp);
                   }
-                  if (hasFlagResult) {
-                    hasFlagResult = type.author.id === userId;
+                } else {
+                  messages = messages.getMessages(channelId);
+                  const findNewestResult = messages.findNewest((type) => {
+                    const hasFlagResult = type.type === MessageTypes.MessageTypes.STAGE_RAISE_HAND && type.hasFlag(constants.EPHEMERAL) && type.author.id === userId;
+                    return hasFlagResult;
+                  });
+                  if (null != findNewestResult) {
+                    const obj2 = closure_1(closure_2[11]);
+                    obj2.deleteMessage(channelId, findNewestResult.id, true);
                   }
-                  return hasFlagResult;
-                });
-                if (null != findNewestResult) {
-                  closure_1(7064).deleteMessage(channelId, findNewestResult.id, true);
-                  const obj2 = closure_1(7064);
                 }
               }
             }
-            tmp11 = userId;
           }
         }
       }
-    }
-  });
-};
+    });
+  }
+}
+const prototype = StageChannelRequestToSpeakMessageManager.prototype;
 const stageChannelRequestToSpeakMessageManager = new StageChannelRequestToSpeakMessageManager();
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/stage_channels/StageChannelRequestToSpeakMessageManager.tsx");
 
 export default stageChannelRequestToSpeakMessageManager;

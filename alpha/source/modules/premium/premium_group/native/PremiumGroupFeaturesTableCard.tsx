@@ -1,49 +1,231 @@
-// Module ID: 13229
-// Function ID: 13230
+// Module ID: 13288
+// Function ID: 13289
 // Name: PremiumGroupFeaturesTableCard
-// Dependencies: [17, 7040, 21, 4845, 576, 4841, 1115, 13230, 1177, 5477, 4712, 8875, 2]
-// Exports: default
+// Dependencies: [17, 6938, 21, 4890, 587, 558, 576, 1126, 4886, 13289, 4727, 8886, 5605, 1188, 2]
 
-// Module 13229 (PremiumGroupFeaturesTableCard)
-import _mod17 from "module_17" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
-import ColorUtils from "ColorUtils" /* 4712 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import ColorConstants from "ColorConstants" /* 7040 */;
-import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 13230 */;
-import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4845 */;
+// Module 13288 (PremiumGroupFeaturesTableCard)
+import react_native from "react-native" /* 17 */;
+import react from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import ColorUtils from "ColorUtils" /* 4727 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import LinearGradientDefault from "LinearGradient" /* 5605 */;
+import ColorConstants from "ColorConstants" /* 6938 */;
+import PremiumGroupWordmarkDefault from "PremiumGroupWordmark" /* 8886 */;
+import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 13289 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-class BetaPill {
-  constructor() {
-    tmp = closure_7();
-    obj = { style: tmp.betaPill, children: null };
-    obj1 = { variant: "text-xs/bold", style: tmp.betaText, children: null };
-    intl = closure_0(closure_2[6]).intl;
-    obj1.children = intl.string(closure_0(closure_2[6]).t.oW0eUd);
-    obj.children = jsx(closure_0(closure_2[5]).Text, obj1);
-    return jsx(View, obj);
-  }
-}
-const View = _mod17.View;
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+const View = react_native.View;
 const Gradients = ColorConstants.Gradients;
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-let obj = { premiumGroupCard: { padding: 16, borderRadius: nativeDefault.radii.sm - 2, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, display: "flex", alignItems: "flex-start" }, headerContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 4 }, betaPill: null, betaText: null, title: null, description: null };
-let obj2 = { padding: 16, borderRadius: nativeDefault.radii.sm - 2, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, display: "flex", alignItems: "flex-start" };
-obj.betaPill = { backgroundColor: nativeDefault.colors.WHITE, borderRadius: nativeDefault.radii.round, alignItems: "center", justifyContent: "center", paddingHorizontal: 8, paddingBottom: 2 };
-let obj3 = { backgroundColor: nativeDefault.colors.WHITE, borderRadius: nativeDefault.radii.round, alignItems: "center", justifyContent: "center", paddingHorizontal: 8, paddingBottom: 2 };
-obj.betaText = { color: nativeDefault.colors.BLACK, textAlign: "center", textTransform: "uppercase" };
-let obj4 = { color: nativeDefault.colors.BLACK, textAlign: "center", textTransform: "uppercase" };
-obj.title = { color: nativeDefault.colors.TEXT_DEFAULT, marginBottom: 16 };
-const obj5 = { color: nativeDefault.colors.TEXT_DEFAULT, marginBottom: 16 };
-obj.description = { color: nativeDefault.colors.TEXT_DEFAULT };
-const React5 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/premium/premium_group/native/PremiumGroupFeaturesTableCard.tsx");
-
-export default function PremiumGroupFeaturesTableCard(arg0) {
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { premiumGroupCard: obj2, headerContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 4 }, betaPill: obj3, betaText: obj4, title: obj5, description: obj6 };
+obj2 = { padding: 16, borderRadius: nativeDefault.radii.sm - 2, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, display: "flex", alignItems: "flex-start" };
+createStyles = createStyles.createStyles;
+obj3 = { backgroundColor: nativeDefault.colors.WHITE, borderRadius: nativeDefault.radii.round, alignItems: "center", justifyContent: "center", paddingHorizontal: 8, paddingBottom: 2 };
+obj4 = { color: nativeDefault.colors.BLACK, textAlign: "center", textTransform: "uppercase" };
+obj5 = { color: nativeDefault.colors.TEXT_DEFAULT, marginBottom: 16 };
+obj6 = { color: nativeDefault.colors.TEXT_DEFAULT };
+let closure_7 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let betaPill;
+  let betaText;
+  let first;
+  let tmp7;
+  const obj = react;
+  const cResult = obj.c(6);
+  const tmp4 = closure_7();
+  ({ betaPill, betaText } = tmp4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(intl2.t.oW0eUd);
+    cResult[0] = stringResult;
+    first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== tmp4.betaText) {
+    const obj2 = { variant: "text-xs/bold", style: betaText, children: first };
+    const tmp9 = hasOwnProperty(Text_Text.Text, obj2);
+    cResult[1] = tmp4.betaText;
+    cResult[2] = tmp9;
+    tmp7 = tmp9;
+  } else {
+    tmp7 = cResult[2];
+  }
+  if (cResult[3] === tmp4.betaPill) {
+    let tmp10;
+    if (cResult[4] === tmp7) {
+      tmp10 = cResult[5];
+    }
+    return tmp10;
+  }
+  const tmp11 = hasOwnProperty(View, { style: betaPill, children: tmp7 });
+  cResult[3] = tmp4.betaPill;
+  cResult[4] = tmp7;
+  cResult[5] = tmp11;
+  tmp10 = tmp11;
+}) : (() => {
+  let Text;
+  let intl;
+  let obj2;
+  const tmp = closure_7();
+  const obj = { style: tmp.betaPill, children: hasOwnProperty(Text, obj2) };
+  obj2 = { variant: "text-xs/bold", style: tmp.betaText, children: intl.string(intl2.t.oW0eUd) };
+  Text = Text_Text.Text;
+  intl = intl2.intl;
+  return hasOwnProperty(View, obj);
+});
+let closure_8 = tmp4;
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+  let bodyString;
+  let items2;
+  let items3;
+  let subheaderString;
+  let tmp10;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  const obj = react;
+  const cResult = obj.c(22);
+  style = style.style;
+  const premiumGroupRole = style.premiumGroupRole;
+  const tmp4 = closure_7();
+  const tmp6 = usePremiumGroupFeaturesTableCardTextDefault(premiumGroupRole, false);
+  if (null == tmp6) {
+    return null;
+  } else {
+    let tmp12;
+    let tmp11;
+    let tmp17;
+    ({ subheaderString, bodyString } = tmp6);
+    const _Symbol2 = Symbol;
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const point = { x: 0, y: 0 };
+      const point1 = { x: 1, y: 0 };
+      const items = [, , ];
+      const tmpResult = ColorUtils;
+      items[0] = tmpResult.hexWithOpacity("#8547C6", 0.15);
+      const tmpResult3 = ColorUtils;
+      items[1] = tmpResult3.hexWithOpacity("#B845C1", 0.15);
+      const tmpResult4 = ColorUtils;
+      items[2] = tmpResult4.hexWithOpacity("#AB5D8A", 0.15);
+      const items1 = [0, 0.4996, 0.9593];
+      cResult[0] = point;
+      cResult[1] = point1;
+      cResult[2] = items;
+      cResult[3] = items1;
+      tmp10 = items1;
+      tmp7 = point;
+      tmp8 = point1;
+      tmp9 = items;
+    } else {
+      [tmp7, tmp8, tmp9, tmp10] = cResult;
+    }
+    const _Symbol = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const tmp14 = hasOwnProperty(PremiumGroupWordmarkDefault, { width: 181, height: 16 });
+      const tmp16 = hasOwnProperty(closure_8, {});
+      cResult[4] = tmp14;
+      cResult[5] = tmp16;
+      tmp12 = tmp16;
+      tmp11 = tmp14;
+    } else {
+      tmp11 = cResult[4];
+      tmp12 = cResult[5];
+    }
+    if (cResult[6] !== tmp4.headerContainer) {
+      const obj2 = { style: tmp4.headerContainer, children: items2 };
+      items2 = [tmp11, tmp12];
+      const tmp20 = metroRequire(View, obj2);
+      cResult[6] = tmp4.headerContainer;
+      cResult[7] = tmp20;
+      tmp17 = tmp20;
+    } else {
+      tmp17 = cResult[7];
+    }
+    if (cResult[8] === tmp4.title) {
+      let tmp21;
+      if (cResult[9] === subheaderString) {
+        tmp21 = cResult[10];
+      }
+      if (cResult[11] === bodyString) {
+        let tmp24;
+        if (cResult[12] === tmp4.description) {
+          tmp24 = cResult[13];
+        }
+        if (cResult[14] === tmp4.premiumGroupCard) {
+          if (cResult[15] === tmp17) {
+            if (cResult[16] === tmp21) {
+              let tmp27;
+              if (cResult[17] === tmp24) {
+                tmp27 = cResult[18];
+              }
+              if (cResult[19] === style) {
+                let tmp30;
+                if (cResult[20] === tmp27) {
+                  tmp30 = cResult[21];
+                }
+                return tmp30;
+              }
+              const obj3 = { borderWidth: 2, direction: native.GradientBorder.Direction.HORIZONTAL, colors: Gradients.PREMIUM_TIER_2, borderRadius: nativeDefault.radii.sm, style, children: tmp27 };
+              const GradientBorder = tmp(1188).GradientBorder;
+              const tmp33 = hasOwnProperty(GradientBorder, obj3);
+              cResult[19] = style;
+              cResult[20] = tmp27;
+              cResult[21] = tmp33;
+              tmp30 = tmp33;
+            }
+          }
+        }
+        const obj4 = { start: tmp7, end: tmp8, colors: tmp9, locations: tmp10, style: tmp4.premiumGroupCard, children: items3 };
+        items3 = [tmp17, tmp21, tmp24];
+        const tmp29 = metroRequire(LinearGradientDefault, obj4);
+        cResult[14] = tmp4.premiumGroupCard;
+        cResult[15] = tmp17;
+        cResult[16] = tmp21;
+        cResult[17] = tmp24;
+        cResult[18] = tmp29;
+        tmp27 = tmp29;
+      }
+      const obj5 = { variant: "text-sm/normal", style: tmp4.description, children: bodyString };
+      const tmp26 = hasOwnProperty(Text_Text.Text, obj5);
+      cResult[11] = bodyString;
+      cResult[12] = tmp4.description;
+      cResult[13] = tmp26;
+      tmp24 = tmp26;
+    }
+    const obj6 = { variant: "text-sm/normal", style: tmp4.title, children: subheaderString };
+    const tmp23 = hasOwnProperty(Text_Text.Text, obj6);
+    cResult[8] = tmp4.title;
+    cResult[9] = subheaderString;
+    cResult[10] = tmp23;
+    tmp21 = tmp23;
+  }
+}) : ((arg0) => {
+  let bodyString;
+  let items;
+  let items1;
+  let items2;
+  let obj2;
+  let premiumGroupRole;
+  let style;
+  let subheaderString;
+  let tmp2Result;
   ({ style, premiumGroupRole } = arg0);
   const tmp = closure_7();
   const tmp4 = usePremiumGroupFeaturesTableCardTextDefault(premiumGroupRole, false);
@@ -51,26 +233,28 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
     return null;
   } else {
     ({ subheaderString, bodyString } = tmp4);
-    const obj = { borderWidth: 2, direction: native.GradientBorder.Direction.HORIZONTAL, colors: Gradients.PREMIUM_TIER_2, borderRadius: tmp2(576).radii.sm, style, children: null };
-    const obj2 = { start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, colors: null, locations: null, style: null, children: null };
-    const tmp2Result = tmp2(5477);
-    const items = [ColorUtils.hexWithOpacity("#8547C6", 0.15), , ];
-    items[1] = ColorUtils.hexWithOpacity("#B845C1", 0.15);
-    items[2] = ColorUtils.hexWithOpacity("#AB5D8A", 0.15);
-    obj2.colors = items;
-    obj2.locations = [0, 0.4996, 0.9593];
-    obj2.style = tmp.premiumGroupCard;
-    const obj6 = { style: tmp.headerContainer, children: null };
-    const items1 = [hasOwnProperty(tmp2(8875), { width: 181, height: 16 }), hasOwnProperty(BetaPill, {})];
-    obj6.children = items1;
-    const items2 = [timestampProducer(View, obj6), , ];
+    const obj = { borderWidth: 2, direction: native.GradientBorder.Direction.HORIZONTAL, colors: Gradients.PREMIUM_TIER_2, borderRadius: nativeDefault.radii.sm, style, children: metroRequire(tmp2Result, obj2) };
+    const GradientBorder = native.GradientBorder;
+    obj2 = { start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, colors: items, locations: [0, 0.4996, 0.9593], style: tmp.premiumGroupCard, children: items2 };
+    items = [, , ];
+    tmp2Result = LinearGradientDefault;
+    const obj3 = ColorUtils;
+    items[0] = obj3.hexWithOpacity("#8547C6", 0.15);
+    const obj4 = ColorUtils;
+    items[1] = obj4.hexWithOpacity("#B845C1", 0.15);
+    const obj5 = ColorUtils;
+    items[2] = obj5.hexWithOpacity("#AB5D8A", 0.15);
+    const obj6 = { style: tmp.headerContainer, children: items1 };
+    items1 = [hasOwnProperty(PremiumGroupWordmarkDefault, { width: 181, height: 16 }), hasOwnProperty(closure_8, {})];
+    items2 = [metroRequire(View, obj6), , ];
     const obj7 = { variant: "text-sm/normal", style: tmp.title, children: subheaderString };
     items2[1] = hasOwnProperty(Text_Text.Text, obj7);
     const obj8 = { variant: "text-sm/normal", style: tmp.description, children: bodyString };
     items2[2] = hasOwnProperty(Text_Text.Text, obj8);
-    obj2.children = items2;
-    obj.children = timestampProducer(tmp2Result, obj2);
-    return hasOwnProperty(native.GradientBorder, obj);
+    return hasOwnProperty(GradientBorder, obj);
   }
-};
-export { BetaPill };
+});
+const result = size.fileFinishedImporting("modules/premium/premium_group/native/PremiumGroupFeaturesTableCard.tsx");
+
+export default tmp5;
+export const BetaPill = tmp4;

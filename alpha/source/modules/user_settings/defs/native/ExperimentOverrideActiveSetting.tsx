@@ -1,45 +1,129 @@
-// Module ID: 15558
-// Function ID: 15559
+// Module ID: 15620
+// Function ID: 15621
 // Name: ExperimentOverrideActiveSetting
-// Dependencies: [4761, 1235, 21, 14348, 504, 15559, 14590, 11215, 15352, 2]
+// Dependencies: [4776, 1246, 21, 14402, 558, 576, 504, 15621, 14646, 11129, 15409, 2]
 
-// Module 15558 (ExperimentOverrideActiveSetting)
-import initialize from "initialize" /* 504 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14348 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14590 */;
-import DevToolsContent from "DevToolsContent" /* 15559 */;
-import ExperimentStore from "ExperimentStore" /* 4761 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
+// Module 15620 (ExperimentOverrideActiveSetting)
+import Fragment from "Fragment" /* 21 */;
+import get_initialized from "get initialized" /* 504 */;
+import react from "react" /* 576 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14402 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14646 */;
+import BeakerIcon from "BeakerIcon" /* 15409 */;
+import ExperimentStore from "ExperimentStore" /* 4776 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const SettingBuilders = fn(11215);
-const pressable = SettingBuilders.createPressable({
+let tmp;
+const DevToolsContent = tmp(15621);
+const jsx = Fragment.jsx;
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let allExperimentOverrideDescriptors;
+  let clientOverrides;
+  let tmp4;
+  let tmp5;
+  let tmp8;
+  let tmp9;
+  const obj = react;
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ExperimentStore];
+    const fn = function o() {
+      return Object.keys(allExperimentOverrideDescriptors.getAllExperimentOverrideDescriptors()).length;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [ApexExperimentStore];
+    const fn2 = function u() {
+      return Object.keys(clientOverrides.getClientOverrides()).length;
+    };
+    cResult[2] = items1;
+    cResult[3] = fn2;
+    tmp9 = fn2;
+    tmp8 = items1;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult2 = get_initialized;
+  return stateFromStores + tmpResult2.useStateFromStores(tmp8, tmp9);
+}) : (() => {
+  let allExperimentOverrideDescriptors;
+  let clientOverrides;
+  const items = [ExperimentStore];
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, () => Object.keys(allExperimentOverrideDescriptors.getAllExperimentOverrideDescriptors()).length);
+  const items1 = [ApexExperimentStore];
+  const obj2 = get_initialized;
+  return stateFromStores + obj2.useStateFromStores(items1, () => Object.keys(clientOverrides.getClientOverrides()).length);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  let tmp6;
+  const obj = react;
+  const cResult = obj.c(4);
+  const str = closure_5();
+  if (cResult[0] !== str) {
+    const str1 = str.toString();
+    cResult[0] = str;
+    cResult[1] = str1;
+    tmp4 = str1;
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (cResult[2] !== tmp4) {
+    const tmp8 = jsx(DevToolsContent.DevToolsContentSubLabel, { label: "Experiments overridden: ", value: tmp4 });
+    cResult[2] = tmp4;
+    cResult[3] = tmp8;
+    tmp6 = tmp8;
+  } else {
+    tmp6 = cResult[3];
+  }
+  return tmp6;
+}) : (() => {
+  const str = closure_5();
+  const DevToolsContentSubLabel = DevToolsContent.DevToolsContentSubLabel;
+  return <DevToolsContentSubLabel label="Experiments overridden: " value={str.toString()} />;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const obj = useIsStaffOrDeveloperSettingPredicate;
+  const staffOrDeveloperSettingPredicate = obj.useStaffOrDeveloperSettingPredicate();
+  const tmp2 = closure_5() > 0 && staffOrDeveloperSettingPredicate;
+  return tmp2;
+}) : (() => {
+  const obj = useIsStaffOrDeveloperSettingPredicate;
+  const staffOrDeveloperSettingPredicate = obj.useStaffOrDeveloperSettingPredicate();
+  const tmp2 = closure_5() > 0 && staffOrDeveloperSettingPredicate;
+  return tmp2;
+});
+let obj = {
   useTitle() {
     return "Experiments Overrides Active";
   },
   parent: null,
-  IconComponent: fn(15352).BeakerIcon,
-  useDescription: function useExperimentOverrideActiveDescription() {
-    const items = [ExperimentStore];
-    const stateFromStores = initialize.useStateFromStores(items, () => Object.keys(allExperimentOverrideDescriptors.getAllExperimentOverrideDescriptors()).length);
-    const items1 = [ApexExperimentStore];
-    const str = stateFromStores + initialize.useStateFromStores(items1, () => Object.keys(clientOverrides.getClientOverrides()).length);
-    return jsx(DevToolsContent.DevToolsContentSubLabel, { label: "Experiments overridden: ", value: stateFromStores + initialize.useStateFromStores(items1, () => Object.keys(clientOverrides.getClientOverrides()).length).toString() });
-  },
-  usePredicate: function useHasExperimentOverrideActive() {
-    const staffOrDeveloperSettingPredicate = useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate();
-    const items = [ExperimentStore];
-    const stateFromStores = initialize.useStateFromStores(items, () => Object.keys(allExperimentOverrideDescriptors.getAllExperimentOverrideDescriptors()).length);
-    const items1 = [ApexExperimentStore];
-    return stateFromStores + initialize.useStateFromStores(items1, () => Object.keys(clientOverrides.getClientOverrides()).length) > 0 && staffOrDeveloperSettingPredicate;
-  },
+  IconComponent: BeakerIcon.BeakerIcon,
+  useDescription: tmp2,
+  usePredicate: tmp3,
   onPress: function handleExperimentOverrideActivePress() {
-    DevToolsNavigator.navigateToDevTools({ screenKey: "experiments" });
+    const obj = DevToolsNavigator;
+    obj.navigateToDevTools({ screenKey: "experiments" });
   },
   withArrow: true
-});
-const size = fn(2);
+};
+const pressable = SettingBuilders.createPressable(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/ExperimentOverrideActiveSetting.tsx");
 
 export default pressable;

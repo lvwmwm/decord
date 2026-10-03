@@ -1,33 +1,23 @@
 // Module ID: 1567
 // Function ID: 1568
-// Dependencies: [19, 1515]
-// Exports: useOnRouteFocus
+// Dependencies: [19, 1520, 1568]
+// Exports: useScheduleUpdate
 
 // Module 1567
-import NavigationBuilderContext from "NavigationBuilderContext" /* 1515 */;
-import noop from "module_19" /* 19 */;
+import react2 from "react" /* 1520 */;
+import react3 from "react" /* 1568 */;
+import react from "react" /* 19 */;
 
-require = arg1;
 
-export const useOnRouteFocus = function useOnRouteFocus(router) {
-  router = router.router;
-  const getState = router.getState;
-  const key = router.key;
-  const setState = router.setState;
-  const onRouteFocus = noop.useContext(NavigationBuilderContext.NavigationBuilderContext).onRouteFocus;
-  const items = [getState, onRouteFocus, router, setState, key];
-  return noop.useCallback((arg0) => {
-    const tmp = getState();
-    const stateForRouteFocus = router.getStateForRouteFocus(tmp, arg0);
-    if (stateForRouteFocus !== tmp) {
-      setState(stateForRouteFocus);
-    }
-    let tmp6 = undefined !== onRouteFocus;
-    if (tmp6) {
-      tmp6 = undefined !== key;
-    }
-    if (tmp6) {
-      onRouteFocus(key);
-    }
-  }, items);
+export const useScheduleUpdate = function useScheduleUpdate(arg0) {
+  let closure_129_1;
+  let flushUpdates;
+  let closure_0 = arg0;
+  const context = react.useContext(react2.NavigationBuilderContext);
+  ({ scheduleUpdate: closure_129_1, flushUpdates } = context);
+  const insertionEffect = react.useInsertionEffect(() => {
+    closure_1_1(closure_0);
+  });
+  const obj = react3;
+  const clientLayoutEffect = obj.useClientLayoutEffect(flushUpdates);
 };

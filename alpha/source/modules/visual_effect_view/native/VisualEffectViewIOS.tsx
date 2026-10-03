@@ -1,19 +1,19 @@
-// Module ID: 5455
-// Function ID: 5456
+// Module ID: 5775
+// Function ID: 5776
 // Name: VisualEffectViewIOS
-// Dependencies: [4821, 5456, 5457, 2]
+// Dependencies: [4866, 5776, 5777, 2]
 
-// Module 5455 (VisualEffectViewIOS)
-import VisualEffectViewNativeComponentDefault from "VisualEffectViewNativeComponent" /* 5457 */;
-import DeviceUtils from "DeviceUtils" /* 4821 */;
-import requireNativeComponentOrDefault from "requireNativeComponentOrDefault" /* 5456 */;
+// Module 5775 (VisualEffectViewIOS)
+import VisualEffectViewNativeComponentDefault from "VisualEffectViewNativeComponent" /* 5777 */;
+import DeviceUtils from "DeviceUtils" /* 4866 */;
+import requireNativeComponentOrDefault from "requireNativeComponentOrDefault" /* 5776 */;
 import size from "module_2" /* 2 */;
 
-const obj = { componentName: "DCDVisualEffectView", componentFoundInstance: null };
-obj.componentFoundInstance = VisualEffectViewNativeComponentDefault;
+const obj = { componentName: "DCDVisualEffectView", componentFoundInstance: VisualEffectViewNativeComponentDefault };
 const tmp2 = DeviceUtils.getSystemVersionMajor() >= 13;
+const importDefaultResultResult = requireNativeComponentOrDefault(obj);
 const result = size.fileFinishedImporting("modules/visual_effect_view/native/VisualEffectViewIOS.tsx");
 
-export default requireNativeComponentOrDefault(obj);
+export default importDefaultResultResult;
 export const BLUR_EFFECT_NAMES = ["UIBlurEffectStyleLight", "UIBlurEffectStyleExtraLight", "UIBlurEffectStyleDark", "UIBlurEffectStyleSystemUltraThinMaterialLight", "UIBlurEffectStyleSystemUltraThinMaterialDark", "UIBlurEffectStyleSystemThinMaterialLight", "UIBlurEffectStyleSystemThinMaterialDark", "UIBlurEffectStyleSystemMaterialLight", "UIBlurEffectStyleSystemMaterialDark", "UIBlurEffectStyleSystemThickMaterialLight", "UIBlurEffectStyleSystemThickMaterialDark", "UIBlurEffectStyleSystemChromeMaterialLight", "UIBlurEffectStyleSystemChromeMaterialDark"];
 export const MODERN_IOS_BLURS_EFFECTS_AVAILABLE = tmp2;

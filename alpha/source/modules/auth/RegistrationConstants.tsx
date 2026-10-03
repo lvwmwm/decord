@@ -1,11 +1,11 @@
-// Module ID: 15787
-// Function ID: 15788
+// Module ID: 15864
+// Function ID: 15865
 // Name: RegistrationConstants
-// Dependencies: [1094, 2]
+// Dependencies: [1105, 2]
 // Exports: authStateToRegisterTransitionStep
 
-// Module 15787 (RegistrationConstants)
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
+// Module 15864 (RegistrationConstants)
+import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import size from "module_2" /* 2 */;
 
 const RegisterTransitionSteps = { ACCOUNT_IDENTITY: "Account Identity", ACCOUNT_DISPLAY_NAME: "Account Display Name", ACCOUNT_INFORMATION: "Account Information", AGE_GATE: "Age Gate", AGE_GATE_UNDERAGE: "Age Gate Underage", PHONE_VERIFICATION: "Phone Verification", REGISTER: "Register", CAPTCHA: "Captcha" };
@@ -17,13 +17,13 @@ export { RegisterTransitionSteps };
 export const authStateToRegisterTransitionStep = function authStateToRegisterTransitionStep(arg0) {
   if (ConstantsIOS.AuthStates.REGISTER_IDENTITY === arg0) {
     return obj.ACCOUNT_IDENTITY;
-  } else if (tmp(1094).AuthStates.REGISTER_DISPLAY_NAME === arg0) {
+  } else if (ConstantsIOS.AuthStates.REGISTER_DISPLAY_NAME === arg0) {
     return obj.ACCOUNT_DISPLAY_NAME;
-  } else if (tmp(1094).AuthStates.REGISTER_ACCOUNT_INFORMATION === arg0) {
+  } else if (ConstantsIOS.AuthStates.REGISTER_ACCOUNT_INFORMATION === arg0) {
     return obj.ACCOUNT_INFORMATION;
-  } else if (tmp(1094).AuthStates.AGE_GATE === arg0) {
+  } else if (ConstantsIOS.AuthStates.AGE_GATE === arg0) {
     return obj.AGE_GATE;
-  } else if (tmp(1094).AuthStates.VERIFY_PHONE === arg0) {
+  } else if (ConstantsIOS.AuthStates.VERIFY_PHONE === arg0) {
     return obj.PHONE_VERIFICATION;
   }
 };

@@ -1,16 +1,16 @@
-// Module ID: 10402
-// Function ID: 10403
+// Module ID: 10476
+// Function ID: 10477
 // Name: GiftingBadgeDesktopExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1440, 2]
 
-// Module 10402 (GiftingBadgeDesktopExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 10476 (GiftingBadgeDesktopExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-06-gifting-badge-desktop", kind: "user", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+const obj = { name: "2026-06-gifting-badge-desktop", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/premium/gifting/experiments/GiftingBadgeDesktopExperiment.tsx");
 

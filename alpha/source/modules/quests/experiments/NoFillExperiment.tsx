@@ -1,16 +1,16 @@
-// Module ID: 14959
-// Function ID: 14960
+// Module ID: 15016
+// Function ID: 15017
 // Name: NoFillExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1440, 2]
 
-// Module 14959 (NoFillExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 15016 (NoFillExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-08-no-fill-logging", kind: "user", defaultConfig: { enableNoFill: false }, variations: null };
-const obj2 = { 1: null, 2: { enableNoFill: false } };
+let obj2;
+const obj = { name: "2026-08-no-fill-logging", kind: "user", defaultConfig: { enableNoFill: false }, variations: obj2 };
+obj2 = { 1: null, 2: { enableNoFill: false } };
 obj2[2] = { enableNoFill: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/quests/experiments/NoFillExperiment.tsx");
 

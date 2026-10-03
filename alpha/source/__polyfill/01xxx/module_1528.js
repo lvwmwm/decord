@@ -1,27 +1,52 @@
 // Module ID: 1528
 // Function ID: 1529
-// Dependencies: [19, 1516, 1529]
-// Exports: useNavigation
+// Dependencies: [19, 1529, 1537, 1538]
+// Exports: createNavigatorFactory
 
 // Module 1528
-import NavigationContainerRefContext from "NavigationContainerRefContext" /* 1516 */;
-import NavigationContext from "NavigationContext" /* 1529 */;
-import noop from "module_19" /* 19 */;
+import react from "react" /* 19 */;
 
-require = arg1;
 
-export const useNavigation = function useNavigation() {
-  const context = noop.useContext(NavigationContainerRefContext.NavigationContainerRefContext);
-  let context1 = noop.useContext(NavigationContext.NavigationContext);
-  if (undefined === context1) {
-    if (undefined === context) {
-      const _Error = Error;
-      const error = new Error("Couldn't find a navigation object. Is your component inside NavigationContainer?");
-      throw error;
+export const createNavigatorFactory = function createNavigatorFactory(NativeStackNavigator) {
+  let Navigator = NativeStackNavigator;
+  let str = NativeStackNavigator.displayName;
+  if (str == null) {
+    str = NativeStackNavigator.name;
+  }
+  if (str == null) {
+    str = "Navigator";
+  }
+  return function createNavigator(config) {
+    Navigator = config;
+    if (null != config) {
+      const obj2 = { Navigator, Screen: Navigator(str[2]).Screen, Group: Navigator(str[3]).Group, config };
+      const createComponentForStaticNavigation = Navigator(str[1]).createComponentForStaticNavigation;
+      Navigator(str[1]);
+      Navigator = createComponentForStaticNavigation(obj2, Navigator);
+      return {
+        config,
+        with: (IMAGE_ONLY_ANSWERS) => {
+            config = IMAGE_ONLY_ANSWERS;
+            class WithComponent {
+              constructor() {
+                return <IMAGE_ONLY_ANSWERS Navigator={Navigator} />;
+              }
+            }
+            WithComponent.displayName = "" + Navigator + "With";
+            return {
+              config,
+              getComponent() {
+                return WithComponent;
+              }
+            };
+          },
+        getComponent() {
+            return Navigator;
+          }
+      };
+    } else {
+      const obj = { Navigator, Screen: Navigator(str[2]).Screen, Group: Navigator(str[3]).Group };
+      return obj;
     }
-  }
-  if (context1 == null) {
-    context1 = context;
-  }
-  return context1;
+  };
 };

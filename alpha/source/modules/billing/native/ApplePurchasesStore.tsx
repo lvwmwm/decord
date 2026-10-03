@@ -1,37 +1,35 @@
-// Module ID: 13131
-// Function ID: 13132
+// Module ID: 13190
+// Function ID: 13191
 // Name: ApplePurchasesStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 584, 2]
 
-// Module 13131 (ApplePurchasesStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 13190 (ApplePurchasesStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import size from "module_2" /* 2 */;
 
-let c0 = null;
+const React = null;
 let c1 = false;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class ApplePurchasesStore extends Store {
+  hasOwnership(prop) {
+    let closure_0 = prop;
+    const someResult = null == prop || null == _null || _null.some((originalTransactionIdentifierIOS) => {
+      const StringResult = String(originalTransactionIdentifierIOS.originalTransactionIdentifierIOS);
+      return StringResult === String(closure_0);
+    });
+    return someResult;
+  }
+  getPurchases() {
+    return c0;
+  }
+  isFetching() {
+    return c1;
+  }
 }
 const prototype = ApplePurchasesStore.prototype;
-prototype["hasOwnership"] = function hasOwnership(prop) {
-  closure_0 = prop;
-  let someResult = null == prop;
-  if (!someResult) {
-    someResult = null == _null;
-  }
-  if (!someResult) {
-    someResult = _null.some((originalTransactionIdentifierIOS) => String(originalTransactionIdentifierIOS.originalTransactionIdentifierIOS) === String(closure_0));
-  }
-  return someResult;
-};
-prototype["getPurchases"] = function getPurchases() {
-  return c0;
-};
-prototype["isFetching"] = function isFetching() {
-  return c1;
-};
 ApplePurchasesStore.displayName = "ApplePurchasesStore";
-const applePurchasesStore = new ApplePurchasesStore(DispatcherDefault, {
+const obj = {
   APPLE_PURCHASES_FETCH_START: function handleFetchStart() {
     c1 = true;
   },
@@ -43,11 +41,11 @@ const applePurchasesStore = new ApplePurchasesStore(DispatcherDefault, {
     c1 = false;
   },
   LOGOUT: function handleLogout() {
-    c0 = null;
+    let c0 = null;
     c1 = false;
   }
-});
-const size = fn(2);
+};
+const applePurchasesStore = new ApplePurchasesStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/billing/native/ApplePurchasesStore.tsx");
 
 export default applePurchasesStore;

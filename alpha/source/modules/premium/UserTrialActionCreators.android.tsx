@@ -1,35 +1,43 @@
-// Module ID: 13095
-// Function ID: 13096
+// Module ID: 13154
+// Function ID: 13155
 // Name: UserTrialActionCreators
-// Dependencies: [5, 7062, 1074, 1271, 573, 2]
+// Dependencies: [5, 6963, 1085, 1282, 584, 2]
 
-// Module 13095 (UserTrialActionCreators)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7062 */;
+// Module 13154 (UserTrialActionCreators)
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 6963 */;
+import Constants from "Constants" /* 1085 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const Constants = fn(1074);
+let c4, c5;
+
+let hasOwnProperty;
+let metroRequire;
 ({ Endpoints: hasOwnProperty, PaymentGateways: metroRequire } = Constants);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/premium/UserTrialActionCreators.android.tsx");
-
-export default {
+let obj = {
   acknowledgeUserTrialOffer(userTrialOffer) {
     return (async (arg0, value) => {
+      let closure_0;
+      let closure_1;
+      let obj4;
+      let obj5;
+      let status;
       if (c5 === 2) {
         c5 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp6 === 3) {
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
+        let c3;
         try {
+          let body;
           c5 = 2;
           if (0 === c4) {
             if (arg0 === 1) {
@@ -40,57 +48,62 @@ export default {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              userTrialOffer = tmp7;
-              let body;
+              userTrialOffer = tmp4;
+              body = undefined;
               if (!userTrialOffer.hasAcknowledged) {
                 c3 = 1;
-                const HTTP = userTrialOffer(tmp26[3]).HTTP;
-                const request = { url: c5.USER_TRIAL_OFFER_ACKNOWLEDGED(tmp38.id), body: null, rejectWithError: null };
-                const obj4 = { payment_gateway: constants.GOOGLE };
-                request.body = obj4;
-                request.rejectWithError = userTrialOffer(tmp26[3]).rejectWithMigratedError();
+                const HTTP = userTrialOffer(status[3]).HTTP;
+                const request = { url: c5.USER_TRIAL_OFFER_ACKNOWLEDGED(tmp35.id), body: obj4, rejectWithError: obj5.rejectWithMigratedError() };
+                const post = HTTP.post;
+                obj4 = { payment_gateway: constants.GOOGLE };
+                obj5 = userTrialOffer(status[3]);
                 c4 = 2;
                 c5 = 1;
-                const obj5 = { value: HTTP.post(request), done: false };
-                return obj5;
+                const obj6 = { value: post(request), done: false };
+                return obj6;
               }
             }
-          } else {
-            if (1 === tmp7) {
-              c3 = 0;
-              if (404 === tmp26.status) {
-                tmp3(tmp26[4]).dispatch({ type: "BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS", userTrialOffer: null });
-                const obj10 = tmp3(tmp26[4]);
-              }
-            } else if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 !== 2) {
-              body = value.body;
-              let fromServer = null;
-              if (null != body) {
-                fromServer = c4.createFromServer(body);
-              }
-              const obj7 = { type: "BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS", userTrialOffer: fromServer };
-              tmp3(tmp26[4]).dispatch(obj7);
-              c3 = 0;
-              const obj = tmp3(tmp26[4]);
+          } else if (1 === c4) {
+            c3 = 0;
+            if (404 === status.status) {
+              const obj9 = tmp(status[4]);
+              obj9.dispatch({ type: "BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS", userTrialOffer: null });
             }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
             c3 = 0;
             c5 = 3;
-            const obj8 = { value, done: true };
-            return obj8;
+            const obj7 = { value, done: true };
+            return obj7;
+          } else {
+            body = value.body;
+            let fromServer = null;
+            const dispatch = tmp(status[4]).dispatch;
+            const tmp9 = tmp(status[4]);
+            if (null != body) {
+              fromServer = c4.createFromServer(body);
+            }
+            const obj = { type: "BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS", userTrialOffer: fromServer };
+            dispatch(obj);
+            c3 = 0;
           }
           c5 = 3;
-        } catch (tmp26) {
-          if (tmp4 === c3) {
-            c5 = tmp2;
-            throw tmp26;
+          return { value: "IconComponent", done: "IconComponent" };
+        } catch (tmp24) {
+          status = tmp24;
+          if (0 === c3) {
+            c5 = 3;
+            throw tmp24;
           } else {
-            c4 = tmp;
+            c4 = 1;
           }
         }
       }
     })();
   }
 };
+const result = size.fileFinishedImporting("modules/premium/UserTrialActionCreators.android.tsx");
+
+export default obj;

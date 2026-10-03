@@ -1,156 +1,141 @@
-// Module ID: 7755
-// Function ID: 7756
+// Module ID: 7799
+// Function ID: 7800
 // Name: InteractionUtils
-// Dependencies: [5, 502, 7556, 1074, 11, 7357, 7756, 1979, 1271, 7064, 7757, 573, 5074, 2, 5071]
+// Dependencies: [5, 502, 7600, 1085, 11, 7261, 7800, 1985, 1282, 6965, 7801, 584, 5120, 2, 5117]
 // Exports: canRetryInteractionData, executeMessageComponentInteraction, getInteractionInitialResponseDeadlineTimestamp, getInteractionStatusViewState, getInteractionTimeoutTimestamp
 
-// Module 7755 (InteractionUtils)
+// Module 7799 (InteractionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Server from "Server" /* 1979 */;
-import InteractionActionCreators from "InteractionActionCreators" /* 7756 */;
-import SkemaUtils from "SkemaUtils" /* 7757 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Server from "Server" /* 1985 */;
+import interactionCallbackErrorReason from "interactionCallbackErrorReason" /* 5117 */;
+import InteractionActionCreators from "InteractionActionCreators" /* 7800 */;
+import _slicedToArray from "_slicedToArray" /* 7801 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import InteractionStore from "InteractionStore" /* 7556 */;
+import InteractionStore from "InteractionStore" /* 7600 */;
+import Constants from "Constants" /* 1085 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_10 = async function _executeMessageComponentInteraction(arg0, value) {
-  if (c5 === 2) {
-    c5 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp6 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj3 = { value, done: true };
-      return obj3;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c5 = 2;
-      if (0 === c4) {
+let componentId;
+
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj = function _executeMessageComponentInteraction() {
+  obj = _asyncToGenerator(async (component_type) => {
+    let channel_id;
+    let closure_1;
+    let guild_id;
+    let message_flags;
+    let c4 = 0;
+    let c5 = 0;
+    let c3 = 0;
+    const iter = (async (arg0, value) => {
+      let application_id;
+      let c0;
+      let c1;
+      let c2;
+      let c4;
+      let c6;
+      let c7;
+      let c8;
+      let custom_id;
+      let obj11;
+      let obj13;
+      let obj6;
+      let obj9;
+      if (1 === tmp4) {
         if (arg0 === 1) {
-          c5 = 3;
+          application_id = 3;
           throw value;
         } else if (arg0 === 2) {
-          c5 = 3;
-          const obj4 = { value, done: true };
-          return obj4;
+          application_id = 3;
+          return { value, done: true };
         } else {
-          closure_2 = tmp3;
-          closure_1 = tmp7;
-          closure_129_0 = undefined;
-          closure_129_1 = undefined;
-          closure_129_2 = undefined;
-          closure_129_3 = undefined;
-          closure_129_4 = undefined;
-          closure_129_5 = undefined;
-          closure_129_6 = undefined;
-          closure_129_7 = undefined;
-          closure_129_8 = undefined;
-          ({ componentType: closure_129_0, messageId: closure_129_1, messageFlags: closure_129_2, customId: closure_129_3, componentId: closure_129_4, applicationId: closure_129_5, channelId: closure_129_6, guildId: closure_129_7, localState: closure_129_8 } = closure_0);
-          closure_129_9 = undefined;
-          closure_129_10 = undefined;
-          c4 = 1;
-          c5 = 1;
-          return { value: "flex", done: null };
+          const _Date = Date;
+          const obj16 = closure_130_1(closure_130_2[4]);
+          nonce = obj16.fromTimestamp(Date.now());
+          if (closure_130_5.canQueueInteraction(message_id, nonce)) {
+            custom_id = 1;
+            componentId = 3;
+            application_id = 1;
+            const obj7 = { value: obj9.unarchiveThreadIfNecessary(channel_id), done: false };
+            obj9 = closure_130_1(closure_130_2[5]);
+            return obj7;
+          }
         }
-      } else {
-        if (1 === tmp7) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
-          } else {
-            const _Date = Date;
-            closure_129_9 = closure_130_1(closure_130_2[4]).fromTimestamp(Date.now());
-            if (closure_130_5.canQueueInteraction(closure_129_1, closure_129_9)) {
-              c3 = 1;
-              c4 = 3;
-              c5 = 1;
-              const obj7 = { value: closure_130_1(closure_130_2[5]).unarchiveThreadIfNecessary(closure_129_6), done: false };
-              return obj7;
-            }
-            const obj17 = closure_130_1(closure_130_2[4]);
-          }
-        } else if (2 === tmp7) {
-          c3 = 0;
-          c5 = 3;
-          return { value: "HermesInternal", done: null };
-        } else if (3 === tmp7) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 0;
-            c5 = 3;
-            const obj8 = { value, done: true };
-            return obj8;
-          } else {
-            c3 = 0;
-            const obj10 = { messageId: closure_129_1, data: null, onFailure: null };
-            const obj11 = { interactionType: closure_130_0(closure_130_2[7]).InteractionTypes.MESSAGE_COMPONENT, applicationId: closure_129_5, customId: closure_129_3, componentId: closure_129_4 };
-            obj10.data = obj11;
-            obj10.onFailure = function onFailure(code, arg1) {
-              let tmp2 = null == arg1;
-              if (tmp2) {
-                tmp2 = null != code;
-              }
-              if (tmp2) {
-                closure_1(dependencyMap[9]).sendClydeError(closure_1_6, code);
-                const obj = closure_1(dependencyMap[9]);
-              }
-            };
-            closure_130_0(closure_130_2[6]).addQueued(closure_129_9, obj10);
-            if (null != closure_129_8) {
-              const obj2 = closure_130_0(closure_130_2[6]);
-              const result = obj2.queueInteractionComponentState(closure_129_1, closure_129_9, closure_129_8, closure_129_4);
-            }
-            const obj12 = { type: closure_130_0(closure_130_2[7]).InteractionTypes.MESSAGE_COMPONENT, nonce: closure_129_9, guild_id: closure_129_7, channel_id: closure_129_6, message_flags: closure_129_2, message_id: closure_129_1, application_id: closure_129_5, session_id: closure_130_4.getSessionId(), data: null };
-            const obj13 = { component_type: closure_129_0, custom_id: closure_129_3 };
-            const merged = Object.assign(closure_130_11(closure_129_8));
-            obj12.data = obj13;
-            closure_129_10 = obj12;
-            const HTTP = closure_130_0(closure_130_2[8]).HTTP;
-            const request = { url: closure_130_6.INTERACTIONS, body: closure_129_10, timeout: 3000, rejectWithError: null };
-            const obj14 = closure_130_0(closure_130_2[6]);
-            request.rejectWithError = closure_130_0(closure_130_2[8]).rejectWithMigratedError();
-            c4 = 4;
-            c5 = 1;
-            const obj15 = {
-              value: HTTP.post(request, (arg0) => {
-                          closure_2_12(closure_1_9, arg0, closure_1_5, closure_1_6, closure_1_7);
-                        }),
-              done: false
-            };
-            return obj15;
-          }
-        } else if (arg0 === 1) {
-          c5 = 3;
+      } else if (2 === tmp4) {
+        custom_id = 0;
+        application_id = 3;
+        return { value: "IconComponent", done: "IconComponent" };
+      } else if (3 === tmp4) {
+        if (arg0 === 1) {
+          application_id = 3;
           throw value;
         } else if (arg0 === 2) {
-          c5 = 3;
-          let obj = { value, done: true };
-          return obj;
+          custom_id = 0;
+          application_id = 3;
+          return { value, done: true };
+        } else {
+          custom_id = 0;
+          const obj10 = {
+            messageId: message_id,
+            data: obj11,
+            onFailure(code, arg1) {
+                  let tmp2 = null == arg1;
+                  const tmp = channel_id;
+                  if (tmp2) {
+                    tmp2 = null != code;
+                  }
+                  if (tmp2) {
+                    obj = closure_1(message_flags[9]);
+                    obj.sendClydeError(tmp, code);
+                  }
+                }
+          };
+          obj11 = { interactionType: closure_130_0(closure_130_2[7]).InteractionTypes.MESSAGE_COMPONENT, applicationId: application_id, customId: custom_id, componentId };
+          const addQueued = closure_130_0(closure_130_2[6]).addQueued;
+          closure_130_0(closure_130_2[6]);
+          addQueued(nonce, obj10);
+          if (null != c8) {
+            const obj2 = closure_130_0(closure_130_2[6]);
+            const result = obj2.queueInteractionComponentState(message_id, nonce, c8, componentId);
+          }
+          const obj12 = { type: closure_130_0(closure_130_2[7]).InteractionTypes.MESSAGE_COMPONENT, nonce, guild_id, channel_id, message_flags, message_id, application_id, session_id: closure_130_4.getSessionId(), data: obj13 };
+          obj13 = { component_type, custom_id };
+          const merged = Object.assign(closure_130_11(c8));
+          const HTTP = closure_130_0(closure_130_2[8]).HTTP;
+          const request = { url: closure_130_6.INTERACTIONS, body: obj12, timeout: 3000, rejectWithError: obj6.rejectWithMigratedError() };
+          const post = HTTP.post;
+          componentId = 4;
+          application_id = 1;
+          obj6 = closure_130_0(closure_130_2[8]);
+          const obj14 = {
+            value: post(request, (arg0) => {
+                  closure_2_12(nonce, arg0, closure_1_5, channel_id, guild_id);
+                }),
+            done: false
+          };
+          return obj14;
         }
-        c5 = 3;
-        return { value: "HermesInternal", done: null };
+      } else if (arg0 === 1) {
+        application_id = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        application_id = 3;
+        obj = { value, done: true };
+        return obj;
       }
-    } catch (tmp46) {
-      if (tmp4 === c3) {
-        c5 = tmp2;
-        throw tmp46;
-      } else {
-        c4 = tmp;
-      }
-    }
-  }
+      await "IconComponent";
+      ({ componentType: c0, messageId: c1, messageFlags: c2, customId: c3, componentId: c4, applicationId: c5, channelId: c6, guildId: c7, localState: c8 } = closure_0);
+      return "Reflect";
+    })();
+    iter.next();
+    return iter;
+  });
+  return obj(...arguments);
 };
 function mapMessageComponentLocalStateForAPI(type) {
   if (null == type) {
@@ -158,24 +143,24 @@ function mapMessageComponentLocalStateForAPI(type) {
   } else {
     type = type.type;
     if (Server.ComponentType.TEXT_INPUT !== type) {
-      if (tmp(1979).ComponentType.FILE_UPLOAD !== type) {
-        if (tmp(1979).ComponentType.RADIO_GROUP !== type) {
-          if (tmp(1979).ComponentType.CHECKBOX_GROUP !== type) {
-            if (tmp(1979).ComponentType.CHECKBOX !== type) {
-              if (tmp(1979).ComponentType.STRING_SELECT === type) {
+      if (Server.ComponentType.FILE_UPLOAD !== type) {
+        if (Server.ComponentType.RADIO_GROUP !== type) {
+          if (Server.ComponentType.CHECKBOX_GROUP !== type) {
+            if (Server.ComponentType.CHECKBOX !== type) {
+              if (Server.ComponentType.STRING_SELECT === type) {
                 return type;
               } else {
-                if (tmp(1979).ComponentType.USER_SELECT !== type) {
-                  if (tmp(1979).ComponentType.ROLE_SELECT !== type) {
-                    if (tmp(1979).ComponentType.MENTIONABLE_SELECT !== type) {
-                      if (tmp(1979).ComponentType.CHANNEL_SELECT !== type) {
+                if (Server.ComponentType.USER_SELECT !== type) {
+                  if (Server.ComponentType.ROLE_SELECT !== type) {
+                    if (Server.ComponentType.MENTIONABLE_SELECT !== type) {
+                      if (Server.ComponentType.CHANNEL_SELECT !== type) {
                         return null;
                       }
                     }
                   }
                 }
                 const selectedOptions = type.selectedOptions;
-                const obj = { type: type.type, values: selectedOptions.map((value) => value.value) };
+                obj = { type: type.type, values: selectedOptions.map((value) => value.value) };
                 return obj;
               }
             }
@@ -187,78 +172,87 @@ function mapMessageComponentLocalStateForAPI(type) {
   }
 }
 function handleInteractionResponse(nonce, ok, applicationId, channelId, guildId) {
+  let tmp22;
   if (!ok.ok) {
     if (ok.hasErr) {
-      InteractionActionCreators.setFailed(nonce);
+      const obj6 = InteractionActionCreators;
+      obj6.setFailed(nonce);
     } else {
       if (ok.status >= 400) {
         if (ok.status < 500) {
           if (ok.body) {
-            let tmp9 = guildId;
-            if (ok.body.code === constants.INVALID_FORM_BODY) {
+            let tmp10 = guildId;
+            const tmp11 = metroImportDefault;
+            if (ok.body.code === metroImportDefault.INVALID_FORM_BODY) {
               if (ok.body.errors) {
-                const firstSkemaError = SkemaUtils.getFirstSkemaError(ok.body.errors);
-                let tmp28 = null == firstSkemaError;
-                if (!tmp28) {
-                  let tmp29 = "INTERACTION_APPLICATION_COMMAND_INVALID_VERSION" !== firstSkemaError.code;
-                  if (tmp29) {
-                    tmp29 = "INTERACTION_APPLICATION_COMMAND_INVALID" !== firstSkemaError.code;
-                  }
-                  tmp28 = tmp29;
+                const obj4 = _slicedToArray;
+                const firstSkemaError = obj4.getFirstSkemaError(ok.body.errors);
+                let tmp30 = null == firstSkemaError;
+                if (!tmp30) {
+                  tmp30 = "INTERACTION_APPLICATION_COMMAND_INVALID_VERSION" !== firstSkemaError.code && "INTERACTION_APPLICATION_COMMAND_INVALID" !== firstSkemaError.code;
+                  const tmp31 = "INTERACTION_APPLICATION_COMMAND_INVALID_VERSION" !== firstSkemaError.code && "INTERACTION_APPLICATION_COMMAND_INVALID" !== firstSkemaError.code;
                 }
-                if (!tmp28) {
-                  const obj4 = { type: "APPLICATION_COMMAND_EXECUTE_BAD_VERSION", applicationId, channelId, guildId: null };
-                  if (tmp9 == null) {
-                    tmp9 = null;
+                if (!tmp30) {
+                  const obj2 = { type: "APPLICATION_COMMAND_EXECUTE_BAD_VERSION", applicationId, channelId, guildId: tmp10 };
+                  const dispatch2 = DispatcherDefault.dispatch;
+                  DispatcherDefault;
+                  if (tmp10 == null) {
+                    tmp10 = null;
                   }
-                  obj4.guildId = tmp9;
-                  DispatcherDefault.dispatch(obj4);
+                  dispatch2(obj2);
                 }
                 let message;
+                const setFailed2 = tmp26(7800).setFailed;
+                InteractionActionCreators;
                 if (firstSkemaError != null) {
                   message = firstSkemaError.message;
                 }
-                InteractionActionCreators.setFailed(nonce, undefined, message);
+                setFailed2(nonce, undefined, message);
               }
             }
-            if (ok.body.code === constants.UNKNOWN_INTEGRATION) {
-              const obj8 = { type: "APPLICATION_COMMAND_EXECUTE_BAD_VERSION", applicationId, channelId, guildId: null };
-              let tmp20 = tmp9;
-              if (tmp9 == null) {
-                tmp20 = null;
+            if (ok.body.code === tmp11.UNKNOWN_INTEGRATION) {
+              const obj5 = { type: "APPLICATION_COMMAND_EXECUTE_BAD_VERSION", applicationId, channelId, guildId: tmp22 };
+              tmp22 = tmp10;
+              const dispatch = DispatcherDefault.dispatch;
+              DispatcherDefault;
+              if (tmp10 == null) {
+                tmp22 = null;
               }
-              obj8.guildId = tmp20;
-              DispatcherDefault.dispatch(obj8);
-              InteractionActionCreators.setFailed(nonce, undefined, ok.body.message);
+              dispatch(obj5);
+              const obj3 = InteractionActionCreators;
+              obj3.setFailed(nonce, undefined, ok.body.message);
             } else {
-              const obj2 = InteractionActionCreators;
-              obj2.setFailed(nonce, ok.body.code, ok.body.message, ok.status);
+              obj = InteractionActionCreators;
+              obj.setFailed(nonce, ok.body.code, ok.body.message, ok.status);
             }
-            return tmp16;
+            return tmp17;
           }
         }
       }
       const body = ok.body;
       let code;
+      const setFailed = InteractionActionCreators.setFailed;
+      InteractionActionCreators;
       if (body != null) {
         code = body.code;
       }
-      InteractionActionCreators.setFailed(nonce, code);
+      setFailed(nonce, code);
     }
   }
 }
-const Constants = fn(1074);
-({ Endpoints: metroRequire, AbortCodes: closure_7, MessageStates: closure_8, MessageFlags: closure_9 } = Constants);
-const InteractionStatusViewState = { SENDING: 0, [0]: "SENDING", CREATED: 1, [1]: "CREATED", FAILED: 2, [2]: "FAILED", TIMED_OUT: 3, [3]: "TIMED_OUT", EPHEMERAL_SUCCESS: 4, [4]: "EPHEMERAL_SUCCESS" };
-const size = fn(2);
+({ Endpoints: metroRequire, AbortCodes: metroImportDefault, MessageStates: metroImportAll, MessageFlags: c9 } = Constants);
+obj = { SENDING: 0, [0]: "SENDING", CREATED: 1, [1]: "CREATED", FAILED: 2, [2]: "FAILED", TIMED_OUT: 3, [3]: "TIMED_OUT", EPHEMERAL_SUCCESS: 4, [4]: "EPHEMERAL_SUCCESS" };
 let result = size.fileFinishedImporting("modules/interactions/InteractionUtils.tsx");
+const interactionCallbackErrorReason_export = interactionCallbackErrorReason.interactionCallbackErrorReason;
 
 export const getInteractionTimeoutTimestamp = function getInteractionTimeoutTimestamp(arg0) {
   if (null != arg0) {
     if ("" !== arg0) {
+      let sum;
       const _Number = Number;
       if (!Number.isNaN(arg0)) {
-        let sum = SnowflakeUtilsDefault.extractTimestamp(arg0) + 900000;
+        obj = SnowflakeUtilsDefault;
+        sum = obj.extractTimestamp(arg0) + 900000;
       }
       return sum;
     }
@@ -268,9 +262,11 @@ export const getInteractionTimeoutTimestamp = function getInteractionTimeoutTime
 export const getInteractionInitialResponseDeadlineTimestamp = function getInteractionInitialResponseDeadlineTimestamp(arg0) {
   if (null != arg0) {
     if ("" !== arg0) {
+      let sum;
       const _Number = Number;
       if (!Number.isNaN(arg0)) {
-        let sum = SnowflakeUtilsDefault.extractTimestamp(arg0) + 3000;
+        obj = SnowflakeUtilsDefault;
+        sum = obj.extractTimestamp(arg0) + 3000;
       }
       return sum;
     }
@@ -278,84 +274,81 @@ export const getInteractionInitialResponseDeadlineTimestamp = function getIntera
   sum = Date.now();
 };
 export const executeMessageComponentInteraction = function executeMessageComponentInteraction() {
-  const self = this;
-  const apply = closure_10.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
 export { handleInteractionResponse };
-export { InteractionStatusViewState };
+export const InteractionStatusViewState = obj;
 export const getInteractionStatusViewState = function getInteractionStatusViewState(state, state2) {
+  let SENDING;
   if (state2 != null) {
     state = state2.state;
   }
-  if (state.state !== constants2.SENT) {
-    if (state.state !== tmp.SEND_FAILED) {
-      let interactionType;
-      if (state2 != null) {
-        interactionType = state2.data.interactionType;
-      }
-      const tmp21 = interactionType === Server.InteractionTypes.APPLICATION_COMMAND;
-      const isCommandTypeResult = state.isCommandType();
-      if (!tmp21) {
-        if (isCommandTypeResult) {
-          if (state.state === tmp.SENDING) {
-            return SENDING;
-          }
-        }
-        if (!tmp21) {
-          if (null != state.interaction) {
-            SENDING = obj.TIMED_OUT;
-          }
-          if (isCommandTypeResult) {
-            if (state.state === tmp.SEND_FAILED) {
-              SENDING = obj.FAILED;
-            }
-          }
-          if (null != state.interaction) {
-            if (state.hasFlag(tmp23.EPHEMERAL)) {
-              SENDING = obj.EPHEMERAL_SUCCESS;
-            }
-          }
-        }
-        SENDING = obj.CREATED;
-      }
-      SENDING = obj.SENDING;
-    } else {
-      const id2 = state.id;
-      if (null != id2) {
-        if ("" !== id2) {
-          const _Number2 = Number;
-          if (!Number.isNaN(id2)) {
-            let sum = SnowflakeUtilsDefault.extractTimestamp(id2) + 3000;
-          }
-          const _Date4 = Date;
-          sum < Date.now();
-        }
-      }
-      const _Date3 = Date;
-      sum = Date.now();
-    }
-  } else {
+  let tmp2 = state.state === metroImportAll.SENT;
+  if (tmp2) {
     const id = state.id;
     if (null != id) {
       if ("" !== id) {
+        let sum;
         const _Number = Number;
         if (!Number.isNaN(id)) {
           obj = SnowflakeUtilsDefault;
-          let sum1 = obj.extractTimestamp(id) + 900000;
+          sum = obj.extractTimestamp(id) + 900000;
         }
         const _Date2 = Date;
-        sum1 < Date.now();
+        tmp2 = sum < Date.now();
       }
     }
     const _Date = Date;
+    sum = Date.now();
+  }
+  let tmp9 = state.state === tmp.SEND_FAILED;
+  if (tmp9) {
+    const id2 = state.id;
+    if (null != id2) {
+      if ("" !== id2) {
+        let sum1;
+        const _Number2 = Number;
+        if (!Number.isNaN(id2)) {
+          const obj2 = SnowflakeUtilsDefault;
+          sum1 = obj2.extractTimestamp(id2) + 3000;
+        }
+        const _Date4 = Date;
+        tmp9 = sum1 < Date.now();
+      }
+    }
+    const _Date3 = Date;
     sum1 = Date.now();
   }
+  let interactionType;
+  if (state2 != null) {
+    interactionType = state2.data.interactionType;
+  }
+  const tmp19 = interactionType === Server.InteractionTypes.APPLICATION_COMMAND;
+  const isCommandTypeResult = state.isCommandType();
+  if (!tmp19) {
+    if (isCommandTypeResult) {
+      if (state.state === metroImportAll.SENDING) {
+        return SENDING;
+      }
+    }
+    if (!tmp19) {
+      if (null != state.interaction) {
+        SENDING = obj.TIMED_OUT;
+      }
+      if (isCommandTypeResult) {
+        if (state.state === metroImportAll.SEND_FAILED) {
+          SENDING = obj.FAILED;
+        }
+      }
+      if (null != state.interaction) {
+        if (state.hasFlag(constants3.EPHEMERAL)) {
+          SENDING = obj.EPHEMERAL_SUCCESS;
+        }
+      }
+    }
+    SENDING = obj.CREATED;
+  }
+  SENDING = obj.SENDING;
 };
 export const canRetryInteractionData = function canRetryInteractionData(interactionData) {
   const options = interactionData.options;
@@ -384,7 +377,7 @@ export const canRetryInteractionData = function canRetryInteractionData(interact
           } else {
             tmp4 = options1;
             items = options1;
-            if (options1[0].type !== tmp7(1979).ApplicationCommandOptionType.SUB_COMMAND) {
+            if (options1[0].type !== tmp7(1985).ApplicationCommandOptionType.SUB_COMMAND) {
               break;
             }
           }
@@ -408,4 +401,4 @@ export const canRetryInteractionData = function canRetryInteractionData(interact
   }
   return true;
 };
-export const interactionCallbackErrorReason = fn(5071).interactionCallbackErrorReason;
+export { interactionCallbackErrorReason_export as interactionCallbackErrorReason };

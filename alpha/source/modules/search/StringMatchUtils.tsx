@@ -1,10 +1,10 @@
-// Module ID: 14471
-// Function ID: 14472
+// Module ID: 14506
+// Function ID: 14507
 // Name: StringMatchUtils
 // Dependencies: [2]
 // Exports: calculateJaroWinklerSimilarity
 
-// Module 14471 (StringMatchUtils)
+// Module 14506 (StringMatchUtils)
 import size from "module_2" /* 2 */;
 
 function calculateJaroWinklerDistance(formatted, item) {
@@ -149,8 +149,9 @@ export const calculateJaroWinklerSimilarity = function calculateJaroWinklerSimil
   }
   const caseSensitive = obj.caseSensitive;
   if (undefined !== caseSensitive) {
+    let tmp2;
     if (caseSensitive) {
-      let tmp2 = calculateJaroWinklerDistance(toLocaleLowerCaseResult, item);
+      tmp2 = calculateJaroWinklerDistance(toLocaleLowerCaseResult, item);
     }
     return tmp2;
   }

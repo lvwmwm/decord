@@ -1,84 +1,254 @@
-// Module ID: 14906
-// Function ID: 14907
+// Module ID: 14963
+// Function ID: 14964
 // Name: QuestOrbMultiplierPerkPill
-// Dependencies: [19, 17, 1074, 21, 4845, 576, 4776, 4567, 4560, 4712, 10886, 10902, 1115, 8309, 4841, 5621, 14907, 5477, 2]
-// Exports: QuestOrbMultiplierPerkPill
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 4791, 4587, 4580, 4727, 10911, 10008, 14964, 1126, 8313, 4886, 5605, 5909, 2]
 
-// Module 14906 (QuestOrbMultiplierPerkPill)
-import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4560 */;
-import themes from "themes" /* 4567 */;
-import ColorUtils from "ColorUtils" /* 4712 */;
-import useTheme from "useTheme" /* 4776 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 10886 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 10902 */;
-import openQuestOrbMultiplierPerkInfoActionSheetDefault from "openQuestOrbMultiplierPerkInfoActionSheet" /* 14907 */;
-import noop from "module_19" /* 19 */;
+// Module 14963 (QuestOrbMultiplierPerkPill)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import useToken from "useToken" /* 4580 */;
+import themes from "themes" /* 4587 */;
+import ColorUtils from "ColorUtils" /* 4727 */;
+import useTheme from "useTheme" /* 4791 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 10008 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 10911 */;
+import openQuestOrbMultiplierPerkInfoActionSheetDefault from "openQuestOrbMultiplierPerkInfoActionSheet" /* 14964 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let dependencyMap, onPress, tmp2, tmp3, tmp4, tmp5;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: closure_4, StyleSheet } = get_ActivityIndicator);
-const ThemeTypes = fn(1074).ThemeTypes;
-const jsxProd = fn(21);
-({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
+let StyleSheet;
+let closure_4;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+({ View: closure_4, StyleSheet } = react_native);
+const ThemeTypes = Constants.ThemeTypes;
+({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
 const start = { x: 0, y: 0 };
 const end = { x: 1, y: 0 };
-const createStyles = fn(4845);
-let obj2 = { fullGradientContainer: { borderRadius: nativeDefault.radii.round, overflow: "hidden", minHeight: 19, backgroundColor: "transparent" }, fullGradient: null, fullGradientContent: null };
-let obj4 = {};
+let createStyles = createStyles_mod;
+let obj = { fullGradientContainer: obj2, fullGradient: obj3, fullGradientContent: obj4 };
+obj2 = { borderRadius: nativeDefault.radii.round, overflow: "hidden", minHeight: 19, backgroundColor: "transparent" };
+createStyles = createStyles.createStyles;
+obj3 = { borderRadius: nativeDefault.radii.round };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj4.borderRadius = nativeDefault.radii.round;
-obj2.fullGradient = obj4;
-let obj3 = { borderRadius: nativeDefault.radii.round, overflow: "hidden", minHeight: 19, backgroundColor: "transparent" };
-obj2.fullGradientContent = { flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_8, gap: 4, minHeight: 19 };
-let closure_11 = createStyles.createStyles(obj2);
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/quests/native/QuestOrbMultiplierPerkPill.tsx");
-
-export const QuestOrbMultiplierPerkPill = function QuestOrbMultiplierPerkPill(questId) {
+obj4 = { flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_8, gap: 4, minHeight: 19 };
+let closure_11 = createStyles(obj);
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+  let questOrbRewardMultiplier;
+  let tmp11;
+  let tmp13;
+  const tmp = onPress;
+  const obj = onPress(questOrbRewardMultiplier[7]);
+  const cResult = obj.c(43);
+  onPress = onPress.onPress;
+  const orbMultiplierEligibility = onPress.orbMultiplierEligibility;
+  const questId = onPress.questId;
+  closure_11();
+  const obj2 = onPress(questOrbRewardMultiplier[8]);
+  const theme = obj2.useTheme();
+  const obj3 = onPress(questOrbRewardMultiplier[9]);
+  const isThemeDarkResult = obj3.isThemeDark(theme);
+  const obj4 = onPress(questOrbRewardMultiplier[10]);
+  const token = obj4.useToken(orbMultiplierEligibility(questOrbRewardMultiplier[5]).colors.EXPRESSIVE_GRADIENT_PINK_START, ThemeTypes.DARK);
+  const obj5 = onPress(questOrbRewardMultiplier[10]);
+  const token1 = obj5.useToken(orbMultiplierEligibility(questOrbRewardMultiplier[5]).colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_DIAMOND_END, ThemeTypes.DARK);
+  const obj6 = onPress(questOrbRewardMultiplier[10]);
+  const token2 = obj6.useToken(orbMultiplierEligibility(questOrbRewardMultiplier[5]).colors.BACKGROUND_BASE_LOWEST, ThemeTypes.DARK);
+  const tmp7 = orbMultiplierEligibility;
+  if (cResult[0] !== token) {
+    const tmpResult = tmp(questOrbRewardMultiplier[11]);
+    const hexOpacityToRgbaResult = tmpResult.hexOpacityToRgba(token, 1);
+    cResult[0] = token;
+    cResult[1] = hexOpacityToRgbaResult;
+    tmp11 = hexOpacityToRgbaResult;
+  } else {
+    tmp11 = cResult[1];
+  }
+  if (cResult[2] !== token1) {
+    const tmpResult5 = tmp(questOrbRewardMultiplier[11]);
+    const hexOpacityToRgbaResult1 = tmpResult5.hexOpacityToRgba(token1, 0.5);
+    cResult[2] = token1;
+    cResult[3] = hexOpacityToRgbaResult1;
+    tmp13 = hexOpacityToRgbaResult1;
+  } else {
+    tmp13 = cResult[3];
+  }
+  if (cResult[4] === tmp11) {
+    let tmp18;
+    const tmpResult6 = tmp(questOrbRewardMultiplier[10]);
+    const token3 = tmpResult6.useToken(tmp7(tmp2[5]).colors.BACKGROUND_BRAND);
+    const tmpResult7 = tmp(questOrbRewardMultiplier[12]);
+    questOrbRewardMultiplier = tmpResult7.useQuestOrbRewardMultiplier(questId);
+    if (cResult[7] !== orbMultiplierEligibility) {
+      const tmpResult8 = tmp(questOrbRewardMultiplier[13]);
+      const result = tmpResult8.shouldReceiveQuestOrbMultiplier(orbMultiplierEligibility);
+      cResult[7] = orbMultiplierEligibility;
+      cResult[8] = result;
+      tmp18 = result;
+    } else {
+      tmp18 = cResult[8];
+    }
+    const tmp20 = orbMultiplierEligibility === tmp(questOrbRewardMultiplier[13]).QuestOrbMultiplierEligibilityType.XBOX_GAME_PASS;
+    if (null == questOrbRewardMultiplier) {
+      return null;
+    } else {
+      if (cResult[9] === questOrbRewardMultiplier) {
+        if (cResult[10] === onPress) {
+          let formatToPlainStringResult;
+          class C {
+            constructor() {
+              if (null != closure_2) {
+                tmp2 = closure_1;
+                tmp3 = closure_2;
+                tmp4 = orbMultiplierEligibility;
+                tmp5 = closure_1(closure_2[14])(tmp, orbMultiplierEligibility);
+                if (onPress != null) {
+                  tmp6 = onPress();
+                }
+              }
+              return;
+            }
+          }
+          const intl = tmp(tmp2[15]).intl;
+          const formatToPlainString = intl.formatToPlainString;
+          const t = tmp(tmp2[15]).t;
+          if (tmp18) {
+            const obj7 = { bonusOrbMultiplier: null };
+            class C {
+              constructor() {
+                if (null != closure_2) {
+                  tmp2 = closure_1;
+                  tmp3 = closure_2;
+                  tmp4 = orbMultiplierEligibility;
+                  tmp5 = closure_1(closure_2[14])(tmp, orbMultiplierEligibility);
+                  if (onPress != null) {
+                    tmp6 = onPress();
+                  }
+                }
+                return;
+              }
+            }
+            formatToPlainStringResult = formatToPlainString(t.l2UfLG, obj7);
+          } else {
+            const obj8 = { bonusOrbMultiplier: null };
+            class C {
+              constructor() {
+                if (null != closure_2) {
+                  tmp2 = closure_1;
+                  tmp3 = closure_2;
+                  tmp4 = orbMultiplierEligibility;
+                  tmp5 = closure_1(closure_2[14])(tmp, orbMultiplierEligibility);
+                  if (onPress != null) {
+                    tmp6 = onPress();
+                  }
+                }
+                return;
+              }
+            }
+            formatToPlainStringResult = formatToPlainString(t["G+mKoo"], obj8);
+          }
+          cResult[13] = questOrbRewardMultiplier;
+          cResult[14] = tmp18;
+          cResult[15] = formatToPlainStringResult;
+        }
+      }
+      class C {
+        constructor() {
+          if (null != closure_2) {
+            tmp2 = closure_1;
+            tmp3 = closure_2;
+            tmp4 = orbMultiplierEligibility;
+            tmp5 = closure_1(closure_2[14])(tmp, orbMultiplierEligibility);
+            if (onPress != null) {
+              tmp6 = onPress();
+            }
+          }
+          return;
+        }
+      }
+      cResult[9] = questOrbRewardMultiplier;
+      cResult[10] = onPress;
+      cResult[11] = orbMultiplierEligibility;
+      cResult[12] = C;
+    }
+  }
+  const items = [tmp11, tmp13];
+  cResult[4] = tmp11;
+  cResult[5] = tmp13;
+  cResult[6] = items;
+}) : ((questId) => {
+  let c2;
+  let items2;
+  let items3;
+  let items4;
+  let obj16;
+  let orbMultiplierEligibility;
   ({ onPress: require, orbMultiplierEligibility } = questId);
   let questOrbRewardMultiplier;
-  const tmp = closure_11();
-  const theme = useTheme.useTheme();
-  const isThemeDarkResult = themes.isThemeDark(theme);
+  questId = questId.questId;
+  let tmp = closure_11();
+  const obj = useTheme;
+  const theme = obj.useTheme();
+  const obj2 = themes;
+  const isThemeDarkResult = obj2.isThemeDark(theme);
   dependencyMap = isThemeDarkResult;
-  const token = useToken.useToken(orbMultiplierEligibility(576).colors.EXPRESSIVE_GRADIENT_PINK_START, questOrbRewardMultiplier.DARK);
-  const tmp6 = orbMultiplierEligibility;
-  const token1 = useToken.useToken(orbMultiplierEligibility(576).colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_DIAMOND_END, questOrbRewardMultiplier.DARK);
-  const token2 = useToken.useToken(orbMultiplierEligibility(576).colors.BACKGROUND_BASE_LOWEST, questOrbRewardMultiplier.DARK);
-  const items = [ColorUtils.hexOpacityToRgba(token, 1), ];
-  items[1] = ColorUtils.hexOpacityToRgba(token1, 0.5);
-  const token3 = useToken.useToken(orbMultiplierEligibility(576).colors.BACKGROUND_BRAND);
-  questOrbRewardMultiplier = hooks_QuestHooks.useQuestOrbRewardMultiplier(questId.questId);
-  const result = QuestOrbMultiplierUtils.shouldReceiveQuestOrbMultiplier(orbMultiplierEligibility);
+  const obj3 = useToken;
+  const token = obj3.useToken(orbMultiplierEligibility(587).colors.EXPRESSIVE_GRADIENT_PINK_START, questOrbRewardMultiplier.DARK);
+  const obj4 = useToken;
+  const token1 = obj4.useToken(orbMultiplierEligibility(587).colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_DIAMOND_END, questOrbRewardMultiplier.DARK);
+  const obj5 = useToken;
+  const token2 = obj5.useToken(orbMultiplierEligibility(587).colors.BACKGROUND_BASE_LOWEST, questOrbRewardMultiplier.DARK);
+  const items = [, ];
+  const obj6 = ColorUtils;
+  items[0] = obj6.hexOpacityToRgba(token, 1);
+  const obj7 = ColorUtils;
+  items[1] = obj7.hexOpacityToRgba(token1, 0.5);
+  const obj8 = useToken;
+  const token3 = obj8.useToken(orbMultiplierEligibility(587).colors.BACKGROUND_BRAND);
+  const obj9 = hooks_QuestHooks;
+  questOrbRewardMultiplier = obj9.useQuestOrbRewardMultiplier(questId);
+  const obj10 = QuestOrbMultiplierUtils;
+  const result = obj10.shouldReceiveQuestOrbMultiplier(orbMultiplierEligibility);
   const tmp13 = orbMultiplierEligibility === QuestOrbMultiplierUtils.QuestOrbMultiplierEligibilityType.XBOX_GAME_PASS;
-  closure_6 = tmp13;
+  let closure_6 = tmp13;
   const items1 = [tmp13, token2, token3, isThemeDarkResult];
+  const tmp6 = orbMultiplierEligibility;
   if (null == questOrbRewardMultiplier) {
     return null;
   } else {
-    const intl = tmp2(1115).intl;
+    let formatToPlainStringResult;
+    const intl = tmp2(1126).intl;
     const formatToPlainString = intl.formatToPlainString;
-    const t = tmp2(1115).t;
+    const t = tmp2(1126).t;
     if (result) {
       const obj11 = { bonusOrbMultiplier: questOrbRewardMultiplier };
-      let formatToPlainStringResult = formatToPlainString(t.l2UfLG, obj11);
+      formatToPlainStringResult = formatToPlainString(t.l2UfLG, obj11);
     } else {
       const obj12 = { bonusOrbMultiplier: questOrbRewardMultiplier };
       formatToPlainStringResult = formatToPlainString(t["G+mKoo"], obj12);
     }
     let tmp21Result = !tmp13;
     let tmp19 = tmp21Result;
+    const tmp17 = closure_7;
     if (!tmp13) {
-      tmp19 = closure_6(tmp2(8309).NitroWheelIcon, { size: "xs", color: "white" });
+      tmp19 = closure_6(tmp2(8313).NitroWheelIcon, { size: "xs", color: "white" });
     }
-    const obj13 = { children: null };
-    const items2 = [tmp19, ];
+    const obj13 = { children: items2 };
+    items2 = [tmp19, ];
     const obj14 = { variant: "text-xs/semibold", color: "text-overlay-light", children: formatToPlainStringResult };
-    items2[1] = closure_6(tmp2(4841).Text, obj14);
-    obj13.children = items2;
+    items2[1] = closure_6(Text_Text.Text, obj14);
     const obj15 = {
       onPress() {
           if (null != questOrbRewardMultiplier) {
@@ -91,22 +261,24 @@ export const QuestOrbMultiplierPerkPill = function QuestOrbMultiplierPerkPill(qu
       activeOpacity: 0.8,
       accessibilityRole: "button",
       accessibilityLabel: formatToPlainStringResult,
-      children: null
+      children: closure_8(token3, obj16)
     };
-    const obj16 = { style: null, children: null };
-    const items3 = [tmp.fullGradientContainer, ];
+    obj16 = { style: items3, children: items4 };
+    items3 = [tmp.fullGradientContainer, ];
     const obj17 = { backgroundColor: tmp14 };
     items3[1] = obj17;
-    obj16.style = items3;
+    const tmp16Result = closure_8(tmp17, obj13);
+    const PressableOpacity = tmp2(5909).PressableOpacity;
     if (!tmp13) {
       const obj18 = { style: tmp.fullGradient, colors: items, start, end };
-      tmp21Result = tmp21(tmp6(5477), obj18);
+      tmp21Result = tmp21(tmp6(5605), obj18);
     }
-    const items4 = [tmp21Result, ];
-    const obj19 = { style: tmp.fullGradientContent, children: closure_8(closure_7, obj13) };
+    items4 = [tmp21Result, ];
+    const obj19 = { style: tmp.fullGradientContent, children: tmp16Result };
     items4[1] = closure_6(token3, obj19);
-    obj16.children = items4;
-    obj15.children = closure_8(token3, obj16);
-    return closure_6(tmp2(5621).PressableOpacity, obj15);
+    return closure_6(PressableOpacity, obj15);
   }
-};
+});
+let result = size.fileFinishedImporting("modules/quests/native/QuestOrbMultiplierPerkPill.tsx");
+
+export const QuestOrbMultiplierPerkPill = tmp6;

@@ -1,18 +1,21 @@
-// Module ID: 15835
-// Function ID: 15836
+// Module ID: 15912
+// Function ID: 15913
 // Name: handleRegisterErrorRedirection
-// Dependencies: [15787, 1074, 1094, 6562, 15785, 15794, 2]
+// Dependencies: [15864, 1085, 1105, 6445, 15862, 15871, 2]
 // Exports: default
 
-// Module 15835 (handleRegisterErrorRedirection)
-import Constants from "Constants" /* 1074 */;
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import getErrorDefault from "getError" /* 6562 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 15785 */;
-import RegistrationUtils from "RegistrationUtils" /* 15794 */;
-import RegistrationConstants from "RegistrationConstants" /* 15787 */;
+// Module 15912 (handleRegisterErrorRedirection)
+import Constants from "Constants" /* 1085 */;
+import ConstantsIOS from "ConstantsIOS" /* 1105 */;
+import getErrorDefault from "getError" /* 6445 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 15862 */;
+import RegistrationUtils from "RegistrationUtils" /* 15871 */;
+import RegistrationConstants from "RegistrationConstants" /* 15864 */;
 import size from "module_2" /* 2 */;
 
+let c3;
+let closure_4;
+let hasOwnProperty;
 function getRedirectStepForErrorKey(arg0) {
   if ("email" !== arg0) {
     if ("phoneToken" !== arg0) {
@@ -36,10 +39,12 @@ let closure_7 = { [ConstantsIOS.AuthStates.REGISTER_IDENTITY]: ["email", "phoneT
 const result = size.fileFinishedImporting("modules/auth/native/components/utils/handleRegisterErrorRedirection.tsx");
 
 export default function handleRegisterErrorRedirection(navigate, fn, code, step) {
+  let items2;
   if (null == getErrorDefault("date_of_birth", code)) {
     const _Number = Number;
     if (Number(code.code) !== AbortCodes.UNDER_MINIMUM_AGE) {
-      const registrationSteps = RegistrationStepsUtils.getRegistrationSteps();
+      const obj7 = RegistrationStepsUtils;
+      const registrationSteps = obj7.getRegistrationSteps();
       const obj8 = registrationSteps[Symbol.iterator]();
       while (obj8 !== undefined) {
         let items = closure_7[tmp4];
@@ -48,20 +53,17 @@ export default function handleRegisterErrorRedirection(navigate, fn, code, step)
         }
         for (const item10023 of items) {
           let tmp9 = item10023;
-          let tmp13 = getErrorDefault(item10023, arg2);
+          let tmp13 = getErrorDefault(item10023, code);
           if (null != tmp13) {
             let tmp17 = getRedirectStepForErrorKey(tmp9);
             let tmp18 = tmp17;
             if (null != tmp17) {
-              let obj2 = { step: null, actionType: null, details: null };
-              obj2.step = hasOwnProperty(tmp18);
-              obj2.actionType = constants2.RESPONSE_ERROR;
+              let obj2 = { step: hasOwnProperty(tmp18), actionType: constants2.RESPONSE_ERROR, details: items1 };
               let items1 = [tmp14, ];
               let obj3 = RegistrationUtils;
-              items1[1] = obj3.getCommonErrorDetails(arg2.error_code);
-              obj2.details = items1;
-              let tmp25 = arg1(obj2);
-              let navigateResult = arg0.navigate(tmp18);
+              items1[1] = obj3.getCommonErrorDetails(code.error_code);
+              let tmp25 = fn(obj2);
+              let navigateResult = navigate.navigate(tmp18);
               obj.return();
               obj8.return();
             }
@@ -70,14 +72,17 @@ export default function handleRegisterErrorRedirection(navigate, fn, code, step)
         }
         continue;
       }
+      const tmp29 = null != code.error_code && null != code.message;
       if (tmp29) {
-        const obj4 = { step, actionType: constants2.RESPONSE_ERROR, details: null };
-        const items2 = [RegistrationUtils.getCommonErrorDetails(code.error_code)];
-        obj4.details = items2;
+        const obj4 = { step, actionType: constants2.RESPONSE_ERROR, details: items2 };
+        items2 = [];
+        const obj5 = RegistrationUtils;
+        items2[0] = obj5.getCommonErrorDetails(code.error_code);
         fn(obj4);
       }
     }
   }
-  fn({ step: constants.AGE_GATE_UNDERAGE, actionType: constants2.VIEWED });
+  const obj6 = { step: constants.AGE_GATE_UNDERAGE, actionType: constants2.VIEWED };
+  fn(obj6);
   navigate.push(ConstantsIOS.AuthStates.AGE_GATE_UNDERAGE, { fromRegister: true, disableSwipe: true });
 };

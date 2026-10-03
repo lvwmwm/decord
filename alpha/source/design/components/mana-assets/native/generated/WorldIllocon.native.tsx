@@ -1,31 +1,78 @@
-// Module ID: 12438
-// Function ID: 12439
+// Module ID: 12377
+// Function ID: 12378
 // Name: WorldIllocon
-// Dependencies: [21, 6085, 12439, 2]
-// Exports: WorldIllocon
+// Dependencies: [21, 558, 576, 12378, 5974, 2]
 
-// Module 12438 (WorldIllocon)
-import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 6085 */;
-import _modDef12439 from "module_12439" /* 12439 */;
+// Module 12377 (WorldIllocon)
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 576 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import _modDef12378 from "module_12378" /* 12378 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const jsx = jsxProd.jsx;
-const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/WorldIllocon.native.tsx");
-
-export const WorldIllocon = function WorldIllocon(size) {
+const jsx = Fragment.jsx;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let accessibilityLabel;
+  let accessible;
+  let first;
+  let resizeMode;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(8);
+  ({ accessible, accessibilityLabel, resizeMode, size } = arg0);
+  let num = 64;
+  if (undefined !== size) {
+    num = size;
+  }
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { uri: _modDef12378 };
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== num) {
+    const size1 = { width: num, height: num };
+    const items = [size1];
+    cResult[1] = num;
+    cResult[2] = items;
+    tmp5 = items;
+  } else {
+    tmp5 = cResult[2];
+  }
+  if (cResult[3] === accessibilityLabel) {
+    if (cResult[4] === accessible) {
+      if (cResult[5] === resizeMode) {
+        let tmp6;
+        if (cResult[6] === tmp5) {
+          tmp6 = cResult[7];
+        }
+        return tmp6;
+      }
+    }
+  }
+  const tmp7 = jsx(FastImageDefault, { fadeDuration: 0, source: first, style: tmp5, accessible, accessibilityLabel, resizeMode });
+  cResult[3] = accessibilityLabel;
+  cResult[4] = accessible;
+  cResult[5] = resizeMode;
+  cResult[6] = tmp5;
+  cResult[7] = tmp7;
+  tmp6 = tmp7;
+}) : ((size) => {
+  let accessibilityLabel;
+  let accessible;
+  let resizeMode;
   let num = size.size;
   ({ accessible, accessibilityLabel, resizeMode } = size);
   if (num === undefined) {
     num = 64;
   }
-  const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef12439 };
-  obj.source = obj2;
+  const obj2 = { uri: _modDef12378 };
+  FastImageDefault;
   const items = [{ width: num, height: num }];
-  obj.style = items;
-  obj.accessible = accessible;
-  obj.accessibilityLabel = accessibilityLabel;
-  obj.resizeMode = resizeMode;
-  return jsx(FastImageDefault, { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null });
-};
+  return <tmp fadeDuration={0} source={obj2} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
+});
+const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/WorldIllocon.native.tsx");
+
+export const WorldIllocon = tmp2;

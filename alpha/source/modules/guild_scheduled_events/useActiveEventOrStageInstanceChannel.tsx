@@ -1,26 +1,66 @@
-// Module ID: 16034
-// Function ID: 16035
+// Module ID: 16108
+// Function ID: 16109
 // Name: useActiveEventOrStageInstanceChannel
-// Dependencies: [2044, 9136, 16033, 2]
-// Exports: useActiveEventOrStageInstanceChannel
+// Dependencies: [2051, 558, 576, 9160, 16107, 2]
 
-// Module 16034 (useActiveEventOrStageInstanceChannel)
-import useGuildScheduledEvents from "useGuildScheduledEvents" /* 9136 */;
-import useLiveStageChannelsDefault from "useLiveStageChannels" /* 16033 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
+// Module 16108 (useActiveEventOrStageInstanceChannel)
+import react from "react" /* 576 */;
+import useGuildScheduledEvents from "useGuildScheduledEvents" /* 9160 */;
+import useLiveStageChannelsDefault from "useLiveStageChannels" /* 16107 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_scheduled_events/useActiveEventOrStageInstanceChannel.tsx");
-
-export const useActiveEventOrStageInstanceChannel = function useActiveEventOrStageInstanceChannel(id) {
-  let firstActiveEventChannel = useGuildScheduledEvents.useFirstActiveEventChannel(id);
-  const first = useLiveStageChannelsDefault(id)[0];
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp7;
+  const obj = react;
+  const cResult = obj.c(2);
+  const obj2 = useGuildScheduledEvents;
+  let firstActiveEventChannel = obj2.useFirstActiveEventChannel(arg0);
+  const tmp3 = useLiveStageChannelsDefault(arg0);
+  const first = tmp3[0];
+  let id;
+  const first1 = cResult[0];
+  if (first != null) {
+    id = first.id;
+  }
+  if (first1 !== id) {
+    const first2 = tmp3[0];
+    let id1;
+    const getChannel = ChannelStore.getChannel;
+    if (first2 != null) {
+      id1 = first2.id;
+    }
+    const channel = getChannel(id1);
+    const first3 = tmp3[0];
+    let id2;
+    if (first3 != null) {
+      id2 = first3.id;
+    }
+    cResult[0] = id2;
+    cResult[1] = channel;
+    tmp7 = channel;
+  } else {
+    tmp7 = cResult[1];
+  }
+  if (firstActiveEventChannel == null) {
+    firstActiveEventChannel = tmp7;
+  }
+  return firstActiveEventChannel;
+}) : ((arg0) => {
+  let id;
+  const obj = useGuildScheduledEvents;
+  let firstActiveEventChannel = obj.useFirstActiveEventChannel(arg0);
+  const first = useLiveStageChannelsDefault(arg0)[0];
+  const getChannel = ChannelStore.getChannel;
   if (first != null) {
     id = first.id;
   }
   if (firstActiveEventChannel == null) {
-    firstActiveEventChannel = ChannelStore.getChannel(id);
+    firstActiveEventChannel = getChannel(id);
   }
   return firstActiveEventChannel;
-};
+});
+const result = size.fileFinishedImporting("modules/guild_scheduled_events/useActiveEventOrStageInstanceChannel.tsx");
+
+export const useActiveEventOrStageInstanceChannel = tmp2;

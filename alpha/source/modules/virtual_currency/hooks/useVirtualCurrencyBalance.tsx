@@ -1,27 +1,91 @@
-// Module ID: 12935
-// Function ID: 12936
+// Module ID: 12990
+// Function ID: 12991
 // Name: useVirtualCurrencyBalance
-// Dependencies: [8505, 504, 2]
-// Exports: getVirtualCurrencyBalance, useHasEnoughVirtualCurrency, useVirtualCurrencyBalance
+// Dependencies: [8510, 558, 576, 504, 2]
+// Exports: getVirtualCurrencyBalance
 
-// Module 12935 (useVirtualCurrencyBalance)
-import initialize from "initialize" /* 504 */;
-import VirtualCurrencyStore from "VirtualCurrencyStore" /* 8505 */;
+// Module 12990 (useVirtualCurrencyBalance)
+import react from "react" /* 576 */;
+import VirtualCurrencyStore from "VirtualCurrencyStore" /* 8510 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/virtual_currency/hooks/useVirtualCurrencyBalance.tsx");
-
-export const useVirtualCurrencyBalance = function useVirtualCurrencyBalance() {
+let tmp;
+const get_initialized = tmp(504);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let balance;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [VirtualCurrencyStore];
+    const fn = function u() {
+      return balance.balance;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let balance;
   const items = [VirtualCurrencyStore];
-  return initialize.useStateFromStores(items, () => balance.balance);
-};
-export const useHasEnoughVirtualCurrency = function useHasEnoughVirtualCurrency(arg0) {
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => balance.balance);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  _require = arg0;
+  const tmp = _require;
+  let tmp2 = dependencyMap;
+  const obj = require("react");
+  const cResult = obj.c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [VirtualCurrencyStore];
+    let num = 0;
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function c() {
+      let tmp2 = null != closure_0;
+      if (tmp2) {
+        let num = VirtualCurrencyStore.balance;
+        if (num == null) {
+          num = 0;
+        }
+        tmp2 = num >= tmp;
+      }
+      return tmp2;
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6);
+}) : ((arg0) => {
+  let closure_0;
   _require = arg0;
   const items = [VirtualCurrencyStore];
-  return require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
     let tmp2 = null != closure_0;
     if (tmp2) {
       let num = VirtualCurrencyStore.balance;
@@ -32,7 +96,11 @@ export const useHasEnoughVirtualCurrency = function useHasEnoughVirtualCurrency(
     }
     return tmp2;
   });
-};
+});
+const result = size.fileFinishedImporting("modules/virtual_currency/hooks/useVirtualCurrencyBalance.tsx");
+
+export const useVirtualCurrencyBalance = tmp2;
+export const useHasEnoughVirtualCurrency = tmp3;
 export const getVirtualCurrencyBalance = function getVirtualCurrencyBalance() {
   return VirtualCurrencyStore.getCurrentBalance();
 };

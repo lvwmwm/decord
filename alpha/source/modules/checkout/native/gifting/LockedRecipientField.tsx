@@ -1,36 +1,106 @@
-// Module ID: 10511
-// Function ID: 10512
+// Module ID: 10588
+// Function ID: 10589
 // Name: LockedRecipientField
-// Dependencies: [19, 17, 21, 4845, 576, 1177, 4841, 4707, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1188, 4722, 4886, 2]
 
-// Module 10511 (LockedRecipientField)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import UserUtilsDefault from "UserUtils" /* 4707 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import noop from "module_19" /* 19 */;
+// Module 10588 (LockedRecipientField)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import UserUtilsDefault from "UserUtils" /* 4722 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4845);
-let obj2 = { container: { flexDirection: "row", alignItems: "center", marginLeft: nativeDefault.space.PX_16 }, avatar: null };
-let obj3 = { flexDirection: "row", alignItems: "center", marginLeft: nativeDefault.space.PX_16 };
-obj2.avatar = { marginEnd: nativeDefault.space.PX_8 };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/checkout/native/gifting/LockedRecipientField.tsx");
+let user;
 
-export default function LockedRecipientField(user) {
+let closure_4;
+let hasOwnProperty;
+let obj2;
+let obj3;
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, avatar: obj3 };
+obj2 = { flexDirection: "row", alignItems: "center", marginLeft: nativeDefault.space.PX_16 };
+createStyles = createStyles.createStyles;
+obj3 = { marginEnd: nativeDefault.space.PX_8 };
+let closure_6 = createStyles(obj);
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+  let items;
+  const obj = react2;
+  const cResult = obj.c(11);
+  user = user.user;
+  const tmp4 = closure_6();
+  if (cResult[0] === tmp4.avatar) {
+    let tmp6;
+    let tmp8;
+    let tmp11;
+    if (cResult[1] === user) {
+      tmp6 = cResult[2];
+    }
+    if (cResult[3] !== user) {
+      const obj3 = UserUtilsDefault;
+      const name = obj3.getName(user);
+      cResult[3] = user;
+      cResult[4] = name;
+      tmp8 = name;
+    } else {
+      tmp8 = cResult[4];
+    }
+    if (cResult[5] !== tmp8) {
+      const obj2 = { variant: "text-md/semibold", children: tmp8 };
+      const tmp13 = React3(Text_Text.Text, obj2);
+      cResult[5] = tmp8;
+      cResult[6] = tmp13;
+      tmp11 = tmp13;
+    } else {
+      tmp11 = cResult[6];
+    }
+    if (cResult[7] === tmp4.container) {
+      if (cResult[8] === tmp6) {
+        let tmp14;
+        if (cResult[9] === tmp11) {
+          tmp14 = cResult[10];
+        }
+        return tmp14;
+      }
+    }
+    const obj4 = { style: tmp5, children: items };
+    items = [tmp6, tmp11];
+    const tmp17 = hasOwnProperty(View, obj4);
+    cResult[7] = tmp4.container;
+    cResult[8] = tmp6;
+    cResult[9] = tmp11;
+    cResult[10] = tmp17;
+    tmp14 = tmp17;
+  }
+  const obj5 = { style: tmp4.avatar, user, guildId: "Array", size: native.AvatarSizes.NORMAL };
+  const Avatar = tmp(1188).Avatar;
+  const tmp7 = React3(Avatar, obj5);
+  cResult[0] = tmp4.avatar;
+  cResult[1] = user;
+  cResult[2] = tmp7;
+  tmp6 = tmp7;
+}) : ((user) => {
+  let items;
+  let obj4;
   user = user.user;
   const tmp = closure_6();
-  const obj = { style: tmp.container, children: null };
+  const obj = { style: tmp.container, children: items };
   const obj2 = { style: tmp.avatar, user, guildId: "Array", size: native.AvatarSizes.NORMAL };
-  const items = [React4(native.Avatar, obj2), ];
-  const obj3 = { variant: "text-md/semibold", children: UserUtilsDefault.getName(user) };
-  items[1] = React4(Text_Text.Text, obj3);
-  obj.children = items;
+  const Avatar = native.Avatar;
+  items = [React3(Avatar, obj2), ];
+  const obj3 = { variant: "text-md/semibold", children: obj4.getName(user) };
+  const Text = Text_Text.Text;
+  obj4 = UserUtilsDefault;
+  items[1] = React3(Text, obj3);
   return hasOwnProperty(View, obj);
-};
+});
+const result = size.fileFinishedImporting("modules/checkout/native/gifting/LockedRecipientField.tsx");
+
+export default tmp5;

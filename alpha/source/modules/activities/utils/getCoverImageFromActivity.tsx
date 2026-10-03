@@ -1,12 +1,12 @@
-// Module ID: 13012
-// Function ID: 13013
+// Module ID: 13073
+// Function ID: 13074
 // Name: getCoverImageFromActivity
-// Dependencies: [2005, 7777, 2]
+// Dependencies: [2011, 7821, 2]
 // Exports: default
 
-// Module 13012 (getCoverImageFromActivity)
-import Constants from "Constants" /* 2005 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 7777 */;
+// Module 13073 (getCoverImageFromActivity)
+import Constants from "Constants" /* 2011 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 7821 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = Constants.ACTIVITY_INVITE_COVER_IMAGE_SIZE;
@@ -20,7 +20,8 @@ export default function getCoverImageFromActivity(assets, application_id) {
       assetImage = null;
       if (null != assets.assets.large_image) {
         const items = [closure_2, closure_2];
-        assetImage = ApplicationAssetUtils.getAssetImage(application_id, assets.assets.large_image, items);
+        const obj = ApplicationAssetUtils;
+        assetImage = obj.getAssetImage(application_id, assets.assets.large_image, items);
       }
     }
   }

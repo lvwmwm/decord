@@ -1,175 +1,114 @@
 // Module ID: 10930
 // Function ID: 10931
 // Name: openAppStoreOverlayMediaModal
-// Dependencies: [32, 5, 4550, 1074, 1479, 7890, 1981, 7891, 7892, 10931, 1115, 4809, 5048, 10932, 2]
+// Dependencies: [32, 5, 4561, 1085, 1484, 7934, 1987, 7935, 7936, 10931, 1126, 4854, 5093, 10932, 2]
 // Exports: openAppStoreOverlayMediaModal
 
 // Module 10930 (openAppStoreOverlayMediaModal)
-import _slicedToArray from "module_32" /* 32 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 4550 */;
+import Constants from "Constants" /* 1085 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import ActionSheetStore from "ActionSheetStore" /* 4561 */;
+import size_mod from "module_2" /* 2 */;
 
-const require = fn;
-let closure_7 = async function _openAppStoreOverlayMediaModal(arg0, value) {
-  if (c4 === 2) {
-    c4 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp4 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      let obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "HermesInternal", done: null };
-    }
-  } else {
-    try {
-      c4 = 2;
-      if (0 === c3) {
-        if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          let obj3 = { value, done: true };
-          return obj3;
-        } else {
-          const sources = tmp5;
-          initialIndex = tmp2;
-          closure_129_0 = undefined;
-          closure_129_1 = undefined;
-          closure_129_2 = undefined;
-          closure_129_3 = undefined;
-          closure_129_4 = undefined;
-          closure_129_5 = undefined;
-          closure_129_6 = undefined;
-          closure_129_7 = undefined;
-          ({ originViewOrOriginLayout: closure_129_0, initialIndex } = closure_0);
-          if (initialIndex === undefined) {
-            initialIndex = 0;
-          }
-          closure_129_1 = initialIndex;
-          ({ initialSources: closure_129_2, analyticsSource: closure_129_3, channelId: closure_129_4, onGetGamePress: closure_129_5, onClose: closure_129_6 } = closure_0);
-          closure_129_7 = Object.assign(tmp43, Object.assign({ originViewOrOriginLayout: 0, initialIndex: 0, initialSources: 0, analyticsSource: 0, channelId: 0, onGetGamePress: 0, onClose: 0 }));
-          closure_129_8 = undefined;
-          closure_129_9 = undefined;
-          closure_129_10 = undefined;
-          let MediaViewerAnalytics;
-          let initVideoStateStore;
-          c3 = 1;
-          c4 = 1;
-          return { value: "flex", done: null };
+let obj = function _openAppStoreOverlayMediaModal() {
+  obj = _asyncToGenerator(async (arg0) => {
+    let c0;
+    let c2;
+    let c3;
+    let c4;
+    let c5;
+    let c6;
+    let closure_1;
+    let closure_2;
+    let initialIndex;
+    let intl;
+    function getMeasureInWindowFunction(c0) {
+      closure_0 = c0;
+      if (null != c0) {
+        let fn;
+        if ("measureInWindow" in c0) {
+          const measureInWindow = c0.measureInWindow;
+          fn = measureInWindow.bind(c0);
         }
-      } else if (1 === tmp5) {
-        if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj5 = { value, done: true };
-          return obj5;
-        } else {
-          const items = [closure_130_0(closure_130_2[6])(closure_130_2[5], closure_130_2.paths), closure_130_0(closure_130_2[6])(closure_130_2[7], closure_130_2.paths), closure_130_0(closure_130_2[6])(closure_130_2[8], closure_130_2.paths)];
-          c3 = 2;
-          c4 = 1;
-          const obj6 = { value: Promise.all(items), done: false };
-          return obj6;
-        }
-      } else if (arg0 === 1) {
-        c4 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 3;
-        let obj = { value, done: true };
-        return obj;
-      } else {
-        closure_129_8 = value;
-        closure_129_9 = closure_130_3(closure_129_8, 3);
-        closure_129_10 = closure_129_9[0].setMediaViewerSources;
-        MediaViewerAnalytics = closure_129_9[1].MediaViewerAnalytics;
-        initVideoStateStore = closure_129_9[2].initVideoStateStore;
-        const obj8 = { text: null, onPress: null };
-        const intl = closure_130_0(closure_130_2[10]).intl;
-        obj8.text = intl.string(closure_130_0(closure_130_2[10]).t.lwQdjB);
-        obj8.onPress = function onPress() {
-          if (closure_2_5.isOpen()) {
-            tmp(tmp2[11]).hideActionSheet(closure_2_6);
-            const tmpResult = tmp(tmp2[11]);
-          } else {
-            tmp(tmp2[12]).popWithKey(closure_2_6);
-            const tmpResult2 = tmp(tmp2[12]);
-          }
-          closure_1_5();
-        };
-        const result = closure_130_0(closure_130_2[9]).setMediaModalFooterAction(obj8);
-        (function getMeasureInWindowFunction(measureInWindow) {
-          closure_0 = measureInWindow;
-          if (null != measureInWindow) {
-            if ("measureInWindow" in measureInWindow) {
-              measureInWindow = measureInWindow.measureInWindow;
-              let fn = measureInWindow.bind(measureInWindow);
-            }
-            return fn;
-          }
-          fn = (fn) => {
-            let size = closure_0;
-            if (closure_0 == null) {
-              const size1 = { x: 0, y: 0, width: closure_2_0(sources[4]).getWindowDimensions().width, height: null };
-              const obj2 = closure_2_0(sources[4]);
-              size1.height = closure_2_0(sources[4]).getWindowDimensions().height;
-              size = size1;
-              const obj3 = closure_2_0(sources[4]);
-            }
-            fn(size.x, size.y, size.width, size.height, size.resizeMode);
-          };
-        })(closure_129_0)((x, y, width, height, arg4) => {
-          let str = arg4;
-          const obj = {};
-          const merged = Object.assign(closure_1_7);
-          obj.initialIndex = initialIndex;
-          const size = { x, y, width, height, resizeMode: null };
-          if (arg4 == null) {
-            str = "cover";
-          }
-          size.resizeMode = str;
-          obj.originLayout = size;
-          obj.onCloseCallback = onCloseCallback;
-          obj.disableHapticOnOpen = true;
-          obj.disableMediaOverlayFooter = true;
-          obj.disableMediaOverlayButton = true;
-          obj.shareable = false;
-          if (closure_2_5.isOpen()) {
-            const tmp3Result = tmp3(tmp4[11]);
-            tmp3Result.openLazy(closure_0(tmp4[6])(tmp4[13], tmp4.paths), closure_2_6, obj, "stack");
-          } else {
-            const tmp3Result2 = tmp3(tmp4[12]);
-            tmp3Result2.pushLazy(closure_0(tmp4[6])(tmp4[13], tmp4.paths), obj, closure_2_6, { animation: "none" });
-          }
-          closure_1_10({ sources, initialIndex });
-          closure_1_11.markSessionStarted({ channelId, numMediaItems: sources.length, source });
-          closure_1_12();
-        });
-        c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return fn;
       }
-    } catch (tmp8) {
-      c4 = tmp;
-      throw tmp8;
+      fn = (fn) => {
+        let obj2;
+        let obj3;
+        size = closure_0;
+        if (closure_0 == null) {
+          const size1 = { x: 0, y: 0, width: obj2.getWindowDimensions().width, height: obj3.getWindowDimensions().height };
+          obj2 = closure_2_0(sources[4]);
+          size = size1;
+          obj3 = closure_2_0(sources[4]);
+        }
+        fn(size.x, size.y, size.width, size.height, size.resizeMode);
+      };
     }
-  }
+    let closure_0 = arg0;
+    const items = [closure_130_0(closure_130_2[6])(closure_130_2[5], closure_130_2.paths), closure_130_0(closure_130_2[6])(closure_130_2[7], closure_130_2.paths), closure_130_0(closure_130_2[6])(closure_130_2[8], closure_130_2.paths)];
+    await all(items);
+    let closure_8 = arg1;
+    let closure_9 = closure_130_3(closure_8, 3);
+    const setMediaViewerSources = closure_9[0].setMediaViewerSources;
+    const MediaViewerAnalytics = closure_9[1].MediaViewerAnalytics;
+    const initVideoStateStore = closure_9[2].initVideoStateStore;
+    const obj7 = {
+      text: intl.string(closure_130_0(closure_130_2[10]).t.lwQdjB),
+      onPress() {
+        if (closure_2_5.isOpen()) {
+          const tmpResult = initialIndex(sources[11]);
+          tmpResult.hideActionSheet(closure_2_6);
+        } else {
+          const tmpResult2 = initialIndex(sources[12]);
+          tmpResult2.popWithKey(closure_2_6);
+        }
+        closure_1_5();
+      }
+    };
+    const setMediaModalFooterAction = closure_130_0(closure_130_2[9]).setMediaModalFooterAction;
+    const tmp20 = closure_130_0(closure_130_2[9]);
+    intl = closure_130_0(closure_130_2[10]).intl;
+    const result = setMediaModalFooterAction(obj7);
+    getMeasureInWindowFunction(c0)((x, y, width, height, arg4) => {
+      let str = arg4;
+      obj = { initialIndex, originLayout: size, onCloseCallback, disableHapticOnOpen: true, disableMediaOverlayFooter: true, disableMediaOverlayButton: true, shareable: false };
+      const merged = Object.assign(closure_1_7);
+      size = { x, y, width, height, resizeMode: str };
+      const tmp2 = initialIndex;
+      if (arg4 == null) {
+        str = "cover";
+      }
+      if (closure_2_5.isOpen()) {
+        const tmp3Result = initialIndex(sources[11]);
+        tmp3Result.openLazy(closure_0(sources[6])(sources[13], sources.paths), closure_2_6, obj, "stack");
+      } else {
+        const tmp3Result2 = initialIndex(sources[12]);
+        tmp3Result2.pushLazy(closure_0(sources[6])(sources[13], sources.paths), obj, closure_2_6, { animation: "none" });
+      }
+      const obj2 = { sources, initialIndex: tmp2 };
+      closure_1_10(obj2);
+      const obj3 = { channelId, numMediaItems: sources.length, source };
+      closure_1_11.markSessionStarted(obj3);
+      closure_1_12();
+    });
+    await "IconComponent";
+    initialIndex = tmp;
+    ({ originViewOrOriginLayout: c0, initialIndex } = closure_0);
+    if (initialIndex === undefined) {
+      initialIndex = 0;
+    }
+    ({ initialSources: c2, analyticsSource: c3, channelId: c4, onGetGamePress: c5, onClose: c6 } = closure_0);
+    let closure_7 = Object.assign(tmp42, Object.assign({ originViewOrOriginLayout: 0, initialIndex: 0, initialSources: 0, analyticsSource: 0, channelId: 0, onGetGamePress: 0, onClose: 0 }));
+    return "Reflect";
+  });
+  return obj(...arguments);
 };
-const MEDIA_MODAL_KEY = fn(1074).MEDIA_MODAL_KEY;
-let size = fn(2);
+const MEDIA_MODAL_KEY = Constants.MEDIA_MODAL_KEY;
+let size = size_mod;
 let result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/openAppStoreOverlayMediaModal.tsx");
 
 export const openAppStoreOverlayMediaModal = function openAppStoreOverlayMediaModal() {
-  const self = this;
-  const apply = closure_7.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };

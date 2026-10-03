@@ -1,21 +1,58 @@
-// Module ID: 17319
-// Function ID: 17320
+// Module ID: 17412
+// Function ID: 17413
 // Name: useFormattedEndTime
-// Dependencies: [1372, 1115, 504, 2]
-// Exports: default
+// Dependencies: [1377, 1126, 558, 576, 504, 2]
 
-// Module 17319 (useFormattedEndTime)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 17412 (useFormattedEndTime)
+import react from "react" /* 576 */;
+import intl from "intl" /* 1126 */;
+import UserStore from "UserStore" /* 1377 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/parent_tools/hooks/useFormattedEndTime.tsx");
+let currentUser;
 
-export default function useFormattedEndTime() {
+let tmp;
+const get_initialized = tmp(504);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function o() {
+      currentUser = currentUser.getCurrentUser();
+      let nextEndTime;
+      if (currentUser != null) {
+        const restrictedSchedule = currentUser.restrictedSchedule;
+        if (restrictedSchedule != null) {
+          nextEndTime = restrictedSchedule.getNextEndTime();
+        }
+      }
+      let formatResult = null;
+      if (null != nextEndTime) {
+        const _Intl = Intl;
+        const self = this;
+        const self2 = this;
+        const dateTimeFormat = new Intl.DateTimeFormat(intl.intl.currentLocale, { hour: "numeric", minute: "2-digit", weekday: "long" });
+        formatResult = dateTimeFormat.format(nextEndTime);
+      }
+      return formatResult;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
   const items = [UserStore];
-  return initialize.useStateFromStores(items, () => {
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, function() {
     currentUser = currentUser.getCurrentUser();
     let nextEndTime;
     if (currentUser != null) {
@@ -27,9 +64,14 @@ export default function useFormattedEndTime() {
     let formatResult = null;
     if (null != nextEndTime) {
       const _Intl = Intl;
-      const dateTimeFormat = new Intl.DateTimeFormat(util.intl.currentLocale, { hour: "numeric", minute: "2-digit", weekday: "long" });
+      const self = this;
+      const self2 = this;
+      const dateTimeFormat = new Intl.DateTimeFormat(intl.intl.currentLocale, { hour: "numeric", minute: "2-digit", weekday: "long" });
       formatResult = dateTimeFormat.format(nextEndTime);
     }
     return formatResult;
   });
-};
+});
+const result = size.fileFinishedImporting("modules/parent_tools/hooks/useFormattedEndTime.tsx");
+
+export default tmp2;

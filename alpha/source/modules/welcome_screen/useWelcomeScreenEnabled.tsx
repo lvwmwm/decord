@@ -1,51 +1,109 @@
-// Module ID: 12365
-// Function ID: 12366
+// Module ID: 12450
+// Function ID: 12451
 // Name: useWelcomeScreenEnabled
-// Dependencies: [2048, 2044, 2066, 2098, 1074, 504, 2]
-// Exports: default
+// Dependencies: [2055, 2051, 2074, 2103, 1085, 558, 576, 504, 2]
 
-// Module 12365 (useWelcomeScreenEnabled)
-import Constants from "Constants" /* 1074 */;
-import ChannelRecord from "ChannelRecord" /* 2048 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
+// Module 12450 (useWelcomeScreenEnabled)
+import Constants from "Constants" /* 1085 */;
+import ChannelRecord from "ChannelRecord" /* 2055 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
 const isGuildTextChannelType = ChannelRecord.isGuildTextChannelType;
 const GuildFeatures = Constants.GuildFeatures;
-const result = size.fileFinishedImporting("modules/welcome_screen/useWelcomeScreenEnabled.tsx");
-
-export default function useWelcomeScreenEnabled(arg0, arg1) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
+  let first;
   _require = arg0;
   dependencyMap = arg1;
-  const items = [ChannelStore, GuildStore, SelectedChannelStore];
-  return require("initialize").useStateFromStores(items, () => {
+  let tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp5 = ChannelStore;
+    const items = [ChannelStore, , ];
+    items[1] = GuildStore;
+    items[2] = SelectedChannelStore;
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg0) {
+    let tmp8;
+    if (cResult[2] === arg1) {
+      tmp8 = cResult[3];
+    }
+    const tmpResult = tmp(504);
+    return tmpResult.useStateFromStores(first, tmp8);
+  }
+  const fn = function _() {
     const guild = GuildStore.getGuild(closure_1);
     let hasItem;
+    const tmp = closure_1;
     if (guild != null) {
       const features = guild.features;
       hasItem = features.has(GuildFeatures.WELCOME_SCREEN_ENABLED);
     }
     if (true === hasItem) {
       const features2 = guild.features;
+      const tmp5 = GuildFeatures;
       if (features2.has(GuildFeatures.COMMUNITY)) {
         const features3 = guild.features;
         if (features3.has(tmp5.GUILD_SERVER_GUIDE)) {
           return false;
         } else {
           const channel = ChannelStore.getChannel(closure_0);
-          let tmp9 = closure_0 === SelectedChannelStore.getChannelId(closure_1) && null != channel && channel.getGuildId() === guild.id;
-          if (tmp9) {
-            tmp9 = isGuildTextChannelType(channel.type);
-          }
+          const tmp9 = closure_0 === SelectedChannelStore.getChannelId(tmp) && null != channel && channel.getGuildId() === guild.id && isGuildTextChannelType(channel.type);
           return tmp9;
         }
       }
-      tmp5 = GuildFeatures;
+    }
+    return false;
+  };
+  cResult[1] = arg0;
+  cResult[2] = arg1;
+  cResult[3] = fn;
+  tmp8 = fn;
+}) : ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
+  _require = arg0;
+  dependencyMap = arg1;
+  const items = [ChannelStore, GuildStore, SelectedChannelStore];
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    const guild = GuildStore.getGuild(closure_1);
+    let hasItem;
+    const tmp = closure_1;
+    if (guild != null) {
+      const features = guild.features;
+      hasItem = features.has(GuildFeatures.WELCOME_SCREEN_ENABLED);
+    }
+    if (true === hasItem) {
+      const features2 = guild.features;
+      const tmp5 = GuildFeatures;
+      if (features2.has(GuildFeatures.COMMUNITY)) {
+        const features3 = guild.features;
+        if (features3.has(tmp5.GUILD_SERVER_GUIDE)) {
+          return false;
+        } else {
+          const channel = ChannelStore.getChannel(closure_0);
+          const tmp9 = closure_0 === SelectedChannelStore.getChannelId(tmp) && null != channel && channel.getGuildId() === guild.id && isGuildTextChannelType(channel.type);
+          return tmp9;
+        }
+      }
     }
     return false;
   });
-};
+});
+const result = size.fileFinishedImporting("modules/welcome_screen/useWelcomeScreenEnabled.tsx");
+
+export default tmp2;

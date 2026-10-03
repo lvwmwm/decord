@@ -1,26 +1,32 @@
-// Module ID: 12940
-// Function ID: 12941
+// Module ID: 12995
+// Function ID: 12996
 // Name: useCanGiftProduct
-// Dependencies: [7805, 7162, 7161, 4517, 1974, 4530, 2]
-// Exports: useCanGiftProduct
+// Dependencies: [558, 7849, 7065, 7064, 4528, 1980, 4541, 2]
 
-// Module 12940 (useCanGiftProduct)
-import PremiumUtilsDefault from "PremiumUtils" /* 4517 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7161 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7162 */;
-import useCurrentUser from "useCurrentUser" /* 7805 */;
+// Module 12995 (useCanGiftProduct)
+import PremiumUtilsDefault from "PremiumUtils" /* 4528 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 4541 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7064 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7065 */;
+import useCurrentUser from "useCurrentUser" /* 7849 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let result = size.fileFinishedImporting("modules/collectibles/hooks/useCanGiftProduct.tsx");
-
-export const useCanGiftProduct = function useCanGiftProduct(product) {
-  const currentUser = useCurrentUser.useCurrentUser();
-  let result = CollectiblesUtils.isPremiumCollectiblesProduct(product);
-  const result1 = CollectiblesUtils.isFreeCollectiblesProduct(product);
-  const result2 = CollectiblesProductUtils.isOrbsExclusiveProduct(product);
-  const canUseShopDiscountsResult = PremiumUtilsDefault.canUseShopDiscounts(currentUser);
-  const defaultPriceSetAssignmentPurchaseType = CollectiblesUtils.getDefaultPriceSetAssignmentPurchaseType(canUseShopDiscountsResult);
-  const result3 = CollectiblesUtils.extractPriceByPurchaseTypes(product, defaultPriceSetAssignmentPurchaseType);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
+  const obj = useCurrentUser;
+  const currentUser = obj.useCurrentUser();
+  const obj2 = CollectiblesUtils;
+  let result = obj2.isPremiumCollectiblesProduct(type);
+  const obj3 = CollectiblesUtils;
+  const result1 = obj3.isFreeCollectiblesProduct(type);
+  const obj4 = CollectiblesProductUtils;
+  const result2 = obj4.isOrbsExclusiveProduct(type);
+  const obj5 = PremiumUtilsDefault;
+  const canUseShopDiscountsResult = obj5.canUseShopDiscounts(currentUser);
+  const obj6 = CollectiblesUtils;
+  const defaultPriceSetAssignmentPurchaseType = obj6.getDefaultPriceSetAssignmentPurchaseType(canUseShopDiscountsResult);
+  const obj7 = CollectiblesUtils;
+  const result3 = obj7.extractPriceByPurchaseTypes(type, defaultPriceSetAssignmentPurchaseType);
   if (!result) {
     result = result1;
   }
@@ -28,19 +34,61 @@ export const useCanGiftProduct = function useCanGiftProduct(product) {
     result = result2;
   }
   if (!result) {
-    result = product.type === tmp(1974).CollectiblesItemType.EXTERNAL_SKU;
+    result = type.type === tmp(1980).CollectiblesItemType.EXTERNAL_SKU;
   }
   if (!result) {
     let currency;
+    const shouldHideGiftingForCurrency = CollectiblesUtils.shouldHideGiftingForCurrency;
+    CollectiblesUtils;
     if (result3 != null) {
       currency = result3.currency;
     }
-    result = tmp(7162).shouldHideGiftingForCurrency(currency);
-    const tmpResult = tmp(7162);
+    result = shouldHideGiftingForCurrency(currency);
   }
   if (!result) {
-    result = !tmp(4530).isCollectibleGiftingSupported();
-    const tmpResult2 = tmp(4530);
+    const tmpResult2 = BillingPlatformUtils;
+    result = !tmpResult2.isCollectibleGiftingSupported();
   }
   return !result;
-};
+}) : ((type) => {
+  const obj = useCurrentUser;
+  const currentUser = obj.useCurrentUser();
+  const obj2 = CollectiblesUtils;
+  let result = obj2.isPremiumCollectiblesProduct(type);
+  const obj3 = CollectiblesUtils;
+  const result1 = obj3.isFreeCollectiblesProduct(type);
+  const obj4 = CollectiblesProductUtils;
+  const result2 = obj4.isOrbsExclusiveProduct(type);
+  const obj5 = PremiumUtilsDefault;
+  const canUseShopDiscountsResult = obj5.canUseShopDiscounts(currentUser);
+  const obj6 = CollectiblesUtils;
+  const defaultPriceSetAssignmentPurchaseType = obj6.getDefaultPriceSetAssignmentPurchaseType(canUseShopDiscountsResult);
+  const obj7 = CollectiblesUtils;
+  const result3 = obj7.extractPriceByPurchaseTypes(type, defaultPriceSetAssignmentPurchaseType);
+  if (!result) {
+    result = result1;
+  }
+  if (!result) {
+    result = result2;
+  }
+  if (!result) {
+    result = type.type === tmp(1980).CollectiblesItemType.EXTERNAL_SKU;
+  }
+  if (!result) {
+    let currency;
+    const shouldHideGiftingForCurrency = CollectiblesUtils.shouldHideGiftingForCurrency;
+    CollectiblesUtils;
+    if (result3 != null) {
+      currency = result3.currency;
+    }
+    result = shouldHideGiftingForCurrency(currency);
+  }
+  if (!result) {
+    const tmpResult2 = BillingPlatformUtils;
+    result = !tmpResult2.isCollectibleGiftingSupported();
+  }
+  return !result;
+});
+let result = size.fileFinishedImporting("modules/collectibles/hooks/useCanGiftProduct.tsx");
+
+export const useCanGiftProduct = tmp2;

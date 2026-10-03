@@ -1,26 +1,31 @@
 // Module ID: 10922
 // Function ID: 10923
 // Name: openAppStoreOverlayBottomSheet
-// Dependencies: [1074, 4809, 10923, 1981, 7304, 1110, 10919, 2]
+// Dependencies: [1085, 4854, 10923, 1987, 7202, 1121, 10919, 2]
 // Exports: openAppStoreOverlayBottomSheet
 
 // Module 10922 (openAppStoreOverlayBottomSheet)
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
-import AnalyticsActions from "AnalyticsActions" /* 7304 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
+import AnalyticsActions from "AnalyticsActions" /* 7202 */;
 import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 10919 */;
-import Constants from "Constants" /* 1074 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, closure_1, importDefault;
 
+let c3;
+let closure_4;
 ({ AnalyticEvents: c3, ComponentActions: closure_4 } = Constants);
 let result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/openAppStoreOverlayBottomSheet.tsx");
 
 export const openAppStoreOverlayBottomSheet = function openAppStoreOverlayBottomSheet(appId, arg1, onOverlaySurfaceClick, trackOverlayCarouselScroll) {
+  let closure_0;
   _require = arg1;
   importDefault = onOverlaySurfaceClick;
   appId = appId.appId;
-  require("ActionSheetActionCreators").openLazy(require("asyncRequireImpl")(appId[2], appId.paths), "QuestAppStoreOverlayBottomSheet", {
+  let obj = require("ActionSheetActionCreators");
+  const obj2 = {
     metadata: appId,
     trackOverlayCarouselScroll,
     onOverlaySurfaceClick,
@@ -38,12 +43,14 @@ export const openAppStoreOverlayBottomSheet = function openAppStoreOverlayBottom
         tmp(arg0);
       }
       closure_1 = appId;
-      closure_2 = arg0;
-      const result = AppStoreOverlayTelemetryManager.setAppStoreOverlayOpen({
+      let closure_2 = arg0;
+      const obj = {
         trackOverlayEvent(arg0, arg1) {
-          return closure_0(arg0, closure_1, closure_0(appId[4]).AppStoreOverlayVariant.CUSTOM, arg1, closure_2);
+          return closure_0(arg0, closure_1, closure_2_0(appId[4]).AppStoreOverlayVariant.CUSTOM, arg1, closure_2);
         }
-      });
+      };
+      const result = AppStoreOverlayTelemetryManager.setAppStoreOverlayOpen(obj);
     }
-  });
+  };
+  obj.openLazy(require("asyncRequire")(appId[2], appId.paths), "QuestAppStoreOverlayBottomSheet", obj2);
 };

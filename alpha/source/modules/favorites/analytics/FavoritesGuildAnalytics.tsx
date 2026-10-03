@@ -1,20 +1,22 @@
-// Module ID: 9889
-// Function ID: 9890
+// Module ID: 10044
+// Function ID: 10045
 // Name: FavoritesGuildAnalytics
-// Dependencies: [4684, 1074, 2069, 1241, 2]
+// Dependencies: [4699, 1085, 2077, 1252, 2]
 // Exports: consumeNextFavoritesGuildViewSource, setNextFavoritesGuildViewSource, trackFavoritesGuildAddToFavorites, trackFavoritesGuildOrderUpdated, trackFavoritesGuildRemoveFromFavorites, trackFavoritesGuildVisibilitySettingToggled
 
-// Module 9889 (FavoritesGuildAnalytics)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4684 */;
+// Module 10044 (FavoritesGuildAnalytics)
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import FavoritesUtils from "FavoritesUtils" /* 2077 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = Constants.AnalyticEvents;
 let manual_browsing = "manual_browsing";
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/favorites/analytics/FavoritesGuildAnalytics.tsx");
 
 export const setNextFavoritesGuildViewSource = function setNextFavoritesGuildViewSource(intro_dc) {
+  const obj = FavoritesUtils;
   if (!obj.isFavoritesGuildId(SelectedGuildStore.getGuildId())) {
     manual_browsing = intro_dc;
   }
@@ -24,14 +26,21 @@ export function consumeNextFavoritesGuildViewSource() {
   return manual_browsing;
 }
 export const trackFavoritesGuildAddToFavorites = function trackFavoritesGuildAddToFavorites(source, type, total_favorites) {
-  AnalyticsUtilsDefault.track(AnalyticEvents.FAVORITES_GUILD_ADD_TO_FAVORITES, { source, channel_type: type, total_favorites });
+  const obj = AnalyticsUtilsDefault;
+  const obj2 = { source, channel_type: type, total_favorites };
+  obj.track(AnalyticEvents.FAVORITES_GUILD_ADD_TO_FAVORITES, obj2);
 };
 export const trackFavoritesGuildRemoveFromFavorites = function trackFavoritesGuildRemoveFromFavorites(type, length) {
-  AnalyticsUtilsDefault.track(AnalyticEvents.FAVORITES_GUILD_REMOVE_FROM_FAVORITES, { channel_type: type, total_favorites: length });
+  const obj = AnalyticsUtilsDefault;
+  const obj2 = { channel_type: type, total_favorites: length };
+  obj.track(AnalyticEvents.FAVORITES_GUILD_REMOVE_FROM_FAVORITES, obj2);
 };
 export const trackFavoritesGuildOrderUpdated = function trackFavoritesGuildOrderUpdated() {
-  AnalyticsUtilsDefault.track(AnalyticEvents.FAVORITES_GUILD_ORDER_UPDATED);
+  const obj = AnalyticsUtilsDefault;
+  obj.track(AnalyticEvents.FAVORITES_GUILD_ORDER_UPDATED);
 };
 export const trackFavoritesGuildVisibilitySettingToggled = function trackFavoritesGuildVisibilitySettingToggled(auto, is_visible) {
-  AnalyticsUtilsDefault.track(AnalyticEvents.FAVORITES_GUILD_SETTING_TOGGLED, { source: auto, is_visible });
+  const obj = AnalyticsUtilsDefault;
+  const obj2 = { source: auto, is_visible };
+  obj.track(AnalyticEvents.FAVORITES_GUILD_SETTING_TOGGLED, obj2);
 };

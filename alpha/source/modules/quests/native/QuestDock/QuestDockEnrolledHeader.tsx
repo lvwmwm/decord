@@ -1,43 +1,191 @@
-// Module ID: 14931
-// Function ID: 14932
+// Module ID: 14988
+// Function ID: 14989
 // Name: QuestDockEnrolledHeader
-// Dependencies: [32, 19, 17, 21, 4845, 14843, 10886, 10955, 5945, 14874, 4841, 2]
+// Dependencies: [32, 19, 17, 14892, 21, 587, 4890, 558, 576, 14921, 10911, 10955, 5626, 10723, 14931, 4886, 2]
 
-// Module 14931 (QuestDockEnrolledHeader)
-import Text_Text from "Text/Text" /* 4841 */;
-import QuestTypes from "QuestTypes" /* 5945 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 10886 */;
+// Module 14988 (QuestDockEnrolledHeader)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import QuestTypes from "QuestTypes" /* 5626 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10723 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 10911 */;
 import QuestCopyHooks from "QuestCopyHooks" /* 10955 */;
-import QuestDockCreativeContext from "QuestDockCreativeContext" /* 14843 */;
-import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 14874 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+import QuestDockConstants from "QuestDockConstants" /* 14892 */;
+import QuestDockCreativeContext from "QuestDockCreativeContext" /* 14921 */;
+import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 14931 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4845);
-let closure_7 = createStyles.createStyles({ wrapper: { alignItems: "center", display: "flex", flexDirection: "row", flexGrow: 1, flexShrink: 1, gap: 8, justifyContent: "center", padding: 8 }, progressIndicatorWrapper: { flexGrow: 0, flexShrink: 0 }, copy: { flexGrow: 1, flexShrink: 1 } });
-const size = fn(2);
+let hasOwnProperty;
+let metroRequire;
+const View = react_native.View;
+const QUEST_DOCK_COLLAPSED_HEIGHT = QuestDockConstants.QUEST_DOCK_COLLAPSED_HEIGHT;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+const PX_8 = nativeDefault.space.PX_8;
+let c7 = "heading-md/semibold";
+let c8 = "text-sm/medium";
+let closure_9 = QUEST_DOCK_COLLAPSED_HEIGHT - 2 * PX_8;
+let obj = { wrapper: { alignItems: "center", display: "flex", flexDirection: "row", flexGrow: 1, flexShrink: 1, gap: 8, justifyContent: "center", padding: PX_8 }, progressIndicatorWrapper: { flexGrow: 0, flexShrink: 0 }, copy: { flexGrow: 1, flexShrink: 1, minWidth: 0 } };
+let closure_10 = createStyles.createStyles(obj);
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let items;
+  let items1;
+  const obj = react2;
+  const cResult = obj.c(22);
+  const obj2 = QuestDockCreativeContext;
+  const questDockQuest = obj2.useQuestDockQuest();
+  const tmp5 = closure_10();
+  const obj3 = hooks_QuestHooks;
+  const questTaskDetails = obj3.useQuestTaskDetails(questDockQuest);
+  const obj4 = hooks_QuestHooks;
+  const first = _slicedToArray(obj4.useTaskPlatformScreen(questDockQuest, questTaskDetails), 1)[0];
+  const obj5 = QuestCopyHooks;
+  const questBarTitle = obj5.useQuestBarTitle(questDockQuest);
+  if (cResult[0] === first) {
+    let tmp9;
+    if (cResult[1] === questDockQuest) {
+      tmp9 = cResult[2];
+    }
+    const tmpResult = QuestCopyHooks;
+    const questBarSubtitle = tmpResult.useQuestBarSubtitle(tmp9);
+    const tmpResult3 = useScaledTextLineHeight;
+    const scaledTextLineHeight = tmpResult3.useScaledTextLineHeight(c7);
+    useScaledTextLineHeight;
+    const tmp11 = c7;
+    const tmp14 = c8;
+    if (cResult[3] === questDockQuest) {
+      let tmp17;
+      if (cResult[4] === questTaskDetails.percentComplete) {
+        tmp17 = cResult[5];
+      }
+      if (cResult[6] === tmp5.progressIndicatorWrapper) {
+        let tmp21;
+        let tmp25;
+        if (cResult[7] === tmp17) {
+          tmp21 = cResult[8];
+        }
+        if (cResult[9] !== questBarTitle) {
+          const obj6 = { variant: tmp11, color: "mobile-text-heading-primary", lineClamp: 1, maxFontSizeMultiplier: 2, children: questBarTitle };
+          const tmp27 = hasOwnProperty(Text_Text.Text, obj6);
+          cResult[9] = questBarTitle;
+          cResult[10] = tmp27;
+          tmp25 = tmp27;
+        } else {
+          tmp25 = cResult[10];
+        }
+        if (cResult[11] === tmp15 <= tmp16) {
+          let tmp29;
+          if (cResult[12] === questBarSubtitle) {
+            tmp29 = cResult[13];
+          }
+          if (cResult[14] === tmp5.copy) {
+            if (cResult[15] === tmp25) {
+              let tmp32;
+              if (cResult[16] === tmp29) {
+                tmp32 = cResult[17];
+              }
+              if (cResult[18] === tmp5.wrapper) {
+                if (cResult[19] === tmp21) {
+                  let tmp36;
+                  if (cResult[20] === tmp32) {
+                    tmp36 = cResult[21];
+                  }
+                  return tmp36;
+                }
+              }
+              const obj7 = { style: tmp5.wrapper, children: items };
+              items = [tmp21, tmp32];
+              const tmp39 = metroRequire(View, obj7);
+              cResult[18] = tmp5.wrapper;
+              cResult[19] = tmp21;
+              cResult[20] = tmp32;
+              cResult[21] = tmp39;
+              tmp36 = tmp39;
+            }
+          }
+          const obj8 = { style: tmp5.copy, children: items1 };
+          items1 = [tmp25, tmp29];
+          const tmp35 = metroRequire(View, obj8);
+          cResult[14] = tmp5.copy;
+          cResult[15] = tmp25;
+          cResult[16] = tmp29;
+          cResult[17] = tmp35;
+          tmp32 = tmp35;
+        }
+        let tmp30 = null;
+        if (tmp15 <= tmp16) {
+          const obj9 = { variant: tmp14, color: "text-muted", lineClamp: 1, children: questBarSubtitle };
+          tmp30 = hasOwnProperty(tmp(4886).Text, obj9);
+        }
+        cResult[11] = tmp15 <= tmp16;
+        cResult[12] = questBarSubtitle;
+        cResult[13] = tmp30;
+        tmp29 = tmp30;
+      }
+      const obj10 = { style: tmp5.progressIndicatorWrapper, children: tmp17 };
+      const tmp24 = hasOwnProperty(View, obj10);
+      cResult[6] = tmp5.progressIndicatorWrapper;
+      cResult[7] = tmp17;
+      cResult[8] = tmp24;
+      tmp21 = tmp24;
+    }
+    const obj11 = { quest: questDockQuest, size: "x-sm", progress: questTaskDetails.percentComplete, loading: false, hasConfetti: true };
+    const tmp20 = hasOwnProperty(QuestProgressIndicatorDefault, obj11);
+    cResult[3] = questDockQuest;
+    cResult[4] = questTaskDetails.percentComplete;
+    cResult[5] = tmp20;
+    tmp17 = tmp20;
+  }
+  const obj12 = { quest: questDockQuest, isExpanded: false, activeScreen: first, sourceQuestContent: QuestTypes.QuestContent.QUEST_BAR_MOBILE };
+  cResult[0] = first;
+  cResult[1] = questDockQuest;
+  cResult[2] = obj12;
+  tmp9 = obj12;
+}) : (() => {
+  let items;
+  let items1;
+  let obj11;
+  const obj = QuestDockCreativeContext;
+  const questDockQuest = obj.useQuestDockQuest();
+  const tmp4 = closure_10();
+  const obj2 = hooks_QuestHooks;
+  const questTaskDetails = obj2.useQuestTaskDetails(questDockQuest);
+  const obj3 = hooks_QuestHooks;
+  const first = _slicedToArray(obj3.useTaskPlatformScreen(questDockQuest, questTaskDetails), 1)[0];
+  const obj4 = QuestCopyHooks;
+  const questBarTitle = obj4.useQuestBarTitle(questDockQuest);
+  const obj5 = QuestCopyHooks;
+  const obj6 = { quest: questDockQuest, isExpanded: false, activeScreen: first, sourceQuestContent: QuestTypes.QuestContent.QUEST_BAR_MOBILE };
+  const questBarSubtitle = obj5.useQuestBarSubtitle(obj6);
+  const obj7 = useScaledTextLineHeight;
+  const scaledTextLineHeight = obj7.useScaledTextLineHeight(variant);
+  const obj9 = { style: tmp4.wrapper, children: items };
+  const obj10 = { style: tmp4.progressIndicatorWrapper, children: hasOwnProperty(QuestProgressIndicatorDefault, obj11) };
+  const obj8 = useScaledTextLineHeight;
+  const scaledTextLineHeight1 = obj8.useScaledTextLineHeight(c8);
+  obj11 = { quest: questDockQuest, size: "x-sm", progress: questTaskDetails.percentComplete, loading: false, hasConfetti: true };
+  items = [hasOwnProperty(View, obj10), ];
+  const obj12 = { style: tmp4.copy, children: items1 };
+  items1 = [, ];
+  const obj13 = { variant, color: "mobile-text-heading-primary", lineClamp: 1, maxFontSizeMultiplier: 2, children: questBarTitle };
+  items1[0] = hasOwnProperty(Text_Text.Text, obj13);
+  let tmp14Result = null;
+  const tmp10 = c8;
+  const tmp14 = hasOwnProperty;
+  if (scaledTextLineHeight + scaledTextLineHeight1 <= closure_9) {
+    const obj14 = { variant: tmp10, color: "text-muted", lineClamp: 1, children: questBarSubtitle };
+    tmp14Result = tmp14(Text_Text.Text, obj14);
+  }
+  items1[1] = tmp14Result;
+  items[1] = metroRequire(View, obj12);
+  return metroRequire(View, obj9);
+}));
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockEnrolledHeader.tsx");
 
-export default noop.memo(function QuestDockEnrolledHeader() {
-  const questDockQuest = QuestDockCreativeContext.useQuestDockQuest();
-  const tmp2 = closure_7();
-  const questTaskDetails = hooks_QuestHooks.useQuestTaskDetails(questDockQuest);
-  const obj3 = hooks_QuestHooks;
-  const questBarTitle = QuestCopyHooks.useQuestBarTitle(questDockQuest);
-  const obj5 = QuestCopyHooks;
-  const obj7 = { style: tmp2.wrapper, children: null };
-  const obj8 = { style: tmp2.progressIndicatorWrapper, children: null };
-  const questBarSubtitle = obj5.useQuestBarSubtitle({ quest: questDockQuest, isExpanded: false, activeScreen: _slicedToArray(obj3.useTaskPlatformScreen(questDockQuest, questTaskDetails), 1)[0], sourceQuestContent: QuestTypes.QuestContent.QUEST_BAR_MOBILE });
-  obj8.children = hasOwnProperty(QuestProgressIndicatorDefault, { quest: questDockQuest, size: "x-sm", progress: questTaskDetails.percentComplete, loading: false, hasConfetti: true });
-  const items = [hasOwnProperty(View, obj8), ];
-  const obj10 = { style: tmp2.copy, children: null };
-  const items1 = [hasOwnProperty(Text_Text.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: questBarTitle }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/medium", color: "text-muted", children: questBarSubtitle })];
-  obj10.children = items1;
-  items[1] = timestampProducer(View, obj10);
-  obj7.children = items;
-  return timestampProducer(View, obj7);
-});
+export default memoResult;

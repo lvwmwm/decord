@@ -1,12 +1,12 @@
-// Module ID: 6918
-// Function ID: 6919
+// Module ID: 6816
+// Function ID: 6817
 // Name: hasFlag
-// Dependencies: [1074, 1385, 2]
+// Dependencies: [1085, 1390, 2]
 // Exports: default
 
-// Module 6918 (hasFlag)
-import Constants from "Constants" /* 1074 */;
-import FlagUtils from "FlagUtils" /* 1385 */;
+// Module 6816 (hasFlag)
+import Constants from "Constants" /* 1085 */;
+import FlagUtils from "FlagUtils" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 const ActivityFlags = Constants.ActivityFlags;
@@ -18,10 +18,12 @@ export default function hasFlag(flags, arg1) {
     let hasFlagResult = null != flags && null != flags.flags;
     if (hasFlagResult) {
       let num = flags.flags;
+      const hasFlag = FlagUtils.hasFlag;
+      FlagUtils;
       if (num == null) {
         num = 0;
       }
-      hasFlagResult = FlagUtils.hasFlag(num, arg1);
+      hasFlagResult = hasFlag(num, arg1);
     }
     tmp = hasFlagResult;
   }

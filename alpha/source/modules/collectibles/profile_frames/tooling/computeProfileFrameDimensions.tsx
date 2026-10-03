@@ -1,58 +1,69 @@
-// Module ID: 7837
-// Function ID: 7838
+// Module ID: 7881
+// Function ID: 7882
 // Name: computeProfileFrameDimensions
-// Dependencies: [7838, 7835, 7836, 2]
+// Dependencies: [7882, 7879, 7880, 2]
 // Exports: computeProfileFrameDimensions
 
-// Module 7837 (computeProfileFrameDimensions)
+// Module 7881 (computeProfileFrameDimensions)
 import size from "module_2" /* 2 */;
+
+let layer;
 
 const result = size.fileFinishedImporting("modules/collectibles/profile_frames/tooling/computeProfileFrameDimensions.tsx");
 
 export const computeProfileFrameDimensions = function computeProfileFrameDimensions(arr) {
-  innerWidth = innerWidth(7838).DefaultProfileFrameDimensions.INNER_WIDTH;
+  let innerWidth;
+  innerWidth = innerWidth(7882).DefaultProfileFrameDimensions.INNER_WIDTH;
   const mapped = arr.map((dims) => Math.round(Math.max(0, (dims.dims.width - innerWidth) / 2)));
   let overflowHorizontal = 0;
   if (mapped.length > 0) {
+    let tmp2 = globalThis;
     const _Math = Math;
     const items = [];
-    HermesBuiltin.arraySpread(mapped, 0);
+    let tmp3 = items;
+    HermesBuiltin.arraySpread(items, mapped, 0);
     const _Math2 = Math;
-    overflowHorizontal = HermesBuiltin.apply(items, Math);
+    overflowHorizontal = HermesBuiltin.apply(max, items, Math);
   }
   const found = arr.filter((layer) => {
     layer = layer.layer;
-    let tmp3 = layer.type === innerWidth(7835).ProfileFrameLayerType.STAPLE;
+    let tmp3 = layer.type === innerWidth(dependencyMap[1]).ProfileFrameLayerType.STAPLE;
+    const tmp = innerWidth;
+    const tmp2 = dependencyMap;
     if (tmp3) {
-      tmp3 = layer.anchor === innerWidth(7836).ProfileFrameLayerAnchor.TOP;
+      tmp3 = layer.anchor === tmp(tmp2[2]).ProfileFrameLayerAnchor.TOP;
     }
     return tmp3;
   });
-  const mapped1 = found.map((dims) => Math.max(0, dims.dims.height - (716 - innerWidth(7838).DefaultProfileFrameDimensions.OVERFLOW_TOP)));
+  const mapped1 = found.map((dims) => Math.max(0, dims.dims.height - (716 - innerWidth(dependencyMap[0]).DefaultProfileFrameDimensions.OVERFLOW_TOP)));
   let overflowTop = 0;
   if (mapped1.length > 0) {
     const _Math3 = Math;
+    const max2 = Math.max;
     const items1 = [];
-    HermesBuiltin.arraySpread(mapped1, 0);
+    HermesBuiltin.arraySpread(items1, mapped1, 0);
     const _Math4 = Math;
-    overflowTop = HermesBuiltin.apply(items1, Math);
+    overflowTop = HermesBuiltin.apply(max2, items1, Math);
   }
   const found1 = arr.filter((layer) => {
     layer = layer.layer;
-    let tmp3 = layer.type === innerWidth(7835).ProfileFrameLayerType.STAPLE;
+    let tmp3 = layer.type === innerWidth(dependencyMap[1]).ProfileFrameLayerType.STAPLE;
+    const tmp = innerWidth;
+    const tmp2 = dependencyMap;
     if (tmp3) {
-      tmp3 = layer.anchor === innerWidth(7836).ProfileFrameLayerAnchor.BOTTOM;
+      tmp3 = layer.anchor === tmp(tmp2[2]).ProfileFrameLayerAnchor.BOTTOM;
     }
     return tmp3;
   });
-  const mapped2 = found1.map((dims) => Math.max(0, dims.dims.height - (424 - innerWidth(7838).DefaultProfileFrameDimensions.OVERFLOW_BOTTOM)));
+  const mapped2 = found1.map((dims) => Math.max(0, dims.dims.height - (424 - innerWidth(dependencyMap[0]).DefaultProfileFrameDimensions.OVERFLOW_BOTTOM)));
   let overflowBottom = 0;
   if (mapped2.length > 0) {
     const _Math5 = Math;
+    const max3 = Math.max;
     const items2 = [];
-    HermesBuiltin.arraySpread(mapped2, 0);
+    HermesBuiltin.arraySpread(items2, mapped2, 0);
     const _Math6 = Math;
-    overflowBottom = HermesBuiltin.apply(items2, Math);
+    overflowBottom = HermesBuiltin.apply(max3, items2, Math);
   }
   return { innerWidth, overflowTop, overflowBottom, overflowHorizontal };
 };

@@ -1,33 +1,110 @@
-// Module ID: 9652
-// Function ID: 9653
+// Module ID: 9681
+// Function ID: 9682
 // Name: VideoBackgroundOptions
-// Dependencies: [19, 17, 6594, 21, 4845, 576, 9309, 1115, 6109, 7544, 9653, 2]
-// Exports: fromVideoBackgroundRadioValue, parseVideoBackgroundRadioValue, toVideoBackgroundRadioValue, useVideoBackgroundRadioOptions
+// Dependencies: [19, 17, 6484, 21, 4890, 587, 558, 576, 9318, 1126, 5999, 7588, 9682, 2]
+// Exports: fromVideoBackgroundRadioValue, parseVideoBackgroundRadioValue, toVideoBackgroundRadioValue
 
-// Module 9652 (VideoBackgroundOptions)
-import nativeDefault from "native" /* 576 */;
-import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 9309 */;
-import noop from "module_19" /* 19 */;
+// Module 9681 (VideoBackgroundOptions)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 587 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 6484 */;
+import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 9318 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const Image = fn(17).Image;
-const BLUR_BACKGROUND_OPTION = fn(6594).BLUR_BACKGROUND_OPTION;
-const jsx = fn(21).jsx;
+let size;
+const Image = react_native.Image;
+const BLUR_BACKGROUND_OPTION = VideoBackgroundConstants.BLUR_BACKGROUND_OPTION;
+const jsx = Fragment.jsx;
 const none = "none";
-const createStyles = fn(4845);
-let obj2 = { imageThumbnail: null };
-let size = { width: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, height: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, borderRadius: nativeDefault.radii.lg };
-obj2.imageThumbnail = size;
-let closure_7 = createStyles.createStyles(obj2);
-size = fn(2);
+let obj = { imageThumbnail: size };
+size = { width: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, height: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, borderRadius: nativeDefault.radii.lg };
+let closure_7 = createStyles.createStyles(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let imageThumbnail;
+  let intl;
+  let intl2;
+  let tmp11;
+  let tmp14;
+  let tmp8;
+  const obj = require("react");
+  const cResult = obj.c(5);
+  const tmp5 = closure_7();
+  _require = tmp5;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const _Object = Object;
+    const values = Object.values(getDefaultBackgroundDataDefault());
+    const found = values.filter((source) => "" !== source.source);
+    cResult[0] = found;
+    first = found;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { value: none, label: intl.string(require("intl").t.fUdMeO), icon: null };
+    intl = tmp2(1126).intl;
+    ({ IconComponent: require("DenyIcon").DenyIcon });
+    const TableRowIcon = tmp2(5999).TableRowIcon;
+    cResult[1] = obj2;
+    tmp8 = obj2;
+  } else {
+    tmp8 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj4 = { value: BLUR_BACKGROUND_OPTION, label: intl2.string(require("intl").t.LhSyL8), icon: null };
+    intl2 = tmp2(1126).intl;
+    ({ IconComponent: require("BlurBackgroundIcon").BlurBackgroundIcon });
+    const TableRowIcon2 = tmp2(5999).TableRowIcon;
+    cResult[2] = obj4;
+    tmp11 = obj4;
+  } else {
+    tmp11 = cResult[2];
+  }
+  if (cResult[3] !== tmp5) {
+    const items = [tmp8, tmp11];
+    HermesBuiltin.arraySpread(items, first.map((uri) => ({ value: uri.id, label: uri.name, icon: null })), 2);
+    cResult[3] = tmp5;
+    cResult[4] = items;
+    tmp14 = items;
+  } else {
+    tmp14 = cResult[4];
+  }
+  return tmp14;
+}) : (() => {
+  let imageThumbnail;
+  let intl;
+  let intl2;
+  _require = closure_7();
+  const values = Object.values(getDefaultBackgroundDataDefault());
+  const found = values.filter((source) => "" !== source.source);
+  const obj = { value: none, label: intl.string(require("intl").t.fUdMeO), icon: null };
+  intl = require("intl").intl;
+  const obj2 = { IconComponent: require("DenyIcon").DenyIcon };
+  const TableRowIcon = require("TableRowIcon").TableRowIcon;
+  const items = [obj, ];
+  const obj3 = { value: BLUR_BACKGROUND_OPTION, label: intl2.string(require("intl").t.LhSyL8), icon: null };
+  intl2 = require("intl").intl;
+  ({ IconComponent: require("BlurBackgroundIcon").BlurBackgroundIcon });
+  const TableRowIcon2 = require("TableRowIcon").TableRowIcon;
+  items[1] = obj3;
+  HermesBuiltin.arraySpread(items, found.map((uri) => ({ value: uri.id, label: uri.name, icon: null })), 2);
+  return items;
+});
+size = size_mod;
 const result = size.fileFinishedImporting("modules/video_backgrounds/native/VideoBackgroundOptions.tsx");
 
 export const NONE_VALUE = "none";
 export const toVideoBackgroundRadioValue = function toVideoBackgroundRadioValue(lastUsedVideoBackgroundOption) {
+  let tmp2;
   if (null == lastUsedVideoBackgroundOption) {
-    let tmp2 = none;
+    tmp2 = none;
   } else {
     tmp2 = lastUsedVideoBackgroundOption;
     if (lastUsedVideoBackgroundOption !== BLUR_BACKGROUND_OPTION) {
@@ -57,24 +134,4 @@ export const parseVideoBackgroundRadioValue = function parseVideoBackgroundRadio
   }
   return NumberResult;
 };
-export const useVideoBackgroundRadioOptions = function useVideoBackgroundRadioOptions() {
-  _require = closure_7();
-  const values = Object.values(getDefaultBackgroundDataDefault());
-  const found = values.filter((source) => "" !== source.source);
-  let obj = { value: none, label: null, icon: null };
-  const intl = require("util").intl;
-  obj.label = intl.string(require("util").t.fUdMeO);
-  obj.icon = jsx(require("TableRowIcon").TableRowIcon, { IconComponent: require("DenyIcon").DenyIcon });
-  const items = [obj, ];
-  const obj3 = { value: BLUR_BACKGROUND_OPTION, label: null, icon: null };
-  const intl2 = require("util").intl;
-  obj3.label = intl2.string(require("util").t.LhSyL8);
-  const obj2 = { IconComponent: require("DenyIcon").DenyIcon };
-  obj3.icon = jsx(require("TableRowIcon").TableRowIcon, { IconComponent: require("BlurBackgroundIcon").BlurBackgroundIcon });
-  items[1] = obj3;
-  HermesBuiltin.arraySpread(found.map((uri) => {
-    const obj = { value: uri.id, label: uri.name, icon: <Image source={{ uri: arg0.source }} style={imageThumbnail.imageThumbnail} resizeMode="cover" /> };
-    return obj;
-  }), 2);
-  return items;
-};
+export const useVideoBackgroundRadioOptions = tmp3;

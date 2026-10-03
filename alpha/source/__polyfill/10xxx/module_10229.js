@@ -1,79 +1,106 @@
 // Module ID: 10229
 // Function ID: 10230
-// Dependencies: [41, 42, 93, 95, 98, 10217, 10090, 10091, 10219]
+// Dependencies: [10230, 10232, 10233, 10234, 10235, 10236, 10237, 10157, 10164, 10166, 10238, 10239, 10203, 10197]
+// Exports: createCasualConfiguration, parse, parseDate
 
 // Module 10229
-import _mod10219 from "module_10219" /* 10219 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import includeCommonConfiguration2 from "includeCommonConfiguration" /* 10197 */;
+import _mod10203 from "module_10203" /* 10203 */;
+import _mod10230 from "module_10230" /* 10230 */;
+import _mod10232 from "module_10232" /* 10232 */;
+import _mod10233 from "module_10233" /* 10233 */;
+import _mod10234 from "module_10234" /* 10234 */;
+import _mod10235 from "module_10235" /* 10235 */;
+import _mod10236 from "module_10236" /* 10236 */;
+import _mod10237 from "module_10237" /* 10237 */;
+import _mod10238 from "module_10238" /* 10238 */;
+import _mod10239 from "module_10239" /* 10239 */;
+import { Chrono } from "module_10157" /* 10157 */;
 
-const RUTimeUnitCasualRelativeFormatParser = require;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
+const require = globalThis.__r;
+
+function createConfiguration(flag) {
+  let items;
+  let items1;
+  if (flag === undefined) {
+    flag = true;
   }
+  const obj = { parsers: items, refiners: items1 };
+  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
+  items = [new module_10230.default(), , , , ];
+  new module_10230.default();
+  items[1] = new module_10234.default();
+  new module_10234.default();
+  items[2] = new module_10239.default();
+  new module_10239.default();
+  items[3] = new module_10235.default();
+  new module_10235.default();
+  items[4] = new module_10236.default();
+  new module_10236.default();
+  items1 = [new module_10238.default(), , ];
+  new module_10238.default();
+  items1[1] = new module_10237.default();
+  new module_10237.default();
+  items1[2] = new module_10232.default();
+  new module_10232.default();
+  const result = includeCommonConfiguration(obj, flag);
+  const refiners = result.refiners;
+  result.refiners = refiners.filter((item) => !(item instanceof module_10203.default));
+  return result;
 }
-class RUTimeUnitCasualRelativeFormatParser {
-  constructor() {
-    self = this;
-    tmp = c2(this, RUTimeUnitCasualRelativeFormatParser);
-    tmp2 = closure_4;
-    obj = closure_4(RUTimeUnitCasualRelativeFormatParser);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
+const fn = this && this.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
+  } else {
+    tmp2 = __esModule;
   }
+  return tmp2;
+});
+function createCasualConfiguration() {
+  const tmp = createConfiguration(false);
+  const parsers = tmp.parsers;
+  const unshift = parsers.unshift;
+  const _default = new module_10233.default();
+  unshift(_default);
+  return tmp;
 }
-_inherits(RUTimeUnitCasualRelativeFormatParser, _mod10219.AbstractParserWithLeftRightBoundaryChecking);
-const entry = {
-  key: "innerPatternString",
-  value: function innerPatternString(arg0) {
-    return "(\u044D\u0442\u0438|\u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0435|\u043F\u0440\u043E\u0448\u043B\u044B\u0435|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0435|\u043F\u043E\u0441\u043B\u0435|\u0441\u043F\u0443\u0441\u0442\u044F|\u0447\u0435\u0440\u0435\u0437|\\+|-)\\s*(" + RUTimeUnitCasualRelativeFormatParser(10217).TIME_UNITS_PATTERN + ")";
-  }
+const module_10230 = fn(_mod10230);
+const module_10232 = fn(_mod10232);
+const module_10233 = fn(_mod10233);
+const module_10234 = fn(_mod10234);
+const module_10235 = fn(_mod10235);
+const module_10236 = fn(_mod10236);
+const module_10237 = fn(_mod10237);
+const module_10238 = fn(_mod10238);
+const module_10239 = fn(_mod10239);
+const module_10203 = fn(_mod10203);
+const configuration = createConfiguration(false);
+let parsers = configuration.parsers;
+let unshift = parsers.unshift;
+let _default = new module_10233.default();
+unshift(_default);
+const chrono = new Chrono(configuration);
+const chrono1 = new require("module_10157").Chrono(createConfiguration(true));
+const Chrono_export = require("module_10157").Chrono;
+
+export const parse = function parse(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parse(arg0, arg1, arg2);
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const formatted = arg1[1].toLowerCase();
-      const parseDurationResult = RUTimeUnitCasualRelativeFormatParser(10217).parseDuration(arg1[2]);
-      if ("\u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0435" !== formatted) {
-        if ("\u043F\u0440\u043E\u0448\u043B\u044B\u0435" !== formatted) {
-          let reverseDurationResult = parseDurationResult;
-        }
-        const ParsingComponents = tmp2(10091).ParsingComponents;
-        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
-      }
-      reverseDurationResult = tmp2(10090).reverseDuration(parseDurationResult);
-    }
-  }
-];
-
-export default _createClass(RUTimeUnitCasualRelativeFormatParser, items);
+export const parseDate = function parseDate(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parseDate(arg0, arg1, arg2);
+};
+export { createCasualConfiguration };
+export { createConfiguration };
+export { Chrono_export as Chrono };
+export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
+export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
+export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
+export const Meridiem = require("Meridiem").Meridiem;
+export const Weekday = require("Meridiem").Weekday;
+export const casual = chrono;
+export const strict = chrono1;

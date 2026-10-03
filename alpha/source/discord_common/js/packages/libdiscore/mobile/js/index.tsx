@@ -1,20 +1,23 @@
-// Module ID: 1351
-// Function ID: 1352
-// Name: LIBDISCORE_JSI
-// Dependencies: [17, 1352, 2, 1353]
+// Module ID: 563
+// Function ID: 564
+// Name: ExperimentCacher
+// Dependencies: [17, 564, 2, 565]
 // Exports: consumeLogs, crash, generateLaunchSignature, getFluxApi, getHttpClientAPI, registerDevLogListener, rustMultiply
 
-// Module 1351 (LIBDISCORE_JSI)
-import _mod17 from "module_17" /* 17 */;
-import global_types from "global_types" /* 1352 */;
-import clock from "clock" /* 1353 */;
+// Module 563 (ExperimentCacher)
+import react_native from "react-native" /* 17 */;
+import global_types from "global_types" /* 564 */;
+import clock from "clock" /* 565 */;
 import size from "module_2" /* 2 */;
 
-const NativeModules = _mod17.NativeModules;
+let LibDiscoreModule;
+const NativeModules = react_native.NativeModules;
 if (NativeModules.LibDiscoreModule) {
-  let LibDiscoreModule = NativeModules.LibDiscoreModule;
+  LibDiscoreModule = NativeModules.LibDiscoreModule;
 } else {
   const _Proxy = Proxy;
+  const self = this;
+  const self2 = this;
   const obj = {
     get() {
         const error = new Error("The package 'react-native-libdiscore-jsi-module' doesn't seem to be linked");
@@ -25,18 +28,18 @@ if (NativeModules.LibDiscoreModule) {
 }
 LibDiscoreModule.bridgeJSIFunctions();
 const LIBDISCORE_JSI = global_types.typedGlobal.LIBDISCORE_JSI;
+const ExperimentCacher = LIBDISCORE_JSI.ExperimentCacher;
 let result = size.fileFinishedImporting("../discord_common/js/packages/libdiscore/mobile/js/index.tsx");
-const prototype = function BlockedDomainsStore() {
-  return Object.create(new.target.prototype);
-}.prototype;
-prototype["isBlockedDomain"] = function isBlockedDomain(arg0) {
-  return LIBDISCORE_JSI.isBlockedDomain(arg0);
-};
-prototype["startFetchingBlockedDomains"] = function startFetchingBlockedDomains(arg0) {
-  const result = LIBDISCORE_JSI.startFetchingBlockedDomains(arg0);
-};
+class BlockedDomainsStore {
+  static isBlockedDomain(arg0) {
+    return LIBDISCORE_JSI.isBlockedDomain(arg0);
+  }
+  static startFetchingBlockedDomains(arg0) {
+    const result = LIBDISCORE_JSI.startFetchingBlockedDomains(arg0);
+  }
+}
 
-export const ExperimentCacher = LIBDISCORE_JSI.ExperimentCacher;
+export { ExperimentCacher };
 export const rustMultiply = function rustMultiply(arg0, arg1) {
   return LIBDISCORE_JSI.rustMultiply(arg0, arg1);
 };
@@ -44,7 +47,7 @@ export const consumeLogs = function consumeLogs() {
   return LIBDISCORE_JSI.consumeLogs();
 };
 export const monotonicNowMs = clock.monotonicNowMs;
-export const BlockedDomainsStore = prototype;
+export { BlockedDomainsStore };
 export const getFluxApi = function getFluxApi() {
   return LIBDISCORE_JSI.fluxApi;
 };

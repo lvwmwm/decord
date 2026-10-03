@@ -1,24 +1,24 @@
-// Module ID: 5034
-// Function ID: 5035
+// Module ID: 5079
+// Function ID: 5080
 // Name: guildHasOnboardingHome
-// Dependencies: [1074, 2069, 2]
+// Dependencies: [1085, 2077, 2]
 // Exports: default
 
-// Module 5034 (guildHasOnboardingHome)
-import FavoritesUtils from "FavoritesUtils" /* 2069 */;
-import Constants from "Constants" /* 1074 */;
+// Module 5079 (guildHasOnboardingHome)
+import FavoritesUtils from "FavoritesUtils" /* 2077 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
+let c2;
+let c3;
 ({ GuildFeatures: c2, ME: c3 } = Constants);
 const result = size.fileFinishedImporting("modules/guild_onboarding_home/guildHasOnboardingHome.tsx");
 
 export default function guildHasOnboardingHome(id) {
-  let isFavoritesGuildIdResult = null == id;
+  let isFavoritesGuildIdResult = null == id || id.id === _false;
   if (!isFavoritesGuildIdResult) {
-    isFavoritesGuildIdResult = id.id === React3;
-  }
-  if (!isFavoritesGuildIdResult) {
-    isFavoritesGuildIdResult = FavoritesUtils.isFavoritesGuildId(id.id);
+    const obj = FavoritesUtils;
+    isFavoritesGuildIdResult = obj.isFavoritesGuildId(id.id);
   }
   if (!isFavoritesGuildIdResult) {
     const features = id.features;

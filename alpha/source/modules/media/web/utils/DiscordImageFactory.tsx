@@ -1,30 +1,31 @@
-// Module ID: 5681
-// Function ID: 5682
+// Module ID: 7314
+// Function ID: 7315
 // Name: DiscordImageFactory
-// Dependencies: [5682, 5709, 2]
+// Dependencies: [7315, 7342, 2]
 
-// Module 5681 (DiscordImageFactory)
-import detectFile from "detectFile" /* 5682 */;
-import DiscordImagePng2 from "DiscordImagePng" /* 5709 */;
+// Module 7314 (DiscordImageFactory)
+import _mod7315 from "module_7315" /* 7315 */;
 import size from "module_2" /* 2 */;
 
+let tmp2;
+const DiscordImagePng2 = tmp2(7342);
 const result = size.fileFinishedImporting("modules/media/web/utils/DiscordImageFactory.tsx");
-const prototype = function DiscordImageFactory() {
-  return Object.create(new.target.prototype);
-}.prototype;
-prototype["create"] = function create(byteLength) {
-  const uint8Array = new Uint8Array(byteLength, 0, Math.min(64, byteLength.byteLength));
-  const detectFileResult = detectFile.detectFile(uint8Array);
-  let mimeType;
-  if (detectFileResult != null) {
-    mimeType = detectFileResult.mimeType;
+class DiscordImageFactory {
+  static create(byteLength) {
+    const uint8Array = new Uint8Array(byteLength, 0, Math.min(64, byteLength.byteLength));
+    const obj = _mod7315;
+    const detectFileResult = obj.detectFile(uint8Array);
+    let mimeType;
+    if (detectFileResult != null) {
+      mimeType = detectFileResult.mimeType;
+    }
+    let obj2 = null;
+    if ("image/png" === mimeType) {
+      const DiscordImagePng = DiscordImagePng2.DiscordImagePng;
+      obj2 = DiscordImagePng.create(byteLength);
+    }
+    return obj2;
   }
-  let obj2 = null;
-  if ("image/png" === mimeType) {
-    const DiscordImagePng = DiscordImagePng2.DiscordImagePng;
-    obj2 = DiscordImagePng.create(byteLength);
-  }
-  return obj2;
-};
+}
 
-export const DiscordImageFactory = prototype;
+export { DiscordImageFactory };

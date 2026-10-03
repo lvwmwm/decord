@@ -1,10 +1,10 @@
-// Module ID: 6562
-// Function ID: 6563
+// Module ID: 6445
+// Function ID: 6446
 // Name: getError
 // Dependencies: [2]
 // Exports: default
 
-// Module 6562 (getError)
+// Module 6445 (getError)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/auth/native/getError.tsx");
@@ -14,7 +14,7 @@ export default function getError(arg0, arg1) {
   if (null != arg1[arg0]) {
     const _Array = Array;
     let first = tmp;
-    if (Array.isArray(tmp)) {
+    if (Array.isArray(arg1[arg0])) {
       first = tmp[0];
     }
     tmp2 = first;

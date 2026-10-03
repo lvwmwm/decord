@@ -1,17 +1,17 @@
-// Module ID: 15346
-// Function ID: 15347
+// Module ID: 15403
+// Function ID: 15404
 // Name: ShowDevToolsSetting
-// Dependencies: [15347, 11215, 15344, 14348, 14590, 2]
+// Dependencies: [15404, 11129, 15401, 14402, 14646, 2]
 
-// Module 15346 (ShowDevToolsSetting)
-import DevToolsNavigator from "DevToolsNavigator" /* 14348 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14590 */;
-import StaffBadgeIcon from "StaffBadgeIcon" /* 15344 */;
-import DevToolsScreens from "DevToolsScreens" /* 15347 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 15403 (ShowDevToolsSetting)
+import DevToolsNavigator from "DevToolsNavigator" /* 14402 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14646 */;
+import StaffBadgeIcon from "StaffBadgeIcon" /* 15401 */;
+import DevToolsScreens from "DevToolsScreens" /* 15404 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
-const pressable = SettingBuilders.createPressable({
+const obj = {
   useTitle() {
     return "Show Dev Tools";
   },
@@ -20,11 +20,14 @@ const pressable = SettingBuilders.createPressable({
   onPress: DevToolsNavigator.navigateToDevTools,
   usePredicate: useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate,
   useSearchTerms: function getAdditionalSearchTerms() {
-    const items = [...Object.values(DevToolsScreens.DevToolsScreens), ...Object.values(DevToolsScreens.PerformanceTestingScreens)];
+    let values2;
+    const items = [...values(DevToolsScreens.DevToolsScreens), ...values2(DevToolsScreens.PerformanceTestingScreens)];
+    values2 = Object.values;
     return items.map((headerTitle) => headerTitle.headerTitle);
   },
   withArrow: true
-});
+};
+const pressable = SettingBuilders.createPressable(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/ShowDevToolsSetting.tsx");
 
 export default pressable;

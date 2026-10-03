@@ -1,68 +1,304 @@
-// Module ID: 16566
-// Function ID: 16567
+// Module ID: 16643
+// Function ID: 16644
 // Name: VibegrationsNativeStatusLine
-// Dependencies: [19, 17, 21, 576, 4845, 4560, 10815, 6816, 9804, 4841, 16567, 5621, 1115, 3714, 2]
-// Exports: default, laneTintFor, laneTintIndexFor
+// Dependencies: [19, 17, 21, 587, 4890, 558, 576, 4580, 10844, 6708, 12500, 4886, 16644, 1126, 3723, 5909, 2]
+// Exports: laneTintFor, laneTintIndexFor
 
-// Module 16566 (VibegrationsNativeStatusLine)
-import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import MagicWandIcon from "MagicWandIcon" /* 9804 */;
-import noop from "module_19" /* 19 */;
+// Module 16643 (VibegrationsNativeStatusLine)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 587 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import MagicWandIcon from "MagicWandIcon" /* 12500 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
+let line;
+
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+const View = react_native.View;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let items = [nativeDefault.colors.TEXT_BRAND, nativeDefault.colors.TEXT_FEEDBACK_POSITIVE, nativeDefault.colors.TEXT_FEEDBACK_WARNING, nativeDefault.colors.TEXT_FEEDBACK_INFO];
-const createStyles = fn(4845);
-let obj2 = { row: { flexDirection: "row", alignItems: "flex-start", paddingVertical: nativeDefault.space.PX_4 }, glyphGutter: { width: 40, marginRight: 12, alignItems: "center" }, label: { flex: 1 }, trailing: null, chevron: null };
-let obj3 = { flexDirection: "row", alignItems: "flex-start", paddingVertical: nativeDefault.space.PX_4 };
-obj2.trailing = { flexShrink: 0, marginLeft: nativeDefault.space.PX_8 };
-let obj4 = { flexShrink: 0, marginLeft: nativeDefault.space.PX_8 };
-obj2.chevron = { flexShrink: 0, marginLeft: nativeDefault.space.PX_4 };
-let closure_8 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsNativeStatusLine.tsx");
-
-export default function VibegrationsNativeStatusLine(live) {
-  const line = live.line;
-  let flag = live.settled;
+let length = items.length;
+let createStyles = createStyles_mod;
+let obj = { row: obj2, glyphGutter: { width: 40, marginRight: 12, alignItems: "center" }, label: { flex: 1 }, trailing: obj3, chevron: obj4 };
+obj2 = { flexDirection: "row", alignItems: "flex-start", paddingVertical: nativeDefault.space.PX_4 };
+createStyles = createStyles.createStyles;
+obj3 = { flexShrink: 0, marginLeft: nativeDefault.space.PX_8 };
+obj4 = { flexShrink: 0, marginLeft: nativeDefault.space.PX_4 };
+let closure_8 = createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((line) => {
+  let ChevronSmallRightIcon;
+  let TEXT_BRAND;
+  let crestColor;
+  let epoch;
+  let expanded;
+  let failed;
+  let glyph;
+  let inGutter;
+  let live;
+  let onToggle;
+  let presentation;
+  let settled;
+  let tint;
+  let trailing;
+  let tmp = line;
+  const tmp2 = glyph;
+  let obj = line(glyph[6]);
+  const cResult = obj.c(28);
+  line = line.line;
+  ({ live, settled, failed, presentation, tint, inGutter, trailing } = line);
+  glyph = line.glyph;
+  ({ crestColor, epoch, expanded, onToggle } = line);
+  let str = "headline";
+  const tmp4 = undefined !== settled && settled;
+  if (undefined !== presentation) {
+    str = presentation;
+  }
+  const tmp6 = undefined !== inGutter && inGutter;
+  let closure_3 = tmp6;
+  let num = 0;
+  if (undefined !== epoch) {
+    num = epoch;
+  }
+  const tmp8 = closure_8();
+  const row = tmp8;
+  if (undefined !== failed && failed) {
+    const tmp11 = trailing;
+    TEXT_BRAND = trailing(tmp2[3]).colors.TEXT_FEEDBACK_CRITICAL;
+  } else {
+    TEXT_BRAND = tint;
+    if (tint == null) {
+      TEXT_BRAND = trailing(tmp2[3]).colors.TEXT_BRAND;
+    }
+  }
+  let str2 = "text-feedback-critical";
+  if (!(undefined !== failed && failed)) {
+    let str3 = "text-muted";
+    if (!tmp4) {
+      let str4 = "text-default";
+      if ("detail" === str) {
+        str4 = "text-subtle";
+      }
+      str3 = str4;
+    }
+    str2 = str3;
+  }
+  const useToken = tmp(tmp2[7]).useToken;
+  tmp(tmp2[7]);
+  if ("detail" === str) {
+    tint = trailing(tmp2[3]).colors.TEXT_DEFAULT;
+  } else if (tint == null) {
+    tint = trailing(tmp2[3]).colors.TEXT_BRAND;
+  }
+  if ("detail" === str) {
+    crestColor = useToken(tint);
+  }
+  if (undefined !== expanded && expanded) {
+    ChevronSmallRightIcon = tmp(tmp2[8]).ChevronSmallDownIcon;
+  } else {
+    ChevronSmallRightIcon = tmp(tmp2[9]).ChevronSmallRightIcon;
+  }
+  closure_8 = tmp18;
+  if (cResult[0] === ChevronSmallRightIcon) {
+    if (cResult[1] === null != onToggle) {
+      if (cResult[2] === glyph) {
+        if (cResult[3] === TEXT_BRAND) {
+          if (cResult[4] === tmp6) {
+            if (cResult[5] === line) {
+              if (cResult[6] === tmp8.chevron) {
+                if (cResult[7] === tmp8.glyphGutter) {
+                  if (cResult[8] === tmp8.label) {
+                    if (cResult[9] === tmp8.row) {
+                      if (cResult[10] === tmp8.trailing) {
+                        if (cResult[11] === str2) {
+                          let tmp19;
+                          if (cResult[12] === trailing) {
+                            tmp19 = cResult[13];
+                          }
+                          if (cResult[14] === crestColor) {
+                            if (cResult[15] === num) {
+                              if (cResult[16] === live) {
+                                let tmp20;
+                                if (cResult[17] === tmp19) {
+                                  tmp20 = cResult[18];
+                                }
+                                let tmp24 = tmp20;
+                                if (null != onToggle) {
+                                  let tmp25;
+                                  let tmp26;
+                                  if (cResult[19] !== (undefined !== expanded && expanded)) {
+                                    let obj2 = { expanded: undefined !== expanded && expanded };
+                                    cResult[19] = undefined !== expanded && expanded;
+                                    cResult[20] = obj2;
+                                    tmp25 = obj2;
+                                  } else {
+                                    tmp25 = cResult[20];
+                                  }
+                                  if (cResult[21] !== line) {
+                                    const intl = tmp(tmp2[13]).intl;
+                                    let obj3 = { activity: line };
+                                    const formatToPlainStringResult = intl.formatToPlainString(trailing(tmp2[14]).s1wx5H, obj3);
+                                    cResult[21] = line;
+                                    cResult[22] = formatToPlainStringResult;
+                                    tmp26 = formatToPlainStringResult;
+                                  } else {
+                                    tmp26 = cResult[22];
+                                  }
+                                  if (cResult[23] === tmp20) {
+                                    if (cResult[24] === onToggle) {
+                                      if (cResult[25] === tmp26) {
+                                        let tmp29;
+                                        if (cResult[26] === tmp25) {
+                                          tmp29 = cResult[27];
+                                        }
+                                        tmp24 = tmp29;
+                                      }
+                                    }
+                                  }
+                                  let obj4 = { accessibilityRole: "button", accessibilityState: tmp25, accessibilityLabel: tmp26, hitSlop: 8, onPress: onToggle, children: tmp20 };
+                                  const tmp31 = TEXT_BRAND(tmp(tmp2[15]).PressableOpacity, obj4);
+                                  cResult[23] = tmp20;
+                                  cResult[24] = onToggle;
+                                  cResult[25] = tmp26;
+                                  cResult[26] = tmp25;
+                                  cResult[27] = tmp31;
+                                  tmp29 = tmp31;
+                                }
+                                return tmp24;
+                              }
+                            }
+                          }
+                          let obj5 = { renderFace: tmp19, live, tint: crestColor, epoch: num };
+                          const tmp23 = TEXT_BRAND(trailing(tmp2[12]), obj5);
+                          cResult[14] = crestColor;
+                          cResult[15] = num;
+                          cResult[16] = live;
+                          cResult[17] = tmp19;
+                          cResult[18] = tmp23;
+                          tmp20 = tmp23;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  const fn = function n() {
+    let Text;
+    let obj5;
+    let obj8;
+    let tmp6Result;
+    let tmp6Result2 = null;
+    const obj = { style: row.row, children: items };
+    const tmp = metroRequire;
+    if (closure_3) {
+      const obj2 = { style: row.glyphGutter, children: tmp6Result };
+      tmp6Result = glyph;
+      if (undefined === glyph) {
+        const obj3 = { size: "refresh_sm", color: TEXT_BRAND };
+        tmp6Result = tmp6(MagicWandIcon.MagicWandIcon, obj3);
+      }
+      tmp6Result2 = tmp6(tmp2, obj2);
+    }
+    items = [tmp6Result2, , , ];
+    let str = "text-sm/normal";
+    const obj4 = { style: row.label, children: hasOwnProperty(Text, obj5) };
+    Text = Text_Text.Text;
+    if (closure_3) {
+      str = "text-md/normal";
+    }
+    obj5 = { variant: str, color: str2, children: line };
+    items[1] = hasOwnProperty(View, obj4);
+    let tmp11Result = null;
+    if (null != trailing) {
+      const obj6 = { style: row.trailing, children: tmp13 };
+      tmp11Result = tmp11(tmp2, obj6);
+    }
+    items[2] = tmp11Result;
+    let tmp11Result2 = null;
+    if (closure_8) {
+      const obj7 = { style: row.chevron, children: hasOwnProperty(ChevronSmallRightIcon, obj8) };
+      obj8 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
+      tmp11Result2 = tmp11(tmp2, obj7);
+    }
+    items[3] = tmp11Result2;
+    return tmp(View, obj);
+  };
+  cResult[0] = ChevronSmallRightIcon;
+  cResult[1] = null != onToggle;
+  cResult[2] = glyph;
+  cResult[3] = TEXT_BRAND;
+  cResult[4] = tmp6;
+  cResult[5] = line;
+  cResult[6] = tmp8.chevron;
+  cResult[7] = tmp8.glyphGutter;
+  cResult[8] = tmp8.label;
+  cResult[9] = tmp8.row;
+  cResult[10] = tmp8.trailing;
+  cResult[11] = str2;
+  cResult[12] = trailing;
+  cResult[13] = fn;
+  tmp19 = fn;
+}) : ((line) => {
+  let crestColor;
+  let epoch;
+  let inGutter;
+  let intl;
+  let obj2;
+  let obj3;
+  let tint;
+  line = line.line;
+  let flag = line.settled;
+  const live = line.live;
   if (flag === undefined) {
     flag = false;
   }
-  let flag2 = live.failed;
+  let flag2 = line.failed;
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let str = live.presentation;
+  let str = line.presentation;
   if (str === undefined) {
     str = "headline";
   }
-  ({ tint, inGutter } = live);
+  ({ tint, inGutter } = line);
   if (inGutter === undefined) {
     inGutter = false;
   }
-  const trailing = live.trailing;
-  const glyph = live.glyph;
-  ({ crestColor, epoch } = live);
+  const trailing = line.trailing;
+  const glyph = line.glyph;
+  ({ crestColor, epoch } = line);
   if (epoch === undefined) {
     epoch = 0;
   }
-  let flag3 = live.expanded;
+  let flag3 = line.expanded;
   if (flag3 === undefined) {
     flag3 = false;
   }
-  const onToggle = live.onToggle;
+  const onToggle = line.onToggle;
   let TEXT_BRAND;
   let str2;
   let ChevronSmallRightIcon;
   closure_8 = undefined;
-  const tmp = closure_8();
+  let tmp = closure_8();
   const row = tmp;
   if (flag2) {
+    const tmp6 = trailing;
     TEXT_BRAND = inGutter(trailing[3]).colors.TEXT_FEEDBACK_CRITICAL;
   } else {
+    const tmp2 = null;
     TEXT_BRAND = tint;
     if (tint == null) {
       TEXT_BRAND = inGutter(trailing[3]).colors.TEXT_BRAND;
@@ -73,83 +309,90 @@ export default function VibegrationsNativeStatusLine(live) {
     let str3 = "text-muted";
     if (!flag) {
       let str4 = "text-default";
-      if (tmp7) {
+      if ("detail" === str) {
         str4 = "text-subtle";
       }
       str3 = str4;
     }
     str2 = str3;
   }
+  const useToken = line(trailing[7]).useToken;
+  const tmp10 = line(trailing[7]);
   if ("detail" === str) {
+    const tmp13 = inGutter;
     tint = inGutter(tmp9[3]).colors.TEXT_DEFAULT;
-  } else if (tint == null) {
-    tint = inGutter(tmp9[3]).colors.TEXT_BRAND;
+  } else {
+    const tmp11 = null;
+    if (tint == null) {
+      tint = inGutter(tmp9[3]).colors.TEXT_BRAND;
+    }
   }
   if ("detail" === str) {
-    crestColor = obj.useToken(tint);
+    crestColor = useToken(tint);
   }
   if (flag3) {
-    ChevronSmallRightIcon = tmp8(tmp9[6]).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp8(tmp9[8]).ChevronSmallDownIcon;
   } else {
-    ChevronSmallRightIcon = tmp8(tmp9[7]).ChevronSmallRightIcon;
+    ChevronSmallRightIcon = tmp8(tmp9[9]).ChevronSmallRightIcon;
   }
-  closure_8 = tmp14;
+  closure_8 = tmp15;
   items = [ChevronSmallRightIcon, null != onToggle, glyph, TEXT_BRAND, inGutter, line, tmp, str2, trailing];
   const callback = glyph.useCallback(() => {
-    const obj = { style: row.row, children: null };
+    let Text;
+    let obj5;
+    let obj8;
+    let tmp6Result;
     let tmp6Result2 = null;
+    const obj = { style: row.row, children: items };
+    const tmp = metroRequire;
     if (inGutter) {
-      const obj2 = { style: tmp3.glyphGutter, children: null };
-      let tmp6Result = glyph;
+      const obj2 = { style: row.glyphGutter, children: tmp6Result };
+      tmp6Result = glyph;
       if (undefined === glyph) {
         const obj3 = { size: "refresh_sm", color: TEXT_BRAND };
         tmp6Result = tmp6(MagicWandIcon.MagicWandIcon, obj3);
       }
-      obj2.children = tmp6Result;
       tmp6Result2 = tmp6(tmp2, obj2);
     }
     items = [tmp6Result2, , , ];
-    const obj4 = { style: row.label, children: null };
     let str = "text-sm/normal";
+    const obj4 = { style: row.label, children: hasOwnProperty(Text, obj5) };
+    Text = Text_Text.Text;
     if (inGutter) {
       str = "text-md/normal";
     }
-    obj4.children = hasOwnProperty(Text_Text.Text, { variant: str, color: str2, children: line });
+    obj5 = { variant: str, color: str2, children: line };
     items[1] = hasOwnProperty(View, obj4);
     let tmp11Result = null;
     if (null != trailing) {
-      const obj6 = { style: tmp3.trailing, children: tmp13 };
+      const obj6 = { style: row.trailing, children: tmp13 };
       tmp11Result = tmp11(tmp2, obj6);
     }
     items[2] = tmp11Result;
     let tmp11Result2 = null;
     if (closure_8) {
-      const obj7 = { style: tmp3.chevron, children: null };
-      const obj8 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-      obj7.children = tmp11(ChevronSmallRightIcon, obj8);
+      const obj7 = { style: row.chevron, children: hasOwnProperty(ChevronSmallRightIcon, obj8) };
+      obj8 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
       tmp11Result2 = tmp11(tmp2, obj7);
     }
     items[3] = tmp11Result2;
-    obj.children = items;
-    return timestampProducer(View, obj);
+    return tmp(View, obj);
   }, items);
-  const tmp18 = TEXT_BRAND(inGutter(trailing[10]), { renderFace: callback, live: live.live, tint: crestColor, epoch });
-  let tmp16Result = tmp18;
+  const tmp19 = TEXT_BRAND(inGutter(trailing[12]), { renderFace: callback, live, tint: crestColor, epoch });
+  let tmp17Result = tmp19;
+  const tmp17 = TEXT_BRAND;
+  const tmp18 = inGutter;
   if (null != onToggle) {
-    let obj2 = { accessibilityRole: "button", accessibilityState: null, accessibilityLabel: null, hitSlop: 8, onPress: null, children: null };
-    let obj3 = { expanded: flag3 };
-    obj2.accessibilityState = obj3;
-    const intl = tmp8(tmp9[12]).intl;
-    let obj4 = { activity: line };
-    obj2.accessibilityLabel = intl.formatToPlainString(inGutter(tmp9[13]).s1wx5H, obj4);
-    obj2.onPress = onToggle;
-    obj2.children = tmp18;
-    tmp16Result = TEXT_BRAND(tmp8(tmp9[11]).PressableOpacity, obj2);
+    let obj = { accessibilityRole: "button", accessibilityState: obj2, accessibilityLabel: intl.formatToPlainString(tmp18(tmp9[14]).s1wx5H, obj3), hitSlop: 8, onPress: onToggle, children: tmp19 };
+    obj2 = { expanded: flag3 };
+    const PressableOpacity = tmp8(tmp9[15]).PressableOpacity;
+    intl = tmp8(tmp9[13]).intl;
+    obj3 = { activity: line };
+    tmp17Result = tmp17(PressableOpacity, obj);
   }
-  return tmp16Result;
-};
-export const LANE_TINT_COUNT = items.length;
-export const laneTintIndexFor = function laneTintIndexFor(key) {
+  return tmp17Result;
+});
+function laneTintIndexFor(key) {
   let length;
   let num = 0;
   let num2 = 0;
@@ -163,12 +406,18 @@ export const laneTintIndexFor = function laneTintIndexFor(key) {
     } while (num2 < length);
   }
   return num % items.length;
-};
+}
+const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsNativeStatusLine.tsx");
+
+export default tmp4;
+export const LANE_TINT_COUNT = length;
+export { laneTintIndexFor };
 export const laneTintFor = function laneTintFor(str) {
   let length;
   let num = 0;
   let num2 = 0;
   let num3 = 0;
+  const tmp = items;
   if (0 < str.length) {
     do {
       num3 = (31 * num3 + str.charCodeAt(num2)) % 2147483647;
@@ -177,7 +426,7 @@ export const laneTintFor = function laneTintFor(str) {
       length = str.length;
     } while (num2 < length);
   }
-  return items[num % items.length];
+  return tmp[num % items.length];
 };
 export const MESSAGE_AVATAR_SIZE = 40;
 export const MESSAGE_EDGE_INSET = 12;

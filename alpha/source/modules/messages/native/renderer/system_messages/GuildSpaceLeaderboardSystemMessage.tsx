@@ -1,89 +1,111 @@
-// Module ID: 7714
-// Function ID: 7715
+// Module ID: 7758
+// Function ID: 7759
 // Name: GuildSpaceLeaderboardSystemMessage
-// Dependencies: [2044, 1372, 4845, 576, 4486, 7612, 4997, 7575, 1115, 7577, 7561, 7715, 7579, 2]
+// Dependencies: [2051, 1377, 4890, 587, 4497, 7656, 5042, 7619, 1126, 7621, 7605, 7759, 7623, 2]
 // Exports: createGuildSpaceLeaderboardSystemMessage
 
-// Module 7714 (GuildSpaceLeaderboardSystemMessage)
-import nativeDefault from "native" /* 576 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4486 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4997 */;
-import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 7612 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 7758 (GuildSpaceLeaderboardSystemMessage)
+import nativeDefault from "native" /* 587 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4497 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7605 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7619 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7621 */;
+import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 7656 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7759 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import UserStore from "UserStore" /* 1377 */;
+import createStyles from "createStyles" /* 4890 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const createStyles = fn(4845);
-let closure_5 = createStyles.createNativeStyleProperties({ iconTintColor: nativeDefault.colors.ICON_MUTED });
-const size = fn(2);
+let obj = { iconTintColor: nativeDefault.colors.ICON_MUTED };
+let closure_5 = createStyles.createNativeStyleProperties(obj);
 let result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildSpaceLeaderboardSystemMessage.tsx");
 
 export const createGuildSpaceLeaderboardSystemMessage = function createGuildSpaceLeaderboardSystemMessage(theme) {
+  let guildId;
+  let message;
+  let obj11;
+  let obj3;
+  let previousLeader;
+  let roleStyle;
+  let str;
+  let subject;
+  let tmpResult8;
   ({ message, roleStyle } = theme);
+  theme = theme.theme;
   const guildSpaceData = message.guildSpaceData;
   let leaderboard;
+  const parseGuildSpaceLeaderboardMessageData = GuildLeaderboardTypes.parseGuildSpaceLeaderboardMessageData;
+  GuildLeaderboardTypes;
   if (guildSpaceData != null) {
     leaderboard = guildSpaceData.leaderboard;
   }
-  const result = GuildLeaderboardTypes.parseGuildSpaceLeaderboardMessageData(leaderboard);
+  const result = parseGuildSpaceLeaderboardMessageData(leaderboard);
   let userId;
+  const resolveGuildSpaceLeaderboardMessage = GuildLeaderboardSystemMessageCopy.resolveGuildSpaceLeaderboardMessage;
+  const getUser = UserStore.getUser;
+  GuildLeaderboardSystemMessageCopy;
+  const tmp7 = UserStore;
   if (result != null) {
     userId = result.userId;
   }
-  let previousUserId;
-  const user = UserStore.getUser(userId);
+  let secondaryUserId;
+  const user = getUser(userId);
+  const getUser2 = tmp7.getUser;
   if (result != null) {
-    previousUserId = result.previousUserId;
+    secondaryUserId = result.secondaryUserId;
   }
-  const guildSpaceLeaderboardMessage = GuildLeaderboardSystemMessageCopy.resolveGuildSpaceLeaderboardMessage(result, user, UserStore.getUser(previousUserId));
+  const guildSpaceLeaderboardMessage = resolveGuildSpaceLeaderboardMessage(result, user, getUser2(secondaryUserId));
   const channel = ChannelStore.getChannel(message.channel_id);
   if (channel != null) {
-    const guildId = channel.getGuildId();
+    guildId = channel.getGuildId();
   }
   if (null != guildSpaceLeaderboardMessage) {
     if (null != channel) {
       if (null != guildId) {
         ({ subject, previousLeader } = guildSpaceLeaderboardMessage);
-        const obj2 = { username: null, previousUsername: null };
-        const tmpResult5 = tmp(7612);
-        obj2.username = NicknameUtilsDefault.getName(guildId, channel.id, subject);
-        let str = "";
+        const obj = { username: obj11.getName(guildId, channel.id, subject), previousUsername: str };
+        const getMobileLeaderboardSystemMessage = GuildLeaderboardSystemMessageCopy.getMobileLeaderboardSystemMessage;
+        const data = guildSpaceLeaderboardMessage.data;
+        GuildLeaderboardSystemMessageCopy;
+        str = "";
+        obj11 = NicknameUtilsDefault;
         if (null != previousLeader) {
-          str = tmp18(4997).getName(guildId, channel.id, previousLeader);
-          const tmp18Result = tmp18(4997);
+          const tmp22Result = NicknameUtilsDefault;
+          str = tmp22Result.getName(guildId, channel.id, previousLeader);
         }
-        obj2.previousUsername = str;
-        const mobileLeaderboardSystemMessage = tmpResult5.getMobileLeaderboardSystemMessage(guildSpaceLeaderboardMessage.data, obj2);
+        const mobileLeaderboardSystemMessage = getMobileLeaderboardSystemMessage(data, obj);
         if (null == mobileLeaderboardSystemMessage) {
           return null;
         } else {
           let userAuthorWithProcessedColor1 = null;
-          const userAuthorWithProcessedColor = tmp(7575).getUserAuthorWithProcessedColor(subject, channel);
+          const tmpResult6 = useAuthorWithProcessedColor;
+          const userAuthorWithProcessedColor = tmpResult6.getUserAuthorWithProcessedColor(subject, channel);
           if (null != previousLeader) {
-            userAuthorWithProcessedColor1 = tmp(7575).getUserAuthorWithProcessedColor(previousLeader, channel);
-            const tmpResult7 = tmp(7575);
+            const tmpResult7 = useAuthorWithProcessedColor;
+            userAuthorWithProcessedColor1 = tmpResult7.getUserAuthorWithProcessedColor(previousLeader, channel);
           }
-          const tmpResult6 = tmp(7575);
-          const intl = tmp(1115).intl;
-          const obj4 = {};
+          const tmp16 = closure_5(theme);
+          const intl = tmp(1126).intl;
+          const obj2 = { usernameOnClick: formatUsernameOnClickDefault(obj3) };
+          const formatToParts = intl.formatToParts;
+          const message2 = mobileLeaderboardSystemMessage.message;
           const merged = Object.assign(mobileLeaderboardSystemMessage.values);
-          const obj5 = { userId: subject.id, message, author: userAuthorWithProcessedColor, roleStyle };
-          obj4.usernameOnClick = tmp18(7577)(obj5);
+          obj3 = { userId: subject.id, message, author: userAuthorWithProcessedColor, roleStyle };
           if (null != userAuthorWithProcessedColor1) {
+            let obj6;
             if (null != previousLeader) {
-              const obj6 = { userId: previousLeader.id, message, author: userAuthorWithProcessedColor1, roleStyle };
-              let obj8 = tmp18(7577)(obj6);
+              const obj4 = { userId: previousLeader.id, message, author: userAuthorWithProcessedColor1, roleStyle };
+              obj6 = tmp22(7621)(obj4);
             }
-            const obj7 = { content: null, iconUrl: null, iconTintColor: null };
-            obj4.previousUsernameOnClick = obj8;
-            obj7.content = intl.formatToParts(mobileLeaderboardSystemMessage.message, obj4);
-            obj7.iconUrl = tmp(7561).getAssetUriForEmbed(tmp18(7715));
-            obj7.iconTintColor = tmp13.iconTintColor;
-            const merged1 = Object.assign(tmp18(7579)(theme));
-            return obj7;
+            obj2.previousUsernameOnClick = obj6;
+            const obj5 = { content: formatToParts(message2, obj2), iconUrl: tmpResult8.getAssetUriForEmbed(AssetRegistryDefault), iconTintColor: tmp16.iconTintColor };
+            tmpResult8 = renderer_EmbedUtils;
+            const merged1 = Object.assign(tmp22(7623)(theme));
+            return obj5;
           }
-          obj8 = {};
-          tmp13 = closure_5(theme.theme);
+          obj6 = {};
         }
       }
     }

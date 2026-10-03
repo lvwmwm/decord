@@ -1,95 +1,178 @@
 // Module ID: 819
 // Function ID: 820
-// Dependencies: [109, 713, 817, 745]
-// Exports: createConsolaReporter
+// Dependencies: [816, 776, 818]
+// Exports: buildTypeSpecificAttributes
 
 // Module 819
-import _mod713 from "module_713" /* 713 */;
-import _INTERNAL_captureSerializedLog from "_INTERNAL_captureSerializedLog" /* 745 */;
-import safeJoinConsoleArgs from "safeJoinConsoleArgs" /* 817 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import _mod776 from "module_776" /* 776 */;
+import CLIENT_ADDRESS_ATTRIBUTE from "CLIENT_ADDRESS_ATTRIBUTE" /* 816 */;
+import extractTargetInfo2 from "extractTargetInfo" /* 818 */;
 
-let closure_3 = ["type", "level", "message", "args", "tag", "date"];
-Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let closure_4 = ["trace", "debug", "info", "warn", "error", "fatal"];
-let closure_5 = { silent: "trace", fatal: "fatal", error: "error", warn: "warn", log: "info", info: "info", success: "info", fail: "error", ready: "info", start: "info", box: "info", debug: "debug", trace: "trace", verbose: "debug", critical: "fatal", notice: "info" };
-let closure_6 = { 0: "fatal", 1: "warn", 2: "info", 3: "info", 4: "debug", 5: "trace" };
-
-export const createConsolaReporter = function createConsolaReporter() {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let set;
-  let client;
-  let levels = obj.levels;
-  if (levels == null) {
-    levels = closure_4;
-  }
-  set = new Set(levels);
-  client = obj.client;
-  return {
-    log(arg0) {
-      ({ type, level, message, args, tag, date } = arg0);
-      const tmp = _objectWithoutProperties(arg0, closure_3);
-      if (!client) {
-        client = _mod713.getClient();
-      }
-      if (client) {
-        let str = "debug";
-        if ("verbose" !== type) {
-          str = "trace";
-          if ("silent" !== type) {
-            if (!type) {
-              str = "info";
-              if (typeof level === "number") {
-                str = "info";
-                if (closure_6[level]) {
-                  str = tmp19;
-                }
-              }
-            }
-          }
+function getNotificationAttributes(arg0, requestId, arg2) {
+  const obj = {};
+  if ("notifications/cancelled" === arg0) {
+    requestId = undefined;
+    if (requestId != null) {
+      requestId = requestId.requestId;
+    }
+    if (requestId) {
+      const _String7 = String;
+      obj["mcp.cancelled.request_id"] = String(requestId.requestId);
+    }
+    let reason;
+    if (requestId != null) {
+      reason = requestId.reason;
+    }
+    if (reason) {
+      const _String8 = String;
+      obj["mcp.cancelled.reason"] = String(requestId.reason);
+    }
+  } else if ("notifications/message" === arg0) {
+    let level;
+    if (requestId != null) {
+      level = requestId.level;
+    }
+    if (level) {
+      const _String5 = String;
+      obj[CLIENT_ADDRESS_ATTRIBUTE.MCP_LOGGING_LEVEL_ATTRIBUTE] = String(requestId.level);
+    }
+    let logger;
+    if (requestId != null) {
+      logger = requestId.logger;
+    }
+    if (logger) {
+      const _String6 = String;
+      obj[CLIENT_ADDRESS_ATTRIBUTE.MCP_LOGGING_LOGGER_ATTRIBUTE] = String(requestId.logger);
+    }
+    let data1;
+    if (requestId != null) {
+      data1 = requestId.data;
+    }
+    if (undefined !== data1) {
+      obj[CLIENT_ADDRESS_ATTRIBUTE.MCP_LOGGING_DATA_TYPE_ATTRIBUTE] = typeof requestId.data;
+      const tmp33 = require;
+      if (arg2) {
+        const data = requestId.data;
+        let json = data;
+        const MCP_LOGGING_MESSAGE_ATTRIBUTE = tmp33(816).MCP_LOGGING_MESSAGE_ATTRIBUTE;
+        if (typeof data !== "string") {
+          const _JSON = JSON;
+          json = JSON.stringify(data);
         }
-        if (set.has(str)) {
-          const options = client.getOptions();
-          const normalizeDepth = options.normalizeDepth;
-          let num = 3;
-          if (undefined !== normalizeDepth) {
-            num = normalizeDepth;
-          }
-          const normalizeMaxBreadth = options.normalizeMaxBreadth;
-          let num2 = 1000;
-          if (undefined !== normalizeMaxBreadth) {
-            num2 = normalizeMaxBreadth;
-          }
-          const items = [];
-          if (message) {
-            items.push(message);
-          }
-          let tmp8 = args;
-          if (args) {
-            tmp8 = args.length > 0;
-          }
-          if (tmp8) {
-            items.push(safeJoinConsoleArgs.formatConsoleArgs(args, num, num2));
-          }
-          tmp["sentry.origin"] = "auto.log.consola";
-          const joined = items.join(" ");
-          if (tag) {
-            tmp["consola.tag"] = tag;
-          }
-          if (type) {
-            tmp["consola.type"] = type;
-          }
-          if (tmp14) {
-            tmp["consola.level"] = level;
-          }
-          const obj = { level: str, message: joined, attributes: tmp };
-          _INTERNAL_captureSerializedLog._INTERNAL_captureLog(obj);
-          tmp14 = null != level && typeof level === "number";
-        }
+        obj[MCP_LOGGING_MESSAGE_ATTRIBUTE] = json;
       }
     }
-  };
+  } else if ("notifications/progress" === arg0) {
+    let progressToken;
+    if (requestId != null) {
+      progressToken = requestId.progressToken;
+    }
+    if (progressToken) {
+      const _String3 = String;
+      obj["mcp.progress.token"] = String(requestId.progressToken);
+    }
+    let progress;
+    if (requestId != null) {
+      progress = requestId.progress;
+    }
+    if (typeof progress === "number") {
+      obj["mcp.progress.current"] = requestId.progress;
+    }
+    let total;
+    if (requestId != null) {
+      total = requestId.total;
+    }
+    if (typeof total === "number") {
+      obj["mcp.progress.total"] = requestId.total;
+      let progress1;
+      if (requestId != null) {
+        progress1 = requestId.progress;
+      }
+      if (typeof progress1 === "number") {
+        obj["mcp.progress.percentage"] = requestId.progress / requestId.total * 100;
+      }
+    }
+    let message;
+    if (requestId != null) {
+      message = requestId.message;
+    }
+    if (message) {
+      const _String4 = String;
+      obj["mcp.progress.message"] = String(requestId.message);
+    }
+  } else if ("notifications/resources/updated" === arg0) {
+    let uri;
+    if (requestId != null) {
+      uri = requestId.uri;
+    }
+    if (uri) {
+      const _String = String;
+      obj[CLIENT_ADDRESS_ATTRIBUTE.MCP_RESOURCE_URI_ATTRIBUTE] = String(requestId.uri);
+      const _String2 = String;
+      const obj2 = _mod776;
+      const result = obj2.parseStringToURLObject(String(requestId.uri));
+      let tmp7 = result;
+      const tmp3 = require;
+      if (tmp7) {
+        const tmp3Result = tmp3(776);
+        tmp7 = !tmp3Result.isURLObjectRelative(result);
+      }
+      if (tmp7) {
+        const str2 = result.protocol;
+        obj["mcp.resource.protocol"] = str2.replace(":", "");
+      }
+    }
+  } else if ("notifications/initialized" === arg0) {
+    obj["mcp.lifecycle.phase"] = "initialization_complete";
+    obj["mcp.protocol.ready"] = 1;
+  }
+  return obj;
+}
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+
+export const buildTypeSpecificAttributes = function buildTypeSpecificAttributes(request, message, params, recordInputs) {
+  let obj = params;
+  if ("request" === request) {
+    let requestArguments;
+    let obj2 = obj;
+    const extractTargetInfo = extractTargetInfo2.extractTargetInfo;
+    const method2 = message.method;
+    extractTargetInfo2;
+    if (!obj) {
+      obj2 = {};
+    }
+    let tmp6 = undefined !== message.id;
+    const extractTargetInfoResult = extractTargetInfo(method2, obj2);
+    if (tmp6) {
+      const obj3 = {};
+      const _String = String;
+      obj3[CLIENT_ADDRESS_ATTRIBUTE.MCP_REQUEST_ID_ATTRIBUTE] = String(message.id);
+      tmp6 = obj3;
+    }
+    const obj4 = {};
+    const merged = Object.assign(tmp6);
+    const merged1 = Object.assign(extractTargetInfoResult.attributes);
+    if (recordInputs) {
+      const getRequestArguments = extractTargetInfo2.getRequestArguments;
+      const method3 = message.method;
+      extractTargetInfo2;
+      if (!obj) {
+        obj = {};
+      }
+      requestArguments = getRequestArguments(method3, obj);
+    } else {
+      requestArguments = {};
+    }
+    const merged2 = Object.assign(requestArguments);
+    return obj4;
+  } else {
+    let obj5 = obj;
+    const method = message.method;
+    const tmp = getNotificationAttributes;
+    if (!obj) {
+      obj5 = {};
+    }
+    return tmp(method, obj5, recordInputs);
+  }
 };
+export { getNotificationAttributes };

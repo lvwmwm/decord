@@ -1,16 +1,16 @@
-// Module ID: 8899
-// Function ID: 8900
+// Module ID: 8927
+// Function ID: 8928
 // Name: DiceRollExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1440, 2]
 
-// Module 8899 (DiceRollExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 8927 (DiceRollExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
-const obj = { kind: "user", name: "2026-05-dice-roll-slash-command", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+const obj = { kind: "user", name: "2026-05-dice-roll-slash-command", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/dice_roll/DiceRollExperiment.tsx");
 

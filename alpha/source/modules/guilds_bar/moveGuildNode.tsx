@@ -1,16 +1,15 @@
-// Module ID: 16202
-// Function ID: 16203
+// Module ID: 16277
+// Function ID: 16278
 // Name: moveGuildNode
-// Dependencies: [5936, 8850, 6018, 2]
+// Dependencies: [5616, 8863, 5705, 2]
 // Exports: default, persistGuildsBarOrder
 
-// Module 16202 (moveGuildNode)
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6018 */;
-import UserSettingsActionCreators from "UserSettingsActionCreators" /* 8850 */;
-import SortedGuildStore from "SortedGuildStore" /* 5936 */;
+// Module 16277 (moveGuildNode)
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5705 */;
+import UserSettingsActionCreators from "UserSettingsActionCreators" /* 8863 */;
+import SortedGuildStore from "SortedGuildStore" /* 5616 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/guilds_bar/moveGuildNode.tsx");
 
 export default function moveGuildNode(id, id1, c4, flag2) {
@@ -21,9 +20,12 @@ export default function moveGuildNode(id, id1, c4, flag2) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  GuildActionCreatorsDefault.moveById(id, id1, flag, flag2);
-  UserSettingsActionCreators.saveGuildFolders(SortedGuildStore.getCompatibleGuildFolders());
+  const obj = GuildActionCreatorsDefault;
+  obj.moveById(id, id1, flag, flag2);
+  const obj2 = UserSettingsActionCreators;
+  obj2.saveGuildFolders(SortedGuildStore.getCompatibleGuildFolders());
 };
 export const persistGuildsBarOrder = function persistGuildsBarOrder() {
-  UserSettingsActionCreators.saveGuildFolders(SortedGuildStore.getCompatibleGuildFolders());
+  const obj = UserSettingsActionCreators;
+  obj.saveGuildFolders(SortedGuildStore.getCompatibleGuildFolders());
 };

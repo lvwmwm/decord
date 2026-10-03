@@ -1,25 +1,40 @@
-// Module ID: 12074
-// Function ID: 12075
+// Module ID: 12009
+// Function ID: 12010
 // Name: useCanSeeEventsInChannelList
-// Dependencies: [9147, 9136, 12075, 2]
-// Exports: default
+// Dependencies: [558, 9171, 9160, 12010, 2]
 
-// Module 12074 (useCanSeeEventsInChannelList)
-import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 9147 */;
-import useIsHubForGuildDefault from "useIsHubForGuild" /* 12075 */;
+// Module 12009 (useCanSeeEventsInChannelList)
+import useGuildScheduledEventsDefault from "useGuildScheduledEvents" /* 9160 */;
+import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 9171 */;
+import useIsHubForGuildDefault from "useIsHubForGuild" /* 12010 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/guild_scheduled_events/useCanSeeEventsInChannelList.tsx");
-
-export default function useCanSeeEventsInChannelList(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp = useCanCreateAnEventDefault(arg0);
-  const tmp2 = useIsHubForGuildDefault(arg0);
-  let tmp3 = !tmp2;
-  if (!tmp2) {
+  const arr = useGuildScheduledEventsDefault(arg0);
+  let tmp3 = !useIsHubForGuildDefault(arg0);
+  useIsHubForGuildDefault(arg0);
+  if (tmp3) {
     if (!tmp) {
       tmp = arr.length > 0;
     }
     tmp3 = tmp;
   }
   return tmp3;
-};
+}) : ((arg0) => {
+  let tmp = useCanCreateAnEventDefault(arg0);
+  const arr = useGuildScheduledEventsDefault(arg0);
+  let tmp3 = !useIsHubForGuildDefault(arg0);
+  useIsHubForGuildDefault(arg0);
+  if (tmp3) {
+    if (!tmp) {
+      tmp = arr.length > 0;
+    }
+    tmp3 = tmp;
+  }
+  return tmp3;
+});
+const result = size.fileFinishedImporting("modules/guild_scheduled_events/useCanSeeEventsInChannelList.tsx");
+
+export default tmp2;

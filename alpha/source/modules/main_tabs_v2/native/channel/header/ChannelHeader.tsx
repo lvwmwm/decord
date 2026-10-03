@@ -1,25 +1,199 @@
-// Module ID: 13045
-// Function ID: 13046
+// Module ID: 13102
+// Function ID: 13103
 // Name: ChannelHeader
-// Dependencies: [19, 2044, 1074, 2051, 21, 1364, 4730, 11213, 1110, 4722, 563, 5055, 13046, 13047, 13048, 13056, 1115, 13058, 2]
-// Exports: default, navigateToChannelDetails
+// Dependencies: [19, 2051, 1085, 2058, 21, 1369, 4745, 11127, 1121, 4737, 558, 576, 573, 5100, 13103, 13104, 13105, 1126, 13113, 13115, 2]
+// Exports: navigateToChannelDetails
 
-// Module 13045 (ChannelHeader)
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import GuildRoleSubscriptionsChannelHeaderDefault from "GuildRoleSubscriptionsChannelHeader" /* 13046 */;
-import HomeChannelHeaderDefault from "HomeChannelHeader" /* 13047 */;
-import PrivateChannelHeaderDefault from "PrivateChannelHeader" /* 13048 */;
-import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
+// Module 13102 (ChannelHeader)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1085 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import ChannelConstants from "ChannelConstants" /* 2058 */;
+import RootNavigationRef from "RootNavigationRef" /* 4737 */;
+import ChatInputUtils from "ChatInputUtils" /* 4745 */;
+import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 11127 */;
+import GuildRoleSubscriptionsChannelHeaderDefault from "GuildRoleSubscriptionsChannelHeader" /* 13103 */;
+import HomeChannelHeaderDefault from "HomeChannelHeader" /* 13104 */;
+import PrivateChannelHeaderDefault from "PrivateChannelHeader" /* 13105 */;
+import ForumChannelHeaderDefault from "ForumChannelHeader" /* 13113 */;
+import GuildChannelHeaderDefault from "GuildChannelHeader" /* 13115 */;
+import react from "react" /* 19 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ComponentActions = fn(1074).ComponentActions;
-const StaticChannelRoute = fn(2051).StaticChannelRoute;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/channel/header/ChannelHeader.tsx");
-
-export default function ChannelHeader(channelId) {
+const ComponentActions = Constants.ComponentActions;
+const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  let first;
+  let isGuildMemberCountVisible;
+  let isNavigationScreen;
+  let pressable;
+  let screenIndex;
+  let showCreateThread;
+  let tmp9;
+  const obj = channelId(576);
+  const cResult = obj.c(27);
+  channelId = channelId.channelId;
+  ({ screenIndex, isNavigationScreen, pressable, isGuildMemberCountVisible, showCreateThread } = channelId);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channelId) {
+    const fn = function c() {
+      return ChannelStore.getChannel(channelId);
+    };
+    cResult[1] = channelId;
+    cResult[2] = fn;
+    tmp9 = fn;
+  } else {
+    tmp9 = cResult[2];
+  }
+  const tmpResult = channelId(573);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp9);
+  const tmpResult2 = channelId(5100);
+  const isChannelContentGated = tmpResult2.useIsChannelContentGated(stateFromStores);
+  if (channelId === StaticChannelRoute.ROLE_SUBSCRIPTIONS) {
+    let tmp36;
+    const _Symbol2 = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const tmp39 = jsx(GuildRoleSubscriptionsChannelHeaderDefault, {});
+      cResult[3] = tmp39;
+      tmp36 = tmp39;
+    } else {
+      tmp36 = cResult[3];
+    }
+    return tmp36;
+  } else if (channelId === tmp12.GUILD_HOME) {
+    let tmp32;
+    const _Symbol = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const tmp35 = jsx(HomeChannelHeaderDefault, {});
+      cResult[4] = tmp35;
+      tmp32 = tmp35;
+    } else {
+      tmp32 = cResult[4];
+    }
+    return tmp32;
+  } else {
+    let isPrivateResult;
+    if (stateFromStores != null) {
+      isPrivateResult = stateFromStores.isPrivate();
+    }
+    if (isPrivateResult) {
+      if (cResult[5] === (!isChannelContentGated && (undefined === pressable || pressable))) {
+        if (cResult[6] === channelId) {
+          let tmp28;
+          if (cResult[7] === screenIndex) {
+            tmp28 = cResult[8];
+          }
+          return tmp28;
+        }
+      }
+      const tmp31 = jsx(PrivateChannelHeaderDefault, { channelId, pressable: !isChannelContentGated && (undefined === pressable || pressable), screenIndex });
+      cResult[5] = !isChannelContentGated && (undefined === pressable || pressable);
+      cResult[6] = channelId;
+      cResult[7] = screenIndex;
+      cResult[8] = tmp31;
+      tmp28 = tmp31;
+    } else {
+      let isForumLikeChannelResult;
+      if (stateFromStores != null) {
+        isForumLikeChannelResult = stateFromStores.isForumLikeChannel();
+      }
+      if (isForumLikeChannelResult) {
+        let tmp22;
+        let guild_id;
+        if (stateFromStores != null) {
+          guild_id = stateFromStores.guild_id;
+        }
+        if (cResult[9] !== stateFromStores) {
+          let stringResult;
+          if (!stateFromStores.isForumChannel()) {
+            const intl = tmp(1126).intl;
+            stringResult = intl.string(tmp(1126).t["L9fR+P"]);
+          }
+          cResult[9] = stateFromStores;
+          cResult[10] = stringResult;
+          tmp22 = stringResult;
+        } else {
+          tmp22 = cResult[10];
+        }
+        if (cResult[11] === (!isChannelContentGated && (undefined === pressable || pressable))) {
+          if (cResult[12] === channelId) {
+            if (cResult[13] === (undefined === isGuildMemberCountVisible || isGuildMemberCountVisible)) {
+              if (cResult[14] === isNavigationScreen) {
+                if (cResult[15] === screenIndex) {
+                  if (cResult[16] === guild_id) {
+                    let tmp24;
+                    if (cResult[17] === tmp22) {
+                      tmp24 = cResult[18];
+                    }
+                    return tmp24;
+                  }
+                }
+              }
+            }
+          }
+        }
+        const tmp27 = jsx(ForumChannelHeaderDefault, { channelId, guildId: guild_id, pressable: !isChannelContentGated && (undefined === pressable || pressable), isGuildMemberCountVisible: undefined === isGuildMemberCountVisible || isGuildMemberCountVisible, isNavigationScreen, screenIndex, searchPlaceholder: tmp22 });
+        cResult[11] = !isChannelContentGated && (undefined === pressable || pressable);
+        cResult[12] = channelId;
+        cResult[13] = undefined === isGuildMemberCountVisible || isGuildMemberCountVisible;
+        cResult[14] = isNavigationScreen;
+        cResult[15] = screenIndex;
+        cResult[16] = guild_id;
+        cResult[17] = tmp22;
+        cResult[18] = tmp27;
+        tmp24 = tmp27;
+      } else {
+        let guild_id1;
+        if (stateFromStores != null) {
+          guild_id1 = stateFromStores.guild_id;
+        }
+        if (cResult[19] === (!isChannelContentGated && (undefined === pressable || pressable))) {
+          if (cResult[20] === channelId) {
+            if (cResult[21] === (undefined === isGuildMemberCountVisible || isGuildMemberCountVisible)) {
+              if (cResult[22] === isNavigationScreen) {
+                if (cResult[23] === screenIndex) {
+                  if (cResult[24] === (undefined !== showCreateThread && showCreateThread)) {
+                    let tmp17;
+                    if (cResult[25] === guild_id1) {
+                      tmp17 = cResult[26];
+                    }
+                    return tmp17;
+                  }
+                }
+              }
+            }
+          }
+        }
+        const tmp20 = jsx(GuildChannelHeaderDefault, { channelId, guildId: guild_id1, pressable: !isChannelContentGated && (undefined === pressable || pressable), isGuildMemberCountVisible: undefined === isGuildMemberCountVisible || isGuildMemberCountVisible, isNavigationScreen, screenIndex, showCreateThread: undefined !== showCreateThread && showCreateThread });
+        cResult[19] = !isChannelContentGated && (undefined === pressable || pressable);
+        cResult[20] = channelId;
+        cResult[21] = undefined === isGuildMemberCountVisible || isGuildMemberCountVisible;
+        cResult[22] = isNavigationScreen;
+        cResult[23] = screenIndex;
+        cResult[24] = undefined !== showCreateThread && showCreateThread;
+        cResult[25] = guild_id1;
+        cResult[26] = tmp20;
+        tmp17 = tmp20;
+      }
+    }
+  }
+}) : ((channelId) => {
+  let guild_id;
+  let guild_id1;
+  let isNavigationScreen;
+  let pressable;
+  let screenIndex;
+  let stringResult;
+  let tmp8Result;
   channelId = channelId.channelId;
   ({ screenIndex, isNavigationScreen, pressable } = channelId);
   if (pressable === undefined) {
@@ -34,15 +208,12 @@ export default function ChannelHeader(channelId) {
     flag2 = false;
   }
   const items = [ChannelStore];
-  const stateFromStores = channelId(563).useStateFromStores(items, () => ChannelStore.getChannel(channelId));
-  const obj = channelId(563);
-  const isChannelContentGated = channelId(5055).useIsChannelContentGated(stateFromStores);
-  let tmp4 = !isChannelContentGated;
-  if (!isChannelContentGated) {
-    tmp4 = pressable;
-  }
+  const obj = channelId(573);
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
+  const obj3 = channelId(5100);
+  const isChannelContentGated = obj3.useIsChannelContentGated(stateFromStores);
   if (channelId === StaticChannelRoute.ROLE_SUBSCRIPTIONS) {
-    let tmp8Result = jsx(GuildRoleSubscriptionsChannelHeaderDefault, {});
+    tmp8Result = jsx(GuildRoleSubscriptionsChannelHeaderDefault, {});
   } else if (channelId === tmp5.GUILD_HOME) {
     tmp8Result = jsx(HomeChannelHeaderDefault, {});
   } else {
@@ -51,66 +222,58 @@ export default function ChannelHeader(channelId) {
       isPrivateResult = stateFromStores.isPrivate();
     }
     if (isPrivateResult) {
-      const obj2 = { channelId, pressable: tmp4, screenIndex };
-      tmp8Result = jsx(PrivateChannelHeaderDefault, { channelId, pressable: tmp4, screenIndex });
+      tmp8Result = jsx(PrivateChannelHeaderDefault, { channelId, pressable: !isChannelContentGated && pressable, screenIndex });
     } else {
       let isForumLikeChannelResult;
       if (stateFromStores != null) {
         isForumLikeChannelResult = stateFromStores.isForumLikeChannel();
       }
       if (isForumLikeChannelResult) {
-        const obj4 = { channelId, guildId: null, pressable: null, isGuildMemberCountVisible: null, isNavigationScreen: null, screenIndex: null, searchPlaceholder: null };
-        let guild_id;
+        const obj4 = { channelId, guildId: guild_id, pressable: !isChannelContentGated && pressable, isGuildMemberCountVisible: flag, isNavigationScreen, screenIndex, searchPlaceholder: stringResult };
+        guild_id = undefined;
+        const tmp9Result = ForumChannelHeaderDefault;
         if (stateFromStores != null) {
           guild_id = stateFromStores.guild_id;
         }
-        obj4.guildId = guild_id;
-        obj4.pressable = tmp4;
-        obj4.isGuildMemberCountVisible = flag;
-        obj4.isNavigationScreen = isNavigationScreen;
-        obj4.screenIndex = screenIndex;
-        let stringResult;
+        stringResult = undefined;
         if (!stateFromStores.isForumChannel()) {
-          const intl = tmp(1115).intl;
-          stringResult = intl.string(tmp(1115).t["L9fR+P"]);
+          const intl = tmp(1126).intl;
+          stringResult = intl.string(tmp(1126).t["L9fR+P"]);
         }
-        obj4.searchPlaceholder = stringResult;
-        tmp8Result = tmp8(tmp9(13056), obj4);
-        const tmp9Result = tmp9(13056);
+        tmp8Result = tmp8(tmp9Result, obj4);
       } else {
-        const obj5 = { channelId, guildId: null, pressable: null, isGuildMemberCountVisible: null, isNavigationScreen: null, screenIndex: null, showCreateThread: null };
-        let guild_id1;
+        const obj5 = { channelId, guildId: guild_id1, pressable: !isChannelContentGated && pressable, isGuildMemberCountVisible: flag, isNavigationScreen, screenIndex, showCreateThread: flag2 };
+        guild_id1 = undefined;
+        const tmp9Result2 = GuildChannelHeaderDefault;
         if (stateFromStores != null) {
           guild_id1 = stateFromStores.guild_id;
         }
-        obj5.guildId = guild_id1;
-        obj5.pressable = tmp4;
-        obj5.isGuildMemberCountVisible = flag;
-        obj5.isNavigationScreen = isNavigationScreen;
-        obj5.screenIndex = screenIndex;
-        obj5.showCreateThread = flag2;
-        tmp8Result = tmp8(tmp9(13058), obj5);
-        const tmp9Result2 = tmp9(13058);
+        tmp8Result = tmp8(tmp9Result2, obj5);
       }
     }
   }
   return tmp8Result;
-};
+});
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/channel/header/ChannelHeader.tsx");
+
+export default tmp3;
 export const navigateToChannelDetails = function navigateToChannelDetails(channelId, screenIndex, source) {
+  const obj = PlatformUtils;
   if (obj.isIOS()) {
-    const chatInputRef = tmp(4730).getChatInputRef(channelId, screenIndex);
+    const tmpResult = ChatInputUtils;
+    const chatInputRef = tmpResult.getChatInputRef(channelId, screenIndex);
     if (chatInputRef != null) {
       chatInputRef.blur();
     }
-    const tmpResult = tmp(4730);
   }
-  obj = PlatformUtils;
+  const tmpResult3 = SwipeToMemberListUtils;
   if (tmpResult3.isSwipeToMemberListEnabled()) {
-    const ComponentDispatch = tmp(1110).ComponentDispatch;
+    const ComponentDispatch = tmp(1121).ComponentDispatch;
     const obj2 = { source, channelId, screenIndex };
     ComponentDispatch.dispatch(ComponentActions.SHOW_CHANNEL_DETAILS, obj2);
   } else {
-    const rootNavigationRef = tmp(4722).getRootNavigationRef();
+    const tmpResult4 = RootNavigationRef;
+    const rootNavigationRef = tmpResult4.getRootNavigationRef();
     let isReadyResult;
     if (rootNavigationRef != null) {
       isReadyResult = rootNavigationRef.isReady();
@@ -119,6 +282,5 @@ export const navigateToChannelDetails = function navigateToChannelDetails(channe
       const obj3 = { channelId, source };
       rootNavigationRef.navigate("sidebar", obj3);
     }
-    const tmpResult4 = tmp(4722);
   }
 };

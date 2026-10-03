@@ -1,18 +1,20 @@
-// Module ID: 8582
-// Function ID: 8583
+// Module ID: 8595
+// Function ID: 8596
 // Name: createCompactNumberFormat
 // Dependencies: [2]
 // Exports: createCompactNumberFormat
 
-// Module 8582 (createCompactNumberFormat)
+// Module 8595 (createCompactNumberFormat)
 import size from "module_2" /* 2 */;
+
+let map1, set;
 
 function toAsciiDigits(arg0, get) {
   let str = "";
   const iter = arg0[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
-    value = get.get(nextResult);
+    let value = get.get(nextResult);
     if (value == null) {
       value = nextResult;
     }
@@ -25,22 +27,41 @@ let result = size.fileFinishedImporting("../discord_common/js/packages/applicati
 
 export const createCompactNumberFormat = function createCompactNumberFormat(stateFromStores) {
   const numberFormat = new Intl.NumberFormat(stateFromStores, { useGrouping: false });
-  const map = new Map();
+  map = new Map();
   let num = 0;
   do {
+    set = map.set;
     let _String = String;
     let formatResult = numberFormat.format(num);
-    let result = map.set(formatResult, String(num));
+    let result = set(formatResult, String(num));
     num = num + 1;
   } while (num <= 9);
   const numberFormat1 = new Intl.NumberFormat(stateFromStores, { notation: "compact", compactDisplay: "short" });
   map1 = new Map();
-  return {
+  let obj = {
     format(arg0) {
       let tmp10;
       let tmp22;
       let tmp28;
       let tmp4;
+      function parseCoefficient(numberFormat1, map) {
+        let iter2;
+        let str = "";
+        const iter = numberFormat1[Symbol.iterator]();
+        const nextResult = iter.next();
+        for (; iter !== undefined; str = str + map(iter2.value, map)) {
+          iter2 = nextResult;
+          if ("integer" !== nextResult.type) {
+            if ("fraction" !== iter2.type) {
+              if ("decimal" === iter2.type) {
+                str = `.`;
+              }
+            }
+            continue;
+          }
+        }
+        return Number(str);
+      }
       if (0 !== arg0) {
         const _Number2 = Number;
         if (Number.isFinite(arg0)) {
@@ -56,6 +77,7 @@ export const createCompactNumberFormat = function createCompactNumberFormat(stat
             if (10 ** rounded > absolute) {
               do {
                 let diff = tmp5 - 1;
+                let tmp3 = diff;
                 tmp5 = diff;
                 tmp6 = diff;
                 tmp4 = 10 ** diff;
@@ -75,25 +97,10 @@ export const createCompactNumberFormat = function createCompactNumberFormat(stat
           }
           let num7 = 1;
           if (num >= 0) {
-            value = map1.get(num);
+            let value = map1.get(num);
+            const obj = map1;
             if (undefined === value) {
-              const tmp16 = (function parseCoefficient(numberFormat1, map) {
-                let str = "";
-                const iter = numberFormat1[Symbol.iterator]();
-                const nextResult = iter.next();
-                for (; iter !== undefined; str = str + map(iter2.value, map)) {
-                  iter2 = nextResult;
-                  if ("integer" !== nextResult.type) {
-                    if ("fraction" !== iter2.type) {
-                      if ("decimal" === iter2.type) {
-                        str = `.`;
-                      }
-                    }
-                    continue;
-                  }
-                }
-                return Number(str);
-              })(numberFormat1.formatToParts(10 ** num), map);
+              const tmp16 = parseCoefficient(numberFormat1.formatToParts(10 ** num), map);
               let num9 = 1;
               if (tmp16 > 0) {
                 num9 = tmp13 / tmp16;
@@ -102,7 +109,6 @@ export const createCompactNumberFormat = function createCompactNumberFormat(stat
               value = num9;
             }
             num7 = value;
-            obj = map1;
           }
           const result1 = arg0 / num7;
           const _Math2 = Math;
@@ -140,14 +146,16 @@ export const createCompactNumberFormat = function createCompactNumberFormat(stat
           const _Math5 = Math;
           const result2 = Math.floor(result1 * tmp29) / tmp29 * num7;
           const _Number = Number;
+          const format = numberFormat1.format;
           let tmp32 = arg0;
           if (Number.isFinite(result2)) {
             tmp32 = result2;
           }
-          return numberFormat1.format(tmp32);
+          return format(tmp32);
         }
       }
       return numberFormat1.format(arg0);
     }
   };
+  return obj;
 };

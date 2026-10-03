@@ -1,25 +1,57 @@
-// Module ID: 12340
-// Function ID: 12341
+// Module ID: 12296
+// Function ID: 12297
 // Name: useProvisionalAccountApplication
-// Dependencies: [7244, 504, 6775, 2]
-// Exports: default
+// Dependencies: [7142, 558, 576, 504, 6663, 2]
 
-// Module 12340 (useProvisionalAccountApplication)
-import GameRelationshipStore from "GameRelationshipStore" /* 7244 */;
+// Module 12296 (useProvisionalAccountApplication)
+import GameRelationshipStore from "GameRelationshipStore" /* 7142 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/provisional_accounts/hooks/useProvisionalAccountApplication.tsx");
-
-export default function useProvisionalAccountApplication(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GameRelationshipStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function s() {
+      const gameRelationshipsForUser = GameRelationshipStore.getGameRelationshipsForUser(closure_0);
+      return 0 !== gameRelationshipsForUser.length ? gameRelationshipsForUser[0].applicationId : undefined;
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = require("get initialized");
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  const tmpResult2 = require("useGetOrFetchApplications");
+  return tmpResult2.useGetOrFetchApplication(stateFromStores);
+}) : ((arg0) => {
+  let closure_0;
   _require = arg0;
   const items = [GameRelationshipStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => {
     const gameRelationshipsForUser = GameRelationshipStore.getGameRelationshipsForUser(closure_0);
     return 0 !== gameRelationshipsForUser.length ? gameRelationshipsForUser[0].applicationId : undefined;
   });
-  const obj = require("initialize");
-  return require("useGetOrFetchApplications").useGetOrFetchApplication(stateFromStores);
-};
+  const obj2 = require("useGetOrFetchApplications");
+  return obj2.useGetOrFetchApplication(stateFromStores);
+});
+const result = size.fileFinishedImporting("modules/provisional_accounts/hooks/useProvisionalAccountApplication.tsx");
+
+export default tmp2;

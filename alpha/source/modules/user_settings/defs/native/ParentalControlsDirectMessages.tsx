@@ -1,28 +1,34 @@
-// Module ID: 15736
-// Function ID: 15737
+// Module ID: 15799
+// Function ID: 15800
 // Name: ParentalControlsDirectMessages
-// Dependencies: [7145, 7590, 14565, 14566, 11215, 1115, 2]
+// Dependencies: [7048, 7634, 558, 14621, 14622, 11129, 1126, 2]
 
-// Module 15736 (ParentalControlsDirectMessages)
-import util from "util" /* 1115 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14565 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14566 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7145 */;
+// Module 15799 (ParentalControlsDirectMessages)
+import intl2 from "intl" /* 1126 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14621 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14622 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7048 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SettingBuilders = fn(11215);
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+let obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t.RAQUSN);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.RAQUSN);
   },
   useDescription() {
-    const intl = util.intl;
-    return intl.string(util.t.wbYDfT);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.wbYDfT);
   },
-  parent: fn(7590).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
-  useValue() {
-    return !useParentalControlSettings.useDefaultGuildsRestricted();
+  parent: MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  useValue: () => {
+    const obj = useParentalControlSettings;
+    return !obj.useDefaultGuildsRestricted();
   },
   onValueChange: function onAllowDirectMessagesFromServerMembersValueChange(arg0) {
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
@@ -32,9 +38,9 @@ const toggle = SettingBuilders.createToggle({
     }
   },
   unsearchable: true
-});
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsDirectMessages.tsx");
+};
+const toggle = SettingBuilders.createToggle(obj);
+const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsDirectMessages.tsx");
 
 export default toggle;
 export const ParentalControlsDirectMessages = toggle;

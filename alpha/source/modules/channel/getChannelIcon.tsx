@@ -1,18 +1,18 @@
-// Module ID: 12813
-// Function ID: 12814
+// Module ID: 12853
+// Function ID: 12854
 // Name: getChannelIcon
-// Dependencies: [32, 1372, 1074, 1370, 1397, 2]
+// Dependencies: [32, 1377, 1085, 1375, 1402, 2]
 // Exports: getChannelIconSource, getChannelIconURL
 
-// Module 12813 (getChannelIcon)
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import _slicedToArray from "module_32" /* 32 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 12853 (getChannelIcon)
+import Constants from "Constants" /* 1085 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import UserStore from "UserStore" /* 1377 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ChannelTypes = fn(1074).ChannelTypes;
-const size = fn(2);
+const ChannelTypes = Constants.ChannelTypes;
 const result = size.fileFinishedImporting("modules/channel/getChannelIcon.tsx");
 
 export const getChannelIconURL = function getChannelIconURL(type) {
@@ -31,11 +31,11 @@ export const getChannelIconURL = function getChannelIconURL(type) {
     }
     return avatarURL;
   } else if (tmp.GROUP_DM === type) {
-    const obj3 = { id: null, icon: null, applicationId: null, size: null };
-    ({ id: obj2.id, icon: obj2.icon } = type);
-    obj3.applicationId = type.getApplicationId();
-    obj3.size = num;
-    return AvatarUtilsDefault.getChannelIconURL(obj3);
+    const obj = { id: null, icon: null, applicationId: type.getApplicationId(), size: num };
+    ({ id: obj.id, icon: obj.icon } = type);
+    const getChannelIconURL = AvatarUtilsDefault.getChannelIconURL;
+    AvatarUtilsDefault;
+    return getChannelIconURL(obj);
   }
 };
 export const getChannelIconSource = function getChannelIconSource(type) {
@@ -50,9 +50,10 @@ export const getChannelIconSource = function getChannelIconSource(type) {
     }
     return avatarSource;
   } else if (tmp.GROUP_DM === type) {
-    const obj3 = { id: null, icon: null, applicationId: null, size: 128 };
-    ({ id: obj2.id, icon: obj2.icon } = type);
-    obj3.applicationId = type.getApplicationId();
-    return AvatarUtilsDefault.getChannelIconSource(obj3);
+    const obj = { id: null, icon: null, applicationId: type.getApplicationId(), size: 128 };
+    ({ id: obj.id, icon: obj.icon } = type);
+    const getChannelIconSource = AvatarUtilsDefault.getChannelIconSource;
+    AvatarUtilsDefault;
+    return getChannelIconSource(obj);
   }
 };

@@ -1,205 +1,274 @@
 // Module ID: 1794
 // Function ID: 1795
-// Dependencies: [19, 1663, 1682, 1645]
-// Exports: useAnimatedSensor
+// Dependencies: [1654]
+// Exports: processBoxShadow
 
 // Module 1794
-import runWorkletOnJS from "runWorkletOnJS" /* 1645 */;
-import _mod1663 from "module_1663" /* 1663 */;
-import runOnRuntime from "runOnRuntime" /* 1682 */;
-import noop from "module_19" /* 19 */;
+import ReanimatedError from "ReanimatedError" /* 1654 */;
 
-const require = globalThis.__r;
-
-({ useEffect: c2, useMemo: c3, useRef: closure_4 } = noop);
-function eulerToQuaternion(arg0, arg1, arg2) {
-  const cosResult = Math.cos(arg0 / 2);
-  const sinResult = Math.sin(arg0 / 2);
-  const cosResult1 = Math.cos(arg1 / 2);
-  const sinResult1 = Math.sin(arg1 / 2);
-  const cosResult2 = Math.cos(arg2 / 2);
-  const sinResult2 = Math.sin(arg2 / 2);
-  const items = [sinResult * cosResult1 * cosResult2 - cosResult * sinResult1 * sinResult2, cosResult * sinResult1 * cosResult2 + sinResult * cosResult1 * sinResult2, cosResult * cosResult1 * sinResult2 + sinResult * sinResult1 * cosResult2, cosResult * cosResult1 * cosResult2 - sinResult * sinResult1 * sinResult2];
-  return items;
-}
-eulerToQuaternion.__closure = {};
-eulerToQuaternion.__workletHash = 14525486759705;
-eulerToQuaternion.__initData = { code: "function eulerToQuaternion_Pnpm_useAnimatedSensorTs1(pitch,roll,yaw){const c1=Math.cos(pitch/2);const s1=Math.sin(pitch/2);const c2=Math.cos(roll/2);const s2=Math.sin(roll/2);const c3=Math.cos(yaw/2);const s3=Math.sin(yaw/2);return[s1*c2*c3-c1*s2*s3,c1*s2*c3+s1*c2*s3,c1*c2*s3+s1*s2*c3,c1*c2*c3-s1*s2*s3];}" };
-function adjustRotationToInterfaceOrientation(pitch) {
-  ({ interfaceOrientation, pitch, roll, yaw } = pitch);
-  if (interfaceOrientation === _mod1663.InterfaceOrientation.ROTATION_90) {
-    pitch.pitch = roll;
-    pitch.roll = -pitch;
-    const _Math2 = Math;
-    pitch.yaw = yaw - Math.PI / 2;
-  } else if (interfaceOrientation === tmp(1663).InterfaceOrientation.ROTATION_270) {
-    pitch.pitch = -roll;
-    pitch.roll = pitch;
-    const _Math = Math;
-    pitch.yaw = yaw + Math.PI / 2;
-  } else if (interfaceOrientation === tmp(1663).InterfaceOrientation.ROTATION_180) {
-    pitch.pitch = pitch.pitch * -1;
-    pitch.roll = pitch.roll * -1;
-    pitch.yaw = pitch.yaw * -1;
+const isLength = function o(str) {
+  let endsWithResult = str.endsWith("px");
+  if (!endsWithResult) {
+    const _isNaN = isNaN;
+    const _Number = Number;
+    endsWithResult = !isNaN(Number(str));
   }
-  ({ pitch: pitch2, roll: roll2, yaw: yaw2 } = pitch);
-  if (typeof eulerToQuaternion === "function") {
-    const _Math3 = Math;
-    const cosResult = Math.cos(pitch2 / 2);
-    const _Math4 = Math;
-    const sinResult = Math.sin(pitch2 / 2);
-    const _Math5 = Math;
-    const cosResult1 = Math.cos(roll2 / 2);
-    const _Math6 = Math;
-    const sinResult1 = Math.sin(roll2 / 2);
-    const _Math7 = Math;
-    const cosResult2 = Math.cos(yaw2 / 2);
-    const _Math8 = Math;
-    const sinResult2 = Math.sin(yaw2 / 2);
-    const items = [sinResult * cosResult1 * cosResult2 - cosResult * sinResult1 * sinResult2, cosResult * sinResult1 * cosResult2 + sinResult * cosResult1 * sinResult2, cosResult * cosResult1 * sinResult2 + sinResult * sinResult1 * cosResult2, cosResult * cosResult1 * cosResult2 - sinResult * sinResult1 * sinResult2];
-    [pitch.qx, pitch.qy, pitch.qz, pitch.qw] = items;
-    return pitch;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-}
-adjustRotationToInterfaceOrientation.__closure = { InterfaceOrientation: _mod1663.InterfaceOrientation, eulerToQuaternion };
-adjustRotationToInterfaceOrientation.__workletHash = 16635654688360;
-adjustRotationToInterfaceOrientation.__initData = { code: "function adjustRotationToInterfaceOrientation_Pnpm_useAnimatedSensorTs2(data){const{InterfaceOrientation,eulerToQuaternion}=this.__closure;const{interfaceOrientation:interfaceOrientation,pitch:pitch,roll:roll,yaw:yaw}=data;if(interfaceOrientation===InterfaceOrientation.ROTATION_90){data.pitch=roll;data.roll=-pitch;data.yaw=yaw-Math.PI/2;}else if(interfaceOrientation===InterfaceOrientation.ROTATION_270){data.pitch=-roll;data.roll=pitch;data.yaw=yaw+Math.PI/2;}else if(interfaceOrientation===InterfaceOrientation.ROTATION_180){data.pitch*=-1;data.roll*=-1;data.yaw*=-1;}const q=eulerToQuaternion(data.pitch,data.roll,data.yaw);data.qx=q[0];data.qy=q[1];data.qz=q[2];data.qw=q[3];return data;}" };
-function adjustVectorToInterfaceOrientation(arg0) {
-  ({ interfaceOrientation, x, y } = arg0);
-  if (interfaceOrientation === _mod1663.InterfaceOrientation.ROTATION_90) {
-    arg0.x = -y;
-    arg0.y = x;
-  } else if (interfaceOrientation === tmp(1663).InterfaceOrientation.ROTATION_270) {
-    arg0.x = y;
-    arg0.y = -x;
-  } else if (interfaceOrientation === tmp(1663).InterfaceOrientation.ROTATION_180) {
-    arg0.x = arg0.x * -1;
-    arg0.y = arg0.y * -1;
-  }
-  return arg0;
-}
-let obj = { InterfaceOrientation: _mod1663.InterfaceOrientation, eulerToQuaternion };
-adjustVectorToInterfaceOrientation.__closure = { InterfaceOrientation: _mod1663.InterfaceOrientation };
-adjustVectorToInterfaceOrientation.__workletHash = 5352466445526;
-adjustVectorToInterfaceOrientation.__initData = { code: "function adjustVectorToInterfaceOrientation_Pnpm_useAnimatedSensorTs3(data){const{InterfaceOrientation}=this.__closure;const{interfaceOrientation:interfaceOrientation,x:x,y:y}=data;if(interfaceOrientation===InterfaceOrientation.ROTATION_90){data.x=-y;data.y=x;}else if(interfaceOrientation===InterfaceOrientation.ROTATION_270){data.x=y;data.y=-x;}else if(interfaceOrientation===InterfaceOrientation.ROTATION_180){data.x*=-1;data.y*=-1;}return data;}" };
-let closure_8 = { code: "function pnpm_useAnimatedSensorTs4(data){const{adjustToInterfaceOrientation,sensorType,SensorType,adjustRotationToInterfaceOrientation,adjustVectorToInterfaceOrientation,sensorData,callMicrotasks}=this.__closure;if(adjustToInterfaceOrientation){if(sensorType===SensorType.ROTATION){data=adjustRotationToInterfaceOrientation(data);}else{data=adjustVectorToInterfaceOrientation(data);}}sensorData.value=data;callMicrotasks();}" };
-
-export const useAnimatedSensor = function useAnimatedSensor(arg0, adjustToInterfaceOrientation) {
-  _require = arg0;
-  const tmp2 = closure_4(adjustToInterfaceOrientation);
-  dependencyMap = tmp2;
-  let current = tmp2.current;
-  let prop;
-  if (current != null) {
-    prop = current.adjustToInterfaceOrientation;
-  }
-  let prop1;
-  if (adjustToInterfaceOrientation != null) {
-    prop1 = adjustToInterfaceOrientation.adjustToInterfaceOrientation;
-  }
-  let tmp5 = prop !== prop1;
-  if (!tmp5) {
-    const current2 = tmp2.current;
-    let interval;
-    if (current2 != null) {
-      interval = current2.interval;
-    }
-    let interval1;
-    if (adjustToInterfaceOrientation != null) {
-      interval1 = adjustToInterfaceOrientation.interval;
-    }
-    tmp5 = interval !== interval1;
-  }
-  if (!tmp5) {
-    const current3 = tmp2.current;
-    let iosReferenceFrame;
-    if (current3 != null) {
-      iosReferenceFrame = current3.iosReferenceFrame;
-    }
-    let iosReferenceFrame1;
-    if (adjustToInterfaceOrientation != null) {
-      iosReferenceFrame1 = adjustToInterfaceOrientation.iosReferenceFrame;
-    }
-    tmp5 = iosReferenceFrame !== iosReferenceFrame1;
-  }
-  if (tmp5) {
-    let obj = {};
-    let merged = Object.assign(adjustToInterfaceOrientation);
-    tmp2.current = obj;
-  }
-  const items = [tmp2.current];
-  const tmp13 = tmpResult(() => {
-    const merged = Object.assign(ref.current);
-    return { interval: "auto", adjustToInterfaceOrientation: true, iosReferenceFrame: _mod1663.IOSReferenceFrame.Auto };
-  }, items);
-  let config = tmp13;
-  let obj2 = {
-    sensor: require("runOnRuntime").initializeSensor(arg0, tmp13),
-    unregister() {
-
-    },
-    isAvailable: false,
-    config: tmp13
-  };
-  tmpResult = closure_4(obj2);
-  const items1 = [arg0, tmp13];
-  config(() => {
-    const obj = {
-      sensor: closure_0(ref[2]).initializeSensor(sensor, config),
-      unregister() {
-
-      },
-      isAvailable: false,
-      config
-    };
-    ref2.current = obj;
-    sensor = ref2.current.sensor;
-    const adjustToInterfaceOrientation = ref2.current.config.adjustToInterfaceOrientation;
-    const obj2 = closure_0(ref[2]);
-    const fn = function n(pitch) {
-      if (adjustToInterfaceOrientation) {
-        if (closure_0 === _mod1663.SensorType.ROTATION) {
-          adjustRotationToInterfaceOrientation(pitch);
-        } else if (typeof adjustVectorToInterfaceOrientation === "function") {
-          ({ interfaceOrientation, x, y } = pitch);
-          if (interfaceOrientation === _mod1663.InterfaceOrientation.ROTATION_90) {
-            pitch.x = -y;
-            pitch.y = x;
-          } else if (interfaceOrientation === _mod1663.InterfaceOrientation.ROTATION_270) {
-            pitch.x = y;
-            pitch.y = -x;
-          } else if (interfaceOrientation === _mod1663.InterfaceOrientation.ROTATION_180) {
-            pitch.x = pitch.x * -1;
-            pitch.y = pitch.y * -1;
+  return endsWithResult;
+};
+isLength.__closure = {};
+isLength.__workletHash = 6091944631530;
+isLength.__initData = { code: "function pnpm_processBoxShadowTs1(value){return value.endsWith('px')||!isNaN(Number(value));}" };
+function parseBoxShadowString(str) {
+  const items = [];
+  const parts = str.split(/,(?![^()]*\))/);
+  const mapped = parts.map((item) => item.trim());
+  const found = mapped.filter((item) => "" !== item);
+  const iter = found[Symbol.iterator]();
+  str = iter.next();
+  while (iter !== undefined) {
+    let obj = { offsetX: 0, offsetY: 0 };
+    let tmp2 = null;
+    let tmp3 = null;
+    let flag = false;
+    let num = 0;
+    let parts1 = str.split(/\s+(?![^(]*\))/);
+    for (const item10041 of parts1) {
+      let tmp7 = item10041;
+      if (fn(item10041)) {
+        if (0 === num) {
+          tmp2 = item10041;
+          num = num + 1;
+        } else if (1 === num) {
+          let tmp36 = flag;
+          if (tmp36) {
+            obj2.return();
+            let items1 = [];
+            iter.return();
+            return items1;
+          } else {
+            tmp3 = item10041;
+            num = num + 1;
+          }
+        } else if (2 === num) {
+          let tmp30 = flag;
+          if (tmp30) {
+            obj2.return();
+            let items2 = [];
+            iter.return();
+            return items2;
+          } else {
+            obj.blurRadius = tmp7;
+            num = num + 1;
+          }
+        } else if (3 === num) {
+          let tmp24 = flag;
+          if (tmp24) {
+            obj2.return();
+            let items3 = [];
+            iter.return();
+            return items3;
+          } else {
+            obj.spreadDistance = tmp7;
+            num = num + 1;
           }
         } else {
-          throw new TypeError("Trying to call a non-function");
+          obj2.return();
+          let items4 = [];
+          iter.return();
+          return items4;
         }
+        continue;
+      } else if ("inset" === tmp7) {
+        if (obj.inset) {
+          obj2.return();
+          let items5 = [];
+          iter.return();
+          return items5;
+        } else {
+          if (null !== tmp2) {
+            flag = true;
+          }
+          obj.inset = true;
+          continue;
+        }
+      } else if (obj.color) {
+        obj2.return();
+        let items6 = [];
+        iter.return();
+        return items6;
+      } else {
+        if (null != tmp2) {
+          flag = true;
+        }
+        obj.color = tmp7;
       }
-      sensor.value = pitch;
-      runWorkletOnJS.callMicrotasks();
-    };
-    const obj3 = closure_0(ref[2]);
-    fn.__closure = { adjustToInterfaceOrientation, sensorType: sensor, SensorType: closure_0(ref[1]).SensorType, adjustRotationToInterfaceOrientation, adjustVectorToInterfaceOrientation, sensorData: sensor, callMicrotasks: closure_0(ref[3]).callMicrotasks };
-    fn.__workletHash = 6807952122364;
-    fn.__initData = __initData;
-    const registerSensorResult = obj3.registerSensor(sensor, config, fn);
-    config = registerSensorResult;
-    if (-1 !== registerSensorResult) {
-      tmp.current.unregister = () => runOnRuntime.unregisterSensor(registerSensorResult);
-      tmp.current.isAvailable = true;
-    } else {
-      tmp.current.unregister = () => {
-
-      };
-      tmp.current.isAvailable = false;
+      continue;
     }
-    return () => {
-      const current = ref.current;
-      current.unregister();
-    };
-  }, items1);
-  return tmpResult.current;
-};
+    if (null !== tmp2) {
+      if (null !== tmp3) {
+        obj.offsetX = tmp2;
+        obj.offsetY = tmp3;
+        let arr = items.push(obj);
+        continue;
+      }
+    }
+    let items7 = [];
+    iter.return();
+    return items7;
+  }
+  return items;
+}
+parseBoxShadowString.__closure = { isLength };
+parseBoxShadowString.__workletHash = 13799106280870;
+parseBoxShadowString.__initData = { code: "function parseBoxShadowString_Pnpm_processBoxShadowTs2(rawBoxShadows){const{isLength}=this.__closure;const result=[];for(const rawBoxShadow of rawBoxShadows.split(/,(?![^()]*\\))/).map(function(bS){return bS.trim();}).filter(function(bS){return bS!=='';})){const boxShadow={offsetX:0,offsetY:0};let offsetX=null;let offsetY=null;let keywordDetectedAfterLength=false;let lengthCount=0;const args=rawBoxShadow.split(/\\s+(?![^(]*\\))/);for(const arg of args){if(isLength(arg)){switch(lengthCount){case 0:offsetX=arg;lengthCount++;break;case 1:if(keywordDetectedAfterLength){return[];}offsetY=arg;lengthCount++;break;case 2:if(keywordDetectedAfterLength){return[];}boxShadow.blurRadius=arg;lengthCount++;break;case 3:if(keywordDetectedAfterLength){return[];}boxShadow.spreadDistance=arg;lengthCount++;break;default:return[];}}else if(arg==='inset'){if(boxShadow.inset){return[];}if(offsetX!==null){keywordDetectedAfterLength=true;}boxShadow.inset=true;continue;}else{if(boxShadow.color){return[];}if(offsetX!=null){keywordDetectedAfterLength=true;}boxShadow.color=arg;continue;}}if(offsetX===null||offsetY===null){return[];}boxShadow.offsetX=offsetX;boxShadow.offsetY=offsetY;result.push(boxShadow);}return result;}" };
+function parseLength(str) {
+  const obj = /([+-]?\d*(\.\d+)?)([\w\W]+)?/g;
+  const match = obj.exec(str);
+  let NumberResult = null;
+  if (match) {
+    if (typeof fn === "function") {
+      let endsWithResult = str.endsWith("px");
+      if (!endsWithResult) {
+        const _isNaN = isNaN;
+        const _Number = Number;
+        endsWithResult = !isNaN(Number(str));
+      }
+      NumberResult = null;
+      if (endsWithResult) {
+        const _Number2 = Number;
+        NumberResult = Number(match[1]);
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  }
+  return NumberResult;
+}
+parseLength.__closure = { isLength };
+parseLength.__workletHash = 16787390997763;
+parseLength.__initData = { code: "function parseLength_Pnpm_processBoxShadowTs3(length){const{isLength}=this.__closure;const argsWithUnitsRegex=/([+-]?\\d*(\\.\\d+)?)([\\w\\W]+)?/g;const match=argsWithUnitsRegex.exec(length);if(!match||!isLength(length)){return null;}return Number(match[1]);}" };
+function processBoxShadow(boxShadow) {
+  const items = [];
+  if (null === boxShadow.boxShadow) {
+    return items;
+  } else {
+    let tmp6;
+    if (typeof boxShadow.boxShadow === "string") {
+      tmp6 = parseBoxShadowString(str.replace(/\n/g, " "));
+    } else {
+      const _Array = Array;
+      tmp6 = str;
+      if (!Array.isArray(boxShadow.boxShadow)) {
+        const _JSON = JSON;
+        const _HermesInternal = HermesInternal;
+        const self = this;
+        const self2 = this;
+        const reanimatedError = new ReanimatedError.ReanimatedError("Box shadow value must be an array of shadow objects or a string. Received: " + JSON.stringify(str));
+        throw reanimatedError;
+      }
+    }
+    const iter = tmp6[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp11 = nextResult;
+      let obj = { offsetX: 0, offsetY: 0 };
+      for (const key10047 in nextResult) {
+        if ("offsetX" === key10047) {
+          let offsetX;
+          if (typeof tmp11.offsetX === "string") {
+            offsetX = parseLength(tmp11.offsetX);
+          } else {
+            offsetX = tmp11.offsetX;
+          }
+          if (null === offsetX) {
+            let items1 = [];
+            iter.return();
+            return items1;
+          } else {
+            obj.offsetX = tmp42;
+            continue;
+          }
+        } else {
+          if ("offsetY" === key10047) {
+            let offsetY;
+            if (typeof tmp11.offsetY === "string") {
+              offsetY = parseLength(tmp11.offsetY);
+            } else {
+              offsetY = tmp11.offsetY;
+            }
+            if (null === offsetY) {
+              let items2 = [];
+              iter.return();
+              return items2;
+            } else {
+              obj.offsetY = tmp35;
+              continue;
+            }
+          } else {
+            if ("spreadDistance" === key10047) {
+              let spreadDistance;
+              if (typeof tmp11.spreadDistance === "string") {
+                spreadDistance = parseLength(tmp11.spreadDistance);
+              } else {
+                spreadDistance = tmp11.spreadDistance;
+              }
+              if (null === spreadDistance) {
+                let items3 = [];
+                iter.return();
+                return items3;
+              } else {
+                obj.spreadDistance = tmp28;
+                continue;
+              }
+            } else {
+              if ("blurRadius" === key10047) {
+                let blurRadius;
+                if (typeof tmp11.blurRadius === "string") {
+                  blurRadius = parseLength(tmp11.blurRadius);
+                } else {
+                  blurRadius = tmp11.blurRadius;
+                }
+                let tmp20 = blurRadius;
+                if (null !== blurRadius) {
+                  if (tmp20 >= 0) {
+                    obj.blurRadius = tmp20;
+                    continue;
+                  }
+                }
+                let items4 = [];
+                iter.return();
+                return items4;
+              } else {
+                if ("color" === key10047) {
+                  obj.color = tmp11.color;
+                  continue;
+                } else {
+                  if ("inset" !== key10047) {
+                    continue;
+                  } else {
+                    obj.inset = tmp11.inset;
+                    continue;
+                  }
+                  continue;
+                }
+                continue;
+              }
+              continue;
+            }
+            continue;
+          }
+          continue;
+        }
+        continue;
+      }
+      let arr = items.push(obj);
+      continue;
+    }
+    boxShadow.boxShadow = items;
+  }
+}
+processBoxShadow.__closure = { parseBoxShadowString, parseLength };
+processBoxShadow.__workletHash = 5021783745910;
+processBoxShadow.__initData = { code: "function processBoxShadow_Pnpm_processBoxShadowTs4(props){const{parseBoxShadowString,parseLength}=this.__closure;const result=[];const rawBoxShadows=props.boxShadow;if(rawBoxShadows===null){return result;}let boxShadowList;if(typeof rawBoxShadows==='string'){boxShadowList=parseBoxShadowString(rawBoxShadows.replace(/\\n/g,' '));}else if(Array.isArray(rawBoxShadows)){boxShadowList=rawBoxShadows;}else{throw new ReanimatedError(\"Box shadow value must be an array of shadow objects or a string. Received: \"+JSON.stringify(rawBoxShadows));}for(const rawBoxShadow of boxShadowList){const parsedBoxShadow={offsetX:0,offsetY:0};let value;for(const arg in rawBoxShadow){switch(arg){case'offsetX':value=typeof rawBoxShadow.offsetX==='string'?parseLength(rawBoxShadow.offsetX):rawBoxShadow.offsetX;if(value===null){return[];}parsedBoxShadow.offsetX=value;break;case'offsetY':value=typeof rawBoxShadow.offsetY==='string'?parseLength(rawBoxShadow.offsetY):rawBoxShadow.offsetY;if(value===null){return[];}parsedBoxShadow.offsetY=value;break;case'spreadDistance':value=typeof rawBoxShadow.spreadDistance==='string'?parseLength(rawBoxShadow.spreadDistance):rawBoxShadow.spreadDistance;if(value===null){return[];}parsedBoxShadow.spreadDistance=value;break;case'blurRadius':value=typeof rawBoxShadow.blurRadius==='string'?parseLength(rawBoxShadow.blurRadius):rawBoxShadow.blurRadius;if(value===null||value<0){return[];}parsedBoxShadow.blurRadius=value;break;case'color':parsedBoxShadow.color=rawBoxShadow.color;break;case'inset':parsedBoxShadow.inset=rawBoxShadow.inset;}}result.push(parsedBoxShadow);}props.boxShadow=result;}" };
+
+export { processBoxShadow };

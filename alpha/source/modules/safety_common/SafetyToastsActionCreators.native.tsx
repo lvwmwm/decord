@@ -1,56 +1,82 @@
-// Module ID: 8036
-// Function ID: 8037
+// Module ID: 8080
+// Function ID: 8081
 // Name: SafetyToastsActionCreators
-// Dependencies: [8031, 4556, 8037, 2]
+// Dependencies: [8075, 4567, 8081, 2]
 
-// Module 8036 (SafetyToastsActionCreators)
-import ToastUtils from "ToastUtils" /* 4556 */;
-import Constants from "Constants" /* 8031 */;
-import SafetyToastsUtils from "SafetyToastsUtils" /* 8037 */;
+// Module 8080 (SafetyToastsActionCreators)
+import ToastUtils from "ToastUtils" /* 4567 */;
+import Constants from "Constants" /* 8075 */;
+import SafetyToastsUtils from "SafetyToastsUtils" /* 8081 */;
 import size from "module_2" /* 2 */;
 
 const SafetyToastType = Constants.SafetyToastType;
-const result = size.fileFinishedImporting("modules/safety_common/SafetyToastsActionCreators.native.tsx");
-
-export default {
-  showIgnoreSuccessToast(id, channelId) {
-    const obj = ToastUtils;
-    obj.showSafetySuccess(SafetyToastType.IGNORE_SUCCESS, SafetyToastsUtils.getSafetyToastTypeContent(SafetyToastType.IGNORE_SUCCESS, id, channelId));
+let obj = {
+  showIgnoreSuccessToast(id, c1) {
+    const showSafetySuccess = ToastUtils.showSafetySuccess;
+    const IGNORE_SUCCESS = SafetyToastType.IGNORE_SUCCESS;
+    ToastUtils;
+    const obj = SafetyToastsUtils;
+    showSafetySuccess(IGNORE_SUCCESS, obj.getSafetyToastTypeContent(SafetyToastType.IGNORE_SUCCESS, id, c1));
   },
-  showUnignoreSuccessToast(id, channelId) {
-    const obj = ToastUtils;
-    obj.showSafetySuccess(SafetyToastType.UNIGNORE_SUCCESS, SafetyToastsUtils.getSafetyToastTypeContent(SafetyToastType.UNIGNORE_SUCCESS, id, channelId));
+  showUnignoreSuccessToast(id, c1) {
+    const showSafetySuccess = ToastUtils.showSafetySuccess;
+    const UNIGNORE_SUCCESS = SafetyToastType.UNIGNORE_SUCCESS;
+    ToastUtils;
+    const obj = SafetyToastsUtils;
+    showSafetySuccess(UNIGNORE_SUCCESS, obj.getSafetyToastTypeContent(SafetyToastType.UNIGNORE_SUCCESS, id, c1));
   },
   showBlockSuccessToast(id, channelId) {
-    const obj = ToastUtils;
-    obj.showSafetySuccess(SafetyToastType.BLOCK_SUCCESS, SafetyToastsUtils.getSafetyToastTypeContent(SafetyToastType.BLOCK_SUCCESS, id, channelId));
+    const showSafetySuccess = ToastUtils.showSafetySuccess;
+    const BLOCK_SUCCESS = SafetyToastType.BLOCK_SUCCESS;
+    ToastUtils;
+    const obj = SafetyToastsUtils;
+    showSafetySuccess(BLOCK_SUCCESS, obj.getSafetyToastTypeContent(SafetyToastType.BLOCK_SUCCESS, id, channelId));
   },
-  showUnblockSuccessToast(id, channelId) {
-    const obj = ToastUtils;
-    obj.showSafetySuccess(SafetyToastType.UNBLOCK_SUCCESS, SafetyToastsUtils.getSafetyToastTypeContent(SafetyToastType.UNBLOCK_SUCCESS, id, channelId));
+  showUnblockSuccessToast(senderId, channelId) {
+    const showSafetySuccess = ToastUtils.showSafetySuccess;
+    const UNBLOCK_SUCCESS = SafetyToastType.UNBLOCK_SUCCESS;
+    ToastUtils;
+    const obj = SafetyToastsUtils;
+    showSafetySuccess(UNBLOCK_SUCCESS, obj.getSafetyToastTypeContent(SafetyToastType.UNBLOCK_SUCCESS, senderId, channelId));
   },
   showMuteSuccessToast(id, channelId) {
-    const obj = ToastUtils;
-    obj.showSafetySuccess(SafetyToastType.MUTE_SUCCESS, SafetyToastsUtils.getSafetyToastTypeContent(SafetyToastType.MUTE_SUCCESS, id, channelId));
+    const showSafetySuccess = ToastUtils.showSafetySuccess;
+    const MUTE_SUCCESS = SafetyToastType.MUTE_SUCCESS;
+    ToastUtils;
+    const obj = SafetyToastsUtils;
+    showSafetySuccess(MUTE_SUCCESS, obj.getSafetyToastTypeContent(SafetyToastType.MUTE_SUCCESS, id, channelId));
   },
-  showUnmuteSuccessToast(id, channelId) {
-    const obj = ToastUtils;
-    obj.showSafetySuccess(SafetyToastType.UNMUTE_SUCCESS, SafetyToastsUtils.getSafetyToastTypeContent(SafetyToastType.UNMUTE_SUCCESS, id, channelId));
+  showUnmuteSuccessToast(id, c1) {
+    const showSafetySuccess = ToastUtils.showSafetySuccess;
+    const UNMUTE_SUCCESS = SafetyToastType.UNMUTE_SUCCESS;
+    ToastUtils;
+    const obj = SafetyToastsUtils;
+    showSafetySuccess(UNMUTE_SUCCESS, obj.getSafetyToastTypeContent(SafetyToastType.UNMUTE_SUCCESS, id, c1));
   },
-  showReportSuccessToast(id, channelId) {
-    const obj = ToastUtils;
-    obj.showSafetySuccess(SafetyToastType.REPORT_SUCCESS, SafetyToastsUtils.getSafetyToastTypeContent(SafetyToastType.REPORT_SUCCESS, id, channelId));
+  showReportSuccessToast(id, c1) {
+    const showSafetySuccess = ToastUtils.showSafetySuccess;
+    const REPORT_SUCCESS = SafetyToastType.REPORT_SUCCESS;
+    ToastUtils;
+    const obj = SafetyToastsUtils;
+    showSafetySuccess(REPORT_SUCCESS, obj.getSafetyToastTypeContent(SafetyToastType.REPORT_SUCCESS, id, c1));
   },
-  showSuccessToast(REPORT_TO_MOD_SUCCESS) {
-    const obj = ToastUtils;
-    obj.showSafetySuccess(REPORT_TO_MOD_SUCCESS, SafetyToastsUtils.getSafetyToastTypeContent(REPORT_TO_MOD_SUCCESS));
+  showSuccessToast(SAFETY_FEEDBACK_SUCCESS) {
+    const showSafetySuccess = ToastUtils.showSafetySuccess;
+    ToastUtils;
+    const obj = SafetyToastsUtils;
+    showSafetySuccess(SAFETY_FEEDBACK_SUCCESS, obj.getSafetyToastTypeContent(SAFETY_FEEDBACK_SUCCESS));
   },
-  showFailedToast(TIGGER_PAWTECT_ERROR) {
-    let GENERIC_ERROR = TIGGER_PAWTECT_ERROR;
-    const obj = ToastUtils;
-    if (TIGGER_PAWTECT_ERROR == null) {
+  showFailedToast(GENERIC_ERROR) {
+    const presentFailedToast = ToastUtils.presentFailedToast;
+    ToastUtils;
+    const getSafetyToastTypeContent = SafetyToastsUtils.getSafetyToastTypeContent;
+    SafetyToastsUtils;
+    if (GENERIC_ERROR == null) {
       GENERIC_ERROR = SafetyToastType.GENERIC_ERROR;
     }
-    obj.presentFailedToast(SafetyToastsUtils.getSafetyToastTypeContent(GENERIC_ERROR));
+    presentFailedToast(getSafetyToastTypeContent(GENERIC_ERROR));
   }
 };
+const result = size.fileFinishedImporting("modules/safety_common/SafetyToastsActionCreators.native.tsx");
+
+export default obj;

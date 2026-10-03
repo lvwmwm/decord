@@ -1,21 +1,26 @@
-// Module ID: 11286
-// Function ID: 11287
+// Module ID: 11200
+// Function ID: 11201
 // Name: handleMessagesLongPressChannel
-// Dependencies: [4990, 11287, 2]
+// Dependencies: [5035, 11201, 2]
 // Exports: handleMessagesLongPressChannel
 
-// Module 11286 (handleMessagesLongPressChannel)
-import ChannelUtils from "ChannelUtils" /* 4990 */;
-import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 11287 */;
+// Module 11200 (handleMessagesLongPressChannel)
+import ChannelUtils from "ChannelUtils" /* 5035 */;
+import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 11201 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/handlers/handleMessagesLongPressChannel.tsx");
 
 export const handleMessagesLongPressChannel = function handleMessagesLongPressChannel(data) {
+  let channelId;
+  let guildId;
+  let messageId;
+  let originalLink;
   ({ guildId, channelId, messageId, originalLink } = data.data);
   if (null != channelId) {
     if (originalLink == null) {
-      originalLink = ChannelUtils.getChannelPermalink(guildId, channelId, messageId);
+      const obj = ChannelUtils;
+      originalLink = obj.getChannelPermalink(guildId, channelId, messageId);
     }
     if (null != originalLink) {
       const obj2 = { urlString: originalLink, guildId, channelId, messageId };

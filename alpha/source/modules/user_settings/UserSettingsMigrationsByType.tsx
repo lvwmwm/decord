@@ -1,10 +1,10 @@
-// Module ID: 1224
-// Function ID: 1225
+// Module ID: 1235
+// Function ID: 1236
 // Name: UserSettingsMigrationsByType
-// Dependencies: [1084, 2]
+// Dependencies: [1095, 2]
 
-// Module 1224 (UserSettingsMigrationsByType)
-import UserSettingsConstants from "UserSettingsConstants" /* 1084 */;
+// Module 1235 (UserSettingsMigrationsByType)
+import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import size from "module_2" /* 2 */;
 
 const UserSettingsTypes = UserSettingsConstants.UserSettingsTypes;

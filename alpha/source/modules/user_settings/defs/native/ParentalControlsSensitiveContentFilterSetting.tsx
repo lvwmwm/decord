@@ -1,33 +1,36 @@
-// Module ID: 15734
-// Function ID: 15735
+// Module ID: 15797
+// Function ID: 15798
 // Name: ParentalControlsSensitiveContentFilterSetting
-// Dependencies: [7590, 1074, 11215, 1115, 5579, 15735, 2]
+// Dependencies: [7634, 1085, 11129, 1126, 5865, 15798, 2]
 
-// Module 15734 (ParentalControlsSensitiveContentFilterSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 5579 */;
-import SettingsConstants from "SettingsConstants" /* 7590 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 15797 (ParentalControlsSensitiveContentFilterSetting)
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 5865 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["Hj/But"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["Hj/But"]);
   },
   IconComponent: ImageWarningIcon.ImageWarningIcon,
-  parent: SettingsConstants.MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  parent: MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   screen: {
-    route: Constants.UserSettingsSections.FAMILY_CENTER_PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS,
+    route: UserSettingsSections.FAMILY_CENTER_PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS,
     getComponent() {
       return require("ParentalControlsSensitiveContentFiltersScreen").default;
     }
   },
   unsearchable: true
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsSensitiveContentFilterSetting.tsx");
 
 export default route;

@@ -1,39 +1,83 @@
-// Module ID: 15288
-// Function ID: 15289
+// Module ID: 15345
+// Function ID: 15346
 // Name: SettingsItemAppIcon
-// Dependencies: [19, 8815, 21, 4845, 576, 13200, 8816, 10473, 15289, 2]
-// Exports: default
+// Dependencies: [19, 8828, 21, 4890, 587, 558, 576, 13259, 8829, 10547, 15346, 2]
 
-// Module 15288 (SettingsItemAppIcon)
-import nativeDefault from "native" /* 576 */;
-import AppIconTypes from "AppIconTypes" /* 8816 */;
-import AppIconUtils from "AppIconUtils" /* 13200 */;
-import AppIconDefault from "AppIcon" /* 15289 */;
-import noop from "module_19" /* 19 */;
+// Module 15345 (SettingsItemAppIcon)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import AppIconConstants from "AppIconConstants" /* 8828 */;
+import AppIconTypes from "AppIconTypes" /* 8829 */;
+import ClydeIcon from "ClydeIcon" /* 10547 */;
+import AppIconUtils from "AppIconUtils" /* 13259 */;
+import AppIconDefault from "AppIcon" /* 15346 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const ClydeIcon = tmp4(10473);
-require = fn;
-const getIconById = fn(8815).getIconById;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
-let obj2 = { icon: { borderRadius: nativeDefault.radii.round } };
-let closure_5 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/app_icons/native/SettingsItemAppIcon.tsx");
-
-export default function SettingsItemAppIcon(color) {
+let obj2;
+const getIconById = AppIconConstants.getIconById;
+const jsx = Fragment.jsx;
+let obj = { icon: obj2 };
+obj2 = { borderRadius: nativeDefault.radii.round };
+let closure_5 = createStyles.createStyles(obj);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
+  let tmp13;
+  const obj = react2;
+  const cResult = obj.c(5);
+  let INTERACTIVE_ICON_DEFAULT = color.color;
+  if (undefined === INTERACTIVE_ICON_DEFAULT) {
+    INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
+  }
+  const tmp5 = closure_5();
+  const tmpResult = AppIconUtils;
+  const currentAppIcon = tmpResult.useCurrentAppIcon();
+  const tmp7 = getIconById(currentAppIcon);
+  if (currentAppIcon !== AppIconTypes.FreemiumAppIconIds.DEFAULT) {
+    let tmp9;
+    if (null != tmp7) {
+      if (cResult[2] === currentAppIcon) {
+        if (cResult[3] === tmp5.icon) {
+          tmp9 = cResult[4];
+        }
+      }
+      const tmp12 = jsx(AppIconDefault, { style: tmp5.icon, id: currentAppIcon, size: 32 });
+      cResult[2] = currentAppIcon;
+      cResult[3] = tmp5.icon;
+      cResult[4] = tmp12;
+      tmp9 = tmp12;
+    }
+    return tmp9;
+  }
+  if (cResult[0] !== INTERACTIVE_ICON_DEFAULT) {
+    const tmp15 = jsx(ClydeIcon.ClydeIcon, { color: INTERACTIVE_ICON_DEFAULT });
+    cResult[0] = INTERACTIVE_ICON_DEFAULT;
+    cResult[1] = tmp15;
+    tmp13 = tmp15;
+  } else {
+    tmp13 = cResult[1];
+  }
+  tmp9 = tmp13;
+}) : ((color) => {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   const tmp3 = closure_5();
-  const currentAppIcon = AppIconUtils.useCurrentAppIcon();
+  const obj = AppIconUtils;
+  const currentAppIcon = obj.useCurrentAppIcon();
+  const tmp7 = getIconById(currentAppIcon);
   if (currentAppIcon !== AppIconTypes.FreemiumAppIconIds.DEFAULT) {
+    let tmp11;
     if (null != tmp7) {
-      const obj2 = { style: tmp3.icon, id: currentAppIcon, size: 32 };
-      let tmp11 = jsx(AppIconDefault, { style: tmp3.icon, id: currentAppIcon, size: 32 });
+      tmp11 = jsx(AppIconDefault, { style: tmp3.icon, id: currentAppIcon, size: 32 });
     }
     return tmp11;
   }
   tmp11 = jsx(ClydeIcon.ClydeIcon, { color: INTERACTIVE_ICON_DEFAULT });
-};
+});
+const result = size.fileFinishedImporting("modules/app_icons/native/SettingsItemAppIcon.tsx");
+
+export default tmp3;

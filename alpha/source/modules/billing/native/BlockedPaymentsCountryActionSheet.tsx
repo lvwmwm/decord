@@ -1,19 +1,37 @@
-// Module ID: 11187
-// Function ID: 11188
+// Module ID: 11093
+// Function ID: 11094
 // Name: BlockedPaymentsCountryActionSheet
-// Dependencies: [19, 21, 6757, 11188, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 6645, 11094, 2]
 
-// Module 11187 (BlockedPaymentsCountryActionSheet)
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6757 */;
-import BlockedPaymentsCountryDisplayDefault from "BlockedPaymentsCountryDisplay" /* 11188 */;
-import noop from "module_19" /* 19 */;
+// Module 11093 (BlockedPaymentsCountryActionSheet)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+let BottomSheet;
+
+let tmp;
+const Sheet_BottomSheet = tmp(6645);
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    BottomSheet = Sheet_BottomSheet.BottomSheet;
+    const tmp7 = <BottomSheet>{null}</BottomSheet>;
+    cResult[0] = tmp7;
+    first = tmp7;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => {
+  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  return <BottomSheet>{null}</BottomSheet>;
+});
 const result = size.fileFinishedImporting("modules/billing/native/BlockedPaymentsCountryActionSheet.tsx");
 
-export default function BlockedPaymentsCountryActionSheet() {
-  return jsx(Sheet_BottomSheet.BottomSheet, { children: jsx(BlockedPaymentsCountryDisplayDefault, {}) });
-};
+export default tmp3;

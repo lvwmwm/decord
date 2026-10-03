@@ -1,8 +1,8 @@
-// Module ID: 5167
-// Function ID: 5168
+// Module ID: 5213
+// Function ID: 5214
 // Dependencies: [2]
 
-// Module 5167
+// Module 5213
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/goth_vamp.png.js");

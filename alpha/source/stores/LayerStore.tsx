@@ -1,35 +1,38 @@
-// Module ID: 12179
-// Function ID: 12180
+// Module ID: 12129
+// Function ID: 12130
 // Name: LayerStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 584, 2]
 
-// Module 12179 (LayerStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 12129 (LayerStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import size from "module_2" /* 2 */;
+
+let closure_0;
 
 function handlePopAllLayers() {
   closure_0 = [];
 }
-let closure_0 = [];
-const Store = initializeDefault.Store;
+const React = [];
+const Store = get_initializedDefault.Store;
 class LayerStore extends Store {
+  hasLayers() {
+    return closure_0.length > 0;
+  }
+  getLayers() {
+    return closure_0;
+  }
 }
 const prototype = LayerStore.prototype;
-prototype["hasLayers"] = function hasLayers() {
-  return closure_0.length > 0;
-};
-prototype["getLayers"] = function getLayers() {
-  return closure_0;
-};
 LayerStore.displayName = "LayerStore";
-const layerStore = new LayerStore(DispatcherDefault, {
+const obj = {
   LAYER_PUSH: function handleAddLayer(component) {
     component = component.component;
     if (closure_0.indexOf(component) >= 0) {
       return false;
     } else {
       const items = [];
-      items[HermesBuiltin.arraySpread(closure_0, 0)] = component;
+      items[HermesBuiltin.arraySpread(items, closure_0, 0)] = component;
       closure_0 = items;
     }
   },
@@ -43,8 +46,8 @@ const layerStore = new LayerStore(DispatcherDefault, {
   LAYER_POP_ALL: handlePopAllLayers,
   LOGOUT: handlePopAllLayers,
   NOTIFICATION_CLICK: handlePopAllLayers
-});
-const size = fn(2);
+};
+const layerStore = new LayerStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("stores/LayerStore.tsx");
 
 export default layerStore;

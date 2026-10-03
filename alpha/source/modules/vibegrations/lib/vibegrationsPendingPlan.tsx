@@ -1,15 +1,17 @@
-// Module ID: 16633
-// Function ID: 16634
+// Module ID: 16713
+// Function ID: 16714
 // Name: vibegrationsPendingPlan
-// Dependencies: [12852, 2]
-// Exports: pendingPlanRenderId
+// Dependencies: [12905, 2]
+// Exports: pendingPlanRenderId, planCardExpanded, planVersions, togglePlanCard
 
-// Module 16633 (vibegrationsPendingPlan)
-import VibegrationsChatStore from "VibegrationsChatStore" /* 12852 */;
+// Module 16713 (vibegrationsPendingPlan)
+import VibegrationsChatStore from "VibegrationsChatStore" /* 12905 */;
 import size from "module_2" /* 2 */;
 
+let map, set;
+
 const turnSettled = VibegrationsChatStore.turnSettled;
-const result = size.fileFinishedImporting("modules/vibegrations/lib/vibegrationsPendingPlan.tsx");
+let result = size.fileFinishedImporting("modules/vibegrations/lib/vibegrationsPendingPlan.tsx");
 
 export const pendingPlanRenderId = function pendingPlanRenderId(memo) {
   const atResult = memo.at(-1);
@@ -39,4 +41,51 @@ export const pendingPlanRenderId = function pendingPlanRenderId(memo) {
     }
     return null;
   }
+};
+export const planVersions = function planVersions(memo) {
+  map = new Map();
+  let render_id = null;
+  let num = 0;
+  const iter = memo[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp3 = nextResult;
+    if ("assistant" === nextResult.role) {
+      if ("plan_implemented" !== tmp3.kind) {
+        if (null != tmp3.proposal) {
+          if (null != render_id) {
+            let obj = { version: num, superseded: true };
+            let result = map.set(render_id, obj);
+          }
+          let sum = num + 1;
+          num = sum;
+          let obj2 = { version: sum, superseded: false };
+          let result1 = map.set(tmp3.render_id, obj2);
+          render_id = tmp3.render_id;
+        }
+      } else {
+        render_id = null;
+        num = 0;
+      }
+    }
+    continue;
+  }
+  return map;
+};
+export const planCardExpanded = function planCardExpanded(c19, render_id, arg2) {
+  let value = c19.get(render_id);
+  if (value == null) {
+    value = !arg2;
+  }
+  return value;
+};
+export const togglePlanCard = function togglePlanCard(get, arg1, arg2) {
+  map = new Map(get);
+  set = map.set;
+  let value = get.get(arg1);
+  if (value == null) {
+    value = !arg2;
+  }
+  const result = set(arg1, !value);
+  return map;
 };

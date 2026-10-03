@@ -1,26 +1,28 @@
-// Module ID: 12473
-// Function ID: 12474
+// Module ID: 12413
+// Function ID: 12414
 // Name: CreateGuildActionCreators
-// Dependencies: [4496, 1074, 9470, 2]
+// Dependencies: [4507, 1085, 9481, 2]
 // Exports: showInstantInviteModal
 
-// Module 12473 (CreateGuildActionCreators)
-import GuildChannelStore from "GuildChannelStore" /* 4496 */;
+// Module 12413 (CreateGuildActionCreators)
+import Constants from "Constants" /* 1085 */;
+import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const InstantInviteSources = fn(1074).InstantInviteSources;
-const size = fn(2);
+const InstantInviteSources = Constants.InstantInviteSources;
 let result = size.fileFinishedImporting("actions/native/CreateGuildActionCreators.tsx");
 
 export const showInstantInviteModal = function showInstantInviteModal(arg0) {
-  closure_0 = arg0;
+  let closure_0 = arg0;
   let result = GuildChannelStore.addConditionalChangeListener(() => {
-    defaultChannel = GuildChannelStore.getDefaultChannel(defaultChannel);
+    const defaultChannel = GuildChannelStore.getDefaultChannel(closure_0);
     let flag = null == defaultChannel;
     if (!flag) {
       const _setImmediate = setImmediate;
       setImmediate(() => {
-        const result = defaultChannel(dependencyMap[2]).showInstantInviteActionSheet(defaultChannel, { source: constants.GUILD_CREATE });
+        const obj = closure_2_0(closure_2_1[2]);
+        const obj2 = { source: constants.GUILD_CREATE };
+        const result = obj.showInstantInviteActionSheet(defaultChannel, obj2);
       });
       flag = false;
     }

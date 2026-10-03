@@ -1,48 +1,30 @@
 // Module ID: 14049
 // Function ID: 14050
-// Dependencies: [14018, 14050, 13993, 14046]
+// Dependencies: [13962, 14050]
+// Exports: getSupportedTimeZones
 
 // Module 14049
-import _mod14018 from "module_14018" /* 14018 */;
+const require = globalThis.__r;
+let _require;
 
 
-export default (arg0, arg1, value, arg3) => {
-  let obj = arg3;
-  if (!arg3) {
-    obj = {};
-  }
-  let flag = obj.enumerable;
-  let name = arg1;
-  if (undefined !== obj.name) {
-    name = obj.name;
-  }
-  if (_mod14018(value)) {
-    tmp3(14050)(value, name, obj);
-  }
-  if (obj.global) {
-    if (flag) {
-      arg0[arg1] = value;
-    } else {
-      tmp3(13993)(arg1, value);
-    }
-  } else {
-    try {
-      if (obj.unsafe) {
-        if (arg0[arg1]) {
-          flag = true;
-        }
-      } else {
-        delete tmp[tmp2];
+export const getSupportedTimeZones = function getSupportedTimeZones(locale) {
+  _require = locale;
+  const timezones = require("module_14050").timezones;
+  return timezones.filter((item) => {
+    function isSupported(timeZone, arg1) {
+      let str = arg1;
+      if (undefined === arg1) {
+        str = "en";
       }
-      if (flag) {
-        arg0[arg1] = value;
-      } else {
-        const obj2 = { value, enumerable: false, configurable: !obj.nonConfigurable, writable: !obj.nonWritable };
-        tmp3(14046).f(arg0, arg1, obj2);
-        const tmp3Result = tmp3(14046);
+      try {
+        const obj = { timeZone };
+        const memoizedDateTimeFormat = locale(closure_1_1[0]).createMemoizedDateTimeFormat(str, obj);
+        return memoizedDateTimeFormat.resolvedOptions().timeZone === timeZone;
+      } catch (err) {
+        return false;
       }
-    } catch (err) {
     }
-  }
-  return arg0;
+    return isSupported(item, locale);
+  });
 };

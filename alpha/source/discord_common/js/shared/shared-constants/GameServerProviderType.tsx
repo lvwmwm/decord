@@ -1,9 +1,9 @@
-// Module ID: 4755
-// Function ID: 4756
+// Module ID: 4770
+// Function ID: 4771
 // Name: GameServerProviderType
 // Dependencies: [2]
 
-// Module 4755 (GameServerProviderType)
+// Module 4770 (GameServerProviderType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/GameServerProviderType.tsx");

@@ -1,58 +1,71 @@
-// Module ID: 16908
-// Function ID: 16909
+// Module ID: 16997
+// Function ID: 16998
 // Name: WebhooksStore
-// Dependencies: [16909, 12, 504, 573, 2]
+// Dependencies: [16998, 12, 504, 584, 2]
 
-// Module 16908 (WebhooksStore)
+// Module 16997 (WebhooksStore)
 import _modDef12 from "module_12" /* 12 */;
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 16909 */;
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 16998 */;
+import size from "module_2" /* 2 */;
+
+let c2;
 
 function handleWebhookCreateUpdate(arg0) {
+  let guildId;
+  let webhook;
   ({ guildId, webhook } = arg0);
-  if (null == dependencyMap[guildId]) {
-    tmp[guildId] = {};
+  if (null == closure_3[guildId]) {
+    closure_3[guildId] = {};
   }
-  dependencyMap[guildId][webhook.id] = webhook;
+  closure_3[guildId][webhook.id] = webhook;
 }
-const dependencyMap = {};
+const _false = {};
 let closure_4 = {};
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class WebhooksStore extends Store {
+  isFetching(arg0, arg1) {
+    let str = arg1;
+    const tmp = closure_4;
+    if (null == arg1) {
+      str = "guild";
+    }
+    return null != tmp["" + arg0 + ":" + str];
+  }
+  getWebhooksForGuild(id) {
+    const values = _modDef12.values;
+    _modDef12;
+    if (null == closure_3[id]) {
+      closure_3[id] = {};
+    }
+    return values(closure_3[id]);
+  }
+  getWebhooksForChannel(id, arg1) {
+    let closure_0 = arg1;
+    const tmp = _modDef12;
+    if (null == closure_3[id]) {
+      closure_3[id] = {};
+    }
+    const tmpResult = tmp(closure_3[id]);
+    const values = tmpResult.values();
+    const iter = values.filter((channel_id) => channel_id.channel_id === closure_0);
+    return iter.value();
+  }
 }
-const prototype = WebhooksStore.prototype;
-prototype["isFetching"] = function isFetching(arg0, arg1) {
-  let str = arg1;
-  if (null == arg1) {
-    str = "guild";
-  }
-  return null != closure_4["" + arg0 + ":" + str];
-};
-prototype["getWebhooksForGuild"] = function getWebhooksForGuild(id) {
-  if (null == dependencyMap[id]) {
-    tmp[id] = {};
-  }
-  return _modDef12.values(dependencyMap[id]);
-};
-prototype["getWebhooksForChannel"] = function getWebhooksForChannel(id, arg1) {
-  closure_0 = arg1;
-  if (null == dependencyMap[id]) {
-    tmp2[id] = {};
-  }
-  const values = _modDef12(dependencyMap[id]).values();
-  const tmpResult = _modDef12(dependencyMap[id]);
-  return values.filter((channel_id) => channel_id.channel_id === closure_0).value();
-};
-Object.defineProperty(prototype, "error", {
+Object.defineProperty(WebhooksStore.prototype, "error", {
   get: function error() {
     return c2;
   },
   set: undefined
 });
 WebhooksStore.displayName = "WebhooksStore";
-const webhooksStore = new WebhooksStore(DispatcherDefault, {
+let obj = {
   WEBHOOKS_UPDATE: function handleWebhooksUpdate(arg0) {
+    let channelId;
+    let error;
+    let guildId;
+    let webhooks;
     ({ guildId, channelId } = arg0);
     ({ webhooks, error } = arg0);
     let obj2;
@@ -60,66 +73,68 @@ const webhooksStore = new WebhooksStore(DispatcherDefault, {
       c2 = null;
       let items = [];
       if (null != channelId) {
-        if (null == dependencyMap[guildId]) {
-          tmp16[guildId] = {};
+        const tmp10 = _modDef12;
+        if (null == closure_3[guildId]) {
+          closure_3[guildId] = {};
         }
-        const values = _modDef12(dependencyMap[guildId]).values();
-        const tmp15Result = _modDef12(dependencyMap[guildId]);
-        items = values.filter((channel_id) => channel_id.channel_id !== channelId).value();
+        const tmp10Result = tmp10(closure_3[guildId]);
+        const values = tmp10Result.values();
         const iter = values.filter((channel_id) => channel_id.channel_id !== channelId);
+        items = iter.value();
       }
       obj2 = {};
-      dependencyMap[guildId] = obj2;
+      closure_3[guildId] = obj2;
       const combined = items.concat(webhooks);
       const item = combined.forEach((id) => {
         obj2[id.id] = id;
         return id;
       });
       let str4 = channelId;
+      const tmp14 = closure_4;
       if (null == channelId) {
         str4 = "guild";
       }
       const _HermesInternal2 = HermesInternal;
-      const combined1 = "" + guildId + ":" + str4;
-      delete tmp2[tmp];
+      delete tmp14["" + guildId + ":" + str4];
     } else if (null != error) {
       c2 = error;
       let str = channelId;
+      const tmp6 = closure_4;
       if (null == channelId) {
         str = "guild";
       }
       const _HermesInternal = HermesInternal;
-      const combined2 = "" + guildId + ":" + str;
-      delete tmp4[tmp3];
+      delete tmp6["" + guildId + ":" + str];
     } else {
-      let tmp5 = null != channelId;
-      if (tmp5) {
-        tmp5 = null != dependencyMap[guildId];
-      }
-      if (tmp5) {
+      const tmp = null != channelId && null != closure_3[guildId];
+      if (tmp) {
         c2 = null;
-        const forChannel = WebhooksActionCreatorsDefault.fetchForChannel(guildId, channelId);
+        const obj = WebhooksActionCreatorsDefault;
+        const forChannel = obj.fetchForChannel(guildId, channelId);
       }
     }
   },
   WEBHOOKS_FETCHING: function handleWebhooksFetching(channelId) {
     let str = channelId.channelId;
+    const guildId = channelId.guildId;
+    const tmp = closure_4;
     if (null == str) {
       str = "guild";
     }
-    closure_4["" + channelId.guildId + ":" + str] = true;
+    tmp["" + guildId + ":" + str] = true;
   },
   WEBHOOK_CREATE: handleWebhookCreateUpdate,
   WEBHOOK_UPDATE: handleWebhookCreateUpdate,
-  WEBHOOK_DELETE: function handleWebhookDelete(arg0) {
-    ({ guildId, webhookId } = arg0);
-    if (null == dependencyMap[guildId]) {
-      dependencyMap[guildId] = {};
+  WEBHOOK_DELETE: function handleWebhookDelete(guildId) {
+    guildId = guildId.guildId;
+    const webhookId = guildId.webhookId;
+    if (null == closure_3[guildId]) {
+      closure_3[guildId] = {};
     }
-    delete tmp[tmp2];
+    delete closure_3[guildId][webhookId];
   }
-});
-const size = fn(2);
+};
+const webhooksStore = new WebhooksStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("stores/WebhooksStore.tsx");
 
 export default webhooksStore;

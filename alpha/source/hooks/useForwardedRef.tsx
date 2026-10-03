@@ -1,28 +1,27 @@
-// Module ID: 16110
-// Function ID: 16111
-// Name: useForwardedRef
+// Module ID: 16184
+// Function ID: 16185
+// Name: react
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 16110 (useForwardedRef)
-import noop from "module_19" /* 19 */;
+// Module 16184 (react)
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("hooks/useForwardedRef.tsx");
 
 export default function useForwardedRef(arg0) {
-  closure_0 = arg0;
-  const ref = noop.useRef(null);
+  let closure_0 = arg0;
+  const ref = react.useRef(null);
   const items = [arg0];
   const items1 = [
     ref,
-    noop.useCallback((current) => {
-      let tmp = closure_0;
+    react.useCallback((current) => {
       if (null != closure_0) {
-        if (typeof tmp === "function") {
-          tmp = tmp(current);
+        if (typeof closure_0 === "function") {
+          closure_0(current);
         } else {
-          tmp.current = current;
+          closure_0.current = current;
         }
         ref.current = current;
       }

@@ -1,23 +1,48 @@
-// Module ID: 14448
-// Function ID: 14449
+// Module ID: 14592
+// Function ID: 14593
 // Name: KeyImage
-// Dependencies: [17, 21, 4845, 576, 14449, 2]
-// Exports: KeyImage
+// Dependencies: [17, 21, 4890, 587, 558, 576, 14593, 2]
 
-// Module 14448 (KeyImage)
-import _mod17 from "module_17" /* 17 */;
-import jsxProd from "jsxProd" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import SecurityKeySpotIllustration from "SecurityKeySpotIllustration" /* 14449 */;
-import createStyles from "createStyles" /* 4845 */;
+// Module 14592 (KeyImage)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const View = _mod17.View;
-const jsx = jsxProd.jsx;
-const obj = { container: { marginBottom: nativeDefault.space.PX_8 } };
+let obj2;
+let tmp;
+const SecurityKeySpotIllustration = tmp(14593);
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let obj = { container: obj2 };
+obj2 = { marginBottom: nativeDefault.space.PX_8 };
 let closure_4 = createStyles.createStyles(obj);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let tmp8;
+  const obj = react;
+  const cResult = obj.c(3);
+  const tmp4 = closure_4();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp7 = jsx(SecurityKeySpotIllustration.SecurityKeySpotIllustration, { scale: 0.6 });
+    cResult[0] = tmp7;
+    first = tmp7;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== tmp4.container) {
+    const tmp11 = <View style={tmp4.container}>{first}</View>;
+    cResult[1] = tmp4.container;
+    cResult[2] = tmp11;
+    tmp8 = tmp11;
+  } else {
+    tmp8 = cResult[2];
+  }
+  return tmp8;
+}) : (() => <View style={closure_4().container}>{jsx(SecurityKeySpotIllustration.SecurityKeySpotIllustration, { scale: 0.6 })}</View>);
 const result = size.fileFinishedImporting("modules/mfa/native/components/KeyImage.tsx");
 
-export const KeyImage = function KeyImage() {
-  return <View style={closure_4().container}>{jsx(SecurityKeySpotIllustration.SecurityKeySpotIllustration, { scale: 0.6 })}</View>;
-};
+export const KeyImage = tmp2;

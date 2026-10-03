@@ -1,48 +1,124 @@
-// Module ID: 6748
-// Function ID: 6749
+// Module ID: 6637
+// Function ID: 6638
 // Name: FormArrow
-// Dependencies: [19, 17, 21, 4845, 576, 4841, 1177, 6749, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4886, 1188, 6638, 2]
 
-// Module 6748 (FormArrow)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import _modDef6749 from "module_6749" /* 6749 */;
-import noop from "module_19" /* 19 */;
+// Module 6637 (FormArrow)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6638 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4845);
-let obj2 = { wrapper: { flexDirection: "row", alignItems: "center" }, icon: { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, marginRight: -8, marginLeft: 8 } };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("design/void/Form/native/FormArrow.tsx");
-
-export default function FormArrow(arg0) {
+let closure_4;
+let hasOwnProperty;
+let obj2;
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let obj = { wrapper: { flexDirection: "row", alignItems: "center" }, icon: obj2 };
+obj2 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, marginRight: -8, marginLeft: 8 };
+let closure_6 = createStyles.createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let items;
+  let items1;
+  let items2;
+  let label;
+  let style;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(12);
+  ({ label, style } = arg0);
+  const tmp4 = closure_6();
+  if (null != label) {
+    let tmp9;
+    if (cResult[0] !== label) {
+      const obj2 = { maxFontSizeMultiplier: 1.5, variant: "text-md/medium", color: "text-muted", children: label };
+      const tmp11 = React3(Text_Text.Text, obj2);
+      cResult[0] = label;
+      cResult[1] = tmp11;
+      tmp9 = tmp11;
+    } else {
+      tmp9 = cResult[1];
+    }
+    if (cResult[2] === style) {
+      let tmp12;
+      if (cResult[3] === tmp4.icon) {
+        tmp12 = cResult[4];
+      }
+      if (cResult[5] === tmp4.wrapper) {
+        if (cResult[6] === tmp9) {
+          let tmp16;
+          if (cResult[7] === tmp12) {
+            tmp16 = cResult[8];
+          }
+          tmp5 = tmp16;
+        }
+      }
+      const obj3 = { style: tmp4.wrapper, children: items };
+      items = [tmp9, tmp12];
+      const tmp19 = hasOwnProperty(View, obj3);
+      cResult[5] = tmp4.wrapper;
+      cResult[6] = tmp9;
+      cResult[7] = tmp12;
+      cResult[8] = tmp19;
+      tmp16 = tmp19;
+    }
+    const obj4 = { style: items1, source: AssetRegistryDefault, size: native.Icon.Sizes.MEDIUM };
+    items1 = [tmp4.icon, style];
+    const Icon2 = tmp(1188).Icon;
+    const tmp15 = React3(Icon2, obj4);
+    cResult[2] = style;
+    cResult[3] = tmp4.icon;
+    cResult[4] = tmp15;
+    tmp12 = tmp15;
+  } else {
+    if (cResult[9] === style) {
+      if (cResult[10] === tmp4.icon) {
+        tmp5 = cResult[11];
+      }
+    }
+    const obj5 = { style: items2, source: AssetRegistryDefault, size: native.Icon.Sizes.MEDIUM };
+    items2 = [tmp4.icon, style];
+    const Icon = tmp(1188).Icon;
+    const tmp8 = React3(Icon, obj5);
+    cResult[9] = style;
+    cResult[10] = tmp4.icon;
+    cResult[11] = tmp8;
+    tmp5 = tmp8;
+  }
+  return tmp5;
+}) : ((arg0) => {
+  let items;
+  let items1;
+  let items2;
+  let label;
+  let style;
+  let tmp6;
   ({ label, style } = arg0);
   const tmp = closure_6();
   if (null != label) {
-    const obj2 = { style: tmp.wrapper, children: null };
+    const obj2 = { style: tmp.wrapper, children: items };
     const obj3 = { maxFontSizeMultiplier: 1.5, variant: "text-md/medium", color: "text-muted", children: label };
-    const items = [React4(Text_Text.Text, obj3), ];
-    const obj4 = { style: null, source: null, size: null };
-    const items1 = [tmp.icon, style];
-    obj4.style = items1;
-    obj4.source = _modDef6749;
-    obj4.size = native.Icon.Sizes.MEDIUM;
-    items[1] = React4(native.Icon, obj4);
-    obj2.children = items;
-    let tmp6 = hasOwnProperty(View, obj2);
+    items = [React3(Text_Text.Text, obj3), ];
+    const obj4 = { style: items1, source: AssetRegistryDefault, size: native.Icon.Sizes.MEDIUM };
+    items1 = [tmp.icon, style];
+    const Icon2 = native.Icon;
+    items[1] = React3(Icon2, obj4);
+    tmp6 = hasOwnProperty(View, obj2);
   } else {
-    const obj = { style: null, source: null, size: null };
-    const items2 = [tmp.icon, style];
-    obj.style = items2;
-    obj.source = _modDef6749;
-    obj.size = native.Icon.Sizes.MEDIUM;
-    tmp6 = React4(native.Icon, obj);
+    const obj = { style: items2, source: AssetRegistryDefault, size: native.Icon.Sizes.MEDIUM };
+    items2 = [tmp.icon, style];
+    const Icon = native.Icon;
+    tmp6 = React3(Icon, obj);
   }
   return tmp6;
-};
+});
+const result = size.fileFinishedImporting("design/void/Form/native/FormArrow.tsx");
+
+export default tmp4;

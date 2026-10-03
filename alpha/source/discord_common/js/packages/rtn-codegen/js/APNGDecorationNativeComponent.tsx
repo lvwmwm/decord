@@ -1,31 +1,36 @@
-// Module ID: 8460
-// Function ID: 8461
+// Module ID: 8465
+// Function ID: 8466
 // Name: APNGDecorationNativeComponent
 // Dependencies: [106, 65, 114, 2]
 
-// Module 8460 (APNGDecorationNativeComponent)
+// Module 8465 (APNGDecorationNativeComponent)
 import renderElement from "renderElement" /* 114 */;
-import weakSet from "weakSet" /* 106 */;
+import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;
 
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "APNGDecorationView", directEventTypes: { topLoad: { registrationName: "onLoad" } }, validAttributes: null };
-const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onLoad: true }));
-__INTERNAL_VIEW_CONFIG.validAttributes = { url: true, autoplay: true };
+let obj2;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "APNGDecorationView", directEventTypes: { topLoad: { registrationName: "onLoad" } }, validAttributes: obj2 };
+obj2 = { url: true, autoplay: true };
+const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onLoad: true }));
+const obj3 = {
+  play(arg0) {
+    const obj = renderElement;
+    obj.dispatchCommand(arg0, "play", []);
+  },
+  pause(arg0) {
+    const obj = renderElement;
+    obj.dispatchCommand(arg0, "pause", []);
+  },
+  seek(arg0, arg1) {
+    const items = [arg1];
+    const obj = renderElement;
+    obj.dispatchCommand(arg0, "seek", items);
+  }
+};
 const value = module_65.get("APNGDecorationView", () => obj);
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/APNGDecorationNativeComponent.tsx");
 
 export default value;
 export { __INTERNAL_VIEW_CONFIG };
-export const Commands = {
-  play(arg0) {
-    renderElement.dispatchCommand(arg0, "play", []);
-  },
-  pause(arg0) {
-    renderElement.dispatchCommand(arg0, "pause", []);
-  },
-  seek(arg0, arg1) {
-    const items = [arg1];
-    renderElement.dispatchCommand(arg0, "seek", items);
-  }
-};
+export const Commands = obj3;

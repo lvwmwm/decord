@@ -1,108 +1,225 @@
-// Module ID: 17694
-// Function ID: 17695
+// Module ID: 17780
+// Function ID: 17781
 // Name: RolePermissionTemplatesActionSheet
-// Dependencies: [19, 17, 1074, 21, 4845, 576, 1241, 4809, 4556, 6756, 1115, 6804, 17672, 5387, 2]
-// Exports: default
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 1252, 4854, 4567, 5707, 1126, 6644, 17760, 6701, 2]
 
-// Module 17694 (RolePermissionTemplatesActionSheet)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ToastUtils from "ToastUtils" /* 4556 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5387 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6756 */;
-import ActionSheet from "ActionSheet" /* 6804 */;
-import GuildSettingsRoleTemplateDefault from "GuildSettingsRoleTemplate" /* 17672 */;
-import noop from "module_19" /* 19 */;
+// Module 17780 (RolePermissionTemplatesActionSheet)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 587 */;
+import intl5 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ToastUtils from "ToastUtils" /* 4567 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6644 */;
+import ActionSheet2 from "ActionSheet" /* 6701 */;
+import react from "react" /* 19 */;
+import Constants from "Constants" /* 1085 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const Constants = fn(1074);
+let closure_0, hideActionSheetResult, intl2, intl3, intl4, obj1, permissionsEdited, show, showResult, tmp2, tmp7, trackResult;
+
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+const View = react_native.View;
 ({ AnalyticEvents: hasOwnProperty, AnalyticsSections: metroRequire } = Constants);
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
-let obj2 = { templateContainer: { paddingVertical: 16, flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER } };
-let closure_8 = createStyles.createStyles(obj2);
-const size = fn(2);
+const jsx = Fragment.jsx;
+let obj = { templateContainer: obj2 };
+obj2 = { paddingVertical: 16, flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
+let closure_8 = createStyles.createStyles(obj);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((permissionsEdited) => {
+  let tmp17;
+  let tmp5;
+  let tmp6;
+  let tmp = permissionsEdited;
+  let obj = permissionsEdited(E[7]);
+  const cResult = obj.c(14);
+  permissionsEdited = permissionsEdited.permissionsEdited;
+  const onPermissionsChanged = permissionsEdited.onPermissionsChanged;
+  const guildId = permissionsEdited.guildId;
+  const tmp4 = closure_8();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    class T {
+      constructor() {
+        obj = onPermissionsChanged(closure_2[8]);
+        obj1 = { type: closure_1_6.GUILD_ROLE_TEMPLATE_POPOUT };
+        trackResult = obj.track(closure_1_5.OPEN_POPOUT, obj1);
+        return;
+      }
+    }
+    const items = [];
+    cResult[0] = T;
+    cResult[1] = items;
+    tmp6 = items;
+    tmp5 = T;
+  } else {
+    class T {
+      constructor() {
+        obj = onPermissionsChanged(closure_2[8]);
+        obj1 = { type: closure_1_6.GUILD_ROLE_TEMPLATE_POPOUT };
+        trackResult = obj.track(closure_1_5.OPEN_POPOUT, obj1);
+        return;
+      }
+    }
+    tmp6 = cResult[1];
+  }
+  const effect = react.useEffect(tmp5, tmp6);
+  if (cResult[2] !== onPermissionsChanged) {
+    class E {
+      constructor(arg0) {
+        tmp = onPermissionsChanged(permissionsEdited);
+        obj = closure_1(closure_2[9]);
+        hideActionSheetResult = obj.hideActionSheet();
+        obj2 = closure_0(closure_2[10]);
+        result = obj2.roleTemplateAppliedToast();
+        return;
+      }
+    }
+    cResult[2] = onPermissionsChanged;
+    cResult[3] = E;
+  } else {
+    class E {
+      constructor(arg0) {
+        tmp = onPermissionsChanged(permissionsEdited);
+        obj = closure_1(closure_2[9]);
+        hideActionSheetResult = obj.hideActionSheet();
+        obj2 = closure_0(closure_2[10]);
+        result = obj2.roleTemplateAppliedToast();
+        return;
+      }
+    }
+  }
+  E = tmp8;
+  if (cResult[4] === permissionsEdited) {
+    let tmp10;
+    class E {
+      constructor(arg0) {
+        tmp = onPermissionsChanged(permissionsEdited);
+        obj = closure_1(closure_2[9]);
+        hideActionSheetResult = obj.hideActionSheet();
+        obj2 = closure_0(closure_2[10]);
+        result = obj2.roleTemplateAppliedToast();
+        return;
+      }
+    }
+    const _Symbol = Symbol;
+    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+      class E {
+        constructor(arg0) {
+          tmp = onPermissionsChanged(permissionsEdited);
+          obj = closure_1(closure_2[9]);
+          hideActionSheetResult = obj.hideActionSheet();
+          obj2 = closure_0(closure_2[10]);
+          result = obj2.roleTemplateAppliedToast();
+          return;
+        }
+      }
+      const BottomSheetTitleHeader = tmp(tmp2[13]).BottomSheetTitleHeader;
+      let intl = tmp(tmp2[12]).intl;
+      const tmp11 = <BottomSheetTitleHeader title={intl.string(tmp(E[12]).t.KgCkoQ)} />;
+      cResult[7] = tmp11;
+      tmp10 = tmp11;
+    } else {
+      class E {
+        constructor(arg0) {
+          tmp = onPermissionsChanged(permissionsEdited);
+          obj = closure_1(closure_2[9]);
+          hideActionSheetResult = obj.hideActionSheet();
+          obj2 = closure_0(closure_2[10]);
+          result = obj2.roleTemplateAppliedToast();
+          return;
+        }
+      }
+    }
+    if (cResult[8] === guildId) {
+      class E {
+        constructor(arg0) {
+          tmp = onPermissionsChanged(permissionsEdited);
+          obj = closure_1(closure_2[9]);
+          hideActionSheetResult = obj.hideActionSheet();
+          obj2 = closure_0(closure_2[10]);
+          result = obj2.roleTemplateAppliedToast();
+          return;
+        }
+      }
+      if (cResult[11] === tmp4.templateContainer) {
+        class E {
+          constructor(arg0) {
+            tmp = onPermissionsChanged(permissionsEdited);
+            obj = closure_1(closure_2[9]);
+            hideActionSheetResult = obj.hideActionSheet();
+            obj2 = closure_0(closure_2[10]);
+            result = obj2.roleTemplateAppliedToast();
+            return;
+          }
+        }
+        return tmp17;
+      }
+      const ActionSheet = tmp(tmp2[15]).ActionSheet;
+      const tmp20 = <ActionSheet header={tmp10} startExpanded>{null}</ActionSheet>;
+      cResult[11] = tmp4.templateContainer;
+      cResult[12] = tmp12;
+      cResult[13] = tmp20;
+      tmp17 = tmp20;
+    }
+    cResult[8] = guildId;
+    cResult[9] = tmp9;
+    cResult[10] = jsx(onPermissionsChanged(E[14]), { onSelect: tmp9, location: constants2.GUILD_ROLE_TEMPLATE_POPOUT, guildId });
+    const tmp16 = jsx(onPermissionsChanged(E[14]), { onSelect: tmp9, location: constants2.GUILD_ROLE_TEMPLATE_POPOUT, guildId });
+  }
+  class O {
+    constructor(arg0) {
+      closure_0 = permissionsEdited;
+      tmp = closure_0;
+      if (tmp) {
+        tmp4 = onPermissionsChanged;
+        tmp5 = closure_2;
+        tmp6 = onPermissionsChanged(closure_2[11]);
+        obj = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null, onCancel: null, hideActionSheet: false, isDismissable: false };
+        tmp7 = permissionsEdited;
+        show = tmp6.show;
+        intl = permissionsEdited(closure_2[12]).intl;
+        obj.title = intl.string(permissionsEdited(closure_2[12]).t.MVdkgB);
+        intl2 = permissionsEdited(closure_2[12]).intl;
+        obj.body = intl2.string(permissionsEdited(closure_2[12]).t.LpogjK);
+        intl3 = permissionsEdited(closure_2[12]).intl;
+        obj.cancelText = intl3.string(permissionsEdited(closure_2[12]).t["ETE/oC"]);
+        intl4 = permissionsEdited(closure_2[12]).intl;
+        obj.confirmText = intl4.string(permissionsEdited(closure_2[12]).t.p89ACt);
+        obj.onConfirm = function onConfirm() { /* body not rendered: F148874 */ };
+        obj.onCancel = function onCancel() { /* body not rendered: F148875 */ };
+        showResult = show(obj);
+      } else {
+        tmp2 = closure_2;
+        tmp3 = closure_2(permissionsEdited);
+      }
+      return;
+    }
+  }
+  cResult[4] = permissionsEdited;
+  cResult[5] = tmp8;
+  cResult[6] = O;
+}) : ((guildId) => {
+  let require;
+  ({ permissionsEdited: require, onPermissionsChanged: importDefault } = guildId);
+  guildId = guildId.guildId;
+  let tmp = closure_8();
+  const effect = react.useEffect(() => {
+    const obj = AnalyticsUtilsDefault;
+    const obj2 = { type: constants2.GUILD_ROLE_TEMPLATE_POPOUT };
+    obj.track(constants.OPEN_POPOUT, obj2);
+  }, []);
+  const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
+  let intl = intl5.intl;
+  let obj3 = { style: tmp.templateContainer, children: null };
+  const tmp3 = <BottomSheetTitleHeader title={intl.string(intl5.t.KgCkoQ)} />;
+  const ActionSheet = ActionSheet2.ActionSheet;
+  return <ActionSheet header={tmp3} startExpanded>{null}</ActionSheet>;
+});
 let result = size.fileFinishedImporting("modules/guild_settings/roles/native/action_sheet/RolePermissionTemplatesActionSheet.tsx");
 
-export default function RolePermissionTemplatesActionSheet(guildId) {
-  ({ permissionsEdited: require, onPermissionsChanged: importDefault } = guildId);
-  const effect = noop.useEffect(() => {
-    AnalyticsUtilsDefault.track(constants.OPEN_POPOUT, { type: constants2.GUILD_ROLE_TEMPLATE_POPOUT });
-  }, []);
-  let obj = { title: null };
-  let intl = util.intl;
-  obj.title = intl.string(util.t.KgCkoQ);
-  const tmp = closure_8();
-  let obj2 = { header: jsx(BottomSheetTitleHeader.BottomSheetTitleHeader, { title: null }), startExpanded: true, children: null };
-  let obj3 = {
-    style: tmp.templateContainer,
-    children: jsx(GuildSettingsRoleTemplateDefault, {
-      onSelect(arg0) {
-        closure_0 = arg0;
-        if (closure_0) {
-          const obj4 = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null, onCancel: null, hideActionSheet: false, isDismissable: false };
-          const intl = util.intl;
-          obj4.title = intl.string(util.t.MVdkgB);
-          const intl2 = util.intl;
-          obj4.body = intl2.string(util.t.LpogjK);
-          const intl3 = util.intl;
-          obj4.cancelText = intl3.string(util.t["ETE/oC"]);
-          const intl4 = util.intl;
-          obj4.confirmText = intl4.string(util.t.p89ACt);
-          obj4.onConfirm = function onConfirm() {
-            importDefault(closure_0);
-            closure_1_1(4809).hideActionSheet();
-            const obj = closure_1_1(4809);
-            const result = closure_0(4556).roleTemplateAppliedToast();
-          };
-          obj4.onCancel = function onCancel() {
-            closure_1_1(4809).hideActionSheet();
-          };
-          AlertActionCreatorsDefault.show(obj4);
-        } else {
-          closure_1(arg0);
-          ActionSheetActionCreatorsDefault.hideActionSheet();
-          let result = ToastUtils.roleTemplateAppliedToast();
-        }
-      },
-      location: constants.GUILD_ROLE_TEMPLATE_POPOUT,
-      guildId: guildId.guildId
-    })
-  };
-  obj2.children = <View style={tmp.templateContainer}>{jsx(GuildSettingsRoleTemplateDefault, {
-    onSelect(arg0) {
-      closure_0 = arg0;
-      if (closure_0) {
-        const obj4 = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null, onCancel: null, hideActionSheet: false, isDismissable: false };
-        const intl = util.intl;
-        obj4.title = intl.string(util.t.MVdkgB);
-        const intl2 = util.intl;
-        obj4.body = intl2.string(util.t.LpogjK);
-        const intl3 = util.intl;
-        obj4.cancelText = intl3.string(util.t["ETE/oC"]);
-        const intl4 = util.intl;
-        obj4.confirmText = intl4.string(util.t.p89ACt);
-        obj4.onConfirm = function onConfirm() {
-          importDefault(closure_0);
-          closure_1_1(4809).hideActionSheet();
-          const obj = closure_1_1(4809);
-          const result = closure_0(4556).roleTemplateAppliedToast();
-        };
-        obj4.onCancel = function onCancel() {
-          closure_1_1(4809).hideActionSheet();
-        };
-        AlertActionCreatorsDefault.show(obj4);
-      } else {
-        closure_1(arg0);
-        ActionSheetActionCreatorsDefault.hideActionSheet();
-        let result = ToastUtils.roleTemplateAppliedToast();
-      }
-    },
-    location: constants.GUILD_ROLE_TEMPLATE_POPOUT,
-    guildId: arg0.guildId
-  })}</View>;
-  return jsx(ActionSheet.ActionSheet, { header: jsx(BottomSheetTitleHeader.BottomSheetTitleHeader, { title: null }), startExpanded: true, children: null });
-};
+export default tmp3;

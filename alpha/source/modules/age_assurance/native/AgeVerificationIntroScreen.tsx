@@ -1,157 +1,553 @@
-// Module ID: 8220
-// Function ID: 8221
+// Module ID: 8261
+// Function ID: 8262
 // Name: AgeVerificationIntroScreen
-// Dependencies: [5, 19, 17, 8044, 1074, 21, 4845, 576, 1613, 5057, 8056, 4841, 6185, 8221, 1115, 8043, 2110, 8045, 5465, 8222, 2]
-// Exports: default
+// Dependencies: [5, 19, 17, 8085, 1085, 21, 4890, 587, 558, 576, 1618, 5102, 8097, 4886, 8262, 6074, 1126, 8084, 2115, 8086, 8263, 5594, 2]
 
-// Module 8220 (AgeVerificationIntroScreen)
-import nativeDefault from "native" /* 576 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2110 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8043 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8045 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import noop from "module_19" /* 19 */;
+// Module 8261 (AgeVerificationIntroScreen)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8084 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 8085 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8086 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ ScrollView: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-let closure_6 = fn(8044).getAgeVerificationGetStartedSteps;
-const HelpdeskArticles = fn(1074).HelpdeskArticles;
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9, Fragment: c10 } = jsxProd);
-const createStyles = fn(4845);
-let obj2 = { getStartedContainer: { paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16, flex: 1 }, getStartedHeaderContainer: null, ageGroupLearnMoreContainer: null, getStartedHeaderText: null, getStartedFooterContainer: null, getStartedFooterButtonsContainer: null };
-let obj3 = { paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16, flex: 1 };
-obj2.getStartedHeaderContainer = { alignItems: "center", gap: nativeDefault.space.PX_8 };
-let obj4 = { alignItems: "center", gap: nativeDefault.space.PX_8 };
-obj2.ageGroupLearnMoreContainer = { alignItems: "center", marginTop: -nativeDefault.space.PX_8 };
-obj2.getStartedHeaderText = { textAlign: "center" };
-let obj5 = { alignItems: "center", marginTop: -nativeDefault.space.PX_8 };
-obj2.getStartedFooterContainer = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_48 };
-let obj6 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_48 };
-obj2.getStartedFooterButtonsContainer = { gap: nativeDefault.space.PX_8 };
-let closure_11 = createStyles.createStyles(obj2);
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/age_assurance/native/AgeVerificationIntroScreen.tsx");
+let c1, modalSessionId;
 
-export default function GetStartedScreen(onComplete) {
-  const modalSessionId = onComplete.modalSessionId;
-  const entryPoint = onComplete.entryPoint;
-  const tmp = closure_11();
-  let initiateAgeVerification = modalSessionId(5057).useInitiateAgeVerification({ onComplete: onComplete.onClose, entryPoint });
-  initiateAgeVerification = initiateAgeVerification.initiateAgeVerification;
-  let obj2 = { children: null };
-  let obj3 = { children: null };
-  let obj4 = { style: tmp.getStartedContainer, children: null };
-  let obj5 = { style: tmp.getStartedHeaderContainer, children: null };
-  const items = [closure_8(modalSessionId(8056).ShieldSpotIllustration, {}), , ];
-  const obj6 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.getStartedHeaderText, children: null };
-  let obj = modalSessionId(5057);
-  obj6.children = modalSessionId(5057).getAgeVerificationGetStartedTitle(entryPoint);
-  items[1] = closure_8(modalSessionId(4841).Text, obj6);
-  const obj8 = { variant: "heading-md/medium", color: "text-default", style: tmp.getStartedHeaderText, children: null };
-  const obj7 = modalSessionId(5057);
-  obj8.children = modalSessionId(5057).getAgeVerificationGetStartedSubtitle(entryPoint);
-  items[2] = closure_8(modalSessionId(4841).Text, obj8);
-  obj5.children = items;
-  const items1 = [closure_9(closure_5, obj5), , ];
-  const obj10 = { hasIcons: true, children: null };
-  const obj9 = modalSessionId(5057);
-  obj10.children = closure_6(modalSessionId).map((children, index) => {
-    const description = children.description;
-    const obj = { index: index + 1, tip: closure_1_8(modalSessionId(4841).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: children.title }), description: null };
-    let tmpResult = null;
-    if (null != description) {
-      const obj2 = { variant: "text-xs/medium", color: "text-subtle", children: description };
-      tmpResult = tmp(modalSessionId(4841).Text, obj2);
+let c10;
+let c9;
+let closure_4;
+let hasOwnProperty;
+let metroImportAll;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+({ ScrollView: closure_4, View: hasOwnProperty } = react_native);
+let closure_6 = AgeVerificationConstants.getAgeVerificationGetStartedSteps;
+const HelpdeskArticles = Constants.HelpdeskArticles;
+({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { getStartedContainer: obj2, getStartedHeaderContainer: obj3, ageGroupLearnMoreContainer: obj4, getStartedHeaderText: { textAlign: "center" }, getStartedFooterContainer: obj5, getStartedFooterButtonsContainer: obj6 };
+obj2 = { paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16, flex: 1 };
+createStyles = createStyles.createStyles;
+obj3 = { alignItems: "center", gap: nativeDefault.space.PX_8 };
+obj4 = { alignItems: "center", marginTop: -nativeDefault.space.PX_8 };
+obj5 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_48 };
+obj6 = { gap: nativeDefault.space.PX_8 };
+let closure_11 = createStyles(obj);
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((modalSessionId) => {
+  let entryPoint;
+  let getStartedContainer;
+  let getStartedHeaderContainer;
+  let initiateAgeVerification;
+  let items;
+  let items1;
+  let loading;
+  let obj6;
+  let onClose;
+  const tmp = modalSessionId;
+  let tmp2 = dependencyMap;
+  let obj = modalSessionId(576);
+  const cResult = obj.c(57);
+  modalSessionId = modalSessionId.modalSessionId;
+  ({ onClose, entryPoint } = modalSessionId);
+  let tmp4 = closure_11();
+  const bottom = initiateAgeVerification(1618)().bottom;
+  if (cResult[0] === entryPoint) {
+    let tmp5;
+    let tmp8;
+    let tmp11;
+    if (cResult[1] === onClose) {
+      tmp5 = cResult[2];
     }
-    obj.description = tmpResult;
-    return closure_1_8(initiateAgeVerification(8221), obj, index);
-  });
-  items1[1] = closure_8(modalSessionId(6185).TableRowGroup, obj10);
-  const obj11 = { style: tmp.ageGroupLearnMoreContainer, children: null };
-  const obj12 = { variant: "text-xs/medium", color: "text-muted", children: null };
-  const intl = modalSessionId(1115).intl;
-  obj12.children = intl.format(modalSessionId(1115).t["L+FgkZ"], {
-    handleOnHelpUrlHook() {
-      const obj = AgeVerificationActionCreatorsDefault;
-      obj.openUrl(HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.TIGGER_PAWTECT_LEARN_MORE));
-      const result = AgeVerificationAnalyticsUtils.trackAgeVerificationModalClicked(modalSessionId, AgeVerificationAnalyticsUtils.AgeVerificationModalVersion.PRIMARY, AgeVerificationAnalyticsUtils.AgeVerificationModalCta.LEARN_MORE);
-    }
-  });
-  obj11.children = closure_8(modalSessionId(4841).Text, obj12);
-  items1[2] = closure_8(closure_5, obj11);
-  obj4.children = items1;
-  obj3.children = closure_9(closure_5, obj4);
-  const items2 = [closure_8(closure_4, obj3), ];
-  const obj14 = { style: null, children: null };
-  const items3 = [tmp.getStartedFooterContainer, { paddingBottom: initiateAgeVerification(1613)().bottom }];
-  obj14.style = items3;
-  const obj15 = { style: tmp.getStartedFooterButtonsContainer, children: null };
-  const obj16 = { variant: "primary", size: "lg", text: null, onPress: null, icon: null, loading: null, iconPosition: "end" };
-  const intl2 = modalSessionId(1115).intl;
-  obj16.text = intl2.string(modalSessionId(1115).t.SJMnkX);
-  obj16.onPress = asyncGeneratorStep(async (arg0, value) => {
-    if (v3 === 2) {
-      v3 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
+    let tmpResult = tmp(5102);
+    const initiateAgeVerification1 = tmpResult.useInitiateAgeVerification(tmp5);
+    ({ loading, initiateAgeVerification } = initiateAgeVerification1);
+    const _Symbol = Symbol;
+    ({ getStartedContainer, getStartedHeaderContainer } = tmp4);
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const tmp10 = closure_8(tmp(8097).ShieldSpotIllustration, {});
+      cResult[3] = tmp10;
+      tmp8 = tmp10;
     } else {
-      try {
-        v3 = 2;
-        if (0 === c1) {
-          if (arg0 === 1) {
-            v3 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            v3 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            const result = v3(8045).trackAgeVerificationModalClicked(modalSessionId, v3(8045).AgeVerificationModalVersion.PRIMARY, v3(8045).AgeVerificationModalCta.GET_STARTED);
-            c1 = 1;
-            v3 = 1;
-            const obj5 = { value: initiateAgeVerification(), done: false };
-            return obj5;
-          }
-        } else if (arg0 === 1) {
-          v3 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          v3 = 3;
-          const obj = { value, done: true };
-          return obj;
-        } else {
-          v3 = 3;
-          return { value: "HermesInternal", done: null };
-        }
-      } catch (tmp10) {
-        v3 = tmp;
-        throw tmp10;
-      }
+      tmp8 = cResult[3];
     }
-  });
-  const arr3 = closure_6(modalSessionId);
-  const obj13 = {
+    const getStartedHeaderText = tmp4.getStartedHeaderText;
+    if (cResult[4] !== entryPoint) {
+      const tmpResult3 = tmp(5102);
+      const ageVerificationGetStartedTitle = tmpResult3.getAgeVerificationGetStartedTitle(entryPoint);
+      cResult[4] = entryPoint;
+      cResult[5] = ageVerificationGetStartedTitle;
+      tmp11 = ageVerificationGetStartedTitle;
+    } else {
+      tmp11 = cResult[5];
+    }
+    if (cResult[6] === tmp4.getStartedHeaderText) {
+      let tmp13;
+      let tmp16;
+      if (cResult[7] === tmp11) {
+        tmp13 = cResult[8];
+      }
+      const getStartedHeaderText2 = tmp4.getStartedHeaderText;
+      if (cResult[9] !== entryPoint) {
+        const tmpResult4 = tmp(5102);
+        const ageVerificationGetStartedSubtitle = tmpResult4.getAgeVerificationGetStartedSubtitle(entryPoint);
+        cResult[9] = entryPoint;
+        cResult[10] = ageVerificationGetStartedSubtitle;
+        tmp16 = ageVerificationGetStartedSubtitle;
+      } else {
+        tmp16 = cResult[10];
+      }
+      if (cResult[11] === tmp4.getStartedHeaderText) {
+        let tmp18;
+        if (cResult[12] === tmp16) {
+          tmp18 = cResult[13];
+        }
+        if (cResult[14] === tmp4.getStartedHeaderContainer) {
+          if (cResult[15] === tmp18) {
+            let tmp21;
+            if (cResult[16] === tmp13) {
+              tmp21 = cResult[17];
+            }
+            if (cResult[18] !== modalSessionId) {
+              let tmp26;
+              const _Symbol2 = Symbol;
+              if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
+                class B {
+                  constructor(description, arg1) {
+                    let tmpResult;
+                    description = description.description;
+                    const title = description.title;
+                    const obj = { index: arg1 + 1, tip: closure_1_8(modalSessionId(dependencyMap[13]).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: title }), description: tmpResult };
+                    tmpResult = null;
+                    const tmp2 = dependencyMap;
+                    const tmp3 = initiateAgeVerification(dependencyMap[14]);
+                    const tmp4 = modalSessionId;
+                    if (null != description) {
+                      const obj2 = { variant: "text-xs/medium", color: "text-subtle", children: description };
+                      tmpResult = tmp(tmp4(tmp2[13]).Text, obj2);
+                    }
+                    return closure_1_8(tmp3, obj, arg1);
+                  }
+                }
+                cResult[20] = B;
+                tmp26 = B;
+              } else {
+                class B {
+                  constructor(description, arg1) {
+                    let tmpResult;
+                    description = description.description;
+                    const title = description.title;
+                    const obj = { index: arg1 + 1, tip: closure_1_8(modalSessionId(dependencyMap[13]).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: title }), description: tmpResult };
+                    tmpResult = null;
+                    const tmp2 = dependencyMap;
+                    const tmp3 = initiateAgeVerification(dependencyMap[14]);
+                    const tmp4 = modalSessionId;
+                    if (null != description) {
+                      const obj2 = { variant: "text-xs/medium", color: "text-subtle", children: description };
+                      tmpResult = tmp(tmp4(tmp2[13]).Text, obj2);
+                    }
+                    return closure_1_8(tmp3, obj, arg1);
+                  }
+                }
+              }
+              const arr2 = closure_6(modalSessionId);
+              const mapped = arr2.map(tmp26);
+              cResult[18] = modalSessionId;
+              cResult[19] = mapped;
+            } else {
+              class B {
+                constructor(description, arg1) {
+                  let tmpResult;
+                  description = description.description;
+                  const title = description.title;
+                  const obj = { index: arg1 + 1, tip: closure_1_8(modalSessionId(dependencyMap[13]).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: title }), description: tmpResult };
+                  tmpResult = null;
+                  const tmp2 = dependencyMap;
+                  const tmp3 = initiateAgeVerification(dependencyMap[14]);
+                  const tmp4 = modalSessionId;
+                  if (null != description) {
+                    const obj2 = { variant: "text-xs/medium", color: "text-subtle", children: description };
+                    tmpResult = tmp(tmp4(tmp2[13]).Text, obj2);
+                  }
+                  return closure_1_8(tmp3, obj, arg1);
+                }
+              }
+            }
+            if (cResult[21] !== tmp25) {
+              class B {
+                constructor(description, arg1) {
+                  let tmpResult;
+                  description = description.description;
+                  const title = description.title;
+                  const obj = { index: arg1 + 1, tip: closure_1_8(modalSessionId(dependencyMap[13]).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: title }), description: tmpResult };
+                  tmpResult = null;
+                  const tmp2 = dependencyMap;
+                  const tmp3 = initiateAgeVerification(dependencyMap[14]);
+                  const tmp4 = modalSessionId;
+                  if (null != description) {
+                    const obj2 = { variant: "text-xs/medium", color: "text-subtle", children: description };
+                    tmpResult = tmp(tmp4(tmp2[13]).Text, obj2);
+                  }
+                  return closure_1_8(tmp3, obj, arg1);
+                }
+              }
+              let obj2 = { hasIcons: true, children: tmp25 };
+              cResult[21] = tmp25;
+              cResult[22] = closure_8(tmp(6074).TableRowGroup, obj2);
+              const tmp30 = closure_8(tmp(6074).TableRowGroup, obj2);
+            } else {
+              class B {
+                constructor(description, arg1) {
+                  let tmpResult;
+                  description = description.description;
+                  const title = description.title;
+                  const obj = { index: arg1 + 1, tip: closure_1_8(modalSessionId(dependencyMap[13]).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: title }), description: tmpResult };
+                  tmpResult = null;
+                  const tmp2 = dependencyMap;
+                  const tmp3 = initiateAgeVerification(dependencyMap[14]);
+                  const tmp4 = modalSessionId;
+                  if (null != description) {
+                    const obj2 = { variant: "text-xs/medium", color: "text-subtle", children: description };
+                    tmpResult = tmp(tmp4(tmp2[13]).Text, obj2);
+                  }
+                  return closure_1_8(tmp3, obj, arg1);
+                }
+              }
+            }
+            const ageGroupLearnMoreContainer = tmp4.ageGroupLearnMoreContainer;
+            if (cResult[23] !== modalSessionId) {
+              class B {
+                constructor(description, arg1) {
+                  let tmpResult;
+                  description = description.description;
+                  const title = description.title;
+                  const obj = { index: arg1 + 1, tip: closure_1_8(modalSessionId(dependencyMap[13]).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: title }), description: tmpResult };
+                  tmpResult = null;
+                  const tmp2 = dependencyMap;
+                  const tmp3 = initiateAgeVerification(dependencyMap[14]);
+                  const tmp4 = modalSessionId;
+                  if (null != description) {
+                    const obj2 = { variant: "text-xs/medium", color: "text-subtle", children: description };
+                    tmpResult = tmp(tmp4(tmp2[13]).Text, obj2);
+                  }
+                  return closure_1_8(tmp3, obj, arg1);
+                }
+              }
+              const obj3 = {
+                handleOnHelpUrlHook() {
+                              const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
+                              AgeVerificationActionCreatorsDefault;
+                              const obj = HelpdeskUtilsDefault;
+                              openUrl(obj.getArticleURL(HelpdeskArticles.TIGGER_PAWTECT_LEARN_MORE));
+                              const trackAgeVerificationModalClicked = AgeVerificationAnalyticsUtils.trackAgeVerificationModalClicked;
+                              AgeVerificationAnalyticsUtils;
+                              const result = trackAgeVerificationModalClicked(modalSessionId, AgeVerificationAnalyticsUtils.AgeVerificationModalVersion.PRIMARY, AgeVerificationAnalyticsUtils.AgeVerificationModalCta.LEARN_MORE);
+                            }
+              };
+              cResult[23] = modalSessionId;
+              cResult[24] = obj10.format(tmp(1126).t["L+FgkZ"], obj3);
+              const formatResult = obj10.format(tmp(1126).t["L+FgkZ"], obj3);
+            } else {
+              class B {
+                constructor(description, arg1) {
+                  let tmpResult;
+                  description = description.description;
+                  const title = description.title;
+                  const obj = { index: arg1 + 1, tip: closure_1_8(modalSessionId(dependencyMap[13]).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: title }), description: tmpResult };
+                  tmpResult = null;
+                  const tmp2 = dependencyMap;
+                  const tmp3 = initiateAgeVerification(dependencyMap[14]);
+                  const tmp4 = modalSessionId;
+                  if (null != description) {
+                    const obj2 = { variant: "text-xs/medium", color: "text-subtle", children: description };
+                    tmpResult = tmp(tmp4(tmp2[13]).Text, obj2);
+                  }
+                  return closure_1_8(tmp3, obj, arg1);
+                }
+              }
+            }
+            if (cResult[25] !== tmp31) {
+              class B {
+                constructor(description, arg1) {
+                  let tmpResult;
+                  description = description.description;
+                  const title = description.title;
+                  const obj = { index: arg1 + 1, tip: closure_1_8(modalSessionId(dependencyMap[13]).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: title }), description: tmpResult };
+                  tmpResult = null;
+                  const tmp2 = dependencyMap;
+                  const tmp3 = initiateAgeVerification(dependencyMap[14]);
+                  const tmp4 = modalSessionId;
+                  if (null != description) {
+                    const obj2 = { variant: "text-xs/medium", color: "text-subtle", children: description };
+                    tmpResult = tmp(tmp4(tmp2[13]).Text, obj2);
+                  }
+                  return closure_1_8(tmp3, obj, arg1);
+                }
+              }
+              const obj4 = { variant: "text-xs/medium", color: "text-muted", children: tmp31 };
+              cResult[25] = tmp31;
+              cResult[26] = closure_8(tmp(4886).Text, obj4);
+              const tmp34 = closure_8(tmp(4886).Text, obj4);
+            } else {
+              class B {
+                constructor(description, arg1) {
+                  let tmpResult;
+                  description = description.description;
+                  const title = description.title;
+                  const obj = { index: arg1 + 1, tip: closure_1_8(modalSessionId(dependencyMap[13]).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: title }), description: tmpResult };
+                  tmpResult = null;
+                  const tmp2 = dependencyMap;
+                  const tmp3 = initiateAgeVerification(dependencyMap[14]);
+                  const tmp4 = modalSessionId;
+                  if (null != description) {
+                    const obj2 = { variant: "text-xs/medium", color: "text-subtle", children: description };
+                    tmpResult = tmp(tmp4(tmp2[13]).Text, obj2);
+                  }
+                  return closure_1_8(tmp3, obj, arg1);
+                }
+              }
+            }
+            if (cResult[27] === tmp4.ageGroupLearnMoreContainer) {
+              class B {
+                constructor(description, arg1) {
+                  let tmpResult;
+                  description = description.description;
+                  const title = description.title;
+                  const obj = { index: arg1 + 1, tip: closure_1_8(modalSessionId(dependencyMap[13]).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: title }), description: tmpResult };
+                  tmpResult = null;
+                  const tmp2 = dependencyMap;
+                  const tmp3 = initiateAgeVerification(dependencyMap[14]);
+                  const tmp4 = modalSessionId;
+                  if (null != description) {
+                    const obj2 = { variant: "text-xs/medium", color: "text-subtle", children: description };
+                    tmpResult = tmp(tmp4(tmp2[13]).Text, obj2);
+                  }
+                  return closure_1_8(tmp3, obj, arg1);
+                }
+              }
+              if (cResult[30] === tmp4.getStartedContainer) {
+                class B {
+                  constructor(description, arg1) {
+                    let tmpResult;
+                    description = description.description;
+                    const title = description.title;
+                    const obj = { index: arg1 + 1, tip: closure_1_8(modalSessionId(dependencyMap[13]).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: title }), description: tmpResult };
+                    tmpResult = null;
+                    const tmp2 = dependencyMap;
+                    const tmp3 = initiateAgeVerification(dependencyMap[14]);
+                    const tmp4 = modalSessionId;
+                    if (null != description) {
+                      const obj2 = { variant: "text-xs/medium", color: "text-subtle", children: description };
+                      tmpResult = tmp(tmp4(tmp2[13]).Text, obj2);
+                    }
+                    return closure_1_8(tmp3, obj, arg1);
+                  }
+                }
+              }
+              const obj5 = { children: closure_9(closure_5, obj6) };
+              obj6 = { style: getStartedContainer, children: items };
+              items = [tmp21, tmp29, tmp35];
+              cResult[30] = tmp4.getStartedContainer;
+              cResult[31] = tmp21;
+              cResult[32] = tmp29;
+              cResult[33] = tmp35;
+              cResult[34] = closure_8(closure_4, obj5);
+              const tmp44 = closure_8(closure_4, obj5);
+            }
+            const obj7 = { style: ageGroupLearnMoreContainer, children: tmp33 };
+            cResult[27] = tmp4.ageGroupLearnMoreContainer;
+            cResult[28] = tmp33;
+            cResult[29] = closure_8(closure_5, obj7);
+            const tmp38 = closure_8(closure_5, obj7);
+          }
+        }
+        const obj8 = { style: getStartedHeaderContainer, children: items1 };
+        items1 = [tmp8, tmp13, tmp18];
+        const tmp24 = closure_9(closure_5, obj8);
+        cResult[14] = tmp4.getStartedHeaderContainer;
+        cResult[15] = tmp18;
+        cResult[16] = tmp13;
+        cResult[17] = tmp24;
+        tmp21 = tmp24;
+      }
+      const obj9 = { variant: "heading-md/medium", color: "text-default", style: getStartedHeaderText2, children: tmp16 };
+      const tmp20 = closure_8(tmp(4886).Text, obj9);
+      cResult[11] = tmp4.getStartedHeaderText;
+      cResult[12] = tmp16;
+      cResult[13] = tmp20;
+      tmp18 = tmp20;
+    }
+    const obj11 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: getStartedHeaderText, children: tmp11 };
+    const tmp15 = closure_8(tmp(4886).Text, obj11);
+    cResult[6] = tmp4.getStartedHeaderText;
+    cResult[7] = tmp11;
+    cResult[8] = tmp15;
+    tmp13 = tmp15;
+  }
+  const obj12 = { onComplete: onClose, entryPoint };
+  cResult[0] = entryPoint;
+  cResult[1] = onClose;
+  cResult[2] = obj12;
+  tmp5 = obj12;
+}) : ((modalSessionId) => {
+  let Button;
+  let LinkExternalSmallIcon;
+  let Text3;
+  let arr3;
+  let intl;
+  let intl2;
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  let obj12;
+  let obj13;
+  let obj15;
+  let obj16;
+  let obj17;
+  let obj4;
+  let obj7;
+  let obj9;
+  modalSessionId = modalSessionId.modalSessionId;
+  const entryPoint = modalSessionId.entryPoint;
+  let initiateAgeVerification;
+  const onClose = modalSessionId.onClose;
+  const tmp = closure_11();
+  const bottom = initiateAgeVerification(1618)().bottom;
+  let obj = modalSessionId(5102);
+  initiateAgeVerification = obj.useInitiateAgeVerification({ onComplete: onClose, entryPoint });
+  initiateAgeVerification = initiateAgeVerification.initiateAgeVerification;
+  let obj2 = { children: items2 };
+  let obj3 = { children: closure_9(closure_5, obj4) };
+  obj4 = { style: tmp.getStartedContainer, children: items1 };
+  const loading = initiateAgeVerification.loading;
+  const obj5 = { style: tmp.getStartedHeaderContainer, children: items };
+  items = [closure_8(modalSessionId(8097).ShieldSpotIllustration, {}), , ];
+  const obj6 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.getStartedHeaderText, children: obj7.getAgeVerificationGetStartedTitle(entryPoint) };
+  const Text = modalSessionId(4886).Text;
+  obj7 = modalSessionId(5102);
+  items[1] = closure_8(Text, obj6);
+  const obj8 = { variant: "heading-md/medium", color: "text-default", style: tmp.getStartedHeaderText, children: obj9.getAgeVerificationGetStartedSubtitle(entryPoint) };
+  const Text2 = modalSessionId(4886).Text;
+  obj9 = modalSessionId(5102);
+  items[2] = closure_8(Text2, obj8);
+  items1 = [closure_9(closure_5, obj5), , ];
+  const obj10 = {
+    hasIcons: true,
+    children: arr3.map((description, index) => {
+      let tmpResult;
+      description = description.description;
+      const title = description.title;
+      const obj = { index: index + 1, tip: closure_1_8(modalSessionId(dependencyMap[13]).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: title }), description: tmpResult };
+      tmpResult = null;
+      const tmp2 = dependencyMap;
+      const tmp3 = initiateAgeVerification(dependencyMap[14]);
+      const tmp4 = modalSessionId;
+      if (null != description) {
+        const obj2 = { variant: "text-xs/medium", color: "text-subtle", children: description };
+        tmpResult = tmp(tmp4(tmp2[13]).Text, obj2);
+      }
+      return closure_1_8(tmp3, obj, index);
+    })
+  };
+  const TableRowGroup = modalSessionId(6074).TableRowGroup;
+  arr3 = closure_6(modalSessionId);
+  items1[1] = closure_8(TableRowGroup, obj10);
+  const obj11 = { style: tmp.ageGroupLearnMoreContainer, children: closure_8(Text3, obj12) };
+  obj12 = { variant: "text-xs/medium", color: "text-muted", children: intl.format(modalSessionId(1126).t["L+FgkZ"], obj13) };
+  Text3 = modalSessionId(4886).Text;
+  intl = modalSessionId(1126).intl;
+  obj13 = {
     handleOnHelpUrlHook() {
-      const obj = AgeVerificationActionCreatorsDefault;
-      obj.openUrl(HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.TIGGER_PAWTECT_LEARN_MORE));
-      const result = AgeVerificationAnalyticsUtils.trackAgeVerificationModalClicked(modalSessionId, AgeVerificationAnalyticsUtils.AgeVerificationModalVersion.PRIMARY, AgeVerificationAnalyticsUtils.AgeVerificationModalCta.LEARN_MORE);
+      const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
+      AgeVerificationActionCreatorsDefault;
+      const obj = HelpdeskUtilsDefault;
+      openUrl(obj.getArticleURL(HelpdeskArticles.TIGGER_PAWTECT_LEARN_MORE));
+      const trackAgeVerificationModalClicked = AgeVerificationAnalyticsUtils.trackAgeVerificationModalClicked;
+      AgeVerificationAnalyticsUtils;
+      const result = trackAgeVerificationModalClicked(modalSessionId, AgeVerificationAnalyticsUtils.AgeVerificationModalVersion.PRIMARY, AgeVerificationAnalyticsUtils.AgeVerificationModalCta.LEARN_MORE);
     }
   };
-  obj16.icon = closure_8(modalSessionId(8222).LinkExternalSmallIcon, { color: initiateAgeVerification(576).colors.WHITE });
-  obj16.loading = initiateAgeVerification.loading;
-  obj15.children = closure_8(modalSessionId(5465).Button, obj16);
-  obj14.children = closure_8(closure_5, obj15);
+  items1[2] = closure_8(closure_5, obj11);
+  items2 = [closure_8(closure_4, obj3), ];
+  const obj14 = { style: items3, children: closure_8(closure_5, obj15) };
+  items3 = [tmp.getStartedFooterContainer, { paddingBottom: bottom }];
+  obj15 = { style: tmp.getStartedFooterButtonsContainer, children: closure_8(Button, obj16) };
+  obj16 = {
+    variant: "primary",
+    size: "lg",
+    text: intl2.string(modalSessionId(1126).t.SJMnkX),
+    onPress: _asyncToGenerator(async (arg0, value) => {
+      let v3;
+      if (modalSessionId === 2) {
+        modalSessionId = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp2 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } else {
+        try {
+          modalSessionId = 2;
+          if (0 === c1) {
+            if (arg0 === 1) {
+              modalSessionId = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              modalSessionId = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              const trackAgeVerificationModalClicked = modalSessionId(dependencyMap[19]).trackAgeVerificationModalClicked;
+              const tmp6 = modalSessionId(dependencyMap[19]);
+              const result = trackAgeVerificationModalClicked(modalSessionId, modalSessionId(dependencyMap[19]).AgeVerificationModalVersion.PRIMARY, modalSessionId(dependencyMap[19]).AgeVerificationModalCta.GET_STARTED);
+              c1 = 1;
+              modalSessionId = 1;
+              const obj4 = { value: initiateAgeVerification(), done: false };
+              return obj4;
+            }
+          } else if (arg0 === 1) {
+            modalSessionId = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            modalSessionId = 3;
+            const obj = { value, done: true };
+            return obj;
+          } else {
+            modalSessionId = 3;
+            return { value: "IconComponent", done: "IconComponent" };
+          }
+        } catch (tmp10) {
+          modalSessionId = 3;
+          throw tmp10;
+        }
+      }
+    }),
+    icon: closure_8(LinkExternalSmallIcon, obj17),
+    loading,
+    iconPosition: "end"
+  };
+  Button = modalSessionId(5594).Button;
+  intl2 = modalSessionId(1126).intl;
+  obj17 = { color: initiateAgeVerification(587).colors.WHITE };
+  LinkExternalSmallIcon = modalSessionId(8263).LinkExternalSmallIcon;
   items2[1] = closure_8(closure_5, obj14);
-  obj2.children = items2;
   return closure_9(closure_10, obj2);
-};
+});
+let result = size.fileFinishedImporting("modules/age_assurance/native/AgeVerificationIntroScreen.tsx");
+
+export default tmp6;

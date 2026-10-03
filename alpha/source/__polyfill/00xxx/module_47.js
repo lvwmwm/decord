@@ -4,4 +4,4 @@
 
 // Module 47
 
-export default ErrorUtils.ErrorUtils;
+export default global.ErrorUtils;

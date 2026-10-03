@@ -1,18 +1,18 @@
-// Module ID: 8903
-// Function ID: 8904
+// Module ID: 8931
+// Function ID: 8932
 // Name: AppLauncherStore
-// Dependencies: [8904, 504, 573, 2]
+// Dependencies: [8932, 504, 584, 2]
 
-// Module 8903 (AppLauncherStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 8904 */;
+// Module 8931 (AppLauncherStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 8932 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function handleDismissWithDismissed() {
   let DISMISSED = AppLauncherTypes.AppLauncherCloseReason.DISMISSED;
   if (DISMISSED === undefined) {
-    DISMISSED = tmp(8904).AppLauncherCloseReason.DISMISSED;
+    DISMISSED = tmp(8932).AppLauncherCloseReason.DISMISSED;
   }
   obj.show = false;
   obj.entrypoint = AppLauncherTypes.AppLauncherEntrypoint.NONE;
@@ -23,7 +23,7 @@ function handleDismissWithDismissed() {
 function handleSetActiveCommand() {
   let DISMISSED = AppLauncherTypes.AppLauncherCloseReason.COMMAND;
   if (DISMISSED === undefined) {
-    DISMISSED = tmp(8904).AppLauncherCloseReason.DISMISSED;
+    DISMISSED = tmp(8932).AppLauncherCloseReason.DISMISSED;
   }
   obj.show = false;
   obj.entrypoint = AppLauncherTypes.AppLauncherEntrypoint.NONE;
@@ -31,53 +31,50 @@ function handleSetActiveCommand() {
   obj.initialState = undefined;
   obj.activeChannelId = null;
 }
-const obj = { show: false, entrypoint: fn(8904).AppLauncherEntrypoint.NONE, lastShownEntrypoint: fn(8904).AppLauncherEntrypoint.NONE, activeViewType: null, activeChannelId: null, closeReason: fn(8904).AppLauncherCloseReason.DISMISSED, initialState: "channel" };
-const Store = initializeDefault.Store;
+const obj = { show: false, entrypoint: AppLauncherTypes.AppLauncherEntrypoint.NONE, lastShownEntrypoint: AppLauncherTypes.AppLauncherEntrypoint.NONE, activeViewType: null, activeChannelId: null, closeReason: AppLauncherTypes.AppLauncherCloseReason.DISMISSED, initialState: "application" };
+const Store = get_initializedDefault.Store;
 class AppLauncherStore extends Store {
+  initialize() {
+
+  }
+  shouldShowPopup() {
+    const show = obj.show && obj.entrypoint === AppLauncherTypes.AppLauncherEntrypoint.TEXT;
+    return show;
+  }
+  shouldShowModal() {
+    const show = obj.show && obj.entrypoint === AppLauncherTypes.AppLauncherEntrypoint.VOICE;
+    return show;
+  }
+  entrypoint() {
+    return obj.entrypoint;
+  }
+  lastShownEntrypoint() {
+    return obj.lastShownEntrypoint;
+  }
+  activeViewType() {
+    return obj.activeViewType;
+  }
+  activeChannelId() {
+    let activeChannelId = obj.activeChannelId;
+    if (activeChannelId == null) {
+      activeChannelId = null;
+    }
+    return activeChannelId;
+  }
+  closeReason() {
+    return obj.closeReason;
+  }
+  initialState() {
+    return obj.initialState;
+  }
 }
 const prototype = AppLauncherStore.prototype;
-prototype["initialize"] = function initialize() {
-
-};
-prototype["shouldShowPopup"] = function shouldShowPopup() {
-  let show = obj.show;
-  if (show) {
-    show = obj.entrypoint === AppLauncherTypes.AppLauncherEntrypoint.TEXT;
-  }
-  return show;
-};
-prototype["shouldShowModal"] = function shouldShowModal() {
-  let show = obj.show;
-  if (show) {
-    show = obj.entrypoint === AppLauncherTypes.AppLauncherEntrypoint.VOICE;
-  }
-  return show;
-};
-prototype["entrypoint"] = function entrypoint() {
-  return obj.entrypoint;
-};
-prototype["lastShownEntrypoint"] = function lastShownEntrypoint() {
-  return obj.lastShownEntrypoint;
-};
-prototype["activeViewType"] = function activeViewType() {
-  return obj.activeViewType;
-};
-prototype["activeChannelId"] = function activeChannelId() {
-  let activeChannelId = obj.activeChannelId;
-  if (activeChannelId == null) {
-    activeChannelId = null;
-  }
-  return activeChannelId;
-};
-prototype["closeReason"] = function closeReason() {
-  return obj.closeReason;
-};
-prototype["initialState"] = function initialState() {
-  return obj.initialState;
-};
 AppLauncherStore.displayName = "AppLauncherStore";
-const appLauncherStore = new AppLauncherStore(DispatcherDefault, {
+const obj2 = {
   APP_LAUNCHER_SHOW: function handleShow(entrypoint) {
+    let activeChannelId;
+    let activeViewType;
+    let initialState;
     entrypoint = entrypoint.entrypoint;
     obj.show = true;
     obj.entrypoint = entrypoint;
@@ -106,8 +103,8 @@ const appLauncherStore = new AppLauncherStore(DispatcherDefault, {
   CHANNEL_SELECT: handleDismissWithDismissed,
   APPLICATION_COMMAND_SET_ACTIVE_COMMAND: handleSetActiveCommand,
   APP_LAUNCHER_SET_ACTIVE_COMMAND: handleSetActiveCommand
-});
-const size = fn(2);
+};
+const appLauncherStore = new AppLauncherStore(DispatcherDefault, obj2);
 const result = size.fileFinishedImporting("modules/app_launcher/AppLauncherStore.tsx");
 
 export default appLauncherStore;

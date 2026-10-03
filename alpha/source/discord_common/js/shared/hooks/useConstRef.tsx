@@ -1,17 +1,17 @@
-// Module ID: 7283
-// Function ID: 7284
-// Name: useConstRef
+// Module ID: 7181
+// Function ID: 7182
+// Name: react
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 7283 (useConstRef)
-import noop from "module_19" /* 19 */;
+// Module 7181 (react)
+import react from "react" /* 19 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("../discord_common/js/shared/hooks/useConstRef.tsx");
 
 export default function useConstRef(current) {
-  const ref = noop.useRef(current);
+  const ref = react.useRef(current);
   ref.current = current;
   return ref;
 };

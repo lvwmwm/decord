@@ -1,10 +1,10 @@
-// Module ID: 6593
-// Function ID: 6594
+// Module ID: 6483
+// Function ID: 6484
 // Name: ImageCroppingConstants
-// Dependencies: [6594, 2]
+// Dependencies: [6484, 2]
 
-// Module 6593 (ImageCroppingConstants)
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 6594 */;
+// Module 6483 (ImageCroppingConstants)
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 6484 */;
 import size from "module_2" /* 2 */;
 
 const BACKGROUND_REPLACEMENT_SIZE = VideoBackgroundConstants.BACKGROUND_REPLACEMENT_SIZE;

@@ -1,25 +1,26 @@
-// Module ID: 15300
-// Function ID: 15301
+// Module ID: 15357
+// Function ID: 15358
 // Name: SupportSetting
-// Dependencies: [11215, 1115, 10768, 15301, 2]
+// Dependencies: [11129, 1126, 11015, 15358, 2]
 
-// Module 15300 (SupportSetting)
-import util from "util" /* 1115 */;
-import CircleQuestionIcon from "CircleQuestionIcon" /* 10768 */;
-import SupportUtils from "SupportUtils" /* 15301 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 15357 (SupportSetting)
+import intl2 from "intl" /* 1126 */;
+import CircleQuestionIcon from "CircleQuestionIcon" /* 11015 */;
+import SupportUtils from "SupportUtils" /* 15358 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
-const pressable = SettingBuilders.createPressable({
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["Yl/Riu"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["Yl/Riu"]);
   },
   parent: null,
   IconComponent: CircleQuestionIcon.CircleQuestionIcon,
   onPress: SupportUtils.emailSupport,
   withArrow: true
-});
+};
+const pressable = SettingBuilders.createPressable(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/SupportSetting.tsx");
 
 export default pressable;

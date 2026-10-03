@@ -1,22 +1,28 @@
-// Module ID: 15436
-// Function ID: 15437
+// Module ID: 15493
+// Function ID: 15494
 // Name: mfa/MFAActionCreators
-// Dependencies: [15437, 15438, 15447, 2]
+// Dependencies: [15494, 15495, 15504, 2]
 // Exports: openMFAModal
 
-// Module 15436 (mfa/MFAActionCreators)
-import MFAConstants from "MFAConstants" /* 15437 */;
-import MFA from "MFA" /* 15447 */;
+// Module 15493 (mfa/MFAActionCreators)
+import MFAConstants from "MFAConstants" /* 15494 */;
+import MFA from "MFA" /* 15504 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
 const SELECT_NAMES = MFAConstants.SELECT_NAMES;
 const result = size.fileFinishedImporting("modules/mfa/MFAActionCreators.tsx");
 
 export const openMFAModal = function openMFAModal(methods, arg1, arg2) {
+  let closure_0;
   _require = arg1;
   methods = methods.methods;
   methods.methods = methods.filter((type) => Object.hasOwn(SELECT_NAMES, type.type));
-  require("MFAModal").openMFAModal(methods, (arg0) => MFA.trySubmit(arg0, closure_0), arg2);
+  let obj = require("MFAModal");
+  obj.openMFAModal(methods, (arg0) => {
+    const obj = MFA;
+    return obj.trySubmit(arg0, closure_0);
+  }, arg2);
 };

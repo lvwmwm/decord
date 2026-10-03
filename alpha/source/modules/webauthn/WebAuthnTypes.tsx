@@ -1,16 +1,13 @@
-// Module ID: 6555
-// Function ID: 6556
+// Module ID: 6438
+// Function ID: 6439
 // Name: WebAuthnTypes
 // Dependencies: [2]
 
-// Module 6555 (WebAuthnTypes)
+// Module 6438 (WebAuthnTypes)
 import size from "module_2" /* 2 */;
 
-const prototype = function IgnorableWebAuthnError() {
-  return HermesBuiltin.applyArguments(new.target, new.target);
-}.prototype;
-class prototype extends Error {
+class IgnorableWebAuthnError extends Error {
 }
 const result = size.fileFinishedImporting("modules/webauthn/WebAuthnTypes.tsx");
 
-export const IgnorableWebAuthnError = prototype;
+export { IgnorableWebAuthnError };

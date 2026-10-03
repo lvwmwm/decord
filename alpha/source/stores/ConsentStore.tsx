@@ -1,27 +1,28 @@
-// Module ID: 6198
-// Function ID: 6199
+// Module ID: 6084
+// Function ID: 6085
 // Name: ConsentStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 584, 2]
 
-// Module 6198 (ConsentStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 6084 (ConsentStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import size from "module_2" /* 2 */;
 
 let c0 = false;
 let c1 = false;
 let obj = {};
 let c3 = null;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class ConsentStore extends Store {
+  hasConsented(arg0) {
+    const consented = null != obj[arg0] && obj[arg0].consented;
+    return consented;
+  }
+  getAuthenticationConsentRequired() {
+    return c3;
+  }
 }
 const prototype = ConsentStore.prototype;
-prototype["hasConsented"] = function hasConsented(arg0) {
-  let consented = null != obj[arg0];
-  if (consented) {
-    consented = obj[arg0].consented;
-  }
-  return consented;
-};
 Object.defineProperty(prototype, "consents", {
   get: function consents() {
     return obj;
@@ -40,9 +41,6 @@ Object.defineProperty(prototype, "receivedConsentsInConnectionOpen", {
   },
   set: undefined
 });
-prototype["getAuthenticationConsentRequired"] = function getAuthenticationConsentRequired() {
-  return c3;
-};
 ConsentStore.displayName = "ConsentStore";
 obj = {
   CONNECTION_OPEN: function handleConnectionOpen(consents) {
@@ -72,7 +70,6 @@ obj = {
   }
 };
 const consentStore = new ConsentStore(DispatcherDefault, obj);
-const size = fn(2);
 const result = size.fileFinishedImporting("stores/ConsentStore.tsx");
 
 export default consentStore;

@@ -1,17 +1,20 @@
-// Module ID: 8363
-// Function ID: 8364
+// Module ID: 8367
+// Function ID: 8368
 // Name: GameProfileMediaSources
-// Dependencies: [1432, 5276, 2015, 2]
+// Dependencies: [1437, 5322, 2022, 2]
 // Exports: buildMediaEntries, buildMediaViewerSources, getCarouselPreviewPixelSize
 
-// Module 8363 (GameProfileMediaSources)
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1432 */;
-import ImageProxyUtils from "ImageProxyUtils" /* 2015 */;
-import StoreUtils from "StoreUtils" /* 5276 */;
-import size from "module_2" /* 2 */;
+// Module 8367 (GameProfileMediaSources)
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1437 */;
+import ImageProxyUtils from "ImageProxyUtils" /* 2022 */;
+import StoreUtils from "StoreUtils" /* 5322 */;
+import size_mod from "module_2" /* 2 */;
+
+let originalUrl;
 
 let c2 = 366;
 let closure_3 = { width: 1920, height: 1080 };
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileMediaSources.tsx");
 
 export const MEDIA_ITEM_MAX_WIDTH = 366;
@@ -20,54 +23,58 @@ export const MEDIA_ITEM_ASPECT_RATIO = 1.83;
 export const getCarouselPreviewPixelSize = function getCarouselPreviewPixelSize() {
   let devicePixelRatio = arg0;
   if (arg0 === undefined) {
-    devicePixelRatio = ImageLoaderUtils.getDevicePixelRatio();
+    const obj = ImageLoaderUtils;
+    devicePixelRatio = obj.getDevicePixelRatio();
   }
-  const bestMediaProxySize = ImageLoaderUtils.getBestMediaProxySize(c2 * devicePixelRatio);
-  const size = { width: bestMediaProxySize, height: Math.round(bestMediaProxySize / 1.83) };
+  const obj2 = ImageLoaderUtils;
+  const bestMediaProxySize = obj2.getBestMediaProxySize(c2 * devicePixelRatio);
+  size = { width: bestMediaProxySize, height: Math.round(bestMediaProxySize / 1.83) };
   return size;
 };
 export const buildMediaEntries = function buildMediaEntries(game) {
+  let items;
+  let styles;
   if (null == game) {
-    let items = [];
+    items = [];
   } else {
     let trailers = game.trailers;
     if (trailers == null) {
       trailers = [];
     }
     items = [];
-    const arraySpreadResult = HermesBuiltin.arraySpread(trailers.map((application_id) => {
-      const obj = { type: "trailer", originalUrl: StoreUtils.getAssetURL(application_id.application_id, application_id.id, styles.width, "mp4"), previewUrl: null };
-      obj.previewUrl = StoreUtils.getAssetURL(application_id.application_id, application_id.id, size, "webp");
+    let screenshotUrls = game.screenshotUrls;
+    const arraySpreadResult = HermesBuiltin.arraySpread(items, trailers.map((application_id) => {
+      let obj2;
+      let obj3;
+      const obj = { type: "trailer", originalUrl: obj2.getAssetURL(application_id.application_id, application_id.id, styles.width, "mp4"), previewUrl: obj3.getAssetURL(application_id.application_id, application_id.id, size, "webp") };
+      obj2 = StoreUtils;
+      obj3 = StoreUtils;
       return obj;
     }), 0);
-    let screenshotUrls = game.screenshotUrls;
     if (screenshotUrls == null) {
       screenshotUrls = [];
     }
-    HermesBuiltin.arraySpread(screenshotUrls.map((originalUrl) => {
-      const obj = { type: "image", originalUrl, previewUrl: ImageProxyUtils.getSizedImageAssetURL(originalUrl, { size, keepAspectRatio: true }) };
+    HermesBuiltin.arraySpread(items, screenshotUrls.map((originalUrl) => {
+      let obj2;
+      const obj = { type: "image", originalUrl, previewUrl: obj2.getSizedImageAssetURL(originalUrl, obj3) };
+      obj2 = ImageProxyUtils;
       return obj;
     }), arraySpreadResult);
   }
   return items;
 };
-export const buildMediaViewerSources = function buildMediaViewerSources(memo1, memo) {
-  closure_0 = memo;
-  return memo1.map((originalUrl, mediaIndex) => {
-    const obj = { uri: originalUrl.originalUrl, videoURI: null, mediaIndex: null };
+export const buildMediaViewerSources = function buildMediaViewerSources(arr2, cResult) {
+  let closure_0 = cResult;
+  return arr2.map((originalUrl, mediaIndex) => {
+    let obj2;
+    const obj = { uri: originalUrl.originalUrl, videoURI: originalUrl, mediaIndex, thumbnail: obj2, accessoryType: "embed", disableDownload: true };
     originalUrl = undefined;
     if ("trailer" === originalUrl.type) {
       originalUrl = originalUrl.originalUrl;
     }
-    obj.videoURI = originalUrl;
-    obj.mediaIndex = mediaIndex;
     const merged = Object.assign(closure_3);
-    const obj2 = {};
-    const merged1 = Object.assign(closure_0);
-    obj2.uri = originalUrl.previewUrl;
-    obj.thumbnail = obj2;
-    obj.accessoryType = "embed";
-    obj.disableDownload = true;
+    obj2 = { uri: originalUrl.previewUrl };
+    const merged1 = Object.assign(require);
     return obj;
   });
 };

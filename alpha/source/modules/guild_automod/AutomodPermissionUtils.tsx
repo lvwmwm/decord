@@ -1,59 +1,199 @@
-// Module ID: 4504
-// Function ID: 4505
+// Module ID: 4515
+// Function ID: 4516
 // Name: AutomodPermissionUtils
-// Dependencies: [2107, 4484, 1385, 504, 2]
-// Exports: getAutomodQuarantinedGuildMemberFlags, getAutomodQuarantinedProfileFlags, getAutomodReason, hasAutomodQuarantinedProfile, useCurrentUserAutomodQuaratinedProfile
+// Dependencies: [2112, 4495, 1390, 558, 576, 504, 2]
+// Exports: getAutomodQuarantinedGuildMemberFlags, getAutomodQuarantinedProfileFlags, getAutomodReason, hasAutomodQuarantinedProfile
 
-// Module 4504 (AutomodPermissionUtils)
-import GuildMemberStore from "GuildMemberStore" /* 2107 */;
+// Module 4515 (AutomodPermissionUtils)
+import FlagUtils from "FlagUtils" /* 1390 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4495 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, set;
 
-const require = fn;
-const GuildMemberFlags = fn(4484).GuildMemberFlags;
+const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
 let items = [, , ];
 ({ AUTOMOD_QUARANTINED_BIO: arr[0], AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME: arr[1], AUTOMOD_QUARANTINED_SERVER_TAG: arr[2] } = GuildMemberFlags);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_automod/AutomodPermissionUtils.tsx");
-
-export const AUTOMOD_QUARANTINED_PROFILE_FLAGS = items;
-export const getAutomodQuarantinedProfileFlags = function getAutomodQuarantinedProfileFlags(flags) {
-  closure_0 = flags;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  let tmp7;
+  _require = arg0;
+  const tmp = _require;
+  let tmp2 = dependencyMap;
+  const obj = require("react");
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp5 = GuildMemberStore;
+    items = [GuildMemberStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      let tmp2 = null != closure_0;
+      if (tmp2) {
+        const selfMember = GuildMemberStore.getSelfMember(tmp);
+        let tmp5 = null != selfMember;
+        if (tmp5) {
+          tmp5 = null != selfMember.flags && items.some((item) => {
+            let num = selfMember.flags;
+            const hasFlag = closure_2_0(closure_2_1[2]).hasFlag;
+            closure_2_0(closure_2_1[2]);
+            if (num == null) {
+              num = 0;
+            }
+            return hasFlag(num, item);
+          });
+          const someResult = null != selfMember.flags && items.some((item) => {
+            let num = selfMember.flags;
+            const hasFlag = closure_2_0(closure_2_1[2]).hasFlag;
+            closure_2_0(closure_2_1[2]);
+            if (num == null) {
+              num = 0;
+            }
+            return hasFlag(num, item);
+          });
+        }
+        tmp2 = tmp5;
+      }
+      return tmp2;
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6, tmp7);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  items = [GuildMemberStore];
+  const items1 = [arg0];
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    let tmp2 = null != closure_0;
+    if (tmp2) {
+      const selfMember = GuildMemberStore.getSelfMember(tmp);
+      let tmp5 = null != selfMember;
+      if (tmp5) {
+        tmp5 = null != selfMember.flags && items.some((item) => {
+          let num = selfMember.flags;
+          const hasFlag = closure_2_0(closure_2_1[2]).hasFlag;
+          closure_2_0(closure_2_1[2]);
+          if (num == null) {
+            num = 0;
+          }
+          return hasFlag(num, item);
+        });
+        const someResult = null != selfMember.flags && items.some((item) => {
+          let num = selfMember.flags;
+          const hasFlag = closure_2_0(closure_2_1[2]).hasFlag;
+          closure_2_0(closure_2_1[2]);
+          if (num == null) {
+            num = 0;
+          }
+          return hasFlag(num, item);
+        });
+      }
+      tmp2 = tmp5;
+    }
+    return tmp2;
+  }, items1);
+});
+function getAutomodQuarantinedProfileFlags(flags) {
+  let closure_0 = flags;
   if (null == flags) {
     const _Set2 = Set;
-    let set = new Set();
+    const self3 = this;
+    const self4 = this;
+    set = new Set();
   } else {
     const _Set = Set;
+    const self = this;
+    const self2 = this;
     set = new Set(items.reduce((arr, item) => {
       let num = flags;
+      const hasFlag = FlagUtils.hasFlag;
+      FlagUtils;
       if (flags == null) {
         num = 0;
       }
-      if (obj.hasFlag(num, item)) {
+      if (hasFlag(num, item)) {
         arr.push(item);
       }
       return arr;
     }, []));
   }
   return set;
-};
+}
+function hasAutomodQuarantinedProfile(member) {
+  let closure_0 = member;
+  let tmp = null != member;
+  if (tmp) {
+    tmp = null != member.flags && items.some((item) => {
+      let num = selfMember.flags;
+      const hasFlag = closure_2_0(closure_2_1[2]).hasFlag;
+      closure_2_0(closure_2_1[2]);
+      if (num == null) {
+        num = 0;
+      }
+      return hasFlag(num, item);
+    });
+    const someResult = null != member.flags && items.some((item) => {
+      let num = selfMember.flags;
+      const hasFlag = closure_2_0(closure_2_1[2]).hasFlag;
+      closure_2_0(closure_2_1[2]);
+      if (num == null) {
+        num = 0;
+      }
+      return hasFlag(num, item);
+    });
+  }
+  return tmp;
+}
+const result = size.fileFinishedImporting("modules/guild_automod/AutomodPermissionUtils.tsx");
+
+export const AUTOMOD_QUARANTINED_PROFILE_FLAGS = items;
+export { getAutomodQuarantinedProfileFlags };
 export const getAutomodQuarantinedGuildMemberFlags = function getAutomodQuarantinedGuildMemberFlags(member) {
   if (null == member) {
     const _Set3 = Set;
-    let set = new Set();
+    const self5 = this;
+    const self6 = this;
+    set = new Set();
   } else {
     const flags = member.flags;
     if (null == flags) {
       const _Set2 = Set;
+      const self3 = this;
+      const self4 = this;
       set = new Set();
     } else {
+      const tmp = globalThis;
       const _Set = Set;
+      const self = this;
+      const self2 = this;
       set = new Set(items.reduce((arr, item) => {
         let num = flags;
+        const hasFlag = FlagUtils.hasFlag;
+        FlagUtils;
         if (flags == null) {
           num = 0;
         }
-        if (obj.hasFlag(num, item)) {
+        if (hasFlag(num, item)) {
           arr.push(item);
         }
         return arr;
@@ -63,60 +203,18 @@ export const getAutomodQuarantinedGuildMemberFlags = function getAutomodQuaranti
   return set;
 };
 export const getAutomodReason = function getAutomodReason(automodQuarantinedGuildMemberFlags) {
+  let prop;
   if (automodQuarantinedGuildMemberFlags.has(GuildMemberFlags.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME)) {
-    let prop = tmp.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME;
-  } else if (automodQuarantinedGuildMemberFlags.has(tmp.AUTOMOD_QUARANTINED_BIO)) {
+    prop = tmp.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME;
+  } else if (automodQuarantinedGuildMemberFlags.has(GuildMemberFlags.AUTOMOD_QUARANTINED_BIO)) {
     prop = tmp.AUTOMOD_QUARANTINED_BIO;
   } else {
     prop = null;
-    if (automodQuarantinedGuildMemberFlags.has(tmp.AUTOMOD_QUARANTINED_SERVER_TAG)) {
+    if (automodQuarantinedGuildMemberFlags.has(GuildMemberFlags.AUTOMOD_QUARANTINED_SERVER_TAG)) {
       prop = tmp.AUTOMOD_QUARANTINED_SERVER_TAG;
     }
   }
   return prop;
 };
-export const hasAutomodQuarantinedProfile = function hasAutomodQuarantinedProfile(member) {
-  closure_0 = member;
-  let tmp = null != member;
-  if (tmp) {
-    let someResult = null != member.flags;
-    if (someResult) {
-      someResult = items.some((item) => {
-        let num = selfMember.flags;
-        if (num == null) {
-          num = 0;
-        }
-        return selfMember(dependencyMap[2]).hasFlag(num, item);
-      });
-    }
-    tmp = someResult;
-  }
-  return tmp;
-};
-export const useCurrentUserAutomodQuaratinedProfile = function useCurrentUserAutomodQuaratinedProfile(guild_id) {
-  _require = guild_id;
-  items = [GuildMemberStore];
-  const items1 = [guild_id];
-  return require("initialize").useStateFromStores(items, () => {
-    let tmp2 = null != selfMember;
-    if (tmp2) {
-      selfMember = GuildMemberStore.getSelfMember(tmp);
-      let tmp5 = null != selfMember;
-      if (tmp5) {
-        let someResult = null != selfMember.flags;
-        if (someResult) {
-          someResult = items.some((item) => {
-            let num = selfMember.flags;
-            if (num == null) {
-              num = 0;
-            }
-            return selfMember(dependencyMap[2]).hasFlag(num, item);
-          });
-        }
-        tmp5 = someResult;
-      }
-      tmp2 = tmp5;
-    }
-    return tmp2;
-  }, items1);
-};
+export { hasAutomodQuarantinedProfile };
+export const useCurrentUserAutomodQuaratinedProfile = tmp2;

@@ -1,44 +1,550 @@
-// Module ID: 6744
-// Function ID: 6745
+// Module ID: 6633
+// Function ID: 6634
 // Name: FormRow
-// Dependencies: [19, 17, 21, 4845, 576, 6745, 6184, 6103, 6746, 6747, 5621, 6748, 6750, 6753, 6754, 6755, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 6634, 6073, 5993, 6635, 6636, 5909, 6637, 6639, 6632, 6642, 6643, 2]
 
-// Module 6744 (FormRow)
-import nativeDefault from "native" /* 576 */;
-import FormLabelDefault from "FormLabel" /* 6746 */;
-import FormSubLabelDefault from "FormSubLabel" /* 6747 */;
-import FormArrowDefault from "FormArrow" /* 6748 */;
-import Form_FormRadioDefault from "Form/FormRadio" /* 6750 */;
-import Form_FormCheckboxDefault from "Form/FormCheckbox" /* 6753 */;
-import FormCheckmarkDefault from "FormCheckmark" /* 6754 */;
-import FormIconDefault from "FormIcon" /* 6755 */;
-import noop from "module_19" /* 19 */;
+// Module 6633 (FormRow)
+import nativeDefault from "native" /* 587 */;
+import Form_FormCheckboxDefault from "Form/FormCheckbox" /* 6632 */;
+import FormLabelDefault from "FormLabel" /* 6635 */;
+import FormSubLabelDefault from "FormSubLabel" /* 6636 */;
+import FormArrowDefault from "FormArrow" /* 6637 */;
+import Form_FormRadioDefault from "Form/FormRadio" /* 6639 */;
+import FormCheckmarkDefault from "FormCheckmark" /* 6642 */;
+import FormIconDefault from "FormIcon" /* 6643 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment_mod from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-get_ActivityIndicator = fn(17);
-({ Platform, View: closure_4 } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4845);
+let label;
+
+let Platform;
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
+({ Platform, View: closure_4 } = react_native);
+let Fragment = Fragment_mod;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles(() => {
-  const obj = { container: null, label: null, leading: null, trailing: null, disabled: null, error: null };
-  const merged = Object.assign({ paddingHorizontal: 16, paddingVertical: 16 });
-  obj.container = { flexDirection: "row", justifyContent: "flex-start", alignItems: "center" };
-  obj.label = { flexShrink: 1, flexGrow: 1, flexBasis: "30%" };
-  obj.leading = { flexGrow: 0, marginRight: 16 };
-  obj.trailing = { marginLeft: "auto", paddingLeft: 16, textAlign: "right", flexShrink: 0 };
-  obj.disabled = { opacity: 0.5 };
-  const merged1 = Object.assign({ paddingHorizontal: 14, paddingVertical: 14 });
-  obj.error = { borderColor: nativeDefault.colors.BORDER_FEEDBACK_CRITICAL, borderWidth: 2 };
+  let obj2;
+  let obj4;
+  const obj = { container: obj2, label: { flexShrink: 1, flexGrow: 1, flexBasis: "30%" }, leading: { flexGrow: 0, marginRight: 16 }, trailing: { marginLeft: "auto", paddingLeft: 16, textAlign: "right", flexShrink: 0 }, disabled: { opacity: 0.5 }, error: obj4 };
+  obj2 = { flexDirection: "row", justifyContent: "flex-start", alignItems: "center" };
+  const obj3 = { paddingHorizontal: 16, paddingVertical: 16 };
+  const merged = Object.assign(obj3);
+  obj4 = { borderColor: nativeDefault.colors.BORDER_FEEDBACK_CRITICAL, borderWidth: 2 };
+  const obj5 = { paddingHorizontal: 14, paddingVertical: 14 };
+  const merged1 = Object.assign(obj5);
   return obj;
 });
+const forwardRef = react.forwardRef;
 let obj = { Arrow: FormArrowDefault, Label: FormLabelDefault, SubLabel: FormSubLabelDefault, Radio: Form_FormRadioDefault, Checkbox: Form_FormCheckboxDefault, Checkmark: FormCheckmarkDefault, Icon: FormIconDefault };
-let merged = Object.assign({}, noop.forwardRef((label, ref) => {
+const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((label, ref) => {
+  let DEPRECATED_style;
+  let accessibilityActions;
+  let accessibilityHint;
+  let accessibilityLabel;
+  let accessibilityRole;
+  let accessibilityState;
+  let accessible;
+  let delayLongPress;
+  let disabled;
+  let end;
+  let hasError;
+  let items;
+  let items1;
+  let labelStyle;
+  let num16;
+  let numberOfLines;
+  let onAccessibilityAction;
+  let onAccessibilityTap;
+  let onLongPress;
+  let onPress;
+  let onPressOut;
+  let start;
+  let str;
+  let style;
+  let subLabel;
+  let tmp24;
+  let tmp25;
+  let variant;
+  const tmp = label;
+  let obj = label(subLabel[6]);
+  const cResult = obj.c(68);
+  label = label.label;
+  const leading = label.leading;
+  ({ onPress, onLongPress, onPressOut, DEPRECATED_style, subLabel } = label);
+  const trailing = label.trailing;
+  ({ disabled, hasError, accessible, accessibilityLabel, accessibilityHint, accessibilityRole, accessibilityState, accessibilityActions, onAccessibilityAction, onAccessibilityTap, numberOfLines } = label);
+  ({ style, labelStyle } = label);
+  const trailingWrapperStyle = label.trailingWrapperStyle;
+  const leadingStyle = label.leadingStyle;
+  ({ delayLongPress, start, end, variant } = label);
+  let tmp7 = undefined !== start && start;
+  let tmp8 = undefined !== end && end;
+  const tmp9 = leadingStyle();
+  let closure_8 = tmp9;
+  let obj2 = trailing;
+  const isForm = trailing.useContext(tmp(tmp2[7]).FormContext).isForm;
+  if (trailing.useContext(tmp(subLabel[8]).RedesignCompatContext)) {
+    let tmp26;
+    let tmp31;
+    let tmp36;
+    let tmp41;
+    if (cResult[0] !== label) {
+      let tmp30;
+      if (typeof label === "function") {
+        let tmp27 = null;
+        if (null != label) {
+          let tmp28 = label;
+          if (!obj2.isValidElement(label)) {
+            let tmp29 = labelStyle;
+            tmp28 = labelStyle(label, {});
+          }
+          tmp27 = tmp28;
+        }
+        tmp30 = tmp27;
+      } else {
+        tmp30 = label;
+      }
+      cResult[0] = label;
+      cResult[1] = tmp30;
+      tmp26 = tmp30;
+    } else {
+      tmp26 = cResult[1];
+    }
+    if (cResult[2] !== subLabel) {
+      if (typeof subLabel !== "function") {
+        let tmp32;
+        if (!obj2.isValidElement(subLabel)) {
+          tmp32 = null;
+          if (null != subLabel) {
+            tmp32 = subLabel;
+          }
+        }
+        cResult[2] = subLabel;
+        cResult[3] = tmp32;
+        tmp31 = tmp32;
+      }
+      let tmp33 = null;
+      if (null != subLabel) {
+        let tmp34 = subLabel;
+        if (!obj2.isValidElement(subLabel)) {
+          tmp34 = labelStyle(subLabel, {});
+        }
+        tmp33 = tmp34;
+      }
+      tmp32 = tmp33;
+    } else {
+      tmp31 = cResult[3];
+    }
+    if (cResult[4] !== leading) {
+      let tmp40;
+      if (typeof leading === "function") {
+        let tmp37 = null;
+        if (null != leading) {
+          let tmp38 = leading;
+          if (!obj2.isValidElement(leading)) {
+            tmp38 = labelStyle(leading, {});
+          }
+          tmp37 = tmp38;
+        }
+        tmp40 = tmp37;
+      } else {
+        tmp40 = leading;
+      }
+      cResult[4] = leading;
+      cResult[5] = tmp40;
+      tmp36 = tmp40;
+    } else {
+      tmp36 = cResult[5];
+    }
+    if (cResult[6] !== trailing) {
+      let tmp45;
+      if (typeof trailing === "function") {
+        let tmp42 = null;
+        if (null != trailing) {
+          let tmp43 = trailing;
+          if (!obj2.isValidElement(trailing)) {
+            let tmp44 = labelStyle;
+            tmp43 = labelStyle(trailing, {});
+          }
+          tmp42 = tmp43;
+        }
+        tmp45 = tmp42;
+      } else {
+        tmp45 = trailing;
+      }
+      cResult[6] = trailing;
+      cResult[7] = tmp45;
+      tmp41 = tmp45;
+    } else {
+      tmp41 = cResult[7];
+    }
+    if (cResult[8] === accessibilityActions) {
+      if (cResult[9] === accessibilityHint) {
+        if (cResult[10] === accessibilityLabel) {
+          if (cResult[11] === accessibilityRole) {
+            if (cResult[12] === accessibilityState) {
+              if (cResult[13] === (undefined === accessible || accessible)) {
+                if (cResult[14] === delayLongPress) {
+                  if (cResult[15] === (undefined !== disabled && disabled)) {
+                    if (cResult[16] === tmp8) {
+                      if (cResult[17] === numberOfLines) {
+                        if (cResult[18] === onAccessibilityAction) {
+                          if (cResult[19] === onAccessibilityTap) {
+                            if (cResult[20] === onLongPress) {
+                              if (cResult[21] === onPress) {
+                                if (cResult[22] === tmp26) {
+                                  if (cResult[23] === tmp36) {
+                                    if (cResult[24] === tmp31) {
+                                      if (cResult[25] === tmp41) {
+                                        if (cResult[26] === tmp7) {
+                                          let tmp46;
+                                          if (cResult[27] === variant) {
+                                            tmp46 = cResult[28];
+                                          }
+                                          return tmp46;
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    let obj3 = { variant, start: tmp7, end: tmp8, label: tmp26, subLabel: tmp31, icon: tmp36, trailing: tmp41, disabled: tmp4, accessible: tmp6, accessibilityLabel, accessibilityHint, accessibilityRole, accessibilityState, accessibilityActions, onAccessibilityAction, onAccessibilityTap, labelLineClamp: numberOfLines, delayLongPress, onPress, onLongPress };
+    const tmp48 = labelStyle(tmp(subLabel[9]).TableRow, obj3);
+    cResult[8] = accessibilityActions;
+    cResult[9] = accessibilityHint;
+    cResult[10] = accessibilityLabel;
+    cResult[11] = accessibilityRole;
+    cResult[12] = accessibilityState;
+    cResult[13] = undefined === accessible || accessible;
+    cResult[14] = delayLongPress;
+    cResult[15] = undefined !== disabled && disabled;
+    cResult[16] = tmp8;
+    cResult[17] = numberOfLines;
+    cResult[18] = onAccessibilityAction;
+    cResult[19] = onAccessibilityTap;
+    cResult[20] = onLongPress;
+    cResult[21] = onPress;
+    cResult[22] = tmp26;
+    cResult[23] = tmp36;
+    cResult[24] = tmp31;
+    cResult[25] = tmp41;
+    cResult[26] = tmp7;
+    cResult[27] = variant;
+    cResult[28] = tmp48;
+    tmp46 = tmp48;
+  } else {
+    if (cResult[29] === accessibilityState) {
+      let tmp10;
+      if (cResult[30] === (undefined !== disabled && disabled)) {
+        tmp10 = cResult[31];
+      }
+      if (cResult[32] === label) {
+        if (cResult[33] === labelStyle) {
+          if (cResult[34] === leading) {
+            if (cResult[35] === leadingStyle) {
+              if (cResult[36] === numberOfLines) {
+                if (cResult[37] === tmp9.label) {
+                  if (cResult[38] === tmp9.leading) {
+                    if (cResult[39] === tmp9.trailing) {
+                      if (cResult[40] === subLabel) {
+                        if (cResult[41] === trailing) {
+                          let tmp16;
+                          let tmp19Result;
+                          if (cResult[42] === trailingWrapperStyle) {
+                            tmp16 = cResult[43];
+                          }
+                          if (cResult[44] === DEPRECATED_style) {
+                            if (cResult[45] === accessibilityActions) {
+                              if (cResult[46] === accessibilityHint) {
+                                if (cResult[47] === accessibilityLabel) {
+                                  if (cResult[48] === accessibilityRole) {
+                                    if (cResult[49] === tmp10) {
+                                      if (cResult[50] === (undefined === accessible || accessible)) {
+                                        if (cResult[51] === delayLongPress) {
+                                          if (cResult[52] === (undefined !== disabled && disabled)) {
+                                            if (cResult[53] === (undefined !== hasError && hasError)) {
+                                              if (cResult[54] === isForm) {
+                                                if (cResult[55] === (null != onPress || null != onLongPress)) {
+                                                  if (cResult[56] === onAccessibilityAction) {
+                                                    if (cResult[57] === onAccessibilityTap) {
+                                                      if (cResult[58] === onLongPress) {
+                                                        if (cResult[59] === onPress) {
+                                                          if (cResult[60] === onPressOut) {
+                                                            if (cResult[61] === ref) {
+                                                              if (cResult[62] === tmp16) {
+                                                                if (cResult[63] === style) {
+                                                                  if (cResult[64] === tmp9.container) {
+                                                                    if (cResult[65] === tmp9.disabled) {
+                                                                      let tmp18;
+                                                                      if (cResult[66] === tmp9.error) {
+                                                                        tmp18 = cResult[67];
+                                                                      }
+                                                                      return tmp18;
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          if (null != onPress || null != onLongPress) {
+                            let obj4 = { ref, style: items, disabled: tmp4, accessible: true, accessibilityRole: str, accessibilityState: tmp10, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, onAccessibilityTap: tmp24, onPress: tmp25, onLongPress, onPressOut, delayLongPress, unstable_pressDelay: num16, children: tmp16() };
+                            items = [tmp9.container, DEPRECATED_style, style, , ];
+                            let error2 = tmp5;
+                            const PressableHighlight = tmp(tmp2[12]).PressableHighlight;
+                            if (undefined !== hasError && hasError) {
+                              error2 = tmp9.error;
+                            }
+                            items[3] = error2;
+                            let disabled1 = null;
+                            if (undefined !== disabled && disabled) {
+                              disabled1 = tmp9.disabled;
+                            }
+                            items[4] = disabled1;
+                            str = accessibilityRole;
+                            if (accessibilityRole == null) {
+                              str = "button";
+                            }
+                            tmp24 = undefined;
+                            if (!(undefined !== disabled && disabled)) {
+                              tmp24 = onAccessibilityTap;
+                            }
+                            tmp25 = undefined;
+                            if (!(undefined !== disabled && disabled)) {
+                              tmp25 = onPress;
+                            }
+                            num16 = undefined;
+                            if (isForm) {
+                              num16 = 130;
+                            }
+                            tmp19Result = tmp19(PressableHighlight, obj4);
+                          } else {
+                            let obj5 = { ref, style: items1, accessible: tmp6, accessibilityRole, accessibilityState: tmp10, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, onAccessibilityTap, children: tmp16() };
+                            items1 = [tmp9.container, DEPRECATED_style, style, , ];
+                            let error = tmp5;
+                            let tmp20 = numberOfLines;
+                            if (undefined !== hasError && hasError) {
+                              error = tmp9.error;
+                            }
+                            items1[3] = error;
+                            let disabled2 = null;
+                            if (undefined !== disabled && disabled) {
+                              disabled2 = tmp9.disabled;
+                            }
+                            items1[4] = disabled2;
+                            tmp19Result = tmp19(tmp20, obj5);
+                          }
+                          cResult[44] = DEPRECATED_style;
+                          cResult[45] = accessibilityActions;
+                          cResult[46] = accessibilityHint;
+                          cResult[47] = accessibilityLabel;
+                          cResult[48] = accessibilityRole;
+                          cResult[49] = tmp10;
+                          cResult[50] = undefined === accessible || accessible;
+                          cResult[51] = delayLongPress;
+                          cResult[52] = undefined !== disabled && disabled;
+                          cResult[53] = undefined !== hasError && hasError;
+                          cResult[54] = isForm;
+                          cResult[55] = null != onPress || null != onLongPress;
+                          cResult[56] = onAccessibilityAction;
+                          cResult[57] = onAccessibilityTap;
+                          cResult[58] = onLongPress;
+                          cResult[59] = onPress;
+                          cResult[60] = onPressOut;
+                          cResult[61] = ref;
+                          cResult[62] = tmp16;
+                          cResult[63] = style;
+                          cResult[64] = tmp9.container;
+                          cResult[65] = tmp9.disabled;
+                          cResult[66] = tmp9.error;
+                          cResult[67] = tmp19Result;
+                          tmp18 = tmp19Result;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      function se() {
+        let items;
+        let items2;
+        let items3;
+        if (typeof label !== "function") {
+          let tmp7;
+          if (!react.isValidElement(label)) {
+            const obj = { numberOfLines, text: label, style: labelStyle };
+            tmp7 = hasOwnProperty(FormLabelDefault, obj);
+          }
+          if (typeof subLabel !== "function") {
+            let tmp13;
+            let tmp27;
+            let tmp33;
+            if (!react.isValidElement(subLabel)) {
+              tmp13 = null;
+              if (null != subLabel) {
+                const obj2 = { text: subLabel, numberOfLines };
+                tmp13 = hasOwnProperty(FormSubLabelDefault, obj2);
+              }
+            }
+            if (typeof leading === "function") {
+              let tmp23 = null;
+              if (null != leading) {
+                let tmp25 = tmp22;
+                if (!react.isValidElement(leading)) {
+                  tmp25 = hasOwnProperty(tmp22, {});
+                }
+                tmp23 = tmp25;
+              }
+              tmp27 = tmp23;
+            } else {
+              tmp27 = tmp22;
+            }
+            if (typeof trailing === "function") {
+              let tmp29 = null;
+              if (null != trailing) {
+                let tmp31 = tmp28;
+                if (!react.isValidElement(trailing)) {
+                  tmp31 = hasOwnProperty(tmp28, {});
+                }
+                tmp29 = tmp31;
+              }
+              tmp33 = tmp29;
+            } else {
+              tmp33 = tmp28;
+            }
+            let tmp37 = null;
+            const Fragment = react.Fragment;
+            if (null != leading) {
+              const obj3 = { style: items, children: tmp27 };
+              items = [closure_8.leading, leadingStyle];
+              tmp37 = hasOwnProperty(React3, obj3);
+            }
+            const items1 = [tmp37, , ];
+            const obj4 = { style: closure_8.label, children: items2 };
+            items2 = [tmp7, tmp13];
+            items1[1] = metroRequire(React3, obj4);
+            let tmp44 = null;
+            const tmp42 = React3;
+            const tmp43 = closure_8;
+            if (null != trailing) {
+              const obj5 = { style: items3, children: tmp33 };
+              items3 = [tmp43.trailing, trailingWrapperStyle];
+              tmp44 = hasOwnProperty(tmp42, obj5);
+            }
+            const obj6 = { children: items1 };
+            items1[2] = tmp44;
+            return metroRequire(Fragment, obj6);
+          }
+          let tmp18 = null;
+          if (null != subLabel) {
+            let tmp20 = tmp12;
+            if (!react.isValidElement(subLabel)) {
+              tmp20 = hasOwnProperty(tmp12, {});
+            }
+            tmp18 = tmp20;
+          }
+          tmp13 = tmp18;
+        }
+        let tmp8 = null;
+        if (null != label) {
+          let tmp10 = tmp;
+          if (!react.isValidElement(label)) {
+            tmp10 = hasOwnProperty(tmp, {});
+          }
+          tmp8 = tmp10;
+        }
+        tmp7 = tmp8;
+      }
+      cResult[32] = label;
+      cResult[33] = labelStyle;
+      cResult[34] = leading;
+      cResult[35] = leadingStyle;
+      cResult[36] = numberOfLines;
+      cResult[37] = tmp9.label;
+      cResult[38] = tmp9.leading;
+      cResult[39] = tmp9.trailing;
+      cResult[40] = subLabel;
+      cResult[41] = trailing;
+      cResult[42] = trailingWrapperStyle;
+      cResult[43] = se;
+      tmp16 = se;
+    }
+    let obj6 = { disabled: tmp4 };
+    const tmp12 = accessibilityState;
+    const merged = Object.assign(accessibilityState);
+    cResult[29] = accessibilityState;
+    cResult[30] = undefined !== disabled && disabled;
+    cResult[31] = obj6;
+    tmp10 = obj6;
+  }
+}) : ((label, ref) => {
+  let DEPRECATED_style;
+  let accessibilityActions;
+  let accessibilityHint;
+  let accessibilityLabel;
+  let accessibilityRole;
+  let accessibilityState;
+  let closure_5;
+  let closure_6;
+  let delayLongPress;
+  let items;
+  let items1;
+  let num2;
+  let numberOfLines;
+  let onAccessibilityAction;
+  let onAccessibilityTap;
+  let onLongPress;
+  let onPress;
+  let start;
+  let str;
+  let style;
+  let subLabel;
+  let tmp13;
+  let tmp14;
   label = label.label;
   const leading = label.leading;
   ({ onPress, onLongPress, DEPRECATED_style, subLabel } = label);
   const trailing = label.trailing;
   let flag = label.disabled;
+  const onPressOut = label.onPressOut;
   if (flag === undefined) {
     flag = false;
   }
@@ -59,9 +565,13 @@ let merged = Object.assign({}, noop.forwardRef((label, ref) => {
   if (flag4 === undefined) {
     flag4 = false;
   }
+  const variant = label.variant;
   const tmp = closure_7();
-  closure_8 = tmp;
-  if (trailing.useContext(label(subLabel[6]).RedesignCompatContext)) {
+  let closure_8 = tmp;
+  let obj = trailing;
+  const isForm = trailing.useContext(label(subLabel[7]).FormContext).isForm;
+  if (trailing.useContext(label(subLabel[8]).RedesignCompatContext)) {
+    let tmp18;
     if (typeof label === "function") {
       let tmp15 = null;
       if (null != label) {
@@ -71,13 +581,16 @@ let merged = Object.assign({}, noop.forwardRef((label, ref) => {
         }
         tmp15 = tmp16;
       }
-      let tmp18 = tmp15;
+      tmp18 = tmp15;
     } else {
       tmp18 = label;
     }
     if (typeof subLabel !== "function") {
+      let tmp19;
+      let tmp26;
+      let tmp30;
       if (!obj.isValidElement(subLabel)) {
-        let tmp19 = null;
+        tmp19 = null;
         if (null != subLabel) {
           tmp19 = subLabel;
         }
@@ -87,11 +600,12 @@ let merged = Object.assign({}, noop.forwardRef((label, ref) => {
         if (null != leading) {
           let tmp24 = leading;
           if (!obj.isValidElement(leading)) {
+            let tmp25 = style;
             tmp24 = style(leading, {});
           }
           tmp23 = tmp24;
         }
-        let tmp26 = tmp23;
+        tmp26 = tmp23;
       } else {
         tmp26 = leading;
       }
@@ -100,21 +614,24 @@ let merged = Object.assign({}, noop.forwardRef((label, ref) => {
         if (null != trailing) {
           let tmp28 = trailing;
           if (!obj.isValidElement(trailing)) {
+            let tmp29 = style;
             tmp28 = style(trailing, {});
           }
           tmp27 = tmp28;
         }
-        let tmp30 = tmp27;
+        tmp30 = tmp27;
       } else {
         tmp30 = trailing;
       }
-      let obj2 = { variant: label.variant, start, end: flag4, label: tmp18, subLabel: tmp19, icon: tmp26, trailing: tmp30, disabled: flag, accessible: flag3, accessibilityLabel, accessibilityHint, accessibilityRole, accessibilityState, accessibilityActions, onAccessibilityAction, onAccessibilityTap, labelLineClamp: numberOfLines, delayLongPress, onPress, onLongPress };
-      return style(tmp2(tmp3[7]).TableRow, obj2);
+      let tmp31 = style;
+      let obj2 = { variant, start, end: flag4, label: tmp18, subLabel: tmp19, icon: tmp26, trailing: tmp30, disabled: flag, accessible: flag3, accessibilityLabel, accessibilityHint, accessibilityRole, accessibilityState, accessibilityActions, onAccessibilityAction, onAccessibilityTap, labelLineClamp: numberOfLines, delayLongPress, onPress, onLongPress };
+      return style(label(subLabel[9]).TableRow, obj2);
     }
     let tmp20 = null;
     if (null != subLabel) {
       let tmp21 = subLabel;
       if (!obj.isValidElement(subLabel)) {
+        const tmp22 = style;
         tmp21 = style(subLabel, {});
       }
       tmp20 = tmp21;
@@ -122,75 +639,79 @@ let merged = Object.assign({}, noop.forwardRef((label, ref) => {
     tmp19 = tmp20;
   } else {
     function renderInnerView() {
+      let items;
+      let items2;
+      let items3;
       if (typeof label !== "function") {
-        if (!noop.isValidElement(tmp)) {
-          const obj = { numberOfLines, text: tmp, style };
-          let tmp7 = hasOwnProperty(FormLabelDefault, obj);
+        let tmp7;
+        if (!react.isValidElement(label)) {
+          const obj = { numberOfLines, text: label, style };
+          tmp7 = hasOwnProperty(FormLabelDefault, obj);
         }
         if (typeof subLabel !== "function") {
-          if (!noop.isValidElement(tmp12)) {
-            let tmp13 = null;
-            if (null != tmp12) {
-              const obj2 = { text: tmp12, numberOfLines };
+          let tmp13;
+          let tmp27;
+          let tmp33;
+          if (!react.isValidElement(subLabel)) {
+            tmp13 = null;
+            if (null != subLabel) {
+              const obj2 = { text: subLabel, numberOfLines };
               tmp13 = hasOwnProperty(FormSubLabelDefault, obj2);
             }
           }
           if (typeof leading === "function") {
             let tmp23 = null;
-            if (null != tmp22) {
+            if (null != leading) {
               let tmp25 = tmp22;
-              if (!noop.isValidElement(tmp22)) {
+              if (!react.isValidElement(leading)) {
                 tmp25 = hasOwnProperty(tmp22, {});
               }
               tmp23 = tmp25;
             }
-            let tmp27 = tmp23;
+            tmp27 = tmp23;
           } else {
             tmp27 = tmp22;
           }
           if (typeof trailing === "function") {
             let tmp29 = null;
-            if (null != tmp28) {
+            if (null != trailing) {
               let tmp31 = tmp28;
-              if (!noop.isValidElement(tmp28)) {
+              if (!react.isValidElement(trailing)) {
                 tmp31 = hasOwnProperty(tmp28, {});
               }
               tmp29 = tmp31;
             }
-            let tmp33 = tmp29;
+            tmp33 = tmp29;
           } else {
             tmp33 = tmp28;
           }
           let tmp37 = null;
+          const Fragment = react.Fragment;
           if (null != leading) {
-            const obj3 = { style: null, children: null };
-            const items = [closure_8.leading, closure_1_7];
-            obj3.style = items;
-            obj3.children = tmp27;
-            tmp37 = hasOwnProperty(React4, obj3);
+            const obj3 = { style: items, children: tmp27 };
+            items = [closure_8.leading, closure_7];
+            tmp37 = hasOwnProperty(React3, obj3);
           }
           const items1 = [tmp37, , ];
-          const obj4 = { style: closure_8.label, children: null };
-          const items2 = [tmp7, tmp13];
-          obj4.children = items2;
-          items1[1] = timestampProducer(React4, obj4);
+          const obj4 = { style: closure_8.label, children: items2 };
+          items2 = [tmp7, tmp13];
+          items1[1] = metroRequire(React3, obj4);
           let tmp44 = null;
+          const tmp42 = React3;
+          const tmp43 = closure_8;
           if (null != trailing) {
-            const obj5 = { style: null, children: null };
-            const items3 = [closure_8.trailing, closure_1_6];
-            obj5.style = items3;
-            obj5.children = tmp33;
-            tmp44 = hasOwnProperty(React4, obj5);
+            const obj5 = { style: items3, children: tmp33 };
+            items3 = [tmp43.trailing, closure_6];
+            tmp44 = hasOwnProperty(tmp42, obj5);
           }
-          const obj6 = { children: null };
+          const obj6 = { children: items1 };
           items1[2] = tmp44;
-          obj6.children = items1;
-          return timestampProducer(noop.Fragment, obj6);
+          return metroRequire(Fragment, obj6);
         }
         let tmp18 = null;
         if (null != subLabel) {
           let tmp20 = tmp12;
-          if (!noop.isValidElement(tmp12)) {
+          if (!react.isValidElement(subLabel)) {
             tmp20 = hasOwnProperty(tmp12, {});
           }
           tmp18 = tmp20;
@@ -200,7 +721,7 @@ let merged = Object.assign({}, noop.forwardRef((label, ref) => {
       let tmp8 = null;
       if (null != label) {
         let tmp10 = tmp;
-        if (!noop.isValidElement(tmp)) {
+        if (!react.isValidElement(label)) {
           tmp10 = hasOwnProperty(tmp, {});
         }
         tmp8 = tmp10;
@@ -209,11 +730,15 @@ let merged = Object.assign({}, noop.forwardRef((label, ref) => {
     }
     let obj3 = { disabled: flag };
     const merged = Object.assign(accessibilityState);
+    let tmp8 = null;
     if (null == onPress) {
+      let tmp11Result;
       if (null == onLongPress) {
-        let obj4 = { ref, style: null, accessible: null, accessibilityRole: null, accessibilityState: null, accessibilityLabel: null, accessibilityHint: null, accessibilityActions: null, onAccessibilityAction: null, onAccessibilityTap: null, children: null };
-        let items = [tmp.container, DEPRECATED_style, style, , ];
+        let obj4 = { ref, style: items, accessible: flag3, accessibilityRole, accessibilityState: obj3, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, onAccessibilityTap, children: renderInnerView() };
+        items = [tmp.container, DEPRECATED_style, style, , ];
         let error = flag2;
+        let tmp33 = numberOfLines;
+        const tmp32 = style;
         if (flag2) {
           error = tmp.error;
         }
@@ -223,22 +748,14 @@ let merged = Object.assign({}, noop.forwardRef((label, ref) => {
           disabled = tmp.disabled;
         }
         items[4] = disabled;
-        obj4.style = items;
-        obj4.accessible = flag3;
-        obj4.accessibilityRole = accessibilityRole;
-        obj4.accessibilityState = obj3;
-        obj4.accessibilityLabel = accessibilityLabel;
-        obj4.accessibilityHint = accessibilityHint;
-        obj4.accessibilityActions = accessibilityActions;
-        obj4.onAccessibilityAction = onAccessibilityAction;
-        obj4.onAccessibilityTap = onAccessibilityTap;
-        obj4.children = renderInnerView();
-        let tmp11Result = style(numberOfLines, obj4);
+        tmp11Result = tmp32(tmp33, obj4);
       }
       return tmp11Result;
     }
-    let obj5 = { ref, style: null, disabled: null, accessible: true, accessibilityRole: null, accessibilityState: null, accessibilityLabel: null, accessibilityHint: null, accessibilityActions: null, onAccessibilityAction: null, onAccessibilityTap: null, onPress: null, onLongPress: null, onPressOut: null, delayLongPress: null, unstable_pressDelay: null, children: null };
-    let items1 = [tmp.container, DEPRECATED_style, style, , ];
+    let obj5 = { ref, style: items1, disabled: flag, accessible: true, accessibilityRole: str, accessibilityState: obj3, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, onAccessibilityTap: tmp13, onPress: tmp14, onLongPress, onPressOut, delayLongPress, unstable_pressDelay: num2, children: renderInnerView() };
+    items1 = [tmp.container, DEPRECATED_style, style, , ];
+    const PressableHighlight = tmp2(tmp3[12]).PressableHighlight;
+    const tmp11 = style;
     if (flag2) {
       flag2 = tmp.error;
     }
@@ -248,41 +765,26 @@ let merged = Object.assign({}, noop.forwardRef((label, ref) => {
       disabled1 = tmp.disabled;
     }
     items1[4] = disabled1;
-    obj5.style = items1;
-    obj5.disabled = flag;
-    let str = accessibilityRole;
+    str = accessibilityRole;
     if (accessibilityRole == null) {
       str = "button";
     }
-    obj5.accessibilityRole = str;
-    obj5.accessibilityState = obj3;
-    obj5.accessibilityLabel = accessibilityLabel;
-    obj5.accessibilityHint = accessibilityHint;
-    obj5.accessibilityActions = accessibilityActions;
-    obj5.onAccessibilityAction = onAccessibilityAction;
-    let tmp13;
+    tmp13 = undefined;
     if (!flag) {
       tmp13 = onAccessibilityTap;
     }
-    obj5.onAccessibilityTap = tmp13;
-    let tmp14;
+    tmp14 = undefined;
     if (!flag) {
       tmp14 = onPress;
     }
-    obj5.onPress = tmp14;
-    obj5.onLongPress = onLongPress;
-    obj5.onPressOut = label.onPressOut;
-    obj5.delayLongPress = delayLongPress;
-    let num2;
-    if (trailing.useContext(label(subLabel[5]).FormContext).isForm) {
+    num2 = undefined;
+    if (isForm) {
       num2 = 130;
     }
-    obj5.unstable_pressDelay = num2;
-    obj5.children = renderInnerView();
-    tmp11Result = style(tmp2(tmp3[10]).PressableHighlight, obj5);
+    tmp11Result = tmp11(PressableHighlight, obj5);
   }
-}), obj);
-const size = fn(2);
+}));
+let obj2 = assign({}, forwardRefResult, obj);
 const result = size.fileFinishedImporting("design/void/Form/native/FormRow.tsx");
 
-export default merged;
+export default obj2;

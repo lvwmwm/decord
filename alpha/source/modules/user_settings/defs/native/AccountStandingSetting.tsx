@@ -1,32 +1,35 @@
-// Module ID: 14507
-// Function ID: 14508
+// Module ID: 14542
+// Function ID: 14543
 // Name: AccountStandingSetting
-// Dependencies: [7590, 1074, 11215, 1115, 14508, 14511, 2]
+// Dependencies: [7634, 1085, 11129, 1126, 14543, 14546, 2]
 
-// Module 14507 (AccountStandingSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import SettingsConstants from "SettingsConstants" /* 7590 */;
-import useAccountStandingStatusLabel from "useAccountStandingStatusLabel" /* 14508 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 14542 (AccountStandingSetting)
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import useAccountStandingStatusLabel from "useAccountStandingStatusLabel" /* 14543 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["16r9jm"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["16r9jm"]);
   },
-  parent: SettingsConstants.MobileUserSettings.ACCOUNT,
+  parent: MobileUserSettings.ACCOUNT,
   useTrailing: useAccountStandingStatusLabel.useAccountStandingStatusLabel,
   screen: {
-    route: Constants.UserSettingsSections.ACCOUNT_STANDING,
+    route: UserSettingsSections.ACCOUNT_STANDING,
     getComponent() {
       return require("SettingsAccountStandingScreen").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountStandingSetting.tsx");
 
 export default route;

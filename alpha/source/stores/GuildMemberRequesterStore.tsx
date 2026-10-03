@@ -1,15 +1,23 @@
-// Module ID: 5924
-// Function ID: 5925
+// Module ID: 5583
+// Function ID: 5584
 // Name: GuildMemberRequesterStore
-// Dependencies: [2044, 2107, 5925, 573, 504, 2]
+// Dependencies: [2051, 2112, 5584, 584, 504, 2]
 
-// Module 5924 (GuildMemberRequesterStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildMemberRequesterDefault from "GuildMemberRequester" /* 5925 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildMemberStore from "GuildMemberStore" /* 2107 */;
+// Module 5583 (GuildMemberRequesterStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import GuildMemberRequesterDefault from "GuildMemberRequester" /* 5584 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import size from "module_2" /* 2 */;
 
+const f35407 = (arg0, userIds) => {
+  let items;
+  const obj2 = { type: "GUILD_MEMBERS_REQUEST", guildIds: items, userIds };
+  items = [arg0];
+  const obj = DispatcherDefault;
+  obj.dispatch(obj2);
+};
 function handleConnectionReset() {
   navigation.reset();
 }
@@ -20,9 +28,11 @@ function handleLoadMessages(messages) {
   if (flag) {
     const guild_id = channel.guild_id;
     const item = messages.forEach((item) => {
+      let author;
+      let mentions;
       ({ author, mentions } = item);
       if (null != author) {
-        closure_4.request(guild_id, author.id);
+        navigation.request(guild_id, author.id);
       }
       if (mentions != null) {
         item = mentions.forEach((id) => {
@@ -36,13 +46,14 @@ function handleLoadMessages(messages) {
   return flag;
 }
 function handleLoadSearchResults(arg0) {
+  let data;
+  let guildId;
   ({ guildId, data } = arg0);
-  guildId = undefined;
+  let items;
   if (null == guildId) {
     return false;
   } else {
-    const items = [];
-    guildId = items;
+    items = [];
     let item = data.forEach((messages) => {
       messages = messages.messages;
       let item = messages.forEach((arr) => {
@@ -52,9 +63,11 @@ function handleLoadSearchResults(arg0) {
       });
     });
     const item1 = items.forEach((item) => {
+      let author;
+      let mentions;
       ({ author, mentions } = item);
       if (null != author) {
-        closure_4.request(guild_id, author.id);
+        navigation.request(guild_id, author.id);
       }
       if (mentions != null) {
         item = mentions.forEach((id) => {
@@ -66,27 +79,23 @@ function handleLoadSearchResults(arg0) {
     return false;
   }
 }
-const navigation = new GuildMemberRequesterDefault(GuildMemberStore.isMember, (arg0, userIds) => {
-  const obj2 = { type: "GUILD_MEMBERS_REQUEST", guildIds: null, userIds };
-  const items = [arg0];
-  obj2.guildIds = items;
-  DispatcherDefault.dispatch(obj2);
-});
-const Store = initializeDefault.Store;
+const React3 = new GuildMemberRequesterDefault(GuildMemberStore.isMember, f35407);
+new GuildMemberRequesterDefault(GuildMemberStore.isMember, f35407);
+const Store = get_initializedDefault.Store;
 class GuildMemberRequesterStore extends Store {
+  initialize() {
+    this.waitFor(ChannelStore, GuildMemberStore);
+  }
+  requestMember(guild_id, id) {
+    navigation.request(guild_id, id);
+  }
+  getDebugState(arg0) {
+    return navigation.getDebugState(arg0);
+  }
 }
 const prototype = GuildMemberRequesterStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.waitFor(ChannelStore, GuildMemberStore);
-};
-prototype["requestMember"] = function requestMember(guildId, id) {
-  navigation.request(guildId, id);
-};
-prototype["getDebugState"] = function getDebugState(arg0) {
-  return navigation.getDebugState(arg0);
-};
 GuildMemberRequesterStore.displayName = "GuildMemberRequesterStore";
-const guildMemberRequesterStore = new GuildMemberRequesterStore(DispatcherDefault, {
+let obj = {
   CONNECTION_CLOSED: handleConnectionReset,
   CONNECTION_OPEN: handleConnectionReset,
   CONNECTION_RESUMED: function handleConnectionResumed() {
@@ -104,7 +113,7 @@ const guildMemberRequesterStore = new GuildMemberRequesterStore(DispatcherDefaul
         const item1 = notFound.forEach((item) => navigation.acknowledge(iter.guildId, item));
       }
     }
-    const iter = arg0.chunks[Symbol.iterator]();
+    let iter = arg0.chunks[Symbol.iterator]();
     while (iter !== undefined) {
       let _loopResult = _loop(iter.next());
       continue;
@@ -113,11 +122,14 @@ const guildMemberRequesterStore = new GuildMemberRequesterStore(DispatcherDefaul
   },
   SEARCH_MESSAGES_SUCCESS: handleLoadSearchResults,
   SMART_SEARCH_FETCH_SUCCESS: function handleSmartSearchFetchSuccess(arg0) {
+    let messages;
     ({ messages, guildId: importDefault } = arg0);
     const item = messages.forEach((item) => {
+      let author;
+      let mentions;
       ({ author, mentions } = item);
       if (null != author) {
-        closure_4.request(guild_id, author.id);
+        navigation.request(guild_id, author.id);
       }
       if (mentions != null) {
         item = mentions.forEach((id) => {
@@ -138,12 +150,14 @@ const guildMemberRequesterStore = new GuildMemberRequesterStore(DispatcherDefaul
     const channel = ChannelStore.getChannel(pins.channelId);
     let flag = null != channel && null != channel.guild_id;
     if (flag) {
-      const mapped = pins.map((message) => message.message);
       const guild_id = channel.guild_id;
+      const mapped = pins.map((message) => message.message);
       const item = mapped.forEach((item) => {
+        let author;
+        let mentions;
         ({ author, mentions } = item);
         if (null != author) {
-          closure_4.request(guild_id, author.id);
+          navigation.request(guild_id, author.id);
         }
         if (mentions != null) {
           item = mentions.forEach((id) => {
@@ -158,15 +172,18 @@ const guildMemberRequesterStore = new GuildMemberRequesterStore(DispatcherDefaul
   },
   CONVERSATION_MESSAGES_FETCH_SUCCESS: function handleConversationMessagesFetchSuccess(messages) {
     messages = messages.messages;
+    const messageReferences = messages.messageReferences;
     const channel = ChannelStore.getChannel(messages.channelId);
     let flag = null != channel && null != channel.guild_id;
     if (flag) {
-      const combined = messages.concat(messages.messageReferences);
       const guild_id = channel.guild_id;
+      const combined = messages.concat(messageReferences);
       const item = combined.forEach((item) => {
+        let author;
+        let mentions;
         ({ author, mentions } = item);
         if (null != author) {
-          closure_4.request(guild_id, author.id);
+          navigation.request(guild_id, author.id);
         }
         if (mentions != null) {
           item = mentions.forEach((id) => {
@@ -192,10 +209,13 @@ const guildMemberRequesterStore = new GuildMemberRequesterStore(DispatcherDefaul
           return messages;
         });
         const guild_id = channel.guild_id;
-        let item = mapped.flat().forEach((item) => {
+        const flatResult = mapped.flat();
+        let item = flatResult.forEach((item) => {
+          let author;
+          let mentions;
           ({ author, mentions } = item);
           if (null != author) {
-            closure_4.request(guild_id, author.id);
+            navigation.request(guild_id, author.id);
           }
           if (mentions != null) {
             item = mentions.forEach((id) => {
@@ -209,8 +229,8 @@ const guildMemberRequesterStore = new GuildMemberRequesterStore(DispatcherDefaul
     }
     return false;
   }
-});
-const size = fn(2);
+};
+const guildMemberRequesterStore = new GuildMemberRequesterStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("stores/GuildMemberRequesterStore.tsx");
 
 export default guildMemberRequesterStore;

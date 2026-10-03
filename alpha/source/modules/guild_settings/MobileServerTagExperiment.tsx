@@ -1,16 +1,16 @@
-// Module ID: 9245
-// Function ID: 9246
+// Module ID: 9251
+// Function ID: 9252
 // Name: MobileServerTagExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1440, 2]
 
-// Module 9245 (MobileServerTagExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 9251 (MobileServerTagExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-06-mobile-server-tag", kind: "user", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+const obj = { name: "2026-06-mobile-server-tag", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/guild_settings/MobileServerTagExperiment.tsx");
 

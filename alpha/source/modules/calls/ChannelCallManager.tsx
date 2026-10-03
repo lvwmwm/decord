@@ -1,33 +1,36 @@
-// Module ID: 17357
-// Function ID: 17358
+// Module ID: 17449
+// Function ID: 17450
 // Name: ChannelCallManager
-// Dependencies: [9553, 5776, 9736, 4708, 4864, 4869, 9552, 6725, 2]
+// Dependencies: [9563, 5437, 12466, 4723, 4909, 4914, 9562, 6613, 2]
 
-// Module 17357 (ChannelCallManager)
-import SoundpackStore from "SoundpackStore" /* 9553 */;
-import CallStore from "CallStore" /* 5776 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 9736 */;
-import StreamerModeStore from "StreamerModeStore" /* 4708 */;
-import VoiceStateStore from "VoiceStateStore" /* 4864 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4869 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
+// Module 17449 (ChannelCallManager)
+import SoundpackStore from "SoundpackStore" /* 9563 */;
+import CallStore from "CallStore" /* 5437 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 12466 */;
+import StreamerModeStore from "StreamerModeStore" /* 4723 */;
+import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4914 */;
+import SoundUtils from "SoundUtils" /* 9562 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
+import size from "module_2" /* 2 */;
 
-let require = fn;
-const SoundUtils = fn(9552);
+let currentClientVoiceChannelId, map;
+
 let closure_8 = SoundUtils.createSoundForPack("call_calling", SoundpackStore.getSoundpack());
-class ChannelCallManager extends tmp2 {
+class ChannelCallManager extends AutomaticLifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    closure_0 = applyArgumentsResult;
+    let disableSounds;
+    let soundDisabled;
+    let soundpack;
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    require = applyArgumentsResult;
     applyArgumentsResult._handleRing = function _handleRing(arg0) {
       currentClientVoiceChannelId = currentClientVoiceChannelId.getCurrentClientVoiceChannelId(null);
-      let tmp2 = null != currentClientVoiceChannelId;
-      if (tmp2) {
-        tmp2 = SortedVoiceStateStore.countVoiceStatesForChannel(currentClientVoiceChannelId) >= 2;
-      }
+      const tmp2 = null != currentClientVoiceChannelId && SortedVoiceStateStore.countVoiceStatesForChannel(currentClientVoiceChannelId) >= 2;
       if (null != currentClientVoiceChannelId) {
         if (!tmp2) {
-          if (arg0) {
+          const tmp4 = arg0;
+          if (tmp4) {
             if (!soundDisabled.isSoundDisabled("call_calling")) {
               if (!disableSounds.disableSounds) {
                 closure_8.loop();
@@ -40,30 +43,29 @@ class ChannelCallManager extends tmp2 {
     };
     applyArgumentsResult.handleSoundpackUpdate = function handleSoundpackUpdate() {
       closure_8.stop();
-      closure_8 = applyArgumentsResult(dependencyMap[6]).createSoundForPack("call_calling", soundpack.getSoundpack());
+      const obj = SoundUtils;
+      closure_8 = obj.createSoundForPack("call_calling", soundpack.getSoundpack());
     };
     applyArgumentsResult.handleRingUpdate = function handleRingUpdate() {
       const calls = CallStore.getCalls();
-      applyArgumentsResult._handleRing(calls.some((ringing) => {
-        let tmp = ringing.ringing.length > 0;
-        if (tmp) {
-          tmp = currentClientVoiceChannelId.getCurrentClientVoiceChannelId(null) === ringing.channelId;
-        }
+      require._handleRing(calls.some((ringing) => {
+        const tmp = ringing.ringing.length > 0 && currentClientVoiceChannelId.getCurrentClientVoiceChannelId(null) === ringing.channelId;
         return tmp;
       }));
     };
     return applyArgumentsResult;
   }
+  _initialize() {
+    map = new Map();
+    const result = map.set(CallStore, this.handleRingUpdate);
+    const result1 = result.set(NotificationSettingsStore, this.handleRingUpdate);
+    const result2 = result1.set(StreamerModeStore, this.handleRingUpdate);
+    const result3 = result2.set(VoiceStateStore, this.handleRingUpdate);
+    this.stores = result3.set(SoundpackStore, this.handleSoundpackUpdate);
+  }
 }
-ChannelCallManager.prototype["_initialize"] = function _initialize() {
-  const result = new Map().set(CallStore, this.handleRingUpdate);
-  const result1 = result.set(NotificationSettingsStore, this.handleRingUpdate);
-  const result2 = result1.set(StreamerModeStore, this.handleRingUpdate);
-  const result3 = result2.set(VoiceStateStore, this.handleRingUpdate);
-  this.stores = result3.set(SoundpackStore, this.handleSoundpackUpdate);
-};
+const prototype = ChannelCallManager.prototype;
 const channelCallManager = new ChannelCallManager();
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/calls/ChannelCallManager.tsx");
 
 export default channelCallManager;

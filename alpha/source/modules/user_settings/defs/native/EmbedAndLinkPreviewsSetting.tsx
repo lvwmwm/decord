@@ -1,24 +1,26 @@
-// Module ID: 15229
-// Function ID: 15230
+// Module ID: 15285
+// Function ID: 15286
 // Name: EmbedAndLinkPreviewsSetting
-// Dependencies: [7590, 11215, 1115, 2021, 2]
+// Dependencies: [7634, 11129, 1126, 2028, 2]
 
-// Module 15229 (EmbedAndLinkPreviewsSetting)
-import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import SettingsConstants from "SettingsConstants" /* 7590 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 15285 (EmbedAndLinkPreviewsSetting)
+import intl2 from "intl" /* 1126 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
-const toggle = SettingBuilders.createToggle({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["5bK9vw"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["5bK9vw"]);
   },
-  parent: SettingsConstants.MobileUserSettings.CHAT,
+  parent: MobileUserSettings.CHAT,
   useValue: UserSettings.RenderEmbeds.useSetting,
   onValueChange: UserSettings.RenderEmbeds.updateSetting
-});
+};
+const toggle = SettingBuilders.createToggle(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/EmbedAndLinkPreviewsSetting.tsx");
 
 export default toggle;

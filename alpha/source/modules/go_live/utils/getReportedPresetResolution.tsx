@@ -1,22 +1,25 @@
-// Module ID: 4982
-// Function ID: 4983
+// Module ID: 5027
+// Function ID: 5028
 // Name: getReportedPresetResolution
-// Dependencies: [1372, 4892, 4983, 2]
+// Dependencies: [1377, 4937, 5028, 2]
 // Exports: default
 
-// Module 4982 (getReportedPresetResolution)
-import getFrontierTuningConfigIfEligibleDefault from "getFrontierTuningConfigIfEligible" /* 4983 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 5027 (getReportedPresetResolution)
+import getFrontierTuningConfigIfEligibleDefault from "getFrontierTuningConfigIfEligible" /* 5028 */;
+import UserStore from "UserStore" /* 1377 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 4937 */;
+import size from "module_2" /* 2 */;
 
-const StreamSettingsConstants = fn(4892);
+let c3;
+let closure_4;
 ({ ApplicationStreamFPS: c3, ApplicationStreamResolutions: closure_4 } = StreamSettingsConstants);
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/go_live/utils/getReportedPresetResolution.tsx");
 
 export default function getReportedPresetResolution(arg0, arg1, arg2, arg3) {
   if (arg2 === RESOLUTION_1080.RESOLUTION_1080) {
     if (arg3 === FPS_30.FPS_30) {
-      const tmp8Result = getFrontierTuningConfigIfEligibleDefault(arg0, UserStore.getCurrentUser(), arg1);
+      const tmp8 = getFrontierTuningConfigIfEligibleDefault;
+      const tmp8Result = tmp8(arg0, UserStore.getCurrentUser(), arg1);
       let maskReportedQuality;
       if (tmp8Result != null) {
         maskReportedQuality = tmp8Result.maskReportedQuality;

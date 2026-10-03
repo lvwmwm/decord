@@ -1,57 +1,176 @@
-// Module ID: 16264
-// Function ID: 16265
+// Module ID: 16340
+// Function ID: 16341
 // Name: useForLaterCoachmark
-// Dependencies: [32, 19, 17, 2041, 21, 2029, 4845, 13075, 7449, 6993, 1115, 10789, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 2048, 21, 2036, 4890, 558, 576, 13132, 7485, 6891, 1126, 9882, 2]
 
-// Module 16264 (useForLaterCoachmark)
-import util from "util" /* 1115 */;
-import _modDef13075 from "module_13075" /* 13075 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 16340 (useForLaterCoachmark)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import intl3 from "intl" /* 1126 */;
+import dismissible_content from "dismissible_content" /* 2036 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13132 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-function CoachmarkImg() {
-  const obj = { source: _modDef13075, style: closure_9().imageContainer };
-  return <Image source={_modDef13075} style={closure_9().imageContainer} />;
-}
-const Image = fn(17).Image;
-const ContentDismissActionType = fn(2041).ContentDismissActionType;
-const jsx = fn(21).jsx;
-let closure_8 = fn(2029).DismissibleContent.FOR_LATER_NOTIFICATIONS_COACHMARK;
-const createStyles = fn(4845);
+const require = globalThis.__r;
+let _require;
+
+const Image = react_native.Image;
+const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
+const jsx = Fragment.jsx;
+let closure_8 = dismissible_content.DismissibleContent.FOR_LATER_NOTIFICATIONS_COACHMARK;
 let closure_9 = createStyles.createStyles({ imageContainer: { width: 100, height: 80 } });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/saved_messages/native/useForLaterCoachmark.tsx");
-
-export default function useForLaterCoachmark(targetRef) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp4;
+  const obj = react2;
+  const cResult = obj.c(2);
+  const tmp3 = closure_9();
+  if (cResult[0] !== tmp3.imageContainer) {
+    const tmp8 = <Image source={AssetRegistryDefault} style={tmp3.imageContainer} />;
+    cResult[0] = tmp3.imageContainer;
+    cResult[1] = tmp8;
+    tmp4 = tmp8;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : (() => {
+  const tmp = closure_9();
+  return <Image source={AssetRegistryDefault} style={tmp.imageContainer} />;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let obj3;
+  let tmp10;
+  let tmp11;
+  let tmp16;
+  let tmp5;
+  const obj = require("react");
+  const cResult = obj.c(10);
+  const obj2 = require("ForLaterExperiment");
+  const isForLaterExperimentOn = obj2.useIsForLaterExperimentOn("forLaterCoachmark");
+  if (cResult[0] !== isForLaterExperimentOn) {
+    let items1;
+    if (isForLaterExperimentOn) {
+      const items = [closure_8];
+      items1 = items;
+    } else {
+      items1 = [];
+    }
+    cResult[0] = isForLaterExperimentOn;
+    cResult[1] = items1;
+    tmp5 = items1;
+  } else {
+    tmp5 = cResult[1];
+  }
+  const tmpResult = require("useSelectedDismissibleContent");
+  const tmp7 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp5, undefined, true), 2);
+  _require = tmp9;
+  const first = tmp7[0];
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(require("intl").t.qPbFK2);
+    const intl2 = tmp(1126).intl;
+    const stringResult1 = intl2.string(require("intl").t.URrJq1);
+    cResult[2] = stringResult;
+    cResult[3] = stringResult1;
+    tmp11 = stringResult1;
+    tmp10 = stringResult;
+  } else {
+    tmp10 = cResult[2];
+    tmp11 = cResult[3];
+  }
+  if (cResult[4] !== tmp7[1]) {
+    class R {
+      constructor() {
+        tmp = closure_0(ContentDismissActionType.USER_DISMISS);
+        return;
+      }
+    }
+    cResult[4] = tmp7[1];
+    cResult[5] = R;
+  } else {
+    class R {
+      constructor() {
+        tmp = closure_0(ContentDismissActionType.USER_DISMISS);
+        return;
+      }
+    }
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class D {
+      constructor() {
+        return closure_1_7(closure_1_10, {});
+      }
+    }
+    cResult[6] = D;
+    tmp16 = D;
+  } else {
+    class D {
+      constructor() {
+        return closure_1_7(closure_1_10, {});
+      }
+    }
+  }
+  if (cResult[7] === first === closure_8) {
+    class D {
+      constructor() {
+        return closure_1_7(closure_1_10, {});
+      }
+    }
+    const tmpResult2 = require("useCoachmark");
+    const coachmark = tmpResult2.useCoachmark(arg0, obj3);
+    return tmp7[1];
+  }
+  obj3 = { title: tmp10, description: tmp11, position: "bottom", visible: first === closure_8, onDismiss: tmp15, renderImgComponent: tmp16 };
+  cResult[7] = first === closure_8;
+  cResult[8] = tmp15;
+  cResult[9] = obj3;
+}) : ((arg0) => {
+  let first;
+  let items1;
+  let obj = first(7485);
   if (obj.useIsForLaterExperimentOn("forLaterCoachmark")) {
     const items = [closure_8];
-    let items1 = items;
+    items1 = items;
   } else {
     items1 = [];
   }
-  obj = first(7449);
-  const tmp4 = _slicedToArray(first(6993).useSelectedDismissibleContent(items1, undefined, true), 2);
+  const tmpResult = first(6891);
+  const tmp4 = _slicedToArray(tmpResult.useSelectedDismissibleContent(items1, undefined, true), 2);
   first = tmp4[0];
-  closure_1 = tmp6;
+  let closure_1 = tmp6;
   const items2 = [tmp4[1], first];
-  const memo = noop.useMemo(() => {
-    const obj = { title: null, description: null, position: "bottom", visible: null, onDismiss: null, renderImgComponent: null };
-    const intl = util.intl;
-    obj.title = intl.string(util.t.qPbFK2);
-    const intl2 = util.intl;
-    obj.description = intl2.string(util.t.URrJq1);
-    obj.visible = first === closure_8;
-    obj.onDismiss = function onDismiss() {
-      closure_1_1(constants.USER_DISMISS);
+  const memo = react.useMemo(() => {
+    let intl;
+    let intl2;
+    const obj = {
+      title: intl.string(intl3.t.qPbFK2),
+      description: intl2.string(intl3.t.URrJq1),
+      position: "bottom",
+      visible: first === closure_8,
+      onDismiss() {
+        closure_1_1(constants.USER_DISMISS);
+      },
+      renderImgComponent() {
+        return closure_1_7(closure_1_10, {});
+      }
     };
-    obj.renderImgComponent = function renderImgComponent() {
-      return closure_1_7(closure_1_10, {});
-    };
+    intl = intl3.intl;
+    intl2 = intl3.intl;
     return obj;
   }, items2);
-  const tmpResult = first(6993);
-  const coachmark = first(10789).useCoachmark(targetRef, memo);
+  const tmpResult2 = first(9882);
+  const coachmark = tmpResult2.useCoachmark(arg0, memo);
   return tmp4[1];
-};
+});
+const result = size.fileFinishedImporting("modules/saved_messages/native/useForLaterCoachmark.tsx");
+
+export default tmp2;

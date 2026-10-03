@@ -1,30 +1,86 @@
-// Module ID: 15478
-// Function ID: 15479
+// Module ID: 15539
+// Function ID: 15540
 // Name: CheckpointStatsScreen
-// Dependencies: [17, 21, 4845, 576, 15473, 15475, 2]
-// Exports: default
+// Dependencies: [17, 21, 4890, 587, 558, 576, 15535, 15537, 2]
 
-// Module 15478 (CheckpointStatsScreen)
-import _mod17 from "module_17" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 15473 */;
-import CheckpointTextDefault from "CheckpointText" /* 15475 */;
-import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4845 */;
+// Module 15539 (CheckpointStatsScreen)
+import react_native from "react-native" /* 17 */;
+import react from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import CheckpointTextDefault from "CheckpointText" /* 15535 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 15537 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const View = _mod17.View;
-({ jsx: c3, jsxs: closure_4 } = jsxProd);
-let obj = { container: { flexGrow: 1, justifyContent: "center", gap: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_64 }, name: { textTransform: "uppercase" } };
-let closure_5 = createStyles.createStyles(obj);
+let name;
+
+let closure_4;
+let hasOwnProperty;
+let obj2;
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let obj = { container: obj2, name: { textTransform: "uppercase" } };
+obj2 = { flexGrow: 1, justifyContent: "center", gap: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_64 };
+let closure_6 = createStyles.createStyles(obj);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
+  let first;
+  let items;
+  let obj3;
+  const obj = react;
+  const cResult = obj.c(7);
+  name = name.name;
+  const tmp3 = closure_6();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp7 = React3(CheckpointTextDefault, { variant: "eyebrow", children: "Stats screen" });
+    cResult[0] = tmp7;
+    first = tmp7;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === name) {
+    let tmp8;
+    if (cResult[2] === tmp3.name) {
+      tmp8 = cResult[3];
+    }
+    if (cResult[4] === tmp3.container) {
+      let tmp10;
+      if (cResult[5] === tmp8) {
+        tmp10 = cResult[6];
+      }
+      return tmp10;
+    }
+    const obj2 = { children: hasOwnProperty(View, obj3) };
+    obj3 = { style: tmp3.container, children: items };
+    items = [first, tmp8];
+    const tmp13 = CheckpointScreenDefault;
+    const tmp16 = React3(tmp13, obj2);
+    cResult[4] = tmp3.container;
+    cResult[5] = tmp8;
+    cResult[6] = tmp16;
+    tmp10 = tmp16;
+  }
+  const obj4 = { variant: "display-md", style: tmp3.name, adjustsFontSizeToFit: true, lineClamp: 2, children: name };
+  const tmp9 = React3(CheckpointTextDefault, obj4);
+  cResult[1] = name;
+  cResult[2] = tmp3.name;
+  cResult[3] = tmp9;
+  tmp8 = tmp9;
+}) : ((name) => {
+  let items;
+  let obj2;
+  name = name.name;
+  const tmp = closure_6();
+  const obj = { children: hasOwnProperty(View, obj2) };
+  obj2 = { style: tmp.container, children: items };
+  items = [, ];
+  const tmp2 = CheckpointScreenDefault;
+  items[0] = React3(CheckpointTextDefault, { variant: "eyebrow", children: "Stats screen" });
+  const obj3 = { variant: "display-md", style: tmp.name, adjustsFontSizeToFit: true, lineClamp: 2, children: name };
+  items[1] = React3(CheckpointTextDefault, obj3);
+  return React3(tmp2, obj);
+});
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/screens/stats/CheckpointStatsScreen.tsx");
 
-export default function CheckpointStatsScreen(children) {
-  const tmp = closure_5();
-  const obj = { children: null };
-  const obj2 = { style: tmp.container, children: null };
-  const items = [React3(CheckpointTextDefault, { variant: "eyebrow", children: "Stats screen" }), React3(CheckpointTextDefault, { variant: "display-md", style: tmp.name, adjustsFontSizeToFit: true, lineClamp: 2, children: children.name })];
-  obj2.children = items;
-  obj.children = React4(View, obj2);
-  return React3(CheckpointScreenDefault, obj);
-};
+export default tmp3;

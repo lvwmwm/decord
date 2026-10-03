@@ -1,19 +1,26 @@
-// Module ID: 17486
-// Function ID: 17487
+// Module ID: 17575
+// Function ID: 17576
 // Name: ParentalConsentWarningManager
-// Dependencies: [4550, 7145, 14615, 7146, 1074, 14616, 4809, 17487, 1981, 6725, 17491, 2]
+// Dependencies: [4561, 7048, 14671, 7049, 1085, 14672, 4854, 17576, 1987, 6613, 17580, 2]
 
-// Module 17486 (ParentalConsentWarningManager)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
-import ParentalConsentWarningTypes from "ParentalConsentWarningTypes" /* 14616 */;
-import ParentalConsentWarningActionCreators from "ParentalConsentWarningActionCreators" /* 17491 */;
-import ActionSheetStore from "ActionSheetStore" /* 4550 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7145 */;
-import ParentalConsentWarningStore from "ParentalConsentWarningStore" /* 14615 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
+// Module 17575 (ParentalConsentWarningManager)
+import Constants from "Constants" /* 1085 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import ParentalConsentWarningTypes from "ParentalConsentWarningTypes" /* 14672 */;
+import ParentalConsentWarningActionCreators from "ParentalConsentWarningActionCreators" /* 17580 */;
+import ActionSheetStore from "ActionSheetStore" /* 4561 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7048 */;
+import ParentalConsentWarningStore from "ParentalConsentWarningStore" /* 14671 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7049 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let c3;
+
+let metroImportAll;
+let metroImportDefault;
+const f131000 = (link_status) => link_status.link_status === constants.ACTIVE && link_status.link_type === constants2.PARENT;
 function maybePresentModal(daysRemaining) {
   daysRemaining = undefined;
   if (daysRemaining != null) {
@@ -26,107 +33,90 @@ function maybePresentModal(daysRemaining) {
       hasItem = surfaces.includes(ParentalConsentWarningTypes.ParentalConsentWarningSurface.MODAL);
     }
   }
-  let tmp5 = true === hasItem && null != daysRemaining;
-  if (tmp5) {
-    tmp5 = daysRemaining >= 0;
-  }
-  if (tmp5) {
-    tmp5 = !ParentalConsentWarningStore.hasShownModalToday();
-  }
+  let tmp5 = true === hasItem && null != daysRemaining && daysRemaining >= 0 && !ParentalConsentWarningStore.hasShownModalToday();
   if (tmp5) {
     const _Object = Object;
     const values = Object.values(FamilyCenterStore.getLinkedUsers());
-    tmp5 = !values.some((link_status) => {
-      let tmp = link_status.link_status === constants.ACTIVE;
-      if (tmp) {
-        tmp = link_status.link_type === constants2.PARENT;
-      }
-      return tmp;
-    });
+    tmp5 = !values.some(f131000);
   }
   if (tmp5) {
     tmp5 = !ActionSheetStore.isOpen();
   }
   if (tmp5) {
     const obj = { daysRemaining };
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(17487, dependencyMap.paths), "ParentalConsentWarningModal", obj);
+    const obj2 = ActionSheetActionCreatorsDefault;
+    obj2.openLazy(asyncRequire(17576, dependencyMap.paths), "ParentalConsentWarningModal", obj);
   }
 }
-const FamilyCenterConstants = fn(7146);
-({ UserLinkStatus: closure_7, UserLinkType: closure_8 } = FamilyCenterConstants);
-const AppStates = fn(1074).AppStates;
-const prototype = function ParentalConsentWarningManager() {
-  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  applyArgumentsResult.actions = {
-    PARENTAL_CONSENT_WARNING_FETCH_SUCCESS(warning) {
-      maybePresentModal(warning.warning);
-    },
-    POST_CONNECTION_OPEN() {
-      const values = Object.values(linkedUsers.getLinkedUsers());
-      c3 = values.some((link_status) => {
-        let tmp = link_status.link_status === constants.ACTIVE;
-        if (tmp) {
-          tmp = link_status.link_type === constants2.PARENT;
-        }
-        return tmp;
-      });
-      ParentalConsentWarningActionCreators.maybeFetchWarning();
-      if (!ParentalConsentWarningStore.shouldFetchToday()) {
-        maybePresentModal(ParentalConsentWarningStore.getWarning());
-      }
-    },
-    APP_STATE_UPDATE(state) {
-      if (state.state === constants.ACTIVE) {
-        ParentalConsentWarningActionCreators.maybeFetchWarning();
+({ UserLinkStatus: metroImportDefault, UserLinkType: metroImportAll } = FamilyCenterConstants);
+const AppStates = Constants.AppStates;
+class ParentalConsentWarningManager extends AutomaticLifecycleManager {
+  constructor() {
+    let linkedUsers;
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    applyArgumentsResult.actions = {
+      PARENTAL_CONSENT_WARNING_FETCH_SUCCESS(warning) {
+        maybePresentModal(warning.warning);
+      },
+      POST_CONNECTION_OPEN() {
+        const values = Object.values(linkedUsers.getLinkedUsers());
+        c3 = values.some(f131000);
+        const obj2 = ParentalConsentWarningActionCreators;
+        obj2.maybeFetchWarning();
+        const obj3 = ParentalConsentWarningStore;
         if (!ParentalConsentWarningStore.shouldFetchToday()) {
-          maybePresentModal(obj2.getWarning());
+          maybePresentModal(obj3.getWarning());
         }
-        obj2 = ParentalConsentWarningStore;
-      }
-    },
-    CURRENT_USER_UPDATE(user) {
-      user = user.user;
-      if (undefined !== user.linked_users) {
-        const linked_users = user.linked_users;
-        const someResult = linked_users.some((link_status) => {
-          let tmp = link_status.link_status === constants.ACTIVE;
+      },
+      APP_STATE_UPDATE(state) {
+        if (state.state === constants.ACTIVE) {
+          const obj = ParentalConsentWarningActionCreators;
+          obj.maybeFetchWarning();
+          const obj2 = ParentalConsentWarningStore;
+          if (!ParentalConsentWarningStore.shouldFetchToday()) {
+            maybePresentModal(obj2.getWarning());
+          }
+        }
+      },
+      CURRENT_USER_UPDATE(user) {
+        let constants2;
+        user = user.user;
+        if (undefined !== user.linked_users) {
+          const linked_users = user.linked_users;
+          const someResult = linked_users.some(f131000);
+          c3 = someResult;
+          const tmp = undefined !== c3 && c3 !== someResult;
           if (tmp) {
-            tmp = link_status.link_type === constants2.PARENT;
-          }
-          return tmp;
-        });
-        c3 = someResult;
-        if (tmp) {
-          if (someResult) {
-            const warning = ParentalConsentWarningStore.getWarning();
-            let hasItem;
-            if (warning != null) {
-              const surfaces = warning.surfaces;
-              if (surfaces != null) {
-                hasItem = surfaces.includes(ParentalConsentWarningTypes.ParentalConsentWarningSurface.BANNER);
+            if (someResult) {
+              const warning = ParentalConsentWarningStore.getWarning();
+              let hasItem;
+              if (warning != null) {
+                const surfaces = warning.surfaces;
+                if (surfaces != null) {
+                  hasItem = surfaces.includes(ParentalConsentWarningTypes.ParentalConsentWarningSurface.BANNER);
+                }
               }
+              if (true === hasItem) {
+                const obj2 = ParentalConsentWarningActionCreators;
+                obj2.forceFetchWarning();
+              }
+            } else {
+              const obj = ParentalConsentWarningActionCreators;
+              obj.forceFetchWarning();
             }
-            if (true === hasItem) {
-              ParentalConsentWarningActionCreators.forceFetchWarning();
-            }
-          } else {
-            ParentalConsentWarningActionCreators.forceFetchWarning();
           }
         }
-        tmp = undefined !== c3 && c3 !== someResult;
+      },
+      LOGOUT() {
+        c3 = undefined;
+        const obj = ParentalConsentWarningActionCreators;
+        obj.resetFetchState();
       }
-    },
-    LOGOUT() {
-      c3 = undefined;
-      ParentalConsentWarningActionCreators.resetFetchState();
-    }
-  };
-  return applyArgumentsResult;
-}.prototype;
-class prototype extends tmp3 {
+    };
+    return applyArgumentsResult;
+  }
 }
-const prototype1 = new prototype();
-const size = fn(2);
+const parentalConsentWarningManager = new ParentalConsentWarningManager();
 const result = size.fileFinishedImporting("modules/parent_tools/native/ParentalConsentWarningManager.tsx");
 
-export default prototype1;
+export default parentalConsentWarningManager;

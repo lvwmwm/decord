@@ -1,19 +1,20 @@
-// Module ID: 16751
-// Function ID: 16752
+// Module ID: 16839
+// Function ID: 16840
 // Name: CachedSearchResultParser
 // Dependencies: [2]
+// Exports: CachedSearchResultParser
 
-// Module 16751 (CachedSearchResultParser)
+// Module 16839 (CachedSearchResultParser)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/search/native/message_parsers/CachedSearchResultParser.tsx");
 
-export const CachedSearchResultParser = function CachedSearchResultParser() {
+export function CachedSearchResultParser() {
   const obj = Object.create(new.target.prototype);
   obj.resultsCache = new Map();
   obj.parse = function parse(id) {
     const resultsCache = obj.resultsCache;
-    value = resultsCache.get(id.id);
+    const value = resultsCache.get(id.id);
     if (null != value) {
       return value;
     } else {
@@ -23,5 +24,6 @@ export const CachedSearchResultParser = function CachedSearchResultParser() {
       return searchResults;
     }
   };
+  new Map();
   return obj;
-}.prototype;
+}

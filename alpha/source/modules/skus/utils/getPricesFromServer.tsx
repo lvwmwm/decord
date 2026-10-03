@@ -1,30 +1,33 @@
-// Module ID: 6011
-// Function ID: 6012
+// Module ID: 5698
+// Function ID: 5699
 // Name: getPricesFromServer
-// Dependencies: [4518, 2]
+// Dependencies: [4529, 2]
 // Exports: default
 
-// Module 6011 (getPricesFromServer)
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4518 */;
+// Module 5698 (getPricesFromServer)
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4529 */;
 import size from "module_2" /* 2 */;
 
 const getPriceFromServer = SubscriptionPlanRecord.getPriceFromServer;
 const result = size.fileFinishedImporting("modules/skus/utils/getPricesFromServer.tsx");
 
 export default function getPricesFromServer(arg0) {
+  let reduced;
   if (null == arg0) {
-    let reduced = {};
+    reduced = {};
   } else {
+    const tmp = globalThis;
     const _Object = Object;
     const entries = Object.entries(arg0);
     reduced = entries.reduce((acc, item) => {
+      let obj2;
+      let prices;
+      let tmp;
+      let tmp2;
       [tmp, tmp2] = item;
-      const obj = { countryPrices: null, paymentSourcePrices: null };
-      const obj2 = { countryCode: tmp2.country_prices.country_code, prices: null };
-      const prices = tmp2.country_prices.prices;
-      obj2.prices = prices.map((item) => closure_1_0(item, true));
-      obj.countryPrices = obj2;
-      obj.paymentSourcePrices = {};
+      const obj = { countryPrices: obj2, paymentSourcePrices: {} };
+      obj2 = { countryCode: tmp2.country_prices.country_code, prices: prices.map((item) => closure_1_0(item, true)) };
+      prices = tmp2.country_prices.prices;
       acc[tmp] = obj;
       return acc;
     }, {});

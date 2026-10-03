@@ -1,12 +1,19 @@
-// Module ID: 12799
-// Function ID: 12800
+// Module ID: 12839
+// Function ID: 12840
 // Name: getActivityPlatform
-// Dependencies: [1074, 12798, 10545, 5781, 7974, 12785, 12786, 12800, 12801, 2]
+// Dependencies: [1085, 12838, 10625, 5442, 8020, 12825, 12826, 12840, 12841, 2]
 // Exports: default
 
-// Module 12799 (getActivityPlatform)
-import Constants from "Constants" /* 1074 */;
-import parseProviderRouteHeadlessSessionIdDefault from "parseProviderRouteHeadlessSessionId" /* 12798 */;
+// Module 12839 (getActivityPlatform)
+import Constants from "Constants" /* 1085 */;
+import PlatformsDefault from "Platforms" /* 5442 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8020 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10625 */;
+import isOnXboxDefault from "isOnXbox" /* 12825 */;
+import isOnPlayStationDefault from "isOnPlayStation" /* 12826 */;
+import parseProviderRouteHeadlessSessionIdDefault from "parseProviderRouteHeadlessSessionId" /* 12838 */;
+import isOnMetaQuestDefault from "isOnMetaQuest" /* 12840 */;
+import isOnMetaHorizonDefault from "isOnMetaHorizon" /* 12841 */;
 import size from "module_2" /* 2 */;
 
 const PlatformTypes = Constants.PlatformTypes;
@@ -16,21 +23,27 @@ const set = new Set(items);
 const result = size.fileFinishedImporting("modules/user_profile/utils/getActivityPlatform.tsx");
 
 export default function getActivityPlatform(session_id) {
+  let closure_0 = session_id;
   const tmp3 = parseProviderRouteHeadlessSessionIdDefault(session_id.session_id);
   if (null != tmp3) {
     return tmp3;
-  } else if (tmp(10545)(session_id)) {
-    return tmp(5781).get(PlatformTypes.SPOTIFY);
-  } else if (tmp(7974)(session_id)) {
-    return tmp(5781).get(PlatformTypes.CRUNCHYROLL);
-  } else if (tmp(12785)(session_id)) {
-    return tmp(5781).get(PlatformTypes.XBOX);
-  } else if (tmp(12786)(session_id)) {
-    return tmp(5781).get(PlatformTypes.PLAYSTATION);
+  } else if (isListeningOnSpotifyDefault(session_id)) {
+    const tmpResult = PlatformsDefault;
+    return tmpResult.get(PlatformTypes.SPOTIFY);
+  } else if (isCrunchyrollActivityDefault(session_id)) {
+    const tmpResult6 = PlatformsDefault;
+    return tmpResult6.get(PlatformTypes.CRUNCHYROLL);
+  } else if (isOnXboxDefault(session_id)) {
+    const tmpResult7 = PlatformsDefault;
+    return tmpResult7.get(PlatformTypes.XBOX);
+  } else if (isOnPlayStationDefault(session_id)) {
+    const tmpResult8 = PlatformsDefault;
+    return tmpResult8.get(PlatformTypes.PLAYSTATION);
   } else {
-    if (!tmp(12800)(session_id)) {
-      if (!tmp(12801)(session_id)) {
-        const found = tmp(5781).find((name) => name.name === session_id.name);
+    if (!isOnMetaQuestDefault(session_id)) {
+      if (!isOnMetaHorizonDefault(session_id)) {
+        const tmpResult9 = PlatformsDefault;
+        const found = tmpResult9.find((name) => name.name === name.name);
         let tmp5 = null;
         if (null != found) {
           tmp5 = null;
@@ -41,6 +54,7 @@ export default function getActivityPlatform(session_id) {
         return tmp5;
       }
     }
-    return tmp(5781).get(PlatformTypes.META_QUEST_OR_HORIZON);
+    const tmpResult10 = PlatformsDefault;
+    return tmpResult10.get(PlatformTypes.META_QUEST_OR_HORIZON);
   }
 };

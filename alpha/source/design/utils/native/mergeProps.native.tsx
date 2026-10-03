@@ -1,21 +1,21 @@
-// Module ID: 4565
-// Function ID: 4566
+// Module ID: 4585
+// Function ID: 4586
 // Name: mergeProps
 // Dependencies: [2]
 // Exports: mergeProps, mergeRefs
 
-// Module 4565 (mergeProps)
+// Module 4585 (mergeProps)
 import size from "module_2" /* 2 */;
 
 function chainCallbacks() {
-  closure_0 = [...arguments];
+  let closure_0 = [...arguments];
   return () => {
     const items = [...arguments];
     for (const item10008 of closure_0) {
       if (typeof item10008 === "function") {
         let items1 = [];
-        let arraySpreadResult = HermesBuiltin.arraySpread(items, 0);
-        let applyResult = HermesBuiltin.apply(items1, undefined);
+        let arraySpreadResult = HermesBuiltin.arraySpread(items1, items, 0);
+        let applyResult = HermesBuiltin.apply(item10008, items1, undefined);
       }
       continue;
     }
@@ -41,12 +41,14 @@ export const mergeRefs = function mergeRefs() {
   });
 };
 export const mergeProps = function mergeProps() {
+  let num;
   const items = [...arguments];
   const obj = {};
   const merged = Object.assign(items[0]);
   for (let num = 1; num < items.length; num = num + 1) {
     let tmp2 = items[num];
     for (const key10021 in tmp2) {
+      let combined;
       let obj2 = obj[key10021];
       let tmp8 = tmp2[key10021];
       if (typeof obj2 === "function") {
@@ -64,7 +66,7 @@ export const mergeProps = function mergeProps() {
         }
       }
       if ("style" === key10021) {
-        let combined = obj2.concat(tmp8);
+        combined = obj2.concat(tmp8);
       } else {
         combined = obj2;
         if (undefined !== tmp8) {

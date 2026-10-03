@@ -1,28 +1,22 @@
-// Module ID: 9109
-// Function ID: 9110
+// Module ID: 9135
+// Function ID: 9136
 // Name: doesOrientationMatchLockState
-// Dependencies: [2005, 2]
+// Dependencies: [2011, 2]
 // Exports: default
 
-// Module 9109 (doesOrientationMatchLockState)
-import Constants from "Constants" /* 2005 */;
+// Module 9135 (doesOrientationMatchLockState)
+import Constants from "Constants" /* 2011 */;
 import size from "module_2" /* 2 */;
 
 const OrientationLockState = Constants.OrientationLockState;
 const result = size.fileFinishedImporting("modules/activities/native/doesOrientationMatchLockState.tsx");
 
 export default function doesOrientationMatchLockState(arg0, arg1) {
-  let tmp = null == arg1;
-  if (!tmp) {
-    tmp = arg1 === OrientationLockState.UNLOCKED;
-  }
+  let tmp = null == arg1 || arg1 === OrientationLockState.UNLOCKED;
   let tmp3 = arg0;
   if (!tmp) {
-    let tmp4 = !tmp3;
-    if (!tmp3) {
-      tmp4 = arg1 === OrientationLockState.PORTRAIT;
-    }
-    tmp = tmp4;
+    tmp = !tmp3 && arg1 === OrientationLockState.PORTRAIT;
+    const tmp4 = !tmp3 && arg1 === OrientationLockState.PORTRAIT;
   }
   if (!tmp) {
     if (tmp3) {

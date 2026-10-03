@@ -1,13 +1,13 @@
-// Module ID: 14267
-// Function ID: 14268
+// Module ID: 14335
+// Function ID: 14336
 // Name: validateTransportType
-// Dependencies: [5270, 1074, 8962, 2]
+// Dependencies: [5316, 1085, 9026, 2]
 // Exports: validateTransportType
 
-// Module 14267 (validateTransportType)
-import Constants from "Constants" /* 1074 */;
-import Constants2 from "Constants" /* 5270 */;
-import RPCErrorDefault from "RPCError" /* 8962 */;
+// Module 14335 (validateTransportType)
+import Constants from "Constants" /* 1085 */;
+import Constants2 from "Constants" /* 5316 */;
+import RPCErrorDefault from "RPCError" /* 9026 */;
 import size from "module_2" /* 2 */;
 
 const TransportTypes = Constants2.TransportTypes;
@@ -17,9 +17,11 @@ const result = size.fileFinishedImporting("modules/rpc/helpers/validateTransport
 export const validateTransportType = function validateTransportType(transport) {
   if (TransportTypes.IPC !== transport) {
     if (TransportTypes.POST_MESSAGE !== transport) {
+      const self = this;
+      const self2 = this;
       const obj = { errorCode: RPCErrors.INVALID_COMMAND };
-      const tmp7 = new RPCErrorDefault(obj, "Invalid transport.");
-      throw tmp7;
+      const tmp5 = new RPCErrorDefault(obj, "Invalid transport.");
+      throw tmp5;
     }
   }
 };

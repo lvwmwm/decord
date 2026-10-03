@@ -1,52 +1,110 @@
-// Module ID: 14678
-// Function ID: 14679
+// Module ID: 14734
+// Function ID: 14735
 // Name: FamilyCenterParentalControlsContentAndSocial
-// Dependencies: [19, 17, 1074, 7590, 21, 11215, 1115, 2110, 14460, 2]
-// Exports: default
+// Dependencies: [19, 17, 1085, 7634, 21, 558, 576, 11129, 1126, 2115, 14495, 2]
 
-// Module 14678 (FamilyCenterParentalControlsContentAndSocial)
-import util from "util" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2110 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
-import SettingLayoutDefault from "SettingLayout" /* 14460 */;
-import noop from "module_19" /* 19 */;
+// Module 14734 (FamilyCenterParentalControlsContentAndSocial)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1085 */;
+import intl4 from "intl" /* 1126 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const HelpdeskArticles = fn(1074).HelpdeskArticles;
-const MobileUserSettings = fn(7590).MobileUserSettings;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const View = react_native.View;
+const HelpdeskArticles = Constants.HelpdeskArticles;
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let dliU4j;
+  let format;
+  let intl2;
+  let intl3;
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  let obj4;
+  let obj5;
+  let tmp10;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { sections: items1 };
+    const obj3 = { settings: items, subLabel: format(dliU4j, obj4) };
+    items = [MobileUserSettings.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS];
+    const createList = SettingBuilders.createList;
+    SettingBuilders;
+    const intl = tmp(1126).intl;
+    format = intl.format;
+    obj4 = { learnMoreLink: obj5.getArticleURL(HelpdeskArticles.EXPLICIT_MEDIA_REDACTION) };
+    dliU4j = tmp(1126).t.dliU4j;
+    items1 = [obj3, , ];
+    obj5 = HelpdeskUtilsDefault;
+    const obj6 = { label: intl2.string(intl4.t.MeYuqs), settings: items2 };
+    intl2 = tmp(1126).intl;
+    items2 = [, ];
+    ({ PARENTAL_CONTROLS_DIRECT_MESSAGES: arr3[0], PARENTAL_CONTROLS_MESSAGE_REQUESTS: arr3[1] } = MobileUserSettings);
+    items1[1] = obj6;
+    const obj7 = { label: intl3.string(intl4.t.XlGG9c), settings: items3 };
+    intl3 = tmp(1126).intl;
+    items3 = [, , ];
+    ({ PARENTAL_CONTROLS_FRIEND_REQUESTS_EVERYONE: arr4[0], PARENTAL_CONTROLS_FRIEND_REQUESTS_MUTUAL_FRIENDS: arr4[1], PARENTAL_CONTROLS_FRIEND_REQUESTS_MUTUAL_GUILDS: arr4[2] } = MobileUserSettings);
+    items1[2] = obj7;
+    const list = createList(obj2);
+    cResult[0] = list;
+    let first = list;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp14 = <View>{null}</View>;
+    cResult[1] = tmp14;
+    tmp10 = tmp14;
+  } else {
+    tmp10 = cResult[1];
+  }
+  return tmp10;
+}) : (() => {
+  let dliU4j;
+  let format;
+  let intl2;
+  let intl3;
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  let obj3;
+  let obj4;
+  const obj = { sections: items1 };
+  const obj2 = { settings: items, subLabel: format(dliU4j, obj3) };
+  items = [MobileUserSettings.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS];
+  const createList = SettingBuilders.createList;
+  SettingBuilders;
+  const intl = intl4.intl;
+  format = intl.format;
+  obj3 = { learnMoreLink: obj4.getArticleURL(HelpdeskArticles.EXPLICIT_MEDIA_REDACTION) };
+  dliU4j = intl4.t.dliU4j;
+  items1 = [obj2, , ];
+  obj4 = HelpdeskUtilsDefault;
+  const obj5 = { label: intl2.string(intl4.t.MeYuqs), settings: items2 };
+  intl2 = intl4.intl;
+  items2 = [, ];
+  ({ PARENTAL_CONTROLS_DIRECT_MESSAGES: arr3[0], PARENTAL_CONTROLS_MESSAGE_REQUESTS: arr3[1] } = MobileUserSettings);
+  items1[1] = obj5;
+  const obj6 = { label: intl3.string(intl4.t.XlGG9c), settings: items3 };
+  intl3 = intl4.intl;
+  items3 = [, , ];
+  ({ PARENTAL_CONTROLS_FRIEND_REQUESTS_EVERYONE: arr4[0], PARENTAL_CONTROLS_FRIEND_REQUESTS_MUTUAL_FRIENDS: arr4[1], PARENTAL_CONTROLS_FRIEND_REQUESTS_MUTUAL_GUILDS: arr4[2] } = MobileUserSettings);
+  items1[2] = obj6;
+  const list = createList(obj);
+  return <View>{null}</View>;
+});
 const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterParentalControlsContentAndSocial.tsx");
 
-export default function FamilyCenterParentalControlsContentAndSocial() {
-  const obj2 = { sections: null };
-  const obj3 = { settings: null, subLabel: null };
-  const items = [MobileUserSettings.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS];
-  obj3.settings = items;
-  const intl = util.intl;
-  const obj4 = { learnMoreLink: null };
-  const obj = SettingBuilders;
-  obj4.learnMoreLink = HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.EXPLICIT_MEDIA_REDACTION);
-  obj3.subLabel = intl.format(util.t.dliU4j, obj4);
-  const items1 = [obj3, , ];
-  const obj6 = { label: null, settings: null };
-  const intl2 = util.intl;
-  obj6.label = intl2.string(util.t.MeYuqs);
-  const items2 = [, ];
-  ({ PARENTAL_CONTROLS_DIRECT_MESSAGES: arr3[0], PARENTAL_CONTROLS_MESSAGE_REQUESTS: arr3[1] } = MobileUserSettings);
-  obj6.settings = items2;
-  items1[1] = obj6;
-  const obj7 = { label: null, settings: null };
-  const intl3 = util.intl;
-  obj7.label = intl3.string(util.t.XlGG9c);
-  const items3 = [, , ];
-  ({ PARENTAL_CONTROLS_FRIEND_REQUESTS_EVERYONE: arr4[0], PARENTAL_CONTROLS_FRIEND_REQUESTS_MUTUAL_FRIENDS: arr4[1], PARENTAL_CONTROLS_FRIEND_REQUESTS_MUTUAL_GUILDS: arr4[2] } = MobileUserSettings);
-  obj7.settings = items3;
-  items1[2] = obj7;
-  obj2.sections = items1;
-  const obj8 = { children: null };
-  const list = obj.createList(obj2);
-  obj8.children = jsx(SettingLayoutDefault, { node: list });
-  return <View>{null}</View>;
-};
+export default tmp3;

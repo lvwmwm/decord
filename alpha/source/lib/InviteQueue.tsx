@@ -1,30 +1,36 @@
-// Module ID: 9545
-// Function ID: 9546
+// Module ID: 9555
+// Function ID: 9556
 // Name: InviteQueue
-// Dependencies: [2044, 1091, 7427, 3, 7064, 4858, 2]
+// Dependencies: [2051, 1102, 7463, 3, 6965, 4903, 2]
 
-// Module 9545 (InviteQueue)
+// Module 9555 (InviteQueue)
 import LoggerDefault from "Logger" /* 3 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7064 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import Queue from "Queue" /* 7427 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 6965 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import Queue from "Queue" /* 7463 */;
+import size from "module_2" /* 2 */;
+
+let dependencyMap;
 
 let sum = DurationsDefault.Millis.SECOND + 10;
 let c3 = sum;
 const InvitePropertiesType = { GROUP_DM: 0, [0]: "GROUP_DM", USER: 1, [1]: "USER", CHANNEL: 2, [2]: "CHANNEL" };
-class InviteQueue extends tmp4 {
+class InviteQueue extends Queue {
   constructor() {
-    tmp2 = closure_0(closure_1[3]);
-    tmp21 = new tmp2("InviteQueue");
-    tmp1 = new tmp(tmp21, closure_3, tmp2);
-    return tmp1;
+    const tmp2 = LoggerDefault;
+    const tmp22 = new tmp2("InviteQueue");
+    const tmp3 = new tmp(tmp22, c3, tmp2);
+    return tmp3;
+  }
+  _sendInvite(channel, inviteKey, _location, inviteAnalyticsMetadata, sum) {
+    let closure_0 = sum;
+    const obj = MessageActionCreatorsDefault;
+    const sendInviteResult = obj.sendInvite(channel.id, inviteKey, _location, inviteAnalyticsMetadata);
+    sendInviteResult.then(() => closure_0(null, true), () => closure_0(null, false));
   }
 }
 const prototype = InviteQueue.prototype;
-prototype["_sendInvite"] = function _sendInvite(channel, inviteKey, _location, inviteAnalyticsMetadata, sum) {
-  MessageActionCreatorsDefault.sendInvite(channel.id, inviteKey, _location, inviteAnalyticsMetadata).then(() => sum(null, true), () => sum(null, false));
-};
 function drain(location, sum) {
   const self = this;
   dependencyMap = location;
@@ -32,10 +38,11 @@ function drain(location, sum) {
   const inviteAnalyticsMetadata = location.inviteAnalyticsMetadata;
   const type = location.type;
   if (self.GROUP_DM !== type) {
-    if (tmp.CHANNEL !== type) {
-      if (tmp.USER === type) {
-        const obj = inviteAnalyticsMetadata(4858);
-        inviteAnalyticsMetadata(4858).ensurePrivateChannel(location.user.id).then((result) => {
+    if (self.CHANNEL !== type) {
+      if (self.USER === type) {
+        const obj = inviteAnalyticsMetadata(4903);
+        const ensurePrivateChannelResult = obj.ensurePrivateChannel(location.user.id);
+        ensurePrivateChannelResult.then((result) => {
           const channel = ChannelStore.getChannel(result);
           if (null != channel) {
             self._sendInvite(channel, _location.inviteKey, _location, inviteAnalyticsMetadata, sum);
@@ -43,15 +50,14 @@ function drain(location, sum) {
             sum(null, false);
           }
         }, () => sum(null, false));
-        const ensurePrivateChannelResult = inviteAnalyticsMetadata(4858).ensurePrivateChannel(location.user.id);
       }
     }
   }
   self._sendInvite(location.channel, location.inviteKey, _location, inviteAnalyticsMetadata, sum);
 }
 prototype["drain"] = drain;
-const drain1 = new drain(new LoggerDefault("InviteQueue"), sum, tmp, prototype, new.target, InviteQueue, drain, dependencyMap, new.target);
-const size = fn(2);
+const tmp5 = new LoggerDefault("InviteQueue");
+const drain1 = new drain(tmp5, sum, tmp, prototype, this, InviteQueue, drain, dependencyMap, this);
 const result = size.fileFinishedImporting("lib/InviteQueue.tsx");
 
 export default drain1;

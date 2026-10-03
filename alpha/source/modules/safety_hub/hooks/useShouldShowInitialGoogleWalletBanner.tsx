@@ -1,61 +1,75 @@
-// Module ID: 14514
-// Function ID: 14515
+// Module ID: 14549
+// Function ID: 14550
 // Name: useShouldShowInitialGoogleWalletBanner
-// Dependencies: [5, 32, 19, 8065, 8052, 504, 1364, 8051, 8072, 1380, 8075, 2]
+// Dependencies: [5, 32, 19, 8106, 8093, 504, 1369, 8092, 8113, 1385, 8116, 2]
 // Exports: useShouldShowInitialGoogleWalletBanner
 
-// Module 14514 (useShouldShowInitialGoogleWalletBanner)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8065 */;
+// Module 14549 (useShouldShowInitialGoogleWalletBanner)
+import SafetyHubConstants from "SafetyHubConstants" /* 8093 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import SafetyHubStore from "SafetyHubStore" /* 8106 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let c3, c4;
 
-const require = fn;
-const AgeCheckStatus = fn(8052).AgeCheckStatus;
-const size = fn(2);
+const AgeCheckStatus = SafetyHubConstants.AgeCheckStatus;
 const result = size.fileFinishedImporting("modules/safety_hub/hooks/useShouldShowInitialGoogleWalletBanner.tsx");
 
 export const useShouldShowInitialGoogleWalletBanner = function useShouldShowInitialGoogleWalletBanner() {
+  let stateFromStores;
+  let tmp6;
+  let tmp = require;
+  let obj = require("get initialized");
   const items = [SafetyHubStore];
-  stateFromStores = require("initialize").useStateFromStores(items, () => SafetyHubStore.getAgeCheckStatus() === constants.NONE);
-  let obj = require("initialize");
+  stateFromStores = obj.useStateFromStores(items, () => SafetyHubStore.getAgeCheckStatus() === constants.NONE);
+  let obj2 = require("get initialized");
   const items1 = [SafetyHubStore];
-  const stateFromStores1 = require("initialize").useStateFromStores(items1, () => SafetyHubStore.getIsManualReviewFallbackEnabled());
-  const obj2 = require("initialize");
-  let obj3 = noop;
-  [tmp6, require] = noop.useState(false);
+  let obj3 = react;
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => SafetyHubStore.getIsManualReviewFallbackEnabled());
+  let tmp5 = _slicedToArray(react.useState(false), 2);
+  [tmp6, require] = tmp5;
   if (stateFromStores) {
     stateFromStores = stateFromStores1;
   }
   if (stateFromStores) {
-    stateFromStores = tmp(tmp2[6]).isAndroid();
-    const tmpResult = tmp(tmp2[6]);
+    const tmpResult = tmp(stateFromStores[6]);
+    stateFromStores = tmpResult.isAndroid();
   }
   if (stateFromStores) {
-    stateFromStores = tmp(tmp2[7]).isCurrentUserSuspended();
-    const tmpResult2 = tmp(tmp2[7]);
+    const tmpResult2 = tmp(stateFromStores[7]);
+    stateFromStores = tmpResult2.isCurrentUserSuspended();
   }
   const items2 = [stateFromStores];
   const effect = obj3.useEffect(() => {
-    closure_1 = function _resolveGoogleWalletOnly() {
-      const self = this;
-      const tmp = asyncGeneratorStep(async (arg0, value) => {
+    let _true;
+    function resolveGoogleWalletOnly() {
+      return obj(...arguments);
+    }
+    let obj = function _resolveGoogleWalletOnly() {
+      obj = _asyncToGenerator(async (arg0, value) => {
+        let obj2;
+        let obj5;
         if (c4 === 2) {
           c4 = 3;
           throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp6 === 3) {
+        } else if (tmp3 === 3) {
           if (arg0 === 1) {
             throw value;
           } else if (arg0 === 2) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
+          let c2;
           try {
+            let closure_0;
+            let methods;
+            let closure_1;
             c4 = 2;
             if (0 === c3) {
               if (arg0 === 1) {
@@ -66,25 +80,26 @@ export const useShouldShowInitialGoogleWalletBanner = function useShouldShowInit
                 const obj4 = { value, done: true };
                 return obj4;
               } else {
-                closure_1 = tmp3;
-                closure_0 = tmp7;
-                let methods;
-                closure_128_1 = undefined;
+                closure_0 = tmp4;
+                methods = undefined;
+                closure_1 = undefined;
                 c2 = 1;
                 c3 = 2;
                 c4 = 1;
-                const obj6 = { value: _true(8072).fetchAgeVerificationMethodsV2SuspendedUser(), done: false };
+                const obj6 = { value: obj5.fetchAgeVerificationMethodsV2SuspendedUser(), done: false };
+                obj5 = _true(closure_2_1[8]);
                 return obj6;
               }
             } else {
-              if (1 === tmp7) {
+              if (1 === c3) {
                 c2 = 0;
-                if (!closure_129_0) {
+                const tmp19 = closure_129_0;
+                if (!tmp19) {
                   closure_0(false);
                 }
-                c4 = 3;
               } else {
-                if (2 === tmp7) {
+                let tmp5;
+                if (2 === c3) {
                   if (arg0 === 1) {
                     c4 = 3;
                     throw value;
@@ -95,68 +110,55 @@ export const useShouldShowInitialGoogleWalletBanner = function useShouldShowInit
                     return obj7;
                   } else {
                     methods = value.methods;
-                    let everyResult = methods.length > 0;
-                    if (everyResult) {
-                      everyResult = methods.every((method) => method.method === closure_1_0(closure_1_1[9]).AgeAssuranceMethod.GOOGLE_WALLET);
+                    const everyResult = methods.length > 0 && methods.every((method) => method.method === closure_1_0(closure_1_1[9]).AgeAssuranceMethod.GOOGLE_WALLET);
+                    tmp5 = everyResult;
+                    if (tmp5) {
+                      c3 = 3;
+                      c4 = 1;
+                      const obj8 = { value: obj2.checkGoogleWalletAvailable(), done: false };
+                      obj2 = _true(closure_2_1[10]);
+                      return obj8;
                     }
-                    let tmp8 = everyResult;
                   }
                 } else if (arg0 === 1) {
                   c4 = 3;
                   throw value;
                 } else {
-                  tmp8 = value;
+                  tmp5 = value;
                   if (arg0 === 2) {
                     c2 = 0;
                     c4 = 3;
-                    const obj = { value, done: true };
+                    obj = { value, done: true };
                     return obj;
                   }
                 }
-                closure_128_1 = tmp8;
-                if (!closure_129_0) {
-                  closure_0(closure_128_1);
+                closure_1 = tmp5;
+                const tmp11 = closure_129_0;
+                if (!tmp11) {
+                  closure_0(closure_1);
                 }
                 c2 = 0;
               }
-              c3 = 3;
-              c4 = 1;
-              const obj8 = { value: _true(8075).checkGoogleWalletAvailable(), done: false };
-              return obj8;
+              c4 = 3;
+              return { value: "IconComponent", done: "IconComponent" };
             }
-          } catch (tmp27) {
-            if (tmp4 === c2) {
-              c4 = tmp2;
-              throw tmp27;
+          } catch (tmp24) {
+            if (0 === c2) {
+              c4 = 3;
+              throw tmp24;
             } else {
-              c3 = tmp;
+              c3 = 1;
             }
           }
         }
       });
-      dependencyMap = tmp;
-      const apply = tmp.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
+      return obj(...arguments);
     };
-    if (closure_1) {
-      c0 = false;
-      (function resolveGoogleWalletOnly() {
-        const self = this;
-        const apply = closure_1.apply;
-        if (typeof apply === "unknown") {
-          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-        } else {
-          applyArgumentsResult = apply(self, arguments);
-        }
-        return applyArgumentsResult;
-      })();
+    if (obj) {
+      let c0 = false;
+      const tmp = resolveGoogleWalletOnly();
       return () => {
-        c0 = true;
+        let c0 = true;
       };
     }
   }, items2);

@@ -1,34 +1,42 @@
-// Module ID: 18014
-// Function ID: 18015
+// Module ID: 18100
+// Function ID: 18101
 // Name: BackgroundSync
-// Dependencies: [5775, 502, 1980, 3, 2090, 17349, 2]
+// Dependencies: [5436, 502, 1986, 3, 2095, 17441, 2]
 
-// Module 18014 (BackgroundSync)
+// Module 18100 (BackgroundSync)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 2090 */;
-import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 17349 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5775 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 2095 */;
+import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 17441 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AppStateStore from "AppStateStore" /* 1980 */;
+import AppStateStore from "AppStateStore" /* 1986 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-let closure_6 = new LoggerDefault("BackgroundSync");
-const size = fn(2);
+let tmp = new LoggerDefault("BackgroundSync");
+let closure_6 = tmp;
 let result = size.fileFinishedImporting("modules/headless_tasks/android/BackgroundSync.tsx");
 
-export default (arg0) => {
-  closure_0 = arg0;
+export default function(arg0) {
+  let logger;
+  let resolved;
+  let closure_0 = arg0;
   if ("active" === AppStateStore.getState()) {
-    let resolved = Promise.resolve();
+    resolved = Promise.resolve();
   } else {
+    let obj = GatewayConnectionStore;
+    const tmp = GatewayConnectionStore.isConnected() || obj.isTryingToConnect();
     if (!tmp) {
-      const result = DatabaseManagerDefault.carefullyOpenDatabase(AuthenticationStore.getId());
+      const obj2 = DatabaseManagerDefault;
+      const result = obj2.carefullyOpenDatabase(AuthenticationStore.getId());
     }
+    const self = this;
+    const self2 = this;
     resolved = new Promise((arg0) => {
       logger.log("Executing BackgroundSync with ", closure_0);
-      background_sync_BackgroundSync.backgroundSync({}).then(arg0);
+      const obj = background_sync_BackgroundSync;
+      const backgroundSyncResult = obj.backgroundSync({});
+      backgroundSyncResult.then(arg0);
     });
-    tmp = GatewayConnectionStore.isConnected() || GatewayConnectionStore.isTryingToConnect();
   }
   return resolved;
 };

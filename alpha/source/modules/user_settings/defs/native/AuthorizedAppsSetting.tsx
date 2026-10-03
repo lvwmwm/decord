@@ -1,31 +1,33 @@
-// Module ID: 14685
-// Function ID: 14686
+// Module ID: 14741
+// Function ID: 14742
 // Name: AuthorizedAppsSetting
-// Dependencies: [1074, 11215, 1115, 6563, 14686, 2]
+// Dependencies: [1085, 11129, 1126, 6446, 14742, 2]
 
-// Module 14685 (AuthorizedAppsSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import KeyIcon from "KeyIcon" /* 6563 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 14741 (AuthorizedAppsSetting)
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import KeyIcon from "KeyIcon" /* 6446 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["f6kk+r"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["f6kk+r"]);
   },
   parent: null,
   IconComponent: KeyIcon.KeyIcon,
   screen: {
-    route: Constants.UserSettingsSections.AUTHORIZED_APPS,
+    route: UserSettingsSections.AUTHORIZED_APPS,
     getComponent() {
       return require("UserSettingsAuthedApps").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AuthorizedAppsSetting.tsx");
 
 export default route;

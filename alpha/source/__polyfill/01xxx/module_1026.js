@@ -1,239 +1,152 @@
 // Module ID: 1026
 // Function ID: 1027
-// Dependencies: [17, 987, 682]
-// Exports: adjustTransactionDuration, cancelInBackground, ignoreEmptyBackNavigation, ignoreEmptyRouteChangeTransactions, onThisSpanEnd, onlySampleIfChildSpans
+// Dependencies: [1025, 900, 1018, 693]
+// Exports: handleAsyncHandlerResult
 
 // Module 1026
-import _mod17 from "module_17" /* 17 */;
-import _mod682 from "module_682" /* 682 */;
+import _mod1025 from "module_1025" /* 1025 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-const AppState = _mod17.AppState;
-
-export const onThisSpanEnd = function onThisSpanEnd(on, arg1, arg2) {
-  closure_0 = arg1;
-  closure_1 = arg2;
-  on.on("spanEnd", (arg0) => {
-    if (closure_0 === arg0) {
-      closure_1(arg0);
-    }
-  });
+let tmp2;
+const _mod693 = tmp2(693);
+const f82722 = (error) => {
+  const tmp = item10034;
+  const tmp2 = item10008;
+  if (item10034(item10008[2]).DEBUG_BUILD) {
+    const debug = tmp(tmp2[3]).debug;
+    const _HermesInternal = HermesInternal;
+    debug.warn("Error resolving async handler '" + closure_1 + "' for route", closure_0, error);
+  }
 };
-export const adjustTransactionDuration = (on, activeSpan, arg2) => {
-  _require = activeSpan;
+function createAsyncHandlerProxy(arg0, item10034, item10008, processResolvedRoutes) {
+  _require = item10034;
+  dependencyMap = item10008;
+  let closure_2 = processResolvedRoutes;
+  let obj = {
+    apply(apply, arg1, arg2) {
+      let span;
+      function captureCurrentLocation() {
+        let search;
+        const obj = item10034(item10008[0]);
+        const navigationContext = obj.getNavigationContext();
+        let targetPath;
+        if (navigationContext != null) {
+          targetPath = navigationContext.targetPath;
+        }
+        if (targetPath) {
+          return { pathname: navigationContext.targetPath, search: "", hash: "", state: null, key: "default" };
+        } else {
+          if (undefined !== item10034(item10008[1]).WINDOW) {
+            try {
+              const _location = tmp(tmp2[1]).WINDOW.location;
+              if (_location) {
+                const obj5 = { pathname: null, search, hash: str, state: null, key: "default" };
+                ({ pathname: obj2.pathname, search } = _location);
+                if (!search) {
+                  search = "";
+                }
+                return obj5;
+              }
+            } catch (err) {
+              if (item10034(item10008[2]).DEBUG_BUILD) {
+                const debug = tmp(tmp2[3]).debug;
+                debug.warn("[React Router] Could not access window.location");
+              }
+            }
+          }
+          return null;
+        }
+      }
+      let tmp = captureCurrentLocation();
+      let tmp2 = require;
+      let obj = _mod1025;
+      let navigationContext = obj.getNavigationContext();
+      if (navigationContext) {
+        span = navigationContext.span;
+      } else {
+        const tmp2Result = _mod1025;
+        span = tmp2Result.getActiveRootSpan();
+      }
+      const applyResult = apply.apply(arg1, arg2);
+      let closure_3 = tmp;
+      const tmp2Result2 = _mod693;
+      const tmp5 = item10034;
+      const tmp6 = closure_2;
+      if (tmp2Result2.isThenable(applyResult)) {
+        const nextPromise = applyResult.then((result) => {
+          if (Array.isArray(result)) {
+            closure_2(result, closure_0, closure_3, span);
+          }
+        });
+        nextPromise.catch(f82722);
+      } else {
+        const _Array = Array;
+        if (Array.isArray(applyResult)) {
+          tmp6(applyResult, tmp5, tmp, span);
+        }
+      }
+      return applyResult;
+    }
+  };
+  const proxy = new Proxy(arg0, obj);
+  const obj2 = require("module_693");
+  const result = obj2.addNonEnumerableProperty(proxy, "__sentry_proxied__", true);
+  return proxy;
+}
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+function checkRouteForAsyncHandler(item10034, processResolvedRoutes) {
+  if (item10034.handle) {
+    if (typeof item10034.handle === "object") {
+      const _Object = Object;
+      const keys = Object.keys(item10034.handle);
+      for (const item10008 of keys) {
+        let tmp2 = item10008;
+        let tmp3 = item10034.handle[item10008];
+        let tmp4 = tmp3;
+        let __sentry_proxied__ = typeof tmp3 !== "function";
+        if (!__sentry_proxied__) {
+          __sentry_proxied__ = tmp4.__sentry_proxied__;
+        }
+        if (!__sentry_proxied__) {
+          item10034.handle[tmp2] = createAsyncHandlerProxy(tmp4, item10034, item10008, processResolvedRoutes);
+        }
+        continue;
+      }
+    }
+  }
+  if (Array.isArray(item10034.children)) {
+    const children = item10034.children;
+    for (const item10034 of children) {
+      let tmp14 = checkRouteForAsyncHandler(item10034, processResolvedRoutes);
+      continue;
+    }
+  }
+}
+
+export { checkRouteForAsyncHandler };
+export { createAsyncHandlerProxy };
+export const handleAsyncHandlerResult = function handleAsyncHandlerResult(promise, arg1, arg2, fn, arg4, arg5) {
+  let closure_0;
+  let closure_1;
+  _require = arg1;
   dependencyMap = arg2;
-  if (obj.isRootSpan(activeSpan)) {
-    on.on("spanEnd", (arg0) => {
-      if (arg0 === closure_0) {
-        let timestamp = _mod682.spanToJSON(obj).timestamp;
-        const tmp6 = require;
-        const start_timestamp = _mod682.spanToJSON(obj).start_timestamp;
-        if (timestamp) {
-          if (start_timestamp) {
-            const diff = timestamp - start_timestamp;
-            if (timestamp) {
-              let tmp3 = diff > closure_1;
-              if (!tmp3) {
-                tmp3 = diff < 0;
-              }
-              timestamp = tmp3;
-            }
-            if (timestamp) {
-              const obj2 = { code: tmp6(682).SPAN_STATUS_ERROR, message: "deadline_exceeded" };
-              obj.setStatus(obj2);
-              const attr = obj.setAttribute("maxTransactionDurationExceeded", "true");
-            }
-          }
-        }
+  let closure_2 = fn;
+  let closure_3 = arg4;
+  let closure_4 = arg5;
+  const obj = require("module_693");
+  if (obj.isThenable(promise)) {
+    const nextPromise = promise.then((result) => {
+      if (Array.isArray(result)) {
+        closure_2(result, closure_0, closure_3, span);
       }
     });
+    nextPromise.catch(f82722);
   } else {
-    const debug = require("module_682").debug;
-    debug.warn("Not sampling empty back spans only works for Sentry Transactions (Root Spans).");
-  }
-};
-export const ignoreEmptyBackNavigation = (on, c4) => {
-  const f73479 = (arg0) => {
-    const data = c4(f73479[2]).spanToJSON(arg0).data;
-    let prop;
-    if (null !== data) {
-      if (undefined !== data) {
-        prop = data["route.has_been_seen"];
-      }
+    const _Array = Array;
+    if (Array.isArray(promise)) {
+      fn(promise, arg1, arg4, arg5);
     }
-    return true === prop;
-  };
-  const f73480 = () => {
-    const debug = c4(f73479[2]).debug;
-    debug.log("Not sampling transaction as route has been seen before. Pass ignoreEmptyBackNavigationTransactions = false to disable this feature.");
-  };
-  if (on) {
-    if (c4) {
-      if (tmpResult.isRootSpan(c4)) {
-        if (tmpResult2.isSentrySpan(c4)) {
-          on.on("spanEnd", (arg0) => {
-            if (arg0 === closure_0) {
-              if (dependencyMap(tmp)) {
-                closure_0 = tmp;
-                const spanDescendants = _mod682.getSpanDescendants(tmp);
-                if (spanDescendants.filter((spanContext) => {
-                  let tmp = spanContext.spanContext().spanId !== closure_0.spanContext().spanId;
-                  if (tmp) {
-                    tmp = "ui.load.initial_display" !== closure_0(682).spanToJSON(spanContext).op;
-                    const obj = closure_0(682);
-                  }
-                  if (tmp) {
-                    tmp = "navigation.processing" !== closure_0(682).spanToJSON(spanContext).op;
-                    const obj2 = closure_0(682);
-                  }
-                  return tmp;
-                }).length <= 0) {
-                  closure_2(tmp);
-                  tmp._sampled = false;
-                }
-              }
-            }
-          });
-        }
-        tmpResult2 = tmp(tmp2[1]);
-      }
-      const debug3 = tmp(tmp2[2]).debug;
-      debug3.warn("Not sampling empty navigation spans only works for Sentry Transactions (Root Spans).");
-      tmpResult = tmp(tmp2[1]);
-    } else {
-      const debug2 = tmp(tmp2[2]).debug;
-      debug2.warn("Could not hook on spanEnd event because span is not defined.");
-    }
-  } else {
-    let debug = tmp(tmp2[2]).debug;
-    debug.warn("Could not hook on spanEnd event because client is not defined.");
-  }
-};
-export const ignoreEmptyRouteChangeTransactions = (on, c4, arg2, arg3) => {
-  closure_1 = arg2;
-  closure_2 = arg3;
-  closure_129_0 = c4;
-  closure_129_1 = (arg0) => {
-    const spanToJSONResult = _mod682.spanToJSON(arg0);
-    let tmp2 = spanToJSONResult.description === closure_1;
-    if (tmp2) {
-      const data = spanToJSONResult.data;
-      let prop;
-      if (null !== data) {
-        if (undefined !== data) {
-          prop = data["route.name"];
-        }
-      }
-      tmp2 = !prop;
-    }
-    if (tmp2) {
-      tmp2 = closure_2();
-    }
-    return tmp2;
-  };
-  closure_129_2 = (arg0) => {
-    const debug = _mod682.debug;
-    debug.log("Discarding empty \"" + closure_1 + "\" transaction that never received route information.");
-    if (null != on) {
-      on.recordDroppedEvent("sample_rate", "transaction");
-    }
-  };
-  if (on) {
-    if (c4) {
-      if (tmpResult.isRootSpan(c4)) {
-        if (tmpResult2.isSentrySpan(c4)) {
-          on.on("spanEnd", (arg0) => {
-            if (arg0 === closure_0) {
-              if (dependencyMap(tmp)) {
-                closure_0 = tmp;
-                const spanDescendants = _mod682.getSpanDescendants(tmp);
-                if (spanDescendants.filter((spanContext) => {
-                  let tmp = spanContext.spanContext().spanId !== closure_0.spanContext().spanId;
-                  if (tmp) {
-                    tmp = "ui.load.initial_display" !== closure_0(682).spanToJSON(spanContext).op;
-                    const obj = closure_0(682);
-                  }
-                  if (tmp) {
-                    tmp = "navigation.processing" !== closure_0(682).spanToJSON(spanContext).op;
-                    const obj2 = closure_0(682);
-                  }
-                  return tmp;
-                }).length <= 0) {
-                  closure_2(tmp);
-                  tmp._sampled = false;
-                }
-              }
-            }
-          });
-        }
-        tmpResult2 = tmp(tmp2[1]);
-      }
-      const debug3 = tmp(tmp2[2]).debug;
-      debug3.warn("Not sampling empty navigation spans only works for Sentry Transactions (Root Spans).");
-      tmpResult = tmp(tmp2[1]);
-    } else {
-      const debug2 = tmp(tmp2[2]).debug;
-      debug2.warn("Could not hook on spanEnd event because span is not defined.");
-    }
-  } else {
-    let debug = tmp(tmp2[2]).debug;
-    debug.warn("Could not hook on spanEnd event because client is not defined.");
-  }
-};
-export const onlySampleIfChildSpans = (on, c4) => {
-  _require = c4;
-  if (obj.isRootSpan(c4)) {
-    if (tmpResult.isSentrySpan(c4)) {
-      on.on("spanEnd", (arg0) => {
-        if (arg0 === closure_0) {
-          if (obj2.getSpanDescendants(tmp).length <= 1) {
-            const debug = tmp4(682).debug;
-            const _HermesInternal = HermesInternal;
-            debug.log("Not sampling as " + tmp4(682).spanToJSON(tmp).op + " transaction has no child spans.");
-            tmp._sampled = false;
-            const tmp4Result = tmp4(682);
-          }
-          obj2 = _mod682;
-        }
-      });
-    }
-  }
-  let debug = tmp(682).debug;
-  debug.warn("Not sampling childless spans only works for Sentry Transactions (Root Spans).");
-};
-export const cancelInBackground = (on, arg1) => {
-  closure_0 = arg1;
-  const listener = AppState.addEventListener("change", (event) => {
-    if ("background" === event) {
-      const debug = _mod682.debug;
-      const _HermesInternal = HermesInternal;
-      debug.log("Setting " + _mod682.spanToJSON(closure_0).op + " transaction to cancelled because the app is in the background.");
-      const obj2 = { code: _mod682.SPAN_STATUS_ERROR, message: "cancelled" };
-      closure_0.setStatus(obj2);
-      closure_0.end();
-    }
-  });
-  if (listener) {
-    on.on("spanEnd", (arg0) => {
-      if (arg0 === closure_0) {
-        const debug = _mod682.debug;
-        const _HermesInternal = HermesInternal;
-        debug.log("Removing AppState listener for " + _mod682.spanToJSON(tmp).op + " transaction.");
-        let remove;
-        if (null != listener) {
-          remove = tmp9.remove;
-        }
-        if (!tmp3) {
-          const call = remove.call;
-          if (typeof call === "unknown") {
-            remove();
-          } else {
-            call(tmp9);
-          }
-        }
-        tmp3 = null === remove || undefined === remove;
-      }
-    });
   }
 };

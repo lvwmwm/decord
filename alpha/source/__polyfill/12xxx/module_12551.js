@@ -1,24 +1,32 @@
 // Module ID: 12551
 // Function ID: 12552
-// Dependencies: [12526, 12546]
-// Exports: getDefaultCurrentScope, getDefaultIsolationScope
+// Dependencies: [4710, 12552, 12553, 12554, 12555]
 
 // Module 12551
-import _mod12526 from "module_12526" /* 12526 */;
-import ScopeClass from "ScopeClass" /* 12546 */;
+import MemoryRouter from "MemoryRouter" /* 4710 */;
+import _modDef12552 from "module_12552" /* 12552 */;
+import _modDef12553 from "module_12553" /* 12553 */;
+import _modDef12554 from "module_12554" /* 12554 */;
+import NativeRouterDefault from "NativeRouter" /* 12555 */;
 
-require = arg1;
-const dependencyMap = arg6;
+const MemoryRouter_export = MemoryRouter.MemoryRouter;
 
-export const getDefaultCurrentScope = function getDefaultCurrentScope() {
-  return _mod12526.getGlobalSingleton("defaultCurrentScope", () => {
-    const scope = new ScopeClass.Scope();
-    return scope;
-  });
-};
-export const getDefaultIsolationScope = function getDefaultIsolationScope() {
-  return _mod12526.getGlobalSingleton("defaultIsolationScope", () => {
-    const scope = new ScopeClass.Scope();
-    return scope;
-  });
-};
+export { MemoryRouter_export as MemoryRouter };
+export const Prompt = MemoryRouter.Prompt;
+export const Redirect = MemoryRouter.Redirect;
+export const Route = MemoryRouter.Route;
+export const Router = MemoryRouter.Router;
+export const StaticRouter = MemoryRouter.StaticRouter;
+export const Switch = MemoryRouter.Switch;
+export const generatePath = MemoryRouter.generatePath;
+export const matchPath = MemoryRouter.matchPath;
+export const withRouter = MemoryRouter.withRouter;
+export const useHistory = MemoryRouter.useHistory;
+export const useLocation = MemoryRouter.useLocation;
+export const useParams = MemoryRouter.useParams;
+export const useRouteMatch = MemoryRouter.useRouteMatch;
+export const BackButton = _modDef12552;
+export const AndroidBackButton = _modDef12552;
+export const DeepLinking = _modDef12553;
+export const Link = _modDef12554;
+export const NativeRouter = NativeRouterDefault;

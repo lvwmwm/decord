@@ -1,33 +1,279 @@
-// Module ID: 13317
-// Function ID: 13318
+// Module ID: 13376
+// Function ID: 13377
 // Name: UserSettingsGiftingBadgeProgress
-// Dependencies: [32, 19, 17, 7819, 21, 4845, 576, 10401, 6769, 6789, 504, 7811, 4841, 1115, 2582, 10407, 5465, 10695, 10317, 13318, 10815, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 7863, 21, 4890, 587, 558, 576, 10475, 6657, 6681, 7855, 504, 4886, 1126, 2589, 10481, 10766, 5594, 10392, 13377, 10844, 2]
 
-// Module 13317 (UserSettingsGiftingBadgeProgress)
-import nativeDefault from "native" /* 576 */;
-import _modDef2582 from "module_2582" /* 2582 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6769 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6789 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10317 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10401 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10407 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7819 */;
+// Module 13376 (UserSettingsGiftingBadgeProgress)
+import nativeDefault from "native" /* 587 */;
+import _modDef2589 from "module_2589" /* 2589 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6657 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
+import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 7863 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10392 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10475 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10481 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-function GiftingBadgeIntro(analyticsLocation) {
+const require = globalThis.__r;
+const BadgeDirectoryStore = BadgeDirectoryStore2;
+let analyticsLocation, dependencyMap, importDefault, key, singleRequirementProgress;
+
+let c10;
+let c9;
+let hasOwnProperty;
+let metroRequire;
+let unpackModuleId;
+({ Pressable: hasOwnProperty, View: metroRequire } = react_native);
+let closure_8 = BadgeDirectoryStore2.getSingleRequirementThreshold;
+({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = Fragment);
+const UserSettingsGiftingBadgeProgress = "UserSettingsGiftingBadgeProgress";
+let closure_13 = createStyles.createStyles(() => {
+  const obj = { wrapper: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 }, progressContainer: { gap: nativeDefault.space.PX_8 }, progressRow: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 }, progressTitleText: { flex: 1 }, progressBarContainer: { paddingHorizontal: nativeDefault.space.PX_8 }, progressBarTrack: { height: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" }, progressBarFill: { height: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.unsafe_rawColors.BRAND_500 }, progressLabels: { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", minHeight: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_4 }, divider: { height: 1, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL }, dropdownRow: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, badgesRow: { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingVertical: nativeDefault.space.PX_4 }, badgeItem: { width: "33.33%", alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 }, badgeItemActive: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED }, badgeCopy: { alignItems: "center", gap: 2 }, footerText: { textAlign: "center", marginBottom: nativeDefault.space.PX_16 }, introContent: { paddingHorizontal: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_4 }, introGrid: { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingVertical: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_16 }, introGridItem: { width: "33.33%", alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 } };
+  ({ backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 });
+  ({ gap: nativeDefault.space.PX_8 });
+  ({ flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 });
+  ({ paddingHorizontal: nativeDefault.space.PX_8 });
+  ({ height: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" });
+  ({ height: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.unsafe_rawColors.BRAND_500 });
+  ({ flexDirection: "row", justifyContent: "flex-end", alignItems: "center", minHeight: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_4 });
+  ({ height: 1, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL });
+  ({ flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingVertical: nativeDefault.space.PX_4 });
+  ({ width: "33.33%", alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 });
+  ({ backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED });
+  ({ textAlign: "center", marginBottom: nativeDefault.space.PX_16 });
+  ({ paddingHorizontal: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_4 });
+  ({ flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingVertical: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_16 });
+  ({ width: "33.33%", alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 });
+  return obj;
+});
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocation) => {
+  let intl;
+  let introGridItem;
+  let isGiftingBadgeComplexArtEnabled;
+  let items1;
+  let tmp8;
+  let tmp9;
+  const tmp = analyticsLocation;
+  let obj = analyticsLocation(isGiftingBadgeComplexArtEnabled[8]);
+  const cResult = obj.c(27);
+  analyticsLocation = analyticsLocation.analyticsLocation;
+  const tmp4 = closure_13();
+  importDefault = tmp4;
+  let obj2 = analyticsLocation(isGiftingBadgeComplexArtEnabled[9]);
+  isGiftingBadgeComplexArtEnabled = obj2.useIsGiftingBadgeComplexArtEnabled(UserSettingsGiftingBadgeProgress);
+  let tmp6 = importDefault;
+  let tmp7 = require("useAnalyticsLocations");
+  const analyticsLocations = tmp7(require("AnalyticsLocation").USER_SETTINGS_GIFT_INVENTORY).analyticsLocations;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [BadgeDirectoryStore];
+    const fn = function o() {
+      badgeById = badgeById.getBadgeById(analyticsLocation(isGiftingBadgeComplexArtEnabled[12]).BadgeId.GIFTING);
+      let tiers;
+      if (badgeById != null) {
+        tiers = badgeById.tiers;
+      }
+      return tiers;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp8 = items;
+    tmp9 = fn;
+  } else {
+    [tmp8, tmp9] = cResult;
+  }
+  let tmpResult = tmp(tmp2[13]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp8, tmp9);
+  if (null == stateFromStores) {
+    return null;
+  } else {
+    let tmp11;
+    let tmp14;
+    let tmp19;
+    const _Symbol2 = Symbol;
+    const wrapper = tmp4.wrapper;
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+      let obj3 = { variant: "text-xs/normal", color: "text-muted", children: intl.string(tmp6(tmp2[16])["4Yp0mI"]) };
+      let Text = tmp(tmp2[14]).Text;
+      intl = tmp(tmp2[15]).intl;
+      const tmp13 = closure_9(Text, obj3);
+      cResult[2] = tmp13;
+      tmp11 = tmp13;
+    } else {
+      tmp11 = cResult[2];
+    }
+    if (cResult[3] !== tmp4.introContent) {
+      let obj4 = { style: tmp4.introContent, children: tmp11 };
+      const tmp17 = closure_9(closure_6, obj4);
+      cResult[3] = tmp4.introContent;
+      cResult[4] = tmp17;
+      tmp14 = tmp17;
+    } else {
+      tmp14 = cResult[4];
+    }
+    if (cResult[5] === isGiftingBadgeComplexArtEnabled) {
+      if (cResult[6] === tmp4.badgeCopy) {
+        if (cResult[7] === tmp4.introGridItem) {
+          if (cResult[8] === stateFromStores) {
+            tmp19 = cResult[9];
+          }
+          if (cResult[14] === tmp4.introGrid) {
+            let tmp22;
+            let tmp27;
+            let tmp26;
+            if (cResult[15] === tmp19) {
+              tmp22 = cResult[16];
+            }
+            const _Symbol = Symbol;
+            if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
+              let obj5 = { size: "sm", color: tmp6(tmp2[6]).unsafe_rawColors.WHITE };
+              const GiftIcon = tmp(tmp2[18]).GiftIcon;
+              const tmp29 = closure_9(GiftIcon, obj5);
+              const intl2 = tmp(tmp2[15]).intl;
+              const stringResult = intl2.string(tmp6(isGiftingBadgeComplexArtEnabled[16]).DZnomS);
+              cResult[17] = stringResult;
+              cResult[18] = tmp29;
+              tmp27 = tmp29;
+              tmp26 = stringResult;
+            } else {
+              tmp26 = cResult[17];
+              tmp27 = cResult[18];
+            }
+            if (cResult[19] === analyticsLocation) {
+              let tmp31;
+              if (cResult[20] === analyticsLocations) {
+                tmp31 = cResult[21];
+              }
+              if (cResult[22] === tmp4.wrapper) {
+                if (cResult[23] === tmp31) {
+                  if (cResult[24] === tmp14) {
+                    let tmp34;
+                    if (cResult[25] === tmp22) {
+                      tmp34 = cResult[26];
+                    }
+                    return tmp34;
+                  }
+                }
+              }
+              let obj6 = { style: wrapper, children: items1 };
+              items1 = [tmp14, tmp22, tmp31];
+              const tmp37 = closure_10(closure_6, obj6);
+              cResult[22] = tmp4.wrapper;
+              cResult[23] = tmp31;
+              cResult[24] = tmp14;
+              cResult[25] = tmp22;
+              cResult[26] = tmp37;
+              tmp34 = tmp37;
+            }
+            const obj7 = {
+              variant: "primary",
+              icon: tmp27,
+              text: tmp26,
+              onPress() {
+                          const obj = utils_openGiftModal;
+                          const obj2 = { analyticsLocation, analyticsLocations };
+                          obj.openGiftModal(obj2);
+                        },
+              grow: true
+            };
+            const tmp33 = closure_9(tmp(isGiftingBadgeComplexArtEnabled[19]).Button, obj7);
+            cResult[19] = analyticsLocation;
+            cResult[20] = analyticsLocations;
+            cResult[21] = tmp33;
+            tmp31 = tmp33;
+          }
+          const obj8 = { style: tmp18, children: tmp19 };
+          const tmp25 = closure_9(closure_6, obj8);
+          cResult[14] = tmp4.introGrid;
+          cResult[15] = tmp19;
+          cResult[16] = tmp25;
+          tmp22 = tmp25;
+        }
+      }
+    }
+    if (cResult[10] === isGiftingBadgeComplexArtEnabled) {
+      if (cResult[11] === tmp4.badgeCopy) {
+        let tmp20;
+        if (cResult[12] === tmp4.introGridItem) {
+          tmp20 = cResult[13];
+        }
+        const mapped = stateFromStores.map(tmp20);
+        cResult[5] = isGiftingBadgeComplexArtEnabled;
+        cResult[6] = tmp4.badgeCopy;
+        cResult[7] = tmp4.introGridItem;
+        cResult[8] = stateFromStores;
+        cResult[9] = mapped;
+        tmp19 = mapped;
+      }
+    }
+    const fn2 = function w(name) {
+      let format;
+      let items;
+      let items1;
+      let obj6;
+      let qvx9E4;
+      let tmpResult;
+      const obj = GiftingBadgesUtils;
+      const giftingBadgeTierIconUrl = obj.getGiftingBadgeTierIconUrl(name, isGiftingBadgeComplexArtEnabled);
+      let tmp7 = null != giftingBadgeTierIconUrl;
+      const obj2 = { style: introGridItem.introGridItem, children: items };
+      const tmp6 = introGridItem;
+      if (tmp7) {
+        const obj3 = { icon: giftingBadgeTierIconUrl, size: 44 };
+        tmp7 = React4(GiftingBadgeIconDefault, obj3);
+      }
+      items = [tmp7, ];
+      const obj4 = { style: tmp6.badgeCopy, accessible: true, accessibilityLabel: tmpResult.getGiftingBadgeAccessibilityLabel(name), children: items1 };
+      let str = name.name;
+      tmpResult = GiftingBadgesUtils;
+      const Text = tmp(4886).Text;
+      if (str == null) {
+        str = "";
+      }
+      items1 = [React4(Text, { variant: "text-sm/semibold", color: "text-subtle", children: str }), ];
+      const obj5 = { variant: "text-xs/normal", color: "text-muted", children: format(qvx9E4, obj6) };
+      const Text2 = tmp(4886).Text;
+      const intl = tmp(1126).intl;
+      format = intl.format;
+      obj6 = { count: closure_8(name) };
+      qvx9E4 = _modDef2589.qvx9E4;
+      items1[1] = React4(Text2, obj5);
+      items[1] = authStore(metroRequire, obj4);
+      return authStore(metroRequire, obj2, name.key);
+    };
+    cResult[10] = isGiftingBadgeComplexArtEnabled;
+    cResult[11] = tmp4.badgeCopy;
+    cResult[12] = tmp4.introGridItem;
+    cResult[13] = fn2;
+    tmp20 = fn2;
+  }
+}) : ((analyticsLocation) => {
+  let GiftIcon;
+  let Text;
+  let closure_2;
+  let intl;
+  let intl2;
+  let introGridItem;
+  let items1;
+  let obj5;
+  let obj8;
   analyticsLocation = analyticsLocation.analyticsLocation;
   const tmp = closure_13();
   importDefault = tmp;
-  dependencyMap = analyticsLocation(10401).useIsGiftingBadgeComplexArtEnabled(UserSettingsGiftingBadgeProgress);
-  let obj = analyticsLocation(10401);
-  const analyticsLocations = useAnalyticsLocationsDefault(AnalyticsLocationDefault.USER_SETTINGS_GIFT_INVENTORY).analyticsLocations;
+  let obj = analyticsLocation(10475);
+  dependencyMap = obj.useIsGiftingBadgeComplexArtEnabled(UserSettingsGiftingBadgeProgress);
+  const tmp5 = useAnalyticsLocationsDefault;
+  const analyticsLocations = tmp5(AnalyticsLocationDefault.USER_SETTINGS_GIFT_INVENTORY).analyticsLocations;
+  let obj2 = analyticsLocation(504);
   let items = [BadgeDirectoryStore];
-  const stateFromStores = analyticsLocation(504).useStateFromStores(items, () => {
-    badgeById = badgeById.getBadgeById(analyticsLocation(closure_2[11]).BadgeId.GIFTING);
+  const stateFromStores = obj2.useStateFromStores(items, () => {
+    badgeById = badgeById.getBadgeById(analyticsLocation(closure_2[12]).BadgeId.GIFTING);
     let tiers;
     if (badgeById != null) {
       tiers = badgeById.tiers;
@@ -36,115 +282,526 @@ function GiftingBadgeIntro(analyticsLocation) {
   });
   let tmp6 = null;
   if (null != stateFromStores) {
-    let obj3 = { style: tmp.wrapper, children: null };
-    let obj4 = { style: tmp.introContent, children: null };
-    let obj5 = { variant: "text-xs/normal", color: "text-muted", children: null };
-    let intl = tmp2(1115).intl;
-    obj5.children = intl.string(tmp4(2582)["4Yp0mI"]);
-    obj4.children = closure_9(tmp2(4841).Text, obj5);
-    let items1 = [closure_9(closure_6, obj4), , ];
-    const obj6 = {
+    let tmp7 = closure_10;
+    let obj3 = { style: tmp.wrapper, children: items1 };
+    let obj4 = { style: tmp.introContent, children: closure_9(Text, obj5) };
+    obj5 = { variant: "text-xs/normal", color: "text-muted", children: intl.string(tmp4(2589)["4Yp0mI"]) };
+    Text = tmp2(4886).Text;
+    intl = tmp2(1126).intl;
+    items1 = [closure_9(closure_6, obj4), , ];
+    let obj6 = {
       style: tmp.introGrid,
       children: stateFromStores.map((name) => {
-          const giftingBadgeTierIconUrl = GiftingBadgesUtils.getGiftingBadgeTierIconUrl(name, closure_2);
-          const obj2 = { style: introGridItem.introGridItem, children: null };
+          let format;
+          let items;
+          let items1;
+          let obj6;
+          let qvx9E4;
+          let tmpResult;
+          const obj = GiftingBadgesUtils;
+          const giftingBadgeTierIconUrl = obj.getGiftingBadgeTierIconUrl(name, closure_2);
           let tmp7 = null != giftingBadgeTierIconUrl;
+          const obj2 = { style: introGridItem.introGridItem, children: items };
+          const tmp6 = introGridItem;
           if (tmp7) {
             const obj3 = { icon: giftingBadgeTierIconUrl, size: 44 };
-            tmp7 = React7(GiftingBadgeIconDefault, obj3);
+            tmp7 = React4(GiftingBadgeIconDefault, obj3);
           }
-          const items = [tmp7, ];
-          const obj4 = { style: introGridItem.badgeCopy, accessible: true, accessibilityLabel: null, children: null };
-          obj4.accessibilityLabel = GiftingBadgesUtils.getGiftingBadgeAccessibilityLabel(name);
+          items = [tmp7, ];
+          const obj4 = { style: tmp6.badgeCopy, accessible: true, accessibilityLabel: tmpResult.getGiftingBadgeAccessibilityLabel(name), children: items1 };
           let str = name.name;
+          tmpResult = GiftingBadgesUtils;
+          const Text = tmp(4886).Text;
           if (str == null) {
             str = "";
           }
-          const items1 = [React7(Text_Text.Text, { variant: "text-sm/semibold", color: "text-subtle", children: str }), ];
-          const obj5 = { variant: "text-xs/normal", color: "text-muted", children: null };
-          const intl = tmp(1115).intl;
-          const tmpResult = GiftingBadgesUtils;
-          obj5.children = intl.format(_modDef2582.qvx9E4, { count: closure_8(name) });
-          items1[1] = React7(Text_Text.Text, obj5);
-          obj4.children = items1;
-          items[1] = closure_2_10(timestampProducer, obj4);
-          obj2.children = items;
-          return closure_2_10(timestampProducer, obj2, name.key);
+          items1 = [React4(Text, { variant: "text-sm/semibold", color: "text-subtle", children: str }), ];
+          const obj5 = { variant: "text-xs/normal", color: "text-muted", children: format(qvx9E4, obj6) };
+          const Text2 = tmp(4886).Text;
+          const intl = tmp(1126).intl;
+          format = intl.format;
+          obj6 = { count: closure_8(name) };
+          qvx9E4 = _modDef2589.qvx9E4;
+          items1[1] = React4(Text2, obj5);
+          items[1] = authStore(metroRequire, obj4);
+          return authStore(metroRequire, obj2, name.key);
         })
     };
     items1[1] = closure_9(closure_6, obj6);
-    const obj7 = { variant: "primary", icon: null, text: null, onPress: null, grow: true };
-    const obj8 = { size: "sm", color: tmp4(576).unsafe_rawColors.WHITE };
-    obj7.icon = closure_9(tmp2(10695).GiftIcon, obj8);
-    const intl2 = tmp2(1115).intl;
-    obj7.text = intl2.string(tmp4(2582).DZnomS);
-    obj7.onPress = function onPress() {
-      utils_openGiftModal.openGiftModal({ analyticsLocation, analyticsLocations });
+    const obj7 = {
+      variant: "primary",
+      icon: closure_9(GiftIcon, obj8),
+      text: intl2.string(_modDef2589.DZnomS),
+      onPress() {
+          const obj = utils_openGiftModal;
+          const obj2 = { analyticsLocation, analyticsLocations };
+          obj.openGiftModal(obj2);
+        },
+      grow: true
     };
-    items1[2] = closure_9(tmp2(5465).Button, obj7);
-    obj3.children = items1;
+    const Button = tmp2(5594).Button;
+    obj8 = { size: "sm", color: nativeDefault.unsafe_rawColors.WHITE };
+    GiftIcon = tmp2(10766).GiftIcon;
+    intl2 = tmp2(1126).intl;
+    items1[2] = closure_9(Button, obj7);
     tmp6 = closure_10(closure_6, obj3);
   }
   return tmp6;
-}
-get_ActivityIndicator = fn(17);
-({ Pressable: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-let closure_8 = fn(7819).getSingleRequirementThreshold;
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
-const UserSettingsGiftingBadgeProgress = "UserSettingsGiftingBadgeProgress";
-const createStyles = fn(4845);
-let closure_13 = createStyles.createStyles(() => {
-  const obj = { wrapper: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 }, progressContainer: null, progressRow: null, progressTitleText: null, progressBarContainer: null, progressBarTrack: null, progressBarFill: null, progressLabels: null, divider: null, dropdownRow: null, badgesRow: null, badgeItem: null, badgeItemActive: null, badgeCopy: null, footerText: null, introContent: null, introGrid: null, introGridItem: null };
-  const obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
-  obj.progressContainer = { gap: nativeDefault.space.PX_8 };
-  const obj3 = { gap: nativeDefault.space.PX_8 };
-  obj.progressRow = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
-  obj.progressTitleText = { flex: 1 };
-  const obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
-  obj.progressBarContainer = { paddingHorizontal: nativeDefault.space.PX_8 };
-  const obj5 = { paddingHorizontal: nativeDefault.space.PX_8 };
-  obj.progressBarTrack = { height: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
-  const obj6 = { height: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
-  obj.progressBarFill = { height: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.unsafe_rawColors.BRAND_500 };
-  const obj7 = { height: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.unsafe_rawColors.BRAND_500 };
-  obj.progressLabels = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", minHeight: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_4 };
-  const obj8 = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", minHeight: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_4 };
-  obj.divider = { height: 1, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
-  obj.dropdownRow = { flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-  const obj9 = { height: 1, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
-  obj.badgesRow = { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingVertical: nativeDefault.space.PX_4 };
-  const obj10 = { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingVertical: nativeDefault.space.PX_4 };
-  obj.badgeItem = { width: "33.33%", alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
-  const obj11 = { width: "33.33%", alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
-  obj.badgeItemActive = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
-  obj.badgeCopy = { alignItems: "center", gap: 2 };
-  const obj12 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
-  obj.footerText = { textAlign: "center", marginBottom: nativeDefault.space.PX_16 };
-  const obj13 = { textAlign: "center", marginBottom: nativeDefault.space.PX_16 };
-  obj.introContent = { paddingHorizontal: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_4 };
-  const obj14 = { paddingHorizontal: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_4 };
-  obj.introGrid = { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingVertical: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_16 };
-  const obj15 = { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingVertical: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_16 };
-  obj.introGridItem = { width: "33.33%", alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
-  return obj;
 });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/premium/native/UserSettingsGiftingBadgeProgress.tsx");
-
-export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocation) => {
+  let analyticsLocations;
+  let badgeItem;
+  let badgeProgress;
+  let currentTier;
+  let giftsRemaining;
+  let intl2;
+  let intl3;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let nextTier;
+  let tiers;
+  let tmp10;
+  let tmp6;
+  let tmp9;
+  const tmp = analyticsLocation;
+  const tmp2 = dependencyMap;
+  let obj = analyticsLocation(576);
+  const cResult = obj.c(119);
+  analyticsLocation = analyticsLocation.analyticsLocation;
+  const tmp4 = closure_13();
+  importDefault = tmp4;
+  [tmp6, dependencyMap] = analyticsLocations(currentTier.useState(false), 2);
+  const tmp5 = analyticsLocations(currentTier.useState(false), 2);
+  let tmp8 = useAnalyticsLocationsDefault;
+  analyticsLocations = tmp8(AnalyticsLocationDefault.USER_SETTINGS_GIFT_INVENTORY).analyticsLocations;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [BadgeDirectoryStore];
+    const fn = function h() {
+      let tiers;
+      singleRequirementProgress = singleRequirementProgress.getSingleRequirementProgress(analyticsLocation(dependencyMap[12]).BadgeId.GIFTING);
+      let num;
+      if (singleRequirementProgress != null) {
+        num = singleRequirementProgress.current;
+      }
+      if (num == null) {
+        num = 0;
+      }
+      const obj2 = { badgeProgress: num, currentTier: singleRequirementProgress.getCurrentTier(analyticsLocation(dependencyMap[12]).BadgeId.GIFTING), nextTier: singleRequirementProgress.getNextTier(analyticsLocation(dependencyMap[12]).BadgeId.GIFTING), giftsRemaining: singleRequirementProgress.getRemainingToNextTier(analyticsLocation(dependencyMap[12]).BadgeId.GIFTING), tiers };
+      const badgeById = obj.getBadgeById(tmp(tmp2[12]).BadgeId.GIFTING);
+      tiers = undefined;
+      if (badgeById != null) {
+        tiers = badgeById.tiers;
+      }
+      if (tiers == null) {
+        tiers = [];
+      }
+      return obj2;
+    };
+    let num = 0;
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp9 = items;
+    tmp10 = fn;
+  } else {
+    [tmp9, tmp10] = cResult;
+  }
+  let tmpResult = tmp(504);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp9, tmp10);
+  ({ badgeProgress, currentTier } = stateFromStoresObject);
+  ({ nextTier, giftsRemaining, tiers } = stateFromStoresObject);
+  const tmpResult3 = tmp(10475);
+  const isGiftingBadgeComplexArtEnabled = tmpResult3.useIsGiftingBadgeComplexArtEnabled(UserSettingsGiftingBadgeProgress);
+  if (0 === badgeProgress) {
+    let tmp78;
+    if (cResult[2] !== analyticsLocation) {
+      let obj2 = { analyticsLocation };
+      const tmp81 = closure_9(closure_14, obj2);
+      cResult[2] = analyticsLocation;
+      cResult[3] = tmp81;
+      tmp78 = tmp81;
+    } else {
+      tmp78 = cResult[3];
+    }
+    return tmp78;
+  } else {
+    if (cResult[4] === badgeProgress) {
+      if (cResult[5] === currentTier) {
+        if (cResult[6] === giftsRemaining) {
+          if (cResult[7] === isGiftingBadgeComplexArtEnabled) {
+            if (cResult[8] === nextTier) {
+              if (cResult[9] === tmp4.progressBarContainer) {
+                if (cResult[10] === tmp4.progressBarFill) {
+                  if (cResult[11] === tmp4.progressBarTrack) {
+                    if (cResult[12] === tmp4.progressContainer) {
+                      if (cResult[13] === tmp4.progressLabels) {
+                        if (cResult[14] === tmp4.progressRow) {
+                          if (cResult[15] === tmp4.progressTitleText) {
+                            if (cResult[68] === tmp14) {
+                              if (cResult[69] === tmp21) {
+                                if (cResult[70] === tmp22) {
+                                  let tmp34;
+                                  if (cResult[71] === tmp23) {
+                                    tmp34 = cResult[72];
+                                  }
+                                  if (cResult[73] === tmp15) {
+                                    if (cResult[74] === tmp34) {
+                                      let tmp37;
+                                      if (cResult[75] === tmp24) {
+                                        tmp37 = cResult[76];
+                                      }
+                                      if (cResult[77] === tmp16) {
+                                        if (cResult[78] === tmp37) {
+                                          if (cResult[79] === tmp25) {
+                                            let tmp40;
+                                            if (cResult[80] === tmp26) {
+                                              tmp40 = cResult[81];
+                                            }
+                                            if (cResult[82] === tmp17) {
+                                              if (cResult[83] === tmp19) {
+                                                if (cResult[84] === tmp40) {
+                                                  let tmp47;
+                                                  let tmp46;
+                                                  const _Symbol = Symbol;
+                                                  if (cResult[87] === Symbol.for("react.memo_cache_sentinel")) {
+                                                    let obj3 = { size: "sm", color: nativeDefault.unsafe_rawColors.WHITE };
+                                                    const GiftIcon = tmp(10766).GiftIcon;
+                                                    const tmp49 = closure_9(GiftIcon, obj3);
+                                                    let intl = tmp(1126).intl;
+                                                    const stringResult = intl.string(_modDef2589.DZnomS);
+                                                    cResult[87] = tmp49;
+                                                    cResult[88] = stringResult;
+                                                    tmp47 = stringResult;
+                                                    tmp46 = tmp49;
+                                                  } else {
+                                                    tmp46 = cResult[87];
+                                                    tmp47 = cResult[88];
+                                                  }
+                                                  if (cResult[89] === analyticsLocation) {
+                                                    let tmp58;
+                                                    let tmp59;
+                                                    if (cResult[92] !== tmp4.divider) {
+                                                      let obj4 = { style: tmp4.divider };
+                                                      cResult[92] = tmp4.divider;
+                                                      cResult[93] = closure_9(closure_6, obj4);
+                                                      const tmp57 = closure_9(closure_6, obj4);
+                                                    }
+                                                    const _Symbol2 = Symbol;
+                                                    if (cResult[94] === Symbol.for("react.memo_cache_sentinel")) {
+                                                      class J {
+                                                        constructor() {
+                                                          return closure_2((arg0) => !arg0);
+                                                        }
+                                                      }
+                                                      cResult[94] = J;
+                                                      tmp58 = J;
+                                                    } else {
+                                                      class J {
+                                                        constructor() {
+                                                          return closure_2((arg0) => !arg0);
+                                                        }
+                                                      }
+                                                    }
+                                                    const _Symbol3 = Symbol;
+                                                    if (cResult[95] === Symbol.for("react.memo_cache_sentinel")) {
+                                                      class J {
+                                                        constructor() {
+                                                          return closure_2((arg0) => !arg0);
+                                                        }
+                                                      }
+                                                      let obj5 = { variant: "text-sm/medium", color: "text-strong", children: intl2.string(_modDef2589.WZ4cXA) };
+                                                      let Text = tmp(4886).Text;
+                                                      intl2 = tmp(1126).intl;
+                                                      const tmp60 = closure_9(Text, obj5);
+                                                      cResult[95] = tmp60;
+                                                      tmp59 = tmp60;
+                                                    } else {
+                                                      class J {
+                                                        constructor() {
+                                                          return closure_2((arg0) => !arg0);
+                                                        }
+                                                      }
+                                                    }
+                                                    if (cResult[96] !== tmp6) {
+                                                      class J {
+                                                        constructor() {
+                                                          return closure_2((arg0) => !arg0);
+                                                        }
+                                                      }
+                                                      if (tmp6) {
+                                                        class J {
+                                                          constructor() {
+                                                            return closure_2((arg0) => !arg0);
+                                                          }
+                                                        }
+                                                      } else {
+                                                        class J {
+                                                          constructor() {
+                                                            return closure_2((arg0) => !arg0);
+                                                          }
+                                                        }
+                                                      }
+                                                      let obj6 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
+                                                      cResult[96] = tmp6;
+                                                      cResult[97] = tmp62(tmp63, obj6);
+                                                      const tmp62Result = tmp62(tmp63, obj6);
+                                                    } else {
+                                                      class J {
+                                                        constructor() {
+                                                          return closure_2((arg0) => !arg0);
+                                                        }
+                                                      }
+                                                    }
+                                                    if (cResult[98] === tmp4.dropdownRow) {
+                                                      class J {
+                                                        constructor() {
+                                                          return closure_2((arg0) => !arg0);
+                                                        }
+                                                      }
+                                                      const tmp69 = cResult[101];
+                                                      if (currentTier != null) {
+                                                        class J {
+                                                          constructor() {
+                                                            return closure_2((arg0) => !arg0);
+                                                          }
+                                                        }
+                                                      }
+                                                      if (tmp69 === undefined) {
+                                                        class J {
+                                                          constructor() {
+                                                            return closure_2((arg0) => !arg0);
+                                                          }
+                                                        }
+                                                      }
+                                                      let tmp73 = tmp6;
+                                                      if (tmp73) {
+                                                        class J {
+                                                          constructor() {
+                                                            return closure_2((arg0) => !arg0);
+                                                          }
+                                                        }
+                                                        const obj7 = { children: items1 };
+                                                        const obj8 = {
+                                                          style: tmp4.badgesRow,
+                                                          children: tiers.map((key) => {
+                                                                                                                  let format;
+                                                                                                                  let items1;
+                                                                                                                  let items2;
+                                                                                                                  let obj6;
+                                                                                                                  let qvx9E4;
+                                                                                                                  let tmpResult;
+                                                                                                                  const obj = GiftingBadgesUtils;
+                                                                                                                  const giftingBadgeTierIconUrl = obj.getGiftingBadgeTierIconUrl(key, isGiftingBadgeComplexArtEnabled);
+                                                                                                                  const items = [badgeItem.badgeItem, ];
+                                                                                                                  let key1;
+                                                                                                                  key = key.key;
+                                                                                                                  if (currentTier != null) {
+                                                                                                                    key1 = currentTier.key;
+                                                                                                                  }
+                                                                                                                  const obj2 = { style: items, children: items1 };
+                                                                                                                  const tmp8 = key === key1 && badgeItem.badgeItemActive;
+                                                                                                                  items[1] = tmp8;
+                                                                                                                  let tmp9 = null != giftingBadgeTierIconUrl;
+                                                                                                                  if (tmp9) {
+                                                                                                                    const obj3 = { icon: giftingBadgeTierIconUrl, size: 36 };
+                                                                                                                    tmp9 = React4(GiftingBadgeIconDefault, obj3);
+                                                                                                                  }
+                                                                                                                  items1 = [tmp9, ];
+                                                                                                                  const obj4 = { style: badgeItem.badgeCopy, accessible: true, accessibilityLabel: tmpResult.getGiftingBadgeAccessibilityLabel(key), children: items2 };
+                                                                                                                  let str = key.name;
+                                                                                                                  tmpResult = GiftingBadgesUtils;
+                                                                                                                  const Text = tmp(4886).Text;
+                                                                                                                  if (str == null) {
+                                                                                                                    str = "";
+                                                                                                                  }
+                                                                                                                  items2 = [React4(Text, { variant: "text-sm/semibold", color: "text-strong", children: str }), ];
+                                                                                                                  const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: format(qvx9E4, obj6) };
+                                                                                                                  const Text2 = tmp(4886).Text;
+                                                                                                                  const intl = tmp(1126).intl;
+                                                                                                                  format = intl.format;
+                                                                                                                  obj6 = { count: closure_8(key) };
+                                                                                                                  qvx9E4 = _modDef2589.qvx9E4;
+                                                                                                                  items2[1] = React4(Text2, obj5);
+                                                                                                                  items1[1] = authStore(metroRequire, obj4);
+                                                                                                                  return authStore(metroRequire, obj2, key.key);
+                                                                                                                })
+                                                        };
+                                                        items1 = [closure_9(closure_6, obj8), ];
+                                                        const obj9 = { style: tmp4.footerText, variant: "text-xs/normal", color: "text-muted", children: intl3.string(_modDef2589["4Yp0mI"]) };
+                                                        let Text2 = tmp(4886).Text;
+                                                        intl3 = tmp(1126).intl;
+                                                        items1[1] = closure_9(Text2, obj9);
+                                                        tmp73 = closure_10(closure_11, obj7);
+                                                      }
+                                                      if (currentTier != null) {
+                                                        class J {
+                                                          constructor() {
+                                                            return closure_2((arg0) => !arg0);
+                                                          }
+                                                        }
+                                                      }
+                                                      cResult[101] = undefined;
+                                                      cResult[102] = tmp6;
+                                                      cResult[103] = isGiftingBadgeComplexArtEnabled;
+                                                      cResult[104] = tmp4.badgeCopy;
+                                                      cResult[105] = tmp4.badgeItem;
+                                                      cResult[106] = tmp4.badgeItemActive;
+                                                      cResult[107] = tmp4.badgesRow;
+                                                      cResult[108] = tmp4.footerText;
+                                                      cResult[109] = tiers;
+                                                      cResult[110] = tmp73;
+                                                    }
+                                                    const obj10 = { style: tmp4.dropdownRow, onPress: tmp58, children: items2 };
+                                                    items2 = [tmp59, tmp61];
+                                                    cResult[98] = tmp4.dropdownRow;
+                                                    cResult[99] = tmp61;
+                                                    cResult[100] = closure_10(isGiftingBadgeComplexArtEnabled, obj10);
+                                                    const tmp68 = closure_10(isGiftingBadgeComplexArtEnabled, obj10);
+                                                  }
+                                                  const obj11 = {
+                                                    variant: "primary",
+                                                    icon: tmp46,
+                                                    text: tmp47,
+                                                    onPress() {
+                                                                                                      const obj = utils_openGiftModal;
+                                                                                                      const obj2 = { analyticsLocation, analyticsLocations };
+                                                                                                      obj.openGiftModal(obj2);
+                                                                                                    },
+                                                    grow: true
+                                                  };
+                                                  cResult[89] = analyticsLocation;
+                                                  cResult[90] = analyticsLocations;
+                                                  cResult[91] = closure_9(tmp(5594).Button, obj11);
+                                                  const tmp53 = closure_9(tmp(5594).Button, obj11);
+                                                }
+                                              }
+                                            }
+                                            const obj12 = { style: tmp27, children: items3 };
+                                            items3 = [tmp19, tmp40];
+                                            cResult[82] = tmp17;
+                                            cResult[83] = tmp19;
+                                            cResult[84] = tmp40;
+                                            cResult[85] = tmp27;
+                                            cResult[86] = closure_10(tmp17, obj12);
+                                            const tmp45 = closure_10(tmp17, obj12);
+                                          }
+                                        }
+                                      }
+                                      const obj13 = { style: tmp25, children: items4 };
+                                      items4 = [tmp26, tmp37];
+                                      const tmp42 = closure_10(tmp16, obj13);
+                                      cResult[77] = tmp16;
+                                      cResult[78] = tmp37;
+                                      cResult[79] = tmp25;
+                                      cResult[80] = tmp26;
+                                      cResult[81] = tmp42;
+                                      tmp40 = tmp42;
+                                    }
+                                  }
+                                  const obj14 = { style: tmp24, children: tmp34 };
+                                  const tmp39 = closure_9(tmp15, obj14);
+                                  cResult[73] = tmp15;
+                                  cResult[74] = tmp34;
+                                  cResult[75] = tmp24;
+                                  cResult[76] = tmp39;
+                                  tmp37 = tmp39;
+                                }
+                              }
+                            }
+                            const obj15 = { variant: tmp21, color: tmp22, children: tmp23 };
+                            const tmp36 = closure_9(tmp14, obj15);
+                            cResult[68] = tmp14;
+                            cResult[69] = tmp21;
+                            cResult[70] = tmp22;
+                            cResult[71] = tmp23;
+                            cResult[72] = tmp36;
+                            tmp34 = tmp36;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    closure_8(currentTier);
+    if (cResult[31] !== nextTier) {
+      class J {
+        constructor() {
+          return closure_2((arg0) => !arg0);
+        }
+      }
+      cResult[31] = nextTier;
+      cResult[32] = tmp31;
+    } else {
+      class J {
+        constructor() {
+          return closure_2((arg0) => !arg0);
+        }
+      }
+    }
+    if (cResult[33] === badgeProgress) {
+      class J {
+        constructor() {
+          return closure_2((arg0) => !arg0);
+        }
+      }
+    }
+    const tmpResult4 = tmp(10475);
+    const giftingBadgeProgressPercent = tmpResult4.getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier);
+    cResult[33] = badgeProgress;
+    cResult[34] = currentTier;
+    cResult[35] = nextTier;
+    cResult[36] = giftingBadgeProgressPercent;
+  }
+}) : ((analyticsLocation) => {
+  let GiftIcon;
+  let Text;
+  let _undefined;
+  let badgeItem;
+  let badgeProgress;
+  let c2;
+  let currentTier;
+  let giftsRemaining;
+  let intl4;
+  let intl5;
+  let intl6;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let items5;
+  let items6;
+  let items7;
+  let nextTier;
+  let obj14;
+  let obj18;
+  let obj20;
+  let str2;
+  let tiers;
+  let tmp11Result;
+  let tmp3;
   analyticsLocation = analyticsLocation.analyticsLocation;
   dependencyMap = undefined;
   let analyticsLocations;
   currentTier = undefined;
   const tmp = closure_13();
   importDefault = tmp;
-  [tmp3, c2] = analyticsLocations(currentTier.useState(false), 2);
   const tmp2 = analyticsLocations(currentTier.useState(false), 2);
-  analyticsLocations = useAnalyticsLocationsDefault(AnalyticsLocationDefault.USER_SETTINGS_GIFT_INVENTORY).analyticsLocations;
+  [tmp3, c2] = tmp2;
+  const tmp6 = useAnalyticsLocationsDefault;
+  analyticsLocations = tmp6(AnalyticsLocationDefault.USER_SETTINGS_GIFT_INVENTORY).analyticsLocations;
+  let obj = analyticsLocation(504);
   let items = [BadgeDirectoryStore];
-  const stateFromStoresObject = analyticsLocation(504).useStateFromStoresObject(items, () => {
-    singleRequirementProgress = singleRequirementProgress.getSingleRequirementProgress(analyticsLocation(_undefined[11]).BadgeId.GIFTING);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    let tiers;
+    singleRequirementProgress = singleRequirementProgress.getSingleRequirementProgress(analyticsLocation(c2[12]).BadgeId.GIFTING);
     let num;
     if (singleRequirementProgress != null) {
       num = singleRequirementProgress.current;
@@ -152,48 +809,53 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     if (num == null) {
       num = 0;
     }
-    const obj2 = { badgeProgress: num, currentTier: singleRequirementProgress.getCurrentTier(analyticsLocation(_undefined[11]).BadgeId.GIFTING), nextTier: singleRequirementProgress.getNextTier(analyticsLocation(_undefined[11]).BadgeId.GIFTING), giftsRemaining: singleRequirementProgress.getRemainingToNextTier(analyticsLocation(_undefined[11]).BadgeId.GIFTING), tiers: null };
-    const badgeById = obj.getBadgeById(tmp(tmp2[11]).BadgeId.GIFTING);
-    let tiers;
+    const obj2 = { badgeProgress: num, currentTier: singleRequirementProgress.getCurrentTier(analyticsLocation(c2[12]).BadgeId.GIFTING), nextTier: singleRequirementProgress.getNextTier(analyticsLocation(c2[12]).BadgeId.GIFTING), giftsRemaining: singleRequirementProgress.getRemainingToNextTier(analyticsLocation(c2[12]).BadgeId.GIFTING), tiers };
+    const badgeById = obj.getBadgeById(tmp(tmp2[12]).BadgeId.GIFTING);
+    tiers = undefined;
     if (badgeById != null) {
       tiers = badgeById.tiers;
     }
     if (tiers == null) {
       tiers = [];
     }
-    obj2.tiers = tiers;
     return obj2;
   });
   ({ badgeProgress, currentTier } = stateFromStoresObject);
   ({ nextTier, tiers, giftsRemaining } = stateFromStoresObject);
-  let obj = analyticsLocation(504);
-  const isGiftingBadgeComplexArtEnabled = analyticsLocation(10401).useIsGiftingBadgeComplexArtEnabled(UserSettingsGiftingBadgeProgress);
+  let obj2 = analyticsLocation(10475);
+  const isGiftingBadgeComplexArtEnabled = obj2.useIsGiftingBadgeComplexArtEnabled(UserSettingsGiftingBadgeProgress);
   if (0 === badgeProgress) {
     let obj3 = { analyticsLocation };
-    return closure_9(GiftingBadgeIntro, obj3);
+    return closure_9(closure_14, obj3);
   } else {
+    let formatToPlainString2Result;
+    let ChevronSmallDownIcon;
     let tmp19 = closure_8(currentTier);
     const tmp25 = closure_8(nextTier);
-    const giftingBadgeProgressPercent = tmp7(10401).getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier);
-    const tmp7Result = tmp7(10401);
-    let giftingBadgeTierIconUrl = tmp7(10401).getGiftingBadgeTierIconUrl(currentTier, isGiftingBadgeComplexArtEnabled);
-    const tmp7Result3 = tmp7(10401);
-    const giftingBadgeTierIconUrl1 = tmp7(10401).getGiftingBadgeTierIconUrl(nextTier, isGiftingBadgeComplexArtEnabled);
+    const tmp7Result = analyticsLocation(10475);
+    const giftingBadgeProgressPercent = tmp7Result.getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier);
+    const tmp7Result3 = analyticsLocation(10475);
+    let giftingBadgeTierIconUrl = tmp7Result3.getGiftingBadgeTierIconUrl(currentTier, isGiftingBadgeComplexArtEnabled);
+    const tmp7Result4 = analyticsLocation(10475);
+    const giftingBadgeTierIconUrl1 = tmp7Result4.getGiftingBadgeTierIconUrl(nextTier, isGiftingBadgeComplexArtEnabled);
     if (null != nextTier) {
-      const intl2 = tmp7(1115).intl;
-      let obj4 = { count: giftsRemaining, nextTier: null };
-      let str2;
+      const intl2 = tmp7(1126).intl;
+      const formatToPlainString2 = intl2.formatToPlainString;
+      let obj4 = { count: giftsRemaining, nextTier: str2 };
+      str2 = undefined;
+      const XTX3OO = tmp4(2589).XTX3OO;
       if (nextTier != null) {
         str2 = nextTier.name;
       }
       if (str2 == null) {
         str2 = "";
       }
-      obj4.nextTier = str2;
-      let formatToPlainStringResult = intl2.formatToPlainString(tmp4(2582).XTX3OO, obj4);
+      formatToPlainString2Result = formatToPlainString2(XTX3OO, obj4);
     } else {
-      let intl = tmp7(1115).intl;
+      let intl = tmp7(1126).intl;
+      const formatToPlainString = intl.formatToPlainString;
       let str;
+      const LnsdbK = tmp4(2589).LnsdbK;
       if (currentTier != null) {
         str = currentTier.name;
       }
@@ -201,137 +863,147 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
         str = "";
       }
       let obj5 = { currentTier: str };
-      formatToPlainStringResult = intl.formatToPlainString(tmp4(2582).LnsdbK, obj5);
+      formatToPlainString2Result = formatToPlainString(LnsdbK, obj5);
     }
-    const obj6 = { style: tmp.wrapper, children: null };
-    const obj7 = { style: tmp.progressContainer, children: null };
-    const obj8 = { style: tmp.progressRow, children: null };
+    let obj6 = { style: tmp.wrapper, children: items5 };
     let tmp13 = null != giftingBadgeTierIconUrl;
+    const obj7 = { style: tmp.progressContainer, children: items2 };
+    const obj8 = { style: tmp.progressRow, children: items1 };
     if (tmp13) {
       const obj9 = { icon: giftingBadgeTierIconUrl, size: 36, style: { margin: 4 } };
-      tmp13 = closure_9(tmp4(10407), obj9);
+      tmp13 = closure_9(tmp4(10481), obj9);
     }
-    let items1 = [tmp13, , ];
-    const obj10 = { style: tmp.progressTitleText, variant: "text-md/medium", color: "text-strong", children: formatToPlainStringResult };
-    items1[1] = closure_9(tmp7(4841).Text, obj10);
+    items1 = [tmp13, , ];
+    const obj10 = { style: tmp.progressTitleText, variant: "text-md/medium", color: "text-strong", children: formatToPlainString2Result };
+    items1[1] = closure_9(analyticsLocation(4886).Text, obj10);
     let tmp15Result = null != giftingBadgeTierIconUrl1;
     if (tmp15Result) {
       const obj11 = { icon: giftingBadgeTierIconUrl1, size: 36, style: { margin: 4 } };
-      tmp15Result = tmp15(tmp4(10407), obj11);
+      tmp15Result = tmp15(tmp4(10481), obj11);
     }
     items1[2] = tmp15Result;
-    obj8.children = items1;
-    let items2 = [closure_10(closure_6, obj8), ];
-    const obj12 = { style: tmp.progressBarContainer, children: null };
-    const obj13 = { style: tmp.progressBarTrack, children: null };
-    const obj14 = { style: null };
-    const items3 = [tmp.progressBarFill, ];
-    const obj15 = { width: null };
+    items2 = [tmp11(tmp12, obj8), ];
+    const obj12 = { style: tmp.progressBarContainer, children: items4 };
+    const obj13 = { style: tmp.progressBarTrack, children: closure_9(closure_6, obj14) };
+    obj14 = { style: items3 };
+    items3 = [tmp.progressBarFill, ];
     const _HermesInternal = HermesInternal;
-    obj15.width = "" + giftingBadgeProgressPercent + "%";
-    items3[1] = obj15;
-    obj14.style = items3;
-    obj13.children = closure_9(closure_6, obj14);
-    const items4 = [closure_9(closure_6, obj13), ];
-    const obj16 = { style: tmp.progressLabels, children: null };
-    const intl3 = tmp7(1115).intl;
+    items3[1] = { width: "" + giftingBadgeProgressPercent + "%" };
+    const obj15 = { width: "" + giftingBadgeProgressPercent + "%" };
+    items4 = [closure_9(tmp12, obj13), ];
+    const obj16 = { style: tmp.progressLabels, children: closure_9(Text, obj18) };
+    Text = tmp7(4886).Text;
+    const intl3 = tmp7(1126).intl;
+    let format = intl3.format;
     let tmp18 = tmp19;
+    const iIpfQe = tmp4(2589).iIpfQe;
     if (null != nextTier) {
       tmp18 = tmp25;
     }
-    const obj17 = { threshold: tmp18, count: null };
+    const obj17 = { threshold: tmp18, count: tmp19 };
     if (null != nextTier) {
       tmp19 = badgeProgress;
     }
-    const obj18 = { variant: "text-xs/normal", color: "text-subtle", children: null };
-    obj17.count = tmp19;
-    obj18.children = intl3.format(tmp4(2582).iIpfQe, obj17);
-    obj16.children = closure_9(tmp7(4841).Text, obj18);
+    obj18 = { variant: "text-xs/normal", color: "text-subtle", children: format(iIpfQe, obj17) };
     items4[1] = closure_9(closure_6, obj16);
-    obj12.children = items4;
     items2[1] = closure_10(closure_6, obj12);
-    obj7.children = items2;
-    const items5 = [closure_10(closure_6, obj7), , , , ];
-    const obj19 = { variant: "primary", icon: null, text: null, onPress: null, grow: true };
-    const obj20 = { size: "sm", color: tmp4(576).unsafe_rawColors.WHITE };
-    obj19.icon = closure_9(tmp7(10695).GiftIcon, obj20);
-    const intl4 = tmp7(1115).intl;
-    obj19.text = intl4.string(tmp4(2582).DZnomS);
-    obj19.onPress = function onPress() {
-      utils_openGiftModal.openGiftModal({ analyticsLocation, analyticsLocations });
+    items5 = [tmp11(tmp12, obj7), , , , ];
+    const obj19 = {
+      variant: "primary",
+      icon: closure_9(GiftIcon, obj20),
+      text: intl4.string(_modDef2589.DZnomS),
+      onPress() {
+          const obj = utils_openGiftModal;
+          const obj2 = { analyticsLocation, analyticsLocations };
+          obj.openGiftModal(obj2);
+        },
+      grow: true
     };
-    items5[1] = closure_9(tmp7(5465).Button, obj19);
+    const Button = tmp7(5594).Button;
+    obj20 = { size: "sm", color: nativeDefault.unsafe_rawColors.WHITE };
+    GiftIcon = tmp7(10766).GiftIcon;
+    intl4 = tmp7(1126).intl;
+    items5[1] = closure_9(Button, obj19);
     const obj21 = { style: tmp.divider };
     items5[2] = closure_9(closure_6, obj21);
     const obj22 = {
       style: tmp.dropdownRow,
       onPress() {
-          return _undefined((arg0) => !arg0);
+          return c2((arg0) => !arg0);
         },
-      children: null
+      children: items6
     };
-    const obj23 = { variant: "text-sm/medium", color: "text-strong", children: null };
-    const intl5 = tmp7(1115).intl;
-    obj23.children = intl5.string(tmp4(2582).WZ4cXA);
-    const items6 = [closure_9(tmp7(4841).Text, obj23), ];
+    const obj23 = { variant: "text-sm/medium", color: "text-strong", children: intl5.string(_modDef2589.WZ4cXA) };
+    let Text2 = tmp7(4886).Text;
+    intl5 = tmp7(1126).intl;
+    items6 = [closure_9(Text2, obj23), ];
+    const tmp20 = isGiftingBadgeComplexArtEnabled;
     if (tmp11Result) {
-      let ChevronSmallDownIcon = tmp7(13318).ChevronSmallUpIcon;
+      ChevronSmallDownIcon = tmp7(13377).ChevronSmallUpIcon;
     } else {
-      ChevronSmallDownIcon = tmp7(10815).ChevronSmallDownIcon;
+      ChevronSmallDownIcon = tmp7(10844).ChevronSmallDownIcon;
     }
-    const obj24 = { color: tmp4(576).colors.INTERACTIVE_ICON_DEFAULT };
+    const obj24 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
     items6[1] = closure_9(ChevronSmallDownIcon, obj24);
-    obj22.children = items6;
-    items5[3] = closure_10(isGiftingBadgeComplexArtEnabled, obj22);
+    items5[3] = closure_10(tmp20, obj22);
     if (tmp11Result) {
-      const obj25 = { children: null };
+      const obj25 = { children: items7 };
       const obj26 = {
         style: tmp.badgesRow,
         children: tiers.map((key) => {
-              const giftingBadgeTierIconUrl = GiftingBadgesUtils.getGiftingBadgeTierIconUrl(key, isGiftingBadgeComplexArtEnabled);
+              let format;
+              let items1;
+              let items2;
+              let obj6;
+              let qvx9E4;
+              let tmpResult;
+              const obj = GiftingBadgesUtils;
+              const giftingBadgeTierIconUrl = obj.getGiftingBadgeTierIconUrl(key, isGiftingBadgeComplexArtEnabled);
               const items = [badgeItem.badgeItem, ];
-              key = undefined;
+              let key1;
+              key = key.key;
               if (currentTier != null) {
-                key = currentTier.key;
+                key1 = currentTier.key;
               }
-              const obj2 = { style: items, children: null };
-              items[1] = key.key === key && badgeItem.badgeItemActive;
+              const obj2 = { style: items, children: items1 };
+              const tmp8 = key === key1 && badgeItem.badgeItemActive;
+              items[1] = tmp8;
               let tmp9 = null != giftingBadgeTierIconUrl;
               if (tmp9) {
                 const obj3 = { icon: giftingBadgeTierIconUrl, size: 36 };
-                tmp9 = React7(GiftingBadgeIconDefault, obj3);
+                tmp9 = React4(GiftingBadgeIconDefault, obj3);
               }
-              const items1 = [tmp9, ];
-              const obj4 = { style: badgeItem.badgeCopy, accessible: true, accessibilityLabel: null, children: null };
-              const tmp8 = key.key === key && badgeItem.badgeItemActive;
-              obj4.accessibilityLabel = GiftingBadgesUtils.getGiftingBadgeAccessibilityLabel(key);
+              items1 = [tmp9, ];
+              const obj4 = { style: badgeItem.badgeCopy, accessible: true, accessibilityLabel: tmpResult.getGiftingBadgeAccessibilityLabel(key), children: items2 };
               let str = key.name;
+              tmpResult = GiftingBadgesUtils;
+              const Text = tmp(4886).Text;
               if (str == null) {
                 str = "";
               }
-              const items2 = [React7(Text_Text.Text, { variant: "text-sm/semibold", color: "text-strong", children: str }), ];
-              const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: null };
-              const intl = tmp(1115).intl;
-              const tmpResult = GiftingBadgesUtils;
-              obj5.children = intl.format(_modDef2582.qvx9E4, { count: closure_8(key) });
-              items2[1] = React7(Text_Text.Text, obj5);
-              obj4.children = items2;
-              items1[1] = closure_2_10(timestampProducer, obj4);
-              obj2.children = items1;
-              return closure_2_10(timestampProducer, obj2, key.key);
+              items2 = [React4(Text, { variant: "text-sm/semibold", color: "text-strong", children: str }), ];
+              const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: format(qvx9E4, obj6) };
+              const Text2 = tmp(4886).Text;
+              const intl = tmp(1126).intl;
+              format = intl.format;
+              obj6 = { count: closure_8(key) };
+              qvx9E4 = _modDef2589.qvx9E4;
+              items2[1] = React4(Text2, obj5);
+              items1[1] = authStore(metroRequire, obj4);
+              return authStore(metroRequire, obj2, key.key);
             })
       };
-      const items7 = [tmp15(tmp12, obj26), ];
-      const obj27 = { style: tmp.footerText, variant: "text-xs/normal", color: "text-muted", children: null };
-      const intl6 = tmp7(1115).intl;
-      obj27.children = intl6.string(tmp4(2582)["4Yp0mI"]);
-      items7[1] = tmp15(tmp7(4841).Text, obj27);
-      obj25.children = items7;
-      tmp11Result = tmp11(closure_11, obj25);
+      items7 = [closure_9(tmp12, obj26), ];
+      const obj27 = { style: tmp.footerText, variant: "text-xs/normal", color: "text-muted", children: intl6.string(_modDef2589["4Yp0mI"]) };
+      const Text3 = tmp7(4886).Text;
+      intl6 = tmp7(1126).intl;
+      items7[1] = closure_9(Text3, obj27);
+      tmp11Result = closure_10(closure_11, obj25);
     }
     items5[4] = tmp11Result;
-    obj6.children = items5;
     return closure_10(closure_6, obj6);
   }
-  let obj2 = analyticsLocation(10401);
-};
+});
+const result = size.fileFinishedImporting("modules/user_settings/premium/native/UserSettingsGiftingBadgeProgress.tsx");
+
+export default tmp4;

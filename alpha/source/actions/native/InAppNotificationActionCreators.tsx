@@ -1,21 +1,26 @@
-// Module ID: 9751
-// Function ID: 9752
+// Module ID: 12479
+// Function ID: 12480
 // Name: InAppNotificationActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [584, 2]
 
-// Module 9751 (InAppNotificationActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 12479 (InAppNotificationActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("actions/native/InAppNotificationActionCreators.tsx");
-
-export default {
+let obj = {
   enqueueNotification(buildResult) {
-    DispatcherDefault.dispatch({ type: "ENQUEUE_IN_APP_NOTIFICATION", notification: buildResult });
+    const obj = DispatcherDefault;
+    const obj2 = { type: "ENQUEUE_IN_APP_NOTIFICATION", notification: buildResult };
+    obj.dispatch(obj2);
   },
   clearNotification() {
-    DispatcherDefault.wait(() => {
-      DispatcherDefault.dispatch({ type: "CLEAR_IN_APP_NOTIFICATION" });
+    let obj = DispatcherDefault;
+    obj.wait(() => {
+      const obj = DispatcherDefault;
+      obj.dispatch({ type: "CLEAR_IN_APP_NOTIFICATION" });
     });
   }
 };
+const result = size.fileFinishedImporting("actions/native/InAppNotificationActionCreators.tsx");
+
+export default obj;

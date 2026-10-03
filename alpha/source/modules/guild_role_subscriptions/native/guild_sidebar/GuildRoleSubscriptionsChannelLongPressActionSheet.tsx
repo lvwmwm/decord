@@ -1,57 +1,180 @@
-// Module ID: 16053
-// Function ID: 16054
+// Module ID: 16127
+// Function ID: 16128
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
-// Dependencies: [19, 17, 2051, 21, 4845, 576, 6804, 6756, 1177, 12507, 1115, 8239, 15947, 10613, 2]
-// Exports: default
+// Dependencies: [19, 17, 2058, 21, 4890, 587, 558, 576, 1188, 12461, 1126, 6644, 16019, 8895, 10694, 6701, 2]
 
-// Module 16053 (GuildRoleSubscriptionsChannelLongPressActionSheet)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6756 */;
-import ActionSheet from "ActionSheet" /* 6804 */;
-import Form from "Form" /* 8239 */;
-import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10613 */;
-import _modDef12507 from "module_12507" /* 12507 */;
-import _modDef15947 from "module_15947" /* 15947 */;
-import noop from "module_19" /* 19 */;
+// Module 16127 (GuildRoleSubscriptionsChannelLongPressActionSheet)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import ChannelConstants from "ChannelConstants" /* 2058 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6644 */;
+import ActionSheet2 from "ActionSheet" /* 6701 */;
+import Form from "Form" /* 8895 */;
+import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10694 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12461 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16019 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const StaticChannelRoute = fn(2051).StaticChannelRoute;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4845);
-let obj2 = { headerIcon: null };
-let size = { marginRight: 16, tintColor: nativeDefault.colors.CHANNEL_ICON, width: 20, height: 20 };
-obj2.headerIcon = size;
-let closure_7 = createStyles.createStyles(obj2);
-size = fn(2);
+let guildId;
+
+let hasOwnProperty;
+let metroRequire;
+let size;
+const View = react_native.View;
+const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let obj = { headerIcon: size };
+size = { marginRight: 16, tintColor: nativeDefault.colors.CHANNEL_ICON, width: 20, height: 20 };
+let closure_7 = createStyles.createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  let first;
+  let intl2;
+  let items;
+  let tmp13;
+  let tmp15;
+  let tmp18;
+  let tmp22;
+  let tmp9;
+  let obj = guildId(576);
+  const cResult = obj.c(14);
+  guildId = guildId.guildId;
+  const onClose = guildId.onClose;
+  const tmp4 = closure_7();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { disableColor: true, source: onClose(12461) };
+    const Icon = tmp(1188).Icon;
+    const tmp8 = closure_5(Icon, obj2);
+    cResult[0] = tmp8;
+    first = tmp8;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== tmp4.headerIcon) {
+    const obj3 = { style: tmp4.headerIcon, children: first };
+    const tmp12 = closure_5(View, obj3);
+    cResult[1] = tmp4.headerIcon;
+    cResult[2] = tmp12;
+    tmp9 = tmp12;
+  } else {
+    tmp9 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(guildId(1126).t["KzCF/6"]);
+    cResult[3] = stringResult;
+    tmp13 = stringResult;
+  } else {
+    tmp13 = cResult[3];
+  }
+  if (cResult[4] !== tmp9) {
+    const obj4 = { leading: tmp9, title: tmp13 };
+    const tmp17 = closure_5(guildId(6644).BottomSheetTitleHeader, obj4);
+    cResult[4] = tmp9;
+    cResult[5] = tmp17;
+    tmp15 = tmp17;
+  } else {
+    tmp15 = cResult[5];
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj5 = { source: onClose(16019) };
+    const Icon2 = tmp(1188).Icon;
+    const tmp21 = closure_5(Icon2, obj5);
+    cResult[6] = tmp21;
+    tmp18 = tmp21;
+  } else {
+    tmp18 = cResult[6];
+  }
+  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj6 = { text: intl2.string(guildId(1126).t.WqhZss) };
+    const FormLabel = tmp(8895).FormLabel;
+    intl2 = tmp(1126).intl;
+    const tmp24 = closure_5(FormLabel, obj6);
+    cResult[7] = tmp24;
+    tmp22 = tmp24;
+  } else {
+    tmp22 = cResult[7];
+  }
+  if (cResult[8] === guildId) {
+    let tmp25;
+    if (cResult[9] === onClose) {
+      tmp25 = cResult[10];
+    }
+    if (cResult[11] === tmp15) {
+      let tmp27;
+      if (cResult[12] === tmp25) {
+        tmp27 = cResult[13];
+      }
+      return tmp27;
+    }
+    const obj7 = { children: items };
+    items = [tmp15, tmp25];
+    const tmp29 = closure_6(guildId(6701).ActionSheet, obj7);
+    cResult[11] = tmp15;
+    cResult[12] = tmp25;
+    cResult[13] = tmp29;
+    tmp27 = tmp29;
+  }
+  const obj8 = {
+    leading: tmp18,
+    label: tmp22,
+    onPress() {
+      onClose();
+      const obj = ChannelActionSheetUtils;
+      const result = obj.copyGuildChannelOrThreadLink(guildId, StaticChannelRoute.ROLE_SUBSCRIPTIONS);
+    }
+  };
+  const tmp26 = closure_5(guildId(8895).FormRow, obj8);
+  cResult[8] = guildId;
+  cResult[9] = onClose;
+  cResult[10] = tmp26;
+  tmp25 = tmp26;
+}) : ((arg0) => {
+  let FormLabel;
+  let Icon;
+  let Icon2;
+  let intl;
+  let intl2;
+  let items;
+  let obj3;
+  let obj4;
+  let obj6;
+  let obj7;
+  ({ guildId: require, onClose: importDefault } = arg0);
+  let obj = { children: items };
+  const tmp = closure_7();
+  const ActionSheet = ActionSheet2.ActionSheet;
+  const obj2 = { leading: closure_5(View, obj3), title: intl.string(intl3.t["KzCF/6"]) };
+  obj3 = { style: tmp.headerIcon, children: closure_5(Icon, obj4) };
+  const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
+  obj4 = { disableColor: true, source: AssetRegistryDefault };
+  Icon = native.Icon;
+  intl = intl3.intl;
+  items = [closure_5(BottomSheetTitleHeader, obj2), ];
+  const obj5 = {
+    leading: closure_5(Icon2, obj6),
+    label: closure_5(FormLabel, obj7),
+    onPress() {
+      importDefault();
+      const obj = ChannelActionSheetUtils;
+      const result = obj.copyGuildChannelOrThreadLink(require, StaticChannelRoute.ROLE_SUBSCRIPTIONS);
+    }
+  };
+  const FormRow = Form.FormRow;
+  obj6 = { source: AssetRegistryDefault2 };
+  Icon2 = native.Icon;
+  obj7 = { text: intl2.string(intl3.t.WqhZss) };
+  FormLabel = Form.FormLabel;
+  intl2 = intl3.intl;
+  items[1] = closure_5(FormRow, obj5);
+  return closure_6(ActionSheet, obj);
+});
+size = size_mod;
 let result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_sidebar/GuildRoleSubscriptionsChannelLongPressActionSheet.tsx");
 
-export default function GuildRoleSubscriptionsChannelLongPressActionSheet(arg0) {
-  ({ guildId: require, onClose: importDefault } = arg0);
-  const obj = { children: null };
-  const obj2 = { leading: null, title: null };
-  const obj3 = { style: closure_7().headerIcon, children: null };
-  const tmp = closure_7();
-  obj3.children = closure_5(native.Icon, { disableColor: true, source: _modDef12507 });
-  obj2.leading = closure_5(View, obj3);
-  const intl = util.intl;
-  obj2.title = intl.string(util.t["KzCF/6"]);
-  const items = [closure_5(BottomSheetTitleHeader.BottomSheetTitleHeader, obj2), ];
-  const obj5 = { leading: null, label: null, onPress: null };
-  const obj4 = { disableColor: true, source: _modDef12507 };
-  obj5.leading = closure_5(native.Icon, { source: _modDef15947 });
-  const obj7 = { text: null };
-  const intl2 = util.intl;
-  obj7.text = intl2.string(util.t.WqhZss);
-  obj5.label = closure_5(Form.FormLabel, obj7);
-  obj5.onPress = function onPress() {
-    importDefault();
-    const result = ChannelActionSheetUtils.copyGuildChannelOrThreadLink(closure_1_0, StaticChannelRoute.ROLE_SUBSCRIPTIONS);
-  };
-  items[1] = closure_5(Form.FormRow, obj5);
-  obj.children = items;
-  return closure_6(ActionSheet.ActionSheet, obj);
-};
+export default tmp4;

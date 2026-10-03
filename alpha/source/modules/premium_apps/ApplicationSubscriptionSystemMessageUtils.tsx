@@ -1,25 +1,29 @@
-// Module ID: 7610
-// Function ID: 7611
+// Module ID: 7654
+// Function ID: 7655
 // Name: ApplicationSubscriptionSystemMessageUtils
-// Dependencies: [1115, 2]
+// Dependencies: [1126, 2]
 // Exports: getApplicationSubscriptionSystemMessageASTContent
 
-// Module 7610 (ApplicationSubscriptionSystemMessageUtils)
-import util from "util" /* 1115 */;
+// Module 7654 (ApplicationSubscriptionSystemMessageUtils)
+import intl3 from "intl" /* 1126 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium_apps/ApplicationSubscriptionSystemMessageUtils.tsx");
 
 export const getApplicationSubscriptionSystemMessageASTContent = function getApplicationSubscriptionSystemMessageASTContent(arg0) {
+  let application;
+  let formatToPartsResult;
+  let username;
+  let usernameOnClick;
   ({ application, username, usernameOnClick } = arg0);
   if (null != application) {
-    const intl2 = util.intl;
+    const intl2 = intl3.intl;
     const obj2 = { username, applicationName: application.name, usernameOnClick };
-    let formatToPartsResult = intl2.formatToParts(util.t.Tes5Ou, obj2);
+    formatToPartsResult = intl2.formatToParts(intl3.t.Tes5Ou, obj2);
   } else {
-    const intl = util.intl;
+    const intl = intl3.intl;
     const obj = { username, usernameOnClick };
-    formatToPartsResult = intl.formatToParts(util.t.PUJtgi, obj);
+    formatToPartsResult = intl.formatToParts(intl3.t.PUJtgi, obj);
   }
   return formatToPartsResult;
 };

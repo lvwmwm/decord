@@ -1,35 +1,40 @@
-// Module ID: 8887
-// Function ID: 8888
+// Module ID: 8915
+// Function ID: 8916
 // Name: getAttachmentUploadAbortAlert
-// Dependencies: [1074, 1115, 5627, 2]
+// Dependencies: [1085, 1126, 7243, 2]
 // Exports: getAttachmentUploadAbortAlertContent
 
-// Module 8887 (getAttachmentUploadAbortAlert)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
+// Module 8915 (getAttachmentUploadAbortAlert)
+import Constants from "Constants" /* 1085 */;
+import intl5 from "intl" /* 1126 */;
+import UploadUtils from "UploadUtils" /* 7243 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;
 const result = size.fileFinishedImporting("modules/media_uploads/getAttachmentUploadAbortAlert.tsx");
 
 export const getAttachmentUploadAbortAlertContent = function getAttachmentUploadAbortAlertContent(code) {
-  const intl = util.intl;
-  const stringResult = intl.string(util.t.B3vFdU);
+  let DYFPg2;
+  let formatToPlainString;
+  let intl2;
+  let intl3;
+  let obj3;
+  const intl = intl5.intl;
+  const stringResult = intl.string(intl5.t.B3vFdU);
   if (AbortCodes.TOTAL_ATTACHMENT_SIZE_TOO_LARGE === code) {
-    const obj2 = { title: stringResult, body: null };
-    const intl4 = tmp(1115).intl;
-    const obj3 = { maxSizeMb: tmp(5627).MAX_TOTAL_ATTACHMENT_SIZE_MB };
-    obj2.body = intl4.formatToPlainString(tmp(1115).t.DYFPg2, obj3);
+    const obj2 = { title: stringResult, body: formatToPlainString(DYFPg2, obj3) };
+    const intl4 = tmp(1126).intl;
+    formatToPlainString = intl4.formatToPlainString;
+    obj3 = { maxSizeMb: UploadUtils.MAX_TOTAL_ATTACHMENT_SIZE_MB };
+    DYFPg2 = tmp(1126).t.DYFPg2;
     return obj2;
-  } else if (tmp4.CLOUD_UPLOAD_NOT_FOUND === code) {
-    const obj4 = { title: stringResult, body: null };
-    const intl3 = tmp(1115).intl;
-    obj4.body = intl3.string(tmp(1115).t.bQldfH);
+  } else if (AbortCodes.CLOUD_UPLOAD_NOT_FOUND === code) {
+    const obj4 = { title: stringResult, body: intl3.string(intl5.t.bQldfH) };
+    intl3 = tmp(1126).intl;
     return obj4;
-  } else if (tmp4.INVALID_PERMISSIONS === code) {
-    const obj = { title: stringResult, body: null };
-    const intl2 = tmp(1115).intl;
-    obj.body = intl2.string(tmp(1115).t.zl4Weq);
+  } else if (AbortCodes.INVALID_PERMISSIONS === code) {
+    const obj = { title: stringResult, body: intl2.string(intl5.t.zl4Weq) };
+    intl2 = tmp(1126).intl;
     return obj;
   } else {
     return null;

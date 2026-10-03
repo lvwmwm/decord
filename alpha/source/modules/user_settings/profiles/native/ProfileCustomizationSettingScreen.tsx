@@ -1,243 +1,546 @@
-// Module ID: 14353
-// Function ID: 14354
+// Module ID: 14407
+// Function ID: 14408
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [5, 109, 32, 19, 17, 9420, 7787, 1084, 1074, 21, 4845, 1115, 14354, 14415, 4560, 576, 1485, 6601, 9276, 10579, 6591, 4730, 14372, 14416, 563, 5025, 9422, 6122, 7462, 1486, 12326, 10974, 2]
+// Dependencies: [5, 109, 32, 19, 17, 9417, 7831, 1095, 1085, 21, 4890, 1126, 14408, 14474, 558, 576, 14484, 4580, 587, 1490, 6490, 9282, 10659, 6477, 4745, 14426, 14475, 573, 5070, 9419, 6010, 7498, 1491, 12282, 10974, 2]
 
-// Module 14353 (ProfileCustomizationSettingScreen)
-import util from "util" /* 1115 */;
-import ChatInputUtils from "ChatInputUtils" /* 4730 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5025 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6591 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9422 */;
-import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 10579 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 14354 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 14415 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9420 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7787 */;
+// Module 14407 (ProfileCustomizationSettingScreen)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 587 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
+import intl2 from "intl" /* 1126 */;
+import ChatInputUtils from "ChatInputUtils" /* 4745 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6477 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9419 */;
+import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 10659 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 14408 */;
+import useUserProfileEditFormDefault from "useUserProfileEditForm" /* 14426 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 14474 */;
+import useGuildProfileEditFormDefault from "useGuildProfileEditForm" /* 14475 */;
+import useMaybeFetchCollectiblesRecommendationsDefault from "useMaybeFetchCollectiblesRecommendations" /* 14484 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9417 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7831 */;
+import Constants from "Constants" /* 1085 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let c1, c2, importDefault;
 
-require = fn;
+let closure_15;
+let closure_16;
+let closure_17;
+let closure_18;
 let closure_3 = ["handleSubmit"];
 let closure_4 = ["guild", "handleSubmit"];
-const View = fn(17).View;
-const ProfileCustomizationSubsection = fn(1084).ProfileCustomizationSubsection;
-const Constants = fn(1074);
-({ AnalyticEvents: map1, AnalyticsSections: closure_14 } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
-const createStyles = fn(4845);
-let closure_17 = createStyles.createStyles({ container: { height: "100%" }, controls: { paddingTop: 4 } });
-let items = [
-  {
-    renderLabel() {
-      const intl = util.intl;
-      return intl.string(util.t["2p07FR"]);
-    },
-    id: "edit-user-profile",
-    renderPage(autoFocusElement) {
-      return __initData(UserSettingsEditUserProfileDefault, { autoFocusElement: autoFocusElement.autoFocusElement });
-    },
-    subSection: ProfileCustomizationSubsection.USER_PROFILE
+let closure_5 = ["handleSubmit"];
+let closure_6 = ["guild", "handleSubmit"];
+let _objectWithoutProperties = _objectWithoutProperties_mod;
+let _slicedToArray = _slicedToArray_mod;
+const View = react_native.View;
+const ProfileCustomizationSubsection = UserSettingsConstants.ProfileCustomizationSubsection;
+({ AnalyticEvents: closure_15, AnalyticsSections: closure_16 } = Constants);
+({ jsx: closure_17, jsxs: closure_18 } = Fragment);
+let closure_19 = createStyles.createStyles({ container: { height: "100%" }, controls: { paddingTop: 4 } });
+let obj = {
+  renderLabel() {
+    const intl = intl2.intl;
+    return intl.string(intl2.t["2p07FR"]);
   },
+  id: "edit-user-profile",
+  renderPage(autoFocusElement) {
+    return closure_17(UserSettingsEditUserProfileDefault, { autoFocusElement: autoFocusElement.autoFocusElement });
+  },
+  subSection: ProfileCustomizationSubsection.USER_PROFILE
+};
+let items = [
+  obj,
   {
     renderLabel() {
-      const intl = util.intl;
-      return intl.string(util.t.kPHroX);
+      const intl = intl2.intl;
+      return intl.string(intl2.t.kPHroX);
     },
     id: "edit-user-profiles-guilds",
     renderPage() {
-      return __initData(UserSettingsEditGuildProfileDefault, {});
+      return closure_17(UserSettingsEditGuildProfileDefault, {});
     },
     subSection: ProfileCustomizationSubsection.GUILD
   }
 ];
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/profiles/native/ProfileCustomizationSettingScreen.tsx");
-
-export default noop.memo(() => {
-  const tmp = closure_17();
-  const token = require("useToken").useToken(require("native").colors.MOBILE_ACTIONSHEET_BACKGROUND);
-  _require = token;
-  const tmp6 = handleSubmit(guild.useState(0), 2);
-  importDefault = tmp6[1];
-  const tmp7 = handleSubmit(guild.useState(false), 2);
-  first = tmp7[0];
-  closure_3 = tmp7[1];
-  let obj = require("useToken");
-  const nativeStackNavigation = require("useNavigation").useNativeStackNavigation();
-  let obj3 = require("useNavigation");
-  const params = require("useSettingNavigationRoute").useSettingNavigationRoute().params;
+const memo = react.memo;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let closure_1;
+  let closure_2;
+  let closure_8;
+  let closure_9;
+  let first;
+  let state;
+  let stateFromStores;
+  let tmp14;
+  let tmp17;
+  let tmp22;
+  let tmp23;
+  let tmp29;
+  let tmp30;
+  let tmp36;
+  let tmp37;
+  let token;
+  let tmp = token;
+  let tmp2 = dependencyMap;
+  let obj = token(576);
+  const cResult = obj.c(55);
+  useMaybeFetchCollectiblesRecommendationsDefault();
+  closure_19();
+  let obj2 = token(4580);
+  token = obj2.useToken(nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND);
+  [first, importDefault] = stateFromStores.useState(0);
+  [dependencyMap, closure_3] = stateFromStores.useState(false);
+  let obj3 = token(1490);
+  const nativeStackNavigation = obj3.useNativeStackNavigation();
+  let obj4 = token(6490);
+  const params = obj4.useSettingNavigationRoute().params;
   let autoFocusElement;
   if (params != null) {
     autoFocusElement = params.autoFocusElement;
   }
-  const field = stateFromStores.useField("subsection");
-  _require = { autoFocusElement };
+  const field = ProfileCustomizationNavigationStore.useField("subsection");
+  if (cResult[0] !== autoFocusElement) {
+    const mapped = items.map((renderLabel) => {
+      let id;
+      let renderPage;
+      const obj = { label: renderLabel.renderLabel(), id, page: renderPage(closure_0) };
+      ({ id, renderPage } = renderLabel);
+      return obj;
+    });
+    cResult[0] = autoFocusElement;
+    cResult[1] = mapped;
+    tmp14 = mapped;
+  } else {
+    tmp14 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    class D {
+      constructor(arg0) {
+        let first = items[arg0];
+        if (first == null) {
+          first = items[0];
+        }
+        const obj = { subsection: first.subSection };
+        state.setState(obj);
+      }
+    }
+    cResult[2] = D;
+    tmp17 = D;
+  } else {
+    class D {
+      constructor(arg0) {
+        let first = items[arg0];
+        if (first == null) {
+          first = items[0];
+        }
+        const obj = { subsection: first.subSection };
+        state.setState(obj);
+      }
+    }
+  }
+  const useSegmentedControlState = tmp(9282).useSegmentedControlState;
+  const obj6 = {
+    items: tmp14,
+    pageWidth: first,
+    defaultIndex: 0,
+    onPageChange: tmp17,
+    onPageChangeStart(arg0, onConfirm) {
+      const obj = { hasEdits: stateFromStores, resetPending: UserSettingsAccountActionCreators.resetAllPending, onHasEdits: ChatInputUtils.dismissKeyboard, onConfirm };
+      const tmp = maybeShowDiscardChangesAlertDefault;
+      return tmp(obj);
+    }
+  };
+  const tmpResult = tmp(9282);
+  if (field === ProfileCustomizationSubsection.GUILD) {
+    class D {
+      constructor(arg0) {
+        let first = items[arg0];
+        if (first == null) {
+          first = items[0];
+        }
+        const obj = { subsection: first.subSection };
+        state.setState(obj);
+      }
+    }
+  }
+  const segmentedControlState = useSegmentedControlState(obj6);
+  const activeIndex = segmentedControlState.activeIndex;
+  const tmp20 = items[activeIndex.get(activeIndex)];
+  if (tmp20 == null) {
+    class D {
+      constructor(arg0) {
+        let first = items[arg0];
+        if (first == null) {
+          first = items[0];
+        }
+        const obj = { subsection: first.subSection };
+        state.setState(obj);
+      }
+    }
+  }
+  const subSection = tmp20;
+  const tmp21 = useUserProfileEditFormDefault();
+  if (cResult[3] !== tmp21) {
+    class D {
+      constructor(arg0) {
+        let first = items[arg0];
+        if (first == null) {
+          first = items[0];
+        }
+        const obj = { subsection: first.subSection };
+        state.setState(obj);
+      }
+    }
+    closure_6 = tmp24;
+    const tmp27 = _objectWithoutProperties(tmp21, closure_3);
+    cResult[3] = tmp21;
+    cResult[4] = tmp27;
+    cResult[5] = tmp24;
+    tmp22 = tmp27;
+    tmp23 = tmp24;
+  } else {
+    class D {
+      constructor(arg0) {
+        let first = items[arg0];
+        if (first == null) {
+          first = items[0];
+        }
+        const obj = { subsection: first.subSection };
+        state.setState(obj);
+      }
+    }
+    closure_6 = cResult[5];
+  }
+  const tmp28 = useGuildProfileEditFormDefault();
+  if (cResult[6] !== tmp28) {
+    class D {
+      constructor(arg0) {
+        let first = items[arg0];
+        if (first == null) {
+          first = items[0];
+        }
+        const obj = { subsection: first.subSection };
+        state.setState(obj);
+      }
+    }
+    _objectWithoutProperties = tmp32;
+    const handleSubmit = tmp28.handleSubmit;
+    _slicedToArray = handleSubmit;
+    const tmp35 = _objectWithoutProperties(tmp28, nativeStackNavigation);
+    cResult[6] = tmp28;
+    cResult[7] = tmp32;
+    cResult[8] = tmp35;
+    cResult[9] = handleSubmit;
+    tmp30 = tmp35;
+    tmp29 = tmp32;
+  } else {
+    class D {
+      constructor(arg0) {
+        let first = items[arg0];
+        if (first == null) {
+          first = items[0];
+        }
+        const obj = { subsection: first.subSection };
+        state.setState(obj);
+      }
+    }
+    _objectWithoutProperties = tmp29;
+    tmp30 = cResult[8];
+    _slicedToArray = cResult[9];
+  }
+  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+    class D {
+      constructor(arg0) {
+        let first = items[arg0];
+        if (first == null) {
+          first = items[0];
+        }
+        const obj = { subsection: first.subSection };
+        state.setState(obj);
+      }
+    }
+    items = [UserProfileSettingsStore];
+    class J {
+      constructor() {
+        return UserProfileSettingsStore.showNotice();
+      }
+    }
+    cResult[10] = items;
+    cResult[11] = J;
+    tmp37 = J;
+    tmp36 = items;
+  } else {
+    class D {
+      constructor(arg0) {
+        let first = items[arg0];
+        if (first == null) {
+          first = items[0];
+        }
+        const obj = { subsection: first.subSection };
+        state.setState(obj);
+      }
+    }
+    tmp37 = cResult[11];
+  }
+  const tmpResult2 = tmp(573);
+  stateFromStores = tmpResult2.useStateFromStores(tmp36, tmp37);
+  let closure_11 = tmp22.isSubmitting || tmp30.isSubmitting;
+  if (cResult[12] === tmp31) {
+    class D {
+      constructor(arg0) {
+        let first = items[arg0];
+        if (first == null) {
+          first = items[0];
+        }
+        const obj = { subsection: first.subSection };
+        state.setState(obj);
+      }
+    }
+  }
+  class Y {
+    constructor() {
+      let tmp2;
+      if (field === ProfileCustomizationSubsection.GUILD) {
+        tmp2 = closure_9();
+      } else {
+        tmp2 = closure_6();
+      }
+      return tmp2;
+    }
+  }
+  cResult[12] = tmp31;
+  cResult[13] = field;
+  cResult[14] = tmp23;
+  cResult[15] = Y;
+}) : (() => {
+  let callback;
+  let closure_1;
+  let first1;
+  let guild;
+  let handleSubmit2;
+  let items6;
+  let num;
+  let stateFromStores;
+  let token;
+  let tmp = importDefault;
+  let tmp2 = first1;
+  const tmp3 = require("useMaybeFetchCollectiblesRecommendations")();
+  const tmp4 = closure_19();
+  let obj = token(first1[17]);
+  token = obj.useToken(require("native").colors.MOBILE_ACTIONSHEET_BACKGROUND);
+  let obj2 = stateFromStores;
+  const tmp7 = handleSubmit2(stateFromStores.useState(0), 2);
+  importDefault = tmp7[1];
+  let first = tmp7[0];
+  const tmp9 = handleSubmit2(stateFromStores.useState(false), 2);
+  first1 = tmp9[0];
+  closure_3 = tmp9[1];
+  let obj3 = token(first1[19]);
+  const nativeStackNavigation = obj3.useNativeStackNavigation();
+  let obj4 = token(first1[20]);
+  const params = obj4.useSettingNavigationRoute().params;
+  let autoFocusElement;
+  if (params != null) {
+    autoFocusElement = params.autoFocusElement;
+  }
+  const field = callback.useField("subsection");
+  let closure_0 = { autoFocusElement };
   const mapped = items.map((renderLabel) => {
+    let id;
+    let renderPage;
+    const obj = { label: renderLabel.renderLabel(), id, page: renderPage(closure_0) };
     ({ id, renderPage } = renderLabel);
-    return { label: renderLabel.renderLabel(), id, page: renderPage(closure_0) };
+    return obj;
   });
-  let obj4 = require("useSettingNavigationRoute");
-  const obj5 = { items: mapped, pageWidth: tmp6[0], defaultIndex: null, onPageChange: null, onPageChangeStart: null };
-  let num = 0;
-  if (field === callback.GUILD) {
+  const obj5 = {
+    items: mapped,
+    pageWidth: first,
+    defaultIndex: num,
+    onPageChange(arg0) {
+      let first = items[arg0];
+      if (first == null) {
+        first = items[0];
+      }
+      const obj = { subsection: first.subSection };
+      callback.setState(obj);
+    },
+    onPageChangeStart(arg0, onConfirm) {
+      const obj = { hasEdits: stateFromStores, resetPending: UserSettingsAccountActionCreators.resetAllPending, onHasEdits: ChatInputUtils.dismissKeyboard, onConfirm };
+      const tmp = maybeShowDiscardChangesAlertDefault;
+      return tmp(obj);
+    }
+  };
+  num = 0;
+  const useSegmentedControlState = tmp5(tmp2[21]).useSegmentedControlState;
+  token(tmp2[21]);
+  if (field === ProfileCustomizationSubsection.GUILD) {
     num = 1;
   }
-  obj5.defaultIndex = num;
-  obj5.onPageChange = function onPageChange(arg0) {
-    first = dependencyMap[arg0];
-    if (first == null) {
-      first = 5;
-    }
-    stateFromStores.setState({ subsection: first.subSection });
-  };
-  obj5.onPageChangeStart = function onPageChangeStart(arg0, onConfirm) {
-    const obj = { hasEdits: stateFromStores, resetPending: UserSettingsAccountActionCreators.resetAllPending, onHasEdits: ChatInputUtils.dismissKeyboard, onConfirm };
-    return maybeShowDiscardChangesAlertDefault(obj);
-  };
-  const segmentedControlState = require("SegmentedControlState").useSegmentedControlState(obj5);
+  const segmentedControlState = useSegmentedControlState(obj5);
   const activeIndex = segmentedControlState.activeIndex;
-  let first1 = tmp12[activeIndex.get(activeIndex)];
-  if (first1 == null) {
-    first1 = tmp12[0];
+  let first2 = tmp14[activeIndex.get(activeIndex)];
+  if (first2 == null) {
+    first2 = tmp14[0];
   }
-  const tmp16 = require("useUserProfileEditForm")();
-  handleSubmit = tmp16.handleSubmit;
-  const tmp2Result = require("SegmentedControlState");
-  const tmp18 = require("useGuildProfileEditForm")();
-  guild = tmp18.guild;
-  const handleSubmit2 = tmp18.handleSubmit;
-  const tmp17 = first1(tmp16, closure_3);
-  const tmp19 = first1(tmp18, nativeStackNavigation);
-  items = [closure_11];
-  stateFromStores = require("useStateFromStores").useStateFromStores(items, () => closure_11.showNotice());
-  closure_11 = tmp21;
+  const tmp19 = tmp(tmp2[25])();
+  const handleSubmit = tmp19.handleSubmit;
+  const tmp20 = guild(tmp19, field);
+  const tmp21 = tmp(tmp2[26])();
+  guild = tmp21.guild;
+  handleSubmit2 = tmp21.handleSubmit;
+  items = [UserProfileSettingsStore];
+  const tmp22 = guild(tmp21, first2);
+  const tmp5Result3 = token(tmp2[27]);
+  stateFromStores = tmp5Result3.useStateFromStores(items, () => UserProfileSettingsStore.showNotice());
+  let closure_11 = tmp24;
   const items1 = [field, handleSubmit, handleSubmit2];
   callback = obj2.useCallback(() => {
+    let tmp2;
     if (field === ProfileCustomizationSubsection.GUILD) {
-      let tmp2 = handleSubmit2();
+      tmp2 = handleSubmit2();
     } else {
       tmp2 = handleSubmit();
     }
     return tmp2;
   }, items1);
-  const items2 = [first1.subSection];
+  const items2 = [first2.subSection];
   const effect = obj2.useEffect(() => {
-    AppAnalyticsUtilsDefault.trackWithMetadata(constants.SETTINGS_PANE_VIEWED, { settings_type: "user", subsection: first1.subSection, destination_pane: constants2.SETTINGS_CUSTOMIZE_PROFILE });
+    const obj = AppAnalyticsUtilsDefault;
+    const obj2 = { settings_type: "user", subsection: first2.subSection, destination_pane: constants2.SETTINGS_CUSTOMIZE_PROFILE };
+    obj.trackWithMetadata(constants.SETTINGS_PANE_VIEWED, obj2);
   }, items2);
   const items3 = [guild];
   const effect1 = obj2.useEffect(() => {
     if (null != guild) {
-      const guildIdentitySettings = GuildIdentityActionCreators.initGuildIdentitySettings(tmp.id);
+      const obj = GuildIdentityActionCreators;
+      const guildIdentitySettings = obj.initGuildIdentitySettings(tmp.id);
     }
     return UserSettingsAccountActionCreators.resetAndCloseUserProfileForm;
   }, items3);
   const effect2 = obj2.useEffect(() => () => {
-    stateFromStores.resetState();
+    callback.resetState();
   }, []);
-  const items4 = [token, nativeStackNavigation, stateFromStores, tmp17.isSubmitting || tmp19.isSubmitting, callback];
+  const items4 = [token, nativeStackNavigation, stateFromStores, tmp20.isSubmitting || tmp22.isSubmitting, callback];
   const layoutEffect = obj2.useLayoutEffect(() => {
+    let obj2;
     let obj = {
-      contentStyle: { backgroundColor },
+      contentStyle: obj2,
       headerShadowVisible: false,
-      headerRight: closure_11 ? (() => closure_1_15(backgroundColor(first[27]).HeaderSubmittingIndicator, {})) : ((arg0) => {
-        let obj = {};
-        const merged = Object.assign(arg0);
-        const intl = closure_0(first[11]).intl;
-        obj.label = intl.string(closure_0(first[11]).t["R3BPH+"]);
-        obj.disabled = !stateFromStores;
-        obj.onPress = field(function*(arg0, value) {
-          if (c2 === 2) {
-            c2 = 3;
-            throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp3 === 3) {
-            if (arg0 === 1) {
-              throw value;
-            } else if (arg0 === 2) {
-              const obj2 = { value, done: true };
-              return obj2;
+      headerRight: closure_11 ? (() => closure_1_17(token(first1[30]).HeaderSubmittingIndicator, {})) : ((arg0) => {
+        let intl;
+        let obj = {
+          label: intl.string(token(first1[11]).t["R3BPH+"]),
+          disabled: !stateFromStores,
+          onPress: handleSubmit(function*(arg0, value) {
+            if (c2 === 2) {
+              c2 = 3;
+              throw new TypeError("Generator functions may not be called on executing generators");
+            } else if (tmp2 === 3) {
+              if (arg0 === 1) {
+                throw value;
+              } else if (arg0 === 2) {
+                const obj2 = { value, done: true };
+                return obj2;
+              } else {
+                return { value: "IconComponent", done: "IconComponent" };
+              }
             } else {
-              return { value: "HermesInternal", done: null };
-            }
-          } else {
-            try {
-              c2 = 2;
-              if (0 === c1) {
-                if (arg0 === 1) {
+              try {
+                c2 = 2;
+                if (0 === c1) {
+                  if (arg0 === 1) {
+                    c2 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c2 = 3;
+                    const obj3 = { value, done: true };
+                    return obj3;
+                  } else {
+                    let closure_0 = tmp3;
+                    c1 = 1;
+                    c2 = 1;
+                    const obj4 = { value: callback(), done: false };
+                    return obj4;
+                  }
+                } else if (arg0 === 1) {
                   c2 = 3;
                   throw value;
                 } else if (arg0 === 2) {
                   c2 = 3;
-                  const obj3 = { value, done: true };
-                  return obj3;
+                  const obj = { value, done: true };
+                  return obj;
                 } else {
-                  closure_0 = tmp4;
-                  c1 = 1;
-                  c2 = 1;
-                  const obj4 = { value: callback(), done: false };
-                  return obj4;
+                  if (false !== value) {
+                    closure_128_3(true);
+                  }
+                  c2 = 3;
+                  return { value: "IconComponent", done: "IconComponent" };
                 }
-              } else if (arg0 === 1) {
+              } catch (tmp8) {
                 c2 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c2 = 3;
-                const obj = { value, done: true };
-                return obj;
-              } else {
-                if (false !== value) {
-                  closure_128_3(true);
-                }
-                c2 = 3;
-                return { value: "HermesInternal", done: null };
+                throw tmp8;
               }
-            } catch (tmp9) {
-              c2 = tmp;
-              throw tmp9;
             }
-          }
-        });
-        return closure_2_15(closure_0(first[28]).HeaderTextButton, obj);
+          })
+        };
+        const HeaderTextButton = token(first1[31]).HeaderTextButton;
+        const merged = Object.assign(arg0);
+        intl = token(first1[11]).intl;
+        return closure_2_17(HeaderTextButton, obj);
       })
     };
+    obj2 = { backgroundColor: token };
     nativeStackNavigation.setOptions(obj);
   }, items4);
   const callback1 = obj2.useCallback((nativeEvent) => {
     closure_1(nativeEvent.nativeEvent.layout.width);
   }, []);
-  const tmp2Result3 = require("useStateFromStores");
+  const usePreventRemove = tmp5(tmp2[32]).usePreventRemove;
+  token(tmp2[32]);
   if (stateFromStores) {
-    stateFromStores = !tmp21;
+    stateFromStores = !tmp24;
   }
   if (stateFromStores) {
-    stateFromStores = !first;
+    stateFromStores = !first1;
   }
-  const preventRemove = require("Link").usePreventRemove(stateFromStores, (data) => {
+  const preventRemove = usePreventRemove(stateFromStores, (data) => {
     const action = data.data.action;
     const obj = {
       hasEdits: stateFromStores,
-      resetPending: backgroundColor(first[20]).resetAllPending,
-      onHasEdits: backgroundColor(first[21]).dismissKeyboard,
+      resetPending: token(first1[23]).resetAllPending,
+      onHasEdits: token(first1[24]).dismissKeyboard,
       onConfirm() {
         return nativeStackNavigation.dispatch(action);
       }
     };
-    closure_1(first[19])(obj);
+    const tmp = closure_1(first1[22]);
+    tmp(obj);
   });
-  const items5 = [first, nativeStackNavigation];
+  const items5 = [first1, nativeStackNavigation];
   const effect3 = obj2.useEffect(() => {
-    if (first) {
+    const tmp = first1;
+    if (tmp) {
       nativeStackNavigation.goBack();
     }
   }, items5);
-  const obj6 = { style: tmp.container, onLayout: callback1, children: null };
-  const tmp2Result4 = require("Link");
-  const items6 = [closure_15(handleSubmit2, { style: tmp.controls, children: closure_15(require("Tabs/Tabs").Tabs, { state: segmentedControlState }) }), closure_15(require("SegmentedControlPages").SegmentedControlPages, { state: segmentedControlState })];
-  obj6.children = items6;
-  return closure_16(handleSubmit2, obj6);
-});
+  const obj6 = { style: tmp4.container, onLayout: callback1, children: items6 };
+  items6 = [, ];
+  const obj7 = { style: tmp4.controls, children: closure_17(token(tmp2[33]).Tabs, { state: segmentedControlState }) };
+  items6[0] = closure_17(closure_11, obj7);
+  items6[1] = closure_17(token(tmp2[34]).SegmentedControlPages, { state: segmentedControlState });
+  return closure_18(closure_11, obj6);
+}));
+const result = size.fileFinishedImporting("modules/user_settings/profiles/native/ProfileCustomizationSettingScreen.tsx");
+
+export default memoResult;

@@ -1,16 +1,17 @@
-// Module ID: 11590
-// Function ID: 11591
+// Module ID: 11509
+// Function ID: 11510
 // Name: TTIMeasurementNativeComponent
 // Dependencies: [106, 65, 2]
 
-// Module 11590 (TTIMeasurementNativeComponent)
-import weakSet from "weakSet" /* 106 */;
+// Module 11509 (TTIMeasurementNativeComponent)
+import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;
 
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "DCDTTIMeasurementView", directEventTypes: { topMeasurement: { registrationName: "onMeasurement" } }, validAttributes: null };
-const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onMeasurement: true }));
-__INTERNAL_VIEW_CONFIG.validAttributes = {};
+let obj2;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "DCDTTIMeasurementView", directEventTypes: { topMeasurement: { registrationName: "onMeasurement" } }, validAttributes: obj2 };
+obj2 = {};
+const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onMeasurement: true }));
 const value = module_65.get("DCDTTIMeasurementView", () => obj);
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/TTIMeasurementNativeComponent.tsx");
 

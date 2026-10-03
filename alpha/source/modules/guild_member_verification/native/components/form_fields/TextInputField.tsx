@@ -1,36 +1,97 @@
-// Module ID: 6690
-// Function ID: 6691
+// Module ID: 6578
+// Function ID: 6579
 // Name: TextInputField
-// Dependencies: [19, 17, 5550, 21, 4845, 6210, 4841, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 5843, 21, 4890, 558, 576, 4886, 1126, 6098, 2]
 
-// Module 6690 (TextInputField)
-import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import TextInput from "TextInput" /* 6210 */;
-import noop from "module_19" /* 19 */;
+// Module 6578 (TextInputField)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import intl2 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import MemberVerificationConstants from "MemberVerificationConstants" /* 5843 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 6098 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const MAX_TEXT_RESPONSE_LENGTH = fn(5550).MAX_TEXT_RESPONSE_LENGTH;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
+const View = react_native.View;
+const MAX_TEXT_RESPONSE_LENGTH = MemberVerificationConstants.MAX_TEXT_RESPONSE_LENGTH;
+const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ container: { marginVertical: 12, flexDirection: "column" } });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/TextInputField.tsx");
-
-export default function TextInputField(field) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let field;
+  let label;
+  let onChange;
+  let response;
+  let tmp5;
+  let tmp8;
+  const obj = react2;
+  const cResult = obj.c(10);
+  ({ field, onChange } = arg0);
+  const tmp4 = closure_5();
+  ({ label, response } = field);
+  const container = tmp4.container;
+  if (cResult[0] !== label) {
+    const tmp7 = jsx(Text_Text.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: label });
+    cResult[0] = label;
+    cResult[1] = tmp7;
+    tmp5 = tmp7;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (response == null) {
+    response = "";
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(intl2.t["Sqn+Wh"]);
+    cResult[2] = stringResult;
+    tmp8 = stringResult;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] === onChange) {
+    if (cResult[4] === tmp5) {
+      let tmp10;
+      if (cResult[5] === response) {
+        tmp10 = cResult[6];
+      }
+      if (cResult[7] === tmp4.container) {
+        let tmp12;
+        if (cResult[8] === tmp10) {
+          tmp12 = cResult[9];
+        }
+        return tmp12;
+      }
+      const tmp15 = <View style={container}>{tmp10}</View>;
+      cResult[7] = tmp4.container;
+      cResult[8] = tmp10;
+      cResult[9] = tmp15;
+      tmp12 = tmp15;
+    }
+  }
+  const tmp11 = jsx(TextInput_TextInput.TextInput, { label: tmp5, maxLength: MAX_TEXT_RESPONSE_LENGTH, value: response, placeholder: tmp8, onChange });
+  cResult[3] = onChange;
+  cResult[4] = tmp5;
+  cResult[5] = response;
+  cResult[6] = tmp11;
+  tmp10 = tmp11;
+}) : ((field) => {
+  let intl;
   field = field.field;
+  const onChange = field.onChange;
   let str = field.response;
-  const obj = { style: closure_5().container, children: null };
-  const obj2 = { label: jsx(Text_Text.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: field.label }), maxLength: MAX_TEXT_RESPONSE_LENGTH, value: null, placeholder: null, onChange: null };
+  const label = field.label;
+  ({ label: null, maxLength: MAX_TEXT_RESPONSE_LENGTH, value: str, placeholder: intl.string(intl2.t["Sqn+Wh"]), onChange });
+  const TextInput = TextInput_TextInput.TextInput;
   if (str == null) {
     str = "";
   }
-  obj2.value = str;
-  const intl = tmp3(1115).intl;
-  obj2.placeholder = intl.string(util.t["Sqn+Wh"]);
-  obj2.onChange = field.onChange;
-  obj.children = jsx(TextInput.TextInput, { label: jsx(Text_Text.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: field.label }), maxLength: MAX_TEXT_RESPONSE_LENGTH, value: null, placeholder: null, onChange: null });
-  return <View style={closure_5().container}>{null}</View>;
-};
+  intl = tmp3(1126).intl;
+  return <tmp2 style={closure_5().container}>{null}</tmp2>;
+});
+const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/TextInputField.tsx");
+
+export default tmp3;

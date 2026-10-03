@@ -1,10 +1,10 @@
-// Module ID: 2014
-// Function ID: 2015
+// Module ID: 2021
+// Function ID: 2022
 // Name: DOMUtils
 // Dependencies: [2]
 // Exports: clickedOnVisibleImage, cssValueToNumber, eventOwnerDocument, getParentElementByAttribute, getParentElementByClassName, isElement, isInputLikeElement, removeNode
 
-// Module 2014 (DOMUtils)
+// Module 2021 (DOMUtils)
 import size from "module_2" /* 2 */;
 
 const re0 = /input/i;
@@ -73,18 +73,28 @@ export const removeNode = function removeNode(parentNode) {
 };
 export const eventOwnerDocument = function eventOwnerDocument(target) {
   target = target.target;
-  if (null == target) {
-    return null;
-  } else if ("ownerDocument" in target) {
-    let ownerDocument = target.ownerDocument;
-  } else {
-    ownerDocument = null;
-    if ("document" in target) {
-      ownerDocument = target.document;
+  let tmp = null;
+  if (null != target) {
+    let ownerDocument;
+    if ("ownerDocument" in target) {
+      ownerDocument = target.ownerDocument;
+    } else {
+      ownerDocument = null;
+      if ("document" in target) {
+        ownerDocument = target.document;
+      }
     }
+    tmp = ownerDocument;
   }
+  return tmp;
 };
 export const clickedOnVisibleImage = function clickedOnVisibleImage(arg0, arg1, arg2, arg3) {
+  let height;
+  let height2;
+  let left;
+  let top;
+  let width;
+  let width2;
   ({ width, height } = arg2);
   ({ width: width2, height: height2 } = arg3);
   ({ top, left } = arg3);
@@ -93,14 +103,7 @@ export const clickedOnVisibleImage = function clickedOnVisibleImage(arg0, arg1, 
   const result1 = height * bound;
   const sum = (height2 - result1) / 2 + left;
   const sum1 = (width2 - result) / 2 + top;
-  let tmp6 = arg1 >= sum && arg1 <= sum + result1;
-  if (tmp6) {
-    tmp6 = arg0 >= sum1;
-  }
-  if (tmp6) {
-    tmp6 = arg0 <= sum1 + result;
-  }
-  return tmp6;
+  return arg1 >= sum && arg1 <= sum + result1 && arg0 >= sum1 && arg0 <= sum1 + result;
 };
 export const getParentElementByClassName = function getParentElementByClassName(parentElement, arg1) {
   parentElement = parentElement.parentElement;

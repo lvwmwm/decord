@@ -1,303 +1,380 @@
-// Module ID: 11145
-// Function ID: 11146
+// Module ID: 9826
+// Function ID: 9827
 // Name: SafetyToolsActionSheet
-// Dependencies: [19, 17, 4508, 11114, 21, 4845, 576, 11143, 11146, 11147, 504, 11121, 6816, 1115, 8425, 8424, 4809, 11151, 1981, 4554, 6576, 6574, 6575, 6573, 9388, 11154, 6220, 8036, 5388, 11141, 8312, 8311, 8275, 9562, 9561, 5048, 11155, 11159, 11160, 11161, 8895, 8896, 11162, 11152, 6185, 6103, 6109, 2]
+// Dependencies: [19, 17, 4519, 9784, 21, 4890, 587, 9824, 9827, 9830, 504, 9798, 6708, 1126, 8429, 8428, 4854, 9834, 1987, 4565, 6459, 6457, 6458, 6456, 9434, 9837, 4797, 8080, 5708, 9822, 8316, 8315, 8279, 9572, 9571, 5093, 9838, 9843, 9844, 9845, 8922, 8923, 9846, 9835, 6074, 5993, 5999, 2]
 // Exports: default
 
-// Module 11145 (SafetyToolsActionSheet)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import TableRowGroup from "TableRowGroup" /* 6185 */;
-import CircleXIcon from "CircleXIcon" /* 6220 */;
-import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 6816 */;
-import FlagIcon from "FlagIcon" /* 8311 */;
-import _modDef8312 from "module_8312" /* 8312 */;
-import HeartIcon from "HeartIcon" /* 8424 */;
-import _modDef8425 from "module_8425" /* 8425 */;
-import _modDef8895 from "module_8895" /* 8895 */;
-import ShieldIcon from "ShieldIcon" /* 8896 */;
-import MusicIcon from "MusicIcon" /* 9561 */;
-import _modDef9562 from "module_9562" /* 9562 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11121 */;
-import _modDef11154 from "module_11154" /* 11154 */;
-import _modDef11159 from "module_11159" /* 11159 */;
-import EducationIcon from "EducationIcon" /* 11160 */;
-import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4508 */;
+// Module 9826 (SafetyToolsActionSheet)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 587 */;
+import intl18 from "intl" /* 1126 */;
+import TableRowGroup2 from "TableRowGroup" /* 6074 */;
+import ChevronSmallRightIcon2 from "ChevronSmallRightIcon" /* 6708 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8316 */;
+import HeartIcon from "HeartIcon" /* 8428 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8429 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 8922 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 9572 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 9798 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 9837 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 9843 */;
+import react from "react" /* 19 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import Constants from "Constants" /* 9784 */;
+import createStyles from "createStyles" /* 4890 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const Constants = fn(11114);
-({ ACTION_SHEET_CONTEXT_MOBILE: metroRequire, getSafetyToolsActionSheetKey: closure_7, THROUGHLINE_URL: closure_8, NOFILTR_URL: closure_9, VIBING_WUMPUS_MODAL_KEY: c10 } = Constants);
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
-let obj2 = { container: { flex: 1 }, actionRowGroup: { marginHorizontal: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_24 } };
-let closure_12 = createStyles.createStyles(obj2);
-const size = fn(2);
+let buttons;
+
+let c10;
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let tmp;
+const CircleXIcon = tmp(4797);
+const EyeSlashIcon2 = tmp(6456);
+const EyeIcon = tmp(6458);
+const FlagIcon = tmp(8315);
+const ShieldIcon = tmp(8923);
+const MusicIcon = tmp(9571);
+const EducationIcon = tmp(9844);
+const View = react_native.View;
+({ ACTION_SHEET_CONTEXT_MOBILE: metroRequire, getSafetyToolsActionSheetKey: metroImportDefault, THROUGHLINE_URL: metroImportAll, NOFILTR_URL: c9, VIBING_WUMPUS_MODAL_KEY: c10 } = Constants);
+const jsx = Fragment.jsx;
+let obj = { container: { flex: 1 }, actionRowGroup: obj2 };
+obj2 = { marginHorizontal: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_24 };
+let closure_12 = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsActionSheet.tsx");
 
 export default function SafetyToolsActionSheet(channelId) {
+  let intl;
+  let obj8;
   channelId = channelId.channelId;
   const warningId = channelId.warningId;
   const warningType = channelId.warningType;
   const recipientId = channelId.recipientId;
   const onClose = channelId.onClose;
   let callback;
-  const tmp = callback();
+  let tmp = callback();
   const actionRowGroup = tmp;
-  const lastChannelMessage = channelId(warningType[7]).useLastChannelMessage(channelId);
   let obj = channelId(warningType[7]);
-  const shouldShowHelplineLink = channelId(warningType[8]).useShouldShowHelplineLink();
+  const lastChannelMessage = obj.useLastChannelMessage(channelId);
   let obj2 = channelId(warningType[8]);
-  const shouldShowThroughlineLink = channelId(warningType[8]).useShouldShowThroughlineLink();
+  const shouldShowHelplineLink = obj2.useShouldShowHelplineLink();
   let obj3 = channelId(warningType[8]);
-  const tmp5 = null != channelId(warningType[9]).useSafetyToolsButtonTooltipForChannel(channelId);
-  const isNudgeWarning = tmp5;
+  const shouldShowThroughlineLink = obj3.useShouldShowThroughlineLink();
   let obj4 = channelId(warningType[9]);
+  const tmp5 = null != obj4.useSafetyToolsButtonTooltipForChannel(channelId);
+  const isNudgeWarning = tmp5;
+  let obj5 = channelId(warningType[10]);
   let items = [actionRowGroup];
   let items1 = [recipientId];
-  const stateFromStores = channelId(warningType[10]).useStateFromStores(items, () => RelationshipStore.isBlocked(recipientId), items1);
-  let obj5 = channelId(warningType[10]);
+  const stateFromStores = obj5.useStateFromStores(items, () => RelationshipStore.isBlocked(recipientId), items1);
+  let obj6 = channelId(warningType[10]);
   let items2 = [actionRowGroup];
   let items3 = [recipientId];
-  const stateFromStores1 = channelId(warningType[10]).useStateFromStores(items2, () => RelationshipStore.isIgnored(recipientId), items3);
+  const stateFromStores1 = obj6.useStateFromStores(items2, () => RelationshipStore.isIgnored(recipientId), items3);
   const items4 = [channelId, warningId, warningType, recipientId, tmp5];
   callback = recipientId.useCallback((cta) => {
-    SafetyWarningUtils.trackCtaEvent({ channelId, warningId, senderId: recipientId, warningType, cta, isNudgeWarning });
+    const obj = SafetyWarningUtils;
+    const obj2 = { channelId, warningId, senderId: recipientId, warningType, cta, isNudgeWarning };
+    obj.trackCtaEvent(obj2);
   }, items4);
   const items5 = [stateFromStores, stateFromStores1, shouldShowHelplineLink, shouldShowThroughlineLink, callback, recipientId, channelId, warningId, warningType, onClose, lastChannelMessage];
   const memo = recipientId.useMemo(() => {
-    const tmp4 = jsx(ChevronSmallRightIcon.ChevronSmallRightIcon, { size: "md", color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT });
-    let obj2 = { label: null, subLabel: null, icon: null, IconComponent: null, trailing: null, onPress: null };
-    const intl = util.intl;
-    obj2.label = intl.string(util.t.ZSbbMJ);
-    const intl2 = util.intl;
-    obj2.subLabel = intl2.string(util.t.iNcsrW);
-    obj2.icon = _modDef8425;
-    obj2.IconComponent = HeartIcon.HeartIcon;
-    obj2.trailing = tmp4;
-    obj2.onPress = function onPress() {
-      closure_0 = shouldShowHelplineLink(channelId);
-      const obj = warningId(warningType[16]);
-      obj.openLazy(channelId(warningType[18])(warningType[17], warningType.paths), shouldShowHelplineLink(channelId), {
-        recipientId,
-        channelId,
-        warningId,
-        warningType,
-        onClose() {
-          warningId(warningType[16]).hideActionSheet(closure_0);
-        },
-        trackAnalyticsEvent
-      });
-      trackAnalyticsEvent(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_CTL);
+    let EyeSlashIcon;
+    let intl;
+    let intl10;
+    let intl11;
+    let intl12;
+    let intl13;
+    let intl14;
+    let intl15;
+    let intl16;
+    let intl17;
+    let intl2;
+    let intl3;
+    let intl4;
+    let intl5;
+    let intl6;
+    let items3;
+    let string2Result;
+    let stringResult;
+    let stringResult1;
+    let trackAnalyticsEvent;
+    let tmp2 = dependencyMap;
+    const ChevronSmallRightIcon = ChevronSmallRightIcon2.ChevronSmallRightIcon;
+    const tmp4 = <ChevronSmallRightIcon size="md" color={nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT} />;
+    let obj2 = {
+      label: intl.string(intl18.t.ZSbbMJ),
+      subLabel: intl2.string(intl18.t.iNcsrW),
+      icon: AssetRegistryDefault2,
+      IconComponent: HeartIcon.HeartIcon,
+      trailing: tmp4,
+      onPress() {
+        let closure_0 = shouldShowHelplineLink(channelId);
+        const openLazy = warningId(warningType[16]).openLazy;
+        warningId(warningType[16]);
+        let obj = {
+          recipientId,
+          channelId,
+          warningId,
+          warningType,
+          onClose() {
+            const obj = warningId(warningType[16]);
+            obj.hideActionSheet(closure_0);
+          },
+          trackAnalyticsEvent
+        };
+        const tmp2 = channelId(warningType[18])(warningType[17], warningType.paths);
+        openLazy(tmp2, shouldShowHelplineLink(channelId), obj);
+        trackAnalyticsEvent(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_CTL);
+      }
     };
-    const obj3 = { label: null, subLabel: null, icon: null, IconComponent: null, onPress: null };
-    const intl3 = util.intl;
-    obj3.label = intl3.string(util.t.ZSbbMJ);
-    const intl4 = util.intl;
-    obj3.subLabel = intl4.string(util.t.S9O1ZZ);
-    obj3.icon = _modDef8425;
-    obj3.IconComponent = HeartIcon.HeartIcon;
-    obj3.onPress = function onPress() {
-      warningId(warningType[19]).openURL(shouldShowThroughlineLink);
-      trackAnalyticsEvent(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_THROUGHLINE);
+    intl = intl18.intl;
+    intl2 = intl18.intl;
+    let obj3 = {
+      label: intl3.string(intl18.t.ZSbbMJ),
+      subLabel: intl4.string(intl18.t.S9O1ZZ),
+      icon: AssetRegistryDefault2,
+      IconComponent: HeartIcon.HeartIcon,
+      onPress() {
+        const obj = warningId(warningType[19]);
+        obj.openURL(shouldShowThroughlineLink);
+        trackAnalyticsEvent(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_THROUGHLINE);
+      }
     };
-    let obj4 = { label: null, subLabel: null, icon: null, IconComponent: null, onPress: null };
-    const intl5 = util.intl;
-    obj4.label = intl5.string(util.t.ZSbbMJ);
-    const intl6 = util.intl;
-    obj4.subLabel = intl6.string(util.t.g5uwC5);
-    obj4.icon = _modDef8425;
-    obj4.IconComponent = HeartIcon.HeartIcon;
-    obj4.onPress = function onPress() {
-      warningId(warningType[19]).openURL(closure_9);
-      trackAnalyticsEvent(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_NO_FILTR);
+    intl3 = intl18.intl;
+    intl4 = intl18.intl;
+    let obj4 = {
+      label: intl5.string(intl18.t.ZSbbMJ),
+      subLabel: intl6.string(intl18.t.g5uwC5),
+      icon: AssetRegistryDefault2,
+      IconComponent: HeartIcon.HeartIcon,
+      onPress() {
+        const obj = warningId(warningType[19]);
+        obj.openURL(isNudgeWarning);
+        trackAnalyticsEvent(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_NO_FILTR);
+      }
     };
-    const intl7 = util.intl;
+    intl5 = intl18.intl;
+    intl6 = intl18.intl;
+    const intl7 = intl18.intl;
     const string = intl7.string;
-    const t = util.t;
+    const t = intl18.t;
     if (stateFromStores1) {
-      let stringResult = string(t["9e0wLn"]);
+      stringResult = string(t["9e0wLn"]);
     } else {
       stringResult = string(t.B7ZT06);
     }
-    let obj5 = { label: stringResult, subLabel: null, icon: null, IconComponent: null, disabled: null, onPress: null };
-    let stringResult1;
-    if (!stateFromStores1) {
-      const intl8 = tmp(1115).intl;
-      stringResult1 = intl8.string(tmp(1115).t.fCfp49);
-    }
-    obj5.subLabel = stringResult1;
-    obj5.icon = importDefault(stateFromStores1 ? 6576 : 6574);
-    if (stateFromStores1) {
-      let EyeSlashIcon = tmp(6575).EyeIcon;
-    } else {
-      EyeSlashIcon = tmp(6573).EyeSlashIcon;
-    }
-    obj5.IconComponent = EyeSlashIcon;
-    obj5.disabled = stateFromStores;
-    obj5.onPress = function onPress() {
-      const obj = warningId(warningType[24]);
-      if (stateFromStores1) {
-        obj.unignoreUser(recipientId, lastChannelMessage, closure_1_0);
-        trackAnalyticsEvent(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_UNIGNORE);
-      } else {
-        obj.ignoreUser(recipientId, lastChannelMessage, closure_1_0);
-        trackAnalyticsEvent(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_IGNORE);
+    let obj5 = {
+      label: stringResult,
+      subLabel: stringResult1,
+      icon: tmp3(tmp5 ? 6459 : 6457),
+      IconComponent: EyeSlashIcon,
+      disabled: stateFromStores,
+      onPress() {
+        const obj = warningId(warningType[24]);
+        if (stateFromStores1) {
+          obj.unignoreUser(recipientId, lastChannelMessage, closure_1_0);
+          trackAnalyticsEvent(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_UNIGNORE);
+        } else {
+          obj.ignoreUser(recipientId, lastChannelMessage, closure_1_0);
+          trackAnalyticsEvent(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_IGNORE);
+        }
       }
     };
+    stringResult1 = undefined;
+    if (!stateFromStores1) {
+      const intl8 = intl18.intl;
+      stringResult1 = intl8.string(intl18.t.fCfp49);
+    }
+    if (stateFromStores1) {
+      EyeSlashIcon = EyeIcon.EyeIcon;
+    } else {
+      EyeSlashIcon = EyeSlashIcon2.EyeSlashIcon;
+    }
     const items = [obj5, , ];
-    const intl9 = tmp(1115).intl;
+    const intl9 = intl18.intl;
     const string2 = intl9.string;
-    const t2 = tmp(1115).t;
+    const t2 = intl18.t;
     if (stateFromStores) {
-      let string2Result = string2(t2.Hro40y);
+      string2Result = string2(t2.Hro40y);
     } else {
       string2Result = string2(t2.oDxaKy);
     }
-    const obj6 = { sectionKey: "action", buttons: null };
-    const obj7 = { label: string2Result, subLabel: null, icon: null, IconComponent: null, onPress: null };
-    const intl10 = tmp(1115).intl;
-    obj7.subLabel = intl10.string(util.t.Lj37az);
-    obj7.icon = _modDef11154;
-    obj7.IconComponent = CircleXIcon.CircleXIcon;
-    obj7.onPress = function onPress() {
-      if (stateFromStores) {
-        let obj = { location: lastChannelMessage };
-        tmp(tmp2[24]).unblockUser(recipientId, obj);
-        const tmpResult = tmp(tmp2[24]);
-        const result = warningId(warningType[27]).showUnblockSuccessToast(recipientId, closure_1_0);
-        trackAnalyticsEvent(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_UNBLOCK);
-        const obj5 = warningId(warningType[27]);
-      } else {
-        const obj2 = {
-          importer() {
-              return channelId(warningType[18])(warningType[29], warningType.paths).then((result) => {
-                closure_0 = result.default;
-                return () => { ... };
-              });
-            },
-          isDismissable: false
-        };
-        tmp(tmp2[28]).openLazy(obj2);
-        const tmpResult2 = tmp(tmp2[28]);
+    const obj6 = { sectionKey: "action", buttons: items };
+    const obj7 = {
+      label: string2Result,
+      subLabel: intl10.string(intl18.t.Lj37az),
+      icon: AssetRegistryDefault5,
+      IconComponent: CircleXIcon.CircleXIcon,
+      onPress() {
+        if (stateFromStores) {
+          let obj = { location: lastChannelMessage };
+          const tmpResult = warningId(warningType[24]);
+          tmpResult.unblockUser(recipientId, obj);
+          const obj5 = warningId(warningType[27]);
+          const result = obj5.showUnblockSuccessToast(recipientId, closure_1_0);
+          trackAnalyticsEvent(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_UNBLOCK);
+        } else {
+          const obj2 = {
+            importer() {
+                let senderId;
+                const promise = channelId(warningType[18])(warningType[29], warningType.paths);
+                return promise.then((result) => {
+                  let closure_0 = result.default;
+                  return (arg0) => {
+                    const obj = { channelId, warningId, warningType, senderId, analyticsBlockContext: closure_3_0(closure_3_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_BLOCK_CONFIRM, analyticsBlockAndReportContext: closure_3_0(closure_3_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_BLOCK_AND_REPORT_CONFIRM, analyticsCancelContext: closure_3_0(closure_3_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_BLOCK_CANCEL };
+                    const merged = Object.assign(arg0);
+                    return closure_3_11(closure_0, obj);
+                  };
+                });
+              },
+            isDismissable: false
+          };
+          const tmpResult2 = warningId(warningType[28]);
+          tmpResult2.openLazy(obj2);
+        }
       }
     };
+    intl10 = intl18.intl;
     items[1] = obj7;
-    const obj8 = { label: null, subLabel: null, icon: null, IconComponent: null, onPress: null };
-    const intl11 = tmp(1115).intl;
-    obj8.label = intl11.string(util.t.X27yhD);
-    const intl12 = tmp(1115).intl;
-    obj8.subLabel = intl12.string(util.t["0tydOa"]);
-    obj8.icon = _modDef8312;
-    obj8.IconComponent = FlagIcon.FlagIcon;
-    obj8.onPress = function onPress() {
-      onClose();
-      const result = channelId(warningType[32]).showReportModalForInappropriateConversationSafetyAlert(lastChannelMessage);
-      trackAnalyticsEvent(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_REPORT);
+    const obj8 = {
+      label: intl11.string(intl18.t.X27yhD),
+      subLabel: intl12.string(intl18.t["0tydOa"]),
+      icon: AssetRegistryDefault,
+      IconComponent: FlagIcon.FlagIcon,
+      onPress() {
+        onClose();
+        const obj = channelId(warningType[32]);
+        const result = obj.showReportModalForInappropriateConversationSafetyAlert(lastChannelMessage);
+        trackAnalyticsEvent(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_REPORT);
+      }
     };
+    intl11 = intl18.intl;
+    intl12 = intl18.intl;
     items[2] = obj8;
-    obj6.buttons = items;
     const items1 = [obj6, , ];
-    const obj9 = { label: null, subLabel: null, icon: null, IconComponent: null, trailing: null, onPress: null };
-    const intl13 = tmp(1115).intl;
-    obj9.label = intl13.string(util.t.syuaPI);
-    const intl14 = tmp(1115).intl;
-    obj9.subLabel = intl14.string(util.t.LLBnNk);
-    obj9.icon = _modDef9562;
-    obj9.IconComponent = MusicIcon.MusicIcon;
-    obj9.trailing = tmp4;
-    obj9.onPress = function onPress() {
-      warningId(warningType[16]).hideActionSheet();
-      const obj = warningId(warningType[16]);
-      warningId(warningType[35]).pushLazy(channelId(warningType[18])(warningType[36], warningType.paths), {
-        onClose() {
+    const obj9 = {
+      label: intl13.string(intl18.t.syuaPI),
+      subLabel: intl14.string(intl18.t.LLBnNk),
+      icon: AssetRegistryDefault4,
+      IconComponent: MusicIcon.MusicIcon,
+      trailing: tmp4,
+      onPress() {
+        const obj = warningId(warningType[16]);
+        obj.hideActionSheet();
+        const obj2 = warningId(warningType[35]);
+        const obj3 = {
+          onClose() {
 
-        }
-      }, stateFromStores);
-      trackAnalyticsEvent(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_VIBING_WUMPUS);
+          }
+        };
+        obj2.pushLazy(channelId(warningType[18])(warningType[36], warningType.paths), obj3, stateFromStores);
+        trackAnalyticsEvent(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_VIBING_WUMPUS);
+      }
     };
+    intl13 = intl18.intl;
+    intl14 = intl18.intl;
     const items2 = [obj9, , ];
-    const obj10 = { label: null, subLabel: null, icon: null, IconComponent: null, trailing: null, onPress: null };
-    const intl15 = tmp(1115).intl;
-    obj10.label = intl15.string(util.t["7LgVmt"]);
-    const intl16 = tmp(1115).intl;
-    obj10.subLabel = intl16.string(util.t.pwoRjc);
-    obj10.icon = _modDef11159;
-    obj10.IconComponent = EducationIcon.EducationIcon;
-    obj10.trailing = tmp4;
-    obj10.onPress = function onPress() {
-      closure_0 = shouldShowHelplineLink(channelId);
-      const obj = warningId(warningType[16]);
-      obj.openLazy(channelId(warningType[18])(warningType[39], warningType.paths), shouldShowHelplineLink(channelId), {
-        recipientId,
-        channelId,
-        warningId,
-        warningType,
-        onClose() {
-          warningId(warningType[16]).hideActionSheet(closure_0);
-        }
-      });
-      trackAnalyticsEvent(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_SAFETY_TIPS);
+    const obj10 = {
+      label: intl15.string(intl18.t["7LgVmt"]),
+      subLabel: intl16.string(intl18.t.pwoRjc),
+      icon: AssetRegistryDefault6,
+      IconComponent: EducationIcon.EducationIcon,
+      trailing: tmp4,
+      onPress() {
+        let closure_0 = shouldShowHelplineLink(channelId);
+        const openLazy = warningId(warningType[16]).openLazy;
+        warningId(warningType[16]);
+        let obj = {
+          recipientId,
+          channelId,
+          warningId,
+          warningType,
+          onClose() {
+            const obj = warningId(warningType[16]);
+            obj.hideActionSheet(closure_0);
+          }
+        };
+        const tmp2 = channelId(warningType[18])(warningType[39], warningType.paths);
+        openLazy(tmp2, shouldShowHelplineLink(channelId), obj);
+        trackAnalyticsEvent(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_SAFETY_TIPS);
+      }
     };
+    intl15 = intl18.intl;
+    intl16 = intl18.intl;
     items2[1] = obj10;
-    if (!shouldShowHelplineLink) {
-      if (shouldShowThroughlineLink) {
+    const tmp9 = shouldShowHelplineLink;
+    if (!tmp9) {
+      const tmp10 = shouldShowThroughlineLink;
+      if (tmp10) {
         obj4 = obj3;
       }
       obj2 = obj4;
     }
     items2[2] = obj2;
     items1[1] = { sectionKey: "support", buttons: items2 };
-    const obj11 = { sectionKey: "info", buttons: null };
-    const obj12 = { label: null, icon: null, IconComponent: null, trailing: null, onPress: null };
-    const intl17 = tmp(1115).intl;
-    obj12.label = intl17.string(util.t.otdt24);
-    obj12.icon = _modDef8895;
-    obj12.IconComponent = ShieldIcon.ShieldIcon;
-    obj12.trailing = tmp4;
-    obj12.onPress = function onPress() {
-      closure_0 = shouldShowHelplineLink(channelId);
-      const obj = warningId(warningType[16]);
-      obj.openLazy(channelId(warningType[18])(warningType[42], warningType.paths), shouldShowHelplineLink(channelId), {
-        recipientId,
-        channelId,
-        warningId,
-        warningType,
-        onClose() {
-          warningId(warningType[16]).hideActionSheet(closure_0);
-        }
-      });
-      trackAnalyticsEvent(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_ABOUT_SAFETY_ALERTS);
+    const obj11 = { sectionKey: "info", buttons: items3 };
+    const obj12 = {
+      label: intl17.string(intl18.t.otdt24),
+      icon: AssetRegistryDefault3,
+      IconComponent: ShieldIcon.ShieldIcon,
+      trailing: tmp4,
+      onPress() {
+        let closure_0 = shouldShowHelplineLink(channelId);
+        const openLazy = warningId(warningType[16]).openLazy;
+        warningId(warningType[16]);
+        let obj = {
+          recipientId,
+          channelId,
+          warningId,
+          warningType,
+          onClose() {
+            const obj = warningId(warningType[16]);
+            obj.hideActionSheet(closure_0);
+          }
+        };
+        const tmp2 = channelId(warningType[18])(warningType[42], warningType.paths);
+        openLazy(tmp2, shouldShowHelplineLink(channelId), obj);
+        trackAnalyticsEvent(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_ABOUT_SAFETY_ALERTS);
+      }
     };
-    const items3 = [obj12];
-    obj11.buttons = items3;
+    intl17 = intl18.intl;
+    items3 = [obj12];
     items1[2] = obj11;
     return items1;
   }, items5);
-  let obj7 = { headerTitle: null, channelId: null, recipientId: null, warningId: null, warningType: null, onClose: null, children: null };
-  let obj6 = channelId(warningType[10]);
-  let intl = channelId(warningType[13]).intl;
-  obj7.headerTitle = intl.string(channelId(warningType[13]).t.MAhAp6);
-  obj7.channelId = channelId;
-  obj7.recipientId = recipientId;
-  obj7.warningId = warningId;
-  obj7.warningType = warningType;
-  obj7.onClose = onClose;
-  const tmp9 = warningId(warningType[43]);
-  obj7.children = stateFromStores1(onClose, {
+  let obj7 = { headerTitle: intl.string(channelId(warningType[13]).t.MAhAp6), channelId, recipientId, warningId, warningType, onClose, children: stateFromStores1(onClose, obj8) };
+  let tmp9 = warningId(warningType[43]);
+  intl = channelId(warningType[13]).intl;
+  obj8 = {
     style: tmp.container,
     children: memo.map((buttons) => {
-      const obj = { style: actionRowGroup.actionRowGroup, children: null };
-      const obj2 = { hasIcons: true, children: null };
-      buttons = buttons.buttons;
-      obj2.children = buttons.map((item, index) => {
-        ({ label, subLabel, IconComponent, icon, trailing, onPress, disabled } = item);
-        return stateFromStores1(channelId(6103).TableRow, { label, subLabel, onPress, trailing, disabled, icon: stateFromStores1(channelId(6109).TableRowIcon, { source: icon, IconComponent }) }, index);
+      ({
+        hasIcons: true,
+        children: buttons.map((item, index) => {
+          let IconComponent;
+          let disabled;
+          let icon;
+          let label;
+          let onPress;
+          let subLabel;
+          let trailing;
+          ({ label, subLabel, IconComponent, icon, trailing, onPress, disabled } = item);
+          const obj = { label, subLabel, onPress, trailing, disabled, icon: stateFromStores1(channelId(warningType[46]).TableRowIcon, { source: icon, IconComponent }) };
+          const TableRow = channelId(warningType[45]).TableRow;
+          return stateFromStores1(TableRow, obj, index);
+        })
       });
-      obj.children = jsx(TableRowGroup.TableRowGroup, { hasIcons: true, children: null });
+      buttons = buttons.buttons;
+      const TableRowGroup = TableRowGroup2.TableRowGroup;
       return <View key={arg0.sectionKey} style={actionRowGroup.actionRowGroup}>{null}</View>;
     })
-  });
+  };
   return stateFromStores1(tmp9, obj7);
 };

@@ -1,21 +1,19 @@
-// Module ID: 16612
-// Function ID: 16613
+// Module ID: 16692
+// Function ID: 16693
 // Name: vibegrationsPublishCard
-// Dependencies: [12852, 3714, 2]
-// Exports: isVibegrationsPublishCtaVisible, livePublishCardMessageId, outdatedNoticeRenderId, publishCardServerName, publishNoticeMessage, showsOutdatedNotice, withLivePublishCard
+// Dependencies: [3723, 2]
+// Exports: isVibegrationsPublishCtaVisible, livePublishCardMessageId, publishCardServerName, publishNoticeMessage, showsOutdatedNotice, withLivePublishCard
 
-// Module 16612 (vibegrationsPublishCard)
-import _modDef3714 from "module_3714" /* 3714 */;
-import VibegrationsChatStore from "VibegrationsChatStore" /* 12852 */;
+// Module 16692 (vibegrationsPublishCard)
+import _modDef3723 from "module_3723" /* 3723 */;
 import size from "module_2" /* 2 */;
 
-const turnSettled = VibegrationsChatStore.turnSettled;
 const result = size.fileFinishedImporting("modules/vibegrations/lib/vibegrationsPublishCard.tsx");
 
-export const isVibegrationsPublishCtaVisible = function isVibegrationsPublishCtaVisible(tmp5Result) {
-  let tmp = null != tmp5Result;
+export const isVibegrationsPublishCtaVisible = function isVibegrationsPublishCtaVisible(publish) {
+  let tmp = null != publish;
   if (tmp) {
-    const status = tmp5Result.status;
+    const status = publish.status;
     let state;
     if (status != null) {
       state = status.state;
@@ -49,50 +47,23 @@ export const livePublishCardMessageId = function livePublishCardMessageId(arg0, 
     return null;
   }
 };
-export const outdatedNoticeRenderId = function outdatedNoticeRenderId(memo, stateFromStores2) {
-  let tmp3;
-  if ("changes" !== stateFromStores2) {
-    return null;
-  } else {
-    let diff = memo.length - 1;
-    if (0 <= diff) {
-      while (true) {
-        tmp3 = memo[diff];
-        if ("user" !== tmp3.role) {
-          if ("publish_notice" !== tmp3.kind) {
-            if (true !== tmp3.interrupted) {
-              break;
-            }
-          }
-        }
-        diff = diff - 1;
-      }
-      let render_id = null;
-      if (turnSettled(tmp3)) {
-        render_id = tmp3.render_id;
-      }
-      return render_id;
-    }
-    return null;
-  }
-};
 export const showsOutdatedNotice = function showsOutdatedNotice(isUpdate) {
-  return null != isUpdate && isUpdate.isUpdate && null == isUpdate.disabledReason;
+  return null != isUpdate && isUpdate.isUpdate && null == isUpdate.disabledReason && true !== isUpdate.publishing;
 };
 export const publishNoticeMessage = function publishNoticeMessage(notice) {
   if (notice.update) {
     const surface = notice.surface;
     if ("bot" === surface) {
-      return _modDef3714.ncJb2S;
+      return _modDef3723.ncJb2S;
     } else if ("widget" === surface) {
-      return _modDef3714.gSpqdm;
+      return _modDef3723.gSpqdm;
     } else if ("automod" === surface) {
-      return _modDef3714.M3cBMT;
+      return _modDef3723.M3cBMT;
     } else {
-      return _modDef3714.tg9fgb;
+      return _modDef3723.tg9fgb;
     }
   } else {
-    return _modDef3714.ogEl54;
+    return _modDef3723.ogEl54;
   }
 };
 export const withLivePublishCard = function withLivePublishCard(stateFromStores1, stateFromStores2) {
@@ -109,21 +80,14 @@ export const withLivePublishCard = function withLivePublishCard(stateFromStores1
     }
   }
   let mapped = stateFromStores1;
-  if (!stateFromStores1.every((publishCta) => {
-    let tmp = null == publishCta.publishCta;
-    if (!tmp) {
-      tmp = publishCta.id === id;
-    }
-    return tmp;
-  })) {
+  if (!stateFromStores1.every((publishCta) => null == publishCta.publishCta || publishCta.id === id)) {
     mapped = stateFromStores1.map((publishCta) => {
       let tmp = publishCta;
       if (null != publishCta.publishCta) {
         tmp = publishCta;
         if (publishCta.id !== id) {
-          const obj = {};
+          const obj = { publishCta: null };
           const merged = Object.assign(publishCta);
-          obj.publishCta = null;
           tmp = obj;
         }
       }

@@ -1,74 +1,156 @@
-// Module ID: 16399
-// Function ID: 16400
+// Module ID: 16473
+// Function ID: 16474
 // Name: useMainTabsChannelScreenStyles
-// Dependencies: [19, 17, 4845, 576, 4595, 2]
-// Exports: useMainTabsChannelScreenStyles
+// Dependencies: [19, 17, 4890, 587, 558, 576, 4612, 2]
 
-// Module 16399 (useMainTabsChannelScreenStyles)
-import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4595 */;
-import noop from "module_19" /* 19 */;
+// Module 16473 (useMainTabsChannelScreenStyles)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import react from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const createStyles = fn(4845);
-let obj2 = { elevation: null };
-const merged = Object.assign(fn(17).StyleSheet.absoluteFillObject);
+let obj2;
+const StyleSheet = react_native.StyleSheet;
+let createStyles = createStyles_mod;
+let obj = { elevation: obj2 };
+obj2 = {};
+createStyles = createStyles.createStyles;
+const merged = Object.assign(StyleSheet.absoluteFillObject);
 const merged1 = Object.assign(nativeDefault.shadows.SHADOW_LOW);
-obj2.elevation = {};
-let closure_3 = createStyles.createStyles(obj2);
+let closure_3 = createStyles(obj);
 let __initData = { code: "function useMainTabsChannelScreenStylesTsx1(){const{freezeValue,isDragging,translateX,maxWidth,elevationStyle,isCompletelyCovered}=this.__closure;var _freezeValue,_isCompletelyCovered;(_freezeValue=freezeValue)===null||_freezeValue===void 0||_freezeValue.get();const showBorder=isDragging.get()||translateX.get()!==0&&translateX.get()!==maxWidth;return{transform:[{translateX:translateX.get()}],shadowOpacity:showBorder?elevationStyle.shadowOpacity:0,elevation:showBorder?elevationStyle.elevation:0,opacity:(_isCompletelyCovered=isCompletelyCovered)!==null&&_isCompletelyCovered!==void 0&&_isCompletelyCovered.get()?0:1};}" };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/panels/useMainTabsChannelScreenStyles.tsx");
-
-export const useMainTabsChannelScreenStyles = function useMainTabsChannelScreenStyles(isDragging, translateX, maxWidth, derivedValue, parentFreezeValue) {
-  closure_2 = maxWidth;
-  __initData = parentFreezeValue;
-  const tmp = derivedValue();
-  const elevation = tmp.elevation;
-  const fn = function c() {
-    if (parentFreezeValue != null) {
-      value = parentFreezeValue.get();
+let __initData2 = { code: "function useMainTabsChannelScreenStylesTsx2(){const{freezeValue,isDragging,translateX,maxWidth,elevationStyle,isCompletelyCovered}=this.__closure;var _freezeValue,_isCompletelyCovered;(_freezeValue=freezeValue)===null||_freezeValue===void 0||_freezeValue.get();const showBorder=isDragging.get()||translateX.get()!==0&&translateX.get()!==maxWidth;return{transform:[{translateX:translateX.get()}],shadowOpacity:showBorder?elevationStyle.shadowOpacity:0,elevation:showBorder?elevationStyle.elevation:0,opacity:(_isCompletelyCovered=isCompletelyCovered)!==null&&_isCompletelyCovered!==void 0&&_isCompletelyCovered.get()?0:1};}" };
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDragging, translateX, maxWidth, isCompletelyCovered, freezeValue) => {
+  let closure_0 = isDragging;
+  let closure_1 = translateX;
+  let closure_2 = maxWidth;
+  closure_3 = isCompletelyCovered;
+  __initData = freezeValue;
+  let obj = react2;
+  const cResult = obj.c(3);
+  const tmp2 = closure_3();
+  const elevation = tmp2.elevation;
+  let obj2 = ReanimatedRexport;
+  const fn = function y() {
+    let items;
+    let num2;
+    let num3;
+    let num4;
+    const obj = closure_4;
+    if (closure_4 != null) {
+      const value = obj.get();
     }
-    let value3 = isDragging.get();
+    let value3 = closure_0.get();
     if (!value3) {
-      let tmp3 = 0 !== translateX.get();
+      let tmp3 = 0 !== closure_1.get();
+      const obj2 = closure_1;
       if (tmp3) {
         tmp3 = obj2.get() !== closure_2;
       }
       value3 = tmp3;
-      obj2 = translateX;
     }
-    const obj3 = { transform: null, shadowOpacity: null, elevation: null, opacity: null };
-    const items = [{ translateX: translateX.get() }];
-    obj3.transform = items;
-    let num2 = 0;
+    const obj3 = { transform: items, shadowOpacity: num2, elevation: num3, opacity: num4 };
+    items = [{ translateX: closure_1.get() }];
+    num2 = 0;
+    ({ translateX: closure_1.get() });
     if (value3) {
       num2 = elevation.shadowOpacity;
     }
-    obj3.shadowOpacity = num2;
-    let num3 = 0;
+    num3 = 0;
     if (value3) {
       num3 = elevation.elevation;
     }
-    obj3.elevation = num3;
     let value4;
-    if (derivedValue != null) {
-      value4 = derivedValue.get();
+    const obj5 = closure_3;
+    if (closure_3 != null) {
+      value4 = obj5.get();
     }
-    let num4 = 1;
+    num4 = 1;
     if (value4) {
       num4 = 0;
     }
-    obj3.opacity = num4;
     return obj3;
   };
-  fn.__closure = { freezeValue: parentFreezeValue, isDragging, translateX, maxWidth, elevationStyle: elevation, isCompletelyCovered: derivedValue };
+  fn.__closure = { freezeValue, isDragging, translateX, maxWidth, elevationStyle: elevation, isCompletelyCovered };
   fn.__workletHash = 16765484569296;
   fn.__initData = __initData;
-  const animatedStyle = ReanimatedRexport.useAnimatedStyle(fn);
+  const animatedStyle = obj2.useAnimatedStyle(fn);
+  if (cResult[0] === animatedStyle) {
+    let tmp4;
+    if (cResult[1] === tmp2.elevation) {
+      tmp4 = cResult[2];
+    }
+    return tmp4;
+  }
+  let items = [tmp2.elevation, animatedStyle];
+  cResult[0] = animatedStyle;
+  cResult[1] = tmp2.elevation;
+  cResult[2] = items;
+  tmp4 = items;
+}) : ((isDragging, translateX, maxWidth, isCompletelyCovered, freezeValue) => {
+  let closure_0 = isDragging;
+  let closure_1 = translateX;
+  let closure_2 = maxWidth;
+  closure_3 = isCompletelyCovered;
+  let closure_4 = freezeValue;
+  const tmp = closure_3();
+  __initData2 = tmp;
+  const elevation = tmp.elevation;
+  let obj = ReanimatedRexport;
+  const fn = function c() {
+    let items;
+    let num2;
+    let num3;
+    let num4;
+    const obj = closure_4;
+    if (closure_4 != null) {
+      const value = obj.get();
+    }
+    let value3 = closure_0.get();
+    if (!value3) {
+      let tmp3 = 0 !== closure_1.get();
+      const obj2 = closure_1;
+      if (tmp3) {
+        tmp3 = obj2.get() !== closure_2;
+      }
+      value3 = tmp3;
+    }
+    const obj3 = { transform: items, shadowOpacity: num2, elevation: num3, opacity: num4 };
+    items = [{ translateX: closure_1.get() }];
+    num2 = 0;
+    ({ translateX: closure_1.get() });
+    if (value3) {
+      num2 = elevation.shadowOpacity;
+    }
+    num3 = 0;
+    if (value3) {
+      num3 = elevation.elevation;
+    }
+    let value4;
+    const obj5 = closure_3;
+    if (closure_3 != null) {
+      value4 = obj5.get();
+    }
+    num4 = 1;
+    if (value4) {
+      num4 = 0;
+    }
+    return obj3;
+  };
+  fn.__closure = { freezeValue, isDragging, translateX, maxWidth, elevationStyle: elevation, isCompletelyCovered };
+  fn.__workletHash = 2313603447059;
+  fn.__initData = __initData2;
+  const animatedStyle = obj.useAnimatedStyle(fn);
   let items = [tmp, animatedStyle];
-  return noop.useMemo(() => {
+  return react.useMemo(() => {
     const items = [elevation.elevation, animatedStyle];
     return items;
   }, items);
-};
+});
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/panels/useMainTabsChannelScreenStyles.tsx");
+
+export const useMainTabsChannelScreenStyles = tmp5;

@@ -1,17 +1,18 @@
-// Module ID: 9976
-// Function ID: 9977
+// Module ID: 9926
+// Function ID: 9927
 // Name: PortalKeyboardModalContext
-// Dependencies: [19, 2]
+// Dependencies: [19, 558, 2]
 // Exports: useIsPortalKeyboardInModal
 
-// Module 9976 (PortalKeyboardModalContext)
-import noop from "module_19" /* 19 */;
+// Module 9926 (PortalKeyboardModalContext)
+import react from "react" /* 19 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const context = noop.createContext(false);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/keyboard/native/PortalKeyboardModalContext.tsx");
+const context = react.createContext(false);
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const result1 = size.fileFinishedImporting("modules/keyboard/native/PortalKeyboardModalContext.tsx");
 
 export const PortalKeyboardInModalContext = context;
-export const useIsPortalKeyboardInModal = function useIsPortalKeyboardInModal() {
-  return noop.useContext(context);
-};
+export const useIsPortalKeyboardInModal = () => react.useContext(context);

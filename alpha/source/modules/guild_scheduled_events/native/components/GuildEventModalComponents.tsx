@@ -1,205 +1,547 @@
-// Module ID: 9181
-// Function ID: 9182
+// Module ID: 9186
+// Function ID: 9187
 // Name: GuildEventModalComponents
-// Dependencies: [19, 17, 2050, 1074, 21, 4845, 6210, 1115, 9139, 4841, 8561, 1876, 4809, 8921, 1981, 9182, 9183, 9184, 5599, 9185, 9186, 8268, 5595, 6183, 6186, 6692, 4450, 9188, 5463, 2]
-// Exports: GuildEventDatetime, GuildEventDescription, GuildEventEntityTypeSelection, GuildEventLocation, GuildEventRecurrence, GuildEventTopic
+// Dependencies: [19, 17, 2057, 1085, 21, 4890, 558, 576, 1126, 6098, 9163, 4886, 8567, 1881, 4854, 8949, 1987, 9187, 9188, 9189, 5885, 9190, 9191, 9193, 5881, 6071, 6072, 6580, 4461, 9194, 5593, 2]
+// Exports: GuildEventDatetime, GuildEventRecurrence
 
-// Module 9181 (GuildEventModalComponents)
-import util from "util" /* 1115 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1876 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 5599 */;
-import TableRadioGroup from "TableRadioGroup" /* 6183 */;
-import TableRadioRow from "TableRadioRow" /* 6186 */;
-import TextInput from "TextInput" /* 6210 */;
-import TextArea from "TextArea" /* 6692 */;
-import ScheduleUtils from "ScheduleUtils" /* 9139 */;
-import useGuildsUserCanStartStageIn from "useGuildsUserCanStartStageIn" /* 9183 */;
-import _modDef9184 from "module_9184" /* 9184 */;
-import _modDef9185 from "module_9185" /* 9185 */;
-import LocationIcon from "LocationIcon" /* 9186 */;
-import noop from "module_19" /* 19 */;
+// Module 9186 (GuildEventModalComponents)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1085 */;
+import intl7 from "intl" /* 1126 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1881 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import StageIcon from "StageIcon" /* 5881 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 5885 */;
+import TableRadioRow2 from "TableRadioRow" /* 6071 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 6072 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 6098 */;
+import ScheduleUtils from "ScheduleUtils" /* 9163 */;
+import useGuildsUserCanStartStageIn from "useGuildsUserCanStartStageIn" /* 9188 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9189 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9190 */;
+import LocationIcon from "LocationIcon" /* 9191 */;
+import react from "react" /* 19 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const _modDef8268 = tmp4(8268);
-require = fn;
-const View = fn(17).View;
-const GuildScheduledEventsConstants = fn(2050);
-({ GuildScheduledEventEntityTypes: metroRequire, GUILD_EVENT_MAX_DESCRIPTION_LENGTH: closure_7, MAX_EVENT_LOCATION_LENGTH: closure_8, GUILD_EVENT_MAX_NAME_LENGTH: closure_9 } = GuildScheduledEventsConstants);
-const GuildFeatures = fn(1074).GuildFeatures;
-const jsxProd = fn(21);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4845);
+let dependencyMap, name;
+
+let c9;
+let closure_12;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let tmp;
+let tmp5;
+let unpackModuleId;
+const TextArea2 = tmp(6580);
+const AssetRegistryDefault3 = tmp5(9193);
+const View = react_native.View;
+({ GuildScheduledEventEntityTypes: metroRequire, GUILD_EVENT_MAX_DESCRIPTION_LENGTH: metroImportDefault, MAX_EVENT_LOCATION_LENGTH: metroImportAll, GUILD_EVENT_MAX_NAME_LENGTH: c9 } = GuildScheduledEventsConstants);
+const GuildFeatures = Constants.GuildFeatures;
+({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let closure_13 = createStyles.createStyles({ formGroup: { paddingVertical: 8 }, formGroupSmall: { paddingVertical: 4 }, formGroupLarge: { paddingTop: 16, paddingBottom: 4 }, dateInput: { flexGrow: 1, flexShrink: 1, flexBasis: "60%" }, timeInput: { flexGrow: 1, flexShrink: 1, flexBasis: "30%" }, formHeader: { marginBottom: 8 }, header: { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: 8 } });
-const size = fn(2);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let onChange;
+  let tmp5;
+  let tmp6;
+  let topic;
+  const obj = react2;
+  const cResult = obj.c(8);
+  ({ topic, onChange } = arg0);
+  const tmp4 = closure_13();
+  const formGroupSmall = tmp4.formGroupSmall;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(intl7.t["0HbEQ6"]);
+    const intl2 = tmp(1126).intl;
+    const stringResult1 = intl2.string(intl7.t["6/yars"]);
+    cResult[0] = stringResult;
+    cResult[1] = stringResult1;
+    tmp5 = stringResult;
+    tmp6 = stringResult1;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  if (cResult[2] === onChange) {
+    let tmp9;
+    if (cResult[3] === topic) {
+      tmp9 = cResult[4];
+    }
+    if (cResult[5] === tmp4.formGroupSmall) {
+      let tmp11;
+      if (cResult[6] === tmp9) {
+        tmp11 = cResult[7];
+      }
+      return tmp11;
+    }
+    const obj2 = { style: formGroupSmall, children: tmp9 };
+    const tmp14 = unpackModuleId(View, obj2);
+    cResult[5] = tmp4.formGroupSmall;
+    cResult[6] = tmp9;
+    cResult[7] = tmp14;
+    tmp11 = tmp14;
+  }
+  const obj3 = { label: tmp5, placeholder: tmp6, onChange, value: topic, maxLength, autoFocus: true, clearable: true };
+  const tmp10 = unpackModuleId(TextInput_TextInput.TextInput, obj3);
+  cResult[2] = onChange;
+  cResult[3] = topic;
+  cResult[4] = tmp10;
+  tmp9 = tmp10;
+}) : ((arg0) => {
+  let TextInput;
+  let intl;
+  let intl2;
+  let obj2;
+  let onChange;
+  let topic;
+  ({ topic, onChange } = arg0);
+  const obj = { style: closure_13().formGroupSmall, children: unpackModuleId(TextInput, obj2) };
+  obj2 = { label: intl.string(intl7.t["0HbEQ6"]), placeholder: intl2.string(intl7.t["6/yars"]), onChange, value: topic, maxLength, autoFocus: true, clearable: true };
+  TextInput = TextInput_TextInput.TextInput;
+  intl = intl7.intl;
+  intl2 = intl7.intl;
+  return unpackModuleId(View, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let _location;
+  let onChange;
+  let onFocus;
+  let tmp5;
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(9);
+  ({ location: _location, onChange, onFocus } = arg0);
+  const tmp4 = closure_13();
+  const formGroupLarge = tmp4.formGroupLarge;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(intl7.t.yx785A);
+    const intl2 = tmp(1126).intl;
+    const stringResult1 = intl2.string(intl7.t.mkCMia);
+    cResult[0] = stringResult;
+    cResult[1] = stringResult1;
+    tmp5 = stringResult;
+    tmp6 = stringResult1;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  if (cResult[2] === _location) {
+    if (cResult[3] === onChange) {
+      let tmp9;
+      if (cResult[4] === onFocus) {
+        tmp9 = cResult[5];
+      }
+      if (cResult[6] === tmp4.formGroupLarge) {
+        let tmp11;
+        if (cResult[7] === tmp9) {
+          tmp11 = cResult[8];
+        }
+        return tmp11;
+      }
+      const obj2 = { style: formGroupLarge, children: tmp9 };
+      const tmp14 = unpackModuleId(View, obj2);
+      cResult[6] = tmp4.formGroupLarge;
+      cResult[7] = tmp9;
+      cResult[8] = tmp14;
+      tmp11 = tmp14;
+    }
+  }
+  const obj3 = { label: tmp5, placeholder: tmp6, value: _location, maxLength: metroImportAll, onChange, onFocus, clearable: true };
+  const tmp10 = unpackModuleId(TextInput_TextInput.TextInput, obj3);
+  cResult[2] = _location;
+  cResult[3] = onChange;
+  cResult[4] = onFocus;
+  cResult[5] = tmp10;
+  tmp9 = tmp10;
+}) : ((arg0) => {
+  let TextInput;
+  let _location;
+  let intl;
+  let intl2;
+  let obj2;
+  let onChange;
+  let onFocus;
+  ({ location: _location, onChange, onFocus } = arg0);
+  const obj = { style: closure_13().formGroupLarge, children: unpackModuleId(TextInput, obj2) };
+  obj2 = { label: intl.string(intl7.t.yx785A), placeholder: intl2.string(intl7.t.mkCMia), value: _location, maxLength: metroImportAll, onChange, onFocus, clearable: true };
+  TextInput = TextInput_TextInput.TextInput;
+  intl = intl7.intl;
+  intl2 = intl7.intl;
+  return unpackModuleId(View, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let disabled;
+  let entityType;
+  let guild;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
+  let onChange;
+  let obj = react2;
+  const cResult = obj.c(10);
+  ({ guild, entityType, disabled, onChange } = arg0);
+  const obj2 = useGuildsUserCanStartStageIn;
+  const channelsUserCanStartStageIn = obj2.useChannelsUserCanStartStageIn(guild);
+  if (cResult[0] === disabled) {
+    if (cResult[1] === guild.features) {
+      let arr2;
+      let tmp7;
+      if (cResult[2] === channelsUserCanStartStageIn) {
+        arr2 = cResult[3];
+      }
+      if (cResult[4] !== arr2) {
+        const mapped = arr2.map((name) => {
+          let IconComponent;
+          let description;
+          let disabled;
+          let value;
+          name = name.name;
+          ({ value, description, IconComponent, disabled } = name);
+          const obj = { label: name, subLabel: description, value, icon: closure_1_11(IconComponent, {}), disabled };
+          const TableRadioRow = TableRadioRow2.TableRadioRow;
+          return closure_1_11(TableRadioRow, obj, name);
+        });
+        cResult[4] = arr2;
+        cResult[5] = mapped;
+        tmp7 = mapped;
+      } else {
+        tmp7 = cResult[5];
+      }
+      if (cResult[6] === entityType) {
+        if (cResult[7] === onChange) {
+          let tmp9;
+          if (cResult[8] === tmp7) {
+            tmp9 = cResult[9];
+          }
+          return tmp9;
+        }
+      }
+      const obj3 = { defaultValue: entityType, onChange, hasIcons: true, children: tmp7 };
+      const tmp11 = unpackModuleId(TableRadioGroup2.TableRadioGroup, obj3);
+      cResult[6] = entityType;
+      cResult[7] = onChange;
+      cResult[8] = tmp7;
+      cResult[9] = tmp11;
+      tmp9 = tmp11;
+    }
+  }
+  const obj4 = { name: intl.string(intl7.t.BVZqJl), value: metroRequire.VOICE, description: intl2.string(intl7.t["EV//4f"]), icon: AssetRegistryDefault, IconComponent: VoiceNormalIcon.VoiceNormalIcon, disabled };
+  intl = tmp(1126).intl;
+  intl2 = tmp(1126).intl;
+  const items = [obj4, ];
+  const obj5 = { name: intl3.string(intl7.t.w7ipbz), value: metroRequire.EXTERNAL, description: intl4.string(intl7.t.DYxrHm), icon: AssetRegistryDefault2, IconComponent: LocationIcon.LocationIcon, disabled };
+  intl3 = tmp(1126).intl;
+  intl4 = tmp(1126).intl;
+  items[1] = obj5;
+  const features = guild.features;
+  const tmp4 = metroRequire;
+  if (features.has(GuildFeatures.COMMUNITY)) {
+    const unshift = items.unshift;
+    const obj6 = { name: intl5.string(intl7.t.EErMzA), value: tmp4.STAGE_INSTANCE, description: intl6.string(intl7.t.LgALpp), icon: AssetRegistryDefault3, IconComponent: StageIcon.StageIcon, disabled: 0 === channelsUserCanStartStageIn.length || disabled };
+    intl5 = tmp(1126).intl;
+    intl6 = tmp(1126).intl;
+    unshift(obj6);
+  }
+  cResult[0] = disabled;
+  cResult[1] = guild.features;
+  cResult[2] = channelsUserCanStartStageIn;
+  cResult[3] = items;
+  arr2 = items;
+}) : ((arg0) => {
+  let disabled;
+  let entityType;
+  let guild;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
+  let onChange;
+  ({ guild, disabled } = arg0);
+  ({ entityType, onChange } = arg0);
+  let obj = useGuildsUserCanStartStageIn;
+  const obj2 = { name: intl.string(intl7.t.BVZqJl), value: metroRequire.VOICE, description: intl2.string(intl7.t["EV//4f"]), icon: AssetRegistryDefault, IconComponent: VoiceNormalIcon.VoiceNormalIcon, disabled };
+  const channelsUserCanStartStageIn = obj.useChannelsUserCanStartStageIn(guild);
+  intl = intl7.intl;
+  intl2 = intl7.intl;
+  const items = [obj2, ];
+  const obj3 = { name: intl3.string(intl7.t.w7ipbz), value: metroRequire.EXTERNAL, description: intl4.string(intl7.t.DYxrHm), icon: AssetRegistryDefault2, IconComponent: LocationIcon.LocationIcon, disabled };
+  intl3 = intl7.intl;
+  intl4 = intl7.intl;
+  items[1] = obj3;
+  const features = guild.features;
+  const tmp3 = metroRequire;
+  if (features.has(GuildFeatures.COMMUNITY)) {
+    const unshift = items.unshift;
+    const obj4 = { name: intl5.string(intl7.t.EErMzA), value: tmp3.STAGE_INSTANCE, description: intl6.string(intl7.t.LgALpp), icon: AssetRegistryDefault3, IconComponent: StageIcon.StageIcon, disabled: 0 === channelsUserCanStartStageIn.length || disabled };
+    intl5 = tmp(1126).intl;
+    intl6 = tmp(1126).intl;
+    unshift(obj4);
+  }
+  const obj5 = {
+    defaultValue: entityType,
+    onChange,
+    hasIcons: true,
+    children: items.map((name) => {
+      let IconComponent;
+      let description;
+      let disabled;
+      let value;
+      name = name.name;
+      ({ value, description, IconComponent, disabled } = name);
+      const obj = { label: name, subLabel: description, value, icon: closure_1_11(IconComponent, {}), disabled };
+      const TableRadioRow = TableRadioRow2.TableRadioRow;
+      return closure_1_11(TableRadioRow, obj, name);
+    })
+  };
+  const TableRadioGroup = tmp(6072).TableRadioGroup;
+  return unpackModuleId(TableRadioGroup, obj5);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let description;
+  let onChange;
+  let onFocus;
+  let tmp6;
+  let tmp7;
+  let tmp9;
+  const tmp = require;
+  const obj = react2;
+  const cResult = obj.c(11);
+  ({ description, onChange, onFocus } = arg0);
+  const tmp4 = closure_13();
+  const ref = react.useRef(null);
+  if (cResult[0] !== onFocus) {
+    const fn = function l() {
+      if (onFocus != null) {
+        tmp(ref);
+      }
+    };
+    cResult[0] = onFocus;
+    cResult[1] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[1];
+  }
+  const formGroupSmall = tmp4.formGroupSmall;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = intl7.intl;
+    const stringResult = intl.string(intl7.t["+gRCC7"]);
+    cResult[2] = stringResult;
+    tmp7 = stringResult;
+  } else {
+    tmp7 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl2 = intl7.intl;
+    const stringResult1 = intl2.string(intl7.t["kWO/E8"]);
+    cResult[3] = stringResult1;
+    tmp9 = stringResult1;
+  } else {
+    tmp9 = cResult[3];
+  }
+  if (cResult[4] === description) {
+    if (cResult[5] === tmp6) {
+      let tmp11;
+      if (cResult[6] === onChange) {
+        tmp11 = cResult[7];
+      }
+      if (cResult[8] === tmp4.formGroupSmall) {
+        let tmp13;
+        if (cResult[9] === tmp11) {
+          tmp13 = cResult[10];
+        }
+        return tmp13;
+      }
+      const obj2 = { style: formGroupSmall, ref, children: tmp11 };
+      const tmp16 = unpackModuleId(View, obj2);
+      cResult[8] = tmp4.formGroupSmall;
+      cResult[9] = tmp11;
+      cResult[10] = tmp16;
+      tmp13 = tmp16;
+    }
+  }
+  const obj3 = { label: tmp7, maxLength: metroImportDefault, placeholder: tmp9, onChange, onFocus: tmp6, value: description };
+  const tmp12 = unpackModuleId(TextArea2.TextArea, obj3);
+  cResult[4] = description;
+  cResult[5] = tmp6;
+  cResult[6] = onChange;
+  cResult[7] = tmp12;
+  tmp11 = tmp12;
+}) : ((onFocus) => {
+  let TextArea;
+  let description;
+  let intl;
+  let intl2;
+  let obj2;
+  let onChange;
+  onFocus = onFocus.onFocus;
+  ({ description, onChange } = onFocus);
+  const tmp = closure_13();
+  const ref = react.useRef(null);
+  const obj = { style: tmp.formGroupSmall, ref, children: unpackModuleId(TextArea, obj2) };
+  obj2 = {
+    label: intl.string(intl7.t["+gRCC7"]),
+    maxLength: metroImportDefault,
+    placeholder: intl2.string(intl7.t["kWO/E8"]),
+    onChange,
+    onFocus() {
+      if (onFocus != null) {
+        tmp(ref);
+      }
+    },
+    value: description
+  };
+  TextArea = TextArea2.TextArea;
+  intl = intl7.intl;
+  intl2 = intl7.intl;
+  return unpackModuleId(View, obj);
+});
 let result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventModalComponents.tsx");
 
-export const GuildEventTopic = function GuildEventTopic(arg0) {
-  ({ topic, onChange } = arg0);
-  const obj = { style: closure_13().formGroupSmall, children: null };
-  const obj2 = { label: null, placeholder: null, onChange: null, value: null, maxLength: null, autoFocus: true, clearable: true };
-  const intl = util.intl;
-  obj2.label = intl.string(util.t["0HbEQ6"]);
-  const intl2 = util.intl;
-  obj2.placeholder = intl2.string(util.t["6/yars"]);
-  obj2.onChange = onChange;
-  obj2.value = topic;
-  obj2.maxLength = maxLength3;
-  obj.children = closure_1_11(TextInput.TextInput, obj2);
-  return closure_1_11(View, obj);
-};
-export const GuildEventLocation = function GuildEventLocation(arg0) {
-  ({ location: _location, onChange, onFocus } = arg0);
-  const obj = { style: closure_13().formGroupLarge, children: null };
-  const obj2 = { label: null, placeholder: null, value: null, maxLength: null, onChange: null, onFocus: null, clearable: true };
-  const intl = util.intl;
-  obj2.label = intl.string(util.t.yx785A);
-  const intl2 = util.intl;
-  obj2.placeholder = intl2.string(util.t.mkCMia);
-  obj2.value = _location;
-  obj2.maxLength = maxLength2;
-  obj2.onChange = onChange;
-  obj2.onFocus = onFocus;
-  obj.children = closure_1_11(TextInput.TextInput, obj2);
-  return closure_1_11(View, obj);
-};
+export const GuildEventTopic = tmp4;
+export const GuildEventLocation = tmp5;
 export const GuildEventRecurrence = function GuildEventRecurrence(startDate) {
+  let Text;
+  let intl;
+  let intl2;
+  let intl3;
+  let items1;
+  let obj4;
+  let selectedItem;
   startDate = startDate.startDate;
   const recurrenceRule = startDate.recurrenceRule;
   const onRecurrenceChange = startDate.onRecurrenceChange;
   let recurrenceOptions;
   const tmp = closure_13();
   const items = [recurrenceRule, startDate];
-  dependencyMap = recurrenceOptions.useMemo(() => ScheduleUtils.recurrenceRuleToOption(startDate, recurrenceRule), items);
-  recurrenceOptions = startDate(9139).getRecurrenceOptions(startDate);
-  const found = recurrenceOptions.find((value) => value.value === closure_3);
+  dependencyMap = recurrenceOptions.useMemo(() => {
+    const obj = ScheduleUtils;
+    return obj.recurrenceRuleToOption(startDate, recurrenceRule);
+  }, items);
+  const tmp2 = startDate;
+  let tmp3 = dependencyMap;
+  let obj = startDate(9163);
+  recurrenceOptions = obj.getRecurrenceOptions(startDate);
+  const found = recurrenceOptions.find((value) => value.value === selectedItem);
   let label;
   if (found != null) {
     label = found.label;
   }
-  let obj2 = { style: tmp.formGroup, children: null };
-  let obj3 = { style: tmp.header, children: null };
-  const obj4 = { variant: "text-sm/semibold", color: "text-subtle", children: null };
-  let intl = tmp2(1115).intl;
-  obj4.children = intl.string(startDate(1115).t["59TVxL"]);
-  obj3.children = closure_11(startDate(4841).Text, obj4);
-  const items1 = [closure_11(View, obj3), ];
+  let obj2 = { style: tmp.formGroup, children: items1 };
+  const obj3 = { style: tmp.header, children: closure_11(Text, obj4) };
+  obj4 = { variant: "text-sm/semibold", color: "text-subtle", children: intl.string(tmp2(1126).t["59TVxL"]) };
+  Text = tmp2(4886).Text;
+  intl = tmp2(1126).intl;
+  items1 = [closure_11(View, obj3), ];
   const obj5 = {
     onPress() {
-      const result = KeyboardManagerUtilsAll.dismissGlobalKeyboard();
-      const obj3 = { title: null, items: null, onItemSelect: null, selectedItem: null, hasIcons: false };
-      const obj2 = ActionSheetActionCreatorsDefault;
-      const intl = util.intl;
-      obj3.title = intl.string(util.t["59TVxL"]);
-      obj3.items = recurrenceOptions;
-      obj3.onItemSelect = function onItemSelect(arg0) {
-        onRecurrenceChange(arg0);
-        recurrenceRule(closure_3[12]).hideActionSheet();
+      let intl;
+      let obj = KeyboardManagerUtilsAll;
+      const result = obj.dismissGlobalKeyboard();
+      const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+      const obj2 = {
+        title: intl.string(intl7.t["59TVxL"]),
+        items: recurrenceOptions,
+        onItemSelect(arg0) {
+          onRecurrenceChange(arg0);
+          const obj = recurrenceRule(selectedItem[14]);
+          obj.hideActionSheet();
+        },
+        selectedItem,
+        hasIcons: false
       };
-      obj3.selectedItem = selectedItem;
-      obj2.openLazy(asyncRequireImpl(8921, dependencyMap.paths), "SelectRecurrenceOption", obj3);
+      ActionSheetActionCreatorsDefault;
+      const tmp3 = asyncRequire(8949, dependencyMap.paths);
+      intl = intl7.intl;
+      openLazy(tmp3, "SelectRecurrenceOption", obj2);
     },
-    text: null,
-    value: null,
-    icon: null,
+    text: intl2.string(tmp2(1126).t["59TVxL"]),
+    value: label,
+    icon: recurrenceRule(9187),
     iconPosition: "end",
-    accessibilityLabel: null,
-    accessibilityHint: null
+    accessibilityLabel: intl3.string(tmp2(1126).t["59TVxL"]),
+    accessibilityHint: label
   };
-  const intl2 = tmp2(1115).intl;
-  obj5.text = intl2.string(startDate(1115).t["59TVxL"]);
-  obj5.value = label;
-  obj5.icon = recurrenceRule(9182);
-  const intl3 = tmp2(1115).intl;
-  obj5.accessibilityLabel = intl3.string(startDate(1115).t["59TVxL"]);
-  obj5.accessibilityHint = label;
-  items1[1] = closure_11(startDate(8561).InputButton, obj5);
-  obj2.children = items1;
+  const InputButton = tmp2(8567).InputButton;
+  intl2 = tmp2(1126).intl;
+  intl3 = tmp2(1126).intl;
+  items1[1] = closure_11(InputButton, obj5);
   return closure_12(View, obj2);
 };
-export const GuildEventEntityTypeSelection = function GuildEventEntityTypeSelection(arg0) {
-  ({ guild, disabled } = arg0);
-  ({ entityType, onChange } = arg0);
-  const obj2 = { name: null, value: null, description: null, icon: null, IconComponent: null, disabled: null };
-  const channelsUserCanStartStageIn = useGuildsUserCanStartStageIn.useChannelsUserCanStartStageIn(guild);
-  const intl = util.intl;
-  obj2.name = intl.string(util.t.BVZqJl);
-  obj2.value = constants.VOICE;
-  const intl2 = util.intl;
-  obj2.description = intl2.string(util.t["EV//4f"]);
-  obj2.icon = _modDef9184;
-  obj2.IconComponent = VoiceNormalIcon.VoiceNormalIcon;
-  obj2.disabled = disabled;
-  const items = [obj2, ];
-  const obj3 = { name: null, value: null, description: null, icon: null, IconComponent: null, disabled: null };
-  const intl3 = util.intl;
-  obj3.name = intl3.string(util.t.w7ipbz);
-  obj3.value = constants.EXTERNAL;
-  const intl4 = util.intl;
-  obj3.description = intl4.string(util.t.DYxrHm);
-  obj3.icon = _modDef9185;
-  obj3.IconComponent = LocationIcon.LocationIcon;
-  obj3.disabled = disabled;
-  items[1] = obj3;
-  const features = guild.features;
-  if (features.has(GuildFeatures.COMMUNITY)) {
-    const obj4 = { name: null, value: null, description: null, icon: null, IconComponent: null, disabled: null };
-    const intl5 = tmp(1115).intl;
-    obj4.name = intl5.string(tmp(1115).t.EErMzA);
-    obj4.value = tmp3.STAGE_INSTANCE;
-    const intl6 = tmp(1115).intl;
-    obj4.description = intl6.string(tmp(1115).t.LgALpp);
-    obj4.icon = _modDef8268;
-    obj4.IconComponent = tmp(5595).StageIcon;
-    obj4.disabled = 0 === channelsUserCanStartStageIn.length || disabled;
-    items.unshift(obj4);
-  }
-  tmp3 = constants;
-  return closure_1_11(TableRadioGroup.TableRadioGroup, {
-    defaultValue: entityType,
-    onChange,
-    hasIcons: true,
-    children: items.map((name) => {
-      name = name.name;
-      ({ value, description, IconComponent, disabled } = name);
-      return closure_1_11(TableRadioRow.TableRadioRow, { label: name, subLabel: description, value, icon: closure_1_11(IconComponent, {}), disabled }, name);
-    })
-  });
-};
-export const GuildEventDescription = function GuildEventDescription(onFocus) {
-  onFocus = onFocus.onFocus;
-  ({ description, onChange } = onFocus);
-  const ref = noop.useRef(null);
-  const obj = { style: closure_13().formGroupSmall, ref, children: null };
-  const obj2 = { label: null, maxLength: null, placeholder: null, onChange: null, onFocus: null, value: null };
-  const intl = util.intl;
-  obj2.label = intl.string(util.t["+gRCC7"]);
-  obj2.maxLength = maxLength;
-  const intl2 = util.intl;
-  obj2.placeholder = intl2.string(util.t["kWO/E8"]);
-  obj2.onChange = onChange;
-  obj2.onFocus = function onFocus() {
-    if (onFocus != null) {
-      tmp(ref);
+export const GuildEventEntityTypeSelection = tmp6;
+export const GuildEventDescription = tmp7;
+export const GuildEventDatetime = function GuildEventDatetime(dateLabel) {
+  let Stack;
+  let items;
+  let items1;
+  let items2;
+  let maximumDate;
+  let obj3;
+  const onPress = () => {
+    let toDateResult;
+    const tmp = disabled;
+    if (!tmp) {
+      let obj = KeyboardManagerUtilsAll;
+      const result = obj.dismissGlobalKeyboard();
+      const tmp6 = "date" === time ? dateLabel : timeLabel;
+      const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+      const obj2 = {
+        onSubmit(set) {
+            if ("date" !== time) {
+              fn(set);
+            } else {
+              const obj = { hour: date.get("hour"), minute: date.get("minute"), second: 0, millisecond: 0 };
+              set = set.set;
+              fn(set(obj));
+            }
+          },
+        title: tmp6,
+        startDate: date.toDate(),
+        minimumDate: toDateResult,
+        maximumDate: maximumDate.toDate(),
+        requireDateChanged: true,
+        mode: time
+      };
+      ActionSheetActionCreatorsDefault;
+      const obj3 = date;
+      const obj4 = dependencyMap;
+      const tmp10 = asyncRequire(9194, dependencyMap.paths);
+      if (null != dependencyMap) {
+        toDateResult = obj4.toDate();
+      } else {
+        toDateResult = obj3.toDate();
+      }
+      openLazy(tmp10, "DatePicker", obj2);
     }
   };
-  obj2.value = description;
-  obj.children = closure_1_11(TextArea.TextArea, obj2);
-  return closure_1_11(View, obj);
-};
-export const GuildEventDatetime = function GuildEventDatetime(dateLabel) {
   dateLabel = dateLabel.dateLabel;
-  let time = dateLabel;
   const timeLabel = dateLabel.timeLabel;
   let date = dateLabel.date;
   if (date === undefined) {
-    date = timeLabel(4450)();
+    let tmp = timeLabel;
+    date = timeLabel(4461)();
   }
   ({ minimumDate: dependencyMap, maximumDate } = dateLabel);
   if (maximumDate === undefined) {
-    let obj = timeLabel(4450)();
-    maximumDate = timeLabel(4450)().add(30, "days").endOf("month");
-    const addResult = timeLabel(4450)().add(30, "days");
+    let obj = timeLabel(4461)();
+    const str = "days";
+    const str2 = "month";
+    const addResult = obj.add(30, "days");
+    maximumDate = addResult.endOf("month");
   }
   const disabled = dateLabel.disabled;
   let fn = dateLabel.onChange;
@@ -208,151 +550,27 @@ export const GuildEventDatetime = function GuildEventDatetime(dateLabel) {
 
     };
   }
-  let tmp5 = closure_13();
-  let obj2 = { style: tmp5.formGroup, children: null };
-  let obj3 = { direction: "horizontal", spacing: 16, children: null };
-  let obj4 = { style: tmp5.dateInput, children: null };
-  const items = [closure_11(time(4841).Text, { style: tmp5.formHeader, variant: "text-sm/semibold", color: "text-subtle", children: dateLabel }), ];
-  time = "date";
-  items[1] = closure_11(time(8561).InputButton, {
-    text: dateLabel,
-    value: date.format("MMM Do YYYY"),
-    () => {
-      if (!View) {
-        const result = date(c3[11]).dismissGlobalKeyboard();
-        let openLazyResult = time;
-        let obj = date(c3[11]);
-        const tmp5 = "date" === time ? require : importDefault;
-        const obj3 = {
-          onSubmit(set) {
-              if ("date" !== time) {
-                fn(set);
-              } else {
-                const obj = { hour: date.get("hour"), minute: date.get("minute"), second: 0, millisecond: 0 };
-                fn(set.set(obj));
-              }
-            },
-          title: tmp5,
-          startDate: null,
-          minimumDate: null,
-          maximumDate: null,
-          requireDateChanged: true,
-          mode: null
-        };
-        const obj2 = timeLabel(c3[12]);
-        const obj4 = importAll;
-        obj3.startDate = importAll.toDate();
-        if (null != dependencyMap) {
-          let toDateResult = obj5.toDate();
-        } else {
-          toDateResult = obj4.toDate();
-        }
-        obj3.minimumDate = toDateResult;
-        obj3.maximumDate = noop.toDate();
-        obj3.mode = openLazyResult;
-        openLazyResult = obj2.openLazy(time(c3[14])(c3[27], c3.paths), "DatePicker", obj3);
-        obj5 = dependencyMap;
-        const tmp8 = time(c3[14])(c3[27], c3.paths);
-      }
-    },
-    disabled
-  });
-  obj4.children = items;
-  const items1 = [closure_12(disabled, obj4), ];
-  const obj7 = { style: tmp5.timeInput, children: null };
-  const items2 = [closure_11(time(4841).Text, { style: tmp5.formHeader, variant: "text-sm/semibold", color: "text-subtle", children: timeLabel }), ];
-  let obj5 = { style: tmp5.formHeader, variant: "text-sm/semibold", color: "text-subtle", children: dateLabel };
-  const obj6 = {
-    text: dateLabel,
-    value: date.format("MMM Do YYYY"),
-    () => {
-      if (!View) {
-        const result = date(c3[11]).dismissGlobalKeyboard();
-        let openLazyResult = time;
-        let obj = date(c3[11]);
-        const tmp5 = "date" === time ? require : importDefault;
-        const obj3 = {
-          onSubmit(set) {
-              if ("date" !== time) {
-                fn(set);
-              } else {
-                const obj = { hour: date.get("hour"), minute: date.get("minute"), second: 0, millisecond: 0 };
-                fn(set.set(obj));
-              }
-            },
-          title: tmp5,
-          startDate: null,
-          minimumDate: null,
-          maximumDate: null,
-          requireDateChanged: true,
-          mode: null
-        };
-        const obj2 = timeLabel(c3[12]);
-        const obj4 = importAll;
-        obj3.startDate = importAll.toDate();
-        if (null != dependencyMap) {
-          let toDateResult = obj5.toDate();
-        } else {
-          toDateResult = obj4.toDate();
-        }
-        obj3.minimumDate = toDateResult;
-        obj3.maximumDate = noop.toDate();
-        obj3.mode = openLazyResult;
-        openLazyResult = obj2.openLazy(time(c3[14])(c3[27], c3.paths), "DatePicker", obj3);
-        obj5 = dependencyMap;
-        const tmp8 = time(c3[14])(c3[27], c3.paths);
-      }
-    },
-    disabled
-  };
+  const tmp5 = closure_13();
+  let obj2 = { style: tmp5.formGroup, children: closure_12(Stack, obj3) };
+  obj3 = { direction: "horizontal", spacing: 16, children: items1 };
+  let obj4 = { style: tmp5.dateInput, children: items };
+  Stack = dateLabel(5593).Stack;
+  items = [, ];
+  const obj5 = { style: tmp5.formHeader, variant: "text-sm/semibold", color: "text-subtle", children: dateLabel };
+  items[0] = closure_11(dateLabel(4886).Text, obj5);
+  const obj6 = { text: dateLabel, value: date.format("MMM Do YYYY"), onPress, disabled };
+  const InputButton = dateLabel(8567).InputButton;
+  date = "date";
+  items[1] = closure_11(InputButton, obj6);
+  items1 = [closure_12(disabled, obj4), ];
+  const obj7 = { style: tmp5.timeInput, children: items2 };
+  items2 = [, ];
   const obj8 = { style: tmp5.formHeader, variant: "text-sm/semibold", color: "text-subtle", children: timeLabel };
-  time = "time";
-  items2[1] = closure_11(time(8561).InputButton, {
-    text: timeLabel,
-    value: date.format("LT"),
-    () => {
-      if (!View) {
-        const result = date(c3[11]).dismissGlobalKeyboard();
-        let openLazyResult = time;
-        let obj = date(c3[11]);
-        const tmp5 = "date" === time ? require : importDefault;
-        const obj3 = {
-          onSubmit(set) {
-              if ("date" !== time) {
-                fn(set);
-              } else {
-                const obj = { hour: date.get("hour"), minute: date.get("minute"), second: 0, millisecond: 0 };
-                fn(set.set(obj));
-              }
-            },
-          title: tmp5,
-          startDate: null,
-          minimumDate: null,
-          maximumDate: null,
-          requireDateChanged: true,
-          mode: null
-        };
-        const obj2 = timeLabel(c3[12]);
-        const obj4 = importAll;
-        obj3.startDate = importAll.toDate();
-        if (null != dependencyMap) {
-          let toDateResult = obj5.toDate();
-        } else {
-          toDateResult = obj4.toDate();
-        }
-        obj3.minimumDate = toDateResult;
-        obj3.maximumDate = noop.toDate();
-        obj3.mode = openLazyResult;
-        openLazyResult = obj2.openLazy(time(c3[14])(c3[27], c3.paths), "DatePicker", obj3);
-        obj5 = dependencyMap;
-        const tmp8 = time(c3[14])(c3[27], c3.paths);
-      }
-    },
-    disabled
-  });
-  obj7.children = items2;
+  items2[0] = closure_11(dateLabel(4886).Text, obj8);
+  const obj9 = { text: timeLabel, value: date.format("LT"), onPress, disabled };
+  const InputButton2 = dateLabel(8567).InputButton;
+  const time = "time";
+  items2[1] = closure_11(InputButton2, obj9);
   items1[1] = closure_12(disabled, obj7);
-  obj3.children = items1;
-  obj2.children = closure_12(time(5463).Stack, obj3);
   return closure_11(disabled, obj2);
 };

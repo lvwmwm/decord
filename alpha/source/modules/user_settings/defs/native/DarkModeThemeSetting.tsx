@@ -1,38 +1,72 @@
-// Module ID: 15065
-// Function ID: 15066
+// Module ID: 15122
+// Function ID: 15123
 // Name: DarkModeThemeSetting
-// Dependencies: [1182, 1185, 7590, 1074, 504, 11215, 1115, 15063, 15066, 2]
+// Dependencies: [1193, 1196, 7634, 1085, 558, 576, 504, 11129, 1126, 15120, 15123, 2]
 
-// Module 15065 (DarkModeThemeSetting)
-import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import useSyncedModeThemeName from "useSyncedModeThemeName" /* 15063 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
+// Module 15122 (DarkModeThemeSetting)
+import react from "react" /* 576 */;
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import ThemeConstants from "ThemeConstants" /* 1196 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import useSyncedModeThemeName from "useSyncedModeThemeName" /* 15120 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const SystemTheme = fn(1185).SystemTheme;
-const SettingBuilders = fn(11215);
-const route = SettingBuilders.createRoute({
-  useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["EgvHH/"]);
-  },
-  parent: fn(7590).MobileUserSettings.APPEARANCE,
-  usePredicate: function useSyncedModePickerVisible() {
+const require = globalThis.__r;
+
+let tmp;
+const get_initialized = tmp(504);
+const SystemTheme = ThemeConstants.SystemTheme;
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let sameAsDeviceThemeEnabled;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ThemeStore];
-    return initialize.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
+    const fn = function n() {
+      return sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let sameAsDeviceThemeEnabled;
+  const items = [ThemeStore];
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
+});
+let obj = {
+  useTitle() {
+    const intl = intl2.intl;
+    return intl.string(intl2.t["EgvHH/"]);
   },
+  parent: MobileUserSettings.APPEARANCE,
+  usePredicate: tmp2,
   useTrailing() {
-    return useSyncedModeThemeName.useSyncedModeThemeName(SystemTheme.DARK);
+    const obj = useSyncedModeThemeName;
+    return obj.useSyncedModeThemeName(SystemTheme.DARK);
   },
   screen: {
-    route: fn(1074).UserSettingsSections.APPEARANCE_DARK_MODE_THEME_PICKER,
+    route: UserSettingsSections.APPEARANCE_DARK_MODE_THEME_PICKER,
     getComponent() {
       return require("SettingsAppearanceDarkModeThemePickerScreen").default;
     }
   }
-});
-const size = fn(2);
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/DarkModeThemeSetting.tsx");
 
 export default route;

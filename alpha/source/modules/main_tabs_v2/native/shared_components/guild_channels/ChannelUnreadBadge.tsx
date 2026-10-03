@@ -1,61 +1,121 @@
-// Module ID: 15882
-// Function ID: 15883
+// Module ID: 15956
+// Function ID: 15957
 // Name: ChannelUnreadBadge
-// Dependencies: [19, 17, 9770, 5027, 21, 4845, 9773, 5472, 7468, 2]
+// Dependencies: [19, 17, 11697, 5072, 21, 4890, 558, 11698, 5602, 7503, 2]
 
-// Module 15882 (ChannelUnreadBadge)
-import useFontScale from "useFontScale" /* 5472 */;
-import BadgeDefault from "Badge" /* 7468 */;
-import ChannelListLayout from "ChannelListLayout" /* 9773 */;
-import noop from "module_19" /* 19 */;
+// Module 15956 (ChannelUnreadBadge)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import ReadStateConstants from "ReadStateConstants" /* 5072 */;
+import useFontScale from "useFontScale" /* 5602 */;
+import shared_components_Badge from "shared_components/Badge" /* 7503 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11697 */;
+import ChannelListLayout from "ChannelListLayout" /* 11698 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const MUTED_OPACITY_CONTENT = fn(9770).MUTED_OPACITY_CONTENT;
-const UnreadSetting = fn(5027).UnreadSetting;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
+const shared_components_BadgeDefault = shared_components_Badge;
+let panelVariant;
+
+const View = react_native.View;
+const MUTED_OPACITY_CONTENT = RedesignChannelListConstants.MUTED_OPACITY_CONTENT;
+const UnreadSetting = ReadStateConstants.UnreadSetting;
+const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ unreadBadge: { flexGrow: 0, flexShrink: 0, position: "absolute" }, unreadBadgePanel: { marginLeft: -16 } });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelUnreadBadge.tsx");
-
-export default noop.memo(function ChannelUnreadBadge(panelVariant) {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((panelVariant) => {
+  let isThread;
+  let items1;
+  let launchpad;
+  let layout;
+  let muted;
+  let resolvedUnreadSetting;
+  let unread;
+  panelVariant = panelVariant.panelVariant;
+  let tmp = undefined !== panelVariant;
+  ({ unread, resolvedUnreadSetting, muted, isThread, layout, launchpad } = panelVariant);
+  if (tmp) {
+    tmp = panelVariant;
+  }
+  const tmp2 = closure_7();
+  const obj = ChannelListLayout;
+  const layoutStyles = obj.getLayoutStyles(layout, launchpad);
+  useFontScale;
+  let tmp9Result = null;
+  if (unread) {
+    let num2;
+    const items = [tmp2.unreadBadge, , , ];
+    let unreadBadgePanel;
+    const tmp10 = View;
+    if (tmp) {
+      unreadBadgePanel = tmp2.unreadBadgePanel;
+    }
+    items[1] = unreadBadgePanel;
+    const unreadBadge = layoutStyles.unreadBadge;
+    const obj2 = { style: items, children: null };
+    items[2] = isThread ? unreadBadge.positionThread : unreadBadge.position;
+    const tmp3Result = ChannelListLayout;
+    items[3] = tmp3Result.makeSizeStyle(layoutStyles.unreadBadge.size);
+    ({ classic: tmp, size: shared_components_Badge.CHANNEL_BADGE_SIZE * Math.max(tmp7, 1), badgeStyle: items1 });
+    const _Math = Math;
+    shared_components_BadgeDefault;
+    if (resolvedUnreadSetting !== UnreadSetting.ALL_MESSAGES) {
+      num2 = MUTED_OPACITY_CONTENT;
+    } else {
+      num2 = 1;
+    }
+    items1 = [{ opacity: num2 }];
+    const obj4 = { opacity: num2 };
+    tmp9Result = tmp9(tmp10, obj2);
+  }
+  return tmp9Result;
+}) : ((panelVariant) => {
+  let isThread;
+  let items1;
+  let launchpad;
+  let layout;
+  let muted;
+  let resolvedUnreadSetting;
+  let unread;
   let flag = panelVariant.panelVariant;
   ({ unread, resolvedUnreadSetting, muted, isThread, layout, launchpad } = panelVariant);
   if (flag === undefined) {
     flag = false;
   }
   const tmp = closure_7();
-  const layoutStyles = ChannelListLayout.getLayoutStyles(layout, launchpad);
+  const obj = ChannelListLayout;
+  const layoutStyles = obj.getLayoutStyles(layout, launchpad);
   useFontScale;
   let tmp8Result = null;
   if (unread) {
+    let num2;
     const items = [tmp.unreadBadge, , , ];
     let unreadBadgePanel;
+    const tmp9 = View;
     if (flag) {
       unreadBadgePanel = tmp.unreadBadgePanel;
     }
     items[1] = unreadBadgePanel;
     const unreadBadge = layoutStyles.unreadBadge;
-    const obj2 = { style: null, children: null };
+    const obj2 = { style: items, children: null };
     items[2] = isThread ? unreadBadge.positionThread : unreadBadge.position;
-    items[3] = tmp2(9773).makeSizeStyle(layoutStyles.unreadBadge.size);
-    obj2.style = items;
-    const obj3 = { classic: flag, size: null, badgeStyle: null };
-    const tmp2Result = tmp2(9773);
-    const tmp9 = View;
+    const tmp2Result = ChannelListLayout;
+    items[3] = tmp2Result.makeSizeStyle(layoutStyles.unreadBadge.size);
+    ({ classic: flag, size: shared_components_Badge.CHANNEL_BADGE_SIZE * Math.max(tmp6, 1), badgeStyle: items1 });
     const _Math = Math;
-    obj3.size = tmp2(7468).CHANNEL_BADGE_SIZE * Math.max(tmp6, 1);
+    shared_components_BadgeDefault;
     if (resolvedUnreadSetting !== UnreadSetting.ALL_MESSAGES) {
-      let num2 = MUTED_OPACITY_CONTENT;
+      num2 = MUTED_OPACITY_CONTENT;
     } else {
       num2 = 1;
     }
+    items1 = [{ opacity: num2 }];
     const obj4 = { opacity: num2 };
-    const items1 = [obj4];
-    obj3.badgeStyle = items1;
-    obj2.children = jsx(BadgeDefault, { classic: flag, size: null, badgeStyle: null });
     tmp8Result = tmp8(tmp9, obj2);
   }
   return tmp8Result;
-});
+}));
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelUnreadBadge.tsx");
+
+export default memoResult;

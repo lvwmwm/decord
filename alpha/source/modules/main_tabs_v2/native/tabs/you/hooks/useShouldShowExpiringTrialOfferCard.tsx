@@ -1,66 +1,158 @@
-// Module ID: 16869
-// Function ID: 16870
+// Module ID: 16958
+// Function ID: 16959
 // Name: useShouldShowExpiringTrialOfferCard
-// Dependencies: [13471, 1074, 1374, 1091, 563, 7055, 7047, 2]
-// Exports: useShouldShowExpiringTrialOfferCard
+// Dependencies: [13531, 1085, 1379, 1102, 558, 576, 573, 6956, 6948, 2]
 
-// Module 16869 (useShouldShowExpiringTrialOfferCard)
-import useStateFromStores from "useStateFromStores" /* 563 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import useCountdownDefault from "useCountdown" /* 7047 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7055 */;
-import NoticeStore from "NoticeStore" /* 13471 */;
+// Module 16958 (useShouldShowExpiringTrialOfferCard)
+import useStateFromStores from "useStateFromStores" /* 573 */;
+import react from "react" /* 576 */;
+import Constants from "Constants" /* 1085 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import useCountdownDefault from "useCountdown" /* 6948 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 6956 */;
+import NoticeStore from "NoticeStore" /* 13531 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const NoticeTypes = fn(1074).NoticeTypes;
-const PremiumSubscriptionSKUs = fn(1374).PremiumSubscriptionSKUs;
+const NoticeTypes = Constants.NoticeTypes;
+const PremiumSubscriptionSKUs = PremiumConstants.PremiumSubscriptionSKUs;
 let closure_6 = 10 * DurationsDefault.Millis.SECOND;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/hooks/useShouldShowExpiringTrialOfferCard.tsx");
-
-export const useShouldShowExpiringTrialOfferCard = function useShouldShowExpiringTrialOfferCard() {
-  const items = [NoticeStore];
-  const stateFromStores = useStateFromStores.useStateFromStores(items, () => noticeType.getNoticeType());
-  const premiumTrialOffer = usePremiumTrialOffer.usePremiumTrialOffer();
-  if (null != premiumTrialOffer) {
-    if (null != premiumTrialOffer.expiresAt) {
-      const expiresAt = premiumTrialOffer.expiresAt;
-      const num = expiresAt.getTime();
-    }
-  }
-  let tmp5 = null != premiumTrialOffer;
-  if (tmp5) {
-    tmp5 = null != stateFromStores;
-  }
-  if (tmp5) {
-    tmp5 = stateFromStores === NoticeTypes.PREMIUM_TIER_0_TRIAL_ENDING || stateFromStores === NoticeTypes.PREMIUM_TIER_2_TRIAL_ENDING;
-    const tmp6 = stateFromStores === NoticeTypes.PREMIUM_TIER_0_TRIAL_ENDING || stateFromStores === NoticeTypes.PREMIUM_TIER_2_TRIAL_ENDING;
-  }
-  if (!tmp5) {
-    if (tmp5) {
-      tmp5 = null != premiumTrialOffer.expiresAt;
-    }
-    if (tmp5) {
-      const _Object = Object;
-      const values = Object.values(tmp3Result);
-      tmp5 = !values.every((item) => 0 === item);
-    }
-    return tmp5;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let noticeType;
+  let tmp4;
+  let tmp5;
+  let tmp9;
+  const obj = react;
+  const cResult = obj.c(8);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [NoticeStore];
+    const fn = function n() {
+      return noticeType.getNoticeType();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
   } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = useStateFromStores;
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  const tmpResult2 = usePremiumTrialOffer;
+  const premiumTrialOffer = tmpResult2.usePremiumTrialOffer();
+  if (cResult[2] !== premiumTrialOffer) {
+    let num3 = 0;
+    if (null != premiumTrialOffer) {
+      num3 = 0;
+      if (null != premiumTrialOffer.expiresAt) {
+        const expiresAt = premiumTrialOffer.expiresAt;
+        num3 = expiresAt.getTime();
+      }
+    }
+    cResult[2] = premiumTrialOffer;
+    cResult[3] = num3;
+    tmp9 = num3;
+  } else {
+    tmp9 = cResult[3];
+  }
+  const tmp11 = useCountdownDefault(tmp9, closure_6);
+  if (cResult[4] === tmp11) {
+    if (cResult[5] === stateFromStores) {
+      let tmp12;
+      if (cResult[6] === premiumTrialOffer) {
+        tmp12 = cResult[7];
+      }
+      return tmp12;
+    }
+  }
+  let tmp13 = null != premiumTrialOffer && null != stateFromStores;
+  if (tmp13) {
+    tmp13 = stateFromStores === NoticeTypes.PREMIUM_TIER_0_TRIAL_ENDING || stateFromStores === NoticeTypes.PREMIUM_TIER_2_TRIAL_ENDING;
+  }
+  if (tmp13) {
+    let NONE;
     const subscriptionTrial = premiumTrialOffer.subscriptionTrial;
     let skuId;
     if (subscriptionTrial != null) {
       skuId = subscriptionTrial.skuId;
     }
     if (null == stateFromStores) {
-      let TIER_0 = PremiumSubscriptionSKUs.NONE;
+      NONE = PremiumSubscriptionSKUs.NONE;
+    } else if (NoticeTypes.PREMIUM_TIER_2_TRIAL_ENDING === stateFromStores) {
+      NONE = PremiumSubscriptionSKUs.TIER_2;
+    } else if (tmp16.PREMIUM_TIER_0_TRIAL_ENDING === stateFromStores) {
+      NONE = PremiumSubscriptionSKUs.TIER_0;
     } else {
-      if (NoticeTypes.PREMIUM_TIER_2_TRIAL_ENDING === stateFromStores) {
-        TIER_0 = PremiumSubscriptionSKUs.TIER_2;
-      } else if (tmp8.PREMIUM_TIER_0_TRIAL_ENDING !== stateFromStores) {
-        TIER_0 = PremiumSubscriptionSKUs.NONE;
-      }
-      TIER_0 = PremiumSubscriptionSKUs.TIER_0;
+      NONE = PremiumSubscriptionSKUs.NONE;
+    }
+    tmp13 = skuId === NONE;
+  }
+  if (tmp13) {
+    tmp13 = null != premiumTrialOffer.expiresAt;
+  }
+  if (tmp13) {
+    const _Object = Object;
+    const values = Object.values(tmp11);
+    tmp13 = !values.every((item) => 0 === item);
+  }
+  cResult[4] = tmp11;
+  cResult[5] = stateFromStores;
+  cResult[6] = premiumTrialOffer;
+  cResult[7] = tmp13;
+  tmp12 = tmp13;
+}) : (() => {
+  let noticeType;
+  const items = [NoticeStore];
+  const obj = useStateFromStores;
+  const stateFromStores = obj.useStateFromStores(items, () => noticeType.getNoticeType());
+  const obj2 = usePremiumTrialOffer;
+  const premiumTrialOffer = obj2.usePremiumTrialOffer();
+  let num = 0;
+  const tmp3 = useCountdownDefault;
+  if (null != premiumTrialOffer) {
+    num = 0;
+    if (null != premiumTrialOffer.expiresAt) {
+      const expiresAt = premiumTrialOffer.expiresAt;
+      num = expiresAt.getTime();
     }
   }
-};
+  let tmp5 = null != premiumTrialOffer;
+  const tmp3Result = tmp3(num, closure_6);
+  if (tmp5) {
+    tmp5 = null != stateFromStores;
+  }
+  if (tmp5) {
+    tmp5 = stateFromStores === NoticeTypes.PREMIUM_TIER_0_TRIAL_ENDING || stateFromStores === NoticeTypes.PREMIUM_TIER_2_TRIAL_ENDING;
+  }
+  if (tmp5) {
+    let NONE;
+    const subscriptionTrial = premiumTrialOffer.subscriptionTrial;
+    let skuId;
+    if (subscriptionTrial != null) {
+      skuId = subscriptionTrial.skuId;
+    }
+    if (null == stateFromStores) {
+      NONE = PremiumSubscriptionSKUs.NONE;
+    } else if (NoticeTypes.PREMIUM_TIER_2_TRIAL_ENDING === stateFromStores) {
+      NONE = PremiumSubscriptionSKUs.TIER_2;
+    } else if (tmp8.PREMIUM_TIER_0_TRIAL_ENDING === stateFromStores) {
+      NONE = PremiumSubscriptionSKUs.TIER_0;
+    } else {
+      NONE = PremiumSubscriptionSKUs.NONE;
+    }
+    tmp5 = skuId === NONE;
+  }
+  if (tmp5) {
+    tmp5 = null != premiumTrialOffer.expiresAt;
+  }
+  if (tmp5) {
+    const _Object = Object;
+    const values = Object.values(tmp3Result);
+    tmp5 = !values.every((item) => 0 === item);
+  }
+  return tmp5;
+});
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/hooks/useShouldShowExpiringTrialOfferCard.tsx");
+
+export const useShouldShowExpiringTrialOfferCard = tmp2;

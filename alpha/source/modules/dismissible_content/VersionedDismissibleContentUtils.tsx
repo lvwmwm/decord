@@ -1,21 +1,24 @@
-// Module ID: 2042
-// Function ID: 2043
+// Module ID: 2049
+// Function ID: 2050
 // Name: VersionedDismissibleContentUtils
-// Dependencies: [2043, 7191, 2029, 13736, 13737, 1979, 13738, 2056, 2]
+// Dependencies: [2050, 7094, 2036, 13801, 13802, 1985, 13803, 2064, 2]
 // Exports: getVersionedDismissibleContentCurrentVersion
 
-// Module 2042 (VersionedDismissibleContentUtils)
-import dismissible_content from "dismissible_content" /* 2029 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
-import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 7191 */;
+// Module 2049 (VersionedDismissibleContentUtils)
+import Server from "Server" /* 1985 */;
+import dismissible_content from "dismissible_content" /* 2036 */;
+import TypeUtils from "TypeUtils" /* 2064 */;
+import AppLauncherBadgeUtils from "AppLauncherBadgeUtils" /* 13802 */;
+import WideBannerDismissibleContentVersion from "WideBannerDismissibleContentVersion" /* 13803 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 7094 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/dismissible_content/VersionedDismissibleContentUtils.tsx");
 
 export const getVersionedDismissibleContentCurrentVersion = function getVersionedDismissibleContentCurrentVersion(id) {
   if (dismissible_content.DismissibleContent.COLLECTIBLES_SHOP_ENTRY_MARKETING === id) {
-    const marketingBySurface = CollectiblesMarketingsStore.getMarketingBySurface(tmp(13736).CollectiblesMarketingSurface.MOBILE_SHOP_BUTTON);
+    const marketingBySurface = CollectiblesMarketingsStore.getMarketingBySurface(tmp(13801).CollectiblesMarketingSurface.MOBILE_SHOP_BUTTON);
     let num5;
     if (marketingBySurface != null) {
       num5 = marketingBySurface.version;
@@ -24,22 +27,26 @@ export const getVersionedDismissibleContentCurrentVersion = function getVersione
       num5 = 0;
     }
     return num5;
-  } else if (tmp(2029).DismissibleContent.ACTIVITIES_VOICE_LAUNCHER_BADGE === id) {
-    const obj = { storeState: EmbeddedActivitiesStore.getState(), surface: tmp(1979).EmbeddedActivitySurfaces.VOICE_LAUNCHER };
-    return tmp(13737).getNewestBadgeableVersion(obj);
+  } else if (dismissible_content.DismissibleContent.ACTIVITIES_VOICE_LAUNCHER_BADGE === id) {
+    const obj = { storeState: EmbeddedActivitiesStore.getState(), surface: Server.EmbeddedActivitySurfaces.VOICE_LAUNCHER };
+    const getNewestBadgeableVersion = AppLauncherBadgeUtils.getNewestBadgeableVersion;
+    AppLauncherBadgeUtils;
+    return getNewestBadgeableVersion(obj);
   } else {
-    if (tmp(2029).DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK !== id) {
-      if (tmp(2029).DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_BADGE !== id) {
-        if (tmp(2029).DismissibleContent.COLLECTIBLES_SHOP_WIDE_BANNER === id) {
-          return tmp(13738).getWideBannerDismissibleContentVersion();
+    if (dismissible_content.DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK !== id) {
+      if (dismissible_content.DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_BADGE !== id) {
+        if (dismissible_content.DismissibleContent.COLLECTIBLES_SHOP_WIDE_BANNER === id) {
+          const tmpResult3 = WideBannerDismissibleContentVersion;
+          return tmpResult3.getWideBannerDismissibleContentVersion();
         } else {
-          if (tmp(2029).DismissibleContent.GAME_SHOP_ANNOUNCEMENT_MODAL !== id) {
-            if (tmp(2029).DismissibleContent.SLAYER_STOREFRONT_VC_GIFTING_STREAM_HEADER_NEW_BADGE !== id) {
-              if (tmp(2029).DismissibleContent.SLAYER_STOREFRONT_VC_GIFTING_PANEL_APP_WIDGET_CTA !== id) {
-                if (tmp(2029).DismissibleContent.COLLECTIBLES_SHOP_GAME_SERVER_HOSTING_BANNER === id) {
+          if (dismissible_content.DismissibleContent.GAME_SHOP_ANNOUNCEMENT_MODAL !== id) {
+            if (dismissible_content.DismissibleContent.SLAYER_STOREFRONT_VC_GIFTING_STREAM_HEADER_NEW_BADGE !== id) {
+              if (dismissible_content.DismissibleContent.SLAYER_STOREFRONT_VC_GIFTING_PANEL_APP_WIDGET_CTA !== id) {
+                if (dismissible_content.DismissibleContent.COLLECTIBLES_SHOP_GAME_SERVER_HOSTING_BANNER === id) {
                   return 0;
                 } else {
-                  tmp(2056).assertUnreachable(id, { andFail: false });
+                  const tmpResult4 = TypeUtils;
+                  tmpResult4.assertUnreachable(id, { andFail: false });
                   return 0;
                 }
               }

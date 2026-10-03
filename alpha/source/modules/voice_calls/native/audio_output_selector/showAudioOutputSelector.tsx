@@ -1,24 +1,29 @@
-// Module ID: 9320
-// Function ID: 9321
+// Module ID: 9330
+// Function ID: 9331
 // Name: showAudioOutputSelector
-// Dependencies: [17, 9321, 1364, 4809, 9322, 1981, 2]
+// Dependencies: [17, 9331, 1369, 4854, 9332, 1987, 2]
 // Exports: showAudioOutputSelector
 
-// Module 9320 (showAudioOutputSelector)
-import _mod17 from "module_17" /* 17 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
-import VoicePanelHeaderConstants from "VoicePanelHeaderConstants" /* 9321 */;
+// Module 9330 (showAudioOutputSelector)
+import react_native from "react-native" /* 17 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import VoicePanelHeaderConstants from "VoicePanelHeaderConstants" /* 9331 */;
 import size from "module_2" /* 2 */;
 
-const NativeModules = _mod17.NativeModules;
+let tmp;
+const asyncRequire = tmp(1987);
+const NativeModules = react_native.NativeModules;
 let closure_4 = VoicePanelHeaderConstants.VOICE_PANEL_AUDIO_OUTPUT_ACTION_SHEET_KEY;
 const result = size.fileFinishedImporting("modules/voice_calls/native/audio_output_selector/showAudioOutputSelector.tsx");
 
 export const showAudioOutputSelector = function showAudioOutputSelector(channelId, isConnectedToVoiceChannel) {
+  const obj = PlatformUtils;
+  const tmp2 = dependencyMap;
   if (obj.isAndroid()) {
     const obj3 = { channelId, isConnectedToVoiceChannel };
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9322, dependencyMap.paths), closure_4, obj3);
+    const obj2 = ActionSheetActionCreatorsDefault;
+    obj2.openLazy(asyncRequire(9332, tmp2.paths), closure_4, obj3);
   } else {
     const AudioRoutePicker = NativeModules.AudioRoutePicker;
     if (AudioRoutePicker != null) {

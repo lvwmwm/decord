@@ -1,245 +1,542 @@
 // Module ID: 974
 // Function ID: 975
-// Dependencies: [682, 937, 893, 943, 896]
-// Exports: registerWebWorker
+// Dependencies: [5, 693, 904, 908]
+// Exports: createStore, makeBrowserOfflineTransport
 
 // Module 974
-import _mod937 from "module_937" /* 937 */;
-import _getUnhandledRejectionError from "_getUnhandledRejectionError" /* 943 */;
-import registerSpanErrorInstrumentation from "module_682" /* 682 */;
+import _mod904 from "module_904" /* 904 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 
-Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const WebWorker = "WebWorker";
+const require = globalThis.__r;
+let _require, c0, c1, c4, c5, closure_2, dependencyMap, f82552, getAllKeys;
 
-export const INTEGRATION_NAME = "WebWorker";
-export const registerWebWorker = function registerWebWorker(self) {
-  const _self = self.self;
-  const _sentryDebugIds = _self._sentryDebugIds;
-  let obj = { _sentryMessage: true, _sentryDebugIds, _sentryModuleMetadata: null };
-  const _sentryModuleMetadata = _self._sentryModuleMetadata;
-  obj._sentryModuleMetadata = _sentryModuleMetadata;
-  _self.postMessage(obj);
-  const listener = _self.addEventListener("unhandledrejection", (event) => {
-    const obj = { reason: _getUnhandledRejectionError._getUnhandledRejectionError(event), filename: null };
-    const _location = _self.location;
-    let href;
-    if (_location != null) {
-      href = _location.href;
-    }
-    obj.filename = href;
-    _self.postMessage({ _sentryMessage: true, _sentryWorkerError: obj });
-    if (_mod937.DEBUG_BUILD) {
-      const debug = tmp(682).debug;
-      debug.log("[Sentry Worker] Forwarding unhandled rejection to parent", obj);
-    }
-  });
-  if (_self(937).DEBUG_BUILD) {
-    let debug = _self(682).debug;
-    debug.log("[Sentry Worker] Registered worker with unhandled rejection handling");
-  }
-};
-export const webWorkerIntegration = registerSpanErrorInstrumentation.defineIntegration((worker) => {
-  worker = worker.worker;
-  return {
-    name: WebWorker,
-    setupOnce() {
-      let arr = worker;
-      if (!Array.isArray(worker)) {
-        const items = [worker];
-        arr = items;
-      }
-      const item = arr.forEach((addEventListener) => {
-        const listener = addEventListener.addEventListener("message", (event) => {
-          const data = event.data;
-          let flag = false;
-          if (obj.isPlainObject(data)) {
-            flag = false;
-            if (true === data._sentryMessage) {
-              if (!("_sentryDebugIds" in data)) {
-                if (!tmp25) {
-                  flag = false;
-                }
-              }
-              if ("_sentryDebugIds" in data) {
-                if (!tmpResult.isPlainObject(data._sentryDebugIds)) {
-                  flag = false;
-                }
-                tmpResult = tmp(tmp2[0]);
-              }
-              if ("_sentryModuleMetadata" in data) {
-                if (!tmpResult8.isPlainObject(data._sentryModuleMetadata)) {
-                  flag = false;
-                }
-                tmpResult8 = tmp(tmp2[0]);
-              }
-              flag = true;
-              if ("_sentryWorkerError" in data) {
-                flag = true;
-                if (!tmpResult9.isPlainObject(data._sentryWorkerError)) {
-                  flag = false;
-                }
-                tmpResult9 = tmp(tmp2[0]);
-              }
-            }
-          }
-          if (flag) {
-            const result = event.stopImmediatePropagation();
-            if (event.data._sentryDebugIds) {
-              if (tmp(tmp2[1]).DEBUG_BUILD) {
-                const debug = tmp(tmp2[0]).debug;
-                debug.log("Sentry debugId web worker message received", event.data);
-              }
-              const obj2 = {};
-              const merged = Object.assign(event.data._sentryDebugIds);
-              const merged1 = Object.assign(tmp(tmp2[2]).WINDOW._sentryDebugIds);
-              tmp(tmp2[2]).WINDOW._sentryDebugIds = obj2;
-            }
-            if (event.data._sentryModuleMetadata) {
-              if (tmp(tmp2[1]).DEBUG_BUILD) {
-                const debug2 = tmp(tmp2[0]).debug;
-                debug2.log("Sentry module metadata web worker message received", event.data);
-              }
-              const obj3 = {};
-              const merged2 = Object.assign(event.data._sentryModuleMetadata);
-              const merged3 = Object.assign(tmp(tmp2[2]).WINDOW._sentryModuleMetadata);
-              tmp(tmp2[2]).WINDOW._sentryModuleMetadata = obj3;
-            }
-            if (event.data._sentryWorkerError) {
-              if (tmp(tmp2[1]).DEBUG_BUILD) {
-                const debug3 = tmp(tmp2[0]).debug;
-                debug3.log("Sentry worker rejection message received", event.data._sentryWorkerError);
-              }
-              const _sentryWorkerError = event.data._sentryWorkerError;
-              const client = tmp(tmp2[0]).getClient();
-              if (client) {
-                const stackParser = client.getOptions().stackParser;
-                const attachStacktrace = client.getOptions().attachStacktrace;
-                const reason = _sentryWorkerError.reason;
-                if (tmpResult11.isPrimitive(reason)) {
-                  let result1 = tmp(tmp2[3])._eventFromRejectionWithPrimitive(reason);
-                  const tmpResult12 = tmp(tmp2[3]);
-                } else {
-                  const tmpResult13 = tmp(tmp2[4]);
-                  result1 = tmpResult13.eventFromUnknownInput(stackParser, reason, undefined, attachStacktrace, true);
-                }
-                result1.level = "error";
-                if (_sentryWorkerError.filename) {
-                  const obj4 = {};
-                  const merged4 = Object.assign(result1.contexts);
-                  const obj5 = { filename: _sentryWorkerError.filename };
-                  obj4.worker = obj5;
-                  result1.contexts = obj4;
-                }
-                tmpResult11 = tmp(tmp2[0]);
-                const obj6 = { originalException: reason, mechanism: { handled: false, type: "auto.browser.web_worker.onunhandledrejection" } };
-                tmp(tmp2[0]).captureEvent(result1, obj6);
-                if (tmp(tmp2[1]).DEBUG_BUILD) {
-                  const debug4 = tmp(tmp2[0]).debug;
-                  debug4.log("Captured worker unhandled rejection", reason);
-                }
-                const tmpResult14 = tmp(tmp2[0]);
-              }
-              const tmpResult10 = tmp(tmp2[0]);
-            }
-          }
+function _push(fn, arg1, arg2) {
+  let closure_0 = arg1;
+  let closure_1 = arg2;
+  return fn((getAllKeys) => {
+    getAllKeys = getAllKeys.getAllKeys();
+    let promise = new Promise((arg0, arg1) => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      const fn = () => closure_0(transaction.result);
+      closure_0.onsuccess = fn;
+      closure_0.oncomplete = fn;
+      const fn2 = () => closure_1(transaction.error);
+      closure_0.onerror = fn2;
+      closure_0.onabort = fn2;
+    });
+    return promise.then(function(result) {
+      if (result.length < closure_1) {
+        const _Math = Math;
+        const items = [];
+        items[HermesBuiltin.arraySpread(items, result, 0)] = 0;
+        const _Math2 = Math;
+        getAllKeys.put(getAllKeys, HermesBuiltin.apply(max, items, Math) + 1);
+        const transaction = getAllKeys.transaction;
+        const self = this;
+        const self2 = this;
+        const promise = new Promise((arg0, arg1) => {
+          let closure_0 = arg0;
+          let closure_1 = arg1;
+          const fn = () => closure_0(transaction.result);
+          closure_0.onsuccess = fn;
+          closure_0.oncomplete = fn;
+          const fn2 = () => closure_1(transaction.error);
+          closure_0.onerror = fn2;
+          closure_0.onabort = fn2;
         });
+        return promise;
+      }
+    });
+  });
+}
+function _unshift(fn, arg1, arg2) {
+  let closure_0 = arg1;
+  let closure_1 = arg2;
+  return fn((getAllKeys) => {
+    getAllKeys = getAllKeys.getAllKeys();
+    let promise = new Promise((arg0, arg1) => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      const fn = () => closure_0(transaction.result);
+      closure_0.onsuccess = fn;
+      closure_0.oncomplete = fn;
+      const fn2 = () => closure_1(transaction.error);
+      closure_0.onerror = fn2;
+      closure_0.onabort = fn2;
+    });
+    return promise.then(function(result) {
+      if (result.length < closure_1) {
+        const _Math = Math;
+        const items = [];
+        items[HermesBuiltin.arraySpread(items, result, 0)] = 0;
+        const _Math2 = Math;
+        getAllKeys.put(getAllKeys, HermesBuiltin.apply(min, items, Math) - 1);
+        const transaction = getAllKeys.transaction;
+        const self = this;
+        const self2 = this;
+        const promise = new Promise((arg0, arg1) => {
+          let closure_0 = arg0;
+          let closure_1 = arg1;
+          const fn = () => closure_0(transaction.result);
+          closure_0.onsuccess = fn;
+          closure_0.oncomplete = fn;
+          const fn2 = () => closure_1(transaction.error);
+          closure_0.onerror = fn2;
+          closure_0.onabort = fn2;
+        });
+        return promise;
+      }
+    });
+  });
+}
+function _shift(fn) {
+  return fn((getAllKeys) => {
+    const allKeys = getAllKeys.getAllKeys();
+    let promise = new Promise((arg0, arg1) => {
+      let closure_0 = arg0;
+      let closure_1 = arg1;
+      const fn = () => closure_0(transaction.result);
+      closure_0.onsuccess = fn;
+      closure_0.oncomplete = fn;
+      const fn2 = () => closure_1(transaction.error);
+      closure_0.onerror = fn2;
+      closure_0.onabort = fn2;
+    });
+    return promise.then(function(result) {
+      let first = result[0];
+      if (null != first) {
+        first = first.get(first);
+        const self = this;
+        const self2 = this;
+        let promise = new Promise((arg0, arg1) => {
+          let closure_0 = arg0;
+          let closure_1 = arg1;
+          const fn = () => closure_0(transaction.result);
+          closure_0.onsuccess = fn;
+          closure_0.oncomplete = fn;
+          const fn2 = () => closure_1(transaction.error);
+          closure_0.onerror = fn2;
+          closure_0.onabort = fn2;
+        });
+        return promise.then((result) => {
+          first = result;
+          first.delete(first);
+          const transaction = first.transaction;
+          const promise = new Promise((arg0, arg1) => {
+            let closure_0 = arg0;
+            let closure_1 = arg1;
+            const fn = () => closure_0(transaction.result);
+            closure_0.onsuccess = fn;
+            closure_0.oncomplete = fn;
+            const fn2 = () => closure_1(transaction.error);
+            closure_0.onerror = fn2;
+            closure_0.onabort = fn2;
+          });
+          return promise.then(() => closure_0);
+        });
+      }
+    });
+  });
+}
+function createIndexedDbStore(arg0) {
+  let dbName = arg0;
+  function getStore() {
+    if (null == f82552) {
+      let str = dbName.dbName;
+      const tmp5 = dbName;
+      if (!str) {
+        str = "sentry-offline";
+      }
+      dbName = tmp5.storeName || "queue";
+      const openResult = globalThis.indexedDB.open(str);
+      openResult.onupgradeneeded = () => {
+        const result = openResult.result;
+        return result.createObjectStore(closure_0);
+      };
+      const self = this;
+      const self2 = this;
+      const promise = new Promise((arg0, arg1) => {
+        let closure_0 = arg0;
+        let closure_1 = arg1;
+        const fn = () => closure_0(transaction.result);
+        closure_0.onsuccess = fn;
+        closure_0.oncomplete = fn;
+        const fn2 = () => closure_1(transaction.error);
+        closure_0.onerror = fn2;
+        closure_0.onabort = fn2;
       });
+      f82552 = (arg0) => {
+        closure_0 = arg0;
+        return promise.then((transaction) => {
+          const transactionResult = transaction.transaction(closure_0, "readwrite");
+          return closure_0(transactionResult.objectStore(closure_0));
+        });
+      };
+    }
+    return f82552;
+  }
+  let obj = {
+    push(arg0) {
+      return closure_4(...arguments);
     },
-    addWorker(addEventListener) {
-      const listener = addEventListener.addEventListener("message", (event) => {
-        const data = event.data;
-        let flag = false;
-        if (obj.isPlainObject(data)) {
-          flag = false;
-          if (true === data._sentryMessage) {
-            if (!("_sentryDebugIds" in data)) {
-              if (!tmp25) {
-                flag = false;
-              }
-            }
-            if ("_sentryDebugIds" in data) {
-              if (!tmpResult.isPlainObject(data._sentryDebugIds)) {
-                flag = false;
-              }
-              tmpResult = tmp(tmp2[0]);
-            }
-            if ("_sentryModuleMetadata" in data) {
-              if (!tmpResult8.isPlainObject(data._sentryModuleMetadata)) {
-                flag = false;
-              }
-              tmpResult8 = tmp(tmp2[0]);
-            }
-            flag = true;
-            if ("_sentryWorkerError" in data) {
-              flag = true;
-              if (!tmpResult9.isPlainObject(data._sentryWorkerError)) {
-                flag = false;
-              }
-              tmpResult9 = tmp(tmp2[0]);
-            }
-          }
-        }
-        if (flag) {
-          const result = event.stopImmediatePropagation();
-          if (event.data._sentryDebugIds) {
-            if (tmp(tmp2[1]).DEBUG_BUILD) {
-              const debug = tmp(tmp2[0]).debug;
-              debug.log("Sentry debugId web worker message received", event.data);
-            }
-            const obj2 = {};
-            const merged = Object.assign(event.data._sentryDebugIds);
-            const merged1 = Object.assign(tmp(tmp2[2]).WINDOW._sentryDebugIds);
-            tmp(tmp2[2]).WINDOW._sentryDebugIds = obj2;
-          }
-          if (event.data._sentryModuleMetadata) {
-            if (tmp(tmp2[1]).DEBUG_BUILD) {
-              const debug2 = tmp(tmp2[0]).debug;
-              debug2.log("Sentry module metadata web worker message received", event.data);
-            }
-            const obj3 = {};
-            const merged2 = Object.assign(event.data._sentryModuleMetadata);
-            const merged3 = Object.assign(tmp(tmp2[2]).WINDOW._sentryModuleMetadata);
-            tmp(tmp2[2]).WINDOW._sentryModuleMetadata = obj3;
-          }
-          if (event.data._sentryWorkerError) {
-            if (tmp(tmp2[1]).DEBUG_BUILD) {
-              const debug3 = tmp(tmp2[0]).debug;
-              debug3.log("Sentry worker rejection message received", event.data._sentryWorkerError);
-            }
-            const _sentryWorkerError = event.data._sentryWorkerError;
-            const client = tmp(tmp2[0]).getClient();
-            if (client) {
-              const stackParser = client.getOptions().stackParser;
-              const attachStacktrace = client.getOptions().attachStacktrace;
-              const reason = _sentryWorkerError.reason;
-              if (tmpResult11.isPrimitive(reason)) {
-                let result1 = tmp(tmp2[3])._eventFromRejectionWithPrimitive(reason);
-                const tmpResult12 = tmp(tmp2[3]);
-              } else {
-                const tmpResult13 = tmp(tmp2[4]);
-                result1 = tmpResult13.eventFromUnknownInput(stackParser, reason, undefined, attachStacktrace, true);
-              }
-              result1.level = "error";
-              if (_sentryWorkerError.filename) {
-                const obj4 = {};
-                const merged4 = Object.assign(result1.contexts);
-                const obj5 = { filename: _sentryWorkerError.filename };
-                obj4.worker = obj5;
-                result1.contexts = obj4;
-              }
-              tmpResult11 = tmp(tmp2[0]);
-              const obj6 = { originalException: reason, mechanism: { handled: false, type: "auto.browser.web_worker.onunhandledrejection" } };
-              tmp(tmp2[0]).captureEvent(result1, obj6);
-              if (tmp(tmp2[1]).DEBUG_BUILD) {
-                const debug4 = tmp(tmp2[0]).debug;
-                debug4.log("Captured worker unhandled rejection", reason);
-              }
-              const tmpResult14 = tmp(tmp2[0]);
-            }
-            const tmpResult10 = tmp(tmp2[0]);
-          }
-        }
-      });
+    unshift(_default) {
+      return closure_3(...arguments);
+    },
+    shift() {
+      return closure_2(...arguments);
     }
   };
-});
+  let closure_4 = _asyncToGenerator(async (arg0, value) => {
+    let closure_0;
+    let obj4;
+    dbName = arg0;
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: "IconComponent" };
+      }
+    } else {
+      let c3;
+      try {
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            closure_2 = tmp;
+            let closure_1 = tmp4;
+            dbName = undefined;
+            c3 = 1;
+            c4 = 2;
+            c5 = 1;
+            const obj5 = { value: obj4.serializeEnvelope(dbName), done: false };
+            obj4 = dbName(closure_1[1]);
+            return obj5;
+          }
+        } else {
+          if (1 === c4) {
+            c3 = 0;
+          } else if (2 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              c5 = 3;
+              const obj6 = { value, done: true };
+              return obj6;
+            } else {
+              dbName = value;
+              let num4 = closure_130_0.maxQueueSize;
+              const tmp10 = dbName;
+              const tmp7 = c3;
+              const tmp9 = closure_130_5();
+              if (!num4) {
+                num4 = 30;
+              }
+              c4 = 3;
+              c5 = 1;
+              const obj7 = { value: tmp7(tmp9, tmp10, num4), done: false };
+              return obj7;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 0;
+            c5 = 3;
+            const obj = { value, done: true };
+            return obj;
+          } else {
+            c3 = 0;
+          }
+          c5 = 3;
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } catch (tmp15) {
+        if (0 === c3) {
+          c5 = 3;
+          throw tmp15;
+        } else {
+          c4 = 1;
+        }
+      }
+    }
+  });
+  let closure_3 = _asyncToGenerator(async (arg0, value) => {
+    let closure_0;
+    let obj4;
+    dbName = arg0;
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: "IconComponent" };
+      }
+    } else {
+      let c3;
+      try {
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            closure_2 = tmp;
+            let closure_1 = tmp4;
+            dbName = undefined;
+            c3 = 1;
+            c4 = 2;
+            c5 = 1;
+            const obj5 = { value: obj4.serializeEnvelope(dbName), done: false };
+            obj4 = dbName(closure_1[1]);
+            return obj5;
+          }
+        } else {
+          if (1 === c4) {
+            c3 = 0;
+          } else if (2 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              c5 = 3;
+              const obj6 = { value, done: true };
+              return obj6;
+            } else {
+              dbName = value;
+              let num4 = closure_130_0.maxQueueSize;
+              const tmp10 = dbName;
+              const tmp7 = c4;
+              const tmp9 = closure_130_5();
+              if (!num4) {
+                num4 = 30;
+              }
+              c4 = 3;
+              c5 = 1;
+              const obj7 = { value: tmp7(tmp9, tmp10, num4), done: false };
+              return obj7;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 0;
+            c5 = 3;
+            const obj = { value, done: true };
+            return obj;
+          } else {
+            c3 = 0;
+          }
+          c5 = 3;
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } catch (tmp15) {
+        if (0 === c3) {
+          c5 = 3;
+          throw tmp15;
+        } else {
+          c4 = 1;
+        }
+      }
+    }
+  });
+  _asyncToGenerator = _asyncToGenerator(async (arg0, value) => {
+    let closure_0;
+    let obj;
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: "IconComponent" };
+      }
+    } else {
+      let c2;
+      try {
+        let closure_1;
+        c4 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            closure_1 = tmp;
+            dbName = undefined;
+            c2 = 1;
+            c3 = 2;
+            c4 = 1;
+            const obj4 = { value: getStore(getStore()), done: false };
+            return obj4;
+          }
+        } else {
+          if (1 === c3) {
+            c2 = 0;
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c2 = 0;
+            c4 = 3;
+            const obj5 = { value, done: true };
+            return obj5;
+          } else {
+            dbName = value;
+            const tmp6 = dbName;
+            if (tmp6) {
+              c2 = 0;
+              c4 = 3;
+              const obj6 = { value: obj.parseEnvelope(dbName), done: true };
+              obj = dbName(closure_1[1]);
+              return obj6;
+            } else {
+              c2 = 0;
+            }
+          }
+          c4 = 3;
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } catch (tmp13) {
+        if (0 === c2) {
+          c4 = 3;
+          throw tmp13;
+        } else {
+          c3 = 1;
+        }
+      }
+    }
+  });
+  return obj;
+}
+let _asyncToGenerator = _asyncToGenerator_mod;
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+
+export const createStore = function createStore(arg0, arg1) {
+  let closure_0 = arg1;
+  const openResult = globalThis.indexedDB.open(arg0);
+  dependencyMap = openResult;
+  openResult.onupgradeneeded = () => {
+    const result = openResult.result;
+    return result.createObjectStore(closure_0);
+  };
+  const promise = new Promise((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    const fn = () => closure_0(transaction.result);
+    closure_0.onsuccess = fn;
+    closure_0.oncomplete = fn;
+    const fn2 = () => closure_1(transaction.error);
+    closure_0.onerror = fn2;
+    closure_0.onabort = fn2;
+  });
+  return (arg0) => {
+    closure_0 = arg0;
+    return promise.then((transaction) => {
+      const transactionResult = transaction.transaction(closure_0, "readwrite");
+      return closure_0(transactionResult.objectStore(closure_0));
+    });
+  };
+};
+export const makeBrowserOfflineTransport = function makeBrowserOfflineTransport() {
+  let makeFetchTransport = arg0;
+  if (arg0 === undefined) {
+    let tmp2 = dependencyMap;
+    makeFetchTransport = require("module_908").makeFetchTransport;
+  }
+  let obj = require("module_693");
+  _require = obj.makeOfflineTransport(makeFetchTransport);
+  return (arg0) => {
+    let obj = { createStore: createIndexedDbStore };
+    const merged = Object.assign(arg0);
+    const tmp2 = closure_0(obj);
+    const WINDOW = _mod904.WINDOW;
+    const addEventListener = WINDOW.addEventListener;
+    closure_0 = _asyncToGenerator(async (arg0, value) => {
+      if (c0 === 2) {
+        c0 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp2 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } else {
+        try {
+          c0 = 2;
+          if (0 === c1) {
+            if (arg0 === 1) {
+              c0 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c0 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              c1 = 1;
+              c0 = 1;
+              const obj4 = { value: c0.flush(), done: false };
+              return obj4;
+            }
+          } else if (arg0 === 1) {
+            c0 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c0 = 3;
+            const obj = { value, done: true };
+            return obj;
+          } else {
+            c0 = 3;
+            return { value: "IconComponent", done: "IconComponent" };
+          }
+        } catch (tmp5) {
+          c0 = 3;
+          throw tmp5;
+        }
+      }
+    });
+    const listener = addEventListener("online", function(arg0) {
+      return closure_0(...arguments);
+    });
+    return tmp2;
+  };
+};
+export const push = _push;
+export const shift = _shift;
+export const unshift = _unshift;

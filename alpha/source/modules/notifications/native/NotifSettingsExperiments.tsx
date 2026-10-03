@@ -1,16 +1,16 @@
-// Module ID: 14217
-// Function ID: 14218
+// Module ID: 14285
+// Function ID: 14286
 // Name: NotifSettingsExperiments
-// Dependencies: [1435, 2]
+// Dependencies: [1440, 2]
 
-// Module 14217 (NotifSettingsExperiments)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 14285 (NotifSettingsExperiments)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-04-declarative-notif-settings", kind: "user", defaultConfig: { enabled: false, clearDeclarative: false }, variations: null };
-const obj2 = { 1: null, 2: { enabled: true, clearDeclarative: false } };
+let obj2;
+const obj = { name: "2026-04-declarative-notif-settings", kind: "user", defaultConfig: { enabled: false, clearDeclarative: false }, variations: obj2 };
+obj2 = { 1: null, 2: { enabled: true, clearDeclarative: false } };
 obj2[2] = { enabled: false, clearDeclarative: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/notifications/native/NotifSettingsExperiments.tsx");
 

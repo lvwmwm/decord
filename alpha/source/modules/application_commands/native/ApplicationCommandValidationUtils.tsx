@@ -1,10 +1,10 @@
-// Module ID: 11850
-// Function ID: 11851
+// Module ID: 11781
+// Function ID: 11782
 // Name: application_commands/ApplicationCommandValidationUtils
 // Dependencies: [2]
 // Exports: getFirstInvalidOption
 
-// Module 11850 (application_commands/ApplicationCommandValidationUtils)
+// Module 11781 (application_commands/ApplicationCommandValidationUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/application_commands/native/ApplicationCommandValidationUtils.tsx");
@@ -15,7 +15,7 @@ export const getFirstInvalidOption = function getFirstInvalidOption(activeComman
     return null;
   } else {
     for (const item10010 of options) {
-      let tmp4 = arg1[item10010.name];
+      let tmp4 = first2[item10010.name];
       let tmp3 = item10010;
       if (item10010.required) {
         if (null == tmp4) {

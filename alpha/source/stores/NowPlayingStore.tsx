@@ -1,86 +1,104 @@
-// Module ID: 13496
-// Function ID: 13497
+// Module ID: 13556
+// Function ID: 13557
 // Name: NowPlayingStore
-// Dependencies: [7245, 4885, 1372, 1074, 13497, 504, 573, 2]
+// Dependencies: [7143, 4930, 1377, 1085, 13557, 504, 584, 2]
 
-// Module 13496 (NowPlayingStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import getApplicationIdForActivityDefault from "getApplicationIdForActivity" /* 13497 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7245 */;
-import PresenceStore from "PresenceStore" /* 4885 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 13556 (NowPlayingStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import getApplicationIdForActivityDefault from "getApplicationIdForActivity" /* 13557 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7143 */;
+import PresenceStore from "PresenceStore" /* 4930 */;
+import UserStore from "UserStore" /* 1377 */;
+import size from "module_2" /* 2 */;
 
+let closure_6, timestamps;
+
+const f114860 = (item) => {
+  const tmp = false !== closure_2_9(item) || closure_0;
+  closure_0 = tmp;
+};
 function _handlePresenceUpdate(user) {
+  let obj;
+  let obj3;
   user = user.user;
   const activities = user.activities;
-  c1 = undefined;
+  let c1;
   if (null == user) {
     return false;
   } else {
     const found = activities.filter((type) => type.type !== constants.CUSTOM_STATUS);
     if (0 === found.length) {
+      let id = user.id;
+      let tmp3 = obj3;
       let flag2 = false;
-      if (null != obj2[user.id]) {
-        let gameId = tmp7.gameId;
+      if (null != obj3[id]) {
+        let gameId = tmp4.gameId;
+        const tmp5 = obj;
         if (null != obj[gameId]) {
           obj = {};
           let merged = Object.assign(obj);
-          delete tmp[tmp2];
+          delete obj[gameId][id];
           let _Object = Object;
           if (0 === Object.values(obj[gameId]).length) {
-            delete tmp[tmp3];
+            delete obj[gameId];
           }
         }
-        obj2 = {};
-        let merged1 = Object.assign(obj2);
-        delete tmp[tmp2];
+        obj3 = {};
+        let merged1 = Object.assign(obj3);
+        delete obj2[id];
         flag2 = true;
       }
       return flag2;
     } else {
+      let flag = false;
       c1 = false;
       const item = found.forEach((timestamps) => {
-        const tmp7 = getApplicationIdForActivityDefault(timestamps);
-        if (null == tmp7) {
+        let flag;
+        const tmp2 = getApplicationIdForActivityDefault(timestamps);
+        if (null == tmp2) {
+          const id2 = tmp.id;
           let flag2 = false;
-          if (null != obj8[tmp6.id]) {
-            const gameId2 = tmp34.gameId;
-            if (null != obj6[gameId2]) {
-              obj2 = {};
-              const merged = Object.assign(obj6);
-              obj6 = obj2;
-              delete tmp[tmp2];
+          if (null != obj18[id2]) {
+            const gameId2 = tmp27.gameId;
+            if (null != obj7[gameId2]) {
+              obj3 = {};
+              const merged = Object.assign(obj7);
+              obj7 = obj3;
+              delete obj8[gameId2][id2];
               const _Object2 = Object;
-              if (0 === Object.values(obj6[gameId2]).length) {
-                delete tmp[tmp3];
+              if (0 === Object.values(obj7[gameId2]).length) {
+                delete obj7[gameId2];
               }
             }
-            const obj3 = {};
-            const merged1 = Object.assign(obj8);
-            obj8 = obj3;
-            delete tmp[tmp2];
+            const obj4 = {};
+            const merged1 = Object.assign(obj18);
+            obj18 = obj4;
+            delete obj9[id2];
             flag2 = true;
           }
-          let flag = flag2;
+          flag = flag2;
         } else {
-          if (tmp8) {
-            if (null != obj8[tmp6.id]) {
-              const gameId = tmp10.gameId;
-              if (null != obj6[gameId]) {
+          const tmp3 = null != obj18[user.id] && obj18[user.id].gameId !== tmp2;
+          if (tmp3) {
+            const id = tmp.id;
+            if (null != obj18[id]) {
+              const gameId = tmp5.gameId;
+              if (null != obj7[gameId]) {
                 obj = {};
-                const merged2 = Object.assign(obj6);
-                obj6 = obj;
-                delete tmp2[tmp4];
+                const merged2 = Object.assign(obj7);
+                obj7 = obj;
+                delete obj[gameId][id];
                 const _Object = Object;
-                if (0 === Object.values(obj6[gameId]).length) {
-                  delete tmp2[tmp5];
+                if (0 === Object.values(obj7[gameId]).length) {
+                  delete obj7[gameId];
                 }
               }
-              const obj4 = {};
-              const merged3 = Object.assign(obj8);
-              obj8 = obj4;
-              delete tmp2[tmp4];
+              const obj5 = {};
+              const merged3 = Object.assign(obj18);
+              obj18 = obj5;
+              delete obj2[id];
             }
           }
           timestamps = timestamps.timestamps;
@@ -92,106 +110,109 @@ function _handlePresenceUpdate(user) {
             const _Date = Date;
             start = Date.now();
           }
-          const obj5 = { userId: tmp6.id, activity: timestamps, startedPlaying: start };
-          obj6 = {};
-          const merged4 = Object.assign(obj6);
-          const obj7 = {};
-          const merged5 = Object.assign(obj6[tmp7]);
-          obj7[obj5.userId] = obj5;
-          obj6[tmp7] = obj7;
-          obj8 = {};
-          const merged6 = Object.assign(obj8);
-          const obj9 = { gameId: tmp7, startedPlaying: obj5.startedPlaying };
-          obj8[obj5.userId] = obj9;
+          const obj6 = { userId: user.id, activity: timestamps, startedPlaying: start };
+          obj7 = {};
+          const merged4 = Object.assign(obj7);
+          const obj17 = {};
+          const merged5 = Object.assign(obj7[tmp2]);
+          obj17[obj6.userId] = obj6;
+          obj7[tmp2] = obj17;
+          obj18 = {};
+          const merged6 = Object.assign(obj18);
+          const obj19 = { gameId: tmp2, startedPlaying: obj6.startedPlaying };
+          obj18[obj6.userId] = obj19;
           flag = true;
-          tmp8 = null != obj8[tmp6.id] && obj8[tmp6.id].gameId !== tmp7;
         }
         if (flag) {
           c1 = true;
         }
       });
+      let tmp2 = c1;
       return c1;
     }
   }
 }
 function handleUserAffinitiesV2StoreUpdate() {
+  let obj = UserAffinitiesV2Store;
   let flag = false;
+  const tmp = UserAffinitiesV2Store.shouldFetch() || closure_6;
   if (!tmp) {
-    closure_7 = {};
-    closure_8 = {};
-    closure_0 = false;
+    let closure_7 = {};
+    let closure_8 = {};
+    let closure_0 = false;
     const userIds = PresenceStore.getUserIds();
     const item = userIds.forEach((item) => {
       const user = UserStore.getUser(item);
       if (null != user) {
         const obj = { user, activities: PresenceStore.getActivities(item) };
-        closure_0 = _handlePresenceUpdate(obj) || closure_0;
         const tmp4 = _handlePresenceUpdate(obj) || closure_0;
+        closure_0 = tmp4;
       }
     });
     flag = closure_0;
   }
-  closure_6 = !UserAffinitiesV2Store.shouldFetch();
+  closure_6 = !obj.shouldFetch();
   return flag;
 }
-const ActivityTypes = fn(1074).ActivityTypes;
+const ActivityTypes = Constants.ActivityTypes;
 let c6 = false;
-const Store = initializeDefault.Store;
+let obj7 = {};
+let obj18 = {};
+const Store = get_initializedDefault.Store;
 class NowPlayingStore extends Store {
+  initialize() {
+    this.waitFor(PresenceStore, UserAffinitiesV2Store, UserStore);
+    const items = [UserAffinitiesV2Store];
+    this.syncWith(items, handleUserAffinitiesV2StoreUpdate);
+  }
+  getNowPlaying(arg0) {
+    return obj7[arg0];
+  }
+  getUserGame(arg0) {
+    return obj18[arg0];
+  }
 }
 const prototype = NowPlayingStore.prototype;
-prototype["initialize"] = function initialize() {
-  this.waitFor(PresenceStore, UserAffinitiesV2Store, UserStore);
-  const items = [UserAffinitiesV2Store];
-  this.syncWith(items, handleUserAffinitiesV2StoreUpdate);
-};
 Object.defineProperty(prototype, "games", {
   get: function games() {
-    return obj6;
+    return obj7;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "usersPlaying", {
   get: function usersPlaying() {
-    return obj8;
+    return obj18;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "gameIds", {
   get: function gameIds() {
-    return Object.keys(obj6);
+    return Object.keys(obj7);
   },
   set: undefined
 });
-prototype["getNowPlaying"] = function getNowPlaying(arg0) {
-  return obj6[arg0];
-};
-prototype["getUserGame"] = function getUserGame(arg0) {
-  return obj8[arg0];
-};
 NowPlayingStore.displayName = "NowPlayingStore";
-const nowPlayingStore = new NowPlayingStore(DispatcherDefault, {
+let obj = {
   CONNECTION_OPEN: function handleConnectionOpen() {
 
   },
   CONNECTION_OPEN_SUPPLEMENTAL: function handleConnectionOpenSupplemental(arg0) {
+    let guilds;
+    let presences;
     ({ guilds, presences } = arg0);
-    c0 = false;
     let item = guilds.forEach((presences) => {
       presences = presences.presences;
-      closure_0 = false;
-      const item = presences.forEach((item) => {
-        closure_0 = false !== _handlePresenceUpdate(item) || closure_0;
-      });
-      if (closure_0) {
+      let closure_0 = false;
+      const item = presences.forEach(f114860);
+      const tmp2 = closure_0;
+      if (tmp2) {
         c0 = true;
       }
     });
-    closure_129_0 = false;
-    const item1 = presences.forEach((item) => {
-      closure_0 = false !== _handlePresenceUpdate(item) || closure_0;
-    });
-    if (closure_129_0) {
+    let c0 = false;
+    const item1 = presences.forEach(f114860);
+    const tmp3 = c0;
+    if (tmp3) {
       c0 = true;
     }
     return c0;
@@ -206,14 +227,12 @@ const nowPlayingStore = new NowPlayingStore(DispatcherDefault, {
   },
   PRESENCES_REPLACE: function handlePresencesReplace(presences) {
     presences = presences.presences;
-    c0 = false;
-    const item = presences.forEach((item) => {
-      closure_0 = false !== _handlePresenceUpdate(item) || closure_0;
-    });
+    let c0 = false;
+    const item = presences.forEach(f114860);
     return c0;
   }
-});
-const size = fn(2);
+};
+const nowPlayingStore = new NowPlayingStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("stores/NowPlayingStore.tsx");
 
 export default nowPlayingStore;

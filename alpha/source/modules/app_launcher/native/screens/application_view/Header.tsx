@@ -1,71 +1,695 @@
-// Module ID: 11823
-// Function ID: 11824
-// Name: application_view/Header
-// Dependencies: [19, 17, 1372, 8903, 1484, 1074, 21, 576, 4845, 4595, 504, 11744, 4560, 7771, 11749, 8781, 8509, 11824, 4841, 1177, 7536, 4785, 1241, 6796, 11825, 4556, 1115, 11826, 2]
-// Exports: default
+// Module ID: 11754
+// Function ID: 11755
+// Name: Header
+// Dependencies: [19, 17, 1377, 8931, 1489, 1085, 21, 587, 4890, 558, 576, 4612, 504, 11665, 4580, 7815, 11670, 8794, 2016, 8514, 11755, 4886, 1188, 7575, 4840, 1252, 6688, 11756, 4567, 1126, 11757, 2]
 
-// Module 11823 (application_view/Header)
-import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ToastUtils from "ToastUtils" /* 4556 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4595 */;
-import ClipboardUtils from "ClipboardUtils" /* 6796 */;
-import useAvatarColorDefault from "useAvatarColor" /* 7771 */;
-import AppLauncherBackButtonDefault from "AppLauncherBackButton" /* 11824 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 11825 */;
-import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
-import AppLauncherStore from "AppLauncherStore" /* 8903 */;
+// Module 11754 (Header)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ToastUtils from "ToastUtils" /* 4567 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import ClipboardUtils from "ClipboardUtils" /* 6688 */;
+import useAvatarColorDefault from "useAvatarColor" /* 7815 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 8794 */;
+import getApplicationInstallURL2 from "getApplicationInstallURL" /* 11756 */;
+import react from "react" /* 19 */;
+import UserStore from "UserStore" /* 1377 */;
+import AppLauncherStore from "AppLauncherStore" /* 8931 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-const ReanimatedRexportDefault = ReanimatedRexport;
+let application, dependencyMap, importDefault;
 
-require = fn;
-const View = fn(17).View;
-const AppLauncherNativeConstants = fn(1484);
+let DEFAULT_CONTENT_PADDING;
+let SCREEN_BACKGROUND_COLOR;
+let metroImportAll;
+let metroImportDefault;
+let rect;
+let rect1;
+let rect2;
+let size;
+let tmp5;
+const ReanimatedRexportDefault = tmp5(4612);
+const AssetRegistryDefault = tmp5(4840);
+const EntityBorderAppIconDefault = tmp5(11670);
+const AppLauncherBackButtonDefault = tmp5(11755);
+const AppDetailsOverflowMenuDefault = tmp5(11757);
+let View = react_native.View;
 ({ DEFAULT_CONTENT_PADDING, SCREEN_BACKGROUND_COLOR } = AppLauncherNativeConstants);
-const Constants = fn(1074);
-({ AnalyticEvents: metroRequire, ApplicationFlags: closure_7 } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+const AnalyticEvents = Constants.AnalyticEvents;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 const xl = nativeDefault.radii.xl;
-let c11 = 105;
-const createStyles = fn(4845);
-let obj2 = { headerContainer: { position: "absolute", top: -16, left: 0, right: 0, minHeight: 161 }, expandedHeaderBanner: { height: 105 }, appIconMask: null, collapsedHeaderBanner: null, collapsedHeaderBannerOverlay: null, loadingIcon: null, actionsWrapper: null };
-const rect = { position: "absolute", padding: 4, bottom: -40, left: 16, backgroundColor: SCREEN_BACKGROUND_COLOR, borderRadius: nativeDefault.radii.xl + 4 };
-obj2.appIconMask = rect;
-const rect1 = { height: 56, justifyContent: "space-between", alignItems: "center", position: "absolute", top: 0, left: 0, right: 0, flexDirection: "row", paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingTop: 16, paddingBottom: nativeDefault.space.PX_12 };
-obj2.collapsedHeaderBanner = rect1;
-obj2.collapsedHeaderBannerOverlay = { backgroundColor: "black", position: "absolute", top: 0, left: 0, right: 0, bottom: 0 };
-let size = { height: 72, width: 72, borderRadius: xl, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
-obj2.loadingIcon = size;
-const rect2 = { flexDirection: "row", display: "flex", gap: nativeDefault.space.PX_16, position: "absolute", right: nativeDefault.space.PX_12, top: nativeDefault.space.PX_12, alignItems: "center", justifyContent: "center" };
-obj2.actionsWrapper = rect2;
-let closure_12 = createStyles.createStyles(obj2);
-const __initData = { code: "function HeaderTsx1(){const{interpolate,scrollOffsetY,HEADER_SCROLL_RANGE}=this.__closure;return{transform:[{translateY:interpolate(scrollOffsetY.get(),[0,HEADER_SCROLL_RANGE],[0,-HEADER_SCROLL_RANGE],'clamp')}]};}" };
-const __initData2 = { code: "function HeaderTsx2(){const{interpolate,scrollOffsetY,HEADER_SCROLL_RANGE}=this.__closure;return{transform:[{translateY:interpolate(scrollOffsetY.get(),[0,HEADER_SCROLL_RANGE],[0,HEADER_SCROLL_RANGE],'clamp')}]};}" };
-const __initData3 = { code: "function HeaderTsx3(){const{interpolate,scrollOffsetY,HEADER_SCROLL_RANGE}=this.__closure;return{transform:[{translateY:interpolate(scrollOffsetY.get(),[HEADER_SCROLL_RANGE*0.5,HEADER_SCROLL_RANGE],[16,0],'clamp')}],opacity:interpolate(scrollOffsetY.get(),[HEADER_SCROLL_RANGE*0.5,HEADER_SCROLL_RANGE],[0,1],'clamp')};}" };
-const __initData4 = { code: "function HeaderTsx4(){const{interpolate,scrollOffsetY,HEADER_SCROLL_RANGE}=this.__closure;return{opacity:interpolate(scrollOffsetY.get(),[HEADER_SCROLL_RANGE*0.5,HEADER_SCROLL_RANGE],[0,0.5],'clamp')};}" };
-size = fn(2);
-const result = size.fileFinishedImporting("modules/app_launcher/native/screens/application_view/Header.tsx");
-
-export default function Header(application) {
+let c10 = 105;
+let createStyles = createStyles_mod;
+let obj = { headerContainer: { position: "absolute", top: -16, left: 0, right: 0, minHeight: 161 }, expandedHeaderBanner: { height: 105 }, appIconMask: rect, collapsedHeaderBanner: rect1, collapsedHeaderBannerOverlay: { backgroundColor: "black", position: "absolute", top: 0, left: 0, right: 0, bottom: 0 }, loadingIcon: size, actionsWrapper: rect2 };
+rect = { position: "absolute", padding: 4, bottom: -40, left: 16, backgroundColor: SCREEN_BACKGROUND_COLOR, borderRadius: nativeDefault.radii.xl + 4 };
+createStyles = createStyles.createStyles;
+rect1 = { height: 56, justifyContent: "space-between", alignItems: "center", position: "absolute", top: 0, left: 0, right: 0, flexDirection: "row", paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingTop: 16, paddingBottom: nativeDefault.space.PX_12 };
+size = { height: 72, width: 72, borderRadius: xl, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
+rect2 = { flexDirection: "row", display: "flex", gap: nativeDefault.space.PX_16, position: "absolute", right: nativeDefault.space.PX_12, top: nativeDefault.space.PX_12, alignItems: "center", justifyContent: "center" };
+let closure_11 = createStyles(obj);
+const __initData = { code: "function HeaderTsx1(){const{interpolate,scrollOffsetY,HEADER_SCROLL_RANGE}=this.__closure;return{transform:[{translateY:interpolate(scrollOffsetY.get(),[0,HEADER_SCROLL_RANGE],[0,-HEADER_SCROLL_RANGE],\"clamp\")}]};}" };
+const __initData2 = { code: "function HeaderTsx2(){const{interpolate,scrollOffsetY,HEADER_SCROLL_RANGE}=this.__closure;return{transform:[{translateY:interpolate(scrollOffsetY.get(),[0,HEADER_SCROLL_RANGE],[0,-HEADER_SCROLL_RANGE],'clamp')}]};}" };
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollOffsetY) => {
+  let tmp3;
+  let obj = scrollOffsetY(576);
+  const cResult = obj.c(2);
+  scrollOffsetY = scrollOffsetY.scrollOffsetY;
+  let obj2 = scrollOffsetY(4612);
+  const fn = function n() {
+    let items;
+    let items1;
+    let obj3;
+    const obj = { transform: items1 };
+    const obj2 = { translateY: obj3.interpolate(scrollOffsetY.get(), items, [0, -105], "clamp") };
+    items = [0, c10];
+    items1 = [obj2];
+    obj3 = ReanimatedRexport;
+    return obj;
+  };
+  let obj3 = { interpolate: scrollOffsetY(4612).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
+  fn.__closure = obj3;
+  fn.__workletHash = 1624319834028;
+  fn.__initData = __initData;
+  const animatedStyle = obj2.useAnimatedStyle(fn);
+  if (cResult[0] !== animatedStyle) {
+    const obj4 = { style: animatedStyle };
+    cResult[0] = animatedStyle;
+    cResult[1] = obj4;
+    tmp3 = obj4;
+  } else {
+    tmp3 = cResult[1];
+  }
+  return tmp3;
+}) : ((scrollOffsetY) => {
+  let fn;
+  let obj2;
+  scrollOffsetY = scrollOffsetY.scrollOffsetY;
+  let obj = { style: obj2.useAnimatedStyle(fn) };
+  obj2 = scrollOffsetY(4612);
+  fn = function n() {
+    let items;
+    let items1;
+    let obj3;
+    const obj = { transform: items1 };
+    const obj2 = { translateY: obj3.interpolate(scrollOffsetY.get(), items, [0, -105], "clamp") };
+    items = [0, c10];
+    items1 = [obj2];
+    obj3 = ReanimatedRexport;
+    return obj;
+  };
+  let obj3 = { interpolate: scrollOffsetY(4612).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
+  fn.__closure = obj3;
+  fn.__workletHash = 2569159867119;
+  fn.__initData = __initData2;
+  return obj;
+});
+const __initData3 = { code: "function HeaderTsx3(){const{interpolate,scrollOffsetY,HEADER_SCROLL_RANGE}=this.__closure;return{transform:[{translateY:interpolate(scrollOffsetY.get(),[0,HEADER_SCROLL_RANGE],[0,HEADER_SCROLL_RANGE],\"clamp\")}]};}" };
+const __initData4 = { code: "function HeaderTsx4(){const{interpolate,scrollOffsetY,HEADER_SCROLL_RANGE}=this.__closure;return{transform:[{translateY:interpolate(scrollOffsetY.get(),[HEADER_SCROLL_RANGE*0.5,HEADER_SCROLL_RANGE],[16,0],\"clamp\")}],opacity:interpolate(scrollOffsetY.get(),[HEADER_SCROLL_RANGE*0.5,HEADER_SCROLL_RANGE],[0,1],\"clamp\")};}" };
+const __initData5 = { code: "function HeaderTsx5(){const{interpolate,scrollOffsetY,HEADER_SCROLL_RANGE}=this.__closure;return{transform:[{translateY:interpolate(scrollOffsetY.get(),[0,HEADER_SCROLL_RANGE],[0,HEADER_SCROLL_RANGE],'clamp')}]};}" };
+const __initData6 = { code: "function HeaderTsx6(){const{interpolate,scrollOffsetY,HEADER_SCROLL_RANGE}=this.__closure;return{transform:[{translateY:interpolate(scrollOffsetY.get(),[HEADER_SCROLL_RANGE*0.5,HEADER_SCROLL_RANGE],[16,0],'clamp')}],opacity:interpolate(scrollOffsetY.get(),[HEADER_SCROLL_RANGE*0.5,HEADER_SCROLL_RANGE],[0,1],'clamp')};}" };
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollOffsetY) => {
+  let obj = scrollOffsetY(576);
+  const cResult = obj.c(3);
+  scrollOffsetY = scrollOffsetY.scrollOffsetY;
+  let obj2 = scrollOffsetY(4612);
+  const fn = function n() {
+    let items;
+    let items1;
+    let items2;
+    let obj3;
+    const obj = { transform: items2 };
+    const obj2 = { translateY: obj3.interpolate(scrollOffsetY.get(), items, items1, "clamp") };
+    items = [0, c10];
+    items1 = [0, c10];
+    items2 = [obj2];
+    obj3 = ReanimatedRexport;
+    return obj;
+  };
+  let obj3 = { interpolate: scrollOffsetY(4612).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
+  fn.__closure = obj3;
+  fn.__workletHash = 2970610906275;
+  fn.__initData = __initData3;
+  const animatedStyle = obj2.useAnimatedStyle(fn);
+  let obj4 = scrollOffsetY(4612);
+  const fn2 = function l() {
+    let items;
+    let items1;
+    let items2;
+    let obj3;
+    let obj4;
+    const obj = { transform: items1, opacity: obj4.interpolate(scrollOffsetY.get(), items2, [0, 1], "clamp") };
+    const obj2 = { translateY: obj3.interpolate(scrollOffsetY.get(), items, [16, 0], "clamp") };
+    items = [52.5, c10];
+    items1 = [obj2];
+    items2 = [52.5, c10];
+    obj3 = ReanimatedRexport;
+    obj4 = ReanimatedRexport;
+    return obj;
+  };
+  fn2.__closure = { interpolate: scrollOffsetY(4612).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
+  fn2.__workletHash = 15470059704100;
+  fn2.__initData = __initData4;
+  ({ interpolate: scrollOffsetY(4612).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE });
+  const animatedStyle1 = obj4.useAnimatedStyle(fn2);
+  if (cResult[0] === animatedStyle) {
+    let tmp4;
+    if (cResult[1] === animatedStyle1) {
+      tmp4 = cResult[2];
+    }
+    return tmp4;
+  }
+  const obj6 = { headerStyle: animatedStyle, nameStyle: animatedStyle1 };
+  cResult[0] = animatedStyle;
+  cResult[1] = animatedStyle1;
+  cResult[2] = obj6;
+  tmp4 = obj6;
+}) : ((scrollOffsetY) => {
+  let fn;
+  let fn2;
+  let obj2;
+  let obj4;
+  scrollOffsetY = scrollOffsetY.scrollOffsetY;
+  let obj = { headerStyle: obj2.useAnimatedStyle(fn), nameStyle: obj4.useAnimatedStyle(fn2) };
+  obj2 = scrollOffsetY(4612);
+  fn = function n() {
+    let items;
+    let items1;
+    let items2;
+    let obj3;
+    const obj = { transform: items2 };
+    const obj2 = { translateY: obj3.interpolate(scrollOffsetY.get(), items, items1, "clamp") };
+    items = [0, c10];
+    items1 = [0, c10];
+    items2 = [obj2];
+    obj3 = ReanimatedRexport;
+    return obj;
+  };
+  let obj3 = { interpolate: scrollOffsetY(4612).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
+  fn.__closure = obj3;
+  fn.__workletHash = 11916253250213;
+  fn.__initData = __initData5;
+  obj4 = scrollOffsetY(4612);
+  fn2 = function l() {
+    let items;
+    let items1;
+    let items2;
+    let obj3;
+    let obj4;
+    const obj = { transform: items1, opacity: obj4.interpolate(scrollOffsetY.get(), items2, [0, 1], "clamp") };
+    const obj2 = { translateY: obj3.interpolate(scrollOffsetY.get(), items, [16, 0], "clamp") };
+    items = [52.5, c10];
+    items1 = [obj2];
+    items2 = [52.5, c10];
+    obj3 = ReanimatedRexport;
+    obj4 = ReanimatedRexport;
+    return obj;
+  };
+  fn2.__closure = { interpolate: scrollOffsetY(4612).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
+  fn2.__workletHash = 10128442993702;
+  fn2.__initData = __initData6;
+  ({ interpolate: scrollOffsetY(4612).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE });
+  return obj;
+});
+const __initData7 = { code: "function HeaderTsx7(){const{interpolate,scrollOffsetY,HEADER_SCROLL_RANGE}=this.__closure;return{opacity:interpolate(scrollOffsetY.get(),[HEADER_SCROLL_RANGE*0.5,HEADER_SCROLL_RANGE],[0,0.5],\"clamp\")};}" };
+const __initData8 = { code: "function HeaderTsx8(){const{interpolate,scrollOffsetY,HEADER_SCROLL_RANGE}=this.__closure;return{opacity:interpolate(scrollOffsetY.get(),[HEADER_SCROLL_RANGE*0.5,HEADER_SCROLL_RANGE],[0,0.5],'clamp')};}" };
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollOffsetY) => {
+  let tmp3;
+  let obj = scrollOffsetY(576);
+  const cResult = obj.c(2);
+  scrollOffsetY = scrollOffsetY.scrollOffsetY;
+  let obj2 = scrollOffsetY(4612);
+  const fn = function n() {
+    let items;
+    let obj2;
+    const obj = { opacity: obj2.interpolate(scrollOffsetY.get(), items, [0, 0.5], "clamp") };
+    items = [52.5, c10];
+    obj2 = ReanimatedRexport;
+    return obj;
+  };
+  fn.__closure = { interpolate: scrollOffsetY(4612).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
+  fn.__workletHash = 17064912182733;
+  fn.__initData = __initData7;
+  ({ interpolate: scrollOffsetY(4612).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE });
+  const animatedStyle = obj2.useAnimatedStyle(fn);
+  if (cResult[0] !== animatedStyle) {
+    const obj4 = { style: animatedStyle };
+    cResult[0] = animatedStyle;
+    cResult[1] = obj4;
+    tmp3 = obj4;
+  } else {
+    tmp3 = cResult[1];
+  }
+  return tmp3;
+}) : ((scrollOffsetY) => {
+  let fn;
+  let obj2;
+  scrollOffsetY = scrollOffsetY.scrollOffsetY;
+  let obj = { style: obj2.useAnimatedStyle(fn) };
+  obj2 = scrollOffsetY(4612);
+  fn = function n() {
+    let items;
+    let obj2;
+    const obj = { opacity: obj2.interpolate(scrollOffsetY.get(), items, [0, 0.5], "clamp") };
+    items = [52.5, c10];
+    obj2 = ReanimatedRexport;
+    return obj;
+  };
+  fn.__closure = { interpolate: scrollOffsetY(4612).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
+  fn.__workletHash = 14182047849602;
+  fn.__initData = __initData8;
+  ({ interpolate: scrollOffsetY(4612).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE });
+  return obj;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) => {
+  let closure_2;
+  let id;
+  let intl;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let onAddAppMenuClick;
+  let onPressBack;
+  let scrollOffsetY;
+  let tmp19;
+  let tmp4;
+  let tmp5;
+  let tmp9;
+  const tmp2 = dependencyMap;
+  let obj = application(576);
+  const cResult = obj.c(65);
+  application = application.application;
+  ({ onPressBack, scrollOffsetY, onAddAppMenuClick } = application);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp6 = AppLauncherStore;
+    const items = [AppLauncherStore];
+    const fn = function c() {
+      return AppLauncherStore.entrypoint();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = fn;
+    tmp4 = items;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = application(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  const tmp8 = closure_11();
+  if (cResult[2] !== application) {
+    let appLauncherIconSource = null;
+    if (null != application) {
+      const tmpResult6 = application(11665);
+      appLauncherIconSource = tmpResult6.getAppLauncherIconSource(application);
+    }
+    cResult[2] = application;
+    cResult[3] = appLauncherIconSource;
+    tmp9 = appLauncherIconSource;
+  } else {
+    tmp9 = cResult[3];
+  }
+  const tmpResult7 = application(4580);
+  let str = tmpResult7.useToken(stateFromStores(587).colors.BACKGROUND_BASE_LOW);
+  let tmp13 = tmp9;
+  const tmp12 = stateFromStores(7815);
+  if (typeof tmp9 !== "number") {
+    let uri;
+    if (tmp9 != null) {
+      uri = tmp9.uri;
+    }
+    tmp13 = uri;
+  }
+  if (str == null) {
+    str = "";
+  }
+  const tmp12Result = tmp12(tmp13, str);
+  if (cResult[4] === tmp9) {
+    let tmp16;
+    let tmp22;
+    let tmp25;
+    let tmp28;
+    let tmp31;
+    let tmp32;
+    let tmp34;
+    if (cResult[5] === tmp8.loadingIcon) {
+      tmp16 = cResult[6];
+    }
+    if (cResult[7] !== scrollOffsetY) {
+      let obj2 = { scrollOffsetY };
+      cResult[7] = scrollOffsetY;
+      cResult[8] = obj2;
+      tmp22 = obj2;
+    } else {
+      tmp22 = cResult[8];
+    }
+    const tmp24 = closure_14(tmp22);
+    if (cResult[9] !== scrollOffsetY) {
+      let obj3 = { scrollOffsetY };
+      cResult[9] = scrollOffsetY;
+      cResult[10] = obj3;
+      tmp25 = obj3;
+    } else {
+      tmp25 = cResult[10];
+    }
+    const tmp27 = closure_19(tmp25);
+    if (cResult[11] !== scrollOffsetY) {
+      let obj4 = { scrollOffsetY };
+      cResult[11] = scrollOffsetY;
+      cResult[12] = obj4;
+      tmp28 = obj4;
+    } else {
+      tmp28 = cResult[12];
+    }
+    const tmp30 = closure_22(tmp28);
+    if (cResult[13] !== application) {
+      let str2 = "";
+      if (null != application) {
+        const tmpResult8 = application(8794);
+        str2 = tmpResult8.getSectionName(application);
+      }
+      cResult[13] = application;
+      cResult[14] = str2;
+      tmp31 = str2;
+    } else {
+      tmp31 = cResult[14];
+    }
+    if (cResult[15] !== application) {
+      let result = null != application && "flags" in application;
+      if (result) {
+        const tmpResult9 = application(2016);
+        result = tmpResult9.supportsEmbeddedSurface(application, tmp(8514).EmbeddedSurfaceType.MAIN);
+      }
+      cResult[15] = application;
+      cResult[16] = result;
+      tmp32 = result;
+    } else {
+      tmp32 = cResult[16];
+    }
+    dependencyMap = tmp32;
+    const _Symbol = Symbol;
+    if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
+      const currentUser = UserStore.getCurrentUser();
+      cResult[17] = currentUser;
+      tmp34 = currentUser;
+    } else {
+      tmp34 = cResult[17];
+    }
+    id = tmp34;
+    if (cResult[18] === tmp24.style) {
+      let tmp37;
+      let tmp38;
+      if (cResult[19] === tmp8.headerContainer) {
+        tmp37 = cResult[20];
+      }
+      if (cResult[21] !== tmp12Result) {
+        const obj5 = { backgroundColor: tmp12Result };
+        cResult[21] = tmp12Result;
+        cResult[22] = obj5;
+        tmp38 = obj5;
+      } else {
+        tmp38 = cResult[22];
+      }
+      if (cResult[23] === tmp8.expandedHeaderBanner) {
+        let tmp39;
+        if (cResult[24] === tmp38) {
+          tmp39 = cResult[25];
+        }
+        if (cResult[26] === tmp16) {
+          let tmp40;
+          if (cResult[27] === tmp8.appIconMask) {
+            tmp40 = cResult[28];
+          }
+          if (cResult[29] === tmp39) {
+            let tmp44;
+            let tmp48;
+            if (cResult[30] === tmp40) {
+              tmp44 = cResult[31];
+            }
+            if (cResult[32] !== tmp12Result) {
+              const obj6 = { backgroundColor: tmp12Result };
+              cResult[32] = tmp12Result;
+              cResult[33] = obj6;
+              tmp48 = obj6;
+            } else {
+              tmp48 = cResult[33];
+            }
+            if (cResult[34] === tmp27.headerStyle) {
+              if (cResult[35] === tmp8.collapsedHeaderBanner) {
+                let tmp49;
+                if (cResult[36] === tmp48) {
+                  tmp49 = cResult[37];
+                }
+                if (cResult[38] === tmp30.style) {
+                  let tmp50;
+                  let tmp53;
+                  let tmp56;
+                  if (cResult[39] === tmp8.collapsedHeaderBannerOverlay) {
+                    tmp50 = cResult[40];
+                  }
+                  if (cResult[41] !== onPressBack) {
+                    const obj7 = { onPress: onPressBack };
+                    const tmp55 = closure_7(stateFromStores(11755), obj7);
+                    cResult[41] = onPressBack;
+                    cResult[42] = tmp55;
+                    tmp53 = tmp55;
+                  } else {
+                    tmp53 = cResult[42];
+                  }
+                  if (cResult[43] !== tmp31) {
+                    const obj8 = { variant: "heading-lg/bold", color: "text-overlay-light", children: tmp31 };
+                    const tmp58 = closure_7(application(4886).Heading, obj8);
+                    cResult[43] = tmp31;
+                    cResult[44] = tmp58;
+                    tmp56 = tmp58;
+                  } else {
+                    tmp56 = cResult[44];
+                  }
+                  if (cResult[45] === tmp27.nameStyle) {
+                    let tmp59;
+                    let tmp62;
+                    if (cResult[46] === tmp56) {
+                      tmp59 = cResult[47];
+                    }
+                    const _Symbol2 = Symbol;
+                    if (cResult[48] === Symbol.for("react.memo_cache_sentinel")) {
+                      const tmp64 = closure_7(application(1188).Spacer, { size: 32, pointerEvents: "none" });
+                      cResult[48] = tmp64;
+                      tmp62 = tmp64;
+                    } else {
+                      tmp62 = cResult[48];
+                    }
+                    if (cResult[49] === tmp49) {
+                      if (cResult[50] === tmp50) {
+                        if (cResult[51] === tmp53) {
+                          let tmp65;
+                          if (cResult[52] === tmp59) {
+                            tmp65 = cResult[53];
+                          }
+                          if (cResult[54] === application) {
+                            if (cResult[55] === stateFromStores) {
+                              if (cResult[56] === tmp32) {
+                                if (cResult[57] === onAddAppMenuClick) {
+                                  let tmp68;
+                                  if (cResult[58] === tmp8.actionsWrapper) {
+                                    tmp68 = cResult[59];
+                                  }
+                                  if (cResult[60] === tmp37) {
+                                    if (cResult[61] === tmp44) {
+                                      if (cResult[62] === tmp65) {
+                                        let tmp73;
+                                        if (cResult[63] === tmp68) {
+                                          tmp73 = cResult[64];
+                                        }
+                                        return tmp73;
+                                      }
+                                    }
+                                  }
+                                  const obj9 = { style: tmp37, pointerEvents: "box-none", children: items1 };
+                                  items1 = [tmp44, tmp65, tmp68];
+                                  const tmp75 = closure_8(stateFromStores(4612).View, obj9);
+                                  cResult[60] = tmp37;
+                                  cResult[61] = tmp44;
+                                  cResult[62] = tmp65;
+                                  cResult[63] = tmp68;
+                                  cResult[64] = tmp75;
+                                  tmp73 = tmp75;
+                                }
+                              }
+                            }
+                          }
+                          let tmp69 = null;
+                          if (null != application) {
+                            tmp69 = null;
+                            const tmpResult10 = application(8794);
+                            if (tmpResult10.isRealApplication(application)) {
+                              const obj10 = { style: tmp8.actionsWrapper, children: items2 };
+                              const obj11 = {
+                                size: "sm",
+                                variant: "secondary-overlay",
+                                icon: stateFromStores(4840),
+                                onPress() {
+                                                              let activityLaunchURL;
+                                                              const obj = AnalyticsUtilsDefault;
+                                                              const obj2 = { application_id: application.id, source: stateFromStores };
+                                                              obj.track(AnalyticEvents.APP_LAUNCHER_APPLICATION_LINK_COPIED, obj2);
+                                                              const copy = ClipboardUtils.copy;
+                                                              ClipboardUtils;
+                                                              const tmp6 = getApplicationInstallURL2;
+                                                              if (closure_2) {
+                                                                const obj3 = { applicationId: application.id, referrerId: id };
+                                                                id = undefined;
+                                                                const getActivityLaunchURL = tmp6.getActivityLaunchURL;
+                                                                if (id != null) {
+                                                                  id = id.id;
+                                                                }
+                                                                activityLaunchURL = getActivityLaunchURL(obj3);
+                                                              } else {
+                                                                const getApplicationInstallURL = tmp6.getApplicationInstallURL;
+                                                                const obj4 = { id: application.id };
+                                                                const tmp4Result = AppLauncherUtils;
+                                                                const merged = Object.assign(tmp4Result.getInstallAppProps(tmp2));
+                                                                activityLaunchURL = getApplicationInstallURL(obj4);
+                                                              }
+                                                              copy(activityLaunchURL);
+                                                              const tmp4Result2 = ToastUtils;
+                                                              tmp4Result2.presentLinkCopied();
+                                                            },
+                                accessibilityLabel: intl.string(application(1126).t.XWDihq),
+                                maxFontSizeMultiplier: 1.5
+                              };
+                              const IconButton = tmp(7575).IconButton;
+                              intl = tmp(1126).intl;
+                              items2 = [closure_7(IconButton, obj11), ];
+                              const obj12 = { application, onAddAppMenuClick };
+                              items2[1] = closure_7(stateFromStores(11757), obj12);
+                              tmp69 = closure_8(id, obj10);
+                            }
+                          }
+                          cResult[54] = application;
+                          cResult[55] = stateFromStores;
+                          cResult[56] = tmp32;
+                          cResult[57] = onAddAppMenuClick;
+                          cResult[58] = tmp8.actionsWrapper;
+                          cResult[59] = tmp69;
+                          tmp68 = tmp69;
+                        }
+                      }
+                    }
+                    const obj13 = { style: tmp49, pointerEvents: "box-none", children: items3 };
+                    items3 = [tmp50, tmp53, tmp59, tmp62];
+                    const tmp67 = closure_8(stateFromStores(4612).View, obj13);
+                    cResult[49] = tmp49;
+                    cResult[50] = tmp50;
+                    cResult[51] = tmp53;
+                    cResult[52] = tmp59;
+                    cResult[53] = tmp67;
+                    tmp65 = tmp67;
+                  }
+                  const obj14 = { style: tmp27.nameStyle, pointerEvents: "none", children: tmp56 };
+                  const tmp61 = closure_7(stateFromStores(4612).View, obj14);
+                  cResult[45] = tmp27.nameStyle;
+                  cResult[46] = tmp56;
+                  cResult[47] = tmp61;
+                  tmp59 = tmp61;
+                }
+                const obj15 = { style: items4, pointerEvents: "none" };
+                items4 = [tmp8.collapsedHeaderBannerOverlay, tmp30.style];
+                const tmp52 = closure_7(stateFromStores(4612).View, obj15);
+                cResult[38] = tmp30.style;
+                cResult[39] = tmp8.collapsedHeaderBannerOverlay;
+                cResult[40] = tmp52;
+                tmp50 = tmp52;
+              }
+            }
+            const items5 = [tmp8.collapsedHeaderBanner, tmp48, tmp27.headerStyle];
+            cResult[34] = tmp27.headerStyle;
+            cResult[35] = tmp8.collapsedHeaderBanner;
+            cResult[36] = tmp48;
+            cResult[37] = items5;
+            tmp49 = items5;
+          }
+          const obj16 = { style: tmp39, pointerEvents: "none", children: tmp40 };
+          const tmp47 = closure_7(id, obj16);
+          cResult[29] = tmp39;
+          cResult[30] = tmp40;
+          cResult[31] = tmp47;
+          tmp44 = tmp47;
+        }
+        const obj17 = { style: tmp8.appIconMask, children: tmp16 };
+        const tmp43 = closure_7(id, obj17);
+        cResult[26] = tmp16;
+        cResult[27] = tmp8.appIconMask;
+        cResult[28] = tmp43;
+        tmp40 = tmp43;
+      }
+      const items6 = [tmp8.expandedHeaderBanner, tmp38];
+      cResult[23] = tmp8.expandedHeaderBanner;
+      cResult[24] = tmp38;
+      cResult[25] = items6;
+      tmp39 = items6;
+    }
+    const items7 = [tmp8.headerContainer, tmp24.style];
+    cResult[18] = tmp24.style;
+    cResult[19] = tmp8.headerContainer;
+    cResult[20] = items7;
+    tmp37 = items7;
+  }
+  if (null != tmp9) {
+    const obj18 = { iconSource: tmp9, iconBorderRadius: xl, iconSize: 72 };
+    tmp19 = closure_7(tmp11(11670), obj18);
+  } else {
+    const obj19 = { style: tmp8.loadingIcon };
+    tmp19 = closure_7(id, obj19);
+  }
+  cResult[4] = tmp9;
+  cResult[5] = tmp8.loadingIcon;
+  cResult[6] = tmp19;
+  tmp16 = tmp19;
+}) : ((application) => {
+  let c2;
+  let intl;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let items5;
+  let items6;
+  let items7;
+  let obj6;
+  let onAddAppMenuClick;
+  let onPressBack;
+  let source;
+  let tmp12;
+  let tmp13;
   application = application.application;
   const scrollOffsetY = application.scrollOffsetY;
   dependencyMap = undefined;
   let id;
+  const tmp2 = dependencyMap;
   ({ onPressBack, onAddAppMenuClick } = application);
-  let items = [AppLauncherStore];
-  importDefault = application(504).useStateFromStores(items, () => AppLauncherStore.entrypoint());
-  const tmp3 = closure_12();
+  let obj = application(504);
+  const items = [AppLauncherStore];
+  importDefault = obj.useStateFromStores(items, () => AppLauncherStore.entrypoint());
+  const tmp3 = closure_11();
   let appLauncherIconSource = null;
   if (null != application) {
-    appLauncherIconSource = tmp(11744).getAppLauncherIconSource(application);
-    const tmpResult = tmp(11744);
+    const tmpResult = application(11665);
+    appLauncherIconSource = tmpResult.getAppLauncherIconSource(application);
   }
-  let obj = application(504);
-  let str = application(4560).useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
+  const tmpResult5 = application(4580);
+  let str = tmpResult5.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
   let tmp7 = appLauncherIconSource;
-  const tmpResult9 = application(4560);
+  let tmp6 = useAvatarColorDefault;
   if (typeof appLauncherIconSource !== "number") {
     let uri;
     if (appLauncherIconSource != null) {
@@ -76,160 +700,104 @@ export default function Header(application) {
   if (str == null) {
     str = "";
   }
-  const tmp6Result = useAvatarColorDefault(tmp7, str);
+  const tmp6Result = tmp6(tmp7, str);
   if (null != appLauncherIconSource) {
     let obj2 = { iconSource: appLauncherIconSource, iconBorderRadius: xl, iconSize: 72 };
-    let tmp12 = closure_8(tmp5(11749), obj2);
-    let tmp13 = closure_8;
+    tmp12 = closure_7(EntityBorderAppIconDefault, obj2);
+    tmp13 = closure_7;
   } else {
     let obj3 = { style: tmp3.loadingIcon };
-    tmp12 = closure_8(id, obj3);
-    tmp13 = closure_8;
+    tmp12 = closure_7(id, obj3);
+    tmp13 = closure_7;
   }
-  closure_129_0 = scrollOffsetY;
-  const fn = function n() {
-    const obj = { transform: null };
-    const obj2 = { translateY: null };
-    const items = [0, c11];
-    obj2.translateY = ReanimatedRexport.interpolate(application.get(), items, [0, -105], "clamp");
-    const items1 = [obj2];
-    obj.transform = items1;
-    return obj;
-  };
-  const tmpResult10 = application(4595);
-  fn.__closure = { interpolate: application(4595).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
-  fn.__workletHash = 2572905048492;
-  fn.__initData = __initData;
-  closure_130_0 = scrollOffsetY;
-  const animatedStyle = tmpResult10.useAnimatedStyle(fn);
-  let obj4 = { interpolate: application(4595).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
-  const fn2 = function n() {
-    const obj = { transform: null };
-    const obj2 = { translateY: null };
-    const items = [0, c11];
-    const items1 = [0, c11];
-    obj2.translateY = ReanimatedRexport.interpolate(application.get(), items, items1, "clamp");
-    const items2 = [obj2];
-    obj.transform = items2;
-    return obj;
-  };
-  const tmpResult11 = application(4595);
-  fn2.__closure = { interpolate: application(4595).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
-  fn2.__workletHash = 8190094903650;
-  fn2.__initData = __initData2;
-  const animatedStyle1 = tmpResult11.useAnimatedStyle(fn2);
-  let obj5 = { interpolate: application(4595).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
-  const fn3 = function o() {
-    const obj = { transform: null, opacity: null };
-    const obj2 = { translateY: null };
-    const items = [52.5, c11];
-    obj2.translateY = ReanimatedRexport.interpolate(application.get(), items, [16, 0], "clamp");
-    const items1 = [obj2];
-    obj.transform = items1;
-    const items2 = [52.5, c11];
-    obj.opacity = ReanimatedRexport.interpolate(application.get(), items2, [0, 1], "clamp");
-    return obj;
-  };
-  const tmpResult12 = application(4595);
-  fn3.__closure = { interpolate: application(4595).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
-  fn3.__workletHash = 14190901941859;
-  fn3.__initData = __initData3;
-  closure_131_0 = scrollOffsetY;
-  const animatedStyle2 = tmpResult12.useAnimatedStyle(fn3);
-  let obj6 = { interpolate: application(4595).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
-  const fn4 = function n() {
-    const obj = { opacity: null };
-    const items = [52.5, c11];
-    obj.opacity = ReanimatedRexport.interpolate(application.get(), items, [0, 0.5], "clamp");
-    return obj;
-  };
-  const tmpResult13 = application(4595);
-  fn4.__closure = { interpolate: application(4595).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
-  fn4.__workletHash = 9589752719246;
-  fn4.__initData = __initData4;
+  const tmp16 = closure_14({ scrollOffsetY });
+  const tmp17 = closure_19({ scrollOffsetY });
   let str2 = "";
-  const animatedStyle3 = tmpResult13.useAnimatedStyle(fn4);
+  const tmp18 = closure_22({ scrollOffsetY });
   if (null != application) {
-    str2 = tmp(8781).getSectionName(application);
-    const tmpResult14 = tmp(8781);
+    const tmpResult6 = application(8794);
+    str2 = tmpResult6.getSectionName(application);
   }
-  let hasApplicationFlagResult = null != application;
-  if (hasApplicationFlagResult) {
-    hasApplicationFlagResult = "flags" in application;
+  let result = null != application && "flags" in application;
+  if (result) {
+    const tmpResult7 = application(2016);
+    result = tmpResult7.supportsEmbeddedSurface(application, tmp(8514).EmbeddedSurfaceType.MAIN);
   }
-  if (hasApplicationFlagResult) {
-    hasApplicationFlagResult = tmp(8509).hasApplicationFlag(application, constants2.EMBEDDED);
-    const tmpResult15 = tmp(8509);
-  }
-  dependencyMap = hasApplicationFlagResult;
+  dependencyMap = result;
   id = UserStore.getCurrentUser();
-  const obj8 = { style: null, pointerEvents: "box-none", children: null };
-  let items1 = [tmp3.headerContainer, animatedStyle];
-  obj8.style = items1;
-  const obj9 = { style: null, pointerEvents: "none", children: tmp13(id, { style: tmp3.appIconMask, children: tmp12 }) };
-  let items2 = [tmp3.expandedHeaderBanner, { backgroundColor: tmp6Result }];
-  obj9.style = items2;
-  const items3 = [tmp13(id, obj9), , ];
-  const obj11 = { style: null, pointerEvents: "box-none", children: null };
-  const items4 = [tmp3.collapsedHeaderBanner, { backgroundColor: tmp6Result }, animatedStyle1];
-  obj11.style = items4;
-  const obj12 = { style: null, pointerEvents: "none" };
-  const items5 = [tmp3.collapsedHeaderBannerOverlay, animatedStyle3];
-  obj12.style = items5;
-  const items6 = [tmp13(ReanimatedRexportDefault.View, obj12), tmp13(AppLauncherBackButtonDefault, { onPress: onPressBack }), , ];
-  const obj10 = { style: tmp3.appIconMask, children: tmp12 };
-  const obj7 = { interpolate: application(4595).interpolate, scrollOffsetY, HEADER_SCROLL_RANGE };
-  const tmp23 = id;
-  items6[2] = tmp13(ReanimatedRexportDefault.View, { style: animatedStyle2, pointerEvents: "none", children: tmp13(application(4841).Heading, { variant: "heading-lg/bold", color: "text-overlay-light", children: str2 }) });
-  items6[3] = tmp13(application(1177).Spacer, { size: 32, pointerEvents: "none" });
-  obj11.children = items6;
-  items3[1] = closure_9(ReanimatedRexportDefault.View, obj11);
-  let tmp22Result = null;
+  let obj4 = { style: items1, pointerEvents: "box-none", children: items3 };
+  items1 = [tmp3.headerContainer, tmp16.style];
+  const obj5 = { style: items2, pointerEvents: "none", children: tmp13(id, obj6) };
+  items2 = [tmp3.expandedHeaderBanner, { backgroundColor: tmp6Result }];
+  obj6 = { style: tmp3.appIconMask, children: tmp12 };
+  View = ReanimatedRexportDefault.View;
+  items3 = [tmp13(id, obj5), , ];
+  const obj7 = { style: items4, pointerEvents: "box-none", children: items6 };
+  items4 = [tmp3.collapsedHeaderBanner, { backgroundColor: tmp6Result }, tmp17.headerStyle];
+  const View2 = ReanimatedRexportDefault.View;
+  const obj8 = { style: items5, pointerEvents: "none" };
+  items5 = [tmp3.collapsedHeaderBannerOverlay, tmp18.style];
+  items6 = [tmp13(ReanimatedRexportDefault.View, obj8), tmp13(AppLauncherBackButtonDefault, { onPress: onPressBack }), , ];
+  const obj9 = { style: tmp17.nameStyle, pointerEvents: "none", children: tmp13(application(4886).Heading, { variant: "heading-lg/bold", color: "text-overlay-light", children: str2 }) };
+  const View3 = ReanimatedRexportDefault.View;
+  items6[2] = tmp13(View3, obj9);
+  items6[3] = tmp13(application(1188).Spacer, { size: 32, pointerEvents: "none" });
+  items3[1] = closure_8(View2, obj7);
+  let tmp20Result = null;
+  const tmp21 = id;
   if (null != application) {
-    tmp22Result = null;
-    if (tmpResult16.isRealApplication(application)) {
-      const obj14 = { style: tmp3.actionsWrapper, children: null };
-      const obj15 = {
+    tmp20Result = null;
+    const tmpResult8 = application(8794);
+    if (tmpResult8.isRealApplication(application)) {
+      const obj10 = { style: tmp3.actionsWrapper, children: items7 };
+      const obj11 = {
         size: "sm",
         variant: "secondary-overlay",
-        icon: tmp5(4785),
+        icon: AssetRegistryDefault,
         onPress() {
-              AnalyticsUtilsDefault.track(constants.APP_LAUNCHER_APPLICATION_LINK_COPIED, { application_id: application.id, source });
+              let activityLaunchURL;
+              const obj = AnalyticsUtilsDefault;
               const obj2 = { application_id: application.id, source };
-              const obj4 = getApplicationInstallURL;
+              obj.track(AnalyticEvents.APP_LAUNCHER_APPLICATION_LINK_COPIED, obj2);
+              const copy = ClipboardUtils.copy;
+              ClipboardUtils;
+              const tmp6 = getApplicationInstallURL2;
               if (c2) {
-                const obj5 = { applicationId: tmp2.id, referrerId: null };
+                const obj3 = { applicationId: application.id, referrerId: id };
                 id = undefined;
+                const getActivityLaunchURL = tmp6.getActivityLaunchURL;
                 if (id != null) {
                   id = id.id;
                 }
-                obj5.referrerId = id;
-                let activityLaunchURL = obj4.getActivityLaunchURL(obj5);
+                activityLaunchURL = getActivityLaunchURL(obj3);
               } else {
-                const obj6 = { id: tmp2.id };
-                const merged = Object.assign(tmp4(8781).getInstallAppProps(tmp2));
-                activityLaunchURL = obj4.getApplicationInstallURL(obj6);
-                const tmp4Result = tmp4(8781);
+                const getApplicationInstallURL = tmp6.getApplicationInstallURL;
+                const obj4 = { id: application.id };
+                const tmp4Result = AppLauncherUtils;
+                const merged = Object.assign(tmp4Result.getInstallAppProps(tmp2));
+                activityLaunchURL = getApplicationInstallURL(obj4);
               }
-              ClipboardUtils.copy(activityLaunchURL);
-              ToastUtils.presentLinkCopied();
+              copy(activityLaunchURL);
+              const tmp4Result2 = ToastUtils;
+              tmp4Result2.presentLinkCopied();
             },
-        accessibilityLabel: null,
+        accessibilityLabel: intl.string(application(1126).t.XWDihq),
         maxFontSizeMultiplier: 1.5
       };
-      const intl = tmp(1115).intl;
-      obj15.accessibilityLabel = intl.string(tmp(1115).t.XWDihq);
-      const items7 = [tmp13(tmp(7536).IconButton, obj15), ];
-      const obj16 = { application, onAddAppMenuClick };
-      items7[1] = tmp13(tmp5(11826), obj16);
-      obj14.children = items7;
-      tmp22Result = tmp22(tmp23, obj14);
+      const IconButton = tmp(7575).IconButton;
+      intl = tmp(1126).intl;
+      items7 = [tmp13(IconButton, obj11), ];
+      const obj12 = { application, onAddAppMenuClick };
+      items7[1] = tmp13(AppDetailsOverflowMenuDefault, obj12);
+      tmp20Result = tmp20(tmp21, obj10);
     }
-    tmpResult16 = tmp(8781);
   }
-  items3[2] = tmp22Result;
-  obj8.children = items3;
-  return closure_9(ReanimatedRexportDefault.View, obj8);
-};
+  items3[2] = tmp20Result;
+  return closure_8(View, obj4);
+});
+size = size_mod;
+let result = size.fileFinishedImporting("modules/app_launcher/native/screens/application_view/Header.tsx");
+
+export default tmp6;
 export const SHEET_HANDLE_CONTAINER_HEIGHT = 16;
 export const EXPANDED_HEADER_HEIGHT = 161;

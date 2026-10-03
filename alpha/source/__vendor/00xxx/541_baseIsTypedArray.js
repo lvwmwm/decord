@@ -4,7 +4,7 @@
 // Dependencies: [535, 519, 522]
 
 // Module 541 (baseIsTypedArray)
-import _mod535 from "module_535" /* 535 */;
+import isObjectLike from "isObjectLike" /* 535 */;
 
 const obj = {};
 obj["[object Uint32Array]"] = true;
@@ -33,9 +33,6 @@ obj["[object Array]"] = false;
 obj["[object Arguments]"] = false;
 
 export default function baseIsTypedArray(arg0) {
-  let tmp3 = _mod535(arg0) && tmp(519)(arg0.length);
-  if (tmp3) {
-    tmp3 = obj[tmp(undefined, 522)(undefined, arg0)];
-  }
+  const tmp3 = isObjectLike(arg0) && tmp(519)(arg0.length) && obj[tmp(undefined, 522)(undefined, arg0)];
   return tmp3;
 };

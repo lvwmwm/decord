@@ -1,33 +1,35 @@
-// Module ID: 17422
-// Function ID: 17423
+// Module ID: 17512
+// Function ID: 17513
 // Name: InstantInviteManager
-// Dependencies: [6725, 4557, 1115, 2]
+// Dependencies: [6613, 4568, 1126, 2]
 
-// Module 17422 (InstantInviteManager)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4557 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
+// Module 17512 (InstantInviteManager)
+import intl2 from "intl" /* 1126 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
+import size from "module_2" /* 2 */;
 
-let require = fn;
-const prototype = function InstantInviteManager() {
-  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  require = applyArgumentsResult;
-  applyArgumentsResult.actions = {
-    NATIVE_APP_INSTANT_INVITE_GDM_SHARE_FAILED() {
-      return applyArgumentsResult.shareInviteFailed();
-    }
-  };
-  applyArgumentsResult.shareInviteFailed = function shareInviteFailed() {
-    const obj2 = { key: "GROUP_DM_ADD_ERROR", content: null };
-    const intl = applyArgumentsResult(1115).intl;
-    obj2.content = intl.string(applyArgumentsResult(1115).t["N/9OFy"]);
-    ToastActionCreatorsDefault.open(obj2);
-  };
-  return applyArgumentsResult;
-}.prototype;
-class prototype extends tmp2 {
+class InstantInviteManager extends AutomaticLifecycleManager {
+  constructor() {
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    require = applyArgumentsResult;
+    applyArgumentsResult.actions = {
+      NATIVE_APP_INSTANT_INVITE_GDM_SHARE_FAILED() {
+        return require.shareInviteFailed();
+      }
+    };
+    applyArgumentsResult.shareInviteFailed = function shareInviteFailed() {
+      let intl;
+      const obj = { key: "GROUP_DM_ADD_ERROR", content: intl.string(intl2.t["N/9OFy"]) };
+      const open = ToastActionCreatorsDefault.open;
+      ToastActionCreatorsDefault;
+      intl = intl2.intl;
+      open(obj);
+    };
+    return applyArgumentsResult;
+  }
 }
-const prototype1 = new prototype();
-const size = fn(2);
+const instantInviteManager = new InstantInviteManager();
 const result = size.fileFinishedImporting("modules/instant_invite/native/InstantInviteManager.native.tsx");
 
-export default prototype1;
+export default instantInviteManager;

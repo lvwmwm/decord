@@ -1,19 +1,23 @@
-// Module ID: 11825
-// Function ID: 11826
+// Module ID: 11756
+// Function ID: 11757
 // Name: getApplicationInstallURL
-// Dependencies: [1074, 2]
+// Dependencies: [1085, 2]
 // Exports: getActivityLaunchURL, getApplicationInstallURL
 
-// Module 11825 (getApplicationInstallURL)
-import Constants from "Constants" /* 1074 */;
+// Module 11756 (getApplicationInstallURL)
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;
 let result = size.fileFinishedImporting("modules/applications/getApplicationInstallURL.tsx");
 
 export const getActivityLaunchURL = function getActivityLaunchURL(applicationId) {
+  let customId;
+  let linkId;
+  let referrerId;
   ({ customId, referrerId, linkId } = applicationId);
-  const str = new URL(Routes.ACTIVITY_DETAILS(applicationId.applicationId), "" + location.protocol + "//" + location.host);
+  const ACTIVITY_DETAILSResult = Routes.ACTIVITY_DETAILS(applicationId.applicationId);
+  const str = new URL(ACTIVITY_DETAILSResult, "" + location.protocol + "//" + location.host);
   const searchParams = str.searchParams;
   if (null != linkId) {
     const result = searchParams.set("link_id", linkId);
@@ -27,11 +31,18 @@ export const getActivityLaunchURL = function getActivityLaunchURL(applicationId)
   return str.toString();
 };
 export const getApplicationInstallURL = function getApplicationInstallURL(application) {
+  let customInstallUrl;
+  let installParams;
+  let integrationTypesConfig;
+  let permissions;
+  let scopes;
   ({ customInstallUrl, installParams, integrationTypesConfig } = application);
   if (null != customInstallUrl) {
     return customInstallUrl;
   } else {
     const _URLSearchParams = URLSearchParams;
+    const self = this;
+    const self2 = this;
     const str7 = new URLSearchParams();
     const result = str7.set("client_id", tmp);
     let someResult = null != integrationTypesConfig;

@@ -1,19 +1,20 @@
-// Module ID: 11505
-// Function ID: 11506
+// Module ID: 11424
+// Function ID: 11425
 // Name: ReferralMessageUtils
-// Dependencies: [4523, 7058, 2]
+// Dependencies: [4534, 6959, 2]
 // Exports: canOpenPremiumPlanDirectlyForReferralTrial
 
-// Module 11505 (ReferralMessageUtils)
-import SubscriptionStore from "SubscriptionStore" /* 4523 */;
-import UserOfferStore from "UserOfferStore" /* 7058 */;
+// Module 11424 (ReferralMessageUtils)
+import SubscriptionStore from "SubscriptionStore" /* 4534 */;
+import UserOfferStore from "UserOfferStore" /* 6959 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/premium/native/referrals/ReferralMessageUtils.tsx");
 
 export const canOpenPremiumPlanDirectlyForReferralTrial = function canOpenPremiumPlanDirectlyForReferralTrial() {
   const premiumTypeSubscription = SubscriptionStore.getPremiumTypeSubscription(false);
   let result = SubscriptionStore.hasFetchedSubscriptions();
+  const isFetchingOfferResult = UserOfferStore.isFetchingOffer();
   if (result) {
     result = null == premiumTypeSubscription;
   }

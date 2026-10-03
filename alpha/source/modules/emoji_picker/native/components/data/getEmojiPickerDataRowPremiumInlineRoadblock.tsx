@@ -1,15 +1,16 @@
-// Module ID: 9958
-// Function ID: 9959
+// Module ID: 9907
+// Function ID: 9908
 // Name: getEmojiPickerDataRowPremiumInlineRoadblock
-// Dependencies: [9956, 2]
+// Dependencies: [9905, 2]
 // Exports: default
 
-// Module 9958 (getEmojiPickerDataRowPremiumInlineRoadblock)
-import useEmojiPickerData from "useEmojiPickerData" /* 9956 */;
+// Module 9907 (getEmojiPickerDataRowPremiumInlineRoadblock)
+import useEmojiPickerData from "useEmojiPickerData" /* 9905 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/emoji_picker/native/components/data/getEmojiPickerDataRowPremiumInlineRoadblock.tsx");
 
 export default function getEmojiPickerDataRowPremiumInlineRoadblock(position) {
-  return { type: useEmojiPickerData.EmojiPickerItemType.PREMIUM_INLINE_ROADBLOCK, position, isSectionNitroLocked: true };
+  const obj = { type: useEmojiPickerData.EmojiPickerItemType.PREMIUM_INLINE_ROADBLOCK, position, isSectionNitroLocked: true };
+  return obj;
 };

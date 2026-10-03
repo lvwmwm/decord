@@ -1,16 +1,19 @@
-// Module ID: 16637
-// Function ID: 16638
+// Module ID: 16721
+// Function ID: 16722
 // Name: VibegrationsStatusLabels
-// Dependencies: [3714, 1115, 5555, 2]
+// Dependencies: [3723, 1126, 6747, 2]
 // Exports: connectionLabel, isRecallingLine, recallingLine, runesUsedLabels, thinkingLine
 
-// Module 16637 (VibegrationsStatusLabels)
-import util from "util" /* 1115 */;
-import _modDef3714 from "module_3714" /* 3714 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5555 */;
+// Module 16721 (VibegrationsStatusLabels)
+import intl4 from "intl" /* 1126 */;
+import _modDef3723 from "module_3723" /* 3723 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 6747 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function thinkingLabel(restoring) {
+  let activity;
+  let compacting;
+  let ivvYHP;
   ({ activity, compacting } = restoring);
   if (compacting === undefined) {
     compacting = false;
@@ -27,18 +30,15 @@ function thinkingLabel(restoring) {
   if (flag3 === undefined) {
     flag3 = false;
   }
-  let tmp = null != activity;
-  if (tmp) {
-    tmp = "end" !== activity.phase;
-  }
+  const tmp = null != activity && "end" !== activity.phase;
   if (flag3) {
-    let ivvYHP = _modDef3714.ivvYHP;
+    ivvYHP = _modDef3723.ivvYHP;
   } else if (flag) {
-    ivvYHP = _modDef3714.aFffp2;
+    ivvYHP = _modDef3723.aFffp2;
   } else if (flag2) {
     ivvYHP = items[0];
   } else {
-    const tmp4 = _modDef3714;
+    const tmp4 = _modDef3723;
     if (compacting) {
       ivvYHP = tmp4["0vH/5G"];
     } else {
@@ -47,47 +47,52 @@ function thinkingLabel(restoring) {
   }
   return ivvYHP;
 }
-const items = [_modDef3714.krnkPq, _modDef3714["8oUm/J"], _modDef3714["6Ea4dF"], _modDef3714.fQx5qC, _modDef3714["phXeK/"]];
-const size = fn(2);
+const items = [_modDef3723.krnkPq, _modDef3723["8oUm/J"], _modDef3723["6Ea4dF"], _modDef3723.fQx5qC, _modDef3723["phXeK/"]];
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsStatusLabels.tsx");
 
 export const INDICATOR_PASS_MS = 1000;
 export const INDICATOR_PASS_STAGGER_MS = 1800;
 export const RECALLING_LINES = items;
 export const recallingLine = function recallingLine(current) {
-  const intl = util.intl;
+  const intl = intl4.intl;
   return intl.string(items[current % items.length]);
 };
 export const isRecallingLine = function isRecallingLine(current) {
-  closure_0 = current;
+  let closure_0 = current;
   return items.some((item) => {
-    const intl = util.intl;
-    return intl.string(item) === closure_0;
+    const intl = intl4.intl;
+    return intl.string(item) === current;
   });
 };
 export const connectionLabel = function connectionLabel(stateFromStores7) {
   if ("connecting" === stateFromStores7) {
-    const intl3 = util.intl;
-    return intl3.string(_modDef3714.W7oyuf);
+    const intl3 = intl4.intl;
+    return intl3.string(_modDef3723.W7oyuf);
   } else if ("closed" === stateFromStores7) {
-    const intl2 = util.intl;
-    return intl2.string(_modDef3714["yBmS+I"]);
+    const intl2 = intl4.intl;
+    return intl2.string(_modDef3723["yBmS+I"]);
   } else if ("failed" === stateFromStores7) {
-    const intl = util.intl;
-    return intl.string(_modDef3714.eE60xI);
+    const intl = intl4.intl;
+    return intl.string(_modDef3723.eE60xI);
   }
 };
 export { thinkingLabel };
 export const thinkingLine = function thinkingLine(restoring) {
-  const intl = util.intl;
+  const intl = intl4.intl;
   return intl.string(thinkingLabel(restoring));
 };
 export const runesUsedLabels = function runesUsedLabels(projectUsage) {
-  const runesFromUsdResult = VibegrationsTypes.runesFromUsd(projectUsage.cost_usd);
-  const obj2 = { text: null, aria: null };
-  const intl = util.intl;
-  obj2.text = intl.formatToPlainString(_modDef3714["4PFO2p"], { runes: runesFromUsdResult.toLocaleString() });
-  const intl2 = util.intl;
-  obj2.aria = intl2.formatToPlainString(_modDef3714["7SZZvj"], { runes: runesFromUsdResult, turns: projectUsage.turns });
+  let formatToPlainString;
+  let intl2;
+  let obj3;
+  let v4PFO2p;
+  const obj = VibegrationsTypes;
+  const runesFromUsdResult = obj.runesFromUsd(projectUsage.cost_usd);
+  const obj2 = { text: formatToPlainString(v4PFO2p, obj3), aria: intl2.formatToPlainString(_modDef3723["7SZZvj"], obj4) };
+  const intl = intl4.intl;
+  formatToPlainString = intl.formatToPlainString;
+  obj3 = { runes: runesFromUsdResult.toLocaleString() };
+  v4PFO2p = _modDef3723["4PFO2p"];
+  intl2 = intl4.intl;
   return obj2;
 };

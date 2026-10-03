@@ -1,31 +1,74 @@
-// Module ID: 16695
-// Function ID: 16696
+// Module ID: 16783
+// Function ID: 16784
 // Name: useSmartSearchStatus
-// Dependencies: [12057, 504, 12059, 12060, 2]
-// Exports: useSmartSearchStatus
+// Dependencies: [11987, 558, 576, 11989, 11997, 504, 2]
 
-// Module 16695 (useSmartSearchStatus)
-import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 12057 */;
-import SmartSearchTypes from "SmartSearchTypes" /* 12059 */;
-import SmartSearchUtils from "SmartSearchUtils" /* 12060 */;
+// Module 16783 (useSmartSearchStatus)
+import SmartSearchTypes from "SmartSearchTypes" /* 11989 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 11997 */;
+import SmartSearchResultsStore from "SmartSearchResultsStore" /* 11987 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-require = fn;
-SmartSearchResultsStoreDefault;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/intelligence_layer/search/native/useSmartSearchStatus.tsx");
-
-export const useSmartSearchStatus = function useSmartSearchStatus(memo) {
-  _require = memo;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  let tmp7;
+  _require = arg0;
+  const tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SmartSearchResultsStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      let NOT_QUALIFIED;
+      if (null == closure_0) {
+        NOT_QUALIFIED = SmartSearchTypes.SmartSearchStatus.NOT_QUALIFIED;
+      } else {
+        const obj = SmartSearchUtils;
+        NOT_QUALIFIED = obj.getSmartSearchStatus(tmp, SmartSearchResultsStore);
+      }
+      return NOT_QUALIFIED;
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStoresObject(first, tmp6, tmp7);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  let obj = require("get initialized");
   const items = [SmartSearchResultsStore];
-  const items1 = [memo];
-  return require("initialize").useStateFromStoresObject(items, () => {
+  const items1 = [arg0];
+  return obj.useStateFromStoresObject(items, () => {
+    let NOT_QUALIFIED;
     if (null == closure_0) {
-      let NOT_QUALIFIED = SmartSearchTypes.SmartSearchStatus.NOT_QUALIFIED;
+      NOT_QUALIFIED = SmartSearchTypes.SmartSearchStatus.NOT_QUALIFIED;
     } else {
-      NOT_QUALIFIED = SmartSearchUtils.getSmartSearchStatus(tmp, SmartSearchResultsStore);
+      const obj = SmartSearchUtils;
+      NOT_QUALIFIED = obj.getSmartSearchStatus(tmp, SmartSearchResultsStore);
     }
     return NOT_QUALIFIED;
   }, items1);
-};
+});
+const result = size.fileFinishedImporting("modules/intelligence_layer/search/native/useSmartSearchStatus.tsx");
+
+export const useSmartSearchStatus = tmp2;

@@ -1,28 +1,31 @@
-// Module ID: 15617
-// Function ID: 15618
+// Module ID: 15680
+// Function ID: 15681
 // Name: DesignSystemSheetsSetting
-// Dependencies: [7590, 1074, 11215, 15618, 2]
+// Dependencies: [7634, 1085, 11129, 15681, 2]
 
-// Module 15617 (DesignSystemSheetsSetting)
-import Constants from "Constants" /* 1074 */;
-import SettingsConstants from "SettingsConstants" /* 7590 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 15680 (DesignSystemSheetsSetting)
+import Constants from "Constants" /* 1085 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
     return "Sheets";
   },
-  parent: SettingsConstants.MobileUserSettings.DESIGN_SYSTEMS,
+  parent: MobileUserSettings.DESIGN_SYSTEMS,
   screen: {
-    route: Constants.UserSettingsSections.DESIGN_SYSTEM_SHEETS,
+    route: UserSettingsSections.DESIGN_SYSTEM_SHEETS,
     getComponent() {
       return require("UserSettingsDesignSystemSheets").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/DesignSystemSheetsSetting.tsx");
 
 export default route;

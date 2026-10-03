@@ -1,25 +1,26 @@
-// Module ID: 16609
-// Function ID: 16610
+// Module ID: 16689
+// Function ID: 16690
 // Name: VibegrationsChatRestore
 // Dependencies: [2]
 // Exports: proposalRestoreEntry, turnRestoreEntry
 
-// Module 16609 (VibegrationsChatRestore)
+// Module 16689 (VibegrationsChatRestore)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsChatRestore.tsx");
 
 export const turnRestoreEntry = function turnRestoreEntry(message) {
+  let date;
   let tmp = null;
   if ("assistant" === message.role) {
     tmp = null;
     if (null != message.sourceSha) {
-      const obj = { sha: message.sourceSha, authorName: "", authorEmail: "", authoredAt: null, subject: null };
       const _Date = Date;
-      const date = new Date(message.created_at);
-      obj.authoredAt = date.toISOString();
-      obj.subject = message.content;
+      const self = this;
+      const self2 = this;
+      const obj = { sha: message.sourceSha, authorName: "", authorEmail: "", authoredAt: date.toISOString(), subject: message.content };
       tmp = obj;
+      date = new Date(message.created_at);
     }
   }
   return tmp;

@@ -1,61 +1,279 @@
-// Module ID: 16899
-// Function ID: 16900
+// Module ID: 16988
+// Function ID: 16989
 // Name: guild_automod/PermissionUtils
-// Dependencies: [2066, 4498, 11554, 1074, 504, 2]
-// Exports: canCurrentUserManageAutomod, canCurrentUserManageMessageFilters, hasMentionRaidLimitAccess, useCanCurrentUserManageAutomod, useHasMentionRaidLimitAccess, useIsUndeletableMentionSpamRule, useIsUserProfileRuleEnabled
+// Dependencies: [2074, 4509, 11474, 1085, 558, 576, 504, 2]
+// Exports: canCurrentUserManageAutomod, canCurrentUserManageMessageFilters, hasMentionRaidLimitAccess
 
-// Module 16899 (guild_automod/PermissionUtils)
-import GuildStore from "GuildStore" /* 2066 */;
-import PermissionStore from "PermissionStore" /* 4498 */;
+// Module 16988 (guild_automod/PermissionUtils)
+import Constants2 from "Constants" /* 11474 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import Constants from "Constants" /* 1085 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-const require = fn;
-const AutomodTriggerType = fn(11554).AutomodTriggerType;
-const Constants = fn(1074);
+let hasOwnProperty;
+let metroRequire;
+const AutomodTriggerType = Constants2.AutomodTriggerType;
 ({ GuildFeatures: hasOwnProperty, Permissions: metroRequire } = Constants);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_automod/PermissionUtils.tsx");
-
-export const canCurrentUserManageMessageFilters = function canCurrentUserManageMessageFilters(guild_id) {
-  let tmp = null != guild_id;
-  if (tmp) {
-    const guild = GuildStore.getGuild(guild_id);
-    let canResult = null != guild;
-    if (canResult) {
-      canResult = obj.can(constants2.MANAGE_GUILD, guild);
-    }
-    tmp = canResult;
-    obj = PermissionStore;
-  }
-  return tmp;
-};
-export const canCurrentUserManageAutomod = function canCurrentUserManageAutomod(arg0) {
-  const guild = GuildStore.getGuild(arg0);
-  let canResult = null != guild;
-  if (canResult) {
-    canResult = PermissionStore.can(constants2.MANAGE_GUILD, guild);
-  }
-  return canResult;
-};
-export const useCanCurrentUserManageAutomod = function useCanCurrentUserManageAutomod(arg0) {
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp7;
+  let tmp8;
   _require = arg0;
+  const tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore, PermissionStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function o() {
+      const obj = GuildStore;
+      if (GuildStore !== undefined) {
+        if (PermissionStore !== undefined) {
+          const guild = obj.getGuild(tmp);
+          const canResult = null != guild && obj2.can(metroRequire.MANAGE_GUILD, guild);
+          return canResult;
+        }
+      }
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp8 = items1;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp7, tmp8);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  let obj = require("get initialized");
   const items = [GuildStore, PermissionStore];
   const items1 = [arg0];
-  return require("initialize").useStateFromStores(items, () => {
+  return obj.useStateFromStores(items, () => {
+    const obj = GuildStore;
     if (GuildStore !== undefined) {
-      if (obj2 !== undefined) {
-        const guild = GuildStore.getGuild(tmp);
-        let canResult = null != guild;
-        if (canResult) {
-          canResult = obj2.can(constants2.MANAGE_GUILD, guild);
-        }
+      if (PermissionStore !== undefined) {
+        const guild = obj.getGuild(tmp);
+        const canResult = null != guild && obj2.can(metroRequire.MANAGE_GUILD, guild);
         return canResult;
       }
     }
   }, items1);
-};
-export const hasMentionRaidLimitAccess = function hasMentionRaidLimitAccess(guildId) {
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  let tmp7;
+  _require = arg0;
+  const tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      const obj = GuildStore;
+      if (GuildStore !== undefined) {
+        const guild = obj.getGuild(tmp);
+        let flag;
+        if (guild != null) {
+          const features = guild.features;
+          flag = features.has(hasOwnProperty.COMMUNITY);
+        }
+        if (flag == null) {
+          flag = false;
+        }
+        return flag;
+      }
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6, tmp7);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  let obj = require("get initialized");
+  const items = [GuildStore];
+  const items1 = [arg0];
+  return obj.useStateFromStores(items, () => {
+    const obj = GuildStore;
+    if (GuildStore !== undefined) {
+      const guild = obj.getGuild(tmp);
+      let flag;
+      if (guild != null) {
+        const features = guild.features;
+        flag = features.has(hasOwnProperty.COMMUNITY);
+      }
+      if (flag == null) {
+        flag = false;
+      }
+      return flag;
+    }
+  }, items1);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
+  let first;
+  _require = arg0;
+  dependencyMap = arg1;
+  const obj = require("react");
+  const cResult = obj.c(5);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg0) {
+    let tmp6;
+    let tmp7;
+    if (cResult[2] === arg1) {
+      tmp6 = cResult[3];
+      tmp7 = cResult[4];
+    }
+    const tmpResult = tmp(504);
+    return tmpResult.useStateFromStores(first, tmp6, tmp7);
+  }
+  const fn = function l() {
+    if (closure_1 !== AutomodTriggerType.MENTION_SPAM) {
+      return false;
+    } else {
+      const guild = GuildStore.getGuild(closure_0);
+      let hasItem = null != guild;
+      if (hasItem) {
+        const features = guild.features;
+        hasItem = features.has(hasOwnProperty.COMMUNITY);
+      }
+      return hasItem;
+    }
+  };
+  const items1 = [arg0, arg1];
+  cResult[1] = arg0;
+  cResult[2] = arg1;
+  cResult[3] = fn;
+  cResult[4] = items1;
+  tmp7 = items1;
+  tmp6 = fn;
+}) : ((arg0, arg1) => {
+  let closure_0;
+  let closure_1;
+  _require = arg0;
+  dependencyMap = arg1;
+  const items = [GuildStore];
+  const items1 = [arg0, arg1];
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    if (closure_1 !== AutomodTriggerType.MENTION_SPAM) {
+      return false;
+    } else {
+      const guild = GuildStore.getGuild(closure_0);
+      let hasItem = null != guild;
+      if (hasItem) {
+        const features = guild.features;
+        hasItem = features.has(hasOwnProperty.COMMUNITY);
+      }
+      return hasItem;
+    }
+  }, items1);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  let tmp7;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(4);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      const guild = GuildStore.getGuild(closure_0);
+      let flag;
+      if (guild != null) {
+        const features = guild.features;
+        flag = features.has(hasOwnProperty.COMMUNITY);
+      }
+      if (!flag) {
+        flag = false;
+      }
+      return flag;
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6, tmp7);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  const items = [GuildStore];
+  const items1 = [arg0];
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    const guild = GuildStore.getGuild(closure_0);
+    let flag;
+    if (guild != null) {
+      const features = guild.features;
+      flag = features.has(hasOwnProperty.COMMUNITY);
+    }
+    if (!flag) {
+      flag = false;
+    }
+    return flag;
+  }, items1);
+});
+function hasMentionRaidLimitAccess(guildId) {
   let obj = arg1;
   if (arg1 === undefined) {
     obj = GuildStore;
@@ -64,65 +282,39 @@ export const hasMentionRaidLimitAccess = function hasMentionRaidLimitAccess(guil
   let flag;
   if (guild != null) {
     const features = guild.features;
-    flag = features.has(constants.COMMUNITY);
+    flag = features.has(hasOwnProperty.COMMUNITY);
   }
   if (flag == null) {
     flag = false;
   }
   return flag;
-};
-export const useHasMentionRaidLimitAccess = function useHasMentionRaidLimitAccess(guildId) {
-  _require = guildId;
-  const items = [GuildStore];
-  const items1 = [guildId];
-  return require("initialize").useStateFromStores(items, () => {
-    if (GuildStore !== undefined) {
-      const guild = GuildStore.getGuild(tmp);
-      let flag;
-      if (guild != null) {
-        const features = guild.features;
-        flag = features.has(constants.COMMUNITY);
-      }
-      if (flag == null) {
-        flag = false;
-      }
-      return flag;
+}
+const result = size.fileFinishedImporting("modules/guild_automod/PermissionUtils.tsx");
+
+export const canCurrentUserManageMessageFilters = function canCurrentUserManageMessageFilters(guild_id) {
+  let tmp = null != guild_id;
+  if (tmp) {
+    const guild = GuildStore.getGuild(guild_id);
+    let canResult = null != guild;
+    const obj = PermissionStore;
+    if (canResult) {
+      canResult = obj.can(metroRequire.MANAGE_GUILD, guild);
     }
-  }, items1);
+    tmp = canResult;
+  }
+  return tmp;
 };
-export const useIsUndeletableMentionSpamRule = function useIsUndeletableMentionSpamRule(guildId, triggerType) {
-  _require = guildId;
-  dependencyMap = triggerType;
-  const items = [GuildStore];
-  const items1 = [guildId, triggerType];
-  return require("initialize").useStateFromStores(items, () => {
-    if (closure_1 !== AutomodTriggerType.MENTION_SPAM) {
-      return false;
-    } else {
-      const guild = GuildStore.getGuild(closure_0);
-      let hasItem = null != guild;
-      if (hasItem) {
-        const features = guild.features;
-        hasItem = features.has(constants.COMMUNITY);
-      }
-      return hasItem;
-    }
-  }, items1);
+export const canCurrentUserManageAutomod = function canCurrentUserManageAutomod(arg0) {
+  const guild = GuildStore.getGuild(arg0);
+  let canResult = null != guild;
+  const obj = PermissionStore;
+  if (canResult) {
+    canResult = obj.can(metroRequire.MANAGE_GUILD, guild);
+  }
+  return canResult;
 };
-export const useIsUserProfileRuleEnabled = function useIsUserProfileRuleEnabled(guildId) {
-  _require = guildId;
-  const items = [GuildStore];
-  const items1 = [guildId];
-  return require("initialize").useStateFromStores(items, () => {
-    const guild = GuildStore.getGuild(closure_0);
-    let flag;
-    if (guild != null) {
-      const features = guild.features;
-      flag = features.has(constants.COMMUNITY);
-    }
-    if (!flag) {
-      flag = false;
-    }
-    return flag;
-  }, items1);
-};
+export const useCanCurrentUserManageAutomod = tmp3;
+export { hasMentionRaidLimitAccess };
+export const useHasMentionRaidLimitAccess = tmp4;
+export const useIsUndeletableMentionSpamRule = tmp5;
+export const useIsUserProfileRuleEnabled = tmp6;

@@ -1,38 +1,96 @@
-// Module ID: 17158
-// Function ID: 17159
+// Module ID: 17346
+// Function ID: 17347
 // Name: useExternalPipAspectRatioUpdater
-// Dependencies: [19, 9079, 2]
-// Exports: default
+// Dependencies: [19, 558, 576, 9110, 2]
 
-// Module 17158 (useExternalPipAspectRatioUpdater)
-import ExternalPipDefault from "ExternalPip" /* 9079 */;
-import noop from "module_19" /* 19 */;
+// Module 17346 (useExternalPipAspectRatioUpdater)
+import ExternalPipDefault from "ExternalPip" /* 9110 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-let size = fn(2);
-const result = size.fileFinishedImporting("modules/external_pip/useExternalPipAspectRatioUpdater.native.tsx");
+const require = globalThis.__r;
+let _require, dependencyMap;
 
-export default function useExternalPipAspectRatioUpdater(arg0, arg1, set) {
-  closure_0 = arg1;
-  const current = set;
-  noop = noop.useRef(set);
-  const insertionEffect = noop.useInsertionEffect(() => {
-    closure_2.current = current;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, cResult) => {
+  let closure_0;
+  let ref;
+  let tmp2;
+  let tmp4;
+  let tmp5;
+  _require = arg1;
+  const current = cResult;
+  let obj = require("react");
+  cResult = obj.c(5);
+  let obj2 = react;
+  dependencyMap = react.useRef(cResult);
+  if (cResult[0] !== cResult) {
+    const fn = function u() {
+      ref.current = current;
+    };
+    cResult[0] = cResult;
+    cResult[1] = fn;
+    tmp2 = fn;
+  } else {
+    tmp2 = cResult[1];
+  }
+  const insertionEffect = obj2.useInsertionEffect(tmp2);
+  if (cResult[2] !== arg1) {
+    const fn2 = function c() {
+      size = size.getTargetDimensions(ref.current);
+      const obj = current(ref[3]);
+      obj.setPipAspectRatio(size.width, size.height);
+      return size.subscribeFromItem(() => {
+        let height;
+        let width;
+        const targetDimensions = size.getTargetDimensions(ref.current);
+        ({ width, height } = targetDimensions);
+        const tmp2 = width === size.width && height === size.height;
+        if (!tmp2) {
+          size = { width, height };
+          const obj2 = ExternalPipDefault;
+          obj2.setPipAspectRatio(width, height);
+        }
+      });
+    };
+    const items = [arg1];
+    cResult[2] = arg1;
+    cResult[3] = fn2;
+    cResult[4] = items;
+    tmp5 = items;
+    tmp4 = fn2;
+  } else {
+    tmp4 = cResult[3];
+    tmp5 = cResult[4];
+  }
+  const effect = obj2.useEffect(tmp4, tmp5);
+}) : ((arg0, arg1, cResult) => {
+  let closure_0 = arg1;
+  const current = cResult;
+  const ref = react.useRef(cResult);
+  const insertionEffect = react.useInsertionEffect(() => {
+    ref.current = current;
   });
   const items = [arg1];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     size = size.getTargetDimensions(ref.current);
-    size(current[1]).setPipAspectRatio(size.width, size.height);
+    const obj = current(ref[3]);
+    obj.setPipAspectRatio(size.width, size.height);
     return size.subscribeFromItem(() => {
+      let height;
+      let width;
       const targetDimensions = size.getTargetDimensions(ref.current);
       ({ width, height } = targetDimensions);
-      let tmp2 = width === size.width;
-      if (tmp2) {
-        tmp2 = height === size.height;
-      }
+      const tmp2 = width === size.width && height === size.height;
       if (!tmp2) {
         size = { width, height };
-        ExternalPipDefault.setPipAspectRatio(width, height);
+        const obj2 = ExternalPipDefault;
+        obj2.setPipAspectRatio(width, height);
       }
     });
   }, items);
-};
+});
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/external_pip/useExternalPipAspectRatioUpdater.native.tsx");
+
+export default tmp2;

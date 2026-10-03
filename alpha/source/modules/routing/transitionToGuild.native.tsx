@@ -1,25 +1,29 @@
-// Module ID: 6947
-// Function ID: 6948
+// Module ID: 6845
+// Function ID: 6846
 // Name: transitionToGuild
-// Dependencies: [32, 1074, 6824, 6079, 1101, 2]
+// Dependencies: [32, 1085, 6717, 6473, 1112, 2]
 // Exports: transitionToGuild
 
-// Module 6947 (transitionToGuild)
-import router_utils from "router_utils" /* 1101 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6079 */;
-import getGuildTransitionRoute from "getGuildTransitionRoute" /* 6824 */;
-import _slicedToArray from "module_32" /* 32 */;
+// Module 6845 (transitionToGuild)
+import Constants from "Constants" /* 1085 */;
+import router_utils from "router_utils" /* 1112 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6473 */;
+import getGuildTransitionRoute from "getGuildTransitionRoute" /* 6717 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const Routes = fn(1074).Routes;
-const size = fn(2);
+const Routes = Constants.Routes;
 let result = size.fileFinishedImporting("modules/routing/transitionToGuild.native.tsx");
 
-export const transitionToGuild = function transitionToGuild(guildId, arg1) {
+export const transitionToGuild = function transitionToGuild(id, arg1) {
   const obj = getGuildTransitionRoute;
-  const result = DeprecatedLayoutAnimation.DeprecatedLayoutAnimation({ duration: 0, create: "r", update: "channelId", delete: "result" });
-  const obj3 = router_utils;
-  const obj4 = { navigationReplace: true };
+  const first = _slicedToArray(obj.getGuildTransitionRoute(id), 1)[0];
+  const obj2 = DeprecatedLayoutAnimation;
+  const result = obj2.DeprecatedLayoutAnimation({ duration: 0, create: "r", update: "emoji", delete: "toCharArray$esjava$1" });
+  const transitionTo = router_utils.transitionTo;
+  const obj3 = { navigationReplace: true };
+  router_utils;
+  const CHANNELResult = Routes.CHANNEL(id, first);
   const merged = Object.assign(arg1);
-  obj3.transitionTo(Routes.CHANNEL(guildId, _slicedToArray(obj.getGuildTransitionRoute(guildId), 1)[0]), obj4);
+  transitionTo(CHANNELResult, obj3);
 };

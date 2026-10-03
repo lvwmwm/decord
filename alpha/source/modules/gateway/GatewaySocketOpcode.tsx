@@ -1,9 +1,9 @@
-// Module ID: 1991
-// Function ID: 1992
+// Module ID: 1997
+// Function ID: 1998
 // Name: GatewaySocketOpcode
 // Dependencies: [2]
 
-// Module 1991 (GatewaySocketOpcode)
+// Module 1997 (GatewaySocketOpcode)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/gateway/GatewaySocketOpcode.tsx");

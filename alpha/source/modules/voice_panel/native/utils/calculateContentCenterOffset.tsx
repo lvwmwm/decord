@@ -1,16 +1,19 @@
-// Module ID: 17203
-// Function ID: 17204
+// Module ID: 17251
+// Function ID: 17252
 // Name: calculateContentCenterOffset
-// Dependencies: [11968, 10651, 2]
+// Dependencies: [11905, 10725, 2]
 // Exports: default
 
-// Module 17203 (calculateContentCenterOffset)
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 10651 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11968 */;
+// Module 17251 (calculateContentCenterOffset)
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 10725 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11905 */;
 import size from "module_2" /* 2 */;
 
 const EDGE_GUTTER = VoicePanelCardConstants.EDGE_GUTTER;
 const fn = function t(arg0) {
+  let contentHeight;
+  let safeArea;
+  let windowHeight;
   ({ contentHeight, windowHeight, safeArea } = arg0);
   const bound = Math.max(safeArea.top, EDGE_GUTTER);
   let bound1 = bound;
@@ -23,6 +26,7 @@ const fn = function t(arg0) {
 fn.__closure = { EDGE_GUTTER, roundToNearestPixel: roundToNearestPixelDefault };
 fn.__workletHash = 9988657249690;
 fn.__initData = { code: "function calculateContentCenterOffset_calculateContentCenterOffsetTsx1({contentHeight:contentHeight,windowHeight:windowHeight,safeArea:safeArea}){const{EDGE_GUTTER,roundToNearestPixel}=this.__closure;const safeAreaTop=Math.max(safeArea.top,EDGE_GUTTER);const safeAreaBottom=Math.max(safeArea.bottom,EDGE_GUTTER);if(windowHeight<=contentHeight){return safeAreaTop;}return Math.max(safeAreaTop,safeAreaTop+roundToNearestPixel((windowHeight-safeAreaTop-safeAreaBottom-contentHeight)/2));}" };
+({ EDGE_GUTTER, roundToNearestPixel: roundToNearestPixelDefault });
 const result = size.fileFinishedImporting("modules/voice_panel/native/utils/calculateContentCenterOffset.tsx");
 
 export default fn;

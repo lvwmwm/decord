@@ -1,109 +1,134 @@
-// Module ID: 15813
-// Function ID: 15814
-// Name: components/VerifyPhone
-// Dependencies: [5, 32, 19, 15786, 15787, 1074, 21, 15783, 15802, 5482, 6652, 1115, 6686, 15814, 6687, 2]
-// Exports: default
+// Module ID: 15890
+// Function ID: 15891
+// Name: VerifyPhone
+// Dependencies: [5, 32, 19, 15863, 15864, 1085, 21, 558, 576, 15860, 15879, 5590, 6542, 1126, 6576, 15891, 6577, 2]
 
-// Module 15813 (components/VerifyPhone)
-import RegistrationBailoutButtonDefault from "RegistrationBailoutButton" /* 15814 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 15890 (VerifyPhone)
+import Fragment from "Fragment" /* 21 */;
+import Constants from "Constants" /* 1085 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 15863 */;
+import RegistrationBailoutButtonDefault from "RegistrationBailoutButton" /* 15891 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import RegistrationConstants from "RegistrationConstants" /* 15864 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
+let c2, c3;
 
-const require = fn;
-let closure_6 = fn(15786).doesRegistrationHaveIdentityType;
-const RegistrationConstants = fn(15787);
-({ authStateToRegisterTransitionStep: closure_7, RegisterTransitionSteps: closure_8, RegistrationTransitionActionTypes: closure_9 } = RegistrationConstants);
-const Links = fn(1074).Links;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/auth/native/components/VerifyPhone.tsx");
-
-export default function VerifyPhone(phone) {
-  phone = phone.phone;
-  _require = phone;
-  const onPhoneTokenReceived = phone.onPhoneTokenReceived;
-  ({ onClose: dependencyMap, onBail } = phone);
-  _slicedToArray = undefined;
-  noop = undefined;
-  c6 = undefined;
-  ({ title, description, sourceState } = phone);
-  [obj.loading, _slicedToArray] = noop.useState(false);
-  [tmp3, c5] = _slicedToArray(noop.useState(null), 2);
-  let tmp2 = _slicedToArray(noop.useState(null), 2);
-  [tmp5, c6] = _slicedToArray(noop.useState(false), 2);
-  closure_7 = noop.useRef(false);
-  const context = noop.useContext(require("Auth").TrackRegistrationContext);
-  const tmp4 = _slicedToArray(noop.useState(false), 2);
-  onPhoneTokenReceived(15802)(closure_7(sourceState));
-  const items = [context];
-  const effect = noop.useEffect(() => {
-    if (_undefined()) {
-      const obj = { step: constants.PHONE_VERIFICATION, actionType: constants2.VIEWED };
-      context(obj);
-    }
-  }, items);
-  onPhoneTokenReceived(5482)(() => () => {
-    let tmpResult;
-    if (dependencyMap != null) {
-      tmpResult = tmp(ref.current);
-    }
-    return tmpResult;
-  });
-  onBail(function*(arg0) {
-    closure_2 = tmp3;
-    v0(true);
-    v0 = 1;
-    if (v3()) {
-      context({ step: context.PHONE_VERIFICATION, actionType: callback.SUBMITTED });
-    }
-    yield onPhoneTokenReceived(6652).verifyPhone(closure_0, closure_0, false);
-    if (1 === tmp7) {
-      v0 = 0;
-      closure_129_1 = closure_3;
-      v0(false);
-      if (v3()) {
-        context({ step: context.PHONE_VERIFICATION, actionType: callback.RESPONSE_ERROR, details: ["code"] });
+let c9;
+let metroImportAll;
+let metroImportDefault;
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+let closure_6 = RegistrationUIStore.doesRegistrationHaveIdentityType;
+({ authStateToRegisterTransitionStep: metroImportDefault, RegisterTransitionSteps: metroImportAll, RegistrationTransitionActionTypes: c9 } = RegistrationConstants);
+const Links = Constants.Links;
+const jsx = Fragment.jsx;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPhoneTokenReceived) => {
+  let description;
+  let onBail;
+  let onClose;
+  let phone;
+  let sourceState;
+  let title;
+  let tmp12;
+  let tmp13;
+  let tmp15;
+  let tmp7;
+  const tmp = onClose;
+  let obj = phone(onClose[8]);
+  const cResult = obj.c(23);
+  ({ title, description, phone } = onPhoneTokenReceived);
+  onPhoneTokenReceived = onPhoneTokenReceived.onPhoneTokenReceived;
+  onClose = onPhoneTokenReceived.onClose;
+  ({ onBail, sourceState } = onPhoneTokenReceived);
+  let obj2 = react;
+  const tmp3 = _slicedToArray(react.useState(false), 2);
+  [r10023, _asyncToGenerator] = tmp3;
+  const tmp4 = _slicedToArray(react.useState(null), 2);
+  [r10029, _slicedToArray] = tmp4;
+  const tmp5 = _slicedToArray(react.useState(false), 2);
+  [r10034, react] = tmp5;
+  closure_6 = react.useRef(false);
+  const context = react.useContext(phone(onClose[9]).TrackRegistrationContext);
+  if (cResult[0] !== sourceState) {
+    const tmp9 = context(sourceState);
+    cResult[0] = sourceState;
+    cResult[1] = tmp9;
+    tmp7 = tmp9;
+  } else {
+    tmp7 = cResult[1];
+  }
+  onPhoneTokenReceived(tmp[10])(tmp7);
+  const tmp10 = onPhoneTokenReceived;
+  if (cResult[2] !== context) {
+    const fn = function y() {
+      if (closure_6()) {
+        const obj = { step: metroImportAll.PHONE_VERIFICATION, actionType: constants.VIEWED };
+        context(obj);
       }
-      const body = closure_129_1.body;
-      let message;
-      if (body != null) {
-        message = body.message;
+    };
+    const items = [context];
+    cResult[2] = context;
+    cResult[3] = fn;
+    cResult[4] = items;
+    tmp13 = items;
+    tmp12 = fn;
+  } else {
+    tmp12 = cResult[3];
+    tmp13 = cResult[4];
+  }
+  const effect = obj2.useEffect(tmp12, tmp13);
+  if (cResult[5] !== onClose) {
+    class R {
+      constructor() {
+        return () => {
+          let tmpResult;
+          if (onClose != null) {
+            tmpResult = tmp(ref.current);
+          }
+          return tmpResult;
+        };
       }
-      if (!message) {
-        const intl = closure_0(1115).intl;
-        message = intl.format(closure_0(1115).t.aTVNes, { statusPageURL: constants.STATUS });
+    }
+    cResult[5] = onClose;
+    cResult[6] = R;
+    tmp15 = R;
+  } else {
+    class R {
+      constructor() {
+        return () => {
+          let tmpResult;
+          if (onClose != null) {
+            tmpResult = tmp(ref.current);
+          }
+          return tmpResult;
+        };
       }
-      _undefined(message);
-      v3 = 3;
-    } else if (arg0 === 1) {
-      v3 = 3;
-      throw arg1;
-    } else if (arg0 !== 2) {
-      const token = arg1.token;
-      closure_1_7.current = true;
-      onPhoneTokenReceived(token);
-      v0 = 0;
     }
-    v0 = 0;
-    return arg1;
-  });
-  const items1 = [phone, onPhoneTokenReceived, context];
-  const onCodeEntered = noop.useCallback(function() {
-    const self = this;
-    const apply = closure_0.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
+  }
+  tmp10(tmp[11])(tmp15);
+  if (cResult[7] === onPhoneTokenReceived) {
+    class R {
+      constructor() {
+        return () => {
+          let tmpResult;
+          if (onClose != null) {
+            tmpResult = tmp(ref.current);
+          }
+          return tmpResult;
+        };
+      }
     }
-    return applyArgumentsResult;
-  }, items1);
-  _require = onBail(function*(arg0, value) {
-    if (c3 === 2) {
-      c3 = 3;
+  }
+  let closure_0 = _asyncToGenerator(async (arg0, value) => {
+    let closure_3;
+    let obj5;
+    closure_0 = arg0;
+    if (c6 === 2) {
+      c6 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
     } else if (tmp3 === 3) {
       if (arg0 === 1) {
@@ -112,7 +137,253 @@ export default function VerifyPhone(phone) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
+      }
+    } else {
+      let c4;
+      try {
+        let token;
+        let closure_1;
+        c6 = 2;
+        if (0 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_2 = tmp;
+            token = undefined;
+            closure_1 = undefined;
+            tmp41(true);
+            c4 = 1;
+            const tmp48 = closure_0;
+            if (closure_2_6()) {
+              const obj4 = { step: constants.PHONE_VERIFICATION, actionType: constants2.SUBMITTED };
+              context(obj4);
+            }
+            c5 = 2;
+            c6 = 1;
+            const obj6 = { value: obj5.verifyPhone(closure_0, tmp48, false), done: false };
+            obj5 = onPhoneTokenReceived(onClose[12]);
+            return obj6;
+          }
+        } else {
+          if (1 === c5) {
+            c4 = 0;
+            closure_1 = tmp41;
+            tmp41(false);
+            if (closure_2_6()) {
+              const obj7 = { step: constants.PHONE_VERIFICATION, actionType: constants2.RESPONSE_ERROR, details: ["code"] };
+              context(obj7);
+            }
+            const body = closure_1.body;
+            let message;
+            const tmp25 = c4;
+            if (body != null) {
+              message = body.message;
+            }
+            if (!message) {
+              const intl = closure_0(onClose[13]).intl;
+              const obj8 = { statusPageURL: constants3.STATUS };
+              message = intl.format(closure_0(onClose[13]).t.aTVNes, obj8);
+            }
+            tmp25(message);
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            c6 = 3;
+            const obj = { value, done: true };
+            return obj;
+          } else {
+            token = value.token;
+            c6.current = true;
+            closure_1(token);
+            c4 = 0;
+          }
+          c6 = 3;
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } catch (tmp41) {
+        if (0 === c4) {
+          c6 = 3;
+          throw tmp41;
+        } else {
+          c5 = 1;
+        }
+      }
+    }
+  });
+  const fn2 = function() {
+    return closure_0(...arguments);
+  };
+  cResult[7] = onPhoneTokenReceived;
+  cResult[8] = phone;
+  cResult[9] = context;
+  cResult[10] = fn2;
+}) : ((phone) => {
+  let _undefined;
+  let c5;
+  let c6;
+  let closure_4;
+  let description;
+  let first;
+  let onBail;
+  let sourceState;
+  let title;
+  let tmp4;
+  let tmp6;
+  phone = phone.phone;
+  const onPhoneTokenReceived = phone.onPhoneTokenReceived;
+  ({ onClose: dependencyMap, onBail } = phone);
+  _slicedToArray = undefined;
+  react = undefined;
+  c6 = undefined;
+  ({ title, description, sourceState } = phone);
+  [first, _slicedToArray] = react.useState(false);
+  const tmp3 = _slicedToArray(react.useState(null), 2);
+  [tmp4, c5] = tmp3;
+  [tmp6, c6] = _slicedToArray(react.useState(false), 2);
+  const tmp5 = _slicedToArray(react.useState(false), 2);
+  let closure_7 = react.useRef(false);
+  const context = react.useContext(phone(15860).TrackRegistrationContext);
+  const tmp8 = onPhoneTokenReceived(15879);
+  tmp8(closure_7(sourceState));
+  const items = [context];
+  const effect = react.useEffect(() => {
+    if (_undefined()) {
+      const obj = { step: metroImportAll.PHONE_VERIFICATION, actionType: onCodeEntered.VIEWED };
+      context(obj);
+    }
+  }, items);
+  const tmp11 = onPhoneTokenReceived(5590)(() => {
+    let ref;
+    return () => {
+      let tmpResult;
+      if (closure_1_2 != null) {
+        tmpResult = tmp(ref.current);
+      }
+      return tmpResult;
+    };
+  });
+  const useCallback = react.useCallback;
+  onBail(function*(arg0, value) {
+    let obj5;
+    let v0;
+    closure_0 = arg0;
+    if (c6 === 2) {
+      c6 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: "IconComponent" };
+      }
+    } else {
+      try {
+        let closure_1;
+        let token;
+        c6 = 2;
+        if (0 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_2 = tmp;
+            closure_1 = tmp4;
+            token = undefined;
+            c4(true);
+            c4 = 1;
+            const tmp48 = closure_0;
+            if (_undefined()) {
+              const obj4 = { step: constants.PHONE_VERIFICATION, actionType: constants2.SUBMITTED };
+              constants(obj4);
+            }
+            c5 = 2;
+            c6 = 1;
+            const obj6 = { value: obj5.verifyPhone(closure_0, tmp48, false), done: false };
+            obj5 = onPhoneTokenReceived(dependencyMap[12]);
+            return obj6;
+          }
+        } else {
+          if (1 === c5) {
+            c4 = 0;
+            closure_1 = closure_3;
+            c4(false);
+            if (_undefined()) {
+              const obj7 = { step: constants.PHONE_VERIFICATION, actionType: constants2.RESPONSE_ERROR, details: ["code"] };
+              constants(obj7);
+            }
+            const body = closure_1.body;
+            let message;
+            const tmp25 = c5;
+            if (body != null) {
+              message = body.message;
+            }
+            if (!message) {
+              const intl = closure_0(dependencyMap[13]).intl;
+              const obj8 = { statusPageURL: constants3.STATUS };
+              message = intl.format(closure_0(dependencyMap[13]).t.aTVNes, obj8);
+            }
+            tmp25(message);
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            c6 = 3;
+            const obj = { value, done: true };
+            return obj;
+          } else {
+            token = value.token;
+            closure_1_7.current = true;
+            closure_1(token);
+            c4 = 0;
+          }
+          c6 = 3;
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } catch (tmp41) {
+        closure_3 = tmp41;
+        if (0 === c4) {
+          c6 = 3;
+          throw tmp41;
+        } else {
+          c5 = 1;
+        }
+      }
+    }
+  });
+  const items1 = [phone, onPhoneTokenReceived, context];
+  const onCodeEntered = useCallback(function() {
+    return closure_0(...arguments);
+  }, items1);
+  const useCallback2 = react.useCallback;
+  let closure_0 = onBail(function*(arg0, value) {
+    closure_0 = arg0;
+    if (c3 === 2) {
+      c3 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -126,7 +397,7 @@ export default function VerifyPhone(phone) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            closure_1 = tmp4;
+            let closure_1 = tmp3;
             _undefined(true);
             c2 = 1;
             c3 = 1;
@@ -143,39 +414,30 @@ export default function VerifyPhone(phone) {
         } else {
           _undefined(false);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
-      } catch (tmp12) {
-        c3 = tmp;
-        throw tmp12;
+      } catch (tmp11) {
+        c3 = 3;
+        throw tmp11;
       }
     }
   });
   const items2 = [onCodeEntered];
-  const callback1 = noop.useCallback(function() {
-    const self = this;
-    const apply = closure_0.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
-    return applyArgumentsResult;
+  const callback2 = useCallback2(function() {
+    return closure_0(...arguments);
   }, items2);
-  onPhoneTokenReceived(6686)(callback1);
+  onPhoneTokenReceived(6576)(callback2);
   const items3 = [onBail];
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     let tmp2 = null;
     if (null != onBail) {
-      const obj = { onBail: tmp };
       tmp2 = jsx(RegistrationBailoutButtonDefault, { onBail: tmp });
     }
     return tmp2;
   }, items3);
-  let obj = { title, description, error: tmp3, onCodeEntered, codeType: null, footer: null, disabled: null, loading: null, disableKeyboardAvoidingView: true };
-  const tmp7 = onPhoneTokenReceived(15802);
-  obj.codeType = require("CodeField").CodeType.NUMERIC;
-  obj.footer = memo;
-  obj.disabled = tmp5;
-  return jsx(onPhoneTokenReceived(6687), { title, description, error: tmp3, onCodeEntered, codeType: null, footer: null, disabled: null, loading: null, disableKeyboardAvoidingView: true });
-};
+  onPhoneTokenReceived(6577);
+  return <tmp16 title={title} description={description} error={tmp4} onCodeEntered={onCodeEntered} codeType={phone(6577).CodeType.NUMERIC} footer={memo} disabled={tmp6} loading={first} disableKeyboardAvoidingView />;
+});
+const result = size.fileFinishedImporting("modules/auth/native/components/VerifyPhone.tsx");
+
+export default tmp3;

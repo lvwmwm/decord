@@ -5,17 +5,19 @@
 // Exports: unstable_getImageComponentDecorator, unstable_registerImageAttachedCallback, unstable_setImageComponentDecorator, unstable_unregisterImageAttachedCallback, useWrapRefWithImageAttachedCallbacks
 
 // Module 333 (unstable_setImageComponentDecorator)
-import _modDef334 from "module_334" /* 334 */;
-import noop from "module_19" /* 19 */;
+import react2 from "react" /* 19 */;
+import useMergeRefsDefault from "useMergeRefs" /* 334 */;
 
-const useRef = fn(19).useRef;
+let importDefault;
+
+const useRef = react2.useRef;
 const set = new Set();
 
 export function unstable_setImageComponentDecorator(_BaseImage) {
-  global = _BaseImage;
+  let closure_1_2 = _BaseImage;
 }
 export function unstable_getImageComponentDecorator() {
-  return global;
+  return React2;
 }
 export const unstable_registerImageAttachedCallback = function unstable_registerImageAttachedCallback(arg0) {
   set.add(arg0);
@@ -28,13 +30,15 @@ export const useWrapRefWithImageAttachedCallbacks = function useWrapRefWithImage
   let tmp = useRef(null);
   if (null == tmp.current) {
     tmp.current = (arg0) => {
+      ref = arg0;
       if (null == arg0) {
         if (ref.current.length > 0) {
           let current = tmp3.current;
           const item = current.forEach((fn) => fn());
-          tmp3.current = [];
+          ref.current = [];
         }
       } else {
+        let tmp = set;
         const item1 = set.forEach((fn) => {
           const tmp = fn(ref);
           if (null != tmp) {
@@ -45,5 +49,5 @@ export const useWrapRefWithImageAttachedCallbacks = function useWrapRefWithImage
       }
     };
   }
-  return _modDef334(ref, tmp.current);
+  return useMergeRefsDefault(ref, tmp.current);
 };

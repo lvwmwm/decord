@@ -1,30 +1,33 @@
-// Module ID: 14525
-// Function ID: 14526
+// Module ID: 14560
+// Function ID: 14561
 // Name: AccountConfirmPasswordSetting
-// Dependencies: [7590, 1074, 11215, 1115, 6600, 2]
+// Dependencies: [7634, 1085, 11129, 1126, 6489, 2]
 
-// Module 14525 (AccountConfirmPasswordSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import UserSettingsConfirmPassword from "UserSettingsConfirmPassword" /* 6600 */;
-import SettingsConstants from "SettingsConstants" /* 7590 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 14560 (AccountConfirmPasswordSetting)
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import UserSettingsConfirmPassword from "UserSettingsConfirmPassword" /* 6489 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
-const route = SettingBuilders.createRoute({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["7qKDrE"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["7qKDrE"]);
   },
-  parent: SettingsConstants.MobileUserSettings.ACCOUNT,
+  parent: MobileUserSettings.ACCOUNT,
   unsearchable: true,
   screen: {
-    route: Constants.UserSettingsSections.ACCOUNT_CONFIRM_PASSWORD,
+    route: UserSettingsSections.ACCOUNT_CONFIRM_PASSWORD,
     getComponent() {
       return UserSettingsConfirmPassword.UserSettingsConfirmPasswordWrapped;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountConfirmPasswordSetting.tsx");
 
 export default route;

@@ -1,26 +1,60 @@
-// Module ID: 15768
-// Function ID: 15769
+// Module ID: 15831
+// Function ID: 15832
 // Name: RedesignSettingsCategoryServerScreen
-// Dependencies: [19, 21, 11215, 15761, 14460, 2]
+// Dependencies: [19, 21, 558, 576, 11129, 15824, 14495, 2]
 
-// Module 15768 (RedesignSettingsCategoryServerScreen)
-import SettingBuilders from "SettingBuilders" /* 11215 */;
-import SettingLayoutDefault from "SettingLayout" /* 14460 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 15761 */;
-import noop from "module_19" /* 19 */;
+// Module 15831 (RedesignSettingsCategoryServerScreen)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingLayoutDefault from "SettingLayout" /* 14495 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 15824 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/notifications/settings/native/routes/RedesignSettingsCategoryServerScreen.tsx");
-
-export default noop.memo(() => {
-  const node = noop.useMemo(() => {
-    const obj2 = { sections: null };
-    const obj = SettingBuilders;
-    const items = [MobileNotifSettingsRouteBuilders.buildCategoryServerSettingsSection()];
-    obj2.sections = items;
-    return obj.createList(obj2);
+const jsx = Fragment.jsx;
+const memo = react.memo;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let first;
+  let items;
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { sections: items };
+    const createList = SettingBuilders.createList;
+    SettingBuilders;
+    items = [];
+    const tmpResult2 = MobileNotifSettingsRouteBuilders;
+    items[0] = tmpResult2.buildCategoryServerSettingsSection();
+    const list = createList(obj2);
+    cResult[0] = list;
+    first = list;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp10 = jsx(SettingLayoutDefault, { node: first });
+    cResult[1] = tmp10;
+    tmp7 = tmp10;
+  } else {
+    tmp7 = cResult[1];
+  }
+  return tmp7;
+}) : (() => {
+  const node = react.useMemo(() => {
+    let items;
+    const obj = { sections: items };
+    const createList = SettingBuilders.createList;
+    SettingBuilders;
+    items = [];
+    const obj2 = MobileNotifSettingsRouteBuilders;
+    items[0] = obj2.buildCategoryServerSettingsSection();
+    return createList(obj);
   }, []);
   return jsx(SettingLayoutDefault, { node });
-});
+}));
+const result = size.fileFinishedImporting("modules/notifications/settings/native/routes/RedesignSettingsCategoryServerScreen.tsx");
+
+export default memoResult;

@@ -1,75 +1,237 @@
-// Module ID: 16757
-// Function ID: 16758
+// Module ID: 16845
+// Function ID: 16846
 // Name: SmartSearchTip
-// Dependencies: [19, 17, 21, 4845, 576, 4841, 1115, 3910, 12810, 1177, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1126, 3919, 4886, 12850, 1188, 2]
 
-// Module 16757 (SmartSearchTip)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import noop from "module_19" /* 19 */;
+// Module 16845 (SmartSearchTip)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import _modDef3919 from "module_3919" /* 3919 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4845);
-let obj = { container: { marginHorizontal: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_24 }, header: null, titleContainer: null, title: null };
-let obj3 = { marginHorizontal: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_24 };
-obj.header = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_8, minHeight: nativeDefault.space.PX_20 };
-let obj4 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_8, minHeight: nativeDefault.space.PX_20 };
-obj.titleContainer = { flex: 1, flexDirection: "row", gap: nativeDefault.space.PX_6 };
-obj.title = { flexShrink: 1 };
-let closure_7 = createStyles.createStyles(obj);
-let obj5 = { flex: 1, flexDirection: "row", gap: nativeDefault.space.PX_6 };
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/intelligence_layer/search/native/components/SmartSearchTip.tsx");
+let set;
 
-export default noop.memo((children) => {
-  const citations = children.citations;
-  const guildId = children.guildId;
-  let tmp = closure_7();
-  let items = [citations];
-  const memo = noop.useMemo(() => (function getCitationAuthors(citations) {
-    const items = [];
-    const set = new Set();
-    const iter = citations[Symbol.iterator]();
-    while (iter !== undefined) {
-      let author = iter.next().message.author;
-      let tmp = author;
-      if (!set.has(author.id)) {
-        let addResult = set.add(tmp.id);
-        let arr = items.push(tmp);
-      }
-      continue;
+let hasOwnProperty;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+function getCitationAuthors(citations) {
+  const items = [];
+  set = new Set();
+  const iter = citations[Symbol.iterator]();
+  while (iter !== undefined) {
+    let author = iter.next().message.author;
+    let tmp = author;
+    if (!set.has(author.id)) {
+      let addResult = set.add(tmp.id);
+      let arr = items.push(tmp);
     }
-    return items;
-  })(citations), items);
-  let obj = { style: tmp.container, children: null };
-  const obj2 = { style: tmp.header, children: null };
-  const obj3 = { style: tmp.titleContainer, children: null };
-  const obj4 = { variant: "text-sm/semibold", color: "text-subtle", lineClamp: 1, style: tmp.title, accessibilityRole: "header", children: null };
-  const intl = citations(1115).intl;
-  obj4.children = intl.string(guildId(3910).ydAwWi);
-  const items1 = [closure_5(citations(4841).Text, obj4), ];
-  const obj5 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: null };
-  const intl2 = citations(1115).intl;
-  obj5.children = intl2.string(guildId(3910).QIdSmb);
-  items1[1] = closure_5(citations(4841).Text, obj5);
-  obj3.children = items1;
-  const items2 = [closure_6(View, obj3), ];
+    continue;
+  }
+  return items;
+}
+const View = react_native.View;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, header: obj3, titleContainer: obj4, title: { flexShrink: 1 } };
+obj2 = { marginHorizontal: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_24 };
+createStyles = createStyles.createStyles;
+obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_8, minHeight: nativeDefault.space.PX_20 };
+obj4 = { flex: 1, flexDirection: "row", gap: nativeDefault.space.PX_6 };
+let closure_7 = createStyles(obj);
+let memo = react.memo;
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let answerText;
+  let arr;
+  let citations;
+  let container;
+  let guildId;
+  let header;
+  let intl2;
+  let items;
+  let items1;
+  let items2;
+  let substr;
+  let title;
+  let titleContainer;
+  let tmp10;
+  let tmp13;
+  let tmp7;
+  const tmp = guildId;
+  let obj = guildId(576);
+  const cResult = obj.c(22);
+  ({ answerText, citations, guildId } = arg0);
+  const tmp4 = closure_7();
+  if (cResult[0] !== citations) {
+    const tmp6 = getCitationAuthors(citations);
+    cResult[0] = citations;
+    cResult[1] = tmp6;
+    arr = tmp6;
+  } else {
+    arr = cResult[1];
+  }
+  ({ container, header, titleContainer, title } = tmp4);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(_modDef3919.ydAwWi);
+    cResult[2] = stringResult;
+    tmp7 = stringResult;
+  } else {
+    tmp7 = cResult[2];
+  }
+  if (cResult[3] !== tmp4.title) {
+    const obj2 = { variant: "text-sm/semibold", color: "text-subtle", lineClamp: 1, style: title, accessibilityRole: "header", children: tmp7 };
+    const tmp12 = closure_5(tmp(4886).Text, obj2);
+    cResult[3] = tmp4.title;
+    cResult[4] = tmp12;
+    tmp10 = tmp12;
+  } else {
+    tmp10 = cResult[4];
+  }
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: intl2.string(_modDef3919.QIdSmb) };
+    const Text = tmp(4886).Text;
+    intl2 = tmp(1126).intl;
+    const tmp16 = closure_5(Text, obj3);
+    cResult[5] = tmp16;
+    tmp13 = tmp16;
+  } else {
+    tmp13 = cResult[5];
+  }
+  if (cResult[6] === tmp4.titleContainer) {
+    let tmp17;
+    if (cResult[7] === tmp10) {
+      tmp17 = cResult[8];
+    }
+    if (cResult[9] === arr) {
+      let tmp19;
+      if (cResult[10] === guildId) {
+        tmp19 = cResult[11];
+      }
+      if (cResult[12] === tmp4.header) {
+        if (cResult[13] === tmp19) {
+          let tmp22;
+          let tmp26;
+          if (cResult[14] === tmp17) {
+            tmp22 = cResult[15];
+          }
+          if (cResult[16] !== answerText) {
+            const obj4 = { variant: "text-md/normal", color: "text-default", children: answerText };
+            const tmp28 = closure_5(tmp(4886).Text, obj4);
+            cResult[16] = answerText;
+            cResult[17] = tmp28;
+            tmp26 = tmp28;
+          } else {
+            tmp26 = cResult[17];
+          }
+          if (cResult[18] === tmp4.container) {
+            if (cResult[19] === tmp22) {
+              let tmp29;
+              if (cResult[20] === tmp26) {
+                tmp29 = cResult[21];
+              }
+              return tmp29;
+            }
+          }
+          const obj5 = { style: container, children: items };
+          items = [tmp22, tmp26];
+          const tmp32 = closure_6(View, obj5);
+          cResult[18] = tmp4.container;
+          cResult[19] = tmp22;
+          cResult[20] = tmp26;
+          cResult[21] = tmp32;
+          tmp29 = tmp32;
+        }
+      }
+      const obj6 = { style: header, children: items1 };
+      items1 = [tmp17, tmp19];
+      const tmp25 = closure_6(View, obj6);
+      cResult[12] = tmp4.header;
+      cResult[13] = tmp19;
+      cResult[14] = tmp17;
+      cResult[15] = tmp25;
+      tmp22 = tmp25;
+    }
+    let tmp20 = arr.length > 0;
+    if (tmp20) {
+      const obj7 = {
+        size: tmp(1188).AvatarSizes.XSMALL_20,
+        totalCount: arr.length,
+        names: arr.map((username) => username.username),
+        children: substr.map((user) => {
+              const obj = { user, size: native.AvatarSizes.XSMALL_20, guildId };
+              const Avatar = native.Avatar;
+              return hasOwnProperty(Avatar, obj, user.id);
+            })
+      };
+      const AvatarPile = tmp(12850).AvatarPile;
+      substr = arr.slice(0, 3);
+      tmp20 = closure_5(AvatarPile, obj7);
+    }
+    cResult[9] = arr;
+    cResult[10] = guildId;
+    cResult[11] = tmp20;
+    tmp19 = tmp20;
+  }
+  const obj8 = { style: titleContainer, children: items2 };
+  items2 = [tmp10, tmp13];
+  const tmp18 = closure_6(View, obj8);
+  cResult[6] = tmp4.titleContainer;
+  cResult[7] = tmp10;
+  cResult[8] = tmp18;
+  tmp17 = tmp18;
+}) : ((citations) => {
+  let intl;
+  let intl2;
+  let items1;
+  let items2;
+  let items3;
+  let substr;
+  citations = citations.citations;
+  const guildId = citations.guildId;
+  const answerText = citations.answerText;
+  const tmp = closure_7();
+  const items = [citations];
+  const memo = react.useMemo(() => getCitationAuthors(citations), items);
+  const tmp2 = closure_6;
+  let obj = { style: tmp.container, children: items3 };
+  const obj2 = { style: tmp.header, children: items2 };
+  const obj3 = { style: tmp.titleContainer, children: items1 };
+  const obj4 = { variant: "text-sm/semibold", color: "text-subtle", lineClamp: 1, style: tmp.title, accessibilityRole: "header", children: intl.string(guildId(3919).ydAwWi) };
+  const Text = citations(4886).Text;
+  intl = citations(1126).intl;
+  items1 = [closure_5(Text, obj4), ];
+  const obj5 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: intl2.string(guildId(3919).QIdSmb) };
+  const Text2 = citations(4886).Text;
+  intl2 = citations(1126).intl;
+  items1[1] = closure_5(Text2, obj5);
+  items2 = [closure_6(View, obj3), ];
   let tmp4Result = memo.length > 0;
   if (tmp4Result) {
-    const obj6 = { size: tmp5(1177).AvatarSizes.XSMALL_20, totalCount: memo.length, names: memo.map((username) => username.username), children: null };
-    const substr = memo.slice(0, 3);
-    obj6.children = substr.map((user) => {
-      const obj = { user, size: native.AvatarSizes.XSMALL_20, guildId };
-      return hasOwnProperty(native.Avatar, obj, user.id);
-    });
-    tmp4Result = tmp4(tmp5(12810).AvatarPile, obj6);
+    const obj6 = {
+      size: citations(1188).AvatarSizes.XSMALL_20,
+      totalCount: memo.length,
+      names: memo.map((username) => username.username),
+      children: substr.map((user) => {
+          const obj = { user, size: native.AvatarSizes.XSMALL_20, guildId };
+          const Avatar = native.Avatar;
+          return hasOwnProperty(Avatar, obj, user.id);
+        })
+    };
+    const AvatarPile = tmp5(12850).AvatarPile;
+    substr = memo.slice(0, 3);
+    tmp4Result = tmp4(AvatarPile, obj6);
   }
   items2[1] = tmp4Result;
-  obj2.children = items2;
-  const items3 = [closure_6(View, obj2), closure_5(citations(4841).Text, { variant: "text-md/normal", color: "text-default", children: children.answerText })];
-  obj.children = items3;
-  return closure_6(View, obj);
-});
+  items3 = [tmp2(View, obj2), closure_5(citations(4886).Text, { variant: "text-md/normal", color: "text-default", children: answerText })];
+  return tmp2(View, obj);
+}));
+const result = size.fileFinishedImporting("modules/intelligence_layer/search/native/components/SmartSearchTip.tsx");
+
+export default memoResult;

@@ -1,9 +1,9 @@
-// Module ID: 11413
-// Function ID: 11414
+// Module ID: 11328
+// Function ID: 11329
 // Name: checkpoint/CheckpointConstants
 // Dependencies: [2]
 
-// Module 11413 (checkpoint/CheckpointConstants)
+// Module 11328 (checkpoint/CheckpointConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/checkpoint/2025/CheckpointConstants.tsx");

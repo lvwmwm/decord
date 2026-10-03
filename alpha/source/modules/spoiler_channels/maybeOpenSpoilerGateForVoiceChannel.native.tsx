@@ -1,32 +1,34 @@
-// Module ID: 12699
-// Function ID: 12700
+// Module ID: 12735
+// Function ID: 12736
 // Name: maybeOpenSpoilerGateForVoiceChannel
-// Dependencies: [2044, 21, 6934, 5389, 12700, 2]
+// Dependencies: [2051, 21, 6832, 5709, 12736, 2]
 // Exports: maybeOpenSpoilerGateForVoiceChannel
 
-// Module 12699 (maybeOpenSpoilerGateForVoiceChannel)
-import useAlertStore from "useAlertStore" /* 5389 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6934 */;
-import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 12700 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
+// Module 12735 (maybeOpenSpoilerGateForVoiceChannel)
+import Fragment from "Fragment" /* 21 */;
+import useAlertStore from "useAlertStore" /* 5709 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6832 */;
+import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 12736 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import size from "module_2" /* 2 */;
 
 const VoicePanelSpoilerAlertDefault = VoicePanelSpoilerAlert;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
+const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/spoiler_channels/maybeOpenSpoilerGateForVoiceChannel.native.tsx");
 
 export const maybeOpenSpoilerGateForVoiceChannel = function maybeOpenSpoilerGateForVoiceChannel(id) {
   const channel = ChannelStore.getChannel(id);
   let tmp2 = null == channel;
   if (!tmp2) {
-    tmp2 = !SpoilerChannelUtils.shouldShowSpoilerGateForChannelId(id);
+    const obj = SpoilerChannelUtils;
+    tmp2 = !obj.shouldShowSpoilerGateForChannelId(id);
   }
   let flag = !tmp2;
-  if (!tmp2) {
-    const obj3 = { channelId: channel.id };
-    useAlertStore.openAlert(VoicePanelSpoilerAlert.VOICE_PANEL_SPOILER_KEY, jsx(VoicePanelSpoilerAlertDefault, { channelId: channel.id }));
+  if (flag) {
+    const openAlert = useAlertStore.openAlert;
+    useAlertStore;
+    openAlert(VoicePanelSpoilerAlert.VOICE_PANEL_SPOILER_KEY, jsx(VoicePanelSpoilerAlertDefault, { channelId: channel.id }));
     flag = true;
   }
   return flag;

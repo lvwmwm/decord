@@ -1,20 +1,445 @@
-// Module ID: 16410
-// Function ID: 16411
+// Module ID: 16484
+// Function ID: 16485
 // Name: NavigationTTIRegionDebugOverlay
-// Dependencies: [32, 19, 17, 21, 4845, 576, 16403, 16405, 16408, 16407, 4841, 2]
-// Exports: NavigationTTIRegionDebugOverlay
+// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 16477, 16479, 16482, 16481, 4886, 2]
 
-// Module 16410 (NavigationTTIRegionDebugOverlay)
-import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 16405 */;
-import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 16407 */;
-import NavigationTTIRegionDebugState from "NavigationTTIRegionDebugState" /* 16408 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 16484 (NavigationTTIRegionDebugOverlay)
+import nativeDefault from "native" /* 587 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 16479 */;
+import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 16481 */;
+import NavigationTTIRegionDebugState from "NavigationTTIRegionDebugState" /* 16482 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-function NavigationTTIDebugFreezeControl(arg0) {
+let dependencyMap, obj1, tmp11;
+
+let StyleSheet;
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+let obj7;
+let obj8;
+let rect;
+let rect1;
+let rect2;
+let rect3;
+let rect4;
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+({ Pressable: hasOwnProperty, View: metroRequire, StyleSheet } = react_native);
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let closure_9 = ["time_start", "first_paint"];
+let createStyles = createStyles_mod;
+let obj = { outline: obj2, includedOutline: obj3, excludedOutline: obj4, mixedOutline: obj5, violationOutline: obj6, badge: { position: "absolute", maxWidth: "48%" }, expandedBadge: { maxWidth: "92%" }, badgeText: obj7, includedBadge: rect, excludedBadge: rect1, mixedBadge: rect2, violationBadge: rect3, armedBadge: obj8, freezeControl: rect4, armedFreezeControl: { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO } };
+obj2 = { zIndex: 10000, borderWidth: 2 };
+createStyles = createStyles.createStyles;
+const merged = Object.assign(StyleSheet.absoluteFillObject);
+obj3 = { borderColor: nativeDefault.colors.STATUS_POSITIVE, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_POSITIVE };
+obj4 = { borderColor: nativeDefault.colors.BORDER_STRONG, borderStyle: "dashed", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
+obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
+obj6 = { borderColor: nativeDefault.colors.STATUS_DANGER, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL };
+obj7 = { paddingHorizontal: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4 };
+rect = { top: 0, left: 0, backgroundColor: nativeDefault.colors.STATUS_POSITIVE };
+rect1 = { top: 0, right: 0, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
+rect2 = { top: 0, right: 0, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
+rect3 = { top: 0, left: 0, backgroundColor: nativeDefault.colors.STATUS_DANGER };
+obj8 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
+rect4 = { position: "absolute", right: 0, bottom: 0, maxWidth: "60%", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
+({ backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO });
+let closure_10 = createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
+  let first;
+  let tracking;
+  let obj = name(tracking[7]);
+  const cResult = obj.c(9);
+  name = name.name;
+  const regionId = name.regionId;
+  tracking = name.tracking;
+  let obj2 = name(tracking[8]);
+  const navTTISurface = obj2.useNavTTISurface();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function o(arg0) {
+      const obj = regionId(tracking[9]);
+      let closure_0 = obj.subscribeDebugBundle(arg0);
+      const obj2 = name(tracking[10]);
+      let closure_1 = obj2.subscribeNavigationTTIRegionDebugMeasurements(arg0);
+      return () => {
+        closure_0();
+        closure_1();
+      };
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === name) {
+    if (cResult[2] === regionId) {
+      if (cResult[3] === navTTISurface) {
+        let tmp4;
+        if (cResult[4] === tracking) {
+          tmp4 = cResult[5];
+        }
+        const syncExternalStore = react.useSyncExternalStore(first, tmp4, tmp4);
+        let str = ":";
+        const lastIndexOfResult = syncExternalStore.lastIndexOf(":");
+        if (cResult[6] === lastIndexOfResult) {
+          let tmp7;
+          if (cResult[7] === syncExternalStore) {
+            tmp7 = cResult[8];
+          }
+          return tmp7;
+        }
+        let NumberResult = null;
+        if (-1 !== lastIndexOfResult) {
+          NumberResult = null;
+          if ("" !== syncExternalStore.slice(lastIndexOfResult + 1)) {
+            const _Number = Number;
+            NumberResult = Number(syncExternalStore.slice(lastIndexOfResult + 1));
+          }
+        }
+        cResult[6] = lastIndexOfResult;
+        cResult[7] = syncExternalStore;
+        cResult[8] = NumberResult;
+        tmp7 = NumberResult;
+      }
+    }
+  }
+  const fn2 = function v() {
+    let activeTraceId = null;
+    if (null != navTTISurface) {
+      const obj = NavigationSpanTrackerDefault;
+      activeTraceId = obj.getActiveTraceId(tmp.definition, tmp.navigationKey);
+    }
+    let str = "none";
+    if (null != activeTraceId) {
+      let str3;
+      if ("include" === tracking) {
+        const obj3 = NavigationSpanTrackerDefault;
+        const lastBundle = obj3.getLastBundle();
+        let end_ms;
+        if (lastBundle != null) {
+          const components = lastBundle.components;
+          const found = components.find((span_name) => span_name.span_name === name);
+          if (found != null) {
+            end_ms = found.end_ms;
+          }
+        }
+        str3 = end_ms;
+      } else {
+        const obj2 = NavigationTTIRegionDebugState;
+        str3 = obj2.getNavigationTTIRegionDebugMeasurement(activeTraceId, regionId);
+      }
+      if (str3 == null) {
+        str3 = "";
+      }
+      const _HermesInternal = HermesInternal;
+      str = "" + activeTraceId + ":" + str3;
+    }
+    return str;
+  };
+  cResult[1] = name;
+  cResult[2] = regionId;
+  cResult[3] = navTTISurface;
+  cResult[4] = tracking;
+  cResult[5] = fn2;
+  tmp4 = fn2;
+}) : ((name) => {
+  name = name.name;
+  const regionId = name.regionId;
+  const tracking = name.tracking;
+  let obj = name(tracking[8]);
+  const navTTISurface = obj.useNavTTISurface();
+  const items = [name, regionId, navTTISurface, tracking];
+  const callback = react.useCallback((arg0) => {
+    const obj = regionId(tracking[9]);
+    let closure_0 = obj.subscribeDebugBundle(arg0);
+    const obj2 = name(tracking[10]);
+    let closure_1 = obj2.subscribeNavigationTTIRegionDebugMeasurements(arg0);
+    return () => {
+      closure_0();
+      closure_1();
+    };
+  }, []);
+  const callback1 = react.useCallback(() => {
+    let activeTraceId = null;
+    if (null != navTTISurface) {
+      const obj = NavigationSpanTrackerDefault;
+      activeTraceId = obj.getActiveTraceId(tmp.definition, tmp.navigationKey);
+    }
+    let str = "none";
+    if (null != activeTraceId) {
+      let str3;
+      if ("include" === tracking) {
+        const obj3 = NavigationSpanTrackerDefault;
+        const lastBundle = obj3.getLastBundle();
+        let end_ms;
+        if (lastBundle != null) {
+          const components = lastBundle.components;
+          const found = components.find((span_name) => span_name.span_name === name);
+          if (found != null) {
+            end_ms = found.end_ms;
+          }
+        }
+        str3 = end_ms;
+      } else {
+        const obj2 = NavigationTTIRegionDebugState;
+        str3 = obj2.getNavigationTTIRegionDebugMeasurement(activeTraceId, regionId);
+      }
+      if (str3 == null) {
+        str3 = "";
+      }
+      const _HermesInternal = HermesInternal;
+      str = "" + activeTraceId + ":" + str3;
+    }
+    return str;
+  }, items);
+  const syncExternalStore = react.useSyncExternalStore(callback, callback1, callback1);
+  const lastIndexOfResult = syncExternalStore.lastIndexOf(":");
+  let NumberResult = null;
+  if (-1 !== lastIndexOfResult) {
+    let str = "";
+    NumberResult = null;
+    if ("" !== syncExternalStore.slice(lastIndexOfResult + 1)) {
+      const _Number = Number;
+      NumberResult = Number(syncExternalStore.slice(lastIndexOfResult + 1));
+    }
+  }
+  return NumberResult;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating.isReactCompilerEnabled();
+const f74074 = () => {
+
+};
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let surface;
+  let target;
+  let tmp7;
+  const tmp = surface;
+  let obj = surface(576);
+  const cResult = obj.c(17);
+  ({ target, surface } = arg0);
+  const tmp4 = closure_10();
+  let kind;
+  if (target != null) {
+    kind = target.kind;
+  }
+  let name = null;
+  if ("milestone" === kind) {
+    name = target.name;
+  }
+  if (cResult[0] !== target) {
+    let kind1;
+    if (target != null) {
+      kind1 = target.kind;
+    }
+    let str = "FREEZE: COMPONENT";
+    if ("component" !== kind1) {
+      let name1;
+      if (target != null) {
+        name1 = target.name;
+      }
+      if ("time_start" === name1) {
+        str = "FREEZE: NEXT START";
+      } else {
+        str = "FREEZE: NEXT FP";
+        if ("first_paint" !== name1) {
+          str = "FREEZE: OFF";
+        }
+      }
+    }
+    cResult[0] = target;
+    cResult[1] = str;
+    tmp7 = str;
+  } else {
+    tmp7 = cResult[1];
+  }
+  if (cResult[2] === name) {
+    let tmp10;
+    if (cResult[3] === surface) {
+      tmp10 = cResult[4];
+    }
+    let armedFreezeControl;
+    if (null != target) {
+      armedFreezeControl = tmp4.armedFreezeControl;
+    }
+    if (cResult[5] === tmp4.freezeControl) {
+      let tmp12;
+      if (cResult[6] === armedFreezeControl) {
+        tmp12 = cResult[7];
+      }
+      let str5 = "text-default";
+      if (null != target) {
+        str5 = "text-feedback-info";
+      }
+      if (cResult[8] === tmp7) {
+        if (cResult[9] === tmp4.badgeText) {
+          let tmp13;
+          if (cResult[10] === str5) {
+            tmp13 = cResult[11];
+          }
+          if (cResult[12] === tmp10) {
+            if (cResult[13] === tmp7) {
+              if (cResult[14] === tmp12) {
+                let tmp16;
+                if (cResult[15] === tmp13) {
+                  tmp16 = cResult[16];
+                }
+                return tmp16;
+              }
+            }
+          }
+          let obj2 = { style: tmp12, hitSlop: name(587).space.PX_12, onPress: tmp10, accessibilityRole: "button", accessibilityLabel: tmp7, accessibilityHint: "Cycles the one-shot freeze point. Restart the app after a freeze.", children: tmp13 };
+          cResult[12] = tmp10;
+          cResult[13] = tmp7;
+          cResult[14] = tmp12;
+          cResult[15] = tmp13;
+          const tmp20 = closure_7(closure_5, obj2);
+          class T {
+            constructor() {
+              tmp = surface;
+              activeTraceId = null;
+              if (null != surface) {
+                tmp3 = closure_1;
+                tmp4 = closure_2;
+                obj = closure_1(closure_2[9]);
+                activeTraceId = obj.getActiveTraceId(tmp.definition, tmp.navigationKey);
+              }
+              if (null == name) {
+                tmp8 = closure_9;
+                first = closure_9[0];
+                if (first == null) {
+                  first = null;
+                }
+                tmp7 = first;
+              } else {
+                tmp6 = closure_9;
+                num = 1;
+                tmp7 = closure_9[closure_9.indexOf(closure_9, tmp5) + 1];
+                if (tmp7 == null) {
+                  tmp7 = null;
+                }
+              }
+              if (null == tmp7) {
+                tmp15 = closure_0;
+                tmp16 = closure_2;
+                obj4 = closure_0(closure_2[11]);
+                result = obj4.disarmNavigationTTIDebugFreeze();
+              } else {
+                tmp10 = closure_0;
+                tmp11 = closure_2;
+                tmp12 = closure_0(closure_2[11]);
+                obj1 = { kind: "milestone", name: null };
+                obj1.name = tmp7;
+                obj5 = { armedDuringTraceId: null, destinationKey: null };
+                obj5.armedDuringTraceId = activeTraceId;
+                navigationKey = undefined;
+                armNavigationTTIDebugFreeze = tmp12.armNavigationTTIDebugFreeze;
+                if (tmp != null) {
+                  navigationKey = tmp.navigationKey;
+                }
+                if (navigationKey == null) {
+                  navigationKey = null;
+                }
+                obj5.destinationKey = navigationKey;
+                result1 = armNavigationTTIDebugFreeze(obj1, obj5);
+              }
+              return;
+            }
+          }
+          tmp16 = tmp20;
+        }
+      }
+      let obj3 = { variant: "text-xs/bold", color: str5, style: tmp4.badgeText, lineClamp: 1, accessible: false, children: tmp7 };
+      const tmp15 = closure_7(tmp(4886).Text, obj3);
+      cResult[8] = tmp7;
+      cResult[9] = tmp4.badgeText;
+      cResult[10] = str5;
+      cResult[11] = tmp15;
+      tmp13 = tmp15;
+    }
+    const items = [tmp4.freezeControl, armedFreezeControl];
+    cResult[5] = tmp4.freezeControl;
+    cResult[6] = armedFreezeControl;
+    cResult[7] = items;
+    tmp12 = items;
+  }
+  class T {
+    constructor() {
+      tmp = surface;
+      activeTraceId = null;
+      if (null != surface) {
+        tmp3 = closure_1;
+        tmp4 = closure_2;
+        obj = closure_1(closure_2[9]);
+        activeTraceId = obj.getActiveTraceId(tmp.definition, tmp.navigationKey);
+      }
+      if (null == name) {
+        tmp8 = closure_9;
+        first = closure_9[0];
+        if (first == null) {
+          first = null;
+        }
+        tmp7 = first;
+      } else {
+        tmp6 = closure_9;
+        num = 1;
+        tmp7 = closure_9[closure_9.indexOf(closure_9, tmp5) + 1];
+        if (tmp7 == null) {
+          tmp7 = null;
+        }
+      }
+      if (null == tmp7) {
+        tmp15 = closure_0;
+        tmp16 = closure_2;
+        obj4 = closure_0(closure_2[11]);
+        result = obj4.disarmNavigationTTIDebugFreeze();
+      } else {
+        tmp10 = closure_0;
+        tmp11 = closure_2;
+        tmp12 = closure_0(closure_2[11]);
+        obj1 = { kind: "milestone", name: null };
+        obj1.name = tmp7;
+        obj5 = { armedDuringTraceId: null, destinationKey: null };
+        obj5.armedDuringTraceId = activeTraceId;
+        navigationKey = undefined;
+        armNavigationTTIDebugFreeze = tmp12.armNavigationTTIDebugFreeze;
+        if (tmp != null) {
+          navigationKey = tmp.navigationKey;
+        }
+        if (navigationKey == null) {
+          navigationKey = null;
+        }
+        obj5.destinationKey = navigationKey;
+        result1 = armNavigationTTIDebugFreeze(obj1, obj5);
+      }
+      return;
+    }
+  }
+  cResult[2] = name;
+  cResult[3] = surface;
+  cResult[4] = T;
+  tmp10 = T;
+}) : ((arg0) => {
+  let Text;
+  let obj2;
+  let require;
+  let target;
   ({ target, surface: require } = arg0);
   let name;
   const tmp = closure_10();
@@ -47,391 +472,749 @@ function NavigationTTIDebugFreezeControl(arg0) {
   }
   const items = [tmp.freezeControl, ];
   let armedFreezeControl;
+  let tmp7 = closure_5;
   if (null != target) {
     armedFreezeControl = tmp.armedFreezeControl;
   }
   let obj = {
     style: items,
-    hitSlop: name(576).space.PX_12,
+    hitSlop: name(587).space.PX_12,
     onPress() {
+      let navigationKey;
+      let tmp7;
       let activeTraceId = null;
-      if (null != closure_1_0) {
-        activeTraceId = NavigationSpanTrackerDefault.getActiveTraceId(tmp.definition, tmp.navigationKey);
+      if (null != _require) {
+        const obj = NavigationSpanTrackerDefault;
+        activeTraceId = obj.getActiveTraceId(tmp.definition, tmp.navigationKey);
       }
       if (null == name) {
         let first = closure_9[0];
         if (first == null) {
           first = null;
         }
-        let tmp8 = first;
+        tmp7 = first;
       } else {
-        tmp8 = closure_9[closure_9.indexOf(closure_9, tmp5) + 1];
-        if (tmp8 == null) {
-          tmp8 = null;
+        tmp7 = closure_9[closure_9.indexOf(closure_9, tmp5) + 1];
+        if (tmp7 == null) {
+          tmp7 = null;
         }
       }
-      if (null == tmp8) {
-        const result = NavigationTTIDebugFreeze.disarmNavigationTTIDebugFreeze();
+      if (null == tmp7) {
+        const obj4 = NavigationTTIDebugFreeze;
+        const result = obj4.disarmNavigationTTIDebugFreeze();
       } else {
-        const obj3 = { kind: "milestone", name: tmp8 };
-        const obj4 = { armedDuringTraceId: activeTraceId, destinationKey: null };
-        let navigationKey;
-        if (tmp != null) {
+        const obj3 = { armedDuringTraceId: activeTraceId, destinationKey: navigationKey };
+        navigationKey = undefined;
+        const obj2 = { kind: "milestone", name: tmp7 };
+        const armNavigationTTIDebugFreeze = NavigationTTIDebugFreeze.armNavigationTTIDebugFreeze;
+        NavigationTTIDebugFreeze;
+        if (_require != null) {
           navigationKey = tmp.navigationKey;
         }
         if (navigationKey == null) {
           navigationKey = null;
         }
-        obj4.destinationKey = navigationKey;
-        const result1 = NavigationTTIDebugFreeze.armNavigationTTIDebugFreeze(obj3, obj4);
+        const result1 = armNavigationTTIDebugFreeze(obj2, obj3);
       }
     },
     accessibilityRole: "button",
     accessibilityLabel: str,
     accessibilityHint: "Cycles the one-shot freeze point. Restart the app after a freeze.",
-    children: null
+    children: tmp6(Text, obj2)
   };
   items[1] = armedFreezeControl;
   let str4 = "text-default";
+  Text = Text_Text.Text;
   if (null != target) {
     str4 = "text-feedback-info";
   }
-  obj.children = closure_7(Text_Text.Text, { variant: "text-xs/bold", color: str4, style: tmp.badgeText, lineClamp: 1, accessible: false, children: str });
-  return closure_7(closure_5, obj);
-}
-get_ActivityIndicator = fn(17);
-({ Pressable: hasOwnProperty, View: metroRequire, StyleSheet } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let closure_9 = ["time_start", "first_paint"];
-const createStyles = fn(4845);
-let obj2 = { outline: null, includedOutline: null, excludedOutline: null, mixedOutline: null, violationOutline: null, badge: null, expandedBadge: null, badgeText: null, includedBadge: null, excludedBadge: null, mixedBadge: null, violationBadge: null, armedBadge: null, freezeControl: null, armedFreezeControl: null };
-let obj3 = {};
-const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj3.zIndex = 10000;
-obj3.borderWidth = 2;
-obj2.outline = obj3;
-obj2.includedOutline = { borderColor: nativeDefault.colors.STATUS_POSITIVE, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_POSITIVE };
-let obj4 = { borderColor: nativeDefault.colors.STATUS_POSITIVE, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_POSITIVE };
-obj2.excludedOutline = { borderColor: nativeDefault.colors.BORDER_STRONG, borderStyle: "dashed", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
-let obj5 = { borderColor: nativeDefault.colors.BORDER_STRONG, borderStyle: "dashed", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
-obj2.mixedOutline = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
-let obj6 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
-obj2.violationOutline = { borderColor: nativeDefault.colors.STATUS_DANGER, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL };
-obj2.badge = { position: "absolute", maxWidth: "48%" };
-obj2.expandedBadge = { maxWidth: "92%" };
-let obj7 = { borderColor: nativeDefault.colors.STATUS_DANGER, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL };
-obj2.badgeText = { paddingHorizontal: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4 };
-let rect = { top: 0, left: 0, backgroundColor: nativeDefault.colors.STATUS_POSITIVE };
-obj2.includedBadge = rect;
-const rect1 = { top: 0, right: 0, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
-obj2.excludedBadge = rect1;
-const rect2 = { top: 0, right: 0, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
-obj2.mixedBadge = rect2;
-const rect3 = { top: 0, left: 0, backgroundColor: nativeDefault.colors.STATUS_DANGER };
-obj2.violationBadge = rect3;
-const obj8 = { paddingHorizontal: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4 };
-obj2.armedBadge = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
-const rect4 = { position: "absolute", right: 0, bottom: 0, maxWidth: "60%", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
-obj2.freezeControl = rect4;
-const obj9 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
-obj2.armedFreezeControl = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
-let closure_10 = createStyles.createStyles(obj2);
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/tti_analytics/native/navigation/debug/NavigationTTIRegionDebugOverlay.tsx");
-
-export const NavigationTTIRegionDebugOverlay = function NavigationTTIRegionDebugOverlay(name) {
+  obj2 = { variant: "text-xs/bold", color: str4, style: tmp.badgeText, lineClamp: 1, accessible: false, children: str };
+  return closure_7(tmp7, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
+  let closure_3;
+  let closure_4;
+  let descendantTracking;
+  let excludedDescendants;
+  let hierarchyDepth;
+  let includedDescendants;
+  let items;
+  let regionId;
+  let tmp8;
+  let tracking;
+  let violation;
+  let tmp = name;
+  let tmp2 = dependencyMap;
+  let obj = name(576);
+  const cResult = obj.c(56);
   name = name.name;
   ({ regionId, tracking, descendantTracking, includedDescendants, excludedDescendants, hierarchyDepth, violation } = name);
-  dependencyMap = undefined;
-  _slicedToArray = undefined;
-  noop = undefined;
-  closure_5 = undefined;
-  const tmp = closure_10();
-  const navTTISurface = name(16403).useNavTTISurface();
-  let obj = name(16403);
-  const tmp2 = name;
-  [tmp6, c2] = noop.useState(false);
-  const syncExternalStore = noop.useSyncExternalStore(name(16407).subscribeNavigationTTIDebugFreezeTarget, name(16407).getNavigationTTIDebugFreezeTarget, name(16407).getNavigationTTIDebugFreezeTarget);
-  closure_129_0 = name;
-  closure_129_1 = regionId;
-  closure_129_2 = tracking;
-  const tmp5 = _slicedToArray(noop.useState(false), 2);
-  const navTTISurface1 = name(16403).useNavTTISurface();
-  closure_129_3 = navTTISurface1;
-  const items = [name, regionId, navTTISurface1, tracking];
-  const callback = noop.useCallback((arg0) => {
-    closure_0 = navTTISurface(_undefined[7]).subscribeDebugBundle(arg0);
-    const obj = navTTISurface(_undefined[7]);
-    closure_1 = name(_undefined[8]).subscribeNavigationTTIRegionDebugMeasurements(arg0);
-    return () => {
-      closure_0();
-      closure_1();
-    };
-  }, []);
-  const callback1 = noop.useCallback(() => {
-    let activeTraceId = null;
-    if (null != closure_3) {
-      activeTraceId = NavigationSpanTrackerDefault.getActiveTraceId(tmp.definition, tmp.navigationKey);
-    }
-    let str = "none";
-    if (null != activeTraceId) {
-      if ("include" === c2) {
-        const lastBundle = NavigationSpanTrackerDefault.getLastBundle();
-        let end_ms;
-        if (lastBundle != null) {
-          const components = lastBundle.components;
-          const found = components.find((span_name) => span_name.span_name === name);
-          if (found != null) {
-            end_ms = found.end_ms;
+  const tmp4 = closure_10();
+  let obj2 = name(16477);
+  const navTTISurface = obj2.useNavTTISurface();
+  const tmp6 = react;
+  [tmp8, dependencyMap] = _slicedToArray(react.useState(false), 2);
+  const tmp7 = _slicedToArray(react.useState(false), 2);
+  if (typeof f74074 === "function") {
+    const useSyncExternalStore = tmp6.useSyncExternalStore;
+    const subscribeNavigationTTIDebugFreezeTarget = tmp(16481).subscribeNavigationTTIDebugFreezeTarget;
+    const syncExternalStore = useSyncExternalStore(subscribeNavigationTTIDebugFreezeTarget, tmp(16481).getNavigationTTIDebugFreezeTarget, tmp(16481).getNavigationTTIDebugFreezeTarget);
+    if (cResult[0] === name) {
+      if (cResult[1] === regionId) {
+        let tmp10;
+        let str5;
+        if (cResult[2] === tracking) {
+          tmp10 = cResult[3];
+        }
+        const tmp12 = closure_11(tmp10);
+        let tmp15 = "exclude" === tracking;
+        if (!tmp15) {
+          tmp15 = tmp14;
+        }
+        _slicedToArray = tmp15;
+        react = tmp18;
+        let kind;
+        if (syncExternalStore != null) {
+          kind = syncExternalStore.kind;
+        }
+        let closure_5 = tmp20;
+        if (cResult[4] === descendantTracking) {
+          if (cResult[5] === excludedDescendants) {
+            if (cResult[6] === null != violation) {
+              if (cResult[7] === includedDescendants) {
+                if (cResult[8] === tracking) {
+                  let tmp22;
+                  let combined;
+                  if (cResult[9] === violation) {
+                    tmp22 = cResult[10];
+                  }
+                  if (null == tmp12) {
+                    let str17 = "not observed";
+                    if ("include" === tracking) {
+                      str17 = "waiting";
+                    }
+                    combined = str17;
+                  } else {
+                    const _HermesInternal3 = HermesInternal;
+                    combined = "+" + tmp12 + "ms";
+                  }
+                  let tmp30 = tmp22;
+                  if (!tmp8) {
+                    let str18 = "INVALID";
+                    if (null == violation) {
+                      let str19 = "MIXED";
+                      if (!(tmp15 && "mixed" === descendantTracking)) {
+                        let tmp31 = "BOUNDARY";
+                        if ("include" === tracking) {
+                          tmp31 = null;
+                        }
+                        str19 = tmp31;
+                      }
+                      str18 = str19;
+                    }
+                    tmp30 = str18;
+                  }
+                  let str21 = "";
+                  if ("component" === kind && syncExternalStore.spanComponent === name) {
+                    str21 = " \u00B7 FREEZE NEXT";
+                  }
+                  let str22 = "";
+                  if (null != tmp30) {
+                    const _HermesInternal4 = HermesInternal;
+                    str22 = "" + tmp30 + " \u00B7 ";
+                  }
+                  if (!tmp8) {
+                    let str24;
+                    let tmp43;
+                    if ("include" !== tracking) {
+                      str24 = "";
+                    }
+                    let str26 = "";
+                    if (tmp15) {
+                      let str27 = " \u25B8";
+                      if (tmp8) {
+                        str27 = " \u25BE";
+                      }
+                      str26 = str27;
+                    }
+                    const _HermesInternal6 = HermesInternal;
+                    const combined1 = "" + str22 + name + str24 + str21 + str26;
+                    let str30 = "text-overlay-light";
+                    if (null == violation) {
+                      str30 = "text-overlay-light";
+                      if ("include" !== tracking) {
+                        let str31 = "text-default";
+                        if (tmp15 && "mixed" === descendantTracking) {
+                          str31 = "text-feedback-info";
+                        }
+                        str30 = str31;
+                      }
+                    }
+                    let result = hierarchyDepth * navTTISurface(587).space.PX_4;
+                    const tmp41 = navTTISurface;
+                    if (cResult[11] !== result) {
+                      const rect = { top: result, right: result, bottom: result, left: result };
+                      cResult[11] = result;
+                      cResult[12] = rect;
+                      tmp43 = rect;
+                    } else {
+                      tmp43 = cResult[12];
+                    }
+                    if (cResult[13] === (tmp17 && !tmp14)) {
+                      if (cResult[14] === tmp15) {
+                        if (cResult[15] === ("component" === kind && syncExternalStore.spanComponent === name)) {
+                          if (cResult[16] === name) {
+                            let violationOutline;
+                            if (null != violation) {
+                              violationOutline = tmp4.violationOutline;
+                            } else {
+                              violationOutline = tmp17 ? tmp4.includedOutline : tmp4.excludedOutline;
+                            }
+                            let mixedOutline;
+                            if (null == violation) {
+                              if (tmp15 && "mixed" === descendantTracking) {
+                                mixedOutline = tmp4.mixedOutline;
+                              }
+                            }
+                            if (cResult[19] === tmp43) {
+                              if (cResult[20] === tmp4.outline) {
+                                if (cResult[21] === violationOutline) {
+                                  let tmp46;
+                                  let includedBadge;
+                                  if (cResult[22] === mixedOutline) {
+                                    tmp46 = cResult[23];
+                                  }
+                                  let expandedBadge;
+                                  if (tmp8) {
+                                    expandedBadge = tmp4.expandedBadge;
+                                  }
+                                  if (null != violation) {
+                                    includedBadge = tmp4.violationBadge;
+                                  } else if ("include" === tracking) {
+                                    includedBadge = tmp4.includedBadge;
+                                  } else {
+                                    includedBadge = tmp16 ? tmp4.mixedBadge : tmp4.excludedBadge;
+                                  }
+                                  let armedBadge;
+                                  if ("component" === kind && syncExternalStore.spanComponent === name) {
+                                    armedBadge = tmp4.armedBadge;
+                                  }
+                                  if (cResult[24] === tmp4.badge) {
+                                    if (cResult[25] === armedBadge) {
+                                      if (cResult[26] === expandedBadge) {
+                                        let tmp49;
+                                        if (cResult[27] === includedBadge) {
+                                          tmp49 = cResult[28];
+                                        }
+                                        let str32 = "none";
+                                        if (tmp15 || tmp17 && !tmp14) {
+                                          str32 = "auto";
+                                        }
+                                        if (cResult[29] === tmp8) {
+                                          let tmp51;
+                                          let combined2;
+                                          let tmp58;
+                                          if (cResult[30] === tmp15) {
+                                            tmp51 = cResult[31];
+                                          }
+                                          if (tmp15 || tmp17 && !tmp14) {
+                                            const _HermesInternal7 = HermesInternal;
+                                            combined2 = "" + tmp22 + " \u00B7 " + name + " \u00B7 " + combined + str21;
+                                          }
+                                          if (tmp15) {
+                                            let str39 = "Show Navigation TTI region details";
+                                            if (tmp8) {
+                                              str39 = "Collapse Navigation TTI region details";
+                                            }
+                                            tmp58 = str39;
+                                          } else if (tmp17 && !tmp14) {
+                                            let str38 = "Freeze after this component paints on the next navigation";
+                                            if ("component" === kind && syncExternalStore.spanComponent === name) {
+                                              str38 = "Disarm the one-shot freeze for this component";
+                                            }
+                                            tmp58 = str38;
+                                          }
+                                          let num32 = 1;
+                                          if (tmp8) {
+                                            num32 = 3;
+                                          }
+                                          if (cResult[32] === combined1) {
+                                            if (cResult[33] === tmp4.badgeText) {
+                                              if (cResult[34] === num32) {
+                                                let tmp59;
+                                                if (cResult[35] === str30) {
+                                                  tmp59 = cResult[36];
+                                                }
+                                                if (cResult[37] === (tmp15 || tmp17 && !tmp14)) {
+                                                  if (cResult[38] === tmp49) {
+                                                    if (cResult[39] === str32) {
+                                                      if (cResult[40] === !(tmp15 || tmp17 && !tmp14)) {
+                                                        if (cResult[41] === tmp50) {
+                                                          if (cResult[42] === str33) {
+                                                            if (cResult[43] === tmp51) {
+                                                              if (cResult[44] === combined2) {
+                                                                if (cResult[45] === tmp58) {
+                                                                  let tmp63;
+                                                                  if (cResult[46] === tmp59) {
+                                                                    tmp63 = cResult[47];
+                                                                  }
+                                                                  if (cResult[48] === syncExternalStore) {
+                                                                    if (cResult[49] === hierarchyDepth) {
+                                                                      let tmp67;
+                                                                      if (cResult[50] === navTTISurface) {
+                                                                        tmp67 = cResult[51];
+                                                                      }
+                                                                      if (cResult[52] === tmp63) {
+                                                                        if (cResult[53] === tmp67) {
+                                                                          let tmp71;
+                                                                          if (cResult[54] === tmp46) {
+                                                                            tmp71 = cResult[55];
+                                                                          }
+                                                                          return tmp71;
+                                                                        }
+                                                                      }
+                                                                      let obj3 = { style: tmp46, pointerEvents: "box-none", accessible: false, children: items };
+                                                                      items = [tmp63, tmp67];
+                                                                      const tmp74 = closure_8(closure_6, obj3);
+                                                                      cResult[52] = tmp63;
+                                                                      cResult[53] = tmp67;
+                                                                      cResult[54] = tmp46;
+                                                                      cResult[55] = tmp74;
+                                                                      tmp71 = tmp74;
+                                                                    }
+                                                                  }
+                                                                  let tmp68 = null;
+                                                                  if (0 === hierarchyDepth) {
+                                                                    let obj4 = { target: syncExternalStore, surface: navTTISurface };
+                                                                    tmp68 = closure_7(closure_13, obj4);
+                                                                  }
+                                                                  cResult[48] = syncExternalStore;
+                                                                  cResult[49] = hierarchyDepth;
+                                                                  cResult[50] = navTTISurface;
+                                                                  cResult[51] = tmp68;
+                                                                  tmp67 = tmp68;
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                                const obj5 = { style: tmp49, pointerEvents: str32, disabled: !(tmp15 || tmp17 && !tmp14), hitSlop: tmp41(587).space.PX_12, onPress: tmp50, accessible: tmp15 || tmp17 && !tmp14, accessibilityRole: str33, accessibilityState: tmp51, accessibilityLabel: combined2, accessibilityHint: tmp58, children: tmp59 };
+                                                const tmp66 = closure_7(closure_5, obj5);
+                                                cResult[37] = tmp15 || tmp17 && !tmp14;
+                                                cResult[38] = tmp49;
+                                                cResult[39] = str32;
+                                                cResult[40] = !(tmp15 || tmp17 && !tmp14);
+                                                cResult[41] = tmp50;
+                                                cResult[42] = str33;
+                                                cResult[43] = tmp51;
+                                                cResult[44] = combined2;
+                                                cResult[45] = tmp58;
+                                                cResult[46] = tmp59;
+                                                cResult[47] = tmp66;
+                                                tmp63 = tmp66;
+                                              }
+                                            }
+                                          }
+                                          const obj6 = { variant: "text-xs/bold", color: str30, style: tmp4.badgeText, lineClamp: num32, accessible: false, children: combined1 };
+                                          const tmp61 = closure_7(tmp(4886).Text, obj6);
+                                          cResult[32] = combined1;
+                                          cResult[33] = tmp4.badgeText;
+                                          cResult[34] = num32;
+                                          cResult[35] = str30;
+                                          cResult[36] = tmp61;
+                                          tmp59 = tmp61;
+                                        }
+                                        let tmp52;
+                                        if (tmp15) {
+                                          tmp52 = { expanded: tmp8 };
+                                          const obj7 = { expanded: tmp8 };
+                                        }
+                                        cResult[29] = tmp8;
+                                        cResult[30] = tmp15;
+                                        cResult[31] = tmp52;
+                                        tmp51 = tmp52;
+                                      }
+                                    }
+                                  }
+                                  const items1 = [tmp4.badge, expandedBadge, includedBadge, armedBadge];
+                                  cResult[24] = tmp4.badge;
+                                  cResult[25] = armedBadge;
+                                  cResult[26] = expandedBadge;
+                                  cResult[27] = includedBadge;
+                                  cResult[28] = items1;
+                                  tmp49 = items1;
+                                }
+                              }
+                            }
+                            const items2 = [tmp4.outline, tmp43, violationOutline, mixedOutline];
+                            cResult[19] = tmp43;
+                            cResult[20] = tmp4.outline;
+                            cResult[21] = violationOutline;
+                            cResult[22] = mixedOutline;
+                            cResult[23] = items2;
+                            tmp46 = items2;
+                          }
+                        }
+                      }
+                    }
+                    const fn = function q() {
+                      let navigationKey;
+                      const tmp = closure_3;
+                      if (tmp) {
+                        dependencyMap((arg0) => !arg0);
+                      } else {
+                        const tmp2 = closure_5;
+                        if (tmp2) {
+                          const obj4 = NavigationTTIDebugFreeze;
+                          const result = obj4.disarmNavigationTTIDebugFreeze();
+                        } else {
+                          const tmp3 = closure_4;
+                          if (tmp3) {
+                            let activeTraceId = null;
+                            const obj = { kind: "component", spanComponent: name };
+                            const armNavigationTTIDebugFreeze = NavigationTTIDebugFreeze.armNavigationTTIDebugFreeze;
+                            NavigationTTIDebugFreeze;
+                            if (null != navTTISurface) {
+                              const obj2 = NavigationSpanTrackerDefault;
+                              activeTraceId = obj2.getActiveTraceId(tmp8.definition, tmp8.navigationKey);
+                            }
+                            const obj3 = { armedDuringTraceId: activeTraceId, destinationKey: navigationKey };
+                            navigationKey = undefined;
+                            if (navTTISurface != null) {
+                              navigationKey = tmp8.navigationKey;
+                            }
+                            if (navigationKey == null) {
+                              navigationKey = null;
+                            }
+                            const result1 = armNavigationTTIDebugFreeze(obj, obj3);
+                          }
+                        }
+                      }
+                    };
+                    cResult[13] = tmp17 && !tmp14;
+                    cResult[14] = tmp15;
+                    cResult[15] = "component" === kind && syncExternalStore.spanComponent === name;
+                    cResult[16] = name;
+                    cResult[17] = navTTISurface;
+                    cResult[18] = fn;
+                  }
+                  const _HermesInternal5 = HermesInternal;
+                  str24 = " \u00B7 " + combined;
+                }
+              }
+            }
           }
         }
-        let str3 = end_ms;
-      } else {
-        str3 = NavigationTTIRegionDebugState.getNavigationTTIRegionDebugMeasurement(activeTraceId, navTTISurface);
-      }
-      if (str3 == null) {
-        str3 = "";
-      }
-      const _HermesInternal = HermesInternal;
-      str = "" + activeTraceId + ":" + str3;
-    }
-    return str;
-  }, items);
-  const syncExternalStore1 = noop.useSyncExternalStore(callback, callback1, callback1);
-  const lastIndexOfResult = syncExternalStore1.lastIndexOf(":");
-  let NumberResult = null;
-  if (-1 !== lastIndexOfResult) {
-    NumberResult = null;
-    if ("" !== syncExternalStore1.slice(lastIndexOfResult + 1)) {
-      const _Number = Number;
-      NumberResult = Number(syncExternalStore1.slice(lastIndexOfResult + 1));
-    }
-  }
-  let tmp15 = "exclude" === tracking;
-  let tmp16 = tmp15;
-  if (tmp15) {
-    tmp16 = "mixed" === descendantTracking;
-  }
-  if (!tmp15) {
-    tmp15 = tmp14;
-  }
-  _slicedToArray = tmp15;
-  let tmp18 = tmp17;
-  if ("include" === tracking) {
-    tmp18 = !tmp14;
-  }
-  noop = tmp18;
-  let kind;
-  if (syncExternalStore != null) {
-    kind = syncExternalStore.kind;
-  }
-  closure_5 = tmp20;
-  let tmp21 = tmp15;
-  if (!tmp15) {
-    tmp21 = tmp18;
-  }
-  if (null != violation) {
-    const _HermesInternal2 = HermesInternal;
-    let str3 = "INVALID \u00B7 " + violation;
-  } else {
-    str3 = "MEASURED";
-    if (!tmp17) {
-      let str4 = "TRACKED";
-      if ("included" !== descendantTracking) {
-        let str6 = "MIXED";
-        if ("excluded" === descendantTracking) {
-          str6 = "IGNORED";
+        if (null != violation) {
+          const _HermesInternal2 = HermesInternal;
+          str5 = "INVALID \u00B7 " + violation;
+        } else {
+          str5 = "MEASURED";
+          if ("include" !== tracking) {
+            let str6 = "TRACKED";
+            if ("included" !== descendantTracking) {
+              let str8 = "MIXED";
+              if ("excluded" === descendantTracking) {
+                str8 = "IGNORED";
+              }
+              str6 = str8;
+            }
+            const _HermesInternal = HermesInternal;
+            str5 = "BOUNDARY ONLY \u00B7 CHILDREN " + str6 + " \u00B7 " + includedDescendants + " tracked / " + excludedDescendants + " ignored below";
+          }
         }
-        str4 = str6;
+        cResult[4] = descendantTracking;
+        cResult[5] = excludedDescendants;
+        cResult[6] = null != violation;
+        cResult[7] = includedDescendants;
+        cResult[8] = tracking;
+        cResult[9] = violation;
+        cResult[10] = str5;
+        tmp22 = str5;
       }
-      let _HermesInternal = HermesInternal;
-      str3 = "BOUNDARY ONLY \u00B7 CHILDREN " + str4 + " \u00B7 " + includedDescendants + " tracked / " + excludedDescendants + " ignored below";
     }
-  }
-  if (null == NumberResult) {
-    let str15 = "not observed";
-    if (tmp17) {
-      str15 = "waiting";
-    }
-    let combined = str15;
+    const obj8 = { name, regionId, tracking };
+    cResult[0] = name;
+    cResult[1] = regionId;
+    cResult[2] = tracking;
+    cResult[3] = obj8;
+    tmp10 = obj8;
   } else {
-    const _HermesInternal3 = HermesInternal;
-    combined = "+" + NumberResult + "ms";
+    throw new TypeError("Trying to call a non-function");
   }
-  let tmp29 = str3;
-  if (!tmp6) {
-    let str16 = "INVALID";
-    if (!tmp14) {
-      let str17 = "MIXED";
-      if (!tmp16) {
-        let tmp30 = "BOUNDARY";
-        if (tmp17) {
-          tmp30 = null;
-        }
-        str17 = tmp30;
-      }
-      str16 = str17;
+}) : ((name) => {
+  let Text;
+  let _undefined;
+  let c2;
+  let closure_3;
+  let closure_4;
+  let combined2;
+  let descendantTracking;
+  let excludedDescendants;
+  let fn;
+  let hierarchyDepth;
+  let includedDescendants;
+  let items2;
+  let num;
+  let obj6;
+  let str32;
+  let str33;
+  let tmp47;
+  let tmp53;
+  let tmp7;
+  let tracking;
+  let violation;
+  name = name.name;
+  ({ tracking, descendantTracking, includedDescendants, excludedDescendants, hierarchyDepth, violation } = name);
+  dependencyMap = undefined;
+  _slicedToArray = undefined;
+  react = undefined;
+  let closure_5;
+  const regionId = name.regionId;
+  let tmp = closure_10();
+  let tmp2 = name;
+  let tmp3 = dependencyMap;
+  let obj = name(16477);
+  const navTTISurface = obj.useNavTTISurface();
+  const tmp6 = _slicedToArray(react.useState(false), 2);
+  [tmp7, c2] = tmp6;
+  const tmp5 = react;
+  if (typeof f74074 === "function") {
+    let str5;
+    let combined;
+    const useSyncExternalStore = tmp5.useSyncExternalStore;
+    const subscribeNavigationTTIDebugFreezeTarget = tmp2(16481).subscribeNavigationTTIDebugFreezeTarget;
+    const syncExternalStore = useSyncExternalStore(subscribeNavigationTTIDebugFreezeTarget, tmp2(16481).getNavigationTTIDebugFreezeTarget, tmp2(16481).getNavigationTTIDebugFreezeTarget);
+    let obj2 = { name, regionId, tracking };
+    const tmp10 = closure_11(obj2);
+    let tmp13 = "exclude" === tracking;
+    if (!tmp13) {
+      tmp13 = tmp12;
     }
-    tmp29 = str16;
-  }
-  let str18 = "";
-  if ("component" === kind && syncExternalStore.spanComponent === name) {
-    str18 = " \u00B7 FREEZE NEXT";
-  }
-  let str19 = "";
-  if (null != tmp29) {
-    const _HermesInternal4 = HermesInternal;
-    str19 = "" + tmp29 + " \u00B7 ";
-  }
-  if (!tmp6) {
-    if (!tmp17) {
-      let str21 = "";
+    _slicedToArray = tmp13;
+    react = tmp16;
+    let kind;
+    if (syncExternalStore != null) {
+      kind = syncExternalStore.kind;
+    }
+    closure_5 = tmp18;
+    if (null != violation) {
+      const _HermesInternal2 = HermesInternal;
+      str5 = "INVALID \u00B7 " + violation;
+    } else {
+      str5 = "MEASURED";
+      if ("include" !== tracking) {
+        let str6 = "TRACKED";
+        if ("included" !== descendantTracking) {
+          let str8 = "MIXED";
+          if ("excluded" === descendantTracking) {
+            str8 = "IGNORED";
+          }
+          str6 = str8;
+        }
+        const _HermesInternal = HermesInternal;
+        str5 = "BOUNDARY ONLY \u00B7 CHILDREN " + str6 + " \u00B7 " + includedDescendants + " tracked / " + excludedDescendants + " ignored below";
+      }
+    }
+    if (null == tmp10) {
+      let str17 = "not observed";
+      if ("include" === tracking) {
+        str17 = "waiting";
+      }
+      combined = str17;
+    } else {
+      const _HermesInternal3 = HermesInternal;
+      combined = "+" + tmp10 + "ms";
+    }
+    let tmp27 = str5;
+    if (!tmp7) {
+      let str18 = "INVALID";
+      if (null == violation) {
+        let str19 = "MIXED";
+        if (!(tmp13 && "mixed" === descendantTracking)) {
+          let tmp28 = "BOUNDARY";
+          if ("include" === tracking) {
+            tmp28 = null;
+          }
+          str19 = tmp28;
+        }
+        str18 = str19;
+      }
+      tmp27 = str18;
+    }
+    let str21 = "";
+    if ("component" === kind && syncExternalStore.spanComponent === name) {
+      str21 = " \u00B7 FREEZE NEXT";
     }
     let str22 = "";
-    if (tmp15) {
-      let str23 = " \u25B8";
-      if (tmp6) {
-        str23 = " \u25BE";
-      }
-      str22 = str23;
+    if (null != tmp27) {
+      const _HermesInternal4 = HermesInternal;
+      str22 = "" + tmp27 + " \u00B7 ";
     }
-    const _HermesInternal5 = HermesInternal;
-    let str26 = "text-overlay-light";
-    const combined1 = "" + str19 + name + str21 + str18 + str22;
-    if (!tmp14) {
-      str26 = "text-overlay-light";
-      if (!tmp17) {
-        let str27 = "text-default";
-        if (tmp16) {
-          str27 = "text-feedback-info";
+    if (!tmp7) {
+      let str24;
+      let violationOutline;
+      let includedBadge;
+      if ("include" !== tracking) {
+        str24 = "";
+      }
+      let str26 = "";
+      if (tmp13) {
+        let str27 = " \u25B8";
+        if (tmp7) {
+          str27 = " \u25BE";
         }
         str26 = str27;
       }
-    }
-    let result = hierarchyDepth * navTTISurface(576).space.PX_4;
-    const items1 = [tmp.outline, , , ];
-    const rect = { top: result, right: result, bottom: result, left: result };
-    items1[1] = rect;
-    if (tmp14) {
-      let violationOutline = tmp.violationOutline;
-    } else {
-      violationOutline = tmp17 ? tmp.includedOutline : tmp.excludedOutline;
-    }
-    items1[2] = violationOutline;
-    let mixedOutline;
-    if (!tmp14) {
-      if (tmp16) {
-        mixedOutline = tmp.mixedOutline;
-      }
-    }
-    let obj3 = { style: null, pointerEvents: "box-none", accessible: false, children: null };
-    items1[3] = mixedOutline;
-    obj3.style = items1;
-    const items2 = [tmp.badge, , , ];
-    let expandedBadge;
-    if (tmp6) {
-      expandedBadge = tmp.expandedBadge;
-    }
-    items2[1] = expandedBadge;
-    if (tmp14) {
-      let includedBadge = tmp.violationBadge;
-    } else if (tmp17) {
-      includedBadge = tmp.includedBadge;
-    } else {
-      includedBadge = tmp16 ? tmp.mixedBadge : tmp.excludedBadge;
-    }
-    items2[2] = includedBadge;
-    let armedBadge;
-    if (tmp20) {
-      armedBadge = tmp.armedBadge;
-    }
-    let obj4 = { style: null, pointerEvents: null, disabled: null, hitSlop: null, onPress: null, accessible: null, accessibilityRole: null, accessibilityState: null, accessibilityLabel: null, accessibilityHint: null, children: null };
-    items2[3] = armedBadge;
-    obj4.style = items2;
-    let str28 = "none";
-    if (tmp21) {
-      str28 = "auto";
-    }
-    obj4.pointerEvents = str28;
-    obj4.disabled = !tmp21;
-    obj4.hitSlop = navTTISurface(576).space.PX_12;
-    let fn;
-    if (tmp21) {
-      fn = () => {
-        if (closure_3) {
-          _undefined((arg0) => !arg0);
-        } else if (closure_5) {
-          const result = NavigationTTIDebugFreeze.disarmNavigationTTIDebugFreeze();
-        } else if (closure_4) {
-          const obj2 = { kind: "component", spanComponent: name };
-          let activeTraceId = null;
-          if (null != navTTISurface) {
-            activeTraceId = NavigationSpanTrackerDefault.getActiveTraceId(tmp6.definition, tmp6.navigationKey);
-          }
-          const obj4 = { armedDuringTraceId: activeTraceId, destinationKey: null };
-          let navigationKey;
-          if (navTTISurface != null) {
-            navigationKey = tmp6.navigationKey;
-          }
-          if (navigationKey == null) {
-            navigationKey = null;
-          }
-          obj4.destinationKey = navigationKey;
-          const result1 = NavigationTTIDebugFreeze.armNavigationTTIDebugFreeze(obj2, obj4);
-        }
-      };
-    }
-    obj4.onPress = fn;
-    obj4.accessible = tmp21;
-    let str29;
-    if (tmp21) {
-      str29 = "button";
-    }
-    obj4.accessibilityRole = str29;
-    let tmp48;
-    if (tmp15) {
-      let obj5 = { expanded: tmp6 };
-      tmp48 = obj5;
-    }
-    obj4.accessibilityState = tmp48;
-    let combined2;
-    if (tmp21) {
       const _HermesInternal6 = HermesInternal;
-      combined2 = "" + str3 + " \u00B7 " + name + " \u00B7 " + combined + str18;
-    }
-    obj4.accessibilityLabel = combined2;
-    if (tmp15) {
-      let str35 = "Show Navigation TTI region details";
-      if (tmp6) {
-        str35 = "Collapse Navigation TTI region details";
+      let str30 = "text-overlay-light";
+      const combined1 = "" + str22 + name + str24 + str21 + str26;
+      if (null == violation) {
+        str30 = "text-overlay-light";
+        if ("include" !== tracking) {
+          let str31 = "text-default";
+          if (tmp13 && "mixed" === descendantTracking) {
+            str31 = "text-feedback-info";
+          }
+          str30 = str31;
+        }
       }
-      let tmp54 = str35;
-    } else if (tmp18) {
-      let str34 = "Freeze after this component paints on the next navigation";
-      if (tmp20) {
-        str34 = "Disarm the one-shot freeze for this component";
+      let result = hierarchyDepth * navTTISurface(587).space.PX_4;
+      const items = [tmp.outline, , , ];
+      const rect = { top: result, right: result, bottom: result, left: result };
+      items[1] = rect;
+      const tmp38 = navTTISurface;
+      const tmp40 = closure_8;
+      const tmp41 = closure_6;
+      if (null != violation) {
+        violationOutline = tmp.violationOutline;
+      } else {
+        violationOutline = tmp15 ? tmp.includedOutline : tmp.excludedOutline;
       }
-      tmp54 = str34;
+      items[2] = violationOutline;
+      let mixedOutline;
+      if (null == violation) {
+        if (tmp13 && "mixed" === descendantTracking) {
+          mixedOutline = tmp.mixedOutline;
+        }
+      }
+      let obj3 = { style: items, pointerEvents: "box-none", accessible: false, children: items2 };
+      items[3] = mixedOutline;
+      const items1 = [tmp.badge, , , ];
+      let expandedBadge;
+      const tmp44 = closure_5;
+      if (tmp7) {
+        expandedBadge = tmp.expandedBadge;
+      }
+      items1[1] = expandedBadge;
+      if (null != violation) {
+        includedBadge = tmp.violationBadge;
+      } else if ("include" === tracking) {
+        includedBadge = tmp.includedBadge;
+      } else {
+        includedBadge = tmp14 ? tmp.mixedBadge : tmp.excludedBadge;
+      }
+      items1[2] = includedBadge;
+      let armedBadge;
+      if ("component" === kind && syncExternalStore.spanComponent === name) {
+        armedBadge = tmp.armedBadge;
+      }
+      let obj4 = { style: items1, pointerEvents: str32, disabled: !tmp19, hitSlop: tmp38(587).space.PX_12, onPress: fn, accessible: tmp19, accessibilityRole: str33, accessibilityState: tmp47, accessibilityLabel: combined2, accessibilityHint: tmp53, children: closure_7(Text, obj6) };
+      items1[3] = armedBadge;
+      str32 = "none";
+      if (tmp13 || "include" === tracking && null == violation) {
+        str32 = "auto";
+      }
+      fn = undefined;
+      if (tmp13 || "include" === tracking && null == violation) {
+        fn = () => {
+          let navigationKey;
+          const tmp = closure_3;
+          if (tmp) {
+            _undefined((arg0) => !arg0);
+          } else {
+            const tmp2 = closure_5;
+            if (tmp2) {
+              const obj4 = NavigationTTIDebugFreeze;
+              const result = obj4.disarmNavigationTTIDebugFreeze();
+            } else {
+              const tmp3 = closure_4;
+              if (tmp3) {
+                let activeTraceId = null;
+                const obj = { kind: "component", spanComponent: name };
+                const armNavigationTTIDebugFreeze = NavigationTTIDebugFreeze.armNavigationTTIDebugFreeze;
+                NavigationTTIDebugFreeze;
+                if (null != navTTISurface) {
+                  const obj2 = NavigationSpanTrackerDefault;
+                  activeTraceId = obj2.getActiveTraceId(tmp8.definition, tmp8.navigationKey);
+                }
+                const obj3 = { armedDuringTraceId: activeTraceId, destinationKey: navigationKey };
+                navigationKey = undefined;
+                if (navTTISurface != null) {
+                  navigationKey = tmp8.navigationKey;
+                }
+                if (navigationKey == null) {
+                  navigationKey = null;
+                }
+                const result1 = armNavigationTTIDebugFreeze(obj, obj3);
+              }
+            }
+          }
+        };
+      }
+      str33 = undefined;
+      if (tmp13 || "include" === tracking && null == violation) {
+        str33 = "button";
+      }
+      tmp47 = undefined;
+      if (tmp13) {
+        tmp47 = { expanded: tmp7 };
+        const obj5 = { expanded: tmp7 };
+      }
+      combined2 = undefined;
+      if (tmp13 || "include" === tracking && null == violation) {
+        const _HermesInternal7 = HermesInternal;
+        combined2 = "" + str5 + " \u00B7 " + name + " \u00B7 " + combined + str21;
+      }
+      if (tmp13) {
+        let str39 = "Show Navigation TTI region details";
+        if (tmp7) {
+          str39 = "Collapse Navigation TTI region details";
+        }
+        tmp53 = str39;
+      } else if ("include" === tracking && null == violation) {
+        let str38 = "Freeze after this component paints on the next navigation";
+        if ("component" === kind && syncExternalStore.spanComponent === name) {
+          str38 = "Disarm the one-shot freeze for this component";
+        }
+        tmp53 = str38;
+      }
+      obj6 = { variant: "text-xs/bold", color: str30, style: tmp.badgeText, lineClamp: num, accessible: false, children: combined1 };
+      num = 1;
+      Text = tmp2(4886).Text;
+      if (tmp7) {
+        num = 3;
+      }
+      items2 = [closure_7(tmp44, obj4), ];
+      let tmp43Result = null;
+      if (0 === hierarchyDepth) {
+        const obj7 = { target: syncExternalStore, surface: navTTISurface };
+        tmp43Result = tmp43(closure_13, obj7);
+      }
+      items2[1] = tmp43Result;
+      return tmp40(tmp41, obj3);
     }
-    obj4.accessibilityHint = tmp54;
-    const obj6 = { variant: "text-xs/bold", color: str26, style: tmp.badgeText, lineClamp: null, accessible: false, children: null };
-    let num2 = 1;
-    if (tmp6) {
-      num2 = 3;
-    }
-    obj6.lineClamp = num2;
-    obj6.children = combined1;
-    obj4.children = closure_7(tmp2(4841).Text, obj6);
-    const items3 = [closure_7(closure_5, obj4), ];
-    let tmp44Result = null;
-    if (0 === hierarchyDepth) {
-      const obj7 = { target: syncExternalStore, surface: navTTISurface };
-      tmp44Result = tmp44(NavigationTTIDebugFreezeControl, obj7);
-    }
-    items3[1] = tmp44Result;
-    obj3.children = items3;
-    return closure_8(closure_6, obj3);
+    const _HermesInternal5 = HermesInternal;
+    str24 = " \u00B7 " + combined;
+  } else {
+    throw new TypeError("Trying to call a non-function");
   }
-  str21 = " \u00B7 " + combined;
-};
+});
+let result1 = size.fileFinishedImporting("modules/tti_analytics/native/navigation/debug/NavigationTTIRegionDebugOverlay.tsx");
+
+export const NavigationTTIRegionDebugOverlay = tmp7;

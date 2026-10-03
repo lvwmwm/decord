@@ -1,10 +1,10 @@
-// Module ID: 2061
-// Function ID: 2062
+// Module ID: 2069
+// Function ID: 2070
 // Name: SetUtils
 // Dependencies: [2]
 // Exports: areSetsEqual, toSetInplace
 
-// Module 2061 (SetUtils)
+// Module 2069 (SetUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/utils/SetUtils.tsx");
@@ -31,12 +31,16 @@ export const areSetsEqual = function areSetsEqual(set, set2) {
 export const toSetInplace = function toSetInplace(features) {
   if (null == features) {
     const _Set3 = Set;
-    let set = new Set();
+    const self3 = this;
+    const self4 = this;
+    set = new Set();
   } else {
     const _Set = Set;
     set = features;
     if (!(features instanceof Set)) {
       const _Set2 = Set;
+      const self = this;
+      const self2 = this;
       set = new Set(features);
     }
   }

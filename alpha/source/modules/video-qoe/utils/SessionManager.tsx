@@ -1,19 +1,19 @@
-// Module ID: 14881
-// Function ID: 14882
+// Module ID: 14938
+// Function ID: 14939
 // Name: SessionManager
 // Dependencies: [2]
 
-// Module 14881 (SessionManager)
+// Module 14938 (SessionManager)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/video-qoe/utils/SessionManager.tsx");
-const prototype = function SessionManager() {
-  return Object.create(new.target.prototype);
-}.prototype;
-prototype["generateSessionId"] = function generateSessionId() {
-  const timestamp = Date.now();
-  const str = Math.random();
-  return "discord-video-" + timestamp + "-" + Math.random().toString(36).substr(2, 9);
-};
+class SessionManager {
+  static generateSessionId() {
+    const timestamp = Date.now();
+    const str = Math.random();
+    const str2 = str.toString(36);
+    return "discord-video-" + timestamp + "-" + str2.substr(2, 9);
+  }
+}
 
-export const SessionManager = prototype;
+export { SessionManager };

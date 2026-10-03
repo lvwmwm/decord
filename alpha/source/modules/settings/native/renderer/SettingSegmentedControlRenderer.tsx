@@ -1,101 +1,233 @@
-// Module ID: 14474
-// Function ID: 14475
+// Module ID: 14509
+// Function ID: 14510
 // Name: SettingSegmentedControlRenderer
-// Dependencies: [32, 19, 17, 14462, 11216, 21, 4845, 576, 14465, 14351, 38, 14464, 9276, 9277, 10974, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 14497, 11130, 21, 4890, 587, 558, 576, 14500, 14405, 38, 14499, 9282, 9283, 10974, 2]
 
-// Module 14474 (SettingSegmentedControlRenderer)
-import nativeDefault from "native" /* 576 */;
-import SettingTreeManagerDefault from "SettingTreeManager" /* 14465 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14462 */;
+// Module 14509 (SettingSegmentedControlRenderer)
+import react_native from "react-native" /* 17 */;
+import _modDef38 from "module_38" /* 38 */;
+import nativeDefault from "native" /* 587 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11130 */;
+import SettingsRendererConfig from "SettingsRendererConfig" /* 14405 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 14499 */;
+import SettingTreeManagerDefault from "SettingTreeManager" /* 14500 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14497 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap, node;
 
-const require = fn;
-const View = fn(17).View;
-const NodeType = fn(11216).NodeType;
-const jsxProd = fn(21);
-({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4845);
-let obj2 = { controlContainer: { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8 }, pageContainer: { flex: 1 } };
-let closure_11 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/settings/native/renderer/SettingSegmentedControlRenderer.tsx");
-
-export default function SettingSegmentedControl(node) {
+let c10;
+let c9;
+let metroImportAll;
+let obj2;
+let _slicedToArray = _slicedToArray_mod;
+const View = react_native.View;
+const NodeType = SettingRendererConstants.NodeType;
+({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
+let obj = { controlContainer: obj2, pageContainer: { flex: 1 } };
+obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8 };
+let closure_11 = createStyles.createStyles(obj);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
+  let defaultIndex;
+  let tmp11;
+  let tmp5;
+  let obj = defaultIndex(576);
+  const cResult = obj.c(23);
+  node = node.node;
+  defaultIndex = node.defaultIndex;
+  const settings = node.settings;
+  let tmp2 = closure_11();
+  let obj2 = react;
+  [tmp5, dependencyMap] = _slicedToArray(react.useState(0), 2);
+  const tmp3 = _slicedToArray;
+  const tmp4 = _slicedToArray(react.useState(0), 2);
+  if (cResult[0] === defaultIndex) {
+    let tmp6;
+    if (cResult[1] === settings) {
+      tmp6 = cResult[2];
+    }
+    const first = tmp3(obj2.useState(tmp6), 1)[0];
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      class O {
+        constructor(nativeEvent) {
+          dependencyMap(nativeEvent.nativeEvent.layout.width);
+        }
+      }
+      cResult[3] = O;
+      let tmp9 = O;
+    } else {
+      class O {
+        constructor(nativeEvent) {
+          dependencyMap(nativeEvent.nativeEvent.layout.width);
+        }
+      }
+    }
+    if (cResult[4] !== settings) {
+      class O {
+        constructor(nativeEvent) {
+          dependencyMap(nativeEvent.nativeEvent.layout.width);
+        }
+      }
+      _slicedToArray = tmp11;
+      const item = settings.forEach((id) => {
+        let component;
+        let obj2;
+        const tmp = SettingsRendererConfig.SETTING_RENDERER_CONFIG[id];
+        const tmp2 = _modDef38;
+        tmp2(tmp.type === NodeType.ROUTE, "Invalid setting type for segmented control: " + id);
+        const screen = tmp.screen;
+        const obj = { label: obj2.getSettingTitle(id), id, page: metroImportAll(component, {}) };
+        component = screen.getComponent();
+        const push = _slicedToArray.push;
+        obj2 = SettingRendererUtils;
+        push(obj);
+      });
+      cResult[4] = settings;
+      cResult[5] = tmp11;
+    } else {
+      class O {
+        constructor(nativeEvent) {
+          dependencyMap(nativeEvent.nativeEvent.layout.width);
+        }
+      }
+      _slicedToArray = tmp10;
+    }
+    if (cResult[6] === first) {
+      class O {
+        constructor(nativeEvent) {
+          dependencyMap(nativeEvent.nativeEvent.layout.width);
+        }
+      }
+    }
+    const obj3 = { items: tmp10, pageWidth: tmp5, defaultIndex: first };
+    cResult[6] = first;
+    cResult[7] = tmp10;
+    cResult[8] = tmp5;
+    cResult[9] = obj3;
+    class C {
+      constructor() {
+        const field = UserSettingSearchStore.getField("selected");
+        if (null != field) {
+          const index = settings.indexOf(field);
+          if (-1 !== index) {
+            return index;
+          } else {
+            const obj = SettingTreeManagerDefault;
+            const ancestors = obj.getAncestors(field);
+            for (const item10020 of ancestors) {
+              let index1 = settings.indexOf(item10020);
+              if (-1 !== index1) {
+                obj2.return();
+                return index1;
+              }
+            }
+          }
+        }
+        return defaultIndex;
+      }
+    }
+  }
+  class C {
+    constructor() {
+      const field = UserSettingSearchStore.getField("selected");
+      if (null != field) {
+        const index = settings.indexOf(field);
+        if (-1 !== index) {
+          return index;
+        } else {
+          const obj = SettingTreeManagerDefault;
+          const ancestors = obj.getAncestors(field);
+          for (const item10020 of ancestors) {
+            let index1 = settings.indexOf(item10020);
+            if (-1 !== index1) {
+              obj2.return();
+              return index1;
+            }
+          }
+        }
+      }
+      return defaultIndex;
+    }
+  }
+  cResult[0] = defaultIndex;
+  cResult[1] = settings;
+  cResult[2] = C;
+  tmp6 = C;
+}) : ((node) => {
+  let _undefined;
+  let c0;
+  let c2;
+  let items1;
+  let settings;
+  let tmp3;
+  let tmp5;
+  const f117022 = () => {
+    const field = UserSettingSearchStore.getField("selected");
+    if (null != field) {
+      const index = settings.indexOf(field);
+      if (-1 !== index) {
+        return index;
+      } else {
+        const obj = SettingTreeManagerDefault;
+        const ancestors = obj.getAncestors(field);
+        for (const item10020 of ancestors) {
+          let index1 = settings.indexOf(item10020);
+          if (-1 !== index1) {
+            obj2.return();
+            return index1;
+          }
+        }
+      }
+    }
+    return c0;
+  };
   _require = undefined;
   settings = undefined;
   dependencyMap = undefined;
   ({ defaultIndex: c0, settings } = node.node);
   let tmp = closure_11();
-  [tmp3, c2] = noop.useState(0);
-  let tmp2 = _slicedToArray(noop.useState(0), 2);
-  [tmp5, r10021] = noop.useState(() => {
-    const field = UserSettingSearchStore.getField("selected");
-    if (null != field) {
-      const index = settings.indexOf(field);
-      if (-1 !== index) {
-        return index;
-      } else {
-        const ancestors = SettingTreeManagerDefault.getAncestors(field);
-        for (const item10020 of ancestors) {
-          let index1 = settings.indexOf(item10020);
-          if (-1 !== index1) {
-            obj2.return();
-            return index1;
-          }
-        }
-      }
-    }
-    return c0;
-  });
+  let tmp2 = _slicedToArray(react.useState(0), 2);
+  [tmp3, c2] = tmp2;
+  [tmp5, r10021] = _slicedToArray(react.useState(f117022), 2);
   let items = [settings];
-  const callback = noop.useCallback((nativeEvent) => {
+  const tmp4 = _slicedToArray(react.useState(f117022), 2);
+  const callback = react.useCallback((nativeEvent) => {
     _undefined(nativeEvent.nativeEvent.layout.width);
   }, []);
-  const memo = noop.useMemo(() => {
+  const memo = react.useMemo(() => {
     const items = [];
     const item = settings.forEach((id) => {
-      const tmp = items(14351).SETTING_RENDERER_CONFIG[id];
-      settings(38)(tmp.type === constants.ROUTE, "Invalid setting type for segmented control: " + id);
+      let component;
+      let obj2;
+      const tmp = closure_2_0(_undefined[11]).SETTING_RENDERER_CONFIG[id];
+      const tmp2 = settings(_undefined[12]);
+      tmp2(tmp.type === constants.ROUTE, "Invalid setting type for segmented control: " + id);
       const screen = tmp.screen;
-      const obj = { label: null, id: null, page: null };
-      const component = screen.getComponent();
-      const tmp2 = settings(38);
-      obj.label = items(14464).getSettingTitle(id);
-      obj.id = id;
-      obj.page = closure_2_8(component, {});
-      items.push(obj);
+      const obj = { label: obj2.getSettingTitle(id), id, page: closure_2_8(component, {}) };
+      component = screen.getComponent();
+      const push = items.push;
+      obj2 = closure_2_0(_undefined[13]);
+      push(obj);
     });
     return items;
   }, items);
-  const tmp4 = _slicedToArray(noop.useState(() => {
-    const field = UserSettingSearchStore.getField("selected");
-    if (null != field) {
-      const index = settings.indexOf(field);
-      if (-1 !== index) {
-        return index;
-      } else {
-        const ancestors = SettingTreeManagerDefault.getAncestors(field);
-        for (const item10020 of ancestors) {
-          let index1 = settings.indexOf(item10020);
-          if (-1 !== index1) {
-            obj2.return();
-            return index1;
-          }
-        }
-      }
-    }
-    return c0;
-  }), 2);
-  const segmentedControlState = require("SegmentedControlState").useSegmentedControlState({ items: memo, pageWidth: tmp3, defaultIndex: tmp5 });
-  const obj2 = { children: null };
   let obj = require("SegmentedControlState");
-  const items1 = [closure_8(View, { style: tmp.controlContainer, onLayout: callback, children: closure_8(require("SegmentedControl").SegmentedControl, { state: segmentedControlState }) }), ];
+  const segmentedControlState = obj.useSegmentedControlState({ items: memo, pageWidth: tmp3, defaultIndex: tmp5 });
+  let obj2 = { children: items1 };
+  items1 = [, ];
   const obj3 = { style: tmp.controlContainer, onLayout: callback, children: closure_8(require("SegmentedControl").SegmentedControl, { state: segmentedControlState }) };
-  items1[1] = closure_8(View, { style: tmp.pageContainer, children: closure_8(require("SegmentedControlPages").SegmentedControlPages, { state: segmentedControlState }) });
-  obj2.children = items1;
+  items1[0] = closure_8(View, obj3);
+  const obj4 = { style: tmp.pageContainer, children: closure_8(require("SegmentedControlPages").SegmentedControlPages, { state: segmentedControlState }) };
+  items1[1] = closure_8(View, obj4);
   return closure_10(closure_9, obj2);
-};
+});
+const result = size.fileFinishedImporting("modules/settings/native/renderer/SettingSegmentedControlRenderer.tsx");
+
+export default tmp3;

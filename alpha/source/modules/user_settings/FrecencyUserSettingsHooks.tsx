@@ -1,29 +1,79 @@
-// Module ID: 10025
-// Function ID: 10026
+// Module ID: 10095
+// Function ID: 10096
 // Name: FrecencyUserSettingsHooks
-// Dependencies: [19, 1220, 2026, 504, 2]
-// Exports: useFrecencySettings
+// Dependencies: [19, 1231, 558, 576, 2033, 504, 2]
 
-// Module 10025 (FrecencyUserSettingsHooks)
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2026 */;
-import noop from "module_19" /* 19 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
+// Module 10095 (FrecencyUserSettingsHooks)
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2033 */;
+import react from "react" /* 19 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/FrecencyUserSettingsHooks.tsx");
+const require = globalThis.__r;
+let _require;
 
-export const useFrecencySettings = function useFrecencySettings(flag) {
-  if (flag === undefined) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let tmp5;
+  let tmp6;
+  let tmp8;
+  let tmp9;
+  let tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(5);
+  _require = tmp4;
+  if (cResult[0] !== (undefined === arg0 || arg0)) {
+    const fn = function n() {
+      const tmp = closure_0;
+      if (tmp) {
+        const FrecencyUserSettingsActionCreators = UserSettingsProtoActionCreators.FrecencyUserSettingsActionCreators;
+        const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
+      }
+    };
+    const items = [undefined === arg0 || arg0];
+    cResult[0] = undefined === arg0 || arg0;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp6 = items;
+    tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+    tmp6 = cResult[2];
+  }
+  const effect = react.useEffect(tmp5, tmp6);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [UserSettingsProtoStore];
+    const fn2 = function f() {
+      return UserSettingsProtoStore.frecencyWithoutFetchingLatest;
+    };
+    cResult[3] = items1;
+    cResult[4] = fn2;
+    tmp9 = fn2;
+    tmp8 = items1;
+  } else {
+    tmp8 = cResult[3];
+    tmp9 = cResult[4];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(tmp8, tmp9);
+}) : (() => {
+  let flag = arg0;
+  if (arg0 === undefined) {
     flag = true;
   }
   const items = [flag];
-  const effect = noop.useEffect(() => {
-    if (flag) {
+  const effect = react.useEffect(() => {
+    const tmp = flag;
+    if (tmp) {
       const FrecencyUserSettingsActionCreators = UserSettingsProtoActionCreators.FrecencyUserSettingsActionCreators;
       const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
     }
   }, items);
   const items1 = [UserSettingsProtoStore];
-  return flag(504).useStateFromStores(items1, () => UserSettingsProtoStore.frecencyWithoutFetchingLatest);
-};
+  const obj = flag(504);
+  return obj.useStateFromStores(items1, () => UserSettingsProtoStore.frecencyWithoutFetchingLatest);
+});
+const result = size.fileFinishedImporting("modules/user_settings/FrecencyUserSettingsHooks.tsx");
+
+export const useFrecencySettings = tmp2;

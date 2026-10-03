@@ -1,19 +1,21 @@
-// Module ID: 8694
-// Function ID: 8695
+// Module ID: 8706
+// Function ID: 8707
 // Name: getURLForApplication
-// Dependencies: [8510, 8508, 2]
+// Dependencies: [8515, 8513, 2]
 // Exports: default, getNonTestModeUrlForApplication, isUsingDevShelfActivityUrlOverride
 
-// Module 8694 (getURLForApplication)
-import TestModeStore from "TestModeStore" /* 8510 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 8508 */;
+// Module 8706 (getURLForApplication)
+import TestModeStore from "TestModeStore" /* 8515 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 8513 */;
+import size from "module_2" /* 2 */;
 
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/getURLForApplication.tsx");
 
 export default function getURLForApplication(arg0) {
+  let activityUrlOverride;
   const state = DeveloperActivityShelfStore.getState();
   let useActivityUrlOverride = state.useActivityUrlOverride;
+  const obj = DeveloperActivityShelfStore;
   if (useActivityUrlOverride) {
     useActivityUrlOverride = null != state.activityUrlOverride;
   }
@@ -21,8 +23,9 @@ export default function getURLForApplication(arg0) {
     useActivityUrlOverride = "" !== state.activityUrlOverride;
   }
   if (useActivityUrlOverride) {
-    let activityUrlOverride = DeveloperActivityShelfStore.getState().activityUrlOverride;
+    activityUrlOverride = obj.getState().activityUrlOverride;
   } else {
+    const tmp4 = TestModeStore;
     if (TestModeStore.inTestModeForEmbeddedApplication(arg0)) {
       activityUrlOverride = tmp4.testModeOriginURL;
     } else {
@@ -34,6 +37,8 @@ export default function getURLForApplication(arg0) {
           const _window2 = window;
           const _window3 = window;
           const _HermesInternal2 = HermesInternal;
+          const self = this;
+          const self2 = this;
           const uRL = new URL(ACTIVITY_APPLICATION_HOST, "" + window.location.protocol + "//" + window.location.host);
           const _HermesInternal3 = HermesInternal;
           uRL.hostname = "" + arg0 + "." + uRL.hostname;
@@ -44,7 +49,6 @@ export default function getURLForApplication(arg0) {
         }
       }
     }
-    tmp4 = TestModeStore;
   }
   return activityUrlOverride;
 };
@@ -56,6 +60,8 @@ export const getNonTestModeUrlForApplication = function getNonTestModeUrlForAppl
     const _window = window;
     const _window2 = window;
     const _HermesInternal2 = HermesInternal;
+    const self = this;
+    const self2 = this;
     const uRL = new URL(ACTIVITY_APPLICATION_HOST, "" + window.location.protocol + "//" + window.location.host);
     const _HermesInternal3 = HermesInternal;
     uRL.hostname = "" + arg0 + "." + uRL.hostname;
@@ -67,12 +73,6 @@ export const getNonTestModeUrlForApplication = function getNonTestModeUrlForAppl
 };
 export const isUsingDevShelfActivityUrlOverride = function isUsingDevShelfActivityUrlOverride() {
   const state = DeveloperActivityShelfStore.getState();
-  let useActivityUrlOverride = state.useActivityUrlOverride;
-  if (useActivityUrlOverride) {
-    useActivityUrlOverride = null != state.activityUrlOverride;
-  }
-  if (useActivityUrlOverride) {
-    useActivityUrlOverride = "" !== state.activityUrlOverride;
-  }
+  const useActivityUrlOverride = state.useActivityUrlOverride && null != state.activityUrlOverride && "" !== state.activityUrlOverride;
   return useActivityUrlOverride;
 };

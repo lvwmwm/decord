@@ -1,14 +1,14 @@
-// Module ID: 10362
-// Function ID: 10363
+// Module ID: 10437
+// Function ID: 10438
 // Name: showSpendingLimitReachedAlert
-// Dependencies: [5266, 4539, 8291, 5388, 1115, 7193, 4858, 2]
+// Dependencies: [5312, 4550, 8295, 5708, 1126, 7096, 4903, 2]
 // Exports: isSpendingLimitError, showSpendingLimitReachedAlert
 
-// Module 10362 (showSpendingLimitReachedAlert)
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4858 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5266 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5388 */;
-import LayerActionCreators from "LayerActionCreators" /* 7193 */;
+// Module 10437 (showSpendingLimitReachedAlert)
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4903 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5312 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
+import LayerActionCreators from "LayerActionCreators" /* 7096 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/parent_tools/native/showSpendingLimitReachedAlert.tsx");
@@ -16,36 +16,43 @@ const result = size.fileFinishedImporting("modules/parent_tools/native/showSpend
 export const isSpendingLimitError = function isSpendingLimitError(billingError) {
   let tmp3 = billingError instanceof V6OrEarlierAPIError.BillingError;
   if (tmp3) {
-    let tmp4 = billingError.code === tmp(4539).ErrorCodes.BILLING_SPENDING_LIMIT_REACHED;
-    if (!tmp4) {
-      tmp4 = billingError.code === tmp(4539).ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
-    }
-    tmp3 = tmp4;
+    tmp3 = billingError.code === tmp(4550).ErrorCodes.BILLING_SPENDING_LIMIT_REACHED || billingError.code === tmp(4550).ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
+    const tmp4 = billingError.code === tmp(4550).ErrorCodes.BILLING_SPENDING_LIMIT_REACHED || billingError.code === tmp(4550).ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
   }
   return tmp3;
 };
 export const showSpendingLimitReachedAlert = function showSpendingLimitReachedAlert() {
-  activeLinkUserIds = activeLinkUserIds(8291).getActiveLinkUserIds();
-  let obj = activeLinkUserIds(8291);
-  const obj3 = { title: null, body: null, isDismissable: true };
-  const intl = activeLinkUserIds(1115).intl;
-  obj3.title = intl.string(activeLinkUserIds(1115).t.QJKKrT);
-  const intl2 = activeLinkUserIds(1115).intl;
-  obj3.body = intl2.string(activeLinkUserIds(1115).t["73Islf"]);
+  let activeLinkUserIds;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let obj4;
+  let obj = activeLinkUserIds(8295);
+  activeLinkUserIds = obj.getActiveLinkUserIds();
+  let obj2 = { title: intl.string(activeLinkUserIds(1126).t.QJKKrT), body: intl2.string(activeLinkUserIds(1126).t["73Islf"]), isDismissable: true };
+  const show = actions_AlertActionCreatorsDefault.show;
+  actions_AlertActionCreatorsDefault;
+  intl = activeLinkUserIds(1126).intl;
+  intl2 = activeLinkUserIds(1126).intl;
   if (activeLinkUserIds.length > 0) {
-    const obj4 = { confirmText: null, onConfirm: null, cancelText: null };
-    const intl3 = tmp(1115).intl;
-    obj4.confirmText = intl3.string(tmp(1115).t.GF9RCX);
-    obj4.onConfirm = function onConfirm() {
-      LayerActionCreators.popLayer();
-      ChannelActionCreatorsDefault.openPrivateChannel({ recipientIds: activeLinkUserIds });
+    let obj3 = {
+      confirmText: intl3.string(activeLinkUserIds(1126).t.GF9RCX),
+      onConfirm() {
+          const obj = LayerActionCreators;
+          obj.popLayer();
+          const obj2 = ChannelActionCreatorsDefault;
+          const obj3 = { recipientIds: activeLinkUserIds };
+          obj2.openPrivateChannel(obj3);
+        },
+      cancelText: intl4.string(activeLinkUserIds(1126).t.L5eIZ2)
     };
-    const intl4 = tmp(1115).intl;
-    obj4.cancelText = intl4.string(tmp(1115).t.L5eIZ2);
-    let obj5 = obj4;
+    intl3 = tmp(1126).intl;
+    intl4 = tmp(1126).intl;
+    obj4 = obj3;
   } else {
-    obj5 = {};
+    obj4 = {};
   }
-  const merged = Object.assign(obj5);
-  actions_AlertActionCreatorsDefault.show(obj3);
+  const merged = Object.assign(obj4);
+  show(obj2);
 };

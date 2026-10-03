@@ -1,13 +1,13 @@
-// Module ID: 16812
-// Function ID: 16813
+// Module ID: 16900
+// Function ID: 16901
 // Name: trackGuildViewedClickstream
-// Dependencies: [1074, 4702, 7073, 2]
+// Dependencies: [1085, 4717, 6974, 2]
 // Exports: default
 
-// Module 16812 (trackGuildViewedClickstream)
-import Constants from "Constants" /* 1074 */;
-import RouteUtils from "RouteUtils" /* 4702 */;
-import Clickstream from "Clickstream" /* 7073 */;
+// Module 16900 (trackGuildViewedClickstream)
+import Constants from "Constants" /* 1085 */;
+import RouteUtils from "RouteUtils" /* 4717 */;
+import Clickstream from "Clickstream" /* 6974 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -17,10 +17,12 @@ export default function trackGuildViewedClickstream(guildId) {
   guildId = guildId.guildId;
   let isPseudoGuildIdResult = null == guildId;
   if (!isPseudoGuildIdResult) {
-    isPseudoGuildIdResult = RouteUtils.isPseudoGuildId(guildId);
+    const obj = RouteUtils;
+    isPseudoGuildIdResult = obj.isPseudoGuildId(guildId);
   }
   if (!isPseudoGuildIdResult) {
     const obj3 = { guild_id: guildId };
-    Clickstream.trackClickstream(AnalyticEvents.GUILD_VIEWED_CLICKSTREAM, obj3);
+    const obj2 = Clickstream;
+    obj2.trackClickstream(AnalyticEvents.GUILD_VIEWED_CLICKSTREAM, obj3);
   }
 };

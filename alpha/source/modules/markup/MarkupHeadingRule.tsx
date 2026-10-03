@@ -1,31 +1,32 @@
-// Module ID: 5515
-// Function ID: 5516
+// Module ID: 5808
+// Function ID: 5809
 // Name: MarkupHeadingRule
-// Dependencies: [1930, 2]
+// Dependencies: [1936, 2]
 
-// Module 5515 (MarkupHeadingRule)
-import _mod1930 from "module_1930" /* 1930 */;
+// Module 5808 (MarkupHeadingRule)
+import _mod1936 from "module_1936" /* 1936 */;
+import size from "module_2" /* 2 */;
 
-const _modDef1930 = _mod1930;
+const _modDef1936 = _mod1936;
 
-require = fn;
 const re2 = /\n$/;
-let obj = {};
-const merged = Object.assign(_modDef1930.defaultRules.heading);
-obj.requiredFirstCharacters = [" ", "#"];
-obj.match = function match(arg0, allowHeading, str) {
-  let tmp = null;
-  if (allowHeading.allowHeading) {
-    if (null != str) {
-      if ("" !== str) {
-        tmp = null;
+let obj = {
+  requiredFirstCharacters: [" ", "#"],
+  match(arg0, allowHeading, str) {
+    let tmp = null;
+    if (allowHeading.allowHeading) {
+      if (null != str) {
+        if ("" !== str) {
+          tmp = null;
+        }
       }
+      const obj = _mod1936;
+      tmp = obj.anyScopeRegex(/^ *(#{1,3})(?:\s+)((?!\s*#{1,3}\s)[^\n]+?)#*\s*(?:\n|$)/)(arg0, allowHeading, str);
     }
-    tmp = _mod1930.anyScopeRegex(/^ *(#{1,3})(?:\s+)((?!\s*#{1,3}\s)[^\n]+?)#*\s*(?:\n|$)/)(arg0, allowHeading, str);
+    return tmp;
   }
-  return tmp;
 };
-const size = fn(2);
+const merged = Object.assign(_modDef1936.defaultRules.heading);
 const result = size.fileFinishedImporting("modules/markup/MarkupHeadingRule.tsx");
 
 export default obj;

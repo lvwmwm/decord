@@ -1,50 +1,62 @@
-// Module ID: 14130
-// Function ID: 14131
+// Module ID: 14198
+// Function ID: 14199
 // Name: AccessibilityManager
-// Dependencies: [5, 17, 4834, 1074, 1185, 14131, 573, 1241, 14208, 11105, 14132, 4711, 4714, 2]
+// Dependencies: [5, 17, 4879, 1085, 1196, 14199, 584, 1252, 14276, 9774, 14200, 4726, 4729, 2]
 
-// Module 14130 (AccessibilityManager)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 4711 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11105 */;
-import AccessibilitySystemFeaturesDefault from "AccessibilitySystemFeatures" /* 14131 */;
-import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 14132 */;
-import updateSaturation from "updateSaturation" /* 14208 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import AccessibilityStore from "AccessibilityStore" /* 4834 */;
+// Module 14198 (AccessibilityManager)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import ThemeConstants from "ThemeConstants" /* 1196 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 4726 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 9774 */;
+import AccessibilitySystemFeaturesDefault from "AccessibilitySystemFeatures" /* 14199 */;
+import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 14200 */;
+import react_native from "react-native" /* 14276 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react_native2 from "react-native" /* 17 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ AccessibilityInfo: closure_4, Appearance: hasOwnProperty } = get_ActivityIndicator);
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const SystemTheme = fn(1185).SystemTheme;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/a11y/native/AccessibilityManager.tsx");
+let c2, c3, set;
 
-export default {
+let closure_4;
+let hasOwnProperty;
+({ AccessibilityInfo: closure_4, Appearance: hasOwnProperty } = react_native2);
+const AnalyticEvents = Constants.AnalyticEvents;
+const SystemTheme = ThemeConstants.SystemTheme;
+let obj = {
   init() {
+    let colorblindMode;
     const self = this;
-    AccessibilitySystemFeaturesDefault.init();
+    let obj = AccessibilitySystemFeaturesDefault;
+    obj.init();
     this.updateNativeColors();
     this.updateMotionSettings();
     AccessibilityStore.addChangeListener(this.updateNativeColors);
     AccessibilityStore.addChangeListener(this.updateMotionSettings);
-    const subscription = DispatcherDefault.subscribe("CONNECTION_OPEN", this.updateMotionSettings);
+    let obj2 = DispatcherDefault;
+    const subscription = obj2.subscribe("CONNECTION_OPEN", this.updateMotionSettings);
     closure_5.addChangeListener(this.updateSystemAppearance);
     const listener = closure_4.addEventListener("screenReaderChanged", (event) => {
       const result = self.updateScreenReaderEnabled(event);
     });
-    const subscription1 = DispatcherDefault.subscribe("ACCESSIBILITY_COLORBLIND_TOGGLE", () => {
-      AnalyticsUtilsDefault.track(constants.LOCAL_SETTINGS_UPDATED, { colorblind_enabled: colorblindMode.colorblindMode });
+    const obj3 = DispatcherDefault;
+    const subscription1 = obj3.subscribe("ACCESSIBILITY_COLORBLIND_TOGGLE", () => {
+      const obj = AnalyticsUtilsDefault;
+      const obj2 = { colorblind_enabled: colorblindMode.colorblindMode };
+      obj.track(constants.LOCAL_SETTINGS_UPDATED, obj2);
     });
     let result = this.startAnnouncementQueue();
   },
   updateNativeColors() {
-    updateSaturation.updateSaturation(AccessibilityStore.saturation);
+    const obj = react_native;
+    obj.updateSaturation(AccessibilityStore.saturation);
   },
   updateMotionSettings() {
-    updateSharedValueIfChangedDefault(AccessibilityPreferencesSharedValue.accessibilityPreferencesSharedValue, { reduceMotion: AccessibilityStore.useReducedMotion, prefersCrossfades: AccessibilityStore.systemPrefersCrossfades });
+    const obj = { reduceMotion: AccessibilityStore.useReducedMotion, prefersCrossfades: AccessibilityStore.systemPrefersCrossfades };
+    const tmp = updateSharedValueIfChangedDefault;
+    tmp(AccessibilityPreferencesSharedValue.accessibilityPreferencesSharedValue, obj);
   },
   checkScreenreaderEnabled() {
     const self = this;
@@ -52,17 +64,18 @@ export default {
       if (c3 === 2) {
         c3 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp4 === 3) {
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
+          let closure_0;
           c3 = 2;
           if (0 === c2) {
             if (arg0 === 1) {
@@ -73,9 +86,8 @@ export default {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              closure_1 = tmp5;
-              closure_0 = tmp2;
-              closure_128_0 = undefined;
+              let closure_1 = tmp4;
+              closure_0 = undefined;
               c2 = 1;
               c3 = 1;
               const obj4 = { value: screenReaderEnabled.isScreenReaderEnabled(), done: false };
@@ -89,20 +101,22 @@ export default {
             const obj = { value, done: true };
             return obj;
           } else {
-            closure_128_0 = value;
-            const result = closure_129_0.updateScreenReaderEnabled(closure_128_0);
+            closure_0 = value;
+            const result = closure_129_0.updateScreenReaderEnabled(closure_0);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
-        } catch (tmp12) {
-          c3 = tmp;
-          throw tmp12;
+        } catch (tmp11) {
+          c3 = 3;
+          throw tmp11;
         }
       }
     })();
   },
   updateScreenReaderEnabled(screenReaderEnabled) {
-    updateSharedValueIfChangedDefault(AccessibilityPreferencesSharedValue.accessibilityPreferencesSharedValue, { screenReaderEnabled });
+    const obj = { screenReaderEnabled };
+    const tmp = updateSharedValueIfChangedDefault;
+    tmp(AccessibilityPreferencesSharedValue.accessibilityPreferencesSharedValue, obj);
   },
   updateSystemAppearance(colorScheme) {
     let DARK = SystemTheme.NO_PREFERENCE;
@@ -112,18 +126,21 @@ export default {
     } else if ("dark" === colorScheme) {
       DARK = tmp.DARK;
     }
-    ThemeActionCreators.setSystemTheme(DARK);
+    const obj = ThemeActionCreators;
+    obj.setSystemTheme(DARK);
   },
   startAnnouncementQueue() {
-    const set = new Set();
+    set = new Set();
     const listener = closure_4.addEventListener("announcementFinished", (event) => {
+      let closure_0 = event;
       if (!event.success) {
+        const obj = set;
         if (!set.has(event.announcement)) {
-          set.add(event.announcement);
+          obj.add(event.announcement);
           const _setTimeout = setTimeout;
           const timerId = setTimeout(() => {
-            const AccessibilityAnnouncer = set(dependencyMap[12]).AccessibilityAnnouncer;
-            AccessibilityAnnouncer.announce(event.announcement);
+            const AccessibilityAnnouncer = set(closure_2_2[12]).AccessibilityAnnouncer;
+            AccessibilityAnnouncer.announce(announcement.announcement);
           }, 150);
         }
       }
@@ -131,3 +148,6 @@ export default {
     });
   }
 };
+let result = size.fileFinishedImporting("modules/a11y/native/AccessibilityManager.tsx");
+
+export default obj;

@@ -1,16 +1,16 @@
-// Module ID: 13745
-// Function ID: 13746
+// Module ID: 13811
+// Function ID: 13812
 // Name: BitRateStore
-// Dependencies: [4870, 504, 573, 2]
+// Dependencies: [4915, 504, 584, 2]
 
-// Module 13745 (BitRateStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 4870 */;
+// Module 13811 (BitRateStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 4915 */;
 import size from "module_2" /* 2 */;
 
 let bitrate = Constants.DEFAULT_VOICE_BITRATE;
-const Store = initializeDefault.Store;
+const Store = get_initializedDefault.Store;
 class BitRateStore extends Store {
 }
 Object.defineProperty(BitRateStore.prototype, "bitrate", {
@@ -20,11 +20,12 @@ Object.defineProperty(BitRateStore.prototype, "bitrate", {
   set: undefined
 });
 BitRateStore.displayName = "BitRateStore";
-const bitRateStore = new BitRateStore(DispatcherDefault, {
+const obj = {
   SET_CHANNEL_BITRATE: function handleSetChannelBitrate(bitrate) {
     bitrate = bitrate.bitrate;
   }
-});
+};
+const bitRateStore = new BitRateStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("stores/BitRateStore.tsx");
 
 export default bitRateStore;

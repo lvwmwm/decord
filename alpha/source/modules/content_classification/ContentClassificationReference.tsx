@@ -1,11 +1,11 @@
-// Module ID: 9001
-// Function ID: 9002
+// Module ID: 9020
+// Function ID: 9021
 // Name: ContentClassificationReference
-// Dependencies: [5609, 2]
+// Dependencies: [5897, 2]
 // Exports: isAgeRestrictedClassificationReference
 
-// Module 9001 (ContentClassificationReference)
-import utils from "utils" /* 5609 */;
+// Module 9020 (ContentClassificationReference)
+import utils from "utils" /* 5897 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/content_classification/ContentClassificationReference.tsx");
@@ -17,7 +17,8 @@ export const isAgeRestrictedClassificationReference = function isAgeRestrictedCl
   }
   let result = !loaded;
   if (loaded) {
-    result = utils.isAgeRestrictedContentClassification(contentClassification.data);
+    const obj = utils;
+    result = obj.isAgeRestrictedContentClassification(contentClassification.data);
   }
   return result;
 };

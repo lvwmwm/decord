@@ -1,33 +1,33 @@
-// Module ID: 17508
-// Function ID: 17509
+// Module ID: 17597
+// Function ID: 17598
 // Name: SearchTokensManager
-// Dependencies: [2112, 6725, 12033, 2]
+// Dependencies: [2117, 6613, 11968, 2]
 
-// Module 17508 (SearchTokensManager)
-import IntlLoaderStore from "IntlLoaderStore" /* 2112 */;
-import SearchUtils from "SearchUtils" /* 12033 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
+// Module 17597 (SearchTokensManager)
+import IntlLoaderStore from "IntlLoaderStore" /* 2117 */;
+import SearchUtils from "SearchUtils" /* 11968 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
 import size from "module_2" /* 2 */;
 
-let closure_2 = IntlLoaderStore.subscribeToIntlLoadingSuccess;
-class SearchTokensManager extends tmp2 {
+const React2 = IntlLoaderStore.subscribeToIntlLoadingSuccess;
+class SearchTokensManager extends AutomaticLifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    obj = { USER_SETTINGS_PROTO_UPDATE: closure_0(closure_1[2]).refreshSearchTokens, POST_CONNECTION_OPEN: closure_0(closure_1[2]).refreshSearchTokens };
-    applyArgumentsResult.actions = obj;
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    applyArgumentsResult.actions = { USER_SETTINGS_PROTO_UPDATE: SearchUtils.refreshSearchTokens, POST_CONNECTION_OPEN: SearchUtils.refreshSearchTokens };
+    ({ USER_SETTINGS_PROTO_UPDATE: SearchUtils.refreshSearchTokens, POST_CONNECTION_OPEN: SearchUtils.refreshSearchTokens });
     return applyArgumentsResult;
+  }
+  _initialize() {
+    this._unsubscribeIntlLoadingStore = closure_2(SearchUtils.refreshSearchTokens);
+  }
+  _terminate() {
+    const _unsubscribeIntlLoadingStore = this._unsubscribeIntlLoadingStore;
+    if (_unsubscribeIntlLoadingStore != null) {
+      const result = _unsubscribeIntlLoadingStore();
+    }
   }
 }
 const prototype = SearchTokensManager.prototype;
-prototype["_initialize"] = function _initialize() {
-  this._unsubscribeIntlLoadingStore = closure_2(SearchUtils.refreshSearchTokens);
-};
-prototype["_terminate"] = function _terminate() {
-  const _unsubscribeIntlLoadingStore = this._unsubscribeIntlLoadingStore;
-  if (_unsubscribeIntlLoadingStore != null) {
-    const result = _unsubscribeIntlLoadingStore();
-  }
-};
 const searchTokensManager = new SearchTokensManager();
 let result = size.fileFinishedImporting("modules/search/managers/SearchTokensManager.tsx");
 

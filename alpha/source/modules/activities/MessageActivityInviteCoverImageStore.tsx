@@ -1,33 +1,38 @@
-// Module ID: 13016
-// Function ID: 13017
+// Module ID: 13077
+// Function ID: 13078
 // Name: MessageActivityInviteCoverImageStore
-// Dependencies: [1439, 504, 573, 2]
+// Dependencies: [1444, 504, 584, 2]
 
-// Module 13016 (MessageActivityInviteCoverImageStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import privDefault from "priv" /* 1439 */;
+// Module 13077 (MessageActivityInviteCoverImageStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import LRUCacheDefault from "LRUCache" /* 1444 */;
+import size from "module_2" /* 2 */;
 
-let closure_0 = new privDefault({ max: 500 });
-const Store = initializeDefault.Store;
+const React = new LRUCacheDefault({ max: 500 });
+new LRUCacheDefault({ max: 500 });
+const Store = get_initializedDefault.Store;
 class MessageActivityInviteCoverImageStore extends Store {
+  getCoverImageURL(messageId) {
+    return closure_0.get(messageId.messageId);
+  }
 }
-MessageActivityInviteCoverImageStore.prototype["getCoverImageURL"] = function getCoverImageURL(messageId) {
-  return closure_0.get(messageId.messageId);
-};
+const prototype = MessageActivityInviteCoverImageStore.prototype;
 MessageActivityInviteCoverImageStore.displayName = "MessageActivityInviteCoverImageStore";
-const messageActivityInviteCoverImageStore = new MessageActivityInviteCoverImageStore(DispatcherDefault, {
+let obj = {
   SET_MESSAGE_ACTIVITY_INVITE_COVER_IMAGE_URL: function handleSetMessageActivityInviteCoverImageURL(arg0) {
+    let coverImageURL;
+    let messageId;
     ({ messageId, coverImageURL } = arg0);
+    const obj = closure_0;
     if (closure_0.get(messageId) === coverImageURL) {
       return false;
     } else {
       const result = obj.set(messageId, coverImageURL);
     }
-    obj = closure_0;
   }
-});
-const size = fn(2);
+};
+const messageActivityInviteCoverImageStore = new MessageActivityInviteCoverImageStore(DispatcherDefault, obj);
 let result = size.fileFinishedImporting("modules/activities/MessageActivityInviteCoverImageStore.tsx");
 
 export default messageActivityInviteCoverImageStore;

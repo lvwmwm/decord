@@ -1,59 +1,51 @@
-// Module ID: 13384
-// Function ID: 13385
+// Module ID: 13444
+// Function ID: 13445
 // Name: AltGatewayTracker
-// Dependencies: [13385, 2]
+// Dependencies: [13445, 2]
 
-// Module 13384 (AltGatewayTracker)
-import getCachedUseAltGatewayDefault from "getCachedUseAltGateway" /* 13385 */;
+// Module 13444 (AltGatewayTracker)
+import react_nativeDefault from "react-native" /* 13445 */;
+import size from "module_2" /* 2 */;
 
-let closure_1 = getCachedUseAltGatewayDefault();
-const size = fn(2);
+let closure_1 = react_nativeDefault();
 const result = size.fileFinishedImporting("modules/gateway/AltGatewayTracker.tsx");
 class AltGatewayTracker {
   constructor() {
     return Object.assign({ failures: 0, fallbackTripped: false });
   }
-}
-const prototype = AltGatewayTracker.prototype;
-prototype["shouldUseAltGateway"] = function shouldUseAltGateway() {
-  const fallbackTripped = this.fallbackTripped;
-  let tmp = !fallbackTripped;
-  if (!fallbackTripped) {
-    tmp = null != GATEWAY_ALT_ENDPOINT;
+  shouldUseAltGateway() {
+    return !this.fallbackTripped && null != GATEWAY_ALT_ENDPOINT && closure_1;
   }
-  if (tmp) {
-    tmp = closure_1;
+  isAssignedToAltGateway() {
+    return null != GATEWAY_ALT_ENDPOINT && closure_1;
   }
-  return tmp;
-};
-prototype["isAssignedToAltGateway"] = function isAssignedToAltGateway() {
-  return null != GATEWAY_ALT_ENDPOINT && closure_1;
-};
-prototype["getDidFallBack"] = function getDidFallBack() {
-  return this.fallbackTripped;
-};
-prototype["getAltGatewayUrl"] = function getAltGatewayUrl() {
-  let tmp = null;
-  if (this.shouldUseAltGateway()) {
-    tmp = GATEWAY_ALT_ENDPOINT;
+  getDidFallBack() {
+    return this.fallbackTripped;
   }
-  return tmp;
-};
-prototype["recordSuccess"] = function recordSuccess() {
-  this.failures = 0;
-};
-prototype["recordFailure"] = function recordFailure() {
-  const self = this;
-  if (this.shouldUseAltGateway()) {
-    self.failures = self.failures + 1;
-    if (self.failures >= 3) {
-      self.fallbackTripped = true;
+  getAltGatewayUrl() {
+    let tmp = null;
+    if (this.shouldUseAltGateway()) {
+      tmp = GATEWAY_ALT_ENDPOINT;
+    }
+    return tmp;
+  }
+  recordSuccess() {
+    this.failures = 0;
+  }
+  recordFailure() {
+    const self = this;
+    if (this.shouldUseAltGateway()) {
+      self.failures = self.failures + 1;
+      if (self.failures >= 3) {
+        self.fallbackTripped = true;
+      }
     }
   }
-};
-prototype["reset"] = function reset() {
-  this.failures = 0;
-  this.fallbackTripped = false;
-};
+  reset() {
+    this.failures = 0;
+    this.fallbackTripped = false;
+  }
+}
+const prototype = AltGatewayTracker.prototype;
 
 export default AltGatewayTracker;

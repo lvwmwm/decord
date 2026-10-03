@@ -1,87 +1,79 @@
-// Module ID: 7178
-// Function ID: 7179
+// Module ID: 7081
+// Function ID: 7082
 // Name: CollectiblesShopHomeRecord
-// Dependencies: [7151, 7179, 7181, 7184, 7185, 7186, 7187, 7188, 7189, 7190, 7180, 2]
+// Dependencies: [7054, 7082, 7084, 7087, 7088, 7089, 7090, 7091, 7092, 7093, 7083, 2]
 
-// Module 7178 (CollectiblesShopHomeRecord)
-import ShopBlockType from "ShopBlockType" /* 7180 */;
-import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7151 */;
+// Module 7081 (CollectiblesShopHomeRecord)
+import CountdownTimerBlockRecord2 from "CountdownTimerBlockRecord" /* 7082 */;
+import ShopBlockType from "ShopBlockType" /* 7083 */;
+import FeaturedBlockRecord2 from "FeaturedBlockRecord" /* 7084 */;
+import FeedBlockRecord2 from "FeedBlockRecord" /* 7087 */;
+import GameServerHostingBannerBlockRecord from "GameServerHostingBannerBlockRecord" /* 7088 */;
+import HeroBlockRecord2 from "HeroBlockRecord" /* 7089 */;
+import ImmersiveBannerBlockRecord from "ImmersiveBannerBlockRecord" /* 7090 */;
+import ShelfBlockRecord2 from "ShelfBlockRecord" /* 7091 */;
+import SocialLayerStorefrontPromotionalBannerBlockRecord from "SocialLayerStorefrontPromotionalBannerBlockRecord" /* 7092 */;
+import WideBannerBlockRecord2 from "WideBannerBlockRecord" /* 7093 */;
+import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7054 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const CountdownTimerBlockRecord = fn(7179).CountdownTimerBlockRecord;
-const FeaturedBlockRecord = fn(7181).FeaturedBlockRecord;
-const FeedBlockRecord = fn(7184).FeedBlockRecord;
-let closure_6 = fn(7185).GameServerHostingBannerBlockRecord;
-const HeroBlockRecord = fn(7186).HeroBlockRecord;
-let closure_8 = fn(7187).ImmersiveBannerBlockRecord;
-const ShelfBlockRecord = fn(7188).ShelfBlockRecord;
-let closure_10 = fn(7189).SocialLayerStorefrontPromotionalBannerBlockRecord;
-const WideBannerBlockRecord = fn(7190).WideBannerBlockRecord;
-const prototype = function CollectiblesShopHomeRecord(shop_blocks) {
-  const obj = Object.create(new.target.prototype);
-  shop_blocks = shop_blocks.shop_blocks;
-  const mapped = shop_blocks.map((type) => {
-    type = type.type;
-    if (ShopBlockType.ShopBlockType.HERO === type) {
-      return HeroBlockRecord.fromServer(type);
-    } else if (tmp(tmp2[10]).ShopBlockType.FEATURED === type) {
-      return FeaturedBlockRecord.fromServer(type);
-    } else if (tmp(tmp2[10]).ShopBlockType.FEED === type) {
-      return FeedBlockRecord.fromServer(type);
-    } else if (tmp(tmp2[10]).ShopBlockType.WIDE_BANNER === type) {
-      return WideBannerBlockRecord.fromServer(type);
-    } else if (tmp(tmp2[10]).ShopBlockType.SHELF === type) {
-      return ShelfBlockRecord.fromServer(type);
-    } else if (tmp(tmp2[10]).ShopBlockType.COUNTDOWN_TIMER === type) {
-      return CountdownTimerBlockRecord.fromServer(type);
-    } else if (tmp(tmp2[10]).ShopBlockType.IMMERSIVE_BANNER === type) {
-      return closure_1_8.fromServer(type);
-    } else if (tmp(tmp2[10]).ShopBlockType.SOCIAL_LAYER_STOREFRONT_PROMOTIONAL_BANNER === type) {
-      return closure_1_10.fromServer(type);
-    } else if (tmp(tmp2[10]).ShopBlockType.GAME_SERVER_HOSTING_BANNER === type) {
-      return closure_1_6.fromServer(type);
-    }
-  });
-  obj.shopBlocks = mapped.filter((item) => undefined !== item);
-  const categories = shop_blocks.categories;
-  obj.categories = categories.map((item) => CollectiblesCategoryRecord.fromServer(item));
-  return obj;
-}.prototype;
-prototype["fromServer"] = function fromServer(shop_blocks) {
-  if (typeof prototype === "function") {
-    const obj = Object.create(tmp.prototype);
-    shop_blocks = shop_blocks.shop_blocks;
-    const mapped = shop_blocks.map((type) => {
-      type = type.type;
-      if (ShopBlockType.ShopBlockType.HERO === type) {
-        return HeroBlockRecord.fromServer(type);
-      } else if (tmp(tmp2[10]).ShopBlockType.FEATURED === type) {
-        return FeaturedBlockRecord.fromServer(type);
-      } else if (tmp(tmp2[10]).ShopBlockType.FEED === type) {
-        return FeedBlockRecord.fromServer(type);
-      } else if (tmp(tmp2[10]).ShopBlockType.WIDE_BANNER === type) {
-        return WideBannerBlockRecord.fromServer(type);
-      } else if (tmp(tmp2[10]).ShopBlockType.SHELF === type) {
-        return ShelfBlockRecord.fromServer(type);
-      } else if (tmp(tmp2[10]).ShopBlockType.COUNTDOWN_TIMER === type) {
-        return CountdownTimerBlockRecord.fromServer(type);
-      } else if (tmp(tmp2[10]).ShopBlockType.IMMERSIVE_BANNER === type) {
-        return closure_1_8.fromServer(type);
-      } else if (tmp(tmp2[10]).ShopBlockType.SOCIAL_LAYER_STOREFRONT_PROMOTIONAL_BANNER === type) {
-        return closure_1_10.fromServer(type);
-      } else if (tmp(tmp2[10]).ShopBlockType.GAME_SERVER_HOSTING_BANNER === type) {
-        return closure_1_6.fromServer(type);
-      }
-    });
-    obj.shopBlocks = mapped.filter((item) => undefined !== item);
-    const categories = shop_blocks.categories;
-    obj.categories = categories.map((item) => CollectiblesCategoryRecord.fromServer(item));
-    return obj;
-  } else {
-    throw new TypeError("Trying to call a non-function");
+const f94047 = (type) => {
+  type = type.type;
+  if (ShopBlockType.ShopBlockType.HERO === type) {
+    return HeroBlockRecord.fromServer(type);
+  } else if (ShopBlockType.ShopBlockType.FEATURED === type) {
+    return FeaturedBlockRecord.fromServer(type);
+  } else if (ShopBlockType.ShopBlockType.FEED === type) {
+    return FeedBlockRecord.fromServer(type);
+  } else if (ShopBlockType.ShopBlockType.WIDE_BANNER === type) {
+    return WideBannerBlockRecord.fromServer(type);
+  } else if (ShopBlockType.ShopBlockType.SHELF === type) {
+    return ShelfBlockRecord.fromServer(type);
+  } else if (ShopBlockType.ShopBlockType.COUNTDOWN_TIMER === type) {
+    return CountdownTimerBlockRecord.fromServer(type);
+  } else if (ShopBlockType.ShopBlockType.IMMERSIVE_BANNER === type) {
+    return closure_1_8.fromServer(type);
+  } else if (ShopBlockType.ShopBlockType.SOCIAL_LAYER_STOREFRONT_PROMOTIONAL_BANNER === type) {
+    return closure_1_10.fromServer(type);
+  } else if (ShopBlockType.ShopBlockType.GAME_SERVER_HOSTING_BANNER === type) {
+    return closure_1_6.fromServer(type);
   }
 };
-const size = fn(2);
+const f94048 = (item) => undefined !== item;
+const f94049 = (item) => CollectiblesCategoryRecord.fromServer(item);
+const CountdownTimerBlockRecord = CountdownTimerBlockRecord2.CountdownTimerBlockRecord;
+const FeaturedBlockRecord = FeaturedBlockRecord2.FeaturedBlockRecord;
+const FeedBlockRecord = FeedBlockRecord2.FeedBlockRecord;
+let closure_6 = GameServerHostingBannerBlockRecord.GameServerHostingBannerBlockRecord;
+const HeroBlockRecord = HeroBlockRecord2.HeroBlockRecord;
+let closure_8 = ImmersiveBannerBlockRecord.ImmersiveBannerBlockRecord;
+const ShelfBlockRecord = ShelfBlockRecord2.ShelfBlockRecord;
+let closure_10 = SocialLayerStorefrontPromotionalBannerBlockRecord.SocialLayerStorefrontPromotionalBannerBlockRecord;
+const WideBannerBlockRecord = WideBannerBlockRecord2.WideBannerBlockRecord;
+class CollectiblesShopHomeRecord {
+  constructor(shop_blocks) {
+    const obj = Object.create(new.target.prototype);
+    shop_blocks = shop_blocks.shop_blocks;
+    const mapped = shop_blocks.map(f94047);
+    obj.shopBlocks = mapped.filter(f94048);
+    const categories = shop_blocks.categories;
+    obj.categories = categories.map(f94049);
+    return obj;
+  }
+  static fromServer(shop_blocks) {
+    if (typeof CollectiblesShopHomeRecord === "function") {
+      const obj = Object.create(tmp.prototype);
+      shop_blocks = shop_blocks.shop_blocks;
+      const mapped = shop_blocks.map(f94047);
+      obj.shopBlocks = mapped.filter(f94048);
+      const categories = shop_blocks.categories;
+      obj.categories = categories.map(f94049);
+      return obj;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  }
+}
 const result = size.fileFinishedImporting("modules/collectibles/records/CollectiblesShopHomeRecord.tsx");
 
-export const CollectiblesShopHomeRecord = prototype;
+export { CollectiblesShopHomeRecord };

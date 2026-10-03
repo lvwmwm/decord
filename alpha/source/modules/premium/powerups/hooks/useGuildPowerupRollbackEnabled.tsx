@@ -1,28 +1,52 @@
-// Module ID: 12205
-// Function ID: 12206
+// Module ID: 12155
+// Function ID: 12156
 // Name: useGuildPowerupRollbackEnabled
-// Dependencies: [4756, 4758, 2]
-// Exports: default, isGuildPowerupRollbackEnabled, isGuildPowerupRollbackEnabledForSku
+// Dependencies: [4771, 558, 576, 4773, 2]
+// Exports: isGuildPowerupRollbackEnabled, isGuildPowerupRollbackEnabledForSku
 
-// Module 12205 (useGuildPowerupRollbackEnabled)
-import Powerups from "Powerups" /* 4756 */;
-import ServerThemeExperiment from "ServerThemeExperiment" /* 4758 */;
+// Module 12155 (useGuildPowerupRollbackEnabled)
+import react from "react" /* 576 */;
+import Powerups from "Powerups" /* 4771 */;
+import ServerThemeExperiment from "ServerThemeExperiment" /* 4773 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, skuId, arg2) => {
+  const obj = react;
+  const cResult = obj.c(3);
+  const obj2 = ServerThemeExperiment;
+  const serverThemeRollbackEnabled = obj2.useServerThemeRollbackEnabled(arg0, arg2);
+  if (cResult[0] === serverThemeRollbackEnabled) {
+    let tmp5;
+    if (cResult[1] === skuId.skuId) {
+      tmp5 = cResult[2];
+    }
+    return tmp5;
+  }
+  const tmp6 = skuId.skuId === Powerups.GUILD_POWERUP_GUILD_THEME_SKU_ID && serverThemeRollbackEnabled;
+  cResult[0] = serverThemeRollbackEnabled;
+  cResult[1] = skuId.skuId;
+  cResult[2] = tmp6;
+  tmp5 = tmp6;
+}) : ((arg0, skuId, arg2) => {
+  const obj = ServerThemeExperiment;
+  const serverThemeRollbackEnabled = obj.useServerThemeRollbackEnabled(arg0, arg2);
+  const tmp2 = skuId.skuId === Powerups.GUILD_POWERUP_GUILD_THEME_SKU_ID && serverThemeRollbackEnabled;
+  return tmp2;
+});
+function isGuildPowerupRollbackEnabledForSku(arg0, arg1) {
+  const tmp = arg0 === Powerups.GUILD_POWERUP_GUILD_THEME_SKU_ID && arg1;
+  return tmp;
+}
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupRollbackEnabled.tsx");
 
-export default function useGuildPowerupRollbackEnabled(guildId, skuId, useGuildPowerupNewPerkMarketingVersion) {
-  const serverThemeRollbackEnabled = ServerThemeExperiment.useServerThemeRollbackEnabled(guildId, useGuildPowerupNewPerkMarketingVersion);
-  return skuId.skuId === Powerups.GUILD_POWERUP_GUILD_THEME_SKU_ID && serverThemeRollbackEnabled;
-};
-export const isGuildPowerupRollbackEnabledForSku = function isGuildPowerupRollbackEnabledForSku(arg0, arg1) {
-  return arg0 === Powerups.GUILD_POWERUP_GUILD_THEME_SKU_ID && arg1;
-};
+export default tmp2;
+export { isGuildPowerupRollbackEnabledForSku };
 export const isGuildPowerupRollbackEnabled = function isGuildPowerupRollbackEnabled(guildId, skuId, maybeGetPerkPurchaseablePopoutDCF) {
   let serverThemeRollbackEnabled = skuId.skuId === Powerups.GUILD_POWERUP_GUILD_THEME_SKU_ID;
   if (serverThemeRollbackEnabled) {
-    serverThemeRollbackEnabled = ServerThemeExperiment.getServerThemeRollbackEnabled(guildId, maybeGetPerkPurchaseablePopoutDCF);
     const tmpResult = ServerThemeExperiment;
+    serverThemeRollbackEnabled = tmpResult.getServerThemeRollbackEnabled(guildId, maybeGetPerkPurchaseablePopoutDCF);
   }
   return serverThemeRollbackEnabled;
 };

@@ -1,18 +1,19 @@
-// Module ID: 7094
-// Function ID: 7095
+// Module ID: 6995
+// Function ID: 6996
 // Name: withFallbacks
-// Dependencies: [32, 2044, 5936, 1074, 7088, 7092, 7093, 2]
+// Dependencies: [32, 2051, 5616, 1085, 6989, 6993, 6994, 2]
 // Exports: withFallbacks
 
-// Module 7094 (withFallbacks)
-import ExtendedMemoryLru from "ExtendedMemoryLru" /* 7088 */;
-import isReadableChannel from "isReadableChannel" /* 7092 */;
-import isLimitedChannel from "isLimitedChannel" /* 7093 */;
-import _slicedToArray from "module_32" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import SortedGuildStore from "SortedGuildStore" /* 5936 */;
+// Module 6995 (withFallbacks)
+import Constants from "Constants" /* 1085 */;
+import ExtendedMemoryLru from "ExtendedMemoryLru" /* 6989 */;
+import isReadableChannel from "isReadableChannel" /* 6993 */;
+import isLimitedChannel from "isLimitedChannel" /* 6994 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import SortedGuildStore from "SortedGuildStore" /* 5616 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
 function isSaveableChannel(item10025) {
   return item10025.type === ChannelTypes.DM || item10025.type === ChannelTypes.GROUP_DM || item10025.type === ChannelTypes.GUILD_TEXT;
 }
@@ -25,6 +26,7 @@ function addFallback(guildId, id, extendedMemoryLru) {
 }
 function mergeInto(extendedMemoryLru, allEntries) {
   const allEntriesResult = allEntries.allEntries();
+  const tmp2 = allEntriesResult[Symbol.iterator]();
   while (tmp2 !== undefined) {
     let tmp5 = _slicedToArray(tmp3, 2);
     let putResult = extendedMemoryLru.put(tmp5[0], tmp5[1]);
@@ -32,16 +34,17 @@ function mergeInto(extendedMemoryLru, allEntries) {
   }
   return extendedMemoryLru;
 }
-const ChannelTypes = fn(1074).ChannelTypes;
-const size = fn(2);
+const ChannelTypes = Constants.ChannelTypes;
 const result = size.fileFinishedImporting("modules/app_database/modules/messages/withFallbacks.tsx");
 
-export const withFallbacks = function withFallbacks(global, arg1) {
-  if (global.totalLength >= arg1) {
-    return global;
+export const withFallbacks = function withFallbacks(extendedMemoryLru, arg1) {
+  if (extendedMemoryLru.totalLength >= arg1) {
+    return extendedMemoryLru;
   } else {
-    const extendedMemoryLru = new ExtendedMemoryLru.ExtendedMemoryLru(global.primaryCapacity, global.extendedCapacity);
-    const diff = arg1 - global.totalLength;
+    const self = this;
+    const self2 = this;
+    extendedMemoryLru = new ExtendedMemoryLru.ExtendedMemoryLru(extendedMemoryLru.primaryCapacity, extendedMemoryLru.extendedCapacity);
+    const diff = arg1 - extendedMemoryLru.totalLength;
     const guildFolders = SortedGuildStore.getGuildFolders();
     const iter = guildFolders[Symbol.iterator]();
     while (iter !== undefined) {
@@ -65,7 +68,7 @@ export const withFallbacks = function withFallbacks(global, arg1) {
             let tmp22 = addFallback(tmp5, tmp10, extendedMemoryLru);
           }
           if (extendedMemoryLru.totalLength >= diff) {
-            let tmp24 = mergeInto(extendedMemoryLru, arg0);
+            let tmp24 = mergeInto(extendedMemoryLru, extendedMemoryLru);
             obj2.return();
             obj.return();
             iter.return();
@@ -76,7 +79,7 @@ export const withFallbacks = function withFallbacks(global, arg1) {
       }
       continue;
     }
-    mergeInto(extendedMemoryLru, global);
+    mergeInto(extendedMemoryLru, extendedMemoryLru);
     return extendedMemoryLru;
   }
 };

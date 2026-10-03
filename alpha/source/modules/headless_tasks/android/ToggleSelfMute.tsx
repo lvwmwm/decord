@@ -1,27 +1,30 @@
-// Module ID: 18021
-// Function ID: 18022
+// Module ID: 18107
+// Function ID: 18108
 // Name: ToggleSelfMute
-// Dependencies: [2044, 18017, 6950, 9658, 2]
+// Dependencies: [2051, 18103, 6848, 9687, 2]
 
-// Module 18021 (ToggleSelfMute)
-import useMuteStates from "useMuteStates" /* 6950 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 9658 */;
-import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 18017 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
+// Module 18107 (ToggleSelfMute)
+import useMuteStates from "useMuteStates" /* 6848 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 9687 */;
+import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 18103 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/headless_tasks/android/ToggleSelfMute.tsx");
 
 export default (channelId) => {
   channelId = channelId.channelId;
-  return new Promise((arg0) => {
-    closure_0 = arg0;
-    HeadlessTaskUtilsDefault.awaitStorage(() => {
+  const promise = new Promise((arg0) => {
+    let closure_0 = arg0;
+    let obj = HeadlessTaskUtilsDefault;
+    obj.awaitStorage(() => {
       const channel = ChannelStore.getChannel(channelId);
-      const muteStates = useMuteStates.getMuteStates({ channel });
-      VoiceActionUtils.createMuteHandler(muteStates).onPress();
+      const obj = useMuteStates;
+      const muteStates = obj.getMuteStates({ channel });
+      const obj2 = VoiceActionUtils;
+      obj2.createMuteHandler(muteStates).onPress();
       closure_0(true);
     });
   });
+  return promise;
 };

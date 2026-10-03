@@ -1,73 +1,74 @@
-// Module ID: 7840
-// Function ID: 7841
+// Module ID: 7884
+// Function ID: 7885
 // Name: useMaybeTrackProfileFrameViewed
-// Dependencies: [19, 7150, 563, 7818, 2]
+// Dependencies: [19, 7053, 573, 7862, 2]
 // Exports: default
 
-// Module 7840 (useMaybeTrackProfileFrameViewed)
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 7818 */;
-import noop from "module_19" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7150 */;
+// Module 7884 (useMaybeTrackProfileFrameViewed)
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 7862 */;
+import react from "react" /* 19 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7053 */;
 import size from "module_2" /* 2 */;
 
-({ useEffect: c2, useRef: c3 } = noop);
+let c2;
+let c3;
+({ useEffect: c2, useRef: c3 } = react);
 let result = size.fileFinishedImporting("modules/collectibles/profile_frames/hooks/useMaybeTrackProfileFrameViewed.tsx");
 
 export default function useMaybeTrackProfileFrameViewed(skuId) {
+  let closure_2;
+  let closure_3;
   skuId = skuId.skuId;
   const openedAt = skuId.openedAt;
   ({ context: closure_2, analyticsLocations: closure_3 } = skuId);
   let stateFromStores;
+  let obj = skuId(openedAt[2]);
   const items = [stateFromStores];
-  stateFromStores = skuId(openedAt[2]).useStateFromStores(items, () => CollectiblesCategoryStore.getProductFetch(skuId));
-  analyticsLocations(undefined);
-  analyticsLocations(undefined);
-  analyticsLocations(undefined);
-  analyticsLocations(false);
+  stateFromStores = obj.useStateFromStores(items, () => CollectiblesCategoryStore.getProductFetch(skuId));
+  const ref = analyticsLocations(undefined);
+  const ref2 = analyticsLocations(undefined);
+  const ref3 = analyticsLocations(undefined);
+  const ref4 = analyticsLocations(false);
   const items1 = [skuId, openedAt, stateFromStores];
   closure_2(() => {
+    let diff;
     if (null != skuId) {
       if (null != openedAt) {
         let tmp3 = ref2.current === tmp;
+        const tmp24 = ref2;
         if (tmp3) {
-          tmp3 = ref3.current === tmp22;
+          tmp3 = ref3.current === tmp23;
         }
         if (!tmp3) {
-          tmp23.current = tmp;
-          ref3.current = tmp22;
+          tmp24.current = skuId;
+          ref3.current = openedAt;
           ref4.current = false;
           ref.current = undefined;
         }
         const _Date = Date;
         const timestamp = Date.now();
         if (ref.current == null) {
-          tmp9.current = timestamp - tmp22;
+          ref.current = timestamp - openedAt;
         }
         let state;
         if (stateFromStores != null) {
           state = tmp10.state;
         }
-        let current = "success" !== state;
-        if (!current) {
-          current = ref4.current;
-        }
+        const current = "success" !== state || ref4.current;
         if (!current) {
           ref4.current = true;
-          const obj2 = { profileUi: "PROFILE_FRAME", timeToInteractiveMs: tmp9.current, timeToLoadMs: timestamp - tmp22, timeToFetchMs: null, viewStartedAt: null, fetchStartedAt: null, analyticsLocations: null };
-          let diff;
-          if (null != tmp10.startedAt) {
-            if (null != tmp10.endedAt) {
+          const obj = { profileUi: "PROFILE_FRAME", timeToInteractiveMs: ref.current, timeToLoadMs: timestamp - openedAt, timeToFetchMs: diff, viewStartedAt: openedAt, fetchStartedAt: stateFromStores.startedAt, analyticsLocations };
+          diff = undefined;
+          const maybeTrackUserProfileUiViewed = UserProfileAnalyticsUtils.maybeTrackUserProfileUiViewed;
+          UserProfileAnalyticsUtils;
+          if (null != stateFromStores.startedAt) {
+            if (null != stateFromStores.endedAt) {
               diff = tmp10.endedAt - tmp10.startedAt;
             }
           }
-          obj2.timeToFetchMs = diff;
-          obj2.viewStartedAt = tmp22;
-          obj2.fetchStartedAt = tmp10.startedAt;
-          obj2.analyticsLocations = analyticsLocations;
-          const merged = Object.assign(closure_1_2);
-          const result = UserProfileAnalyticsUtils.maybeTrackUserProfileUiViewed(obj2);
+          const merged = Object.assign(closure_2);
+          const result = maybeTrackUserProfileUiViewed(obj);
         }
-        tmp23 = ref2;
       }
     }
   }, items1);

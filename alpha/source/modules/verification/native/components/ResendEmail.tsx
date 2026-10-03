@@ -1,106 +1,583 @@
-// Module ID: 6192
-// Function ID: 6193
+// Module ID: 6080
+// Function ID: 6081
 // Name: ResendEmail
-// Dependencies: [32, 19, 17, 2037, 1372, 1074, 21, 4845, 1485, 504, 38, 6193, 6119, 6194, 4841, 1115, 5465, 6196, 4557, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 2044, 1377, 1085, 21, 4890, 558, 576, 1490, 38, 504, 6081, 6007, 6082, 4568, 1126, 6090, 4886, 5594, 2]
 
-// Module 6192 (ResendEmail)
-import util from "util" /* 1115 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4557 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6119 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6196 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2037 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 6080 (ResendEmail)
+import react_native from "react-native" /* 17 */;
+import Constants from "Constants" /* 1085 */;
+import intl5 from "intl" /* 1126 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6007 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6082 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2044 */;
+import UserStore from "UserStore" /* 1377 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const VerificationModalScenes = fn(1074).VerificationModalScenes;
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4845);
+let currentUser, navigation, ref;
+
+let c10;
+let c9;
+const View = react_native.View;
+const VerificationModalScenes = Constants.VerificationModalScenes;
+({ jsx: c9, jsxs: c10 } = Fragment);
 let closure_11 = createStyles.createStyles({ container: { flex: 1, padding: 16, justifyContent: "center", alignItems: "center" }, title: { marginTop: 16, textAlign: "center" }, body: { marginTop: 8, lineHeight: 18, textAlign: "center" }, resend: { marginTop: 16, width: "100%" }, change: { marginTop: 8, width: "100%" } });
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/verification/native/components/ResendEmail.tsx");
-
-export default function ResendEmail() {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let Button2;
+  let action;
+  let email;
+  let intl2;
+  let intl3;
+  let obj10;
+  let tmp10;
+  let tmp11;
+  let tmp14;
+  let tmp19;
+  let tmp20;
+  let tmp21;
+  let tmp23;
+  let tmp25;
+  let tmp30;
+  let tmp35Result;
+  let tmp6;
+  let tmp7;
+  let verified;
+  let tmp = navigation;
+  let obj = navigation(576);
+  const cResult = obj.c(37);
+  const tmp4 = closure_11();
+  let obj2 = navigation(1490);
+  navigation = obj2.useNavigation();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function v() {
+      currentUser = currentUser.getCurrentUser();
+      verified(dependencyMap[11])(null != currentUser, "ResendEmail: user cannot be undefined");
+      return currentUser;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp6 = items;
+    tmp7 = fn;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
+  ({ email, verified } = stateFromStores);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [UserRequiredActionStore];
+    const fn2 = function p() {
+      return action.getAction();
+    };
+    cResult[2] = items1;
+    cResult[3] = fn2;
+    tmp11 = fn2;
+    tmp10 = items1;
+  } else {
+    tmp10 = cResult[2];
+    tmp11 = cResult[3];
+  }
+  const tmpResult2 = tmp(504);
+  const stateFromStores1 = tmpResult2.useStateFromStores(tmp10, tmp11);
+  if (cResult[4] !== stateFromStores1) {
+    const obj5 = verified(6081);
+    const result = obj5.isEmailReverification(stateFromStores1);
+    cResult[4] = stateFromStores1;
+    cResult[5] = result;
+    tmp14 = result;
+  } else {
+    tmp14 = cResult[5];
+  }
+  [tmp19, dependencyMap] = ref(react.useState(false), 2);
+  ref(react.useState(false), 2);
+  ref = react.useRef(verified);
+  if (cResult[6] !== verified) {
+    class A {
+      constructor() {
+        const tmp = verified && false === ref.current;
+        if (tmp) {
+          const obj = EmailVerificationModalActionCreatorsDefault;
+          obj.close();
+        }
+      }
+    }
+    const items2 = [verified];
+    cResult[6] = verified;
+    cResult[7] = A;
+    cResult[8] = items2;
+    tmp21 = items2;
+    tmp20 = A;
+  } else {
+    class A {
+      constructor() {
+        const tmp = verified && false === ref.current;
+        if (tmp) {
+          const obj = EmailVerificationModalActionCreatorsDefault;
+          obj.close();
+        }
+      }
+    }
+    tmp21 = cResult[8];
+  }
+  const effect = obj6.useEffect(tmp20, tmp21);
+  if (cResult[9] !== verified) {
+    class O {
+      constructor() {
+        ref.current = verified;
+      }
+    }
+    cResult[9] = verified;
+    cResult[10] = O;
+    tmp23 = O;
+  } else {
+    class O {
+      constructor() {
+        ref.current = verified;
+      }
+    }
+  }
+  const effect1 = obj6.useEffect(tmp23);
+  if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+    class L {
+      constructor() {
+        let intl;
+        dependencyMap(true);
+        const obj = AuthenticationActionCreatorsDefault;
+        obj.verifyResend();
+        const obj2 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: intl.string(intl5.t["84yeoz"]) };
+        const open = ToastActionCreatorsDefault.open;
+        ToastActionCreatorsDefault;
+        intl = intl5.intl;
+        open(obj2);
+      }
+    }
+    cResult[11] = L;
+    tmp25 = L;
+  } else {
+    class L {
+      constructor() {
+        let intl;
+        dependencyMap(true);
+        const obj = AuthenticationActionCreatorsDefault;
+        obj.verifyResend();
+        const obj2 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: intl.string(intl5.t["84yeoz"]) };
+        const open = ToastActionCreatorsDefault.open;
+        ToastActionCreatorsDefault;
+        intl = intl5.intl;
+        open(obj2);
+      }
+    }
+  }
+  if (cResult[12] !== navigation) {
+    class L {
+      constructor() {
+        let intl;
+        dependencyMap(true);
+        const obj = AuthenticationActionCreatorsDefault;
+        obj.verifyResend();
+        const obj2 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: intl.string(intl5.t["84yeoz"]) };
+        const open = ToastActionCreatorsDefault.open;
+        ToastActionCreatorsDefault;
+        intl = intl5.intl;
+        open(obj2);
+      }
+    }
+    cResult[12] = navigation;
+    cResult[13] = tmp27;
+  } else {
+    class L {
+      constructor() {
+        let intl;
+        dependencyMap(true);
+        const obj = AuthenticationActionCreatorsDefault;
+        obj.verifyResend();
+        const obj2 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: intl.string(intl5.t["84yeoz"]) };
+        const open = ToastActionCreatorsDefault.open;
+        ToastActionCreatorsDefault;
+        intl = intl5.intl;
+        open(obj2);
+      }
+    }
+  }
+  if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+    class L {
+      constructor() {
+        let intl;
+        dependencyMap(true);
+        const obj = AuthenticationActionCreatorsDefault;
+        obj.verifyResend();
+        const obj2 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: intl.string(intl5.t["84yeoz"]) };
+        const open = ToastActionCreatorsDefault.open;
+        ToastActionCreatorsDefault;
+        intl = intl5.intl;
+        open(obj2);
+      }
+    }
+    cResult[14] = closure_9(tmp(6090).EnvelopeOpenSpotIllustration, { scale: 0.75 });
+    const tmp29 = closure_9(tmp(6090).EnvelopeOpenSpotIllustration, { scale: 0.75 });
+  } else {
+    class L {
+      constructor() {
+        let intl;
+        dependencyMap(true);
+        const obj = AuthenticationActionCreatorsDefault;
+        obj.verifyResend();
+        const obj2 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: intl.string(intl5.t["84yeoz"]) };
+        const open = ToastActionCreatorsDefault.open;
+        ToastActionCreatorsDefault;
+        intl = intl5.intl;
+        open(obj2);
+      }
+    }
+  }
+  const title = tmp4.title;
+  if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+    class L {
+      constructor() {
+        let intl;
+        dependencyMap(true);
+        const obj = AuthenticationActionCreatorsDefault;
+        obj.verifyResend();
+        const obj2 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: intl.string(intl5.t["84yeoz"]) };
+        const open = ToastActionCreatorsDefault.open;
+        ToastActionCreatorsDefault;
+        intl = intl5.intl;
+        open(obj2);
+      }
+    }
+    const stringResult = obj7.string(tmp(1126).t.fUtddV);
+    cResult[15] = stringResult;
+    tmp30 = stringResult;
+  } else {
+    class L {
+      constructor() {
+        let intl;
+        dependencyMap(true);
+        const obj = AuthenticationActionCreatorsDefault;
+        obj.verifyResend();
+        const obj2 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: intl.string(intl5.t["84yeoz"]) };
+        const open = ToastActionCreatorsDefault.open;
+        ToastActionCreatorsDefault;
+        intl = intl5.intl;
+        open(obj2);
+      }
+    }
+  }
+  if (cResult[16] !== tmp4.title) {
+    class L {
+      constructor() {
+        let intl;
+        dependencyMap(true);
+        const obj = AuthenticationActionCreatorsDefault;
+        obj.verifyResend();
+        const obj2 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: intl.string(intl5.t["84yeoz"]) };
+        const open = ToastActionCreatorsDefault.open;
+        ToastActionCreatorsDefault;
+        intl = intl5.intl;
+        open(obj2);
+      }
+    }
+    const obj3 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp30 };
+    cResult[16] = tmp4.title;
+    cResult[17] = closure_9(tmp(4886).Text, obj3);
+    const tmp33 = closure_9(tmp(4886).Text, obj3);
+  } else {
+    class L {
+      constructor() {
+        let intl;
+        dependencyMap(true);
+        const obj = AuthenticationActionCreatorsDefault;
+        obj.verifyResend();
+        const obj2 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: intl.string(intl5.t["84yeoz"]) };
+        const open = ToastActionCreatorsDefault.open;
+        ToastActionCreatorsDefault;
+        intl = intl5.intl;
+        open(obj2);
+      }
+    }
+  }
+  if (cResult[18] === email) {
+    class L {
+      constructor() {
+        let intl;
+        dependencyMap(true);
+        const obj = AuthenticationActionCreatorsDefault;
+        obj.verifyResend();
+        const obj2 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: intl.string(intl5.t["84yeoz"]) };
+        const open = ToastActionCreatorsDefault.open;
+        ToastActionCreatorsDefault;
+        intl = intl5.intl;
+        open(obj2);
+      }
+    }
+    if (cResult[21] === tmp4.body) {
+      let tmp41;
+      class L {
+        constructor() {
+          let intl;
+          dependencyMap(true);
+          const obj = AuthenticationActionCreatorsDefault;
+          obj.verifyResend();
+          const obj2 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: intl.string(intl5.t["84yeoz"]) };
+          const open = ToastActionCreatorsDefault.open;
+          ToastActionCreatorsDefault;
+          intl = intl5.intl;
+          open(obj2);
+        }
+      }
+      const _Symbol = Symbol;
+      if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
+        class L {
+          constructor() {
+            let intl;
+            dependencyMap(true);
+            const obj = AuthenticationActionCreatorsDefault;
+            obj.verifyResend();
+            const obj2 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: intl.string(intl5.t["84yeoz"]) };
+            const open = ToastActionCreatorsDefault.open;
+            ToastActionCreatorsDefault;
+            intl = intl5.intl;
+            open(obj2);
+          }
+        }
+        const obj4 = { text: intl2.string(tmp(1126).t.WnX4J2), variant: "primary", onPress: tmp25, grow: true };
+        const Button = tmp(5594).Button;
+        intl2 = tmp(1126).intl;
+        const tmp42 = closure_9(Button, obj4);
+        cResult[24] = tmp42;
+        tmp41 = tmp42;
+      } else {
+        class L {
+          constructor() {
+            let intl;
+            dependencyMap(true);
+            const obj = AuthenticationActionCreatorsDefault;
+            obj.verifyResend();
+            const obj2 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: intl.string(intl5.t["84yeoz"]) };
+            const open = ToastActionCreatorsDefault.open;
+            ToastActionCreatorsDefault;
+            intl = intl5.intl;
+            open(obj2);
+          }
+        }
+      }
+      if (cResult[25] !== tmp4.resend) {
+        class L {
+          constructor() {
+            let intl;
+            dependencyMap(true);
+            const obj = AuthenticationActionCreatorsDefault;
+            obj.verifyResend();
+            const obj2 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: intl.string(intl5.t["84yeoz"]) };
+            const open = ToastActionCreatorsDefault.open;
+            ToastActionCreatorsDefault;
+            intl = intl5.intl;
+            open(obj2);
+          }
+        }
+        const obj8 = { style: tmp4.resend, children: tmp41 };
+        cResult[25] = tmp4.resend;
+        cResult[26] = closure_9(View, obj8);
+        const tmp45 = closure_9(View, obj8);
+      } else {
+        class L {
+          constructor() {
+            let intl;
+            dependencyMap(true);
+            const obj = AuthenticationActionCreatorsDefault;
+            obj.verifyResend();
+            const obj2 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: intl.string(intl5.t["84yeoz"]) };
+            const open = ToastActionCreatorsDefault.open;
+            ToastActionCreatorsDefault;
+            intl = intl5.intl;
+            open(obj2);
+          }
+        }
+      }
+      if (cResult[27] === !tmp14) {
+        class L {
+          constructor() {
+            let intl;
+            dependencyMap(true);
+            const obj = AuthenticationActionCreatorsDefault;
+            obj.verifyResend();
+            const obj2 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: intl.string(intl5.t["84yeoz"]) };
+            const open = ToastActionCreatorsDefault.open;
+            ToastActionCreatorsDefault;
+            intl = intl5.intl;
+            open(obj2);
+          }
+        }
+      }
+      let tmp47 = tmp17;
+      if (!tmp14) {
+        class L {
+          constructor() {
+            let intl;
+            dependencyMap(true);
+            const obj = AuthenticationActionCreatorsDefault;
+            obj.verifyResend();
+            const obj2 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: intl.string(intl5.t["84yeoz"]) };
+            const open = ToastActionCreatorsDefault.open;
+            ToastActionCreatorsDefault;
+            intl = intl5.intl;
+            open(obj2);
+          }
+        }
+        const obj9 = { style: tmp4.change, children: closure_9(Button2, obj10) };
+        obj10 = { text: intl3.string(tmp(1126).t.Vm8akB), variant: "secondary", onPress: tmp26, grow: true };
+        Button2 = tmp(5594).Button;
+        intl3 = tmp(1126).intl;
+        tmp47 = closure_9(View, obj9);
+      }
+      cResult[27] = !tmp14;
+      cResult[28] = tmp26;
+      cResult[29] = tmp4.change;
+      cResult[30] = tmp47;
+    }
+    const obj11 = { style: tmp4.body, variant: "text-sm/medium", color: "text-default", children: tmp34 };
+    cResult[21] = tmp4.body;
+    cResult[22] = tmp34;
+    cResult[23] = closure_9(tmp(4886).Text, obj11);
+    const tmp40 = closure_9(tmp(4886).Text, obj11);
+  }
+  let intl = tmp(1126).intl;
+  if (tmp19) {
+    class L {
+      constructor() {
+        let intl;
+        dependencyMap(true);
+        const obj = AuthenticationActionCreatorsDefault;
+        obj.verifyResend();
+        const obj2 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: intl.string(intl5.t["84yeoz"]) };
+        const open = ToastActionCreatorsDefault.open;
+        ToastActionCreatorsDefault;
+        intl = intl5.intl;
+        open(obj2);
+      }
+    }
+    const obj12 = { email };
+    tmp35Result = tmp37(tmp(1126).t.JqLgQL, obj12);
+  } else {
+    class L {
+      constructor() {
+        let intl;
+        dependencyMap(true);
+        const obj = AuthenticationActionCreatorsDefault;
+        obj.verifyResend();
+        const obj2 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: intl.string(intl5.t["84yeoz"]) };
+        const open = ToastActionCreatorsDefault.open;
+        ToastActionCreatorsDefault;
+        intl = intl5.intl;
+        open(obj2);
+      }
+    }
+    tmp35Result = tmp35(tmp(1126).t.tSXg8O);
+  }
+  cResult[18] = email;
+  cResult[19] = tmp19;
+  cResult[20] = tmp35Result;
+}) : (() => {
+  let Button;
+  let Button2;
+  let action;
+  let formatResult;
+  let intl;
+  let intl3;
+  let intl4;
+  let items4;
+  let obj10;
+  let obj12;
+  let tmp10;
   let tmp = closure_11();
-  navigation = navigation(1485).useNavigation();
-  let obj = navigation(1485);
+  let obj = navigation(1490);
+  navigation = obj.useNavigation();
+  let obj2 = navigation(504);
   const items = [UserStore];
-  const stateFromStores = navigation(504).useStateFromStores(items, () => {
+  const stateFromStores = obj2.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
-    verified(38)(null != currentUser, "ResendEmail: user cannot be undefined");
+    verified(dependencyMap[11])(null != currentUser, "ResendEmail: user cannot be undefined");
     return currentUser;
   });
   const verified = stateFromStores.verified;
-  const obj2 = navigation(504);
+  const email = stateFromStores.email;
   const items1 = [UserRequiredActionStore];
-  const stateFromStores1 = navigation(504).useStateFromStores(items1, () => action.getAction());
-  let obj3 = navigation(504);
-  const result = verified(6193).isEmailReverification(stateFromStores1);
+  const obj3 = navigation(504);
+  const stateFromStores1 = obj3.useStateFromStores(items1, () => action.getAction());
+  const obj4 = verified(6081);
+  const result = obj4.isEmailReverification(stateFromStores1);
   let tmp16Result = !result;
-  const obj4 = verified(6193);
-  [tmp10, dependencyMap] = noop.useState(false);
-  _slicedToArray = noop.useRef(verified);
+  [tmp10, dependencyMap] = ref(react.useState(false), 2);
+  ref(react.useState(false), 2);
+  ref = react.useRef(verified);
   const items2 = [verified];
-  const effect = noop.useEffect(() => {
-    let tmp = verified;
-    if (verified) {
-      tmp = false === ref.current;
-    }
+  const effect = react.useEffect(() => {
+    const tmp = verified && false === ref.current;
     if (tmp) {
-      EmailVerificationModalActionCreatorsDefault.close();
+      const obj = EmailVerificationModalActionCreatorsDefault;
+      obj.close();
     }
   }, items2);
-  const effect1 = noop.useEffect(() => {
-    closure_3.current = verified;
+  const effect1 = react.useEffect(() => {
+    ref.current = verified;
   });
   const items3 = [navigation];
-  const obj5 = { style: tmp.container, children: null };
-  const callback = noop.useCallback(() => {
+  const obj5 = { style: tmp.container, children: items4 };
+  const callback = react.useCallback(() => {
     navigation.push(VerificationModalScenes.ENTER_EMAIL);
   }, items3);
-  const items4 = [closure_9(navigation(6194).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
-  const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-  let intl = navigation(1115).intl;
-  obj6.children = intl.string(navigation(1115).t.fUtddV);
-  items4[1] = closure_9(navigation(4841).Text, obj6);
-  const obj7 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl2 = navigation(1115).intl;
+  items4 = [closure_9(navigation(6090).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
+  const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(navigation(1126).t.fUtddV) };
+  const Text = navigation(4886).Text;
+  intl = navigation(1126).intl;
+  items4[1] = closure_9(Text, obj6);
+  const obj7 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: formatResult };
+  const Text2 = navigation(4886).Text;
+  const intl2 = navigation(1126).intl;
+  const tmp14 = closure_10;
   if (tmp10) {
-    const obj8 = { email: stateFromStores.email };
-    let formatResult = intl2.format(tmp2(1115).t.JqLgQL, obj8);
+    const obj8 = { email };
+    formatResult = intl2.format(tmp2(1126).t.JqLgQL, obj8);
   } else {
-    formatResult = intl2.string(tmp2(1115).t.tSXg8O);
+    formatResult = intl2.string(tmp2(1126).t.tSXg8O);
   }
-  obj7.children = formatResult;
-  items4[2] = closure_9(navigation(4841).Text, obj7);
-  const obj9 = { style: tmp.resend, children: null };
-  const obj10 = { text: null, variant: "primary", onPress: null, grow: true };
-  const intl3 = tmp2(1115).intl;
-  obj10.text = intl3.string(navigation(1115).t.WnX4J2);
-  obj10.onPress = function onPress() {
-    dependencyMap(true);
-    AuthenticationActionCreatorsDefault.verifyResend();
-    const obj3 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: null };
-    const intl = util.intl;
-    obj3.content = intl.string(util.t["84yeoz"]);
-    ToastActionCreatorsDefault.open(obj3);
+  items4[2] = closure_9(Text2, obj7);
+  const obj9 = { style: tmp.resend, children: closure_9(Button, obj10) };
+  obj10 = {
+    text: intl3.string(navigation(1126).t.WnX4J2),
+    variant: "primary",
+    onPress() {
+      let intl;
+      dependencyMap(true);
+      const obj = AuthenticationActionCreatorsDefault;
+      obj.verifyResend();
+      const obj2 = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: intl.string(intl5.t["84yeoz"]) };
+      const open = ToastActionCreatorsDefault.open;
+      ToastActionCreatorsDefault;
+      intl = intl5.intl;
+      open(obj2);
+    },
+    grow: true
   };
-  obj9.children = closure_9(navigation(5465).Button, obj10);
+  Button = tmp2(5594).Button;
+  intl3 = tmp2(1126).intl;
   items4[3] = closure_9(View, obj9);
   if (!result) {
-    const obj11 = { style: tmp.change, children: null };
-    const obj12 = { text: null, variant: "secondary", onPress: null, grow: true };
-    const intl4 = tmp2(1115).intl;
-    obj12.text = intl4.string(tmp2(1115).t.Vm8akB);
-    obj12.onPress = callback;
-    obj11.children = tmp16(tmp2(5465).Button, obj12);
+    const obj11 = { style: tmp.change, children: closure_9(Button2, obj12) };
+    obj12 = { text: intl4.string(navigation(1126).t.Vm8akB), variant: "secondary", onPress: callback, grow: true };
+    Button2 = tmp2(5594).Button;
+    intl4 = tmp2(1126).intl;
     tmp16Result = tmp16(tmp15, obj11);
   }
   items4[4] = tmp16Result;
-  obj5.children = items4;
-  return closure_10(View, obj5);
-};
+  return tmp14(View, obj5);
+});
+let result = size.fileFinishedImporting("modules/verification/native/components/ResendEmail.tsx");
+
+export default tmp3;

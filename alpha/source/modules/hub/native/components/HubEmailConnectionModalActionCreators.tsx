@@ -1,31 +1,37 @@
-// Module ID: 12472
-// Function ID: 12473
+// Module ID: 12412
+// Function ID: 12413
 // Name: HubEmailConnectionModalActionCreators
-// Dependencies: [5, 5048, 12454, 1981, 2]
+// Dependencies: [5, 5093, 12394, 1987, 2]
 
-// Module 12472 (HubEmailConnectionModalActionCreators)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5048 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+// Module 12412 (HubEmailConnectionModalActionCreators)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
 const HUB_EMAIL_CONNECTION_MODAL_KEY = "HUB_EMAIL_CONNECTION_MODAL_KEY";
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/hub/native/components/HubEmailConnectionModalActionCreators.tsx");
-
-export default {
+let obj = {
   open(merged, arg1) {
-    closure_0 = arg1;
-    ModalActionCreatorsDefault.pushLazy(asyncGeneratorStep(async () => {
-      closure_1 = tmp5;
-      await tmp2(paths[3])(paths[2], paths.paths);
-      closure_128_0 = arg1.default;
+    let paths;
+    let closure_0 = arg1;
+    let obj = ModalActionCreatorsDefault;
+    obj.pushLazy(_asyncToGenerator(async () => {
+      let c3;
+      let closure_1;
+      let value = tmp;
+      await value(c2[3])(c2[2], c2.paths);
+      value = arg1.default;
       if (null != closure_129_0) {
-        closure_128_0.modalConfig = { animation: closure_129_0 };
+        const obj = { animation: closure_129_0 };
+        value.modalConfig = obj;
       }
-      return closure_128_0;
+      return value;
     }), merged, HUB_EMAIL_CONNECTION_MODAL_KEY);
   },
   close() {
-    ModalActionCreatorsDefault.popWithKey(HUB_EMAIL_CONNECTION_MODAL_KEY);
+    const obj = ModalActionCreatorsDefault;
+    obj.popWithKey(HUB_EMAIL_CONNECTION_MODAL_KEY);
   }
 };
+const result = size.fileFinishedImporting("modules/hub/native/components/HubEmailConnectionModalActionCreators.tsx");
+
+export default obj;

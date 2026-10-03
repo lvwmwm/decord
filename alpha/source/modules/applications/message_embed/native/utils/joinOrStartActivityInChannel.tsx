@@ -1,62 +1,139 @@
-// Module ID: 11636
-// Function ID: 11637
+// Module ID: 11556
+// Function ID: 11557
 // Name: joinOrStartActivityInChannel
-// Dependencies: [5, 2043, 2044, 2098, 9021, 8974, 8956, 2]
+// Dependencies: [5, 2050, 2051, 2103, 9049, 8993, 8990, 2]
 // Exports: joinOrStartActivityInChannel
 
-// Module 11636 (joinOrStartActivityInChannel)
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
+// Module 11556 (joinOrStartActivityInChannel)
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-let closure_7 = async function _joinOrStartActivityInChannel() {
-  closure_3 = tmp2;
-  closure_2 = tmp3;
-  ({ appId: closure_130_0, channelId: closure_130_1, analyticsLocations: closure_130_2, customId: closure_130_3, referrerId: closure_130_4 } = closure_0);
-  await "flex";
-  const selfEmbeddedActivityForChannel = closure_131_4.getSelfEmbeddedActivityForChannel(closure_130_1);
-  const voiceChannelId = closure_131_6.getVoiceChannelId();
-  if (selfEmbeddedActivityForChannel != null) {
-    const applicationId = selfEmbeddedActivityForChannel.applicationId;
-  }
-  if (applicationId === closure_130_0) {
-    if (voiceChannelId === closure_130_1) {
-      const channel = closure_131_5.getChannel(closure_130_1);
-      let guild_id;
-      if (channel != null) {
-        guild_id = channel.guild_id;
+let analyticsLocations, applicationId, channelId, customId, guild_id, length, referrerId;
+
+let obj = function _joinOrStartActivityInChannel() {
+  obj = _asyncToGenerator(async (applicationId) => {
+    let c4 = 0;
+    let c5 = 0;
+    const iter = (async (arg0, value) => {
+      let c0;
+      let c1;
+      let c2;
+      let c3;
+      let c4;
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } else {
+        try {
+          let selfEmbeddedActivityForChannel;
+          let voiceChannelId;
+          let closure_8;
+          let compositeInstanceId;
+          c5 = 2;
+          if (0 === referrerId) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              return { value, done: true };
+            } else {
+              let closure_3 = tmp;
+              let closure_2 = tmp2;
+              applicationId = undefined;
+              channelId = undefined;
+              analyticsLocations = undefined;
+              customId = undefined;
+              ({ appId: c0, channelId: c1, analyticsLocations: c2, customId: c3, referrerId: c4 } = closure_0);
+              selfEmbeddedActivityForChannel = undefined;
+              voiceChannelId = undefined;
+              guild_id = undefined;
+              closure_8 = undefined;
+              length = undefined;
+              compositeInstanceId = undefined;
+              referrerId = 1;
+              c5 = 1;
+              return { value: "Reflect", done: true };
+            }
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              return { value, done: true };
+            } else {
+              selfEmbeddedActivityForChannel = closure_131_4.getSelfEmbeddedActivityForChannel(channelId);
+              voiceChannelId = closure_131_6.getVoiceChannelId();
+              applicationId = undefined;
+              if (selfEmbeddedActivityForChannel != null) {
+                applicationId = selfEmbeddedActivityForChannel.applicationId;
+              }
+              if (applicationId === applicationId) {
+                if (voiceChannelId === channelId) {
+                  closure_131_5.getChannel(channelId);
+                  guild_id = undefined;
+                  if (guild_id != null) {
+                    guild_id = guild_id.guild_id;
+                  }
+                  channelId = guild_id;
+                  if (guild_id == null) {
+                    channelId = null;
+                  }
+                  closure_8 = channelId;
+                  closure_131_1(closure_131_2[4])(closure_8, selfEmbeddedActivityForChannel.location);
+                  c5 = 3;
+                  return { value: true, done: true };
+                }
+              }
+              const embeddedActivitiesForChannel = closure_131_4.getEmbeddedActivitiesForChannel(channelId);
+              length = embeddedActivitiesForChannel.filter((applicationId) => applicationId.applicationId === applicationId);
+              compositeInstanceId = undefined;
+              if (length.length > 0) {
+                compositeInstanceId = length[0].compositeInstanceId;
+              }
+              const obj5 = { channelId, applicationId, isStart: null == compositeInstanceId, embeddedActivitiesManager: closure_131_1(closure_131_2[6])(), analyticsLocations, customId, referrerId };
+              const runPrimaryAppCommandOrJoinEmbeddedActivity = closure_131_0(closure_131_2[5]).runPrimaryAppCommandOrJoinEmbeddedActivity;
+              closure_131_0(closure_131_2[5]);
+              referrerId = 2;
+              c5 = 1;
+              const obj6 = { value: runPrimaryAppCommandOrJoinEmbeddedActivity(obj5), done: false };
+              return obj6;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            return { value, done: true };
+          } else {
+            c5 = 3;
+            return { value, done: true };
+          }
+        } catch (tmp43) {
+          c5 = 3;
+          throw tmp43;
+        }
       }
-      c1 = guild_id;
-      if (guild_id == null) {
-        c1 = null;
-      }
-      closure_130_8 = c1;
-      closure_131_1(closure_131_2[4])(closure_130_8, selfEmbeddedActivityForChannel.location);
-      c5 = 3;
-      return { value: true, done: true };
-    }
-  }
-  const embeddedActivitiesForChannel = closure_131_4.getEmbeddedActivitiesForChannel(closure_130_1);
-  closure_130_9 = embeddedActivitiesForChannel.filter((applicationId) => applicationId.applicationId === closure_1_0);
-  if (closure_130_9.length > 0) {
-    const compositeInstanceId = closure_130_9[0].compositeInstanceId;
-  }
-  closure_130_10 = compositeInstanceId;
-  await closure_131_0(closure_131_2[5]).runPrimaryAppCommandOrJoinEmbeddedActivity({ channelId: closure_130_1, applicationId: closure_130_0, isStart: null == closure_130_10, embeddedActivitiesManager: closure_131_1(closure_131_2[6])(), analyticsLocations: closure_130_2, customId: closure_130_3, referrerId: closure_130_4 });
-  return arg1;
+    })();
+    iter.next();
+    return iter;
+  });
+  return obj(...arguments);
 };
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/applications/message_embed/native/utils/joinOrStartActivityInChannel.tsx");
 
 export const joinOrStartActivityInChannel = function joinOrStartActivityInChannel() {
-  const self = this;
-  const apply = closure_7.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };

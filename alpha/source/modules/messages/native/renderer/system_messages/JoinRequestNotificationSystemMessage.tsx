@@ -1,26 +1,30 @@
-// Module ID: 7672
-// Function ID: 7673
+// Module ID: 7716
+// Function ID: 7717
 // Name: JoinRequestNotificationSystemMessage
-// Dependencies: [6039, 4685, 2066, 1372, 1074, 1115, 11, 7579, 2]
+// Dependencies: [5932, 4700, 2074, 1377, 1085, 1126, 11, 7623, 2]
 // Exports: createJoinRequestNotificationSystemMessage
 
-// Module 7672 (JoinRequestNotificationSystemMessage)
+// Module 7716 (JoinRequestNotificationSystemMessage)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import util from "util" /* 1115 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7579 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6039 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4685 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import UserStore from "UserStore" /* 1372 */;
+import Constants from "Constants" /* 1085 */;
+import intl7 from "intl" /* 1126 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5932 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4700 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import UserStore from "UserStore" /* 1377 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const MessageTypes = fn(1074).MessageTypes;
-const size = fn(2);
+let tmp;
+const createCommonMessageDefault = tmp(7623);
+const MessageTypes = Constants.MessageTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/JoinRequestNotificationSystemMessage.tsx");
 
 export const createJoinRequestNotificationSystemMessage = function createJoinRequestNotificationSystemMessage(message) {
+  let name;
+  let str;
   message = message.message;
-  const request = GuildJoinRequestStore.getRequest(SnowflakeUtilsDefault.cast(message.channel_id));
+  const obj = SnowflakeUtilsDefault;
+  const request = GuildJoinRequestStore.getRequest(obj.cast(message.channel_id));
   let tmp4;
   if (null != request) {
     let guild = GuildStore.getGuild(request.guildId);
@@ -30,10 +34,11 @@ export const createJoinRequestNotificationSystemMessage = function createJoinReq
     tmp4 = guild;
   }
   let userId;
+  const getUser = UserStore.getUser;
   if (request != null) {
     userId = request.userId;
   }
-  const user1 = UserStore.getUser(userId);
+  const user1 = getUser(userId);
   let username;
   if (user1 != null) {
     username = user1.username;
@@ -50,45 +55,49 @@ export const createJoinRequestNotificationSystemMessage = function createJoinReq
   }
   const type = message.type;
   if (tmp4 != null) {
-    const name = tmp4.name;
+    name = tmp4.name;
   }
   if (MessageTypes.GUILD_JOIN_REQUEST_ACCEPT_NOTIFICATION === type) {
-    if (null == username) {
-      const intl5 = util.intl;
-      let stringResult = intl5.string(util.t["2VLV0d"]);
+    if (null != username) {
+      let formatToPartsResult;
+      if (null != name) {
+        const intl6 = intl7.intl;
+        const obj2 = { username, guildName: name };
+        formatToPartsResult = intl6.formatToParts(intl7.t.EloBG4, obj2);
+      }
+      str = formatToPartsResult;
     }
-    const intl6 = util.intl;
-    const obj2 = { username, guildName: name };
-    stringResult = intl6.formatToParts(util.t.EloBG4, obj2);
+    const intl5 = intl7.intl;
+    formatToPartsResult = intl5.string(intl7.t["2VLV0d"]);
+  } else if (MessageTypes.GUILD_JOIN_REQUEST_REJECT_NOTIFICATION === type) {
+    if (null != username) {
+      let formatToPartsResult1;
+      if (null != name) {
+        const intl4 = intl7.intl;
+        const obj3 = { username, guildName: name };
+        formatToPartsResult1 = intl4.formatToParts(intl7.t["UGN/Yy"], obj3);
+      }
+      str = formatToPartsResult1;
+    }
+    const intl3 = intl7.intl;
+    formatToPartsResult1 = intl3.string(intl7.t.FVF6qU);
   } else {
-    if (tmp13.GUILD_JOIN_REQUEST_REJECT_NOTIFICATION === type) {
+    str = "";
+    if (MessageTypes.GUILD_JOIN_REQUEST_WITHDRAWN_NOTIFICATION === type) {
       if (null != username) {
+        let formatToPartsResult2;
         if (null != name) {
-          const intl4 = util.intl;
-          const obj3 = { username, guildName: name };
-          let formatToPartsResult = intl4.formatToParts(util.t["UGN/Yy"], obj3);
+          const intl2 = intl7.intl;
+          const obj4 = { username, guildName: name };
+          formatToPartsResult2 = intl2.formatToParts(intl7.t.u4movT, obj4);
         }
-        let str = formatToPartsResult;
+        str = formatToPartsResult2;
       }
-      const intl3 = util.intl;
-      formatToPartsResult = intl3.string(util.t.FVF6qU);
-    } else {
-      str = "";
-      if (tmp13.GUILD_JOIN_REQUEST_WITHDRAWN_NOTIFICATION === type) {
-        if (null != username) {
-          if (null != name) {
-            const intl2 = util.intl;
-            const obj4 = { username, guildName: name };
-            let formatToPartsResult1 = intl2.formatToParts(util.t.u4movT, obj4);
-          }
-          str = formatToPartsResult1;
-        }
-        const intl = util.intl;
-        formatToPartsResult1 = intl.string(util.t.BMlbE7);
-      }
+      const intl = intl7.intl;
+      formatToPartsResult2 = intl.string(intl7.t.BMlbE7);
     }
-    const obj5 = { content: str };
-    const merged = Object.assign(createCommonMessageDefault(message));
-    return obj5;
   }
+  const obj5 = { content: str };
+  const merged = Object.assign(createCommonMessageDefault(message));
+  return obj5;
 };

@@ -1,28 +1,32 @@
-// Module ID: 17529
-// Function ID: 17530
+// Module ID: 17618
+// Function ID: 17619
 // Name: VoiceChannelSettingsManager
-// Dependencies: [502, 13745, 2044, 2098, 13746, 1074, 573, 6725, 2]
+// Dependencies: [502, 13811, 2051, 2103, 13812, 1085, 584, 6613, 2]
 
-// Module 17529 (VoiceChannelSettingsManager)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 17618 (VoiceChannelSettingsManager)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import BitRateStore from "BitRateStore" /* 13745 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
-import VideoQualityModeStore from "VideoQualityModeStore" /* 13746 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
+import BitRateStore from "BitRateStore" /* 13811 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import VideoQualityModeStore from "VideoQualityModeStore" /* 13812 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
+import size from "module_2" /* 2 */;
 
 function updateVoiceSettings() {
   const voiceChannelId = SelectedChannelStore.getVoiceChannelId();
+  const obj = SelectedChannelStore;
   if (null != voiceChannelId) {
     const channel = ChannelStore.getChannel(voiceChannelId);
+    const tmp5 = null != channel && tmp2 !== channel.bitrate;
     if (tmp5) {
       const obj3 = { type: "SET_CHANNEL_BITRATE", bitrate: channel.bitrate };
-      DispatcherDefault.dispatch(obj3);
+      const obj2 = DispatcherDefault;
+      obj2.dispatch(obj3);
     }
-    tmp5 = null != channel && tmp2 !== channel.bitrate;
   }
-  const voiceChannelId1 = SelectedChannelStore.getVoiceChannelId();
+  const voiceChannelId1 = obj.getVoiceChannelId();
   if (null != voiceChannelId1) {
     const channel1 = ChannelStore.getChannel(voiceChannelId1);
     if (null != channel1) {
@@ -32,12 +36,14 @@ function updateVoiceSettings() {
       }
       if (tmp10 !== AUTO) {
         const obj5 = { type: "SET_CHANNEL_VIDEO_QUALITY_MODE", mode: AUTO };
-        DispatcherDefault.dispatch(obj5);
+        const obj4 = DispatcherDefault;
+        obj4.dispatch(obj5);
       }
     }
   }
 }
 function handleChannelUpdates(arg0) {
+  const tmp = arg0.channels[Symbol.iterator]();
   while (tmp !== undefined) {
     if (SelectedChannelStore.getVoiceChannelId() === tmp2.id) {
       let tmp5 = updateVoiceSettings();
@@ -46,6 +52,7 @@ function handleChannelUpdates(arg0) {
   }
 }
 function handleVoiceStateUpdates(voiceStates) {
+  let sessionId;
   voiceStates = voiceStates.voiceStates;
   const item = voiceStates.forEach((sessionId) => {
     if (sessionId.getSessionId() === sessionId.sessionId) {
@@ -53,16 +60,16 @@ function handleVoiceStateUpdates(voiceStates) {
     }
   });
 }
-const VideoQualityMode = fn(1074).VideoQualityMode;
-const prototype = function VoiceChannelSettingsManager() {
-  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  applyArgumentsResult.actions = { CHANNEL_UPDATES: handleChannelUpdates, VOICE_STATE_UPDATES: handleVoiceStateUpdates };
-  return applyArgumentsResult;
-}.prototype;
-class prototype extends tmp2 {
+const VideoQualityMode = Constants.VideoQualityMode;
+class VoiceChannelSettingsManager extends AutomaticLifecycleManager {
+  constructor() {
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    const obj = { CHANNEL_UPDATES: handleChannelUpdates, VOICE_STATE_UPDATES: handleVoiceStateUpdates };
+    applyArgumentsResult.actions = obj;
+    return applyArgumentsResult;
+  }
 }
-const prototype1 = new prototype();
-const size = fn(2);
+const voiceChannelSettingsManager = new VoiceChannelSettingsManager();
 const result = size.fileFinishedImporting("stores/VoiceChannelSettingsManager.tsx");
 
-export default prototype1;
+export default voiceChannelSettingsManager;

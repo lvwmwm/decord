@@ -1,47 +1,72 @@
-// Module ID: 10514
-// Function ID: 10515
+// Module ID: 10591
+// Function ID: 10592
 // Name: UnifiedGiftModalRecipientSelectScreen
-// Dependencies: [19, 17, 10515, 21, 4845, 576, 1485, 10516, 10482, 2]
-// Exports: default
+// Dependencies: [19, 17, 10592, 21, 4890, 587, 558, 576, 1490, 10593, 10559, 2]
 
-// Module 10514 (UnifiedGiftModalRecipientSelectScreen)
-import nativeDefault from "native" /* 576 */;
-import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10482 */;
-import SearchableUserListDefault from "SearchableUserList" /* 10516 */;
-import noop from "module_19" /* 19 */;
+// Module 10591 (UnifiedGiftModalRecipientSelectScreen)
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import nativeDefault from "native" /* 587 */;
+import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10559 */;
+import UserRowConstants from "UserRowConstants" /* 10592 */;
+import react from "react" /* 19 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const UserRowModes = fn(10515).UserRowModes;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
-let obj2 = { container: { flex: 1, paddingTop: 16, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND } };
-let closure_6 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/checkout/native/gifting/UnifiedGiftModalRecipientSelectScreen.tsx");
+let importDefault, navigation, setRecipientUser;
 
-export default function UnifiedGiftModalRecipientSelectScreen(setRecipientUser) {
+let obj2;
+const View = react_native.View;
+const UserRowModes = UserRowConstants.UserRowModes;
+const jsx = Fragment.jsx;
+let obj = { container: obj2 };
+obj2 = { flex: 1, paddingTop: 16, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
+let closure_6 = createStyles.createStyles(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((setRecipientUser) => {
+  const obj = setRecipientUser(576);
+  const cResult = obj.c(6);
   setRecipientUser = setRecipientUser.setRecipientUser;
-  importDefault = setRecipientUser(1485).useNavigation();
-  const obj2 = {
-    style: closure_6().container,
-    children: jsx(SearchableUserListDefault, {
-      onSelectUser(user) {
-        setRecipientUser(user);
-        navigation.navigate(UnifiedGiftModalTypes.UnifiedGiftModalScreens.GIFT_DETAIL, undefined, { pop: true });
-      },
-      rowMode: UserRowModes.NONE,
-      disableGradient: true,
-      disableThemedGradient: true
-    })
-  };
-  return <View style={closure_6().container}>{jsx(SearchableUserListDefault, {
-    onSelectUser(user) {
-      setRecipientUser(user);
+  const obj2 = setRecipientUser(1490);
+  navigation = obj2.useNavigation();
+  const tmp4 = closure_6();
+  if (cResult[0] === navigation) {
+    let tmp5;
+    if (cResult[1] === setRecipientUser) {
+      tmp5 = cResult[2];
+    }
+    if (cResult[3] === tmp4.container) {
+      let tmp7;
+      if (cResult[4] === tmp5) {
+        tmp7 = cResult[5];
+      }
+      return tmp7;
+    }
+    const tmp10 = <View style={tmp4.container}>{tmp5}</View>;
+    cResult[3] = tmp4.container;
+    cResult[4] = tmp5;
+    cResult[5] = tmp10;
+    tmp7 = tmp10;
+  }
+  const tmp6 = jsx(navigation(10593), {
+    onSelectUser(arg0) {
+      setRecipientUser(arg0);
       navigation.navigate(UnifiedGiftModalTypes.UnifiedGiftModalScreens.GIFT_DETAIL, undefined, { pop: true });
     },
     rowMode: UserRowModes.NONE,
     disableGradient: true,
     disableThemedGradient: true
-  })}</View>;
-};
+  });
+  cResult[0] = navigation;
+  cResult[1] = setRecipientUser;
+  cResult[2] = tmp6;
+  tmp5 = tmp6;
+}) : ((setRecipientUser) => {
+  setRecipientUser = setRecipientUser.setRecipientUser;
+  const obj = setRecipientUser(1490);
+  importDefault = obj.useNavigation();
+  return <View style={closure_6().container}>{null}</View>;
+});
+const result = size.fileFinishedImporting("modules/checkout/native/gifting/UnifiedGiftModalRecipientSelectScreen.tsx");
+
+export default tmp3;

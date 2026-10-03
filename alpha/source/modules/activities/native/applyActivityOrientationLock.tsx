@@ -1,11 +1,11 @@
-// Module ID: 17077
-// Function ID: 17078
+// Module ID: 17138
+// Function ID: 17139
 // Name: applyActivityOrientationLock
-// Dependencies: [2005, 10964, 2]
+// Dependencies: [2011, 10964, 2]
 // Exports: default
 
-// Module 17077 (applyActivityOrientationLock)
-import Constants from "Constants" /* 2005 */;
+// Module 17138 (applyActivityOrientationLock)
+import Constants from "Constants" /* 2011 */;
 import applyOrientationLock from "applyOrientationLock" /* 10964 */;
 import size from "module_2" /* 2 */;
 
@@ -14,10 +14,13 @@ let result = size.fileFinishedImporting("modules/activities/native/applyActivity
 
 export default function applyActivityOrientationLock(arg0) {
   if (OrientationLockState.UNLOCKED === arg0) {
-    const result = applyOrientationLock.releaseOrientationLock({ unlockAfterRotatingToPreviousLock: true });
-  } else if (tmp.PORTRAIT === arg0) {
-    applyOrientationLock.applyOrientationLock("PORTRAIT");
-  } else if (tmp.LANDSCAPE === arg0) {
-    applyOrientationLock.applyOrientationLock("LANDSCAPE");
+    const obj3 = applyOrientationLock;
+    const result = obj3.releaseOrientationLock({ unlockAfterRotatingToPreviousLock: true });
+  } else if (OrientationLockState.PORTRAIT === arg0) {
+    const obj2 = applyOrientationLock;
+    obj2.applyOrientationLock("PORTRAIT");
+  } else if (OrientationLockState.LANDSCAPE === arg0) {
+    const obj = applyOrientationLock;
+    obj.applyOrientationLock("LANDSCAPE");
   }
 };

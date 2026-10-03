@@ -1,112 +1,124 @@
-// Module ID: 1232
-// Function ID: 1233
+// Module ID: 1243
+// Function ID: 1244
 // Name: SentryInitUtils
-// Dependencies: [5, 17, 1074, 1085, 675, 3, 1233, 1101, 1241, 13828, 5363, 5368, 1357, 1231, 1363, 5364, 1364, 4821, 1610, 1358, 1344, 2]
+// Dependencies: [5, 17, 1085, 1096, 686, 3, 1244, 1112, 1252, 13894, 5409, 5414, 1362, 1242, 1368, 5410, 1369, 4866, 1615, 1363, 1355, 558, 2]
 // Exports: initSentry
 
-// Module 1232 (SentryInitUtils)
+// Module 1243 (SentryInitUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import router_utils from "router_utils" /* 1101 */;
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import TelemetryRingLifecycle from "TelemetryRingLifecycle" /* 1233 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ClientInfoUtilsAll from "ClientInfoUtils" /* 1363 */;
-import MetricEvents from "MetricEvents" /* 5368 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+import react_native from "react-native" /* 17 */;
+import Constants2 from "Constants" /* 1096 */;
+import router_utils from "router_utils" /* 1112 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import TelemetryRingLifecycle from "TelemetryRingLifecycle" /* 1244 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import react_nativeAll from "react-native" /* 1368 */;
+import MetricEvents from "MetricEvents" /* 5414 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import Constants from "Constants" /* 1085 */;
+import registerSpanErrorInstrumentation_mod from "module_686" /* 686 */;
+import CommonSentryInitUtils from "CommonSentryInitUtils" /* 1362 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let constants, importDefault;
 
-require = fn;
-let closure_15 = async function _maybeBackfillMissingBreadcrumbsFromTelemetryRing(arg0) {
-  let breadcrumbs = arg0;
-  c2 = 0;
-  c3 = 0;
-  return (async (arg0, value) => {
-    if (c3 === 2) {
-      c3 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
+let Endpoints;
+let metroRequire;
+let obj = function _maybeBackfillMissingBreadcrumbsFromTelemetryRing() {
+  obj = _asyncToGenerator(async (arg0) => {
+    let closure_1;
+    let breadcrumbs = arg0;
+    let c2 = 0;
+    let c3 = 0;
+    return (async function(arg0, value) {
+      let raceResult;
+      const f149757 = (arg0, arg1) => {
+        let closure_0 = arg1;
+        return setTimeout(() => {
+          const error = new Error("TelemetryRing breadcrumb timeout");
+          return closure_0(error);
+        }, 200);
+      };
+      if (c3 === 2) {
+        c3 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: "IconComponent" };
+        }
       } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c3 = 2;
-        if (0 === c2) {
-          if (arg0 === 1) {
+        try {
+          let tmp;
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              return { value, done: true };
+            } else {
+              tmp = undefined;
+              breadcrumbs = breadcrumbs.breadcrumbs;
+              const _Array2 = Array;
+              const SentryTelemetry = TelemetryRingLifecycle.SentryTelemetry;
+              items = [SentryTelemetry.snapshotForBreadcrumbs(), ];
+              const self = this;
+              const self2 = this;
+              items[1] = new Promise(f149757);
+              c2 = 1;
+              c3 = 1;
+              const promise = new Promise(f149757);
+              const obj4 = { value: raceResult.catch(() => null), done: false };
+              raceResult = race(items);
+              return obj4;
+            }
+          } else if (arg0 === 1) {
             c3 = 3;
             throw value;
           } else if (arg0 === 2) {
             c3 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
+            return { value, done: true };
           } else {
-            closure_1 = tmp2;
-            closure_129_0 = breadcrumbs;
-            closure_129_1 = undefined;
-            breadcrumbs = breadcrumbs.breadcrumbs;
-            const _Array2 = Array;
-            if (Array.isArray(breadcrumbs)) {
-              if (breadcrumbs.length > 0) {
-                c3 = 3;
-              }
+            tmp = value;
+            let isArray = null != tmp;
+            if (isArray) {
+              const _Array = Array;
+              isArray = Array.isArray(tmp.entries);
             }
-            const SentryTelemetry = TelemetryRingLifecycle.SentryTelemetry;
-            items = [SentryTelemetry.snapshotForBreadcrumbs(), ];
-            const promise = new Promise((arg0, arg1) => {
-              closure_0 = arg1;
-              return setTimeout(() => {
-                const error = new Error("TelemetryRing breadcrumb timeout");
-                return closure_0(error);
-              }, 200);
-            });
-            items[1] = promise;
-            c2 = 1;
-            c3 = 1;
-            const obj4 = { value: Promise.race(items).catch(() => null), done: false };
-            return obj4;
+            if (isArray) {
+              isArray = 0 !== tmp.entries.length;
+            }
+            if (isArray) {
+              const entries = tmp.entries;
+              breadcrumbs.breadcrumbs = entries.map((data) => {
+                let key = data.message;
+                if (key == null) {
+                  key = data.key;
+                }
+                return { message: key, category: "telemetry_ring", timestamp: data.timestamp / 1000, data: data.data };
+              });
+            }
           }
-        } else if (arg0 === 1) {
           c3 = 3;
-          throw value;
-        } else if (arg0 !== 2) {
-          closure_129_1 = value;
-          let isArray = null != closure_129_1;
-          if (isArray) {
-            const _Array = Array;
-            isArray = Array.isArray(closure_129_1.entries);
-          }
-          if (isArray) {
-            isArray = 0 !== closure_129_1.entries.length;
-          }
-          if (isArray) {
-            const entries = closure_129_1.entries;
-            closure_129_0.breadcrumbs = entries.map((data) => {
-              let key = data.message;
-              if (key == null) {
-                key = data.key;
-              }
-              return { message: key, category: "telemetry_ring", timestamp: data.timestamp / 1000, data: data.data };
-            });
-          }
+          return { value: "IconComponent", done: "IconComponent" };
+        } catch (tmp18) {
+          c3 = 3;
+          throw tmp18;
         }
-        c3 = 3;
-        const obj = { value, done: true };
-        return obj;
-      } catch (tmp21) {
-        c3 = tmp;
-        throw tmp21;
       }
-    }
-  })();
+    })();
+  });
+  return obj(...arguments);
 };
 function filterError(event_id, originalException) {
-  let message = event_id;
+  let flag;
+  let closure_0 = event_id;
   importDefault = originalException;
   originalException = undefined;
   if (originalException != null) {
@@ -129,7 +141,7 @@ function filterError(event_id, originalException) {
       }
       tmp4 = code;
     }
-    let flag = false;
+    flag = false;
     if (tmp4) {
       flag = false;
       if (tmp4 < 0) {
@@ -161,7 +173,7 @@ function filterError(event_id, originalException) {
     if (originalException != null) {
       originalException2 = originalException.originalException;
     }
-    message = undefined;
+    let message;
     if (originalException2 != null) {
       message = originalException2.message;
     }
@@ -178,7 +190,8 @@ function filterError(event_id, originalException) {
       tmp20 = 0 !== event_id.length;
     }
     if (tmp20) {
-      SentryUtilsDefault.markCrashHandled(event_id);
+      obj = SentryUtilsDefault;
+      obj.markCrashHandled(event_id);
     }
   } else {
     let originalException3;
@@ -195,59 +208,63 @@ function filterError(event_id, originalException) {
       }
       event_id.tags.httpStatusCode = status1;
     }
-    if (!c14) {
+    const tmp14 = c14;
+    if (!tmp14) {
       if (closure_20()) {
         const _Math = Math;
       }
       trackCrash(event_id, originalException, false);
     }
-    return (async (arg0, value) => {
-      closure_1 = tmp3;
-      const ZoomedInTelemetry = tmp3(c3[6]).ZoomedInTelemetry;
+    return (async function(arg0, value) {
+      let closure_0;
+      function maybeBackfillMissingBreadcrumbsFromTelemetryRing() {
+        return closure_1_15(...arguments);
+      }
+      let closure_1 = tmp;
+      const ZoomedInTelemetry = tmp(c3[6]).ZoomedInTelemetry;
       items = [ZoomedInTelemetry.flushNow(), ];
-      items[1] = new Promise((arg0) => setTimeout(arg0, 200));
-      await Promise.race(items);
-      if (1 === tmp7) {
-        c2 = 0;
-        trackCrash(closure_129_0, closure_129_1);
-        c4 = 3;
-      } else if (2 === tmp7) {
+      const self = this;
+      const self2 = this;
+      const promise = new Promise((arg0) => setTimeout(arg0, 200));
+      items[1] = promise;
+      await race(items);
+      if (1 === c3) {
+        let c2 = 0;
+      } else if (2 === c3) {
         if (arg0 === 1) {
-          c4 = 3;
+          let c4 = 3;
           throw value;
         } else if (arg0 === 2) {
           c2 = 0;
           c4 = 3;
-          return { value, done: true };
+          const obj5 = { value, done: true };
+          return obj5;
         } else {
           c3 = 3;
           c4 = 1;
-          return {
-            value: (function maybeBackfillMissingBreadcrumbsFromTelemetryRing() {
-                  const self = this;
-                  const apply = closure_1_15.apply;
-                  if (typeof apply === "unknown") {
-                    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-                  } else {
-                    applyArgumentsResult = apply(self, arguments);
-                  }
-                  return applyArgumentsResult;
-                })(closure_129_0),
-            done: false
-          };
+          const obj6 = { value: maybeBackfillMissingBreadcrumbsFromTelemetryRing(closure_129_0), done: false };
+          return obj6;
         }
       } else if (arg0 === 1) {
         c4 = 3;
         throw value;
-      } else if (arg0 !== 2) {
+      } else if (arg0 === 2) {
+        c2 = 0;
+        c4 = 3;
+        obj = { value, done: true };
+        return obj;
+      } else {
         c2 = 0;
       }
-      return value;
+      trackCrash(closure_129_0, closure_129_1);
+      return closure_129_0;
     })();
   }
   return null;
 }
 function getCrashErrorMessage(exception) {
+  let type;
+  let value;
   exception = exception.exception;
   let first;
   if (exception != null) {
@@ -273,6 +290,7 @@ function getCrashErrorMessage(exception) {
     }
     return message1;
   } else {
+    let prop1;
     ({ type, value } = first);
     if (null != type) {
       if (null != value) {
@@ -282,7 +300,7 @@ function getCrashErrorMessage(exception) {
     }
     const extra = exception.extra;
     if (extra != null) {
-      const prop1 = extra.persisted_error_message;
+      prop1 = extra.persisted_error_message;
     }
     let message = type;
     if (type == null) {
@@ -355,18 +373,34 @@ function getErrorStackTrace(exception) {
   }
 }
 function trackCrash(event, hint, arg2) {
+  let extra;
+  let level;
+  let tmp23;
+  let tmp26;
+  let tmp27;
+  let tmp28;
+  let tmp29;
+  let tmp30;
+  let tmp31;
+  let tmp32;
+  let tmp33;
+  let tmp34;
+  let tmp37;
+  let tmp38;
+  let tmp4;
   let flag = arg2;
   if (arg2 === undefined) {
     flag = true;
   }
-  logger.info("Crash", { event, hint });
+  obj = { event, hint };
+  logger.info("Crash", obj);
   ({ level, extra } = event);
   let native_is_native;
   if (extra != null) {
     native_is_native = extra.native_is_native;
   }
   if (null != native_is_native) {
-    let tmp4 = "true" === event.extra.native_is_native;
+    tmp4 = "true" === event.extra.native_is_native;
   } else {
     const tags = event.tags;
     let prop;
@@ -378,34 +412,35 @@ function trackCrash(event, hint, arg2) {
   if ("fatal" !== level) {
     return event;
   }
-  let tmp5 = tmp4;
-  if (!tmp4) {
-    tmp5 = "error" !== level;
-  }
   let num = 1;
+  const tmp5 = tmp4 || "error" !== level;
   if (!tmp5) {
     num = 0.01;
   }
-  if (!c14) {
+  const tmp6 = c14;
+  if (!tmp6) {
     const _Math = Math;
     if (Math.random() > num) {
       const event_id = event.event_id;
-      let tmp7 = typeof event_id === "string";
+      let tmp8 = typeof event_id === "string";
       if (typeof event_id === "string") {
-        tmp7 = 0 !== event_id.length;
+        tmp8 = 0 !== event_id.length;
       }
-      if (tmp7) {
-        SentryUtilsDefault.markCrashHandled(event_id);
+      if (tmp8) {
+        const obj2 = SentryUtilsDefault;
+        obj2.markCrashHandled(event_id);
       }
     }
   }
-  let tmp13 = null;
+  let tmp14 = null;
+  const obj3 = router_utils;
+  const _location = obj3.getHistory().location;
   if (flag) {
     let event_id1 = event.event_id;
     if (event_id1 == null) {
       event_id1 = null;
     }
-    tmp13 = event_id1;
+    tmp14 = event_id1;
   }
   const timestamp = event.timestamp;
   let result;
@@ -432,132 +467,123 @@ function trackCrash(event, hint, arg2) {
     const _Date2 = Date;
     result = Date.now();
   }
-  const obj = { event, hint };
-  const obj3 = router_utils;
   const track = AnalyticsUtilsDefault.track;
+  AnalyticsUtilsDefault;
   if (tmp4) {
     let extra1 = event.extra;
+    const APP_NATIVE_CRASH = tmp21.APP_NATIVE_CRASH;
     if (extra1 == null) {
       extra1 = {};
     }
-    const obj4 = { did_crash: true, sentry_issue_id: tmp13, client_track_timestamp: result, exit_reason: null, exit_description: null, tombstone_hash: null, tombstone_cause: null, tombstone: null, call_stack_tree: null, binary_name: null, exception_message: null, exception_stacktrace: null, js_error_message: null, js_error_stacktrace: null };
     const native_exit_reason = extra1.native_exit_reason;
-    let tmp27 = null;
+    const obj4 = { did_crash: true, sentry_issue_id: tmp14, client_track_timestamp: result, exit_reason: tmp28, exit_description: tmp29, tombstone_hash: tmp30, tombstone_cause: tmp31, tombstone: tmp32, call_stack_tree: tmp33, binary_name: tmp34, exception_message: getCrashErrorMessage(event), exception_stacktrace: getErrorStackTrace(event), js_error_message: tmp37, js_error_stacktrace: tmp38 };
+    tmp28 = null;
     if (typeof native_exit_reason === "string") {
-      tmp27 = null;
-      if (native_exit_reason.length > 0) {
-        tmp27 = native_exit_reason;
-      }
-    }
-    obj4.exit_reason = tmp27;
-    const prop1 = extra1.native_exit_description;
-    let tmp28 = null;
-    if (typeof prop1 === "string") {
       tmp28 = null;
-      if (prop1.length > 0) {
-        tmp28 = prop1;
+      if (native_exit_reason.length > 0) {
+        tmp28 = native_exit_reason;
       }
     }
-    obj4.exit_description = tmp28;
-    const prop2 = extra1.native_tombstone_hash;
-    let tmp29 = null;
-    if (typeof prop2 === "string") {
+    const prop1 = extra1.native_exit_description;
+    tmp29 = null;
+    if (typeof prop1 === "string") {
       tmp29 = null;
-      if (prop2.length > 0) {
-        tmp29 = prop2;
+      if (prop1.length > 0) {
+        tmp29 = prop1;
       }
     }
-    obj4.tombstone_hash = tmp29;
-    const prop3 = extra1.native_tombstone_cause;
-    let tmp30 = null;
-    if (typeof prop3 === "string") {
+    const prop2 = extra1.native_tombstone_hash;
+    tmp30 = null;
+    if (typeof prop2 === "string") {
       tmp30 = null;
-      if (prop3.length > 0) {
-        tmp30 = prop3;
+      if (prop2.length > 0) {
+        tmp30 = prop2;
       }
     }
-    obj4.tombstone_cause = tmp30;
-    const native_tombstone = extra1.native_tombstone;
-    let tmp31 = null;
-    if (typeof native_tombstone === "string") {
+    const prop3 = extra1.native_tombstone_cause;
+    tmp31 = null;
+    if (typeof prop3 === "string") {
       tmp31 = null;
-      if (native_tombstone.length > 0) {
-        tmp31 = native_tombstone;
+      if (prop3.length > 0) {
+        tmp31 = prop3;
       }
     }
-    obj4.tombstone = tmp31;
-    const prop4 = extra1.native_tombstone_group_by;
-    let tmp32 = null;
-    if (typeof prop4 === "string") {
+    const native_tombstone = extra1.native_tombstone;
+    tmp32 = null;
+    if (typeof native_tombstone === "string") {
       tmp32 = null;
-      if (prop4.length > 0) {
-        tmp32 = prop4;
+      if (native_tombstone.length > 0) {
+        tmp32 = native_tombstone;
       }
     }
-    obj4.call_stack_tree = tmp32;
-    const prop5 = extra1.native_tombstone_origin;
-    let tmp33 = null;
-    if (typeof prop5 === "string") {
+    const prop4 = extra1.native_tombstone_group_by;
+    tmp33 = null;
+    if (typeof prop4 === "string") {
       tmp33 = null;
+      if (prop4.length > 0) {
+        tmp33 = prop4;
+      }
+    }
+    const prop5 = extra1.native_tombstone_origin;
+    tmp34 = null;
+    if (typeof prop5 === "string") {
+      tmp34 = null;
       if (prop5.length > 0) {
-        tmp33 = prop5;
+        tmp34 = prop5;
       }
     }
-    obj4.binary_name = tmp33;
-    obj4.exception_message = getCrashErrorMessage(event);
-    obj4.exception_stacktrace = getErrorStackTrace(event);
     const prop6 = extra1.persisted_error_message;
-    let tmp36 = null;
+    tmp37 = null;
     if (typeof prop6 === "string") {
-      tmp36 = null;
-      if (prop6.length > 0) {
-        tmp36 = prop6;
-      }
-    }
-    obj4.js_error_message = tmp36;
-    const prop7 = extra1.persisted_error_stack;
-    let tmp37 = null;
-    if (typeof prop7 === "string") {
       tmp37 = null;
-      if (prop7.length > 0) {
-        tmp37 = prop7;
+      if (prop6.length > 0) {
+        tmp37 = prop6;
       }
     }
-    obj4.js_error_stacktrace = tmp37;
-    track(tmp20.APP_NATIVE_CRASH, obj4);
-    let tmp25 = tmp18;
-    let tmp26 = tmp18;
+    const prop7 = extra1.persisted_error_stack;
+    tmp38 = null;
+    if (typeof prop7 === "string") {
+      tmp38 = null;
+      if (prop7.length > 0) {
+        tmp38 = prop7;
+      }
+    }
+    track(APP_NATIVE_CRASH, obj4);
+    tmp26 = tmp19;
+    tmp27 = tmp19;
   } else {
-    const obj5 = { path: obj3.getHistory().location.pathname, client_track_timestamp: result, sentry_issue_id: tmp13, extra: hint, error_message: getCrashErrorMessage(event), error_level: level, error_stack: getErrorStackTrace(event) };
-    track(tmp20.APP_CRASHED, obj5);
-    tmp25 = tmp18;
-    tmp26 = tmp18;
+    const APP_CRASHED = tmp21.APP_CRASHED;
+    const obj5 = { path: _location.pathname, client_track_timestamp: result, sentry_issue_id: tmp14, extra: hint, error_message: getCrashErrorMessage(event), error_level: tmp23, error_stack: getErrorStackTrace(event) };
+    track(APP_CRASHED, obj5);
+    tmp26 = tmp19;
+    tmp27 = tmp19;
+    tmp23 = level;
   }
   const event_id2 = event.event_id;
-  let tmp39 = typeof event_id2 === "string";
+  let tmp40 = typeof event_id2 === "string";
   if (typeof event_id2 === "string") {
-    tmp39 = 0 !== event_id2.length;
+    tmp40 = 0 !== event_id2.length;
   }
-  if (tmp39) {
-    tmp25(1231).markCrashHandled(event_id2);
-    const tmp25Result = tmp25(1231);
+  if (tmp40) {
+    const tmp26Result = tmp26(1242);
+    tmp26Result.markCrashHandled(event_id2);
   }
-  const AppCrashedReasons = tmp11(13828).AppCrashedReasons;
-  const tmp41 = tmp4 ? AppCrashedReasons.UNHANDLED_NATIVE_ERROR : AppCrashedReasons.UNHANDLED_JS_ERROR;
-  const obj6 = { name: MetricEvents.MetricEvents.APP_CRASHED, tags: null };
-  items = ["reason:" + tmp41, ];
+  const AppCrashedReasons = tmp12(13894).AppCrashedReasons;
+  const tmp42 = tmp4 ? AppCrashedReasons.UNHANDLED_NATIVE_ERROR : AppCrashedReasons.UNHANDLED_JS_ERROR;
+  const tmp27Result = tmp27(5409);
+  const increment = tmp27Result.increment;
+  const obj6 = { name: MetricEvents.MetricEvents.APP_CRASHED, tags: items };
+  items = ["reason:" + tmp42, ];
   if (level == null) {
     level = "unknown";
   }
   items[1] = "level:" + level;
-  obj6.tags = items;
-  tmp26(5363).increment(obj6, true);
+  increment(obj6, true);
 }
-const NativeModules = fn(17).NativeModules;
-const Constants = fn(1074);
+const NativeModules = react_native.NativeModules;
 ({ AnalyticEvents: metroRequire, Endpoints } = Constants);
-const PRIMARY_DOMAIN = fn(1085).PRIMARY_DOMAIN;
-let registerSpanErrorInstrumentation = fn(675);
+const PRIMARY_DOMAIN = Constants2.PRIMARY_DOMAIN;
+let registerSpanErrorInstrumentation = registerSpanErrorInstrumentation_mod;
 registerSpanErrorInstrumentation = registerSpanErrorInstrumentation.reactNavigationIntegration();
 const regExp = new RegExp("/v" + window.GLOBAL_ENV.API_VERSION + Endpoints.METRICS, "g");
 let items = [regExp, , ];
@@ -570,40 +596,46 @@ let closure_11 = ["The operation couldn\u2019t be completed. (com.apple.CallKit.
 let c12 = 0.05;
 let c13 = 0.005;
 let c14 = false;
-const CommonSentryInitUtils = fn(1357);
+const tmp7 = new LoggerDefault("Sentry");
 let closure_20 = CommonSentryInitUtils.filterThrottle({ maxBudgetMinute: 1, maxBudgetHour: 15 });
-const size = fn(2);
 const result1 = size.fileFinishedImporting("modules/errors/native/SentryInitUtils.tsx");
 
 export const routingInstrumentation = registerSpanErrorInstrumentation;
 export const initSentry = function initSentry() {
+  let beforeSend;
+  let ignoreErrors;
   const CrashReportingManager = NativeModules.CrashReportingManager;
   if (CrashReportingManager != null) {
     const isUserStaffForCrashReporting = CrashReportingManager.getIsUserStaffForCrashReporting((arg0) => {
-      closure_14 = arg0;
-      constants = ClientInfoUtilsAll.getConstants();
+      let items1;
+      let closure_1_14 = arg0;
+      let tmp = dependencyMap;
+      obj = react_nativeAll;
+      constants = obj.getConstants();
       const ReleaseChannel = constants.ReleaseChannel;
       if (-1 === ReleaseChannel.indexOf("debug")) {
         if (-1 === ReleaseChannel.indexOf("developer")) {
+          let SentryStaffDsn;
           const isStable = require("ReleaseChannelUtils").isStable;
           const obj2 = { releaseChannel: ReleaseChannel, isProductionChannel: isStable };
           logger.verbose("Initialize", obj2);
-          if (obj15.isAndroid()) {
+          const obj16 = require("PlatformUtils");
+          if (obj16.isAndroid()) {
             if (isStable) {
-              const device = tmp14(tmp[17]).getDevice();
-              const tmp14Result = tmp14(tmp[17]);
+              const tmp17Result = require("DeviceUtils");
+              const device = tmp17Result.getDevice();
             }
           }
           c12 = 0.05;
           const SentryDsn = constants.SentryDsn;
           if (isStable) {
-            let SentryStaffDsn = SentryDsn;
-            if (tmp14Result9.isMetaQuest()) {
+            SentryStaffDsn = SentryDsn;
+            const tmp17Result12 = require("MetaQuestUtils");
+            if (tmp17Result12.isMetaQuest()) {
               c12 = 1;
               c13 = 1;
               SentryStaffDsn = SentryDsn;
             }
-            tmp14Result9 = tmp14(tmp[18]);
           } else {
             c12 = 1;
             SentryStaffDsn = constants.SentryAlphaBetaDsn;
@@ -612,65 +644,86 @@ export const initSentry = function initSentry() {
             SentryStaffDsn = constants.SentryStaffDsn;
             c12 = 1;
           }
-          obj15 = require("PlatformUtils");
-          const lastCrashReport = require("SentryUtils").getLastCrashReport();
           const obj4 = require("SentryUtils");
-          lastCrashReport.then((result) => {
-            if (null != result) {
-              closure_1_19(result, { crash_event_source: "startup_reconcile" });
-            }
-          }).catch((error) => {
-            logger.warn("Failed to replay pending crash report", error);
-          });
+          const lastCrashReport = obj4.getLastCrashReport();
           const nextPromise = lastCrashReport.then((result) => {
             if (null != result) {
               closure_1_19(result, { crash_event_source: "startup_reconcile" });
             }
           });
-          const tmp14Result10 = require("module_675");
+          nextPromise.catch((error) => {
+            logger.warn("Failed to replay pending crash report", error);
+          });
+          const init = require("module_686").init;
+          require("module_686");
           let str2 = "ios";
-          if (tmp14Result11.isAndroid()) {
+          const tmp17Result14 = require("PlatformUtils");
+          if (tmp17Result14.isAndroid()) {
             str2 = "android";
           }
-          const obj3 = { tunnel: `/error-reporting-proxy/${str2}`, autoInitializeNativeSdk: false, beforeSend, dist: "6547", dsn: SentryStaffDsn, environment: ReleaseChannel, tracesSampleRate: 0, sampleRate: 1, ignoreErrors, release: "discord_android@349.3.0-2+349203", tracePropagationTargets: null, integrations: null, beforeBreadcrumb: null };
+          const obj3 = {
+            tunnel: `/error-reporting-proxy/${str2}`,
+            autoInitializeNativeSdk: false,
+            beforeSend,
+            dist: "34920500000000",
+            dsn: SentryStaffDsn,
+            environment: ReleaseChannel,
+            tracesSampleRate: 0,
+            sampleRate: 1,
+            ignoreErrors,
+            release: "discord_android@349.5.0-2+349205",
+            tracePropagationTargets: items,
+            integrations: items1,
+            beforeBreadcrumb(data) {
+                  if (null == data.data) {
+                    data.data = {};
+                  }
+                  obj = closure_1_1(closure_1_3[19]);
+                  const currentMemoryUsageKB = obj.getCurrentMemoryUsageKB();
+                  const tmp = closure_1_1;
+                  const tmp2 = closure_1_3;
+                  if (null != currentMemoryUsageKB) {
+                    data.data.client_performance_memory = currentMemoryUsageKB;
+                  }
+                  const tmpResult = tmp(tmp2[19]);
+                  const currentCPUUsagePercent = tmpResult.getCurrentCPUUsagePercent();
+                  if (null != currentCPUUsagePercent) {
+                    data.data.client_performance_cpu = currentCPUUsagePercent;
+                  }
+                  return data;
+                }
+          };
           items = [PRIMARY_DOMAIN];
-          obj3.tracePropagationTargets = items;
-          const items1 = [registerSpanErrorInstrumentation, , ];
-          tmp14Result11 = require("PlatformUtils");
-          items1[1] = require("module_675").featureFlagsIntegration();
-          const tmp14Result12 = require("module_675");
+          items1 = [registerSpanErrorInstrumentation, , ];
+          const tmp17Result15 = require("module_686");
+          items1[1] = tmp17Result15.featureFlagsIntegration();
           const obj5 = {
             shouldCreateSpanForRequest(arg0) {
-                  closure_0 = arg0;
+                  let closure_0 = arg0;
                   return !closure_1_9.some((item) => null != closure_0.match(item));
                 }
           };
-          items1[2] = require("module_675").reactNativeTracingIntegration(obj5);
-          obj3.integrations = items1;
-          obj3.beforeBreadcrumb = function beforeBreadcrumb(data) {
-            if (null == data.data) {
-              data.data = {};
-            }
-            const currentMemoryUsageKB = closure_1_1(dependencyMap[19]).getCurrentMemoryUsageKB();
-            if (null != currentMemoryUsageKB) {
-              data.data.client_performance_memory = currentMemoryUsageKB;
-            }
-            const obj = closure_1_1(dependencyMap[19]);
-            const currentCPUUsagePercent = closure_1_1(dependencyMap[19]).getCurrentCPUUsagePercent();
-            if (null != currentCPUUsagePercent) {
-              data.data.client_performance_cpu = currentCPUUsagePercent;
-            }
-            return data;
-          };
-          tmp14Result10.init(obj3);
-          const tmp14Result13 = require("module_675");
-          require("module_675").setTag("buildNumber", "6547");
-          const tmp14Result14 = require("module_675");
-          require("module_675").setTag("appVersion", constants.Version);
-          const tmp14Result15 = require("module_675");
+          const tmp17Result16 = require("module_686");
+          items1[2] = tmp17Result16.reactNativeTracingIntegration(obj5);
+          init(obj3);
+          const tmp17Result17 = require("module_686");
+          tmp17Result17.setTag("buildNumber", "34920500000000");
+          const tmp17Result18 = require("module_686");
+          tmp17Result18.setTag("appVersion", constants.Version);
           const _HermesInternal = HermesInternal;
-          require("module_675").setTag("design_id", "" + require("DesignIds").DesignIds.DESIGN_TABS_IA);
-          const tmp14Result16 = require("module_675");
+          const tmp17Result19 = require("module_686");
+          tmp17Result19.setTag("design_id", "" + require("DesignIds").DesignIds.DESIGN_TABS_IA);
+          const tmp17Result20 = require("ReactCompilerGating");
+          if (tmp17Result20.isReactCompilerBuild()) {
+            const setTag = require("module_686").setTag;
+            require("module_686");
+            let str9 = "unoptimized";
+            const tmp17Result22 = require("ReactCompilerGating");
+            if (tmp17Result22.isReactCompilerEnabled()) {
+              str9 = "optimized";
+            }
+            setTag("react_compiler", str9);
+          }
         }
       }
     });

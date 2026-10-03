@@ -1,29 +1,51 @@
-// Module ID: 14377
-// Function ID: 14378
+// Module ID: 14431
+// Function ID: 14432
 // Name: EditUserProfileAvatar
-// Dependencies: [19, 17, 4834, 21, 4845, 6769, 6789, 4517, 7786, 7796, 14378, 4809, 14379, 1981, 14380, 14380, 7784, 7793, 504, 4595, 4846, 7885, 14359, 1115, 5621, 14381, 1177, 2]
+// Dependencies: [19, 17, 4879, 21, 4890, 6657, 6681, 4528, 7830, 7840, 14432, 4854, 14433, 1987, 14434, 14434, 7828, 7837, 504, 4612, 4891, 7929, 14413, 1126, 5909, 14435, 1188, 2]
 // Exports: default
 
-// Module 14377 (EditUserProfileAvatar)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4595 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4809 */;
-import timing from "timing" /* 4846 */;
-import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4834 */;
+// Module 14431 (EditUserProfileAvatar)
+import react_native from "react-native" /* 17 */;
+import asyncRequire from "asyncRequire" /* 1987 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import timing from "timing" /* 4891 */;
+import react from "react" /* 19 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import size from "module_2" /* 2 */;
 
-const ProfileCustomizationUtils = tmp2(7793);
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4845);
+let set;
+
+let metroImportDefault;
+let metroRequire;
+let tmp3;
+const ProfileCustomizationUtils = tmp3(7837);
+const View = react_native.View;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ editIcon: { position: "absolute", right: -3 }, editButton: { position: "absolute", top: -8, right: -8 } });
 let __initData = { code: "function EditUserProfileAvatarTsx1(){const{rotation}=this.__closure;return{transform:[{rotateZ:rotation.get()+\"deg\"}]};}" };
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_profile/native/EditUserProfileAvatar.tsx");
 
 export default function EditUserProfileAvatar(user) {
+  let avatarStyle;
+  let disableStatus;
+  let disabled;
+  let editIconStyle;
+  let handleUploadAvatarSelect;
+  let intl;
+  let intl2;
+  let isUserProfileEditingRefresh;
+  let items4;
+  let items5;
+  let items6;
+  let pendingAvatarDecoration;
+  let setPendingAvatar;
+  let statusStyle;
+  let str;
+  let style;
+  let tmp21Result;
   user = user.user;
   ({ disabled, style, disableStatus } = user);
   ({ statusStyle, avatarStyle, editIconStyle } = user);
@@ -39,92 +61,94 @@ export default function EditUserProfileAvatar(user) {
     flag2 = false;
   }
   ({ size, isUserProfileEditingRefresh } = user);
-  let showAnimatedAvatarUpsell;
-  let pendingAvatar;
   setPendingAvatar = undefined;
   let avatarDecoration;
   __initData = undefined;
   let onPress;
+  let ref;
   let sharedValue;
   let tmp = avatarDecoration();
-  const analyticsLocations = flag(flag2[5])(flag(flag2[6]).EDIT_AVATAR).analyticsLocations;
-  const tmp4 = flag(flag2[5]);
-  const canUseAnimatedAvatarResult = flag(flag2[7]).canUseAnimatedAvatar(user);
-  let tmp6 = !canUseAnimatedAvatarResult;
-  if (!canUseAnimatedAvatarResult) {
-    tmp6 = !flag;
-  }
-  showAnimatedAvatarUpsell = tmp6;
-  const tmp7 = flag(flag2[8])({ isTryItOut: flag, analyticsLocations });
-  pendingAvatar = tmp7.pendingAvatar;
-  ({ pendingAvatarDecoration, setPendingAvatar } = tmp7);
+  let tmp2 = flag;
+  let tmp3 = flag2;
+  let tmp4 = flag(flag2[5]);
+  const analyticsLocations = tmp4(flag(flag2[6]).EDIT_AVATAR).analyticsLocations;
   let obj = flag(flag2[7]);
-  const pendingAvatarSrc = user(flag2[9]).getPendingAvatarSrc({ userId: user.id, image: pendingAvatar });
+  const tmp6 = !obj.canUseAnimatedAvatar(user) && !flag;
+  const showAnimatedAvatarUpsell = tmp6;
+  const tmp7 = tmp2(tmp3[8])({ isTryItOut: flag, analyticsLocations });
+  const pendingAvatar = tmp7.pendingAvatar;
+  ({ pendingAvatarDecoration, setPendingAvatar } = tmp7);
+  let obj2 = user(tmp3[9]);
+  const obj3 = { userId: user.id, image: pendingAvatar };
+  const pendingAvatarSrc = obj2.getPendingAvatarSrc(obj3);
   avatarDecoration = pendingAvatarDecoration;
   if (undefined === pendingAvatarDecoration) {
     avatarDecoration = user.avatarDecoration;
   }
-  const tmp10 = flag(flag2[10])({ isTryItOut: flag, analyticsLocations });
+  const tmp10 = tmp2(tmp3[10])({ isTryItOut: flag, analyticsLocations });
   __initData = tmp10;
   let items = [user, analyticsLocations, pendingAvatar, setPendingAvatar, tmp10, tmp6, avatarDecoration, flag, isUserProfileEditingRefresh];
   onPress = isUserProfileEditingRefresh.useCallback(() => {
-    let obj2 = {
+    let currentAvatarDecoration;
+    let fn;
+    let tmp3Result;
+    const tmp2 = ActionSheetActionCreatorsDefault;
+    let openLazy = tmp2.openLazy;
+    let tmp3 = require;
+    let obj = {
       showAnimatedAvatarUpsell,
       handleRemoveAvatarSelect() {
-        flag(flag2[11]).hideActionSheet();
+        const obj = flag(flag2[11]);
+        obj.hideActionSheet();
         setPendingAvatar(null);
       },
       handleUploadAvatarSelect,
       handleUploadGIFAvatarSelect() {
-        flag(flag2[11]).hideActionSheet();
+        let GIFSelectionContext;
         const obj = flag(flag2[11]);
-        const obj3 = { profileAssetType: null, selectionContext: null };
-        const obj2 = flag(flag2[11]);
-        obj3.profileAssetType = user(flag2[15]).ProfileAssetType.AVATAR;
-        const GIFSelectionContext = user(flag2[15]).GIFSelectionContext;
-        obj3.selectionContext = closure_1_1 ? GIFSelectionContext.PROFILE_TRY_IT_OUT : GIFSelectionContext.PROFILE_EDIT;
-        obj2.openLazy(user(flag2[13])(flag2[14], flag2.paths), "Select GIF Avatar", obj3);
+        obj.hideActionSheet();
+        const openLazy = flag(flag2[11]).openLazy;
+        const obj2 = { profileAssetType: user(flag2[15]).ProfileAssetType.AVATAR, selectionContext: closure_1_1 ? GIFSelectionContext.PROFILE_TRY_IT_OUT : GIFSelectionContext.PROFILE_EDIT };
+        flag(flag2[11]);
+        const tmp3 = user(flag2[13])(flag2[14], flag2.paths);
+        GIFSelectionContext = user(flag2[15]).GIFSelectionContext;
+        openLazy(tmp3, "Select GIF Avatar", obj2);
       },
-      handleEditAvatarDecorationSelect: null,
-      showRemoveAvatar: null
+      handleEditAvatarDecorationSelect: fn,
+      showRemoveAvatar: tmp3Result.showRemoveAvatar(pendingAvatar, user.avatar)
     };
-    let obj = ActionSheetActionCreatorsDefault;
+    const tmp4 = asyncRequire(14433, dependencyMap.paths);
     if (!flag) {
-      const fn = () => {
-        const result = user(flag2[16]).openAvatarDecorationActionSheet({ user, currentAvatarDecoration, analyticsLocations });
+      fn = () => {
+        const obj = user(flag2[16]);
+        const obj2 = { user, currentAvatarDecoration, analyticsLocations };
+        const result = obj.openAvatarDecorationActionSheet(obj2);
       };
     }
-    obj2.handleEditAvatarDecorationSelect = fn;
-    const tmp3 = asyncRequireImpl(14379, dependencyMap.paths);
-    obj2.showRemoveAvatar = ProfileCustomizationUtils.showRemoveAvatar(pendingAvatar, user.avatar);
-    obj.openLazy(tmp3, "Change Avatar", obj2);
+    tmp3Result = ProfileCustomizationUtils;
+    openLazy(tmp4, "Change Avatar", obj);
   }, items);
-  isUserProfileEditingRefresh.useRef(false);
+  ref = isUserProfileEditingRefresh.useRef(false);
   const items1 = [user, flag2, onPress];
   const effect = isUserProfileEditingRefresh.useEffect(() => {
-    let tmp = flag2;
-    if (flag2) {
-      tmp = !ref.current;
-    }
+    const tmp = flag2 && !ref.current;
     if (tmp) {
       ref.current = true;
       callback();
     }
   }, items1);
-  let obj2 = user(flag2[9]);
-  let obj3 = { userId: user.id, image: pendingAvatar };
   const items2 = [showAnimatedAvatarUpsell];
-  const stateFromStores = user(flag2[18]).useStateFromStores(items2, () => showAnimatedAvatarUpsell.useReducedMotion);
-  const tmp8Result = user(flag2[18]);
-  sharedValue = user(flag2[19]).useSharedValue(0);
-  const tmp8Result3 = user(flag2[19]);
+  const tmp8Result = user(tmp3[18]);
+  const stateFromStores = tmp8Result.useStateFromStores(items2, () => showAnimatedAvatarUpsell.useReducedMotion);
+  const tmp8Result3 = user(tmp3[19]);
+  sharedValue = tmp8Result3.useSharedValue(0);
+  const tmp8Result4 = user(tmp3[19]);
   class V {
     constructor() {
-      obj = { transform: null };
-      obj1 = { rotateZ: "" + closure_12.get() + "deg" };
-      items = [];
-      items[0] = obj1;
-      obj.transform = items;
+      let items;
+      const obj = { transform: items };
+      items = [{ rotateZ: "" + sharedValue.get() + "deg" }];
+      ({ rotateZ: "" + sharedValue.get() + "deg" });
       return obj;
     }
   }
@@ -132,16 +156,23 @@ export default function EditUserProfileAvatar(user) {
   V.__workletHash = 13368223692459;
   V.__initData = __initData;
   const items3 = [sharedValue];
-  const animatedStyle = user(flag2[19]).useAnimatedStyle(V);
+  const animatedStyle = tmp8Result4.useAnimatedStyle(V);
   const effect1 = isUserProfileEditingRefresh.useEffect(() => {
-    const obj = ReanimatedRexport;
-    const obj3 = { duration: 3000, easing: null };
-    const Easing = ReanimatedRexport.Easing;
-    obj3.easing = Easing.inOut(ReanimatedRexport.Easing.quad);
-    const result = sharedValue.set(obj.withRepeat(timing.withTiming(360, obj3), -1));
-    return () => user(flag2[19]).cancelAnimation(sharedValue);
+    let Easing;
+    set = sharedValue.set;
+    const withRepeat = ReanimatedRexport.withRepeat;
+    ReanimatedRexport;
+    let obj = { duration: 3000, easing: Easing.inOut(ReanimatedRexport.Easing.quad) };
+    const withTiming = timing.withTiming;
+    timing;
+    Easing = ReanimatedRexport.Easing;
+    const result = set(withRepeat(withTiming(360, obj), -1));
+    return () => {
+      const obj = user(flag2[19]);
+      return obj.cancelAnimation(sharedValue);
+    };
   }, items3);
-  const tmp18 = pendingAvatar(flag(flag2[21]), { style: avatarStyle, user, pendingAvatarSrc, pendingAvatarDecoration, statusStyle, disableStatus, size });
+  const tmp18 = pendingAvatar(tmp2(tmp3[21]), { style: avatarStyle, user, pendingAvatarSrc, pendingAvatarDecoration, statusStyle, disableStatus, size });
   let tmp17Result = tmp18;
   if (flag) {
     tmp17Result = tmp18;
@@ -157,33 +188,27 @@ export default function EditUserProfileAvatar(user) {
     }
   }
   if (isUserProfileEditingRefresh) {
-    const obj5 = { style, children: null };
-    const items4 = [tmp17Result, ];
-    const obj6 = { style: tmp.editButton, onPress, accessibilityLabel: null, disabled: null };
-    const intl2 = tmp8(tmp3[23]).intl;
-    obj6.accessibilityLabel = intl2.string(tmp8(tmp3[23]).t["70lEQe"]);
-    obj6.disabled = disabled;
-    items4[1] = tmp17(tmp2(tmp3[22]), obj6);
-    obj5.children = items4;
-    let tmp21Result = tmp21(analyticsLocations, obj5);
+    const obj5 = { style, children: items4 };
+    items4 = [tmp17Result, ];
+    const obj6 = { style: tmp.editButton, onPress, accessibilityLabel: intl2.string(user(tmp3[23]).t["70lEQe"]), disabled };
     const tmp2Result = tmp2(tmp3[22]);
+    intl2 = tmp8(tmp3[23]).intl;
+    items4[1] = pendingAvatar(tmp2Result, obj6);
+    tmp21Result = tmp21(analyticsLocations, obj5);
   } else {
-    const obj7 = { style, disabled, onPress, accessibilityRole: "button", accessibilityLabel: null, children: null };
-    const intl = tmp8(tmp3[23]).intl;
-    obj7.accessibilityLabel = intl.string(tmp8(tmp3[23]).t.MUgHIN);
-    const items5 = [tmp17Result, ];
-    const obj8 = { style: null, size: null };
-    const items6 = [tmp.editIcon, editIconStyle];
-    obj8.style = items6;
-    let str = "xs";
-    if (size === tmp8(tmp3[26]).AvatarSizes.EDIT_AVATAR_DECORATION) {
+    const obj7 = { style, disabled, onPress, accessibilityRole: "button", accessibilityLabel: intl.string(user(tmp3[23]).t.MUgHIN), children: items5 };
+    const PressableOpacity = tmp8(tmp3[24]).PressableOpacity;
+    intl = tmp8(tmp3[23]).intl;
+    items5 = [tmp17Result, ];
+    const obj8 = { style: items6, size: str };
+    items6 = [tmp.editIcon, editIconStyle];
+    str = "xs";
+    const tmp2Result2 = tmp2(tmp3[25]);
+    if (size === user(tmp3[26]).AvatarSizes.EDIT_AVATAR_DECORATION) {
       str = "sm";
     }
-    obj8.size = str;
-    items5[1] = tmp17(tmp2(tmp3[25]), obj8);
-    obj7.children = items5;
-    tmp21Result = tmp21(tmp8(tmp3[24]).PressableOpacity, obj7);
-    const tmp2Result2 = tmp2(tmp3[25]);
+    items5[1] = pendingAvatar(tmp2Result2, obj8);
+    tmp21Result = tmp21(PressableOpacity, obj7);
   }
   return tmp21Result;
 };

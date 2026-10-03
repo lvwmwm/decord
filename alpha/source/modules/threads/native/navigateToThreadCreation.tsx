@@ -1,20 +1,24 @@
-// Module ID: 11001
-// Function ID: 11002
+// Module ID: 11019
+// Function ID: 11020
 // Name: navigateToThreadCreation
-// Dependencies: [7357, 4721, 4856, 2]
+// Dependencies: [7261, 4736, 4901, 2]
 // Exports: navigateToThreadCreation
 
-// Module 11001 (navigateToThreadCreation)
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7357 */;
+// Module 11019 (navigateToThreadCreation)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4736 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7261 */;
 import size from "module_2" /* 2 */;
 
-const transitionToChannel = tmp3(4856);
+let tmp3;
+const transitionToChannel = tmp3(4901);
 let result = size.fileFinishedImporting("modules/threads/native/navigateToThreadCreation.tsx");
 
 export const navigateToThreadCreation = function navigateToThreadCreation(channel, Message) {
-  const result = ThreadActionCreatorsDefault.openThreadCreationForMobile(channel, undefined, Message);
+  const obj = ThreadActionCreatorsDefault;
+  const result = obj.openThreadCreationForMobile(channel, undefined, Message);
+  const obj2 = NavigationRouteUtils;
   if (!obj2.navigateToCreateThread(channel.guild_id, channel.id)) {
-    transitionToChannel.transitionToChannel(channel.id);
     const tmp3Result = transitionToChannel;
+    tmp3Result.transitionToChannel(channel.id);
   }
 };

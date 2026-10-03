@@ -1,28 +1,54 @@
-// Module ID: 9778
-// Function ID: 9779
+// Module ID: 11703
+// Function ID: 11704
 // Name: HighlightText
-// Dependencies: [19, 1074, 21, 4845, 4712, 576, 1177, 2]
-// Exports: default
+// Dependencies: [19, 1085, 21, 4890, 4727, 587, 558, 576, 1188, 2]
 
-// Module 9778 (HighlightText)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import noop from "module_19" /* 19 */;
+// Module 11703 (HighlightText)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import react from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ColorUtils_mod from "ColorUtils" /* 4727 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const createStyles = fn(4845);
-const obj2 = { text: null };
-const obj3 = { fontFamily: fn(1074).Fonts.PRIMARY_BOLD, backgroundColor: null, color: null };
-const ColorUtils = fn(4712);
-obj3.backgroundColor = ColorUtils.hexOpacityToRgba(nativeDefault.unsafe_rawColors.YELLOW_300, 0.3);
-obj3.color = nativeDefault.colors.TEXT_STRONG;
-obj2.text = obj3;
-let closure_3 = createStyles.createStyles(obj2);
-const size = fn(2);
+let children;
+
+let ColorUtils;
+let obj2;
+let tmp;
+const native = tmp(1188);
+const Fonts = Constants.Fonts;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { text: obj2 };
+createStyles = createStyles.createStyles;
+obj2 = { fontFamily: Fonts.PRIMARY_BOLD, backgroundColor: ColorUtils.hexOpacityToRgba(nativeDefault.unsafe_rawColors.YELLOW_300, 0.3), color: nativeDefault.colors.TEXT_STRONG };
+ColorUtils = ColorUtils_mod;
+let closure_3 = createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+  const obj = react2;
+  const cResult = obj.c(3);
+  children = children.children;
+  const tmp4 = closure_3();
+  if (cResult[0] === children) {
+    let tmp5;
+    if (cResult[1] === tmp4.text) {
+      tmp5 = cResult[2];
+    }
+    return tmp5;
+  }
+  const tmp6 = jsx(native.LegacyText, { style: tmp4.text, children });
+  cResult[0] = children;
+  cResult[1] = tmp4.text;
+  cResult[2] = tmp6;
+  tmp5 = tmp6;
+}) : ((children) => {
+  children = children.children;
+  return jsx(native.LegacyText, { style: closure_3().text, children });
+});
 const result = size.fileFinishedImporting("modules/search/native/components/HighlightText.tsx");
 
-export default function HighlightText(children) {
-  const tmp = closure_3();
-  return jsx(native.LegacyText, { style: closure_3().text, children: children.children });
-};
+export default tmp4;

@@ -1,57 +1,58 @@
-// Module ID: 7985
-// Function ID: 7986
+// Module ID: 8031
+// Function ID: 8032
 // Name: LabFeatureStore
-// Dependencies: [504, 7986, 573, 2]
+// Dependencies: [504, 8032, 584, 2]
 
-// Module 7985 (LabFeatureStore)
-import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import LabFeaturesDefault from "LabFeatures" /* 7986 */;
+// Module 8031 (LabFeatureStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import LabFeaturesDefault from "LabFeatures" /* 8032 */;
+import size from "module_2" /* 2 */;
 
-let toggleStates = {};
-const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;
+const React2 = {};
+const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;
 class LabFeatureStore extends DeviceSettingsStore {
-}
-const prototype = LabFeatureStore.prototype;
-prototype["getUserAgnosticState"] = function getUserAgnosticState() {
-  return { toggleStates };
-};
-prototype["initialize"] = function initialize(toggleStates) {
-  for (const key10008 in LabFeaturesDefault) {
-    let flag;
-    let tmp2 = closure_2;
-    if (arg0 != null) {
-      toggleStates = arg0.toggleStates;
+  getUserAgnosticState() {
+    return { toggleStates };
+  }
+  initialize(toggleStates) {
+    for (const key10008 in LabFeaturesDefault) {
+      let flag;
+      let tmp2 = closure_2;
       if (toggleStates != null) {
-        flag = toggleStates[key10008];
+        toggleStates = toggleStates.toggleStates;
+        if (toggleStates != null) {
+          flag = toggleStates[key10008];
+        }
       }
+      if (flag == null) {
+        flag = false;
+      }
+      tmp2[key10008] = flag;
+      continue;
     }
+  }
+  get(arg0) {
+    let flag = toggleStates[arg0];
     if (flag == null) {
       flag = false;
     }
-    tmp2[key10008] = flag;
-    continue;
+    return flag;
   }
-};
-prototype["get"] = function get(arg0) {
-  let flag = toggleStates[arg0];
-  if (flag == null) {
-    flag = false;
+  set(arg0, arg1) {
+    toggleStates[arg0] = arg1;
+    return arg1;
   }
-  return flag;
-};
-prototype["set"] = function set(arg0, arg1) {
-  closure_2[arg0] = arg1;
-  return arg1;
-};
+}
+const prototype = LabFeatureStore.prototype;
 LabFeatureStore.displayName = "LabFeatureStore";
 LabFeatureStore.persistKey = "LabFeatureStore";
-const labFeatureStore = new LabFeatureStore(DispatcherDefault, {
+const obj = {
   LAB_FEATURE_TOGGLE: function handleLabFeatureToggleSet(labFeature) {
-    closure_2[labFeature.labFeature] = labFeature.enabled;
+    toggleStates[labFeature.labFeature] = labFeature.enabled;
   }
-});
-const size = fn(2);
+};
+const labFeatureStore = new LabFeatureStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/labs/LabFeatureStore.tsx");
 
 export default labFeatureStore;

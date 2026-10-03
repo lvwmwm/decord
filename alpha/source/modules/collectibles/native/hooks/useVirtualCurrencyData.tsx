@@ -1,27 +1,67 @@
-// Module ID: 12929
-// Function ID: 12930
+// Module ID: 12984
+// Function ID: 12985
 // Name: useVirtualCurrencyData
-// Dependencies: [19, 7161, 8503, 2]
-// Exports: useVirtualCurrencyData
+// Dependencies: [19, 558, 576, 7064, 8508, 2]
 
-// Module 12929 (useVirtualCurrencyData)
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7161 */;
-import _mod8503 from "module_8503" /* 8503 */;
-import noop from "module_19" /* 19 */;
+// Module 12984 (useVirtualCurrencyData)
+import react2 from "react" /* 576 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7064 */;
+import _mod8508 from "module_8508" /* 8508 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/collectibles/native/hooks/useVirtualCurrencyData.tsx");
-
-export const useVirtualCurrencyData = function useVirtualCurrencyData(product, canUseShopDiscountsResult) {
-  const productOrbPrice = CollectiblesProductUtils.getProductOrbPrice({ product, hasShopDiscount: canUseShopDiscountsResult });
-  const obj2 = { product, hasShopDiscount: canUseShopDiscountsResult };
-  const balance = _mod8503.useFetchVirtualCurrencyBalance().balance;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product, hasShopDiscount) => {
+  const obj = react2;
+  const cResult = obj.c(7);
+  if (cResult[0] === hasShopDiscount) {
+    let tmp4;
+    if (cResult[1] === product) {
+      tmp4 = cResult[2];
+    }
+    const tmpResult = _mod8508;
+    const balance = tmpResult.useFetchVirtualCurrencyBalance().balance;
+    let tmp7 = null;
+    if (null != tmp4) {
+      tmp7 = null;
+      if (null != balance) {
+        tmp7 = tmp4.amount <= balance;
+      }
+    }
+    if (cResult[3] === balance) {
+      if (cResult[4] === tmp7) {
+        let tmp8;
+        if (cResult[5] === tmp4) {
+          tmp8 = cResult[6];
+        }
+        return tmp8;
+      }
+    }
+    const obj2 = { price: tmp4, balance, canAfford: tmp7 };
+    cResult[3] = balance;
+    cResult[4] = tmp7;
+    cResult[5] = tmp4;
+    cResult[6] = obj2;
+    tmp8 = obj2;
+  }
+  const obj3 = { product, hasShopDiscount };
+  const tmpResult2 = CollectiblesProductUtils;
+  const productOrbPrice = tmpResult2.getProductOrbPrice(obj3);
+  cResult[0] = hasShopDiscount;
+  cResult[1] = product;
+  cResult[2] = productOrbPrice;
+  tmp4 = productOrbPrice;
+}) : ((product, hasShopDiscount) => {
+  const obj = CollectiblesProductUtils;
+  const obj2 = { product, hasShopDiscount };
+  const productOrbPrice = obj.getProductOrbPrice(obj2);
+  const obj3 = _mod8508;
+  const balance = obj3.useFetchVirtualCurrencyBalance().balance;
   const items = [productOrbPrice, balance];
-  return {
+  const obj4 = {
     price: productOrbPrice,
     balance,
-    canAfford: noop.useMemo(() => {
+    canAfford: react.useMemo(() => {
       let tmp2 = null;
       if (null != productOrbPrice) {
         tmp2 = null;
@@ -32,4 +72,8 @@ export const useVirtualCurrencyData = function useVirtualCurrencyData(product, c
       return tmp2;
     }, items)
   };
-};
+  return obj4;
+});
+const result = size.fileFinishedImporting("modules/collectibles/native/hooks/useVirtualCurrencyData.tsx");
+
+export const useVirtualCurrencyData = tmp2;

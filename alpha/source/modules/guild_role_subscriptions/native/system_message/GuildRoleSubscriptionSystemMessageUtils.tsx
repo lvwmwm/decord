@@ -1,26 +1,32 @@
-// Module ID: 11519
-// Function ID: 11520
+// Module ID: 11438
+// Function ID: 11439
 // Name: system_message/GuildRoleSubscriptionSystemMessageUtils
-// Dependencies: [1074, 7064, 7607, 5025, 2]
+// Dependencies: [1085, 6965, 7651, 5070, 2]
 // Exports: handleRoleSubscriptionPurchaseSystemMessageCtaClicked
 
-// Module 11519 (system_message/GuildRoleSubscriptionSystemMessageUtils)
-import Constants from "Constants" /* 1074 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5025 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7064 */;
-import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 7607 */;
+// Module 11438 (system_message/GuildRoleSubscriptionSystemMessageUtils)
+import Constants from "Constants" /* 1085 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 6965 */;
+import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 7651 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/system_message/GuildRoleSubscriptionSystemMessageUtils.tsx");
 
 export const handleRoleSubscriptionPurchaseSystemMessageCtaClicked = function handleRoleSubscriptionPurchaseSystemMessageCtaClicked(messageChannel, message, stickerId) {
+  const sendGreetMessage = MessageActionCreatorsDefault.sendGreetMessage;
+  const id = messageChannel.id;
+  MessageActionCreatorsDefault;
   const obj = MessageActionCreatorsDefault;
-  obj.sendGreetMessage(messageChannel.id, stickerId, MessageActionCreatorsDefault.getSendMessageOptionsForReply({ channel: messageChannel, message, shouldMention: true, showMentionToggle: true }));
-  const obj3 = { channel: messageChannel, message, shouldMention: true, showMentionToggle: true };
-  const roleSubscriptionPurchaseSystemMessageEventProperties = GuildRoleSubscriptionSystemMessageUtils.getRoleSubscriptionPurchaseSystemMessageEventProperties(messageChannel, message);
-  const obj6 = {};
+  const obj2 = { channel: messageChannel, message, shouldMention: true, showMentionToggle: true };
+  sendGreetMessage(id, stickerId, obj.getSendMessageOptionsForReply(obj2));
+  const obj3 = GuildRoleSubscriptionSystemMessageUtils;
+  const roleSubscriptionPurchaseSystemMessageEventProperties = obj3.getRoleSubscriptionPurchaseSystemMessageEventProperties(messageChannel, message);
+  const obj4 = { sticker_id: stickerId };
+  const trackWithMetadata = AppAnalyticsUtilsDefault.trackWithMetadata;
+  const ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE_CTA_CLICKED = AnalyticEvents.ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE_CTA_CLICKED;
+  AppAnalyticsUtilsDefault;
   const merged = Object.assign(roleSubscriptionPurchaseSystemMessageEventProperties);
-  obj6.sticker_id = stickerId;
-  AppAnalyticsUtilsDefault.trackWithMetadata(AnalyticEvents.ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE_CTA_CLICKED, obj6);
+  trackWithMetadata(ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE_CTA_CLICKED, obj4);
 };

@@ -1,60 +1,82 @@
-// Module ID: 10589
-// Function ID: 10590
+// Module ID: 10670
+// Function ID: 10671
 // Name: LobbyUtils
-// Dependencies: [4498, 1074, 504, 2]
-// Exports: canUnlinkLobbyChannel, useCanUnlinkLobbyChannel
+// Dependencies: [4509, 1085, 558, 576, 504, 2]
+// Exports: canUnlinkLobbyChannel
 
-// Module 10589 (LobbyUtils)
-import PermissionStore from "PermissionStore" /* 4498 */;
+// Module 10670 (LobbyUtils)
+import Constants from "Constants" /* 1085 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
-const require = fn;
-const Permissions = fn(1074).Permissions;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/lobbies/LobbyUtils.tsx");
-
-export const canUnlinkLobbyChannel = function canUnlinkLobbyChannel(channel, arg1) {
+const Permissions = Constants.Permissions;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  _require = arg0;
+  const tmp = _require;
+  const obj = require("react");
+  const cResult = obj.c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [PermissionStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function t() {
+      if (PermissionStore !== undefined) {
+        let tmp3 = null != tmp;
+        if (tmp3) {
+          tmp3 = null != tmp.linkedLobby && obj.can(Permissions.MANAGE_CHANNELS, tmp) && obj.can(Permissions.VIEW_CHANNEL, tmp) && obj.can(Permissions.SEND_MESSAGES, tmp);
+          const canResult = null != tmp.linkedLobby && obj.can(Permissions.MANAGE_CHANNELS, tmp) && obj.can(Permissions.VIEW_CHANNEL, tmp) && obj.can(Permissions.SEND_MESSAGES, tmp);
+        }
+        return tmp3;
+      }
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  const obj = require("get initialized");
+  const items = [PermissionStore];
+  return obj.useStateFromStores(items, () => {
+    if (PermissionStore !== undefined) {
+      let tmp3 = null != tmp;
+      if (tmp3) {
+        tmp3 = null != tmp.linkedLobby && obj.can(Permissions.MANAGE_CHANNELS, tmp) && obj.can(Permissions.VIEW_CHANNEL, tmp) && obj.can(Permissions.SEND_MESSAGES, tmp);
+        const canResult = null != tmp.linkedLobby && obj.can(Permissions.MANAGE_CHANNELS, tmp) && obj.can(Permissions.VIEW_CHANNEL, tmp) && obj.can(Permissions.SEND_MESSAGES, tmp);
+      }
+      return tmp3;
+    }
+  });
+});
+function canUnlinkLobbyChannel(channel, arg1) {
   let obj = arg1;
   if (arg1 === undefined) {
     obj = PermissionStore;
   }
   let tmp = null != channel;
   if (tmp) {
-    let canResult = null != channel.linkedLobby;
-    if (canResult) {
-      canResult = obj.can(Permissions.MANAGE_CHANNELS, channel);
-    }
-    if (canResult) {
-      canResult = obj.can(Permissions.VIEW_CHANNEL, channel);
-    }
-    if (canResult) {
-      canResult = obj.can(Permissions.SEND_MESSAGES, channel);
-    }
-    tmp = canResult;
+    tmp = null != channel.linkedLobby && obj.can(Permissions.MANAGE_CHANNELS, channel) && obj.can(Permissions.VIEW_CHANNEL, channel) && obj.can(Permissions.SEND_MESSAGES, channel);
+    const canResult = null != channel.linkedLobby && obj.can(Permissions.MANAGE_CHANNELS, channel) && obj.can(Permissions.VIEW_CHANNEL, channel) && obj.can(Permissions.SEND_MESSAGES, channel);
   }
   return tmp;
-};
-export const useCanUnlinkLobbyChannel = function useCanUnlinkLobbyChannel(channel) {
-  _require = channel;
-  const items = [PermissionStore];
-  return require("initialize").useStateFromStores(items, () => {
-    if (PermissionStore !== undefined) {
-      let tmp3 = null != tmp;
-      if (tmp3) {
-        let canResult = null != tmp.linkedLobby;
-        if (canResult) {
-          canResult = obj.can(Permissions.MANAGE_CHANNELS, tmp);
-        }
-        if (canResult) {
-          canResult = obj.can(Permissions.VIEW_CHANNEL, tmp);
-        }
-        if (canResult) {
-          canResult = obj.can(Permissions.SEND_MESSAGES, tmp);
-        }
-        tmp3 = canResult;
-      }
-      return tmp3;
-    }
-  });
-};
+}
+const result = size.fileFinishedImporting("modules/lobbies/LobbyUtils.tsx");
+
+export { canUnlinkLobbyChannel };
+export const useCanUnlinkLobbyChannel = tmp2;

@@ -1,13 +1,13 @@
-// Module ID: 9703
-// Function ID: 9704
+// Module ID: 9732
+// Function ID: 9733
 // Name: getParticipantTitle
-// Dependencies: [4866, 9704, 4997, 1115, 2]
+// Dependencies: [4911, 9733, 5042, 1126, 2]
 // Exports: default
 
-// Module 9703 (getParticipantTitle)
-import CallConstants from "CallConstants" /* 4866 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4997 */;
-import useIsGuestOrLurker from "useIsGuestOrLurker" /* 9704 */;
+// Module 9732 (getParticipantTitle)
+import CallConstants from "CallConstants" /* 4911 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
+import useIsGuestOrLurker from "useIsGuestOrLurker" /* 9733 */;
 import size from "module_2" /* 2 */;
 
 const ParticipantTypes = CallConstants.ParticipantTypes;
@@ -26,16 +26,20 @@ export default function getParticipantTitle(guild_id, type, name) {
   } else {
     const user = type.user;
     let id;
+    const isGuestOrLurkerInGuild = useIsGuestOrLurker.isGuestOrLurkerInGuild;
+    guild_id = guild_id.guild_id;
+    useIsGuestOrLurker;
     if (user != null) {
       id = user.id;
     }
-    const result = useIsGuestOrLurker.isGuestOrLurkerInGuild(guild_id.guild_id, id);
+    const result = isGuestOrLurkerInGuild(guild_id, id);
     let str = "";
-    const name1 = NicknameUtilsDefault.getName(guild_id.getGuildId(), guild_id.id, type.user);
+    const obj = NicknameUtilsDefault;
+    const name1 = obj.getName(guild_id.getGuildId(), guild_id.id, type.user);
     if (result) {
-      const intl = tmp10(1115).intl;
+      const intl = tmp10(1126).intl;
       const _HermesInternal = HermesInternal;
-      str = " " + intl.string(tmp10(1115).t["pFO/Ph"]);
+      str = " " + intl.string(tmp10(1126).t["pFO/Ph"]);
     }
     return name1 + str;
   }

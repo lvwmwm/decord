@@ -1,15 +1,19 @@
-// Module ID: 7055
-// Function ID: 7056
+// Module ID: 6956
+// Function ID: 6957
 // Name: usePremiumTrialOffer
-// Dependencies: [7056, 2]
+// Dependencies: [558, 6957, 2]
 // Exports: usePremiumTrialOffer
 
-// Module 7055 (usePremiumTrialOffer)
-import useAndroidAndLegacyIOSPremiumTrialOfferCandidates from "useAndroidAndLegacyIOSPremiumTrialOfferCandidates" /* 7056 */;
+// Module 6956 (usePremiumTrialOffer)
+import useAndroidAndLegacyIOSPremiumTrialOfferCandidates from "useAndroidAndLegacyIOSPremiumTrialOfferCandidates" /* 6957 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/premium/hooks/usePremiumTrialOffer.android.tsx");
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const result1 = size.fileFinishedImporting("modules/premium/hooks/usePremiumTrialOffer.android.tsx");
 
-export const usePremiumTrialOffer = function usePremiumTrialOffer(arg0) {
-  return useAndroidAndLegacyIOSPremiumTrialOfferCandidates.useAndroidAndLegacyIOSPremiumTrialOfferCandidates(arg0);
+export const usePremiumTrialOffer = (arg0) => {
+  const obj = useAndroidAndLegacyIOSPremiumTrialOfferCandidates;
+  return obj.useAndroidAndLegacyIOSPremiumTrialOfferCandidates(arg0);
 };

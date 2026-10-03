@@ -1,15 +1,30 @@
 // Module ID: 14051
 // Function ID: 14052
-// Dependencies: [13999, 14018, 14008]
+// Dependencies: [13962, 14052]
+// Exports: getSupportedUnits
 
 // Module 14051
-import _mod13999 from "module_13999" /* 13999 */;
-import _mod14008 from "module_14008" /* 14008 */;
-import all from "module_14018" /* 14018 */;
+const require = globalThis.__r;
+let _require;
 
-let closure_0 = _mod13999(Function.toString);
-if (!all(_mod14008.inspectSource)) {
-  _mod14008.inspectSource = (arg0) => closure_0(arg0);
-}
 
-export default _mod14008.inspectSource;
+export const getSupportedUnits = function getSupportedUnits(locale) {
+  _require = locale;
+  const units = require("module_14052").units;
+  return units.filter((item) => {
+    function isSupported(unit, arg1) {
+      let str = arg1;
+      if (undefined === arg1) {
+        str = "en";
+      }
+      try {
+        const obj = { style: "unit", unit };
+        const memoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat(str, obj);
+        return memoizedNumberFormat.resolvedOptions().unit === unit;
+      } catch (err) {
+        return false;
+      }
+    }
+    return isSupported(item, locale);
+  });
+};

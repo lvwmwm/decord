@@ -1,14 +1,14 @@
 // Module ID: 10938
 // Function ID: 10939
 // Name: IosAttributionMetrics
-// Dependencies: [1074, 5363, 5368, 1241, 2]
+// Dependencies: [1085, 5409, 5414, 1252, 2]
 // Exports: trackIosAttributionClick, trackIosAttributionImpression
 
 // Module 10938 (IosAttributionMetrics)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5363 */;
-import MetricEvents from "MetricEvents" /* 5368 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5409 */;
+import MetricEvents from "MetricEvents" /* 5414 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -16,41 +16,47 @@ const result = size.fileFinishedImporting("modules/ads/ios_attribution/IosAttrib
 
 export const IosAttributionImpressionResult = { REGISTERED: "registered", NO_FRAMEWORK: "no_framework", NO_METADATA: "no_metadata", NOT_SKAN_ENABLED: "not_skan_enabled", SIGN_FAILED: "sign_failed", NO_TOKEN: "no_token" };
 export const IosAttributionClickResult = { ATTRIBUTED: "attributed", NO_IMPRESSION: "no_impression", NOT_READY: "not_ready" };
-export const trackIosAttributionImpression = function trackIosAttributionImpression(NO_FRAMEWORK, activeIosAttributionFramework, id) {
-  let str = activeIosAttributionFramework;
-  const obj2 = { name: MetricEvents.MetricEvents.IOS_ATTRIBUTION_IMPRESSION, tags: null };
-  const items = ["result:" + NO_FRAMEWORK, ];
-  let str2 = activeIosAttributionFramework;
-  if (activeIosAttributionFramework == null) {
+export const trackIosAttributionImpression = function trackIosAttributionImpression(NO_FRAMEWORK, c2, c0) {
+  let items;
+  let str = c2;
+  const tmp3 = MonitoringAgentDefault;
+  const increment = tmp3.increment;
+  const obj = { name: MetricEvents.MetricEvents.IOS_ATTRIBUTION_IMPRESSION, tags: items };
+  items = ["result:" + NO_FRAMEWORK, ];
+  let str2 = c2;
+  if (c2 == null) {
     str2 = "none";
   }
   items[1] = "framework:" + str2;
-  obj2.tags = items;
-  MonitoringAgentDefault.increment(obj2);
-  const obj3 = { impression_id: id, attribution_framework: null, attribution_result: null };
+  increment(obj);
+  const obj2 = { impression_id: c0, attribution_framework: str, attribution_result: NO_FRAMEWORK };
+  const track = tmp(1252).track;
+  const IOS_ATTRIBUTION_VIEW_RESOLVED = AnalyticEvents.IOS_ATTRIBUTION_VIEW_RESOLVED;
+  AnalyticsUtilsDefault;
   if (str == null) {
     str = "none";
   }
-  obj3.attribution_framework = str;
-  obj3.attribution_result = NO_FRAMEWORK;
-  AnalyticsUtilsDefault.track(AnalyticEvents.IOS_ATTRIBUTION_VIEW_RESOLVED, obj3);
+  track(IOS_ATTRIBUTION_VIEW_RESOLVED, obj2);
 };
 export const trackIosAttributionClick = function trackIosAttributionClick(ATTRIBUTED, framework, impression_id) {
+  let items;
   let str = framework;
-  const obj2 = { name: MetricEvents.MetricEvents.IOS_ATTRIBUTION_CLICK, tags: null };
-  const items = ["result:" + ATTRIBUTED, ];
+  const tmp3 = MonitoringAgentDefault;
+  const increment = tmp3.increment;
+  const obj = { name: MetricEvents.MetricEvents.IOS_ATTRIBUTION_CLICK, tags: items };
+  items = ["result:" + ATTRIBUTED, ];
   let str2 = framework;
   if (framework == null) {
     str2 = "none";
   }
   items[1] = "framework:" + str2;
-  obj2.tags = items;
-  MonitoringAgentDefault.increment(obj2);
-  const obj3 = { impression_id, attribution_framework: null, attribution_result: null };
+  increment(obj);
+  const obj2 = { impression_id, attribution_framework: str, attribution_result: ATTRIBUTED };
+  const track = tmp(1252).track;
+  const IOS_ATTRIBUTION_CLICK_RESOLVED = AnalyticEvents.IOS_ATTRIBUTION_CLICK_RESOLVED;
+  AnalyticsUtilsDefault;
   if (str == null) {
     str = "none";
   }
-  obj3.attribution_framework = str;
-  obj3.attribution_result = ATTRIBUTED;
-  AnalyticsUtilsDefault.track(AnalyticEvents.IOS_ATTRIBUTION_CLICK_RESOLVED, obj3);
+  track(IOS_ATTRIBUTION_CLICK_RESOLVED, obj2);
 };

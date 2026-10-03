@@ -1,117 +1,375 @@
-// Module ID: 14994
-// Function ID: 14995
+// Module ID: 15051
+// Function ID: 15052
 // Name: GuildRoleSubscriptionCard
-// Dependencies: [32, 19, 17, 21, 4845, 576, 6586, 4841, 14984, 10000, 1115, 1177, 14995, 14996, 14999, 2]
-// Exports: Content
+// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 6469, 4886, 15041, 1126, 1188, 15052, 15053, 9953, 15056, 2]
 
-// Module 14994 (GuildRoleSubscriptionCard)
-import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4841 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6586 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 14984 */;
-import GuildRoleSubscriptionEmojiGalleryDefault from "GuildRoleSubscriptionEmojiGallery" /* 14996 */;
-import GuildRoleSubscriptionBenefitRow from "GuildRoleSubscriptionBenefitRow" /* 14999 */;
-import _slicedToArray from "module_32" /* 32 */;
-import noop from "module_19" /* 19 */;
+// Module 15051 (GuildRoleSubscriptionCard)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6469 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15041 */;
+import GuildRoleSubscriptionEmojiGalleryDefault from "GuildRoleSubscriptionEmojiGallery" /* 15053 */;
+import GuildRoleSubscriptionBenefitRow from "GuildRoleSubscriptionBenefitRow" /* 15056 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-class SectionTitle {
-  constructor(arg0) {
-    tmp = closure_9();
-    obj = closure_0(closure_3[6]);
-    typeConsolidationEyebrow = obj.useTypeConsolidationEyebrow("GuildRoleSubscriptionCard", "text-xs/bold");
-    obj1 = { variant: typeConsolidationEyebrow.variant, color: "text-default", style: null, children: global.children };
-    items = [, ];
-    items[0] = tmp.sectionTitle;
-    items[1] = typeConsolidationEyebrow.style;
-    obj1.style = items;
-    return jsx(closure_0(closure_3[7]).Text, obj1);
+let children;
+
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let size;
+let tmp;
+const Text_Text = tmp(4886);
+const View = react_native.View;
+({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let obj = { sectionTitle: { textTransform: "uppercase" }, separator: size };
+size = { width: "100%", height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginVertical: 24 };
+let closure_9 = createStyles.createStyles(obj);
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+  const obj = react2;
+  const cResult = obj.c(7);
+  children = children.children;
+  const tmp4 = closure_9();
+  const obj2 = useTypeConsolidationTextTransform;
+  const typeConsolidationEyebrow = obj2.useTypeConsolidationEyebrow("GuildRoleSubscriptionCard", "text-xs/bold");
+  if (cResult[0] === typeConsolidationEyebrow.style) {
+    let tmp6;
+    if (cResult[1] === tmp4.sectionTitle) {
+      tmp6 = cResult[2];
+    }
+    if (cResult[3] === children) {
+      if (cResult[4] === typeConsolidationEyebrow.variant) {
+        let tmp7;
+        if (cResult[5] === tmp6) {
+          tmp7 = cResult[6];
+        }
+        return tmp7;
+      }
+    }
+    const obj3 = { variant: typeConsolidationEyebrow.variant, color: "text-default", style: tmp6, children };
+    const tmp9 = metroRequire(Text_Text.Text, obj3);
+    cResult[3] = children;
+    cResult[4] = typeConsolidationEyebrow.variant;
+    cResult[5] = tmp6;
+    cResult[6] = tmp9;
+    tmp7 = tmp9;
   }
-}
-class Separator {
-  constructor() {
-    obj = { style: closure_9().separator };
-    return jsx(View, obj);
+  const items = [tmp4.sectionTitle, typeConsolidationEyebrow.style];
+  cResult[0] = typeConsolidationEyebrow.style;
+  cResult[1] = tmp4.sectionTitle;
+  cResult[2] = items;
+  tmp6 = items;
+}) : ((children) => {
+  let items;
+  children = children.children;
+  const tmp = closure_9();
+  const obj = useTypeConsolidationTextTransform;
+  const typeConsolidationEyebrow = obj.useTypeConsolidationEyebrow("GuildRoleSubscriptionCard", "text-xs/bold");
+  const obj2 = { variant: typeConsolidationEyebrow.variant, color: "text-default", style: items, children };
+  items = [tmp.sectionTitle, typeConsolidationEyebrow.style];
+  return metroRequire(Text_Text.Text, obj2);
+});
+let closure_10 = tmp4;
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp3;
+  const obj = react2;
+  const cResult = obj.c(2);
+  const tmp2 = closure_9();
+  if (cResult[0] !== tmp2.separator) {
+    const obj2 = { style: tmp2.separator };
+    const tmp6 = metroRequire(View, obj2);
+    cResult[0] = tmp2.separator;
+    cResult[1] = tmp6;
+    tmp3 = tmp6;
+  } else {
+    tmp3 = cResult[1];
   }
-}
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4845);
-let obj2 = { sectionTitle: { textTransform: "uppercase" }, separator: null };
-let size = { width: "100%", height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginVertical: 24 };
-obj2.separator = size;
-const React7 = createStyles.createStyles(obj2);
-size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionCard.tsx");
-
-export { SectionTitle };
-export { Separator };
-export const Content = function Content(arg0) {
+  return tmp3;
+}) : (() => {
+  const obj = { style: closure_9().separator };
+  return metroRequire(View, obj);
+});
+let closure_11 = tmp5;
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let first3;
+  let guildId;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let items5;
+  let listingId;
+  let obj10;
+  let obj14;
+  let obj18;
+  let tmp8;
+  let tmp9;
+  let obj = guildId(576);
+  const cResult = obj.c(23);
   ({ listingId, guildId } = arg0);
-  const first = _slicedToArray(GuildRoleSubscriptionListingEditStateUtilsAll.useTierEmojiIds(listingId, guildId), 1)[0];
-  const first1 = _slicedToArray(GuildRoleSubscriptionListingEditStateUtilsAll.useChannelBenefits(listingId), 1)[0];
-  const first2 = _slicedToArray(GuildRoleSubscriptionListingEditStateUtilsAll.useIntangibleBenefits(listingId), 1)[0];
-  const role = GuildRoleSubscriptionListingEditStateUtilsAll.useRole(listingId, guildId);
+  const obj2 = GuildRoleSubscriptionListingEditStateUtilsAll;
+  const first = _slicedToArray(obj2.useTierEmojiIds(listingId, guildId), 1)[0];
+  const obj3 = GuildRoleSubscriptionListingEditStateUtilsAll;
+  const first1 = _slicedToArray(obj3.useChannelBenefits(listingId), 1)[0];
+  const obj4 = GuildRoleSubscriptionListingEditStateUtilsAll;
+  const first2 = _slicedToArray(obj4.useIntangibleBenefits(listingId), 1)[0];
+  const obj5 = GuildRoleSubscriptionListingEditStateUtilsAll;
+  const role = obj5.useRole(listingId, guildId);
+  size = first.size;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t() {
+      return closure_1_6(closure_1_11, {});
+    };
+    cResult[0] = fn;
+    first3 = fn;
+  } else {
+    first3 = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj6 = { children: intl.string(guildId(1126).t["DJ+bGu"]) };
+    intl = tmp2(1126).intl;
+    const tmp12 = closure_6(closure_10, obj6);
+    const tmp13 = closure_6(guildId(1188).Spacer, { size: 8 });
+    cResult[1] = tmp12;
+    cResult[2] = tmp13;
+    tmp9 = tmp13;
+    tmp8 = tmp12;
+  } else {
+    tmp8 = cResult[1];
+    tmp9 = cResult[2];
+  }
+  if (cResult[3] === guildId) {
+    let tmp14;
+    if (cResult[4] === role) {
+      tmp14 = cResult[5];
+    }
+    if (cResult[6] === first) {
+      if (cResult[7] === guildId) {
+        let tmp16;
+        if (cResult[8] === size) {
+          tmp16 = cResult[9];
+        }
+        if (cResult[10] === first1) {
+          if (cResult[11] === guildId) {
+            let tmp27;
+            if (cResult[12] === first1.length) {
+              tmp27 = cResult[13];
+            }
+            if (cResult[14] === guildId) {
+              if (cResult[15] === first2) {
+                let tmp33;
+                if (cResult[16] === first2.length) {
+                  tmp33 = cResult[17];
+                }
+                if (cResult[18] === tmp14) {
+                  if (cResult[19] === tmp16) {
+                    if (cResult[20] === tmp27) {
+                      let tmp39;
+                      if (cResult[21] === tmp33) {
+                        tmp39 = cResult[22];
+                      }
+                      return tmp39;
+                    }
+                  }
+                }
+                const obj7 = { renderGap: first3, children: items };
+                items = [tmp14, tmp16, tmp27, tmp33];
+                const tmp41 = closure_8(guildId(9953).GappedList, obj7);
+                cResult[18] = tmp14;
+                cResult[19] = tmp16;
+                cResult[20] = tmp27;
+                cResult[21] = tmp33;
+                cResult[22] = tmp41;
+                tmp39 = tmp41;
+              }
+            }
+            let tmp34 = null;
+            if (first2.length > 0) {
+              const obj8 = { children: items1 };
+              const obj9 = { children: intl4.format(guildId(1126).t["4V/Mfi"], obj10) };
+              intl4 = tmp2(1126).intl;
+              obj10 = { numIntangibles: first2.length };
+              items1 = [closure_6(closure_10, obj9), closure_6(guildId(1188).Spacer, { size: 14 }), ];
+              const obj11 = {
+                gap: 14,
+                children: first2.map((benefit, index) => {
+                              const obj = { benefit, guildId };
+                              return metroRequire(GuildRoleSubscriptionBenefitRow.IntangibleBenefitRow, obj, index);
+                            })
+              };
+              const GappedList2 = tmp2(9953).GappedList;
+              items1[2] = closure_6(GappedList2, obj11);
+              tmp34 = closure_8(closure_7, obj8);
+            }
+            cResult[14] = guildId;
+            cResult[15] = first2;
+            cResult[16] = first2.length;
+            cResult[17] = tmp34;
+            tmp33 = tmp34;
+          }
+        }
+        let tmp28 = null;
+        if (first1.length > 0) {
+          const obj12 = { children: items2 };
+          const obj13 = { children: intl3.format(guildId(1126).t.l40GUu, obj14) };
+          intl3 = tmp2(1126).intl;
+          obj14 = { numChannels: first1.length };
+          items2 = [closure_6(closure_10, obj13), closure_6(guildId(1188).Spacer, { size: 14 }), ];
+          const obj15 = {
+            gap: 14,
+            children: first1.map((benefit) => {
+                      const obj = { benefit, guildId };
+                      return metroRequire(GuildRoleSubscriptionBenefitRow.ChannelBenefitRow, obj, benefit.ref_id);
+                    })
+          };
+          const GappedList = tmp2(9953).GappedList;
+          items2[2] = closure_6(GappedList, obj15);
+          tmp28 = closure_8(closure_7, obj12);
+        }
+        cResult[10] = first1;
+        cResult[11] = guildId;
+        cResult[12] = first1.length;
+        cResult[13] = tmp28;
+        tmp27 = tmp28;
+      }
+    }
+    let tmp17 = null;
+    if (size > 0) {
+      const obj16 = { children: items3 };
+      const obj17 = { children: intl2.format(guildId(1126).t.oDeFmv, obj18) };
+      intl2 = tmp2(1126).intl;
+      obj18 = { numEmojis: first.size };
+      items3 = [closure_6(closure_10, obj17), closure_6(guildId(1188).Spacer, { size: 14 }), ];
+      const obj19 = { emojiIds: items4, guildId };
+      items4 = [];
+      const tmp23 = GuildRoleSubscriptionEmojiGalleryDefault;
+      HermesBuiltin.arraySpread(items4, first, 0);
+      items3[2] = closure_6(tmp23, obj19);
+      tmp17 = closure_8(closure_7, obj16);
+    }
+    cResult[6] = first;
+    cResult[7] = guildId;
+    cResult[8] = size;
+    cResult[9] = tmp17;
+    tmp16 = tmp17;
+  }
+  const obj20 = { children: items5 };
+  items5 = [tmp8, tmp9, closure_6(guildId(15052).GuildRoleSubscriptionMemberPreview, { guildId, role })];
+  const tmp15 = closure_8(closure_7, obj20);
+  cResult[3] = guildId;
+  cResult[4] = role;
+  cResult[5] = tmp15;
+  tmp14 = tmp15;
+}) : ((arg0) => {
+  let guildId;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let items5;
+  let listingId;
+  let obj10;
+  let obj14;
+  let obj18;
+  ({ listingId, guildId } = arg0);
+  let obj = GuildRoleSubscriptionListingEditStateUtilsAll;
+  const first = _slicedToArray(obj.useTierEmojiIds(listingId, guildId), 1)[0];
+  const obj2 = GuildRoleSubscriptionListingEditStateUtilsAll;
+  const first1 = _slicedToArray(obj2.useChannelBenefits(listingId), 1)[0];
+  const obj3 = GuildRoleSubscriptionListingEditStateUtilsAll;
+  const first2 = _slicedToArray(obj3.useIntangibleBenefits(listingId), 1)[0];
+  const obj4 = GuildRoleSubscriptionListingEditStateUtilsAll;
+  const role = obj4.useRole(listingId, guildId);
+  size = first.size;
   const obj5 = {
     renderGap() {
-      return closure_1_6(Separator, {});
+      return closure_1_6(closure_1_11, {});
     },
-    children: null
+    children: items1
   };
-  const obj6 = { children: null };
-  const obj7 = { children: null };
-  const intl = guildId(1115).intl;
-  obj7.children = intl.string(guildId(1115).t["DJ+bGu"]);
-  const items = [closure_6(SectionTitle, obj7), closure_6(guildId(1177).Spacer, { size: 8 }), closure_6(guildId(14995).GuildRoleSubscriptionMemberPreview, { guildId, role })];
-  obj6.children = items;
-  const items1 = [closure_8(closure_7, obj6), , , ];
-  let tmp4Result = null;
-  if (first.size > 0) {
-    const obj8 = { children: null };
-    const obj9 = { children: null };
-    const intl2 = tmp5(1115).intl;
-    const obj10 = { numEmojis: first.size };
-    obj9.children = intl2.format(tmp5(1115).t.oDeFmv, obj10);
-    const items2 = [tmp7(tmp8, obj9), tmp7(tmp5(1177).Spacer, { size: 14 }), ];
-    const obj11 = { emojiIds: null, guildId: null };
-    const items3 = [];
-    HermesBuiltin.arraySpread(first, 0);
-    obj11.emojiIds = items3;
-    obj11.guildId = guildId;
-    items2[2] = tmp7(GuildRoleSubscriptionEmojiGalleryDefault, obj11);
-    obj8.children = items2;
-    tmp4Result = tmp4(tmp6, obj8);
+  const obj6 = { children: items };
+  const obj7 = { children: intl.string(guildId(1126).t["DJ+bGu"]) };
+  const GappedList = guildId(9953).GappedList;
+  intl = guildId(1126).intl;
+  items = [closure_6(closure_10, obj7), closure_6(guildId(1188).Spacer, { size: 8 }), closure_6(guildId(15052).GuildRoleSubscriptionMemberPreview, { guildId, role })];
+  items1 = [closure_8(closure_7, obj6), , , ];
+  let tmp5Result = null;
+  if (size > 0) {
+    const obj8 = { children: items2 };
+    const obj9 = { children: intl2.format(guildId(1126).t.oDeFmv, obj10) };
+    intl2 = tmp6(1126).intl;
+    obj10 = { numEmojis: first.size };
+    items2 = [closure_6(closure_10, obj9), closure_6(guildId(1188).Spacer, { size: 14 }), ];
+    const obj11 = { emojiIds: items3, guildId };
+    items3 = [];
+    const tmp12 = GuildRoleSubscriptionEmojiGalleryDefault;
+    HermesBuiltin.arraySpread(items3, first, 0);
+    items2[2] = closure_6(tmp12, obj11);
+    tmp5Result = tmp5(tmp7, obj8);
   }
-  items1[1] = tmp4Result;
-  let tmp4Result3 = null;
+  items1[1] = tmp5Result;
+  let tmp5Result3 = null;
   if (first1.length > 0) {
-    const obj12 = { children: null };
-    const obj13 = { children: null };
-    const intl3 = tmp5(1115).intl;
-    const obj14 = { numChannels: length };
-    obj13.children = intl3.format(tmp5(1115).t.l40GUu, obj14);
-    const items4 = [tmp7(tmp8, obj13), tmp7(tmp5(1177).Spacer, { size: 14 }), ];
-    const obj15 = { gap: 14, children: first1.map((benefit) => timestampProducer(GuildRoleSubscriptionBenefitRow.ChannelBenefitRow, { benefit, guildId }, benefit.ref_id)) };
-    items4[2] = tmp7(tmp5(10000).GappedList, obj15);
-    obj12.children = items4;
-    tmp4Result3 = tmp4(tmp6, obj12);
+    const obj12 = { children: items4 };
+    const obj13 = { children: intl3.format(guildId(1126).t.l40GUu, obj14) };
+    intl3 = tmp6(1126).intl;
+    obj14 = { numChannels: first1.length };
+    items4 = [closure_6(closure_10, obj13), closure_6(guildId(1188).Spacer, { size: 14 }), ];
+    const obj15 = {
+      gap: 14,
+      children: first1.map((benefit) => {
+          const obj = { benefit, guildId };
+          return metroRequire(GuildRoleSubscriptionBenefitRow.ChannelBenefitRow, obj, benefit.ref_id);
+        })
+    };
+    const GappedList2 = tmp6(9953).GappedList;
+    items4[2] = closure_6(GappedList2, obj15);
+    tmp5Result3 = tmp5(tmp7, obj12);
   }
-  items1[2] = tmp4Result3;
-  let tmp4Result4 = null;
+  items1[2] = tmp5Result3;
+  let tmp5Result4 = null;
   if (first2.length > 0) {
-    const obj16 = { children: null };
-    const obj17 = { children: null };
-    const intl4 = tmp5(1115).intl;
-    const obj18 = { numIntangibles: length2 };
-    obj17.children = intl4.format(tmp5(1115).t["4V/Mfi"], obj18);
-    const items5 = [tmp7(tmp8, obj17), tmp7(tmp5(1177).Spacer, { size: 14 }), ];
-    const obj19 = { gap: 14, children: first2.map((benefit, index) => timestampProducer(GuildRoleSubscriptionBenefitRow.IntangibleBenefitRow, { benefit, guildId }, index)) };
-    items5[2] = tmp7(tmp5(10000).GappedList, obj19);
-    obj16.children = items5;
-    tmp4Result4 = tmp4(tmp6, obj16);
+    const obj16 = { children: items5 };
+    const obj17 = { children: intl4.format(guildId(1126).t["4V/Mfi"], obj18) };
+    intl4 = tmp6(1126).intl;
+    obj18 = { numIntangibles: first2.length };
+    items5 = [closure_6(closure_10, obj17), closure_6(guildId(1188).Spacer, { size: 14 }), ];
+    const obj19 = {
+      gap: 14,
+      children: first2.map((benefit, index) => {
+          const obj = { benefit, guildId };
+          return metroRequire(GuildRoleSubscriptionBenefitRow.IntangibleBenefitRow, obj, index);
+        })
+    };
+    const GappedList3 = tmp6(9953).GappedList;
+    items5[2] = closure_6(GappedList3, obj19);
+    tmp5Result4 = tmp5(tmp7, obj16);
   }
-  items1[3] = tmp4Result4;
-  obj5.children = items1;
-  return closure_8(guildId(10000).GappedList, obj5);
-};
+  items1[3] = tmp5Result4;
+  return closure_8(GappedList, obj5);
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionCard.tsx");
+
+export const SectionTitle = tmp4;
+export const Separator = tmp5;
+export const Content = tmp6;

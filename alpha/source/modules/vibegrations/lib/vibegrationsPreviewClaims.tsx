@@ -1,39 +1,43 @@
-// Module ID: 12855
-// Function ID: 12856
+// Module ID: 12909
+// Function ID: 12910
 // Name: vibegrationsPreviewClaims
 // Dependencies: [32, 2]
 // Exports: awaitVibegrationsPreviewClaim, clearVibegrationsPreviewClaims, resolveVibegrationsPreviewClaim
 
-// Module 12855 (vibegrationsPreviewClaims)
-import _slicedToArray from "module_32" /* 32 */;
+// Module 12909 (vibegrationsPreviewClaims)
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import size from "module_2" /* 2 */;
 
-const map = new Map();
-const size = fn(2);
+let map = new Map();
 let result = size.fileFinishedImporting("modules/vibegrations/lib/vibegrationsPreviewClaims.tsx");
 
 export const awaitVibegrationsPreviewClaim = function awaitVibegrationsPreviewClaim(projectId, id) {
-  value = id.get(id);
+  map = id;
+  const value = map.get(id);
   if (null != value) {
     const _clearTimeout = clearTimeout;
     clearTimeout(value.timer);
     value.resolve(null);
   }
-  return new Promise((resolve) => {
+  const promise = new Promise((resolve) => {
     projectId = resolve;
-    const result = id.set(id, {
+    const obj = {
       resolve,
       timer: setTimeout(() => {
-        map.delete(closure_1);
-        closure_0(null);
+        map.delete(id);
+        resolve(null);
       }, 5000),
       projectId
-    });
+    };
+    const result = id.set(id, obj);
   });
+  return promise;
 };
 export const resolveVibegrationsPreviewClaim = function resolveVibegrationsPreviewClaim(id, upload_token) {
-  value = map.get(id);
+  const value = map.get(id);
+  const obj = map;
   if (null != value) {
-    map.delete(id);
+    obj.delete(id);
     const _clearTimeout = clearTimeout;
     clearTimeout(value.timer);
     const obj2 = { uploadToken: upload_token };
@@ -41,7 +45,10 @@ export const resolveVibegrationsPreviewClaim = function resolveVibegrationsPrevi
   }
 };
 export const clearVibegrationsPreviewClaims = function clearVibegrationsPreviewClaims(projectId) {
+  let tmp5;
+  let tmp6;
   const items = [...map];
+  const tmp = items[Symbol.iterator]();
   while (tmp !== undefined) {
     let tmp4 = _slicedToArray(tmp2, 2);
     [tmp5, tmp6] = tmp4;

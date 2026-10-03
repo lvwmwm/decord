@@ -1,22 +1,23 @@
-// Module ID: 11692
-// Function ID: 11693
+// Module ID: 11613
+// Function ID: 11614
 // Name: UploaderError
-// Dependencies: [5267, 2]
+// Dependencies: [5313, 2]
 
-// Module 11692 (UploaderError)
-import APIError from "APIError" /* 5267 */;
+// Module 11613 (UploaderError)
+import APIError from "APIError" /* 5313 */;
+import size from "module_2" /* 2 */;
 
-const prototype = function UploaderError(body, arg1) {
-  const tmp2 = new tmp(body, arg1, new.target, tmp, new.target);
-  tmp2.attachments = [];
-  if (tmp3) {
-    tmp2.attachments = body.body.attachments;
+class UploaderError extends APIError {
+  constructor(body, arg1) {
+    const tmp2 = new tmp(body, arg1, new.target, tmp, this);
+    tmp2.attachments = [];
+    const tmp3 = null != body.body && null != body.body.attachments;
+    if (tmp3) {
+      tmp2.attachments = body.body.attachments;
+    }
+    return tmp2;
   }
-  return tmp2;
-}.prototype;
-class prototype extends tmp2 {
 }
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/errors/UploaderError.tsx");
 
-export default prototype;
+export default UploaderError;

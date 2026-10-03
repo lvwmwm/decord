@@ -1,48 +1,105 @@
-// Module ID: 6580
-// Function ID: 6581
+// Module ID: 6463
+// Function ID: 6464
 // Name: BackgroundImage
-// Dependencies: [19, 17, 21, 4776, 4714, 6581, 6582, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 558, 576, 4791, 4729, 6464, 6465, 2]
 
-// Module 6580 (BackgroundImage)
-import shared from "shared" /* 4714 */;
-import noop from "module_19" /* 19 */;
+// Module 6463 (BackgroundImage)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import useThemeDefault from "useTheme" /* 4791 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ Image: closure_4, View: hasOwnProperty, StyleSheet: metroRequire } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/auth/native/components/atoms/BackgroundImage.tsx");
+let dependencyMap;
 
-export default function BackgroundImage(backgroundImageSource) {
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
+let tmp;
+const shared = tmp(4729);
+({ Image: closure_4, View: hasOwnProperty, StyleSheet: metroRequire } = react_native);
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let backgroundImageCover;
+  let backgroundImageSource;
+  let tmp7;
+  const obj = react2;
+  const cResult = obj.c(7);
+  ({ backgroundImageSource, backgroundImageCover } = arg0);
+  const tmp6 = useThemeDefault();
+  if (cResult[0] !== (undefined !== backgroundImageCover && backgroundImageCover)) {
+    const items = [metroRequire.absoluteFill, undefined !== backgroundImageCover && backgroundImageCover ? { width: "100%", height: "100%" } : { width: "100%" }];
+    cResult[0] = undefined !== backgroundImageCover && backgroundImageCover;
+    cResult[1] = items;
+    tmp7 = items;
+  } else {
+    tmp7 = cResult[1];
+  }
+  if (null == backgroundImageSource) {
+    let tmp5Result;
+    const tmpResult = shared;
+    if (tmpResult.isThemeDark(tmp6)) {
+      tmp5Result = tmp5(6464);
+    } else {
+      tmp5Result = tmp5(6465);
+    }
+    backgroundImageSource = tmp5Result;
+  }
+  if (cResult[2] === tmp7) {
+    let tmp10;
+    let tmp11;
+    if (cResult[3] === backgroundImageSource) {
+      tmp10 = cResult[4];
+    }
+    if (cResult[5] !== tmp10) {
+      const merged = Object.assign(tmp10);
+      const tmp19 = <hasOwnProperty style={metroRequire.absoluteFill}>{null}</hasOwnProperty>;
+      cResult[5] = tmp10;
+      cResult[6] = tmp19;
+      tmp11 = tmp19;
+    } else {
+      tmp11 = cResult[6];
+    }
+    return tmp11;
+  }
+  const obj4 = { style: tmp7, source: backgroundImageSource };
+  cResult[2] = tmp7;
+  cResult[3] = backgroundImageSource;
+  cResult[4] = obj4;
+  tmp10 = obj4;
+}) : ((backgroundImageSource) => {
+  let closure_2;
   backgroundImageSource = backgroundImageSource.backgroundImageSource;
   let flag = backgroundImageSource.backgroundImageCover;
   if (flag === undefined) {
     flag = false;
   }
-  const tmp = flag(4776)();
+  let tmp = flag(4791)();
   dependencyMap = tmp;
   let items = [backgroundImageSource, flag, tmp];
-  let obj = { style: absoluteFill.absoluteFill, children: null };
-  const merged = Object.assign(noop.useMemo(() => {
-    const items = [timestampProducer.absoluteFill, ];
-    const obj = { style: items, source: null };
+  let obj2 = {};
+  const merged = Object.assign(react.useMemo(() => {
+    let tmp;
+    const items = [metroRequire.absoluteFill, ];
+    const obj = { style: items, source: tmp };
     items[1] = flag ? { width: "100%", height: "100%" } : { width: "100%" };
-    if (null != backgroundImageSource) {
-      obj.source = backgroundImageSource;
-      return obj;
-    } else {
-      let tmp2 = dependencyMap;
+    tmp = backgroundImageSource;
+    if (null == backgroundImageSource) {
+      let tmp5Result;
+      const obj2 = shared;
       if (obj2.isThemeDark(closure_2)) {
-        tmp2 = 6581;
-        let tmp4Result = tmp4(tmp2);
+        tmp5Result = tmp5(6464);
       } else {
-        tmp4Result = tmp4(6582);
+        tmp5Result = tmp5(6465);
       }
-      obj2 = shared;
+      tmp = tmp5Result;
     }
+    return obj;
   }, items));
-  obj.children = <closure_4 />;
   return <closure_5 style={closure_6.absoluteFill}>{null}</closure_5>;
-};
+});
+const result = size.fileFinishedImporting("modules/auth/native/components/atoms/BackgroundImage.tsx");
+
+export default tmp3;

@@ -1,16 +1,17 @@
-// Module ID: 13556
-// Function ID: 13557
+// Module ID: 13618
+// Function ID: 13619
 // Name: VideoStabilizationExperiment
-// Dependencies: [1436, 2]
+// Dependencies: [1441, 2]
 
-// Module 13556 (VideoStabilizationExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1436 */;
+// Module 13618 (VideoStabilizationExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1441 */;
+import size from "module_2" /* 2 */;
 
-const obj = { kind: "user", name: "2026-05-ios-video-stabilization", defaultConfig: { mode: "off" }, variations: null };
-const obj2 = { 1: null, 2: { mode: "standard" } };
+let obj2;
+const obj = { kind: "user", name: "2026-05-ios-video-stabilization", defaultConfig: { mode: "off" }, variations: obj2 };
+obj2 = { 1: null, 2: { mode: "standard" } };
 obj2[2] = { mode: "low_latency" };
-obj.variations = obj2;
-const size = fn(2);
+const tmp2 = apex_ApexExperimentDefault(obj);
 const result = size.fileFinishedImporting("modules/calls/VideoStabilizationExperiment.tsx");
 
-export default apex_ApexExperimentDefault(obj);
+export default tmp2;

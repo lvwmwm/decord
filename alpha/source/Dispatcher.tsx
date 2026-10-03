@@ -1,25 +1,29 @@
-// Module ID: 573
-// Function ID: 574
+// Module ID: 584
+// Function ID: 585
 // Name: Dispatcher
-// Dependencies: [574, 567, 510, 504, 674, 2]
+// Dependencies: [585, 579, 510, 504, 685, 2]
 
-// Module 573 (Dispatcher)
-import initialize from "initialize" /* 504 */;
+// Module 584 (Dispatcher)
+import get_initialized from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
-import LoggingUtils from "LoggingUtils" /* 567 */;
-import Constants from "Constants" /* 574 */;
-import addSentryBreadcrumbDefault from "addSentryBreadcrumb" /* 674 */;
+import LoggingUtils from "LoggingUtils" /* 579 */;
+import Constants from "Constants" /* 585 */;
+import addSentryBreadcrumbDefault from "addSentryBreadcrumb" /* 685 */;
 import size from "module_2" /* 2 */;
 
-const obj = { Early: 0, [0]: "Early", Database: 1, [1]: "Database", Default: 2, [2]: "Default" };
+const STORAGE_KEY_LOG_DISPATCHES = Constants.STORAGE_KEY_LOG_DISPATCHES;
+const ActionLogger = LoggingUtils.ActionLogger;
 const Storage = Storage2.Storage;
-let flag = Storage.get(Constants.STORAGE_KEY_LOG_DISPATCHES);
+let flag = Storage.get(STORAGE_KEY_LOG_DISPATCHES);
 if (flag == null) {
   flag = false;
 }
-const actionLogger = new LoggingUtils.ActionLogger({ persist: flag });
-const dispatcher = new initialize.Dispatcher(obj.Default, actionLogger, { addBreadcrumb: addSentryBreadcrumbDefault });
+const obj = { persist: flag };
+const actionLogger = new ActionLogger(obj);
+const obj2 = { addBreadcrumb: addSentryBreadcrumbDefault };
+const Dispatcher = get_initialized.Dispatcher;
+const dispatcher = new Dispatcher(actionLogger, obj2);
 const result = size.fileFinishedImporting("Dispatcher.tsx");
 
 export default dispatcher;
-export const DispatchBand = obj;
+export const DispatchBand = get_initialized.DispatchBand;

@@ -1,32 +1,35 @@
-// Module ID: 17369
-// Function ID: 17370
+// Module ID: 17461
+// Function ID: 17462
 // Name: DmSettingsUpsellManager
-// Dependencies: [1074, 6725, 17370, 1271, 2]
+// Dependencies: [1085, 6613, 17462, 1282, 2]
 // Exports: acknowledgeDmSettingsUpsell
 
-// Module 17369 (DmSettingsUpsellManager)
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import DmSettingsUpsellActionCreatorsDefault from "DmSettingsUpsellActionCreators" /* 17370 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
+// Module 17461 (DmSettingsUpsellManager)
+import Constants from "Constants" /* 1085 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import DmSettingsUpsellActionCreatorsDefault from "DmSettingsUpsellActionCreators" /* 17462 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
-class DmSettingsUpsellManager extends tmp2 {
+class DmSettingsUpsellManager extends AutomaticLifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     applyArgumentsResult.actions = { DM_SETTINGS_UPSELL_SHOW: applyArgumentsResult.handleDmSettingsUpsellShow };
     return applyArgumentsResult;
   }
+  handleDmSettingsUpsellShow(guildId) {
+    const obj = DmSettingsUpsellActionCreatorsDefault;
+    const result = obj.openDmSettingsUpsellModal(guildId.guildId);
+  }
 }
-DmSettingsUpsellManager.prototype["handleDmSettingsUpsellShow"] = function handleDmSettingsUpsellShow(guildId) {
-  const result = DmSettingsUpsellActionCreatorsDefault.openDmSettingsUpsellModal(guildId.guildId);
-};
+const prototype = DmSettingsUpsellManager.prototype;
 const dmSettingsUpsellManager = new DmSettingsUpsellManager();
 let result = size.fileFinishedImporting("modules/dm_settings_upsell/DmSettingsUpsellManager.tsx");
 
 export default dmSettingsUpsellManager;
 export const acknowledgeDmSettingsUpsell = function acknowledgeDmSettingsUpsell(guildId) {
   const HTTP = HTTPUtils.HTTP;
-  return HTTP.post({ url: Endpoints.DM_SETTINGS_UPSELL_ACK(guildId), rejectWithError: false });
+  const obj = { url: Endpoints.DM_SETTINGS_UPSELL_ACK(guildId), rejectWithError: false };
+  return HTTP.post(obj);
 };

@@ -1,39 +1,44 @@
-// Module ID: 17493
-// Function ID: 17494
+// Module ID: 17582
+// Function ID: 17583
 // Name: ParticipantFocusManager
-// Dependencies: [4868, 4861, 6725, 2]
+// Dependencies: [4913, 4906, 6613, 2]
 
-// Module 17493 (ParticipantFocusManager)
-import RTCConnectionStore from "RTCConnectionStore" /* 4868 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4861 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
+// Module 17582 (ParticipantFocusManager)
+import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
+import size from "module_2" /* 2 */;
 
-class ParticipantFocusManager extends tmp2 {
+let map;
+
+class ParticipantFocusManager extends AutomaticLifecycleManager {
   constructor() {
-    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     map = new Map();
-    applyArgumentsResult.stores = map.set(closure_1, applyArgumentsResult.handleFocusParticipant);
+    applyArgumentsResult.stores = map.set(ChannelRTCStore, applyArgumentsResult.handleFocusParticipant);
     return applyArgumentsResult;
   }
-}
-ParticipantFocusManager.prototype["handleFocusParticipant"] = function handleFocusParticipant() {
-  const channelId = RTCConnectionStore.getChannelId();
-  if (null != channelId) {
-    const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(channelId);
-    const videoParticipants = ChannelRTCStore.getVideoParticipants(channelId);
-    const rTCConnection = RTCConnectionStore.getRTCConnection();
-    if (rTCConnection != null) {
-      const found = videoParticipants.find((id) => id.id === closure_0 && !id.localVideoDisabled);
-      let id;
-      if (found != null) {
-        id = found.id;
+  handleFocusParticipant() {
+    const channelId = RTCConnectionStore.getChannelId();
+    const obj = RTCConnectionStore;
+    if (null != channelId) {
+      const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(channelId);
+      const videoParticipants = ChannelRTCStore.getVideoParticipants(channelId);
+      const rTCConnection = obj.getRTCConnection();
+      if (rTCConnection != null) {
+        const setSelectedParticipant = rTCConnection.setSelectedParticipant;
+        const found = videoParticipants.find((id) => id.id === closure_0 && !id.localVideoDisabled);
+        let id;
+        if (found != null) {
+          id = found.id;
+        }
+        const result = setSelectedParticipant(id);
       }
-      const result = rTCConnection.setSelectedParticipant(id);
     }
   }
-};
+}
+const prototype = ParticipantFocusManager.prototype;
 const participantFocusManager = new ParticipantFocusManager();
-const size = fn(2);
 let result = size.fileFinishedImporting("modules/calls/ParticipantFocusManager.tsx");
 
 export default participantFocusManager;

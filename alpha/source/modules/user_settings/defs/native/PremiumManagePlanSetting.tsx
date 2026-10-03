@@ -1,30 +1,33 @@
-// Module ID: 14733
-// Function ID: 14734
+// Module ID: 14789
+// Function ID: 14790
 // Name: PremiumManagePlanSetting
-// Dependencies: [7590, 1074, 11215, 1115, 14734, 2]
+// Dependencies: [7634, 1085, 11129, 1126, 14790, 2]
 
-// Module 14733 (PremiumManagePlanSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import SettingsConstants from "SettingsConstants" /* 7590 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 14789 (PremiumManagePlanSetting)
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const route = SettingBuilders.createRoute({
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const UserSettingsSections = Constants.UserSettingsSections;
+const obj = {
   useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["8jmdON"]);
+    const intl = intl2.intl;
+    return intl.string(intl2.t["8jmdON"]);
   },
-  parent: SettingsConstants.MobileUserSettings.PREMIUM,
+  parent: MobileUserSettings.PREMIUM,
   screen: {
-    route: Constants.UserSettingsSections.PREMIUM_MANAGE_PLAN,
+    route: UserSettingsSections.PREMIUM_MANAGE_PLAN,
     getComponent() {
       return require("PremiumManagePlanScreen").default;
     }
   }
-});
+};
+const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/PremiumManagePlanSetting.tsx");
 
 export default route;

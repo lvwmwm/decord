@@ -1,51 +1,65 @@
 // Module ID: 6312
 // Function ID: 6313
-// Dependencies: [19, 6290, 6293]
-// Exports: useMountReactions
+// Dependencies: [19, 17, 21, 6313, 6314]
 
 // Module 6312
-import _mod19 from "module_19" /* 19 */;
-import transformIntoHandlerTags from "transformIntoHandlerTags" /* 6290 */;
-import MountRegistry2 from "MountRegistry" /* 6293 */;
+import react_native from "react-native" /* 6314 */;
+import react_mod from "react" /* 19 */;
+import react_native2 from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 
-function shouldUpdateDetector(arg0, handlerTag) {
-  if (undefined === arg0) {
-    return false;
-  } else {
-    const result = transformIntoHandlerTags.transformIntoHandlerTags(arg0);
-    for (const item10012 of result) {
-      if (item10012 === arg1.handlerTag) {
-        obj2.return();
-        let flag = true;
-        return true;
-      }
-    }
-    return false;
+let c3;
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
+let react = react_mod;
+const useMemo = react.useMemo;
+const memo = react.memo;
+react = react_mod;
+({ StyleSheet: c3, View: closure_4 } = react_native2);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+const memoResult = memo(function BottomSheetHandleComponent(style) {
+  let items2;
+  style = style.style;
+  const indicatorStyle = style.indicatorStyle;
+  let DEFAULT_ACCESSIBLE = style.accessible;
+  if (DEFAULT_ACCESSIBLE === undefined) {
+    DEFAULT_ACCESSIBLE = style(indicatorStyle[3]).DEFAULT_ACCESSIBLE;
   }
-}
-const useEffect = _mod19.useEffect;
+  let DEFAULT_ACCESSIBILITY_ROLE = style.accessibilityRole;
+  if (DEFAULT_ACCESSIBILITY_ROLE === undefined) {
+    DEFAULT_ACCESSIBILITY_ROLE = style(indicatorStyle[3]).DEFAULT_ACCESSIBILITY_ROLE;
+  }
+  let DEFAULT_ACCESSIBILITY_LABEL = style.accessibilityLabel;
+  if (DEFAULT_ACCESSIBILITY_LABEL === undefined) {
+    DEFAULT_ACCESSIBILITY_LABEL = style(indicatorStyle[3]).DEFAULT_ACCESSIBILITY_LABEL;
+  }
+  let DEFAULT_ACCESSIBILITY_HINT = style.accessibilityHint;
+  if (DEFAULT_ACCESSIBILITY_HINT === undefined) {
+    DEFAULT_ACCESSIBILITY_HINT = style(indicatorStyle[3]).DEFAULT_ACCESSIBILITY_HINT;
+  }
+  let items = [style];
+  const children = style.children;
+  const items1 = [indicatorStyle];
+  const obj = {
+    style: useMemo(() => {
+      const items = [react_native.styles.container, _false.flatten(style)];
+      return items;
+    }, items),
+    accessible: DEFAULT_ACCESSIBLE,
+    accessibilityRole: DEFAULT_ACCESSIBILITY_ROLE,
+    accessibilityLabel: DEFAULT_ACCESSIBILITY_LABEL,
+    accessibilityHint: DEFAULT_ACCESSIBILITY_HINT,
+    collapsable: true,
+    children: items2
+  };
+  const tmp10 = useMemo(() => {
+    const items = [react_native.styles.indicator, _false.flatten(indicatorStyle)];
+    return items;
+  }, items1);
+  items2 = [closure_5(closure_4, { style: tmp10 }), children];
+  return closure_6(closure_4, obj);
+});
+memoResult.displayName = "BottomSheetHandle";
 
-export const useMountReactions = function useMountReactions(detectorUpdater, current2) {
-  closure_0 = detectorUpdater;
-  closure_1 = current2;
-  const items = [detectorUpdater, current2];
-  useEffect(() => {
-    const MountRegistry = MountRegistry2.MountRegistry;
-    return MountRegistry.addMountListener((arg0) => {
-      if (current2.isMounted) {
-        const attachedGestures = current2.attachedGestures;
-        const iter = attachedGestures[Symbol.iterator]();
-        const nextResult = iter.next();
-        while (iter !== undefined) {
-          let requireToFail = nextResult.config.requireToFail;
-          let simultaneousWith = nextResult.config.simultaneousWith;
-          let tmp5 = shouldUpdateDetector;
-          if (!shouldUpdateDetector(nextResult.config.blocksHandlers, arg0)) {
-          }
-          let tmp9 = detectorUpdater();
-          iter.return();
-        }
-      }
-    });
-  }, items);
-};
+export default memoResult;

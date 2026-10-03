@@ -1,9 +1,10 @@
-// Module ID: 13731
-// Function ID: 13732
+// Module ID: 13796
+// Function ID: 13797
 // Name: PremiumSKUFeature
 // Dependencies: [2]
+// Exports: default
 
-// Module 13731 (PremiumSKUFeature)
+// Module 13796 (PremiumSKUFeature)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/PremiumSKUFeature.tsx");
@@ -13,6 +14,7 @@ export default function PremiumSKUFeature(INCREASED_FILE_UPLOAD_SIZE, getUserMax
   obj2.name = INCREASED_FILE_UPLOAD_SIZE;
   obj2.description = description;
   obj2.getFeatureValue = getUserMaxFileSize;
-  Object.defineProperty(obj2, "getFeatureValue", { value: getUserMaxFileSize, configurable: false, writable: false });
+  const obj = { value: getUserMaxFileSize, configurable: false, writable: false };
+  Object.defineProperty(obj2, "getFeatureValue", obj);
   return obj2;
-}.prototype;
+};

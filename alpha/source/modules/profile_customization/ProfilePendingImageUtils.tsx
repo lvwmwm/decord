@@ -1,31 +1,35 @@
-// Module ID: 14361
-// Function ID: 14362
+// Module ID: 14415
+// Function ID: 14416
 // Name: ProfilePendingImageUtils
-// Dependencies: [6596, 1370, 2]
+// Dependencies: [6486, 1375, 2]
 // Exports: createPendingImage
 
-// Module 14361 (ProfilePendingImageUtils)
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 6596 */;
+// Module 14415 (ProfilePendingImageUtils)
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 6486 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/profile_customization/ProfilePendingImageUtils.tsx");
 
 export const createPendingImage = function createPendingImage(assetOrigin) {
+  let description;
+  let imageUri;
+  let originalAsset;
+  let originalMd5;
+  let staticImageUri;
   let NEW_ASSET = assetOrigin.assetOrigin;
   if (NEW_ASSET === undefined) {
     NEW_ASSET = ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET;
   }
   ({ imageUri, staticImageUri, description, originalAsset, originalMd5 } = assetOrigin);
   if (ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET === NEW_ASSET) {
-    const obj = { assetOrigin: NEW_ASSET, imageUri, staticImageUri, description, originalAsset: "Array", originalMd5 };
-    return obj;
-  } else if (tmp3(6596).AssetOriginTypes.EDITED_ARCHIVED_ASSET === NEW_ASSET) {
-    const obj2 = { assetOrigin: NEW_ASSET, imageUri, staticImageUri, description, originalAsset, originalMd5 };
-    return obj2;
-  } else if (tmp3(6596).AssetOriginTypes.ARCHIVED_ASSET === NEW_ASSET) {
-    const obj3 = { assetOrigin: NEW_ASSET, imageUri, description: "Array", originalAsset };
-    return obj3;
+    return { assetOrigin: NEW_ASSET, imageUri, staticImageUri, description, originalAsset: "Array", originalMd5 };
+  } else if (ProfilePendingImageTypes.AssetOriginTypes.EDITED_ARCHIVED_ASSET === NEW_ASSET) {
+    return { assetOrigin: NEW_ASSET, imageUri, staticImageUri, description, originalAsset, originalMd5 };
+  } else if (ProfilePendingImageTypes.AssetOriginTypes.ARCHIVED_ASSET === NEW_ASSET) {
+    return { assetOrigin: NEW_ASSET, imageUri, description: "Array", originalAsset };
   } else {
-    tmp3(1370).assertNever(NEW_ASSET);
+    const tmp3Result = GlobalUtils;
+    tmp3Result.assertNever(NEW_ASSET);
   }
 };

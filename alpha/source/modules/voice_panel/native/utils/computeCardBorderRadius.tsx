@@ -1,16 +1,19 @@
-// Module ID: 17202
-// Function ID: 17203
+// Module ID: 17250
+// Function ID: 17251
 // Name: computeCardBorderRadius
-// Dependencies: [11965, 2]
+// Dependencies: [11902, 2]
 // Exports: default
 
-// Module 17202 (computeCardBorderRadius)
-import VoicePanelConstants from "VoicePanelConstants" /* 11965 */;
+// Module 17250 (computeCardBorderRadius)
+import VoicePanelConstants from "VoicePanelConstants" /* 11902 */;
 import size from "module_2" /* 2 */;
 
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const DEFAULT_BORDER_RADIUS_PIP = VoicePanelConstants.DEFAULT_BORDER_RADIUS_PIP;
 const fn = function o(arg0) {
+  let defaultBorderRadius;
+  let focused;
+  let mode;
   ({ mode, focused, defaultBorderRadius } = arg0);
   if (mode === VoicePanelModes.PANEL) {
     if (null != focused) {

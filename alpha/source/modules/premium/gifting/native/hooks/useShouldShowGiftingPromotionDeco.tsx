@@ -1,31 +1,38 @@
-// Module ID: 10410
-// Function ID: 10411
+// Module ID: 10484
+// Function ID: 10485
 // Name: useShouldShowGiftingPromotionDeco
-// Dependencies: [1374, 10355, 2]
-// Exports: default
+// Dependencies: [1379, 558, 10430, 2]
 
-// Module 10410 (useShouldShowGiftingPromotionDeco)
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import NativeGiftContext from "NativeGiftContext" /* 10355 */;
+// Module 10484 (useShouldShowGiftingPromotionDeco)
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import NativeGiftContext from "NativeGiftContext" /* 10430 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const PremiumTypes = PremiumConstants.PremiumTypes;
-const result = size.fileFinishedImporting("modules/premium/gifting/native/hooks/useShouldShowGiftingPromotionDeco.tsx");
-
-export default function useShouldShowGiftingPromotionDeco(arg0) {
-  const nativeGiftContext = NativeGiftContext.useNativeGiftContext();
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp4;
+  const obj = NativeGiftContext;
+  const nativeGiftContext = obj.useNativeGiftContext();
   const claimableRewards = nativeGiftContext.claimableRewards;
   if (null != arg0) {
-    let tmp4 = arg0 === PremiumTypes.TIER_2;
+    tmp4 = arg0 === PremiumTypes.TIER_2;
   } else {
     tmp4 = tmp2 === PremiumTypes.TIER_2;
   }
-  let tmp6 = null != claimableRewards;
-  if (tmp6) {
-    tmp6 = claimableRewards.length > 0;
+  return null != claimableRewards && claimableRewards.length > 0 && tmp4;
+}) : ((arg0) => {
+  let tmp4;
+  const obj = NativeGiftContext;
+  const nativeGiftContext = obj.useNativeGiftContext();
+  const claimableRewards = nativeGiftContext.claimableRewards;
+  if (null != arg0) {
+    tmp4 = arg0 === PremiumTypes.TIER_2;
+  } else {
+    tmp4 = tmp2 === PremiumTypes.TIER_2;
   }
-  if (tmp6) {
-    tmp6 = tmp4;
-  }
-  return tmp6;
-};
+  return null != claimableRewards && claimableRewards.length > 0 && tmp4;
+});
+const result = size.fileFinishedImporting("modules/premium/gifting/native/hooks/useShouldShowGiftingPromotionDeco.tsx");
+
+export default tmp2;

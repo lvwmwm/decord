@@ -1,16 +1,16 @@
-// Module ID: 5508
-// Function ID: 5509
+// Module ID: 5685
+// Function ID: 5686
 // Name: SoundboardFavoritesExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1440, 2]
 
-// Module 5508 (SoundboardFavoritesExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 5685 (SoundboardFavoritesExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
-const obj = { kind: "user", name: "2026-09-soundboard-favorites", defaultConfig: { sortOrder: "creation-date", allowReordering: false }, variations: null };
-const obj2 = { 1: null, 2: { sortOrder: "favorite-date", allowReordering: false } };
+let obj2;
+const obj = { kind: "user", name: "2026-09-soundboard-favorites", defaultConfig: { sortOrder: "creation-date", allowReordering: false }, variations: obj2 };
+obj2 = { 1: null, 2: { sortOrder: "favorite-date", allowReordering: false } };
 obj2[2] = { sortOrder: "favorite-date", allowReordering: true };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/soundboard/experiments/SoundboardFavoritesExperiment.tsx");
 

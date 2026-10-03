@@ -1,10 +1,10 @@
-// Module ID: 6202
-// Function ID: 6203
+// Module ID: 6088
+// Function ID: 6089
 // Name: WebAuthnUtils
 // Dependencies: [2]
 // Exports: encodeUserIdForWebAuthn
 
-// Module 6202 (WebAuthnUtils)
+// Module 6088 (WebAuthnUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/webauthn/WebAuthnUtils.tsx");
@@ -18,6 +18,7 @@ export const encodeUserIdForWebAuthn = function encodeUserIdForWebAuthn(id) {
   dataView.setBigUint64(8, BigInt(id));
   const items = [...uint8Array];
   const str = btoa(String.fromCharCode.apply(items));
-  const str2 = btoa(String.fromCharCode.apply(items)).replace(/\+/g, "-");
-  return btoa(String.fromCharCode.apply(items)).replace(/\+/g, "-").replace(/\//g, "_").replace(/=/g, "");
+  const str2 = str.replace(/\+/g, "-");
+  const str3 = str2.replace(/\//g, "_");
+  return str3.replace(/=/g, "");
 };

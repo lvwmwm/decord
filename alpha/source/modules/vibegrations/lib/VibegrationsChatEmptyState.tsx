@@ -1,10 +1,10 @@
-// Module ID: 16627
-// Function ID: 16628
+// Module ID: 16712
+// Function ID: 16713
 // Name: VibegrationsChatEmptyState
 // Dependencies: [2]
 // Exports: chatEmptyState
 
-// Module 16627 (VibegrationsChatEmptyState)
+// Module 16712 (VibegrationsChatEmptyState)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsChatEmptyState.tsx");
@@ -15,8 +15,9 @@ export const chatEmptyState = function chatEmptyState(connState) {
   if (!connState.historyUnavailable) {
     let str2 = "greeting";
     if (!tmp) {
+      let str4;
       if ("failed" === connState) {
-        let str4 = "unavailable";
+        str4 = "unavailable";
       } else {
         str4 = "loading";
       }

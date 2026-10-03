@@ -1,10 +1,10 @@
-// Module ID: 12308
-// Function ID: 12309
+// Module ID: 12265
+// Function ID: 12266
 // Name: VibegrationsActivity
 // Dependencies: [2]
 // Exports: sortVibegrationsProjects, vibegrationsActivity, vibegrationsProjectGuildId
 
-// Module 12308 (VibegrationsActivity)
+// Module 12265 (VibegrationsActivity)
 import size from "module_2" /* 2 */;
 
 let closure_0 = { building: 0, done: 1, idle: 2 };
@@ -29,7 +29,7 @@ export const vibegrationsActivity = function vibegrationsActivity(finishedAt) {
 export const sortVibegrationsProjects = function sortVibegrationsProjects(items) {
   items = [...items];
   return items.sort((sortTime, sortTime2) => {
-    const diff = dependencyMap[sortTime.activity] - dependencyMap[sortTime2.activity];
+    const diff = closure_1_0[sortTime.activity] - closure_1_0[sortTime2.activity];
     if (0 !== diff) {
       return diff;
     } else if (sortTime.sortTime !== sortTime2.sortTime) {

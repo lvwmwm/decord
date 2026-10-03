@@ -1,192 +1,860 @@
-// Module ID: 16402
-// Function ID: 16403
+// Module ID: 16476
+// Function ID: 16477
 // Name: useComponentRenderSpan
-// Dependencies: [19, 3, 16403, 16404, 16405, 16408, 2]
+// Dependencies: [19, 3, 558, 576, 16477, 16478, 16479, 16482, 2]
 // Exports: useNavigationTTIRegionMeasurement
 
-// Module 16402 (useComponentRenderSpan)
+// Module 16476 (useComponentRenderSpan)
 import LoggerDefault from "Logger" /* 3 */;
-import NavigationSpanTypes from "NavigationSpanTypes" /* 16404 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 16405 */;
-import NavigationTTIRegionDebugState from "NavigationTTIRegionDebugState" /* 16408 */;
-import noop from "module_19" /* 19 */;
+import NavigationSpanTypes from "NavigationSpanTypes" /* 16478 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 16479 */;
+import NavigationTTIRegionDebugState from "NavigationTTIRegionDebugState" /* 16482 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require, closure_12, current, ref, ref2, ref3;
 
-require = fn;
-let closure_4 = new LoggerDefault("NavTTISurface");
-let size = fn(2);
+let tmp2 = new LoggerDefault("NavTTISurface");
+let closure_4 = tmp2;
+let current2 = ReactCompilerGating.isReactCompilerEnabled();
+let size = size_mod;
 let result = size.fileFinishedImporting("modules/tti_analytics/native/navigation/useComponentRenderSpan.tsx");
 
-export const useNavigationTTIRegionMeasurement = function useNavigationTTIRegionMeasurement(exclude, name) {
-  _require = exclude;
-  const spanComponent = name;
-  navTTISurface = require("NavTTISurfaceContext").useNavTTISurface();
-  let str;
-  if (navTTISurface != null) {
-    str = navTTISurface.navigationKey;
-  }
-  if (str == null) {
-    str = "";
-  }
-  let activeTraceId;
-  if (navTTISurface != null) {
-    activeTraceId = navTTISurface.activeTraceId;
-  }
-  if (activeTraceId == null) {
-    activeTraceId = null;
-  }
-  let flag;
-  if (navTTISurface != null) {
-    flag = navTTISurface.isVisible;
-  }
-  if (flag == null) {
-    flag = false;
-  }
-  str.useRef(null);
-  str.useRef(null);
-  str.useRef(null);
-  str.useRef(null);
-  str.useRef(str);
-  str.useRef(false);
-  const items = [name, exclude];
-  const callback = str.useCallback((traceId, endMonotonicMs, arg2, arg3, measurementSource) => {
-    let isFiniteResult = arg2 > 0 && arg3 > 0;
-    if (isFiniteResult) {
-      const _Number = Number;
-      isFiniteResult = Number.isFinite(arg2);
+export const useNavigationTTIRegionMeasurement = function useNavigationTTIRegionMeasurement(exclude, regionId) {
+  let navTTISurface1;
+  let tmp = current2;
+  if (tmp) {
+    _require = exclude;
+    let spanComponent = regionId;
+    let obj3 = require("react");
+    const cResult = obj3.c(25);
+    const obj4 = require("NavTTISurfaceContext");
+    const navTTISurface = obj4.useNavTTISurface();
+    let str2;
+    if (navTTISurface != null) {
+      str2 = navTTISurface.navigationKey;
     }
-    if (isFiniteResult) {
-      const _Number2 = Number;
-      isFiniteResult = Number.isFinite(arg3);
+    if (str2 == null) {
+      str2 = "";
     }
-    if (isFiniteResult) {
-      const current = ref3.current;
-      traceId = undefined;
-      if (current != null) {
-        traceId = current.traceId;
+    let activeTraceId;
+    if (navTTISurface != null) {
+      activeTraceId = navTTISurface.activeTraceId;
+    }
+    if (activeTraceId == null) {
+      activeTraceId = null;
+    }
+    let flag2;
+    if (navTTISurface != null) {
+      flag2 = navTTISurface.isVisible;
+    }
+    if (flag2 == null) {
+      flag2 = false;
+    }
+    const obj5 = current;
+    ref = current.useRef(null);
+    ref2 = current.useRef(null);
+    ref3 = current.useRef(null);
+    let ref4 = current.useRef(null);
+    let ref5 = current.useRef(str2);
+    let ref6 = current.useRef(false);
+    if (cResult[0] === regionId) {
+      let tmp20;
+      if (cResult[1] === exclude) {
+        tmp20 = cResult[2];
       }
-      if (traceId !== traceId) {
-        if ("include" === closure_0) {
-          const obj5 = { spanComponent, endMonotonicMs, measurementSource };
-          if (obj4.recordComponentSpan(traceId, obj5)) {
-            const obj6 = { traceId, source: measurementSource };
-            tmp4.current = obj6;
+      closure_12 = tmp20;
+      if (cResult[3] === activeTraceId) {
+        if (cResult[4] === flag2) {
+          let tmp21;
+          let tmp22;
+          if (cResult[5] === str2) {
+            tmp21 = cResult[6];
+            tmp22 = cResult[7];
           }
-          obj4 = NavigationSpanTrackerDefault;
-        } else {
-          const activeTraceElapsedMs = NavigationSpanTrackerDefault.getActiveTraceElapsedMs(traceId, endMonotonicMs);
-          if (null != activeTraceElapsedMs) {
-            const result = NavigationTTIRegionDebugState.recordNavigationTTIRegionDebugMeasurement(traceId, spanComponent, activeTraceElapsedMs);
-          }
-        }
-      } else {
-        let tmp12 = "include" === closure_0;
-        if (tmp12) {
-          tmp12 = measurementSource === NavigationSpanTypes.ComponentMeasurementSource.ON_LAYOUT;
-        }
-        if (tmp12) {
-          tmp12 = current.source !== NavigationSpanTypes.ComponentMeasurementSource.ON_LAYOUT;
-        }
-        if (tmp12) {
-          const result1 = NavigationSpanTrackerDefault.recordLateComponentLayout(traceId, spanComponent, endMonotonicMs);
-        }
-      }
-      tmp4 = ref3;
-    }
-  }, items);
-  const items1 = [activeTraceId, flag, str];
-  const layoutEffect = str.useLayoutEffect(() => {
-    if (ref4.current !== activeTraceId) {
-      closure_7.current = null;
-    }
-    ref4.current = activeTraceId;
-    closure_10.current = str;
-    closure_11.current = flag;
-  }, items1);
-  const items2 = [callback];
-  const items3 = [activeTraceId, flag, str, callback];
-  const onLayout = str.useCallback((nativeEvent) => {
-    const layout = nativeEvent.nativeEvent.layout;
-    ({ width, height } = layout);
-    let isFiniteResult = width > 0 && height > 0;
-    if (isFiniteResult) {
-      const _Number = Number;
-      isFiniteResult = Number.isFinite(width);
-    }
-    if (isFiniteResult) {
-      const _Number2 = Number;
-      isFiniteResult = Number.isFinite(height);
-    }
-    if (isFiniteResult) {
-      const size = { navigationKey: ref5.current, width: null, height: null };
-      ({ width: obj.width, height: obj.height } = layout);
-      closure_6.current = size;
-    }
-    const current = ref4.current;
-    if (null != current) {
-      if (ref6.current) {
-        const _performance = performance;
-        ({ width: width2, height: height2 } = layout);
-        callback(current, performance.now(), width2, height2, NavigationSpanTypes.ComponentMeasurementSource.ON_LAYOUT);
-        const nowResult = performance.now();
-      } else if (isFiniteResult) {
-        const size1 = { traceId: current, width: null, height: null };
-        ({ width: obj2.width, height: obj2.height } = layout);
-        closure_7.current = size1;
-      }
-    }
-  }, items2);
-  const effect = str.useEffect(() => {
-    if (flag) {
-      if (null != activeTraceId) {
-        const current2 = ref3.current;
-        let traceId;
-        if (current2 != null) {
-          traceId = current2.traceId;
-        }
-        if (traceId !== tmp) {
-          const current3 = ref2.current;
-          let traceId1;
-          if (current3 != null) {
-            traceId1 = current3.traceId;
-          }
-          if (traceId1 !== tmp) {
-            const current = ref.current;
-            if (null != current) {
-              if (current.navigationKey === str) {
-                let CACHED_PREVIOUS_DESTINATION = exclude(navTTISurface[3]).ComponentMeasurementSource.CACHED_SAME_DESTINATION;
-              } else {
-                CACHED_PREVIOUS_DESTINATION = exclude(navTTISurface[3]).ComponentMeasurementSource.CACHED_PREVIOUS_DESTINATION;
+          const layoutEffect = obj5.useLayoutEffect(tmp21, tmp22);
+          if (cResult[8] !== tmp20) {
+            class R {
+              constructor(nativeEvent) {
+                let height;
+                let height2;
+                let width;
+                let width2;
+                const layout = nativeEvent.nativeEvent.layout;
+                ({ width, height } = layout);
+                let isFiniteResult = width > 0 && height > 0;
+                if (isFiniteResult) {
+                  const _Number = Number;
+                  isFiniteResult = Number.isFinite(width);
+                }
+                if (isFiniteResult) {
+                  const _Number2 = Number;
+                  isFiniteResult = Number.isFinite(height);
+                }
+                if (isFiniteResult) {
+                  size = { navigationKey: ref5.current, width: null, height: null };
+                  ({ width: obj.width, height: obj.height } = layout);
+                  ref.current = size;
+                }
+                current = ref4.current;
+                if (null != current) {
+                  if (ref6.current) {
+                    const _performance = performance;
+                    ({ width: width2, height: height2 } = layout);
+                    const nowResult = performance.now();
+                    closure_12(current, nowResult, width2, height2, require("NavigationSpanTypes").ComponentMeasurementSource.ON_LAYOUT);
+                  } else if (isFiniteResult) {
+                    const size1 = { traceId: current, width: null, height: null };
+                    ({ width: obj2.width, height: obj2.height } = layout);
+                    ref2.current = size1;
+                  }
+                }
               }
-              const _requestAnimationFrame = requestAnimationFrame;
-              closure_2 = requestAnimationFrame(() => {
-                callback(activeTraceId, performance.now(), current.width, current.height, CACHED_PREVIOUS_DESTINATION);
-              });
-              return () => cancelAnimationFrame(closure_2);
+            }
+            cResult[8] = tmp20;
+            class N {
+              constructor() {
+                const tmp = ref4;
+                const tmp2 = activeTraceId;
+                if (ref4.current !== activeTraceId) {
+                  ref2.current = null;
+                }
+                tmp.current = tmp2;
+                ref5.current = str2;
+                ref6.current = flag2;
+              }
+            }
+            class E {
+              constructor() {
+                let height;
+                let width;
+                const tmp = flag2;
+                if (tmp) {
+                  if (null != activeTraceId) {
+                    current2 = ref3.current;
+                    let traceId;
+                    if (current2 != null) {
+                      traceId = current2.traceId;
+                    }
+                    if (traceId !== activeTraceId) {
+                      const current3 = ref2.current;
+                      let traceId1;
+                      if (current3 != null) {
+                        traceId1 = current3.traceId;
+                      }
+                      if (traceId1 !== activeTraceId) {
+                        current = ref.current;
+                        if (null != current) {
+                          if (current.navigationKey === str2) {
+                            let CACHED_PREVIOUS_DESTINATION = closure_0(navTTISurface[5]).ComponentMeasurementSource.CACHED_SAME_DESTINATION;
+                          } else {
+                            CACHED_PREVIOUS_DESTINATION = closure_0(navTTISurface[5]).ComponentMeasurementSource.CACHED_PREVIOUS_DESTINATION;
+                          }
+                          const _requestAnimationFrame = requestAnimationFrame;
+                          let closure_2 = requestAnimationFrame(() => {
+                            closure_12(activeTraceId, performance.now(), current.width, current.height, CACHED_PREVIOUS_DESTINATION);
+                          });
+                          return () => cancelAnimationFrame(closure_2);
+                        }
+                      } else {
+                        const _performance = performance;
+                        ({ width, height } = current3);
+                        const nowResult = performance.now();
+                        closure_12(activeTraceId, nowResult, width, height, closure_0(navTTISurface[5]).ComponentMeasurementSource.ON_LAYOUT);
+                      }
+                    }
+                  }
+                }
+              }
             }
           } else {
+            class R {
+              constructor(nativeEvent) {
+                let height;
+                let height2;
+                let width;
+                let width2;
+                const layout = nativeEvent.nativeEvent.layout;
+                ({ width, height } = layout);
+                let isFiniteResult = width > 0 && height > 0;
+                if (isFiniteResult) {
+                  const _Number = Number;
+                  isFiniteResult = Number.isFinite(width);
+                }
+                if (isFiniteResult) {
+                  const _Number2 = Number;
+                  isFiniteResult = Number.isFinite(height);
+                }
+                if (isFiniteResult) {
+                  size = { navigationKey: ref5.current, width: null, height: null };
+                  ({ width: obj.width, height: obj.height } = layout);
+                  ref.current = size;
+                }
+                current = ref4.current;
+                if (null != current) {
+                  if (ref6.current) {
+                    const _performance = performance;
+                    ({ width: width2, height: height2 } = layout);
+                    const nowResult = performance.now();
+                    closure_12(current, nowResult, width2, height2, require("NavigationSpanTypes").ComponentMeasurementSource.ON_LAYOUT);
+                  } else if (isFiniteResult) {
+                    const size1 = { traceId: current, width: null, height: null };
+                    ({ width: obj2.width, height: obj2.height } = layout);
+                    ref2.current = size1;
+                  }
+                }
+              }
+            }
+          }
+          class N {
+            constructor() {
+              const tmp = ref4;
+              const tmp2 = activeTraceId;
+              if (ref4.current !== activeTraceId) {
+                ref2.current = null;
+              }
+              tmp.current = tmp2;
+              ref5.current = str2;
+              ref6.current = flag2;
+            }
+          }
+          class E {
+            constructor() {
+              let height;
+              let width;
+              const tmp = flag2;
+              if (tmp) {
+                if (null != activeTraceId) {
+                  current2 = ref3.current;
+                  let traceId;
+                  if (current2 != null) {
+                    traceId = current2.traceId;
+                  }
+                  if (traceId !== activeTraceId) {
+                    const current3 = ref2.current;
+                    let traceId1;
+                    if (current3 != null) {
+                      traceId1 = current3.traceId;
+                    }
+                    if (traceId1 !== activeTraceId) {
+                      current = ref.current;
+                      if (null != current) {
+                        if (current.navigationKey === str2) {
+                          let CACHED_PREVIOUS_DESTINATION = closure_0(navTTISurface[5]).ComponentMeasurementSource.CACHED_SAME_DESTINATION;
+                        } else {
+                          CACHED_PREVIOUS_DESTINATION = closure_0(navTTISurface[5]).ComponentMeasurementSource.CACHED_PREVIOUS_DESTINATION;
+                        }
+                        const _requestAnimationFrame = requestAnimationFrame;
+                        let closure_2 = requestAnimationFrame(() => {
+                          closure_12(activeTraceId, performance.now(), current.width, current.height, CACHED_PREVIOUS_DESTINATION);
+                        });
+                        return () => cancelAnimationFrame(closure_2);
+                      }
+                    } else {
+                      const _performance = performance;
+                      ({ width, height } = current3);
+                      const nowResult = performance.now();
+                      closure_12(activeTraceId, nowResult, width, height, closure_0(navTTISurface[5]).ComponentMeasurementSource.ON_LAYOUT);
+                    }
+                  }
+                }
+              }
+            }
+          }
+          const items = [activeTraceId, flag2, str2, tmp20];
+          cResult[10] = activeTraceId;
+          cResult[11] = flag2;
+          cResult[12] = str2;
+          cResult[13] = tmp20;
+          cResult[14] = E;
+          cResult[15] = items;
+        }
+      }
+      class N {
+        constructor() {
+          const tmp = ref4;
+          const tmp2 = activeTraceId;
+          if (ref4.current !== activeTraceId) {
+            ref2.current = null;
+          }
+          tmp.current = tmp2;
+          ref5.current = str2;
+          ref6.current = flag2;
+        }
+      }
+      tmp23[0] = activeTraceId;
+      tmp23[1] = flag2;
+      tmp23[2] = str2;
+      cResult[3] = activeTraceId;
+      cResult[4] = flag2;
+      cResult[5] = str2;
+      cResult[6] = N;
+      cResult[7] = tmp23;
+      tmp22 = tmp23;
+      tmp21 = N;
+    }
+    const fn = function c(traceId, endMonotonicMs, arg2, arg3, measurementSource) {
+      let isFiniteResult = arg2 > 0 && arg3 > 0;
+      if (isFiniteResult) {
+        const _Number = Number;
+        isFiniteResult = Number.isFinite(arg2);
+      }
+      if (isFiniteResult) {
+        const _Number2 = Number;
+        isFiniteResult = Number.isFinite(arg3);
+      }
+      if (isFiniteResult) {
+        current = ref3.current;
+        traceId = undefined;
+        const tmp4 = ref3;
+        if (current != null) {
+          traceId = current.traceId;
+        }
+        if (traceId !== traceId) {
+          if ("include" === closure_0) {
+            spanComponent(navTTISurface1[6]);
+          } else {
+            const obj2 = spanComponent(navTTISurface1[6]);
+            const activeTraceElapsedMs = obj2.getActiveTraceElapsedMs(traceId, endMonotonicMs);
+            if (null != activeTraceElapsedMs) {
+              const obj3 = require("NavigationTTIRegionDebugState");
+              const result = obj3.recordNavigationTTIRegionDebugMeasurement(traceId, spanComponent, activeTraceElapsedMs);
+            }
+          }
+          const obj6 = { traceId, source: measurementSource };
+          tmp4.current = obj6;
+        } else {
+          const tmp12 = "include" === closure_0 && measurementSource === require("NavigationSpanTypes").ComponentMeasurementSource.ON_LAYOUT && current.source !== require("NavigationSpanTypes").ComponentMeasurementSource.ON_LAYOUT;
+          if (tmp12) {
+            const obj = spanComponent(navTTISurface1[6]);
+            const result1 = obj.recordLateComponentLayout(traceId, spanComponent, endMonotonicMs);
+          }
+        }
+      }
+    };
+    cResult[0] = regionId;
+    cResult[1] = exclude;
+    cResult[2] = fn;
+    tmp20 = fn;
+  } else {
+    class R {
+      constructor(nativeEvent) {
+        let height;
+        let height2;
+        let width;
+        let width2;
+        const layout = nativeEvent.nativeEvent.layout;
+        ({ width, height } = layout);
+        let isFiniteResult = width > 0 && height > 0;
+        if (isFiniteResult) {
+          const _Number = Number;
+          isFiniteResult = Number.isFinite(width);
+        }
+        if (isFiniteResult) {
+          const _Number2 = Number;
+          isFiniteResult = Number.isFinite(height);
+        }
+        if (isFiniteResult) {
+          size = { navigationKey: ref5.current, width: null, height: null };
+          ({ width: obj.width, height: obj.height } = layout);
+          ref.current = size;
+        }
+        current = ref4.current;
+        if (null != current) {
+          if (ref6.current) {
             const _performance = performance;
-            ({ width, height } = current3);
-            callback(tmp, performance.now(), width, height, exclude(navTTISurface[3]).ComponentMeasurementSource.ON_LAYOUT);
+            ({ width: width2, height: height2 } = layout);
             const nowResult = performance.now();
+            closure_12(current, nowResult, width2, height2, require("NavigationSpanTypes").ComponentMeasurementSource.ON_LAYOUT);
+          } else if (isFiniteResult) {
+            const size1 = { traceId: current, width: null, height: null };
+            ({ width: obj2.width, height: obj2.height } = layout);
+            ref2.current = size1;
           }
         }
       }
     }
-  }, items3);
-  const items4 = [navTTISurface, name, exclude];
-  const effect1 = str.useEffect(() => {
-    let tmp = "include" === closure_0;
-    if (tmp) {
-      tmp = null == navTTISurface;
+    spanComponent = regionId;
+    let tmp2 = require;
+    class N {
+      constructor() {
+        const tmp = ref4;
+        const tmp2 = activeTraceId;
+        if (ref4.current !== activeTraceId) {
+          ref2.current = null;
+        }
+        tmp.current = tmp2;
+        ref5.current = str2;
+        ref6.current = flag2;
+      }
     }
-    if (tmp) {
-      const _HermesInternal = HermesInternal;
-      activeTraceId.warn("" + closure_1 + " has no NavTTISurfaceProvider; measurement is disabled.");
+    class E {
+      constructor() {
+        let height;
+        let width;
+        const tmp = flag2;
+        if (tmp) {
+          if (null != activeTraceId) {
+            current2 = ref3.current;
+            let traceId;
+            if (current2 != null) {
+              traceId = current2.traceId;
+            }
+            if (traceId !== activeTraceId) {
+              const current3 = ref2.current;
+              let traceId1;
+              if (current3 != null) {
+                traceId1 = current3.traceId;
+              }
+              if (traceId1 !== activeTraceId) {
+                current = ref.current;
+                if (null != current) {
+                  if (current.navigationKey === str2) {
+                    let CACHED_PREVIOUS_DESTINATION = closure_0(navTTISurface[5]).ComponentMeasurementSource.CACHED_SAME_DESTINATION;
+                  } else {
+                    CACHED_PREVIOUS_DESTINATION = closure_0(navTTISurface[5]).ComponentMeasurementSource.CACHED_PREVIOUS_DESTINATION;
+                  }
+                  const _requestAnimationFrame = requestAnimationFrame;
+                  let closure_2 = requestAnimationFrame(() => {
+                    closure_12(activeTraceId, performance.now(), current.width, current.height, CACHED_PREVIOUS_DESTINATION);
+                  });
+                  return () => cancelAnimationFrame(closure_2);
+                }
+              } else {
+                const _performance = performance;
+                ({ width, height } = current3);
+                const nowResult = performance.now();
+                closure_12(activeTraceId, nowResult, width, height, closure_0(navTTISurface[5]).ComponentMeasurementSource.ON_LAYOUT);
+              }
+            }
+          }
+        }
+      }
     }
-  }, items4);
-  if ("include" === exclude) {
-    return { onLayout };
+    let obj = require("NavTTISurfaceContext");
+    navTTISurface1 = obj.useNavTTISurface();
+    let tmp4 = null;
+    if (navTTISurface1 != null) {
+      class R {
+        constructor(nativeEvent) {
+          let height;
+          let height2;
+          let width;
+          let width2;
+          const layout = nativeEvent.nativeEvent.layout;
+          ({ width, height } = layout);
+          let isFiniteResult = width > 0 && height > 0;
+          if (isFiniteResult) {
+            const _Number = Number;
+            isFiniteResult = Number.isFinite(width);
+          }
+          if (isFiniteResult) {
+            const _Number2 = Number;
+            isFiniteResult = Number.isFinite(height);
+          }
+          if (isFiniteResult) {
+            size = { navigationKey: ref5.current, width: null, height: null };
+            ({ width: obj.width, height: obj.height } = layout);
+            ref.current = size;
+          }
+          current = ref4.current;
+          if (null != current) {
+            if (ref6.current) {
+              const _performance = performance;
+              ({ width: width2, height: height2 } = layout);
+              const nowResult = performance.now();
+              closure_12(current, nowResult, width2, height2, require("NavigationSpanTypes").ComponentMeasurementSource.ON_LAYOUT);
+            } else if (isFiniteResult) {
+              const size1 = { traceId: current, width: null, height: null };
+              ({ width: obj2.width, height: obj2.height } = layout);
+              ref2.current = size1;
+            }
+          }
+        }
+      }
+    }
+    if (undefined == null) {
+      class R {
+        constructor(nativeEvent) {
+          let height;
+          let height2;
+          let width;
+          let width2;
+          const layout = nativeEvent.nativeEvent.layout;
+          ({ width, height } = layout);
+          let isFiniteResult = width > 0 && height > 0;
+          if (isFiniteResult) {
+            const _Number = Number;
+            isFiniteResult = Number.isFinite(width);
+          }
+          if (isFiniteResult) {
+            const _Number2 = Number;
+            isFiniteResult = Number.isFinite(height);
+          }
+          if (isFiniteResult) {
+            size = { navigationKey: ref5.current, width: null, height: null };
+            ({ width: obj.width, height: obj.height } = layout);
+            ref.current = size;
+          }
+          current = ref4.current;
+          if (null != current) {
+            if (ref6.current) {
+              const _performance = performance;
+              ({ width: width2, height: height2 } = layout);
+              const nowResult = performance.now();
+              closure_12(current, nowResult, width2, height2, require("NavigationSpanTypes").ComponentMeasurementSource.ON_LAYOUT);
+            } else if (isFiniteResult) {
+              const size1 = { traceId: current, width: null, height: null };
+              ({ width: obj2.width, height: obj2.height } = layout);
+              ref2.current = size1;
+            }
+          }
+        }
+      }
+    }
+    current = tmp5;
+    if (navTTISurface1 != null) {
+      class R {
+        constructor(nativeEvent) {
+          let height;
+          let height2;
+          let width;
+          let width2;
+          const layout = nativeEvent.nativeEvent.layout;
+          ({ width, height } = layout);
+          let isFiniteResult = width > 0 && height > 0;
+          if (isFiniteResult) {
+            const _Number = Number;
+            isFiniteResult = Number.isFinite(width);
+          }
+          if (isFiniteResult) {
+            const _Number2 = Number;
+            isFiniteResult = Number.isFinite(height);
+          }
+          if (isFiniteResult) {
+            size = { navigationKey: ref5.current, width: null, height: null };
+            ({ width: obj.width, height: obj.height } = layout);
+            ref.current = size;
+          }
+          current = ref4.current;
+          if (null != current) {
+            if (ref6.current) {
+              const _performance = performance;
+              ({ width: width2, height: height2 } = layout);
+              const nowResult = performance.now();
+              closure_12(current, nowResult, width2, height2, require("NavigationSpanTypes").ComponentMeasurementSource.ON_LAYOUT);
+            } else if (isFiniteResult) {
+              const size1 = { traceId: current, width: null, height: null };
+              ({ width: obj2.width, height: obj2.height } = layout);
+              ref2.current = size1;
+            }
+          }
+        }
+      }
+    }
+    if (undefined == null) {
+      class R {
+        constructor(nativeEvent) {
+          let height;
+          let height2;
+          let width;
+          let width2;
+          const layout = nativeEvent.nativeEvent.layout;
+          ({ width, height } = layout);
+          let isFiniteResult = width > 0 && height > 0;
+          if (isFiniteResult) {
+            const _Number = Number;
+            isFiniteResult = Number.isFinite(width);
+          }
+          if (isFiniteResult) {
+            const _Number2 = Number;
+            isFiniteResult = Number.isFinite(height);
+          }
+          if (isFiniteResult) {
+            size = { navigationKey: ref5.current, width: null, height: null };
+            ({ width: obj.width, height: obj.height } = layout);
+            ref.current = size;
+          }
+          current = ref4.current;
+          if (null != current) {
+            if (ref6.current) {
+              const _performance = performance;
+              ({ width: width2, height: height2 } = layout);
+              const nowResult = performance.now();
+              closure_12(current, nowResult, width2, height2, require("NavigationSpanTypes").ComponentMeasurementSource.ON_LAYOUT);
+            } else if (isFiniteResult) {
+              const size1 = { traceId: current, width: null, height: null };
+              ({ width: obj2.width, height: obj2.height } = layout);
+              ref2.current = size1;
+            }
+          }
+        }
+      }
+    }
+    const logger = tmp6;
+    if (navTTISurface1 != null) {
+      class R {
+        constructor(nativeEvent) {
+          let height;
+          let height2;
+          let width;
+          let width2;
+          const layout = nativeEvent.nativeEvent.layout;
+          ({ width, height } = layout);
+          let isFiniteResult = width > 0 && height > 0;
+          if (isFiniteResult) {
+            const _Number = Number;
+            isFiniteResult = Number.isFinite(width);
+          }
+          if (isFiniteResult) {
+            const _Number2 = Number;
+            isFiniteResult = Number.isFinite(height);
+          }
+          if (isFiniteResult) {
+            size = { navigationKey: ref5.current, width: null, height: null };
+            ({ width: obj.width, height: obj.height } = layout);
+            ref.current = size;
+          }
+          current = ref4.current;
+          if (null != current) {
+            if (ref6.current) {
+              const _performance = performance;
+              ({ width: width2, height: height2 } = layout);
+              const nowResult = performance.now();
+              closure_12(current, nowResult, width2, height2, require("NavigationSpanTypes").ComponentMeasurementSource.ON_LAYOUT);
+            } else if (isFiniteResult) {
+              const size1 = { traceId: current, width: null, height: null };
+              ({ width: obj2.width, height: obj2.height } = layout);
+              ref2.current = size1;
+            }
+          }
+        }
+      }
+    }
+    if (undefined == null) {
+      class R {
+        constructor(nativeEvent) {
+          let height;
+          let height2;
+          let width;
+          let width2;
+          const layout = nativeEvent.nativeEvent.layout;
+          ({ width, height } = layout);
+          let isFiniteResult = width > 0 && height > 0;
+          if (isFiniteResult) {
+            const _Number = Number;
+            isFiniteResult = Number.isFinite(width);
+          }
+          if (isFiniteResult) {
+            const _Number2 = Number;
+            isFiniteResult = Number.isFinite(height);
+          }
+          if (isFiniteResult) {
+            size = { navigationKey: ref5.current, width: null, height: null };
+            ({ width: obj.width, height: obj.height } = layout);
+            ref.current = size;
+          }
+          current = ref4.current;
+          if (null != current) {
+            if (ref6.current) {
+              const _performance = performance;
+              ({ width: width2, height: height2 } = layout);
+              const nowResult = performance.now();
+              closure_12(current, nowResult, width2, height2, require("NavigationSpanTypes").ComponentMeasurementSource.ON_LAYOUT);
+            } else if (isFiniteResult) {
+              const size1 = { traceId: current, width: null, height: null };
+              ({ width: obj2.width, height: obj2.height } = layout);
+              ref2.current = size1;
+            }
+          }
+        }
+      }
+    }
+    current2 = tmp7;
+    ref = current.useRef(null);
+    ref2 = current.useRef(null);
+    ref3 = current.useRef(null);
+    ref4 = current.useRef(null);
+    ref5 = current.useRef(tmp5);
+    ref6 = current.useRef(false);
+    const items1 = [regionId, exclude];
+    const callback = current.useCallback((traceId, endMonotonicMs, arg2, arg3, measurementSource) => {
+      let isFiniteResult = arg2 > 0 && arg3 > 0;
+      if (isFiniteResult) {
+        const _Number = Number;
+        isFiniteResult = Number.isFinite(arg2);
+      }
+      if (isFiniteResult) {
+        const _Number2 = Number;
+        isFiniteResult = Number.isFinite(arg3);
+      }
+      if (isFiniteResult) {
+        current = ref3.current;
+        traceId = undefined;
+        const tmp4 = ref3;
+        if (current != null) {
+          traceId = current.traceId;
+        }
+        if (traceId !== traceId) {
+          if ("include" === _require) {
+            NavigationSpanTrackerDefault;
+          } else {
+            const obj2 = NavigationSpanTrackerDefault;
+            const activeTraceElapsedMs = obj2.getActiveTraceElapsedMs(traceId, endMonotonicMs);
+            if (null != activeTraceElapsedMs) {
+              const obj3 = NavigationTTIRegionDebugState;
+              const result = obj3.recordNavigationTTIRegionDebugMeasurement(traceId, spanComponent, activeTraceElapsedMs);
+            }
+          }
+          const obj6 = { traceId, source: measurementSource };
+          tmp4.current = obj6;
+        } else {
+          const tmp12 = "include" === _require && measurementSource === NavigationSpanTypes.ComponentMeasurementSource.ON_LAYOUT && current.source !== NavigationSpanTypes.ComponentMeasurementSource.ON_LAYOUT;
+          if (tmp12) {
+            const obj = NavigationSpanTrackerDefault;
+            const result1 = obj.recordLateComponentLayout(traceId, spanComponent, endMonotonicMs);
+          }
+        }
+      }
+    }, items1);
+    const items2 = [tmp6, tmp7, tmp5];
+    const layoutEffect1 = current.useLayoutEffect(() => {
+      const tmp = ref4;
+      const tmp2 = logger;
+      if (ref4.current !== logger) {
+        ref2.current = null;
+      }
+      tmp.current = tmp2;
+      ref5.current = current;
+      ref6.current = current2;
+    }, items2);
+    const items3 = [callback];
+    const items4 = [tmp6, tmp7, tmp5, callback];
+    const callback1 = current.useCallback((nativeEvent) => {
+      let height;
+      let height2;
+      let width;
+      let width2;
+      const layout = nativeEvent.nativeEvent.layout;
+      ({ width, height } = layout);
+      let isFiniteResult = width > 0 && height > 0;
+      if (isFiniteResult) {
+        const _Number = Number;
+        isFiniteResult = Number.isFinite(width);
+      }
+      if (isFiniteResult) {
+        const _Number2 = Number;
+        isFiniteResult = Number.isFinite(height);
+      }
+      if (isFiniteResult) {
+        size = { navigationKey: ref5.current, width: null, height: null };
+        ({ width: obj.width, height: obj.height } = layout);
+        ref.current = size;
+      }
+      current = ref4.current;
+      if (null != current) {
+        if (ref6.current) {
+          const _performance = performance;
+          ({ width: width2, height: height2 } = layout);
+          const nowResult = performance.now();
+          callback(current, nowResult, width2, height2, NavigationSpanTypes.ComponentMeasurementSource.ON_LAYOUT);
+        } else if (isFiniteResult) {
+          const size1 = { traceId: current, width: null, height: null };
+          ({ width: obj2.width, height: obj2.height } = layout);
+          ref2.current = size1;
+        }
+      }
+    }, items3);
+    const effect = current.useEffect(() => {
+      let height;
+      let width;
+      const tmp = closure_5;
+      if (tmp) {
+        if (null != closure_4) {
+          current2 = ref3.current;
+          let traceId;
+          if (current2 != null) {
+            traceId = current2.traceId;
+          }
+          if (traceId !== closure_4) {
+            const current3 = ref2.current;
+            let traceId1;
+            if (current3 != null) {
+              traceId1 = current3.traceId;
+            }
+            if (traceId1 !== closure_4) {
+              current = ref.current;
+              if (null != current) {
+                if (current.navigationKey === closure_3) {
+                  let CACHED_PREVIOUS_DESTINATION = require("NavigationSpanTypes").ComponentMeasurementSource.CACHED_SAME_DESTINATION;
+                } else {
+                  CACHED_PREVIOUS_DESTINATION = require("NavigationSpanTypes").ComponentMeasurementSource.CACHED_PREVIOUS_DESTINATION;
+                }
+                const _requestAnimationFrame = requestAnimationFrame;
+                let closure_2 = requestAnimationFrame(() => {
+                  callback(logger, performance.now(), current.width, current.height, CACHED_PREVIOUS_DESTINATION);
+                });
+                return () => cancelAnimationFrame(closure_2);
+              }
+            } else {
+              const _performance = performance;
+              ({ width, height } = current3);
+              const nowResult = performance.now();
+              callback(closure_4, nowResult, width, height, require("NavigationSpanTypes").ComponentMeasurementSource.ON_LAYOUT);
+            }
+          }
+        }
+      }
+    }, items4);
+    const items5 = [navTTISurface1, regionId, exclude];
+    const effect1 = current.useEffect(() => {
+      const tmp = "include" === _require && null == navTTISurface1;
+      if (tmp) {
+        const _HermesInternal = HermesInternal;
+        logger.warn("" + spanComponent + " has no NavTTISurfaceProvider; measurement is disabled.");
+      }
+    }, items5);
+    if ("include" === exclude) {
+      class R {
+        constructor(nativeEvent) {
+          let height;
+          let height2;
+          let width;
+          let width2;
+          const layout = nativeEvent.nativeEvent.layout;
+          ({ width, height } = layout);
+          let isFiniteResult = width > 0 && height > 0;
+          if (isFiniteResult) {
+            const _Number = Number;
+            isFiniteResult = Number.isFinite(width);
+          }
+          if (isFiniteResult) {
+            const _Number2 = Number;
+            isFiniteResult = Number.isFinite(height);
+          }
+          if (isFiniteResult) {
+            size = { navigationKey: ref5.current, width: null, height: null };
+            ({ width: obj.width, height: obj.height } = layout);
+            ref.current = size;
+          }
+          current = ref4.current;
+          if (null != current) {
+            if (ref6.current) {
+              const _performance = performance;
+              ({ width: width2, height: height2 } = layout);
+              const nowResult = performance.now();
+              closure_12(current, nowResult, width2, height2, require("NavigationSpanTypes").ComponentMeasurementSource.ON_LAYOUT);
+            } else if (isFiniteResult) {
+              const size1 = { traceId: current, width: null, height: null };
+              ({ width: obj2.width, height: obj2.height } = layout);
+              ref2.current = size1;
+            }
+          }
+        }
+      }
+    }
+    let obj2 = { onLayout: callback1 };
   }
 };

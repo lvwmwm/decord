@@ -1,20 +1,19 @@
-// Module ID: 5499
-// Function ID: 5500
+// Module ID: 5798
+// Function ID: 5799
 // Name: markup/ChannelUtils
-// Dependencies: [2048, 2]
+// Dependencies: [2055, 2]
 // Exports: isChannelTypeMentionable
 
-// Module 5499 (markup/ChannelUtils)
-import ChannelRecord from "ChannelRecord" /* 2048 */;
+// Module 5798 (markup/ChannelUtils)
+import ChannelRecord from "ChannelRecord" /* 2055 */;
 import size from "module_2" /* 2 */;
 
-({ isGuildSelectableChannelType: closure_0, isGuildVocalChannelType: closure_1 } = ChannelRecord);
+let _window;
+let map;
+({ isGuildSelectableChannelType: _window, isGuildVocalChannelType: map } = ChannelRecord);
 const result = size.fileFinishedImporting("modules/markup/ChannelUtils.tsx");
 
 export const isChannelTypeMentionable = function isChannelTypeMentionable(type) {
-  let tmp = React(type);
-  if (!tmp) {
-    tmp = framebus(type);
-  }
+  const tmp = React(type) || map(type);
   return tmp;
 };

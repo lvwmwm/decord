@@ -1,8 +1,8 @@
-// Module ID: 5235
-// Function ID: 5236
+// Module ID: 5281
+// Function ID: 5282
 // Dependencies: [2]
 
-// Module 5235
+// Module 5281
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/wearable/mech_wings.png.js");

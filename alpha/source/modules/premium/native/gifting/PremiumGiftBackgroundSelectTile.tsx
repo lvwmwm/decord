@@ -1,87 +1,188 @@
-// Module ID: 10681
-// Function ID: 10682
+// Module ID: 10752
+// Function ID: 10753
 // Name: PremiumGiftBackgroundSelectTile
-// Dependencies: [19, 17, 1374, 10682, 21, 10683, 10684, 10685, 10686, 10687, 10688, 10689, 10690, 10691, 4845, 576, 1115, 2550, 6085, 2]
-// Exports: default
+// Dependencies: [19, 17, 1379, 10753, 21, 10754, 10755, 10756, 10757, 10758, 10759, 10760, 10761, 10762, 4890, 587, 558, 576, 1126, 2557, 5974, 2]
 
-// Module 10681 (PremiumGiftBackgroundSelectTile)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import _modDef2550 from "module_2550" /* 2550 */;
-import FastImageDefault from "FastImage" /* 6085 */;
-import _modDef10683 from "module_10683" /* 10683 */;
-import _modDef10684 from "module_10684" /* 10684 */;
-import _modDef10685 from "module_10685" /* 10685 */;
-import _modDef10686 from "module_10686" /* 10686 */;
-import _modDef10687 from "module_10687" /* 10687 */;
-import _modDef10688 from "module_10688" /* 10688 */;
-import _modDef10689 from "module_10689" /* 10689 */;
-import _modDef10690 from "module_10690" /* 10690 */;
-import _modDef10691 from "module_10691" /* 10691 */;
-import noop from "module_19" /* 19 */;
+// Module 10752 (PremiumGiftBackgroundSelectTile)
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import _modDef2557 from "module_2557" /* 2557 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import PremiumGiftingConstants from "PremiumGiftingConstants" /* 10753 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10754 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10755 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10756 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 10757 */;
+import _modDef10758 from "module_10758" /* 10758 */;
+import _modDef10759 from "module_10759" /* 10759 */;
+import _modDef10760 from "module_10760" /* 10760 */;
+import _modDef10761 from "module_10761" /* 10761 */;
+import _modDef10762 from "module_10762" /* 10762 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size_mod from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ View: c3, Pressable: closure_4 } = get_ActivityIndicator);
-const PremiumGiftStyles = fn(1374).PremiumGiftStyles;
-const GIFT_STYLE_DESCRIPTIONS = fn(10682).GIFT_STYLE_DESCRIPTIONS;
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const GIFT_STYLE_IMG = { [STANDARD_BOX]: _modDef10683, [CAKE]: _modDef10684, [CHEST]: _modDef10685, [COFFEE]: _modDef10686 };
+let CAKE;
+let CHEST;
+let COFFEE;
+let STANDARD_BOX;
+let c3;
+let closure_4;
+let metroImportDefault;
+let metroRequire;
+({ View: c3, Pressable: closure_4 } = react_native);
+const PremiumGiftStyles = PremiumConstants.PremiumGiftStyles;
+const GIFT_STYLE_DESCRIPTIONS = PremiumGiftingConstants.GIFT_STYLE_DESCRIPTIONS;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+const GIFT_STYLE_IMG = { [STANDARD_BOX]: AssetRegistryDefault, [CAKE]: AssetRegistryDefault2, [CHEST]: AssetRegistryDefault3, [COFFEE]: AssetRegistryDefault4 };
 ({ STANDARD_BOX, CAKE, CHEST, COFFEE } = PremiumGiftStyles);
-GIFT_STYLE_IMG[PremiumGiftStyles.NITROWEEN_STANDARD] = { uri: _modDef10687 };
+let obj2 = { uri: _modDef10758 };
+GIFT_STYLE_IMG[PremiumGiftStyles.NITROWEEN_STANDARD] = obj2;
 GIFT_STYLE_IMG[PremiumGiftStyles.SNOWGLOBE] = null;
 GIFT_STYLE_IMG[PremiumGiftStyles.BOX] = null;
 GIFT_STYLE_IMG[PremiumGiftStyles.CUP] = null;
-let obj2 = { uri: _modDef10687 };
-GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_CAKE] = { uri: _modDef10688 };
-let obj3 = { uri: _modDef10688 };
-GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_CHEST] = { uri: _modDef10689 };
-let obj4 = { uri: _modDef10689 };
-GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_COFFEE] = { uri: _modDef10690 };
-const obj5 = { uri: _modDef10690 };
-GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_STANDARD_BOX] = { uri: _modDef10691 };
-const createStyles = fn(4845);
+let obj3 = { uri: _modDef10759 };
+GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_CAKE] = obj3;
+let obj4 = { uri: _modDef10760 };
+GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_CHEST] = obj4;
+let obj5 = { uri: _modDef10761 };
+GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_COFFEE] = obj5;
+GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_STANDARD_BOX] = { uri: _modDef10762 };
+({ uri: _modDef10762 });
 let closure_9 = createStyles.createStyles((arg0) => {
-  const size = { width: 78, height: 44, justifyContent: "center", marginEnd: nativeDefault.space.PX_8, marginStart: null };
-  let num = 0;
+  let num;
+  let size1;
+  size = { width: 78, height: 44, justifyContent: "center", marginEnd: nativeDefault.space.PX_8, marginStart: num };
+  num = 0;
   if (0 === arg0) {
     num = 20;
   }
-  const obj = { container: size, selected: null, image: null };
-  size.marginStart = num;
-  const size1 = { position: "absolute", borderColor: tmp(576).colors.TEXT_BRAND, borderRadius: tmp(576).radii.sm, borderWidth: 2, flex: 1, width: 78, height: 44 };
-  obj.selected = size1;
-  obj.image = { width: 72, height: 38, alignSelf: "center" };
+  const obj = { container: size, selected: size1, image: { width: 72, height: 38, alignSelf: "center" } };
+  size1 = { position: "absolute", borderColor: tmp(587).colors.TEXT_BRAND, borderRadius: tmp(587).radii.sm, borderWidth: 2, flex: 1, width: 78, height: 44 };
   return obj;
 });
-let size = fn(2);
-const result = size.fileFinishedImporting("modules/premium/native/gifting/PremiumGiftBackgroundSelectTile.tsx");
-
-export default function GiftBackgroundSelectTile(index) {
-  ({ selected, giftStyle } = index);
-  const tmp = closure_9(index.index);
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
+  let giftStyle;
+  let intl2;
+  let items;
+  let onPress;
+  let selected;
+  const obj = react2;
+  const cResult = obj.c(15);
+  ({ selected, giftStyle, onPress } = index);
+  const tmp4 = closure_9(index.index);
+  let tmp6 = null;
+  if (null != obj[giftStyle]) {
+    let tmp7;
+    if (cResult[0] !== giftStyle) {
+      const intl = tmp(1126).intl;
+      const formatToPlainString = intl.formatToPlainString;
+      const obj2 = { giftStyle: intl2.string(GIFT_STYLE_DESCRIPTIONS[giftStyle]) };
+      const prop = _modDef2557["+utqaz"];
+      intl2 = tmp(1126).intl;
+      const formatToPlainStringResult = formatToPlainString(prop, obj2);
+      cResult[0] = giftStyle;
+      cResult[1] = formatToPlainStringResult;
+      tmp7 = formatToPlainStringResult;
+    } else {
+      tmp7 = cResult[1];
+    }
+    if (cResult[2] === selected) {
+      let tmp12;
+      if (cResult[3] === tmp4.selected) {
+        tmp12 = cResult[4];
+      }
+      if (cResult[5] === obj[giftStyle]) {
+        let tmp16;
+        if (cResult[6] === tmp4.image) {
+          tmp16 = cResult[7];
+        }
+        if (cResult[8] === onPress) {
+          if (cResult[9] === selected) {
+            if (cResult[10] === tmp4.container) {
+              if (cResult[11] === tmp7) {
+                if (cResult[12] === tmp12) {
+                  let tmp20;
+                  if (cResult[13] === tmp16) {
+                    tmp20 = cResult[14];
+                  }
+                  tmp6 = tmp20;
+                }
+              }
+            }
+          }
+        }
+        const obj3 = { "aria-label": tmp7, "aria-selected": selected, style: tmp4.container, onPress, children: items };
+        items = [tmp12, tmp16];
+        const tmp23 = metroImportDefault(React3, obj3);
+        cResult[8] = onPress;
+        cResult[9] = selected;
+        cResult[10] = tmp4.container;
+        cResult[11] = tmp7;
+        cResult[12] = tmp12;
+        cResult[13] = tmp16;
+        cResult[14] = tmp23;
+        tmp20 = tmp23;
+      }
+      const obj4 = { resizeMode: "contain", style: tmp4.image, source: obj[giftStyle] };
+      const tmp19 = metroRequire(FastImageDefault, obj4);
+      cResult[5] = obj[giftStyle];
+      cResult[6] = tmp4.image;
+      cResult[7] = tmp19;
+      tmp16 = tmp19;
+    }
+    let tmp13 = selected;
+    if (tmp13) {
+      const obj5 = { style: tmp4.selected };
+      tmp13 = metroRequire(_false, obj5);
+    }
+    cResult[2] = selected;
+    cResult[3] = tmp4.selected;
+    cResult[4] = tmp13;
+    tmp12 = tmp13;
+  }
+  return tmp6;
+}) : ((onPress) => {
+  let formatToPlainString;
+  let giftStyle;
+  let intl2;
+  let items;
+  let obj;
+  let obj2;
+  let prop;
+  let selected;
+  ({ selected, giftStyle } = onPress);
+  onPress = onPress.onPress;
+  const tmp = closure_9(onPress.index);
   let tmp4Result = null;
   if (null != obj[giftStyle]) {
-    obj = { "aria-label": null, "aria-selected": null, style: null, onPress: null, children: null };
-    const intl = util.intl;
-    const obj2 = { giftStyle: null };
-    const intl2 = util.intl;
-    obj2.giftStyle = intl2.string(GIFT_STYLE_DESCRIPTIONS[giftStyle]);
-    obj["aria-label"] = intl.formatToPlainString(_modDef2550["+utqaz"], obj2);
-    obj["aria-selected"] = selected;
-    obj.style = tmp.container;
-    obj.onPress = index.onPress;
+    obj = { "aria-label": formatToPlainString(prop, obj2), "aria-selected": selected, style: tmp.container, onPress, children: items };
+    const intl = intl3.intl;
+    formatToPlainString = intl.formatToPlainString;
+    obj2 = { giftStyle: intl2.string(GIFT_STYLE_DESCRIPTIONS[giftStyle]) };
+    prop = _modDef2557["+utqaz"];
+    intl2 = intl3.intl;
+    const tmp4 = metroImportDefault;
+    const tmp5 = React3;
+    const tmp8 = importDefault;
     if (selected) {
       const obj3 = { style: tmp.selected };
-      selected = timestampProducer(React3, obj3);
+      selected = metroRequire(_false, obj3);
     }
-    const items = [selected, ];
-    const obj4 = { resizeMode: "contain", style: tmp.image, source: tmp2 };
-    items[1] = timestampProducer(FastImageDefault, obj4);
-    obj.children = items;
-    tmp4Result = React5(React4, obj);
+    items = [selected, ];
+    const obj4 = { resizeMode: "contain", style: tmp.image, source: obj[giftStyle] };
+    items[1] = metroRequire(tmp8(5974), obj4);
+    tmp4Result = tmp4(tmp5, obj);
   }
   return tmp4Result;
-};
+});
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/premium/native/gifting/PremiumGiftBackgroundSelectTile.tsx");
+
+export default tmp5;
 export { GIFT_STYLE_IMG };

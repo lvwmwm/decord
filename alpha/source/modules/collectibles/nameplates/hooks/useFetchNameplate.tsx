@@ -1,20 +1,25 @@
-// Module ID: 14401
-// Function ID: 14402
+// Module ID: 14460
+// Function ID: 14461
 // Name: useFetchNameplate
-// Dependencies: [10707, 1974, 1971, 2]
-// Exports: useFetchNameplate
+// Dependencies: [558, 576, 10778, 1980, 1977, 2]
 
-// Module 14401 (useFetchNameplate)
-import utils from "utils" /* 1971 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1974 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10707 */;
+// Module 14460 (useFetchNameplate)
+import react from "react" /* 576 */;
+import utils from "utils" /* 1977 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10778 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/collectibles/nameplates/hooks/useFetchNameplate.tsx");
-
-export const useFetchNameplate = function useFetchNameplate(skuId) {
-  const fetchCollectiblesProduct = useFetchCollectiblesProduct.useFetchCollectiblesProduct(skuId);
-  const product = fetchCollectiblesProduct.product;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let isFetching;
+  let product;
+  let tmp8;
+  const obj = react;
+  const cResult = obj.c(7);
+  const obj2 = useFetchCollectiblesProduct;
+  const fetchCollectiblesProduct = obj2.useFetchCollectiblesProduct(arg0);
+  ({ product, isFetching } = fetchCollectiblesProduct);
   let type;
   if (product != null) {
     const first = product.items[0];
@@ -26,8 +31,54 @@ export const useFetchNameplate = function useFetchNameplate(skuId) {
   if (type === CollectiblesItemType.CollectiblesItemType.NAMEPLATE) {
     first1 = product.items[0];
   }
-  const obj2 = { nameplateProduct: product, nameplateRecord: first1, nameplateData: null, isFetching: null };
-  obj2.nameplateData = utils.getNameplateData(first1);
-  obj2.isFetching = fetchCollectiblesProduct.isFetching;
+  if (cResult[0] !== first1) {
+    const tmpResult = utils;
+    const nameplateData = tmpResult.getNameplateData(first1);
+    cResult[0] = first1;
+    cResult[1] = nameplateData;
+    tmp8 = nameplateData;
+  } else {
+    tmp8 = cResult[1];
+  }
+  if (cResult[2] === isFetching) {
+    if (cResult[3] === tmp8) {
+      if (cResult[4] === first1) {
+        let tmp10;
+        if (cResult[5] === product) {
+          tmp10 = cResult[6];
+        }
+        return tmp10;
+      }
+    }
+  }
+  const obj3 = { nameplateProduct: product, nameplateRecord: first1, nameplateData: tmp8, isFetching };
+  cResult[2] = isFetching;
+  cResult[3] = tmp8;
+  cResult[4] = first1;
+  cResult[5] = product;
+  cResult[6] = obj3;
+  tmp10 = obj3;
+}) : ((arg0) => {
+  let tmpResult;
+  const obj = useFetchCollectiblesProduct;
+  const fetchCollectiblesProduct = obj.useFetchCollectiblesProduct(arg0);
+  const product = fetchCollectiblesProduct.product;
+  let type;
+  const isFetching = fetchCollectiblesProduct.isFetching;
+  if (product != null) {
+    const first = product.items[0];
+    if (first != null) {
+      type = first.type;
+    }
+  }
+  let first1;
+  if (type === CollectiblesItemType.CollectiblesItemType.NAMEPLATE) {
+    first1 = product.items[0];
+  }
+  const obj2 = { nameplateProduct: product, nameplateRecord: first1, nameplateData: tmpResult.getNameplateData(first1), isFetching };
+  tmpResult = utils;
   return obj2;
-};
+});
+const result = size.fileFinishedImporting("modules/collectibles/nameplates/hooks/useFetchNameplate.tsx");
+
+export const useFetchNameplate = tmp2;

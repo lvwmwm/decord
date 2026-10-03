@@ -1,84 +1,241 @@
-// Module ID: 10754
-// Function ID: 10755
+// Module ID: 11001
+// Function ID: 11002
 // Name: virtual_currency/BalanceWidgetPill
-// Dependencies: [19, 17, 21, 4845, 5470, 576, 1364, 10755, 1115, 10756, 10761, 10762, 2]
+// Dependencies: [19, 17, 21, 4890, 5600, 587, 1369, 558, 576, 11002, 1126, 11003, 11008, 11009, 2]
 
-// Module 10754 (virtual_currency/BalanceWidgetPill)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import useVirtualCurrencyBalanceAnimationData from "useVirtualCurrencyBalanceAnimationData" /* 10755 */;
-import OrbLottieAnimation from "OrbLottieAnimation" /* 10756 */;
-import BalanceCounter from "BalanceCounter" /* 10761 */;
-import AnimationUtils from "AnimationUtils" /* 10762 */;
-import noop from "module_19" /* 19 */;
+// Module 11001 (virtual_currency/BalanceWidgetPill)
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import ButtonConstants from "ButtonConstants" /* 5600 */;
+import useVirtualCurrencyBalanceAnimationData from "useVirtualCurrencyBalanceAnimationData" /* 11002 */;
+import OrbLottieAnimation from "OrbLottieAnimation" /* 11003 */;
+import AnimationUtils from "AnimationUtils" /* 11009 */;
+import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4845);
-let obj2 = { container: { minHeight: fn(5470).SMALL_BUTTON_HEIGHT, borderRadius: nativeDefault.radii.round, justifyContent: "center", alignItems: "center", flexDirection: "row", paddingHorizontal: nativeDefault.space.PX_12, paddingVertical: nativeDefault.space.PX_4, backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, gap: 4 }, orbsLottieContainer: { position: "relative", height: 18, width: 18, justifyContent: "center", alignItems: "center" }, balanceCounterContainer: { justifyContent: "center", alignItems: "flex-end" }, balanceText: null };
-let obj4 = { color: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT, textAlign: "right", lineHeight: null };
-const PlatformUtils = fn(1364);
+let c3;
+let closure_4;
 let num;
+let obj2;
+let obj3;
+const View = react_native.View;
+({ jsx: c3, jsxs: closure_4 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, orbsLottieContainer: { position: "relative", height: 18, width: 18, justifyContent: "center", alignItems: "center" }, balanceCounterContainer: { justifyContent: "center", alignItems: "flex-end" }, balanceText: obj3 };
+obj2 = { minHeight: ButtonConstants.SMALL_BUTTON_HEIGHT, borderRadius: nativeDefault.radii.round, justifyContent: "center", alignItems: "center", flexDirection: "row", paddingHorizontal: nativeDefault.space.PX_12, paddingVertical: nativeDefault.space.PX_4, backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, gap: 4 };
+createStyles = createStyles.createStyles;
+obj3 = { color: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT, textAlign: "right", lineHeight: num };
+num = undefined;
 if (PlatformUtils.isAndroid()) {
   num = 14;
 }
-class BalanceWidgetPill {
-  constructor(arg0) {
-    prop = global.initialRenderedBalance;
-    if (prop === undefined) {
-      prop = null;
-    }
-    balance = global.balance;
-    tmp2 = null === prop;
-    if (tmp2) {
-      tmp2 = null === balance;
-    }
-    tmp3 = closure_0;
-    tmp4 = closure_1;
-    obj = closure_0(closure_1[7]);
-    virtualCurrencyBalanceAnimationData = obj.useVirtualCurrencyBalanceAnimationData({ initialRenderedBalance: prop, balance });
-    ({ onValueChange, onValueReached, showInitialRenderedBalance, currentAnimationType, lottieRef } = virtualCurrencyBalanceAnimationData);
-    tmp6 = closure_5();
-    tmp8 = View;
-    obj1 = { style: null, accessibilityLabel: null, accessibilityState: null, accessible: true, children: null };
-    items = [, ];
-    items[0] = tmp6.container;
-    items[1] = global.style;
-    obj1.style = items;
-    tmp7 = jsxs;
-    intl = closure_0(closure_1[8]).intl;
-    if (tmp2) {
-      stringResult = intl.string(tmp3(tmp4[8]).t.y0WGqP);
-    } else {
-      obj7 = { balance: null };
-      obj7.balance = balance;
-      stringResult = intl.formatToPlainString(tmp3(tmp4[8]).t.zPaLL9, obj7);
-    }
-    obj1.accessibilityLabel = stringResult;
-    obj1.accessibilityState = { busy: tmp2 };
-    tmp10 = jsx;
-    obj8 = { style: tmp6.orbsLottieContainer, children: jsx(tmp3(tmp4[9]).OrbLottieAnimation, { ref: lottieRef, animationType: currentAnimationType }) };
-    items1 = [, ];
-    items1[0] = jsx(tmp8, obj8);
-    obj9 = { style: tmp6.balanceCounterContainer, children: null };
-    if (showInitialRenderedBalance) {
-      balance = prop;
-    }
-    obj10 = { value: balance, onValueChange, onValueReached, targetTotalCounterTime: tmp3(tmp4[11]).EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS, style: tmp6.balanceText };
-    obj9.children = tmp10(tmp3(tmp4[10]).BalanceCounter, obj10);
-    items1[1] = tmp10(tmp8, obj9);
-    obj1.children = items1;
-    return tmp7(tmp8, obj1);
+let closure_5 = createStyles(obj);
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let balance;
+  let currentAnimationType;
+  let initialRenderedBalance;
+  let items;
+  let lottieRef;
+  let onValueChange;
+  let onValueReached;
+  let style;
+  const obj = react2;
+  const cResult = obj.c(31);
+  ({ initialRenderedBalance, balance, style } = arg0);
+  let tmp4 = null;
+  if (undefined !== initialRenderedBalance) {
+    tmp4 = initialRenderedBalance;
   }
-}
-obj4.lineHeight = num;
-obj2.balanceText = obj4;
-const hasOwnProperty = createStyles.createStyles(obj2);
-BalanceWidgetPill.displayName = "BalanceWidgetPill";
-const size = fn(2);
+  if (cResult[0] === balance) {
+    let tmp6;
+    if (cResult[1] === tmp4) {
+      tmp6 = cResult[2];
+    }
+    const tmpResult = useVirtualCurrencyBalanceAnimationData;
+    const virtualCurrencyBalanceAnimationData = tmpResult.useVirtualCurrencyBalanceAnimationData(tmp6);
+    ({ onValueChange, onValueReached, currentAnimationType, lottieRef } = virtualCurrencyBalanceAnimationData);
+    const showInitialRenderedBalance = virtualCurrencyBalanceAnimationData.showInitialRenderedBalance;
+    const tmp9 = closure_5();
+    if (cResult[3] === style) {
+      let tmp10;
+      let stringResult;
+      if (cResult[4] === tmp9.container) {
+        tmp10 = cResult[5];
+      }
+      if (cResult[6] === balance) {
+        let tmp11;
+        let tmp13;
+        if (cResult[7] === (null === tmp4 && null === balance)) {
+          tmp11 = cResult[8];
+        }
+        if (cResult[9] !== (null === tmp4 && null === balance)) {
+          const obj2 = { busy: null === tmp4 && null === balance };
+          cResult[9] = null === tmp4 && null === balance;
+          cResult[10] = obj2;
+          tmp13 = obj2;
+        } else {
+          tmp13 = cResult[10];
+        }
+        if (cResult[11] === currentAnimationType) {
+          let tmp14;
+          if (cResult[12] === lottieRef) {
+            tmp14 = cResult[13];
+          }
+          if (cResult[14] === tmp9.orbsLottieContainer) {
+            let tmp17;
+            if (cResult[15] === tmp14) {
+              tmp17 = cResult[16];
+            }
+            if (showInitialRenderedBalance) {
+              balance = tmp4;
+            }
+            if (cResult[17] === onValueChange) {
+              if (cResult[18] === onValueReached) {
+                if (cResult[19] === tmp9.balanceText) {
+                  let tmp21;
+                  if (cResult[20] === balance) {
+                    tmp21 = cResult[21];
+                  }
+                  if (cResult[22] === tmp9.balanceCounterContainer) {
+                    let tmp24;
+                    if (cResult[23] === tmp21) {
+                      tmp24 = cResult[24];
+                    }
+                    if (cResult[25] === tmp24) {
+                      if (cResult[26] === tmp10) {
+                        if (cResult[27] === tmp11) {
+                          if (cResult[28] === tmp13) {
+                            let tmp28;
+                            if (cResult[29] === tmp17) {
+                              tmp28 = cResult[30];
+                            }
+                            return tmp28;
+                          }
+                        }
+                      }
+                    }
+                    const obj3 = { style: tmp10, accessibilityLabel: tmp11, accessibilityState: tmp13, accessible: true, children: items };
+                    items = [tmp17, tmp24];
+                    const tmp31 = React3(View, obj3);
+                    cResult[25] = tmp24;
+                    cResult[26] = tmp10;
+                    cResult[27] = tmp11;
+                    cResult[28] = tmp13;
+                    cResult[29] = tmp17;
+                    cResult[30] = tmp31;
+                    tmp28 = tmp31;
+                  }
+                  const obj4 = { style: tmp9.balanceCounterContainer, children: tmp21 };
+                  const tmp27 = _false(View, obj4);
+                  cResult[22] = tmp9.balanceCounterContainer;
+                  cResult[23] = tmp21;
+                  cResult[24] = tmp27;
+                  tmp24 = tmp27;
+                }
+              }
+            }
+            const obj5 = { value: balance, onValueChange, onValueReached, targetTotalCounterTime: AnimationUtils.EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS, style: tmp9.balanceText };
+            const BalanceCounter = tmp(11008).BalanceCounter;
+            const tmp23 = _false(BalanceCounter, obj5);
+            cResult[17] = onValueChange;
+            cResult[18] = onValueReached;
+            cResult[19] = tmp9.balanceText;
+            cResult[20] = balance;
+            cResult[21] = tmp23;
+            tmp21 = tmp23;
+          }
+          const obj6 = { style: tmp9.orbsLottieContainer, children: tmp14 };
+          const tmp20 = _false(View, obj6);
+          cResult[14] = tmp9.orbsLottieContainer;
+          cResult[15] = tmp14;
+          cResult[16] = tmp20;
+          tmp17 = tmp20;
+        }
+        const obj7 = { ref: lottieRef, animationType: currentAnimationType };
+        const tmp16 = _false(OrbLottieAnimation.OrbLottieAnimation, obj7);
+        cResult[11] = currentAnimationType;
+        cResult[12] = lottieRef;
+        cResult[13] = tmp16;
+        tmp14 = tmp16;
+      }
+      const intl = tmp(1126).intl;
+      if (null === tmp4 && null === balance) {
+        stringResult = intl.string(tmp(1126).t.y0WGqP);
+      } else {
+        const obj8 = { balance };
+        stringResult = intl.formatToPlainString(tmp(1126).t.zPaLL9, obj8);
+      }
+      cResult[6] = balance;
+      cResult[7] = null === tmp4 && null === balance;
+      cResult[8] = stringResult;
+      tmp11 = stringResult;
+    }
+    const items1 = [tmp9.container, style];
+    cResult[3] = style;
+    cResult[4] = tmp9.container;
+    cResult[5] = items1;
+    tmp10 = items1;
+  }
+  const obj9 = { initialRenderedBalance: tmp4, balance };
+  cResult[0] = balance;
+  cResult[1] = tmp4;
+  cResult[2] = obj9;
+  tmp6 = obj9;
+}) : ((initialRenderedBalance) => {
+  let BalanceCounter;
+  let currentAnimationType;
+  let items;
+  let items1;
+  let lottieRef;
+  let obj6;
+  let onValueChange;
+  let onValueReached;
+  let showInitialRenderedBalance;
+  let stringResult;
+  let prop = initialRenderedBalance.initialRenderedBalance;
+  if (prop === undefined) {
+    prop = null;
+  }
+  let balance = initialRenderedBalance.balance;
+  let tmp2 = null === prop;
+  const style = initialRenderedBalance.style;
+  if (tmp2) {
+    tmp2 = null === balance;
+  }
+  const obj = useVirtualCurrencyBalanceAnimationData;
+  const virtualCurrencyBalanceAnimationData = obj.useVirtualCurrencyBalanceAnimationData({ initialRenderedBalance: prop, balance });
+  ({ onValueChange, onValueReached, showInitialRenderedBalance, currentAnimationType, lottieRef } = virtualCurrencyBalanceAnimationData);
+  const tmp6 = closure_5();
+  const obj2 = { style: items, accessibilityLabel: stringResult, accessibilityState: { busy: tmp2 }, accessible: true, children: items1 };
+  items = [tmp6.container, style];
+  const intl = intl2.intl;
+  const tmp7 = React3;
+  if (tmp2) {
+    stringResult = intl.string(tmp3(1126).t.y0WGqP);
+  } else {
+    const obj3 = { balance };
+    stringResult = intl.formatToPlainString(tmp3(1126).t.zPaLL9, obj3);
+  }
+  items1 = [, ];
+  const obj4 = { style: tmp6.orbsLottieContainer, children: _false(OrbLottieAnimation.OrbLottieAnimation, { ref: lottieRef, animationType: currentAnimationType }) };
+  items1[0] = _false(View, obj4);
+  const obj5 = { style: tmp6.balanceCounterContainer, children: _false(BalanceCounter, obj6) };
+  BalanceCounter = tmp3(11008).BalanceCounter;
+  if (showInitialRenderedBalance) {
+    balance = prop;
+  }
+  obj6 = { value: balance, onValueChange, onValueReached, targetTotalCounterTime: AnimationUtils.EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS, style: tmp6.balanceText };
+  items1[1] = _false(View, obj5);
+  return tmp7(View, obj2);
+});
+tmp5.displayName = "BalanceWidgetPill";
 const result = size.fileFinishedImporting("modules/virtual_currency/native/BalanceWidgetPill.tsx");
 
-export default BalanceWidgetPill;
-export { BalanceWidgetPill };
+export default tmp5;
+export const BalanceWidgetPill = tmp5;

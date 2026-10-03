@@ -1,22 +1,31 @@
-// Module ID: 17360
-// Function ID: 17361
+// Module ID: 17452
+// Function ID: 17453
 // Name: showTakeoverModal
-// Dependencies: [11114, 10626, 5048, 15536, 1981, 2]
+// Dependencies: [9784, 9792, 5093, 15598, 1987, 2]
 // Exports: showTakeoverModal
 
-// Module 17360 (showTakeoverModal)
-import asyncRequireImpl from "asyncRequireImpl" /* 1981 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5048 */;
-import Constants from "Constants" /* 11114 */;
+// Module 17452 (showTakeoverModal)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import Constants from "Constants" /* 9784 */;
+import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 9792 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const asyncRequire = tmp(1987);
 const TAKEOVER_MODAL_KEY = Constants.TAKEOVER_MODAL_KEY;
 const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/takeover_modal/showTakeoverModal.native.tsx");
 
 export const showTakeoverModal = function showTakeoverModal(arg0) {
+  let channelId;
+  let senderId;
+  let warningId;
+  let warningType;
   ({ warningId, warningType, senderId, channelId } = arg0);
+  const obj = SelfModInappropriateConversationExperiment;
+  const tmp2 = dependencyMap;
   if (obj.isEligibleForInappropriateConversationWarning({ location: "takeover-modal" })) {
     const obj3 = { warningId, warningType, senderId, channelId };
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(15536, dependencyMap.paths), obj3, TAKEOVER_MODAL_KEY);
+    const obj2 = ModalActionCreatorsDefault;
+    obj2.pushLazy(asyncRequire(15598, tmp2.paths), obj3, TAKEOVER_MODAL_KEY);
   }
 };

@@ -1,34 +1,226 @@
-// Module ID: 16102
-// Function ID: 16103
+// Module ID: 16176
+// Function ID: 16177
 // Name: useIsGuildEligibleForRoleSubscriptionsUpsell
-// Dependencies: [2062, 2066, 1372, 1074, 504, 6866, 2]
-// Exports: default
+// Dependencies: [2070, 2074, 1377, 1085, 558, 576, 504, 6764, 2]
 
-// Module 16102 (useIsGuildEligibleForRoleSubscriptionsUpsell)
-import Constants from "Constants" /* 1074 */;
-import GuildRecord from "GuildRecord" /* 2062 */;
-import GuildStore from "GuildStore" /* 2066 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 16176 (useIsGuildEligibleForRoleSubscriptionsUpsell)
+import Constants from "Constants" /* 1085 */;
+import GuildRecord from "GuildRecord" /* 2070 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import UserStore from "UserStore" /* 1377 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
 const isGuildOwner = GuildRecord.isGuildOwner;
 const GuildFeatures = Constants.GuildFeatures;
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/useIsGuildEligibleForRoleSubscriptionsUpsell.tsx");
-
-export default function useIsGuildEligibleForRoleSubscriptionsUpsell(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let currentUser;
+  let first;
+  let tmp6;
+  let tmp8;
+  let tmp9;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(12);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    class E {
+      constructor() {
+        return GuildStore.getGuild(closure_0);
+      }
+    }
+    cResult[1] = arg0;
+    cResult[2] = E;
+    tmp6 = E;
+  } else {
+    class E {
+      constructor() {
+        return GuildStore.getGuild(closure_0);
+      }
+    }
+  }
+  const tmpResult = require("get initialized");
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class E {
+      constructor() {
+        return GuildStore.getGuild(closure_0);
+      }
+    }
+    const items1 = [UserStore];
+    const fn = function _() {
+      return currentUser.getCurrentUser();
+    };
+    cResult[3] = items1;
+    cResult[4] = fn;
+    tmp9 = fn;
+    tmp8 = items1;
+  } else {
+    class E {
+      constructor() {
+        return GuildStore.getGuild(closure_0);
+      }
+    }
+    tmp9 = cResult[4];
+  }
+  const tmpResult3 = require("get initialized");
+  const stateFromStores1 = tmpResult3.useStateFromStores(tmp8, tmp9);
+  if (cResult[5] === stateFromStores) {
+    class E {
+      constructor() {
+        return GuildStore.getGuild(closure_0);
+      }
+    }
+    const tmpResult4 = require("CreatorMonetizationEligibilityExperimentUtils");
+    const isUserInCreatorMonetizationEligibleCountry = tmpResult4.useIsUserInCreatorMonetizationEligibleCountry();
+    const tmp14 = cResult[8];
+    if (stateFromStores != null) {
+      class E {
+        constructor() {
+          return GuildStore.getGuild(closure_0);
+        }
+      }
+    }
+    if (tmp14 === undefined) {
+      class E {
+        constructor() {
+          return GuildStore.getGuild(closure_0);
+        }
+      }
+    }
+    let tmp18 = tmp11;
+    if (tmp18) {
+      let hasItem;
+      class E {
+        constructor() {
+          return GuildStore.getGuild(closure_0);
+        }
+      }
+      if (stateFromStores != null) {
+        class E {
+          constructor() {
+            return GuildStore.getGuild(closure_0);
+          }
+        }
+        hasItem = obj5.has(GuildFeatures.COMMUNITY);
+      }
+      if (hasItem == null) {
+        class E {
+          constructor() {
+            return GuildStore.getGuild(closure_0);
+          }
+        }
+      }
+      tmp18 = hasItem;
+    }
+    if (tmp18) {
+      class E {
+        constructor() {
+          return GuildStore.getGuild(closure_0);
+        }
+      }
+    }
+    if (tmp18) {
+      let hasItem1;
+      class E {
+        constructor() {
+          return GuildStore.getGuild(closure_0);
+        }
+      }
+      if (stateFromStores != null) {
+        class E {
+          constructor() {
+            return GuildStore.getGuild(closure_0);
+          }
+        }
+        hasItem1 = obj6.has(GuildFeatures.CREATOR_MONETIZABLE);
+      }
+      if (!hasItem1) {
+        let hasItem2;
+        class E {
+          constructor() {
+            return GuildStore.getGuild(closure_0);
+          }
+        }
+        if (stateFromStores != null) {
+          class E {
+            constructor() {
+              return GuildStore.getGuild(closure_0);
+            }
+          }
+          hasItem2 = obj7.has(GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL);
+        }
+        hasItem1 = hasItem2;
+      }
+      if (!hasItem1) {
+        let hasItem3;
+        class E {
+          constructor() {
+            return GuildStore.getGuild(closure_0);
+          }
+        }
+        if (stateFromStores != null) {
+          class E {
+            constructor() {
+              return GuildStore.getGuild(closure_0);
+            }
+          }
+          hasItem3 = obj8.has(GuildFeatures.CREATOR_MONETIZABLE_DISABLED);
+        }
+        hasItem1 = hasItem3;
+      }
+      tmp18 = !hasItem1;
+    }
+    if (stateFromStores != null) {
+      class E {
+        constructor() {
+          return GuildStore.getGuild(closure_0);
+        }
+      }
+    }
+    cResult[8] = undefined;
+    cResult[9] = tmp11;
+    cResult[10] = isUserInCreatorMonetizationEligibleCountry;
+    cResult[11] = tmp18;
+  }
+  let tmp12 = null != stateFromStores;
+  if (tmp12) {
+    class E {
+      constructor() {
+        return GuildStore.getGuild(closure_0);
+      }
+    }
+    tmp12 = isGuildOwner(stateFromStores, stateFromStores1);
+  }
+  cResult[5] = stateFromStores;
+  cResult[6] = stateFromStores1;
+  cResult[7] = tmp12;
+}) : ((arg0) => {
+  let closure_0;
+  let currentUser;
   _require = arg0;
   const items = [GuildStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => GuildStore.getGuild(closure_0));
-  require("initialize");
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(closure_0));
+  require("get initialized");
   [][0] = UserStore;
   let tmp6 = null != stateFromStores;
+  const tmp = _require;
   if (tmp6) {
     tmp6 = isGuildOwner(stateFromStores, tmp5);
   }
-  const obj = require("initialize");
-  const isUserInCreatorMonetizationEligibleCountry = require("CreatorMonetizationEligibilityExperimentUtils").useIsUserInCreatorMonetizationEligibleCountry();
+  const tmpResult = tmp(6764);
+  const isUserInCreatorMonetizationEligibleCountry = tmpResult.useIsUserInCreatorMonetizationEligibleCountry();
   if (tmp6) {
     let flag;
     if (stateFromStores != null) {
@@ -68,4 +260,7 @@ export default function useIsGuildEligibleForRoleSubscriptionsUpsell(arg0) {
     tmp6 = !hasItem;
   }
   return tmp6;
-};
+});
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/useIsGuildEligibleForRoleSubscriptionsUpsell.tsx");
+
+export default tmp2;

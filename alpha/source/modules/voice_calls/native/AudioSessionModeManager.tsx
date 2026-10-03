@@ -1,38 +1,40 @@
-// Module ID: 17344
-// Function ID: 17345
+// Module ID: 17436
+// Function ID: 17437
 // Name: AudioSessionModeManager
-// Dependencies: [17, 2043, 5919, 4867, 502, 2044, 1993, 2098, 4864, 1980, 1074, 1364, 17345, 6725, 2]
+// Dependencies: [17, 2050, 5578, 4912, 502, 2051, 1999, 2103, 4909, 1986, 1085, 1369, 17437, 6613, 2]
 
-// Module 17344 (AudioSessionModeManager)
-import VoicePermissionManager from "VoicePermissionManager" /* 17345 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5919 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4867 */;
+// Module 17436 (AudioSessionModeManager)
+import react_native from "react-native" /* 17 */;
+import Constants from "Constants" /* 1085 */;
+import VoicePermissionManager from "VoicePermissionManager" /* 17437 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5578 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
-import MediaEngineStore from "MediaEngineStore" /* 1993 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
-import VoiceStateStore from "VoiceStateStore" /* 4864 */;
-import AppStateStore from "AppStateStore" /* 1980 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6725 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import AppStateStore from "AppStateStore" /* 1986 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
+let map;
+
+let VoiceEngine;
 function handleAVAudioSessionMode() {
+  let obj2;
   const channel = ChannelStore.getChannel(SelectedChannelStore.getVoiceChannelId());
   if (null == channel) {
     VIDEO = VoiceEngine.AVAudioSessionMode.DEFAULT;
-    let obj2 = VoiceEngine;
+    obj2 = VoiceEngine;
   } else {
-    let hasVideoResult = ApplicationStreamingStore.getAllActiveStreams().length > 0;
-    if (!hasVideoResult) {
-      hasVideoResult = VoiceStateStore.hasVideo(channel.id);
-    }
-    if (!hasVideoResult) {
-      hasVideoResult = MediaEngineStore.isVideoEnabled();
-    }
+    const hasVideoResult = ApplicationStreamingStore.getAllActiveStreams().length > 0 || VoiceStateStore.hasVideo(channel.id) || MediaEngineStore.isVideoEnabled();
     if (!hasVideoResult) {
       if (null == EmbeddedActivitiesStore.getCurrentEmbeddedActivity()) {
         const AVAudioSessionMode = VoiceEngine.AVAudioSessionMode;
+        const obj = VoicePermissionManager;
         if (obj.shouldImmediatelyRequestVoicePermissions(AuthenticationStore.getId(), channel.id)) {
           VIDEO = AVAudioSessionMode.VOICE;
           obj2 = tmp9;
@@ -40,47 +42,43 @@ function handleAVAudioSessionMode() {
           VIDEO = AVAudioSessionMode.LISTEN;
           obj2 = tmp9;
         }
-        obj = VoicePermissionManager;
       }
     }
     VIDEO = VoiceEngine.AVAudioSessionMode.VIDEO;
     obj2 = VoiceEngine;
   }
-  let tmp12 = VIDEO !== VIDEO;
-  if (tmp12) {
-    tmp12 = AppStateStore.getState() === AppStates.ACTIVE;
-  }
+  const tmp12 = VIDEO !== VIDEO && AppStateStore.getState() === AppStates.ACTIVE;
   if (tmp12) {
     const result = obj2.setAVAudioSessionMode(VIDEO);
   }
 }
-const AppStates = fn(1074).AppStates;
-const PlatformUtils = fn(1364);
+const NativeModules = react_native.NativeModules;
+const AppStates = Constants.AppStates;
 if (PlatformUtils.isAndroid()) {
-  let obj2 = {
+  let obj = {
     setAVAudioSessionMode() {
 
       },
     AVAudioSessionMode: { VOICE: "AVAudioSessionModeVoiceChat", VIDEO: "AVAudioSessionModeVideoChat", LISTEN: "AVAudioSessionModeSpokenAudio", DEFAULT: "AVAudioSessionModeDefault" }
   };
-  let VoiceEngine = obj2;
+  VoiceEngine = obj;
 } else {
-  VoiceEngine = fn(17).NativeModules.VoiceEngine;
+  VoiceEngine = NativeModules.VoiceEngine;
 }
 let VIDEO = VoiceEngine.AVAudioSessionMode.VOICE;
-const prototype = function AudioSessionModeManager() {
-  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  const result = new Map().set(ApplicationStreamingStore, handleAVAudioSessionMode);
-  const result1 = result.set(VoiceStateStore, handleAVAudioSessionMode);
-  const result2 = result1.set(MediaEngineStore, handleAVAudioSessionMode);
-  const result3 = result2.set(StageChannelRoleStore, handleAVAudioSessionMode);
-  applyArgumentsResult.stores = result3.set(EmbeddedActivitiesStore, handleAVAudioSessionMode);
-  return applyArgumentsResult;
-}.prototype;
-class prototype extends tmp2 {
+class AudioSessionModeManager extends AutomaticLifecycleManager {
+  constructor() {
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    map = new Map();
+    const result = map.set(ApplicationStreamingStore, handleAVAudioSessionMode);
+    const result1 = result.set(VoiceStateStore, handleAVAudioSessionMode);
+    const result2 = result1.set(MediaEngineStore, handleAVAudioSessionMode);
+    const result3 = result2.set(StageChannelRoleStore, handleAVAudioSessionMode);
+    applyArgumentsResult.stores = result3.set(EmbeddedActivitiesStore, handleAVAudioSessionMode);
+    return applyArgumentsResult;
+  }
 }
-const prototype1 = new prototype();
-const size = fn(2);
+const audioSessionModeManager = new AudioSessionModeManager();
 let result = size.fileFinishedImporting("modules/voice_calls/native/AudioSessionModeManager.tsx");
 
-export default prototype1;
+export default audioSessionModeManager;

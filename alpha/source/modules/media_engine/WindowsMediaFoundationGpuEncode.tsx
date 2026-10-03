@@ -1,20 +1,21 @@
-// Module ID: 13808
-// Function ID: 13809
+// Module ID: 13874
+// Function ID: 13875
 // Name: WindowsMediaFoundationGpuEncode
-// Dependencies: [1435, 2]
+// Dependencies: [1440, 2]
 // Exports: getWmfGpuEncode
 
-// Module 13808 (WindowsMediaFoundationGpuEncode)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 13874 (WindowsMediaFoundationGpuEncode)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2025-12-wmf-gpu-encode", kind: "user", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2;
+let obj = { name: "2025-12-wmf-gpu-encode", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
+obj2 = { 1: null };
 obj2[1] = { enabled: true };
-obj.variations = obj2;
 const config = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/media_engine/WindowsMediaFoundationGpuEncode.tsx");
 
 export const getWmfGpuEncode = function getWmfGpuEncode(MediaEngineStore) {
-  return config.getConfig({ location: MediaEngineStore });
+  const obj = { location: MediaEngineStore };
+  return config.getConfig(obj);
 };

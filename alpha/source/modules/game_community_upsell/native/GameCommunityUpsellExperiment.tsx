@@ -1,16 +1,16 @@
-// Module ID: 13465
-// Function ID: 13466
+// Module ID: 13525
+// Function ID: 13526
 // Name: GameCommunityUpsellExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1440, 2]
 
-// Module 13465 (GameCommunityUpsellExperiment)
-import ApexExperiment from "ApexExperiment" /* 1435 */;
+// Module 13525 (GameCommunityUpsellExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
-const obj = { name: "2026-08-game-community-add-server-entry", kind: "user", defaultConfig: { enabled: false, cardAction: "join" }, variations: null };
-const obj2 = { 1: null, 2: { enabled: true, cardAction: "join" } };
+let obj2;
+const obj = { name: "2026-08-game-community-add-server-entry", kind: "user", defaultConfig: { enabled: false, cardAction: "join" }, variations: obj2 };
+obj2 = { 1: null, 2: { enabled: true, cardAction: "join" } };
 obj2[2] = { enabled: true, cardAction: "preview" };
-obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/game_community_upsell/native/GameCommunityUpsellExperiment.tsx");
 

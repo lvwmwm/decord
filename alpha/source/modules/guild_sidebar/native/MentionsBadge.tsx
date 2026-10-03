@@ -1,19 +1,42 @@
-// Module ID: 16068
-// Function ID: 16069
+// Module ID: 16142
+// Function ID: 16143
 // Name: MentionsBadge
-// Dependencies: [19, 21, 1177, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 576, 1188, 2]
 
-// Module 16068 (MentionsBadge)
-import native from "native" /* 1177 */;
-import noop from "module_19" /* 19 */;
+// Module 16142 (MentionsBadge)
+import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_sidebar/native/MentionsBadge.tsx");
-
-export default function MentionsBadge(arg0) {
+let tmp;
+const native = tmp(1188);
+const jsx = Fragment.jsx;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let isMentionLowImportance;
+  let mentionsCount;
+  const obj = react2;
+  const cResult = obj.c(3);
+  ({ mentionsCount, isMentionLowImportance } = arg0);
+  if (cResult[0] === isMentionLowImportance) {
+    let tmp4;
+    if (cResult[1] === mentionsCount) {
+      tmp4 = cResult[2];
+    }
+    return tmp4;
+  }
+  const tmp5 = jsx(native.Badge, { value: mentionsCount, isMentionLowImportance });
+  cResult[0] = isMentionLowImportance;
+  cResult[1] = mentionsCount;
+  cResult[2] = tmp5;
+  tmp4 = tmp5;
+}) : ((arg0) => {
+  let isMentionLowImportance;
+  let mentionsCount;
   ({ mentionsCount, isMentionLowImportance } = arg0);
   return jsx(native.Badge, { value, isMentionLowImportance });
-};
+});
+const result = size.fileFinishedImporting("modules/guild_sidebar/native/MentionsBadge.tsx");
+
+export default tmp3;

@@ -1,70 +1,471 @@
-// Module ID: 15816
-// Function ID: 15817
+// Module ID: 15893
+// Function ID: 15894
 // Name: AccountDisabledOrDeletionScheduled
-// Dependencies: [19, 17, 502, 1074, 21, 4845, 576, 1485, 504, 6196, 6549, 1115, 6577, 15817, 4841, 5931, 5465, 2]
-// Exports: default
+// Dependencies: [19, 17, 502, 1085, 21, 4890, 587, 558, 576, 1490, 504, 6082, 6432, 1126, 15894, 4886, 5594, 5592, 6460, 2]
 
-// Module 15816 (AccountDisabledOrDeletionScheduled)
-import nativeDefault from "native" /* 576 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6196 */;
-import noop from "module_19" /* 19 */;
+// Module 15893 (AccountDisabledOrDeletionScheduled)
+import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6082 */;
+import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const require = fn;
-const View = fn(17).View;
-const LoginStates = fn(1074).LoginStates;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4845);
+let handleLogin, navigation;
+
+let metroImportAll;
+let metroImportDefault;
+let View = react_native.View;
+const LoginStates = Constants.LoginStates;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles((arg0) => {
+  let PX_16;
+  let num;
+  let str;
+  let str2;
+  let tmp4;
   const space = nativeDefault.space;
   if (arg0) {
-    let PX_16 = space.PX_8;
-    let tmp4 = tmp;
+    PX_16 = space.PX_8;
+    tmp4 = tmp;
   } else {
     PX_16 = space.PX_16;
     tmp4 = tmp;
   }
-  const container = { display: "flex", height: "100%", flex: 1, paddingBottom: PX_16, paddingHorizontal: null, backgroundColor: null, justifyContent: null };
-  let num = 0;
+  const container = { display: "flex", height: "100%", flex: 1, paddingBottom: PX_16, paddingHorizontal: num, backgroundColor: str, justifyContent: str2 };
+  num = 0;
   if (!arg0) {
-    num = tmp4(576).space.PX_16;
+    num = tmp4(587).space.PX_16;
   }
-  container.paddingHorizontal = num;
-  let str = "transparent";
+  str = "transparent";
   if (!arg0) {
-    str = tmp4(576).colors.BACKGROUND_BASE_LOW;
+    str = tmp4(587).colors.BACKGROUND_BASE_LOW;
   }
-  container.backgroundColor = str;
-  let str2 = "center";
+  str2 = "center";
   if (arg0) {
     str2 = "space-between";
   }
-  container.justifyContent = str2;
   return { container, image: { marginBottom: 32, alignSelf: "center" }, title: { textAlign: "center", marginBottom: 8 }, description: { lineHeight: 18, marginBottom: 24, textAlign: "center" } };
 });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/auth/native/components/AccountDisabledOrDeletionScheduled.tsx");
-
-export default function AccountDisabledOrDeletionScheduled(handleLogin) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((handleLogin) => {
+  let items1;
+  let loginStatus;
+  let ref;
+  let tmp5;
+  let tmp6;
+  const tmp = handleLogin;
+  let tmp2 = navigation;
+  let obj = handleLogin(navigation[8]);
+  const cResult = obj.c(40);
   handleLogin = handleLogin.handleLogin;
   const onReset = handleLogin.onReset;
-  let navigation;
-  navigation = handleLogin(navigation[7]).useNavigation();
-  let obj = handleLogin(navigation[7]);
+  const obj2 = handleLogin(navigation[9]);
+  navigation = obj2.useNavigation();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AuthenticationStore];
+    const fn = function v() {
+      return loginStatus.getLoginStatus();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const tmpResult = tmp(tmp2[10]);
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
+  View = stateFromStores.useRef(null);
+  const obj4 = stateFromStores;
+  if (cResult[2] === stateFromStores) {
+    let tmp9;
+    let tmp10;
+    if (cResult[3] === navigation) {
+      tmp9 = cResult[4];
+      tmp10 = cResult[5];
+    }
+    const effect = obj4.useEffect(tmp9, tmp10);
+    if (cResult[6] !== onReset) {
+      class D {
+        constructor() {
+          if (null == onReset) {
+            const obj = AuthenticationActionCreatorsDefault;
+            obj.loginReset();
+          } else {
+            tmp();
+          }
+        }
+      }
+      cResult[6] = onReset;
+      cResult[7] = D;
+    } else {
+      class D {
+        constructor() {
+          if (null == onReset) {
+            const obj = AuthenticationActionCreatorsDefault;
+            obj.loginReset();
+          } else {
+            tmp();
+          }
+        }
+      }
+    }
+    if (cResult[8] !== handleLogin) {
+      class E {
+        constructor() {
+          const credentials = AuthenticationStore.getCredentials();
+          const password = credentials.password;
+          let str = "";
+          const login = credentials.login;
+          const tmp2 = handleLogin;
+          if (undefined !== password) {
+            str = password;
+          }
+          tmp2(login, str, true);
+        }
+      }
+      cResult[8] = handleLogin;
+      cResult[9] = E;
+    } else {
+      class E {
+        constructor() {
+          const credentials = AuthenticationStore.getCredentials();
+          const password = credentials.password;
+          let str = "";
+          const login = credentials.login;
+          const tmp2 = handleLogin;
+          if (undefined !== password) {
+            str = password;
+          }
+          tmp2(login, str, true);
+        }
+      }
+    }
+    const tmp16 = closure_9(onReset(tmp2[12])());
+    if (cResult[10] !== (stateFromStores === LoginStates.ACCOUNT_DISABLED)) {
+      class E {
+        constructor() {
+          const credentials = AuthenticationStore.getCredentials();
+          const password = credentials.password;
+          let str = "";
+          const login = credentials.login;
+          const tmp2 = handleLogin;
+          if (undefined !== password) {
+            str = password;
+          }
+          tmp2(login, str, true);
+        }
+      }
+      const string = tmp20.string;
+      const t = tmp(tmp2[13]).t;
+      if (stateFromStores === LoginStates.ACCOUNT_DISABLED) {
+        class E {
+          constructor() {
+            const credentials = AuthenticationStore.getCredentials();
+            const password = credentials.password;
+            let str = "";
+            const login = credentials.login;
+            const tmp2 = handleLogin;
+            if (undefined !== password) {
+              str = password;
+            }
+            tmp2(login, str, true);
+          }
+        }
+      } else {
+        class E {
+          constructor() {
+            const credentials = AuthenticationStore.getCredentials();
+            const password = credentials.password;
+            let str = "";
+            const login = credentials.login;
+            const tmp2 = handleLogin;
+            if (undefined !== password) {
+              str = password;
+            }
+            tmp2(login, str, true);
+          }
+        }
+      }
+      cResult[10] = stateFromStores === LoginStates.ACCOUNT_DISABLED;
+      cResult[11] = tmp21;
+    } else {
+      class E {
+        constructor() {
+          const credentials = AuthenticationStore.getCredentials();
+          const password = credentials.password;
+          let str = "";
+          const login = credentials.login;
+          const tmp2 = handleLogin;
+          if (undefined !== password) {
+            str = password;
+          }
+          tmp2(login, str, true);
+        }
+      }
+    }
+    if (cResult[12] !== (stateFromStores === LoginStates.ACCOUNT_DISABLED)) {
+      class E {
+        constructor() {
+          const credentials = AuthenticationStore.getCredentials();
+          const password = credentials.password;
+          let str = "";
+          const login = credentials.login;
+          const tmp2 = handleLogin;
+          if (undefined !== password) {
+            str = password;
+          }
+          tmp2(login, str, true);
+        }
+      }
+      const string2 = tmp23.string;
+      const t2 = tmp(tmp2[13]).t;
+      if (stateFromStores === LoginStates.ACCOUNT_DISABLED) {
+        class E {
+          constructor() {
+            const credentials = AuthenticationStore.getCredentials();
+            const password = credentials.password;
+            let str = "";
+            const login = credentials.login;
+            const tmp2 = handleLogin;
+            if (undefined !== password) {
+              str = password;
+            }
+            tmp2(login, str, true);
+          }
+        }
+      } else {
+        class E {
+          constructor() {
+            const credentials = AuthenticationStore.getCredentials();
+            const password = credentials.password;
+            let str = "";
+            const login = credentials.login;
+            const tmp2 = handleLogin;
+            if (undefined !== password) {
+              str = password;
+            }
+            tmp2(login, str, true);
+          }
+        }
+      }
+      cResult[12] = stateFromStores === LoginStates.ACCOUNT_DISABLED;
+      cResult[13] = tmp24;
+    } else {
+      class E {
+        constructor() {
+          const credentials = AuthenticationStore.getCredentials();
+          const password = credentials.password;
+          let str = "";
+          const login = credentials.login;
+          const tmp2 = handleLogin;
+          if (undefined !== password) {
+            str = password;
+          }
+          tmp2(login, str, true);
+        }
+      }
+    }
+    const _Symbol = Symbol;
+    if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+      class E {
+        constructor() {
+          const credentials = AuthenticationStore.getCredentials();
+          const password = credentials.password;
+          let str = "";
+          const login = credentials.login;
+          const tmp2 = handleLogin;
+          if (undefined !== password) {
+            str = password;
+          }
+          tmp2(login, str, true);
+        }
+      }
+      cResult[14] = tmp26;
+    } else {
+      class E {
+        constructor() {
+          const credentials = AuthenticationStore.getCredentials();
+          const password = credentials.password;
+          let str = "";
+          const login = credentials.login;
+          const tmp2 = handleLogin;
+          if (undefined !== password) {
+            str = password;
+          }
+          tmp2(login, str, true);
+        }
+      }
+    }
+    const container = tmp16.container;
+    if (cResult[15] !== tmp16.image) {
+      class E {
+        constructor() {
+          const credentials = AuthenticationStore.getCredentials();
+          const password = credentials.password;
+          let str = "";
+          const login = credentials.login;
+          const tmp2 = handleLogin;
+          if (undefined !== password) {
+            str = password;
+          }
+          tmp2(login, str, true);
+        }
+      }
+      const obj3 = { style: tmp16.image };
+      cResult[15] = tmp16.image;
+      cResult[16] = closure_7(tmp(tmp2[14]).WumpTrash, obj3);
+      const tmp28 = closure_7(tmp(tmp2[14]).WumpTrash, obj3);
+    } else {
+      class E {
+        constructor() {
+          const credentials = AuthenticationStore.getCredentials();
+          const password = credentials.password;
+          let str = "";
+          const login = credentials.login;
+          const tmp2 = handleLogin;
+          if (undefined !== password) {
+            str = password;
+          }
+          tmp2(login, str, true);
+        }
+      }
+    }
+    if (cResult[17] === tmp16.title) {
+      class E {
+        constructor() {
+          const credentials = AuthenticationStore.getCredentials();
+          const password = credentials.password;
+          let str = "";
+          const login = credentials.login;
+          const tmp2 = handleLogin;
+          if (undefined !== password) {
+            str = password;
+          }
+          tmp2(login, str, true);
+        }
+      }
+      if (cResult[20] === tmp22) {
+        class E {
+          constructor() {
+            const credentials = AuthenticationStore.getCredentials();
+            const password = credentials.password;
+            let str = "";
+            const login = credentials.login;
+            const tmp2 = handleLogin;
+            if (undefined !== password) {
+              str = password;
+            }
+            tmp2(login, str, true);
+          }
+        }
+        if (cResult[23] === tmp27) {
+          class E {
+            constructor() {
+              const credentials = AuthenticationStore.getCredentials();
+              const password = credentials.password;
+              let str = "";
+              const login = credentials.login;
+              const tmp2 = handleLogin;
+              if (undefined !== password) {
+                str = password;
+              }
+              tmp2(login, str, true);
+            }
+          }
+        }
+        const obj5 = { children: items1 };
+        items1 = [tmp27, tmp29, tmp32];
+        cResult[23] = tmp27;
+        cResult[24] = tmp29;
+        cResult[25] = tmp32;
+        cResult[26] = closure_8(View, obj5);
+        const tmp38 = closure_8(View, obj5);
+      }
+      const obj6 = { style: tmp16.description, variant: "text-sm/medium", color: "text-default", children: tmp22 };
+      cResult[20] = tmp22;
+      cResult[21] = tmp16.description;
+      cResult[22] = closure_7(tmp(tmp2[15]).Text, obj6);
+      const tmp34 = closure_7(tmp(tmp2[15]).Text, obj6);
+    }
+    const obj7 = { style: tmp16.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp19 };
+    cResult[17] = tmp16.title;
+    cResult[18] = tmp19;
+    const tmp31 = closure_7(tmp(tmp2[15]).Text, obj7);
+    class C {
+      constructor() {
+        if (ref.current !== stateFromStores) {
+          if (null != ref.current) {
+            const tmp4 = stateFromStores !== LoginStates.ACCOUNT_SCHEDULED_FOR_DELETION && stateFromStores !== LoginStates.ACCOUNT_DISABLED;
+            if (tmp4) {
+              navigation.pop();
+            }
+          } else {
+            ref.current = stateFromStores;
+          }
+        }
+      }
+    }
+    cResult[19] = tmp31;
+  }
+  class C {
+    constructor() {
+      if (ref.current !== stateFromStores) {
+        if (null != ref.current) {
+          const tmp4 = stateFromStores !== LoginStates.ACCOUNT_SCHEDULED_FOR_DELETION && stateFromStores !== LoginStates.ACCOUNT_DISABLED;
+          if (tmp4) {
+            navigation.pop();
+          }
+        } else {
+          ref.current = stateFromStores;
+        }
+      }
+    }
+  }
+  const items2 = [stateFromStores, navigation];
+  cResult[2] = stateFromStores;
+  cResult[3] = navigation;
+  cResult[4] = C;
+  cResult[5] = items2;
+  tmp10 = items2;
+  tmp9 = C;
+}) : ((handleLogin) => {
+  let ButtonGroup;
+  let intl3;
+  let intl4;
+  let items4;
+  let items5;
+  let items6;
+  let loginStatus;
+  let obj10;
+  let obj4;
+  let string2Result;
+  let stringResult;
+  handleLogin = handleLogin.handleLogin;
+  const onReset = handleLogin.onReset;
+  navigation = undefined;
+  const tmp = handleLogin;
+  let tmp2 = navigation;
+  let obj = handleLogin(navigation[9]);
+  navigation = obj.useNavigation();
   const items = [AuthenticationStore];
-  const stateFromStores = handleLogin(navigation[8]).useStateFromStores(items, () => loginStatus.getLoginStatus());
+  const obj2 = handleLogin(navigation[10]);
+  const stateFromStores = obj2.useStateFromStores(items, () => loginStatus.getLoginStatus());
   const ref = stateFromStores.useRef(null);
   const items1 = [stateFromStores, navigation];
   const effect = stateFromStores.useEffect(() => {
     if (ref.current !== stateFromStores) {
-      if (null != tmp.current) {
+      if (null != ref.current) {
+        const tmp4 = stateFromStores !== LoginStates.ACCOUNT_SCHEDULED_FOR_DELETION && stateFromStores !== LoginStates.ACCOUNT_DISABLED;
         if (tmp4) {
           navigation.pop();
         }
-        tmp4 = tmp2 !== LoginStates.ACCOUNT_SCHEDULED_FOR_DELETION && tmp2 !== LoginStates.ACCOUNT_DISABLED;
       } else {
-        tmp.current = tmp2;
+        ref.current = stateFromStores;
       }
     }
   }, items1);
@@ -72,7 +473,8 @@ export default function AccountDisabledOrDeletionScheduled(handleLogin) {
   const items3 = [handleLogin];
   const callback = stateFromStores.useCallback(() => {
     if (null == onReset) {
-      AuthenticationActionCreatorsDefault.loginReset();
+      const obj = AuthenticationActionCreatorsDefault;
+      obj.loginReset();
     } else {
       tmp();
     }
@@ -81,51 +483,57 @@ export default function AccountDisabledOrDeletionScheduled(handleLogin) {
     const credentials = AuthenticationStore.getCredentials();
     const password = credentials.password;
     let str = "";
+    const login = credentials.login;
+    const tmp2 = handleLogin;
     if (undefined !== password) {
       str = password;
     }
-    handleLogin(credentials.login, str, true);
+    tmp2(login, str, true);
   }, items3);
-  const tmp9 = closure_9(onReset(navigation[10])());
-  const intl = handleLogin(navigation[11]).intl;
+  const tmp9 = closure_9(onReset(navigation[12])());
+  const intl = handleLogin(navigation[13]).intl;
   const string = intl.string;
-  const t = handleLogin(navigation[11]).t;
+  const t = handleLogin(navigation[13]).t;
+  const tmp8 = onReset;
   if (stateFromStores === LoginStates.ACCOUNT_DISABLED) {
-    let stringResult = string(t["j3rC+U"]);
+    stringResult = string(t["j3rC+U"]);
   } else {
     stringResult = string(t.ZFWofo);
   }
-  const intl2 = tmp(tmp2[11]).intl;
+  const intl2 = tmp(tmp2[13]).intl;
   const string2 = intl2.string;
-  const t2 = tmp(tmp2[11]).t;
+  const t2 = tmp(tmp2[13]).t;
   if (stateFromStores === LoginStates.ACCOUNT_DISABLED) {
-    let string2Result = string2(t2["6eNTWe"]);
+    string2Result = string2(t2["6eNTWe"]);
   } else {
     string2Result = string2(t2["pCBti+"]);
   }
-  const obj3 = { contentStyle: { flexGrow: 1 }, children: null };
-  const obj4 = { style: tmp9.container, children: null };
-  const obj5 = { children: null };
-  const obj2 = handleLogin(navigation[8]);
-  const items4 = [closure_7(handleLogin(navigation[13]).WumpTrash, { style: tmp9.image }), closure_7(handleLogin(navigation[14]).Text, { style: tmp9.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult }), closure_7(handleLogin(navigation[14]).Text, { style: tmp9.description, variant: "text-sm/medium", color: "text-default", children: string2Result })];
-  obj5.children = items4;
-  const items5 = [closure_8(ref, obj5), ];
-  const obj9 = { children: null };
-  const obj10 = { children: null };
-  const obj11 = { variant: "primary", text: null, onPress: null };
-  const intl3 = tmp(tmp2[11]).intl;
-  obj11.text = intl3.string(handleLogin(navigation[11]).t.JhDw5o);
-  obj11.onPress = callback;
-  const items6 = [closure_7(handleLogin(navigation[16]).Button, obj11), ];
-  const obj12 = { variant: "secondary", text: null, onPress: null };
-  const intl4 = tmp(tmp2[11]).intl;
-  obj12.text = intl4.string(handleLogin(navigation[11]).t.v51oiN);
-  obj12.onPress = callback1;
-  items6[1] = closure_7(handleLogin(navigation[16]).Button, obj12);
-  obj10.children = items6;
-  obj9.children = closure_8(handleLogin(navigation[15]).ButtonGroup, obj10);
+  const obj3 = { contentStyle: { flexGrow: 1 }, children: closure_8(ref, obj4) };
+  const obj5 = { children: items4 };
+  items4 = [, , ];
+  obj4 = { style: tmp9.container, children: items5 };
+  const obj6 = { style: tmp9.image };
+  const tmp8Result = tmp8(tmp2[18]);
+  items4[0] = closure_7(tmp(tmp2[14]).WumpTrash, obj6);
+  const obj7 = { style: tmp9.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult };
+  items4[1] = closure_7(tmp(tmp2[15]).Text, obj7);
+  const obj8 = { style: tmp9.description, variant: "text-sm/medium", color: "text-default", children: string2Result };
+  items4[2] = closure_7(tmp(tmp2[15]).Text, obj8);
+  items5 = [closure_8(ref, obj5), ];
+  const obj9 = { children: closure_8(ButtonGroup, obj10) };
+  obj10 = { children: items6 };
+  ButtonGroup = tmp(tmp2[17]).ButtonGroup;
+  const obj11 = { variant: "primary", text: intl3.string(tmp(tmp2[13]).t.JhDw5o), onPress: callback };
+  const Button = tmp(tmp2[16]).Button;
+  intl3 = tmp(tmp2[13]).intl;
+  items6 = [closure_7(Button, obj11), ];
+  const obj12 = { variant: "secondary", text: intl4.string(tmp(tmp2[13]).t.v51oiN), onPress: callback1 };
+  const Button2 = tmp(tmp2[16]).Button;
+  intl4 = tmp(tmp2[13]).intl;
+  items6[1] = closure_7(Button2, obj12);
   items5[1] = closure_7(ref, obj9);
-  obj4.children = items5;
-  obj3.children = closure_8(ref, obj4);
-  return closure_7(onReset(navigation[12]), obj3);
-};
+  return closure_7(tmp8Result, obj3);
+});
+const result = size.fileFinishedImporting("modules/auth/native/components/AccountDisabledOrDeletionScheduled.tsx");
+
+export default tmp3;

@@ -1,17 +1,15 @@
 // Module ID: 14118
 // Function ID: 14119
-// Dependencies: []
-// Exports: default
+// Dependencies: [14066, 14085, 14075]
 
 // Module 14118
+import _mod14066 from "module_14066" /* 14066 */;
+import _mod14075 from "module_14075" /* 14075 */;
+import module_14085 from "module_14085" /* 14085 */;
 
-export default () => (arg0) => {
-  closure_0 = arg0;
-  return {
-    features: {
-      clear() {
-        return closure_0.send("clear");
-      }
-    }
-  };
-};
+let closure_0 = _mod14066(Function.toString);
+if (!module_14085(_mod14075.inspectSource)) {
+  _mod14075.inspectSource = (arg0) => closure_0(arg0);
+}
+
+export default _mod14075.inspectSource;

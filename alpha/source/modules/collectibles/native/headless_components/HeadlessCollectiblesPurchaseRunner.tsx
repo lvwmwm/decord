@@ -1,42 +1,102 @@
-// Module ID: 12943
-// Function ID: 12944
+// Module ID: 12998
+// Function ID: 12999
 // Name: HeadlessCollectiblesPurchaseRunner
-// Dependencies: [19, 7032, 12944, 2]
-// Exports: HeadlessCollectiblesPurchaseRunner
+// Dependencies: [19, 6930, 558, 576, 12999, 2]
 
-// Module 12943 (HeadlessCollectiblesPurchaseRunner)
-import useHandleBuyNowDefault from "useHandleBuyNow" /* 12944 */;
-import noop from "module_19" /* 19 */;
+// Module 12998 (HeadlessCollectiblesPurchaseRunner)
+import react2 from "react" /* 576 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 6930 */;
+import useHandleBuyNowDefault from "useHandleBuyNow" /* 12999 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-const useNativeCheckoutStore = fn(7032).useNativeCheckoutStore;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/collectibles/native/headless_components/HeadlessCollectiblesPurchaseRunner.tsx");
-
-export const HeadlessCollectiblesPurchaseRunner = function HeadlessCollectiblesPurchaseRunner(attempt) {
+const useNativeCheckoutStore = NativeCheckoutStore.useNativeCheckoutStore;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let analyticsLocations;
+  let attempt;
+  let first;
+  let onBuySettled;
+  let product;
+  let stageCollectibleChangeForEditProfile;
+  const obj = react2;
+  const cResult = obj.c(14);
+  ({ product, attempt } = arg0);
+  ({ analyticsLocations, onBuySettled, stageCollectibleChangeForEditProfile } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function n(orderRecord) {
+      return orderRecord.orderRecord;
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  const tmp4 = useNativeCheckoutStore(first);
+  let closure_1 = tmp4;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor(orderRequired) {
+        return orderRequired.orderRequired;
+      }
+    }
+    cResult[1] = C;
+  } else {
+    class C {
+      constructor(orderRequired) {
+        return orderRequired.orderRequired;
+      }
+    }
+  }
+  let closure_2 = tmp3(tmp5);
+  useNativeCheckoutStore(tmp5);
+  if (tmp4 != null) {
+    class C {
+      constructor(orderRequired) {
+        return orderRequired.orderRequired;
+      }
+    }
+  }
+  if (cResult[2] === analyticsLocations) {
+    class C {
+      constructor(orderRequired) {
+        return orderRequired.orderRequired;
+      }
+    }
+  }
+  const obj2 = { product, analyticsLocations, orderId: undefined, onBuySettled, stageCollectibleChangeForEditProfile };
+  cResult[2] = analyticsLocations;
+  cResult[3] = onBuySettled;
+  cResult[4] = product;
+  cResult[5] = stageCollectibleChangeForEditProfile;
+  cResult[6] = undefined;
+  cResult[7] = obj2;
+}) : ((attempt) => {
+  let analyticsLocations;
+  let id;
+  let onBuySettled;
+  let product;
+  let stageCollectibleChangeForEditProfile;
   attempt = attempt.attempt;
   let handleBuyNow;
+  let closure_4;
   ({ product, analyticsLocations, onBuySettled, stageCollectibleChangeForEditProfile } = attempt);
   const tmp = useNativeCheckoutStore((orderRecord) => orderRecord.orderRecord);
-  closure_1 = tmp;
+  let closure_1 = tmp;
   const tmp2 = useNativeCheckoutStore((orderRequired) => orderRequired.orderRequired);
-  closure_2 = tmp2;
-  const obj = { product, analyticsLocations, orderId: null, onBuySettled: null, stageCollectibleChangeForEditProfile: null };
-  let id;
+  let closure_2 = tmp2;
+  const obj = { product, analyticsLocations, orderId: id, onBuySettled, stageCollectibleChangeForEditProfile };
+  id = undefined;
+  let tmp3 = useHandleBuyNowDefault;
   if (tmp != null) {
     id = tmp.id;
   }
-  obj.orderId = id;
-  obj.onBuySettled = onBuySettled;
-  obj.stageCollectibleChangeForEditProfile = stageCollectibleChangeForEditProfile;
-  handleBuyNow = useHandleBuyNowDefault(obj).handleBuyNow;
-  noop.useRef(0);
+  handleBuyNow = tmp3(obj).handleBuyNow;
+  closure_4 = react.useRef(0);
   const items = [attempt, handleBuyNow, tmp, tmp2];
-  const effect = noop.useEffect(() => {
+  const effect = react.useEffect(() => {
     if (ref.current !== attempt) {
-      let tmp3 = closure_2;
-      if (closure_2) {
-        tmp3 = null == closure_1;
-      }
+      const tmp3 = closure_2 && null == closure_1;
       if (!tmp3) {
         tmp.current = tmp2;
         handleBuyNow();
@@ -44,4 +104,7 @@ export const HeadlessCollectiblesPurchaseRunner = function HeadlessCollectiblesP
     }
   }, items);
   return null;
-};
+});
+const result = size.fileFinishedImporting("modules/collectibles/native/headless_components/HeadlessCollectiblesPurchaseRunner.tsx");
+
+export const HeadlessCollectiblesPurchaseRunner = tmp2;

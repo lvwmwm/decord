@@ -1,60 +1,123 @@
-// Module ID: 15833
-// Function ID: 15834
+// Module ID: 15910
+// Function ID: 15911
 // Name: RemoteAuthUtils
-// Dependencies: [32, 5, 1386, 15831, 2]
+// Dependencies: [32, 5, 1391, 15908, 2]
 // Exports: base64Decode, base64Encode, decodeEncodedUserRecord
 
-// Module 15833 (RemoteAuthUtils)
-import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 15831 */;
-import _slicedToArray from "module_32" /* 32 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserRecord from "UserRecord" /* 1386 */;
+// Module 15910 (RemoteAuthUtils)
+import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 15908 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import UserRecord from "UserRecord" /* 1391 */;
+import size from "module_2" /* 2 */;
 
-let closure_5 = async function _decodeEncodedUserRecord() {
-  closure_3 = tmp2;
-  closure_2 = tmp5;
-  closure_130_0 = closure_1;
-  closure_130_0 = await RemoteAuthCryptoDefault.decryptEncodedCiphertext(closure_0, closure_130_0);
-  closure_130_1 = arg1.match(/^(\d+):(\d{1,4}):([a-zA-Z0-9_]+):(.*)$/);
-  if (null == closure_130_1) {
-    const _Error = Error;
-    const error = new Error("Invalid encoded user record.");
-    throw error;
-  }
-  closure_130_2 = closure_131_2(closure_130_1, 5);
-  closure_130_3 = closure_130_2[1];
-  closure_130_4 = closure_130_2[2];
-  closure_130_5 = closure_130_2[3];
-  closure_130_6 = closure_130_2[4];
-  const obj7 = { id: closure_130_3, discriminator: closure_130_4, avatar: null, username: null };
-  let tmp7 = null;
-  if ("0" !== closure_130_5) {
-    tmp7 = closure_130_5;
-  }
-  obj7.avatar = tmp7;
-  obj7.username = closure_130_6;
-  return new closure_131_4(obj7);
+let c4, c5;
+
+let obj = function _decodeEncodedUserRecord() {
+  obj = _asyncToGenerator(async function(arg0, value) {
+    let obj3;
+    let tmp6;
+    let closure_0 = arg0;
+    let closure_1 = value;
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: "IconComponent" };
+      }
+    } else {
+      try {
+        let closure_2;
+        let id;
+        let discriminator;
+        let closure_5;
+        let username;
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            closure_0 = closure_1;
+            closure_1 = undefined;
+            closure_2 = undefined;
+            id = undefined;
+            discriminator = undefined;
+            closure_5 = undefined;
+            username = undefined;
+            c4 = 1;
+            c5 = 1;
+            const obj5 = { value: obj3.decryptEncodedCiphertext(closure_0, closure_0), done: false };
+            obj3 = RemoteAuthCryptoDefault;
+            return obj5;
+          }
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c5 = 3;
+          const obj6 = { value, done: true };
+          return obj6;
+        } else {
+          closure_0 = value;
+          closure_1 = value.match(/^(\d+):(\d{1,4}):([a-zA-Z0-9_]+):(.*)$/);
+          if (null == closure_1) {
+            const _Error = Error;
+            const self3 = this;
+            const self4 = this;
+            const error = new Error("Invalid encoded user record.");
+            throw error;
+          } else {
+            closure_2 = closure_131_2(closure_1, 5);
+            id = closure_2[1];
+            discriminator = closure_2[2];
+            closure_5 = closure_2[3];
+            username = closure_2[4];
+            const obj7 = { id, discriminator, avatar: tmp6, username };
+            tmp6 = null;
+            const tmp35 = closure_131_4;
+            if ("0" !== closure_5) {
+              tmp6 = closure_5;
+            }
+            const self = this;
+            const self2 = this;
+            const tmp352 = new tmp35(obj7);
+            c5 = 3;
+            obj = { value: tmp352, done: true };
+            return obj;
+          }
+        }
+      } catch (tmp20) {
+        c5 = 3;
+        throw tmp20;
+      }
+    }
+  });
+  return obj(...arguments);
 };
-const size = fn(2);
 const result = size.fileFinishedImporting("modules/remote_auth/RemoteAuthUtils.tsx");
 
 export const decodeEncodedUserRecord = function decodeEncodedUserRecord() {
-  const self = this;
-  const apply = closure_5.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
+  return obj(...arguments);
 };
 export const base64Encode = function base64Encode(arg0) {
   const uint8Array = new Uint8Array(arg0);
   const items = [...uint8Array];
-  const str = btoa(String.fromCharCode.apply(items));
-  const str2 = btoa(String.fromCharCode.apply(items)).replace(/\//g, "_");
-  return btoa(String.fromCharCode.apply(items)).replace(/\//g, "_").replace(/\+/g, "-").replace(/={1,2}$/, "");
+  const str = btoa(fromCharCode.apply(items));
+  const str2 = str.replace(/\//g, "_");
+  const str3 = str2.replace(/\+/g, "-");
+  return str3.replace(/={1,2}$/, "");
 };
-export const base64Decode = function base64Decode(match) {
-  return Uint8Array.from(atob(match), (str) => str.charCodeAt(0));
+export const base64Decode = function base64Decode(placeholder) {
+  return Uint8Array.from(atob(placeholder), (str) => str.charCodeAt(0));
 };

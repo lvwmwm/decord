@@ -1,19 +1,19 @@
-// Module ID: 14503
-// Function ID: 14504
+// Module ID: 14538
+// Function ID: 14539
 // Name: AgeGroupConfirmSetting
-// Dependencies: [7590, 11215, 14501, 2]
+// Dependencies: [7634, 11129, 14536, 2]
 
-// Module 14503 (AgeGroupConfirmSetting)
-import SettingsConstants from "SettingsConstants" /* 7590 */;
-import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 14501 */;
-import SettingBuilders from "SettingBuilders" /* 11215 */;
+// Module 14538 (AgeGroupConfirmSetting)
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 14536 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
-const obj = {};
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const createPressable = SettingBuilders.createPressable;
+const obj = { parent: MobileUserSettings.ACCOUNT_AGE_GROUP_ASSIGNED_ADULT, usePredicate: AgeGroupScreenRowProps.useShowAssignedAdultAgeGroupRow };
 const merged = Object.assign(AgeGroupScreenRowProps.AGE_GROUP_CONFIRM_ROW_PROPS);
-obj.parent = SettingsConstants.MobileUserSettings.ACCOUNT_AGE_GROUP_ASSIGNED_ADULT;
-obj.usePredicate = AgeGroupScreenRowProps.useShowAssignedAdultAgeGroupRow;
-const pressable = SettingBuilders.createPressable(obj);
+const pressable = createPressable(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AgeGroupConfirmSetting.tsx");
 
 export default pressable;

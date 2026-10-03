@@ -1,130 +1,69 @@
 // Module ID: 7339
 // Function ID: 7340
-// Dependencies: [7338]
+// Dependencies: [7340, 7341]
 
 // Module 7339
-import Iterator from "Iterator" /* 7338 */;
+import _mod7340 from "module_7340" /* 7340 */;
+import _mod7341 from "module_7341" /* 7341 */;
 
-class Node {
-  constructor(arg0) {
-    return;
-  }
-  get_child(arg0) {
-    self = this;
-    return global ? self.right : self.left;
-  }
-  set_child(arg0, arg1) {
-    self = this;
-    if (global) {
-      self.right = require;
-    } else {
-      self.left = require;
-    }
-    return;
-  }
-}
-class BinTree {
-  constructor(arg0) {
-    return;
-  }
-  insert(arg0) {
-    self = this;
-    if (null === this._root) {
-      tmp10 = Node;
-      obj1 = Object.create(Node.prototype);
-      obj3 = {};
-      obj3.data = global;
-      obj3.left = null;
-      obj3.right = null;
-      self._root = obj3;
-      self.size = self.size + 1;
-      flag3 = true;
-      return true;
-    } else {
-      _root = self._root;
-      num2 = 0;
-      tmp5 = null;
-      num = 0;
-      tmp2 = tmp5;
-      tmp3 = num;
-      while (null !== _root) {
-        if (0 === self._comparator(_root.data, global)) {
-          flag = false;
-          return false;
-        } else {
-          tmp4 = self._comparator(_root.data, global) < 0;
-          _root = _root.get_child(tmp4);
-          tmp5 = tmp;
-          num = tmp4;
-          continue;
-        }
-      }
-      tmp6 = Node;
-      obj4 = Object.create(Node.prototype);
-      obj = {};
-      obj.data = global;
-      obj.left = null;
-      obj.right = null;
-      set_childResult = tmp5.set_child(num, obj);
-      tmp9 = globalThis;
-      flag2 = true;
-      globalThis.ret = true;
-      self.size = self.size + 1;
-      return true;
-    }
-  }
-  remove(arg0) {
-    self = this;
-    if (null === this._root) {
-      flag2 = false;
-      return false;
-    } else {
-      tmp9 = Node;
-      obj1 = Object.create(Node.prototype);
-      obj5 = {};
-      obj5.data = undefined;
-      obj5.left = null;
-      obj5.right = null;
-      obj5.right = self._root;
-      num2 = 1;
-      num3 = 0;
-      num = 1;
-      tmp5 = null;
-      obj2 = obj5;
-      tmp6 = null;
-      obj3 = obj5;
-      tmp7 = null;
-      if (null !== obj5.get_child(1)) {
-        do {
-          get_childResult = obj2.get_child(num);
-          _comparatorResult = self._comparator(global, get_childResult.data);
-          tmp2 = _comparatorResult > 0;
-          tmp3 = tmp5;
-          tmp4 = obj2;
-          if (0 === _comparatorResult) {
-            tmp3 = get_childResult;
-          }
-          tmp5 = tmp3;
-          num = tmp2;
-          obj2 = get_childResult;
-          tmp6 = tmp3;
-          tmp7 = tmp4;
-          obj3 = get_childResult;
-        } while (null !== get_childResult.get_child(tmp2));
-      }
-      flag = null !== tmp6;
-      if (flag) {
-        tmp6.data = obj3.data;
-        ({ set_child, right } = tmp7);
-        set_childResult = set_child(right === obj3, obj3.get_child(null === obj3.left));
-        self._root = obj5.right;
-        self.size = self.size - 1;
-        flag = true;
-      }
-      return flag;
-    }
-  }
-}
-BinTree.prototype = new Iterator();
+let hasOwnProperty;
 
-export default BinTree;
+const self = this;
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let tmp2 = globalThis;
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
+    }
+    closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let closure_0 = tmp;
+let tmp3 = self && self.__exportStar || ((obj, arg1) => {
+  for (const key10007 in obj) {
+    let callResult = "default" === key10007;
+    if (!callResult) {
+      let _Object = Object;
+      hasOwnProperty = Object.prototype.hasOwnProperty;
+      callResult = hasOwnProperty.call(arg1, key10007);
+    }
+    if (callResult) {
+      continue;
+    } else {
+      let tmp3 = closure_0(arg1, obj, key10007);
+      continue;
+    }
+    continue;
+  }
+});
+tmp3(_mod7340, exports);
+tmp3(_mod7341, exports);

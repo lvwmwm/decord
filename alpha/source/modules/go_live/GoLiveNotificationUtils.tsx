@@ -1,14 +1,14 @@
-// Module ID: 15263
-// Function ID: 15264
+// Module ID: 15319
+// Function ID: 15320
 // Name: GoLiveNotificationUtils
-// Dependencies: [1074, 4511, 2021, 1241, 2]
+// Dependencies: [1085, 4522, 2028, 1252, 2]
 // Exports: onGoLiveNotificationSettingsChanged
 
-// Module 15263 (GoLiveNotificationUtils)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import UserSettings from "UserSettings" /* 2021 */;
-import NotificationConstants from "NotificationConstants" /* 4511 */;
+// Module 15319 (GoLiveNotificationUtils)
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import NotificationConstants from "NotificationConstants" /* 4522 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -18,5 +18,7 @@ const result = size.fileFinishedImporting("modules/go_live/GoLiveNotificationUti
 export const onGoLiveNotificationSettingsChanged = function onGoLiveNotificationSettingsChanged(go_live_notifications) {
   const StreamNotificationsEnabled = UserSettings.StreamNotificationsEnabled;
   StreamNotificationsEnabled.updateSetting(go_live_notifications);
-  AnalyticsUtilsDefault.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, { update_type: constants.ACCOUNT, go_live_notifications });
+  const obj = AnalyticsUtilsDefault;
+  const obj2 = { update_type: constants.ACCOUNT, go_live_notifications };
+  obj.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, obj2);
 };

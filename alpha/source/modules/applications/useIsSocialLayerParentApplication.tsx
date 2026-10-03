@@ -1,23 +1,45 @@
-// Module ID: 8713
-// Function ID: 8714
+// Module ID: 8725
+// Function ID: 8726
 // Name: useIsSocialLayerParentApplication
-// Dependencies: [19, 1074, 8509, 2]
-// Exports: default, getIsSocialLayerParentApplication
+// Dependencies: [19, 1085, 8726, 558, 576, 2]
+// Exports: getIsSocialLayerParentApplication
 
-// Module 8713 (useIsSocialLayerParentApplication)
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8509 */;
-import noop from "module_19" /* 19 */;
+// Module 8725 (useIsSocialLayerParentApplication)
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1085 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8726 */;
+import react from "react" /* 19 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-const ApplicationFlags = fn(1074).ApplicationFlags;
-const size = fn(2);
+const ApplicationFlags = Constants.ApplicationFlags;
+function getIsSocialLayerParentApplication(application) {
+  const obj = ApplicationFlagUtils;
+  return obj.hasApplicationFlag(application, ApplicationFlags.PARENT);
+}
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) => {
+  let tmp4;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] !== application) {
+    const tmpResult = ApplicationFlagUtils;
+    const hasApplicationFlagResult = tmpResult.hasApplicationFlag(application, ApplicationFlags.PARENT);
+    cResult[0] = application;
+    cResult[1] = hasApplicationFlagResult;
+    tmp4 = hasApplicationFlagResult;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : ((arg0) => {
+  let closure_0 = arg0;
+  const items = [arg0];
+  return react.useMemo(() => {
+    const obj = ApplicationFlagUtils;
+    return obj.hasApplicationFlag(closure_0, ApplicationFlags.PARENT);
+  }, items);
+});
 const result = size.fileFinishedImporting("modules/applications/useIsSocialLayerParentApplication.tsx");
 
-export default function useIsSocialLayerParentApplication(arg0) {
-  closure_0 = arg0;
-  const items = [arg0];
-  return noop.useMemo(() => ApplicationFlagUtils.hasApplicationFlag(closure_0, ApplicationFlags.PARENT), items);
-};
-export const getIsSocialLayerParentApplication = function getIsSocialLayerParentApplication(application) {
-  return ApplicationFlagUtils.hasApplicationFlag(application, ApplicationFlags.PARENT);
-};
+export default tmp2;
+export { getIsSocialLayerParentApplication };

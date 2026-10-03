@@ -1,217 +1,801 @@
-// Module ID: 16518
-// Function ID: 16519
+// Module ID: 16595
+// Function ID: 16596
 // Name: VibegrationsNativeControlOverlay
-// Dependencies: [19, 17, 4834, 21, 4845, 576, 16519, 504, 4595, 5464, 5468, 4846, 16520, 14139, 4841, 1115, 3714, 5465, 2]
-// Exports: default
+// Dependencies: [19, 17, 4879, 21, 4890, 587, 558, 576, 16596, 504, 4612, 5597, 5598, 4891, 1126, 3723, 14207, 16597, 4886, 5594, 2]
 
-// Module 16518 (VibegrationsNativeControlOverlay)
-import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4595 */;
-import timing from "timing" /* 4846 */;
-import spring from "spring" /* 5464 */;
-import springPresets from "springPresets" /* 5468 */;
-import useVibegrationsControlBar from "useVibegrationsControlBar" /* 16519 */;
-import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4834 */;
+// Module 16595 (VibegrationsNativeControlOverlay)
+import nativeDefault from "native" /* 587 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import timing from "timing" /* 4891 */;
+import spring from "spring" /* 5597 */;
+import springPresets from "springPresets" /* 5598 */;
+import useVibegrationsControlBar from "useVibegrationsControlBar" /* 16596 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import size from "module_2" /* 2 */;
 
-require = fn;
-get_ActivityIndicator = fn(17);
-({ StyleSheet, View: closure_4 } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4845);
-let obj2 = { block: null, border: null, glow: null, barArea: null, bar: null, status: null, copy: null, actions: null };
+let cancelAnimationResult, dependencyMap, flag, num, num2, set, set2, tmp12, tmp13, tmp3, tmp5, tmp6, tmp9;
+
+let StyleSheet;
+let closure_4;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+let obj5;
+let rect;
+({ StyleSheet, View: closure_4 } = react_native);
+({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
+let c9 = 280;
+let createStyles = createStyles_mod;
+let obj = { root: { flex: 1 }, content: { flex: 1 }, block: obj2, border: obj3, glow: obj4, barArea: { overflow: "hidden" }, bar: rect, title: { flexGrow: 1, flexShrink: 1 }, actions: obj5 };
+obj2 = {};
+createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj2.block = {};
-let obj4 = {};
+obj3 = { borderWidth: 2, borderColor: nativeDefault.colors.BACKGROUND_BRAND };
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
-obj4.borderWidth = 2;
-obj4.borderColor = nativeDefault.colors.BACKGROUND_BRAND;
-obj2.border = obj4;
-let obj5 = {};
+obj4 = { borderWidth: nativeDefault.space.PX_8, borderColor: nativeDefault.colors.BACKGROUND_BRAND };
 const merged2 = Object.assign(StyleSheet.absoluteFillObject);
-obj5.borderWidth = nativeDefault.space.PX_8;
-obj5.borderColor = nativeDefault.colors.BACKGROUND_BRAND;
-obj2.glow = obj5;
-const obj6 = {};
-const merged3 = Object.assign(StyleSheet.absoluteFillObject);
-obj6.overflow = "hidden";
-obj2.barArea = obj6;
-obj2.bar = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
-let obj3 = {};
-let obj7 = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
-obj2.status = { flexDirection: "row", flexWrap: "wrap", flexShrink: 1, alignItems: "center", gap: nativeDefault.space.PX_8 };
-let obj8 = { flexDirection: "row", flexWrap: "wrap", flexShrink: 1, alignItems: "center", gap: nativeDefault.space.PX_8 };
-obj2.copy = { flexDirection: "row", flexWrap: "wrap", flexShrink: 1, alignItems: "baseline", columnGap: nativeDefault.space.PX_8 };
-let obj9 = { flexDirection: "row", flexWrap: "wrap", flexShrink: 1, alignItems: "baseline", columnGap: nativeDefault.space.PX_8 };
-obj2.actions = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
-let closure_9 = createStyles.createStyles(obj2);
-const __initData = { code: "function VibegrationsNativeControlOverlayTsx1(){const{barOffset}=this.__closure;return{transform:[{translateY:barOffset.get()}]};}" };
-const __initData2 = { code: "function VibegrationsNativeControlOverlayTsx2(){const{pulse}=this.__closure;return{opacity:pulse.get()};}" };
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsNativeControlOverlay.tsx");
-
-export default function VibegrationsNativeControlOverlay(onOpenPublishedApp) {
-  onOpenPublishedApp = onOpenPublishedApp.onOpenPublishedApp;
+rect = { position: "absolute", top: 0, left: 0, right: 0, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
+obj5 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
+let closure_10 = createStyles(obj);
+const __initData = { code: "function VibegrationsNativeControlOverlayTsx1(){const{shown,barHeight}=this.__closure;return{height:Math.max(0,shown.get())*barHeight.get()};}" };
+const __initData2 = { code: "function VibegrationsNativeControlOverlayTsx2(){const{shown,barHeight}=this.__closure;return{transform:[{translateY:(shown.get()-1)*barHeight.get()}]};}" };
+const __initData3 = { code: "function VibegrationsNativeControlOverlayTsx3(){const{pulse}=this.__closure;return{opacity:pulse.get()};}" };
+const __initData4 = { code: "function VibegrationsNativeControlOverlayTsx4(){const{shown,barHeight}=this.__closure;return{height:Math.max(0,shown.get())*barHeight.get()};}" };
+const __initData5 = { code: "function VibegrationsNativeControlOverlayTsx5(){const{shown,barHeight}=this.__closure;return{transform:[{translateY:(shown.get()-1)*barHeight.get()}]};}" };
+const __initData6 = { code: "function VibegrationsNativeControlOverlayTsx6(){const{pulse}=this.__closure;return{opacity:pulse.get()};}" };
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let View;
+  let active;
+  let children;
+  let closure_2;
+  let combined;
+  let intl3;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let obj9;
+  let onOpenPublishedApp;
+  let projectId;
+  let sharedValue2;
+  let stop;
+  let stopping;
+  let tmp7;
+  let tmp8;
   let vibegrationsControlPhase;
-  ({ projectId, active } = onOpenPublishedApp);
-  const tmp = closure_9();
-  vibegrationsControlPhase = vibegrationsControlPhase(16519).useVibegrationsControlPhase(active);
-  let obj = vibegrationsControlPhase(16519);
-  const vibegrationsControlStop = vibegrationsControlPhase(16519).useVibegrationsControlStop(projectId);
+  let visible;
+  let tmp = vibegrationsControlPhase;
+  let tmp2 = dependencyMap;
+  let obj = vibegrationsControlPhase(576);
+  const cResult = obj.c(47);
+  ({ visible, onOpenPublishedApp, children } = arg0);
+  ({ projectId, active } = arg0);
+  const tmp4 = closure_10();
+  let obj2 = vibegrationsControlPhase(16596);
+  vibegrationsControlPhase = obj2.useVibegrationsControlPhase(active);
+  const obj3 = vibegrationsControlPhase(16596);
+  const vibegrationsControlStop = obj3.useVibegrationsControlStop(projectId);
   ({ stop, stopping } = vibegrationsControlStop);
-  let obj2 = vibegrationsControlPhase(16519);
-  let items = [AccessibilityStore];
-  const stateFromStores = vibegrationsControlPhase(504).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [sharedValue2];
+    let fn = function c() {
+      return sharedValue2.useReducedMotion;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp7 = items;
+    tmp8 = fn;
+  } else {
+    [tmp7, tmp8] = cResult;
+  }
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp8);
+  let tmp11 = visible;
+  if (tmp11) {
+    tmp11 = "controlling" === vibegrationsControlPhase;
+  }
+  dependencyMap = tmp11;
+  const tmpResult7 = tmp(4612);
+  const sharedValue = tmpResult7.useSharedValue(0);
+  const tmpResult8 = tmp(4612);
+  const sharedValue1 = tmpResult8.useSharedValue(0);
+  if (cResult[2] === vibegrationsControlPhase) {
+    if (cResult[3] === stateFromStores) {
+      let tmp14;
+      let tmp15;
+      if (cResult[4] === sharedValue1) {
+        tmp14 = cResult[5];
+        tmp15 = cResult[6];
+      }
+      const effect = sharedValue.useEffect(tmp14, tmp15);
+      let num3 = 0.5;
+      const tmpResult9 = tmp(4612);
+      sharedValue2 = tmpResult9.useSharedValue(0.5);
+      const obj7 = sharedValue;
+      if (cResult[7] === tmp11) {
+        if (cResult[8] === sharedValue2) {
+          let tmp18;
+          let tmp19;
+          let tmp27;
+          if (cResult[9] === stateFromStores) {
+            tmp18 = cResult[10];
+            tmp19 = cResult[11];
+          }
+          const effect1 = obj7.useEffect(tmp18, tmp19);
+          const fn2 = function j() {
+            let bound;
+            const obj = { height: bound * sharedValue.get() };
+            bound = Math.max(0, sharedValue1.get());
+            return obj;
+          };
+          const obj4 = { shown: sharedValue1, barHeight: sharedValue };
+          fn2.__closure = obj4;
+          const tmpResult10 = tmp(4612);
+          class P {
+            constructor() {
+              tmp = closure_2;
+              if (tmp) {
+                tmp2 = closure_1;
+                if (!tmp2) {
+                  tmp3 = closure_5;
+                  num = 0.2;
+                  result = closure_5.set(0.2);
+                  tmp5 = closure_0;
+                  tmp6 = closure_2;
+                  set = closure_5.set;
+                  tmp7 = closure_0(closure_2[10]);
+                  tmp8 = closure_0;
+                  tmp9 = closure_2;
+                  withRepeat = tmp7.withRepeat;
+                  tmp10 = closure_0(closure_2[13]);
+                  obj = { duration: 1200, easing: null };
+                  tmp11 = closure_0;
+                  tmp12 = closure_2;
+                  withTiming = tmp10.withTiming;
+                  Easing = closure_0(closure_2[10]).Easing;
+                  tmp13 = closure_0;
+                  tmp14 = closure_2;
+                  obj.easing = Easing.inOut(closure_0(closure_2[10]).Easing.ease);
+                  num2 = 0.7;
+                  flag = true;
+                  num3 = -1;
+                  result1 = set(withRepeat(withTiming(0.7, obj), -1, true));
+                  fn = () => {
+                    const obj = vibegrationsControlPhase(closure_2[10]);
+                    return obj.cancelAnimation(sharedValue2);
+                  };
+                }
+                return fn;
+              }
+              obj2 = closure_0(closure_2[10]);
+              cancelAnimationResult = obj2.cancelAnimation(closure_5);
+              result2 = closure_5.set(0.5);
+              return;
+            }
+          }
+          fn2.__workletHash = 14537991883436;
+          fn2.__initData = __initData;
+          const animatedStyle = tmpResult10.useAnimatedStyle(fn2);
+          const fn3 = function z() {
+            let diff;
+            let items;
+            const obj = { transform: items };
+            const obj2 = { translateY: diff * sharedValue.get() };
+            diff = sharedValue1.get() - 1;
+            items = [obj2];
+            return obj;
+          };
+          const obj5 = { shown: sharedValue1, barHeight: sharedValue };
+          fn3.__closure = obj5;
+          fn3.__workletHash = 15879147207027;
+          fn3.__initData = __initData2;
+          const tmpResult11 = tmp(4612);
+          const animatedStyle1 = tmpResult11.useAnimatedStyle(fn3);
+          const tmpResult12 = tmp(4612);
+          class M {
+            constructor() {
+              const obj = { opacity: sharedValue2.get() };
+              return obj;
+            }
+          }
+          const obj6 = { pulse: sharedValue2 };
+          M.__closure = obj6;
+          M.__workletHash = 4473224837152;
+          M.__initData = __initData3;
+          const animatedStyle2 = tmpResult12.useAnimatedStyle(M);
+          if (visible) {
+            visible = "idle" !== vibegrationsControlPhase;
+          }
+          if (cResult[12] !== tmp11) {
+            const intl = tmp(1126).intl;
+            const string = intl.string;
+            const tmp29 = stateFromStores(3723);
+            cResult[12] = tmp11;
+            const stringResult = string(tmp11 ? tmp29.ydhvN1 : tmp29["7U6tIB"]);
+            class P {
+              constructor() {
+                tmp = closure_2;
+                if (tmp) {
+                  tmp2 = closure_1;
+                  if (!tmp2) {
+                    tmp3 = closure_5;
+                    num = 0.2;
+                    result = closure_5.set(0.2);
+                    tmp5 = closure_0;
+                    tmp6 = closure_2;
+                    set = closure_5.set;
+                    tmp7 = closure_0(closure_2[10]);
+                    tmp8 = closure_0;
+                    tmp9 = closure_2;
+                    withRepeat = tmp7.withRepeat;
+                    tmp10 = closure_0(closure_2[13]);
+                    obj = { duration: 1200, easing: null };
+                    tmp11 = closure_0;
+                    tmp12 = closure_2;
+                    withTiming = tmp10.withTiming;
+                    Easing = closure_0(closure_2[10]).Easing;
+                    tmp13 = closure_0;
+                    tmp14 = closure_2;
+                    obj.easing = Easing.inOut(closure_0(closure_2[10]).Easing.ease);
+                    num2 = 0.7;
+                    flag = true;
+                    num3 = -1;
+                    result1 = set(withRepeat(withTiming(0.7, obj), -1, true));
+                    fn = () => {
+                      const obj = vibegrationsControlPhase(closure_2[10]);
+                      return obj.cancelAnimation(sharedValue2);
+                    };
+                  }
+                  return fn;
+                }
+                obj2 = closure_0(closure_2[10]);
+                cancelAnimationResult = obj2.cancelAnimation(closure_5);
+                result2 = closure_5.set(0.5);
+                return;
+              }
+            }
+            tmp27 = stringResult;
+          } else {
+            tmp27 = cResult[13];
+          }
+          const tmp33 = tmp11 && null != stop;
+          class C {
+            constructor() {
+              let Easing;
+              if ("controlling" === vibegrationsControlPhase) {
+                let num5 = 1;
+                set2 = sharedValue1.set;
+                if (!stateFromStores) {
+                  const obj2 = spring;
+                  num5 = obj2.withSpring(1, springPresets.SUBTLE_SPRING);
+                }
+                set2(num5);
+              } else if ("handoff" === tmp) {
+                set = sharedValue1.set;
+                const withDelay = ReanimatedRexport.withDelay;
+                ReanimatedRexport;
+                const diff = useVibegrationsControlBar.VIBEGRATIONS_CONTROL_HANDOFF_MS - c9;
+                let num3 = 0;
+                const withTiming = timing.withTiming;
+                timing;
+                const tmp10 = c9;
+                if (!stateFromStores) {
+                  num3 = tmp10;
+                }
+                const obj = { duration: num3, easing: Easing.in(ReanimatedRexport.Easing.ease) };
+                Easing = ReanimatedRexport.Easing;
+                const result = set(withDelay(diff, withTiming(0, obj)));
+              } else {
+                const result1 = sharedValue1.set(0);
+              }
+            }
+          }
+          let tmp38Result4 = null;
+          if (visible) {
+            let tmp38Result;
+            let tmp41Result;
+            const obj8 = { style: items1, children: closure_7(View, obj9) };
+            items1 = [tmp4.barArea, animatedStyle];
+            class P {
+              constructor() {
+                tmp = closure_2;
+                if (tmp) {
+                  tmp2 = closure_1;
+                  if (!tmp2) {
+                    tmp3 = closure_5;
+                    num = 0.2;
+                    result = closure_5.set(0.2);
+                    tmp5 = closure_0;
+                    tmp6 = closure_2;
+                    set = closure_5.set;
+                    tmp7 = closure_0(closure_2[10]);
+                    tmp8 = closure_0;
+                    tmp9 = closure_2;
+                    withRepeat = tmp7.withRepeat;
+                    tmp10 = closure_0(closure_2[13]);
+                    obj = { duration: 1200, easing: null };
+                    tmp11 = closure_0;
+                    tmp12 = closure_2;
+                    withTiming = tmp10.withTiming;
+                    Easing = closure_0(closure_2[10]).Easing;
+                    tmp13 = closure_0;
+                    tmp14 = closure_2;
+                    obj.easing = Easing.inOut(closure_0(closure_2[10]).Easing.ease);
+                    num2 = 0.7;
+                    flag = true;
+                    num3 = -1;
+                    result1 = set(withRepeat(withTiming(0.7, obj), -1, true));
+                    fn = () => {
+                      const obj = vibegrationsControlPhase(closure_2[10]);
+                      return obj.cancelAnimation(sharedValue2);
+                    };
+                  }
+                  return fn;
+                }
+                obj2 = closure_0(closure_2[10]);
+                cancelAnimationResult = obj2.cancelAnimation(closure_5);
+                result2 = closure_5.set(0.5);
+                return;
+              }
+            }
+            obj9 = {
+              style: items2,
+              onLayout(nativeEvent) {
+                          return sharedValue.set(nativeEvent.nativeEvent.layout.height);
+                        },
+              accessibilityLiveRegion: "polite",
+              children: items3
+            };
+            items2 = [tmp4.bar, animatedStyle1];
+            View = stateFromStores(4612).View;
+            if (tmp11) {
+              tmp38Result = tmp38(tmp(14207).AILoader, { size: 12, color: "text-overlay-light" });
+            } else {
+              const obj10 = { size: "sm", color: stateFromStores(587).colors.TEXT_OVERLAY_LIGHT };
+              const SparklesIcon = tmp(16597).SparklesIcon;
+              tmp38Result = tmp38(SparklesIcon, obj10);
+            }
+            items3 = [tmp38Result, , ];
+            const obj11 = { variant: "text-sm/semibold", color: "text-overlay-light", lineClamp: 1, style: tmp4.title, accessibilityLabel: combined, children: null };
+            combined = tmp27;
+            const Text = tmp(4886).Text;
+            if (tmp11) {
+              const intl2 = tmp(1126).intl;
+              const _HermesInternal = HermesInternal;
+              combined = "" + tmp27 + ". " + intl2.string(tmp39(3723).NldIIG);
+            }
+            class M {
+              constructor() {
+                const obj = { opacity: sharedValue2.get() };
+                return obj;
+              }
+            }
+            items3[1] = closure_6(Text, obj11);
+            if (tmp11 && null != onOpenPublishedApp) {
+              let tmp38Result3 = null;
+              const obj12 = { style: tmp4.actions, children: items4 };
+              const tmp45 = sharedValue1;
+              if (null != onOpenPublishedApp) {
+                const obj13 = { variant: "secondary-overlay", size: "sm", text: intl3.string(stateFromStores(3723).kj5epw), onPress: onOpenPublishedApp };
+                const Button = tmp(5594).Button;
+                intl3 = tmp(1126).intl;
+                tmp38Result3 = tmp38(Button, obj13);
+              }
+              items4 = [tmp38Result3, ];
+              class P {
+                constructor() {
+                  tmp = closure_2;
+                  if (tmp) {
+                    tmp2 = closure_1;
+                    if (!tmp2) {
+                      tmp3 = closure_5;
+                      num = 0.2;
+                      result = closure_5.set(0.2);
+                      tmp5 = closure_0;
+                      tmp6 = closure_2;
+                      set = closure_5.set;
+                      tmp7 = closure_0(closure_2[10]);
+                      tmp8 = closure_0;
+                      tmp9 = closure_2;
+                      withRepeat = tmp7.withRepeat;
+                      tmp10 = closure_0(closure_2[13]);
+                      obj = { duration: 1200, easing: null };
+                      tmp11 = closure_0;
+                      tmp12 = closure_2;
+                      withTiming = tmp10.withTiming;
+                      Easing = closure_0(closure_2[10]).Easing;
+                      tmp13 = closure_0;
+                      tmp14 = closure_2;
+                      obj.easing = Easing.inOut(closure_0(closure_2[10]).Easing.ease);
+                      num2 = 0.7;
+                      flag = true;
+                      num3 = -1;
+                      result1 = set(withRepeat(withTiming(0.7, obj), -1, true));
+                      fn = () => {
+                        const obj = vibegrationsControlPhase(closure_2[10]);
+                        return obj.cancelAnimation(sharedValue2);
+                      };
+                    }
+                    return fn;
+                  }
+                  obj2 = closure_0(closure_2[10]);
+                  cancelAnimationResult = obj2.cancelAnimation(closure_5);
+                  result2 = closure_5.set(0.5);
+                  return;
+                }
+              }
+              items4[1] = null;
+              tmp41Result = tmp41(tmp45, obj12);
+            } else {
+              tmp41Result = null;
+            }
+            items3[2] = tmp41Result;
+            tmp38Result4 = tmp38(tmp40, obj8);
+          }
+          cResult[14] = animatedStyle;
+          cResult[15] = sharedValue;
+          cResult[16] = animatedStyle1;
+          cResult[17] = tmp11;
+          cResult[18] = onOpenPublishedApp;
+          cResult[19] = visible;
+          cResult[20] = tmp11 && null != onOpenPublishedApp;
+          cResult[21] = tmp33;
+          cResult[22] = stop;
+          cResult[23] = stopping;
+          cResult[24] = tmp4.actions;
+          cResult[25] = tmp4.bar;
+          cResult[26] = tmp4.barArea;
+          cResult[27] = tmp4.title;
+          cResult[28] = tmp27;
+          cResult[29] = tmp38Result4;
+        }
+      }
+      class P {
+        constructor() {
+          tmp = closure_2;
+          if (tmp) {
+            tmp2 = closure_1;
+            if (!tmp2) {
+              tmp3 = closure_5;
+              num = 0.2;
+              result = closure_5.set(0.2);
+              tmp5 = closure_0;
+              tmp6 = closure_2;
+              set = closure_5.set;
+              tmp7 = closure_0(closure_2[10]);
+              tmp8 = closure_0;
+              tmp9 = closure_2;
+              withRepeat = tmp7.withRepeat;
+              tmp10 = closure_0(closure_2[13]);
+              obj = { duration: 1200, easing: null };
+              tmp11 = closure_0;
+              tmp12 = closure_2;
+              withTiming = tmp10.withTiming;
+              Easing = closure_0(closure_2[10]).Easing;
+              tmp13 = closure_0;
+              tmp14 = closure_2;
+              obj.easing = Easing.inOut(closure_0(closure_2[10]).Easing.ease);
+              num2 = 0.7;
+              flag = true;
+              num3 = -1;
+              result1 = set(withRepeat(withTiming(0.7, obj), -1, true));
+              fn = () => {
+                const obj = vibegrationsControlPhase(closure_2[10]);
+                return obj.cancelAnimation(sharedValue2);
+              };
+            }
+            return fn;
+          }
+          obj2 = closure_0(closure_2[10]);
+          cancelAnimationResult = obj2.cancelAnimation(closure_5);
+          result2 = closure_5.set(0.5);
+          return;
+        }
+      }
+      const items5 = [tmp11, sharedValue2, stateFromStores];
+      cResult[7] = tmp11;
+      let num5 = 8;
+      cResult[8] = sharedValue2;
+      cResult[9] = stateFromStores;
+      cResult[10] = P;
+      cResult[11] = items5;
+      tmp19 = items5;
+      tmp18 = P;
+    }
+  }
+  class C {
+    constructor() {
+      let Easing;
+      if ("controlling" === vibegrationsControlPhase) {
+        let num5 = 1;
+        set2 = sharedValue1.set;
+        if (!stateFromStores) {
+          const obj2 = spring;
+          num5 = obj2.withSpring(1, springPresets.SUBTLE_SPRING);
+        }
+        set2(num5);
+      } else if ("handoff" === tmp) {
+        set = sharedValue1.set;
+        const withDelay = ReanimatedRexport.withDelay;
+        ReanimatedRexport;
+        const diff = useVibegrationsControlBar.VIBEGRATIONS_CONTROL_HANDOFF_MS - c9;
+        let num3 = 0;
+        const withTiming = timing.withTiming;
+        timing;
+        const tmp10 = c9;
+        if (!stateFromStores) {
+          num3 = tmp10;
+        }
+        const obj = { duration: num3, easing: Easing.in(ReanimatedRexport.Easing.ease) };
+        Easing = ReanimatedRexport.Easing;
+        const result = set(withDelay(diff, withTiming(0, obj)));
+      } else {
+        const result1 = sharedValue1.set(0);
+      }
+    }
+  }
+  const items6 = [sharedValue1, vibegrationsControlPhase, stateFromStores];
+  cResult[2] = vibegrationsControlPhase;
+  cResult[3] = stateFromStores;
+  cResult[4] = sharedValue1;
+  cResult[5] = C;
+  cResult[6] = items6;
+  tmp15 = items6;
+  tmp14 = C;
+}) : ((arg0) => {
+  let active;
+  let children;
+  let closure_2;
+  let combined;
+  let intl3;
+  let intl4;
+  let items10;
+  let items3;
+  let items4;
+  let items6;
+  let items7;
+  let items8;
+  let items9;
+  let onOpenPublishedApp;
+  let projectId;
+  let stop;
+  let stopping;
+  let tmp19;
+  let visible;
+  let ydhvN1;
+  ({ visible, onOpenPublishedApp } = arg0);
+  let vibegrationsControlPhase;
+  dependencyMap = undefined;
+  let sharedValue;
+  let sharedValue1;
+  let sharedValue2;
+  ({ projectId, active, children } = arg0);
+  let tmp = closure_10();
+  let tmp2 = vibegrationsControlPhase;
+  let obj = vibegrationsControlPhase(16596);
+  vibegrationsControlPhase = obj.useVibegrationsControlPhase(active);
+  let obj2 = vibegrationsControlPhase(16596);
+  const vibegrationsControlStop = obj2.useVibegrationsControlStop(projectId);
+  ({ stop, stopping } = vibegrationsControlStop);
+  let items = [sharedValue2];
+  const obj3 = vibegrationsControlPhase(504);
+  const stateFromStores = obj3.useStateFromStores(items, () => sharedValue2.useReducedMotion);
+  let tmp7 = visible;
+  if (tmp7) {
+    tmp7 = "controlling" === vibegrationsControlPhase;
+  }
   dependencyMap = tmp7;
-  let obj3 = vibegrationsControlPhase(504);
-  const sharedValue = vibegrationsControlPhase(4595).useSharedValue(-96);
-  let obj4 = vibegrationsControlPhase(4595);
-  const sharedValue1 = vibegrationsControlPhase(4595).useSharedValue(0.5);
-  const items1 = [sharedValue, vibegrationsControlPhase];
+  const tmp2Result = tmp2(4612);
+  sharedValue = tmp2Result.useSharedValue(0);
+  const tmp2Result6 = tmp2(4612);
+  sharedValue1 = tmp2Result6.useSharedValue(0);
+  const items1 = [sharedValue1, vibegrationsControlPhase, stateFromStores];
   const effect = sharedValue.useEffect(() => {
+    let Easing;
     if ("controlling" === vibegrationsControlPhase) {
-      const result = sharedValue.set(spring.withSpring(0, springPresets.SUBTLE_SPRING));
+      let num5 = 1;
+      set2 = sharedValue1.set;
+      if (!stateFromStores) {
+        const obj2 = spring;
+        num5 = obj2.withSpring(1, springPresets.SUBTLE_SPRING);
+      }
+      set2(num5);
     } else if ("handoff" === tmp) {
-      const diff = useVibegrationsControlBar.VIBEGRATIONS_CONTROL_HANDOFF_MS - 280;
-      const obj = ReanimatedRexport;
-      const obj3 = { duration: 280, easing: null };
-      const Easing = ReanimatedRexport.Easing;
-      obj3.easing = Easing.in(ReanimatedRexport.Easing.ease);
-      const result1 = sharedValue.set(obj.withDelay(diff, timing.withTiming(-96, obj3)));
+      set = sharedValue1.set;
+      const withDelay = ReanimatedRexport.withDelay;
+      ReanimatedRexport;
+      const diff = useVibegrationsControlBar.VIBEGRATIONS_CONTROL_HANDOFF_MS - c9;
+      let num3 = 0;
+      const withTiming = timing.withTiming;
+      timing;
+      const tmp10 = c9;
+      if (!stateFromStores) {
+        num3 = tmp10;
+      }
+      const obj = { duration: num3, easing: Easing.in(ReanimatedRexport.Easing.ease) };
+      Easing = ReanimatedRexport.Easing;
+      const result = set(withDelay(diff, withTiming(0, obj)));
     } else {
-      const result2 = sharedValue.set(-96);
+      const result1 = sharedValue1.set(0);
     }
   }, items1);
-  const items2 = ["controlling" === vibegrationsControlPhase, sharedValue1, stateFromStores];
+  const tmp2Result7 = tmp2(4612);
+  sharedValue2 = tmp2Result7.useSharedValue(0.5);
+  const items2 = [tmp7, sharedValue2, stateFromStores];
   const effect1 = sharedValue.useEffect(() => {
-    if (closure_2) {
-      if (!stateFromStores) {
-        const result = sharedValue1.set(0.2);
-        const obj = ReanimatedRexport;
-        const obj3 = { duration: 1200, easing: null };
-        const Easing = ReanimatedRexport.Easing;
-        obj3.easing = Easing.inOut(ReanimatedRexport.Easing.ease);
-        const result1 = sharedValue1.set(obj.withRepeat(timing.withTiming(0.7, obj3), -1, true));
-        const fn = () => vibegrationsControlPhase(closure_2[8]).cancelAnimation(sharedValue1);
+    let Easing;
+    const tmp = closure_2;
+    if (tmp) {
+      let fn;
+      const tmp2 = stateFromStores;
+      if (!tmp2) {
+        const result = sharedValue2.set(0.2);
+        set = sharedValue2.set;
+        const withRepeat = ReanimatedRexport.withRepeat;
+        ReanimatedRexport;
+        let obj = { duration: 1200, easing: Easing.inOut(ReanimatedRexport.Easing.ease) };
+        const withTiming = timing.withTiming;
+        timing;
+        Easing = ReanimatedRexport.Easing;
+        const result1 = set(withRepeat(withTiming(0.7, obj), -1, true));
+        fn = () => {
+          const obj = vibegrationsControlPhase(closure_2[10]);
+          return obj.cancelAnimation(sharedValue2);
+        };
       }
       return fn;
     }
-    ReanimatedRexport.cancelAnimation(sharedValue1);
-    const result2 = sharedValue1.set(0.5);
+    const obj2 = ReanimatedRexport;
+    obj2.cancelAnimation(sharedValue2);
+    const result2 = sharedValue2.set(0.5);
   }, items2);
-  const obj5 = vibegrationsControlPhase(4595);
-  class C {
+  const tmp2Result8 = tmp2(4612);
+  class R {
     constructor() {
-      obj = { transform: null };
-      obj1 = { translateY: closure_3.get() };
-      items = [];
-      items[0] = obj1;
-      obj.transform = items;
+      let bound;
+      const obj = { height: bound * sharedValue.get() };
+      bound = Math.max(0, sharedValue1.get());
       return obj;
     }
   }
-  C.__closure = { barOffset: sharedValue };
-  C.__workletHash = 4238220742706;
-  C.__initData = __initData;
-  const animatedStyle = vibegrationsControlPhase(4595).useAnimatedStyle(C);
-  vibegrationsControlPhase(4595);
+  R.__closure = { shown: sharedValue1, barHeight: sharedValue };
+  R.__workletHash = 10779878276009;
+  R.__initData = __initData4;
+  const animatedStyle = tmp2Result8.useAnimatedStyle(R);
+  const tmp2Result9 = tmp2(4612);
   class D {
     constructor() {
-      obj = { opacity: closure_4.get() };
+      let diff;
+      let items;
+      const obj = { transform: items };
+      const obj2 = { translateY: diff * sharedValue.get() };
+      diff = sharedValue1.get() - 1;
+      items = [obj2];
       return obj;
     }
   }
-  D.__closure = { pulse: sharedValue1 };
-  D.__workletHash = 7153982073121;
-  D.__initData = __initData2;
-  let tmp29Result4 = null;
-  if ("idle" !== vibegrationsControlPhase) {
-    let tmp29Result = null;
-    if (tmp7) {
-      const obj7 = { children: null };
-      const obj8 = { style: tmp.block, pointerEvents: "box-only" };
-      const items3 = [closure_6(sharedValue1, obj8), , ];
-      const obj9 = { style: null, pointerEvents: "none" };
-      const items4 = [tmp.glow, tmp14];
-      obj9.style = items4;
-      items3[1] = closure_6(stateFromStores(4595).View, obj9);
-      const obj10 = { style: tmp.border, pointerEvents: "none" };
-      items3[2] = closure_6(sharedValue1, obj10);
-      obj7.children = items3;
-      tmp29Result = tmp29(tmp30, obj7);
-    }
-    const items5 = [tmp29Result, ];
-    const obj11 = { style: tmp.barArea, pointerEvents: "box-none", children: null };
-    const obj12 = { style: null, accessibilityLiveRegion: "polite", children: null };
-    const items6 = [tmp.bar, animatedStyle];
-    obj12.style = items6;
-    const obj13 = { style: tmp.status, children: null };
-    const obj14 = { size: "sm", color: stateFromStores(576).colors.TEXT_OVERLAY_LIGHT };
-    const items7 = [closure_6(tmp2(16520).SparklesIcon, obj14), , ];
-    let tmp20Result = null;
-    if (tmp7) {
-      tmp20Result = tmp20(tmp2(14139).AILoader, { size: 12, color: "text-overlay-light" });
-    }
-    items7[1] = tmp20Result;
-    const obj15 = { style: tmp.copy, children: null };
-    const intl = tmp2(1115).intl;
-    const tmp22Result = stateFromStores(3714);
-    const obj16 = { variant: "text-sm/semibold", color: "text-overlay-light", children: intl.string(tmp7 ? tmp22Result.ydhvN1 : tmp22Result["7U6tIB"]) };
-    const items8 = [closure_6(tmp2(4841).Text, obj16), ];
-    let tmp20Result4 = null;
-    if (tmp7) {
-      const obj17 = { variant: "text-xs/medium", color: "text-overlay-light", children: null };
-      const intl2 = tmp2(1115).intl;
-      obj17.children = intl2.string(tmp22(3714).NldIIG);
-      tmp20Result4 = tmp20(tmp2(4841).Text, obj17);
-    }
-    items8[1] = tmp20Result4;
-    obj15.children = items8;
-    items7[2] = closure_8(sharedValue1, obj15);
-    obj13.children = items7;
-    const items9 = [closure_8(sharedValue1, obj13), ];
-    let tmp29Result3 = null;
-    if (tmp7) {
-      const obj18 = { style: tmp.actions, children: null };
-      let tmp20Result5 = null;
-      if (null != onOpenPublishedApp) {
-        const obj19 = { variant: "secondary-overlay", size: "sm", text: null, onPress: null };
-        const intl3 = tmp2(1115).intl;
-        obj19.text = intl3.string(tmp22(3714).kj5epw);
-        obj19.onPress = onOpenPublishedApp;
-        tmp20Result5 = tmp20(tmp2(5465).Button, obj19);
-      }
-      const items10 = [tmp20Result5, ];
-      let tmp20Result6 = null;
-      if (null != stop) {
-        const obj20 = { variant: "primary-overlay", size: "sm", text: null, loading: null, onPress: null };
-        const intl4 = tmp2(1115).intl;
-        obj20.text = intl4.string(tmp22(3714)["2HalWx"]);
-        obj20.loading = stopping;
-        obj20.onPress = stop;
-        tmp20Result6 = tmp20(tmp2(5465).Button, obj20);
-      }
-      items10[1] = tmp20Result6;
-      obj18.children = items10;
-      tmp29Result3 = tmp29(tmp21, obj18);
-    }
-    const obj21 = { children: null };
-    items9[1] = tmp29Result3;
-    class C {
-      constructor() {
-        obj = { transform: null };
-        obj1 = { translateY: closure_3.get() };
-        items = [];
-        items[0] = obj1;
-        obj.transform = items;
-        return obj;
-      }
-    }
-    obj11.children = closure_8(stateFromStores(4595).View, obj12);
-    items5[1] = closure_6(sharedValue1, obj11);
-    obj21.children = items5;
-    tmp29Result4 = tmp29(tmp30, obj21);
+  D.__closure = { shown: sharedValue1, barHeight: sharedValue };
+  D.__workletHash = 5836011547124;
+  D.__initData = __initData5;
+  const animatedStyle1 = tmp2Result9.useAnimatedStyle(D);
+  let fn = function k() {
+    const obj = { opacity: sharedValue2.get() };
+    return obj;
+  };
+  fn.__closure = { pulse: sharedValue2 };
+  fn.__workletHash = 11848386308389;
+  fn.__initData = __initData6;
+  const tmp2Result10 = tmp2(4612);
+  const animatedStyle2 = tmp2Result10.useAnimatedStyle(fn);
+  const intl = tmp2(1126).intl;
+  const string = intl.string;
+  const tmp17 = stateFromStores(3723);
+  if (tmp7) {
+    ydhvN1 = tmp17.ydhvN1;
+    tmp19 = tmp16;
+  } else {
+    ydhvN1 = tmp17["7U6tIB"];
+    tmp19 = tmp16;
   }
-  return tmp29Result4;
-};
+  const stringResult = string(ydhvN1);
+  let tmp21 = tmp7;
+  if (tmp21) {
+    tmp21 = null != stop;
+  }
+  let tmp37Result4 = null;
+  const obj4 = { style: tmp.root, children: items7 };
+  if (visible) {
+    tmp37Result4 = null;
+    if ("idle" !== vibegrationsControlPhase) {
+      let tmp37Result;
+      const obj5 = { style: items3, children: null };
+      items3 = [tmp.barArea, animatedStyle];
+      const View = tmp19(4612).View;
+      const obj6 = {
+        style: items4,
+        onLayout(nativeEvent) {
+              return sharedValue.set(nativeEvent.nativeEvent.layout.height);
+            },
+        accessibilityLiveRegion: "polite",
+        children: null
+      };
+      items4 = [tmp.bar, animatedStyle1];
+      const View2 = tmp19(4612).View;
+      if (tmp7) {
+        tmp37Result = tmp37(tmp2(14207).AILoader, { size: 12, color: "text-overlay-light" });
+      } else {
+        const obj7 = { size: "sm", color: tmp19(587).colors.TEXT_OVERLAY_LIGHT };
+        const SparklesIcon = tmp2(16597).SparklesIcon;
+        tmp37Result = tmp37(SparklesIcon, obj7);
+      }
+      const items5 = [tmp37Result, , ];
+      const obj8 = { variant: "text-sm/semibold", color: "text-overlay-light", lineClamp: 1, style: tmp.title, accessibilityLabel: combined, children: stringResult };
+      combined = stringResult;
+      const Text = tmp2(4886).Text;
+      if (tmp7) {
+        const intl2 = tmp2(1126).intl;
+        const _HermesInternal = HermesInternal;
+        combined = "" + stringResult + ". " + intl2.string(tmp19(3723).NldIIG);
+      }
+      items5[1] = closure_6(Text, obj8);
+      if (!tmp7) {
+        let tmp23Result = null;
+        items5[2] = tmp23Result;
+        obj6.children = items5;
+        obj5.children = closure_7(View2, obj6);
+        tmp37Result4 = tmp37(View, obj5);
+      }
+      let tmp37Result5 = null;
+      const obj9 = { style: tmp.actions, children: items6 };
+      if (null != onOpenPublishedApp) {
+        const obj10 = { variant: "secondary-overlay", size: "sm", text: intl3.string(tmp19(3723).kj5epw), onPress: onOpenPublishedApp };
+        const Button = tmp2(5594).Button;
+        intl3 = tmp2(1126).intl;
+        tmp37Result5 = tmp37(Button, obj10);
+      }
+      items6 = [tmp37Result5, ];
+      let tmp37Result6 = null;
+      if (tmp21) {
+        const obj11 = { variant: "primary-overlay", size: "sm", text: intl4.string(tmp19(3723)["2HalWx"]), loading: stopping, onPress: stop };
+        const Button2 = tmp2(5594).Button;
+        intl4 = tmp2(1126).intl;
+        tmp37Result6 = tmp37(Button2, obj11);
+      }
+      items6[1] = tmp37Result6;
+      tmp23Result = tmp23(tmp24, obj9);
+    }
+  }
+  items7 = [tmp37Result4, , ];
+  const obj12 = { style: tmp.content, children: items8 };
+  items8 = [children, ];
+  let tmp32 = null;
+  if (tmp7) {
+    const obj13 = { style: tmp.block, pointerEvents: "box-only" };
+    tmp32 = closure_6(tmp24, obj13);
+  }
+  items8[1] = tmp32;
+  items7[1] = closure_7(sharedValue1, obj12);
+  let tmp23Result2 = null;
+  if (tmp7) {
+    const obj15 = { style: items9, pointerEvents: "none" };
+    items9 = [tmp.glow, animatedStyle2];
+    const obj14 = { children: items10 };
+    items10 = [closure_6(tmp19(4612).View, obj15), ];
+    const obj16 = { style: tmp.border, pointerEvents: "none" };
+    items10[1] = closure_6(sharedValue1, obj16);
+    tmp23Result2 = tmp23(closure_8, obj14);
+  }
+  items7[2] = tmp23Result2;
+  return closure_7(sharedValue1, obj4);
+});
+let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsNativeControlOverlay.tsx");
+
+export default tmp8;

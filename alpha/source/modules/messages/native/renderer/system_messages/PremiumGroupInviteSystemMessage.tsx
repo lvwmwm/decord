@@ -1,38 +1,41 @@
-// Module ID: 7673
-// Function ID: 7674
+// Module ID: 7717
+// Function ID: 7718
 // Name: PremiumGroupInviteSystemMessage
-// Dependencies: [502, 2044, 4845, 576, 7674, 7579, 7561, 7678, 2]
+// Dependencies: [502, 2051, 4890, 587, 7718, 7623, 7605, 7722, 2]
 // Exports: createPremiumGroupInviteSystemMessage
 
-// Module 7673 (PremiumGroupInviteSystemMessage)
-import nativeDefault from "native" /* 576 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7579 */;
-import PremiumGroupInviteEmbed from "PremiumGroupInviteEmbed" /* 7674 */;
-import _modDef7678 from "module_7678" /* 7678 */;
+// Module 7717 (PremiumGroupInviteSystemMessage)
+import nativeDefault from "native" /* 587 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7623 */;
+import PremiumGroupInviteEmbed from "PremiumGroupInviteEmbed" /* 7718 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7722 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2044 */;
+import ChannelStore from "ChannelStore" /* 2051 */;
+import createStyles from "createStyles" /* 4890 */;
+import size from "module_2" /* 2 */;
 
-const renderer_EmbedUtils = tmp3(7561);
-require = fn;
-const createStyles = fn(4845);
-let closure_5 = createStyles.createNativeStyleProperties({ iconTintColor: nativeDefault.colors.ICON_STRONG, iconDividerColor: nativeDefault.colors.ICON_STRONG });
-const size = fn(2);
+let tmp3;
+const renderer_EmbedUtils = tmp3(7605);
+let obj = { iconTintColor: nativeDefault.colors.ICON_STRONG, iconDividerColor: nativeDefault.colors.ICON_STRONG };
+let closure_5 = createStyles.createNativeStyleProperties(obj);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/PremiumGroupInviteSystemMessage.tsx");
 
 export const createPremiumGroupInviteSystemMessage = function createPremiumGroupInviteSystemMessage(message) {
+  let theme;
+  let tmp3Result;
   ({ message, theme } = message);
   const channel = ChannelStore.getChannel(message.getChannelId());
   const id = AuthenticationStore.getId();
-  const premiumGroupInviteEmbed = PremiumGroupInviteEmbed.createPremiumGroupInviteEmbed(message, theme, id, channel);
+  const obj = PremiumGroupInviteEmbed;
+  const premiumGroupInviteEmbed = obj.createPremiumGroupInviteEmbed(message, theme, id, channel);
   if (null == premiumGroupInviteEmbed) {
     return null;
   } else {
-    const obj3 = {};
-    const merged = Object.assign(createCommonMessageDefault(message));
-    obj3.premiumGroupInviteInfo = premiumGroupInviteEmbed;
+    const obj3 = { premiumGroupInviteInfo: premiumGroupInviteEmbed, iconUrl: tmp3Result.getAssetUriForEmbed(AssetRegistryDefault) };
     const tmp7 = closure_5(theme);
-    obj3.iconUrl = renderer_EmbedUtils.getAssetUriForEmbed(_modDef7678);
+    const merged = Object.assign(createCommonMessageDefault(message));
     ({ iconTintColor: obj2.iconTintColor, iconDividerColor: obj2.iconDividerColor } = tmp7);
+    tmp3Result = renderer_EmbedUtils;
     return obj3;
   }
 };

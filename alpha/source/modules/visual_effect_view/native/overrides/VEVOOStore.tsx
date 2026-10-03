@@ -1,30 +1,35 @@
-// Module ID: 5454
-// Function ID: 5455
+// Module ID: 5774
+// Function ID: 5775
 // Name: VEVOOStore
-// Dependencies: [560, 1248, 2]
+// Dependencies: [570, 558, 1259, 2]
 // Exports: clearVisualEffectViewOverrides, getVisualEffectViewOverrides, setVisualEffectViewOverides, useVisualEffectViewOverrides
 
-// Module 5454 (VEVOOStore)
-import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
-import module_560 from "module_560" /* 560 */;
+// Module 5774 (VEVOOStore)
+import react_native from "react-native" /* 1259 */;
+import module_570 from "module_570" /* 570 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
 let closure_2 = {};
-const state = module_560.create(() => closure_2);
-const result = size.fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOStore.tsx");
+const state = module_570.create(() => closure_2);
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const result1 = size.fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOStore.tsx");
 
-export const useVisualEffectViewOverrides = function useVisualEffectViewOverrides() {
-  return state();
-};
+export const useVisualEffectViewOverrides = () => state();
 export const getVisualEffectViewOverrides = function getVisualEffectViewOverrides() {
   return state.getState();
 };
 export const setVisualEffectViewOverides = function setVisualEffectViewOverides(arg0) {
+  let closure_0;
   _require = arg0;
-  require("ReactBatchUpdates").batchUpdates(() => state.setState(closure_0));
+  const obj = require("react-native");
+  obj.batchUpdates(() => state.setState(closure_0));
 };
 export const clearVisualEffectViewOverrides = function clearVisualEffectViewOverrides() {
-  ReactBatchUpdates.batchUpdates(() => state.setState(closure_1_2));
+  const obj = react_native;
+  obj.batchUpdates(() => state.setState(closure_1_2));
 };

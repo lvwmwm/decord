@@ -1,12 +1,13 @@
-// Module ID: 10302
-// Function ID: 10303
-// Name: DCDPhotos
+// Module ID: 10377
+// Function ID: 10378
+// Name: react-native
 // Dependencies: [17, 2]
 
-// Module 10302 (DCDPhotos)
-import _mod17 from "module_17" /* 17 */;
+// Module 10377 (react-native)
+import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
+const DCDPhotos = react_native.NativeModules.DCDPhotos;
 const result = size.fileFinishedImporting("modules/device/native/DCDPhotos.tsx");
 
-export default _mod17.NativeModules.DCDPhotos;
+export default DCDPhotos;

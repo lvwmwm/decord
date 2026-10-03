@@ -1,15 +1,16 @@
-// Module ID: 5468
-// Function ID: 5469
+// Module ID: 5598
+// Function ID: 5599
 // Name: springPresets
-// Dependencies: [2, 5469]
+// Dependencies: [2, 5599]
 
-// Module 5468 (springPresets)
-import SUBTLE_SPRING from "SUBTLE_SPRING" /* 5469 */;
+// Module 5598 (springPresets)
+import SUBTLE_SPRING from "SUBTLE_SPRING" /* 5599 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/animation/reanimated/spring/springPresets.tsx");
+const SUBTLE_SPRING_export = SUBTLE_SPRING.SUBTLE_SPRING;
 
-export const SUBTLE_SPRING = SUBTLE_SPRING.SUBTLE_SPRING;
+export { SUBTLE_SPRING_export as SUBTLE_SPRING };
 export const ON_PRESS_SPRING = { mass: 1, overshootClamping: true, damping: 27, stiffness: 300 };
 export const springSlow = { mass: 1, damping: 30, stiffness: 380 };
 export const springUnclamped = { mass: 0.35, damping: 13, stiffness: 250 };

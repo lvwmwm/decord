@@ -1,21 +1,22 @@
-// Module ID: 8035
-// Function ID: 8036
+// Module ID: 8079
+// Function ID: 8080
 // Name: GuildTiVPlatformUtils
-// Dependencies: [1115, 2]
+// Dependencies: [1126, 2]
 
-// Module 8035 (GuildTiVPlatformUtils)
-import util from "util" /* 1115 */;
+// Module 8079 (GuildTiVPlatformUtils)
+import intl2 from "intl" /* 1126 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/text_in_voice/GuildTiVPlatformUtils.native.tsx");
-
-export default {
+const obj = {
   getTextInVoiceSendMessageChannelPermissionText() {
-    const intl = util.intl;
-    return intl.string(util.t.WQ6zpT);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.WQ6zpT);
   },
   getTextInVoiceReadMessageHistoryChannelPermissionText() {
-    const intl = util.intl;
-    return intl.string(util.t.cuMfH0);
+    const intl = intl2.intl;
+    return intl.string(intl2.t.cuMfH0);
   }
 };
+const result = size.fileFinishedImporting("modules/text_in_voice/GuildTiVPlatformUtils.native.tsx");
+
+export default obj;

@@ -1,46 +1,56 @@
-// Module ID: 14136
-// Function ID: 14137
+// Module ID: 14204
+// Function ID: 14205
 // Name: MenuGroup
-// Dependencies: [19, 17, 21, 4845, 576, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 2]
 
-// Module 14136 (MenuGroup)
-import nativeDefault from "native" /* 576 */;
-import noop from "module_19" /* 19 */;
+// Module 14204 (MenuGroup)
+import nativeDefault from "native" /* 587 */;
+import react_mod from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles from "createStyles" /* 4890 */;
+import size from "module_2" /* 2 */;
 
-get_ActivityIndicator = fn(17);
-({ StyleSheet, View: closure_1 } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: c2, jsxs: c3 } = jsxProd);
-const createStyles = fn(4845);
-let obj = { divider: { marginLeft: 0, height: StyleSheet.hairlineWidth, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: -1 * StyleSheet.hairlineWidth } };
+let StyleSheet;
+let c2;
+let c3;
+let map;
+let obj2;
+let react = react_mod;
+({ StyleSheet, View: map } = react_native);
+({ jsx: c2, jsxs: c3 } = Fragment);
+let obj = { divider: obj2 };
+obj2 = { marginLeft: 0, height: StyleSheet.hairlineWidth, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: -1 * StyleSheet.hairlineWidth };
 let closure_4 = createStyles.createStyles(obj);
-const obj3 = { marginLeft: 0, height: StyleSheet.hairlineWidth, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: -1 * StyleSheet.hairlineWidth };
-const size = fn(2);
-const result = size.fileFinishedImporting("design/components/Menu/native/MenuGroup.tsx");
-
-export const MenuGroup = noop.forwardRef((arg0, ref) => {
-  noop = ref;
+const forwardRefResult = react.forwardRef((arg0, ref) => {
+  let children;
+  let items;
+  let style;
+  react = ref;
   ({ style, children } = arg0);
-  let obj = { style, children: null };
+  let obj = { style, children: items };
   let tmp4 = null === ref;
+  const tmp2 = closure_3;
   if (tmp4) {
     let obj2 = { style: tmp.divider };
     tmp4 = closure_2(tmp3, obj2);
   }
-  const items = [tmp4, ];
-  const Children = noop.Children;
-  items[1] = Children.map(children, (icon, arg1) => {
-    let cloneElementResult = icon;
+  items = [tmp4, ];
+  const Children = react.Children;
+  items[1] = Children.map(children, (label, arg1) => {
+    let cloneElementResult = label;
     if (0 === arg1) {
-      cloneElementResult = icon;
-      if (noop.isValidElement(icon)) {
+      cloneElementResult = label;
+      const obj = react;
+      if (react.isValidElement(label)) {
         const obj2 = { ref };
-        cloneElementResult = obj.cloneElement(icon, obj2);
+        cloneElementResult = obj.cloneElement(label, obj2);
       }
-      obj = noop;
     }
     return cloneElementResult;
   });
-  obj.children = items;
-  return closure_3(closure_1, obj);
+  return tmp2(closure_1, obj);
 });
+const result = size.fileFinishedImporting("design/components/Menu/native/MenuGroup.tsx");
+
+export const MenuGroup = forwardRefResult;
