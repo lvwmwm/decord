@@ -53,7 +53,7 @@ let value = function _maybePreConvertImageItem() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c5;

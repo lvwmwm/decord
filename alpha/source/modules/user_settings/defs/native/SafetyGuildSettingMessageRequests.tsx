@@ -1,9 +1,9 @@
-// Module ID: 15784
-// Function ID: 15785
+// Module ID: 15788
+// Function ID: 15789
 // Name: SafetyGuildSettingMessageRequests
-// Dependencies: [2074, 15774, 7634, 11130, 558, 576, 15785, 14621, 2028, 5707, 1126, 5783, 15786, 8084, 8086, 6491, 15777, 11129, 2]
+// Dependencies: [2074, 15778, 7634, 11130, 558, 576, 15789, 14625, 2028, 5707, 1126, 5783, 15790, 8084, 8086, 6491, 15781, 11129, 2]
 
-// Module 15784 (SafetyGuildSettingMessageRequests)
+// Module 15788 (SafetyGuildSettingMessageRequests)
 import react from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2028 */;
@@ -13,12 +13,12 @@ import UserSettingsUtils from "UserSettingsUtils" /* 6491 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8084 */;
 import SettingRendererConstants from "SettingRendererConstants" /* 11130 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14621 */;
-import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 15777 */;
-import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 15785 */;
-import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 15786 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14625 */;
+import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 15781 */;
+import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 15789 */;
+import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 15790 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 15774 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 15778 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;

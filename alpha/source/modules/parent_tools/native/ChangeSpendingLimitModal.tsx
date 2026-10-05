@@ -1,9 +1,9 @@
-// Module ID: 14711
-// Function ID: 14712
+// Module ID: 14715
+// Function ID: 14716
 // Name: ChangeSpendingLimitModal
-// Dependencies: [5, 19, 17, 21, 4890, 587, 4803, 4886, 1126, 2493, 558, 576, 14712, 4568, 4792, 5093, 4567, 6736, 8095, 8096, 5593, 6098, 5594, 11536, 5592, 6010, 10976, 2]
+// Dependencies: [5, 19, 17, 21, 4890, 587, 4803, 4886, 1126, 2493, 558, 576, 14716, 4568, 4792, 5093, 4567, 6736, 8095, 8096, 5593, 6098, 5594, 11536, 5592, 6010, 10976, 2]
 
-// Module 14711 (ChangeSpendingLimitModal)
+// Module 14715 (ChangeSpendingLimitModal)
 import nativeDefault from "native" /* 587 */;
 import intl8 from "intl" /* 1126 */;
 import _modDef2493 from "module_2493" /* 2493 */;
@@ -118,7 +118,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((teenId) => {
   const cResult = obj.c(62);
   teenId = teenId.teenId;
   const tmp4 = closure_8();
-  let obj2 = save(14712);
+  let obj2 = save(14716);
   const changeSpendingLimitFormState = obj2.useChangeSpendingLimitFormState(teenId);
   ({ amountInput, handleAmountChange, currency, currencySymbol, exponent, isClearingCap, isOverspending, canSave, isSubmitting, renewalDate, monthlySpend, save } = changeSpendingLimitFormState);
   if (cResult[0] !== save) {
@@ -134,7 +134,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((teenId) => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c2;
@@ -180,7 +180,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((teenId) => {
               c2 = 0;
             }
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp15) {
           if (0 === c2) {
@@ -534,7 +534,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((teenId) => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c2;
@@ -581,7 +581,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((teenId) => {
               c2 = 0;
             }
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp15) {
           if (0 === c2) {

@@ -1,10 +1,10 @@
-// Module ID: 18001
-// Function ID: 18002
+// Module ID: 18023
+// Function ID: 18024
 // Name: GlobalDiscoveryServersUtils
 // Dependencies: [5, 2116, 9249, 1085, 1126, 1375, 6844, 1252, 1266, 2]
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
-// Module 18001 (GlobalDiscoveryServersUtils)
+// Module 18023 (GlobalDiscoveryServersUtils)
 import Constants from "Constants" /* 1085 */;
 import intl8 from "intl" /* 1126 */;
 import v1 from "v1" /* 1266 */;
@@ -42,7 +42,7 @@ let obj = function _navigateToGuild() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -70,7 +70,7 @@ let obj = function _navigateToGuild() {
             obj6 = undefined;
             category_id = 1;
             _location = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === category_id) {
           if (arg0 === 1) {
@@ -101,7 +101,7 @@ let obj = function _navigateToGuild() {
           obj = closure_130_1(closure_130_3[7]);
           obj.track(closure_130_12.GUILD_DISCOVERY_GUILD_SELECTED, obj9);
           _location = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp27) {
         _location = 3;
@@ -259,7 +259,7 @@ export const fromDiscoverableGuildServer = function fromDiscoverableGuildServer(
   return obj;
 };
 export const fromDiscoverableGuildSearchResult = function fromDiscoverableGuildSearchResult(id) {
-  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "ix", discoverySplash: null, emojis: [] };
+  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "unicodeVersion", discoverySplash: "backgroundColor", emojis: [] };
   ({ approximate_presence_count: obj.presenceCount, approximate_member_count: obj.memberCount, discovery_splash: obj.discoverySplash } = id);
   new Set(id.features);
   return obj;

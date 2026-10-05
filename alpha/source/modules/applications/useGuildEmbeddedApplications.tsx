@@ -62,7 +62,7 @@ let closure_3 = _asyncToGenerator(async (arg0, value, arg2) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: "IconComponent" };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -91,7 +91,7 @@ let closure_3 = _asyncToGenerator(async (arg0, value, arg2) => {
         return obj;
       }
       c3 = 3;
-      return { value: "IconComponent", done: "IconComponent" };
+      return { value: "IconComponent", done: null };
     } catch (tmp10) {
       c3 = 3;
       throw tmp10;

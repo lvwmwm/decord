@@ -1,9 +1,9 @@
-// Module ID: 14554
-// Function ID: 14555
+// Module ID: 14558
+// Function ID: 14559
 // Name: SafetyHubViolationsContainer
-// Dependencies: [32, 19, 17, 8106, 8093, 1085, 21, 4890, 587, 558, 576, 4803, 1126, 4886, 13377, 10844, 9442, 8092, 11, 14555, 8094, 5093, 11490, 1987, 11494, 504, 1252, 11492, 2]
+// Dependencies: [32, 19, 17, 8106, 8093, 1085, 21, 4890, 587, 558, 576, 4803, 1126, 4886, 13379, 10844, 9442, 8092, 11, 14559, 8094, 5093, 11490, 1987, 11494, 504, 1252, 11492, 2]
 
-// Module 14554 (SafetyHubViolationsContainer)
+// Module 14558 (SafetyHubViolationsContainer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -306,7 +306,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           const tmp31 = unpackModuleId;
           if (opened) {
-            ChevronSmallDownIcon = tmp(13377).ChevronSmallUpIcon;
+            ChevronSmallDownIcon = tmp(13379).ChevronSmallUpIcon;
           } else {
             ChevronSmallDownIcon = tmp(10844).ChevronSmallDownIcon;
           }
@@ -404,7 +404,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items4[1] = unpackModuleId(Text2, { variant: "text-xxs/normal", color: "text-muted", children: stringResult });
   items2[1] = closure_12(metroRequire, obj4);
   if (opened) {
-    ChevronSmallDownIcon = tmp7(13377).ChevronSmallUpIcon;
+    ChevronSmallDownIcon = tmp7(13379).ChevronSmallUpIcon;
   } else {
     ChevronSmallDownIcon = tmp7(10844).ChevronSmallDownIcon;
   }
@@ -887,7 +887,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj11;
   let obj9;
   let status;
-  const f117146 = (classification) => {
+  const f117299 = (classification) => {
     const obj = { classification };
     return closure_1_11(ClassificationDetail, obj, classification.id);
   };
@@ -939,9 +939,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (opened) {
     const obj5 = { style: items5 };
     items5 = [tmp.separator];
-    const items6 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f117146), , , ];
+    const items6 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f117299), , , ];
     let tmp11Result = memo.length < classifications.length;
-    memo.length > 0 && memo.map(f117146);
+    memo.length > 0 && memo.map(f117299);
     if (tmp11Result) {
       const obj7 = { style: items7 };
       items7 = [tmp.separator];

@@ -1,9 +1,9 @@
-// Module ID: 16602
-// Function ID: 16603
+// Module ID: 16608
+// Function ID: 16609
 // Name: AppLauncherActionSheet
 // Dependencies: [32, 19, 1489, 21, 558, 576, 4612, 10994, 8932, 10995, 11826, 11693, 6645, 6647, 2]
 
-// Module 16602 (AppLauncherActionSheet)
+// Module 16608 (AppLauncherActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
@@ -231,6 +231,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputRef) =
 }) : ((arg0) => {
   let channel;
   let closure_129_0;
+  let logger;
   let name;
   ({ chatInputRef: closure_129_0, channel } = arg0);
   const ref = react.useRef(null);
@@ -281,15 +282,13 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputRef) =
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  let logger;
   let tmp4;
   let tmp5;
-  let tmp = dependencyMap;
   const obj = react2;
   const cResult = obj.c(5);
-  [tmp4, tmp5] = _slicedToArray(react.useState(false), 2);
+  [tmp4, tmp5] = react.useState(false);
   let closure_0 = tmp5;
-  const tmp3 = _slicedToArray(react.useState(false), 2);
+  _slicedToArray(react.useState(false), 2);
   if (cResult[0] === tmp4) {
     let tmp6;
     let tmp14;

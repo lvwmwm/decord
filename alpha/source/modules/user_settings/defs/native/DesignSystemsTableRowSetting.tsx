@@ -1,9 +1,9 @@
-// Module ID: 15646
-// Function ID: 15647
+// Module ID: 15650
+// Function ID: 15651
 // Name: DesignSystemsTableRowSetting
-// Dependencies: [7634, 1085, 11129, 15647, 2]
+// Dependencies: [7634, 1085, 11129, 15651, 2]
 
-// Module 15646 (DesignSystemsTableRowSetting)
+// Module 15650 (DesignSystemsTableRowSetting)
 import Constants from "Constants" /* 1085 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;

@@ -1,12 +1,12 @@
-// Module ID: 17910
-// Function ID: 17911
+// Module ID: 17932
+// Function ID: 17933
 // Name: useArchiveOrDelete
-// Dependencies: [5, 32, 19, 558, 576, 15026, 15041, 1126, 5708, 1188, 38, 4567, 2]
+// Dependencies: [5, 32, 19, 558, 576, 15030, 15045, 1126, 5708, 1188, 38, 4567, 2]
 
-// Module 17910 (useArchiveOrDelete)
+// Module 17932 (useArchiveOrDelete)
 import intl13 from "intl" /* 1126 */;
 import ToastUtilsAll from "ToastUtils" /* 4567 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15041 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15045 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -187,7 +187,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, guildI
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -260,7 +260,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, guildI
                 navigation.goBack();
               }
               c2 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp30) {
             c2 = 3;
@@ -503,7 +503,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, guildI
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -576,7 +576,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, guildI
               closure_128_3.goBack();
             }
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp30) {
           c2 = 3;

@@ -1,12 +1,12 @@
-// Module ID: 14423
-// Function ID: 14424
+// Module ID: 14427
+// Function ID: 14428
 // Name: HuePicker
-// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 14420, 4612, 6140, 5605, 2]
+// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 14424, 4612, 6140, 5605, 2]
 
-// Module 14423 (HuePicker)
+// Module 14427 (HuePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 14420 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 14424 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -109,7 +109,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((hue, barWidth,
       tmpResult.runOnJS(tmp4)();
     }
   };
-  fn.__closure = { hue, normalizeValue: tmp(14420).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4612).runOnJS };
+  fn.__closure = { hue, normalizeValue: tmp(14424).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4612).runOnJS };
   fn.__workletHash = 353921971989;
   fn.__initData = __initData;
   const fn2 = function s(arg0) {
@@ -121,8 +121,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((hue, barWidth,
       tmpResult.runOnJS(tmp4)();
     }
   };
-  ({ hue, normalizeValue: tmp(14420).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4612).runOnJS });
-  fn2.__closure = { hue, normalizeValue: tmp(14420).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4612).runOnJS };
+  ({ hue, normalizeValue: tmp(14424).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4612).runOnJS });
+  fn2.__closure = { hue, normalizeValue: tmp(14424).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4612).runOnJS };
   fn2.__workletHash = 10859524318070;
   fn2.__initData = __initData2;
   cResult[0] = barWidth;
@@ -132,7 +132,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((hue, barWidth,
   cResult[4] = fn2;
   tmp5 = fn2;
   tmp4 = fn;
-  ({ hue, normalizeValue: tmp(14420).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4612).runOnJS });
+  ({ hue, normalizeValue: tmp(14424).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4612).runOnJS });
 }) : ((hue, barWidth, onPanUpdate, onPanFinalize) => {
   let fn;
   let fn2;

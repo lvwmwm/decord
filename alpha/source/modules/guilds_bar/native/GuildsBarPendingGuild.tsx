@@ -1,16 +1,16 @@
-// Module ID: 16283
-// Function ID: 16284
+// Module ID: 16287
+// Function ID: 16288
 // Name: GuildsBarPendingGuild
-// Dependencies: [19, 4700, 2070, 4699, 5616, 21, 4890, 587, 558, 576, 16230, 4580, 504, 5971, 16264, 16233, 4702, 5917, 16245, 16274, 16222, 4612, 16253, 5974, 2]
+// Dependencies: [19, 4700, 2070, 4699, 5616, 21, 4890, 587, 558, 576, 16234, 4580, 504, 5971, 16268, 16237, 4702, 5917, 16249, 16278, 16226, 4612, 16257, 5974, 2]
 
-// Module 16283 (GuildsBarPendingGuild)
+// Module 16287 (GuildsBarPendingGuild)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4702 */;
 import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 5917 */;
 import GuildIcon from "GuildIcon" /* 5971 */;
-import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 16222 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16245 */;
+import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 16226 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16249 */;
 import react from "react" /* 19 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4700 */;
 import GuildRecord from "GuildRecord" /* 2070 */;
@@ -574,7 +574,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
     const tmp5Result2 = token(stateFromStores[13]);
     tmp19Result = tmp19(tmp5Result2, obj9);
   }
-  return <tmp5Result id={guildId} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} cutouts={cutouts} selected={stateFromStores} sharedId={sharedValue} circle={!stateFromStores} overState="Reflect" unread={null} label={str} config={memo} styles={guildsBarAnimatedWrapperStyles} externalChildren={badge} expandedChildren={null}>{tmp19Result}</tmp5Result>;
+  return <tmp5Result id={guildId} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} cutouts={cutouts} selected={stateFromStores} sharedId={sharedValue} circle={!stateFromStores} overState="Set" unread={null} label={str} config={memo} styles={guildsBarAnimatedWrapperStyles} externalChildren={badge} expandedChildren={null}>{tmp19Result}</tmp5Result>;
 }));
 size = size_mod;
 let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarPendingGuild.tsx");

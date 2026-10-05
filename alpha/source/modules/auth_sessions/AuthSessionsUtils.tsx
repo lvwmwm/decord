@@ -1,15 +1,15 @@
-// Module ID: 14587
-// Function ID: 14588
+// Module ID: 14591
+// Function ID: 14592
 // Name: AuthSessionsUtils
-// Dependencies: [19, 502, 14588, 558, 576, 504, 1126, 4461, 2]
+// Dependencies: [19, 502, 14592, 558, 576, 504, 1126, 4461, 2]
 // Exports: formatDate
 
-// Module 14587 (AuthSessionsUtils)
+// Module 14591 (AuthSessionsUtils)
 import intl2 from "intl" /* 1126 */;
 import _modDef4461 from "module_4461" /* 4461 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AuthSessionsStore from "AuthSessionsStore" /* 14588 */;
+import AuthSessionsStore from "AuthSessionsStore" /* 14592 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 16636
-// Function ID: 16637
+// Module ID: 16647
+// Function ID: 16648
 // Name: trackVoiceFeedback
-// Dependencies: [109, 5, 1999, 13620, 1252, 2]
+// Dependencies: [109, 5, 1999, 13622, 1252, 2]
 // Exports: default
 
-// Module 16636 (trackVoiceFeedback)
+// Module 16647 (trackVoiceFeedback)
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
@@ -34,7 +34,7 @@ let obj = function _trackVoiceFeedback() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -90,7 +90,7 @@ let obj = function _trackVoiceFeedback() {
             closure_21 = undefined;
             feedback = 1;
             c7 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === feedback) {
           if (arg0 === 1) {
@@ -158,7 +158,7 @@ let obj = function _trackVoiceFeedback() {
           const merged = Object.assign(closure_21);
           track(tmp15, obj);
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp48) {
         c7 = 3;

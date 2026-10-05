@@ -399,7 +399,7 @@ class CloudUpload extends Upload {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -491,7 +491,7 @@ class CloudUpload extends Upload {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -604,7 +604,7 @@ class CloudUpload extends Upload {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c6;
@@ -648,7 +648,7 @@ class CloudUpload extends Upload {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     }
                   } else {
                     try {
@@ -789,7 +789,7 @@ class CloudUpload extends Upload {
                             return obj;
                           } else {
                             c6 = 3;
-                            return { value: "IconComponent", done: "IconComponent" };
+                            return { value: "IconComponent", done: null };
                           }
                           value = {};
                           num7 = request.startOrResumeUpload(closure_130_3, num7);
@@ -963,7 +963,7 @@ class CloudUpload extends Upload {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -1048,7 +1048,7 @@ class CloudUpload extends Upload {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c6;
@@ -1192,7 +1192,7 @@ class CloudUpload extends Upload {
                     }
                   }
                   c9 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
                 break;
               }
@@ -1818,7 +1818,7 @@ class CloudUpload extends Upload {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -2014,7 +2014,7 @@ class CloudUpload extends Upload {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -2052,7 +2052,7 @@ class CloudUpload extends Upload {
             c2 = 0;
           }
           _self = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp7) {
           if (0 === c2) {
             _self = 3;
@@ -2093,7 +2093,7 @@ class CloudUpload extends Upload {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -2186,7 +2186,7 @@ class CloudUpload extends Upload {
             }
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp35) {
           url = tmp35;
           if (0 === c3) {

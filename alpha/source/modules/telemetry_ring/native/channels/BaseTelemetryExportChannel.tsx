@@ -80,7 +80,7 @@ class BaseTelemetryExportChannel extends BaseTelemetryChannel {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -111,7 +111,7 @@ class BaseTelemetryExportChannel extends BaseTelemetryChannel {
             return obj;
           }
           c0 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp4) {
           c0 = 3;
           throw tmp4;
@@ -174,7 +174,7 @@ class BaseTelemetryExportChannel extends BaseTelemetryChannel {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -246,7 +246,7 @@ class BaseTelemetryExportChannel extends BaseTelemetryChannel {
               }
             }
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp33) {
           c3 = 3;
@@ -270,7 +270,7 @@ class BaseTelemetryExportChannel extends BaseTelemetryChannel {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -343,7 +343,7 @@ class BaseTelemetryExportChannel extends BaseTelemetryChannel {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

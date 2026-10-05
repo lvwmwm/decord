@@ -1,12 +1,12 @@
-// Module ID: 13719
-// Function ID: 13720
+// Module ID: 13721
+// Function ID: 13722
 // Name: NsfwGateGuildSettingsActionSheet
-// Dependencies: [19, 21, 558, 576, 13720, 6644, 1126, 6697, 4854, 6614, 13721, 6701, 2]
+// Dependencies: [19, 21, 558, 576, 13722, 6644, 1126, 6697, 4854, 6614, 13723, 6701, 2]
 
-// Module 13719 (NsfwGateGuildSettingsActionSheet)
+// Module 13721 (NsfwGateGuildSettingsActionSheet)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6614 */;
-import GuildActionSheetActions from "GuildActionSheetActions" /* 13721 */;
+import GuildActionSheetActions from "GuildActionSheetActions" /* 13723 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -37,7 +37,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   } else {
     tmp4 = cResult[1];
   }
-  const tmpResult = guild(13720);
+  const tmpResult = guild(13722);
   const messageRequestPrivacyOption = tmpResult.useMessageRequestPrivacyOption(tmp4);
   if (cResult[2] !== guild.name) {
     const obj3 = { title: guild.name };
@@ -75,7 +75,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   }
   if (cResult[7] !== guild) {
     const obj5 = { guild };
-    const tmp16 = closure_3(guild(13721).RestrictedGuildPrivacyOption, obj5);
+    const tmp16 = closure_3(guild(13723).RestrictedGuildPrivacyOption, obj5);
     cResult[7] = guild;
     cResult[8] = tmp16;
     tmp14 = tmp16;
@@ -146,7 +146,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let obj3;
   let obj4;
   guild = guild.guild;
-  let obj = guild(13720);
+  let obj = guild(13722);
   const messageRequestPrivacyOption = obj.useMessageRequestPrivacyOption({ guild });
   let obj2 = { header: closure_3(guild(6644).BottomSheetTitleHeader, obj3), children: closure_4(Group, obj4) };
   const ActionSheet = guild(6701).ActionSheet;
@@ -164,7 +164,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   };
   const ActionSheetRow = guild(6697).ActionSheetRow;
   intl = guild(1126).intl;
-  items = [closure_3(ActionSheetRow, obj5), closure_3(guild(13721).RestrictedGuildPrivacyOption, { guild }), messageRequestPrivacyOption, ];
+  items = [closure_3(ActionSheetRow, obj5), closure_3(guild(13723).RestrictedGuildPrivacyOption, { guild }), messageRequestPrivacyOption, ];
   const obj6 = {
     variant: "danger",
     label: intl2.string(guild(1126).t.J2TBi3),

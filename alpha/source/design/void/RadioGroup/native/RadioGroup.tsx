@@ -1,9 +1,9 @@
-// Module ID: 13908
-// Function ID: 13909
+// Module ID: 13910
+// Function ID: 13911
 // Name: RadioGroup
-// Dependencies: [19, 17, 1096, 21, 4890, 587, 558, 576, 4594, 6633, 13909, 2]
+// Dependencies: [19, 17, 1096, 21, 4890, 587, 558, 576, 4594, 6633, 13911, 2]
 
-// Module 13908 (RadioGroup)
+// Module 13910 (RadioGroup)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -725,7 +725,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       items[0] = style;
       tmp = jsxs;
       Fragment = closure_3.Fragment;
-      tmp3 = f65801;
+      tmp3 = f65842;
       arr2 = closure_1;
       if (arg1 === closure_1.length - 1) {
         obj1 = { marginBottom: 0 };

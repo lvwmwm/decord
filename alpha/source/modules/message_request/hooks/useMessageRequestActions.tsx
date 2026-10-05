@@ -75,7 +75,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -139,7 +139,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
           c4(false);
         }
         c6 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp39) {
         closure_3 = tmp39;
         if (0 === c4) {
@@ -173,7 +173,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -236,7 +236,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
           c5(false);
         }
         c6 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp39) {
         closure_3 = tmp39;
         if (0 === c4) {
@@ -268,7 +268,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       while (true) {
@@ -315,7 +315,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
               }
             }
             c8 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else if (1 === tmp4) {
           c6 = 0;
@@ -374,7 +374,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -406,7 +406,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     }
                   } else {
                     try {
@@ -459,7 +459,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
                         return obj;
                       } else {
                         c1 = 3;
-                        return { value: "IconComponent", done: "IconComponent" };
+                        return { value: "IconComponent", done: null };
                       }
                     } catch (tmp16) {
                       c1 = 3;
@@ -487,7 +487,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
                 }
               }
               v3 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else if (1 === tmp4) {
             c4 = 0;

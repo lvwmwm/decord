@@ -1,9 +1,9 @@
-// Module ID: 14956
-// Function ID: 14957
+// Module ID: 14960
+// Function ID: 14961
 // Name: useVideoExternallyPaused
 // Dependencies: [4561, 558, 576, 7580, 4736, 10940, 504, 5709, 1369, 2]
 
-// Module 14956 (useVideoExternallyPaused)
+// Module 14960 (useVideoExternallyPaused)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;

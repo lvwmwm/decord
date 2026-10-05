@@ -1,9 +1,9 @@
-// Module ID: 15654
-// Function ID: 15655
+// Module ID: 15658
+// Function ID: 15659
 // Name: DesignSystemsTabsSetting
-// Dependencies: [7634, 1085, 11129, 15655, 2]
+// Dependencies: [7634, 1085, 11129, 15659, 2]
 
-// Module 15654 (DesignSystemsTabsSetting)
+// Module 15658 (DesignSystemsTabsSetting)
 import Constants from "Constants" /* 1085 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;

@@ -1,8 +1,8 @@
-// Module ID: 13133
-// Function ID: 13134
+// Module ID: 13135
+// Function ID: 13136
 // Dependencies: [2]
 
-// Module 13133
+// Module 13135
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/premium/wumpus-avatar.png.js");

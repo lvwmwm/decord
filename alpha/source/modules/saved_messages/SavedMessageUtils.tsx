@@ -38,7 +38,7 @@ let obj = function _savedMessageJumpToMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -83,11 +83,11 @@ let obj = function _savedMessageJumpToMessage() {
               if (null == type2.recipients) {
                 c5 = 0;
                 c7 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } else if (type2.recipients.length > 1) {
                 c5 = 0;
                 c7 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } else {
                 type = closure_131_1(closure_131_2[10]);
                 const recipients = type2.recipients;
@@ -116,7 +116,7 @@ let obj = function _savedMessageJumpToMessage() {
           type = CHANNEL(guildId, closure_0.saveData.channelId, closure_0.saveData.messageId);
           tmp17(type, { openChannel: true });
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp26) {
           closure_4 = tmp26;
           if (0 === c5) {

@@ -1,9 +1,9 @@
-// Module ID: 13664
-// Function ID: 13665
+// Module ID: 13666
+// Function ID: 13667
 // Name: AddFriendModal
-// Dependencies: [32, 19, 17, 1377, 1085, 12327, 21, 4890, 5915, 587, 558, 576, 12329, 1252, 1369, 5590, 1493, 5093, 4722, 1126, 8038, 6880, 13665, 6010, 4886, 13666, 13668, 1618, 6496, 2]
+// Dependencies: [32, 19, 17, 1377, 1085, 12327, 21, 4890, 5915, 587, 558, 576, 12329, 1252, 1369, 5590, 1493, 5093, 4722, 1126, 8038, 6880, 13667, 6010, 4886, 13668, 13670, 1618, 6496, 2]
 
-// Module 13664 (AddFriendModal)
+// Module 13666 (AddFriendModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;

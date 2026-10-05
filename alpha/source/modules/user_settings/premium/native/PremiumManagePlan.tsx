@@ -1,9 +1,9 @@
-// Module ID: 13300
-// Function ID: 13301
+// Module ID: 13302
+// Function ID: 13303
 // Name: PremiumManagePlan
-// Dependencies: [5, 32, 19, 17, 5989, 4529, 1377, 4530, 4533, 4534, 6899, 1986, 6739, 1085, 4869, 1379, 21, 3, 4890, 587, 558, 576, 1490, 6014, 5909, 4886, 1126, 6657, 13192, 6681, 504, 4589, 4729, 1105, 5404, 5984, 10394, 6910, 1252, 13189, 13196, 4528, 38, 6736, 13301, 13302, 13166, 13176, 7738, 5594, 13155, 13195, 5875, 8868, 13201, 4803, 2115, 5605, 1188, 7722, 5995, 1618, 13263, 6898, 6760, 5590, 7736, 13265, 13228, 2069, 6487, 6491, 5772, 13197, 13279, 2]
+// Dependencies: [5, 32, 19, 17, 5989, 4529, 1377, 4530, 4533, 4534, 6899, 1986, 6739, 1085, 4869, 1379, 21, 3, 4890, 587, 558, 576, 1490, 6014, 5909, 4886, 1126, 6657, 13194, 6681, 504, 4589, 4729, 1105, 5404, 5984, 10394, 6910, 1252, 13191, 13198, 4528, 38, 6736, 13303, 13304, 13168, 13178, 7738, 5594, 13157, 13197, 5875, 8868, 13203, 4803, 2115, 5605, 1188, 7722, 5995, 1618, 13265, 6898, 6760, 5590, 7736, 13267, 13230, 2069, 6487, 6491, 5772, 13199, 13281, 2]
 
-// Module 13300 (PremiumManagePlan)
+// Module 13302 (PremiumManagePlan)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -27,11 +27,11 @@ import UserSettingsUtils from "UserSettingsUtils" /* 6491 */;
 import PremiumManagementUtils from "PremiumManagementUtils" /* 6910 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7722 */;
 import PremiumFeaturesCardDefault from "PremiumFeaturesCard" /* 8868 */;
-import PremiumSubscriptionDetails from "PremiumSubscriptionDetails" /* 13155 */;
-import PremiumBillingInfoDefault from "PremiumBillingInfo" /* 13195 */;
-import PremiumAccountCreditDefault from "PremiumAccountCredit" /* 13197 */;
-import PremiumNitroHomeUtils from "PremiumNitroHomeUtils" /* 13228 */;
-import PremiumFeaturesTableDefault from "PremiumFeaturesTable" /* 13279 */;
+import PremiumSubscriptionDetails from "PremiumSubscriptionDetails" /* 13157 */;
+import PremiumBillingInfoDefault from "PremiumBillingInfo" /* 13197 */;
+import PremiumAccountCreditDefault from "PremiumAccountCredit" /* 13199 */;
+import PremiumNitroHomeUtils from "PremiumNitroHomeUtils" /* 13230 */;
+import PremiumFeaturesTableDefault from "PremiumFeaturesTable" /* 13281 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -75,7 +75,7 @@ let tmp5;
 const useMountEffectDefault = tmp5(5590);
 const VisualEffectViewAnimatedDefault = tmp5(5772);
 const useFractionalPremiumInfoDefault = tmp5(6898);
-const useFPDurationLeftDefault = tmp5(13265);
+const useFPDurationLeftDefault = tmp5(13267);
 function SubscriptionAndBillingInfo(subscription) {
   let Button;
   let _undefined;
@@ -419,7 +419,7 @@ function SubscriptionAndBillingInfo(subscription) {
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 let c3;
@@ -459,7 +459,7 @@ function SubscriptionAndBillingInfo(subscription) {
                     c3 = 0;
                     closure_128_8(false);
                     c4 = 3;
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } catch (tmp21) {
                   stateFromStores2 = tmp21;
@@ -1181,7 +1181,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp5 = importDefault;
   ({ top, bottom } = useSafeAreaInsetsDefault());
   const tmp6 = useSafeAreaInsetsDefault();
-  let obj2 = navigation(13263);
+  let obj2 = navigation(13265);
   const youBarSettingsOutsideSafeAreaTop = obj2.useYouBarSettingsOutsideSafeAreaTop();
   let obj3 = navigation(1490);
   navigation = obj3.useNavigation();
@@ -1305,7 +1305,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult8 = navigation(7736);
   const isInReverseTrial = tmpResult8.useIsInReverseTrial();
   const tmp5Result = useFPDurationLeftDefault;
-  tmp5Result(tmp27.endsAt, navigation(13265).CountDownMessageTypes.SHORT_TIME);
+  tmp5Result(tmp27.endsAt, navigation(13267).CountDownMessageTypes.SHORT_TIME);
   if (cResult[11] !== tmp27) {
     class X {
       constructor() {
@@ -1631,7 +1631,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let items9;
   let tmp10;
   let tmp11;
-  const f114273 = () => {
+  const f114426 = () => {
     const items = [SubscriptionStore.getPremiumTypeSubscription(), SubscriptionStore.hasFetchedSubscriptions()];
     return items;
   };
@@ -1639,7 +1639,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const rect = useSafeAreaInsetsDefault();
   const top = rect.top;
   const bottom = rect.bottom;
-  let obj = navigation(13263);
+  let obj = navigation(13265);
   const youBarSettingsOutsideSafeAreaTop = obj.useYouBarSettingsOutsideSafeAreaTop();
   let obj2 = navigation(1490);
   navigation = obj2.useNavigation();
@@ -1653,8 +1653,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const stateFromStores = obj4.useStateFromStores(items1, () => SubscriptionPlanStore.isLoadedForPremiumSKUs());
   const items2 = [SubscriptionStore];
   const obj5 = navigation(504);
-  [tmp10, tmp11] = obj5.useStateFromStoresArray(items2, f114273);
-  _slicedToArray(obj5.useStateFromStoresArray(items2, f114273), 2);
+  [tmp10, tmp11] = obj5.useStateFromStoresArray(items2, f114426);
+  _slicedToArray(obj5.useStateFromStoresArray(items2, f114426), 2);
   const items3 = [UserStore];
   const obj6 = navigation(504);
   const stateFromStores1 = obj6.useStateFromStores(items3, () => currentUser.getCurrentUser());
@@ -1674,7 +1674,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj8 = navigation(7736);
   let isInReverseTrial = obj8.useIsInReverseTrial();
   const tmp15 = useFPDurationLeftDefault;
-  const tmp15Result = tmp15(tmp12.endsAt, navigation(13265).CountDownMessageTypes.SHORT_TIME);
+  const tmp15Result = tmp15(tmp12.endsAt, navigation(13267).CountDownMessageTypes.SHORT_TIME);
   const obj9 = navigation(4528);
   const unactivatedFractionalPremiumDurationString = obj9.getUnactivatedFractionalPremiumDurationString(tmp12);
   if (null !== tmp10) {
@@ -1789,7 +1789,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         },
       subscription: tmp10
     };
-    items10 = [closure_29(tmp2(13155), obj17), ];
+    items10 = [closure_29(tmp2(13157), obj17), ];
     const obj18 = { style: tmp.billingInfo, subscription: tmp10 };
     items10[1] = closure_29(PremiumBillingInfoDefault, obj18);
     tmp27Result = tmp27(tmp28, obj16);

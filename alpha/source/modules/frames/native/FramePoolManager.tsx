@@ -1,11 +1,11 @@
-// Module ID: 16590
-// Function ID: 16591
+// Module ID: 16596
+// Function ID: 16597
 // Name: FramePoolManager
-// Dependencies: [16591, 9040, 2]
+// Dependencies: [16597, 9040, 2]
 
-// Module 16590 (FramePoolManager)
+// Module 16596 (FramePoolManager)
 import getFramesManagerDefault from "getFramesManager" /* 9040 */;
-import AbstractFramePoolManager from "AbstractFramePoolManager" /* 16591 */;
+import AbstractFramePoolManager from "AbstractFramePoolManager" /* 16597 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;

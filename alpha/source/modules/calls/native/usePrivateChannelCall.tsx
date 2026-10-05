@@ -1,9 +1,9 @@
-// Module ID: 12957
-// Function ID: 12958
+// Module ID: 12959
+// Function ID: 12960
 // Name: usePrivateChannelCall
 // Dependencies: [5, 19, 2051, 558, 576, 1126, 10603, 504, 4903, 2]
 
-// Module 12957 (usePrivateChannelCall)
+// Module 12959 (usePrivateChannelCall)
 import intl3 from "intl" /* 1126 */;
 import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 10603 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -86,7 +86,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -137,7 +137,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
             c2();
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp24) {
           c3 = 3;
           throw tmp24;
@@ -253,7 +253,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -305,7 +305,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
             closure_129_2();
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp24) {
           c3 = 3;
           throw tmp24;

@@ -84,7 +84,7 @@ export const calculateOverlayedColor = function calculateOverlayedColor(secondar
   let tmp10;
   let tmp8;
   let tmp9;
-  const f95753 = (item, index) => Math.floor(alpha * item + (1 - alpha) * items1[index]);
+  const f95896 = (item, index) => Math.floor(alpha * item + (1 - alpha) * items1[index]);
   const obj = utils_ColorUtils;
   const int2rgbArrayResult = obj.int2rgbArray(secondaryColor);
   if (null == overlay) {
@@ -100,8 +100,8 @@ export const calculateOverlayedColor = function calculateOverlayedColor(secondar
       const items1 = [, , ];
       [arr2[0], arr2[1], arr2[2]] = int2rgbArrayResult;
       const alpha = parseStringResult.alpha;
-      [tmp8, tmp9, tmp10] = items.map(f95753);
-      _slicedToArray(items.map(f95753), 3);
+      [tmp8, tmp9, tmp10] = items.map(f95896);
+      _slicedToArray(items.map(f95896), 3);
       const _HermesInternal = HermesInternal;
       const tmpResult = utils_ColorUtils;
       return tmpResult.rgb2int("rgba(" + tmp8 + ", " + tmp9 + ", " + tmp10 + ")");

@@ -1,9 +1,9 @@
-// Module ID: 16980
-// Function ID: 16981
+// Module ID: 17004
+// Function ID: 17005
 // Name: ChannelSettingsPermissionsOverview
-// Dependencies: [32, 5, 19, 17, 2107, 2051, 2106, 2074, 4519, 1377, 1085, 21, 4890, 587, 558, 576, 5707, 1126, 5043, 4514, 11232, 9217, 10062, 12, 6074, 14774, 5993, 1490, 10978, 10079, 15128, 504, 1985, 10680, 16981, 6473, 7498, 4903, 2]
+// Dependencies: [32, 5, 19, 17, 2107, 2051, 2106, 2074, 4519, 1377, 1085, 21, 4890, 587, 558, 576, 5707, 1126, 5043, 4514, 11232, 9217, 10062, 12, 6074, 14778, 5993, 1490, 10978, 10079, 15132, 504, 1985, 10680, 17005, 6473, 7498, 4903, 2]
 
-// Module 16980 (ChannelSettingsPermissionsOverview)
+// Module 17004 (ChannelSettingsPermissionsOverview)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -17,8 +17,8 @@ import TableRow3 from "TableRow" /* 5993 */;
 import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6473 */;
 import RoleLabel from "RoleLabel" /* 10079 */;
 import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10680 */;
-import CircleMinusIcon2 from "CircleMinusIcon" /* 15128 */;
-import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 16981 */;
+import CircleMinusIcon2 from "CircleMinusIcon" /* 15132 */;
+import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 17005 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -86,7 +86,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         const tmp15 = globalThis;
         const _Symbol = Symbol;
         if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp19 = closure_16(tmp(14774).RefreshIcon, {});
+          const tmp19 = closure_16(tmp(14778).RefreshIcon, {});
           let intl2 = tmp(1126).intl;
           const stringResult = intl2.string(tmp(1126).t.NVwuHq);
           cResult[10] = tmp19;
@@ -208,7 +208,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -251,7 +251,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
               saveChannel(id, obj);
             }
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp15) {
           c3 = 3;
@@ -321,7 +321,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -364,7 +364,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
               saveChannel(id, obj);
             }
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp15) {
           c3 = 3;
@@ -390,7 +390,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     formatToPlainStringResult = formatToPlainString(t.OIhm0M, obj4);
   }
   obj5 = { title: formatToPlainStringResult, hasIcons: true, children: tmp6(TableRow, obj6) };
-  obj6 = { icon: tmp6(tmp3(14774).RefreshIcon, {}), label: intl2.string(tmp3(1126).t.NVwuHq), onPress: callback };
+  obj6 = { icon: tmp6(tmp3(14778).RefreshIcon, {}), label: intl2.string(tmp3(1126).t.NVwuHq), onPress: callback };
   TableRow = tmp3(5993).TableRow;
   intl2 = tmp3(1126).intl;
   return closure_16(tmp7, obj2);
@@ -673,7 +673,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDelete) => {
         tmp11 = null;
         if (!tmp4) {
           const obj3 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: intl.string(intl5.t.N86XcP) };
-          const CircleMinusIcon = tmp(15128).CircleMinusIcon;
+          const CircleMinusIcon = tmp(15132).CircleMinusIcon;
           intl = tmp(1126).intl;
           tmp11 = authStore3(CircleMinusIcon, obj3);
         }
@@ -710,7 +710,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDelete) => {
     tmp2Result = null;
     if (!tmp) {
       const obj2 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: intl.string(intl5.t.N86XcP) };
-      const CircleMinusIcon = tmp3(15128).CircleMinusIcon;
+      const CircleMinusIcon = tmp3(15132).CircleMinusIcon;
       intl = tmp3(1126).intl;
       tmp2Result = tmp2(CircleMinusIcon, obj2);
     }
@@ -1002,7 +1002,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDelete) => {
     let tmp6 = null;
     if (isEditing) {
       const obj2 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: intl.string(intl5.t.N86XcP) };
-      const CircleMinusIcon = tmp(15128).CircleMinusIcon;
+      const CircleMinusIcon = tmp(15132).CircleMinusIcon;
       intl = tmp(1126).intl;
       tmp6 = authStore3(CircleMinusIcon, obj2);
     }
@@ -1196,7 +1196,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelectRow) =
     class L {
       constructor(arg0) {
         closure_0 = onSelectRow;
-        obj = { guildId: guild_id, user: onSelectRow, isEditing: closure_0, onSelect() { /* body not rendered: F147549 */ }, onDelete() { /* body not rendered: F147550 */ } };
+        obj = { guildId: guild_id, user: onSelectRow, isEditing: closure_0, onSelect() { /* body not rendered: F147833 */ }, onDelete() { /* body not rendered: F147834 */ } };
         return closure_1_16(closure_1_24, obj, onSelectRow.id);
       }
     }

@@ -1,9 +1,9 @@
-// Module ID: 17622
-// Function ID: 17623
+// Module ID: 17646
+// Function ID: 17647
 // Name: VerificationModal
-// Dependencies: [5, 19, 17, 17623, 2044, 1377, 1085, 21, 4890, 558, 576, 1126, 5594, 1491, 1188, 17624, 1260, 6010, 6880, 9290, 6693, 6082, 17628, 6080, 6095, 6092, 6475, 6541, 6542, 6081, 17629, 6575, 6489, 504, 4854, 4745, 6496, 2]
+// Dependencies: [5, 19, 17, 17647, 2044, 1377, 1085, 21, 4890, 558, 576, 1126, 5594, 1491, 1188, 17648, 1260, 6010, 6880, 9290, 6693, 6082, 17652, 6080, 6095, 6092, 6475, 6541, 6542, 6081, 17653, 6575, 6489, 504, 4854, 4745, 6496, 2]
 
-// Module 17622 (VerificationModal)
+// Module 17646 (VerificationModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -23,10 +23,10 @@ import Navigator2 from "Navigator" /* 6496 */;
 import VerifyPhoneDefault from "VerifyPhone" /* 6575 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 6880 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9290 */;
-import OverviewDefault from "Overview" /* 17628 */;
+import OverviewDefault from "Overview" /* 17652 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import PhoneVerificationStore from "PhoneVerificationStore" /* 17623 */;
+import PhoneVerificationStore from "PhoneVerificationStore" /* 17647 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2044 */;
 import UserStore from "UserStore" /* 1377 */;
 import Constants from "Constants" /* 1085 */;
@@ -215,7 +215,7 @@ function getScreens() {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   let c4;
@@ -301,7 +301,7 @@ function getScreens() {
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -336,7 +336,7 @@ function getScreens() {
                         closure_0.push(constants2.OVERVIEW);
                       }
                       c2 = 3;
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp14) {
                     c2 = 3;
@@ -469,7 +469,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) =>
     return tmp14;
   }
   const EmptyState = tmp(1188).EmptyState;
-  const tmp15 = <EmptyState Illustration={navigation(17624).VerifyPhone} title={tmp5} body={tmp6}>{null}</EmptyState>;
+  const tmp15 = <EmptyState Illustration={navigation(17648).VerifyPhone} title={tmp5} body={tmp6}>{null}</EmptyState>;
   cResult[5] = tmp4.button;
   cResult[6] = tmp11;
   cResult[7] = tmp15;
@@ -502,7 +502,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) =>
   });
   const Button = navigation(5594).Button;
   intl3 = navigation(1126).intl;
-  return <EmptyState Illustration={navigation(17624).VerifyPhone} title={intl.string(navigation(1126).t.KLnLIP)} body={intl2.string(navigation(1126).t.XGbCq3)}>{null}</EmptyState>;
+  return <EmptyState Illustration={navigation(17648).VerifyPhone} title={intl.string(navigation(1126).t.KLnLIP)} body={intl2.string(navigation(1126).t.XGbCq3)}>{null}</EmptyState>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {

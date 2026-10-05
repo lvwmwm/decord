@@ -1,10 +1,10 @@
-// Module ID: 13362
-// Function ID: 13363
+// Module ID: 13364
+// Function ID: 13365
 // Name: OutboundPromotionCard
-// Dependencies: [32, 19, 17, 1085, 21, 4890, 587, 5620, 558, 576, 6644, 1126, 4877, 6645, 4886, 4791, 13226, 13363, 5708, 13364, 1987, 13224, 5594, 4854, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 4890, 587, 5620, 558, 576, 6644, 1126, 4877, 6645, 4886, 4791, 13228, 13365, 5708, 13366, 1987, 13226, 5594, 4854, 2]
 // Exports: default
 
-// Module 13362 (OutboundPromotionCard)
+// Module 13364 (OutboundPromotionCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;

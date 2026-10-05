@@ -1,12 +1,12 @@
-// Module ID: 13742
-// Function ID: 13743
+// Module ID: 13744
+// Function ID: 13745
 // Name: GuildBadgeGem
-// Dependencies: [109, 19, 21, 558, 576, 13728, 8136, 2]
+// Dependencies: [109, 19, 21, 558, 576, 13730, 8136, 2]
 
-// Module 13742 (GuildBadgeGem)
+// Module 13744 (GuildBadgeGem)
 import react2 from "react" /* 576 */;
 import inlineStyles from "inlineStyles" /* 8136 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 13728 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 13730 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,9 +1,9 @@
-// Module ID: 14900
-// Function ID: 14901
+// Module ID: 14904
+// Function ID: 14905
 // Name: QuestDockContextMenuActionSheet
-// Dependencies: [5, 19, 5623, 1085, 21, 558, 576, 14899, 10948, 5630, 10010, 1126, 5626, 7212, 7224, 7213, 7223, 7202, 6697, 12723, 8895, 10918, 4854, 7206, 14901, 10908, 6017, 9994, 14903, 10949, 6701, 10911, 8364, 14904, 14906, 14908, 6458, 6885, 4843, 6688, 11015, 14910, 2]
+// Dependencies: [5, 19, 5623, 1085, 21, 558, 576, 14903, 10948, 5630, 10010, 1126, 5626, 7212, 7224, 7213, 7223, 7202, 6697, 12723, 8895, 10918, 4854, 7206, 14905, 10908, 6017, 9994, 14907, 10949, 6701, 10911, 8364, 14908, 14910, 14912, 6458, 6885, 4843, 6688, 11015, 14914, 2]
 
-// Module 14900 (QuestDockContextMenuActionSheet)
+// Module 14904 (QuestDockContextMenuActionSheet)
 import Constants from "Constants" /* 1085 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
 import QuestConstants from "QuestConstants" /* 5623 */;
@@ -20,7 +20,7 @@ import QuestActionCreators from "QuestActionCreators" /* 9994 */;
 import QuestCopyUtils from "QuestCopyUtils" /* 10010 */;
 import QuestUtils from "QuestUtils" /* 10908 */;
 import QuestPlatformUtils from "QuestPlatformUtils" /* 10918 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 14910 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 14914 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -49,7 +49,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((creative) => {
   creative = creative.creative;
   const impressionId = creative.impressionId;
   if (cResult[0] !== creative) {
-    const tmpResult = tmp(14899);
+    const tmpResult = tmp(14903);
     const creativeAnalyticsParams = tmpResult.getCreativeAnalyticsParams(creative);
     cResult[0] = creative;
     cResult[1] = creativeAnalyticsParams;
@@ -593,7 +593,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((creative) => {
           obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -651,7 +651,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((creative) => {
             return obj;
           }
           c2 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp26) {
           c2 = 3;
           throw tmp26;
@@ -1105,7 +1105,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
     }
   };
   const ActionSheetRow2 = quest(6697).ActionSheetRow;
-  obj7 = { IconComponent: quest(14904).RedoIcon };
+  obj7 = { IconComponent: quest(14908).RedoIcon };
   Icon2 = quest(6697).ActionSheetRow.Icon;
   obj8 = { text: intl3.string(quest(1126).t.cKSLr4) };
   FormLabel2 = quest(8895).FormLabel;
@@ -1121,7 +1121,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
     }
   };
   const ActionSheetRow3 = quest(6697).ActionSheetRow;
-  obj10 = { IconComponent: quest(14906).UndoIcon };
+  obj10 = { IconComponent: quest(14910).UndoIcon };
   Icon3 = quest(6697).ActionSheetRow.Icon;
   obj11 = { text: intl4.string(quest(1126).t.taqkwK) };
   FormLabel3 = quest(8895).FormLabel;
@@ -1137,7 +1137,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
     }
   };
   const ActionSheetRow4 = quest(6697).ActionSheetRow;
-  obj13 = { IconComponent: quest(14908).UnsendIcon };
+  obj13 = { IconComponent: quest(14912).UnsendIcon };
   Icon4 = quest(6697).ActionSheetRow.Icon;
   obj14 = { text: intl5.string(quest(1126).t.JF6W66) };
   FormLabel4 = quest(8895).FormLabel;

@@ -1,10 +1,10 @@
-// Module ID: 13192
-// Function ID: 13193
+// Module ID: 13194
+// Function ID: 13195
 // Name: PremiumSubscriptionInvoice
 // Dependencies: [109, 32, 5, 19, 4537, 1085, 4528, 1282, 584, 5312, 38, 5322, 558, 576, 2]
 // Exports: getItemUnitPriceWithDiscount, useFetchSubscriptionInvoicePreview
 
-// Module 13192 (PremiumSubscriptionInvoice)
+// Module 13194 (PremiumSubscriptionInvoice)
 import Constants from "Constants" /* 1085 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -21,7 +21,7 @@ let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
-const f113994 = (enabled) => enabled.enabled;
+const f114147 = (enabled) => enabled.enabled;
 function createSubscriptionInvoicePreview() {
   return obj(...arguments);
 }
@@ -50,7 +50,7 @@ let obj = function _createSubscriptionInvoicePreview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -94,7 +94,7 @@ let obj = function _createSubscriptionInvoicePreview() {
             value = undefined;
             currency = 1;
             renewal = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === currency) {
           if (arg0 === 1) {
@@ -206,7 +206,7 @@ obj = function _updateSubscriptionInvoicePreview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let currency;
@@ -248,7 +248,7 @@ obj = function _updateSubscriptionInvoicePreview() {
             value = undefined;
             c5 = 1;
             location_stack = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -358,7 +358,7 @@ obj = function _createOneTimePurchaseInvoicePreview() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -384,7 +384,7 @@ obj = function _createOneTimePurchaseInvoicePreview() {
               body = undefined;
               quantity = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === quantity) {
             if (arg0 === 1) {
@@ -468,7 +468,7 @@ obj = function _getSubscriptionInvoice() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -490,7 +490,7 @@ obj = function _getSubscriptionInvoice() {
             body = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -602,7 +602,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, 
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -652,7 +652,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, 
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp23) {
           closure_2 = tmp23;
@@ -711,7 +711,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, 
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -761,7 +761,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, 
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp23) {
             if (0 === c3) {
@@ -903,7 +903,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSer
         }
         tmp6 = null;
         if (null != payment_sources) {
-          const found = payment_sources.find(f113994);
+          const found = payment_sources.find(f114147);
           let id;
           if (found != null) {
             id = found.id;
@@ -957,7 +957,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSer
         }
         tmp6 = null;
         if (null != payment_sources) {
-          const found = payment_sources.find(f113994);
+          const found = payment_sources.find(f114147);
           let id;
           if (found != null) {
             id = found.id;

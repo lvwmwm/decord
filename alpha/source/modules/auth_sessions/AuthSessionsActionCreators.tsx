@@ -1,10 +1,10 @@
-// Module ID: 14753
-// Function ID: 14754
+// Module ID: 14757
+// Function ID: 14758
 // Name: AuthSessionsActionCreators
 // Dependencies: [5, 1085, 1282, 584, 2]
 // Exports: clearAuthSessions, fetchAuthSessions, logOutSessions
 
-// Module 14753 (AuthSessionsActionCreators)
+// Module 14757 (AuthSessionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
@@ -49,7 +49,7 @@ obj = function _logOutSessions() {
       items = arr2;
       if (0 === length.length) {
         let c4 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       items = [length];

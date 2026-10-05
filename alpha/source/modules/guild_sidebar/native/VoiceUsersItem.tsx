@@ -1,9 +1,9 @@
-// Module ID: 16048
-// Function ID: 16049
+// Module ID: 16052
+// Function ID: 16053
 // Name: VoiceUsersItem
 // Dependencies: [19, 17, 21, 4890, 558, 576, 2]
 
-// Module 16048 (VoiceUsersItem)
+// Module 16052 (VoiceUsersItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

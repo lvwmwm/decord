@@ -32,7 +32,7 @@ let obj = function _installApplicationOnDemandIfNeeded() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -65,7 +65,7 @@ let obj = function _installApplicationOnDemandIfNeeded() {
             let scopes;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else {
           if (1 === tmp4) {

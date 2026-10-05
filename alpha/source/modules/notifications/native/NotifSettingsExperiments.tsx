@@ -1,9 +1,9 @@
-// Module ID: 14285
-// Function ID: 14286
+// Module ID: 14287
+// Function ID: 14288
 // Name: NotifSettingsExperiments
 // Dependencies: [1440, 2]
 
-// Module 14285 (NotifSettingsExperiments)
+// Module 14287 (NotifSettingsExperiments)
 import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 

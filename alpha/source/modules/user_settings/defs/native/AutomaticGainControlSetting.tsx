@@ -1,9 +1,9 @@
-// Module ID: 15073
-// Function ID: 15074
+// Module ID: 15077
+// Function ID: 15078
 // Name: AutomaticGainControlSetting
 // Dependencies: [1999, 7634, 558, 576, 504, 1126, 11129, 9673, 2]
 
-// Module 15073 (AutomaticGainControlSetting)
+// Module 15077 (AutomaticGainControlSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;

@@ -1,9 +1,9 @@
-// Module ID: 15742
-// Function ID: 15743
+// Module ID: 15746
+// Function ID: 15747
 // Name: useCollectiblesShopHeader
-// Dependencies: [19, 17, 1377, 1087, 1085, 5623, 7854, 21, 4890, 587, 558, 576, 11762, 1126, 4886, 504, 8509, 10912, 7052, 6681, 6628, 4854, 11011, 1987, 1252, 10908, 5626, 5093, 7850, 11000, 7575, 8428, 7579, 15743, 1490, 2]
+// Dependencies: [19, 17, 1377, 1087, 1085, 5623, 7854, 21, 4890, 587, 558, 576, 11762, 1126, 4886, 504, 8509, 10912, 7052, 6681, 6628, 4854, 11011, 1987, 1252, 10908, 5626, 5093, 7850, 11000, 7575, 8428, 7579, 15747, 1490, 2]
 
-// Module 15742 (useCollectiblesShopHeader)
+// Module 15746 (useCollectiblesShopHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

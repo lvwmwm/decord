@@ -1,9 +1,9 @@
-// Module ID: 15678
-// Function ID: 15679
+// Module ID: 15682
+// Function ID: 15683
 // Name: DesignSystemTagGroupSetting
-// Dependencies: [7634, 1085, 11129, 15679, 2]
+// Dependencies: [7634, 1085, 11129, 15683, 2]
 
-// Module 15678 (DesignSystemTagGroupSetting)
+// Module 15682 (DesignSystemTagGroupSetting)
 import Constants from "Constants" /* 1085 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;

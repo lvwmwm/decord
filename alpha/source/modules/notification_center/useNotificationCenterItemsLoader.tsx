@@ -1,18 +1,18 @@
-// Module ID: 16351
-// Function ID: 16352
+// Module ID: 16355
+// Function ID: 16356
 // Name: useNotificationCenterItemsLoader
-// Dependencies: [5, 32, 19, 7122, 7124, 16350, 5072, 558, 576, 504, 16352, 6605, 7921, 2]
+// Dependencies: [5, 32, 19, 7122, 7124, 16354, 5072, 558, 576, 504, 16356, 6605, 7921, 2]
 
-// Module 16351 (useNotificationCenterItemsLoader)
+// Module 16355 (useNotificationCenterItemsLoader)
 import ReadStateConstants from "ReadStateConstants" /* 5072 */;
 import ReadStateActionCreators from "ReadStateActionCreators" /* 6605 */;
-import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 16352 */;
+import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 16356 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import RecentMentionsStore from "RecentMentionsStore" /* 7122 */;
 import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7124 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 16350 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 16354 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -284,7 +284,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isFocused) => {
                               const obj2 = { value, done: true };
                               return obj2;
                             } else {
-                              return { value: "IconComponent", done: "IconComponent" };
+                              return { value: "IconComponent", done: null };
                             }
                           } else {
                             try {
@@ -349,7 +349,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isFocused) => {
                                 closure_1_7(false);
                               }
                               c3 = 3;
-                              return { value: "IconComponent", done: "IconComponent" };
+                              return { value: "IconComponent", done: null };
                             } catch (tmp22) {
                               c3 = 3;
                               throw tmp22;
@@ -628,7 +628,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isFocused) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -693,7 +693,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isFocused) => {
           _undefined(false);
         }
         with_mentions = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp22) {
         with_mentions = 3;
         throw tmp22;

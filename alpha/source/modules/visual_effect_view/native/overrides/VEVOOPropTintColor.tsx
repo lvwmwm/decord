@@ -1,16 +1,16 @@
-// Module ID: 15840
-// Function ID: 15841
+// Module ID: 15844
+// Function ID: 15845
 // Name: VEVOOPropTintColor
-// Dependencies: [32, 19, 17, 5774, 21, 4890, 587, 558, 576, 15837, 4727, 6699, 8895, 15839, 14417, 1103, 2]
+// Dependencies: [32, 19, 17, 5774, 21, 4890, 587, 558, 576, 15841, 4727, 6699, 8895, 15843, 14421, 1103, 2]
 
-// Module 15840 (VEVOOPropTintColor)
+// Module 15844 (VEVOOPropTintColor)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
 import ColorUtils from "ColorUtils" /* 4727 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14417 */;
-import VEVOO from "VEVOO" /* 15837 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14421 */;
+import VEVOO from "VEVOO" /* 15841 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import VEVOOStore from "VEVOOStore" /* 5774 */;
@@ -297,7 +297,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
             tmp44 = tmp47;
           }
           const obj6 = { disabled: !tmp8, initialValue: ref, onValueChange: tmp39 };
-          const tmp43 = closure_8(first1(15839), obj6);
+          const tmp43 = closure_8(first1(15843), obj6);
           cResult[23] = !tmp8;
           cResult[24] = tmp39;
           cResult[25] = tmp43;
@@ -442,7 +442,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   items1 = [tmp.tintColor, { backgroundColor }];
   const FormRow2 = tmp2(8895).FormRow;
   const items2 = [closure_8(FormRow2, obj5), ];
-  const obj7 = { style: visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal, disabled: !tmp7, label: "Blur Tint Opacity " + str2, subLabel: closure_8(backgroundColor(15839), obj9) };
+  const obj7 = { style: visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal, disabled: !tmp7, label: "Blur Tint Opacity " + str2, subLabel: closure_8(backgroundColor(15843), obj9) };
   str2 = undefined;
   const FormRow3 = tmp2(8895).FormRow;
   tmp14 = closure_10;

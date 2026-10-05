@@ -1,9 +1,9 @@
-// Module ID: 14673
-// Function ID: 14674
+// Module ID: 14677
+// Function ID: 14678
 // Name: UserSettingsFamilyCenter
-// Dependencies: [32, 19, 17, 7048, 1377, 1085, 1110, 7049, 21, 558, 576, 5593, 4890, 587, 6657, 6681, 8295, 14674, 14675, 8297, 573, 1126, 2493, 14676, 14716, 7050, 9282, 1252, 5409, 5414, 5590, 6710, 9283, 10974, 2]
+// Dependencies: [32, 19, 17, 7048, 1377, 1085, 1110, 7049, 21, 558, 576, 5593, 4890, 587, 6657, 6681, 8295, 14678, 14679, 8297, 573, 1126, 2493, 14680, 14720, 7050, 9282, 1252, 5409, 5414, 5590, 6710, 9283, 10974, 2]
 
-// Module 14673 (UserSettingsFamilyCenter)
+// Module 14677 (UserSettingsFamilyCenter)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -99,8 +99,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const analyticsLocations = tmp6(isLoading(6681).FAMILY_CENTER).analyticsLocations;
   let obj2 = familyCenterInitialized(8295);
   const acceptedRequestsCount = obj2.useAcceptedRequestsCount();
-  const tmp8 = isLoading(14674)();
-  const selectedTab = isLoading(14675)().selectedTab;
+  const tmp8 = isLoading(14678)();
+  const selectedTab = isLoading(14679)().selectedTab;
   let obj3 = familyCenterInitialized(8297);
   const selectedTeenId = obj3.useSelectedTeenId();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -162,7 +162,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     tmp22[0] = tmp18;
     tmp22[1] = FamilyCenterSubPages.ACTIVITY;
-    tmp22[2] = closure_14(isLoading(14676), {});
+    tmp22[2] = closure_14(isLoading(14680), {});
     const intl = tmp(1126).intl;
     const stringResult1 = intl.string(isLoading(2493)["gVWG+6"]);
     cResult[4] = tmp22;
@@ -184,8 +184,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     tmp28[0] = tmp20;
-    tmp28[1] = { label: tmp21, id: FamilyCenterSubPages.REQUESTS, page: closure_14(isLoading(14716), {}) };
-    const obj4 = { label: tmp21, id: FamilyCenterSubPages.REQUESTS, page: closure_14(isLoading(14716), {}) };
+    tmp28[1] = { label: tmp21, id: FamilyCenterSubPages.REQUESTS, page: closure_14(isLoading(14720), {}) };
+    const obj4 = { label: tmp21, id: FamilyCenterSubPages.REQUESTS, page: closure_14(isLoading(14720), {}) };
     class Q {
       constructor(arg0) {
         const obj = isLoading(closure_2[25]);
@@ -271,8 +271,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const analyticsLocations = tmp3(isLoading(6681).FAMILY_CENTER).analyticsLocations;
   let obj = familyCenterInitialized(8295);
   const acceptedRequestsCount = obj.useAcceptedRequestsCount();
-  const tmp6 = isLoading(14674)();
-  const selectedTab = isLoading(14675)().selectedTab;
+  const tmp6 = isLoading(14678)();
+  const selectedTab = isLoading(14679)().selectedTab;
   let obj2 = familyCenterInitialized(8297);
   const selectedTeenId = obj2.useSelectedTeenId();
   let obj3 = familyCenterInitialized(573);
@@ -300,12 +300,12 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     pageWidth: tmp12,
     defaultIndex: items.indexOf(selectedTab)
   };
-  const obj5 = { label: intl.string(isLoading(2493).bdBmqy), id: FamilyCenterSubPages.ACTIVITY, page: closure_14(isLoading(14676), {}) };
+  const obj5 = { label: intl.string(isLoading(2493).bdBmqy), id: FamilyCenterSubPages.ACTIVITY, page: closure_14(isLoading(14680), {}) };
   const useSegmentedControlState = familyCenterInitialized(9282).useSegmentedControlState;
   familyCenterInitialized(9282);
   intl = familyCenterInitialized(1126).intl;
   items1 = [obj5, ];
-  const obj6 = { label: intl2.string(isLoading(2493)["gVWG+6"]), id: FamilyCenterSubPages.REQUESTS, page: closure_14(isLoading(14716), {}) };
+  const obj6 = { label: intl2.string(isLoading(2493)["gVWG+6"]), id: FamilyCenterSubPages.REQUESTS, page: closure_14(isLoading(14720), {}) };
   intl2 = familyCenterInitialized(1126).intl;
   items1[1] = obj6;
   const segmentedControlState = useSegmentedControlState(obj4);

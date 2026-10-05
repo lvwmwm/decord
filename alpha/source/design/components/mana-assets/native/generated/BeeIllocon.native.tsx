@@ -1,13 +1,13 @@
-// Module ID: 16683
-// Function ID: 16684
+// Module ID: 16694
+// Function ID: 16695
 // Name: BeeIllocon
-// Dependencies: [21, 558, 576, 16684, 5974, 2]
+// Dependencies: [21, 558, 576, 16695, 5974, 2]
 
-// Module 16683 (BeeIllocon)
+// Module 16694 (BeeIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5974 */;
-import _modDef16684 from "module_16684" /* 16684 */;
+import _modDef16695 from "module_16695" /* 16695 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef16684 };
+    const obj2 = { uri: _modDef16695 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num === undefined) {
     num = 64;
   }
-  const obj2 = { uri: _modDef16684 };
+  const obj2 = { uri: _modDef16695 };
   FastImageDefault;
   const items = [{ width: num, height: num }];
   return <tmp fadeDuration={0} source={obj2} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;

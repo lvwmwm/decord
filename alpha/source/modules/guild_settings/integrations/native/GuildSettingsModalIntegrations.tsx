@@ -1,9 +1,9 @@
-// Module ID: 17708
-// Function ID: 17709
+// Module ID: 17732
+// Function ID: 17733
 // Name: GuildSettingsModalIntegrations
-// Dependencies: [19, 17, 4509, 9248, 1085, 21, 4890, 587, 558, 576, 4580, 1490, 504, 4791, 17638, 8895, 5593, 6074, 5993, 1126, 16888, 16994, 14774, 5442, 1402, 4729, 6536, 2]
+// Dependencies: [19, 17, 4509, 9248, 1085, 21, 4890, 587, 558, 576, 4580, 1490, 504, 4791, 17662, 8895, 5593, 6074, 5993, 1126, 16907, 17018, 14778, 5442, 1402, 4729, 6536, 2]
 
-// Module 17708 (GuildSettingsModalIntegrations)
+// Module 17732 (GuildSettingsModalIntegrations)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;

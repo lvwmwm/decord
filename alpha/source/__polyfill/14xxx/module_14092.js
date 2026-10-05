@@ -1,17 +1,20 @@
 // Module ID: 14092
 // Function ID: 14093
-// Dependencies: [14067]
+// Dependencies: [14087, 14093]
 
 // Module 14092
-import _mod14067 from "module_14067" /* 14067 */;
+import _mod14087 from "module_14087" /* 14087 */;
 
-let fn;
-if (_mod14067) {
-  fn = call.bind(call);
-} else {
-  fn = function() {
-    return call(...arguments);
-  };
-}
+let tmp;
+const _mod14093 = tmp(14093);
 
-export default fn;
+export default function(arg0) {
+  if (_mod14087(arg0)) {
+    return arg0;
+  } else {
+    const self = this;
+    const self2 = this;
+    const tmp4 = new TypeError(_mod14093(arg0) + " is not a function");
+    throw tmp4;
+  }
+};

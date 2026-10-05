@@ -1,16 +1,16 @@
-// Module ID: 17197
-// Function ID: 17198
+// Module ID: 17221
+// Function ID: 17222
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [19, 4913, 4909, 4911, 21, 558, 576, 11901, 9336, 573, 9701, 4945, 9660, 16160, 17198, 4574, 4568, 1126, 4800, 587, 2]
+// Dependencies: [19, 4913, 4909, 4911, 21, 558, 576, 11901, 9336, 573, 9701, 4945, 9660, 16164, 17222, 4574, 4568, 1126, 4800, 587, 2]
 
-// Module 17197 (useVoicePanelCardUserStateIcons)
+// Module 17221 (useVoicePanelCardUserStateIcons)
 import Fragment from "Fragment" /* 21 */;
 import intl6 from "intl" /* 1126 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
 import CallConstants from "CallConstants" /* 4911 */;
 import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9336 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11901 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17198 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17222 */;
 import react from "react" /* 19 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
 import VoiceStateStore from "VoiceStateStore" /* 4909 */;
@@ -169,7 +169,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
             openManaResult = openMana("user-disconnected-indicator", obj1);
           } else {
             obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
-            obj4.icon = function icon() { /* body not rendered: F147887 */ };
+            obj4.icon = function icon() { /* body not rendered: F148171 */ };
             open = tmp5.open;
             intl = tmp(tmp2[17]).intl;
             obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
@@ -204,7 +204,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
             openManaResult = openMana("user-disconnected-indicator", obj1);
           } else {
             obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
-            obj4.icon = function icon() { /* body not rendered: F147887 */ };
+            obj4.icon = function icon() { /* body not rendered: F148171 */ };
             open = tmp5.open;
             intl = tmp(tmp2[17]).intl;
             obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
@@ -234,7 +234,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
             openManaResult = openMana("user-disconnected-indicator", obj1);
           } else {
             obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
-            obj4.icon = function icon() { /* body not rendered: F147887 */ };
+            obj4.icon = function icon() { /* body not rendered: F148171 */ };
             open = tmp5.open;
             intl = tmp(tmp2[17]).intl;
             obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
@@ -263,7 +263,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
             openManaResult = openMana("user-disconnected-indicator", obj1);
           } else {
             obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
-            obj4.icon = function icon() { /* body not rendered: F147887 */ };
+            obj4.icon = function icon() { /* body not rendered: F148171 */ };
             open = tmp5.open;
             intl = tmp(tmp2[17]).intl;
             obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
@@ -292,7 +292,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
               openManaResult = openMana("user-disconnected-indicator", obj1);
             } else {
               obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
-              obj4.icon = function icon() { /* body not rendered: F147887 */ };
+              obj4.icon = function icon() { /* body not rendered: F148171 */ };
               open = tmp5.open;
               intl = tmp(tmp2[17]).intl;
               obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
@@ -327,7 +327,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
               openManaResult = openMana("user-disconnected-indicator", obj1);
             } else {
               obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
-              obj4.icon = function icon() { /* body not rendered: F147887 */ };
+              obj4.icon = function icon() { /* body not rendered: F148171 */ };
               open = tmp5.open;
               intl = tmp(tmp2[17]).intl;
               obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
@@ -429,7 +429,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
   if (showTileVolumeIndicator) {
     showTileVolumeIndicator = arg0 === tmp6.STREAM;
   }
-  const tmp4Result6 = tmp4(16160);
+  const tmp4Result6 = tmp4(16164);
   isRTCDisconnectedUIVisible = tmp4Result6.useIsRTCDisconnectedUIVisible(tmp, arg1);
   const items3 = [setShowFloatingCTA];
   callback = obj.useCallback(() => {

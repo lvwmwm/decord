@@ -1,9 +1,9 @@
-// Module ID: 14794
-// Function ID: 14795
+// Module ID: 14798
+// Function ID: 14799
 // Name: PremiumPlanSelectSetting
-// Dependencies: [7634, 1085, 11129, 1126, 14795, 2]
+// Dependencies: [7634, 1085, 11129, 1126, 14799, 2]
 
-// Module 14794 (PremiumPlanSelectSetting)
+// Module 14798 (PremiumPlanSelectSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;

@@ -1,9 +1,9 @@
-// Module ID: 16917
-// Function ID: 16918
+// Module ID: 16936
+// Function ID: 16937
 // Name: AddFriendsScreen
-// Dependencies: [32, 5, 19, 17, 7142, 4519, 1377, 12348, 1085, 12327, 21, 4890, 587, 12325, 8054, 4567, 1126, 7255, 558, 576, 12329, 1369, 6657, 6681, 6546, 16918, 1252, 5590, 7850, 12, 4722, 573, 15969, 6663, 5993, 4831, 5874, 16919, 16920, 16922, 5911, 9516, 5968, 10598, 16923, 2]
+// Dependencies: [32, 5, 19, 17, 7142, 4519, 1377, 12348, 1085, 12327, 21, 4890, 587, 12325, 8054, 4567, 1126, 7255, 558, 576, 12329, 1369, 6657, 6681, 6546, 16937, 1252, 5590, 7850, 12, 4722, 573, 15973, 6663, 5993, 4831, 5874, 16938, 16939, 16941, 5911, 9516, 5968, 10598, 16942, 2]
 
-// Module 16917 (AddFriendsScreen)
+// Module 16936 (AddFriendsScreen)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,8 +14,8 @@ import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 1
 import ContactSyncConstants from "ContactSyncConstants" /* 12327 */;
 import ContactSyncUtils from "ContactSyncUtils" /* 12329 */;
 import FriendsScreenConstants from "FriendsScreenConstants" /* 12348 */;
-import IncomingRequestRow from "IncomingRequestRow" /* 16920 */;
-import ContactSuggestionRow2 from "ContactSuggestionRow" /* 16922 */;
+import IncomingRequestRow from "IncomingRequestRow" /* 16939 */;
+import ContactSuggestionRow2 from "ContactSuggestionRow" /* 16941 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -68,7 +68,7 @@ let props = function _handleShare() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -121,7 +121,7 @@ let props = function _handleShare() {
           PJf9P9 = closure_130_0(closure_130_2[16]).t.PJf9P9;
           closure_0(obj7);
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp19) {
         let closure_3 = tmp19;
@@ -137,12 +137,12 @@ let props = function _handleShare() {
   return obj(...arguments);
 };
 function areHydratedGameFriendRequestRowStatesEqual(arr, arg1) {
-  const f127229 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
+  const f127429 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
   let closure_0 = arg1;
   let tmp = arr === arg1;
   if (!tmp) {
-    tmp = arr.length === arg1.length && arr.every(f127229);
-    const tmp2 = arr.length === arg1.length && arr.every(f127229);
+    tmp = arr.length === arg1.length && arr.every(f127429);
+    const tmp2 = arr.length === arg1.length && arr.every(f127429);
   }
   return tmp;
 }

@@ -151,7 +151,7 @@ let obj = function _validateSocketApplication() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -247,7 +247,7 @@ let obj = function _validateSocketApplication() {
           const obj8 = { id, parentId, name, icon, coverImage, flags, embeddedSurfaces };
           closure_0.application = obj8;
           c8 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
         if (null == application2) {
           rpc_origins = closure_133_5;
@@ -280,7 +280,7 @@ obj = function _processSocketThrottlers() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;
@@ -333,7 +333,7 @@ obj = function _processSocketThrottlers() {
         } else {
           c6 = 0;
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp19) {
         let closure_5 = tmp19;
@@ -612,18 +612,18 @@ export const getDeprecatedVoiceSettingsWithShortcut = function getDeprecatedVoic
   let sorted;
   let sorted1;
   let tmp2;
-  const f139202 = (index, index2) => index.index - index2.index;
-  const f139203 = (id) => ({ id: id.id, name: id.name });
+  const f139440 = (index, index2) => index.index - index2.index;
+  const f139441 = (id) => ({ id: id.id, name: id.name });
   const settings = MediaEngineStore.getSettings();
   obj = { input: obj3, output: obj5, mode: { type: settings.mode, auto_threshold: settings.modeOptions.autoThreshold, threshold: settings.modeOptions.threshold, shortcut: tmp2, delay: settings.modeOptions.delay }, automatic_gain_control: null, echo_cancellation: null, noise_suppression: null, qos: null, silence_warning: null, deaf: null, mute: null };
-  obj3 = { available_devices: sorted.map(f139203), device_id: null, volume: null };
+  obj3 = { available_devices: sorted.map(f139441), device_id: null, volume: null };
   tmp2 = fn(settings);
   const values = Object.values(MediaEngineStore.getInputDevices());
-  sorted = values.sort(f139202);
+  sorted = values.sort(f139440);
   ({ inputDeviceId: obj2.device_id, inputVolume: obj2.volume } = settings);
-  obj5 = { available_devices: sorted1.map(f139203), device_id: null, volume: null };
+  obj5 = { available_devices: sorted1.map(f139441), device_id: null, volume: null };
   const values2 = Object.values(MediaEngineStore.getOutputDevices());
-  sorted1 = values2.sort(f139202);
+  sorted1 = values2.sort(f139440);
   ({ outputDeviceId: obj4.device_id, outputVolume: obj4.volume } = settings);
   ({ automaticGainControl: obj.automatic_gain_control, echoCancellation: obj.echo_cancellation, noiseSuppression: obj.noise_suppression, qos: obj.qos, silenceWarning: obj.silence_warning, deaf: obj.deaf, mute: obj.mute } = settings);
   return obj;

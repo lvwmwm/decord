@@ -29,7 +29,7 @@ let obj = function _handleContentLinking() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -60,7 +60,7 @@ let obj = function _handleContentLinking() {
             skipMessageFetch = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else {
           if (1 === c3) {
@@ -131,7 +131,7 @@ let obj = function _handleContentLinking() {
               obj5.setSelectedSummary(c1, c4);
             }
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
           if (safe) {
             const obj9 = { navigationReplace, openChannel: true, skipMessageFetch };

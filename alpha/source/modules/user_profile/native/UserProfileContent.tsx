@@ -1,7 +1,7 @@
 // Module ID: 12881
 // Function ID: 12882
 // Name: UserProfileContent
-// Dependencies: [32, 19, 17, 7863, 8431, 2074, 4519, 1377, 7831, 7111, 7854, 6707, 1085, 6646, 2048, 21, 7913, 504, 4854, 10839, 1987, 10831, 10827, 558, 576, 7861, 6657, 9434, 4722, 12882, 1126, 7575, 12286, 12883, 4835, 7914, 12885, 2036, 6891, 12888, 5042, 6688, 4567, 10843, 12889, 9416, 8987, 10058, 587, 5594, 12815, 12900, 12901, 8318, 12913, 7902, 7915, 1618, 12884, 12919, 12920, 6814, 10840, 7840, 10883, 7868, 12921, 7899, 7910, 8430, 12922, 12704, 12902, 12923, 12924, 12925, 12926, 12927, 12293, 12928, 12817, 12930, 10986, 6684, 12869, 12931, 12872, 12936, 12941, 9282, 12947, 12948, 12953, 12954, 7928, 12959, 7916, 4612, 12789, 6651, 12282, 10974, 12960, 2]
+// Dependencies: [32, 19, 17, 7863, 8431, 2074, 4519, 1377, 7831, 7111, 7854, 6707, 1085, 6646, 2048, 21, 7913, 504, 4854, 10839, 1987, 10831, 10827, 558, 576, 7861, 6657, 9434, 4722, 12882, 1126, 7575, 12286, 12883, 4835, 7914, 12885, 2036, 6891, 12888, 5042, 6688, 4567, 10843, 12889, 9416, 8987, 10058, 587, 5594, 12815, 12900, 12901, 8318, 12915, 7902, 7915, 1618, 12884, 12921, 12922, 6814, 10840, 7840, 10883, 7868, 12923, 7899, 7910, 8430, 12924, 12704, 12902, 12925, 12926, 12927, 12928, 12929, 12293, 12930, 12817, 12932, 10986, 6684, 12869, 12933, 12872, 12938, 12943, 9282, 12949, 12950, 12955, 12956, 7928, 12961, 7916, 4612, 12789, 6651, 12282, 10974, 12962, 2]
 
 // Module 12881 (UserProfileContent)
 import react2 from "react" /* 576 */;
@@ -23,16 +23,16 @@ import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 10986 */;
 import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12286 */;
 import ProvisionalAccountExplainer from "ProvisionalAccountExplainer" /* 12293 */;
 import UserProfileActivityDefault from "UserProfileActivity" /* 12817 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 12921 */;
-import WishlistUtils from "WishlistUtils" /* 12922 */;
-import UserProfilePrivateInfoBannerDefault from "UserProfilePrivateInfoBanner" /* 12927 */;
-import UserProfileDismissibleUpsellsDefault from "UserProfileDismissibleUpsells" /* 12928 */;
-import UserProfileConnections from "UserProfileConnections" /* 12931 */;
-import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 12936 */;
-import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 12941 */;
-import UserProfileMutualsDefault from "UserProfileMutuals" /* 12947 */;
-import UserProfileIncomingFriendRequestDefault from "UserProfileIncomingFriendRequest" /* 12948 */;
-import UserProfileRemediatedNoticeDefault from "UserProfileRemediatedNotice" /* 12953 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 12923 */;
+import WishlistUtils from "WishlistUtils" /* 12924 */;
+import UserProfilePrivateInfoBannerDefault from "UserProfilePrivateInfoBanner" /* 12929 */;
+import UserProfileDismissibleUpsellsDefault from "UserProfileDismissibleUpsells" /* 12930 */;
+import UserProfileConnections from "UserProfileConnections" /* 12933 */;
+import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 12938 */;
+import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 12943 */;
+import UserProfileMutualsDefault from "UserProfileMutuals" /* 12949 */;
+import UserProfileIncomingFriendRequestDefault from "UserProfileIncomingFriendRequest" /* 12950 */;
+import UserProfileRemediatedNoticeDefault from "UserProfileRemediatedNotice" /* 12955 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -59,7 +59,7 @@ let closure_22;
 let hasOwnProperty;
 let metroRequire;
 let tmp3;
-const UserProfileActivityTabDefault = tmp3(12913);
+const UserProfileActivityTabDefault = tmp3(12915);
 function CustomStatusBubble(guildId) {
   let bubbleRef;
   let customStatusActivity;
@@ -873,7 +873,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     cResult[10] = C;
     tmp14 = C;
   }
-  const fn2 = function v() {
+  const fn2 = function b() {
     trackUserProfileAction({ action: "EDIT_PROFILE" });
     const obj = ActionSheetActionCreatorsDefault;
     obj.hideAllActionSheets();
@@ -1712,7 +1712,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((u
   const tmp6Result35 = user(tmp2[71]);
   const displayableBoardWidgets = tmp6Result35.useDisplayableBoardWidgets(user.id);
   const tmp6Result36 = user(tmp2[72]);
-  let tmp38 = displayableBoardWidgets.length > 0 || tmp6Result36.useCanConjureVibegrationsCustomWidget("UserProfileContent", tmp9);
+  let tmp38 = displayableBoardWidgets.length > 0 || tmp6Result36.useCanConjureCustomWidget("UserProfileContent", tmp9);
   closure_25 = tmp38;
   const tmp6Result37 = user(tmp2[73]);
   let tmp39 = tmp6Result37.useIsRecentActivityMobileEnabled("UserProfileContent") && null != stateFromStores;
@@ -1809,7 +1809,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((u
         let tmp18Result = userProfileGameFriendApplicationIds.length > 0;
         if (tmp18Result) {
           const obj7 = { userId: user.id, applicationIds: tmp22 };
-          tmp18Result = tmp18(tmp19(12930), obj7);
+          tmp18Result = tmp18(tmp19(12932), obj7);
         }
         items2[4] = tmp18Result;
         obj9 = { userId: user.id, displayProfile, pendingBio: tmp26 };

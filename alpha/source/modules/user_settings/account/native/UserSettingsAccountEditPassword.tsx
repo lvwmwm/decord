@@ -1,9 +1,9 @@
-// Module ID: 14558
-// Function ID: 14559
+// Module ID: 14562
+// Function ID: 14563
 // Name: UserSettingsAccountEditPassword
-// Dependencies: [19, 17, 2043, 6886, 1377, 1085, 21, 4890, 587, 4589, 6477, 6488, 12, 1252, 6487, 6494, 14559, 4886, 1126, 5593, 6098, 5594, 558, 576, 6490, 38, 504, 1490, 2]
+// Dependencies: [19, 17, 2043, 6886, 1377, 1085, 21, 4890, 587, 4589, 6477, 6488, 12, 1252, 6487, 6494, 14563, 4886, 1126, 5593, 6098, 5594, 558, 576, 6490, 38, 504, 1490, 2]
 
-// Module 14558 (UserSettingsAccountEditPassword)
+// Module 14562 (UserSettingsAccountEditPassword)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,7 +17,7 @@ import UserSettingsAccountActionCreatorsAll from "UserSettingsAccountActionCreat
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6487 */;
 import showInvalidUsernameToastNative from "showInvalidUsernameToastNative" /* 6488 */;
 import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 6494 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14559 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14563 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2043 */;
@@ -43,7 +43,7 @@ let unpackModuleId;
 ({ Image: closure_4, View: hasOwnProperty, ScrollView: metroRequire } = react_native);
 ({ AnalyticEvents: c10, LoginRequiredActions: unpackModuleId } = Constants);
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
-const authStore2 = { newPassword: "ix", password: 17072961 };
+const authStore2 = { newPassword: "unicodeVersion", password: 17087297 };
 let obj = { onePass: { width: 20, height: 20 }, unverifiedWrapper: obj2, container: { padding: 16 }, header: { marginBottom: 20 }, requiredActionsSubtitle: { textAlign: "center", marginTop: 8 }, requiredActionsTitle: { flex: 1, textAlign: "center" }, image: { marginTop: 12, marginBottom: 16, alignSelf: "center" } };
 obj2 = { overflow: "hidden", borderRadius: nativeDefault.radii.xs, marginVertical: 16 };
 let closure_15 = createStyles.createLegacyClassComponentStyles(obj);

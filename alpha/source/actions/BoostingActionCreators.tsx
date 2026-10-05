@@ -32,7 +32,7 @@ let obj = function _fetchAppliedGuildBoostsForGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -57,7 +57,7 @@ let obj = function _fetchAppliedGuildBoostsForGuild() {
               tmp = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c4) {
             if (arg0 === 1) {
@@ -121,7 +121,7 @@ obj = function _fetchAppliedGuildBoostsForUser() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -145,7 +145,7 @@ obj = function _fetchAppliedGuildBoostsForUser() {
             tmp = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -228,7 +228,7 @@ obj = function _fetchAppliedBoostsCooldown() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -322,7 +322,7 @@ obj = function _applyToGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -349,7 +349,7 @@ obj = function _applyToGuild() {
               appliedGuildBoostError = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -439,7 +439,7 @@ obj = function _unapplyFromGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -493,7 +493,7 @@ obj = function _unapplyFromGuild() {
             obj = closure_131_1(closure_131_2[6]);
             obj.dispatch(obj10);
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp28) {
           closure_4 = tmp28;

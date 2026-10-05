@@ -1,12 +1,12 @@
-// Module ID: 15613
-// Function ID: 15614
+// Module ID: 15617
+// Function ID: 15618
 // Name: ScrollBenchmark
-// Dependencies: [19, 21, 558, 576, 15610, 5993, 2]
+// Dependencies: [19, 21, 558, 576, 15614, 5993, 2]
 
-// Module 15613 (ScrollBenchmark)
+// Module 15617 (ScrollBenchmark)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useFrameMonitorDefault from "useFrameMonitor" /* 15610 */;
+import useFrameMonitorDefault from "useFrameMonitor" /* 15614 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

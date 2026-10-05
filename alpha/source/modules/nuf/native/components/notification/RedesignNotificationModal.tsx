@@ -1,9 +1,9 @@
-// Module ID: 15917
-// Function ID: 15918
+// Module ID: 15921
+// Function ID: 15922
 // Name: RedesignNotificationModal
-// Dependencies: [19, 17, 12052, 12053, 1085, 21, 4890, 587, 558, 576, 12054, 1252, 12055, 15918, 1126, 12337, 2]
+// Dependencies: [19, 17, 12052, 12053, 1085, 21, 4890, 587, 558, 576, 12054, 1252, 12055, 15922, 1126, 12337, 2]
 
-// Module 15917 (RedesignNotificationModal)
+// Module 15921 (RedesignNotificationModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,7 +13,7 @@ import PushNotificationPermissionStore from "PushNotificationPermissionStore" /*
 import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12054 */;
 import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12055 */;
 import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 12337 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15918 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15922 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12053 */;

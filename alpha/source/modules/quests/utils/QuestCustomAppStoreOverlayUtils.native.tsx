@@ -1,10 +1,10 @@
-// Module ID: 14822
-// Function ID: 14823
+// Module ID: 14826
+// Function ID: 14827
 // Name: QuestCustomAppStoreOverlayUtils
 // Dependencies: [10914, 10918, 10920, 2]
 // Exports: canOpenCustomAppStoreOverlayFromCta, prefetchCustomAppStoreOverlayContent
 
-// Module 14822 (QuestCustomAppStoreOverlayUtils)
+// Module 14826 (QuestCustomAppStoreOverlayUtils)
 import apexExperiment from "apexExperiment" /* 10914 */;
 import AppStoreOverlayContent from "AppStoreOverlayContent" /* 10920 */;
 import size from "module_2" /* 2 */;

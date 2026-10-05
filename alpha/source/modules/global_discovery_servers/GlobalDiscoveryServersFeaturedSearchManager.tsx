@@ -1,12 +1,12 @@
-// Module ID: 18000
-// Function ID: 18001
+// Module ID: 18022
+// Function ID: 18023
 // Name: GlobalDiscoveryServersFeaturedSearchManager
-// Dependencies: [5, 13515, 9249, 1085, 6613, 18001, 584, 1282, 1478, 18002, 6844, 2]
+// Dependencies: [5, 13517, 9249, 1085, 6613, 18023, 584, 1282, 1478, 18024, 6844, 2]
 
-// Module 18000 (GlobalDiscoveryServersFeaturedSearchManager)
+// Module 18022 (GlobalDiscoveryServersFeaturedSearchManager)
 import Constants from "Constants" /* 1085 */;
 import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9249 */;
-import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 13515 */;
+import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 13517 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
 import size from "module_2" /* 2 */;
@@ -55,7 +55,7 @@ class GlobalDiscoveryServersFeaturedSearchManager extends AutomaticLifecycleMana
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c5;
@@ -139,7 +139,7 @@ class GlobalDiscoveryServersFeaturedSearchManager extends AutomaticLifecycleMana
             c5 = 0;
           }
           constants = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp41) {
           closure_4 = tmp41;
           if (0 === c5) {
@@ -232,7 +232,7 @@ class GlobalDiscoveryServersFeaturedSearchManager extends AutomaticLifecycleMana
         if (forceRefresh === undefined) {
           forceRefresh = false;
         }
-        return "Reflect";
+        return "Set";
       })();
       iter.next();
       return iter;

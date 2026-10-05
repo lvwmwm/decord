@@ -724,7 +724,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((isLastTuple) =
   } else {
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const size2 = { width: "Symbol", height: "current" };
+      const size2 = { width: "Array", height: "Set" };
       cResult[0] = size2;
       size = size2;
     } else {
@@ -878,7 +878,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((isLastTuple) =
   const items = [containerWidth];
   size = react.useMemo(() => {
     if (null == containerWidth) {
-      return { width: "Symbol", height: "current" };
+      return { width: "Array", height: "Set" };
     } else {
       const tmp5 = roundToNearestPixelDefault(tmp / 2 - DEFAULT_CONTENT_PADDING - 6);
       size = { width: tmp5, height: roundToNearestPixelDefault(tmp5 / c23) };
@@ -1421,7 +1421,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
   let onActivityItemSelected;
   let tmp19;
   let width;
-  const f108553 = () => {
+  const f108699 = () => {
     const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
     let id1;
     const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
@@ -1462,8 +1462,8 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
   let items = [EmbeddedActivitiesStore];
   const tmp2Result = context(flag[30]);
   let isLaunching = null != tmp14;
-  const first1 = tmp5(tmp2Result.useStateFromStoresArray(items, f108553), 2)[0];
-  const tmp5Result = tmp5(tmp2Result.useStateFromStoresArray(items, f108553), 2);
+  const first1 = tmp5(tmp2Result.useStateFromStoresArray(items, f108699), 2)[0];
+  const tmp5Result = tmp5(tmp2Result.useStateFromStoresArray(items, f108699), 2);
   if (isLaunching) {
     isLaunching = tmp14.isLaunching;
   }
@@ -1575,7 +1575,7 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
   } else {
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const size1 = { width: "Symbol", height: "current" };
+      const size1 = { width: "Array", height: "Set" };
       cResult[0] = size1;
       first = size1;
     } else {
@@ -1625,7 +1625,7 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
                     items[1] = obj1;
                     obj.style = items;
                     obj4 = { context, sectionName, onPress, item: context, entrypoint, imageWidth: closure_5.width, imageHeight: closure_5.height };
-                    obj.children = jsx(f58716, obj4);
+                    obj.children = jsx(f58744, obj4);
                     return jsx(View, obj, "" + context.application.id + "-" + arg1);
                   }
                 }
@@ -1660,7 +1660,7 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
                   items[1] = obj1;
                   obj.style = items;
                   obj4 = { context, sectionName, onPress, item: context, entrypoint, imageWidth: closure_5.width, imageHeight: closure_5.height };
-                  obj.children = jsx(f58716, obj4);
+                  obj.children = jsx(f58744, obj4);
                   return jsx(View, obj, "" + context.application.id + "-" + arg1);
                 }
               }
@@ -1686,7 +1686,7 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
         items[1] = obj1;
         obj.style = items;
         obj4 = { context, sectionName, onPress, item: context, entrypoint, imageWidth: closure_5.width, imageHeight: closure_5.height };
-        obj.children = jsx(f58716, obj4);
+        obj.children = jsx(f58744, obj4);
         return jsx(View, obj, "" + context.application.id + "-" + arg1);
       }
     }
@@ -1725,7 +1725,7 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
   const items1 = [containerWidth, num];
   styles = height.useMemo(() => {
     if (null == containerWidth) {
-      return { width: "Symbol", height: "current" };
+      return { width: "Array", height: "Set" };
     } else {
       const tmp7 = roundToNearestPixelDefault((tmp - 2 * DEFAULT_CONTENT_PADDING - c22 * (2 - 1)) / 2);
       size = { width: tmp7, height: roundToNearestPixelDefault(tmp7 / c23) };
@@ -8804,7 +8804,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
   }
   items8[1] = sections1;
   const memo5 = useMemo(() => {
-    const f152234 = (commands) => Object.keys(commands.commands).length > 0;
+    const f152518 = (commands) => Object.keys(commands.commands).length > 0;
     result = result.result;
     let sections;
     if (result != null) {
@@ -8822,11 +8822,11 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
       sections1 = {};
     }
     const values = Object.values(sections);
-    let someResult = values.some(f152234);
+    let someResult = values.some(f152518);
     if (!someResult) {
       const _Object = Object;
       const values2 = Object.values(sections1);
-      someResult = values2.some(f152234);
+      someResult = values2.some(f152518);
     }
     return someResult;
   }, items8);

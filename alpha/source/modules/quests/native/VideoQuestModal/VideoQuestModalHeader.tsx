@@ -1,9 +1,9 @@
-// Module ID: 14953
-// Function ID: 14954
+// Module ID: 14957
+// Function ID: 14958
 // Name: VideoQuestModalHeader
-// Dependencies: [19, 17, 7189, 21, 4890, 587, 558, 576, 14926, 10911, 7208, 4492, 10940, 1126, 4886, 14948, 2]
+// Dependencies: [19, 17, 7189, 21, 4890, 587, 558, 576, 14930, 10911, 7208, 4492, 10940, 1126, 4886, 14952, 2]
 
-// Module 14953 (VideoQuestModalHeader)
+// Module 14957 (VideoQuestModalHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import VideoQuestUIStore from "VideoQuestUIStore" /* 7189 */;
@@ -42,7 +42,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ closeButtonIconColor, onClose, style, showCurrentVideoTime, withTextShadow } = arg0);
   let textShadow = undefined !== withTextShadow && withTextShadow;
   const tmp5 = closure_7();
-  const tmpResult = tmp(14926);
+  const tmpResult = tmp(14930);
   quest = tmpResult.useVideoQuestModalContext().quest;
   const tmpResult3 = tmp(10911);
   const questTaskDetails = tmpResult3.useQuestTaskDetails(quest);
@@ -136,7 +136,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       tmp34 = tmp37;
                     }
                     const obj4 = { iconColor: closeButtonIconColor, onClose };
-                    const tmp33 = closure_5(questTaskDetails(14948), obj4);
+                    const tmp33 = closure_5(questTaskDetails(14952), obj4);
                     cResult[23] = closeButtonIconColor;
                     cResult[24] = onClose;
                     cResult[25] = tmp33;
@@ -223,7 +223,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const withTextShadow = showCurrentVideoTime.withTextShadow;
   let textShadow = undefined !== withTextShadow && withTextShadow;
   const tmp2 = closure_7();
-  let obj = quest(14926);
+  let obj = quest(14930);
   quest = obj.useVideoQuestModalContext().quest;
   let obj2 = quest(10911);
   const questTaskDetails = obj2.useQuestTaskDetails(quest);
@@ -273,7 +273,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   items1[1] = closure_5(Text2, obj7);
-  items2 = [closure_6(View, obj4), closure_5(questTaskDetails(14948), { iconColor: closeButtonIconColor, onClose })];
+  items2 = [closure_6(View, obj4), closure_5(questTaskDetails(14952), { iconColor: closeButtonIconColor, onClose })];
   return closure_6(View, obj3);
 });
 const result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestModalHeader.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 17760
-// Function ID: 17761
+// Module ID: 17784
+// Function ID: 17785
 // Name: GuildSettingsRoleTemplate
-// Dependencies: [32, 19, 17, 4879, 2074, 17756, 1085, 21, 4890, 587, 558, 576, 6433, 1484, 5770, 4612, 1252, 5070, 4886, 1188, 11181, 5594, 1126, 7952, 5909, 10491, 2]
+// Dependencies: [32, 19, 17, 4879, 2074, 17780, 1085, 21, 4890, 587, 558, 576, 6433, 1484, 5770, 4612, 1252, 5070, 4886, 1188, 11181, 5594, 1126, 7952, 5909, 10491, 2]
 
-// Module 17760 (GuildSettingsRoleTemplate)
+// Module 17784 (GuildSettingsRoleTemplate)
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1188 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -18,7 +18,7 @@ import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 17756 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 17780 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4890 */;

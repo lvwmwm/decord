@@ -162,7 +162,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -289,7 +289,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -340,7 +340,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
             closure_1 = value;
             closure_129_2.performRedirect(closure_1);
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp19) {
           c3 = 3;
@@ -391,7 +391,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

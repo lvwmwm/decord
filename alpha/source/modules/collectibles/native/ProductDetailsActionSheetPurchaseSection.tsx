@@ -1,9 +1,9 @@
-// Module ID: 12986
-// Function ID: 12987
+// Module ID: 12988
+// Function ID: 12989
 // Name: ProductDetailsActionSheetPurchaseSection
-// Dependencies: [32, 19, 17, 7068, 1087, 1085, 10820, 1379, 21, 4890, 587, 558, 576, 10766, 4854, 10743, 1126, 7575, 12984, 8531, 8496, 1490, 6657, 5093, 12987, 1987, 7052, 12991, 1088, 12992, 10813, 8491, 4886, 5595, 1980, 7849, 504, 10847, 4528, 7065, 7064, 8508, 10819, 12994, 12995, 1618, 5594, 12996, 2]
+// Dependencies: [32, 19, 17, 7068, 1087, 1085, 10820, 1379, 21, 4890, 587, 558, 576, 10766, 4854, 10743, 1126, 7575, 12986, 8531, 8496, 1490, 6657, 5093, 12989, 1987, 7052, 12993, 1088, 12994, 10813, 8491, 4886, 5595, 1980, 7849, 504, 10847, 4528, 7065, 7064, 8508, 10819, 12996, 12997, 1618, 5594, 12998, 2]
 
-// Module 12986 (ProductDetailsActionSheetPurchaseSection)
+// Module 12988 (ProductDetailsActionSheetPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -20,7 +20,7 @@ import OrbsIcon from "OrbsIcon" /* 8491 */;
 import openGiftModal from "openGiftModal" /* 10743 */;
 import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 10813 */;
 import MainTabsConstants from "MainTabsConstants" /* 10820 */;
-import UnlockWithNitroButton from "UnlockWithNitroButton" /* 12996 */;
+import UnlockWithNitroButton from "UnlockWithNitroButton" /* 12998 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7068 */;
@@ -69,7 +69,7 @@ function VCButton(balance) {
   const tmp = closure_17();
   react = tmp;
   const tmp2 = balance;
-  let obj = balance(12984);
+  let obj = balance(12986);
   const virtualCurrencyData = obj.useVirtualCurrencyData(product, flag);
   ({ price, canAfford } = virtualCurrencyData);
   let obj2 = balance(8531);
@@ -149,7 +149,7 @@ function VCButton(balance) {
         }
       }
     };
-    obj2.pushLazy(asyncRequire(12987, dependencyMap.paths), obj3, ORB_CHECKOUT_MODAL);
+    obj2.pushLazy(asyncRequire(12989, dependencyMap.paths), obj3, ORB_CHECKOUT_MODAL);
   }, items);
   if (null == price) {
     return null;

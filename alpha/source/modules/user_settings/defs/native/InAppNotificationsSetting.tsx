@@ -1,9 +1,9 @@
-// Module ID: 15306
-// Function ID: 15307
+// Module ID: 15310
+// Function ID: 15311
 // Name: InAppNotificationsSetting
-// Dependencies: [7634, 1085, 558, 2028, 576, 12473, 1126, 2819, 1252, 11129, 14288, 15307, 2]
+// Dependencies: [7634, 1085, 558, 2028, 576, 12473, 1126, 2819, 1252, 11129, 14290, 15311, 2]
 
-// Module 15306 (InAppNotificationsSetting)
+// Module 15310 (InAppNotificationsSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
@@ -12,8 +12,8 @@ import UserSettings from "UserSettings" /* 2028 */;
 import _modDef2819 from "module_2819" /* 2819 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
 import FocusModeUtils from "FocusModeUtils" /* 12473 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14288 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15307 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14290 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15311 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders_mod from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;

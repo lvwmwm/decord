@@ -1,9 +1,9 @@
-// Module ID: 16339
-// Function ID: 16340
+// Module ID: 16343
+// Function ID: 16344
 // Name: notifications/Notifications
-// Dependencies: [19, 17, 10820, 2048, 21, 4890, 587, 4737, 558, 576, 6433, 7485, 16340, 5909, 1126, 16341, 4886, 16342, 7495, 16344, 6619, 6657, 6681, 6984, 6016, 16348, 16349, 11507, 6651, 4732, 1618, 15938, 5911, 4589, 2]
+// Dependencies: [19, 17, 10820, 2048, 21, 4890, 587, 4737, 558, 576, 6433, 7485, 16344, 5909, 1126, 16345, 4886, 16346, 7495, 16348, 6619, 6657, 6681, 6984, 6016, 16352, 16353, 11507, 6651, 4732, 1618, 15942, 5911, 4589, 2]
 
-// Module 16339 (notifications/Notifications)
+// Module 16343 (notifications/Notifications)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -19,11 +19,11 @@ import useAnalyticsLocations from "useAnalyticsLocations" /* 6657 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
 import MainTabsConstants from "MainTabsConstants" /* 10820 */;
 import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 11507 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 15938 */;
-import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 16340 */;
-import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 16342 */;
-import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 16344 */;
-import NotificationCenterForYou from "NotificationCenterForYou" /* 16349 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 15942 */;
+import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 16344 */;
+import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 16346 */;
+import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 16348 */;
+import NotificationCenterForYou from "NotificationCenterForYou" /* 16353 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4890 */;
@@ -44,7 +44,7 @@ let size1;
 let tmp4;
 let tmp7;
 const ThemedGradientDefault = tmp4(5911);
-const NotificationCenterPermissionNudgeDefault = tmp7(16348);
+const NotificationCenterPermissionNudgeDefault = tmp7(16352);
 function goBack() {
   const obj = RootNavigationRef;
   navigation = obj.getRootNavigationRef();

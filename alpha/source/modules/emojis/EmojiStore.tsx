@@ -108,7 +108,7 @@ let obj = function _loadSavedEmojis() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -166,7 +166,7 @@ let obj = function _loadSavedEmojis() {
           }
         }
         c3 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp17) {
         c3 = 3;
         throw tmp17;

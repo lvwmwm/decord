@@ -1,9 +1,9 @@
-// Module ID: 17227
-// Function ID: 17228
+// Module ID: 17251
+// Function ID: 17252
 // Name: VoicePanelSettingsOverview
-// Dependencies: [19, 2050, 4906, 9065, 502, 2051, 1999, 4509, 1377, 4914, 1085, 4911, 9366, 21, 4890, 587, 558, 576, 17228, 504, 5043, 9384, 9345, 4886, 9431, 1126, 5976, 5879, 7, 4568, 17225, 8038, 5993, 5999, 15385, 12728, 6000, 584, 6698, 2028, 9306, 5091, 10062, 9656, 4854, 17229, 1987, 9368, 9387, 17230, 17192, 17193, 11079, 9334, 17231, 6883, 17232, 9339, 17233, 11234, 9630, 9716, 9715, 2]
+// Dependencies: [19, 2050, 4906, 9065, 502, 2051, 1999, 4509, 1377, 4914, 1085, 4911, 9366, 21, 4890, 587, 558, 576, 17252, 504, 5043, 9384, 9345, 4886, 9431, 1126, 5976, 5879, 7, 4568, 17249, 8038, 5993, 5999, 15389, 12728, 6000, 584, 6698, 2028, 9306, 5091, 10062, 9656, 4854, 17253, 1987, 9368, 9387, 17254, 17216, 17217, 11079, 9334, 17255, 6883, 17256, 9339, 17257, 11234, 9630, 9716, 9715, 2]
 
-// Module 17227 (VoicePanelSettingsOverview)
+// Module 17251 (VoicePanelSettingsOverview)
 import LogAggregator from "LogAggregator" /* 7 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -27,8 +27,8 @@ import useIsSecureFramesUIEnabled from "useIsSecureFramesUIEnabled" /* 9384 */;
 import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 9656 */;
 import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10062 */;
 import AssetRegistryDefault from "AssetRegistry" /* 12728 */;
-import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 17225 */;
-import getChannelInfoSubtitleDefault from "getChannelInfoSubtitle" /* 17228 */;
+import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 17249 */;
+import getChannelInfoSubtitleDefault from "getChannelInfoSubtitle" /* 17252 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
@@ -58,7 +58,7 @@ let tmp;
 const TableRow6 = tmp(5993);
 const TableRowIcon7 = tmp(5999);
 const TableRowArrow = tmp(6000);
-const WrenchIcon = tmp(15385);
+const WrenchIcon = tmp(15389);
 ({ AnalyticsSections: map1, Permissions: closure_14, RPC_APPLICATION_LOGGING_CATEGORY: closure_15 } = Constants);
 const isStreamParticipant = CallConstants.isStreamParticipant;
 let closure_17 = SecureFramesConstants.SECURE_FRAMES_CALL_VERIFICATION_BOTTOM_SHEET_KEY;
@@ -609,7 +609,7 @@ const memoResult = react.memo(function VoicePanelSettingsOverview(guildId) {
   const callback4 = stateFromStores1.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { channelId };
-    obj.openLazy(asyncRequire(17229, dependencyMap.paths), closure_17, obj2);
+    obj.openLazy(asyncRequire(17253, dependencyMap.paths), closure_17, obj2);
   }, items10);
   const callback5 = stateFromStores1.useCallback(() => {
     if (null != stateFromStores4) {

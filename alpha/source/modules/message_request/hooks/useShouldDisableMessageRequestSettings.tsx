@@ -1,9 +1,9 @@
-// Module ID: 15785
-// Function ID: 15786
+// Module ID: 15789
+// Function ID: 15790
 // Name: useShouldDisableMessageRequestSettings
 // Dependencies: [558, 5102, 5580, 6802, 2]
 
-// Module 15785 (useShouldDisableMessageRequestSettings)
+// Module 15789 (useShouldDisableMessageRequestSettings)
 import AgeVerificationUtils from "AgeVerificationUtils" /* 5102 */;
 import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5580 */;
 import SettingsDefaultFeature from "SettingsDefaultFeature" /* 6802 */;

@@ -1,9 +1,9 @@
-// Module ID: 17288
-// Function ID: 17289
+// Module ID: 17312
+// Function ID: 17313
 // Name: VoicePanelControls
-// Dependencies: [32, 19, 17, 4906, 11902, 11905, 11900, 1085, 21, 4890, 587, 1615, 558, 576, 17289, 8567, 11901, 4612, 17179, 4580, 6140, 17290, 11906, 11909, 4855, 5770, 11647, 9074, 17291, 17198, 17292, 4589, 17296, 17298, 5973, 17301, 5597, 6570, 17166, 17213, 1259, 17325, 1121, 1618, 1484, 10725, 17297, 17326, 17300, 17327, 17187, 11727, 2]
+// Dependencies: [32, 19, 17, 4906, 11902, 11905, 11900, 1085, 21, 4890, 587, 1615, 558, 576, 17313, 8567, 11901, 4612, 17203, 4580, 6140, 17314, 11906, 11909, 4855, 5770, 11647, 9074, 17315, 17222, 17316, 4589, 17320, 17322, 5973, 17325, 5597, 6570, 17190, 17237, 1259, 17349, 1121, 1618, 1484, 10725, 17321, 17350, 17324, 17351, 17211, 11727, 2]
 
-// Module 17288 (VoicePanelControls)
+// Module 17312 (VoicePanelControls)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
@@ -17,14 +17,14 @@ import roundToNearestPixelDefault from "roundToNearestPixel" /* 10725 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11901 */;
 import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 11906 */;
 import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 11909 */;
-import useControlsLockDefault from "useControlsLock" /* 17179 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17198 */;
-import useDrawerToggleDefault from "useDrawerToggle" /* 17289 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 17290 */;
-import VoicePanelControlUtils from "VoicePanelControlUtils" /* 17291 */;
-import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 17292 */;
-import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 17296 */;
-import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 17298 */;
+import useControlsLockDefault from "useControlsLock" /* 17203 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17222 */;
+import useDrawerToggleDefault from "useDrawerToggle" /* 17313 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 17314 */;
+import VoicePanelControlUtils from "VoicePanelControlUtils" /* 17315 */;
+import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 17316 */;
+import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 17320 */;
+import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 17322 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -520,7 +520,7 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? ((wrapperSpecs) 
       }
     }
   };
-  let obj4 = { cheapWorkletShallowEqual: tmp(9074).cheapWorkletShallowEqual, VoicePanelModes, wrapperSpecs, VoicePanelControlsModes, runOnJS: tmp(4612).runOnJS, setControlsMode, isScreenReaderEnabled, EDGE_GUTTER, getControlsDefaultWidth: tmp(11909).getControlsDefaultWidth, getDrawerSpec: tmp(17291).getDrawerSpec, getControlsDrawerOpenWidth: tmp(11909).getControlsDrawerOpenWidth };
+  let obj4 = { cheapWorkletShallowEqual: tmp(9074).cheapWorkletShallowEqual, VoicePanelModes, wrapperSpecs, VoicePanelControlsModes, runOnJS: tmp(4612).runOnJS, setControlsMode, isScreenReaderEnabled, EDGE_GUTTER, getControlsDefaultWidth: tmp(11909).getControlsDefaultWidth, getDrawerSpec: tmp(17315).getDrawerSpec, getControlsDrawerOpenWidth: tmp(11909).getControlsDrawerOpenWidth };
   fn2.__closure = obj4;
   fn2.__workletHash = 12616753127721;
   fn2.__initData = __initData4;
@@ -1196,7 +1196,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                         let closure_0 = false;
                         const mode = closure_3.get().mode;
                         const DRAWER = constants.DRAWER;
-                        chatOpen(function() { /* body not rendered: F153360 */ });
+                        chatOpen(function() { /* body not rendered: F153667 */ });
                         const tmp = constants;
                         const tmp3 = closure_3;
                         if (!tmp3) {
@@ -1275,7 +1275,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                       let closure_0 = false;
                       const mode = closure_3.get().mode;
                       const DRAWER = constants.DRAWER;
-                      chatOpen(function() { /* body not rendered: F153360 */ });
+                      chatOpen(function() { /* body not rendered: F153667 */ });
                       const tmp = constants;
                       const tmp3 = closure_3;
                       if (!tmp3) {
@@ -1545,7 +1545,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                         let closure_0 = false;
                         const mode = closure_3.get().mode;
                         const DRAWER = constants.DRAWER;
-                        chatOpen(function() { /* body not rendered: F153360 */ });
+                        chatOpen(function() { /* body not rendered: F153667 */ });
                         const tmp = constants;
                         const tmp3 = closure_3;
                         if (!tmp3) {
@@ -1646,7 +1646,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                 let closure_0 = false;
                 const mode = closure_3.get().mode;
                 const DRAWER = constants.DRAWER;
-                chatOpen(function() { /* body not rendered: F153360 */ });
+                chatOpen(function() { /* body not rendered: F153667 */ });
                 const tmp = constants;
                 const tmp3 = closure_3;
                 if (!tmp3) {
@@ -1709,7 +1709,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
               let closure_0 = false;
               const mode = closure_3.get().mode;
               const DRAWER = constants.DRAWER;
-              chatOpen(function() { /* body not rendered: F153360 */ });
+              chatOpen(function() { /* body not rendered: F153667 */ });
               const tmp = constants;
               const tmp3 = closure_3;
               if (!tmp3) {
@@ -1739,7 +1739,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
           let closure_0 = false;
           const mode = closure_3.get().mode;
           const DRAWER = constants.DRAWER;
-          chatOpen(function() { /* body not rendered: F153360 */ });
+          chatOpen(function() { /* body not rendered: F153667 */ });
           const tmp = constants;
           const tmp3 = closure_3;
           if (!tmp3) {

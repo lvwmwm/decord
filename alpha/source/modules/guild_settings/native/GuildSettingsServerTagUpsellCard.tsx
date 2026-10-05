@@ -1,9 +1,9 @@
-// Module ID: 17734
-// Function ID: 17735
+// Module ID: 17758
+// Function ID: 17759
 // Name: GuildSettingsServerTagUpsellCard
-// Dependencies: [19, 17, 4767, 21, 4890, 587, 558, 576, 4771, 504, 12177, 12147, 5605, 12180, 1126, 4886, 5593, 16145, 5594, 2]
+// Dependencies: [19, 17, 4767, 21, 4890, 587, 558, 576, 4771, 504, 12177, 12147, 5605, 12180, 1126, 4886, 5593, 16149, 5594, 2]
 
-// Module 17734 (GuildSettingsServerTagUpsellCard)
+// Module 17758 (GuildSettingsServerTagUpsellCard)
 import nativeDefault from "native" /* 587 */;
 import Powerups from "Powerups" /* 4771 */;
 import LinearGradientDefault from "LinearGradient" /* 5605 */;
@@ -424,7 +424,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   intl2 = tmp2(1126).intl;
   items6[1] = closure_6(Text2, obj11);
   items5[1] = closure_7(Stack2, obj9);
-  const obj12 = { variant: "primary", size: "lg", text: intl3.string(tmp2(1126).t.kMRDWs), icon: closure_6(tmp2(16145).BoostTier2Icon, { color: "white" }), iconPosition: "start", onPress: onUnlockPress };
+  const obj12 = { variant: "primary", size: "lg", text: intl3.string(tmp2(1126).t.kMRDWs), icon: closure_6(tmp2(16149).BoostTier2Icon, { color: "white" }), iconPosition: "start", onPress: onUnlockPress };
   const Button = tmp2(5594).Button;
   intl3 = tmp2(1126).intl;
   items5[2] = closure_6(Button, obj12);

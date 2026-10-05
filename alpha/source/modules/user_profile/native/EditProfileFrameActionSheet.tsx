@@ -1,9 +1,9 @@
-// Module ID: 14456
-// Function ID: 14457
+// Module ID: 14460
+// Function ID: 14461
 // Name: EditProfileFrameActionSheet
-// Dependencies: [32, 19, 17, 7068, 7060, 1085, 21, 4890, 587, 558, 576, 7857, 7841, 6657, 6681, 1252, 7835, 7842, 1126, 4886, 7843, 6645, 10465, 504, 14457, 7837, 7858, 14458, 13011, 13012, 7844, 10998, 5605, 2]
+// Dependencies: [32, 19, 17, 7068, 7060, 1085, 21, 4890, 587, 558, 576, 7857, 7841, 6657, 6681, 1252, 7835, 7842, 1126, 4886, 7843, 6645, 10465, 504, 14461, 7837, 7858, 14462, 13013, 13014, 7844, 10998, 5605, 2]
 
-// Module 14456 (EditProfileFrameActionSheet)
+// Module 14460 (EditProfileFrameActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -16,7 +16,7 @@ import useShopProductItems from "useShopProductItems" /* 7842 */;
 import useCollectiblesDataDefault from "useCollectiblesData" /* 7844 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7858 */;
 import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10998 */;
-import EditProfileFrameSection from "EditProfileFrameSection" /* 14458 */;
+import EditProfileFrameSection from "EditProfileFrameSection" /* 14462 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,9 +1,9 @@
-// Module ID: 15957
-// Function ID: 15958
+// Module ID: 15961
+// Function ID: 15962
 // Name: MessagesItemChannelAvatar
 // Dependencies: [19, 4879, 502, 4930, 11579, 1377, 11697, 21, 4890, 587, 558, 576, 1188, 504, 10648, 2]
 
-// Module 15957 (MessagesItemChannelAvatar)
+// Module 15961 (MessagesItemChannelAvatar)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import GroupDMAvatarDefault from "GroupDMAvatar" /* 10648 */;
@@ -421,7 +421,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
             return isMobileOnlineResult;
           }
         }
-        const obj3 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: null, streaming: isStreaming, style: tmp4Result.avatar, size: REFRESH_MEDIUM_32, animate: stateFromStores1, typing: stateFromStores, autoStatusCutout: 17072961 };
+        const obj3 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: null, streaming: isStreaming, style: tmp4Result.avatar, size: REFRESH_MEDIUM_32, animate: stateFromStores1, typing: stateFromStores, autoStatusCutout: null };
         const Avatar = tmp(tmp2[12]).Avatar;
         if (!stateFromStores2.isSystemUser()) {
           class H {
@@ -560,7 +560,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   } else {
     tmp11Result = null;
     if (null != stateFromStores2) {
-      const obj7 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: tmp12, streaming: isStreaming, style: tmpResult.avatar, size: REFRESH_MEDIUM_32, animate: stateFromStores1, typing: stateFromStores, autoStatusCutout: 17072961 };
+      const obj7 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: tmp12, streaming: isStreaming, style: tmpResult.avatar, size: REFRESH_MEDIUM_32, animate: stateFromStores1, typing: stateFromStores, autoStatusCutout: null };
       const Avatar = tmp3(1188).Avatar;
       tmp12 = null;
       const tmp11 = jsx;

@@ -1,15 +1,15 @@
-// Module ID: 15760
-// Function ID: 15761
+// Module ID: 15764
+// Function ID: 15765
 // Name: UseDataForQuestsSetting
-// Dependencies: [7634, 558, 15761, 14621, 2028, 11129, 1126, 15762, 2]
+// Dependencies: [7634, 558, 15765, 14625, 2028, 11129, 1126, 15766, 2]
 
-// Module 15760 (UseDataForQuestsSetting)
+// Module 15764 (UseDataForQuestsSetting)
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2028 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14621 */;
-import useAdPersonalizationTogglesDisabled from "useAdPersonalizationTogglesDisabled" /* 15761 */;
-import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 15762 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14625 */;
+import useAdPersonalizationTogglesDisabled from "useAdPersonalizationTogglesDisabled" /* 15765 */;
+import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 15766 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders_mod from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;

@@ -1,21 +1,21 @@
-// Module ID: 17072
-// Function ID: 17073
+// Module ID: 17096
+// Function ID: 17097
 // Name: Alerts
-// Dependencies: [19, 17, 4879, 13560, 14159, 5081, 11162, 21, 17073, 17074, 17078, 17079, 4890, 587, 4589, 5708, 5766, 6537, 558, 576, 568, 504, 5780, 12065, 1188, 2]
+// Dependencies: [19, 17, 4879, 13562, 14161, 5081, 11162, 21, 17097, 17098, 17102, 17103, 4890, 587, 4589, 5708, 5766, 6537, 558, 576, 568, 504, 5780, 12065, 1188, 2]
 
-// Module 17072 (Alerts)
+// Module 17096 (Alerts)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 4589 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
 import Dialog2 from "Dialog" /* 5766 */;
 import KeyboardAwareViewDefault from "KeyboardAwareView" /* 6537 */;
-import ModalRegistryDefault from "ModalRegistry" /* 17073 */;
+import ModalRegistryDefault from "ModalRegistry" /* 17097 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import PermissionSpeakStore from "PermissionSpeakStore" /* 13560 */;
-import PermissionVADStore from "PermissionVADStore" /* 14159 */;
+import PermissionSpeakStore from "PermissionSpeakStore" /* 13562 */;
+import PermissionVADStore from "PermissionVADStore" /* 14161 */;
 import SurveyStore from "SurveyStore" /* 5081 */;
 import AlertStore from "AlertStore" /* 11162 */;
 import Fragment from "Fragment" /* 21 */;
@@ -176,7 +176,7 @@ class AlertWrapper extends PureComponent {
 }
 const prototype = AlertWrapper.prototype;
 AlertWrapper.contextType = native.ThemeContext;
-let closure_18 = Object.freeze({ renderAlert: "done", renderKey: "toCharArray$esjava$1", props: "toCharArray$esjava$1" });
+let closure_18 = Object.freeze({ renderAlert: "marginBottom", renderKey: "unicodeVersion", props: "Reflect" });
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let alertDismissable;
   let openModal;
@@ -226,7 +226,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
             return <component />;
           };
         } else {
-          return { renderAlert: "done", renderKey: "toCharArray$esjava$1", props: "toCharArray$esjava$1" };
+          return { renderAlert: "marginBottom", renderKey: "unicodeVersion", props: "Reflect" };
         }
       }
     };
@@ -394,7 +394,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
           return <component />;
         };
       } else {
-        return { renderAlert: "done", renderKey: "toCharArray$esjava$1", props: "toCharArray$esjava$1" };
+        return { renderAlert: "marginBottom", renderKey: "unicodeVersion", props: "Reflect" };
       }
     }
   });

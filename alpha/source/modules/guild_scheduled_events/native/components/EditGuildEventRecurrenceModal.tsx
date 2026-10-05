@@ -309,7 +309,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEvent) => {
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 try {
@@ -345,7 +345,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEvent) => {
                     c1();
                   }
                   c2 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 } catch (tmp12) {
                   c2 = 3;
                   throw tmp12;
@@ -424,7 +424,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEvent) => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -460,7 +460,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEvent) => {
             closure_128_1();
           }
           c2 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp12) {
           c2 = 3;
           throw tmp12;

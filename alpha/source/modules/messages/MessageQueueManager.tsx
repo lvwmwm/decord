@@ -1,9 +1,9 @@
-// Module ID: 17536
-// Function ID: 17537
+// Module ID: 17560
+// Function ID: 17561
 // Name: MessageQueueManager
 // Dependencies: [6613, 7462, 2]
 
-// Module 17536 (MessageQueueManager)
+// Module 17560 (MessageQueueManager)
 import MessageQueueDefault from "MessageQueue" /* 7462 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
 import size from "module_2" /* 2 */;

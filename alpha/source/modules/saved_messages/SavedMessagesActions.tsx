@@ -28,7 +28,7 @@ let obj = function _upsertSavedMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -109,7 +109,7 @@ obj = function _fetchAndUpdateSavedMessages() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c2;
@@ -175,7 +175,7 @@ obj = function _fetchAndUpdateSavedMessages() {
             return obj13;
           } else {
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else if (arg0 === 1) {
           c4 = 3;

@@ -1,9 +1,9 @@
-// Module ID: 17163
-// Function ID: 17164
+// Module ID: 17187
+// Function ID: 17188
 // Name: QuestProgressBottomSheet
-// Dependencies: [5, 19, 17, 8703, 7187, 5623, 8705, 21, 4890, 587, 558, 576, 504, 10958, 5626, 7575, 7578, 1126, 5912, 7208, 6663, 9149, 10911, 10955, 14922, 8986, 4854, 10908, 8038, 10010, 5974, 5605, 1105, 10950, 9265, 14951, 4886, 5593, 14917, 5594, 6645, 2]
+// Dependencies: [5, 19, 17, 8703, 7187, 5623, 8705, 21, 4890, 587, 558, 576, 504, 10958, 5626, 7575, 7578, 1126, 5912, 7208, 6663, 9149, 10911, 10955, 14926, 8986, 4854, 10908, 8038, 10010, 5974, 5605, 1105, 10950, 9265, 14955, 4886, 5593, 14921, 5594, 6645, 2]
 
-// Module 17163 (QuestProgressBottomSheet)
+// Module 17187 (QuestProgressBottomSheet)
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
@@ -257,7 +257,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
     } else {
       tmp22 = cResult[11];
     }
-    const tmpResult10 = tmp(14922);
+    const tmpResult10 = tmp(14926);
     const questRewardClaimHandler = tmpResult10.useQuestRewardClaimHandler(tmp22);
     ({ isClaiming, claim } = questRewardClaimHandler);
     const isLoading = questRewardClaimHandler.isLoading;
@@ -274,7 +274,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -311,7 +311,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
                 }
               }
               c3 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp18) {
             c3 = 3;
@@ -558,7 +558,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   }
   const tmpResult5 = tmp(10911);
   const isQuestAccessSuspended = tmpResult5.useIsQuestAccessSuspended();
-  const tmpResult6 = tmp(14922);
+  const tmpResult6 = tmp(14926);
   let obj5 = { quest, questContent: tmp(5626).QuestContent.RUNNING_ACTIVITY, sourceQuestContent: tmp(5626).QuestContent.RUNNING_ACTIVITY };
   const questRewardClaimHandler = tmpResult6.useQuestRewardClaimHandler(obj5);
   ({ isClaiming, claim } = questRewardClaimHandler);
@@ -577,7 +577,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -614,7 +614,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp18) {
         c3 = 3;
@@ -680,7 +680,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   intl2 = tmp(1126).intl;
   items5 = [closure_11(IconButton, obj12), ];
   const obj13 = { quest, showShareLink: true, location: tmp12.QUEST_ACTIVITY_BOTTOM_SHEET, sourceQuestContent: tmp(5626).QuestContent.RUNNING_ACTIVITY, children: contextMenuButton };
-  const tmp7Result5 = claim(14951);
+  const tmp7Result5 = claim(14955);
   items5[1] = closure_11(tmp7Result5, obj13);
   items3[3] = closure_12(closure_5, obj11);
   const items6 = [closure_12(closure_5, obj6), ];
@@ -717,7 +717,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   tmp7Result6 = undefined;
   if (isQuestAccessSuspended) {
     if (tmp15) {
-      tmp7Result6 = tmp7(14917);
+      tmp7Result6 = tmp7(14921);
     }
   }
   const obj19 = { handleDisabled: true, startExpanded: true, children: items6 };

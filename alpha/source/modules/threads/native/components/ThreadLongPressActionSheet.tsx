@@ -1,9 +1,9 @@
-// Module ID: 16037
-// Function ID: 16038
+// Module ID: 16041
+// Function ID: 16042
 // Name: ThreadLongPressActionSheet
 // Dependencies: [19, 2051, 2074, 4905, 4909, 4511, 1085, 21, 10051, 1126, 10052, 10054, 6458, 6605, 10034, 4837, 7261, 9716, 7523, 4849, 4795, 10056, 5879, 10058, 10062, 4839, 10694, 9813, 4854, 11064, 1987, 9266, 10697, 11067, 558, 576, 504, 6772, 12, 7546, 5043, 2028, 10704, 5971, 1188, 6701, 10737, 6697, 10358, 6688, 4567, 2]
 
-// Module 16037 (ThreadLongPressActionSheet)
+// Module 16041 (ThreadLongPressActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
 import ToastUtils from "ToastUtils" /* 4567 */;
@@ -616,7 +616,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             let trailing;
             onPress = onPress.onPress;
             ({ label, IconComponent, trailing, isDestructive, disableColor } = onPress);
-            const obj = { label, variant: str, icon: closure_1_13(channel(tmp3[47]).ActionSheetRow.Icon, { IconComponent, disableColor }), trailing, onPress() { /* body not rendered: F153051 */ } };
+            const obj = { label, variant: str, icon: closure_1_13(channel(tmp3[47]).ActionSheetRow.Icon, { IconComponent, disableColor }), trailing, onPress() { /* body not rendered: F153337 */ } };
             str = "default";
             const ActionSheetRow = channel(closure_1_2[47]).ActionSheetRow;
             tmp3 = closure_1_2;
@@ -647,7 +647,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             let trailing;
             onPress = onPress.onPress;
             ({ label, IconComponent, trailing, isDestructive, disableColor } = onPress);
-            const obj = { label, variant: str, icon: closure_1_13(channel(tmp3[47]).ActionSheetRow.Icon, { IconComponent, disableColor }), trailing, onPress() { /* body not rendered: F153051 */ } };
+            const obj = { label, variant: str, icon: closure_1_13(channel(tmp3[47]).ActionSheetRow.Icon, { IconComponent, disableColor }), trailing, onPress() { /* body not rendered: F153337 */ } };
             str = "default";
             const ActionSheetRow = channel(closure_1_2[47]).ActionSheetRow;
             tmp3 = closure_1_2;
@@ -677,7 +677,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             let trailing;
             onPress = onPress.onPress;
             ({ label, IconComponent, trailing, isDestructive, disableColor } = onPress);
-            const obj = { label, variant: str, icon: closure_1_13(channel(tmp3[47]).ActionSheetRow.Icon, { IconComponent, disableColor }), trailing, onPress() { /* body not rendered: F153051 */ } };
+            const obj = { label, variant: str, icon: closure_1_13(channel(tmp3[47]).ActionSheetRow.Icon, { IconComponent, disableColor }), trailing, onPress() { /* body not rendered: F153337 */ } };
             str = "default";
             const ActionSheetRow = channel(closure_1_2[47]).ActionSheetRow;
             tmp3 = closure_1_2;
@@ -707,7 +707,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             let trailing;
             onPress = onPress.onPress;
             ({ label, IconComponent, trailing, isDestructive, disableColor } = onPress);
-            const obj = { label, variant: str, icon: closure_1_13(channel(tmp3[47]).ActionSheetRow.Icon, { IconComponent, disableColor }), trailing, onPress() { /* body not rendered: F153051 */ } };
+            const obj = { label, variant: str, icon: closure_1_13(channel(tmp3[47]).ActionSheetRow.Icon, { IconComponent, disableColor }), trailing, onPress() { /* body not rendered: F153337 */ } };
             str = "default";
             const ActionSheetRow = channel(closure_1_2[47]).ActionSheetRow;
             tmp3 = closure_1_2;

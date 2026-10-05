@@ -49,7 +49,7 @@ let obj = function _saveProfileChanges() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -108,7 +108,7 @@ let obj = function _saveProfileChanges() {
                 return obj12;
               } else {
                 c9 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             }
           } else if (1 === c8) {

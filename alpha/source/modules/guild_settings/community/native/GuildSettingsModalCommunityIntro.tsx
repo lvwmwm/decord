@@ -1,9 +1,9 @@
-// Module ID: 17806
-// Function ID: 17807
+// Module ID: 17830
+// Function ID: 17831
 // Name: GuildSettingsModalCommunityIntro
-// Dependencies: [19, 17, 2074, 4509, 9248, 1085, 21, 4890, 587, 10108, 1126, 4886, 9957, 4812, 558, 576, 1490, 504, 584, 9247, 17807, 17811, 4567, 2115, 5594, 6536, 2]
+// Dependencies: [19, 17, 2074, 4509, 9248, 1085, 21, 4890, 587, 10108, 1126, 4886, 9957, 4812, 558, 576, 1490, 504, 584, 9247, 17831, 17835, 4567, 2115, 5594, 6536, 2]
 
-// Module 17806 (GuildSettingsModalCommunityIntro)
+// Module 17830 (GuildSettingsModalCommunityIntro)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,7 +13,7 @@ import CircleInformationIcon2 from "CircleInformationIcon" /* 4812 */;
 import Text_Text from "Text/Text" /* 4886 */;
 import LightbulbIcon2 from "LightbulbIcon" /* 9957 */;
 import AnalyticsIcon2 from "AnalyticsIcon" /* 10108 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 17811 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 17835 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 2074 */;
@@ -398,7 +398,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         tmp5 = closure_1;
         tmp6 = closure_2;
         obj = closure_1(closure_2[18]);
-        waitResult = obj.wait(() => { /* body not rendered: F148937 */ });
+        waitResult = obj.wait(() => { /* body not rendered: F149221 */ });
         tmp8 = closure_2;
         tmp9 = GuildSettingsSections;
         obj1 = { onClose: null };

@@ -1,13 +1,13 @@
-// Module ID: 13741
-// Function ID: 13742
+// Module ID: 13743
+// Function ID: 13744
 // Name: GuildBadgeForce
-// Dependencies: [109, 19, 21, 558, 576, 1266, 13728, 8136, 2]
+// Dependencies: [109, 19, 21, 558, 576, 1266, 13730, 8136, 2]
 
-// Module 13741 (GuildBadgeForce)
+// Module 13743 (GuildBadgeForce)
 import react2 from "react" /* 576 */;
 import v1 from "v1" /* 1266 */;
 import inlineStyles from "inlineStyles" /* 8136 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 13728 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 13730 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

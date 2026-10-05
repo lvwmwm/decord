@@ -1,9 +1,9 @@
-// Module ID: 13297
-// Function ID: 13298
+// Module ID: 13299
+// Function ID: 13300
 // Name: useOpenPremiumMarketingPayment
 // Dependencies: [19, 1085, 1379, 558, 576, 6657, 6956, 6955, 6928, 1126, 4528, 2]
 
-// Module 13297 (useOpenPremiumMarketingPayment)
+// Module 13299 (useOpenPremiumMarketingPayment)
 import intl2 from "intl" /* 1126 */;
 import PremiumUtils from "PremiumUtils" /* 4528 */;
 import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 6928 */;

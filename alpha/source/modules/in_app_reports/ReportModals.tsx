@@ -35,7 +35,7 @@ let obj = function _submitHamReportForFirstDM() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -76,7 +76,7 @@ let obj = function _submitHamReportForFirstDM() {
               c4 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp7) {
           if (0 === c4) {
@@ -108,7 +108,7 @@ obj = function _submitReportForInappropriateConversationSafetyAlert() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -153,7 +153,7 @@ obj = function _submitReportForInappropriateConversationSafetyAlert() {
               c5 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp9) {
           if (0 === c5) {
@@ -372,7 +372,7 @@ export const showUnauthenticatedReportModalForMessage = function showUnauthentic
   const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
   obj = { report_type: MESSAGE };
   AppAnalyticsUtilsDefault;
-  const merged = Object.assign({ message_id: "Symbol", channel_id: "current" });
+  const merged = Object.assign({ message_id: "Array", channel_id: "Set" });
   trackWithMetadata(IAR_MODAL_OPEN, obj);
   const obj2 = showReportModal2;
   const obj3 = { name: MenuTypes.UnauthenticatedReportNames.MESSAGE, record: tmp };

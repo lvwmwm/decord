@@ -1,9 +1,9 @@
-// Module ID: 14830
-// Function ID: 14831
+// Module ID: 14834
+// Function ID: 14835
 // Name: BountiesScrollEndCard
-// Dependencies: [19, 17, 4879, 5623, 21, 4890, 587, 4891, 4894, 558, 576, 4612, 5605, 14831, 14834, 14813, 504, 14814, 9647, 2]
+// Dependencies: [19, 17, 4879, 5623, 21, 4890, 587, 4891, 4894, 558, 576, 4612, 5605, 14835, 14838, 14817, 504, 14818, 9647, 2]
 
-// Module 14830 (BountiesScrollEndCard)
+// Module 14834 (BountiesScrollEndCard)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,8 +11,8 @@ import timing from "timing" /* 4891 */;
 import timingPresets from "timingPresets" /* 4894 */;
 import QuestConstants from "QuestConstants" /* 5623 */;
 import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9647 */;
-import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 14813 */;
-import useVisibilityTransition from "useVisibilityTransition" /* 14814 */;
+import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 14817 */;
+import useVisibilityTransition from "useVisibilityTransition" /* 14818 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4879 */;
@@ -160,16 +160,16 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((isScrollingInB
           cResult[17] = sourceQuestContent;
           cResult[18] = !isActive;
           cResult[19] = visible;
-          cResult[20] = closure_8(isScrollingInBoundsSharedValue(14834), obj6);
-          const tmp27 = closure_8(isScrollingInBoundsSharedValue(14834), obj6);
+          cResult[20] = closure_8(isScrollingInBoundsSharedValue(14838), obj6);
+          const tmp27 = closure_8(isScrollingInBoundsSharedValue(14838), obj6);
         }
       }
       const obj7 = { bounty, sourceQuestContent, disabled: !isActive };
       cResult[11] = bounty;
       cResult[12] = sourceQuestContent;
       cResult[13] = !isActive;
-      cResult[14] = closure_8(isScrollingInBoundsSharedValue(14831), obj7);
-      const tmp21 = closure_8(isScrollingInBoundsSharedValue(14831), obj7);
+      cResult[14] = closure_8(isScrollingInBoundsSharedValue(14835), obj7);
+      const tmp21 = closure_8(isScrollingInBoundsSharedValue(14835), obj7);
     }
     const items1 = [tmp3.overlayContent, animatedStyle];
     cResult[8] = animatedStyle;
@@ -233,8 +233,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((isScrollingInB
   const View2 = isScrollingInBoundsSharedValue(4612).View;
   items3 = [, ];
   const obj7 = { bounty, sourceQuestContent, disabled: !isActive };
-  items3[0] = closure_8(isScrollingInBoundsSharedValue(14831), obj7);
-  const obj8 = { style: tmp.endedCtaButtonsContainer, pointerEvents: "box-none", children: closure_8(isScrollingInBoundsSharedValue(14834), obj9) };
+  items3[0] = closure_8(isScrollingInBoundsSharedValue(14835), obj7);
+  const obj8 = { style: tmp.endedCtaButtonsContainer, pointerEvents: "box-none", children: closure_8(isScrollingInBoundsSharedValue(14838), obj9) };
   obj9 = {
     bounty,
     visible,

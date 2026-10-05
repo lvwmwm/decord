@@ -1,9 +1,9 @@
-// Module ID: 16791
-// Function ID: 16792
+// Module ID: 16810
+// Function ID: 16811
 // Name: RecentScreen
-// Dependencies: [32, 5, 19, 6784, 11990, 16792, 11967, 7513, 11977, 1085, 21, 558, 576, 11985, 1126, 4886, 5909, 10594, 16793, 4903, 11982, 11968, 504, 11997, 16786, 1491, 16796, 11966, 14630, 8084, 8086, 16797, 16798, 16801, 2]
+// Dependencies: [32, 5, 19, 6784, 11990, 16811, 11967, 7513, 11977, 1085, 21, 558, 576, 11985, 1126, 4886, 5909, 10594, 16812, 4903, 11982, 11968, 504, 11997, 16805, 1491, 16815, 11966, 14634, 8084, 8086, 16816, 16817, 16820, 2]
 
-// Module 16791 (RecentScreen)
+// Module 16810 (RecentScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
@@ -17,14 +17,14 @@ import SearchPlatformConstants from "SearchPlatformConstants" /* 11977 */;
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11982 */;
 import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 11985 */;
 import SmartSearchUtils from "SmartSearchUtils" /* 11997 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 14630 */;
-import MediaGridPlaceholder from "MediaGridPlaceholder" /* 16798 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 14634 */;
+import MediaGridPlaceholder from "MediaGridPlaceholder" /* 16817 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import SearchMessageStore from "SearchMessageStore" /* 6784 */;
 import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 11990 */;
-import SearchHistoryStore from "SearchHistoryStore" /* 16792 */;
+import SearchHistoryStore from "SearchHistoryStore" /* 16811 */;
 import SearchQueryStore from "SearchQueryStore" /* 11967 */;
 import SearchConstants from "SearchConstants" /* 7513 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -170,7 +170,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
   } else {
     tmp6 = cResult[2];
   }
-  const tmpResult = tmp(16793);
+  const tmpResult = tmp(16812);
   onPressDMItem = tmpResult.useOnPressDMItem(tmp6);
   if (cResult[3] === onPressDMItem) {
     let tmp8;
@@ -225,7 +225,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -259,7 +259,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
             const result = obj.trackSuggestedSearchClicked(obj7);
             channelId(searchContext, channelId);
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp19) {
           c4 = 3;
@@ -283,7 +283,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
   let obj = { query, withGuildMembers: false, withAffinitySuggestions: true, affinitySuggestionsLimit: 3, withFriends: false, withFriendSuggestions: false, withFriendRequests: false, withFriendRequestsIncoming: false, withFriendRequestsOutgoing: false, excludeCurrentUser: true };
   let tmp = require("useUserListData")(obj);
   importDefault = tmp;
-  const obj2 = searchContext(onPressDMItem[18]);
+  let obj2 = searchContext(onPressDMItem[18]);
   onPressDMItem = obj2.useOnPressDMItem({ searchContext });
   const useCallback = react.useCallback;
   let closure_0 = _asyncToGenerator(async (searchContext) => {
@@ -301,7 +301,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -334,7 +334,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
             const result = obj.trackSuggestedSearchClicked(obj7);
             tmp4(searchContext, channelId);
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp19) {
           c4 = 3;
@@ -734,7 +734,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
     tmp11 = cResult[4];
   }
   const arr3 = closure_21(tmp11);
-  const tmp15 = messages(16796)(width);
+  const tmp15 = messages(16815)(width);
   dependencyMap = tmp15;
   if (null != messages) {
     let arr4;
@@ -768,7 +768,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
       if (cResult[9] === searchContext) {
         tmp27 = cResult[10];
       }
-      const obj7 = searchContext(16793);
+      const obj7 = searchContext(16812);
       const onPressMediaItem = obj7.useOnPressMediaItem(tmp27);
       if (cResult[11] === messages) {
         let tmp33;
@@ -785,7 +785,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
         } else {
           tmp34 = cResult[14];
         }
-        const tmp29Result = searchContext(16797);
+        const tmp29Result = searchContext(16816);
         const fullscreenPlaceholderCount = tmp29Result.useFullscreenPlaceholderCount(tmp34);
         if (cResult[15] === tmp33) {
           if (cResult[16] === isInitialSearchQuery) {

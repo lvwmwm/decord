@@ -37,7 +37,7 @@ let obj = function _createStageChannelForEvent() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -61,7 +61,7 @@ let obj = function _createStageChannelForEvent() {
               closure_4 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -148,7 +148,7 @@ obj = function _preStartEventActions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -182,7 +182,7 @@ obj = function _preStartEventActions() {
             closure_131_1(closure_131_2[7])(null != entity_type, "could not find or create channel");
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp16) {
           c5 = 3;
           throw tmp16;
@@ -267,7 +267,7 @@ obj = function _setEventAsActive() {
       if (closure_1 === undefined) {
         flag = false;
       }
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;

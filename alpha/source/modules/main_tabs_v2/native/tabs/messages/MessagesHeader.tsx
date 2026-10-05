@@ -1,10 +1,10 @@
-// Module ID: 15950
-// Function ID: 15951
+// Module ID: 15954
+// Function ID: 15955
 // Name: MessagesHeader
-// Dependencies: [19, 17, 1085, 21, 587, 11813, 10723, 5600, 4890, 558, 576, 4612, 5597, 15945, 4737, 11966, 6011, 10689, 7575, 1126, 4886, 6549, 15951, 5594, 4834, 2]
+// Dependencies: [19, 17, 1085, 21, 587, 11813, 10723, 5600, 4890, 558, 576, 4612, 5597, 15949, 4737, 11966, 6011, 10689, 7575, 1126, 4886, 6549, 15955, 5594, 4834, 2]
 // Exports: getMessagesHeaderHeight
 
-// Module 15950 (MessagesHeader)
+// Module 15954 (MessagesHeader)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
@@ -15,7 +15,7 @@ import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6011 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 6549 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10723 */;
 import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 11813 */;
-import MessageRequestsButtonDefault from "MessageRequestsButton" /* 15951 */;
+import MessageRequestsButtonDefault from "MessageRequestsButton" /* 15955 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -103,7 +103,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     fn.__workletHash = 17233409273245;
     fn.__initData = __initData;
     const animatedStyle = useAnimatedStyle(fn);
-    const tmpResult2 = tmp(15945);
+    const tmpResult2 = tmp(15949);
     const isHomeDrawerEnabled = tmpResult2.useIsHomeDrawerEnabled();
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
@@ -599,7 +599,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   fn.__workletHash = 5883359949214;
   fn.__initData = __initData2;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let obj3 = height(15945);
+  let obj3 = height(15949);
   const isHomeDrawerEnabled = obj3.useIsHomeDrawerEnabled();
   const callback = react.useCallback(() => {
     const obj = height(headerPanel[14]);
@@ -661,7 +661,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   const obj10 = { onPress: callback2, variant: "secondary", size: "sm", icon: scrollPosition(6549), accessibilityLabel: intl3.string(height(1126).t["5h0QOP"]) };
   const IconButton2 = tmp3(7575).IconButton;
   intl3 = tmp3(1126).intl;
-  items2 = [closure_6(IconButton2, obj10), closure_6(scrollPosition(15951), { noMargin: true, onPress: callback, alternateVariant: true }), , ];
+  items2 = [closure_6(IconButton2, obj10), closure_6(scrollPosition(15955), { noMargin: true, onPress: callback, alternateVariant: true }), , ];
   const obj11 = { variant: "secondary", grow: true, shrink: true, size: "sm", icon: scrollPosition(4834), onPress: callback1, maxFontSizeMultiplier: 1, text: intl4.string(height(1126).t.zIJnA6) };
   const Button = tmp3(5594).Button;
   intl4 = tmp3(1126).intl;

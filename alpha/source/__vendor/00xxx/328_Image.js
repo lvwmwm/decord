@@ -33,7 +33,7 @@ let obj = function _queryCache() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -62,7 +62,7 @@ let obj = function _queryCache() {
 const use = react2.use;
 const jsx = Fragment.jsx;
 let closure_6 = 1;
-let closure_8 = { uri: "done", width: "toCharArray$esjava$1", height: "toCharArray$esjava$1" };
+let closure_8 = { uri: "marginBottom", width: "unicodeVersion", height: "Reflect" };
 function _BaseImage(arg0) {
   let accessibilityLabel;
   let accessibilityLabelledBy;
@@ -271,7 +271,7 @@ if (null != unstable_setImageComponentDecorator) {
 }
 resultResult.displayName = "Image";
 resultResult.getSize = function getSize(arg0, fn, arg2) {
-  const f80756 = (width) => closure_1(width.width, width.height);
+  const f80899 = (width) => closure_1(width.width, width.height);
   let closure_0 = arg0;
   let closure_1 = fn;
   obj = ImageLoaderDefault;
@@ -280,8 +280,8 @@ resultResult.getSize = function getSize(arg0, fn, arg2) {
     return size;
   } else {
     fn = arg2;
-    const _catch = size.then(f80756).catch;
-    size.then(f80756);
+    const _catch = size.then(f80899).catch;
+    size.then(f80899);
     if (!arg2) {
       fn = () => {
         console.warn(`Failed to get size for image: ${closure_0}`);
@@ -291,7 +291,7 @@ resultResult.getSize = function getSize(arg0, fn, arg2) {
   }
 };
 resultResult.getSizeWithHeaders = function getSizeWithHeaders(arg0, arg1, fn, arg3) {
-  const f80758 = (width) => closure_1(width.width, width.height);
+  const f80901 = (width) => closure_1(width.width, width.height);
   let closure_0 = arg0;
   let closure_1 = fn;
   obj = ImageLoaderDefault;
@@ -300,8 +300,8 @@ resultResult.getSizeWithHeaders = function getSizeWithHeaders(arg0, arg1, fn, ar
     return sizeWithHeaders;
   } else {
     fn = arg3;
-    const _catch = sizeWithHeaders.then(f80758).catch;
-    sizeWithHeaders.then(f80758);
+    const _catch = sizeWithHeaders.then(f80901).catch;
+    sizeWithHeaders.then(f80901);
     if (!arg3) {
       fn = () => {
         console.warn(`Failed to get size for image: ${closure_0}`);

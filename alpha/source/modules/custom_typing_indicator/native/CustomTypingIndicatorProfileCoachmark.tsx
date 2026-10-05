@@ -1,9 +1,9 @@
-// Module ID: 16949
-// Function ID: 16950
+// Module ID: 16968
+// Function ID: 16969
 // Name: CustomTypingIndicatorProfileCoachmark
 // Dependencies: [19, 17, 1085, 2048, 21, 4890, 587, 558, 576, 1126, 3725, 6885, 9882, 11588, 11589, 11586, 1385, 2]
 
-// Module 16949 (CustomTypingIndicatorProfileCoachmark)
+// Module 16968 (CustomTypingIndicatorProfileCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -120,7 +120,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((position) => {
       constructor() {
         obj = closure_0(closure_2[11]);
         obj1 = { screen: UserSettingsSections.TYPING_INDICATOR, params: { source: "profile_coachmark" } };
-        openUserSettingsResult = obj.openUserSettings(obj1, () => { /* body not rendered: F147479 */ });
+        openUserSettingsResult = obj.openUserSettings(obj1, () => { /* body not rendered: F147754 */ });
         return;
       }
     }
@@ -131,7 +131,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((position) => {
       constructor() {
         obj = closure_0(closure_2[11]);
         obj1 = { screen: UserSettingsSections.TYPING_INDICATOR, params: { source: "profile_coachmark" } };
-        openUserSettingsResult = obj.openUserSettings(obj1, () => { /* body not rendered: F147479 */ });
+        openUserSettingsResult = obj.openUserSettings(obj1, () => { /* body not rendered: F147754 */ });
         return;
       }
     }
@@ -141,7 +141,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((position) => {
       constructor() {
         obj = closure_0(closure_2[11]);
         obj1 = { screen: UserSettingsSections.TYPING_INDICATOR, params: { source: "profile_coachmark" } };
-        openUserSettingsResult = obj.openUserSettings(obj1, () => { /* body not rendered: F147479 */ });
+        openUserSettingsResult = obj.openUserSettings(obj1, () => { /* body not rendered: F147754 */ });
         return;
       }
     }

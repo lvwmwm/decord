@@ -1,9 +1,9 @@
-// Module ID: 13724
-// Function ID: 13725
+// Module ID: 13726
+// Function ID: 13727
 // Name: GuildSettingsServerTagPreview
-// Dependencies: [5, 32, 19, 17, 1377, 7603, 21, 4890, 587, 558, 576, 504, 5042, 1402, 13725, 1126, 4886, 12506, 9395, 13726, 13770, 5594, 5593, 5995, 2]
+// Dependencies: [5, 32, 19, 17, 1377, 7603, 21, 4890, 587, 558, 576, 504, 5042, 1402, 13727, 1126, 4886, 12506, 9395, 13728, 13772, 5594, 5593, 5995, 2]
 
-// Module 13724 (GuildSettingsServerTagPreview)
+// Module 13726 (GuildSettingsServerTagPreview)
 import nativeDefault from "native" /* 587 */;
 import GuildTagConstants from "GuildTagConstants" /* 7603 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -260,7 +260,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                                     tmp76 = cResult[50];
                                   }
                                   if (cResult[51] !== tmp4.avatar) {
-                                    const obj8 = { source: onAdopted(13770), style: tmp4.avatar, importantForAccessibility: "no" };
+                                    const obj8 = { source: onAdopted(13772), style: tmp4.avatar, importantForAccessibility: "no" };
                                     const tmp80 = closure_10(closure_6, obj8);
                                     cResult[51] = tmp4.avatar;
                                     cResult[52] = tmp80;
@@ -445,7 +445,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                   const BaseGuildTagChiplet = tmp(9395).BaseGuildTagChiplet;
                   if (null != badge) {
                     size = { badge, primaryTintColor: tmp58, secondaryTintColor: tmp59, width: null, height: null };
-                    const GuildBadge = tmp(13726).GuildBadge;
+                    const GuildBadge = tmp(13728).GuildBadge;
                     ({ SIZE_12: obj13.width, SIZE_12: obj13.height } = GuildTagBadgeSize);
                     tmp56Result = tmp56(GuildBadge, size);
                     tmp58 = primaryColor;
@@ -505,7 +505,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -544,7 +544,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               }
             }
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp18) {
           c3 = 3;
@@ -653,7 +653,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -693,7 +693,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp18) {
         c3 = 3;
@@ -747,7 +747,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const BaseGuildTagChiplet = tmp2(9395).BaseGuildTagChiplet;
     if (null != badge) {
       size = { badge, primaryTintColor: primaryColor, secondaryTintColor: secondaryColor, width: null, height: null };
-      const GuildBadge = tmp2(13726).GuildBadge;
+      const GuildBadge = tmp2(13728).GuildBadge;
       ({ SIZE_12: obj15.width, SIZE_12: obj15.height } = GuildTagBadgeSize);
       tmp17Result = tmp17(GuildBadge, size);
     }
@@ -765,7 +765,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   items10 = [, ];
   ({ message: arr11[0], unfocused: arr11[1] } = tmp);
   items11 = [, ];
-  const obj17 = { source: tmp4(13770), style: tmp.avatar, importantForAccessibility: "no" };
+  const obj17 = { source: tmp4(13772), style: tmp.avatar, importantForAccessibility: "no" };
   items11[0] = closure_10(tmp20, obj17);
   const obj18 = { style: tmp.messageBody, children: items12 };
   items12 = [tmp17(tmp2(4886).Text, { variant: "text-md/semibold", color: "text-default", children: "Phibi" }), ];

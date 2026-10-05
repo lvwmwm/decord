@@ -1,10 +1,10 @@
-// Module ID: 16125
-// Function ID: 16126
+// Module ID: 16129
+// Function ID: 16130
 // Name: handleFavoritesGuildAddSuggestedChannel
 // Dependencies: [5, 10711, 10035, 1126, 2]
 // Exports: default
 
-// Module 16125 (handleFavoritesGuildAddSuggestedChannel)
+// Module 16129 (handleFavoritesGuildAddSuggestedChannel)
 import formatResults from "formatResults" /* 10711 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ let obj = function _handleFavoritesGuildAddSuggestedChannel() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -82,7 +82,7 @@ let obj = function _handleFavoritesGuildAddSuggestedChannel() {
             return obj;
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp18) {
         c4 = 3;

@@ -1,9 +1,9 @@
-// Module ID: 13893
-// Function ID: 13894
+// Module ID: 13895
+// Function ID: 13896
 // Name: NormalTelemetry
 // Dependencies: [1993, 1994, 2]
 
-// Module 13893 (NormalTelemetry)
+// Module 13895 (NormalTelemetry)
 import TelemetryRingNative2 from "TelemetryRingNative" /* 1994 */;
 import BaseTelemetryChannel from "BaseTelemetryChannel" /* 1993 */;
 import size from "module_2" /* 2 */;

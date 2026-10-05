@@ -1,9 +1,9 @@
-// Module ID: 13356
-// Function ID: 13357
+// Module ID: 13358
+// Function ID: 13359
 // Name: BoostGemPixel
 // Dependencies: [19, 21, 558, 576, 8136, 2]
 
-// Module 13356 (BoostGemPixel)
+// Module 13358 (BoostGemPixel)
 import react2 from "react" /* 576 */;
 import inlineStylesDefault from "inlineStyles" /* 8136 */;
 import react from "react" /* 19 */;

@@ -1,9 +1,9 @@
-// Module ID: 12920
-// Function ID: 12921
+// Module ID: 12922
+// Function ID: 12923
 // Name: useUserProfileGameFriendApplicationIds
 // Dependencies: [19, 4519, 1377, 558, 576, 504, 12884, 2]
 
-// Module 12920 (useUserProfileGameFriendApplicationIds)
+// Module 12922 (useUserProfileGameFriendApplicationIds)
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4519 */;
 import UserStore from "UserStore" /* 1377 */;

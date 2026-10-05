@@ -1,9 +1,9 @@
-// Module ID: 16285
-// Function ID: 16286
+// Module ID: 16289
+// Function ID: 16290
 // Name: GuildsBarGeoRestrictedBadge
 // Dependencies: [19, 17, 21, 4890, 587, 5620, 558, 576, 5974, 4810, 2]
 
-// Module 16285 (GuildsBarGeoRestrictedBadge)
+// Module 16289 (GuildsBarGeoRestrictedBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

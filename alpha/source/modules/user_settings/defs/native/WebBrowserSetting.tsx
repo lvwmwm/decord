@@ -1,13 +1,13 @@
-// Module ID: 15295
-// Function ID: 15296
+// Module ID: 15299
+// Function ID: 15300
 // Name: WebBrowserSetting
-// Dependencies: [1085, 11129, 1126, 15296, 8551, 15297, 2]
+// Dependencies: [1085, 11129, 1126, 15300, 8551, 15301, 2]
 
-// Module 15295 (WebBrowserSetting)
+// Module 15299 (WebBrowserSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import GlobeEarthIcon from "GlobeEarthIcon" /* 8551 */;
-import SelectWebBrowserSetting from "SelectWebBrowserSetting" /* 15296 */;
+import SelectWebBrowserSetting from "SelectWebBrowserSetting" /* 15300 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 

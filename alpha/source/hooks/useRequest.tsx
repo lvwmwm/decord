@@ -39,7 +39,7 @@ export default function useRequest(arg0) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -55,7 +55,7 @@ export default function useRequest(arg0) {
                 closure_2 = tmp;
                 c5 = 1;
                 c6 = 1;
-                return { value: "Reflect", done: true };
+                return { value: "Set", done: true };
               }
             } else if (1 === c5) {
               if (arg0 === 1) {
@@ -99,7 +99,7 @@ export default function useRequest(arg0) {
               c4 = 0;
               closure_130_1(false);
               c6 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             } else if (arg0 === 1) {
               c6 = 3;
               throw value;

@@ -1,10 +1,10 @@
-// Module ID: 15559
-// Function ID: 15560
+// Module ID: 15563
+// Function ID: 15564
 // Name: CaptchaTestActionCreators
 // Dependencies: [5, 1085, 1282, 2]
 // Exports: testCaptcha
 
-// Module 15559 (CaptchaTestActionCreators)
+// Module 15563 (CaptchaTestActionCreators)
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -25,7 +25,7 @@ let obj = function _testCaptcha() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -54,7 +54,7 @@ let obj = function _testCaptcha() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp9) {
           c2 = 3;

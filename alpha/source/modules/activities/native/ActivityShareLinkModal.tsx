@@ -1,9 +1,9 @@
-// Module ID: 14325
-// Function ID: 14326
+// Module ID: 14327
+// Function ID: 14328
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 2051, 1377, 2050, 10592, 4883, 21, 4890, 587, 558, 576, 504, 10711, 11756, 14324, 6663, 1375, 14326, 6965, 7166, 4568, 1126, 6688, 4567, 6880, 4839, 1484, 1618, 1369, 7498, 6010, 6019, 5911, 10714, 10728, 2]
+// Dependencies: [5, 32, 19, 17, 2051, 1377, 2050, 10592, 4883, 21, 4890, 587, 558, 576, 504, 10711, 11756, 14326, 6663, 1375, 14328, 6965, 7166, 4568, 1126, 6688, 4567, 6880, 4839, 1484, 1618, 1369, 7498, 6010, 6019, 5911, 10714, 10728, 2]
 
-// Module 14325 (ActivityShareLinkModal)
+// Module 14327 (ActivityShareLinkModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
@@ -17,7 +17,7 @@ import HeaderShared from "HeaderShared" /* 7498 */;
 import UserRowConstants from "UserRowConstants" /* 10592 */;
 import formatResults from "formatResults" /* 10711 */;
 import getApplicationInstallURL from "getApplicationInstallURL" /* 11756 */;
-import openActivityShareLinkModal from "openActivityShareLinkModal" /* 14324 */;
+import openActivityShareLinkModal from "openActivityShareLinkModal" /* 14326 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -270,7 +270,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => 
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -323,7 +323,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => 
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -358,7 +358,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => 
                       return obj;
                     }
                     c1 = 3;
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   } catch (tmp12) {
                     c1 = 3;
                     throw tmp12;
@@ -380,7 +380,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => 
             const result = obj8.closeActivityShareLinkModal();
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp10) {
           c3 = 3;
           throw tmp10;

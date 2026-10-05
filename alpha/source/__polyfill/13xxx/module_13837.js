@@ -1,28 +1,16 @@
 // Module ID: 13837
 // Function ID: 13838
-// Dependencies: [13829]
+// Dependencies: [13830]
 
 // Module 13837
-import _mod13829 from "module_13829" /* 13829 */;
+import _mod13830 from "module_13830" /* 13830 */;
 
 
-export default function(version, pre, major2, arg3, arg4) {
-  let tmp = arg4;
-  let tmp2 = arg3;
-  if (typeof major2 === "string") {
-    tmp = arg3;
-    tmp2 = major2;
+export default (arg0, arg1) => {
+  const tmp = _mod13830(arg0, arg1);
+  let version = null;
+  if (tmp) {
+    version = tmp.version;
   }
-  try {
-    const tmp7 = _mod13829;
-    if (version instanceof _mod13829) {
-      version = version.version;
-    }
-    const self = this;
-    const self2 = this;
-    const tmp72 = new tmp7(version, major2);
-    return tmp72.inc(pre, tmp2, tmp).version;
-  } catch (err) {
-    return null;
-  }
+  return version;
 };

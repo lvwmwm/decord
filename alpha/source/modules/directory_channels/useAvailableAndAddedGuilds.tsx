@@ -202,7 +202,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }
   class R {
     constructor() {
-      tmp = closure_4(function() { /* body not rendered: F141756 */ })();
+      tmp = closure_4(function() { /* body not rendered: F141994 */ })();
       return;
     }
   }
@@ -250,7 +250,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -282,7 +282,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
           } else {
             closure_128_2(false);
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp14) {
           c2 = 3;

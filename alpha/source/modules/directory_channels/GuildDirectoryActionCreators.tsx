@@ -48,7 +48,7 @@ let obj = function _addDirectoryGuildEntry() {
       if (closure_3 === undefined) {
         UNCATEGORIZED = constants.UNCATEGORIZED;
       }
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -81,7 +81,7 @@ obj = function _updateDirectoryEntry() {
       if (closure_3 === undefined) {
         UNCATEGORIZED = constants.UNCATEGORIZED;
       }
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -104,7 +104,7 @@ obj = function _fetchGuildEntriesForIds() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -148,7 +148,7 @@ obj = function _fetchGuildEntriesForIds() {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp13) {
           closure_4 = tmp13;
@@ -182,7 +182,7 @@ _asyncToGenerator(async (channelId, category_id) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -230,7 +230,7 @@ _asyncToGenerator(async (channelId, category_id) => {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp17) {
         closure_4 = tmp17;
@@ -262,7 +262,7 @@ _asyncToGenerator(async (channelId) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -304,7 +304,7 @@ _asyncToGenerator(async (channelId) => {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp17) {
         closure_3 = tmp17;
@@ -338,7 +338,7 @@ let closure_0 = _asyncToGenerator(async (channelId, query) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -391,7 +391,7 @@ let closure_0 = _asyncToGenerator(async (channelId, query) => {
           c5 = 0;
         }
         c7 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp27) {
         if (0 === c5) {
           c7 = 3;

@@ -1,9 +1,9 @@
-// Module ID: 17240
-// Function ID: 17241
+// Module ID: 17264
+// Function ID: 17265
 // Name: VoicePanelConsoleFacepile
 // Dependencies: [19, 1085, 21, 4890, 587, 9463, 1126, 558, 576, 9444, 1375, 5976, 1188, 2]
 
-// Module 17240 (VoicePanelConsoleFacepile)
+// Module 17264 (VoicePanelConsoleFacepile)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;

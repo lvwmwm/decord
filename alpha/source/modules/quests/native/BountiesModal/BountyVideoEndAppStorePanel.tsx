@@ -1,9 +1,9 @@
-// Module ID: 14857
-// Function ID: 14858
+// Module ID: 14861
+// Function ID: 14862
 // Name: BountyVideoEndAppStorePanel
 // Dependencies: [19, 17, 1193, 6646, 21, 4890, 587, 10924, 5590, 4612, 7202, 4559, 10920, 6140, 4891, 4894, 6649, 558, 576, 504, 4589, 2]
 
-// Module 14857 (BountyVideoEndAppStorePanel)
+// Module 14861 (BountyVideoEndAppStorePanel)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

@@ -1,9 +1,9 @@
-// Module ID: 15943
-// Function ID: 15944
+// Module ID: 15947
+// Function ID: 15948
 // Name: useChannelListWidth
 // Dependencies: [558, 11144, 4739, 4580, 587, 1105, 2]
 
-// Module 15943 (useChannelListWidth)
+// Module 15947 (useChannelListWidth)
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import useToken from "useToken" /* 4580 */;

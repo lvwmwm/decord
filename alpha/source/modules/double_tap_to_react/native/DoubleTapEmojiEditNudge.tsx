@@ -220,7 +220,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -260,7 +260,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
                       const obj = emoji(dependencyMap[19]);
                       const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
                       c4 = 3;
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp11) {
                     c4 = 3;
@@ -294,7 +294,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -334,7 +334,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
                       const obj = emoji(dependencyMap[19]);
                       const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
                       c4 = 3;
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp11) {
                     c4 = 3;
@@ -368,7 +368,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -408,7 +408,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
                       const obj = emoji(dependencyMap[19]);
                       const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
                       c4 = 3;
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp11) {
                     c4 = 3;
@@ -445,7 +445,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -485,7 +485,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
                       const obj = emoji(dependencyMap[19]);
                       const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
                       c4 = 3;
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp11) {
                     c4 = 3;
@@ -518,7 +518,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -558,7 +558,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
                       const obj = emoji(dependencyMap[19]);
                       const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
                       c4 = 3;
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp11) {
                     c4 = 3;
@@ -591,7 +591,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -631,7 +631,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
                       const obj = emoji(dependencyMap[19]);
                       const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
                       c4 = 3;
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp11) {
                     c4 = 3;
@@ -676,7 +676,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -716,7 +716,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
                 const obj = emoji(dependencyMap[19]);
                 const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
                 c4 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp11) {
               c4 = 3;
@@ -752,7 +752,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -792,7 +792,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
                   const obj = emoji(dependencyMap[19]);
                   const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
                   c4 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } catch (tmp11) {
                 c4 = 3;
@@ -826,7 +826,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -866,7 +866,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
                 const obj = emoji(dependencyMap[19]);
                 const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
                 c4 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp11) {
               c4 = 3;
@@ -947,7 +947,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -987,7 +987,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
             const obj = emoji(closure_2_2[19]);
             const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp11) {
           c4 = 3;

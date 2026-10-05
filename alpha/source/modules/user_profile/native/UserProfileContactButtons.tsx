@@ -1,9 +1,9 @@
-// Module ID: 12954
-// Function ID: 12955
+// Module ID: 12956
+// Function ID: 12957
 // Name: UserProfileContactButtons
-// Dependencies: [109, 19, 17, 4519, 1085, 21, 4890, 587, 558, 576, 5594, 6657, 7861, 12884, 504, 4722, 12955, 4833, 1126, 12286, 9434, 10996, 4854, 5093, 4903, 12957, 5855, 7575, 7523, 12958, 2]
+// Dependencies: [109, 19, 17, 4519, 1085, 21, 4890, 587, 558, 576, 5594, 6657, 7861, 12884, 504, 4722, 12957, 4833, 1126, 12286, 9434, 10996, 4854, 5093, 4903, 12959, 5855, 7575, 7523, 12960, 2]
 
-// Module 12954 (UserProfileContactButtons)
+// Module 12956 (UserProfileContactButtons)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,7 +14,7 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9434 */;
 import navigateToLastChannelDefault from "navigateToLastChannel" /* 10996 */;
 import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12286 */;
-import ConfirmStartCall from "ConfirmStartCall" /* 12958 */;
+import ConfirmStartCall from "ConfirmStartCall" /* 12960 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4519 */;
@@ -204,7 +204,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         let tmp12;
         let tmp14;
         if (stateFromStores === RelationshipTypes.PENDING_OUTGOING) {
-          UserPlusIcon = tmp(12955).UserClockIcon;
+          UserPlusIcon = tmp(12957).UserClockIcon;
         } else {
           UserPlusIcon = tmp(4833).UserPlusIcon;
         }
@@ -449,7 +449,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         let stringResult;
         let string2Result;
         if (stateFromStores === RelationshipTypes.PENDING_OUTGOING) {
-          UserPlusIcon = tmp3(12955).UserClockIcon;
+          UserPlusIcon = tmp3(12957).UserClockIcon;
         } else {
           UserPlusIcon = tmp3(4833).UserPlusIcon;
         }
@@ -587,7 +587,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         }
       }
     }
-    const tmp14 = trackUserProfileAction(12957)(user.id, false, tmp12);
+    const tmp14 = trackUserProfileAction(12959)(user.id, false, tmp12);
     const handlePress = tmp14.handlePress;
     ({ text, inCall, accessibilityHint } = tmp14);
     if (hasCustomProfileTheme) {

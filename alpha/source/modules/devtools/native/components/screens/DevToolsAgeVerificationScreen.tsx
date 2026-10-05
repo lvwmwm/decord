@@ -1,9 +1,9 @@
-// Module ID: 15585
-// Function ID: 15586
+// Module ID: 15589
+// Function ID: 15590
 // Name: DevToolsAgeVerificationScreen
 // Dependencies: [5, 19, 17, 21, 4890, 587, 8091, 8084, 4568, 8086, 558, 576, 1618, 5993, 6446, 6000, 6074, 2]
 
-// Module 15585 (DevToolsAgeVerificationScreen)
+// Module 15589 (DevToolsAgeVerificationScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -44,7 +44,7 @@ let obj = function _showAgeVerificationTestModal() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -101,7 +101,7 @@ let obj = function _showAgeVerificationTestModal() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp12) {
         let closure_2 = tmp12;

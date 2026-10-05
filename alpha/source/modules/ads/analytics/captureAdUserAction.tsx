@@ -55,7 +55,7 @@ let obj = function _emitClickEventWithCreative() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -151,7 +151,7 @@ let obj = function _emitClickEventWithCreative() {
             trackQuestEvent(obj13);
           }
           c8 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp54) {
         c8 = 3;
@@ -180,7 +180,7 @@ obj = function _handleClickInternalAction() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -230,7 +230,7 @@ obj = function _handleClickInternalAction() {
             return { value, done: true };
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp8) {
           c3 = 3;
           throw tmp8;
@@ -253,7 +253,7 @@ obj = function _handleClickExternalAdvertiserCtaAction() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -281,7 +281,7 @@ obj = function _handleClickExternalAdvertiserCtaAction() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp6) {
         c1 = 3;
@@ -385,7 +385,7 @@ obj = function _handleViewInternalSurfaceImpressionAction() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -453,7 +453,7 @@ obj = function _handleViewInternalSurfaceImpressionAction() {
           track(QUEST_CONTENT_VIEWED, obj8);
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp30) {
         c5 = 3;
         throw tmp30;

@@ -1,16 +1,16 @@
-// Module ID: 13310
-// Function ID: 13311
+// Module ID: 13312
+// Function ID: 13313
 // Name: BoostedGuildTierProgressCircle
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 13311, 13315, 13316, 13317, 558, 576, 7671, 7666, 4886, 12251, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 13313, 13317, 13318, 13319, 558, 576, 7671, 7666, 4886, 12251, 2]
 
-// Module 13310 (BoostedGuildTierProgressCircle)
+// Module 13312 (BoostedGuildTierProgressCircle)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 4886 */;
 import GuildBoostingUtils from "GuildBoostingUtils" /* 7666 */;
 import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 7671 */;
 import ProgressCircleDefault from "ProgressCircle" /* 12251 */;
-import Tier048Px from "Tier048Px" /* 13311 */;
+import Tier048Px from "Tier048Px" /* 13313 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
@@ -173,11 +173,11 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (guild.premiumTier !== metroRequire.NONE) {
         const premiumTier = guild.premiumTier;
         if (metroRequire.TIER_1 === premiumTier) {
-          tier048PxSource1 = tmp5(13315);
-        } else if (metroRequire.TIER_2 === premiumTier) {
-          tier048PxSource1 = tmp5(13316);
-        } else if (metroRequire.TIER_3 === premiumTier) {
           tier048PxSource1 = tmp5(13317);
+        } else if (metroRequire.TIER_2 === premiumTier) {
+          tier048PxSource1 = tmp5(13318);
+        } else if (metroRequire.TIER_3 === premiumTier) {
+          tier048PxSource1 = tmp5(13319);
         }
       }
       cResult[8] = guild;
@@ -226,11 +226,11 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (guild.premiumTier !== metroRequire.NONE) {
         const premiumTier = guild.premiumTier;
         if (metroRequire.TIER_1 === premiumTier) {
-          tier048PxSource = tmp2(13315);
-        } else if (metroRequire.TIER_2 === premiumTier) {
-          tier048PxSource = tmp2(13316);
-        } else if (metroRequire.TIER_3 === premiumTier) {
           tier048PxSource = tmp2(13317);
+        } else if (metroRequire.TIER_2 === premiumTier) {
+          tier048PxSource = tmp2(13318);
+        } else if (metroRequire.TIER_3 === premiumTier) {
+          tier048PxSource = tmp2(13319);
         }
       }
       const obj5 = { source: tier048PxSource, style: tmp.guildTierIcon, accessibilityElementsHidden: true, importantForAccessibility: "no" };

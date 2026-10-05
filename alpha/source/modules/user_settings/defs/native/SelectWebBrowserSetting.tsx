@@ -1,9 +1,9 @@
-// Module ID: 15296
-// Function ID: 15297
+// Module ID: 15300
+// Function ID: 15301
 // Name: SelectWebBrowserSetting
 // Dependencies: [7634, 558, 4851, 576, 1126, 1105, 1369, 11129, 2]
 
-// Module 15296 (SelectWebBrowserSetting)
+// Module 15300 (SelectWebBrowserSetting)
 import react from "react" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl4 from "intl" /* 1126 */;

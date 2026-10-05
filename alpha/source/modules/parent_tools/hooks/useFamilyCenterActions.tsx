@@ -65,7 +65,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(cResult) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -128,7 +128,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(cResult) {
           tmp(false);
         }
         c6 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp36) {
         closure_3 = tmp36;
         if (0 === c4) {
@@ -161,7 +161,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(cResult) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -225,7 +225,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(cResult) {
           tmp36(false);
         }
         c6 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp36) {
         if (0 === c4) {
           c6 = 3;
@@ -257,7 +257,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(cResult) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -320,7 +320,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(cResult) {
           c4(false);
         }
         c6 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp36) {
         closure_3 = tmp36;
         if (0 === c4) {
@@ -353,7 +353,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(cResult) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -417,7 +417,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(cResult) {
           c5(false);
         }
         c6 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp35) {
         closure_3 = tmp35;
         if (0 === c4) {
@@ -449,7 +449,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(cResult) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -513,7 +513,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(cResult) {
           closure_129_7(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp36) {
         closure_2 = tmp36;
         if (0 === c3) {
@@ -541,7 +541,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(cResult) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -605,7 +605,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(cResult) {
           closure_1_11(false);
         }
         c6 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp35) {
         closure_3 = tmp35;
         if (0 === c4) {
@@ -638,7 +638,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(cResult) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;
@@ -701,7 +701,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(cResult) {
           closure_1_9(false);
         }
         c7 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp35) {
         closure_4 = tmp35;
         if (0 === c5) {
@@ -732,7 +732,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(cResult) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -801,7 +801,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(cResult) {
           closure_1_13(false);
         }
         c6 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp37) {
         closure_3 = tmp37;
         if (0 === c4) {

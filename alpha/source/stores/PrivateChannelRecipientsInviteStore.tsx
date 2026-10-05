@@ -1,9 +1,9 @@
-// Module ID: 13563
-// Function ID: 13564
+// Module ID: 13565
+// Function ID: 13566
 // Name: PrivateChannelRecipientsInviteStore
 // Dependencies: [4776, 7143, 2055, 2051, 6084, 5694, 2112, 2074, 4519, 1377, 1085, 2018, 4722, 9500, 504, 584, 2]
 
-// Module 13563 (PrivateChannelRecipientsInviteStore)
+// Module 13565 (PrivateChannelRecipientsInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import StringUtils from "StringUtils" /* 2018 */;

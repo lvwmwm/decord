@@ -1,9 +1,9 @@
-// Module ID: 17051
-// Function ID: 17052
+// Module ID: 17075
+// Function ID: 17076
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 2051, 5110, 1377, 21, 4890, 587, 558, 576, 1618, 504, 17052, 17054, 12082, 2]
+// Dependencies: [32, 19, 17, 2051, 5110, 1377, 21, 4890, 587, 558, 576, 1618, 504, 17076, 17078, 12082, 2]
 
-// Module 17051 (RestrictedMessageRequestPreview)
+// Module 17075 (RestrictedMessageRequestPreview)
 import nativeDefault from "native" /* 587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -191,8 +191,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
           tmp = globalThis;
           _setTimeout = setTimeout;
           num = 1000;
-          closure_0 = setTimeout(() => { /* body not rendered: F147655 */ }, 1000);
-          return () => { /* body not rendered: F147656 */ };
+          closure_0 = setTimeout(() => { /* body not rendered: F147939 */ }, 1000);
+          return () => { /* body not rendered: F147940 */ };
         }
       }
     }
@@ -211,8 +211,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
           tmp = globalThis;
           _setTimeout = setTimeout;
           num = 1000;
-          closure_0 = setTimeout(() => { /* body not rendered: F147655 */ }, 1000);
-          return () => { /* body not rendered: F147656 */ };
+          closure_0 = setTimeout(() => { /* body not rendered: F147939 */ }, 1000);
+          return () => { /* body not rendered: F147940 */ };
         }
       }
     }
@@ -228,8 +228,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
           tmp = globalThis;
           _setTimeout = setTimeout;
           num = 1000;
-          closure_0 = setTimeout(() => { /* body not rendered: F147655 */ }, 1000);
-          return () => { /* body not rendered: F147656 */ };
+          closure_0 = setTimeout(() => { /* body not rendered: F147939 */ }, 1000);
+          return () => { /* body not rendered: F147940 */ };
         }
       }
     }
@@ -324,9 +324,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       }
       items7[1] = hidden;
       const obj6 = { channel: stateFromStores, user: stateFromStores1 };
-      items8 = [closure_10(tmp2(17052), obj6), ];
+      items8 = [closure_10(tmp2(17076), obj6), ];
       const obj7 = { channelId };
-      items8[1] = closure_10(ref(17054), obj7);
+      items8[1] = closure_10(ref(17078), obj7);
       items9 = [closure_11(tmp15, obj5), ];
       const obj8 = { style: items10, children: closure_10(ref(12082), obj10) };
       items10 = [tmp.footer, ];

@@ -1,10 +1,10 @@
-// Module ID: 16115
-// Function ID: 16116
+// Module ID: 16119
+// Function ID: 16120
 // Name: AccountLinkBanner
 // Dependencies: [19, 17, 1377, 2048, 21, 587, 6667, 10723, 5600, 4890, 558, 576, 573, 6657, 6681, 6017, 5909, 1188, 1126, 4886, 8389, 5594, 5995, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 16115 (AccountLinkBanner)
+// Module 16119 (AccountLinkBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -249,7 +249,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((startAuthoriza
     const obj9 = { style: tmp.ellipsisDot };
     items3[2] = closure_6(View, obj9);
     items2[1] = closure_7(View, obj6);
-    const obj10 = { user: stateFromStores, size: require("native").AvatarSizes.LARGE_48, guildId: "Array" };
+    const obj10 = { user: stateFromStores, size: require("native").AvatarSizes.LARGE_48, guildId: "r" };
     const Avatar = tmp2(tmp3[17]).Avatar;
     items2[2] = closure_6(Avatar, obj10);
     items1[1] = closure_7(View, obj4);

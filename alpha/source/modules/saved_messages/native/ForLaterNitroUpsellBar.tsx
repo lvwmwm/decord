@@ -1,9 +1,9 @@
-// Module ID: 13134
-// Function ID: 13135
+// Module ID: 13136
+// Function ID: 13137
 // Name: ForLaterNitroUpsellBar
 // Dependencies: [19, 1379, 7482, 21, 558, 576, 6657, 11336, 11850, 4528, 1126, 2]
 
-// Module 13134 (ForLaterNitroUpsellBar)
+// Module 13136 (ForLaterNitroUpsellBar)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
 import PremiumConstants from "PremiumConstants" /* 1379 */;

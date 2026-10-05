@@ -1,10 +1,10 @@
-// Module ID: 15395
-// Function ID: 15396
+// Module ID: 15399
+// Function ID: 15400
 // Name: CacheActionsStorageDiagnostics
-// Dependencies: [5, 32, 19, 21, 4574, 4568, 4812, 15394, 1126, 5593, 4886, 5594, 2]
+// Dependencies: [5, 32, 19, 21, 4574, 4568, 4812, 15398, 1126, 5593, 4886, 5594, 2]
 // Exports: default
 
-// Module 15395 (CacheActionsStorageDiagnostics)
+// Module 15399 (CacheActionsStorageDiagnostics)
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
 import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4574 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -66,7 +66,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -141,7 +141,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
             closure_129_0(false);
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp41) {
           ref = tmp41;
           if (0 === c3) {

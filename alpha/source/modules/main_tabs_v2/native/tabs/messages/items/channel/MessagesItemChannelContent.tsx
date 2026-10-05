@@ -1,9 +1,9 @@
-// Module ID: 15958
-// Function ID: 15959
+// Module ID: 15962
+// Function ID: 15963
 // Name: MessagesItemChannelContent
-// Dependencies: [19, 17, 4905, 5072, 21, 4890, 587, 558, 576, 1188, 7589, 6457, 11065, 10693, 4791, 4587, 504, 15133, 4461, 7519, 11, 15959, 5043, 15960, 4580, 10633, 10634, 4886, 9395, 8961, 12488, 7514, 10609, 1126, 15962, 2]
+// Dependencies: [19, 17, 4905, 5072, 21, 4890, 587, 558, 576, 1188, 7589, 6457, 11065, 10693, 4791, 4587, 504, 15137, 4461, 7519, 11, 15963, 5043, 15964, 4580, 10633, 10634, 4886, 9395, 8961, 12488, 7514, 10609, 1126, 15966, 2]
 
-// Module 15958 (MessagesItemChannelContent)
+// Module 15962 (MessagesItemChannelContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -21,7 +21,7 @@ import ActivityStatusDefault from "ActivityStatus" /* 10609 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10633 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 10693 */;
 import AssetRegistryDefault4 from "AssetRegistry" /* 11065 */;
-import usePrivateChannelWaveDefault from "usePrivateChannelWave" /* 15960 */;
+import usePrivateChannelWaveDefault from "usePrivateChannelWave" /* 15964 */;
 import react from "react" /* 19 */;
 import ReadStateStore from "ReadStateStore" /* 4905 */;
 import Fragment from "Fragment" /* 21 */;
@@ -40,7 +40,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp4;
-const useMessagePreviewsDefault = tmp4(15133);
+const useMessagePreviewsDefault = tmp4(15137);
 const View = react_native.View;
 const UnreadSetting = ReadStateConstants.UnreadSetting;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
@@ -365,8 +365,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   if (tmp12) {
     tmp12 = !tmp3(7519)(channel.id);
   }
-  const useRelativeTimestamp = channel(15959).useRelativeTimestamp;
-  channel(15959);
+  const useRelativeTimestamp = channel(15963).useRelativeTimestamp;
+  channel(15963);
   let id = stateFromStores;
   const extractTimestamp = SnowflakeUtilsDefault.extractTimestamp;
   SnowflakeUtilsDefault;
@@ -512,7 +512,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       const tmp43 = closure_8;
       if (waveShouldShow) {
         const obj23 = { wavePressed, hasNameplate };
-        tmp22Result8 = tmp22(tmp3(15962), obj23);
+        tmp22Result8 = tmp22(tmp3(15966), obj23);
       }
       const obj24 = { children: items9 };
       items9[1] = tmp22Result8;

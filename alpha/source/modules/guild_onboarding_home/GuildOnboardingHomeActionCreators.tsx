@@ -68,7 +68,7 @@ obj = function _fetchNewMemberActions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -122,7 +122,7 @@ obj = function _fetchNewMemberActions() {
             return { value: tmp, done: true };
           }
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp18) {
           closure_3 = tmp18;
           if (0 === c4) {
@@ -152,7 +152,7 @@ obj = function _clearNewMemberActions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -199,7 +199,7 @@ obj = function _clearNewMemberActions() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp18) {
           closure_3 = tmp18;

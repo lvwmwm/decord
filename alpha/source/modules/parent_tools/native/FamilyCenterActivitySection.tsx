@@ -1,15 +1,15 @@
-// Module ID: 14703
-// Function ID: 14704
+// Module ID: 14707
+// Function ID: 14708
 // Name: FamilyCenterActivitySection
-// Dependencies: [32, 19, 17, 7049, 21, 4890, 587, 558, 576, 8296, 8298, 14698, 4886, 11528, 1126, 2493, 14704, 5909, 2]
+// Dependencies: [32, 19, 17, 7049, 21, 4890, 587, 558, 576, 8296, 8298, 14702, 4886, 11528, 1126, 2493, 14708, 5909, 2]
 
-// Module 14703 (FamilyCenterActivitySection)
+// Module 14707 (FamilyCenterActivitySection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 4886 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8296 */;
 import FamilyCenterUtils from "FamilyCenterUtils" /* 8298 */;
-import useFamilyCenterActivities from "useFamilyCenterActivities" /* 14698 */;
+import useFamilyCenterActivities from "useFamilyCenterActivities" /* 14702 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -192,9 +192,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayType) => {
   const cResult = obj.c(36);
   displayType = displayType.displayType;
   const tmp4 = closure_13();
-  const obj2 = displayType(14698);
+  const obj2 = displayType(14702);
   const actionsForDisplayType = obj2.useActionsForDisplayType(displayType);
-  const obj3 = displayType(14698);
+  const obj3 = displayType(14702);
   const actionTotalsForDisplayType = obj3.useActionTotalsForDisplayType(displayType);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = {};
@@ -397,9 +397,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((displayType) => {
   let tmp19Result;
   displayType = displayType.displayType;
   const tmp = closure_13();
-  let obj = displayType(14698);
+  let obj = displayType(14702);
   const actionsForDisplayType = obj.useActionsForDisplayType(displayType);
-  const obj2 = displayType(14698);
+  const obj2 = displayType(14702);
   const actionTotalsForDisplayType = obj2.useActionTotalsForDisplayType(displayType);
   const obj3 = displayType(11528);
   const familyCenterActions = obj3.useFamilyCenterActions({});

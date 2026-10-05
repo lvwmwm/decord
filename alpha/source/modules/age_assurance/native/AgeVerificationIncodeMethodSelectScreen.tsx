@@ -74,7 +74,7 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -133,7 +133,7 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
             c4 = 0;
             tmp(false);
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp32) {
           if (0 === c4) {

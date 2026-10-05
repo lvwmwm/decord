@@ -1,9 +1,9 @@
-// Module ID: 17370
-// Function ID: 17371
+// Module ID: 17394
+// Function ID: 17395
 // Name: CutoutImage
 // Dependencies: [32, 19, 17, 21, 1266, 8136, 12854, 2]
 
-// Module 17370 (CutoutImage)
+// Module 17394 (CutoutImage)
 import react_native from "react-native" /* 17 */;
 import v1 from "v1" /* 1266 */;
 import inlineStylesDefault from "inlineStyles" /* 8136 */;

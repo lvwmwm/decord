@@ -1,11 +1,11 @@
-// Module ID: 14720
-// Function ID: 14721
+// Module ID: 14724
+// Function ID: 14725
 // Name: FamilyCenterEmpty
-// Dependencies: [19, 17, 21, 4890, 558, 576, 14721, 4886, 2]
+// Dependencies: [19, 17, 21, 4890, 558, 576, 14725, 4886, 2]
 
-// Module 14720 (FamilyCenterEmpty)
+// Module 14724 (FamilyCenterEmpty)
 import react2 from "react" /* 576 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14721 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14725 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

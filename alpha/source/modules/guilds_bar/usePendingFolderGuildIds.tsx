@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const f100372 = (item) => null == closure_0[item];
+const f100518 = (item) => null == closure_0[item];
 function getPendingFolderGuildIds() {
   let obj;
   let obj2;
@@ -25,7 +25,7 @@ function getPendingFolderGuildIds() {
   [obj, obj2] = tmp;
   const guildIds = obj.computeGuildIds();
   const guilds = obj2.getGuilds();
-  return guildIds.filter(f100372);
+  return guildIds.filter(f100518);
 }
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp4;
@@ -41,7 +41,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       [obj, obj2] = items;
       const guildIds = obj.computeGuildIds();
       const guilds = obj2.getGuilds();
-      return guildIds.filter(f100372);
+      return guildIds.filter(f100518);
     };
     cResult[0] = items;
     cResult[1] = fn;
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     [obj, obj2] = items;
     const guildIds = obj.computeGuildIds();
     const guilds = obj2.getGuilds();
-    return guildIds.filter(f100372);
+    return guildIds.filter(f100518);
   });
 });
 const result = size.fileFinishedImporting("modules/guilds_bar/usePendingFolderGuildIds.tsx");

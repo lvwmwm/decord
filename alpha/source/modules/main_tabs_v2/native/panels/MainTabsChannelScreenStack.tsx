@@ -1,9 +1,9 @@
-// Module ID: 16469
-// Function ID: 16470
+// Module ID: 16473
+// Function ID: 16474
 // Name: MainTabsChannelScreenStack
-// Dependencies: [32, 19, 17, 7499, 1085, 1096, 21, 4890, 558, 576, 4612, 16470, 16472, 5590, 4791, 4739, 16473, 4589, 16474, 5738, 4613, 1491, 4745, 15924, 16320, 6140, 4732, 15923, 584, 4746, 2]
+// Dependencies: [32, 19, 17, 7499, 1085, 1096, 21, 4890, 558, 576, 4612, 16474, 16476, 5590, 4791, 4739, 16477, 4589, 16478, 5738, 4613, 1491, 4745, 15928, 16324, 6140, 4732, 15927, 584, 4746, 2]
 
-// Module 16469 (MainTabsChannelScreenStack)
+// Module 16473 (MainTabsChannelScreenStack)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants2 from "Constants" /* 1096 */;
@@ -15,13 +15,13 @@ import ChatInputUtils from "ChatInputUtils" /* 4745 */;
 import useThemeDefault from "useTheme" /* 4791 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
 import react_native from "react-native" /* 7499 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 15923 */;
-import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 15924 */;
-import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 16320 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 16470 */;
-import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 16472 */;
-import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 16473 */;
-import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 16474 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 15927 */;
+import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 15928 */;
+import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 16324 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 16474 */;
+import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 16476 */;
+import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 16477 */;
+import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 16478 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;

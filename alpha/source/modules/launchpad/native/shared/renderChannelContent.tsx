@@ -1,10 +1,10 @@
-// Module ID: 16816
-// Function ID: 16817
+// Module ID: 16835
+// Function ID: 16836
 // Name: renderChannelContent
-// Dependencies: [19, 17, 11697, 5072, 21, 4890, 1369, 558, 576, 16813, 5846, 16817, 4886, 5879, 4803, 16052, 2]
+// Dependencies: [19, 17, 11697, 5072, 21, 4890, 1369, 558, 576, 16832, 5846, 16836, 4886, 5879, 4803, 16056, 2]
 // Exports: default
 
-// Module 16816 (renderChannelContent)
+// Module 16835 (renderChannelContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import WarningIcon from "WarningIcon" /* 4803 */;
@@ -13,9 +13,9 @@ import ReadStateConstants from "ReadStateConstants" /* 5072 */;
 import isRoleRequiredDefault from "isRoleRequired" /* 5846 */;
 import LockIcon from "LockIcon" /* 5879 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11697 */;
-import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 16052 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 16813 */;
-import ChannelTitleDefault from "ChannelTitle" /* 16817 */;
+import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 16056 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 16832 */;
+import ChannelTitleDefault from "ChannelTitle" /* 16836 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4890 */;
@@ -535,7 +535,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj12 = { locked: needSubscriptionToAccess, isInMainTabsExperiment: true };
-      isSubscriptionGated = tmp9(tmp2(16052), obj12);
+      isSubscriptionGated = tmp9(tmp2(16056), obj12);
     }
     items3[2] = isSubscriptionGated;
     tmp11Result = tmp11(tmp10, obj8);

@@ -1,9 +1,9 @@
-// Module ID: 16342
-// Function ID: 16343
+// Module ID: 16346
+// Function ID: 16347
 // Name: ForLaterOpenActionButton
-// Dependencies: [19, 17, 11283, 21, 8469, 16343, 4890, 587, 558, 576, 4791, 4580, 5601, 7495, 4849, 11337, 504, 7485, 7480, 7483, 6681, 7494, 1126, 7575, 2]
+// Dependencies: [19, 17, 11283, 21, 8469, 16347, 4890, 587, 558, 576, 4791, 4580, 5601, 7495, 4849, 11337, 504, 7485, 7480, 7483, 6681, 7494, 1126, 7575, 2]
 
-// Module 16342 (ForLaterOpenActionButton)
+// Module 16346 (ForLaterOpenActionButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,7 +16,7 @@ import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7483 */;
 import showForLaterModal from "showForLaterModal" /* 7494 */;
 import SavedMessagesTypes from "SavedMessagesTypes" /* 7495 */;
 import ClipView from "ClipView" /* 8469 */;
-import getIconSize from "getIconSize" /* 16343 */;
+import getIconSize from "getIconSize" /* 16347 */;
 import react from "react" /* 19 */;
 import SavedMessagesStore from "SavedMessagesStore" /* 11283 */;
 import Fragment from "Fragment" /* 21 */;

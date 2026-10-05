@@ -1,9 +1,9 @@
-// Module ID: 16081
-// Function ID: 16082
+// Module ID: 16085
+// Function ID: 16086
 // Name: GuildThemeNuxActionSheet
-// Dependencies: [5, 32, 19, 17, 4699, 4766, 2048, 21, 3, 4890, 587, 558, 576, 16082, 4787, 504, 4854, 1126, 16083, 4886, 6071, 6072, 1188, 5594, 6645, 2]
+// Dependencies: [5, 32, 19, 17, 4699, 4766, 2048, 21, 3, 4890, 587, 558, 576, 16086, 4787, 504, 4854, 1126, 16087, 4886, 6071, 6072, 1188, 5594, 6645, 2]
 
-// Module 16081 (GuildThemeNuxActionSheet)
+// Module 16085 (GuildThemeNuxActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
@@ -67,8 +67,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const markAsDismissed = guildId.markAsDismissed;
   const tmp4 = closure_14();
   let obj2 = react;
-  [tmp6, dependencyMap] = _slicedToArray(react.useState(guildId(16082).getInitialGuildThemeNuxSelection), 2);
-  const tmp5 = _slicedToArray(react.useState(guildId(16082).getInitialGuildThemeNuxSelection), 2);
+  [tmp6, dependencyMap] = _slicedToArray(react.useState(guildId(16086).getInitialGuildThemeNuxSelection), 2);
+  const tmp5 = _slicedToArray(react.useState(guildId(16086).getInitialGuildThemeNuxSelection), 2);
   [r10028, _asyncToGenerator] = _slicedToArray(react.useState(null), 2);
   const tmp7 = _slicedToArray(react.useState(null), 2);
   const tmp8 = _slicedToArray(react.useState(false), 2);
@@ -193,7 +193,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -245,7 +245,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             obj.hideActionSheet(GuildThemeNuxActionSheet);
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp36) {
           closure_2 = tmp36;
           if (0 === c3) {
@@ -319,7 +319,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const tmp = closure_14();
   let tmp2 = guildId;
   const tmp3 = dependencyMap;
-  const tmp4 = _slicedToArray(react.useState(guildId(16082).getInitialGuildThemeNuxSelection), 2);
+  const tmp4 = _slicedToArray(react.useState(guildId(16086).getInitialGuildThemeNuxSelection), 2);
   [tmp5, c2] = tmp4;
   [tmp7, c3] = _slicedToArray(react.useState(null), 2);
   const tmp6 = _slicedToArray(react.useState(null), 2);
@@ -385,7 +385,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -437,7 +437,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           obj.hideActionSheet(GuildThemeNuxActionSheet);
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp36) {
         closure_2 = tmp36;
         if (0 === v0) {
@@ -463,7 +463,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let obj3 = { startExpanded: true, dismissAccessibilityLabel: intl2.string(tmp2(1126).t.cpT0Cq), onDismiss: callback3, contentStyles: tmp.container, children: items7 };
   BottomSheet = tmp2(6645).BottomSheet;
   intl2 = tmp2(1126).intl;
-  items7 = [closure_10(markAsDismissed(16083), { themeSettings: stateFromStores1, isPersonal: tmp10 }), , , , , , ];
+  items7 = [closure_10(markAsDismissed(16087), { themeSettings: stateFromStores1, isPersonal: tmp10 }), , , , , , ];
   let obj4 = { accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: intl3.string(tmp2(1126).t.Q9zFy9) };
   const Text = tmp2(4886).Text;
   intl3 = tmp2(1126).intl;

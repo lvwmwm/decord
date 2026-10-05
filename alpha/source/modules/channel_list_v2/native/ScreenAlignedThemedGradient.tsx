@@ -1,9 +1,9 @@
-// Module ID: 16024
-// Function ID: 16025
+// Module ID: 16028
+// Function ID: 16029
 // Name: ScreenAlignedThemedGradient
-// Dependencies: [17, 21, 4890, 10725, 558, 576, 7509, 5911, 15945, 4612, 2]
+// Dependencies: [17, 21, 4890, 10725, 558, 576, 7509, 5911, 15949, 4612, 2]
 
-// Module 16024 (ScreenAlignedThemedGradient)
+// Module 16028 (ScreenAlignedThemedGradient)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import ThemedGradientDefault from "ThemedGradient" /* 5911 */;

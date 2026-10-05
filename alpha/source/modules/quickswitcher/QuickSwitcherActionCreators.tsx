@@ -319,7 +319,7 @@ let obj = function _openInviteFromQuickSwitcher() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -356,7 +356,7 @@ let obj = function _openInviteFromQuickSwitcher() {
               obj.dispatch(obj7);
             }
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp19) {
           c4 = 3;
@@ -466,7 +466,7 @@ export const switchToResultInNewTab = function switchToResultInNewTab(type) {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 try {
@@ -502,7 +502,7 @@ export const switchToResultInNewTab = function switchToResultInNewTab(type) {
                     obj = tmp4(c2[28]);
                     obj.openChannelTabActive(tmp4, null);
                     c3 = 3;
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } catch (tmp15) {
                   c3 = 3;

@@ -1,9 +1,9 @@
-// Module ID: 16093
-// Function ID: 16094
+// Module ID: 16097
+// Function ID: 16098
 // Name: useGuildPowerupsBoostAction
 // Dependencies: [5, 19, 6908, 4768, 1085, 558, 576, 12197, 6657, 6925, 7668, 7666, 5612, 6909, 2]
 
-// Module 16093 (useGuildPowerupsBoostAction)
+// Module 16097 (useGuildPowerupsBoostAction)
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6657 */;
 import useGuildBoostPurchaseHandlerDefault from "useGuildBoostPurchaseHandler" /* 12197 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
@@ -68,7 +68,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, 
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -104,7 +104,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, 
               }
             }
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else if (arg0 === 1) {
           c3 = 3;
@@ -195,7 +195,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, 
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -229,7 +229,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, 
               }
             }
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else if (arg0 === 1) {
           c3 = 3;

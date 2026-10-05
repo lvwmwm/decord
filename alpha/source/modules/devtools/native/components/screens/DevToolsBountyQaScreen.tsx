@@ -1,9 +1,9 @@
-// Module ID: 15491
-// Function ID: 15492
+// Module ID: 15495
+// Function ID: 15496
 // Name: DevToolsBountyQaScreen
-// Dependencies: [5, 32, 19, 17, 7184, 21, 4890, 587, 4568, 558, 576, 1618, 5626, 7185, 504, 10949, 9994, 5630, 4886, 6071, 6072, 14906, 5993, 14904, 6458, 6074, 2]
+// Dependencies: [5, 32, 19, 17, 7184, 21, 4890, 587, 4568, 558, 576, 1618, 5626, 7185, 504, 10949, 9994, 5630, 4886, 6071, 6072, 14910, 5993, 14908, 6458, 6074, 2]
 
-// Module 15491 (DevToolsBountyQaScreen)
+// Module 15495 (DevToolsBountyQaScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
@@ -330,7 +330,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 }
               }
             }
-            const tmp34 = closure_8(tmp(14906).UndoIcon, {});
+            const tmp34 = closure_8(tmp(14910).UndoIcon, {});
             cResult[23] = tmp34;
             tmp33 = tmp34;
           } else {
@@ -400,7 +400,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 }
               }
             }
-            let obj4 = { label: "Refresh Organic Serve", subLabel: "Re-runs the dock decision without clearing delivery state. Use to confirm a cooldown still blocks.", icon: closure_8(tmp(14904).RedoIcon, {}), onPress: tmp20 };
+            let obj4 = { label: "Refresh Organic Serve", subLabel: "Re-runs the dock decision without clearing delivery state. Use to confirm a cooldown still blocks.", icon: closure_8(tmp(14908).RedoIcon, {}), onPress: tmp20 };
             const TableRow = tmp(5993).TableRow;
             const tmp38 = closure_8(TableRow, obj4);
             cResult[26] = tmp38;
@@ -533,7 +533,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c2;
@@ -554,7 +554,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   toast("No dock bounty in memory. Pick a lookback window.", "bounty-qa-missing-id");
                   c2 = 0;
                   c3 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 } else {
                   c1 = 3;
                   c3 = 1;
@@ -602,7 +602,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               c2 = 0;
             }
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp26) {
           if (0 === c2) {
@@ -683,7 +683,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c2;
@@ -704,7 +704,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   closure_1_12("No dock bounty in memory. Pick a lookback window.", "bounty-qa-missing-id");
                   c2 = 0;
                   c3 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 } else {
                   c1 = 3;
                   c3 = 1;
@@ -752,7 +752,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               c2 = 0;
             }
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp26) {
           if (0 === c2) {

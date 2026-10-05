@@ -1,15 +1,15 @@
-// Module ID: 15224
-// Function ID: 15225
+// Module ID: 15228
+// Function ID: 15229
 // Name: DisplayNameStylesAccessibilitySetting
-// Dependencies: [4879, 7634, 558, 576, 504, 14275, 11129, 1126, 2883, 2]
+// Dependencies: [4879, 7634, 558, 576, 504, 14277, 11129, 1126, 2883, 2]
 // Exports: onValueChange
 
-// Module 15224 (DisplayNameStylesAccessibilitySetting)
+// Module 15228 (DisplayNameStylesAccessibilitySetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import _modDef2883 from "module_2883" /* 2883 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14275 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14277 */;
 import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;

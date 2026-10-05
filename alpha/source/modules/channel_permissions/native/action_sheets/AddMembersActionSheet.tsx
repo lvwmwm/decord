@@ -412,7 +412,7 @@ export default function AddMembersActionSheet(channel) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -479,7 +479,7 @@ export default function AddMembersActionSheet(channel) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp16) {
           let closure_2 = tmp16;

@@ -1,9 +1,9 @@
-// Module ID: 13578
-// Function ID: 13579
+// Module ID: 13580
+// Function ID: 13581
 // Name: NUFChannelIllustration
-// Dependencies: [32, 19, 17, 21, 4890, 587, 1126, 13579, 13580, 558, 576, 4612, 4891, 13581, 13582, 13583, 13584, 5864, 4886, 5995, 2]
+// Dependencies: [32, 19, 17, 21, 4890, 587, 1126, 13581, 13582, 558, 576, 4612, 4891, 13583, 13584, 13585, 13586, 5864, 4886, 5995, 2]
 
-// Module 13578 (NUFChannelIllustration)
+// Module 13580 (NUFChannelIllustration)
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
 import Text_Text from "Text/Text" /* 4886 */;
@@ -457,7 +457,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   return obj;
                 }
               }
-              const obj10 = { source: first1(13584), style: items6 };
+              const obj10 = { source: first1(13586), style: items6 };
               items6 = [, ];
               ({ starSmall: arr9[0], starPurple: arr9[1] } = tmp4);
               const tmp38 = closure_7(closure_6, obj10);
@@ -477,7 +477,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 return obj;
               }
             }
-            const obj11 = { source: first1(13583), style: items7 };
+            const obj11 = { source: first1(13585), style: items7 };
             items7 = [, ];
             ({ starMedium: arr8[0], starGreen: arr8[1] } = tmp4);
             const tmp34 = closure_7(closure_6, obj11);
@@ -497,7 +497,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               return obj;
             }
           }
-          const obj13 = { source: first1(13582), style: items8 };
+          const obj13 = { source: first1(13584), style: items8 };
           items8 = [, ];
           ({ starMedium: arr7[0], starPink: arr7[1] } = tmp4);
           const tmp30 = closure_7(closure_6, obj13);
@@ -506,7 +506,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           cResult[19] = tmp30;
           tmp27 = tmp30;
         }
-        const obj14 = { source: first1(13581), style: items9 };
+        const obj14 = { source: first1(13583), style: items9 };
         items9 = [, ];
         ({ starSmall: arr6[0], starBlue: arr6[1] } = tmp4);
         const tmp26 = closure_7(closure_6, obj14);
@@ -623,20 +623,20 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   fn.__workletHash = 14664640545757;
   fn.__initData = __initData2;
   let obj5 = { style: tmp.container, children: items3 };
-  const obj6 = { source: first(13581), style: items2 };
+  const obj6 = { source: first(13583), style: items2 };
   const animatedStyle = obj3.useAnimatedStyle(fn);
   items2 = [, ];
   ({ starSmall: arr4[0], starBlue: arr4[1] } = tmp);
   items3 = [closure_7(closure_6, obj6), , , , , ];
-  const obj7 = { source: first(13582), style: items4 };
+  const obj7 = { source: first(13584), style: items4 };
   items4 = [, ];
   ({ starMedium: arr6[0], starPink: arr6[1] } = tmp);
   items3[1] = closure_7(closure_6, obj7);
-  const obj8 = { source: first(13583), style: items5 };
+  const obj8 = { source: first(13585), style: items5 };
   items5 = [, ];
   ({ starMedium: arr7[0], starGreen: arr7[1] } = tmp);
   items3[2] = closure_7(closure_6, obj8);
-  const obj9 = { source: first(13584), style: items6 };
+  const obj9 = { source: first(13586), style: items6 };
   items6 = [, ];
   ({ starSmall: arr8[0], starPurple: arr8[1] } = tmp);
   items3[3] = closure_7(closure_6, obj9);

@@ -1,15 +1,15 @@
-// Module ID: 13696
-// Function ID: 13697
+// Module ID: 13698
+// Function ID: 13699
 // Name: ActivateDeviceError
-// Dependencies: [19, 17, 21, 4890, 558, 576, 8762, 4886, 13694, 1126, 5594, 2]
+// Dependencies: [19, 17, 21, 4890, 558, 576, 8762, 4886, 13696, 1126, 5594, 2]
 
-// Module 13696 (ActivateDeviceError)
+// Module 13698 (ActivateDeviceError)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 4886 */;
 import components_Button_Button from "components/Button/Button" /* 5594 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8762 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 13694 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 13696 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

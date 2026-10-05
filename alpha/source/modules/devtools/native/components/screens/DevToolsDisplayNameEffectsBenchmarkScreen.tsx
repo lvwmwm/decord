@@ -1,9 +1,9 @@
-// Module ID: 15605
-// Function ID: 15606
+// Module ID: 15609
+// Function ID: 15610
 // Name: DevToolsDisplayNameEffectsBenchmarkScreen
-// Dependencies: [32, 19, 17, 1377, 1395, 21, 1396, 10640, 1126, 10636, 2883, 4890, 587, 558, 576, 4886, 5594, 5593, 10633, 10634, 504, 15606, 8952, 5993, 6074, 5307, 2]
+// Dependencies: [32, 19, 17, 1377, 1395, 21, 1396, 10640, 1126, 10636, 2883, 4890, 587, 558, 576, 4886, 5594, 5593, 10633, 10634, 504, 15610, 8952, 5993, 6074, 5307, 2]
 
-// Module 15605 (DevToolsDisplayNameEffectsBenchmarkScreen)
+// Module 15609 (DevToolsDisplayNameEffectsBenchmarkScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;

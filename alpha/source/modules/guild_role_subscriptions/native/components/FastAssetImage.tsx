@@ -1,9 +1,9 @@
-// Module ID: 15050
-// Function ID: 15051
+// Module ID: 15054
+// Function ID: 15055
 // Name: FastAssetImage
 // Dependencies: [32, 19, 21, 558, 576, 5322, 5974, 2]
 
-// Module 15050 (FastAssetImage)
+// Module 15054 (FastAssetImage)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5974 */;

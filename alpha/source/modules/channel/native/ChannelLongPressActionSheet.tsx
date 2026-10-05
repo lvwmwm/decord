@@ -97,7 +97,7 @@ let obj = function _handleVoiceOrStageChannelConnectPress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -146,7 +146,7 @@ let obj = function _handleVoiceOrStageChannelConnectPress() {
               value.connectAndOpen(guildStageVoice);
             }
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp11) {
           c3 = 3;
@@ -382,14 +382,14 @@ function getActionSheetButtons(channel) {
   guildId = channel.getGuildId();
   const tmp31 = null != vibegrationsProjectId && null != guildId;
   if (tmp31) {
-    const obj15 = { sectionKey: "vibegrations", buttons: items4 };
+    const obj15 = { sectionKey: "conjure", buttons: items4 };
     const push9 = items.push;
     const obj16 = {
-      label: intl7.string(tmp25(tmp26[43]).NXfIfj),
+      label: intl7.string(tmp25(tmp26[43]).jMMrDM),
       IconComponent: channel(tmp26[31]).PencilIcon,
       onPress() {
           obj = router_utils;
-          obj.transitionTo(__initData2.CHANNEL(guildId, StaticChannelRoute.VIBEGRATIONS, vibegrationsProjectId));
+          obj.transitionTo(__initData2.CHANNEL(guildId, StaticChannelRoute.CONJURE, vibegrationsProjectId));
         }
     };
     intl7 = channel(tmp26[24]).intl;
@@ -797,7 +797,7 @@ function getActionSheetButtons(channel) {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -826,7 +826,7 @@ function getActionSheetButtons(channel) {
                     } else {
                       value.openEndStageModal(closure_128_0);
                       paths = 3;
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp9) {
                     paths = 3;
@@ -1338,10 +1338,10 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
   }
   const tmp5Result25 = channel(guildId[102]);
-  const isVibegrationsChannelCandidate = tmp5Result25.useIsVibegrationsChannelCandidate(channel, "ChannelLongPressActionSheet");
+  const isConjureChannelCandidate = tmp5Result25.useIsConjureChannelCandidate(channel, "ChannelLongPressActionSheet");
   let tmp45 = null;
   const tmpResult4 = tmp(guildId[103]);
-  if (isVibegrationsChannelCandidate) {
+  if (isConjureChannelCandidate) {
     tmp45 = channel;
   }
   const tmpResult2Result = tmpResult4(tmp45);

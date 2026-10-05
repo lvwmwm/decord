@@ -1,9 +1,9 @@
-// Module ID: 16151
-// Function ID: 16152
+// Module ID: 16155
+// Function ID: 16156
 // Name: TextChannel
-// Dependencies: [19, 17, 2050, 2104, 2051, 4509, 4905, 5071, 11697, 21, 4890, 587, 16051, 5859, 5812, 12016, 558, 576, 5797, 504, 4903, 4901, 1124, 10651, 16050, 9000, 5043, 4886, 12017, 9260, 16152, 16153, 8567, 16158, 5976, 2]
+// Dependencies: [19, 17, 2050, 2104, 2051, 4509, 4905, 5071, 11697, 21, 4890, 587, 16055, 5859, 5812, 12016, 558, 576, 5797, 504, 4903, 4901, 1124, 10651, 16054, 9000, 5043, 4886, 12017, 9260, 16156, 16157, 8567, 16162, 5976, 2]
 
-// Module 16151 (TextChannel)
+// Module 16155 (TextChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import RoutingSourcesDefault from "RoutingSources" /* 1124 */;

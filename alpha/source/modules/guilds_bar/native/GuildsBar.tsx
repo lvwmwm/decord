@@ -1,17 +1,17 @@
-// Module ID: 16219
-// Function ID: 16220
+// Module ID: 16223
+// Function ID: 16224
 // Name: GuildsBar
-// Dependencies: [19, 21, 4890, 558, 576, 1369, 9110, 16220, 16228, 16101, 6569, 16297, 10048, 5976, 11571, 6140, 2]
+// Dependencies: [19, 21, 4890, 558, 576, 1369, 9110, 16224, 16232, 16105, 6569, 16301, 10048, 5976, 11571, 6140, 2]
 
-// Module 16219 (GuildsBar)
+// Module 16223 (GuildsBar)
 import NativeViewDefault from "NativeView" /* 5976 */;
 import FastListDefault from "FastList" /* 6569 */;
 import FavoritesGuildIntroPopoverDefault from "FavoritesGuildIntroPopover" /* 10048 */;
 import StartupProfilerDefault from "StartupProfiler" /* 11571 */;
-import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 16101 */;
-import useGuildsBarGestureDefault from "useGuildsBarGesture" /* 16220 */;
-import useGuildsBarPropsDefault from "useGuildsBarProps" /* 16228 */;
-import GuildsBarDragPreviewDefault from "GuildsBarDragPreview" /* 16297 */;
+import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 16105 */;
+import useGuildsBarGestureDefault from "useGuildsBarGesture" /* 16224 */;
+import useGuildsBarPropsDefault from "useGuildsBarProps" /* 16232 */;
+import GuildsBarDragPreviewDefault from "GuildsBarDragPreview" /* 16301 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4890 */;

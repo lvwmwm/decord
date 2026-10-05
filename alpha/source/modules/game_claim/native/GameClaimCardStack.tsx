@@ -1,9 +1,9 @@
-// Module ID: 16112
-// Function ID: 16113
+// Module ID: 16116
+// Function ID: 16117
 // Name: GameClaimCardStack
 // Dependencies: [19, 17, 21, 587, 683, 4890, 558, 576, 8529, 2]
 
-// Module 16112 (GameClaimCardStack)
+// Module 16116 (GameClaimCardStack)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;

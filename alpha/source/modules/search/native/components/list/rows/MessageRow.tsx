@@ -1,9 +1,9 @@
-// Module ID: 16824
-// Function ID: 16825
+// Module ID: 16843
+// Function ID: 16844
 // Name: MessageRow
-// Dependencies: [109, 19, 17, 4879, 2054, 2051, 2074, 5071, 1085, 21, 4890, 587, 558, 576, 504, 5812, 5043, 1188, 4886, 11065, 10116, 8961, 4722, 7852, 16825, 13127, 16826, 5304, 7620, 6832, 1126, 12488, 7514, 16788, 2]
+// Dependencies: [109, 19, 17, 4879, 2054, 2051, 2074, 5071, 1085, 21, 4890, 587, 558, 576, 504, 5812, 5043, 1188, 4886, 11065, 10116, 8961, 4722, 7852, 16844, 13129, 16845, 5304, 7620, 6832, 1126, 12488, 7514, 16807, 2]
 
-// Module 16824 (MessageRow)
+// Module 16843 (MessageRow)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -19,9 +19,9 @@ import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/En
 import BotTagDefault from "BotTag" /* 8961 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10116 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 11065 */;
-import SearchListRow2 from "SearchListRow" /* 16788 */;
-import useSearchMessageTimestamp from "useSearchMessageTimestamp" /* 16825 */;
-import PollBadgeDefault from "PollBadge" /* 16826 */;
+import SearchListRow2 from "SearchListRow" /* 16807 */;
+import useSearchMessageTimestamp from "useSearchMessageTimestamp" /* 16844 */;
+import PollBadgeDefault from "PollBadge" /* 16845 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -320,7 +320,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((muted) => {
     tmp9 = cResult[4];
   }
   const effect = react.useEffect(tmp8, tmp9);
-  const tmpResult = tmp(16825);
+  const tmpResult = tmp(16844);
   const searchMessageTimestamp = tmpResult.useSearchMessageTimestamp(message, channel);
   ({ timestamp, timestampAccessibilityLabel } = searchMessageTimestamp);
   if (cResult[5] !== tmp5) {
@@ -411,7 +411,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((muted) => {
               let tmp33 = null;
               if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
                 const obj7 = { size: "xs", style: tmp4.suppressNotificationsIcon };
-                tmp33 = closure_14(tmp(13127).BellZIcon, obj7);
+                tmp33 = closure_14(tmp(13129).BellZIcon, obj7);
               }
               cResult[21] = message;
               cResult[22] = tmp4.suppressNotificationsIcon;
@@ -475,7 +475,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((muted) => {
       });
     }
   }, items1);
-  let obj = message(16825);
+  let obj = message(16844);
   const searchMessageTimestamp = obj.useSearchMessageTimestamp(message, channel);
   const obj2 = { style: tmp.labelContainer, children: items3 };
   const obj3 = { style: tmp.authorRow, children: items2 };
@@ -500,13 +500,13 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((muted) => {
   let tmp9Result = null;
   if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
     const obj7 = { size: "xs", style: tmp.suppressNotificationsIcon };
-    tmp9Result = tmp9(tmp4(13127).BellZIcon, obj7);
+    tmp9Result = tmp9(tmp4(13129).BellZIcon, obj7);
   }
   items3[2] = tmp9Result;
   let tmp9Result2 = null;
   if (message.isPoll()) {
     const obj8 = { style: tmp.pollBadge };
-    tmp9Result2 = tmp9(channel(16826), obj8);
+    tmp9Result2 = tmp9(channel(16845), obj8);
   }
   items3[3] = tmp9Result2;
   return closure_15(closure_7, obj2);
@@ -632,7 +632,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     let tmp36 = null;
                     if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
                       const obj4 = { size: "xs", style: tmp4.suppressNotificationsIcon };
-                      tmp36 = authStore2(tmp(13127).BellZIcon, obj4);
+                      tmp36 = authStore2(tmp(13129).BellZIcon, obj4);
                     }
                     cResult[21] = message;
                     cResult[22] = tmp4.suppressNotificationsIcon;
@@ -741,7 +741,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp21Result = null;
     if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
       const obj8 = { size: "xs", style: tmp.suppressNotificationsIcon };
-      tmp21Result = tmp21(tmp2(13127).BellZIcon, obj8);
+      tmp21Result = tmp21(tmp2(13129).BellZIcon, obj8);
     }
     items2[2] = tmp21Result;
     let tmp21Result2 = null;

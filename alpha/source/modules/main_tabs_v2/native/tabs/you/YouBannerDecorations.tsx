@@ -1,10 +1,10 @@
-// Module ID: 16936
-// Function ID: 16937
+// Module ID: 16955
+// Function ID: 16956
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 2117, 1377, 2048, 1379, 21, 1370, 587, 4890, 558, 13360, 6958, 4698, 2036, 1126, 504, 7857, 7899, 7910, 4729, 683, 4528, 16937, 10912, 6748, 16938, 10908, 5626, 4854, 16939, 1987, 16941, 12500, 3723, 14799, 16943, 8313, 6883, 16942, 5605, 2]
+// Dependencies: [19, 17, 2117, 1377, 2048, 1379, 21, 1370, 587, 4890, 558, 13362, 6958, 4698, 2036, 1126, 504, 7857, 7899, 7910, 4729, 683, 4528, 16956, 10912, 6748, 16957, 10908, 5626, 4854, 16958, 1987, 16960, 12500, 3723, 14803, 16962, 8313, 6883, 16961, 5605, 2]
 // Exports: getFloatingNavBottomMargin
 
-// Module 16936 (YouBannerDecorations)
+// Module 16955 (YouBannerDecorations)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
@@ -16,8 +16,8 @@ import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 469
 import QuestTypes from "QuestTypes" /* 5626 */;
 import useTrialOffer from "useTrialOffer" /* 6958 */;
 import QuestUtils from "QuestUtils" /* 10908 */;
-import PromotionsHooks from "PromotionsHooks" /* 13360 */;
-import you_tracking_Tracking from "you/tracking/Tracking" /* 16938 */;
+import PromotionsHooks from "PromotionsHooks" /* 13362 */;
+import you_tracking_Tracking from "you/tracking/Tracking" /* 16957 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1377 */;
@@ -194,7 +194,7 @@ const memoResult = react.memo((navigateToSettings) => {
   const tmp2Result8 = navigateToSettings(gradientSecondaryBackground[24]);
   const isEligibleForQuests = tmp2Result8.getIsEligibleForQuests();
   const tmp2Result9 = navigateToSettings(gradientSecondaryBackground[25]);
-  const hasVibegrationsGuild = tmp2Result9.useHasVibegrationsGuild("YouBannerDecorations");
+  const hasConjureGuild = tmp2Result9.useHasConjureGuild("YouBannerDecorations");
   const tmp2Result10 = navigateToSettings(gradientSecondaryBackground[12]);
   const tmp18 = null != tmp2Result10.useTrialOffer(closure_9);
   currentUser = tmp18;
@@ -231,11 +231,11 @@ const memoResult = react.memo((navigateToSettings) => {
     obj.openQuestHome(obj2);
   }, items4);
   let tmp23 = null;
-  if (hasVibegrationsGuild) {
-    let obj2 = { IconComponent: tmp2(tmp3[33]).MagicWandIcon, accessibilityLabel: intl.string(tmp5(tmp3[34]).ZnvpQR), onPress: tmp22 };
+  if (hasConjureGuild) {
+    let obj2 = { IconComponent: tmp2(tmp3[33]).MagicWandIcon, accessibilityLabel: intl.string(tmp5(tmp3[34]).bHcJoe), onPress: tmp22 };
     const tmp5Result = tmp5(gradientSecondaryBackground[32]);
     intl = tmp2(tmp3[15]).intl;
-    tmp23 = closure_10(tmp5Result, obj2, "vibegrations");
+    tmp23 = closure_10(tmp5Result, obj2, "conjure");
   }
   const items5 = [tmp23, , , , ];
   let tmp26 = null;

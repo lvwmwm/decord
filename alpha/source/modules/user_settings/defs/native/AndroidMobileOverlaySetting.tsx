@@ -1,9 +1,9 @@
-// Module ID: 15068
-// Function ID: 15069
+// Module ID: 15072
+// Function ID: 15073
 // Name: AndroidMobileOverlaySetting
 // Dependencies: [9658, 7634, 558, 576, 504, 1126, 11129, 9671, 2]
 
-// Module 15068 (AndroidMobileOverlaySetting)
+// Module 15072 (AndroidMobileOverlaySetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;

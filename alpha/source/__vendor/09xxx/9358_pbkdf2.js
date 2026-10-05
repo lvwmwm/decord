@@ -72,7 +72,7 @@ let PRF = function _pbkdf2Async() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c10;
@@ -127,7 +127,7 @@ let PRF = function _pbkdf2Async() {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 try {
@@ -179,7 +179,7 @@ let PRF = function _pbkdf2Async() {
                     return obj;
                   } else {
                     _undefined = 3;
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } catch (tmp4) {
                   _undefined = 3;

@@ -1,9 +1,9 @@
-// Module ID: 17856
-// Function ID: 17857
+// Module ID: 17880
+// Function ID: 17881
 // Name: WarningNotice
 // Dependencies: [19, 17, 21, 4890, 587, 558, 576, 5974, 4807, 4886, 5594, 2]
 
-// Module 17856 (WarningNotice)
+// Module 17880 (WarningNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

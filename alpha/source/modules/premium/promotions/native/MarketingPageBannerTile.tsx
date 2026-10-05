@@ -1,9 +1,9 @@
-// Module ID: 13229
-// Function ID: 13230
+// Module ID: 13231
+// Function ID: 13232
 // Name: MarketingPageBannerTile
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 6657, 13230, 1260, 10470, 8422, 13233, 4886, 4565, 9648, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 6657, 13232, 1260, 10470, 8422, 13235, 4886, 4565, 9648, 2]
 
-// Module 13229 (MarketingPageBannerTile)
+// Module 13231 (MarketingPageBannerTile)
 import nativeDefault from "native" /* 587 */;
 import LinkingDefault from "Linking" /* 4565 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6657 */;
@@ -284,7 +284,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   const button = bannerFields.button;
   let buttonAction;
-  const getButtonActionHandler = helpArticleLinkProps(13230).getButtonActionHandler;
+  const getButtonActionHandler = helpArticleLinkProps(13232).getButtonActionHandler;
   if (button != null) {
     buttonAction = button.buttonAction;
   }
@@ -301,9 +301,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp2Result = useTrackImpressionDefault;
   ({ component_type: helpArticleLinkProps(10470).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId });
   tmp2Result(obj2);
-  const tmp4Result = helpArticleLinkProps(13233);
+  const tmp4Result = helpArticleLinkProps(13235);
   const formatStringWithCommonPremiumParams = tmp4Result.useFormatStringWithCommonPremiumParams(bannerFields.body);
-  const tmp4Result2 = helpArticleLinkProps(13233);
+  const tmp4Result2 = helpArticleLinkProps(13235);
   helpArticleLinkProps = tmp4Result2.getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
   const obj4 = { style: items, children: closure_6(closure_4, obj5) };
   items = [tmp.container, style];

@@ -1,16 +1,16 @@
-// Module ID: 15770
-// Function ID: 15771
+// Module ID: 15774
+// Function ID: 15775
 // Name: DataAndPrivacyScreen
-// Dependencies: [19, 6084, 7634, 1085, 21, 1126, 2115, 9364, 558, 576, 1490, 14659, 14662, 11129, 14617, 14495, 2]
+// Dependencies: [19, 6084, 7634, 1085, 21, 1126, 2115, 9364, 558, 576, 1490, 14663, 14666, 11129, 14621, 14499, 2]
 
-// Module 15770 (DataAndPrivacyScreen)
+// Module 15774 (DataAndPrivacyScreen)
 import intl8 from "intl" /* 1126 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
 import SecureFramesUtils from "SecureFramesUtils" /* 9364 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;
-import SettingLayoutDefault from "SettingLayout" /* 14495 */;
-import SettingsScreenNoticesDefault from "SettingsScreenNotices" /* 14617 */;
+import SettingLayoutDefault from "SettingLayout" /* 14499 */;
+import SettingsScreenNoticesDefault from "SettingsScreenNotices" /* 14621 */;
 import react from "react" /* 19 */;
 import ConsentStore from "ConsentStore" /* 6084 */;
 import Constants from "Constants" /* 1085 */;
@@ -170,7 +170,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { screen: stackNavigation(14617).SettingsScreen.DATA_AND_PRIVACY };
+      const obj3 = { screen: stackNavigation(14621).SettingsScreen.DATA_AND_PRIVACY };
       const tmp20 = SettingsScreenNoticesDefault;
       const tmp21 = closure_8(tmp20, obj3);
       cResult[5] = tmp21;
@@ -277,7 +277,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     HermesBuiltin.arraySpread(items, items4, arraySpreadResult);
     return createList(obj);
   }, items);
-  let obj3 = { screen: stackNavigation(14617).SettingsScreen.DATA_AND_PRIVACY };
+  let obj3 = { screen: stackNavigation(14621).SettingsScreen.DATA_AND_PRIVACY };
   const tmp5 = SettingsScreenNoticesDefault;
   items1 = [closure_8(tmp5, obj3), closure_8(SettingLayoutDefault, { node: memo })];
   return closure_10(closure_9, obj2);

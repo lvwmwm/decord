@@ -1,9 +1,9 @@
-// Module ID: 13104
-// Function ID: 13105
+// Module ID: 13106
+// Function ID: 13107
 // Name: HomeChannelHeader
 // Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1188, 12459, 4886, 1126, 2]
 
-// Module 13104 (HomeChannelHeader)
+// Module 13106 (HomeChannelHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

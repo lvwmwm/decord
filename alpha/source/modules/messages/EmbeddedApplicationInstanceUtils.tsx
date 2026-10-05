@@ -1,9 +1,9 @@
-// Module ID: 13065
-// Function ID: 13066
+// Module ID: 13067
+// Function ID: 13068
 // Name: EmbeddedApplicationInstanceUtils
 // Dependencies: [19, 558, 576, 1126, 9000, 9046, 2]
 
-// Module 13065 (EmbeddedApplicationInstanceUtils)
+// Module 13067 (EmbeddedApplicationInstanceUtils)
 import react2 from "react" /* 576 */;
 import intl11 from "intl" /* 1126 */;
 import react from "react" /* 19 */;

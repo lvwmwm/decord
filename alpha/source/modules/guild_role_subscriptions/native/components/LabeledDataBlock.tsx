@@ -1,9 +1,9 @@
-// Module ID: 15034
-// Function ID: 15035
+// Module ID: 15038
+// Function ID: 15039
 // Name: LabeledDataBlock
 // Dependencies: [19, 17, 1085, 21, 4890, 587, 5915, 558, 576, 4886, 5909, 1188, 2]
 
-// Module 15034 (LabeledDataBlock)
+// Module 15038 (LabeledDataBlock)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

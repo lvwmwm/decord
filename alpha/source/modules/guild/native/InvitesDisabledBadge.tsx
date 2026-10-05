@@ -1,9 +1,9 @@
-// Module ID: 16239
-// Function ID: 16240
+// Module ID: 16243
+// Function ID: 16244
 // Name: InvitesDisabledBadge
 // Dependencies: [19, 17, 21, 4890, 587, 1188, 558, 576, 12392, 2]
 
-// Module 16239 (InvitesDisabledBadge)
+// Module 16243 (InvitesDisabledBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

@@ -70,7 +70,7 @@ let obj = function _openInviteModal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -85,7 +85,7 @@ let obj = function _openInviteModal() {
             } else {
               c3 = 1;
               c2 = 1;
-              const obj5 = { type: "DISPLAYED_INVITE_SHOW", code, username: "Array", deeplinkAttemptId: "application", invite_instance_id };
+              const obj5 = { type: "DISPLAYED_INVITE_SHOW", code, username: "Array", deeplinkAttemptId: "applicationId", invite_instance_id };
               const obj6 = { value: obj2.dispatch(obj5), done: false };
               obj2 = DispatcherDefault;
               return obj6;
@@ -98,7 +98,7 @@ let obj = function _openInviteModal() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c2 = 3;
@@ -127,7 +127,7 @@ obj = function _handleInviteCodedLink() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -253,7 +253,7 @@ obj = function _handleInviteCodedLink() {
             return { value, done: true };
           }
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp63) {
           c7 = 3;
           throw tmp63;
@@ -320,7 +320,7 @@ export default function getOnClick(url) {
           const tmp3Result = _slicedToArray2;
           result = tmp3Result.parseStorefrontSkuCodedLink(code);
           if (result == null) {
-            result = { applicationId: "Symbol", skuId: "current" };
+            result = { applicationId: "Array", skuId: "Set" };
           }
         }
         ({ applicationId, skuId } = result);
@@ -335,7 +335,7 @@ export default function getOnClick(url) {
         openURLDefault(url);
         return true;
       }
-      result = { applicationId: code, skuId: "a" };
+      result = { applicationId: code, skuId: "r" };
     };
   }
   if (null != findCodedLinkResult) {
@@ -384,7 +384,7 @@ export default function getOnClick(url) {
                   } else if (arg0 === 2) {
                     return { value, done: true };
                   } else {
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -403,7 +403,7 @@ export default function getOnClick(url) {
                         customId = applicationId.customId;
                         embeddedActivitiesManager = 1;
                         channelId = 1;
-                        return { value: "Reflect", done: true };
+                        return { value: "Set", done: true };
                       }
                     } else if (1 === embeddedActivitiesManager) {
                       if (arg0 === 1) {
@@ -428,7 +428,7 @@ export default function getOnClick(url) {
                       return { value, done: true };
                     } else {
                       channelId = 3;
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp6) {
                     channelId = 3;
@@ -474,7 +474,7 @@ export default function getOnClick(url) {
                   obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 try {
@@ -514,7 +514,7 @@ export default function getOnClick(url) {
                     const obj5 = { targetApplicationId: channelId, channelId, analyticsLocations, customId, referrerId };
                     uRL(closure_2[34])(obj5);
                     c4 = 3;
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } catch (tmp5) {
                   c4 = 3;

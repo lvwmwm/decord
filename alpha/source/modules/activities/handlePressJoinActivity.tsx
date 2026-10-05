@@ -169,7 +169,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -198,7 +198,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
                 return obj;
               }
               c0 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             } catch (tmp12) {
               c0 = 3;
               throw tmp12;
@@ -207,7 +207,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
         });
         return obj(...arguments);
       };
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;

@@ -1,9 +1,9 @@
-// Module ID: 17961
-// Function ID: 17962
+// Module ID: 17983
+// Function ID: 17984
 // Name: GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet
-// Dependencies: [32, 19, 17, 1379, 1096, 21, 4890, 587, 558, 576, 4594, 17865, 16514, 5974, 1126, 6736, 15045, 4886, 9442, 1618, 1188, 5595, 4854, 6112, 6645, 2]
+// Dependencies: [32, 19, 17, 1379, 1096, 21, 4890, 587, 558, 576, 4594, 17889, 16518, 5974, 1126, 6736, 15049, 4886, 9442, 1618, 1188, 5595, 4854, 6112, 6645, 2]
 
-// Module 17961 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
+// Module 17983 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 4886 */;
 import FastImageDefault from "FastImage" /* 5974 */;
 import PriceUtils from "PriceUtils" /* 6736 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 9442 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15045 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15049 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
@@ -83,7 +83,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[3] === containerSelected) {
       tmp8 = cResult[4];
     }
-    const tmp9Result = importDefault(selected ? 17865 : 16514);
+    const tmp9Result = importDefault(selected ? 17889 : 16518);
     if (cResult[5] === tmp4.rowStatusIcon) {
       let tmp11;
       let tmp14;
@@ -181,7 +181,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const obj2 = { style: items, accessibilityRole, accessibilityState, onPress, children: items1 };
   items[1] = containerSelected;
-  const obj3 = { style: tmp.rowStatusIcon, source: importDefault(selected ? 17865 : 16514) };
+  const obj3 = { style: tmp.rowStatusIcon, source: importDefault(selected ? 17889 : 16518) };
   const tmp6Result = FastImageDefault;
   items1 = [React4(tmp6Result, obj3), ];
   const obj4 = { variant: "text-sm/normal", color: "text-default", children: format(CgmBaG, obj5) };

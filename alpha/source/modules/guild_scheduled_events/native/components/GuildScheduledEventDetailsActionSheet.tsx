@@ -336,7 +336,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((eventId) => {
   let tmp23;
   let tmp36Result2;
   let tmp8;
-  const f99968 = () => {
+  const f100114 = () => {
     let id;
     const getGuildEventUsers = GuildScheduledEventManagerDefault.getGuildEventUsers;
     GuildScheduledEventManagerDefault;
@@ -421,9 +421,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((eventId) => {
     }
     return tmp5;
   }, items3);
-  [c5, tmp19] = tmp5(tmp2(tmp3[18])(f99968), 2);
+  [c5, tmp19] = tmp5(tmp2(tmp3[18])(f100114), 2);
   ({ loading, error } = tmp19);
-  tmp5(tmp2(tmp3[18])(f99968), 2);
+  tmp5(tmp2(tmp3[18])(f100114), 2);
   [tmp21, c6] = tmp5(obj.useState(0), 2);
   tmp5(obj.useState(0), 2);
   [tmp23, c7] = tmp5(obj.useState(0), 2);

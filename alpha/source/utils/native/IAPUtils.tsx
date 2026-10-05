@@ -70,7 +70,7 @@ let obj = function _restorePurchases() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -93,7 +93,7 @@ let obj = function _restorePurchases() {
               closure_3 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -267,7 +267,7 @@ obj = function _fetchStoreFront() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -409,7 +409,7 @@ obj = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -481,7 +481,7 @@ obj = {
               }
             }
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp31) {
             closure_4 = tmp31;
             if (0 === c5) {
@@ -694,7 +694,7 @@ export const makeIAPRequest = function makeIAPRequest(arg0, arg1, arg2) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -766,7 +766,7 @@ export const makeIAPRequest = function makeIAPRequest(arg0, arg1, arg2) {
             }
           }
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp43) {
           closure_4 = tmp43;
           if (0 === c5) {

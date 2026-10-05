@@ -53,12 +53,12 @@ let closure_10 = createStyles.createStyles((arg0) => {
 const redux = react.createContext("overlay");
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const f62251 = () => {
+const f62279 = () => {
 
 };
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const f62252 = () => {
+const f62280 = () => {
 
 };
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -155,8 +155,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   obj = react2;
   const cResult = obj.c(10);
   entry = entry.entry;
-  if (typeof f62252 === "function") {
-    if (typeof f62251 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       const tmp8 = tmp4[react.useContext(react, redux)];
       const _Symbol = Symbol;
       const tmpResult = utils;
@@ -224,8 +224,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   let locale;
   let tmp6Result;
   entry = entry.entry;
-  if (typeof f62252 === "function") {
-    if (typeof f62251 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       let tmp12Result;
       const tmp5 = tmp[react.useContext(react, redux)];
       obj = utils;
@@ -259,10 +259,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj = react2;
   const cResult = obj.c(13);
   ({ Icon, iconColor, text, accessibilityLabel } = arg0);
-  if (typeof f62251 === "function") {
+  if (typeof f62279 === "function") {
     const tmp4Result = tmp4(react.useContext(redux));
     const tmp6 = redux;
-    if (typeof f62252 === "function") {
+    if (typeof f62280 === "function") {
       if (typeof tmp5 === "function") {
         const tmp10 = tmp9[react.useContext(react, tmp6)];
         if (cResult[0] === Icon) {
@@ -327,10 +327,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 }) : ((accessibilityLabel) => {
   let items;
   accessibilityLabel = accessibilityLabel.accessibilityLabel;
-  if (typeof f62251 === "function") {
+  if (typeof f62279 === "function") {
     const tmp4Result = tmp4(react.useContext(redux));
     const tmp6 = redux;
-    if (typeof f62252 === "function") {
+    if (typeof f62280 === "function") {
       if (typeof tmp5 === "function") {
         const obj2 = { style: tmp4Result.badgeContainer, accessible: null != accessibilityLabel, accessibilityLabel, children: items };
         items = [, ];
@@ -356,10 +356,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   obj = react2;
   const cResult = obj.c(9);
   entry = entry.entry;
-  if (typeof f62251 === "function") {
+  if (typeof f62279 === "function") {
     const tmp4Result = tmp4(react.useContext(redux));
     const tmp6 = redux;
-    if (typeof f62252 === "function") {
+    if (typeof f62280 === "function") {
       if (typeof tmp5 === "function") {
         let icon;
         const tmp10 = tmp9[react.useContext(react, tmp6)];
@@ -420,10 +420,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
 }) : ((entry) => {
   let items;
   entry = entry.entry;
-  if (typeof f62251 === "function") {
+  if (typeof f62279 === "function") {
     const tmpResult = tmp(react.useContext(redux));
     const tmp3 = redux;
-    if (typeof f62252 === "function") {
+    if (typeof f62280 === "function") {
       if (typeof tmp2 === "function") {
         let icon;
         const tmp7 = tmp6[react.useContext(react, tmp3)];
@@ -457,8 +457,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   obj = react2;
   const cResult = obj.c(6);
   entry = entry.entry;
-  if (typeof f62252 === "function") {
-    if (typeof f62251 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       const tmp8 = tmp4[react.useContext(react, redux)];
       const tmpResult = utils;
       if (tmpResult.isEntryMarathon(entry)) {
@@ -511,8 +511,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   }
 }) : ((entry) => {
   entry = entry.entry;
-  if (typeof f62252 === "function") {
-    if (typeof f62251 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       const tmp5 = tmp[react.useContext(react, redux)];
       obj = utils;
       if (obj.isEntryMarathon(entry)) {
@@ -582,8 +582,8 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   obj = react2;
   const cResult = obj.c(14);
   entry = entry.entry;
-  if (typeof f62252 === "function") {
-    if (typeof f62251 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       const tmp8 = tmp4[react.useContext(react, redux)];
       if (cResult[0] === tmp8) {
         let tmp9;
@@ -677,8 +677,8 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   let intl2;
   let obj3;
   let obj4;
-  if (typeof f62252 === "function") {
-    if (typeof f62251 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       const tmp6 = tmp2[react.useContext(react, redux)];
       obj = utils;
       const streakCount = obj.getStreakCount(tmp);
@@ -706,8 +706,8 @@ ReactCompilerGating = ReactCompilerGating_mod;
 let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj = react2;
   const cResult = obj.c(3);
-  if (typeof f62252 === "function") {
-    if (typeof f62251 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       const tmp9 = tmp5[react.useContext(react, redux)];
       const tmpResult = utils;
       const trendingType = tmpResult.getTrendingType(tmp4);
@@ -747,8 +747,8 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
 }) : ((arg0) => {
   let intl;
-  if (typeof f62252 === "function") {
-    if (typeof f62251 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       const tmp6 = tmp2[react.useContext(react, redux)];
       obj = utils;
       const trendingType = obj.getTrendingType(tmp);
@@ -773,8 +773,8 @@ ReactCompilerGating = ReactCompilerGating_mod;
 let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj = react2;
   const cResult = obj.c(3);
-  if (typeof f62252 === "function") {
-    if (typeof f62251 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       const tmp9 = tmp5[react.useContext(react, redux)];
       let tmp10 = null;
       const tmpResult = utils;
@@ -810,8 +810,8 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
 }) : ((arg0) => {
   let intl;
-  if (typeof f62252 === "function") {
-    if (typeof f62251 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       let tmp9 = null;
       const tmp6 = tmp2[react.useContext(react, redux)];
       obj = utils;
@@ -833,8 +833,8 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let items;
   obj = react2;
   const cResult = obj.c(8);
-  if (typeof f62252 === "function") {
-    if (typeof f62251 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       const tmp9 = tmp5[react.useContext(react, redux)];
       const tmpResult = utils;
       const entryDuration = tmpResult.getEntryDuration(tmp4);
@@ -899,8 +899,8 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 }) : ((arg0) => {
   let items;
   let obj3;
-  if (typeof f62252 === "function") {
-    if (typeof f62251 === "function") {
+  if (typeof f62280 === "function") {
+    if (typeof f62279 === "function") {
       const tmp6 = tmp2[react.useContext(react, redux)];
       obj = utils;
       const entryDuration = obj.getEntryDuration(tmp);
@@ -932,7 +932,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   obj = react2;
   const cResult = obj.c(8);
   entry = entry.entry;
-  if (typeof f62251 === "function") {
+  if (typeof f62279 === "function") {
     let tmp8;
     let tmp12;
     const tmp4Result = tmp4(react.useContext(redux));
@@ -977,7 +977,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   }
 }) : ((arg0) => {
   let items;
-  if (typeof f62251 === "function") {
+  if (typeof f62279 === "function") {
     const tmp2Result = tmp2(react.useContext(redux));
     obj = { style: tmp2Result.badgeContainer, children: items };
     const obj2 = { style: tmp2Result.icon, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };

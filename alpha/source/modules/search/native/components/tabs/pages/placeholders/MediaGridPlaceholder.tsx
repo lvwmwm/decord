@@ -1,9 +1,9 @@
-// Module ID: 16798
-// Function ID: 16799
+// Module ID: 16817
+// Function ID: 16818
 // Name: MediaGridPlaceholder
-// Dependencies: [19, 17, 7513, 21, 4890, 587, 558, 576, 16797, 16799, 4612, 12, 1126, 4886, 11966, 16800, 2]
+// Dependencies: [19, 17, 7513, 21, 4890, 587, 558, 576, 16816, 16818, 4612, 12, 1126, 4886, 11966, 16819, 2]
 
-// Module 16798 (MediaGridPlaceholder)
+// Module 16817 (MediaGridPlaceholder)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -12,8 +12,8 @@ import intl3 from "intl" /* 1126 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
 import Text_Text from "Text/Text" /* 4886 */;
 import SearchPlatformUtils from "SearchPlatformUtils" /* 11966 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 16797 */;
-import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 16799 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 16816 */;
+import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 16818 */;
 import react from "react" /* 19 */;
 import SearchConstants from "SearchConstants" /* 7513 */;
 import Fragment_mod from "Fragment" /* 21 */;
@@ -136,7 +136,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
   } else {
     arr = cResult[3];
   }
-  const tmpResult4 = tmp(16797);
+  const tmpResult4 = tmp(16816);
   const placeholderAnimatedStyle = tmpResult4.usePlaceholderAnimatedStyle(visible);
   if (cResult[4] === placeholderAnimatedStyle) {
     if (cResult[5] === tmp4.container) {
@@ -221,7 +221,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
                     class O {
                       constructor(arg0, arg1) {
                         closure_0 = arg1;
-                        obj = { style: closure_1.row, children: size.map(() => { /* body not rendered: F146398 */ }) };
+                        obj = { style: closure_1.row, children: size.map(() => { /* body not rendered: F146673 */ }) };
                         tmp = closure_1_8;
                         Fragment = closure_3.Fragment;
                         tmp2 = closure_1_7;
@@ -259,7 +259,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
                     class O {
                       constructor(arg0, arg1) {
                         closure_0 = arg1;
-                        obj = { style: closure_1.row, children: size.map(() => { /* body not rendered: F146398 */ }) };
+                        obj = { style: closure_1.row, children: size.map(() => { /* body not rendered: F146673 */ }) };
                         tmp = closure_1_8;
                         Fragment = closure_3.Fragment;
                         tmp2 = closure_1_7;
@@ -286,7 +286,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
               class O {
                 constructor(arg0, arg1) {
                   closure_0 = arg1;
-                  obj = { style: closure_1.row, children: size.map(() => { /* body not rendered: F146398 */ }) };
+                  obj = { style: closure_1.row, children: size.map(() => { /* body not rendered: F146673 */ }) };
                   tmp = closure_1_8;
                   Fragment = closure_3.Fragment;
                   tmp2 = closure_1_7;

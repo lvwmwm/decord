@@ -1,10 +1,10 @@
-// Module ID: 13519
-// Function ID: 13520
+// Module ID: 13521
+// Function ID: 13522
 // Name: DontBadgeMutedVcsExperiment
 // Dependencies: [1441, 558, 576, 2]
 // Exports: getIsDontBadgeMutedVcsEnabled
 
-// Module 13519 (DontBadgeMutedVcsExperiment)
+// Module 13521 (DontBadgeMutedVcsExperiment)
 import react from "react" /* 576 */;
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1441 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

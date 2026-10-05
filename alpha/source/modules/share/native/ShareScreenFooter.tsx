@@ -1,9 +1,9 @@
-// Module ID: 13716
-// Function ID: 13717
+// Module ID: 13718
+// Function ID: 13719
 // Name: ShareScreenFooter
 // Dependencies: [19, 21, 558, 576, 11319, 5594, 11330, 11331, 2]
 
-// Module 13716 (ShareScreenFooter)
+// Module 13718 (ShareScreenFooter)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import components_Button_Button from "components/Button/Button" /* 5594 */;

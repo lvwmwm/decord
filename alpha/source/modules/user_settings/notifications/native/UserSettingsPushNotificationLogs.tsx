@@ -1,9 +1,9 @@
-// Module ID: 15391
-// Function ID: 15392
+// Module ID: 15395
+// Function ID: 15396
 // Name: UserSettingsPushNotificationLogs
 // Dependencies: [5, 32, 19, 17, 1085, 21, 4890, 587, 6106, 558, 576, 510, 12531, 1618, 6547, 1126, 8038, 12532, 12715, 5909, 4886, 8371, 2]
 
-// Module 15391 (UserSettingsPushNotificationLogs)
+// Module 15395 (UserSettingsPushNotificationLogs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -98,7 +98,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     class P {
       constructor() {
         closure_0 = function _load() {
-          obj = _asyncToGenerator(function() { /* body not rendered: F152885 */ });
+          obj = _asyncToGenerator(function() { /* body not rendered: F153171 */ });
           return obj(...arguments);
         };
         tmp = !(function load() {
@@ -116,7 +116,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     class P {
       constructor() {
         closure_0 = function _load() {
-          obj = _asyncToGenerator(function() { /* body not rendered: F152885 */ });
+          obj = _asyncToGenerator(function() { /* body not rendered: F153171 */ });
           return obj(...arguments);
         };
         tmp = !(function load() {
@@ -135,7 +135,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     class P {
       constructor() {
         closure_0 = function _load() {
-          obj = _asyncToGenerator(function() { /* body not rendered: F152885 */ });
+          obj = _asyncToGenerator(function() { /* body not rendered: F153171 */ });
           return obj(...arguments);
         };
         tmp = !(function load() {
@@ -153,7 +153,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       class P {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F152885 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F153171 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -170,7 +170,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       class P {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F152885 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F153171 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -186,7 +186,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       class P {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F152885 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F153171 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -208,7 +208,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -243,7 +243,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               const tmp9 = tmp(c2[16]);
               showShareActionSheet(obj, "push-notification-logs");
               c3 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp16) {
             c3 = 3;
@@ -265,7 +265,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       class P {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F152885 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F153171 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -281,7 +281,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       class P {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F152885 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F153171 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -298,7 +298,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       class P {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F152885 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F153171 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -312,7 +312,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       class P {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F152885 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F153171 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -345,7 +345,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             let str = "i";
             const self2 = this;
             const regExp = new RegExp(closure_0, "i");
-            closure_1_3(first2.filter(() => { /* body not rendered: F152886 */ }));
+            closure_1_3(first2.filter(() => { /* body not rendered: F153172 */ }));
             const Storage = first1(closure_2[11]).Storage;
             let str2 = "push-notification-logs-query";
             const result = Storage.set("push-notification-logs-query", closure_0);
@@ -410,7 +410,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -443,7 +443,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               closure_0 = value;
               c2(closure_0);
               c3 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp12) {
             c3 = 3;
@@ -524,7 +524,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -559,7 +559,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             const tmp9 = tmp(c2[16]);
             showShareActionSheet(obj, "push-notification-logs");
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp16) {
           c3 = 3;

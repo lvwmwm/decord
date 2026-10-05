@@ -29,7 +29,7 @@ let _require, dependencyMap, flag, flag2, importDefault, lockOrientationResult, 
 let VoiceCallOverlayType;
 let VoiceChatDrawerState;
 let obj2;
-const f99001 = () => {
+const f99147 = () => {
   const obj = require("react-native");
   obj.batchUpdates(() => state.setState({ focus: false }));
 };
@@ -40,9 +40,9 @@ const ParticipantTypes = CallConstants.ParticipantTypes;
 const timeout = new Timers.Timeout();
 let obj = { focus: true, pipFocus: false, isGestureEnabled: true, voiceChatDrawerState: VoiceChatDrawerState.CLOSED, voiceCallOverlayLayoutStates: obj2 };
 obj2 = {};
-let size = { x: "Array", y: "Symbol", width: "y", height: "IconComponent", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: null, isVisible: null };
+let size = { x: "Array", y: "T", width: "y", height: "IconComponent", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: null, isVisible: null };
 obj2[VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON] = size;
-const size1 = { x: "Array", y: "Symbol", width: "y", height: "IconComponent", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: null, isVisible: null };
+const size1 = { x: "Array", y: "T", width: "y", height: "IconComponent", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: null, isVisible: null };
 obj2[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE] = size1;
 let closure_9 = freeze(obj);
 let obj3 = module_570.create(() => closure_9);
@@ -351,7 +351,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGuildStageVoice) =
 });
 function resetFocusTimer() {
   timeout.stop();
-  timeout.start(5000, f99001);
+  timeout.start(5000, f99147);
 }
 size = size_mod;
 let result = size.fileFinishedImporting("modules/video_calls/native/ChannelCallStore.tsx");
@@ -378,7 +378,7 @@ export const resetFocus = function resetFocus() {
   let state;
   if (obj3.getState().focus) {
     timeout.stop();
-    timeout.start(5000, f99001);
+    timeout.start(5000, f99147);
   } else {
     let obj = react_native;
     obj.batchUpdates(() => state.setState({ focus: true }));

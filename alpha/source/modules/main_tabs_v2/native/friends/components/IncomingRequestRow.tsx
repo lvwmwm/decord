@@ -1,9 +1,9 @@
-// Module ID: 16920
-// Function ID: 16921
+// Module ID: 16939
+// Function ID: 16940
 // Name: IncomingRequestRow
-// Dependencies: [109, 19, 4879, 5118, 10592, 1085, 21, 558, 576, 4612, 573, 1126, 4722, 15967, 12294, 16378, 16921, 10602, 2]
+// Dependencies: [109, 19, 4879, 5118, 10592, 1085, 21, 558, 576, 4612, 573, 1126, 4722, 15971, 12294, 16382, 16940, 10602, 2]
 
-// Module 16920 (IncomingRequestRow)
+// Module 16939 (IncomingRequestRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
@@ -11,7 +11,7 @@ import intl6 from "intl" /* 1126 */;
 import UserUtilsDefault from "UserUtils" /* 4722 */;
 import UserRowConstants from "UserRowConstants" /* 10592 */;
 import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12294 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 15967 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 15971 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4879 */;

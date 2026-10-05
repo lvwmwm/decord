@@ -1,9 +1,9 @@
-// Module ID: 16163
-// Function ID: 16164
+// Module ID: 16167
+// Function ID: 16168
 // Name: DMChannel
-// Dependencies: [19, 4905, 5071, 11697, 5072, 21, 4890, 587, 558, 576, 10651, 4901, 504, 15955, 9260, 16050, 2]
+// Dependencies: [19, 4905, 5071, 11697, 5072, 21, 4890, 587, 558, 576, 10651, 4901, 504, 15959, 9260, 16054, 2]
 
-// Module 16163 (DMChannel)
+// Module 16167 (DMChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import transitionToChannel from "transitionToChannel" /* 4901 */;
@@ -11,8 +11,8 @@ import ReadStateConstants from "ReadStateConstants" /* 5072 */;
 import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9260 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10651 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11697 */;
-import useCallA11yStateDefault from "useCallA11yState" /* 15955 */;
-import ChannelItemDefault from "ChannelItem" /* 16050 */;
+import useCallA11yStateDefault from "useCallA11yState" /* 15959 */;
+import ChannelItemDefault from "ChannelItem" /* 16054 */;
 import react from "react" /* 19 */;
 import ReadStateStore from "ReadStateStore" /* 4905 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;

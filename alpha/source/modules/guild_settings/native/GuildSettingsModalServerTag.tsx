@@ -1,10 +1,10 @@
-// Module ID: 17733
-// Function ID: 17734
+// Module ID: 17757
+// Function ID: 17758
 // Name: GuildSettingsModalServerTag
-// Dependencies: [5, 32, 19, 17, 9227, 2074, 9248, 1085, 7603, 21, 4890, 587, 1490, 9250, 504, 9228, 7836, 9229, 9247, 4567, 1126, 12138, 4771, 6010, 6880, 1491, 5708, 1188, 6535, 9412, 4886, 6074, 6698, 5993, 5593, 13726, 8895, 13724, 17734, 2]
+// Dependencies: [5, 32, 19, 17, 9227, 2074, 9248, 1085, 7603, 21, 4890, 587, 1490, 9250, 504, 9228, 7836, 9229, 9247, 4567, 1126, 12138, 4771, 6010, 6880, 1491, 5708, 1188, 6535, 9412, 4886, 6074, 6698, 5993, 5593, 13728, 8895, 13726, 17758, 2]
 // Exports: default
 
-// Module 17733 (GuildSettingsModalServerTag)
+// Module 17757 (GuildSettingsModalServerTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -197,7 +197,7 @@ export default function GuildSettingsModalServerTag(guildId) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -264,7 +264,7 @@ export default function GuildSettingsModalServerTag(guildId) {
           }
         }
         c3 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp27) {
         c3 = 3;
         throw tmp27;
@@ -426,7 +426,7 @@ export default function GuildSettingsModalServerTag(guildId) {
           if (tmp33Result) {
             size = { badge: null, primaryTintColor: badgeColorPrimary, secondaryTintColor: badgeColorSecondary, width: null, height: null };
             ({ badge: obj15.badge, badgeColorPrimary } = stateFromStores1);
-            const GuildBadge = tmp2(13726).GuildBadge;
+            const GuildBadge = tmp2(13728).GuildBadge;
             badgeColorSecondary = stateFromStores1.badgeColorSecondary;
             ({ SIZE_16: obj15.width, SIZE_16: obj15.height } = closure_12);
             tmp33Result = tmp33(GuildBadge, size);
@@ -452,12 +452,12 @@ export default function GuildSettingsModalServerTag(guildId) {
           items14[2] = closure_13(Text2, obj18);
           const obj19 = { guildId, tag: null, badge: null, primaryColor: null, secondaryColor: null, isDirty: result1 };
           ({ tag: obj21.tag, badge: obj21.badge, badgeColorPrimary: obj21.primaryColor, badgeColorSecondary: obj21.secondaryColor } = stateFromStores1);
-          items14[3] = closure_13(navigation(13724), obj19);
+          items14[3] = closure_13(navigation(13726), obj19);
           obj16.children = items14;
           tmp41 = obj16;
         } else {
           const obj20 = { guildId, onUnlockPress: callback2 };
-          const items15 = [tmp33(tmp40(17734), obj20), tmp32Result2];
+          const items15 = [tmp33(tmp40(17758), obj20), tmp32Result2];
           obj16.children = items15;
           tmp41 = obj16;
         }

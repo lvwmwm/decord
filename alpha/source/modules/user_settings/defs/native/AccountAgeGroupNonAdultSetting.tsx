@@ -1,9 +1,9 @@
-// Module ID: 14537
-// Function ID: 14538
+// Module ID: 14541
+// Function ID: 14542
 // Name: AccountAgeGroupNonAdultSetting
-// Dependencies: [7634, 8084, 8086, 558, 576, 5102, 1126, 5580, 14491, 11129, 2]
+// Dependencies: [7634, 8084, 8086, 558, 576, 5102, 1126, 5580, 14495, 11129, 2]
 
-// Module 14537 (AccountAgeGroupNonAdultSetting)
+// Module 14541 (AccountAgeGroupNonAdultSetting)
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 5102 */;
@@ -11,7 +11,7 @@ import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5580 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8084 */;
 import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8086 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14491 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14495 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;

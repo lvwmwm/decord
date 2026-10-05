@@ -1,12 +1,12 @@
-// Module ID: 15274
-// Function ID: 15275
+// Module ID: 15278
+// Function ID: 15279
 // Name: ChatSetting
-// Dependencies: [1085, 11129, 1126, 15275, 15277, 2]
+// Dependencies: [1085, 11129, 1126, 15279, 15281, 2]
 
-// Module 15274 (ChatSetting)
+// Module 15278 (ChatSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import ImageTextIcon from "ImageTextIcon" /* 15275 */;
+import ImageTextIcon from "ImageTextIcon" /* 15279 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 

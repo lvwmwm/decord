@@ -34,7 +34,7 @@ let obj = function _requestAndSyncContacts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -75,7 +75,7 @@ let obj = function _requestAndSyncContacts() {
               if (null == phone) {
                 c4 = 0;
                 c6 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } else {
                 set = ContactSyncUtils;
                 c5 = 2;
@@ -128,7 +128,7 @@ let obj = function _requestAndSyncContacts() {
           const result = set(closure_130_10, timestamp);
         }
         c6 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp29) {
         let closure_3 = tmp29;
         if (0 === c4) {

@@ -1,9 +1,9 @@
-// Module ID: 17989
-// Function ID: 17990
+// Module ID: 18011
+// Function ID: 18012
 // Name: MessageSendFailureNotificationManager
 // Dependencies: [2103, 4699, 1377, 1986, 1085, 8707, 12477, 12479, 8966, 1126, 6613, 2]
 
-// Module 17989 (MessageSendFailureNotificationManager)
+// Module 18011 (MessageSendFailureNotificationManager)
 import intl3 from "intl" /* 1126 */;
 import Constants2 from "Constants" /* 8707 */;
 import PushNotificationDefault from "PushNotification" /* 8966 */;

@@ -43,7 +43,7 @@ export const useAnimatedSnapPoints = (snapPoints, containerHeight, contentHeight
         } else {
           items1 = [];
         }
-        mapped = items1.map(() => { /* body not rendered: F137002 */ });
+        mapped = items1.map(() => { /* body not rendered: F137240 */ });
         tmp3 = closure_4;
         if (tmp3) {
           iter2 = closure_3;
@@ -71,7 +71,7 @@ export const useAnimatedSnapPoints = (snapPoints, containerHeight, contentHeight
               if (!mapped.includes(diff)) {
                 arr1 = mapped.push(diff);
               }
-              sorted = mapped.sort(() => { /* body not rendered: F137003 */ });
+              sorted = mapped.sort(() => { /* body not rendered: F137241 */ });
               tmp8 = closure_6;
               closure_6.value = sorted.indexOf(diff);
               return sorted;
@@ -111,7 +111,7 @@ export const useAnimatedSnapPoints = (snapPoints, containerHeight, contentHeight
         length = items.length;
         tmp2 = !length;
         if (length) {
-          tmp2 = !items.find(function() { /* body not rendered: F137004 */ });
+          tmp2 = !items.find(function() { /* body not rendered: F137242 */ });
         }
         return !tmp2;
       }

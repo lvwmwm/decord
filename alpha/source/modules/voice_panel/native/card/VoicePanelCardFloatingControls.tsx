@@ -1,9 +1,9 @@
-// Module ID: 17268
-// Function ID: 17269
+// Module ID: 17292
+// Function ID: 17293
 // Name: VoicePanelCardFloatingControls
-// Dependencies: [19, 17, 4879, 2050, 4912, 4913, 11902, 11900, 11905, 1085, 4911, 21, 4612, 1188, 4890, 587, 558, 576, 11901, 17224, 17269, 9748, 17270, 17197, 1126, 9667, 9336, 9335, 5976, 4800, 5597, 17195, 5032, 4942, 8991, 17164, 17271, 17272, 504, 17254, 17273, 6570, 4589, 17274, 9392, 8323, 5896, 8321, 8319, 9395, 17275, 5770, 6657, 7850, 9345, 5305, 9389, 4886, 9431, 17276, 2]
+// Dependencies: [19, 17, 4879, 2050, 4912, 4913, 11902, 11900, 11905, 1085, 4911, 21, 4612, 1188, 4890, 587, 558, 576, 11901, 17248, 17293, 9748, 17294, 17221, 1126, 9667, 9336, 9335, 5976, 4800, 5597, 17219, 5032, 4942, 8991, 17188, 17295, 17296, 504, 17278, 17297, 6570, 4589, 17298, 9392, 8323, 5896, 8321, 8319, 9395, 17299, 5770, 6657, 7850, 9345, 5305, 9389, 4886, 9431, 17300, 2]
 
-// Module 17268 (VoicePanelCardFloatingControls)
+// Module 17292 (VoicePanelCardFloatingControls)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -23,10 +23,10 @@ import VoiceXIcon from "VoiceXIcon" /* 9667 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11900 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11901 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11905 */;
-import useStableParticipant from "useStableParticipant" /* 17195 */;
-import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 17197 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17224 */;
-import getRandomNumberInRangeDefault from "getRandomNumberInRange" /* 17254 */;
+import useStableParticipant from "useStableParticipant" /* 17219 */;
+import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 17221 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17248 */;
+import getRandomNumberInRangeDefault from "getRandomNumberInRange" /* 17278 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4879 */;
@@ -138,11 +138,11 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((voicePlatform)
   const animatedStyle = obj2.useAnimatedStyle(fn);
   let tmp4Result = AssetRegistryDefault;
   if (voicePlatform === constants2.XBOX) {
-    tmp4Result = tmp4(17269);
+    tmp4Result = tmp4(17293);
   } else if (voicePlatform === constants2.MOBILE) {
     tmp4Result = tmp4(9748);
   } else if (voicePlatform === constants2.QUEST) {
-    tmp4Result = tmp4(17270);
+    tmp4Result = tmp4(17294);
   }
   if (cResult[0] === animatedStyle) {
     let tmp8;
@@ -197,11 +197,11 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((voicePlatform)
   const animatedStyle = obj.useAnimatedStyle(fn);
   let tmp2Result = AssetRegistryDefault;
   if (voicePlatform === constants2.XBOX) {
-    tmp2Result = tmp2(17269);
+    tmp2Result = tmp2(17293);
   } else if (voicePlatform === constants2.MOBILE) {
     tmp2Result = tmp2(9748);
   } else if (voicePlatform === constants2.QUEST) {
-    tmp2Result = tmp2(17270);
+    tmp2Result = tmp2(17294);
   }
   const obj3 = { source: tmp2Result, style: items };
   items = [tmp.iconWithoutBackground, animatedStyle];
@@ -538,8 +538,8 @@ let closure_31 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((participa
           }
         }
       }
-      let obj2 = { icon: tmp4(17271), onPress: tmp6, style: tmp5, layout, accessibilityLabel: tmp7 };
-      const tmp4Result = guildId(17164);
+      let obj2 = { icon: tmp4(17295), onPress: tmp6, style: tmp5, layout, accessibilityLabel: tmp7 };
+      const tmp4Result = guildId(17188);
       const tmp13 = closure_16(tmp4Result, obj2);
       cResult[6] = tmp6;
       cResult[7] = layout;
@@ -548,7 +548,7 @@ let closure_31 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((participa
       cResult[10] = tmp13;
       tmp10 = tmp13;
     }
-    const tmpResult = tmp(17195);
+    const tmpResult = tmp(17219);
     const result = tmpResult.isStableActivityParticipant(participant);
     const intl = tmp(1126).intl;
     const string = intl.string;
@@ -629,9 +629,9 @@ let closure_31 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((participa
     }
   }, items);
   const tmp3 = closure_16;
-  let obj = { icon: guildId(17271), onPress: callback, style: tmp, layout, accessibilityLabel: stringResult };
-  const tmp4 = guildId(17164);
-  let obj2 = participant(17195);
+  let obj = { icon: guildId(17295), onPress: callback, style: tmp, layout, accessibilityLabel: stringResult };
+  const tmp4 = guildId(17188);
+  let obj2 = participant(17219);
   const result = obj2.isStableActivityParticipant(participant);
   const intl = participant(1126).intl;
   const string = intl.string;
@@ -1121,7 +1121,7 @@ let closure_50 = memo5(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId)
   } else {
     first = cResult[0];
   }
-  const obj3 = gameRecord(17274);
+  const obj3 = gameRecord(17298);
   showGameTag = obj3.useConfig(first).showGameTag;
   const first1 = gameRecord(9392)(userId, guildId, showGameTag)[0];
   let tmp6;
@@ -1167,7 +1167,7 @@ let closure_50 = memo5(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId)
               }
             }
             const obj6 = { game: gameRecord, userId, textColor };
-            const tmp17 = closure_16(gameRecord(17275), obj6);
+            const tmp17 = closure_16(gameRecord(17299), obj6);
             cResult[11] = gameRecord;
             cResult[12] = textColor;
             cResult[13] = userId;
@@ -1221,7 +1221,7 @@ let closure_50 = memo5(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId)
   react = undefined;
   let tmp = gameRecord;
   guildId = guildId.guildId;
-  const obj = gameRecord(17274);
+  const obj = gameRecord(17298);
   const showGameTag = obj.useConfig({ location: "VoicePanelCardFloatingControls" }).showGameTag;
   const first = gameRecord(9392)(userId, guildId, showGameTag)[0];
   let tmp5;
@@ -1253,7 +1253,7 @@ let closure_50 = memo5(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId)
       let tmp12;
       if (!tmp8) {
         const obj2 = { game: gameRecord, userId, textColor };
-        tmp12 = closure_16(tmp(17275), obj2);
+        tmp12 = closure_16(tmp(17299), obj2);
       }
       return tmp12;
     }

@@ -1,10 +1,10 @@
-// Module ID: 13022
-// Function ID: 13023
+// Module ID: 13024
+// Function ID: 13025
 // Name: SurveyIndication
-// Dependencies: [6085, 1126, 7605, 4729, 13023, 13024, 2]
+// Dependencies: [6085, 1126, 7605, 4729, 13025, 13026, 2]
 // Exports: createSurveyIndication
 
-// Module 13022 (SurveyIndication)
+// Module 13024 (SurveyIndication)
 import intl2 from "intl" /* 1126 */;
 import PushNotificationConstants from "PushNotificationConstants" /* 6085 */;
 import size from "module_2" /* 2 */;
@@ -37,9 +37,9 @@ export const createSurveyIndication = function createSurveyIndication(message, f
   tmp2(7605);
   const tmp2Result2 = tmp2(4729);
   if (tmp2Result2.isThemeDark(forcedTheme)) {
-    tmp8Result = tmp8(13023);
+    tmp8Result = tmp8(13025);
   } else {
-    tmp8Result = tmp8(13024);
+    tmp8Result = tmp8(13026);
   }
   return obj2;
 };

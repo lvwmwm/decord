@@ -1,16 +1,16 @@
-// Module ID: 17132
-// Function ID: 17133
+// Module ID: 17156
+// Function ID: 17157
 // Name: ExternalPipViewVideo
-// Dependencies: [32, 19, 17, 2051, 1377, 4911, 21, 4890, 587, 558, 576, 9097, 4812, 1126, 4886, 504, 9122, 1188, 9106, 4580, 17133, 9114, 17134, 9110, 2]
+// Dependencies: [32, 19, 17, 2051, 1377, 4911, 21, 4890, 587, 558, 576, 9097, 4812, 1126, 4886, 504, 9122, 1188, 9106, 4580, 17157, 9114, 17158, 9110, 2]
 
-// Module 17132 (ExternalPipViewVideo)
+// Module 17156 (ExternalPipViewVideo)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 4886 */;
 import CallConstants from "CallConstants" /* 4911 */;
 import ExternalPipDefault from "ExternalPip" /* 9110 */;
-import VideoActionCreators from "VideoActionCreators" /* 17133 */;
-import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 17134 */;
+import VideoActionCreators from "VideoActionCreators" /* 17157 */;
+import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 17158 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

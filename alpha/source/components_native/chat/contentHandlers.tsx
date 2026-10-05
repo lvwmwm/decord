@@ -168,7 +168,7 @@ let closure_6 = _asyncToGenerator(async (arg0) => {
     await "IconComponent";
     closure_1 = tmp;
     attachmentUrl = nativeEvent.nativeEvent.data.attachmentUrl;
-    return "Reflect";
+    return "Set";
   })();
   iter.next();
   return iter;
@@ -217,7 +217,7 @@ let closure_5 = _asyncToGenerator(async (arg0) => {
     await "IconComponent";
     url = tmp;
     ({ attachmentUrl: c0, fileName: c1 } = nativeEvent.nativeEvent.data);
-    return "Reflect";
+    return "Set";
   })();
   iter.next();
   return iter;
@@ -260,7 +260,7 @@ let closure_4 = _asyncToGenerator(async (arg0) => {
     await "IconComponent";
     urlString = tmp;
     attachmentUrl = nativeEvent.nativeEvent.data.attachmentUrl;
-    return "Reflect";
+    return "Set";
   })();
   iter.next();
   return iter;

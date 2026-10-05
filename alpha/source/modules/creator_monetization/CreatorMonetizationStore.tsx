@@ -1,9 +1,9 @@
-// Module ID: 13497
-// Function ID: 13498
+// Module ID: 13499
+// Function ID: 13500
 // Name: CreatorMonetizationStore
 // Dependencies: [504, 584, 2]
 
-// Module 13497 (CreatorMonetizationStore)
+// Module 13499 (CreatorMonetizationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

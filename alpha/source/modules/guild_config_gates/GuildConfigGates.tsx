@@ -1,14 +1,14 @@
-// Module ID: 17786
-// Function ID: 17787
+// Module ID: 17810
+// Function ID: 17811
 // Name: GuildConfigGates
-// Dependencies: [5, 17787, 1085, 504, 1282, 584, 558, 2]
+// Dependencies: [5, 17811, 1085, 504, 1282, 584, 558, 2]
 // Exports: useApplicationIdentityLinkedRolesEnabled, useGuildVerificationRoleEnabled
 
-// Module 17786 (GuildConfigGates)
+// Module 17810 (GuildConfigGates)
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildConfigGatesStore from "GuildConfigGatesStore" /* 17787 */;
+import GuildConfigGatesStore from "GuildConfigGatesStore" /* 17811 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -54,7 +54,7 @@ let closure_3 = _asyncToGenerator(async (guildId) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -103,7 +103,7 @@ let closure_3 = _asyncToGenerator(async (guildId) => {
           dispatch(obj5);
         }
         c6 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp13) {
         c6 = 3;
         throw tmp13;

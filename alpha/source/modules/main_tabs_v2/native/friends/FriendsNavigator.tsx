@@ -1,9 +1,9 @@
-// Module ID: 16905
-// Function ID: 16906
+// Module ID: 16924
+// Function ID: 16925
 // Name: FriendsNavigator
-// Dependencies: [109, 19, 17, 21, 7556, 4890, 587, 558, 576, 1126, 7504, 7498, 12261, 6984, 6496, 16906, 16912, 16915, 16916, 16917, 16924, 16925, 16926, 16928, 16931, 16932, 4732, 1618, 4589, 2]
+// Dependencies: [109, 19, 17, 21, 7556, 4890, 587, 558, 576, 1126, 7504, 7498, 12261, 6984, 6496, 16925, 16931, 16934, 16935, 16936, 16943, 16944, 16945, 16947, 16950, 16951, 4732, 1618, 4589, 2]
 
-// Module 16905 (FriendsNavigator)
+// Module 16924 (FriendsNavigator)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

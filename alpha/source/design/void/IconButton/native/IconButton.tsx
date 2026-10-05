@@ -1,9 +1,9 @@
-// Module ID: 13270
-// Function ID: 13271
+// Module ID: 13272
+// Function ID: 13273
 // Name: IconButton/IconButton
 // Dependencies: [109, 19, 21, 4890, 587, 5620, 558, 576, 1188, 5909, 2]
 
-// Module 13270 (IconButton/IconButton)
+// Module 13272 (IconButton/IconButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

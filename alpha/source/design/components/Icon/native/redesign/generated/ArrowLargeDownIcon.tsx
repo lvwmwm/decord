@@ -1,9 +1,9 @@
-// Module ID: 17850
-// Function ID: 17851
+// Module ID: 17874
+// Function ID: 17875
 // Name: ArrowLargeDownIcon
 // Dependencies: [109, 19, 21, 558, 576, 587, 11898, 4579, 2]
 
-// Module 17850 (ArrowLargeDownIcon)
+// Module 17874 (ArrowLargeDownIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

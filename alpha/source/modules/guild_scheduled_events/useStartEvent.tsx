@@ -47,7 +47,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c6;
@@ -164,7 +164,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             closure_0(false);
             c8 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp50) {
           closure_5 = tmp50;
@@ -219,7 +219,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -249,7 +249,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               aPIError = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -338,7 +338,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             closure_132_0(false);
             c8 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp55) {
           closure_5 = tmp55;

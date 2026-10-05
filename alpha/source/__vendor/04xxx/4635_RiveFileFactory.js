@@ -31,7 +31,7 @@ RiveFileFactory = function _fromURL() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -53,7 +53,7 @@ RiveFileFactory = function _fromURL() {
               }
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (arg0 === 1) {
             c6 = 3;
@@ -101,7 +101,7 @@ RiveFileFactory = function _fromFileURL() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -126,7 +126,7 @@ RiveFileFactory = function _fromFileURL() {
               }
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (arg0 === 1) {
             c6 = 3;
@@ -174,7 +174,7 @@ RiveFileFactory = function _fromResource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -196,7 +196,7 @@ RiveFileFactory = function _fromResource() {
               }
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (arg0 === 1) {
             c6 = 3;
@@ -244,7 +244,7 @@ RiveFileFactory = function _fromBytes() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -266,7 +266,7 @@ RiveFileFactory = function _fromBytes() {
               }
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (arg0 === 1) {
             c6 = 3;
@@ -314,7 +314,7 @@ RiveFileFactory = function _fromSource() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let tmp50;
@@ -345,7 +345,7 @@ RiveFileFactory = function _fromSource() {
             message = undefined;
             c7 = 1;
             c8 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c7) {
           if (arg0 === 1) {

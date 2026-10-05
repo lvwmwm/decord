@@ -1,9 +1,9 @@
-// Module ID: 17137
-// Function ID: 17138
+// Module ID: 17161
+// Function ID: 17162
 // Name: ActivityPanelController
-// Dependencies: [32, 19, 5118, 7964, 9156, 2051, 2050, 2011, 8705, 21, 2026, 558, 576, 17136, 4612, 8008, 17138, 1618, 1484, 17139, 17142, 9055, 9133, 9609, 17143, 6016, 9135, 4745, 4498, 9014, 504, 5568, 4901, 17144, 8993, 2]
+// Dependencies: [32, 19, 5118, 7964, 9156, 2051, 2050, 2011, 8705, 21, 2026, 558, 576, 17160, 4612, 8008, 17162, 1618, 1484, 17163, 17166, 9055, 9133, 9609, 17167, 6016, 9135, 4745, 4498, 9014, 504, 5568, 4901, 17168, 8993, 2]
 
-// Module 17137 (ActivityPanelController)
+// Module 17161 (ActivityPanelController)
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
 import ChatInputUtils from "ChatInputUtils" /* 4745 */;
@@ -13,7 +13,7 @@ import DeviceOrientation from "DeviceOrientation" /* 8008 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 8705 */;
 import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 8993 */;
 import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 9135 */;
-import applyActivityOrientationLockDefault from "applyActivityOrientationLock" /* 17138 */;
+import applyActivityOrientationLockDefault from "applyActivityOrientationLock" /* 17162 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5118 */;
@@ -1262,7 +1262,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
         }
       }
     }
-    const tmp19 = <closure_24 context={connectedActivityInTextChannelId(17144)} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={hasConnectedActivity} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={EmbeddedActivitiesActionCreatorsAll.updateActivityPanelMode}>{children}</closure_24>;
+    const tmp19 = <closure_24 context={connectedActivityInTextChannelId(17168)} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={hasConnectedActivity} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={EmbeddedActivitiesActionCreatorsAll.updateActivityPanelMode}>{children}</closure_24>;
     cResult[7] = children;
     cResult[8] = connectedActivityAppId;
     cResult[9] = currentApp;
@@ -1349,7 +1349,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
       }
     }
   }, items1);
-  return <closure_24 context={connectedActivityInTextChannelId(17144)} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={hasConnectedActivity} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={EmbeddedActivitiesActionCreatorsAll.updateActivityPanelMode}>{children}</closure_24>;
+  return <closure_24 context={connectedActivityInTextChannelId(17168)} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={hasConnectedActivity} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={EmbeddedActivitiesActionCreatorsAll.updateActivityPanelMode}>{children}</closure_24>;
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/activities/panel/native/ActivityPanelController.tsx");

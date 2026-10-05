@@ -31,7 +31,7 @@ let obj = function _resolveResponse() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;
@@ -84,7 +84,7 @@ let obj = function _resolveResponse() {
               }
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else if (1 === c3) {
           c5 = 0;
@@ -309,7 +309,7 @@ export const addFetchEndInstrumentationHandler = function addFetchEndInstrumenta
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -448,7 +448,7 @@ export const addFetchInstrumentationHandler = function addFetchInstrumentationHa
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {

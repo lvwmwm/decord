@@ -1,15 +1,15 @@
-// Module ID: 12913
-// Function ID: 12914
+// Module ID: 12915
+// Function ID: 12916
 // Name: UserProfileActivityTab
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 4886, 1126, 8047, 2115, 12914, 12917, 12817, 12918, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 4886, 1126, 8047, 2115, 12916, 12919, 12817, 12920, 2]
 
-// Module 12913 (UserProfileActivityTab)
+// Module 12915 (UserProfileActivityTab)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import Text_Text from "Text/Text" /* 4886 */;
-import UserProfileRecentActivityCardDefault from "UserProfileRecentActivityCard" /* 12918 */;
+import UserProfileRecentActivityCardDefault from "UserProfileRecentActivityCard" /* 12920 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4890 */;
@@ -287,7 +287,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       if (cResult[2] === user.id) {
         tmp4 = cResult[3];
       }
-      const tmp6 = cardStyle(12914)(tmp4);
+      const tmp6 = cardStyle(12916)(tmp4);
       ({ recent, isCurrentUser, hasCurrentActivity, hasRecentActivity } = tmp6);
       const tmp5 = cardStyle;
       if (!hasCurrentActivity) {
@@ -314,7 +314,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                 }
               }
             }
-            const tmpResult = user(12917);
+            const tmpResult = user(12919);
             if (isCurrentUser) {
               tmp8Result = tmp8(tmpResult.UserProfileActivityEmptyCurrentUser, {});
             } else {
@@ -432,8 +432,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   ({ currentUser, guildId, cardStyle } = user);
   const channelId = user.channelId;
   let obj = { userId: user.id, currentUserId: currentUser.id, guildId };
-  ({ recent, isCurrentUser, hasCurrentActivity, hasRecentActivity } = cardStyle(12914)(obj));
-  cardStyle(12914)(obj);
+  ({ recent, isCurrentUser, hasCurrentActivity, hasRecentActivity } = cardStyle(12916)(obj));
+  cardStyle(12916)(obj);
   const tmp = cardStyle;
   if (!hasCurrentActivity) {
     let tmp10Result;
@@ -441,7 +441,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       if (tmp4) {
         tmp10Result = tmp5(closure_9, {});
       } else {
-        const tmp7 = user(12917);
+        const tmp7 = user(12919);
         if (isCurrentUser) {
           tmp10Result = tmp5(tmp7.UserProfileActivityEmptyCurrentUser, {});
         } else {

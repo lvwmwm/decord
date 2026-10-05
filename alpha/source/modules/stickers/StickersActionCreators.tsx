@@ -25,7 +25,7 @@ let _require, c1, c2, locale, stickerIds;
 
 let c10;
 let unpackModuleId;
-const f102620 = (item) => null != stickerById.getStickerById(item);
+const f102766 = (item) => null != stickerById.getStickerById(item);
 let obj = function _fetchStickerPack() {
   obj = _asyncToGenerator(async (packId, ingestStickers) => {
     let closure_2;
@@ -100,7 +100,7 @@ obj = function _fetchStickerPacks() {
       obj5 = {};
     }
     locale = obj5.locale ?? locale.locale;
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };
@@ -118,7 +118,7 @@ obj = function _fetchSticker() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -174,7 +174,7 @@ obj = function _fetchSticker() {
             }
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp21) {
         c4 = 3;
@@ -200,7 +200,7 @@ obj = function _fetchGuildStickersWithCreator() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -251,7 +251,7 @@ obj = function _fetchGuildStickersWithCreator() {
             closure_131_1(closure_131_2[10]);
             dispatch(obj);
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp13) {
           c5 = 3;
@@ -276,7 +276,7 @@ obj = function _deleteGuildSticker() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -308,7 +308,7 @@ obj = function _deleteGuildSticker() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp4) {
         c1 = 3;
@@ -441,7 +441,7 @@ export const favoriteSticker = function favoriteSticker(arg0) {
     if (GuildAvailabilityStore.totalUnavailableGuilds <= 0) {
       let found = stickerIds1;
       if (GatewayConnectionStore.isConnected()) {
-        found = stickerIds1.filter(f102620);
+        found = stickerIds1.filter(f102766);
       }
       tmp = found;
     }
@@ -482,7 +482,7 @@ export const unfavoriteSticker = function unfavoriteSticker(arg0) {
     if (GuildAvailabilityStore.totalUnavailableGuilds <= 0) {
       let found = stickerIds1;
       if (GatewayConnectionStore.isConnected()) {
-        found = stickerIds1.filter(f102620);
+        found = stickerIds1.filter(f102766);
       }
       tmp = found;
     }

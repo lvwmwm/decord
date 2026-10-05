@@ -1,9 +1,9 @@
-// Module ID: 17519
-// Function ID: 17520
+// Module ID: 17543
+// Function ID: 17544
 // Name: JSWatchdogManager
-// Dependencies: [5, 1085, 3, 1102, 6613, 17520, 1242, 1252, 6984, 6980, 6970, 2]
+// Dependencies: [5, 1085, 3, 1102, 6613, 17544, 1242, 1252, 6984, 6980, 6970, 2]
 
-// Module 17519 (JSWatchdogManager)
+// Module 17543 (JSWatchdogManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -72,7 +72,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -187,7 +187,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
             c3 = 0;
             closure_129_1._pingCompleted = true;
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp80) {
           closure_2 = tmp80;
@@ -217,7 +217,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -274,7 +274,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp31) {
           c3 = 3;
           throw tmp31;
@@ -315,7 +315,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

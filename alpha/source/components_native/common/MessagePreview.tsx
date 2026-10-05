@@ -1,14 +1,14 @@
-// Module ID: 16973
-// Function ID: 16974
+// Module ID: 16997
+// Function ID: 16998
 // Name: MessagePreview
-// Dependencies: [19, 8037, 1085, 21, 558, 576, 504, 1126, 16795, 13091, 2]
+// Dependencies: [19, 8037, 1085, 21, 558, 576, 504, 1126, 16814, 13093, 2]
 
-// Module 16973 (MessagePreview)
+// Module 16997 (MessagePreview)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import ChatPreview from "ChatPreview" /* 13091 */;
+import ChatPreview from "ChatPreview" /* 13093 */;
 import react from "react" /* 19 */;
 import MessagePreviewStore from "MessagePreviewStore" /* 8037 */;
 import Constants from "Constants" /* 1085 */;
@@ -128,7 +128,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj = jumpTargetId(closure_1_2[8]);
     obj.clearMessages();
   }, []);
-  return jsx(onBeforeJumpToMessage(13091).ChatPreview, { channelId, messages, jumpToChatProps: memo, analyticsLocation });
+  return jsx(onBeforeJumpToMessage(13093).ChatPreview, { channelId, messages, jumpToChatProps: memo, analyticsLocation });
 });
 const result = size.fileFinishedImporting("components_native/common/MessagePreview.tsx");
 

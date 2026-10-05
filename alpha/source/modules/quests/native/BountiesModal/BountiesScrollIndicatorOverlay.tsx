@@ -1,9 +1,9 @@
-// Module ID: 14848
-// Function ID: 14849
+// Module ID: 14852
+// Function ID: 14853
 // Name: BountiesScrollIndicatorOverlay
-// Dependencies: [32, 19, 17, 21, 4894, 4890, 587, 558, 576, 4612, 4891, 5605, 14849, 1126, 4886, 2]
+// Dependencies: [32, 19, 17, 21, 4894, 4890, 587, 558, 576, 4612, 4891, 5605, 14853, 1126, 4886, 2]
 
-// Module 14848 (BountiesScrollIndicatorOverlay)
+// Module 14852 (BountiesScrollIndicatorOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
@@ -55,7 +55,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((enabled) => {
   if (cResult[0] !== enabled) {
     const fn = function o() {
       let timeout;
-      const f152765 = () => {
+      const f153051 = () => {
         importDefault(closure_0);
         closure_0 = !closure_0;
         let num = 5000;
@@ -63,13 +63,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((enabled) => {
         if (closure_0) {
           num = closure_2_9;
         }
-        enabled = _setTimeout(f152765, num);
+        enabled = _setTimeout(f153051, num);
       };
       const tmp = timeout;
       if (tmp) {
         let c0 = false;
         let _setTimeout = setTimeout;
-        timeout = setTimeout(f152765, closure_1_9);
+        timeout = setTimeout(f153051, closure_1_9);
         return () => clearTimeout(closure_0);
       }
     };
@@ -111,7 +111,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((enabled) => {
   const items = [visible];
   const effect = obj.useEffect(() => {
     let timeout;
-    const f152766 = () => {
+    const f153052 = () => {
       importDefault(closure_0);
       closure_0 = !closure_0;
       let num = 5000;
@@ -119,13 +119,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((enabled) => {
       if (closure_0) {
         num = closure_2_9;
       }
-      visible = _setTimeout(f152766, num);
+      visible = _setTimeout(f153052, num);
     };
     const tmp = timeout;
     if (tmp) {
       let c0 = false;
       let _setTimeout = setTimeout;
-      timeout = setTimeout(f152766, closure_1_9);
+      timeout = setTimeout(f153052, closure_1_9);
       return () => clearTimeout(closure_0);
     }
   }, items);

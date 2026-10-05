@@ -1,12 +1,12 @@
-// Module ID: 13012
-// Function ID: 13013
+// Module ID: 13014
+// Function ID: 13015
 // Name: EditCollectiblesPickerList
-// Dependencies: [32, 19, 17, 21, 4890, 13007, 558, 576, 4886, 12, 8371, 2]
+// Dependencies: [32, 19, 17, 21, 4890, 13009, 558, 576, 4886, 12, 8371, 2]
 
-// Module 13012 (EditCollectiblesPickerList)
+// Module 13014 (EditCollectiblesPickerList)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 13007 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 13009 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

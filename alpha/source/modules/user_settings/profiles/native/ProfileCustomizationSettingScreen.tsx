@@ -1,9 +1,9 @@
-// Module ID: 14407
-// Function ID: 14408
+// Module ID: 14411
+// Function ID: 14412
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [5, 109, 32, 19, 17, 9417, 7831, 1095, 1085, 21, 4890, 1126, 14408, 14474, 558, 576, 14484, 4580, 587, 1490, 6490, 9282, 10659, 6477, 4745, 14426, 14475, 573, 5070, 9419, 6010, 7498, 1491, 12282, 10974, 2]
+// Dependencies: [5, 109, 32, 19, 17, 9417, 7831, 1095, 1085, 21, 4890, 1126, 14412, 14478, 558, 576, 14488, 4580, 587, 1490, 6490, 9282, 10659, 6477, 4745, 14430, 14479, 573, 5070, 9419, 6010, 7498, 1491, 12282, 10974, 2]
 
-// Module 14407 (ProfileCustomizationSettingScreen)
+// Module 14411 (ProfileCustomizationSettingScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
@@ -13,11 +13,11 @@ import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
 import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6477 */;
 import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9419 */;
 import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 10659 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 14408 */;
-import useUserProfileEditFormDefault from "useUserProfileEditForm" /* 14426 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 14474 */;
-import useGuildProfileEditFormDefault from "useGuildProfileEditForm" /* 14475 */;
-import useMaybeFetchCollectiblesRecommendationsDefault from "useMaybeFetchCollectiblesRecommendations" /* 14484 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 14412 */;
+import useUserProfileEditFormDefault from "useUserProfileEditForm" /* 14430 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 14478 */;
+import useGuildProfileEditFormDefault from "useGuildProfileEditForm" /* 14479 */;
+import useMaybeFetchCollectiblesRecommendationsDefault from "useMaybeFetchCollectiblesRecommendations" /* 14488 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -453,7 +453,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -485,7 +485,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     closure_128_3(true);
                   }
                   c2 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } catch (tmp8) {
                 c2 = 3;

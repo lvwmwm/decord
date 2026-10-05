@@ -1,10 +1,10 @@
-// Module ID: 16120
-// Function ID: 16121
+// Module ID: 16124
+// Function ID: 16125
 // Name: GuildMFAWarning
-// Dependencies: [5, 19, 17, 1085, 21, 4890, 587, 10723, 2115, 1987, 4565, 558, 576, 16121, 1126, 4886, 1188, 5909, 2]
+// Dependencies: [5, 19, 17, 1085, 21, 4890, 587, 10723, 2115, 1987, 4565, 558, 576, 16125, 1126, 4886, 1188, 5909, 2]
 // Exports: getScaledGuildMFAWarningHeight
 
-// Module 16120 (GuildMFAWarning)
+// Module 16124 (GuildMFAWarning)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,7 +13,7 @@ import native from "native" /* 1188 */;
 import Text_Text from "Text/Text" /* 4886 */;
 import Pressables from "Pressables" /* 5909 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10723 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16121 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16125 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
@@ -47,7 +47,7 @@ let obj = function _handlePress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -81,7 +81,7 @@ let obj = function _handlePress() {
           obj = closure_129_1(closure_129_2[10]);
           obj.openURL(articleURL.getArticleURL(closure_129_5.SETTING_UP_TWO_FACTOR));
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp16) {
         c3 = 3;

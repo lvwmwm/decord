@@ -1,9 +1,9 @@
-// Module ID: 14479
-// Function ID: 14480
+// Module ID: 14483
+// Function ID: 14484
 // Name: GuildSelectComponentActionSheet
 // Dependencies: [32, 19, 17, 2074, 5616, 21, 4890, 558, 576, 5122, 1126, 4854, 5042, 1188, 4886, 5971, 11432, 5621, 2]
 
-// Module 14479 (GuildSelectComponentActionSheet)
+// Module 14483 (GuildSelectComponentActionSheet)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 1188 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
@@ -27,7 +27,7 @@ let c9;
 let metroImportAll;
 let tmp5;
 const intl2 = tmp5(1126);
-const f116861 = (arg0, arg1) => {
+const f117014 = (arg0, arg1) => {
   guild = guild.getGuild(arg1);
   if (null != guild) {
     const obj = { type: closure_1_0(guildIdentity[9]).SelectOptionType.GUILD, value: null, label: null, guild };
@@ -37,7 +37,7 @@ const f116861 = (arg0, arg1) => {
   }
   return arg0;
 };
-const f116862 = (record) => {
+const f117015 = (record) => {
   record = record.record;
   const obj = { type: closure_1_0(guildIdentity[9]).SelectOptionType.GUILD, value: record.id, label: record.name, guild: record };
   return obj;
@@ -111,7 +111,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           reduce = flattenedGuildIds.reduce;
           array = new Array();
           tmp7 = array;
-          reduced = reduce(() => { /* body not rendered: F116861 */ }, array);
+          reduced = reduce(() => { /* body not rendered: F117014 */ }, array);
         } else {
           tmp = user;
           tmp2 = closure_2;
@@ -119,7 +119,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           obj1 = { query: null };
           obj1.query = user;
           queryGuildsResult = obj.queryGuilds(obj1);
-          reduced = queryGuildsResult.map(() => { /* body not rendered: F116862 */ });
+          reduced = queryGuildsResult.map(() => { /* body not rendered: F117015 */ });
         }
         return reduced;
       }
@@ -138,7 +138,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           reduce = flattenedGuildIds.reduce;
           array = new Array();
           tmp7 = array;
-          reduced = reduce(() => { /* body not rendered: F116861 */ }, array);
+          reduced = reduce(() => { /* body not rendered: F117014 */ }, array);
         } else {
           tmp = user;
           tmp2 = closure_2;
@@ -146,7 +146,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           obj1 = { query: null };
           obj1.query = user;
           queryGuildsResult = obj.queryGuilds(obj1);
-          reduced = queryGuildsResult.map(() => { /* body not rendered: F116862 */ });
+          reduced = queryGuildsResult.map(() => { /* body not rendered: F117015 */ });
         }
         return reduced;
       }
@@ -165,7 +165,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           reduce = flattenedGuildIds.reduce;
           array = new Array();
           tmp7 = array;
-          reduced = reduce(() => { /* body not rendered: F116861 */ }, array);
+          reduced = reduce(() => { /* body not rendered: F117014 */ }, array);
         } else {
           tmp = user;
           tmp2 = closure_2;
@@ -173,7 +173,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           obj1 = { query: null };
           obj1.query = user;
           queryGuildsResult = obj.queryGuilds(obj1);
-          reduced = queryGuildsResult.map(() => { /* body not rendered: F116862 */ });
+          reduced = queryGuildsResult.map(() => { /* body not rendered: F117015 */ });
         }
         return reduced;
       }
@@ -193,7 +193,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           reduce = flattenedGuildIds.reduce;
           array = new Array();
           tmp7 = array;
-          reduced = reduce(() => { /* body not rendered: F116861 */ }, array);
+          reduced = reduce(() => { /* body not rendered: F117014 */ }, array);
         } else {
           tmp = user;
           tmp2 = closure_2;
@@ -201,7 +201,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           obj1 = { query: null };
           obj1.query = user;
           queryGuildsResult = obj.queryGuilds(obj1);
-          reduced = queryGuildsResult.map(() => { /* body not rendered: F116862 */ });
+          reduced = queryGuildsResult.map(() => { /* body not rendered: F117015 */ });
         }
         return reduced;
       }
@@ -435,12 +435,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       const self2 = this;
       const reduce = flattenedGuildIds.reduce;
       const array = new Array();
-      reduced = reduce(f116861, array);
+      reduced = reduce(f117014, array);
     } else {
       let obj = require("AutocompleteUtils");
       const obj2 = { query };
       const queryGuildsResult = obj.queryGuilds(obj2);
-      reduced = queryGuildsResult.map(f116862);
+      reduced = queryGuildsResult.map(f117015);
     }
     return reduced;
   }, []);

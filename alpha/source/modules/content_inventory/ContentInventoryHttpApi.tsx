@@ -1,10 +1,10 @@
-// Module ID: 12916
-// Function ID: 12917
+// Module ID: 12918
+// Function ID: 12919
 // Name: ContentInventoryHttpApi
 // Dependencies: [5, 8027, 1085, 1282, 5312, 584, 1126, 2]
 // Exports: deleteContentInventoryEntryHistory, getContentInventoryOutbox, getMyContentInventory, postTrackToContentInventory
 
-// Module 12916 (ContentInventoryHttpApi)
+// Module 12918 (ContentInventoryHttpApi)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
@@ -32,7 +32,7 @@ let obj = function _getMyContentInventory() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -62,7 +62,7 @@ let obj = function _getMyContentInventory() {
             date = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -144,7 +144,7 @@ obj = function _getContentInventoryOutbox() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -231,7 +231,7 @@ obj = function _deleteContentInventoryEntryHistory() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -294,7 +294,7 @@ obj = function _deleteContentInventoryEntryHistory() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp27) {
           body = tmp27;
@@ -329,7 +329,7 @@ obj = function _postTrackToContentInventory() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -373,7 +373,7 @@ obj = function _postTrackToContentInventory() {
           } else {
             c5 = 0;
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp14) {
           closure_4 = tmp14;

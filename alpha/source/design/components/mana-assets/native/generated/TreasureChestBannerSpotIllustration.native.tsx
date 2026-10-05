@@ -1,13 +1,13 @@
-// Module ID: 13347
-// Function ID: 13348
+// Module ID: 13349
+// Function ID: 13350
 // Name: TreasureChestBannerSpotIllustration
-// Dependencies: [21, 558, 576, 13348, 5974, 2]
+// Dependencies: [21, 558, 576, 13350, 5974, 2]
 
-// Module 13347 (TreasureChestBannerSpotIllustration)
+// Module 13349 (TreasureChestBannerSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5974 */;
-import _modDef13348 from "module_13348" /* 13348 */;
+import _modDef13350 from "module_13350" /* 13350 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef13348 };
+    const obj2 = { uri: _modDef13350 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num3 === undefined) {
     num3 = 1;
   }
-  const obj2 = { uri: _modDef13348 };
+  const obj2 = { uri: _modDef13350 };
   FastImageDefault;
   size = { width: num * num3, height: num2 * num3 };
   const items = [size];

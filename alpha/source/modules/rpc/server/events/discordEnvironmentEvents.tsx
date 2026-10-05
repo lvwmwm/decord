@@ -1,10 +1,10 @@
-// Module ID: 14361
-// Function ID: 14362
+// Module ID: 14365
+// Function ID: 14366
 // Name: discordEnvironmentEvents
 // Dependencies: [109, 4879, 5316, 1085, 9136, 12, 2]
 // Exports: createDiscordEnvironmentEvents
 
-// Module 14361 (discordEnvironmentEvents)
+// Module 14365 (discordEnvironmentEvents)
 import _modDef12 from "module_12" /* 12 */;
 import Constants2 from "Constants" /* 1085 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;

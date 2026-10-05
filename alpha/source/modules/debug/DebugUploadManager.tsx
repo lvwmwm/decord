@@ -43,7 +43,7 @@ let obj = function _uploadDebugLogFiles() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;
@@ -111,7 +111,7 @@ let obj = function _uploadDebugLogFiles() {
         } else {
           c5 = 0;
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp36) {
         closure_4 = tmp36;
@@ -155,7 +155,7 @@ obj = function _uploadAppLogFiles() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp80;
@@ -314,7 +314,7 @@ obj = function _uploadAppLogFiles() {
               return obj13;
             }
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
           c5 = 3;
           appFirstVisibleTimestamp = closure_131_8;

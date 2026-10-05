@@ -1,9 +1,9 @@
-// Module ID: 14590
-// Function ID: 14591
+// Module ID: 14594
+// Function ID: 14595
 // Name: WebAuthnRegisterStep
-// Dependencies: [32, 19, 17, 1085, 21, 4890, 587, 6437, 558, 576, 1126, 1188, 1490, 1369, 14591, 14592, 4886, 5592, 5594, 6619, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 4890, 587, 6437, 558, 576, 1126, 1188, 1490, 1369, 14595, 14596, 4886, 5592, 5594, 6619, 2]
 
-// Module 14590 (WebAuthnRegisterStep)
+// Module 14594 (WebAuthnRegisterStep)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -186,10 +186,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp19 = cResult[3];
   }
   dependencyMap = tmp19;
-  const tmpResult = navigation(14591);
+  const tmpResult = navigation(14595);
   const announceError = tmpResult.useAnnounceError(tmp11);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp23 = closure_7(navigation(14592).KeyImage, {});
+    const tmp23 = closure_7(navigation(14596).KeyImage, {});
     cResult[4] = tmp23;
     tmp21 = tmp23;
   } else {
@@ -369,12 +369,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let closure_5 = obj2.useMemo(() => obj4[first], items1);
   const items2 = [onRegisterSuccess, tmp11, tmp8];
   let closure_6 = obj2.useMemo(() => ({ onRegisterSuccess, setError: dependencyMap, setRegistering: importDefault }), items2);
-  const tmpResult = navigation(14591);
+  const tmpResult = navigation(14595);
   const announceError = tmpResult.useAnnounceError(tmp10);
   const rect = { bottom: true, left: true, right: true, style: tmp4.flexContainer, children: items4 };
   obj4 = { style: tmp4.centerFlex, children: items3 };
   const SafeAreaPaddingView = tmp(6619).SafeAreaPaddingView;
-  items3 = [closure_7(navigation(14592).KeyImage, {}), , ];
+  items3 = [closure_7(navigation(14596).KeyImage, {}), , ];
   const obj5 = { style: tmp4.margin, variant: "text-md/normal", children: stringResult };
   const Text = tmp(4886).Text;
   const intl = tmp(1126).intl;

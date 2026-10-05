@@ -1,9 +1,9 @@
-// Module ID: 15505
-// Function ID: 15506
+// Module ID: 15509
+// Function ID: 15510
 // Name: ClipboardCopyInput
 // Dependencies: [5, 19, 17, 1986, 1085, 21, 4890, 558, 576, 504, 6452, 6534, 6688, 6098, 2]
 
-// Module 15505 (ClipboardCopyInput)
+// Module 15509 (ClipboardCopyInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
@@ -153,7 +153,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isValidClipboardCode
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -231,7 +231,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isValidClipboardCode
                 }
               }
               c3 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp26) {
             c3 = 3;
@@ -294,7 +294,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isValidClipboardCode
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -372,7 +372,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isValidClipboardCode
                 }
               }
               c3 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp26) {
             c3 = 3;

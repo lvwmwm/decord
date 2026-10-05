@@ -1,9 +1,9 @@
-// Module ID: 14388
-// Function ID: 14389
+// Module ID: 14392
+// Function ID: 14393
 // Name: LocalMessageCacheManager
-// Dependencies: [5, 32, 4520, 502, 2051, 5110, 1085, 14389, 3, 1102, 510, 4461, 4552, 7248, 6965, 584, 11379, 11300, 1987, 1989, 5431, 7517, 2]
+// Dependencies: [5, 32, 4520, 502, 2051, 5110, 1085, 14393, 3, 1102, 510, 4461, 4552, 7248, 6965, 584, 11379, 11300, 1987, 1989, 5431, 7517, 2]
 
-// Module 14388 (LocalMessageCacheManager)
+// Module 14392 (LocalMessageCacheManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -18,7 +18,7 @@ import MessageRecord from "MessageRecord" /* 4520 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import MessageStore from "MessageStore" /* 5110 */;
-import MutexUtils from "MutexUtils" /* 14389 */;
+import MutexUtils from "MutexUtils" /* 14393 */;
 import LifecycleManager from "LifecycleManager" /* 1989 */;
 import size from "module_2" /* 2 */;
 
@@ -134,7 +134,7 @@ obj = function _rehydrateFailedMessages() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -194,7 +194,7 @@ obj = function _rehydrateFailedMessages() {
                 closure_1 = keys;
               }
               c9 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else if (arg0 === 1) {
             c9 = 3;
@@ -351,7 +351,7 @@ class LocalMessageCacheManager extends LifecycleManager {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c7;
@@ -407,7 +407,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                         let obj2 = { value, done: true };
                         return obj2;
                       } else {
-                        return { value: "IconComponent", done: "IconComponent" };
+                        return { value: "IconComponent", done: null };
                       }
                     } else {
                       try {
@@ -429,7 +429,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                             }, 0);
                           }
                           c1 = 3;
-                          return { value: "IconComponent", done: "IconComponent" };
+                          return { value: "IconComponent", done: null };
                         }
                       } catch (tmp8) {
                         c1 = 3;
@@ -442,7 +442,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                   applyArgumentsResult = values[Symbol.iterator]();
                   if (applyArgumentsResult === undefined) {
                     c10 = 3;
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   } else {
                     c7 = 1;
                     _undefined = tmp29;
@@ -702,7 +702,7 @@ class LocalMessageCacheManager extends LifecycleManager {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -731,7 +731,7 @@ class LocalMessageCacheManager extends LifecycleManager {
               return obj;
             }
             c1 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp8) {
             c1 = 3;
             throw tmp8;
@@ -983,7 +983,7 @@ class LocalMessageCacheManager extends LifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         while (true) {
@@ -1038,7 +1038,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                   let obj4 = values(closure_2[15]);
                   let subscription1 = obj4.subscribe("CACHE_LOADED", closure_132_0.handleCacheLoaded);
                   c8 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 } else {
                   let c6 = 1;
                   values = tmp10;

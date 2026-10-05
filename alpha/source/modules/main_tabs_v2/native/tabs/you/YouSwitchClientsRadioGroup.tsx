@@ -1,13 +1,13 @@
-// Module ID: 16317
-// Function ID: 16318
+// Module ID: 16321
+// Function ID: 16322
 // Name: YouSwitchClientsRadioGroup
-// Dependencies: [32, 19, 21, 558, 576, 16318, 16319, 4854, 6071, 10547, 6072, 2]
+// Dependencies: [32, 19, 21, 558, 576, 16322, 16323, 4854, 6071, 10547, 6072, 2]
 
-// Module 16317 (YouSwitchClientsRadioGroup)
+// Module 16321 (YouSwitchClientsRadioGroup)
 import Fragment from "Fragment" /* 21 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import DiscordVariants from "DiscordVariants" /* 16318 */;
-import DiscordVariantTypes from "DiscordVariantTypes" /* 16319 */;
+import DiscordVariants from "DiscordVariants" /* 16322 */;
+import DiscordVariantTypes from "DiscordVariantTypes" /* 16323 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -24,7 +24,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj = value(576);
   const cResult = obj.c(9);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(16318);
+    const tmpResult = tmp(16322);
     const currentVariant = tmpResult.getCurrentVariant();
     cResult[0] = currentVariant;
     value = currentVariant;

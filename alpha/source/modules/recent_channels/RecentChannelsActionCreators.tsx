@@ -27,7 +27,7 @@ let obj = function _bulkClearRecents() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -70,7 +70,7 @@ let obj = function _bulkClearRecents() {
             const obj7 = closure_131_1(closure_131_2[5]);
             obj7.track(closure_131_4.CHANNEL_LIST_UPDATED, { action_type: "recents_dismissed" });
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp5) {
           c5 = 3;

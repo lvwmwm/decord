@@ -1,9 +1,9 @@
-// Module ID: 18064
-// Function ID: 18065
+// Module ID: 18086
+// Function ID: 18087
 // Name: QuestProgressManager
-// Dependencies: [5, 32, 2050, 8703, 2006, 4912, 2024, 4914, 7187, 17161, 5623, 8704, 1102, 7193, 7183, 9041, 5624, 9994, 5626, 7212, 5021, 5020, 6613, 5631, 7208, 4942, 1375, 5019, 7206, 584, 2]
+// Dependencies: [5, 32, 2050, 8703, 2006, 4912, 2024, 4914, 7187, 17185, 5623, 8704, 1102, 7193, 7183, 9041, 5624, 9994, 5626, 7212, 5021, 5020, 6613, 5631, 7208, 4942, 1375, 5019, 7206, 584, 2]
 
-// Module 18064 (QuestProgressManager)
+// Module 18086 (QuestProgressManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import GlobalUtils from "GlobalUtils" /* 1375 */;
@@ -28,7 +28,7 @@ import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
 import DetectableGameStore from "DetectableGameStore" /* 2024 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4914 */;
 import QuestStore from "QuestStore" /* 7187 */;
-import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 17161 */;
+import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 17185 */;
 import QuestConstants from "QuestConstants" /* 5623 */;
 import getQuestLogger from "getQuestLogger" /* 7193 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
@@ -400,7 +400,7 @@ class QuestProgressManager extends AutomaticLifecycleManager {
       await "IconComponent";
       closure_2 = tmp4;
       applicationId = closure_0.applicationId;
-      return "Reflect";
+      return "Set";
     });
     applyArgumentsResult.actions = obj2;
     return applyArgumentsResult;

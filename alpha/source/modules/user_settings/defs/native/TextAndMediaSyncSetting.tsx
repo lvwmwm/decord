@@ -1,9 +1,9 @@
-// Module ID: 15291
-// Function ID: 15292
+// Module ID: 15295
+// Function ID: 15296
 // Name: TextAndMediaSyncSetting
 // Dependencies: [1194, 7634, 558, 576, 504, 11129, 1126, 8863, 2]
 
-// Module 15291 (TextAndMediaSyncSetting)
+// Module 15295 (TextAndMediaSyncSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;

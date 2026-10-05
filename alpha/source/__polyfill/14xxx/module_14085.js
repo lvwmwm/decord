@@ -1,18 +1,9 @@
 // Module ID: 14085
 // Function ID: 14086
-// Dependencies: []
+// Dependencies: [14071]
 
 // Module 14085
-let all = typeof document === "object";
-if (typeof document === "object") {
-  const _document = document;
-  all = document.all;
-}
-if (undefined === all) {
-  let fn;
-  if (undefined !== all) {
-    fn = (fn) => typeof fn === "function" || fn === all;
-  }
-  module.exports = fn;
-}
-fn = (fn) => typeof fn === "function";
+import _mod14071 from "module_14071" /* 14071 */;
+
+
+export default (arg0) => Object(_mod14071(arg0));

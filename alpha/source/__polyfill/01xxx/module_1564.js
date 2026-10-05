@@ -37,7 +37,7 @@ function isNavigationState(state) {
 function getRouteConfigsFromChildren(arg0) {
   let layout;
   let options;
-  const f84125 = function(arr, type) {
+  const f84268 = function(arr, type) {
     let combined;
     if (react.isValidElement(type)) {
       if (type.type === Screen.Screen) {
@@ -120,7 +120,7 @@ function getRouteConfigsFromChildren(arg0) {
             const Children = obj.Children;
             const items5 = [];
             const toArrayResult = Children.toArray(children);
-            HermesBuiltin.arraySpread(items5, toArrayResult.reduce(f84125, []), 0);
+            HermesBuiltin.arraySpread(items5, toArrayResult.reduce(f84268, []), 0);
             HermesBuiltin.apply(push, items5, arr);
             return arr;
           } else {
@@ -177,7 +177,7 @@ function getRouteConfigsFromChildren(arg0) {
   let c2;
   let Children = react.Children;
   let toArrayResult = Children.toArray(arg0);
-  return toArrayResult.reduce(f84125, []);
+  return toArrayResult.reduce(f84268, []);
 }
 function getStateFromParams(params1, type) {
   let items;

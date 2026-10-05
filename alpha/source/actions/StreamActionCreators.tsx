@@ -113,7 +113,7 @@ let obj = function _fetchStreamPreview() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -186,7 +186,7 @@ let obj = function _fetchStreamPreview() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp40) {
           closure_5 = tmp40;
           if (0 === c6) {
@@ -215,7 +215,7 @@ obj = function _notifyStreamStart() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -254,7 +254,7 @@ obj = function _notifyStreamStart() {
             c4 = 0;
           }
           c1 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp5) {
         let closure_3 = tmp5;

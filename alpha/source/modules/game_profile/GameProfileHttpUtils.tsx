@@ -38,7 +38,7 @@ let obj = function _getShopCollection() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -92,7 +92,7 @@ let obj = function _getShopCollection() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp12) {
           closure_3 = tmp12;
@@ -123,7 +123,7 @@ obj = function _fetchSimilarGames() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -167,7 +167,7 @@ obj = function _fetchSimilarGames() {
             obj = closure_131_1(closure_131_2[6]);
             obj.dispatch(obj7);
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp13) {
           c5 = 3;
@@ -195,7 +195,7 @@ obj = function _getGameAnnouncements() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -265,7 +265,7 @@ obj = function _getGameAnnouncements() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp21) {
           closure_6 = tmp21;

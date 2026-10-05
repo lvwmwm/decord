@@ -1,18 +1,19 @@
-// Module ID: 14342
-// Function ID: 14343
+// Module ID: 14344
+// Function ID: 14345
 // Name: subscriptionHelpers
-// Dependencies: [2050, 8703, 7187, 5316, 1085, 2011, 8704, 8992, 5912, 14302, 7208, 2]
+// Dependencies: [2050, 14303, 8703, 7187, 5316, 1085, 2011, 8704, 8992, 5912, 14304, 7208, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 14342 (subscriptionHelpers)
+// Module 14344 (subscriptionHelpers)
 import Constants2 from "Constants" /* 1085 */;
 import Constants3 from "Constants" /* 5316 */;
 import useIsScreenLandscape from "useIsScreenLandscape" /* 5912 */;
 import QuestTaskUtils from "QuestTaskUtils" /* 7208 */;
 import FramesConstants from "FramesConstants" /* 8704 */;
 import useThermalState from "useThermalState" /* 8992 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14302 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14304 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 14303 */;
 import FramesStore from "FramesStore" /* 8703 */;
 import QuestStore from "QuestStore" /* 7187 */;
 import Constants from "Constants" /* 2011 */;

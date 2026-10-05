@@ -1,9 +1,9 @@
-// Module ID: 15779
-// Function ID: 15780
+// Module ID: 15783
+// Function ID: 15784
 // Name: useAuthorizedSlayerApplications
 // Dependencies: [19, 6602, 558, 576, 504, 11148, 6665, 2]
 
-// Module 15779 (useAuthorizedSlayerApplications)
+// Module 15783 (useAuthorizedSlayerApplications)
 import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6602 */;
 import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6665 */;
 import react from "react" /* 19 */;

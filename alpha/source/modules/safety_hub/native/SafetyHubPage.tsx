@@ -1,10 +1,10 @@
-// Module ID: 14547
-// Function ID: 14548
+// Module ID: 14551
+// Function ID: 14552
 // Name: SafetyHubPage
-// Dependencies: [19, 17, 8106, 8093, 1085, 21, 6082, 11495, 8274, 558, 576, 1188, 5594, 1126, 504, 3109, 4886, 14548, 1385, 14549, 4890, 587, 14550, 11522, 11494, 14544, 5590, 11493, 1252, 5409, 5414, 4854, 14551, 1987, 14552, 14554, 2]
+// Dependencies: [19, 17, 8106, 8093, 1085, 21, 6082, 11495, 8274, 558, 576, 1188, 5594, 1126, 504, 3109, 4886, 14552, 1385, 14553, 4890, 587, 14554, 11522, 11494, 14548, 5590, 11493, 1252, 5409, 5414, 4854, 14555, 1987, 14556, 14558, 2]
 // Exports: default
 
-// Module 14547 (SafetyHubPage)
+// Module 14551 (SafetyHubPage)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -23,8 +23,8 @@ import SafetyHubConstants from "SafetyHubConstants" /* 8093 */;
 import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8274 */;
 import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11493 */;
 import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 11495 */;
-import useAvailableAgeVerificationMethods from "useAvailableAgeVerificationMethods" /* 14548 */;
-import useShouldShowInitialGoogleWalletBanner from "useShouldShowInitialGoogleWalletBanner" /* 14549 */;
+import useAvailableAgeVerificationMethods from "useAvailableAgeVerificationMethods" /* 14552 */;
+import useShouldShowInitialGoogleWalletBanner from "useShouldShowInitialGoogleWalletBanner" /* 14553 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SafetyHubStore from "SafetyHubStore" /* 8106 */;
@@ -611,7 +611,7 @@ export default function SafetyHubPage(visible) {
     if (tmp) {
       if (null != safetyHubFetchError) {
         const obj2 = ActionSheetActionCreatorsDefault;
-        obj2.openLazy(asyncRequire(14551, dependencyMap.paths), "SafetyHubErrorActionSheet", {});
+        obj2.openLazy(asyncRequire(14555, dependencyMap.paths), "SafetyHubErrorActionSheet", {});
       }
     }
     const obj = ActionSheetActionCreatorsDefault;

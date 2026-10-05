@@ -89,7 +89,7 @@ closure_1 = _asyncToGenerator(async function() {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -126,7 +126,7 @@ closure_1 = _asyncToGenerator(async function() {
           }
           const listener = c5.addEventListener("url", closure_3.handleChange);
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp16) {
         c5 = 3;

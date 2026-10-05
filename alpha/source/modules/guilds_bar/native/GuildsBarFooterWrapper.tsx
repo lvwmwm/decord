@@ -1,15 +1,15 @@
-// Module ID: 16286
-// Function ID: 16287
+// Module ID: 16290
+// Function ID: 16291
 // Name: GuildsBarFooterWrapper
-// Dependencies: [16218, 21, 4890, 587, 558, 576, 4580, 15945, 5976, 2]
+// Dependencies: [16222, 21, 4890, 587, 558, 576, 4580, 15949, 5976, 2]
 
-// Module 16286 (GuildsBarFooterWrapper)
+// Module 16290 (GuildsBarFooterWrapper)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 4580 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15945 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 16218 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15949 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 16222 */;
 import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

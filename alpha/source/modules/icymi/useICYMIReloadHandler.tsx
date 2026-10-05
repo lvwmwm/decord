@@ -1,9 +1,9 @@
-// Module ID: 16427
-// Function ID: 16428
+// Module ID: 16431
+// Function ID: 16432
 // Name: useICYMIReloadHandler
-// Dependencies: [5, 19, 558, 576, 14163, 8029, 2]
+// Dependencies: [5, 19, 558, 576, 14165, 8029, 2]
 
-// Module 16427 (useICYMIReloadHandler)
+// Module 16431 (useICYMIReloadHandler)
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8029 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -35,7 +35,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const obj = ICYMIActionCreatorsDefault;
             const recommendedGuilds = obj.getRecommendedGuilds();
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp18) {
           c2 = 3;
@@ -137,7 +137,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -206,7 +206,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const obj = c1(c2[5]);
           const recommendedGuilds = obj.getRecommendedGuilds();
           c2 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp18) {
         c2 = 3;

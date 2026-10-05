@@ -52,7 +52,7 @@ export const useIsPersistentSecureFramesFingerprint = function useIsPersistentSe
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let tmp47;
@@ -126,7 +126,7 @@ export const useIsPersistentSecureFramesFingerprint = function useIsPersistentSe
           c5 = 0;
           closure_2(false);
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp47) {
         if (0 === c5) {

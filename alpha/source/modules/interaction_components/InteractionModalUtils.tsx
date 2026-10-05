@@ -1,9 +1,9 @@
-// Module ID: 17496
-// Function ID: 17497
+// Module ID: 17520
+// Function ID: 17521
 // Name: InteractionModalUtils
-// Dependencies: [5, 32, 19, 502, 2051, 7031, 2112, 4699, 7267, 14160, 7796, 1085, 558, 7795, 1985, 576, 1402, 8706, 6757, 504, 5984, 11, 584, 8812, 1126, 38, 5114, 7472, 7800, 7243, 1282, 1102, 2]
+// Dependencies: [5, 32, 19, 502, 2051, 7031, 2112, 4699, 7267, 14162, 7796, 1085, 558, 7795, 1985, 576, 1402, 8706, 6757, 504, 5984, 11, 584, 8812, 1126, 38, 5114, 7472, 7800, 7243, 1282, 1102, 2]
 
-// Module 17496 (InteractionModalUtils)
+// Module 17520 (InteractionModalUtils)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -15,7 +15,7 @@ import DraftStore from "DraftStore" /* 7031 */;
 import ComponentStateContext from "ComponentStateContext" /* 7795 */;
 import getURLForApplicationDefault from "getURLForApplication" /* 8706 */;
 import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8812 */;
-import InteractionModalStore2 from "InteractionModalStore" /* 14160 */;
+import InteractionModalStore2 from "InteractionModalStore" /* 14162 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -42,7 +42,7 @@ function validate(arr) {
   return c0;
 }
 function getData(arg0, arr, arg2) {
-  const f130735 = (type) => {
+  const f130973 = (type) => {
     let components;
     let items;
     let mapped;
@@ -54,7 +54,7 @@ function getData(arg0, arr, arg2) {
     let values2;
     type = type.type;
     if (Server.ComponentType.ACTION_ROW === type) {
-      const obj4 = { type: type.type, components: components.map(f130735) };
+      const obj4 = { type: type.type, components: components.map(f130973) };
       components = type.components;
       return obj4;
     } else if (Server.ComponentType.TEXT_INPUT === type) {
@@ -115,7 +115,7 @@ function getData(arg0, arr, arg2) {
               if (Server.ComponentType.TEXT_DISPLAY === type) {
                 return { type: type.type };
               } else if (Server.ComponentType.LABEL === type) {
-                const obj21 = { type: type.type, component: items.map(f130735)[0] };
+                const obj21 = { type: type.type, component: items.map(f130973)[0] };
                 items = [type.component];
                 return obj21;
               } else if (Server.ComponentType.RADIO_GROUP === type) {
@@ -177,7 +177,7 @@ function getData(arg0, arr, arg2) {
   };
   let closure_0 = arg0;
   let closure_1 = arg2;
-  return arr.map(f130735);
+  return arr.map(f130973);
 }
 function getUploadsForModal(id, arg1) {
   let closure_0 = arg1;
@@ -214,7 +214,7 @@ let obj = function _submitModal() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -306,7 +306,7 @@ let obj = function _submitModal() {
             }
             send();
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp10) {
           c6 = 3;
@@ -583,7 +583,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((customId, arg1) => {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -620,7 +620,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((customId, arg1) => {
           return obj;
         }
         c0 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp12) {
         c0 = 3;
         throw tmp12;
@@ -678,7 +678,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((customId, arg1) => {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -715,7 +715,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((customId, arg1) => {
           return obj;
         }
         c0 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp12) {
         c0 = 3;
         throw tmp12;

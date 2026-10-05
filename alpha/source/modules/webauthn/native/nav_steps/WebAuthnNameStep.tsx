@@ -1,10 +1,10 @@
-// Module ID: 14596
-// Function ID: 14597
+// Module ID: 14600
+// Function ID: 14601
 // Name: WebAuthnNameStep
 // Dependencies: [5, 32, 19, 17, 1085, 21, 4890, 6490, 1490, 6086, 4568, 1126, 10383, 4792, 8895, 1188, 5594, 2]
 // Exports: default
 
-// Module 14596 (WebAuthnNameStep)
+// Module 14600 (WebAuthnNameStep)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import useNavigation from "useNavigation" /* 1490 */;
@@ -61,7 +61,7 @@ export default function WebAuthnNameStep() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -114,7 +114,7 @@ export default function WebAuthnNameStep() {
             open(obj7);
             const replaced = closure_128_2.replace(constants.WEBAUTHN_SUCCESS);
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp28) {
           body = tmp28;

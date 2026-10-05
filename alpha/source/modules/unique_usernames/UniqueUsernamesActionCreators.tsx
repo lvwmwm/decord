@@ -1,9 +1,9 @@
-// Module ID: 14516
-// Function ID: 14517
+// Module ID: 14520
+// Function ID: 14521
 // Name: UniqueUsernamesActionCreators
 // Dependencies: [5, 1085, 1126, 584, 1282, 1252, 5083, 1260, 5312, 2]
 
-// Module 14516 (UniqueUsernamesActionCreators)
+// Module 14520 (UniqueUsernamesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1085 */;
@@ -36,7 +36,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -99,7 +99,7 @@ let obj = {
               }
             }
             constants = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp16) {
           closure_2 = tmp16;
@@ -160,7 +160,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -260,7 +260,7 @@ let obj = {
               constants = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp68) {
           closure_3 = tmp68;

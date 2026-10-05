@@ -1,9 +1,9 @@
-// Module ID: 14518
-// Function ID: 14519
+// Module ID: 14522
+// Function ID: 14523
 // Name: AccountDisplayNameSetting
-// Dependencies: [1377, 7634, 1085, 558, 576, 504, 11129, 1126, 14407, 2]
+// Dependencies: [1377, 7634, 1085, 558, 576, 504, 11129, 1126, 14411, 2]
 
-// Module 14518 (AccountDisplayNameSetting)
+// Module 14522 (AccountDisplayNameSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;

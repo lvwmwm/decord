@@ -1,9 +1,9 @@
-// Module ID: 17780
-// Function ID: 17781
+// Module ID: 17804
+// Function ID: 17805
 // Name: RolePermissionTemplatesActionSheet
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 1252, 4854, 4567, 5707, 1126, 6644, 17760, 6701, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 1252, 4854, 4567, 5707, 1126, 6644, 17784, 6701, 2]
 
-// Module 17780 (RolePermissionTemplatesActionSheet)
+// Module 17804 (RolePermissionTemplatesActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -190,8 +190,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((permissionsEdited) =
         obj.cancelText = intl3.string(permissionsEdited(closure_2[12]).t["ETE/oC"]);
         intl4 = permissionsEdited(closure_2[12]).intl;
         obj.confirmText = intl4.string(permissionsEdited(closure_2[12]).t.p89ACt);
-        obj.onConfirm = function onConfirm() { /* body not rendered: F148874 */ };
-        obj.onCancel = function onCancel() { /* body not rendered: F148875 */ };
+        obj.onConfirm = function onConfirm() { /* body not rendered: F149158 */ };
+        obj.onCancel = function onCancel() { /* body not rendered: F149159 */ };
         showResult = show(obj);
       } else {
         tmp2 = closure_2;

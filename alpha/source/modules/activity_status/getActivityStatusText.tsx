@@ -9,7 +9,7 @@ import Constants from "Constants" /* 1085 */;
 import intl9 from "intl" /* 1126 */;
 import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7229 */;
 import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8020 */;
-import conjuringActivity from "conjuringActivity" /* 10621 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 10621 */;
 import StatusDisplayTypes from "StatusDisplayTypes" /* 10623 */;
 import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10625 */;
 import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10626 */;
@@ -112,8 +112,8 @@ export default function getActivityStatusText(name) {
     tmp17 = tmp2;
   }
   if (!isEmbeddedActivityDefault(name)) {
-    const tmp15Result = conjuringActivity;
-    if (!tmp15Result.isConjuringActivity(name)) {
+    const tmp15Result = conjurePresenceActivity;
+    if (!tmp15Result.isConjurePresenceActivity(name)) {
       let obj17;
       let type1;
       if (name != null) {

@@ -1,10 +1,10 @@
-// Module ID: 17180
-// Function ID: 17181
+// Module ID: 17204
+// Function ID: 17205
 // Name: triggerIOSHaptic
 // Dependencies: [11902, 4855, 2]
 // Exports: default
 
-// Module 17180 (triggerIOSHaptic)
+// Module 17204 (triggerIOSHaptic)
 import HapticUtils from "HapticUtils" /* 4855 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11902 */;
 import size from "module_2" /* 2 */;

@@ -1,15 +1,15 @@
-// Module ID: 15805
-// Function ID: 15806
+// Module ID: 15809
+// Function ID: 15810
 // Name: ParentalControlsExplicitMediaFiltersNonFriendsDMsSetting
-// Dependencies: [7048, 7634, 558, 576, 14621, 7109, 14625, 1126, 14630, 1197, 11129, 2]
+// Dependencies: [7048, 7634, 558, 576, 14625, 7109, 14629, 1126, 14634, 1197, 11129, 2]
 // Exports: onObscuredContentNonFriendsDmOnPress
 
-// Module 15805 (ParentalControlsExplicitMediaFiltersNonFriendsDMsSetting)
+// Module 15809 (ParentalControlsExplicitMediaFiltersNonFriendsDMsSetting)
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14621 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 14625 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14625 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 14629 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7048 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;
@@ -61,7 +61,7 @@ function onObscuredContentNonFriendsDmOnPress() {
   let items;
   const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
   if (null != selectedTeenId) {
-    let obj = selectedTeenId(14625);
+    let obj = selectedTeenId(14629);
     const explicitContentNonFriendDm = obj.getExplicitContentSettingOrDefault(selectedTeenId).explicitContentNonFriendDm;
     const intl = selectedTeenId(1126).intl;
     const stringResult = intl.string(selectedTeenId(1126).t.GYpoAq);
@@ -76,8 +76,8 @@ function onObscuredContentNonFriendsDmOnPress() {
         },
       currentValue: explicitContentNonFriendDm
     };
-    const handleSensitiveMediaFilterPress = selectedTeenId(14630).handleSensitiveMediaFilterPress;
-    selectedTeenId(14630);
+    const handleSensitiveMediaFilterPress = selectedTeenId(14634).handleSensitiveMediaFilterPress;
+    selectedTeenId(14634);
     intl2 = selectedTeenId(1126).intl;
     items = [selectedTeenId(1197).ExplicitContentRedaction.SHOW];
     let result = handleSensitiveMediaFilterPress(obj2);

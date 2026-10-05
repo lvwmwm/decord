@@ -1,16 +1,16 @@
-// Module ID: 17571
-// Function ID: 17572
+// Module ID: 17595
+// Function ID: 17596
 // Name: NotificationReactivationActionSheet
-// Dependencies: [19, 17, 12053, 1085, 21, 4890, 587, 1252, 558, 576, 12054, 4854, 17572, 1126, 4886, 5594, 5592, 6645, 2]
+// Dependencies: [19, 17, 12053, 1085, 21, 4890, 587, 1252, 558, 576, 12054, 4854, 17596, 1126, 4886, 5594, 5592, 6645, 2]
 
-// Module 17571 (NotificationReactivationActionSheet)
+// Module 17595 (NotificationReactivationActionSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
 import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12053 */;
 import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12054 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17572 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17596 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -78,7 +78,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     const fn2 = function y() {
       const SKIP_STEP = EventActionType.SKIP_STEP;
       const obj = AnalyticsUtilsDefault;
-      const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "Array" };
+      const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "r" };
       obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
       const obj3 = ActionSheetActionCreatorsDefault;
       obj3.hideActionSheet();
@@ -233,7 +233,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
   const callback1 = react.useCallback(() => {
     const SKIP_STEP = EventActionType.SKIP_STEP;
     const obj = AnalyticsUtilsDefault;
-    const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "Array" };
+    const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "r" };
     obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
     const obj3 = ActionSheetActionCreatorsDefault;
     obj3.hideActionSheet();

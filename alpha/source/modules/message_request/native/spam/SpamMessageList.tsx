@@ -1,9 +1,9 @@
-// Module ID: 17047
-// Function ID: 17048
+// Module ID: 17071
+// Function ID: 17072
 // Name: SpamMessageList
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 1126, 558, 576, 12092, 4568, 4807, 4901, 5093, 12084, 1252, 17032, 1188, 4805, 5909, 14727, 8895, 1618, 17041, 17048, 17039, 5409, 5414, 5590, 17042, 4886, 1369, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 1126, 558, 576, 12092, 4568, 4807, 4901, 5093, 12084, 1252, 17056, 1188, 4805, 5909, 14731, 8895, 1618, 17065, 17072, 17063, 5409, 5414, 5590, 17066, 4886, 1369, 2]
 
-// Module 17047 (SpamMessageList)
+// Module 17071 (SpamMessageList)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -13,7 +13,7 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 5409 */;
 import MetricEvents from "MetricEvents" /* 5414 */;
 import useMountEffectDefault from "useMountEffect" /* 5590 */;
-import useSortedSpamMessageRequestsDefault from "useSortedSpamMessageRequests" /* 17048 */;
+import useSortedSpamMessageRequestsDefault from "useSortedSpamMessageRequests" /* 17072 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -34,7 +34,7 @@ let obj3;
 let obj4;
 let size;
 let tmp3;
-const MessageRequestEmptyDefault = tmp3(17042);
+const MessageRequestEmptyDefault = tmp3(17066);
 ({ ActivityIndicator: closure_4, View: hasOwnProperty, FlatList: metroRequire } = react_native);
 const AnalyticEvents = Constants.AnalyticEvents;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -808,10 +808,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
   const tmp2 = closure_11();
   importDefault = tmp2;
   const bottom = useSafeAreaInsetsDefault().bottom;
-  let obj = goToMessageRequestPreview(17041);
+  let obj = goToMessageRequestPreview(17065);
   dependencyMap = obj.useSpamMessageRequestCount();
   const arr = useSortedSpamMessageRequestsDefault();
-  let obj2 = goToMessageRequestPreview(17039);
+  let obj2 = goToMessageRequestPreview(17063);
   hasSingleMessageRequest = obj2.useListHasSingleSpamMessageRequest();
   useMountEffectDefault(() => {
     const obj = AnalyticsUtilsDefault;

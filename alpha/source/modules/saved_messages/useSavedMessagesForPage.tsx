@@ -1,12 +1,12 @@
-// Module ID: 13122
-// Function ID: 13123
+// Module ID: 13124
+// Function ID: 13125
 // Name: useSavedMessagesForPage
-// Dependencies: [32, 19, 11283, 7495, 558, 576, 13123, 1375, 504, 2]
+// Dependencies: [32, 19, 11283, 7495, 558, 576, 13125, 1375, 504, 2]
 
-// Module 13122 (useSavedMessagesForPage)
+// Module 13124 (useSavedMessagesForPage)
 import GlobalUtils from "GlobalUtils" /* 1375 */;
 import SavedMessagesTypes from "SavedMessagesTypes" /* 7495 */;
-import useRefreshSavedMessagesDefault from "useRefreshSavedMessages" /* 13123 */;
+import useRefreshSavedMessagesDefault from "useRefreshSavedMessages" /* 13125 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SavedMessagesStore from "SavedMessagesStore" /* 11283 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 
 let addChangeListenerResult, closure_0, dependencyMap, importDefault, map;
 
-const f113919 = (saveData) => saveData.saveData;
+const f114072 = (saveData) => saveData.saveData;
 function getSavedMessagesForType(arg0) {
   if (SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK === arg0) {
     return SavedMessagesStore.getMessageBookmarks();
@@ -55,7 +55,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       } else {
         messageBookmarks = SavedMessagesStore.getSavedMessages();
       }
-      return messageBookmarks.map(f113919);
+      return messageBookmarks.map(f114072);
     };
     cResult[0] = ALL;
     cResult[1] = fn;
@@ -94,10 +94,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 } else {
                   messageBookmarks = obj.getSavedMessages();
                 }
-                tmp2(messageBookmarks.map(f113919));
+                tmp2(messageBookmarks.map(f114072));
               }
             }
-            closure_2(() => { /* body not rendered: F152494 */ });
+            closure_2(() => { /* body not rendered: F152780 */ });
           }
         };
         addChangeListenerResult = closure_1_5.addChangeListener(handleChange);
@@ -134,10 +134,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 } else {
                   messageBookmarks = obj.getSavedMessages();
                 }
-                tmp2(messageBookmarks.map(f113919));
+                tmp2(messageBookmarks.map(f114072));
               }
             }
-            closure_2(() => { /* body not rendered: F152494 */ });
+            closure_2(() => { /* body not rendered: F152780 */ });
           }
         };
         addChangeListenerResult = closure_1_5.addChangeListener(handleChange);
@@ -149,7 +149,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp11 = cResult[5];
   }
   const effect = obj2.useEffect(tmp10, tmp11);
-  first(13123)();
+  first(13125)();
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class M {
       constructor() {
@@ -172,10 +172,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 } else {
                   messageBookmarks = obj.getSavedMessages();
                 }
-                tmp2(messageBookmarks.map(f113919));
+                tmp2(messageBookmarks.map(f114072));
               }
             }
-            closure_2(() => { /* body not rendered: F152494 */ });
+            closure_2(() => { /* body not rendered: F152780 */ });
           }
         };
         addChangeListenerResult = closure_1_5.addChangeListener(handleChange);
@@ -209,10 +209,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 } else {
                   messageBookmarks = obj.getSavedMessages();
                 }
-                tmp2(messageBookmarks.map(f113919));
+                tmp2(messageBookmarks.map(f114072));
               }
             }
-            closure_2(() => { /* body not rendered: F152494 */ });
+            closure_2(() => { /* body not rendered: F152780 */ });
           }
         };
         addChangeListenerResult = closure_1_5.addChangeListener(handleChange);
@@ -266,7 +266,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       messageBookmarks = SavedMessagesStore.getSavedMessages();
     }
-    return messageBookmarks.map(f113919);
+    return messageBookmarks.map(f114072);
   }), 2);
   [c1, c2] = tmp3;
   _slicedToArray = react.useRef(SavedMessagesStore.getIsStale());
@@ -291,7 +291,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             } else {
               messageBookmarks = obj.getSavedMessages();
             }
-            tmp2(messageBookmarks.map(f113919));
+            tmp2(messageBookmarks.map(f114072));
           }
         }
         c2((arg0) => {

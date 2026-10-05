@@ -33,7 +33,7 @@ let obj = function _openStickersPremiumUpsellAlert() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -85,7 +85,7 @@ let obj = function _openStickersPremiumUpsellAlert() {
             };
             obj.openLazy(obj8);
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp10) {
           c4 = 3;

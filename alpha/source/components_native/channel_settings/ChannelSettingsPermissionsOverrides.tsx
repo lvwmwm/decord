@@ -1,10 +1,10 @@
-// Module ID: 16984
-// Function ID: 16985
+// Module ID: 17008
+// Function ID: 17009
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [32, 5, 19, 17, 2070, 2051, 2106, 2074, 4509, 4519, 1377, 1085, 21, 4890, 587, 1490, 1618, 504, 6749, 11232, 4514, 1097, 9217, 4903, 1985, 4722, 5707, 1126, 4565, 2115, 2060, 16985, 7498, 4886, 5043, 10680, 5993, 1188, 6074, 16989, 1369, 16990, 2]
+// Dependencies: [32, 5, 19, 17, 2070, 2051, 2106, 2074, 4509, 4519, 1377, 1085, 21, 4890, 587, 1490, 1618, 504, 6749, 11232, 4514, 1097, 9217, 4903, 1985, 4722, 5707, 1126, 4565, 2115, 2060, 17009, 7498, 4886, 5043, 10680, 5993, 1188, 6074, 17013, 1369, 17014, 2]
 // Exports: default
 
-// Module 16984 (ChannelSettingsPermissionsOverrides)
+// Module 17008 (ChannelSettingsPermissionsOverrides)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
@@ -15,7 +15,7 @@ import PermissionUtils from "PermissionUtils" /* 4514 */;
 import TableRowGroup2 from "TableRowGroup" /* 6074 */;
 import useAppChannelApplication from "useAppChannelApplication" /* 6749 */;
 import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11232 */;
-import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 16985 */;
+import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 17009 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -123,7 +123,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -234,7 +234,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
               show(obj17);
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else if (arg0 === 1) {
           c5 = 3;
@@ -245,7 +245,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
           return obj;
         } else if (!value) {
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
         const obj6 = fromCreate(section[21]);
         obj10.deny = obj6.add(obj10.deny, closure_0);

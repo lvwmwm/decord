@@ -1,18 +1,18 @@
-// Module ID: 13121
-// Function ID: 13122
+// Module ID: 13123
+// Function ID: 13124
 // Name: ForLaterScreen
-// Dependencies: [32, 19, 17, 11283, 21, 4890, 587, 558, 576, 4612, 5597, 13122, 7495, 7485, 504, 6657, 6681, 1260, 8422, 1102, 13124, 13130, 8371, 13134, 2]
+// Dependencies: [32, 19, 17, 11283, 21, 4890, 587, 558, 576, 4612, 5597, 13124, 7495, 7485, 504, 6657, 6681, 1260, 8422, 1102, 13126, 13132, 8371, 13136, 2]
 
-// Module 13121 (ForLaterScreen)
+// Module 13123 (ForLaterScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
 import spring from "spring" /* 5597 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6657 */;
 import useTrackImpressionDefault from "useTrackImpression" /* 8422 */;
-import useSavedMessagesForPageDefault from "useSavedMessagesForPage" /* 13122 */;
-import ForLaterMessageCardDefault from "ForLaterMessageCard" /* 13124 */;
-import ForLaterIntroDefault from "ForLaterIntro" /* 13130 */;
+import useSavedMessagesForPageDefault from "useSavedMessagesForPage" /* 13124 */;
+import ForLaterMessageCardDefault from "ForLaterMessageCard" /* 13126 */;
+import ForLaterIntroDefault from "ForLaterIntro" /* 13132 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SavedMessagesStore from "SavedMessagesStore" /* 11283 */;
@@ -404,7 +404,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
     const tmp23 = closure_7;
     if (isForLaterLimitUpgradable && arr.length > 0) {
       const obj10 = { isReminder: tmp5, isAtLimit: isForLaterLimitUpgradable && forLaterLimit > 0 && arr.length >= forLaterLimit };
-      tmp23Result = tmp23(tmp2(13134), obj10);
+      tmp23Result = tmp23(tmp2(13136), obj10);
     }
     items2[1] = tmp23Result;
     tmp22Result = tmp22(AnalyticsLocationProvider2, obj7);

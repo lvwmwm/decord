@@ -1,16 +1,16 @@
-// Module ID: 17646
-// Function ID: 17647
+// Module ID: 17670
+// Function ID: 17671
 // Name: AssetChooser
-// Dependencies: [5, 19, 17, 1085, 21, 4890, 587, 4589, 7274, 5909, 1126, 17647, 17648, 1188, 2]
+// Dependencies: [5, 19, 17, 1085, 21, 4890, 587, 4589, 7274, 5909, 1126, 17671, 17672, 1188, 2]
 
-// Module 17646 (AssetChooser)
+// Module 17670 (AssetChooser)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
 import native from "native" /* 4589 */;
 import Pressables from "Pressables" /* 5909 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17647 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17648 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17671 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17672 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -57,7 +57,7 @@ class AssetChooser extends PureComponent {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -108,7 +108,7 @@ class AssetChooser extends PureComponent {
               }
             }
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp15) {
           c3 = 3;

@@ -1,9 +1,9 @@
-// Module ID: 16132
-// Function ID: 16133
+// Module ID: 16136
+// Function ID: 16137
 // Name: HubSidebar
-// Dependencies: [19, 17, 4507, 2103, 1085, 11697, 21, 4890, 587, 558, 576, 12016, 1188, 504, 16133, 16134, 1126, 4901, 15419, 10978, 11936, 4833, 9481, 2]
+// Dependencies: [19, 17, 4507, 2103, 1085, 11697, 21, 4890, 587, 558, 576, 12016, 1188, 504, 16137, 16138, 1126, 4901, 15423, 10978, 11936, 4833, 9481, 2]
 
-// Module 16132 (HubSidebar)
+// Module 16136 (HubSidebar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -346,7 +346,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     const tmp2 = null != stateFromStores && SelectedChannelStore.getChannelId() === tmp.id;
     return tmp2;
   });
-  guild(16133);
+  guild(16137);
   let tmp9Result = null;
   if (null != stateFromStores) {
     let row = null;
@@ -357,10 +357,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
     const obj4 = { style: row, children: items4 };
     const obj5 = { guild };
-    items4 = [closure_7(stateFromStores(16134), obj5), , , ];
+    items4 = [closure_7(stateFromStores(16138), obj5), , , ];
     const obj6 = {
       active: stateFromStores1,
-      IconComponent: tmp(15419).CompassIcon,
+      IconComponent: tmp(15423).CompassIcon,
       label: intl.string(tmp(1126).t.K50GHd),
       handleItemClick() {
           const obj = transitionToChannel;

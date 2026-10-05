@@ -1,17 +1,17 @@
-// Module ID: 15551
-// Function ID: 15552
+// Module ID: 15555
+// Function ID: 15556
 // Name: CheckpointNavigationControls
-// Dependencies: [17, 5115, 1085, 21, 4890, 587, 558, 576, 1618, 1126, 15552, 7948, 3043, 15535, 4565, 2115, 6014, 15554, 15553, 2]
+// Dependencies: [17, 5115, 1085, 21, 4890, 587, 558, 576, 1618, 1126, 15556, 7948, 3043, 15539, 4565, 2115, 6014, 15558, 15557, 2]
 
-// Module 15551 (CheckpointNavigationControls)
+// Module 15555 (CheckpointNavigationControls)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
 import _modDef3043 from "module_3043" /* 3043 */;
 import CheckpointConstants from "CheckpointConstants" /* 5115 */;
-import CheckpointTextDefault from "CheckpointText" /* 15535 */;
-import CheckpointButtonDefault from "CheckpointButton" /* 15552 */;
-import CheckpointPressableDefault from "CheckpointPressable" /* 15553 */;
+import CheckpointTextDefault from "CheckpointText" /* 15539 */;
+import CheckpointButtonDefault from "CheckpointButton" /* 15556 */;
+import CheckpointPressableDefault from "CheckpointPressable" /* 15557 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4890 */;
@@ -201,7 +201,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isHome) => {
                 const _Symbol2 = Symbol;
                 if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
                   const obj7 = { color: CHECKPOINT_PRIMARY };
-                  const tmp26 = closure_7(tmp(15554).ArrowLargeRightIcon, obj7);
+                  const tmp26 = closure_7(tmp(15558).ArrowLargeRightIcon, obj7);
                   cResult[34] = tmp26;
                   tmp23 = tmp26;
                 } else {

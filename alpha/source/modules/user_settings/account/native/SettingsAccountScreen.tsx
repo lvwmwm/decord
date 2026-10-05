@@ -1,9 +1,9 @@
-// Module ID: 14487
-// Function ID: 14488
+// Module ID: 14491
+// Function ID: 14492
 // Name: SettingsAccountScreen
-// Dependencies: [32, 19, 17, 14488, 7634, 1085, 21, 4890, 587, 558, 576, 1490, 5974, 14489, 4886, 1126, 5594, 5995, 504, 14490, 6439, 6086, 6074, 14491, 11129, 14492, 14495, 11493, 5590, 2]
+// Dependencies: [32, 19, 17, 14492, 7634, 1085, 21, 4890, 587, 558, 576, 1490, 5974, 14493, 4886, 1126, 5594, 5995, 504, 14494, 6439, 6086, 6074, 14495, 11129, 14496, 14499, 11493, 5590, 2]
 
-// Module 14487 (SettingsAccountScreen)
+// Module 14491 (SettingsAccountScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,12 +17,12 @@ import MFAUtils from "MFAUtils" /* 6439 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;
 import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11493 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14491 */;
-import SettingsAccountHeaderDefault from "SettingsAccountHeader" /* 14492 */;
-import SettingLayoutDefault from "SettingLayout" /* 14495 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14495 */;
+import SettingsAccountHeaderDefault from "SettingsAccountHeader" /* 14496 */;
+import SettingLayoutDefault from "SettingLayout" /* 14499 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 14488 */;
+import WebAuthnStore from "WebAuthnStore" /* 14492 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -125,7 +125,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[4] !== tmp4.upsellImagePasswordless) {
     const obj4 = { style: tmp8, children: closure_10(tmp13, obj5) };
-    obj5 = { source: navigation(14489), resizeMode: "contain", style: tmp4.upsellImagePasswordless };
+    obj5 = { source: navigation(14493), resizeMode: "contain", style: tmp4.upsellImagePasswordless };
     tmp13 = FastImageDefault;
     const tmp14 = closure_10(View, obj4);
     cResult[4] = tmp4.upsellImagePasswordless;
@@ -323,7 +323,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp7 = _slicedToArray(tmpResult.useStateFromStoresObject(tmp4, tmp5), 2);
   _require = tmp9;
   const first = tmp7[0];
-  const tmpResult2 = tmp(14490);
+  const tmpResult2 = tmp(14494);
   const isUserVerified = tmpResult2.useIsUserVerified();
   const tmp11 = tmp(6439).hasWebAuthn && isUserVerified && tmp7[1] && !first;
   if (cResult[2] !== tmp7[1]) {
@@ -387,7 +387,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }), 2);
   first = tmp3[0];
   let closure_1 = tmp5;
-  const obj2 = first(14490);
+  const obj2 = first(14494);
   const isUserVerified = obj2.useIsUserVerified();
   const items1 = [tmp3[1], first, isUserVerified];
   const memo = react.useMemo(() => {

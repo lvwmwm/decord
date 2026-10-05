@@ -1,13 +1,13 @@
-// Module ID: 14310
-// Function ID: 14311
+// Module ID: 14312
+// Function ID: 14313
 // Name: getCurrentEmbeddedChannel
-// Dependencies: [8703, 2051, 5316, 8514, 14306, 2]
+// Dependencies: [8703, 2051, 5316, 8514, 14308, 2]
 // Exports: default
 
-// Module 14310 (getCurrentEmbeddedChannel)
+// Module 14312 (getCurrentEmbeddedChannel)
 import Constants from "Constants" /* 5316 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8514 */;
-import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14306 */;
+import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14308 */;
 import FramesStore from "FramesStore" /* 8703 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import size from "module_2" /* 2 */;

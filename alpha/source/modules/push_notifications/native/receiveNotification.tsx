@@ -1,10 +1,10 @@
-// Module ID: 18073
-// Function ID: 18074
+// Module ID: 18095
+// Function ID: 18096
 // Name: receiveNotification
-// Dependencies: [5, 5948, 7037, 502, 2051, 1377, 6085, 1085, 4932, 2057, 12057, 3, 4568, 1126, 4811, 4737, 1121, 8069, 4901, 6845, 9279, 4736, 16354, 7125, 7850, 6681, 4903, 9433, 1252, 5070, 1369, 12695, 11, 16352, 6984, 10, 6985, 5436, 13438, 12059, 504, 12550, 7517, 4867, 1105, 11250, 8029, 8024, 584, 5093, 1112, 5092, 13661, 2]
+// Dependencies: [5, 5948, 7037, 502, 2051, 1377, 6085, 1085, 4932, 2057, 12057, 3, 4568, 1126, 4811, 4737, 1121, 8069, 4901, 6845, 9279, 4736, 16358, 7125, 7850, 6681, 4903, 9433, 1252, 5070, 1369, 12695, 11, 16356, 6984, 10, 6985, 5436, 13440, 12059, 504, 12550, 7517, 4867, 1105, 11250, 8029, 8024, 584, 5093, 1112, 5092, 13663, 2]
 // Exports: default
 
-// Module 18073 (receiveNotification)
+// Module 18095 (receiveNotification)
 import LoggerDefault from "Logger" /* 3 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -37,7 +37,7 @@ let closure_12;
 let closure_14;
 let map1;
 let unpackModuleId;
-const f132914 = (arg0) => {
+const f133152 = (arg0) => {
   addPostConnectionCallback(arg0);
 };
 function onStageConnectionError() {
@@ -49,7 +49,7 @@ function onStageConnectionError() {
   open(obj);
 }
 function waitForConnection() {
-  const promise = new Promise(f132914);
+  const promise = new Promise(f133152);
   return promise;
 }
 function waitForDataOrConnection() {
@@ -70,7 +70,7 @@ let obj = function _waitForDataOrConnection() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -125,7 +125,7 @@ let obj = function _waitForDataOrConnection() {
           c2 = true;
         }
         c4 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp10) {
         c4 = 3;
         throw tmp10;
@@ -149,7 +149,7 @@ obj = function _waitForNavigationReady() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -191,7 +191,7 @@ obj = function _waitForNavigationReady() {
           return obj;
         }
         c0 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp8) {
         c0 = 3;
         throw tmp8;
@@ -218,7 +218,7 @@ obj = function _connectToStage2() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;
@@ -276,7 +276,7 @@ obj = function _connectToStage2() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp24) {
         let closure_4 = tmp24;
@@ -304,7 +304,7 @@ obj = function _handleStageNotification() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -332,7 +332,7 @@ obj = function _handleStageNotification() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp6) {
         c1 = 3;
@@ -363,7 +363,7 @@ obj = function _handleGuildEventNotification() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -435,7 +435,7 @@ obj = function _handleGuildEventNotification() {
             event = closure_130_6.getGuildScheduledEvent(guild_scheduled_event_id);
             if (null == event) {
               c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             } else {
               const obj12 = { eventId: event.id, event };
               const obj4 = closure_130_0(closure_130_3[20]);
@@ -463,7 +463,7 @@ obj = function _handleGuildEventNotification() {
           obj.transitionToChannel(channel_id);
         }
         c4 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp32) {
         c4 = 3;
         throw tmp32;
@@ -487,7 +487,7 @@ obj = function _handleRelationshipAddNotification() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -547,7 +547,7 @@ obj = function _handleRelationshipAddNotification() {
                 obj4.openPrivateChannel(obj11);
               }
               c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           }
         } else if (arg0 === 1) {
@@ -591,7 +591,7 @@ obj = function _handleCallRingNotification() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -621,7 +621,7 @@ obj = function _handleCallRingNotification() {
             obj = closure_130_0(closure_130_3[18]);
             obj.transitionToChannel(channel_id.channel_id);
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp14) {
           c4 = 3;
@@ -645,7 +645,7 @@ obj = function _handleCallConnectNotification() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -713,7 +713,7 @@ obj = function _handleCallConnectNotification() {
             closure_130_1(closure_130_3[31])(closure_0.channel_id);
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp50) {
         c4 = 3;
@@ -740,7 +740,7 @@ obj = function _handleFriendSuggestionCreateNotification() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -794,7 +794,7 @@ obj = function _handleFriendSuggestionCreateNotification() {
             items[0] = closure_130_1(closure_130_3[25]).PUSH_NOTIFICATION;
             tmp9(obj);
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp23) {
           c4 = 3;
@@ -818,7 +818,7 @@ obj = function _maybeAckNotificationCenter() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -898,7 +898,7 @@ obj = function _maybeAckNotificationCenter() {
           const result1 = obj.markNotificationCenterRemoteItemAcked(prop);
         }
         c4 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp17) {
         c4 = 3;
         throw tmp17;
@@ -974,7 +974,7 @@ function receiveNotification_(data) {
   const maybeAckNotificationCenter2 = function maybeAckNotificationCenter() {
     return obj(...arguments);
   };
-  const f149222 = () => {
+  const f149506 = () => {
     obj = router_utils;
     obj.transitionTo(authStore2.CHANNEL(data.guild_id, data.channel_id), { navigationReplace: true, openChannel: true });
   };
@@ -1190,10 +1190,10 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f132914;
+          fn = f133152;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f149222;
+          fn2 = f149506;
           promise.then(fn2);
           break;
         }
@@ -1247,7 +1247,7 @@ function receiveNotification_(data) {
               tmp19Result7 = tmp19(4867);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(13661);
+              tmp19Result8 = tmp19(13663);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj16);
             }
@@ -1364,10 +1364,10 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f132914;
+          fn = f133152;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f149222;
+          fn2 = f149506;
           promise.then(fn2);
           break;
         }
@@ -1421,7 +1421,7 @@ function receiveNotification_(data) {
               tmp19Result7 = tmp19(4867);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(13661);
+              tmp19Result8 = tmp19(13663);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj16);
             }
@@ -1538,10 +1538,10 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f132914;
+          fn = f133152;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f149222;
+          fn2 = f149506;
           promise.then(fn2);
           break;
         }
@@ -1595,7 +1595,7 @@ function receiveNotification_(data) {
               tmp19Result7 = tmp19(4867);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(13661);
+              tmp19Result8 = tmp19(13663);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj16);
             }
@@ -1712,10 +1712,10 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f132914;
+          fn = f133152;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f149222;
+          fn2 = f149506;
           promise.then(fn2);
           break;
         }
@@ -1769,7 +1769,7 @@ function receiveNotification_(data) {
               tmp19Result7 = tmp19(4867);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(13661);
+              tmp19Result8 = tmp19(13663);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj16);
             }
@@ -1886,10 +1886,10 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f132914;
+          fn = f133152;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f149222;
+          fn2 = f149506;
           promise.then(fn2);
           break;
         }
@@ -1943,7 +1943,7 @@ function receiveNotification_(data) {
               tmp19Result7 = tmp19(4867);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(13661);
+              tmp19Result8 = tmp19(13663);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj16);
             }
@@ -2060,10 +2060,10 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f132914;
+          fn = f133152;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f149222;
+          fn2 = f149506;
           promise.then(fn2);
           break;
         }
@@ -2117,7 +2117,7 @@ function receiveNotification_(data) {
               tmp19Result7 = tmp19(4867);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(13661);
+              tmp19Result8 = tmp19(13663);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj16);
             }
@@ -2234,10 +2234,10 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f132914;
+          fn = f133152;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f149222;
+          fn2 = f149506;
           promise.then(fn2);
           break;
         }
@@ -2291,7 +2291,7 @@ function receiveNotification_(data) {
               tmp19Result7 = tmp19(4867);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(13661);
+              tmp19Result8 = tmp19(13663);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj16);
             }
@@ -2408,10 +2408,10 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f132914;
+          fn = f133152;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f149222;
+          fn2 = f149506;
           promise.then(fn2);
           break;
         }
@@ -2465,7 +2465,7 @@ function receiveNotification_(data) {
               tmp19Result7 = tmp19(4867);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(13661);
+              tmp19Result8 = tmp19(13663);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj16);
             }
@@ -2582,10 +2582,10 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f132914;
+          fn = f133152;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f149222;
+          fn2 = f149506;
           promise.then(fn2);
           break;
         }
@@ -2639,7 +2639,7 @@ function receiveNotification_(data) {
               tmp19Result7 = tmp19(4867);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(13661);
+              tmp19Result8 = tmp19(13663);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj16);
             }
@@ -2756,10 +2756,10 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f132914;
+          fn = f133152;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f149222;
+          fn2 = f149506;
           promise.then(fn2);
           break;
         }
@@ -2813,7 +2813,7 @@ function receiveNotification_(data) {
               tmp19Result7 = tmp19(4867);
               tmp19Result3Result = tmp19Result7(data.deeplink);
               payload2 = tmp19Result3Result.payload;
-              tmp19Result8 = tmp19(13661);
+              tmp19Result8 = tmp19(13663);
               obj16 = { payload: payload2, waitForConnection: false, skipMessageFetch: flag };
               tmp19Result8(obj16);
             }
@@ -2858,7 +2858,7 @@ export default function receiveNotification(getData, arg1) {
         if (data.receiving_user_id !== obj.getId()) {
           data(6985);
           data(5436);
-          data(13438);
+          data(13440);
           const tmp7Result6 = data(12059);
           const switchAccountResult = tmp7Result6.switchAccount(data.receiving_user_id, false, arg1 ? constants.PUSH_NOTIFICATION_INITIAL : constants.PUSH_NOTIFICATION);
           switchAccountResult.then(() => {

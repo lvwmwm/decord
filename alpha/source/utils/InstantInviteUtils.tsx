@@ -367,7 +367,7 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
       if (obj10.inviteTargetType === tmp40.EMBEDDED_APPLICATION) {
         let tmp3 = dependencyMap;
         let obj2 = AutocompleteUtilsDefault;
-        const obj12 = { query: tmp44, limit: 3, guildId: "__initData" };
+        const obj12 = { query: tmp44, limit: 3, guildId: "filter" };
         const queryChannelsResult = obj2.queryChannels(obj12);
         let item = queryChannelsResult.forEach((record) => {
           obj = { type: obj.CHANNEL, item: record.record, isSuggested: false, score: record.score };

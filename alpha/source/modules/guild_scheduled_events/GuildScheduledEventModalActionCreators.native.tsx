@@ -49,7 +49,7 @@ let obj = function _transitionToEventDetailsFromInvite() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -84,7 +84,7 @@ let obj = function _transitionToEventDetailsFromInvite() {
             }
             tmp7(obj);
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp16) {
           c5 = 3;

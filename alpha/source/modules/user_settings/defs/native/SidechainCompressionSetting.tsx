@@ -1,9 +1,9 @@
-// Module ID: 15072
-// Function ID: 15073
+// Module ID: 15076
+// Function ID: 15077
 // Name: SidechainCompressionSetting
 // Dependencies: [1999, 7634, 4915, 558, 576, 504, 11129, 1126, 9306, 2]
 
-// Module 15072 (SidechainCompressionSetting)
+// Module 15076 (SidechainCompressionSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import Constants from "Constants" /* 4915 */;

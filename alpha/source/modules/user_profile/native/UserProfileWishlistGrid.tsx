@@ -1,10 +1,10 @@
-// Module ID: 12936
-// Function ID: 12937
+// Module ID: 12938
+// Function ID: 12939
 // Name: UserProfileWishlistGrid
-// Dependencies: [5, 19, 17, 7053, 10771, 8431, 8434, 8432, 1377, 5695, 7111, 7854, 1085, 1087, 1379, 21, 3, 4890, 587, 558, 576, 12937, 4589, 4729, 7861, 4854, 7052, 6681, 1126, 4886, 5594, 10978, 12805, 6657, 10474, 8871, 504, 12938, 7845, 12922, 12939, 4737, 4568, 11219, 4528, 6742, 5708, 10392, 1370, 10532, 6732, 10531, 7850, 4541, 10743, 6820, 4543, 7847, 12940, 1987, 4812, 7575, 10058, 10769, 2]
+// Dependencies: [5, 19, 17, 7053, 10771, 8431, 8434, 8432, 1377, 5695, 7111, 7854, 1085, 1087, 1379, 21, 3, 4890, 587, 558, 576, 12939, 4589, 4729, 7861, 4854, 7052, 6681, 1126, 4886, 5594, 10978, 12805, 6657, 10474, 8871, 504, 12940, 7845, 12924, 12941, 4737, 4568, 11219, 4528, 6742, 5708, 10392, 1370, 10532, 6732, 10531, 7850, 4541, 10743, 6820, 4543, 7847, 12942, 1987, 4812, 7575, 10058, 10769, 2]
 // Exports: default
 
-// Module 12936 (UserProfileWishlistGrid)
+// Module 12938 (UserProfileWishlistGrid)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
@@ -88,7 +88,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let trackUserProfileWishlistAction;
   let obj = trackUserProfileWishlistAction(576);
   const cResult = obj.c(17);
-  let obj2 = trackUserProfileWishlistAction(12937);
+  let obj2 = trackUserProfileWishlistAction(12939);
   const isMobileWishlistSuggestionsEnabled = obj2.useIsMobileWishlistSuggestionsEnabled("WishlistEmptyState");
   const tmp5 = closure_26(isMobileWishlistSuggestionsEnabled);
   let obj3 = trackUserProfileWishlistAction(4589);
@@ -207,7 +207,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let items1;
   let obj8;
   let trackUserProfileWishlistAction;
-  let obj = trackUserProfileWishlistAction(12937);
+  let obj = trackUserProfileWishlistAction(12939);
   const isMobileWishlistSuggestionsEnabled = obj.useIsMobileWishlistSuggestionsEnabled("WishlistEmptyState");
   let tmp4 = closure_26(isMobileWishlistSuggestionsEnabled);
   let obj2 = trackUserProfileWishlistAction(4589);
@@ -466,7 +466,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -734,7 +734,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
             openGiftModal(obj39);
           }
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp140) {
           closure_4 = tmp140;
           if (0 === v0) {
@@ -774,7 +774,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
     tmp(obj);
     const obj2 = ActionSheetActionCreatorsDefault;
     const obj3 = { wishlistId: tmp2, analyticsContext: context, analyticsLocations };
-    obj2.openLazy(asyncRequire(12940, dependencyMap.paths), "EditWishlistActionSheet", obj3, "stack");
+    obj2.openLazy(asyncRequire(12942, dependencyMap.paths), "EditWishlistActionSheet", obj3, "stack");
   }, items14);
   const callback1 = obj12.useCallback(() => {
     let items;

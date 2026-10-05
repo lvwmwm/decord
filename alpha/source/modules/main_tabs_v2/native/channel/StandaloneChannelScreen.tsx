@@ -1,9 +1,9 @@
-// Module ID: 16474
-// Function ID: 16475
+// Module ID: 16478
+// Function ID: 16479
 // Name: StandaloneChannelScreen
-// Dependencies: [109, 19, 17, 2051, 7499, 1085, 2058, 21, 4890, 587, 558, 576, 1491, 1618, 7507, 2077, 504, 1126, 8791, 4736, 7579, 7500, 13102, 7510, 6651, 16475, 11127, 5797, 6723, 4791, 4739, 13114, 7515, 1188, 5911, 16485, 16502, 16520, 16538, 16753, 16762, 9760, 16766, 16767, 16768, 2]
+// Dependencies: [109, 19, 17, 2051, 7499, 1085, 2058, 21, 4890, 587, 558, 576, 1491, 1618, 7507, 2077, 504, 1126, 8791, 4736, 7579, 7500, 13104, 7510, 6651, 16479, 11127, 5797, 6723, 4791, 4739, 13116, 7515, 1188, 5911, 16489, 16506, 16524, 16542, 16772, 16781, 9760, 16785, 16786, 16787, 2]
 
-// Module 16474 (StandaloneChannelScreen)
+// Module 16478 (StandaloneChannelScreen)
 import nativeDefault from "native" /* 587 */;
 import ChannelConstants from "ChannelConstants" /* 2058 */;
 import FavoritesUtils from "FavoritesUtils" /* 2077 */;
@@ -812,7 +812,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
     return items;
   }, items1);
   let tmp15 = !isChatLockedOpen;
-  const tmp2Result = channelId(13114);
+  const tmp2Result = channelId(13116);
   const isForumChannelSearchActive = tmp2Result.useIsForumChannelSearchActive(channelId);
   if (isChatLockedOpen) {
     tmp15 = isNavigationScreen;
@@ -845,16 +845,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
             const tmp36 = closure_15;
             if (canSeeOnboardingHome) {
               const obj6 = { guildId };
-              tmp38Result = tmp38(tmp5(16502), obj6);
+              tmp38Result = tmp38(tmp5(16506), obj6);
             }
             items4[1] = closure_14(closure_6, obj5);
             return tmp36(closure_6, obj3);
           } else if (channelId === StaticChannelRoute.MEMBER_SAFETY) {
             const obj7 = { guildId };
-            return closure_14(frame(16520), obj7);
-          } else if (channelId === StaticChannelRoute.VIBEGRATIONS) {
+            return closure_14(frame(16524), obj7);
+          } else if (channelId === StaticChannelRoute.CONJURE) {
             const obj8 = { guildId };
-            return closure_14(frame(16538), obj8);
+            return closure_14(frame(16542), obj8);
           } else {
             let type;
             if (stateFromStores != null) {
@@ -865,7 +865,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
                 const obj10 = { channelId, frame, guildId, isNavigationScreen, screenIndex, showCreateThread, isBackEnabled: tmp15, measureNavigationTTI: false };
                 const obj9 = { style: memo, children: items5 };
                 items5 = [closure_14(closure_18, obj10), ];
-                const obj11 = { style: memo1, children: closure_14(frame(16753), obj12) };
+                const obj11 = { style: memo1, children: closure_14(frame(16772), obj12) };
                 obj12 = { channel: stateFromStores };
                 items5[1] = closure_14(closure_6, obj11);
                 return closure_15(closure_6, obj9);
@@ -876,7 +876,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
               const obj14 = { channelId, frame, guildId, isNavigationScreen, screenIndex, showCreateThread, isBackEnabled: tmp15, measureNavigationTTI: false };
               items6 = [closure_14(closure_18, obj14), ];
               const obj15 = { channelId, screenIndex };
-              items6[1] = closure_14(channelId(16762).CreateThreadView, obj15);
+              items6[1] = closure_14(channelId(16781).CreateThreadView, obj15);
               return closure_15(closure_6, obj13);
             } else {
               let tmp27Result;
@@ -884,18 +884,18 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
               const obj17 = { channelId, frame, guildId, isNavigationScreen, screenIndex, showCreateThread, isBackEnabled: tmp15, measureNavigationTTI: true };
               items7 = [closure_14(closure_18, obj17), ];
               const obj18 = { name: "chat_container", tracking: "include", style: memo1, children: closure_14(frame(9760), obj19) };
-              const NavTTIView = tmp2(16475).NavTTIView;
+              const NavTTIView = tmp2(16479).NavTTIView;
               obj19 = { guildId, channelId, chatInputRef: ref, screenIndex };
               items7[1] = closure_14(NavTTIView, obj18);
               const tmp25Result = closure_15(closure_16, obj16);
               if (isSwipeToMemberListEnabled) {
                 const obj20 = { style: memo, channelId, isNavigationTTIVisible, screenIndex, isBackEnabled: tmp15, children: tmp25Result };
-                tmp27Result = tmp27(tmp5(16766), obj20);
+                tmp27Result = tmp27(tmp5(16785), obj20);
               } else {
                 const obj21 = {
                   name: "channel_screen",
                   navigationKey: channelId,
-                  definition: channelId(16768).CHANNEL_NAVIGATION_TTI,
+                  definition: channelId(16787).CHANNEL_NAVIGATION_TTI,
                   visibilityMode: "prerendered",
                   isVisible: isNavigationTTIVisible,
                   descendantTracking: "included",
@@ -909,7 +909,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
                   style: memo,
                   children: tmp25Result
                 };
-                const NavTTISurfaceProvider = tmp2(16767).NavTTISurfaceProvider;
+                const NavTTISurfaceProvider = tmp2(16786).NavTTISurfaceProvider;
                 tmp27Result = tmp27(NavTTISurfaceProvider, obj21);
               }
               return tmp27Result;
@@ -925,7 +925,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
       const obj25 = { guildId, gatedChannelId: tmp46 };
       tmp46 = undefined;
       const tmp43 = closure_14;
-      const tmp5Result = frame(16485);
+      const tmp5Result = frame(16489);
       if (needSubscriptionToAccess) {
         tmp46 = channelId;
       }

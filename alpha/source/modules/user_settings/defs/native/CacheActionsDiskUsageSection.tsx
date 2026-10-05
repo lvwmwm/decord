@@ -1,10 +1,10 @@
-// Module ID: 15393
-// Function ID: 15394
+// Module ID: 15397
+// Function ID: 15398
 // Name: CacheActionsDiskUsageSection
-// Dependencies: [5, 32, 19, 21, 4890, 15394, 4590, 1126, 558, 576, 4886, 5317, 5593, 587, 5995, 15395, 2]
+// Dependencies: [5, 32, 19, 21, 4890, 15398, 4590, 1126, 558, 576, 4886, 5317, 5593, 587, 5995, 15399, 2]
 // Exports: useDiskUsageMeasurement
 
-// Module 15393 (CacheActionsDiskUsageSection)
+// Module 15397 (CacheActionsDiskUsageSection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl17 from "intl" /* 1126 */;
@@ -12,8 +12,8 @@ import Text_Text from "Text/Text" /* 4886 */;
 import FileSizeUtils from "FileSizeUtils" /* 5317 */;
 import Stack_Stack from "Stack/Stack" /* 5593 */;
 import Card_Card from "Card/Card" /* 5995 */;
-import DiskUsageManagerDefault from "DiskUsageManager" /* 15394 */;
-import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 15395 */;
+import DiskUsageManagerDefault from "DiskUsageManager" /* 15398 */;
+import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 15399 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -566,7 +566,7 @@ export const useDiskUsageMeasurement = function useDiskUsageMeasurement() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -658,7 +658,7 @@ export const useDiskUsageMeasurement = function useDiskUsageMeasurement() {
             closure_129_1.current = false;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp36) {
           closure_2 = tmp36;
           if (0 === c3) {

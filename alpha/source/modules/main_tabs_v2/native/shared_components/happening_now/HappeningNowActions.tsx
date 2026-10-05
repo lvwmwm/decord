@@ -1,9 +1,9 @@
-// Module ID: 16011
-// Function ID: 16012
+// Module ID: 16015
+// Function ID: 16016
 // Name: HappeningNowActions
-// Dependencies: [19, 17, 4507, 2074, 2103, 15110, 1085, 21, 4890, 587, 1252, 558, 576, 9214, 1126, 16012, 9247, 16013, 9481, 16014, 11936, 12442, 4886, 15111, 2]
+// Dependencies: [19, 17, 4507, 2074, 2103, 15114, 1085, 21, 4890, 587, 1252, 558, 576, 9214, 1126, 16016, 9247, 16017, 9481, 16018, 11936, 12442, 4886, 15115, 2]
 
-// Module 16011 (HappeningNowActions)
+// Module 16015 (HappeningNowActions)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -12,16 +12,16 @@ import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9481 */;
 import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 11936 */;
 import AssetRegistryDefault from "AssetRegistry" /* 12442 */;
-import HappeningNowCardDefault from "HappeningNowCard" /* 15111 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16012 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 16013 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 16014 */;
+import HappeningNowCardDefault from "HappeningNowCard" /* 15115 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16016 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 16017 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 16018 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildChannelStore from "GuildChannelStore" /* 4507 */;
 import GuildStore from "GuildStore" /* 2074 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15110 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15114 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4890 */;

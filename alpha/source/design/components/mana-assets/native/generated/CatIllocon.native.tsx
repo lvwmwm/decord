@@ -1,13 +1,13 @@
-// Module ID: 16673
-// Function ID: 16674
+// Module ID: 16684
+// Function ID: 16685
 // Name: CatIllocon
-// Dependencies: [21, 558, 576, 16674, 5974, 2]
+// Dependencies: [21, 558, 576, 16685, 5974, 2]
 
-// Module 16673 (CatIllocon)
+// Module 16684 (CatIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5974 */;
-import _modDef16674 from "module_16674" /* 16674 */;
+import _modDef16685 from "module_16685" /* 16685 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef16674 };
+    const obj2 = { uri: _modDef16685 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num === undefined) {
     num = 64;
   }
-  const obj2 = { uri: _modDef16674 };
+  const obj2 = { uri: _modDef16685 };
   FastImageDefault;
   const items = [{ width: num, height: num }];
   return <tmp fadeDuration={0} source={obj2} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;

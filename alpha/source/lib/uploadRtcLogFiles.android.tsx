@@ -28,7 +28,7 @@ let obj = function _uploadRtcLogFiles() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       while (true) {
@@ -124,7 +124,7 @@ let obj = function _uploadRtcLogFiles() {
         }
         if (closure_1 === undefined) {
           c8 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } else {
           c1 = tmp51;
           body = "";

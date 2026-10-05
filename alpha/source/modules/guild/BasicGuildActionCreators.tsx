@@ -1,10 +1,10 @@
-// Module ID: 17998
-// Function ID: 17999
+// Module ID: 18020
+// Function ID: 18021
 // Name: BasicGuildActionCreators
 // Dependencies: [5, 2074, 7614, 1085, 584, 1282, 2]
 // Exports: fetchBasicGuild
 
-// Module 17998 (BasicGuildActionCreators)
+// Module 18020 (BasicGuildActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
@@ -32,7 +32,7 @@ let obj = function _fetchBasicGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -97,7 +97,7 @@ let obj = function _fetchBasicGuild() {
             closure_130_7.delete(guildId);
           }
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp44) {
           closure_3 = tmp44;
           if (0 === c4) {

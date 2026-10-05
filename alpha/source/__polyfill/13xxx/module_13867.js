@@ -1,9 +1,18 @@
 // Module ID: 13867
 // Function ID: 13868
-// Dependencies: [13866]
+// Dependencies: [13860]
 
 // Module 13867
-import _mod13866 from "module_13866" /* 13866 */;
+import _mod13860 from "module_13860" /* 13860 */;
 
 
-export default (arg0, arg1, arg2) => _mod13866(arg0, arg1, ">", arg2);
+export default function(arg0, arg1) {
+  try {
+    const self = this;
+    const self2 = this;
+    const str = new _mod13860(arg0, arg1).range || "*";
+    return str;
+  } catch (err) {
+    return null;
+  }
+};

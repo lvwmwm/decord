@@ -1,10 +1,10 @@
-// Module ID: 16978
-// Function ID: 16979
+// Module ID: 17002
+// Function ID: 17003
 // Name: ViewModerators
-// Dependencies: [5, 19, 2112, 2106, 2074, 1085, 8077, 21, 1252, 4854, 16979, 1987, 558, 576, 1490, 504, 5572, 9215, 2060, 1985, 5708, 1126, 4903, 9216, 4567, 1188, 9231, 5593, 6074, 5993, 10983, 2]
+// Dependencies: [5, 19, 2112, 2106, 2074, 1085, 8077, 21, 1252, 4854, 17003, 1987, 558, 576, 1490, 504, 5572, 9215, 2060, 1985, 5708, 1126, 4903, 9216, 4567, 1188, 9231, 5593, 6074, 5993, 10983, 2]
 // Exports: openAddModeratorsActionSheet
 
-// Module 16978 (ViewModerators)
+// Module 17002 (ViewModerators)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
@@ -181,7 +181,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -234,7 +234,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             const obj3 = v1(handleRemovePermission[9]);
             obj3.hideActionSheet();
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp19) {
           c2 = 3;
@@ -302,7 +302,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
                     const _HermesInternal = HermesInternal;
                     ActionSheetActionCreatorsDefault;
                     const obj2 = { channel, canSkip: false };
-                    const tmp8 = asyncRequire(16979, dependencyMap.paths);
+                    const tmp8 = asyncRequire(17003, dependencyMap.paths);
                     openLazy(tmp8, "channel-add-moderators-" + channel.id, obj2);
                   }
                 },
@@ -351,7 +351,7 @@ function openAddModeratorsActionSheet(channel) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj2 = { channel, canSkip: flag };
-  const tmp3 = asyncRequire(16979, dependencyMap.paths);
+  const tmp3 = asyncRequire(17003, dependencyMap.paths);
   openLazy(tmp3, "channel-add-moderators-" + channel.id, obj2);
 }
 let result = size.fileFinishedImporting("modules/stage_channels/native/channel_permissions/ViewModerators.tsx");

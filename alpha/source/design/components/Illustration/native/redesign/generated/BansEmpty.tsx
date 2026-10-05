@@ -1,10 +1,10 @@
-// Module ID: 17801
-// Function ID: 17802
+// Module ID: 17825
+// Function ID: 17826
 // Name: BansEmpty
-// Dependencies: [19, 17, 21, 7905, 17802, 17803, 17804, 558, 576, 4729, 2]
+// Dependencies: [19, 17, 21, 7905, 17826, 17827, 17828, 558, 576, 4729, 2]
 // Exports: getBansEmptySource
 
-// Module 17801 (BansEmpty)
+// Module 17825 (BansEmpty)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

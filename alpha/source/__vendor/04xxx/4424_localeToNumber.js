@@ -13,7 +13,7 @@ let obj4;
 let obj5;
 let obj6;
 let obj7;
-const f88044 = (arg0) => locale.locale[arg0];
+const f88187 = (arg0) => locale.locale[arg0];
 if (!buildLocalizeFn) {
   obj = { default: buildLocalizeFn };
   const obj2 = { default: buildLocalizeFn };
@@ -26,7 +26,7 @@ const date = {
     let locale;
     const str = Number(arg0);
     const str2 = str.toString();
-    return str2.replace(/\d/g, f88044);
+    return str2.replace(/\d/g, f88187);
   },
   era: obj.default(obj3),
   quarter: obj.default(obj4),
@@ -53,6 +53,6 @@ export const localeToNumber = function localeToNumber(arg0) {
 };
 export const numberToLocale = function numberToLocale(arg0) {
   const str = arg0.toString();
-  return str.replace(/\d/g, f88044);
+  return str.replace(/\d/g, f88187);
 };
 export default date;

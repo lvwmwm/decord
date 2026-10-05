@@ -15,7 +15,7 @@ let tmp;
 const useToken = tmp(4580);
 const Image = react_native.Image;
 const jsx = Fragment.jsx;
-let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "Symbol", height: "current" }, refresh_sm: { width: 18, height: 18 } };
+let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "Array", height: "Set" }, refresh_sm: { width: 18, height: 18 } };
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let accessibilityLabel;
   let accessible;

@@ -1,16 +1,16 @@
-// Module ID: 15752
-// Function ID: 15753
+// Module ID: 15756
+// Function ID: 15757
 // Name: CollectiblesShopViewAllCategoryItemsHeader
-// Dependencies: [19, 17, 21, 4890, 558, 576, 1490, 13263, 1126, 7498, 7501, 2]
+// Dependencies: [19, 17, 21, 4890, 558, 576, 1490, 13265, 1126, 7498, 7501, 2]
 // Exports: default
 
-// Module 15752 (CollectiblesShopViewAllCategoryItemsHeader)
+// Module 15756 (CollectiblesShopViewAllCategoryItemsHeader)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
 import useNavigation from "useNavigation" /* 1490 */;
 import HeaderShared from "HeaderShared" /* 7498 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7501 */;
-import useYouBarSettingsSafeArea from "useYouBarSettingsSafeArea" /* 13263 */;
+import useYouBarSettingsSafeArea from "useYouBarSettingsSafeArea" /* 13265 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

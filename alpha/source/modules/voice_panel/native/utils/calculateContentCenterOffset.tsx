@@ -1,10 +1,10 @@
-// Module ID: 17251
-// Function ID: 17252
+// Module ID: 17275
+// Function ID: 17276
 // Name: calculateContentCenterOffset
 // Dependencies: [11905, 10725, 2]
 // Exports: default
 
-// Module 17251 (calculateContentCenterOffset)
+// Module 17275 (calculateContentCenterOffset)
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 10725 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11905 */;
 import size from "module_2" /* 2 */;

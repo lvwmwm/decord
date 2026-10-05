@@ -1,9 +1,9 @@
-// Module ID: 13103
-// Function ID: 13104
+// Module ID: 13105
+// Function ID: 13106
 // Name: GuildRoleSubscriptionsChannelHeader
 // Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1188, 12461, 4886, 1126, 2]
 
-// Module 13103 (GuildRoleSubscriptionsChannelHeader)
+// Module 13105 (GuildRoleSubscriptionsChannelHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

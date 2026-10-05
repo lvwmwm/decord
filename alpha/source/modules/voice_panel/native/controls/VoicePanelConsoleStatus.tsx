@@ -1,10 +1,10 @@
-// Module ID: 17298
-// Function ID: 17299
+// Module ID: 17322
+// Function ID: 17323
 // Name: VoicePanelConsoleStatus
-// Dependencies: [19, 11902, 11905, 11900, 21, 4890, 587, 558, 576, 11901, 17292, 4612, 4589, 17299, 17297, 5597, 1188, 4886, 5909, 9448, 1126, 5976, 17300, 2]
+// Dependencies: [19, 11902, 11905, 11900, 21, 4890, 587, 558, 576, 11901, 17316, 4612, 4589, 17323, 17321, 5597, 1188, 4886, 5909, 9448, 1126, 5976, 17324, 2]
 // Exports: renderVoicePanelConsoleStatus
 
-// Module 17298 (VoicePanelConsoleStatus)
+// Module 17322 (VoicePanelConsoleStatus)
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 4589 */;
 import spring from "spring" /* 5597 */;

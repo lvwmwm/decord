@@ -141,7 +141,7 @@ let obj = {
     if (null == closure_5.guildId) {
       return false;
     } else {
-      const obj2 = { presetId: tmp, customUserThemeSettings: "a" };
+      const obj2 = { presetId: tmp, customUserThemeSettings: "r" };
       const obj3 = _mod12;
       const isEqualResult = obj3.isEqual(closure_5.draft, obj2);
       let flag = !isEqualResult;

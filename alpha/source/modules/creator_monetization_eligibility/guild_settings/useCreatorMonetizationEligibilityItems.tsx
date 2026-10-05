@@ -1,10 +1,10 @@
-// Module ID: 17860
-// Function ID: 17861
+// Module ID: 17884
+// Function ID: 17885
 // Name: useCreatorMonetizationEligibilityItems
-// Dependencies: [5, 19, 1085, 558, 576, 17861, 17862, 4559, 2115, 1126, 17863, 2]
+// Dependencies: [5, 19, 1085, 558, 576, 17885, 17886, 4559, 2115, 1126, 17887, 2]
 // Exports: default
 
-// Module 17860 (useCreatorMonetizationEligibilityItems)
+// Module 17884 (useCreatorMonetizationEligibilityItems)
 import Constants from "Constants" /* 1085 */;
 import intl27 from "intl" /* 1126 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
@@ -375,7 +375,7 @@ export default function useCreatorMonetizationEligibilityItems(hasEnabled2FA, ar
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -443,7 +443,7 @@ export default function useCreatorMonetizationEligibilityItems(hasEnabled2FA, ar
             tmp12();
           }
           c2 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp15) {
           c2 = 3;
           throw tmp15;
@@ -503,7 +503,7 @@ export default function useCreatorMonetizationEligibilityItems(hasEnabled2FA, ar
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -571,7 +571,7 @@ export default function useCreatorMonetizationEligibilityItems(hasEnabled2FA, ar
             tmp12();
           }
           c2 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp15) {
           c2 = 3;
           throw tmp15;
@@ -678,7 +678,7 @@ export default function useCreatorMonetizationEligibilityItems(hasEnabled2FA, ar
           intl9 = tmp23(1126).intl;
           const intl10 = tmp23(1126).intl;
           formatToPlainString = intl10.formatToPlainString;
-          obj8 = { minimumAge: tmp25(17863)(tmp.minimumAgeInDays) };
+          obj8 = { minimumAge: tmp25(17887)(tmp.minimumAgeInDays) };
           Zwv84O = tmp23(1126).t.Zwv84O;
           push3(obj7);
         }

@@ -157,7 +157,7 @@ export default function ConversationListScreen() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c2;
@@ -215,7 +215,7 @@ export default function ConversationListScreen() {
         current2.succeed();
         closure_1_5(false);
         ref = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp22) {
         if (0 === c2) {
           ref = 3;

@@ -316,7 +316,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                               const obj3 = { value, done: true };
                                                               return obj3;
                                                             } else {
-                                                              return { value: "IconComponent", done: "IconComponent" };
+                                                              return { value: "IconComponent", done: null };
                                                             }
                                                           } else {
                                                             try {
@@ -377,7 +377,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                                 closure_2_23(true);
                                                               }
                                                               c5 = 3;
-                                                              return { value: "IconComponent", done: "IconComponent" };
+                                                              return { value: "IconComponent", done: null };
                                                             } catch (tmp13) {
                                                               c5 = 3;
                                                               throw tmp13;
@@ -443,7 +443,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                               const obj3 = { value, done: true };
                                                               return obj3;
                                                             } else {
-                                                              return { value: "IconComponent", done: "IconComponent" };
+                                                              return { value: "IconComponent", done: null };
                                                             }
                                                           } else {
                                                             try {
@@ -504,7 +504,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                                 closure_2_23(true);
                                                               }
                                                               c5 = 3;
-                                                              return { value: "IconComponent", done: "IconComponent" };
+                                                              return { value: "IconComponent", done: null };
                                                             } catch (tmp13) {
                                                               c5 = 3;
                                                               throw tmp13;
@@ -551,7 +551,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                               const obj3 = { value, done: true };
                                                               return obj3;
                                                             } else {
-                                                              return { value: "IconComponent", done: "IconComponent" };
+                                                              return { value: "IconComponent", done: null };
                                                             }
                                                           } else {
                                                             try {
@@ -612,7 +612,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                                 closure_2_23(true);
                                                               }
                                                               c5 = 3;
-                                                              return { value: "IconComponent", done: "IconComponent" };
+                                                              return { value: "IconComponent", done: null };
                                                             } catch (tmp13) {
                                                               c5 = 3;
                                                               throw tmp13;
@@ -786,7 +786,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                                 const obj2 = { value, done: true };
                                                                 return obj2;
                                                               } else {
-                                                                return { value: "IconComponent", done: "IconComponent" };
+                                                                return { value: "IconComponent", done: null };
                                                               }
                                                             } else {
                                                               try {
@@ -891,7 +891,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                                                                   c7 = 0;
                                                                 }
                                                                 c9 = 3;
-                                                                return { value: "IconComponent", done: "IconComponent" };
+                                                                return { value: "IconComponent", done: null };
                                                               } catch (tmp31) {
                                                                 closure_6 = tmp31;
                                                                 if (0 === c7) {
@@ -1175,7 +1175,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -1271,7 +1271,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
               v0();
             }
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp37) {
           c7 = 3;
@@ -1390,7 +1390,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -1487,7 +1487,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                 v0();
               }
               c7 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp37) {
             c7 = 3;
@@ -1616,7 +1616,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -1677,7 +1677,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                 closure_1_24(true);
               }
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             } catch (tmp13) {
               c5 = 3;
               throw tmp13;
@@ -1765,7 +1765,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -1869,7 +1869,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iframeId) => {
                   c7 = 0;
                 }
                 c9 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } catch (tmp31) {
                 closure_6 = tmp31;
                 if (0 === c7) {

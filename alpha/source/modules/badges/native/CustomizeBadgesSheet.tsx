@@ -1,10 +1,10 @@
-// Module ID: 14444
-// Function ID: 14445
+// Module ID: 14448
+// Function ID: 14449
 // Name: CustomizeBadgesSheet
-// Dependencies: [19, 17, 7831, 1377, 7863, 1085, 6646, 1379, 21, 4890, 587, 4855, 7581, 14445, 558, 576, 1126, 6458, 6456, 7579, 4812, 10881, 4886, 5995, 10889, 8567, 6452, 4612, 4891, 4894, 12921, 7580, 6140, 4590, 10883, 1618, 504, 4528, 6657, 6681, 6647, 8914, 8867, 7862, 1252, 7868, 4568, 1484, 10725, 14446, 5968, 6645, 6644, 6112, 2]
+// Dependencies: [19, 17, 7831, 1377, 7863, 1085, 6646, 1379, 21, 4890, 587, 4855, 7581, 14449, 558, 576, 1126, 6458, 6456, 7579, 4812, 10881, 4886, 5995, 10889, 8567, 6452, 4612, 4891, 4894, 12923, 7580, 6140, 4590, 10883, 1618, 504, 4528, 6657, 6681, 6647, 8914, 8867, 7862, 1252, 7868, 4568, 1484, 10725, 14450, 5968, 6645, 6644, 6112, 2]
 // Exports: default
 
-// Module 14444 (CustomizeBadgesSheet)
+// Module 14448 (CustomizeBadgesSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
@@ -31,8 +31,8 @@ import openPremiumModalDefault from "openPremiumModal" /* 8914 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 10725 */;
 import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10881 */;
 import BadgeUtils from "BadgeUtils" /* 10889 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 12921 */;
-import BadgeGrid from "BadgeGrid" /* 14445 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 12923 */;
+import BadgeGrid from "BadgeGrid" /* 14449 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7831 */;
@@ -131,7 +131,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((badge) => {
             tmp7 = cResult[9];
           }
           if (cResult[10] !== index) {
-            const result = index % tmp(14445).BADGE_GRID_COLUMNS;
+            const result = index % tmp(14449).BADGE_GRID_COLUMNS;
             let str = "right";
             if (0 !== result) {
               let str2 = "above";
@@ -535,7 +535,7 @@ let closure_24 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badge) =>
                             obj.onLongPress = fn;
                             obj.delayLongPress = tmp2(tmp3[12]).CONTEXT_MENU_LONG_PRESS_DURATION_MS;
                             obj.style = closure_5;
-                            obj.children = tmp(f67396, { badge: tmp5, alwaysVisible: tmp7 });
+                            obj.children = tmp(f67446, { badge: tmp5, alwaysVisible: tmp7 });
                             return tmp(PressableScale, obj);
                           }
                         }
@@ -615,7 +615,7 @@ let closure_24 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badge) =>
                           obj.onLongPress = fn;
                           obj.delayLongPress = tmp2(tmp3[12]).CONTEXT_MENU_LONG_PRESS_DURATION_MS;
                           obj.style = closure_5;
-                          obj.children = tmp(f67396, { badge: tmp5, alwaysVisible: tmp7 });
+                          obj.children = tmp(f67446, { badge: tmp5, alwaysVisible: tmp7 });
                           return tmp(PressableScale, obj);
                         }
                       }
@@ -681,7 +681,7 @@ let closure_24 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badge) =>
                         obj.onLongPress = fn;
                         obj.delayLongPress = tmp2(tmp3[12]).CONTEXT_MENU_LONG_PRESS_DURATION_MS;
                         obj.style = closure_5;
-                        obj.children = tmp(f67396, { badge: tmp5, alwaysVisible: tmp7 });
+                        obj.children = tmp(f67446, { badge: tmp5, alwaysVisible: tmp7 });
                         return tmp(PressableScale, obj);
                       }
                     }
@@ -749,7 +749,7 @@ let closure_24 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badge) =>
                 obj.onLongPress = fn;
                 obj.delayLongPress = tmp2(tmp3[12]).CONTEXT_MENU_LONG_PRESS_DURATION_MS;
                 obj.style = closure_5;
-                obj.children = tmp(f67396, { badge: tmp5, alwaysVisible: tmp7 });
+                obj.children = tmp(f67446, { badge: tmp5, alwaysVisible: tmp7 });
                 return tmp(PressableScale, obj);
               }
             }
@@ -849,7 +849,7 @@ let closure_24 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badge) =>
         obj.onLongPress = fn;
         obj.delayLongPress = tmp2(tmp3[12]).CONTEXT_MENU_LONG_PRESS_DURATION_MS;
         obj.style = closure_5;
-        obj.children = tmp(f67396, { badge: tmp5, alwaysVisible: tmp7 });
+        obj.children = tmp(f67446, { badge: tmp5, alwaysVisible: tmp7 });
         return tmp(PressableScale, obj);
       }
     }

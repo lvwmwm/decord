@@ -1,20 +1,20 @@
-// Module ID: 15135
-// Function ID: 15136
+// Module ID: 15139
+// Function ID: 15140
 // Name: MessagePreviewManager
-// Dependencies: [32, 5, 5436, 2055, 502, 2051, 13527, 1085, 3, 6613, 12, 2078, 584, 1282, 15136, 2]
+// Dependencies: [32, 5, 5436, 2055, 502, 2051, 13529, 1085, 3, 6613, 12, 2078, 584, 1282, 15140, 2]
 
-// Module 15135 (MessagePreviewManager)
+// Module 15139 (MessagePreviewManager)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1085 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
-import RemoteFetchData from "RemoteFetchData" /* 15136 */;
+import RemoteFetchData from "RemoteFetchData" /* 15140 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 13527 */;
+import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 13529 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
 import size from "module_2" /* 2 */;
 
@@ -82,7 +82,7 @@ class MessagePreviewManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         while (true) {
@@ -114,7 +114,7 @@ class MessagePreviewManager extends AutomaticLifecycleManager {
               closure_4 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else {
             let closure_1;
@@ -190,7 +190,7 @@ class MessagePreviewManager extends AutomaticLifecycleManager {
               c6 = 1;
             }
             c8 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         }
       }
@@ -229,7 +229,7 @@ class MessagePreviewManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -322,7 +322,7 @@ class MessagePreviewManager extends AutomaticLifecycleManager {
             mostRecents(closure_129_0);
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp51) {
           closure_2 = tmp51;
           if (0 === c3) {
@@ -377,7 +377,7 @@ class MessagePreviewManager extends AutomaticLifecycleManager {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -416,7 +416,7 @@ class MessagePreviewManager extends AutomaticLifecycleManager {
               const obj = tmp4(c2[12]);
               obj.dispatch(obj7);
               c3 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp11) {
             c3 = 3;

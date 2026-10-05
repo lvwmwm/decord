@@ -1,9 +1,9 @@
-// Module ID: 14766
-// Function ID: 14767
+// Module ID: 14770
+// Function ID: 14771
 // Name: ConnectedApplicationIdentity
-// Dependencies: [5, 32, 19, 17, 21, 558, 576, 4890, 14767, 1126, 1188, 4886, 9459, 5707, 14745, 5783, 1402, 5596, 8692, 9385, 7575, 5993, 6698, 5994, 2]
+// Dependencies: [5, 32, 19, 17, 21, 558, 576, 4890, 14771, 1126, 1188, 4886, 9459, 5707, 14749, 5783, 1402, 5596, 8692, 9385, 7575, 5993, 6698, 5994, 2]
 
-// Module 14766 (ConnectedApplicationIdentity)
+// Module 14770 (ConnectedApplicationIdentity)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1126 */;
 import native from "native" /* 1188 */;
@@ -271,7 +271,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((identity) => {
               } else if (arg0 === 2) {
                 return { value, done: true };
               } else {
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -315,7 +315,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((identity) => {
                     v0 = 0;
                   }
                   c4 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } catch (tmp17) {
                 if (0 === v0) {
@@ -539,7 +539,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((identity) => {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -583,7 +583,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((identity) => {
               c3 = 0;
             }
             v3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp17) {
           if (0 === c3) {

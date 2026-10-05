@@ -1,13 +1,13 @@
-// Module ID: 16303
-// Function ID: 16304
+// Module ID: 16307
+// Function ID: 16308
 // Name: PrivateProfileAbstractUI
-// Dependencies: [21, 558, 576, 16304, 5974, 2]
+// Dependencies: [21, 558, 576, 16308, 5974, 2]
 
-// Module 16303 (PrivateProfileAbstractUI)
+// Module 16307 (PrivateProfileAbstractUI)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5974 */;
-import _modDef16304 from "module_16304" /* 16304 */;
+import _modDef16308 from "module_16308" /* 16308 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef16304 };
+    const obj2 = { uri: _modDef16308 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num3 === undefined) {
     num3 = 1;
   }
-  const obj2 = { uri: _modDef16304 };
+  const obj2 = { uri: _modDef16308 };
   FastImageDefault;
   size = { width: num * num3, height: num2 * num3 };
   const items = [size];

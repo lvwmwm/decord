@@ -1,9 +1,9 @@
-// Module ID: 13773
-// Function ID: 13774
+// Module ID: 13775
+// Function ID: 13776
 // Name: GameOrganizationInviteActionSheet
-// Dependencies: [32, 19, 17, 9554, 9494, 7226, 1096, 21, 4890, 587, 9483, 558, 576, 9490, 504, 9508, 1126, 2391, 6701, 5593, 4886, 6547, 13774, 2]
+// Dependencies: [32, 19, 17, 9554, 9494, 7226, 1096, 21, 4890, 587, 9483, 558, 576, 9490, 504, 9508, 1126, 2391, 6701, 5593, 4886, 6547, 13776, 2]
 
-// Module 13773 (GameOrganizationInviteActionSheet)
+// Module 13775 (GameOrganizationInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -30,7 +30,7 @@ let metroRequire;
 let obj2;
 let tmp12;
 let unpackModuleId;
-const GameOrganizationInviteListDefault = tmp12(13774);
+const GameOrganizationInviteListDefault = tmp12(13776);
 function isInvitableUserRow(type) {
   let tmp3 = type.type === InstantInviteUtils.RowTypes.FRIEND;
   if (!tmp3) {

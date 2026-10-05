@@ -1,9 +1,9 @@
-// Module ID: 15154
-// Function ID: 15155
+// Module ID: 15158
+// Function ID: 15159
 // Name: DisplayNameStylesEffectOrder
 // Dependencies: [19, 1395, 558, 9390, 2]
 
-// Module 15154 (DisplayNameStylesEffectOrder)
+// Module 15158 (DisplayNameStylesEffectOrder)
 import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 9390 */;
 import react from "react" /* 19 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1395 */;

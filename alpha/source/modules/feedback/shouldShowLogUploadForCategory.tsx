@@ -1,10 +1,10 @@
-// Module ID: 16630
-// Function ID: 16631
+// Module ID: 16641
+// Function ID: 16642
 // Name: shouldShowLogUploadForCategory
 // Dependencies: [11249, 2]
 // Exports: shouldShowLogUploadForCategory
 
-// Module 16630 (shouldShowLogUploadForCategory)
+// Module 16641 (shouldShowLogUploadForCategory)
 import Constants from "Constants" /* 11249 */;
 import size from "module_2" /* 2 */;
 

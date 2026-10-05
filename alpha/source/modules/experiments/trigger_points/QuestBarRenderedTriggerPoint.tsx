@@ -1,9 +1,9 @@
-// Module ID: 14987
-// Function ID: 14988
+// Module ID: 14991
+// Function ID: 14992
 // Name: QuestBarRenderedTriggerPoint
 // Dependencies: [4777, 10540, 2]
 
-// Module 14987 (QuestBarRenderedTriggerPoint)
+// Module 14991 (QuestBarRenderedTriggerPoint)
 import ExperimentConstants from "ExperimentConstants" /* 4777 */;
 import Helpers from "Helpers" /* 10540 */;
 import size from "module_2" /* 2 */;

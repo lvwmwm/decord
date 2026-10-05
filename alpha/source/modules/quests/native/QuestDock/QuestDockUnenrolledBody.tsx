@@ -1,9 +1,9 @@
-// Module ID: 14997
-// Function ID: 14998
+// Module ID: 15001
+// Function ID: 15002
 // Name: QuestDockUnenrolledBody
-// Dependencies: [5, 19, 7187, 5623, 21, 558, 576, 14921, 14980, 14889, 573, 14888, 10911, 10916, 10914, 10007, 10008, 14896, 10954, 5626, 7212, 14917, 9994, 14924, 10955, 10908, 10918, 14998, 14963, 1126, 7575, 12724, 10010, 2]
+// Dependencies: [5, 19, 7187, 5623, 21, 558, 576, 14925, 14984, 14893, 573, 14892, 10911, 10916, 10914, 10007, 10008, 14900, 10954, 5626, 7212, 14921, 9994, 14928, 10955, 10908, 10918, 15002, 14967, 1126, 7575, 12724, 10010, 2]
 
-// Module 14997 (QuestDockUnenrolledBody)
+// Module 15001 (QuestDockUnenrolledBody)
 import Fragment from "Fragment" /* 21 */;
 import QuestTypes from "QuestTypes" /* 5626 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7212 */;
@@ -124,7 +124,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -196,7 +196,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
             setRestingQuestDockMode(constants.COLLAPSED);
           }
           c2 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp42) {
         c2 = 3;
@@ -276,7 +276,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -348,7 +348,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
             closure_128_5(constants.COLLAPSED);
           }
           isMobileActivityQuest = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp42) {
         isMobileActivityQuest = 3;

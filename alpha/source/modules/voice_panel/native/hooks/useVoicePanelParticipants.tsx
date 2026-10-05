@@ -1,9 +1,9 @@
-// Module ID: 17277
-// Function ID: 17278
+// Module ID: 17301
+// Function ID: 17302
 // Name: useVoicePanelParticipants
-// Dependencies: [32, 19, 4906, 502, 2051, 4913, 4909, 4914, 11902, 1085, 558, 576, 17166, 504, 16160, 11901, 11904, 2]
+// Dependencies: [32, 19, 4906, 502, 2051, 4913, 4909, 4914, 11902, 1085, 558, 576, 17190, 504, 16164, 11901, 11904, 2]
 
-// Module 17277 (useVoicePanelParticipants)
+// Module 17301 (useVoicePanelParticipants)
 import Constants from "Constants" /* 1085 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -457,7 +457,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   if (cResult[2] !== first1) {
     class T {
       constructor() {
-        return () => { /* body not rendered: F148023 */ };
+        return () => { /* body not rendered: F148307 */ };
       }
     }
     let items = [first1];
@@ -469,7 +469,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   } else {
     class T {
       constructor() {
-        return () => { /* body not rendered: F148023 */ };
+        return () => { /* body not rendered: F148307 */ };
       }
     }
     tmp11 = cResult[4];
@@ -478,7 +478,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     class T {
       constructor() {
-        return () => { /* body not rendered: F148023 */ };
+        return () => { /* body not rendered: F148307 */ };
       }
     }
     let items1 = [VoiceStateStore, ];
@@ -487,14 +487,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   } else {
     class T {
       constructor() {
-        return () => { /* body not rendered: F148023 */ };
+        return () => { /* body not rendered: F148307 */ };
       }
     }
   }
   if (cResult[6] === first1) {
     class T {
       constructor() {
-        return () => { /* body not rendered: F148023 */ };
+        return () => { /* body not rendered: F148307 */ };
       }
     }
   }
@@ -513,7 +513,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
           _Set = Set;
           self = this;
           self2 = this;
-          set = new Set((() => { /* body not rendered: F148024 */ })());
+          set = new Set((() => { /* body not rendered: F148308 */ })());
           tmp3 = set;
           tmp4 = set;
           for (const item10013 of set) {

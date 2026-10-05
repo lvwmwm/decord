@@ -33,7 +33,7 @@ let obj = function _getOrders() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -169,7 +169,7 @@ obj = function _createOrder() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -202,7 +202,7 @@ obj = function _createOrder() {
               body = undefined;
               external_gateway_facet = 1;
               request_gateway_country_code = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === external_gateway_facet) {
             if (arg0 === 1) {
@@ -396,7 +396,7 @@ obj = function _getOrCreateOrder() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -431,7 +431,7 @@ obj = function _getOrCreateOrder() {
             value = undefined;
             purchase_type = 1;
             isGift = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === purchase_type) {
           if (arg0 === 1) {
@@ -517,7 +517,7 @@ obj = function _patchOrderLineItem() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -541,7 +541,7 @@ obj = function _patchOrderLineItem() {
               body = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -657,7 +657,7 @@ obj = function _patchOrder() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -683,7 +683,7 @@ obj = function _patchOrder() {
               body = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -806,7 +806,7 @@ obj = function _updateOrder() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -832,7 +832,7 @@ obj = function _updateOrder() {
               body = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -988,7 +988,7 @@ obj = function _markOrderAsSigningInProgress() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1027,7 +1027,7 @@ obj = function _markOrderAsSigningInProgress() {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 let c3;
@@ -1156,7 +1156,7 @@ obj = function _markOrderAsSigningInProgress() {
                     c3 = 0;
                     c11 = null;
                     c5 = 3;
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } catch (tmp38) {
                   closure_2 = tmp38;
@@ -1199,7 +1199,7 @@ obj = function _markOrderAsSigningInProgress() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp8) {
         c1 = 3;
@@ -1224,7 +1224,7 @@ obj = function _cancelOrderSigning() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1265,7 +1265,7 @@ obj = function _cancelOrderSigning() {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   let c3;

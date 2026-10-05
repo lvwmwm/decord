@@ -1,9 +1,9 @@
-// Module ID: 16298
-// Function ID: 16299
+// Module ID: 16302
+// Function ID: 16303
 // Name: HomeDrawerTTIFirstContentfulPaint
 // Dependencies: [19, 21, 558, 576, 6984, 11507, 2]
 
-// Module 16298 (HomeDrawerTTIFirstContentfulPaint)
+// Module 16302 (HomeDrawerTTIFirstContentfulPaint)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 6984 */;

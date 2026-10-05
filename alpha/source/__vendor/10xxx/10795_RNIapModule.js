@@ -31,7 +31,7 @@ _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: "IconComponent" };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -52,7 +52,7 @@ _asyncToGenerator(async (arg0, value) => {
           sku = closure_0.sku;
           c5 = 1;
           c6 = 1;
-          return { value: "Reflect", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === c5) {
         if (arg0 === 1) {
@@ -107,7 +107,7 @@ let closure_0 = _asyncToGenerator(async function(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: "IconComponent" };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -132,7 +132,7 @@ let closure_0 = _asyncToGenerator(async function(arg0, value) {
           closure_6 = undefined;
           c2 = 1;
           c3 = 1;
-          return { value: "Reflect", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp4) {
         if (arg0 === 1) {

@@ -1,10 +1,10 @@
-// Module ID: 16042
-// Function ID: 16043
+// Module ID: 16046
+// Function ID: 16047
 // Name: VoiceUserItem
-// Dependencies: [19, 17, 1085, 21, 1188, 10723, 4890, 587, 11698, 558, 576, 9391, 9392, 9394, 1252, 1402, 16043, 9341, 4820, 9337, 9339, 11234, 9463, 5817, 9443, 2]
+// Dependencies: [19, 17, 1085, 21, 1188, 10723, 4890, 587, 11698, 558, 576, 9391, 9392, 9394, 1252, 1402, 16047, 9341, 4820, 9337, 9339, 11234, 9463, 5817, 9443, 2]
 // Exports: getVoiceUserHeight
 
-// Module 16042 (VoiceUserItem)
+// Module 16046 (VoiceUserItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -20,7 +20,7 @@ import GameActivityIconDefault from "GameActivityIcon" /* 9443 */;
 import getConsoleIcon from "getConsoleIcon" /* 9463 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10723 */;
 import VideoIcon from "VideoIcon" /* 11234 */;
-import VoiceUserNameItemDefault from "VoiceUserNameItem" /* 16043 */;
+import VoiceUserNameItemDefault from "VoiceUserNameItem" /* 16047 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4890 */;

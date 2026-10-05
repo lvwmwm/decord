@@ -12,7 +12,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9;
+let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8;
 
 const GiftPlanSelectionCardBanner_AssetVariant = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", NORMAL: 1, [1]: "NORMAL", LARGE_TILTED: 2, [2]: "LARGE_TILTED" };
 const MessageType = _mod1198.MessageType;
@@ -225,7 +225,7 @@ class GiftPlanSelectionCardBanner$Type extends MessageType {
     }
     if (header.mobileBodyLocalized) {
       const LocalizedString3 = localized_string.LocalizedString;
-      internalBinaryWrite9 = LocalizedString3.internalBinaryWrite;
+      const internalBinaryWrite9 = LocalizedString3.internalBinaryWrite;
       const mobileBodyLocalized = header.mobileBodyLocalized;
       const tagResult14 = tag.tag(15, _mod1198.WireType.LengthDelimited);
       const internalBinaryWrite9Result = internalBinaryWrite9(mobileBodyLocalized, tagResult14.fork(), writeUnknownFields);

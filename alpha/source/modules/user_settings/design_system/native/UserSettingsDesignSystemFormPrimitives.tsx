@@ -1,9 +1,9 @@
-// Module ID: 15684
-// Function ID: 15685
+// Module ID: 15688
+// Function ID: 15689
 // Name: UserSettingsDesignSystemFormPrimitives
-// Dependencies: [32, 19, 17, 1085, 21, 4890, 558, 576, 4886, 6072, 6071, 6074, 6698, 8952, 5990, 5993, 14274, 9667, 5885, 5593, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 4890, 558, 576, 4886, 6072, 6071, 6074, 6698, 8952, 5990, 5993, 14276, 9667, 5885, 5593, 2]
 
-// Module 15684 (UserSettingsDesignSystemFormPrimitives)
+// Module 15688 (UserSettingsDesignSystemFormPrimitives)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
@@ -16,7 +16,7 @@ import TableRadioGroup2 from "TableRadioGroup" /* 6072 */;
 import TableRowGroup3 from "TableRowGroup" /* 6074 */;
 import TableSwitchRow5 from "TableSwitchRow" /* 6698 */;
 import VoiceXIcon from "VoiceXIcon" /* 9667 */;
-import Slider2 from "Slider" /* 14274 */;
+import Slider2 from "Slider" /* 14276 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -467,7 +467,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj3 = { start: true, end: true, label: "Volume", subLabel: metroRequire(Slider, obj4) };
     const TableRow = tmp(5993).TableRow;
     obj4 = { startIcon: metroRequire(VoiceXIcon.VoiceXIcon, {}), endIcon: metroRequire(VoiceNormalIcon.VoiceNormalIcon, {}), onValueChange: NOOP };
-    Slider = tmp(14274).Slider;
+    Slider = tmp(14276).Slider;
     items[1] = metroRequire(TableRow, obj3);
     const tmp12 = metroImportDefault(metroImportAll, obj2);
     cResult[1] = tmp12;

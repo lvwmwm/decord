@@ -1,9 +1,9 @@
-// Module ID: 15867
-// Function ID: 15868
+// Module ID: 15871
+// Function ID: 15872
 // Name: ChooseAccount
-// Dependencies: [5, 19, 17, 12056, 12057, 1085, 21, 4890, 587, 558, 576, 1490, 15868, 1252, 12059, 5708, 1126, 1188, 4854, 6693, 4886, 15869, 5909, 9290, 8895, 15870, 6460, 13675, 2]
+// Dependencies: [5, 19, 17, 12056, 12057, 1085, 21, 4890, 587, 558, 576, 1490, 15872, 1252, 12059, 5708, 1126, 1188, 4854, 6693, 4886, 15873, 5909, 9290, 8895, 15874, 6460, 13677, 2]
 
-// Module 15867 (ChooseAccount)
+// Module 15871 (ChooseAccount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
@@ -58,7 +58,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_13();
   let obj2 = navigation(1490);
   navigation = obj2.useNavigation();
-  let obj3 = navigation(15868);
+  let obj3 = navigation(15872);
   const multiAccountUsers = obj3.useMultiAccountUsers().multiAccountUsers;
   if (cResult[0] !== navigation) {
     const fn = function s(tokenStatus) {
@@ -102,7 +102,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -154,7 +154,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 obj2.removeAccount(closure_0.id);
               }
               c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp22) {
             c4 = 3;
@@ -513,7 +513,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -565,7 +565,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               obj2.removeAccount(closure_0.id);
             }
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp22) {
           c4 = 3;
@@ -580,7 +580,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   _require = obj.useNavigation();
   let obj2 = require("useMultiAccount");
   const multiAccountUsers = obj2.useMultiAccountUsers().multiAccountUsers;
-  let obj3 = { headerText: intl.string(require("intl").t.bVbB63), subHeader: closure_11(Text, obj4), backgroundImageSource: multiAccountUsers(13675), backgroundImageCover: true, contentStyle: tmp.container, children: closure_12(View, obj5) };
+  let obj3 = { headerText: intl.string(require("intl").t.bVbB63), subHeader: closure_11(Text, obj4), backgroundImageSource: multiAccountUsers(13677), backgroundImageCover: true, contentStyle: tmp.container, children: closure_12(View, obj5) };
   let tmp2 = multiAccountUsers(6460);
   intl = require("intl").intl;
   obj4 = { variant: "text-sm/medium", color: "text-default", children: intl2.string(require("intl").t["0M5fN7"]) };
@@ -684,7 +684,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   };
   const FormRow = require("Form").FormRow;
-  obj7 = { themedColor: multiAccountUsers(587).colors.TEXT_LINK, size: require("native").Icon.Sizes.SMALL_20, source: multiAccountUsers(15870) };
+  obj7 = { themedColor: multiAccountUsers(587).colors.TEXT_LINK, size: require("native").Icon.Sizes.SMALL_20, source: multiAccountUsers(15874) };
   Icon = require("Form").FormRow.Icon;
   intl3 = require("intl").intl;
   items[1] = closure_11(FormRow, obj6);

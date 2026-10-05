@@ -1,13 +1,13 @@
-// Module ID: 15364
-// Function ID: 15365
+// Module ID: 15368
+// Function ID: 15369
 // Name: ChangeLogSetting
-// Dependencies: [1085, 11129, 1126, 4812, 15365, 2]
+// Dependencies: [1085, 11129, 1126, 4812, 15369, 2]
 
-// Module 15364 (ChangeLogSetting)
+// Module 15368 (ChangeLogSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 4812 */;
-import ChangeLogModal from "ChangeLogModal" /* 15365 */;
+import ChangeLogModal from "ChangeLogModal" /* 15369 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 

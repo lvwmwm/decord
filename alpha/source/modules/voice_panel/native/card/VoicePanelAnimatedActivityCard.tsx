@@ -1,9 +1,9 @@
-// Module ID: 17258
-// Function ID: 17259
+// Module ID: 17282
+// Function ID: 17283
 // Name: VoicePanelAnimatedActivityCard
-// Dependencies: [32, 19, 2050, 9065, 2051, 11902, 11900, 1085, 2011, 21, 4890, 587, 558, 576, 11901, 16577, 504, 17259, 8993, 6663, 9131, 6657, 6681, 9101, 13800, 4612, 9016, 6140, 1484, 9055, 9134, 17260, 17261, 6570, 17262, 17266, 4589, 2]
+// Dependencies: [32, 19, 2050, 9065, 2051, 11902, 11900, 1085, 2011, 21, 4890, 587, 558, 576, 11901, 16583, 504, 17283, 8993, 6663, 9131, 6657, 6681, 9101, 13802, 4612, 9016, 6140, 1484, 9055, 9134, 17284, 17285, 6570, 17286, 17290, 4589, 2]
 
-// Module 17258 (VoicePanelAnimatedActivityCard)
+// Module 17282 (VoicePanelAnimatedActivityCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants2 from "Constants" /* 1085 */;
@@ -97,8 +97,8 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
   const windowDimensions = context.windowDimensions;
   const hideControls = context.hideControls;
   const controlsSpecs = context.controlsSpecs;
-  let closure_10 = sharedVisible(16577)();
-  const tmp9 = sharedVisible(16577)();
+  let closure_10 = sharedVisible(16583)();
+  const tmp9 = sharedVisible(16583)();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [windowDimensions];
     cResult[0] = items;
@@ -131,8 +131,8 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
     guild_id = stateFromStores.guild_id;
   }
   let guild_id1;
-  const useActivityShelfItemData = tmp(17259).useActivityShelfItemData;
-  tmp(17259);
+  const useActivityShelfItemData = tmp(17283).useActivityShelfItemData;
+  tmp(17283);
   if (stateFromStores != null) {
     guild_id1 = stateFromStores.guild_id;
   }
@@ -629,7 +629,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
   const windowDimensions = context.windowDimensions;
   const hideControls = context.hideControls;
   const controlsSpecs = context.controlsSpecs;
-  const tmp8 = sharedVisible(16577)();
+  const tmp8 = sharedVisible(16583)();
   VoicePanelControlsModes = tmp8;
   let obj2 = applicationId(504);
   const items = [windowDimensions];
@@ -641,8 +641,8 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
     guild_id = stateFromStores.guild_id;
   }
   let guild_id1;
-  const useActivityShelfItemData = tmp9(17259).useActivityShelfItemData;
-  applicationId(17259);
+  const useActivityShelfItemData = tmp9(17283).useActivityShelfItemData;
+  applicationId(17283);
   if (stateFromStores != null) {
     guild_id1 = stateFromStores.guild_id;
   }
@@ -939,7 +939,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
       }
       const obj11 = { channelId, activityName: name, isActivityFocused: first2, children: focusedOrientationLockState(sharedVisible(9134), obj12, first) };
       name = undefined;
-      const tmp5Result4 = sharedVisible(17260);
+      const tmp5Result4 = sharedVisible(17284);
       if (first1 != null) {
         name = first1.name;
       }
@@ -947,18 +947,18 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
       items13 = [focusedOrientationLockState(tmp5Result4, obj11), ];
       let tmp50Result = null;
       if (stateFromStores2) {
-        tmp50Result = tmp50(tmp5(17261), {});
+        tmp50Result = tmp50(tmp5(17285), {});
       }
       items13[1] = tmp50Result;
       tmp50Result2 = tmp50(GestureDetector2, obj8);
       tmp47 = tmp50;
     } else if (null == activityShelfItemData) {
       const obj13 = { activity: stateFromStores1, application: first1 };
-      tmp50Result2 = focusedOrientationLockState(tmp5(17262), obj13);
+      tmp50Result2 = focusedOrientationLockState(tmp5(17286), obj13);
       tmp47 = focusedOrientationLockState;
     } else {
       tmp47 = focusedOrientationLockState;
-      const obj14 = { gesture: memo1, children: focusedOrientationLockState(sharedVisible(17266), obj15) };
+      const obj14 = { gesture: memo1, children: focusedOrientationLockState(sharedVisible(17290), obj15) };
       const GestureDetector = tmp9(6140).GestureDetector;
       obj15 = { context: memo, guildId: stateFromStores.guild_id, activityItem: activityShelfItemData, locationObject: analyticsContext.location, itemDimensions: first3, disableBadges: true };
       tmp50Result2 = focusedOrientationLockState(GestureDetector, obj14);

@@ -1,10 +1,10 @@
-// Module ID: 14374
-// Function ID: 14375
+// Module ID: 14378
+// Function ID: 14379
 // Name: MediaPlayerManager
-// Dependencies: [17, 2050, 5098, 2051, 5110, 4509, 1986, 1085, 8705, 14375, 1096, 3, 570, 1259, 1989, 4737, 584, 1369, 568, 6965, 11825, 2]
+// Dependencies: [17, 2050, 5098, 2051, 5110, 4509, 1986, 1085, 8705, 14379, 1096, 3, 570, 1259, 1989, 4737, 584, 1369, 568, 6965, 11825, 2]
 // Exports: isPlaybackComplete
 
-// Module 14374 (MediaPlayerManager)
+// Module 14378 (MediaPlayerManager)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -21,7 +21,7 @@ import ChannelStore from "ChannelStore" /* 2051 */;
 import MessageStore from "MessageStore" /* 5110 */;
 import PermissionStore from "PermissionStore" /* 4509 */;
 import AppStateStore from "AppStateStore" /* 1986 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 14375 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 14379 */;
 import module_570 from "module_570" /* 570 */;
 import LifecycleManager from "LifecycleManager" /* 1989 */;
 import size from "module_2" /* 2 */;
@@ -47,19 +47,19 @@ const useMediaPlayerManagerStore = module_570.create((arg0) => {
   let closure_0 = arg0;
   let obj = {
     activeMediaPlayerSource: "IconComponent",
-    mediaSourceMessage: "Set",
-    canAccessMedia: "done",
+    mediaSourceMessage: "Symbol",
+    canAccessMedia: "duration",
     isPlaying: false,
     wasPipClosedByUser: null,
     progress: null,
-    rate: "Reflect",
-    showPip: "M7 9H6V10H7V9Z",
+    rate: "Set",
+    showPip: "M13 15h2v-1h1v2H4v-1h3v-1h6v1ZM4 15h-1v-1h1v1ZM3 14H2v-1h1v1ZM7 14h-1v-1h1v1ZM15 14h-2v-1h1v-1h1v2ZM2 13H1v-1h1v1ZM6 13h-1v-1h1v1ZM1 12H0V5h1v7ZM16 12h-1V6h1v6ZM6 9h-1v1h-1v-1h-1v-1h3v1ZM5 1h1V0h2v2h-1V1h-1v1h-1v1h-1v1h1v-1h1V2h1v1h6v1H6v1h1v3h-1v-2h-1v-1h-2V2h1V1h-1V0h2v1ZM15 6h-1v-1h1v1ZM2 5H1V2h1v3ZM14 5h-1v-1h1v1ZM3 2H2V1h1v1Z",
     closePip() {
       const obj = react_native;
       obj.batchUpdates(() => closure_1_0({ showPip: false }));
     },
     displayedMediaItemIdsPerChannel: {},
-    currentlyDisplayedChannelId: 1358954884
+    currentlyDisplayedChannelId: "<string:3578855425>"
   };
   return obj;
 });
@@ -320,7 +320,7 @@ class MediaPlayerManager extends LifecycleManager {
       const tmp8 = source;
       if (!tmp7(activeMediaPlayerSource, tmp8)) {
         const setState = tmp.setState;
-        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "done", rate: false, isPlaying: false, wasPipClosedByUser: 0 };
+        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "duration", rate: false, isPlaying: false, wasPipClosedByUser: 0 };
         orFetchMediaSourceMessage = undefined;
         if (null != source) {
           orFetchMediaSourceMessage = self.getOrFetchMediaSourceMessage(tmp4);

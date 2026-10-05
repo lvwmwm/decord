@@ -1,10 +1,10 @@
-// Module ID: 17097
-// Function ID: 17098
+// Module ID: 17121
+// Function ID: 17122
 // Name: ConnectionDeprecationBottomSheet
-// Dependencies: [19, 17, 5118, 5440, 2048, 21, 4890, 587, 4589, 1618, 504, 5442, 6660, 6657, 6681, 17098, 4854, 17100, 1987, 6644, 6645, 5593, 17085, 4886, 1126, 3141, 8491, 5594, 12757, 558, 576, 4587, 1402, 5596, 6667, 6663, 2]
+// Dependencies: [19, 17, 5118, 5440, 2048, 21, 4890, 587, 4589, 1618, 504, 5442, 6660, 6657, 6681, 17122, 4854, 17124, 1987, 6644, 6645, 5593, 17109, 4886, 1126, 3141, 8491, 5594, 12757, 558, 576, 4587, 1402, 5596, 6667, 6663, 2]
 // Exports: default
 
-// Module 17097 (ConnectionDeprecationBottomSheet)
+// Module 17121 (ConnectionDeprecationBottomSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,7 +15,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854
 import Icon from "Icon" /* 5596 */;
 import useStartAuthorizeDefault from "useStartAuthorize" /* 6660 */;
 import GameIconDefault from "GameIcon" /* 6667 */;
-import AccountLinkManager from "AccountLinkManager" /* 17098 */;
+import AccountLinkManager from "AccountLinkManager" /* 17122 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5118 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5440 */;

@@ -1,9 +1,9 @@
-// Module ID: 13928
-// Function ID: 13929
+// Module ID: 13930
+// Function ID: 13931
 // Name: SpeakerPulse
 // Dependencies: [19, 17, 4879, 21, 4890, 587, 558, 576, 504, 4612, 4891, 2]
 
-// Module 13928 (SpeakerPulse)
+// Module 13930 (SpeakerPulse)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;

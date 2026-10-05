@@ -1,9 +1,9 @@
-// Module ID: 17827
-// Function ID: 17828
+// Module ID: 17851
+// Function ID: 17852
 // Name: FinishingTouchesScreen
-// Dependencies: [32, 19, 17, 9248, 2106, 7706, 1085, 21, 558, 576, 4580, 587, 504, 4514, 9247, 1097, 17769, 17816, 17815, 1126, 4886, 6698, 17825, 6074, 5593, 2115, 17813, 2]
+// Dependencies: [32, 19, 17, 9248, 2106, 7706, 1085, 21, 558, 576, 4580, 587, 504, 4514, 9247, 1097, 17793, 17840, 17839, 1126, 4886, 6698, 17849, 6074, 5593, 2115, 17837, 2]
 
-// Module 17827 (FinishingTouchesScreen)
+// Module 17851 (FinishingTouchesScreen)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4514 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
@@ -184,8 +184,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     }
-    const tmp25 = tmp5(17816)();
-    const tmpResult2 = tmp(17815);
+    const tmp25 = tmp5(17840)();
+    const tmpResult2 = tmp(17839);
     const enableCommunitySharedStyles = tmpResult2.useEnableCommunitySharedStyles();
     const _Symbol2 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
@@ -979,7 +979,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp14;
   let tmp4Result5;
   let tmp4Result6;
-  const f132213 = (item) => {
+  const f132451 = (item) => {
     const obj = PermissionUtilsAll;
     return obj.canEveryone(item, guild);
   };
@@ -999,8 +999,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   defaultMessageNotifications = _slicedToArray(useState(prop), 1)[0];
   const ONLY_MENTIONS = constants3.ONLY_MENTIONS;
   [first1, tmp11] = obj.useState(false);
-  [tmp13, tmp14] = _slicedToArray(obj.useState(!closure_11.some(f132213)), 2);
-  const tmp12 = _slicedToArray(obj.useState(!closure_11.some(f132213)), 2);
+  [tmp13, tmp14] = _slicedToArray(obj.useState(!closure_11.some(f132451)), 2);
+  const tmp12 = _slicedToArray(obj.useState(!closure_11.some(f132451)), 2);
   const first2 = _slicedToArray(obj.useState(tmp13), 1)[0];
   let prop1;
   const tmp8 = constants3;
@@ -1069,11 +1069,11 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
   }, []);
-  const tmp20 = tmp4(17816)();
-  const tmp2Result = guild(17815);
+  const tmp20 = tmp4(17840)();
+  const tmp2Result = guild(17839);
   const enableCommunitySharedStyles = tmp2Result.useEnableCommunitySharedStyles();
-  let obj4 = { headerRef: ref, currentStep: tmp2(17813).EnableCommunityModalSteps.STEP_3, onSuccess: callback1, disableNextStep: !first1, buttonText: intl.string(tmp2(1126).t.XGl4ba), children: items3 };
-  const EnableCommunityModalScreen = tmp2(17813).EnableCommunityModalScreen;
+  let obj4 = { headerRef: ref, currentStep: tmp2(17837).EnableCommunityModalSteps.STEP_3, onSuccess: callback1, disableNextStep: !first1, buttonText: intl.string(tmp2(1126).t.XGl4ba), children: items3 };
+  const EnableCommunityModalScreen = tmp2(17837).EnableCommunityModalScreen;
   intl = tmp2(1126).intl;
   const obj5 = { style: enableCommunitySharedStyles.content, children: items2 };
   const obj6 = { ref, accessibilityRole: "header", variant: "text-md/semibold", color: "text-subtle", children: intl2.formatToPlainString(guild(1126).t.tInpJj, { number: 3, total: 3 }) };
@@ -1096,7 +1096,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const TableRowGroup = tmp2(6074).TableRowGroup;
   const obj11 = { formSwitchDisabled: defaultMessageNotifications === ONLY_MENTIONS, children: closure_16(TableSwitchRow, obj12) };
   obj12 = { label: intl5.format(guild(1126).t.K8Eg4P, obj13), value: prop2 === tmp8.ONLY_MENTIONS, disabled: defaultMessageNotifications === ONLY_MENTIONS, onValueChange: callback };
-  const tmp4Result = tmp4(17825);
+  const tmp4Result = tmp4(17849);
   TableSwitchRow = tmp2(6698).TableSwitchRow;
   intl5 = tmp2(1126).intl;
   prop2 = undefined;
@@ -1112,7 +1112,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   items4 = [closure_16(tmp4Result, obj11), ];
   const obj15 = { formSwitchDisabled: first2, children: closure_16(TableSwitchRow2, obj16) };
   obj16 = { label: intl6.format(guild(1126).t.v8qCoG, obj17), value: tmp13, disabled: first2, onValueChange: tmp14 };
-  const tmp4Result4 = tmp4(17825);
+  const tmp4Result4 = tmp4(17849);
   TableSwitchRow2 = tmp2(6698).TableSwitchRow;
   intl6 = tmp2(1126).intl;
   obj17 = {

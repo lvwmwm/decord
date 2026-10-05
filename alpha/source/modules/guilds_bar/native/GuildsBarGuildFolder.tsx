@@ -1,9 +1,9 @@
-// Module ID: 16229
-// Function ID: 16230
+// Module ID: 16233
+// Function ID: 16234
 // Name: GuildsBarGuildFolder
-// Dependencies: [19, 7121, 2074, 4699, 5616, 16221, 16226, 16218, 21, 4890, 587, 558, 576, 4580, 504, 5971, 5597, 4727, 1103, 6570, 4612, 4589, 5974, 5815, 16230, 16233, 12285, 16240, 4855, 5705, 5976, 16223, 16241, 2]
+// Dependencies: [19, 7121, 2074, 4699, 5616, 16225, 16230, 16222, 21, 4890, 587, 558, 576, 4580, 504, 5971, 5597, 4727, 1103, 6570, 4612, 4589, 5974, 5815, 16234, 16237, 12285, 16244, 4855, 5705, 5976, 16227, 16245, 2]
 
-// Module 16229 (GuildsBarGuildFolder)
+// Module 16233 (GuildsBarGuildFolder)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -21,14 +21,14 @@ import FastImageDefault from "FastImage" /* 5974 */;
 import NativeViewDefault from "NativeView" /* 5976 */;
 import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6570 */;
 import ListUtils from "ListUtils" /* 12285 */;
-import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 16223 */;
+import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 16227 */;
 import react from "react" /* 19 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 7121 */;
 import GuildStore from "GuildStore" /* 2074 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16221 */;
-import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 16226 */;
-import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 16218 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16225 */;
+import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 16230 */;
+import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 16222 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

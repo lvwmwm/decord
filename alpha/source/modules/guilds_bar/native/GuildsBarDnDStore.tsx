@@ -1,9 +1,9 @@
-// Module ID: 16221
-// Function ID: 16222
+// Module ID: 16225
+// Function ID: 16226
 // Name: GuildsBarDnDStore
 // Dependencies: [5616, 1254, 4612, 1259, 1242, 558, 576, 4492, 2]
 
-// Module 16221 (GuildsBarDnDStore)
+// Module 16225 (GuildsBarDnDStore)
 import react from "react" /* 576 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import react_native from "react-native" /* 1259 */;
@@ -32,14 +32,14 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
   let closure_1 = arg1;
   obj = {
     dragSpecs: "Boolean",
-    overSpecs: "done",
+    overSpecs: "duration",
     dropSpecs: "toCharArray$esjava$1",
     dragRegion: obj2.makeMutable({ min: 0, max: 0 }),
     gestureState: obj3.makeMutable(obj),
     dragDropInProgress: obj4.makeMutable(false),
     listInsets: obj5.makeMutable({ start: 0, end: 0 }),
     scrollPosition: obj6.makeMutable(0),
-    windowSize: "\u{1F64C}",
+    windowSize: "\u{1F44F}",
     setStateShallow(obj) {
       closure_0 = obj;
       const tmp = closure_1();
@@ -79,7 +79,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "cursor" };
+          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "toCharArray$esjava$1" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;
@@ -160,7 +160,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     ({ dragSpecs, overSpecs, dropSpecs, dragDropInProgress } = arg0);
     if (null == dragSpecs) {
       if (null == dropSpecs) {
-        return { isDragTarget: false, dragState: "done", overState: "toCharArray$esjava$1", itemSize: null, dragDropInProgress };
+        return { isDragTarget: false, dragState: "duration", overState: "toCharArray$esjava$1", itemSize: null, dragDropInProgress };
       }
     }
     let tmp2 = !closure_1;
@@ -265,7 +265,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     ({ dragSpecs, overSpecs, dropSpecs, dragDropInProgress } = arg0);
     if (null == dragSpecs) {
       if (null == dropSpecs) {
-        return { isDragTarget: false, dragState: "done", overState: "toCharArray$esjava$1", itemSize: null, dragDropInProgress };
+        return { isDragTarget: false, dragState: "duration", overState: "toCharArray$esjava$1", itemSize: null, dragDropInProgress };
       }
     }
     let tmp2 = !closure_1;

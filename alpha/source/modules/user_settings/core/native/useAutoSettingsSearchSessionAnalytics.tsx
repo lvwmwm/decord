@@ -1,14 +1,14 @@
-// Module ID: 17062
-// Function ID: 17063
+// Module ID: 17086
+// Function ID: 17087
 // Name: useAutoSettingsSearchSessionAnalytics
-// Dependencies: [19, 1986, 14497, 558, 576, 1105, 504, 7946, 6492, 5590, 2]
+// Dependencies: [19, 1986, 14501, 558, 576, 1105, 504, 7946, 6492, 5590, 2]
 
-// Module 17062 (useAutoSettingsSearchSessionAnalytics)
+// Module 17086 (useAutoSettingsSearchSessionAnalytics)
 import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 6492 */;
 import usePreviousDefault from "usePrevious" /* 7946 */;
 import react from "react" /* 19 */;
 import AppStateStore from "AppStateStore" /* 1986 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14497 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14501 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

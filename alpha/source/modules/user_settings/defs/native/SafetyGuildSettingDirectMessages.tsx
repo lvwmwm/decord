@@ -1,9 +1,9 @@
-// Module ID: 15782
-// Function ID: 15783
+// Module ID: 15786
+// Function ID: 15787
 // Name: SafetyGuildSettingDirectMessages
-// Dependencies: [2074, 15774, 7634, 11130, 558, 14621, 576, 15777, 2028, 5707, 1126, 5783, 6491, 15783, 11129, 2]
+// Dependencies: [2074, 15778, 7634, 11130, 558, 14625, 576, 15781, 2028, 5707, 1126, 5783, 6491, 15787, 11129, 2]
 
-// Module 15782 (SafetyGuildSettingDirectMessages)
+// Module 15786 (SafetyGuildSettingDirectMessages)
 import react from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2028 */;
@@ -11,11 +11,11 @@ import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
 import AlertDefault from "Alert" /* 5783 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
 import SettingRendererConstants from "SettingRendererConstants" /* 11130 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14621 */;
-import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 15777 */;
-import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 15783 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14625 */;
+import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 15781 */;
+import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 15787 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 15774 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 15778 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;

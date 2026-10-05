@@ -1,9 +1,9 @@
-// Module ID: 15087
-// Function ID: 15088
+// Module ID: 15091
+// Function ID: 15092
 // Name: SettingsAppearanceThemeCarousel
-// Dependencies: [19, 17, 15088, 1085, 21, 4612, 1188, 4890, 587, 558, 576, 5770, 12, 4855, 1241, 1126, 15089, 4891, 4894, 8865, 4886, 1615, 10491, 15092, 2]
+// Dependencies: [19, 17, 15092, 1085, 21, 4612, 1188, 4890, 587, 558, 576, 5770, 12, 4855, 1241, 1126, 15093, 4891, 4894, 8865, 4886, 1615, 10491, 15096, 2]
 
-// Module 15087 (SettingsAppearanceThemeCarousel)
+// Module 15091 (SettingsAppearanceThemeCarousel)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -14,7 +14,7 @@ import HapticUtils from "HapticUtils" /* 4855 */;
 import timing from "timing" /* 4891 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15088 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15092 */;
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
 import createStyles_mod from "createStyles" /* 4890 */;
@@ -225,8 +225,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((themes) => {
   }
   class P {
     constructor() {
-      closure_0 = setTimeout(() => { /* body not rendered: F144327 */ }, 5500);
-      return () => { /* body not rendered: F144328 */ };
+      closure_0 = setTimeout(() => { /* body not rendered: F144573 */ }, 5500);
+      return () => { /* body not rendered: F144574 */ };
     }
   }
   items = [sharedValue, sharedValue1];

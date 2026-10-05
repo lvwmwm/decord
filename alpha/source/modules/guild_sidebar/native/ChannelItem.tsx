@@ -1,9 +1,9 @@
-// Module ID: 16050
-// Function ID: 16051
+// Module ID: 16054
+// Function ID: 16055
 // Name: ChannelItem
-// Dependencies: [109, 19, 17, 4930, 4519, 1377, 1085, 2058, 5072, 21, 4890, 587, 5620, 12016, 558, 576, 1402, 5974, 16051, 5859, 5812, 504, 1188, 5797, 1112, 16052, 5043, 2]
+// Dependencies: [109, 19, 17, 4930, 4519, 1377, 1085, 2058, 5072, 21, 4890, 587, 5620, 12016, 558, 576, 1402, 5974, 16055, 5859, 5812, 504, 1188, 5797, 1112, 16056, 5043, 2]
 
-// Module 16050 (ChannelItem)
+// Module 16054 (ChannelItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,7 +16,7 @@ import utils_ChannelUtils from "utils/ChannelUtils" /* 5812 */;
 import BookCheckIcon2 from "BookCheckIcon" /* 5859 */;
 import FastImageDefault from "FastImage" /* 5974 */;
 import BaseChannelItem from "BaseChannelItem" /* 12016 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16051 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16055 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 4930 */;

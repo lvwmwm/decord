@@ -1,9 +1,9 @@
-// Module ID: 17644
-// Function ID: 17645
+// Module ID: 17668
+// Function ID: 17669
 // Name: GuildSettingsModalOverview
-// Dependencies: [19, 2070, 2051, 4507, 4780, 4509, 4519, 1377, 9248, 1085, 21, 4890, 587, 1126, 4589, 4567, 6010, 6880, 9247, 12102, 17645, 1390, 6693, 5708, 5783, 6098, 5043, 6074, 5993, 7651, 17456, 6726, 6698, 6072, 6071, 2115, 17646, 1402, 9767, 1188, 6580, 5939, 8895, 5593, 6536, 558, 576, 1490, 504, 2]
+// Dependencies: [19, 2070, 2051, 4507, 4780, 4509, 4519, 1377, 9248, 1085, 21, 4890, 587, 1126, 4589, 4567, 6010, 6880, 9247, 12102, 17669, 1390, 6693, 5708, 5783, 6098, 5043, 6074, 5993, 7651, 17480, 6726, 6698, 6072, 6071, 2115, 17670, 1402, 9767, 1188, 6580, 5939, 8895, 5593, 6536, 558, 576, 1490, 504, 2]
 
-// Module 17644 (GuildSettingsModalOverview)
+// Module 17668 (GuildSettingsModalOverview)
 import nativeDefault from "native" /* 587 */;
 import intl13 from "intl" /* 1126 */;
 import native from "native" /* 1188 */;
@@ -32,7 +32,7 @@ import Form2 from "Form" /* 8895 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
 import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 9767 */;
 import openChannelPickerDefault from "openChannelPicker" /* 12102 */;
-import AssetChooserDefault from "AssetChooser" /* 17646 */;
+import AssetChooserDefault from "AssetChooser" /* 17670 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildChannelStore from "GuildChannelStore" /* 4507 */;
@@ -478,7 +478,7 @@ class GuildSettingsModalOverview extends PureComponent {
       const tmpResult14 = tmp(1390);
       hasFlagResult1 = tmpResult14.hasFlag(guild.systemChannelFlags, constants6.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
     }
-    const tmpResult15 = tmp(17456);
+    const tmpResult15 = tmp(17480);
     let result1 = tmpResult15.isPastVcActivityMessagesEnabled(guild.id, "GuildSettingsModalOverview");
     if (!result1) {
       const tmpResult16 = tmp(1390);

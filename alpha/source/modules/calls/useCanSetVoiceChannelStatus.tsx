@@ -1,10 +1,10 @@
-// Module ID: 17230
-// Function ID: 17231
+// Module ID: 17254
+// Function ID: 17255
 // Name: useCanSetVoiceChannelStatus
 // Dependencies: [4509, 1096, 4514, 558, 576, 504, 2]
 // Exports: _canSetVoiceChannelStatus, canSetVoiceChannelStatus
 
-// Module 17230 (useCanSetVoiceChannelStatus)
+// Module 17254 (useCanSetVoiceChannelStatus)
 import Constants from "Constants" /* 1096 */;
 import PermissionStore_mod from "PermissionStore" /* 4509 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
       closure_1 = closure_3;
       closure_2 = closure_1;
       obj = closure_2 ? closure_5 : closure_4;
-      return obj.every(() => { /* body not rendered: F129162 */ });
+      return obj.every(() => { /* body not rendered: F129400 */ });
     }
   }
   items1 = [arg0, undefined !== arg1 && arg1, arg2];

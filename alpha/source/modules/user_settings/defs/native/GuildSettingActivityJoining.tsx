@@ -1,15 +1,15 @@
-// Module ID: 15788
-// Function ID: 15789
+// Module ID: 15792
+// Function ID: 15793
 // Name: GuildSettingActivityJoining
-// Dependencies: [15774, 7634, 558, 576, 2028, 6491, 11129, 1126, 2]
+// Dependencies: [15778, 7634, 558, 576, 2028, 6491, 11129, 1126, 2]
 
-// Module 15788 (GuildSettingActivityJoining)
+// Module 15792 (GuildSettingActivityJoining)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2028 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 6491 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 15774 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 15778 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;

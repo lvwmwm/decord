@@ -1,9 +1,9 @@
-// Module ID: 15142
-// Function ID: 15143
+// Module ID: 15146
+// Function ID: 15147
 // Name: AccessibilitySetting
-// Dependencies: [32, 19, 1085, 2048, 21, 2036, 558, 576, 6891, 1188, 1126, 11129, 15143, 15145, 2]
+// Dependencies: [32, 19, 1085, 2048, 21, 2036, 558, 576, 6891, 1188, 1126, 11129, 15147, 15149, 2]
 
-// Module 15142 (AccessibilitySetting)
+// Module 15146 (AccessibilitySetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
@@ -11,7 +11,7 @@ import intl2 from "intl" /* 1126 */;
 import dismissible_content from "dismissible_content" /* 2036 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
 import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6891 */;
-import AccessibilityIcon from "AccessibilityIcon" /* 15143 */;
+import AccessibilityIcon from "AccessibilityIcon" /* 15147 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

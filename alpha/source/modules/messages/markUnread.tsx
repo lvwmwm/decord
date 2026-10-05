@@ -37,7 +37,7 @@ let obj = function _markUnread() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let obj = function _markUnread() {
                 post(request);
               }
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else if (1 === mention_count) {
             if (arg0 === 1) {

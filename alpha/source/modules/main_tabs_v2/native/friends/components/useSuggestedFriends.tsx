@@ -1,9 +1,9 @@
-// Module ID: 15969
-// Function ID: 15970
+// Module ID: 15973
+// Function ID: 15974
 // Name: useSuggestedFriends
 // Dependencies: [32, 19, 7146, 12348, 558, 576, 573, 4722, 12, 2]
 
-// Module 15969 (useSuggestedFriends)
+// Module 15973 (useSuggestedFriends)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import UserUtilsDefault from "UserUtils" /* 4722 */;

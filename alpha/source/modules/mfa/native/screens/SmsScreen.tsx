@@ -1,10 +1,10 @@
-// Module ID: 15507
-// Function ID: 15508
+// Module ID: 15511
+// Function ID: 15512
 // Name: SmsScreen
-// Dependencies: [5, 32, 19, 17, 1085, 21, 6432, 15501, 1126, 1282, 15504, 15500, 6098, 5594, 15499, 2]
+// Dependencies: [5, 32, 19, 17, 1085, 21, 6432, 15505, 1126, 1282, 15508, 15504, 6098, 5594, 15503, 2]
 // Exports: default
 
-// Module 15507 (SmsScreen)
+// Module 15511 (SmsScreen)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
@@ -67,7 +67,7 @@ export default function SmsScreen(mfaChallenge) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c5;
@@ -127,7 +127,7 @@ export default function SmsScreen(mfaChallenge) {
             closure_131_3(false);
           }
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp27) {
           closure_4 = tmp27;
           if (0 === c5) {
@@ -155,7 +155,7 @@ export default function SmsScreen(mfaChallenge) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -227,7 +227,7 @@ export default function SmsScreen(mfaChallenge) {
             c4 = 0;
             closure_130_3(false);
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp30) {
           closure_3 = tmp30;
@@ -246,7 +246,7 @@ export default function SmsScreen(mfaChallenge) {
   };
   let tmp = dependencyMap;
   const tmp2 = finish(6432)();
-  obj = finish(15501);
+  obj = finish(15505);
   const screenStyles = obj.useScreenStyles(tmp2);
   const tmp4 = first1(react.useState(null), 2);
   dependencyMap = tmp4[1];
@@ -289,10 +289,10 @@ export default function SmsScreen(mfaChallenge) {
     });
   }, items);
   let obj2 = { headerText: intl2.string(mfaChallenge(1126).t.o4JNrO), subtitle: tmp11, input: obj(c6, obj3), submit: tmp15(tmp17, obj6), screenProps: { mfaChallenge, finish }, mfaMethod: "sms" };
-  const tmp16 = finish(15500);
+  const tmp16 = finish(15504);
   intl2 = mfaChallenge(1126).intl;
   obj3 = { style: screenStyles.inputContainer, children: items1 };
-  let obj4 = { autoFocus: true, autoCapitalize: "characters", maxLength: mfaChallenge(15504).SMS_CODE_LENGTH, autoComplete: "sms-otp", textContentType: "oneTimeCode", keyboardType: "number-pad", onChange: handleChange, label: intl3.string(mfaChallenge(1126).t["/sHnXc"]), placeholder: intl4.string(mfaChallenge(1126).t.tARzgo), errorMessage: first };
+  let obj4 = { autoFocus: true, autoCapitalize: "characters", maxLength: mfaChallenge(15508).SMS_CODE_LENGTH, autoComplete: "sms-otp", textContentType: "oneTimeCode", keyboardType: "number-pad", onChange: handleChange, label: intl3.string(mfaChallenge(1126).t["/sHnXc"]), placeholder: intl4.string(mfaChallenge(1126).t.tARzgo), errorMessage: first };
   const TextInput = mfaChallenge(6098).TextInput;
   intl3 = mfaChallenge(1126).intl;
   intl4 = mfaChallenge(1126).intl;
@@ -317,14 +317,14 @@ export default function SmsScreen(mfaChallenge) {
     },
     disabled: tmp7
   };
-  tmp17 = finish(15499);
+  tmp17 = finish(15503);
   intl6 = mfaChallenge(1126).intl;
   const tmp9 = mfaChallenge;
   if (!tmp7) {
     tmp7 = tmp13;
   }
   if (!tmp7) {
-    tmp7 = first1.length !== tmp9(15504).SMS_CODE_LENGTH;
+    tmp7 = first1.length !== tmp9(15508).SMS_CODE_LENGTH;
   }
   return handleChange(tmp16, obj2);
 };

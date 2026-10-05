@@ -177,7 +177,7 @@ const forwardRefResult = react.forwardRef((hidden, ref) => {
   return <tmp10 userInterfaceStyle={arg0.experimental_userInterfaceStyle} headerLeftBarButtonItems={result} headerRightBarButtonItems={result1} onPressHeaderBarButtonItem={fn} onPressHeaderBarButtonMenuItem={fn2} ref={arg1} style={closure_9.headerConfig} pointerEvents="box-none" synchronousShadowStateUpdatesEnabled={get_synchronousScreenUpdatesEnabledDefault.experiment.synchronousHeaderConfigUpdatesEnabled} consumeTopInset={appliesTopInset} consumeLeftInset={consumeLeftInset} consumeRightInset={consumeRightInset} consumeBottomInset={consumeBottomInset} legacyTopInsetBehavior={useLegacyBehavior} />;
 });
 forwardRefResult.displayName = "ScreenStackHeaderConfig";
-const styles = StyleSheet.create({ headerSubview: { flexDirection: "row", alignItems: "center", justifyContent: "center" }, headerSubviewCenter: { flexDirection: "row", alignItems: "center", justifyContent: "center", flexShrink: 1 }, headerConfig: { position: "absolute", width: "100%", flexDirection: "row", justifyContent: "space-between", alignItems: "application" } });
+const styles = StyleSheet.create({ headerSubview: { flexDirection: "row", alignItems: "center", justifyContent: "center" }, headerSubviewCenter: { flexDirection: "row", alignItems: "center", justifyContent: "center", flexShrink: 1 }, headerConfig: { position: "absolute", width: "100%", flexDirection: "row", justifyContent: "space-between", alignItems: "applicationId" } });
 
 export const ScreenStackHeaderSubview = react_nativeDefault;
 export const ScreenStackHeaderConfig = forwardRefResult;

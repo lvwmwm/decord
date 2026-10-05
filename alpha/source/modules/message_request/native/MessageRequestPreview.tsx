@@ -1,9 +1,9 @@
-// Module ID: 17034
-// Function ID: 17035
+// Module ID: 17058
+// Function ID: 17059
 // Name: MessageRequestPreview
 // Dependencies: [19, 17, 4519, 1085, 21, 4890, 5915, 587, 558, 576, 12259, 504, 1252, 1126, 7531, 5428, 1188, 2]
 
-// Module 17034 (MessageRequestPreview)
+// Module 17058 (MessageRequestPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;

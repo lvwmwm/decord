@@ -48,7 +48,7 @@ function FederatedSocialModalScreen(onClose) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -110,7 +110,7 @@ function FederatedSocialModalScreen(onClose) {
               }
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp26) {
           closure_2 = tmp26;

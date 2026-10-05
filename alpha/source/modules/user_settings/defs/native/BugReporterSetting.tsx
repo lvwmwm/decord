@@ -1,15 +1,15 @@
-// Module ID: 15615
-// Function ID: 15616
+// Module ID: 15619
+// Function ID: 15620
 // Name: BugReporterSetting
-// Dependencies: [12524, 5093, 12525, 1987, 558, 576, 12539, 11129, 1126, 15616, 2]
+// Dependencies: [12524, 5093, 12525, 1987, 558, 576, 12539, 11129, 1126, 15620, 2]
 
-// Module 15615 (BugReporterSetting)
+// Module 15619 (BugReporterSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
 import BugReporterExperimentDefault from "BugReporterExperiment" /* 12539 */;
-import BugIcon from "BugIcon" /* 15616 */;
+import BugIcon from "BugIcon" /* 15620 */;
 import BugReportStore from "BugReportStore" /* 12524 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;

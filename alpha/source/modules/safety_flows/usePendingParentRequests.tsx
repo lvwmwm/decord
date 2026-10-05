@@ -1,9 +1,9 @@
-// Module ID: 18053
-// Function ID: 18054
+// Module ID: 18075
+// Function ID: 18076
 // Name: usePendingParentRequests
 // Dependencies: [32, 19, 7048, 1377, 7049, 558, 576, 504, 8295, 11528, 2]
 
-// Module 18053 (usePendingParentRequests)
+// Module 18075 (usePendingParentRequests)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7049 */;
@@ -511,7 +511,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingRequests) => 
   let tmp15;
   let tmp16;
   let tmp4;
-  const f132853 = () => {
+  const f133091 = () => {
     set = new Set();
     return set;
   };
@@ -540,8 +540,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingRequests) => 
   const declineLinkRequest = familyCenterActions.declineLinkRequest;
   ({ isAcceptLoading, isDeclineLoading } = familyCenterActions);
   let closure_5 = tmp6;
-  [c6, c7] = tmp2(react.useState(f132853), 2);
-  tmp2(react.useState(f132853), 2);
+  [c6, c7] = tmp2(react.useState(f133091), 2);
+  tmp2(react.useState(f133091), 2);
   const callback = obj2.useCallback((arg0) => {
     let closure_0 = arg0;
     let tmp = _undefined3(function(has) {
@@ -720,7 +720,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let stateFromStores;
   let tmp3;
   let tmp4;
-  const f132862 = () => {
+  const f133100 = () => {
     let str = "connected";
     if (stateFromStores !== UserLinkStatus.ACTIVE) {
       let str2;
@@ -744,8 +744,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return link_status;
   });
-  [tmp3, tmp4] = _slicedToArray(react.useState(f132862), 2);
-  const tmp2 = _slicedToArray(react.useState(f132862), 2);
+  [tmp3, tmp4] = _slicedToArray(react.useState(f133100), 2);
+  const tmp2 = _slicedToArray(react.useState(f133100), 2);
   const tmp5 = _slicedToArray(react.useState(stateFromStores), 2);
   const first = tmp5[0];
   if (stateFromStores !== first) {

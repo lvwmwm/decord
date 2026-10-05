@@ -1,9 +1,9 @@
-// Module ID: 17066
-// Function ID: 17067
+// Module ID: 17090
+// Function ID: 17091
 // Name: PictureInPictureGlobal
-// Dependencies: [32, 19, 17, 2050, 4906, 9064, 502, 1999, 1085, 4911, 21, 4890, 1188, 587, 558, 576, 9069, 504, 9016, 9059, 5097, 9068, 5912, 9071, 8008, 9088, 9092, 9105, 9120, 9049, 9130, 9089, 9067, 11825, 4612, 4891, 6068, 17067, 1618, 2]
+// Dependencies: [32, 19, 17, 2050, 4906, 9064, 502, 1999, 1085, 4911, 21, 4890, 1188, 587, 558, 576, 9069, 504, 9016, 9059, 5097, 9068, 5912, 9071, 8008, 9088, 9092, 9105, 9120, 9049, 9130, 9089, 9067, 11825, 4612, 4891, 6068, 17091, 1618, 2]
 
-// Module 17066 (PictureInPictureGlobal)
+// Module 17090 (PictureInPictureGlobal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -16,7 +16,7 @@ import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9016 */;
 import transitionToActivityDefault from "transitionToActivity" /* 9049 */;
 import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9064 */;
 import PictureInPictureDefault from "PictureInPicture" /* 9067 */;
-import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 17067 */;
+import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 17091 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -628,11 +628,11 @@ let closure_20 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((channel)
 }) : ((channel) => {
   let tmp2;
   let tmp3;
-  const f128259 = () => constants.TOP_RIGHT;
+  const f128497 = () => constants.TOP_RIGHT;
   channel = channel.channel;
-  [tmp2, tmp3] = react.useState(f128259);
+  [tmp2, tmp3] = react.useState(f128497);
   const obj = { channel, preferredPosition: tmp2, onMove: tmp3, children: closure_15(closure_19, { channel }) };
-  _slicedToArray(react.useState(f128259), 2);
+  _slicedToArray(react.useState(f128497), 2);
   const tmp4 = PictureInPictureDefault;
   return closure_15(tmp4, obj);
 }));

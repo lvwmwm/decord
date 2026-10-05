@@ -446,7 +446,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((botUserId) => 
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -515,7 +515,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((botUserId) => 
           clearTimeout(ref.current);
           c3(false);
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp18) {
         analyticsLocations = tmp18;
@@ -563,7 +563,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((botUserId) => 
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -631,7 +631,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((botUserId) => 
           clearTimeout(closure_129_4.current);
           closure_129_3(false);
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp18) {
         let closure_2 = tmp18;

@@ -1,15 +1,15 @@
-// Module ID: 16039
-// Function ID: 16040
+// Module ID: 16043
+// Function ID: 16044
 // Name: VoiceChannelUserLimit
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1188, 13600, 4886, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1188, 13602, 4886, 2]
 
-// Module 16039 (VoiceChannelUserLimit)
+// Module 16043 (VoiceChannelUserLimit)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1188 */;
 import Text_Text from "Text/Text" /* 4886 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13600 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13602 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4890 */;

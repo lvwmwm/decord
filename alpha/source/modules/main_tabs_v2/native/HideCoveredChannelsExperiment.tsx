@@ -1,9 +1,9 @@
-// Module ID: 16472
-// Function ID: 16473
+// Module ID: 16476
+// Function ID: 16477
 // Name: HideCoveredChannelsExperiment
 // Dependencies: [1440, 2]
 
-// Module 16472 (HideCoveredChannelsExperiment)
+// Module 16476 (HideCoveredChannelsExperiment)
 import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 

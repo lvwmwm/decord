@@ -1,10 +1,10 @@
-// Module ID: 15396
-// Function ID: 15397
+// Module ID: 15400
+// Function ID: 15401
 // Name: CacheActionCreators
 // Dependencies: [5, 2051, 6985, 584, 2]
 // Exports: clearCaches, writeCaches
 
-// Module 15396 (CacheActionCreators)
+// Module 15400 (CacheActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -64,7 +64,7 @@ let obj = function _writeCaches() {
     if (closure_0 === undefined) {
       flag = false;
     }
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };

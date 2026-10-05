@@ -1,9 +1,9 @@
-// Module ID: 14686
-// Function ID: 14687
+// Module ID: 14690
+// Function ID: 14691
 // Name: QrCodeIcon
 // Dependencies: [109, 19, 21, 558, 576, 587, 9523, 4579, 2]
 
-// Module 14686 (QrCodeIcon)
+// Module 14690 (QrCodeIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

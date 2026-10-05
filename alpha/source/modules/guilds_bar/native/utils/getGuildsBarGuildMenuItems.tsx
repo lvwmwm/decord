@@ -1,10 +1,10 @@
-// Module ID: 16222
-// Function ID: 16223
+// Module ID: 16226
+// Function ID: 16227
 // Name: getGuildsBarGuildMenuItems
-// Dependencies: [5, 2074, 5071, 1085, 9849, 4817, 1126, 13771, 1987, 9266, 6614, 6883, 13718, 12014, 4854, 11064, 12015, 6609, 2]
+// Dependencies: [5, 2074, 5071, 1085, 9849, 4817, 1126, 13773, 1987, 9266, 6614, 6883, 13720, 12014, 4854, 11064, 12015, 6609, 2]
 // Exports: default
 
-// Module 16222 (getGuildsBarGuildMenuItems)
+// Module 16226 (getGuildsBarGuildMenuItems)
 import Constants from "Constants" /* 1085 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
@@ -12,7 +12,7 @@ import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6609 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6614 */;
 import AssetRegistryDefault from "AssetRegistry" /* 12014 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 12015 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 13718 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 13720 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildStore from "GuildStore" /* 2074 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
@@ -49,7 +49,7 @@ export default function getGuildsBarGuildMenuItems(guildId) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -79,7 +79,7 @@ export default function getGuildsBarGuildMenuItems(guildId) {
               const items = [closure_128_0];
               value.default(items, constants.GUILD_LIST);
               paths = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp10) {
             paths = 3;

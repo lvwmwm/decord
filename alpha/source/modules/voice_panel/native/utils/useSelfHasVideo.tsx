@@ -1,9 +1,9 @@
-// Module ID: 17344
-// Function ID: 17345
+// Module ID: 17368
+// Function ID: 17369
 // Name: useSelfHasVideo
 // Dependencies: [4906, 502, 1999, 558, 576, 9119, 504, 2]
 
-// Module 17344 (useSelfHasVideo)
+// Module 17368 (useSelfHasVideo)
 import participantHasVideo from "participantHasVideo" /* 9119 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

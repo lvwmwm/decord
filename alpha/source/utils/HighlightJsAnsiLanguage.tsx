@@ -19,7 +19,7 @@ export default function highlightJsAnsiLanguage() {
   let items6;
   let length;
   let sum;
-  const f89294 = (item) => {
+  const f89437 = (item) => {
     let tmp;
     let tmp2;
     [tmp, tmp2] = item;
@@ -58,7 +58,7 @@ export default function highlightJsAnsiLanguage() {
   let num = 0;
   items.push.apply(items1);
   const entries = Object.entries(items);
-  const items2 = [...entries.map(f89294)];
+  const items2 = [...entries.map(f89437)];
   const background = "background";
   const items3 = ["0", ...["48", "49"]];
   const items4 = [...Object.keys(closure_2)];
@@ -66,10 +66,10 @@ export default function highlightJsAnsiLanguage() {
   const entries1 = Object.entries(closure_2);
   const style = "style";
   const items5 = ["0", ...[]];
-  const arraySpreadResult = HermesBuiltin.arraySpread(items2, entries1.map(f89294), tmp3);
+  const arraySpreadResult = HermesBuiltin.arraySpread(items2, entries1.map(f89437), tmp3);
   const entries2 = Object.entries(foreground);
   let obj = { className: "ansi-control-sequence", begin, starts: { end: regExp, endsParent: true } };
-  items2[HermesBuiltin.arraySpread(items2, entries2.map(f89294), arraySpreadResult)] = obj;
+  items2[HermesBuiltin.arraySpread(items2, entries2.map(f89437), arraySpreadResult)] = obj;
   let tmp6 = regExp;
   if (0 < items2.length) {
     do {

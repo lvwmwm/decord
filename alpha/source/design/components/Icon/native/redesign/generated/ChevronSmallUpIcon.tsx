@@ -1,9 +1,9 @@
-// Module ID: 13377
-// Function ID: 13378
+// Module ID: 13379
+// Function ID: 13380
 // Name: ChevronSmallUpIcon
 // Dependencies: [109, 19, 21, 558, 576, 587, 12312, 4579, 2]
 
-// Module 13377 (ChevronSmallUpIcon)
+// Module 13379 (ChevronSmallUpIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

@@ -1,9 +1,9 @@
-// Module ID: 15647
-// Function ID: 15648
+// Module ID: 15651
+// Function ID: 15652
 // Name: UserSettingsDesignSystemTableRow
-// Dependencies: [32, 19, 17, 4699, 1377, 1085, 21, 558, 576, 5993, 6883, 504, 1618, 4886, 1402, 6074, 1188, 6698, 5990, 6072, 6071, 5999, 13925, 13922, 13923, 13924, 8897, 5593, 5605, 2]
+// Dependencies: [32, 19, 17, 4699, 1377, 1085, 21, 558, 576, 5993, 6883, 504, 1618, 4886, 1402, 6074, 1188, 6698, 5990, 6072, 6071, 5999, 13927, 13924, 13925, 13926, 8897, 5593, 5605, 2]
 
-// Module 15647 (UserSettingsDesignSystemTableRow)
+// Module 15651 (UserSettingsDesignSystemTableRow)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import native from "native" /* 1188 */;
@@ -20,10 +20,10 @@ import TableRowGroup5 from "TableRowGroup" /* 6074 */;
 import TableSwitchRow3 from "TableSwitchRow" /* 6698 */;
 import SettingsIcon from "SettingsIcon" /* 6883 */;
 import RowButton3 from "RowButton" /* 8897 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13922 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13923 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13924 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13925 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13924 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13925 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13926 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13927 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,14 +1,14 @@
-// Module ID: 17018
-// Function ID: 17019
+// Module ID: 17042
+// Function ID: 17043
 // Name: PinsScreen
-// Dependencies: [19, 17, 2051, 7513, 21, 4890, 587, 558, 576, 1493, 504, 11927, 16878, 2]
+// Dependencies: [19, 17, 2051, 7513, 21, 4890, 587, 558, 576, 1493, 504, 11927, 16897, 2]
 
-// Module 17018 (PinsScreen)
+// Module 17042 (PinsScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import SearchConstants from "SearchConstants" /* 7513 */;
-import messages_PinsScreenDefault from "messages/PinsScreen" /* 16878 */;
+import messages_PinsScreenDefault from "messages/PinsScreen" /* 16897 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import createStyles from "createStyles" /* 4890 */;

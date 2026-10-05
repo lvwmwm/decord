@@ -491,7 +491,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c2;
@@ -537,7 +537,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
           c2 = 0;
         }
         c3 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp16) {
         if (0 === c2) {
           c3 = 3;

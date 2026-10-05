@@ -1,9 +1,9 @@
-// Module ID: 17420
-// Function ID: 17421
+// Module ID: 17444
+// Function ID: 17445
 // Name: AgeGateManager
-// Dependencies: [5, 2051, 2103, 4699, 1110, 1085, 6613, 5100, 5093, 17421, 1987, 1105, 2]
+// Dependencies: [5, 2051, 2103, 4699, 1110, 1085, 6613, 5100, 5093, 17445, 1987, 1105, 2]
 
-// Module 17420 (AgeGateManager)
+// Module 17444 (AgeGateManager)
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
 import AgeGateUtils from "AgeGateUtils" /* 5100 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

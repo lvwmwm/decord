@@ -1,7 +1,7 @@
 // Module ID: 4929
 // Function ID: 4930
 // Name: StreamRTCConnectionStore
-// Dependencies: [2006, 502, 1999, 4930, 4913, 1085, 4932, 38, 4934, 12, 4942, 7228, 584, 4945, 1369, 504, 13610, 2]
+// Dependencies: [2006, 502, 1999, 4930, 4913, 1085, 4932, 38, 4934, 12, 4942, 7228, 584, 4945, 1369, 504, 13612, 2]
 
 // Module 4929 (StreamRTCConnectionStore)
 import _modDef12 from "module_12" /* 12 */;
@@ -12,7 +12,7 @@ import Constants2 from "Constants" /* 4932 */;
 import StreamRTCConnectionDefault from "StreamRTCConnection" /* 4934 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 4942 */;
 import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7228 */;
-import canSpectateDefault from "canSpectate" /* 13610 */;
+import canSpectateDefault from "canSpectate" /* 13612 */;
 import RunningGameStore from "RunningGameStore" /* 2006 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
@@ -27,7 +27,7 @@ let c9;
 let obj2;
 let tmp;
 const BaseConnectionEvent = tmp(4945);
-const f89570 = (destroy, arg1) => {
+const f89713 = (destroy, arg1) => {
   let str = "receiver-disconnect";
   destroy = destroy.destroy;
   if (destroy.isOwner) {
@@ -204,12 +204,12 @@ if (MediaEngineStore.isSupported()) {
     CONNECTION_OPEN: function handleConnectionOpen(sessionId) {
         sessionId = sessionId.sessionId;
         const arr = _modDef12;
-        const item = arr.forEach(closure_18, f89570);
+        const item = arr.forEach(closure_18, f89713);
       },
     CONNECTION_CLOSED: function handleConnectionClosed() {
         let c3 = null;
         const arr = _modDef12;
-        const item = arr.forEach(closure_18, f89570);
+        const item = arr.forEach(closure_18, f89713);
       },
     RTC_CONNECTION_STATE: handleRtcAction,
     RTC_CONNECTION_PING: handleRtcAction,
@@ -312,7 +312,7 @@ if (MediaEngineStore.isSupported()) {
     STREAM_STOP: function handleStreamStop(appContext) {
         appContext = appContext.appContext;
         const streamKey = appContext.streamKey;
-        closure_11[streamKey] = { appContext, analyticsLocations: "a" };
+        closure_11[streamKey] = { appContext, analyticsLocations: "r" };
         const arr = _modDef12;
         const item = arr.forEach(closure_18, (analyticsContext) => {
           analyticsContext = analyticsContext.analyticsContext;

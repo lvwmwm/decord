@@ -1,14 +1,14 @@
-// Module ID: 14645
-// Function ID: 14646
+// Module ID: 14649
+// Function ID: 14650
 // Name: StaffOnlyFindYourFriendsDeletionSetting
-// Dependencies: [5, 17, 7634, 21, 1254, 1259, 558, 576, 4492, 12329, 1336, 4568, 11129, 14646, 2]
+// Dependencies: [5, 17, 7634, 21, 1254, 1259, 558, 576, 4492, 12329, 1336, 4568, 11129, 14650, 2]
 
-// Module 14645 (StaffOnlyFindYourFriendsDeletionSetting)
+// Module 14649 (StaffOnlyFindYourFriendsDeletionSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14646 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14650 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1254 from "module_1254" /* 1254 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -45,7 +45,7 @@ let obj = function _onFindYourFriendsDeletionPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -107,7 +107,7 @@ let obj = function _onFindYourFriendsDeletionPress() {
           closure_129_7(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp35) {
         closure_2 = tmp35;
         if (0 === c3) {

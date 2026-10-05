@@ -1,9 +1,9 @@
-// Module ID: 14270
-// Function ID: 14271
+// Module ID: 14272
+// Function ID: 14273
 // Name: StepModal
-// Dependencies: [32, 109, 19, 17, 21, 4890, 6068, 558, 576, 1618, 10976, 14271, 2]
+// Dependencies: [32, 109, 19, 17, 21, 4890, 6068, 558, 576, 1618, 10976, 14273, 2]
 
-// Module 14270 (StepModal)
+// Module 14272 (StepModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
@@ -23,7 +23,7 @@ let metroImportAll;
 let rect;
 let tmp;
 const Modal2 = tmp(10976);
-const ModalStepIndicator2 = tmp(14271);
+const ModalStepIndicator2 = tmp(14273);
 let closure_3 = ["steps", "onWillFocus"];
 const View = react_native.View;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);

@@ -1,12 +1,12 @@
-// Module ID: 17423
-// Function ID: 17424
+// Module ID: 17447
+// Function ID: 17448
 // Name: ExistingUserAgeGate
-// Dependencies: [5, 32, 19, 17, 2044, 1377, 1110, 17422, 1085, 21, 4890, 558, 576, 1490, 504, 1252, 1126, 2115, 38, 15877, 5093, 4461, 15899, 4886, 17424, 5594, 6619, 2]
+// Dependencies: [5, 32, 19, 17, 2044, 1377, 1110, 17446, 1085, 21, 4890, 558, 576, 1490, 504, 1252, 1126, 2115, 38, 15881, 5093, 4461, 15903, 4886, 17448, 5594, 6619, 2]
 
-// Module 17423 (ExistingUserAgeGate)
+// Module 17447 (ExistingUserAgeGate)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 17422 */;
+import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 17446 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -356,7 +356,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSuccess) => {
                             const obj2 = { value, done: true };
                             return obj2;
                           } else {
-                            return { value: "IconComponent", done: "IconComponent" };
+                            return { value: "IconComponent", done: null };
                           }
                         } else {
                           try {
@@ -399,7 +399,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSuccess) => {
                               return obj;
                             }
                             c0 = 3;
-                            return { value: "IconComponent", done: "IconComponent" };
+                            return { value: "IconComponent", done: null };
                           } catch (tmp9) {
                             c0 = 3;
                             throw tmp9;
@@ -455,7 +455,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSuccess) => {
                           } else if (arg0 === 2) {
                             return { value, done: true };
                           } else {
-                            return { value: "IconComponent", done: "IconComponent" };
+                            return { value: "IconComponent", done: null };
                           }
                         } else {
                           try {
@@ -737,7 +737,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSuccess) => {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -837,7 +837,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSuccess) => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -880,7 +880,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSuccess) => {
             return obj;
           }
           c0 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp9) {
           c0 = 3;
           throw tmp9;

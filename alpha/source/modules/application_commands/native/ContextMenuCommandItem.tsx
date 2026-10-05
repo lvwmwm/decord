@@ -1,9 +1,9 @@
-// Module ID: 17025
-// Function ID: 17026
+// Module ID: 17049
+// Function ID: 17050
 // Name: ContextMenuCommandItem
 // Dependencies: [19, 17, 21, 4890, 587, 558, 576, 12, 5993, 1126, 11860, 5974, 1985, 4841, 2]
 
-// Module 17025 (ContextMenuCommandItem)
+// Module 17049 (ContextMenuCommandItem)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

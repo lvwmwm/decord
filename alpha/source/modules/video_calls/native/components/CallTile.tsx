@@ -515,7 +515,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { aspectRatio: "done", borderRadius: false };
+      const obj2 = { aspectRatio: "duration", borderRadius: false };
       cResult[3] = obj2;
       tmp6 = obj2;
     } else {
@@ -572,7 +572,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj2 = {
     guildId: participant.stream.guildId,
     userId: participant.user.id,
-    style: { aspectRatio: "done", borderRadius: false },
+    style: { aspectRatio: "duration", borderRadius: false },
     disableTransition: true,
     onPress() {
       return closure_1_8();

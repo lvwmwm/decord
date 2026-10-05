@@ -1,17 +1,17 @@
-// Module ID: 16429
-// Function ID: 16430
+// Module ID: 16433
+// Function ID: 16434
 // Name: AnnouncementMessageRow
-// Dependencies: [19, 17, 2051, 2074, 4519, 5071, 1377, 16430, 21, 16390, 587, 558, 576, 504, 5705, 8029, 10651, 11280, 16431, 16393, 1126, 11, 9260, 16433, 5909, 16437, 16438, 2]
+// Dependencies: [19, 17, 2051, 2074, 4519, 5071, 1377, 16434, 21, 16394, 587, 558, 576, 504, 5705, 8029, 10651, 11280, 16435, 16397, 1126, 11, 9260, 16437, 5909, 16441, 16442, 2]
 
-// Module 16429 (AnnouncementMessageRow)
+// Module 16433 (AnnouncementMessageRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 5705 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8029 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10651 */;
 import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 11280 */;
-import DesignConstants from "DesignConstants" /* 16430 */;
-import ICYMIShared from "ICYMIShared" /* 16431 */;
+import DesignConstants from "DesignConstants" /* 16434 */;
+import ICYMIShared from "ICYMIShared" /* 16435 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildStore from "GuildStore" /* 2074 */;
@@ -19,7 +19,7 @@ import RelationshipStore from "RelationshipStore" /* 4519 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
 import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16390 */;
+import createICYMIStyles from "createICYMIStyles" /* 16394 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

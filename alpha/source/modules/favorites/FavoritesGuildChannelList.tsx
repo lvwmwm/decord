@@ -1,9 +1,9 @@
-// Module ID: 16208
-// Function ID: 16209
+// Module ID: 16212
+// Function ID: 16213
 // Name: FavoritesGuildChannelList
 // Dependencies: [32, 19, 2050, 5436, 7037, 5691, 4511, 2055, 6612, 2051, 7038, 4509, 4905, 2103, 5071, 2054, 4508, 2065, 7045, 1096, 7039, 1197, 6817, 558, 576, 10036, 12, 1375, 2]
 
-// Module 16208 (FavoritesGuildChannelList)
+// Module 16212 (FavoritesGuildChannelList)
 import Constants from "Constants" /* 1096 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
 import createFavoritesGuildChannelRecord from "createFavoritesGuildChannelRecord" /* 4508 */;
@@ -38,7 +38,7 @@ let c9;
 let closure_20;
 let closure_21;
 let metroImportAll;
-const f123271 = () => {
+const f123424 = () => {
   c0 = true;
 };
 function getMissingFavoriteThreadIds(includeLoading) {
@@ -94,7 +94,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
   let channelMuted;
   let closure_2;
   let closure_3;
-  const f145394 = (arg0) => {
+  const f145640 = (arg0) => {
     let position;
     let record;
     let sum;
@@ -271,7 +271,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
           activeJoinedUnreadThreadsForParent = closure_3_6.getActiveJoinedRelevantThreadsForParent(isPrivate.guild_id, isPrivate.id);
         });
         const found = mapped.filter(favoriteChannels(closure_2[27]).isNotNullish);
-        const iter = found.sortBy(f145394);
+        const iter = found.sortBy(f145640);
         closure_6 = iter.value();
       }
       return closure_6;
@@ -414,7 +414,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
               });
               let tmp4 = items;
               const found = mapped.filter(items(closure_1_2[27]).isNotNullish);
-              const iter = found.sortBy(f145394);
+              const iter = found.sortBy(f145640);
               closure_1 = iter.value();
             }
             return closure_1;
@@ -833,7 +833,7 @@ let tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
       }
-      obj5.forEachShownChannel(f123271);
+      obj5.forEachShownChannel(f123424);
       flag2 = !closure_129_0;
     }
     cResult[14] = obj5;
@@ -938,7 +938,7 @@ let tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let flag2 = false;
   if (memo.getSections().length <= tmp(7039).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
     let c0 = false;
-    memo.forEachShownChannel(f123271);
+    memo.forEachShownChannel(f123424);
     flag2 = !c0;
   }
   return { guildChannels: memo, shouldShowEmptyState: flag2 && !hasAccess, hasNoChannels: flag2 };

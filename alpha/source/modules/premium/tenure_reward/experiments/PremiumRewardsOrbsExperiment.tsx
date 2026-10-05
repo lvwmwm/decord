@@ -1,10 +1,10 @@
-// Module ID: 13539
-// Function ID: 13540
+// Module ID: 13541
+// Function ID: 13542
 // Name: PremiumRewardsOrbsExperiment
 // Dependencies: [1441, 558, 576, 2]
 // Exports: getPremiumRewardsOrbsExperiment
 
-// Module 13539 (PremiumRewardsOrbsExperiment)
+// Module 13541 (PremiumRewardsOrbsExperiment)
 import react from "react" /* 576 */;
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1441 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

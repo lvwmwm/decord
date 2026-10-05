@@ -1,9 +1,9 @@
-// Module ID: 12982
-// Function ID: 12983
+// Module ID: 12984
+// Function ID: 12985
 // Name: useOpenNitroSubscribeActionSheet
 // Dependencies: [19, 1085, 1379, 558, 576, 6657, 6928, 2]
 
-// Module 12982 (useOpenNitroSubscribeActionSheet)
+// Module 12984 (useOpenNitroSubscribeActionSheet)
 import PremiumConstants from "PremiumConstants" /* 1379 */;
 import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 6928 */;
 import react from "react" /* 19 */;

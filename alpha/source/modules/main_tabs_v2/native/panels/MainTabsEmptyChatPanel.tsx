@@ -1,9 +1,9 @@
-// Module ID: 16896
-// Function ID: 16897
+// Module ID: 16915
+// Function ID: 16916
 // Name: MainTabsEmptyChatPanel
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 11144, 1618, 10036, 16897, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 11144, 1618, 10036, 16916, 2]
 
-// Module 16896 (MainTabsEmptyChatPanel)
+// Module 16915 (MainTabsEmptyChatPanel)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 let c3;
 let closure_4;
 let tmp4;
-const FavoritesEmptyStateDefault = tmp4(16897);
+const FavoritesEmptyStateDefault = tmp4(16916);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles((left, marginTop) => {

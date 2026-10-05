@@ -1,10 +1,10 @@
-// Module ID: 16408
-// Function ID: 16409
+// Module ID: 16412
+// Function ID: 16413
 // Name: ICYMIInfoScreen
-// Dependencies: [32, 5, 19, 17, 1096, 21, 4890, 587, 6068, 1618, 4791, 1490, 14163, 16409, 5093, 7498, 7506, 1126, 5974, 16411, 16412, 16413, 16414, 4886, 8791, 12832, 4792, 4854, 16415, 1987, 5594, 2]
+// Dependencies: [32, 5, 19, 17, 1096, 21, 4890, 587, 6068, 1618, 4791, 1490, 14165, 16413, 5093, 7498, 7506, 1126, 5974, 16415, 16416, 16417, 16418, 4886, 8791, 12832, 4792, 4854, 16419, 1987, 5594, 2]
 // Exports: default
 
-// Module 16408 (ICYMIInfoScreen)
+// Module 16412 (ICYMIInfoScreen)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import NavigatorConstants from "NavigatorConstants" /* 6068 */;
@@ -104,7 +104,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -148,7 +148,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
           }, 100);
         }
         c2 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp17) {
         c2 = 3;
         throw tmp17;
@@ -181,7 +181,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   let obj4 = { style: items4, children: items5 };
   items4 = [tmp.container, { marginBottom: bottom }];
   let obj5 = { source: obj6, style: tmp.bgImage };
-  obj6 = { uri: navigation(16411) };
+  obj6 = { uri: navigation(16415) };
   const tmp17 = navigation(5974);
   items5 = [closure_9(tmp17, obj5), ];
   const obj7 = { style: items6, children: items8 };
@@ -192,14 +192,14 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   const tmp16 = closure_7;
   const tmp18 = navigation(5974);
   if (tmp5 === ThemeTypes.LIGHT) {
-    tmp2Result = tmp2(16412);
+    tmp2Result = tmp2(16416);
   } else {
-    tmp2Result = tmp2(16413);
+    tmp2Result = tmp2(16417);
   }
   items7 = [, , , ];
   const obj10 = { source: { uri: tmp2Result }, style: tmp.headerImg };
   items7[0] = closure_9(tmp18, obj10);
-  const obj11 = { source: navigation(16414), style: tmp.flashIcon };
+  const obj11 = { source: navigation(16418), style: tmp.flashIcon };
   const tmp2Result2 = navigation(5974);
   items7[1] = closure_9(tmp2Result2, obj11);
   const obj12 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl2.string(extendedOnboarding(1126).t["jnXV/V"]) };

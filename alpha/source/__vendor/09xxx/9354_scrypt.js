@@ -301,7 +301,7 @@ let obj = function _scryptAsync() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -366,7 +366,7 @@ let obj = function _scryptAsync() {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -527,7 +527,7 @@ let obj = function _scryptAsync() {
                     } else {
                       let num3 = 3;
                       c3 = 3;
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp12) {
                     c3 = 3;

@@ -540,7 +540,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEvent) => {
   let name;
   let scheduledStartTime;
   let tmp12;
-  const f99851 = () => {
+  const f99997 = () => {
     const obj = ScheduleUtils;
     return obj.recurrenceRuleToOption(_modDef4461(scheduledStartTime), recurrenceRule);
   };
@@ -570,8 +570,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEvent) => {
     }
     return addResult;
   }, items1);
-  [c7, c8] = recurrenceRule(memo.useState(f99851), 2);
-  const tmp4 = recurrenceRule(memo.useState(f99851), 2);
+  [c7, c8] = recurrenceRule(memo.useState(f99997), 2);
+  const tmp4 = recurrenceRule(memo.useState(f99997), 2);
   const memo2 = memo.useMemo(() => onChange(scheduledEndTime[9])(), []);
   const items2 = [memo];
   const memo3 = memo.useMemo(() => {

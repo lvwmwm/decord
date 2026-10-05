@@ -1,13 +1,13 @@
-// Module ID: 16785
-// Function ID: 16786
+// Module ID: 16804
+// Function ID: 16805
 // Name: SuggestedSearchList
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 16786, 1126, 3919, 4886, 16787, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 16805, 1126, 3919, 4886, 16806, 2]
 
-// Module 16785 (SuggestedSearchList)
+// Module 16804 (SuggestedSearchList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3919 from "module_3919" /* 3919 */;
-import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 16787 */;
+import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 16806 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4890 */;
@@ -37,7 +37,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((smartSe
     tmp4 = topMargin;
   }
   const tmp5 = closure_6();
-  const tmpResult = smartSearchQuery(16786);
+  const tmpResult = smartSearchQuery(16805);
   const suggestedSearches = tmpResult.useSuggestedSearches(smartSearchQuery, source).suggestedSearches;
   if (0 === suggestedSearches.length) {
     return null;
@@ -141,7 +141,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((smartSe
   }
   const source = smartSearchQuery.source;
   const tmp = closure_6();
-  let obj = smartSearchQuery(16786);
+  let obj = smartSearchQuery(16805);
   const suggestedSearches = obj.useSuggestedSearches(smartSearchQuery, source).suggestedSearches;
   let tmp7Result = null;
   if (0 !== suggestedSearches.length) {

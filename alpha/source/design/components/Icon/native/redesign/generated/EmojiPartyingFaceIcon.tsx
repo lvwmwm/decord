@@ -1,14 +1,14 @@
-// Module ID: 15201
-// Function ID: 15202
+// Module ID: 15205
+// Function ID: 15206
 // Name: EmojiPartyingFaceIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 15202, 4579, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 15206, 4579, 2]
 
-// Module 15201 (EmojiPartyingFaceIcon)
+// Module 15205 (EmojiPartyingFaceIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4579 */;
-import AssetRegistry from "AssetRegistry" /* 15202 */;
+import AssetRegistry from "AssetRegistry" /* 15206 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

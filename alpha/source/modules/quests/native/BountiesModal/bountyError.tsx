@@ -1,13 +1,13 @@
-// Module ID: 14825
-// Function ID: 14826
+// Module ID: 14829
+// Function ID: 14830
 // Name: bountyError
-// Dependencies: [14811, 1126, 4568, 4807, 2]
+// Dependencies: [14815, 1126, 4568, 4807, 2]
 // Exports: openBountyRewardClaimErrorToast
 
-// Module 14825 (bountyError)
+// Module 14829 (bountyError)
 import intl2 from "intl" /* 1126 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
-import BountiesModalConstants from "BountiesModalConstants" /* 14811 */;
+import BountiesModalConstants from "BountiesModalConstants" /* 14815 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

@@ -40,7 +40,7 @@ class SearchFetcher {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -88,11 +88,11 @@ class SearchFetcher {
             if (null == config) {
               c4 = 0;
               c6 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             } else if (closure_130_3.isCanceled) {
               c4 = 0;
               c6 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             } else {
               if (200 === config.status) {
                 closure_130_0(config);
@@ -107,7 +107,7 @@ class SearchFetcher {
                 if (closure_130_3.query.attempts > 5) {
                   c4 = 0;
                   c6 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 } else {
                   const _parseInt = parseInt;
                   closure_1 = parseInt(config.headers["retry-after"]);
@@ -129,7 +129,7 @@ class SearchFetcher {
             }
           }
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp44) {
           closure_3 = tmp44;
           if (0 === c4) {

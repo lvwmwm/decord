@@ -1,12 +1,12 @@
-// Module ID: 16393
-// Function ID: 16394
+// Module ID: 16397
+// Function ID: 16398
 // Name: ICYMIStoreUtils
-// Dependencies: [5, 5110, 4905, 8011, 1085, 16394, 8028, 8024, 6605, 1987, 1085, 11, 8029, 558, 576, 504, 2]
+// Dependencies: [5, 5110, 4905, 8011, 1085, 16398, 8028, 8024, 6605, 1987, 1085, 11, 8029, 558, 576, 504, 2]
 // Exports: getViewableFeedItemsArray, hydrateNextPage, regenerateFeedAndClearReadStates
 
-// Module 16393 (ICYMIStoreUtils)
+// Module 16397 (ICYMIStoreUtils)
 import Constants from "Constants" /* 1085 */;
-import ICYMIItemTypes from "ICYMIItemTypes" /* 16394 */;
+import ICYMIItemTypes from "ICYMIItemTypes" /* 16398 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import MessageStore from "MessageStore" /* 5110 */;
 import ReadStateStore from "ReadStateStore" /* 4905 */;
@@ -29,7 +29,7 @@ let obj = function _hydrateNextPage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -65,7 +65,7 @@ let obj = function _hydrateNextPage() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp5) {
         c0 = 3;
@@ -93,7 +93,7 @@ obj = function _regenerateFeedAndClearReadStates() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -218,7 +218,7 @@ obj = function _regenerateFeedAndClearReadStates() {
           obj = closure_130_1(closure_130_2[12]);
           const recommendedGuilds = obj.getRecommendedGuilds();
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp35) {
         c4 = 3;

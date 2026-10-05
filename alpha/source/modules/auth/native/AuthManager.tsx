@@ -1,9 +1,9 @@
-// Module ID: 15915
-// Function ID: 15916
+// Module ID: 15919
+// Function ID: 15920
 // Name: AuthManager
-// Dependencies: [5, 17, 12052, 1085, 5099, 12354, 1989, 584, 2047, 7282, 15916, 1369, 12055, 9481, 12415, 12353, 6845, 7256, 2]
+// Dependencies: [5, 17, 12052, 1085, 5099, 12354, 1989, 584, 2047, 7282, 15920, 1369, 12055, 9481, 12415, 12353, 6845, 7256, 2]
 
-// Module 15915 (AuthManager)
+// Module 15919 (AuthManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
@@ -59,7 +59,7 @@ class AuthManager extends LifecycleManager {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -100,7 +100,7 @@ class AuthManager extends LifecycleManager {
               onComplete();
             }
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp18) {
             c4 = 3;
             throw tmp18;

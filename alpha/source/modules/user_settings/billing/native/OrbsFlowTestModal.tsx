@@ -1,9 +1,9 @@
-// Module ID: 15570
-// Function ID: 15571
+// Module ID: 15574
+// Function ID: 15575
 // Name: OrbsFlowTestModal
-// Dependencies: [32, 109, 19, 17, 21, 7556, 558, 576, 6496, 7498, 10662, 4890, 587, 4886, 15571, 5593, 4854, 11011, 1987, 1126, 6098, 5594, 11001, 11010, 6471, 15573, 6651, 2]
+// Dependencies: [32, 109, 19, 17, 21, 7556, 558, 576, 6496, 7498, 10662, 4890, 587, 4886, 15575, 5593, 4854, 11011, 1987, 1126, 6098, 5594, 11001, 11010, 6471, 15577, 6651, 2]
 
-// Module 15570 (OrbsFlowTestModal)
+// Module 15574 (OrbsFlowTestModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
@@ -13,7 +13,7 @@ import Stack_Stack from "Stack/Stack" /* 5593 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6471 */;
 import HeaderShared from "HeaderShared" /* 7498 */;
 import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10662 */;
-import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 15571 */;
+import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 15575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -37,7 +37,7 @@ let obj4;
 let tmp;
 let tmp6;
 const LayerScope2 = tmp(6651);
-const OrbCheckoutMenuDefault = tmp6(15573);
+const OrbCheckoutMenuDefault = tmp6(15577);
 function BalanceWidgetPillSection() {
   let balance;
   let closure_1;

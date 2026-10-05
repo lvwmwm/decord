@@ -1,9 +1,9 @@
-// Module ID: 17248
-// Function ID: 17249
+// Module ID: 17272
+// Function ID: 17273
 // Name: VoicePanelVideoRenderer
-// Dependencies: [32, 19, 17, 11902, 11900, 17182, 11903, 21, 4612, 9114, 4890, 558, 576, 11901, 5597, 9074, 4855, 6140, 9106, 17183, 9108, 9107, 17249, 9774, 17133, 9110, 4580, 587, 4891, 6570, 9113, 2]
+// Dependencies: [32, 19, 17, 11902, 11900, 17206, 11903, 21, 4612, 9114, 4890, 558, 576, 11901, 5597, 9074, 4855, 6140, 9106, 17207, 9108, 9107, 17273, 9774, 17157, 9110, 4580, 587, 4891, 6570, 9113, 2]
 
-// Module 17248 (VoicePanelVideoRenderer)
+// Module 17272 (VoicePanelVideoRenderer)
 import react_native from "react-native" /* 17 */;
 import timing from "timing" /* 4891 */;
 import spring from "spring" /* 5597 */;
@@ -13,8 +13,8 @@ import DCDVideoRendererDefault from "DCDVideoRenderer" /* 9114 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 9774 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11900 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11903 */;
-import VideoActionCreators from "VideoActionCreators" /* 17133 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17182 */;
+import VideoActionCreators from "VideoActionCreators" /* 17157 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17206 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11902 */;

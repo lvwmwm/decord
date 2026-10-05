@@ -1,7 +1,7 @@
 // Module ID: 4912
 // Function ID: 4913
 // Name: ApplicationStreamingStore
-// Dependencies: [4907, 2006, 502, 2051, 2074, 1999, 4509, 4913, 2103, 4909, 1085, 4932, 1102, 4942, 13639, 13640, 13641, 1987, 7210, 504, 13610, 584, 2]
+// Dependencies: [4907, 2006, 502, 2051, 2074, 1999, 4509, 4913, 2103, 4909, 1085, 4932, 1102, 4942, 13641, 13642, 13643, 1987, 7210, 504, 13612, 584, 2]
 
 // Module 4912 (ApplicationStreamingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -11,9 +11,9 @@ import asyncRequire from "asyncRequire" /* 1987 */;
 import Constants2 from "Constants" /* 4932 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 4942 */;
 import StreamPermissionUtils from "StreamPermissionUtils" /* 7210 */;
-import canSpectateDefault from "canSpectate" /* 13610 */;
-import _slicedToArrayDefault from "_slicedToArray" /* 13639 */;
-import getTitleFromPickedStreamContentDefault from "getTitleFromPickedStreamContent" /* 13640 */;
+import canSpectateDefault from "canSpectate" /* 13612 */;
+import _slicedToArrayDefault from "_slicedToArray" /* 13641 */;
+import getTitleFromPickedStreamContentDefault from "getTitleFromPickedStreamContent" /* 13642 */;
 import GameConsoleStore from "GameConsoleStore" /* 4907 */;
 import RunningGameStore from "RunningGameStore" /* 2006 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -806,7 +806,7 @@ let obj = {
       } else if (reason === constants3.SAFETY_GUILD_RATE_LIMITED) {
         const obj = StreamKeyUtils;
         guildId = obj.decodeStreamKey(streamKey).guildId;
-        const promise = asyncRequire(13641, dependencyMap.paths);
+        const promise = asyncRequire(13643, dependencyMap.paths);
         promise.then((result) => {
           result.default(guildId);
         });

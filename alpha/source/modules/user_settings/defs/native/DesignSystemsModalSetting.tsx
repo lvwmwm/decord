@@ -1,9 +1,9 @@
-// Module ID: 15674
-// Function ID: 15675
+// Module ID: 15678
+// Function ID: 15679
 // Name: DesignSystemsModalSetting
-// Dependencies: [7634, 1085, 11129, 15675, 2]
+// Dependencies: [7634, 1085, 11129, 15679, 2]
 
-// Module 15674 (DesignSystemsModalSetting)
+// Module 15678 (DesignSystemsModalSetting)
 import Constants from "Constants" /* 1085 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;

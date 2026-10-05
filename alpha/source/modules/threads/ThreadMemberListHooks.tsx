@@ -1,9 +1,9 @@
-// Module ID: 16855
-// Function ID: 16856
+// Module ID: 16874
+// Function ID: 16875
 // Name: ThreadMemberListHooks
 // Dependencies: [19, 2106, 9498, 1096, 558, 576, 6815, 6789, 5590, 504, 1126, 2]
 
-// Module 16855 (ThreadMemberListHooks)
+// Module 16874 (ThreadMemberListHooks)
 import Constants from "Constants" /* 1096 */;
 import intl3 from "intl" /* 1126 */;
 import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 6789 */;

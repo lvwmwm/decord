@@ -1,16 +1,16 @@
-// Module ID: 16178
-// Function ID: 16179
+// Module ID: 16182
+// Function ID: 16183
 // Name: ChannelsEmpty
-// Dependencies: [19, 17, 4509, 1085, 21, 4890, 4886, 587, 558, 576, 573, 9247, 9214, 14897, 8897, 1188, 16179, 1126, 16180, 5595, 2]
+// Dependencies: [19, 17, 4509, 1085, 21, 4890, 4886, 587, 558, 576, 573, 9247, 9214, 14901, 8897, 1188, 16183, 1126, 16184, 5595, 2]
 
-// Module 16178 (ChannelsEmpty)
+// Module 16182 (ChannelsEmpty)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import Text_Text from "Text/Text" /* 4886 */;
 import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 9214 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16179 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16180 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16183 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16184 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import PermissionStore from "PermissionStore" /* 4509 */;
@@ -106,7 +106,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
       }
     }
   }
-  const tmpResult2 = guild(14897);
+  const tmpResult2 = guild(14901);
   const youBarTotalHeight = tmpResult2.useYouBarTotalHeight(16);
   if (cResult[8] !== youBarTotalHeight) {
     class S {
@@ -205,7 +205,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
   }, items3);
   const obj3 = { style: items4, children: items5 };
   items4 = [tmp.wrapper, ];
-  const obj2 = guild(14897);
+  const obj2 = guild(14901);
   items4[1] = { paddingBottom: obj2.useYouBarTotalHeight(16) };
   ({ paddingBottom: obj2.useYouBarTotalHeight(16) });
   if (canCustomizeGuild) {

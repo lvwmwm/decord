@@ -30,7 +30,7 @@ let obj = function _fetchApplicationCommandIndex() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -62,7 +62,7 @@ let obj = function _fetchApplicationCommandIndex() {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     }
                   } else {
                     try {
@@ -217,7 +217,7 @@ let obj = function _fetchApplicationCommandIndex() {
             return obj;
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c2 = 3;

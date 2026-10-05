@@ -1,19 +1,19 @@
-// Module ID: 17394
-// Function ID: 17395
+// Module ID: 17418
+// Function ID: 17419
 // Name: superagentPatch
-// Dependencies: [5, 4776, 1085, 1283, 17395, 1371, 1440, 584, 1282, 502, 1357, 2116, 1377, 1252, 1369, 17396, 1127, 17397, 17398, 7, 1242, 17401, 1987, 5407, 15493, 9437, 5913, 17409, 13641, 17410, 1468, 2]
+// Dependencies: [5, 4776, 1085, 1283, 17419, 1371, 1440, 584, 1282, 502, 1357, 2116, 1377, 1252, 1369, 17420, 1127, 17421, 17422, 7, 1242, 17425, 1987, 5407, 15497, 9437, 5913, 17433, 13643, 17434, 1468, 2]
 
-// Module 17394 (superagentPatch)
+// Module 17418 (superagentPatch)
 import LogAggregatorAll from "LogAggregator" /* 7 */;
 import Constants from "Constants" /* 1085 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import RequestDefault from "Request" /* 1283 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
 import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 9437 */;
-import IdGenerator from "IdGenerator" /* 17395 */;
-import getTimeZoneDefault from "getTimeZone" /* 17397 */;
-import trackHttpRequestDefault from "trackHttpRequest" /* 17398 */;
-import GuildLimitedAccessUtils from "GuildLimitedAccessUtils" /* 17409 */;
+import IdGenerator from "IdGenerator" /* 17419 */;
+import getTimeZoneDefault from "getTimeZone" /* 17421 */;
+import trackHttpRequestDefault from "trackHttpRequest" /* 17422 */;
+import GuildLimitedAccessUtils from "GuildLimitedAccessUtils" /* 17433 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ExperimentStore from "ExperimentStore" /* 4776 */;
 import ApexExperiment from "ApexExperiment" /* 1440 */;
@@ -296,7 +296,7 @@ let obj3 = {
         captcha_key = body.captcha_key;
       }
       if (captcha_key) {
-        const items = [asyncRequire(17401, dependencyMap.paths), asyncRequire(5407, dependencyMap.paths)];
+        const items = [asyncRequire(17425, dependencyMap.paths), asyncRequire(5407, dependencyMap.paths)];
         const allResult = all(items);
         const nextPromise = allResult.then((result) => {
           const iter = result[Symbol.iterator]();
@@ -351,7 +351,7 @@ let obj3 = {
           mfa = body3.mfa;
         }
         if (mfa) {
-          const promise4 = asyncRequire(15493, dependencyMap.paths);
+          const promise4 = asyncRequire(15497, dependencyMap.paths);
           const nextPromise2 = promise4.then((openMFAModal) => {
             openMFAModal.openMFAModal(closure_0.body.mfa, closure_1, closure_2);
           });
@@ -377,14 +377,14 @@ let obj3 = {
     } else {
       const body5 = statusCode.body;
       let code2;
-      const isLimitedAccessErrorCode2 = tmp7(17409).isLimitedAccessErrorCode;
+      const isLimitedAccessErrorCode2 = tmp7(17433).isLimitedAccessErrorCode;
       const statusCode2 = statusCode.statusCode;
       GuildLimitedAccessUtils;
       if (body5 != null) {
         code2 = body5.code;
       }
       if (isLimitedAccessErrorCode2(statusCode2, code2)) {
-        const promise2 = asyncRequire(13641, dependencyMap.paths);
+        const promise2 = asyncRequire(13643, dependencyMap.paths);
         promise2.then((result) => {
           const body = closure_0.body;
           let guild_id;
@@ -406,7 +406,7 @@ let obj3 = {
           flag = code3 === AbortCodes.RESTRICTED_HOURS_ACTIVE;
         }
         if (flag) {
-          const promise = asyncRequire(17410, dependencyMap.paths);
+          const promise = asyncRequire(17434, dependencyMap.paths);
           promise.then((openRestrictedHoursModal) => {
             const result = openRestrictedHoursModal.openRestrictedHoursModal();
           });
@@ -433,7 +433,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: "IconComponent" };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -473,7 +473,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
         obj.report("Network", "Network detected online, retrying " + closure_0);
       }
       c4 = 3;
-      return { value: "IconComponent", done: "IconComponent" };
+      return { value: "IconComponent", done: null };
     } catch (tmp13) {
       c4 = 3;
       throw tmp13;

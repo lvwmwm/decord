@@ -1,9 +1,9 @@
-// Module ID: 13194
-// Function ID: 13195
+// Module ID: 13196
+// Function ID: 13197
 // Name: SubscriptionAccountHoldNotice
 // Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 1188, 4815, 1126, 4528, 4886, 5594, 2]
 
-// Module 13194 (SubscriptionAccountHoldNotice)
+// Module 13196 (SubscriptionAccountHoldNotice)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import PremiumUtils from "PremiumUtils" /* 4528 */;

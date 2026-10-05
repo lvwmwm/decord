@@ -78,7 +78,7 @@ export const showUserProfileActionSheetPostConnection = function showUserProfile
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -159,7 +159,7 @@ export const showUserProfileActionSheetPostConnection = function showUserProfile
             showUserProfileActionSheet(closure_129_0);
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp37) {
         if (0 === c3) {

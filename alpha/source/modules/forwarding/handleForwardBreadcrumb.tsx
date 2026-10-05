@@ -33,7 +33,7 @@ let obj = function _handleForwardBreadcrumb() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -82,7 +82,7 @@ let obj = function _handleForwardBreadcrumb() {
               }
             }
             did_lurk = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else if (1 === c4) {
           c3 = 0;

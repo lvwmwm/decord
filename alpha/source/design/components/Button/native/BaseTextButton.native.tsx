@@ -26,14 +26,14 @@ const require = globalThis.__r;
 const ReanimatedRexport = ReanimatedRexport2;
 let _require;
 
-let bound;
-let bound1;
-let bound2;
 let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj2;
+let rect;
+let rect1;
+let rect2;
 let react = react_mod;
 ({ Text: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -287,12 +287,15 @@ let closure_23 = createStyles.createStyles((arg0, marginLeft) => {
     return { offset: {} };
   }
 });
-let obj3 = { sm: { top: bound, left: "Array", right: "cursor", bottom: bound }, md: { top: bound1, left: "Array", right: "cursor", bottom: bound1 }, lg: { top: bound2, left: "Array", right: "cursor", bottom: bound2 } };
+let obj3 = { sm: rect, md: rect1, lg: rect2 };
 const LARGE_BUTTON_HEIGHT = ButtonConstants.LARGE_BUTTON_HEIGHT;
-bound = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.SMALL_BUTTON_HEIGHT) / 2, 0);
+const bound = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.SMALL_BUTTON_HEIGHT) / 2, 0);
+rect = { top: bound, left: "Array", right: "toCharArray$esjava$1", bottom: bound };
 const LARGE_BUTTON_HEIGHT2 = ButtonConstants.LARGE_BUTTON_HEIGHT;
-bound1 = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.MEDIUM_BUTTON_HEIGHT) / 2, 0);
-bound2 = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.LARGE_BUTTON_HEIGHT) / 2, 0);
+const bound1 = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.MEDIUM_BUTTON_HEIGHT) / 2, 0);
+rect1 = { top: bound1, left: "Array", right: "toCharArray$esjava$1", bottom: bound1 };
+const bound2 = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.LARGE_BUTTON_HEIGHT) / 2, 0);
+rect2 = { top: bound2, left: "Array", right: "toCharArray$esjava$1", bottom: bound2 };
 function getTextPlatformLineHeight(arg0, arg1) {
 
 }

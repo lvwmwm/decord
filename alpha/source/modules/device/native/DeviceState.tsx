@@ -24,7 +24,7 @@ let obj = function _getDeviceState() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -49,7 +49,7 @@ let obj = function _getDeviceState() {
             fallback = obj5.fallback;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else {
           let DEFAULT_DEVICE_STATE;

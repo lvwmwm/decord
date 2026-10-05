@@ -1,9 +1,9 @@
-// Module ID: 16052
-// Function ID: 16053
+// Module ID: 16056
+// Function ID: 16057
 // Name: GuildRoleSubscriptionGatedChannelIcon
 // Dependencies: [19, 21, 558, 576, 1188, 9904, 2]
 
-// Module 16052 (GuildRoleSubscriptionGatedChannelIcon)
+// Module 16056 (GuildRoleSubscriptionGatedChannelIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import native from "native" /* 1188 */;

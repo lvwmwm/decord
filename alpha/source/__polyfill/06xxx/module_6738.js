@@ -288,7 +288,7 @@ function exp(constructor1, arg1) {
       let tmp21 = round(timesResult1, sum);
       let sum1 = num8 + 1;
       let timesResult2 = obj7.times(sum1);
-      let plusResult = obj5.plus(f137421(timesResult1, timesResult2, sum));
+      let plusResult = obj5.plus(f137659(timesResult1, timesResult2, sum));
       let arr = digitsToString(plusResult.d);
       substr = arr.slice(0, sum);
       let arr2 = digitsToString(obj5.d);
@@ -426,7 +426,7 @@ function ln(s, arg1) {
             sum1 = tmp21;
           }
           const minusResult = constructor3.minus(_window);
-          const obj3 = f137421(minusResult, constructor3.plus(_window), sum);
+          const obj3 = f137659(minusResult, constructor3.plus(_window), sum);
           const timesResult = obj3.times(obj3);
           round(timesResult, sum);
           let num9 = 3;
@@ -438,11 +438,11 @@ function ln(s, arg1) {
           const self6 = this;
           const plus = obj4.plus;
           const constructor4 = new constructor(num9);
-          const plusResult = plus(f137421(timesResult1, constructor4, sum));
+          const plusResult = plus(f137659(timesResult1, constructor4, sum));
           const arr2 = digitsToString(plusResult.d);
           const substr = arr2.slice(0, sum);
           const arr3 = digitsToString(obj4.d);
-          const tmp34 = f137421;
+          const tmp34 = f137659;
           while (substr !== arr3.slice(0, sum)) {
             num9 = num9 + 2;
             obj4 = plusResult;
@@ -1559,12 +1559,12 @@ fn3 = function() {
 };
 fn4 = function(arg0) {
   const constructor = new this.constructor(arg0);
-  return f137421(this, constructor);
+  return f137659(this, constructor);
 };
 fn5 = function(arg0) {
   const constructor = this.constructor;
   const constructor1 = new constructor(arg0);
-  const tmp2 = f137421(this, constructor1, 0, 1);
+  const tmp2 = f137659(this, constructor1, 0, 1);
   round(tmp2, constructor.precision);
   return tmp2;
 };
@@ -1628,7 +1628,7 @@ fn14 = function(arg0) {
       constructor3 = new constructor(0);
     } else {
       const tmp10 = ln(self, sum);
-      constructor3 = f137421(tmp10, ln(constructor1, sum), sum);
+      constructor3 = f137659(tmp10, ln(constructor1, sum), sum);
       c2 = true;
       round(constructor3, precision);
     }
@@ -1656,7 +1656,7 @@ fn16 = function(arg0) {
     let minusResult;
     if (self.s) {
       c2 = true;
-      const obj = f137421(self, tmp2, 0, 1);
+      const obj = f137659(self, tmp2, 0, 1);
       minusResult = self.minus(obj.times(constructor1));
     } else {
       const self2 = this;
@@ -1799,7 +1799,7 @@ fn22 = function() {
       const sum = precision + 3;
       let sum1 = sum;
       do {
-        let plusResult = constructor2.plus(f137421(self, constructor2, sum1 + 2));
+        let plusResult = constructor2.plus(f137659(self, constructor2, sum1 + 2));
         timesResult = plusResult.times(0.5);
         let arr3 = digitsToString(constructor2.d);
         substr = arr3.slice(0, sum1);
@@ -2160,7 +2160,7 @@ fn28 = function() {
   }
   return tmp4(self, tmp5);
 };
-const f137421 = function(s, s2, arg2, arg3) {
+const f137659 = function(s, s2, arg2, arg3) {
   let num7;
   let tmp11;
   let tmp25;

@@ -1,9 +1,9 @@
-// Module ID: 16773
-// Function ID: 16774
+// Module ID: 16792
+// Function ID: 16793
 // Name: SearchBar
-// Dependencies: [19, 17, 2051, 2074, 4519, 1377, 11967, 7513, 7512, 1085, 21, 4890, 1126, 5043, 558, 576, 504, 16770, 5602, 11966, 11985, 4590, 11982, 11969, 16774, 9235, 2]
+// Dependencies: [19, 17, 2051, 2074, 4519, 1377, 11967, 7513, 7512, 1085, 21, 4890, 1126, 5043, 558, 576, 504, 16789, 5602, 11966, 11985, 4590, 11982, 11969, 16793, 9235, 2]
 
-// Module 16773 (SearchBar)
+// Module 16792 (SearchBar)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;

@@ -1,9 +1,9 @@
-// Module ID: 17382
-// Function ID: 17383
+// Module ID: 17406
+// Function ID: 17407
 // Name: shared/DMChannel
-// Dependencies: [19, 5072, 21, 558, 576, 4901, 10651, 4890, 587, 16813, 16281, 15133, 11, 5602, 17376, 5909, 17374, 12488, 7514, 16812, 5043, 2]
+// Dependencies: [19, 5072, 21, 558, 576, 4901, 10651, 4890, 587, 16832, 16285, 15137, 11, 5602, 17400, 5909, 17398, 12488, 7514, 16831, 5043, 2]
 
-// Module 17382 (shared/DMChannel)
+// Module 17406 (shared/DMChannel)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -14,12 +14,12 @@ import ReadStateConstants from "ReadStateConstants" /* 5072 */;
 import useFontScale from "useFontScale" /* 5602 */;
 import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7514 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10651 */;
-import useMessagePreviewsDefault from "useMessagePreviews" /* 15133 */;
-import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 16281 */;
-import renderChannelItemDefault from "renderChannelItem" /* 16812 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 16813 */;
-import UnreadBadgeDefault from "UnreadBadge" /* 17374 */;
-import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 17376 */;
+import useMessagePreviewsDefault from "useMessagePreviews" /* 15137 */;
+import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 16285 */;
+import renderChannelItemDefault from "renderChannelItem" /* 16831 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 16832 */;
+import UnreadBadgeDefault from "UnreadBadge" /* 17398 */;
+import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 17400 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import createStyles from "createStyles" /* 4890 */;

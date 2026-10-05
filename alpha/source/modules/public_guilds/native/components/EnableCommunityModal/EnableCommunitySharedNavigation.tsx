@@ -1,9 +1,9 @@
-// Module ID: 17813
-// Function ID: 17814
+// Module ID: 17837
+// Function ID: 17838
 // Name: EnableCommunitySharedNavigation
-// Dependencies: [19, 17, 9248, 1085, 21, 4890, 558, 576, 504, 1490, 5770, 5779, 584, 17811, 6535, 1126, 5594, 6619, 2]
+// Dependencies: [19, 17, 9248, 1085, 21, 4890, 558, 576, 504, 1490, 5770, 5779, 584, 17835, 6535, 1126, 5594, 6619, 2]
 
-// Module 17813 (EnableCommunitySharedNavigation)
+// Module 17837 (EnableCommunitySharedNavigation)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
@@ -294,8 +294,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSuccess) => {
             tmp5 = globalThis;
             _setTimeout = setTimeout;
             num = 100;
-            closure_0 = setTimeout(() => { /* body not rendered: F148939 */ }, 100);
-            return () => { /* body not rendered: F148940 */ };
+            closure_0 = setTimeout(() => { /* body not rendered: F149223 */ }, 100);
+            return () => { /* body not rendered: F149224 */ };
           }
         }
       }

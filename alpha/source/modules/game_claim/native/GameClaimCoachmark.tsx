@@ -1,18 +1,18 @@
-// Module ID: 16111
-// Function ID: 16112
+// Module ID: 16115
+// Function ID: 16116
 // Name: GameClaimCoachmark
-// Dependencies: [5, 19, 17, 1085, 2048, 21, 587, 16112, 10723, 5600, 4890, 558, 576, 16113, 1126, 8584, 6017, 5909, 4886, 8263, 5594, 6820, 6824, 5995, 2]
+// Dependencies: [5, 19, 17, 1085, 2048, 21, 587, 16116, 10723, 5600, 4890, 558, 576, 16117, 1126, 8584, 6017, 5909, 4886, 8263, 5594, 6820, 6824, 5995, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
-// Module 16111 (GameClaimCoachmark)
+// Module 16115 (GameClaimCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
 import ButtonConstants from "ButtonConstants" /* 5600 */;
 import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 8584 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10723 */;
-import GameClaimCardStack from "GameClaimCardStack" /* 16112 */;
-import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 16113 */;
+import GameClaimCardStack from "GameClaimCardStack" /* 16116 */;
+import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 16117 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
@@ -41,7 +41,7 @@ const Pressables = tmp2(5909);
 const Card_Card = tmp2(5995);
 const XSmallIcon = tmp2(6017);
 const LinkExternalSmallIcon = tmp2(8263);
-const GameClaimCardStackDefault = tmp8(16112);
+const GameClaimCardStackDefault = tmp8(16116);
 const View = react_native.View;
 ({ GuildFeatures: hasOwnProperty, RelativeMarketingURLs: metroRequire } = Constants);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -70,7 +70,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   const cResult = obj.c(36);
   ({ guild, markAsDismissed } = arg0);
   const tmp4 = closure_13();
-  let obj2 = markAsDismissed(16113);
+  let obj2 = markAsDismissed(16117);
   let first = obj2.useUnclaimedGameIdsForGuild(guild.id)[0];
   if (first == null) {
     first = null;
@@ -208,7 +208,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                                   const obj3 = { value, done: true };
                                   return obj3;
                                 } else {
-                                  return { value: "IconComponent", done: "IconComponent" };
+                                  return { value: "IconComponent", done: null };
                                 }
                               } else {
                                 try {
@@ -238,7 +238,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                                     return obj;
                                   } else {
                                     markAsDismissed = 3;
-                                    return { value: "IconComponent", done: "IconComponent" };
+                                    return { value: "IconComponent", done: null };
                                   }
                                 } catch (tmp11) {
                                   markAsDismissed = 3;
@@ -401,7 +401,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -431,7 +431,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                 return obj;
               } else {
                 c0 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp11) {
               c0 = 3;

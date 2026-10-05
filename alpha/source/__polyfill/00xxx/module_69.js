@@ -14,19 +14,19 @@ let metroImportDefault;
 const RN$LegacyInterop_UIManager_getConstants = global.RN$LegacyInterop_UIManager_getConstants;
 let c3 = false;
 let closure_4 = {};
-const f18527 = () => {
+const f18549 = () => {
 
 };
 ({ RN$LegacyInterop_UIManager_getConstantsForViewManager: metroImportDefault, RN$LegacyInterop_UIManager_getDefaultEventTypes: metroImportAll } = global);
 let c0 = false;
 let c1 = null;
-const f79805 = () => {
+const f79948 = () => {
 
 };
 let obj = {
   getViewManagerConfig(arg0) {
     if (RN$LegacyInterop_UIManager_getConstants) {
-      if (typeof f18527 === "function") {
+      if (typeof f18549 === "function") {
         const tmp11 = c3;
         if (!tmp11) {
           closure_4 = require("nullthrows")(tmp)();
@@ -64,7 +64,7 @@ let obj = {
   getConstants() {
     let tmp4;
     if (RN$LegacyInterop_UIManager_getConstants) {
-      if (typeof f18527 === "function") {
+      if (typeof f18549 === "function") {
         const tmp6 = c3;
         if (!tmp6) {
           closure_4 = require("nullthrows")(tmp)();
@@ -175,7 +175,7 @@ const obj3 = {
     let items;
     const tmp = metroImportAll;
     if (tmp) {
-      if (typeof f79805 === "function") {
+      if (typeof f79948 === "function") {
         let closure_1;
         const tmp5 = c0;
         if (!tmp5) {
@@ -258,7 +258,7 @@ if (RN$LegacyInterop_UIManager_getConstants) {
   let tmp6 = closure_4;
   const keys1 = keys(closure_4);
   const item = keys1.forEach((item) => {
-    if (typeof f18527 === "function") {
+    if (typeof f18549 === "function") {
       const tmp2 = c3;
       if (!tmp2) {
         closure_4 = require("nullthrows")(RN$LegacyInterop_UIManager_getConstants)();

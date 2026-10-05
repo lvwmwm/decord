@@ -36,7 +36,7 @@ let obj = function _addChannelToFavorites() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -68,7 +68,7 @@ let obj = function _addChannelToFavorites() {
           items = [closure_0];
           value.addFavoriteChannels(obj);
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -92,7 +92,7 @@ obj = function _removeChannelFromFavorites() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -122,7 +122,7 @@ obj = function _removeChannelFromFavorites() {
         } else {
           const result = value.removeFavoriteChannel(closure_0);
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp11) {
         c3 = 3;

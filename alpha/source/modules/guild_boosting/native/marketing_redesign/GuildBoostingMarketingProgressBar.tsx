@@ -1,16 +1,16 @@
-// Module ID: 13386
-// Function ID: 13387
+// Module ID: 13388
+// Function ID: 13389
 // Name: GuildBoostingMarketingProgressBar
-// Dependencies: [32, 19, 17, 4879, 1085, 21, 4890, 13387, 587, 558, 576, 4791, 573, 4612, 7666, 5597, 4729, 5605, 2]
+// Dependencies: [32, 19, 17, 4879, 1085, 21, 4890, 13389, 587, 558, 576, 4791, 573, 4612, 7666, 5597, 4729, 5605, 2]
 
-// Module 13386 (GuildBoostingMarketingProgressBar)
+// Module 13388 (GuildBoostingMarketingProgressBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
 import spring from "spring" /* 5597 */;
 import GuildBoostingUtils from "GuildBoostingUtils" /* 7666 */;
-import GuildBoostingMarketingProgressBarMarker from "GuildBoostingMarketingProgressBarMarker" /* 13387 */;
+import GuildBoostingMarketingProgressBarMarker from "GuildBoostingMarketingProgressBarMarker" /* 13389 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4879 */;

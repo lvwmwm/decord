@@ -1,9 +1,9 @@
-// Module ID: 17903
-// Function ID: 17904
+// Module ID: 17927
+// Function ID: 17928
 // Name: FormImagePicker
-// Dependencies: [109, 5, 19, 17, 21, 4890, 587, 7274, 1437, 9442, 1126, 5974, 17904, 10058, 558, 576, 4886, 5594, 2]
+// Dependencies: [109, 5, 19, 17, 21, 4890, 587, 7274, 1437, 9442, 1126, 5974, 16724, 10058, 558, 576, 4886, 5594, 2]
 
-// Module 17903 (FormImagePicker)
+// Module 17927 (FormImagePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1437 */;
@@ -46,7 +46,7 @@ let obj = function _pickImage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -83,7 +83,7 @@ let obj = function _pickImage() {
               size(obj);
             }
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp16) {
           c4 = 3;
@@ -168,7 +168,7 @@ class ImagePickerIcon {
       tmp10 = tmp12;
     } else {
       tmp10 = closure_8;
-      tmp12Result = closure_8(tmp9(17904).ImagePlusIcon, {});
+      tmp12Result = closure_8(tmp9(16724).ImagePlusIcon, {});
     }
     items3 = [tmp12Result, ];
     let tmp10Result = null != image && !flag;

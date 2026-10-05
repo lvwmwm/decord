@@ -1,9 +1,9 @@
-// Module ID: 16811
-// Function ID: 16812
+// Module ID: 16830
+// Function ID: 16831
 // Name: guild_channels/ChannelTitle
 // Dependencies: [19, 5072, 21, 4890, 587, 558, 576, 11698, 4886, 2]
 
-// Module 16811 (guild_channels/ChannelTitle)
+// Module 16830 (guild_channels/ChannelTitle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

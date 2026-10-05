@@ -1,11 +1,11 @@
-// Module ID: 17889
-// Function ID: 17890
+// Module ID: 17913
+// Function ID: 17914
 // Name: useCreatorMonetizationOnboardingMarketing
-// Dependencies: [5, 32, 19, 17858, 5312, 2]
+// Dependencies: [5, 32, 19, 17882, 5312, 2]
 // Exports: default
 
-// Module 17889 (useCreatorMonetizationOnboardingMarketing)
-import CreatorMonetizationEligibilityActionCreatorsAll from "CreatorMonetizationEligibilityActionCreators" /* 17858 */;
+// Module 17913 (useCreatorMonetizationOnboardingMarketing)
+import CreatorMonetizationEligibilityActionCreatorsAll from "CreatorMonetizationEligibilityActionCreators" /* 17882 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -43,7 +43,7 @@ export default function useCreatorMonetizationOnboardingMarketing(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -99,7 +99,7 @@ export default function useCreatorMonetizationOnboardingMarketing(arg0) {
           c4 = 0;
           closure_1(false);
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp39) {
         if (0 === c4) {

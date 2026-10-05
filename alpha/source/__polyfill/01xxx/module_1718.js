@@ -94,9 +94,9 @@ let fn = function n(userConfig, callback) {
       callback,
       velocity: num,
       initialVelocity: 0,
-      current: "duration",
+      current: "emoji",
       lastTimestamp: null,
-      startTimestamp: 458.02,
+      startTimestamp: "row",
       reduceMotion: tmp4Result.getReduceMotionForAnimation(obj.reduceMotion)
     };
     num = obj.velocity;

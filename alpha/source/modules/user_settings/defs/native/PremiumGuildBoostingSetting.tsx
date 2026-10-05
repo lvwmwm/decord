@@ -1,9 +1,9 @@
-// Module ID: 14796
-// Function ID: 14797
+// Module ID: 14800
+// Function ID: 14801
 // Name: PremiumGuildBoostingSetting
-// Dependencies: [1085, 11129, 1126, 4826, 13303, 2]
+// Dependencies: [1085, 11129, 1126, 4826, 13305, 2]
 
-// Module 14796 (PremiumGuildBoostingSetting)
+// Module 14800 (PremiumGuildBoostingSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import BoostGemIcon from "BoostGemIcon" /* 4826 */;

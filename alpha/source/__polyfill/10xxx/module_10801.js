@@ -100,7 +100,7 @@ export function withIAPContext(arg0) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -116,7 +116,7 @@ export function withIAPContext(arg0) {
                 closure_1_17(undefined);
                 closure_1_13(closure_0);
                 c1 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp8) {
               c1 = 3;
@@ -141,7 +141,7 @@ export function withIAPContext(arg0) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -167,7 +167,7 @@ export function withIAPContext(arg0) {
                 }
                 tmp8(transaction);
                 c1 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp11) {
               c1 = 3;
@@ -195,7 +195,7 @@ export function withIAPContext(arg0) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -240,7 +240,7 @@ export function withIAPContext(arg0) {
                   return items;
                 });
                 c3 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp11) {
               c3 = 3;

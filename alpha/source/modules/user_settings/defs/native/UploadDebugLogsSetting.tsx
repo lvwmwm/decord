@@ -1,9 +1,9 @@
-// Module ID: 15359
-// Function ID: 15360
+// Module ID: 15363
+// Function ID: 15364
 // Name: UploadDebugLogsSetting
 // Dependencies: [5, 17, 1085, 21, 570, 1259, 558, 576, 1369, 12528, 4568, 4812, 1126, 11129, 2]
 
-// Module 15359 (UploadDebugLogsSetting)
+// Module 15363 (UploadDebugLogsSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
@@ -49,7 +49,7 @@ let obj = function _handleUploadDebugLogSettingPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -113,7 +113,7 @@ let obj = function _handleUploadDebugLogSettingPress() {
           c3 = 0;
           onUploadDebugLogsRequestFinish();
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp26) {
         closure_2 = tmp26;
@@ -136,7 +136,7 @@ const jsx = Fragment.jsx;
 let closure_7 = module_570.create(() => ({ isDisabled: false, isUploading: false }));
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const f70348 = () => {
+const f70398 = () => {
 
 };
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -145,7 +145,7 @@ ReactCompilerGating = ReactCompilerGating_mod;
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj = react;
   const cResult = obj.c(2);
-  if (typeof f70348 === "function") {
+  if (typeof f70398 === "function") {
     let tmp3;
     const isUploading = closure_7().isUploading;
     if (cResult[0] !== isUploading) {
@@ -164,7 +164,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     throw new TypeError("Trying to call a non-function");
   }
 }) : (() => {
-  if (typeof f70348 === "function") {
+  if (typeof f70398 === "function") {
     let tmp2 = null;
     if (closure_7().isUploading) {
       tmp2 = <ActivityIndicator />;

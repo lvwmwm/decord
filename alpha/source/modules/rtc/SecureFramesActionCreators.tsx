@@ -38,7 +38,7 @@ let obj = function _savePersistentCodesEnabled() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -102,7 +102,7 @@ let obj = function _savePersistentCodesEnabled() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp38) {
           closure_5 = tmp38;
           if (0 === c6) {
@@ -159,7 +159,7 @@ obj = function _updatePersistentCodesEnabled() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -220,7 +220,7 @@ obj = function _updatePersistentCodesEnabled() {
                     let obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -256,7 +256,7 @@ obj = function _updatePersistentCodesEnabled() {
                       return obj;
                     } else {
                       c0 = 3;
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp6) {
                     c0 = 3;
@@ -281,7 +281,7 @@ obj = function _updatePersistentCodesEnabled() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp14) {
         c1 = 3;
         throw tmp14;

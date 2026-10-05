@@ -31,7 +31,7 @@ let obj = function _loadMessageRequestData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -75,7 +75,7 @@ let obj = function _loadMessageRequestData() {
         c3 = 0;
         c9 = null;
         c4 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp19) {
         closure_2 = tmp19;
         if (0 === c3) {
@@ -105,7 +105,7 @@ obj = function _loadMessageRequestDataHelper() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       while (true) {
@@ -209,7 +209,7 @@ obj = function _loadMessageRequestDataHelper() {
               continue;
             }
             c11 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         }
       }

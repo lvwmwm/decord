@@ -1,9 +1,9 @@
-// Module ID: 15176
-// Function ID: 15177
+// Module ID: 15180
+// Function ID: 15181
 // Name: CustomTypingIndicatorTypingSuggestionPickerSheet
 // Dependencies: [32, 19, 21, 4890, 587, 558, 576, 6644, 1126, 3725, 11587, 6071, 6072, 6701, 2]
 
-// Module 15176 (CustomTypingIndicatorTypingSuggestionPickerSheet)
+// Module 15180 (CustomTypingIndicatorTypingSuggestionPickerSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3725 from "module_3725" /* 3725 */;

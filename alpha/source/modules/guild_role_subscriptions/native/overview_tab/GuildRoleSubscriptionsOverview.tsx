@@ -1,9 +1,9 @@
-// Module ID: 16485
-// Function ID: 16486
+// Module ID: 16489
+// Function ID: 16490
 // Name: GuildRoleSubscriptionsOverview
-// Dependencies: [19, 5436, 4703, 2074, 21, 4886, 558, 576, 1126, 16486, 8871, 16487, 15027, 573, 6754, 5678, 5708, 1112, 2]
+// Dependencies: [19, 5436, 4703, 2074, 21, 4886, 558, 576, 1126, 16490, 8871, 16491, 15031, 573, 6754, 5678, 5708, 1112, 2]
 
-// Module 16485 (GuildRoleSubscriptionsOverview)
+// Module 16489 (GuildRoleSubscriptionsOverview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import router_utils from "router_utils" /* 1112 */;
@@ -11,7 +11,7 @@ import intl4 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 4886 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
 import NativePaymentHooksDefault from "NativePaymentHooks" /* 8871 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 16486 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 16490 */;
 import react_mod from "react" /* 19 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
 import DefaultRouteStore from "DefaultRouteStore" /* 4703 */;
@@ -23,8 +23,8 @@ let serverName;
 
 let tmp;
 let tmp4;
-const GroupListingsFetchContext = tmp(15027);
-const GuildRoleSubscriptionPurchasePageDefault = tmp4(16487);
+const GroupListingsFetchContext = tmp(15031);
+const GuildRoleSubscriptionPurchasePageDefault = tmp4(16491);
 function serverNameHook(children) {
   return jsx(Text_Text.Text, { variant: "heading-lg/extrabold", color: "interactive-text-active", children });
 }

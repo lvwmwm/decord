@@ -45,7 +45,7 @@ class UploaderQueue {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -73,7 +73,7 @@ class UploaderQueue {
                 logger.log("drainQueue() - No uploads left, setting drainingQueue to false");
                 self.drainingQueue = false;
                 c5 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } else {
                 c3 = 1;
                 logger.log("drainQueue() - start uploader");
@@ -115,7 +115,7 @@ class UploaderQueue {
             }
             closure_129_0.drainQueue();
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp27) {
           closure_2 = tmp27;

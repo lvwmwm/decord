@@ -268,7 +268,7 @@ export default function Login(isMultiAccount) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -321,7 +321,7 @@ export default function Login(isMultiAccount) {
               c3 = 0;
               closure_129_4(false);
               _undefined3 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             } else {
               if (closure_0 === closure_0(ref[22]).PasswordResetMethods.ONE_TIME_LOGIN) {
                 const obj = closure_0(ref[23]);
@@ -341,7 +341,7 @@ export default function Login(isMultiAccount) {
           c3 = 0;
           closure_129_4(false);
           _undefined3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp43) {
         ref = tmp43;
@@ -377,7 +377,7 @@ export default function Login(isMultiAccount) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -399,7 +399,7 @@ export default function Login(isMultiAccount) {
               authenticationErrorsFromV6OrEarlierAPIError = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -437,7 +437,7 @@ export default function Login(isMultiAccount) {
               c6 = 0;
             }
             c8 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp19) {
           if (0 === c6) {
@@ -475,7 +475,7 @@ export default function Login(isMultiAccount) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -541,7 +541,7 @@ export default function Login(isMultiAccount) {
           closure_129_4(false);
         }
         _undefined3 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp48) {
         ref = tmp48;
         if (0 === c3) {

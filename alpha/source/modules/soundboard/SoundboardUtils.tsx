@@ -38,7 +38,7 @@ let c10;
 let c9;
 let closure_12;
 let unpackModuleId;
-const f93286 = (joinSound) => null != joinSound.joinSound;
+const f93429 = (joinSound) => null != joinSound.joinSound;
 function hasPermissionToPlaySound(guildId, guild_id) {
   guild_id = undefined;
   if (guild_id != null) {
@@ -124,7 +124,7 @@ let obj = function _maybePlayCustomJoinSound() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -201,7 +201,7 @@ let obj = function _maybePlayCustomJoinSound() {
           }
         }
         c4 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp32) {
         c4 = 3;
         throw tmp32;
@@ -254,7 +254,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSoundboardButton
     }
     const _Object = Object;
     const values = Object.values(obj2);
-    if (!values.some(f93286)) {
+    if (!values.some(f93429)) {
       const tmpResult2 = UserUtils;
       const result = tmpResult2.ageEligibleForPremiumUpsell(stateFromStores);
       const obj6 = PremiumUtilsDefault;
@@ -289,7 +289,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSoundboardButton
     }
     const _Object = Object;
     const values = Object.values(obj2);
-    if (!values.some(f93286)) {
+    if (!values.some(f93429)) {
       const tmpResult = UserUtils;
       const result = tmpResult.ageEligibleForPremiumUpsell(stateFromStores);
       const obj5 = PremiumUtilsDefault;
@@ -311,7 +311,7 @@ function hasSetAnyCustomJoinSound() {
     obj = {};
   }
   const values = Object.values(obj);
-  return values.some(f93286);
+  return values.some(f93429);
 }
 let result = size.fileFinishedImporting("modules/soundboard/SoundboardUtils.tsx");
 

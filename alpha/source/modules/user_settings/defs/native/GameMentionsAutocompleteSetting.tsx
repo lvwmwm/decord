@@ -1,9 +1,9 @@
-// Module ID: 15139
-// Function ID: 15140
+// Module ID: 15143
+// Function ID: 15144
 // Name: GameMentionsAutocompleteSetting
 // Dependencies: [7634, 11129, 1126, 2028, 2]
 
-// Module 15139 (GameMentionsAutocompleteSetting)
+// Module 15143 (GameMentionsAutocompleteSetting)
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2028 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;

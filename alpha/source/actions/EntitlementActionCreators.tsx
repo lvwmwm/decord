@@ -51,7 +51,7 @@ let obj = function _fetchUserEntitlements() {
       }
       await "IconComponent";
       entitlementType = tmp36.entitlementType;
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -71,7 +71,7 @@ obj = function _fetchGiftableEntitlements() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -120,7 +120,7 @@ obj = function _fetchGiftableEntitlements() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp16) {
         let closure_2 = tmp16;

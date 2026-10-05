@@ -30,7 +30,7 @@ let body = function _acceptMessageRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -66,7 +66,7 @@ let body = function _acceptMessageRequest() {
             const obj = closure_130_1(closure_130_2[4]);
             obj.dispatch(obj7);
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp11) {
           c4 = 3;

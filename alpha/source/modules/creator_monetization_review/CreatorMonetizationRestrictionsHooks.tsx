@@ -583,14 +583,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj3;
   let restrictions;
   let restrictionsLoading;
-  const f92984 = () => GuildStore.getGuild(closure_0);
+  const f93127 = () => GuildStore.getGuild(closure_0);
   _require = arg0;
   const items = [GuildStore];
   const items1 = [arg0];
   const obj = require("get initialized");
   const obj2 = { isMonetizationReapplicationDisabled: obj3.isRestrictedFromMonetizationReapplication(restrictions), restrictionsLoading };
-  ({ restrictions, restrictionsLoading } = closure_10(obj.useStateFromStores(items, f92984, items1)));
-  closure_10(obj.useStateFromStores(items, f92984, items1));
+  ({ restrictions, restrictionsLoading } = closure_10(obj.useStateFromStores(items, f93127, items1)));
+  closure_10(obj.useStateFromStores(items, f93127, items1));
   obj3 = require("CreatorMonetizationRestrictionsUtils");
   return obj2;
 });

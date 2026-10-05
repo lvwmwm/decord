@@ -1,18 +1,18 @@
-// Module ID: 16202
-// Function ID: 16203
+// Module ID: 16206
+// Function ID: 16207
 // Name: MobileGameCommunitiesActionCreators
-// Dependencies: [5, 13522, 15446, 1085, 13523, 15447, 1282, 1478, 584, 504, 1102, 2]
+// Dependencies: [5, 13524, 15450, 1085, 13525, 15451, 1282, 1478, 584, 504, 1102, 2]
 // Exports: dismissGuild
 
-// Module 16202 (MobileGameCommunitiesActionCreators)
+// Module 16206 (MobileGameCommunitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _modDef1478 from "module_1478" /* 1478 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13522 */;
-import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15446 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13524 */;
+import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15450 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let obj = function _fetchDetectedGameCommunities() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -87,7 +87,7 @@ let obj = function _fetchDetectedGameCommunities() {
           const obj7 = { type: "MOBILE_GAME_COMMUNITIES_FETCH_SUCCESS", guilds, gameIds };
           obj.dispatch(obj7);
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp13) {
         c3 = 3;
@@ -130,7 +130,7 @@ let closure_8 = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: "IconComponent" };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -162,7 +162,7 @@ let closure_8 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       }
       c0 = 3;
-      return { value: "IconComponent", done: "IconComponent" };
+      return { value: "IconComponent", done: null };
     } catch (tmp7) {
       c0 = 3;
       throw tmp7;

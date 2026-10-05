@@ -1,9 +1,9 @@
-// Module ID: 15961
-// Function ID: 15962
+// Module ID: 15965
+// Function ID: 15966
 // Name: usePrivateChannelWaveEligible
 // Dependencies: [5110, 4519, 2058, 1085, 558, 576, 504, 11, 4552, 4461, 9785, 2]
 
-// Module 15961 (usePrivateChannelWaveEligible)
+// Module 15965 (usePrivateChannelWaveEligible)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1085 */;
 import ChannelConstants from "ChannelConstants" /* 2058 */;

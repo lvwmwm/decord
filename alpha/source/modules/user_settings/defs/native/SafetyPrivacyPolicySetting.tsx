@@ -1,9 +1,9 @@
-// Module ID: 15781
-// Function ID: 15782
+// Module ID: 15785
+// Function ID: 15786
 // Name: SafetyPrivacyPolicySetting
 // Dependencies: [7634, 1085, 4565, 11129, 1126, 2]
 
-// Module 15781 (SafetyPrivacyPolicySetting)
+// Module 15785 (SafetyPrivacyPolicySetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import LinkingDefault from "Linking" /* 4565 */;

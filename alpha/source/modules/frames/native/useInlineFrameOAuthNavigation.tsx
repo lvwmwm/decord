@@ -1,10 +1,10 @@
-// Module ID: 16587
-// Function ID: 16588
+// Module ID: 16593
+// Function ID: 16594
 // Name: useInlineFrameOAuthNavigation
 // Dependencies: [5, 19, 8703, 8704, 1085, 8710, 5093, 8716, 1987, 1121, 2]
 // Exports: default
 
-// Module 16587 (useInlineFrameOAuthNavigation)
+// Module 16593 (useInlineFrameOAuthNavigation)
 import Constants from "Constants" /* 1085 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
@@ -54,7 +54,7 @@ export default function useInlineFrameOAuthNavigation(arg0) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -98,7 +98,7 @@ export default function useInlineFrameOAuthNavigation(arg0) {
                 }
               }
               c3 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             } catch (tmp20) {
               c3 = 3;
               throw tmp20;

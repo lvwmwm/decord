@@ -1,16 +1,16 @@
-// Module ID: 14635
-// Function ID: 14636
+// Module ID: 14639
+// Function ID: 14640
 // Name: GoreMediaFiltersFriendsDMsSetting
-// Dependencies: [7634, 558, 576, 14629, 7109, 6804, 14630, 1126, 11129, 14632, 2]
+// Dependencies: [7634, 558, 576, 14633, 7109, 6804, 14634, 1126, 11129, 14636, 2]
 
-// Module 14635 (GoreMediaFiltersFriendsDMsSetting)
+// Module 14639 (GoreMediaFiltersFriendsDMsSetting)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 6804 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 14629 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 14630 */;
-import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 14632 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 14633 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 14634 */;
+import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 14636 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;

@@ -1,14 +1,14 @@
-// Module ID: 17979
-// Function ID: 17980
+// Module ID: 18001
+// Function ID: 18002
 // Name: NativeNotificationsManager
-// Dependencies: [5, 17, 7121, 4905, 1085, 3, 17980, 8966, 11, 6613, 1369, 7876, 1252, 2]
+// Dependencies: [5, 17, 7121, 4905, 1085, 3, 18002, 8966, 11, 6613, 1369, 7876, 1252, 2]
 
-// Module 17979 (NativeNotificationsManager)
+// Module 18001 (NativeNotificationsManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
-import ClearChannelNotificationsOnAppForegroundExperiment from "ClearChannelNotificationsOnAppForegroundExperiment" /* 17980 */;
+import ClearChannelNotificationsOnAppForegroundExperiment from "ClearChannelNotificationsOnAppForegroundExperiment" /* 18002 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 7121 */;
 import ReadStateStore from "ReadStateStore" /* 4905 */;
@@ -33,7 +33,7 @@ let obj = function _getDeliveredNotifications() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -69,7 +69,7 @@ let obj = function _getDeliveredNotifications() {
           closure_9 = value;
         }
         c2 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp9) {
         c2 = 3;
         throw tmp9;
@@ -144,7 +144,7 @@ obj = function _updateAndClearStaleNotifications() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -175,7 +175,7 @@ obj = function _updateAndClearStaleNotifications() {
         } else {
           const tmp5 = clearStaleNotifications();
           c2 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp7) {
         c2 = 3;
@@ -224,7 +224,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp75;
@@ -284,7 +284,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     }
                   } else {
                     try {
@@ -411,7 +411,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
                   if (null == PUSH_NOTIFICATION_RECEIVED) {
                     c6 = 0;
                     logger = 3;
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   } else {
                     const _Map = Map;
                     const self = this;
@@ -531,7 +531,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
               return obj14;
             }
             logger = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp75) {
           if (0 === c6) {

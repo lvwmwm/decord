@@ -1,9 +1,9 @@
-// Module ID: 17566
-// Function ID: 17567
+// Module ID: 17590
+// Function ID: 17591
 // Name: RedesignDiscoverabilityModal
-// Dependencies: [19, 17, 12326, 1377, 1085, 21, 4890, 587, 6068, 558, 576, 1490, 504, 12333, 1105, 17567, 12353, 12346, 1260, 12345, 1126, 6496, 2]
+// Dependencies: [19, 17, 12326, 1377, 1085, 21, 4890, 587, 6068, 558, 576, 1490, 504, 12333, 1105, 17591, 12353, 12346, 1260, 12345, 1126, 6496, 2]
 
-// Module 17566 (RedesignDiscoverabilityModal)
+// Module 17590 (RedesignDiscoverabilityModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;

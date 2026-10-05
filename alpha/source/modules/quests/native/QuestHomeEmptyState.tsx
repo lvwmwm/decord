@@ -1,9 +1,9 @@
-// Module ID: 14862
-// Function ID: 14863
+// Module ID: 14866
+// Function ID: 14867
 // Name: QuestHomeEmptyState
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 1126, 4580, 4739, 1369, 4886, 14863, 5605, 6619, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 1126, 4580, 4739, 1369, 4886, 14867, 5605, 6619, 2]
 
-// Module 14862 (QuestHomeEmptyState)
+// Module 14866 (QuestHomeEmptyState)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -14,7 +14,7 @@ import useChatLayoutDefault from "useChatLayout" /* 4739 */;
 import Text_Text from "Text/Text" /* 4886 */;
 import LinearGradientDefault from "LinearGradient" /* 5605 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14863 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14867 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

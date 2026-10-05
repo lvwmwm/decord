@@ -1,14 +1,14 @@
-// Module ID: 14352
-// Function ID: 14353
+// Module ID: 14356
+// Function ID: 14357
 // Name: commands/activities
-// Dependencies: [5, 5316, 1085, 5099, 8015, 14319, 9026, 9481, 14310, 7275, 7285, 8993, 5313, 2]
+// Dependencies: [5, 5316, 1085, 5099, 8015, 14321, 9026, 9481, 14312, 7275, 7285, 8993, 5313, 2]
 
-// Module 14352 (commands/activities)
+// Module 14356 (commands/activities)
 import NativePermissionConstants from "NativePermissionConstants" /* 5099 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 8015 */;
 import RPCErrorDefault from "RPCError" /* 9026 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9481 */;
-import validateOpenInviteDialog from "validateOpenInviteDialog" /* 14319 */;
+import validateOpenInviteDialog from "validateOpenInviteDialog" /* 14321 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants_mod from "Constants" /* 5316 */;
 import Constants_mod2 from "Constants" /* 1085 */;
@@ -76,7 +76,7 @@ let obj4 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

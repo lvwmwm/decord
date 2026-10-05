@@ -1,9 +1,9 @@
-// Module ID: 17027
-// Function ID: 17028
+// Module ID: 17051
+// Function ID: 17052
 // Name: modal/ModalScreen
-// Dependencies: [109, 19, 17, 1085, 21, 4890, 587, 558, 576, 5093, 1260, 8422, 6984, 1618, 17028, 1369, 16599, 2]
+// Dependencies: [109, 19, 17, 1085, 21, 4890, 587, 558, 576, 5093, 1260, 8422, 6984, 1618, 17052, 1369, 16605, 2]
 
-// Module 17027 (modal/ModalScreen)
+// Module 17051 (modal/ModalScreen)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
@@ -337,7 +337,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   let tmp16;
   const tmp14 = closure_11;
   const tmp15 = closure_7;
-  const tmp7Result = modal(17028);
+  const tmp7Result = modal(17052);
   if (!tmp7Result.shouldExcludeSafeAreaForModalKey(modal.key)) {
     const items1 = [tmp.containerWithPadding, ];
     const obj3 = { paddingLeft: left, paddingRight: right };
@@ -356,8 +356,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   const merged = Object.assign(tmp2);
   items2 = [<modal2 style={undefined} transitionState={null} onClose={callback} />, ];
   const tmp7Result2 = modal(1369);
-  items2[1] = tmp7Result2.isIOS() && closure_10(tmp7(16599).PortalKeyboardRenderer, { portal: false });
-  const isIOSResult = tmp7Result2.isIOS() && closure_10(tmp7(16599).PortalKeyboardRenderer, { portal: false });
+  items2[1] = tmp7Result2.isIOS() && closure_10(tmp7(16605).PortalKeyboardRenderer, { portal: false });
+  const isIOSResult = tmp7Result2.isIOS() && closure_10(tmp7(16605).PortalKeyboardRenderer, { portal: false });
   return tmp14(tmp15, obj4);
 });
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/modal/ModalScreen.tsx");

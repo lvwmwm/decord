@@ -1,9 +1,9 @@
-// Module ID: 15284
-// Function ID: 15285
+// Module ID: 15288
+// Function ID: 15289
 // Name: SaveCameraUploadsToDeviceSetting
 // Dependencies: [1195, 7634, 558, 576, 504, 8863, 11129, 1126, 2]
 
-// Module 15284 (SaveCameraUploadsToDeviceSetting)
+// Module 15288 (SaveCameraUploadsToDeviceSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;

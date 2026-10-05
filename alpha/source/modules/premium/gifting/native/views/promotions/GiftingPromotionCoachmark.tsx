@@ -1,9 +1,9 @@
-// Module ID: 17084
-// Function ID: 17085
+// Module ID: 17108
+// Function ID: 17109
 // Name: GiftingPromotionCoachmark
 // Dependencies: [19, 17, 4879, 10396, 1085, 2048, 21, 4890, 587, 558, 576, 504, 10485, 10469, 10486, 7946, 4854, 6657, 6681, 10392, 1369, 8464, 5974, 10487, 4886, 10766, 1126, 5594, 6645, 2]
 
-// Module 17084 (GiftingPromotionCoachmark)
+// Module 17108 (GiftingPromotionCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;

@@ -26,7 +26,7 @@ import size from "module_2" /* 2 */;
 
 let applicationId, c0, c4, c5;
 
-const f108459 = (str) => str.toUpperCase();
+const f108605 = (str) => str.toUpperCase();
 function useOnActivityItemSelected(arg0) {
   let application;
   let closure_11;
@@ -83,7 +83,7 @@ function useOnActivityItemSelected(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -138,7 +138,7 @@ function useOnActivityItemSelected(arg0) {
             } else if (1 === c4) {
               c3 = 0;
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             } else {
               if (2 === c4) {
                 if (arg0 === 1) {
@@ -160,7 +160,7 @@ function useOnActivityItemSelected(arg0) {
               } else if (3 === c4) {
                 c3 = 0;
                 c5 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } else if (4 === c4) {
                 if (arg0 === 1) {
                   c5 = 3;
@@ -183,7 +183,7 @@ function useOnActivityItemSelected(arg0) {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
             const obj13 = { targetApplicationId: closure_129_12, locationObject: closure_129_2, channelId, analyticsLocations: closure_129_13, componentId: closure_129_5, commandOrigin: closure_129_6, sectionName: closure_129_7, source: closure_129_8, customId: closure_129_9, referrerId: closure_129_10, onConfirmActivityLaunchChecksAlertOpen: closure_129_11 };
             const promise = tmp(locationObject[22])(obj13);
@@ -232,7 +232,7 @@ function useOnActivityItemSelected(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -281,7 +281,7 @@ function useOnActivityItemSelected(arg0) {
               return obj;
             }
             c0 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp16) {
             c0 = 3;
             throw tmp16;
@@ -449,7 +449,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                             let replaced;
                             if (STAFF_RELEASE_PHASES.includes(str2)) {
                               const str5 = str2.replace("_", " ");
-                              replaced = str5.replace(/(^\w|\s\w)/g, f108459);
+                              replaced = str5.replace(/(^\w|\s\w)/g, f108605);
                             }
                           } else {
                             ApplicationFlagUtils;
@@ -592,7 +592,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let replaced;
     if (STAFF_RELEASE_PHASES.includes(str)) {
       const str4 = str.replace("_", " ");
-      replaced = str4.replace(/(^\w|\s\w)/g, f108459);
+      replaced = str4.replace(/(^\w|\s\w)/g, f108605);
     }
     tmp16 = replaced;
   } else {
@@ -723,7 +723,7 @@ function getStaffReleasePhase(application, client_platform_config) {
   let replaced;
   if (STAFF_RELEASE_PHASES.includes(str)) {
     const str4 = str.replace("_", " ");
-    replaced = str4.replace(/(^\w|\s\w)/g, f108459);
+    replaced = str4.replace(/(^\w|\s\w)/g, f108605);
   }
   return replaced;
 }

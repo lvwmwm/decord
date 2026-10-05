@@ -41,7 +41,7 @@ let obj = function _disconnectRemote() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -124,7 +124,7 @@ let obj = function _disconnectRemote() {
             c3 = 0;
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp30) {
         let closure_2 = tmp30;
@@ -205,7 +205,7 @@ obj = function _fetchDevices() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -289,7 +289,7 @@ obj = function _sendConnectVoiceCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -374,7 +374,7 @@ obj = function _cancelCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -421,7 +421,7 @@ obj = function _cancelCommand() {
             obj = closure_132_1(closure_132_2[6]);
             obj.dispatch(obj11);
             c8 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp25) {
           closure_5 = tmp25;
@@ -458,7 +458,7 @@ obj = function _transferToPlayStation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -528,7 +528,7 @@ obj = function _transferToPlayStation() {
           } else {
             closure_132_1(closure_132_2[15])(id.id, closure_0);
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp26) {
           c6 = 3;

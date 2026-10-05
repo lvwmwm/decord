@@ -1,9 +1,9 @@
-// Module ID: 16916
-// Function ID: 16917
+// Module ID: 16935
+// Function ID: 16936
 // Name: AddFriendScreen
-// Dependencies: [32, 19, 17, 1377, 1085, 12327, 21, 4890, 587, 558, 576, 12329, 4722, 1252, 1126, 8038, 7498, 1369, 5911, 4886, 13666, 13668, 2]
+// Dependencies: [32, 19, 17, 1377, 1085, 12327, 21, 4890, 587, 558, 576, 12329, 4722, 1252, 1126, 8038, 7498, 1369, 5911, 4886, 13668, 13670, 2]
 
-// Module 16916 (AddFriendScreen)
+// Module 16935 (AddFriendScreen)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import ContactSyncConstants from "ContactSyncConstants" /* 12327 */;
@@ -600,11 +600,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
           const tmp40 = closure_11(closure_12, obj9);
           class P {
             constructor() {
-              obj = { headerRight() { /* body not rendered: F147348 */ } };
+              obj = { headerRight() { /* body not rendered: F147623 */ } };
               setOptionsResult = navigation.setOptions(obj);
               obj2 = closure_0(closure_2[11]);
               result = obj2.checkContactPermissions();
-              nextPromise = result.then(() => { /* body not rendered: F147349 */ });
+              nextPromise = result.then(() => { /* body not rendered: F147624 */ });
               return;
             }
           }
@@ -644,7 +644,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
           }
         }
         const obj12 = { style: tmp4.rowContainer, location: "Add Friend Modal" };
-        tmp30 = closure_10(contactSyncAccount(13668), obj12);
+        tmp30 = closure_10(contactSyncAccount(13670), obj12);
       }
       cResult[18] = tmp9;
       cResult[19] = tmp4.rowContainer;
@@ -653,26 +653,26 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
     const obj13 = { style: tmp4.input, autoFocusInput: false, sourcePage };
     cResult[14] = sourcePage;
     cResult[15] = tmp4.input;
-    cResult[16] = closure_10(contactSyncAccount(13666), obj13);
-    closure_10(contactSyncAccount(13666), obj13);
+    cResult[16] = closure_10(contactSyncAccount(13668), obj13);
+    closure_10(contactSyncAccount(13668), obj13);
     class P {
       constructor() {
-        obj = { headerRight() { /* body not rendered: F147348 */ } };
+        obj = { headerRight() { /* body not rendered: F147623 */ } };
         setOptionsResult = navigation.setOptions(obj);
         obj2 = closure_0(closure_2[11]);
         result = obj2.checkContactPermissions();
-        nextPromise = result.then(() => { /* body not rendered: F147349 */ });
+        nextPromise = result.then(() => { /* body not rendered: F147624 */ });
         return;
       }
     }
   }
   class P {
     constructor() {
-      obj = { headerRight() { /* body not rendered: F147348 */ } };
+      obj = { headerRight() { /* body not rendered: F147623 */ } };
       setOptionsResult = navigation.setOptions(obj);
       obj2 = closure_0(closure_2[11]);
       result = obj2.checkContactPermissions();
-      nextPromise = result.then(() => { /* body not rendered: F147349 */ });
+      nextPromise = result.then(() => { /* body not rendered: F147624 */ });
       return;
     }
   }
@@ -761,7 +761,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
   intl2 = navigation(1126).intl;
   items2[1] = closure_10(Text2, obj5);
   const obj6 = { style: tmp.input, autoFocusInput: false, sourcePage };
-  items2[2] = closure_10(contactSyncAccount(13666), obj6);
+  items2[2] = closure_10(contactSyncAccount(13668), obj6);
   const obj7 = { style: tmp.otherOptionsContainer, children: items3 };
   const obj8 = { accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: intl3.string(navigation(1126).t.dukg0Z) };
   const Text3 = navigation(4886).Text;
@@ -775,7 +775,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
   const tmp9 = closure_12;
   if (tmp5) {
     const obj9 = { style: tmp.rowContainer, location: "Add Friend Modal" };
-    tmp10Result = tmp10(tmp11(13668), obj9);
+    tmp10Result = tmp10(tmp11(13670), obj9);
   }
   const obj10 = { children: items1 };
   items3[1] = tmp10Result;

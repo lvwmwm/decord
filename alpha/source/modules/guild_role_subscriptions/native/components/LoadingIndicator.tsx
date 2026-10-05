@@ -1,9 +1,9 @@
-// Module ID: 15029
-// Function ID: 15030
+// Module ID: 15033
+// Function ID: 15034
 // Name: LoadingIndicator
 // Dependencies: [19, 17, 21, 4890, 558, 576, 2]
 
-// Module 15029 (LoadingIndicator)
+// Module 15033 (LoadingIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

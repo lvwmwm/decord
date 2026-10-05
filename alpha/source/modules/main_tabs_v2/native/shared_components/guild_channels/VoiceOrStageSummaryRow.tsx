@@ -1,9 +1,9 @@
-// Module ID: 16807
-// Function ID: 16808
+// Module ID: 16826
+// Function ID: 16827
 // Name: guild_channels/VoiceOrStageSummaryRow
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 11698, 4886, 1188, 16808, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 11698, 4886, 1188, 16827, 2]
 
-// Module 16807 (guild_channels/VoiceOrStageSummaryRow)
+// Module 16826 (guild_channels/VoiceOrStageSummaryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1188 */;
@@ -339,7 +339,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
                   obj5 = { style: items2, children: items3 };
                   items2 = [, ];
                   ({ badge: arr3[0], audienceBadge: arr3[1] } = tmp7);
-                  let obj6 = { size: tmp(1188).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: num(16808) };
+                  let obj6 = { size: tmp(1188).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: num(16827) };
                   const Icon = tmp(1188).Icon;
                   items3 = [tmp17(Icon, obj6), ];
                   let obj7 = { variant: "text-sm/bold", style: { marginLeft: 4 }, children: audienceCount };

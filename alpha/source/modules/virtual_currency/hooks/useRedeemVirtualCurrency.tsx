@@ -70,7 +70,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -151,7 +151,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
               tmp(false);
             }
             c8 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp47) {
           closure_5 = tmp47;

@@ -1,9 +1,9 @@
-// Module ID: 14788
-// Function ID: 14789
+// Module ID: 14792
+// Function ID: 14793
 // Name: PremiumSettingScreen
 // Dependencies: [19, 21, 558, 576, 6490, 1490, 6487, 6919, 2]
 
-// Module 14788 (PremiumSettingScreen)
+// Module 14792 (PremiumSettingScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import useNavigation from "useNavigation" /* 1490 */;

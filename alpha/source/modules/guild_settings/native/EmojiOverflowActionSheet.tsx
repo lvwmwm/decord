@@ -1,9 +1,9 @@
-// Module ID: 17714
-// Function ID: 17715
+// Module ID: 17738
+// Function ID: 17739
 // Name: EmojiOverflowActionSheet
 // Dependencies: [5, 19, 17, 21, 4890, 558, 576, 1402, 4886, 4847, 1126, 5993, 9939, 10058, 5312, 4567, 6017, 6074, 6701, 2]
 
-// Module 17714 (EmojiOverflowActionSheet)
+// Module 17738 (EmojiOverflowActionSheet)
 import EmojiActionCreators from "EmojiActionCreators" /* 9939 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -225,7 +225,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                                           const obj3 = { value, done: true };
                                           return obj3;
                                         } else {
-                                          return { value: "IconComponent", done: "IconComponent" };
+                                          return { value: "IconComponent", done: null };
                                         }
                                       } else {
                                         let c4;
@@ -297,7 +297,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                                             }
                                             closure_130_4();
                                             c6 = 3;
-                                            return { value: "IconComponent", done: "IconComponent" };
+                                            return { value: "IconComponent", done: null };
                                           }
                                         } catch (tmp38) {
                                           closure_3 = tmp38;
@@ -461,7 +461,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             let c4;
@@ -533,7 +533,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                 }
                 closure_130_4();
                 c6 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp38) {
               closure_3 = tmp38;

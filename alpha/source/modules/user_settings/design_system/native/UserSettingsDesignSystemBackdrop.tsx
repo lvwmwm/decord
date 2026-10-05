@@ -1,9 +1,9 @@
-// Module ID: 15673
-// Function ID: 15674
+// Module ID: 15677
+// Function ID: 15678
 // Name: UserSettingsDesignSystemBackdrop
 // Dependencies: [32, 19, 17, 21, 4890, 558, 576, 4886, 5594, 5995, 5593, 4612, 5597, 5598, 5766, 5771, 2]
 
-// Module 15673 (UserSettingsDesignSystemBackdrop)
+// Module 15677 (UserSettingsDesignSystemBackdrop)
 import react2 from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 4886 */;
 import Stack_Stack from "Stack/Stack" /* 5593 */;

@@ -1,10 +1,10 @@
-// Module ID: 13594
-// Function ID: 13595
+// Module ID: 13596
+// Function ID: 13597
 // Name: VoiceMemberEmbeddedActivity
 // Dependencies: [32, 19, 17, 2050, 2051, 1377, 1192, 6646, 21, 1188, 4890, 587, 558, 576, 6663, 1375, 504, 4498, 9046, 1484, 5817, 9045, 1126, 4886, 9148, 5595, 5909, 2]
 // Exports: calculateActivityRowHeight
 
-// Module 13594 (VoiceMemberEmbeddedActivity)
+// Module 13596 (VoiceMemberEmbeddedActivity)
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1188 */;
 import FormConstants from "FormConstants" /* 1192 */;

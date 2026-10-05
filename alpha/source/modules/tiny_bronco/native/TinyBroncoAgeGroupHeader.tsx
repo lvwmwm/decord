@@ -1,9 +1,9 @@
-// Module ID: 14532
-// Function ID: 14533
+// Module ID: 14536
+// Function ID: 14537
 // Name: TinyBroncoAgeGroupHeader
-// Dependencies: [32, 19, 17, 9421, 2048, 21, 4890, 587, 2036, 9428, 3077, 8084, 558, 576, 14522, 6891, 4812, 1126, 4886, 6017, 5909, 14533, 5594, 2]
+// Dependencies: [32, 19, 17, 9421, 2048, 21, 4890, 587, 2036, 9428, 3077, 8084, 558, 576, 14526, 6891, 4812, 1126, 4886, 6017, 5909, 14537, 5594, 2]
 
-// Module 14532 (TinyBroncoAgeGroupHeader)
+// Module 14536 (TinyBroncoAgeGroupHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,7 +15,7 @@ import Text_Text from "Text/Text" /* 4886 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8084 */;
 import TinyBroncoConstants from "TinyBroncoConstants" /* 9421 */;
 import useAgeGroupPresentation from "useAgeGroupPresentation" /* 9428 */;
-import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 14533 */;
+import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 14537 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

@@ -86,7 +86,7 @@ let obj = {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c2;
@@ -170,7 +170,7 @@ let obj = {
           } else if (1 === tmp4) {
             c2 = 0;
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } else if (arg0 === 1) {
             c3 = 3;
             throw value;
@@ -203,7 +203,7 @@ let obj = {
           obj9 = { appearance: obj5 };
           dispatch(obj8);
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp25) {
           if (0 === c2) {
             c3 = 3;

@@ -1,9 +1,9 @@
-// Module ID: 14573
-// Function ID: 14574
+// Module ID: 14577
+// Function ID: 14578
 // Name: TwoFASetupSuccess
-// Dependencies: [5, 32, 19, 17, 21, 4890, 587, 558, 576, 6086, 1126, 14562, 6437, 14574, 4886, 1188, 5594, 14563, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4890, 587, 558, 576, 6086, 1126, 14566, 6437, 14578, 4886, 1188, 5594, 14567, 2]
 
-// Module 14573 (TwoFASetupSuccess)
+// Module 14577 (TwoFASetupSuccess)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import NativeCeremoniesDefault from "NativeCeremonies" /* 6437 */;
@@ -31,8 +31,8 @@ const intl5 = tmp(1126);
 const native = tmp(1188);
 const Text_Text = tmp(4886);
 const components_Button_Button = tmp(5594);
-const TwoFASetupModal = tmp(14563);
-const AssetRegistry = tmp(14574);
+const TwoFASetupModal = tmp(14567);
+const AssetRegistry = tmp(14578);
 ({ View: metroRequire, Image: metroImportDefault } = react_native);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let createStyles = createStyles_mod;
@@ -88,7 +88,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c4;
@@ -131,7 +131,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 c4 = 0;
               }
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp14) {
             body = tmp14;
@@ -391,7 +391,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
         await "IconComponent";
         ({ ticket: c0, credential: c1 } = closure_0);
-        return "Reflect";
+        return "Set";
       });
       return obj(...arguments);
     };

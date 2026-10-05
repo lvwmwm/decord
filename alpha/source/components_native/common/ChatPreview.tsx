@@ -1,9 +1,9 @@
-// Module ID: 13091
-// Function ID: 13092
+// Module ID: 13093
+// Function ID: 13094
 // Name: ChatPreview
 // Dependencies: [19, 17, 4879, 4561, 2051, 1377, 7592, 21, 4890, 587, 4589, 11154, 7591, 9854, 9989, 11565, 4552, 1126, 9988, 12, 7550, 4901, 11239, 11201, 11164, 5122, 1881, 11280, 7630, 9855, 7260, 11163, 11165, 11200, 11203, 12316, 12318, 11506, 1369, 6619, 5909, 4886, 558, 576, 2028, 504, 1484, 6832, 5100, 2]
 
-// Module 13091 (ChatPreview)
+// Module 13093 (ChatPreview)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
@@ -156,7 +156,7 @@ class ChatPreviewBase extends PureComponent {
         let item1 = items.forEach((arr, index) => {
           let c1;
           let obj8;
-          const f154580 = (message) => {
+          const f154888 = (message) => {
             const content = obj3.content;
             const obj = { rowType: constants2.MESSAGE, changeType: constants.NOOP, roleStyle, message, isFirst: message === closure_0 };
             content.unshift(obj);
@@ -194,7 +194,7 @@ class ChatPreviewBase extends PureComponent {
               tmp8 = obj3;
             }
             obj3 = tmp8;
-            const item = arr.forEach(f154580);
+            const item = arr.forEach(f154888);
             tmp8.revealed = arr[arr.length - 1].id === messages.revealedMessageId;
             tmp8.context = arr[arr.length - 1].id;
             const intl2 = _undefined(changeType[17]).intl;
@@ -210,7 +210,7 @@ class ChatPreviewBase extends PureComponent {
               tmp14 = obj5;
             }
             obj5 = tmp14;
-            const item1 = arr.forEach(f154580);
+            const item1 = arr.forEach(f154888);
             tmp14.revealed = arr[arr.length - 1].id === messages.revealedMessageId;
             tmp14.context = arr[arr.length - 1].id;
             const intl = _undefined(changeType[17]).intl;
@@ -256,7 +256,7 @@ class ChatPreviewBase extends PureComponent {
         const chatManager4 = require.chatManager;
         const jumpTargetId = tmp3.jumpTargetId;
         const previousRows = chatManager4.getPreviousRows();
-        let obj3 = { rows: previousRows, scrollToMessageId: jumpTargetId, jumpTargetId, jumpType: "Set", shouldInitialScroll: "Array", animated: "2025-11-video-end-card-v2", scrollPosition: "user", focusTargetId: null };
+        let obj3 = { rows: previousRows, scrollToMessageId: jumpTargetId, jumpTargetId, jumpType: "Symbol", shouldInitialScroll: "Array", animated: 0.301, scrollPosition: 1, focusTargetId: "hidden" };
         require.scrollData = computeScrollDataDefault(obj3);
         if (!tmp7) {
           if (obj.didPositionInitialScroll) {

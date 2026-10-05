@@ -1,16 +1,16 @@
-// Module ID: 16886
-// Function ID: 16887
+// Module ID: 16905
+// Function ID: 16906
 // Name: AutocompleteScreen
-// Dependencies: [32, 19, 2051, 4519, 1377, 11970, 11967, 7513, 1085, 21, 558, 576, 504, 16797, 11966, 11985, 11982, 4722, 5043, 11968, 16887, 11975, 11969, 16851, 16789, 1126, 16801, 2]
+// Dependencies: [32, 19, 2051, 4519, 1377, 11970, 11967, 7513, 1085, 21, 558, 576, 504, 16816, 11966, 11985, 11982, 4722, 5043, 11968, 16906, 11975, 11969, 16870, 16808, 1126, 16820, 2]
 
-// Module 16886 (AutocompleteScreen)
+// Module 16905 (AutocompleteScreen)
 import Fragment from "Fragment" /* 21 */;
 import UserUtilsDefault from "UserUtils" /* 4722 */;
 import useChannelName from "useChannelName" /* 5043 */;
 import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11966 */;
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11982 */;
 import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 11985 */;
-import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 16887 */;
+import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 16906 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore_mod from "ChannelStore" /* 2051 */;

@@ -1,21 +1,30 @@
 // Module ID: 13830
 // Function ID: 13831
-// Dependencies: []
+// Dependencies: [13831]
 
 // Module 13830
-let closure_0 = Object.freeze({ loose: true });
-let closure_1 = Object.freeze({});
+import _mod13831 from "module_13831" /* 13831 */;
 
-export default (arg0) => {
-  let tmp2;
-  let tmp = arg0;
-  if (tmp) {
-    if (typeof tmp !== "object") {
-      tmp = closure_0;
-    }
-    tmp2 = tmp;
-  } else {
-    tmp2 = closure_1;
+
+export default function(arg0, arg1) {
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
   }
-  return tmp2;
+  if (arg0 instanceof _mod13831) {
+    return arg0;
+  } else {
+    try {
+      const self = this;
+      const self2 = this;
+      const tmp5 = new _mod13831(arg0, arg1);
+      return tmp5;
+    } catch (tmp7) {
+      if (flag) {
+        throw tmp7;
+      } else {
+        return null;
+      }
+    }
+  }
 };

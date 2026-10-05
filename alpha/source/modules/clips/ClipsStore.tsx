@@ -1,7 +1,7 @@
 // Module ID: 2005
 // Function ID: 2006
 // Name: ClipsStore
-// Dependencies: [5, 2006, 502, 7231, 1085, 4937, 4490, 13806, 1390, 13807, 13809, 13810, 504, 1999, 584, 2]
+// Dependencies: [5, 2006, 502, 7231, 1085, 4937, 4490, 13808, 1390, 13809, 13811, 13812, 504, 1999, 584, 2]
 
 // Module 2005 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -9,9 +9,9 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import FlagUtils from "FlagUtils" /* 1390 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
 import DiscordNativeDefault from "DiscordNative" /* 4490 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 13807 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 13809 */;
-import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 13810 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 13809 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 13811 */;
+import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 13812 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 2006 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -49,7 +49,7 @@ let obj = function _migrateDefaultStorage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -119,7 +119,7 @@ let obj = function _migrateDefaultStorage() {
           closure_129_40.emitChange();
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp33) {
         closure_2 = tmp33;
         if (0 === c3) {
@@ -306,7 +306,7 @@ const map = new Map();
 map1 = new Map();
 const map2 = new Map();
 let closure_33 = [];
-obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: { resolution: ApplicationStreamResolutions.RESOLUTION_1080, frameRate: ApplicationStreamFPS.FPS_30, bitratePercent: DEFAULT_CLIPS_BITRATE_PERCENT }, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, maxAutoClips: 20, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "Reflect", showPovClipsInGallery: true };
+obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: { resolution: ApplicationStreamResolutions.RESOLUTION_1080, frameRate: ApplicationStreamFPS.FPS_30, bitratePercent: DEFAULT_CLIPS_BITRATE_PERCENT }, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, maxAutoClips: 20, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "Set", showPovClipsInGallery: true };
 obj = { clipsSettings: obj, hardwareClassification: null, hardwareClassificationForDecoupled: null, hardwareClassificationVersion: 0, newClipIds: [], hasClips: false, hasTakenDecoupledClip: false, clipsEducationState: { dismissedAt: null, numberOfGamesLaunchedSinceDismissal: 0, numberOfTimesDismissed: 0 } };
 const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;
 class ClipsStoreClass extends DeviceSettingsStore {

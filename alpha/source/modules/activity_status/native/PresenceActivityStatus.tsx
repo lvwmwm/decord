@@ -9,7 +9,7 @@ import Constants from "Constants" /* 1085 */;
 import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7229 */;
 import ActivityStatusIconDefault from "ActivityStatusIcon" /* 10615 */;
 import ActivityStatusTextDefault from "ActivityStatusText" /* 10618 */;
-import conjuringActivity from "conjuringActivity" /* 10621 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 10621 */;
 import getActivityStatusTextDefault from "getActivityStatusText" /* 10622 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -24,8 +24,8 @@ function getActivityStatusIcon(activity) {
   const flag = false;
   if (!isEmbeddedActivityDefault(activity)) {
     let GameControllerIcon;
-    const obj = conjuringActivity;
-    if (!obj.isConjuringActivity(activity)) {
+    const obj = conjurePresenceActivity;
+    if (!obj.isConjurePresenceActivity(activity)) {
       if (activity.type === ActivityTypes.PLAYING) {
         GameControllerIcon = tmp2(8739).GameControllerIcon;
       } else if (activity.type === ActivityTypes.LISTENING) {

@@ -1,17 +1,17 @@
-// Module ID: 14259
-// Function ID: 14260
+// Module ID: 14261
+// Function ID: 14262
 // Name: Toast/Toast
-// Dependencies: [19, 17, 21, 587, 4792, 4800, 4890, 558, 576, 4580, 14260, 14261, 14262, 4886, 2]
+// Dependencies: [19, 17, 21, 587, 4792, 4800, 4890, 558, 576, 4580, 14262, 14263, 14264, 4886, 2]
 
-// Module 14259 (Toast/Toast)
+// Module 14261 (Toast/Toast)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 4580 */;
 import CircleCheckIcon from "CircleCheckIcon" /* 4792 */;
 import CircleErrorIcon from "CircleErrorIcon" /* 4800 */;
-import _mod14260 from "module_14260" /* 14260 */;
-import ToastEntity from "ToastEntity" /* 14261 */;
-import isEmptyDefault from "isEmpty" /* 14262 */;
+import _mod14262 from "module_14262" /* 14262 */;
+import ToastEntity from "ToastEntity" /* 14263 */;
+import isEmptyDefault from "isEmpty" /* 14264 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -69,7 +69,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iconColor) => {
   const token = tmpResult.useToken(nativeDefault.modules.toast.TEXT_LINE_COUNT);
   if (null == obj[str]) {
     let tmp22;
-    const tmpResult3 = _mod14260;
+    const tmpResult3 = _mod14262;
     if (tmpResult3.isToastEntity(icon)) {
       let tmp19;
       if (cResult[0] !== icon) {
@@ -150,7 +150,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iconColor) => {
   }
   if (icon1 == null) {
     let tmp9;
-    const tmpResult4 = _mod14260;
+    const tmpResult4 = _mod14262;
     if (!tmpResult4.isToastEntity(icon)) {
       tmp9 = icon;
     }
@@ -226,12 +226,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iconColor) => {
   const memo = secondaryIconColor.useMemo(() => {
     let obj;
     if (null == obj[str]) {
-      obj = _mod14260;
+      obj = _mod14262;
       const tmp2 = require;
       const tmp4 = icon;
       if (obj.isToastEntity(icon)) {
         const obj3 = { entity: tmp4 };
-        return metroRequire(tmp2(14261).ToastEntity, obj3);
+        return metroRequire(tmp2(14263).ToastEntity, obj3);
       }
     }
     icon = undefined;
@@ -240,7 +240,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((iconColor) => {
     }
     if (icon == null) {
       let tmp9;
-      const obj2 = _mod14260;
+      const obj2 = _mod14262;
       const tmp8 = icon;
       if (!obj2.isToastEntity(icon)) {
         tmp9 = tmp8;

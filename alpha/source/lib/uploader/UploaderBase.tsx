@@ -90,7 +90,7 @@ class UploaderBase extends EventEmitter {
     };
     let obj = _modDef12;
     tmp3.id = obj.uniqueId("Uploader");
-    tmp3._file = { id: tmp3.id, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items: "filter" };
+    tmp3._file = { id: tmp3.id, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items: "unicodeVersion" };
     return tmp3;
   }
   _fileSize() {
@@ -127,7 +127,7 @@ class UploaderBase extends EventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c7;
@@ -409,7 +409,7 @@ class UploaderBase extends EventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -465,7 +465,7 @@ class UploaderBase extends EventEmitter {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp28) {
           c3 = 3;
           throw tmp28;

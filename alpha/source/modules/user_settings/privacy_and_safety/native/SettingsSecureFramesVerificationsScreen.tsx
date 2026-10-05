@@ -1,9 +1,9 @@
-// Module ID: 15759
-// Function ID: 15760
+// Module ID: 15763
+// Function ID: 15764
 // Name: SettingsSecureFramesVerificationsScreen
-// Dependencies: [19, 17, 1377, 21, 4890, 558, 576, 9364, 1126, 6017, 5909, 5993, 4886, 6490, 1490, 504, 4722, 7498, 15756, 8371, 2]
+// Dependencies: [19, 17, 1377, 21, 4890, 558, 576, 9364, 1126, 6017, 5909, 5993, 4886, 6490, 1490, 504, 4722, 7498, 15760, 8371, 2]
 
-// Module 15759 (SettingsSecureFramesVerificationsScreen)
+// Module 15763 (SettingsSecureFramesVerificationsScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -306,7 +306,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp13 = cResult[7];
     }
     const layoutEffect = items1.useLayoutEffect(tmp13);
-    const tmpResult2 = userId(15756);
+    const tmpResult2 = userId(15760);
     const secureFramesUserVerifiedKeys = tmpResult2.useSecureFramesUserVerifiedKeys(userId);
     const obj6 = items1;
     if (cResult[8] === userId) {
@@ -469,7 +469,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     intl = intl3.intl;
     setOptions(obj);
   });
-  const obj5 = userId(15756);
+  const obj5 = userId(15760);
   secureFramesUserVerifiedKeys = obj5.useSecureFramesUserVerifiedKeys(userId);
   const items1 = [userId, secureFramesUserVerifiedKeys];
   const items2 = [navigation, secureFramesUserVerifiedKeys];

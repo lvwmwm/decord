@@ -1,10 +1,10 @@
-// Module ID: 17225
-// Function ID: 17226
+// Module ID: 17249
+// Function ID: 17250
 // Name: VoicePanelSettingsActionCreators
-// Dependencies: [4854, 17226, 1987, 2]
+// Dependencies: [4854, 17250, 1987, 2]
 // Exports: closeVoicePanelSettingsActionSheet, openVoicePanelSettingsActionSheet
 
-// Module 17225 (VoicePanelSettingsActionCreators)
+// Module 17249 (VoicePanelSettingsActionCreators)
 import asyncRequire from "asyncRequire" /* 1987 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
 import size from "module_2" /* 2 */;
@@ -20,5 +20,5 @@ export const closeVoicePanelSettingsActionSheet = function closeVoicePanelSettin
 export const openVoicePanelSettingsActionSheet = function openVoicePanelSettingsActionSheet(guildId, channelId) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { guildId, channelId };
-  obj.openLazy(asyncRequire(17226, dependencyMap.paths), VoicePanelSettingsActionSheet, obj2);
+  obj.openLazy(asyncRequire(17250, dependencyMap.paths), VoicePanelSettingsActionSheet, obj2);
 };

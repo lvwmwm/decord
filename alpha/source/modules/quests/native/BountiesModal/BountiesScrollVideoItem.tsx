@@ -1,16 +1,16 @@
-// Module ID: 14818
-// Function ID: 14819
+// Module ID: 14822
+// Function ID: 14823
 // Name: BountiesScrollVideoItem
-// Dependencies: [5, 32, 19, 17, 8510, 7186, 5623, 21, 558, 576, 14819, 504, 14820, 10949, 14825, 14826, 14827, 14823, 10958, 5630, 5628, 14830, 14835, 2]
+// Dependencies: [5, 32, 19, 17, 8510, 7186, 5623, 21, 558, 576, 14823, 504, 14824, 10949, 14829, 14830, 14831, 14827, 10958, 5630, 5628, 14834, 14839, 2]
 
-// Module 14818 (BountiesScrollVideoItem)
+// Module 14822 (BountiesScrollVideoItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import QuestConstants from "QuestConstants" /* 5623 */;
 import QuestContent from "QuestContent" /* 5628 */;
 import AdCreativeType from "AdCreativeType" /* 5630 */;
 import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 10958 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 14819 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 14823 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -312,7 +312,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -368,7 +368,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
               });
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp24) {
           closure_2 = tmp24;
@@ -431,7 +431,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
   let tmp21;
   let tmp7;
   let tmp8;
-  const f118037 = () => {
+  const f118190 = () => {
     let currentBalance = null;
     if (isActive) {
       currentBalance = VirtualCurrencyStore.getCurrentBalance();
@@ -490,9 +490,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
   const handlePlayerStateChange = isEndCardVisible({ isActive, playerRef: ref }).handlePlayerStateChange;
   [tmp17, tmp18] = isActive(obj.useState(isActive), 2);
   isActive(obj.useState(isActive), 2);
-  [tmp20, tmp21] = isActive(obj.useState(f118037), 2);
+  [tmp20, tmp21] = isActive(obj.useState(f118190), 2);
   VirtualCurrencyStore = tmp21;
-  isActive(obj.useState(f118037), 2);
+  isActive(obj.useState(f118190), 2);
   const first = tmp5(obj.useState(0), 2)[0];
   isActive(obj.useState(0), 2);
   const tmp12 = flushProgress;
@@ -521,7 +521,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -577,7 +577,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
             });
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp24) {
         width = tmp24;

@@ -1,9 +1,9 @@
-// Module ID: 15235
-// Function ID: 15236
+// Module ID: 15239
+// Function ID: 15240
 // Name: AutoplayGifSetting
 // Dependencies: [7634, 11129, 1126, 2028, 2]
 
-// Module 15235 (AutoplayGifSetting)
+// Module 15239 (AutoplayGifSetting)
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2028 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;

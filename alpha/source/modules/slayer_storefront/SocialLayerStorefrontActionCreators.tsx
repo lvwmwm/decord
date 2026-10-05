@@ -181,7 +181,7 @@ let obj = function _fetchSocialLayerStorefront2() {
       if (closure_2 === undefined) {
         obj6 = {};
       }
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -284,7 +284,7 @@ obj = function _fetchSocialLayerStorefrontSkuWithUrl2() {
       if (closure_2 === undefined) {
         obj7 = {};
       }
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -317,7 +317,7 @@ obj = function _fetchSocialLayerStorefrontEntries() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -395,7 +395,7 @@ obj = function _fetchSocialLayerStorefrontEntries() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp24) {
           closure_3 = tmp24;
           if (0 === c4) {
@@ -428,7 +428,7 @@ obj = function _fetchSocialLayerStorefrontById() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -547,7 +547,7 @@ obj = function _fetchSocialLayerStorefrontById() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp62) {
           storefront = tmp62;
           if (0 === c6) {
@@ -582,7 +582,7 @@ obj = function _fetchSocialLayerStorefrontAnnouncement() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -639,7 +639,7 @@ obj = function _fetchSocialLayerStorefrontAnnouncement() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp34) {
           closure_3 = tmp34;
@@ -668,7 +668,7 @@ obj = function _fetchSocialLayerStorefrontConfig() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -752,7 +752,7 @@ obj = function _fetchSocialLayerStorefrontConfig() {
           c3 = 0;
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp32) {
         if (0 === c3) {
           c5 = 3;
@@ -784,7 +784,7 @@ obj = function _fetchSocialLayerStorefrontLaunchAnnouncement() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c11;
@@ -874,7 +874,7 @@ obj = function _fetchSocialLayerStorefrontLaunchAnnouncement() {
             c11 = 0;
           }
           c13 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp43) {
         closure_10 = tmp43;

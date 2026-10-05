@@ -1,15 +1,15 @@
-// Module ID: 15880
-// Function ID: 15881
+// Module ID: 15884
+// Function ID: 15885
 // Name: RegisterPhoneOrEmailInput
-// Dependencies: [19, 6430, 15863, 21, 558, 576, 1490, 14269, 504, 6451, 1105, 1126, 6450, 2]
+// Dependencies: [19, 6430, 15867, 21, 558, 576, 1490, 14271, 504, 6451, 1105, 1126, 6450, 2]
 
-// Module 15880 (RegisterPhoneOrEmailInput)
+// Module 15884 (RegisterPhoneOrEmailInput)
 import Fragment from "Fragment" /* 21 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 6451 */;
 import react from "react" /* 19 */;
 import PhoneStore from "PhoneStore" /* 6430 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 15863 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 15867 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

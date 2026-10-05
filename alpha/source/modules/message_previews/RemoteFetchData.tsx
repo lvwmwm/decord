@@ -1,9 +1,9 @@
-// Module ID: 15136
-// Function ID: 15137
+// Module ID: 15140
+// Function ID: 15141
 // Name: RemoteFetchData
 // Dependencies: [5, 2]
 
-// Module 15136 (RemoteFetchData)
+// Module 15140 (RemoteFetchData)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -107,7 +107,7 @@ class RemoteFetchData {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;

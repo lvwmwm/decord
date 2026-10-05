@@ -29,7 +29,7 @@ let obj = function _asyncLoop() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -64,7 +64,7 @@ let obj = function _asyncLoop() {
               }
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else if (arg0 === 1) {
           c6 = 3;
@@ -103,7 +103,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: "IconComponent" };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -117,7 +117,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       } else {
         c0 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp3) {
       c0 = 3;

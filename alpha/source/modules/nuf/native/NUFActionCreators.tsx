@@ -43,7 +43,7 @@ let modalConfig = function _startContactSyncForDiscoverability() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -105,7 +105,7 @@ let modalConfig = function _startContactSyncForDiscoverability() {
           return obj;
         } else {
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp22) {
         c3 = 3;

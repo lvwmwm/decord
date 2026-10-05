@@ -1,9 +1,9 @@
-// Module ID: 17749
-// Function ID: 17750
+// Module ID: 17773
+// Function ID: 17774
 // Name: GuildSettingsModalSecurity
-// Dependencies: [19, 17, 2070, 2074, 1377, 9248, 1085, 21, 4890, 587, 558, 576, 504, 9247, 1126, 4886, 5594, 14574, 6536, 2]
+// Dependencies: [19, 17, 2070, 2074, 1377, 9248, 1085, 21, 4890, 587, 558, 576, 504, 9247, 1126, 4886, 5594, 14578, 6536, 2]
 
-// Module 17749 (GuildSettingsModalSecurity)
+// Module 17773 (GuildSettingsModalSecurity)
 import nativeDefault from "native" /* 587 */;
 import GuildRecord from "GuildRecord" /* 2070 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
@@ -288,7 +288,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                             return props.getProps().mfaLevel;
                           }
                         }
-                        tmp52[0] = stateFromStores(14574);
+                        tmp52[0] = stateFromStores(14578);
                         tmp52[1] = tmp4.image;
                         const tmp53 = closure_12(closure_5, tmp52);
                         cResult[35] = tmp4.image;
@@ -652,7 +652,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   items5 = [closure_13(closure_4, obj4), ];
   const obj10 = { style: tmp.center, children: items6 };
   items6 = [, ];
-  const obj11 = { source: stateFromStores(14574), style: tmp.image, resizeMode: "contain" };
+  const obj11 = { source: stateFromStores(14578), style: tmp.image, resizeMode: "contain" };
   items6[0] = closure_12(closure_5, obj11);
   const obj12 = { style: tmp.infoWrapper, children: closure_12(Text3, obj13) };
   obj13 = { variant: "text-sm/medium", color: "text-muted", children: intl4.format(guildId(1126).t["FK0+iX"], {}) };

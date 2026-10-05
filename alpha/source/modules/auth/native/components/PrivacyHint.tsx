@@ -1,17 +1,17 @@
-// Module ID: 15900
-// Function ID: 15901
+// Module ID: 15904
+// Function ID: 15905
 // Name: PrivacyHint
-// Dependencies: [19, 17, 6083, 15863, 1085, 21, 4890, 558, 576, 1126, 4886, 4594, 5991, 8895, 15901, 2]
+// Dependencies: [19, 17, 6083, 15867, 1085, 21, 4890, 558, 576, 1126, 4886, 4594, 5991, 8895, 15905, 2]
 
-// Module 15900 (PrivacyHint)
+// Module 15904 (PrivacyHint)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
 import react_native from "react-native" /* 4594 */;
 import Text_Text from "Text/Text" /* 4886 */;
 import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6083 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 15863 */;
-import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 15901 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 15867 */;
+import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 15905 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

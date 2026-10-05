@@ -36,7 +36,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-const f109450 = (item) => Math.min(item, closure_1_13);
+const f109596 = (item) => Math.min(item, closure_1_13);
 let obj = function _startAudioRecording() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let obj5;
@@ -51,7 +51,7 @@ let obj = function _startAudioRecording() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -109,7 +109,7 @@ let obj = function _startAudioRecording() {
             if (recordingId !== closure_0) {
               c4 = 0;
               c6 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             } else {
               closure_130_9(constants.STARTED);
               recordingId = closure_130_10;
@@ -117,7 +117,7 @@ let obj = function _startAudioRecording() {
               closure_130_10(Date.now());
               c4 = 0;
               c6 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           }
         }
@@ -159,7 +159,7 @@ function stopAndGetAudioRecording() {
   if (mapped.length > closure_16) {
     arr3 = downsampleWaveformDefault(mapped, tmp5);
   }
-  const mapped1 = arr3.map(f109450);
+  const mapped1 = arr3.map(f109596);
   const fromByteArray = byteLengthDefault.fromByteArray;
   byteLengthDefault;
   const uint8Array = new Uint8Array(mapped1);
@@ -185,7 +185,7 @@ obj = function _endAudioRecording() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -256,7 +256,7 @@ obj = function _stopAndCacheAudioRecording() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -290,7 +290,7 @@ obj = function _stopAndCacheAudioRecording() {
           closure_129_23();
           closure_129_7(closure_0);
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp14) {
         c3 = 3;
@@ -327,7 +327,7 @@ export const generateBase64EncodedWaveform = function generateBase64EncodedWavef
   if (arg0.length > authStore3) {
     arr = downsampleWaveformDefault(arg0, tmp);
   }
-  const mapped = arr.map(f109450);
+  const mapped = arr.map(f109596);
   const fromByteArray = byteLengthDefault.fromByteArray;
   byteLengthDefault;
   const uint8Array = new Uint8Array(mapped);

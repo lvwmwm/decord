@@ -37,7 +37,7 @@ function _isNativeReflectConstruct() {
 let closure_3 = ["style", "source", "autoPlay", "duration", "textFiltersAndroid", "textFiltersIOS", "resizeMode", "containerStyle"];
 ({ View: metroImportAll, processColor: c9 } = react_native2);
 const jsx = Fragment.jsx;
-let obj = { source: "duration", progress: null, speed: true, loop: false, autoPlay: false, enableMergePathsAndroidForKitKatAndAbove: false, enableSafeModeAndroid: true, cacheComposition: false, useNativeLooping: "contain", resizeMode: null, colorFilters: [], textFiltersAndroid: [], textFiltersIOS: [] };
+let obj = { source: "emoji", progress: null, speed: true, loop: false, autoPlay: false, enableMergePathsAndroidForKitKatAndAbove: false, enableSafeModeAndroid: true, cacheComposition: false, useNativeLooping: "contain", resizeMode: null, colorFilters: [], textFiltersAndroid: [], textFiltersIOS: [] };
 class LottieView {
   constructor(arg0) {
     let constructResult;

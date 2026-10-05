@@ -1,9 +1,9 @@
-// Module ID: 17599
-// Function ID: 17600
+// Module ID: 17623
+// Function ID: 17624
 // Name: SelfPresenceStoreManager
 // Dependencies: [5438, 6613, 584, 2]
 
-// Module 17599 (SelfPresenceStoreManager)
+// Module 17623 (SelfPresenceStoreManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 5438 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;

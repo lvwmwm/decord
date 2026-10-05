@@ -1,14 +1,14 @@
-// Module ID: 15361
-// Function ID: 15362
+// Module ID: 15365
+// Function ID: 15366
 // Name: FileUpIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 15362, 4579, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 15366, 4579, 2]
 
-// Module 15361 (FileUpIcon)
+// Module 15365 (FileUpIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4579 */;
-import AssetRegistry from "AssetRegistry" /* 15362 */;
+import AssetRegistry from "AssetRegistry" /* 15366 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

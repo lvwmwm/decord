@@ -107,9 +107,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               tmp8 = globalThis;
               _setTimeout = setTimeout;
               num2 = 1000;
-              closure_4.current = setTimeout(() => { /* body not rendered: F142002 */ }, 1000);
+              closure_4.current = setTimeout(() => { /* body not rendered: F142240 */ }, 1000);
             }
-            return () => { /* body not rendered: F142003 */ };
+            return () => { /* body not rendered: F142241 */ };
           }
         }
       }

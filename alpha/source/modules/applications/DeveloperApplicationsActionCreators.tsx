@@ -25,7 +25,7 @@ let obj = function _fetchDeveloperApplications() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -76,7 +76,7 @@ let obj = function _fetchDeveloperApplications() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp17) {
         let closure_2 = tmp17;

@@ -1,9 +1,9 @@
-// Module ID: 13345
-// Function ID: 13346
+// Module ID: 13347
+// Function ID: 13348
 // Name: PremiumPlanSelect
-// Dependencies: [5, 32, 19, 17, 6930, 2074, 4533, 4534, 6739, 13346, 1379, 1085, 6938, 4869, 21, 4890, 5915, 5620, 587, 558, 576, 13347, 1126, 4886, 5593, 4528, 13349, 13350, 13351, 13352, 13353, 13354, 8313, 4580, 504, 13355, 13141, 4791, 1188, 1252, 13179, 13180, 13356, 5968, 5993, 4729, 6140, 1370, 6915, 10394, 5708, 13357, 1987, 6074, 5605, 6916, 6742, 4543, 5093, 6918, 10441, 6657, 6760, 5984, 5590, 10539, 10435, 1490, 6923, 13192, 6681, 10436, 5404, 11094, 13155, 6910, 8870, 4540, 10538, 2]
+// Dependencies: [5, 32, 19, 17, 6930, 2074, 4533, 4534, 6739, 13348, 1379, 1085, 6938, 4869, 21, 4890, 5915, 5620, 587, 558, 576, 13349, 1126, 4886, 5593, 4528, 13351, 13352, 13353, 13354, 13355, 13356, 8313, 4580, 504, 13357, 13143, 4791, 1188, 1252, 13181, 13182, 13358, 5968, 5993, 4729, 6140, 1370, 6915, 10394, 5708, 13359, 1987, 6074, 5605, 6916, 6742, 4543, 5093, 6918, 10441, 6657, 6760, 5984, 5590, 10539, 10435, 1490, 6923, 13194, 6681, 10436, 5404, 11094, 13157, 6910, 8870, 4540, 10538, 2]
 
-// Module 13345 (PremiumPlanSelect)
+// Module 13347 (PremiumPlanSelect)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
@@ -24,15 +24,15 @@ import NativeCheckoutStore from "NativeCheckoutStore" /* 6930 */;
 import NitroWheelIcon2 from "NitroWheelIcon" /* 8313 */;
 import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10394 */;
 import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10539 */;
-import openPremiumPlanWhatYouLoseActionSheetDefault from "openPremiumPlanWhatYouLoseActionSheet" /* 13179 */;
-import PremiumPlanWhatYouLoseActionSheet from "PremiumPlanWhatYouLoseActionSheet" /* 13180 */;
-import TreasureChestBannerSpotIllustration from "TreasureChestBannerSpotIllustration" /* 13347 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13349 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13350 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13351 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13352 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 13353 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 13354 */;
+import openPremiumPlanWhatYouLoseActionSheetDefault from "openPremiumPlanWhatYouLoseActionSheet" /* 13181 */;
+import PremiumPlanWhatYouLoseActionSheet from "PremiumPlanWhatYouLoseActionSheet" /* 13182 */;
+import TreasureChestBannerSpotIllustration from "TreasureChestBannerSpotIllustration" /* 13349 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13351 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13352 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13353 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13354 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 13355 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 13356 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -41,7 +41,7 @@ import GuildStore from "GuildStore" /* 2074 */;
 import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4533 */;
 import SubscriptionStore from "SubscriptionStore" /* 4534 */;
 import IAPStore from "IAPStore" /* 6739 */;
-import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 13346 */;
+import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 13348 */;
 import PremiumConstants from "PremiumConstants" /* 1379 */;
 import Constants from "Constants" /* 1085 */;
 import ColorConstants from "ColorConstants" /* 6938 */;
@@ -230,7 +230,7 @@ function PlanSection(label) {
                                             const obj2 = { value, done: true };
                                             return obj2;
                                           } else {
-                                            return { value: "IconComponent", done: "IconComponent" };
+                                            return { value: "IconComponent", done: null };
                                           }
                                         } else {
                                           try {
@@ -260,7 +260,7 @@ function PlanSection(label) {
                                               return obj;
                                             } else {
                                               productId = 3;
-                                              return { value: "IconComponent", done: "IconComponent" };
+                                              return { value: "IconComponent", done: null };
                                             }
                                           } catch (tmp4) {
                                             productId = 3;
@@ -279,7 +279,7 @@ function PlanSection(label) {
                                             const obj3 = { value, done: true };
                                             return obj3;
                                           } else {
-                                            return { value: "IconComponent", done: "IconComponent" };
+                                            return { value: "IconComponent", done: null };
                                           }
                                         } else {
                                           try {
@@ -311,7 +311,7 @@ function PlanSection(label) {
                                               return obj;
                                             } else {
                                               c0 = 3;
-                                              return { value: "IconComponent", done: "IconComponent" };
+                                              return { value: "IconComponent", done: null };
                                             }
                                           } catch (tmp11) {
                                             c0 = 3;
@@ -2236,7 +2236,7 @@ let closure_46 = react.forwardRef(function PremiumPlanSelect(isBoostPurchaseFlow
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -2328,7 +2328,7 @@ let closure_46 = react.forwardRef(function PremiumPlanSelect(isBoostPurchaseFlow
                 c5 = 0;
               }
               c7 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
             closure_2_14(false);
           }

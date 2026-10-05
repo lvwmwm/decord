@@ -49,7 +49,7 @@ let obj = function _doGuildOnboarding() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -69,7 +69,7 @@ let obj = function _doGuildOnboarding() {
               closure_1 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -150,7 +150,7 @@ let obj = function _doGuildOnboarding() {
               return { value, done: true };
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp41) {
           c6 = 3;
@@ -179,7 +179,7 @@ obj = function _fetchLandingAsset() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;

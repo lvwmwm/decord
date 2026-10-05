@@ -1,9 +1,9 @@
-// Module ID: 15340
-// Function ID: 15341
+// Module ID: 15344
+// Function ID: 15345
 // Name: CommunityActivityAlertsSetting
-// Dependencies: [11160, 7634, 1085, 558, 576, 504, 1126, 11129, 15341, 2]
+// Dependencies: [11160, 7634, 1085, 558, 576, 504, 1126, 11129, 15345, 2]
 
-// Module 15340 (CommunityActivityAlertsSetting)
+// Module 15344 (CommunityActivityAlertsSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;

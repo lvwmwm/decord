@@ -1,10 +1,10 @@
-// Module ID: 15141
-// Function ID: 15142
+// Module ID: 15145
+// Function ID: 15146
 // Name: useIsFavoritesGuildVisible
 // Dependencies: [4699, 2054, 2077, 10048, 10036, 558, 576, 504, 2]
 // Exports: isFavoritesGuildVisible
 
-// Module 15141 (useIsFavoritesGuildVisible)
+// Module 15145 (useIsFavoritesGuildVisible)
 import FavoritesUtils from "FavoritesUtils" /* 2077 */;
 import FavoritesHooks from "FavoritesHooks" /* 10036 */;
 import FavoritesGuildIntroPopover from "FavoritesGuildIntroPopover" /* 10048 */;

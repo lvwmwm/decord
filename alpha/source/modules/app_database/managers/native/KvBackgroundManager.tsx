@@ -1,12 +1,12 @@
-// Module ID: 17471
-// Function ID: 17472
+// Module ID: 17495
+// Function ID: 17496
 // Name: KvBackgroundManager
-// Dependencies: [32, 5, 12056, 6987, 6988, 1102, 3, 6613, 17472, 7251, 1369, 2078, 2079, 2095, 2]
+// Dependencies: [32, 5, 12056, 6987, 6988, 1102, 3, 6613, 17496, 7251, 1369, 2078, 2079, 2095, 2]
 
-// Module 17471 (KvBackgroundManager)
+// Module 17495 (KvBackgroundManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import reportMalformedStorageValuesDefault from "reportMalformedStorageValues" /* 17472 */;
+import reportMalformedStorageValuesDefault from "reportMalformedStorageValues" /* 17496 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import MultiAccountStore from "MultiAccountStore" /* 12056 */;
@@ -59,7 +59,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -113,7 +113,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
                 return obj;
               }
               c0 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             } catch (tmp4) {
               c0 = 3;
               throw tmp4;
@@ -139,7 +139,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -188,7 +188,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
                   return obj;
                 } else {
                   c0 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } catch (tmp5) {
                 c0 = 3;
@@ -212,7 +212,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -241,7 +241,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
                 return obj;
               }
               c0 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             } catch (tmp6) {
               c0 = 3;
               throw tmp6;
@@ -262,7 +262,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             while (true) {
@@ -320,7 +320,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
                     continue;
                   }
                   c7 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 c5 = 0;
@@ -344,7 +344,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -373,7 +373,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
                 return obj;
               } else {
                 c0 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp6) {
               c0 = 3;
@@ -420,7 +420,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -469,7 +469,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
                 lastDeepClean = tmp;
                 if (closure_2 === tmp(closure_2[9]).backgroundTaskIdentifierInvalid) {
                   c5 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               }
               c3 = 1;
@@ -531,7 +531,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
             lastDeepClean.endBackgroundTask(closure_2);
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp62) {
           closure_2 = tmp62;
           if (0 === c3) {
@@ -559,7 +559,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -619,7 +619,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
             return obj;
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
           const steps2 = closure_128_1.steps;
           _self = 2;
@@ -648,7 +648,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -726,7 +726,7 @@ class KvBackgroundManager extends AutomaticLifecycleManager {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp21) {
           closure_2 = tmp21;

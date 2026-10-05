@@ -1,9 +1,9 @@
-// Module ID: 14435
-// Function ID: 14436
+// Module ID: 14439
+// Function ID: 14440
 // Name: EditIcon
 // Dependencies: [19, 17, 21, 4890, 587, 558, 576, 10058, 2]
 
-// Module 14435 (EditIcon)
+// Module 14439 (EditIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

@@ -1,9 +1,9 @@
-// Module ID: 17977
-// Function ID: 17978
+// Module ID: 17999
+// Function ID: 18000
 // Name: clips/ClipsManager
-// Dependencies: [5, 4935, 502, 2051, 1999, 4913, 4929, 2005, 7231, 1085, 4932, 6613, 13484, 4945, 4942, 1252, 2028, 584, 13485, 4490, 1369, 13483, 2]
+// Dependencies: [5, 4935, 502, 2051, 1999, 4913, 4929, 2005, 7231, 1085, 4932, 6613, 13486, 4945, 4942, 1252, 2028, 584, 13487, 4490, 1369, 13485, 2]
 
-// Module 17977 (clips/ClipsManager)
+// Module 17999 (clips/ClipsManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
@@ -13,9 +13,9 @@ import Constants2 from "Constants" /* 4932 */;
 import SystemAnalyticsStore from "SystemAnalyticsStore" /* 4935 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 4942 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4945 */;
-import isClipsEnabled from "isClipsEnabled" /* 13483 */;
-import ClipsExperiment from "ClipsExperiment" /* 13484 */;
-import isClientClipsCapableDefault from "isClientClipsCapable" /* 13485 */;
+import isClipsEnabled from "isClipsEnabled" /* 13485 */;
+import ClipsExperiment from "ClipsExperiment" /* 13486 */;
+import isClientClipsCapableDefault from "isClientClipsCapable" /* 13487 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
@@ -255,7 +255,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;

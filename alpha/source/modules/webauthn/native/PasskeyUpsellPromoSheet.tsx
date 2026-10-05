@@ -1,15 +1,15 @@
-// Module ID: 15510
-// Function ID: 15511
+// Module ID: 15514
+// Function ID: 15515
 // Name: PasskeyUpsellPromoSheet
-// Dependencies: [19, 17, 1085, 2048, 21, 558, 576, 15511, 15512, 15509, 6437, 6885, 1126, 1369, 5594, 10045, 5592, 2]
+// Dependencies: [19, 17, 1085, 2048, 21, 558, 576, 15515, 15516, 15513, 6437, 6885, 1126, 1369, 5594, 10045, 5592, 2]
 
-// Module 15510 (PasskeyUpsellPromoSheet)
+// Module 15514 (PasskeyUpsellPromoSheet)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
 import NativeCeremoniesDefault from "NativeCeremonies" /* 6437 */;
-import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 15509 */;
-import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 15512 */;
+import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 15513 */;
+import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 15516 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -43,7 +43,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj = require("react");
   const cResult = obj.c(8);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { source: tmp(15511), style: { height: 190, width: 220, resizeMode: "contain" } };
+    let obj2 = { source: tmp(15515), style: { height: 190, width: 220, resizeMode: "contain" } };
     const tmp7 = closure_7(Image, obj2);
     cResult[0] = tmp7;
     first = tmp7;

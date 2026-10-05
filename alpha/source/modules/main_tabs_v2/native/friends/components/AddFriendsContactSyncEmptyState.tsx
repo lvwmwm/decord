@@ -1,9 +1,9 @@
-// Module ID: 16923
-// Function ID: 16924
+// Module ID: 16942
+// Function ID: 16943
 // Name: AddFriendsContactSyncEmptyState
 // Dependencies: [19, 17, 21, 4890, 587, 558, 576, 12325, 12342, 1126, 4886, 12329, 5594, 2]
 
-// Module 16923 (AddFriendsContactSyncEmptyState)
+// Module 16942 (AddFriendsContactSyncEmptyState)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;

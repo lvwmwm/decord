@@ -115,7 +115,7 @@ export const useInviteActions = function useInviteActions(invite) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -159,7 +159,7 @@ export const useInviteActions = function useInviteActions(invite) {
             c3 = 0;
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp22) {
         closure_2 = tmp22;

@@ -51,7 +51,7 @@ export default function useCreateChannelSubmit(arg0) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -82,7 +82,7 @@ export default function useCreateChannelSubmit(arg0) {
               guild_id = undefined;
               c7 = 1;
               applicationId = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -170,7 +170,7 @@ export default function useCreateChannelSubmit(arg0) {
             type = 0;
             bitrate(false);
             applicationId = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp61) {
           closure_5 = tmp61;

@@ -459,7 +459,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -533,7 +533,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
               c3 = 0;
               closure_1_49.current = false;
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp42) {
             body = tmp42;
@@ -730,7 +730,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
     yield "IconComponent";
     responseType = tmp4;
     ({ isAuthorized: c0, overrideSuccessCallback: c1, canceled: c2 } = clientId);
-    return "Reflect";
+    return "Set";
   });
   const items13 = [first7, callbackWithoutPost, clientId, requestedScopes, responseType, redirectUri, codeChallenge, codeChallengeMethod, tmp52, nonce, memo4, first6, first4, first5, first12, dismissOAuthModal, callback, flag5, , , ];
   let application;
@@ -822,7 +822,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -912,7 +912,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
           closure_130_57.current = false;
         }
         c6 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp57) {
         body = tmp57;
         if (0 === c4) {

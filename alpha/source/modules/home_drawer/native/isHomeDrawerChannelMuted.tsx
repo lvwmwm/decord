@@ -1,9 +1,9 @@
-// Module ID: 16254
-// Function ID: 16255
+// Module ID: 16258
+// Function ID: 16259
 // Name: isHomeDrawerChannelMuted
 // Dependencies: [4511, 2055, 5071, 558, 576, 504, 2]
 
-// Module 16254 (isHomeDrawerChannelMuted)
+// Module 16258 (isHomeDrawerChannelMuted)
 import react from "react" /* 576 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4511 */;

@@ -1,9 +1,9 @@
-// Module ID: 15751
-// Function ID: 15752
+// Module ID: 15755
+// Function ID: 15756
 // Name: CollectiblesProgressiveImage
 // Dependencies: [109, 19, 17, 21, 558, 576, 4612, 4891, 2]
 
-// Module 15751 (CollectiblesProgressiveImage)
+// Module 15755 (CollectiblesProgressiveImage)
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
 import timing from "timing" /* 4891 */;

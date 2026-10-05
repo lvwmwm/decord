@@ -1,9 +1,9 @@
-// Module ID: 15960
-// Function ID: 15961
+// Module ID: 15964
+// Function ID: 15965
 // Name: usePrivateChannelWave
-// Dependencies: [5, 32, 19, 1085, 4883, 558, 576, 11894, 1112, 6965, 4568, 1126, 4810, 15961, 2]
+// Dependencies: [5, 32, 19, 1085, 4883, 558, 576, 11894, 1112, 6965, 4568, 1126, 4810, 15965, 2]
 
-// Module 15960 (usePrivateChannelWave)
+// Module 15964 (usePrivateChannelWave)
 import MessageConstants from "MessageConstants" /* 4883 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -33,7 +33,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
     if (cResult[1] === first) {
       tmp6 = cResult[2];
     }
-    const tmpResult = tmp(15961);
+    const tmpResult = tmp(15965);
     const privateChannelWaveEligible = tmpResult.usePrivateChannelWaveEligible(id, arg1);
     if (cResult[3] === tmp6) {
       let tmp9;
@@ -60,7 +60,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -121,7 +121,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
           tmp43(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp43) {
         if (0 === c3) {
           c5 = 3;
@@ -161,7 +161,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -221,7 +221,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
           closure_129_2(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp43) {
         closure_2 = tmp43;
         if (0 === c3) {

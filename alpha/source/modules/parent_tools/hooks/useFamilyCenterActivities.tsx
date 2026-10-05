@@ -1,9 +1,9 @@
-// Module ID: 14698
-// Function ID: 14699
+// Module ID: 14702
+// Function ID: 14703
 // Name: useFamilyCenterActivities
 // Dependencies: [7048, 7049, 558, 576, 573, 8298, 6736, 2]
 
-// Module 14698 (useFamilyCenterActivities)
+// Module 14702 (useFamilyCenterActivities)
 import react from "react" /* 576 */;
 import PriceUtils from "PriceUtils" /* 6736 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7049 */;

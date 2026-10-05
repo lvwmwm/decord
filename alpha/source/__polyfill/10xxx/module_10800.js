@@ -50,7 +50,7 @@ export const useIAP = () => {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -71,7 +71,7 @@ export const useIAP = () => {
             skus = closure_0.skus;
             c4 = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else {
           let closure_1;
@@ -102,7 +102,7 @@ export const useIAP = () => {
           } else {
             closure_1(value);
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         }
       } catch (tmp14) {
@@ -128,7 +128,7 @@ export const useIAP = () => {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -148,7 +148,7 @@ export const useIAP = () => {
             skus = closure_0.skus;
             c4 = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else {
           let closure_1;
@@ -179,7 +179,7 @@ export const useIAP = () => {
           } else {
             closure_1(value);
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         }
       } catch (tmp14) {
@@ -207,7 +207,7 @@ export const useIAP = () => {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -238,7 +238,7 @@ export const useIAP = () => {
         } else {
           currentPurchase(value);
           c2 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp9) {
         c2 = 3;
@@ -259,7 +259,7 @@ export const useIAP = () => {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -290,7 +290,7 @@ export const useIAP = () => {
         } else {
           currentPurchase(value);
           c2 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp9) {
         c2 = 3;
@@ -315,7 +315,7 @@ export const useIAP = () => {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -335,7 +335,7 @@ export const useIAP = () => {
               ({ purchase: c0, isConsumable: c1, developerPayloadAndroid: c2 } = purchase);
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else {
             let finishTransactionResult;

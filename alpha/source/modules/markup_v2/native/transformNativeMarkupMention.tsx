@@ -31,16 +31,16 @@ export const transformNativeMention = function transformNativeMention(value, all
     const str9 = value.value;
     const str1 = str9.toString();
     const _HermesInternal2 = HermesInternal;
-    const obj5 = { fullMatch: "<@" + str1 + ">", id: str1, everyoneOrHere: "Array" };
+    const obj5 = { fullMatch: "<@" + str1 + ">", id: str1, everyoneOrHere: "r" };
     const hydrateUserMention = MarkupRules.hydrateUserMention;
     MarkupRules;
     return hydrateUserMention(obj5, allowGameMentions);
   } else if ("everyone" === type) {
     const obj15 = MarkupRules;
-    return obj15.hydrateUserMention({ fullMatch: "@everyone", id: "application", everyoneOrHere: null }, allowGameMentions);
+    return obj15.hydrateUserMention({ fullMatch: "@everyone", id: "applicationId", everyoneOrHere: 1758334677362854000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }, allowGameMentions);
   } else if ("here" === type) {
     const obj14 = MarkupRules;
-    return obj14.hydrateUserMention({ fullMatch: "@here", id: "application", everyoneOrHere: null }, allowGameMentions);
+    return obj14.hydrateUserMention({ fullMatch: "@here", id: "applicationId", everyoneOrHere: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003134773270271943 }, allowGameMentions);
   } else if ("role" === type) {
     const obj13 = MarkupRules;
     const str8 = value.value;

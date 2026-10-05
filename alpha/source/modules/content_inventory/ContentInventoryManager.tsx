@@ -1,21 +1,21 @@
-// Module ID: 17984
-// Function ID: 17985
+// Module ID: 18006
+// Function ID: 18007
 // Name: ContentInventoryManager
-// Dependencies: [5, 5436, 5440, 5567, 13644, 11548, 8012, 8027, 1085, 1102, 12, 12916, 584, 13501, 17985, 6613, 2]
+// Dependencies: [5, 5436, 5440, 5567, 13646, 11548, 8012, 8027, 1085, 1102, 12, 12918, 584, 13503, 18007, 6613, 2]
 
-// Module 17984 (ContentInventoryManager)
+// Module 18006 (ContentInventoryManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import ContentInventoryConstants from "ContentInventoryConstants" /* 8027 */;
-import ContentInventoryHttpApi from "ContentInventoryHttpApi" /* 12916 */;
-import ContentInventoryExperiments from "ContentInventoryExperiments" /* 13501 */;
-import ContentInventoryFeature from "ContentInventoryFeature" /* 17985 */;
+import ContentInventoryHttpApi from "ContentInventoryHttpApi" /* 12918 */;
+import ContentInventoryExperiments from "ContentInventoryExperiments" /* 13503 */;
+import ContentInventoryFeature from "ContentInventoryFeature" /* 18007 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5440 */;
 import IdleStore from "IdleStore" /* 5567 */;
-import WindowStore from "WindowStore" /* 13644 */;
+import WindowStore from "WindowStore" /* 13646 */;
 import ContentInventoryPersistedStore from "ContentInventoryPersistedStore" /* 11548 */;
 import ContentInventoryStore from "ContentInventoryStore" /* 8012 */;
 import module_12 from "module_12" /* 12 */;
@@ -265,7 +265,7 @@ let actions = function _fetchInventory() {
       if (force === undefined) {
         force = false;
       }
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;

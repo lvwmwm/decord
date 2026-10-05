@@ -1,9 +1,9 @@
-// Module ID: 17468
-// Function ID: 17469
+// Module ID: 17492
+// Function ID: 17493
 // Name: ExplicitMediaManager
-// Dependencies: [7102, 502, 6783, 2051, 5110, 2103, 4699, 13504, 7110, 1085, 1095, 7109, 6795, 6798, 6800, 584, 8924, 5409, 5414, 17469, 17470, 11, 5112, 5000, 6613, 2]
+// Dependencies: [7102, 502, 6783, 2051, 5110, 2103, 4699, 13506, 7110, 1085, 1095, 7109, 6795, 6798, 6800, 584, 8924, 5409, 5414, 17493, 17494, 11, 5112, 5000, 6613, 2]
 
-// Module 17468 (ExplicitMediaManager)
+// Module 17492 (ExplicitMediaManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
@@ -16,21 +16,21 @@ import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7102 */;
 import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7109 */;
 import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7110 */;
 import ExplicitMediaRedactionActionCreators from "ExplicitMediaRedactionActionCreators" /* 8924 */;
-import uniqWithDefault from "uniqWith" /* 17470 */;
+import uniqWithDefault from "uniqWith" /* 17494 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelSectionStore from "ChannelSectionStore" /* 6783 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import MessageStore from "MessageStore" /* 5110 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
-import ExplicitMediaSearchStore from "ExplicitMediaSearchStore" /* 13504 */;
+import ExplicitMediaSearchStore from "ExplicitMediaSearchStore" /* 13506 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
 import size from "module_2" /* 2 */;
 
 const ReferencedMessageStore = ReferencedMessageStore2;
 let messageByReference, set;
 
-const f130640 = (channel_id) => {
+const f130878 = (channel_id) => {
   const tmp = obj;
   if (null == obj[channel_id.channel_id]) {
     tmp[channel_id.channel_id] = { numOfAttachments: 0, numOfAttachmentsPendingScan: 0, numOfEmbeds: 0, numOfEmbedsPendingScan: 0 };
@@ -216,7 +216,7 @@ function withoutScheduledTimeout(arg0) {
 }
 function handleUnscannedMessages(found2, isMessageUpdate) {
   let found1;
-  const f130634 = (id) => id.id;
+  const f130872 = (id) => id.id;
   let obj = isMessageUpdate;
   if (isMessageUpdate == null) {
     obj = {};
@@ -305,7 +305,7 @@ function handleUnscannedMessages(found2, isMessageUpdate) {
         if (tmp) {
           const result = obj.sendMultiChannelMessagesForScanning(found);
         } else {
-          const result1 = obj.sendMessagesForScanning(found[0].channel_id, found.map(f130634));
+          const result1 = obj.sendMessagesForScanning(found[0].channel_id, found.map(f130872));
         }
       }
     }, 800 * Math.random());
@@ -314,7 +314,7 @@ function handleUnscannedMessages(found2, isMessageUpdate) {
     if (tmp) {
       let result = obj2.sendMultiChannelMessagesForScanning(found1);
     } else {
-      let result1 = obj2.sendMessagesForScanning(found1[0].channel_id, found1.map(f130634));
+      let result1 = obj2.sendMessagesForScanning(found1[0].channel_id, found1.map(f130872));
     }
   }
 }
@@ -353,14 +353,14 @@ function processMessagesFromAction(firstMessages, isMessageUpdate) {
     HermesBuiltin.arraySpread(items, found1, HermesBuiltin.arraySpread(items, found, 0));
     tmp3 = items;
   }
-  const arr4 = obj2(17470)(tmp3, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
+  const arr4 = obj2(17494)(tmp3, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
   const found2 = arr4.filter((item) => {
     obj = obj(dependencyMap[12]);
     return obj.hasUnscannedMedia(item);
   });
   let obj = {};
   obj2 = {};
-  const item = arr4.forEach(f130640);
+  const item = arr4.forEach(f130878);
   const obj3 = obj2(11);
   const entries = obj3.entries(obj);
   const item1 = entries.forEach((item) => {
@@ -539,6 +539,7 @@ function handleLoadPinnedMessages(pins) {
   return processMessagesFromAction(pins.map((message) => message.message));
 }
 function handleForumPostsLoad(threads) {
+  let tmp;
   threads = threads.threads;
   let tmp2 = null != threads;
   if (tmp2) {
@@ -635,14 +636,14 @@ function maybeScanMessagesForChannelId(channelId) {
       HermesBuiltin.arraySpread(items, found1, HermesBuiltin.arraySpread(items, found, 0));
       tmp4 = items;
     }
-    const arr5 = obj2(17470)(tmp4, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
+    const arr5 = obj2(17494)(tmp4, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
     const found2 = arr5.filter((item) => {
       obj = obj(dependencyMap[12]);
       return obj.hasUnscannedMedia(item);
     });
     let obj = {};
     obj2 = {};
-    const item = arr5.forEach(f130640);
+    const item = arr5.forEach(f130878);
     const obj3 = obj2(11);
     const entries = obj3.entries(obj);
     const item1 = entries.forEach((item) => {

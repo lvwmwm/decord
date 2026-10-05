@@ -1,10 +1,10 @@
-// Module ID: 13235
-// Function ID: 13236
+// Module ID: 13237
+// Function ID: 13238
 // Name: useTimeUntilNextBadge
-// Dependencies: [19, 4461, 13236, 10875, 2]
+// Dependencies: [19, 4461, 13238, 10875, 2]
 // Exports: computeDaysUntilNextBadgeDate, useTimeUntilNextBadge
 
-// Module 13235 (useTimeUntilNextBadge)
+// Module 13237 (useTimeUntilNextBadge)
 import react from "react" /* 19 */;
 import _modDef4461 from "module_4461" /* 4461 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ export const computeDaysUntilNextBadgeDate = function computeDaysUntilNextBadgeD
 };
 export const useTimeUntilNextBadge = function useTimeUntilNextBadge() {
   let nextTenureBadge;
-  let obj = nextTenureBadge(13236);
+  let obj = nextTenureBadge(13238);
   nextTenureBadge = obj.useNextTenureBadge();
   let obj2 = nextTenureBadge(10875);
   const premiumSince = obj2.usePremiumSince();

@@ -1,9 +1,9 @@
-// Module ID: 15741
-// Function ID: 15742
+// Module ID: 15745
+// Function ID: 15746
 // Name: ShelfBlock
-// Dependencies: [19, 17, 7053, 1087, 1085, 21, 4890, 587, 558, 576, 1490, 8421, 15712, 6657, 6681, 504, 15714, 14872, 7052, 8418, 4886, 5594, 1126, 6651, 8371, 2]
+// Dependencies: [19, 17, 7053, 1087, 1085, 21, 4890, 587, 558, 576, 1490, 8421, 15716, 6657, 6681, 504, 15718, 14876, 7052, 8418, 4886, 5594, 1126, 6651, 8371, 2]
 
-// Module 15741 (ShelfBlock)
+// Module 15745 (ShelfBlock)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;

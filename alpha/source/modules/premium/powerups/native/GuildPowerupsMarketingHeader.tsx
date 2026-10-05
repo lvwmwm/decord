@@ -1,9 +1,9 @@
-// Module ID: 13380
-// Function ID: 13381
+// Module ID: 13382
+// Function ID: 13383
 // Name: GuildPowerupsMarketingHeader
-// Dependencies: [19, 17, 4767, 21, 4890, 587, 683, 558, 576, 4886, 13381, 12147, 12170, 13382, 1126, 2525, 2]
+// Dependencies: [19, 17, 4767, 21, 4890, 587, 683, 558, 576, 4886, 13383, 12147, 12170, 13384, 1126, 2525, 2]
 
-// Module 13380 (GuildPowerupsMarketingHeader)
+// Module 13382 (GuildPowerupsMarketingHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -12,8 +12,8 @@ import _modDef683 from "module_683" /* 683 */;
 import intl3 from "intl" /* 1126 */;
 import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12147 */;
 import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12170 */;
-import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 13381 */;
-import orderMarketablePerksForDisplayDefault from "orderMarketablePerksForDisplay" /* 13382 */;
+import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 13383 */;
+import orderMarketablePerksForDisplayDefault from "orderMarketablePerksForDisplay" /* 13384 */;
 import react from "react" /* 19 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 4767 */;
 import createStyles_mod from "createStyles" /* 4890 */;
@@ -69,7 +69,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const cResult = obj.c(13);
   guild = guild.guild;
   const tmp4 = closure_7();
-  arr = arr(13381)(guild.id);
+  arr = arr(13383)(guild.id);
   if (cResult[0] !== guild.id) {
     const fn = function s() {
       const tmp = guild;

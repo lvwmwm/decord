@@ -191,7 +191,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -225,7 +225,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
                 c4(false);
                 showErrorToast(tmp24);
                 c5 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } else {
                 c3 = 1;
                 const obj4 = { channelId: closure_0.id, source: "In-channel greet" };
@@ -262,7 +262,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
           c4(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp28) {
         closure_2 = tmp28;
         if (0 === c3) {
@@ -309,7 +309,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -341,7 +341,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
                 v1(false);
                 showErrorToast(tmp24);
                 c5 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } else {
                 c3 = 1;
                 const obj4 = { channelId: id.id, source: "In-channel greet" };
@@ -378,7 +378,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
           closure_129_4(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp28) {
         closure_2 = tmp28;
         if (0 === c3) {

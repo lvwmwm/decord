@@ -1,9 +1,9 @@
-// Module ID: 16853
-// Function ID: 16854
+// Module ID: 16872
+// Function ID: 16873
 // Name: useContentContainerStyles
 // Dependencies: [7513, 4890, 2]
 
-// Module 16853 (useContentContainerStyles)
+// Module 16872 (useContentContainerStyles)
 import SearchConstants from "SearchConstants" /* 7513 */;
 import createStyles from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;

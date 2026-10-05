@@ -1,9 +1,9 @@
-// Module ID: 14511
-// Function ID: 14512
+// Module ID: 14515
+// Function ID: 14516
 // Name: UserSettingsChangeUsername
-// Dependencies: [5, 32, 19, 17, 1377, 1085, 21, 4890, 587, 5075, 14512, 4886, 1126, 558, 576, 1490, 504, 4528, 14513, 6487, 6477, 1282, 1491, 7498, 6098, 6494, 6425, 2]
+// Dependencies: [5, 32, 19, 17, 1377, 1085, 21, 4890, 587, 5075, 14516, 4886, 1126, 558, 576, 1490, 504, 4528, 14517, 6487, 6477, 1282, 1491, 7498, 6098, 6494, 6425, 2]
 
-// Module 14511 (UserSettingsChangeUsername)
+// Module 14515 (UserSettingsChangeUsername)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
@@ -34,7 +34,7 @@ function UsernameStatusMessage(showHint) {
   const usernameStatus = showHint.usernameStatus;
   const str = showHint(5075);
   const match = str.match(usernameStatus);
-  let obj = { type: showHint(14512).NameValidationState.ERROR, message: P.select() };
+  let obj = { type: showHint(14516).NameValidationState.ERROR, message: P.select() };
   const _with = match.with;
   P = showHint(5075).P;
   const _withResult = _with(obj, (children) => {
@@ -42,7 +42,7 @@ function UsernameStatusMessage(showHint) {
     return closure_1_11(showHint(dependencyMap[11]).Text, obj);
   });
   const _with2 = _withResult.with;
-  const obj2 = { type: showHint(14512).NameValidationState.AVAILABLE, message: P2.select() };
+  const obj2 = { type: showHint(14516).NameValidationState.AVAILABLE, message: P2.select() };
   P2 = showHint(5075).P;
   const _with2Result = _with2(obj2, (children) => {
     const obj = { variant: "text-xs/medium", color: "text-feedback-positive", children };
@@ -350,7 +350,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {

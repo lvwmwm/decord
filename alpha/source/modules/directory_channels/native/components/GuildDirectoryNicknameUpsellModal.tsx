@@ -320,7 +320,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -365,7 +365,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             nick = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp25) {
         if (0 === nick) {
@@ -419,7 +419,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -467,7 +467,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp25) {
           closure_2 = tmp25;

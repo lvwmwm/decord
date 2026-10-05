@@ -1,9 +1,9 @@
-// Module ID: 16754
-// Function ID: 16755
+// Module ID: 16773
+// Function ID: 16774
 // Name: useFrameLifecycle
-// Dependencies: [32, 5, 19, 8704, 558, 576, 8986, 16755, 16756, 6658, 2016, 8706, 2]
+// Dependencies: [32, 5, 19, 8704, 558, 576, 8986, 16774, 16775, 6658, 2016, 8706, 2]
 
-// Module 16754 (useFrameLifecycle)
+// Module 16773 (useFrameLifecycle)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -61,8 +61,8 @@ function useFrameLifecycleState(applicationId) {
       obj10 = { state: obj.Loading, frame: tmp3 };
       const obj7 = { state: obj.Loading, frame: tmp3 };
     } else if (isLoading) {
-      obj10 = { state: obj.Loading, frame: "a" };
-      const obj8 = { state: obj.Loading, frame: "a" };
+      obj10 = { state: obj.Loading, frame: "r" };
+      const obj8 = { state: obj.Loading, frame: "r" };
     } else {
       if (null != data) {
         if (tmp7) {
@@ -137,7 +137,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             let c2;
@@ -177,7 +177,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
                   c2 = 0;
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp12) {
               if (0 === c2) {
@@ -235,7 +235,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c2;
@@ -275,7 +275,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
                 c2 = 0;
               }
               c3 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp12) {
             if (0 === c2) {

@@ -1,9 +1,9 @@
-// Module ID: 13631
-// Function ID: 13632
+// Module ID: 13633
+// Function ID: 13634
 // Name: VideoQuality
-// Dependencies: [9313, 4948, 13628, 4919, 7233, 4945, 7232, 12, 1369, 11, 2069, 2]
+// Dependencies: [9313, 4948, 13630, 4919, 7233, 4945, 7232, 12, 1369, 11, 2069, 2]
 
-// Module 13631 (VideoQuality)
+// Module 13633 (VideoQuality)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
@@ -11,7 +11,7 @@ import TimeUtils from "TimeUtils" /* 4919 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4945 */;
 import VideoQualityStats from "VideoQualityStats" /* 7232 */;
 import Histogram from "Histogram" /* 7233 */;
-import NetworkQualityDefault from "NetworkQuality" /* 13628 */;
+import NetworkQualityDefault from "NetworkQuality" /* 13630 */;
 import VideoBackgroundStore_mod from "VideoBackgroundStore" /* 9313 */;
 import TypedEventEmitter from "TypedEventEmitter" /* 4948 */;
 import size from "module_2" /* 2 */;

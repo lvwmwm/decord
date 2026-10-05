@@ -1,9 +1,9 @@
-// Module ID: 13898
-// Function ID: 13899
+// Module ID: 13900
+// Function ID: 13901
 // Name: ShinyButton/ShinyButton
 // Dependencies: [32, 109, 19, 17, 4879, 21, 4890, 558, 576, 504, 4612, 4891, 1191, 2]
 
-// Module 13898 (ShinyButton/ShinyButton)
+// Module 13900 (ShinyButton/ShinyButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
@@ -139,8 +139,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((shineInnerStyle) => 
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
     class B {
       constructor() {
-        closure_0 = closure_7.addEventListener("change", () => { /* body not rendered: F143276 */ });
-        return () => { /* body not rendered: F143277 */ };
+        closure_0 = closure_7.addEventListener("change", () => { /* body not rendered: F143521 */ });
+        return () => { /* body not rendered: F143522 */ };
       }
     }
     let items2 = [];
@@ -155,8 +155,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((shineInnerStyle) => 
   } else {
     class B {
       constructor() {
-        closure_0 = closure_7.addEventListener("change", () => { /* body not rendered: F143276 */ });
-        return () => { /* body not rendered: F143277 */ };
+        closure_0 = closure_7.addEventListener("change", () => { /* body not rendered: F143521 */ });
+        return () => { /* body not rendered: F143522 */ };
       }
     }
     tmp28 = cResult[12];

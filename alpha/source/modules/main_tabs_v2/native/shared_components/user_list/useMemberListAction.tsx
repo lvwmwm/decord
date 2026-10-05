@@ -39,7 +39,7 @@ let RelationshipStore = RelationshipStore_mod;
 const USERS_LIST_PADDING_BETWEEN_SECTIONS = UsersFastListConstants.USERS_LIST_PADDING_BETWEEN_SECTIONS;
 ({ Permissions: c10, AnalyticsSections: unpackModuleId, InstantInviteSources: closure_12 } = Constants);
 const jsx = Fragment.jsx;
-let closure_14 = { listActionRenderer: "Symbol", listActionHeight: "current" };
+let closure_14 = { listActionRenderer: "Array", listActionHeight: "Set" };
 let obj = { wrapper: { paddingTop: USERS_LIST_PADDING_BETWEEN_SECTIONS } };
 let closure_15 = createStyles.createStyles(obj);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {

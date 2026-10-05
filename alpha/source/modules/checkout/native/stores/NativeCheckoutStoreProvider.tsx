@@ -143,7 +143,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((orderRequired) => 
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -188,7 +188,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((orderRequired) => 
           }
           closure_1_10(false);
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp22) {
         c4 = 3;
@@ -306,7 +306,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((orderRequired) => 
       yield "IconComponent";
       isGift = tmp4;
       ({ orderLineItems: c0, subscriptionFacet: c1 } = orderLineItems);
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -328,7 +328,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((orderRequired) => 
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -371,7 +371,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((orderRequired) => 
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp12) {
         if (0 === c3) {

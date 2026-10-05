@@ -113,7 +113,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((value, arg1) =
         const mountLayoutEffect = tmpResult.useMountLayoutEffect(tmp8);
         const _Symbol = Symbol;
         if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj2 = { value: "Symbol", defaultValue: "current" };
+          const obj2 = { value: "Array", defaultValue: "Set" };
           cResult[8] = obj2;
           tmp11 = obj2;
         } else {
@@ -179,7 +179,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((value, arg1) =
       current.setNativeProps(obj);
     }
   });
-  return { value: "Symbol", defaultValue: "current" };
+  return { value: "Array", defaultValue: "Set" };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {

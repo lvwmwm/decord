@@ -1,9 +1,9 @@
-// Module ID: 17123
-// Function ID: 17124
+// Module ID: 17147
+// Function ID: 17148
 // Name: FrameView
-// Dependencies: [32, 19, 8704, 2011, 21, 558, 576, 6658, 584, 8978, 17124, 9134, 5708, 1126, 17125, 9147, 17128, 2]
+// Dependencies: [32, 19, 8704, 2011, 21, 558, 576, 6658, 584, 8978, 17148, 9134, 5708, 1126, 17149, 9147, 17152, 2]
 
-// Module 17123 (FrameView)
+// Module 17147 (FrameView)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl3 from "intl" /* 1126 */;
@@ -11,7 +11,7 @@ import Constants from "Constants" /* 2011 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
 import FramesConstants from "FramesConstants" /* 8704 */;
 import FramesNativeManagerDefault from "FramesNativeManager" /* 8978 */;
-import frames_getDefaultOrientationLockState from "frames/getDefaultOrientationLockState" /* 17124 */;
+import frames_getDefaultOrientationLockState from "frames/getDefaultOrientationLockState" /* 17148 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -132,7 +132,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((frame) => {
                   return obj.leaveFrame(frame.id);
                 }
               }
-              const tmp18 = layoutMode(17125)(frame, ActivityPlatform.MOBILE);
+              const tmp18 = layoutMode(17149)(frame, ActivityPlatform.MOBILE);
               cResult[17] = frame;
               cResult[18] = tmp18;
               tmp16 = tmp18;
@@ -192,7 +192,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((frame) => {
                 }
               }
             }
-            const tmp27 = jsx(layoutMode(17128), { onActivityCrash, applicationId, iframeId, onDisallowedNavigation: tmp14, onInvalidUrl: tmp15, activityUrl: url, queryParams: tmp16, onLoadError: tmp10, allowPopups: tmp19, referrerPolicy: "origin", isPipOrGridMode: layoutMode === PIP, safeAreasConfig: portraitSafeAreasConfig });
+            const tmp27 = jsx(layoutMode(17152), { onActivityCrash, applicationId, iframeId, onDisallowedNavigation: tmp14, onInvalidUrl: tmp15, activityUrl: url, queryParams: tmp16, onLoadError: tmp10, allowPopups: tmp19, referrerPolicy: "origin", isPipOrGridMode: layoutMode === PIP, safeAreasConfig: portraitSafeAreasConfig });
             cResult[21] = frame.applicationId;
             cResult[22] = frame.data.url;
             cResult[23] = iframeId;
@@ -295,14 +295,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((frame) => {
       return obj.leaveFrame(frame.id);
     },
     activityUrl: frame.data.url,
-    queryParams: layoutMode(17125)(frame, ActivityPlatform.MOBILE),
+    queryParams: layoutMode(17149)(frame, ActivityPlatform.MOBILE),
     onLoadError: callback,
     allowPopups: tmpResult2.allowPopups(data),
     referrerPolicy: "origin",
     isPipOrGridMode: layoutMode === FrameLayoutModes.PIP,
     safeAreasConfig: portraitSafeAreasConfig
   });
-  layoutMode(17128);
+  layoutMode(17152);
   tmpResult2 = frame(9147);
   if (isLandscape) {
     portraitSafeAreasConfig = landscapeSafeAreasConfig;

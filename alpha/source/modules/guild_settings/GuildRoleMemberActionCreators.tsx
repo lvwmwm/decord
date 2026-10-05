@@ -31,7 +31,7 @@ let obj = function _fetchMemberCountsFromBackend() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -81,7 +81,7 @@ let obj = function _fetchMemberCountsFromBackend() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp19) {
           closure_3 = tmp19;
@@ -113,7 +113,7 @@ obj = function _fetchMemberCounts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -144,7 +144,7 @@ obj = function _fetchMemberCounts() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp6) {
         c1 = 3;
         throw tmp6;

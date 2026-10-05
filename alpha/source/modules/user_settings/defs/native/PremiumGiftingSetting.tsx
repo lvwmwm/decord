@@ -1,9 +1,9 @@
-// Module ID: 14797
-// Function ID: 14798
+// Module ID: 14801
+// Function ID: 14802
 // Name: PremiumGiftingSetting
-// Dependencies: [19, 1085, 21, 558, 576, 6923, 11092, 13360, 1188, 11129, 1126, 10766, 4541, 13359, 2]
+// Dependencies: [19, 1085, 21, 558, 576, 6923, 11092, 13362, 1188, 11129, 1126, 10766, 4541, 13361, 2]
 
-// Module 14797 (PremiumGiftingSetting)
+// Module 14801 (PremiumGiftingSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
@@ -11,7 +11,7 @@ import intl2 from "intl" /* 1126 */;
 import BillingPlatformUtils from "BillingPlatformUtils" /* 4541 */;
 import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 6923 */;
 import GiftIcon from "GiftIcon" /* 10766 */;
-import PromotionsHooks from "PromotionsHooks" /* 13360 */;
+import PromotionsHooks from "PromotionsHooks" /* 13362 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;

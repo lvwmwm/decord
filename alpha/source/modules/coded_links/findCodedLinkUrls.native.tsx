@@ -1,12 +1,12 @@
 // Module ID: 4876
 // Function ID: 4877
 // Name: findCodedLinkUrls
-// Dependencies: [4877, 7648, 5785, 13657, 13658, 2]
+// Dependencies: [4877, 7648, 5785, 13659, 13660, 2]
 // Exports: default
 
 // Module 4876 (findCodedLinkUrls)
 import MarkupTypes from "MarkupTypes" /* 5785 */;
-import findCodedLinkUrlsUsingRegexDefault from "findCodedLinkUrlsUsingRegex" /* 13658 */;
+import findCodedLinkUrlsUsingRegexDefault from "findCodedLinkUrlsUsingRegex" /* 13660 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/coded_links/findCodedLinkUrls.native.tsx");
@@ -14,7 +14,7 @@ const result = size.fileFinishedImporting("modules/coded_links/findCodedLinkUrls
 export default function findCodedLinkUrls(content) {
   let items;
   let tmp = items;
-  const obj = items(13657);
+  const obj = items(13659);
   if (obj.isFindCodedLinksRegexEnabled()) {
     items = findCodedLinkUrlsUsingRegexDefault(content);
   } else {

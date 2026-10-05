@@ -1,9 +1,9 @@
-// Module ID: 14955
-// Function ID: 14956
+// Module ID: 14959
+// Function ID: 14960
 // Name: useVideoQuestClickCtaAndMaybeCloseModal
 // Dependencies: [19, 558, 576, 10916, 1371, 10010, 10918, 7212, 2]
 
-// Module 14955 (useVideoQuestClickCtaAndMaybeCloseModal)
+// Module 14959 (useVideoQuestClickCtaAndMaybeCloseModal)
 import URLUtilsDefault from "URLUtils" /* 1371 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7212 */;
 import QuestCopyUtils from "QuestCopyUtils" /* 10010 */;

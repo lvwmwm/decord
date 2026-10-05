@@ -39,7 +39,7 @@ export const useThenable = function useThenable(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -91,7 +91,7 @@ export const useThenable = function useThenable(arg0) {
               closure_2_2(items2);
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp25) {
           closure_2 = tmp25;

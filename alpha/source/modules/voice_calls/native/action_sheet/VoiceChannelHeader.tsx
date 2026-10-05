@@ -1,9 +1,9 @@
-// Module ID: 13603
-// Function ID: 13604
+// Module ID: 13605
+// Function ID: 13606
 // Name: VoiceChannelHeader
-// Dependencies: [19, 17, 2050, 2074, 4509, 1085, 21, 4890, 587, 558, 576, 13604, 13605, 4886, 13606, 504, 9600, 5043, 9481, 1126, 11212, 5846, 13608, 9694, 1188, 9715, 5909, 2]
+// Dependencies: [19, 17, 2050, 2074, 4509, 1085, 21, 4890, 587, 558, 576, 13606, 13607, 4886, 13608, 504, 9600, 5043, 9481, 1126, 11212, 5846, 13610, 9694, 1188, 9715, 5909, 2]
 
-// Module 13603 (VoiceChannelHeader)
+// Module 13605 (VoiceChannelHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,8 +16,8 @@ import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils
 import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 9600 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9715 */;
 import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11212 */;
-import CallStateHooks from "CallStateHooks" /* 13604 */;
-import OngoingCallStatusLabelDefault from "OngoingCallStatusLabel" /* 13605 */;
+import CallStateHooks from "CallStateHooks" /* 13606 */;
+import OngoingCallStatusLabelDefault from "OngoingCallStatusLabel" /* 13607 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
 import GuildStore from "GuildStore" /* 2074 */;
@@ -39,7 +39,7 @@ let obj2;
 let obj3;
 let tmp2;
 let unpackModuleId;
-const OngoingCallTimerDefault = tmp2(13606);
+const OngoingCallTimerDefault = tmp2(13608);
 const View = react_native.View;
 ({ Permissions: metroImportDefault, AnalyticsPages: metroImportAll, InstantInviteSources: c9 } = Constants);
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
@@ -96,10 +96,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             tmp14 = tmp17;
           }
         }
-        let tmp12 = state === tmp(13604).CallStates.CONNECTED;
+        let tmp12 = state === tmp(13606).CallStates.CONNECTED;
         if (tmp12) {
           const obj3 = { channelId: channel.id, style: tmp4.subtitle };
-          tmp12 = authStore(tmp5(13606), obj3);
+          tmp12 = authStore(tmp5(13608), obj3);
         }
         cResult[7] = channel.id;
         cResult[8] = tmp4.subtitle;
@@ -107,7 +107,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         cResult[10] = tmp12;
         tmp11 = tmp12;
       }
-      let tmp9 = state === tmp(13604).CallStates.CONNECTED;
+      let tmp9 = state === tmp(13606).CallStates.CONNECTED;
       if (tmp9) {
         const obj4 = { style: tmp4.subtitle, variant: "text-xs/medium", color: "text-overlay-light", children: " - " };
         tmp9 = authStore(tmp(4886).Text, obj4);
@@ -142,7 +142,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     tmp6Result = tmp6(tmp7(4886).Text, obj3);
   }
   items[1] = tmp6Result;
-  let tmp6Result2 = state === tmp7(13604).CallStates.CONNECTED;
+  let tmp6Result2 = state === tmp7(13606).CallStates.CONNECTED;
   if (tmp6Result2) {
     const obj4 = { channelId: channel.id, style: tmp.subtitle };
     tmp6Result2 = tmp6(OngoingCallTimerDefault, obj4);
@@ -482,7 +482,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const obj6 = { size: tmp2(1188).Icon.Sizes.MEDIUM, source: tmp5Result, disableColor: true, style: tmp.icons };
   const Icon = tmp2(1188).Icon;
   if (isRoleRequiredDefault(channel)) {
-    tmp5Result = tmp5(13608);
+    tmp5Result = tmp5(13610);
   } else {
     tmp5Result = tmp5(9694);
   }

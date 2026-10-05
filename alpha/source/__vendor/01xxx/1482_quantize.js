@@ -68,7 +68,7 @@ function PQueue(arg0) {
     peek(arg0) {
       const tmp = c2;
       if (!tmp) {
-        const sorted = closure_1.sort(f134706);
+        const sorted = closure_1.sort(f134944);
         c2 = true;
       }
       let diff = arg0;
@@ -80,7 +80,7 @@ function PQueue(arg0) {
     pop() {
       const tmp = c2;
       if (!tmp) {
-        const sorted = closure_1.sort(f134706);
+        const sorted = closure_1.sort(f134944);
         c2 = true;
       }
       return closure_1.pop();
@@ -94,7 +94,7 @@ function PQueue(arg0) {
     debug() {
       const tmp = c2;
       if (!tmp) {
-        const sorted = closure_1.sort(f134706);
+        const sorted = closure_1.sort(f134944);
         c2 = true;
       }
       return closure_1;
@@ -114,9 +114,9 @@ class VBox {
 }
 class CMap {
   constructor() {
-    const f134706 = (vbox, vbox2) => {
+    const f134944 = (vbox, vbox2) => {
       vbox = vbox.vbox;
-      const naturalOrder = f134706.naturalOrder;
+      const naturalOrder = f134944.naturalOrder;
       vbox2 = vbox.vbox;
       const vbox3 = vbox2.vbox;
       const countResult = vbox.count();
@@ -135,7 +135,7 @@ class CMap {
       peek(arg0) {
         const tmp = c2;
         if (!tmp) {
-          const sorted = closure_1.sort(f134706);
+          const sorted = closure_1.sort(f134944);
           c2 = true;
         }
         let diff = arg0;
@@ -147,7 +147,7 @@ class CMap {
       pop() {
         const tmp = c2;
         if (!tmp) {
-          const sorted = closure_1.sort(f134706);
+          const sorted = closure_1.sort(f134944);
           c2 = true;
         }
         return closure_1.pop();
@@ -161,7 +161,7 @@ class CMap {
       debug() {
         const tmp = c2;
         if (!tmp) {
-          const sorted = closure_1.sort(f134706);
+          const sorted = closure_1.sort(f134944);
           c2 = true;
         }
         return closure_1;
@@ -702,8 +702,8 @@ export default function quantize(arr, arg1) {
         obj2.b2 = b2;
         obj2.histo = array;
         const prototype2 = array.prototype;
-        const f134712 = (count, count2) => {
-          const naturalOrder = f134712.naturalOrder;
+        const f134950 = (count, count2) => {
+          const naturalOrder = f134950.naturalOrder;
           const countResult = count.count();
           return naturalOrder(countResult, count2.count());
         };
@@ -716,7 +716,7 @@ export default function quantize(arr, arg1) {
           peek(arg0) {
                   const tmp = c2;
                   if (!tmp) {
-                    const sorted = closure_1.sort(f134706);
+                    const sorted = closure_1.sort(f134944);
                     c2 = true;
                   }
                   let diff = arg0;
@@ -728,7 +728,7 @@ export default function quantize(arr, arg1) {
           pop() {
                   const tmp = c2;
                   if (!tmp) {
-                    const sorted = closure_1.sort(f134706);
+                    const sorted = closure_1.sort(f134944);
                     c2 = true;
                   }
                   return closure_1.pop();
@@ -742,7 +742,7 @@ export default function quantize(arr, arg1) {
           debug() {
                   const tmp = c2;
                   if (!tmp) {
-                    const sorted = closure_1.sort(f134706);
+                    const sorted = closure_1.sort(f134944);
                     c2 = true;
                   }
                   return closure_1;
@@ -752,8 +752,8 @@ export default function quantize(arr, arg1) {
         let num6 = 0.75;
         iter(obj3, 0.75 * arg1);
         const prototype3 = array.prototype;
-        const f134713 = (count, count2) => {
-          const naturalOrder = f134713.naturalOrder;
+        const f134951 = (count, count2) => {
+          const naturalOrder = f134951.naturalOrder;
           const countResult = count.count();
           const result = countResult * count.volume();
           const countResult1 = count2.count();
@@ -769,7 +769,7 @@ export default function quantize(arr, arg1) {
           peek(arg0) {
                   const tmp = c2;
                   if (!tmp) {
-                    const sorted = closure_1.sort(f134706);
+                    const sorted = closure_1.sort(f134944);
                     c2 = true;
                   }
                   let diff = arg0;
@@ -781,7 +781,7 @@ export default function quantize(arr, arg1) {
           pop() {
                   const tmp = c2;
                   if (!tmp) {
-                    const sorted = closure_1.sort(f134706);
+                    const sorted = closure_1.sort(f134944);
                     c2 = true;
                   }
                   return closure_1.pop();
@@ -795,7 +795,7 @@ export default function quantize(arr, arg1) {
           debug() {
                   const tmp = c2;
                   if (!tmp) {
-                    const sorted = closure_1.sort(f134706);
+                    const sorted = closure_1.sort(f134944);
                     c2 = true;
                   }
                   return closure_1;
@@ -812,9 +812,9 @@ export default function quantize(arr, arg1) {
         const obj8 = Object.create(CMap.prototype);
         let tmp6 = array;
         const prototype = array.prototype;
-        const f134706 = (vbox, vbox2) => {
+        const f134944 = (vbox, vbox2) => {
           vbox = vbox.vbox;
-          const naturalOrder = f134706.naturalOrder;
+          const naturalOrder = f134944.naturalOrder;
           vbox2 = vbox.vbox;
           const vbox3 = vbox2.vbox;
           const countResult = vbox.count();
@@ -833,7 +833,7 @@ export default function quantize(arr, arg1) {
           peek(arg0) {
                   const tmp = c2;
                   if (!tmp) {
-                    const sorted = closure_1.sort(f134706);
+                    const sorted = closure_1.sort(f134944);
                     c2 = true;
                   }
                   let diff = arg0;
@@ -845,7 +845,7 @@ export default function quantize(arr, arg1) {
           pop() {
                   const tmp = c2;
                   if (!tmp) {
-                    const sorted = closure_1.sort(f134706);
+                    const sorted = closure_1.sort(f134944);
                     c2 = true;
                   }
                   return closure_1.pop();
@@ -859,7 +859,7 @@ export default function quantize(arr, arg1) {
           debug() {
                   const tmp = c2;
                   if (!tmp) {
-                    const sorted = closure_1.sort(f134706);
+                    const sorted = closure_1.sort(f134944);
                     c2 = true;
                   }
                   return closure_1;

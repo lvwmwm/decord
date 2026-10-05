@@ -1,9 +1,9 @@
-// Module ID: 15681
-// Function ID: 15682
+// Module ID: 15685
+// Function ID: 15686
 // Name: UserSettingsDesignSystemSheets
-// Dependencies: [32, 19, 17, 1085, 21, 4890, 558, 576, 9195, 6696, 6644, 6098, 5593, 6697, 6701, 4854, 5594, 1126, 10045, 15682, 4886, 5995, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 4890, 558, 576, 9195, 6696, 6644, 6098, 5593, 6697, 6701, 4854, 5594, 1126, 10045, 15686, 4886, 5995, 2]
 
-// Module 15681 (UserSettingsDesignSystemSheets)
+// Module 15685 (UserSettingsDesignSystemSheets)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
@@ -18,7 +18,7 @@ import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6644 */;
 import ActionSheetRow from "ActionSheetRow" /* 6697 */;
 import ActionSheet2 from "ActionSheet" /* 6701 */;
 import PromoSheet2 from "PromoSheet" /* 10045 */;
-import _modDef15682 from "module_15682" /* 15682 */;
+import _modDef15686 from "module_15686" /* 15686 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -341,7 +341,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { graphic: obj4, gradientColor: "purple", title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: first };
     obj4 = { type: "image", src: obj5, aspectRatio: "16/9" };
-    obj5 = { uri: _modDef15682 };
+    obj5 = { uri: _modDef15686 };
     const PromoSheet = tmp(10045).PromoSheet;
     const tmp10 = metroImportDefault(PromoSheet, obj3);
     cResult[1] = tmp10;
@@ -367,7 +367,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   intl = intl2.intl;
   const obj2 = { graphic: obj3, gradientColor: "purple", title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: tmp };
   obj3 = { type: "image", src: obj4, aspectRatio: "16/9" };
-  obj4 = { uri: _modDef15682 };
+  obj4 = { uri: _modDef15686 };
   tmp = metroImportDefault(Button, obj);
   const PromoSheet = PromoSheet2.PromoSheet;
   return metroImportDefault(PromoSheet, obj2);

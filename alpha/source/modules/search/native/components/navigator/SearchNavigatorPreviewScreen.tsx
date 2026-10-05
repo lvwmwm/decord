@@ -1,9 +1,9 @@
-// Module ID: 17016
-// Function ID: 17017
+// Module ID: 17040
+// Function ID: 17041
 // Name: SearchNavigatorPreviewScreen
-// Dependencies: [19, 17, 1085, 21, 4890, 558, 576, 1490, 1493, 11982, 16973, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 558, 576, 1490, 1493, 11982, 16997, 2]
 
-// Module 17016 (SearchNavigatorPreviewScreen)
+// Module 17040 (SearchNavigatorPreviewScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;

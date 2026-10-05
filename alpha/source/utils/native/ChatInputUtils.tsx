@@ -13,7 +13,7 @@ import useKeyboardType from "useKeyboardType" /* 4747 */;
 import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 4748 */;
 import size from "module_2" /* 2 */;
 
-const f89089 = (item) => {
+const f89232 = (item) => {
   let tmp = typeof item === "number";
   if (typeof item === "number") {
     const obj = ScreenIndexFrozen;
@@ -30,11 +30,11 @@ function getBestActiveInput() {
       if (!map1.has("message-request")) {
         str = "new-message";
         if (!map1.has("new-message")) {
-          str = "vibegrations-preview";
-          if (!map1.has("vibegrations-preview")) {
+          str = "conjure-preview";
+          if (!map1.has("conjure-preview")) {
             const _Array = Array;
             const arr = Array.from(map1.keys());
-            const found = arr.filter(f89089);
+            const found = arr.filter(f89232);
             if (0 !== found.length) {
               const _Math = Math;
               const items = [];
@@ -157,12 +157,12 @@ export const getHighestActiveScreenIndex = function getHighestActiveScreenIndex(
       return "message-request";
     } else if (obj.has("new-message")) {
       return "new-message";
-    } else if (obj.has("vibegrations-preview")) {
-      return "vibegrations-preview";
+    } else if (obj.has("conjure-preview")) {
+      return "conjure-preview";
     } else {
       const _Array = Array;
       const arr = Array.from(obj.keys());
-      const found = arr.filter(f89089);
+      const found = arr.filter(f89232);
       if (0 !== found.length) {
         const _Math = Math;
         const items = [];
@@ -202,11 +202,11 @@ export const getBestActiveInputForChannelId = function getBestActiveInputForChan
           if (!obj2.has("message-request")) {
             str = "new-message";
             if (!obj2.has("new-message")) {
-              str = "vibegrations-preview";
-              if (!obj2.has("vibegrations-preview")) {
+              str = "conjure-preview";
+              if (!obj2.has("conjure-preview")) {
                 const _Array = Array;
                 const arr = Array.from(obj2.keys());
-                const found = arr.filter(f89089);
+                const found = arr.filter(f89232);
                 if (0 !== found.length) {
                   const _Math = Math;
                   const items = [];

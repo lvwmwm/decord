@@ -1,18 +1,10 @@
 // Module ID: 14111
 // Function ID: 14112
-// Dependencies: [14084]
+// Dependencies: []
 
 // Module 14111
-import _mod14084 from "module_14084" /* 14084 */;
+const tmp = Math.trunc || (function trunc(arg0) {
+  return 0 < +arg0 ? floor : ceil(+arg0);
+});
 
-
-export default function(arg0) {
-  if (_mod14084(arg0)) {
-    return arg0;
-  } else {
-    const self = this;
-    const self2 = this;
-    const tmp3 = new TypeError(String(arg0) + " is not an object");
-    throw tmp3;
-  }
-};
+export default tmp;

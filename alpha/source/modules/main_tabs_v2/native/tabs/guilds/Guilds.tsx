@@ -1,18 +1,18 @@
-// Module ID: 15937
-// Function ID: 15938
+// Module ID: 15941
+// Function ID: 15942
 // Name: guilds/Guilds
-// Dependencies: [19, 10820, 21, 558, 576, 15938, 4732, 10912, 14896, 15939, 16300, 14981, 4589, 2]
+// Dependencies: [19, 10820, 21, 558, 576, 15942, 4732, 10912, 14900, 15943, 16304, 14985, 4589, 2]
 
-// Module 15937 (guilds/Guilds)
+// Module 15941 (guilds/Guilds)
 import react2 from "react" /* 576 */;
 import native from "native" /* 4589 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4732 */;
 import MainTabsConstants from "MainTabsConstants" /* 10820 */;
 import QuestsEligibility from "QuestsEligibility" /* 10912 */;
-import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 14896 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 15938 */;
-import MainChannelsDefault from "MainChannels" /* 15939 */;
-import YouBarDefault from "YouBar" /* 16300 */;
+import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 14900 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 15942 */;
+import MainChannelsDefault from "MainChannels" /* 15943 */;
+import YouBarDefault from "YouBar" /* 16304 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -21,7 +21,7 @@ import size from "module_2" /* 2 */;
 let closure_4;
 let hasOwnProperty;
 let tmp3;
-const QuestDockDefault = tmp3(14981);
+const QuestDockDefault = tmp3(14985);
 const YouBarNavigatorScreens = MainTabsConstants.YouBarNavigatorScreens;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -42,12 +42,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const QuestDockExternalCoordinationContextProvider = tmp(14896).QuestDockExternalCoordinationContextProvider;
+    const QuestDockExternalCoordinationContextProvider = tmp(14900).QuestDockExternalCoordinationContextProvider;
     const items = [React3(MainChannelsDefault, {}), React3(YouBarDefault, {}), ];
     const tmp10 = hasOwnProperty;
     const tmp11 = React3;
     if (first) {
-      first = tmp11(tmp5(14981), {});
+      first = tmp11(tmp5(14985), {});
     }
     const obj3 = { children: items };
     items[2] = first;

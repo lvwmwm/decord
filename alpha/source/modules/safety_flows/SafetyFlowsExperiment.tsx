@@ -1,10 +1,10 @@
-// Module ID: 17560
-// Function ID: 17561
+// Module ID: 17584
+// Function ID: 17585
 // Name: SafetyFlowsExperiment
 // Dependencies: [1441, 558, 576, 2]
 // Exports: isEligibleForSafetyFlowsExperiment
 
-// Module 17560 (SafetyFlowsExperiment)
+// Module 17584 (SafetyFlowsExperiment)
 import react from "react" /* 576 */;
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1441 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

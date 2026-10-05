@@ -1,9 +1,9 @@
-// Module ID: 15074
-// Function ID: 15075
+// Module ID: 15078
+// Function ID: 15079
 // Name: AdvancedVoiceActivitySetting
 // Dependencies: [1999, 7634, 558, 576, 504, 9306, 1126, 11129, 2]
 
-// Module 15074 (AdvancedVoiceActivitySetting)
+// Module 15078 (AdvancedVoiceActivitySetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;

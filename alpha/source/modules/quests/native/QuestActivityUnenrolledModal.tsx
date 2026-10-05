@@ -1,9 +1,9 @@
-// Module ID: 17162
-// Function ID: 17163
+// Module ID: 17186
+// Function ID: 17187
 // Name: QuestActivityUnenrolledModal
-// Dependencies: [5, 32, 19, 17, 7187, 17161, 5623, 21, 4890, 587, 1370, 558, 576, 4791, 4587, 504, 7208, 6663, 10911, 5626, 10955, 1402, 9994, 7212, 5093, 4594, 10954, 14917, 5974, 10950, 4886, 1126, 5594, 5991, 5593, 6880, 4809, 10958, 10976, 2]
+// Dependencies: [5, 32, 19, 17, 7187, 17185, 5623, 21, 4890, 587, 1370, 558, 576, 4791, 4587, 504, 7208, 6663, 10911, 5626, 10955, 1402, 9994, 7212, 5093, 4594, 10954, 14921, 5974, 10950, 4886, 1126, 5594, 5991, 5593, 6880, 4809, 10958, 10976, 2]
 
-// Module 17162 (QuestActivityUnenrolledModal)
+// Module 17186 (QuestActivityUnenrolledModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
@@ -17,13 +17,13 @@ import HeaderActionButton2 from "HeaderActionButton" /* 6880 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7212 */;
 import QuestActionCreators from "QuestActionCreators" /* 9994 */;
 import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 10958 */;
-import openQuestAccessSuspendedBottomSheetDefault from "openQuestAccessSuspendedBottomSheet" /* 14917 */;
+import openQuestAccessSuspendedBottomSheetDefault from "openQuestAccessSuspendedBottomSheet" /* 14921 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import QuestStore from "QuestStore" /* 7187 */;
-import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 17161 */;
+import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 17185 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -213,7 +213,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -247,7 +247,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
               const arr = first(closure_2_2[24]);
               arr.pop();
               c2 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp8) {
             c2 = 3;
@@ -461,7 +461,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -495,7 +495,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
           const arr = checked(c2[24]);
           arr.pop();
           c2 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp8) {
         c2 = 3;

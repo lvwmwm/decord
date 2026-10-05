@@ -58,7 +58,7 @@ let obj = {
     }
   },
   analyticsType: "@Everyone Warning",
-  animation: "applicationId"
+  animation: "unicodeVersion"
 };
 const items = [
   obj,

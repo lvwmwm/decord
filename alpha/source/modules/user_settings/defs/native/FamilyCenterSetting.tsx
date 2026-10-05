@@ -1,9 +1,9 @@
-// Module ID: 14668
-// Function ID: 14669
+// Module ID: 14672
+// Function ID: 14673
 // Name: FamilyCenterSetting
-// Dependencies: [19, 1085, 21, 558, 576, 14669, 14670, 4803, 587, 1126, 2493, 11129, 5873, 14673, 2]
+// Dependencies: [19, 1085, 21, 558, 576, 14673, 14674, 4803, 587, 1126, 2493, 11129, 5873, 14677, 2]
 
-// Module 14668 (FamilyCenterSetting)
+// Module 14672 (FamilyCenterSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,8 +11,8 @@ import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import _modDef2493 from "module_2493" /* 2493 */;
 import GroupIcon from "GroupIcon" /* 5873 */;
-import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 14669 */;
-import useParentalConsentWarning from "useParentalConsentWarning" /* 14670 */;
+import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 14673 */;
+import useParentalConsentWarning from "useParentalConsentWarning" /* 14674 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;

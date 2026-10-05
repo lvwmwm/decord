@@ -1,10 +1,10 @@
-// Module ID: 13050
-// Function ID: 13051
+// Module ID: 13052
+// Function ID: 13053
 // Name: GuildScheduledEventEmbed
-// Dependencies: [32, 17, 7037, 2070, 2051, 2074, 4519, 1377, 10024, 2057, 7226, 4877, 7604, 7605, 9262, 9166, 9163, 9272, 1126, 7608, 9518, 7595, 587, 4805, 9180, 5043, 9258, 9271, 13051, 9178, 2066, 2]
+// Dependencies: [32, 17, 7037, 2070, 2051, 2074, 4519, 1377, 10024, 2057, 7226, 4877, 7604, 7605, 9262, 9166, 9163, 9272, 1126, 7608, 9518, 7595, 587, 4805, 9180, 5043, 9258, 9271, 13053, 9178, 2066, 2]
 // Exports: createGuildScheduledEventInviteEmbed, createGuildScheduledEventLinkEmbed
 
-// Module 13050 (GuildScheduledEventEmbed)
+// Module 13052 (GuildScheduledEventEmbed)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1126 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
@@ -24,7 +24,7 @@ import useCanInviteForGuildEvent from "useCanInviteForGuildEvent" /* 9262 */;
 import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9271 */;
 import GuildScheduledEventHeaderUtils from "GuildScheduledEventHeaderUtils" /* 9272 */;
 import CodedLinksConstants from "CodedLinksConstants" /* 10024 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13051 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13053 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 7037 */;
 import ChannelStore from "ChannelStore" /* 2051 */;

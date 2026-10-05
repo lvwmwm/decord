@@ -1,13 +1,13 @@
-// Module ID: 16685
-// Function ID: 16686
+// Module ID: 16696
+// Function ID: 16697
 // Name: BotIllocon
-// Dependencies: [21, 558, 576, 16686, 5974, 2]
+// Dependencies: [21, 558, 576, 16697, 5974, 2]
 
-// Module 16685 (BotIllocon)
+// Module 16696 (BotIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5974 */;
-import _modDef16686 from "module_16686" /* 16686 */;
+import _modDef16697 from "module_16697" /* 16697 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef16686 };
+    const obj2 = { uri: _modDef16697 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num === undefined) {
     num = 64;
   }
-  const obj2 = { uri: _modDef16686 };
+  const obj2 = { uri: _modDef16697 };
   FastImageDefault;
   const items = [{ width: num, height: num }];
   return <tmp fadeDuration={0} source={obj2} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;

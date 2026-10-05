@@ -232,7 +232,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressCommandItem
         tmp2 = null;
         found = undefined;
         if (sections != null) {
-          found = arr.find(() => { /* body not rendered: F141859 */ });
+          found = arr.find(() => { /* body not rendered: F142097 */ });
         }
         closure_1 = found;
         tmp4 = closure_1_6;
@@ -240,7 +240,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressCommandItem
         obj = { command: null, section: null, onPress: null, guildId: null, highlighted: null };
         obj.command = item;
         obj.section = found;
-        obj.onPress = function onPress() { /* body not rendered: F141860 */ };
+        obj.onPress = function onPress() { /* body not rendered: F142098 */ };
         tmp6 = item;
         obj.guildId = item.guild_id;
         num = 0;

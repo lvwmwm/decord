@@ -1,9 +1,9 @@
-// Module ID: 16371
-// Function ID: 16372
+// Module ID: 16375
+// Function ID: 16376
 // Name: ForYouReadSectionHeader
 // Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1126, 4886, 2]
 
-// Module 16371 (ForYouReadSectionHeader)
+// Module 16375 (ForYouReadSectionHeader)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

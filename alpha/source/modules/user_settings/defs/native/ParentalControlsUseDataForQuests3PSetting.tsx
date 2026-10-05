@@ -1,13 +1,13 @@
-// Module ID: 15811
-// Function ID: 15812
+// Module ID: 15815
+// Function ID: 15816
 // Name: ParentalControlsUseDataForQuests3PSetting
-// Dependencies: [7048, 7634, 558, 8297, 14622, 11129, 1126, 2]
+// Dependencies: [7048, 7634, 558, 8297, 14626, 11129, 1126, 2]
 
-// Module 15811 (ParentalControlsUseDataForQuests3PSetting)
+// Module 15815 (ParentalControlsUseDataForQuests3PSetting)
 import intl2 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
 import useSelectedTeen from "useSelectedTeen" /* 8297 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14622 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14626 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7048 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;

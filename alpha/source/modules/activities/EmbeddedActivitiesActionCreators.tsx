@@ -102,7 +102,7 @@ let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -152,7 +152,7 @@ let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
               PRIVATE_CHANNEL = undefined;
               c16 = 1;
               c17 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c16) {
             if (arg0 === 1) {
@@ -462,7 +462,7 @@ obj = function _maybeSendPrimaryAppCommand() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -503,7 +503,7 @@ obj = function _maybeSendPrimaryAppCommand() {
               user = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -773,7 +773,7 @@ obj = function _joinEmbeddedActivity() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -822,7 +822,7 @@ obj = function _joinEmbeddedActivity() {
             obj32 = undefined;
             guild_id = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === guild_id) {
           if (arg0 === 1) {
@@ -1084,7 +1084,7 @@ obj = function _fetchDeveloperApplications() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -1140,7 +1140,7 @@ obj = function _fetchDeveloperApplications() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp10) {
         applications = tmp10;
@@ -1171,7 +1171,7 @@ obj = function _uploadImageAttachment() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;
@@ -1279,7 +1279,7 @@ obj = function _fetchShelf() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c7;
@@ -1325,7 +1325,7 @@ obj = function _fetchShelf() {
             assets = undefined;
             c8 = 1;
             c9 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else {
           if (1 === c8) {
@@ -1500,7 +1500,7 @@ obj = function _sendEmbeddedActivityInvite() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1525,7 +1525,7 @@ obj = function _sendEmbeddedActivityInvite() {
             code = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -1557,7 +1557,7 @@ obj = function _sendEmbeddedActivityInvite() {
             obj.sendInvite(c1, code.code, c3, c4);
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp29) {
         c4 = 3;
@@ -1589,7 +1589,7 @@ obj = function _sendEmbeddedActivityInviteUser() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1615,7 +1615,7 @@ obj = function _sendEmbeddedActivityInviteUser() {
             let code;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {
@@ -1679,7 +1679,7 @@ obj = function _sendEmbeddedActivityInviteUser() {
           return obj;
         } else {
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp18) {
         c4 = 3;
@@ -1702,7 +1702,7 @@ obj = function _validateTestMode() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -1795,7 +1795,7 @@ obj = function _refreshProxyTicket() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

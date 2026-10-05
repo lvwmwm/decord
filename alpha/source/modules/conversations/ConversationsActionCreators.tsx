@@ -138,7 +138,7 @@ let obj = function _fetchChannelConversations() {
         throwOnError = false;
       }
       hydrateMessages = tmp89.hydrateMessages;
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -161,7 +161,7 @@ obj = function _fetchConversation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -207,7 +207,7 @@ obj = function _fetchConversation() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp15) {
           if (0 === c4) {
             c6 = 3;
@@ -246,7 +246,7 @@ obj = function _fetchConversationMessages() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -285,7 +285,7 @@ obj = function _fetchConversationMessages() {
                 }
                 if (isFullyHydratedResult) {
                   c8 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 let hydratedMessages;
@@ -296,7 +296,7 @@ obj = function _fetchConversationMessages() {
                 }
                 if (null != hydratedMessages) {
                   c8 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               }
               if (tmp15) {
@@ -339,7 +339,7 @@ obj = function _fetchConversationMessages() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp32) {
           if (0 === c6) {
             c8 = 3;

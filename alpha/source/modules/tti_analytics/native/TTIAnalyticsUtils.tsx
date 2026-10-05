@@ -198,7 +198,7 @@ let obj = function _trackAppUIViewedAsync() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -259,7 +259,7 @@ let obj = function _trackAppUIViewedAsync() {
             }, 1000);
             scheduleTrackAppUiViewed2();
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp5) {
           c6 = 3;
@@ -288,7 +288,7 @@ obj = function _logLegacyAppUiViewed() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -348,7 +348,7 @@ obj = function _logLegacyAppUiViewed() {
           const merged2 = Object.assign(closure_0);
           track(APP_UI_VIEWED, obj8, { logEventProperties: true });
           c8 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp6) {
         c8 = 3;
@@ -402,7 +402,7 @@ obj = function _trackAppUIViewed() {
         const obj7 = { value, done: true };
         return obj7;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -540,7 +540,7 @@ obj = function _trackAppUIViewed() {
             logToDevice(obj);
           }
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp56) {
         c6 = 3;
@@ -586,7 +586,7 @@ obj = function _trackAppLaunchCompletedAsync() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -627,7 +627,7 @@ obj = function _trackAppLaunchCompletedAsync() {
           obj = closure_132_1(closure_132_2[19]);
           obj.track(closure_132_10.APP_LAUNCH_COMPLETED, closure_0, { logEventProperties: true });
           c8 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp20) {
         c8 = 3;

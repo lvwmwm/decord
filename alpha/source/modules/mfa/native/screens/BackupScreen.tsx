@@ -1,13 +1,13 @@
-// Module ID: 15506
-// Function ID: 15507
+// Module ID: 15510
+// Function ID: 15511
 // Name: BackupScreen
-// Dependencies: [5, 32, 19, 21, 15504, 4886, 1126, 558, 576, 6432, 15505, 15499, 15500, 2]
+// Dependencies: [5, 32, 19, 21, 15508, 4886, 1126, 558, 576, 6432, 15509, 15503, 15504, 2]
 
-// Module 15506 (BackupScreen)
+// Module 15510 (BackupScreen)
 import intl6 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 4886 */;
 import useWideAuthViewDefault from "useWideAuthView" /* 6432 */;
-import MFA from "MFA" /* 15504 */;
+import MFA from "MFA" /* 15508 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -22,7 +22,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp4;
-const ClipboardCopyInputDefault = tmp4(15505);
+const ClipboardCopyInputDefault = tmp4(15509);
 function removeDashes(str) {
   return str.replace(/-/g, "");
 }
@@ -152,7 +152,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c5;
@@ -210,7 +210,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
             message2(false);
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp28) {
           if (0 === c5) {
@@ -306,7 +306,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-  let obj5 = { label: tmp26, placeholder: tmp27, isValidClipboardCode, maxLength: tmp(15504).BACKUP_CODE_MAX_LENGTH, onChangeCode: tmp18, error: tmp10, isDisabled: tmp30, autoFocus: tmp31 };
+  let obj5 = { label: tmp26, placeholder: tmp27, isValidClipboardCode, maxLength: tmp(15508).BACKUP_CODE_MAX_LENGTH, onChangeCode: tmp18, error: tmp10, isDisabled: tmp30, autoFocus: tmp31 };
   const tmp4Result = ClipboardCopyInputDefault;
   cResult[12] = tmp10;
   cResult[13] = tmp7 || tmp12;
@@ -380,7 +380,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -436,7 +436,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           message2(false);
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp28) {
         if (0 === c5) {

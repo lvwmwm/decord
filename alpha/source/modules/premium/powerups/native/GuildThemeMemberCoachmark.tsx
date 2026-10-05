@@ -1,9 +1,9 @@
-// Module ID: 16089
-// Function ID: 16090
+// Module ID: 16093
+// Function ID: 16094
 // Name: GuildThemeMemberCoachmark
-// Dependencies: [19, 4879, 4767, 4768, 2048, 21, 4890, 587, 558, 576, 4771, 504, 12177, 16090, 7671, 5612, 1126, 2525, 12180, 9882, 2]
+// Dependencies: [19, 4879, 4767, 4768, 2048, 21, 4890, 587, 558, 576, 4771, 504, 12177, 16094, 7671, 5612, 1126, 2525, 12180, 9882, 2]
 
-// Module 16089 (GuildThemeMemberCoachmark)
+// Module 16093 (GuildThemeMemberCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
@@ -178,7 +178,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         markAsDismissed(ContentDismissActionType.USER_DISMISS);
       }
     }
-    guildPowerupBannerImage = markAsDismissed(16090);
+    guildPowerupBannerImage = markAsDismissed(16094);
   }
   cResult[6] = stateFromStores;
   cResult[7] = stateFromStores1;
@@ -212,7 +212,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const obj3 = guildId(12177);
   guildPowerupBannerImage = obj3.getGuildPowerupBannerImage(stateFromStores, stateFromStores1, true);
   if (guildPowerupBannerImage == null) {
-    guildPowerupBannerImage = markAsDismissed(16090);
+    guildPowerupBannerImage = markAsDismissed(16094);
   }
   const diff = onDismiss - markAsDismissed(7671)(guildId).available;
   c5 = diff;

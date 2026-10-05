@@ -1,9 +1,9 @@
-// Module ID: 12995
-// Function ID: 12996
+// Module ID: 12997
+// Function ID: 12998
 // Name: useCanGiftProduct
 // Dependencies: [558, 7849, 7065, 7064, 4528, 1980, 4541, 2]
 
-// Module 12995 (useCanGiftProduct)
+// Module 12997 (useCanGiftProduct)
 import PremiumUtilsDefault from "PremiumUtils" /* 4528 */;
 import BillingPlatformUtils from "BillingPlatformUtils" /* 4541 */;
 import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7064 */;

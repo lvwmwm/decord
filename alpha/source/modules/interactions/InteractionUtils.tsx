@@ -69,7 +69,7 @@ let obj = function _executeMessageComponentInteraction() {
       } else if (2 === tmp4) {
         custom_id = 0;
         application_id = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } else if (3 === tmp4) {
         if (arg0 === 1) {
           application_id = 3;
@@ -130,7 +130,7 @@ let obj = function _executeMessageComponentInteraction() {
       }
       await "IconComponent";
       ({ componentType: c0, messageId: c1, messageFlags: c2, customId: c3, componentId: c4, applicationId: c5, channelId: c6, guildId: c7, localState: c8 } = closure_0);
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;

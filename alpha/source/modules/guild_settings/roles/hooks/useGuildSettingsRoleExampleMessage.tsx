@@ -1,9 +1,9 @@
-// Module ID: 17776
-// Function ID: 17777
+// Module ID: 17800
+// Function ID: 17801
 // Name: useGuildSettingsRoleExampleMessage
-// Dependencies: [19, 1391, 1085, 558, 576, 5112, 7248, 1126, 7852, 13133, 2]
+// Dependencies: [19, 1391, 1085, 558, 576, 5112, 7248, 1126, 7852, 13135, 2]
 
-// Module 17776 (useGuildSettingsRoleExampleMessage)
+// Module 17800 (useGuildSettingsRoleExampleMessage)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
@@ -40,7 +40,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(content) {
     const insertStaticUserResult = obj5.insertStaticUser(tmp13);
     if (null != insertStaticUserResult) {
       messageRecord.author = insertStaticUserResult;
-      messageRecord.author.getAvatarURL = () => require("module_13133");
+      messageRecord.author.getAvatarURL = () => require("module_13135");
     }
     cResult[0] = content;
     cResult[1] = messageRecord;

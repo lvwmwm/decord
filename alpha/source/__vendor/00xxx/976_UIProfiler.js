@@ -392,7 +392,7 @@ closure_0 = _asyncToGenerator(async function() {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -461,7 +461,7 @@ closure_0 = _asyncToGenerator(async function() {
           }
         }
         c7 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp35) {
         closure_5 = tmp35;
         if (0 === c4) {

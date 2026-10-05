@@ -38,7 +38,7 @@ let obj = function _fetchSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -94,7 +94,7 @@ let obj = function _fetchSKU() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp32) {
           closure_3 = tmp32;
           if (0 === c4) {
@@ -128,7 +128,7 @@ obj = function _fetchPublishedSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -221,7 +221,7 @@ obj = function _fetchPublishedSKU() {
             c7 = 0;
           }
           c9 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp36) {
           closure_6 = tmp36;
           if (0 === c7) {
@@ -251,7 +251,7 @@ obj = function _fetchTestSKUsForApplication() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -276,7 +276,7 @@ obj = function _fetchTestSKUsForApplication() {
             body = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {
@@ -352,7 +352,7 @@ obj = function _previewPurchaseSku() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let currency;
@@ -385,7 +385,7 @@ obj = function _previewPurchaseSku() {
             billingError = undefined;
             apply_wallet_balance = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === apply_wallet_balance) {
           if (arg0 === 1) {
@@ -480,7 +480,7 @@ obj = function _grantChannelBranchEntitlement() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -573,7 +573,7 @@ obj = function _orderSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -686,7 +686,7 @@ obj = function _purchaseSKU() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -929,7 +929,7 @@ obj = function _resendPaymentVerificationEmail() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;

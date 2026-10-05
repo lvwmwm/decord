@@ -1,10 +1,10 @@
-// Module ID: 13783
-// Function ID: 13784
+// Module ID: 13785
+// Function ID: 13786
 // Name: GuildPopoutActionCreators
 // Dependencies: [5, 1085, 584, 1282, 2]
 // Exports: fetchGuildForPopout
 
-// Module 13783 (GuildPopoutActionCreators)
+// Module 13785 (GuildPopoutActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
@@ -28,7 +28,7 @@ let obj = function _fetchGuildForPopout() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -76,7 +76,7 @@ let obj = function _fetchGuildForPopout() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp19) {
           closure_3 = tmp19;

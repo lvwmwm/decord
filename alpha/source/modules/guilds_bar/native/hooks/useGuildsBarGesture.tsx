@@ -1,10 +1,10 @@
-// Module ID: 16220
-// Function ID: 16221
+// Module ID: 16224
+// Function ID: 16225
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 2074, 5616, 16221, 16218, 4612, 551, 4855, 4729, 12, 1242, 1126, 6569, 15945, 4580, 587, 4492, 10725, 1259, 5705, 8863, 7580, 1369, 1618, 5770, 16222, 16223, 7580, 14896, 6140, 2]
+// Dependencies: [5, 19, 17, 2074, 5616, 16225, 16222, 4612, 551, 4855, 4729, 12, 1242, 1126, 6569, 15949, 4580, 587, 4492, 10725, 1259, 5705, 8863, 7580, 1369, 1618, 5770, 16226, 16227, 7580, 14900, 6140, 2]
 // Exports: default
 
-// Module 16220 (useGuildsBarGesture)
+// Module 16224 (useGuildsBarGesture)
 import react_native from "react-native" /* 17 */;
 import intl15 from "intl" /* 1126 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
@@ -20,8 +20,8 @@ import roundToNearestPixelDefault from "roundToNearestPixel" /* 10725 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16221 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 16218 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16225 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 16222 */;
 import "ReanimatedRexport";
 import ReanimatedRexport_mod from "ReanimatedRexport" /* 4612 */;
 import debounce from "debounce" /* 551 */;
@@ -268,7 +268,7 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, fastListRef, map) {
     sectionItemFromPosition = current.getSectionItemFromPosition(bound, map);
   }
   if (sectionItemFromPosition == null) {
-    sectionItemFromPosition = { item: "done", positionPercentage: false };
+    sectionItemFromPosition = { item: "duration", positionPercentage: false };
   }
   const item = sectionItemFromPosition.item;
   let tmp6;
@@ -580,7 +580,7 @@ export default function useGuildsBarGesture() {
                             const obj3 = { value, done: true };
                             return obj3;
                           } else {
-                            return { value: "IconComponent", done: "IconComponent" };
+                            return { value: "IconComponent", done: null };
                           }
                         } else {
                           let c3;
@@ -617,7 +617,7 @@ export default function useGuildsBarGesture() {
                                 c3 = 0;
                               }
                               c0 = 3;
-                              return { value: "IconComponent", done: "IconComponent" };
+                              return { value: "IconComponent", done: null };
                             }
                           } catch (tmp8) {
                             closure_2 = tmp8;
@@ -688,7 +688,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    setStateShallow({ dragSpecs: "Symbol", overSpecs: "current" });
+    setStateShallow({ dragSpecs: "Array", overSpecs: "Set" });
     const value = gestureState.get();
     if (null != value.mode) {
       const obj10 = { mode: null };

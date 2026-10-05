@@ -37,7 +37,7 @@ let obj = function _validatePaymentSourceBillingAddress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -162,7 +162,7 @@ obj = function _createPaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c8;
@@ -189,7 +189,7 @@ obj = function _createPaymentSource() {
               billingError = undefined;
               c9 = 1;
               c10 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c9) {
             if (arg0 === 1) {

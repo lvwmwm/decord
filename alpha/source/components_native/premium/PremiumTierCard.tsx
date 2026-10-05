@@ -1,9 +1,9 @@
-// Module ID: 13370
-// Function ID: 13371
+// Module ID: 13372
+// Function ID: 13373
 // Name: PremiumTierCard
-// Dependencies: [19, 17, 6938, 1379, 21, 4890, 587, 558, 576, 13371, 13372, 7738, 6942, 6943, 10447, 4528, 5605, 1105, 5995, 2]
+// Dependencies: [19, 17, 6938, 1379, 21, 4890, 587, 558, 576, 13373, 13374, 7738, 6942, 6943, 10447, 4528, 5605, 1105, 5995, 2]
 
-// Module 13370 (PremiumTierCard)
+// Module 13372 (PremiumTierCard)
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import PremiumConstants from "PremiumConstants" /* 1379 */;
@@ -14,8 +14,8 @@ import AssetRegistryDefault from "AssetRegistry" /* 6942 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 6943 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 7738 */;
 import AssetRegistryDefault4 from "AssetRegistry" /* 10447 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 13371 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 13372 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 13373 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 13374 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -143,9 +143,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
     textLogoTier2 = tmp.textLogoTier2;
   }
   if (PremiumTypes.TIER_0 === premiumType) {
-    tmp5Result = tmp5(13371);
+    tmp5Result = tmp5(13373);
   } else if (PremiumTypes.TIER_1 === premiumType) {
-    tmp5Result = tmp5(13372);
+    tmp5Result = tmp5(13374);
   } else if (PremiumTypes.TIER_2 === premiumType) {
     tmp5Result = tmp5(7738);
   }

@@ -1,15 +1,15 @@
-// Module ID: 17011
-// Function ID: 17012
+// Module ID: 17035
+// Function ID: 17036
 // Name: ChannelSettingsChangeDefaultForumLayout
-// Dependencies: [32, 19, 17, 2051, 21, 4890, 587, 558, 576, 10062, 1126, 2062, 6071, 16972, 6588, 6072, 4886, 6074, 17012, 17013, 5974, 504, 2]
+// Dependencies: [32, 19, 17, 2051, 21, 4890, 587, 558, 576, 10062, 1126, 2062, 6071, 16996, 6588, 6072, 4886, 6074, 17036, 17037, 5974, 504, 2]
 
-// Module 17011 (ChannelSettingsChangeDefaultForumLayout)
+// Module 17035 (ChannelSettingsChangeDefaultForumLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import FastImageDefault from "FastImage" /* 5974 */;
 import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10062 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17012 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17013 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17036 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17037 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
@@ -80,7 +80,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     LIST = tmp(2062).ForumLayout.LIST;
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { icon: closure_7(tmp(16972).GridSquareIcon, {}), label: intl2.string(tmp(1126).t["U+rQfW"]), value: tmp(2062).ForumLayout.GRID };
+    let obj2 = { icon: closure_7(tmp(16996).GridSquareIcon, {}), label: intl2.string(tmp(1126).t["U+rQfW"]), value: tmp(2062).ForumLayout.GRID };
     const TableRadioRow = tmp(6071).TableRadioRow;
     intl2 = tmp(1126).intl;
     const tmp12 = closure_7(TableRadioRow, obj2);
@@ -223,7 +223,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   if (tmp3 == null) {
     LIST = tmp7(2062).ForumLayout.LIST;
   }
-  let obj3 = { icon: closure_7(channel(16972).GridSquareIcon, {}), label: intl2.string(channel(1126).t["U+rQfW"]), value: channel(2062).ForumLayout.GRID };
+  let obj3 = { icon: closure_7(channel(16996).GridSquareIcon, {}), label: intl2.string(channel(1126).t["U+rQfW"]), value: channel(2062).ForumLayout.GRID };
   const TableRadioRow = tmp7(6071).TableRadioRow;
   intl2 = tmp7(1126).intl;
   items1 = [closure_7(TableRadioRow, obj3), ];
@@ -244,9 +244,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const tmp11 = FastImageDefault;
   const tmp9 = closure_7;
   if (tmp3 === channel(2062).ForumLayout.GRID) {
-    tmp10Result = tmp10(17012);
+    tmp10Result = tmp10(17036);
   } else {
-    tmp10Result = tmp10(17013);
+    tmp10Result = tmp10(17037);
   }
   items2[3] = tmp9(tmp11, obj7);
   return closure_8(tmp6, obj);

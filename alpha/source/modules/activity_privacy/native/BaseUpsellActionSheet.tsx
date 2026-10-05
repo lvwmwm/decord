@@ -1,16 +1,16 @@
-// Module ID: 14657
-// Function ID: 14658
+// Module ID: 14661
+// Function ID: 14662
 // Name: BaseUpsellActionSheet
-// Dependencies: [19, 17, 2074, 21, 4792, 587, 4890, 558, 576, 504, 5971, 14655, 1126, 4886, 12284, 11995, 4854, 4574, 4568, 5594, 6645, 2]
+// Dependencies: [19, 17, 2074, 21, 4792, 587, 4890, 558, 576, 504, 5971, 14659, 1126, 4886, 12284, 11995, 4854, 4574, 4568, 5594, 6645, 2]
 
-// Module 14657 (BaseUpsellActionSheet)
+// Module 14661 (BaseUpsellActionSheet)
 import nativeDefault from "native" /* 587 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
 import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4574 */;
 import CircleCheckIcon2 from "CircleCheckIcon" /* 4792 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
 import GuildIconDefault from "GuildIcon" /* 5971 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 14655 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 14659 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 2074 */;
@@ -121,7 +121,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ guildIds, direction, onPress } = arg0);
   const tmp4 = closure_10();
   if (cResult[0] !== guildIds) {
-    const tmpResult = arr(14655);
+    const tmpResult = arr(14659);
     const result = tmpResult.sortGuildIdsByFrecency(guildIds);
     cResult[0] = guildIds;
     cResult[1] = result;
@@ -150,7 +150,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const stateFromStores = tmpResult3.useStateFromStores(tmp6, tmp8);
   if (cResult[5] !== direction) {
     let stringResult;
-    if (direction === arr(14655).ChangeDirection.RESTRICTING) {
+    if (direction === arr(14659).ChangeDirection.RESTRICTING) {
       const intl2 = tmp(1126).intl;
       stringResult = intl2.string(tmp(1126).t.e6Kpa7);
     } else {
@@ -307,7 +307,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const statusRow = tmp4.statusRow;
-  if (direction === arr(14655).ChangeDirection.RESTRICTING) {
+  if (direction === arr(14659).ChangeDirection.RESTRICTING) {
     class E {
       constructor() {
         return closure_1.map((item) => {

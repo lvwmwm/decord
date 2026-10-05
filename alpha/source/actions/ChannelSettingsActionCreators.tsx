@@ -138,7 +138,7 @@ let obj = function _saveChannel() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -184,7 +184,7 @@ let obj = function _saveChannel() {
               channel = undefined;
               flags = 1;
               permission_overwrites = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === flags) {
             if (arg0 === 1) {
@@ -347,7 +347,7 @@ obj = function _deleteChannel() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -404,7 +404,7 @@ obj = function _deleteChannel() {
           }
           closure_130_8();
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp21) {
         c4 = 3;

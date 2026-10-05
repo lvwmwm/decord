@@ -17,7 +17,7 @@ let StyleSheet;
 let c2;
 ({ StyleSheet, Text: c2 } = react_native);
 const jsx = Fragment.jsx;
-const state = module_4571.create(() => ({ message: "done", version: false }));
+const state = module_4571.create(() => ({ message: "duration", version: false }));
 const styles = StyleSheet.create({ liveRegion: { position: "absolute", top: 0, left: 0, width: 1, height: 1, opacity: 0 } });
 const memo = react.memo;
 const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {

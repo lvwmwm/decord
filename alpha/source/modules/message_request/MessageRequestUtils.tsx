@@ -1,10 +1,10 @@
-// Module ID: 13648
-// Function ID: 13649
+// Module ID: 13650
+// Function ID: 13651
 // Name: MessageRequestUtils
 // Dependencies: [6720, 6721, 11, 2]
 // Exports: filterOutMessageRequestsAndSpam, filterOutMessageRequestsAndSpamById, isMessageRequestOrSpamRequest, shouldShowMessageRequests
 
-// Module 13648 (MessageRequestUtils)
+// Module 13650 (MessageRequestUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import MessageRequestStore from "MessageRequestStore" /* 6720 */;
 import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6721 */;

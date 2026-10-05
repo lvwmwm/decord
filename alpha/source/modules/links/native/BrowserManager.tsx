@@ -37,7 +37,7 @@ let obj = function _browserManagerClearWebsiteData() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -70,7 +70,7 @@ let obj = function _browserManagerClearWebsiteData() {
           return obj;
         }
         c0 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp7) {
         c0 = 3;
         throw tmp7;

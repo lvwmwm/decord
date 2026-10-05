@@ -1,14 +1,14 @@
-// Module ID: 14901
-// Function ID: 14902
+// Module ID: 14905
+// Function ID: 14906
 // Name: WreathIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 14902, 4579, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 14906, 4579, 2]
 
-// Module 14901 (WreathIcon)
+// Module 14905 (WreathIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4579 */;
-import AssetRegistry from "AssetRegistry" /* 14902 */;
+import AssetRegistry from "AssetRegistry" /* 14906 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

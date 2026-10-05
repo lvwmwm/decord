@@ -1,10 +1,10 @@
-// Module ID: 17437
-// Function ID: 17438
+// Module ID: 17461
+// Function ID: 17462
 // Name: VoicePermissionManager
-// Dependencies: [5578, 4910, 502, 2051, 1999, 4913, 1085, 5099, 7275, 17438, 5037, 6613, 2]
+// Dependencies: [5578, 4910, 502, 2051, 1999, 4913, 1085, 5099, 7275, 17462, 5037, 6613, 2]
 // Exports: shouldImmediatelyRequestVoicePermissions
 
-// Module 17437 (VoicePermissionManager)
+// Module 17461 (VoicePermissionManager)
 import Constants from "Constants" /* 1085 */;
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5037 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 5099 */;
@@ -41,7 +41,7 @@ class VoicePermissionManager extends AutomaticLifecycleManager {
     voiceStates = voiceStates.voiceStates;
     const item = voiceStates.forEach(function(item) {
       let userId;
-      const f130575 = (result) => {
+      const f130813 = (result) => {
         const tmp = result;
         if (tmp) {
           closure_1_1(closure_1_2[9])(true);
@@ -64,7 +64,7 @@ class VoicePermissionManager extends AutomaticLifecycleManager {
               if (isSpeakerResult) {
                 const obj4 = NativePermissionUtilsDefault;
                 const permission = obj4.requestPermission(constants2.AUDIO);
-                permission.then(f130575);
+                permission.then(f130813);
                 const tmp17 = importDefault;
                 const tmp18 = dependencyMap;
                 const tmp19 = constants2;
@@ -81,7 +81,7 @@ class VoicePermissionManager extends AutomaticLifecycleManager {
                 if (audienceRequestToSpeakState === useAudienceRequestToSpeakState.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) {
                   const obj2 = NativePermissionUtilsDefault;
                   const permission2 = obj2.requestPermission(constants2.AUDIO);
-                  permission2.then(f130575);
+                  permission2.then(f130813);
                   const tmp11 = importDefault;
                   const tmp12 = constants2;
                   if (MediaEngineStore.getMode() === constants.PUSH_TO_TALK) {

@@ -1,9 +1,9 @@
-// Module ID: 17101
-// Function ID: 17102
+// Module ID: 17125
+// Function ID: 17126
 // Name: CollectiblesMobileAnnouncementActionSheet
-// Dependencies: [19, 17, 1087, 6646, 2048, 21, 4890, 587, 558, 576, 1484, 6112, 1618, 4612, 17102, 4886, 7052, 6681, 17103, 1126, 12370, 12364, 17104, 5594, 6645, 2]
+// Dependencies: [19, 17, 1087, 6646, 2048, 21, 4890, 587, 558, 576, 1484, 6112, 1618, 4612, 17126, 4886, 7052, 6681, 17127, 1126, 12370, 12364, 17128, 5594, 6645, 2]
 
-// Module 17101 (CollectiblesMobileAnnouncementActionSheet)
+// Module 17125 (CollectiblesMobileAnnouncementActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
@@ -15,8 +15,8 @@ import BottomSheetModal from "BottomSheetModal" /* 6112 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 6646 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7052 */;
-import _modDef17102 from "module_17102" /* 17102 */;
-import _modDef17103 from "module_17103" /* 17103 */;
+import _modDef17126 from "module_17126" /* 17126 */;
+import _modDef17127 from "module_17127" /* 17127 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -113,7 +113,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             const _Symbol = Symbol;
             if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-              const obj4 = { uri: _modDef17102 };
+              const obj4 = { uri: _modDef17126 };
               cResult[13] = obj4;
               tmp15 = obj4;
             } else {
@@ -208,7 +208,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const rect = { top: -138 * result1, left: -56 * result1, right: -56 * result1 };
   items1[1] = rect;
   obj5 = { source: obj6, style: tmp.mascotImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-  obj6 = { uri: _modDef17102 };
+  obj6 = { uri: _modDef17126 };
   const View = ReanimatedRexportDefault.View;
   return React4(View, obj3);
 });
@@ -392,7 +392,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
         markAsDismissed(ContentDismissActionType.USER_DISMISS);
       }
     }
-    tmp17[0] = _modDef17103;
+    tmp17[0] = _modDef17127;
     cResult[10] = tmp17;
     tmp16 = tmp17;
   } else {
@@ -509,7 +509,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
         markAsDismissed(ContentDismissActionType.USER_DISMISS);
       }
     }
-    const obj10 = { icon: closure_9(markAsDismissed(17104).ShopIllocon, obj11), text: intl3.string(markAsDismissed(1126).t["/4bQuG"]) };
+    const obj10 = { icon: closure_9(markAsDismissed(17128).ShopIllocon, obj11), text: intl3.string(markAsDismissed(1126).t["/4bQuG"]) };
     obj11 = { size };
     intl3 = tmp(1126).intl;
     const tmp37 = closure_9(closure_16, obj10);
@@ -647,7 +647,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
   let obj = { onDismiss: callback1, backdropChildren: memo, children: closure_10(closure_5, obj2) };
   obj2 = { style: tmp.container, children: items3 };
   const obj3 = { source: obj4, style: tmp.framePreviewImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-  obj4 = { uri: _modDef17103 };
+  obj4 = { uri: _modDef17127 };
   BottomSheet = markAsDismissed(6645).BottomSheet;
   items3 = [closure_9(closure_4, obj3), , , ];
   const obj5 = { variant: "heading-xl/bold", color: "text-strong", accessibilityRole: "header", style: tmp.headerText, children: intl.string(markAsDismissed(1126).t.vRCvqo) };
@@ -663,7 +663,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
   obj10 = { size };
   intl3 = markAsDismissed(1126).intl;
   items4[1] = closure_9(closure_16, obj9);
-  const obj11 = { icon: closure_9(markAsDismissed(17104).ShopIllocon, obj12), text: intl4.string(markAsDismissed(1126).t["/4bQuG"]) };
+  const obj11 = { icon: closure_9(markAsDismissed(17128).ShopIllocon, obj12), text: intl4.string(markAsDismissed(1126).t["/4bQuG"]) };
   obj12 = { size };
   intl4 = markAsDismissed(1126).intl;
   items4[2] = closure_9(closure_16, obj11);

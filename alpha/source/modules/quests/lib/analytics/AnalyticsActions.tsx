@@ -241,7 +241,7 @@ let obj = function _getCommonClickEventProperties() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -267,7 +267,7 @@ let obj = function _getCommonClickEventProperties() {
             closure_6 = undefined;
             impression_id = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === impression_id) {
           if (arg0 === 1) {
@@ -387,7 +387,7 @@ obj = function _trackQuestContentClicked() {
       sourceQuestContent(obj6);
       await "IconComponent";
       ({ questId: c0, questContent: c1, questContentCTA: c2, questContentPosition: c3, questContentRowIndex: c4, impressionId: c5, clickId: c6, trackGuildAndChannelMetadata: c7, sourceQuestContent: c8 } = closure_0);
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -428,7 +428,7 @@ obj = function _trackAdContentClicked() {
       adCreativeType(obj5);
       await "IconComponent";
       ({ adContentId: c0, relatedQuestId: c1, adCreativeType: c2, questContent: c3, questContentCTA: c4, questContentPosition: c5, questContentRowIndex: c6, impressionId: c7, trackGuildAndChannelMetadata: c8, sourceQuestContent: c9 } = closure_0);
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;

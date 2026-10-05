@@ -1,9 +1,9 @@
-// Module ID: 15002
-// Function ID: 15003
+// Module ID: 15006
+// Function ID: 15007
 // Name: QuestDockBountySmokeLayer
-// Dependencies: [32, 19, 17, 4879, 5623, 21, 558, 15003, 1369, 15004, 15005, 576, 1484, 1618, 14891, 5974, 504, 15006, 7983, 15007, 14980, 15008, 2]
+// Dependencies: [32, 19, 17, 4879, 5623, 21, 558, 15007, 1369, 15008, 15009, 576, 1484, 1618, 14895, 5974, 504, 15010, 7983, 15011, 14984, 15012, 2]
 
-// Module 15002 (QuestDockBountySmokeLayer)
+// Module 15006 (QuestDockBountySmokeLayer)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -12,12 +12,12 @@ import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
 import QuestConstants from "QuestConstants" /* 5623 */;
 import FastImageDefault from "FastImage" /* 5974 */;
-import QuestDockUtils from "QuestDockUtils" /* 14891 */;
-import reactDefault from "react" /* 14980 */;
-import BountiesAndroidQuestBarSmokeAnimationExperiment from "BountiesAndroidQuestBarSmokeAnimationExperiment" /* 15003 */;
-import _modDef15004 from "module_15004" /* 15004 */;
-import _modDef15005 from "module_15005" /* 15005 */;
-import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 15006 */;
+import QuestDockUtils from "QuestDockUtils" /* 14895 */;
+import reactDefault from "react" /* 14984 */;
+import BountiesAndroidQuestBarSmokeAnimationExperiment from "BountiesAndroidQuestBarSmokeAnimationExperiment" /* 15007 */;
+import _modDef15008 from "module_15008" /* 15008 */;
+import _modDef15009 from "module_15009" /* 15009 */;
+import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 15010 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4879 */;
@@ -32,8 +32,8 @@ let c9;
 let metroImportAll;
 let obj3;
 let tmp9;
-const _modDef15007 = tmp9(15007);
-const _modDef15008 = tmp9(15008);
+const _modDef15011 = tmp9(15011);
+const _modDef15012 = tmp9(15012);
 let _slicedToArray = _slicedToArray_mod;
 const StyleSheet = react_native.StyleSheet;
 const QuestsExperimentLocations = QuestConstants.QuestsExperimentLocations;
@@ -48,11 +48,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (obj2.isAndroid()) {
     let tmp3;
     if (isBountiesAndroidQuestBarSmokeAnimationEnabled) {
-      tmp3 = _modDef15005;
+      tmp3 = _modDef15009;
     }
     return tmp3;
   }
-  tmp3 = _modDef15004;
+  tmp3 = _modDef15008;
 }) : (() => {
   const obj = BountiesAndroidQuestBarSmokeAnimationExperiment;
   const isBountiesAndroidQuestBarSmokeAnimationEnabled = obj.useIsBountiesAndroidQuestBarSmokeAnimationEnabled(QuestsExperimentLocations.QUESTS_BAR_MOBILE);
@@ -60,11 +60,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (obj2.isAndroid()) {
     let tmp3;
     if (isBountiesAndroidQuestBarSmokeAnimationEnabled) {
-      tmp3 = _modDef15005;
+      tmp3 = _modDef15009;
     }
     return tmp3;
   }
-  tmp3 = _modDef15004;
+  tmp3 = _modDef15008;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let obj2 = { video: StyleSheet.absoluteFillObject, hiddenVideo: obj3 };
@@ -118,7 +118,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { source: obj3, style: StyleSheet.absoluteFillObject, resizeMode: "cover", accessible: false, importantForAccessibility: "no-hide-descendants" };
-    obj3 = { uri: _modDef15004 };
+    obj3 = { uri: _modDef15008 };
     const tmp6 = FastImageDefault;
     const tmp8 = metroImportAll(tmp6, obj2);
     cResult[0] = tmp8;
@@ -130,7 +130,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   let obj2;
   const obj = { source: obj2, style: StyleSheet.absoluteFillObject, resizeMode: "cover", accessible: false, importantForAccessibility: "no-hide-descendants" };
-  obj2 = { uri: _modDef15004 };
+  obj2 = { uri: _modDef15008 };
   const tmp = FastImageDefault;
   return metroImportAll(tmp, obj);
 });
@@ -213,7 +213,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((paused) => {
       }
     }
     const obj2 = { style: tmp12 ? closure_13.video : closure_13.hiddenVideo, source: obj3, resizeMode: "cover", paused: undefined !== paused && paused || !tmp10, muted: true, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants", onReadyForDisplay: tmp18, onError: tmp19 };
-    obj3 = { uri: _modDef15007 };
+    obj3 = { uri: _modDef15011 };
     const VideoComponent = tmp(7983).VideoComponent;
     tmp21Result = tmp21(VideoComponent, obj2);
   }
@@ -258,7 +258,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((paused) => {
   const tmp16 = closure_9;
   if (!stateFromStores) {
     const obj3 = { style: tmp7 ? closure_13.video : closure_13.hiddenVideo, source: obj4, resizeMode: "cover", paused: flag, muted: true, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants", onReadyForDisplay: callback, onError: tmp14 };
-    obj4 = { uri: _modDef15007 };
+    obj4 = { uri: _modDef15011 };
     const VideoComponent = tmp(7983).VideoComponent;
     const tmp18 = closure_8;
     if (!flag) {
@@ -356,7 +356,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((paused) => {
   if (!stateFromStores) {
     tmp9Result = null;
     if (tmp16) {
-      tmp9Result = _modDef15008;
+      tmp9Result = _modDef15012;
     }
   }
   const tmp11Result = tmp11(react.useState(tmp9Result), 2);
@@ -556,7 +556,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((paused) => {
   if (!stateFromStores) {
     tmp4Result = null;
     if (tmp11) {
-      tmp4Result = tmp4(15008);
+      tmp4Result = tmp4(15012);
     }
   }
   const tmp6Result = tmp6(react.useState(tmp4Result), 2);
@@ -601,7 +601,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((paused) => {
   let tmp30 = !tmp8;
   if (tmp30) {
     const obj5 = { source: obj6, style: StyleSheet.absoluteFillObject, resizeMode: "cover", accessible: false, importantForAccessibility: "no-hide-descendants" };
-    obj6 = { uri: _modDef15005 };
+    obj6 = { uri: _modDef15009 };
     const tmp4Result2 = FastImageDefault;
     tmp30 = closure_8(tmp4Result2, obj5);
   }

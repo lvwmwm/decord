@@ -1,9 +1,9 @@
-// Module ID: 17134
-// Function ID: 17135
+// Module ID: 17158
+// Function ID: 17159
 // Name: useExternalPipParticipant
 // Dependencies: [32, 19, 4906, 502, 1999, 4913, 4911, 558, 576, 504, 2]
 
-// Module 17134 (useExternalPipParticipant)
+// Module 17158 (useExternalPipParticipant)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -141,7 +141,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
                     _setTimeout = setTimeout;
                     num = 3000;
                     closure_0 = setTimeout(() => {
-                      closure_1_3(() => { /* body not rendered: F153330 */ });
+                      closure_1_3(() => { /* body not rendered: F153637 */ });
                     }, 3000);
                     return () => {
                       clearTimeout(closure_0);
@@ -165,7 +165,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
                     _setTimeout = setTimeout;
                     num = 3000;
                     closure_0 = setTimeout(() => {
-                      closure_1_3(() => { /* body not rendered: F153330 */ });
+                      closure_1_3(() => { /* body not rendered: F153637 */ });
                     }, 3000);
                     return () => {
                       clearTimeout(closure_0);
@@ -319,7 +319,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
         return obj;
       }
     }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "application" };
+    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "unicodeVersion" };
   };
   cResult[1] = channelId;
   cResult[2] = focusedParticipantStreamId;
@@ -467,7 +467,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
         return obj;
       }
     }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "application" };
+    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "unicodeVersion" };
   }, items1);
   const items2 = [stateFromStoresObject.selectedParticipantSpeaking];
   const effect = react.useEffect(() => {
@@ -550,8 +550,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
       id2 = tmp6.id;
     }
     if (current !== id2) {
-      obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Reflect", focusedParticipantType: ref2.current };
-      const obj2 = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Reflect", focusedParticipantType: ref2.current };
+      obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Set", focusedParticipantType: ref2.current };
+      const obj2 = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Set", focusedParticipantType: ref2.current };
     } else {
       let type1;
       if (tmp6 != null) {
@@ -639,8 +639,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
       id2 = tmp6.id;
     }
     if (current !== id2) {
-      obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Reflect", focusedParticipantType: ref2.current };
-      const obj2 = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Reflect", focusedParticipantType: ref2.current };
+      obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Set", focusedParticipantType: ref2.current };
+      const obj2 = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Set", focusedParticipantType: ref2.current };
     } else {
       let type1;
       if (tmp6 != null) {

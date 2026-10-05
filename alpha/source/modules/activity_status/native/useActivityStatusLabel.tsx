@@ -1,9 +1,9 @@
-// Module ID: 13106
-// Function ID: 13107
+// Module ID: 13108
+// Function ID: 13109
 // Name: useActivityStatusLabel
 // Dependencies: [4912, 2051, 4509, 4930, 4519, 4909, 1085, 558, 576, 504, 10613, 10611, 10612, 10619, 1126, 10622, 10627, 2]
 
-// Module 13106 (useActivityStatusLabel)
+// Module 13108 (useActivityStatusLabel)
 import Constants from "Constants" /* 1085 */;
 import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10611 */;
 import useUserVoiceActivity from "useUserVoiceActivity" /* 10612 */;

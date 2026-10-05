@@ -1,15 +1,15 @@
-// Module ID: 15530
-// Function ID: 15531
+// Module ID: 15534
+// Function ID: 15535
 // Name: CheckpointBackground
-// Dependencies: [17, 5115, 1085, 21, 4890, 558, 576, 5605, 15531, 2]
+// Dependencies: [17, 5115, 1085, 21, 4890, 558, 576, 5605, 15535, 2]
 
-// Module 15530 (CheckpointBackground)
+// Module 15534 (CheckpointBackground)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import CheckpointConstants from "CheckpointConstants" /* 5115 */;
 import LinearGradientDefault from "LinearGradient" /* 5605 */;
-import _modDef15531 from "module_15531" /* 15531 */;
+import _modDef15535 from "module_15535" /* 15535 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -42,7 +42,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { uri: _modDef15531 };
+    const obj4 = { uri: _modDef15535 };
     cResult[2] = obj4;
     tmp10 = obj4;
   } else {
@@ -78,8 +78,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   items = [, ];
   const obj2 = { colors, start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.background };
   items[0] = metroRequire(LinearGradientDefault, obj2);
-  const obj3 = { source: { uri: _modDef15531 }, style: tmp.background, resizeMode: "cover" };
-  ({ uri: _modDef15531 });
+  const obj3 = { source: { uri: _modDef15535 }, style: tmp.background, resizeMode: "cover" };
+  ({ uri: _modDef15535 });
   items[1] = metroRequire(Image, obj3);
   return metroImportAll(metroImportDefault, obj);
 });

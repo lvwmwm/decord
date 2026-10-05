@@ -1,10 +1,10 @@
-// Module ID: 15380
-// Function ID: 15381
+// Module ID: 15384
+// Function ID: 15385
 // Name: CopyClientInfoSetting
 // Dependencies: [11082, 21, 1368, 4854, 11399, 6688, 4567, 558, 576, 6644, 1126, 6697, 6701, 4843, 4866, 11129, 5928, 2028, 2]
 // Exports: getClientInfoString
 
-// Module 15380 (CopyClientInfoSetting)
+// Module 15384 (CopyClientInfoSetting)
 import react from "react" /* 576 */;
 import UserSettings from "UserSettings" /* 2028 */;
 import ToastUtils from "ToastUtils" /* 4567 */;

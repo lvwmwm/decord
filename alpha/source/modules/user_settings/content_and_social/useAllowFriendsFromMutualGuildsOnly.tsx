@@ -1,9 +1,9 @@
-// Module ID: 15783
-// Function ID: 15784
+// Module ID: 15787
+// Function ID: 15788
 // Name: useAllowFriendsFromMutualGuildsOnly
 // Dependencies: [19, 558, 576, 2028, 6491, 2]
 
-// Module 15783 (useAllowFriendsFromMutualGuildsOnly)
+// Module 15787 (useAllowFriendsFromMutualGuildsOnly)
 import react2 from "react" /* 576 */;
 import UserSettings from "UserSettings" /* 2028 */;
 import react from "react" /* 19 */;

@@ -1,9 +1,9 @@
-// Module ID: 13381
-// Function ID: 13382
+// Module ID: 13383
+// Function ID: 13384
 // Name: useMarketablePowerupPerks
 // Dependencies: [19, 4767, 4768, 4771, 558, 576, 504, 12235, 4773, 2]
 
-// Module 13381 (useMarketablePowerupPerks)
+// Module 13383 (useMarketablePowerupPerks)
 import Powerups from "Powerups" /* 4771 */;
 import useGameServerPerkDefault from "useGameServerPerk" /* 12235 */;
 import react from "react" /* 19 */;

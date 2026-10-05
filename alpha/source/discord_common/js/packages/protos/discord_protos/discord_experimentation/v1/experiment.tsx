@@ -13,7 +13,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9;
+let internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8;
 
 let tmp;
 let tmp2;
@@ -529,7 +529,7 @@ class Experiment$Type extends MessageType {
     }
     if (id.expectedEndDate) {
       const Timestamp3 = timestamp.Timestamp;
-      internalBinaryWrite9 = Timestamp3.internalBinaryWrite;
+      const internalBinaryWrite9 = Timestamp3.internalBinaryWrite;
       const expectedEndDate = id.expectedEndDate;
       const tagResult31 = tag.tag(31, _mod1198.WireType.LengthDelimited);
       const internalBinaryWrite9Result = internalBinaryWrite9(expectedEndDate, tagResult31.fork(), writeUnknownFields);

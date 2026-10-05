@@ -1,13 +1,13 @@
-// Module ID: 17494
-// Function ID: 17495
+// Module ID: 17518
+// Function ID: 17519
 // Name: InteractionModalManager
-// Dependencies: [5, 5118, 7600, 1085, 1985, 17495, 1987, 1252, 559, 1242, 17506, 17509, 6613, 2]
+// Dependencies: [5, 5118, 7600, 1085, 1985, 17519, 1987, 1252, 559, 1242, 17530, 17533, 6613, 2]
 
-// Module 17494 (InteractionModalManager)
+// Module 17518 (InteractionModalManager)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 17506 */;
-import closeIFrameModalDefault from "closeIFrameModal" /* 17509 */;
+import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 17530 */;
+import closeIFrameModalDefault from "closeIFrameModal" /* 17533 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 5118 */;
 import InteractionStore from "InteractionStore" /* 7600 */;
@@ -78,7 +78,7 @@ let obj = function _handleInteractionModalCreate() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -121,7 +121,7 @@ let obj = function _handleInteractionModalCreate() {
               obj.addBreadcrumb(obj8);
             }
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp18) {
           c4 = 3;

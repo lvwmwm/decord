@@ -1,10 +1,10 @@
-// Module ID: 17826
-// Function ID: 17827
+// Module ID: 17850
+// Function ID: 17851
 // Name: ChannelSetupScreen
-// Dependencies: [19, 17, 9248, 2051, 4507, 4519, 1377, 7706, 1085, 21, 4580, 587, 17815, 504, 5043, 1126, 17816, 4854, 8949, 1987, 9247, 17813, 4886, 5593, 6074, 5993, 2]
+// Dependencies: [19, 17, 9248, 2051, 4507, 4519, 1377, 7706, 1085, 21, 4580, 587, 17839, 504, 5043, 1126, 17840, 4854, 8949, 1987, 9247, 17837, 4886, 5593, 6074, 5993, 2]
 // Exports: default
 
-// Module 17826 (ChannelSetupScreen)
+// Module 17850 (ChannelSetupScreen)
 import Constants from "Constants" /* 1085 */;
 import intl10 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 1987 */;

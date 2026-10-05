@@ -1,9 +1,9 @@
-// Module ID: 13902
-// Function ID: 13903
+// Module ID: 13904
+// Function ID: 13905
 // Name: CloseIcon
 // Dependencies: [109, 19, 21, 558, 576, 8136, 2]
 
-// Module 13902 (CloseIcon)
+// Module 13904 (CloseIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import inlineStyles from "inlineStyles" /* 8136 */;

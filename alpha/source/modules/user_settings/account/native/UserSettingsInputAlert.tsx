@@ -1,9 +1,9 @@
-// Module ID: 14579
-// Function ID: 14580
+// Module ID: 14583
+// Function ID: 14584
 // Name: UserSettingsInputAlert
 // Dependencies: [19, 21, 1282, 5593, 4886, 6098, 5783, 6537, 2]
 
-// Module 14579 (UserSettingsInputAlert)
+// Module 14583 (UserSettingsInputAlert)
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import Stack_Stack from "Stack/Stack" /* 5593 */;
 import AlertDefault from "Alert" /* 5783 */;
@@ -16,7 +16,7 @@ let closure_4;
 let tmp2;
 const KeyboardAwareViewDefault = tmp2(6537);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-const hasOwnProperty = { input: "", error: "unicodeVersion" };
+const hasOwnProperty = { input: "", error: "code" };
 const PureComponent = react.PureComponent;
 class UserSettingsInputAlert extends PureComponent {
   constructor() {

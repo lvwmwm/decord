@@ -1,9 +1,9 @@
-// Module ID: 14911
-// Function ID: 14912
+// Module ID: 14915
+// Function ID: 14916
 // Name: QuestDisclosureModal
-// Dependencies: [21, 558, 576, 14910, 6880, 4809, 1126, 6010, 14912, 6496, 2]
+// Dependencies: [21, 558, 576, 14914, 6880, 4809, 1126, 6010, 14916, 6496, 2]
 
-// Module 14911 (QuestDisclosureModal)
+// Module 14915 (QuestDisclosureModal)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
@@ -11,8 +11,8 @@ import AssetRegistryDefault from "AssetRegistry" /* 4809 */;
 import NavigatorHeader2 from "NavigatorHeader" /* 6010 */;
 import Navigator2 from "Navigator" /* 6496 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 6880 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 14910 */;
-import QuestDisclosureModalInnerDefault from "QuestDisclosureModalInner" /* 14912 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 14914 */;
+import QuestDisclosureModalInnerDefault from "QuestDisclosureModalInner" /* 14916 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

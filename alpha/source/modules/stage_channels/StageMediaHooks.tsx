@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f90311 = (type) => type.type === require("StageChannelParticipants").StageChannelParticipantTypes.STREAM;
+const f90454 = (type) => type.type === require("StageChannelParticipants").StageChannelParticipantTypes.STREAM;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let closure_0;
@@ -168,7 +168,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 function getStageHasStream(id) {
   const mutableParticipants = StageChannelParticipantStore.getMutableParticipants(id, StageChannelParticipants.StageChannelParticipantNamedIndex.SPEAKER);
-  return null != mutableParticipants.find(f90311);
+  return null != mutableParticipants.find(f90454);
 }
 const result = size.fileFinishedImporting("modules/stage_channels/StageMediaHooks.tsx");
 
@@ -176,7 +176,7 @@ export const useStageHasMedia = tmp2;
 export const useStageHasStream = tmp3;
 export const getStageHasMedia = function getStageHasMedia(id) {
   const mutableParticipants = StageChannelParticipantStore.getMutableParticipants(id, StageChannelParticipants.StageChannelParticipantNamedIndex.SPEAKER);
-  const hasVideoResult = null != mutableParticipants.find(f90311) || VoiceStateStore.hasVideo(id);
+  const hasVideoResult = null != mutableParticipants.find(f90454) || VoiceStateStore.hasVideo(id);
   return hasVideoResult;
 };
 export { getStageHasStream };

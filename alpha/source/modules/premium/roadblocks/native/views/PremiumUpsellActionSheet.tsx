@@ -1,7 +1,7 @@
 // Module ID: 7481
 // Function ID: 7482
 // Name: PremiumUpsellActionSheet
-// Dependencies: [19, 17, 4879, 1193, 4913, 4699, 1377, 1379, 1085, 4937, 7482, 7476, 21, 4890, 587, 558, 576, 4580, 4528, 7483, 7295, 7270, 7484, 7485, 7487, 7488, 1126, 7490, 7492, 7493, 4854, 7480, 7494, 7495, 13131, 13132, 11840, 11849, 13135, 1105, 1369, 8464, 5974, 5605, 504, 6657, 9644, 8818, 6956, 7731, 13136, 8826, 1252, 9645, 4745, 6701, 13138, 4886, 5594, 7722, 2]
+// Dependencies: [19, 17, 4879, 1193, 4913, 4699, 1377, 1379, 1085, 4937, 7482, 7476, 21, 4890, 587, 558, 576, 4580, 4528, 7483, 7295, 7270, 7484, 7485, 7487, 7488, 1126, 7490, 7492, 7493, 4854, 7480, 7494, 7495, 13133, 13134, 11840, 11849, 13137, 1105, 1369, 8464, 5974, 5605, 504, 6657, 9644, 8818, 6956, 7731, 13138, 8826, 1252, 9645, 4745, 6701, 13140, 4886, 5594, 7722, 2]
 
 // Module 7481 (PremiumUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -22,7 +22,7 @@ import AssetRegistryDefault2 from "AssetRegistry" /* 7493 */;
 import showForLaterModal2 from "showForLaterModal" /* 7494 */;
 import SavedMessagesTypes from "SavedMessagesTypes" /* 7495 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 11849 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13135 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13137 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import ThemeStore from "ThemeStore" /* 1193 */;
@@ -162,7 +162,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp23 = cResult[22];
             tmp24 = cResult[23];
           }
-          const tmp4Result = importDefault(tmp7 ? 13131 : 13132);
+          const tmp4Result = importDefault(tmp7 ? 13133 : 13134);
           if (cResult[46] === tmp8) {
             if (cResult[47] === tmp4Result) {
               if (cResult[48] === flag) {
@@ -673,7 +673,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj16 = { premiumMax: tmp11 };
     stringResult = formatToPlainString(tmp9 ? t["cpj9o/"] : t.Oxm3Sq, obj16);
   }
-  const obj17 = { title: stringResult, showBetaBadge: true, description: stringResult1, analyticsPage: constants3.PREMIUM_UPSELL_FOR_LATER, upsellType: constants.FOR_LATER_MODAL_UPSELL, image: importDefault(tmp9 ? 13131 : 13132) };
+  const obj17 = { title: stringResult, showBetaBadge: true, description: stringResult1, analyticsPage: constants3.PREMIUM_UPSELL_FOR_LATER, upsellType: constants.FOR_LATER_MODAL_UPSELL, image: importDefault(tmp9 ? 13133 : 13134) };
   if (null == forLaterLimit) {
     const intl17 = tmp(1126).intl;
     stringResult1 = intl17.string(tmp(1126).t["m/HzW8"]);

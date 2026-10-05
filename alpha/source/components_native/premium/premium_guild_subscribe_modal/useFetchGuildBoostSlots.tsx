@@ -1,9 +1,9 @@
-// Module ID: 13378
-// Function ID: 13379
+// Module ID: 13380
+// Function ID: 13381
 // Name: useFetchGuildBoostSlots
 // Dependencies: [5, 32, 19, 6908, 1986, 558, 576, 504, 1105, 6925, 7668, 2]
 
-// Module 13378 (useFetchGuildBoostSlots)
+// Module 13380 (useFetchGuildBoostSlots)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -93,7 +93,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -136,7 +136,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             } else {
               c1(false);
               c2 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp11) {
             c2 = 3;
@@ -194,7 +194,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               const obj4 = { value, done: true };
               return obj4;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -238,7 +238,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               } else {
                 c1(false);
                 c2 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp11) {
               c2 = 3;

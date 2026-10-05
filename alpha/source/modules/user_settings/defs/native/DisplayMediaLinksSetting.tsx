@@ -1,9 +1,9 @@
-// Module ID: 15278
-// Function ID: 15279
+// Module ID: 15282
+// Function ID: 15283
 // Name: DisplayMediaLinksSetting
 // Dependencies: [7634, 11129, 1126, 2028, 2]
 
-// Module 15278 (DisplayMediaLinksSetting)
+// Module 15282 (DisplayMediaLinksSetting)
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2028 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;

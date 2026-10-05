@@ -207,7 +207,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((defaultSelection) =>
                         }
                         return;
                       }
-                      tmp4 = onPurchase(() => { /* body not rendered: F140443 */ });
+                      tmp4 = onPurchase(() => { /* body not rendered: F140681 */ });
                       return;
                     }
                   }
@@ -274,7 +274,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((defaultSelection) =>
           items1 = [];
         }
         obj.claimableRewards = items1;
-        obj.onSelect = function onSelect() { /* body not rendered: F140442 */ };
+        obj.onSelect = function onSelect() { /* body not rendered: F140680 */ };
         navigateResult = navigate(REWARD_SELECT, obj);
       }
       return;

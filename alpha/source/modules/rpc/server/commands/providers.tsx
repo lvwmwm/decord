@@ -1,9 +1,9 @@
-// Module ID: 14329
-// Function ID: 14330
+// Module ID: 14331
+// Function ID: 14332
 // Name: providers
 // Dependencies: [5, 5440, 5316, 1085, 2011, 1096, 9029, 9031, 5442, 9026, 584, 1121, 8732, 6677, 2]
 
-// Module 14329 (providers)
+// Module 14331 (providers)
 import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9029 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5440 */;
@@ -101,7 +101,7 @@ obj2 = {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c5;
@@ -167,7 +167,7 @@ obj2 = {
                   if (self) {
                     const result = handleSocketDisconnected();
                     c7 = 3;
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   } else {
                     const obj7 = provider(connection_redirect[10]);
                     const subscription = obj7.subscribe("USER_CONNECTIONS_UPDATE", handleConnectionsUpdate);
@@ -215,7 +215,7 @@ obj2 = {
               }
             }
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp38) {
             closure_4 = tmp38;
             if (0 === c5) {
@@ -278,7 +278,7 @@ let closure_3 = _asyncToGenerator(async function(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: "IconComponent" };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -307,7 +307,7 @@ let closure_3 = _asyncToGenerator(async function(arg0, value) {
           access_token = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "Reflect", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === c3) {
         if (arg0 === 1) {

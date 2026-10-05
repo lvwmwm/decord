@@ -1,10 +1,10 @@
-// Module ID: 14474
-// Function ID: 14475
+// Module ID: 14478
+// Function ID: 14479
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [19, 17, 7831, 1377, 21, 4890, 587, 6657, 6681, 504, 14475, 9419, 7858, 14477, 5993, 5971, 10659, 4854, 14479, 1987, 14480, 2]
+// Dependencies: [19, 17, 7831, 1377, 21, 4890, 587, 6657, 6681, 504, 14479, 9419, 7858, 14481, 5993, 5971, 10659, 4854, 14483, 1987, 14484, 2]
 // Exports: default
 
-// Module 14474 (UserSettingsEditGuildProfile)
+// Module 14478 (UserSettingsEditGuildProfile)
 import nativeDefault from "native" /* 587 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7858 */;
 import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9419 */;

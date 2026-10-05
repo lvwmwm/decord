@@ -1,12 +1,12 @@
-// Module ID: 13153
-// Function ID: 13154
+// Module ID: 13155
+// Function ID: 13156
 // Name: acomRetry
-// Dependencies: [5, 502, 13148, 569, 1468, 2046, 2]
+// Dependencies: [5, 502, 13150, 569, 1468, 2046, 2]
 // Exports: retryACOMRequest
 
-// Module 13153 (acomRetry)
+// Module 13155 (acomRetry)
 import BackoffDefault from "Backoff" /* 569 */;
-import ErrorUtilsAll from "ErrorUtils" /* 13148 */;
+import ErrorUtilsAll from "ErrorUtils" /* 13150 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -56,7 +56,7 @@ let obj = function _retryACOMRequest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;

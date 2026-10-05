@@ -1,11 +1,11 @@
-// Module ID: 15748
-// Function ID: 15749
+// Module ID: 15752
+// Function ID: 15753
 // Name: CollectiblesShopViewAllCategoryItemsSetting
-// Dependencies: [1085, 11129, 14646, 15749, 2]
+// Dependencies: [1085, 11129, 14650, 15753, 2]
 
-// Module 15748 (CollectiblesShopViewAllCategoryItemsSetting)
+// Module 15752 (CollectiblesShopViewAllCategoryItemsSetting)
 import Constants from "Constants" /* 1085 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14646 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14650 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 

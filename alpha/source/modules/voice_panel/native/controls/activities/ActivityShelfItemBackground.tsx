@@ -1,9 +1,9 @@
-// Module ID: 17263
-// Function ID: 17264
+// Module ID: 17287
+// Function ID: 17288
 // Name: ActivityShelfItemBackground
 // Dependencies: [32, 19, 17, 21, 4890, 558, 576, 11709, 5976, 2]
 
-// Module 17263 (ActivityShelfItemBackground)
+// Module 17287 (ActivityShelfItemBackground)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

@@ -1,9 +1,9 @@
-// Module ID: 17340
-// Function ID: 17341
+// Module ID: 17364
+// Function ID: 17365
 // Name: useTransitionToConnectedActivityInVoice
 // Dependencies: [5, 19, 2051, 2103, 1085, 558, 576, 4498, 9014, 9015, 9049, 1121, 2]
 
-// Module 17340 (useTransitionToConnectedActivityInVoice)
+// Module 17364 (useTransitionToConnectedActivityInVoice)
 import Constants from "Constants" /* 1085 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -36,7 +36,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTransition) => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -70,7 +70,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTransition) => {
                   }
                 }
                 c4 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else if (arg0 === 1) {
               c4 = 3;
@@ -143,7 +143,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTransition) => {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -162,7 +162,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTransition) => {
                   guild_id = undefined;
                   c3 = 1;
                   c4 = 1;
-                  return { value: "Reflect", done: true };
+                  return { value: "Set", done: true };
                 }
               } else {
                 if (1 === c3) {
@@ -187,7 +187,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTransition) => {
                       }
                     }
                     c4 = 3;
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else if (arg0 === 1) {
                   c4 = 3;

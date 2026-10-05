@@ -1,9 +1,9 @@
-// Module ID: 16127
-// Function ID: 16128
+// Module ID: 16131
+// Function ID: 16132
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
-// Dependencies: [19, 17, 2058, 21, 4890, 587, 558, 576, 1188, 12461, 1126, 6644, 16019, 8895, 10694, 6701, 2]
+// Dependencies: [19, 17, 2058, 21, 4890, 587, 558, 576, 1188, 12461, 1126, 6644, 16023, 8895, 10694, 6701, 2]
 
-// Module 16127 (GuildRoleSubscriptionsChannelLongPressActionSheet)
+// Module 16131 (GuildRoleSubscriptionsChannelLongPressActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
@@ -14,7 +14,7 @@ import ActionSheet2 from "ActionSheet" /* 6701 */;
 import Form from "Form" /* 8895 */;
 import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10694 */;
 import AssetRegistryDefault from "AssetRegistry" /* 12461 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16019 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16023 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4890 */;
@@ -82,7 +82,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     tmp15 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj5 = { source: onClose(16019) };
+    const obj5 = { source: onClose(16023) };
     const Icon2 = tmp(1188).Icon;
     const tmp21 = closure_5(Icon2, obj5);
     cResult[6] = tmp21;

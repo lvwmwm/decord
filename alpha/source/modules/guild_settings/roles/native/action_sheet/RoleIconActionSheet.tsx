@@ -1,16 +1,16 @@
-// Module ID: 17772
-// Function ID: 17773
+// Module ID: 17796
+// Function ID: 17797
 // Name: RoleIconActionSheet
-// Dependencies: [5, 19, 17757, 1085, 1380, 21, 558, 576, 504, 4854, 7274, 1481, 17773, 4567, 1126, 17769, 9866, 6644, 4886, 5993, 6701, 6074, 2]
+// Dependencies: [5, 19, 17781, 1085, 1380, 21, 558, 576, 504, 4854, 7274, 1481, 17797, 4567, 1126, 17793, 9866, 6644, 4886, 5993, 6701, 6074, 2]
 
-// Module 17772 (RoleIconActionSheet)
+// Module 17796 (RoleIconActionSheet)
 import Constants from "Constants" /* 1085 */;
 import EmojiConstants from "EmojiConstants" /* 1380 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 17769 */;
+import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 17793 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 17757 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 17781 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -125,7 +125,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -188,7 +188,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               presentError(intl.string(_var(dependencyMap[14]).t.HFyKsa));
             }
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp30) {
           c4 = 3;
@@ -493,7 +493,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c6;
@@ -554,7 +554,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp29) {
           if (0 === c6) {
             c8 = 3;
@@ -596,7 +596,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -658,7 +658,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               presentError(intl.string(_var(closure_2[14]).t.HFyKsa));
             }
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp30) {
           c4 = 3;
@@ -736,7 +736,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c6;
@@ -797,7 +797,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               c6 = 0;
             }
             c8 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp29) {
             if (0 === c6) {
               c8 = 3;

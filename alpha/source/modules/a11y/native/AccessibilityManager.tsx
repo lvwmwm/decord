@@ -1,18 +1,18 @@
-// Module ID: 14198
-// Function ID: 14199
+// Module ID: 14200
+// Function ID: 14201
 // Name: AccessibilityManager
-// Dependencies: [5, 17, 4879, 1085, 1196, 14199, 584, 1252, 14276, 9774, 14200, 4726, 4729, 2]
+// Dependencies: [5, 17, 4879, 1085, 1196, 14201, 584, 1252, 14278, 9774, 14202, 4726, 4729, 2]
 
-// Module 14198 (AccessibilityManager)
+// Module 14200 (AccessibilityManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import ThemeConstants from "ThemeConstants" /* 1196 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import ThemeActionCreators from "ThemeActionCreators" /* 4726 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 9774 */;
-import AccessibilitySystemFeaturesDefault from "AccessibilitySystemFeatures" /* 14199 */;
-import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 14200 */;
-import react_native from "react-native" /* 14276 */;
+import AccessibilitySystemFeaturesDefault from "AccessibilitySystemFeatures" /* 14201 */;
+import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 14202 */;
+import react_native from "react-native" /* 14278 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native2 from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4879 */;
@@ -71,7 +71,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let obj = {
             closure_0 = value;
             const result = closure_129_0.updateScreenReaderEnabled(closure_0);
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp11) {
           c3 = 3;

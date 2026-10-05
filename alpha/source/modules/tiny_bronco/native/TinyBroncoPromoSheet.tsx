@@ -1,9 +1,9 @@
-// Module ID: 14526
-// Function ID: 14527
+// Module ID: 14530
+// Function ID: 14531
 // Name: TinyBroncoPromoSheet
-// Dependencies: [19, 17, 9421, 1085, 2048, 21, 4890, 587, 558, 576, 5102, 14527, 4854, 14525, 8084, 8086, 2115, 6885, 1126, 3077, 14528, 5594, 5592, 10045, 2]
+// Dependencies: [19, 17, 9421, 1085, 2048, 21, 4890, 587, 558, 576, 5102, 14531, 4854, 14529, 8084, 8086, 2115, 6885, 1126, 3077, 14532, 5594, 5592, 10045, 2]
 
-// Module 14526 (TinyBroncoPromoSheet)
+// Module 14530 (TinyBroncoPromoSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
@@ -14,7 +14,7 @@ import openUserSettings from "openUserSettings" /* 6885 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8084 */;
 import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8086 */;
 import TinyBroncoConstants from "TinyBroncoConstants" /* 9421 */;
-import openTinyBroncoPromoSheet from "openTinyBroncoPromoSheet" /* 14525 */;
+import openTinyBroncoPromoSheet from "openTinyBroncoPromoSheet" /* 14529 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
@@ -46,7 +46,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
   closure_11();
   let obj2 = dismissOnce(5102);
   const isVerifiedTeen = obj2.useIsVerifiedTeen();
-  let obj3 = dismissOnce(14527);
+  let obj3 = dismissOnce(14531);
   const tmp = dismissOnce;
   dismissOnce = obj3.useDismissOnce(markAsDismissed);
   if (cResult[0] !== dismissOnce) {
@@ -207,7 +207,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
   const tmp = closure_11();
   let obj = dismissOnce(5102);
   const isVerifiedTeen = obj.useIsVerifiedTeen();
-  let obj2 = dismissOnce(14527);
+  let obj2 = dismissOnce(14531);
   dismissOnce = obj2.useDismissOnce(markAsDismissed);
   const items = [dismissOnce];
   const items1 = [dismissOnce];
@@ -267,7 +267,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
     tmp15 = obj3;
   }
   const obj4 = { illustration: closure_9(Image, obj5), title: intl2.string(tmp14(3077).GdTVPF), description: formatResult, onDismiss: callback, actions: closure_10(ButtonGroup, obj8) };
-  obj5 = { source: tmp14(14528), style: tmp.illustration, resizeMode: "contain" };
+  obj5 = { source: tmp14(14532), style: tmp.illustration, resizeMode: "contain" };
   const PromoSheet = tmp2(10045).PromoSheet;
   intl2 = tmp2(1126).intl;
   const intl3 = tmp2(1126).intl;

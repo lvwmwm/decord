@@ -1,10 +1,10 @@
-// Module ID: 13044
-// Function ID: 13045
+// Module ID: 13046
+// Function ID: 13047
 // Name: createActivityMessageEmbed
 // Dependencies: [11551, 12743, 2]
 // Exports: createActivityMessageEmbed
 
-// Module 13044 (createActivityMessageEmbed)
+// Module 13046 (createActivityMessageEmbed)
 import createAppMessageEmbed from "createAppMessageEmbed" /* 11551 */;
 import size from "module_2" /* 2 */;
 

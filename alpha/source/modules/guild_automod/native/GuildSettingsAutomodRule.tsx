@@ -1,20 +1,20 @@
-// Module ID: 17669
-// Function ID: 17670
+// Module ID: 17693
+// Function ID: 17694
 // Name: GuildSettingsAutomodRule
-// Dependencies: [5, 32, 19, 17651, 17653, 11474, 21, 4890, 587, 558, 576, 1490, 16988, 2028, 17654, 5713, 1126, 6010, 6880, 11479, 4567, 5312, 6688, 4886, 6098, 6698, 17670, 17681, 17684, 6074, 5993, 5593, 8895, 6536, 2]
+// Dependencies: [5, 32, 19, 17675, 17677, 11474, 21, 4890, 587, 558, 576, 1490, 17012, 2028, 17678, 5713, 1126, 6010, 6880, 11479, 4567, 5312, 6688, 4886, 6098, 6698, 17694, 17705, 17708, 6074, 5993, 5593, 8895, 6536, 2]
 
-// Module 17669 (GuildSettingsAutomodRule)
+// Module 17693 (GuildSettingsAutomodRule)
 import nativeDefault from "native" /* 587 */;
 import ToastUtils from "ToastUtils" /* 4567 */;
 import NavigatorHeader2 from "NavigatorHeader" /* 6010 */;
 import ClipboardUtils from "ClipboardUtils" /* 6688 */;
 import Constants from "Constants" /* 11474 */;
-import AutomodStore from "AutomodStore" /* 17651 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 17654 */;
+import AutomodStore from "AutomodStore" /* 17675 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 17678 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 17653 */;
+import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 17677 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -189,7 +189,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -227,7 +227,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp19) {
         c3 = 3;
@@ -326,7 +326,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -364,7 +364,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp19) {
         c3 = 3;
@@ -583,7 +583,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                             const obj2 = { value, done: true };
                             return obj2;
                           } else {
-                            return { value: "IconComponent", done: "IconComponent" };
+                            return { value: "IconComponent", done: null };
                           }
                         } else {
                           let c4;
@@ -637,7 +637,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                               c4(closure_130_1, closure_0);
                               closure_1.pop();
                               c6 = 3;
-                              return { value: "IconComponent", done: "IconComponent" };
+                              return { value: "IconComponent", done: null };
                             }
                           } catch (tmp37) {
                             closure_3 = tmp37;

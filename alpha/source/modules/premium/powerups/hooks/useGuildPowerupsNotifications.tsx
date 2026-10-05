@@ -238,7 +238,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, unlock
       }
       const _Symbol2 = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj4 = { indicator: "Reflect", showUnread: true };
+        const obj4 = { indicator: "Set", showUnread: true };
         cResult[7] = obj4;
         tmp28 = obj4;
       } else {
@@ -259,7 +259,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, unlock
   } else {
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj7 = { indicator: "Reflect", showUnread: true };
+      const obj7 = { indicator: "Set", showUnread: true };
       cResult[3] = obj7;
       tmp13 = obj7;
     } else {
@@ -313,7 +313,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, unlock
     let obj2;
     let obj5;
     if (null == closure_1) {
-      return { indicator: "Reflect", showUnread: true };
+      return { indicator: "Set", showUnread: true };
     } else {
       const unlockedPowerups = tmp2.unlockedPowerups;
       const _Object = Object;
@@ -368,7 +368,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, unlock
               obj2 = { type: GuildPowerupsNotification.GuildPowerupNotificationIndicatorType.UNREAD, count: diff };
             }
           }
-          obj3 = { indicator: "Reflect", showUnread: true };
+          obj3 = { indicator: "Set", showUnread: true };
         }
         return obj3;
       }

@@ -43,7 +43,7 @@ let obj = function _onAddDirectoryGuildEntry() {
     obj.openLazy(obj8);
     await "IconComponent";
     ({ directoryChannelId: c0, directoryGuildName: c1, guild: c2, description: c3, category: c4, onClose: c5 } = closure_0);
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };

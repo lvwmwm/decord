@@ -1,9 +1,9 @@
-// Module ID: 15304
-// Function ID: 15305
+// Module ID: 15308
+// Function ID: 15309
 // Name: NotificationPermissionSettingsHeader
 // Dependencies: [19, 17, 1085, 12053, 21, 4890, 587, 558, 576, 12054, 1252, 9813, 4886, 1126, 5594, 5995, 2]
 
-// Module 15304 (NotificationPermissionSettingsHeader)
+// Module 15308 (NotificationPermissionSettingsHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;

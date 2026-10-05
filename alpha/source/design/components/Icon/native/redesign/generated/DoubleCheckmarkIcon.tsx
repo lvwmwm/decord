@@ -1,14 +1,14 @@
-// Module ID: 15443
-// Function ID: 15444
+// Module ID: 15447
+// Function ID: 15448
 // Name: DoubleCheckmarkIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 15444, 4579, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 15448, 4579, 2]
 
-// Module 15443 (DoubleCheckmarkIcon)
+// Module 15447 (DoubleCheckmarkIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4579 */;
-import AssetRegistry from "AssetRegistry" /* 15444 */;
+import AssetRegistry from "AssetRegistry" /* 15448 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,15 +1,15 @@
-// Module ID: 16772
-// Function ID: 16773
+// Module ID: 16791
+// Function ID: 16792
 // Name: SearchScreenSearchBar
-// Dependencies: [19, 17, 21, 4890, 558, 576, 4585, 6110, 1881, 16773, 16775, 16780, 2]
+// Dependencies: [19, 17, 21, 4890, 558, 576, 4585, 6110, 1881, 16792, 16794, 16799, 2]
 
-// Module 16772 (SearchScreenSearchBar)
+// Module 16791 (SearchScreenSearchBar)
 import react_native from "react-native" /* 17 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1881 */;
 import mergeProps from "mergeProps" /* 4585 */;
 import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6110 */;
-import SearchBarDefault from "SearchBar" /* 16773 */;
-import SearchFilterSuggestionsDefault from "SearchFilterSuggestions" /* 16775 */;
+import SearchBarDefault from "SearchBar" /* 16792 */;
+import SearchFilterSuggestionsDefault from "SearchFilterSuggestions" /* 16794 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4890 */;
@@ -21,7 +21,7 @@ let dependencyMap, importDefault, tmp2;
 let hasOwnProperty;
 let metroRequire;
 let tmp8;
-const SearchFilterButtonDefault = tmp8(16780);
+const SearchFilterButtonDefault = tmp8(16799);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ header: { flexDirection: "row", alignItems: "center", paddingLeft: 16, zIndex: 10 }, headerWithBackButton: { paddingLeft: 0 }, headerSearch: { flex: 1, flexGrow: 1 }, headerControlsRight: { paddingRight: 16, paddingLeft: 12 }, suggestionsAnchor: { height: 0 }, suggestions: { position: "absolute", left: 0, right: -50, top: 8 }, suggestionsWithBackButton: { left: -28 } });
@@ -81,7 +81,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
         if (current) {
           tmp2 = globalThis;
           _requestAnimationFrame = requestAnimationFrame;
-          animationFrame = requestAnimationFrame(() => { /* body not rendered: F146299 */ });
+          animationFrame = requestAnimationFrame(() => { /* body not rendered: F146574 */ });
         }
         return;
       }
@@ -98,7 +98,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
         if (current) {
           tmp2 = globalThis;
           _requestAnimationFrame = requestAnimationFrame;
-          animationFrame = requestAnimationFrame(() => { /* body not rendered: F146299 */ });
+          animationFrame = requestAnimationFrame(() => { /* body not rendered: F146574 */ });
         }
         return;
       }
@@ -115,7 +115,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
         if (current) {
           tmp2 = globalThis;
           _requestAnimationFrame = requestAnimationFrame;
-          animationFrame = requestAnimationFrame(() => { /* body not rendered: F146299 */ });
+          animationFrame = requestAnimationFrame(() => { /* body not rendered: F146574 */ });
         }
         return;
       }
@@ -131,7 +131,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
           if (current) {
             tmp2 = globalThis;
             _requestAnimationFrame = requestAnimationFrame;
-            animationFrame = requestAnimationFrame(() => { /* body not rendered: F146299 */ });
+            animationFrame = requestAnimationFrame(() => { /* body not rendered: F146574 */ });
           }
           return;
         }
@@ -147,7 +147,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
             if (current) {
               tmp2 = globalThis;
               _requestAnimationFrame = requestAnimationFrame;
-              animationFrame = requestAnimationFrame(() => { /* body not rendered: F146299 */ });
+              animationFrame = requestAnimationFrame(() => { /* body not rendered: F146574 */ });
             }
             return;
           }
@@ -163,7 +163,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
               if (current) {
                 tmp2 = globalThis;
                 _requestAnimationFrame = requestAnimationFrame;
-                animationFrame = requestAnimationFrame(() => { /* body not rendered: F146299 */ });
+                animationFrame = requestAnimationFrame(() => { /* body not rendered: F146574 */ });
               }
               return;
             }
@@ -179,7 +179,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
                 if (current) {
                   tmp2 = globalThis;
                   _requestAnimationFrame = requestAnimationFrame;
-                  animationFrame = requestAnimationFrame(() => { /* body not rendered: F146299 */ });
+                  animationFrame = requestAnimationFrame(() => { /* body not rendered: F146574 */ });
                 }
                 return;
               }
@@ -195,7 +195,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
                   if (current) {
                     tmp2 = globalThis;
                     _requestAnimationFrame = requestAnimationFrame;
-                    animationFrame = requestAnimationFrame(() => { /* body not rendered: F146299 */ });
+                    animationFrame = requestAnimationFrame(() => { /* body not rendered: F146574 */ });
                   }
                   return;
                 }

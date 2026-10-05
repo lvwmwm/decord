@@ -220,7 +220,7 @@ let obj = function _createThread_() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -643,7 +643,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => 
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -742,7 +742,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => 
             obj = parentMessageId(threadSettings[22]);
             obj.clearAll(user.id, closure_2_9.FirstThreadMessage);
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp42) {
           c7 = 3;
@@ -792,7 +792,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => 
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -891,7 +891,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => 
             obj = parentMessageId(threadSettings[22]);
             obj.clearAll(user.id, closure_2_9.FirstThreadMessage);
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp42) {
           c7 = 3;
@@ -959,7 +959,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp91;
@@ -1203,7 +1203,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp91;

@@ -1,9 +1,9 @@
-// Module ID: 16790
-// Function ID: 16791
+// Module ID: 16809
+// Function ID: 16810
 // Name: SearchTabsPage
-// Dependencies: [32, 19, 17, 2051, 7513, 1085, 21, 4890, 558, 576, 504, 6832, 5100, 12316, 12318, 16791, 16850, 16852, 16858, 16859, 16867, 16869, 16870, 16876, 16878, 38, 7941, 2]
+// Dependencies: [32, 19, 17, 2051, 7513, 1085, 21, 4890, 558, 576, 504, 6832, 5100, 12316, 12318, 16810, 16869, 16871, 16877, 16878, 16886, 16888, 16889, 16895, 16897, 38, 7941, 2]
 
-// Module 16790 (SearchTabsPage)
+// Module 16809 (SearchTabsPage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
@@ -13,15 +13,15 @@ import SearchConstants from "SearchConstants" /* 7513 */;
 import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 7941 */;
 import GuildNSFWDefault from "GuildNSFW" /* 12316 */;
 import ChannelSpoilerDefault from "ChannelSpoiler" /* 12318 */;
-import RecentScreenDefault from "RecentScreen" /* 16791 */;
-import PeopleScreenDefault from "PeopleScreen" /* 16850 */;
-import MembersScreenDefault from "MembersScreen" /* 16852 */;
-import ChannelsScreenDefault from "ChannelsScreen" /* 16858 */;
-import MediaScreenDefault from "MediaScreen" /* 16859 */;
-import FilesScreenDefault from "FilesScreen" /* 16867 */;
-import LinksScreenDefault from "LinksScreen" /* 16869 */;
-import MessagesScreenDefault from "MessagesScreen" /* 16876 */;
-import messages_PinsScreenDefault from "messages/PinsScreen" /* 16878 */;
+import RecentScreenDefault from "RecentScreen" /* 16810 */;
+import PeopleScreenDefault from "PeopleScreen" /* 16869 */;
+import MembersScreenDefault from "MembersScreen" /* 16871 */;
+import ChannelsScreenDefault from "ChannelsScreen" /* 16877 */;
+import MediaScreenDefault from "MediaScreen" /* 16878 */;
+import FilesScreenDefault from "FilesScreen" /* 16886 */;
+import LinksScreenDefault from "LinksScreen" /* 16888 */;
+import MessagesScreenDefault from "MessagesScreen" /* 16895 */;
+import messages_PinsScreenDefault from "messages/PinsScreen" /* 16897 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
@@ -231,7 +231,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       } else if (SearchTabs.THREADS === tab) {
         let tmp28;
         if (cResult[37] !== searchContext) {
-          const tmp30 = jsx(searchContext(16870).SearchTabsThreadScreen, { searchContext });
+          const tmp30 = jsx(searchContext(16889).SearchTabsThreadScreen, { searchContext });
           cResult[37] = searchContext;
           cResult[38] = tmp30;
           tmp28 = tmp30;
@@ -349,7 +349,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else if (SearchTabs.LINKS === tab) {
       return jsx(LinksScreenDefault, { tab, searchContext, isFocused, width });
     } else if (SearchTabs.THREADS === tab) {
-      return jsx(tmp4(16870).SearchTabsThreadScreen, { searchContext });
+      return jsx(tmp4(16889).SearchTabsThreadScreen, { searchContext });
     } else if (SearchTabs.MESSAGES === tab) {
       return jsx(MessagesScreenDefault, { tab, searchContext, isFocused });
     } else if (SearchTabs.PINS === tab) {

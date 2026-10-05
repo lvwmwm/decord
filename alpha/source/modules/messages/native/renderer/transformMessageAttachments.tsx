@@ -1,10 +1,10 @@
-// Module ID: 13017
-// Function ID: 13018
+// Module ID: 13019
+// Function ID: 13020
 // Name: transformMessageAttachments
 // Dependencies: [7592, 1085, 1390, 9993, 5040, 7791, 1369, 7790, 1126, 11323, 7810, 7940, 7271, 7808, 2]
 // Exports: default
 
-// Module 13017 (transformMessageAttachments)
+// Module 13019 (transformMessageAttachments)
 import Constants from "Constants" /* 1085 */;
 import intl8 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;

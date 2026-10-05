@@ -64,7 +64,7 @@ class JoinRequestRejectionReasonActionSheet {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -134,7 +134,7 @@ class JoinRequestRejectionReasonActionSheet {
             c3 = 0;
             closure_129_5(false);
             _undefined = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp43) {
           guildId = tmp43;

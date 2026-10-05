@@ -48,7 +48,7 @@ function getScreens(isDsaEligible, isSpam, isCoppa, isDeveloperClassification) {
   const obj2 = {
     headerLeft: obj3.getHeaderCloseButton(AppealIngestionModalActionCreatorsDefault.close),
     headerTitle() {
-      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "application" });
+      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "applicationId" });
     },
     render() {
       const obj = { isDsaEligible, isSpam, isCoppa, isDeveloperClassification };
@@ -63,7 +63,7 @@ function getScreens(isDsaEligible, isSpam, isCoppa, isDeveloperClassification) {
   const obj4 = {
     headerLeft: obj5.getHeaderBackButton(),
     headerTitle() {
-      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "application" });
+      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "applicationId" });
     },
     render() {
       const obj = { isDsaEligible };
@@ -78,7 +78,7 @@ function getScreens(isDsaEligible, isSpam, isCoppa, isDeveloperClassification) {
   const obj6 = {
     headerLeft: obj7.getHeaderBackButton(),
     headerTitle() {
-      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "application" });
+      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "applicationId" });
     },
     render() {
       const obj = { isDsaEligible };
@@ -93,7 +93,7 @@ function getScreens(isDsaEligible, isSpam, isCoppa, isDeveloperClassification) {
   const obj8 = {
     headerLeft: obj9.getHeaderCloseButton(AppealIngestionModalActionCreatorsDefault.close),
     headerTitle() {
-      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "application" });
+      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "applicationId" });
     },
     render() {
       return closure_1_12(isSpam(isDeveloperClassification[28]), {});
@@ -107,7 +107,7 @@ function getScreens(isDsaEligible, isSpam, isCoppa, isDeveloperClassification) {
   const obj10 = {
     headerLeft: obj11.getHeaderCloseButton(AppealIngestionModalActionCreatorsDefault.close),
     headerTitle() {
-      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "application" });
+      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "applicationId" });
     },
     render() {
       return closure_1_12(isSpam(isDeveloperClassification[29]), {});
@@ -121,7 +121,7 @@ function getScreens(isDsaEligible, isSpam, isCoppa, isDeveloperClassification) {
   const obj12 = {
     headerLeft: obj13.getHeaderCloseButton(AppealIngestionModalActionCreatorsDefault.close),
     headerTitle() {
-      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "application" });
+      return closure_1_12(isDsaEligible(isDeveloperClassification[12]).Text, { variant: "text-md/normal", children: "applicationId" });
     },
     render() {
       return closure_1_12(isSpam(isDeveloperClassification[30]), {});
@@ -417,7 +417,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -469,7 +469,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp25) {
           closure_2 = tmp25;
           if (0 === c3) {
@@ -617,7 +617,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -668,7 +668,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           navigation = 0;
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp25) {
         if (0 === navigation) {
           c5 = 3;

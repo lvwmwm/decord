@@ -1088,7 +1088,7 @@ let closure_23 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
   let obj9;
   let tmp5;
   let tmp6;
-  const f99201 = () => {
+  const f99347 = () => {
     const items = [ChannelCallLifecycleStore.consumedRequestToRespondToSeriousThermalState(), ChannelCallLifecycleStore.isReactingToThermalState()];
     return items;
   };
@@ -1098,8 +1098,8 @@ let closure_23 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
   let items = [ChannelCallLifecycleStore];
   const obj = get_initialized;
   const obj2 = { channelId: channel.id, selfParticipant };
-  [tmp5, tmp6] = obj.useStateFromStoresArray(items, f99201);
-  _slicedToArray(obj.useStateFromStoresArray(items, f99201), 2);
+  [tmp5, tmp6] = obj.useStateFromStoresArray(items, f99347);
+  _slicedToArray(obj.useStateFromStoresArray(items, f99347), 2);
   const tmp7 = closure_22(obj2);
   let avatarURL;
   const obj3 = useToken2;

@@ -1,7 +1,7 @@
 // Module ID: 502
 // Function ID: 503
 // Name: AuthenticationStore
-// Dependencies: [503, 1084, 1085, 1110, 3, 1111, 510, 1112, 1252, 13952, 584, 13953, 6436, 5313, 1265, 13954, 1242, 12058, 504, 11141, 13955, 7152, 1985, 2]
+// Dependencies: [503, 1084, 1085, 1110, 3, 1111, 510, 1112, 1252, 13954, 584, 13955, 6436, 5313, 1265, 13956, 1242, 12058, 504, 11141, 13957, 7152, 1985, 2]
 
 // Module 502 (AuthenticationStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -19,10 +19,10 @@ import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIE
 import AuthenticationUtils from "AuthenticationUtils" /* 7152 */;
 import ApexActionCreators from "ApexActionCreators" /* 11141 */;
 import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 12058 */;
-import fetchExperiments2 from "fetchExperiments" /* 13952 */;
-import awaitExperiments from "awaitExperiments" /* 13953 */;
-import TrackingConsentUtilsDefault from "TrackingConsentUtils" /* 13954 */;
-import react_native from "react-native" /* 13955 */;
+import fetchExperiments2 from "fetchExperiments" /* 13954 */;
+import awaitExperiments from "awaitExperiments" /* 13955 */;
+import TrackingConsentUtilsDefault from "TrackingConsentUtils" /* 13956 */;
+import react_native from "react-native" /* 13957 */;
 import BrowserHandoffStore from "BrowserHandoffStore" /* 503 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1084 */;
 import Constants from "Constants" /* 1085 */;
@@ -39,7 +39,7 @@ let c10;
 let closure_12;
 let metroImportAll;
 let unpackModuleId;
-const f81279 = (body) => {
+const f81422 = (body) => {
   let assignments;
   let guild_experiments;
   body = body.body;
@@ -65,12 +65,12 @@ const f81279 = (body) => {
   const obj6 = awaitExperiments;
   obj6.onExperimentsLoaded();
 };
-const f81280 = () => {
+const f81423 = () => {
   c33 = null;
   const obj = Dispatcher;
   obj.dispatch({ type: "EXPERIMENTS_FETCH_FAILURE" });
 };
-const f81281 = () => {
+const f81424 = () => {
   const obj = router_utils;
   obj.transitionTo(constants.REGISTER);
 };
@@ -133,7 +133,7 @@ function fetchFingerprint(arg0) {
           fetchExperiments2;
           tmpResult4 = router_utils;
           const experiments = fetchExperiments(obj3);
-          nextPromise = experiments.then(f81279, f81280);
+          nextPromise = experiments.then(f81422, f81423);
           closure_33 = nextPromise;
         }
         return nextPromise;
@@ -467,7 +467,7 @@ let obj = {
         c26 = true;
         handleLogout();
         const obj4 = Dispatcher;
-        obj4.wait(f81281);
+        obj4.wait(f81424);
       } else {
         const obj3 = { user_id: Storage2.get(user_id_cache) };
         const track = AnalyticsUtilsDefault.track;
@@ -775,7 +775,7 @@ let obj = {
     const fetchExperiments = tmp5.fetchExperiments;
     obj5 = router_utils;
     const experiments = fetchExperiments(obj3);
-    closure_33 = experiments.then(f81279, f81280);
+    closure_33 = experiments.then(f81422, f81423);
   },
   CURRENT_USER_UPDATE: function handleUserUpdate(user) {
     user = user.user;
@@ -790,7 +790,7 @@ let obj = {
     c26 = true;
     handleLogout();
     const obj = Dispatcher;
-    obj.wait(f81281);
+    obj.wait(f81424);
   },
   CLOSE_SUSPENDED_USER: function handleSuspendedUserClosed() {
     c34 = null;

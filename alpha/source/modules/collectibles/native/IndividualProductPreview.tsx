@@ -1,9 +1,9 @@
-// Module ID: 12969
-// Function ID: 12970
+// Module ID: 12971
+// Function ID: 12972
 // Name: IndividualProductPreview
-// Dependencies: [19, 17, 1087, 21, 4890, 587, 558, 576, 5605, 7849, 10824, 10998, 12970, 12971, 1980, 1088, 12972, 12975, 2]
+// Dependencies: [19, 17, 1087, 21, 4890, 587, 558, 576, 5605, 7849, 10824, 10998, 12972, 12973, 1980, 1088, 12974, 12977, 2]
 
-// Module 12969 (IndividualProductPreview)
+// Module 12971 (IndividualProductPreview)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
@@ -11,10 +11,10 @@ import LinearGradientDefault from "LinearGradient" /* 5605 */;
 import useCurrentUser from "useCurrentUser" /* 7849 */;
 import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10824 */;
 import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10998 */;
-import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 12970 */;
-import NameplateProductPreviewDefault from "NameplateProductPreview" /* 12971 */;
-import FractionalNitroPreview from "FractionalNitroPreview" /* 12972 */;
-import OrbBadgePreview from "OrbBadgePreview" /* 12975 */;
+import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 12972 */;
+import NameplateProductPreviewDefault from "NameplateProductPreview" /* 12973 */;
+import FractionalNitroPreview from "FractionalNitroPreview" /* 12974 */;
+import OrbBadgePreview from "OrbBadgePreview" /* 12977 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
@@ -326,7 +326,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTrackPress) 
     }
     if (cResult[3] !== product) {
       const obj2 = { product };
-      const tmp8 = closure_7(onTrackPress(12970), obj2);
+      const tmp8 = closure_7(onTrackPress(12972), obj2);
       cResult[3] = product;
       cResult[4] = tmp8;
       tmp5 = tmp8;
@@ -576,11 +576,11 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp5;
     const ALL = tmp(1088).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      tmp5 = metroImportDefault(tmp(12972).FractionalNitroPreview, {});
+      tmp5 = metroImportDefault(tmp(12974).FractionalNitroPreview, {});
     } else {
       tmp5 = null;
       if (product.skuId === hasOwnProperty.ORB_PROFILE_BADGE) {
-        tmp5 = metroImportDefault(tmp(12975).OrbBadgePreview, {});
+        tmp5 = metroImportDefault(tmp(12977).OrbBadgePreview, {});
       }
     }
     return tmp5;

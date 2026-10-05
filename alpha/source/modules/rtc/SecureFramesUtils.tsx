@@ -82,7 +82,7 @@ obj = function _isPublicKeyMatch() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -158,7 +158,7 @@ obj = function _uploadCurrentUserPublicKey() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -221,7 +221,7 @@ obj = function _uploadCurrentUserPublicKey() {
             const result = obj.addUploadedKeyVersion(key_version);
             c4 = 0;
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp22) {
           closure_3 = tmp22;
@@ -254,7 +254,7 @@ obj = function _ensureCurrentUserPublicKey() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -285,7 +285,7 @@ obj = function _ensureCurrentUserPublicKey() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp7) {
         c1 = 3;
         throw tmp7;
@@ -309,7 +309,7 @@ obj = function _isCurrentUserPublicKeyMatch() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

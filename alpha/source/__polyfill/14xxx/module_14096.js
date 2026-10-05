@@ -1,7 +1,20 @@
 // Module ID: 14096
 // Function ID: 14097
-// Dependencies: []
+// Dependencies: [14064, 14065, 14097]
 
 // Module 14096
+import _mod14065 from "module_14065" /* 14065 */;
+import _mod14097 from "module_14097" /* 14097 */;
+import getOwnPropertyDescriptor from "module_14064" /* 14064 */;
 
-export default (arg0, value) => ({ enumerable: !(1 & arg0), configurable: !(2 & arg0), writable: !(4 & arg0), value });
+const f66145 = () => {
+  const obj = {
+    get() {
+      return 7;
+    }
+  };
+  return 7 !== Object.defineProperty(_mod14097("div"), "a", obj).a;
+};
+!getOwnPropertyDescriptor && !_mod14065(f66145);
+
+export default !getOwnPropertyDescriptor && !_mod14065(f66145);

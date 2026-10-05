@@ -1,13 +1,13 @@
-// Module ID: 15226
-// Function ID: 15227
+// Module ID: 15230
+// Function ID: 15231
 // Name: YouBarAvatarDecoAccessibilitySetting
-// Dependencies: [4879, 7634, 11129, 1126, 504, 14275, 2]
+// Dependencies: [4879, 7634, 11129, 1126, 504, 14277, 2]
 
-// Module 15226 (YouBarAvatarDecoAccessibilitySetting)
+// Module 15230 (YouBarAvatarDecoAccessibilitySetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14275 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14277 */;
 import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;

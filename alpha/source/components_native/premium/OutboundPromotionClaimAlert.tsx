@@ -1,13 +1,13 @@
-// Module ID: 13364
-// Function ID: 13365
+// Module ID: 13366
+// Function ID: 13367
 // Name: OutboundPromotionClaimAlert
-// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 13365, 6657, 6681, 13226, 13366, 4886, 1126, 5594, 6688, 13367, 4565, 5783, 2]
+// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 13367, 6657, 6681, 13228, 13368, 4886, 1126, 5594, 6688, 13369, 4565, 5783, 2]
 
-// Module 13364 (OutboundPromotionClaimAlert)
+// Module 13366 (OutboundPromotionClaimAlert)
 import nativeDefault from "native" /* 587 */;
 import LinkingDefault from "Linking" /* 4565 */;
 import ClipboardUtils from "ClipboardUtils" /* 6688 */;
-import PromotionUtils from "PromotionUtils" /* 13226 */;
+import PromotionUtils from "PromotionUtils" /* 13228 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

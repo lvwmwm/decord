@@ -1,9 +1,9 @@
-// Module ID: 16172
-// Function ID: 16173
+// Module ID: 16176
+// Function ID: 16177
 // Name: CreatorMonetizationOnboardingV2UpsellActionSheet
-// Dependencies: [19, 17, 1085, 2048, 21, 4890, 558, 576, 9247, 1126, 4886, 5974, 16173, 5594, 6645, 2]
+// Dependencies: [19, 17, 1085, 2048, 21, 4890, 558, 576, 9247, 1126, 4886, 5974, 16177, 5594, 6645, 2]
 
-// Module 16172 (CreatorMonetizationOnboardingV2UpsellActionSheet)
+// Module 16176 (CreatorMonetizationOnboardingV2UpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
@@ -13,7 +13,7 @@ import components_Button_Button from "components/Button/Button" /* 5594 */;
 import FastImageDefault from "FastImage" /* 5974 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16173 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16177 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4890 */;
@@ -138,7 +138,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           return markAsDismissed(ContentDismissActionType.UNKNOWN);
         }
       }
-      const obj6 = { style: tmp4.image, resizeMode: "contain", source: markAsDismissed(16173) };
+      const obj6 = { style: tmp4.image, resizeMode: "contain", source: markAsDismissed(16177) };
       const tmp18 = markAsDismissed(5974);
       cResult[11] = tmp4.image;
       cResult[12] = closure_6(tmp18, obj6);

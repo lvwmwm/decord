@@ -1,9 +1,9 @@
-// Module ID: 14860
-// Function ID: 14861
+// Module ID: 14864
+// Function ID: 14865
 // Name: BountiesModalContent
-// Dependencies: [5, 32, 19, 17, 7186, 5623, 14811, 1085, 1096, 21, 558, 576, 1484, 1618, 4890, 587, 1369, 11009, 4857, 504, 8508, 14820, 10949, 14825, 9998, 14827, 14823, 7202, 5630, 7212, 5628, 10940, 14807, 10958, 14861, 14835, 14858, 14834, 6619, 4612, 4891, 4894, 10919, 1121, 14857, 14821, 7183, 4589, 2]
+// Dependencies: [5, 32, 19, 17, 7186, 5623, 14815, 1085, 1096, 21, 558, 576, 1484, 1618, 4890, 587, 1369, 11009, 4857, 504, 8508, 14824, 10949, 14829, 9998, 14831, 14827, 7202, 5630, 7212, 5628, 10940, 14811, 10958, 14865, 14839, 14862, 14838, 6619, 4612, 4891, 4894, 10919, 1121, 14861, 14825, 7183, 4589, 2]
 
-// Module 14860 (BountiesModalContent)
+// Module 14864 (BountiesModalContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -23,13 +23,13 @@ import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /*
 import VideoQuestUtils from "VideoQuestUtils" /* 10940 */;
 import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 10958 */;
 import AnimationUtils from "AnimationUtils" /* 11009 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 14807 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 14811 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import BountyStore from "BountyStore" /* 7186 */;
 import QuestConstants from "QuestConstants" /* 5623 */;
-import BountiesModalConstants from "BountiesModalConstants" /* 14811 */;
+import BountiesModalConstants from "BountiesModalConstants" /* 14815 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -317,7 +317,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
                               const obj3 = { value, done: true };
                               return obj3;
                             } else {
-                              return { value: "IconComponent", done: "IconComponent" };
+                              return { value: "IconComponent", done: null };
                             }
                           } else {
                             let c3;
@@ -377,7 +377,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
                                   }
                                 }
                                 ref = 3;
-                                return { value: "IconComponent", done: "IconComponent" };
+                                return { value: "IconComponent", done: null };
                               }
                             } catch (tmp37) {
                               closure_2 = tmp37;
@@ -568,7 +568,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -627,7 +627,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
             }
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp37) {
         dismissVideoEndAppStoreOverlay = tmp37;

@@ -1,9 +1,9 @@
-// Module ID: 14923
-// Function ID: 14924
+// Module ID: 14927
+// Function ID: 14928
 // Name: QuestBottomSheetHooks
-// Dependencies: [5, 19, 5623, 558, 576, 14896, 14919, 4854, 10916, 14924, 7224, 7213, 7223, 5630, 7212, 5626, 7202, 2]
+// Dependencies: [5, 19, 5623, 558, 576, 14900, 14923, 4854, 10916, 14928, 7224, 7213, 7223, 5630, 7212, 5626, 7202, 2]
 
-// Module 14923 (QuestBottomSheetHooks)
+// Module 14927 (QuestBottomSheetHooks)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
 import QuestConstants from "QuestConstants" /* 5623 */;
 import QuestTypes from "QuestTypes" /* 5626 */;
@@ -13,7 +13,7 @@ import AnalyticsTypes from "AnalyticsTypes" /* 7212 */;
 import captureAdUserAction2 from "captureAdUserAction" /* 7213 */;
 import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7223 */;
 import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7224 */;
-import openVideoQuestModalDefault from "openVideoQuestModal" /* 14924 */;
+import openVideoQuestModalDefault from "openVideoQuestModal" /* 14928 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -28,8 +28,8 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let setRestingQuestDockMode;
   let obj = setRestingQuestDockMode(576);
   const cResult = obj.c(3);
-  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(14896).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(14919).QuestBottomSheetContext).isInQuestBottomSheet;
+  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(14900).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(14923).QuestBottomSheetContext).isInQuestBottomSheet;
   if (cResult[0] === isInQuestBottomSheet) {
     let tmp2;
     if (cResult[1] === setRestingQuestDockMode) {
@@ -52,8 +52,8 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   tmp2 = fn;
 }) : (() => {
   let setRestingQuestDockMode;
-  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(14896).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(14919).QuestBottomSheetContext).isInQuestBottomSheet;
+  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(14900).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(14923).QuestBottomSheetContext).isInQuestBottomSheet;
   const items = [isInQuestBottomSheet, setRestingQuestDockMode];
   return react.useCallback(() => {
     const tmp = isInQuestBottomSheet;
@@ -231,7 +231,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -292,7 +292,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
             const result = trackQuestContentClicked(obj);
           }
           c2 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp36) {
         c2 = 3;
@@ -337,7 +337,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -398,7 +398,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
             const result = trackQuestContentClicked(obj);
           }
           launchMobileActivity = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp36) {
         launchMobileActivity = 3;

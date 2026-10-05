@@ -18,7 +18,7 @@ import _inherits from "_inherits" /* 98 */;
 const require = globalThis.__r;
 let nodeName, set, set2, set3;
 
-const f94619 = (attributes) => {
+const f94762 = (attributes) => {
   obj = _mod7345;
   obj.objectAssign(obj, parseNodeAttributesAsTags(attributes.attributes));
   const tmp3 = obj;
@@ -206,7 +206,7 @@ function parseXMPObject(str) {
         let items = [tmp5];
         arr2 = items;
       }
-      let item = arr2.forEach(f94619);
+      let item = arr2.forEach(f94762);
       continue;
     }
     return obj;
@@ -577,7 +577,7 @@ function parseNodeAsSimpleValue(attributes, key10005) {
             let items = [tmp11];
             arr2 = items;
           }
-          let item = arr2.forEach(f94619);
+          let item = arr2.forEach(f94762);
           continue;
         }
       }
@@ -608,7 +608,7 @@ let obj = {
     let length;
     let length2;
     let length3;
-    const f94617 = (acc, item) => acc + item.length;
+    const f94760 = (acc, item) => acc + item.length;
     const obj = {};
     if (typeof buffer === "string") {
       readTags(obj, buffer, arg2);
@@ -622,7 +622,7 @@ let obj = {
         const _Uint8Array5 = Uint8Array;
         const self15 = this;
         const self16 = this;
-        const uint8Array = new Uint8Array(substr.reduce(f94617, 0));
+        const uint8Array = new Uint8Array(substr.reduce(f94760, 0));
         let num2 = 0;
         let num = 0;
         if (0 < substr.length) {
@@ -652,7 +652,7 @@ let obj = {
           const _Uint8Array6 = Uint8Array;
           const self17 = this;
           const self18 = this;
-          const uint8Array2 = new Uint8Array(substr1.reduce(f94617, 0));
+          const uint8Array2 = new Uint8Array(substr1.reduce(f94760, 0));
           let num4 = 0;
           let num3 = 0;
           if (0 < substr1.length) {
@@ -689,7 +689,7 @@ let obj = {
           const _Uint8Array3 = Uint8Array;
           const self9 = this;
           const self10 = this;
-          const uint8Array4 = new Uint8Array(arr.reduce(f94617, 0));
+          const uint8Array4 = new Uint8Array(arr.reduce(f94760, 0));
           let num7 = 0;
           let num8 = 0;
           if (0 < arr.length) {

@@ -62,7 +62,7 @@ let obj = function _createWebViewHtmlFile() {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             let c3;
@@ -126,7 +126,7 @@ let obj = function _createWebViewHtmlFile() {
                   c3 = 0;
                 }
                 c5 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp19) {
               closure_2 = tmp19;
@@ -160,7 +160,7 @@ let obj = function _createWebViewHtmlFile() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let insets;
@@ -193,7 +193,7 @@ let obj = function _createWebViewHtmlFile() {
               closure_7 = undefined;
               messageForDisallowedNavigationError = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === tmp4) {
             if (arg0 === 1) {
@@ -303,7 +303,7 @@ export const deleteWebViewHtmlFile = function deleteWebViewHtmlFile(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -356,7 +356,7 @@ export const deleteWebViewHtmlFile = function deleteWebViewHtmlFile(arg0) {
               return obj;
             }
             c0 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp10) {
           c0 = 3;

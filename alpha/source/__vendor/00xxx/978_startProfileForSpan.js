@@ -38,7 +38,7 @@ export const startProfileForSpan = function startProfileForSpan(rootSpan) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -111,7 +111,7 @@ export const startProfileForSpan = function startProfileForSpan(rootSpan) {
               }
             }
             c0 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp7) {
           c0 = 3;

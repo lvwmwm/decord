@@ -1,9 +1,9 @@
-// Module ID: 14434
-// Function ID: 14435
+// Module ID: 14438
+// Function ID: 14439
 // Name: ProfileGIFSelectActionSheet
-// Dependencies: [32, 5, 19, 17, 21, 4890, 587, 558, 576, 6479, 14415, 7840, 7838, 7835, 7837, 6486, 4854, 1126, 8313, 6644, 10088, 6645, 2]
+// Dependencies: [32, 5, 19, 17, 21, 4890, 587, 558, 576, 6479, 14419, 7840, 7838, 7835, 7837, 6486, 4854, 1126, 8313, 6644, 10088, 6645, 2]
 
-// Module 14434 (ProfileGIFSelectActionSheet)
+// Module 14438 (ProfileGIFSelectActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
@@ -150,7 +150,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((profileAssetType) 
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -269,7 +269,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((profileAssetType) 
           const obj10 = selectionContext(guildId[16]);
           obj10.hideActionSheet();
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp53) {
         c5 = 3;
@@ -304,7 +304,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((profileAssetType) 
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -424,7 +424,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((profileAssetType) 
             const obj10 = src(closure_2[16]);
             obj10.hideActionSheet();
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp53) {
           c5 = 3;

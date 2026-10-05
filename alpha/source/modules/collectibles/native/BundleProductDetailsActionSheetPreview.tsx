@@ -1,9 +1,9 @@
-// Module ID: 12967
-// Function ID: 12968
+// Module ID: 12969
+// Function ID: 12970
 // Name: BundleProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 1087, 21, 4890, 587, 558, 576, 12968, 6140, 1126, 7842, 7065, 12969, 4886, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 4890, 587, 558, 576, 12970, 6140, 1126, 7842, 7065, 12971, 4886, 2]
 
-// Module 12967 (BundleProductDetailsActionSheetPreview)
+// Module 12969 (BundleProductDetailsActionSheetPreview)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
@@ -39,7 +39,7 @@ let size;
 let tmp;
 const Text_Text = tmp(4886);
 const CollectiblesUtils = tmp(7065);
-const IndividualProductPreview = tmp(12969);
+const IndividualProductPreview = tmp(12971);
 ({ memo, useCallback: closure_4, useLayoutEffect: hasOwnProperty, useMemo: metroRequire, useState: metroImportDefault } = react);
 ({ Pressable: metroImportAll, ScrollView: c9, View: c10 } = react_native);
 const ShopCtaEnum = CollectiblesShopConstants.ShopCtaEnum;

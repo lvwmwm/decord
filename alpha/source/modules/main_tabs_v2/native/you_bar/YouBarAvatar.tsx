@@ -1,9 +1,9 @@
-// Module ID: 16325
-// Function ID: 16326
+// Module ID: 16329
+// Function ID: 16330
 // Name: YouBarAvatar
-// Dependencies: [5, 32, 19, 17, 4879, 5438, 1377, 14895, 1085, 21, 4890, 587, 558, 576, 504, 1188, 4589, 4612, 7887, 8469, 5597, 4580, 8468, 7828, 4855, 6885, 1987, 6140, 2]
+// Dependencies: [5, 32, 19, 17, 4879, 5438, 1377, 14899, 1085, 21, 4890, 587, 558, 576, 504, 1188, 4589, 4612, 7887, 8469, 5597, 4580, 8468, 7828, 4855, 6885, 1987, 6140, 2]
 
-// Module 16325 (YouBarAvatar)
+// Module 16329 (YouBarAvatar)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1188 */;
@@ -19,7 +19,7 @@ import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 5438 */;
 import UserStore from "UserStore" /* 1377 */;
-import YouBarConstants from "YouBarConstants" /* 14895 */;
+import YouBarConstants from "YouBarConstants" /* 14899 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -712,7 +712,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((transitionStat
           tmp24 = tmp26;
         }
       }
-      const obj4 = { user: stateFromStores, guildId: "Array", size: tmp27, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration, status: OFFLINE, autoStatusCutout: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==" };
+      const obj4 = { user: stateFromStores, guildId: "Array", size: tmp27, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration, status: OFFLINE, autoStatusCutout: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==" };
       const tmp23 = closure_22(tmp(sharedValue[15]).Avatar, obj4);
       cResult[11] = avatarDecoration;
       cResult[12] = OFFLINE;
@@ -805,7 +805,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((transitionStat
     const obj5 = { style: items3, children: closure_22(Avatar, obj6) };
     items3 = [rect, animatedStyle];
     const View = cleanup(tmp2[17]).View;
-    obj6 = { user: stateFromStores, guildId: "Array", size: size2, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration, status: OFFLINE, autoStatusCutout: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==" };
+    obj6 = { user: stateFromStores, guildId: "Array", size: size2, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration, status: OFFLINE, autoStatusCutout: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==" };
     Avatar = tmp(tmp2[15]).Avatar;
     if (OFFLINE === StatusTypes.UNKNOWN) {
       OFFLINE = StatusTypes.OFFLINE;
@@ -876,7 +876,7 @@ const memoResult = react.memo(function YouBarAvatarAnimated(isLargeAvatar) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -908,7 +908,7 @@ const memoResult = react.memo(function YouBarAvatarAnimated(isLargeAvatar) {
           value.openUserSettings();
           closure_128_3(false);
           isAvatarPressed = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp11) {
         isAvatarPressed = 3;

@@ -1,16 +1,16 @@
-// Module ID: 15619
-// Function ID: 15620
+// Module ID: 15623
+// Function ID: 15624
 // Name: InternalBuildUpdateSetting
-// Dependencies: [14156, 21, 13717, 558, 576, 504, 4461, 14646, 4845, 14774, 11129, 2]
+// Dependencies: [14158, 21, 13719, 558, 576, 504, 4461, 14650, 4845, 14778, 11129, 2]
 
-// Module 15619 (InternalBuildUpdateSetting)
+// Module 15623 (InternalBuildUpdateSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import _modDef4461 from "module_4461" /* 4461 */;
-import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 13717 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14646 */;
-import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 14156 */;
+import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 13719 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14650 */;
+import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 14158 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
@@ -145,7 +145,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (stateFromStores) {
       RefreshIcon = tmp(4845).DownloadIcon;
     } else {
-      RefreshIcon = tmp(14774).RefreshIcon;
+      RefreshIcon = tmp(14778).RefreshIcon;
     }
     const tmp9Result = tmp9(RefreshIcon, {});
     cResult[2] = stateFromStores;
@@ -163,7 +163,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (obj.useStateFromStores(items, () => null !== MobileNativeUpdateStore.latestFetchedBuild().newBuild)) {
     RefreshIcon = tmp(4845).DownloadIcon;
   } else {
-    RefreshIcon = tmp(14774).RefreshIcon;
+    RefreshIcon = tmp(14778).RefreshIcon;
   }
   return tmp3(RefreshIcon, {});
 });

@@ -1,13 +1,13 @@
-// Module ID: 17175
-// Function ID: 17176
+// Module ID: 17199
+// Function ID: 17200
 // Name: panel/LeaveActivityButton
-// Dependencies: [19, 8705, 21, 558, 576, 8978, 17165, 2]
+// Dependencies: [19, 8705, 21, 558, 576, 8978, 17189, 2]
 
-// Module 17175 (panel/LeaveActivityButton)
+// Module 17199 (panel/LeaveActivityButton)
 import Fragment from "Fragment" /* 21 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 8705 */;
 import FramesNativeManagerDefault from "FramesNativeManager" /* 8978 */;
-import LeaveActivityButton from "LeaveActivityButton" /* 17165 */;
+import LeaveActivityButton from "LeaveActivityButton" /* 17189 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
     }
     return tmp4;
   }
-  const tmp5 = jsx(tmp(17165).BaseLeaveActivityButton, {
+  const tmp5 = jsx(tmp(17189).BaseLeaveActivityButton, {
     onPress() {
       let id;
       setMode(ActivityPanelModes.DISCONNECTED);

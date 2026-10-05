@@ -383,7 +383,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -540,7 +540,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
             }
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp94) {
           c4 = 3;
           throw tmp94;

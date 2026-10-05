@@ -53,7 +53,7 @@ export const useConversationsHeaderButton = function useConversationsHeaderButto
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -98,7 +98,7 @@ export const useConversationsHeaderButton = function useConversationsHeaderButto
           ref = 0;
         }
         c3 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp17) {
         if (0 === ref) {
           c3 = 3;

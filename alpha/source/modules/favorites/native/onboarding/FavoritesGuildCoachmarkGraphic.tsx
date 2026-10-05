@@ -1,9 +1,9 @@
-// Module ID: 16251
-// Function ID: 16252
+// Module ID: 16255
+// Function ID: 16256
 // Name: FavoritesGuildCoachmarkGraphic
 // Dependencies: [17, 21, 4890, 587, 558, 576, 10042, 1188, 2]
 
-// Module 16251 (FavoritesGuildCoachmarkGraphic)
+// Module 16255 (FavoritesGuildCoachmarkGraphic)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

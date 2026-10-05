@@ -1,10 +1,10 @@
-// Module ID: 14451
-// Function ID: 14452
+// Module ID: 14455
+// Function ID: 14456
 // Name: UserProfileEffectEditButton
-// Dependencies: [19, 17, 6707, 8454, 1096, 21, 4890, 587, 7837, 10778, 4854, 14452, 1987, 1126, 14441, 5968, 5974, 10747, 8457, 1188, 13009, 2]
+// Dependencies: [19, 17, 6707, 8454, 1096, 21, 4890, 587, 7837, 10778, 4854, 14456, 1987, 1126, 14445, 5968, 5974, 10747, 8457, 1188, 13011, 2]
 // Exports: default
 
-// Module 14451 (UserProfileEffectEditButton)
+// Module 14455 (UserProfileEffectEditButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
@@ -93,7 +93,7 @@ export default function UserProfileEffectEditButton(isTryItOut) {
   const callback = userProfileEffect.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { user, currentProfileEffect: userProfileEffect, guildId, isTryItOut };
-    obj.openLazy(asyncRequire(14452, dependencyMap.paths), "Profile Effect", obj2);
+    obj.openLazy(asyncRequire(14456, dependencyMap.paths), "Profile Effect", obj2);
   }, items);
   if (product != null) {
     name = product.name;

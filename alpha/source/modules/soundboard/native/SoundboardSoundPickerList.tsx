@@ -1,9 +1,9 @@
-// Module ID: 17211
-// Function ID: 17212
+// Module ID: 17235
+// Function ID: 17236
 // Name: SoundboardSoundPickerList
-// Dependencies: [19, 17, 1377, 17205, 21, 4890, 587, 5805, 1126, 9951, 558, 576, 4528, 504, 9644, 9909, 17212, 5602, 12, 5971, 1188, 17220, 10116, 4849, 8364, 4886, 9908, 6569, 2]
+// Dependencies: [19, 17, 1377, 17229, 21, 4890, 587, 5805, 1126, 9951, 558, 576, 4528, 504, 9644, 9909, 17236, 5602, 12, 5971, 1188, 17244, 10116, 4849, 8364, 4886, 9908, 6569, 2]
 
-// Module 17211 (SoundboardSoundPickerList)
+// Module 17235 (SoundboardSoundPickerList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
@@ -20,10 +20,10 @@ import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 9908 */
 import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9909 */;
 import chunkDefault from "chunk" /* 9951 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10116 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17220 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17244 */;
 import react from "react" /* 19 */;
 import UserStore_mod from "UserStore" /* 1377 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 17205 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 17229 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -220,7 +220,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((row) => {
             const obj = { sound, channel, soundGridLocation: obj2, style: soundButtonNotFirst, isSectionLocked };
             soundButtonNotFirst = null;
             obj2 = { section: sectionIndex, item: row };
-            const SoundButton = tmp(17212).SoundButton;
+            const SoundButton = tmp(17236).SoundButton;
             const tmp7 = metroImportDefault;
             if (arg1 > 0) {
               soundButtonNotFirst = soundButtonNotFirst.soundButtonNotFirst;
@@ -299,7 +299,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((row) => {
         const obj = { sound, channel, soundGridLocation: obj2, style: soundButtonNotFirst, isSectionLocked };
         soundButtonNotFirst = null;
         obj2 = { section: importDefault, item: row };
-        const SoundButton = tmp(17212).SoundButton;
+        const SoundButton = tmp(17236).SoundButton;
         const tmp7 = metroImportDefault;
         if (index > 0) {
           soundButtonNotFirst = soundButtonNotFirst.soundButtonNotFirst;

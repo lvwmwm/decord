@@ -1,9 +1,9 @@
-// Module ID: 17063
-// Function ID: 17064
+// Module ID: 17087
+// Function ID: 17088
 // Name: SettingsOverviewScreen
-// Dependencies: [19, 7634, 21, 1126, 1375, 15307, 558, 576, 4528, 11129, 14496, 2]
+// Dependencies: [19, 7634, 21, 1126, 1375, 15311, 558, 576, 4528, 11129, 14500, 2]
 
-// Module 17063 (SettingsOverviewScreen)
+// Module 17087 (SettingsOverviewScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl8 from "intl" /* 1126 */;
@@ -11,8 +11,8 @@ import GlobalUtils from "GlobalUtils" /* 1375 */;
 import PremiumUtils from "PremiumUtils" /* 4528 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;
-import SettingListRenderer from "SettingListRenderer" /* 14496 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15307 */;
+import SettingListRenderer from "SettingListRenderer" /* 14500 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15311 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -139,7 +139,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     SettingBuilders;
     return createList(obj);
   }, items);
-  return jsx(hasPremiumSubscriptionToDisplay(14496).SearchableSettingsList, { node });
+  return jsx(hasPremiumSubscriptionToDisplay(14500).SearchableSettingsList, { node });
 });
 const result = size.fileFinishedImporting("modules/user_settings/overview/native/SettingsOverviewScreen.tsx");
 

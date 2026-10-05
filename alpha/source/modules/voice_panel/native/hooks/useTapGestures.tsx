@@ -1,10 +1,10 @@
-// Module ID: 17252
-// Function ID: 17253
+// Module ID: 17276
+// Function ID: 17277
 // Name: useTapGestures
 // Dependencies: [19, 11901, 6140, 4612, 4855, 2]
 // Exports: default
 
-// Module 17252 (useTapGestures)
+// Module 17276 (useTapGestures)
 import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
 import HapticUtils from "HapticUtils" /* 4855 */;
 import react_mod from "react" /* 19 */;

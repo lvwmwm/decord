@@ -1,11 +1,11 @@
-// Module ID: 17318
-// Function ID: 17319
+// Module ID: 17342
+// Function ID: 17343
 // Name: useSoundboardConfig
-// Dependencies: [19, 2051, 1999, 558, 576, 17166, 504, 17202, 6878, 1126, 2]
+// Dependencies: [19, 2051, 1999, 558, 576, 17190, 504, 17226, 6878, 1126, 2]
 
-// Module 17318 (useSoundboardConfig)
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17166 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 17202 */;
+// Module 17342 (useSoundboardConfig)
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17190 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 17226 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
@@ -125,7 +125,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, analyticsSourc
   let closure_0;
   let deaf;
   let stringResult;
-  const f129809 = () => {
+  const f130047 = () => {
     const tmp = canChannelUseSoundboardDefault;
     return tmp(ChannelStore.getChannel(closure_0));
   };
@@ -155,9 +155,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, analyticsSourc
       const result = obj.showSoundboardSoundPickerActionSheet(obj2);
     }
   }, items1);
-  let obj2 = { visible: tmp2, handlePress: callback, disabled: stateFromStores || !react.useMemo(f129809, items2), disabledAccessibilityHint: stringResult };
+  let obj2 = { visible: tmp2, handlePress: callback, disabled: stateFromStores || !react.useMemo(f130047, items2), disabledAccessibilityHint: stringResult };
   stringResult = undefined;
-  stateFromStores || !react.useMemo(f129809, items2);
+  stateFromStores || !react.useMemo(f130047, items2);
   if (stateFromStores) {
     const intl = tmp3(1126).intl;
     stringResult = intl.string(tmp3(1126).t.X1lQli);

@@ -1,9 +1,9 @@
-// Module ID: 17543
-// Function ID: 17544
+// Module ID: 17567
+// Function ID: 17568
 // Name: NewUserManager
-// Dependencies: [5, 6430, 5440, 1377, 5949, 12354, 1085, 12385, 17544, 12325, 12353, 1105, 9481, 584, 6613, 12332, 12415, 2]
+// Dependencies: [5, 6430, 5440, 1377, 5949, 12354, 1085, 12385, 17568, 12325, 12353, 1105, 9481, 584, 6613, 12332, 12415, 2]
 
-// Module 17543 (NewUserManager)
+// Module 17567 (NewUserManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
@@ -12,7 +12,7 @@ import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 1
 import NUFActionCreators from "NUFActionCreators" /* 12353 */;
 import NUFConstants from "NUFConstants" /* 12354 */;
 import HubConstants from "HubConstants" /* 12385 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 17544 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 17568 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import PhoneStore from "PhoneStore" /* 6430 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5440 */;
@@ -187,7 +187,7 @@ class NewUserManager extends AutomaticLifecycleManager {
       flag = closure_0.skip ?? false;
       flag2 = tmp80.skipAttempt ?? false;
       flag3 = tmp80.back ?? false;
-      return "Reflect";
+      return "Set";
     });
     applyArgumentsResult.handleOnboardingStep = function() {
       return closure_0(...arguments);

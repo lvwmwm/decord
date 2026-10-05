@@ -1,9 +1,9 @@
-// Module ID: 14349
-// Function ID: 14350
+// Module ID: 14353
+// Function ID: 14354
 // Name: quests
 // Dependencies: [7187, 1085, 8015, 9031, 7208, 9026, 1252, 584, 9041, 2]
 
-// Module 14349 (quests)
+// Module 14353 (quests)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import QuestTaskUtils from "QuestTaskUtils" /* 7208 */;

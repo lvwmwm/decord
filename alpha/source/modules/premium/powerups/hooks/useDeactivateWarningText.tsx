@@ -149,7 +149,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, skuId) => {
           tmp3 = closure_5;
           tmp4 = closure_0;
           sortedRoles = closure_5.getSortedRoles(closure_0);
-          num = sortedRoles.reduce(() => { /* body not rendered: F142108 */ }, 0);
+          num = sortedRoles.reduce(() => { /* body not rendered: F142346 */ }, 0);
         }
       }
       return num;

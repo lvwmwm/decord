@@ -34,7 +34,7 @@ let obj = function _fetchAdUser() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -126,7 +126,7 @@ let obj = function _fetchAdUser() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp54) {
           duration_ms = tmp54;
           if (0 === c4) {

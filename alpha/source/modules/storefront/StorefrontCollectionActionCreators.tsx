@@ -100,7 +100,7 @@ let obj = function _maybeFetchCollectionsWithProducts() {
     flag = tmp54.includeUnpublishedCollections ?? false;
     flag2 = tmp54.ignoreCache ?? false;
     flag3 = tmp54.includePricing ?? false;
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };
@@ -158,7 +158,7 @@ obj = function _maybeFetchCollectionsForApplicationPage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let tmp40;
@@ -214,7 +214,7 @@ obj = function _maybeFetchCollectionsForApplicationPage() {
                     const _Date = Date;
                     if (Date.now() - dispatchResult <= dispatch) {
                       c6 = 3;
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     }
                   }
                 }
@@ -261,7 +261,7 @@ obj = function _maybeFetchCollectionsForApplicationPage() {
           c4 = 0;
         }
         c6 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp40) {
         if (0 === c4) {
           c6 = 3;
@@ -312,7 +312,7 @@ obj = function _maybeFetchCollectionsAfter() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -358,7 +358,7 @@ obj = function _maybeFetchCollectionsAfter() {
                         const _Date = Date;
                         if (Date.now() - collectionsAfterFetchedAt <= TWELVE_HOURS_MS) {
                           c6 = 3;
-                          return { value: "IconComponent", done: "IconComponent" };
+                          return { value: "IconComponent", done: null };
                         }
                       }
                     }
@@ -404,7 +404,7 @@ obj = function _maybeFetchCollectionsAfter() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp46) {
           closure_3 = tmp46;
           if (0 === c4) {
@@ -466,7 +466,7 @@ obj = function _maybeFetchCollectionsForApplication() {
                   }
                 }
                 c6 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             }
             skuTypes = 1;
@@ -536,7 +536,7 @@ obj = function _maybeFetchCollectionsForApplication() {
     if (includePricing === undefined) {
       includePricing = false;
     }
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };

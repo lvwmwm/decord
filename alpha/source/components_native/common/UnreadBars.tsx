@@ -1,9 +1,9 @@
-// Module ID: 16292
-// Function ID: 16293
+// Module ID: 16296
+// Function ID: 16297
 // Name: UnreadBars
 // Dependencies: [19, 17, 4879, 1085, 21, 4890, 5915, 587, 4727, 4589, 4855, 4856, 1188, 1126, 558, 576, 504, 12065, 2]
 
-// Module 16292 (UnreadBars)
+// Module 16296 (UnreadBars)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;

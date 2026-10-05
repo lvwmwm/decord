@@ -1,10 +1,10 @@
-// Module ID: 16204
-// Function ID: 16205
+// Module ID: 16208
+// Function ID: 16209
 // Name: GameCommunityMultiGuildUpsellCard
 // Dependencies: [5, 32, 19, 17, 4879, 4510, 2074, 1085, 21, 4890, 587, 504, 1402, 1437, 1484, 1252, 5705, 6845, 6844, 1126, 8469, 8394, 1188, 4886, 5594, 7579, 7575, 7577, 2]
 // Exports: default
 
-// Module 16204 (GameCommunityMultiGuildUpsellCard)
+// Module 16208 (GameCommunityMultiGuildUpsellCard)
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
@@ -183,7 +183,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -252,7 +252,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
           closure_128_4(false);
         }
         c4 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp36) {
         onDismiss = tmp36;
         if (0 === c3) {
@@ -285,7 +285,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -347,7 +347,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
           closure_128_4(false);
         }
         c4 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp29) {
         onDismiss = tmp29;
         if (0 === c3) {

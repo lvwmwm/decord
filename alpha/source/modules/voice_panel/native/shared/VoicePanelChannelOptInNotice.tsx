@@ -1,9 +1,9 @@
-// Module ID: 17231
-// Function ID: 17232
+// Module ID: 17255
+// Function ID: 17256
 // Name: VoicePanelChannelOptInNotice
-// Dependencies: [19, 21, 558, 576, 6608, 1126, 5999, 13654, 5993, 5976, 2]
+// Dependencies: [19, 21, 558, 576, 6608, 1126, 5999, 13656, 5993, 5976, 2]
 
-// Module 17231 (VoicePanelChannelOptInNotice)
+// Module 17255 (VoicePanelChannelOptInNotice)
 import Fragment from "Fragment" /* 21 */;
 import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 6608 */;
 import react from "react" /* 19 */;
@@ -35,7 +35,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
         const intl2 = tmp(1126).intl;
         const stringResult1 = intl2.string(channel(1126).t.PDUCIN);
         const TableRowIcon = tmp(5999).TableRowIcon;
-        const tmp12 = <TableRowIcon IconComponent={channel(13654).ChannelListMagnifyingGlassIcon} />;
+        const tmp12 = <TableRowIcon IconComponent={channel(13656).ChannelListMagnifyingGlassIcon} />;
         cResult[4] = stringResult;
         cResult[5] = stringResult1;
         cResult[6] = tmp12;
@@ -96,7 +96,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   const TableRow = channel(5993).TableRow;
   intl = channel(1126).intl;
   intl2 = channel(1126).intl;
-  ({ IconComponent: channel(13654).ChannelListMagnifyingGlassIcon });
+  ({ IconComponent: channel(13656).ChannelListMagnifyingGlassIcon });
   const TableRowIcon = channel(5999).TableRowIcon;
   return <tmp2 style={style}>{null}</tmp2>;
 }));

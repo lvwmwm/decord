@@ -1,13 +1,13 @@
-// Module ID: 15233
-// Function ID: 15234
+// Module ID: 15237
+// Function ID: 15238
 // Name: EnableReducedMotionSetting
-// Dependencies: [4879, 7634, 558, 576, 504, 14275, 11129, 1126, 2]
+// Dependencies: [4879, 7634, 558, 576, 504, 14277, 11129, 1126, 2]
 
-// Module 15233 (EnableReducedMotionSetting)
+// Module 15237 (EnableReducedMotionSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14275 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14277 */;
 import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;

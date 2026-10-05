@@ -180,7 +180,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       }
     }
     tmp16[0] = tmp4.row;
-    const obj2 = { user, guildId: "Boolean", status: null, isMobileOnline, isVROnline, size: user(1188).AvatarSizes.XSMALL, avatarDecoration: user.avatarDecoration, autoStatusCutout: null };
+    const obj2 = { user, guildId: "Boolean", status: null, isMobileOnline, isVROnline, size: user(1188).AvatarSizes.XSMALL, avatarDecoration: user.avatarDecoration, autoStatusCutout: 1 };
     const Avatar = tmp(1188).Avatar;
     const tmp14 = closure_11;
     const tmp15 = View;
@@ -235,7 +235,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   let tmp9Result = null;
   if (null != user) {
     const obj3 = { style: tmp.row, children: items2 };
-    const obj4 = { user, guildId: "Boolean", status: tmp13, isMobileOnline: tmp6, isVROnline: tmp7, size: user(1188).AvatarSizes.XSMALL, avatarDecoration: user.avatarDecoration, autoStatusCutout: null };
+    const obj4 = { user, guildId: "Boolean", status: tmp13, isMobileOnline: tmp6, isVROnline: tmp7, size: user(1188).AvatarSizes.XSMALL, avatarDecoration: user.avatarDecoration, autoStatusCutout: 1 };
     tmp13 = null;
     const Avatar = tmp2(1188).Avatar;
     const tmp10 = View;

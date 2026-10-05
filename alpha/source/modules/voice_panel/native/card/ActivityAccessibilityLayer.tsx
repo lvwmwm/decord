@@ -1,9 +1,9 @@
-// Module ID: 17260
-// Function ID: 17261
+// Module ID: 17284
+// Function ID: 17285
 // Name: ActivityAccessibilityLayer
 // Dependencies: [109, 32, 19, 17, 11902, 21, 4890, 558, 576, 5779, 1126, 5767, 5770, 2]
 
-// Module 17260 (ActivityAccessibilityLayer)
+// Module 17284 (ActivityAccessibilityLayer)
 import react2 from "react" /* 576 */;
 import react_native from "react-native" /* 5779 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11902 */;

@@ -1,9 +1,9 @@
-// Module ID: 12931
-// Function ID: 12932
+// Module ID: 12933
+// Function ID: 12934
 // Name: UserProfileConnections
-// Dependencies: [19, 17, 2116, 4723, 6707, 1085, 6679, 21, 1188, 4890, 587, 11192, 558, 576, 4580, 4729, 11197, 11198, 7861, 6678, 5442, 1402, 8047, 5070, 4565, 4855, 6688, 4567, 1126, 4886, 4579, 8263, 5993, 4589, 504, 12932, 6074, 6706, 12935, 2]
+// Dependencies: [19, 17, 2116, 4723, 6707, 1085, 6679, 21, 1188, 4890, 587, 11192, 558, 576, 4580, 4729, 11197, 11198, 7861, 6678, 5442, 1402, 8047, 5070, 4565, 4855, 6688, 4567, 1126, 4886, 4579, 8263, 5993, 4589, 504, 12934, 6074, 6706, 12937, 2]
 
-// Module 12931 (UserProfileConnections)
+// Module 12933 (UserProfileConnections)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -23,7 +23,7 @@ import MaskedLinkUtils from "MaskedLinkUtils" /* 8047 */;
 import ConnectionMetadataVanityItems from "ConnectionMetadataVanityItems" /* 11192 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11197 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 11198 */;
-import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 12935 */;
+import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 12937 */;
 import react_mod from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2116 */;
 import StreamerModeStore from "StreamerModeStore" /* 4723 */;
@@ -297,7 +297,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) =
                               tmp6 = account;
                               tmp7 = PlatformTypes;
                               obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                              obj1.onConfirm = function onConfirm() { /* body not rendered: F142769 */ };
+                              obj1.onConfirm = function onConfirm() { /* body not rendered: F143014 */ };
                               handleClickResult = obj.handleClick(obj1);
                             }
                             return;
@@ -354,7 +354,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) =
                                 tmp6 = account;
                                 tmp7 = PlatformTypes;
                                 obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                                obj1.onConfirm = function onConfirm() { /* body not rendered: F142769 */ };
+                                obj1.onConfirm = function onConfirm() { /* body not rendered: F143014 */ };
                                 handleClickResult = obj.handleClick(obj1);
                               }
                               return;
@@ -469,7 +469,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) =
                           tmp6 = account;
                           tmp7 = PlatformTypes;
                           obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                          obj1.onConfirm = function onConfirm() { /* body not rendered: F142769 */ };
+                          obj1.onConfirm = function onConfirm() { /* body not rendered: F143014 */ };
                           handleClickResult = obj.handleClick(obj1);
                         }
                         return;
@@ -509,7 +509,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) =
                               tmp6 = account;
                               tmp7 = PlatformTypes;
                               obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                              obj1.onConfirm = function onConfirm() { /* body not rendered: F142769 */ };
+                              obj1.onConfirm = function onConfirm() { /* body not rendered: F143014 */ };
                               handleClickResult = obj.handleClick(obj1);
                             }
                             return;
@@ -558,7 +558,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) =
                         tmp6 = account;
                         tmp7 = PlatformTypes;
                         obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                        obj1.onConfirm = function onConfirm() { /* body not rendered: F142769 */ };
+                        obj1.onConfirm = function onConfirm() { /* body not rendered: F143014 */ };
                         handleClickResult = obj.handleClick(obj1);
                       }
                       return;
@@ -581,7 +581,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) =
                   tmp6 = account;
                   tmp7 = PlatformTypes;
                   obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                  obj1.onConfirm = function onConfirm() { /* body not rendered: F142769 */ };
+                  obj1.onConfirm = function onConfirm() { /* body not rendered: F143014 */ };
                   handleClickResult = obj.handleClick(obj1);
                 }
                 return;
@@ -669,7 +669,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) =
           tmp6 = account;
           tmp7 = PlatformTypes;
           obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-          obj1.onConfirm = function onConfirm() { /* body not rendered: F142769 */ };
+          obj1.onConfirm = function onConfirm() { /* body not rendered: F143014 */ };
           handleClickResult = obj.handleClick(obj1);
         }
         return;
@@ -1424,8 +1424,8 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   const items1 = [StreamerModeStore];
   const obj3 = userId(504);
   const stateFromStores = obj3.useStateFromStores(items1, () => StreamerModeStore.hidePersonalInformation);
-  ({ connections, appIdentities } = theme(12932)(userId));
-  theme(12932)(userId);
+  ({ connections, appIdentities } = theme(12934)(userId));
+  theme(12934)(userId);
   const tmp6 = theme;
   if (!stateFromStores) {
     const items2 = [];

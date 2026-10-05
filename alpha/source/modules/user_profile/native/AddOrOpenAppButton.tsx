@@ -369,7 +369,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((profileApplica
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -451,7 +451,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((profileApplica
             obj.track(constants.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, obj11);
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
         recipientIds = application1;
         c3(false);
@@ -504,7 +504,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((profileApplica
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -587,7 +587,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((profileApplica
             obj.track(constants.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, obj11);
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
         tmp = application1;
         closure_130_3(false);

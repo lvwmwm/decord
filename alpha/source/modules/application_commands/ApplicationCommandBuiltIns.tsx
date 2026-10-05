@@ -592,7 +592,7 @@ let closure_14 = _asyncToGenerator(async (arg0, arg1) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -615,7 +615,7 @@ let closure_14 = _asyncToGenerator(async (arg0, arg1) => {
             id = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c6) {
           if (arg0 === 1) {
@@ -661,7 +661,7 @@ let closure_14 = _asyncToGenerator(async (arg0, arg1) => {
           const obj7 = closure_133_1(closure_133_2[21]);
           sendMessage(id, obj7.parse(id, closure_3), true, obj8);
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp27) {
         c7 = 3;
@@ -707,7 +707,7 @@ const obj21 = {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -772,7 +772,7 @@ const obj21 = {
               sendBotMessage(id2, formatToPlainString(v9wzHDV, obj5));
             }
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp20) {
             c4 = 3;
             throw tmp20;
@@ -894,7 +894,7 @@ const obj24 = {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -971,7 +971,7 @@ const obj24 = {
               sendBotMessage(id, formatToPlainString(YflWdM, obj7));
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp29) {
             c5 = 3;
             throw tmp29;
@@ -1159,7 +1159,7 @@ const obj28 = {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -1237,7 +1237,7 @@ const obj28 = {
               sendBotMessage(id, formatToPlainString(BbRV6o, obj7));
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp19) {
             c5 = 3;
             throw tmp19;
@@ -1383,7 +1383,7 @@ const obj32 = {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -1426,7 +1426,7 @@ const obj32 = {
               return obj;
             } else {
               c0 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp7) {
             c0 = 3;

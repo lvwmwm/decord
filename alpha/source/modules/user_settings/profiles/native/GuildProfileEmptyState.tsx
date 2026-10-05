@@ -1,15 +1,15 @@
-// Module ID: 14477
-// Function ID: 14478
+// Module ID: 14481
+// Function ID: 14482
 // Name: GuildProfileEmptyState
-// Dependencies: [5, 19, 17, 21, 4890, 14478, 4886, 1126, 5594, 12357, 1987, 2]
+// Dependencies: [5, 19, 17, 21, 4890, 14482, 4886, 1126, 5594, 12357, 1987, 2]
 // Exports: default
 
-// Module 14477 (GuildProfileEmptyState)
+// Module 14481 (GuildProfileEmptyState)
 import intl5 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
 import Text_Text from "Text/Text" /* 4886 */;
 import components_Button_Button from "components/Button/Button" /* 5594 */;
-import GuildProfileEmptyStateSvgDefault from "GuildProfileEmptyStateSvg" /* 14478 */;
+import GuildProfileEmptyStateSvgDefault from "GuildProfileEmptyStateSvg" /* 14482 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -64,7 +64,7 @@ export default function GuildProfileEmptyState() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -94,7 +94,7 @@ export default function GuildProfileEmptyState() {
             const _default = value.default;
             _default.openCreateGuildModal();
             c0 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp7) {
           c0 = 3;
@@ -120,7 +120,7 @@ export default function GuildProfileEmptyState() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -150,7 +150,7 @@ export default function GuildProfileEmptyState() {
             const _default = value.default;
             const result = _default.openGuildJoinServerScreen();
             c0 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp7) {
           c0 = 3;

@@ -1,9 +1,9 @@
-// Module ID: 15300
-// Function ID: 15301
+// Module ID: 15304
+// Function ID: 15305
 // Name: SettingsNotificationScreen
-// Dependencies: [19, 17, 15301, 7634, 21, 4890, 587, 558, 576, 6470, 12054, 15302, 15303, 4886, 1126, 5995, 4800, 11129, 15304, 15305, 14495, 2]
+// Dependencies: [19, 17, 15305, 7634, 21, 4890, 587, 558, 576, 6470, 12054, 15306, 15307, 4886, 1126, 5995, 4800, 11129, 15308, 15309, 14499, 2]
 
-// Module 15300 (SettingsNotificationScreen)
+// Module 15304 (SettingsNotificationScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,11 +12,11 @@ import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /*
 import SettingsConstants from "SettingsConstants" /* 7634 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;
 import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12054 */;
-import SettingLayoutDefault from "SettingLayout" /* 14495 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15301 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 15302 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 15303 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 15304 */;
+import SettingLayoutDefault from "SettingLayout" /* 14499 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15305 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 15306 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 15307 */;
+import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 15308 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4890 */;
@@ -307,7 +307,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     SettingBuilders;
     tmp5Result = undefined;
     if (!inHoldout) {
-      tmp5Result = tmp5(15304);
+      tmp5Result = tmp5(15308);
     }
     const list = createList(obj4);
     cResult[1] = !inHoldout;

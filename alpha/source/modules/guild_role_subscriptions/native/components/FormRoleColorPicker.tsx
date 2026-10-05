@@ -1,10 +1,10 @@
-// Module ID: 17941
-// Function ID: 17942
+// Module ID: 17963
+// Function ID: 17964
 // Name: FormRoleColorPicker
-// Dependencies: [19, 1085, 21, 4890, 4854, 16227, 1987, 13706, 14419, 1103, 2]
+// Dependencies: [19, 1085, 21, 4890, 4854, 16231, 1987, 13708, 14423, 1103, 2]
 // Exports: default
 
-// Module 17941 (FormRoleColorPicker)
+// Module 17963 (FormRoleColorPicker)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
@@ -33,10 +33,10 @@ export default function FormRoleColorPicker(color) {
   const callback = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { color, onSelect: onChange };
-    obj.openLazy(asyncRequire(16227, dependencyMap.paths), "RoleColorPicker", obj2);
+    obj.openLazy(asyncRequire(16231, dependencyMap.paths), "RoleColorPicker", obj2);
   }, items);
   let obj2 = { color, style: tmp.rowColorBlock, onSelect: callback };
-  onChange(13706);
+  onChange(13708);
   const obj3 = color(1103);
   return <tmp3 leading={null} label={obj3.int2hex(color)} disabled={flag} onPress={callback} />;
 };

@@ -1,9 +1,9 @@
-// Module ID: 17929
-// Function ID: 17930
+// Module ID: 17951
+// Function ID: 17952
 // Name: GuildRoleSubscriptionBenefitModalHeader
-// Dependencies: [32, 19, 17, 1085, 21, 4890, 587, 5915, 558, 576, 15041, 1126, 4886, 9442, 1188, 6619, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 4890, 587, 5915, 558, 576, 15045, 1126, 4886, 9442, 1188, 6619, 2]
 
-// Module 17929 (GuildRoleSubscriptionBenefitModalHeader)
+// Module 17951 (GuildRoleSubscriptionBenefitModalHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,7 +13,7 @@ import native from "native" /* 1188 */;
 import Text_Text from "Text/Text" /* 4886 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 9442 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15041 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15045 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

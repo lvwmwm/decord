@@ -1,10 +1,10 @@
-// Module ID: 13678
-// Function ID: 13679
+// Module ID: 13680
+// Function ID: 13681
 // Name: QRScannerModal
-// Dependencies: [32, 19, 17, 1085, 7049, 21, 1369, 13679, 558, 576, 587, 6534, 1618, 1371, 13659, 5093, 13674, 1987, 6885, 11525, 4565, 5708, 1126, 9442, 6584, 1188, 2]
+// Dependencies: [32, 19, 17, 1085, 7049, 21, 1369, 13681, 558, 576, 587, 6534, 1618, 1371, 13661, 5093, 13676, 1987, 6885, 11525, 4565, 5708, 1126, 9442, 6584, 1188, 2]
 // Exports: default
 
-// Module 13678 (QRScannerModal)
+// Module 13680 (QRScannerModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -19,8 +19,8 @@ import openUserSettings from "openUserSettings" /* 6885 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7049 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 9442 */;
 import FamilyCenterNativeUtils from "FamilyCenterNativeUtils" /* 11525 */;
-import QRLoginUtils from "QRLoginUtils" /* 13659 */;
-import QRScannerNativeComponentDefault from "QRScannerNativeComponent" /* 13679 */;
+import QRLoginUtils from "QRLoginUtils" /* 13661 */;
+import QRScannerNativeComponentDefault from "QRScannerNativeComponent" /* 13681 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -141,7 +141,7 @@ export default function QRScannerModal(showHelp) {
                 tmp22Result.pop();
                 const obj2 = { remoteAuthFingerprint: result };
                 const tmp22Result4 = ModalActionCreatorsDefault;
-                tmp22Result4.pushLazy(asyncRequire(13674, dependencyMap.paths), obj2);
+                tmp22Result4.pushLazy(asyncRequire(13676, dependencyMap.paths), obj2);
               } else {
                 let match;
                 if (url.pathname != null) {

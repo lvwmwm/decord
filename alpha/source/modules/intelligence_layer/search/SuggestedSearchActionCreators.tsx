@@ -79,7 +79,7 @@ let obj = function _performSuggestedSearchesFetch() {
         tmp29 = null;
       }
       refillWindowSize = tmp29;
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -100,7 +100,7 @@ obj = function _fetchInitialSuggestedSearches() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -130,7 +130,7 @@ obj = function _fetchInitialSuggestedSearches() {
           return obj;
         }
         c2 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp9) {
         c2 = 3;
         throw tmp9;

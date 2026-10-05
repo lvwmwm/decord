@@ -1,9 +1,9 @@
-// Module ID: 17677
-// Function ID: 17678
+// Module ID: 17701
+// Function ID: 17702
 // Name: useGuildBotApplications
-// Dependencies: [19, 9248, 558, 576, 504, 9254, 17678, 1375, 2]
+// Dependencies: [19, 9248, 558, 576, 504, 9254, 17702, 1375, 2]
 
-// Module 17677 (useGuildBotApplications)
+// Module 17701 (useGuildBotApplications)
 import GlobalUtils from "GlobalUtils" /* 1375 */;
 import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 9254 */;
 import react from "react" /* 19 */;

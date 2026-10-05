@@ -254,7 +254,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
         banUserResult = obj.banUser(tmp.id, closure_4.id, closure_13[closure_5.current].value, closure_6.current);
         tmp13 = onBan;
         nextPromise = banUserResult.then(onBan);
-        catchPromise = nextPromise.catch(() => { /* body not rendered: F141157 */ });
+        catchPromise = nextPromise.catch(() => { /* body not rendered: F141395 */ });
       }
       return;
     }
@@ -292,7 +292,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
   let tmp4Result3;
   let tmp4Result4;
   let v8jV9fx;
-  const f107735 = () => ({ banning: false, banError: false });
+  const f107881 = () => ({ banning: false, banError: false });
   ({ guildId: require, userId: importDefault, onBan } = arg0);
   let stateFromStores1;
   c7 = undefined;
@@ -311,10 +311,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
   stateFromStores1 = obj3.useStateFromStores(items2, () => UserStore.getUser(importDefault));
   ref = stateFromStores1.useRef(0);
   ref2 = stateFromStores1.useRef("");
-  [tmp11, c7] = stateFromStores(stateFromStores1.useState(f107735), 2);
+  [tmp11, c7] = stateFromStores(stateFromStores1.useState(f107881), 2);
   const items3 = [stateFromStores, stateFromStores1, onBan];
   let tmp14Result2 = null;
-  const tmp10 = stateFromStores(stateFromStores1.useState(f107735), 2);
+  const tmp10 = stateFromStores(stateFromStores1.useState(f107881), 2);
   if (null != stateFromStores1) {
     tmp14Result2 = null;
     if (null != stateFromStores) {

@@ -11,8 +11,8 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, resolved_assets, set;
 
-const f98152 = (application_id) => application_id.application_id;
-const f98153 = (item) => {
+const f98295 = (application_id) => application_id.application_id;
+const f98296 = (item) => {
   let obj;
   let tmp;
   [tmp, obj] = item;
@@ -46,12 +46,12 @@ const f98153 = (item) => {
   });
   return items;
 };
-const f98154 = (item) => {
+const f98297 = (item) => {
   let arr;
   [, arr] = item;
   return arr.length > 0;
 };
-const f98155 = (item) => {
+const f98298 = (item) => {
   let arr;
   let tmp;
   [tmp, arr] = item;
@@ -71,10 +71,10 @@ function handleFeaturedOrDeveloperFetchSuccess(configs) {
   _require = false;
   const flatResult = values.flat();
   const obj2 = require("module_12");
-  const entries1 = entries(obj2.groupBy(flatResult, f98152));
-  const mapped = entries1.map(f98153);
-  const found = mapped.filter(f98154);
-  const item = found.forEach(f98155);
+  const entries1 = entries(obj2.groupBy(flatResult, f98295));
+  const mapped = entries1.map(f98296);
+  const found = mapped.filter(f98297);
+  const item = found.forEach(f98298);
   return _require;
 }
 const map = new Map();
@@ -94,10 +94,10 @@ let obj = {
     _require = false;
     configs = configs.configs;
     let obj = require("module_12");
-    const entries1 = entries(obj.groupBy(configs, f98152));
-    const mapped = entries1.map(f98153);
-    const found = mapped.filter(f98154);
-    const item = found.forEach(f98155);
+    const entries1 = entries(obj.groupBy(configs, f98295));
+    const mapped = entries1.map(f98296);
+    const found = mapped.filter(f98297);
+    const item = found.forEach(f98298);
     return _require;
   },
   APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_SUCCESS: handleFeaturedOrDeveloperFetchSuccess,

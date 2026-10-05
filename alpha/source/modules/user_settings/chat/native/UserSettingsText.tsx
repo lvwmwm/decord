@@ -1,10 +1,10 @@
-// Module ID: 15281
-// Function ID: 15282
+// Module ID: 15285
+// Function ID: 15286
 // Name: UserSettingsText
 // Dependencies: [19, 17, 1377, 4534, 1194, 1195, 1085, 21, 4890, 587, 1252, 2028, 8863, 558, 576, 4580, 504, 4528, 1490, 6487, 6074, 1126, 6698, 1188, 10124, 4886, 6072, 6071, 8895, 5593, 2]
 // Exports: setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 15281 (UserSettingsText)
+// Module 15285 (UserSettingsText)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl23 from "intl" /* 1126 */;

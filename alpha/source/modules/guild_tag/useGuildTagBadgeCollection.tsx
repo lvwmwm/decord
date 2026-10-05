@@ -1,10 +1,10 @@
-// Module ID: 17738
-// Function ID: 17739
+// Module ID: 17762
+// Function ID: 17763
 // Name: useGuildTagBadgeCollection
 // Dependencies: [19, 9248, 4767, 7603, 504, 2]
 // Exports: default
 
-// Module 17738 (useGuildTagBadgeCollection)
+// Module 17762 (useGuildTagBadgeCollection)
 import react from "react" /* 19 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9248 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 4767 */;

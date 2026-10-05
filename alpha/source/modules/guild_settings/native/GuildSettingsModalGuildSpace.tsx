@@ -1,14 +1,14 @@
-// Module ID: 17964
-// Function ID: 17965
+// Module ID: 17986
+// Function ID: 17987
 // Name: GuildSettingsModalGuildSpace
-// Dependencies: [19, 4509, 9248, 1085, 21, 4890, 587, 558, 576, 1390, 9247, 17645, 6698, 504, 1126, 2425, 6074, 5593, 8895, 6536, 2]
+// Dependencies: [19, 4509, 9248, 1085, 21, 4890, 587, 558, 576, 1390, 9247, 17669, 6698, 504, 1126, 2425, 6074, 5593, 8895, 6536, 2]
 
-// Module 17964 (GuildSettingsModalGuildSpace)
+// Module 17986 (GuildSettingsModalGuildSpace)
 import nativeDefault from "native" /* 587 */;
 import FlagUtils from "FlagUtils" /* 1390 */;
 import _modDef2425 from "module_2425" /* 2425 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
-import ServerHubAnalytics from "ServerHubAnalytics" /* 17645 */;
+import ServerHubAnalytics from "ServerHubAnalytics" /* 17669 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4509 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9248 */;
@@ -302,14 +302,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((contentContainerStyl
           cResult[22] = tmp39;
           tmp37 = tmp39;
         }
-        const obj6 = { guild: stateFromStores, flag: constants2.SUPPRESS_GUILD_SPACE_WHITEBOARD_NOTIFICATIONS, settingType: stateFromStores(17645).ServerHubSettingType.WHITEBOARD_SYSTEM_MESSAGES, label: tmp29, disabled: !stateFromStores1 };
+        const obj6 = { guild: stateFromStores, flag: constants2.SUPPRESS_GUILD_SPACE_WHITEBOARD_NOTIFICATIONS, settingType: stateFromStores(17669).ServerHubSettingType.WHITEBOARD_SYSTEM_MESSAGES, label: tmp29, disabled: !stateFromStores1 };
         const tmp36 = closure_8(closure_12, obj6);
         cResult[17] = stateFromStores;
         cResult[18] = !stateFromStores1;
         cResult[19] = tmp36;
         tmp32 = tmp36;
       }
-      const obj7 = { guild: stateFromStores, flag: constants2.SUPPRESS_GAMING_LEADERBOARD_NOTIFICATIONS, settingType: stateFromStores(17645).ServerHubSettingType.LEADERBOARD_SYSTEM_MESSAGES, label: tmp18, subLabel: tmp19, disabled: !stateFromStores1 };
+      const obj7 = { guild: stateFromStores, flag: constants2.SUPPRESS_GAMING_LEADERBOARD_NOTIFICATIONS, settingType: stateFromStores(17669).ServerHubSettingType.LEADERBOARD_SYSTEM_MESSAGES, label: tmp18, subLabel: tmp19, disabled: !stateFromStores1 };
       const tmp28 = closure_8(closure_12, obj7);
       cResult[13] = stateFromStores;
       cResult[14] = !stateFromStores1;
@@ -356,11 +356,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((contentContainerStyl
     obj6 = { title: intl.string(stateFromStores(1126).t.OBskVU), hasIcons: false, children: items4 };
     TableRowGroup = tmp2(6074).TableRowGroup;
     intl = tmp2(1126).intl;
-    const obj7 = { guild: stateFromStores, flag: constants2.SUPPRESS_GAMING_LEADERBOARD_NOTIFICATIONS, settingType: stateFromStores(17645).ServerHubSettingType.LEADERBOARD_SYSTEM_MESSAGES, label: intl2.string(_modDef2425.btBTIw), subLabel: intl3.string(_modDef2425.n3aRYQ), disabled: !stateFromStores1 };
+    const obj7 = { guild: stateFromStores, flag: constants2.SUPPRESS_GAMING_LEADERBOARD_NOTIFICATIONS, settingType: stateFromStores(17669).ServerHubSettingType.LEADERBOARD_SYSTEM_MESSAGES, label: intl2.string(_modDef2425.btBTIw), subLabel: intl3.string(_modDef2425.n3aRYQ), disabled: !stateFromStores1 };
     intl2 = tmp2(1126).intl;
     intl3 = tmp2(1126).intl;
     items4 = [closure_8(closure_12, obj7), ];
-    const obj8 = { guild: stateFromStores, flag: constants2.SUPPRESS_GUILD_SPACE_WHITEBOARD_NOTIFICATIONS, settingType: stateFromStores(17645).ServerHubSettingType.WHITEBOARD_SYSTEM_MESSAGES, label: intl4.string(stateFromStores(1126).t.YZqqTX), disabled: !stateFromStores1 };
+    const obj8 = { guild: stateFromStores, flag: constants2.SUPPRESS_GUILD_SPACE_WHITEBOARD_NOTIFICATIONS, settingType: stateFromStores(17669).ServerHubSettingType.WHITEBOARD_SYSTEM_MESSAGES, label: intl4.string(stateFromStores(1126).t.YZqqTX), disabled: !stateFromStores1 };
     intl4 = tmp2(1126).intl;
     items4[1] = closure_8(closure_12, obj8);
     items5 = [closure_8(Form, obj4), closure_8(stateFromStores(6536).NavScrim, {})];

@@ -428,7 +428,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((giftRecipient) => {
                       } else if (arg0 === 2) {
                         return { value, done: true };
                       } else {
-                        return { value: "IconComponent", done: "IconComponent" };
+                        return { value: "IconComponent", done: null };
                       }
                     } else {
                       try {
@@ -503,7 +503,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((giftRecipient) => {
                           return { value, done: true };
                         }
                         c2 = 3;
-                        return { value: "IconComponent", done: "IconComponent" };
+                        return { value: "IconComponent", done: null };
                       } catch (tmp23) {
                         c2 = 3;
                         throw tmp23;
@@ -736,7 +736,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((giftRecipient) => {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -811,7 +811,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((giftRecipient) => {
             return { value, done: true };
           }
           c2 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp23) {
           c2 = 3;
           throw tmp23;

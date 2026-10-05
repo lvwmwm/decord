@@ -1,9 +1,9 @@
-// Module ID: 15842
-// Function ID: 15843
+// Module ID: 15846
+// Function ID: 15847
 // Name: components_native/ErrorBoundary
 // Dependencies: [5, 32, 19, 17, 11082, 21, 4890, 558, 576, 11399, 504, 1126, 5594, 4589, 1242, 584, 1188, 9510, 4886, 2]
 
-// Module 15842 (components_native/ErrorBoundary)
+// Module 15846 (components_native/ErrorBoundary)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import native from "native" /* 1188 */;
@@ -87,7 +87,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -126,7 +126,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 c3 = 0;
               }
               c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp13) {
             let closure_2 = tmp13;
@@ -185,7 +185,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -224,7 +224,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp13) {
           closure_2 = tmp13;

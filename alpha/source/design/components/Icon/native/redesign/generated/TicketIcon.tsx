@@ -1,14 +1,14 @@
-// Module ID: 15021
-// Function ID: 15022
+// Module ID: 15025
+// Function ID: 15026
 // Name: TicketIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 15022, 4579, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 15026, 4579, 2]
 
-// Module 15021 (TicketIcon)
+// Module 15025 (TicketIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4579 */;
-import AssetRegistry from "AssetRegistry" /* 15022 */;
+import AssetRegistry from "AssetRegistry" /* 15026 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

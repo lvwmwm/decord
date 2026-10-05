@@ -1,17 +1,17 @@
-// Module ID: 16057
-// Function ID: 16058
+// Module ID: 16061
+// Function ID: 16062
 // Name: ChannelListStickyHeader
-// Dependencies: [19, 17, 1085, 21, 4612, 4890, 587, 558, 576, 16026, 2077, 1126, 16058, 13718, 16056, 5998, 4580, 9943, 4886, 8394, 1188, 6708, 16071, 11925, 16076, 16077, 2]
+// Dependencies: [19, 17, 1085, 21, 4612, 4890, 587, 558, 576, 16030, 2077, 1126, 16062, 13720, 16060, 5998, 4580, 9943, 4886, 8394, 1188, 6708, 16075, 11925, 16080, 16081, 2]
 
-// Module 16057 (ChannelListStickyHeader)
+// Module 16061 (ChannelListStickyHeader)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import GuildBadgeV2Default from "GuildBadgeV2" /* 8394 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 13718 */;
-import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 16026 */;
-import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 16056 */;
-import openFavoritesGuildActionSheetDefault from "openFavoritesGuildActionSheet" /* 16058 */;
-import LurkerServerPreviewJoinButtonDefault from "LurkerServerPreviewJoinButton" /* 16076 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 13720 */;
+import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 16030 */;
+import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 16060 */;
+import openFavoritesGuildActionSheetDefault from "openFavoritesGuildActionSheet" /* 16062 */;
+import LurkerServerPreviewJoinButtonDefault from "LurkerServerPreviewJoinButton" /* 16080 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -191,7 +191,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                                                 if (cResult[51] !== tmp11) {
                                                   let tmp60 = null;
                                                   if (tmp11) {
-                                                    tmp60 = closure_6(tmp(16071).FavoritesGuildHeaderActionButton, {});
+                                                    tmp60 = closure_6(tmp(16075).FavoritesGuildHeaderActionButton, {});
                                                   }
                                                   cResult[51] = tmp11;
                                                   cResult[52] = tmp60;
@@ -261,7 +261,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                                                           let tmp79 = null;
                                                           if (undefined !== showCoachmarks && showCoachmarks) {
                                                             const obj4 = { targetRef: ref, guild };
-                                                            tmp79 = closure_6(tmp8(16077), obj4);
+                                                            tmp79 = closure_6(tmp8(16081), obj4);
                                                           }
                                                           cResult[66] = guild;
                                                           cResult[67] = undefined !== showCoachmarks && showCoachmarks;
@@ -579,7 +579,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   items6 = [tmp15Result2, ];
   let tmp24Result5 = null;
   if (isFavoritesGuildIdResult) {
-    tmp24Result5 = tmp24(tmp6(16071).FavoritesGuildHeaderActionButton, {});
+    tmp24Result5 = tmp24(tmp6(16075).FavoritesGuildHeaderActionButton, {});
   }
   items6[1] = tmp24Result5;
   items7 = [closure_7(closure_4, obj15), , , , ];
@@ -600,7 +600,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let tmp24Result8 = null;
   if (flag3) {
     const obj20 = { targetRef: ref, guild };
-    tmp24Result8 = tmp24(tmp2(16077), obj20);
+    tmp24Result8 = tmp24(tmp2(16081), obj20);
   }
   items7[4] = tmp24Result8;
   return closure_7(closure_4, obj14);

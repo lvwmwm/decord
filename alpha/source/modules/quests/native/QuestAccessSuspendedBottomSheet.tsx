@@ -1,9 +1,9 @@
-// Module ID: 14918
-// Function ID: 14919
+// Module ID: 14922
+// Function ID: 14923
 // Name: QuestAccessSuspendedBottomSheet
-// Dependencies: [19, 21, 558, 576, 4854, 14917, 11521, 1126, 10045, 5594, 2]
+// Dependencies: [19, 21, 558, 576, 4854, 14921, 11521, 1126, 10045, 5594, 2]
 
-// Module 14918 (QuestAccessSuspendedBottomSheet)
+// Module 14922 (QuestAccessSuspendedBottomSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
@@ -11,7 +11,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854
 import components_Button_Button from "components/Button/Button" /* 5594 */;
 import PromoSheet2 from "PromoSheet" /* 10045 */;
 import openAccountStanding from "openAccountStanding" /* 11521 */;
-import openQuestAccessSuspendedBottomSheet from "openQuestAccessSuspendedBottomSheet" /* 14917 */;
+import openQuestAccessSuspendedBottomSheet from "openQuestAccessSuspendedBottomSheet" /* 14921 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

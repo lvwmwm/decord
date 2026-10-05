@@ -1,9 +1,9 @@
-// Module ID: 15631
-// Function ID: 15632
+// Module ID: 15635
+// Function ID: 15636
 // Name: DesignSystemsTextSetting
-// Dependencies: [7634, 1085, 11129, 15632, 2]
+// Dependencies: [7634, 1085, 11129, 15636, 2]
 
-// Module 15631 (DesignSystemsTextSetting)
+// Module 15635 (DesignSystemsTextSetting)
 import Constants from "Constants" /* 1085 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;

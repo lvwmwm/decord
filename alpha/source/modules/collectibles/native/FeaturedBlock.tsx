@@ -1,9 +1,9 @@
-// Module ID: 15732
-// Function ID: 15733
+// Module ID: 15736
+// Function ID: 15737
 // Name: FeaturedBlock
-// Dependencies: [19, 17, 21, 587, 4890, 8421, 15733, 558, 576, 6657, 6681, 2]
+// Dependencies: [19, 17, 21, 587, 4890, 8421, 15737, 558, 576, 6657, 6681, 2]
 
-// Module 15732 (FeaturedBlock)
+// Module 15736 (FeaturedBlock)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

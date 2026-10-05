@@ -1,9 +1,9 @@
-// Module ID: 13595
-// Function ID: 13596
+// Module ID: 13597
+// Function ID: 13598
 // Name: VoiceMemberUser
-// Dependencies: [109, 19, 17, 1193, 502, 5437, 2051, 2112, 1999, 4930, 1085, 21, 4890, 587, 558, 576, 9018, 9122, 504, 4729, 13596, 13597, 1188, 13598, 13599, 13600, 13601, 4808, 4886, 1126, 8895, 7228, 9742, 4736, 5097, 4854, 9433, 5909, 5042, 9388, 4722, 2]
+// Dependencies: [109, 19, 17, 1193, 502, 5437, 2051, 2112, 1999, 4930, 1085, 21, 4890, 587, 558, 576, 9018, 9122, 504, 4729, 13598, 13599, 1188, 13600, 13601, 13602, 13603, 4808, 4886, 1126, 8895, 7228, 9742, 4736, 5097, 4854, 9433, 5909, 5042, 9388, 4722, 2]
 
-// Module 13595 (VoiceMemberUser)
+// Module 13597 (VoiceMemberUser)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
@@ -18,10 +18,10 @@ import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5097 */;
 import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7228 */;
 import useIsSpeakingDefault from "useIsSpeaking" /* 9018 */;
 import CallActionCreatorsDefault from "CallActionCreators" /* 9433 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13598 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13599 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13600 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 13601 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13600 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13601 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13602 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 13603 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -691,7 +691,7 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) => 
       const tmp27 = closure_14;
       const tmp28 = closure_5;
       if (isSpectating) {
-        const obj7 = { size: user(1188).Icon.Sizes.REFRESH_SMALL_16, source: channel(13601), style: tmp23 };
+        const obj7 = { size: user(1188).Icon.Sizes.REFRESH_SMALL_16, source: channel(13603), style: tmp23 };
         const Icon = tmp8(1188).Icon;
         tmp24Result = tmp24(Icon, obj7);
       }
@@ -701,9 +701,9 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) => 
         let tmp5Result;
         const tmp8Result6 = user(4729);
         if (tmp8Result6.isThemeDark(stateFromStores)) {
-          tmp5Result = tmp5(13596);
+          tmp5Result = tmp5(13598);
         } else {
-          tmp5Result = tmp5(13597);
+          tmp5Result = tmp5(13599);
         }
         const obj8 = { size: user(1188).Icon.Sizes.REFRESH_SMALL_16, source: tmp5Result, style: tmp2.voiceStatusIconMargin, color: tmp23.tintColor, disableColor: localMute };
         const Icon2 = tmp8(1188).Icon;
@@ -712,7 +712,7 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) => 
       items3[1] = tmp24Result5;
       let tmp24Result6 = null;
       if (tmp17) {
-        const obj9 = { size: user(1188).Icon.Sizes.REFRESH_SMALL_16, source: channel(13598), style: tmp23 };
+        const obj9 = { size: user(1188).Icon.Sizes.REFRESH_SMALL_16, source: channel(13600), style: tmp23 };
         const Icon3 = tmp8(1188).Icon;
         tmp24Result6 = tmp24(Icon3, obj9);
       }
@@ -722,10 +722,10 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) => 
         let obj11;
         const Icon4 = tmp8(1188).Icon;
         if (localVideoDisabled) {
-          obj11 = { size: user(1188).Icon.Sizes.REFRESH_SMALL_16, source: channel(13599), style: tmp2.voiceStatusIconMargin, disableColor: true };
-          const obj10 = { size: user(1188).Icon.Sizes.REFRESH_SMALL_16, source: channel(13599), style: tmp2.voiceStatusIconMargin, disableColor: true };
+          obj11 = { size: user(1188).Icon.Sizes.REFRESH_SMALL_16, source: channel(13601), style: tmp2.voiceStatusIconMargin, disableColor: true };
+          const obj10 = { size: user(1188).Icon.Sizes.REFRESH_SMALL_16, source: channel(13601), style: tmp2.voiceStatusIconMargin, disableColor: true };
         } else {
-          obj11 = { size: user(1188).Icon.Sizes.REFRESH_SMALL_16, source: channel(13600), style: tmp23 };
+          obj11 = { size: user(1188).Icon.Sizes.REFRESH_SMALL_16, source: channel(13602), style: tmp23 };
         }
         tmp24Result7 = tmp24(Icon4, obj11);
       }

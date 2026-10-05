@@ -110,7 +110,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[7] = obj5;
     tmp7 = obj5;
   }
-  const obj6 = { fontFamily: "System", fontSize: result, lineHeight: "ix", textAlign: false, width: num, marginBottom: false };
+  const obj6 = { fontFamily: "System", fontSize: result, lineHeight: "unicodeVersion", textAlign: "add", width: num, marginBottom: "duration" };
   cResult[2] = num;
   cResult[3] = result;
   cResult[4] = obj6;
@@ -124,7 +124,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     size = 20;
   }
   const size1 = { height: size, width: size };
-  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "ix", textAlign: false, width: size, marginBottom: false };
+  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "unicodeVersion", textAlign: "add", width: size, marginBottom: "duration" };
   if (null != src) {
     tmp = <Image resizeMode="contain" source={{ uri: src }} style={size1} />;
     const obj3 = { uri: src };

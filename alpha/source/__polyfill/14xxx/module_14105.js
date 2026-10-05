@@ -1,55 +1,41 @@
 // Module ID: 14105
 // Function ID: 14106
-// Dependencies: [14064, 14106, 14110]
+// Dependencies: [14068, 14066, 14084, 14106, 14107]
 
 // Module 14105
-import _mod14064 from "module_14064" /* 14064 */;
+import _mod14066 from "module_14066" /* 14066 */;
+import _mod14068 from "module_14068" /* 14068 */;
+import _mod14084 from "module_14084" /* 14084 */;
 import _mod14106 from "module_14106" /* 14106 */;
 
-let tmp;
-const _mod14110 = tmp(14110);
-const f115749 = (arg0, arg1, arg2) => {
-  const tmp3 = _mod14064(arg0);
-  const tmp4 = _mod14106(tmp3);
-  if (0 === tmp4) {
-    return !c0 && -1;
-  } else {
-    let sum = _mod14110(arg2, tmp4);
-    const tmp16 = c0;
-    if (tmp16) {
-      if (arg1 != arg1) {
-        if (tmp4 > sum) {
-          while (tmp3[+sum] == tmp3[+sum]) {
-            sum = tmp7 + 1;
-          }
-          return true;
-        }
-      }
-      return !c0 && -1;
+let closure_2 = _mod14068([].push);
+
+export default (arg0, arg1) => {
+  let num;
+  const tmp = _mod14066(arg0);
+  const items = [];
+  for (const key10010 in tmp) {
+    let tmp12 = require;
+    let tmp14 = _mod14084;
+    let tmp14Result = tmp14(_mod14106, key10010);
+    let tmp2 = !tmp14Result && tmp12(14084)(tmp, key10010);
+    if (!tmp2) {
+      continue;
+    } else {
+      let tmp4 = closure_2(items, key10010);
+      continue;
     }
-    let sum1 = sum;
-    if (tmp4 > sum) {
-      let num;
-      while (true) {
-        num = c0;
-        if (c0) {
-          if (tmp3[sum1] === arg1) {
-            break;
-          }
-        }
-        sum1 = sum1 + 1;
+    continue;
+  }
+  for (let num = 0; arg1.length > num; num = num + 1) {
+    let tmp5 = require;
+    let tmp7 = arg1[num];
+    if (_mod14084(tmp, tmp7)) {
+      let tmp5Result = tmp5(14107);
+      if (!(~tmp5Result.indexOf(items, tmp7))) {
+        let tmp10 = closure_2(items, tmp7);
       }
-      if (!num) {
-        num = sum1;
-      }
-      if (!num) {
-        num = 0;
-      }
-      return num;
     }
   }
+  return items;
 };
-let c0 = false;
-const obj = { includes: f115749, indexOf: f115749 };
-
-export default obj;

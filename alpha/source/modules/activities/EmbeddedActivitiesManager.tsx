@@ -52,7 +52,7 @@ let closure_19;
 let closure_20;
 let tmp2;
 const QuestMatchingUtils = tmp2(9041);
-const f98839 = (userStatus) => {
+const f98985 = (userStatus) => {
   userStatus = userStatus.userStatus;
   let enrolledAt;
   if (userStatus != null) {
@@ -187,7 +187,7 @@ let obj = function _handleActivityClose() {
     }
     await "IconComponent";
     ({ applicationId: c0, location: c1, instanceId: c2 } = closure_0);
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };
@@ -428,7 +428,7 @@ function maybeEmitFrameSessionMetricsForQuest(applicationId, name) {
     if (eligibleQuestsForApplicationId.length > 0) {
       const _HermesInternal2 = HermesInternal;
       const items = ["application_id:" + applicationId];
-      const found = eligibleQuestsForApplicationId.find(f98839);
+      const found = eligibleQuestsForApplicationId.find(f98985);
       let id;
       if (found != null) {
         id = found.id;
@@ -467,7 +467,7 @@ obj = function _trackFrameSessionStartFailed() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -537,7 +537,7 @@ obj = function _trackFrameSessionStartFailed() {
             closure_133_31(application_id, closure_133_0(closure_133_2[31]).MetricEvents.FRAME_SESSION_JOIN_FAILED);
           }
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp34) {
           c7 = 3;
           throw tmp34;
@@ -655,7 +655,7 @@ class EmbeddedActivitiesManager extends LifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -688,7 +688,7 @@ class EmbeddedActivitiesManager extends LifecycleManager {
               raw_thermal_state = undefined;
               application_id = 1;
               is_activity_start = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === application_id) {
             if (arg0 === 1) {
@@ -745,7 +745,7 @@ class EmbeddedActivitiesManager extends LifecycleManager {
             }
             track(ACTIVITY_SESSION_JOIN_FAILED, obj9);
             is_activity_start = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp32) {
           is_activity_start = 3;
@@ -984,7 +984,7 @@ class EmbeddedActivitiesManager extends LifecycleManager {
         await "IconComponent";
         commandOrigin = 0;
         ({ channelId: c0, applicationId: c1, analyticsLocations: c2, commandOrigin: c3, inviterUserId: c4 } = channelId);
-        return "Reflect";
+        return "Set";
       })();
       iter.next();
       return iter;
@@ -1337,7 +1337,7 @@ export const trackFrameSessionStart = function trackFrameSessionStart(applicatio
         if (eligibleQuestsForApplicationId.length > 0) {
           const _HermesInternal2 = HermesInternal;
           const items2 = ["application_id:" + applicationId];
-          const found = eligibleQuestsForApplicationId.find(f98839);
+          const found = eligibleQuestsForApplicationId.find(f98985);
           let id;
           if (found != null) {
             id = found.id;

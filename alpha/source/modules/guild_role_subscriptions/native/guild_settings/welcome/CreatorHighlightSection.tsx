@@ -1,9 +1,9 @@
-// Module ID: 17880
-// Function ID: 17881
+// Module ID: 17904
+// Function ID: 17905
 // Name: CreatorHighlightSection
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4886, 1188, 9904, 1126, 6469, 17881, 4565, 17853, 5974, 15054, 5595, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4886, 1188, 9904, 1126, 6469, 17905, 4565, 17877, 5974, 15058, 5595, 2]
 
-// Module 17880 (CreatorHighlightSection)
+// Module 17904 (CreatorHighlightSection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
@@ -11,7 +11,7 @@ import native from "native" /* 1188 */;
 import LinkingDefault from "Linking" /* 4565 */;
 import Text_Text from "Text/Text" /* 4886 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9904 */;
-import EmojiIconDefault from "EmojiIcon" /* 15054 */;
+import EmojiIconDefault from "EmojiIcon" /* 15058 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -177,7 +177,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlightedCre
   const typeConsolidationEyebrow = obj2.useTypeConsolidationEyebrow("CreatorHighlightSection", "text-xs/semibold");
   const guild_id = highlightedCreatorGuild.guild_id;
   ({ quote, quote_attribution, quote_attribution_title } = highlightedCreatorGuild);
-  const tmp7 = guild_id(17881)(guild_id, 3, 60);
+  const tmp7 = guild_id(17905)(guild_id, 3, 60);
   dependencyMap = tmp7;
   const hasAllImperativeDetails = tmp7.hasAllImperativeDetails;
   if (cResult[0] === tmp7.details) {
@@ -190,7 +190,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlightedCre
       let tmp68;
       const _Symbol2 = Symbol;
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp67 = closure_6(guild_id(17853), {});
+        const tmp67 = closure_6(guild_id(17877), {});
         cResult[3] = tmp67;
         tmp65 = tmp67;
       } else {
@@ -509,12 +509,12 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlightedCre
   const guild_id = highlightedCreatorGuild.guild_id;
   let quote_attribution_title = highlightedCreatorGuild.quote_attribution_title;
   ({ quote, quote_attribution } = highlightedCreatorGuild);
-  const tmp6 = guild_id(17881)(guild_id, 3, 60);
+  const tmp6 = guild_id(17905)(guild_id, 3, 60);
   dependencyMap = tmp6;
   const hasAllImperativeDetails = tmp6.hasAllImperativeDetails;
   let items = [hasAllImperativeDetails, tmp6];
   if (tmp6.isLoading) {
-    const obj2 = { style: tmp.cardContainer, children: closure_6(guild_id(17853), {}) };
+    const obj2 = { style: tmp.cardContainer, children: closure_6(guild_id(17877), {}) };
     return closure_6(closure_4, obj2);
   } else if (hasAllImperativeDetails) {
     const details = tmp6.details;

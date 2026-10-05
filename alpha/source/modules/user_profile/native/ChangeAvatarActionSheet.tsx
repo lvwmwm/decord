@@ -1,9 +1,9 @@
-// Module ID: 14433
-// Function ID: 14434
+// Module ID: 14437
+// Function ID: 14438
 // Name: ChangeAvatarActionSheet
-// Dependencies: [19, 17, 1377, 1085, 21, 4890, 587, 558, 576, 504, 4528, 1126, 8313, 6644, 5993, 8895, 14416, 6074, 6701, 2]
+// Dependencies: [19, 17, 1377, 1085, 21, 4890, 587, 558, 576, 504, 4528, 1126, 8313, 6644, 5993, 8895, 14420, 6074, 6701, 2]
 
-// Module 14433 (ChangeAvatarActionSheet)
+// Module 14437 (ChangeAvatarActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -16,7 +16,7 @@ import TableRowGroup2 from "TableRowGroup" /* 6074 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6644 */;
 import ActionSheet2 from "ActionSheet" /* 6701 */;
 import NitroWheelIcon from "NitroWheelIcon" /* 8313 */;
-import UserProfileUpsellButtonDefault from "UserProfileUpsellButton" /* 14416 */;
+import UserProfileUpsellButtonDefault from "UserProfileUpsellButton" /* 14420 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;

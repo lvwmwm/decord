@@ -1,9 +1,9 @@
-// Module ID: 15070
-// Function ID: 15071
+// Module ID: 15074
+// Function ID: 15075
 // Name: NoiseSuppressionSetting
 // Dependencies: [1999, 7634, 558, 576, 504, 9673, 11129, 1126, 2]
 
-// Module 15070 (NoiseSuppressionSetting)
+// Module 15074 (NoiseSuppressionSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;

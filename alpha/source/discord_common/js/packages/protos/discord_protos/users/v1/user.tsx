@@ -12,7 +12,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9, obj;
+let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, obj;
 
 let obj40;
 let tmp;
@@ -2750,7 +2750,7 @@ class UserData$Type extends MessageType19 {
       const joined13 = internalBinaryWrite8Result.join();
     }
     if (linkedUsers.restrictedSchedule) {
-      internalBinaryWrite9 = mediumUserType8.internalBinaryWrite;
+      const internalBinaryWrite9 = mediumUserType8.internalBinaryWrite;
       const restrictedSchedule = linkedUsers.restrictedSchedule;
       const tagResult17 = tag.tag(12, _mod1198.WireType.LengthDelimited);
       const internalBinaryWrite9Result = internalBinaryWrite9(restrictedSchedule, tagResult17.fork(), writeUnknownFields);

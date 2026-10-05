@@ -121,7 +121,7 @@ export const captureAppStart = function captureAppStart() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -161,7 +161,7 @@ export const captureAppStart = function captureAppStart() {
               const debug3 = _true(timestampMs[0]).debug;
               debug3.warn("[AppStart] Could not capture App Start, missing client.");
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           }
         } else if (1 === c4) {
@@ -232,7 +232,7 @@ export const _captureAppStart = function _captureAppStart(isManual) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -272,7 +272,7 @@ export const _captureAppStart = function _captureAppStart(isManual) {
               const debug3 = _true(timestampMs[0]).debug;
               debug3.warn("[AppStart] Could not capture App Start, missing client.");
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           }
         } else if (1 === c4) {
@@ -435,7 +435,7 @@ export const appStartIntegration = () => {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -716,7 +716,7 @@ export const appStartIntegration = () => {
             }
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp223) {
           c4 = 3;
           throw tmp223;
@@ -788,7 +788,7 @@ export const appStartIntegration = () => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -841,7 +841,7 @@ export const appStartIntegration = () => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let closure_2;
@@ -893,7 +893,7 @@ export const appStartIntegration = () => {
                   console.warn("[AppStart] Could not capture App Start, missing client, call `Sentry.init` first.");
                 }
                 c5 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else if (1 === c4) {
               c3 = 0;

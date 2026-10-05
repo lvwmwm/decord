@@ -101,7 +101,7 @@ let obj = function _openAppStoreOverlayMediaModal() {
     }
     ({ initialSources: c2, analyticsSource: c3, channelId: c4, onGetGamePress: c5, onClose: c6 } = closure_0);
     let closure_7 = Object.assign(tmp42, Object.assign({ originViewOrOriginLayout: 0, initialIndex: 0, initialSources: 0, analyticsSource: 0, channelId: 0, onGetGamePress: 0, onClose: 0 }));
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };

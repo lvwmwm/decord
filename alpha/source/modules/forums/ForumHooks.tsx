@@ -47,8 +47,8 @@ let closure_20;
 let closure_21;
 let closure_22;
 let closure_23;
-const f94846 = (count) => count.count + count.burst_count;
-const f94847 = (burst_count) => burst_count.burst_count;
+const f94989 = (count) => count.count + count.burst_count;
+const f94990 = (burst_count) => burst_count.burst_count;
 let _asyncToGenerator = _asyncToGenerator_mod;
 let ActiveThreadsStore = ActiveThreadsStore_mod;
 let ThreadMessageStore = ThreadMessageStore_mod;
@@ -452,7 +452,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((reactions) => {
   if (0 !== arr.length) {
     let tmp7;
     if (cResult[2] !== arr) {
-      const items = [f94846, f94847];
+      const items = [f94989, f94990];
       const obj2 = _modDef12;
       const orderByResult = obj2.orderBy(arr, items, ["desc", "desc"]);
       cResult[2] = arr;
@@ -480,7 +480,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((reactions) => {
       reactions = [];
     }
     if (0 !== reactions.length) {
-      const items = [f94846, f94847];
+      const items = [f94989, f94990];
       const obj = _modDef12;
       return obj.orderBy(reactions, items, ["desc", "desc"])[0];
     }
@@ -716,7 +716,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
         return parentChannel.count + parentChannel.burst_count;
       }
     }
-    const items2 = [f94846, f94847];
+    const items2 = [f94989, f94990];
     const obj2 = _modDef12;
     orderByResult = obj2.orderBy(tmp7, items2, ["desc", "desc"]);
   }
@@ -754,7 +754,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
     }
     let orderByResult = reactions;
     if (flag) {
-      const items = [f94846, f94847];
+      const items = [f94989, f94990];
       const obj = _modDef12;
       orderByResult = obj.orderBy(reactions, items, ["desc", "desc"]);
     }
@@ -812,7 +812,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     tmp6 = cResult[1];
   }
   if (cResult[2] !== tmp6) {
-    const items = [f94846, f94847];
+    const items = [f94989, f94990];
     const obj2 = _modDef12;
     const orderByResult = obj2.orderBy(tmp6, items, ["desc", "desc"]);
     cResult[2] = tmp6;
@@ -919,7 +919,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     if (reactions == null) {
       reactions = [];
     }
-    const items = [f94846, f94847];
+    const items = [f94989, f94990];
     const obj = _modDef12;
     return obj.orderBy(reactions, items, ["desc", "desc"]);
   }, items);
@@ -2047,8 +2047,8 @@ const tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id, arg1,
                   _setTimeout = setTimeout;
                   tmp12 = closure_3;
                   num = 350;
-                  closure_0 = setTimeout(closure_3(function() { /* body not rendered: F137997 */ }), 350);
-                  return () => { /* body not rendered: F137998 */ };
+                  closure_0 = setTimeout(closure_3(function() { /* body not rendered: F138235 */ }), 350);
+                  return () => { /* body not rendered: F138236 */ };
                 }
               } else {
                 tmp8 = closure_8;
@@ -2142,7 +2142,7 @@ const tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id, arg1,
                       const obj3 = { value, done: true };
                       return obj3;
                     } else {
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     }
                   } else {
                     let c2;
@@ -2181,7 +2181,7 @@ const tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id, arg1,
                           c2 = 0;
                         }
                         c0 = 3;
-                        return { value: "IconComponent", done: "IconComponent" };
+                        return { value: "IconComponent", done: null };
                       }
                     } catch (tmp15) {
                       if (0 === c2) {

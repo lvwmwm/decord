@@ -1,10 +1,10 @@
-// Module ID: 15862
-// Function ID: 15863
+// Module ID: 15866
+// Function ID: 15867
 // Name: RegistrationStepsUtils
-// Dependencies: [5, 19, 14515, 6083, 15863, 15864, 1085, 21, 1260, 15865, 15871, 15872, 15883, 15884, 15890, 6429, 15892, 15893, 6545, 6542, 15897, 15898, 15904, 15905, 1491, 2018, 15874, 5312, 6436, 15912, 2]
+// Dependencies: [5, 19, 14519, 6083, 15867, 15868, 1085, 21, 1260, 15869, 15875, 15876, 15887, 15888, 15894, 6429, 15896, 15897, 6545, 6542, 15901, 15902, 15908, 15909, 1491, 2018, 15878, 5312, 6436, 15916, 2]
 // Exports: getAllAuthScreens, getNextRegistrationTransitionStep, getPreviousAuthState, getPreviousRegistrationTransitionStep, getRegistrationSteps, handleNextOrSubmitRegistration
 
-// Module 15862 (RegistrationStepsUtils)
+// Module 15866 (RegistrationStepsUtils)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
@@ -12,24 +12,24 @@ import Link from "Link" /* 1491 */;
 import StringUtils from "StringUtils" /* 2018 */;
 import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6083 */;
 import LoginDefault from "Login" /* 6429 */;
-import WelcomeDefault from "Welcome" /* 15865 */;
-import RegistrationUtils from "RegistrationUtils" /* 15871 */;
-import RegisterIdentity from "RegisterIdentity" /* 15872 */;
-import register from "register" /* 15874 */;
-import RegisterDisplayNameDefault from "RegisterDisplayName" /* 15883 */;
-import RegisterAccountInformationDefault from "RegisterAccountInformation" /* 15884 */;
-import VerifyPhoneDefault from "VerifyPhone" /* 15890 */;
-import components_MFADefault from "components/MFA" /* 15892 */;
-import AccountDisabledOrDeletionScheduledDefault from "AccountDisabledOrDeletionScheduled" /* 15893 */;
-import ExternalLinkDefault from "ExternalLink" /* 15897 */;
-import RegisterAgeGateDefault from "RegisterAgeGate" /* 15898 */;
-import AgeGateUnderageDefault from "AgeGateUnderage" /* 15904 */;
-import CompanionRemoteAuth from "CompanionRemoteAuth" /* 15905 */;
+import WelcomeDefault from "Welcome" /* 15869 */;
+import RegistrationUtils from "RegistrationUtils" /* 15875 */;
+import RegisterIdentity from "RegisterIdentity" /* 15876 */;
+import register from "register" /* 15878 */;
+import RegisterDisplayNameDefault from "RegisterDisplayName" /* 15887 */;
+import RegisterAccountInformationDefault from "RegisterAccountInformation" /* 15888 */;
+import VerifyPhoneDefault from "VerifyPhone" /* 15894 */;
+import components_MFADefault from "components/MFA" /* 15896 */;
+import AccountDisabledOrDeletionScheduledDefault from "AccountDisabledOrDeletionScheduled" /* 15897 */;
+import ExternalLinkDefault from "ExternalLink" /* 15901 */;
+import RegisterAgeGateDefault from "RegisterAgeGate" /* 15902 */;
+import AgeGateUnderageDefault from "AgeGateUnderage" /* 15908 */;
+import CompanionRemoteAuth from "CompanionRemoteAuth" /* 15909 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14515 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 15863 */;
-import RegistrationConstants from "RegistrationConstants" /* 15864 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14519 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 15867 */;
+import RegistrationConstants from "RegistrationConstants" /* 15868 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, c7, c8, state;
@@ -68,7 +68,7 @@ let obj = function _handleNextOrSubmitRegistration() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -106,7 +106,7 @@ let obj = function _handleNextOrSubmitRegistration() {
           return obj;
         }
         c3 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp11) {
         c3 = 3;
         throw tmp11;
@@ -136,7 +136,7 @@ obj = function _handleRegistrationSubmit() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;
@@ -195,7 +195,7 @@ obj = function _handleRegistrationSubmit() {
               }
             } else {
               c8 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else if (arg0 === 1) {
             c8 = 3;
@@ -213,7 +213,7 @@ obj = function _handleRegistrationSubmit() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp46) {
         closure_5 = tmp46;

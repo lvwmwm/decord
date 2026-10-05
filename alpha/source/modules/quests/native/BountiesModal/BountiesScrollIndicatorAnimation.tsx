@@ -1,9 +1,9 @@
-// Module ID: 14849
-// Function ID: 14850
+// Module ID: 14853
+// Function ID: 14854
 // Name: BountiesScrollIndicatorAnimation
 // Dependencies: [32, 19, 17, 21, 4890, 558, 576, 4580, 587, 4664, 2]
 
-// Module 14849 (BountiesScrollIndicatorAnimation)
+// Module 14853 (BountiesScrollIndicatorAnimation)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

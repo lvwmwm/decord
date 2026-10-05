@@ -1,9 +1,9 @@
-// Module ID: 17750
-// Function ID: 17751
+// Module ID: 17774
+// Function ID: 17775
 // Name: GuildSettingsRoles
-// Dependencies: [32, 19, 17, 2107, 502, 4780, 2106, 2074, 4509, 6623, 17751, 17752, 1085, 21, 4890, 587, 5915, 558, 576, 1252, 17753, 504, 16066, 9247, 1490, 4514, 5070, 17754, 17763, 17764, 6074, 1126, 5909, 11775, 4886, 17765, 5594, 17767, 6880, 12442, 1369, 17761, 5705, 6624, 6547, 8895, 1188, 9234, 16315, 6536, 2]
+// Dependencies: [32, 19, 17, 2107, 502, 4780, 2106, 2074, 4509, 6623, 17775, 17776, 1085, 21, 4890, 587, 5915, 558, 576, 1252, 17777, 504, 16070, 9247, 1490, 4514, 5070, 17778, 17787, 17788, 6074, 1126, 5909, 11775, 4886, 17789, 5594, 17791, 6880, 12442, 1369, 17785, 5705, 6624, 6547, 8895, 1188, 9234, 16319, 6536, 2]
 
-// Module 17750 (GuildSettingsRoles)
+// Module 17774 (GuildSettingsRoles)
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -17,14 +17,14 @@ import GuildActionCreatorsDefault from "GuildActionCreators" /* 5705 */;
 import TableRowGroup from "TableRowGroup" /* 6074 */;
 import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 6624 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 16066 */;
-import GuildSettingsConstants from "GuildSettingsConstants" /* 17752 */;
-import GuildSettingsRolesManager from "GuildSettingsRolesManager" /* 17753 */;
-import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 17761 */;
-import actions_GuildActionCreators from "actions/GuildActionCreators" /* 17763 */;
-import GuildSettingsModalRolesActionCreatorsDefault from "GuildSettingsModalRolesActionCreators" /* 17764 */;
-import MemberRolesAbstractUI from "MemberRolesAbstractUI" /* 17765 */;
-import GuildSettingsRoleItemDefault from "GuildSettingsRoleItem" /* 17767 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 16070 */;
+import GuildSettingsConstants from "GuildSettingsConstants" /* 17776 */;
+import GuildSettingsRolesManager from "GuildSettingsRolesManager" /* 17777 */;
+import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 17785 */;
+import actions_GuildActionCreators from "actions/GuildActionCreators" /* 17787 */;
+import GuildSettingsModalRolesActionCreatorsDefault from "GuildSettingsModalRolesActionCreators" /* 17788 */;
+import MemberRolesAbstractUI from "MemberRolesAbstractUI" /* 17789 */;
+import GuildSettingsRoleItemDefault from "GuildSettingsRoleItem" /* 17791 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -34,7 +34,7 @@ import GuildRoleStore from "GuildRoleStore" /* 2106 */;
 import GuildStore_mod from "GuildStore" /* 2074 */;
 import PermissionStore from "PermissionStore" /* 4509 */;
 import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 6623 */;
-import GuildSettingsModalRolesStore from "GuildSettingsModalRolesStore" /* 17751 */;
+import GuildSettingsModalRolesStore from "GuildSettingsModalRolesStore" /* 17775 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4890 */;
@@ -60,7 +60,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const GuildSettingsRoleCreateModalActionCreatorsDefault = tmp(17754);
+const GuildSettingsRoleCreateModalActionCreatorsDefault = tmp(17778);
 let react = react_mod;
 ({ View: metroRequire, StyleSheet } = react_native);
 const isEveryoneRole = GuildRoleRecord.isEveryoneRole;
@@ -314,7 +314,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     first = cResult[0];
   }
-  const tmpResult = tmp(17753);
+  const tmpResult = tmp(17777);
   const guildSettingsRolesManagerState = tmpResult.useGuildSettingsRolesManagerState(first);
   if (cResult[1] === arg0) {
     let tmp6;

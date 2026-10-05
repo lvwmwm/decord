@@ -45,7 +45,7 @@ export default function InAppReportModal(arg0) {
   let menu;
   let name;
   let screens;
-  const f138531 = (fn) => fn();
+  const f138769 = (fn) => fn();
   ({ reportType: require, menu } = arg0);
   ({ afterSubmit: dependencyMap, isEligibleForFeedback: _asyncToGenerator } = arg0);
   _slicedToArray = undefined;
@@ -73,7 +73,7 @@ export default function InAppReportModal(arg0) {
     const result = obj.trackCloseReportModalAnalytics(require, c12, first);
     const obj2 = showReportModal;
     obj2.hideReportModal();
-    const item = _undefined2.forEach(f138531);
+    const item = _undefined2.forEach(f138769);
     const tmp3 = require;
     const tmp4 = first;
     const tmp8 = _asyncToGenerator;
@@ -116,7 +116,7 @@ export default function InAppReportModal(arg0) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -164,7 +164,7 @@ export default function InAppReportModal(arg0) {
                   closure_1_16(closure_2);
                 }
                 c4 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp31) {
               c4 = 3;
@@ -182,7 +182,7 @@ export default function InAppReportModal(arg0) {
       const result = obj.trackCloseReportModalAnalytics(obj, c12, first);
       let obj2 = showReportModal;
       obj2.hideReportModal();
-      const item = _undefined2.forEach(f138531);
+      const item = _undefined2.forEach(f138769);
       const tmp12 = closure_3;
       const tmp5 = obj;
       const tmp7 = first;

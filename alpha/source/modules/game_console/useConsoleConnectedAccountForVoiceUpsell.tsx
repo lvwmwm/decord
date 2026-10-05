@@ -1,9 +1,9 @@
-// Module ID: 17238
-// Function ID: 17239
+// Module ID: 17262
+// Function ID: 17263
 // Name: useConsoleConnectedAccountForVoiceUpsell
-// Dependencies: [5440, 5438, 4907, 8749, 1085, 558, 576, 504, 17239, 2]
+// Dependencies: [5440, 5438, 4907, 8749, 1085, 558, 576, 504, 17263, 2]
 
-// Module 17238 (useConsoleConnectedAccountForVoiceUpsell)
+// Module 17262 (useConsoleConnectedAccountForVoiceUpsell)
 import Constants from "Constants" /* 1085 */;
 import GameConsoleConstants from "GameConsoleConstants" /* 8749 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5440 */;

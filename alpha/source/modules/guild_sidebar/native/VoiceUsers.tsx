@@ -1,10 +1,10 @@
-// Module ID: 16040
-// Function ID: 16041
+// Module ID: 16044
+// Function ID: 16045
 // Name: VoiceUsers
-// Dependencies: [19, 17, 2112, 21, 4890, 587, 11698, 558, 576, 7508, 504, 16041, 10723, 1126, 12187, 4886, 9391, 6814, 16045, 16048, 2]
+// Dependencies: [19, 17, 2112, 21, 4890, 587, 11698, 558, 576, 7508, 504, 16045, 10723, 1126, 12187, 4886, 9391, 6814, 16049, 16052, 2]
 // Exports: getAudienceItemHeight
 
-// Module 16040 (VoiceUsers)
+// Module 16044 (VoiceUsers)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -138,7 +138,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed
     }
     const obj4 = { user, member, mute: null, deaf: null, selfVideo: null, selfMute: null, selfDeaf: null, suppress: null, collapsed, sessionId: voiceState2.sessionId, channel, isGuest };
     ({ mute: obj3.mute, deaf: obj3.deaf, selfVideo: obj3.selfVideo, selfMute: obj3.selfMute, selfDeaf: obj3.selfDeaf, suppress: obj3.suppress } = voiceState2);
-    const tmp15 = closure_6(tmp4(16041), obj4, user.id);
+    const tmp15 = closure_6(tmp4(16045), obj4, user.id);
     cResult[5] = channel;
     cResult[6] = collapsed;
     cResult[7] = isGuest;
@@ -198,7 +198,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed
   }
   const obj2 = { style: userCollapsedOverlap, children: closure_6(tmpResult, obj5, user.id) };
   obj5 = { user, member, mute: null, deaf: null, selfVideo: null, selfMute: null, selfDeaf: null, suppress: null, collapsed, sessionId: voiceState2.sessionId, channel, isGuest };
-  tmpResult = tmp(16041);
+  tmpResult = tmp(16045);
   if (member == null) {
     member = storeMember;
   }
@@ -322,7 +322,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed) => {
       if (cResult[2] === voiceStates) {
         tmp6 = cResult[3];
       }
-      const arr2 = channel(16045)(tmp6);
+      const arr2 = channel(16049)(tmp6);
       if (cResult[4] === guild_id) {
         if (cResult[5] === arr2) {
           tmp9 = cResult[6];
@@ -357,7 +357,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed) => {
                 }
                 const obj2 = { collapsed, children: items };
                 items = [tmp16, tmp18];
-                const tmp24 = closure_7(channel(16048), obj2);
+                const tmp24 = closure_7(channel(16052), obj2);
                 cResult[16] = collapsed;
                 cResult[17] = tmp16;
                 cResult[18] = tmp18;

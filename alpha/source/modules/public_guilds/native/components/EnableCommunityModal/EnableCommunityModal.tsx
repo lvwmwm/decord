@@ -1,17 +1,17 @@
-// Module ID: 17812
-// Function ID: 17813
+// Module ID: 17836
+// Function ID: 17837
 // Name: EnableCommunityModal
-// Dependencies: [19, 21, 17811, 558, 576, 6016, 6010, 1126, 6880, 4809, 17813, 17814, 17826, 17827, 6496, 2]
+// Dependencies: [19, 21, 17835, 558, 576, 6016, 6010, 1126, 6880, 4809, 17837, 17838, 17850, 17851, 6496, 2]
 
-// Module 17812 (EnableCommunityModal)
+// Module 17836 (EnableCommunityModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import NavigatorHeader from "NavigatorHeader" /* 6010 */;
 import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 6016 */;
 import Navigator2 from "Navigator" /* 6496 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 17811 */;
-import EnableCommunitySharedNavigation from "EnableCommunitySharedNavigation" /* 17813 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 17835 */;
+import EnableCommunitySharedNavigation from "EnableCommunitySharedNavigation" /* 17837 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

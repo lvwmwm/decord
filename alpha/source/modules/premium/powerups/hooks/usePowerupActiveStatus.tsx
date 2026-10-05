@@ -152,7 +152,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arr) => {
           let obj;
           if (null != stateFromStores1) {
             if (null == metroRequire[skuId.skuId]) {
-              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "application" };
+              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "unicodeVersion" };
             } else {
               obj = { isActiveFromLevel: tmp16.premiumTier >= metroRequire[skuId.skuId], levelEntitlement: tmp3, levelPowerup: tmp5 };
               tmp3 = undefined;
@@ -203,7 +203,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arr) => {
           }
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "application" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "unicodeVersion" };
     }
     return obj3;
   });
@@ -261,7 +261,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arr) => {
           let obj;
           if (null != unlockedPowerups) {
             if (null == metroRequire[skuId.skuId]) {
-              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "application" };
+              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "unicodeVersion" };
             } else {
               let tmp4;
               const tmp = tmp18.premiumTier >= metroRequire[skuId.skuId];
@@ -313,7 +313,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arr) => {
           }
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "application" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "unicodeVersion" };
     }
     return obj3;
   });
@@ -343,7 +343,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     let tmp6;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "cursor" };
+      const obj2 = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "toCharArray$esjava$1" };
       cResult[2] = obj2;
       tmp6 = obj2;
     } else {
@@ -365,8 +365,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }
   const tmpResult = tmp(arg0, items);
   if (tmpResult.length <= 0) {
-    first = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "cursor" };
-    const obj = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "cursor" };
+    first = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "toCharArray$esjava$1" };
+    const obj = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "toCharArray$esjava$1" };
   } else {
     first = tmpResult[0];
   }

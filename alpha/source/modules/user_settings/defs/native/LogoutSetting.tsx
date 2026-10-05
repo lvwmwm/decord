@@ -1,9 +1,9 @@
-// Module ID: 15378
-// Function ID: 15379
+// Module ID: 15382
+// Function ID: 15383
 // Name: LogoutSetting
 // Dependencies: [21, 510, 1105, 5568, 8966, 6487, 6082, 5709, 5713, 1126, 11129, 9576, 2]
 
-// Module 15378 (LogoutSetting)
+// Module 15382 (LogoutSetting)
 import Storage2 from "Storage" /* 510 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl5 from "intl" /* 1126 */;

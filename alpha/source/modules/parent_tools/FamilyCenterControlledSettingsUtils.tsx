@@ -1,14 +1,14 @@
-// Module ID: 14625
-// Function ID: 14626
+// Module ID: 14629
+// Function ID: 14630
 // Name: FamilyCenterControlledSettingsUtils
-// Dependencies: [1197, 14622, 6804, 6801, 2]
+// Dependencies: [1197, 14626, 6804, 6801, 2]
 // Exports: isSetAndNotDefault, resolveExplicitContentSettingWithDefaultsForTeen, updateExplicitContentSetting, updateGoreContentSetting
 
-// Module 14625 (FamilyCenterControlledSettingsUtils)
+// Module 14629 (FamilyCenterControlledSettingsUtils)
 import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
 import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 6801 */;
 import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 6804 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14622 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14626 */;
 import size from "module_2" /* 2 */;
 
 function getGoreContentSettingOrDefault(arg0) {
@@ -52,7 +52,7 @@ function getExplicitContentSettingOrDefault(teenId) {
   const tmp5 = null != setting && setting !== preloaded_user_settings.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
   if (!tmp5) {
     let tmp8;
-    const ParentalControlledLegacyExplicitContent = tmp(14622).ParentalControlledLegacyExplicitContent;
+    const ParentalControlledLegacyExplicitContent = tmp(14626).ParentalControlledLegacyExplicitContent;
     const controlledSetting1 = ParentalControlledLegacyExplicitContent.getControlledSetting(teenId);
     const tmpResult = SensitiveMediaExplicitRedactionSettingsUtils;
     if (isFriend) {
@@ -69,7 +69,7 @@ function getExplicitContentSettingOrDefault(teenId) {
   }
   const tmp10 = null != prop1 && prop1 !== preloaded_user_settings.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
   if (!tmp10) {
-    const ParentalControlledLegacyExplicitContent2 = tmp(14622).ParentalControlledLegacyExplicitContent;
+    const ParentalControlledLegacyExplicitContent2 = tmp(14626).ParentalControlledLegacyExplicitContent;
     const controlledSetting2 = ParentalControlledLegacyExplicitContent2.getControlledSetting(teenId);
     prop1 = tmp(6801).TEEN_EXPLICIT_CONTENT_FILTER_TO_EXPLICIT_CONTENT_REDACTION_FRIEND_DM[controlledSetting2];
   }

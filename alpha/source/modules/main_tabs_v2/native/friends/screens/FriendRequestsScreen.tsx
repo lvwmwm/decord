@@ -1,9 +1,9 @@
-// Module ID: 16928
-// Function ID: 16929
+// Module ID: 16947
+// Function ID: 16948
 // Name: FriendRequestsScreen
-// Dependencies: [32, 19, 17, 7124, 4519, 1377, 10592, 1085, 10607, 21, 4890, 587, 16929, 1987, 5709, 558, 576, 7125, 573, 2028, 16352, 7126, 11, 6657, 6681, 1252, 12884, 6663, 16930, 1342, 7850, 1126, 1490, 6074, 5993, 4886, 9282, 5911, 9283, 5909, 10726, 14913, 10598, 2]
+// Dependencies: [32, 19, 17, 7124, 4519, 1377, 10592, 1085, 10607, 21, 4890, 587, 16948, 1987, 5709, 558, 576, 7125, 573, 2028, 16356, 7126, 11, 6657, 6681, 1252, 12884, 6663, 16949, 1342, 7850, 1126, 1490, 6074, 5993, 4886, 9282, 5911, 9283, 5909, 10726, 14917, 10598, 2]
 
-// Module 16928 (FriendRequestsScreen)
+// Module 16947 (FriendRequestsScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,8 +11,8 @@ import useAlertStore from "useAlertStore" /* 5709 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
 import UserRowConstants from "UserRowConstants" /* 10592 */;
 import Constants2 from "Constants" /* 10607 */;
-import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 16352 */;
-import getPendingRelationshipIds from "getPendingRelationshipIds" /* 16930 */;
+import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 16356 */;
+import getPendingRelationshipIds from "getPendingRelationshipIds" /* 16949 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7124 */;
@@ -562,7 +562,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const intl4 = tmp7(1126).intl;
       stringResult = intl4.string(tmp7(1126).t["yvzX/Z"]);
     }
-    obj16 = { title: stringResult, illustration: analyticsLocations(14913).WumpusCouchSpotIllustration, disableBackgroundOverlay: true };
+    obj16 = { title: stringResult, illustration: analyticsLocations(14917).WumpusCouchSpotIllustration, disableBackgroundOverlay: true };
     tmp32Result2 = tmp32(tmp33, obj15);
   } else {
     const UsersFastList = tmp7(10598).UsersFastList;

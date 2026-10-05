@@ -167,8 +167,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
         if (cResult[6] !== displayNameStylesFont) {
           let tmp19;
           if (null != displayNameStylesFont) {
-            tmp19 = { fontFamily: displayNameStylesFont, lineHeight: "a" };
-            const obj4 = { fontFamily: displayNameStylesFont, lineHeight: "a" };
+            tmp19 = { fontFamily: displayNameStylesFont, lineHeight: "r" };
+            const obj4 = { fontFamily: displayNameStylesFont, lineHeight: "r" };
           }
           cResult[6] = displayNameStylesFont;
           cResult[7] = tmp19;
@@ -755,8 +755,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   const displayNameStylesFont = obj4.useDisplayNameStylesFont({ displayNameStyles: result, ignoreDisabledStylesSetting });
   let tmp13;
   if (null != displayNameStylesFont) {
-    tmp13 = { fontFamily: displayNameStylesFont, lineHeight: "a" };
-    const obj5 = { fontFamily: displayNameStylesFont, lineHeight: "a" };
+    tmp13 = { fontFamily: displayNameStylesFont, lineHeight: "r" };
+    const obj5 = { fontFamily: displayNameStylesFont, lineHeight: "r" };
   }
   let num = merged.lineClamp;
   if (num == null) {

@@ -20,7 +20,7 @@ let c9;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
-const f93201 = () => {
+const f93344 = () => {
   closure_11 = {};
   channelId = channelId.getChannelId();
   const tmp2 = null != channelId && null == channel.getChannel(channelId);
@@ -33,7 +33,7 @@ function initialize() {
   if (!tmp) {
     c12 = true;
     const obj = DispatcherDefault;
-    const subscription = obj.subscribe("CONNECTION_OPEN", f93201);
+    const subscription = obj.subscribe("CONNECTION_OPEN", f93344);
   }
 }
 function dispatchLoadedThread(nextResult, arg1) {
@@ -64,7 +64,7 @@ function loadThread(channelId) {
       c12 = true;
       let tmp2 = importDefault;
       let obj = DispatcherDefault;
-      const subscription = obj.subscribe("CONNECTION_OPEN", f93201);
+      const subscription = obj.subscribe("CONNECTION_OPEN", f93344);
     }
     if (GatewayConnectionStore.isConnected()) {
       if (null != closure_11[channelId]) {
@@ -109,7 +109,7 @@ function loadThread(channelId) {
         const catchPromise = nextPromise.catch(() => {
           let guildId;
           closure_11[id] = { type: "NOT_FOUND" };
-          const obj = { id, guild_id: guildId, parent_id: "Array" };
+          const obj = { id, guild_id: guildId, parent_id: "r" };
           guildId = undefined;
           const dispatch = DispatcherDefault.dispatch;
           DispatcherDefault;

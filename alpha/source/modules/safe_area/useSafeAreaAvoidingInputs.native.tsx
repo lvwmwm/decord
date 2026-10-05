@@ -48,7 +48,7 @@ let obj = function _calculateScrollOffset() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -85,7 +85,7 @@ let obj = function _calculateScrollOffset() {
                   return { value: Number.MAX_SAFE_INTEGER, done: true };
                 } else {
                   c6 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               }
             }
@@ -222,7 +222,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((insets) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -342,7 +342,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((insets) => {
           }
         }
         inputInScrollView = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp35) {
         inputInScrollView = 3;
         throw tmp35;
@@ -380,7 +380,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((insets) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -501,7 +501,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((insets) => {
           }
         }
         c3 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp35) {
         c3 = 3;
         throw tmp35;

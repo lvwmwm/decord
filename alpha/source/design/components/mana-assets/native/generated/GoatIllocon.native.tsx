@@ -1,13 +1,13 @@
-// Module ID: 16667
-// Function ID: 16668
+// Module ID: 16678
+// Function ID: 16679
 // Name: GoatIllocon
-// Dependencies: [21, 558, 576, 16668, 5974, 2]
+// Dependencies: [21, 558, 576, 16679, 5974, 2]
 
-// Module 16667 (GoatIllocon)
+// Module 16678 (GoatIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5974 */;
-import _modDef16668 from "module_16668" /* 16668 */;
+import _modDef16679 from "module_16679" /* 16679 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef16668 };
+    const obj2 = { uri: _modDef16679 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num === undefined) {
     num = 64;
   }
-  const obj2 = { uri: _modDef16668 };
+  const obj2 = { uri: _modDef16679 };
   FastImageDefault;
   const items = [{ width: num, height: num }];
   return <tmp fadeDuration={0} source={obj2} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;

@@ -1,10 +1,10 @@
-// Module ID: 14745
-// Function ID: 14746
+// Module ID: 14749
+// Function ID: 14750
 // Name: UserSettingsAuthedApp
 // Dependencies: [19, 17, 2050, 6602, 2051, 4519, 5071, 2116, 1085, 10653, 9816, 21, 4890, 587, 558, 576, 4812, 4886, 1490, 1491, 1126, 6665, 8991, 8725, 504, 12263, 1402, 5709, 12262, 4854, 9817, 1987, 1260, 9434, 8080, 6487, 6491, 8047, 4737, 6614, 6609, 11, 11670, 8942, 6074, 6698, 5993, 2]
 // Exports: default, handleDeleteApp
 
-// Module 14745 (UserSettingsAuthedApp)
+// Module 14749 (UserSettingsAuthedApp)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl12 from "intl" /* 1126 */;

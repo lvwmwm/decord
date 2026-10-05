@@ -1,9 +1,9 @@
-// Module ID: 14644
-// Function ID: 14645
+// Module ID: 14648
+// Function ID: 14649
 // Name: AndroidViewNsfwDmCommandsSetting
 // Dependencies: [7634, 558, 8801, 576, 5100, 8802, 5102, 1369, 8084, 8086, 2028, 11129, 1126, 2]
 
-// Module 14644 (AndroidViewNsfwDmCommandsSetting)
+// Module 14648 (AndroidViewNsfwDmCommandsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;

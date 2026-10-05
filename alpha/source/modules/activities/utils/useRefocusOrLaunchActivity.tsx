@@ -52,7 +52,7 @@ export default function useRefocusOrLaunchActivity(applicationId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -133,7 +133,7 @@ export default function useRefocusOrLaunchActivity(applicationId) {
               }
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else if (1 === runBeforeLaunchAttempt) {
           c4 = 0;

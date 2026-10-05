@@ -249,7 +249,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
                       tmp4 = account;
                       tmp5 = PlatformTypes;
                       obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                      obj1.onConfirm = function onConfirm() { /* body not rendered: F140923 */ };
+                      obj1.onConfirm = function onConfirm() { /* body not rendered: F141161 */ };
                       handleClickResult = obj.handleClick(obj1);
                     }
                     return;
@@ -284,7 +284,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
                       tmp4 = account;
                       tmp5 = PlatformTypes;
                       obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                      obj1.onConfirm = function onConfirm() { /* body not rendered: F140923 */ };
+                      obj1.onConfirm = function onConfirm() { /* body not rendered: F141161 */ };
                       handleClickResult = obj.handleClick(obj1);
                     }
                     return;
@@ -314,7 +314,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
                       tmp4 = account;
                       tmp5 = PlatformTypes;
                       obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                      obj1.onConfirm = function onConfirm() { /* body not rendered: F140923 */ };
+                      obj1.onConfirm = function onConfirm() { /* body not rendered: F141161 */ };
                       handleClickResult = obj.handleClick(obj1);
                     }
                     return;
@@ -394,7 +394,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
               tmp4 = account;
               tmp5 = PlatformTypes;
               obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-              obj1.onConfirm = function onConfirm() { /* body not rendered: F140923 */ };
+              obj1.onConfirm = function onConfirm() { /* body not rendered: F141161 */ };
               handleClickResult = obj.handleClick(obj1);
             }
             return;
@@ -472,7 +472,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
           tmp4 = account;
           tmp5 = PlatformTypes;
           obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-          obj1.onConfirm = function onConfirm() { /* body not rendered: F140923 */ };
+          obj1.onConfirm = function onConfirm() { /* body not rendered: F141161 */ };
           handleClickResult = obj.handleClick(obj1);
         }
         return;
@@ -528,7 +528,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
           tmp4 = account;
           tmp5 = PlatformTypes;
           obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-          obj1.onConfirm = function onConfirm() { /* body not rendered: F140923 */ };
+          obj1.onConfirm = function onConfirm() { /* body not rendered: F141161 */ };
           handleClickResult = obj.handleClick(obj1);
         }
         return;

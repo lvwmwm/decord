@@ -1,9 +1,9 @@
-// Module ID: 14912
-// Function ID: 14913
+// Module ID: 14916
+// Function ID: 14917
 // Name: QuestDisclosureModalInner
-// Dependencies: [17, 1085, 21, 4890, 587, 558, 576, 2028, 8791, 1126, 8551, 11435, 8739, 14913, 10010, 4886, 5995, 2115, 5594, 2]
+// Dependencies: [17, 1085, 21, 4890, 587, 558, 576, 2028, 8791, 1126, 8551, 11435, 8739, 14917, 10010, 4886, 5995, 2115, 5594, 2]
 
-// Module 14912 (QuestDisclosureModalInner)
+// Module 14916 (QuestDisclosureModalInner)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import Text_Text from "Text/Text" /* 4886 */;
@@ -95,7 +95,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   ({ container, contentContainer } = tmp4);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp9 = closure_6(tmp(14913).WumpusCouchSpotIllustration, {});
+    const tmp9 = closure_6(tmp(14917).WumpusCouchSpotIllustration, {});
     cResult[2] = tmp9;
     tmp7 = tmp9;
   } else {

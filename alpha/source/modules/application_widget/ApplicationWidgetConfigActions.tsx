@@ -46,7 +46,7 @@ let obj = function _fetchFeaturedWidgetConfigsFromApi() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -107,7 +107,7 @@ let obj = function _fetchFeaturedWidgetConfigsFromApi() {
           closure_129_9.succeed();
           c3 = 0;
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp24) {
         closure_2 = tmp24;
@@ -137,7 +137,7 @@ obj = function _fetchDeveloperWidgetConfigsFromApi() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -189,7 +189,7 @@ obj = function _fetchDeveloperWidgetConfigsFromApi() {
           obj.dispatch(obj10);
           c3 = 0;
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp24) {
         closure_2 = tmp24;
@@ -219,7 +219,7 @@ obj = function _fetchWidgetConfigsFromApi() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -272,7 +272,7 @@ obj = function _fetchWidgetConfigsFromApi() {
             dispatch(obj);
             c4 = 0;
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp28) {
           closure_3 = tmp28;

@@ -99,7 +99,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
               if (!tmp8) {
                 obj9 = { style: null, onPress: null, children: null };
                 obj9.style = tmp6.joinGuildButton;
-                obj9.onPress = function onPress() { /* body not rendered: F139860 */ };
+                obj9.onPress = function onPress() { /* body not rendered: F140098 */ };
                 PressableOpacity = tmp4(tmp5[13]).PressableOpacity;
                 obj10 = { variant: "text-xs/medium", color: "text-default", children: null };
                 Text2 = tmp4(tmp5[11]).Text;
@@ -150,7 +150,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
             if (!tmp8) {
               obj9 = { style: null, onPress: null, children: null };
               obj9.style = tmp6.joinGuildButton;
-              obj9.onPress = function onPress() { /* body not rendered: F139860 */ };
+              obj9.onPress = function onPress() { /* body not rendered: F140098 */ };
               PressableOpacity = tmp4(tmp5[13]).PressableOpacity;
               obj10 = { variant: "text-xs/medium", color: "text-default", children: null };
               Text2 = tmp4(tmp5[11]).Text;
@@ -213,7 +213,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                     if (!tmp8) {
                       obj9 = { style: null, onPress: null, children: null };
                       obj9.style = tmp6.joinGuildButton;
-                      obj9.onPress = function onPress() { /* body not rendered: F139860 */ };
+                      obj9.onPress = function onPress() { /* body not rendered: F140098 */ };
                       PressableOpacity = tmp4(tmp5[13]).PressableOpacity;
                       obj10 = { variant: "text-xs/medium", color: "text-default", children: null };
                       Text2 = tmp4(tmp5[11]).Text;
@@ -291,7 +291,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           if (!tmp8) {
             obj9 = { style: null, onPress: null, children: null };
             obj9.style = tmp6.joinGuildButton;
-            obj9.onPress = function onPress() { /* body not rendered: F139860 */ };
+            obj9.onPress = function onPress() { /* body not rendered: F140098 */ };
             PressableOpacity = tmp4(tmp5[13]).PressableOpacity;
             obj10 = { variant: "text-xs/medium", color: "text-default", children: null };
             Text2 = tmp4(tmp5[11]).Text;

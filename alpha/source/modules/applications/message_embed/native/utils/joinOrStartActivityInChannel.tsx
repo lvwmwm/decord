@@ -32,7 +32,7 @@ let obj = function _joinOrStartActivityInChannel() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -64,7 +64,7 @@ let obj = function _joinOrStartActivityInChannel() {
               compositeInstanceId = undefined;
               referrerId = 1;
               c5 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

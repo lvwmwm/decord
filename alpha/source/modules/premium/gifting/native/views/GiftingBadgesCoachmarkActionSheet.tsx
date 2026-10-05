@@ -1,9 +1,9 @@
-// Module ID: 17095
-// Function ID: 17096
+// Module ID: 17119
+// Function ID: 17120
 // Name: GiftingBadgesCoachmarkActionSheet
-// Dependencies: [19, 17, 7863, 2048, 21, 4890, 587, 558, 576, 10475, 4854, 4737, 10481, 1126, 2589, 4886, 5594, 6645, 10392, 6681, 17096, 10766, 7855, 504, 2]
+// Dependencies: [19, 17, 7863, 2048, 21, 4890, 587, 558, 576, 10475, 4854, 4737, 10481, 1126, 2589, 4886, 5594, 6645, 10392, 6681, 17120, 10766, 7855, 504, 2]
 
-// Module 17095 (GiftingBadgesCoachmarkActionSheet)
+// Module 17119 (GiftingBadgesCoachmarkActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
@@ -13,7 +13,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
 import utils_openGiftModal from "utils/openGiftModal" /* 10392 */;
 import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10481 */;
-import _modDef17096 from "module_17096" /* 17096 */;
+import _modDef17120 from "module_17120" /* 17120 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7863 */;
@@ -533,7 +533,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismisse
         markAsDismissed(ContentDismissActionType.USER_DISMISS);
       }
     }
-    tmp8[0] = _modDef17096;
+    tmp8[0] = _modDef17120;
     cResult[4] = tmp8;
     tmp7 = tmp8;
   } else {
@@ -694,7 +694,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismisse
   obj2 = { style: tmp.container, children: items2 };
   const obj3 = { style: tmp.graphicContainer, children: closure_8(closure_4, obj4) };
   obj4 = { source: obj5, style: tmp.newBadgeImage };
-  obj5 = { uri: _modDef17096 };
+  obj5 = { uri: _modDef17120 };
   BottomSheet = markAsDismissed(6645).BottomSheet;
   items2 = [closure_8(closure_5, obj3), , ];
   const obj6 = { style: tmp.textContainer, children: items3 };

@@ -1,9 +1,9 @@
-// Module ID: 15078
-// Function ID: 15079
+// Module ID: 15082
+// Function ID: 15083
 // Name: SettingsAppearanceScreen
-// Dependencies: [19, 4697, 1194, 1193, 15079, 7634, 1085, 21, 558, 576, 1490, 1369, 7498, 1126, 10724, 1259, 3367, 2115, 15080, 5590, 573, 11129, 14495, 2]
+// Dependencies: [19, 4697, 1194, 1193, 15083, 7634, 1085, 21, 558, 576, 1490, 1369, 7498, 1126, 10724, 1259, 3367, 2115, 15084, 5590, 573, 11129, 14499, 2]
 
-// Module 15078 (SettingsAppearanceScreen)
+// Module 15082 (SettingsAppearanceScreen)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
@@ -20,7 +20,7 @@ import react from "react" /* 19 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4697 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
 import ThemeStore from "ThemeStore" /* 1193 */;
-import FontScaleStore from "FontScaleStore" /* 15079 */;
+import FontScaleStore from "FontScaleStore" /* 15083 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let _require, gradientPreset;
 let metroImportAll;
 let metroImportDefault;
 let tmp5;
-const SettingLayoutDefault = tmp5(14495);
+const SettingLayoutDefault = tmp5(14499);
 function getAppearanceSettings() {
   let GR2KOG;
   let format;

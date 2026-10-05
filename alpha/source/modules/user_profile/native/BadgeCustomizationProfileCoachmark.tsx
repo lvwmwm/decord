@@ -1,9 +1,9 @@
-// Module ID: 16956
-// Function ID: 16957
+// Module ID: 16975
+// Function ID: 16976
 // Name: BadgeCustomizationProfileCoachmark
-// Dependencies: [32, 19, 1377, 2048, 587, 558, 576, 1484, 1618, 16936, 4528, 504, 4596, 1126, 4605, 9882, 2]
+// Dependencies: [32, 19, 1377, 2048, 587, 558, 576, 1484, 1618, 16955, 4528, 504, 4596, 1126, 4605, 9882, 2]
 
-// Module 16956 (BadgeCustomizationProfileCoachmark)
+// Module 16975 (BadgeCustomizationProfileCoachmark)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
@@ -18,7 +18,7 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const YouBannerDecorations = tmp(16936);
+const YouBannerDecorations = tmp(16955);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const PX_64 = nativeDefault.space.PX_64;
 let ReactCompilerGating = ReactCompilerGating_mod;

@@ -156,7 +156,7 @@ let obj = function _addOrUpdateSavedMessage() {
       await "IconComponent";
       displayToast = displayToast.displayToast;
       tmp = Object.assign(displayToast, Object.assign({ displayToast: 0 }));
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -179,7 +179,7 @@ obj = function _removeSavedMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -203,7 +203,7 @@ obj = function _removeSavedMessage() {
             ClockIcon = undefined;
             content = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === content) {
           if (arg0 === 1) {
@@ -277,7 +277,7 @@ obj = function _removeSavedMessage() {
             }
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp44) {
         c4 = 3;

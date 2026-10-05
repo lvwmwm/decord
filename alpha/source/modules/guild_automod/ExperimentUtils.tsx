@@ -1,12 +1,12 @@
-// Module ID: 17656
-// Function ID: 17657
+// Module ID: 17680
+// Function ID: 17681
 // Name: guild_automod/ExperimentUtils
-// Dependencies: [558, 576, 17657, 6748, 2]
+// Dependencies: [558, 576, 17681, 6748, 2]
 
-// Module 17656 (guild_automod/ExperimentUtils)
+// Module 17680 (guild_automod/ExperimentUtils)
 import react from "react" /* 576 */;
-import VibegrationsGuildExperiment from "VibegrationsGuildExperiment" /* 6748 */;
-import AutomodExperiment from "AutomodExperiment" /* 17657 */;
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6748 */;
+import AutomodExperiment from "AutomodExperiment" /* 17681 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   } else {
     tmp4 = cResult[1];
   }
-  const AutomodApplicationRules = tmp(17657).AutomodApplicationRules;
+  const AutomodApplicationRules = tmp(17681).AutomodApplicationRules;
   let enabled = AutomodApplicationRules.useConfig(tmp4).enabled;
   if (cResult[2] !== guildId) {
     const obj3 = { guildId, location: "automod_settings" };
@@ -33,19 +33,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   } else {
     tmp5 = cResult[3];
   }
-  const tmpResult = VibegrationsGuildExperiment;
+  const tmpResult = ConjureGuildExperiment;
   if (!enabled) {
-    enabled = tmpResult.useIsVibegrationsGuildEnabled(tmp5);
+    enabled = tmpResult.useIsConjureGuildEnabled(tmp5);
   }
   return enabled;
 }) : ((guildId) => {
   const AutomodApplicationRules = AutomodExperiment.AutomodApplicationRules;
   const obj = { guildId, location: "automod_settings" };
   let enabled = AutomodApplicationRules.useConfig(obj).enabled;
-  const obj2 = VibegrationsGuildExperiment;
+  const obj2 = ConjureGuildExperiment;
   const obj3 = { guildId, location: "automod_settings" };
   if (!enabled) {
-    enabled = obj2.useIsVibegrationsGuildEnabled(obj3);
+    enabled = obj2.useIsConjureGuildEnabled(obj3);
   }
   return enabled;
 });

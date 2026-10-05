@@ -1,18 +1,18 @@
-// Module ID: 17080
-// Function ID: 17081
+// Module ID: 17104
+// Function ID: 17105
 // Name: SoundPlayer
-// Dependencies: [19, 2050, 5118, 8703, 4907, 8699, 2055, 4912, 502, 2051, 2074, 1999, 12466, 4913, 2103, 5576, 4909, 4914, 1085, 8704, 21, 558, 576, 504, 9562, 5037, 4942, 4498, 1375, 6746, 2]
+// Dependencies: [19, 2050, 5118, 8699, 8703, 4907, 2055, 4912, 502, 2051, 2074, 1999, 12466, 4913, 2103, 5576, 4909, 4914, 1085, 8704, 21, 558, 576, 504, 9562, 5037, 4942, 4498, 1375, 6746, 2]
 
-// Module 17080 (SoundPlayer)
+// Module 17104 (SoundPlayer)
 import react2 from "react" /* 576 */;
 import EmbeddedActivitiesStore2 from "EmbeddedActivitiesStore" /* 2050 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
 import SoundUtils from "SoundUtils" /* 9562 */;
 import react_mod from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5118 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 8699 */;
 import FramesStore from "FramesStore" /* 8703 */;
 import GameConsoleStore from "GameConsoleStore" /* 4907 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8699 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
@@ -71,7 +71,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, ar
       }
     }
   }
-  const fn = function c() {
+  const fn = function o() {
     let batchedStoreListener;
     closure_0 = batchedStoreListener();
     batchedStoreListener = new closure_0(batchedStoreListener[23]).BatchedStoreListener(closure_0, () => {
@@ -939,8 +939,8 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(3);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SelectedChannelStore, EmbeddedActivitiesStore, FramesStore, AuthenticationStore, ChannelStore, , , ];
-    let tmp10 = VibegrationsProjectStore;
-    items[5] = VibegrationsProjectStore;
+    let tmp10 = ConjureProjectStore;
+    items[5] = ConjureProjectStore;
     items[6] = ApplicationStore;
     items[7] = GuildStore;
     const fn = function c() {
@@ -986,16 +986,16 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       let result = null == tmp13Result;
       if (result) {
         let applicationId;
-        const isVibegrationsProjectApplication = VibegrationsProjectStore.isVibegrationsProjectApplication;
+        const isConjureProjectApplication = ConjureProjectStore.isConjureProjectApplication;
         if (mainFrame != null) {
           applicationId = mainFrame.applicationId;
         }
-        result = isVibegrationsProjectApplication(applicationId);
+        result = isConjureProjectApplication(applicationId);
       }
       let result1 = null != tmp13Result;
       if (result1) {
-        const tmp4Result6 = require("VibegrationsUtils");
-        result1 = tmp4Result6.isVibegrationsChannelCandidate(ChannelStore.getChannel(tmp13Result), "ActivitySounds");
+        const tmp4Result6 = require("ConjureUtils");
+        result1 = tmp4Result6.isConjureChannelCandidate(ChannelStore.getChannel(tmp13Result), "ActivitySounds");
       }
       if (!result1) {
         result1 = result;
@@ -1009,7 +1009,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
         tmp21 = type === constants.GUILD_SPACE;
       }
-      const obj4 = { connectedActivityLocation, voiceChannelId, currentUserId: id, channelActivities: embeddedActivitiesForChannel, connectedChannelActivities: embeddedActivitiesForChannel2, userConnectedActivity: selfEmbeddedActivityForLocation, voiceChannelActivities: embeddedActivitiesForChannel1, hasFrame: closure_1_26(mainFrame), inVibegrationsChannel: result1, isGuildSpaceActivity: tmp21 };
+      const obj4 = { connectedActivityLocation, voiceChannelId, currentUserId: id, channelActivities: embeddedActivitiesForChannel, connectedChannelActivities: embeddedActivitiesForChannel2, userConnectedActivity: selfEmbeddedActivityForLocation, voiceChannelActivities: embeddedActivitiesForChannel1, hasFrame: closure_1_26(mainFrame), inConjureChannel: result1, isGuildSpaceActivity: tmp21 };
       return obj4;
     };
     const fn2 = function v(isGuildSpaceActivity, arg1) {
@@ -1017,12 +1017,12 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       let closure_129_0;
       let connectedChannelActivities;
       let hasFrame;
-      let inVibegrationsChannel;
+      let inConjureChannel;
       let userConnectedActivity;
       let voiceChannelActivities;
       let voiceChannelId;
       ({ connectedActivityLocation, currentUserId: closure_129_0, userConnectedActivity } = arg1);
-      ({ voiceChannelActivities, hasFrame, isGuildSpaceActivity, voiceChannelId, channelActivities, connectedChannelActivities, inVibegrationsChannel } = arg1);
+      ({ voiceChannelActivities, hasFrame, isGuildSpaceActivity, voiceChannelId, channelActivities, connectedChannelActivities, inConjureChannel } = arg1);
       const someResult = voiceChannelActivities.some((applicationId) => {
         let applicationId1;
         applicationId = applicationId.applicationId;
@@ -1172,14 +1172,14 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           tmp20 = str8;
         }
         const hasFrame2 = isGuildSpaceActivity.hasFrame;
-        let inVibegrationsChannel2 = !hasFrame2;
+        let inConjureChannel2 = !hasFrame2;
         if (hasFrame2) {
-          inVibegrationsChannel2 = hasFrame;
+          inConjureChannel2 = hasFrame;
         }
-        if (!inVibegrationsChannel2) {
-          inVibegrationsChannel2 = isGuildSpaceActivity.inVibegrationsChannel;
+        if (!inConjureChannel2) {
+          inConjureChannel2 = isGuildSpaceActivity.inConjureChannel;
         }
-        if (!inVibegrationsChannel2) {
+        if (!inConjureChannel2) {
           str4 = "activity_end";
         }
         str8 = str4;
@@ -1198,7 +1198,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp13 = closure_31(tmp2, tmp3, tmp4);
   return null;
 }) : (() => {
-  const items = [SelectedChannelStore, EmbeddedActivitiesStore, FramesStore, AuthenticationStore, ChannelStore, VibegrationsProjectStore, ApplicationStore, GuildStore];
+  const items = [SelectedChannelStore, EmbeddedActivitiesStore, FramesStore, AuthenticationStore, ChannelStore, ConjureProjectStore, ApplicationStore, GuildStore];
   const tmp = closure_31(items, () => {
     let embeddedActivitiesForChannel;
     let embeddedActivitiesForChannel1;
@@ -1242,16 +1242,16 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let result = null == tmp13Result;
     if (result) {
       let applicationId;
-      const isVibegrationsProjectApplication = VibegrationsProjectStore.isVibegrationsProjectApplication;
+      const isConjureProjectApplication = ConjureProjectStore.isConjureProjectApplication;
       if (mainFrame != null) {
         applicationId = mainFrame.applicationId;
       }
-      result = isVibegrationsProjectApplication(applicationId);
+      result = isConjureProjectApplication(applicationId);
     }
     let result1 = null != tmp13Result;
     if (result1) {
-      const tmp4Result6 = require("VibegrationsUtils");
-      result1 = tmp4Result6.isVibegrationsChannelCandidate(ChannelStore.getChannel(tmp13Result), "ActivitySounds");
+      const tmp4Result6 = require("ConjureUtils");
+      result1 = tmp4Result6.isConjureChannelCandidate(ChannelStore.getChannel(tmp13Result), "ActivitySounds");
     }
     if (!result1) {
       result1 = result;
@@ -1265,19 +1265,19 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       tmp21 = type === constants.GUILD_SPACE;
     }
-    const obj4 = { connectedActivityLocation, voiceChannelId, currentUserId: id, channelActivities: embeddedActivitiesForChannel, connectedChannelActivities: embeddedActivitiesForChannel2, userConnectedActivity: selfEmbeddedActivityForLocation, voiceChannelActivities: embeddedActivitiesForChannel1, hasFrame: closure_1_26(mainFrame), inVibegrationsChannel: result1, isGuildSpaceActivity: tmp21 };
+    const obj4 = { connectedActivityLocation, voiceChannelId, currentUserId: id, channelActivities: embeddedActivitiesForChannel, connectedChannelActivities: embeddedActivitiesForChannel2, userConnectedActivity: selfEmbeddedActivityForLocation, voiceChannelActivities: embeddedActivitiesForChannel1, hasFrame: closure_1_26(mainFrame), inConjureChannel: result1, isGuildSpaceActivity: tmp21 };
     return obj4;
   }, (isGuildSpaceActivity, arg1) => {
     let channelActivities;
     let closure_129_0;
     let connectedChannelActivities;
     let hasFrame;
-    let inVibegrationsChannel;
+    let inConjureChannel;
     let userConnectedActivity;
     let voiceChannelActivities;
     let voiceChannelId;
     ({ connectedActivityLocation, currentUserId: closure_129_0, userConnectedActivity } = arg1);
-    ({ voiceChannelActivities, hasFrame, isGuildSpaceActivity, voiceChannelId, channelActivities, connectedChannelActivities, inVibegrationsChannel } = arg1);
+    ({ voiceChannelActivities, hasFrame, isGuildSpaceActivity, voiceChannelId, channelActivities, connectedChannelActivities, inConjureChannel } = arg1);
     const someResult = voiceChannelActivities.some((applicationId) => {
       let applicationId1;
       applicationId = applicationId.applicationId;
@@ -1427,14 +1427,14 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         tmp20 = str8;
       }
       const hasFrame2 = isGuildSpaceActivity.hasFrame;
-      let inVibegrationsChannel2 = !hasFrame2;
+      let inConjureChannel2 = !hasFrame2;
       if (hasFrame2) {
-        inVibegrationsChannel2 = hasFrame;
+        inConjureChannel2 = hasFrame;
       }
-      if (!inVibegrationsChannel2) {
-        inVibegrationsChannel2 = isGuildSpaceActivity.inVibegrationsChannel;
+      if (!inConjureChannel2) {
+        inConjureChannel2 = isGuildSpaceActivity.inConjureChannel;
       }
-      if (!inVibegrationsChannel2) {
+      if (!inConjureChannel2) {
         str4 = "activity_end";
       }
       str8 = str4;

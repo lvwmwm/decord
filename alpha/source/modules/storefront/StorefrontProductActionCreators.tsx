@@ -91,7 +91,7 @@ let obj = function _maybeFetchProductsWithSkus() {
     if (ignoreCache === undefined) {
       ignoreCache = false;
     }
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };
@@ -189,7 +189,7 @@ obj = function _maybeFetchProductsBySkuIds() {
     if (ignoreCache === undefined) {
       ignoreCache = false;
     }
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };

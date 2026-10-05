@@ -1,9 +1,9 @@
-// Module ID: 13223
-// Function ID: 13224
+// Module ID: 13225
+// Function ID: 13226
 // Name: usePromotionMarketingComponent
-// Dependencies: [32, 19, 6959, 10396, 558, 576, 13224, 10428, 504, 2]
+// Dependencies: [32, 19, 6959, 10396, 558, 576, 13226, 10428, 504, 2]
 
-// Module 13223 (usePromotionMarketingComponent)
+// Module 13225 (usePromotionMarketingComponent)
 import promotions_constants from "promotions/constants" /* 10428 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

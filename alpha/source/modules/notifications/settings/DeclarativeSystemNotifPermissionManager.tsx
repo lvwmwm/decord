@@ -1,10 +1,10 @@
-// Module ID: 17459
-// Function ID: 17460
+// Module ID: 17483
+// Function ID: 17484
 // Name: DeclarativeSystemNotifPermissionManager
-// Dependencies: [15825, 6613, 2]
+// Dependencies: [15829, 6613, 2]
 
-// Module 17459 (DeclarativeSystemNotifPermissionManager)
-import DeclarativeSystemNotifPermissionActionCreators from "DeclarativeSystemNotifPermissionActionCreators" /* 15825 */;
+// Module 17483 (DeclarativeSystemNotifPermissionManager)
+import DeclarativeSystemNotifPermissionActionCreators from "DeclarativeSystemNotifPermissionActionCreators" /* 15829 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
 import size from "module_2" /* 2 */;
 

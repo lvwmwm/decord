@@ -143,7 +143,7 @@ const entry = {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -161,7 +161,7 @@ const entry = {
               value = self.startIndex;
               if (value > self.endIndex) {
                 c4 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             }
           } else if (arg0 === 1) {

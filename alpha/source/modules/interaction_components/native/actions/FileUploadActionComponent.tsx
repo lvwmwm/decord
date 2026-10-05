@@ -1,9 +1,9 @@
-// Module ID: 17501
-// Function ID: 17502
+// Module ID: 17525
+// Function ID: 17526
 // Name: FileUploadActionComponent
-// Dependencies: [5, 19, 17, 2051, 7031, 1085, 21, 4890, 558, 576, 5317, 5993, 15361, 1126, 5114, 4792, 11043, 6017, 7575, 7795, 38, 504, 11782, 7295, 7270, 17502, 1985, 5707, 7274, 11611, 8812, 10365, 1881, 10364, 7272, 6074, 5593, 587, 2]
+// Dependencies: [5, 19, 17, 2051, 7031, 1085, 21, 4890, 558, 576, 5317, 5993, 15365, 1126, 5114, 4792, 11043, 6017, 7575, 7795, 38, 504, 11782, 7295, 7270, 17526, 1985, 5707, 7274, 11611, 8812, 10365, 1881, 10364, 7272, 6074, 5593, 587, 2]
 
-// Module 17501 (FileUploadActionComponent)
+// Module 17525 (FileUploadActionComponent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
@@ -18,7 +18,7 @@ import IconButton2 from "IconButton" /* 7575 */;
 import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8812 */;
 import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10364 */;
 import AttachmentPreview from "AttachmentPreview" /* 11043 */;
-import FileUpIcon from "FileUpIcon" /* 15361 */;
+import FileUpIcon from "FileUpIcon" /* 15365 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
@@ -450,7 +450,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileTypes) => {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       while (true) {
@@ -489,7 +489,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileTypes) => {
               }
             }
             c8 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else if (1 === tmp5) {
           c6 = 0;
@@ -642,7 +642,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileTypes) => {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       while (true) {
@@ -681,7 +681,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileTypes) => {
               }
             }
             c8 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else if (1 === tmp5) {
           c6 = 0;

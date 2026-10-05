@@ -1,9 +1,9 @@
-// Module ID: 15390
-// Function ID: 15391
+// Module ID: 15394
+// Function ID: 15395
 // Name: UserSettingsStartupTimings
 // Dependencies: [5, 32, 19, 17, 1357, 1085, 21, 4890, 587, 558, 576, 4886, 4743, 1618, 12533, 504, 9, 6984, 8038, 5593, 6074, 5990, 1358, 5993, 12715, 8371, 2]
 
-// Module 15390 (UserSettingsStartupTimings)
+// Module 15394 (UserSettingsStartupTimings)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -164,7 +164,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -202,7 +202,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 const obj = tmp(c2[18]);
                 obj.showShareActionSheet(obj7, "Startup Timing");
                 c3 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp16) {
               c3 = 3;
@@ -337,40 +337,40 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           items = [, , , , ];
           items[0] = jsx(TableRowGroup, obj1);
           TableRowGroup2 = closure_0(closure_2[20]).TableRowGroup;
-          tmp6 = f70433;
+          tmp6 = f70483;
           obj26 = { children: null };
           TableRow = closure_0(closure_2[23]).TableRow;
           items1 = ["Native: "];
           items1[1] = closure_14(closure_6);
           obj26.children = items1;
           items2 = [, , , , , , , ];
-          items2[0] = jsxs(f70433, obj26);
+          items2[0] = jsxs(f70483, obj26);
           obj27 = { children: null };
           items3 = ["JS Imports: "];
           items3[1] = closure_14(closure_10);
           obj27.children = items3;
-          items2[1] = jsxs(f70433, obj27);
+          items2[1] = jsxs(f70483, obj27);
           obj28 = { children: null };
           items4 = ["Mini Cache: "];
           items4[1] = closure_14(closure_7);
           obj28.children = items4;
-          items2[2] = jsxs(f70433, obj28);
+          items2[2] = jsxs(f70483, obj28);
           obj29 = { children: null };
           items5 = ["Lazy Cache: "];
           items5[1] = closure_14(closure_8);
           obj29.children = items5;
-          items2[3] = jsxs(f70433, obj29);
+          items2[3] = jsxs(f70483, obj29);
           obj30 = { children: null };
           items6 = ["Ready: "];
           items6[1] = closure_14(closure_9);
           obj30.children = items6;
-          items2[4] = jsxs(f70433, obj30);
+          items2[4] = jsxs(f70483, obj30);
           obj31 = { children: null };
           tmp7 = closure_15;
           items7 = ["TTI (first contentful paint): "];
           items7[1] = closure_15(c12);
           obj31.children = items7;
-          items2[5] = jsxs(f70433, obj31);
+          items2[5] = jsxs(f70483, obj31);
           tmp8 = closure_11;
           prop = undefined;
           if (closure_11 != null) {
@@ -419,7 +419,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           obj42 = {
             label: "Hide the Noise",
             onPress() {
-                      return closure_1_2(() => { /* body not rendered: F152881 */ });
+                      return closure_1_2(() => { /* body not rendered: F153167 */ });
                     },
             checked: closure_1
           };
@@ -428,7 +428,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           obj43 = {
             label: "Hide paints",
             onPress() {
-                      return closure_1_4(() => { /* body not rendered: F152882 */ });
+                      return closure_1_4(() => { /* body not rendered: F153168 */ });
                     },
             checked: !closure_3
           };
@@ -523,7 +523,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -561,7 +561,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj = tmp(c2[18]);
           obj.showShareActionSheet(obj7, "Startup Timing");
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp16) {
         c3 = 3;

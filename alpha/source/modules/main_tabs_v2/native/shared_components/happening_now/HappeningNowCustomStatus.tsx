@@ -1,9 +1,9 @@
-// Module ID: 15997
-// Function ID: 15998
+// Module ID: 16001
+// Function ID: 16002
 // Name: HappeningNowCustomStatus
-// Dependencies: [5, 32, 19, 17, 4930, 15110, 1096, 21, 4890, 587, 558, 576, 573, 5305, 9389, 15998, 15999, 10613, 9260, 1369, 10629, 1188, 15111, 4886, 2]
+// Dependencies: [5, 32, 19, 17, 4930, 15114, 1096, 21, 4890, 587, 558, 576, 573, 5305, 9389, 16002, 16003, 10613, 9260, 1369, 10629, 1188, 15115, 4886, 2]
 
-// Module 15997 (HappeningNowCustomStatus)
+// Module 16001 (HappeningNowCustomStatus)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
@@ -13,7 +13,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import PresenceStore from "PresenceStore" /* 4930 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15110 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15114 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -161,7 +161,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -224,7 +224,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                   closure_1_5(emojiSource);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } catch (tmp27) {
                 c3 = 3;
                 throw tmp27;
@@ -260,7 +260,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -323,7 +323,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                   closure_1_5(emojiSource);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } catch (tmp27) {
                 c3 = 3;
                 throw tmp27;
@@ -356,7 +356,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -419,7 +419,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                   closure_1_5(emojiSource);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } catch (tmp27) {
                 c3 = 3;
                 throw tmp27;
@@ -452,7 +452,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -515,7 +515,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                   closure_1_5(emojiSource);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } catch (tmp27) {
                 c3 = 3;
                 throw tmp27;
@@ -548,7 +548,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -611,7 +611,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                   closure_1_5(emojiSource);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } catch (tmp27) {
                 c3 = 3;
                 throw tmp27;
@@ -642,7 +642,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -705,7 +705,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                   closure_1_5(emojiSource);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } catch (tmp27) {
                 c3 = 3;
                 throw tmp27;
@@ -806,7 +806,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -869,7 +869,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
               closure_1_5(emojiSource);
             }
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp27) {
             c3 = 3;
             throw tmp27;
@@ -892,7 +892,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   const joined = items2.join(", ");
   let obj4 = { onPress, width: str, style: tmp.cardContainer, accessibilityLabel: joined, panelVariant, children: tmp15(tmp17, obj5) };
   str = "stretchy";
-  const tmp9Result = activity(15111);
+  const tmp9Result = activity(15115);
   if (fullwidth) {
     str = "full";
   }
@@ -942,7 +942,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     const Avatar = tmp6(1188).Avatar;
     items6 = [tmp15(Avatar, obj11), , ];
     const obj12 = { noMargin: true, displayNameFont: displayNameStylesFont, children: userTitle };
-    items6[1] = closure_12(user(15111).HappeningNowCardHeader, obj12);
+    items6[1] = closure_12(user(15115).HappeningNowCardHeader, obj12);
     const state = activity.state;
     let num2;
     if (state != null) {
@@ -967,7 +967,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     items7 = [tmp15(Avatar2, obj16), ];
     const obj17 = { style: tmp.customStatusContextContainer, children: items8 };
     const obj18 = { noMargin: true, displayNameFont: displayNameStylesFont, children: userTitle };
-    items8 = [tmp15(tmp6(15111).HappeningNowCardHeader, obj18), ];
+    items8 = [tmp15(tmp6(15115).HappeningNowCardHeader, obj18), ];
     const obj19 = { ellipsizeMode: "tail", variant: "text-xs/medium", color: "text-default", lineClamp: num, maxFontSizeMultiplier: 2, children: gameMentionsAsPlainText };
     items8[1] = closure_12(user(4886).Text, obj19);
     items7[1] = closure_13(closure_6, obj17);

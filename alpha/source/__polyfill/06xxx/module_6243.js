@@ -35,7 +35,7 @@ export const useIsScreenReaderEnabled = function useIsScreenReaderEnabled() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -77,7 +77,7 @@ export const useIsScreenReaderEnabled = function useIsScreenReaderEnabled() {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp13) {
           let closure_2 = tmp13;

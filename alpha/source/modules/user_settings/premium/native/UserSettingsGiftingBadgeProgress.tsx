@@ -1,9 +1,9 @@
-// Module ID: 13376
-// Function ID: 13377
+// Module ID: 13378
+// Function ID: 13379
 // Name: UserSettingsGiftingBadgeProgress
-// Dependencies: [32, 19, 17, 7863, 21, 4890, 587, 558, 576, 10475, 6657, 6681, 7855, 504, 4886, 1126, 2589, 10481, 10766, 5594, 10392, 13377, 10844, 2]
+// Dependencies: [32, 19, 17, 7863, 21, 4890, 587, 558, 576, 10475, 6657, 6681, 7855, 504, 4886, 1126, 2589, 10481, 10766, 5594, 10392, 13379, 10844, 2]
 
-// Module 13376 (UserSettingsGiftingBadgeProgress)
+// Module 13378 (UserSettingsGiftingBadgeProgress)
 import nativeDefault from "native" /* 587 */;
 import _modDef2589 from "module_2589" /* 2589 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6657 */;
@@ -939,7 +939,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocation) =
     items6 = [closure_9(Text2, obj23), ];
     const tmp20 = isGiftingBadgeComplexArtEnabled;
     if (tmp11Result) {
-      ChevronSmallDownIcon = tmp7(13377).ChevronSmallUpIcon;
+      ChevronSmallDownIcon = tmp7(13379).ChevronSmallUpIcon;
     } else {
       ChevronSmallDownIcon = tmp7(10844).ChevronSmallDownIcon;
     }

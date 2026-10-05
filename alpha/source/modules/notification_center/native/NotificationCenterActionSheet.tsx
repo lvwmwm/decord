@@ -1,9 +1,9 @@
-// Module ID: 16345
-// Function ID: 16346
+// Module ID: 16349
+// Function ID: 16350
 // Name: NotificationCenterActionSheet
-// Dependencies: [19, 7122, 1085, 21, 558, 576, 504, 16346, 7485, 4854, 7480, 7483, 6681, 7494, 7475, 11840, 6885, 6644, 1126, 6697, 5874, 12064, 9266, 16347, 11337, 7495, 4849, 11838, 6883, 6701, 2]
+// Dependencies: [19, 7122, 1085, 21, 558, 576, 504, 16350, 7485, 4854, 7480, 7483, 6681, 7494, 7475, 11840, 6885, 6644, 1126, 6697, 5874, 12064, 9266, 16351, 11337, 7495, 4849, 11838, 6883, 6701, 2]
 
-// Module 16345 (NotificationCenterActionSheet)
+// Module 16349 (NotificationCenterActionSheet)
 import Constants from "Constants" /* 1085 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
@@ -11,7 +11,7 @@ import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /
 import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7483 */;
 import showForLaterModal from "showForLaterModal" /* 7494 */;
 import SavedMessagesTypes from "SavedMessagesTypes" /* 7495 */;
-import MentionActionCreatorsDefault from "MentionActionCreators" /* 16346 */;
+import MentionActionCreatorsDefault from "MentionActionCreators" /* 16350 */;
 import react from "react" /* 19 */;
 import RecentMentionsStore from "RecentMentionsStore" /* 7122 */;
 import Fragment from "Fragment" /* 21 */;
@@ -192,7 +192,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             const intl3 = tmp(1126).intl;
             const stringResult1 = intl3.string(tmp(1126).t.jYgZa4);
-            const obj4 = { IconComponent: tmp(9266).BellIcon, source: everyoneFilter(16347) };
+            const obj4 = { IconComponent: tmp(9266).BellIcon, source: everyoneFilter(16351) };
             const Icon2 = tmp(6697).ActionSheetRow.Icon;
             const tmp37 = closure_6(Icon2, obj4);
             cResult[21] = tmp33;
@@ -559,7 +559,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const ActionSheetSwitchRow2 = roleFilter(6697).ActionSheetSwitchRow;
   intl3 = roleFilter(1126).intl;
   intl4 = roleFilter(1126).intl;
-  obj11 = { IconComponent: roleFilter(9266).BellIcon, source: everyoneFilter(16347) };
+  obj11 = { IconComponent: roleFilter(9266).BellIcon, source: everyoneFilter(16351) };
   Icon2 = roleFilter(6697).ActionSheetRow.Icon;
   items3[1] = closure_6(ActionSheetSwitchRow2, obj10);
   items4 = [closure_7(Group, obj7), ];

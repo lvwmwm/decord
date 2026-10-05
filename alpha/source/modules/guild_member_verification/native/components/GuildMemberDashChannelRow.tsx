@@ -1,9 +1,9 @@
-// Module ID: 16135
-// Function ID: 16136
+// Module ID: 16139
+// Function ID: 16140
 // Name: GuildMemberDashChannelRow
-// Dependencies: [19, 1085, 2058, 11697, 21, 4890, 587, 558, 576, 16136, 5931, 4702, 1112, 12016, 1126, 5873, 1188, 2]
+// Dependencies: [19, 1085, 2058, 11697, 21, 4890, 587, 558, 576, 16140, 5931, 4702, 1112, 12016, 1126, 5873, 1188, 2]
 
-// Module 16135 (GuildMemberDashChannelRow)
+// Module 16139 (GuildMemberDashChannelRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import router_utils from "router_utils" /* 1112 */;
@@ -48,7 +48,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ guild, selected } = arg0);
   const tmp4 = closure_8();
   id = guild.id;
-  const obj2 = id(16136);
+  const obj2 = id(16140);
   let num = obj2.useSubmittedGuildJoinRequestTotal({ guildId: id });
   if (num == null) {
     num = 0;
@@ -232,7 +232,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let hasItem;
   let tmp = closure_8();
   const id = guild.id;
-  let obj = id(16136);
+  let obj = id(16140);
   let num = obj.useSubmittedGuildJoinRequestTotal({ guildId: id });
   if (num == null) {
     num = 0;

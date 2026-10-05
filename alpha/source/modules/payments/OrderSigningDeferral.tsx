@@ -40,7 +40,7 @@ let obj = function _performSigningDeferralAction() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -92,7 +92,7 @@ let obj = function _performSigningDeferralAction() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp13) {
         c1 = 3;
         throw tmp13;

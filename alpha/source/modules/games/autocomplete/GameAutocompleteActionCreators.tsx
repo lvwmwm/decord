@@ -90,7 +90,7 @@ let obj = function _fetchGameAutocomplete() {
     if (closure_1 === undefined) {
       DEFAULT = GameAutocompleteTypes.GameAutocompleteProfile.DEFAULT;
     }
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };

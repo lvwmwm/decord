@@ -1,9 +1,9 @@
-// Module ID: 17329
-// Function ID: 17330
+// Module ID: 17353
+// Function ID: 17354
 // Name: VoicePanelVoiceControlsButtons
-// Dependencies: [32, 19, 2050, 4906, 1195, 9065, 4912, 502, 1999, 4909, 1085, 17330, 4915, 21, 5708, 17331, 1987, 1126, 558, 576, 9444, 6074, 9600, 504, 4568, 9446, 9463, 5999, 5993, 11901, 17290, 5890, 5855, 17318, 12185, 9631, 1252, 9701, 1369, 9666, 587, 9306, 9339, 17233, 6698, 9299, 9330, 6000, 17192, 17193, 9716, 9685, 5091, 11234, 9630, 17332, 8882, 8991, 9803, 17333, 584, 12728, 9656, 6883, 17232, 2]
+// Dependencies: [32, 19, 2050, 4906, 1195, 9065, 4912, 502, 1999, 4909, 1085, 17354, 4915, 21, 5708, 17355, 1987, 1126, 558, 576, 9444, 6074, 9600, 504, 4568, 9446, 9463, 5999, 5993, 11901, 17314, 5890, 5855, 17342, 12185, 9631, 1252, 9701, 1369, 9666, 587, 9306, 9339, 17257, 6698, 9299, 9330, 6000, 17216, 17217, 9716, 9685, 5091, 11234, 9630, 17356, 8882, 8991, 9803, 17357, 584, 12728, 9656, 6883, 17256, 2]
 
-// Module 17329 (VoicePanelVoiceControlsButtons)
+// Module 17353 (VoicePanelVoiceControlsButtons)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -34,14 +34,14 @@ import GroupPlusIcon from "GroupPlusIcon" /* 9716 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 9803 */;
 import SoundboardIcon from "SoundboardIcon" /* 12185 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 12728 */;
-import useCanInviteMembers from "useCanInviteMembers" /* 17192 */;
-import useInviteMembersCallback from "useInviteMembersCallback" /* 17193 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 17232 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 17233 */;
-import useSoundboardConfig from "useSoundboardConfig" /* 17318 */;
-import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 17330 */;
-import useHideSelfVideoDefault from "useHideSelfVideo" /* 17332 */;
-import ChannelCallUtils from "ChannelCallUtils" /* 17333 */;
+import useCanInviteMembers from "useCanInviteMembers" /* 17216 */;
+import useInviteMembersCallback from "useInviteMembersCallback" /* 17217 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 17256 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 17257 */;
+import useSoundboardConfig from "useSoundboardConfig" /* 17342 */;
+import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 17354 */;
+import useHideSelfVideoDefault from "useHideSelfVideo" /* 17356 */;
+import ChannelCallUtils from "ChannelCallUtils" /* 17357 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
@@ -57,7 +57,7 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const useSoundboardConfigDefault = useSoundboardConfig;
-let _require, channelId, currentEmbeddedActivity, dependencyMap, f148117, guildId, importDefault, lastActiveStream, obj1, openLazyResult, openTab, stream;
+let _require, channelId, currentEmbeddedActivity, dependencyMap, f148401, guildId, importDefault, lastActiveStream, obj1, openLazyResult, openTab, stream;
 
 let closure_14;
 let map1;
@@ -1196,7 +1196,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         if (!tmp2) {
           tmp3 = closure_15;
           VIDEO = closure_15.VIDEO;
-          f148117 = () => f148117(!VIDEO);
+          f148401 = () => f148401(!VIDEO);
           tmp4 = closure_1;
           tmp5 = closure_2;
           obj = closure_1(closure_2[14]);
@@ -1205,7 +1205,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             let onConfirm;
             let type;
             const promise = closure_2_0(paths[16])(paths[15], paths.paths);
-            return promise.then(() => { /* body not rendered: F148112 */ });
+            return promise.then(() => { /* body not rendered: F148396 */ });
           };
           openLazyResult = obj.openLazy(obj1);
           return;
@@ -1243,7 +1243,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const tmp2 = closure_0;
         if (!tmp2) {
           const VIDEO = constants.VIDEO;
-          const f148118 = () => f148118(!VIDEO);
+          const f148402 = () => f148402(!VIDEO);
           let obj = actions_AlertActionCreatorsDefault;
           const obj2 = { importer, isDismissable: false };
           obj.openLazy(obj2);

@@ -1,9 +1,9 @@
-// Module ID: 16463
-// Function ID: 16464
+// Module ID: 16467
+// Function ID: 16468
 // Name: NotificationNudgeBottomSheet
-// Dependencies: [19, 17, 12053, 1085, 2048, 21, 4890, 587, 558, 576, 1252, 4854, 12054, 16464, 4886, 1126, 5594, 5592, 6645, 2]
+// Dependencies: [19, 17, 12053, 1085, 2048, 21, 4890, 587, 558, 576, 1252, 4854, 12054, 16468, 4886, 1126, 5594, 5592, 6645, 2]
 
-// Module 16463 (NotificationNudgeBottomSheet)
+// Module 16467 (NotificationNudgeBottomSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;

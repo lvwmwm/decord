@@ -1,31 +1,31 @@
-// Module ID: 15939
-// Function ID: 15940
+// Module ID: 15943
+// Function ID: 15944
 // Name: MainChannels
-// Dependencies: [32, 19, 17, 15940, 1085, 15931, 21, 558, 576, 15942, 5973, 4890, 587, 4739, 1618, 15943, 15944, 16025, 16216, 16217, 4612, 15945, 15928, 15933, 15930, 16299, 4742, 11571, 2]
+// Dependencies: [32, 19, 17, 15944, 1085, 15935, 21, 558, 576, 15946, 5973, 4890, 587, 4739, 1618, 15947, 15948, 16029, 16220, 16221, 4612, 15949, 15932, 15937, 15934, 16303, 4742, 11571, 2]
 
-// Module 15939 (MainChannels)
+// Module 15943 (MainChannels)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
 import useChatLayoutDefault from "useChatLayout" /* 4739 */;
 import useRefValueDefault from "useRefValue" /* 5973 */;
 import StartupProfilerDefault from "StartupProfiler" /* 11571 */;
-import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 15928 */;
-import getJankScreenName from "getJankScreenName" /* 15930 */;
-import JankScreenConstants from "JankScreenConstants" /* 15931 */;
-import JankSlidingSurfaceReporterDefault from "JankSlidingSurfaceReporter" /* 15933 */;
-import useGuildsRouteGuildId from "useGuildsRouteGuildId" /* 15942 */;
-import useChannelListWidthDefault from "useChannelListWidth" /* 15943 */;
-import messages_MessagesDefault from "messages/Messages" /* 15944 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15945 */;
-import RedesignChannelListDefault from "RedesignChannelList" /* 16025 */;
-import NativeFreezeScreens2 from "NativeFreezeScreens" /* 16216 */;
-import HomePanelContent from "HomePanelContent" /* 16217 */;
-import NonCollapsableGestureDetector2 from "NonCollapsableGestureDetector" /* 16299 */;
+import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 15932 */;
+import getJankScreenName from "getJankScreenName" /* 15934 */;
+import JankScreenConstants from "JankScreenConstants" /* 15935 */;
+import JankSlidingSurfaceReporterDefault from "JankSlidingSurfaceReporter" /* 15937 */;
+import useGuildsRouteGuildId from "useGuildsRouteGuildId" /* 15946 */;
+import useChannelListWidthDefault from "useChannelListWidth" /* 15947 */;
+import messages_MessagesDefault from "messages/Messages" /* 15948 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15949 */;
+import RedesignChannelListDefault from "RedesignChannelList" /* 16029 */;
+import NativeFreezeScreens2 from "NativeFreezeScreens" /* 16220 */;
+import HomePanelContent from "HomePanelContent" /* 16221 */;
+import NonCollapsableGestureDetector2 from "NonCollapsableGestureDetector" /* 16303 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import HomeDrawerStore from "HomeDrawerStore" /* 15940 */;
+import HomeDrawerStore from "HomeDrawerStore" /* 15944 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -156,7 +156,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((panelStyles) =
         tmp10 = cResult[7];
       }
       let num6 = 0;
-      const sum = DM_WIDTH + tmp6(15943)();
+      const sum = DM_WIDTH + tmp6(15947)();
       if (isGuildSelected) {
         num6 = 1;
       }
@@ -454,7 +454,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   items = [tmp7, ];
   const obj5 = { gesture, children: unpackModuleId(closure_15, { panelStyles }) };
-  const NonCollapsableGestureDetector = tmp(16299).NonCollapsableGestureDetector;
+  const NonCollapsableGestureDetector = tmp(16303).NonCollapsableGestureDetector;
   items[1] = unpackModuleId(NonCollapsableGestureDetector, obj5);
   return tmp6(Provider, obj2);
 });

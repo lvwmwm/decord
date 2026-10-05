@@ -1,9 +1,9 @@
-// Module ID: 16133
-// Function ID: 16134
+// Module ID: 16137
+// Function ID: 16138
 // Name: HubUnreadUtils
 // Dependencies: [11940, 4905, 558, 576, 11, 11932, 504, 2]
 
-// Module 16133 (HubUnreadUtils)
+// Module 16137 (HubUnreadUtils)
 import GuildDirectoryUtils from "GuildDirectoryUtils" /* 11932 */;
 import GuildDirectoryStore from "GuildDirectoryStore" /* 11940 */;
 import ReadStateStore from "ReadStateStore" /* 4905 */;

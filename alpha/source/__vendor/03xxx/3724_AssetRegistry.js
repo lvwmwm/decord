@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/vibegrations/intl", scales: [1], hash: "89123379ecdf59faee4d9cc03a256288", name: "VibegrationsUntranslated.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/conjure/intl", scales: [1], hash: "34f5fac9907a6e3c7449cd1e87eb1919", name: "ConjureUntranslated.compiled.messages", type: "jsona" });

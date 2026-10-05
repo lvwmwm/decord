@@ -1,9 +1,9 @@
-// Module ID: 16802
-// Function ID: 16803
+// Module ID: 16821
+// Function ID: 16822
 // Name: DMRow
-// Dependencies: [5, 32, 19, 17, 4879, 4930, 4519, 1085, 21, 4890, 587, 558, 576, 4722, 4886, 10609, 504, 8961, 1188, 9233, 13305, 16788, 2]
+// Dependencies: [5, 32, 19, 17, 4879, 4930, 4519, 1085, 21, 4890, 587, 558, 576, 4722, 4886, 10609, 504, 8961, 1188, 9233, 13307, 16807, 2]
 
-// Module 16802 (DMRow)
+// Module 16821 (DMRow)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1188 */;
@@ -12,7 +12,7 @@ import Text_Text from "Text/Text" /* 4886 */;
 import BotTagDefault from "BotTag" /* 8961 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9233 */;
 import ActivityStatusDefault from "ActivityStatus" /* 10609 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13305 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13307 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -175,7 +175,7 @@ const memoResult = react.memo(function DMRow(user) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -215,7 +215,7 @@ const memoResult = react.memo(function DMRow(user) {
           c3 = 0;
           closure_128_8(false);
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp20) {
         closure_2 = tmp20;

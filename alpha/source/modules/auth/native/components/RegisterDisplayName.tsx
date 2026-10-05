@@ -1,18 +1,18 @@
-// Module ID: 15883
-// Function ID: 15884
+// Module ID: 15887
+// Function ID: 15888
 // Name: RegisterDisplayName
-// Dependencies: [5, 32, 19, 17, 14515, 15863, 15864, 21, 4890, 587, 1126, 558, 576, 6432, 1490, 15860, 15862, 1105, 15879, 15878, 14269, 14516, 6880, 6445, 6098, 5594, 6460, 6537, 2]
+// Dependencies: [5, 32, 19, 17, 14519, 15867, 15868, 21, 4890, 587, 1126, 558, 576, 6432, 1490, 15864, 15866, 1105, 15883, 15882, 14271, 14520, 6880, 6445, 6098, 5594, 6460, 6537, 2]
 
-// Module 15883 (RegisterDisplayName)
+// Module 15887 (RegisterDisplayName)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14515 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 15863 */;
-import RegistrationConstants from "RegistrationConstants" /* 15864 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14519 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 15867 */;
+import RegistrationConstants from "RegistrationConstants" /* 15868 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -417,7 +417,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -449,7 +449,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               const obj4 = globalName(first1[16]);
               const result = obj4.handleNextOrSubmitRegistration(globalName(first1[17]).AuthStates.REGISTER_DISPLAY_NAME, globalName, closure_1_4);
               c3 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else if (arg0 === 1) {
             c3 = 3;
@@ -537,7 +537,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -569,7 +569,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               const obj4 = globalName(str[16]);
               const result = obj4.handleNextOrSubmitRegistration(globalName(str[17]).AuthStates.REGISTER_DISPLAY_NAME, globalName, closure_1_4);
               c3 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else if (arg0 === 1) {
             c3 = 3;

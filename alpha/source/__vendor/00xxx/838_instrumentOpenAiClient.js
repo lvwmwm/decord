@@ -110,7 +110,7 @@ export const instrumentOpenAiClient = function instrumentOpenAiClient(arg0, arg1
                   obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 try {
@@ -133,7 +133,7 @@ export const instrumentOpenAiClient = function instrumentOpenAiClient(arg0, arg1
                       stream = undefined;
                       c3 = 1;
                       c4 = 1;
-                      return { value: "Reflect", done: true };
+                      return { value: "Set", done: true };
                     }
                   } else if (arg0 === 1) {
                     c4 = 3;
@@ -181,7 +181,7 @@ export const instrumentOpenAiClient = function instrumentOpenAiClient(arg0, arg1
                                   obj2 = { value, done: true };
                                   return obj2;
                                 } else {
-                                  return { value: "IconComponent", done: "IconComponent" };
+                                  return { value: "IconComponent", done: null };
                                 }
                               } else {
                                 let c5;
@@ -358,7 +358,7 @@ export const instrumentOpenAiClient = function instrumentOpenAiClient(arg0, arg1
                             obj2 = { value, done: true };
                             return obj2;
                           } else {
-                            return { value: "IconComponent", done: "IconComponent" };
+                            return { value: "IconComponent", done: null };
                           }
                         } else {
                           let c4;

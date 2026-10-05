@@ -1,9 +1,9 @@
-// Module ID: 13674
-// Function ID: 13675
+// Module ID: 13676
+// Function ID: 13677
 // Name: RemoteAuthModal
-// Dependencies: [32, 19, 17, 1085, 21, 4890, 587, 558, 576, 1618, 13673, 13675, 6473, 1282, 5093, 12, 13676, 4886, 1126, 1188, 5594, 5592, 13677, 5968, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 4890, 587, 558, 576, 1618, 13675, 13677, 6473, 1282, 5093, 12, 13678, 4886, 1126, 1188, 5594, 5592, 13679, 5968, 2]
 
-// Module 13674 (RemoteAuthModal)
+// Module 13676 (RemoteAuthModal)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,9 +17,9 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
 import ButtonGroup2 from "ButtonGroup" /* 5592 */;
 import components_Button_Button from "components/Button/Button" /* 5594 */;
 import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6473 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13673 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13675 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13677 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13675 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13677 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13679 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -41,7 +41,7 @@ let tmp;
 let tmp7;
 let unpackModuleId;
 const ActivityIndicator_ActivityIndicator = tmp(5968);
-const AssetRegistryDefault3 = tmp7(13676);
+const AssetRegistryDefault3 = tmp7(13678);
 let _slicedToArray = _slicedToArray_mod;
 ({ ImageBackground: hasOwnProperty, Image: metroRequire, View: metroImportDefault } = react_native);
 const Endpoints = Constants.Endpoints;
@@ -425,7 +425,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((handshakeToken
       tmp13 = cResult[6];
     }
     if (cResult[7] !== tmp4.mainImage) {
-      const obj4 = { source: setAuthStep(13676), style: tmp4.mainImage };
+      const obj4 = { source: setAuthStep(13678), style: tmp4.mainImage };
       const tmp20 = closure_9(closure_6, obj4);
       cResult[7] = tmp4.mainImage;
       cResult[8] = tmp20;

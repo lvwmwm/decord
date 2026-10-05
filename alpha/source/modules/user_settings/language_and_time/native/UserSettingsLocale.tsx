@@ -1,15 +1,15 @@
-// Module ID: 15241
-// Function ID: 15242
+// Module ID: 15245
+// Function ID: 15246
 // Name: UserSettingsLocale
-// Dependencies: [5, 19, 17, 2117, 2116, 21, 4890, 587, 8863, 558, 576, 504, 1126, 6071, 15242, 6619, 6072, 2]
+// Dependencies: [5, 19, 17, 2117, 2116, 21, 4890, 587, 8863, 558, 576, 504, 1126, 6071, 15246, 6619, 6072, 2]
 
-// Module 15241 (UserSettingsLocale)
+// Module 15245 (UserSettingsLocale)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import IntlLoaderStore from "IntlLoaderStore" /* 2117 */;
 import TableRadioRow2 from "TableRadioRow" /* 6071 */;
-import flags from "flags" /* 15242 */;
+import flags from "flags" /* 15246 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -40,7 +40,7 @@ let obj = function _handleLanguageChange() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -72,7 +72,7 @@ let obj = function _handleLanguageChange() {
           obj = closure_130_1(closure_130_2[8]);
           obj.updateLocale(closure_0);
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp13) {
         c4 = 3;

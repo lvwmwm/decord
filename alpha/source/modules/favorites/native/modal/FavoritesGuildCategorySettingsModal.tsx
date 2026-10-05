@@ -1,9 +1,9 @@
-// Module ID: 16034
-// Function ID: 16035
+// Module ID: 16038
+// Function ID: 16039
 // Name: FavoritesGuildCategorySettingsModal
 // Dependencies: [32, 19, 17, 2054, 2065, 21, 4890, 587, 558, 576, 1490, 504, 2077, 10035, 7498, 1126, 5707, 1188, 6098, 4847, 6074, 5993, 5593, 10660, 10661, 2]
 
-// Module 16034 (FavoritesGuildCategorySettingsModal)
+// Module 16038 (FavoritesGuildCategorySettingsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;

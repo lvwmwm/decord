@@ -148,7 +148,7 @@ export const _parseAsync = (arg0) => {
     let c7 = 0;
     let c8 = 0;
     return (async function(arg0, value, arg2, arg3) {
-      const f154218 = (item) => closure_6.finalizeIssue(item, closure_1_1, closure_4.config());
+      const f154525 = (item) => closure_6.finalizeIssue(item, closure_1_1, closure_4.config());
       if (c8 === 2) {
         c8 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -158,7 +158,7 @@ export const _parseAsync = (arg0) => {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -214,10 +214,10 @@ export const _parseAsync = (arg0) => {
             const issues = value.issues;
             const self = this;
             const self2 = this;
-            closure_3 = new closure_4(issues.map(f154218));
+            closure_3 = new closure_4(issues.map(f154525));
             let callee;
             captureStackTrace = captureStackTrace.captureStackTrace;
-            const tmp21 = new closure_4(issues.map(f154218));
+            const tmp21 = new closure_4(issues.map(f154525));
             const tmp24 = closure_3;
             if (closure_0 != null) {
               callee = closure_0.callee;
@@ -299,7 +299,7 @@ export const _safeParseAsync = (arg0) => {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -401,7 +401,7 @@ export const _encodeAsync = (arg0) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -454,7 +454,7 @@ export const _decodeAsync = (arg0) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -517,7 +517,7 @@ export const _safeEncodeAsync = (arg0) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -570,7 +570,7 @@ export const _safeDecodeAsync = (arg0) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

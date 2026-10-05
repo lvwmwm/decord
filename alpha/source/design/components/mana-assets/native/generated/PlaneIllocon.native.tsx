@@ -1,9 +1,9 @@
-// Module ID: 18057
-// Function ID: 18058
+// Module ID: 18079
+// Function ID: 18080
 // Name: PlaneIllocon
 // Dependencies: [21, 558, 576, 12137, 5974, 2]
 
-// Module 18057 (PlaneIllocon)
+// Module 18079 (PlaneIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5974 */;

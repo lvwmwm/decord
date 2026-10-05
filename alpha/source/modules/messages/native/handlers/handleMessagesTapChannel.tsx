@@ -46,7 +46,7 @@ let obj = function _maybeStartLurking() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;
@@ -119,7 +119,7 @@ obj = function _handleMessagesTapChannel() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -163,7 +163,7 @@ obj = function _handleMessagesTapChannel() {
             role = undefined;
             v4 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else {
           if (1 === v4) {
@@ -192,7 +192,7 @@ obj = function _handleMessagesTapChannel() {
                   if (obj7.isStaticRouteIconType(channelId)) {
                     if (null == guild) {
                       c4 = 3;
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     } else if ("browse" === channelId) {
                       const features3 = guild.features;
                       if (features3.has(closure_130_13.COMMUNITY)) {
@@ -201,7 +201,7 @@ obj = function _handleMessagesTapChannel() {
                         obj26.pushLazy(closure_130_0(closure_130_3[17])(closure_130_3[16], closure_130_3.paths), obj8, closure_130_18);
                       } else {
                         c4 = 3;
-                        return { value: "IconComponent", done: "IconComponent" };
+                        return { value: "IconComponent", done: null };
                       }
                     } else if ("customize" === channelId) {
                       const features2 = guild.features;
@@ -211,7 +211,7 @@ obj = function _handleMessagesTapChannel() {
                         obj24.pushLazy(closure_130_0(closure_130_3[17])(closure_130_3[16], closure_130_3.paths), obj10, closure_130_18);
                       } else {
                         c4 = 3;
-                        return { value: "IconComponent", done: "IconComponent" };
+                        return { value: "IconComponent", done: null };
                       }
                     } else {
                       if ("home" !== channelId) {
@@ -222,7 +222,7 @@ obj = function _handleMessagesTapChannel() {
                               roles = closure_130_8.getSelfMember(guildId);
                               if (null == roles) {
                                 c4 = 3;
-                                return { value: "IconComponent", done: "IconComponent" };
+                                return { value: "IconComponent", done: null };
                               } else {
                                 role = closure_130_9.getRole(guildId, closure_9);
                                 if (null != role) {
@@ -258,12 +258,12 @@ obj = function _handleMessagesTapChannel() {
                         tmp225(closure_130_15.CHANNEL(guildId, closure_130_16.GUILD_HOME), obj16);
                       } else {
                         c4 = 3;
-                        return { value: "IconComponent", done: "IconComponent" };
+                        return { value: "IconComponent", done: null };
                       }
                     }
                   }
                   c4 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               }
               if (null != messageId) {
@@ -285,7 +285,7 @@ obj = function _handleMessagesTapChannel() {
                         if (channel.type === closure_130_12.GUILD_STAGE_VOICE) {
                           if (!closure_130_11.can(closure_130_14.CONNECT, channel)) {
                             c4 = 3;
-                            return { value: "IconComponent", done: "IconComponent" };
+                            return { value: "IconComponent", done: null };
                           }
                         }
                         if (v4 != null) {
@@ -352,7 +352,7 @@ obj = function _handleMessagesTapChannel() {
               return obj27;
             } else if (value) {
               c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else if (3 === v4) {
             if (arg0 === 1) {
@@ -364,7 +364,7 @@ obj = function _handleMessagesTapChannel() {
               return obj28;
             } else if (value) {
               c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else if (arg0 === 1) {
             c4 = 3;
@@ -375,7 +375,7 @@ obj = function _handleMessagesTapChannel() {
             return obj29;
           } else if (value) {
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } else {
             if (c2 != null) {
               tmp6();

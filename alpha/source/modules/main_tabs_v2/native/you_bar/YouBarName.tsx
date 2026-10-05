@@ -1,9 +1,9 @@
-// Module ID: 16326
-// Function ID: 16327
+// Module ID: 16330
+// Function ID: 16331
 // Name: YouBarName
-// Dependencies: [19, 17, 4912, 2051, 4509, 4930, 4519, 5438, 4909, 1085, 21, 4890, 587, 558, 576, 10633, 9395, 10844, 504, 10826, 10613, 10611, 10612, 16327, 10609, 10629, 4886, 4722, 2]
+// Dependencies: [19, 17, 4912, 2051, 4509, 4930, 4519, 5438, 4909, 1085, 21, 4890, 587, 558, 576, 10633, 9395, 10844, 504, 10826, 10613, 10611, 10612, 16331, 10609, 10629, 4886, 4722, 2]
 
-// Module 16326 (YouBarName)
+// Module 16330 (YouBarName)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,7 +12,7 @@ import GuildTagDefault from "GuildTag" /* 9395 */;
 import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10611 */;
 import useUserVoiceActivity from "useUserVoiceActivity" /* 10612 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10633 */;
-import shouldShowActivityStatusDefault from "shouldShowActivityStatus" /* 16327 */;
+import shouldShowActivityStatusDefault from "shouldShowActivityStatus" /* 16331 */;
 import react from "react" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
@@ -201,7 +201,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((u
   class M {
     constructor() {
       activities = closure_7.getActivities(userId);
-      found = activities.filter(() => { /* body not rendered: F145608 */ });
+      found = activities.filter(() => { /* body not rendered: F145854 */ });
       obj = closure_0(closure_2[21]);
       items = [, ];
       items[0] = closure_4;

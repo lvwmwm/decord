@@ -1,10 +1,10 @@
-// Module ID: 17562
-// Function ID: 17563
+// Module ID: 17586
+// Function ID: 17587
 // Name: NewUserUtils
-// Dependencies: [5, 15875, 5440, 1377, 1085, 12327, 5099, 12329, 1369, 7282, 9481, 584, 1491, 12332, 5093, 17561, 1112, 12415, 2]
+// Dependencies: [5, 15879, 5440, 1377, 1085, 12327, 5099, 12329, 1369, 7282, 9481, 584, 1491, 12332, 5093, 17585, 1112, 12415, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 17562 (NewUserUtils)
+// Module 17586 (NewUserUtils)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import router_utils from "router_utils" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
@@ -16,9 +16,9 @@ import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils
 import ContactSyncConstants from "ContactSyncConstants" /* 12327 */;
 import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12332 */;
 import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 12415 */;
-import NewUserModalTypes from "NewUserModalTypes" /* 17561 */;
+import NewUserModalTypes from "NewUserModalTypes" /* 17585 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 15875 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 15879 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5440 */;
 import UserStore from "UserStore" /* 1377 */;
 import Constants from "Constants" /* 1085 */;
@@ -42,7 +42,7 @@ let obj = function _shouldSkipContactSyncStep() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -124,7 +124,7 @@ obj = function _getNextOnboardingStep() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -159,7 +159,7 @@ obj = function _getNextOnboardingStep() {
               transitionStep = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -285,7 +285,7 @@ let closure_12 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: "IconComponent" };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -350,7 +350,7 @@ let closure_13 = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: "IconComponent" };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {

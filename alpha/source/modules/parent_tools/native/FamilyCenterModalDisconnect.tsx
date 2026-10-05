@@ -1,9 +1,9 @@
-// Module ID: 14725
-// Function ID: 14726
+// Module ID: 14729
+// Function ID: 14730
 // Name: FamilyCenterModalDisconnect
-// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 5093, 4722, 8295, 4567, 1126, 11528, 2493, 11531, 14726, 4809, 4886, 14678, 8952, 5593, 8096, 5594, 11536, 5592, 8095, 6010, 10976, 2]
+// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 5093, 4722, 8295, 4567, 1126, 11528, 2493, 11531, 14730, 4809, 4886, 14682, 8952, 5593, 8096, 5594, 11536, 5592, 8095, 6010, 10976, 2]
 
-// Module 14725 (FamilyCenterModalDisconnect)
+// Module 14729 (FamilyCenterModalDisconnect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl14 from "intl" /* 1126 */;
@@ -13,7 +13,7 @@ import UserUtilsDefault from "UserUtils" /* 4722 */;
 import AssetRegistryDefault from "AssetRegistry" /* 4809 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
 import NavigatorHeader from "NavigatorHeader" /* 6010 */;
-import FamilyCenterAvatarPairDefault from "FamilyCenterAvatarPair" /* 14726 */;
+import FamilyCenterAvatarPairDefault from "FamilyCenterAvatarPair" /* 14730 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -459,7 +459,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((otherUser) => {
   let tmp33Result = requiresParentalConsent;
   if (tmp33Result) {
     const obj8 = { style: tmp.warning, text: ageSpecificText2 };
-    tmp33Result = tmp33(tmp3(14678), obj8);
+    tmp33Result = tmp33(tmp3(14682), obj8);
   }
   const obj9 = { children: items4 };
   items4[1] = tmp33Result;

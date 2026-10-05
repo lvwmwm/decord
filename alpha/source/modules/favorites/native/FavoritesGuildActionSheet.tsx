@@ -1,13 +1,13 @@
-// Module ID: 16059
-// Function ID: 16060
+// Module ID: 16063
+// Function ID: 16064
 // Name: FavoritesGuildActionSheet
-// Dependencies: [19, 2054, 21, 558, 576, 16060, 16061, 16062, 10036, 504, 6644, 1126, 6697, 5857, 11775, 16063, 6017, 6456, 4847, 6701, 2]
+// Dependencies: [19, 2054, 21, 558, 576, 16064, 16065, 16066, 10036, 504, 6644, 1126, 6697, 5857, 11775, 16067, 6017, 6456, 4847, 6701, 2]
 
-// Module 16059 (FavoritesGuildActionSheet)
-import useFavoritesGuildHideActionDefault from "useFavoritesGuildHideAction" /* 16060 */;
-import useFavoritesGuildResetActionDefault from "useFavoritesGuildResetAction" /* 16061 */;
-import useFavoritesGuildAutoAddedThreadsActionDefault from "useFavoritesGuildAutoAddedThreadsAction" /* 16062 */;
-import openFavoritesGuildChannelSortModalDefault from "openFavoritesGuildChannelSortModal" /* 16063 */;
+// Module 16063 (FavoritesGuildActionSheet)
+import useFavoritesGuildHideActionDefault from "useFavoritesGuildHideAction" /* 16064 */;
+import useFavoritesGuildResetActionDefault from "useFavoritesGuildResetAction" /* 16065 */;
+import useFavoritesGuildAutoAddedThreadsActionDefault from "useFavoritesGuildAutoAddedThreadsAction" /* 16066 */;
+import openFavoritesGuildChannelSortModalDefault from "openFavoritesGuildChannelSortModal" /* 16067 */;
 import react from "react" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 2054 */;
 import Fragment from "Fragment" /* 21 */;

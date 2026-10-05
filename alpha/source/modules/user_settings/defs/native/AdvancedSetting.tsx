@@ -1,9 +1,9 @@
-// Module ID: 15350
-// Function ID: 15351
+// Module ID: 15354
+// Function ID: 15355
 // Name: AdvancedSetting
-// Dependencies: [1085, 11129, 1126, 6883, 15351, 2]
+// Dependencies: [1085, 11129, 1126, 6883, 15355, 2]
 
-// Module 15350 (AdvancedSetting)
+// Module 15354 (AdvancedSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import SettingsIcon from "SettingsIcon" /* 6883 */;

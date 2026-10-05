@@ -1,14 +1,14 @@
-// Module ID: 16267
-// Function ID: 16268
+// Module ID: 16271
+// Function ID: 16272
 // Name: useGuildMediaState
-// Dependencies: [2050, 2056, 2055, 4912, 502, 2051, 2074, 4509, 4519, 2103, 5071, 4909, 1085, 1106, 558, 576, 504, 13519, 9160, 4498, 13520, 9000, 11, 5573, 2]
+// Dependencies: [2050, 2056, 2055, 4912, 502, 2051, 2074, 4509, 4519, 2103, 5071, 4909, 1085, 1106, 558, 576, 504, 13521, 9160, 4498, 13522, 9000, 11, 5573, 2]
 
-// Module 16267 (useGuildMediaState)
+// Module 16271 (useGuildMediaState)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1085 */;
 import ChannelTypes from "ChannelTypes" /* 1106 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
-import BlockedUserUtils from "BlockedUserUtils" /* 13520 */;
+import BlockedUserUtils from "BlockedUserUtils" /* 13522 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
 import StageInstanceStore from "StageInstanceStore" /* 2056 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
@@ -243,7 +243,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
       }
-      obj1 = { guildHasVoice: flag, guildHasVideo: (() => { /* body not rendered: F145509 */ })(), selectedVoiceChannelHasVideo: null };
+      obj1 = { guildHasVoice: flag, guildHasVideo: (() => { /* body not rendered: F145755 */ })(), selectedVoiceChannelHasVideo: null };
       hasVideoResult = null != voiceChannelId;
       if (hasVideoResult) {
         tmp21 = closure_1_14;

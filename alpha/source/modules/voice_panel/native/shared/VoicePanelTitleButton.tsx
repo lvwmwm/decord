@@ -1,9 +1,9 @@
-// Module ID: 17223
-// Function ID: 17224
+// Module ID: 17247
+// Function ID: 17248
 // Name: VoicePanelTitleButton
-// Dependencies: [19, 17, 5118, 2056, 2051, 4911, 21, 4890, 558, 576, 9431, 1126, 5595, 6638, 504, 5043, 9345, 8567, 587, 11901, 5042, 17224, 5817, 17160, 5593, 17196, 5821, 7941, 1106, 17195, 17225, 2]
+// Dependencies: [19, 17, 5118, 2056, 2051, 4911, 21, 4890, 558, 576, 9431, 1126, 5595, 6638, 504, 5043, 9345, 8567, 587, 11901, 5042, 17248, 5817, 17184, 5593, 17220, 5821, 7941, 1106, 17219, 17249, 2]
 
-// Module 17223 (VoicePanelTitleButton)
+// Module 17247 (VoicePanelTitleButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,9 +17,9 @@ import AssetRegistryDefault3 from "AssetRegistry" /* 6638 */;
 import native from "native" /* 8567 */;
 import ShieldLockIcon2 from "ShieldLockIcon" /* 9431 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11901 */;
-import QuestActivityButtonDefault from "QuestActivityButton" /* 17160 */;
-import VoicePanelHeaderUserState from "VoicePanelHeaderUserState" /* 17196 */;
-import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 17225 */;
+import QuestActivityButtonDefault from "QuestActivityButton" /* 17184 */;
+import VoicePanelHeaderUserState from "VoicePanelHeaderUserState" /* 17220 */;
+import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 17249 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5118 */;
 import StageInstanceStore from "StageInstanceStore" /* 2056 */;
@@ -34,7 +34,7 @@ let c9;
 let tmp13;
 let tmp4;
 const AssetRegistryDefault2 = tmp13(5821);
-const AssetRegistryDefault4 = tmp4(17224);
+const AssetRegistryDefault4 = tmp4(17248);
 const View = react_native.View;
 const ParticipantTypes = CallConstants.ParticipantTypes;
 ({ jsx: c9, jsxs: c10 } = Fragment);
@@ -650,7 +650,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   const tmpResult = guildId(7941);
   const derivedStateFromSharedValue = tmpResult.useDerivedStateFromSharedValue(focused, first);
   const GUILD_STAGE_VOICE = tmp(1106).ChannelTypes.GUILD_STAGE_VOICE;
-  const tmp8 = tmp4(17195)(derivedStateFromSharedValue, channelId, guildId);
+  const tmp8 = tmp4(17219)(derivedStateFromSharedValue, channelId, guildId);
   if (cResult[1] === channelId) {
     let tmp9;
     let tmp12;
@@ -758,7 +758,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     return id;
   });
   const GUILD_STAGE_VOICE = guildId(1106).ChannelTypes.GUILD_STAGE_VOICE;
-  const tmp3 = channelId(17195)(derivedStateFromSharedValue, channelId, guildId);
+  const tmp3 = channelId(17219)(derivedStateFromSharedValue, channelId, guildId);
   const items = [guildId, channelId];
   const onPress = react.useCallback(() => {
     const obj = VoicePanelSettingsActionCreators;

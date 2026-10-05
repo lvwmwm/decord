@@ -1,9 +1,9 @@
-// Module ID: 14296
-// Function ID: 14297
+// Module ID: 14298
+// Function ID: 14299
 // Name: RPCServerManager
-// Dependencies: [32, 8703, 7187, 2051, 2112, 2074, 1999, 4930, 4913, 4519, 2103, 1377, 4909, 5316, 1085, 2011, 8704, 4915, 1369, 584, 1252, 14297, 504, 1375, 9031, 8992, 14302, 9032, 7208, 2]
+// Dependencies: [32, 8703, 7187, 2051, 2112, 2074, 1999, 4930, 4913, 4519, 2103, 1377, 4909, 5316, 1085, 2011, 8704, 4915, 1369, 584, 1252, 14299, 504, 1375, 9031, 8992, 14304, 9032, 7208, 2]
 
-// Module 14296 (RPCServerManager)
+// Module 14298 (RPCServerManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
@@ -16,8 +16,8 @@ import FramesConstants from "FramesConstants" /* 8704 */;
 import useThermalState from "useThermalState" /* 8992 */;
 import RPCHelpers from "RPCHelpers" /* 9031 */;
 import transformUserDefault from "transformUser" /* 9032 */;
-import VibegrationsVoiceSessionCoordinatorDefault from "VibegrationsVoiceSessionCoordinator" /* 14297 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14302 */;
+import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 14299 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14304 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import FramesStore from "FramesStore" /* 8703 */;
 import QuestStore from "QuestStore" /* 7187 */;
@@ -116,7 +116,7 @@ class RPCServerManager {
                 const obj3 = { channel_id: voiceState.channelId, user_id: speakingFlags.userId };
                 const result = rpcServer2.dispatchToSubscriptions(SPEAKING_STOP, obj2, obj3);
                 if (null != voiceState.channelId) {
-                  obj = VibegrationsVoiceSessionCoordinatorDefault;
+                  obj = ConjureVoiceSessionCoordinatorDefault;
                   let activeSessionIdsForChannel = obj.getActiveSessionIdsForChannel(voiceState.channelId);
                 } else {
                   activeSessionIdsForChannel = [];
@@ -142,7 +142,7 @@ class RPCServerManager {
     obj.handleVoiceChannelSelect = function handleVoiceChannelSelect(channelId) {
       channelId = channelId.channelId;
       const guildId = channelId.guildId;
-      obj = VibegrationsVoiceSessionCoordinatorDefault;
+      obj = ConjureVoiceSessionCoordinatorDefault;
       obj.releaseUnlessChannel(channelId);
       if (0 !== obj.rpcServer.subscriptions.length) {
         const rpcServer = obj.rpcServer;
@@ -253,11 +253,12 @@ class RPCServerManager {
         }
       }
     };
-    obj.handleScreenOrientationUpdate = function handleScreenOrientationUpdate(arg0) {
+    obj.handleScreenOrientationUpdate = function handleScreenOrientationUpdate(applicationId) {
+      applicationId = applicationId.applicationId;
       if (0 !== obj.rpcServer.subscriptions.length) {
         const rpcServer = obj.rpcServer;
         obj = { screen_orientation: tmp };
-        const result = rpcServer.dispatchToSubscriptions(constants3.ORIENTATION_UPDATE, {}, obj);
+        const result = rpcServer.dispatchToSubscriptions(constants3.ORIENTATION_UPDATE, null == applicationId ? {} : ((socket) => socket.socket.application.id === applicationId), obj);
       }
     };
     obj.handleEmbeddedActivityUpdate = function handleEmbeddedActivityUpdate() {
@@ -357,7 +358,7 @@ class RPCServerManager {
       }
     };
     obj.handleLogout = function handleLogout() {
-      obj = VibegrationsVoiceSessionCoordinatorDefault;
+      obj = ConjureVoiceSessionCoordinatorDefault;
       obj.release();
       const sockets = obj.rpcServer.sockets;
       const item = sockets.forEach((close) => close.close(constants.CLOSE_NORMAL, "User logout"));
@@ -587,7 +588,7 @@ class RPCServerManager {
       obj3.track(constants.AUTHORIZED_APP_CONNECTED, obj4);
     };
     this.rpcServer.onDisconnect = (id, reason) => {
-      const obj = VibegrationsVoiceSessionCoordinatorDefault;
+      const obj = ConjureVoiceSessionCoordinatorDefault;
       obj.releaseSocket(id.id);
       const obj2 = DispatcherDefault;
       const obj3 = { type: "RPC_APP_DISCONNECTED", socketId: id.id, application: id.application, source: id.source, reason };
@@ -595,7 +596,7 @@ class RPCServerManager {
     };
     const items = [ChannelStore, GuildMemberStore, PresenceStore, VoiceStateStore, MediaEngineStore, RTCConnectionStore];
     const batchedStoreListener = new self(504).BatchedStoreListener(items.concat(this.stores), () => {
-      const obj = VibegrationsVoiceSessionCoordinatorDefault;
+      const obj = ConjureVoiceSessionCoordinatorDefault;
       const result = obj.reconcileParticipants();
       const rpcServer = self.rpcServer;
       rpcServer.updateSubscriptions();

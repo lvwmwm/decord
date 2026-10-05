@@ -1,22 +1,22 @@
-// Module ID: 16196
-// Function ID: 16197
+// Module ID: 16200
+// Function ID: 16201
 // Name: GuildUpsellChannelList
-// Dependencies: [19, 17, 13522, 6084, 16197, 1085, 21, 4890, 587, 1126, 12810, 16198, 16200, 558, 576, 13525, 504, 16202, 1252, 12357, 4886, 5995, 5594, 14897, 16203, 2]
+// Dependencies: [19, 17, 13524, 6084, 16201, 1085, 21, 4890, 587, 1126, 12810, 16202, 16204, 558, 576, 13527, 504, 16206, 1252, 12357, 4886, 5995, 5594, 14901, 16207, 2]
 
-// Module 16196 (GuildUpsellChannelList)
+// Module 16200 (GuildUpsellChannelList)
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 4886 */;
 import components_Button_Button from "components/Button/Button" /* 5594 */;
 import Card_Card from "Card/Card" /* 5995 */;
 import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 12810 */;
-import MobileGameCommunitiesConstants from "MobileGameCommunitiesConstants" /* 16197 */;
-import ChatControllersSpotIllustration from "ChatControllersSpotIllustration" /* 16198 */;
-import MiniaturesSpotIllustration from "MiniaturesSpotIllustration" /* 16200 */;
-import MobileGameCommunitiesActionCreatorsAll from "MobileGameCommunitiesActionCreators" /* 16202 */;
+import MobileGameCommunitiesConstants from "MobileGameCommunitiesConstants" /* 16201 */;
+import ChatControllersSpotIllustration from "ChatControllersSpotIllustration" /* 16202 */;
+import MiniaturesSpotIllustration from "MiniaturesSpotIllustration" /* 16204 */;
+import MobileGameCommunitiesActionCreatorsAll from "MobileGameCommunitiesActionCreators" /* 16206 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13522 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13524 */;
 import ConsentStore from "ConsentStore" /* 6084 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
@@ -88,7 +88,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     first = cResult[0];
   }
-  const GameCommunityAddServerEntryExperiment = tmp(13525).GameCommunityAddServerEntryExperiment;
+  const GameCommunityAddServerEntryExperiment = tmp(13527).GameCommunityAddServerEntryExperiment;
   const cardAction = GameCommunityAddServerEntryExperiment.useConfig(first).cardAction;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     items = [ConsentStore, LocalAppDetectionStore];

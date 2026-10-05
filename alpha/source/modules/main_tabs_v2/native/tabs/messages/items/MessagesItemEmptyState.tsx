@@ -1,16 +1,16 @@
-// Module ID: 16015
-// Function ID: 16016
+// Module ID: 16019
+// Function ID: 16020
 // Name: MessagesItemEmptyState
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4737, 15975, 1126, 4886, 5594, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4737, 15979, 1126, 4886, 5594, 2]
 
-// Module 16015 (MessagesItemEmptyState)
+// Module 16019 (MessagesItemEmptyState)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import RootNavigationRef from "RootNavigationRef" /* 4737 */;
 import Text_Text from "Text/Text" /* 4886 */;
 import components_Button_Button from "components/Button/Button" /* 5594 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15975 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15979 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

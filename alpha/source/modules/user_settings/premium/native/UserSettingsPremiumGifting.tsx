@@ -1,9 +1,9 @@
-// Module ID: 13359
-// Function ID: 13360
+// Module ID: 13361
+// Function ID: 13362
 // Name: UserSettingsPremiumGifting
-// Dependencies: [32, 19, 17, 7863, 6899, 1085, 1379, 21, 4890, 587, 558, 576, 6074, 6920, 1490, 1618, 504, 5310, 12, 6923, 13360, 10471, 7855, 13203, 584, 6905, 6925, 7868, 6487, 6491, 8867, 13361, 4886, 1126, 13362, 13368, 13370, 13373, 13375, 2589, 13376, 5968, 11094, 6494, 2]
+// Dependencies: [32, 19, 17, 7863, 6899, 1085, 1379, 21, 4890, 587, 558, 576, 6074, 6920, 1490, 1618, 504, 5310, 12, 6923, 13362, 10471, 7855, 13205, 584, 6905, 6925, 7868, 6487, 6491, 8867, 13363, 4886, 1126, 13364, 13370, 13372, 13375, 13377, 2589, 13378, 5968, 11094, 6494, 2]
 
-// Module 13359 (UserSettingsPremiumGifting)
+// Module 13361 (UserSettingsPremiumGifting)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -20,13 +20,13 @@ import useStoreConnectionErrorAlertDefault from "useStoreConnectionErrorAlert" /
 import BadgeId from "BadgeId" /* 7855 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7868 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8867 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13361 */;
-import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 13362 */;
-import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 13368 */;
-import PremiumTierCardDefault from "PremiumTierCard" /* 13370 */;
-import GiftPurchaseButtonDefault from "GiftPurchaseButton" /* 13373 */;
-import PremiumUnverifiedWarningDefault from "PremiumUnverifiedWarning" /* 13375 */;
-import UserSettingsGiftingBadgeProgressDefault from "UserSettingsGiftingBadgeProgress" /* 13376 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13363 */;
+import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 13364 */;
+import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 13370 */;
+import PremiumTierCardDefault from "PremiumTierCard" /* 13372 */;
+import GiftPurchaseButtonDefault from "GiftPurchaseButton" /* 13375 */;
+import PremiumUnverifiedWarningDefault from "PremiumUnverifiedWarning" /* 13377 */;
+import UserSettingsGiftingBadgeProgressDefault from "UserSettingsGiftingBadgeProgress" /* 13378 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -180,7 +180,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   react = tmp14;
   const tmpResult7 = tmp(6923);
   const isPaymentsBlocked = tmpResult7.useIsPaymentsBlocked();
-  const tmpResult8 = tmp(13360);
+  const tmpResult8 = tmp(13362);
   const outboundPromotions = tmpResult8.useOutboundPromotions();
   const promotionsLoaded = outboundPromotions.promotionsLoaded;
   const activeOutboundPromotions = outboundPromotions.activeOutboundPromotions;
@@ -219,7 +219,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   const tmp24 = navigation(react.useState(false), 2);
   constants = tmp24[0];
   constants2 = tmp24[1];
-  const tmpResult10 = tmp(13203);
+  const tmpResult10 = tmp(13205);
   const subscriptionPlansLoaded = tmpResult10.useSubscriptionPlansLoaded();
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
     class X {
@@ -228,7 +228,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
         waitResult = obj.wait(() => {
           const obj = recipientUserId(closure_2[25]);
           const giftableEntitlements = obj.fetchGiftableEntitlements();
-          giftableEntitlements.then(() => { /* body not rendered: F152525 */ });
+          giftableEntitlements.then(() => { /* body not rendered: F152811 */ });
           const obj2 = analyticsLocation(closure_2[26]);
           obj2.init();
         });
@@ -251,7 +251,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
         waitResult = obj.wait(() => {
           const obj = recipientUserId(closure_2[25]);
           const giftableEntitlements = obj.fetchGiftableEntitlements();
-          giftableEntitlements.then(() => { /* body not rendered: F152525 */ });
+          giftableEntitlements.then(() => { /* body not rendered: F152811 */ });
           const obj2 = analyticsLocation(closure_2[26]);
           obj2.init();
         });

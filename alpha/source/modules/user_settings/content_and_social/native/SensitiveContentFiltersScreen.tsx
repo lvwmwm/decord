@@ -1,22 +1,22 @@
-// Module ID: 14616
-// Function ID: 14617
+// Module ID: 14620
+// Function ID: 14621
 // Name: SensitiveContentFiltersScreen
-// Dependencies: [19, 7634, 21, 1126, 558, 576, 14617, 11129, 14495, 2]
+// Dependencies: [19, 7634, 21, 1126, 558, 576, 14621, 11129, 14499, 2]
 
-// Module 14616 (SensitiveContentFiltersScreen)
+// Module 14620 (SensitiveContentFiltersScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;
-import SettingLayoutDefault from "SettingLayout" /* 14495 */;
-import SettingsScreenNoticesDefault from "SettingsScreenNotices" /* 14617 */;
+import SettingLayoutDefault from "SettingLayout" /* 14499 */;
+import SettingsScreenNoticesDefault from "SettingsScreenNotices" /* 14621 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const SettingsScreenNotices = tmp(14617);
+const SettingsScreenNotices = tmp(14621);
 function getContentCategory() {
   let intl;
   let intl2;

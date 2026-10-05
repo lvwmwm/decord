@@ -1,13 +1,13 @@
-// Module ID: 18075
-// Function ID: 18076
+// Module ID: 18097
+// Function ID: 18098
 // Name: i18nMessagesProvider
-// Dependencies: [18076, 1165, 1126, 2]
+// Dependencies: [18098, 1165, 1126, 2]
 // Exports: default
 
-// Module 18075 (i18nMessagesProvider)
+// Module 18097 (i18nMessagesProvider)
 import intl2 from "intl" /* 1126 */;
 import _mod1165 from "module_1165" /* 1165 */;
-import react_nativeDefault from "react-native" /* 18076 */;
+import react_nativeDefault from "react-native" /* 18098 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("i18n/native/i18nMessagesProvider.tsx");

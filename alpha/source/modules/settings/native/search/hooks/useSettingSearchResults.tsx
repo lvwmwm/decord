@@ -1,15 +1,15 @@
-// Module ID: 14504
-// Function ID: 14505
+// Module ID: 14508
+// Function ID: 14509
 // Name: useSettingSearchResults
-// Dependencies: [32, 19, 14497, 14404, 14500, 14405, 558, 576, 14505, 14499, 551, 2]
+// Dependencies: [32, 19, 14501, 14408, 14504, 14409, 558, 576, 14509, 14503, 551, 2]
 
-// Module 14504 (useSettingSearchResults)
+// Module 14508 (useSettingSearchResults)
 import debounceDefault from "debounce" /* 551 */;
-import UserSettingSearchManagerDefault from "UserSettingSearchManager" /* 14505 */;
+import UserSettingSearchManagerDefault from "UserSettingSearchManager" /* 14509 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14497 */;
-import SettingBlocklistStore from "SettingBlocklistStore" /* 14404 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14501 */;
+import SettingBlocklistStore from "SettingBlocklistStore" /* 14408 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
     const self = this;
     const self2 = this;
     const tmp6 = UserSettingSearchManagerDefault;
-    const tmpResult = tmp(14499);
+    const tmpResult = tmp(14503);
     const tmp62 = new tmp6(tmpResult.getSettingSearchableTitles());
     cResult[0] = tmp62;
     first = tmp62;

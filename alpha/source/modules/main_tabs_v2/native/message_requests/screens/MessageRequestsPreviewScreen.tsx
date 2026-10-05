@@ -1,9 +1,9 @@
-// Module ID: 17050
-// Function ID: 17051
+// Module ID: 17074
+// Function ID: 17075
 // Name: MessageRequestsPreviewScreen
-// Dependencies: [19, 4905, 1085, 21, 558, 576, 12083, 7517, 17051, 9760, 12463, 2]
+// Dependencies: [19, 4905, 1085, 21, 558, 576, 12083, 7517, 17075, 9760, 12463, 2]
 
-// Module 17050 (MessageRequestsPreviewScreen)
+// Module 17074 (MessageRequestsPreviewScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import MessageManagerDefault from "MessageManager" /* 7517 */;
@@ -64,7 +64,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   }
   if (isMessageRequestRestrictedViewer) {
     const obj5 = { channelId };
-    tmp10Result = tmp10(tmp11(17051), obj5);
+    tmp10Result = tmp10(tmp11(17075), obj5);
   } else {
     const obj6 = { guildId: ME, channelId, chatInputRef: ref, HACK_fixModalInteraction: true, screenIndex: "message-request" };
     tmp10Result = tmp10(tmp11(9760), obj6);
@@ -88,7 +88,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   const ChannelContainer = channelId(12463).ChannelContainer;
   if (isMessageRequestRestrictedViewer) {
     const obj3 = { channelId };
-    tmp5Result = tmp5(tmp7(17051), obj3);
+    tmp5Result = tmp5(tmp7(17075), obj3);
   } else {
     const obj4 = { guildId: tmp6, channelId, chatInputRef: ref, HACK_fixModalInteraction: true, screenIndex: "message-request" };
     tmp5Result = tmp5(tmp7(9760), obj4);

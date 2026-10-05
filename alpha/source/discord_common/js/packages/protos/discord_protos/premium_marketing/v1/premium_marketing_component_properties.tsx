@@ -32,7 +32,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9;
+let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8;
 
 const MessageType = _mod1198.MessageType;
 class PremiumMarketingComponentProperties$Type extends MessageType {
@@ -348,7 +348,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
     }
     if ("giftCustomizationBanner" === properties.properties.oneofKind) {
       const GiftCustomizationBanner = gift_customization_banner.GiftCustomizationBanner;
-      internalBinaryWrite9 = GiftCustomizationBanner.internalBinaryWrite;
+      const internalBinaryWrite9 = GiftCustomizationBanner.internalBinaryWrite;
       const giftCustomizationBanner = properties.properties.giftCustomizationBanner;
       const tagResult9 = tag.tag(11, _mod1198.WireType.LengthDelimited);
       const internalBinaryWrite9Result = internalBinaryWrite9(giftCustomizationBanner, tagResult9.fork(), writeUnknownFields);

@@ -11,7 +11,7 @@ import Text_Text from "Text/Text" /* 4886 */;
 import AppsIcon2 from "AppsIcon" /* 5890 */;
 import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7229 */;
 import utils from "utils" /* 7818 */;
-import conjuringActivity from "conjuringActivity" /* 10621 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 10621 */;
 import HourglassIcon from "HourglassIcon" /* 12702 */;
 import useTimestampTickedNow from "useTimestampTickedNow" /* 12829 */;
 import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 12830 */;
@@ -37,8 +37,8 @@ function getTimestampBadgeIcon(activity, arg1) {
     AppsIcon = HourglassIcon.HourglassIcon;
   } else {
     if (!isEmbeddedActivityDefault(activity)) {
-      const obj = conjuringActivity;
-      if (!obj.isConjuringActivity(activity)) {
+      const obj = conjurePresenceActivity;
+      if (!obj.isConjurePresenceActivity(activity)) {
         if (activity.type === ActivityTypes.WATCHING) {
           AppsIcon = tmp4(10616).TvIcon;
         } else if (activity.type === tmp5.LISTENING) {

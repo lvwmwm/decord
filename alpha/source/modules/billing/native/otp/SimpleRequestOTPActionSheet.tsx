@@ -1,9 +1,9 @@
-// Module ID: 15569
-// Function ID: 15570
+// Module ID: 15573
+// Function ID: 15574
 // Name: SimpleRequestOTPActionSheet
 // Dependencies: [5, 32, 19, 17, 1377, 5695, 1085, 1379, 21, 3, 1618, 10430, 504, 10778, 7052, 1976, 8872, 10750, 4854, 5708, 7065, 5593, 4886, 5995, 5594, 10561, 558, 576, 1266, 10394, 6645, 10551, 2]
 
-// Module 15569 (SimpleRequestOTPActionSheet)
+// Module 15573 (SimpleRequestOTPActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -46,7 +46,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   let obj7;
   let tmp16;
   let tmp17;
-  const f120526 = () => {
+  const f120679 = () => {
     let items;
     if (null == c5) {
       items = ["Loading...", "Loading..."];
@@ -195,7 +195,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -249,7 +249,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp30) {
             if (0 === c3) {
               c5 = 3;
@@ -286,8 +286,8 @@ function GiftPurchaseSKUView(selectedSkuId) {
   obj7 = { isGift: true, options: { recipient_id: giftRecipientId, custom_message: giftMessage, gift_style: giftStyle } };
   closure_8 = tmp(10750)(obj6);
   const items5 = [product];
-  [tmp16, tmp17] = tmp3(obj.useMemo(f120526, items5), 2);
-  tmp3(obj.useMemo(f120526, items5), 2);
+  [tmp16, tmp17] = tmp3(obj.useMemo(f120679, items5), 2);
+  tmp3(obj.useMemo(f120679, items5), 2);
   if (!isFetching) {
     isFetching = first;
   }

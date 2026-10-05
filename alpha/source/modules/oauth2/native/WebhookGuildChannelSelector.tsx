@@ -111,7 +111,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -150,7 +150,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
                   closure_1_5.current = true;
                 }
                 v3 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp19) {
               v3 = 3;

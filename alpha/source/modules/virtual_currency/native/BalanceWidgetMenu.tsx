@@ -1,9 +1,9 @@
-// Module ID: 15571
-// Function ID: 15572
+// Module ID: 15575
+// Function ID: 15576
 // Name: BalanceWidgetMenu
-// Dependencies: [19, 1085, 1087, 2048, 5623, 21, 558, 576, 4886, 1126, 5993, 2036, 10354, 1252, 10908, 5626, 15572, 8508, 4854, 11011, 1987, 6681, 7052, 11010, 4698, 5609, 2]
+// Dependencies: [19, 1085, 1087, 2048, 5623, 21, 558, 576, 4886, 1126, 5993, 2036, 10354, 1252, 10908, 5626, 15576, 8508, 4854, 11011, 1987, 6681, 7052, 11010, 4698, 5609, 2]
 
-// Module 15571 (BalanceWidgetMenu)
+// Module 15575 (BalanceWidgetMenu)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;

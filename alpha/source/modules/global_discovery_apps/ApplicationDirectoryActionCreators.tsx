@@ -43,7 +43,7 @@ let obj = function _getEmbedApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -130,7 +130,7 @@ let obj = function _getEmbedApplication() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp21) {
           closure_4 = tmp21;
           if (0 === c5) {
@@ -215,7 +215,7 @@ obj = function _getApplication() {
       if (closure_1 === undefined) {
         obj5 = {};
       }
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -237,7 +237,7 @@ obj = function _getCategories() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -281,7 +281,7 @@ obj = function _getCategories() {
           obj.dispatch(obj8);
         }
         c3 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp17) {
         c3 = 3;
         throw tmp17;
@@ -362,7 +362,7 @@ obj = function _getSimilarApplications() {
       }
       await "IconComponent";
       ({ applicationId: c0, guildId: c1, options: c2 } = closure_0);
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -468,7 +468,7 @@ obj = function _search() {
       }
       await "IconComponent";
       ({ query: c0, guildId: c1, options: c2, onSuccessCallback: c3 } = closure_0);
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -557,7 +557,7 @@ obj = function _fetchCollections() {
     }
     APPLICATION_DIRECTORY = obj5.surface ?? ApplicationCollectionSurface.ApplicationCollectionSurface.APPLICATION_DIRECTORY;
     ACTIVE = obj5.activeState ?? ApplicationCollectionActiveState.ApplicationCollectionActiveState.ACTIVE;
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };
@@ -576,7 +576,7 @@ obj = function _fetchIntegrationApplicationIdsForMyGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -654,7 +654,7 @@ obj = function _fetchIntegrationApplicationIdsForMyGuilds() {
           c3 = 0;
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp32) {
         if (0 === c3) {
           c5 = 3;

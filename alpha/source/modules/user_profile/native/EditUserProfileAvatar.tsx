@@ -1,10 +1,10 @@
-// Module ID: 14431
-// Function ID: 14432
+// Module ID: 14435
+// Function ID: 14436
 // Name: EditUserProfileAvatar
-// Dependencies: [19, 17, 4879, 21, 4890, 6657, 6681, 4528, 7830, 7840, 14432, 4854, 14433, 1987, 14434, 14434, 7828, 7837, 504, 4612, 4891, 7929, 14413, 1126, 5909, 14435, 1188, 2]
+// Dependencies: [19, 17, 4879, 21, 4890, 6657, 6681, 4528, 7830, 7840, 14436, 4854, 14437, 1987, 14438, 14438, 7828, 7837, 504, 4612, 4891, 7929, 14417, 1126, 5909, 14439, 1188, 2]
 // Exports: default
 
-// Module 14431 (EditUserProfileAvatar)
+// Module 14435 (EditUserProfileAvatar)
 import react_native from "react-native" /* 17 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
@@ -117,7 +117,7 @@ export default function EditUserProfileAvatar(user) {
       handleEditAvatarDecorationSelect: fn,
       showRemoveAvatar: tmp3Result.showRemoveAvatar(pendingAvatar, user.avatar)
     };
-    const tmp4 = asyncRequire(14433, dependencyMap.paths);
+    const tmp4 = asyncRequire(14437, dependencyMap.paths);
     if (!flag) {
       fn = () => {
         const obj = user(flag2[16]);

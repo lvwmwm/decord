@@ -1,14 +1,14 @@
-// Module ID: 16249
-// Function ID: 16250
+// Module ID: 16253
+// Function ID: 16254
 // Name: HomeDrawerFavoritesRow
-// Dependencies: [19, 21, 558, 576, 16242, 4886, 1126, 2]
+// Dependencies: [19, 21, 558, 576, 16246, 4886, 1126, 2]
 
-// Module 16249 (HomeDrawerFavoritesRow)
+// Module 16253 (HomeDrawerFavoritesRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 4886 */;
-import HomeDrawerShared from "HomeDrawerShared" /* 16242 */;
+import HomeDrawerShared from "HomeDrawerShared" /* 16246 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj = react2;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const HomeDrawerSharedItem = tmp(16242).HomeDrawerSharedItem;
+    const HomeDrawerSharedItem = tmp(16246).HomeDrawerSharedItem;
     ({ variant: "text-md/medium", color: "text-default", lineClamp: 1, children: intl.string(intl2.t.wMWyci) });
     const Text = tmp(4886).Text;
     intl = tmp(1126).intl;

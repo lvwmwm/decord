@@ -12,7 +12,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9;
+let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8;
 
 let tmp;
 let tmp2;
@@ -876,7 +876,7 @@ class AnnouncementModalVariant1Properties$Type extends MessageType5 {
     }
     if (header.modalTopPillLocalized) {
       const LocalizedString3 = localized_string.LocalizedString;
-      internalBinaryWrite9 = LocalizedString3.internalBinaryWrite;
+      const internalBinaryWrite9 = LocalizedString3.internalBinaryWrite;
       const modalTopPillLocalized = header.modalTopPillLocalized;
       const tagResult16 = tag.tag(21, _mod1198.WireType.LengthDelimited);
       const internalBinaryWrite9Result = internalBinaryWrite9(modalTopPillLocalized, tagResult16.fork(), writeUnknownFields);

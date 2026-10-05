@@ -1,10 +1,10 @@
-// Module ID: 16123
-// Function ID: 16124
+// Module ID: 16127
+// Function ID: 16128
 // Name: FavoritesGuildSuggestionsStore
 // Dependencies: [32, 19, 2042, 1085, 2048, 570, 558, 576, 10036, 2036, 6891, 2]
 // Exports: setFavoritesGuildSuggestions
 
-// Module 16123 (FavoritesGuildSuggestionsStore)
+// Module 16127 (FavoritesGuildSuggestionsStore)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
@@ -140,7 +140,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[3] !== tmp9[1]) {
     class I {
       constructor() {
-        obj = { dismiss() { /* body not rendered: F145323 */ } };
+        obj = { dismiss() { /* body not rendered: F145569 */ } };
         setStateResult = closure_8.setState(obj);
         return;
       }
@@ -154,7 +154,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     class I {
       constructor() {
-        obj = { dismiss() { /* body not rendered: F145323 */ } };
+        obj = { dismiss() { /* body not rendered: F145569 */ } };
         setStateResult = closure_8.setState(obj);
         return;
       }
@@ -166,7 +166,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class O {
       constructor() {
-        return () => { /* body not rendered: F145324 */ };
+        return () => { /* body not rendered: F145570 */ };
       }
     }
     const items1 = [];
@@ -177,7 +177,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     class O {
       constructor() {
-        return () => { /* body not rendered: F145324 */ };
+        return () => { /* body not rendered: F145570 */ };
       }
     }
     tmp16 = cResult[7];
@@ -186,7 +186,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[8] === hasAccess) {
     class O {
       constructor() {
-        return () => { /* body not rendered: F145324 */ };
+        return () => { /* body not rendered: F145570 */ };
       }
     }
     return obj3;

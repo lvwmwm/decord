@@ -1,9 +1,9 @@
-// Module ID: 16284
-// Function ID: 16285
+// Module ID: 16288
+// Function ID: 16289
 // Name: GuildsBarGeoRestrictedGuild
-// Dependencies: [19, 16218, 21, 4890, 587, 16234, 558, 576, 16230, 1402, 5971, 5707, 1126, 9247, 16285, 16253, 5974, 2]
+// Dependencies: [19, 16222, 21, 4890, 587, 16238, 558, 576, 16234, 1402, 5971, 5707, 1126, 9247, 16289, 16257, 5974, 2]
 
-// Module 16284 (GuildsBarGeoRestrictedGuild)
+// Module 16288 (GuildsBarGeoRestrictedGuild)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
@@ -12,11 +12,11 @@ import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
 import GuildIcon from "GuildIcon" /* 5971 */;
 import FastImageDefault from "FastImage" /* 5974 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 16218 */;
-import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 16230 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16234 */;
-import HomeDrawerGuildRowDefault from "HomeDrawerGuildRow" /* 16253 */;
-import GuildsBarGeoRestrictedBadgeDefault from "GuildsBarGeoRestrictedBadge" /* 16285 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 16222 */;
+import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 16234 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16238 */;
+import HomeDrawerGuildRowDefault from "HomeDrawerGuildRow" /* 16257 */;
+import GuildsBarGeoRestrictedBadgeDefault from "GuildsBarGeoRestrictedBadge" /* 16289 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -46,7 +46,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((r
   } else {
     first = cResult[0];
   }
-  const tmpResult = tmp(16230);
+  const tmpResult = tmp(16234);
   const guildsBarAnimatedWrapperStyles = tmpResult.useGuildsBarAnimatedWrapperStyles(first);
   if (cResult[1] === restrictedGuild.icon) {
     let tmp7;
@@ -169,7 +169,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((r
   let tmp8Result;
   restrictedGuild = restrictedGuild.restrictedGuild;
   let tmp = closure_5();
-  let obj = restrictedGuild(16230);
+  let obj = restrictedGuild(16234);
   let animatableSourceWithFallback = null;
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true });
   const tmp2 = restrictedGuild;

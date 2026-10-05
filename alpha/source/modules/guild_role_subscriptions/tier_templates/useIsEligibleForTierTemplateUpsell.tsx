@@ -1,9 +1,9 @@
-// Module ID: 16177
-// Function ID: 16178
+// Module ID: 16181
+// Function ID: 16182
 // Name: useIsEligibleForTierTemplateUpsell
-// Dependencies: [2074, 1085, 558, 576, 504, 13703, 6763, 2]
+// Dependencies: [2074, 1085, 558, 576, 504, 13705, 6763, 2]
 
-// Module 16177 (useIsEligibleForTierTemplateUpsell)
+// Module 16181 (useIsEligibleForTierTemplateUpsell)
 import Constants from "Constants" /* 1085 */;
 import GuildStore from "GuildStore" /* 2074 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

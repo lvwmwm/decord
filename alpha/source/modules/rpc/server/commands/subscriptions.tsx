@@ -1,9 +1,9 @@
-// Module ID: 14340
-// Function ID: 14341
+// Module ID: 14342
+// Function ID: 14343
 // Name: subscriptions
-// Dependencies: [5, 1085, 12, 9026, 14341, 1252, 14342, 2]
+// Dependencies: [5, 1085, 12, 9026, 14343, 1252, 14344, 2]
 
-// Module 14340 (subscriptions)
+// Module 14342 (subscriptions)
 import _modDef12 from "module_12" /* 12 */;
 import RPCErrorDefault from "RPCError" /* 9026 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
@@ -63,7 +63,7 @@ let obj = {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp45;

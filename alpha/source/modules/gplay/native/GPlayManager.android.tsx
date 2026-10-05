@@ -90,7 +90,7 @@ let obj = function _handlePurchaseUpdated() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -126,7 +126,7 @@ let obj = function _handlePurchaseUpdated() {
                 closure_11 = undefined;
                 c6 = 1;
                 c7 = 1;
-                return { value: "Reflect", done: true };
+                return { value: "Set", done: true };
               }
               break;
             }
@@ -140,7 +140,7 @@ let obj = function _handlePurchaseUpdated() {
                 return { value, done: true };
               } else if (closure_131_11.isPurchasingProduct(purchase.productId)) {
                 c7 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } else {
                 closure_1 = closure_131_12.getState().analyticsByProductId[purchase.productId];
                 giftOptionsForKey = closure_131_25[purchase.productId];
@@ -189,7 +189,7 @@ let obj = function _handlePurchaseUpdated() {
                   const obj44 = closure_131_1(closure_131_2[17]);
                   obj44.dispatch(obj17);
                   c7 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 } else {
                   c6 = 7;
                   c7 = 1;
@@ -471,7 +471,7 @@ obj = function _handleDowngradeCommand() {
       }
       await "IconComponent";
       downgradeCommand = downgradeCommand.downgradeCommand;
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -494,7 +494,7 @@ obj = function _executePendingDowngrade() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -591,7 +591,7 @@ obj = function _executePendingDowngrade() {
           obj9.dispatch({ type: "GPLAY_UPDATE_IS_DOWNGRADING", isDowngrading: false });
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp62) {
         closure_2 = tmp62;
         if (0 === c3) {
@@ -626,7 +626,7 @@ obj = function _fetchAndAlertActiveSubscription() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -695,7 +695,7 @@ obj = function _fetchAndAlertActiveSubscription() {
               obj.openLazy(obj2);
             });
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         }
       } catch (tmp21) {
@@ -758,7 +758,7 @@ obj = function _handleAppStateUpdated() {
       }
       await "IconComponent";
       state = state.state;
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;

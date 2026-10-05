@@ -1,10 +1,10 @@
-// Module ID: 16915
-// Function ID: 16916
+// Module ID: 16934
+// Function ID: 16935
 // Name: NewGroupDMScreen
-// Dependencies: [32, 5, 19, 17, 2051, 13563, 4913, 1377, 10592, 1085, 21, 4890, 587, 4903, 5097, 9433, 12695, 4854, 504, 11214, 11216, 11213, 1252, 4568, 1126, 16914, 7498, 11217, 4567, 7508, 9516, 8054, 7255, 1188, 10593, 16856, 2]
+// Dependencies: [32, 5, 19, 17, 2051, 13565, 4913, 1377, 10592, 1085, 21, 4890, 587, 4903, 5097, 9433, 12695, 4854, 504, 11214, 11216, 11213, 1252, 4568, 1126, 16933, 7498, 11217, 4567, 7508, 9516, 8054, 7255, 1188, 10593, 16875, 2]
 // Exports: default
 
-// Module 16915 (NewGroupDMScreen)
+// Module 16934 (NewGroupDMScreen)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -13,13 +13,13 @@ import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4903 */;
 import HeaderShared from "HeaderShared" /* 7498 */;
 import UserRowConstants from "UserRowConstants" /* 10592 */;
 import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11217 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 16914 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 16933 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 13563 */;
+import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 13565 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
 import UserStore from "UserStore" /* 1377 */;
 import Constants from "Constants" /* 1085 */;
@@ -62,7 +62,7 @@ let obj = function _handleOneRecipientInDM() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -140,7 +140,7 @@ obj = function _handleInviteUsers() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -166,7 +166,7 @@ obj = function _handleInviteUsers() {
               value = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else {
             if (1 === c5) {
@@ -212,7 +212,7 @@ obj = function _handleInviteUsers() {
                             const obj2 = { value, done: true };
                             return obj2;
                           } else {
-                            return { value: "IconComponent", done: "IconComponent" };
+                            return { value: "IconComponent", done: null };
                           }
                         } else {
                           try {
@@ -271,7 +271,7 @@ obj = function _handleInviteUsers() {
                                 obj.call(closure_3, false, true);
                                 length(c2[16])(closure_3);
                                 c2 = 3;
-                                return { value: "IconComponent", done: "IconComponent" };
+                                return { value: "IconComponent", done: null };
                               }
                               closure_3 = value;
                               length = 3;
@@ -497,7 +497,7 @@ export default function NewGroupDMScreen(navigation) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -582,7 +582,7 @@ export default function NewGroupDMScreen(navigation) {
           c3 = 0;
           closure_129_11(false);
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp48) {
         locationPage = tmp48;
@@ -817,7 +817,7 @@ export default function NewGroupDMScreen(navigation) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -864,7 +864,7 @@ export default function NewGroupDMScreen(navigation) {
             closure_1_25(false);
           }
           channel = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp14) {
           channel = 3;
           throw tmp14;

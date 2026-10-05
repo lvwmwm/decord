@@ -1,10 +1,10 @@
-// Module ID: 17302
-// Function ID: 17303
+// Module ID: 17326
+// Function ID: 17327
 // Name: VoicePanelMicButton
-// Dependencies: [32, 19, 4907, 2105, 502, 2051, 1999, 4509, 1377, 4909, 21, 3, 4890, 558, 576, 6848, 9687, 504, 9702, 11901, 4612, 17179, 4855, 9620, 6140, 17303, 17304, 1126, 9689, 4886, 9341, 9688, 2]
+// Dependencies: [32, 19, 4907, 2105, 502, 2051, 1999, 4509, 1377, 4909, 21, 3, 4890, 558, 576, 6848, 9687, 504, 9702, 11901, 4612, 17203, 4855, 9620, 6140, 17327, 17328, 1126, 9689, 4886, 9341, 9688, 2]
 // Exports: PTTButton
 
-// Module 17302 (VoicePanelMicButton)
+// Module 17326 (VoicePanelMicButton)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
@@ -17,7 +17,7 @@ import VoiceActionUtils from "VoiceActionUtils" /* 9687 */;
 import VoicePanelRiveMicButton2 from "VoicePanelRiveMicButton" /* 9688 */;
 import useDeafStates from "useDeafStates" /* 9702 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11901 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 17303 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 17327 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 4907 */;
@@ -40,7 +40,7 @@ let closure_14;
 let closure_15;
 let map1;
 let tmp4;
-const VoicePanelAnimatedButtonWrapperDefault = tmp4(17304);
+const VoicePanelAnimatedButtonWrapperDefault = tmp4(17328);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = Fragment);

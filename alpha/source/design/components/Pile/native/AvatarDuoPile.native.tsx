@@ -1,9 +1,9 @@
-// Module ID: 14273
-// Function ID: 14274
+// Module ID: 14275
+// Function ID: 14276
 // Name: AvatarDuoPile
 // Dependencies: [109, 19, 21, 558, 576, 10739, 12285, 12, 12851, 8469, 2]
 
-// Module 14273 (AvatarDuoPile)
+// Module 14275 (AvatarDuoPile)
 import _mod12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

@@ -1,9 +1,9 @@
-// Module ID: 16192
-// Function ID: 16193
+// Module ID: 16196
+// Function ID: 16197
 // Name: useDefaultAuthorizationNotifiers
 // Dependencies: [19, 1986, 1085, 558, 576, 504, 4851, 7946, 4568, 1126, 3237, 2]
 
-// Module 16192 (useDefaultAuthorizationNotifiers)
+// Module 16196 (useDefaultAuthorizationNotifiers)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import _modDef3237 from "module_3237" /* 3237 */;

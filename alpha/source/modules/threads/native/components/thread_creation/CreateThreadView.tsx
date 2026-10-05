@@ -1,9 +1,9 @@
-// Module ID: 16762
-// Function ID: 16763
+// Module ID: 16781
+// Function ID: 16782
 // Name: CreateThreadView
-// Dependencies: [5, 32, 19, 17, 7031, 7171, 1085, 21, 4890, 587, 558, 576, 8810, 7405, 6657, 6681, 1618, 6471, 5911, 5857, 16763, 6698, 1126, 16765, 11597, 11572, 12308, 9778, 1491, 1252, 5070, 4744, 1112, 10064, 16764, 4745, 2]
+// Dependencies: [5, 32, 19, 17, 7031, 7171, 1085, 21, 4890, 587, 558, 576, 8810, 7405, 6657, 6681, 1618, 6471, 5911, 5857, 16782, 6698, 1126, 16784, 11597, 11572, 12308, 9778, 1491, 1252, 5070, 4744, 1112, 10064, 16783, 4745, 2]
 
-// Module 16762 (CreateThreadView)
+// Module 16781 (CreateThreadView)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import router_utils from "router_utils" /* 1112 */;
@@ -119,7 +119,7 @@ function useSubmitForm(parentChannel) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -146,7 +146,7 @@ function useSubmitForm(parentChannel) {
                   ref.current = false;
                   c5 = 0;
                   c7 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
                 v1 = 2;
                 c7 = 1;
@@ -208,7 +208,7 @@ function useSubmitForm(parentChannel) {
             ref.current = false;
           }
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp59) {
           if (0 === c5) {
             c7 = 3;
@@ -520,7 +520,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadSettings
                           const obj17 = { style: tmp4.border };
                           items4 = [closure_13(closure_6, obj17), ];
                           const obj18 = { channelId: parentChannel.id, messageId: threadSettingsDraft.parentMessageId };
-                          items4[1] = closure_13(threadSettingsDraft(16765).ThreadCreationStarterMessage, obj18);
+                          items4[1] = closure_13(threadSettingsDraft(16784).ThreadCreationStarterMessage, obj18);
                           tmp52 = closure_14(closure_6, obj16);
                         }
                         cResult[35] = parentChannel.id;
@@ -584,7 +584,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadSettings
           }
         }
         const obj22 = { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: tmp10, optional: null != threadSettingsDraft.parentMessageId };
-        const tmp44 = closure_13(parentChannel(16763), obj22);
+        const tmp44 = closure_13(parentChannel(16782), obj22);
         cResult[21] = null != threadSettingsDraft.parentMessageId;
         cResult[22] = tmp10;
         cResult[23] = threadSettingsDraft;
@@ -660,7 +660,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadSettings
   obj7 = { style: tmp.options, children: items5 };
   const obj9 = { style: tmp.threadIconContainer, children: closure_13(threadSettingsDraft(5857).ThreadIcon, { size: "lg" }) };
   items4[0] = closure_13(closure_6, obj9);
-  items4[1] = closure_13(parentChannel(16763), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: first, optional: tmp15 });
+  items4[1] = closure_13(parentChannel(16782), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: first, optional: tmp15 });
   let tmp17Result = null;
   const tmp19 = closure_7;
   if (!isForumLikeChannelResult) {
@@ -701,7 +701,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadSettings
     const obj13 = { style: tmp.border };
     items6 = [closure_13(closure_6, obj13), ];
     const obj14 = { channelId: parentChannel.id, messageId: threadSettingsDraft.parentMessageId };
-    items6[1] = closure_13(threadSettingsDraft(16765).ThreadCreationStarterMessage, obj14);
+    items6[1] = closure_13(threadSettingsDraft(16784).ThreadCreationStarterMessage, obj14);
     tmp16Result = tmp16(tmp18, obj12);
   }
   items5[1] = tmp16Result;

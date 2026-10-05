@@ -1,9 +1,9 @@
-// Module ID: 14695
-// Function ID: 14696
+// Module ID: 14699
+// Function ID: 14700
 // Name: FamilyCenterModalDataTooltip
-// Dependencies: [32, 19, 17, 7049, 21, 5855, 11532, 4831, 13392, 5857, 8127, 4849, 10766, 4890, 587, 558, 576, 4886, 1126, 2493, 11531, 8296, 8298, 8095, 8096, 11536, 5594, 5093, 6010, 10976, 2]
+// Dependencies: [32, 19, 17, 7049, 21, 5855, 11532, 4831, 13394, 5857, 8127, 4849, 10766, 4890, 587, 558, 576, 4886, 1126, 2493, 11531, 8296, 8298, 8095, 8096, 11536, 5594, 5093, 6010, 10976, 2]
 
-// Module 14695 (FamilyCenterModalDataTooltip)
+// Module 14699 (FamilyCenterModalDataTooltip)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -21,7 +21,7 @@ import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8296 */;
 import GiftIcon from "GiftIcon" /* 10766 */;
 import Modal2 from "Modal" /* 10976 */;
 import PhoneIcon from "PhoneIcon" /* 11532 */;
-import ServerGridIcon from "ServerGridIcon" /* 13392 */;
+import ServerGridIcon from "ServerGridIcon" /* 13394 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -313,7 +313,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           [tmp2, obj] = tmp;
           obj1 = { IconComponent: closure_8[tmp2], header: obj.tooltipHeader(), description: null };
           tmp3 = jsx;
-          tmp4 = f68273;
+          tmp4 = f68323;
           tmp5 = closure_0;
           tooltipDescription = obj.tooltipDescription;
           obj1.description = tooltipDescription(tmp5);
@@ -330,7 +330,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           [tmp2, obj] = tmp;
           obj1 = { IconComponent: closure_8[tmp2], header: obj.tooltipHeader(), description: null };
           tmp3 = jsx;
-          tmp4 = f68273;
+          tmp4 = f68323;
           tmp5 = closure_0;
           tooltipDescription = obj.tooltipDescription;
           obj1.description = tooltipDescription(tmp5);

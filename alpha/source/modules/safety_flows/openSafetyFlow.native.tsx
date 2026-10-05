@@ -1,10 +1,10 @@
-// Module ID: 18036
-// Function ID: 18037
+// Module ID: 18058
+// Function ID: 18059
 // Name: openSafetyFlow
-// Dependencies: [5, 2044, 1085, 18037, 5093, 18038, 18039, 17574, 18040, 1987, 2]
+// Dependencies: [5, 2044, 1085, 18059, 5093, 18060, 18061, 17598, 18062, 1987, 2]
 // Exports: openSafetyFlow
 
-// Module 18036 (openSafetyFlow)
+// Module 18058 (openSafetyFlow)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2044 */;
@@ -84,7 +84,7 @@ let obj = function _openSafetyFlow() {
           if (null == task) {
             c5 = 0;
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } else if (task.task_type === closure_131_0(closure_131_2[3]).TaskType.APP_STORE_PARENTAL_REVOCATION) {
             c6 = 4;
             c7 = 1;
@@ -122,7 +122,7 @@ let obj = function _openSafetyFlow() {
         if (null == value) {
           c5 = 0;
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       }
       let initialScreen = getInitialScreenForTask(task);
@@ -140,7 +140,7 @@ let obj = function _openSafetyFlow() {
       obj5 = {};
     }
     requiredAction = obj5.requiredAction;
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };

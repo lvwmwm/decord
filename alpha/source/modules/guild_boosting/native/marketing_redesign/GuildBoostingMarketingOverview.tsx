@@ -1,7 +1,7 @@
 // Module ID: 6887
 // Function ID: 6888
 // Name: GuildBoostingMarketingOverview
-// Dependencies: [32, 19, 17, 2074, 1377, 1085, 21, 4890, 558, 576, 6888, 504, 1490, 6657, 5984, 6898, 1385, 1252, 584, 6760, 5404, 6906, 13379, 13386, 13391, 13401, 13406, 13410, 2]
+// Dependencies: [32, 19, 17, 2074, 1377, 1085, 21, 4890, 558, 576, 6888, 504, 1490, 6657, 5984, 6898, 1385, 1252, 584, 6760, 5404, 6906, 13381, 13388, 13393, 13403, 13408, 13412, 2]
 
 // Module 6887 (GuildBoostingMarketingOverview)
 import react_native from "react-native" /* 17 */;

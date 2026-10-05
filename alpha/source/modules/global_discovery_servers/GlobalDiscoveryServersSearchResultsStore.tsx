@@ -1,9 +1,9 @@
-// Module ID: 13515
-// Function ID: 13516
+// Module ID: 13517
+// Function ID: 13518
 // Name: GlobalDiscoveryServersSearchResultsStore
 // Dependencies: [9249, 5312, 504, 584, 2]
 
-// Module 13515 (GlobalDiscoveryServersSearchResultsStore)
+// Module 13517 (GlobalDiscoveryServersSearchResultsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5312 */;

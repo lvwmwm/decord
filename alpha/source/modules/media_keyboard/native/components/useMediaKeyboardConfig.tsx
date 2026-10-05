@@ -1,9 +1,9 @@
-// Module ID: 16603
-// Function ID: 16604
+// Module ID: 16609
+// Function ID: 16610
 // Name: useMediaKeyboardConfig
 // Dependencies: [19, 1614, 1085, 558, 576, 7257, 11865, 6772, 9000, 10364, 1985, 2]
 
-// Module 16603 (useMediaKeyboardConfig)
+// Module 16609 (useMediaKeyboardConfig)
 import react2 from "react" /* 576 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1614 */;
 import Server from "Server" /* 1985 */;

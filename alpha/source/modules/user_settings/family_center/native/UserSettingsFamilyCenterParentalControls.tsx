@@ -1,9 +1,9 @@
-// Module ID: 14733
-// Function ID: 14734
+// Module ID: 14737
+// Function ID: 14738
 // Name: UserSettingsFamilyCenterParentalControls
-// Dependencies: [32, 19, 17, 1085, 7049, 21, 4890, 587, 558, 576, 1490, 6657, 6681, 6490, 14697, 14715, 1126, 2493, 7498, 14734, 14735, 7050, 9282, 14736, 6619, 9283, 10974, 2]
+// Dependencies: [32, 19, 17, 1085, 7049, 21, 4890, 587, 558, 576, 1490, 6657, 6681, 6490, 14701, 14719, 1126, 2493, 7498, 14738, 14739, 7050, 9282, 14740, 6619, 9283, 10974, 2]
 
-// Module 14733 (UserSettingsFamilyCenterParentalControls)
+// Module 14737 (UserSettingsFamilyCenterParentalControls)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
@@ -131,7 +131,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                       fn = (arg0) => {
                         let intl;
                         let teenId;
-                        let obj = { onPress() { /* body not rendered: F152732 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
+                        let obj = { onPress() { /* body not rendered: F153018 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
                         const HeaderTextButton = stackNavigation(selectedSubPage[18]).HeaderTextButton;
                         const merged = Object.assign(arg0);
                         intl = stackNavigation(selectedSubPage[16]).intl;
@@ -143,7 +143,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   }
                   return;
                 }
-                setOptionsResult1 = closure_0.setOptions({ title: "Symbol", headerRight: "current" });
+                setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "Set" });
                 return;
               }
             }
@@ -171,7 +171,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                         fn = (arg0) => {
                           let intl;
                           let teenId;
-                          let obj = { onPress() { /* body not rendered: F152732 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
+                          let obj = { onPress() { /* body not rendered: F153018 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
                           const HeaderTextButton = stackNavigation(selectedSubPage[18]).HeaderTextButton;
                           const merged = Object.assign(arg0);
                           intl = stackNavigation(selectedSubPage[16]).intl;
@@ -183,7 +183,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     }
                     return;
                   }
-                  setOptionsResult1 = closure_0.setOptions({ title: "Symbol", headerRight: "current" });
+                  setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "Set" });
                   return;
                 }
               }
@@ -215,7 +215,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                         fn = (arg0) => {
                           let intl;
                           let teenId;
-                          let obj = { onPress() { /* body not rendered: F152732 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
+                          let obj = { onPress() { /* body not rendered: F153018 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
                           const HeaderTextButton = stackNavigation(selectedSubPage[18]).HeaderTextButton;
                           const merged = Object.assign(arg0);
                           intl = stackNavigation(selectedSubPage[16]).intl;
@@ -227,7 +227,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     }
                     return;
                   }
-                  setOptionsResult1 = closure_0.setOptions({ title: "Symbol", headerRight: "current" });
+                  setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "Set" });
                   return;
                 }
               }
@@ -263,7 +263,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                         fn = (arg0) => {
                           let intl;
                           let teenId;
-                          let obj = { onPress() { /* body not rendered: F152732 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
+                          let obj = { onPress() { /* body not rendered: F153018 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
                           const HeaderTextButton = stackNavigation(selectedSubPage[18]).HeaderTextButton;
                           const merged = Object.assign(arg0);
                           intl = stackNavigation(selectedSubPage[16]).intl;
@@ -275,7 +275,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     }
                     return;
                   }
-                  setOptionsResult1 = closure_0.setOptions({ title: "Symbol", headerRight: "current" });
+                  setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "Set" });
                   return;
                 }
               }
@@ -314,7 +314,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                         fn = (arg0) => {
                           let intl;
                           let teenId;
-                          let obj = { onPress() { /* body not rendered: F152732 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
+                          let obj = { onPress() { /* body not rendered: F153018 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
                           const HeaderTextButton = stackNavigation(selectedSubPage[18]).HeaderTextButton;
                           const merged = Object.assign(arg0);
                           intl = stackNavigation(selectedSubPage[16]).intl;
@@ -326,7 +326,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     }
                     return;
                   }
-                  setOptionsResult1 = closure_0.setOptions({ title: "Symbol", headerRight: "current" });
+                  setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "Set" });
                   return;
                 }
               }
@@ -369,7 +369,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                         fn = (arg0) => {
                           let intl;
                           let teenId;
-                          let obj = { onPress() { /* body not rendered: F152732 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
+                          let obj = { onPress() { /* body not rendered: F153018 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
                           const HeaderTextButton = stackNavigation(selectedSubPage[18]).HeaderTextButton;
                           const merged = Object.assign(arg0);
                           intl = stackNavigation(selectedSubPage[16]).intl;
@@ -381,7 +381,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     }
                     return;
                   }
-                  setOptionsResult1 = closure_0.setOptions({ title: "Symbol", headerRight: "current" });
+                  setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "Set" });
                   return;
                 }
               }
@@ -415,7 +415,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 fn = (arg0) => {
                   let intl;
                   let teenId;
-                  let obj = { onPress() { /* body not rendered: F152732 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
+                  let obj = { onPress() { /* body not rendered: F153018 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
                   const HeaderTextButton = stackNavigation(selectedSubPage[18]).HeaderTextButton;
                   const merged = Object.assign(arg0);
                   intl = stackNavigation(selectedSubPage[16]).intl;
@@ -427,7 +427,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             return;
           }
-          setOptionsResult1 = closure_0.setOptions({ title: "Symbol", headerRight: "current" });
+          setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "Set" });
           return;
         }
       }
@@ -554,7 +554,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         setOptions(obj);
       }
     }
-    stackNavigation.setOptions({ title: "Symbol", headerRight: "current" });
+    stackNavigation.setOptions({ title: "Array", headerRight: "Set" });
   }, items1);
   const SCREEN_TIME_CONTROLS = FamilyCenterSubPages.SCREEN_TIME_CONTROLS;
   const obj4 = { label: intl.string(stackNavigation(selectedSubPage[16]).t["+o1pDZ"]), id: FamilyCenterSubPages.CONTENT_AND_SOCIAL, page: closure_9(require("FamilyCenterParentalControlsContentAndSocial"), {}) };

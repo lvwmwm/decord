@@ -1,9 +1,9 @@
-// Module ID: 13672
-// Function ID: 13673
+// Module ID: 13674
+// Function ID: 13675
 // Name: OneTimeLoginModal
-// Dependencies: [5, 19, 17, 502, 1377, 1085, 1240, 21, 4890, 587, 558, 576, 1618, 1484, 1370, 1252, 5093, 4736, 1112, 5709, 5713, 4800, 1126, 5713, 6082, 5911, 4696, 13673, 4886, 6429, 2]
+// Dependencies: [5, 19, 17, 502, 1377, 1085, 1240, 21, 4890, 587, 558, 576, 1618, 1484, 1370, 1252, 5093, 4736, 1112, 5709, 5713, 4800, 1126, 5713, 6082, 5911, 4696, 13675, 4886, 6429, 2]
 
-// Module 13672 (OneTimeLoginModal)
+// Module 13674 (OneTimeLoginModal)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
@@ -347,7 +347,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((token) => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -424,7 +424,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((token) => {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp41) {
           closure_2 = tmp41;
@@ -616,7 +616,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((token) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -691,7 +691,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((token) => {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp41) {
         bottom = tmp41;
@@ -715,7 +715,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((token) => {
   items6 = [closure_13(tmp11, obj2), ];
   let obj4 = { style: tmp.container, children: items9 };
   let obj5 = { style: tmp.centerContent, children: items7 };
-  let obj6 = { source: token(13673), style: tmp.logo };
+  let obj6 = { source: token(13675), style: tmp.logo };
   items7 = [closure_13(callback3, obj6), ];
   let obj7 = { style: tmp.loadingContainer, children: items8 };
   items8 = [closure_13(callback2, {}), ];

@@ -1,12 +1,12 @@
-// Module ID: 14749
-// Function ID: 14750
+// Module ID: 14753
+// Function ID: 14754
 // Name: DevicesSetting
-// Dependencies: [1085, 11129, 1126, 14750, 14752, 2]
+// Dependencies: [1085, 11129, 1126, 14754, 14756, 2]
 
-// Module 14749 (DevicesSetting)
+// Module 14753 (DevicesSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import LaptopPhoneIcon from "LaptopPhoneIcon" /* 14750 */;
+import LaptopPhoneIcon from "LaptopPhoneIcon" /* 14754 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 

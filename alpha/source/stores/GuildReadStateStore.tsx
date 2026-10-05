@@ -36,7 +36,7 @@ let closure_19;
 let closure_20;
 let metroImportAll;
 let metroImportDefault;
-const f94114 = (item) => {
+const f94257 = (item) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
@@ -131,7 +131,7 @@ function isCountableChannel(channel, mentionCount) {
 }
 function updateNotificationCenterMentions(mentionCounts, mentionCounts2) {
   let c1;
-  const f94115 = (item) => {
+  const f94258 = (item) => {
     const _ackMessageId = notifCenterReadState1._ackMessageId;
     const lastMessageIdResult = ReadStateStore.lastMessageId(item);
     const obj = c1(notifCenterReadState[18]);
@@ -151,7 +151,7 @@ function updateNotificationCenterMentions(mentionCounts, mentionCounts2) {
     if (null != notifCenterReadState) {
       const obj2 = require("SnowflakeUtils");
       const keys = obj2.keys(mentionCounts.mentionCounts);
-      const item = keys.forEach(f94115);
+      const item = keys.forEach(f94258);
     }
     closure_0 = mentionCounts2;
     let closure_1 = 0;
@@ -165,7 +165,7 @@ function updateNotificationCenterMentions(mentionCounts, mentionCounts2) {
     if (!tmp14) {
       const obj3 = require("SnowflakeUtils");
       const keys1 = obj3.keys(mentionCounts2.mentionCounts);
-      const item1 = keys1.forEach(f94115);
+      const item1 = keys1.forEach(f94258);
     }
     let num2;
     const _Math = Math;
@@ -182,7 +182,7 @@ function updateNotificationCenterMentions(mentionCounts, mentionCounts2) {
 function aggregateGuildState(guild_id, unreadByType, unread) {
   let closure_0 = unreadByType;
   const entries = Object.entries(unreadByType.unreadByType);
-  unreadByType.unread = entries.some(f94114);
+  unreadByType.unread = entries.some(f94257);
   unreadByType.lowImportanceMentionCount = 0;
   unreadByType.highImportanceMentionCount = 0;
   const arr = SnowflakeUtilsDefault;
@@ -407,7 +407,7 @@ function recountGuild(guildId, arg1) {
     if (tmp2 == null) {
       tmp7 = tmp3;
     }
-    const obj = { unread: entries.some(f94114), unreadByType: {}, unreadChannelId: null, lowImportanceMentionCount: 0, highImportanceMentionCount: 0, mentionCounts: {}, ncMentionCount: 0, sentinel: num };
+    const obj = { unread: entries.some(f94257), unreadByType: {}, unreadChannelId: null, lowImportanceMentionCount: 0, highImportanceMentionCount: 0, mentionCounts: {}, ncMentionCount: 0, sentinel: num };
     num = undefined;
     if (tmp5[tmp7] != null) {
       num = tmp8.sentinel;

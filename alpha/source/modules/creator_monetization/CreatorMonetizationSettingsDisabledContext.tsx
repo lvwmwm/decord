@@ -1,9 +1,9 @@
-// Module ID: 17898
-// Function ID: 17899
+// Module ID: 17922
+// Function ID: 17923
 // Name: CreatorMonetizationSettingsDisabledContext
 // Dependencies: [19, 21, 558, 576, 6756, 2]
 
-// Module 17898 (CreatorMonetizationSettingsDisabledContext)
+// Module 17922 (CreatorMonetizationSettingsDisabledContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 6756 */;

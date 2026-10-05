@@ -60,7 +60,7 @@ obj = function _deleteWebAuthnCredential() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -125,7 +125,7 @@ obj = function _editWebAuthnCredential() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -179,7 +179,7 @@ obj = function _editWebAuthnCredential() {
               obj2.dispatch(obj8);
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp19) {
           c5 = 3;
@@ -220,7 +220,7 @@ obj = function _finishRegisterWebAuthnCredential() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -261,7 +261,7 @@ obj = function _finishRegisterWebAuthnCredential() {
             const obj7 = closure_132_1(closure_132_2[3]);
             obj7.dispatch(obj10);
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp5) {
           c6 = 3;

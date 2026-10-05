@@ -1,9 +1,9 @@
-// Module ID: 16312
-// Function ID: 16313
+// Module ID: 16316
+// Function ID: 16317
 // Name: ManageAccountsModal
-// Dependencies: [109, 32, 5, 19, 17, 502, 4723, 1377, 12056, 12057, 16313, 1085, 21, 7556, 4890, 587, 558, 576, 504, 1188, 5708, 1126, 12059, 15128, 5909, 15868, 4612, 4891, 7946, 1252, 15869, 12065, 16314, 6003, 8895, 10983, 16315, 6619, 6496, 7498, 10662, 15893, 6082, 6429, 15892, 2]
+// Dependencies: [109, 32, 5, 19, 17, 502, 4723, 1377, 12056, 12057, 16317, 1085, 21, 7556, 4890, 587, 558, 576, 504, 1188, 5708, 1126, 12059, 15132, 5909, 15872, 4612, 4891, 7946, 1252, 15873, 12065, 16318, 6003, 8895, 10983, 16319, 6619, 6496, 7498, 10662, 15897, 6082, 6429, 15896, 2]
 
-// Module 16312 (ManageAccountsModal)
+// Module 16316 (ManageAccountsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
@@ -14,7 +14,7 @@ import HeaderShared from "HeaderShared" /* 7498 */;
 import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10662 */;
 import MultiAccountStore from "MultiAccountStore" /* 12056 */;
 import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 12059 */;
-import ManageAccountsConstants from "ManageAccountsConstants" /* 16313 */;
+import ManageAccountsConstants from "ManageAccountsConstants" /* 16317 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -144,7 +144,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           const _Symbol2 = Symbol;
           if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
             let obj2 = { color: username(587).colors.ICON_FEEDBACK_CRITICAL };
-            const CircleMinusIcon = tmp(15128).CircleMinusIcon;
+            const CircleMinusIcon = tmp(15132).CircleMinusIcon;
             const tmp24 = closure_20(CircleMinusIcon, obj2);
             cResult[13] = tmp24;
             tmp21 = tmp24;
@@ -178,7 +178,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -218,7 +218,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                   obj.removeAccount(tmp.id);
                 }
                 c2 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp10) {
               c2 = 3;
@@ -280,7 +280,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -320,7 +320,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
               obj.removeAccount(closure_128_0.id);
             }
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp10) {
           c2 = 3;
@@ -364,7 +364,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     const PressableOpacity = tmp(5909).PressableOpacity;
     intl = tmp(1126).intl;
     obj4 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-    CircleMinusIcon = tmp(15128).CircleMinusIcon;
+    CircleMinusIcon = tmp(15132).CircleMinusIcon;
     return closure_20(PressableOpacity, obj3);
   }
 });

@@ -1,9 +1,9 @@
-// Module ID: 17793
-// Function ID: 17794
+// Module ID: 17817
+// Function ID: 17818
 // Name: GuildSettingsModalInstantInvites
-// Dependencies: [32, 19, 17, 11160, 8056, 2051, 2074, 9248, 1085, 21, 4890, 558, 576, 1126, 2115, 4886, 5999, 4807, 5990, 12008, 504, 12, 7687, 7685, 4854, 11439, 1987, 4568, 10669, 6535, 1188, 17794, 6536, 2]
+// Dependencies: [32, 19, 17, 11160, 8056, 2051, 2074, 9248, 1085, 21, 4890, 558, 576, 1126, 2115, 4886, 5999, 4807, 5990, 12008, 504, 12, 7687, 7685, 4854, 11439, 1987, 4568, 10669, 6535, 1188, 17818, 6536, 2]
 
-// Module 17793 (GuildSettingsModalInstantInvites)
+// Module 17817 (GuildSettingsModalInstantInvites)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;

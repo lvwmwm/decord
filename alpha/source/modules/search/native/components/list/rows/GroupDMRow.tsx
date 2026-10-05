@@ -1,15 +1,15 @@
-// Module ID: 16803
-// Function ID: 16804
+// Module ID: 16822
+// Function ID: 16823
 // Name: rows/GroupDMRow
-// Dependencies: [19, 21, 558, 576, 5043, 10648, 1188, 10649, 4886, 16788, 2]
+// Dependencies: [19, 21, 558, 576, 5043, 10648, 1188, 10649, 4886, 16807, 2]
 
-// Module 16803 (rows/GroupDMRow)
+// Module 16822 (rows/GroupDMRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import native from "native" /* 1188 */;
 import useChannelNameDefault from "useChannelName" /* 5043 */;
 import useRecipientsLabel from "useRecipientsLabel" /* 10649 */;
-import SearchListRow2 from "SearchListRow" /* 16788 */;
+import SearchListRow2 from "SearchListRow" /* 16807 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -127,7 +127,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     tmp3Result = tmp3(tmp5(4886).Text, obj3);
   }
   let str2 = str;
-  const SearchListRow = tmp5(16788).SearchListRow;
+  const SearchListRow = tmp5(16807).SearchListRow;
   if (str == null) {
     str2 = "";
   }

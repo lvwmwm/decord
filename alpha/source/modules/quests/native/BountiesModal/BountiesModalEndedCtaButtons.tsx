@@ -1,9 +1,9 @@
-// Module ID: 14834
-// Function ID: 14835
+// Module ID: 14838
+// Function ID: 14839
 // Name: BountiesModalEndedCtaButtons
-// Dependencies: [21, 4890, 587, 558, 576, 10916, 4612, 4891, 4894, 14833, 5594, 10918, 5630, 5628, 7212, 1126, 2]
+// Dependencies: [21, 4890, 587, 558, 576, 10916, 4612, 4891, 4894, 14837, 5594, 10918, 5630, 5628, 7212, 1126, 2]
 
-// Module 14834 (BountiesModalEndedCtaButtons)
+// Module 14838 (BountiesModalEndedCtaButtons)
 import nativeDefault from "native" /* 587 */;
 import timing from "timing" /* 4891 */;
 import QuestContent from "QuestContent" /* 5628 */;
@@ -175,7 +175,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
   fn.__initData = __initData2;
   ({ withTiming: bounty(4891).withTiming, visible, timingStandard: bounty(4894).timingStandard });
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  bounty(14833);
+  bounty(14837);
   if (visible) {
     const obj4 = { style: items, children: items1 };
     items = [tmp.container, animatedStyle];

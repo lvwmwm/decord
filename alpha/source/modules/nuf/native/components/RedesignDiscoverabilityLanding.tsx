@@ -1,9 +1,9 @@
-// Module ID: 17567
-// Function ID: 17568
+// Module ID: 17591
+// Function ID: 17592
 // Name: RedesignDiscoverabilityLanding
 // Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1618, 6068, 1126, 4886, 5974, 12419, 12329, 5594, 2]
 
-// Module 17567 (RedesignDiscoverabilityLanding)
+// Module 17591 (RedesignDiscoverabilityLanding)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;

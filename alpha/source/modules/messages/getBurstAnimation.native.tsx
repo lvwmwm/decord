@@ -215,7 +215,7 @@ let closure_0 = _asyncToGeneratorDefault((arg0, arg1, arg2) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -238,7 +238,7 @@ let closure_0 = _asyncToGeneratorDefault((arg0, arg1, arg2) => {
             burstAnimationHash = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (arg0 === 1) {
           c7 = 3;

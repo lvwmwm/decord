@@ -1,9 +1,9 @@
-// Module ID: 14457
-// Function ID: 14458
+// Module ID: 14461
+// Function ID: 14462
 // Name: useProfileFrameSections
-// Dependencies: [32, 19, 7053, 7068, 558, 576, 573, 7065, 1126, 13002, 2]
+// Dependencies: [32, 19, 7053, 7068, 558, 576, 573, 7065, 1126, 13004, 2]
 
-// Module 14457 (useProfileFrameSections)
+// Module 14461 (useProfileFrameSections)
 import react from "react" /* 19 */;
 import intl4 from "intl" /* 1126 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 7065 */;
@@ -336,7 +336,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     items1[2] = obj3;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
-  return first(13002)(tmp5, obj.PREVIEW);
+  return first(13004)(tmp5, obj.PREVIEW);
 });
 let result = size.fileFinishedImporting("modules/collectibles/profile_frames/hooks/useProfileFrameSections.tsx");
 

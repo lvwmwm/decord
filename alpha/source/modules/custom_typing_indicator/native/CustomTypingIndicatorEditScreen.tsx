@@ -1,10 +1,10 @@
-// Module ID: 15175
-// Function ID: 15176
+// Module ID: 15179
+// Function ID: 15180
 // Name: CustomTypingIndicatorEditScreen
-// Dependencies: [5, 32, 19, 17, 1377, 1085, 21, 4890, 587, 1385, 1126, 3725, 1490, 1491, 504, 4528, 6657, 1252, 11587, 1398, 5010, 4854, 15176, 1987, 15177, 7838, 7835, 6477, 5312, 14427, 8914, 11594, 5042, 4886, 15178, 6074, 5993, 2115, 5593, 5594, 8488, 7588, 15223, 9648, 2]
+// Dependencies: [5, 32, 19, 17, 1377, 1085, 21, 4890, 587, 1385, 1126, 3725, 1490, 1491, 504, 4528, 6657, 1252, 11587, 1398, 5010, 4854, 15180, 1987, 15181, 7838, 7835, 6477, 5312, 14431, 8914, 11594, 5042, 4886, 15182, 6074, 5993, 2115, 5593, 5594, 8488, 7588, 15227, 9648, 2]
 // Exports: default
 
-// Module 15175 (CustomTypingIndicatorEditScreen)
+// Module 15179 (CustomTypingIndicatorEditScreen)
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import user from "user" /* 1385 */;
@@ -162,12 +162,12 @@ export default function CustomTypingIndicatorEditScreen() {
   const callback1 = first1.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { initialValue: first2, onChange };
-    obj.openLazy(asyncRequire(15176, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", obj2);
+    obj.openLazy(asyncRequire(15180, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", obj2);
   }, items4);
   const callback2 = first1.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { emojis: memo, initialAnimation: first3, onChange: onChange2 };
-    obj.openLazy(asyncRequire(15177, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
+    obj.openLazy(asyncRequire(15181, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
   }, items5);
   const ref = first1.useRef(null);
   const callback3 = first1.useCallback(() => {
@@ -210,7 +210,7 @@ export default function CustomTypingIndicatorEditScreen() {
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -258,7 +258,7 @@ export default function CustomTypingIndicatorEditScreen() {
               }
             }
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else if (arg0 === 1) {
           c4 = 3;

@@ -51,7 +51,7 @@ let obj = function _handleThumbnailUpload() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;
@@ -107,7 +107,7 @@ let obj = function _handleThumbnailUpload() {
           c5 = 0;
         }
         c7 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp21) {
         closure_4 = tmp21;
         if (0 === c5) {

@@ -1,10 +1,10 @@
-// Module ID: 17419
-// Function ID: 17420
+// Module ID: 17443
+// Function ID: 17444
 // Name: FriendInviteUtils
 // Dependencies: [2051, 4519, 8054, 4568, 1126, 4805, 584, 10996, 2]
 // Exports: acceptFriendInvite, revokeAllFriendInvites
 
-// Module 17419 (FriendInviteUtils)
+// Module 17443 (FriendInviteUtils)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1126 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
@@ -31,7 +31,7 @@ export const revokeAllFriendInvites = function revokeAllFriendInvites() {
   });
 };
 export const acceptFriendInvite = function acceptFriendInvite(invite, context) {
-  const f130524 = () => closure_1_1(closure_1_2[7])();
+  const f130762 = () => closure_1_1(closure_1_2[7])();
   const tmp = null == invite.channel && null == invite.guild && null != invite.inviter;
   if (tmp) {
     let dMFromUserId = null;
@@ -42,7 +42,7 @@ export const acceptFriendInvite = function acceptFriendInvite(invite, context) {
       const obj3 = InstantInviteActionCreatorsDefault;
       obj3.transitionToInvite(invite, { forceTransition: true });
       const obj4 = DispatcherDefault;
-      obj4.wait(f130524);
+      obj4.wait(f130762);
     } else {
       let obj = InstantInviteActionCreatorsDefault;
       const obj2 = {
@@ -62,7 +62,7 @@ export const acceptFriendInvite = function acceptFriendInvite(invite, context) {
               const obj = { key: "FRIEND_INVITE_ACCEPT_CONFIRMATION", content: formatToPlainString(st2dcs, { username }), icon: AssetRegistryDefault };
               open(obj);
               const tmpResult = DispatcherDefault;
-              tmpResult.wait(f130524);
+              tmpResult.wait(f130762);
             }
       };
       const result = obj.acceptInviteAndTransitionToInviteChannel(obj2);

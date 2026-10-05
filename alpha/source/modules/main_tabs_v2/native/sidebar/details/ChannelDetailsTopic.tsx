@@ -1,9 +1,9 @@
-// Module ID: 16894
-// Function ID: 16895
+// Module ID: 16913
+// Function ID: 16914
 // Name: ChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1377, 10653, 1085, 21, 1369, 4890, 558, 576, 16895, 4612, 5597, 4877, 5909, 4886, 5605, 4722, 504, 5035, 2]
+// Dependencies: [32, 19, 17, 1377, 10653, 1085, 21, 1369, 4890, 558, 576, 16914, 4612, 5597, 4877, 5909, 4886, 5605, 4722, 504, 5035, 2]
 
-// Module 16894 (ChannelDetailsTopic)
+// Module 16913 (ChannelDetailsTopic)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import UserUtilsDefault from "UserUtils" /* 4722 */;

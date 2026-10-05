@@ -83,7 +83,7 @@ class StorefrontPromotionRecord extends Record {
     let tmp34;
     let tmp6;
     let type;
-    const f97160 = (heroUrl) => ({ heroUrl: heroUrl.hero_url });
+    const f97303 = (heroUrl) => ({ heroUrl: heroUrl.hero_url });
     ({ id, application_id, name } = display_name);
     if (name == null) {
       name = null;
@@ -169,7 +169,7 @@ class StorefrontPromotionRecord extends Record {
             const reward_states2 = collectibles.shop_home.reward_states;
             obj6 = { title: collectibles.shop_home.title, description: collectibles.shop_home.description, rewardStates: obj7, style: tmp26 };
             obj7 = { inProgress: obj8, earned: obj9, consumed: obj10 };
-            obj8 = { progressSteps: progress_steps.map(f97160) };
+            obj8 = { progressSteps: progress_steps.map(f97303) };
             progress_steps = reward_states2.in_progress.progress_steps;
             tmp26 = undefined;
             obj10 = { heroUrl: reward_states2.consumed.hero_url };
@@ -181,7 +181,7 @@ class StorefrontPromotionRecord extends Record {
             const reward_states = collectibles.index_page.reward_states;
             obj12 = { description: collectibles.index_page.description, rewardStates: obj13, style: tmp27 };
             obj13 = { inProgress: obj14, earned: obj15, consumed: obj16 };
-            obj14 = { progressSteps: progress_steps1.map(f97160) };
+            obj14 = { progressSteps: progress_steps1.map(f97303) };
             progress_steps1 = reward_states.in_progress.progress_steps;
             tmp27 = undefined;
             obj15 = { heroUrl: reward_states.earned.hero_url };

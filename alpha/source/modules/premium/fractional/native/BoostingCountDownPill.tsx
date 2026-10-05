@@ -1,9 +1,9 @@
-// Module ID: 13320
-// Function ID: 13321
+// Module ID: 13322
+// Function ID: 13323
 // Name: BoostingCountDownPill
-// Dependencies: [17, 21, 4890, 587, 4854, 13321, 1987, 1126, 558, 576, 4886, 2]
+// Dependencies: [17, 21, 4890, 587, 4854, 13323, 1987, 1126, 558, 576, 4886, 2]
 
-// Module 13320 (BoostingCountDownPill)
+// Module 13322 (BoostingCountDownPill)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
@@ -27,7 +27,7 @@ function handlePress() {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = { aboutText: intl.string(intl2.t["07lzz7"]) };
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(13321, dependencyMap.paths);
+  const tmp2 = asyncRequire(13323, dependencyMap.paths);
   intl = intl2.intl;
   openLazy(tmp2, "NitroCreditEducationActionSheet", obj);
 }

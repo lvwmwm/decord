@@ -1,7 +1,7 @@
 // Module ID: 4560
 // Function ID: 4561
 // Name: handleURL
-// Dependencies: [5, 17, 4561, 1085, 3, 4562, 4564, 4565, 4566, 1936, 4567, 1126, 4851, 1369, 4854, 1373, 4867, 13661, 2]
+// Dependencies: [5, 17, 4561, 1085, 3, 4562, 4564, 4565, 4566, 1936, 4567, 1126, 4851, 1369, 4854, 1373, 4867, 13663, 2]
 // Exports: default
 
 // Module 4560 (handleURL)
@@ -205,7 +205,7 @@ let obj = function _handleURL() {
         let tmp12 = tmp45;
         c6 = 0;
         c8 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } else if (3 === tmp4) {
         if (arg0 === 1) {
           c8 = 3;
@@ -325,7 +325,7 @@ let obj = function _handleURL() {
           presentFailedToast(intl.string(closure_2_0(tmp2[11]).t.XiqzAp));
         }
       };
-      return "Reflect";
+      return "Set";
     })();
     let nextResult = iter.next();
     return iter;

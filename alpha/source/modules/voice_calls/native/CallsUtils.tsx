@@ -103,7 +103,7 @@ let obj = function _handleToggleVideo() {
     if (closure_1 === undefined) {
       flag3 = true;
     }
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };

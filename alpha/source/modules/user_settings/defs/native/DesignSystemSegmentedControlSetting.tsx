@@ -1,9 +1,9 @@
-// Module ID: 15652
-// Function ID: 15653
+// Module ID: 15656
+// Function ID: 15657
 // Name: DesignSystemSegmentedControlSetting
-// Dependencies: [7634, 1085, 11129, 15653, 2]
+// Dependencies: [7634, 1085, 11129, 15657, 2]
 
-// Module 15652 (DesignSystemSegmentedControlSetting)
+// Module 15656 (DesignSystemSegmentedControlSetting)
 import Constants from "Constants" /* 1085 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;

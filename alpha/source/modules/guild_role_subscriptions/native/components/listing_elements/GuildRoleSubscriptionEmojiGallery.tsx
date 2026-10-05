@@ -1,14 +1,14 @@
-// Module ID: 15053
-// Function ID: 15054
+// Module ID: 15057
+// Function ID: 15058
 // Name: GuildRoleSubscriptionEmojiGallery
-// Dependencies: [19, 17, 21, 558, 576, 9951, 9953, 15054, 2]
+// Dependencies: [19, 17, 21, 558, 576, 9951, 9953, 15058, 2]
 
-// Module 15053 (GuildRoleSubscriptionEmojiGallery)
+// Module 15057 (GuildRoleSubscriptionEmojiGallery)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import chunkDefault from "chunk" /* 9951 */;
 import LayoutUtils from "LayoutUtils" /* 9953 */;
-import EmojiIconDefault from "EmojiIcon" /* 15054 */;
+import EmojiIconDefault from "EmojiIcon" /* 15058 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

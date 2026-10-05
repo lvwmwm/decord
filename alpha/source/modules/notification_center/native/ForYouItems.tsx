@@ -1,9 +1,9 @@
-// Module ID: 16356
-// Function ID: 16357
+// Module ID: 16360
+// Function ID: 16361
 // Name: ForYouItems
-// Dependencies: [5, 32, 19, 17, 4879, 5118, 2051, 2074, 1377, 16350, 1085, 6085, 21, 4890, 4886, 587, 558, 5784, 576, 16355, 1126, 1390, 7713, 7257, 11042, 10149, 8276, 504, 7531, 1188, 12294, 16357, 1490, 4867, 13661, 7125, 1252, 13024, 9957, 11246, 4568, 11269, 1987, 4854, 16358, 4847, 16352, 6693, 16359, 16360, 11, 5909, 16361, 7126, 12950, 1491, 2028, 7514, 16371, 16372, 16373, 16374, 16375, 16381, 686, 16382, 16383, 1375, 16354, 16384, 8371, 2]
+// Dependencies: [5, 32, 19, 17, 4879, 5118, 2051, 2074, 1377, 16354, 1085, 6085, 21, 4890, 4886, 587, 558, 5784, 576, 16359, 1126, 1390, 7713, 7257, 11042, 10149, 8276, 504, 7531, 1188, 12294, 16361, 1490, 4867, 13663, 7125, 1252, 13026, 9957, 11246, 4568, 11269, 1987, 4854, 16362, 4847, 16356, 6693, 16363, 16364, 11, 5909, 16365, 7126, 12952, 1491, 2028, 7514, 16375, 16376, 16377, 16378, 16379, 16385, 686, 16386, 16387, 1375, 16358, 16388, 8371, 2]
 
-// Module 16356 (ForYouItems)
+// Module 16360 (ForYouItems)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _mod686 from "module_686" /* 686 */;
@@ -19,16 +19,16 @@ import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7125 
 import PollsUtils from "PollsUtils" /* 7257 */;
 import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 7713 */;
 import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12294 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 13661 */;
-import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 16354 */;
-import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 16371 */;
-import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 16372 */;
-import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 16373 */;
-import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 16374 */;
-import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 16375 */;
-import ForYouShowAllRow from "ForYouShowAllRow" /* 16381 */;
-import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 16382 */;
-import ForYouLoadMore from "ForYouLoadMore" /* 16383 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 13663 */;
+import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 16358 */;
+import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 16375 */;
+import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 16376 */;
+import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 16377 */;
+import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 16378 */;
+import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 16379 */;
+import ForYouShowAllRow from "ForYouShowAllRow" /* 16385 */;
+import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 16386 */;
+import ForYouLoadMore from "ForYouLoadMore" /* 16387 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -38,7 +38,7 @@ import ApplicationStore from "ApplicationStore" /* 5118 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildStore from "GuildStore" /* 2074 */;
 import UserStore from "UserStore" /* 1377 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 16350 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 16354 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4890 */;
@@ -72,7 +72,7 @@ let obj8;
 let size;
 let tmp;
 const Link = tmp(1491);
-const ForYouMentionPlaceholder = tmp(16355);
+const ForYouMentionPlaceholder = tmp(16359);
 function getMessageContentPreviewV2(item) {
   let ATTACHMENT;
   let result;
@@ -220,17 +220,17 @@ let closure_27 = createStyles.createStyles(obj7);
 let closure_28 = { channelMentionText: "redesign/message-preview/medium" };
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const f73486 = () => {
+const f73536 = () => {
 
 };
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const f73487 = () => {
+const f73537 = () => {
 
 };
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const f73488 = () => {
+const f73538 = () => {
 
 };
 createStyles = createStyles_mod;
@@ -285,7 +285,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   item = item.item;
   ({ acked, compactMode } = item);
   const tmp4 = closure_32();
-  if (typeof f73486 === "function") {
+  if (typeof f73536 === "function") {
     let tmp8;
     let tmp13;
     const obj2 = CustomMarkupAll;
@@ -367,7 +367,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   let num;
   ({ item, acked, compactMode } = arg0);
   const tmp = closure_32();
-  if (typeof f73486 === "function") {
+  if (typeof f73536 === "function") {
     const obj2 = { style: tmp.calloutContainer, pointerEvents: "none", children: items };
     const obj3 = { style: tmp.messagePreviewBarV2 };
     const obj = CustomMarkupAll;
@@ -970,7 +970,7 @@ let closure_39 = react.memo((item) => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -1012,7 +1012,7 @@ let closure_39 = react.memo((item) => {
                 c3 = 0;
               }
               c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp18) {
             let closure_2 = tmp18;
@@ -1034,13 +1034,13 @@ let closure_39 = react.memo((item) => {
   [tmp10, tmp11] = tmp9;
   const tmp2Result4 = tmp2(tmp3[48]);
   const itemActionButtonPropsV2 = tmp2Result4.useItemActionButtonPropsV2(item, callback, navigation, forceHoistItem, isForceHoisted, onSoftAckItem, tmp11, compactMode);
-  if (typeof f73487 === "function") {
+  if (typeof f73537 === "function") {
     let tmp18 = onSoftAckItem(tmp3[17]);
     const tmp19 = closure_25;
     const getParserWithoutLinks = tmp18.getParserWithoutLinks;
-    let tmp21 = f73488;
+    let tmp21 = f73538;
     const tmp17 = onSoftAckItem;
-    if (typeof f73488 === "function") {
+    if (typeof f73538 === "function") {
       let tmp22 = closure_24;
       const tmp17Result = tmp17(tmp3[17]);
       const parserWithoutLinks = tmp17Result.getParserWithoutLinks(closure_24());

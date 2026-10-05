@@ -150,7 +150,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, handleLogin) =
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -182,14 +182,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, handleLogin) =
                 return obj;
               } else {
                 const routes = closure_0.getState().routes;
-                closure_0 = routes.findIndex(() => { /* body not rendered: F154100 */ });
+                closure_0 = routes.findIndex(() => { /* body not rendered: F154407 */ });
                 if (closure_0 >= 0) {
                   closure_0.pop(closure_0);
                 } else {
                   closure_0.pop();
                 }
                 c4 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp16) {
               c4 = 3;
@@ -328,7 +328,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, handleLogin) =
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -367,7 +367,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, handleLogin) =
                 closure_0.pop();
               }
               c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp16) {
             c4 = 3;

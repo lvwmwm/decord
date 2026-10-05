@@ -1,10 +1,10 @@
-// Module ID: 13713
-// Function ID: 13714
+// Module ID: 13715
+// Function ID: 13716
 // Name: ShareUtils
 // Dependencies: [5, 7031, 4883, 4568, 4811, 8812, 7405, 7247, 7268, 7166, 8798, 6965, 2]
 // Exports: sendShareMessage, showInformationToast
 
-// Module 13713 (ShareUtils)
+// Module 13715 (ShareUtils)
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
 import AssetRegistryDefault from "AssetRegistry" /* 4811 */;
 import MessageConstants from "MessageConstants" /* 4883 */;
@@ -31,7 +31,7 @@ let obj = function _sendShareMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -61,7 +61,7 @@ let obj = function _sendShareMessage() {
             future = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {

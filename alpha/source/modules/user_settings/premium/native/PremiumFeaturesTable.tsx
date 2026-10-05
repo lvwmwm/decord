@@ -1,9 +1,9 @@
-// Module ID: 13279
-// Function ID: 13280
+// Module ID: 13281
+// Function ID: 13282
 // Name: PremiumFeaturesTable
-// Dependencies: [32, 19, 17, 1085, 1379, 21, 4890, 587, 5620, 558, 576, 4791, 4729, 1188, 13280, 13281, 4886, 1126, 5605, 8869, 4528, 13282, 13283, 13284, 13285, 5974, 13286, 13287, 13288, 2]
+// Dependencies: [32, 19, 17, 1085, 1379, 21, 4890, 587, 5620, 558, 576, 4791, 4729, 1188, 13282, 13283, 4886, 1126, 5605, 8869, 4528, 13284, 13285, 13286, 13287, 5974, 13288, 13289, 13290, 2]
 
-// Module 13279 (PremiumFeaturesTable)
+// Module 13281 (PremiumFeaturesTable)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,7 +14,7 @@ import shared from "shared" /* 4729 */;
 import useThemeDefault from "useTheme" /* 4791 */;
 import LinearGradientDefault from "LinearGradient" /* 5605 */;
 import LegacyTokens from "LegacyTokens" /* 5620 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13281 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13283 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1379 */;
@@ -39,7 +39,7 @@ let tmp;
 let tmp4;
 let unpackModuleId;
 const Text_Text = tmp(4886);
-const AssetRegistryDefault = tmp4(13280);
+const AssetRegistryDefault = tmp4(13282);
 const View = react_native.View;
 const HorizontalGradient = Constants.HorizontalGradient;
 ({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: metroImportDefault, PRICE_PLACEHOLDER: metroImportAll, PremiumTypes: c9, SubscriptionPlans: c10 } = PremiumConstants);
@@ -672,9 +672,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[2] !== tmp6.logo) {
     size = { style: tmp6.logo, width: 48, height: 9 };
-    const tmp22 = closure_11(str(13282), size);
+    const tmp22 = closure_11(str(13284), size);
     const size1 = { style: tmp6.logo, width: 50, height: 9 };
-    const tmp23 = closure_11(str(13283), size1);
+    const tmp23 = closure_11(str(13285), size1);
     cResult[2] = tmp6.logo;
     cResult[3] = tmp22;
     cResult[4] = tmp23;
@@ -703,9 +703,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const tmpResult5 = tmp(4729);
       if (tmpResult5.isThemeDark(tmp8)) {
-        tmp7Result = tmp7(13284);
+        tmp7Result = tmp7(13286);
       } else {
-        tmp7Result = tmp7(13285);
+        tmp7Result = tmp7(13287);
       }
       if (cResult[10] === tmp6.logo) {
         let tmp29;
@@ -725,9 +725,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const tmpResult6 = tmp(4729);
         if (tmpResult6.isThemeDark(tmp8)) {
-          tmp7Result2 = tmp7(13286);
+          tmp7Result2 = tmp7(13288);
         } else {
-          tmp7Result2 = tmp7(13287);
+          tmp7Result2 = tmp7(13289);
         }
         if (cResult[14] === tmp6.logo) {
           let tmp35;
@@ -1107,7 +1107,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                     let tmp132 = tmp5 && null != premiumGroupRole;
                                     if (tmp132) {
                                       const obj24 = { style: tmp6.premiumGroupCard, premiumGroupRole };
-                                      tmp132 = closure_11(tmp7(13288), obj24);
+                                      tmp132 = closure_11(tmp7(13290), obj24);
                                     }
                                     cResult[79] = undefined !== isPremiumGroup && isPremiumGroup;
                                     cResult[80] = premiumGroupRole;

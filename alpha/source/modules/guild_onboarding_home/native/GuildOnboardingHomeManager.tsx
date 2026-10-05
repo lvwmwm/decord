@@ -1,9 +1,9 @@
-// Module ID: 17477
-// Function ID: 17478
+// Module ID: 17501
+// Function ID: 17502
 // Name: GuildOnboardingHomeManager
-// Dependencies: [32, 5, 2105, 502, 2051, 2112, 2074, 4699, 5077, 5078, 4495, 6613, 1390, 5093, 17478, 1987, 7522, 1105, 7521, 6723, 6724, 2]
+// Dependencies: [32, 5, 2105, 502, 2051, 2112, 2074, 4699, 5077, 5078, 4495, 6613, 1390, 5093, 17502, 1987, 7522, 1105, 7521, 6723, 6724, 2]
 
-// Module 17477 (GuildOnboardingHomeManager)
+// Module 17501 (GuildOnboardingHomeManager)
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import FlagUtils from "FlagUtils" /* 1390 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
@@ -105,7 +105,7 @@ class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
             if (0 !== num) {
               const pushLazy = ModalActionCreatorsDefault.pushLazy;
               const obj = { initialPercent: (num - 1) / num, numActions: num };
-              const tmp11 = asyncRequire(17478, tmp2.paths);
+              const tmp11 = asyncRequire(17502, tmp2.paths);
               const obj2 = { animation: ConstantsIOS.ModalAnimation.FADE };
               const NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY = tmp(7522).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY;
               pushLazy(tmp11, obj, NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY, obj2);
@@ -169,7 +169,7 @@ class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
       await "IconComponent";
       closure_2 = tmp4;
       ({ guildId: c0, channelId: c1 } = closure_0);
-      return "Reflect";
+      return "Set";
     });
     applyArgumentsResult.handleChannelSelect = function() {
       return closure_0(...arguments);
@@ -242,7 +242,7 @@ class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -296,7 +296,7 @@ class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
               const result = obj.completeNewMemberAction(closure_0, closure_1);
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp30) {
           c5 = 3;
@@ -322,7 +322,7 @@ class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -402,7 +402,7 @@ class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -478,7 +478,7 @@ class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

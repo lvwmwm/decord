@@ -1,9 +1,9 @@
-// Module ID: 16374
-// Function ID: 16375
+// Module ID: 16378
+// Function ID: 16379
 // Name: ForYouSuggestedFriendsSectionHeader
 // Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1126, 4886, 2]
 
-// Module 16374 (ForYouSuggestedFriendsSectionHeader)
+// Module 16378 (ForYouSuggestedFriendsSectionHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

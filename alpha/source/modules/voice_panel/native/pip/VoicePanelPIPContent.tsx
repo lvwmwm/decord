@@ -1,9 +1,9 @@
-// Module ID: 17284
-// Function ID: 17285
+// Module ID: 17308
+// Function ID: 17309
 // Name: VoicePanelPIPContent
-// Dependencies: [32, 19, 17, 2050, 4906, 9065, 4912, 502, 2051, 1377, 11902, 17182, 1085, 2011, 4911, 21, 4890, 587, 4612, 5605, 558, 576, 11901, 17249, 9115, 1121, 4589, 17183, 17181, 5976, 573, 1484, 9134, 8482, 7923, 9106, 9119, 1188, 4808, 11904, 6570, 17133, 9110, 9097, 2]
+// Dependencies: [32, 19, 17, 2050, 4906, 9065, 4912, 502, 2051, 1377, 11902, 17206, 1085, 2011, 4911, 21, 4890, 587, 4612, 5605, 558, 576, 11901, 17273, 9115, 1121, 4589, 17207, 17205, 5976, 573, 1484, 9134, 8482, 7923, 9106, 9119, 1188, 4808, 11904, 6570, 17157, 9110, 9097, 2]
 
-// Module 17284 (VoicePanelPIPContent)
+// Module 17308 (VoicePanelPIPContent)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
@@ -16,11 +16,11 @@ import ExternalPipDefault from "ExternalPip" /* 9110 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11901 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11902 */;
 import VoicePanelCardLayoutManager from "VoicePanelCardLayoutManager" /* 11904 */;
-import VideoActionCreators from "VideoActionCreators" /* 17133 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17181 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17182 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 17183 */;
-import VoicePanelStreamOutputSinkStack from "VoicePanelStreamOutputSinkStack" /* 17249 */;
+import VideoActionCreators from "VideoActionCreators" /* 17157 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17205 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17206 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 17207 */;
+import VoicePanelStreamOutputSinkStack from "VoicePanelStreamOutputSinkStack" /* 17273 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -1759,7 +1759,7 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((participantId)
   let tmp = closure_24();
   let tmp2 = participantId;
   let tmp3 = dependencyMap;
-  let obj = participantId(17183);
+  let obj = participantId(17207);
   const mode = obj.usePIPState().mode;
   const tmp4 = closure_28(tmp, transitionState, transitionCleanUp);
   const context = streamId.useContext(mode(11901));

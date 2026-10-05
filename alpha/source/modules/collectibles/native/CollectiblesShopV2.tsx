@@ -1,9 +1,9 @@
-// Module ID: 15700
-// Function ID: 15701
+// Module ID: 15704
+// Function ID: 15705
 // Name: CollectiblesShopV2
-// Dependencies: [32, 19, 17, 4889, 1193, 1377, 7053, 1087, 1085, 2048, 21, 4890, 6681, 558, 576, 13261, 15701, 504, 1266, 5984, 10465, 15702, 1369, 7064, 8871, 7849, 8430, 4729, 6657, 1490, 4541, 8506, 15704, 4698, 2036, 4528, 15705, 1252, 7099, 7858, 15706, 15707, 15709, 15742, 1242, 10551, 15745, 15746, 15712, 15747, 8421, 5410, 2]
+// Dependencies: [32, 19, 17, 4889, 1193, 1377, 7053, 1087, 1085, 2048, 21, 4890, 6681, 558, 576, 13263, 15705, 504, 1266, 5984, 10465, 15706, 1369, 7064, 8871, 7849, 8430, 4729, 6657, 1490, 4541, 8506, 15708, 4698, 2036, 4528, 15709, 1252, 7099, 7858, 15710, 15711, 15713, 15746, 1242, 10551, 15749, 15750, 15716, 15751, 8421, 5410, 2]
 
-// Module 15700 (CollectiblesShopV2)
+// Module 15704 (CollectiblesShopV2)
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
@@ -18,9 +18,9 @@ import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7099 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7858 */;
 import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8506 */;
 import NativePaymentHooksDefault from "NativePaymentHooks" /* 8871 */;
-import ShopNitroUpsellBanner2 from "ShopNitroUpsellBanner" /* 15706 */;
-import ShopCategory from "ShopCategory" /* 15707 */;
-import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 15709 */;
+import ShopNitroUpsellBanner2 from "ShopNitroUpsellBanner" /* 15710 */;
+import ShopCategory from "ShopCategory" /* 15711 */;
+import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 15713 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -47,7 +47,7 @@ let map1;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const MobileNitroUpsellInShopFeedExperimentDefault = tmp(15705);
+const MobileNitroUpsellInShopFeedExperimentDefault = tmp(15709);
 function screenToAnalyticsLocation(screen) {
   if (constants.SHOP_ALL === screen) {
     return AnalyticsLocationDefault.COLLECTIBLES_SHOP_INDEX_PAGE;
@@ -840,7 +840,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsSourc
       const tmp18 = first1;
       const tmp19 = require;
       if (stateFromStores == null) {
-        GET_NITRO = tmp19(15705).NitroUpsellBannerButtonVariant.GET_NITRO;
+        GET_NITRO = tmp19(15709).NitroUpsellBannerButtonVariant.GET_NITRO;
       }
       tmp18Result = tmp18(ShopNitroUpsellBanner, obj2);
     } else {

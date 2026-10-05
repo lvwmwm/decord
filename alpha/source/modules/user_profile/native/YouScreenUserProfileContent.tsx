@@ -1,9 +1,9 @@
-// Module ID: 16952
-// Function ID: 16953
+// Module ID: 16971
+// Function ID: 16972
 // Name: YouScreenUserProfileContent
-// Dependencies: [32, 19, 17, 2042, 5438, 7111, 7854, 6707, 2048, 14410, 21, 558, 576, 16938, 16306, 1369, 7928, 7913, 12900, 12901, 8318, 12913, 4580, 587, 7861, 2036, 10058, 5968, 1126, 5594, 12815, 16953, 16956, 16949, 9390, 10883, 16957, 12885, 11581, 6891, 12888, 10843, 12889, 1491, 7857, 10826, 7914, 504, 7899, 7910, 12748, 16958, 12704, 12902, 12923, 12924, 12925, 10831, 16959, 12928, 15571, 12817, 10986, 8899, 12931, 16961, 12872, 12936, 12941, 9282, 10827, 9260, 12282, 10974, 4612, 6651, 2]
+// Dependencies: [32, 19, 17, 2042, 5438, 7111, 7854, 6707, 2048, 14414, 21, 558, 576, 16957, 16310, 1369, 7928, 7913, 12900, 12901, 8318, 12915, 4580, 587, 7861, 2036, 10058, 5968, 1126, 5594, 12815, 16972, 16975, 16968, 9390, 10883, 16976, 12885, 11581, 6891, 12888, 10843, 12889, 1491, 7857, 10826, 7914, 504, 7899, 7910, 12748, 16977, 12704, 12902, 12925, 12926, 12927, 10831, 16978, 12930, 15575, 12817, 10986, 8899, 12933, 16980, 12872, 12938, 12943, 9282, 10827, 9260, 12282, 10974, 4612, 6651, 2]
 
-// Module 16952 (YouScreenUserProfileContent)
+// Module 16971 (YouScreenUserProfileContent)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
 import dismissible_content from "dismissible_content" /* 2036 */;
@@ -27,17 +27,17 @@ import UserProfileNoteDefault from "UserProfileNote" /* 12872 */;
 import useBadgeDirectoryNuxCoachmarkVariant from "useBadgeDirectoryNuxCoachmarkVariant" /* 12885 */;
 import useBadgeDirectoryNuxEntryPoint from "useBadgeDirectoryNuxEntryPoint" /* 12888 */;
 import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 12900 */;
-import VibegrationsCustomWidgetAddOptionDefault from "VibegrationsCustomWidgetAddOption" /* 12901 */;
-import UserProfileConnections from "UserProfileConnections" /* 12931 */;
-import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 12936 */;
-import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 12941 */;
-import UserProfileEditConstants from "UserProfileEditConstants" /* 14410 */;
-import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 15571 */;
-import showYouAccountActionSheet from "showYouAccountActionSheet" /* 16306 */;
-import you_tracking_Tracking from "you/tracking/Tracking" /* 16938 */;
-import useOwnsAnyBadgeDefault from "useOwnsAnyBadge" /* 16957 */;
-import YouExpiringTrialOfferCardDefault from "YouExpiringTrialOfferCard" /* 16959 */;
-import UserProfileYourFriendsCardDefault from "UserProfileYourFriendsCard" /* 16961 */;
+import ConjureCustomWidgetAddOptionDefault from "ConjureCustomWidgetAddOption" /* 12901 */;
+import UserProfileConnections from "UserProfileConnections" /* 12933 */;
+import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 12938 */;
+import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 12943 */;
+import UserProfileEditConstants from "UserProfileEditConstants" /* 14414 */;
+import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 15575 */;
+import showYouAccountActionSheet from "showYouAccountActionSheet" /* 16310 */;
+import you_tracking_Tracking from "you/tracking/Tracking" /* 16957 */;
+import useOwnsAnyBadgeDefault from "useOwnsAnyBadge" /* 16976 */;
+import YouExpiringTrialOfferCardDefault from "YouExpiringTrialOfferCard" /* 16978 */;
+import UserProfileYourFriendsCardDefault from "UserProfileYourFriendsCard" /* 16980 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -59,7 +59,7 @@ let metroRequire;
 let tmp;
 let tmp3;
 const PlatformUtils = tmp(1369);
-const UserProfileActivityTabDefault = tmp3(12913);
+const UserProfileActivityTabDefault = tmp3(12915);
 let react = react_mod;
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
 const useIsContentShown = DismissibleContentShownStateStore.useIsContentShown;
@@ -173,7 +173,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   const tmp5 = closure_18(containerBackground, containerBorderColor);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp9 = authStore2(UserProfileWidgetsBoardEditNoticeDefault, {});
-    const tmp10 = authStore2(VibegrationsCustomWidgetAddOptionDefault, {});
+    const tmp10 = authStore2(ConjureCustomWidgetAddOptionDefault, {});
     cResult[0] = tmp9;
     cResult[1] = tmp10;
     tmp6 = tmp9;
@@ -221,7 +221,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   items = [, , ];
   const tmp2 = closure_18(containerBackground, containerBorderColor);
   items[0] = authStore2(UserProfileWidgetsBoardEditNoticeDefault, {});
-  items[1] = authStore2(VibegrationsCustomWidgetAddOptionDefault, {});
+  items[1] = authStore2(ConjureCustomWidgetAddOptionDefault, {});
   const obj2 = { userId, isVisible: activeSection === WIDGETS, cardStyle: tmp2 };
   items[2] = authStore2(UserProfileWidgetsBoardDefault, obj2);
   return closure_15(metroRequire, obj);
@@ -941,7 +941,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         const tmpResult20 = tmp(tmp2[52]);
         const displayableBoardWidgets = tmpResult20.useDisplayableBoardWidgets(user.id);
         const tmpResult21 = tmp(tmp2[53]);
-        const tmp31 = displayableBoardWidgets.length > 0 || tmpResult21.useCanConjureVibegrationsCustomWidget("YouScreenUserProfileContent");
+        const tmp31 = displayableBoardWidgets.length > 0 || tmpResult21.useCanConjureCustomWidget("YouScreenUserProfileContent");
         const tmpResult22 = tmp(tmp2[54]);
         const isRecentActivityMobileEnabled = tmpResult22.useIsRecentActivityMobileEnabled("YouScreenUserProfileContent");
         const tmpResult23 = tmp(tmp2[55]);
@@ -1140,7 +1140,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   const obj11 = user(navigateToPremium[52]);
   const displayableBoardWidgets = obj11.useDisplayableBoardWidgets(user.id);
   const obj12 = user(navigateToPremium[53]);
-  const tmp20 = displayableBoardWidgets.length > 0 || obj12.useCanConjureVibegrationsCustomWidget("YouScreenUserProfileContent");
+  const tmp20 = displayableBoardWidgets.length > 0 || obj12.useCanConjureCustomWidget("YouScreenUserProfileContent");
   closure_17 = tmp20;
   let tmp4Result = tmp4(tmp2[54]);
   const isRecentActivityMobileEnabled = tmp4Result.useIsRecentActivityMobileEnabled("YouScreenUserProfileContent");
@@ -1222,7 +1222,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     const tmp6 = navigateToPremium;
     if (tmp3Result) {
       const obj4 = { navigateToPremium: tmp6, navigateToShop, hasCustomProfileTheme };
-      tmp3Result = tmp3(tmp4(12928), obj4);
+      tmp3Result = tmp3(tmp4(12930), obj4);
     }
     items2[1] = tmp3Result;
     items2[2] = enabled && authStore2(BalanceWidgetMenuDefault, {});

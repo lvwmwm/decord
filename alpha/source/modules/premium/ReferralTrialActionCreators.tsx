@@ -76,7 +76,7 @@ obj = function _createReferralTrials() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         while (true) {
@@ -180,11 +180,11 @@ obj = function _createReferralTrial() {
     await post(obj4);
     const obj6 = closure_130_1(closure_130_2[6]);
     obj6.dispatch({ type: "BILLING_CREATE_REFERRAL_FAIL" });
-    if (tmp40.body.code === closure_130_7.INVALID_MESSAGE_SEND_USER) {
+    if (tmp44.body.code === closure_130_7.INVALID_MESSAGE_SEND_USER) {
       currentlySelectedChannelId = closure_130_6.getCurrentlySelectedChannelId();
       if (null != currentlySelectedChannelId) {
         const obj7 = closure_130_1(closure_130_2[8]);
-        obj7.sendClydeError(currentlySelectedChannelId, tmp40.body.code);
+        obj7.sendClydeError(currentlySelectedChannelId, tmp44.body.code);
       }
     }
     closure_0 = await "IconComponent";

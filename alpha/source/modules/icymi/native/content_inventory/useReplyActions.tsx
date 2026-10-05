@@ -1,10 +1,10 @@
-// Module ID: 16444
-// Function ID: 16445
+// Module ID: 16448
+// Function ID: 16449
 // Name: useReplyActions
-// Dependencies: [5, 19, 2051, 7031, 1377, 1380, 4883, 21, 504, 7813, 8812, 4903, 16445, 4722, 7166, 6965, 16443, 4854, 4574, 4568, 1126, 14691, 8029, 9866, 7259, 16445, 1987, 2]
+// Dependencies: [5, 19, 2051, 7031, 1377, 1380, 4883, 21, 504, 7813, 8812, 4903, 16449, 4722, 7166, 6965, 16447, 4854, 4574, 4568, 1126, 14695, 8029, 9866, 7259, 16449, 1987, 2]
 // Exports: useReplyActions
 
-// Module 16444 (useReplyActions)
+// Module 16448 (useReplyActions)
 import Fragment from "Fragment" /* 21 */;
 import EmojiConstants from "EmojiConstants" /* 1380 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
@@ -104,7 +104,7 @@ export const useReplyActions = function useReplyActions(cResult) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -224,7 +224,7 @@ export const useReplyActions = function useReplyActions(cResult) {
             }
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp82) {
           c4 = 3;
           throw tmp82;
@@ -273,7 +273,7 @@ export const useReplyActions = function useReplyActions(cResult) {
             obj2.feedItemActioned(obj3);
             const obj5 = { content, author: tmp, sendMessage, onPressEmoji: callback1 };
             const obj4 = ActionSheetActionCreatorsDefault;
-            obj4.openLazy(asyncRequire(16445, tmp10.paths), "ReactActionSheet", obj5);
+            obj4.openLazy(asyncRequire(16449, tmp10.paths), "ReactActionSheet", obj5);
           }
         }, items6),
       openEmojiPicker: callback2

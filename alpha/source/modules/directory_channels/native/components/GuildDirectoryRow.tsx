@@ -73,7 +73,7 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -129,7 +129,7 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
               c3 = 0;
               closure_129_2(false);
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             } else {
               let guildId;
               const setHubProgressActionComplete = channel2(closure_2[13]).setHubProgressActionComplete;
@@ -142,7 +142,7 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
               c3 = 0;
               closure_129_2(false);
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           }
         } catch (tmp34) {

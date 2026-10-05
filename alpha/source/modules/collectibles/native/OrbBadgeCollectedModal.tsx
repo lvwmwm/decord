@@ -1,9 +1,9 @@
-// Module ID: 12991
-// Function ID: 12992
+// Module ID: 12993
+// Function ID: 12994
 // Name: OrbBadgeCollectedModal
 // Dependencies: [19, 17, 4879, 21, 4890, 587, 6010, 5093, 558, 576, 8508, 11000, 504, 5974, 10966, 7983, 10967, 8499, 1126, 4886, 5594, 6619, 7838, 8506, 6496, 2]
 
-// Module 12991 (OrbBadgeCollectedModal)
+// Module 12993 (OrbBadgeCollectedModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;

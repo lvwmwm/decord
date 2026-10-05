@@ -1,13 +1,13 @@
-// Module ID: 14542
-// Function ID: 14543
+// Module ID: 14546
+// Function ID: 14547
 // Name: AccountStandingSetting
-// Dependencies: [7634, 1085, 11129, 1126, 14543, 14546, 2]
+// Dependencies: [7634, 1085, 11129, 1126, 14547, 14550, 2]
 
-// Module 14542 (AccountStandingSetting)
+// Module 14546 (AccountStandingSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
-import useAccountStandingStatusLabel from "useAccountStandingStatusLabel" /* 14543 */;
+import useAccountStandingStatusLabel from "useAccountStandingStatusLabel" /* 14547 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 

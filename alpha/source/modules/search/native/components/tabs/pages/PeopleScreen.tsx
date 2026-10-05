@@ -1,9 +1,9 @@
-// Module ID: 16850
-// Function ID: 16851
+// Module ID: 16869
+// Function ID: 16870
 // Name: PeopleScreen
-// Dependencies: [5, 19, 11992, 11967, 7513, 7512, 21, 558, 576, 11968, 504, 16797, 16793, 4903, 11982, 16851, 16789, 16801, 2]
+// Dependencies: [5, 19, 11992, 11967, 7513, 7512, 21, 558, 576, 11968, 504, 16816, 16812, 4903, 11982, 16870, 16808, 16820, 2]
 
-// Module 16850 (PeopleScreen)
+// Module 16869 (PeopleScreen)
 import Fragment from "Fragment" /* 21 */;
 import TrackingConstants from "TrackingConstants" /* 7512 */;
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11982 */;
@@ -286,7 +286,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -319,7 +319,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
             const result = obj6.trackSearchResultClicked(obj7);
             tmp4(userId, channelId);
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp9) {
           c5 = 3;
@@ -374,7 +374,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -408,7 +408,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
             const result = obj6.trackSearchResultClicked(obj7);
             closure_1_6(userId, channelId);
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp9) {
           c5 = 3;

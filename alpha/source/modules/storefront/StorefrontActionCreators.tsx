@@ -50,7 +50,7 @@ let obj = function _maybeFetchStorefrontPromotions() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -81,7 +81,7 @@ let obj = function _maybeFetchStorefrontPromotions() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp7) {
         c1 = 3;
         throw tmp7;
@@ -109,7 +109,7 @@ obj = function _fetchStorefrontPromotions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -169,7 +169,7 @@ obj = function _fetchStorefrontPromotions() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp29) {
           if (0 === c3) {
             c5 = 3;
@@ -199,7 +199,7 @@ obj = function _claimStorefrontPromotion() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -292,7 +292,7 @@ obj = function _fetchStorefrontPricesForApplicationId() {
       await closure_130_18(obj5);
       await "IconComponent";
       applicationId = applicationId.applicationId;
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -311,7 +311,7 @@ obj = function _fetchStorefrontPricesForSkuIds() {
       await closure_130_18(obj5);
       await "IconComponent";
       skuIds = skuIds.skuIds;
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -334,7 +334,7 @@ obj = function _fetchStorefrontPrices() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c2;
@@ -379,7 +379,7 @@ obj = function _fetchStorefrontPrices() {
           c2 = 0;
         }
         c4 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp21) {
         if (0 === c2) {
           c4 = 3;

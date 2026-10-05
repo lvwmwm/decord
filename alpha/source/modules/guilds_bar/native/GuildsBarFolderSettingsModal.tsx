@@ -1,20 +1,20 @@
-// Module ID: 16225
-// Function ID: 16226
+// Module ID: 16229
+// Function ID: 16230
 // Name: GuildsBarFolderSettingsModal
-// Dependencies: [32, 19, 17, 5616, 16226, 21, 4890, 8863, 6471, 4854, 16227, 1987, 587, 5593, 6098, 1126, 6074, 5993, 1103, 14419, 6010, 558, 576, 504, 16224, 6496, 2]
+// Dependencies: [32, 19, 17, 5616, 16230, 21, 4890, 8863, 6471, 4854, 16231, 1987, 587, 5593, 6098, 1126, 6074, 5993, 1103, 14423, 6010, 558, 576, 504, 16228, 6496, 2]
 
-// Module 16225 (GuildsBarFolderSettingsModal)
+// Module 16229 (GuildsBarFolderSettingsModal)
 import intl5 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
 import NavigatorHeader from "NavigatorHeader" /* 6010 */;
 import UserSettingsActionCreators from "UserSettingsActionCreators" /* 8863 */;
-import GuildsBarFolderSettingsModalActionCreators from "GuildsBarFolderSettingsModalActionCreators" /* 16224 */;
+import GuildsBarFolderSettingsModalActionCreators from "GuildsBarFolderSettingsModalActionCreators" /* 16228 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SortedGuildStore from "SortedGuildStore" /* 5616 */;
-import GuildsBarConstants from "guilds_bar/GuildsBarConstants" /* 16226 */;
+import GuildsBarConstants from "guilds_bar/GuildsBarConstants" /* 16230 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -62,7 +62,7 @@ function GuildFolderSettingsScene(color) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     let tmp4 = color;
     ActionSheetActionCreatorsDefault;
-    const tmp3 = asyncRequire(16227, dependencyMap.paths);
+    const tmp3 = asyncRequire(16231, dependencyMap.paths);
     if (color == null) {
       tmp4 = metroImportAll;
     }
@@ -90,7 +90,7 @@ function GuildFolderSettingsScene(color) {
     int2hexResult = intl4.string(tmp8(1126).t.bBvAEH);
   }
   let tmp11 = color;
-  tmp2Result = tmp2(14419);
+  tmp2Result = tmp2(14423);
   if (color == null) {
     tmp11 = closure_8;
   }

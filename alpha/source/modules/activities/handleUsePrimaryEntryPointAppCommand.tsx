@@ -31,7 +31,7 @@ let obj = function _handleUsePrimaryEntryPointAppCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -132,7 +132,7 @@ obj = function _handleUsePrimaryEntryPointAppCommandInternal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -163,7 +163,7 @@ obj = function _handleUsePrimaryEntryPointAppCommandInternal() {
               currentUser = undefined;
               analyticsLocations = 1;
               componentId = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else {
             let tmp5;

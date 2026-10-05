@@ -1,9 +1,9 @@
-// Module ID: 15795
-// Function ID: 15796
+// Module ID: 15799
+// Function ID: 15800
 // Name: DoubleTapEmojiSetting
 // Dependencies: [5, 19, 7634, 1085, 1380, 21, 4890, 587, 558, 576, 2028, 7627, 1402, 6625, 9866, 1252, 6681, 9879, 11129, 1126, 2]
 
-// Module 15795 (DoubleTapEmojiSetting)
+// Module 15799 (DoubleTapEmojiSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -257,7 +257,7 @@ let obj3 = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -296,7 +296,7 @@ let obj3 = {
               const obj = emoji(closure_2[17]);
               const result = obj.showDoubleTapEmojiUpdatedToast(obj16);
               constants = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp11) {
             constants = 3;

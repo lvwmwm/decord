@@ -117,7 +117,7 @@ export default function AcceptInviteContainer(code) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -180,7 +180,7 @@ export default function AcceptInviteContainer(code) {
           return obj;
         }
         c3 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp14) {
         c3 = 3;
         throw tmp14;
@@ -203,7 +203,7 @@ export default function AcceptInviteContainer(code) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -239,7 +239,7 @@ export default function AcceptInviteContainer(code) {
                     } else if (arg0 === 2) {
                       return { value, done: true };
                     } else {
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     }
                   } else {
                     try {
@@ -263,7 +263,7 @@ export default function AcceptInviteContainer(code) {
                               }
                               if (null == prop) {
                                 c6 = 3;
-                                return { value: "IconComponent", done: "IconComponent" };
+                                return { value: "IconComponent", done: null };
                               } else {
                                 closure_1();
                                 const tmp8Result = closure_2_0(transitionToInviteChannel[17]);
@@ -293,7 +293,7 @@ export default function AcceptInviteContainer(code) {
                             closure_1();
                           }
                           c6 = 3;
-                          return { value: "IconComponent", done: "IconComponent" };
+                          return { value: "IconComponent", done: null };
                         }
                       } else if (1 === c5) {
                         c4 = 0;
@@ -348,7 +348,7 @@ export default function AcceptInviteContainer(code) {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -403,7 +403,7 @@ export default function AcceptInviteContainer(code) {
                       closure_128_2(closure_128_1);
                     }
                     c2 = 3;
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   } catch (tmp15) {
                     c2 = 3;
                     throw tmp15;
@@ -431,7 +431,7 @@ export default function AcceptInviteContainer(code) {
           return obj;
         }
         code = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp4) {
         code = 3;
         throw tmp4;

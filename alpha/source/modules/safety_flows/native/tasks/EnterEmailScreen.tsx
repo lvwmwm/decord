@@ -1,13 +1,13 @@
-// Module ID: 18045
-// Function ID: 18046
+// Module ID: 18067
+// Function ID: 18068
 // Name: EnterEmailScreen
-// Dependencies: [32, 19, 21, 558, 576, 1490, 1126, 2787, 18037, 5593, 6098, 18046, 2]
+// Dependencies: [32, 19, 21, 558, 576, 1490, 1126, 2787, 18059, 5593, 6098, 18068, 2]
 
-// Module 18045 (EnterEmailScreen)
+// Module 18067 (EnterEmailScreen)
 import Fragment from "Fragment" /* 21 */;
 import _modDef2787 from "module_2787" /* 2787 */;
-import types from "types" /* 18037 */;
-import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 18046 */;
+import types from "types" /* 18059 */;
+import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 18068 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

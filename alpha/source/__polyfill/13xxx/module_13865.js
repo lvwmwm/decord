@@ -1,17 +1,40 @@
 // Module ID: 13865
 // Function ID: 13866
-// Dependencies: [13858]
+// Dependencies: [13860, 13831]
 
 // Module 13865
-import _mod13858 from "module_13858" /* 13858 */;
+import _mod13831 from "module_13831" /* 13831 */;
+
+const require = globalThis.__r;
+let _require, c1, dependencyMap;
 
 
-export default function(arg0, arg1) {
+export default function(arr, arg1, arg2) {
+  let closure_0;
+  _require = arg2;
+  dependencyMap = null;
+  let closure_2 = null;
+  let regex = null;
   try {
-    const self = this;
-    const self2 = this;
-    const str = new _mod13858(arg0, arg1).range || "*";
-    return str;
+    let tmp = arg1;
+    let self = this;
+    let self2 = this;
+    const tmp6 = new require("module_13860")(arg1, arg2);
+    let tmp7 = tmp6;
+    regex = tmp6;
+    const item = arr.forEach(function(item) {
+      if (regex.test(item)) {
+        const tmp = c1 && 1 !== closure_2.compare(item);
+        if (!tmp) {
+          c1 = item;
+          const self = this;
+          const self2 = this;
+          closure_2 = new _mod13831(c1, closure_0);
+          const tmp7 = new _mod13831(c1, closure_0);
+        }
+      }
+    });
+    return dependencyMap;
   } catch (err) {
     return null;
   }

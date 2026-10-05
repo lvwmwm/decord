@@ -91,7 +91,7 @@ class StorekitIAPQueueClass {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -133,7 +133,7 @@ class StorekitIAPQueueClass {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp18) {
             closure_2 = tmp18;
@@ -169,7 +169,7 @@ class StorekitIAPQueueClass {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -248,7 +248,7 @@ class StorekitIAPQueueClass {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp18) {
             closure_2 = tmp18;
@@ -279,7 +279,7 @@ class StorekitIAPQueueClass {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -305,7 +305,7 @@ class StorekitIAPQueueClass {
                 }
               }
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else if (1 === c4) {
             c3 = 0;

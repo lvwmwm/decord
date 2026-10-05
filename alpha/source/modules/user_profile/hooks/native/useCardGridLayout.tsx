@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (diff < bound1 * num6 + num5 * diff1) {
       let tmp15;
       if (cResult[5] !== num5) {
-        const obj3 = { columns: 1, cardWidth: "Array", rowWidth: "ix", gap: num5 };
+        const obj3 = { columns: 1, cardWidth: "Array", rowWidth: "unicodeVersion", gap: num5 };
         cResult[5] = num5;
         cResult[6] = obj3;
         tmp15 = obj3;
@@ -184,8 +184,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const bound1 = Math.min(Math.max(tmp4, num), num2);
   const diff2 = num4 - 1;
   if (diff < bound1 * num4 + num3 * diff2) {
-    obj3 = { columns: 1, cardWidth: "Array", rowWidth: "ix", gap: num3 };
-    const obj2 = { columns: 1, cardWidth: "Array", rowWidth: "ix", gap: num3 };
+    obj3 = { columns: 1, cardWidth: "Array", rowWidth: "unicodeVersion", gap: num3 };
+    const obj2 = { columns: 1, cardWidth: "Array", rowWidth: "unicodeVersion", gap: num3 };
   } else {
     obj3 = { columns: num4, cardWidth: bound1, rowWidth: bound1 * num4 + num3 * diff2, gap: num3 };
   }

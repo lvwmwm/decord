@@ -1,9 +1,9 @@
-// Module ID: 13609
-// Function ID: 13610
+// Module ID: 13611
+// Function ID: 13612
 // Name: ProvisionalAccountNoCallAllowed
 // Dependencies: [19, 1085, 21, 4890, 558, 576, 4800, 1126, 2115, 5713, 5713, 2]
 
-// Module 13609 (ProvisionalAccountNoCallAllowed)
+// Module 13611 (ProvisionalAccountNoCallAllowed)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;

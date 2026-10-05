@@ -1082,7 +1082,7 @@ let result = size.fileFinishedImporting("modules/application_commands/Applicatio
 export const getCachedCommand = function getCachedCommand(type, commandId, applicationId) {
   let closure_0 = applicationId;
   if (null == commandId) {
-    return { application: "done", command: "toCharArray$esjava$1", section: "toCharArray$esjava$1" };
+    return { application: "marginBottom", command: "unicodeVersion", section: "Reflect" };
   } else {
     const userState = ApplicationCommandIndexStore.getUserState();
     const result2 = userState.result;
@@ -1133,7 +1133,7 @@ export const getCachedCommand = function getCachedCommand(type, commandId, appli
         }
       }
     }
-    return { application: "done", command: "toCharArray$esjava$1", section: "toCharArray$esjava$1" };
+    return { application: "marginBottom", command: "unicodeVersion", section: "Reflect" };
   }
 };
 export const getCachedApplicationSection = function getCachedApplicationSection(type, CHAT, applicationId) {
@@ -1281,7 +1281,7 @@ export const useCommand = function useCommand(cResult, commandId) {
         }
       }
     }
-    return { command: "Symbol", application: "current" };
+    return { command: "Array", application: "Set" };
   }, items);
 };
 export const useCommandsForApplication = tmp6;

@@ -1,9 +1,9 @@
-// Module ID: 14679
-// Function ID: 14680
+// Module ID: 14683
+// Function ID: 14684
 // Name: FamilyCenterActivityBanner
-// Dependencies: [19, 17, 21, 4890, 558, 576, 8295, 8296, 14680, 587, 1126, 2493, 11531, 14687, 14688, 4886, 2]
+// Dependencies: [19, 17, 21, 4890, 558, 576, 8295, 8296, 14684, 587, 1126, 2493, 11531, 14691, 14692, 4886, 2]
 
-// Module 14679 (FamilyCenterActivityBanner)
+// Module 14683 (FamilyCenterActivityBanner)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
@@ -27,7 +27,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const FamilyCenterBannerButton = tmp(14680);
+const FamilyCenterBannerButton = tmp(14684);
 ({ View: c3, Image: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -140,7 +140,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult2 = useAgeSpecificText3;
   const ageSpecificText1 = tmpResult2.useAgeSpecificText(tmp13, tmp14);
-  const tmp4Result = importDefault(tmp5 ? 14687 : 14688);
+  const tmp4Result = importDefault(tmp5 ? 14691 : 14692);
   if (cResult[4] === tmp6.art) {
     let tmp19;
     if (cResult[5] === tmp4Result) {
@@ -230,7 +230,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const formatResult = intl3.format(_modDef2493.MXjDSv, { articleLink: "https://support.discord.com/hc/articles/14155060633623" });
   const intl4 = intl5.intl;
   const obj2 = { style: tmp4.container, children: items };
-  const obj3 = { source: importDefault(tmp3 ? 14687 : 14688), style: tmp4.art };
+  const obj3 = { source: importDefault(tmp3 ? 14691 : 14692), style: tmp4.art };
   const ageSpecificText2 = useAgeSpecificText2(formatResult, intl4.format(_modDef2493.EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
   items = [hasOwnProperty(React3, obj3), , , ];
   const obj4 = { style: tmp4.header, variant: "heading-lg/semibold", children: ageSpecificText };

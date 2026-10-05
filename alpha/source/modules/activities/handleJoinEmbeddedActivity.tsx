@@ -43,7 +43,7 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -81,7 +81,7 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
               let closure_18;
               analyticsLocations = 1;
               componentId = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === analyticsLocations) {
             if (arg0 === 1) {

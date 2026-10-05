@@ -1,9 +1,9 @@
-// Module ID: 15057
-// Function ID: 15058
+// Module ID: 15061
+// Function ID: 15062
 // Name: PremiumRestoreSubscriptionSetting
-// Dependencies: [1377, 21, 6925, 5708, 1126, 15058, 1987, 558, 576, 504, 1369, 11129, 8313, 2]
+// Dependencies: [1377, 21, 6925, 5708, 1126, 15062, 1987, 558, 576, 504, 1369, 11129, 8313, 2]
 
-// Module 15057 (PremiumRestoreSubscriptionSetting)
+// Module 15061 (PremiumRestoreSubscriptionSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;

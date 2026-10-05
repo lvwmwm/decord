@@ -1,10 +1,10 @@
-// Module ID: 17969
-// Function ID: 17970
+// Module ID: 17991
+// Function ID: 17992
 // Name: AdvancedInstantInvite
-// Dependencies: [19, 17, 4519, 1377, 21, 4890, 5812, 5043, 17970, 9485, 17971, 4854, 17972, 1987, 17973, 1126, 5971, 5999, 5593, 587, 6074, 5993, 6698, 1390, 8068, 2]
+// Dependencies: [19, 17, 4519, 1377, 21, 4890, 5812, 5043, 17992, 9485, 17993, 4854, 17994, 1987, 17995, 1126, 5971, 5999, 5593, 587, 6074, 5993, 6698, 1390, 8068, 2]
 // Exports: default
 
-// Module 17969 (AdvancedInstantInvite)
+// Module 17991 (AdvancedInstantInvite)
 import react_native from "react-native" /* 17 */;
 import intl11 from "intl" /* 1126 */;
 import FlagUtils from "FlagUtils" /* 1390 */;
@@ -67,7 +67,7 @@ export default function AdvancedInstantInvite(maxAge) {
   let tmp29;
   let tmp33Result;
   let tmp33Result5;
-  const f132620 = (value) => value.value === maxUses;
+  const f132858 = (value) => value.value === maxUses;
   ({ channel, guild } = maxAge);
   maxAge = maxAge.maxAge;
   const onChangeMaxAge = maxAge.onChangeMaxAge;
@@ -120,7 +120,7 @@ export default function AdvancedInstantInvite(maxAge) {
     if (tmp) {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { assignableRoles, selectedRoleIds: roleIds, onSave: onChangeRoleIds };
-      obj.openLazy(asyncRequire(17972, dependencyMap.paths), "SelectInviteRolesActionSheet", obj2, "stack");
+      obj.openLazy(asyncRequire(17994, dependencyMap.paths), "SelectInviteRolesActionSheet", obj2, "stack");
     }
   }, items);
   const items2 = [maxUses, maxUsesOptions, onChangeMaxUses];
@@ -128,7 +128,7 @@ export default function AdvancedInstantInvite(maxAge) {
     let intl;
     if (null != onChangeMaxAge) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-      const tmp6 = asyncRequire(17973, dependencyMap.paths);
+      const tmp6 = asyncRequire(17995, dependencyMap.paths);
       const obj = { title: intl.string(intl11.t.gKmKP0), options: maxAgeOptions, value: maxAge, onChange: tmp };
       intl = intl11.intl;
       openLazy(tmp6, "InviteMaxAgeActionSheet", obj, "stack");
@@ -139,7 +139,7 @@ export default function AdvancedInstantInvite(maxAge) {
     let intl;
     if (null != onChangeMaxUses) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-      const tmp6 = asyncRequire(17973, dependencyMap.paths);
+      const tmp6 = asyncRequire(17995, dependencyMap.paths);
       const obj = { title: intl.string(intl11.t["+3vH1h"]), options: maxUsesOptions, value: maxUses, onChange: tmp };
       intl = intl11.intl;
       openLazy(tmp6, "InviteMaxUsesActionSheet", obj, "stack");
@@ -154,12 +154,12 @@ export default function AdvancedInstantInvite(maxAge) {
     const obj4 = { count: memo };
     formatToPlainStringResult = intl.formatToPlainString(guild(onChangeMaxAge[15]).t["eXU3/V"], obj4);
   }
-  const found = maxAgeOptions.find(f132620);
+  const found = maxAgeOptions.find(f132858);
   let label;
   if (found != null) {
     label = found.label;
   }
-  const found1 = maxUsesOptions.find(f132620);
+  const found1 = maxUsesOptions.find(f132858);
   let label1;
   if (found1 != null) {
     label1 = found1.label;

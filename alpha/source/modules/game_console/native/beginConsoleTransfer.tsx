@@ -29,7 +29,7 @@ let obj = function _beginConsoleTransfer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -92,7 +92,7 @@ let obj = function _beginConsoleTransfer() {
             return { value, done: true };
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp35) {
           c5 = 3;
           throw tmp35;

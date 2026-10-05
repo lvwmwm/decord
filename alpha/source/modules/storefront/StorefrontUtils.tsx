@@ -191,7 +191,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
       tmp14 = cResult[7];
     }
   }
-  const obj3 = { userPrice: "r", pricesForPurchaseType: "done", purchaseType: tmp11, storeHasPrice: null != stateFromStores };
+  const obj3 = { userPrice: "r", pricesForPurchaseType: "r", purchaseType: tmp11, storeHasPrice: null != stateFromStores };
   cResult[5] = tmp11;
   cResult[6] = null != stateFromStores;
   cResult[7] = obj3;
@@ -250,7 +250,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
         return { userPrice: found, pricesForPurchaseType: tmp12, purchaseType: SELF_PURCHASE, storeHasPrice: true };
       }
     }
-    return { userPrice: "r", pricesForPurchaseType: "done", purchaseType: SELF_PURCHASE, storeHasPrice: null != stateFromStores };
+    return { userPrice: "r", pricesForPurchaseType: "r", purchaseType: SELF_PURCHASE, storeHasPrice: null != stateFromStores };
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -871,12 +871,12 @@ export const transformStorefrontPricesServer = function transformStorefrontPrice
       let obj = _modDef12;
       return obj.mapValues(arg0, (user_price) => {
         let obj2;
-        const f92875 = (currency) => ({ currency: currency.currency, amount: currency.amount });
+        const f93018 = (currency) => ({ currency: currency.currency, amount: currency.amount });
         let obj = {
-          userPrice: user_price.map(f92875),
+          userPrice: user_price.map(f93018),
           prices: obj2.mapValues(user_price.prices, (arg0) => {
             const obj = closure_1_1(closure_1_2[6]);
-            return obj.mapValues(arg0, (arr) => arr.map(f92875));
+            return obj.mapValues(arg0, (arr) => arr.map(f93018));
           })
         };
         user_price = user_price.user_price;

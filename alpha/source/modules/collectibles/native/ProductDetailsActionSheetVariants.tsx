@@ -1,9 +1,9 @@
-// Module ID: 12985
-// Function ID: 12986
+// Module ID: 12987
+// Function ID: 12988
 // Name: ProductDetailsActionSheetVariants
 // Dependencies: [19, 17, 21, 4890, 587, 558, 576, 8496, 1126, 5909, 8528, 6628, 7064, 4886, 2]
 
-// Module 12985 (ProductDetailsActionSheetVariants)
+// Module 12987 (ProductDetailsActionSheetVariants)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -278,7 +278,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   class O {
                     constructor(arg0, arg1) {
                       closure_0 = arg1;
-                      obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F142819 */ } };
+                      obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F143064 */ } };
                       return closure_1_4(closure_1_8, obj, arg0.variantValue);
                     }
                   }
@@ -294,7 +294,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 class O {
                   constructor(arg0, arg1) {
                     closure_0 = arg1;
-                    obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F142819 */ } };
+                    obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F143064 */ } };
                     return closure_1_4(closure_1_8, obj, arg0.variantValue);
                   }
                 }
@@ -318,7 +318,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               class O {
                 constructor(arg0, arg1) {
                   closure_0 = arg1;
-                  obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F142819 */ } };
+                  obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F143064 */ } };
                   return closure_1_4(closure_1_8, obj, arg0.variantValue);
                 }
               }
@@ -333,7 +333,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           class O {
             constructor(arg0, arg1) {
               closure_0 = arg1;
-              obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F142819 */ } };
+              obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F143064 */ } };
               return closure_1_4(closure_1_8, obj, arg0.variantValue);
             }
           }
@@ -358,7 +358,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       class O {
         constructor(arg0, arg1) {
           closure_0 = arg1;
-          obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F142819 */ } };
+          obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F143064 */ } };
           return closure_1_4(closure_1_8, obj, arg0.variantValue);
         }
       }

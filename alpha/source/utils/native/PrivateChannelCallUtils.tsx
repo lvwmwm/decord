@@ -1,7 +1,7 @@
 // Module ID: 5097
 // Function ID: 5098
 // Name: PrivateChannelCallUtils
-// Dependencies: [5, 19, 4561, 5098, 2051, 4519, 2103, 1377, 1085, 1110, 5099, 21, 5100, 5091, 8070, 1121, 6534, 6710, 4854, 13574, 1987, 5093, 5568, 5708, 1126, 7275, 4745, 13609, 5709, 9433, 2]
+// Dependencies: [5, 19, 4561, 5098, 2051, 4519, 2103, 1377, 1085, 1110, 5099, 21, 5100, 5091, 8070, 1121, 6534, 6710, 4854, 13576, 1987, 5093, 5568, 5708, 1126, 7275, 4745, 13611, 5709, 9433, 2]
 // Exports: dismissVoiceChannelScreens, getVoiceChannelKey, getVoiceChannelKeyByChannelId, handleJoinCall, handleRedesignGroupDMCall, handleRedesignJoinCall, handleStartCall, hideVoiceChannelActionSheet, isVoiceChannelModalKey, maybeShowAgeGateModal, navigateToVoiceChannel, openChannelCallModal, openGuildVoiceModal, openVoiceChannelActionSheet, showGuardCallAlert
 
 // Module 5097 (PrivateChannelCallUtils)
@@ -101,7 +101,7 @@ function guardPrivateCallForChannel(id, fn) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -131,7 +131,7 @@ function guardPrivateCallForChannel(id, fn) {
                 } else {
                   closure_128_0();
                   c2 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } catch (tmp8) {
                 c2 = 3;
@@ -192,7 +192,7 @@ export const openVoiceChannelActionSheet = function openVoiceChannelActionSheet(
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj = { channel };
-  const tmp2 = asyncRequire(13574, dependencyMap.paths);
+  const tmp2 = asyncRequire(13576, dependencyMap.paths);
   openLazy(tmp2, "" + c17 + "-" + channel.id, obj);
 };
 export const hideVoiceChannelActionSheet = function hideVoiceChannelActionSheet(id) {
@@ -251,7 +251,7 @@ export const handleJoinCall = function handleJoinCall(channel, flag) {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -283,14 +283,14 @@ export const handleJoinCall = function handleJoinCall(channel, flag) {
             return obj;
           } else if (!value) {
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
           const obj2 = tmp3(c2[26]);
           obj2.dismissKeyboard();
           const obj3 = c1(c2[22]);
           const voiceChannel = obj3.selectVoiceChannel(closure_128_0.id, closure_128_1);
           c2 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp16) {
           c2 = 3;
           throw tmp16;
@@ -322,7 +322,7 @@ export const handleStartCall = function handleStartCall(channel, flag) {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -358,7 +358,7 @@ export const handleStartCall = function handleStartCall(channel, flag) {
             return obj;
           } else if (!value) {
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
           const obj2 = tmp(c2[26]);
           obj2.dismissKeyboard();
@@ -377,7 +377,7 @@ export const handleStartCall = function handleStartCall(channel, flag) {
           }
           call(id, closure_129_1, tmp27, recipientId);
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp35) {
           c3 = 3;
           throw tmp35;
@@ -429,7 +429,7 @@ export const handleRedesignGroupDMCall = function handleRedesignGroupDMCall(id) 
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -461,14 +461,14 @@ export const handleRedesignGroupDMCall = function handleRedesignGroupDMCall(id) 
             return obj;
           } else if (!value) {
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
           const obj2 = tmp3(c2[26]);
           obj2.dismissKeyboard();
           const obj3 = c1(c2[29]);
           obj3.call(closure_128_0.id, closure_128_1, true);
           c2 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp14) {
           c2 = 3;
           throw tmp14;
@@ -501,7 +501,7 @@ export const handleRedesignJoinCall = function handleRedesignJoinCall(id) {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -533,14 +533,14 @@ export const handleRedesignJoinCall = function handleRedesignJoinCall(id) {
             return obj;
           } else if (!value) {
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
           const obj2 = tmp3(c2[26]);
           obj2.dismissKeyboard();
           const obj3 = c1(c2[22]);
           const voiceChannel = obj3.selectVoiceChannel(closure_128_0.id, closure_128_1);
           c2 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp16) {
           c2 = 3;
           throw tmp16;

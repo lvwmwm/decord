@@ -1,9 +1,9 @@
-// Module ID: 17213
-// Function ID: 17214
+// Module ID: 17237
+// Function ID: 17238
 // Name: SoundboardHooks
-// Dependencies: [5, 19, 4879, 1193, 17205, 6646, 558, 576, 1484, 504, 4729, 2033, 6841, 2]
+// Dependencies: [5, 19, 4879, 1193, 17229, 6646, 558, 576, 1484, 504, 4729, 2033, 6841, 2]
 
-// Module 17213 (SoundboardHooks)
+// Module 17237 (SoundboardHooks)
 import react2 from "react" /* 576 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 6646 */;
@@ -11,7 +11,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import ThemeStore from "ThemeStore" /* 1193 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 17205 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 17229 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -101,7 +101,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((shouldFetch) => {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -135,7 +135,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((shouldFetch) => {
               return obj;
             }
             c0 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp8) {
             c0 = 3;
             throw tmp8;
@@ -199,7 +199,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((shouldFetch) => {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -233,7 +233,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((shouldFetch) => {
               return obj;
             }
             c0 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp8) {
             c0 = 3;
             throw tmp8;

@@ -1,9 +1,9 @@
-// Module ID: 14320
-// Function ID: 14321
+// Module ID: 14322
+// Function ID: 14323
 // Name: links
-// Dependencies: [5, 2050, 5118, 5316, 1085, 2011, 14300, 14321, 1369, 4884, 1252, 9048, 4498, 14322, 4559, 8047, 14323, 9026, 9029, 9031, 6885, 14315, 2016, 14324, 2]
+// Dependencies: [5, 2050, 5118, 5316, 1085, 2011, 14302, 14323, 1369, 4884, 1252, 9048, 4498, 14324, 4559, 8047, 14325, 9026, 9029, 9031, 6885, 14317, 2016, 14326, 2]
 
-// Module 14320 (links)
+// Module 14322 (links)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4498 */;
@@ -12,16 +12,16 @@ import RPCErrorDefault from "RPCError" /* 9026 */;
 import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9029 */;
 import RPCHelpers from "RPCHelpers" /* 9031 */;
 import ActivityPopoutUtils from "ActivityPopoutUtils" /* 9048 */;
-import validateEmbeddedAppFrame from "validateEmbeddedAppFrame" /* 14300 */;
-import internalDeepLinks from "internalDeepLinks" /* 14321 */;
-import openActivityShareLinkModal from "openActivityShareLinkModal" /* 14324 */;
+import validateEmbeddedAppFrame from "validateEmbeddedAppFrame" /* 14302 */;
+import internalDeepLinks from "internalDeepLinks" /* 14323 */;
+import openActivityShareLinkModal from "openActivityShareLinkModal" /* 14326 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
 import ApplicationStore from "ApplicationStore" /* 5118 */;
 import Constants_mod from "Constants" /* 5316 */;
 import Constants_mod2 from "Constants" /* 1085 */;
 import Constants_mod3 from "Constants" /* 2011 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14315 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14317 */;
 import size from "module_2" /* 2 */;
 
 let _Promise, c2, currentEmbeddedActivity, getApplication;
@@ -62,7 +62,7 @@ let obj = function _openExternalLink() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -285,7 +285,7 @@ obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;

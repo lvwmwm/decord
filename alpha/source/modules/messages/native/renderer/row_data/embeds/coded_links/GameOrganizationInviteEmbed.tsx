@@ -1,10 +1,10 @@
-// Module ID: 13063
-// Function ID: 13064
+// Module ID: 13065
+// Function ID: 13066
 // Name: GameOrganizationInviteEmbed
 // Dependencies: [11083, 10024, 11084, 7226, 7604, 1126, 2391, 7595, 587, 4727, 2]
 // Exports: createGameOrganizationInviteEmbed
 
-// Module 13063 (GameOrganizationInviteEmbed)
+// Module 13065 (GameOrganizationInviteEmbed)
 import nativeDefault from "native" /* 587 */;
 import intl8 from "intl" /* 1126 */;
 import _modDef2391 from "module_2391" /* 2391 */;

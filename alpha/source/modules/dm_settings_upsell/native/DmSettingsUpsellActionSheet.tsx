@@ -1,16 +1,16 @@
-// Module ID: 17464
-// Function ID: 17465
+// Module ID: 17488
+// Function ID: 17489
 // Name: DmSettingsUpsellActionSheet
-// Dependencies: [19, 17, 2074, 21, 4890, 587, 558, 576, 504, 17461, 17465, 4854, 13718, 6491, 2028, 4568, 4805, 1126, 9804, 4886, 5971, 5594, 6701, 2]
+// Dependencies: [19, 17, 2074, 21, 4890, 587, 558, 576, 504, 17485, 17489, 4854, 13720, 6491, 2028, 4568, 4805, 1126, 9804, 4886, 5971, 5594, 6701, 2]
 
-// Module 17464 (DmSettingsUpsellActionSheet)
+// Module 17488 (DmSettingsUpsellActionSheet)
 import nativeDefault from "native" /* 587 */;
 import UserSettings from "UserSettings" /* 2028 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 6491 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 13718 */;
-import DmSettingsUpsellManager from "DmSettingsUpsellManager" /* 17461 */;
-import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 17465 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 13720 */;
+import DmSettingsUpsellManager from "DmSettingsUpsellManager" /* 17485 */;
+import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 17489 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 2074 */;

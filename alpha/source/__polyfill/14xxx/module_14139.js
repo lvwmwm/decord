@@ -1,208 +1,391 @@
 // Module ID: 14139
 // Function ID: 14140
-// Dependencies: [32, 1263, 14138]
+// Dependencies: []
 
 // Module 14139
-import Buffer from "Buffer" /* 1263 */;
-import _mod14138 from "module_14138" /* 14138 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-
-function replaceByteInByteSequence(arr, arg1, arg2) {
-  let index = arr.indexOf(43);
-  if (index >= 0) {
-    do {
-      arr[index] = 32;
-      index = arr.indexOf(43, index + 1);
-    } while (index >= 0);
-  }
-  return arr;
+function error(arg0) {
+  const rangeError = new RangeError(closure_3.overflow);
+  throw rangeError;
 }
-function percentEncode(arr) {
-  const str = arr.toString(16);
-  const formatted = str.toUpperCase();
-  let text = formatted;
-  if (1 === formatted.length) {
-    text = `0${arr}`;
-  }
-  return "%" + text;
-}
-function percentDecode(_Buffer) {
-  _Buffer = Buffer.Buffer;
-  const allocResult = _Buffer.alloc(_Buffer.byteLength);
+function ucs2decode(str) {
+  const items = [];
   let num = 0;
-  let num2 = 0;
-  let num3 = 0;
-  if (0 < _Buffer.length) {
+  if (0 < str.length) {
     while (true) {
-      if (37 === _Buffer[num]) {
-        let tmp3 = require;
-        let obj = _mod14138;
-        let sum = num + 1;
-        if (obj.isASCIIHex(_Buffer[sum])) {
-          let tmp3Result = tmp3(14138);
-          let sum1 = num + 2;
-          if (tmp3Result.isASCIIHex(_Buffer[sum1])) {
-            let sum2 = num2 + 1;
-            let _parseInt = parseInt;
-            let str = _Buffer.slice(sum, num + 3);
-            allocResult[num2] = parseInt(str.toString(), 16);
-            let tmp8 = sum1;
-            num = tmp8 + 1;
-            num2 = sum2;
-            num3 = sum2;
-            if (num >= _Buffer.length) {
+      let sum = num + 1;
+      let charCodeAtResult = str.charCodeAt(num);
+      if (charCodeAtResult >= 55296) {
+        if (charCodeAtResult <= 56319) {
+          if (sum < length) {
+            let diff;
+            let sum1 = sum + 1;
+            let charCodeAtResult1 = str.charCodeAt(sum);
+            if (56320 === (64512 & charCodeAtResult1)) {
+              let arr = items.push(((1023 & charCodeAtResult) << 10) + (1023 & charCodeAtResult1) + 65536);
+              diff = sum1;
+            } else {
+              let arr4 = items.push(charCodeAtResult);
+              diff = sum1 - 1;
+            }
+            num = diff;
+            if (diff >= length) {
               break;
             }
           }
         }
       }
-      sum2 = num2 + 1;
-      allocResult[num2] = _Buffer[num];
-      tmp8 = num;
+      let arr5 = items.push(charCodeAtResult);
+      diff = sum;
     }
   }
-  return allocResult.slice(0, num3);
+  return items;
 }
-function serializeUrlencodedByte(_Buffer) {
-  let str = "";
-  const iter = _Buffer[Symbol.iterator]();
-  const nextResult = iter.next();
-  while (iter !== undefined) {
-    let tmp2 = nextResult;
-    let str2 = "+";
-    if (32 !== nextResult) {
-      if (42 !== tmp2) {
-        if (45 !== tmp2) {
-          if (46 !== tmp2) {
-            if (tmp2 < 48) {
-              if (tmp2 < 65) {
-                let fromCodePointResult;
-                if (95 !== tmp2) {
-                  if (tmp2 < 97) {
-                    fromCodePointResult = percentEncode(tmp2);
+const re0 = /^xn--/;
+const re1 = /[^\0-\x7F]/;
+const re2 = /[\x2E\u3002\uFF0E\uFF61]/g;
+let closure_3 = { overflow: "Overflow: input needs wider integers to process", "not-basic": "Illegal input >= 0x80 (not a basic code point)", "invalid-input": "Invalid input" };
+function digitToBasic(arg0, arg1) {
+  return arg0 + 22 + 75 * (arg0 < 26) - (false << 5);
+}
+function adapt(arg0, arg1, arg2) {
+  let tmp2;
+  const tmp = arg2;
+  if (tmp) {
+    tmp2 = floor(arg0 / 700);
+  } else {
+    tmp2 = arg0 >> 1;
+  }
+  let tmp4 = floor;
+  let sum = tmp2 + floor(tmp2 / arg1);
+  let num3 = 0;
+  let num4 = 0;
+  let tmp6 = sum;
+  if (sum > 455) {
+    do {
+      sum = floor(sum / 35);
+      num3 = num3 + 36;
+      num4 = num3;
+      tmp4 = floor;
+      tmp6 = sum;
+    } while (sum > 455);
+  }
+  return tmp4(num4 + 36 * tmp6 / (tmp6 + 38));
+}
+function decode(arr) {
+  let num = arr.lastIndexOf("-");
+  if (num < 0) {
+    num = 0;
+  }
+  const items = [];
+  let num2 = 128;
+  let num3 = 0;
+  if (0 < num) {
+    while (arr.charCodeAt(num3) < num2) {
+      arr = items.push(arr.charCodeAt(num3));
+      num3 = num3 + 1;
+    }
+    const _RangeError6 = RangeError;
+    const self11 = this;
+    const self12 = this;
+    const rangeError = new RangeError(closure_3["not-basic"]);
+    throw rangeError;
+  }
+  let num4 = 0;
+  if (num > 0) {
+    num4 = num + 1;
+  }
+  let num5 = 72;
+  let num6 = 0;
+  if (num4 < arr.length) {
+    let tmp2 = num4;
+    let num7 = 36;
+    let num8 = 1;
+    let tmp6 = num6;
+    while (true) {
+      while (tmp2 < length) {
+        let num9;
+        let tmp52 = +tmp2;
+        let charCodeAtResult = arr.charCodeAt(tmp52);
+        if (charCodeAtResult >= 48) {
+          if (charCodeAtResult < 58) {
+            num9 = charCodeAtResult - 48 + 26;
+            if (36 <= num9) {
+              let tmp39 = globalThis;
+              let _RangeError4 = RangeError;
+              let self7 = this;
+              let self8 = this;
+              let rangeError1 = new RangeError(closure_3["invalid-input"]);
+              throw rangeError1;
+            } else {
+              let tmp54 = floor;
+              if (num9 > floor((2147483647 - tmp6) / num8)) {
+                let tmp35 = globalThis;
+                let _RangeError3 = RangeError;
+                let self5 = this;
+                let self6 = this;
+                let rangeError2 = new RangeError(closure_3.overflow);
+                throw rangeError2;
+              } else {
+                let num11 = 1;
+                if (num7 > num5) {
+                  let num10 = 26;
+                  if (num7 < num5 + 26) {
+                    num10 = num7 - num5;
+                  }
+                  num11 = num10;
+                }
+                let sum = tmp52 + 1;
+                let sum1 = tmp6 + num9 * num8;
+                if (num9 < num11) {
+                  let sum2 = items.length + 1;
+                  if (typeof adapt === "function") {
+                    let tmp54Result;
+                    let diff = sum1 - num6;
+                    if (0 === num6) {
+                      tmp54Result = tmp54(diff / 700);
+                    } else {
+                      tmp54Result = diff >> 1;
+                    }
+                    let sum3 = tmp54Result + tmp54(tmp54Result / sum2);
+                    let num12 = 0;
+                    let num13 = 0;
+                    let tmp23 = tmp54;
+                    let tmp24 = sum3;
+                    if (sum3 > 455) {
+                      do {
+                        sum3 = floor(sum3 / 35);
+                        num12 = num12 + 36;
+                        num13 = num12;
+                        tmp23 = floor;
+                        tmp24 = sum3;
+                      } while (sum3 > 455);
+                    }
+                    let result = sum1 / sum2;
+                    let tmp23Result = tmp23(num13 + 36 * tmp24 / (tmp24 + 38));
+                    if (tmp54(result) > 2147483647 - num2) {
+                      let tmp31 = globalThis;
+                      let _RangeError2 = RangeError;
+                      let self3 = this;
+                      let self4 = this;
+                      let rangeError3 = new RangeError(closure_3.overflow);
+                      throw rangeError3;
+                    } else {
+                      let sum4 = num2 + tmp54(result);
+                      let result1 = sum1 % sum2;
+                      num6 = result1 + 1;
+                      let spliceResult = items.splice(result1, 0, sum4);
+                      num4 = sum;
+                      num5 = tmp23Result;
+                      num2 = sum4;
+                    }
+                  } else {
+                    let str = "Trying to call a non-function";
+                    throw new TypeError("Trying to call a non-function");
+                  }
+                } else {
+                  let diff1 = 36 - num11;
+                  if (num8 > tmp54(2147483647 / diff1)) {
+                    let tmp14 = globalThis;
+                    let _RangeError = RangeError;
+                    let self = this;
+                    let self2 = this;
+                    let rangeError4 = new RangeError(closure_3.overflow);
+                    throw rangeError4;
+                  } else {
+                    num8 = num8 * diff1;
+                    num7 = num7 + 36;
+                    tmp2 = sum;
+                    tmp6 = sum1;
+                    continue;
                   }
                 }
-                str2 = fromCodePointResult;
+                continue;
               }
             }
           }
         }
+        if (charCodeAtResult >= 65) {
+          if (charCodeAtResult < 91) {
+            num9 = charCodeAtResult - 65;
+          }
+        }
+        num9 = 36;
+        if (charCodeAtResult >= 97) {
+          num9 = 36;
+          if (charCodeAtResult < 123) {
+            num9 = charCodeAtResult - 97;
+          }
+        }
       }
-      let _String = String;
-      fromCodePointResult = String.fromCodePoint(tmp2);
+      let tmp43 = globalThis;
+      let _RangeError5 = RangeError;
+      let self9 = this;
+      let self10 = this;
+      let rangeError5 = new RangeError(closure_3["invalid-input"]);
+      throw rangeError5;
     }
-    str = str + str2;
+  }
+  const items1 = [...items];
+  return String.fromCodePoint.apply(items1);
+}
+function encode(arg0) {
+  const items = [];
+  const arr2 = ucs2decode(arg0);
+  let num = 0;
+  let num2 = 72;
+  const iter = arr2[Symbol.iterator]();
+  let num3 = 128;
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    if (nextResult < num3) {
+      let arr = items.push(fromCharCode(tmp2));
+    }
     continue;
   }
-  return str;
-}
-let obj = {
-  percentEncode,
-  percentDecode,
-  parseUrlencoded(arg0) {
-    function parseUrlencoded(_Buffer) {
-      function strictlySplitByteSequence(arr, arg1) {
-        const items = [];
-        const index = arr.indexOf(38);
-        let index1 = index;
-        let num = 0;
-        let num2 = 0;
-        if (index >= 0) {
-          do {
-            arr = items.push(arr.slice(num, index1));
-            let sum = index1 + 1;
-            index1 = arr.indexOf(38, sum);
-            num = sum;
-            num2 = sum;
-          } while (index1 >= 0);
+  let sum2 = length2;
+  if (sum2) {
+    items.push("-");
+  }
+  if (sum2 < arr2.length) {
+    let num4 = 2147483647;
+    const iter2 = arr2[Symbol.iterator]();
+    while (true) {
+      let nextResult1 = iter2.next();
+      while (iter2 !== undefined) {
+        let tmp14 = nextResult1 >= num3;
+        if (tmp14) {
+          tmp14 = tmp13 < num4;
         }
-        if (num2 !== arr.length) {
-          items.push(arr.slice(num2));
-        }
-        return items;
-      }
-      let items = [];
-      const tmp = strictlySplitByteSequence(_Buffer, 38);
-      const iter = tmp[Symbol.iterator]();
-      const nextResult = iter.next();
-      while (iter !== undefined) {
-        let arr3 = nextResult;
-        if (0 !== nextResult.length) {
-          let substr;
-          let substr1;
-          let index = arr3.indexOf(61);
-          let tmp23 = index;
-          if (index >= 0) {
-            substr = arr3.slice(0, tmp23);
-            substr1 = arr3.slice(tmp23 + 1);
-          } else {
-            substr = nextResult;
-            _Buffer = Buffer.Buffer;
-            substr1 = _Buffer.alloc(0);
-          }
-          let _Buffer2 = Buffer.Buffer;
-          let fromResult = _Buffer2.from(substr);
-          let tmp13 = replaceByteInByteSequence(fromResult, 43, 32);
-          let _Buffer3 = Buffer.Buffer;
-          let fromResult1 = _Buffer3.from(substr1);
-          let tmp17 = replaceByteInByteSequence(fromResult1, 43, 32);
-          let push = items.push;
-          let str = percentDecode(fromResult);
-          let items1 = [str.toString(), ];
-          let str2 = percentDecode(fromResult1);
-          items1[1] = str2.toString();
-          let arr = push(items1);
+        if (tmp14) {
+          num4 = nextResult1;
         }
         continue;
       }
-      return items;
-    }
-    let _Buffer = Buffer.Buffer;
-    return parseUrlencoded(_Buffer.from(arg0));
-  },
-  serializeUrlencoded(_list) {
-    let arr;
-    let tmp7;
-    let str = "utf-8";
-    if (undefined !== arg1) {
-      str = tmp;
-    }
-    let str2 = "";
-    const entries = _list.entries();
-    const tmp3 = entries[Symbol.iterator]();
-    while (tmp3 !== undefined) {
-      let tmp6 = _slicedToArray(tmp4, 2);
-      [tmp7, arr] = tmp6;
-      let tmp8 = arr;
-      let tmp9 = serializeUrlencodedByte;
-      let tmp10 = require;
-      let _Buffer = Buffer.Buffer;
-      let tmp12 = serializeUrlencodedByte(_Buffer.from(arr[0]));
-      let name = arr[1];
-      let tmp13 = arr.length > 2;
-      if (tmp13) {
-        tmp13 = undefined !== tmp8[2];
-      }
-      if (tmp13) {
-        if ("hidden" === tmp8[2]) {
-          if ("_charset_" === tmp12) {
-            name = str;
+      let sum = sum2 + 1;
+      let diff = num4 - num3;
+      if (diff > floor((2147483647 - num) / sum)) {
+        break;
+      } else {
+        let num5 = num + (num4 - num3) * sum;
+        for (const item10065 of arr2) {
+          let tmp25 = item10065 < num4;
+          let tmp24 = item10065;
+          if (tmp25) {
+            let sum1 = num5 + 1;
+            num5 = sum1;
+            tmp25 = sum1 > 2147483647;
+          }
+          if (tmp25) {
+            let str2 = "overflow";
+            let tmp55 = error("overflow");
+            let tmp56 = __exception;
+            obj.return();
+            throw tmp56;
+          } else {
+            if (tmp24 === num4) {
+              let tmp45 = num5;
+              let num8 = 36;
+              while (true) {
+                let num6 = 1;
+                if (num8 > num2) {
+                  let num7 = 26;
+                  if (num8 < num2 + 26) {
+                    num7 = num8 - num2;
+                  }
+                  num6 = num7;
+                }
+                let tmp35 = num6;
+                if (tmp45 < num6) {
+                  break;
+                } else {
+                  let diff1 = tmp45 - tmp35;
+                  let diff2 = 36 - tmp35;
+                  let arr7 = items.push(fromCharCode(digitToBasic(tmp35 + diff1 % diff2, 0)));
+                  tmp45 = floor(diff1 / diff2);
+                  num8 = num8 + 36;
+                  continue;
+                }
+              }
+              let arr8 = items.push(fromCharCode(digitToBasic(tmp45, 0)));
+              num2 = adapt(num5, sum, sum2 === length2);
+              num5 = 0;
+              sum2 = sum2 + 1;
+            }
+            continue;
           }
         }
-        if ("file" === tmp8[2]) {
-          name = name.name;
-        }
+        num = num5 + 1;
+        num3 = num4 + 1;
       }
-      if (0 !== tmp7) {
-        str2 = `${str2}&`;
-      }
-      let _Buffer2 = tmp10(1263).Buffer;
-      let tmp9Result = tmp9(_Buffer2.from(name));
-      let _HermesInternal = HermesInternal;
-      str2 = str2 + "" + tmp12 + "=" + tmp9Result;
-      continue;
     }
-    return str2;
+  }
+  return items.join("");
+}
+const obj = {
+  version: "2.3.1",
+  ucs2: {
+    decode: ucs2decode,
+    encode(arg0) {
+      const items = [...arg0];
+      return String.fromCodePoint.apply(items);
+    }
+  },
+  decode,
+  encode,
+  toASCII(str) {
+    let tmp8;
+    const parts = str.split("@");
+    str = "";
+    let str2 = str;
+    if (parts.length > 1) {
+      str = `${arr[0]}@`;
+      str2 = parts[1];
+    }
+    const str3 = str2.replace(re2, ".");
+    const parts1 = str3.split(".");
+    const items = [];
+    let diff = tmp - 1;
+    if (+parts1.length) {
+      do {
+        let tmp3 = parts1[diff];
+        let text = tmp3;
+        if (re1.test(tmp3)) {
+          text = `xn--${encode(tmp3)}`;
+        }
+        items[diff] = text;
+        tmp8 = +diff;
+        diff = tmp8 - 1;
+      } while (tmp8);
+    }
+    return str + items.join(".");
+  },
+  toUnicode(str) {
+    let tmp7;
+    const parts = str.split("@");
+    str = "";
+    let str2 = str;
+    if (parts.length > 1) {
+      str = `${arr[0]}@`;
+      str2 = parts[1];
+    }
+    const str3 = str2.replace(re2, ".");
+    const parts1 = str3.split(".");
+    const items = [];
+    let diff = tmp - 1;
+    if (+parts1.length) {
+      do {
+        let arr4 = parts1[diff];
+        let tmp5 = arr4;
+        if (re0.test(arr4)) {
+          let str4 = arr4.slice(4);
+          tmp5 = decode(str4.toLowerCase());
+        }
+        items[diff] = tmp5;
+        tmp7 = +diff;
+        diff = tmp7 - 1;
+      } while (tmp7);
+    }
+    return str + items.join(".");
   }
 };
 

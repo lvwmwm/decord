@@ -1,9 +1,9 @@
-// Module ID: 17796
-// Function ID: 17797
+// Module ID: 17820
+// Function ID: 17821
 // Name: GuildSettingsModalTemplate
-// Dependencies: [5, 32, 19, 17, 21, 4890, 587, 558, 576, 17797, 4886, 1126, 8895, 6535, 1490, 5713, 11402, 5312, 6010, 6880, 6098, 6580, 5594, 5593, 6536, 5995, 4792, 4797, 17798, 6688, 4567, 4843, 6423, 8567, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4890, 587, 558, 576, 17821, 4886, 1126, 8895, 6535, 1490, 5713, 11402, 5312, 6010, 6880, 6098, 6580, 5594, 5593, 6536, 5995, 4792, 4797, 17822, 6688, 4567, 4843, 6423, 8567, 2]
 
-// Module 17796 (GuildSettingsModalTemplate)
+// Module 17820 (GuildSettingsModalTemplate)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -21,7 +21,7 @@ import HeaderActionButton2 from "HeaderActionButton" /* 6880 */;
 import native from "native" /* 8567 */;
 import Form3 from "Form" /* 8895 */;
 import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 11402 */;
-import GuildTemplateSettingsUtils from "GuildTemplateSettingsUtils" /* 17797 */;
+import GuildTemplateSettingsUtils from "GuildTemplateSettingsUtils" /* 17821 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -749,7 +749,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             let c3;
@@ -800,7 +800,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                 closure_1_8(false);
               }
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             } catch (tmp32) {
               closure_2 = tmp32;
               if (0 === c3) {
@@ -962,7 +962,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -1010,7 +1010,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             }
             closure_129_10(false);
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp31) {
           closure_2 = tmp31;
@@ -1151,7 +1151,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -1203,7 +1203,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               closure_1_9(false);
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp32) {
             closure_2 = tmp32;
             if (0 === c3) {
@@ -1833,7 +1833,7 @@ let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -1879,7 +1879,7 @@ let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp25) {
             if (0 === c3) {
@@ -1928,7 +1928,7 @@ let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -1975,7 +1975,7 @@ let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
           }
           c4(false);
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp27) {
         if (0 === c3) {
@@ -2035,7 +2035,7 @@ let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -2082,7 +2082,7 @@ let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
             }
             closure_129_4(false);
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp27) {
           closure_2 = tmp27;
@@ -2115,7 +2115,7 @@ let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -2161,7 +2161,7 @@ let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp25) {
           closure_2 = tmp25;
@@ -2178,7 +2178,7 @@ let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   };
   [first, _slicedToArray] = react.useState(false);
   const tmp3 = dependencyMap;
-  const tmp4 = guildTemplate(17798)(guildTemplate.code);
+  const tmp4 = guildTemplate(17822)(guildTemplate.code);
   react = tmp4;
   obj = { spacing: guildTemplate(587).space.PX_12, children: items };
   const Stack = Stack_Stack.Stack;

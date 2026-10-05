@@ -36,7 +36,7 @@ let obj = function _transferToXbox() {
           obj = { value, done: true };
           return obj;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -115,7 +115,7 @@ let obj = function _transferToXbox() {
             obj5.stopOwnStream(false);
             closure_130_5.openURL(closure_2);
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } else {
             c4 = 3;
             const obj17 = {

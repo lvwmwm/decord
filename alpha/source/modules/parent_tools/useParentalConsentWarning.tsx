@@ -1,11 +1,11 @@
-// Module ID: 14670
-// Function ID: 14671
+// Module ID: 14674
+// Function ID: 14675
 // Name: useParentalConsentWarning
-// Dependencies: [14671, 558, 576, 504, 2]
+// Dependencies: [14675, 558, 576, 504, 2]
 
-// Module 14670 (useParentalConsentWarning)
+// Module 14674 (useParentalConsentWarning)
 import react from "react" /* 576 */;
-import ParentalConsentWarningStore from "ParentalConsentWarningStore" /* 14671 */;
+import ParentalConsentWarningStore from "ParentalConsentWarningStore" /* 14675 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

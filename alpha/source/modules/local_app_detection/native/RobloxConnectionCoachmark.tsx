@@ -1,9 +1,9 @@
-// Module ID: 17085
-// Function ID: 17086
+// Module ID: 17109
+// Function ID: 17110
 // Name: RobloxConnectionCoachmark
-// Dependencies: [32, 19, 17, 5440, 1377, 13522, 1085, 2048, 21, 4890, 587, 558, 576, 4589, 1618, 4854, 8732, 6885, 6644, 6696, 5593, 1126, 4886, 12757, 5594, 6645, 4587, 5442, 1402, 1188, 8136, 504, 13523, 6677, 4698, 2036, 2]
+// Dependencies: [32, 19, 17, 5440, 1377, 13524, 1085, 2048, 21, 4890, 587, 558, 576, 4589, 1618, 4854, 8732, 6885, 6644, 6696, 5593, 1126, 4886, 12757, 5594, 6645, 4587, 5442, 1402, 1188, 8136, 504, 13525, 6677, 4698, 2036, 2]
 
-// Module 17085 (RobloxConnectionCoachmark)
+// Module 17109 (RobloxConnectionCoachmark)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -24,7 +24,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5440 */;
 import UserStore from "UserStore" /* 1377 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13522 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13524 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4890 */;
@@ -721,7 +721,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = cResult[3];
   }
   if (cResult[4] !== stateFromStores) {
-    const obj3 = { size: native.AvatarSizes.NORMAL, user: stateFromStores, guildId: "Array" };
+    const obj3 = { size: native.AvatarSizes.NORMAL, user: stateFromStores, guildId: "r" };
     const Avatar = tmp(1188).Avatar;
     const tmp15 = map1(Avatar, obj3);
     cResult[4] = stateFromStores;
@@ -757,7 +757,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj3 = { style: tmp.avatarInnerBorder };
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   items1 = [map1(View, obj3), ];
-  const obj4 = { size: native.AvatarSizes.NORMAL, user: stateFromStores, guildId: "Array" };
+  const obj4 = { size: native.AvatarSizes.NORMAL, user: stateFromStores, guildId: "r" };
   const Avatar = native.Avatar;
   items1[1] = map1(Avatar, obj4);
   return authStore2(View, obj2);

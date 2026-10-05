@@ -160,7 +160,7 @@ export const reactNativeErrorHandlersIntegration = () => {
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 try {
@@ -243,7 +243,7 @@ export const reactNativeErrorHandlersIntegration = () => {
                       debug.error("[ReactNativeErrorHandlers] Error while flushing the event cache after uncaught error.", arg0);
                     });
                     c3 = 3;
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } catch (tmp39) {
                   c3 = 3;

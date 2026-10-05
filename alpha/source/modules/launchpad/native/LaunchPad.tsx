@@ -1,9 +1,9 @@
-// Module ID: 17365
-// Function ID: 17366
+// Module ID: 17389
+// Function ID: 17390
 // Name: LaunchPad
-// Dependencies: [32, 19, 17, 4561, 7036, 6831, 5691, 2055, 502, 2051, 7204, 7121, 2074, 13562, 4905, 5616, 5071, 4909, 1085, 21, 587, 4890, 558, 576, 5909, 4886, 504, 4612, 4745, 6547, 1126, 12834, 9266, 15401, 1369, 14402, 10702, 9505, 4736, 9506, 9496, 1484, 1618, 9497, 12557, 1252, 17366, 17373, 15621, 17386, 17387, 2]
+// Dependencies: [32, 19, 17, 4561, 7036, 6831, 5691, 2055, 502, 2051, 7204, 7121, 2074, 13564, 4905, 5616, 5071, 4909, 1085, 21, 587, 4890, 558, 576, 5909, 4886, 504, 4612, 4745, 6547, 1126, 12834, 9266, 15405, 1369, 14406, 10702, 9505, 4736, 9506, 9496, 1484, 1618, 9497, 12557, 1252, 17390, 17397, 15625, 17410, 17411, 2]
 
-// Module 17365 (LaunchPad)
+// Module 17389 (LaunchPad)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -30,7 +30,7 @@ import ChannelStore from "ChannelStore" /* 2051 */;
 import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7204 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 7121 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 13562 */;
+import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 13564 */;
 import ReadStateStore from "ReadStateStore" /* 4905 */;
 import SortedGuildStore from "SortedGuildStore" /* 5616 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
@@ -60,7 +60,7 @@ let size;
 let tmp;
 const Text_Text = tmp(4886);
 const Pressables = tmp(5909);
-const DevToolsNavigator = tmp(14402);
+const DevToolsNavigator = tmp(14406);
 function createAndAppendChannel(item10022, set, items) {
   if (!set.has(item10022)) {
     const tmp3 = createAutocompleterResultForChannelIdDefault(item10022);

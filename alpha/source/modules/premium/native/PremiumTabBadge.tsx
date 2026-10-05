@@ -1,9 +1,9 @@
-// Module ID: 14786
-// Function ID: 14787
+// Module ID: 14790
+// Function ID: 14791
 // Name: PremiumTabBadge
-// Dependencies: [32, 19, 17, 4534, 1379, 6938, 21, 4890, 587, 558, 576, 4592, 4729, 4791, 4886, 1260, 10470, 8422, 1188, 14787, 6956, 7731, 4528, 4698, 2036, 504, 6891, 7727, 7726, 13223, 1126, 1369, 5605, 1105, 2]
+// Dependencies: [32, 19, 17, 4534, 1379, 6938, 21, 4890, 587, 558, 576, 4592, 4729, 4791, 4886, 1260, 10470, 8422, 1188, 14791, 6956, 7731, 4528, 4698, 2036, 504, 6891, 7727, 7726, 13225, 1126, 1369, 5605, 1105, 2]
 
-// Module 14786 (PremiumTabBadge)
+// Module 14790 (PremiumTabBadge)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -29,7 +29,7 @@ import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferra
 import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 7731 */;
 import useTrackImpressionDefault from "useTrackImpression" /* 8422 */;
 import MarketingComponentType from "MarketingComponentType" /* 10470 */;
-import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 13223 */;
+import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 13225 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 4534 */;
@@ -53,7 +53,7 @@ let obj9;
 let tmp;
 let tmp5;
 const Text_Text = tmp(4886);
-const AssetRegistryDefault = tmp5(14787);
+const AssetRegistryDefault = tmp5(14791);
 const View = react_native.View;
 let closure_6 = PremiumConstants.PREMIUM_TIER_2_REFERRAL_TRIAL_ID;
 const Gradients = ColorConstants.Gradients;
@@ -198,7 +198,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (acked) {
       let tmp16;
       if (cResult[5] !== tmp5.icon) {
-        const obj4 = { source: tmp10(14787), size: native.Icon.Sizes.EXTRA_SMALL, color: tmp5.icon.color, style: tmp5.icon };
+        const obj4 = { source: tmp10(14791), size: native.Icon.Sizes.EXTRA_SMALL, color: tmp5.icon.color, style: tmp5.icon };
         const Icon = tmp(1188).Icon;
         const tmp18 = metroImportAll(Icon, obj4);
         cResult[5] = tmp5.icon;

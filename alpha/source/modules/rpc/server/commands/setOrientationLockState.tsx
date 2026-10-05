@@ -1,9 +1,9 @@
-// Module ID: 14332
-// Function ID: 14333
+// Module ID: 14334
+// Function ID: 14335
 // Name: setOrientationLockState
 // Dependencies: [8703, 5316, 2011, 1096, 9029, 9026, 584, 2]
 
-// Module 14332 (setOrientationLockState)
+// Module 14334 (setOrientationLockState)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants2 from "Constants" /* 2011 */;
 import Constants3 from "Constants" /* 5316 */;

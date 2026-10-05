@@ -1,9 +1,9 @@
-// Module ID: 17186
-// Function ID: 17187
+// Module ID: 17210
+// Function ID: 17211
 // Name: VoicePanelSystemUIManager
 // Dependencies: [32, 19, 4906, 11902, 11900, 4911, 21, 11901, 1259, 1369, 551, 4612, 9074, 9060, 9062, 2]
 
-// Module 17186 (VoicePanelSystemUIManager)
+// Module 17210 (VoicePanelSystemUIManager)
 import react_native from "react-native" /* 1259 */;
 import CallConstants from "CallConstants" /* 4911 */;
 import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9074 */;

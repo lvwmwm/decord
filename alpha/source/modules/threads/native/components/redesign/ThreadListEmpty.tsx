@@ -1,9 +1,9 @@
-// Module ID: 16874
-// Function ID: 16875
+// Module ID: 16893
+// Function ID: 16894
 // Name: ThreadListEmpty
 // Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1188, 11867, 1126, 4886, 5594, 2]
 
-// Module 16874 (ThreadListEmpty)
+// Module 16893 (ThreadListEmpty)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

@@ -105,11 +105,11 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   let tmp14;
   let tmp15;
   let user;
-  const f107062 = () => {
+  const f107208 = () => {
     const items = [SavedMessagesStore.isMessageReminder(channel.id, message.id), SavedMessagesStore.isMessageBookmarked(channel.id, message.id)];
     return items;
   };
-  const f107063 = (flags) => {
+  const f107209 = (flags) => {
     let tmp = null == flags.flags;
     if (!tmp) {
       const obj = analyticsLocation(analyticsLocation[27]);
@@ -163,8 +163,8 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   let isForLaterExperimentOn = obj4.useIsForLaterExperimentOn("LongPressMessageActionSheet");
   let obj5 = require("get initialized");
   const items2 = [actionSheetSource];
-  [tmp14, tmp15] = message(obj5.useStateFromStoresArray(items2, f107062), 2);
-  message(obj5.useStateFromStoresArray(items2, f107062), 2);
+  [tmp14, tmp15] = message(obj5.useStateFromStoresArray(items2, f107208), 2);
+  message(obj5.useStateFromStoresArray(items2, f107208), 2);
   const obj6 = require("ForLaterExperiment");
   const hasForLaterAccess = obj6.useHasForLaterAccess("LongPressMessageActionSheet");
   const obj7 = require("ThreadHooks");
@@ -247,8 +247,8 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   const attachments1 = message.attachments;
   let tmp53 = message.author.id === id3;
   if (tmp53) {
-    tmp53 = attachments1.filter(f107063).length > 1 || "" !== message.content;
-    const tmp54 = attachments1.filter(f107063).length > 1 || "" !== message.content;
+    tmp53 = attachments1.filter(f107209).length > 1 || "" !== message.content;
+    const tmp54 = attachments1.filter(f107209).length > 1 || "" !== message.content;
   }
   const items3 = [selectedMedia];
   const tmp8Result23 = tmp8(tmp3[19]);

@@ -29,7 +29,7 @@ let obj = function _applyStaffBuildOverride() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -126,7 +126,7 @@ obj = function _applyPublicBuildOverride() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -207,11 +207,11 @@ obj = function _clearBuildOverride() {
     let c2;
     let c3;
     let closure_1;
-    let obj9;
+    let obj6;
     const HTTP = HTTPUtils.HTTP;
-    const obj4 = { url: obj9.getAPIEndpoint(closure_2_5), oldFormErrors: true, rejectWithError: false };
+    const obj4 = { url: obj6.getAPIEndpoint(closure_2_5), oldFormErrors: true, rejectWithError: false };
     const del = HTTP.del;
-    obj9 = BuildOverrideUtils;
+    obj6 = BuildOverrideUtils;
     const value = await del(obj4);
     await closure_129_2(value);
     return value;
@@ -231,7 +231,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: "IconComponent" };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -260,7 +260,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       } else {
         c1 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp7) {
       c1 = 3;
@@ -268,7 +268,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
     }
   }
 });
-const f107407 = function() {
+const f107553 = function() {
   return closure_0(...arguments);
 };
 const result = size.fileFinishedImporting("modules/build_overrides/ApplyBuildOverrideUtils.tsx");

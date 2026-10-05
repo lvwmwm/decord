@@ -1,14 +1,14 @@
-// Module ID: 15429
-// Function ID: 15430
+// Module ID: 15433
+// Function ID: 15434
 // Name: BurgerIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 15430, 4579, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 15434, 4579, 2]
 
-// Module 15429 (BurgerIcon)
+// Module 15433 (BurgerIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4579 */;
-import AssetRegistry from "AssetRegistry" /* 15430 */;
+import AssetRegistry from "AssetRegistry" /* 15434 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -315,7 +315,7 @@ let obj = function _chatInputSendApplicationCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -343,7 +343,7 @@ let obj = function _chatInputSendApplicationCommand() {
               closure_5 = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -399,7 +399,7 @@ let obj = function _chatInputSendApplicationCommand() {
               return obj13;
             }
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp36) {
           c4 = 3;
@@ -447,7 +447,7 @@ export const chatInputHandleSendText = function chatInputHandleSendText(text) {
               body: checkResult.body,
               confirmText: intl2.string(intl4.t.KJnHq3),
               onConfirm() {
-                          obj = { text: require, parsedMessage, tts: "application", source: false, params };
+                          obj = { text: require, parsedMessage, tts: "applicationId", source: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000827361285378244, params };
                           chatInputSendMessage(obj);
                         },
               cancelText: intl3.string(intl4.t.fsBWmS)
@@ -470,7 +470,7 @@ export const chatInputHandleSendText = function chatInputHandleSendText(text) {
               threadId: channel.id,
               attachments: uploads,
               sendMessage() {
-                          obj = { text: require, parsedMessage, tts: "application", source: false, params };
+                          obj = { text: require, parsedMessage, tts: "applicationId", source: "iu", params };
                           chatInputSendMessage(obj);
                         }
             };
@@ -478,7 +478,7 @@ export const chatInputHandleSendText = function chatInputHandleSendText(text) {
             obj5.openLazy(tmp20(1987)(11612, tmp21.paths), "add-media-to-original-forum-post", obj4);
           }
         }
-        const obj6 = { text, parsedMessage: tmp2, tts: "application", source: 1090584577, params };
+        const obj6 = { text, parsedMessage: tmp2, tts: "applicationId", source: false, params };
         chatInputSendMessage(obj6);
       }
     }

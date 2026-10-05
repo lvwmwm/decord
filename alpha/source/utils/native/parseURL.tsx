@@ -1,7 +1,7 @@
 // Module ID: 4867
 // Function ID: 4868
 // Name: parseURL
-// Dependencies: [32, 1085, 1087, 4868, 4869, 1478, 1936, 1373, 4870, 4875, 12748, 5310, 13659, 1371, 5044, 8719, 6912, 1615, 1369, 9374, 1252, 1265, 13660, 2]
+// Dependencies: [32, 1085, 1087, 4868, 4869, 1478, 1936, 1373, 4870, 4875, 12748, 5310, 13661, 1371, 5044, 8719, 6912, 1615, 1369, 9374, 1252, 1265, 13662, 2]
 // Exports: default
 
 // Module 4867 (parseURL)
@@ -21,8 +21,8 @@ import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 6
 import Authorize from "Authorize" /* 8719 */;
 import SecureFramesDeeplinkExperiment from "SecureFramesDeeplinkExperiment" /* 9374 */;
 import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 12748 */;
-import QRLoginUtils from "QRLoginUtils" /* 13659 */;
-import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 13660 */;
+import QRLoginUtils from "QRLoginUtils" /* 13661 */;
+import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 13662 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import Constants from "Constants" /* 1085 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;

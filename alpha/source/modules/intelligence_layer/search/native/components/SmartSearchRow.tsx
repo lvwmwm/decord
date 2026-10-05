@@ -1,14 +1,14 @@
-// Module ID: 16837
-// Function ID: 16838
+// Module ID: 16856
+// Function ID: 16857
 // Name: SmartSearchRow
-// Dependencies: [32, 5, 19, 17, 4879, 11987, 11988, 7513, 21, 4890, 587, 558, 576, 16793, 16838, 11989, 16844, 16845, 16824, 16785, 8371, 11997, 16846, 16848, 504, 2]
+// Dependencies: [32, 5, 19, 17, 4879, 11987, 11988, 7513, 21, 4890, 587, 558, 576, 16812, 16857, 11989, 16863, 16864, 16843, 16804, 8371, 11997, 16865, 16867, 504, 2]
 
-// Module 16837 (SmartSearchRow)
+// Module 16856 (SmartSearchRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import SearchConstants from "SearchConstants" /* 7513 */;
 import SmartSearchConstants from "SmartSearchConstants" /* 11988 */;
-import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 16838 */;
+import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 16857 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -64,7 +64,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(hasKey
   } else {
     tmp4 = cResult[1];
   }
-  const tmpResult = tmp(16793);
+  const tmpResult = tmp(16812);
   onPressMessageItem = tmpResult.useOnPressMessageItem(tmp4);
   if (cResult[2] !== searchContext) {
     let obj3 = { searchContext };
@@ -74,7 +74,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(hasKey
   } else {
     tmp6 = cResult[3];
   }
-  const tmpResult2 = tmp(16793);
+  const tmpResult2 = tmp(16812);
   const onPressConversationCitation = tmpResult2.useOnPressConversationCitation(tmp6);
   if (cResult[4] === onPressConversationCitation) {
     let tmp8;
@@ -112,7 +112,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(hasKey
     if (cResult[11] !== entry.queryText) {
       const self = this;
       const self2 = this;
-      const tmp16 = new onPressConversationCitation(16838)(entry.queryText, lineClamp);
+      const tmp16 = new onPressConversationCitation(16857)(entry.queryText, lineClamp);
       const tmp17 = tmp16;
       cResult[11] = entry.queryText;
       cResult[12] = tmp16;
@@ -128,7 +128,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(hasKey
       let tmp33;
       if (cResult[13] !== isCollapsed) {
         let obj4 = { isCollapsed };
-        const tmp36 = closure_11(onPressConversationCitation(16844), obj4);
+        const tmp36 = closure_11(onPressConversationCitation(16863), obj4);
         cResult[13] = isCollapsed;
         cResult[14] = tmp36;
         tmp33 = tmp36;
@@ -251,7 +251,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(hasKey
       tmp25[0] = entry.answerText;
       tmp25[1] = arr2;
       tmp25[2] = guildId;
-      const tmp26 = closure_11(onPressConversationCitation(16845), tmp25);
+      const tmp26 = closure_11(onPressConversationCitation(16864), tmp25);
       cResult[15] = arr2;
       cResult[16] = entry.answerText;
       cResult[17] = guildId;
@@ -286,7 +286,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(hasKey
             return closure_1_11(HeaderlessMessageRow, obj, citation.messageId);
           }
         }
-        const tmp21 = closure_11(onPressConversationCitation(16785), obj6);
+        const tmp21 = closure_11(onPressConversationCitation(16804), obj6);
         cResult[29] = smartSearchQuery;
         cResult[30] = tmp21;
         tmp18 = tmp21;
@@ -308,7 +308,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(hasKey
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -351,7 +351,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(hasKey
         }
         closure_0(closure_0.channelId, closure_0.messageId);
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp12) {
         if (0 === c3) {
           c5 = 3;
@@ -402,7 +402,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(hasKey
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -444,7 +444,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(hasKey
         }
         tmp(closure_0.channelId, closure_0.messageId);
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp12) {
         if (0 === c3) {
           c5 = 3;

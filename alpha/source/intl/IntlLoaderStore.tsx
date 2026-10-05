@@ -52,7 +52,7 @@ let obj = function _setAppLocale() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -85,7 +85,7 @@ let obj = function _setAppLocale() {
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -130,7 +130,7 @@ let obj = function _setAppLocale() {
                       return obj;
                     } else {
                       c2 = 3;
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp10) {
                     c2 = 3;
@@ -160,7 +160,7 @@ let obj = function _setAppLocale() {
           } else {
             state.setLoadingSucceeded(closure_0);
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp9) {
           c3 = 3;
@@ -184,7 +184,7 @@ obj = function _loadDateFnsLocale() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -225,7 +225,7 @@ obj = function _loadDateFnsLocale() {
           state.setLocaleData(closure_1);
         }
         c3 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp10) {
         c3 = 3;
         throw tmp10;
@@ -247,7 +247,7 @@ obj = function _loadFormatJsLocale() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -278,7 +278,7 @@ obj = function _loadFormatJsLocale() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp9) {
         c1 = 3;
         throw tmp9;
@@ -301,7 +301,7 @@ obj = function _setMomentLocale() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -352,7 +352,7 @@ obj = function _setMomentLocale() {
         const obj2 = closure_130_0(closure_130_2[10]);
         obj2.locale(closure_1);
         c4 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp25) {
         c4 = 3;
         throw tmp25;
@@ -367,7 +367,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
   obj = {
     isLoading: false,
     inProgressLocale: "Boolean",
-    error: "application",
+    error: "unicodeVersion",
     localeData: _modDef2118,
     setLoadingStarted(inProgressLocale) {
       obj = { isLoading: true, inProgressLocale };
@@ -375,7 +375,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
     },
     setLoadingSucceeded(arg0) {
       if (closure_1().inProgressLocale === arg0) {
-        closure_0({ isLoading: false, inProgressLocale: "Boolean", error: "application" });
+        closure_0({ isLoading: false, inProgressLocale: "Boolean", error: "unicodeVersion" });
       }
     },
     setLoadingFailed(error, arg1) {

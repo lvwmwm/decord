@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, group) => {
       tmp14 = cResult[7];
     }
     if (cResult[8] !== tmp14) {
-      const obj3 = { title: tmp8, description: tmp9, image: tmp10, disabledReason: tmp14, badge: "IconComponent", forceStaticImages: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==" };
+      const obj3 = { title: tmp8, description: tmp9, image: tmp10, disabledReason: tmp14, badge: "IconComponent", forceStaticImages: "/assets/modules/copy_experiments/registry" };
       cResult[8] = tmp14;
       cResult[9] = obj3;
       tmp17 = obj3;
@@ -122,7 +122,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, group) => {
     let obj3;
     let stringResult;
     if ("guildTagsBadgePacks" === group.group) {
-      const obj2 = { title: intl.string(_modDef2525.KC9HRW), description: intl2.string(_modDef2525.GJiSmP), image: obj3, disabledReason: stringResult, badge: "IconComponent", forceStaticImages: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==" };
+      const obj2 = { title: intl.string(_modDef2525.KC9HRW), description: intl2.string(_modDef2525.GJiSmP), image: obj3, disabledReason: stringResult, badge: "IconComponent", forceStaticImages: "/assets/modules/copy_experiments/registry" };
       intl = intl4.intl;
       intl2 = intl4.intl;
       stringResult = undefined;

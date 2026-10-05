@@ -1,9 +1,9 @@
-// Module ID: 17234
-// Function ID: 17235
+// Module ID: 17258
+// Function ID: 17259
 // Name: VoicePanelHeaderSpeaker
-// Dependencies: [109, 19, 17, 17235, 4907, 9300, 17236, 2051, 4908, 1085, 21, 558, 17237, 576, 17179, 9299, 9465, 9445, 573, 9463, 9444, 17241, 1369, 9330, 9301, 1126, 9327, 9329, 17242, 9446, 4698, 2036, 5976, 17164, 14206, 2]
+// Dependencies: [109, 19, 17, 17259, 4907, 9300, 17260, 2051, 4908, 1085, 21, 558, 17261, 576, 17203, 9299, 9465, 9445, 573, 9463, 9444, 17265, 1369, 9330, 9301, 1126, 9327, 9329, 17266, 9446, 4698, 2036, 5976, 17188, 14208, 2]
 
-// Module 17234 (VoicePanelHeaderSpeaker)
+// Module 17258 (VoicePanelHeaderSpeaker)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
@@ -13,14 +13,14 @@ import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 469
 import NativeViewDefault from "NativeView" /* 5976 */;
 import useOnConnectToConsole from "useOnConnectToConsole" /* 9446 */;
 import getConsoleIconDefault from "getConsoleIcon" /* 9463 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 17164 */;
-import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 17235 */;
-import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 17237 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 17188 */;
+import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 17259 */;
+import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 17261 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 4907 */;
 import AudioRouteStore from "AudioRouteStore" /* 9300 */;
-import AudioRouteSwitchingStore from "AudioRouteSwitchingStore" /* 17236 */;
+import AudioRouteSwitchingStore from "AudioRouteSwitchingStore" /* 17260 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import SessionsStore from "SessionsStore" /* 4908 */;
 import Fragment from "Fragment" /* 21 */;
@@ -446,8 +446,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
             let tmp9;
             let tmp = arg0;
             if (arg0 == null) {
-              tmp = { onPress, ref: "a" };
-              const obj = { onPress, ref: "a" };
+              tmp = { onPress, ref: "r" };
+              const obj = { onPress, ref: "r" };
             }
             const obj2 = { targetRef: tmp.ref, canShowTooltip: tmp9 };
             tmp9 = queueAudioSwap;
@@ -773,8 +773,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
       let tmp9;
       let tmp = arg0;
       if (arg0 == null) {
-        tmp = { onPress, ref: "a" };
-        const obj = { onPress, ref: "a" };
+        tmp = { onPress, ref: "r" };
+        const obj = { onPress, ref: "r" };
       }
       const obj2 = { targetRef: tmp.ref, canShowTooltip: tmp9 };
       tmp9 = closure_15;

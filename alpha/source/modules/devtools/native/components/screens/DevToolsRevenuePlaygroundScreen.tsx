@@ -1,9 +1,9 @@
-// Module ID: 15560
-// Function ID: 15561
+// Module ID: 15564
+// Function ID: 15565
 // Name: DevToolsRevenuePlaygroundScreen
-// Dependencies: [5, 32, 19, 17, 7748, 7143, 1231, 2051, 2103, 1377, 4889, 1379, 21, 584, 573, 1282, 4568, 5993, 6000, 6074, 6694, 6965, 1188, 587, 10472, 4890, 6956, 4854, 15561, 1987, 558, 576, 6698, 15566, 10783, 11401, 5093, 15567, 15570, 15574, 15576, 15579, 2]
+// Dependencies: [5, 32, 19, 17, 7748, 7143, 1231, 2051, 2103, 1377, 4889, 1379, 21, 584, 573, 1282, 4568, 5993, 6000, 6074, 6694, 6965, 1188, 587, 10472, 4890, 6956, 4854, 15565, 1987, 558, 576, 6698, 15570, 10783, 11401, 5093, 15571, 15574, 15578, 15580, 15583, 2]
 
-// Module 15560 (DevToolsRevenuePlaygroundScreen)
+// Module 15564 (DevToolsRevenuePlaygroundScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -18,7 +18,7 @@ import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6694 */
 import TableSwitchRow2 from "TableSwitchRow" /* 6698 */;
 import IAPUtils from "IAPUtils" /* 10783 */;
 import BundleUpdaterDefault from "BundleUpdater" /* 11401 */;
-import DevSettingsActions from "DevSettingsActions" /* 15566 */;
+import DevSettingsActions from "DevSettingsActions" /* 15570 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -246,7 +246,7 @@ function FriendAnniversary() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -317,7 +317,7 @@ function FriendAnniversary() {
           c4 = 0;
           closure_130_7(false);
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp49) {
         closure_3 = tmp49;
@@ -353,7 +353,7 @@ function FriendAnniversary() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -420,7 +420,7 @@ function FriendAnniversary() {
             c5 = 0;
             closure_1_8(false);
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp40) {
           closure_4 = tmp40;
@@ -701,7 +701,7 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(15561, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(15565, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
@@ -716,7 +716,7 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(15561, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(15565, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };

@@ -1,15 +1,15 @@
-// Module ID: 14970
-// Function ID: 14971
+// Module ID: 14974
+// Function ID: 14975
 // Name: QuestCardPreview
-// Dependencies: [21, 558, 576, 14971, 1126, 14887, 587, 5626, 10958, 2]
+// Dependencies: [21, 558, 576, 14975, 1126, 14891, 587, 5626, 10958, 2]
 
-// Module 14970 (QuestCardPreview)
+// Module 14974 (QuestCardPreview)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import QuestTypes from "QuestTypes" /* 5626 */;
-import QuestCard2 from "QuestCard" /* 14887 */;
-import MobileQuestPreviewContainerDefault from "MobileQuestPreviewContainer" /* 14971 */;
+import QuestCard2 from "QuestCard" /* 14891 */;
+import MobileQuestPreviewContainerDefault from "MobileQuestPreviewContainer" /* 14975 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

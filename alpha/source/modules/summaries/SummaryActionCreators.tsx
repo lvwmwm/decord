@@ -40,7 +40,7 @@ let obj = function _fetchSummary() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -106,7 +106,7 @@ let obj = function _fetchSummary() {
             dispatch(obj8);
           }
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp34) {
           body = tmp34;
           if (0 === c5) {
@@ -136,7 +136,7 @@ obj = function _fetchSummaries() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -224,7 +224,7 @@ obj = function _fetchSummaries() {
             dispatch(obj9);
           }
           c8 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp42) {
           closure_5 = tmp42;
           if (0 === c6) {
@@ -255,7 +255,7 @@ obj = function _fetchChannelAffinities() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -335,7 +335,7 @@ obj = function _fetchChannelAffinities() {
           const _Date = Date;
           dispatch(obj8);
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp34) {
         closure_3 = tmp34;
@@ -444,7 +444,7 @@ obj = function _fetchSummariesBulk() {
     }
     flag = obj4.useQuickSwitcher ?? true;
     flag2 = obj4.useChannelAffinities ?? true;
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };
@@ -463,7 +463,7 @@ obj = function _deleteSummary() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -507,7 +507,7 @@ obj = function _deleteSummary() {
             obj.dispatch(obj7);
             c4 = 0;
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp20) {
           closure_3 = tmp20;
@@ -599,7 +599,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -634,7 +634,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   return obj5;
                 } else {
                   c4 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } else if (arg0 === 1) {
                 c4 = 3;
@@ -703,7 +703,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -738,7 +738,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   return obj5;
                 } else {
                   c4 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } else if (arg0 === 1) {
                 c4 = 3;

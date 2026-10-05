@@ -1,9 +1,9 @@
-// Module ID: 13705
-// Function ID: 13706
+// Module ID: 13707
+// Function ID: 13708
 // Name: useFilteredGuilds
 // Dependencies: [19, 2074, 5616, 1377, 558, 576, 504, 38, 2]
 
-// Module 13705 (useFilteredGuilds)
+// Module 13707 (useFilteredGuilds)
 import _modDef38 from "module_38" /* 38 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2074 */;

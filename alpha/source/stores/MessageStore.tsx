@@ -1,7 +1,7 @@
 // Module ID: 5110
 // Function ID: 5111
 // Name: MessageStore
-// Dependencies: [32, 5, 2105, 5111, 2116, 502, 2051, 5430, 4507, 2112, 2074, 4509, 4519, 2103, 4699, 1377, 1085, 3, 11, 5431, 5436, 2078, 5434, 5112, 1390, 12, 7109, 5304, 4521, 7462, 13572, 504, 11378, 1985, 584, 2]
+// Dependencies: [32, 5, 2105, 5111, 2116, 502, 2051, 5430, 4507, 2112, 2074, 4509, 4519, 2103, 4699, 1377, 1085, 3, 11, 5431, 5436, 2078, 5434, 5112, 1390, 12, 7109, 5304, 4521, 7462, 13574, 504, 11378, 1985, 584, 2]
 
 // Module 5110 (MessageStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -19,7 +19,7 @@ import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
 import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7109 */;
 import MessageQueue from "MessageQueue" /* 7462 */;
 import canEditMessageDefault from "canEditMessage" /* 11378 */;
-import GuildAutomodMessageStoreUtils from "GuildAutomodMessageStoreUtils" /* 13572 */;
+import GuildAutomodMessageStoreUtils from "GuildAutomodMessageStoreUtils" /* 13574 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ImpersonateStore from "ImpersonateStore" /* 2105 */;
@@ -118,7 +118,7 @@ let obj = function _addPushNotificationMessageIfNotCached() {
         const obj5 = { value, done: true };
         return obj5;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;
@@ -166,7 +166,7 @@ let obj = function _addPushNotificationMessageIfNotCached() {
         } else if (null != value) {
           c5 = 0;
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } else {
           c5 = 0;
         }
@@ -177,7 +177,7 @@ let obj = function _addPushNotificationMessageIfNotCached() {
         obj3.commit(tmp25.receivePushNotification(closure_1, closure_2));
         closure_132_35.emitChange();
         c7 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp24) {
         tmp25 = c5;
         if (0 === c5) {

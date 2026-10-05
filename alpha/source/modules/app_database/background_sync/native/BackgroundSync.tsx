@@ -1,10 +1,10 @@
-// Module ID: 17441
-// Function ID: 17442
+// Module ID: 17465
+// Function ID: 17466
 // Name: background_sync/BackgroundSync
-// Dependencies: [32, 5, 2055, 2051, 4905, 1986, 6988, 1085, 5687, 5638, 2074, 3, 1102, 510, 7251, 1369, 584, 1242, 1252, 2078, 1282, 11, 12, 7137, 7140, 7138, 13477, 15396, 6986, 1375, 6996, 2]
+// Dependencies: [32, 5, 2055, 2051, 4905, 1986, 6988, 1085, 5687, 5638, 2074, 3, 1102, 510, 7251, 1369, 584, 1242, 1252, 2078, 1282, 11, 12, 7137, 7140, 7138, 13479, 15400, 6986, 1375, 6996, 2]
 // Exports: backgroundSync
 
-// Module 17441 (background_sync/BackgroundSync)
+// Module 17465 (background_sync/BackgroundSync)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage4 from "Storage" /* 510 */;
@@ -195,7 +195,7 @@ let obj = function _backgroundSync() {
       }
       await "IconComponent";
       closure_3 = tmp;
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -224,7 +224,7 @@ obj = function _backgroundSyncPrivateChannels() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -321,7 +321,7 @@ obj = function _backgroundSyncPrivateChannels() {
           closure_1.time_save_private_channel_messages = Date.now() - closure_2;
         }
         c6 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp41) {
         c6 = 3;
         throw tmp41;
@@ -351,7 +351,7 @@ obj = function _backgroundSyncGuildData() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -554,7 +554,7 @@ obj = function _backgroundSyncGuildData() {
             closure_0.time_save_guild_data = Date.now() - closure_1;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp45) {
         c6 = 3;
@@ -584,7 +584,7 @@ obj = function _backgroundSyncGuildChannels() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       while (true) {
@@ -869,7 +869,7 @@ obj = function _backgroundSyncGuildChannels() {
           }
         }
         c22 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     }
   });
@@ -895,7 +895,7 @@ obj = function _processChannelChanges() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       while (true) {
@@ -958,7 +958,7 @@ obj = function _processChannelChanges() {
               }
             }
             c12 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let closure_5;

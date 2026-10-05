@@ -282,7 +282,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp29 = cResult[13];
         }
         if (cResult[14] !== tmp27) {
-          const obj5 = { backgroundColor: tmp27, borderColor: tmp29, color: "Array" };
+          const obj5 = { backgroundColor: tmp27, borderColor: tmp29, color: "r" };
           cResult[14] = tmp27;
           cResult[15] = obj5;
           tmp31 = obj5;
@@ -324,7 +324,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               tmp16 = cResult[23];
             }
             if (cResult[24] !== tmp14) {
-              const obj6 = { backgroundColor: tmp14, borderColor: tmp16, color: "Array" };
+              const obj6 = { backgroundColor: tmp14, borderColor: tmp16, color: "r" };
               cResult[24] = tmp14;
               cResult[25] = obj6;
               tmp18 = obj6;
@@ -417,7 +417,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      const obj8 = { backgroundColor: items2, borderColor: items3, color: "Array" };
+      const obj8 = { backgroundColor: items2, borderColor: items3, color: "r" };
       items2[1] = setColorOpacity3Result;
       items3 = [c4, c4];
       return obj8;
@@ -443,7 +443,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       } else {
         darkenColorResult1 = obj3.setColorOpacity("white", 0.2);
       }
-      const obj10 = { backgroundColor: items4, borderColor: items5, color: "Array" };
+      const obj10 = { backgroundColor: items4, borderColor: items5, color: "r" };
       items4[1] = darkenColorResult1;
       items5 = [c4, c4];
       return obj10;

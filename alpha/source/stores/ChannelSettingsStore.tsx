@@ -29,13 +29,13 @@ let FormStates;
 let closure_14;
 let closure_15;
 let map1;
-const f102402 = (body) => {
+const f102548 = (body) => {
   c21 = false;
   const obj = DispatcherDefault;
   const obj2 = { type: "CHANNEL_SETTINGS_LOADED_INVITES", invites: body.body };
   obj.dispatch(obj2);
 };
-const f102403 = () => {
+const f102549 = () => {
   c21 = false;
   return false;
 };
@@ -303,7 +303,7 @@ invites = {
         let obj2 = { url: closure_15.INSTANT_INVITES(channel.id), oldFormErrors: true, rejectWithError: true };
         const get = HTTP.get;
         const value = get(obj2);
-        value.then(f102402, f102403);
+        value.then(f102548, f102549);
       }
       return true;
     }
@@ -454,7 +454,7 @@ invites = {
       if (null != themeColor) {
         channel = channel.set("themeColor", themeColor);
       }
-      if (null != applicationId) {
+      if (undefined !== applicationId) {
         channel = channel.set("application_id", applicationId);
       }
       closure_26();
@@ -470,7 +470,7 @@ invites = {
       const get = HTTP.get;
       const obj = { url: closure_15.INSTANT_INVITES(channel.id), oldFormErrors: true, rejectWithError: true };
       const value = get(obj);
-      value.then(f102402, f102403);
+      value.then(f102548, f102549);
     }
   },
   CHANNEL_SETTINGS_LOADED_INVITES: function handleLoadedInvites(invites) {

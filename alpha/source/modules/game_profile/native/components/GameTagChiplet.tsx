@@ -1,9 +1,9 @@
-// Module ID: 17275
-// Function ID: 17276
+// Module ID: 17299
+// Function ID: 17300
 // Name: GameTagChiplet
 // Dependencies: [19, 17, 21, 4890, 558, 576, 8319, 8320, 9395, 2]
 
-// Module 17275 (GameTagChiplet)
+// Module 17299 (GameTagChiplet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

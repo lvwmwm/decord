@@ -1,9 +1,9 @@
-// Module ID: 16890
-// Function ID: 16891
+// Module ID: 16909
+// Function ID: 16910
 // Name: ChannelDetailsNavigationBar
-// Dependencies: [19, 17, 4510, 4511, 2051, 5071, 7511, 10653, 1085, 7512, 21, 4890, 12007, 587, 558, 576, 4580, 504, 1490, 1126, 9814, 7608, 7575, 11927, 11982, 5100, 6549, 10651, 10062, 6884, 16891, 4589, 4612, 4891, 16771, 4894, 11233, 6014, 5909, 2]
+// Dependencies: [19, 17, 4510, 4511, 2051, 5071, 7511, 10653, 1085, 7512, 21, 4890, 12007, 587, 558, 576, 4580, 504, 1490, 1126, 9814, 7608, 7575, 11927, 11982, 5100, 6549, 10651, 10062, 6884, 16910, 4589, 4612, 4891, 16790, 4894, 11233, 6014, 5909, 2]
 
-// Module 16890 (ChannelDetailsNavigationBar)
+// Module 16909 (ChannelDetailsNavigationBar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -19,7 +19,7 @@ import ChannelDetailsUtils from "ChannelDetailsUtils" /* 11233 */;
 import useSearchContext from "useSearchContext" /* 11927 */;
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11982 */;
 import SearchButton from "SearchButton" /* 12007 */;
-import ChannelDetailsMoreButtonDefault from "ChannelDetailsMoreButton" /* 16891 */;
+import ChannelDetailsMoreButtonDefault from "ChannelDetailsMoreButton" /* 16910 */;
 import react_mod from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 4510 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4511 */;
@@ -500,7 +500,7 @@ let closure_27 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((cle
     }
     const obj8 = { ref, channelId: null, guildId: null, showBackButton: true };
     ({ id: obj4.channelId, guild_id: obj4.guildId } = channel);
-    const tmp11 = closure_15(cleanUp(16771), obj8);
+    const tmp11 = closure_15(cleanUp(16790), obj8);
     let num = 3;
     cResult[3] = channel.guild_id;
     cResult[4] = channel.id;
@@ -563,7 +563,7 @@ let closure_27 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((cle
   fn.__workletHash = 14243423616139;
   fn.__initData = __initData2;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj3 = { style: items, children: closure_15(cleanUp(16771), obj4) };
+  const obj3 = { style: items, children: closure_15(cleanUp(16790), obj4) };
   items = [tmp.searchHeader, animatedStyle];
   View = cleanUp(4612).View;
   obj4 = { ref, channelId: channel.id, guildId: channel.guild_id, showBackButton: true };
@@ -928,7 +928,7 @@ const memoResult = react.memo(forwardRef2(ReactCompilerGating.isReactCompilerEna
     constructor(arg0, arg1, arg2, arg3) {
       if (closure_18.BUTTONS === ref) {
         tmp7 = jsx;
-        tmp8 = f75489;
+        tmp8 = f75615;
         obj1 = { channel: null, onBackPress: null, transitionState: null, width: null, cleanUp: null };
         tmp9 = channel;
         obj1.channel = channel;
@@ -938,7 +938,7 @@ const memoResult = react.memo(forwardRef2(ReactCompilerGating.isReactCompilerEna
         tmp11 = componentWidth;
         obj1.width = componentWidth;
         obj1.cleanUp = arg3;
-        return jsx(f75489, obj1, channel);
+        return jsx(f75615, obj1, channel);
       } else if (tmp.SEARCH === ref) {
         tmp2 = jsx;
         tmp3 = closure_27;

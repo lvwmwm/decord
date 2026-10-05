@@ -35,7 +35,7 @@ let obj = function _navigateToGameAnnouncement() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -64,7 +64,7 @@ let obj = function _navigateToGameAnnouncement() {
             joinedAt = undefined;
             messageId = 1;
             sourceLocationStack = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else {
           if (1 === messageId) {
@@ -124,7 +124,7 @@ let obj = function _navigateToGameAnnouncement() {
                 }
               }
               sourceLocationStack = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else if (2 === messageId) {
             if (arg0 === 1) {

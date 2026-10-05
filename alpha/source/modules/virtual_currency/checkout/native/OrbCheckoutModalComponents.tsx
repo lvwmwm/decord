@@ -1,9 +1,9 @@
-// Module ID: 12989
-// Function ID: 12990
+// Module ID: 12991
+// Function ID: 12992
 // Name: OrbCheckoutModalComponents
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4800, 5593, 4886, 10746, 1126, 10748, 12988, 6743, 4791, 12990, 4729, 8491, 5594, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4800, 5593, 4886, 10746, 1126, 10748, 12990, 6743, 4791, 12992, 4729, 8491, 5594, 2]
 
-// Module 12989 (OrbCheckoutModalComponents)
+// Module 12991 (OrbCheckoutModalComponents)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
@@ -17,8 +17,8 @@ import OrbCheckoutUtils from "OrbCheckoutUtils" /* 6743 */;
 import OrbsIcon2 from "OrbsIcon" /* 8491 */;
 import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 10746 */;
 import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 10748 */;
-import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 12988 */;
-import useVirtualCurrencyBalance from "useVirtualCurrencyBalance" /* 12990 */;
+import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 12990 */;
+import useVirtualCurrencyBalance from "useVirtualCurrencyBalance" /* 12992 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -365,7 +365,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   let skuId;
   const tmp = closure_8();
-  let obj = skuId(12988);
+  let obj = skuId(12990);
   skuId = obj.useOrbCheckoutModalContext().skuId;
   const items = [skuId];
   const memo = react.useMemo(() => {

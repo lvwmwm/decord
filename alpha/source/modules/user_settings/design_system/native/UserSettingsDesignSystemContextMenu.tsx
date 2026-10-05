@@ -1,9 +1,9 @@
-// Module ID: 15657
-// Function ID: 15658
+// Module ID: 15661
+// Function ID: 15662
 // Name: UserSettingsDesignSystemContextMenu
-// Dependencies: [109, 19, 17, 21, 12442, 6589, 7625, 4811, 4850, 15658, 15659, 11181, 4890, 587, 12, 558, 576, 5594, 7579, 4886, 5995, 2]
+// Dependencies: [109, 19, 17, 21, 12442, 6589, 7625, 4811, 4850, 15662, 15663, 11181, 4890, 587, 12, 558, 576, 5594, 7579, 4886, 5995, 2]
 
-// Module 15657 (UserSettingsDesignSystemContextMenu)
+// Module 15661 (UserSettingsDesignSystemContextMenu)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,8 +16,8 @@ import AssetRegistryDefault3 from "AssetRegistry" /* 6589 */;
 import AssetRegistryDefault4 from "AssetRegistry" /* 7625 */;
 import AssetRegistryDefault5 from "AssetRegistry" /* 11181 */;
 import AssetRegistryDefault6 from "AssetRegistry" /* 12442 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 15658 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 15659 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 15662 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 15663 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

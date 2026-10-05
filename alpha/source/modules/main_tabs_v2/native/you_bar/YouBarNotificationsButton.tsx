@@ -1,9 +1,9 @@
-// Module ID: 16331
-// Function ID: 16332
+// Module ID: 16335
+// Function ID: 16336
 // Name: YouBarNotificationsButton
-// Dependencies: [19, 17, 11283, 14895, 21, 4890, 587, 558, 576, 16332, 4612, 5597, 7485, 504, 4855, 7494, 7495, 1126, 9266, 16330, 1188, 4737, 7575, 2]
+// Dependencies: [19, 17, 11283, 14899, 21, 4890, 587, 558, 576, 16336, 4612, 5597, 7485, 504, 4855, 7494, 7495, 1126, 9266, 16334, 1188, 4737, 7575, 2]
 
-// Module 16331 (YouBarNotificationsButton)
+// Module 16335 (YouBarNotificationsButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,7 +15,7 @@ import showForLaterModal from "showForLaterModal" /* 7494 */;
 import SavedMessagesTypes from "SavedMessagesTypes" /* 7495 */;
 import react from "react" /* 19 */;
 import SavedMessagesStore from "SavedMessagesStore" /* 11283 */;
-import YouBarConstants from "YouBarConstants" /* 14895 */;
+import YouBarConstants from "YouBarConstants" /* 14899 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -55,7 +55,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((h
   const cResult = obj.c(39);
   hasNameplate = hasNameplate.hasNameplate;
   const tmp4 = closure_10();
-  const value = isForLaterExperimentOn(16332)().value;
+  const value = isForLaterExperimentOn(16336)().value;
   require = value;
   let obj2 = ReanimatedRexport;
   const fn = function s() {

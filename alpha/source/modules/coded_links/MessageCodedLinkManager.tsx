@@ -1,11 +1,11 @@
-// Module ID: 17522
-// Function ID: 17523
+// Module ID: 17546
+// Function ID: 17547
 // Name: MessageCodedLinkManager
-// Dependencies: [5, 6966, 2051, 4871, 4870, 4875, 17523, 8054, 6827, 13062, 17530, 17533, 11685, 6613, 17535, 2]
+// Dependencies: [5, 6966, 2051, 4871, 4870, 4875, 17547, 8054, 6827, 13064, 17554, 17557, 11685, 6613, 17559, 2]
 
-// Module 17522 (MessageCodedLinkManager)
+// Module 17546 (MessageCodedLinkManager)
 import findCodedLinksDefault from "findCodedLinks" /* 4870 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 17535 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 17559 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildTemplateStore from "GuildTemplateStore" /* 6966 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
@@ -19,7 +19,7 @@ let tmp;
 let tmp2;
 let tmp3;
 function resolveMessageCodedLinks(content) {
-  const f130825 = (item) => {
+  const f131063 = (item) => {
     let code;
     let type;
     ({ type, code } = item);
@@ -38,7 +38,7 @@ function resolveMessageCodedLinks(content) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -70,7 +70,7 @@ function resolveMessageCodedLinks(content) {
               return obj;
             }
             c0 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp9) {
             c0 = 3;
             throw tmp9;
@@ -91,7 +91,7 @@ function resolveMessageCodedLinks(content) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -123,7 +123,7 @@ function resolveMessageCodedLinks(content) {
               return obj;
             }
             c0 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp9) {
             c0 = 3;
             throw tmp9;
@@ -202,7 +202,7 @@ function resolveMessageCodedLinks(content) {
     tmp2 = 0 !== arr.length;
   }
   if (tmp2) {
-    let item = arr.forEach(f130825);
+    let item = arr.forEach(f131063);
   }
   const message_snapshots = content.message_snapshots;
   if (message_snapshots != null) {
@@ -213,7 +213,7 @@ function resolveMessageCodedLinks(content) {
         tmp = 0 !== arr.length;
       }
       if (tmp) {
-        const item = arr.forEach(f130825);
+        const item = arr.forEach(f131063);
       }
     });
   }

@@ -1,10 +1,10 @@
-// Module ID: 16531
-// Function ID: 16532
+// Module ID: 16535
+// Function ID: 16536
 // Name: openJoinRequestActionSheet
-// Dependencies: [4854, 16532, 1987, 2]
+// Dependencies: [4854, 16536, 1987, 2]
 // Exports: default
 
-// Module 16531 (openJoinRequestActionSheet)
+// Module 16535 (openJoinRequestActionSheet)
 import asyncRequire from "asyncRequire" /* 1987 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
 import size from "module_2" /* 2 */;
@@ -15,6 +15,6 @@ export default function openJoinRequestActionSheet(joinRequest) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj = { joinRequest };
-  const tmp2 = asyncRequire(16532, dependencyMap.paths);
+  const tmp2 = asyncRequire(16536, dependencyMap.paths);
   openLazy(tmp2, "joinRequestActionSheet" + joinRequest.joinRequestId, obj);
 };

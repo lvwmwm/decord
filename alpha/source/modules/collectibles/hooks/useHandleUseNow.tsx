@@ -102,7 +102,7 @@ export const useHandleUseNow = function useHandleUseNow(cResult) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c5;
@@ -166,7 +166,7 @@ export const useHandleUseNow = function useHandleUseNow(cResult) {
                 return obj9;
               }
               c7 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else if (1 === c6) {
             c5 = 0;

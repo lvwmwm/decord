@@ -1,9 +1,9 @@
-// Module ID: 16804
-// Function ID: 16805
+// Module ID: 16823
+// Function ID: 16824
 // Name: SearchHistoryRow
-// Dependencies: [109, 5, 19, 17, 2051, 4905, 1377, 7513, 21, 4890, 587, 558, 576, 11985, 6017, 5909, 16793, 11982, 4886, 6548, 16788, 573, 16803, 7852, 4903, 16802, 16805, 16818, 1126, 2]
+// Dependencies: [109, 5, 19, 17, 2051, 4905, 1377, 7513, 21, 4890, 587, 558, 576, 11985, 6017, 5909, 16812, 11982, 4886, 6548, 16807, 573, 16822, 7852, 4903, 16821, 16824, 16837, 1126, 2]
 
-// Module 16804 (SearchHistoryRow)
+// Module 16823 (SearchHistoryRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -121,7 +121,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
   } else {
     tmp5 = cResult[1];
   }
-  const tmpResult = searchContext(16793);
+  const tmpResult = searchContext(16812);
   const onPressSearchHistoryText = tmpResult.useOnPressSearchHistoryText(tmp5);
   if (cResult[2] === onPressSearchHistoryText) {
     if (cResult[3] === searchContext) {
@@ -185,7 +185,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
                       }
                     }
                     const obj4 = { label: tmp14, onPress: tmp7, trailing: tmp18, iconContainerStyle: tmp4.textIconContainer, icon: tmp26 };
-                    const tmp32 = closure_12(searchContext(16788).SearchListRow, obj4);
+                    const tmp32 = closure_12(searchContext(16807).SearchListRow, obj4);
                     cResult[24] = tmp7;
                     cResult[25] = tmp4.textIconContainer;
                     cResult[26] = tmp14;
@@ -257,7 +257,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
   const searchHistoryItem = searchContext.searchHistoryItem;
   const tmp = closure_14();
   dependencyMap = tmp;
-  let obj = searchContext(16793);
+  let obj = searchContext(16812);
   const onPressSearchHistoryText = obj.useOnPressSearchHistoryText({ searchContext });
   const items = [onPressSearchHistoryText, searchContext, , , ];
   ({ tags: arr[2], text: arr[3], type: arr[4] } = searchHistoryItem);
@@ -270,7 +270,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
   let obj2 = { style: tmp.textContainer, children: items1 };
   const tags = searchHistoryItem.tags;
   let mapped;
-  const SearchListRow = searchContext(16788).SearchListRow;
+  const SearchListRow = searchContext(16807).SearchListRow;
   const tmp7 = closure_13;
   if (tags != null) {
     mapped = tags.map((children) => {
@@ -532,7 +532,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -565,7 +565,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
             const result = obj6.trackSearchHistoryClicked(obj7);
             tmp4(searchContext, channelId);
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c4 = 3;
@@ -612,7 +612,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -645,7 +645,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
             const result = obj6.trackSearchHistoryClicked(obj7);
             tmp4(searchContext, channelId);
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c4 = 3;

@@ -619,7 +619,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -648,7 +648,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             } else if (1 === c4) {
               c3 = 0;
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             } else if (arg0 === 1) {
               c5 = 3;
               throw value;
@@ -725,7 +725,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -753,7 +753,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             } else if (1 === c4) {
               c3 = 0;
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             } else if (arg0 === 1) {
               c5 = 3;
               throw value;
@@ -1355,7 +1355,7 @@ export const CustomActivityButton = function CustomActivityButton(index) {
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 let tmp17;
@@ -1401,13 +1401,13 @@ export const CustomActivityButton = function CustomActivityButton(index) {
                       if (id.button_urls.length <= closure_129_2) {
                         c3 = 0;
                         c5 = 3;
-                        return { value: "IconComponent", done: "IconComponent" };
+                        return { value: "IconComponent", done: null };
                       } else {
                         tmp = id.button_urls[closure_129_2];
                         if (typeof tmp !== "string") {
                           c3 = 0;
                           c5 = 3;
-                          return { value: "IconComponent", done: "IconComponent" };
+                          return { value: "IconComponent", done: null };
                         } else {
                           const obj8 = tmp(tmp17[49]);
                           tmp17 = obj8.safeParseWithQuery(tmp);
@@ -1438,12 +1438,12 @@ export const CustomActivityButton = function CustomActivityButton(index) {
                           }
                           c3 = 0;
                           c5 = 3;
-                          return { value: "IconComponent", done: "IconComponent" };
+                          return { value: "IconComponent", done: null };
                         }
                       }
                     }
                     c5 = 3;
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } catch (tmp17) {
                   if (0 === c3) {

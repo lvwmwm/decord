@@ -19,12 +19,12 @@ const require = globalThis.__r;
 
 let tmp;
 const CollectiblesUtils = tmp(7065);
-const f97302 = (variants) => {
+const f97445 = (variants) => {
   let everyResult;
   const obj = closure_1_0(closure_1_2[6]);
   if (obj.getIsVariantProduct(variants)) {
     variants = variants.variants;
-    everyResult = variants.every(f97302);
+    everyResult = variants.every(f97445);
   } else {
     const googleSkuIds = variants.googleSkuIds;
     let tmp5;
@@ -52,7 +52,7 @@ function hasAtLeastOneGPlaySynced(nextResult) {
     let obj = CollectiblesProductUtils;
     if (obj.getIsVariantProduct(variants)) {
       variants = variants.variants;
-      everyResult = variants.every(f97302);
+      everyResult = variants.every(f97445);
     } else {
       const tmp2 = importDefault;
       const tmp3 = require("IAPStore");
@@ -188,7 +188,7 @@ export const isGPlaySynced = function isGPlaySynced(variants) {
   const obj = CollectiblesProductUtils;
   if (obj.getIsVariantProduct(variants)) {
     variants = variants.variants;
-    return variants.every(f97302);
+    return variants.every(f97445);
   } else {
     const googleSkuIds = variants.googleSkuIds;
     let tmp5;

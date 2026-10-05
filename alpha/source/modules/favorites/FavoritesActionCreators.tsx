@@ -39,7 +39,7 @@ let closure_14;
 let closure_15;
 let map1;
 let unpackModuleId;
-const f102290 = (type) => type.type !== closure_1_0(closure_1_2[11]).FavoriteChannelType.CATEGORY;
+const f102436 = (type) => type.type !== closure_1_0(closure_1_2[11]).FavoriteChannelType.CATEGORY;
 function getNextPositionFromChannels(arg0) {
   let num = 0;
   let num2 = 0;
@@ -126,7 +126,7 @@ function cleanupChannelParentId(favoriteChannels, id) {
 }
 function countFavoritesAgainstLimit(arg0) {
   const arr = _modDef12;
-  return arr.filter(arg0, f102290).length;
+  return arr.filter(arg0, f102436).length;
 }
 function getReachedLimit(favoriteChannels, arg1) {
   cleanFavoriteChannels(favoriteChannels);
@@ -144,7 +144,7 @@ function getReachedLimit(favoriteChannels, arg1) {
       if (arg1 !== tmp7(1197).FavoriteChannelType.CATEGORY) {
         tmp6 = null;
         const tmp2Result = _modDef12;
-        if (tmp2Result.filter(favoriteChannels, f102290).length >= favoriteLimit) {
+        if (tmp2Result.filter(favoriteChannels, f102436).length >= favoriteLimit) {
           tmp6 = { limit: favoriteLimit, canUpsell: tmp9 };
           const obj3 = { limit: favoriteLimit, canUpsell: tmp9 };
         }
@@ -417,7 +417,7 @@ let obj = function _addFavoriteChannelsToParent() {
         obj4 = {};
       }
       flag = obj4.silent ?? false;
-      return "Reflect";
+      return "Set";
     })();
     let nextResult = iter.next();
     return iter;
@@ -443,7 +443,7 @@ obj = function _addFavoriteChannels() {
     await tmp7(tmp8, obj5, c2);
     await "IconComponent";
     ({ channelIds: c0, parentId: c1, source: c2 } = closure_0);
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };
@@ -504,7 +504,7 @@ function removeFavoriteChannel(id, arg1) {
             }
             favoriteChannels = favoriteChannels.favoriteChannels;
             const arr = _modDef12;
-            const result = trackFavoritesGuildRemoveFromFavorites(tmp9, arr.filter(favoriteChannels, f102290).length);
+            const result = trackFavoritesGuildRemoveFromFavorites(tmp9, arr.filter(favoriteChannels, f102436).length);
           }
         }
     };
@@ -561,7 +561,7 @@ obj = function _addFavoriteCategory() {
             if (CATEGORY !== closure_2_0(closure_2_2[11]).FavoriteChannelType.CATEGORY) {
               tmp6 = null;
               const tmp4Result = closure_2_1(closure_2_2[13]);
-              if (tmp4Result.filter(favoriteChannels, f102290).length >= favoriteLimit) {
+              if (tmp4Result.filter(favoriteChannels, f102436).length >= favoriteLimit) {
                 tmp6 = { limit: favoriteLimit, canUpsell: tmp15 };
                 const obj3 = { limit: favoriteLimit, canUpsell: tmp15 };
               }
@@ -609,7 +609,7 @@ obj = function _addFavoriteChannelsToCategory() {
     await closure_130_27(c0, obj5, c2);
     await "IconComponent";
     ({ channelIds: c0, categoryName: c1, source: c2 } = closure_0);
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };
@@ -628,7 +628,7 @@ obj = function _autoAddJoinedThreadToFavorites() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -675,7 +675,7 @@ obj = function _autoAddJoinedThreadToFavorites() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp14) {
         c1 = 3;
         throw tmp14;
@@ -788,7 +788,7 @@ export const setFavoritesAutoAddJoinedThreads = function setFavoritesAutoAddJoin
                 if (CATEGORY !== preloaded_user_settings.FavoriteChannelType.CATEGORY) {
                   tmp12 = null;
                   const tmp26Result = _modDef12;
-                  if (tmp26Result.filter(favoriteChannels, f102290).length >= favoriteLimit) {
+                  if (tmp26Result.filter(favoriteChannels, f102436).length >= favoriteLimit) {
                     tmp12 = { limit: favoriteLimit, canUpsell: tmp29 };
                     obj = { limit: favoriteLimit, canUpsell: tmp29 };
                   }

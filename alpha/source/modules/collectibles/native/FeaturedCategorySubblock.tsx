@@ -1,16 +1,16 @@
-// Module ID: 15733
-// Function ID: 15734
+// Module ID: 15737
+// Function ID: 15738
 // Name: FeaturedCategorySubblock
-// Dependencies: [19, 17, 7053, 1087, 1085, 21, 4890, 558, 576, 1490, 8421, 504, 15713, 1252, 7052, 6681, 15731, 5909, 1126, 587, 7065, 8486, 2]
+// Dependencies: [19, 17, 7053, 1087, 1085, 21, 4890, 558, 576, 1490, 8421, 504, 15717, 1252, 7052, 6681, 15735, 5909, 1126, 587, 7065, 8486, 2]
 
-// Module 15733 (FeaturedCategorySubblock)
+// Module 15737 (FeaturedCategorySubblock)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7052 */;
-import VisibilitySensorDefault from "VisibilitySensor" /* 15731 */;
+import VisibilitySensorDefault from "VisibilitySensor" /* 15735 */;
 import react from "react" /* 19 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7053 */;
 import Constants from "Constants" /* 1085 */;
@@ -438,7 +438,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(subblock) 
   let items = [CollectiblesCategoryStore];
   const stateFromStores = obj3.useStateFromStores(items, () => CollectiblesCategoryStore.getCategoryByStoreListingId(subblock.categoryStoreListingId));
   let unpublishedAt = subblock.unpublishedAt;
-  const obj4 = subblock(15713);
+  const obj4 = subblock(15717);
   const handleCardVisibilityChange = obj4.useTrackProductCardImpression(subblock.categoryStoreListingId, "mobile_home", "featured_block").handleCardVisibilityChange;
   if (unpublishedAt == null) {
     let unpublishedAt1;

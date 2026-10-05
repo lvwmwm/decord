@@ -531,7 +531,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let title;
   let tmp18Result4;
   let useReducedMotion;
-  const f104953 = () => useReducedMotion.useReducedMotion;
+  const f105099 = () => useReducedMotion.useReducedMotion;
   sku = sku.sku;
   ({ finePrint, ctaLabel, onCtaPress, onClose } = sku);
   let width;
@@ -543,8 +543,8 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   width = require("useWindowDimensions")().width;
   let obj = sku(width[18]);
   const items = [AccessibilityStore];
-  ({ previewViewStyle, textViewStyle, curtainViewStyle } = closure_27(obj.useStateFromStores(items, f104953)));
-  const tmp5 = closure_27(obj.useStateFromStores(items, f104953));
+  ({ previewViewStyle, textViewStyle, curtainViewStyle } = closure_27(obj.useStateFromStores(items, f105099)));
+  const tmp5 = closure_27(obj.useStateFromStores(items, f105099));
   let obj2 = sku(width[19]);
   const isScreenLandscape = obj2.useIsScreenLandscape();
   let obj3 = react;

@@ -1,9 +1,9 @@
-// Module ID: 17246
-// Function ID: 17247
+// Module ID: 17270
+// Function ID: 17271
 // Name: VoicePanelCardView
-// Dependencies: [32, 19, 17, 4906, 11902, 11900, 17182, 11905, 4911, 21, 17247, 558, 4612, 9074, 11901, 4580, 587, 11906, 10725, 5597, 576, 17183, 5973, 5738, 6570, 17277, 504, 12, 4590, 1126, 4589, 2]
+// Dependencies: [32, 19, 17, 4906, 11902, 11900, 17206, 11905, 4911, 21, 17271, 558, 4612, 9074, 11901, 4580, 587, 11906, 10725, 5597, 576, 17207, 5973, 5738, 6570, 17301, 504, 12, 4590, 1126, 4589, 2]
 
-// Module 17246 (VoicePanelCardView)
+// Module 17270 (VoicePanelCardView)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -16,8 +16,8 @@ import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9074 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11900 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11905 */;
 import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 11906 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17182 */;
-import VoicePanelCardDefault from "VoicePanelCard" /* 17247 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17206 */;
+import VoicePanelCardDefault from "VoicePanelCard" /* 17271 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -367,7 +367,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp = dependencyMap;
   const obj = mode(576);
   const cResult = obj.c(6);
-  const obj2 = mode(17183);
+  const obj2 = mode(17207);
   mode = obj2.usePIPState().mode;
   const ref = react.useRef(mode === VoicePanelPIPModes.IN_APP);
   const tmp3 = VoicePanelPIPModes;
@@ -424,7 +424,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   let closure_2;
   let mode;
-  const obj = mode(17183);
+  const obj = mode(17207);
   mode = obj.usePIPState().mode;
   const ref = react.useRef(mode === VoicePanelPIPModes.IN_APP);
   dependencyMap = _slicedToArray(react.useState({}), 2)[1];
@@ -520,7 +520,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((v
   viewableChunks = viewableChunks.viewableChunks;
   channelId = react.useContext(stateFromStoresArray(11901)).channelId;
   const tmp4 = closure_23(viewableChunks);
-  const obj3 = channelId(17277);
+  const obj3 = channelId(17301);
   const chunkedParticipants = obj3.useChunkedParticipants(channelId, tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ChannelRTCStore];

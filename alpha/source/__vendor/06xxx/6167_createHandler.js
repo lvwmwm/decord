@@ -47,7 +47,7 @@ let closure_10 = { [State.State.UNDETERMINED]: undefined, [State.State.BEGAN]: "
 
 export default function createHandler(name) {
   let customNativeProps;
-  const f136904 = (current) => current && null === current.current;
+  const f137142 = (current) => current && null === current.current;
   name = name.name;
   let allowedProps = name.allowedProps;
   if (allowedProps === undefined) {
@@ -228,7 +228,7 @@ export default function createHandler(name) {
       const props = this.props;
       this.isMountedRef.current = true;
       if (Array.isArray(props.simultaneousHandlers)) {
-        someResult = simultaneousHandlers.some(f136904);
+        someResult = simultaneousHandlers.some(f137142);
       } else {
         someResult = simultaneousHandlers && null === simultaneousHandlers.current;
       }
@@ -237,7 +237,7 @@ export default function createHandler(name) {
         const waitFor = props.waitFor;
         const _Array = Array;
         if (Array.isArray(waitFor)) {
-          someResult1 = waitFor.some(f136904);
+          someResult1 = waitFor.some(f137142);
         } else {
           someResult1 = waitFor && null === waitFor.current;
         }
@@ -315,7 +315,7 @@ export default function createHandler(name) {
           const props = self.props;
           const _Array = Array;
           if (Array.isArray(props.simultaneousHandlers)) {
-            someResult = simultaneousHandlers.some(f136904);
+            someResult = simultaneousHandlers.some(f137142);
           } else {
             someResult = simultaneousHandlers && null === simultaneousHandlers.current;
           }
@@ -324,7 +324,7 @@ export default function createHandler(name) {
             const waitFor = props.waitFor;
             const _Array2 = Array;
             if (Array.isArray(waitFor)) {
-              someResult1 = waitFor.some(f136904);
+              someResult1 = waitFor.some(f137142);
             } else {
               someResult1 = waitFor && null === waitFor.current;
             }

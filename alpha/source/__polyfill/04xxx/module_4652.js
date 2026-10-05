@@ -34,7 +34,7 @@ export const useRiveFile = function useRiveFile(src, arg1) {
   let str2;
   let uri;
   let riveFile;
-  let tmp = _slicedToArray(str2({ riveFile: "IconComponent", isLoading: null, error: "<string:2442067969>" }), 2);
+  let tmp = _slicedToArray(str2({ riveFile: "IconComponent", isLoading: null, error: "list" }), 2);
   [tmp2, c1] = tmp;
   const items = [obj.referencedAssets];
   let tmp3 = riveFile(() => {
@@ -149,7 +149,7 @@ export const useRiveFile = function useRiveFile(src, arg1) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -289,7 +289,7 @@ export const useRiveFile = function useRiveFile(src, arg1) {
             riveFile = value;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp40) {
           closure_2 = tmp40;
           if (0 === c3) {

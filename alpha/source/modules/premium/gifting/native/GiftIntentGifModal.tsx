@@ -53,7 +53,7 @@ let obj = function _sendGiftIntentGif() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -75,7 +75,7 @@ let obj = function _sendGiftIntentGif() {
               is_custom_message = undefined;
               url = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else {
             if (1 === url) {
@@ -123,7 +123,7 @@ let obj = function _sendGiftIntentGif() {
               items[0] = closure_130_1(closure_130_2[13]).PREMIUM_GIFT_INTENT_CARD;
               track(GIFT_INTENT_MESSAGE_SENT, obj10);
               c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
             const id = user.id;
             const sendMessage = closure_130_1(closure_130_2[10]).sendMessage;
@@ -460,7 +460,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   tmp5 = fn2;
 }) : ((arg0) => {
   let onDismiss;
-  const f107496 = () => {
+  const f107642 = () => {
     let channelId;
     let giftIntentType;
     let intl;
@@ -489,8 +489,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       onDismiss();
     }
   }, items);
-  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("useInitialValue")(f107496) };
-  require("useInitialValue")(f107496);
+  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("useInitialValue")(f107642) };
+  require("useInitialValue")(f107642);
   return closure_10(require("Navigator").Navigator, obj);
 });
 const result = size.fileFinishedImporting("modules/premium/gifting/native/GiftIntentGifModal.tsx");

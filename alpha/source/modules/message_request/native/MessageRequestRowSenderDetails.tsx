@@ -1,16 +1,16 @@
-// Module ID: 17032
-// Function ID: 17033
+// Module ID: 17056
+// Function ID: 17057
 // Name: MessageRequestRowSenderDetails
-// Dependencies: [19, 17, 4519, 21, 4890, 1188, 587, 558, 576, 4722, 504, 17033, 1405, 1126, 4886, 17034, 17035, 2]
+// Dependencies: [19, 17, 4519, 21, 4890, 1188, 587, 558, 576, 4722, 504, 17057, 1405, 1126, 4886, 17058, 17059, 2]
 // Exports: default
 
-// Module 17032 (MessageRequestRowSenderDetails)
+// Module 17056 (MessageRequestRowSenderDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1188 */;
 import utils_AvatarUtilsDefault from "utils/AvatarUtils" /* 1405 */;
 import UserUtilsDefault from "UserUtils" /* 4722 */;
-import MessageRequestMutualServersDefault from "MessageRequestMutualServers" /* 17035 */;
+import MessageRequestMutualServersDefault from "MessageRequestMutualServers" /* 17059 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4519 */;
 import Fragment from "Fragment" /* 21 */;
@@ -97,7 +97,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     }
     const tmp26Result = otherUser(504);
     const stateFromStores = tmp26Result.useStateFromStores(first, tmp35);
-    const tmp26Result3 = otherUser(17033);
+    const tmp26Result3 = otherUser(17057);
     const messageRequestRelativeTimestampText = tmp26Result3.useMessageRequestRelativeTimestampText(channel2);
     const _Math3 = Math;
     const _Math4 = Math;
@@ -232,7 +232,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
                         let tmp78 = !tmp29;
                         if (tmp78) {
                           const obj8 = { style: tmp31.messagePreview, channel: channel2 };
-                          tmp78 = closure_5(tmp39(17034), obj8);
+                          tmp78 = closure_5(tmp39(17058), obj8);
                         }
                         cResult[31] = channel2;
                         cResult[32] = undefined !== isRestricted && isRestricted;
@@ -352,7 +352,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     });
     const _Math = Math;
     const _Math2 = Math;
-    const obj2 = otherUser(17033);
+    const obj2 = otherUser(17057);
     const messageRequestRelativeTimestampText1 = obj2.useMessageRequestRelativeTimestampText(channel);
     const random1 = Math.random();
     const obj16 = { style: tmp3.avatarContainer, children: closure_5(Avatar, obj19) };
@@ -409,7 +409,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     let tmp16Result = !flag;
     if (tmp16Result) {
       const obj27 = { style: tmp3.messagePreview, channel };
-      tmp16Result = tmp16(tmp11(17034), obj27);
+      tmp16Result = tmp16(tmp11(17058), obj27);
     }
     items11[1] = tmp16Result;
     if (flag) {

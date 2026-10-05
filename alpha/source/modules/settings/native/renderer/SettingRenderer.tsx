@@ -1,10 +1,10 @@
-// Module ID: 14498
-// Function ID: 14499
+// Module ID: 14502
+// Function ID: 14503
 // Name: SettingRenderer
-// Dependencies: [32, 109, 19, 17, 2116, 14497, 2074, 11130, 21, 4890, 587, 1188, 5993, 1490, 14499, 558, 576, 504, 1126, 10547, 5971, 14501, 14502, 4886, 6699, 6698, 4596, 6072, 6071, 6688, 4567, 9666, 4855, 4856, 5995, 5593, 1888, 1369, 14274, 5909, 5594, 4580, 6493, 1881, 2]
+// Dependencies: [32, 109, 19, 17, 2116, 14501, 2074, 11130, 21, 4890, 587, 1188, 5993, 1490, 14503, 558, 576, 504, 1126, 10547, 5971, 14505, 14506, 4886, 6699, 6698, 4596, 6072, 6071, 6688, 4567, 9666, 4855, 4856, 5995, 5593, 1888, 1369, 14276, 5909, 5594, 4580, 6493, 1881, 2]
 // Exports: renderSettingItem, renderSettingSearchResultItem, renderSettingSearchResultPlaceholderItem
 
-// Module 14498 (SettingRenderer)
+// Module 14502 (SettingRenderer)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -21,14 +21,14 @@ import Tracking from "Tracking" /* 6493 */;
 import ClipboardUtils from "ClipboardUtils" /* 6688 */;
 import FormSwitch from "FormSwitch" /* 6699 */;
 import VolumeSliderDefault from "VolumeSlider" /* 9666 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 14499 */;
-import useHighlightSettingItem from "useHighlightSettingItem" /* 14501 */;
-import SettingListItemHighlightDefault from "SettingListItemHighlight" /* 14502 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 14503 */;
+import useHighlightSettingItem from "useHighlightSettingItem" /* 14505 */;
+import SettingListItemHighlightDefault from "SettingListItemHighlight" /* 14506 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2116 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14497 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14501 */;
 import GuildStore from "GuildStore" /* 2074 */;
 import SettingRendererConstants from "SettingRendererConstants" /* 11130 */;
 import Fragment from "Fragment" /* 21 */;
@@ -744,7 +744,7 @@ let closure_27 = react.memo((arg0) => {
   let trailing;
   const tmp = trailing;
   ({ setting, useTitle } = arg0);
-  let obj = trailing(14501);
+  let obj = trailing(14505);
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   trailing = undefined;
   const title = useTitle();

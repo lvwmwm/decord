@@ -1,9 +1,9 @@
-// Module ID: 17024
-// Function ID: 17025
+// Module ID: 17048
+// Function ID: 17049
 // Name: ContextMenuCommandRootScreen
-// Dependencies: [32, 19, 17, 2074, 5788, 21, 4890, 587, 558, 576, 504, 8803, 8939, 8934, 6471, 6546, 10723, 1126, 4886, 17025, 6547, 6552, 2]
+// Dependencies: [32, 19, 17, 2074, 5788, 21, 4890, 587, 558, 576, 504, 8803, 8939, 8934, 6471, 6546, 10723, 1126, 4886, 17049, 6547, 6552, 2]
 
-// Module 17024 (ContextMenuCommandRootScreen)
+// Module 17048 (ContextMenuCommandRootScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;

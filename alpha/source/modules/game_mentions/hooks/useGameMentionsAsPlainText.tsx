@@ -75,7 +75,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             nsfwAllowed = currentUser.nsfwAllowed;
           }
           tmp6 = closure_6;
-          return str.replace(closure_6, () => { /* body not rendered: F140349 */ });
+          return str.replace(closure_6, () => { /* body not rendered: F140587 */ });
         }
       }
       return str;

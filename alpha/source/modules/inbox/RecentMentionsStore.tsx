@@ -32,14 +32,14 @@ let closure_14;
 let closure_15;
 let closure_16;
 let map1;
-const f94133 = (getChannelId) => {
+const f94276 = (getChannelId) => {
   if (null == closure_1_19[getChannelId.getChannelId(getChannelId)]) {
     closure_1_19[getChannelId.getChannelId()] = 0;
   }
   const channelId = getChannelId.getChannelId();
   closure_1_19[channelId] = closure_1_19[channelId] + 1;
 };
-const f94134 = (getChannelId) => {
+const f94277 = (getChannelId) => {
   if (null != closure_1_19[getChannelId.getChannelId(getChannelId)]) {
     const _Math = Math;
     const channelId = getChannelId.getChannelId();
@@ -169,10 +169,10 @@ function deleteMessage(arg0) {
     arr2 = _modDef12;
     const tmp5 = importDefault;
     if (null != addedMessages) {
-      const item = addedMessages.forEach(f94133);
+      const item = addedMessages.forEach(f94276);
     }
     if (null != deletedMessages) {
-      const item1 = deletedMessages.forEach(f94134);
+      const item1 = deletedMessages.forEach(f94277);
     }
     const tmp5Result = tmp5(12);
     substr = tmp5Result.filter(substr, (id) => id.id !== id);
@@ -190,10 +190,10 @@ function handleMessageDelete(id) {
     arr = _modDef12;
     const tmp = importDefault;
     if (null != addedMessages) {
-      const item = addedMessages.forEach(f94133);
+      const item = addedMessages.forEach(f94276);
     }
     if (null != deletedMessages) {
-      const item1 = deletedMessages.forEach(f94134);
+      const item1 = deletedMessages.forEach(f94277);
     }
     const tmpResult = tmp(12);
     substr = tmpResult.filter(substr, (id) => id.id !== id);
@@ -252,10 +252,10 @@ function handleRelationshipUpdate() {
   ({ addedMessages, deletedMessages } = obj);
   arr = _modDef12;
   if (null != addedMessages) {
-    const item = addedMessages.forEach(f94133);
+    const item = addedMessages.forEach(f94276);
   }
   if (null != deletedMessages) {
-    const item1 = deletedMessages.forEach(f94134);
+    const item1 = deletedMessages.forEach(f94277);
   }
   substr = substr.filter((item) => !RelationshipStore.isBlockedOrIgnoredForMessage(item));
 }
@@ -276,10 +276,10 @@ function handleDeleteChannel(channel) {
   });
   ({ addedMessages, deletedMessages } = { deletedMessages: items });
   if (null != addedMessages) {
-    const item = addedMessages.forEach(f94133);
+    const item = addedMessages.forEach(f94276);
   }
   if (null != deletedMessages) {
-    const item1 = deletedMessages.forEach(f94134);
+    const item1 = deletedMessages.forEach(f94277);
   }
 }
 const RecentMentionsFilters = Constants.RecentMentionsFilters;
@@ -407,10 +407,10 @@ let obj2 = {
     const mapped = arr.map(messages, findOrCreateMessageRecord);
     ({ addedMessages, deletedMessages } = { addedMessages: mapped });
     if (null != addedMessages) {
-      const item = addedMessages.forEach(f94133);
+      const item = addedMessages.forEach(f94276);
     }
     if (null != deletedMessages) {
-      const item1 = deletedMessages.forEach(f94134);
+      const item1 = deletedMessages.forEach(f94277);
     }
     if (isAfter) {
       substr = substr.concat(mapped);
@@ -446,10 +446,10 @@ let obj2 = {
     ({ addedMessages, deletedMessages } = { deletedMessages: substr.slice(size) });
     ({ deletedMessages: substr.slice(size) });
     if (null != addedMessages) {
-      const item = addedMessages.forEach(f94133);
+      const item = addedMessages.forEach(f94276);
     }
     if (null != deletedMessages) {
-      const item1 = deletedMessages.forEach(f94134);
+      const item1 = deletedMessages.forEach(f94277);
     }
     let sum = size;
     if (size < substr.length) {
@@ -497,10 +497,10 @@ let obj2 = {
     });
     ({ addedMessages, deletedMessages } = { deletedMessages: items });
     if (null != addedMessages) {
-      const item = addedMessages.forEach(f94133);
+      const item = addedMessages.forEach(f94276);
     }
     if (null != deletedMessages) {
-      const item1 = deletedMessages.forEach(f94134);
+      const item1 = deletedMessages.forEach(f94277);
     }
   },
   MESSAGE_CREATE: function handleIncomingMessage(message) {
@@ -525,10 +525,10 @@ let obj2 = {
           items = [tmp3];
           ({ addedMessages, deletedMessages } = obj);
           if (null != addedMessages) {
-            const item = addedMessages.forEach(f94133);
+            const item = addedMessages.forEach(f94276);
           }
           if (null != deletedMessages) {
-            const item1 = deletedMessages.forEach(f94134);
+            const item1 = deletedMessages.forEach(f94277);
           }
         }
       }

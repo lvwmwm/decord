@@ -1,10 +1,10 @@
-// Module ID: 14740
-// Function ID: 14741
+// Module ID: 14744
+// Function ID: 14745
 // Name: RestrictedScheduleActionCreators
 // Dependencies: [5, 1085, 1282, 584, 2]
 // Exports: addRestrictedScheduleRule, deleteRestrictedScheduleRule, updateRestrictedScheduleRule
 
-// Module 14740 (RestrictedScheduleActionCreators)
+// Module 14744 (RestrictedScheduleActionCreators)
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -71,7 +71,7 @@ obj = function _deleteRestrictedScheduleRule() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -109,7 +109,7 @@ obj = function _deleteRestrictedScheduleRule() {
             obj = closure_131_1(closure_131_2[3]);
             obj.dispatch(obj7);
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp12) {
           c5 = 3;

@@ -1,10 +1,10 @@
-// Module ID: 16223
-// Function ID: 16224
+// Module ID: 16227
+// Function ID: 16228
 // Name: GuildsBarFolderMenuItems
-// Dependencies: [5, 5616, 1085, 4817, 1126, 13771, 1987, 6883, 16224, 2]
+// Dependencies: [5, 5616, 1085, 4817, 1126, 13773, 1987, 6883, 16228, 2]
 // Exports: getGuildFolderMenuItems
 
-// Module 16223 (GuildsBarFolderMenuItems)
+// Module 16227 (GuildsBarFolderMenuItems)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SortedGuildStore from "SortedGuildStore" /* 5616 */;
@@ -36,7 +36,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -71,7 +71,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
               value.default(guildFolderById.guildIds, constants.GUILD_LIST);
             }
             guildFolderById = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp13) {
             guildFolderById = 3;
             throw tmp13;
@@ -98,7 +98,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -127,7 +127,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
             } else {
               const result = value.showGuildsBarFolderModal(closure_128_0);
               c2 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp9) {
             c2 = 3;

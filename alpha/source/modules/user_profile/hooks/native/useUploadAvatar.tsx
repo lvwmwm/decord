@@ -1,9 +1,9 @@
-// Module ID: 14432
-// Function ID: 14433
+// Module ID: 14436
+// Function ID: 14437
 // Name: useUploadAvatar
-// Dependencies: [5, 19, 1377, 1085, 1379, 558, 576, 573, 8818, 4854, 7274, 4528, 14415, 7840, 7838, 7835, 7837, 2]
+// Dependencies: [5, 19, 1377, 1085, 1379, 558, 576, 573, 8818, 4854, 7274, 4528, 14419, 7840, 7838, 7835, 7837, 2]
 
-// Module 14432 (useUploadAvatar)
+// Module 14436 (useUploadAvatar)
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1379 */;
 import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 8818 */;
@@ -116,7 +116,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -188,7 +188,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp40) {
         c3 = 3;
@@ -243,7 +243,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -315,7 +315,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp40) {
         c3 = 3;

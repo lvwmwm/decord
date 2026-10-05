@@ -1,9 +1,9 @@
-// Module ID: 16320
-// Function ID: 16321
+// Module ID: 16324
+// Function ID: 16325
 // Name: MainTabsNavigatorPanelContext
 // Dependencies: [19, 6140, 6571, 2]
 
-// Module 16320 (MainTabsNavigatorPanelContext)
+// Module 16324 (MainTabsNavigatorPanelContext)
 import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
 import react from "react" /* 19 */;
 import "ReanimatedHelperTypes";

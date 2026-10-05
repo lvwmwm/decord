@@ -1,9 +1,9 @@
-// Module ID: 15062
-// Function ID: 15063
+// Module ID: 15066
+// Function ID: 15067
 // Name: InputModeSetting
 // Dependencies: [1999, 7634, 4915, 558, 576, 504, 1126, 11129, 9663, 2]
 
-// Module 15062 (InputModeSetting)
+// Module 15066 (InputModeSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;

@@ -1,9 +1,9 @@
-// Module ID: 17425
-// Function ID: 17426
+// Module ID: 17449
+// Function ID: 17450
 // Name: ExistingUserAgeGateConfirm
 // Dependencies: [5, 32, 19, 17, 1085, 21, 4890, 558, 576, 1490, 1126, 4886, 2115, 5594, 6619, 2]
 
-// Module 17425 (ExistingUserAgeGateConfirm)
+// Module 17449 (ExistingUserAgeGateConfirm)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
@@ -170,7 +170,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -212,7 +212,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           tmp18(false);
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp18) {
         if (0 === c3) {
@@ -259,7 +259,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -302,7 +302,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
             closure_128_2(false);
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp18) {
           let closure_2 = tmp18;

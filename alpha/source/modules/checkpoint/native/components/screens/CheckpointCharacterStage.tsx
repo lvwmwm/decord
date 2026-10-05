@@ -1,9 +1,9 @@
-// Module ID: 15529
-// Function ID: 15530
+// Module ID: 15533
+// Function ID: 15534
 // Name: CheckpointCharacterStage
 // Dependencies: [17, 21, 4890, 587, 558, 576, 4886, 2]
 
-// Module 15529 (CheckpointCharacterStage)
+// Module 15533 (CheckpointCharacterStage)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

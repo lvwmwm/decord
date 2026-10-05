@@ -1,9 +1,9 @@
-// Module ID: 17198
-// Function ID: 17199
+// Module ID: 17222
+// Function ID: 17223
 // Name: VoicePanelFloatingCTAUtils
-// Dependencies: [32, 19, 17, 4906, 17199, 7037, 2051, 2057, 21, 558, 576, 4791, 11901, 17166, 9160, 573, 9169, 9163, 9270, 4854, 9174, 17200, 9272, 8897, 9275, 1126, 6017, 17193, 9716, 17201, 6892, 7941, 4698, 4800, 2036, 17202, 12185, 7452, 2]
+// Dependencies: [32, 19, 17, 4906, 17223, 7037, 2051, 2057, 21, 558, 576, 4791, 11901, 17190, 9160, 573, 9169, 9163, 9270, 4854, 9174, 17224, 9272, 8897, 9275, 1126, 6017, 17217, 9716, 17225, 6892, 7941, 4698, 4800, 2036, 17226, 12185, 7452, 2]
 
-// Module 17198 (VoicePanelFloatingCTAUtils)
+// Module 17222 (VoicePanelFloatingCTAUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -16,14 +16,14 @@ import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7037 */;
 import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 7941 */;
 import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9174 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11901 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17166 */;
-import GuildScheduledEventsNoticesActionCreators from "GuildScheduledEventsNoticesActionCreators" /* 17200 */;
-import useChannelFloatingCTAContentDefault from "useChannelFloatingCTAContent" /* 17201 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 17202 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17190 */;
+import GuildScheduledEventsNoticesActionCreators from "GuildScheduledEventsNoticesActionCreators" /* 17224 */;
+import useChannelFloatingCTAContentDefault from "useChannelFloatingCTAContent" /* 17225 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 17226 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
-import EventBannerStore from "EventBannerStore" /* 17199 */;
+import EventBannerStore from "EventBannerStore" /* 17223 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -131,7 +131,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   const cResult = obj.c(28);
   stateFromStores(4791)();
   id = undefined;
-  const tmp6 = stateFromStores(17166)(react.useContext(stateFromStores(11901)).channelId);
+  const tmp6 = stateFromStores(17190)(react.useContext(stateFromStores(11901)).channelId);
   const useImminentUpcomingGuildEvents = imminentUpcomingGuildEvents(9160).useImminentUpcomingGuildEvents;
   imminentUpcomingGuildEvents(9160);
   const tmp4 = stateFromStores;
@@ -362,7 +362,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
   id = undefined;
-  const useInviteMembersCallback = tmp(17193).useInviteMembersCallback;
+  const useInviteMembersCallback = tmp(17217).useInviteMembersCallback;
   if (id != null) {
     id = id.id;
   }

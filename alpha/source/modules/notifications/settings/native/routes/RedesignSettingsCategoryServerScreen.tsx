@@ -1,14 +1,14 @@
-// Module ID: 15831
-// Function ID: 15832
+// Module ID: 15835
+// Function ID: 15836
 // Name: RedesignSettingsCategoryServerScreen
-// Dependencies: [19, 21, 558, 576, 11129, 15824, 14495, 2]
+// Dependencies: [19, 21, 558, 576, 11129, 15828, 14499, 2]
 
-// Module 15831 (RedesignSettingsCategoryServerScreen)
+// Module 15835 (RedesignSettingsCategoryServerScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;
-import SettingLayoutDefault from "SettingLayout" /* 14495 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 15824 */;
+import SettingLayoutDefault from "SettingLayout" /* 14499 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 15828 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

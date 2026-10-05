@@ -30,7 +30,7 @@ export const prepareHeaderBarButtonItems = (arr, arg1) => {
       let obj3;
       let tmp18;
       let tmp20;
-      const f90724 = (icon, index) => {
+      const f90867 = (icon, index) => {
         let assetSource;
         let assetSource1;
         let items;
@@ -85,7 +85,7 @@ export const prepareHeaderBarButtonItems = (arr, arg1) => {
             if (str === undefined) {
               str = "";
             }
-            const obj3 = { items: items.map(f90724) };
+            const obj3 = { items: items.map(f90867) };
             const merged1 = Object.assign(icon);
             items = icon.items;
             const merged2 = Object.assign(obj3);
@@ -190,7 +190,7 @@ export const prepareHeaderBarButtonItems = (arr, arg1) => {
             if (typeof prepareMenu === "function") {
               _window = index;
               let c2 = "";
-              const obj7 = { items: items.map(f90724) };
+              const obj7 = { items: items.map(f90867) };
               const merged6 = Object.assign(menu);
               items = menu.items;
               obj6.menu = obj7;

@@ -550,7 +550,7 @@ function AppLauncherCommandViewInner(command) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -568,7 +568,7 @@ function AppLauncherCommandViewInner(command) {
             if (tmp14) {
               if (null == command) {
                 c2 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } else {
                 const obj4 = { applicationId: command.applicationId, channel: context.channel, commandIntegrationTypes: command.integration_types, appLauncherContext: obj6 };
                 obj6 = { entrypoint, location: analyticsLocation, sectionName };
@@ -589,11 +589,11 @@ function AppLauncherCommandViewInner(command) {
           return obj;
         } else if (!value.isAuthorized) {
           c2 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
         closure_128_50();
         c2 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp10) {
         c2 = 3;
         throw tmp10;

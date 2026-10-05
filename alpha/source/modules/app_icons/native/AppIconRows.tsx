@@ -1,9 +1,9 @@
-// Module ID: 15348
-// Function ID: 15349
+// Module ID: 15352
+// Function ID: 15353
 // Name: AppIconRows
-// Dependencies: [32, 11870, 19, 17, 1377, 21, 4890, 558, 576, 8829, 6074, 1126, 15349, 13259, 504, 1976, 2]
+// Dependencies: [32, 11870, 19, 17, 1377, 21, 4890, 558, 576, 8829, 6074, 1126, 15353, 13261, 504, 1976, 2]
 
-// Module 15348 (AppIconRows)
+// Module 15352 (AppIconRows)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -11,8 +11,8 @@ import react3 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1976 */;
 import AppIconTypes from "AppIconTypes" /* 8829 */;
-import AppIconUtils from "AppIconUtils" /* 13259 */;
-import AppIconRowDefault from "AppIconRow" /* 15349 */;
+import AppIconUtils from "AppIconUtils" /* 13261 */;
+import AppIconRowDefault from "AppIconRow" /* 15353 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 11870 */;
 import UserStore from "UserStore" /* 1377 */;

@@ -1,9 +1,9 @@
-// Module ID: 17346
-// Function ID: 17347
+// Module ID: 17370
+// Function ID: 17371
 // Name: useExternalPipAspectRatioUpdater
 // Dependencies: [19, 558, 576, 9110, 2]
 
-// Module 17346 (useExternalPipAspectRatioUpdater)
+// Module 17370 (useExternalPipAspectRatioUpdater)
 import ExternalPipDefault from "ExternalPip" /* 9110 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

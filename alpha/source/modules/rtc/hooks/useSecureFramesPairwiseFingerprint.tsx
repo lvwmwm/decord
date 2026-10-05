@@ -34,7 +34,7 @@ let SecureFramesPairwiseFingerprintMode = function _computeNativeDisplayPair() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -242,7 +242,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -346,7 +346,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
             closure_9.current = setTimeout(() => {
               _asyncToGenerator(true);
               const promise = fn();
-              promise.then(() => { /* body not rendered: F151781 */ });
+              promise.then(() => { /* body not rendered: F152065 */ });
             }, 0);
           } else {
             tmp4 = closure_10;
@@ -405,7 +405,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

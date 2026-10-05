@@ -1,9 +1,9 @@
-// Module ID: 15655
-// Function ID: 15656
+// Module ID: 15659
+// Function ID: 15660
 // Name: UserSettingsDesignSystemTabs
 // Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 4886, 4580, 4727, 9282, 12282, 12425, 10974, 5594, 5593, 6698, 2]
 
-// Module 15655 (UserSettingsDesignSystemTabs)
+// Module 15659 (UserSettingsDesignSystemTabs)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 4580 */;

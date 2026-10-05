@@ -1,16 +1,16 @@
-// Module ID: 15051
-// Function ID: 15052
+// Module ID: 15055
+// Function ID: 15056
 // Name: GuildRoleSubscriptionCard
-// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 6469, 4886, 15041, 1126, 1188, 15052, 15053, 9953, 15056, 2]
+// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 6469, 4886, 15045, 1126, 1188, 15056, 15057, 9953, 15060, 2]
 
-// Module 15051 (GuildRoleSubscriptionCard)
+// Module 15055 (GuildRoleSubscriptionCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6469 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15041 */;
-import GuildRoleSubscriptionEmojiGalleryDefault from "GuildRoleSubscriptionEmojiGallery" /* 15053 */;
-import GuildRoleSubscriptionBenefitRow from "GuildRoleSubscriptionBenefitRow" /* 15056 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15045 */;
+import GuildRoleSubscriptionEmojiGalleryDefault from "GuildRoleSubscriptionEmojiGallery" /* 15057 */;
+import GuildRoleSubscriptionBenefitRow from "GuildRoleSubscriptionBenefitRow" /* 15060 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -268,7 +268,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp16 = tmp17;
   }
   const obj20 = { children: items5 };
-  items5 = [tmp8, tmp9, closure_6(guildId(15052).GuildRoleSubscriptionMemberPreview, { guildId, role })];
+  items5 = [tmp8, tmp9, closure_6(guildId(15056).GuildRoleSubscriptionMemberPreview, { guildId, role })];
   const tmp15 = closure_8(closure_7, obj20);
   cResult[3] = guildId;
   cResult[4] = role;
@@ -310,7 +310,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj7 = { children: intl.string(guildId(1126).t["DJ+bGu"]) };
   const GappedList = guildId(9953).GappedList;
   intl = guildId(1126).intl;
-  items = [closure_6(closure_10, obj7), closure_6(guildId(1188).Spacer, { size: 8 }), closure_6(guildId(15052).GuildRoleSubscriptionMemberPreview, { guildId, role })];
+  items = [closure_6(closure_10, obj7), closure_6(guildId(1188).Spacer, { size: 8 }), closure_6(guildId(15056).GuildRoleSubscriptionMemberPreview, { guildId, role })];
   items1 = [closure_8(closure_7, obj6), , , ];
   let tmp5Result = null;
   if (size > 0) {

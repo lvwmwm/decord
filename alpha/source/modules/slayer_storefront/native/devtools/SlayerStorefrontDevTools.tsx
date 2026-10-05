@@ -1,9 +1,9 @@
-// Module ID: 15596
-// Function ID: 15597
+// Module ID: 15600
+// Function ID: 15601
 // Name: SlayerStorefrontDevTools
 // Dependencies: [32, 5, 19, 17, 1377, 5695, 6739, 1085, 21, 4890, 587, 1282, 558, 576, 6471, 504, 10532, 1369, 10531, 8872, 6098, 6074, 5993, 5593, 2]
 
-// Module 15596 (SlayerStorefrontDevTools)
+// Module 15600 (SlayerStorefrontDevTools)
 import nativeDefault from "native" /* 587 */;
 import GPlayActionCreators from "GPlayActionCreators" /* 8872 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -47,7 +47,7 @@ let obj = function _describeStorefrontSkuFailure() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c7;
@@ -720,7 +720,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -779,7 +779,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           closure_1(value);
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp30) {
         c5 = 3;
         throw tmp30;
@@ -882,7 +882,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -943,7 +943,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           closure_1(value);
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp30) {
         c5 = 3;
         throw tmp30;

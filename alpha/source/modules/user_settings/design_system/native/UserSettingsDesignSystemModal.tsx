@@ -1,9 +1,9 @@
-// Module ID: 15675
-// Function ID: 15676
+// Module ID: 15679
+// Function ID: 15680
 // Name: UserSettingsDesignSystemModal
-// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 6010, 5093, 6880, 1126, 6098, 4565, 6496, 10976, 14270, 4886, 8096, 11536, 14272, 10729, 8095, 10728, 6698, 6074, 5594, 2]
+// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 6010, 5093, 6880, 1126, 6098, 4565, 6496, 10976, 14272, 4886, 8096, 11536, 14274, 10729, 8095, 10728, 6698, 6074, 5594, 2]
 
-// Module 15675 (UserSettingsDesignSystemModal)
+// Module 15679 (UserSettingsDesignSystemModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 4886 */;
@@ -30,7 +30,7 @@ let size;
 let tmp;
 const Navigator = tmp(6496);
 const Modal = tmp(10976);
-const StepModal = tmp(14270);
+const StepModal = tmp(14272);
 function openDemoModal() {
   const arr = ModalActionCreatorsDefault;
   arr.push(closure_12);
@@ -479,7 +479,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               const tmp27 = metroImportAll;
               if (tmp19) {
                 const obj3 = { children: disclaimer };
-                tmp19 = metroImportDefault(tmp(14272).ModalDisclaimer, obj3);
+                tmp19 = metroImportDefault(tmp(14274).ModalDisclaimer, obj3);
               }
               const items1 = [tmp19, , ];
               let tmp20 = null != action;
@@ -569,7 +569,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const ModalFooter = tmp3(11536).ModalFooter;
     if (tmp8Result) {
       const obj5 = { children: disclaimer };
-      tmp8Result = tmp8(tmp3(14272).ModalDisclaimer, obj5);
+      tmp8Result = tmp8(tmp3(14274).ModalDisclaimer, obj5);
     }
     const items2 = [tmp8Result, , ];
     let tmp8Result3 = null != action;
@@ -700,7 +700,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAction) => {
               value: onAction,
               onValueChange(arg0) {
                           closure_0 = arg0;
-                          let tmp = closure_1_1(() => { /* body not rendered: F152956 */ });
+                          let tmp = closure_1_1(() => { /* body not rendered: F153242 */ });
                         }
             };
             return closure_1_7(closure_0(closure_1_2[24]).TableSwitchRow, obj, arg1);
@@ -718,7 +718,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAction) => {
               value: onAction,
               onValueChange(arg0) {
                           closure_0 = arg0;
-                          let tmp = closure_1_1(() => { /* body not rendered: F152956 */ });
+                          let tmp = closure_1_1(() => { /* body not rendered: F153242 */ });
                         }
             };
             return closure_1_7(closure_0(closure_1_2[24]).TableSwitchRow, obj, arg1);
@@ -747,15 +747,15 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAction) => {
   let items;
   let obj2;
   let obj4;
-  const f121089 = () => false;
+  const f121242 = () => false;
   c1 = undefined;
   onAction = onAction.onAction;
   let tmp = closure_9();
   let parts = "I said ooh ah fhqwhgads, I said ooh ah fhqhgads!".split(" ");
-  [arr2, c1] = react.useState(parts.map(f121089));
+  [arr2, c1] = react.useState(parts.map(f121242));
   let obj = { title: "Everybody come on fhqwhgads.", emoji: "\u{1F44F}", footer: closure_7(ModalFloatingAction, obj2), children: items };
   obj2 = { isVisible: arr2.some((item) => item), floatingBackgroundColor: tmp.screen.backgroundColor, text: "Come on fhqwhgads", onPress: onAction };
-  _slicedToArray(react.useState(parts.map(f121089)), 2);
+  _slicedToArray(react.useState(parts.map(f121242)), 2);
   ModalFloatingAction = parts(10728).ModalFloatingAction;
   const obj3 = { style: tmp.tableRows, children: closure_7(TableRowGroup, obj4) };
   obj4 = {

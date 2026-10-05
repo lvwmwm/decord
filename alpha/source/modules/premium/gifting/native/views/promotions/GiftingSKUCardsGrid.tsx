@@ -266,7 +266,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelect) => {
               }
               class P {
                 constructor(arg0, arg1) {
-                  obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F140438 */ }) };
+                  obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F140676 */ }) };
                   return jsx(View, obj, arg1);
                 }
               }
@@ -290,7 +290,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelect) => {
             const mapped = arr.map(tmp13);
             class P {
               constructor(arg0, arg1) {
-                obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F140438 */ }) };
+                obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F140676 */ }) };
                 return jsx(View, obj, arg1);
               }
             }
@@ -305,7 +305,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelect) => {
       }
       class P {
         constructor(arg0, arg1) {
-          obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F140438 */ }) };
+          obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F140676 */ }) };
           return jsx(View, obj, arg1);
         }
       }

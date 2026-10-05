@@ -38,7 +38,7 @@ let value = function _redeemGiftCode() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -73,7 +73,7 @@ let value = function _redeemGiftCode() {
               billingError = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -87,7 +87,7 @@ let value = function _redeemGiftCode() {
               if (obj18.getIsPaymentsBlocked()) {
                 closure_130_1(closure_130_2[3])();
                 c6 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } else {
                 channelId = options.channelId;
                 let tmp36 = null;

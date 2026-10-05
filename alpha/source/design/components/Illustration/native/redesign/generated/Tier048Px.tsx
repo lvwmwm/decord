@@ -1,10 +1,10 @@
-// Module ID: 13311
-// Function ID: 13312
+// Module ID: 13313
+// Function ID: 13314
 // Name: Tier048Px
-// Dependencies: [19, 17, 21, 7905, 13312, 13313, 13314, 558, 576, 4729, 2]
+// Dependencies: [19, 17, 21, 7905, 13314, 13315, 13316, 558, 576, 4729, 2]
 // Exports: getTier048PxSource
 
-// Module 13311 (Tier048Px)
+// Module 13313 (Tier048Px)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

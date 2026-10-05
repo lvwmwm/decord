@@ -704,7 +704,7 @@ export default function ForumComposer(parentChannel) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -739,7 +739,7 @@ export default function ForumComposer(parentChannel) {
               }
             }
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           if (1 === tmp4) {
@@ -962,7 +962,7 @@ export default function ForumComposer(parentChannel) {
     yield "IconComponent";
     closure_1 = tmp4;
     stickerId = closure_0.stickerId;
-    return "Reflect";
+    return "Set";
   });
   const items13 = [parentChannel, first1.length, isEdit, thread, str4, callback4, createForumPost, stateFromStores5];
   callback21 = useCallback2(function() {

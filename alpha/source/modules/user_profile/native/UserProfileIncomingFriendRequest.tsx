@@ -1,9 +1,9 @@
-// Module ID: 12948
-// Function ID: 12949
+// Module ID: 12950
+// Function ID: 12951
 // Name: UserProfileIncomingFriendRequest
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 7913, 7861, 6657, 12949, 5042, 6663, 4886, 1126, 1188, 1402, 12950, 5594, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 7913, 7861, 6657, 12951, 5042, 6663, 4886, 1126, 1188, 1402, 12952, 5594, 2]
 
-// Module 12948 (UserProfileIncomingFriendRequest)
+// Module 12950 (UserProfileIncomingFriendRequest)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1188 */;

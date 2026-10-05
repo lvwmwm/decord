@@ -516,10 +516,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiId) => {
       if (current != null) {
         currentResult = current();
       }
-      closure_0 = closure_2(function() { /* body not rendered: F151839 */ });
+      closure_0 = closure_2(function() { /* body not rendered: F152123 */ });
       tmp3 = closure_2;
       if (tmp3) {
-        tmp5 = (function fetch() { /* body not rendered: F151840 */ })();
+        tmp5 = (function fetch() { /* body not rendered: F152124 */ })();
       } else {
         current2 = tmp.current;
         if (current2 != null) {
@@ -634,7 +634,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiId) => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -687,7 +687,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiId) => {
               current();
             }
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp26) {
             c3 = 3;
             throw tmp26;

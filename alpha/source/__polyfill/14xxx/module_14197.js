@@ -1,23 +1,33 @@
 // Module ID: 14197
 // Function ID: 14198
-// Dependencies: []
-// Exports: getHostFromUrl
+// Dependencies: [14180]
+// Exports: default
 
 // Module 14197
+import ArgType from "ArgType" /* 14180 */;
 
-export const getHostFromUrl = function getHostFromUrl(scriptURL) {
-  const match = scriptURL.match(/^(?:https?:\/\/)?(\[[^\]]+\]|[^/:\s]+)(?::\d+)?(?:[/?#]|$)/);
-  let tmp2;
-  if (match != null) {
-    tmp2 = match[1];
-  }
-  if (typeof tmp2 !== "string") {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error("Invalid URL - host not found");
-    throw error;
-  } else {
-    return tmp2;
-  }
+
+export default () => (arg0) => {
+  const result = ArgType.assertHasLoggerPlugin(arg0);
+  let closure_0 = arg0;
+  return {
+    onConnect() {
+      console.log = () => {
+        const items = [...arguments];
+        log(...items);
+        const items1 = [...items];
+        log.log.apply(items1);
+      };
+      console.warn = () => {
+        const items = [...arguments];
+        warn(...items);
+        log.warn(items[0]);
+      };
+      console.debug = () => {
+        const items = [...arguments];
+        debug(...items);
+        log.debug(items[0]);
+      };
+    }
+  };
 };

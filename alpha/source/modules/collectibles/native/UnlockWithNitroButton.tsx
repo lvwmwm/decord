@@ -1,14 +1,14 @@
-// Module ID: 12996
-// Function ID: 12997
+// Module ID: 12998
+// Function ID: 12999
 // Name: UnlockWithNitroButton
-// Dependencies: [19, 6739, 7068, 1087, 21, 558, 576, 6742, 504, 12982, 1126, 4886, 8313, 5595, 2]
+// Dependencies: [19, 6739, 7068, 1087, 21, 558, 576, 6742, 504, 12984, 1126, 4886, 8313, 5595, 2]
 
-// Module 12996 (UnlockWithNitroButton)
+// Module 12998 (UnlockWithNitroButton)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import ProductIds from "ProductIds" /* 6742 */;
-import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 12982 */;
+import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 12984 */;
 import react from "react" /* 19 */;
 import IAPStore from "IAPStore" /* 6739 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7068 */;

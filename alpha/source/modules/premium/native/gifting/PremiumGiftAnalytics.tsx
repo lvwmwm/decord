@@ -56,7 +56,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentStep) => {
         if (cResult[7] !== basePurchaseAnalytics) {
           class A {
             constructor() {
-              return () => { /* body not rendered: F140692 */ };
+              return () => { /* body not rendered: F140930 */ };
             }
           }
           const items = [basePurchaseAnalytics, ref];
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentStep) => {
         } else {
           class A {
             constructor() {
-              return () => { /* body not rendered: F140692 */ };
+              return () => { /* body not rendered: F140930 */ };
             }
           }
           tmp10 = cResult[9];

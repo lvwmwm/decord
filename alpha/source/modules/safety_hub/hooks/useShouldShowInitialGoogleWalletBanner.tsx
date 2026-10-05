@@ -1,10 +1,10 @@
-// Module ID: 14549
-// Function ID: 14550
+// Module ID: 14553
+// Function ID: 14554
 // Name: useShouldShowInitialGoogleWalletBanner
 // Dependencies: [5, 32, 19, 8106, 8093, 504, 1369, 8092, 8113, 1385, 8116, 2]
 // Exports: useShouldShowInitialGoogleWalletBanner
 
-// Module 14549 (useShouldShowInitialGoogleWalletBanner)
+// Module 14553 (useShouldShowInitialGoogleWalletBanner)
 import SafetyHubConstants from "SafetyHubConstants" /* 8093 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -62,7 +62,7 @@ export const useShouldShowInitialGoogleWalletBanner = function useShouldShowInit
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c2;
@@ -140,7 +140,7 @@ export const useShouldShowInitialGoogleWalletBanner = function useShouldShowInit
                 c2 = 0;
               }
               c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp24) {
             if (0 === c2) {

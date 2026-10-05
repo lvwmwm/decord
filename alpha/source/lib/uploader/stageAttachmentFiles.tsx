@@ -78,7 +78,7 @@ let obj = function _stageAttachmentFiles() {
     if (closure_1 === undefined) {
       flag = false;
     }
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };

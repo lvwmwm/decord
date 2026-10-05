@@ -11,9 +11,9 @@ let obj = module_570.create((arg0) => {
   const state = arg0;
   obj = {
     utmSourceCurrent: "r",
-    utmMediumCurrent: "__initData",
-    utmCampaignCurrent: "section",
-    utmContentCurrent: "Set",
+    utmMediumCurrent: "filter",
+    utmCampaignCurrent: "isReactCompilerEnabled",
+    utmContentCurrent: "backgroundColor",
     setUtmCurrentContext(utmSourceCurrent) {
       obj = { utmSourceCurrent: utmSourceCurrent.utmSourceCurrent, utmMediumCurrent: utmSourceCurrent.utmMediumCurrent, utmCampaignCurrent: utmSourceCurrent.utmCampaignCurrent, utmContentCurrent: utmSourceCurrent.utmContentCurrent };
       return state(obj);

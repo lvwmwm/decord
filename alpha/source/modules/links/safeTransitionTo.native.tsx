@@ -40,7 +40,7 @@ let obj = function _safeTransitionTo() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -117,7 +117,7 @@ let obj = function _safeTransitionTo() {
             obj.transitionTo(closure_0, closure_1);
           }
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
         if (null != c2) {
           if (null != c2.guildId) {

@@ -45,7 +45,7 @@ let obj = function _validatePurchase() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -67,7 +67,7 @@ let obj = function _validatePurchase() {
               ({ productId: c0, premiumSubscription: c1, offerId: c2, currency: c3, price: c4, isGift: c5 } = closure_0);
               is_gift = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else {
             let self;
@@ -110,7 +110,7 @@ let obj = function _validatePurchase() {
             } else {
               price = 0;
               c6 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           }
         } catch (tmp19) {
@@ -432,7 +432,7 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
     flag = tmp185.isOneTimePurchase ?? false;
     flag2 = tmp185.allowPlanChange ?? true;
     ({ applicationId: c9, giftInfoOptions: c10, onPurchaseComplete: c11, onPurchaseError: c12 } = premiumSubscription);
-    return "Reflect";
+    return "Set";
   });
   const items1 = [tmp5, paymentGatewayPlanId, prop, id, premiumTrialOffer, premiumDiscountOffer, stateFromStores, isEligibleForBogoOffer];
   return useCallback(function() {

@@ -1,9 +1,9 @@
-// Module ID: 16497
-// Function ID: 16498
+// Module ID: 16501
+// Function ID: 16502
 // Name: GuildRoleSubscriptionPurchasePreviewCard
-// Dependencies: [32, 19, 17, 2051, 21, 4890, 587, 558, 576, 6469, 4886, 4854, 16498, 1987, 9953, 15054, 1188, 504, 5043, 1126, 5812, 15041, 16493, 5974, 16499, 2]
+// Dependencies: [32, 19, 17, 2051, 21, 4890, 587, 558, 576, 6469, 4886, 4854, 16502, 1987, 9953, 15058, 1188, 504, 5043, 1126, 5812, 15045, 16497, 5974, 16503, 2]
 
-// Module 16497 (GuildRoleSubscriptionPurchasePreviewCard)
+// Module 16501 (GuildRoleSubscriptionPurchasePreviewCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
@@ -14,8 +14,8 @@ import Text_Text from "Text/Text" /* 4886 */;
 import useChannelNameDefault from "useChannelName" /* 5043 */;
 import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6469 */;
 import LayoutUtils from "LayoutUtils" /* 9953 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15041 */;
-import EmojiIconDefault from "EmojiIcon" /* 15054 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15045 */;
+import EmojiIconDefault from "EmojiIcon" /* 15058 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -594,7 +594,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
   const first2 = _slicedToArray(obj5.useChannelBenefits(listingId), 1)[0];
   const obj6 = GuildRoleSubscriptionListingEditStateUtilsAll;
   const first3 = _slicedToArray(obj6.useIntangibleBenefits(listingId), 1)[0];
-  const obj7 = listingId(16493);
+  const obj7 = listingId(16497);
   const formattedSubscriptionPlan = obj7.useFormattedSubscriptionPlan(listingId);
   const first4 = first2[0];
   const first5 = first3[0];
@@ -682,7 +682,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
             }
             if (cResult[22] !== listingId) {
               const obj11 = { listingId };
-              const tmp46 = closure_8(guildId(16499), obj11);
+              const tmp46 = closure_8(guildId(16503), obj11);
               cResult[22] = listingId;
               cResult[23] = tmp46;
               tmp43 = tmp46;
@@ -833,7 +833,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { listingId, guildId };
-    const tmp2 = asyncRequire(16498, dependencyMap.paths);
+    const tmp2 = asyncRequire(16502, dependencyMap.paths);
     openLazy(tmp2, "PurchaseCard:" + listingId, obj);
   };
   cResult[0] = guildId;
@@ -874,7 +874,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
   size = first1.size;
   const obj7 = { style: tmp2.container, children: items2 };
   const obj8 = { style: tmp2.header, children: items };
-  const obj6 = listingId(16493);
+  const obj6 = listingId(16497);
   const formattedSubscriptionPlan = obj6.useFormattedSubscriptionPlan(listingId);
   const tmp13 = guildId;
   const tmp14 = guildId(5974);
@@ -888,7 +888,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
   const obj10 = { children: items1 };
   items1 = [closure_8(listingId(4886).Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: first }), closure_8(listingId(1188).Spacer, { size: 4 }), closure_8(listingId(4886).Text, { variant: "heading-md/medium", color: "text-default", children: formattedSubscriptionPlan })];
   items[2] = closure_9(closure_6, obj10);
-  items2 = [closure_9(closure_6, obj8), closure_8(listingId(1188).Spacer, { size: 16 }), closure_8(tmp13(16499), { listingId }), ];
+  items2 = [closure_9(closure_6, obj8), closure_8(listingId(1188).Spacer, { size: 16 }), closure_8(tmp13(16503), { listingId }), ];
   let tmp10Result6 = length > 0 || size > 0 || length2 > 0;
   if (tmp10Result6) {
     const items3 = [closure_8(listingId(1188).Spacer, { size: 24 }), , ];
@@ -950,7 +950,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
           const obj = { listingId, guildId };
-          const tmp2 = asyncRequire(16498, dependencyMap.paths);
+          const tmp2 = asyncRequire(16502, dependencyMap.paths);
           openLazy(tmp2, "PurchaseCard:" + listingId, obj);
         }
     };

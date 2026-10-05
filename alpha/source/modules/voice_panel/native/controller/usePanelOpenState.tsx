@@ -1,9 +1,9 @@
-// Module ID: 17347
-// Function ID: 17348
+// Module ID: 17371
+// Function ID: 17372
 // Name: usePanelOpenState
 // Dependencies: [32, 19, 5098, 11902, 1085, 558, 576, 4612, 1121, 12557, 4704, 4717, 12550, 8987, 2]
 
-// Module 17347 (usePanelOpenState)
+// Module 17371 (usePanelOpenState)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11902 */;

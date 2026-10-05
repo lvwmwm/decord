@@ -40,7 +40,7 @@ let obj = function _getActivityLaunchErrorInfo() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

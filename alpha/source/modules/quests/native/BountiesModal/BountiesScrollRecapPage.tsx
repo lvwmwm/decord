@@ -1,9 +1,9 @@
-// Module ID: 14853
-// Function ID: 14854
+// Module ID: 14857
+// Function ID: 14858
 // Name: BountiesScrollRecapPage
-// Dependencies: [19, 17, 4879, 21, 587, 4890, 1369, 558, 576, 8464, 14854, 14855, 7983, 6469, 1618, 504, 14856, 1126, 4886, 8491, 5594, 2]
+// Dependencies: [19, 17, 4879, 21, 587, 4890, 1369, 558, 576, 8464, 14858, 14859, 7983, 6469, 1618, 504, 14860, 1126, 4886, 8491, 5594, 2]
 
-// Module 14853 (BountiesScrollRecapPage)
+// Module 14857 (BountiesScrollRecapPage)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,9 +15,9 @@ import components_Button_Button from "components/Button/Button" /* 5594 */;
 import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6469 */;
 import common_Video from "common/Video" /* 7983 */;
 import OrbsIcon from "OrbsIcon" /* 8491 */;
-import _modDef14854 from "module_14854" /* 14854 */;
-import _modDef14855 from "module_14855" /* 14855 */;
-import _modDef14856 from "module_14856" /* 14856 */;
+import _modDef14858 from "module_14858" /* 14858 */;
+import _modDef14859 from "module_14859" /* 14859 */;
+import _modDef14860 from "module_14860" /* 14860 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4879 */;
@@ -60,7 +60,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (obj2.isAndroid()) {
     let tmp11;
     if (cResult[0] !== !reducedMotion) {
-      const obj3 = { url: _modDef14854, style: _false.absoluteFillObject, autoplay: !reducedMotion };
+      const obj3 = { url: _modDef14858, style: _false.absoluteFillObject, autoplay: !reducedMotion };
       const APNGPlayer = tmp(8464).APNGPlayer;
       const tmp15 = metroRequire(APNGPlayer, obj3);
       cResult[0] = !reducedMotion;
@@ -86,7 +86,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp5;
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj5 = { uri: _modDef14855 };
+      const obj5 = { uri: _modDef14859 };
       cResult[5] = obj5;
       tmp5 = obj5;
     } else {
@@ -117,12 +117,12 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = PlatformUtils;
   if (obj.isAndroid()) {
     const obj2 = { style, needsOffscreenAlphaCompositing: true, renderToHardwareTextureAndroid: true, pointerEvents: "none", children: metroRequire(APNGPlayer, obj3) };
-    obj3 = { url: _modDef14854, style: _false.absoluteFillObject, autoplay: !reducedMotion };
+    obj3 = { url: _modDef14858, style: _false.absoluteFillObject, autoplay: !reducedMotion };
     APNGPlayer = tmp(8464).APNGPlayer;
     tmp3Result = tmp3(React3, obj2);
   } else {
     const obj4 = { source: obj5, style, resizeMode: "contain", paused: reducedMotion, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
-    obj5 = { uri: _modDef14855 };
+    obj5 = { uri: _modDef14859 };
     const VideoComponent = tmp(7983).VideoComponent;
     tmp3Result = tmp3(VideoComponent, obj4);
   }
@@ -172,7 +172,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { uri: _modDef14856 };
+      const obj3 = { uri: _modDef14860 };
       cResult[5] = obj3;
       tmp13 = obj3;
     } else {
@@ -447,7 +447,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items1 = [tmp.root, style];
   const obj4 = { style: _false.absoluteFillObject, pointerEvents: "none", children: items2 };
   const obj5 = { source: obj6, style: _false.absoluteFillObject, resizeMode: "cover", paused: stateFromStores, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
-  obj6 = { uri: _modDef14856 };
+  obj6 = { uri: _modDef14860 };
   const VideoComponent = common_Video.VideoComponent;
   items2 = [metroRequire(VideoComponent, obj5), ];
   const obj7 = { style: tmp.orbsBackground, reducedMotion: stateFromStores };

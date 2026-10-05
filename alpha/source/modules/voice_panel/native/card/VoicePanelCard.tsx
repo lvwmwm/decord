@@ -1,9 +1,9 @@
-// Module ID: 17247
-// Function ID: 17248
+// Module ID: 17271
+// Function ID: 17272
 // Name: VoicePanelCard
-// Dependencies: [32, 19, 17, 4912, 4913, 5576, 11902, 11900, 17182, 11905, 1085, 4911, 11903, 21, 4612, 4886, 5605, 1188, 4890, 587, 558, 576, 5032, 4942, 5976, 1126, 5594, 11901, 504, 9093, 4945, 12861, 9096, 9092, 17248, 9104, 8482, 7923, 4891, 5597, 5974, 6570, 4580, 9122, 17250, 10725, 9074, 4589, 6657, 17183, 17195, 17181, 17251, 7850, 17252, 6140, 17253, 11904, 17254, 17255, 17256, 17257, 17258, 17268, 2]
+// Dependencies: [32, 19, 17, 4912, 4913, 5576, 11902, 11900, 17206, 11905, 1085, 4911, 11903, 21, 4612, 4886, 5605, 1188, 4890, 587, 558, 576, 5032, 4942, 5976, 1126, 5594, 11901, 504, 9093, 4945, 12861, 9096, 9092, 17272, 9104, 8482, 7923, 4891, 5597, 5974, 6570, 4580, 9122, 17274, 10725, 9074, 4589, 6657, 17207, 17219, 17205, 17275, 7850, 17276, 6140, 17277, 11904, 17278, 17279, 17280, 17281, 17282, 17292, 2]
 
-// Module 17247 (VoicePanelCard)
+// Module 17271 (VoicePanelCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -23,10 +23,10 @@ import roundToNearestPixelDefault from "roundToNearestPixel" /* 10725 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11900 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11903 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11905 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17181 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17182 */;
-import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 17250 */;
-import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 17251 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17205 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17206 */;
+import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 17274 */;
+import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 17275 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ApplicationStreamingStore_mod from "ApplicationStreamingStore" /* 4912 */;
@@ -3868,7 +3868,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
           tmp41 = tmp56;
         }
       }
-      const obj11 = { isRinging: tmp13, avatarURI: "r", avatarDecoration: "ix", layout: layoutTransition2, layoutPhysics: physics };
+      const obj11 = { isRinging: tmp13, avatarURI: "r", avatarDecoration: "emoji", layout: layoutTransition2, layoutPhysics: physics };
       const tmp59 = closure_20(closure_42, obj11);
       cResult[54] = tmp13;
       cResult[55] = layoutTransition2;
@@ -4150,7 +4150,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       tmp29 = closure_20;
     }
   }
-  const obj13 = { isRinging: tmp8, avatarURI: "r", avatarDecoration: "ix", layout: layoutTransition, layoutPhysics: physics };
+  const obj13 = { isRinging: tmp8, avatarURI: "r", avatarDecoration: "emoji", layout: layoutTransition, layoutPhysics: physics };
   tmp28 = closure_20(closure_42, obj13);
   tmp29 = closure_20;
 }));

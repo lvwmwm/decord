@@ -300,7 +300,7 @@ function loadView(byteLength, arg1) {
   }
   let obj = arg1;
   if (arg1 === undefined) {
-    obj = { expanded: false, async: false, includeUnknown: false, domParser: "ix" };
+    obj = { expanded: false, async: false, includeUnknown: false, domParser: "code" };
   }
   let flag = obj.expanded;
   if (flag === undefined) {

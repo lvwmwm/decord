@@ -3,24 +3,19 @@
 // Dependencies: []
 
 // Module 13832
-if (typeof process === "object") {
-  const _process3 = process;
-  if (process.env) {
-    const _process = process;
-    if (process.env.NODE_DEBUG) {
-      let fn;
-      const _process2 = process;
-      const obj = /\bsemver\b/i;
-      if (obj.test(process.env.NODE_DEBUG)) {
-        fn = () => {
-          const items = ["SEMVER", ...HermesBuiltin.copyRestArgs()];
-          return console.error.apply(items);
-        };
-      }
-      module.exports = fn;
-    }
-  }
-}
-fn = () => {
+let closure_0 = Object.freeze({ loose: true });
+let closure_1 = Object.freeze({});
 
+export default (arg0) => {
+  let tmp2;
+  let tmp = arg0;
+  if (tmp) {
+    if (typeof tmp !== "object") {
+      tmp = closure_0;
+    }
+    tmp2 = tmp;
+  } else {
+    tmp2 = closure_1;
+  }
+  return tmp2;
 };

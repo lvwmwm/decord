@@ -1,9 +1,9 @@
-// Module ID: 13342
-// Function ID: 13343
+// Module ID: 13344
+// Function ID: 13345
 // Name: PremiumSubscriptionUpsell
-// Dependencies: [19, 17, 2116, 1377, 1085, 6938, 1379, 21, 4890, 587, 4577, 1126, 1888, 558, 576, 504, 4528, 4886, 13343, 13344, 8894, 5594, 5605, 1105, 2]
+// Dependencies: [19, 17, 2116, 1377, 1085, 6938, 1379, 21, 4890, 587, 4577, 1126, 1888, 558, 576, 504, 4528, 4886, 13345, 13346, 8894, 5594, 5605, 1105, 2]
 
-// Module 13342 (PremiumSubscriptionUpsell)
+// Module 13344 (PremiumSubscriptionUpsell)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,8 +17,8 @@ import components_Button_Button from "components/Button/Button" /* 5594 */;
 import LinearGradientDefault from "LinearGradient" /* 5605 */;
 import ColorConstants from "ColorConstants" /* 6938 */;
 import PremiumFeatureListDefault from "PremiumFeatureList" /* 8894 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13343 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13344 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13345 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13346 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2116 */;

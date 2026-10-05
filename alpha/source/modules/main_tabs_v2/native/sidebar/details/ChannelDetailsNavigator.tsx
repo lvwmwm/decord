@@ -1,9 +1,9 @@
-// Module ID: 16962
-// Function ID: 16963
+// Module ID: 16981
+// Function ID: 16982
 // Name: ChannelDetailsNavigator
-// Dependencies: [32, 19, 17, 2051, 10653, 1085, 16794, 21, 7556, 558, 576, 573, 6772, 11019, 1126, 7498, 12442, 1252, 10062, 16963, 6496, 4737, 6016, 1618, 17014, 1369, 17015, 17016, 7568, 7569, 17017, 17018, 17019, 16870, 2]
+// Dependencies: [32, 19, 17, 2051, 10653, 1085, 16813, 21, 7556, 558, 576, 573, 6772, 11019, 1126, 7498, 12442, 1252, 10062, 16982, 6496, 4737, 6016, 1618, 17038, 1369, 17039, 17040, 7568, 7569, 17041, 17042, 17043, 16889, 2]
 
-// Module 16962 (ChannelDetailsNavigator)
+// Module 16981 (ChannelDetailsNavigator)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
@@ -12,8 +12,8 @@ import HeaderShared from "HeaderShared" /* 7498 */;
 import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10653 */;
 import navigateToThreadCreation from "navigateToThreadCreation" /* 11019 */;
 import AssetRegistryDefault from "AssetRegistry" /* 12442 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 16794 */;
-import ChannelSettingsModal from "ChannelSettingsModal" /* 16963 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 16813 */;
+import ChannelSettingsModal from "ChannelSettingsModal" /* 16982 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
@@ -182,7 +182,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((navigat
       if (cResult[5] !== navigation) {
         class C {
           constructor() {
-            return navigation.addListener("beforeRemove", () => { /* body not rendered: F147506 */ });
+            return navigation.addListener("beforeRemove", () => { /* body not rendered: F147781 */ });
           }
         }
         const items = [navigation];
@@ -194,7 +194,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((navigat
       } else {
         class C {
           constructor() {
-            return navigation.addListener("beforeRemove", () => { /* body not rendered: F147506 */ });
+            return navigation.addListener("beforeRemove", () => { /* body not rendered: F147781 */ });
           }
         }
         tmp9 = cResult[7];
@@ -205,7 +205,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((navigat
       if (cResult[8] !== channelId) {
         class C {
           constructor() {
-            return navigation.addListener("beforeRemove", () => { /* body not rendered: F147506 */ });
+            return navigation.addListener("beforeRemove", () => { /* body not rendered: F147781 */ });
           }
         }
         let obj3 = { channelId };
@@ -215,7 +215,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((navigat
       } else {
         class C {
           constructor() {
-            return navigation.addListener("beforeRemove", () => { /* body not rendered: F147506 */ });
+            return navigation.addListener("beforeRemove", () => { /* body not rendered: F147781 */ });
           }
         }
       }
@@ -224,14 +224,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((navigat
       if (cResult[10] !== channelId) {
         class C {
           constructor() {
-            return navigation.addListener("beforeRemove", () => { /* body not rendered: F147506 */ });
+            return navigation.addListener("beforeRemove", () => { /* body not rendered: F147781 */ });
           }
         }
         let channel = ChannelStore.getChannel(channelId);
         if (channel != null) {
           class C {
             constructor() {
-              return navigation.addListener("beforeRemove", () => { /* body not rendered: F147506 */ });
+              return navigation.addListener("beforeRemove", () => { /* body not rendered: F147781 */ });
             }
           }
         }
@@ -240,28 +240,28 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((navigat
       } else {
         class C {
           constructor() {
-            return navigation.addListener("beforeRemove", () => { /* body not rendered: F147506 */ });
+            return navigation.addListener("beforeRemove", () => { /* body not rendered: F147781 */ });
           }
         }
       }
       if (cResult[12] === channelId) {
         class C {
           constructor() {
-            return navigation.addListener("beforeRemove", () => { /* body not rendered: F147506 */ });
+            return navigation.addListener("beforeRemove", () => { /* body not rendered: F147781 */ });
           }
         }
       }
       if (null != tmp15) {
         class C {
           constructor() {
-            return navigation.addListener("beforeRemove", () => { /* body not rendered: F147506 */ });
+            return navigation.addListener("beforeRemove", () => { /* body not rendered: F147781 */ });
           }
         }
         const channelSettingsScreens = obj6.getChannelSettingsScreens(channelId, tmp15, channelSettingsScreensStyles);
       } else {
         class C {
           constructor() {
-            return navigation.addListener("beforeRemove", () => { /* body not rendered: F147506 */ });
+            return navigation.addListener("beforeRemove", () => { /* body not rendered: F147781 */ });
           }
         }
       }

@@ -24,7 +24,7 @@ let Component;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f96562 = (item) => item.trim();
+const f96705 = (item) => item.trim();
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -404,7 +404,7 @@ function _parse($ZodRealError, fn) {
           element.styles = obj.style;
           const obj2 = {};
           const parts = str15.split(";");
-          const found = parts.filter(f96562);
+          const found = parts.filter(f96705);
           let num3 = 0;
           if (0 < found.length) {
             while (true) {
@@ -758,7 +758,7 @@ _asyncToGenerator(async function(arg0) {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -807,7 +807,7 @@ _asyncToGenerator(async function(arg0) {
           }
         }
         c9 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp16) {
         closure_7 = tmp16;
         if (0 === c6) {
@@ -915,7 +915,7 @@ export const getStyle = function getStyle(str) {
   let str2;
   const obj = {};
   const parts = str.split(";");
-  const found = parts.filter(f96562);
+  const found = parts.filter(f96705);
   let num = 0;
   if (0 < found.length) {
     while (true) {

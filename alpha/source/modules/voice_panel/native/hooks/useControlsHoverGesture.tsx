@@ -1,9 +1,9 @@
-// Module ID: 17185
-// Function ID: 17186
+// Module ID: 17209
+// Function ID: 17210
 // Name: useControlsHoverGesture
 // Dependencies: [19, 11902, 11900, 558, 576, 11901, 4612, 6140, 2]
 
-// Module 17185 (useControlsHoverGesture)
+// Module 17209 (useControlsHoverGesture)
 import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11900 */;

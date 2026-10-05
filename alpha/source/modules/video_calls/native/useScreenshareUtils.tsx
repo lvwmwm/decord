@@ -30,7 +30,7 @@ const require = globalThis.__r;
 const useHasVideoPermissionDefault = useHasVideoPermission;
 let _require, closure_1, dependencyMap, importDefault, obj1, reportAVErrorResult;
 
-const f139711 = (arg0) => {
+const f139949 = (arg0) => {
   const tmp3 = arg0;
   if (tmp3) {
     const tmpResult = require("inject");
@@ -59,7 +59,7 @@ function startStream() {
   const obj = inject;
   if ("android" === obj.getVoiceEngine().platform) {
     const obj2 = ForegroundServiceManagerDefault;
-    const result = obj2.isForegroundServiceRunning(f139711);
+    const result = obj2.isForegroundServiceRunning(f139949);
   } else {
     BroadcastUploadManager.showPicker();
   }
@@ -479,7 +479,7 @@ export const tryStartScreenShare = function tryStartScreenShare(channel) {
     const obj2 = inject;
     if ("android" === obj2.getVoiceEngine().platform) {
       const obj3 = ForegroundServiceManagerDefault;
-      let result = obj3.isForegroundServiceRunning(f139711);
+      let result = obj3.isForegroundServiceRunning(f139949);
     } else {
       BroadcastUploadManager.showPicker();
     }

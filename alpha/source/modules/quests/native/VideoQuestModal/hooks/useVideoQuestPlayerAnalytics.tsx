@@ -1,10 +1,10 @@
-// Module ID: 14934
-// Function ID: 14935
+// Module ID: 14938
+// Function ID: 14939
 // Name: useVideoQuestPlayerAnalytics
-// Dependencies: [5, 19, 17, 4939, 1085, 10916, 7218, 7212, 5628, 14828, 7202, 7161, 1369, 7183, 7193, 10940, 14935, 14819, 7190, 5626, 14829, 5409, 5414, 5630, 2]
+// Dependencies: [5, 19, 17, 4939, 1085, 10916, 7218, 7212, 5628, 14832, 7202, 7161, 1369, 7183, 7193, 10940, 14939, 14823, 7190, 5626, 14833, 5409, 5414, 5630, 2]
 // Exports: default
 
-// Module 14934 (useVideoQuestPlayerAnalytics)
+// Module 14938 (useVideoQuestPlayerAnalytics)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 5409 */;
@@ -17,8 +17,8 @@ import AnalyticsActions from "AnalyticsActions" /* 7202 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7212 */;
 import AdDataUtils from "AdDataUtils" /* 7218 */;
 import VideoQuestUtils from "VideoQuestUtils" /* 10940 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 14819 */;
-import AdsVideoUtils from "AdsVideoUtils" /* 14829 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 14823 */;
+import AdsVideoUtils from "AdsVideoUtils" /* 14833 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import NetworkStore from "NetworkStore" /* 4939 */;
@@ -84,7 +84,7 @@ export default function useVideoQuestPlayerAnalytics(duration) {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c6;
@@ -174,7 +174,7 @@ export default function useVideoQuestPlayerAnalytics(duration) {
             trackQuestEvent(obj11);
             c6 = 0;
             c8 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp49) {
           closure_5 = tmp49;

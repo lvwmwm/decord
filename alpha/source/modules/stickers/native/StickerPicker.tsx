@@ -221,7 +221,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
         tmp = closure_0;
         tmp2 = closure_2;
         obj = closure_0(closure_2[20]);
-        batchUpdatesResult = obj.batchUpdates(() => { /* body not rendered: F139979 */ });
+        batchUpdatesResult = obj.batchUpdates(() => { /* body not rendered: F140217 */ });
       }
       return;
     }

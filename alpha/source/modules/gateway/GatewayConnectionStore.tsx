@@ -1,7 +1,7 @@
 // Module ID: 5436
 // Function ID: 5437
 // Name: GatewayConnectionStore
-// Dependencies: [5, 1231, 502, 5437, 2051, 1999, 4913, 4940, 2103, 5438, 4929, 1085, 1095, 13437, 13486, 3, 510, 6841, 5568, 1369, 10015, 13475, 12, 4942, 13454, 504, 584, 2]
+// Dependencies: [5, 1231, 502, 5437, 2051, 1999, 4913, 4940, 2103, 5438, 4929, 1085, 1095, 13439, 13488, 3, 510, 6841, 5568, 1369, 10015, 13477, 12, 4942, 13456, 504, 584, 2]
 
 // Module 5436 (GatewayConnectionStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -11,10 +11,10 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
 import DiscordAppStateDefault from "DiscordAppState" /* 10015 */;
-import GatewaySocketSingleton from "GatewaySocketSingleton" /* 13437 */;
-import ConnectionStateDefault from "ConnectionState" /* 13454 */;
-import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13475 */;
-import dispatchSocketMessageDefault from "dispatchSocketMessage" /* 13486 */;
+import GatewaySocketSingleton from "GatewaySocketSingleton" /* 13439 */;
+import ConnectionStateDefault from "ConnectionState" /* 13456 */;
+import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13477 */;
+import dispatchSocketMessageDefault from "dispatchSocketMessage" /* 13488 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -49,7 +49,7 @@ let obj = function _handleConnectionOpen() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -124,7 +124,7 @@ let obj = function _handleConnectionOpen() {
               c22 = false;
               let c24 = null;
               c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else if (arg0 === 1) {
             c4 = 3;
@@ -245,9 +245,9 @@ obj = {
     const socket2 = GatewaySocketSingleton.socket;
     let connectResult = socket2.isSessionEstablished();
     if (connectResult) {
-      const socket3 = tmp(13437).socket;
+      const socket3 = tmp(13439).socket;
       socket3.close();
-      const socket4 = tmp(13437).socket;
+      const socket4 = tmp(13439).socket;
       connectResult = socket4.connect();
     }
     return connectResult;
@@ -275,12 +275,12 @@ obj = {
         tmp6 = obj2.getState() !== constants2.BACKGROUND;
       }
       if (!tmp6) {
-        tmp6 = null != tmp(13437).localVoiceState.channelId;
+        tmp6 = null != tmp(13439).localVoiceState.channelId;
       }
       if (tmp6) {
         const obj3 = PauseGatewaySocketAll;
         obj3.setIsPaused(false);
-        const socket2 = tmp(13437).socket;
+        const socket2 = tmp(13439).socket;
         socket2.connect();
       }
     }
@@ -327,14 +327,14 @@ obj = {
     const isIOSResult = tmpResult.isIOS() && state === constants2.BACKGROUND;
     if (isIOSResult) {
       if (null == guildId.channelId) {
-        const socket3 = tmp(13437).socket;
+        const socket3 = tmp(13439).socket;
         socket3.close(true);
       } else {
-        const socket = tmp(13437).socket;
+        const socket = tmp(13439).socket;
         if (socket.isClosed()) {
           const obj3 = PauseGatewaySocketAll;
           obj3.setIsPaused(false);
-          const socket2 = tmp(13437).socket;
+          const socket2 = tmp(13439).socket;
           socket2.connect();
         }
       }
@@ -402,20 +402,20 @@ obj = {
         if (state === constants2.INACTIVE) {
           if (state.state === constants2.BACKGROUND) {
             if (null == GatewaySocketSingleton.localVoiceState.channelId) {
-              const socket4 = tmp(13437).socket;
+              const socket4 = tmp(13439).socket;
               socket4.close(true);
             }
           }
         }
         let isClosedResult = state === tmp7.BACKGROUND && state.state === tmp7.ACTIVE;
         if (isClosedResult) {
-          const socket2 = tmp(13437).socket;
+          const socket2 = tmp(13439).socket;
           isClosedResult = socket2.isClosed();
         }
         if (isClosedResult) {
           const obj2 = PauseGatewaySocketAll;
           obj2.setIsPaused(false);
-          const socket3 = tmp(13437).socket;
+          const socket3 = tmp(13439).socket;
           socket3.connect();
         }
       }
@@ -424,7 +424,7 @@ obj = {
       const obj3 = PauseGatewaySocketAll;
       obj3.setIsPaused(false);
       if (AuthenticationStore.isAuthenticated()) {
-        const socket = tmp(13437).socket;
+        const socket = tmp(13439).socket;
         socket.resetBackoff("App state is active");
       }
     }
@@ -444,7 +444,7 @@ obj = {
           const guildMembers = socket.requestGuildMembers(userIds.guildIds, obj);
         });
       } else {
-        const socket2 = tmp(13437).socket;
+        const socket2 = tmp(13439).socket;
         obj = { query: null, limit: null, presences: userIds.presences };
         ({ query: obj.query, limit: obj.limit } = userIds);
         let guildMembers = socket2.requestGuildMembers(userIds.guildIds, obj);
@@ -551,7 +551,7 @@ obj = {
           }
         });
       }
-      let socket2 = tmp(13437).socket;
+      let socket2 = tmp(13439).socket;
       socket2.streamWatch(streamKey);
     }
     return false;
@@ -560,10 +560,10 @@ obj = {
     streamKey = streamKey.streamKey;
     const socket = GatewaySocketSingleton.socket;
     if (socket.isSessionEstablished()) {
-      const socket2 = tmp(13437).socket;
+      const socket2 = tmp(13439).socket;
       socket2.streamDelete(streamKey);
     }
-    const localVoiceState = tmp(13437).localVoiceState;
+    const localVoiceState = tmp(13439).localVoiceState;
     localVoiceState.update();
     return false;
   },

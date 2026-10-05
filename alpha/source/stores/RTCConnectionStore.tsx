@@ -1,7 +1,7 @@
 // Module ID: 4913
 // Function ID: 4914
 // Name: RTCConnectionStore
-// Dependencies: [4907, 502, 4914, 1085, 4915, 3, 4917, 4944, 584, 13635, 2046, 4919, 5568, 13636, 504, 13638, 1252, 1987, 2]
+// Dependencies: [4907, 502, 4914, 1085, 4915, 3, 4917, 4944, 584, 13637, 2046, 4919, 5568, 13638, 504, 13640, 1252, 1987, 2]
 
 // Module 4913 (RTCConnectionStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -10,9 +10,9 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
 import Constants2 from "Constants" /* 4915 */;
 import TimeUtils from "TimeUtils" /* 4919 */;
-import VoiceStateAnalyticsDefault from "VoiceStateAnalytics" /* 13635 */;
-import useSpatialAudioControlState from "useSpatialAudioControlState" /* 13636 */;
-import trackVideoToggle from "trackVideoToggle" /* 13638 */;
+import VoiceStateAnalyticsDefault from "VoiceStateAnalytics" /* 13637 */;
+import useSpatialAudioControlState from "useSpatialAudioControlState" /* 13638 */;
+import trackVideoToggle from "trackVideoToggle" /* 13640 */;
 import GameConsoleStore from "GameConsoleStore" /* 4907 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4914 */;

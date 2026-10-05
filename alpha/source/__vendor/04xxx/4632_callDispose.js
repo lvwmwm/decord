@@ -23,7 +23,7 @@ export const callDispose = function callDispose(c0) {
         } else {
           try {
             let _Object = Object;
-            let definePropertyResult = Object.defineProperty(c0, key10006, { value: "Reflect", enumerable: true, configurable: "/assets/.cache/intl/bW9kdWxlcy9hZHM=" });
+            let definePropertyResult = Object.defineProperty(c0, key10006, { value: "Set", enumerable: true, configurable: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==" });
             continue;
           } catch (err) {
             continue;

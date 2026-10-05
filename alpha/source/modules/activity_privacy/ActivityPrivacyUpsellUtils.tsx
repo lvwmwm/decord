@@ -1,10 +1,10 @@
-// Module ID: 14655
-// Function ID: 14656
+// Module ID: 14659
+// Function ID: 14660
 // Name: ActivityPrivacyUpsellUtils
 // Dependencies: [5694, 4780, 2074, 5616, 1197, 6491, 1126, 2028, 2]
 // Exports: applyBulkGuildRestrictionChange, computeProfileToActivityUpsell, getActivityRestrictionSettingName, getPermissiveness, getProfileToActivityUpsellStrings, getUpsellStrings, profileVisibilityToActivityRestriction, sortGuildIdsByFrecency
 
-// Module 14655 (ActivityPrivacyUpsellUtils)
+// Module 14659 (ActivityPrivacyUpsellUtils)
 import intl5 from "intl" /* 1126 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
 import UserSettings from "UserSettings" /* 2028 */;

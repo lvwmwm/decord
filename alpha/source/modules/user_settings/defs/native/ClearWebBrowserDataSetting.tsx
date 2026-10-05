@@ -1,9 +1,9 @@
-// Module ID: 15298
-// Function ID: 15299
+// Module ID: 15302
+// Function ID: 15303
 // Name: ClearWebBrowserDataSetting
 // Dependencies: [5, 7634, 5713, 1126, 4851, 4568, 11129, 1369, 1105, 2]
 
-// Module 15298 (ClearWebBrowserDataSetting)
+// Module 15302 (ClearWebBrowserDataSetting)
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl4 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
@@ -56,7 +56,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -90,7 +90,7 @@ let obj = {
             intl = tmp3(c2[3]).intl;
             open(obj6);
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp6) {
           c2 = 3;

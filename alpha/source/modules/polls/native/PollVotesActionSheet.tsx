@@ -532,7 +532,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
             let obj = { value, done: true };
             return obj;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -648,11 +648,11 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
                 }
                 ref2.current = true;
                 ref = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             }
             ref = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp29) {
             ref = 3;
             throw tmp29;
@@ -843,7 +843,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
           let obj = { value, done: true };
           return obj;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -956,11 +956,11 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
               }
               ref2.current = true;
               ref = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           }
           ref = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp29) {
           ref = 3;
           throw tmp29;

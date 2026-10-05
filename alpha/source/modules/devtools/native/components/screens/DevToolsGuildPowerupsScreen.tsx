@@ -1,9 +1,9 @@
-// Module ID: 15577
-// Function ID: 15578
+// Module ID: 15581
+// Function ID: 15582
 // Name: DevToolsGuildPowerupsScreen
-// Dependencies: [5, 19, 17, 1231, 12221, 2074, 4699, 15578, 1085, 21, 4890, 587, 1282, 4461, 7668, 12147, 558, 576, 15442, 6698, 12153, 2033, 2036, 1618, 504, 4886, 5993, 6074, 2]
+// Dependencies: [5, 19, 17, 1231, 12221, 2074, 4699, 15582, 1085, 21, 4890, 587, 1282, 4461, 7668, 12147, 558, 576, 15446, 6698, 12153, 2033, 2036, 1618, 504, 4886, 5993, 6074, 2]
 
-// Module 15577 (DevToolsGuildPowerupsScreen)
+// Module 15581 (DevToolsGuildPowerupsScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -13,7 +13,7 @@ import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /*
 import dismissible_content from "dismissible_content" /* 2036 */;
 import _modDef4461 from "module_4461" /* 4461 */;
 import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 12153 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15442 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15446 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -21,7 +21,7 @@ import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 12221 */;
 import GuildStore from "GuildStore" /* 2074 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
-import DevToolsGuildPowerupsConstants from "DevToolsGuildPowerupsConstants" /* 15578 */;
+import DevToolsGuildPowerupsConstants from "DevToolsGuildPowerupsConstants" /* 15582 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -63,7 +63,7 @@ let obj = function _setWarningBoosts() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -106,7 +106,7 @@ let obj = function _setWarningBoosts() {
           const obj2 = closure_132_0(closure_132_2[15]);
           const guildBoostEntitlements = obj2.fetchGuildBoostEntitlements(closure_0, true);
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp19) {
         c6 = 3;
@@ -132,7 +132,7 @@ obj = function _sendPowerupsSystemMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -163,7 +163,7 @@ obj = function _sendPowerupsSystemMessage() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp8) {
         c1 = 3;

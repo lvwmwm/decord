@@ -1,9 +1,9 @@
-// Module ID: 17607
-// Function ID: 17608
+// Module ID: 17631
+// Function ID: 17632
 // Name: SubscriptionManager
 // Dependencies: [5, 1377, 4530, 4534, 6899, 1379, 6613, 1976, 5404, 6905, 2]
 
-// Module 17607 (SubscriptionManager)
+// Module 17631 (SubscriptionManager)
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1976 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1377 */;
@@ -45,7 +45,7 @@ class SubscriptionManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -77,7 +77,7 @@ class SubscriptionManager extends AutomaticLifecycleManager {
                 }
               }
               currentUser = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else if (1 === c2) {
             if (arg0 === 1) {
@@ -161,7 +161,7 @@ class SubscriptionManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -194,7 +194,7 @@ class SubscriptionManager extends AutomaticLifecycleManager {
             return obj;
           }
           applyArgumentsResult = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp7) {
           applyArgumentsResult = 3;
           throw tmp7;
@@ -213,7 +213,7 @@ class SubscriptionManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -259,7 +259,7 @@ class SubscriptionManager extends AutomaticLifecycleManager {
               return obj;
             }
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp12) {
           c2 = 3;

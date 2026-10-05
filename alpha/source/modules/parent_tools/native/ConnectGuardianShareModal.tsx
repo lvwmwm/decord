@@ -1,9 +1,9 @@
-// Module ID: 17577
-// Function ID: 17578
+// Module ID: 17601
+// Function ID: 17602
 // Name: ConnectGuardianShareModal
-// Dependencies: [19, 17, 7048, 21, 4890, 587, 1126, 2493, 4567, 5093, 11528, 573, 14684, 8095, 8096, 5593, 4886, 14685, 5968, 6010, 558, 576, 10976, 2]
+// Dependencies: [19, 17, 7048, 21, 4890, 587, 1126, 2493, 4567, 5093, 11528, 573, 14688, 8095, 8096, 5593, 4886, 14689, 5968, 6010, 558, 576, 10976, 2]
 
-// Module 17577 (ConnectGuardianShareModal)
+// Module 17601 (ConnectGuardianShareModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,7 +12,7 @@ import _modDef2493 from "module_2493" /* 2493 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
 import NavigatorHeader from "NavigatorHeader" /* 6010 */;
 import Modal2 from "Modal" /* 10976 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 14684 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 14688 */;
 import react from "react" /* 19 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7048 */;
 import Fragment from "Fragment" /* 21 */;
@@ -85,7 +85,7 @@ function ConnectGuardianShareScreen() {
     let tmp11Result;
     if (null != stateFromStores1) {
       const obj11 = { shareActions: "full", linkCode: stateFromStores, expiresAt: stateFromStores1, onRefresh: getLinkCode };
-      tmp11Result = tmp11(tmp2(14685).ConnectGuardianCard, obj11);
+      tmp11Result = tmp11(tmp2(14689).ConnectGuardianCard, obj11);
     }
     const obj12 = { children: closure_6(ModalContent, obj13) };
     items4[1] = tmp11Result;

@@ -1,9 +1,9 @@
-// Module ID: 17310
-// Function ID: 17311
+// Module ID: 17334
+// Function ID: 17335
 // Name: VoicePanelNsfwAlert
 // Dependencies: [19, 2070, 2074, 21, 558, 576, 5713, 5705, 1126, 5713, 2]
 
-// Module 17310 (VoicePanelNsfwAlert)
+// Module 17334 (VoicePanelNsfwAlert)
 import GuildRecord from "GuildRecord" /* 2070 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 5705 */;
 import react from "react" /* 19 */;

@@ -1,15 +1,15 @@
-// Module ID: 16406
-// Function ID: 16407
+// Module ID: 16410
+// Function ID: 16411
 // Name: ICYMIInfoModal
-// Dependencies: [19, 21, 558, 576, 16407, 6010, 16408, 1260, 5093, 6880, 1126, 14163, 16416, 16424, 6496, 10976, 14270, 2]
+// Dependencies: [19, 21, 558, 576, 16411, 6010, 16412, 1260, 5093, 6880, 1126, 14165, 16420, 16428, 6496, 10976, 14272, 2]
 
-// Module 16406 (ICYMIInfoModal)
+// Module 16410 (ICYMIInfoModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import NavigatorHeader from "NavigatorHeader" /* 6010 */;
-import StepModal2 from "StepModal" /* 14270 */;
-import ICYMIInfoModalTypes from "ICYMIInfoModalTypes" /* 16407 */;
+import StepModal2 from "StepModal" /* 14272 */;
+import ICYMIInfoModalTypes from "ICYMIInfoModalTypes" /* 16411 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -215,7 +215,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp7 = cResult[5];
       }
       if (extendedOnboarding) {
-        const ICYMIInfoScreens2 = tmp(16407).ICYMIInfoScreens;
+        const ICYMIInfoScreens2 = tmp(16411).ICYMIInfoScreens;
         const tmp11 = skipIntro ? ICYMIInfoScreens2.TOPICS_CLOUD : ICYMIInfoScreens2.DEFAULT;
         if (cResult[8] === tmp6) {
           if (cResult[9] === tmp7) {
@@ -246,7 +246,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp8;
       }
     }
-    const ICYMIInfoScreens = tmp(16407).ICYMIInfoScreens;
+    const ICYMIInfoScreens = tmp(16411).ICYMIInfoScreens;
     if (extendedOnboarding) {
       let items1;
       if (skipIntro) {
@@ -278,11 +278,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let items = [extendedOnboarding, skipIntro];
   if (extendedOnboarding) {
     const obj2 = { screens: tmp, steps: tmp2, initialRouteName: skipIntro ? ICYMIInfoScreens.TOPICS_CLOUD : ICYMIInfoScreens.DEFAULT };
-    const StepModal = tmp4(14270).StepModal;
-    ICYMIInfoScreens = tmp4(16407).ICYMIInfoScreens;
+    const StepModal = tmp4(14272).StepModal;
+    ICYMIInfoScreens = tmp4(16411).ICYMIInfoScreens;
     tmp3Result = tmp3(StepModal, obj2);
   } else {
-    const obj = { screens: tmp, initialRouteName: extendedOnboarding(16407).ICYMIInfoScreens.DEFAULT };
+    const obj = { screens: tmp, initialRouteName: extendedOnboarding(16411).ICYMIInfoScreens.DEFAULT };
     const Modal = tmp4(10976).Modal;
     tmp3Result = tmp3(Modal, obj);
   }

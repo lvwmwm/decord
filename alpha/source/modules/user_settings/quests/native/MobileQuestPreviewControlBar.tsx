@@ -1,9 +1,9 @@
-// Module ID: 14973
-// Function ID: 14974
+// Module ID: 14977
+// Function ID: 14978
 // Name: MobileQuestPreviewControlBar
-// Dependencies: [5, 32, 19, 17, 7187, 1096, 21, 4890, 587, 10911, 504, 9994, 6694, 1126, 6688, 14974, 14978, 7575, 14774, 12768, 4886, 2]
+// Dependencies: [5, 32, 19, 17, 7187, 1096, 21, 4890, 587, 10911, 504, 9994, 6694, 1126, 6688, 14978, 14982, 7575, 14778, 12768, 4886, 2]
 
-// Module 14973 (MobileQuestPreviewControlBar)
+// Module 14977 (MobileQuestPreviewControlBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
@@ -113,7 +113,7 @@ class MobileQuestPreviewControlBar {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -154,7 +154,7 @@ class MobileQuestPreviewControlBar {
             closure_128_3(false);
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp24) {
           refreshQuest = tmp24;
           if (0 === v0) {
@@ -182,7 +182,7 @@ class MobileQuestPreviewControlBar {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -223,7 +223,7 @@ class MobileQuestPreviewControlBar {
             closure_128_3(false);
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp24) {
           refreshQuest = tmp24;
           if (0 === v0) {
@@ -251,7 +251,7 @@ class MobileQuestPreviewControlBar {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -294,7 +294,7 @@ class MobileQuestPreviewControlBar {
             closure_128_3(false);
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp25) {
           refreshQuest = tmp25;
           if (0 === v0) {

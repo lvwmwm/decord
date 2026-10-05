@@ -1,9 +1,9 @@
-// Module ID: 14736
-// Function ID: 14737
+// Module ID: 14740
+// Function ID: 14741
 // Name: FamilyCenterParentalControlsScreenTime
-// Dependencies: [17, 1085, 21, 4890, 587, 558, 576, 12468, 1126, 2493, 4886, 5993, 14697, 1490, 6074, 2]
+// Dependencies: [17, 1085, 21, 4890, 587, 558, 576, 12468, 1126, 2493, 4886, 5993, 14701, 1490, 6074, 2]
 
-// Module 14736 (FamilyCenterParentalControlsScreenTime)
+// Module 14740 (FamilyCenterParentalControlsScreenTime)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -307,7 +307,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((readOnly) => {
       class P {
         constructor(arg0) {
           obj = { rule: readOnly, teenId: id, navigation: closure_1, readOnly };
-          return jsx(f68420, obj, readOnly.ruleId);
+          return jsx(f68470, obj, readOnly.ruleId);
         }
       }
     } else {
@@ -331,7 +331,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((readOnly) => {
     class P {
       constructor(arg0) {
         obj = { rule: readOnly, teenId: id, navigation: closure_1, readOnly };
-        return jsx(f68420, obj, readOnly.ruleId);
+        return jsx(f68470, obj, readOnly.ruleId);
       }
     }
     cResult[15] = navigation;

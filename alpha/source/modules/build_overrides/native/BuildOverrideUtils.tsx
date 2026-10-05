@@ -36,7 +36,7 @@ let obj = function _setBuildOverride() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -79,7 +79,7 @@ let obj = function _setBuildOverride() {
             obj.show(obj9);
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp20) {
         c4 = 3;
@@ -106,7 +106,7 @@ obj = function _clearBuildOverride() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -147,7 +147,7 @@ obj = function _clearBuildOverride() {
             obj.show(obj8);
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp17) {
         c3 = 3;
@@ -172,7 +172,7 @@ obj = function _toggleOverride() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -217,7 +217,7 @@ obj = function _toggleOverride() {
                 if (null != id1) {
                   setBuildOverrideForBranch(id1);
                   c4 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               }
               c3 = 1;
@@ -246,7 +246,7 @@ obj = function _toggleOverride() {
           }
         }
         c4 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp28) {
         c4 = 3;
         throw tmp28;
@@ -270,7 +270,7 @@ obj = function _setBuildOverrideFromLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -336,7 +336,7 @@ obj = function _setBuildOverrideFromLink() {
           }
         }
         c4 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp25) {
         c4 = 3;
         throw tmp25;

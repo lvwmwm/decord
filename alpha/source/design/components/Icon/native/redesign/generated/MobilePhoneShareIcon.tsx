@@ -1,14 +1,14 @@
-// Module ID: 17320
-// Function ID: 17321
+// Module ID: 17344
+// Function ID: 17345
 // Name: MobilePhoneShareIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 17321, 4579, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 17345, 4579, 2]
 
-// Module 17320 (MobilePhoneShareIcon)
+// Module 17344 (MobilePhoneShareIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4579 */;
-import AssetRegistry from "AssetRegistry" /* 17321 */;
+import AssetRegistry from "AssetRegistry" /* 17345 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

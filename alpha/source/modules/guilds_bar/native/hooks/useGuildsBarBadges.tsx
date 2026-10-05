@@ -1,14 +1,14 @@
-// Module ID: 16265
-// Function ID: 16266
+// Module ID: 16269
+// Function ID: 16270
 // Name: useGuildsBarBadges
-// Dependencies: [109, 19, 11160, 4700, 2112, 2074, 4509, 1377, 1085, 21, 4890, 558, 576, 504, 4701, 16266, 4580, 587, 1188, 16270, 16234, 16233, 2]
+// Dependencies: [109, 19, 11160, 4700, 2112, 2074, 4509, 1377, 1085, 21, 4890, 558, 576, 504, 4701, 16270, 4580, 587, 1188, 16274, 16238, 16237, 2]
 
-// Module 16265 (useGuildsBarBadges)
+// Module 16269 (useGuildsBarBadges)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1188 */;
 import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 4701 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16234 */;
-import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 16270 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16238 */;
+import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 16274 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import GuildIncidentsStore from "GuildIncidentsStore" /* 11160 */;
@@ -293,7 +293,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
     }
     const tmpResult6 = tmp(504);
     const stateFromStores2 = tmpResult6.useStateFromStores(tmp13, tmp16, tmp17);
-    const tmp20 = stateFromStores(16266)(arg0);
+    const tmp20 = stateFromStores(16270)(arg0);
     const tmpResult7 = tmp(4580);
     const token = tmpResult7.useToken(stateFromStores(587).modules.mobile.GUILD_BAR_ITEM_SIZE);
     const tmpResult8 = tmp(4580);

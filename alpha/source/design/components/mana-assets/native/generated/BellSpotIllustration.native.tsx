@@ -1,13 +1,13 @@
-// Module ID: 16464
-// Function ID: 16465
+// Module ID: 16468
+// Function ID: 16469
 // Name: BellSpotIllustration
-// Dependencies: [21, 558, 576, 16465, 5974, 2]
+// Dependencies: [21, 558, 576, 16469, 5974, 2]
 
-// Module 16464 (BellSpotIllustration)
+// Module 16468 (BellSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5974 */;
-import _modDef16465 from "module_16465" /* 16465 */;
+import _modDef16469 from "module_16469" /* 16469 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef16465 };
+    const obj2 = { uri: _modDef16469 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num3 === undefined) {
     num3 = 1;
   }
-  const obj2 = { uri: _modDef16465 };
+  const obj2 = { uri: _modDef16469 };
   FastImageDefault;
   size = { width: num * num3, height: num2 * num3 };
   const items = [size];

@@ -1,15 +1,15 @@
-// Module ID: 15519
-// Function ID: 15520
+// Module ID: 15523
+// Function ID: 15524
 // Name: CheckpointModal
-// Dependencies: [32, 19, 17, 15520, 5115, 1096, 21, 4890, 587, 558, 576, 1618, 15521, 15522, 504, 15525, 15526, 15527, 15515, 5093, 9667, 5885, 15529, 15530, 15532, 15548, 15549, 1126, 15550, 6017, 15551, 4589, 2]
+// Dependencies: [32, 19, 17, 15524, 5115, 1096, 21, 4890, 587, 558, 576, 1618, 15525, 15526, 504, 15529, 15530, 15531, 15519, 5093, 9667, 5885, 15533, 15534, 15536, 15552, 15553, 1126, 15554, 6017, 15555, 4589, 2]
 
-// Module 15519 (CheckpointModal)
+// Module 15523 (CheckpointModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import CheckpointStore2 from "CheckpointStore" /* 15520 */;
-import CheckpointFlows from "CheckpointFlows" /* 15521 */;
+import CheckpointStore2 from "CheckpointStore" /* 15524 */;
+import CheckpointFlows from "CheckpointFlows" /* 15525 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import CheckpointConstants from "CheckpointConstants" /* 5115 */;
@@ -59,7 +59,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((didPlayerShareData
   closure_12();
   first(1618)();
   if (cResult[0] !== (undefined === didPlayerShareDataWithDiscord || didPlayerShareDataWithDiscord)) {
-    const tmpResult = tmp(15521);
+    const tmpResult = tmp(15525);
     const checkpointFlow = tmpResult.getCheckpointFlow(tmp4);
     cResult[0] = undefined === didPlayerShareDataWithDiscord || didPlayerShareDataWithDiscord;
     cResult[1] = checkpointFlow;
@@ -68,7 +68,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((didPlayerShareData
     tmp8 = cResult[1];
   }
   _require = tmp8;
-  const tmp10 = ref(react.useState(tmp(15522).CheckpointRoute.HOME), 2);
+  const tmp10 = ref(react.useState(tmp(15526).CheckpointRoute.HOME), 2);
   first = tmp10[0];
   dependencyMap = tmp10[1];
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
@@ -89,10 +89,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((didPlayerShareData
   const tmpResult2 = tmp(504);
   const stateFromStores = tmpResult2.useStateFromStores(tmp12, tmp13);
   ref = obj3.useRef(0);
-  const tmp6Result = first(15525);
-  const tmp6ResultResult = tmp6Result(first(15526));
+  const tmp6Result = first(15529);
+  const tmp6ResultResult = tmp6Result(first(15530));
   react = tmp6ResultResult;
-  first(15527)();
+  first(15531)();
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     class O {
       constructor() {
@@ -212,19 +212,19 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((didPlayerShareData
   let tmp = closure_12();
   const tmp2 = route;
   const rect = route(1618)();
-  let obj = checkpointFlow(15521);
+  let obj = checkpointFlow(15525);
   checkpointFlow = obj.getCheckpointFlow(flag);
-  const tmp6 = ref(react.useState(checkpointFlow(15522).CheckpointRoute.HOME), 2);
+  const tmp6 = ref(react.useState(checkpointFlow(15526).CheckpointRoute.HOME), 2);
   route = tmp6[0];
   dependencyMap = tmp6[1];
   const items = [CheckpointStore];
   const obj2 = checkpointFlow(504);
   const stateFromStores = obj2.useStateFromStores(items, () => CheckpointStore.isMuted);
   ref = react.useRef(0);
-  const tmp9 = route(15525);
-  const tmp9Result = tmp9(route(15526));
+  const tmp9 = route(15529);
+  const tmp9Result = tmp9(route(15530));
   react = tmp9Result;
-  route(15527)();
+  route(15531)();
   const effect = react.useEffect(() => {
     const fetchState = CheckpointStore.fetchState;
     const tmp = fetchState !== constants.INIT && fetchState !== constants.ERROR;
@@ -258,13 +258,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((didPlayerShareData
   } else {
     VoiceNormalIcon = tmp4(5885).VoiceNormalIcon;
   }
-  const HOME = tmp4(15522).CheckpointRoute.HOME;
-  const tmp4Result = checkpointFlow(15521);
+  const HOME = tmp4(15526).CheckpointRoute.HOME;
+  const tmp4Result = checkpointFlow(15525);
   const tmp16 = null == tmp4Result.getAdjacentCheckpointRoute(checkpointFlow, route, 1);
-  const tmp4Result2 = checkpointFlow(15522);
+  const tmp4Result2 = checkpointFlow(15526);
   const checkpointRoutePresentation = tmp4Result2.getCheckpointRoutePresentation(route);
   ({ characterStage, statsScreen } = checkpointRoutePresentation);
-  let tmp19Result = route === tmp4(15522).CheckpointRoute.HOME || null != statsScreen;
+  let tmp19Result = route === tmp4(15526).CheckpointRoute.HOME || null != statsScreen;
   const obj3 = { theme: ThemeTypes.DARK, children: closure_11(callback, obj4) };
   const items4 = [tmp.layer, ];
   let coveredCharacterLayer = tmp19Result;
@@ -274,7 +274,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((didPlayerShareData
     coveredCharacterLayer = tmp.coveredCharacterLayer;
   }
   items4[1] = coveredCharacterLayer;
-  const obj5 = { style: items4, pointerEvents: str2, accessibilityElementsHidden: tmp19Result, importantForAccessibility: str, children: closure_10(tmp2(15529), { stage: characterStage }) };
+  const obj5 = { style: items4, pointerEvents: str2, accessibilityElementsHidden: tmp19Result, importantForAccessibility: str, children: closure_10(tmp2(15533), { stage: characterStage }) };
   str = "auto";
   str2 = "auto";
   if (tmp19Result) {
@@ -283,22 +283,22 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((didPlayerShareData
   if (tmp19Result) {
     str = "no-hide-descendants";
   }
-  items5 = [closure_10(callback, obj5), tmp19Result && closure_10(tmp2(15530), {}), , , ];
-  tmp19Result && closure_10(tmp2(15530), {});
+  items5 = [closure_10(callback, obj5), tmp19Result && closure_10(tmp2(15534), {}), , , ];
+  tmp19Result && closure_10(tmp2(15534), {});
   if (tmp19Result) {
-    const obj6 = { style: tmp.layer, children: closure_10(tmp2(15532), obj7) };
+    const obj6 = { style: tmp.layer, children: closure_10(tmp2(15536), obj7) };
     obj7 = { route };
     tmp19Result = tmp19(tmp21, obj6);
   }
   items5[2] = tmp19Result;
   const obj8 = { style: items6, children: items7 };
   items6 = [tmp.nav, { marginTop: rect.top, marginLeft: rect.left, marginRight: rect.right }];
-  const obj9 = { uri: tmp2(15549), style: tmp.logo };
-  const tmp2Result = tmp2(15548);
+  const obj9 = { uri: tmp2(15553), style: tmp.logo };
+  const tmp2Result = tmp2(15552);
   items7 = [closure_10(tmp2Result, obj9), ];
   const obj10 = { style: tmp.headerActions, children: items8 };
-  const obj11 = { onPress: checkpointFlow(15515).toggleMute, accessibilityLabel: string(stateFromStores ? t.YqAjXy : t.w4m945), children: closure_10(VoiceNormalIcon, obj12) };
-  const tmp2Result3 = tmp2(15550);
+  const obj11 = { onPress: checkpointFlow(15519).toggleMute, accessibilityLabel: string(stateFromStores ? t.YqAjXy : t.w4m945), children: closure_10(VoiceNormalIcon, obj12) };
+  const tmp2Result3 = tmp2(15554);
   const intl = tmp4(1126).intl;
   string = intl.string;
   t = tmp4(1126).t;
@@ -306,13 +306,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((didPlayerShareData
   const tmp25 = route === HOME;
   items8 = [closure_10(tmp2Result3, obj11), ];
   const obj13 = { onPress: tmp2(5093).pop, accessibilityLabel: intl2.string(checkpointFlow(1126).t.cpT0Cq), children: closure_10(checkpointFlow(6017).XSmallIcon, obj14) };
-  const tmp2Result4 = tmp2(15550);
+  const tmp2Result4 = tmp2(15554);
   intl2 = tmp4(1126).intl;
   obj14 = { color, size: "xs" };
   items8[1] = closure_10(tmp2Result4, obj13);
   items7[1] = closure_11(callback, obj10);
   items5[3] = closure_11(callback, obj8);
-  items5[4] = closure_10(tmp2(15551), { onBack: callback1, onNext: callback2, isTerminal: tmp16, isHome: tmp25 });
+  items5[4] = closure_10(tmp2(15555), { onBack: callback1, onNext: callback2, isTerminal: tmp16, isHome: tmp25 });
   return closure_10(ThemeContextProvider, obj3);
 });
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointModal.tsx");

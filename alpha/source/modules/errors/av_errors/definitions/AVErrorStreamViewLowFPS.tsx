@@ -1,15 +1,15 @@
-// Module ID: 18009
-// Function ID: 18010
+// Module ID: 18031
+// Function ID: 18032
 // Name: AVErrorStreamViewLowFPS
-// Dependencies: [4906, 4912, 502, 4929, 1085, 18010, 4942, 9102, 9095, 18007, 2]
+// Dependencies: [4906, 4912, 502, 4929, 1085, 18032, 4942, 9102, 9095, 18029, 2]
 
-// Module 18009 (AVErrorStreamViewLowFPS)
+// Module 18031 (AVErrorStreamViewLowFPS)
 import Constants from "Constants" /* 1085 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 4942 */;
 import AVError from "AVError" /* 9095 */;
 import StreamQualityUtils from "StreamQualityUtils" /* 9102 */;
-import AVErrorContext from "AVErrorContext" /* 18007 */;
-import AVErrorUtils from "AVErrorUtils" /* 18010 */;
+import AVErrorContext from "AVErrorContext" /* 18029 */;
+import AVErrorUtils from "AVErrorUtils" /* 18032 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

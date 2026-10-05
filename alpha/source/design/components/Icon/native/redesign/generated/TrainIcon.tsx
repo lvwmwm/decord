@@ -1,14 +1,14 @@
-// Module ID: 15423
-// Function ID: 15424
+// Module ID: 15427
+// Function ID: 15428
 // Name: TrainIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 15424, 4579, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 15428, 4579, 2]
 
-// Module 15423 (TrainIcon)
+// Module 15427 (TrainIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4579 */;
-import AssetRegistry from "AssetRegistry" /* 15424 */;
+import AssetRegistry from "AssetRegistry" /* 15428 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

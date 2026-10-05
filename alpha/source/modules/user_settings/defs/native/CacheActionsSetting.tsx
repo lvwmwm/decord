@@ -1,9 +1,9 @@
-// Module ID: 15392
-// Function ID: 15393
+// Module ID: 15396
+// Function ID: 15397
 // Name: CacheActionsSetting
-// Dependencies: [5, 32, 19, 5436, 21, 4854, 4574, 4568, 4812, 1126, 558, 576, 504, 2028, 15393, 6644, 15361, 15396, 5993, 15394, 11800, 5968, 15397, 4851, 6074, 6701, 11129, 2]
+// Dependencies: [5, 32, 19, 5436, 21, 4854, 4574, 4568, 4812, 1126, 558, 576, 504, 2028, 15397, 6644, 15365, 15400, 5993, 15398, 11800, 5968, 15401, 4851, 6074, 6701, 11129, 2]
 
-// Module 15392 (CacheActionsSetting)
+// Module 15396 (CacheActionsSetting)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -11,9 +11,9 @@ import UserSettings from "UserSettings" /* 2028 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
 import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4574 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 15393 */;
-import DiskUsageManagerDefault from "DiskUsageManager" /* 15394 */;
-import FileWarningIcon from "FileWarningIcon" /* 15397 */;
+import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 15397 */;
+import DiskUsageManagerDefault from "DiskUsageManager" /* 15398 */;
+import FileWarningIcon from "FileWarningIcon" /* 15401 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
@@ -37,7 +37,7 @@ const TableRowGroup2 = tmp(6074);
 const BottomSheetTitleHeader2 = tmp(6644);
 const ActionSheet2 = tmp(6701);
 const FileIcon = tmp(11800);
-const FileUpIcon = tmp(15361);
+const FileUpIcon = tmp(15365);
 function handleCacheActionPress(text) {
   let tmp6;
   const obj = DesignSystemsNotificationComponentsExperiment;
@@ -144,7 +144,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     [tmp8, tmp9] = cResult;
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp16 = closure_7(tmp(15361).FileUpIcon, {});
+    const tmp16 = closure_7(tmp(15365).FileUpIcon, {});
     const intl3 = tmp(1126).intl;
     const stringResult1 = intl3.string(tmp(1126).t["/GUaXh"]);
     cResult[2] = tmp16;
@@ -167,7 +167,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -198,7 +198,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             const intl = tmp(c2[9]).intl;
             handleCacheActionPress(intl.string(tmp(c2[9]).t.GgUIfl));
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp14) {
           c2 = 3;
@@ -235,7 +235,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       const _Symbol = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp30 = closure_7(tmp(15397).FileWarningIcon, { color: "text-feedback-critical" });
+        const tmp30 = closure_7(tmp(15401).FileWarningIcon, { color: "text-feedback-critical" });
         const intl5 = tmp(1126).intl;
         const stringResult2 = intl5.string(tmp(1126).t.tgwiMO);
         cResult[11] = tmp30;
@@ -260,7 +260,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -295,7 +295,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 const intl = tmp(c2[9]).intl;
                 closure_1_10(intl.string(tmp(c2[9]).t["23xR5w"]));
                 c2 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp12) {
               c2 = 3;
@@ -432,7 +432,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -464,7 +464,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             const intl = closure_128_0(closure_128_2[9]).intl;
             closure_128_10(intl.string(closure_128_0(closure_128_2[9]).t.GgUIfl));
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp14) {
           c2 = 3;
@@ -510,7 +510,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -546,7 +546,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             const intl = closure_128_0(closure_128_2[9]).intl;
             closure_128_10(intl.string(closure_128_0(closure_128_2[9]).t["23xR5w"]));
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp20) {
           c2 = 3;

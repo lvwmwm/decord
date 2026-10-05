@@ -375,7 +375,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) =
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -414,7 +414,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) =
               const result = obj.setOrientationLockState(application);
             }
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp16) {
             c2 = 3;
             throw tmp16;
@@ -509,7 +509,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) =
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -548,7 +548,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) =
             const result = obj.setOrientationLockState(closure_128_3);
           }
           c2 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp17) {
           c2 = 3;
           throw tmp17;

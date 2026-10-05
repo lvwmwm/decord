@@ -1,9 +1,9 @@
-// Module ID: 16533
-// Function ID: 16534
+// Module ID: 16537
+// Function ID: 16538
 // Name: JoinRequestActionSheetContent
-// Dependencies: [19, 17, 2051, 6646, 6707, 21, 4890, 587, 558, 576, 7913, 7902, 7899, 7910, 7850, 16531, 7918, 7928, 12881, 12947, 10842, 504, 12299, 4701, 5855, 1126, 5594, 4702, 12702, 4886, 4797, 4552, 11, 4792, 4577, 7575, 4795, 5592, 1618, 16534, 2]
+// Dependencies: [19, 17, 2051, 6646, 6707, 21, 4890, 587, 558, 576, 7913, 7902, 7899, 7910, 7850, 16535, 7918, 7928, 12881, 12949, 10842, 504, 12299, 4701, 5855, 1126, 5594, 4702, 12702, 4886, 4797, 4552, 11, 4792, 4577, 7575, 4795, 5592, 1618, 16538, 2]
 
-// Module 16533 (JoinRequestActionSheetContent)
+// Module 16537 (JoinRequestActionSheetContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -15,7 +15,7 @@ import Text_Text from "Text/Text" /* 4886 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 6646 */;
 import Constants from "Constants" /* 6707 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16531 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16535 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import Fragment from "Fragment" /* 21 */;
@@ -134,11 +134,11 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) => 
                             if (cResult[29] !== user) {
                               const obj4 = { user };
                               cResult[29] = user;
-                              cResult[30] = closure_8(joinRequest(12947), obj4);
-                              closure_8(joinRequest(12947), obj4);
+                              cResult[30] = closure_8(joinRequest(12949), obj4);
+                              closure_8(joinRequest(12949), obj4);
                               class S {
                                 constructor() {
-                                  obj = { userId: user.id, onClose() { /* body not rendered: F145842 */ } };
+                                  obj = { userId: user.id, onClose() { /* body not rendered: F146088 */ } };
                                   tmp = closure_1(closure_2[14])(obj);
                                   return;
                                 }
@@ -176,7 +176,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) => 
                                           items[1] = tmp37;
                                           class S {
                                             constructor() {
-                                              obj = { userId: user.id, onClose() { /* body not rendered: F145842 */ } };
+                                              obj = { userId: user.id, onClose() { /* body not rendered: F146088 */ } };
                                               tmp = closure_1(closure_2[14])(obj);
                                               return;
                                             }
@@ -193,7 +193,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) => 
                                         items1[1] = tmp34;
                                         class S {
                                           constructor() {
-                                            obj = { userId: user.id, onClose() { /* body not rendered: F145842 */ } };
+                                            obj = { userId: user.id, onClose() { /* body not rendered: F146088 */ } };
                                             tmp = closure_1(closure_2[14])(obj);
                                             return;
                                           }
@@ -210,7 +210,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) => 
                                 const obj7 = { fallbackBackground: gradientFallbackBackground, primaryColor, secondaryColor, containerStyle: tmp23, children: null };
                                 class S {
                                   constructor() {
-                                    obj = { userId: user.id, onClose() { /* body not rendered: F145842 */ } };
+                                    obj = { userId: user.id, onClose() { /* body not rendered: F146088 */ } };
                                     tmp = closure_1(closure_2[14])(obj);
                                     return;
                                   }
@@ -229,7 +229,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) => 
                             items2 = [, ];
                             class S {
                               constructor() {
-                                obj = { userId: user.id, onClose() { /* body not rendered: F145842 */ } };
+                                obj = { userId: user.id, onClose() { /* body not rendered: F146088 */ } };
                                 tmp = closure_1(closure_2[14])(obj);
                                 return;
                               }
@@ -247,7 +247,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) => 
                         const tmp26 = closure_8(tmp(12881).PrimaryInfo, obj9);
                         class S {
                           constructor() {
-                            obj = { userId: user.id, onClose() { /* body not rendered: F145842 */ } };
+                            obj = { userId: user.id, onClose() { /* body not rendered: F146088 */ } };
                             tmp = closure_1(closure_2[14])(obj);
                             return;
                           }
@@ -261,7 +261,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) => 
                       const items3 = [, , ];
                       class S {
                         constructor() {
-                          obj = { userId: user.id, onClose() { /* body not rendered: F145842 */ } };
+                          obj = { userId: user.id, onClose() { /* body not rendered: F146088 */ } };
                           tmp = closure_1(closure_2[14])(obj);
                           return;
                         }
@@ -278,7 +278,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) => 
                 const obj10 = { user, disableStatus: true, backgroundColor: avatarBackground, statusStyle: tmp16, onPress: null };
                 class S {
                   constructor() {
-                    obj = { userId: user.id, onClose() { /* body not rendered: F145842 */ } };
+                    obj = { userId: user.id, onClose() { /* body not rendered: F146088 */ } };
                     tmp = closure_1(closure_2[14])(obj);
                     return;
                   }
@@ -296,7 +296,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) => 
             const tmp15 = closure_8(joinRequest(7918), obj11);
             class S {
               constructor() {
-                obj = { userId: user.id, onClose() { /* body not rendered: F145842 */ } };
+                obj = { userId: user.id, onClose() { /* body not rendered: F146088 */ } };
                 tmp = closure_1(closure_2[14])(obj);
                 return;
               }
@@ -310,7 +310,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) => 
         }
         class S {
           constructor() {
-            obj = { userId: user.id, onClose() { /* body not rendered: F145842 */ } };
+            obj = { userId: user.id, onClose() { /* body not rendered: F146088 */ } };
             tmp = closure_1(closure_2[14])(obj);
             return;
           }
@@ -381,7 +381,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) => 
     const tmpResult = tmp(10842);
     items4[0] = closure_8(tmp6(12881).PrimaryInfo, obj10);
     const obj11 = { user };
-    items4[1] = closure_8(tmp(12947), obj11);
+    items4[1] = closure_8(tmp(12949), obj11);
     items2[1] = closure_8(tmpResult, obj7);
     items1[1] = closure_9(View, obj4);
     tmp9 = closure_9(closure_10, obj2);
@@ -1790,7 +1790,7 @@ const memoResult = react.memo(function JoinRequestActionSheetContent(displayProf
   items1[2] = closure_8(View, obj6);
   items1[3] = closure_8(closure_17, { joinRequest, user });
   const obj7 = { guildId: joinRequest.guildId, userId: joinRequest.userId, selectedJoinRequestId: joinRequest.joinRequestId };
-  items1[4] = closure_8(tmp2(16534), obj7);
+  items1[4] = closure_8(tmp2(16538), obj7);
   return closure_9(View, obj);
 });
 size = size_mod;

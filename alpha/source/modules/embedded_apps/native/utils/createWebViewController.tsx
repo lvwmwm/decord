@@ -41,7 +41,7 @@ export default function createWebViewController(id, arg1) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -84,7 +84,7 @@ export default function createWebViewController(id, arg1) {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp17) {
           closure_3 = tmp17;

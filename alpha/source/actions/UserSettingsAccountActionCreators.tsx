@@ -43,7 +43,7 @@ let body = function _saveProfileAndAccountRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -69,7 +69,7 @@ let body = function _saveProfileAndAccountRequest() {
               token = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c4) {
             if (arg0 === 1) {

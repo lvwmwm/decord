@@ -1,21 +1,21 @@
-// Module ID: 16022
-// Function ID: 16023
+// Module ID: 16026
+// Function ID: 16027
 // Name: MessagesFastestList
-// Dependencies: [19, 21, 4890, 587, 558, 576, 15968, 15953, 16016, 15965, 15963, 16017, 15978, 16015, 16018, 6561, 6559, 6552, 2]
+// Dependencies: [19, 21, 4890, 587, 558, 576, 15972, 15957, 16020, 15969, 15967, 16021, 15982, 16019, 16022, 6561, 6559, 6552, 2]
 
-// Module 16022 (MessagesFastestList)
+// Module 16026 (MessagesFastestList)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6559 */;
 import FastestListItemTypeDefault from "FastestListItemType" /* 6561 */;
-import MessagesItemChannel from "MessagesItemChannel" /* 15953 */;
-import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 15963 */;
-import useMessagesData from "useMessagesData" /* 15968 */;
-import MessagesItemHappeningNow from "MessagesItemHappeningNow" /* 15978 */;
-import MessagesItemEmptyState from "MessagesItemEmptyState" /* 16015 */;
-import MessagesItemSeparator from "MessagesItemSeparator" /* 16016 */;
-import MessagesItemSuggestedFriendsHeaderDefault from "MessagesItemSuggestedFriendsHeader" /* 16017 */;
-import MessagesItemAddFriendsWidget from "MessagesItemAddFriendsWidget" /* 16018 */;
+import MessagesItemChannel from "MessagesItemChannel" /* 15957 */;
+import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 15967 */;
+import useMessagesData from "useMessagesData" /* 15972 */;
+import MessagesItemHappeningNow from "MessagesItemHappeningNow" /* 15982 */;
+import MessagesItemEmptyState from "MessagesItemEmptyState" /* 16019 */;
+import MessagesItemSeparator from "MessagesItemSeparator" /* 16020 */;
+import MessagesItemSuggestedFriendsHeaderDefault from "MessagesItemSuggestedFriendsHeader" /* 16021 */;
+import MessagesItemAddFriendsWidget from "MessagesItemAddFriendsWidget" /* 16022 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -310,7 +310,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
       return jsx(MessagesItemSeparatorDefault, {});
     } else if (useMessagesData.MessagesDataSections.SuggestedFriends === arg0) {
       const obj4 = { suggestedFriend: friendSuggestions[row], onAddFriendSuggestions: setAddedFriendSuggestions };
-      const MessagesItemSuggestedFriendFast = tmp(15965).MessagesItemSuggestedFriendFast;
+      const MessagesItemSuggestedFriendFast = tmp(15969).MessagesItemSuggestedFriendFast;
       const merged = Object.assign(obj4);
       return <MessagesItemSuggestedFriendFast height={listItemSuggestedFriendHeight} />;
     } else if (useMessagesData.MessagesDataSections.Placeholders === arg0) {
@@ -383,7 +383,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
       return jsx(MessagesItemSeparatorDefault, {});
     } else if (useMessagesData.MessagesDataSections.SuggestedFriends === arg0) {
       const obj4 = { suggestedFriend: friendSuggestions[row], onAddFriendSuggestions: setAddedFriendSuggestions };
-      const MessagesItemSuggestedFriendFast = tmp(15965).MessagesItemSuggestedFriendFast;
+      const MessagesItemSuggestedFriendFast = tmp(15969).MessagesItemSuggestedFriendFast;
       const merged = Object.assign(obj4);
       return <MessagesItemSuggestedFriendFast height={listItemSuggestedFriendHeight} />;
     } else if (useMessagesData.MessagesDataSections.Placeholders === arg0) {
@@ -500,7 +500,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
           const tmp5 = require;
           if (useMessagesData.MessagesDataSections.FavoriteChannels === arg1) {
             return channelFavorites[arg2].channelId;
-          } else if (tmp5(15968).MessagesDataSections.Channels === arg1) {
+          } else if (tmp5(15972).MessagesDataSections.Channels === arg1) {
             return channels[arg2].channelId;
           }
         }

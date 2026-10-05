@@ -1,10 +1,10 @@
-// Module ID: 15515
-// Function ID: 15516
+// Module ID: 15519
+// Function ID: 15520
 // Name: CheckpointActionCreators
-// Dependencies: [5, 1085, 584, 15516, 1282, 15517, 2]
+// Dependencies: [5, 1085, 584, 15520, 1282, 15521, 2]
 // Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, toggleMute
 
-// Module 15515 (CheckpointActionCreators)
+// Module 15519 (CheckpointActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
@@ -75,7 +75,7 @@ let obj = function _fetchCheckpointData() {
     if (closure_0 === undefined) {
       flag = false;
     }
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };
@@ -92,7 +92,7 @@ obj = function _completeCheckpoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -165,7 +165,7 @@ obj = function _resetCheckpoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c2;

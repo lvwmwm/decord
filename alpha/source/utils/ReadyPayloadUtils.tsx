@@ -1,10 +1,10 @@
-// Module ID: 13487
-// Function ID: 13488
+// Module ID: 13489
+// Function ID: 13490
 // Name: ReadyPayloadUtils
 // Dependencies: [2055, 2078, 7133, 7137, 2099, 7138, 2095, 12, 38, 2]
 // Exports: hydrateInitialGuild, hydrateReadyPayloadPrioritized, hydrateReadySupplementalPayload, preloadReadyPayloadData
 
-// Module 13487 (ReadyPayloadUtils)
+// Module 13489 (ReadyPayloadUtils)
 import ChannelRecord from "ChannelRecord" /* 2055 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 2078 */;
 import isCacheEnabled from "isCacheEnabled" /* 7133 */;

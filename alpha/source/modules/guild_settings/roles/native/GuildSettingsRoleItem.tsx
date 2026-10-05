@@ -1,9 +1,9 @@
-// Module ID: 17767
-// Function ID: 17768
+// Module ID: 17791
+// Function ID: 17792
 // Name: GuildSettingsRoleItem
 // Dependencies: [5, 19, 17, 1085, 21, 4890, 587, 4886, 558, 576, 5793, 6685, 5708, 1126, 11190, 5705, 5783, 4847, 7575, 6704, 6702, 5605, 1375, 1103, 9232, 5873, 1188, 9904, 5879, 5993, 2]
 
-// Module 17767 (GuildSettingsRoleItem)
+// Module 17791 (GuildSettingsRoleItem)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import Text_Text from "Text/Text" /* 4886 */;
@@ -853,7 +853,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -887,7 +887,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
             const obj2 = onPress(onMoveUp[15]);
             obj2.deleteRole(guildId, tmp.id);
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp15) {
             c2 = 3;
             throw tmp15;
@@ -1035,7 +1035,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                         const obj4 = { value, done: true };
                         return obj4;
                       } else {
-                        return { value: "IconComponent", done: "IconComponent" };
+                        return { value: "IconComponent", done: null };
                       }
                     } else {
                       try {
@@ -1069,7 +1069,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
                         const obj2 = require("GuildActionCreators");
                         obj2.deleteRole(guildId, tmp.id);
                         c2 = 3;
-                        return { value: "IconComponent", done: "IconComponent" };
+                        return { value: "IconComponent", done: null };
                       } catch (tmp15) {
                         c2 = 3;
                         throw tmp15;

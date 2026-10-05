@@ -36,7 +36,7 @@ let obj = function _createScheduledMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;
@@ -63,7 +63,7 @@ let obj = function _createScheduledMessage() {
             errorMsg = undefined;
             c7 = 1;
             c8 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c7) {
           if (arg0 === 1) {
@@ -165,7 +165,7 @@ obj = function _updateScheduledMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c6;
@@ -195,7 +195,7 @@ obj = function _updateScheduledMessage() {
               errorMsg = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -277,7 +277,7 @@ obj = function _updateScheduledMessage() {
             dispatch(obj);
             c6 = 0;
             c8 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp58) {
           closure_5 = tmp58;
@@ -310,7 +310,7 @@ obj = function _deleteScheduledMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -374,7 +374,7 @@ obj = function _deleteScheduledMessage() {
             obj.dispatch(obj11);
             c5 = 0;
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp34) {
           closure_4 = tmp34;
@@ -405,7 +405,7 @@ obj = function _sendScheduledMessageNow() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -469,7 +469,7 @@ obj = function _sendScheduledMessageNow() {
             obj.dispatch(obj11);
             c5 = 0;
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp34) {
           closure_4 = tmp34;
@@ -513,7 +513,7 @@ obj = function _fetchScheduledMessages() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -567,7 +567,7 @@ obj = function _fetchScheduledMessages() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp30) {
         closure_2 = tmp30;

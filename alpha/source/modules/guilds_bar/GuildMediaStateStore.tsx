@@ -1,9 +1,9 @@
-// Module ID: 13518
-// Function ID: 13519
+// Module ID: 13520
+// Function ID: 13521
 // Name: GuildMediaStateStore
-// Dependencies: [2050, 1246, 7037, 2056, 2055, 4912, 502, 2051, 2074, 4509, 4519, 2103, 5071, 4909, 1085, 13519, 1106, 4498, 13520, 9160, 11, 5573, 9000, 504, 568, 584, 2]
+// Dependencies: [2050, 1246, 7037, 2056, 2055, 4912, 502, 2051, 2074, 4509, 4519, 2103, 5071, 4909, 1085, 13521, 1106, 4498, 13522, 9160, 11, 5573, 9000, 504, 568, 584, 2]
 
-// Module 13518 (GuildMediaStateStore)
+// Module 13520 (GuildMediaStateStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
@@ -11,7 +11,7 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelTypes from "ChannelTypes" /* 1106 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4498 */;
-import BlockedUserUtils from "BlockedUserUtils" /* 13520 */;
+import BlockedUserUtils from "BlockedUserUtils" /* 13522 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7037 */;

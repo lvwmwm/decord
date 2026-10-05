@@ -295,7 +295,7 @@ class AnalyticsFeedItemSeenManager {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 try {
@@ -324,7 +324,7 @@ class AnalyticsFeedItemSeenManager {
                   } else {
                     closure_128_0();
                     c2 = 3;
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } catch (tmp8) {
                   c2 = 3;
@@ -347,7 +347,7 @@ class AnalyticsFeedItemSeenManager {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -377,7 +377,7 @@ class AnalyticsFeedItemSeenManager {
             } else {
               closure_0();
               c3 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp10) {
             c3 = 3;

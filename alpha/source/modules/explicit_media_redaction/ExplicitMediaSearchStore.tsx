@@ -1,9 +1,9 @@
-// Module ID: 13504
-// Function ID: 13505
+// Module ID: 13506
+// Function ID: 13507
 // Name: ExplicitMediaSearchStore
 // Dependencies: [5112, 7109, 504, 584, 2]
 
-// Module 13504 (ExplicitMediaSearchStore)
+// Module 13506 (ExplicitMediaSearchStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 5112 */;

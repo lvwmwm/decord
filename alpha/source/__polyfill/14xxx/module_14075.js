@@ -1,24 +1,37 @@
 // Module ID: 14075
 // Function ID: 14076
-// Dependencies: [14059, 14060, 14076]
+// Dependencies: [14076, 14079, 14061, 14083, 14084, 14080]
 
 // Module 14075
-import _mod14059 from "module_14059" /* 14059 */;
-import _mod14060 from "module_14060" /* 14060 */;
+import _mod14061 from "module_14061" /* 14061 */;
 import _mod14076 from "module_14076" /* 14076 */;
+import _mod14080 from "module_14080" /* 14080 */;
+import _mod14083 from "module_14083" /* 14083 */;
+import _mod14084 from "module_14084" /* 14084 */;
+import prop from "module_14079" /* 14079 */;
 
-const prop = _mod14059["__core-js_shared__"] || _mod14060("__core-js_shared__", {});
-let versions = prop.versions;
-if (!versions) {
-  const items = [];
-  prop.versions = items;
-  versions = items;
+let tmp2;
+let closure_2 = _mod14076("wks");
+const _Symbol = _mod14061.Symbol;
+if (prop) {
+  tmp2 = _Symbol.for || _mod14061.Symbol;
+  const tmp3 = _Symbol.for || _mod14061.Symbol;
+} else {
+  tmp2 = _Symbol && _mod14061.Symbol.withoutSetter || _mod14083;
 }
-const push = versions.push;
-let str2 = "global";
-if (_mod14076) {
-  str2 = "pure";
-}
-push({ version: "3.41.0", mode: str2, copyright: "\u00A9 2014-2025 Denis Pushkarev (zloirock.ru)", license: "https://github.com/zloirock/core-js/blob/v3.41.0/LICENSE", source: "https://github.com/zloirock/core-js" });
+let closure_3 = tmp2;
 
-export default prop;
+export default (arg0) => {
+  if (!_mod14084(closure_2, arg0)) {
+    if (_mod14080) {
+      let tmp6;
+      const tmpResult = _mod14084;
+      if (tmpResult(_mod14061.Symbol, arg0)) {
+        tmp6 = tmp(14061).Symbol[arg0];
+      }
+      closure_2[arg0] = tmp6;
+    }
+    tmp6 = closure_3(`Symbol.${arg0}`);
+  }
+  return closure_2[arg0];
+};

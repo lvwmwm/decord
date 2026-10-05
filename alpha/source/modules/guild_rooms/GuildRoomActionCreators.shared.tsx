@@ -37,7 +37,7 @@ let obj = function _guildRoomConnect() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         while (true) {
@@ -140,7 +140,7 @@ let obj = function _guildRoomConnect() {
               }
               c11 = 0;
               c13 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             c11 = 1;
@@ -173,7 +173,7 @@ obj = function _guildRoomUpdate() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c6;
@@ -330,7 +330,7 @@ obj = function _guildRoomUpdate() {
             }
             c6 = 0;
             c8 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp77) {
           originalRoomObjects = tmp77;
@@ -424,7 +424,7 @@ obj = function _createGuildRoomNote() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -477,7 +477,7 @@ obj = function _createGuildRoomNote() {
             }
             c7 = 0;
             c9 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp24) {
           closure_6 = tmp24;
@@ -508,7 +508,7 @@ obj = function _deleteGuildRoomNote() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -542,7 +542,7 @@ obj = function _deleteGuildRoomNote() {
               const result = obj.trackGuildRoomObjectInteracted(obj7);
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp14) {
           c6 = 3;
@@ -569,7 +569,7 @@ obj = function _fetchGuildRoom() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -616,7 +616,7 @@ obj = function _fetchGuildRoom() {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp20) {
           closure_4 = tmp20;

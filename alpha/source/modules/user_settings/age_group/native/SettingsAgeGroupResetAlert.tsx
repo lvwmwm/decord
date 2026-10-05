@@ -1,9 +1,9 @@
-// Module ID: 14540
-// Function ID: 14541
+// Module ID: 14544
+// Function ID: 14545
 // Name: SettingsAgeGroupResetAlert
-// Dependencies: [5, 21, 558, 576, 1490, 13573, 5709, 4567, 1126, 3045, 5713, 5713, 2]
+// Dependencies: [5, 21, 558, 576, 1490, 13575, 5709, 4567, 1126, 3045, 5713, 5713, 2]
 
-// Module 14540 (SettingsAgeGroupResetAlert)
+// Module 14544 (SettingsAgeGroupResetAlert)
 import _modDef3045 from "module_3045" /* 3045 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Fragment from "Fragment" /* 21 */;
@@ -46,7 +46,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c2;
@@ -94,7 +94,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             navigation.goBack();
             c2 = 0;
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp25) {
           if (0 === c2) {
@@ -190,7 +190,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c2;
@@ -237,7 +237,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             closure_128_0.goBack();
             c2 = 0;
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp25) {
           if (0 === c2) {

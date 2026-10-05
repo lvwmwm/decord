@@ -1,9 +1,9 @@
-// Module ID: 17313
-// Function ID: 17314
+// Module ID: 17337
+// Function ID: 17338
 // Name: VoicePanelDisconnectCancelButton
-// Dependencies: [32, 19, 2050, 4912, 5098, 11902, 21, 4890, 587, 558, 576, 11901, 9016, 4612, 8991, 5091, 5032, 5568, 9576, 17314, 7525, 1126, 17304, 2]
+// Dependencies: [32, 19, 2050, 4912, 5098, 11902, 21, 4890, 587, 558, 576, 11901, 9016, 4612, 8991, 5091, 5032, 5568, 9576, 17338, 7525, 1126, 17328, 2]
 
-// Module 17313 (VoicePanelDisconnectCancelButton)
+// Module 17337 (VoicePanelDisconnectCancelButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;

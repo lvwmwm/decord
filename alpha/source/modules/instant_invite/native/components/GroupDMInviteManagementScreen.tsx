@@ -65,9 +65,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   if (cResult[1] !== channelId) {
     class T {
       constructor() {
-        closure_0 = closure_3(function() { /* body not rendered: F151984 */ });
-        promise = (function fetchInvites() { /* body not rendered: F151985 */ })();
-        catchPromise = promise.catch(() => { /* body not rendered: F140381 */ });
+        closure_0 = closure_3(function() { /* body not rendered: F152268 */ });
+        promise = (function fetchInvites() { /* body not rendered: F152269 */ })();
+        catchPromise = promise.catch(() => { /* body not rendered: F140619 */ });
         return;
       }
     }
@@ -77,9 +77,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   } else {
     class T {
       constructor() {
-        closure_0 = closure_3(function() { /* body not rendered: F151984 */ });
-        promise = (function fetchInvites() { /* body not rendered: F151985 */ })();
-        catchPromise = promise.catch(() => { /* body not rendered: F140381 */ });
+        closure_0 = closure_3(function() { /* body not rendered: F152268 */ });
+        promise = (function fetchInvites() { /* body not rendered: F152269 */ })();
+        catchPromise = promise.catch(() => { /* body not rendered: F140619 */ });
         return;
       }
     }
@@ -91,18 +91,18 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
     let tmp16;
     class T {
       constructor() {
-        closure_0 = closure_3(function() { /* body not rendered: F151984 */ });
-        promise = (function fetchInvites() { /* body not rendered: F151985 */ })();
-        catchPromise = promise.catch(() => { /* body not rendered: F140381 */ });
+        closure_0 = closure_3(function() { /* body not rendered: F152268 */ });
+        promise = (function fetchInvites() { /* body not rendered: F152269 */ })();
+        catchPromise = promise.catch(() => { /* body not rendered: F140619 */ });
         return;
       }
     }
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       class T {
         constructor() {
-          closure_0 = closure_3(function() { /* body not rendered: F151984 */ });
-          promise = (function fetchInvites() { /* body not rendered: F151985 */ })();
-          catchPromise = promise.catch(() => { /* body not rendered: F140381 */ });
+          closure_0 = closure_3(function() { /* body not rendered: F152268 */ });
+          promise = (function fetchInvites() { /* body not rendered: F152269 */ })();
+          catchPromise = promise.catch(() => { /* body not rendered: F140619 */ });
           return;
         }
       }
@@ -111,9 +111,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
     } else {
       class T {
         constructor() {
-          closure_0 = closure_3(function() { /* body not rendered: F151984 */ });
-          promise = (function fetchInvites() { /* body not rendered: F151985 */ })();
-          catchPromise = promise.catch(() => { /* body not rendered: F140381 */ });
+          closure_0 = closure_3(function() { /* body not rendered: F152268 */ });
+          promise = (function fetchInvites() { /* body not rendered: F152269 */ })();
+          catchPromise = promise.catch(() => { /* body not rendered: F140619 */ });
           return;
         }
       }
@@ -125,9 +125,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   } else {
     class T {
       constructor() {
-        closure_0 = closure_3(function() { /* body not rendered: F151984 */ });
-        promise = (function fetchInvites() { /* body not rendered: F151985 */ })();
-        catchPromise = promise.catch(() => { /* body not rendered: F140381 */ });
+        closure_0 = closure_3(function() { /* body not rendered: F152268 */ });
+        promise = (function fetchInvites() { /* body not rendered: F152269 */ })();
+        catchPromise = promise.catch(() => { /* body not rendered: F140619 */ });
         return;
       }
     }
@@ -264,7 +264,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -308,7 +308,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
               c2(closure_0);
               c3(false);
               c3 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp12) {
             c3 = 3;

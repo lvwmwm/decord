@@ -228,8 +228,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           sum = num + 500;
                           num3 = 0;
                           _setTimeout = setTimeout;
-                          closure_0 = setTimeout(() => { /* body not rendered: F141956 */ }, Math.max(0, sum - Date.now()));
-                          return () => { /* body not rendered: F141957 */ };
+                          closure_0 = setTimeout(() => { /* body not rendered: F142194 */ }, Math.max(0, sum - Date.now()));
+                          return () => { /* body not rendered: F142195 */ };
                         }
                       }
                       return;
@@ -391,8 +391,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               sum = num + 500;
               num3 = 0;
               _setTimeout = setTimeout;
-              closure_0 = setTimeout(() => { /* body not rendered: F141956 */ }, Math.max(0, sum - Date.now()));
-              return () => { /* body not rendered: F141957 */ };
+              closure_0 = setTimeout(() => { /* body not rendered: F142194 */ }, Math.max(0, sum - Date.now()));
+              return () => { /* body not rendered: F142195 */ };
             }
           }
           return;

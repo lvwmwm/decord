@@ -23,7 +23,7 @@ let obj = function _diagnoseSdkConnectivity() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c2;
@@ -75,7 +75,7 @@ let obj = function _diagnoseSdkConnectivity() {
         } else {
           c2 = 0;
           c0 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp4) {
         if (0 === c2) {

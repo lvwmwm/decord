@@ -1,9 +1,9 @@
-// Module ID: 16043
-// Function ID: 16044
+// Module ID: 16047
+// Function ID: 16048
 // Name: VoiceUserNameItem
-// Dependencies: [32, 19, 17, 21, 4890, 558, 576, 5305, 9389, 4722, 4886, 1126, 16044, 2]
+// Dependencies: [32, 19, 17, 21, 4890, 558, 576, 5305, 9389, 4722, 4886, 1126, 16048, 2]
 
-// Module 16043 (VoiceUserNameItem)
+// Module 16047 (VoiceUserNameItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
@@ -11,7 +11,7 @@ import UserUtilsDefault from "UserUtils" /* 4722 */;
 import Text_Text from "Text/Text" /* 4886 */;
 import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 5305 */;
 import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9389 */;
-import VoiceGuildTagDefault from "VoiceGuildTag" /* 16044 */;
+import VoiceGuildTagDefault from "VoiceGuildTag" /* 16048 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

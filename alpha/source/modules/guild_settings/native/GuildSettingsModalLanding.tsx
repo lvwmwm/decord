@@ -1,9 +1,9 @@
-// Module ID: 17632
-// Function ID: 17633
+// Module ID: 17656
+// Function ID: 17657
 // Name: GuildSettingsModalLanding
-// Dependencies: [19, 4507, 2074, 4509, 1377, 16065, 9248, 1085, 21, 5070, 4890, 558, 576, 1126, 5993, 4812, 4514, 17633, 14758, 9250, 8524, 17635, 4839, 13056, 6074, 8411, 12190, 11372, 5873, 9232, 17636, 8958, 5928, 8956, 15417, 10108, 4580, 587, 1490, 504, 9247, 17638, 6763, 6770, 4567, 1402, 17006, 17639, 5593, 8895, 6536, 2]
+// Dependencies: [19, 4507, 2074, 4509, 1377, 16069, 9248, 1085, 21, 5070, 4890, 558, 576, 1126, 5993, 4812, 4514, 17657, 14762, 9250, 8524, 17659, 4839, 13058, 6074, 8411, 12190, 11372, 5873, 9232, 17660, 8958, 5928, 8956, 15421, 10108, 4580, 587, 1490, 504, 9247, 17662, 6763, 6770, 4567, 1402, 17030, 17663, 5593, 8895, 6536, 2]
 
-// Module 17632 (GuildSettingsModalLanding)
+// Module 17656 (GuildSettingsModalLanding)
 import intl8 from "intl" /* 1126 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4514 */;
@@ -16,14 +16,14 @@ import HammerIcon from "HammerIcon" /* 8956 */;
 import RobotIcon from "RobotIcon" /* 8958 */;
 import ShieldUserIcon from "ShieldUserIcon" /* 9232 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13056 */;
-import ModerationIcon from "ModerationIcon" /* 17636 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13058 */;
+import ModerationIcon from "ModerationIcon" /* 17660 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4507 */;
 import GuildStore from "GuildStore" /* 2074 */;
 import PermissionStore from "PermissionStore" /* 4509 */;
 import UserStore from "UserStore" /* 1377 */;
-import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 16065 */;
+import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 16069 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9248 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
@@ -157,7 +157,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
     const _Symbol2 = Symbol;
     if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj5 = { IconComponent: guild(17633).ChannelListIcon };
+      const obj5 = { IconComponent: guild(17657).ChannelListIcon };
       const Icon2 = tmp(5993).TableRow.Icon;
       const tmp18 = closure_15(Icon2, obj5);
       cResult[15] = tmp18;
@@ -233,7 +233,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       items.push(tmp37);
     }
     if (isGuildAdmin) {
-      const tmpResult2 = guild(17635);
+      const tmpResult2 = guild(17659);
       if (tmpResult2.canSeeVanityUrlSettings(guild)) {
         let tmp41;
         let tmp43;
@@ -291,7 +291,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       }
       const _Symbol8 = Symbol;
       if (cResult[32] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj11 = { source: pushScreen(13056) };
+        const obj11 = { source: pushScreen(13058) };
         const Icon6 = tmp(5993).TableRow.Icon;
         const tmp55 = closure_15(Icon6, obj11);
         cResult[32] = tmp55;
@@ -338,7 +338,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     tmp23 = cResult[19];
   }
   if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj13 = { IconComponent: guild(14758).PuzzlePieceIcon };
+    const obj13 = { IconComponent: guild(14762).PuzzlePieceIcon };
     const Icon3 = tmp(5993).TableRow.Icon;
     const tmp27 = closure_15(Icon3, obj13);
     cResult[20] = tmp27;
@@ -426,7 +426,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     };
     const TableRow2 = tmp2(5993).TableRow;
     intl2 = tmp2(1126).intl;
-    obj5 = { IconComponent: guild(17633).ChannelListIcon };
+    obj5 = { IconComponent: guild(17657).ChannelListIcon };
     Icon2 = tmp2(5993).TableRow.Icon;
     items.push(closure_15(TableRow2, obj4, "channels"));
   }
@@ -442,7 +442,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     };
     const TableRow3 = tmp2(5993).TableRow;
     intl3 = tmp2(1126).intl;
-    obj7 = { IconComponent: guild(14758).PuzzlePieceIcon };
+    obj7 = { IconComponent: guild(14762).PuzzlePieceIcon };
     Icon3 = tmp2(5993).TableRow.Icon;
     items.push(closure_15(TableRow3, obj6, "integrations"));
   }
@@ -463,7 +463,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     items.push(closure_15(TableRow4, obj8, "server-tag"));
   }
   if (isGuildAdmin) {
-    const tmp2Result2 = guild(17635);
+    const tmp2Result2 = guild(17659);
     isGuildAdmin = tmp2Result2.canSeeVanityUrlSettings(guild);
   }
   if (isGuildAdmin) {
@@ -1029,7 +1029,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { IconComponent: pushScreen(17636).ModerationIcon };
+      const obj3 = { IconComponent: pushScreen(17660).ModerationIcon };
       const Icon = tmp(5993).TableRow.Icon;
       const tmp9 = closure_15(Icon, obj3);
       cResult[6] = tmp9;
@@ -1398,7 +1398,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const t = tmp(1126).t;
     if (tmp4) {
       obj3.label = string(t.nRtNqn);
-      const obj4 = { IconComponent: pushScreen(15417).TreehouseIcon };
+      const obj4 = { IconComponent: pushScreen(15421).TreehouseIcon };
       const Icon2 = tmp(5993).TableRow.Icon;
       obj3.icon = closure_15(Icon2, obj4);
       obj3.onPress = function onPress() {
@@ -1407,7 +1407,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp8Result = tmp8(TableRow, obj3, "community-overview");
     } else {
       obj3.label = string(t.ElKTeb);
-      const obj5 = { IconComponent: pushScreen(15417).TreehouseIcon };
+      const obj5 = { IconComponent: pushScreen(15421).TreehouseIcon };
       const Icon = tmp(5993).TableRow.Icon;
       obj3.icon = closure_15(Icon, obj5);
       obj3.onPress = function onPress() {
@@ -1490,7 +1490,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const t = pushScreen(1126).t;
     if (hasItem) {
       obj.label = string(t.nRtNqn);
-      const obj2 = { IconComponent: pushScreen(15417).TreehouseIcon };
+      const obj2 = { IconComponent: pushScreen(15421).TreehouseIcon };
       const Icon2 = tmp3(5993).TableRow.Icon;
       obj.icon = closure_15(Icon2, obj2);
       obj.onPress = function onPress() {
@@ -1499,7 +1499,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp2Result = tmp2(TableRow, obj, "community-overview");
     } else {
       obj.label = string(t.ElKTeb);
-      const obj3 = { IconComponent: pushScreen(15417).TreehouseIcon };
+      const obj3 = { IconComponent: pushScreen(15421).TreehouseIcon };
       const Icon = tmp3(5993).TableRow.Icon;
       obj.icon = closure_15(Icon, obj3);
       obj.onPress = function onPress() {
@@ -1662,7 +1662,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
   }
   ({ isGuildAdmin, canManageGuild, canManageRoles, canManageBans, canManageGuildExpressions, canManageChannels, canViewAuditLog, canManageWebhooks, canViewGuildAnalytics } = stateFromStoresObject);
-  const tmpResult5 = tmp(17638);
+  const tmpResult5 = tmp(17662);
   tmpResult5.useChannelsAllowedToUnlink(guild.id).length > 0;
   const tmpResult6 = tmp(6763);
   const canManageGuildRoleSubscriptions = tmpResult6.useCanManageGuildRoleSubscriptions(guild);
@@ -1888,7 +1888,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
   }, items2);
   ({ canManageGuild, isGuildAdmin, canManageRoles, canManageBans, canManageGuildExpressions, canManageChannels, canViewAuditLog, canManageWebhooks, canViewGuildAnalytics } = stateFromStoresObject);
-  const obj6 = guild(17638);
+  const obj6 = guild(17662);
   const tmp11 = obj6.useChannelsAllowedToUnlink(guild.id).length > 0;
   const obj7 = guild(6763);
   const canManageGuildRoleSubscriptions = obj7.useCanManageGuildRoleSubscriptions(guild);
@@ -1913,9 +1913,9 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   items5 = [, , , , , , ];
   const obj10 = {
     iconProps: {
-      onUpload(react) {
+      onUpload(base64) {
         const obj = GuildSettingsActionCreatorsDefault;
-        obj.updateIcon(guild.id, react);
+        obj.updateIcon(guild.id, base64);
       },
       type: "guild",
       icon: guild.icon,
@@ -1934,7 +1934,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     text: guild.name,
     textAccessibilityRole: "header"
   };
-  items5[0] = closure_15(tmp3(17006), obj10);
+  items5[0] = closure_15(tmp3(17030), obj10);
   items5[1] = closure_15(closure_19, { guild, categories: stateFromStores, isGuildAdmin, canManageGuild, canManageChannels, canUnlinkChannelLobbies: tmp11, canManageWebhooks, pushScreen: callback });
   items5[2] = closure_15(closure_20, { canManageGuildExpressions, canConfigureOfficialMessages: result, pushScreen: callback });
   items5[3] = closure_15(closure_21, { canManageGuild, canManageRoles, pushScreen: callback });
@@ -1944,7 +1944,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const tmp16 = closure_17;
   if (tmp17Result) {
     const obj11 = { guild, pushScreen: callback };
-    tmp17Result = tmp17(tmp3(17639), obj11);
+    tmp17Result = tmp17(tmp3(17663), obj11);
   }
   const obj12 = { children: items6 };
   items5[6] = tmp17Result;

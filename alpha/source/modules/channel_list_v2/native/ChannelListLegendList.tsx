@@ -1,12 +1,12 @@
-// Module ID: 16181
-// Function ID: 16182
+// Module ID: 16185
+// Function ID: 16186
 // Name: ChannelListLegendList
-// Dependencies: [19, 21, 16182, 4612, 6569, 16020, 2]
+// Dependencies: [19, 21, 16186, 4612, 6569, 16024, 2]
 
-// Module 16181 (ChannelListLegendList)
+// Module 16185 (ChannelListLegendList)
 import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
 import FastList from "FastList" /* 6569 */;
-import useChannelListFlatDataDefault from "useChannelListFlatData" /* 16182 */;
+import useChannelListFlatDataDefault from "useChannelListFlatData" /* 16186 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ let hasOwnProperty;
 let metroRequire;
 ({ Fragment: closure_4, jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = [];
-let closure_8 = { item: "done", positionPercentage: false };
+let closure_8 = { item: "duration", positionPercentage: false };
 let closure_9 = { zIndex: 5 };
 let closure_10 = { code: "function ChannelListLegendListTsx1(event){const{scrollPosValue,onScrollWorklet,onScroll,runOnJS}=this.__closure;scrollPosValue.set(event.contentOffset.y);onScrollWorklet(event.contentOffset.y,event.contentSize.height,event.layoutMeasurement.height);if(onScroll!=null){runOnJS(onScroll)();}}" };
 const memoResult = react.memo(react.forwardRef(function ChannelListLegendList(footerSize, ref) {
@@ -340,7 +340,7 @@ const memoResult = react.memo(react.forwardRef(function ChannelListLegendList(fo
   const obj4 = { children: items6 };
   items6 = [, ];
   const obj5 = { ref, contentContainerStyle: memo3, data: listData, drawDistance: listViewportHeight, estimatedHeaderSize: headerSize, getFixedItemSize: callback3, getItemType: callback1, initialScrollOffset: memo, keyExtractor: callback2, ListHeaderComponent: memo2, ListHeaderComponentStyle: renderSectionFooter, onEndReached, onEndReachedThreshold: num, onScroll: animatedScrollHandler, recycleItems: true, renderItem: callback, scrollIndicatorInsets: memo4 };
-  items6[0] = onScroll(tmp5(16020).AnimatedLegendList, obj5);
+  items6[0] = onScroll(tmp5(16024).AnimatedLegendList, obj5);
   items6[1] = renderAccessory(memo1);
   return onScrollWorklet(listViewportHeight, obj4);
 }));

@@ -1,9 +1,9 @@
-// Module ID: 15308
-// Function ID: 15309
+// Module ID: 15312
+// Function ID: 15313
 // Name: SystemNotificationsSetting
 // Dependencies: [5, 7634, 1085, 5099, 12053, 7282, 12060, 1252, 8966, 11129, 1126, 2]
 
-// Module 15308 (SystemNotificationsSetting)
+// Module 15312 (SystemNotificationsSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 5099 */;
@@ -32,7 +32,7 @@ let obj = function _handleEnableSystemNotification() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -91,7 +91,7 @@ let obj = function _handleEnableSystemNotification() {
             let result = obj2.openNotificationSettings();
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp26) {
         c3 = 3;

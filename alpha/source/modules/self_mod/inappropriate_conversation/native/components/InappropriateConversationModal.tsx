@@ -1,9 +1,9 @@
-// Module ID: 15598
-// Function ID: 15599
+// Module ID: 15602
+// Function ID: 15603
 // Name: InappropriateConversationModal
-// Dependencies: [32, 19, 17, 1377, 9784, 21, 4890, 587, 558, 576, 504, 4722, 1490, 6078, 1126, 4886, 5594, 9798, 15599, 9806, 15600, 6010, 9830, 5093, 9799, 6496, 2]
+// Dependencies: [32, 19, 17, 1377, 9784, 21, 4890, 587, 558, 576, 504, 4722, 1490, 6078, 1126, 4886, 5594, 9798, 15603, 9806, 15604, 6010, 9830, 5093, 9799, 6496, 2]
 
-// Module 15598 (InappropriateConversationModal)
+// Module 15602 (InappropriateConversationModal)
 import react2 from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import react3 from "react" /* 576 */;
@@ -19,7 +19,7 @@ import TrafficConeSpotIllustration from "TrafficConeSpotIllustration" /* 6078 */
 import SafetyWarningUtils from "SafetyWarningUtils" /* 9798 */;
 import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 9799 */;
 import SafetyTipsSectionDefault from "SafetyTipsSection" /* 9806 */;
-import TakeActionScreenDefault from "TakeActionScreen" /* 15599 */;
+import TakeActionScreenDefault from "TakeActionScreen" /* 15603 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1377 */;
@@ -606,7 +606,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAnalytics
   const tmp4 = closure_15();
   const container = tmp4.container;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = closure_13(trackAnalyticsEvent(15600).SafetyChatSpotIllustration, {});
+    const tmp7 = closure_13(trackAnalyticsEvent(15604).SafetyChatSpotIllustration, {});
     cResult[0] = tmp7;
     first = tmp7;
   } else {
@@ -767,7 +767,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAnalytics
   trackAnalyticsEvent = trackAnalyticsEvent.trackAnalyticsEvent;
   const tmp = closure_15();
   const obj = { style: tmp.container, children: items };
-  items = [closure_13(trackAnalyticsEvent(15600).SafetyChatSpotIllustration, {}), , ];
+  items = [closure_13(trackAnalyticsEvent(15604).SafetyChatSpotIllustration, {}), , ];
   const obj2 = { style: tmp.warningText, children: items1 };
   const obj3 = { variant: "heading-xl/semibold", style: tmp.takeoverHeader, accessibilityRole: "header", children: intl.string(trackAnalyticsEvent(1126).t.NUMAsF) };
   const Text = trackAnalyticsEvent(4886).Text;

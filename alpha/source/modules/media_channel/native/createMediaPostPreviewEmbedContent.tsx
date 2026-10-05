@@ -1,10 +1,10 @@
-// Module ID: 13082
-// Function ID: 13083
+// Module ID: 13084
+// Function ID: 13085
 // Name: createMediaPostPreviewEmbedContent
-// Dependencies: [17, 4889, 2051, 2074, 4699, 1377, 11085, 5038, 5044, 1126, 7619, 7621, 587, 5040, 13083, 7109, 5102, 5039, 2]
+// Dependencies: [17, 4889, 2051, 2074, 4699, 1377, 11085, 5038, 5044, 1126, 7619, 7621, 587, 5040, 13085, 7109, 5102, 5039, 2]
 // Exports: default
 
-// Module 13082 (createMediaPostPreviewEmbedContent)
+// Module 13084 (createMediaPostPreviewEmbedContent)
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
 import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 5038 */;
@@ -109,7 +109,7 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
                 mediaPostEmbedCommonData.coverImage = "" + mediaPostEmbedCommonData.coverImage + "?format=webp";
               }
               if (mediaPostEmbedCommonData.shouldShowBlurredThumbnailImage) {
-                const obj5 = { blurredCoverImage: _false.resolveAssetSource(tmp10(13083)).uri, footer: formatToPartsResult, ctaButtonColor: tmp11 };
+                const obj5 = { blurredCoverImage: _false.resolveAssetSource(tmp10(13085)).uri, footer: formatToPartsResult, ctaButtonColor: tmp11 };
                 const merged = Object.assign(mediaPostEmbedCommonData);
                 return obj5;
               } else {

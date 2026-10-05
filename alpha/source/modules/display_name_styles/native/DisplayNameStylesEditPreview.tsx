@@ -1,9 +1,9 @@
-// Module ID: 15171
-// Function ID: 15172
+// Module ID: 15175
+// Function ID: 15176
 // Name: DisplayNameStylesEditPreview
 // Dependencies: [19, 17, 4879, 21, 4890, 587, 558, 576, 7837, 1977, 1126, 2883, 10825, 10999, 7887, 7830, 504, 4552, 1188, 10633, 10634, 4886, 2]
 
-// Module 15171 (DisplayNameStylesEditPreview)
+// Module 15175 (DisplayNameStylesEditPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;

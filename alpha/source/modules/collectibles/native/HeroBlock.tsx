@@ -1,9 +1,9 @@
-// Module ID: 15711
-// Function ID: 15712
+// Module ID: 15715
+// Function ID: 15716
 // Name: HeroBlock
-// Dependencies: [19, 17, 7053, 1087, 1085, 21, 8418, 4890, 587, 558, 576, 8534, 15712, 1490, 8421, 504, 10912, 4791, 15713, 4580, 4727, 15714, 14872, 6657, 6681, 15724, 1252, 10908, 5628, 4729, 15726, 15727, 5605, 4886, 5594, 1126, 5909, 6708, 6651, 15728, 8371, 15731, 2]
+// Dependencies: [19, 17, 7053, 1087, 1085, 21, 8418, 4890, 587, 558, 576, 8534, 15716, 1490, 8421, 504, 10912, 4791, 15717, 4580, 4727, 15718, 14876, 6657, 6681, 15728, 1252, 10908, 5628, 4729, 15730, 15731, 5605, 4886, 5594, 1126, 5909, 6708, 6651, 15732, 8371, 15735, 2]
 
-// Module 15711 (HeroBlock)
+// Module 15715 (HeroBlock)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
@@ -38,7 +38,7 @@ let rect;
 let size;
 let tmp2;
 let unpackModuleId;
-const FeaturedFirstCardCoachmarkAnchorDefault = tmp2(15724);
+const FeaturedFirstCardCoachmarkAnchorDefault = tmp2(15728);
 let react = react_mod;
 ({ Image: closure_4, View: hasOwnProperty } = react_native);
 const constants = CollectiblesShopConstants.CollectiblesMobileShopScreen;
@@ -667,7 +667,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((heroBlock) => {
   let tmp = heroBlock;
   let tmp2 = dependencyMap;
   const screen = heroBlock.screen;
-  let obj = heroBlock(15712);
+  let obj = heroBlock(15716);
   const handleDismissCoachmarkOnScroll = obj.useCollectiblesCoachmarkScrollDismissContext().handleDismissCoachmarkOnScroll;
   let obj2 = heroBlock(1490);
   dependencyMap = obj2.useNavigation();
@@ -685,7 +685,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((heroBlock) => {
   const tmpResult9 = tmp(10912);
   let isEligibleForQuests = tmpResult9.getIsEligibleForQuests();
   const tmp7 = preferVCPrice(4791)();
-  const tmpResult10 = tmp(15713);
+  const tmpResult10 = tmp(15717);
   const handleCardVisibilityChange = tmpResult10.useTrackProductCardImpression(heroBlock.categoryStoreListingId, "mobile_home", "hero_block").handleCardVisibilityChange;
   const tmp8 = closure_14();
   const tmpResult11 = tmp(4580);
@@ -696,11 +696,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((heroBlock) => {
   const hexToRgbaStringResult = hexToRgbaString(tmpResult13.hexWithOpacity(token, 0));
   const tmpResult14 = tmp(4580);
   const token1 = tmpResult14.useToken(preferVCPrice(587).colors.BACKGROUND_BASE_LOWEST);
-  const tmp13 = preferVCPrice(15714)();
+  const tmp13 = preferVCPrice(15718)();
   closure_5 = tmp13;
   const items1 = [heroBlock.rankedSkuIds, tmp13];
   const memo = react.useMemo(() => closure_5(heroBlock.rankedSkuIds), items1);
-  const tmpResult15 = tmp(14872);
+  const tmpResult15 = tmp(14876);
   const filteredAndSortedProducts = tmpResult15.useFilteredAndSortedProducts({ products: memo, bypassAndroidUnsyncedFilter: tmp4 });
   closure_6 = tmp15;
   let unpublishedAt;
@@ -720,9 +720,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((heroBlock) => {
       let tmp6Result;
       const tmpResult16 = tmp(4729);
       if (tmpResult16.isThemeDark(tmp7)) {
-        tmp6Result = tmp6(15726);
+        tmp6Result = tmp6(15730);
       } else {
-        tmp6Result = tmp6(15727);
+        tmp6Result = tmp6(15731);
       }
       heroBannerUrl = tmp6Result;
     }
@@ -732,7 +732,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((heroBlock) => {
     const obj7 = { style: tmp8.heroBannerContainer, children: tmp24Result };
     tmp24Result = null != heroBannerUrl;
     obj6 = { style: tmp8.heroContainer, children: items6 };
-    tmp6Result3 = preferVCPrice(15731);
+    tmp6Result3 = preferVCPrice(15735);
     if (tmp24Result) {
       let tmp22Result = tmp4;
       const tmp27 = closure_12;
@@ -854,7 +854,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((heroBlock) => {
     if (tmp4) {
       const obj30 = { products: filteredAndSortedProducts, loadingCardsNum: num, preferVCPrice, accessibilityLabel: intl5.formatToPlainString(tmp(1126).t.FNtLb3, obj31) };
       num = 4;
-      const tmp6Result4 = preferVCPrice(15728);
+      const tmp6Result4 = preferVCPrice(15732);
       if (0 !== filteredAndSortedProducts.length) {
         num = filteredAndSortedProducts.length;
       }

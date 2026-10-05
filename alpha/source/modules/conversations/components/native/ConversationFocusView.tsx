@@ -1,9 +1,9 @@
-// Module ID: 13090
-// Function ID: 13091
+// Module ID: 13092
+// Function ID: 13093
 // Name: ConversationFocusView
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4580, 7552, 7568, 1126, 4886, 5594, 13091, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4580, 7552, 7568, 1126, 4886, 5594, 13093, 2]
 
-// Module 13090 (ConversationFocusView)
+// Module 13092 (ConversationFocusView)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import ConversationsAnalytics2 from "ConversationsAnalytics" /* 7552 */;

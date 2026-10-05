@@ -229,7 +229,7 @@ class FeedbackWidget {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -268,7 +268,7 @@ class FeedbackWidget {
                 let fileName1;
                 uri1 = undefined;
                 if (self._hasScreenshot()) {
-                  obj10.setState({ filename: "done", attachment: "toCharArray$esjava$1", attachmentUri: "toCharArray$esjava$1" });
+                  obj10.setState({ filename: "marginBottom", attachment: "unicodeVersion", attachmentUri: "Reflect" });
                 } else {
                   imagePicker = obj10.props.imagePicker;
                   if (imagePicker) {
@@ -433,7 +433,7 @@ class FeedbackWidget {
               }
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp72) {
             c5 = 3;
             throw tmp72;
@@ -471,7 +471,7 @@ class FeedbackWidget {
       FeedbackWidget._savedState = Object.assign({}, state.state);
     };
     tmp4Result._clearFormState = () => {
-      state._savedState = { name: "", email: "", description: "", filename: "ix", attachment: "for", attachmentUri: "fill" };
+      state._savedState = { name: "", email: "", description: "", filename: "unicodeVersion", attachment: "surrogates", attachmentUri: "for" };
     };
     tmp4Result._hasScreenshot = () => undefined !== state.state.filename && undefined !== state.state.attachment && undefined !== state.state.attachmentUri;
     tmp4Result._getUser = () => {
@@ -640,7 +640,7 @@ let items = [
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -656,7 +656,7 @@ let items = [
                   const obj = c0(closure_1_2[7]);
                   obj.feedbackAlertDialog(props3.errorTitle, props3.captureScreenshotError);
                   c0 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } catch (tmp7) {
                 c0 = 3;
@@ -766,13 +766,13 @@ let items = [
 const entry1 = {
   key: "reset",
   value: function reset() {
-    FeedbackWidget._savedState = { name: "", email: "", description: "", filename: "ix", attachment: "for", attachmentUri: "fill" };
+    FeedbackWidget._savedState = { name: "", email: "", description: "", filename: "unicodeVersion", attachment: "surrogates", attachmentUri: "for" };
   }
 };
 const items1 = [entry1];
 const importDefaultResultResult = _createClass(FeedbackWidget, items, items1);
 importDefaultResultResult.defaultProps = defaultConfiguration.defaultConfiguration;
-importDefaultResultResult._savedState = { name: "", email: "", description: "", filename: "ix", attachment: "for", attachmentUri: "fill" };
+importDefaultResultResult._savedState = { name: "", email: "", description: "", filename: "unicodeVersion", attachment: "surrogates", attachmentUri: "for" };
 const FeedbackWidget_export = importDefaultResultResult;
 
 export { FeedbackWidget_export as FeedbackWidget };

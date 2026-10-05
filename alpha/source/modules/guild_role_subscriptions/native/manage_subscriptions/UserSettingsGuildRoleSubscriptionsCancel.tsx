@@ -1,9 +1,9 @@
-// Module ID: 15040
-// Function ID: 15041
+// Module ID: 15044
+// Function ID: 15045
 // Name: UserSettingsGuildRoleSubscriptionsCancel
-// Dependencies: [5, 32, 19, 17, 4534, 21, 4890, 587, 558, 576, 15041, 4461, 1126, 5971, 1188, 4886, 15031, 5974, 15049, 6657, 6681, 8871, 5708, 5404, 4567, 4550, 5594, 6469, 15037, 15026, 15050, 15051, 504, 2]
+// Dependencies: [5, 32, 19, 17, 4534, 21, 4890, 587, 558, 576, 15045, 4461, 1126, 5971, 1188, 4886, 15035, 5974, 15053, 6657, 6681, 8871, 5708, 5404, 4567, 4550, 5594, 6469, 15041, 15030, 15054, 15055, 504, 2]
 
-// Module 15040 (UserSettingsGuildRoleSubscriptionsCancel)
+// Module 15044 (UserSettingsGuildRoleSubscriptionsCancel)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
@@ -13,12 +13,12 @@ import Text_Text from "Text/Text" /* 4886 */;
 import GuildIconDefault from "GuildIcon" /* 5971 */;
 import FastImageDefault from "FastImage" /* 5974 */;
 import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6469 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15026 */;
-import FormSeparatorDefault from "FormSeparator" /* 15031 */;
-import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 15037 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15041 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15049 */;
-import GuildRoleSubscriptionCardAll from "GuildRoleSubscriptionCard" /* 15051 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15030 */;
+import FormSeparatorDefault from "FormSeparator" /* 15035 */;
+import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 15041 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15045 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15053 */;
+import GuildRoleSubscriptionCardAll from "GuildRoleSubscriptionCard" /* 15055 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -38,7 +38,7 @@ let obj2;
 let obj4;
 let tmp6;
 let unpackModuleId;
-const FastAssetImageDefault = tmp6(15050);
+const FastAssetImageDefault = tmp6(15054);
 function CancelSubscriptionButtonFooter(guild) {
   let Button;
   let c3;
@@ -91,7 +91,7 @@ function CancelSubscriptionButtonFooter(guild) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -220,7 +220,7 @@ function CancelSubscriptionButtonFooter(guild) {
             _undefined = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp59) {
         if (0 === _undefined) {
@@ -248,7 +248,7 @@ function CancelSubscriptionButtonFooter(guild) {
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let c12 = "M/DD/YY";
 let createStyles = createStyles_mod;
-let obj = { container: { flex: 1 }, body: { marginVertical: 24, marginHorizontal: 16 }, heroImage: { width: "100%", height: "__initData", aspectRatio: "<string:2353406737>" }, footer: obj2 };
+let obj = { container: { flex: 1 }, body: { marginVertical: 24, marginHorizontal: 16 }, heroImage: { width: "100%", height: "filter", aspectRatio: "<string:2353406737>" }, footer: obj2 };
 obj2 = { borderTopColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER, borderTopWidth: 1, padding: 16 };
 let closure_13 = createStyles.createStyles(obj);
 createStyles = createStyles_mod;

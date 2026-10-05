@@ -58,7 +58,7 @@ let intl6;
 let intl7;
 let intl8;
 let intl9;
-const f98561 = (expiresAt) => {
+const f98705 = (expiresAt) => {
   let tmp = null != expiresAt.expiresAt;
   if (tmp) {
     const _Date = Date;
@@ -66,7 +66,7 @@ const f98561 = (expiresAt) => {
   }
   return !tmp;
 };
-const f98562 = (expiresAt) => {
+const f98706 = (expiresAt) => {
   let tmp = null != expiresAt.expiresAt;
   if (tmp) {
     const _Date = Date;
@@ -164,16 +164,16 @@ export const isIconExpired = function isIconExpired(expiresAt) {
   return tmp;
 };
 export const getOfficialAlternateIcons = function getOfficialAlternateIcons() {
-  return items.filter(f98561);
+  return items.filter(f98705);
 };
 export const getLimitedAlternateIcons = function getLimitedAlternateIcons() {
-  return closure_4.filter(f98562);
+  return closure_4.filter(f98706);
 };
 export const getIcons = function getIcons() {
   let intl;
   const obj = { id: AppIconTypes.FreemiumAppIconIds.DEFAULT, iconSource: AssetRegistryDefault, name: intl.string(intl25.t.ANxkLy), isPremium: false };
   intl = intl25.intl;
-  items = [obj, ...items.filter(f98561), ...closure_4.filter(f98562)];
+  items = [obj, ...items.filter(f98705), ...closure_4.filter(f98706)];
   return items;
 };
 export const getIconById = function getIconById(currentAppIcon) {
@@ -183,7 +183,7 @@ export const getIconById = function getIconById(currentAppIcon) {
   let tmp = require;
   const obj = { id: AppIconTypes.FreemiumAppIconIds.DEFAULT, iconSource: AssetRegistryDefault, name: intl.string(intl25.t.ANxkLy), isPremium: false };
   intl = intl25.intl;
-  items = [obj, ...items.filter(f98561), ...closure_4.filter(f98562)];
+  items = [obj, ...items.filter(f98705), ...closure_4.filter(f98706)];
   let found = items.find((id) => id.id === closure_0);
   if (null == found) {
     const obj2 = { id: AppIconTypes.FreemiumAppIconIds.DEFAULT, iconSource: AssetRegistryDefault, name: intl2.string(intl25.t.ANxkLy), isPremium: false };

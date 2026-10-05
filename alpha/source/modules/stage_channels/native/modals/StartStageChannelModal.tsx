@@ -393,7 +393,7 @@ const forwardRefResult = react.forwardRef((channel, ref) => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -483,7 +483,7 @@ const forwardRefResult = react.forwardRef((channel, ref) => {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp61) {
           if (0 === c3) {
             c5 = 3;

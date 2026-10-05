@@ -1,9 +1,9 @@
-// Module ID: 17178
-// Function ID: 17179
+// Module ID: 17202
+// Function ID: 17203
 // Name: VoicePanelUI
-// Dependencies: [32, 19, 17, 4906, 7964, 5098, 11902, 11900, 4911, 11903, 21, 3, 5597, 4890, 587, 4612, 1615, 558, 576, 11901, 1618, 6140, 9074, 9774, 17179, 17180, 4855, 17181, 4580, 11906, 9607, 17183, 17184, 10725, 9110, 5410, 6570, 6657, 6681, 1259, 17185, 6651, 17186, 17187, 8987, 17188, 17190, 17246, 17278, 17282, 17288, 2]
+// Dependencies: [32, 19, 17, 4906, 7964, 5098, 11902, 11900, 4911, 11903, 21, 3, 5597, 4890, 587, 4612, 1615, 558, 576, 11901, 1618, 6140, 9074, 9774, 17203, 17204, 4855, 17205, 4580, 11906, 9607, 17207, 17208, 10725, 9110, 5410, 6570, 6657, 6681, 1259, 17209, 6651, 17210, 17211, 8987, 17212, 17214, 17270, 17302, 17306, 17312, 2]
 
-// Module 17178 (VoicePanelUI)
+// Module 17202 (VoicePanelUI)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -24,14 +24,14 @@ import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11900 *
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11901 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11903 */;
 import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 11906 */;
-import triggerIOSHapticDefault from "triggerIOSHaptic" /* 17180 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17181 */;
-import PanelSizeUtils from "PanelSizeUtils" /* 17184 */;
-import useControlsHoverGestureDefault from "useControlsHoverGesture" /* 17185 */;
-import VoicePanelAccessibilityViewDefault from "VoicePanelAccessibilityView" /* 17187 */;
-import VoicePanelHeaderDefault from "VoicePanelHeader" /* 17190 */;
-import VoicePanelPIPDefault from "VoicePanelPIP" /* 17282 */;
-import VoicePanelControlsDefault from "VoicePanelControls" /* 17288 */;
+import triggerIOSHapticDefault from "triggerIOSHaptic" /* 17204 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17205 */;
+import PanelSizeUtils from "PanelSizeUtils" /* 17208 */;
+import useControlsHoverGestureDefault from "useControlsHoverGesture" /* 17209 */;
+import VoicePanelAccessibilityViewDefault from "VoicePanelAccessibilityView" /* 17211 */;
+import VoicePanelHeaderDefault from "VoicePanelHeader" /* 17214 */;
+import VoicePanelPIPDefault from "VoicePanelPIP" /* 17306 */;
+import VoicePanelControlsDefault from "VoicePanelControls" /* 17312 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -1953,7 +1953,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     const AnalyticsLocationProvider = channelId(6657).AnalyticsLocationProvider;
     obj3 = { children: items3 };
     LayerScope = channelId(6651).LayerScope;
-    items3 = [closure_21(tmp2(17186), {}), , ];
+    items3 = [closure_21(tmp2(17210), {}), , ];
     obj4 = { opacity, onPress: dismissPanel };
     items3[1] = closure_21(closure_98, obj4);
     const obj5 = { gesture: tmp12, children: closure_22(tmp2Result, obj6) };
@@ -1961,7 +1961,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     let _HermesInternal = HermesInternal;
     obj6 = { style: tmp.accessibilityView, nativeID: "voice-panel-ui-" + channelId, accessibilityViewIsModal: true, layout: layoutTransition, onAccessibilityEscape: closeVoicePanelsDefault, children: items4 };
     tmp2Result = VoicePanelAccessibilityViewDefault;
-    items4 = [closure_21(tmp2(17188), {}), , , ];
+    items4 = [closure_21(tmp2(17212), {}), , , ];
     const obj7 = { wrapperOffset, children: items5 };
     const obj8 = { zIndex: 2, children: closure_21(VoicePanelHeaderDefault, obj9) };
     const LayerScope2 = channelId(6651).LayerScope;
@@ -1975,7 +1975,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     tmp2Result2 = ReanimatedNativeViewDefault;
     GestureDetector3 = channelId(6140).GestureDetector;
     const obj14 = { viewableChunks };
-    items6 = [closure_21(tmp2(17246), obj14), closure_21(tmp2(17278), {})];
+    items6 = [closure_21(tmp2(17270), obj14), closure_21(tmp2(17302), {})];
     items5[1] = closure_21(GestureDetector2, obj10);
     items4[1] = closure_22(closure_94, obj7);
     items4[2] = closure_21(VoicePanelPIPDefault, {});

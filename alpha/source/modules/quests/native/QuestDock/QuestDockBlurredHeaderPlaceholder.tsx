@@ -1,14 +1,14 @@
-// Module ID: 14993
-// Function ID: 14994
+// Module ID: 14997
+// Function ID: 14998
 // Name: QuestDockBlurredHeaderPlaceholder
-// Dependencies: [19, 17, 5623, 14892, 21, 4890, 558, 576, 14893, 14994, 4612, 6570, 2]
+// Dependencies: [19, 17, 5623, 14896, 21, 4890, 558, 576, 14897, 14998, 4612, 6570, 2]
 
-// Module 14993 (QuestDockBlurredHeaderPlaceholder)
+// Module 14997 (QuestDockBlurredHeaderPlaceholder)
 import react_native from "react-native" /* 17 */;
 import QuestConstants from "QuestConstants" /* 5623 */;
-import _slicedToArray from "_slicedToArray" /* 14994 */;
+import _slicedToArray from "_slicedToArray" /* 14998 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 14892 */;
+import QuestDockConstants from "QuestDockConstants" /* 14896 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -48,7 +48,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   let obj = questDockWrapperSpecs(576);
   const cResult = obj.c(20);
   ({ layoutAnimation, layoutAnimatedStyle, opacityAnimatedStyle, placeholder } = arg0);
-  const context = react.useContext(questDockWrapperSpecs(14893).QuestDockGestureContext);
+  const context = react.useContext(questDockWrapperSpecs(14897).QuestDockGestureContext);
   questDockWrapperSpecs = context.questDockWrapperSpecs;
   const activeQuestDockMode = context.activeQuestDockMode;
   if (cResult[0] !== placeholder) {
@@ -66,7 +66,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     }
     const _Uint8Array = Uint8Array;
     const _atob = atob;
-    const tmpResult = questDockWrapperSpecs(14994);
+    const tmpResult = questDockWrapperSpecs(14998);
     const thumbHashToDataURLResult = tmpResult.thumbHashToDataURL(Uint8Array.from(atob(placeholder), tmp7));
     cResult[0] = placeholder;
     cResult[1] = thumbHashToDataURLResult;

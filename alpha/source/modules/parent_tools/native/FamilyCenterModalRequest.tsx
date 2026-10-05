@@ -97,7 +97,7 @@ function FamilyCenterPrereqLoading(arg0) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -141,7 +141,7 @@ function FamilyCenterPrereqLoading(arg0) {
                 const replaced1 = c2.replace(tmp.section, tmp.params);
               }
               c3 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp28) {
             c3 = 3;

@@ -1,9 +1,9 @@
-// Module ID: 17315
-// Function ID: 17316
+// Module ID: 17339
+// Function ID: 17340
 // Name: VoicePanelVideoButton
-// Dependencies: [19, 17, 9065, 2051, 2074, 1999, 4509, 4915, 21, 558, 576, 11901, 17303, 7210, 504, 13099, 5709, 13101, 1126, 17316, 9299, 9084, 13119, 17304, 11234, 4823, 4666, 2]
+// Dependencies: [19, 17, 9065, 2051, 2074, 1999, 4509, 4915, 21, 558, 576, 11901, 17327, 7210, 504, 13101, 5709, 13103, 1126, 17340, 9299, 9084, 13121, 17328, 11234, 4823, 4666, 2]
 
-// Module 17315 (VoicePanelVideoButton)
+// Module 17339 (VoicePanelVideoButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -14,8 +14,8 @@ import useAlertStore from "useAlertStore" /* 5709 */;
 import StreamPermissionUtils from "StreamPermissionUtils" /* 7210 */;
 import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 9084 */;
 import CallsUtils from "CallsUtils" /* 9299 */;
-import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 13101 */;
-import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 17316 */;
+import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 13103 */;
+import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 17340 */;
 import react from "react" /* 19 */;
 import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 9065 */;
 import ChannelStore from "ChannelStore" /* 2051 */;

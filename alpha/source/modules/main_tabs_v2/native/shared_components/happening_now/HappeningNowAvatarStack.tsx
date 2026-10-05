@@ -1,9 +1,9 @@
-// Module ID: 16003
-// Function ID: 16004
+// Module ID: 16007
+// Function ID: 16008
 // Name: HappeningNowAvatarStack
-// Dependencies: [32, 19, 17, 2116, 12852, 21, 4890, 587, 1188, 558, 576, 4612, 573, 5597, 8469, 1888, 4886, 16004, 2]
+// Dependencies: [32, 19, 17, 2116, 12852, 21, 4890, 587, 1188, 558, 576, 4612, 573, 5597, 8469, 1888, 4886, 16008, 2]
 
-// Module 16003 (HappeningNowAvatarStack)
+// Module 16007 (HappeningNowAvatarStack)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1188 */;

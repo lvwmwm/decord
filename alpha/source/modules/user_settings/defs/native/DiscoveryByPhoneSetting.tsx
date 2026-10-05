@@ -1,9 +1,9 @@
-// Module ID: 14651
-// Function ID: 14652
+// Module ID: 14655
+// Function ID: 14656
 // Name: DiscoveryByPhoneSetting
 // Dependencies: [7634, 1085, 1126, 558, 576, 2028, 1390, 12333, 11129, 2]
 
-// Module 14651 (DiscoveryByPhoneSetting)
+// Module 14655 (DiscoveryByPhoneSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;

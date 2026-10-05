@@ -1,16 +1,16 @@
-// Module ID: 13224
-// Function ID: 13225
+// Module ID: 13226
+// Function ID: 13227
 // Name: PromotionsActionCreators
-// Dependencies: [5, 2116, 1377, 10396, 1379, 1085, 584, 13225, 1282, 6905, 2033, 1228, 13226, 2]
+// Dependencies: [5, 2116, 1377, 10396, 1379, 1085, 584, 13227, 1282, 6905, 2033, 1228, 13228, 2]
 // Exports: addClaimedOutboundPromotionCode, clearActivePromotions, dismissOutboundPromotionNotice, fetchClaimedOutboundPromotionCodes, maybeFetchActivePromotions
 
-// Module 13224 (PromotionsActionCreators)
+// Module 13226 (PromotionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import wrappers from "wrappers" /* 1228 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import PremiumConstants from "PremiumConstants" /* 1379 */;
-import MarketingComponentPlatform from "MarketingComponentPlatform" /* 13225 */;
+import MarketingComponentPlatform from "MarketingComponentPlatform" /* 13227 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2116 */;
 import UserStore from "UserStore" /* 1377 */;
@@ -38,7 +38,7 @@ let obj = function _fetchActivePromotions() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -125,7 +125,7 @@ let obj = function _fetchActivePromotions() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp25) {
           let closure_3 = tmp25;
@@ -172,7 +172,7 @@ obj = function _fetchClaimedOutboundPromotionCodes() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c2;

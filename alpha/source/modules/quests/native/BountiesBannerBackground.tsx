@@ -1,9 +1,9 @@
-// Module ID: 14879
-// Function ID: 14880
+// Module ID: 14883
+// Function ID: 14884
 // Name: BountiesBannerBackground
 // Dependencies: [19, 17, 4879, 21, 558, 576, 504, 7983, 5605, 2]
 
-// Module 14879 (BountiesBannerBackground)
+// Module 14883 (BountiesBannerBackground)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import LinearGradientDefault from "LinearGradient" /* 5605 */;

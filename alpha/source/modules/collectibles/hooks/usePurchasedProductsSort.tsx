@@ -1,9 +1,9 @@
-// Module ID: 14875
-// Function ID: 14876
+// Module ID: 14879
+// Function ID: 14880
 // Name: usePurchasedProductsSort
 // Dependencies: [32, 19, 7068, 1980, 7064, 558, 576, 573, 2]
 
-// Module 14875 (usePurchasedProductsSort)
+// Module 14879 (usePurchasedProductsSort)
 import react from "react" /* 19 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
 import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7064 */;

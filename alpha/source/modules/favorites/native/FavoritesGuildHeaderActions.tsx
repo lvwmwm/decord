@@ -1,19 +1,19 @@
-// Module ID: 16071
-// Function ID: 16072
+// Module ID: 16075
+// Function ID: 16076
 // Name: FavoritesGuildHeaderActions
-// Dependencies: [19, 21, 558, 576, 16072, 6018, 10979, 16073, 7575, 2]
+// Dependencies: [19, 21, 558, 576, 16076, 6018, 10979, 16077, 7575, 2]
 
-// Module 16071 (FavoritesGuildHeaderActions)
+// Module 16075 (FavoritesGuildHeaderActions)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import IconButton2 from "IconButton" /* 7575 */;
-import useFavoritesGuildHeaderActionDefault from "useFavoritesGuildHeaderAction" /* 16072 */;
+import useFavoritesGuildHeaderActionDefault from "useFavoritesGuildHeaderAction" /* 16076 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp5;
-const FavoritesGuildAddActionSheet = tmp5(16073);
+const FavoritesGuildAddActionSheet = tmp5(16077);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let exitPreview;
@@ -25,7 +25,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   useFavoritesGuildHeaderActionDefault();
   const tmp4Result = importDefault(isPreview ? 6018 : 10979);
   if (!isPreview) {
-    exitPreview = tmp(16073).openFavoritesGuildAddActionSheet;
+    exitPreview = tmp(16077).openFavoritesGuildAddActionSheet;
   }
   if (cResult[0] === label) {
     if (cResult[1] === tmp4Result) {

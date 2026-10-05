@@ -1,9 +1,9 @@
-// Module ID: 16502
-// Function ID: 16503
+// Module ID: 16506
+// Function ID: 16507
 // Name: GuildOnboardingHomePage
-// Dependencies: [19, 4776, 5077, 5078, 1085, 21, 558, 576, 4612, 504, 6724, 7521, 1252, 5070, 5705, 16503, 16508, 16512, 16513, 16516, 16519, 6723, 2]
+// Dependencies: [19, 4776, 5077, 5078, 1085, 21, 558, 576, 4612, 504, 6724, 7521, 1252, 5070, 5705, 16507, 16512, 16516, 16517, 16520, 16523, 6723, 2]
 
-// Module 16502 (GuildOnboardingHomePage)
+// Module 16506 (GuildOnboardingHomePage)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5070 */;
@@ -244,21 +244,21 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     let obj4 = { guildId, hideDescription: tmp5 };
     const obj3 = { guildId, scrollValue: sharedValue, children: items3 };
     items3 = [, ];
-    const tmp4Result = stateFromStores(16519);
-    items3[0] = closure_9(stateFromStores(16503), obj4);
+    const tmp4Result = stateFromStores(16523);
+    items3[0] = closure_9(stateFromStores(16507), obj4);
     if (tmp5) {
       let tmp15 = closure_10;
       const obj5 = { children: items4 };
       const obj6 = { guildId };
-      items4 = [tmp13(tmp4(16508), obj6), , ];
+      items4 = [tmp13(tmp4(16512), obj6), , ];
       const obj7 = { guildId };
-      items4[1] = closure_9(stateFromStores(16512), obj7);
+      items4[1] = closure_9(stateFromStores(16516), obj7);
       const obj8 = { guildId };
-      items4[2] = closure_9(stateFromStores(16513), obj8);
+      items4[2] = closure_9(stateFromStores(16517), obj8);
       tmp13Result = tmp11(closure_10, obj5);
     } else {
       const obj9 = { guildId };
-      tmp13Result = tmp13(tmp4(16516), obj9);
+      tmp13Result = tmp13(tmp4(16520), obj9);
     }
     items3[1] = tmp13Result;
     tmp11Result2 = tmp11(tmp4Result, obj3);

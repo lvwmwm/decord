@@ -1,9 +1,9 @@
-// Module ID: 15697
-// Function ID: 15698
+// Module ID: 15701
+// Function ID: 15702
 // Name: CollectiblesShopSetting
-// Dependencies: [1085, 11129, 1126, 11762, 15698, 7052, 6681, 2]
+// Dependencies: [1085, 11129, 1126, 11762, 15702, 7052, 6681, 2]
 
-// Module 15697 (CollectiblesShopSetting)
+// Module 15701 (CollectiblesShopSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;

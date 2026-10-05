@@ -1,10 +1,10 @@
-// Module ID: 14648
-// Function ID: 14649
+// Module ID: 14652
+// Function ID: 14653
 // Name: ContactSyncSettings
-// Dependencies: [5, 19, 1377, 12328, 1085, 21, 12329, 4568, 1126, 4807, 12333, 1252, 12325, 504, 2028, 1390, 8895, 5093, 14649, 1987, 2]
+// Dependencies: [5, 19, 1377, 12328, 1085, 21, 12329, 4568, 1126, 4807, 12333, 1252, 12325, 504, 2028, 1390, 8895, 5093, 14653, 1987, 2]
 // Exports: default, handleSyncContacts
 
-// Module 14648 (ContactSyncSettings)
+// Module 14652 (ContactSyncSettings)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12325 */;
 import ContactSyncUtils from "ContactSyncUtils" /* 12329 */;
@@ -49,7 +49,7 @@ let obj = function _syncContacts() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;
@@ -129,7 +129,7 @@ let obj = function _syncContacts() {
           c6 = 0;
         }
         c8 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp22) {
         closure_5 = tmp22;
         if (0 === c6) {
@@ -162,7 +162,7 @@ obj = function _updateFriendSync() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;
@@ -225,7 +225,7 @@ obj = function _updateFriendSync() {
           c6 = 0;
         }
         c8 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp24) {
         let closure_5 = tmp24;
         if (0 === c6) {

@@ -1,10 +1,10 @@
-// Module ID: 16979
-// Function ID: 16980
+// Module ID: 17003
+// Function ID: 17004
 // Name: AddModeratorsActionSheet
 // Dependencies: [5, 32, 19, 17, 2074, 8077, 21, 4890, 587, 504, 5043, 5572, 1985, 9216, 4567, 4854, 6645, 6644, 1126, 5594, 9244, 2060, 2]
 // Exports: default
 
-// Module 16979 (AddModeratorsActionSheet)
+// Module 17003 (AddModeratorsActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -51,7 +51,7 @@ export default function AddModeratorsActionSheet(channel) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -115,7 +115,7 @@ export default function AddModeratorsActionSheet(channel) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp16) {
           closure_2 = tmp16;

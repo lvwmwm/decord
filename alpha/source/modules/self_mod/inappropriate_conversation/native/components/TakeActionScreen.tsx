@@ -1,9 +1,9 @@
-// Module ID: 15599
-// Function ID: 15600
+// Module ID: 15603
+// Function ID: 15604
 // Name: TakeActionScreen
 // Dependencies: [5, 32, 19, 17, 4519, 1377, 9784, 21, 4890, 587, 558, 576, 504, 9824, 9827, 1490, 9434, 8080, 9798, 8279, 4574, 4568, 1126, 4792, 4567, 5594, 9837, 8316, 5832, 8264, 4565, 4886, 2]
 
-// Module 15599 (TakeActionScreen)
+// Module 15603 (TakeActionScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 587 */;
@@ -293,7 +293,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
                 let obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -355,7 +355,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
                   trackAnalyticsEvent(tmp3(setReported[18]).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
                 }
                 c2 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } catch (tmp21) {
                 c2 = 3;
                 throw tmp21;
@@ -482,7 +482,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -544,7 +544,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
           closure_128_3(tmp3(setReported[18]).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
         }
         setReported = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp21) {
         setReported = 3;
         throw tmp21;

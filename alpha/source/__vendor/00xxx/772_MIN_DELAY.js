@@ -50,7 +50,7 @@ export function makeOfflineTransport(arg0) {
             obj = { value, done: true };
             return obj;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -94,7 +94,7 @@ export function makeOfflineTransport(arg0) {
                 });
               }
               c3 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp16) {
             c3 = 3;
@@ -129,7 +129,7 @@ export function makeOfflineTransport(arg0) {
               obj = { value, done: true };
               return obj;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -173,7 +173,7 @@ export function makeOfflineTransport(arg0) {
                   });
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp16) {
               c3 = 3;
@@ -377,7 +377,7 @@ export function makeOfflineTransport(arg0) {
         if (closure_1 === undefined) {
           flag = false;
         }
-        return "Reflect";
+        return "Set";
       });
       return obj(...arguments);
     };
@@ -407,7 +407,7 @@ export function makeOfflineTransport(arg0) {
                 obj = { value, done: true };
                 return obj;
               } else {
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -451,7 +451,7 @@ export function makeOfflineTransport(arg0) {
                     });
                   }
                   c3 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } catch (tmp16) {
                 c3 = 3;
@@ -495,7 +495,7 @@ export function makeOfflineTransport(arg0) {
                     obj = { value, done: true };
                     return obj;
                   } else {
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -539,7 +539,7 @@ export function makeOfflineTransport(arg0) {
                         });
                       }
                       c3 = 3;
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp16) {
                     c3 = 3;

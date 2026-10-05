@@ -49,7 +49,7 @@ let obj = function _trackHeartbeat() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -120,7 +120,7 @@ let obj = function _trackHeartbeat() {
             obj.captureException(Error("Null session when tracking session heartbeat. Waited " + closure_2 - closure_0 + "ms"));
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp49) {
         c4 = 3;
@@ -145,7 +145,7 @@ function isActive() {
   return items.length > 0;
 }
 function scheduleHeartbeatTracking() {
-  const f137657 = () => {
+  const f137895 = () => {
     trackHeartbeat();
     obj = {
       type: "interval",
@@ -181,8 +181,8 @@ function scheduleHeartbeatTracking() {
       SentryUtilsDefault;
       addBreadcrumb(obj3);
       const _setTimeout = setTimeout;
-      user = { type: "timeout", id: setTimeout(f137657, num) };
-      const obj4 = { type: "timeout", id: setTimeout(f137657, num) };
+      user = { type: "timeout", id: setTimeout(f137895, num) };
+      const obj4 = { type: "timeout", id: setTimeout(f137895, num) };
     }
   } else {
     let flag = false;
@@ -260,7 +260,7 @@ obj = function _forceDispatchSessionIdUpdate() {
         obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -299,7 +299,7 @@ obj = function _forceDispatchSessionIdUpdate() {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp15) {
         c3 = 3;
@@ -414,7 +414,7 @@ obj = function _getSession() {
         const obj5 = { value, done: true };
         return obj5;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -445,7 +445,7 @@ obj = function _getSession() {
             uuid1 = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else {
           if (1 === tmp4) {

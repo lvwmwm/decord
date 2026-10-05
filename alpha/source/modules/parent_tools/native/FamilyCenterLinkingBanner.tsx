@@ -1,9 +1,9 @@
-// Module ID: 14717
-// Function ID: 14718
+// Module ID: 14721
+// Function ID: 14722
 // Name: FamilyCenterLinkingBanner
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 8296, 1126, 2493, 11531, 14718, 4886, 14680, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 8296, 1126, 2493, 11531, 14722, 4886, 14684, 2]
 
-// Module 14717 (FamilyCenterLinkingBanner)
+// Module 14721 (FamilyCenterLinkingBanner)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
@@ -11,8 +11,8 @@ import _modDef2493 from "module_2493" /* 2493 */;
 import Text_Text from "Text/Text" /* 4886 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8296 */;
 import useAgeSpecificText3 from "useAgeSpecificText" /* 11531 */;
-import FamilyCenterBannerButton from "FamilyCenterBannerButton" /* 14680 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14718 */;
+import FamilyCenterBannerButton from "FamilyCenterBannerButton" /* 14684 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14722 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

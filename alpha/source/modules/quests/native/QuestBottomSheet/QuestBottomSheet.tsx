@@ -1,9 +1,9 @@
-// Module ID: 14919
-// Function ID: 14920
+// Module ID: 14923
+// Function ID: 14924
 // Name: QuestBottomSheet
-// Dependencies: [32, 19, 17, 7187, 5623, 21, 4890, 587, 558, 576, 7193, 9994, 4568, 1126, 4807, 10911, 10918, 5626, 14888, 504, 10958, 7208, 14920, 14922, 6645, 10954, 10916, 7212, 7224, 7213, 7223, 5630, 14958, 14960, 14961, 7206, 4803, 4886, 2]
+// Dependencies: [32, 19, 17, 7187, 5623, 21, 4890, 587, 558, 576, 7193, 9994, 4568, 1126, 4807, 10911, 10918, 5626, 14892, 504, 10958, 7208, 14924, 14926, 6645, 10954, 10916, 7212, 7224, 7213, 7223, 5630, 14962, 14964, 14965, 7206, 4803, 4886, 2]
 
-// Module 14919 (QuestBottomSheet)
+// Module 14923 (QuestBottomSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import react3 from "react" /* 576 */;
@@ -18,12 +18,12 @@ import AnalyticsTypes from "AnalyticsTypes" /* 7212 */;
 import QuestActionCreators from "QuestActionCreators" /* 9994 */;
 import hooks_QuestHooks from "hooks/QuestHooks" /* 10911 */;
 import QuestPlatformUtils from "QuestPlatformUtils" /* 10918 */;
-import QuestHooks from "QuestHooks" /* 14888 */;
-import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 14920 */;
-import QuestBottomSheetFooterDefault from "QuestBottomSheetFooter" /* 14922 */;
-import QuestBottomSheetProgressCard from "QuestBottomSheetProgressCard" /* 14958 */;
-import QuestBottomSheetTaskSelectDefault from "QuestBottomSheetTaskSelect" /* 14960 */;
-import QuestBottomSheetConsoleConnectDefault from "QuestBottomSheetConsoleConnect" /* 14961 */;
+import QuestHooks from "QuestHooks" /* 14892 */;
+import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 14924 */;
+import QuestBottomSheetFooterDefault from "QuestBottomSheetFooter" /* 14926 */;
+import QuestBottomSheetProgressCard from "QuestBottomSheetProgressCard" /* 14962 */;
+import QuestBottomSheetTaskSelectDefault from "QuestBottomSheetTaskSelect" /* 14964 */;
+import QuestBottomSheetConsoleConnectDefault from "QuestBottomSheetConsoleConnect" /* 14965 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import QuestStore from "QuestStore" /* 7187 */;
 import QuestConstants from "QuestConstants" /* 5623 */;
@@ -1043,7 +1043,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   const tmp5 = quest(obj5.useTaskPlatformScreen(quest, questTaskDetails), 3);
   let closure_4 = tmp5[2];
   const first = tmp5[0];
-  const obj6 = quest(14888);
+  const obj6 = quest(14892);
   const hasWatchVideoOnMobileTasks = obj6.useHasWatchVideoOnMobileTasks(quest.config);
   [tmp9, tmp10] = quest(closure_16({ quest, initialStep, location: _location }), 2);
   const userStatus = quest.userStatus;

@@ -1,9 +1,9 @@
-// Module ID: 14291
-// Function ID: 14292
+// Module ID: 14293
+// Function ID: 14294
 // Name: VoiceNotificationManager
 // Dependencies: [32, 17, 2050, 5118, 4912, 2051, 1999, 4913, 4519, 1377, 1085, 587, 7254, 7252, 9724, 10624, 5043, 1126, 1989, 2]
 
-// Module 14291 (VoiceNotificationManager)
+// Module 14293 (VoiceNotificationManager)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -68,7 +68,7 @@ class VoiceNotificationManager {
     let createAction;
     obj = Object.create(new.target.prototype);
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "Symbol", connectionState: "current", selfMute: false, deafened: "onRequestClose", isPushToTalk: true, embeddedActivity: true, isStreaming: true };
+    obj.state = { channelId: "T", connectionState: "cursor", selfMute: false, deafened: "increasedFileUploadSize", isPushToTalk: null, embeddedActivity: "webcode", isStreaming: "text" };
     obj.handleVoiceStateChange = handleVoiceStateChange;
     obj.handleMediaEngineStateChange = function handleMediaEngineStateChange() {
       const tmp = MediaEngineStore.isSelfMute() || MediaEngineStore.isSelfMutedTemporarily();
@@ -241,7 +241,7 @@ class VoiceNotificationManager {
 const prototype = VoiceNotificationManager.prototype;
 let obj = Object.create(VoiceNotificationManager.prototype);
 obj.voiceServiceHandlerId = 9000;
-obj.state = { channelId: "Symbol", connectionState: "current", selfMute: false, deafened: "onRequestClose", isPushToTalk: true, embeddedActivity: true, isStreaming: true };
+obj.state = { channelId: "T", connectionState: "cursor", selfMute: false, deafened: "increasedFileUploadSize", isPushToTalk: null, embeddedActivity: "webcode", isStreaming: "text" };
 obj.handleVoiceStateChange = handleVoiceStateChange;
 obj.handleMediaEngineStateChange = function handleMediaEngineStateChange() {
   const tmp = MediaEngineStore.isSelfMute() || MediaEngineStore.isSelfMutedTemporarily();

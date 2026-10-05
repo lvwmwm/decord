@@ -1,10 +1,10 @@
-// Module ID: 17807
-// Function ID: 17808
+// Module ID: 17831
+// Function ID: 17832
 // Name: IntroHeader
-// Dependencies: [19, 17, 21, 7905, 17808, 17809, 17810, 558, 576, 4729, 2]
+// Dependencies: [19, 17, 21, 7905, 17832, 17833, 17834, 558, 576, 4729, 2]
 // Exports: getIntroHeaderSource
 
-// Module 17807 (IntroHeader)
+// Module 17831 (IntroHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

@@ -62,7 +62,7 @@ let obj = function _discardDraftOrder() {
     }
     await "IconComponent";
     ({ checkoutSucceeded: c0, order: c1 } = closure_0);
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };

@@ -24,7 +24,7 @@ let obj = function _getLoadedStripe() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -115,7 +115,7 @@ obj = function _confirmCardPayment() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -155,7 +155,7 @@ obj = function _confirmCardPayment() {
             throw error;
           } else {
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         }
       } catch (tmp16) {
@@ -220,7 +220,7 @@ obj = function _authenticateStripePaymentIntent() {
     }
     await "IconComponent";
     ({ client_secret: c0, payment_method_id: c1 } = closure_0);
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };

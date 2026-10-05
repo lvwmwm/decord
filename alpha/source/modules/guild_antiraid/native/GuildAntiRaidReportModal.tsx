@@ -1,9 +1,9 @@
-// Module ID: 13778
-// Function ID: 13779
+// Module ID: 13780
+// Function ID: 13781
 // Name: GuildAntiRaidReportModal
-// Dependencies: [5, 32, 19, 17, 13779, 21, 4890, 587, 558, 576, 1618, 4886, 4565, 1126, 5990, 6074, 5594, 6010, 10664, 11441, 6452, 6496, 2]
+// Dependencies: [5, 32, 19, 17, 13781, 21, 4890, 587, 558, 576, 1618, 4886, 4565, 1126, 5990, 6074, 5594, 6010, 10664, 11441, 6452, 6496, 2]
 
-// Module 13778 (GuildAntiRaidReportModal)
+// Module 13780 (GuildAntiRaidReportModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
@@ -15,7 +15,7 @@ import TableRowGroup2 from "TableRowGroup" /* 6074 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildReportRaidModalConstants from "GuildReportRaidModalConstants" /* 13779 */;
+import GuildReportRaidModalConstants from "GuildReportRaidModalConstants" /* 13781 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -396,7 +396,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCloseModal) => {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -432,7 +432,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCloseModal) => {
           tmp3();
         }
         c2 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp14) {
         c2 = 3;
         throw tmp14;
@@ -476,7 +476,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCloseModal) => {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -512,7 +512,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCloseModal) => {
           closure_128_0();
         }
         first = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp15) {
         first = 3;
         throw tmp15;

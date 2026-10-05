@@ -1,14 +1,14 @@
-// Module ID: 16516
-// Function ID: 16517
+// Module ID: 16520
+// Function ID: 16521
 // Name: GuildHomeResources
-// Dependencies: [19, 17, 2051, 4507, 5110, 4509, 1085, 21, 4890, 587, 558, 576, 504, 7540, 11623, 16517, 6965, 7521, 1402, 4886, 4877, 5909, 16510, 1112, 1126, 16518, 5594, 2]
+// Dependencies: [19, 17, 2051, 4507, 5110, 4509, 1085, 21, 4890, 587, 558, 576, 504, 7540, 11623, 16521, 6965, 7521, 1402, 4886, 4877, 5909, 16514, 1112, 1126, 16522, 5594, 2]
 
-// Module 16516 (GuildHomeResources)
+// Module 16520 (GuildHomeResources)
 import nativeDefault from "native" /* 587 */;
 import router_utils from "router_utils" /* 1112 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 6965 */;
 import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 7521 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 16510 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 16514 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
@@ -31,7 +31,7 @@ let map1;
 let obj2;
 let tmp5;
 let unpackModuleId;
-const AssetRegistryDefault = tmp5(16518);
+const AssetRegistryDefault = tmp5(16522);
 ({ View: closure_4, Image: hasOwnProperty } = react_native);
 ({ Permissions: c10, Routes: unpackModuleId } = Constants);
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
@@ -193,7 +193,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
     }
     const tmpResult10 = tmp(11623);
     const shouldObscure = tmpResult10.useSharedMediaProps(obj2).shouldObscure;
-    stateFromStores(16517)(tmp14);
+    stateFromStores(16521)(tmp14);
     if (cResult[14] === stateFromStores) {
       class R {
         constructor() {
@@ -308,7 +308,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   }
   const tmp2Result = channelId(11623);
   let flag = tmp2Result.useSharedMediaProps({ channel: stateFromStores, media: first }).shouldObscure;
-  const tmp11 = stateFromStores(16517)(firstResult);
+  const tmp11 = stateFromStores(16521)(firstResult);
   const tmp12 = null != stateFromStores && null == stateFromStores2.first() && !stateFromStores2.loadingMore && !stateFromStores2.ready && !stateFromStores2.hasFetched;
   dependencyMap = tmp12;
   const items3 = [channelId, tmp12];

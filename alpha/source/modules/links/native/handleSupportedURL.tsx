@@ -1,10 +1,10 @@
-// Module ID: 13661
-// Function ID: 13662
+// Module ID: 13663
+// Function ID: 13664
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 5948, 7037, 6927, 13199, 502, 1085, 2058, 4932, 5099, 8710, 7049, 4869, 13662, 7634, 12325, 5093, 4737, 13663, 7850, 6885, 10886, 8392, 11402, 1881, 11089, 1252, 11091, 6751, 11202, 11525, 13670, 12357, 8716, 1987, 8711, 8709, 13672, 13674, 1615, 7275, 13678, 4565, 13680, 2074, 6845, 9178, 9279, 6820, 5092, 9448, 4736, 5635, 1112, 584, 6677, 1371, 9247, 13683, 13698, 1369, 13709, 9481, 11521, 13717, 5404, 13718, 7052, 6681, 9368, 13793, 7202, 5628, 10908, 10949, 10392, 13794, 5612, 8987, 8319, 8325, 4851, 2]
+// Dependencies: [109, 5, 5948, 7037, 6927, 13201, 502, 1085, 2058, 4932, 5099, 8710, 7049, 4869, 13664, 7634, 12325, 5093, 4737, 13665, 7850, 6885, 10886, 8392, 11402, 1881, 11089, 1252, 11091, 6751, 11202, 11525, 13672, 12357, 8716, 1987, 8711, 8709, 13674, 13676, 1615, 7275, 13680, 4565, 13682, 2074, 6845, 9178, 9279, 6820, 5092, 9448, 4736, 5635, 1112, 584, 6677, 1371, 9247, 13685, 13700, 1369, 13711, 9481, 11521, 13719, 5404, 13720, 7052, 6681, 9368, 13795, 7202, 5628, 10908, 10949, 10392, 13796, 5612, 8987, 8319, 8325, 4851, 2]
 // Exports: default
 
-// Module 13661 (handleSupportedURL)
+// Module 13663 (handleSupportedURL)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1881 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
@@ -36,14 +36,14 @@ import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils
 import QuestUtils from "QuestUtils" /* 10908 */;
 import BountyActionCreators from "BountyActionCreators" /* 10949 */;
 import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 11402 */;
-import ShareScreenConstants from "ShareScreenConstants" /* 13662 */;
-import MidjourneyOnboardingUtils from "MidjourneyOnboardingUtils" /* 13670 */;
-import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 13698 */;
-import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 13793 */;
+import ShareScreenConstants from "ShareScreenConstants" /* 13664 */;
+import MidjourneyOnboardingUtils from "MidjourneyOnboardingUtils" /* 13672 */;
+import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 13700 */;
+import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 13795 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7037 */;
-import PremiumNitroNavigationStore from "PremiumNitroNavigationStore" /* 13199 */;
+import PremiumNitroNavigationStore from "PremiumNitroNavigationStore" /* 13201 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
@@ -345,7 +345,7 @@ export default function handleSupportedURL(payload) {
           pathname(null != remoteAuthFingerprint ? (() => {
             const obj = ModalActionCreatorsDefault;
             const obj2 = { remoteAuthFingerprint };
-            obj.pushLazy(asyncRequire(13674, dependencyMap.paths), obj2, "REMOTE_AUTH_MODAL");
+            obj.pushLazy(asyncRequire(13676, dependencyMap.paths), obj2, "REMOTE_AUTH_MODAL");
           }) : (() => {
             let paths;
             let tmp = inviteCode;
@@ -406,7 +406,7 @@ export default function handleSupportedURL(payload) {
                 const obj4 = { value, done: true };
                 return obj4;
               } else {
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -473,7 +473,7 @@ export default function handleSupportedURL(payload) {
                     const result = obj3.openGuildEventDetails(obj10);
                   }
                   c4 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } catch (tmp34) {
                 c4 = 3;
@@ -504,7 +504,7 @@ export default function handleSupportedURL(payload) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -550,7 +550,7 @@ export default function handleSupportedURL(payload) {
                   obj4.disconnectRemote();
                 }
                 c2 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } catch (tmp36) {
                 c2 = 3;
                 throw tmp36;
@@ -615,7 +615,7 @@ export default function handleSupportedURL(payload) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -714,7 +714,7 @@ export default function handleSupportedURL(payload) {
                   }
                 }
                 c8 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } catch (tmp29) {
                 c8 = 3;
                 throw tmp29;
@@ -798,7 +798,7 @@ export default function handleSupportedURL(payload) {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     }
                   } else {
                     try {
@@ -847,7 +847,7 @@ export default function handleSupportedURL(payload) {
                         }
                       }
                       inviteCode = 3;
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     } catch (tmp15) {
                       inviteCode = 3;
                       throw tmp15;

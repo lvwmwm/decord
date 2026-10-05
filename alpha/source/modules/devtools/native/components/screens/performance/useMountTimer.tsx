@@ -1,9 +1,9 @@
-// Module ID: 15609
-// Function ID: 15610
+// Module ID: 15613
+// Function ID: 15614
 // Name: useMountTimer
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 15609 (useMountTimer)
+// Module 15613 (useMountTimer)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

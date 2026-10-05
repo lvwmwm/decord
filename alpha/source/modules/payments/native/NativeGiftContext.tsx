@@ -444,7 +444,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
                         const obj2 = { value, done: true };
                         return obj2;
                       } else {
-                        return { value: "IconComponent", done: "IconComponent" };
+                        return { value: "IconComponent", done: null };
                       }
                     } else {
                       try {
@@ -508,7 +508,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
                               if (ref.current.orderId !== closure_129_6) {
                                 needsPlanSync = 0;
                                 c5 = 3;
-                                return { value: "IconComponent", done: "IconComponent" };
+                                return { value: "IconComponent", done: null };
                               } else {
                                 expectedRevision = revision.revision;
                                 needsPlanSync(revision);
@@ -529,7 +529,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
                                 if (ref.current.orderId !== closure_129_6) {
                                   needsPlanSync = 0;
                                   c5 = 3;
-                                  return { value: "IconComponent", done: "IconComponent" };
+                                  return { value: "IconComponent", done: null };
                                 }
                               }
                             } else if (arg0 === 1) {
@@ -543,14 +543,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
                               expectedRevision = value;
                               if (ref.current.orderId !== closure_129_6) {
                                 c5 = 3;
-                                return { value: "IconComponent", done: "IconComponent" };
+                                return { value: "IconComponent", done: null };
                               } else {
                                 ref.current.giftInfo = current;
                                 tmp67(expectedRevision);
                               }
                             }
                             c5 = 3;
-                            return { value: "IconComponent", done: "IconComponent" };
+                            return { value: "IconComponent", done: null };
                           }
                           ref.current.planId = planId;
                           const obj15 = { premiumType, planInterval };
@@ -631,7 +631,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
     cResult[19] = fn;
     tmp11 = fn;
   }
-  let obj4 = { orderId: "a", planId: "trackedActionData", planSelection: { premiumType, planInterval }, giftInfo: 10 };
+  let obj4 = { orderId: "a", planId: 600, planSelection: { premiumType, planInterval }, giftInfo: 0 };
   cResult[0] = planInterval;
   cResult[1] = premiumType;
   cResult[2] = obj4;
@@ -651,7 +651,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
   const setPremiumType = order.setPremiumType;
   const setPlanInterval = order.setPlanInterval;
   const setError = order.setError;
-  let obj = { orderId: "a", planId: "trackedActionData", planSelection: { premiumType, planInterval }, giftInfo: 10 };
+  let obj = { orderId: "a", planId: 600, planSelection: { premiumType, planInterval }, giftInfo: 0 };
   let closure_13 = externalGatewayFacet.useRef(obj);
   const ref = externalGatewayFacet.useRef(false);
   const ref2 = externalGatewayFacet.useRef(null);
@@ -765,7 +765,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "IconComponent", done: null };
                     }
                   } else {
                     try {
@@ -829,7 +829,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
                             if (ref.current.orderId !== closure_129_6) {
                               needsPlanSync = 0;
                               c5 = 3;
-                              return { value: "IconComponent", done: "IconComponent" };
+                              return { value: "IconComponent", done: null };
                             } else {
                               expectedRevision = revision.revision;
                               needsPlanSync(revision);
@@ -850,7 +850,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
                               if (ref.current.orderId !== closure_129_6) {
                                 needsPlanSync = 0;
                                 c5 = 3;
-                                return { value: "IconComponent", done: "IconComponent" };
+                                return { value: "IconComponent", done: null };
                               }
                             }
                           } else if (arg0 === 1) {
@@ -864,14 +864,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
                             expectedRevision = value;
                             if (ref.current.orderId !== closure_129_6) {
                               c5 = 3;
-                              return { value: "IconComponent", done: "IconComponent" };
+                              return { value: "IconComponent", done: null };
                             } else {
                               ref.current.giftInfo = current;
                               tmp67(expectedRevision);
                             }
                           }
                           c5 = 3;
-                          return { value: "IconComponent", done: "IconComponent" };
+                          return { value: "IconComponent", done: null };
                         }
                         ref.current.planId = planId;
                         const obj15 = { premiumType, planInterval };
@@ -1502,7 +1502,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(basePurchase
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -1553,7 +1553,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(basePurchase
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp28) {
             closure_3 = tmp28;
             if (0 === c4) {
@@ -1594,7 +1594,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(basePurchase
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -1688,7 +1688,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(basePurchase
               const tmp8 = closure_1_19(false);
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp51) {
           c5 = 3;

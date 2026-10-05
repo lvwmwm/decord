@@ -1,9 +1,9 @@
-// Module ID: 15346
-// Function ID: 15347
+// Module ID: 15350
+// Function ID: 15351
 // Name: AppIcon
 // Dependencies: [19, 17, 8828, 21, 4890, 587, 558, 576, 4791, 4729, 2]
 
-// Module 15346 (AppIcon)
+// Module 15350 (AppIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

@@ -1,9 +1,9 @@
-// Module ID: 14789
-// Function ID: 14790
+// Module ID: 14793
+// Function ID: 14794
 // Name: PremiumManagePlanSetting
-// Dependencies: [7634, 1085, 11129, 1126, 14790, 2]
+// Dependencies: [7634, 1085, 11129, 1126, 14794, 2]
 
-// Module 14789 (PremiumManagePlanSetting)
+// Module 14793 (PremiumManagePlanSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;

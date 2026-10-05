@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("modules/app_analytics/track/channel_o
 export default function trackChannelOpenedClickstream(channelId) {
   let type;
   channelId = channelId.channelId;
-  if (StaticChannelRoute.VIBEGRATIONS !== channelId) {
+  if (StaticChannelRoute.CONJURE !== channelId) {
     if (StaticChannelRoute.CHANNEL_BROWSER !== channelId) {
       if (StaticChannelRoute.GUILD_HOME !== channelId) {
         if (StaticChannelRoute.GUILD_SHOP !== channelId) {

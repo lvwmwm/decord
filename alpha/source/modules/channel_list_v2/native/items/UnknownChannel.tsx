@@ -1,9 +1,9 @@
-// Module ID: 16164
-// Function ID: 16165
+// Module ID: 16168
+// Function ID: 16169
 // Name: UnknownChannel
-// Dependencies: [19, 11697, 5072, 21, 4890, 587, 4568, 1126, 4812, 558, 576, 5043, 10651, 16050, 2]
+// Dependencies: [19, 11697, 5072, 21, 4890, 587, 4568, 1126, 4812, 558, 576, 5043, 10651, 16054, 2]
 
-// Module 16164 (UnknownChannel)
+// Module 16168 (UnknownChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
@@ -22,7 +22,7 @@ let channel;
 
 let obj2;
 let tmp5;
-const ChannelItemDefault = tmp5(16050);
+const ChannelItemDefault = tmp5(16054);
 function handlePress() {
   let intl;
   const obj = { key: "UNKNOWN_CHANNEL_UPDATE_DISCORD", content: intl.string(intl2.t["/ZjyYE"]), IconComponent: CircleInformationIcon.CircleInformationIcon };

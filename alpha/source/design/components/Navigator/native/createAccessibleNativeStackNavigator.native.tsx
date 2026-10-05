@@ -1,10 +1,10 @@
-// Module ID: 14268
-// Function ID: 14269
+// Module ID: 14270
+// Function ID: 14271
 // Name: createAccessibleNativeStackNavigator
 // Dependencies: [109, 19, 21, 558, 576, 6496, 1491, 7556, 2]
 // Exports: default
 
-// Module 14268 (createAccessibleNativeStackNavigator)
+// Module 14270 (createAccessibleNativeStackNavigator)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Link from "Link" /* 1491 */;

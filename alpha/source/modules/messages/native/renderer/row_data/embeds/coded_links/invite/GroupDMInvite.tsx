@@ -1,10 +1,10 @@
-// Module ID: 13048
-// Function ID: 13049
+// Module ID: 13050
+// Function ID: 13051
 // Name: GroupDMInvite
 // Dependencies: [2051, 4519, 1377, 7226, 7604, 10025, 1126, 12853, 1405, 5043, 2]
 // Exports: createGroupDMInvite
 
-// Module 13048 (GroupDMInvite)
+// Module 13050 (GroupDMInvite)
 import intl7 from "intl" /* 1126 */;
 import Constants from "Constants" /* 7226 */;
 import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7604 */;

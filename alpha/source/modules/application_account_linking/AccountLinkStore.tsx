@@ -1,9 +1,9 @@
-// Module ID: 17099
-// Function ID: 17100
+// Module ID: 17123
+// Function ID: 17124
 // Name: AccountLinkStore
 // Dependencies: [6602, 504, 584, 2]
 
-// Module 17099 (AccountLinkStore)
+// Module 17123 (AccountLinkStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6602 */;

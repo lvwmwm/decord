@@ -1,16 +1,16 @@
-// Module ID: 15936
-// Function ID: 15937
+// Module ID: 15940
+// Function ID: 15941
 // Name: YouBarStackNavigator
-// Dependencies: [19, 17, 2103, 4699, 10820, 21, 7556, 15937, 16339, 16387, 504, 558, 576, 16461, 8030, 6496, 6651, 2]
+// Dependencies: [19, 17, 2103, 4699, 10820, 21, 7556, 15941, 16343, 16391, 504, 558, 576, 16465, 8030, 6496, 6651, 2]
 
-// Module 15936 (YouBarStackNavigator)
+// Module 15940 (YouBarStackNavigator)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import Navigator2 from "Navigator" /* 6496 */;
 import ICYMIExperiment from "ICYMIExperiment" /* 8030 */;
 import MainTabsConstants from "MainTabsConstants" /* 10820 */;
-import notifications_Notifications from "notifications/Notifications" /* 16339 */;
-import useNotificationPermissionPromptDefault from "useNotificationPermissionPrompt" /* 16461 */;
+import notifications_Notifications from "notifications/Notifications" /* 16343 */;
+import useNotificationPermissionPromptDefault from "useNotificationPermissionPrompt" /* 16465 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
@@ -27,7 +27,7 @@ let c9;
 let closure_4;
 let hasOwnProperty;
 let unpackModuleId;
-const f121916 = () => guildId.getGuildId();
+const f122069 = () => guildId.getGuildId();
 function getGuildsComponent() {
   return require("guilds/Guilds").default;
 }
@@ -54,7 +54,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   const ref = react.useRef(undefined);
   const items = [SelectedGuildStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f121916);
+  const stateFromStores = obj2.useStateFromStores(items, f122069);
   const tmp6 = null == ref.current && null != stateFromStores;
   if (tmp6) {
     const obj3 = { guildId: stateFromStores, channelId };
@@ -190,7 +190,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   const tmp3 = accessibilityNativeStackOptions;
   let obj2 = current(accessibilityNativeStackOptions[10]);
   let items = [SelectedGuildStore];
-  const stateFromStores = obj2.useStateFromStores(items, f121916);
+  const stateFromStores = obj2.useStateFromStores(items, f122069);
   const tmp5 = null == ref.current && null != stateFromStores;
   if (tmp5) {
     let obj3 = { guildId: stateFromStores, channelId };

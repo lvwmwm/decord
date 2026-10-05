@@ -111,7 +111,7 @@ let obj = function _fetchAnswer() {
     }
     await "IconComponent";
     ({ searchContext: c0, searchQueryString: c1 } = closure_0);
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };

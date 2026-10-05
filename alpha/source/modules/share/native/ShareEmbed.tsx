@@ -1,9 +1,9 @@
-// Module ID: 13715
-// Function ID: 13716
+// Module ID: 13717
+// Function ID: 13718
 // Name: ShareEmbed
 // Dependencies: [19, 17, 21, 4890, 587, 558, 576, 5968, 4886, 2]
 
-// Module 13715 (ShareEmbed)
+// Module 13717 (ShareEmbed)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 4886 */;

@@ -1,9 +1,9 @@
-// Module ID: 14409
-// Function ID: 14410
+// Module ID: 14413
+// Function ID: 14414
 // Name: UserProfileEditForm
-// Dependencies: [19, 17, 7863, 9417, 6707, 1085, 1095, 14410, 21, 6486, 14411, 4528, 6657, 6681, 14412, 4854, 14414, 1987, 7838, 7835, 7837, 1126, 558, 576, 7913, 14425, 1490, 7833, 6110, 4612, 6471, 587, 10836, 14426, 10465, 11483, 7857, 10826, 11581, 7840, 7914, 10883, 504, 7868, 12921, 14429, 7899, 7910, 6487, 14430, 4886, 4589, 10842, 14431, 10827, 10843, 14436, 14437, 14442, 14448, 14450, 14451, 14455, 14459, 14464, 14465, 14468, 14469, 14471, 14472, 2]
+// Dependencies: [19, 17, 7863, 9417, 6707, 1085, 1095, 14414, 21, 6486, 14415, 4528, 6657, 6681, 14416, 4854, 14418, 1987, 7838, 7835, 7837, 1126, 558, 576, 7913, 14429, 1490, 7833, 6110, 4612, 6471, 587, 10836, 14430, 10465, 11483, 7857, 10826, 11581, 7840, 7914, 10883, 504, 7868, 12923, 14433, 7899, 7910, 6487, 14434, 4886, 4589, 10842, 14435, 10827, 10843, 14440, 14441, 14446, 14452, 14454, 14455, 14459, 14463, 14468, 14469, 14472, 14473, 14475, 14476, 2]
 
-// Module 14409 (UserProfileEditForm)
+// Module 14413 (UserProfileEditForm)
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
@@ -13,9 +13,9 @@ import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreat
 import Constants2 from "Constants" /* 6707 */;
 import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 7837 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7868 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 12921 */;
-import UserProfileEditConstants from "UserProfileEditConstants" /* 14410 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14411 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 12923 */;
+import UserProfileEditConstants from "UserProfileEditConstants" /* 14414 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14415 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7863 */;
@@ -83,7 +83,7 @@ function EditUserProfileBanner(user) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       obj = { user, analyticsLocations, onBannerChange: fn, showRemoveBanner: showRemoveBanner(tmp7, banner), isTryItOut };
       ActionSheetActionCreatorsDefault;
-      const tmp4 = asyncRequire(14414, dependencyMap.paths);
+      const tmp4 = asyncRequire(14418, dependencyMap.paths);
       if (isTryItOut) {
         fn = tmp3(7838).setTryItOutBanner;
       } else {
@@ -119,7 +119,7 @@ const FLOATING_UPSELL_HEIGHT = Constants2.FLOATING_UPSELL_HEIGHT;
 let closure_12 = UserSettingsConstants.ProfileCustomizationScrollPositions;
 const constants2 = UserProfileEditConstants.UserProfileEditAutoFocusElement;
 ({ jsx: closure_14, jsxs: closure_15 } = Fragment);
-let obj = { assetOrigin: ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET, imageUri: AssetRegistryDefault, staticImageUri: AssetRegistryDefault, description: "", originalAsset: "unicodeVersion" };
+let obj = { assetOrigin: ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET, imageUri: AssetRegistryDefault, staticImageUri: AssetRegistryDefault, description: "", originalAsset: "code" };
 const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentUser) => {
   let autoFocusElement;
   let errorContainer;

@@ -1,9 +1,9 @@
-// Module ID: 17814
-// Function ID: 17815
+// Module ID: 17838
+// Function ID: 17839
 // Name: SafetyCheckScreen
-// Dependencies: [32, 19, 17, 9248, 1085, 21, 558, 576, 4580, 587, 17815, 504, 17816, 9247, 4886, 1126, 6698, 6074, 17825, 5593, 17813, 2]
+// Dependencies: [32, 19, 17, 9248, 1085, 21, 558, 576, 4580, 587, 17839, 504, 17840, 9247, 4886, 1126, 6698, 6074, 17849, 5593, 17837, 2]
 
-// Module 17814 (SafetyCheckScreen)
+// Module 17838 (SafetyCheckScreen)
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

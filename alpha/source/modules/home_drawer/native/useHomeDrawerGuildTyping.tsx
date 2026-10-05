@@ -1,9 +1,9 @@
-// Module ID: 16257
-// Function ID: 16258
+// Module ID: 16261
+// Function ID: 16262
 // Name: useHomeDrawerGuildTyping
-// Dependencies: [4511, 2055, 2051, 11579, 568, 558, 576, 16254, 16255, 11, 504, 2]
+// Dependencies: [4511, 2055, 2051, 11579, 568, 558, 576, 16258, 16259, 11, 504, 2]
 
-// Module 16257 (useHomeDrawerGuildTyping)
+// Module 16261 (useHomeDrawerGuildTyping)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import shallowEqual from "shallowEqual" /* 568 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
@@ -25,7 +25,7 @@ function areHomeDrawerGuildTypingStatesEqual(typingChannelId, typingChannelId2) 
   return result;
 }
 const isThread = ChannelRecord.isThread;
-let closure_7 = { typingChannelId: "Array", typingChannelName: "Reflect", typingUserIds: [] };
+let closure_7 = { typingChannelId: "Array", typingChannelName: "Set", typingUserIds: [] };
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let closure_0;
   let first;

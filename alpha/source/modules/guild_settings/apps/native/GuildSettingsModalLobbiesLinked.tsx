@@ -1,9 +1,9 @@
-// Module ID: 17748
-// Function ID: 17749
+// Module ID: 17772
+// Function ID: 17773
 // Name: GuildSettingsModalLobbiesLinked
-// Dependencies: [19, 4519, 1377, 1085, 21, 558, 576, 1490, 6663, 5993, 5043, 5812, 6074, 4580, 587, 17638, 12, 5593, 8895, 6536, 2]
+// Dependencies: [19, 4519, 1377, 1085, 21, 558, 576, 1490, 6663, 5993, 5043, 5812, 6074, 4580, 587, 17662, 12, 5593, 8895, 6536, 2]
 
-// Module 17748 (GuildSettingsModalLobbiesLinked)
+// Module 17772 (GuildSettingsModalLobbiesLinked)
 import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4519 */;

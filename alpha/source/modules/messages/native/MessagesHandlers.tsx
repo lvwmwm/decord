@@ -2502,7 +2502,7 @@ class MessagesHandlers {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -2565,7 +2565,7 @@ class MessagesHandlers {
             c3 = 0;
           }
           c1 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp14) {
           if (0 === c3) {
             c1 = 3;

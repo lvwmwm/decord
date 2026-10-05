@@ -1,9 +1,9 @@
-// Module ID: 14957
-// Function ID: 14958
+// Module ID: 14961
+// Function ID: 14962
 // Name: VideoQuestModalContentCompleted
-// Dependencies: [32, 19, 17, 21, 4890, 587, 14931, 558, 576, 14926, 10000, 14955, 10813, 14922, 10911, 4612, 5597, 7206, 8038, 10010, 10964, 14893, 7941, 1126, 4886, 14948, 5593, 14949, 5594, 14917, 6570, 11364, 5909, 5626, 5974, 12715, 6619, 2]
+// Dependencies: [32, 19, 17, 21, 4890, 587, 14935, 558, 576, 14930, 10000, 14959, 10813, 14926, 10911, 4612, 5597, 7206, 8038, 10010, 10964, 14897, 7941, 1126, 4886, 14952, 5593, 14953, 5594, 14921, 6570, 11364, 5909, 5626, 5974, 12715, 6619, 2]
 
-// Module 14957 (VideoQuestModalContentCompleted)
+// Module 14961 (VideoQuestModalContentCompleted)
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
 import spring from "spring" /* 5597 */;
@@ -11,7 +11,7 @@ import QuestTypes from "QuestTypes" /* 5626 */;
 import showShareActionSheet2 from "showShareActionSheet" /* 8038 */;
 import AssetUtils from "AssetUtils" /* 10000 */;
 import QuestCopyUtils from "QuestCopyUtils" /* 10010 */;
-import QuestProgressIndicator from "QuestProgressIndicator" /* 14931 */;
+import QuestProgressIndicator from "QuestProgressIndicator" /* 14935 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

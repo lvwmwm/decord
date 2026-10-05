@@ -1,9 +1,9 @@
-// Module ID: 16637
-// Function ID: 16638
+// Module ID: 16648
+// Function ID: 16649
 // Name: InAppReportsFeedbackActionSheet
-// Dependencies: [19, 1085, 11249, 21, 558, 576, 16638, 1252, 16639, 11252, 4567, 16640, 1126, 11270, 2]
+// Dependencies: [19, 1085, 11249, 21, 558, 576, 16649, 1252, 16650, 11252, 4567, 16651, 1126, 11270, 2]
 
-// Module 16637 (InAppReportsFeedbackActionSheet)
+// Module 16648 (InAppReportsFeedbackActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
@@ -12,9 +12,9 @@ import ToastUtils from "ToastUtils" /* 4567 */;
 import Constants2 from "Constants" /* 11249 */;
 import FeedbackUtils from "FeedbackUtils" /* 11252 */;
 import FeedbackActionSheetDefault from "FeedbackActionSheet" /* 11270 */;
-import getInAppReportsFeedbackOptionsDefault from "getInAppReportsFeedbackOptions" /* 16638 */;
-import trackInAppReportsFeedbackDefault from "trackInAppReportsFeedback" /* 16639 */;
-import intl_migration from "intl/migration" /* 16640 */;
+import getInAppReportsFeedbackOptionsDefault from "getInAppReportsFeedbackOptions" /* 16649 */;
+import trackInAppReportsFeedbackDefault from "trackInAppReportsFeedback" /* 16650 */;
+import intl_migration from "intl/migration" /* 16651 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportId) => {
   reportId = reportId.reportId;
   const reportType = reportId.reportType;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = reportType(16638)();
+    const tmp6 = reportType(16649)();
     cResult[0] = tmp6;
     first = tmp6;
   } else {
@@ -54,7 +54,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportId) => {
       }
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmpResult = reportId(16640);
+        const tmpResult = reportId(16651);
         const result = tmpResult.improperGetEnglishIntlMessageText("CALL_FEEDBACK_OPTION_OTHER");
         cResult[7] = result;
         tmp9 = result;

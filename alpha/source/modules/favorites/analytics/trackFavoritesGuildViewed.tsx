@@ -1,10 +1,10 @@
-// Module ID: 16901
-// Function ID: 16902
+// Module ID: 16920
+// Function ID: 16921
 // Name: trackFavoritesGuildViewed
 // Dependencies: [1377, 2054, 1085, 1379, 10036, 1976, 1252, 10044, 2]
 // Exports: default
 
-// Module 16901 (trackFavoritesGuildViewed)
+// Module 16920 (trackFavoritesGuildViewed)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PremiumConstants from "PremiumConstants" /* 1379 */;

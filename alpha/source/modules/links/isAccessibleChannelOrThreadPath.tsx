@@ -47,7 +47,7 @@ let obj = function _isAccessibleChannelOrThreadPath() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -71,7 +71,7 @@ let obj = function _isAccessibleChannelOrThreadPath() {
               channel2 = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else {
             let tmp14;
@@ -98,27 +98,27 @@ let obj = function _isAccessibleChannelOrThreadPath() {
                   return { value: true, done: true };
                 } else {
                   if (closure_131_10(c1)) {
-                    if (closure_131_11.VIBEGRATIONS === c1) {
-                      let result = null != tmp;
-                      if (result) {
+                    if (closure_131_11.CONJURE === c1) {
+                      let canAccessConjureResult = null != tmp;
+                      if (canAccessConjureResult) {
                         const obj32 = closure_131_0(closure_131_2[7]);
-                        result = obj32.canAccessVibegrations(tmp, "isAccessibleChannelOrThreadPath");
+                        canAccessConjureResult = obj32.canAccessConjure(tmp, "isAccessibleChannelOrThreadPath");
                       }
                       c5 = 3;
-                      return { value: result, done: true };
+                      return { value: canAccessConjureResult, done: true };
                     } else if (closure_131_11.ROLE_SUBSCRIPTIONS === c1) {
                       c5 = 3;
                       const obj9 = { value: obj30.areRoleSubscriptionsVisibleInGuild(id, unsafeMutableRoles), done: true };
                       obj30 = closure_131_0(closure_131_2[8]);
                       return obj9;
                     } else if (closure_131_11.SERVER_MONETIZATION_ONBOARDING === c1) {
-                      let result1 = null != tmp;
-                      if (result1) {
+                      let result = null != tmp;
+                      if (result) {
                         const obj28 = closure_131_0(closure_131_2[9]);
-                        result1 = obj28.canUserSeeMonetizationOnboarding(tmp);
+                        result = obj28.canUserSeeMonetizationOnboarding(tmp);
                       }
                       c5 = 3;
-                      return { value: result1, done: true };
+                      return { value: result, done: true };
                     } else if (closure_131_11.GAME_SHOP === c1) {
                       obj13 = tmp;
                       const hasSocialLayerStorefront = closure_131_0(closure_131_2[10]).hasSocialLayerStorefront;

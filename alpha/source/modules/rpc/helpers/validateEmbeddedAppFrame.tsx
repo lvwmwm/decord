@@ -1,10 +1,10 @@
-// Module ID: 14300
-// Function ID: 14301
+// Module ID: 14302
+// Function ID: 14303
 // Name: validateEmbeddedAppFrame
-// Dependencies: [8703, 14301, 5316, 1085, 8704, 8514, 9031, 2016, 9026, 2]
+// Dependencies: [14303, 8703, 5316, 1085, 8704, 8514, 9031, 2016, 9026, 2]
 // Exports: tryValidateEmbeddedAppFrame
 
-// Module 14300 (validateEmbeddedAppFrame)
+// Module 14302 (validateEmbeddedAppFrame)
 import Constants from "Constants" /* 1085 */;
 import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2016 */;
 import Constants2 from "Constants" /* 5316 */;
@@ -12,8 +12,8 @@ import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8514 */;
 import FramesConstants from "FramesConstants" /* 8704 */;
 import RPCErrorDefault from "RPCError" /* 9026 */;
 import RPCHelpers from "RPCHelpers" /* 9031 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 14303 */;
 import FramesStore from "FramesStore" /* 8703 */;
-import VibegrationsBuilderPreviewStore from "VibegrationsBuilderPreviewStore" /* 14301 */;
 import size from "module_2" /* 2 */;
 
 function validateEmbeddedAppFrame(transport) {
@@ -38,8 +38,8 @@ function validateEmbeddedAppFrame(transport) {
           if (EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL !== type) {
             if (EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN === type) {
               let obj5;
-              if (tmp29.applicationId === VibegrationsBuilderPreviewStore.getBuilderPreviewApplicationId()) {
-                obj5 = { channelId: "Symbol", guildId: "current" };
+              if (tmp29.applicationId === ConjureBuilderPreviewStore.getBuilderPreviewApplicationId()) {
+                obj5 = { channelId: "Array", guildId: "Set" };
               } else {
                 obj5 = null;
               }

@@ -1,9 +1,9 @@
-// Module ID: 17152
-// Function ID: 17153
+// Module ID: 17176
+// Function ID: 17177
 // Name: ActivityPanelFocusedView
-// Dependencies: [19, 17, 4879, 2051, 2050, 2011, 8705, 17147, 1085, 11902, 21, 4890, 587, 558, 576, 1618, 504, 1484, 17142, 16577, 4612, 4589, 4891, 5597, 5767, 4498, 17144, 17153, 8993, 9134, 2]
+// Dependencies: [19, 17, 4879, 2051, 2050, 2011, 8705, 17171, 1085, 11902, 21, 4890, 587, 558, 576, 1618, 504, 1484, 17166, 16583, 4612, 4589, 4891, 5597, 5767, 4498, 17168, 17177, 8993, 9134, 2]
 
-// Module 17152 (ActivityPanelFocusedView)
+// Module 17176 (ActivityPanelFocusedView)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,14 +16,14 @@ import timing from "timing" /* 4891 */;
 import spring from "spring" /* 5597 */;
 import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 9134 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11902 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17144 */;
-import ActivityPanelHeaderDefault from "ActivityPanelHeader" /* 17153 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17168 */;
+import ActivityPanelHeaderDefault from "ActivityPanelHeader" /* 17177 */;
 import react from "react" /* 19 */;
 import AccessibilityStore_mod from "AccessibilityStore" /* 4879 */;
 import ChannelStore_mod from "ChannelStore" /* 2051 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 8705 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 17147 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 17171 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

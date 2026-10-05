@@ -1,21 +1,21 @@
-// Module ID: 15047
-// Function ID: 15048
+// Module ID: 15051
+// Function ID: 15052
 // Name: GuildRoleSubscriptionTierTemplatesUtils
-// Dependencies: [5, 19, 2051, 4502, 15042, 15048, 1085, 2058, 5323, 558, 576, 573, 1390, 584, 9213, 6763, 13703, 2]
+// Dependencies: [5, 19, 2051, 4502, 15046, 15052, 1085, 2058, 5323, 558, 576, 573, 1390, 584, 9213, 6763, 13705, 2]
 // Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge
 
-// Module 15047 (GuildRoleSubscriptionTierTemplatesUtils)
+// Module 15051 (GuildRoleSubscriptionTierTemplatesUtils)
 import react from "react" /* 19 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import FlagUtilsAll from "FlagUtils" /* 1390 */;
 import ChannelConstants from "ChannelConstants" /* 2058 */;
 import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 6763 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 15042 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 15046 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4502 */;
-import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 15048 */;
+import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 15052 */;
 import allSettled_mod from "allSettled" /* 5323 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ const require = globalThis.__r;
 let _require, c3, c4, set;
 
 let tmp;
-const GuildRoleSubscriptionsExperimentUtils = tmp(13703);
+const GuildRoleSubscriptionsExperimentUtils = tmp(13705);
 function getUsedTemplateChannelsForGuild(arg0) {
   const arr = useEditStateStore.getState().editStateIdsForGroup[arg0];
   const listings = useEditStateStore.getState().listings;
@@ -72,7 +72,7 @@ let obj = function _createChannelsFromTemplateTierBenefits() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -148,7 +148,7 @@ let obj = function _createChannelsFromTemplateTierBenefits() {
           });
         }
         c4 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp8) {
         c4 = 3;
         throw tmp8;

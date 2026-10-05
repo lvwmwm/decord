@@ -1,9 +1,9 @@
-// Module ID: 16786
-// Function ID: 16787
+// Module ID: 16805
+// Function ID: 16806
 // Name: useSuggestedSearches
 // Dependencies: [12004, 11988, 558, 576, 12005, 504, 2]
 
-// Module 16786 (useSuggestedSearches)
+// Module 16805 (useSuggestedSearches)
 import SmartSearchConstants from "SmartSearchConstants" /* 11988 */;
 import SuggestedSearchStore2 from "SuggestedSearchStore" /* 12004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

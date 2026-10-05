@@ -943,7 +943,7 @@ const forwardRefResult = react.forwardRef((channel, ref) => {
       }
       yield "IconComponent";
       ({ url: c0, width: c1, height: c2, type: c3 } = closure_0.nativeEvent);
-      return "Reflect";
+      return "Set";
     });
     return obj;
   }, items14);

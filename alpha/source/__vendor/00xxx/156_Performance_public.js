@@ -29,8 +29,8 @@ let unpackModuleId;
 let closure_6 = ["mark", "measure"];
 const NativePerformanceCxx = nullthrows(_modDef154);
 ({ reportMark: metroImportAll, reportMeasure: c9, getMarkTime: c10, clearMarks: unpackModuleId, clearMeasures: closure_12 } = NativePerformanceCxx);
-let closure_13 = { startTime: 0, detail: "filter" };
-let closure_14 = { name: "", startTime: 0, duration: 0, detail: "done" };
+let closure_13 = { startTime: 0, detail: "unicodeVersion" };
+let closure_14 = { name: "", startTime: 0, duration: 0, detail: "emoji" };
 function getMarkTimeForMeasure(arg0) {
 
 }

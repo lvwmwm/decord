@@ -24,7 +24,7 @@ let c14, c2, c3, c6, c7, closure_1_11, fileOnly, nativeStats, sendMessageOptions
 
 let AppState;
 let closure_4;
-const f93649 = (arg0) => {
+const f93792 = (arg0) => {
   let obj2;
   nativeStats = arg0;
   if (null == closure_1_11) {
@@ -42,7 +42,7 @@ function receiveNetworkInfoformation(result) {
   const SystemResourceManager = React3.SystemResourceManager;
   const getNetworkUsage = SystemResourceManager.getNetworkUsage;
   if (getNetworkUsage != null) {
-    const networkUsage = getNetworkUsage(f93649);
+    const networkUsage = getNetworkUsage(f93792);
   }
 }
 function updateNetworkUsage() {
@@ -50,7 +50,7 @@ function updateNetworkUsage() {
   const SystemResourceManager = React3.SystemResourceManager;
   const getNetworkUsage = SystemResourceManager.getNetworkUsage;
   if (getNetworkUsage != null) {
-    const networkUsage = getNetworkUsage(f93649);
+    const networkUsage = getNetworkUsage(f93792);
   }
 }
 ({ NativeModules: closure_4, AppState } = react_native);
@@ -149,7 +149,7 @@ class EventTracker {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -198,7 +198,7 @@ class EventTracker {
             const result = Storage.set("previousNetStatsEvents", length);
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp23) {
           c3 = 3;
           throw tmp23;
@@ -221,7 +221,7 @@ class EventTracker {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -276,7 +276,7 @@ class EventTracker {
             });
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp13) {
           c3 = 3;
           throw tmp13;
@@ -308,7 +308,7 @@ class EventTracker {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

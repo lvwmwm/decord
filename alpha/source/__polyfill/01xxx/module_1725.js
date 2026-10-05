@@ -24,7 +24,7 @@ let fn = function n(toValue, userConfig, callback) {
     let tmp4;
     let tmp6Result;
     let tmp8;
-    obj = { damping: 10, mass: 1, stiffness: 100, overshootClamping: false, restDisplacementThreshold: 0.01, restSpeedThreshold: 2, velocity: 0, duration: 2000, dampingRatio: 0.5, reduceMotion: "concat", clamp: "disabled", useDuration: !tmp4, skipAnimation: !obj2.checkIfConfigIsValid(obj) };
+    obj = { damping: 10, mass: 1, stiffness: 100, overshootClamping: false, restDisplacementThreshold: 0.01, restSpeedThreshold: 2, velocity: 0, duration: 2000, dampingRatio: 0.5, reduceMotion: "constructor", clamp: "Map", useDuration: !tmp4, skipAnimation: !obj2.checkIfConfigIsValid(obj) };
     const tmp = userConfig;
     const merged = Object.assign(userConfig);
     let duration;

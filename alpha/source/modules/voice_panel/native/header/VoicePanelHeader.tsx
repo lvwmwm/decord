@@ -1,9 +1,9 @@
-// Module ID: 17190
-// Function ID: 17191
+// Module ID: 17214
+// Function ID: 17215
 // Name: VoicePanelHeader
-// Dependencies: [32, 19, 17, 4906, 4776, 9559, 502, 2051, 1999, 4519, 5576, 1377, 11902, 11905, 11900, 4911, 1096, 21, 4890, 587, 558, 576, 4612, 5597, 5772, 5976, 6570, 11901, 9717, 504, 9561, 1126, 9570, 9572, 9573, 17164, 5770, 17166, 17191, 5043, 4580, 11906, 4891, 17192, 17193, 17194, 6016, 17195, 9306, 9384, 9345, 16468, 17196, 10845, 17223, 9431, 1106, 17234, 9715, 17243, 17244, 4589, 2]
+// Dependencies: [32, 19, 17, 4906, 4776, 9559, 502, 2051, 1999, 4519, 5576, 1377, 11902, 11905, 11900, 4911, 1096, 21, 4890, 587, 558, 576, 4612, 5597, 5772, 5976, 6570, 11901, 9717, 504, 9561, 1126, 9570, 9572, 9573, 17188, 5770, 17190, 17215, 5043, 4580, 11906, 4891, 17216, 17217, 17218, 6016, 17219, 9306, 9384, 9345, 16472, 17220, 10845, 17247, 9431, 1106, 17258, 9715, 17267, 17268, 4589, 2]
 
-// Module 17190 (VoicePanelHeader)
+// Module 17214 (VoicePanelHeader)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import intl5 from "intl" /* 1126 */;
@@ -17,8 +17,8 @@ import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11900 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11905 */;
 import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 11906 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 17164 */;
-import useStableParticipant from "useStableParticipant" /* 17195 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 17188 */;
+import useStableParticipant from "useStableParticipant" /* 17219 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,10 +1,10 @@
-// Module ID: 16118
-// Function ID: 16119
+// Module ID: 16122
+// Function ID: 16123
 // Name: GuildProgressButton
-// Dependencies: [19, 21, 11813, 587, 10723, 558, 576, 12130, 12133, 8897, 16119, 1126, 12250, 2]
+// Dependencies: [19, 21, 11813, 587, 10723, 558, 576, 12130, 12133, 8897, 16123, 1126, 12250, 2]
 // Exports: getScaledGuildProgressButtonHeight
 
-// Module 16118 (GuildProgressButton)
+// Module 16122 (GuildProgressButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10723 */;
@@ -48,7 +48,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
         const Icon = tmp(8897).RowButton.Icon;
-        const tmp15 = <Icon source={completed(16119)} />;
+        const tmp15 = <Icon source={completed(16123)} />;
         const intl = tmp(1126).intl;
         const stringResult = intl.string(tmp(1126).t.o3HK3d);
         cResult[7] = tmp15;
@@ -138,7 +138,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     obj2.openActionSheet(guild);
   }, items1);
   const RowButton = guild(8897).RowButton;
-  ({ source: completed(16119) });
+  ({ source: completed(16123) });
   const Icon = guild(8897).RowButton.Icon;
   const intl = guild(1126).intl;
   return <RowButton icon={null} label={intl.string(guild(1126).t.o3HK3d)} subLabel={subtitle} onPress={callback} trailing={null} />;

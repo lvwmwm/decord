@@ -1,9 +1,9 @@
-// Module ID: 14742
-// Function ID: 14743
+// Module ID: 14746
+// Function ID: 14747
 // Name: UserSettingsAuthedApps
 // Dependencies: [19, 17, 6602, 1085, 21, 587, 4890, 558, 576, 8723, 8551, 8954, 4812, 1618, 504, 1490, 6665, 1491, 4886, 1126, 6074, 5993, 9222, 6487, 6491, 2]
 
-// Module 14742 (UserSettingsAuthedApps)
+// Module 14746 (UserSettingsAuthedApps)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;

@@ -1,15 +1,15 @@
-// Module ID: 17580
-// Function ID: 17581
+// Module ID: 17604
+// Function ID: 17605
 // Name: ParentalConsentWarningActionCreators
-// Dependencies: [5, 14671, 4, 569, 1102, 17581, 1282, 584, 1242, 2]
+// Dependencies: [5, 14675, 4, 569, 1102, 17605, 1282, 584, 1242, 2]
 // Exports: clearWarning, forceFetchWarning, resetFetchState
 
-// Module 17580 (ParentalConsentWarningActionCreators)
+// Module 17604 (ParentalConsentWarningActionCreators)
 import logger_Logger from "logger/Logger" /* 4 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentWarningStore from "ParentalConsentWarningStore" /* 14671 */;
+import ParentalConsentWarningStore from "ParentalConsentWarningStore" /* 14675 */;
 import Backoff from "Backoff" /* 569 */;
 import size from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ function fetchWarning() {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -103,7 +103,7 @@ function fetchWarning() {
                     c7 = null;
                   }
                   logger = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 } else {
                   logger.error("Failed to fetch parental-consent warning", closure_2);
                   const obj5 = { tags: { source: "parental_consent_warning", step: "fetch_warning" } };
@@ -130,7 +130,7 @@ function fetchWarning() {
                     c7 = null;
                   }
                   logger = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 } else {
                   warning = normalizeWarning(closure_0.body);
                   importDefaultResult1.succeed();
@@ -146,7 +146,7 @@ function fetchWarning() {
                 c7 = null;
               }
               logger = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp37) {
             closure_2 = tmp37;
@@ -184,7 +184,7 @@ let obj = function _maybeFetchWarning() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -215,7 +215,7 @@ let obj = function _maybeFetchWarning() {
           return obj;
         }
         c0 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp10) {
         c0 = 3;
         throw tmp10;
@@ -236,7 +236,7 @@ obj = function _forceFetchWarning() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -269,7 +269,7 @@ obj = function _forceFetchWarning() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp10) {
         c0 = 3;

@@ -15,7 +15,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 const require = globalThis.__r;
 let ZodEncodeError, _exports, _require, hasOwnProperty, standard;
 
-const f97913 = (item) => {
+const f98056 = (item) => {
   const items = [item, item];
   return items;
 };
@@ -205,7 +205,7 @@ function _enum(arr, message) {
   let fromEntriesResult = arr;
   if (Array.isArray(arr)) {
     const _Object = Object;
-    fromEntriesResult = Object.fromEntries(arr.map(f97913));
+    fromEntriesResult = Object.fromEntries(arr.map(f98056));
   }
   const ZodEnum = exports.ZodEnum;
   const obj = { type: "enum", entries: fromEntriesResult };
@@ -631,7 +631,7 @@ export const keyof = function keyof(_zod) {
   let fromEntriesResult = keys;
   if (Array.isArray(keys)) {
     const _Object = Object;
-    fromEntriesResult = Object.fromEntries(keys.map(f97913));
+    fromEntriesResult = Object.fromEntries(keys.map(f98056));
   }
   const ZodEnum = exports.ZodEnum;
   const obj = { type: "enum", entries: fromEntriesResult };
@@ -946,7 +946,7 @@ export const ZodType = util.$constructor("ZodType", (_standard, def) => {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -986,7 +986,7 @@ export const ZodType = util.$constructor("ZodType", (_standard, def) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1028,7 +1028,7 @@ export const ZodType = util.$constructor("ZodType", (_standard, def) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1067,7 +1067,7 @@ export const ZodType = util.$constructor("ZodType", (_standard, def) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1108,7 +1108,7 @@ export const ZodType = util.$constructor("ZodType", (_standard, def) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1147,7 +1147,7 @@ export const ZodType = util.$constructor("ZodType", (_standard, def) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1805,7 +1805,7 @@ export const ZodObject = util.$constructor("ZodObject", (_zod, arg1) => {
     let fromEntriesResult = keys;
     if (Array.isArray(keys)) {
       const _Object = Object;
-      fromEntriesResult = Object.fromEntries(keys.map(f97913));
+      fromEntriesResult = Object.fromEntries(keys.map(f98056));
     }
     const ZodEnum = exports.ZodEnum;
     const obj = { type: "enum", entries: fromEntriesResult };

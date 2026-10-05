@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 
 let c5, closure_3, prop;
 
-const f83515 = () => {
+const f83658 = () => {
   const obj = DispatcherDefault;
   return obj.dispatch({ type: "REFRESH_THEME" });
 };
@@ -50,7 +50,7 @@ function loadFromProtoSettings() {
         prop = clientThemeSettings.customUserThemeSettings;
       }
       const obj2 = DispatcherDefault;
-      obj2.wait(f83515);
+      obj2.wait(f83658);
     }
   }
 }
@@ -70,7 +70,7 @@ function handleSelectivelySyncedUserSettingsUpdate() {
         prop = clientThemeSettings.customUserThemeSettings;
       }
       const obj2 = DispatcherDefault;
-      obj2.wait(f83515);
+      obj2.wait(f83658);
     }
   }
 }
@@ -102,7 +102,7 @@ class CustomThemeMobileStore extends PersistedStore {
       obj = { theme, customTheme: prop };
       const obj2 = { theme, customTheme: prop };
     } else {
-      obj = { theme: "Symbol", customTheme: "current" };
+      obj = { theme: "Array", customTheme: "Set" };
     }
     return obj;
   }
@@ -283,7 +283,7 @@ let obj = {
           prop = clientThemeSettings.customUserThemeSettings;
         }
         const obj2 = DispatcherDefault;
-        obj2.wait(f83515);
+        obj2.wait(f83658);
       }
     }
   },

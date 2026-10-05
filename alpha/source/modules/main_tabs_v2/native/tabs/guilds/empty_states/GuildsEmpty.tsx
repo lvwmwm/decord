@@ -1,9 +1,9 @@
-// Module ID: 16205
-// Function ID: 16206
+// Module ID: 16209
+// Function ID: 16210
 // Name: GuildsEmpty
-// Dependencies: [32, 19, 17, 502, 2074, 4699, 1085, 21, 4890, 587, 4886, 12357, 558, 576, 16206, 1126, 5594, 5593, 1491, 573, 1260, 8422, 2077, 4738, 5912, 14897, 2]
+// Dependencies: [32, 19, 17, 502, 2074, 4699, 1085, 21, 4890, 587, 4886, 12357, 558, 576, 16210, 1126, 5594, 5593, 1491, 573, 1260, 8422, 2077, 4738, 5912, 14901, 2]
 
-// Module 16205 (GuildsEmpty)
+// Module 16209 (GuildsEmpty)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
@@ -12,7 +12,7 @@ import Text_Text from "Text/Text" /* 4886 */;
 import Stack_Stack from "Stack/Stack" /* 5593 */;
 import components_Button_Button from "components/Button/Button" /* 5594 */;
 import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 12357 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16206 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16210 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -363,7 +363,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
     const effect = react.useEffect(tmp13, tmp14);
     const tmpResult3 = tmp(5912);
     const isScreenLandscape = tmpResult3.useIsScreenLandscape();
-    const tmpResult4 = tmp(14897);
+    const tmpResult4 = tmp(14901);
     const youBarTotalHeight = tmpResult4.useYouBarTotalHeight();
     let tmp19 = null;
     if (stateFromStores) {
@@ -562,7 +562,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   }, items1);
   const tmp2Result = navigation(5912);
   const isScreenLandscape = tmp2Result.useIsScreenLandscape();
-  navigation(14897);
+  navigation(14901);
   let tmp14Result = null;
   if (stateFromStores) {
     const obj4 = { style: items2, children: items3 };

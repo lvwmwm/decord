@@ -42,7 +42,7 @@ let map1;
 let tmp;
 let unpackModuleId;
 const DeviceUtils = tmp(4866);
-const f103723 = (item) => {
+const f103869 = (item) => {
   obj = { origin };
   const merged = Object.assign(item);
   return obj;
@@ -66,7 +66,7 @@ let obj = function _handleLimitedPickerDialog() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -86,7 +86,7 @@ let obj = function _handleLimitedPickerDialog() {
             ({ onDismissKeyboard: c0, onRestoreKeyboard: c1 } = closure_0);
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -114,7 +114,7 @@ let obj = function _handleLimitedPickerDialog() {
         } else {
           tmp();
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp15) {
         c4 = 3;
@@ -151,7 +151,7 @@ obj = function _handleAttachFile() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -180,7 +180,7 @@ obj = function _handleAttachFile() {
             closure_7 = undefined;
             v3 = 1;
             v32 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {
@@ -279,7 +279,7 @@ obj = function _handleAttachFile() {
             const tmp8 = c5(closure_7);
           }
           v32 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp14) {
         v32 = 3;
@@ -399,7 +399,7 @@ function showSimpleMediaKeyboard(channel) {
               }
               return tmp2;
             });
-            const mapped = found.map(f103723);
+            const mapped = found.map(f103869);
             const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
             const obj3 = UploadAttachmentActionCreatorsDefault;
             obj3.addFiles(obj2);
@@ -456,7 +456,7 @@ function showSimpleMediaKeyboard(channel) {
               }
               return tmp2;
             });
-            const mapped = found.map(f103723);
+            const mapped = found.map(f103869);
             const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
             const obj3 = UploadAttachmentActionCreatorsDefault;
             obj3.addFiles(obj2);
@@ -610,7 +610,7 @@ function showSimpleMediaKeyboard(channel) {
               }
               return tmp2;
             });
-            const mapped = found.map(f103723);
+            const mapped = found.map(f103869);
             const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
             const obj3 = UploadAttachmentActionCreatorsDefault;
             obj3.addFiles(obj2);
@@ -767,7 +767,7 @@ export const addImagesFromPicker = function addImagesFromPicker(id, items, IMAGE
       }
       return tmp2;
     });
-    const mapped = found.map(f103723);
+    const mapped = found.map(f103869);
     const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
     const obj3 = UploadAttachmentActionCreatorsDefault;
     obj3.addFiles(obj2);

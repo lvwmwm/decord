@@ -1,12 +1,12 @@
-// Module ID: 17885
-// Function ID: 17886
+// Module ID: 17909
+// Function ID: 17910
 // Name: useCreatorMonetizationEligibility
-// Dependencies: [5, 32, 19, 17855, 17858, 5313, 2]
+// Dependencies: [5, 32, 19, 17879, 17882, 5313, 2]
 // Exports: default
 
-// Module 17885 (useCreatorMonetizationEligibility)
-import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 17855 */;
-import CreatorMonetizationEligibilityActionCreatorsAll from "CreatorMonetizationEligibilityActionCreators" /* 17858 */;
+// Module 17909 (useCreatorMonetizationEligibility)
+import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 17879 */;
+import CreatorMonetizationEligibilityActionCreatorsAll from "CreatorMonetizationEligibilityActionCreators" /* 17882 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -50,7 +50,7 @@ export default function useCreatorMonetizationEligibility(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -134,7 +134,7 @@ export default function useCreatorMonetizationEligibility(arg0) {
           c4 = 0;
           closure_1(false);
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp57) {
         closure_3 = tmp57;

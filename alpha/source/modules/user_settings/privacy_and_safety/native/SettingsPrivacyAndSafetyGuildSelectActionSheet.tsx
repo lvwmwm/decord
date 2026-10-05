@@ -1,9 +1,9 @@
-// Module ID: 15775
-// Function ID: 15776
+// Module ID: 15779
+// Function ID: 15780
 // Name: SettingsPrivacyAndSafetyGuildSelectActionSheet
-// Dependencies: [32, 19, 2074, 5616, 15774, 21, 4890, 587, 5122, 2066, 1126, 558, 576, 504, 4854, 14498, 5971, 11432, 5621, 2]
+// Dependencies: [32, 19, 2074, 5616, 15778, 21, 4890, 587, 5122, 2066, 1126, 558, 576, 504, 4854, 14502, 5971, 11432, 5621, 2]
 
-// Module 15775 (SettingsPrivacyAndSafetyGuildSelectActionSheet)
+// Module 15779 (SettingsPrivacyAndSafetyGuildSelectActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
@@ -14,7 +14,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2074 */;
 import SortedGuildStore from "SortedGuildStore" /* 5616 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 15774 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 15778 */;
 import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

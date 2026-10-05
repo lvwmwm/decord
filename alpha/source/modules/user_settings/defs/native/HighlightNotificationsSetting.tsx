@@ -1,9 +1,9 @@
-// Module ID: 15342
-// Function ID: 15343
+// Module ID: 15346
+// Function ID: 15347
 // Name: HighlightNotificationsSetting
-// Dependencies: [2074, 7634, 1085, 558, 576, 504, 11129, 1126, 15343, 2]
+// Dependencies: [2074, 7634, 1085, 558, 576, 504, 11129, 1126, 15347, 2]
 
-// Module 15342 (HighlightNotificationsSetting)
+// Module 15346 (HighlightNotificationsSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;

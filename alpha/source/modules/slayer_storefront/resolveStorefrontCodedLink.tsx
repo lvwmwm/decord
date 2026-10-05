@@ -1,10 +1,10 @@
-// Module ID: 17533
-// Function ID: 17534
+// Module ID: 17557
+// Function ID: 17558
 // Name: resolveStorefrontCodedLink
-// Dependencies: [32, 5, 5695, 17523, 11149, 4875, 584, 17534, 10532, 2]
+// Dependencies: [32, 5, 5695, 17547, 11149, 4875, 584, 17558, 10532, 2]
 // Exports: default
 
-// Module 17533 (resolveStorefrontCodedLink)
+// Module 17557 (resolveStorefrontCodedLink)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SKUStore from "SKUStore" /* 5695 */;
@@ -52,7 +52,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -100,7 +100,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
                   return obj;
                 }
                 obj3 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp8) {
               obj3 = 3;
@@ -111,7 +111,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
         let obj7 = set;
         if (!set.has(storefrontCodedLink)) {
           obj7.add(storefrontCodedLink);
-          const tmpResult2 = tmp(17523);
+          const tmpResult2 = tmp(17547);
           const result1 = tmpResult2.queueMessageLinkFetch(tmp8(function*(arg0, value) {
             if (c4 === 2) {
               c4 = 3;
@@ -123,7 +123,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               let c3;
@@ -162,7 +162,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
                   c3 = 0;
                   set.delete(closure_128_0);
                   c4 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } catch (tmp20) {
                 closure_2 = tmp20;

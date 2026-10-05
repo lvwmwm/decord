@@ -1,9 +1,9 @@
-// Module ID: 13257
-// Function ID: 13258
+// Module ID: 13259
+// Function ID: 13260
 // Name: RewardGrantNotice
-// Dependencies: [19, 17, 13239, 21, 4890, 587, 558, 576, 13241, 11000, 4886, 1126, 6628, 2]
+// Dependencies: [19, 17, 13241, 21, 4890, 587, 558, 576, 13243, 11000, 4886, 1126, 6628, 2]
 
-// Module 13257 (RewardGrantNotice)
+// Module 13259 (RewardGrantNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,9 +11,9 @@ import intl3 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 4886 */;
 import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 6628 */;
 import BalanceWidgetPill from "BalanceWidgetPill" /* 11000 */;
-import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 13241 */;
+import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 13243 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 13239 */;
+import Constants from "Constants" /* 13241 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -88,7 +88,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp4 = metroRequire(closure_9, obj2);
     } else {
       tmp4 = null;
-      if (referralRewardType === tmp2(13241).ReferralRewardType.DISCOUNT) {
+      if (referralRewardType === tmp2(13243).ReferralRewardType.DISCOUNT) {
         const obj = { nRewardsGranted };
         tmp4 = metroRequire(closure_10, obj);
       }

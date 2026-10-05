@@ -1,9 +1,9 @@
-// Module ID: 17278
-// Function ID: 17279
+// Module ID: 17302
+// Function ID: 17303
 // Name: VoicePanelPreJoinContent
-// Dependencies: [109, 5, 32, 19, 17, 2050, 4907, 13541, 4912, 502, 2051, 1999, 4509, 4908, 1377, 4909, 4914, 11902, 11905, 1085, 13546, 4915, 21, 4890, 11906, 587, 558, 576, 11901, 504, 5100, 8069, 5568, 5032, 4942, 1126, 4886, 12861, 5976, 6663, 4498, 17265, 1484, 4612, 9046, 9045, 9149, 17263, 5594, 5909, 1260, 8422, 4800, 9334, 5042, 5993, 10725, 11079, 6657, 6681, 1252, 17179, 17231, 17279, 5597, 4589, 6570, 17166, 17281, 2]
+// Dependencies: [109, 5, 32, 19, 17, 2050, 4907, 13543, 4912, 502, 2051, 1999, 4509, 4908, 1377, 4909, 4914, 11902, 11905, 1085, 13548, 4915, 21, 4890, 11906, 587, 558, 576, 11901, 504, 5100, 8069, 5568, 5032, 4942, 1126, 4886, 12861, 5976, 6663, 4498, 17289, 1484, 4612, 9046, 9045, 9149, 17287, 5594, 5909, 1260, 8422, 4800, 9334, 5042, 5993, 10725, 11079, 6657, 6681, 1252, 17203, 17255, 17303, 5597, 4589, 6570, 17190, 17305, 2]
 
-// Module 17278 (VoicePanelPreJoinContent)
+// Module 17302 (VoicePanelPreJoinContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -28,14 +28,14 @@ import roundToNearestPixelDefault from "roundToNearestPixel" /* 10725 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11902 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11905 */;
 import calculateVoicePanelHeaderSpecs from "calculateVoicePanelHeaderSpecs" /* 11906 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 13546 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 13548 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
 import GameConsoleStore from "GameConsoleStore" /* 4907 */;
-import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 13541 */;
+import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 13543 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
@@ -537,7 +537,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                               const obj4 = { value, done: true };
                               return obj4;
                             } else {
-                              return { value: "IconComponent", done: "IconComponent" };
+                              return { value: "IconComponent", done: null };
                             }
                           } else {
                             try {
@@ -575,7 +575,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                 return obj;
                               }
                               c0 = 3;
-                              return { value: "IconComponent", done: "IconComponent" };
+                              return { value: "IconComponent", done: null };
                             } catch (tmp15) {
                               c0 = 3;
                               throw tmp15;
@@ -621,7 +621,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                 const obj4 = { value, done: true };
                                 return obj4;
                               } else {
-                                return { value: "IconComponent", done: "IconComponent" };
+                                return { value: "IconComponent", done: null };
                               }
                             } else {
                               try {
@@ -659,7 +659,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                   return obj;
                                 }
                                 c0 = 3;
-                                return { value: "IconComponent", done: "IconComponent" };
+                                return { value: "IconComponent", done: null };
                               } catch (tmp15) {
                                 c0 = 3;
                                 throw tmp15;
@@ -706,7 +706,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                   const obj4 = { value, done: true };
                                   return obj4;
                                 } else {
-                                  return { value: "IconComponent", done: "IconComponent" };
+                                  return { value: "IconComponent", done: null };
                                 }
                               } else {
                                 try {
@@ -744,7 +744,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                     return obj;
                                   }
                                   c0 = 3;
-                                  return { value: "IconComponent", done: "IconComponent" };
+                                  return { value: "IconComponent", done: null };
                                 } catch (tmp15) {
                                   c0 = 3;
                                   throw tmp15;
@@ -783,7 +783,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                   const obj4 = { value, done: true };
                                   return obj4;
                                 } else {
-                                  return { value: "IconComponent", done: "IconComponent" };
+                                  return { value: "IconComponent", done: null };
                                 }
                               } else {
                                 try {
@@ -821,7 +821,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                     return obj;
                                   }
                                   c0 = 3;
-                                  return { value: "IconComponent", done: "IconComponent" };
+                                  return { value: "IconComponent", done: null };
                                 } catch (tmp15) {
                                   c0 = 3;
                                   throw tmp15;
@@ -856,7 +856,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                   const obj4 = { value, done: true };
                                   return obj4;
                                 } else {
-                                  return { value: "IconComponent", done: "IconComponent" };
+                                  return { value: "IconComponent", done: null };
                                 }
                               } else {
                                 try {
@@ -894,7 +894,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                     return obj;
                                   }
                                   c0 = 3;
-                                  return { value: "IconComponent", done: "IconComponent" };
+                                  return { value: "IconComponent", done: null };
                                 } catch (tmp15) {
                                   c0 = 3;
                                   throw tmp15;
@@ -958,7 +958,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                             const obj4 = { value, done: true };
                                             return obj4;
                                           } else {
-                                            return { value: "IconComponent", done: "IconComponent" };
+                                            return { value: "IconComponent", done: null };
                                           }
                                         } else {
                                           try {
@@ -996,7 +996,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                               return obj;
                                             }
                                             c0 = 3;
-                                            return { value: "IconComponent", done: "IconComponent" };
+                                            return { value: "IconComponent", done: null };
                                           } catch (tmp15) {
                                             c0 = 3;
                                             throw tmp15;
@@ -1037,7 +1037,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                       const obj4 = { value, done: true };
                                       return obj4;
                                     } else {
-                                      return { value: "IconComponent", done: "IconComponent" };
+                                      return { value: "IconComponent", done: null };
                                     }
                                   } else {
                                     try {
@@ -1075,7 +1075,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                         return obj;
                                       }
                                       c0 = 3;
-                                      return { value: "IconComponent", done: "IconComponent" };
+                                      return { value: "IconComponent", done: null };
                                     } catch (tmp15) {
                                       c0 = 3;
                                       throw tmp15;
@@ -1116,7 +1116,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                     const obj4 = { value, done: true };
                                     return obj4;
                                   } else {
-                                    return { value: "IconComponent", done: "IconComponent" };
+                                    return { value: "IconComponent", done: null };
                                   }
                                 } else {
                                   try {
@@ -1154,7 +1154,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                       return obj;
                                     }
                                     c0 = 3;
-                                    return { value: "IconComponent", done: "IconComponent" };
+                                    return { value: "IconComponent", done: null };
                                   } catch (tmp15) {
                                     c0 = 3;
                                     throw tmp15;
@@ -1190,7 +1190,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                 const obj4 = { value, done: true };
                                 return obj4;
                               } else {
-                                return { value: "IconComponent", done: "IconComponent" };
+                                return { value: "IconComponent", done: null };
                               }
                             } else {
                               try {
@@ -1228,7 +1228,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                   return obj;
                                 }
                                 c0 = 3;
-                                return { value: "IconComponent", done: "IconComponent" };
+                                return { value: "IconComponent", done: null };
                               } catch (tmp15) {
                                 c0 = 3;
                                 throw tmp15;
@@ -1269,7 +1269,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                               const obj4 = { value, done: true };
                               return obj4;
                             } else {
-                              return { value: "IconComponent", done: "IconComponent" };
+                              return { value: "IconComponent", done: null };
                             }
                           } else {
                             try {
@@ -1307,7 +1307,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                 return obj;
                               }
                               c0 = 3;
-                              return { value: "IconComponent", done: "IconComponent" };
+                              return { value: "IconComponent", done: null };
                             } catch (tmp15) {
                               c0 = 3;
                               throw tmp15;
@@ -1344,7 +1344,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                             const obj4 = { value, done: true };
                             return obj4;
                           } else {
-                            return { value: "IconComponent", done: "IconComponent" };
+                            return { value: "IconComponent", done: null };
                           }
                         } else {
                           try {
@@ -1382,7 +1382,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                               return obj;
                             }
                             c0 = 3;
-                            return { value: "IconComponent", done: "IconComponent" };
+                            return { value: "IconComponent", done: null };
                           } catch (tmp15) {
                             c0 = 3;
                             throw tmp15;
@@ -1420,7 +1420,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                         const obj4 = { value, done: true };
                         return obj4;
                       } else {
-                        return { value: "IconComponent", done: "IconComponent" };
+                        return { value: "IconComponent", done: null };
                       }
                     } else {
                       try {
@@ -1458,7 +1458,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                           return obj;
                         }
                         c0 = 3;
-                        return { value: "IconComponent", done: "IconComponent" };
+                        return { value: "IconComponent", done: null };
                       } catch (tmp15) {
                         c0 = 3;
                         throw tmp15;
@@ -1497,7 +1497,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
               const obj4 = { value, done: true };
               return obj4;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -1535,7 +1535,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                 return obj;
               }
               c0 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             } catch (tmp15) {
               c0 = 3;
               throw tmp15;
@@ -1642,7 +1642,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -1680,7 +1680,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
             return obj;
           }
           c0 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp15) {
           c0 = 3;
           throw tmp15;
@@ -2938,7 +2938,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   const context = react.useContext(guildId(11901));
   channelId = context.channelId;
   guildId = context.guildId;
-  const tmp5 = guildId(17166)(channelId);
+  const tmp5 = guildId(17190)(channelId);
   dependencyMap = tmp5;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let tmp7 = SortedVoiceStateStore;
@@ -2966,7 +2966,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
       }
       const tmpResult = tmp(504);
       let tmp14 = tmpResult;
-      const stateFromStores = tmpResult.useStateFromStores(first, tmp12, tmp13, tmp(17281).areVoicePanelPreJoinContentPropsEqual);
+      const stateFromStores = tmpResult.useStateFromStores(first, tmp12, tmp13, tmp(17305).areVoicePanelPreJoinContentPropsEqual);
       if (cResult[6] !== stateFromStores) {
         const obj2 = { item: stateFromStores, renderItem };
         const tmp22 = closure_27(tmp(4589).TransitionItem, obj2);
@@ -3034,7 +3034,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   const context = react.useContext(guildId(11901));
   const channelId = context.channelId;
   guildId = context.guildId;
-  const tmp2 = guildId(17166)(channelId);
+  const tmp2 = guildId(17190)(channelId);
   dependencyMap = tmp2;
   let obj = channelId(504);
   let items = [SortedVoiceStateStore, VoiceChannelBlockedUserStore, EmbeddedActivitiesStore, MediaEngineStore, ApplicationStreamingStore];
@@ -3079,7 +3079,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
       };
       return obj;
     }
-  }, items1, channelId(17281).areVoicePanelPreJoinContentPropsEqual);
+  }, items1, channelId(17305).areVoicePanelPreJoinContentPropsEqual);
   const obj2 = { item: stateFromStores, renderItem };
   return closure_27(channelId(4589).TransitionItem, obj2);
 }));

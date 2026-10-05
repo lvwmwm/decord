@@ -1,9 +1,9 @@
-// Module ID: 13373
-// Function ID: 13374
+// Module ID: 13375
+// Function ID: 13376
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 4534, 6739, 21, 558, 576, 5601, 4886, 504, 6742, 10783, 6657, 10474, 5708, 1126, 4528, 10392, 5595, 13374, 2]
+// Dependencies: [5, 19, 17, 4534, 6739, 21, 558, 576, 5601, 4886, 504, 6742, 10783, 6657, 10474, 5708, 1126, 4528, 10392, 5595, 13376, 2]
 
-// Module 13373 (GiftPurchaseButton)
+// Module 13375 (GiftPurchaseButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;

@@ -1,9 +1,9 @@
-// Module ID: 16373
-// Function ID: 16374
+// Module ID: 16377
+// Function ID: 16378
 // Name: ForYouHoistedItemsHeader
 // Dependencies: [19, 17, 21, 4890, 587, 558, 576, 2]
 
-// Module 16373 (ForYouHoistedItemsHeader)
+// Module 16377 (ForYouHoistedItemsHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

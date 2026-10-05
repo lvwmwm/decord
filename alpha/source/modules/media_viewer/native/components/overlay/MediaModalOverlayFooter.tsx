@@ -25,7 +25,7 @@ let metroRequire;
 let obj2;
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "filter" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "r" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
+let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "Boolean" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "r" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
 obj2 = { width: 40, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 };
 let closure_8 = createStyles.createStyles(obj);
 let c9 = -1;

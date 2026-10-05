@@ -1,9 +1,9 @@
-// Module ID: 15730
-// Function ID: 15731
+// Module ID: 15734
+// Function ID: 15735
 // Name: CollectiblesShopCardsGrid
-// Dependencies: [19, 17, 7053, 21, 4890, 8418, 558, 576, 8421, 15729, 12, 2]
+// Dependencies: [19, 17, 7053, 21, 4890, 8418, 558, 576, 8421, 15733, 12, 2]
 
-// Module 15730 (CollectiblesShopCardsGrid)
+// Module 15734 (CollectiblesShopCardsGrid)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -160,7 +160,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preferVCPrice) => {
                       class O {
                         constructor(arg0, arg1) {
                           closure_0 = arg1;
-                          obj = { style: closure_4.rowContainer, children: preferVCPrice.map(() => { /* body not rendered: F144827 */ }) };
+                          obj = { style: closure_4.rowContainer, children: preferVCPrice.map(() => { /* body not rendered: F145073 */ }) };
                           return closure_1_7(closure_4, obj, arg1);
                         }
                       }
@@ -193,7 +193,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preferVCPrice) => {
                     class O {
                       constructor(arg0, arg1) {
                         closure_0 = arg1;
-                        obj = { style: closure_4.rowContainer, children: preferVCPrice.map(() => { /* body not rendered: F144827 */ }) };
+                        obj = { style: closure_4.rowContainer, children: preferVCPrice.map(() => { /* body not rendered: F145073 */ }) };
                         return closure_1_7(closure_4, obj, arg1);
                       }
                     }
@@ -215,7 +215,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preferVCPrice) => {
         class O {
           constructor(arg0, arg1) {
             closure_0 = arg1;
-            obj = { style: closure_4.rowContainer, children: preferVCPrice.map(() => { /* body not rendered: F144827 */ }) };
+            obj = { style: closure_4.rowContainer, children: preferVCPrice.map(() => { /* body not rendered: F145073 */ }) };
             return closure_1_7(closure_4, obj, arg1);
           }
         }
@@ -261,7 +261,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preferVCPrice) => {
   ({ disableBundleStaticBackground: react, muteBundleStaticBackground: closure_4 } = products);
   ({ onScroll, paddingTop, paddingBottom } = products);
   const rowContainer = closure_8();
-  let obj = products(15729);
+  let obj = products(15733);
   const cardLayout = obj.useCardLayout();
   const columns = cardLayout.columns;
   const cardWidth = cardLayout.cardWidth;

@@ -520,7 +520,7 @@ let fn = function t(exports, React) {
       });
       const items1 = [memo, value, options];
       const effect = stripe.useEffect(() => {
-        const f154076 = (stripe) => {
+        const f154383 = (stripe) => {
           let tmp = stripe;
           if (!stripe.stripe) {
             tmp = { stripe, elements: stripe.elements(closure_2_1) };
@@ -537,7 +537,7 @@ let fn = function t(exports, React) {
               let tmp = result && c0;
               if (tmp) {
                 let closure_0 = result;
-                closure_4(f154076);
+                closure_4(f154383);
               }
             });
           }
@@ -548,7 +548,7 @@ let fn = function t(exports, React) {
         stripe = "sync" !== tmp.tag || first.stripe;
         if (!stripe) {
           const stripe2 = tmp.stripe;
-          closure_4(f154076);
+          closure_4(f154383);
         }
       }, items1);
       if (typeof usePrevious === "function") {
@@ -1006,10 +1006,10 @@ let fn = function t(exports, React) {
       let onReady;
       let onShippingAddressChange;
       let onShippingRateChange;
-      const f136534 = () => {
+      const f136772 = () => {
         ref13.current = onReady;
       };
-      const f136535 = () => {
+      const f136773 = () => {
         let decoratedCb;
         const tmp = onReady;
         if (tmp) {
@@ -1105,97 +1105,97 @@ let fn = function t(exports, React) {
           onBlur = tmp22;
           const items = [onBlur];
           const ref1 = obj2.useRef(onBlur);
-          const effect = obj2.useEffect(f136534, items);
+          const effect = obj2.useEffect(f136772, items);
           const items1 = [tmp22, "blur", first, ref1];
-          const effect1 = obj2.useEffect(f136535, items1);
+          const effect1 = obj2.useEffect(f136773, items1);
           if (typeof useAttachEvent === "function") {
             const focus_str = "focus";
             onFocus = tmp26;
             const items2 = [onFocus];
             const ref2 = obj2.useRef(onFocus);
-            const effect2 = obj2.useEffect(f136534, items2);
+            const effect2 = obj2.useEffect(f136772, items2);
             const items3 = [onFocus, "focus", first, ref2];
-            const effect3 = obj2.useEffect(f136535, items3);
+            const effect3 = obj2.useEffect(f136773, items3);
             if (typeof useAttachEvent === "function") {
               const escape_str = "escape";
               onEscape = tmp30;
               const items4 = [onEscape];
               const ref3 = obj2.useRef(onEscape);
-              const effect4 = obj2.useEffect(f136534, items4);
+              const effect4 = obj2.useEffect(f136772, items4);
               const items5 = [onEscape, "escape", first, ref3];
-              const effect5 = obj2.useEffect(f136535, items5);
+              const effect5 = obj2.useEffect(f136773, items5);
               if (typeof useAttachEvent === "function") {
                 const click = "click";
                 onClick = tmp34;
                 const items6 = [onClick];
                 const ref4 = obj2.useRef(onClick);
-                const effect6 = obj2.useEffect(f136534, items6);
+                const effect6 = obj2.useEffect(f136772, items6);
                 const items7 = [onClick, "click", first, ref4];
-                const effect7 = obj2.useEffect(f136535, items7);
+                const effect7 = obj2.useEffect(f136773, items7);
                 if (typeof useAttachEvent === "function") {
                   const loaderror = "loaderror";
                   onLoadError = tmp38;
                   const items8 = [onLoadError];
                   const ref5 = obj2.useRef(onLoadError);
-                  const effect8 = obj2.useEffect(f136534, items8);
+                  const effect8 = obj2.useEffect(f136772, items8);
                   const items9 = [onLoadError, "loaderror", first, ref5];
-                  const effect9 = obj2.useEffect(f136535, items9);
+                  const effect9 = obj2.useEffect(f136773, items9);
                   if (typeof useAttachEvent === "function") {
                     const loaderstart = "loaderstart";
                     onLoaderStart = tmp42;
                     const items10 = [onLoaderStart];
                     const ref6 = obj2.useRef(onLoaderStart);
-                    const effect10 = obj2.useEffect(f136534, items10);
+                    const effect10 = obj2.useEffect(f136772, items10);
                     const items11 = [onLoaderStart, "loaderstart", first, ref6];
-                    const effect11 = obj2.useEffect(f136535, items11);
+                    const effect11 = obj2.useEffect(f136773, items11);
                     if (typeof useAttachEvent === "function") {
                       const networkschange = "networkschange";
                       onNetworksChange = tmp46;
                       const items12 = [onNetworksChange];
                       const ref7 = obj2.useRef(onNetworksChange);
-                      const effect12 = obj2.useEffect(f136534, items12);
+                      const effect12 = obj2.useEffect(f136772, items12);
                       const items13 = [onNetworksChange, "networkschange", first, ref7];
-                      const effect13 = obj2.useEffect(f136535, items13);
+                      const effect13 = obj2.useEffect(f136773, items13);
                       if (typeof useAttachEvent === "function") {
                         const confirm_str = "confirm";
                         onConfirm = tmp50;
                         const items14 = [onConfirm];
                         const ref8 = obj2.useRef(onConfirm);
-                        const effect14 = obj2.useEffect(f136534, items14);
+                        const effect14 = obj2.useEffect(f136772, items14);
                         const items15 = [onConfirm, "confirm", first, ref8];
-                        const effect15 = obj2.useEffect(f136535, items15);
+                        const effect15 = obj2.useEffect(f136773, items15);
                         if (typeof useAttachEvent === "function") {
                           const cancel_str = "cancel";
                           onCancel = tmp54;
                           const items16 = [onCancel];
                           const ref9 = obj2.useRef(onCancel);
-                          const effect16 = obj2.useEffect(f136534, items16);
+                          const effect16 = obj2.useEffect(f136772, items16);
                           const items17 = [onCancel, "cancel", first, ref9];
-                          const effect17 = obj2.useEffect(f136535, items17);
+                          const effect17 = obj2.useEffect(f136773, items17);
                           if (typeof useAttachEvent === "function") {
                             const shippingaddresschange = "shippingaddresschange";
                             onShippingAddressChange = tmp58;
                             const items18 = [onShippingAddressChange];
                             const ref10 = obj2.useRef(onShippingAddressChange);
-                            const effect18 = obj2.useEffect(f136534, items18);
+                            const effect18 = obj2.useEffect(f136772, items18);
                             const items19 = [onShippingAddressChange, "shippingaddresschange", first, ref10];
-                            const effect19 = obj2.useEffect(f136535, items19);
+                            const effect19 = obj2.useEffect(f136773, items19);
                             if (typeof useAttachEvent === "function") {
                               const shippingratechange = "shippingratechange";
                               onShippingRateChange = tmp62;
                               const items20 = [onShippingRateChange];
                               const ref11 = obj2.useRef(onShippingRateChange);
-                              const effect20 = obj2.useEffect(f136534, items20);
+                              const effect20 = obj2.useEffect(f136772, items20);
                               const items21 = [onShippingRateChange, "shippingratechange", first, ref11];
-                              const effect21 = obj2.useEffect(f136535, items21);
+                              const effect21 = obj2.useEffect(f136773, items21);
                               if (typeof useAttachEvent === "function") {
                                 const change = "change";
                                 onChange = tmp66;
                                 const items22 = [onChange];
                                 const ref12 = obj2.useRef(onChange);
-                                const effect22 = obj2.useEffect(f136534, items22);
+                                const effect22 = obj2.useEffect(f136772, items22);
                                 const items23 = [onChange, "change", first, ref12];
-                                const effect23 = obj2.useEffect(f136535, items23);
+                                const effect23 = obj2.useEffect(f136773, items23);
                                 if (onReady) {
                                   if ("expressCheckout" !== options) {
                                     onReady = function readyCallback() {
@@ -1208,9 +1208,9 @@ let fn = function t(exports, React) {
                                   onReady = tmp72;
                                   const ref13 = obj2.useRef(tmp70);
                                   const items24 = [tmp70];
-                                  const effect24 = obj2.useEffect(f136534, items24);
+                                  const effect24 = obj2.useEffect(f136772, items24);
                                   const items25 = [tmp70, "ready", first, ref13];
-                                  const effect25 = obj2.useEffect(f136535, items25);
+                                  const effect25 = obj2.useEffect(f136773, items25);
                                   const items26 = [elements, checkoutSdk, options];
                                   const layoutEffect = obj2.useLayoutEffect(function() {
                                     if (null === ref.current) {
@@ -1528,7 +1528,7 @@ let fn = function t(exports, React) {
     let closure_6 = tmp3[1];
     const items1 = [memo, options, value, ref];
     const effect = stripe.useEffect(() => {
-      const f154079 = (embeddedCheckout) => {
+      const f154386 = (embeddedCheckout) => {
         const obj = { embeddedCheckout };
         closure_1_6(obj);
       };
@@ -1551,7 +1551,7 @@ let fn = function t(exports, React) {
                       ref.current = current;
                       current2 = tmp3.current;
                       const embeddedCheckout = current2.initEmbeddedCheckout(options);
-                      ref.current = embeddedCheckout.then(f154079);
+                      ref.current = embeddedCheckout.then(f154386);
                     }
                   } else {
                     throw new TypeError("Trying to call a non-function");
@@ -1575,7 +1575,7 @@ let fn = function t(exports, React) {
               tmp.current = stripe;
               current2 = tmp.current;
               let embeddedCheckout = current2.initEmbeddedCheckout(options);
-              ref.current = embeddedCheckout.then(f154079);
+              ref.current = embeddedCheckout.then(f154386);
             }
           }
         }

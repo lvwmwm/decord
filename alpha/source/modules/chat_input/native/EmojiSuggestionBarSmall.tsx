@@ -238,7 +238,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       obj.onOccupiedHeightChange = closure_1;
       obj.transitionState = arg2;
       obj.cleanUp = arg3;
-      return jsx(f60114, obj, anchorTop);
+      return jsx(f60142, obj, anchorTop);
     }
   }
   cResult[12] = tmp4;

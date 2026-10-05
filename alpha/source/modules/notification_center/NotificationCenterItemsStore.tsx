@@ -204,7 +204,7 @@ function handleRelationshipAddOrUpdate(relationship) {
 }
 const isGuildEventEnded = GuildScheduledEventStore.isGuildEventEnded;
 const RelationshipTypes = Constants.RelationshipTypes;
-let obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: set, notifCenterLocalItems: [], paginationHasMore: true, paginationCursor: "Set", notifCenterActive: -6.583, notifCenterTabFocused: 3 };
+let obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: set, notifCenterLocalItems: [], paginationHasMore: true, paginationCursor: "Symbol", notifCenterActive: "none", notifCenterTabFocused: "URL" };
 set = new Set();
 const PersistedStore = get_initializedDefault.PersistedStore;
 class NotificationCenterItemsStore extends PersistedStore {
@@ -387,7 +387,7 @@ const obj2 = {
     if (flag === undefined) {
       flag = false;
     }
-    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: prop, paginationHasMore: true, paginationCursor: "Set", notifCenterActive: -6.583, notifCenterTabFocused: 3 };
+    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: prop, paginationHasMore: true, paginationCursor: "Symbol", notifCenterActive: "none", notifCenterTabFocused: "URL" };
     new Set();
     if (flag) {
       prop = obj.notifCenterLocalItems;
@@ -518,7 +518,7 @@ const obj2 = {
     if (flag === undefined) {
       flag = false;
     }
-    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: prop, paginationHasMore: true, paginationCursor: "Set", notifCenterActive: -6.583, notifCenterTabFocused: 3 };
+    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: prop, paginationHasMore: true, paginationCursor: "Symbol", notifCenterActive: "none", notifCenterTabFocused: "URL" };
     new Set();
     if (flag) {
       prop = obj.notifCenterLocalItems;
@@ -670,7 +670,7 @@ const obj2 = {
     if (flag === undefined) {
       flag = false;
     }
-    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: prop, paginationHasMore: true, paginationCursor: "Set", notifCenterActive: -6.583, notifCenterTabFocused: 3 };
+    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: prop, paginationHasMore: true, paginationCursor: "Symbol", notifCenterActive: "none", notifCenterTabFocused: "URL" };
     new Set();
     if (flag) {
       prop = obj.notifCenterLocalItems;

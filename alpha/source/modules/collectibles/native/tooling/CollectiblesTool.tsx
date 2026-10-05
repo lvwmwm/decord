@@ -1,9 +1,9 @@
-// Module ID: 15594
-// Function ID: 15595
+// Module ID: 15598
+// Function ID: 15599
 // Name: CollectiblesTool
-// Dependencies: [32, 19, 17, 10431, 1377, 7053, 7068, 7874, 1085, 1379, 21, 4890, 587, 558, 576, 8418, 4886, 11091, 5595, 573, 10465, 10813, 15595, 1188, 2]
+// Dependencies: [32, 19, 17, 10431, 1377, 7053, 7068, 7874, 1085, 1379, 21, 4890, 587, 558, 576, 8418, 4886, 11091, 5595, 573, 10465, 10813, 15599, 1188, 2]
 
-// Module 15594 (CollectiblesTool)
+// Module 15598 (CollectiblesTool)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;

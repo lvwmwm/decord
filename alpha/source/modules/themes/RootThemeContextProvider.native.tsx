@@ -1,9 +1,9 @@
-// Module ID: 15854
-// Function ID: 15855
+// Module ID: 15858
+// Function ID: 15859
 // Name: RootThemeContextProvider
-// Dependencies: [19, 4879, 1193, 1096, 21, 558, 576, 504, 4732, 6470, 15855, 4589, 4895, 9758, 2]
+// Dependencies: [19, 4879, 1193, 1096, 21, 558, 576, 504, 4732, 6470, 15859, 4589, 4895, 9758, 2]
 
-// Module 15854 (RootThemeContextProvider)
+// Module 15858 (RootThemeContextProvider)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -13,7 +13,7 @@ import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4732 */;
 import PlainTextExperimentContext from "PlainTextExperimentContext" /* 4895 */;
 import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6470 */;
 import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 9758 */;
-import PlainTextExperiment from "PlainTextExperiment" /* 15855 */;
+import PlainTextExperiment from "PlainTextExperiment" /* 15859 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import ThemeStore from "ThemeStore" /* 1193 */;
@@ -177,7 +177,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   const obj2 = manaTypeConsolidationExperiment(6470);
   manaTypeConsolidationExperiment = obj2.useManaTypeConsolidationExperiment("RootThemeContextProvider");
   const items1 = [manaTypeConsolidationExperiment];
-  const obj3 = manaTypeConsolidationExperiment(15855);
+  const obj3 = manaTypeConsolidationExperiment(15859);
   const plainTextExperiment = obj3.usePlainTextExperiment("RootThemeContextProvider");
   let num = 0;
   const memo = react.useMemo(() => {

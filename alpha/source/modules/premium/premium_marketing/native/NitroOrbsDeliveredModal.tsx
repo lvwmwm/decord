@@ -1,9 +1,9 @@
-// Module ID: 13145
-// Function ID: 13146
+// Module ID: 13147
+// Function ID: 13148
 // Name: NitroOrbsDeliveredModal
-// Dependencies: [32, 19, 17, 1085, 1087, 21, 4890, 587, 558, 576, 1260, 8422, 7052, 6681, 6885, 10965, 6619, 6696, 13146, 4886, 1126, 5594, 2]
+// Dependencies: [32, 19, 17, 1085, 1087, 21, 4890, 587, 558, 576, 1260, 8422, 7052, 6681, 6885, 10965, 6619, 6696, 13148, 4886, 1126, 5594, 2]
 
-// Module 13145 (NitroOrbsDeliveredModal)
+// Module 13147 (NitroOrbsDeliveredModal)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
@@ -34,7 +34,7 @@ let obj7;
 let size;
 let tmp6;
 let unpackModuleId;
-const AssetRegistryDefault = tmp6(13146);
+const AssetRegistryDefault = tmp6(13148);
 ({ ActivityIndicator: hasOwnProperty, Image: metroRequire, StyleSheet } = react_native);
 const View = react_native.View;
 const UserSettingsSections = Constants.UserSettingsSections;

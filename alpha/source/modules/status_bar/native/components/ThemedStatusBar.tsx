@@ -1,9 +1,9 @@
-// Module ID: 14399
-// Function ID: 14400
+// Module ID: 14403
+// Function ID: 14404
 // Name: ThemedStatusBar
 // Dependencies: [19, 1193, 502, 21, 558, 576, 504, 4736, 4729, 9607, 9060, 2]
 
-// Module 14399 (ThemedStatusBar)
+// Module 14403 (ThemedStatusBar)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;

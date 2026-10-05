@@ -1,16 +1,16 @@
-// Module ID: 14365
-// Function ID: 14366
+// Module ID: 14369
+// Function ID: 14370
 // Name: RPCServer
-// Dependencies: [5, 5316, 1085, 12, 9032, 9026, 14341, 1252, 38, 8975, 1102, 2]
+// Dependencies: [5, 5316, 1085, 12, 9032, 9026, 14343, 1252, 38, 8975, 1102, 2]
 
-// Module 14365 (RPCServer)
+// Module 14369 (RPCServer)
 import _modDef12 from "module_12" /* 12 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import Constants2 from "Constants" /* 5316 */;
 import RpcCommandInterception from "RpcCommandInterception" /* 8975 */;
 import RPCErrorDefault from "RPCError" /* 9026 */;
 import transformUserDefault from "transformUser" /* 9032 */;
-import validateScopeDefault from "validateScope" /* 14341 */;
+import validateScopeDefault from "validateScope" /* 14343 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
@@ -139,7 +139,7 @@ class RPCServer {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -189,7 +189,7 @@ class RPCServer {
               });
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp8) {
             c5 = 3;
             throw tmp8;

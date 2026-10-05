@@ -1,9 +1,9 @@
-// Module ID: 14962
-// Function ID: 14963
+// Module ID: 14966
+// Function ID: 14967
 // Name: PremiumRewardGradient
 // Dependencies: [19, 17, 21, 4890, 4727, 587, 558, 576, 4580, 4791, 4730, 5605, 6052, 2]
 
-// Module 14962 (PremiumRewardGradient)
+// Module 14966 (PremiumRewardGradient)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 4580 */;

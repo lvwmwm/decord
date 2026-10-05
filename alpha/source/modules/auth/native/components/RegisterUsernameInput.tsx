@@ -1,20 +1,20 @@
-// Module ID: 15888
-// Function ID: 15889
+// Module ID: 15892
+// Function ID: 15893
 // Name: RegisterUsernameInput
-// Dependencies: [109, 32, 19, 15863, 21, 4890, 4612, 558, 576, 14512, 4800, 587, 5593, 4886, 1126, 14269, 1369, 6098, 2]
+// Dependencies: [109, 32, 19, 15867, 21, 4890, 4612, 558, 576, 14516, 4800, 587, 5593, 4886, 1126, 14271, 1369, 6098, 2]
 
-// Module 15888 (RegisterUsernameInput)
+// Module 15892 (RegisterUsernameInput)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
 import Text_Text from "Text/Text" /* 4886 */;
-import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 14269 */;
-import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 14512 */;
+import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 14271 */;
+import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 14516 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 15863 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 15867 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -340,7 +340,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    if (undefined === tmp(14512).NameValidationState.ERROR) {
+    if (undefined === tmp(14516).NameValidationState.ERROR) {
       class H {
         constructor() {
           tmp = closure_1(true);
@@ -469,7 +469,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     type = usernameStatus.type;
   }
   str2 = undefined;
-  if (type === tmp15(14512).NameValidationState.ERROR) {
+  if (type === tmp15(14516).NameValidationState.ERROR) {
     str2 = "error";
   }
   const obj6 = { children: items3 };

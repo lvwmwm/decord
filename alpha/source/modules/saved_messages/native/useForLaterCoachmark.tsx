@@ -1,16 +1,16 @@
-// Module ID: 16340
-// Function ID: 16341
+// Module ID: 16344
+// Function ID: 16345
 // Name: useForLaterCoachmark
-// Dependencies: [32, 19, 17, 2048, 21, 2036, 4890, 558, 576, 13132, 7485, 6891, 1126, 9882, 2]
+// Dependencies: [32, 19, 17, 2048, 21, 2036, 4890, 558, 576, 13134, 7485, 6891, 1126, 9882, 2]
 
-// Module 16340 (useForLaterCoachmark)
+// Module 16344 (useForLaterCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
 import dismissible_content from "dismissible_content" /* 2036 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13132 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13134 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4890 */;

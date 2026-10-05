@@ -1,7 +1,7 @@
 // Module ID: 5102
 // Function ID: 5103
 // Name: AgeVerificationUtils
-// Dependencies: [5, 32, 19, 5103, 5104, 502, 5110, 1377, 8131, 8085, 1085, 1110, 8075, 8086, 5581, 558, 1985, 576, 504, 5580, 8112, 584, 8084, 8080, 8091, 7946, 1126, 3045, 13573, 2]
+// Dependencies: [5, 32, 19, 5103, 5104, 502, 5110, 1377, 8131, 8085, 1085, 1110, 8075, 8086, 5581, 558, 1985, 576, 504, 5580, 8112, 584, 8084, 8080, 8091, 7946, 1126, 3045, 13575, 2]
 // Exports: ageGateSourceHasLightboxBackdrop, getAgeVerificationGetStartedSubtitle, getAgeVerificationGetStartedTitle, isAgeVerificationMessageWithConnectToTeenCta, isAgeVerificationMessageWithManualReviewCta, isAgeVerificationMessageWithRetryCta, isAgeVerified, isAssignedByDiscord, isFullscreenAgeVerificationEntryPoint, isVerifiedAdult, isVerifiedTeen, maybePerformReactiveCheck, shouldShowTiggerPawtect, useShouldShowTiggerPawtect
 
 // Module 5102 (AgeVerificationUtils)
@@ -18,7 +18,7 @@ import AgeVerificationConstants from "AgeVerificationConstants" /* 8085 */;
 import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8086 */;
 import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8091 */;
 import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 8112 */;
-import ReactiveCheckActionCreators from "ReactiveCheckActionCreators" /* 13573 */;
+import ReactiveCheckActionCreators from "ReactiveCheckActionCreators" /* 13575 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -90,7 +90,7 @@ function useAgeVerificationRunner(onComplete) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -170,7 +170,7 @@ function useAgeVerificationRunner(onComplete) {
             c5 = 0;
             tmp64(false);
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp64) {
           if (0 === c5) {
@@ -228,7 +228,7 @@ let obj = function _maybePerformReactiveCheck() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -566,7 +566,7 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           constructor(arg0, arg1) {
             closure_0 = arg0;
             closure_1 = arg1;
-            return closure_1(() => { /* body not rendered: F136450 */ });
+            return closure_1(() => { /* body not rendered: F136688 */ });
           }
         }
         cResult[9] = obj2;
@@ -576,7 +576,7 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         constructor(arg0, arg1) {
           closure_0 = arg0;
           closure_1 = arg1;
-          return closure_1(() => { /* body not rendered: F136450 */ });
+          return closure_1(() => { /* body not rendered: F136688 */ });
         }
       }
       cResult[4] = tmp3;

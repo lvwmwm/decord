@@ -1,9 +1,9 @@
-// Module ID: 12918
-// Function ID: 12919
+// Module ID: 12920
+// Function ID: 12921
 // Name: UserProfileRecentActivityCard
 // Dependencies: [19, 17, 21, 12831, 7818, 12836, 4890, 587, 558, 576, 8017, 4589, 4729, 8248, 1402, 5974, 2018, 4886, 12818, 6657, 6681, 12843, 12844, 8319, 8320, 5909, 1126, 2]
 
-// Module 12918 (UserProfileRecentActivityCard)
+// Module 12920 (UserProfileRecentActivityCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

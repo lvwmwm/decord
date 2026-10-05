@@ -1,9 +1,9 @@
-// Module ID: 16161
-// Function ID: 16162
+// Module ID: 16165
+// Function ID: 16166
 // Name: StageVoiceChannel
-// Dependencies: [19, 17, 7038, 4509, 4905, 5071, 4914, 2056, 1085, 11697, 21, 1126, 4890, 587, 558, 576, 5574, 504, 16162, 5588, 5582, 5841, 5960, 1881, 5097, 10651, 5043, 9054, 16153, 16040, 16050, 2]
+// Dependencies: [19, 17, 7038, 4509, 4905, 5071, 4914, 2056, 1085, 11697, 21, 1126, 4890, 587, 558, 576, 5574, 504, 16166, 5588, 5582, 5841, 5960, 1881, 5097, 10651, 5043, 9054, 16157, 16044, 16054, 2]
 
-// Module 16161 (StageVoiceChannel)
+// Module 16165 (StageVoiceChannel)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,9 +16,9 @@ import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 584
 import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 5960 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10651 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11697 */;
-import ChannelItemDefault from "ChannelItem" /* 16050 */;
-import ChannelInfoDefault from "ChannelInfo" /* 16153 */;
-import useStageChannelSpeakerVoiceStatesDefault from "useStageChannelSpeakerVoiceStates" /* 16162 */;
+import ChannelItemDefault from "ChannelItem" /* 16054 */;
+import ChannelInfoDefault from "ChannelInfo" /* 16157 */;
+import useStageChannelSpeakerVoiceStatesDefault from "useStageChannelSpeakerVoiceStates" /* 16166 */;
 import react from "react" /* 19 */;
 import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7038 */;
 import PermissionStore from "PermissionStore" /* 4509 */;

@@ -251,7 +251,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildBoostSl
         reduce2 = flattenedGuildIds.reduce;
         array = new Array();
         tmp11 = array;
-        reduce2Result = reduce2(() => { /* body not rendered: F136611 */ }, array);
+        reduce2Result = reduce2(() => { /* body not rendered: F136849 */ }, array);
       } else {
         tmp2 = closure_1;
         tmp3 = closure_3;
@@ -266,7 +266,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildBoostSl
         reduce = queryGuildsResult.reduce;
         array1 = new Array();
         tmp6 = array1;
-        reduce2Result = reduce(() => { /* body not rendered: F136612 */ }, array1);
+        reduce2Result = reduce(() => { /* body not rendered: F136850 */ }, array1);
       }
       return reduce2Result;
     }

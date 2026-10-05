@@ -1,18 +1,18 @@
-// Module ID: 18043
-// Function ID: 18044
+// Module ID: 18065
+// Function ID: 18066
 // Name: SafetyFlowsUtils
-// Dependencies: [5, 19, 1377, 18037, 18039, 5093, 18038, 4568, 4805, 1126, 2787, 558, 576, 1490, 18042, 2]
+// Dependencies: [5, 19, 1377, 18059, 18061, 5093, 18060, 4568, 4805, 1126, 2787, 558, 576, 1490, 18064, 2]
 // Exports: getScreensForTaskType
 
-// Module 18043 (SafetyFlowsUtils)
+// Module 18065 (SafetyFlowsUtils)
 import intl2 from "intl" /* 1126 */;
 import _modDef2787 from "module_2787" /* 2787 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
 import AssetRegistryDefault from "AssetRegistry" /* 4805 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import types from "types" /* 18037 */;
-import constants from "constants" /* 18038 */;
-import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 18039 */;
+import types from "types" /* 18059 */;
+import constants from "constants" /* 18060 */;
+import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 18061 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1377 */;
@@ -38,7 +38,7 @@ let obj = function _fetchAndUpdateTask() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -175,7 +175,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -221,7 +221,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             data = value;
             closure_2_8(data, data);
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp14) {
           c4 = 3;
@@ -262,7 +262,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -308,7 +308,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             data = value;
             closure_2_8(data, data);
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp14) {
           c4 = 3;

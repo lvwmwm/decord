@@ -1,9 +1,9 @@
-// Module ID: 14467
-// Function ID: 14468
+// Module ID: 14471
+// Function ID: 14472
 // Name: UserPrimaryGuildListBottomSheet
 // Dependencies: [19, 17, 7603, 21, 4890, 1369, 587, 558, 576, 7836, 4594, 4854, 1126, 5971, 9395, 6075, 5993, 12, 4886, 8895, 8371, 6645, 2]
 
-// Module 14467 (UserPrimaryGuildListBottomSheet)
+// Module 14471 (UserPrimaryGuildListBottomSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;

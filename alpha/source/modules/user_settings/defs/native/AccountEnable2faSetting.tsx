@@ -1,14 +1,14 @@
-// Module ID: 14561
-// Function ID: 14562
+// Module ID: 14565
+// Function ID: 14566
 // Name: AccountEnable2faSetting
-// Dependencies: [1377, 7634, 558, 14490, 14562, 5707, 1126, 11129, 2]
+// Dependencies: [1377, 7634, 558, 14494, 14566, 5707, 1126, 11129, 2]
 
-// Module 14561 (AccountEnable2faSetting)
+// Module 14565 (AccountEnable2faSetting)
 import intl3 from "intl" /* 1126 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 14490 */;
-import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 14562 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 14494 */;
+import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 14566 */;
 import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;

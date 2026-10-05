@@ -1,15 +1,15 @@
-// Module ID: 14471
-// Function ID: 14472
+// Module ID: 14475
+// Function ID: 14476
 // Name: UserProfilePremiumTryItOutUpsell
-// Dependencies: [19, 6707, 21, 4890, 14470, 558, 576, 6657, 6681, 1618, 8914, 8867, 4612, 5597, 1126, 2]
+// Dependencies: [19, 6707, 21, 4890, 14474, 558, 576, 6657, 6681, 1618, 8914, 8867, 4612, 5597, 1126, 2]
 
-// Module 14471 (UserProfilePremiumTryItOutUpsell)
+// Module 14475 (UserProfilePremiumTryItOutUpsell)
 import Fragment from "Fragment" /* 21 */;
 import spring from "spring" /* 5597 */;
 import Constants from "Constants" /* 6707 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8867 */;
 import openPremiumModalDefault from "openPremiumModal" /* 8914 */;
-import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 14470 */;
+import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 14474 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -165,7 +165,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isVisible) => {
         tmp19 = tmp21;
       }
     }
-    const tmp18 = jsx(tmp4(14470), { style: card, text: tmp11, buttonText: tmp14, onButtonPress: onPreviewPremium, buttonVariant: "primary" });
+    const tmp18 = jsx(tmp4(14474), { style: card, text: tmp11, buttonText: tmp14, onButtonPress: onPreviewPremium, buttonVariant: "primary" });
     cResult[8] = onPreviewPremium;
     class P {
       constructor() {
@@ -280,7 +280,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isVisible) => {
   const items1 = [tmp2.container, animatedStyle];
   const View = analyticsLocations(4612).View;
   ({ style: tmp2.card, text: intl.format(isVisible(1126).t.TmfgI2, { onClick: callback }), buttonText: intl2.string(isVisible(1126).t.PxUx8e), onButtonPress: onPreviewPremium, buttonVariant: "primary" });
-  analyticsLocations(14470);
+  analyticsLocations(14474);
   intl = isVisible(1126).intl;
   intl2 = isVisible(1126).intl;
   return <View animatedProps={animatedProps} style={items1}>{null}</View>;

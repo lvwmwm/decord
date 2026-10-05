@@ -1,10 +1,10 @@
-// Module ID: 14354
-// Function ID: 14355
+// Module ID: 14358
+// Function ID: 14359
 // Name: AuthCommandsFactory
-// Dependencies: [32, 5, 5118, 2009, 1377, 5316, 1085, 9033, 1102, 510, 9026, 2016, 8708, 9005, 8727, 8722, 8729, 4514, 1097, 1282, 584, 14315, 8015, 1478, 2]
+// Dependencies: [32, 5, 5118, 2009, 1377, 5316, 1085, 9033, 1102, 510, 9026, 2016, 8708, 9005, 8727, 8722, 8729, 4514, 1097, 1282, 584, 14317, 8015, 1478, 2]
 // Exports: default
 
-// Module 14354 (AuthCommandsFactory)
+// Module 14358 (AuthCommandsFactory)
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
@@ -68,7 +68,7 @@ let obj = function _authorizeWithPrompt() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -135,7 +135,7 @@ let obj = function _authorizeWithPrompt() {
               map = undefined;
               _prompt = 1;
               disableGuildSelect = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else {
             let createFromServer;
@@ -521,7 +521,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
   let obj2 = require("CONTEXT_MENU_ICON_NAMES");
   let obj3 = {
     handler(socket) {
-      const f152675 = function(result) {
+      const f152961 = function(result) {
         let access_token;
         let expires_in;
         let scope;
@@ -627,7 +627,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
                   let obj3 = { client_id: tmp, scope: IDENTIFY, response_type: "token", signal, isSocketRpcPrivateScope: false };
                   let tmp8 = signal;
                   const promise = authorizeWithPrompt(obj3, closure_0, closure_1);
-                  return promise.then(f152675);
+                  return promise.then(f152961);
                 } else {
                   let str = "Trying to call a non-function";
                   throw new TypeError("Trying to call a non-function");
@@ -636,7 +636,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
             } else {
               let obj3 = { client_id: id, scope: IDENTIFY, response_type: "token", signal, isSocketRpcPrivateScope: false };
               let promise = authorizeWithPrompt(obj3, socket, signal);
-              catchPromise = promise.then(f152675);
+              catchPromise = promise.then(f152961);
             }
             return catchPromise;
           }

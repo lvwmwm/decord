@@ -1,9 +1,9 @@
-// Module ID: 17739
-// Function ID: 17740
+// Module ID: 17763
+// Function ID: 17764
 // Name: GuildSettingsServerTagPickerCell
 // Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4594, 2]
 
-// Module 17739 (GuildSettingsServerTagPickerCell)
+// Module 17763 (GuildSettingsServerTagPickerCell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

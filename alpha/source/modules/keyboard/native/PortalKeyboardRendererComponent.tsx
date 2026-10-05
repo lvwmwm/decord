@@ -1,17 +1,17 @@
-// Module ID: 16600
-// Function ID: 16601
+// Module ID: 16606
+// Function ID: 16607
 // Name: PortalKeyboardRendererComponent
-// Dependencies: [19, 2051, 21, 558, 576, 6722, 1616, 11649, 8932, 16601, 16607, 2]
+// Dependencies: [19, 2051, 21, 558, 576, 6722, 1616, 11649, 8932, 16607, 16613, 2]
 
-// Module 16600 (PortalKeyboardRendererComponent)
+// Module 16606 (PortalKeyboardRendererComponent)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import KeyboardTypes from "KeyboardTypes" /* 1616 */;
 import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 6722 */;
 import AppLauncherTypes from "AppLauncherTypes" /* 8932 */;
 import AppLauncherKeyboardDefault from "AppLauncherKeyboard" /* 11649 */;
-import MediaKeyboardDefault from "MediaKeyboard" /* 16601 */;
-import ExpressionPickerKeyboardDefault from "ExpressionPickerKeyboard" /* 16607 */;
+import MediaKeyboardDefault from "MediaKeyboard" /* 16607 */;
+import ExpressionPickerKeyboardDefault from "ExpressionPickerKeyboard" /* 16613 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

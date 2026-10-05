@@ -1,14 +1,14 @@
-// Module ID: 16872
-// Function ID: 16873
+// Module ID: 16891
+// Function ID: 16892
 // Name: ThreadListTableRow
-// Dependencies: [19, 17, 2051, 21, 4890, 558, 576, 16873, 5993, 504, 2]
+// Dependencies: [19, 17, 2051, 21, 4890, 558, 576, 16892, 5993, 504, 2]
 
-// Module 16872 (ThreadListTableRow)
+// Module 16891 (ThreadListTableRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import TableRow2 from "TableRow" /* 5993 */;
-import ThreadBrowserRowSubtext from "ThreadBrowserRowSubtext" /* 16873 */;
+import ThreadBrowserRowSubtext from "ThreadBrowserRowSubtext" /* 16892 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import createStyles from "createStyles" /* 4890 */;

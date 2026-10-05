@@ -1,9 +1,9 @@
-// Module ID: 15091
-// Function ID: 15092
+// Module ID: 15095
+// Function ID: 15096
 // Name: SynchronizeIconNative
 // Dependencies: [19, 21, 558, 576, 8136, 2]
 
-// Module 15091 (SynchronizeIconNative)
+// Module 15095 (SynchronizeIconNative)
 import react2 from "react" /* 576 */;
 import inlineStyles from "inlineStyles" /* 8136 */;
 import react from "react" /* 19 */;

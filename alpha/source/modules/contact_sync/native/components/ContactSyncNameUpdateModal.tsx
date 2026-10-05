@@ -1,9 +1,9 @@
-// Module ID: 14649
-// Function ID: 14650
+// Module ID: 14653
+// Function ID: 14654
 // Name: ContactSyncNameUpdateModal
 // Dependencies: [5, 32, 19, 17, 12327, 21, 5093, 4890, 587, 6068, 558, 576, 12329, 12333, 4568, 1126, 4807, 12346, 6010, 6496, 2]
 
-// Module 14649 (ContactSyncNameUpdateModal)
+// Module 14653 (ContactSyncNameUpdateModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -66,7 +66,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -113,7 +113,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp27) {
           if (0 === c3) {
@@ -206,7 +206,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -252,7 +252,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp27) {
           if (0 === c3) {

@@ -236,7 +236,7 @@ let obj = function _optimisticallySetAnswers() {
       await "IconComponent";
       closure_2 = tmp;
       ({ channelId: c0, messageId: c1, answerIds: c2 } = channelId);
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -397,7 +397,7 @@ obj = function _handlePollSubmitVote() {
       await "IconComponent";
       answerIds = tmp5;
       ({ channelId: c0, messageId: c1 } = closure_0);
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -423,7 +423,7 @@ obj = function _handleClearPollVote() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -443,7 +443,7 @@ obj = function _handleClearPollVote() {
               channel = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -482,7 +482,7 @@ obj = function _handleClearPollVote() {
                 }
               }
               c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else if (arg0 === 1) {
             c4 = 3;
@@ -614,7 +614,7 @@ obj = function _handlePollActionTapped() {
       }
       await "IconComponent";
       ({ channelId: c0, messageId: c1, type: c2 } = closure_0);
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -650,7 +650,7 @@ obj = function _createPoll() {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -678,7 +678,7 @@ obj = function _createPoll() {
                 obj5 = undefined;
                 layout_type = 1;
                 c6 = 1;
-                return { value: "Reflect", done: true };
+                return { value: "Set", done: true };
               }
             } else if (1 === layout_type) {
               if (arg0 === 1) {
@@ -783,7 +783,7 @@ obj = function _createPoll() {
                 duration = 0;
               }
               c6 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp33) {
             closure_3 = tmp33;
@@ -844,7 +844,7 @@ obj = function _endPollEarly() {
       }
       await "IconComponent";
       ({ channelId: c0, messageId: c1 } = closure_0);
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;

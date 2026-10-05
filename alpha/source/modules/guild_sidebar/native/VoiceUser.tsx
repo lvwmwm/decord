@@ -1,9 +1,9 @@
-// Module ID: 16041
-// Function ID: 16042
+// Module ID: 16045
+// Function ID: 16046
 // Name: VoiceUser
-// Dependencies: [19, 2050, 4912, 502, 1999, 4908, 4909, 21, 558, 576, 504, 16042, 2]
+// Dependencies: [19, 2050, 4912, 502, 1999, 4908, 4909, 21, 558, 576, 504, 16046, 2]
 
-// Module 16041 (VoiceUser)
+// Module 16045 (VoiceUser)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2050 */;

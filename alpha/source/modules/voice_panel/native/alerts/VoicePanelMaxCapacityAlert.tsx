@@ -1,11 +1,11 @@
-// Module ID: 17309
-// Function ID: 17310
+// Module ID: 17333
+// Function ID: 17334
 // Name: VoicePanelMaxCapacityAlert
-// Dependencies: [19, 2051, 21, 558, 576, 573, 5713, 17307, 1126, 5713, 2]
+// Dependencies: [19, 2051, 21, 558, 576, 573, 5713, 17331, 1126, 5713, 2]
 
-// Module 17309 (VoicePanelMaxCapacityAlert)
+// Module 17333 (VoicePanelMaxCapacityAlert)
 import Fragment from "Fragment" /* 21 */;
-import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 17307 */;
+import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 17331 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

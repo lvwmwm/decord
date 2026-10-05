@@ -1,9 +1,9 @@
-// Module ID: 15060
-// Function ID: 15061
+// Module ID: 15064
+// Function ID: 15065
 // Name: VoiceSetting
-// Dependencies: [1999, 1085, 558, 576, 504, 1126, 11129, 9689, 15061, 2]
+// Dependencies: [1999, 1085, 558, 576, 504, 1126, 11129, 9689, 15065, 2]
 
-// Module 15060 (VoiceSetting)
+// Module 15064 (VoiceSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;

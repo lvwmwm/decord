@@ -1,9 +1,9 @@
-// Module ID: 13196
-// Function ID: 13197
+// Module ID: 13198
+// Function ID: 13199
 // Name: BillingInformation
-// Dependencies: [5, 1085, 558, 576, 13189, 4528, 1370, 10783, 1126, 2]
+// Dependencies: [5, 1085, 558, 576, 13191, 4528, 1370, 10783, 1126, 2]
 
-// Module 13196 (BillingInformation)
+// Module 13198 (BillingInformation)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -70,7 +70,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPurchasedViaApple,
                               const obj3 = { value, done: true };
                               return obj3;
                             } else {
-                              return { value: "IconComponent", done: "IconComponent" };
+                              return { value: "IconComponent", done: null };
                             }
                           } else {
                             try {
@@ -99,7 +99,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPurchasedViaApple,
                                 return obj;
                               } else {
                                 c0 = 3;
-                                return { value: "IconComponent", done: "IconComponent" };
+                                return { value: "IconComponent", done: null };
                               }
                             } catch (tmp6) {
                               c0 = 3;
@@ -198,7 +198,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPurchasedViaApple,
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 try {
@@ -227,7 +227,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPurchasedViaApple,
                     return obj;
                   } else {
                     c0 = 3;
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "IconComponent", done: null };
                   }
                 } catch (tmp6) {
                   c0 = 3;

@@ -58,7 +58,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isClaimingReward) =>
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c6;
@@ -101,7 +101,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isClaimingReward) =>
               c6 = 0;
             }
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp23) {
           let closure_5 = tmp23;
@@ -236,7 +236,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isClaimingReward) =>
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;
@@ -279,7 +279,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isClaimingReward) =>
             c6 = 0;
           }
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp23) {
         let closure_5 = tmp23;

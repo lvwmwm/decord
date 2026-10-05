@@ -38,7 +38,7 @@ let obj = function _loadForumPostData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -59,7 +59,7 @@ let obj = function _loadForumPostData() {
               c3 = 0;
               c11 = null;
               c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           }
         } else if (1 === tmp4) {
@@ -110,7 +110,7 @@ obj = function _loadForumPostDataForChannelId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -139,7 +139,7 @@ obj = function _loadForumPostDataForChannelId() {
               postResult = closure_2_10;
               closure_2_10.finishRequesting(closure_0, nextBatch);
               c6 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             } else {
               channel = channel.getChannel(tmp44);
               guild_id = undefined;
@@ -151,7 +151,7 @@ obj = function _loadForumPostDataForChannelId() {
                 postResult = closure_2_10;
                 closure_2_10.finishRequesting(closure_0, nextBatch);
                 c6 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } else {
                 const HTTP = require("HTTPUtils").HTTP;
                 const request = { url: Endpoints.FORUM_POSTS(closure_0), body: obj4, rejectWithError: true };
@@ -193,7 +193,7 @@ obj = function _loadForumPostDataForChannelId() {
           postResult = closure_0;
           closure_130_10.finishRequesting(closure_0, nextBatch);
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp37) {
         closure_3 = tmp37;

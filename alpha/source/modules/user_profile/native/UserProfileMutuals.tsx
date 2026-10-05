@@ -1,10 +1,10 @@
-// Module ID: 12947
-// Function ID: 12948
+// Module ID: 12949
+// Function ID: 12950
 // Name: UserProfileMutuals
 // Dependencies: [19, 17, 7854, 6707, 21, 4890, 7861, 12270, 12813, 4854, 12275, 1987, 7850, 6845, 5909, 12850, 1188, 4886, 12280, 12284, 5971, 12281, 2]
 // Exports: default
 
-// Module 12947 (UserProfileMutuals)
+// Module 12949 (UserProfileMutuals)
 import react_native from "react-native" /* 17 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
@@ -93,7 +93,7 @@ export default function UserProfileMutuals(user) {
         totalCount: mapped.length,
         names: mapped.map((username) => username.username),
         children: mapped.map((user) => {
-              const obj = { user, size: user(c2[16]).AvatarSizes.SIZE_16, guildId: "Array" };
+              const obj = { user, size: user(c2[16]).AvatarSizes.SIZE_16, guildId: "r" };
               const Avatar = user(c2[16]).Avatar;
               return closure_1_6(Avatar, obj, user.id);
             })

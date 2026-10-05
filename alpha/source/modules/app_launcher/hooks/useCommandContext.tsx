@@ -18,7 +18,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
   if (cResult[0] !== type) {
     let obj2;
     if ("contextless" === type.type) {
-      obj2 = { channel: "Symbol", guild: "current" };
+      obj2 = { channel: "Array", guild: "Set" };
     } else {
       obj2 = { channel: type.channel, guild: GuildStore.getGuild(type.channel.guild_id) };
     }
@@ -35,7 +35,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
   return react.useMemo(() => {
     let obj;
     if ("contextless" === type.type) {
-      obj = { channel: "Symbol", guild: "current" };
+      obj = { channel: "Array", guild: "Set" };
     } else {
       obj = { channel: type.channel, guild: GuildStore.getGuild(type.channel.guild_id) };
     }
@@ -45,7 +45,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
 function getCommandContext(type) {
   let obj;
   if ("contextless" === type.type) {
-    obj = { channel: "Symbol", guild: "current" };
+    obj = { channel: "Array", guild: "Set" };
   } else {
     obj = { channel: type.channel, guild: GuildStore.getGuild(type.channel.guild_id) };
   }

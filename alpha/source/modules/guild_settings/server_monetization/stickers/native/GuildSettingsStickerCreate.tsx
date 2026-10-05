@@ -1,9 +1,9 @@
-// Module ID: 17727
-// Function ID: 17728
+// Module ID: 17751
+// Function ID: 17752
 // Name: GuildSettingsStickerCreate
-// Dependencies: [5, 32, 19, 17, 5638, 5687, 1085, 1380, 2031, 21, 4890, 587, 6471, 10836, 5984, 4523, 7274, 17728, 10112, 5428, 4886, 1126, 5317, 2115, 5594, 5593, 5909, 10127, 17729, 9866, 6625, 1402, 8411, 6098, 6580, 2]
+// Dependencies: [5, 32, 19, 17, 5638, 5687, 1085, 1380, 2031, 21, 4890, 587, 6471, 10836, 5984, 4523, 7274, 17752, 10112, 5428, 4886, 1126, 5317, 2115, 5594, 5593, 5909, 10127, 17753, 9866, 6625, 1402, 8411, 6098, 6580, 2]
 
-// Module 17727 (GuildSettingsStickerCreate)
+// Module 17751 (GuildSettingsStickerCreate)
 import nativeDefault from "native" /* 587 */;
 import StickersConstants from "StickersConstants" /* 2031 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4523 */;
@@ -186,7 +186,7 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -241,7 +241,7 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
               if ("Cancelled" === errorStr) {
                 c3 = 0;
                 c5 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } else {
                 if (null != base64) {
                   if ("image/png" === mimeType) {
@@ -258,7 +258,7 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
               }
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp26) {
           closure_2 = tmp26;
@@ -290,7 +290,7 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c5;
@@ -329,7 +329,7 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
                 }
                 c5 = 0;
                 c6 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } else {
                 if (null != closure_2_6) {
                   if (null != first1) {
@@ -350,7 +350,7 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
                 }
                 c5 = 0;
                 c6 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             }
           } else {
@@ -389,7 +389,7 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
               c5 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp26) {
           let closure_4 = tmp26;
@@ -558,7 +558,7 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
     obj19 = { uri };
     tmp32Result = tmp32(c6, obj18);
   } else {
-    tmp32Result = tmp32(tmp31(17729).StickerPlusIcon, { size: "lg" });
+    tmp32Result = tmp32(tmp31(17753).StickerPlusIcon, { size: "lg" });
   }
   items4[1] = onPressEmoji(PressableHighlight, obj16);
   const obj20 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.stickerPreviewLabel, children: intl7.string(stickerId(1126).t["3BQmiC"]) };

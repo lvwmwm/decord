@@ -1,12 +1,12 @@
-// Module ID: 16233
-// Function ID: 16234
+// Module ID: 16237
+// Function ID: 16238
 // Name: useGuildsBarBottomRightBadge
-// Dependencies: [32, 19, 21, 4890, 558, 576, 1188, 4580, 587, 16234, 16235, 16239, 2]
+// Dependencies: [32, 19, 21, 4890, 558, 576, 1188, 4580, 587, 16238, 16239, 16243, 2]
 
-// Module 16233 (useGuildsBarBottomRightBadge)
+// Module 16237 (useGuildsBarBottomRightBadge)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1188 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16234 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16238 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import createStyles from "createStyles" /* 4890 */;
@@ -111,8 +111,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((mentionCount) => {
       const obj4 = { position: "bottom-right", containerSize: token, width: diff1 };
       cResult[7] = token;
       cResult[8] = diff1;
-      cResult[9] = first(16234)(obj4);
-      const tmp23 = first(16234)(obj4);
+      cResult[9] = first(16238)(obj4);
+      const tmp23 = first(16238)(obj4);
     } else {
       class L {
         constructor(nativeEvent) {
@@ -190,8 +190,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((mentionCount) => {
         }
         cResult[25] = tmp13;
         cResult[26] = joinRequestState;
-        cResult[27] = jsx(first(16235), { style: tmp13, joinRequestState });
-        const tmp17 = jsx(first(16235), { style: tmp13, joinRequestState });
+        cResult[27] = jsx(first(16239), { style: tmp13, joinRequestState });
+        const tmp17 = jsx(first(16239), { style: tmp13, joinRequestState });
       }
     }
     return tmp20;
@@ -261,7 +261,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((mentionCount) => {
         items2 = [tmp5];
         return obj8;
       } else {
-        return { badge: null, cutout: "Array", cutouts: "cursor" };
+        return { badge: null, cutout: "Array", cutouts: "toCharArray$esjava$1" };
       }
     }
   }, items1);

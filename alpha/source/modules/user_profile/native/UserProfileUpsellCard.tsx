@@ -1,9 +1,9 @@
-// Module ID: 14446
-// Function ID: 14447
+// Module ID: 14450
+// Function ID: 14451
 // Name: UserProfileUpsellCard
 // Dependencies: [19, 17, 6707, 6938, 21, 4890, 587, 558, 576, 8313, 4886, 5605, 1105, 1188, 2]
 
-// Module 14446 (UserProfileUpsellCard)
+// Module 14450 (UserProfileUpsellCard)
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import LinearGradientDefault from "LinearGradient" /* 5605 */;

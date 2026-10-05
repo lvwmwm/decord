@@ -88,7 +88,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
     class I {
       constructor() {
-        timerId = setTimeout(() => { /* body not rendered: F142579 */ }, 1000);
+        timerId = setTimeout(() => { /* body not rendered: F142817 */ }, 1000);
         closure_6.current = timerId;
         return timerId;
       }
@@ -97,7 +97,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   } else {
     class I {
       constructor() {
-        timerId = setTimeout(() => { /* body not rendered: F142579 */ }, 1000);
+        timerId = setTimeout(() => { /* body not rendered: F142817 */ }, 1000);
         closure_6.current = timerId;
         return timerId;
       }

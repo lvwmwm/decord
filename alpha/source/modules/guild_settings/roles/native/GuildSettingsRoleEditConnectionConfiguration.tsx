@@ -1,9 +1,9 @@
-// Module ID: 17783
-// Function ID: 17784
+// Module ID: 17807
+// Function ID: 17808
 // Name: GuildSettingsRoleEditConnectionConfiguration
-// Dependencies: [32, 19, 17, 1085, 6679, 21, 4890, 587, 558, 576, 4791, 11180, 1188, 4729, 1402, 1126, 6017, 5909, 5993, 6698, 17784, 1369, 4886, 5442, 6074, 2]
+// Dependencies: [32, 19, 17, 1085, 6679, 21, 4890, 587, 558, 576, 4791, 11180, 1188, 4729, 1402, 1126, 6017, 5909, 5993, 6698, 17808, 1369, 4886, 5442, 6074, 2]
 
-// Module 17783 (GuildSettingsRoleEditConnectionConfiguration)
+// Module 17807 (GuildSettingsRoleEditConnectionConfiguration)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -19,7 +19,7 @@ import Pressables from "Pressables" /* 5909 */;
 import TableRow2 from "TableRow" /* 5993 */;
 import XSmallIcon from "XSmallIcon" /* 6017 */;
 import useGetOrFetchApplicationBatched2 from "useGetOrFetchApplicationBatched" /* 11180 */;
-import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 17784 */;
+import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 17808 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Constants from "Constants" /* 6679 */;
@@ -174,7 +174,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     if (cResult[0] !== bot) {
-      const obj2 = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "Array" };
+      const obj2 = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "r" };
       const Avatar2 = tmp(1188).Avatar;
       const tmp26 = onChangeText(Avatar2, obj2);
       cResult[0] = bot;
@@ -197,7 +197,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (null != bot1) {
         let tmp19;
         if (cResult[2] !== getOrFetchApplicationBatched.bot) {
-          const obj3 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "Array" };
+          const obj3 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "r" };
           const Avatar = tmp(1188).Avatar;
           const tmp21 = onChangeText(Avatar, obj3);
           cResult[2] = getOrFetchApplicationBatched.bot;
@@ -353,7 +353,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     application2 = integration.application;
   }
   if (null != application2) {
-    const obj = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "Array" };
+    const obj = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "r" };
     const Avatar2 = tmp3(1188).Avatar;
     bot = undefined;
     const tmp16 = onChangeText;
@@ -375,7 +375,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       let tmp13;
       if (null != bot1) {
-        const obj2 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "Array" };
+        const obj2 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "r" };
         const Avatar = tmp3(1188).Avatar;
         tmp13 = onChangeText(Avatar, obj2);
       }
@@ -1401,7 +1401,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((existingPendin
   }
   let tmp2 = metadataField;
   let tmp3 = dependencyMap;
-  let obj = metadataField(17784);
+  let obj = metadataField(17808);
   const realizedOperatorForResult = obj.realizedOperatorFor(operator);
   c7 = realizedOperatorForResult;
   value = undefined;
@@ -1410,7 +1410,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((existingPendin
       value = iter.value;
     }
   }
-  const tmp2Result = tmp2(17784);
+  const tmp2Result = tmp2(17808);
   const str = tmp2Result.displayedValueFor(value, realizedOperatorForResult);
   str1 = str.toString();
   [value, tmp10] = react.useState(str1);

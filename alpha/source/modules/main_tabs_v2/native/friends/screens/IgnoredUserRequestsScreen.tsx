@@ -1,9 +1,9 @@
-// Module ID: 16932
-// Function ID: 16933
+// Module ID: 16951
+// Function ID: 16952
 // Name: IgnoredUserRequestsScreen
-// Dependencies: [19, 4519, 1377, 10592, 1085, 21, 558, 576, 6657, 6681, 16930, 504, 7850, 10598, 2]
+// Dependencies: [19, 4519, 1377, 10592, 1085, 21, 558, 576, 6657, 6681, 16949, 504, 7850, 10598, 2]
 
-// Module 16932 (IgnoredUserRequestsScreen)
+// Module 16951 (IgnoredUserRequestsScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;

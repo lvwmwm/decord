@@ -1,142 +1,221 @@
 // Module ID: 14177
 // Function ID: 14178
-// Dependencies: [473, 14178, 190, 874]
-// Exports: default
+// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21]
 
 // Module 14177
-import ArgType from "ArgType" /* 14178 */;
-import react_mod from "react" /* 473 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import map from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 
-let _default2, logger;
+let size;
 
-let tmp3;
-let react = react_mod;
-if (!react) {
-  let obj = { default: react };
-  tmp3 = obj;
-} else {
-  tmp3 = react;
-}
-react = tmp3.default;
-let closure_5 = { veto: null };
-function objectifyError(headers) {
-  let closure_0 = headers;
-  const obj = {};
-  const ownPropertyNames = Object.getOwnPropertyNames(headers);
-  const item = ownPropertyNames.forEach((item) => {
-    obj[item] = closure_0[item];
-  });
-  return obj;
-}
+let value;
+let weakMap;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-export default (arg0) => {
-  let closure_0 = arg0;
-  return (arg0) => {
-    let addException;
-    function reportError(stack) {
-      logger = stack;
-      try {
-        const tmp2 = _default;
-        if (!tmp2) {
-          const tmp3 = logger;
-          const tmp5 = logger(veto[2]);
-          if (typeof tmp5 === "function") {
-            _default = tmp5;
-          } else {
-            _default = tmp6.default;
-          }
-        }
-        const tmp9 = _default2;
-        if (!tmp9) {
-          const tmp12 = logger(veto[3]);
-          if (typeof tmp12 === "function") {
-            _default2 = tmp12;
-          } else {
-            _default2 = tmp13.default;
-          }
-        }
-        if (_default) {
-          if (_default2) {
-            if (typeof tmp16 !== "function") {
-              logger.error("parseErrorStack is not a function", []);
-              const obj2 = { parseErrorStackType: typeof _default, parseErrorStack: _default };
-              logger.debug(obj2);
-            } else if (typeof tmp18 !== "function") {
-              logger.error("symbolicateStackTrace is not a function", []);
-              const obj3 = { symbolicateStackTraceType: typeof _default2, symbolicateStackTrace: _default2 };
-              logger.debug(obj3);
-            } else {
-              try {
-                const promise = _default2(_default(stack.stack));
-                const nextPromise = promise.then((stack) => {
-                  stack = stack.stack;
-                  const mapped = stack.map((file) => ({ fileName: file.file, functionName: file.methodName, lineNumber: file.lineNumber }));
-                  let found = mapped;
-                  if (veto.veto) {
-                    found = mapped.filter((item) => {
-                      let vetoResult;
-                      const obj = veto;
-                      if (veto != null) {
-                        vetoResult = obj.veto(item);
-                      }
-                      return vetoResult;
-                    });
-                  }
-                  stack.error(stack.message, found);
-                });
-                nextPromise.catch((error) => {
-                  stack.error("Unable to symbolicate stack trace from error object", []);
-                  if (typeof closure_2_6 === "function") {
-                    stack = error;
-                    const obj = {};
-                    const _Object = Object;
-                    const ownPropertyNames = Object.getOwnPropertyNames(error);
-                    const item = ownPropertyNames.forEach((item) => {
-                      obj[item] = closure_0[item];
-                    });
-                    tmp3(obj);
-                  } else {
-                    throw new TypeError("Trying to call a non-function");
-                  }
-                });
-              } catch (tmp32) {
-                logger.error("Unable to parse stack trace from error object", []);
-                logger.debug(closure_1_6(tmp32));
-              }
-            }
-          }
-        }
-        logger.error("parseErrorStack or symbolicateStackTrace is not available", []);
-        let obj = { parseErrorStackAvailable: _default, symbolicateStackTraceAvailable: _default2 };
-        logger.debug(obj);
-      } catch (tmp47) {
-        logger.error("Unable to load \"react-native/Libraries/Core/Devtools/parseErrorStack\" or \"react-native/Libraries/Core/Devtools/symbolicateStackTrace\"", []);
-        logger.debug(closure_1_6(tmp47));
-      }
-    }
-    let _default = reportError;
-    const result = ArgType.assertHasLoggerPlugin(arg0);
-    closure_0 = arg0;
-    let obj = closure_0;
-    let _Object = Object;
-    let tmp2 = closure_5;
-    if (!closure_0) {
-      obj = {};
-    }
-    let closure_1 = assign({}, tmp2, obj);
-    let obj2 = {
-      onConnect() {
-        const obj = {
-          apply(apply, arg1, arg2) {
-            _default(arg2[0]);
-            return apply.apply(arg1, arg2);
-          }
-        };
-        const proxy = new Proxy(addException.addException, obj);
-        addException.addException = proxy;
-      },
-      features: { reportError }
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
     };
-    return obj2;
-  };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+if (typeof WeakMap === "function") {
+  const _WeakMap = WeakMap;
+  let self = this;
+  const self2 = this;
+  weakMap = new WeakMap();
+  const _WeakMap2 = WeakMap;
+  const self3 = this;
+  const weakMap1 = new WeakMap();
+}
+if (!react) {
+  let tmp7 = null;
+  let merged = Object.assign({ default: null });
+  merged[0] = react;
+  value = merged;
+  if (null !== react) {
+    if (typeof react === "object") {
+      if (!weakMap) {
+        value = merged;
+        const keys = Object.keys();
+        if (keys !== undefined) {
+          value = merged;
+          while (keys[tmp] !== undefined) {
+            let callResult = "default" !== tmp12;
+            if (callResult) {
+              let hasOwnProperty = {}.hasOwnProperty;
+              callResult = hasOwnProperty.call(react, tmp12);
+            }
+            if (!callResult) {
+              continue;
+            } else {
+              let _Object = Object;
+              let ownPropertyDescriptor = defineProperty;
+              if (ownPropertyDescriptor) {
+                let _Object2 = Object;
+                ownPropertyDescriptor = Object.getOwnPropertyDescriptor(react, tmp12);
+              }
+              if (!ownPropertyDescriptor) {
+                merged[tmp12] = react[tmp12];
+                continue;
+              } else {
+                let definePropertyResult1 = defineProperty(merged, tmp12, ownPropertyDescriptor);
+                continue;
+              }
+              continue;
+            }
+            continue;
+          }
+        }
+      } else if (weakMap.has(react)) {
+        value = weakMap.get(react);
+      } else {
+        const result = weakMap.set(react, merged);
+      }
+    } else {
+      value = merged;
+    }
+  }
+} else {
+  value = react;
+}
+const metroRequire = { container: { position: "absolute", left: 0, top: 0, right: 0, bottom: 0, zIndex: 1000, opacity: 0.25 }, debugContainer: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, justifyContent: "center", alignItems: "center", backgroundColor: "transparent", zIndex: 2000 }, debugTextContainer: { backgroundColor: "lightgray", margin: 50, padding: 20 }, debugText: { color: "red", fontSize: 16, marginBottom: 10 } };
+class FullScreenOverlay {
+  constructor(emitter) {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, FullScreenOverlay);
+    const items = [emitter];
+    let obj = _getPrototypeOf(FullScreenOverlay);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    let closure_0 = tmp3Result;
+    const obj2 = { opacity: container.container.opacity, uri: null, justifyContent: "center", alignItems: "center" };
+    tmp3Result.state = obj2;
+    emitter = emitter.emitter;
+    emitter.on("overlay", (arg0) => {
+      const setState = closure_0.setState;
+      const obj = {};
+      const merged = Object.assign(closure_0.state);
+      const merged1 = Object.assign(arg0);
+      setState(obj);
+    });
+    return tmp3Result;
+  }
+}
+_inherits(FullScreenOverlay, value.Component);
+const entry = {
+  key: "createContainerStyle",
+  value: function createContainerStyle() {
+    let alignItems;
+    let height;
+    let justifyContent;
+    let opacity;
+    let width;
+    const Dimensions = react_native.Dimensions;
+    ({ opacity, justifyContent, alignItems } = this.state);
+    const value = Dimensions.get("window");
+    const obj = { opacity, width, height, justifyContent, alignItems };
+    ({ width, height } = value);
+    const merged = Object.assign(container.container);
+    return obj;
+  }
 };
+let items = [
+  entry,
+  {
+    key: "renderDebug",
+    value: function renderDebug() {
+      return null;
+    }
+  },
+  {
+    key: "render",
+    value: function render() {
+      let growToWindow;
+      let height;
+      let jsx2;
+      let jsxResult;
+      let jsxs;
+      let marginLeft;
+      let num4;
+      let resizeMode;
+      let tmp6;
+      let tmp7;
+      let uri;
+      let width;
+      const self = this;
+      const state = this.state;
+      ({ uri, growToWindow, marginLeft } = state);
+      let num = 0;
+      ({ width, height, resizeMode } = state);
+      if (undefined !== marginLeft) {
+        num = marginLeft;
+      }
+      const marginRight = state.marginRight;
+      let num2 = 0;
+      if (undefined !== marginRight) {
+        num2 = marginRight;
+      }
+      const marginTop = state.marginTop;
+      let num3 = 0;
+      if (undefined !== marginTop) {
+        num3 = marginTop;
+      }
+      const marginBottom = state.marginBottom;
+      size = { width, height, marginTop: num3, marginRight: num2, marginBottom: num4, marginLeft: num };
+      num4 = 0;
+      if (undefined !== marginBottom) {
+        num4 = marginBottom;
+      }
+      if (growToWindow) {
+        const Dimensions = react_native.Dimensions;
+        const value = Dimensions.get("window");
+        ({ width: obj.width, height: obj.height } = value);
+      }
+      const jsx = Fragment.jsx;
+      if (uri) {
+        let tmp8 = null;
+        const Image = tmp4.Image;
+        const obj3 = { uri };
+        if (growToWindow) {
+          tmp8 = resizeMode;
+        }
+        jsxResult = <Image source={obj3} style={size} resizeMode={tmp8} />;
+        tmp6 = tmp4;
+        tmp7 = tmp3;
+      } else {
+        jsxResult = <tmp4.View />;
+        tmp6 = tmp4;
+        tmp7 = tmp3;
+      }
+      ({ jsxs, Fragment, jsx: jsx2 } = tmp7);
+      const items = [, ];
+      const obj5 = { style: self.createContainerStyle(), pointerEvents: "none", children: jsxResult };
+      items[0] = jsx2(tmp6.View, obj5);
+      items[1] = self.renderDebug();
+      return <>{items}</>;
+    }
+  }
+];
+
+export default _createClass(FullScreenOverlay, items);

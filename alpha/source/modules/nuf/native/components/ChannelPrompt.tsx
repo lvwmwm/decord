@@ -114,7 +114,7 @@ export default function ChannelPrompt(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -170,7 +170,7 @@ export default function ChannelPrompt(guildId) {
           }
           closure_129_6(false);
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp28) {
         hasSkip = tmp28;

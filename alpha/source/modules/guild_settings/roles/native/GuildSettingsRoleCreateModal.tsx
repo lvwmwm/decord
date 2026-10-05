@@ -1,9 +1,9 @@
-// Module ID: 17755
-// Function ID: 17756
+// Module ID: 17779
+// Function ID: 17780
 // Name: GuildSettingsRoleCreateModal
-// Dependencies: [5, 32, 19, 17, 2070, 2106, 1377, 9248, 17756, 1085, 21, 4890, 6068, 587, 1252, 5070, 558, 576, 1126, 4886, 17754, 504, 38, 4514, 1490, 6110, 6010, 5705, 4567, 17753, 4854, 16227, 1987, 5593, 6098, 6074, 5993, 14419, 1103, 5594, 17760, 17761, 9247, 17762, 6471, 5770, 5779, 6535, 5590, 6496, 2]
+// Dependencies: [5, 32, 19, 17, 2070, 2106, 1377, 9248, 17780, 1085, 21, 4890, 6068, 587, 1252, 5070, 558, 576, 1126, 4886, 17778, 504, 38, 4514, 1490, 6110, 6010, 5705, 4567, 17777, 4854, 16231, 1987, 5593, 6098, 6074, 5993, 14423, 1103, 5594, 17784, 17785, 9247, 17786, 6471, 5770, 5779, 6535, 5590, 6496, 2]
 
-// Module 17755 (GuildSettingsRoleCreateModal)
+// Module 17779 (GuildSettingsRoleCreateModal)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -21,7 +21,7 @@ import react_native from "react-native" /* 5779 */;
 import NavigatorHeader from "NavigatorHeader" /* 6010 */;
 import NavigatorConstants from "NavigatorConstants" /* 6068 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
-import GuildSettingsRoleCreateModalActionCreatorsDefault from "GuildSettingsRoleCreateModalActionCreators" /* 17754 */;
+import GuildSettingsRoleCreateModalActionCreatorsDefault from "GuildSettingsRoleCreateModalActionCreators" /* 17778 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -29,7 +29,7 @@ import react_native2 from "react-native" /* 17 */;
 import GuildRoleStore from "GuildRoleStore" /* 2106 */;
 import UserStore from "UserStore" /* 1377 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9248 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 17756 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 17780 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4890 */;
@@ -146,7 +146,7 @@ function RoleCreateScene() {
           let obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c2;
@@ -238,7 +238,7 @@ function RoleCreateScene() {
               c2 = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp22) {
           if (0 === c2) {
@@ -256,7 +256,7 @@ function RoleCreateScene() {
     metroImportAll.dismiss();
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { color, onSelect };
-    obj.openLazy(asyncRequire(16227, dependencyMap.paths), "RoleColorPicker", obj2);
+    obj.openLazy(asyncRequire(16231, dependencyMap.paths), "RoleColorPicker", obj2);
   }, items2);
   let tmp16 = closure_22;
   let tmp17 = closure_33;
@@ -634,8 +634,8 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const obj8 = { onSelect: tmp11, location: constants2.GUILD_ROLE_CREATION_MODAL, guildId: guild.id };
         cResult[12] = guild.id;
         cResult[13] = tmp11;
-        cResult[14] = closure_21(role(17760), obj8);
-        const tmp22 = closure_21(role(17760), obj8);
+        cResult[14] = closure_21(role(17784), obj8);
+        const tmp22 = closure_21(role(17784), obj8);
       }
     }
     const fn2 = function o(arg0) {

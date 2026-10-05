@@ -37,7 +37,7 @@ let obj = function _runScrollBenchmark() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -119,7 +119,7 @@ let obj = function _runScrollBenchmark() {
             return obj;
           }
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp27) {
           c7 = 3;
           throw tmp27;
@@ -185,7 +185,7 @@ export const useFlatListBenchmark = function useFlatListBenchmark(arg0, arg1, ar
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -219,7 +219,7 @@ export const useFlatListBenchmark = function useFlatListBenchmark(arg0, arg1, ar
                   closure_2_1(obj5);
                   closure_2_4(false);
                   c3 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               }
             } else if (arg0 === 1) {

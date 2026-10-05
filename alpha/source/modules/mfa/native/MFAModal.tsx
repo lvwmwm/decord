@@ -1,10 +1,10 @@
-// Module ID: 15495
-// Function ID: 15496
+// Module ID: 15499
+// Function ID: 15500
 // Name: MFAModal
-// Dependencies: [5, 109, 19, 17, 21, 558, 576, 6439, 5093, 1126, 15496, 6880, 4809, 6010, 15497, 15498, 15503, 15506, 15507, 15508, 6496, 5708, 2]
+// Dependencies: [5, 109, 19, 17, 21, 558, 576, 6439, 5093, 1126, 15500, 6880, 4809, 6010, 15501, 15502, 15507, 15510, 15511, 15512, 6496, 5708, 2]
 // Exports: openMFAModal
 
-// Module 15495 (MFAModal)
+// Module 15499 (MFAModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
 import AssetRegistryDefault from "AssetRegistry" /* 4809 */;
@@ -13,7 +13,7 @@ import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 
 import NavigatorHeader from "NavigatorHeader" /* 6010 */;
 import MFAUtils from "MFAUtils" /* 6439 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 6880 */;
-import MfaStepsTypes from "MfaStepsTypes" /* 15496 */;
+import MfaStepsTypes from "MfaStepsTypes" /* 15500 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -150,7 +150,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((cancel) => {
           }
         }
       }
-      const obj3 = { name: tmp(15496).MfaScreens.SELECT, params: obj4 };
+      const obj3 = { name: tmp(15500).MfaScreens.SELECT, params: obj4 };
       obj4 = { mfaChallenge: tmp13, finish: tmp22 };
       cResult[19] = tmp22;
       cResult[20] = tmp13;
@@ -192,7 +192,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((cancel) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -225,7 +225,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((cancel) => {
           const obj = closure_2_1(closure_2_2[8]);
           obj.popWithKey(MFA_MODAL_KEY);
           ticket = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp12) {
         ticket = 3;
@@ -279,7 +279,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((cancel) => {
       yield "IconComponent";
       data = tmp;
       ({ mfaType: c0, data: c1 } = closure_0);
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;

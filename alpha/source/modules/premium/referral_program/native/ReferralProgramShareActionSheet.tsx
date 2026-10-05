@@ -1,10 +1,10 @@
-// Module ID: 13244
-// Function ID: 13245
+// Module ID: 13246
+// Function ID: 13247
 // Name: ReferralProgramShareActionSheet
-// Dependencies: [5, 32, 19, 17, 1377, 6961, 1085, 21, 4890, 587, 504, 13245, 38, 1375, 10595, 13246, 1126, 4590, 13247, 6657, 6681, 1252, 6962, 4854, 13248, 1987, 4567, 6644, 4886, 5974, 13251, 13252, 10596, 5968, 5594, 6645, 9235, 10598, 2]
+// Dependencies: [5, 32, 19, 17, 1377, 6961, 1085, 21, 4890, 587, 504, 13247, 38, 1375, 10595, 13248, 1126, 4590, 13249, 6657, 6681, 1252, 6962, 4854, 13250, 1987, 4567, 6644, 4886, 5974, 13253, 13254, 10596, 5968, 5594, 6645, 9235, 10598, 2]
 // Exports: default
 
-// Module 13244 (ReferralProgramShareActionSheet)
+// Module 13246 (ReferralProgramShareActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -12,7 +12,7 @@ import intl8 from "intl" /* 1126 */;
 import GlobalUtils from "GlobalUtils" /* 1375 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4590 */;
 import makeUserListPillDataDefault from "makeUserListPillData" /* 10595 */;
-import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 13247 */;
+import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 13249 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -193,7 +193,7 @@ export default function ReferralProgramShareActionSheet() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -243,7 +243,7 @@ export default function ReferralProgramShareActionSheet() {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp16) {
           if (0 === c3) {

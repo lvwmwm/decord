@@ -1,16 +1,16 @@
-// Module ID: 16282
-// Function ID: 16283
+// Module ID: 16286
+// Function ID: 16287
 // Name: GuildsBarSeparator
-// Dependencies: [19, 21, 4890, 587, 558, 576, 15945, 4612, 6570, 4580, 5976, 2]
+// Dependencies: [19, 21, 4890, 587, 558, 576, 15949, 4612, 6570, 4580, 5976, 2]
 
-// Module 16282 (GuildsBarSeparator)
+// Module 16286 (GuildsBarSeparator)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 4580 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
 import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6570 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15945 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 15949 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

@@ -1,10 +1,10 @@
-// Module ID: 14700
-// Function ID: 14701
+// Module ID: 14704
+// Function ID: 14705
 // Name: FamilyCenterTopActivity
-// Dependencies: [19, 17, 1377, 7048, 21, 4890, 587, 573, 4854, 14701, 1987, 14702, 9442, 1126, 2493, 4886, 1188, 5971, 2]
+// Dependencies: [19, 17, 1377, 7048, 21, 4890, 587, 573, 4854, 14705, 1987, 14706, 9442, 1126, 2493, 4886, 1188, 5971, 2]
 // Exports: default
 
-// Module 14700 (FamilyCenterTopActivity)
+// Module 14704 (FamilyCenterTopActivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
@@ -66,7 +66,7 @@ export default function FamilyCenterTopActivity() {
   const callback = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { topUserActivities: stateFromStores };
-    obj.openLazy(asyncRequire(14701, dependencyMap.paths), "FamilyCenterTopUsers", obj2);
+    obj.openLazy(asyncRequire(14705, dependencyMap.paths), "FamilyCenterTopUsers", obj2);
   }, items2);
   if (0 !== stateFromStores.length) {
     let tmp9 = stateFromStores.length > 0;
@@ -86,7 +86,7 @@ export default function FamilyCenterTopActivity() {
               user = user.getUser(user_id.user_id);
               let tmp2 = null;
               if (null != user) {
-                const obj = { user, size: closure_0(stateFromStores1[16]).AvatarSizes.SMALL, guildId: "Array" };
+                const obj = { user, size: closure_0(stateFromStores1[16]).AvatarSizes.SMALL, guildId: "r" };
                 const Avatar = closure_0(stateFromStores1[16]).Avatar;
                 tmp2 = closure_1_7(Avatar, obj, user.id);
               }

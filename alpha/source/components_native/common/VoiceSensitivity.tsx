@@ -649,7 +649,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((auto) => {
             obj = { value, done: true };
             return obj;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -684,7 +684,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((auto) => {
                 mediaEngine.on(_true(first[18]).MediaEngineEvent.VoiceActivity, closure_1_12);
               }
               c2 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp16) {
             c2 = 3;

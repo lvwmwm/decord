@@ -1,9 +1,9 @@
-// Module ID: 14851
-// Function ID: 14852
+// Module ID: 14855
+// Function ID: 14856
 // Name: BountiesModalTimer
 // Dependencies: [19, 17, 21, 5600, 4612, 8136, 4890, 587, 1369, 558, 576, 4891, 4886, 8962, 2]
 
-// Module 14851 (BountiesModalTimer)
+// Module 14855 (BountiesModalTimer)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4612 */;

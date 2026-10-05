@@ -531,7 +531,7 @@ let closure_5 = {
     let obj;
     data = data.data;
     if (null == data) {
-      obj = { message_identity: "unknown", socket_kind: "application" };
+      obj = { message_identity: "unknown", socket_kind: "Boolean" };
     } else {
       const url = data.url;
       let tmp58 = null;

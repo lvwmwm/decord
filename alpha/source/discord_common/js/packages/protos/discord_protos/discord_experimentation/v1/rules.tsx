@@ -10,7 +10,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9, obj;
+let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, obj;
 
 let tmp;
 let tmp2;
@@ -725,7 +725,7 @@ class Filter$Type extends MessageType3 {
       const joined7 = internalBinaryWrite8Result.join();
     }
     if ("userLocale" === negate.filter.oneofKind) {
-      internalBinaryWrite9 = overrideType3.internalBinaryWrite;
+      const internalBinaryWrite9 = overrideType3.internalBinaryWrite;
       const userLocale = negate.filter.userLocale;
       const tagResult8 = tag.tag(10, _mod1198.WireType.LengthDelimited);
       const internalBinaryWrite9Result = internalBinaryWrite9(userLocale, tagResult8.fork(), writeUnknownFields);

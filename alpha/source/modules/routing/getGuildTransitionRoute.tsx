@@ -1,7 +1,7 @@
 // Module ID: 6717
 // Function ID: 6718
 // Name: getGuildTransitionRoute
-// Dependencies: [2054, 6591, 6718, 2051, 4507, 2074, 2103, 6719, 1085, 2058, 6723, 6725, 6727, 2077, 6746, 2]
+// Dependencies: [6718, 2054, 6591, 2051, 4507, 2074, 2103, 6719, 1085, 2058, 6723, 6725, 6727, 2077, 6746, 2]
 // Exports: getGuildTransitionRoute
 
 // Module 6717 (getGuildTransitionRoute)
@@ -11,10 +11,10 @@ import FavoritesUtils from "FavoritesUtils" /* 2077 */;
 import OnboardingHomeUtils from "OnboardingHomeUtils" /* 6723 */;
 import canUseGuildSpace from "canUseGuildSpace" /* 6725 */;
 import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6727 */;
-import VibegrationsUtils from "VibegrationsUtils" /* 6746 */;
+import ConjureUtils from "ConjureUtils" /* 6746 */;
+import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 6718 */;
 import FavoriteStore from "FavoriteStore" /* 2054 */;
 import GuildOnboardingStore from "GuildOnboardingStore" /* 6591 */;
-import VibegrationsBuilderRouteStore from "VibegrationsBuilderRouteStore" /* 6718 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildChannelStore from "GuildChannelStore" /* 4507 */;
 import GuildStore from "GuildStore" /* 2074 */;
@@ -24,19 +24,19 @@ import size from "module_2" /* 2 */;
 
 const ME = Constants.ME;
 const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
-let result = size.fileFinishedImporting("modules/routing/getGuildTransitionRoute.tsx");
+const result = size.fileFinishedImporting("modules/routing/getGuildTransitionRoute.tsx");
 
 export const getGuildTransitionRoute = function getGuildTransitionRoute(id) {
-  const lastProjectId = VibegrationsBuilderRouteStore.getLastProjectId(id);
+  const lastProjectId = ConjureBuilderRouteStore.getLastProjectId(id);
   if (null != lastProjectId) {
     const guild = GuildStore.getGuild(id);
-    let result = null != guild;
-    if (result) {
-      const obj = VibegrationsUtils;
-      result = obj.canAccessVibegrations(guild, "getChannelIdForGuildTransition");
+    let canAccessConjureResult = null != guild;
+    if (canAccessConjureResult) {
+      const obj = ConjureUtils;
+      canAccessConjureResult = obj.canAccessConjure(guild, "getChannelIdForGuildTransition");
     }
-    if (result) {
-      const items = [StaticChannelRoute.VIBEGRATIONS, lastProjectId];
+    if (canAccessConjureResult) {
+      const items = [StaticChannelRoute.CONJURE, lastProjectId];
       return items;
     }
   }
@@ -93,16 +93,16 @@ export const getGuildTransitionRoute = function getGuildTransitionRoute(id) {
         return items4;
       }
     }
-    if (channelId === StaticChannelRoute.VIBEGRATIONS) {
+    if (channelId === StaticChannelRoute.CONJURE) {
       let tmp29;
       const guild1 = GuildStore.getGuild(id);
-      let result1 = null != guild1;
-      if (result1) {
-        const obj6 = VibegrationsUtils;
-        result1 = obj6.canAccessVibegrations(guild1, "getChannelIdForGuildTransition");
+      let canAccessConjureResult1 = null != guild1;
+      if (canAccessConjureResult1) {
+        const obj6 = ConjureUtils;
+        canAccessConjureResult1 = obj6.canAccessConjure(guild1, "getChannelIdForGuildTransition");
       }
       const items5 = [, ];
-      if (result1) {
+      if (canAccessConjureResult1) {
         items5[0] = channelId;
         items5[1] = null;
         tmp29 = items5;

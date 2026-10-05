@@ -29,7 +29,7 @@ let obj4;
 let obj5;
 let tmp;
 const defaultMVCPConfig = tmp(8371);
-const f109024 = (choice, originalIndex) => ({ choice, originalIndex });
+const f109170 = (choice, originalIndex) => ({ choice, originalIndex });
 let length = ["scrollable"];
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
@@ -137,7 +137,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
       if (choices == null) {
         choices = [];
       }
-      return choices.map(f109024);
+      return choices.map(f109170);
     };
     cResult[2] = option.choices;
     cResult[3] = fn;
@@ -281,7 +281,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
     if (choices == null) {
       choices = [];
     }
-    return choices.map(f109024);
+    return choices.map(f109170);
   });
   [first1, react] = react.useState(initChoiceIndex);
   let items = [option.choices];

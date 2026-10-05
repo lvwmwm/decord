@@ -1,10 +1,10 @@
-// Module ID: 17043
-// Function ID: 17044
+// Module ID: 17067
+// Function ID: 17068
 // Name: Pending
-// Dependencies: [19, 17, 21, 7905, 17044, 17045, 17046, 558, 576, 4729, 2]
+// Dependencies: [19, 17, 21, 7905, 17068, 17069, 17070, 558, 576, 4729, 2]
 // Exports: getPendingSource
 
-// Module 17043 (Pending)
+// Module 17067 (Pending)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

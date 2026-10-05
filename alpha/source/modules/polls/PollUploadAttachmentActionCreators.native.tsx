@@ -35,7 +35,7 @@ let obj = function _handlePollGifAttachmentAdd() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp36;
@@ -69,7 +69,7 @@ let obj = function _handlePollGifAttachmentAdd() {
           } else if (1 === file) {
             c6 = 0;
             c8 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } else if (2 === file) {
             if (arg0 === 1) {
               c8 = 3;
@@ -83,7 +83,7 @@ let obj = function _handlePollGifAttachmentAdd() {
               if (null == closure_3) {
                 c6 = 0;
                 c8 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } else {
                 const obj9 = closure_132_0(closure_132_2[3]);
                 filePathForGif = obj9.getFilePathForGif(filename);
@@ -107,7 +107,7 @@ let obj = function _handlePollGifAttachmentAdd() {
               if (null == tmp36) {
                 c6 = 0;
                 c8 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } else {
                 const obj6 = closure_132_0(closure_132_2[5]);
                 writeFileResult = obj6.getImageDimensionsIfMissing(tmp36);
@@ -173,7 +173,7 @@ obj = function _removePollUploadAttachment() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;
@@ -213,7 +213,7 @@ obj = function _removePollUploadAttachment() {
             c6 = 0;
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp5) {
         let closure_5 = tmp5;
@@ -243,7 +243,7 @@ obj = function _removeAllPollUploadAttachments() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -282,7 +282,7 @@ obj = function _removeAllPollUploadAttachments() {
             c4 = 0;
           }
           c1 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp12) {
         let closure_3 = tmp12;

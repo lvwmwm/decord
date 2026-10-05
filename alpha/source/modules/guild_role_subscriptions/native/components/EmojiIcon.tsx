@@ -1,15 +1,15 @@
-// Module ID: 15054
-// Function ID: 15055
+// Module ID: 15058
+// Function ID: 15059
 // Name: EmojiIcon
-// Dependencies: [19, 21, 15055, 5974, 9904, 6625, 1402, 2]
+// Dependencies: [19, 21, 15059, 5974, 9904, 6625, 1402, 2]
 // Exports: default
 
-// Module 15054 (EmojiIcon)
+// Module 15058 (EmojiIcon)
 import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5974 */;
 import EmojiDefault from "Emoji" /* 6625 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9904 */;
-import useEmojiByIdOrName from "useEmojiByIdOrName" /* 15055 */;
+import useEmojiByIdOrName from "useEmojiByIdOrName" /* 15059 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 

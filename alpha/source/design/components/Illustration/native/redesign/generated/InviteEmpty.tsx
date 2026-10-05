@@ -1,10 +1,10 @@
-// Module ID: 17794
-// Function ID: 17795
+// Module ID: 17818
+// Function ID: 17819
 // Name: InviteEmpty
-// Dependencies: [19, 17, 21, 7905, 10688, 17795, 10687, 558, 576, 4729, 2]
+// Dependencies: [19, 17, 21, 7905, 10688, 17819, 10687, 558, 576, 4729, 2]
 // Exports: getInviteEmptySource
 
-// Module 17794 (InviteEmpty)
+// Module 17818 (InviteEmpty)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

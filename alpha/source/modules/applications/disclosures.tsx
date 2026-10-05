@@ -47,7 +47,7 @@ obj = function _ackDisclosures() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -79,7 +79,7 @@ obj = function _ackDisclosures() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp4) {
           c2 = 3;

@@ -1,9 +1,9 @@
-// Module ID: 17035
-// Function ID: 17036
+// Module ID: 17059
+// Function ID: 17060
 // Name: MessageRequestMutualServers
-// Dependencies: [19, 17, 21, 4890, 558, 576, 5971, 17036, 1126, 12284, 4886, 5909, 2]
+// Dependencies: [19, 17, 21, 4890, 558, 576, 5971, 17060, 1126, 12284, 4886, 5909, 2]
 
-// Module 17035 (MessageRequestMutualServers)
+// Module 17059 (MessageRequestMutualServers)
 import react_native from "react-native" /* 17 */;
 import GuildIconDefault from "GuildIcon" /* 5971 */;
 import react from "react" /* 19 */;
@@ -41,7 +41,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     str = textVariant;
   }
   const tmp4 = closure_6();
-  const tmpResult = iconSize(17036);
+  const tmpResult = iconSize(17060);
   const mutualGuildsForMessageRequests = tmpResult.useMutualGuildsForMessageRequests(userId);
   if (cResult[0] === mutualGuildsForMessageRequests.length) {
     if (cResult[1] === iconSize) {
@@ -190,7 +190,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const suffix = textVariant.suffix;
   const tmp3 = closure_6();
-  let obj = iconSize(17036);
+  let obj = iconSize(17060);
   const mutualGuildsForMessageRequests = obj.useMutualGuildsForMessageRequests(userId);
   const substr = mutualGuildsForMessageRequests.slice(0, 3);
   if (mutualGuildsForMessageRequests.length > 0) {

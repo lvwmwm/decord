@@ -1,9 +1,9 @@
-// Module ID: 16800
-// Function ID: 16801
+// Module ID: 16819
+// Function ID: 16820
 // Name: Separators
 // Dependencies: [19, 17, 7513, 21, 4890, 558, 576, 2]
 
-// Module 16800 (Separators)
+// Module 16819 (Separators)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

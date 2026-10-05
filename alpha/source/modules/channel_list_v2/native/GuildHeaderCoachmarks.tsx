@@ -1,18 +1,18 @@
-// Module ID: 16077
-// Function ID: 16078
+// Module ID: 16081
+// Function ID: 16082
 // Name: GuildHeaderCoachmarks
-// Dependencies: [32, 19, 4509, 1085, 2048, 21, 558, 576, 504, 16078, 16080, 12170, 16087, 12163, 12164, 2036, 6891, 12160, 16088, 16089, 16091, 2]
+// Dependencies: [32, 19, 4509, 1085, 2048, 21, 558, 576, 504, 16082, 16084, 12170, 16091, 12163, 12164, 2036, 6891, 12160, 16092, 16093, 16095, 2]
 
-// Module 16077 (GuildHeaderCoachmarks)
+// Module 16081 (GuildHeaderCoachmarks)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import dismissible_content from "dismissible_content" /* 2036 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
 import useBoostToUnlockFeaturedPowerupDefault from "useBoostToUnlockFeaturedPowerup" /* 12163 */;
 import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12170 */;
-import useShouldShowGuildThemeMemberCoachmarkDefault from "useShouldShowGuildThemeMemberCoachmark" /* 16078 */;
-import useGuildThemeNuxTriggerDefault from "useGuildThemeNuxTrigger" /* 16080 */;
-import useIsCurrentUserEligibleForPowerupUpsellsDefault from "useIsCurrentUserEligibleForPowerupUpsells" /* 16087 */;
+import useShouldShowGuildThemeMemberCoachmarkDefault from "useShouldShowGuildThemeMemberCoachmark" /* 16082 */;
+import useGuildThemeNuxTriggerDefault from "useGuildThemeNuxTrigger" /* 16084 */;
+import useIsCurrentUserEligibleForPowerupUpsellsDefault from "useIsCurrentUserEligibleForPowerupUpsells" /* 16091 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4509 */;
@@ -109,11 +109,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items1 = [guild];
   const obj = guild(504);
   const stateFromStores = obj.useStateFromStores(items, () => PermissionStore.can(Permissions.MANAGE_GUILD, guild), items1);
-  const tmp5 = stateFromStores(16078)(guild.id);
+  const tmp5 = stateFromStores(16082)(guild.id);
   dependencyMap = tmp5;
-  let tmp6 = stateFromStores(16080)(guild.id);
+  let tmp6 = stateFromStores(16084)(guild.id);
   const tmp7 = stateFromStores(12170)(guild.id);
-  const tmp8 = stateFromStores(16087)();
+  const tmp8 = stateFromStores(16091)();
   const tmp9 = stateFromStores(12163)(guild.id);
   const items2 = [stateFromStores, guild.premiumProgressBarEnabled, tmp5];
   const tmp10 = stateFromStores(12164)();
@@ -152,13 +152,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = tmp13Result[0];
   }
   if (tmp(2036).DismissibleContent.BOOST_PROGRESS_BAR_MOBILE_COACHMARK === first) {
-    return jsx(stateFromStores(16088), { targetRef, guild, markAsDismissed: tmp16 });
+    return jsx(stateFromStores(16092), { targetRef, guild, markAsDismissed: tmp16 });
   } else if (tmp(2036).DismissibleContent.GUILD_THEME_MEMBER_COACHMARK === first) {
-    return jsx(stateFromStores(16089), { guildId: guild.id, targetRef, markAsDismissed: tmp16 });
+    return jsx(stateFromStores(16093), { guildId: guild.id, targetRef, markAsDismissed: tmp16 });
   } else if (tmp(2036).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK === first) {
     let tmp22 = null;
     if (null != tmp9) {
-      tmp22 = jsx(tmp4(16091), { guildId: guild.id, powerup: tmp9, targetRef, markAsDismissed: tmp21 });
+      tmp22 = jsx(tmp4(16095), { guildId: guild.id, powerup: tmp9, targetRef, markAsDismissed: tmp21 });
     }
     return tmp22;
   } else {

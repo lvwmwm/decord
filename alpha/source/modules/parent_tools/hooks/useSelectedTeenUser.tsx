@@ -1,9 +1,9 @@
-// Module ID: 14697
-// Function ID: 14698
+// Module ID: 14701
+// Function ID: 14702
 // Name: useSelectedTeenUser
 // Dependencies: [1377, 7051, 7048, 558, 576, 8296, 573, 2]
 
-// Module 14697 (useSelectedTeenUser)
+// Module 14701 (useSelectedTeenUser)
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8296 */;
 import UserStore from "UserStore" /* 1377 */;
 import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7051 */;

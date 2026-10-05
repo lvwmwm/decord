@@ -191,7 +191,7 @@ const memoResult = react.memo((disabled) => {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -230,7 +230,7 @@ const memoResult = react.memo((disabled) => {
             sendMessageOptionsForReply = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -313,7 +313,7 @@ const memoResult = react.memo((disabled) => {
               obj.deletePendingReply(closure_1);
             }
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         }
       } catch (tmp46) {
@@ -427,7 +427,7 @@ const memoResult = react.memo((disabled) => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -465,7 +465,7 @@ const memoResult = react.memo((disabled) => {
               const result = obj.emitVoiceMessageRecorded(cancel(handleActionSheetChange[25]).VoiceMessageRecordingResult.CANCELLED_GESTURE_CONFLICT, tmp4.data.durationSecs, tmp4.startTimeMillis);
             }
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp20) {
             c3 = 3;
             throw tmp20;
@@ -545,7 +545,7 @@ const memoResult = react.memo((disabled) => {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -639,7 +639,7 @@ const memoResult = react.memo((disabled) => {
             }
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp51) {
           voiceMessageAnimationState = tmp51;
           if (0 === c3) {
@@ -706,7 +706,7 @@ const memoResult = react.memo((disabled) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -739,7 +739,7 @@ const memoResult = react.memo((disabled) => {
           ({ LOCKED: arr[0], LOCKED: arr[1] } = constants);
           const result = closure_128_2.set(items);
           c2 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp11) {
         c2 = 3;

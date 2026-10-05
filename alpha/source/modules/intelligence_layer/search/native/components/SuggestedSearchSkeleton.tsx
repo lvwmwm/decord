@@ -1,9 +1,9 @@
-// Module ID: 16849
-// Function ID: 16850
+// Module ID: 16868
+// Function ID: 16869
 // Name: SuggestedSearchSkeleton
 // Dependencies: [19, 17, 11988, 7513, 21, 4890, 587, 558, 576, 4612, 4891, 2]
 
-// Module 16849 (SuggestedSearchSkeleton)
+// Module 16868 (SuggestedSearchSkeleton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;

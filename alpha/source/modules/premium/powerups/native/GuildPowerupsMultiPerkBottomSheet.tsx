@@ -541,7 +541,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                     class P {
                       constructor(arg0) {
                         obj = { guildId, powerup: guildId, forceStaticImage: closure_1.forceStaticImages };
-                        return jsx(f60481, obj, guildId.skuId);
+                        return jsx(f60509, obj, guildId.skuId);
                       }
                     }
                     tmp27[2] = onDismiss;
@@ -557,7 +557,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               class P {
                 constructor(arg0) {
                   obj = { guildId, powerup: guildId, forceStaticImage: closure_1.forceStaticImages };
-                  return jsx(f60481, obj, guildId.skuId);
+                  return jsx(f60509, obj, guildId.skuId);
                 }
               }
               tmp23[0] = tmp7;
@@ -574,7 +574,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             class P {
               constructor(arg0) {
                 obj = { guildId, powerup: guildId, forceStaticImage: closure_1.forceStaticImages };
-                return jsx(f60481, obj, guildId.skuId);
+                return jsx(f60509, obj, guildId.skuId);
               }
             }
             const obj3 = { style: tmp14, children: tmp15 };
@@ -595,7 +595,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           class P {
             constructor(arg0) {
               obj = { guildId, powerup: guildId, forceStaticImage: closure_1.forceStaticImages };
-              return jsx(f60481, obj, guildId.skuId);
+              return jsx(f60509, obj, guildId.skuId);
             }
           }
           cResult[8] = tmp6.forceStaticImages;
@@ -607,7 +607,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         class P {
           constructor(arg0) {
             obj = { guildId, powerup: guildId, forceStaticImage: closure_1.forceStaticImages };
-            return jsx(f60481, obj, guildId.skuId);
+            return jsx(f60509, obj, guildId.skuId);
           }
         }
         cResult[12] = tmp6.forceStaticImages;

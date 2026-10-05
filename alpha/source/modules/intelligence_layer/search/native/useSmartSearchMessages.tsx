@@ -1,9 +1,9 @@
-// Module ID: 16877
-// Function ID: 16878
+// Module ID: 16896
+// Function ID: 16897
 // Name: useSmartSearchMessages
-// Dependencies: [19, 12004, 7513, 558, 576, 11997, 16783, 12005, 504, 11989, 2]
+// Dependencies: [19, 12004, 7513, 558, 576, 11997, 16802, 12005, 504, 11989, 2]
 
-// Module 16877 (useSmartSearchMessages)
+// Module 16896 (useSmartSearchMessages)
 import SearchConstants from "SearchConstants" /* 7513 */;
 import SmartSearchTypes from "SmartSearchTypes" /* 11989 */;
 import SmartSearchUtils from "SmartSearchUtils" /* 11997 */;
@@ -32,7 +32,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp5 = cResult[2];
     }
     _require = tmp5;
-    const tmpResult = tmp(16783);
+    const tmpResult = tmp(16802);
     const smartSearchStatus = tmpResult.useSmartSearchStatus(tmp5);
     let guildId;
     const useIsNlpSearchEnabled = tmp(12005).useIsNlpSearchEnabled;

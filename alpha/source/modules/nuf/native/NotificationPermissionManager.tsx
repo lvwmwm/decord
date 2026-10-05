@@ -1,9 +1,9 @@
-// Module ID: 17570
-// Function ID: 17571
+// Module ID: 17594
+// Function ID: 17595
 // Name: NotificationPermissionManager
-// Dependencies: [5, 4511, 502, 2051, 5071, 12052, 12053, 1085, 5099, 4854, 17571, 1987, 1260, 4461, 7282, 12055, 12470, 1252, 1369, 6613, 15302, 1105, 2]
+// Dependencies: [5, 4511, 502, 2051, 5071, 12052, 12053, 1085, 5099, 4854, 17595, 1987, 1260, 4461, 7282, 12055, 12470, 1252, 1369, 6613, 15306, 1105, 2]
 
-// Module 17570 (NotificationPermissionManager)
+// Module 17594 (NotificationPermissionManager)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
 import _modDef4461 from "module_4461" /* 4461 */;
@@ -60,7 +60,7 @@ let obj = function _shouldShowPrompt() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -122,7 +122,7 @@ obj = function _shouldShowReactivationPrompt() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -180,7 +180,7 @@ function showPrompt(arg0, arg1, arg2) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj2 = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.PUSH_NOTIFICATION_REACTIVATION_PROMPT, impressionProperties: { action_location: location }, location };
     ActionSheetActionCreatorsDefault;
-    const tmp3 = asyncRequire(17571, dependencyMap.paths);
+    const tmp3 = asyncRequire(17595, dependencyMap.paths);
     openLazy(tmp3, authStore, obj2);
   }, arg2);
 }
@@ -202,7 +202,7 @@ obj = function _logNotificationPermissionStatus2() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -248,7 +248,7 @@ obj = function _logNotificationPermissionStatus2() {
           }
           track(NOTIFICATION_PERMISSION_STATUS, obj7);
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp10) {
         c3 = 3;
@@ -302,7 +302,7 @@ class NotificationPermissionManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -345,7 +345,7 @@ class NotificationPermissionManager extends AutomaticLifecycleManager {
             return obj;
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp7) {
           c2 = 3;
@@ -371,7 +371,7 @@ class NotificationPermissionManager extends AutomaticLifecycleManager {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -392,7 +392,7 @@ class NotificationPermissionManager extends AutomaticLifecycleManager {
                 ({ message: c0, optimistic: c1, isPushNotification: c2, sendMessageOptions: c3 } = closure_0);
                 c3 = 1;
                 c4 = 1;
-                return { value: "Reflect", done: true };
+                return { value: "Set", done: true };
               }
             } else {
               let tmp5;
@@ -422,7 +422,7 @@ class NotificationPermissionManager extends AutomaticLifecycleManager {
                     }
                   }
                   c4 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } else if (arg0 === 1) {
                 c4 = 3;
@@ -466,7 +466,7 @@ class NotificationPermissionManager extends AutomaticLifecycleManager {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -485,7 +485,7 @@ class NotificationPermissionManager extends AutomaticLifecycleManager {
                 invite = invite.invite;
                 c4 = 1;
                 c5 = 1;
-                return { value: "Reflect", done: true };
+                return { value: "Set", done: true };
               }
             } else {
               let tmp5;
@@ -516,7 +516,7 @@ class NotificationPermissionManager extends AutomaticLifecycleManager {
                     }
                   }
                   c5 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "IconComponent", done: null };
                 }
               } else if (2 === c4) {
                 if (arg0 === 1) {
@@ -617,7 +617,7 @@ class NotificationPermissionManager extends AutomaticLifecycleManager {
         }
         await "IconComponent";
         relationship = relationship.relationship;
-        return "Reflect";
+        return "Set";
       })();
       iter.next();
       return iter;
@@ -637,7 +637,7 @@ class NotificationPermissionManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -659,7 +659,7 @@ class NotificationPermissionManager extends AutomaticLifecycleManager {
               closure_2 = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else {
             if (1 === c3) {
@@ -701,7 +701,7 @@ class NotificationPermissionManager extends AutomaticLifecycleManager {
               }
               closure_130_1.previousAppState = state;
               c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
             if (state === closure_0(closure_2[21]).AppStates.ACTIVE) {
               c3 = 3;
@@ -732,7 +732,7 @@ class NotificationPermissionManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -766,7 +766,7 @@ class NotificationPermissionManager extends AutomaticLifecycleManager {
             obj = tmp(c2[15]);
             const result = obj.updateNotificationAuthorizationStatus(tmp);
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp13) {
           c3 = 3;

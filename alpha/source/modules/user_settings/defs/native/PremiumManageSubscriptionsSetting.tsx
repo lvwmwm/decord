@@ -1,15 +1,15 @@
-// Module ID: 14791
-// Function ID: 14792
+// Module ID: 14795
+// Function ID: 14796
 // Name: PremiumManageSubscriptionsSetting
-// Dependencies: [19, 1085, 558, 576, 6923, 11092, 4528, 13200, 11129, 1126, 14792, 14790, 2]
+// Dependencies: [19, 1085, 558, 576, 6923, 11092, 4528, 13202, 11129, 1126, 14796, 14794, 2]
 
-// Module 14791 (PremiumManageSubscriptionsSetting)
+// Module 14795 (PremiumManageSubscriptionsSetting)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import PremiumUtils from "PremiumUtils" /* 4528 */;
 import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 6923 */;
-import SubscriptionIcon from "SubscriptionIcon" /* 14792 */;
+import SubscriptionIcon from "SubscriptionIcon" /* 14796 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;
@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 
 let tmp;
-const MobileNitroManageSubscriptionsSettingsExperiment = tmp(13200);
+const MobileNitroManageSubscriptionsSettingsExperiment = tmp(13202);
 const UserSettingsSections = Constants.UserSettingsSections;
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {

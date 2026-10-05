@@ -1,16 +1,16 @@
-// Module ID: 17079
-// Function ID: 17080
+// Module ID: 17103
+// Function ID: 17104
 // Name: MobileSurvey
-// Dependencies: [5, 19, 5081, 1085, 21, 4890, 558, 576, 504, 1252, 15582, 1126, 4565, 1188, 587, 8756, 5783, 2]
+// Dependencies: [5, 19, 5081, 1085, 21, 4890, 558, 576, 504, 1252, 15586, 1126, 4565, 1188, 587, 8756, 5783, 2]
 
-// Module 17079 (MobileSurvey)
+// Module 17103 (MobileSurvey)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1188 */;
 import LinkingDefault from "Linking" /* 4565 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8756 */;
-import SurveyActionCreators from "SurveyActionCreators" /* 15582 */;
+import SurveyActionCreators from "SurveyActionCreators" /* 15586 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import SurveyStore from "SurveyStore" /* 5081 */;
@@ -76,7 +76,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -105,7 +105,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 return obj;
               }
               c0 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             } catch (tmp8) {
               c0 = 3;
               throw tmp8;
@@ -239,7 +239,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -268,7 +268,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 return obj;
               }
               c0 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             } catch (tmp8) {
               c0 = 3;
               throw tmp8;

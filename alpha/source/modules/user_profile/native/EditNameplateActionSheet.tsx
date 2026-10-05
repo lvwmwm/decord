@@ -1,9 +1,9 @@
-// Module ID: 14461
-// Function ID: 14462
+// Module ID: 14465
+// Function ID: 14466
 // Name: EditNameplateActionSheet
-// Dependencies: [32, 19, 17, 7068, 1978, 2112, 1085, 21, 4890, 587, 558, 576, 7841, 6657, 6681, 1252, 7835, 7842, 1126, 4886, 7843, 6645, 10465, 504, 14462, 7837, 14463, 13011, 13012, 7844, 8473, 5605, 10999, 2]
+// Dependencies: [32, 19, 17, 7068, 1978, 2112, 1085, 21, 4890, 587, 558, 576, 7841, 6657, 6681, 1252, 7835, 7842, 1126, 4886, 7843, 6645, 10465, 504, 14466, 7837, 14467, 13013, 13014, 7844, 8473, 5605, 10999, 2]
 
-// Module 14461 (EditNameplateActionSheet)
+// Module 14465 (EditNameplateActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,7 +15,7 @@ import useShopProductItems from "useShopProductItems" /* 7842 */;
 import useCollectiblesDataDefault from "useCollectiblesData" /* 7844 */;
 import NameplateDummyUserPreview from "NameplateDummyUserPreview" /* 8473 */;
 import NameplatePreview from "NameplatePreview" /* 10999 */;
-import EditNameplateSection from "EditNameplateSection" /* 14463 */;
+import EditNameplateSection from "EditNameplateSection" /* 14467 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7068 */;

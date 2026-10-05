@@ -1,9 +1,9 @@
-// Module ID: 15860
-// Function ID: 15861
+// Module ID: 15864
+// Function ID: 15865
 // Name: Auth
-// Dependencies: [32, 19, 17, 12056, 1085, 21, 15861, 15862, 6010, 15871, 6498, 6439, 4890, 587, 558, 576, 15913, 6432, 1632, 6463, 15914, 6461, 6496, 1370, 1126, 15915, 6984, 15919, 2]
+// Dependencies: [32, 19, 17, 12056, 1085, 21, 15865, 15866, 6010, 15875, 6498, 6439, 4890, 587, 558, 576, 15917, 6432, 1632, 6463, 15918, 6461, 6496, 1370, 1126, 15919, 6984, 15923, 2]
 
-// Module 15860 (Auth)
+// Module 15864 (Auth)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -11,17 +11,17 @@ import useWideAuthViewDefault from "useWideAuthView" /* 6432 */;
 import MFAUtils from "MFAUtils" /* 6439 */;
 import BackgroundImageDefault from "BackgroundImage" /* 6463 */;
 import _mod6498 from "module_6498" /* 6498 */;
-import RegistrationHandoff from "RegistrationHandoff" /* 15861 */;
-import RegistrationUtils from "RegistrationUtils" /* 15871 */;
-import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 15913 */;
-import AuthManagerDefault from "AuthManager" /* 15915 */;
-import useOrientationLockDefault from "useOrientationLock" /* 15919 */;
+import RegistrationHandoff from "RegistrationHandoff" /* 15865 */;
+import RegistrationUtils from "RegistrationUtils" /* 15875 */;
+import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 15917 */;
+import AuthManagerDefault from "AuthManager" /* 15919 */;
+import useOrientationLockDefault from "useOrientationLock" /* 15923 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import MultiAccountStore from "MultiAccountStore" /* 12056 */;
 import Fragment from "Fragment" /* 21 */;
-import RegistrationStepsUtils_mod from "RegistrationStepsUtils" /* 15862 */;
+import RegistrationStepsUtils_mod from "RegistrationStepsUtils" /* 15866 */;
 import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -43,7 +43,7 @@ const utils_PlatformUtils = tmp(1370);
 const KeyboardChatScrollView = tmp(1632);
 const react3 = tmp(6461);
 const Navigator3 = tmp(6496);
-const AssetRegistry = tmp(15914);
+const AssetRegistry = tmp(15918);
 function getInitialAuthRouteStack() {
   let items1;
   obj = RegistrationHandoff;

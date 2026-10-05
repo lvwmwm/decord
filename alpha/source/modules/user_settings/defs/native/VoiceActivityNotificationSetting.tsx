@@ -1,9 +1,9 @@
-// Module ID: 15322
-// Function ID: 15323
+// Module ID: 15326
+// Function ID: 15327
 // Name: VoiceActivityNotificationSetting
 // Dependencies: [7634, 1085, 4522, 11129, 1126, 2028, 1252, 2]
 
-// Module 15322 (VoiceActivityNotificationSetting)
+// Module 15326 (VoiceActivityNotificationSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;

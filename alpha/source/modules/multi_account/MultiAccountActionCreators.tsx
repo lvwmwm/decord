@@ -137,7 +137,7 @@ export const validateMultiAccountTokens = function validateMultiAccountTokens() 
     closure_3 = tmp;
     closure_2 = tmp4;
     id = closure_0.id;
-    return "Reflect";
+    return "Set";
   });
   const item = forEach(function() {
     return closure_0(...arguments);

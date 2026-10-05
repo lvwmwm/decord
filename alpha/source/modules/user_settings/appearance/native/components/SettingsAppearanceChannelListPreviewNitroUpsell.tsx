@@ -1,9 +1,9 @@
-// Module ID: 15117
-// Function ID: 15118
+// Module ID: 15121
+// Function ID: 15122
 // Name: SettingsAppearanceChannelListPreviewNitroUpsell
 // Dependencies: [19, 17, 4879, 1085, 21, 4612, 5605, 5597, 5598, 4890, 587, 558, 576, 6657, 6681, 8914, 8867, 1126, 1188, 5594, 504, 9647, 2]
 
-// Module 15117 (SettingsAppearanceChannelListPreviewNitroUpsell)
+// Module 15121 (SettingsAppearanceChannelListPreviewNitroUpsell)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import spring from "spring" /* 5597 */;

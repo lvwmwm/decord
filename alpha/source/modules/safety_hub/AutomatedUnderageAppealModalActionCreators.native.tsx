@@ -64,7 +64,7 @@ let obj = {
               let obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -135,7 +135,7 @@ let obj = {
                   }), obj8, closure_1_6);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp23) {
               c3 = 3;

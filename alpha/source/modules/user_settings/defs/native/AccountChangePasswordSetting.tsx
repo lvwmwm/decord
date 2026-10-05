@@ -1,9 +1,9 @@
-// Module ID: 14556
-// Function ID: 14557
+// Module ID: 14560
+// Function ID: 14561
 // Name: AccountChangePasswordSetting
-// Dependencies: [7634, 1085, 11129, 1126, 14557, 2]
+// Dependencies: [7634, 1085, 11129, 1126, 14561, 2]
 
-// Module 14556 (AccountChangePasswordSetting)
+// Module 14560 (AccountChangePasswordSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7634 */;

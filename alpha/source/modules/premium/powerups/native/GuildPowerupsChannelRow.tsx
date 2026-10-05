@@ -1,9 +1,9 @@
-// Module ID: 16143
-// Function ID: 16144
+// Module ID: 16147
+// Function ID: 16148
 // Name: GuildPowerupsChannelRow
-// Dependencies: [19, 17, 11697, 21, 558, 576, 12154, 4800, 587, 1188, 4890, 16092, 16144, 6652, 12150, 12167, 12016, 12138, 6681, 1126, 2525, 16145, 11919, 6651, 2]
+// Dependencies: [19, 17, 11697, 21, 558, 576, 12154, 4800, 587, 1188, 4890, 16096, 16148, 6652, 12150, 12167, 12016, 12138, 6681, 1126, 2525, 16149, 11919, 6651, 2]
 
-// Module 16143 (GuildPowerupsChannelRow)
+// Module 16147 (GuildPowerupsChannelRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,8 +12,8 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11697 */;
 import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 12138 */;
 import GuildPowerupsNotification from "GuildPowerupsNotification" /* 12154 */;
-import useGuildPowerupsCoachmarkDefault from "useGuildPowerupsCoachmark" /* 16092 */;
-import SidebarCoachmarkOverlay from "SidebarCoachmarkOverlay" /* 16144 */;
+import useGuildPowerupsCoachmarkDefault from "useGuildPowerupsCoachmark" /* 16096 */;
+import SidebarCoachmarkOverlay from "SidebarCoachmarkOverlay" /* 16148 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -237,7 +237,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       if (cResult[9] !== tmp15) {
         const obj3 = { name: tmp26, mode: tmp15 };
         const tmp31 = closure_5(guildId(12016).BaseChannelName, obj3);
-        const obj4 = { mode: tmp15, IconComponent: guildId(16145).BoostTier2Icon };
+        const obj4 = { mode: tmp15, IconComponent: guildId(16149).BoostTier2Icon };
         const BaseChannelIcon = tmp(12016).BaseChannelIcon;
         const tmp32 = closure_5(BaseChannelIcon, obj4);
         cResult[9] = tmp15;
@@ -410,7 +410,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   obj5 = { name: intl2.string(dismissNewBadgeIfShown(2525).yv3DJJ), mode: DEFAULT };
   BaseChannelName = tmp14(12016).BaseChannelName;
   intl2 = tmp14(1126).intl;
-  obj6 = { mode: DEFAULT, IconComponent: tmp14(16145).BoostTier2Icon };
+  obj6 = { mode: DEFAULT, IconComponent: tmp14(16149).BoostTier2Icon };
   BaseChannelIcon = tmp14(12016).BaseChannelIcon;
   if (showNewBadgeOnRow) {
     tmp16Result = tmp16(tmp14(11919).NewBadge, {});

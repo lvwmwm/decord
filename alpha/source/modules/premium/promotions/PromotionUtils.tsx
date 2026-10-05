@@ -1,10 +1,10 @@
-// Module ID: 13226
-// Function ID: 13227
+// Module ID: 13228
+// Function ID: 13229
 // Name: PromotionUtils
 // Dependencies: [5, 1231, 10397, 10396, 1379, 1085, 2011, 4729, 1282, 1369, 1252, 1390, 2036, 11, 2038, 10428, 2]
 // Exports: claimOutboundPromotion, getClaimedEndedOutboundPromotions, getClaimedOutboundPromotionCodeMap, getNextUnseenOutboundPromotionId, getOutboundPromotionRedemptionUrl, getPromotionImageURL, isDedicatedSurfacePromotion, isRecurringPromotion, shouldShowOutboundPromotionNotice, shouldShowOutboundPromotionOnPlatform
 
-// Module 13226 (PromotionUtils)
+// Module 13228 (PromotionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
 import PremiumConstants from "PremiumConstants" /* 1379 */;
@@ -26,7 +26,7 @@ let closure_4, location_stack, name, partner, promotion_id, set;
 let c10;
 let c9;
 let metroImportAll;
-const f114088 = (startDate, startDate2) => {
+const f114241 = (startDate, startDate2) => {
   let num = 1;
   const date = new Date(startDate.startDate);
   const date1 = new Date(startDate2.startDate);
@@ -58,7 +58,7 @@ let obj = function _claimOutboundPromotion() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -84,7 +84,7 @@ let obj = function _claimOutboundPromotion() {
               ANDROID = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -223,7 +223,7 @@ export const getNextUnseenOutboundPromotionId = function getNextUnseenOutboundPr
   }
   let id = null;
   if (0 !== found1.length) {
-    id = found1.sort(f114088)[0].id;
+    id = found1.sort(f114241)[0].id;
   }
   return id;
 };
@@ -264,7 +264,7 @@ export const shouldShowOutboundPromotionNotice = function shouldShowOutboundProm
   }
   let id = null;
   if (0 !== found1.length) {
-    id = found1.sort(f114088)[0].id;
+    id = found1.sort(f114241)[0].id;
   }
   let tmp6 = null != id;
   if (tmp6) {

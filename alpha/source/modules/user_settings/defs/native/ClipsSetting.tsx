@@ -1,12 +1,12 @@
-// Module ID: 14776
-// Function ID: 14777
+// Module ID: 14780
+// Function ID: 14781
 // Name: ClipsSetting
-// Dependencies: [1085, 11129, 1126, 14777, 14779, 2]
+// Dependencies: [1085, 11129, 1126, 14781, 14783, 2]
 
-// Module 14776 (ClipsSetting)
+// Module 14780 (ClipsSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import ClipsIcon from "ClipsIcon" /* 14777 */;
+import ClipsIcon from "ClipsIcon" /* 14781 */;
 import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 

@@ -18,7 +18,7 @@ export const debug = function debug(message, attributes) {
   }
   const scope = obj.scope;
   const obj2 = _INTERNAL_captureLog;
-  const obj3 = { level: "debug", message, attributes, severityNumber: "application" };
+  const obj3 = { level: "debug", message, attributes, severityNumber: "applicationId" };
   obj2._INTERNAL_captureLog(obj3, scope);
 };
 export const error = function error(message, attributes) {
@@ -48,7 +48,7 @@ export const info = function info(message, attributes) {
   }
   const scope = obj.scope;
   const obj2 = _INTERNAL_captureLog;
-  const obj3 = { level: "info", message, attributes, severityNumber: "application" };
+  const obj3 = { level: "info", message, attributes, severityNumber: "applicationId" };
   obj2._INTERNAL_captureLog(obj3, scope);
 };
 export const trace = function trace(message, attributes) {
@@ -58,7 +58,7 @@ export const trace = function trace(message, attributes) {
   }
   const scope = obj.scope;
   const obj2 = _INTERNAL_captureLog;
-  const obj3 = { level: "trace", message, attributes, severityNumber: "application" };
+  const obj3 = { level: "trace", message, attributes, severityNumber: "applicationId" };
   obj2._INTERNAL_captureLog(obj3, scope);
 };
 export const warn = function warn(message, attributes) {
@@ -68,6 +68,6 @@ export const warn = function warn(message, attributes) {
   }
   const scope = obj.scope;
   const obj2 = _INTERNAL_captureLog;
-  const obj3 = { level: "warn", message, attributes, severityNumber: "color" };
+  const obj3 = { level: "warn", message, attributes, severityNumber: "duration" };
   obj2._INTERNAL_captureLog(obj3, scope);
 };

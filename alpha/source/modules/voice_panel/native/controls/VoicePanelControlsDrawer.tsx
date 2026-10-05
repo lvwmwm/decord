@@ -1,9 +1,9 @@
-// Module ID: 17327
-// Function ID: 17328
+// Module ID: 17351
+// Function ID: 17352
 // Name: VoicePanelControlsDrawer
-// Dependencies: [32, 19, 17, 11902, 21, 4890, 587, 558, 576, 5973, 5738, 11899, 11901, 4612, 11909, 5597, 9074, 17328, 17338, 2]
+// Dependencies: [32, 19, 17, 11902, 21, 4890, 587, 558, 576, 5973, 5738, 11899, 11901, 4612, 11909, 5597, 9074, 17352, 17362, 2]
 
-// Module 17327 (VoicePanelControlsDrawer)
+// Module 17351 (VoicePanelControlsDrawer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
@@ -12,8 +12,8 @@ import useRefValueDefault from "useRefValue" /* 5973 */;
 import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9074 */;
 import VoicePanelChatViewDefault from "VoicePanelChatView" /* 11899 */;
 import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 11909 */;
-import VoicePanelVoiceControlsDefault from "VoicePanelVoiceControls" /* 17328 */;
-import VoicePanelControlsAppLauncherDefault from "VoicePanelControlsAppLauncher" /* 17338 */;
+import VoicePanelVoiceControlsDefault from "VoicePanelVoiceControls" /* 17352 */;
+import VoicePanelControlsAppLauncherDefault from "VoicePanelControlsAppLauncher" /* 17362 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

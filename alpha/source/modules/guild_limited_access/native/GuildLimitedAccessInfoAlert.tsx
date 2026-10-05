@@ -1,9 +1,9 @@
-// Module ID: 13642
-// Function ID: 13643
+// Module ID: 13644
+// Function ID: 13645
 // Name: GuildLimitedAccessInfoAlert
-// Dependencies: [19, 2074, 13643, 1085, 21, 4890, 5915, 587, 558, 576, 1126, 1188, 4886, 5783, 2]
+// Dependencies: [19, 2074, 13645, 1085, 21, 4890, 5915, 587, 558, 576, 1126, 1188, 4886, 5783, 2]
 
-// Module 13642 (GuildLimitedAccessInfoAlert)
+// Module 13644 (GuildLimitedAccessInfoAlert)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -11,7 +11,7 @@ import intl4 from "intl" /* 1126 */;
 import native from "native" /* 1188 */;
 import Text_Text from "Text/Text" /* 4886 */;
 import AlertDefault from "Alert" /* 5783 */;
-import GuildLimitedAccessConstants from "GuildLimitedAccessConstants" /* 13643 */;
+import GuildLimitedAccessConstants from "GuildLimitedAccessConstants" /* 13645 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2074 */;
 import Fragment from "Fragment" /* 21 */;

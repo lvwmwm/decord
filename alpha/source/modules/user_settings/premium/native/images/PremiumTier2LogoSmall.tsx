@@ -1,9 +1,9 @@
-// Module ID: 13283
-// Function ID: 13284
+// Module ID: 13285
+// Function ID: 13286
 // Name: PremiumTier2LogoSmall
 // Dependencies: [19, 21, 558, 576, 4580, 587, 8136, 2]
 
-// Module 13283 (PremiumTier2LogoSmall)
+// Module 13285 (PremiumTier2LogoSmall)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

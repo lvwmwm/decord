@@ -1,10 +1,10 @@
-// Module ID: 15358
-// Function ID: 15359
+// Module ID: 15362
+// Function ID: 15363
 // Name: SupportUtils
 // Dependencies: [5, 2116, 1368, 4866, 4565, 2115, 2]
 // Exports: emailSupport
 
-// Module 15358 (SupportUtils)
+// Module 15362 (SupportUtils)
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
 import LinkingDefault from "Linking" /* 4565 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -40,7 +40,7 @@ let obj = function _emailSupport() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -74,7 +74,7 @@ let obj = function _emailSupport() {
         } else {
           openURL(value);
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp10) {
         c3 = 3;

@@ -1,15 +1,15 @@
-// Module ID: 14915
-// Function ID: 14916
+// Module ID: 14919
+// Function ID: 14920
 // Name: useQuestForPlacement
-// Dependencies: [19, 7184, 7187, 1102, 10912, 10015, 9994, 558, 576, 504, 14916, 7185, 7183, 5630, 2]
+// Dependencies: [19, 7184, 7187, 1102, 10912, 10015, 9994, 558, 576, 504, 14920, 7185, 7183, 5630, 2]
 
-// Module 14915 (useQuestForPlacement)
+// Module 14919 (useQuestForPlacement)
 import DurationsDefault from "Durations" /* 1102 */;
 import AdCreativeType from "AdCreativeType" /* 5630 */;
 import QuestActionCreators from "QuestActionCreators" /* 9994 */;
 import DiscordAppStateDefault from "DiscordAppState" /* 10015 */;
 import QuestsEligibility from "QuestsEligibility" /* 10912 */;
-import AdRecheckIntervalExperimentDefault from "AdRecheckIntervalExperiment" /* 14916 */;
+import AdRecheckIntervalExperimentDefault from "AdRecheckIntervalExperiment" /* 14920 */;
 import react from "react" /* 19 */;
 import AdDeliveryStore from "AdDeliveryStore" /* 7184 */;
 import QuestStore from "QuestStore" /* 7187 */;
@@ -152,9 +152,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       tmp4 = enableFastAdRecheck ? closure_1_9 : closure_1_8;
       tmp5 = closure_1_10(closure_2, current, "questBar-open");
-      tmp.current = setInterval(() => { /* body not rendered: F144041 */ }, tmp4);
+      tmp.current = setInterval(() => { /* body not rendered: F144287 */ }, tmp4);
       current = tmp.current;
-      return () => { /* body not rendered: F144042 */ };
+      return () => { /* body not rendered: F144288 */ };
     }
   }
   const items = [tmp3, arg0, enableFastAdRecheck];

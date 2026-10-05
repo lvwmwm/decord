@@ -1,10 +1,10 @@
-// Module ID: 15152
-// Function ID: 15153
+// Module ID: 15156
+// Function ID: 15157
 // Name: useDisplayNameStylesHandleApply
 // Dependencies: [5, 19, 1085, 1396, 6477, 7838, 7835, 1252, 1397, 2]
 // Exports: useDisplayNameStylesHandleApply
 
-// Module 15152 (useDisplayNameStylesHandleApply)
+// Module 15156 (useDisplayNameStylesHandleApply)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -46,7 +46,7 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -91,7 +91,7 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
               }
             }
             guildId = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else if (1 === c4) {
           c3 = 0;

@@ -1,14 +1,14 @@
-// Module ID: 16991
-// Function ID: 16992
+// Module ID: 17015
+// Function ID: 17016
 // Name: SlashIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16992, 4579, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 17016, 4579, 2]
 
-// Module 16991 (SlashIcon)
+// Module 17015 (SlashIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4579 */;
-import AssetRegistry from "AssetRegistry" /* 16992 */;
+import AssetRegistry from "AssetRegistry" /* 17016 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

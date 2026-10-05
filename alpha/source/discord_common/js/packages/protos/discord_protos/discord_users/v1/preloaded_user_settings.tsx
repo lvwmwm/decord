@@ -7142,6 +7142,7 @@ const items35 = [];
 const obj50 = { no: 1, name: "one_time_purchase_limit", kind: "message", T: T50 };
 items35[0] = obj50;
 let tmp49 = new "binaryReadMap12"("discord_protos.discord_users.v1.SpendingLimitSettings", items35, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
+let closure_65 = tmp49;
 const MessageType43 = _mod1198.MessageType;
 class SafetySettings$Type extends MessageType43 {
   constructor() {
@@ -7244,7 +7245,6 @@ items36[0] = obj51;
 items36[1] = { no: 2, name: "ignore_profile_speedbump_disabled", kind: "scalar", T: 8 };
 items36[2] = { no: 3, name: "spending_limit_settings", kind: "message", T: T52 };
 const tmp50 = new "binaryReadMap12"("discord_protos.discord_users.v1.SafetySettings", items36, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-let internalBinaryWrite5 = tmp50;
 const MessageType44 = _mod1198.MessageType;
 class ForLaterSettings$Type extends MessageType44 {
   constructor() {
@@ -7883,7 +7883,7 @@ class AdsSettings$Type extends MessageType50 {
 const prototype50 = AdsSettings$Type.prototype;
 const items43 = [{ no: 1, name: "always_deliver", kind: "scalar", T: 8 }];
 const tmp57 = new "binaryReadMap12"("discord_protos.discord_users.v1.AdsSettings", items43, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-internalBinaryWrite6 = tmp57;
+let internalBinaryWrite5 = tmp57;
 const MessageType51 = _mod1198.MessageType;
 class InAppFeedbackState$Type extends MessageType51 {
   constructor() {
@@ -8126,7 +8126,7 @@ items45[2] = {
 };
 items45[3] = { no: 4, name: "disable_double_tap", kind: "message", T: T61 };
 const tmp59 = new "binaryReadMap12"("discord_protos.discord_users.v1.DefaultReactionEmoji", items45, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-internalBinaryWrite7 = tmp59;
+internalBinaryWrite6 = tmp59;
 const MessageType53 = _mod1198.MessageType;
 class InAppFeedbackSettings$Type extends MessageType53 {
   constructor() {

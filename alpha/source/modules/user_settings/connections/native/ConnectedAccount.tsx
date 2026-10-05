@@ -1,9 +1,9 @@
-// Module ID: 14767
-// Function ID: 14768
+// Module ID: 14771
+// Function ID: 14772
 // Name: ConnectedAccount
-// Dependencies: [5, 32, 19, 17, 5440, 2074, 1085, 6679, 21, 4890, 1188, 587, 5915, 6677, 558, 576, 504, 5594, 1126, 4886, 5971, 5442, 5988, 4589, 14768, 9459, 5707, 5783, 8732, 14769, 14772, 6698, 6678, 11192, 4565, 2115, 7575, 8451, 14774, 3141, 1402, 4729, 9385, 5994, 5993, 2]
+// Dependencies: [5, 32, 19, 17, 5440, 2074, 1085, 6679, 21, 4890, 1188, 587, 5915, 6677, 558, 576, 504, 5594, 1126, 4886, 5971, 5442, 5988, 4589, 14772, 9459, 5707, 5783, 8732, 14773, 14776, 6698, 6678, 11192, 4565, 2115, 7575, 8451, 14778, 3141, 1402, 4729, 9385, 5994, 5993, 2]
 
-// Module 14767 (ConnectedAccount)
+// Module 14771 (ConnectedAccount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
@@ -22,9 +22,9 @@ import Constants2 from "Constants" /* 6679 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 6698 */;
 import XLargeBoldIcon from "XLargeBoldIcon" /* 9385 */;
 import InfoBoxDefault from "InfoBox" /* 9459 */;
-import shouldWarnConnectedAccountTwoWayDefault from "shouldWarnConnectedAccountTwoWay" /* 14768 */;
-import XboxTwoWayLinkUpsell from "XboxTwoWayLinkUpsell" /* 14769 */;
-import PlayStationTwoWayLinkUpsell from "PlayStationTwoWayLinkUpsell" /* 14772 */;
+import shouldWarnConnectedAccountTwoWayDefault from "shouldWarnConnectedAccountTwoWay" /* 14772 */;
+import XboxTwoWayLinkUpsell from "XboxTwoWayLinkUpsell" /* 14773 */;
+import PlayStationTwoWayLinkUpsell from "PlayStationTwoWayLinkUpsell" /* 14776 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -482,7 +482,7 @@ class ConnectedAccount extends PureComponent {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -541,7 +541,7 @@ class ConnectedAccount extends PureComponent {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp19) {
           if (0 === c3) {
@@ -571,7 +571,7 @@ class ConnectedAccount extends PureComponent {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -630,7 +630,7 @@ class ConnectedAccount extends PureComponent {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp19) {
           if (0 === c3) {
@@ -660,7 +660,7 @@ class ConnectedAccount extends PureComponent {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -701,7 +701,7 @@ class ConnectedAccount extends PureComponent {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp10) {
             if (0 === c3) {
@@ -732,7 +732,7 @@ class ConnectedAccount extends PureComponent {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -773,7 +773,7 @@ class ConnectedAccount extends PureComponent {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp10) {
             if (0 === c3) {
@@ -1002,7 +1002,7 @@ class ConnectedAccount extends PureComponent {
       if (self.state.metadataAlreadyRefreshed) {
         tmp19Result = tmp19(tmp2(8451).CheckmarkLargeBoldIcon, { size: "sm" });
       } else {
-        tmp19Result = tmp19(tmp2(14774).RefreshIcon, { size: "sm" });
+        tmp19Result = tmp19(tmp2(14778).RefreshIcon, { size: "sm" });
       }
       const obj12 = { size: "sm", variant: "icon-only", icon: tmp19Result, accessibilityLabel: intl2.string(account(1126).t.wzzjk9), onPress: handleRefresh, disabled: self.state.metadataRefreshing || self.state.metadataAlreadyRefreshed };
       intl2 = tmp2(1126).intl;

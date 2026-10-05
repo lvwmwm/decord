@@ -1,17 +1,17 @@
-// Module ID: 15890
-// Function ID: 15891
+// Module ID: 15894
+// Function ID: 15895
 // Name: VerifyPhone
-// Dependencies: [5, 32, 19, 15863, 15864, 1085, 21, 558, 576, 15860, 15879, 5590, 6542, 1126, 6576, 15891, 6577, 2]
+// Dependencies: [5, 32, 19, 15867, 15868, 1085, 21, 558, 576, 15864, 15883, 5590, 6542, 1126, 6576, 15895, 6577, 2]
 
-// Module 15890 (VerifyPhone)
+// Module 15894 (VerifyPhone)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 15863 */;
-import RegistrationBailoutButtonDefault from "RegistrationBailoutButton" /* 15891 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 15867 */;
+import RegistrationBailoutButtonDefault from "RegistrationBailoutButton" /* 15895 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RegistrationConstants from "RegistrationConstants" /* 15864 */;
+import RegistrationConstants from "RegistrationConstants" /* 15868 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -137,7 +137,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPhoneTokenReceived
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -206,7 +206,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPhoneTokenReceived
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp41) {
         if (0 === c4) {
@@ -250,8 +250,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPhoneTokenReceived
   [tmp6, c6] = _slicedToArray(react.useState(false), 2);
   const tmp5 = _slicedToArray(react.useState(false), 2);
   let closure_7 = react.useRef(false);
-  const context = react.useContext(phone(15860).TrackRegistrationContext);
-  const tmp8 = onPhoneTokenReceived(15879);
+  const context = react.useContext(phone(15864).TrackRegistrationContext);
+  const tmp8 = onPhoneTokenReceived(15883);
   tmp8(closure_7(sourceState));
   const items = [context];
   const effect = react.useEffect(() => {
@@ -285,7 +285,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPhoneTokenReceived
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -353,7 +353,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPhoneTokenReceived
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp41) {
         closure_3 = tmp41;
@@ -383,7 +383,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPhoneTokenReceived
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -414,7 +414,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPhoneTokenReceived
         } else {
           _undefined(false);
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp11) {
         c3 = 3;

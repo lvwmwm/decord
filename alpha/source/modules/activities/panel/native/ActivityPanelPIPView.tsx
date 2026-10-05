@@ -1,9 +1,9 @@
-// Module ID: 17146
-// Function ID: 17147
+// Module ID: 17170
+// Function ID: 17171
 // Name: ActivityPanelPIPView
-// Dependencies: [19, 17, 4879, 9156, 2051, 2050, 2011, 8705, 17147, 1085, 11903, 21, 1188, 4890, 587, 558, 576, 1618, 504, 1484, 17142, 9774, 4612, 17148, 4589, 4891, 5597, 17149, 17150, 1126, 6140, 4498, 9134, 17144, 2]
+// Dependencies: [19, 17, 4879, 9156, 2051, 2050, 2011, 8705, 17171, 1085, 11903, 21, 1188, 4890, 587, 558, 576, 1618, 504, 1484, 17166, 9774, 4612, 17172, 4589, 4891, 5597, 17173, 17174, 1126, 6140, 4498, 9134, 17168, 2]
 
-// Module 17146 (ActivityPanelPIPView)
+// Module 17170 (ActivityPanelPIPView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -17,9 +17,9 @@ import timing from "timing" /* 4891 */;
 import spring from "spring" /* 5597 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 9774 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11903 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17144 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 17147 */;
-import MorphablePanelUtils from "MorphablePanelUtils" /* 17148 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17168 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 17171 */;
+import MorphablePanelUtils from "MorphablePanelUtils" /* 17172 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 9156 */;
@@ -1433,7 +1433,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
         }
       }
     }
-    const tmp24 = <closure_28 transitionState={transitionState} transitionCleanUp={transitionCleanUp} pipOrientationLockState={stateFromStores} hasActivity={null != activity} context={applicationId(17144)}>{tmp18}</closure_28>;
+    const tmp24 = <closure_28 transitionState={transitionState} transitionCleanUp={transitionCleanUp} pipOrientationLockState={stateFromStores} hasActivity={null != activity} context={applicationId(17168)}>{tmp18}</closure_28>;
     cResult[11] = stateFromStores;
     cResult[12] = null != activity;
     cResult[13] = tmp18;

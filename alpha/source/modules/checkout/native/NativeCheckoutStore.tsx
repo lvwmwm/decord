@@ -80,7 +80,7 @@ export const createNativeStore = function createNativeStore(arg0) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -156,7 +156,7 @@ export const createNativeStore = function createNativeStore(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -220,7 +220,7 @@ export const createNativeStore = function createNativeStore(arg0) {
               closure_130_0(obj);
             }
             paymentGateway = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp23) {
             paymentGateway = 3;
             throw tmp23;
@@ -246,7 +246,7 @@ export const createNativeStore = function createNativeStore(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -333,7 +333,7 @@ export const createNativeStore = function createNativeStore(arg0) {
               }
             }
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           } catch (tmp40) {
             c7 = 3;
             throw tmp40;
@@ -417,7 +417,7 @@ export const createNativeStore = function createNativeStore(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c5;
@@ -525,7 +525,7 @@ export const createNativeStore = function createNativeStore(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -599,7 +599,7 @@ export const createNativeStore = function createNativeStore(arg0) {
             c4 = 0;
             closure_130_0({ isCreateOrderLoading: false });
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp39) {
           closure_3 = tmp39;
@@ -627,7 +627,7 @@ export const createNativeStore = function createNativeStore(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -701,7 +701,7 @@ export const createNativeStore = function createNativeStore(arg0) {
             c3 = 0;
             closure_129_0({ isCreateOrderLoading: false });
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp38) {
           closure_2 = tmp38;

@@ -1,9 +1,9 @@
-// Module ID: 16128
-// Function ID: 16129
+// Module ID: 16132
+// Function ID: 16133
 // Name: GuildHomeChannelRow
-// Dependencies: [19, 1085, 2058, 11697, 21, 4890, 587, 558, 576, 1112, 12016, 1126, 13652, 2]
+// Dependencies: [19, 1085, 2058, 11697, 21, 4890, 587, 558, 576, 1112, 12016, 1126, 13654, 2]
 
-// Module 16128 (GuildHomeChannelRow)
+// Module 16132 (GuildHomeChannelRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -81,7 +81,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
   if (cResult[6] !== tmp6) {
     const tmp15 = jsx(id(12016).BaseChannelName, { name: tmp10, mode: tmp6 });
     const BaseChannelIcon = tmp(12016).BaseChannelIcon;
-    const tmp16 = <BaseChannelIcon mode={tmp6} IconComponent={id(13652).SignPostIcon} />;
+    const tmp16 = <BaseChannelIcon mode={tmp6} IconComponent={id(13654).SignPostIcon} />;
     cResult[6] = tmp6;
     cResult[7] = tmp15;
     cResult[8] = tmp16;
@@ -140,7 +140,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
   ({ name: intl2.string(tmp5(1126).t.VbpLyU), mode: DEFAULT });
   const BaseChannelName = tmp5(12016).BaseChannelName;
   intl2 = tmp5(1126).intl;
-  ({ mode: DEFAULT, IconComponent: tmp5(13652).SignPostIcon });
+  ({ mode: DEFAULT, IconComponent: tmp5(13654).SignPostIcon });
   const BaseChannelIcon = tmp5(12016).BaseChannelIcon;
   return <tmp7 onPress={callback} style={tmp.container} accessible accessibilityLabel={intl.string(tmp5(1126).t.VbpLyU)} accessibilityState={{ selected }} mode={DEFAULT} name={null} icon={null} />;
 });

@@ -1,9 +1,9 @@
-// Module ID: 17090
-// Function ID: 17091
+// Module ID: 17114
+// Function ID: 17115
 // Name: PremiumDiscountOfferActionSheetContent
-// Dependencies: [19, 17, 1379, 21, 4890, 587, 558, 576, 11435, 1126, 8944, 5858, 7244, 4528, 15563, 4886, 15565, 8313, 5594, 2]
+// Dependencies: [19, 17, 1379, 21, 4890, 587, 558, 576, 11435, 1126, 8944, 5858, 7244, 4528, 15567, 4886, 15569, 8313, 5594, 2]
 
-// Module 17090 (PremiumDiscountOfferActionSheetContent)
+// Module 17114 (PremiumDiscountOfferActionSheetContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,8 +17,8 @@ import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 7244 */;
 import NitroWheelIcon2 from "NitroWheelIcon" /* 8313 */;
 import ChatSmileIcon from "ChatSmileIcon" /* 8944 */;
 import UserIcon from "UserIcon" /* 11435 */;
-import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 15563 */;
-import PremiumPerksListDefault from "PremiumPerksList" /* 15565 */;
+import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 15567 */;
+import PremiumPerksListDefault from "PremiumPerksList" /* 15569 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4890 */;

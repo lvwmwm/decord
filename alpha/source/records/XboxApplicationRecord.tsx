@@ -1,9 +1,9 @@
-// Module ID: 13559
-// Function ID: 13560
+// Module ID: 13561
+// Function ID: 13562
 // Name: XboxApplicationRecord
 // Dependencies: [2009, 5442, 2]
 
-// Module 13559 (XboxApplicationRecord)
+// Module 13561 (XboxApplicationRecord)
 import PlatformsDefault from "Platforms" /* 5442 */;
 import ApplicationRecord from "ApplicationRecord" /* 2009 */;
 import size from "module_2" /* 2 */;

@@ -1,9 +1,9 @@
-// Module ID: 13622
-// Function ID: 13623
+// Module ID: 13624
+// Function ID: 13625
 // Name: ProcessBoostExperiment
 // Dependencies: [4915, 1440, 2]
 
-// Module 13622 (ProcessBoostExperiment)
+// Module 13624 (ProcessBoostExperiment)
 import Constants from "Constants" /* 4915 */;
 import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;

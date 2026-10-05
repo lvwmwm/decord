@@ -1,10 +1,10 @@
-// Module ID: 18074
-// Function ID: 18075
+// Module ID: 18096
+// Function ID: 18097
 // Name: LocalPushNotificationActionCreators
 // Dependencies: [8707, 1085, 2058, 6984, 584, 1242, 1252, 5705, 12695, 1987, 4901, 4787, 1112, 2]
 // Exports: receiveLocalNotification
 
-// Module 18074 (LocalPushNotificationActionCreators)
+// Module 18096 (LocalPushNotificationActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -65,11 +65,11 @@ export const receiveLocalNotification = function receiveLocalNotification(getDat
           const obj = { jumpType: data(dependencyMap[11]).JumpType.INSTANT };
           return transitionToMessage.transitionToMessage(channelId, messageId, obj);
         });
-      } else if (constants.VIBEGRATIONS === type) {
+      } else if (constants.CONJURE === type) {
         if (null != data.guildId) {
           ({ guildId: data, projectId: closure_1 } = data);
           const promise3 = data(dependencyMap[9])(dependencyMap[12], dependencyMap.paths);
-          promise3.then((transitionTo) => transitionTo.transitionTo(hasOwnProperty.CHANNEL(data, StaticChannelRoute.VIBEGRATIONS, closure_1)));
+          promise3.then((transitionTo) => transitionTo.transitionTo(hasOwnProperty.CHANNEL(data, StaticChannelRoute.CONJURE, closure_1)));
         }
       }
     }

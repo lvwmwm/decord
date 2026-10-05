@@ -1,9 +1,9 @@
-// Module ID: 14312
-// Function ID: 14313
+// Module ID: 14314
+// Function ID: 14315
 // Name: guilds
 // Dependencies: [2070, 2074, 1085, 8015, 9029, 9026, 2]
 
-// Module 14312 (guilds)
+// Module 14314 (guilds)
 import GuildRecord from "GuildRecord" /* 2070 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 8015 */;
 import RPCErrorDefault from "RPCError" /* 9026 */;

@@ -1,9 +1,9 @@
-// Module ID: 16424
-// Function ID: 16425
+// Module ID: 16428
+// Function ID: 16429
 // Name: ICYMIJoinGuildsScreen
-// Dependencies: [5, 32, 19, 17, 4879, 2074, 16423, 1085, 21, 16390, 587, 558, 576, 5971, 8791, 4612, 4891, 6552, 504, 1402, 8469, 5974, 4886, 4792, 1126, 5594, 5909, 1618, 14163, 8029, 4568, 5093, 16407, 8371, 2]
+// Dependencies: [5, 32, 19, 17, 4879, 2074, 16427, 1085, 21, 16394, 587, 558, 576, 5971, 8791, 4612, 4891, 6552, 504, 1402, 8469, 5974, 4886, 4792, 1126, 5594, 5909, 1618, 14165, 8029, 4568, 5093, 16411, 8371, 2]
 
-// Module 16424 (ICYMIJoinGuildsScreen)
+// Module 16428 (ICYMIJoinGuildsScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -13,17 +13,17 @@ import GuildIcon from "GuildIcon" /* 5971 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8029 */;
 import ClipViewDefault from "ClipView" /* 8469 */;
 import ServerIcon2 from "ServerIcon" /* 8791 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 14163 */;
-import ICYMIInfoModalTypes from "ICYMIInfoModalTypes" /* 16407 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 14165 */;
+import ICYMIInfoModalTypes from "ICYMIInfoModalTypes" /* 16411 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import ICYMIPopularGuildsStore from "ICYMIPopularGuildsStore" /* 16423 */;
+import ICYMIPopularGuildsStore from "ICYMIPopularGuildsStore" /* 16427 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16390 */;
+import createICYMIStyles from "createICYMIStyles" /* 16394 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -1014,7 +1014,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
           tmp7 = closure_5;
           tmp8 = closure_5((arr) => {
             let id;
-            return arr.filter(() => { /* body not rendered: F153115 */ });
+            return arr.filter(() => { /* body not rendered: F153401 */ });
           });
         } else {
           tmp2Result1 = tmp2((add) => {
@@ -1057,7 +1057,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
           tmp7 = closure_5;
           tmp8 = closure_5((arr) => {
             let id;
-            return arr.filter(() => { /* body not rendered: F153115 */ });
+            return arr.filter(() => { /* body not rendered: F153401 */ });
           });
         } else {
           tmp2Result1 = tmp2((add) => {
@@ -1095,7 +1095,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
           tmp7 = closure_5;
           tmp8 = closure_5((arr) => {
             let id;
-            return arr.filter(() => { /* body not rendered: F153115 */ });
+            return arr.filter(() => { /* body not rendered: F153401 */ });
           });
         } else {
           tmp2Result1 = tmp2((add) => {
@@ -1128,7 +1128,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -1212,7 +1212,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
             const obj20 = stateFromStoresArray1(stateFromStores[31]);
             obj20.popWithKey(tmp(stateFromStores[32]).ICYMI_INFO_MODAL_KEY);
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp34) {
           c2 = 3;
@@ -1247,7 +1247,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
           tmp7 = closure_5;
           tmp8 = closure_5((arr) => {
             let id;
-            return arr.filter(() => { /* body not rendered: F153115 */ });
+            return arr.filter(() => { /* body not rendered: F153401 */ });
           });
         } else {
           tmp2Result1 = tmp2((add) => {
@@ -1283,7 +1283,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
           tmp7 = closure_5;
           tmp8 = closure_5((arr) => {
             let id;
-            return arr.filter(() => { /* body not rendered: F153115 */ });
+            return arr.filter(() => { /* body not rendered: F153401 */ });
           });
         } else {
           tmp2Result1 = tmp2((add) => {
@@ -1402,7 +1402,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1487,7 +1487,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
           const obj20 = stateFromStoresArray1(stateFromStores[31]);
           obj20.popWithKey(stateFromStoresArray(stateFromStores[32]).ICYMI_INFO_MODAL_KEY);
           stateFromStores = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp33) {
         stateFromStores = 3;

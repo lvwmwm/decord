@@ -1,10 +1,10 @@
-// Module ID: 13704
-// Function ID: 13705
+// Module ID: 13706
+// Function ID: 13707
 // Name: GuildPicker
-// Dependencies: [19, 21, 13705, 13706, 4854, 8949, 1987, 1126, 2]
+// Dependencies: [19, 21, 13707, 13708, 4854, 8949, 1987, 1126, 2]
 // Exports: default
 
-// Module 13704 (GuildPicker)
+// Module 13706 (GuildPicker)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
@@ -27,11 +27,11 @@ export default function GuildPicker(isGuildIncluded) {
   const onChange = isGuildIncluded.onChange;
   dependencyMap = undefined;
   let tmp = dependencyMap;
-  let tmp2 = onChange(13705)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId });
+  let tmp2 = onChange(13707)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId });
   ({ options: c2, selectedGuild } = tmp2);
   let name;
   const tmp3 = jsx;
-  const tmp4 = onChange(13706);
+  const tmp4 = onChange(13708);
   if (selectedGuild != null) {
     name = selectedGuild.name;
   }

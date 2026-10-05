@@ -1,7 +1,7 @@
 // Module ID: 7848
 // Function ID: 7849
 // Name: ProductDetailsActionSheet
-// Dependencies: [109, 32, 19, 17, 7053, 1087, 1085, 1096, 21, 3, 4890, 587, 5600, 4589, 558, 576, 4729, 1126, 6458, 1980, 7849, 7850, 7847, 7064, 8870, 6681, 6657, 12963, 12964, 8421, 1260, 8422, 1252, 504, 12965, 8486, 8488, 7065, 8490, 8491, 8493, 12966, 12976, 12985, 1188, 6112, 12986, 12997, 6645, 8536, 10465, 7904, 5594, 13000, 7845, 2]
+// Dependencies: [109, 32, 19, 17, 7053, 1087, 1085, 1096, 21, 3, 4890, 587, 5600, 4589, 558, 576, 4729, 1126, 6458, 1980, 7849, 7850, 7847, 7064, 8870, 6681, 6657, 12965, 12966, 8421, 1260, 8422, 1252, 504, 12967, 8486, 8488, 7065, 8490, 8491, 8493, 12968, 12978, 12987, 1188, 6112, 12988, 12999, 6645, 8536, 10465, 7904, 5594, 13002, 7845, 2]
 
 // Module 7848 (ProductDetailsActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
@@ -20,7 +20,7 @@ import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 78
 import generated_NoResults from "generated/NoResults" /* 7904 */;
 import useCollectiblesShopProducts from "useCollectiblesShopProducts" /* 8536 */;
 import useFetchCollectiblesCategoriesAndPurchases from "useFetchCollectiblesCategoriesAndPurchases" /* 10465 */;
-import ProductDetailsActionSheetSkeletonDefault from "ProductDetailsActionSheetSkeleton" /* 13000 */;
+import ProductDetailsActionSheetSkeletonDefault from "ProductDetailsActionSheetSkeleton" /* 13002 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import "react";
@@ -955,7 +955,7 @@ let closure_22 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((pro
   let tmp49;
   let tmp51;
   let type;
-  const f95534 = () => {
+  const f95677 = () => {
     let tmp;
     if (closure_6) {
       const first = require.items[0];
@@ -1053,8 +1053,8 @@ let closure_22 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((pro
   const tmp32Result = closure_21(obj7);
   const tmp34 = product.type === require("CollectiblesItemType").CollectiblesItemType.BUNDLE;
   react = tmp34;
-  [type, c7] = obj.useState(f95534);
-  _slicedToArray(obj.useState(f95534), 2);
+  [type, c7] = obj.useState(f95677);
+  _slicedToArray(obj.useState(f95677), 2);
   const tmp36 = c7((type) => {
     _undefined(type);
     _undefined2(type.type);
@@ -1510,7 +1510,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     tmp11 = closure_15;
   } else {
     tmp11 = closure_15;
-    tmp13 = closure_15(initialVariantIndex(13000), {});
+    tmp13 = closure_15(initialVariantIndex(13002), {});
   }
   tmp8 = tmp11;
   tmp10 = tmp13;

@@ -1,9 +1,9 @@
-// Module ID: 12928
-// Function ID: 12929
+// Module ID: 12930
+// Function ID: 12931
 // Name: UserProfileDismissibleUpsells
-// Dependencies: [19, 17, 1377, 7854, 6938, 2048, 21, 4890, 587, 558, 576, 12929, 7861, 504, 4528, 2036, 10354, 1188, 4886, 1126, 5909, 6017, 5594, 8313, 11762, 2]
+// Dependencies: [19, 17, 1377, 7854, 6938, 2048, 21, 4890, 587, 558, 576, 12931, 7861, 504, 4528, 2036, 10354, 1188, 4886, 1126, 5909, 6017, 5594, 8313, 11762, 2]
 
-// Module 12928 (UserProfileDismissibleUpsells)
+// Module 12930 (UserProfileDismissibleUpsells)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;

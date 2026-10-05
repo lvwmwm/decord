@@ -1,9 +1,9 @@
-// Module ID: 14346
-// Function ID: 14347
+// Module ID: 14348
+// Function ID: 14349
 // Name: soundboard
 // Dependencies: [5, 5680, 1377, 5316, 1096, 8015, 6841, 5805, 9029, 6876, 6847, 9026, 6878, 6681, 2]
 
-// Module 14346 (soundboard)
+// Module 14348 (soundboard)
 import SoundboardActionCreators from "SoundboardActionCreators" /* 6841 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 8015 */;
 import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9029 */;
@@ -43,7 +43,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -122,7 +122,7 @@ let obj4 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -180,7 +180,7 @@ let obj4 = {
                   playSound(tmp4, id, items);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } else {
                 const obj8 = { errorCode: constants.INVALID_PERMISSIONS };
                 const self3 = this;

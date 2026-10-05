@@ -1,21 +1,21 @@
-// Module ID: 17937
-// Function ID: 17938
+// Module ID: 17959
+// Function ID: 17960
 // Name: GuildRoleSubscriptionTierConfirmationModal
-// Dependencies: [5, 32, 19, 17, 17902, 21, 4890, 587, 13708, 17922, 17906, 1126, 9477, 5974, 4886, 17938, 2]
+// Dependencies: [5, 32, 19, 17, 17926, 21, 4890, 587, 13710, 17944, 17928, 1126, 9477, 5974, 4886, 17960, 2]
 // Exports: default
 
-// Module 17937 (GuildRoleSubscriptionTierConfirmationModal)
+// Module 17959 (GuildRoleSubscriptionTierConfirmationModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 4886 */;
-import FormStylesDefault from "FormStyles" /* 13708 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 17906 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 17922 */;
+import FormStylesDefault from "FormStyles" /* 13710 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 17928 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 17944 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 17902 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 17926 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4890 */;
 import size_mod from "module_2" /* 2 */;
@@ -81,7 +81,7 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -121,7 +121,7 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
           c3 = 0;
           closure_128_1(false);
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp19) {
         closure_2 = tmp19;
@@ -163,6 +163,6 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
     items2[2] = metroImportAll(Text_Text.Text, obj9);
     flag = tmp14(tmp17, obj7);
   }
-  items3 = [flag, metroImportAll(tmp6(17938).GuildRoleSubscriptionListingPreview, { guildId, listingId: editStateId })];
+  items3 = [flag, metroImportAll(tmp6(17960).GuildRoleSubscriptionListingPreview, { guildId, listingId: editStateId })];
   return authStore(tmp15, obj2);
 };

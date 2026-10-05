@@ -1,11 +1,11 @@
-// Module ID: 15814
-// Function ID: 15815
+// Module ID: 15818
+// Function ID: 15819
 // Name: ActivityPrivacyUpsellActionSheet
-// Dependencies: [19, 21, 558, 576, 14655, 14657, 2]
+// Dependencies: [19, 21, 558, 576, 14659, 14661, 2]
 
-// Module 15814 (ActivityPrivacyUpsellActionSheet)
+// Module 15818 (ActivityPrivacyUpsellActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 14655 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 14659 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((direction) => {
   direction = direction.direction;
   const affectedGuildIds = direction.affectedGuildIds;
   const settingName = direction.settingName;
-  const tmp4 = direction === direction(14655).ChangeDirection.RESTRICTING;
+  const tmp4 = direction === direction(14659).ChangeDirection.RESTRICTING;
   if (cResult[0] === tmp4) {
     let tmp5;
     if (cResult[1] === settingName) {
@@ -60,7 +60,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((direction) => {
           return;
         }
       }
-      const tmp11 = jsx(affectedGuildIds(14657), { direction, affectedGuildIds: null, title, subtitle, confirmText, toastContent, onConfirm: tmp7 });
+      const tmp11 = jsx(affectedGuildIds(14661), { direction, affectedGuildIds: null, title, subtitle, confirmText, toastContent, onConfirm: tmp7 });
       cResult[6] = affectedGuildIds;
       cResult[7] = confirmText;
       cResult[8] = direction;
@@ -83,7 +83,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((direction) => {
     cResult[5] = C;
     tmp7 = C;
   }
-  const tmpResult = tmp(14655);
+  const tmpResult = tmp(14659);
   const upsellStrings = tmpResult.getUpsellStrings(tmp4, settingName);
   cResult[0] = tmp4;
   cResult[1] = settingName;
@@ -97,8 +97,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((direction) => {
   direction = direction.direction;
   const affectedGuildIds = direction.affectedGuildIds;
   const settingName = direction.settingName;
-  const RESTRICTING = direction(14655).ChangeDirection.RESTRICTING;
-  let obj = direction(14655);
+  const RESTRICTING = direction(14659).ChangeDirection.RESTRICTING;
+  let obj = direction(14659);
   const upsellStrings = obj.getUpsellStrings(direction === RESTRICTING, settingName);
   const items = [direction, affectedGuildIds];
   ({ title, subtitle, confirmText, toastContent } = upsellStrings);
@@ -106,7 +106,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((direction) => {
     const obj = ActivityPrivacyUpsellUtils;
     const result = obj.applyBulkGuildRestrictionChange(direction, affectedGuildIds);
   }, items);
-  return jsx(affectedGuildIds(14657), { direction, affectedGuildIds, title, subtitle, confirmText, toastContent, onConfirm });
+  return jsx(affectedGuildIds(14661), { direction, affectedGuildIds, title, subtitle, confirmText, toastContent, onConfirm });
 });
 let result = size.fileFinishedImporting("modules/activity_privacy/native/ActivityPrivacyUpsellActionSheet.tsx");
 

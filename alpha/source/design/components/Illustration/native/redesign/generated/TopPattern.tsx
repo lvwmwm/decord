@@ -1,10 +1,10 @@
-// Module ID: 13322
-// Function ID: 13323
+// Module ID: 13324
+// Function ID: 13325
 // Name: TopPattern
-// Dependencies: [19, 17, 21, 7905, 13323, 13324, 13325, 558, 576, 4729, 2]
+// Dependencies: [19, 17, 21, 7905, 13325, 13326, 13327, 558, 576, 4729, 2]
 // Exports: getTopPatternSource
 
-// Module 13322 (TopPattern)
+// Module 13324 (TopPattern)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

@@ -1,10 +1,10 @@
-// Module ID: 13306
-// Function ID: 13307
+// Module ID: 13308
+// Function ID: 13309
 // Name: SubscriptionPlaceholderPattern
-// Dependencies: [19, 17, 21, 7905, 13307, 13308, 13309, 558, 576, 4729, 2]
+// Dependencies: [19, 17, 21, 7905, 13309, 13310, 13311, 558, 576, 4729, 2]
 // Exports: getSubscriptionPlaceholderPatternSource
 
-// Module 13306 (SubscriptionPlaceholderPattern)
+// Module 13308 (SubscriptionPlaceholderPattern)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

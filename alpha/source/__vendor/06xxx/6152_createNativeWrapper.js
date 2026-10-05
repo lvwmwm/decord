@@ -66,7 +66,7 @@ export default function createNativeWrapper(displayName) {
       merged = Object.assign(closure_1);
       obj.gestureHandlerProps = obj1;
       obj.childProps = { enabled: displayName.enabled, hitSlop: displayName.hitSlop, testID: displayName.testID };
-      reduced = reduce(() => { /* body not rendered: F136898 */ }, obj);
+      reduced = reduce(() => { /* body not rendered: F137136 */ }, obj);
       ({ gestureHandlerProps, childProps } = reduced);
       if (undefined === gestureHandlerProps.disableReanimated) {
         flag = true;
@@ -80,7 +80,7 @@ export default function createNativeWrapper(displayName) {
       items = [, ];
       items[0] = nativeGesture;
       items[1] = onGestureUpdate_CAN_CAUSE_INFINITE_RERENDER;
-      tmp6 = useEffect(() => { /* body not rendered: F136899 */ }, items);
+      tmp6 = useEffect(() => { /* body not rendered: F137137 */ }, items);
       tmp7 = Native;
       if (Native === closure_0(closure_1[3]).GestureDetectorType.Intercepting) {
         NativeDetector = tmp3(tmp4[3]).InterceptingGestureDetector;

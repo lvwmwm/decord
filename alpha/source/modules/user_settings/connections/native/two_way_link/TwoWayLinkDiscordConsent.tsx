@@ -133,7 +133,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((callbackCode) => {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -187,7 +187,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((callbackCode) => {
               v0(code);
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp32) {
           if (0 === v0) {
@@ -261,7 +261,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((callbackCode) => {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -315,7 +315,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((callbackCode) => {
               v0(code);
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp32) {
           if (0 === v0) {

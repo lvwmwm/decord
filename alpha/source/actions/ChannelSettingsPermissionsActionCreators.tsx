@@ -29,7 +29,7 @@ let obj = function _updatePermission() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -76,7 +76,7 @@ let obj = function _updatePermission() {
           const obj2 = closure_133_1(closure_133_2[2]);
           obj2.dispatch(obj7);
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp15) {
           c7 = 3;
           throw tmp15;

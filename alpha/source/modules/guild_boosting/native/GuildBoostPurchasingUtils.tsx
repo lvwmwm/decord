@@ -54,7 +54,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -87,7 +87,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
               mobileBoostingEnabled = undefined;
               onPaymentDismiss = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else {
             if (1 === onPaymentDismiss) {
@@ -123,7 +123,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
                   }
                 }
                 c6 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } else {
                 let obj2 = closure_131_0(closure_131_2[7]);
                 onPaymentDismiss = 2;

@@ -1,9 +1,9 @@
-// Module ID: 17255
-// Function ID: 17256
+// Module ID: 17279
+// Function ID: 17280
 // Name: VoicePanelNoVideoParticipantsCard
 // Dependencies: [19, 17, 21, 4890, 587, 558, 576, 11901, 5091, 1126, 4886, 5976, 2]
 
-// Module 17255 (VoicePanelNoVideoParticipantsCard)
+// Module 17279 (VoicePanelNoVideoParticipantsCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5091 */;

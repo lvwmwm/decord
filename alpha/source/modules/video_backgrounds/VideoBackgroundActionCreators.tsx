@@ -29,7 +29,7 @@ let obj = function _fetchVideoFilterAssets() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -110,7 +110,7 @@ obj = function _uploadVideoFilterAsset() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -192,7 +192,7 @@ obj = function _deleteVideoFilterAsset() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -233,7 +233,7 @@ obj = function _deleteVideoFilterAsset() {
             obj = closure_130_1(closure_130_2[5]);
             obj.dispatch(obj9);
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp19) {
           c4 = 3;
@@ -261,7 +261,7 @@ obj = function _saveLastUsedBackgroundOption() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -309,7 +309,7 @@ obj = function _saveLastUsedBackgroundOption() {
             obj.dispatch(obj11);
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp16) {
           c4 = 3;
           throw tmp16;

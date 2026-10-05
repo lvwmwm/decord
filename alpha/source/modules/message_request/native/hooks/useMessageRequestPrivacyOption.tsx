@@ -1,9 +1,9 @@
-// Module ID: 13720
-// Function ID: 13721
+// Module ID: 13722
+// Function ID: 13723
 // Name: useMessageRequestPrivacyOption
 // Dependencies: [19, 21, 558, 576, 2028, 6491, 1126, 6697, 12087, 2]
 
-// Module 13720 (useMessageRequestPrivacyOption)
+// Module 13722 (useMessageRequestPrivacyOption)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 6491 */;

@@ -113,7 +113,7 @@ class MonitoringAgent {
       HermesBuiltin.arraySpread(items, self._metrics, 0);
       const HTTP = HTTPUtils.HTTP;
       const request = { url: Endpoints.METRICS_V2, body, retries: 1, rejectWithError: true };
-      body = { metrics: items, client_info: { built_at: "1791004779805", build_number: "34920500000000" } };
+      body = { metrics: items, client_info: { built_at: "1791177533780", build_number: "35020000000000" } };
       const postResult = HTTP.post(request);
       postResult.catch(() => {
         if (self._metrics.length + items.length < 100) {

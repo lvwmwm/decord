@@ -1,10 +1,10 @@
-// Module ID: 13246
-// Function ID: 13247
+// Module ID: 13248
+// Function ID: 13249
 // Name: useReferralProgramEligibleUsers
 // Dependencies: [5, 32, 19, 6961, 504, 38, 6962, 7852, 2]
 // Exports: useReferralProgramEligibleUsers
 
-// Module 13246 (useReferralProgramEligibleUsers)
+// Module 13248 (useReferralProgramEligibleUsers)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -38,7 +38,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
           obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         while (true) {
@@ -69,7 +69,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
                 let _Array = Array;
                 let tmp34 = closure_131_7(Array.from(map.values()));
                 c7 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "IconComponent", done: null };
               } else {
                 c5 = 1;
                 c1 = tmp17;
@@ -126,7 +126,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         while (true) {
@@ -265,7 +265,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
             let tmp36 = closure_134_9(false);
           }
           c10 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       }
     });

@@ -21,7 +21,7 @@ let c9;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
-const f88490 = (id) => {
+const f88633 = (id) => {
   const obj = { id: id.id, name: id.name, interval: id.interval, interval_count: id.intervalCount, tax_inclusive: true, sku_id: id.skuId, currency: constants.USD, price: 0, price_tier: 0 };
   addSubscriptionPlan(SubscriptionPlanRecord.createFromServer(obj));
 };
@@ -81,7 +81,7 @@ function reset() {
   const obj4 = FunctionUtils;
   obj4.clearObject(closure_15);
   const items = [SubscriptionPlanInfo[SubscriptionPlans.NONE_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_YEAR], SubscriptionPlanInfo[SubscriptionPlans.NONE_3_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_6_MONTH]];
-  const item = items.forEach(f88490);
+  const item = items.forEach(f88633);
 }
 ({ CurrencyCodes: closure_4, PriceSetAssignmentPurchaseTypes: hasOwnProperty } = Constants);
 ({ SubscriptionIntervalTypes, SubscriptionPlanInfo } = PremiumConstants);
@@ -94,7 +94,7 @@ let set1 = new Set();
 const authStore2 = {};
 let closure_15 = {};
 let items = [SubscriptionPlanInfo[SubscriptionPlans.NONE_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_YEAR], SubscriptionPlanInfo[SubscriptionPlans.NONE_3_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_6_MONTH]];
-let item = items.forEach(f88490);
+let item = items.forEach(f88633);
 let items1 = [, , ];
 ({ DAY: arr2[0], MONTH: arr2[1], YEAR: arr2[2] } = SubscriptionIntervalTypes);
 const Store = get_initializedDefault.Store;

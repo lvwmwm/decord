@@ -1,10 +1,10 @@
-// Module ID: 14738
-// Function ID: 14739
+// Module ID: 14742
+// Function ID: 14743
 // Name: ScheduleDowntimeScreen
-// Dependencies: [5, 32, 19, 17, 1377, 1085, 21, 4854, 9194, 1987, 4890, 587, 558, 576, 4886, 1126, 2493, 1188, 5593, 1490, 6490, 12468, 573, 14739, 14740, 4847, 6074, 6698, 5993, 6619, 5594, 2]
+// Dependencies: [5, 32, 19, 17, 1377, 1085, 21, 4854, 9194, 1987, 4890, 587, 558, 576, 4886, 1126, 2493, 1188, 5593, 1490, 6490, 12468, 573, 14743, 14744, 4847, 6074, 6698, 5993, 6619, 5594, 2]
 // Exports: default
 
-// Module 14738 (ScheduleDowntimeScreen)
+// Module 14742 (ScheduleDowntimeScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -205,7 +205,7 @@ export default function ScheduleDowntimeScreen() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -277,7 +277,7 @@ export default function ScheduleDowntimeScreen() {
             closure_128_17(false);
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "IconComponent", done: null };
         } catch (tmp33) {
           closure_2 = tmp33;
           if (0 === c3) {
@@ -441,7 +441,7 @@ export default function ScheduleDowntimeScreen() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -508,7 +508,7 @@ export default function ScheduleDowntimeScreen() {
           closure_129_17(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       } catch (tmp32) {
         closure_3 = tmp32;
         if (0 === c4) {
@@ -607,7 +607,7 @@ export default function ScheduleDowntimeScreen() {
       arrow: true,
       onPress: function handleStartTimePress() {
           const intl = intl11.intl;
-          const f143846 = (first1) => {
+          const f144092 = (first1) => {
             closure_1_11(first1);
             obj = closure_2_0(rule[21]);
             const result = (obj.timeToMinutes(first1) + 540) % 1440;

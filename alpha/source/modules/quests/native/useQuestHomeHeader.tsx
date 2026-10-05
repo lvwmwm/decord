@@ -1,9 +1,9 @@
-// Module ID: 14802
-// Function ID: 14803
+// Module ID: 14806
+// Function ID: 14807
 // Name: useQuestHomeHeader
-// Dependencies: [19, 17, 5623, 1085, 1087, 21, 4890, 587, 558, 576, 14799, 1126, 4886, 8509, 4854, 11011, 1987, 1252, 6681, 7052, 11000, 14803, 7576, 14804, 1490, 12748, 2]
+// Dependencies: [19, 17, 5623, 1085, 1087, 21, 4890, 587, 558, 576, 14803, 1126, 4886, 8509, 4854, 11011, 1987, 1252, 6681, 7052, 11000, 14807, 7576, 14808, 1490, 12748, 2]
 
-// Module 14802 (useQuestHomeHeader)
+// Module 14806 (useQuestHomeHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,7 +16,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854
 import Text_Text from "Text/Text" /* 4886 */;
 import QuestConstants from "QuestConstants" /* 5623 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
-import QuestsIcon from "QuestsIcon" /* 14799 */;
+import QuestsIcon from "QuestsIcon" /* 14803 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4890 */;
@@ -77,7 +77,7 @@ function FiltersButton(setSelectedSortMethod) {
   const callback = selectedSortMethod.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { onSortMethodChange: setSelectedSortMethod, onFiltersChange: setSelectedFilters, initialSortMethod: selectedSortMethod, initialFilters: selectedFilters };
-    obj.openLazy(asyncRequire(14803, dependencyMap.paths), "QuestHomeSortingFilteringBottomSheet", obj2);
+    obj.openLazy(asyncRequire(14807, dependencyMap.paths), "QuestHomeSortingFilteringBottomSheet", obj2);
   }, items);
   let obj = { icon: closure_8(setSelectedSortMethod(tmp3[23]).FiltersHorizontalIcon, { size: "sm", color: INTERACTIVE_TEXT_DEFAULT }), size: "sm", variant: str, onPress: callback, accessibilityLabel: intl.string(setSelectedSortMethod(tmp3[11]).t.UdhTtk), scaleAmountInPx: 4 };
   const BaseIconButton = setSelectedSortMethod(tmp3[22]).BaseIconButton;

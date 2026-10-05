@@ -46,7 +46,7 @@ let obj = function _convertViaSysimg() {
         obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c8;
@@ -95,7 +95,7 @@ let obj = function _convertViaSysimg() {
             };
             c9 = 1;
             c10 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c9) {
           if (arg0 === 1) {
