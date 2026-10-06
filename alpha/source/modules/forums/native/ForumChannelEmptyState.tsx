@@ -1,17 +1,17 @@
-// Module ID: 12436
-// Function ID: 12437
+// Module ID: 12451
+// Function ID: 12452
 // Name: ForumChannelEmptyState
-// Dependencies: [19, 17, 21, 4890, 558, 576, 4729, 1618, 12437, 12438, 1126, 4886, 2]
+// Dependencies: [19, 17, 21, 4896, 558, 576, 4735, 1618, 12452, 12453, 1126, 4892, 2]
 
-// Module 12436 (ForumChannelEmptyState)
+// Module 12451 (ForumChannelEmptyState)
 import react2 from "react" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import shared from "shared" /* 4729 */;
-import Text_Text from "Text/Text" /* 4886 */;
+import shared from "shared" /* 4735 */;
+import Text_Text from "Text/Text" /* 4892 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -57,9 +57,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     }
     const tmpResult2 = shared;
     if (tmpResult2.isThemeLight(theme)) {
-      tmp5Result = tmp5(12437);
+      tmp5Result = tmp5(12452);
     } else {
-      tmp5Result = tmp5(12438);
+      tmp5Result = tmp5(12453);
     }
     if (cResult[5] === tmp4.image) {
       let tmp11;
@@ -188,15 +188,15 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   const tmp7 = _false;
   const tmp9 = React3;
   if (obj3.isThemeLight(theme)) {
-    tmp4Result = tmp4(12437);
+    tmp4Result = tmp4(12452);
   } else {
-    tmp4Result = tmp4(12438);
+    tmp4Result = tmp4(12453);
   }
   items1 = [, , ];
   const obj4 = { source: tmp4Result, style: tmp.image };
   items1[0] = hasOwnProperty(tmp9, obj4);
   const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: formatToPlainStringResult };
-  const Text = tmp2(4886).Text;
+  const Text = tmp2(4892).Text;
   const intl = tmp2(1126).intl;
   if (tagFilter.size > 0) {
     const obj6 = { numTags: tagFilter.size };
@@ -206,7 +206,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   }
   items1[1] = hasOwnProperty(Text, obj5);
   const obj7 = { style: tmp.subtext, variant: "text-sm/medium", color: "text-default", children: formatToPlainStringResult1 };
-  const Text2 = tmp2(4886).Text;
+  const Text2 = tmp2(4892).Text;
   const intl2 = tmp2(1126).intl;
   const formatToPlainString = intl2.formatToPlainString;
   const t = tmp2(1126).t;

@@ -1,10 +1,10 @@
-// Module ID: 8022
-// Function ID: 8023
+// Module ID: 8032
+// Function ID: 8033
 // Name: GuildAffinitiesActionCreators
 // Dependencies: [1085, 1282, 584, 2]
 // Exports: fetchGuildAffinities
 
-// Module 8022 (GuildAffinitiesActionCreators)
+// Module 8032 (GuildAffinitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;

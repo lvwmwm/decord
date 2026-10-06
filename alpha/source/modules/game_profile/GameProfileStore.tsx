@@ -1,9 +1,9 @@
-// Module ID: 8327
-// Function ID: 8328
+// Module ID: 8360
+// Function ID: 8361
 // Name: GameProfileStore
 // Dependencies: [504, 584, 2]
 
-// Module 8327 (GameProfileStore)
+// Module 8360 (GameProfileStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

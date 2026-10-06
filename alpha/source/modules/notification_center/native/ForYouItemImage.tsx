@@ -1,32 +1,32 @@
-// Module ID: 16365
-// Function ID: 16366
+// Module ID: 16405
+// Function ID: 16406
 // Name: ForYouItemImage
-// Dependencies: [19, 17, 2070, 2074, 1377, 16366, 21, 4890, 587, 7125, 9542, 16367, 16368, 16369, 16370, 5974, 16371, 1188, 16372, 16373, 558, 576, 6657, 504, 7850, 7919, 5909, 16374, 4886, 2]
+// Dependencies: [19, 17, 2070, 2074, 1377, 16406, 21, 4896, 587, 7138, 9555, 16407, 16408, 16409, 16410, 5981, 16411, 1188, 16412, 16413, 558, 576, 6664, 504, 7861, 7930, 5916, 16414, 4892, 2]
 
-// Module 16365 (ForYouItemImage)
+// Module 16405 (ForYouItemImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1188 */;
 import GuildRecord from "GuildRecord" /* 2070 */;
-import Pressables from "Pressables" /* 5909 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7125 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 7919 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9542 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16367 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 16368 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 16369 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 16370 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 16371 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 16372 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 16373 */;
+import Pressables from "Pressables" /* 5916 */;
+import FastImageDefault from "FastImage" /* 5981 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7138 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 7930 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9555 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16407 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 16408 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 16409 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 16410 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 16411 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 16412 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 16413 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2074 */;
 import UserStore from "UserStore" /* 1377 */;
-import Constants from "Constants" /* 16366 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import Constants from "Constants" /* 16406 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

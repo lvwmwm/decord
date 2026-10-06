@@ -1,30 +1,74 @@
 // Module ID: 14053
 // Function ID: 14054
-// Dependencies: [13964, 14054]
-// Exports: getSupportedUnits
+// Dependencies: [14054, 14055, 1172, 14056, 14057]
+// Exports: getCalendarPreferenceDataForRegion, getHourCyclesPreferenceDataForLocaleOrRegion, getTimeZonePreferenceForRegion, getWeekDataForRegion
 
 // Module 14053
-const require = globalThis.__r;
-let _require;
+import _mod1172 from "module_1172" /* 1172 */;
+import calendars2 from "calendars" /* 14054 */;
+import hourCycles from "hourCycles" /* 14055 */;
+import timezones from "timezones" /* 14056 */;
+import weekData2 from "weekData" /* 14057 */;
 
 
-export const getSupportedUnits = function getSupportedUnits(locale) {
-  _require = locale;
-  const units = require("module_14054").units;
-  return units.filter((item) => {
-    function isSupported(unit, arg1) {
-      let str = arg1;
-      if (undefined === arg1) {
-        str = "en";
+export const getCalendarPreferenceDataForRegion = function getCalendarPreferenceDataForRegion(region) {
+  let str = null;
+  if (region) {
+    str = region.toUpperCase();
+  }
+  const calendars = calendars2.calendars;
+  if (!str) {
+    str = "";
+  }
+  const arr = calendars[str] || calendars2.calendars["001"];
+  return arr.map((item) => {
+    let str = "gregory";
+    if ("gregorian" !== item) {
+      let str2 = "islamicc";
+      if ("islamic-civil" !== item) {
+        str2 = item;
       }
-      try {
-        const obj = { style: "unit", unit };
-        const memoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat(str, obj);
-        return memoizedNumberFormat.resolvedOptions().unit === unit;
-      } catch (err) {
-        return false;
-      }
+      str = str2;
     }
-    return isSupported(item, locale);
+    return str;
   });
+};
+export const getHourCyclesPreferenceDataForLocaleOrRegion = function getHourCyclesPreferenceDataForLocaleOrRegion(locale, region) {
+  const formatted = locale.toLowerCase();
+  let str = "";
+  if (region) {
+    str = region.toUpperCase();
+  }
+  let v001 = hourCycles.hourCycles[formatted] || tmp2(14055).hourCycles[str];
+  if (!v001) {
+    const concat = "".concat;
+    v001 = tmp2(14055).hourCycles["".concat("", formatted, "-001")];
+  }
+  if (!v001) {
+    v001 = tmp2(14055).hourCycles["001"];
+  }
+  const tmp2Result = _mod1172;
+  return tmp2Result.__spreadArray([], v001, true);
+};
+export const getTimeZonePreferenceForRegion = function getTimeZonePreferenceForRegion(region) {
+  const formatted = region.toLowerCase();
+  const items = [];
+  if (timezones.timezones[formatted]) {
+    const tmp2Result = _mod1172;
+    return tmp2Result.__spreadArray(items, timezones.timezones[formatted], true);
+  } else {
+    return items;
+  }
+};
+export const getWeekDataForRegion = function getWeekDataForRegion(region) {
+  let str = "";
+  if (region) {
+    str = region.toUpperCase();
+  }
+  const weekData = weekData2.weekData;
+  if (!str) {
+    str = "001";
+  }
+  const tmp3 = weekData[str] || weekData2.weekData["001"];
+  return tmp3;
 };

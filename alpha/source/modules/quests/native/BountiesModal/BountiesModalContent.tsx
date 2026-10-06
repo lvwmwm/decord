@@ -1,9 +1,9 @@
-// Module ID: 14864
-// Function ID: 14865
+// Module ID: 14880
+// Function ID: 14881
 // Name: BountiesModalContent
-// Dependencies: [5, 32, 19, 17, 7186, 5623, 14815, 1085, 1096, 21, 558, 576, 1484, 1618, 4890, 587, 1369, 11009, 4857, 504, 8508, 14824, 10949, 14829, 9998, 14831, 14827, 7202, 5630, 7212, 5628, 10940, 14811, 10958, 14865, 14839, 14862, 14838, 6619, 4612, 4891, 4894, 10919, 1121, 14861, 14825, 7183, 4589, 2]
+// Dependencies: [5, 32, 19, 17, 7199, 5630, 14831, 1085, 1096, 21, 558, 576, 1484, 1618, 4896, 587, 1369, 11022, 4863, 504, 8541, 14840, 10962, 14845, 10011, 14847, 14843, 7215, 5637, 7225, 5635, 10953, 14827, 10971, 14881, 14855, 14878, 14854, 6626, 4618, 4897, 4900, 10932, 1121, 14877, 14841, 7196, 4595, 2]
 
-// Module 14864 (BountiesModalContent)
+// Module 14880 (BountiesModalContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,28 +12,28 @@ import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import timing from "timing" /* 4891 */;
-import timingPresets from "timingPresets" /* 4894 */;
-import QuestContent from "QuestContent" /* 5628 */;
-import AdCreativeType from "AdCreativeType" /* 5630 */;
-import QuestDataUtils from "QuestDataUtils" /* 7183 */;
-import AnalyticsActions from "AnalyticsActions" /* 7202 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7212 */;
-import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 10919 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 10940 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 10958 */;
-import AnimationUtils from "AnimationUtils" /* 11009 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 14811 */;
+import timing from "timing" /* 4897 */;
+import timingPresets from "timingPresets" /* 4900 */;
+import QuestContent from "QuestContent" /* 5635 */;
+import AdCreativeType from "AdCreativeType" /* 5637 */;
+import QuestDataUtils from "QuestDataUtils" /* 7196 */;
+import AnalyticsActions from "AnalyticsActions" /* 7215 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7225 */;
+import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 10932 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 10953 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 10971 */;
+import AnimationUtils from "AnimationUtils" /* 11022 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 14827 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import BountyStore from "BountyStore" /* 7186 */;
-import QuestConstants from "QuestConstants" /* 5623 */;
-import BountiesModalConstants from "BountiesModalConstants" /* 14815 */;
+import BountyStore from "BountyStore" /* 7199 */;
+import QuestConstants from "QuestConstants" /* 5630 */;
+import BountiesModalConstants from "BountiesModalConstants" /* 14831 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -74,7 +74,7 @@ function doRewardEarnedHapticFeedback() {
   } while (num3 < 6);
   const obj3 = { time: sum + 100, type: "transient", intensity: 1, sharpness: 0.95 };
   items.push(obj3);
-  const tmp7Result = tmp7(4857);
+  const tmp7Result = tmp7(4863);
   tmp7Result.triggerPattern(items);
 }
 let _slicedToArray = _slicedToArray_mod;
@@ -232,7 +232,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
                         }
                         const tmpResult = tmp(504);
                         const stateFromStores = tmpResult.useStateFromStores(tmp18, tmp20);
-                        const tmpResult2 = tmp(8508);
+                        const tmpResult2 = tmp(8541);
                         const balance = tmpResult2.useFetchVirtualCurrencyBalance().balance;
                         let obj7 = react;
                         const tmp24 = _slicedToArray(react.useState(null), 2);
@@ -778,7 +778,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ bounty, sourceQuestContent } = arg0);
   const height = useWindowDimensionsDefault().height;
   size = closure_20();
-  let obj2 = sharedValue(4612);
+  let obj2 = sharedValue(4618);
   sharedValue = obj2.useSharedValue(0);
   [tmp4, importDefault] = _slicedToArray(react.useState(null), 2);
   const tmp3 = _slicedToArray(react.useState(null), 2);

@@ -1,19 +1,19 @@
-// Module ID: 6609
-// Function ID: 6610
+// Module ID: 6616
+// Function ID: 6617
 // Name: NotificationSettingsUtils
-// Dependencies: [6610, 2051, 5110, 5071, 1085, 4522, 5072, 1095, 1390, 5070, 1252, 2]
+// Dependencies: [6617, 2051, 5116, 5077, 1085, 4528, 5078, 1095, 1390, 5076, 1252, 2]
 // Exports: getCurrentChannelSettings, getCurrentGuildSettings, getManyCurrentChannelSettings, getManyCurrentGuildSettings, muteConfigToTimestamp, trackAccountNotificationSettingUpdated, trackChannelNotificationSettingsUpdate, trackGuildNotificationSettingsUpdate
 
-// Module 6609 (NotificationSettingsUtils)
+// Module 6616 (NotificationSettingsUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import FlagUtils from "FlagUtils" /* 1390 */;
-import NotificationConstants from "NotificationConstants" /* 4522 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
-import ReadStateConstants from "ReadStateConstants" /* 5072 */;
-import LastMentionTimestampStore from "LastMentionTimestampStore" /* 6610 */;
+import NotificationConstants from "NotificationConstants" /* 4528 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5076 */;
+import ReadStateConstants from "ReadStateConstants" /* 5078 */;
+import LastMentionTimestampStore from "LastMentionTimestampStore" /* 6617 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import MessageStore from "MessageStore" /* 5110 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
+import MessageStore from "MessageStore" /* 5116 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import size from "module_2" /* 2 */;

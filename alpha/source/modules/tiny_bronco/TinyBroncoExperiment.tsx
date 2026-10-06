@@ -1,10 +1,10 @@
-// Module ID: 9424
-// Function ID: 9425
+// Module ID: 9437
+// Function ID: 9438
 // Name: TinyBroncoExperiment
 // Dependencies: [1440, 558, 576, 2]
 // Exports: isTinyBroncoEnabled
 
-// Module 9424 (TinyBroncoExperiment)
+// Module 9437 (TinyBroncoExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1440 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,11 +1,11 @@
-// Module ID: 4959
-// Function ID: 4960
+// Module ID: 4965
+// Function ID: 4966
 // Name: VideoQualityManager
-// Dependencies: [4915, 4960, 2]
+// Dependencies: [4921, 4966, 2]
 
-// Module 4959 (VideoQualityManager)
-import MediaSinkWantsLadder from "MediaSinkWantsLadder" /* 4960 */;
-import Constants from "Constants" /* 4915 */;
+// Module 4965 (VideoQualityManager)
+import MediaSinkWantsLadder from "MediaSinkWantsLadder" /* 4966 */;
+import Constants from "Constants" /* 4921 */;
 import size_mod from "module_2" /* 2 */;
 
 let framerate;

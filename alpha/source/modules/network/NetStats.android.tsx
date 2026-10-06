@@ -1,20 +1,20 @@
-// Module ID: 6968
-// Function ID: 6969
+// Module ID: 6981
+// Function ID: 6982
 // Name: NetStats
-// Dependencies: [5, 17, 5436, 6969, 2074, 1085, 3, 1470, 1469, 6983, 1102, 510, 584, 4743, 6970, 6984, 9, 2]
+// Dependencies: [5, 17, 5443, 6982, 2074, 1085, 3, 1470, 1469, 6996, 1102, 510, 584, 4749, 6983, 6997, 9, 2]
 // Exports: getSignalStrength, isSlowNetwork
 
-// Module 6968 (NetStats)
+// Module 6981 (NetStats)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import configure from "configure" /* 1470 */;
-import react_nativeDefault from "react-native" /* 4743 */;
-import RTCBandwidthMonitor from "RTCBandwidthMonitor" /* 6983 */;
+import react_nativeDefault from "react-native" /* 4749 */;
+import RTCBandwidthMonitor from "RTCBandwidthMonitor" /* 6996 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 6969 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5443 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 6982 */;
 import GuildStore from "GuildStore" /* 2074 */;
 import NetworkUtils_mod from "utils/NetworkUtils" /* 1469 */;
 import Dispatcher_mod from "Dispatcher" /* 584 */;
@@ -24,7 +24,7 @@ let c14, c2, c3, c6, c7, closure_1_11, fileOnly, nativeStats, sendMessageOptions
 
 let AppState;
 let closure_4;
-const f93792 = (arg0) => {
+const f93931 = (arg0) => {
   let obj2;
   nativeStats = arg0;
   if (null == closure_1_11) {
@@ -42,7 +42,7 @@ function receiveNetworkInfoformation(result) {
   const SystemResourceManager = React3.SystemResourceManager;
   const getNetworkUsage = SystemResourceManager.getNetworkUsage;
   if (getNetworkUsage != null) {
-    const networkUsage = getNetworkUsage(f93792);
+    const networkUsage = getNetworkUsage(f93931);
   }
 }
 function updateNetworkUsage() {
@@ -50,7 +50,7 @@ function updateNetworkUsage() {
   const SystemResourceManager = React3.SystemResourceManager;
   const getNetworkUsage = SystemResourceManager.getNetworkUsage;
   if (getNetworkUsage != null) {
-    const networkUsage = getNetworkUsage(f93792);
+    const networkUsage = getNetworkUsage(f93931);
   }
 }
 ({ NativeModules: closure_4, AppState } = react_native);

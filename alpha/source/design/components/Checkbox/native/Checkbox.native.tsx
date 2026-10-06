@@ -1,18 +1,18 @@
-// Module ID: 8952
-// Function ID: 8953
+// Module ID: 8981
+// Function ID: 8982
 // Name: Checkbox
-// Dependencies: [17, 21, 4890, 558, 576, 4594, 1126, 5991, 4886, 5593, 2]
+// Dependencies: [17, 21, 4896, 558, 576, 4600, 1126, 5998, 4892, 5600, 2]
 
-// Module 8952 (Checkbox)
+// Module 8981 (Checkbox)
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import react_native from "react-native" /* 4594 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Stack_Stack from "Stack/Stack" /* 5593 */;
-import FormCheckbox from "FormCheckbox" /* 5991 */;
+import react_native from "react-native" /* 4600 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import Stack_Stack from "Stack/Stack" /* 5600 */;
+import FormCheckbox from "FormCheckbox" /* 5998 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -94,7 +94,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onToggle) => {
       let tmp17 = required;
       if (tmp17) {
         const obj4 = { variant: "text-md/bold", color: "text-feedback-critical", "aria-label": intl2.string(intl3.t.EkokLy), children: [" ", "*"] };
-        const Text = tmp(4886).Text;
+        const Text = tmp(4892).Text;
         intl2 = tmp(1126).intl;
         tmp17 = hasOwnProperty(Text, obj4);
       }
@@ -119,7 +119,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onToggle) => {
           let tmp27 = null != description;
           if (tmp27) {
             const obj5 = { variant: "text-sm/normal", color: "text-subtle", children: description };
-            tmp27 = React3(tmp(4886).Text, obj5);
+            tmp27 = React3(tmp(4892).Text, obj5);
           }
           cResult[17] = description;
           cResult[18] = tmp27;
@@ -245,15 +245,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onToggle) => {
     const _HermesInternal2 = HermesInternal;
     str = ", " + description;
   }
-  Stack = tmp2(5593).Stack;
+  Stack = tmp2(5600).Stack;
   const items = [React3(FormCheckbox.FormCheckbox, { checked }), ];
   const obj3 = { style: tmp.textContainer, children: items2 };
   const obj4 = { style: tmp.labelContainer, children: hasOwnProperty(Text, { variant: "text-md/medium", children: items1 }) };
   items1 = [label, ];
-  Text = tmp2(4886).Text;
+  Text = tmp2(4892).Text;
   if (required) {
     const obj5 = { variant: "text-md/bold", color: "text-feedback-critical", "aria-label": intl2.string(intl3.t.EkokLy), children: [" ", "*"] };
-    const Text2 = tmp2(4886).Text;
+    const Text2 = tmp2(4892).Text;
     intl2 = tmp2(1126).intl;
     required = tmp10(Text2, obj5);
   }
@@ -262,7 +262,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onToggle) => {
   let tmp5Result = null != description;
   if (tmp5Result) {
     const obj6 = { variant: "text-sm/normal", color: "text-subtle", children: description };
-    tmp5Result = tmp5(tmp2(4886).Text, obj6);
+    tmp5Result = tmp5(tmp2(4892).Text, obj6);
   }
   obj7 = { direction: "horizontal", children: items };
   items2[1] = tmp5Result;

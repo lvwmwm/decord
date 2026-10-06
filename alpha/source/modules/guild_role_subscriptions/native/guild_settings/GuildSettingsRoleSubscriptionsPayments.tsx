@@ -1,13 +1,13 @@
-// Module ID: 17973
-// Function ID: 17974
+// Module ID: 18019
+// Function ID: 18020
 // Name: GuildSettingsRoleSubscriptionsPayments
-// Dependencies: [19, 21, 558, 576, 16490, 1126, 2]
+// Dependencies: [19, 21, 558, 576, 16530, 1126, 2]
 
-// Module 17973 (GuildSettingsRoleSubscriptionsPayments)
+// Module 18019 (GuildSettingsRoleSubscriptionsPayments)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 16490 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 16530 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

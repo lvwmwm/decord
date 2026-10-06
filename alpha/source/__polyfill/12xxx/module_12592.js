@@ -1,93 +1,85 @@
 // Module ID: 12592
 // Function ID: 12593
-// Dependencies: [12583, 12584, 12566, 12586, 12571]
-// Exports: getClient, getCurrentScope, getGlobalScope, getIsolationScope, getTraceContextFromScope, withIsolationScope, withScope
+// Dependencies: [12593, 12590]
+// Exports: extractTraceparentData, generateSentryTraceHeader, propagationContextFromHeaders
 
 // Module 12592
-import _mod12566 from "module_12566" /* 12566 */;
-import _mod12571 from "module_12571" /* 12571 */;
-import _mod12583 from "module_12583" /* 12583 */;
-import _mod12584 from "module_12584" /* 12584 */;
-import _mod12586 from "module_12586" /* 12586 */;
+import generatePropagationContext from "generatePropagationContext" /* 12590 */;
+import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 12593 */;
 
+const regExp = new RegExp("^[ \\t]*([0-9a-f]{32})?-?([0-9a-f]{16})?-?([01])?[ \\t]*$");
 
-export const getClient = function getClient() {
-  const obj = _mod12583;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod12584;
-  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
-  const currentScope = asyncContextStrategy.getCurrentScope();
-  return currentScope.getClient();
-};
-export const getCurrentScope = function getCurrentScope() {
-  const obj = _mod12583;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod12584;
-  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
-  return asyncContextStrategy.getCurrentScope();
-};
-export const getGlobalScope = function getGlobalScope() {
-  const obj = _mod12566;
-  return obj.getGlobalSingleton("globalScope", () => {
-    const scope = new _mod12586.Scope();
-    return scope;
-  });
-};
-export const getIsolationScope = function getIsolationScope() {
-  const obj = _mod12583;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod12584;
-  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
-  return asyncContextStrategy.getIsolationScope();
-};
-export const getTraceContextFromScope = function getTraceContextFromScope(getPropagationContext) {
-  let parentSpanId;
-  let spanId;
-  let traceId;
-  const propagationContext = getPropagationContext.getPropagationContext();
-  ({ traceId, spanId, parentSpanId } = propagationContext);
-  const obj = _mod12571;
-  return obj.dropUndefinedKeys({ trace_id, span_id, parent_span_id });
-};
-export const withIsolationScope = function withIsolationScope() {
-  let tmp2;
-  let tmp3;
-  const items = [...arguments];
-  const obj = _mod12583;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod12584;
-  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
-  if (2 === items.length) {
-    let result;
-    [tmp2, tmp3] = items;
-    if (tmp2) {
-      result = asyncContextStrategy.withSetIsolationScope(tmp2, tmp3);
-    } else {
-      result = asyncContextStrategy.withIsolationScope(tmp3);
+export const TRACEPARENT_REGEXP = regExp;
+export const extractTraceparentData = function extractTraceparentData(str) {
+  const tmp = str;
+  if (tmp) {
+    const match = str.match(regExp);
+    if (match) {
+      let flag = true;
+      if ("1" !== match[3]) {
+        if ("0" === match[3]) {
+          flag = false;
+        }
+      }
+      return { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
     }
-    return result;
-  } else {
-    return asyncContextStrategy.withIsolationScope(items[0]);
   }
 };
-export const withScope = function withScope() {
-  let tmp2;
-  let tmp3;
-  const items = [...arguments];
-  const obj = _mod12583;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod12584;
-  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
-  if (2 === items.length) {
-    let withSetScopeResult;
-    [tmp2, tmp3] = items;
-    if (tmp2) {
-      withSetScopeResult = asyncContextStrategy.withSetScope(tmp2, tmp3);
-    } else {
-      withSetScopeResult = asyncContextStrategy.withScope(tmp3);
-    }
-    return withSetScopeResult;
-  } else {
-    return asyncContextStrategy.withScope(items[0]);
+export const generateSentryTraceHeader = function generateSentryTraceHeader() {
+  let traceId = arg0;
+  if (arg0 === undefined) {
+    const obj = generatePropagationContext;
+    traceId = obj.generateTraceId();
   }
+  let spanId = arg1;
+  if (arg1 === undefined) {
+    const obj2 = generatePropagationContext;
+    spanId = obj2.generateSpanId();
+  }
+  let str = "";
+  if (undefined !== arg2) {
+    let str2 = "-0";
+    if (arg2) {
+      str2 = "-1";
+    }
+    str = str2;
+  }
+  return "" + traceId + "-" + spanId + str;
+};
+export const propagationContextFromHeaders = function propagationContextFromHeaders(str, arg1) {
+  let parentSampled;
+  let tmp4Result;
+  let tmp4Result3;
+  let tmp4Result4;
+  let tmp;
+  if (str) {
+    const match = str.match(regExp);
+    if (match) {
+      let flag = true;
+      if ("1" !== match[3]) {
+        if ("0" === match[3]) {
+          flag = false;
+        }
+      }
+      tmp = { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
+      const obj = { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
+    }
+  }
+  const obj2 = BAGGAGE_HEADER_NAME;
+  let result = obj2.baggageHeaderToDynamicSamplingContext(arg1);
+  if (tmp) {
+    if (tmp.traceId) {
+      const obj3 = { traceId: null, parentSpanId: null, spanId: tmp4Result.generateSpanId(), sampled: parentSampled, dsc: result };
+      ({ traceId: obj7.traceId, parentSpanId: obj7.parentSpanId, parentSampled } = tmp);
+      tmp4Result = generatePropagationContext;
+      if (!result) {
+        result = {};
+      }
+      return obj3;
+    }
+  }
+  const obj4 = { traceId: tmp4Result3.generateTraceId(), spanId: tmp4Result4.generateSpanId() };
+  tmp4Result3 = generatePropagationContext;
+  tmp4Result4 = generatePropagationContext;
+  return obj4;
 };

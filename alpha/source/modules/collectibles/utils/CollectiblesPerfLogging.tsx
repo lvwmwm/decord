@@ -1,10 +1,10 @@
-// Module ID: 7099
-// Function ID: 7100
+// Module ID: 7112
+// Function ID: 7113
 // Name: CollectiblesPerfLogging
 // Dependencies: [1085, 1252, 2]
 // Exports: trackShopPerf
 
-// Module 7099 (CollectiblesPerfLogging)
+// Module 7112 (CollectiblesPerfLogging)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import size from "module_2" /* 2 */;

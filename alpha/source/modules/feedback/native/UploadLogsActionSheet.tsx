@@ -1,22 +1,22 @@
-// Module ID: 16642
-// Function ID: 16643
+// Module ID: 17532
+// Function ID: 17533
 // Name: UploadLogsActionSheet
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 12528, 1252, 4854, 6644, 1126, 4886, 5594, 6645, 2]
+// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 12543, 1252, 4860, 6651, 1126, 4892, 5601, 6652, 2]
 
-// Module 16642 (UploadLogsActionSheet)
+// Module 17532 (UploadLogsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6644 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
-import DebugUploadManager from "DebugUploadManager" /* 12528 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import components_Button_Button from "components/Button/Button" /* 5601 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6651 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6652 */;
+import DebugUploadManager from "DebugUploadManager" /* 12543 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp3;
-const ActionSheetActionCreatorsDefault = tmp3(4854);
+const ActionSheetActionCreatorsDefault = tmp3(4860);
 const View = react_native.View;
 ({ AnalyticEvents: closure_4, DebugLogCategory: hasOwnProperty } = Constants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -69,7 +69,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((mediaSessionId) => {
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       let obj2 = { title: intl.string(tmp(1126).t.KTjjrG) };
-      const BottomSheetTitleHeader = tmp(6644).BottomSheetTitleHeader;
+      const BottomSheetTitleHeader = tmp(6651).BottomSheetTitleHeader;
       intl = tmp(1126).intl;
       const tmp9 = closure_6(BottomSheetTitleHeader, obj2);
       cResult[3] = tmp9;
@@ -89,7 +89,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((mediaSessionId) => {
     }
     if (cResult[5] !== tmp4.body) {
       const obj3 = { variant: "text-sm/normal", color: "text-muted", style: body, children: tmp10 };
-      const tmp14 = closure_6(mediaSessionId(4886).Text, obj3);
+      const tmp14 = closure_6(mediaSessionId(4892).Text, obj3);
       cResult[5] = tmp4.body;
       cResult[6] = tmp14;
       tmp12 = tmp14;
@@ -107,7 +107,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((mediaSessionId) => {
     }
     if (cResult[8] !== tmp5) {
       const obj4 = { text: tmp15, onPress: tmp5 };
-      const tmp19 = closure_6(mediaSessionId(5594).Button, obj4);
+      const tmp19 = closure_6(mediaSessionId(5601).Button, obj4);
       cResult[8] = tmp5;
       cResult[9] = tmp19;
       tmp17 = tmp19;
@@ -142,7 +142,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((mediaSessionId) => {
               return obj.hideActionSheet();
             }
       };
-      const tmp28 = closure_6(mediaSessionId(5594).Button, obj6);
+      const tmp28 = closure_6(mediaSessionId(5601).Button, obj6);
       cResult[13] = tmp28;
       tmp26 = tmp28;
     } else {
@@ -162,7 +162,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((mediaSessionId) => {
     const obj7 = { header: tmp7, children: closure_7(View, obj8) };
     obj8 = { style: container, children: items };
     items = [tmp12, tmp17, tmp20, tmp26];
-    BottomSheet = tmp(6645).BottomSheet;
+    BottomSheet = tmp(6652).BottomSheet;
     const tmp33 = closure_6(BottomSheet, obj7);
     cResult[14] = tmp4.container;
     cResult[15] = tmp12;

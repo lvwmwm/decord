@@ -1,16 +1,16 @@
-// Module ID: 10600
-// Function ID: 10601
+// Module ID: 10613
+// Function ID: 10614
 // Name: useFastestListTableRowPlaceholderConfig
-// Dependencies: [19, 4890, 587, 1188, 5620, 558, 576, 6559, 2]
+// Dependencies: [19, 4896, 587, 1188, 5627, 558, 576, 6566, 2]
 
-// Module 10600 (useFastestListTableRowPlaceholderConfig)
+// Module 10613 (useFastestListTableRowPlaceholderConfig)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1188 */;
-import LegacyTokens from "LegacyTokens" /* 5620 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6559 */;
+import LegacyTokens from "LegacyTokens" /* 5627 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6566 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,21 +1,21 @@
-// Module ID: 11409
-// Function ID: 11410
+// Module ID: 11422
+// Function ID: 11423
 // Name: GuildIconUploader
-// Dependencies: [19, 17, 1193, 21, 4890, 587, 4589, 4729, 11410, 11411, 4886, 1126, 11412, 11413, 5909, 2]
+// Dependencies: [19, 17, 1193, 21, 4896, 587, 4595, 4735, 11423, 11424, 4892, 1126, 11425, 11426, 5916, 2]
 
-// Module 11409 (GuildIconUploader)
+// Module 11422 (GuildIconUploader)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import native from "native" /* 4589 */;
-import shared from "shared" /* 4729 */;
-import Pressables from "Pressables" /* 5909 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11412 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11413 */;
+import native from "native" /* 4595 */;
+import shared from "shared" /* 4735 */;
+import Pressables from "Pressables" /* 5916 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11425 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11426 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1193 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
@@ -62,14 +62,14 @@ class GuildIconUploader extends PureComponent {
       const tmp7 = _false;
       const tmp9 = React3;
       if (obj6.isThemeDark(ThemeStore.theme)) {
-        tmp13Result = tmp13(11410);
+        tmp13Result = tmp13(11423);
       } else {
-        tmp13Result = tmp13(11411);
+        tmp13Result = tmp13(11424);
       }
       const obj = { source: tmp13Result };
       items2 = [metroRequire(tmp9, obj), ];
       const obj5 = { style: tmp.emptyGuildIconText, variant: "text-xs/bold", color: "text-default", children: str.toUpperCase() };
-      const Text = tmp10(4886).Text;
+      const Text = tmp10(4892).Text;
       const intl = tmp10(1126).intl;
       str = intl.string(intl3.t["3UB9ad"]);
       items2[1] = metroRequire(Text, obj5);

@@ -1,13 +1,13 @@
-// Module ID: 12377
-// Function ID: 12378
+// Module ID: 12392
+// Function ID: 12393
 // Name: WorldIllocon
-// Dependencies: [21, 558, 576, 12378, 5974, 2]
+// Dependencies: [21, 558, 576, 12393, 5981, 2]
 
-// Module 12377 (WorldIllocon)
+// Module 12392 (WorldIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import _modDef12378 from "module_12378" /* 12378 */;
+import FastImageDefault from "FastImage" /* 5981 */;
+import _modDef12393 from "module_12393" /* 12393 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef12378 };
+    const obj2 = { uri: _modDef12393 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num === undefined) {
     num = 64;
   }
-  const obj2 = { uri: _modDef12378 };
+  const obj2 = { uri: _modDef12393 };
   FastImageDefault;
   const items = [{ width: num, height: num }];
   return <tmp fadeDuration={0} source={obj2} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;

@@ -1,18 +1,19 @@
-// Module ID: 8988
-// Function ID: 8989
+// Module ID: 9021
+// Function ID: 9022
 // Name: launchFrame
-// Dependencies: [5, 8703, 8704, 8705, 8989, 584, 8993, 8990, 9038, 9040, 2]
+// Dependencies: [5, 9000, 8738, 9001, 9022, 584, 9026, 9071, 9023, 9072, 9076, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFramePrefersPictureInPictureOnNavigateAway, updateFramePanelMode
 
-// Module 8988 (launchFrame)
+// Module 9021 (launchFrame)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 8705 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 8989 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8993 */;
-import getFramesManagerDefault from "getFramesManager" /* 9040 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 9001 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 9022 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9026 */;
+import getFrameRequestSurfaceTypeDefault from "getFrameRequestSurfaceType" /* 9071 */;
+import getFramesManagerDefault from "getFramesManager" /* 9076 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 8703 */;
-import FramesConstants from "FramesConstants" /* 8704 */;
+import FramesStore from "FramesStore" /* 9000 */;
+import FramesConstants from "FramesConstants" /* 8738 */;
 import size from "module_2" /* 2 */;
 
 let analyticsContext, customId, dispatchResult1, error, hostWindowKey, intent, message, proxyTicket, referrerId;
@@ -34,8 +35,8 @@ let obj = function _launchFrame() {
       let c3;
       let c4;
       let c5;
-      let obj11;
       let obj6;
+      let tmp50;
       if (c6 === 2) {
         c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -74,7 +75,7 @@ let obj = function _launchFrame() {
               message = undefined;
               hostWindowKey = 1;
               c6 = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === hostWindowKey) {
             if (arg0 === 1) {
@@ -100,26 +101,28 @@ let obj = function _launchFrame() {
                   const result = obj8.leaveCurrentEmbeddedActivity();
                   closure_130_12();
                 }
-                const obj12 = { type: "FRAME_LAUNCH_START", applicationId, frameId: value, surface };
+                const obj11 = { type: "FRAME_LAUNCH_START", applicationId, frameId: value, surface };
                 const obj9 = closure_130_1(closure_130_2[5]);
-                obj9.dispatch(obj12);
+                obj9.dispatch(obj11);
                 analyticsContext = 1;
+                const createProxyTicket = closure_130_0(closure_130_2[6]).createProxyTicket;
+                closure_130_0(closure_130_2[6]);
                 hostWindowKey = 4;
                 c6 = 1;
-                const obj13 = { value: obj11.createProxyTicket(applicationId, closure_130_7(surface)), done: false };
-                obj11 = closure_130_0(closure_130_2[6]);
-                return obj13;
+                const obj12 = { value: createProxyTicket(applicationId, tmp50, closure_130_1(closure_130_2[7])(surface)), done: false };
+                tmp50 = closure_130_7(surface);
+                return obj12;
               }
             }
           } else if (2 === hostWindowKey) {
             analyticsContext = 0;
             error = closure_3;
-            closure_9 = closure_130_1(closure_130_2[7])();
+            closure_9 = closure_130_1(closure_130_2[8])();
             hostWindowKey = 3;
             c6 = 1;
-            const obj14 = { value: obj6.getActivityLaunchErrorInfo(error, applicationId), done: false };
-            obj6 = closure_130_0(closure_130_2[8]);
-            return obj14;
+            const obj13 = { value: obj6.getActivityLaunchErrorInfo(error, applicationId), done: false };
+            obj6 = closure_130_0(closure_130_2[9]);
+            return obj13;
           } else if (3 === hostWindowKey) {
             if (arg0 === 1) {
               c6 = 3;
@@ -130,9 +133,9 @@ let obj = function _launchFrame() {
             } else {
               message = value;
               closure_9.showLaunchErrorModal(message.message);
-              const obj16 = { type: "FRAME_LAUNCH_FAIL", applicationId, frameId: value, error, analyticsContext };
+              const obj15 = { type: "FRAME_LAUNCH_FAIL", applicationId, frameId: value, error, analyticsContext };
               const obj3 = closure_130_1(closure_130_2[5]);
-              obj3.dispatch(obj16);
+              obj3.dispatch(obj15);
               throw error;
             }
           } else if (arg0 === 1) {
@@ -144,18 +147,18 @@ let obj = function _launchFrame() {
             return { value, done: true };
           } else {
             proxyTicket = value;
-            const obj19 = { type: "FRAME_LAUNCH", applicationId, frameId: value, surface, proxyTicket, customId, referrerId, analyticsContext, hostWindowKey };
-            const obj18 = closure_130_1(closure_130_2[5]);
-            obj18.dispatch(obj19);
+            const obj18 = { type: "FRAME_LAUNCH", applicationId, frameId: value, surface, proxyTicket, customId, referrerId, analyticsContext, hostWindowKey };
+            const obj17 = closure_130_1(closure_130_2[5]);
+            obj17.dispatch(obj18);
             analyticsContext = 0;
             c6 = 3;
             return { value, done: true };
           }
-        } catch (tmp63) {
-          closure_3 = tmp63;
+        } catch (tmp68) {
+          closure_3 = tmp68;
           if (0 === analyticsContext) {
             c6 = 3;
-            throw tmp63;
+            throw tmp68;
           } else {
             hostWindowKey = 2;
           }
@@ -246,7 +249,7 @@ obj = function _refreshProxyTicket() {
     let c6 = 0;
     let c4 = 0;
     return (async (arg0, value) => {
-      let obj22;
+      let tmp81;
       if (c6 === 2) {
         c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -288,10 +291,12 @@ obj = function _refreshProxyTicket() {
                 const obj20 = DispatcherDefault;
                 obj20.dispatch(obj5);
                 c4 = 2;
+                const createProxyTicket = EmbeddedActivitiesActionCreators.createProxyTicket;
+                EmbeddedActivitiesActionCreators;
                 c5 = 4;
                 c6 = 1;
-                const obj7 = { value: obj22.createProxyTicket(applicationId, closure_2_7(surface)), done: false };
-                obj22 = EmbeddedActivitiesActionCreators;
+                const obj7 = { value: createProxyTicket(applicationId, tmp81, getFrameRequestSurfaceTypeDefault(surface)), done: false };
+                tmp81 = closure_2_7(surface);
                 return obj7;
               }
             }
@@ -304,8 +309,8 @@ obj = function _refreshProxyTicket() {
           } else if (2 === c5) {
             c4 = 1;
             let closure_5 = tmp49;
-            tmp49 = closure_130_1(closure_130_2[7])();
-            const obj9 = closure_130_0(closure_130_2[8]);
+            tmp49 = closure_130_1(closure_130_2[8])();
+            const obj9 = closure_130_0(closure_130_2[9]);
             dispatchResult1 = obj9.getActivityLaunchErrorInfo(closure_5, applicationId);
             c5 = 3;
             c6 = 1;

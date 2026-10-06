@@ -1,16 +1,16 @@
-// Module ID: 8741
-// Function ID: 8742
+// Module ID: 8773
+// Function ID: 8774
 // Name: TwoWayLinkLanding
-// Dependencies: [19, 17, 5440, 21, 4890, 558, 576, 8742, 504, 4886, 5993, 1126, 5594, 5593, 6619, 2]
+// Dependencies: [19, 17, 5447, 21, 4896, 558, 576, 8774, 504, 4892, 6000, 1126, 5601, 5600, 6626, 2]
 
-// Module 8741 (TwoWayLinkLanding)
-import Text_Text from "Text/Text" /* 4886 */;
-import TableRow2 from "TableRow" /* 5993 */;
+// Module 8773 (TwoWayLinkLanding)
+import Text_Text from "Text/Text" /* 4892 */;
+import TableRow2 from "TableRow" /* 6000 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5440 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5447 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

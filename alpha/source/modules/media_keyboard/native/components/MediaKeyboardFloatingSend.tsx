@@ -1,23 +1,23 @@
-// Module ID: 16611
-// Function ID: 16612
+// Module ID: 16649
+// Function ID: 16650
 // Name: MediaKeyboardFloatingSend
-// Dependencies: [32, 19, 17, 7267, 21, 4890, 587, 558, 576, 504, 4612, 1618, 5597, 683, 5605, 1126, 4841, 8574, 2]
+// Dependencies: [32, 19, 17, 7280, 21, 4896, 587, 558, 576, 504, 4618, 1618, 5604, 683, 5612, 1126, 4847, 8609, 2]
 
-// Module 16611 (MediaKeyboardFloatingSend)
+// Module 16649 (MediaKeyboardFloatingSend)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import intl2 from "intl" /* 1126 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import SendMessageIcon from "SendMessageIcon" /* 4841 */;
-import spring from "spring" /* 5597 */;
-import FloatingActionButton2 from "FloatingActionButton" /* 8574 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import SendMessageIcon from "SendMessageIcon" /* 4847 */;
+import spring from "spring" /* 5604 */;
+import FloatingActionButton2 from "FloatingActionButton" /* 8609 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7267 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7280 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -315,7 +315,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
               cResult[26] = tmp40;
               cResult[27] = tmp27;
               cResult[28] = tmp28;
-              const tmp45 = closure_7(bottom(4612).View, obj5);
+              const tmp45 = closure_7(bottom(4618).View, obj5);
               class T {
                 constructor() {
                   let pointerEvents = "none";
@@ -334,7 +334,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
             const tmp42 = closure_6(FloatingActionButton2.FloatingActionButton, obj6);
           }
           const obj7 = { style: tmp4.gradient, pointerEvents: "none" };
-          const tmp5Result = bottom(5605);
+          const tmp5Result = bottom(5612);
           const merged = Object.assign(tmp23);
           cResult[17] = tmp23;
           cResult[18] = tmp4.gradient;

@@ -1,10 +1,10 @@
-// Module ID: 12329
-// Function ID: 12330
+// Module ID: 12344
+// Function ID: 12345
 // Name: ContactSyncUtils
-// Dependencies: [5, 17, 5440, 12328, 12327, 1085, 1370, 5083, 1260, 584, 12330, 2028, 1242, 558, 576, 504, 1390, 2115, 4565, 5093, 2]
+// Dependencies: [5, 17, 5447, 12343, 12342, 1085, 1370, 5089, 1260, 584, 12345, 2028, 1242, 558, 576, 504, 1390, 2115, 4571, 5099, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts
 
-// Module 12329 (ContactSyncUtils)
+// Module 12344 (ContactSyncUtils)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
@@ -13,14 +13,14 @@ import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
 import FlagUtils from "FlagUtils" /* 1390 */;
 import UserSettings from "UserSettings" /* 2028 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import LinkingDefault from "Linking" /* 4565 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5083 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import ContactSyncManager from "ContactSyncManager" /* 12330 */;
+import LinkingDefault from "Linking" /* 4571 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5089 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
+import ContactSyncManager from "ContactSyncManager" /* 12345 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5440 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12328 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12327 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5447 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12343 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12342 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -83,7 +83,7 @@ let obj = function _uploadContacts() {
             body = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {

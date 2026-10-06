@@ -1,23 +1,23 @@
-// Module ID: 14967
-// Function ID: 14968
+// Module ID: 14982
+// Function ID: 14983
 // Name: QuestOrbMultiplierPerkPill
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 4791, 4587, 4580, 4727, 10911, 10008, 14968, 1126, 8313, 4886, 5605, 5909, 2]
+// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 4797, 4593, 4586, 4733, 10924, 10021, 14983, 1126, 8346, 4892, 5612, 5916, 2]
 
-// Module 14967 (QuestOrbMultiplierPerkPill)
+// Module 14982 (QuestOrbMultiplierPerkPill)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import useToken from "useToken" /* 4580 */;
-import themes from "themes" /* 4587 */;
-import ColorUtils from "ColorUtils" /* 4727 */;
-import useTheme from "useTheme" /* 4791 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 10008 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 10911 */;
-import openQuestOrbMultiplierPerkInfoActionSheetDefault from "openQuestOrbMultiplierPerkInfoActionSheet" /* 14968 */;
+import useToken from "useToken" /* 4586 */;
+import themes from "themes" /* 4593 */;
+import ColorUtils from "ColorUtils" /* 4733 */;
+import useTheme from "useTheme" /* 4797 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 10021 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 10924 */;
+import openQuestOrbMultiplierPerkInfoActionSheetDefault from "openQuestOrbMultiplierPerkInfoActionSheet" /* 14983 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -243,7 +243,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     let tmp19 = tmp21Result;
     const tmp17 = closure_7;
     if (!tmp13) {
-      tmp19 = closure_6(tmp2(8313).NitroWheelIcon, { size: "xs", color: "white" });
+      tmp19 = closure_6(tmp2(8346).NitroWheelIcon, { size: "xs", color: "white" });
     }
     const obj13 = { children: items2 };
     items2 = [tmp19, ];
@@ -268,10 +268,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     const obj17 = { backgroundColor: tmp14 };
     items3[1] = obj17;
     const tmp16Result = closure_8(tmp17, obj13);
-    const PressableOpacity = tmp2(5909).PressableOpacity;
+    const PressableOpacity = tmp2(5916).PressableOpacity;
     if (!tmp13) {
       const obj18 = { style: tmp.fullGradient, colors: items, start, end };
-      tmp21Result = tmp21(tmp6(5605), obj18);
+      tmp21Result = tmp21(tmp6(5612), obj18);
     }
     items4 = [tmp21Result, ];
     const obj19 = { style: tmp.fullGradientContent, children: tmp16Result };

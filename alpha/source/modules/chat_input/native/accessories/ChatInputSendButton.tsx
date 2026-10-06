@@ -1,26 +1,26 @@
-// Module ID: 11884
-// Function ID: 11885
+// Module ID: 11898
+// Function ID: 11899
 // Name: ChatInputSendButton
-// Dependencies: [32, 19, 17, 4879, 7171, 11576, 21, 4890, 587, 558, 576, 4580, 11885, 11868, 4841, 1126, 11876, 504, 4589, 11889, 4612, 2]
+// Dependencies: [32, 19, 17, 4885, 7184, 11589, 21, 4896, 587, 558, 576, 4586, 11899, 11882, 4847, 1126, 11890, 504, 4595, 11903, 4618, 2]
 
-// Module 11884 (ChatInputSendButton)
+// Module 11898 (ChatInputSendButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import useToken from "useToken" /* 4580 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
-import SendMessageIcon from "SendMessageIcon" /* 4841 */;
-import ChatInputConstants from "ChatInputConstants" /* 11576 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 11868 */;
-import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 11876 */;
-import useChatInputFloatingWidthDefault from "useChatInputFloatingWidth" /* 11889 */;
+import useToken from "useToken" /* 4586 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4618 */;
+import SendMessageIcon from "SendMessageIcon" /* 4847 */;
+import ChatInputConstants from "ChatInputConstants" /* 11589 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 11882 */;
+import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 11890 */;
+import useChatInputFloatingWidthDefault from "useChatInputFloatingWidth" /* 11903 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import SlowmodeStore from "SlowmodeStore" /* 7171 */;
-import createStyles from "createStyles" /* 4890 */;
+import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import SlowmodeStore from "SlowmodeStore" /* 7184 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -112,7 +112,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
   }
   if (type === constants.BUTTON_SEND_VOICE_MESSAGE || type === constants.BUTTON_SEND_VOICE_MESSAGE_DISABLED) {
     const obj6 = { disabled: isOnCooldown, channelId };
-    tmp9Result = tmp9(tmp4(11885), obj6);
+    tmp9Result = tmp9(tmp4(11899), obj6);
   } else {
     ({ button: obj4.style, buttonActive: obj4.activeStyle, iconActive: obj4.activeIconStyle } = tmp6);
     const obj9 = { active: true, style: null, activeStyle: null, activeIconStyle: null, IconComponent: SendMessageIcon.SendMessageIcon, accessibilityLabel: intl.string(intl2.t.TXNS7S), onPress: onSendMessage, disabled: !sendEnabled };
@@ -151,7 +151,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
   ChatInputActionButtonTransitionItemDefault;
   if (type === constants.BUTTON_SEND_VOICE_MESSAGE || type === constants.BUTTON_SEND_VOICE_MESSAGE_DISABLED) {
     const obj5 = { disabled: isOnCooldown, channelId };
-    tmp7Result = tmp7(tmp3(11885), obj5);
+    tmp7Result = tmp7(tmp3(11899), obj5);
   } else {
     ({ button: obj4.style, buttonActive: obj4.activeStyle, iconActive: obj4.activeIconStyle } = tmp5);
     const obj8 = { active: true, style: null, activeStyle: null, activeIconStyle: null, IconComponent: SendMessageIcon.SendMessageIcon, accessibilityLabel: intl.string(intl2.t.TXNS7S), onPress: onSendMessage, disabled: !sendEnabled };
@@ -187,11 +187,11 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   if (tmp4) {
     tmp4 = requireTextContent;
   }
-  const tmpResult = channel(4580);
+  const tmpResult = channel(4586);
   const token = tmpResult.useToken(nativeDefault.modules.mobile.CHAT_INPUT_SEND_BUTTON_WIDTH);
-  const tmpResult5 = channel(4580);
+  const tmpResult5 = channel(4586);
   const token1 = tmpResult5.useToken(nativeDefault.modules.mobile.CHAT_INPUT_SEND_BUTTON_HEIGHT);
-  const tmpResult6 = channel(4580);
+  const tmpResult6 = channel(4586);
   const token2 = tmpResult6.useToken(nativeDefault.modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
   const tmp8 = closure_11(token, token1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -348,7 +348,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
                   return useReducedMotion.useReducedMotion;
                 }
               }
-              const tmp29 = jsx(channel(4589).TransitionGroup, { items: tmp21, renderItem: renderChatInputSendButton, getItemKey: getChatInputSendButtonItemKey });
+              const tmp29 = jsx(channel(4595).TransitionGroup, { items: tmp21, renderItem: renderChatInputSendButton, getItemKey: getChatInputSendButtonItemKey });
               cResult[26] = tmp21;
               cResult[27] = tmp29;
               tmp26 = tmp29;
@@ -419,11 +419,11 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let stateFromStores1;
   react = undefined;
   canSendVoiceMessage = undefined;
-  let obj = channel(4580);
+  let obj = channel(4586);
   const token = obj.useToken(onSendMessage(587).modules.mobile.CHAT_INPUT_SEND_BUTTON_WIDTH);
-  const obj2 = channel(4580);
+  const obj2 = channel(4586);
   const token1 = obj2.useToken(onSendMessage(587).modules.mobile.CHAT_INPUT_SEND_BUTTON_HEIGHT);
-  const obj3 = channel(4580);
+  const obj3 = channel(4586);
   const token2 = obj3.useToken(onSendMessage(587).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
   let items = [AccessibilityStore];
   const tmp7 = closure_11(token, token1);
@@ -467,17 +467,17 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     const tmp19 = canSendVoiceMessage;
     if (tmp19) {
       const obj8 = { disabled: stateFromStores1, channelId: channel.id };
-      tmp15Result = tmp15(tmp3(11885), obj8);
+      tmp15Result = tmp15(tmp3(11899), obj8);
     } else {
       ({ button: obj11.style, buttonActive: obj11.activeStyle, iconActive: obj11.activeIconStyle } = tmp7);
-      const obj9 = { active: true, style: null, activeStyle: null, activeIconStyle: null, IconComponent: channel(4841).SendMessageIcon, accessibilityLabel: intl.string(channel(1126).t.TXNS7S), onPress: onSendMessage, disabled: !tmp12 };
-      const tmp3Result = onSendMessage(11868);
+      const obj9 = { active: true, style: null, activeStyle: null, activeIconStyle: null, IconComponent: channel(4847).SendMessageIcon, accessibilityLabel: intl.string(channel(1126).t.TXNS7S), onPress: onSendMessage, disabled: !tmp12 };
+      const tmp3Result = onSendMessage(11882);
       intl = tmp(1126).intl;
       tmp15Result = tmp15(tmp3Result, obj9);
     }
     return <tmp19 style={size}>{tmp15Result}</tmp19>;
   } else {
-    return <closure_15 buttonWidth={token} buttonHeight={token1} buttonMargin={token2} sendVoiceMessageEnabled={canSendVoiceMessage}>{jsx(channel(4589).TransitionGroup, { items: memo, renderItem: renderChatInputSendButton, getItemKey: getChatInputSendButtonItemKey })}</closure_15>;
+    return <closure_15 buttonWidth={token} buttonHeight={token1} buttonMargin={token2} sendVoiceMessageEnabled={canSendVoiceMessage}>{jsx(channel(4595).TransitionGroup, { items: memo, renderItem: renderChatInputSendButton, getItemKey: getChatInputSendButtonItemKey })}</closure_15>;
   }
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -519,7 +519,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((sendVoiceMessa
           }
           return tmp10;
         }
-        const tmp12 = jsx(tmp7(4612).View, { style: tmp9, children });
+        const tmp12 = jsx(tmp7(4618).View, { style: tmp9, children });
         cResult[9] = children;
         cResult[10] = tmp9;
         cResult[11] = tmp12;

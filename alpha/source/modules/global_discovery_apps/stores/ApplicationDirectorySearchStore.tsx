@@ -1,13 +1,13 @@
-// Module ID: 11682
-// Function ID: 11683
+// Module ID: 11696
+// Function ID: 11697
 // Name: ApplicationDirectorySearchStore
-// Dependencies: [11683, 1444, 504, 584, 2]
+// Dependencies: [11697, 1444, 504, 584, 2]
 
-// Module 11682 (ApplicationDirectorySearchStore)
+// Module 11696 (ApplicationDirectorySearchStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import LRUCacheDefault from "LRUCache" /* 1444 */;
-import SearchAppsRequestSource from "SearchAppsRequestSource" /* 11683 */;
+import SearchAppsRequestSource from "SearchAppsRequestSource" /* 11697 */;
 import size from "module_2" /* 2 */;
 
 let set;

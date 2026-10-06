@@ -1,22 +1,22 @@
-// Module ID: 9879
-// Function ID: 9880
+// Module ID: 9892
+// Function ID: 9893
 // Name: DoubleTapEmojiUpdatedToast
-// Dependencies: [19, 4879, 1380, 21, 4890, 587, 1369, 558, 576, 504, 1402, 6625, 1126, 4886, 5770, 4590, 4574, 4568, 2]
+// Dependencies: [19, 4885, 1380, 21, 4896, 587, 1369, 558, 576, 504, 1402, 6632, 1126, 4892, 5777, 4596, 4580, 4574, 2]
 // Exports: getToastEmojiEntity, showDoubleTapEmojiUpdatedToast
 
-// Module 9879 (DoubleTapEmojiUpdatedToast)
+// Module 9892 (DoubleTapEmojiUpdatedToast)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import EmojiConstants from "EmojiConstants" /* 1380 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import EmojiDefault from "Emoji" /* 6625 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import EmojiDefault from "Emoji" /* 6632 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -162,7 +162,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
   const tmp4 = jsx;
   const obj2 = { style: tmp2.toastEmoji, fastImageStyle: tmp2.toastEmojiCustom, textEmojiStyle: tmp2.toastEmojiText, name: str, src: memo };
   str = "";
-  const tmp5 = stateFromStores(6625);
+  const tmp5 = stateFromStores(6632);
   if (null == emoji.id) {
     str = emoji.surrogates;
   }
@@ -241,15 +241,15 @@ export const showDoubleTapEmojiUpdatedToast = function showDoubleTapEmojiUpdated
   let obj5;
   let obj9;
   emoji = emoji.emoji;
-  const obj = emoji(5770);
+  const obj = emoji(5777);
   if (obj.getIsScreenReaderEnabled()) {
-    const AccessibilityAnnouncer = tmp(4590).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = tmp(4596).AccessibilityAnnouncer;
     const announce = AccessibilityAnnouncer.announce;
     const intl2 = tmp(1126).intl;
     const obj2 = { emojiName: emoji.name };
     announce(intl2.formatToPlainString(emoji(1126).t.nKY0Fl, obj2));
   } else {
-    const tmpResult = emoji(4574);
+    const tmpResult = emoji(4580);
     const designSystemsNotificationComponents = tmpResult.getDesignSystemsNotificationComponents("showDoubleTapEmojiUpdatedToast");
     const obj3 = ToastActionCreatorsDefault;
     if (designSystemsNotificationComponents) {

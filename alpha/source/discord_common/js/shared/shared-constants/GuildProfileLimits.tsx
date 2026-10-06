@@ -1,9 +1,9 @@
-// Module ID: 5939
-// Function ID: 5940
+// Module ID: 5946
+// Function ID: 5947
 // Name: GuildProfileLimits
 // Dependencies: [2]
 
-// Module 5939 (GuildProfileLimits)
+// Module 5946 (GuildProfileLimits)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/GuildProfileLimits.tsx");

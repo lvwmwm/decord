@@ -1,21 +1,21 @@
-// Module ID: 15146
-// Function ID: 15147
+// Module ID: 15161
+// Function ID: 15162
 // Name: AccessibilitySetting
-// Dependencies: [32, 19, 1085, 2048, 21, 2036, 558, 576, 6891, 1188, 1126, 11129, 15147, 15149, 2]
+// Dependencies: [32, 19, 1085, 2048, 21, 2036, 558, 576, 6901, 1188, 1126, 11142, 15162, 15164, 2]
 
-// Module 15146 (AccessibilitySetting)
+// Module 15161 (AccessibilitySetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import dismissible_content from "dismissible_content" /* 2036 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6891 */;
-import AccessibilityIcon from "AccessibilityIcon" /* 15147 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6901 */;
+import AccessibilityIcon from "AccessibilityIcon" /* 15162 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 11142 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -89,7 +89,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp4;
   let obj = first(576);
   const cResult = obj.c(3);
-  const obj2 = first(6891);
+  const obj2 = first(6901);
   [first, tmp4] = obj2.useSelectedDismissibleContent(items);
   dependencyMap = tmp4;
   if (cResult[0] === tmp4) {
@@ -121,7 +121,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   let closure_1;
   let first;
-  let obj = first(6891);
+  let obj = first(6901);
   const tmp = _slicedToArray(obj.useSelectedDismissibleContent(items), 2);
   first = tmp[0];
   dependencyMap = tmp3;

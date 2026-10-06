@@ -1,19 +1,19 @@
-// Module ID: 12337
-// Function ID: 12338
+// Module ID: 12352
+// Function ID: 12353
 // Name: NewUserPermissionsOnboarding
-// Dependencies: [19, 17, 21, 4890, 6068, 587, 558, 576, 4886, 1126, 5594, 2]
+// Dependencies: [19, 17, 21, 4896, 6075, 587, 558, 576, 4892, 1126, 5601, 2]
 
-// Module 12337 (NewUserPermissionsOnboarding)
+// Module 12352 (NewUserPermissionsOnboarding)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import NavigatorConstants from "NavigatorConstants" /* 6068 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import components_Button_Button from "components/Button/Button" /* 5601 */;
+import NavigatorConstants from "NavigatorConstants" /* 6075 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -204,7 +204,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             if (tmp29) {
               const obj9 = { style: tmp5.buttonWrapper, children: React3(Button, obj10) };
               obj10 = { variant: "secondary", text: intl2.string(intl3.t["5Wxrcd"]), onPress: onDontAllow, grow: true };
-              Button = tmp(5594).Button;
+              Button = tmp(5601).Button;
               intl2 = tmp(1126).intl;
               tmp29 = React3(React2, obj9);
             }
@@ -289,14 +289,14 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items2[1] = tmp8;
   const obj8 = { style: items2, children: React3(Button, obj9) };
   obj9 = { variant: "primary", size: "md", text: intl.string(intl3.t["2nYlT2"]), onPress: onAllow, loading, grow: true };
-  Button = tmp6(5594).Button;
+  Button = tmp6(5601).Button;
   intl = tmp6(1126).intl;
   items1[2] = React3(React2, obj8);
   const tmp3 = _false;
   if (flag) {
     const obj10 = { style: tmp.buttonWrapper, children: React3(Button2, obj11) };
     obj11 = { variant: "secondary", text: intl2.string(intl3.t["5Wxrcd"]), onPress: onDontAllow, grow: true };
-    Button2 = tmp6(5594).Button;
+    Button2 = tmp6(5601).Button;
     intl2 = tmp6(1126).intl;
     flag = tmp4(tmp5, obj10);
   }

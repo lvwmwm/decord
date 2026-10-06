@@ -1,19 +1,19 @@
-// Module ID: 11802
-// Function ID: 11803
+// Module ID: 11816
+// Function ID: 11817
 // Name: AppLauncherSelectOptionFormRow
-// Dependencies: [109, 19, 21, 4890, 587, 558, 576, 11792, 4886, 1188, 6638, 8895, 2]
+// Dependencies: [109, 19, 21, 4896, 587, 558, 576, 11806, 4892, 1188, 6645, 8924, 2]
 
-// Module 11802 (AppLauncherSelectOptionFormRow)
+// Module 11816 (AppLauncherSelectOptionFormRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6638 */;
-import Form from "Form" /* 8895 */;
-import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 11792 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6645 */;
+import Form from "Form" /* 8924 */;
+import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 11806 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -120,7 +120,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((unselectedSubLabel
                 }
               }
             }
-            const FormRow = tmp(8895).FormRow;
+            const FormRow = tmp(8924).FormRow;
             const merged = Object.assign(tmp6);
             const tmp31 = <FormRow start end style={tmp16} label={tmp17} subLabel={tmp20} trailing={tmp22} />;
             cResult[20] = tmp6;
@@ -193,7 +193,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((unselectedSubLabel
       fn = () => jsx(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", lineClamp: 1, children: unselectedSubLabel });
     }
   }
-  ({ source: unselectedSubLabel(6638), size: native.IconSizes.SMALL_20 });
+  ({ source: unselectedSubLabel(6645), size: native.IconSizes.SMALL_20 });
   const Icon = tmp3(1188).Icon;
   const merged1 = Object.assign(merged);
   return <FormRow start end style={items} label={null} subLabel={fn} trailing={null} />;

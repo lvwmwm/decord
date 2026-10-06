@@ -1,10 +1,10 @@
-// Module ID: 12005
-// Function ID: 12006
+// Module ID: 12020
+// Function ID: 12021
 // Name: SmartSearchExperiments
 // Dependencies: [2074, 1085, 1440, 558, 576, 504, 2]
 // Exports: isNlpSearchEnabled
 
-// Module 12005 (SmartSearchExperiments)
+// Module 12020 (SmartSearchExperiments)
 import Constants from "Constants" /* 1085 */;
 import GuildStore from "GuildStore" /* 2074 */;
 import ApexExperiment_mod from "ApexExperiment" /* 1440 */;

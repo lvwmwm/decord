@@ -1,9 +1,9 @@
-// Module ID: 9881
-// Function ID: 9882
+// Module ID: 9894
+// Function ID: 9895
 // Name: useBurstToggleCoachmark
-// Dependencies: [32, 19, 17, 1377, 2048, 21, 2036, 4890, 587, 558, 576, 8880, 504, 4528, 6891, 1126, 9882, 2]
+// Dependencies: [32, 19, 17, 1377, 2048, 21, 2036, 4896, 587, 558, 576, 8909, 504, 4534, 6901, 1126, 9895, 2]
 
-// Module 9881 (useBurstToggleCoachmark)
+// Module 9894 (useBurstToggleCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -14,7 +14,7 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1377 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let _require;
 
 let size;
 let tmp;
-const SuperReactionIcon2 = tmp(8880);
+const SuperReactionIcon2 = tmp(8909);
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
@@ -193,14 +193,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = first(504);
   const items = [UserStore];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj2 = first(4528);
+  const obj2 = first(4534);
   if (obj2.isPremium(stateFromStores)) {
     const items1 = [closure_9];
     items2 = items1;
   } else {
     items2 = [];
   }
-  const tmpResult = first(6891);
+  const tmpResult = first(6901);
   const tmp5 = _slicedToArray(tmpResult.useSelectedDismissibleContent(items2), 2);
   first = tmp5[0];
   let closure_1 = tmp7;
@@ -224,7 +224,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     intl2 = intl3.intl;
     return obj;
   }, items3);
-  const tmpResult2 = first(9882);
+  const tmpResult2 = first(9895);
   const coachmark = tmpResult2.useCoachmark(arg0, memo);
   return tmp5[1];
 });

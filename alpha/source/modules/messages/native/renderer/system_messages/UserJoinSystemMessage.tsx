@@ -1,18 +1,18 @@
-// Module ID: 7644
-// Function ID: 7645
+// Module ID: 7655
+// Function ID: 7656
 // Name: UserJoinSystemMessage
-// Dependencies: [2051, 2074, 1085, 7619, 7645, 7657, 7658, 7661, 1126, 7621, 7623, 2]
+// Dependencies: [2051, 2074, 1085, 7630, 7656, 7668, 7669, 7672, 1126, 7632, 7634, 2]
 // Exports: createUserJoinSystemMessage
 
-// Module 7644 (UserJoinSystemMessage)
+// Module 7655 (UserJoinSystemMessage)
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7619 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7621 */;
-import SystemMessageUtilsDefault from "SystemMessageUtils" /* 7645 */;
-import useIsStickerReplyEnabled from "useIsStickerReplyEnabled" /* 7657 */;
-import transformSticker2 from "transformSticker" /* 7658 */;
-import WelcomeCTAUtils from "WelcomeCTAUtils" /* 7661 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7630 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7632 */;
+import SystemMessageUtilsDefault from "SystemMessageUtils" /* 7656 */;
+import useIsStickerReplyEnabled from "useIsStickerReplyEnabled" /* 7668 */;
+import transformSticker2 from "transformSticker" /* 7669 */;
+import WelcomeCTAUtils from "WelcomeCTAUtils" /* 7672 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildStore from "GuildStore" /* 2074 */;
 import size from "module_2" /* 2 */;
@@ -54,6 +54,6 @@ export const createUserJoinSystemMessage = function createUserJoinSystemMessage(
   formatToParts = intl.formatToParts;
   obj4 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle }) };
   intl2 = tmp(1126).intl;
-  const merged = Object.assign(tmp4(7623)(message));
+  const merged = Object.assign(tmp4(7634)(message));
   return obj2;
 };

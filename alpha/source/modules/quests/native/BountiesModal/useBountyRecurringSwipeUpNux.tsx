@@ -1,12 +1,12 @@
-// Module ID: 14819
-// Function ID: 14820
+// Module ID: 14835
+// Function ID: 14836
 // Name: useBountyRecurringSwipeUpNux
-// Dependencies: [32, 558, 576, 6891, 2036, 2]
+// Dependencies: [32, 558, 576, 6901, 2036, 2]
 
-// Module 14819 (useBountyRecurringSwipeUpNux)
+// Module 14835 (useBountyRecurringSwipeUpNux)
 import react from "react" /* 576 */;
 import dismissible_content from "dismissible_content" /* 2036 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6891 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6901 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

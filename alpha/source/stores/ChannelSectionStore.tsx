@@ -1,10 +1,10 @@
-// Module ID: 6783
-// Function ID: 6784
+// Module ID: 6793
+// Function ID: 6794
 // Name: ChannelSectionStore
-// Dependencies: [4776, 6784, 2055, 2051, 2074, 4509, 2103, 4699, 1377, 1085, 2058, 1096, 6785, 6786, 1121, 11, 5321, 504, 1440, 584, 2]
+// Dependencies: [4782, 6794, 2055, 2051, 2074, 4515, 2103, 4705, 1377, 1085, 2058, 1096, 6795, 6796, 1121, 11, 5328, 504, 1440, 584, 2]
 // Exports: isViewChannelSidebar
 
-// Module 6783 (ChannelSectionStore)
+// Module 6793 (ChannelSectionStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -12,16 +12,16 @@ import Constants2 from "Constants" /* 1096 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import ApexExperiment from "ApexExperiment" /* 1440 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5321 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6785 */;
-import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 6786 */;
-import ExperimentStore from "ExperimentStore" /* 4776 */;
-import SearchMessageStore from "SearchMessageStore" /* 6784 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5328 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6795 */;
+import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 6796 */;
+import ExperimentStore from "ExperimentStore" /* 4782 */;
+import SearchMessageStore from "SearchMessageStore" /* 6794 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
 import UserStore from "UserStore" /* 1377 */;
 import Constants from "Constants" /* 1085 */;
 import ChannelConstants from "ChannelConstants" /* 2058 */;

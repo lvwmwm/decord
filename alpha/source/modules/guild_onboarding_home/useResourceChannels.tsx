@@ -1,11 +1,11 @@
-// Module ID: 16514
-// Function ID: 16515
+// Module ID: 16554
+// Function ID: 16555
 // Name: useResourceChannels
-// Dependencies: [2051, 5077, 558, 576, 573, 2]
+// Dependencies: [2051, 5083, 558, 576, 573, 2]
 
-// Module 16514 (useResourceChannels)
+// Module 16554 (useResourceChannels)
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5077 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5083 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

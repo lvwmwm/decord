@@ -1,16 +1,16 @@
-// Module ID: 8778
-// Function ID: 8779
+// Module ID: 8810
+// Function ID: 8811
 // Name: CrunchyrollLinkLanding
-// Dependencies: [19, 8777, 1085, 21, 4890, 1126, 7948, 558, 576, 1490, 2115, 8741, 8779, 2]
+// Dependencies: [19, 8809, 1085, 21, 4896, 1126, 7959, 558, 576, 1490, 2115, 8773, 8811, 2]
 
-// Module 8778 (CrunchyrollLinkLanding)
+// Module 8810 (CrunchyrollLinkLanding)
 import Fragment from "Fragment" /* 21 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 8777 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8779 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 8809 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8811 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj2 = navigation(1490);
   navigation = obj2.useNavigation();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { label: intl.string(navigation(1126).t["2TXHQd"]), icon: navigation(7948).PlayIcon };
+    const obj3 = { label: intl.string(navigation(1126).t["2TXHQd"]), icon: navigation(7959).PlayIcon };
     intl = tmp(1126).intl;
     const items = [obj3];
     cResult[0] = items;
@@ -98,7 +98,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp16;
   }
-  const TwoWayLinkLanding = tmp(8741).TwoWayLinkLanding;
+  const TwoWayLinkLanding = tmp(8773).TwoWayLinkLanding;
   tmp16 = <TwoWayLinkLanding platformType={constants3.CRUNCHYROLL} img={AssetRegistryDefault} imgStyle={image} headerConnect={tmp8} body={tmp9} learnMoreLink={tmp10} onNext={tmp7} valueProps={first} />;
   cResult[6] = tmp7;
   cResult[7] = tmp4.image;
@@ -118,7 +118,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const callback = react.useCallback(() => {
     navigation.push(constants.PRE_CONNECT);
   }, items);
-  const TwoWayLinkLanding = navigation(8741).TwoWayLinkLanding;
+  const TwoWayLinkLanding = navigation(8773).TwoWayLinkLanding;
   let intl = navigation(1126).intl;
   const intl2 = navigation(1126).intl;
   const obj3 = HelpdeskUtilsDefault;

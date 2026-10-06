@@ -1,14 +1,14 @@
-// Module ID: 14527
-// Function ID: 14528
+// Module ID: 14543
+// Function ID: 14544
 // Name: TinyBroncoNoticeVisibility
-// Dependencies: [1377, 1985, 5580, 5581, 558, 576, 504, 2]
+// Dependencies: [1377, 1985, 5587, 5588, 558, 576, 504, 2]
 // Exports: shouldShowAgeNotice
 
-// Module 14527 (TinyBroncoNoticeVisibility)
+// Module 14543 (TinyBroncoNoticeVisibility)
 import react from "react" /* 576 */;
 import Server from "Server" /* 1985 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5580 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5581 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5587 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5588 */;
 import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

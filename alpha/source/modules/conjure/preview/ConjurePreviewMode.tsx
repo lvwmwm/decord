@@ -1,15 +1,15 @@
-// Module ID: 16587
-// Function ID: 16588
+// Module ID: 16625
+// Function ID: 16626
 // Name: ConjurePreviewMode
-// Dependencies: [3723, 1126, 2]
+// Dependencies: [3753, 1126, 2]
 // Exports: getPreviewModeLabel, getPreviewModePanelId
 
-// Module 16587 (ConjurePreviewMode)
+// Module 16625 (ConjurePreviewMode)
 import intl2 from "intl" /* 1126 */;
-import _modDef3723 from "module_3723" /* 3723 */;
+import _modDef3753 from "module_3753" /* 3753 */;
 import size from "module_2" /* 2 */;
 
-const obj = { frame: _modDef3723.FKuG6X, widget: _modDef3723.oOAVlP, bot: _modDef3723.uE5z15 };
+const obj = { frame: _modDef3753.FKuG6X, widget: _modDef3753.oOAVlP, bot: _modDef3753.uE5z15 };
 const result = size.fileFinishedImporting("modules/conjure/preview/ConjurePreviewMode.tsx");
 
 export const CONJURE_PREVIEW_MODE_ORDER = ["frame", "widget", "bot"];

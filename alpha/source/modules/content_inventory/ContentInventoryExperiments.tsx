@@ -1,14 +1,14 @@
-// Module ID: 13503
-// Function ID: 13504
+// Module ID: 13519
+// Function ID: 13520
 // Name: ContentInventoryExperiments
-// Dependencies: [4777, 1440, 4774, 8030, 2]
+// Dependencies: [4783, 1440, 4780, 8040, 2]
 // Exports: isEligibleForContentInventoryV1, isEligibleForImpressionCapping
 
-// Module 13503 (ContentInventoryExperiments)
-import ExperimentConstants from "ExperimentConstants" /* 4777 */;
-import ICYMIExperiment from "ICYMIExperiment" /* 8030 */;
+// Module 13519 (ContentInventoryExperiments)
+import ExperimentConstants from "ExperimentConstants" /* 4783 */;
+import ICYMIExperiment from "ICYMIExperiment" /* 8040 */;
 import ApexExperiment from "ApexExperiment" /* 1440 */;
-import createExperiment from "module_4774" /* 4774 */;
+import createExperiment from "module_4780" /* 4780 */;
 import size from "module_2" /* 2 */;
 
 let items;

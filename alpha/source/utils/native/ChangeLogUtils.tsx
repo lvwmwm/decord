@@ -1,20 +1,20 @@
-// Module ID: 7767
-// Function ID: 7768
+// Module ID: 7778
+// Function ID: 7779
 // Name: utils/ChangeLogUtils
-// Dependencies: [19, 17, 21, 4890, 587, 5620, 5784, 4886, 558, 576, 6470, 7768, 1936, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 5627, 5791, 4892, 558, 576, 6477, 7779, 1936, 2]
 
-// Module 7767 (utils/ChangeLogUtils)
+// Module 7778 (utils/ChangeLogUtils)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef1936 from "module_1936" /* 1936 */;
-import LegacyTokens from "LegacyTokens" /* 5620 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6470 */;
-import MarkupRulesUtils from "MarkupRulesUtils" /* 7768 */;
+import LegacyTokens from "LegacyTokens" /* 5627 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6477 */;
+import MarkupRulesUtils from "MarkupRulesUtils" /* 7779 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import CustomMarkup from "CustomMarkup" /* 5784 */;
+import createStyles_mod from "createStyles" /* 4896 */;
+import CustomMarkup from "CustomMarkup" /* 5791 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let closure_4;
 let obj2;
 let obj3;
 let tmp;
-const Text_Text = tmp(4886);
+const Text_Text = tmp(4892);
 ({ View: c3, Image: closure_4 } = react_native);
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -383,7 +383,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = ManaTypeConsolidationExperiment;
   if (obj.useManaTypeConsolidationExperiment("ChangeLogStrong")) {
     let str;
-    const Text = tmp(4886).Text;
+    const Text = tmp(4892).Text;
     const tmp5 = jsx;
     if (state != null) {
       str = state.textColor;

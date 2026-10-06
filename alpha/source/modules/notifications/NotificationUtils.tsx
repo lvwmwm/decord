@@ -1,17 +1,17 @@
-// Module ID: 9849
-// Function ID: 9850
+// Module ID: 9862
+// Function ID: 9863
 // Name: notifications/NotificationUtils
-// Dependencies: [5071, 1085, 1095, 1126, 11, 1390, 4512, 558, 576, 504, 2]
+// Dependencies: [5077, 1085, 1095, 1126, 11, 1390, 4518, 558, 576, 504, 2]
 // Exports: filterOverrides, getMuteTimeOptions, shouldShowUseNewNotificationSystem
 
-// Module 9849 (notifications/NotificationUtils)
+// Module 9862 (notifications/NotificationUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl7 from "intl" /* 1126 */;
 import FlagUtilsAll from "FlagUtils" /* 1390 */;
-import MuteTimers from "MuteTimers" /* 4512 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
+import MuteTimers from "MuteTimers" /* 4518 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

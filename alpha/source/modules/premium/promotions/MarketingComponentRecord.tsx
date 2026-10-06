@@ -1,13 +1,13 @@
-// Module ID: 10398
-// Function ID: 10399
+// Module ID: 10411
+// Function ID: 10412
 // Name: MarketingComponentRecord
-// Dependencies: [1392, 1234, 10399, 1102, 1251, 2]
+// Dependencies: [1392, 1234, 10412, 1102, 1251, 2]
 
-// Module 10398 (MarketingComponentRecord)
+// Module 10411 (MarketingComponentRecord)
 import DurationsDefault from "Durations" /* 1102 */;
 import ProtoUtils from "ProtoUtils" /* 1234 */;
 import _modDef1251 from "module_1251" /* 1251 */;
-import premium_marketing_component_properties from "premium_marketing_component_properties" /* 10399 */;
+import premium_marketing_component_properties from "premium_marketing_component_properties" /* 10412 */;
 import Record from "Record" /* 1392 */;
 import size from "module_2" /* 2 */;
 

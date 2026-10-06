@@ -1,23 +1,23 @@
-// Module ID: 15921
-// Function ID: 15922
+// Module ID: 15960
+// Function ID: 15961
 // Name: RedesignNotificationModal
-// Dependencies: [19, 17, 12052, 12053, 1085, 21, 4890, 587, 558, 576, 12054, 1252, 12055, 15922, 1126, 12337, 2]
+// Dependencies: [19, 17, 12067, 12068, 1085, 21, 4896, 587, 558, 576, 12069, 1252, 12070, 15961, 1126, 12352, 2]
 
-// Module 15921 (RedesignNotificationModal)
+// Module 15960 (RedesignNotificationModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12052 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12054 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12055 */;
-import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 12337 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15922 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12067 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12069 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12070 */;
+import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 12352 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15961 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12053 */;
-import createStyles from "createStyles" /* 4890 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12068 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

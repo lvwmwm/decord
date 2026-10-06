@@ -1,10 +1,10 @@
-// Module ID: 8056
-// Function ID: 8057
+// Module ID: 8066
+// Function ID: 8067
 // Name: InviteRecord
-// Dependencies: [1392, 1391, 4461, 2]
+// Dependencies: [1392, 1391, 4467, 2]
 
-// Module 8056 (InviteRecord)
-import _modDef4461 from "module_4461" /* 4461 */;
+// Module 8066 (InviteRecord)
+import _modDef4467 from "module_4467" /* 4467 */;
 import Record from "Record" /* 1392 */;
 import UserRecord from "UserRecord" /* 1391 */;
 import size from "module_2" /* 2 */;
@@ -57,14 +57,14 @@ class InviteRecord extends Record {
     ({ max_uses: obj.maxUses, max_age: obj.maxAge } = created_at);
     created_at = created_at.created_at;
     ({ target_type: obj.targetType, target_user: obj.targetUser, target_application: obj.targetApplication } = created_at);
-    tmp3 = _modDef4461;
+    tmp3 = _modDef4467;
     return new InviteRecord(obj);
   }
   isExpired() {
     const maxAge = this.maxAge;
     if (maxAge > 0) {
       const _Date = Date;
-      const obj = _modDef4461(tmp.createdAt);
+      const obj = _modDef4467(tmp.createdAt);
       const addResult = obj.add(maxAge, "seconds");
       if (addResult.isBefore(Date.now())) {
         return true;
@@ -76,7 +76,7 @@ class InviteRecord extends Record {
     const self = this;
     let num = Infinity;
     if (this.maxAge > 0) {
-      const obj = _modDef4461(self.createdAt);
+      const obj = _modDef4467(self.createdAt);
       const addResult = obj.add(self.maxAge, "seconds");
       num = addResult.toDate();
     }

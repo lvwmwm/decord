@@ -1,13 +1,13 @@
-// Module ID: 17167
-// Function ID: 17168
+// Module ID: 17196
+// Function ID: 17197
 // Name: useHandleOAuthNavigation
-// Dependencies: [19, 1085, 8710, 5093, 8716, 1987, 1121, 2]
+// Dependencies: [19, 1085, 8742, 5099, 8748, 1987, 1121, 2]
 // Exports: default
 
-// Module 17167 (useHandleOAuthNavigation)
+// Module 17196 (useHandleOAuthNavigation)
 import Constants from "Constants" /* 1085 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import Constants2 from "Constants" /* 8710 */;
+import Constants2 from "Constants" /* 8742 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

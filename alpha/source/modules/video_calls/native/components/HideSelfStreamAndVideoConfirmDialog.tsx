@@ -1,17 +1,17 @@
-// Module ID: 17355
-// Function ID: 17356
+// Module ID: 17383
+// Function ID: 17384
 // Name: HideSelfStreamAndVideoConfirmDialog
-// Dependencies: [109, 19, 17, 17354, 21, 4890, 558, 576, 8863, 1126, 4886, 5783, 2]
+// Dependencies: [109, 19, 17, 17382, 21, 4896, 558, 576, 8091, 1126, 4892, 5790, 2]
 
-// Module 17355 (HideSelfStreamAndVideoConfirmDialog)
+// Module 17383 (HideSelfStreamAndVideoConfirmDialog)
 import react_native from "react-native" /* 17 */;
-import AlertDefault from "Alert" /* 5783 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8863 */;
-import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 17354 */;
+import AlertDefault from "Alert" /* 5790 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8091 */;
+import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 17382 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -252,7 +252,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj2 = { style: tmp2.body, children: items };
   items = [, ];
   const obj3 = { style: tmp2.description, variant: "text-sm/medium", children: stringResult1 };
-  items[0] = closure_7(tmp6(4886).Text, obj3);
+  items[0] = closure_7(tmp6(4892).Text, obj3);
   const obj4 = {
     accessibilityRole: "link",
     style: items1,
@@ -266,7 +266,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   };
   items1 = [, ];
   ({ ctaLink: arr2[0], description: arr2[1] } = tmp2);
-  const Text = tmp6(4886).Text;
+  const Text = tmp6(4892).Text;
   intl7 = tmp6(1126).intl;
   items[1] = closure_7(Text, obj4);
   return closure_7(tmp12, obj);

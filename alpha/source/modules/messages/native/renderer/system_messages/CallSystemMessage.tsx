@@ -1,25 +1,25 @@
-// Module ID: 7638
-// Function ID: 7639
+// Module ID: 7649
+// Function ID: 7650
 // Name: CallSystemMessage
-// Dependencies: [4906, 502, 4909, 1085, 4911, 7639, 7640, 1126, 1405, 4552, 7623, 2]
+// Dependencies: [4912, 502, 4915, 1085, 4917, 7650, 7651, 1126, 1405, 4558, 7634, 2]
 // Exports: createCallSystemMessage
 
-// Module 7638 (CallSystemMessage)
+// Module 7649 (CallSystemMessage)
 import Constants from "Constants" /* 1085 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1405 */;
-import DateUtils from "DateUtils" /* 4552 */;
-import CallConstants from "CallConstants" /* 4911 */;
-import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 7639 */;
-import useIsCallActive from "useIsCallActive" /* 7640 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
+import DateUtils from "DateUtils" /* 4558 */;
+import CallConstants from "CallConstants" /* 4917 */;
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 7650 */;
+import useIsCallActive from "useIsCallActive" /* 7651 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import VoiceStateStore from "VoiceStateStore" /* 4915 */;
 import size from "module_2" /* 2 */;
 
 let user;
 
 let tmp4;
-const createCommonMessageDefault = tmp4(7623);
+const createCommonMessageDefault = tmp4(7634);
 const ME = Constants.ME;
 const ParticipantTypes = CallConstants.ParticipantTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/CallSystemMessage.tsx");

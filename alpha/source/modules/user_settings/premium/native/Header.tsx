@@ -1,19 +1,19 @@
-// Module ID: 13273
-// Function ID: 13274
+// Module ID: 13292
+// Function ID: 13293
 // Name: Header
-// Dependencies: [19, 17, 21, 4890, 558, 576, 4791, 1126, 4729, 13274, 13275, 5974, 4886, 2]
+// Dependencies: [19, 17, 21, 4896, 558, 576, 4797, 1126, 4735, 13293, 13294, 5981, 4892, 2]
 
-// Module 13273 (Header)
+// Module 13292 (Header)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import shared from "shared" /* 4729 */;
-import useThemeDefault from "useTheme" /* 4791 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import FastImageDefault from "FastImage" /* 5974 */;
+import shared from "shared" /* 4735 */;
+import useThemeDefault from "useTheme" /* 4797 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import FastImageDefault from "FastImage" /* 5981 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,9 +51,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     }
     const tmpResult = shared;
     if (tmpResult.isThemeDark(tmp6)) {
-      tmp5Result = tmp5(13274);
+      tmp5Result = tmp5(13293);
     } else {
-      tmp5Result = tmp5(13275);
+      tmp5Result = tmp5(13294);
     }
     if (cResult[4] !== tmp5Result) {
       const obj2 = { accessible: true, accessibilityLabel: tmp9, accessibilityRole: "header", source: tmp5Result };
@@ -124,13 +124,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   const tmp5 = hasOwnProperty;
   const tmp6 = View;
   if (obj3.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(13274);
+    tmp2Result = tmp2(13293);
   } else {
-    tmp2Result = tmp2(13275);
+    tmp2Result = tmp2(13294);
   }
   items1 = [React3(tmp8, obj2), ];
   const obj4 = { style: tmp.headerText, variant: "text-md/medium", color: "mobile-text-heading-primary", children: intl2.string(intl3.t.SD5MJW) };
-  const Text = tmp9(4886).Text;
+  const Text = tmp9(4892).Text;
   intl2 = tmp9(1126).intl;
   items1[1] = React3(Text, obj4);
   return tmp5(tmp6, obj);

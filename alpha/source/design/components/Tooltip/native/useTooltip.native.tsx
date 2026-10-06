@@ -1,14 +1,14 @@
-// Module ID: 9883
-// Function ID: 9884
+// Module ID: 9896
+// Function ID: 9897
 // Name: useTooltip
-// Dependencies: [32, 5, 19, 21, 3, 558, 576, 1266, 6652, 9884, 1484, 9888, 2]
+// Dependencies: [32, 5, 19, 21, 3, 558, 576, 1266, 6659, 9897, 1484, 9901, 2]
 // Exports: useTooltipHelper
 
-// Module 9883 (useTooltip)
+// Module 9896 (useTooltip)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import AnimatedTooltip2 from "AnimatedTooltip" /* 9884 */;
+import AnimatedTooltip2 from "AnimatedTooltip" /* 9897 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -46,7 +46,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   const tmp8 = useWindowDimensionsDefault();
   let closure_3 = tmp8;
   let closure_4 = context.useRef(tmp8);
-  context = context.useContext(tmp(6652).LayerContext);
+  context = context.useContext(tmp(6659).LayerContext);
   let closure_6 = context.useRef(null);
   const items = [context, ref];
   const effect = context.useEffect(() => {
@@ -176,7 +176,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   const tmp3 = useWindowDimensionsDefault();
   let closure_3 = tmp3;
   ref = context.useRef(tmp3);
-  context = context.useContext(ref(6652).LayerContext);
+  context = context.useContext(ref(6659).LayerContext);
   let ref2 = context.useRef(null);
   let items = [context, ref];
   const effect = context.useEffect(() => {

@@ -1,20 +1,20 @@
-// Module ID: 4662
-// Function ID: 4663
+// Module ID: 4668
+// Function ID: 4669
 // Name: BountiesScrollGradientRive
-// Dependencies: [109, 19, 21, 558, 576, 4606, 4663, 4659, 2]
+// Dependencies: [109, 19, 21, 558, 576, 4612, 4669, 4665, 2]
 
-// Module 4662 (BountiesScrollGradientRive)
+// Module 4668 (BountiesScrollGradientRive)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import _modDef4663 from "module_4663" /* 4663 */;
+import _modDef4669 from "module_4669" /* 4669 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const BaseRive2 = tmp(4606);
-const RiveErrorBoundary2 = tmp(4659);
+const BaseRive2 = tmp(4612);
+const RiveErrorBoundary2 = tmp(4665);
 let closure_3 = ["fallback", "artboard", "stateMachine", "defaultViewModelInstance"];
 let closure_4 = ["fallback", "artboard", "stateMachine", "defaultViewModelInstance"];
 const jsx = Fragment.jsx;
@@ -73,7 +73,7 @@ let closure_9 = react.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
   }
   const BaseRive = BaseRive2.BaseRive;
   const merged = Object.assign(tmp4);
-  const tmp14 = <BaseRive ref={arg1} src={_modDef4663} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={tmp11} stateMachine={tmp5} />;
+  const tmp14 = <BaseRive ref={arg1} src={_modDef4669} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={tmp11} stateMachine={tmp5} />;
   cResult[5] = str;
   cResult[6] = tmp11;
   cResult[7] = ref;
@@ -98,7 +98,7 @@ let closure_9 = react.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
   const tmp2 = _objectWithoutProperties(defaultViewModelInstance, closure_4);
   const BaseRive = BaseRive2.BaseRive;
   const merged = Object.assign(tmp2);
-  return <BaseRive ref={arg1} src={_modDef4663} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={tmp} stateMachine={stateMachine} />;
+  return <BaseRive ref={arg1} src={_modDef4669} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={tmp} stateMachine={stateMachine} />;
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
 const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((fallback, ref) => {

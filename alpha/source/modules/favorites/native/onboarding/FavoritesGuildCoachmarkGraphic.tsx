@@ -1,16 +1,16 @@
-// Module ID: 16255
-// Function ID: 16256
+// Module ID: 16295
+// Function ID: 16296
 // Name: FavoritesGuildCoachmarkGraphic
-// Dependencies: [17, 21, 4890, 587, 558, 576, 10042, 1188, 2]
+// Dependencies: [17, 21, 4896, 587, 558, 576, 10055, 1188, 2]
 
-// Module 16255 (FavoritesGuildCoachmarkGraphic)
+// Module 16295 (FavoritesGuildCoachmarkGraphic)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1188 */;
-import FavoritesSpotIllustration from "FavoritesSpotIllustration" /* 10042 */;
+import FavoritesSpotIllustration from "FavoritesSpotIllustration" /* 10055 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

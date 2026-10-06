@@ -1,27 +1,27 @@
-// Module ID: 9916
-// Function ID: 9917
+// Module ID: 9929
+// Function ID: 9930
 // Name: EmojiPickerPremiumSearchUpsell
-// Dependencies: [19, 1377, 1085, 1379, 21, 4890, 558, 576, 1252, 7487, 9644, 7483, 8818, 9645, 4528, 4854, 8914, 8867, 1126, 8313, 587, 1188, 9917, 9918, 2]
+// Dependencies: [19, 1377, 1085, 1379, 21, 4896, 558, 576, 1252, 7498, 9657, 7494, 8848, 9658, 4534, 4860, 8943, 8896, 1126, 8346, 587, 1188, 9930, 9931, 2]
 
-// Module 9916 (EmojiPickerPremiumSearchUpsell)
+// Module 9929 (EmojiPickerPremiumSearchUpsell)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import native from "native" /* 1188 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PremiumUtils from "PremiumUtils" /* 4528 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import MobileEmojiPickerUpsellRestyleExperiment from "MobileEmojiPickerUpsellRestyleExperiment" /* 7487 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8867 */;
-import openPremiumModalDefault from "openPremiumModal" /* 8914 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9917 */;
-import PremiumExpressionPickerSearchUpsellDefault from "PremiumExpressionPickerSearchUpsell" /* 9918 */;
+import PremiumUtils from "PremiumUtils" /* 4534 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import MobileEmojiPickerUpsellRestyleExperiment from "MobileEmojiPickerUpsellRestyleExperiment" /* 7498 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8896 */;
+import openPremiumModalDefault from "openPremiumModal" /* 8943 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9930 */;
+import PremiumExpressionPickerSearchUpsellDefault from "PremiumExpressionPickerSearchUpsell" /* 9931 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1377 */;
 import Constants from "Constants" /* 1085 */;
 import PremiumConstants from "PremiumConstants" /* 1379 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -321,7 +321,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((useTier
   }
   if (mobileEmojiPickerUpsellRestyleEnabled) {
     const obj5 = { size: "sm", color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, style: tmp4.nitroIcon };
-    const NitroWheelIcon = tmp(8313).NitroWheelIcon;
+    const NitroWheelIcon = tmp(8346).NitroWheelIcon;
     tmp14Result = tmp14(NitroWheelIcon, obj5);
   } else {
     const obj6 = { style: tmp4.nitroIcon, source: AssetRegistryDefault, disableColor: true, size: native.Icon.Sizes.MEDIUM };
@@ -368,7 +368,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((useTier
   }
   if (mobileEmojiPickerUpsellRestyleEnabled) {
     const obj4 = { size: "sm", color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, style: tmp.nitroIcon };
-    const NitroWheelIcon = tmp3(8313).NitroWheelIcon;
+    const NitroWheelIcon = tmp3(8346).NitroWheelIcon;
     tmp7Result = tmp7(NitroWheelIcon, obj4);
   } else {
     const obj5 = { style: tmp.nitroIcon, source: AssetRegistryDefault, disableColor: true, size: native.Icon.Sizes.MEDIUM };

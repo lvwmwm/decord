@@ -1,31 +1,31 @@
-// Module ID: 14370
-// Function ID: 14371
+// Module ID: 14388
+// Function ID: 14389
 // Name: MobileVoiceOverlayLifecycleManager
-// Dependencies: [2051, 4507, 2074, 1999, 4509, 4913, 4519, 5576, 1377, 4909, 9658, 1085, 14371, 14372, 14373, 14374, 4809, 13598, 14375, 14376, 12726, 1126, 14377, 9671, 7252, 5043, 5621, 1252, 5070, 1989, 2]
+// Dependencies: [2051, 4513, 2074, 1999, 4515, 4919, 4525, 5583, 1377, 4915, 9671, 1085, 14389, 14390, 14391, 14392, 4815, 13614, 14393, 14394, 12741, 1126, 14395, 9684, 7265, 5049, 5628, 1252, 5076, 1989, 2]
 
-// Module 14370 (MobileVoiceOverlayLifecycleManager)
+// Module 14388 (MobileVoiceOverlayLifecycleManager)
 import intl12 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GuildChannelStore from "GuildChannelStore" /* 4507 */;
-import useChannelName from "useChannelName" /* 5043 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5070 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5621 */;
-import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 7252 */;
-import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 9671 */;
-import react_nativeDefault from "react-native" /* 14377 */;
+import GuildChannelStore from "GuildChannelStore" /* 4513 */;
+import useChannelName from "useChannelName" /* 5049 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5076 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5628 */;
+import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 7265 */;
+import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 9684 */;
+import react_nativeDefault from "react-native" /* 14395 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildStore from "GuildStore" /* 2074 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import SpeakingStore from "SpeakingStore" /* 5576 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
+import RelationshipStore from "RelationshipStore" /* 4525 */;
+import SpeakingStore from "SpeakingStore" /* 5583 */;
 import UserStore from "UserStore" /* 1377 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
-import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 9658 */;
+import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 9671 */;
 import Constants from "Constants" /* 1085 */;
 import "AssetRegistry";
-import AssetRegistry from "AssetRegistry" /* 12726 */;
+import AssetRegistry from "AssetRegistry" /* 12741 */;
 import LifecycleManager from "LifecycleManager" /* 1989 */;
 import size from "module_2" /* 2 */;
 

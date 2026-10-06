@@ -1,18 +1,18 @@
-// Module ID: 11189
-// Function ID: 11190
+// Module ID: 11202
+// Function ID: 11203
 // Name: LeaveConnectionRoleActionSheet
-// Dependencies: [19, 17, 21, 4890, 558, 576, 4886, 1126, 5594, 6645, 2]
+// Dependencies: [19, 17, 21, 4896, 558, 576, 4892, 1126, 5601, 6652, 2]
 
-// Module 11189 (LeaveConnectionRoleActionSheet)
+// Module 11202 (LeaveConnectionRoleActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import components_Button_Button from "components/Button/Button" /* 5601 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6652 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onLeaveRolePressed) 
   const container = tmp4.container;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl4.t.vytvJF) };
-    const Text = tmp(4886).Text;
+    const Text = tmp(4892).Text;
     intl = tmp(1126).intl;
     const tmp7 = _false(Text, obj2);
     cResult[0] = tmp7;
@@ -100,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onLeaveRolePressed) 
     const obj5 = { children: React3(View, obj6) };
     obj6 = { style: container, children: items };
     items = [first, tmp10, tmp18];
-    BottomSheet = tmp(6645).BottomSheet;
+    BottomSheet = tmp(6652).BottomSheet;
     const tmp24 = _false(BottomSheet, obj5);
     cResult[10] = tmp4.container;
     cResult[11] = tmp10;

@@ -1,10 +1,10 @@
-// Module ID: 7295
-// Function ID: 7296
+// Module ID: 7308
+// Function ID: 7309
 // Name: UploadLimits
 // Dependencies: [2]
 // Exports: getEffectiveUploadLimit
 
-// Module 7295 (UploadLimits)
+// Module 7308 (UploadLimits)
 import size from "module_2" /* 2 */;
 
 let c0 = 20971520;

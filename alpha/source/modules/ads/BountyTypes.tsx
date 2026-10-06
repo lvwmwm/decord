@@ -1,11 +1,11 @@
-// Module ID: 9999
-// Function ID: 10000
+// Module ID: 10012
+// Function ID: 10013
 // Name: BountyTypes
-// Dependencies: [32, 10000, 2]
+// Dependencies: [32, 10013, 2]
 // Exports: bountyCtaFromServer, bountyFromServer
 
-// Module 9999 (BountyTypes)
-import AssetUtils from "AssetUtils" /* 10000 */;
+// Module 10012 (BountyTypes)
+import AssetUtils from "AssetUtils" /* 10013 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

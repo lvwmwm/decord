@@ -1,18 +1,18 @@
-// Module ID: 16092
-// Function ID: 16093
+// Module ID: 16131
+// Function ID: 16132
 // Name: BoostProgressBarCoachmark
-// Dependencies: [19, 17, 2048, 21, 4890, 558, 576, 9247, 1126, 2525, 4660, 9882, 2]
+// Dependencies: [19, 17, 2048, 21, 4896, 558, 576, 9282, 1126, 2553, 4666, 9895, 2]
 
-// Module 16092 (BoostProgressBarCoachmark)
+// Module 16131 (BoostProgressBarCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1126 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import _modDef2525 from "module_2525" /* 2525 */;
-import BoostThisServerRive from "BoostThisServerRive" /* 4660 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
+import _modDef2553 from "module_2553" /* 2553 */;
+import BoostThisServerRive from "BoostThisServerRive" /* 4666 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9282 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,9 +52,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp(1126).intl;
-      const stringResult = intl.string(markAsDismissed(2525).uwV2dH);
+      const stringResult = intl.string(markAsDismissed(2553).uwV2dH);
       const intl2 = tmp(1126).intl;
-      const stringResult1 = intl2.string(markAsDismissed(2525).MIwlcR);
+      const stringResult1 = intl2.string(markAsDismissed(2553).MIwlcR);
       cResult[5] = stringResult;
       cResult[6] = stringResult1;
       tmp9 = stringResult1;
@@ -142,8 +142,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     let intl3;
     let riveContainer;
     const obj = {
-      title: intl.string(_modDef2525.uwV2dH),
-      description: intl2.string(_modDef2525.MIwlcR),
+      title: intl.string(_modDef2553.uwV2dH),
+      description: intl2.string(_modDef2553.MIwlcR),
       visible: true,
       position: "bottom",
       offsetY: 8,
@@ -160,7 +160,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     intl3 = intl4.intl;
     return obj;
   }, items2);
-  let obj = guild(9882);
+  let obj = guild(9895);
   const coachmark = obj.useCoachmark(targetRef, memo);
   return null;
 });

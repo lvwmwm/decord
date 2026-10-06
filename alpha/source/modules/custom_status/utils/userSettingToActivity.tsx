@@ -1,14 +1,14 @@
-// Module ID: 10826
-// Function ID: 10827
+// Module ID: 10839
+// Function ID: 10840
 // Name: userSettingToActivity
-// Dependencies: [19, 5638, 1085, 4523, 558, 576, 2028, 504, 2]
+// Dependencies: [19, 5645, 1085, 4529, 558, 576, 2028, 504, 2]
 // Exports: getActivityFromCustomStatus
 
-// Module 10826 (userSettingToActivity)
+// Module 10839 (userSettingToActivity)
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4523 */;
-import EmojiStore from "EmojiStore" /* 5638 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4529 */;
+import EmojiStore from "EmojiStore" /* 5645 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

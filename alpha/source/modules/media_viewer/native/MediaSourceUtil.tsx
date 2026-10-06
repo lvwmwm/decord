@@ -1,10 +1,10 @@
-// Module ID: 7939
-// Function ID: 7940
+// Module ID: 7950
+// Function ID: 7951
 // Name: MediaSourceUtil
-// Dependencies: [19, 2051, 1085, 5040, 1390, 6795, 6800, 1483, 7940, 6832, 7531, 5426, 7605, 5114, 1985, 7793, 7809, 1375, 558, 576, 7941, 1105, 4567, 7935, 5708, 1126, 1432, 7942, 2]
+// Dependencies: [19, 2051, 1085, 5046, 1390, 6805, 6810, 1483, 7951, 6842, 7542, 5433, 7616, 5120, 1985, 7804, 7820, 1375, 558, 576, 7952, 1105, 4573, 7946, 5715, 1126, 1432, 7953, 2]
 // Exports: downloadMediaAsset, downloadMediaAssetWithContentType, extractMediaFromMessageComponents, extractMediaSourcesFromComponent, extractMediaSourcesFromEmbed, extractMediaSourcesFromMessage, flattenSource, getAttachmentUrl, getEmbedMedia, getEmbedUrl, getSelectedMediaSource, getVideoSourceType, getYoutubeClipVideoIdFromURI, getYoutubeVideoIdFromURI, isAnimatedAvifSource, isAnimatedImageSource, isAnimatedWebpSource, isGIFSource, isThumbnailAttachment, isValidImageEmbed, isValidVideoAttachment, isValidVideoEmbed, setMediaSourcePortal, supportOverlayVideoControls
 
-// Module 7939 (MediaSourceUtil)
+// Module 7950 (MediaSourceUtil)
 import react2 from "react" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl3 from "intl" /* 1126 */;
@@ -12,21 +12,21 @@ import FlagUtils from "FlagUtils" /* 1390 */;
 import react_nativeDefault from "react-native" /* 1432 */;
 import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1483 */;
 import Server from "Server" /* 1985 */;
-import ToastUtils from "ToastUtils" /* 4567 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5040 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 5114 */;
-import EmbedUtils from "EmbedUtils" /* 5426 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6795 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6800 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6832 */;
-import renderMessageMarkupDefault from "renderMessageMarkup" /* 7531 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7605 */;
-import transformMessageComponents from "transformMessageComponents" /* 7793 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 7809 */;
-import getDisplayFilenameDefault from "getDisplayFilename" /* 7940 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 7941 */;
-import NativePortalView from "NativePortalView" /* 7942 */;
+import ToastUtils from "ToastUtils" /* 4573 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5046 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 5120 */;
+import EmbedUtils from "EmbedUtils" /* 5433 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5715 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6805 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6810 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6842 */;
+import renderMessageMarkupDefault from "renderMessageMarkup" /* 7542 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7616 */;
+import transformMessageComponents from "transformMessageComponents" /* 7804 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 7820 */;
+import getDisplayFilenameDefault from "getDisplayFilename" /* 7951 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 7952 */;
+import MediaModalPortal from "MediaModalPortal" /* 7953 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import Constants from "Constants" /* 1085 */;
@@ -38,7 +38,7 @@ let _require, closure_2, dependencyMap, importDefault;
 
 let hasOwnProperty;
 let metroRequire;
-const f95981 = () => {
+const f96122 = () => {
   if (ConstantsIOS.MediaType.IMAGE === VIDEO) {
     const tmp2Result = ToastUtils;
     tmp2Result.presentImageSaved();
@@ -49,7 +49,7 @@ const f95981 = () => {
     const tmp2Result4 = ToastUtils;
     tmp2Result4.presentVideoSaved();
   }
-  const MediaViewerAnalytics = tmp2(7935).MediaViewerAnalytics;
+  const MediaViewerAnalytics = tmp2(7946).MediaViewerAnalytics;
   const result = MediaViewerAnalytics.trackMediaViewerDownloadButtonTapped();
 };
 function isValidImageAttachment(filename) {
@@ -521,7 +521,7 @@ function toMediaSourceFromUnfurledMedia(id, guildId, media, description, spoiler
   if (unfurledMediaItemType === RowGeneratorTypes.MediaGalleryItemType.VISUAL_PLACEHOLDER) {
     return null;
   } else {
-    const VIDEO = tmp(7809).MediaGalleryItemType.VIDEO;
+    const VIDEO = tmp(7820).MediaGalleryItemType.VIDEO;
     ({ proxyUrl: proxyUrl2, width } = media);
     const getMobileOptimizedSrc = utils_ImageUtilsDefault.getMobileOptimizedSrc;
     if (width == null) {
@@ -756,7 +756,7 @@ function downloadMediaAssetWithContentType(mediaUrl, VIDEO, contentType) {
     const obj = react_nativeDefault;
     result = obj.downloadMediaAsset(mediaUrl, VIDEO);
   }
-  return result.then(f95981, handleDownloadError);
+  return result.then(f96122, handleDownloadError);
 }
 function isAnimatedWebpSource(sourceURI) {
   let result = null != sourceURI.sourceURI && null != sourceURI.uri;
@@ -1061,7 +1061,7 @@ export const downloadMediaAsset = function downloadMediaAsset(mediaUrl, VIDEO) {
   let closure_0 = VIDEO;
   const obj = react_nativeDefault;
   const downloadMediaAssetResult = obj.downloadMediaAsset(mediaUrl, VIDEO);
-  return downloadMediaAssetResult.then(f95981, handleDownloadError);
+  return downloadMediaAssetResult.then(f96122, handleDownloadError);
 };
 export { downloadMediaAssetWithContentType };
 export const getYoutubeClipVideoIdFromURI = function getYoutubeClipVideoIdFromURI(uri) {
@@ -1119,7 +1119,7 @@ export const getVideoSourceType = function getVideoSourceType(source) {
     return PORTAL;
   }
   if (null != source.portal) {
-    const obj2 = NativePortalView;
+    const obj2 = MediaModalPortal;
     if (!obj2.isPortalExpired(source.portal)) {
       PORTAL = obj.PORTAL;
     }

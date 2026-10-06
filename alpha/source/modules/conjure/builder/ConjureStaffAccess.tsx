@@ -1,14 +1,14 @@
-// Module ID: 16582
-// Function ID: 16583
+// Module ID: 16620
+// Function ID: 16621
 // Name: ConjureStaffAccess
-// Dependencies: [4507, 2074, 4519, 1377, 1085, 558, 576, 5043, 504, 2]
+// Dependencies: [4513, 2074, 4525, 1377, 1085, 558, 576, 5049, 504, 2]
 
-// Module 16582 (ConjureStaffAccess)
+// Module 16620 (ConjureStaffAccess)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import GuildChannelStore from "GuildChannelStore" /* 4513 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import RelationshipStore from "RelationshipStore" /* 4525 */;
 import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

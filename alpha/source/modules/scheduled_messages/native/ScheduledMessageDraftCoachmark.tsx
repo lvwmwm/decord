@@ -1,23 +1,23 @@
-// Module ID: 12075
-// Function ID: 12076
+// Module ID: 12090
+// Function ID: 12091
 // Name: ScheduledMessageDraftCoachmark
-// Dependencies: [109, 19, 17, 2048, 21, 4890, 558, 576, 1126, 11849, 9882, 2]
+// Dependencies: [109, 19, 17, 2048, 21, 4896, 558, 576, 1126, 11863, 9895, 2]
 
-// Module 12075 (ScheduledMessageDraftCoachmark)
+// Module 12090 (ScheduledMessageDraftCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11849 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11863 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useCoachmark = tmp(9882);
+const useCoachmark = tmp(9895);
 let closure_3 = ["buttonRef"];
 const Image = react_native.Image;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;

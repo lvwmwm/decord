@@ -1,9 +1,9 @@
-// Module ID: 7968
-// Function ID: 7969
+// Module ID: 7978
+// Function ID: 7979
 // Name: MediaViewerDimensionsContext
 // Dependencies: [19, 21, 558, 576, 1484, 38, 2]
 
-// Module 7968 (MediaViewerDimensionsContext)
+// Module 7978 (MediaViewerDimensionsContext)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;

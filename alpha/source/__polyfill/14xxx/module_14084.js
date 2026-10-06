@@ -1,14 +1,13 @@
 // Module ID: 14084
 // Function ID: 14085
-// Dependencies: [14068, 14085]
+// Dependencies: [14085, 14089]
 
 // Module 14084
-import _mod14068 from "module_14068" /* 14068 */;
 import _mod14085 from "module_14085" /* 14085 */;
+import _mod14089 from "module_14089" /* 14089 */;
 
-let closure_2 = _mod14068({}.hasOwnProperty);
-const tmp = Object.hasOwn || (function hasOwn(arg0, arg1) {
-  return closure_2(_mod14085(arg0), arg1);
-});
 
-export default tmp;
+export default (arg0) => {
+  const tmp = _mod14085;
+  return tmp(_mod14089(arg0));
+};

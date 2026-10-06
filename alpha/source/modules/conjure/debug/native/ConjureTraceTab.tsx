@@ -1,29 +1,29 @@
-// Module ID: 16760
-// Function ID: 16761
+// Module ID: 16781
+// Function ID: 16782
 // Name: ConjureTraceTab
-// Dependencies: [5, 32, 19, 17, 8699, 21, 4890, 587, 558, 576, 16761, 16763, 1126, 3723, 16762, 5995, 4886, 1618, 504, 16764, 16765, 4854, 16766, 1266, 7876, 11021, 16758, 6547, 16551, 4845, 8371, 2]
+// Dependencies: [5, 32, 19, 17, 8734, 21, 4896, 587, 558, 576, 16782, 16784, 1126, 3753, 16783, 6002, 4892, 1618, 504, 16785, 16786, 4860, 16787, 1266, 7887, 11034, 16779, 6554, 16591, 4851, 8404, 2]
 
-// Module 16760 (ConjureTraceTab)
+// Module 16781 (ConjureTraceTab)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
 import v1 from "v1" /* 1266 */;
-import _modDef3723 from "module_3723" /* 3723 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4854 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import FileManagerUtils from "FileManagerUtils" /* 7876 */;
-import ConjureTraceFormat from "ConjureTraceFormat" /* 16761 */;
-import debug_ConjureTraceFormat from "debug/ConjureTraceFormat" /* 16762 */;
-import ConjureTraceUtils from "ConjureTraceUtils" /* 16763 */;
-import ConjureTimeFormat from "ConjureTimeFormat" /* 16765 */;
-import ConjureTraceDetailSheet from "ConjureTraceDetailSheet" /* 16766 */;
+import _modDef3753 from "module_3753" /* 3753 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4860 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import FileManagerUtils from "FileManagerUtils" /* 7887 */;
+import ConjureTraceFormat from "ConjureTraceFormat" /* 16782 */;
+import debug_ConjureTraceFormat from "debug/ConjureTraceFormat" /* 16783 */;
+import ConjureTraceUtils from "ConjureTraceUtils" /* 16784 */;
+import ConjureTimeFormat from "ConjureTimeFormat" /* 16786 */;
+import ConjureTraceDetailSheet from "ConjureTraceDetailSheet" /* 16787 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 8699 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 8734 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -146,7 +146,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
                         let tmp44 = null;
                         if (null != tmp20) {
                           const obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp20 };
-                          tmp44 = metroImportAll(tmp(4886).Text, obj3);
+                          tmp44 = metroImportAll(tmp(4892).Text, obj3);
                         }
                         cResult[44] = tmp20;
                         cResult[45] = tmp44;
@@ -173,7 +173,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
                                     let tmp54 = null;
                                     if (null != entry.error) {
                                       const obj4 = { variant: "text-xs/normal", color: "text-feedback-critical", lineClamp: 2, children: entry.error };
-                                      tmp54 = metroImportAll(tmp(4886).Text, obj4);
+                                      tmp54 = metroImportAll(tmp(4892).Text, obj4);
                                     }
                                     cResult[56] = entry.error;
                                     cResult[57] = tmp54;
@@ -246,7 +246,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
                                   tmp51 = null;
                                   if (null != entry.summary) {
                                     const obj8 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 2, children: entry.summary };
-                                    tmp51 = metroImportAll(tmp(4886).Text, obj8);
+                                    tmp51 = metroImportAll(tmp(4892).Text, obj8);
                                   }
                                 }
                                 cResult[53] = entry.kind;
@@ -307,7 +307,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
         if (cResult[29] === rowNested) {
           tmp30 = cResult[30];
         }
-        const Card = tmp(5995).Card;
+        const Card = tmp(6002).Card;
         if (cResult[31] === entry) {
           let tmp31;
           let tmp32;
@@ -324,7 +324,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
           } else {
             tmp32 = cResult[35];
           }
-          const Text = tmp(4886).Text;
+          const Text = tmp(4892).Text;
           const tmpResult4 = debug_ConjureTraceFormat;
           const categoryLabelResult = tmpResult4.categoryLabel(traceCategoryResult);
           cResult[0] = traceCategoryTextStyles;
@@ -389,7 +389,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
       const intl = tmp(1126).intl;
       const formatToPlainString = intl.formatToPlainString;
       const obj13 = { tokens: tmpResult5.formatTokens(entry.promptTokens) };
-      const v6GQUgQ = _modDef3723["6GQUgQ"];
+      const v6GQUgQ = _modDef3753["6GQUgQ"];
       tmpResult5 = debug_ConjureTraceFormat;
       formatToPlainStringResult = formatToPlainString(v6GQUgQ, obj13);
     }
@@ -426,7 +426,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
       const intl = tmp2(1126).intl;
       const formatToPlainString = intl.formatToPlainString;
       const obj3 = { tokens: tmp2Result.formatTokens(entry.promptTokens) };
-      const v6GQUgQ = _modDef3723["6GQUgQ"];
+      const v6GQUgQ = _modDef3753["6GQUgQ"];
       tmp2Result = debug_ConjureTraceFormat;
       formatToPlainStringResult = formatToPlainString(v6GQUgQ, obj3);
     }
@@ -444,11 +444,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
     };
     obj6 = { style: tmp.rowBody, children: items2 };
     const obj7 = { style: tmp.rowTop, children: items1 };
-    Card = tmp2(5995).Card;
+    Card = tmp2(6002).Card;
     const obj8 = { status: entry.status };
     items1 = [metroImportAll(ConjureTraceFormat.TraceStatusDot, obj8), , , ];
     const obj9 = { variant: "text-xs/semibold", style: traceCategoryTextStyles[traceCategoryResult], children: tmp2Result3.categoryLabel(traceCategoryResult) };
-    const Text = tmp2(4886).Text;
+    const Text = tmp2(4892).Text;
     tmp2Result3 = debug_ConjureTraceFormat;
     items1[1] = metroImportAll(Text, obj9);
     const obj10 = { variant: "text-xs/semibold", color: "text-default", style: tmp.rowTitle, lineClamp: 1, children: tmp6 };
@@ -456,7 +456,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
     let tmp11Result = null;
     if (null != formatToPlainStringResult) {
       const obj11 = { variant: "text-xs/normal", color: "text-subtle", children: formatToPlainStringResult };
-      tmp11Result = tmp11(tmp2(4886).Text, obj11);
+      tmp11Result = tmp11(tmp2(4892).Text, obj11);
     }
     items1[3] = tmp11Result;
     items2 = [React4(View, obj7), , ];
@@ -465,14 +465,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
       tmp11Result3 = null;
       if (null != entry.summary) {
         const obj12 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 2, children: entry.summary };
-        tmp11Result3 = tmp11(tmp2(4886).Text, obj12);
+        tmp11Result3 = tmp11(tmp2(4892).Text, obj12);
       }
     }
     items2[1] = tmp11Result3;
     let tmp11Result4 = null;
     if (null != entry.error) {
       const obj13 = { variant: "text-xs/normal", color: "text-feedback-critical", lineClamp: 2, children: entry.error };
-      tmp11Result4 = tmp11(tmp2(4886).Text, obj13);
+      tmp11Result4 = tmp11(tmp2(4892).Text, obj13);
     }
     items2[2] = tmp11Result4;
     return metroImportAll(View, obj4);
@@ -599,7 +599,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
           const Text = Text_Text.Text;
           obj4 = debug_ConjureTraceFormat;
           items1[1] = metroImportAll(Text, obj3);
-          const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: intl.formatToPlainString(_modDef3723["3dQ1ly"], { percent: num2 }) };
+          const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: intl.formatToPlainString(_modDef3753["3dQ1ly"], { percent: num2 }) };
           const Text2 = Text_Text.Text;
           intl = intl7.intl;
           items1[2] = metroImportAll(Text2, obj5);
@@ -607,7 +607,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
           const intl2 = intl7.intl;
           const formatToPlainString = intl2.formatToPlainString;
           let num4;
-          const Ow0k34 = _modDef3723.Ow0k34;
+          const Ow0k34 = _modDef3753.Ow0k34;
           const tmp4 = React4;
           const tmp5 = View;
           if (found != null) {
@@ -621,7 +621,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
           let tmp6Result = null;
           if (0 !== num) {
             const obj7 = { variant: "text-xs/normal", color: "text-subtle", children: tmp7Result.formatDuration(num) };
-            const Text4 = tmp7(4886).Text;
+            const Text4 = tmp7(4892).Text;
             tmp7Result = debug_ConjureTraceFormat;
             tmp6Result = tmp6(Text4, obj7);
           }
@@ -677,7 +677,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
   let tmp = closure_10();
   let closure_1 = tmp;
   const tmp2 = entries;
-  let obj = entries(16761);
+  let obj = entries(16782);
   dependencyMap = obj.useTraceCategoryFillStyles();
   let items = [entries];
   const memo = react.useMemo(() => {
@@ -739,7 +739,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
       const Text = Text_Text.Text;
       obj4 = debug_ConjureTraceFormat;
       items1[1] = metroImportAll(Text, obj3);
-      const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: intl.formatToPlainString(_modDef3723["3dQ1ly"], { percent: num2 }) };
+      const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: intl.formatToPlainString(_modDef3753["3dQ1ly"], { percent: num2 }) };
       const Text2 = Text_Text.Text;
       intl = intl7.intl;
       items1[2] = metroImportAll(Text2, obj5);
@@ -747,7 +747,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
       const intl2 = intl7.intl;
       const formatToPlainString = intl2.formatToPlainString;
       let num4;
-      const Ow0k34 = _modDef3723.Ow0k34;
+      const Ow0k34 = _modDef3753.Ow0k34;
       const tmp4 = React4;
       const tmp5 = View;
       if (found != null) {
@@ -761,7 +761,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
       let tmp6Result = null;
       if (0 !== num) {
         const obj7 = { variant: "text-xs/normal", color: "text-subtle", children: tmp7Result.formatDuration(num) };
-        const Text4 = tmp7(4886).Text;
+        const Text4 = tmp7(4892).Text;
         tmp7Result = debug_ConjureTraceFormat;
         tmp6Result = tmp6(Text4, obj7);
       }
@@ -769,7 +769,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
       return tmp4(tmp5, obj, item);
     })
   };
-  TRACE_CATEGORIES = tmp2(16763).TRACE_CATEGORIES;
+  TRACE_CATEGORIES = tmp2(16784).TRACE_CATEGORIES;
   items1[1] = tmp7(tmp6, obj4);
   return tmp5(tmp6, obj2);
 });
@@ -1171,13 +1171,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         const tmp9 = React4;
         if (null != item.started) {
           const obj = { variant: "text-xs/normal", color: "text-subtle", children: item.started };
-          tmp2 = metroImportAll(tmp13(4886).Text, obj);
+          tmp2 = metroImportAll(tmp13(4892).Text, obj);
         }
         items[1] = tmp2;
         let tmp3 = null;
         if (null != item.spanMs) {
           const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: tmp13Result.formatDuration(item.spanMs) };
-          const Text = tmp13(4886).Text;
+          const Text = tmp13(4892).Text;
           tmp13Result = debug_ConjureTraceFormat;
           tmp3 = metroImportAll(Text, obj5);
         }
@@ -1206,7 +1206,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         turnId = index;
       }
       const _HermesInternal = HermesInternal;
-      const obj2 = { kind: "group", key: "group-" + turnId, label: intl.formatToPlainString(_modDef3723.gPwGYA, obj3), started: tmpResult.formatClockTime(turnId.startedAt), spanMs: turnId.spanMs };
+      const obj2 = { kind: "group", key: "group-" + turnId, label: intl.formatToPlainString(_modDef3753.gPwGYA, obj3), started: tmpResult.formatClockTime(turnId.startedAt), spanMs: turnId.spanMs };
       intl = tmp(1126).intl;
       obj3 = { number: index + 1 };
       tmpResult = ConjureTimeFormat;
@@ -1280,7 +1280,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
           turnId = index;
         }
         const _HermesInternal = HermesInternal;
-        const obj2 = { kind: "group", key: "group-" + turnId, label: intl.formatToPlainString(_modDef3723.gPwGYA, obj3), started: tmpResult.formatClockTime(turnId.startedAt), spanMs: turnId.spanMs };
+        const obj2 = { kind: "group", key: "group-" + turnId, label: intl.formatToPlainString(_modDef3753.gPwGYA, obj3), started: tmpResult.formatClockTime(turnId.startedAt), spanMs: turnId.spanMs };
         intl = tmp(1126).intl;
         obj3 = { number: index + 1 };
         tmpResult = ConjureTimeFormat;
@@ -1321,13 +1321,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       const tmp9 = React4;
       if (null != item.started) {
         const obj = { variant: "text-xs/normal", color: "text-subtle", children: item.started };
-        tmp2 = metroImportAll(tmp13(4886).Text, obj);
+        tmp2 = metroImportAll(tmp13(4892).Text, obj);
       }
       items[1] = tmp2;
       let tmp3 = null;
       if (null != item.spanMs) {
         const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: tmp13Result.formatDuration(item.spanMs) };
-        const Text = tmp13(4886).Text;
+        const Text = tmp13(4892).Text;
         tmp13Result = debug_ConjureTraceFormat;
         tmp3 = metroImportAll(Text, obj5);
       }

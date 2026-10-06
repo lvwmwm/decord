@@ -1,12 +1,12 @@
-// Module ID: 8706
-// Function ID: 8707
+// Module ID: 9002
+// Function ID: 9003
 // Name: getURLForApplication
-// Dependencies: [8515, 8513, 2]
+// Dependencies: [8548, 8546, 2]
 // Exports: default, getNonTestModeUrlForApplication, isUsingDevShelfActivityUrlOverride
 
-// Module 8706 (getURLForApplication)
-import TestModeStore from "TestModeStore" /* 8515 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 8513 */;
+// Module 9002 (getURLForApplication)
+import TestModeStore from "TestModeStore" /* 8548 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 8546 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/getURLForApplication.tsx");

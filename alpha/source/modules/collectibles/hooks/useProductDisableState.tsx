@@ -1,13 +1,13 @@
-// Module ID: 8531
-// Function ID: 8532
+// Module ID: 8564
+// Function ID: 8565
 // Name: useProductDisableState
-// Dependencies: [4534, 558, 576, 504, 1088, 1126, 2]
+// Dependencies: [4540, 558, 576, 504, 1088, 1126, 2]
 
-// Module 8531 (useProductDisableState)
+// Module 8564 (useProductDisableState)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1088 */;
-import SubscriptionStore from "SubscriptionStore" /* 4534 */;
+import SubscriptionStore from "SubscriptionStore" /* 4540 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

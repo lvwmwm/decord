@@ -1,11 +1,11 @@
-// Module ID: 14350
-// Function ID: 14351
+// Module ID: 14368
+// Function ID: 14369
 // Name: conjureLiveRelaunch
-// Dependencies: [8702, 2]
+// Dependencies: [8737, 2]
 // Exports: relaunchAppFramesForBuild
 
-// Module 14350 (conjureLiveRelaunch)
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 8702 */;
+// Module 14368 (conjureLiveRelaunch)
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 8737 */;
 import size from "module_2" /* 2 */;
 
 const map = new Map();

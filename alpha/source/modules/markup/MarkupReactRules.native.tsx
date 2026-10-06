@@ -1,10 +1,10 @@
-// Module ID: 4878
-// Function ID: 4879
+// Module ID: 4884
+// Function ID: 4885
 // Name: MarkupReactRules
-// Dependencies: [109, 19, 17, 4879, 2051, 2106, 2074, 1085, 2058, 1096, 21, 4885, 558, 576, 4886, 4890, 587, 4901, 5044, 4737, 5093, 7850, 5707, 1126, 6688, 4567, 5971, 1188, 1371, 8047, 4565, 11237, 11201, 7768, 504, 4727, 7620, 4854, 11209, 1987, 11, 2028, 5974, 11182, 13653, 10991, 5785, 11704, 13654, 13656, 4839, 5787, 1369, 5812, 13658, 11706, 2]
+// Dependencies: [109, 19, 17, 4885, 2051, 2106, 2074, 1085, 2058, 1096, 21, 4891, 558, 576, 4892, 4896, 587, 4907, 5050, 4743, 5099, 7861, 5714, 1126, 6695, 4573, 5978, 1188, 1371, 8057, 4571, 11250, 11214, 7779, 504, 4733, 7631, 4860, 11222, 1987, 11, 2028, 5981, 11195, 13669, 11004, 5792, 11718, 13670, 13672, 4845, 5794, 1369, 5819, 13674, 11720, 2]
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
 
-// Module 4878 (MarkupReactRules)
+// Module 4884 (MarkupReactRules)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,26 +13,26 @@ import intl4 from "intl" /* 1126 */;
 import URLUtilsDefault from "URLUtils" /* 1371 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
 import UserSettings from "UserSettings" /* 2028 */;
-import LinkingDefault from "Linking" /* 4565 */;
-import ToastUtils from "ToastUtils" /* 4567 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import HighlightJsAnsiLanguage from "HighlightJsAnsiLanguage" /* 4885 */;
-import transitionToChannel from "transitionToChannel" /* 4901 */;
-import LinkUtils from "LinkUtils" /* 5044 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import ClipboardUtils from "ClipboardUtils" /* 6688 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
-import MarkupReactCommandRuleDefault from "MarkupReactCommandRule" /* 10991 */;
-import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 11201 */;
-import SpoilerDefault from "Spoiler" /* 11704 */;
-import TimestampDefault from "Timestamp" /* 11706 */;
-import MarkupReactGameMentionRule from "MarkupReactGameMentionRule" /* 13658 */;
+import LinkingDefault from "Linking" /* 4571 */;
+import ToastUtils from "ToastUtils" /* 4573 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import HighlightJsAnsiLanguage from "HighlightJsAnsiLanguage" /* 4891 */;
+import transitionToChannel from "transitionToChannel" /* 4907 */;
+import LinkUtils from "LinkUtils" /* 5050 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5714 */;
+import FastImageDefault from "FastImage" /* 5981 */;
+import ClipboardUtils from "ClipboardUtils" /* 6695 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
+import MarkupReactCommandRuleDefault from "MarkupReactCommandRule" /* 11004 */;
+import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 11214 */;
+import SpoilerDefault from "Spoiler" /* 11718 */;
+import TimestampDefault from "Timestamp" /* 11720 */;
+import MarkupReactGameMentionRule from "MarkupReactGameMentionRule" /* 13674 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 4885 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildRoleStore from "GuildRoleStore" /* 2106 */;
 import GuildStore from "GuildStore" /* 2074 */;
@@ -40,7 +40,7 @@ import Constants from "Constants" /* 1085 */;
 import ChannelConstants from "ChannelConstants" /* 2058 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import size_mod from "module_2" /* 2 */;
 
 let guild;
@@ -64,8 +64,8 @@ let obj8;
 let obj9;
 let tmp;
 const get_initialized = tmp(504);
-const Text_Text = tmp(4886);
-const MarkupRulesUtils = tmp(7768);
+const Text_Text = tmp(4892);
+const MarkupRulesUtils = tmp(7779);
 function MarkupMention(styles) {
   let backgroundColor;
   let items2;
@@ -157,13 +157,13 @@ function MarkupMention(styles) {
           const obj2 = { guildId: null, roleId: null, channelId: null };
           ({ guildId: obj5.guildId, roleId: obj5.roleId, channelId: obj5.channelId } = node);
           const obj4 = ActionSheetActionCreatorsDefault;
-          obj4.openLazy(asyncRequire(11209, dependencyMap.paths), "RoleMembersActionSheet", obj2, "stack");
+          obj4.openLazy(asyncRequire(11222, dependencyMap.paths), "RoleMembersActionSheet", obj2, "stack");
         }
       }
       if ("@everyone" === node.roleName) {
         if (null != node.guildId) {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-          const tmp13 = asyncRequire(11209, dependencyMap.paths);
+          const tmp13 = asyncRequire(11222, dependencyMap.paths);
           const obj6 = { guildId: node.guildId, roleId: obj3.castGuildIdAsEveryoneGuildRoleId(node.guildId), channelId: node.channelId };
           obj3 = SnowflakeUtilsDefault;
           openLazy(tmp13, "RoleMembersActionSheet", obj6, "stack");
@@ -401,7 +401,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((output) => {
           }
         }
         let obj2 = { variant: str, accessibilityRole: "link", style: link, onPress: tmp6, onLongPress: tmp7, children: tmp8 };
-        const tmp16 = closure_17(tmp(4886).Text, obj2, key);
+        const tmp16 = closure_17(tmp(4892).Text, obj2, key);
         cResult[11] = str;
         cResult[12] = state.key;
         cResult[13] = link;
@@ -413,8 +413,8 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((output) => {
       }
     }
     const obj3 = { inLink: true };
-    const smartOutput = tmp(7768).smartOutput;
-    tmp(7768);
+    const smartOutput = tmp(7779).smartOutput;
+    tmp(7779);
     const merged = Object.assign(state);
     const smartOutputResult = smartOutput(node, output, obj3);
     cResult[7] = node;
@@ -532,14 +532,14 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((output) => {
     children: smartOutput(node, output, obj2)
   };
   link = styles.link;
-  const Text = node(4886).Text;
+  const Text = node(4892).Text;
   const tmp2 = closure_17;
   if (link == null) {
     link = tmp.link;
   }
   obj2 = { inLink: true };
-  smartOutput = tmp3(7768).smartOutput;
-  node(7768);
+  smartOutput = tmp3(7779).smartOutput;
+  node(7779);
   const merged = Object.assign(state);
   return tmp2(Text, obj, state.key);
 });
@@ -688,7 +688,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((output) => {
           tmp11 = tmp14;
         }
       }
-      const tmpResult = tmp(7768);
+      const tmpResult = tmp(7779);
       const smartOutputResult = tmpResult.smartOutput(node, output, state);
       cResult[6] = node;
       cResult[7] = output;
@@ -770,7 +770,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((output) => {
       }
     };
   }
-  obj3 = node(7768);
+  obj3 = node(7779);
   return tmp4(tmp5, obj2, state.key);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -1042,7 +1042,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
       if (cResult[4] !== node.inContent) {
         let tmp10Result = null;
         if (null != node.inContent) {
-          const obj2 = { themedColor: node(587).colors.MENTION_FOREGROUND, style: size, source: tmp11(11182), size: state(1188).Icon.Sizes.CUSTOM };
+          const obj2 = { themedColor: node(587).colors.MENTION_FOREGROUND, style: size, source: tmp11(11195), size: state(1188).Icon.Sizes.CUSTOM };
           const ThemedIcon = tmp(1188).ThemedIcon;
           const fontScale = closure_6.getFontScale();
           const tmp10 = closure_17;
@@ -1129,7 +1129,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
                                                       const tmp6 = require;
                                                       if (obj.canViewChannel(channel)) {
                                                         if (tmp3) {
-                                                          const tmp6Result = tmp6(4737);
+                                                          const tmp6Result = tmp6(4743);
                                                           const rootNavigationRef = tmp6Result.getRootNavigationRef();
                                                           if (rootNavigationRef != null) {
                                                             rootNavigationRef.goBack();
@@ -1191,7 +1191,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
           }
           const obj6 = { variant: str2, style: tmp5, children: items2 };
           items2 = [tmp6, tmp8, tmp14];
-          const tmp18 = closure_18(state(4886).Text, obj6, key);
+          const tmp18 = closure_18(state(4892).Text, obj6, key);
           cResult[10] = tmp4.channelMentionText;
           cResult[11] = state.key;
           cResult[12] = str2;
@@ -1202,7 +1202,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
           tmp16 = tmp18;
         }
       }
-      const tmpResult = state(7768);
+      const tmpResult = state(7779);
       const smartOutputResult = tmpResult.smartOutput(node, output, state);
       cResult[6] = node;
       cResult[7] = output;
@@ -1240,7 +1240,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   const tmp3 = state;
   const tmp4 = dependencyMap;
   let str2 = variants.channelMentionText;
-  const Text = state(4886).Text;
+  const Text = state(4892).Text;
   const tmp2 = closure_18;
   if (str2 == null) {
     str2 = "text-xs/medium";
@@ -1253,7 +1253,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   items = [outputResult, , ];
   let tmp7Result = null;
   if (null != node.inContent) {
-    const obj2 = { themedColor: node(587).colors.MENTION_FOREGROUND, style: size, source: tmp8(11182), size: tmp3(1188).Icon.Sizes.CUSTOM };
+    const obj2 = { themedColor: node(587).colors.MENTION_FOREGROUND, style: size, source: tmp8(11195), size: tmp3(1188).Icon.Sizes.CUSTOM };
     const ThemedIcon = tmp3(1188).ThemedIcon;
     const fontScale = closure_6.getFontScale();
     const tmp7 = closure_17;
@@ -1266,7 +1266,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
     tmp7Result = tmp7(ThemedIcon, obj2);
   }
   items[1] = tmp7Result;
-  const tmp3Result = tmp3(7768);
+  const tmp3Result = tmp3(7779);
   items[2] = tmp3Result.smartOutput(node, output, state);
   const tmp2Result = tmp2(Text, obj, state.key);
   let tmp13Result = tmp2Result;
@@ -1296,7 +1296,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
                   const tmp6 = require;
                   if (obj.canViewChannel(channel)) {
                     if (tmp3) {
-                      const tmp6Result = tmp6(4737);
+                      const tmp6Result = tmp6(4743);
                       const rootNavigationRef = tmp6Result.getRootNavigationRef();
                       if (rootNavigationRef != null) {
                         rootNavigationRef.goBack();
@@ -1365,7 +1365,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   }
   const channelMentionText = tmp4.channelMentionText;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { themedColor: node(587).colors.MENTION_FOREGROUND, source: node(13653), size: SMALL };
+    const obj2 = { themedColor: node(587).colors.MENTION_FOREGROUND, source: node(13669), size: SMALL };
     const ThemedIcon = tmp(1188).ThemedIcon;
     const fontScale = closure_6.getFontScale();
     const tmp6 = closure_17;
@@ -1480,7 +1480,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
       }
       const obj6 = { variant: str2, style: channelMentionText, children: items2 };
       items2 = [first, tmp11];
-      const tmp15 = closure_18(state(4886).Text, obj6, key);
+      const tmp15 = closure_18(state(4892).Text, obj6, key);
       cResult[5] = tmp4.channelMentionText;
       cResult[6] = state.key;
       cResult[7] = str2;
@@ -1489,7 +1489,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
       tmp13 = tmp15;
     }
   }
-  const tmpResult = state(7768);
+  const tmpResult = state(7779);
   const smartOutputResult = tmpResult.smartOutput(node, output, state);
   cResult[1] = node;
   cResult[2] = output;
@@ -1514,13 +1514,13 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
     str = "text";
   }
   let str2 = variants.channelMentionText;
-  const Text = state(4886).Text;
+  const Text = state(4892).Text;
   const tmp2 = closure_18;
   if (str2 == null) {
     str2 = "text-xs/medium";
   }
   let obj = { variant: str2, style: tmp.channelMentionText, children: items };
-  const obj2 = { themedColor: node(587).colors.MENTION_FOREGROUND, source: node(13653), size: SMALL };
+  const obj2 = { themedColor: node(587).colors.MENTION_FOREGROUND, source: node(13669), size: SMALL };
   const ThemedIcon = tmp3(1188).ThemedIcon;
   const fontScale = closure_6.getFontScale();
   if (fontScale < 1) {
@@ -1531,7 +1531,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
     SMALL = tmp3(1188).Icon.Sizes.SMALL;
   }
   items = [tmp5(ThemedIcon, obj2), ];
-  const tmp3Result = state(7768);
+  const tmp3Result = state(7779);
   items[1] = tmp3Result.smartOutput(node, output, state);
   const tmp2Result = tmp2(Text, obj, state.key);
   let tmp5Result = tmp2Result;
@@ -1773,7 +1773,7 @@ export default function createRules(styles) {
       let closure_0 = channelId;
       let obj = MarkupRulesUtils;
       if (obj.isStaticRouteIconType(channelId.channelId)) {
-        let SignPostIcon = tmp(13654).SignPostIcon;
+        let SignPostIcon = tmp(13670).SignPostIcon;
         channelId = channelId.channelId;
         let tmp4 = constants;
         if (constants.GUILD_HOME !== channelId) {
@@ -1781,11 +1781,11 @@ export default function createRules(styles) {
             if (tmp4.CHANNEL_BROWSER !== channelId) {
               if (tmp4.CUSTOMIZE_COMMUNITY !== channelId) {
                 if (tmp4.LINKED_ROLES === channelId) {
-                  SignPostIcon = tmp(4839).LinkIcon;
+                  SignPostIcon = tmp(4845).LinkIcon;
                 }
               }
             }
-            SignPostIcon = tmp(13656).ChannelListMagnifyingGlassIcon;
+            SignPostIcon = tmp(13672).ChannelListMagnifyingGlassIcon;
           }
           obj2 = {
             accessibilityRole: "button",
@@ -1824,7 +1824,7 @@ export default function createRules(styles) {
           items[1] = tmpResult.smartOutput(channelId, output, textColor);
           return tmp6(tmp7, obj2, textColor.key);
         }
-        SignPostIcon = tmp(13654).SignPostIcon;
+        SignPostIcon = tmp(13670).SignPostIcon;
       } else {
         return null;
       }

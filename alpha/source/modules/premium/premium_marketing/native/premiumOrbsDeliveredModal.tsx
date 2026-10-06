@@ -1,16 +1,16 @@
-// Module ID: 13145
-// Function ID: 13146
+// Module ID: 13164
+// Function ID: 13165
 // Name: premiumOrbsDeliveredModal
-// Dependencies: [19, 6899, 1085, 13146, 21, 5708, 13147, 11, 13149, 2]
+// Dependencies: [19, 6909, 1085, 13165, 21, 5715, 13166, 11, 13168, 2]
 // Exports: anchorOrbsPurchaseStart, openOrbsModalIfDelivered
 
-// Module 13145 (premiumOrbsDeliveredModal)
+// Module 13164 (premiumOrbsDeliveredModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import VirtualCurrencyConstants from "VirtualCurrencyConstants" /* 13146 */;
-import PremiumOrbsDeliveredModalExperimentDefault from "PremiumOrbsDeliveredModalExperiment" /* 13149 */;
+import VirtualCurrencyConstants from "VirtualCurrencyConstants" /* 13165 */;
+import PremiumOrbsDeliveredModalExperimentDefault from "PremiumOrbsDeliveredModalExperiment" /* 13168 */;
 import react from "react" /* 19 */;
-import EntitlementStore from "EntitlementStore" /* 6899 */;
+import EntitlementStore from "EntitlementStore" /* 6909 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -84,7 +84,7 @@ export const openOrbsModalIfDelivered = function openOrbsModalIfDelivered() {
                 },
           isDismissable: false
         };
-        const tmp2Result = tmp2(5708);
+        const tmp2Result = tmp2(5715);
         tmp2Result.openLazy(obj2);
       }
     }

@@ -1,26 +1,26 @@
-// Module ID: 16346
-// Function ID: 16347
+// Module ID: 16386
+// Function ID: 16387
 // Name: ForLaterOpenActionButton
-// Dependencies: [19, 17, 11283, 21, 8469, 16347, 4890, 587, 558, 576, 4791, 4580, 5601, 7495, 4849, 11337, 504, 7485, 7480, 7483, 6681, 7494, 1126, 7575, 2]
+// Dependencies: [19, 17, 11296, 21, 8502, 16387, 4896, 587, 558, 576, 4797, 4586, 5608, 7506, 4855, 11350, 504, 7496, 7491, 7494, 6688, 7505, 1126, 7586, 2]
 
-// Module 16346 (ForLaterOpenActionButton)
+// Module 16386 (ForLaterOpenActionButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4580 */;
-import useThemeDefault from "useTheme" /* 4791 */;
-import ButtonHooks from "ButtonHooks" /* 5601 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 7480 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7483 */;
-import showForLaterModal from "showForLaterModal" /* 7494 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 7495 */;
-import ClipView from "ClipView" /* 8469 */;
-import getIconSize from "getIconSize" /* 16347 */;
+import useToken from "useToken" /* 4586 */;
+import useThemeDefault from "useTheme" /* 4797 */;
+import ButtonHooks from "ButtonHooks" /* 5608 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6688 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 7491 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7494 */;
+import showForLaterModal from "showForLaterModal" /* 7505 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 7506 */;
+import ClipView from "ClipView" /* 8502 */;
+import getIconSize from "getIconSize" /* 16387 */;
 import react from "react" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11283 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11296 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let metroRequire;
 let size;
 let size1;
 let tmp4;
-const ClipViewDefault = tmp4(8469);
+const ClipViewDefault = tmp4(8502);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const point = { shape: ClipView.CutoutShape.Circle, x: getIconSize.ICON_SIZE.sm - 7, y: getIconSize.ICON_SIZE.sm - 8, size: 10 };
@@ -57,9 +57,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj3 = ButtonHooks;
   const iconSizeStyles = obj3.useIconSizeStyles("sm", true, 2);
   if (type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER) {
-    BookmarkIcon = tmp(4849).ClockIcon;
+    BookmarkIcon = tmp(4855).ClockIcon;
   } else {
-    BookmarkIcon = tmp(11337).BookmarkIcon;
+    BookmarkIcon = tmp(11350).BookmarkIcon;
   }
   if (cResult[0] === iconSizeStyles) {
     let tmp9;
@@ -136,9 +136,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj2 = ButtonHooks;
   const iconSizeStyles = obj2.useIconSizeStyles("sm", true, 2);
   if (type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER) {
-    BookmarkIcon = tmp4(4849).ClockIcon;
+    BookmarkIcon = tmp4(4855).ClockIcon;
   } else {
-    BookmarkIcon = tmp4(11337).BookmarkIcon;
+    BookmarkIcon = tmp4(11350).BookmarkIcon;
   }
   const obj3 = { style: items, children: tmp8Result };
   items = [tmp6.container, iconSizeStyles];

@@ -1,20 +1,20 @@
 // Module ID: 12652
 // Function ID: 12653
-// Dependencies: []
-// Exports: severityLevelFromString
+// Dependencies: [12651]
+// Exports: getTraceMetaTags
 
 // Module 12652
+import _mod12651 from "module_12651" /* 12651 */;
 
-export const severityLevelFromString = function severityLevelFromString(arg0) {
-  let str = "warning";
-  if ("warn" !== arg0) {
-    const items = ["fatal", "error", "warning", "log", "info", "debug"];
-    let str2 = "log";
-    if (items.includes(arg0)) {
-      str2 = arg0;
-    }
-    str = str2;
-  }
-  return str;
+
+export const getTraceMetaTags = function getTraceMetaTags() {
+  const obj = _mod12651;
+  const entries1 = entries(obj.getTraceData());
+  const mapped = entries1.map((item) => {
+    let tmp;
+    let tmp2;
+    [tmp, tmp2] = item;
+    return "<meta name=\"" + tmp + "\" content=\"" + tmp2 + "\"/>";
+  });
+  return mapped.join("\n");
 };
-export const validSeverityLevels = ["fatal", "error", "warning", "log", "info", "debug"];

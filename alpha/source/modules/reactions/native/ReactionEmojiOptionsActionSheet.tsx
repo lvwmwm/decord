@@ -1,26 +1,26 @@
-// Module ID: 9979
-// Function ID: 9980
+// Module ID: 9992
+// Function ID: 9993
 // Name: ReactionEmojiOptionsActionSheet
-// Dependencies: [19, 17, 4879, 5638, 4699, 21, 4890, 587, 558, 576, 2028, 6687, 504, 9870, 1402, 4854, 9943, 9945, 4886, 1126, 4574, 9939, 4568, 6688, 4567, 7260, 6625, 5993, 6074, 6701, 2]
+// Dependencies: [19, 17, 4885, 5645, 4705, 21, 4896, 587, 558, 576, 2028, 6694, 504, 9883, 1402, 4860, 9956, 9958, 4892, 1126, 4580, 9952, 4574, 6695, 4573, 7273, 6632, 6000, 6081, 6708, 2]
 
-// Module 9979 (ReactionEmojiOptionsActionSheet)
+// Module 9992 (ReactionEmojiOptionsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import ToastUtils from "ToastUtils" /* 4567 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4574 */;
-import ClipboardUtils from "ClipboardUtils" /* 6688 */;
-import ReactionActionCreatorsAll from "ReactionActionCreators" /* 7260 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9939 */;
-import StarIcon from "StarIcon" /* 9943 */;
-import StarOutlineIcon2 from "StarOutlineIcon" /* 9945 */;
+import ToastUtils from "ToastUtils" /* 4573 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4580 */;
+import ClipboardUtils from "ClipboardUtils" /* 6695 */;
+import ReactionActionCreatorsAll from "ReactionActionCreators" /* 7273 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9952 */;
+import StarIcon from "StarIcon" /* 9956 */;
+import StarOutlineIcon2 from "StarOutlineIcon" /* 9958 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import EmojiStore from "EmojiStore" /* 5638 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import EmojiStore from "EmojiStore" /* 5645 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -308,9 +308,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     }
     const tmp8 = React4;
     if (arg0) {
-      StarOutlineIcon = tmp9(9943).StarIcon;
+      StarOutlineIcon = tmp9(9956).StarIcon;
     } else {
-      StarOutlineIcon = tmp9(9945).StarOutlineIcon;
+      StarOutlineIcon = tmp9(9958).StarOutlineIcon;
     }
     return tmp8(StarOutlineIcon, { style });
   }, items4);

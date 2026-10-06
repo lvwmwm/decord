@@ -1,21 +1,21 @@
-// Module ID: 15668
-// Function ID: 15669
+// Module ID: 15682
+// Function ID: 15683
 // Name: UserSettingsDesignSystemTextInput
-// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 5593, 5995, 6098, 5874, 14267, 6644, 6645, 6580, 4886, 5864, 6547, 6883, 6423, 7575, 6100, 5594, 4854, 6454, 2]
+// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 5600, 6002, 6105, 5881, 14285, 6651, 6652, 6587, 4892, 5871, 6554, 6893, 6430, 7586, 6107, 5601, 4860, 6461, 2]
 
-// Module 15668 (UserSettingsDesignSystemTextInput)
+// Module 15682 (UserSettingsDesignSystemTextInput)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import Stack_Stack from "Stack/Stack" /* 5593 */;
-import Card_Card from "Card/Card" /* 5995 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6644 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import Stack_Stack from "Stack/Stack" /* 5600 */;
+import Card_Card from "Card/Card" /* 6002 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6651 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6652 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,19 +25,19 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const Text_Text = tmp(4886);
-const components_Button_Button = tmp(5594);
-const TextIcon = tmp(5864);
-const AtIcon = tmp(5874);
-const TextInput_TextInput = tmp(6098);
-const TextField = tmp(6100);
-const Input2 = tmp(6423);
-const SplitTextInput = tmp(6454);
-const SearchField = tmp(6547);
-const TextArea = tmp(6580);
-const SettingsIcon = tmp(6883);
-const IconButton2 = tmp(7575);
-const GhostInput2 = tmp(14267);
+const Text_Text = tmp(4892);
+const components_Button_Button = tmp(5601);
+const TextIcon = tmp(5871);
+const AtIcon = tmp(5881);
+const TextInput_TextInput = tmp(6105);
+const TextField = tmp(6107);
+const Input2 = tmp(6430);
+const SplitTextInput = tmp(6461);
+const SearchField = tmp(6554);
+const TextArea = tmp(6587);
+const SettingsIcon = tmp(6893);
+const IconButton2 = tmp(7586);
+const GhostInput2 = tmp(14285);
 const ScrollView = react_native.ScrollView;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let obj = { container: { padding: 16 }, sample: obj2 };
@@ -298,10 +298,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { children: items };
     items = [first, ];
-    BottomSheet = tmp(6645).BottomSheet;
+    BottomSheet = tmp(6652).BottomSheet;
     const obj4 = { style: tmp7, children: metroRequire(closure_9, obj5) };
     obj5 = { children: metroRequire(closure_11, { placeholder: "@wumpus", description: "You can use up to 16 alpha-numeric characters" }) };
-    const Stack = tmp(5593).Stack;
+    const Stack = tmp(5600).Stack;
     items[1] = metroRequire(Stack, obj4);
     const tmp13 = metroImportDefault(BottomSheet, obj3);
     cResult[2] = tmp13;
@@ -348,10 +348,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { children: items };
     items = [first, ];
-    BottomSheet = tmp(6645).BottomSheet;
+    BottomSheet = tmp(6652).BottomSheet;
     const obj4 = { style: tmp7, children: metroRequire(closure_9, obj5) };
     obj5 = { children: metroRequire(closure_11, { placeholder: "@wumpus", description: "You can use up to 16 alpha-numeric characters", centered: false, size: "md" }) };
-    const Stack = tmp(5593).Stack;
+    const Stack = tmp(5600).Stack;
     items[1] = metroRequire(Stack, obj4);
     const tmp13 = metroImportDefault(BottomSheet, obj3);
     cResult[2] = tmp13;
@@ -428,7 +428,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   const obj3 = { status: tmp5, errorMessage: str, label: "Pressable Attachment", value: tmp7, trailingPressableProps: tmp9, trailingIcon: AtIcon.AtIcon, onChange: first };
-  const TextInput = tmp(6098).TextInput;
+  const TextInput = tmp(6105).TextInput;
   const tmp11 = metroRequire(TextInput, obj3);
   cResult[2] = tmp5;
   cResult[3] = str;

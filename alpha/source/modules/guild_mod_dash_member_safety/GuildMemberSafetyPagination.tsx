@@ -1,11 +1,11 @@
-// Module ID: 7035
-// Function ID: 7036
+// Module ID: 7048
+// Function ID: 7049
 // Name: GuildMemberSafetyPagination
-// Dependencies: [32, 2112, 7006, 2]
+// Dependencies: [32, 2112, 7019, 2]
 // Exports: createDefaultMemberSafetyPaginationState, getSearchChunkLimit
 
-// Module 7035 (GuildMemberSafetyPagination)
-import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 7006 */;
+// Module 7048 (GuildMemberSafetyPagination)
+import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 7019 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GuildMemberStore from "GuildMemberStore" /* 2112 */;
 import size from "module_2" /* 2 */;

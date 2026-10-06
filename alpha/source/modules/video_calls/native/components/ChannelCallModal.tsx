@@ -1,28 +1,28 @@
-// Module ID: 9056
-// Function ID: 9057
+// Module ID: 9092
+// Function ID: 9093
 // Name: ChannelCallModal
-// Dependencies: [32, 19, 4906, 2051, 9050, 9051, 9057, 1085, 21, 558, 576, 9054, 9058, 4736, 9063, 9154, 9060, 9155, 4612, 4745, 12549, 504, 1484, 9059, 12550, 6657, 6681, 12694, 5097, 6140, 9087, 2]
+// Dependencies: [32, 19, 4912, 2051, 9086, 9087, 9093, 1085, 21, 558, 576, 9090, 9094, 4742, 9099, 9189, 9096, 9190, 4618, 4751, 12564, 504, 1484, 9095, 12565, 6664, 6688, 12709, 5103, 6147, 9123, 2]
 
-// Module 9056 (ChannelCallModal)
+// Module 9092 (ChannelCallModal)
 import react2 from "react" /* 576 */;
 import Constants2 from "Constants" /* 1085 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4736 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5097 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 9051 */;
-import VoiceChatHooks from "VoiceChatHooks" /* 9054 */;
-import RevealProvider from "RevealProvider" /* 9058 */;
-import CameraPreviewDefault from "CameraPreview" /* 9063 */;
-import ChannelCallModalManagerDefault from "ChannelCallModalManager" /* 9154 */;
-import ChannelCallNavigatorDefault from "ChannelCallNavigator" /* 9155 */;
-import PanGestureAnimations from "PanGestureAnimations" /* 12549 */;
-import RouteManagerUtils from "RouteManagerUtils" /* 12550 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4742 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5103 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 9087 */;
+import VoiceChatHooks from "VoiceChatHooks" /* 9090 */;
+import RevealProvider from "RevealProvider" /* 9094 */;
+import CameraPreviewDefault from "CameraPreview" /* 9099 */;
+import ChannelCallModalManagerDefault from "ChannelCallModalManager" /* 9189 */;
+import ChannelCallNavigatorDefault from "ChannelCallNavigator" /* 9190 */;
+import PanGestureAnimations from "PanGestureAnimations" /* 12564 */;
+import RouteManagerUtils from "RouteManagerUtils" /* 12565 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import ChannelCallStore from "ChannelCallStore" /* 9050 */;
-import Constants from "Constants" /* 9057 */;
+import ChannelCallStore from "ChannelCallStore" /* 9086 */;
+import Constants from "Constants" /* 9093 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -89,7 +89,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let tmp13 = null;
   if (isConnectedToVoiceChannel) {
     const obj3 = { value: revealProviderValue, children: closure_15(CameraPreviewDefault, obj4) };
-    const Provider = tmp(9058).RevealContext.Provider;
+    const Provider = tmp(9094).RevealContext.Provider;
     obj4 = { channel, participantScreenIsFocused: !tmp4, isChannelCallModalOpen: tmp9 };
     tmp13 = closure_15(Provider, obj3);
   }
@@ -148,7 +148,7 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId
           tmp3 = closure_2;
           obj = closure_1(closure_2[15]);
           initializeResult = obj.initialize(tmp);
-          return () => { /* body not rendered: F139452 */ };
+          return () => { /* body not rendered: F139671 */ };
         } else {
           return;
         }
@@ -168,7 +168,7 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId
           tmp3 = closure_2;
           obj = closure_1(closure_2[15]);
           initializeResult = obj.initialize(tmp);
-          return () => { /* body not rendered: F139452 */ };
+          return () => { /* body not rendered: F139671 */ };
         } else {
           return;
         }
@@ -186,7 +186,7 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId
           tmp3 = closure_2;
           obj = closure_1(closure_2[15]);
           initializeResult = obj.initialize(tmp);
-          return () => { /* body not rendered: F139452 */ };
+          return () => { /* body not rendered: F139671 */ };
         } else {
           return;
         }
@@ -244,19 +244,19 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   fn.__closure = { width };
   fn.__workletHash = 15383459308604;
   fn.__initData = __initData;
-  const obj2 = width(4612);
+  const obj2 = width(4618);
   const derivedValue = obj2.useDerivedValue(fn);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn2 = function l() {
       const obj = width(dependencyMap[18]);
       obj.runOnJS(width(dependencyMap[19]).dismissKeyboard)();
     };
-    fn2.__closure = { runOnJS: width(4612).runOnJS, dismissKeyboard: width(4745).dismissKeyboard };
+    fn2.__closure = { runOnJS: width(4618).runOnJS, dismissKeyboard: width(4751).dismissKeyboard };
     fn2.__workletHash = 4086900686382;
     fn2.__initData = __initData2;
     cResult[0] = fn2;
     first = fn2;
-    const obj3 = { runOnJS: width(4612).runOnJS, dismissKeyboard: width(4745).dismissKeyboard };
+    const obj3 = { runOnJS: width(4618).runOnJS, dismissKeyboard: width(4751).dismissKeyboard };
   } else {
     first = cResult[0];
   }
@@ -300,7 +300,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let translateX;
   width = width.width;
   ({ translateX, enabled, isGestureInProgress } = width);
-  let obj = width(4612);
+  let obj = width(4618);
   const fn = function u() {
     const items = [0, -width];
     return items;
@@ -312,7 +312,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj = width(dependencyMap[18]);
     obj.runOnJS(width(dependencyMap[19]).dismissKeyboard)();
   };
-  const obj2 = { runOnJS: width(4612).runOnJS, dismissKeyboard: width(4745).dismissKeyboard };
+  const obj2 = { runOnJS: width(4618).runOnJS, dismissKeyboard: width(4751).dismissKeyboard };
   const derivedValue = obj.useDerivedValue(fn);
   const useCallback = react.useCallback;
   fn2.__closure = obj2;

@@ -1,20 +1,20 @@
-// Module ID: 7640
-// Function ID: 7641
+// Module ID: 7651
+// Function ID: 7652
 // Name: useIsCallActive
-// Dependencies: [5437, 4906, 4911, 558, 576, 504, 2]
+// Dependencies: [5444, 4912, 4917, 558, 576, 504, 2]
 // Exports: checkIsCallActive
 
-// Module 7640 (useIsCallActive)
-import CallConstants from "CallConstants" /* 4911 */;
-import CallStore from "CallStore" /* 5437 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
+// Module 7651 (useIsCallActive)
+import CallConstants from "CallConstants" /* 4917 */;
+import CallStore from "CallStore" /* 5444 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f95343 = (type) => type.type === constants.USER && !type.ringing;
+const f95484 = (type) => type.type === constants.USER && !type.ringing;
 const ParticipantTypes = CallConstants.ParticipantTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
@@ -48,7 +48,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     const tmp = closure_0;
     if (isCallActiveResult) {
       const participants = ChannelRTCStore.getParticipants(tmp);
-      isCallActiveResult = participants.some(f95343);
+      isCallActiveResult = participants.some(f95484);
     }
     return isCallActiveResult;
   };
@@ -72,7 +72,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     const tmp = closure_0;
     if (isCallActiveResult) {
       const participants = ChannelRTCStore.getParticipants(tmp);
-      isCallActiveResult = participants.some(f95343);
+      isCallActiveResult = participants.some(f95484);
     }
     return isCallActiveResult;
   }, items1);
@@ -82,7 +82,7 @@ function checkIsCallActive(channelId, id) {
   let isCallActiveResult = CallStore.isCallActive(channelId, id);
   if (isCallActiveResult) {
     const participants = ChannelRTCStore.getParticipants(channelId);
-    isCallActiveResult = participants.some(f95343);
+    isCallActiveResult = participants.some(f95484);
   }
   return isCallActiveResult;
 }
@@ -120,7 +120,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       let isCallActiveResult = CallStore.isCallActive(tmp, closure_1);
       if (isCallActiveResult) {
         const participants = ChannelRTCStore.getParticipants(tmp);
-        isCallActiveResult = participants.some(f95343);
+        isCallActiveResult = participants.some(f95484);
       }
       tmp2 = isCallActiveResult;
     }
@@ -147,7 +147,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       let isCallActiveResult = CallStore.isCallActive(tmp, closure_1);
       if (isCallActiveResult) {
         const participants = ChannelRTCStore.getParticipants(tmp);
-        isCallActiveResult = participants.some(f95343);
+        isCallActiveResult = participants.some(f95484);
       }
       tmp2 = isCallActiveResult;
     }

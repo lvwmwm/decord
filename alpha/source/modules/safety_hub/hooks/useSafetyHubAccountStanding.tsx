@@ -1,11 +1,11 @@
-// Module ID: 11494
-// Function ID: 11495
+// Module ID: 11507
+// Function ID: 11508
 // Name: useSafetyHubAccountStanding
-// Dependencies: [8106, 558, 576, 504, 2]
+// Dependencies: [8139, 558, 576, 504, 2]
 
-// Module 11494 (useSafetyHubAccountStanding)
+// Module 11507 (useSafetyHubAccountStanding)
 import react from "react" /* 576 */;
-import SafetyHubStore from "SafetyHubStore" /* 8106 */;
+import SafetyHubStore from "SafetyHubStore" /* 8139 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

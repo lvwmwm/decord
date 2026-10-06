@@ -1,13 +1,13 @@
-// Module ID: 5640
-// Function ID: 5641
+// Module ID: 5647
+// Function ID: 5648
 // Name: RawGuildEmojiStore
-// Dependencies: [32, 2068, 2075, 4526, 559, 2]
+// Dependencies: [32, 2068, 2075, 4532, 559, 2]
 
-// Module 5640 (RawGuildEmojiStore)
+// Module 5647 (RawGuildEmojiStore)
 import libdiscoreExperiments from "libdiscoreExperiments" /* 559 */;
 import js_shim_PlainRecord from "js_shim/PlainRecord" /* 2068 */;
 import LibdiscoreStore2 from "LibdiscoreStore" /* 2075 */;
-import EmojiTypes from "EmojiTypes" /* 4526 */;
+import EmojiTypes from "EmojiTypes" /* 4532 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

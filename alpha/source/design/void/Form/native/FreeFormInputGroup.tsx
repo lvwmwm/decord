@@ -1,22 +1,22 @@
-// Module ID: 6097
-// Function ID: 6098
+// Module ID: 6104
+// Function ID: 6105
 // Name: FreeFormInputGroup
-// Dependencies: [109, 19, 17, 21, 4890, 558, 576, 1369, 6073, 1188, 6098, 6425, 6426, 6428, 4886, 2]
+// Dependencies: [109, 19, 17, 21, 4896, 558, 576, 1369, 6080, 1188, 6105, 6432, 6433, 6435, 4892, 2]
 
-// Module 6097 (FreeFormInputGroup)
+// Module 6104 (FreeFormInputGroup)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import native from "native" /* 1188 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
-import RedesignCompat from "RedesignCompat" /* 6073 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 6098 */;
-import FreeFormLabelDefault from "FreeFormLabel" /* 6425 */;
-import FreeFormTextInputDefault from "FreeFormTextInput" /* 6426 */;
-import FreeFormErrorLabelDefault from "FreeFormErrorLabel" /* 6428 */;
+import RedesignCompat from "RedesignCompat" /* 6080 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 6105 */;
+import FreeFormLabelDefault from "FreeFormLabel" /* 6432 */;
+import FreeFormTextInputDefault from "FreeFormTextInput" /* 6433 */;
+import FreeFormErrorLabelDefault from "FreeFormErrorLabel" /* 6435 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -107,7 +107,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       str = "visible-password";
       PlatformUtils;
     }
-    const context = react.useContext(tmp(6073).RedesignCompatContext);
+    const context = react.useContext(tmp(6080).RedesignCompatContext);
     const id = react.useId();
     if (context) {
       ({ placeholder, onChangeText, clearButtonVisibility } = tmp9);
@@ -222,7 +222,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
                               let tmp47 = null;
                               if (null != tmp6) {
                                 const obj4 = { style: tmp19.hint, variant: "text-xs/medium", color: "text-muted", children: tmp6 };
-                                tmp47 = metroImportDefault(tmp(4886).Text, obj4);
+                                tmp47 = metroImportDefault(tmp(4892).Text, obj4);
                               }
                               cResult[47] = tmp6;
                               cResult[48] = tmp19.hint;
@@ -336,7 +336,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   if (context) {
     ({ placeholder, onChangeText, clearButtonVisibility } = merged);
     const obj3 = { containerStyle: style, value, label, errorMessage: error, description: hint, placeholder, onChange: onChangeText, clearable: clearButtonVisibility !== native.ClearButtonVisibility.WITH_CONTENT, keyboardType: str, secureTextEntry: isAndroidResult, autoCapitalize: merged.autoCapitalize };
-    const TextInput = tmp8(6098).TextInput;
+    const TextInput = tmp8(6105).TextInput;
     return metroImportDefault(TextInput, obj3);
   } else {
     let tmp14 = null;
@@ -366,13 +366,13 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     let tmp17Result = null;
     if (null != error) {
       const obj7 = { style: tmp2.error, children: error };
-      tmp17Result = tmp17(tmp18(6428), obj7);
+      tmp17Result = tmp17(tmp18(6435), obj7);
     }
     items[2] = tmp17Result;
     let tmp17Result2 = null;
     if (null != hint) {
       const obj8 = { style: tmp2.hint, variant: "text-xs/medium", color: "text-muted", children: hint };
-      tmp17Result2 = tmp17(tmp8(4886).Text, obj8);
+      tmp17Result2 = tmp17(tmp8(4892).Text, obj8);
     }
     items[3] = tmp17Result2;
     return tmp12(tmp13, obj4);

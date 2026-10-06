@@ -1,19 +1,19 @@
-// Module ID: 17221
-// Function ID: 17222
+// Module ID: 17250
+// Function ID: 17251
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [19, 4913, 4909, 4911, 21, 558, 576, 11901, 9336, 573, 9701, 4945, 9660, 16164, 17222, 4574, 4568, 1126, 4800, 587, 2]
+// Dependencies: [19, 4919, 4915, 4917, 21, 558, 576, 11915, 9350, 573, 9714, 4951, 9673, 16203, 17251, 4580, 4574, 1126, 4806, 587, 2]
 
-// Module 17221 (useVoicePanelCardUserStateIcons)
+// Module 17250 (useVoicePanelCardUserStateIcons)
 import Fragment from "Fragment" /* 21 */;
 import intl6 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
-import CallConstants from "CallConstants" /* 4911 */;
-import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9336 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11901 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17222 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
+import CallConstants from "CallConstants" /* 4917 */;
+import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9350 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11915 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17251 */;
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
+import VoiceStateStore from "VoiceStateStore" /* 4915 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,8 +21,8 @@ const require = globalThis.__r;
 let _require, dependencyMap, importDefault, obj1, openManaResult, openResult, str;
 
 let tmp2;
-const MobileAudioOutputExperimentDefault = tmp2(9660);
-const useMuteAwareLocalVolumeDefault = tmp2(9701);
+const MobileAudioOutputExperimentDefault = tmp2(9673);
+const useMuteAwareLocalVolumeDefault = tmp2(9714);
 const ParticipantTypes = CallConstants.ParticipantTypes;
 const jsx = Fragment.jsx;
 const VoicePanelCardUserStateIconType = { STREAM_ICON: "STREAM_ICON", USER_VIDEO_ICON: "USER_VIDEO_ICON", MUTE_DEAFEN_ICON: "MUTE_DEAFEN_ICON", USER_DISCONNECTED_ICON: "DISCONNECTED_ICON", SPEAKER_MUTE_ICON: "SPEAKER_MUTE_ICON" };
@@ -169,7 +169,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
             openManaResult = openMana("user-disconnected-indicator", obj1);
           } else {
             obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
-            obj4.icon = function icon() { /* body not rendered: F148171 */ };
+            obj4.icon = function icon() { /* body not rendered: F148396 */ };
             open = tmp5.open;
             intl = tmp(tmp2[17]).intl;
             obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
@@ -204,7 +204,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
             openManaResult = openMana("user-disconnected-indicator", obj1);
           } else {
             obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
-            obj4.icon = function icon() { /* body not rendered: F148171 */ };
+            obj4.icon = function icon() { /* body not rendered: F148396 */ };
             open = tmp5.open;
             intl = tmp(tmp2[17]).intl;
             obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
@@ -234,7 +234,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
             openManaResult = openMana("user-disconnected-indicator", obj1);
           } else {
             obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
-            obj4.icon = function icon() { /* body not rendered: F148171 */ };
+            obj4.icon = function icon() { /* body not rendered: F148396 */ };
             open = tmp5.open;
             intl = tmp(tmp2[17]).intl;
             obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
@@ -263,7 +263,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
             openManaResult = openMana("user-disconnected-indicator", obj1);
           } else {
             obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
-            obj4.icon = function icon() { /* body not rendered: F148171 */ };
+            obj4.icon = function icon() { /* body not rendered: F148396 */ };
             open = tmp5.open;
             intl = tmp(tmp2[17]).intl;
             obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
@@ -292,7 +292,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
               openManaResult = openMana("user-disconnected-indicator", obj1);
             } else {
               obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
-              obj4.icon = function icon() { /* body not rendered: F148171 */ };
+              obj4.icon = function icon() { /* body not rendered: F148396 */ };
               open = tmp5.open;
               intl = tmp(tmp2[17]).intl;
               obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
@@ -327,7 +327,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
               openManaResult = openMana("user-disconnected-indicator", obj1);
             } else {
               obj4 = { key: "user-disconnected-indicator", icon: null, content: null };
-              obj4.icon = function icon() { /* body not rendered: F148171 */ };
+              obj4.icon = function icon() { /* body not rendered: F148396 */ };
               open = tmp5.open;
               intl = tmp(tmp2[17]).intl;
               obj4.content = intl.string(tmp(tmp2[17]).t.HFwRpk);
@@ -393,8 +393,8 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
   }
   muteDeafenIconState = useMuteDeafenIconState(tmp7, arg2);
   let tmp10;
-  const useVideoIconState = tmp4(9336).useVideoIconState;
-  tmp4(9336);
+  const useVideoIconState = tmp4(9350).useVideoIconState;
+  tmp4(9350);
   if (arg0 === stateFromStores.USER) {
     tmp10 = arg1;
   }
@@ -420,7 +420,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
   if (arg0 === stateFromStores.STREAM) {
     tmp15 = arg1;
   }
-  const effectiveVolume = tmp2Result(tmp15, tmp4(4945).MediaEngineContextTypes.STREAM).effectiveVolume;
+  const effectiveVolume = tmp2Result(tmp15, tmp4(4951).MediaEngineContextTypes.STREAM).effectiveVolume;
   const tmp2Result2 = MobileAudioOutputExperimentDefault;
   showTileVolumeIndicator = tmp2Result2.useConfig({ location: "useVoicePanelCardUserStateIcons" }).showTileVolumeIndicator;
   if (showTileVolumeIndicator) {
@@ -429,7 +429,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) 
   if (showTileVolumeIndicator) {
     showTileVolumeIndicator = arg0 === tmp6.STREAM;
   }
-  const tmp4Result6 = tmp4(16164);
+  const tmp4Result6 = tmp4(16203);
   isRTCDisconnectedUIVisible = tmp4Result6.useIsRTCDisconnectedUIVisible(tmp, arg1);
   const items3 = [setShowFloatingCTA];
   callback = obj.useCallback(() => {

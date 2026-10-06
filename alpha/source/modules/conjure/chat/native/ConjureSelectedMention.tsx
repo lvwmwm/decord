@@ -1,20 +1,20 @@
-// Module ID: 16661
-// Function ID: 16662
+// Module ID: 16677
+// Function ID: 16678
 // Name: ConjureSelectedMention
-// Dependencies: [19, 21, 4890, 587, 558, 576, 4886, 2]
+// Dependencies: [19, 21, 4896, 587, 558, 576, 4892, 2]
 
-// Module 16661 (ConjureSelectedMention)
+// Module 16677 (ConjureSelectedMention)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const Text_Text = tmp(4886);
+const Text_Text = tmp(4892);
 const jsx = Fragment.jsx;
 let obj = { chip: obj2 };
 obj2 = { color: nativeDefault.colors.MENTION_FOREGROUND, backgroundColor: nativeDefault.colors.MENTION_BACKGROUND, borderRadius: 3, paddingHorizontal: 2 };

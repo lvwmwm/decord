@@ -1,20 +1,20 @@
-// Module ID: 15756
-// Function ID: 15757
+// Module ID: 15792
+// Function ID: 15793
 // Name: CollectiblesShopViewAllCategoryItemsHeader
-// Dependencies: [19, 17, 21, 4890, 558, 576, 1490, 13265, 1126, 7498, 7501, 2]
+// Dependencies: [19, 17, 21, 4896, 558, 576, 1490, 13284, 1126, 7509, 7512, 2]
 // Exports: default
 
-// Module 15756 (CollectiblesShopViewAllCategoryItemsHeader)
+// Module 15792 (CollectiblesShopViewAllCategoryItemsHeader)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
 import useNavigation from "useNavigation" /* 1490 */;
-import HeaderShared from "HeaderShared" /* 7498 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7501 */;
-import useYouBarSettingsSafeArea from "useYouBarSettingsSafeArea" /* 13265 */;
+import HeaderShared from "HeaderShared" /* 7509 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7512 */;
+import useYouBarSettingsSafeArea from "useYouBarSettingsSafeArea" /* 13284 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -168,7 +168,7 @@ export default function CollectiblesShopViewAllCategoryItemsHeader(arg0) {
         tmp33 = tmp36;
       }
       const obj9 = { source: AssetRegistryDefault, color: buttonColor2, accessibilityLabel: tmp26, onPress: tmp28 };
-      const HeaderIconButton2 = tmp15(7498).HeaderIconButton;
+      const HeaderIconButton2 = tmp15(7509).HeaderIconButton;
       const tmp32 = hasOwnProperty(HeaderIconButton2, obj9);
       cResult[6] = buttonColor2;
       cResult[7] = tmp28;

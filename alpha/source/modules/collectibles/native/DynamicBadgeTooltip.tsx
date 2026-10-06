@@ -1,14 +1,14 @@
-// Module ID: 12967
-// Function ID: 12968
+// Module ID: 12986
+// Function ID: 12987
 // Name: DynamicBadgeTooltip
-// Dependencies: [32, 19, 21, 558, 576, 1126, 9883, 5909, 2]
+// Dependencies: [32, 19, 21, 558, 576, 1126, 9896, 5916, 2]
 
-// Module 12967 (DynamicBadgeTooltip)
+// Module 12986 (DynamicBadgeTooltip)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import Pressables from "Pressables" /* 5909 */;
-import useTooltip from "useTooltip" /* 9883 */;
+import Pressables from "Pressables" /* 5916 */;
+import useTooltip from "useTooltip" /* 9896 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -81,8 +81,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp = globalThis;
             _setTimeout = setTimeout;
             num = 2500;
-            closure_0 = setTimeout(() => { /* body not rendered: F143058 */ }, 2500);
-            return () => { /* body not rendered: F143059 */ };
+            closure_0 = setTimeout(() => { /* body not rendered: F143260 */ }, 2500);
+            return () => { /* body not rendered: F143261 */ };
           } else {
             return;
           }
@@ -101,8 +101,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp = globalThis;
             _setTimeout = setTimeout;
             num = 2500;
-            closure_0 = setTimeout(() => { /* body not rendered: F143058 */ }, 2500);
-            return () => { /* body not rendered: F143059 */ };
+            closure_0 = setTimeout(() => { /* body not rendered: F143260 */ }, 2500);
+            return () => { /* body not rendered: F143261 */ };
           } else {
             return;
           }
@@ -119,8 +119,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp = globalThis;
             _setTimeout = setTimeout;
             num = 2500;
-            closure_0 = setTimeout(() => { /* body not rendered: F143058 */ }, 2500);
-            return () => { /* body not rendered: F143059 */ };
+            closure_0 = setTimeout(() => { /* body not rendered: F143260 */ }, 2500);
+            return () => { /* body not rendered: F143261 */ };
           } else {
             return;
           }
@@ -135,8 +135,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp = globalThis;
             _setTimeout = setTimeout;
             num = 2500;
-            closure_0 = setTimeout(() => { /* body not rendered: F143058 */ }, 2500);
-            return () => { /* body not rendered: F143059 */ };
+            closure_0 = setTimeout(() => { /* body not rendered: F143260 */ }, 2500);
+            return () => { /* body not rendered: F143261 */ };
           } else {
             return;
           }
@@ -150,8 +150,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp = globalThis;
             _setTimeout = setTimeout;
             num = 2500;
-            closure_0 = setTimeout(() => { /* body not rendered: F143058 */ }, 2500);
-            return () => { /* body not rendered: F143059 */ };
+            closure_0 = setTimeout(() => { /* body not rendered: F143260 */ }, 2500);
+            return () => { /* body not rendered: F143261 */ };
           } else {
             return;
           }

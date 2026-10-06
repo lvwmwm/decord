@@ -1,13 +1,13 @@
 // Module ID: 1237
 // Function ID: 1238
 // Name: resolveTheme
-// Dependencies: [1238, 1194, 1195, 1231, 1196, 7152, 1239, 1197, 2]
+// Dependencies: [1238, 1194, 1195, 1231, 1196, 7165, 1239, 1197, 2]
 // Exports: default
 
 // Module 1237 (resolveTheme)
 import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
-import AuthenticationUtils from "AuthenticationUtils" /* 7152 */;
+import AuthenticationUtils from "AuthenticationUtils" /* 7165 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1238 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;

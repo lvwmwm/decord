@@ -1,27 +1,27 @@
-// Module ID: 2038
-// Function ID: 2039
+// Module ID: 2037
+// Function ID: 2038
 // Name: DismissibleContentUtils
-// Dependencies: [32, 5, 1231, 2039, 2040, 2042, 2048, 1085, 2037, 2049, 11, 2033, 4720, 558, 576, 504, 2036, 584, 10047, 1252, 2041, 13806, 2]
+// Dependencies: [32, 5, 1231, 2038, 2039, 2042, 2048, 1085, 2041, 2049, 11, 2033, 4726, 558, 576, 504, 2036, 584, 10060, 1252, 2040, 13824, 2]
 // Exports: UNSAFE_addGuildDismissedContent, UNSAFE_addSnowflakeBoundGuildDismissedContent, UNSAFE_addTimeRecurringGuildDismissedContent, UNSAFE_isSnowflakeBoundGuildDismissibleContentDismissed, UNSAFE_isTimeRecurringGuildDismissibleContentDismissed, UNSAFE_removeGuildDismissedContent, UNSAFE_removeSnowflakeBoundGuildDismissedContent, UNSAFE_removeTimeRecurringGuildDismissedContent, getDismissedRecurringDismissibleContentState, getGuildNextNumTimesDismissed, isDismissibleContentBlockedByOverlay, isTimeRecurringDismissibleContentDismissed, isTimeRecurringSnowflakeBoundDismissibleContentDismissed, isVersionedDismissibleContentDismissed, markLatestVersionDismissibleContentAsDismissed, markSnowflakeBoundDismissibleContentAsDismissed, markTimeRecurringDismissibleContentAsDismissed, requestMarkDismissibleContentAsShown
 
-// Module 2038 (DismissibleContentUtils)
+// Module 2037 (DismissibleContentUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2033 */;
 import dismissible_content from "dismissible_content" /* 2036 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 2037 */;
-import DCFEventStore from "DCFEventStore" /* 2039 */;
+import DCFEventStore from "DCFEventStore" /* 2038 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 2041 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
 import VersionedDismissibleContentUtils from "VersionedDismissibleContentUtils" /* 2049 */;
-import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4720 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 10047 */;
-import trackDismissibleContentActioned from "trackDismissibleContentActioned" /* 13806 */;
+import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4726 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 10060 */;
+import trackDismissibleContentActioned from "trackDismissibleContentActioned" /* 13824 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2040 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2039 */;
 import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2042 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -34,7 +34,7 @@ let c9;
 let metroImportAll;
 let tmp7;
 let unpackModuleId;
-const DismissibleContentFatigueConfig = tmp7(2041);
+const DismissibleContentFatigueConfig = tmp7(2040);
 function addVersionedDismissedContent(GUILD_POWERUP_NOTIFICATION, versionedDismissibleContentCurrentVersion, nextNumTimesDismissed) {
   let str;
   obj = { lastDismissedVersion: versionedDismissibleContentCurrentVersion, lastDismissedAtMs: str.toString(), lastDismissedObjectId: "0", numTimesDismissed: nextNumTimesDismissed };

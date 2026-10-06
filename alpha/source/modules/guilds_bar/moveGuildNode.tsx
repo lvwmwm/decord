@@ -1,13 +1,13 @@
-// Module ID: 16281
-// Function ID: 16282
+// Module ID: 16321
+// Function ID: 16322
 // Name: moveGuildNode
-// Dependencies: [5616, 8863, 5705, 2]
+// Dependencies: [5623, 8091, 5712, 2]
 // Exports: default, persistGuildsBarOrder
 
-// Module 16281 (moveGuildNode)
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5705 */;
-import UserSettingsActionCreators from "UserSettingsActionCreators" /* 8863 */;
-import SortedGuildStore from "SortedGuildStore" /* 5616 */;
+// Module 16321 (moveGuildNode)
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5712 */;
+import UserSettingsActionCreators from "UserSettingsActionCreators" /* 8091 */;
+import SortedGuildStore from "SortedGuildStore" /* 5623 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guilds_bar/moveGuildNode.tsx");

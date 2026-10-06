@@ -1,9 +1,9 @@
-// Module ID: 15707
-// Function ID: 15708
+// Module ID: 15743
+// Function ID: 15744
 // Name: useHasExpiredShopBlocks
-// Dependencies: [32, 19, 1085, 558, 576, 7083, 2]
+// Dependencies: [32, 19, 1085, 558, 576, 7096, 2]
 
-// Module 15707 (useHasExpiredShopBlocks)
+// Module 15743 (useHasExpiredShopBlocks)
 import Constants from "Constants" /* 1085 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -15,7 +15,7 @@ let _require, dependencyMap;
 
 let c3;
 let closure_4;
-const f121369 = (type) => {
+const f121539 = (type) => {
   const tmp = time1;
   const tmp2 = closure_2_1;
   if (type.type === time1(closure_2_1[5]).ShopBlockType.IMMERSIVE_BANNER) {
@@ -68,7 +68,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   const fn = function p() {
     let timeout;
     let c0 = null;
-    const item = timeout.forEach(f121369);
+    const item = timeout.forEach(f121539);
     const tmp3 = closure_1;
     if (!tmp3) {
       const tmp4 = closure_2;
@@ -112,7 +112,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   let tmp3 = closure_3(() => {
     let timeout;
     let time1 = null;
-    const item = timeout.forEach(f121369);
+    const item = timeout.forEach(f121539);
     let tmp2 = time1;
     const tmp3 = closure_1;
     if (!tmp3) {

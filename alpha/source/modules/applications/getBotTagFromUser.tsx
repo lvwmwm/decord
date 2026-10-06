@@ -1,10 +1,10 @@
-// Module ID: 10641
-// Function ID: 10642
+// Module ID: 10654
+// Function ID: 10655
 // Name: getBotTagFromUser
 // Dependencies: [1360, 2]
 // Exports: getBotTagTypeFromUser
 
-// Module 10641 (getBotTagFromUser)
+// Module 10654 (getBotTagFromUser)
 import ApplicationConstants from "ApplicationConstants" /* 1360 */;
 import size from "module_2" /* 2 */;
 

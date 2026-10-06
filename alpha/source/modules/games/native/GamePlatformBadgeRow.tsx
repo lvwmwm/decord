@@ -1,26 +1,26 @@
-// Module ID: 12027
-// Function ID: 12028
+// Module ID: 12042
+// Function ID: 12043
 // Name: GamePlatformBadgeRow
-// Dependencies: [19, 21, 12028, 8544, 6448, 8739, 4890, 558, 576, 12029, 5593, 587, 2]
+// Dependencies: [19, 21, 12043, 8577, 6455, 8771, 4896, 558, 576, 12044, 5600, 587, 2]
 
-// Module 12027 (GamePlatformBadgeRow)
+// Module 12042 (GamePlatformBadgeRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 6448 */;
-import ScreenIcon from "ScreenIcon" /* 8544 */;
-import GameControllerIcon from "GameControllerIcon" /* 8739 */;
-import GamePlatformAvailability from "GamePlatformAvailability" /* 12028 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 6455 */;
+import ScreenIcon from "ScreenIcon" /* 8577 */;
+import GameControllerIcon from "GameControllerIcon" /* 8771 */;
+import GamePlatformAvailability from "GamePlatformAvailability" /* 12043 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let platforms;
 
 let tmp;
-const Stack_Stack = tmp(5593);
-const GamePlatformBadges = tmp(12029);
+const Stack_Stack = tmp(5600);
+const GamePlatformBadges = tmp(12044);
 const jsx = Fragment.jsx;
 let obj = {};
 obj[GamePlatformAvailability.GamePlatformAvailability.DESKTOP] = ScreenIcon.ScreenIcon;
@@ -85,7 +85,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((p
     obj = GamePlatformBadges;
     return obj.sortGamePlatformAvailability(platforms);
   }, items);
-  const Stack = platforms(5593).Stack;
+  const Stack = platforms(5600).Stack;
   return <Stack direction="horizontal" align="center" spacing={nativeDefault.space.PX_4} style={tmp.row}>{memo.map((item) => {
     const obj2 = platforms(dependencyMap[9]);
     return <tmp key={arg0} size="xs" color="icon-subtle" accessibilityLabel={obj2.getGamePlatformAvailabilityLabel(arg0)} />;

@@ -1,10 +1,10 @@
-// Module ID: 16586
-// Function ID: 16587
+// Module ID: 16624
+// Function ID: 16625
 // Name: conjurePreviewModes
-// Dependencies: [16587, 2]
-// Exports: previewModeAvailability, profileSurfaceAvailability, profileWidgetState, requiresPermissionReview, resolvePreviewMode, showsFramePreview
+// Dependencies: [16625, 2]
+// Exports: permissionReviewBlocksMode, previewModeAvailability, profileSurfaceAvailability, profileWidgetState, requiresPermissionReview, resolvePreviewMode, showsFramePreview
 
-// Module 16586 (conjurePreviewModes)
+// Module 16624 (conjurePreviewModes)
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -103,3 +103,6 @@ export const requiresPermissionReview = function requiresPermissionReview(arg0) 
   }
   return tmp3;
 };
+export function permissionReviewBlocksMode(activeMode, result) {
+  return result && "bot" === activeMode;
+}

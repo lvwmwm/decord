@@ -1,37 +1,37 @@
-// Module ID: 16843
-// Function ID: 16844
+// Module ID: 16864
+// Function ID: 16865
 // Name: MessageRow
-// Dependencies: [109, 19, 17, 4879, 2054, 2051, 2074, 5071, 1085, 21, 4890, 587, 558, 576, 504, 5812, 5043, 1188, 4886, 11065, 10116, 8961, 4722, 7852, 16844, 13129, 16845, 5304, 7620, 6832, 1126, 12488, 7514, 16807, 2]
+// Dependencies: [109, 19, 17, 4885, 2054, 2051, 2074, 5077, 1085, 21, 4896, 587, 558, 576, 504, 5819, 5049, 1188, 4892, 11078, 10129, 8990, 4728, 7863, 16865, 13148, 16866, 5311, 7631, 6842, 1126, 12503, 7525, 16828, 2]
 
-// Module 16843 (MessageRow)
+// Module 16864 (MessageRow)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1188 */;
-import UserUtilsDefault from "UserUtils" /* 4722 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import useChannelNameDefault from "useChannelName" /* 5043 */;
-import useMessageAuthorDefault from "useMessageAuthor" /* 5304 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7514 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7620 */;
-import BotTagDefault from "BotTag" /* 8961 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10116 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11065 */;
-import SearchListRow2 from "SearchListRow" /* 16807 */;
-import useSearchMessageTimestamp from "useSearchMessageTimestamp" /* 16844 */;
-import PollBadgeDefault from "PollBadge" /* 16845 */;
+import UserUtilsDefault from "UserUtils" /* 4728 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import useChannelNameDefault from "useChannelName" /* 5049 */;
+import useMessageAuthorDefault from "useMessageAuthor" /* 5311 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7525 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7631 */;
+import BotTagDefault from "BotTag" /* 8990 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10129 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11078 */;
+import SearchListRow2 from "SearchListRow" /* 16828 */;
+import useSearchMessageTimestamp from "useSearchMessageTimestamp" /* 16865 */;
+import PollBadgeDefault from "PollBadge" /* 16866 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 4885 */;
 import FavoriteStore from "FavoriteStore" /* 2054 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -101,7 +101,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
       if (cResult[9] !== tmp12) {
         const obj2 = { lineClamp: 1, variant: "text-sm/semibold", color: "interactive-text-default", children: tmp12 };
-        const tmp18 = closure_14(channel(4886).Text, obj2);
+        const tmp18 = closure_14(channel(4892).Text, obj2);
         cResult[9] = tmp12;
         cResult[10] = tmp18;
         tmp16 = tmp18;
@@ -189,7 +189,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     cResult[8] = tmp15;
     tmp13 = tmp15;
   }
-  const tmpResult2 = channel(5812);
+  const tmpResult2 = channel(5819);
   const channelIcon = tmpResult2.getChannelIcon(channel, { isRulesChannel: tmp8 });
   cResult[3] = channel;
   cResult[4] = tmp8;
@@ -212,14 +212,14 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
     return rulesChannelId;
   });
-  const obj2 = channel(5812);
+  const obj2 = channel(5819);
   const obj3 = { isRulesChannel: stateFromStores === channel.id };
   const channelIcon = obj2.getChannelIcon(channel, obj3);
   const obj4 = { style: tmp.header, children: items1 };
   const obj5 = { source: channelIcon, size: channel(1188).Icon.Sizes.REFRESH_SMALL_16, style: tmp.channelIcon };
   const tmp7 = useChannelNameDefault(channel);
   const Icon = channel(1188).Icon;
-  items1 = [closure_14(Icon, obj5), closure_14(channel(4886).Text, { lineClamp: 1, variant: "text-sm/semibold", color: "interactive-text-default", children: tmp7 }), , , ];
+  items1 = [closure_14(Icon, obj5), closure_14(channel(4892).Text, { lineClamp: 1, variant: "text-sm/semibold", color: "interactive-text-default", children: tmp7 }), , , ];
   const tmp8 = closure_15;
   const tmp9 = closure_7;
   if (muted) {
@@ -320,12 +320,12 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((muted) => {
     tmp9 = cResult[4];
   }
   const effect = react.useEffect(tmp8, tmp9);
-  const tmpResult = tmp(16844);
+  const tmpResult = tmp(16865);
   const searchMessageTimestamp = tmpResult.useSearchMessageTimestamp(message, channel);
   ({ timestamp, timestampAccessibilityLabel } = searchMessageTimestamp);
   if (cResult[5] !== tmp5) {
     const obj3 = { lineClamp: 1, variant: "text-md/semibold", color: "interactive-text-active", children: tmp5 };
-    const tmp14 = closure_14(tmp(4886).Text, obj3);
+    const tmp14 = closure_14(tmp(4892).Text, obj3);
     cResult[5] = tmp5;
     cResult[6] = tmp14;
     tmp12 = tmp14;
@@ -411,7 +411,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((muted) => {
               let tmp33 = null;
               if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
                 const obj7 = { size: "xs", style: tmp4.suppressNotificationsIcon };
-                tmp33 = closure_14(tmp(13129).BellZIcon, obj7);
+                tmp33 = closure_14(tmp(13148).BellZIcon, obj7);
               }
               cResult[21] = message;
               cResult[22] = tmp4.suppressNotificationsIcon;
@@ -420,7 +420,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((muted) => {
             }
           }
           const obj8 = { variant: "text-xs/medium", color: "interactive-text-active", lineClamp: 1, style: tmp4.timestamp, accessibilityLabel: timestampAccessibilityLabel, children: timestamp };
-          const tmp30 = closure_14(tmp(4886).Text, obj8);
+          const tmp30 = closure_14(tmp(4892).Text, obj8);
           cResult[17] = tmp4.timestamp;
           cResult[18] = timestamp;
           cResult[19] = timestampAccessibilityLabel;
@@ -475,38 +475,38 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((muted) => {
       });
     }
   }, items1);
-  let obj = message(16844);
+  let obj = message(16865);
   const searchMessageTimestamp = obj.useSearchMessageTimestamp(message, channel);
   const obj2 = { style: tmp.labelContainer, children: items3 };
   const obj3 = { style: tmp.authorRow, children: items2 };
   ({ timestamp, timestampAccessibilityLabel } = searchMessageTimestamp);
-  items2 = [closure_14(message(4886).Text, { lineClamp: 1, variant: "text-md/semibold", color: "interactive-text-active", children: memo }), , ];
+  items2 = [closure_14(message(4892).Text, { lineClamp: 1, variant: "text-md/semibold", color: "interactive-text-active", children: memo }), , ];
   if (muted) {
-    const obj4 = { source: channel(11065), size: message(1188).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
+    const obj4 = { source: channel(11078), size: message(1188).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
     const Icon = tmp4(1188).Icon;
     muted = tmp9(Icon, obj4);
   }
   items2[1] = muted;
   let isSystemDMResult = channel.isSystemDM();
   if (isSystemDMResult) {
-    const obj5 = { type: channel(8961).Types.SYSTEM_DM, verified: true };
-    const tmp13 = channel(8961);
+    const obj5 = { type: channel(8990).Types.SYSTEM_DM, verified: true };
+    const tmp13 = channel(8990);
     isSystemDMResult = tmp9(tmp13, obj5);
   }
   items2[2] = isSystemDMResult;
   items3 = [closure_15(closure_7, obj3), , , ];
   const obj6 = { variant: "text-xs/medium", color: "interactive-text-active", lineClamp: 1, style: tmp.timestamp, accessibilityLabel: timestampAccessibilityLabel, children: timestamp };
-  items3[1] = closure_14(message(4886).Text, obj6);
+  items3[1] = closure_14(message(4892).Text, obj6);
   let tmp9Result = null;
   if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
     const obj7 = { size: "xs", style: tmp.suppressNotificationsIcon };
-    tmp9Result = tmp9(tmp4(13129).BellZIcon, obj7);
+    tmp9Result = tmp9(tmp4(13148).BellZIcon, obj7);
   }
   items3[2] = tmp9Result;
   let tmp9Result2 = null;
   if (message.isPoll()) {
     const obj8 = { style: tmp.pollBadge };
-    tmp9Result2 = tmp9(channel(16845), obj8);
+    tmp9Result2 = tmp9(channel(16866), obj8);
   }
   items3[3] = tmp9Result2;
   return closure_15(closure_7, obj2);
@@ -632,7 +632,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     let tmp36 = null;
                     if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
                       const obj4 = { size: "xs", style: tmp4.suppressNotificationsIcon };
-                      tmp36 = authStore2(tmp(13129).BellZIcon, obj4);
+                      tmp36 = authStore2(tmp(13148).BellZIcon, obj4);
                     }
                     cResult[21] = message;
                     cResult[22] = tmp4.suppressNotificationsIcon;
@@ -730,7 +730,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     items1 = [tmp18, ];
     const obj6 = { variant: "text-sm/semibold", color: "interactive-text-active", lineClamp: 1, style: {}, gradientColors: tmp22, children: tmp7 };
     tmp22 = undefined;
-    const Text = tmp2(4886).Text;
+    const Text = tmp2(4892).Text;
     if (isRoleStyleAndRoleColorsEligibleForERC) {
       tmp22 = processColorStringsArray;
     }
@@ -741,7 +741,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp21Result = null;
     if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
       const obj8 = { size: "xs", style: tmp.suppressNotificationsIcon };
-      tmp21Result = tmp21(tmp2(13129).BellZIcon, obj8);
+      tmp21Result = tmp21(tmp2(13148).BellZIcon, obj8);
     }
     items2[2] = tmp21Result;
     let tmp21Result2 = null;
@@ -954,12 +954,12 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
               }
               if (isSpoilerHidden) {
                 const obj3 = { variant: "text-sm/normal", color: "text-muted", style: tmp4.spoilerText, children: intl.string(intl2.t["5uaI/7"]) };
-                const Text = tmp(4886).Text;
+                const Text = tmp(4892).Text;
                 intl = tmp(1126).intl;
                 tmp16Result = tmp16(Text, obj3);
               } else {
                 const obj4 = { message, channel, muted: false, layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COZY, color: "interactive-text-default", lineClamp, messageSizeCacheRef };
-                const NativeMessageChannelRowPreview = tmp(12488).NativeMessageChannelRowPreview;
+                const NativeMessageChannelRowPreview = tmp(12503).NativeMessageChannelRowPreview;
                 tmp16Result = tmp16(NativeMessageChannelRowPreview, obj4);
               }
               cResult[12] = channel;
@@ -1026,12 +1026,12 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   const SearchListRow = SearchListRow2.SearchListRow;
   if (isSpoilerHidden) {
     const obj2 = { variant: "text-sm/normal", color: "text-muted", style: tmp.spoilerText, children: intl.string(intl2.t["5uaI/7"]) };
-    const Text = tmp5(4886).Text;
+    const Text = tmp5(4892).Text;
     intl = tmp5(1126).intl;
     tmp4Result = tmp4(Text, obj2);
   } else {
     const obj3 = { message, channel, muted: false, layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COZY, color: "interactive-text-default", lineClamp, messageSizeCacheRef };
-    const NativeMessageChannelRowPreview = tmp5(12488).NativeMessageChannelRowPreview;
+    const NativeMessageChannelRowPreview = tmp5(12503).NativeMessageChannelRowPreview;
     tmp4Result = tmp4(NativeMessageChannelRowPreview, obj3);
   }
   return authStore2(SearchListRow, obj);

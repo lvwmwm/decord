@@ -1,8 +1,8 @@
-// Module ID: 10761
-// Function ID: 10762
+// Module ID: 10774
+// Function ID: 10775
 // Dependencies: [2]
 
-// Module 10761
+// Module 10774
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/premium/gifting/seasonal/gift_coffee.png.js");

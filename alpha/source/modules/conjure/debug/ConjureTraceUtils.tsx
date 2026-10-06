@@ -1,10 +1,10 @@
-// Module ID: 16763
-// Function ID: 16764
+// Module ID: 16784
+// Function ID: 16785
 // Name: ConjureTraceUtils
 // Dependencies: [2]
 // Exports: filterTrace, findTraceEntry, groupTraceByTurn, isModelEntry, isToolEntry, traceCategoryTotals, traceChildren, traceExportPayload
 
-// Module 16763 (ConjureTraceUtils)
+// Module 16784 (ConjureTraceUtils)
 import size from "module_2" /* 2 */;
 
 let NEGATIVE_INFINITY, POSITIVE_INFINITY;

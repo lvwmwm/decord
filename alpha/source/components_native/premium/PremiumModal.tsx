@@ -1,19 +1,19 @@
-// Module ID: 6918
-// Function ID: 6919
+// Module ID: 6929
+// Function ID: 6930
 // Name: PremiumModal
-// Dependencies: [19, 1085, 21, 1126, 6010, 6919, 13302, 13305, 13347, 13361, 558, 576, 6657, 6496, 2]
+// Dependencies: [19, 1085, 21, 1126, 6017, 6930, 13321, 13324, 13366, 13380, 558, 576, 6664, 6503, 2]
 
-// Module 6918 (PremiumModal)
+// Module 6929 (PremiumModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
-import NavigatorHeader from "NavigatorHeader" /* 6010 */;
-import Navigator2 from "Navigator" /* 6496 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 6657 */;
-import UserSettingsPremiumDefault from "UserSettingsPremium" /* 6919 */;
-import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 13347 */;
-import UserSettingsPremiumGiftingDefault from "UserSettingsPremiumGifting" /* 13361 */;
+import NavigatorHeader from "NavigatorHeader" /* 6017 */;
+import Navigator2 from "Navigator" /* 6503 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 6664 */;
+import UserSettingsPremiumDefault from "UserSettingsPremium" /* 6930 */;
+import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 13366 */;
+import UserSettingsPremiumGiftingDefault from "UserSettingsPremiumGifting" /* 13380 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

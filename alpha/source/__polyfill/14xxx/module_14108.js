@@ -1,9 +1,9 @@
 // Module ID: 14108
 // Function ID: 14109
-// Dependencies: [14109]
+// Dependencies: [14086]
 
 // Module 14108
-import _mod14109 from "module_14109" /* 14109 */;
+import _mod14086 from "module_14086" /* 14086 */;
 
 
-export default (arg0) => _mod14109(arg0.length);
+export default _mod14086({}.isPrototypeOf);

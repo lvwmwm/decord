@@ -1,13 +1,13 @@
-// Module ID: 13940
-// Function ID: 13941
+// Module ID: 13958
+// Function ID: 13959
 // Name: NitroWheel
-// Dependencies: [19, 21, 558, 576, 5974, 8865, 2]
+// Dependencies: [19, 21, 558, 576, 5981, 8894, 2]
 
-// Module 13940 (NitroWheel)
+// Module 13958 (NitroWheel)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8865 */;
+import FastImageDefault from "FastImage" /* 5981 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8894 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

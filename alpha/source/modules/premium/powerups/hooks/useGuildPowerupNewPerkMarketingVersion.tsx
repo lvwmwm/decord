@@ -1,15 +1,15 @@
-// Module ID: 12162
-// Function ID: 12163
+// Module ID: 12177
+// Function ID: 12178
 // Name: useGuildPowerupNewPerkMarketingVersion
-// Dependencies: [19, 2074, 4509, 4768, 1085, 558, 576, 4786, 504, 4773, 4772, 4771, 9250, 2]
+// Dependencies: [19, 2074, 4515, 4774, 1085, 558, 576, 4792, 504, 4779, 4778, 4777, 9285, 2]
 
-// Module 12162 (useGuildPowerupNewPerkMarketingVersion)
-import Powerups from "Powerups" /* 4771 */;
-import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 9250 */;
+// Module 12177 (useGuildPowerupNewPerkMarketingVersion)
+import Powerups from "Powerups" /* 4777 */;
+import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 9285 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4768 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4774 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -74,11 +74,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult5 = tmp(4773);
+  const tmpResult5 = tmp(4779);
   const serverThemeEnabled = tmpResult5.useServerThemeEnabled(arg0, "useGuildPowerupNewPerkMarketingVersion");
-  const tmpResult6 = tmp(4772);
+  const tmpResult6 = tmp(4778);
   const serverThemeUserEnabled = tmpResult6.useServerThemeUserEnabled("useGuildPowerupNewPerkMarketingVersion");
-  const tmpResult7 = tmp(4773);
+  const tmpResult7 = tmp(4779);
   const serverThemeRollbackEnabled = tmpResult7.useServerThemeRollbackEnabled(arg0, "useGuildPowerupNewPerkMarketingVersion");
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class U {

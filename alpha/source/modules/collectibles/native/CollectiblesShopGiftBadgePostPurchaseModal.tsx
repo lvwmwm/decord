@@ -1,21 +1,21 @@
-// Module ID: 10763
-// Function ID: 10764
+// Module ID: 10776
+// Function ID: 10777
 // Name: CollectiblesShopGiftBadgePostPurchaseModal
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1618, 5093, 7052, 6681, 1126, 6017, 4886, 2589, 10764, 8095, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1618, 5099, 7065, 6688, 1126, 6024, 4892, 2617, 10777, 8128, 2]
 
-// Module 10763 (CollectiblesShopGiftBadgePostPurchaseModal)
+// Module 10776 (CollectiblesShopGiftBadgePostPurchaseModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import _modDef2589 from "module_2589" /* 2589 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7052 */;
-import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 10764 */;
+import _modDef2617 from "module_2617" /* 2617 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6688 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7065 */;
+import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 10777 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,9 +27,9 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 const intl3 = tmp(1126);
-const Text_Text = tmp(4886);
-const XSmallIcon = tmp(6017);
-const ModalScreen2 = tmp(8095);
+const Text_Text = tmp(4892);
+const XSmallIcon = tmp(6024);
+const ModalScreen2 = tmp(8128);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles((paddingTop) => {
@@ -104,7 +104,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((giftBadgeProgress)
     }
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: intl2.string(_modDef2589.roVAey) };
+      const obj3 = { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: intl2.string(_modDef2617.roVAey) };
       const Text = Text_Text.Text;
       intl2 = intl3.intl;
       const tmp17 = metroRequire(Text, obj3);
@@ -185,7 +185,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((giftBadgeProgress)
   intl = intl3.intl;
   obj4 = { size: "md", style: tmp.closeIcon };
   items = [metroRequire(React3, obj3), ];
-  const obj5 = { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: intl2.string(_modDef2589.roVAey) };
+  const obj5 = { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: intl2.string(_modDef2617.roVAey) };
   const Text = Text_Text.Text;
   intl2 = intl3.intl;
   items[1] = metroRequire(Text, obj5);

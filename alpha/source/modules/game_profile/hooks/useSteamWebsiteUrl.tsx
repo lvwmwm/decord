@@ -1,12 +1,12 @@
-// Module ID: 8334
-// Function ID: 8335
+// Module ID: 8367
+// Function ID: 8368
 // Name: useSteamWebsiteUrl
-// Dependencies: [2007, 1085, 558, 576, 8335, 8333, 2018, 504, 2]
+// Dependencies: [2007, 1085, 558, 576, 8368, 8366, 2018, 504, 2]
 // Exports: buildSteamStoreUrl
 
-// Module 8334 (useSteamWebsiteUrl)
+// Module 8367 (useSteamWebsiteUrl)
 import Constants from "Constants" /* 1085 */;
-import SteamReleaseStatus from "SteamReleaseStatus" /* 8335 */;
+import SteamReleaseStatus from "SteamReleaseStatus" /* 8368 */;
 import GameStore from "GameStore" /* 2007 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

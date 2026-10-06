@@ -1,29 +1,29 @@
-// Module ID: 9261
-// Function ID: 9262
+// Module ID: 9296
+// Function ID: 9297
 // Name: GuildEventCardComponents
-// Dependencies: [5, 32, 19, 17, 502, 2051, 2112, 2074, 4509, 1377, 7037, 2057, 1085, 1096, 21, 4890, 587, 558, 576, 9262, 9264, 9174, 6688, 4567, 1126, 9265, 4840, 7575, 504, 9169, 7578, 4577, 9266, 9267, 9163, 5705, 6845, 9268, 5708, 9178, 5783, 5097, 1375, 1484, 1402, 9269, 9270, 1188, 5873, 4791, 9167, 9166, 9272, 5909, 4886, 9275, 9259, 5043, 9180, 9258, 9260, 5971, 2]
+// Dependencies: [5, 32, 19, 17, 502, 2051, 2112, 2074, 4515, 1377, 7050, 2057, 1085, 1096, 21, 4896, 587, 558, 576, 9297, 9299, 9209, 6695, 4573, 1126, 9300, 4846, 7586, 504, 9204, 7589, 4583, 9301, 9302, 9198, 5712, 6855, 6730, 9303, 5715, 9213, 5790, 5103, 1375, 1484, 1402, 9304, 9305, 1188, 5880, 4797, 9202, 9201, 9307, 5916, 4892, 9310, 9294, 5049, 9215, 9293, 9295, 5978, 2]
 
-// Module 9261 (GuildEventCardComponents)
+// Module 9296 (GuildEventCardComponents)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl12 from "intl" /* 1126 */;
 import native from "native" /* 1188 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
-import ToastUtils from "ToastUtils" /* 4567 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5097 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
-import AlertDefault from "Alert" /* 5783 */;
-import GroupIcon from "GroupIcon" /* 5873 */;
-import GuildIconDefault from "GuildIcon" /* 5971 */;
-import ClipboardUtils from "ClipboardUtils" /* 6688 */;
-import ScheduleUtils from "ScheduleUtils" /* 9163 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9174 */;
-import guildEventDetailsParser from "guildEventDetailsParser" /* 9259 */;
-import useCanInviteForGuildEventDefault from "useCanInviteForGuildEvent" /* 9262 */;
-import ThrottledButtonDefault from "ThrottledButton" /* 9267 */;
-import useGuildScheduledEventUserCountDefault from "useGuildScheduledEventUserCount" /* 9270 */;
+import ToastUtils from "ToastUtils" /* 4573 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5103 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5715 */;
+import AlertDefault from "Alert" /* 5790 */;
+import GroupIcon from "GroupIcon" /* 5880 */;
+import GuildIconDefault from "GuildIcon" /* 5978 */;
+import ClipboardUtils from "ClipboardUtils" /* 6695 */;
+import ScheduleUtils from "ScheduleUtils" /* 9198 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9209 */;
+import guildEventDetailsParser from "guildEventDetailsParser" /* 9294 */;
+import useCanInviteForGuildEventDefault from "useCanInviteForGuildEvent" /* 9297 */;
+import ThrottledButtonDefault from "ThrottledButton" /* 9302 */;
+import useGuildScheduledEventUserCountDefault from "useGuildScheduledEventUserCount" /* 9305 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -32,18 +32,18 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildMemberStore from "GuildMemberStore" /* 2112 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
 import UserStore from "UserStore" /* 1377 */;
-import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 7037 */;
+import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 7050 */;
 import Constants_mod from "Constants" /* 1085 */;
 import Constants_mod2 from "Constants" /* 1096 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c4, dependencyMap, importDefault;
+let _require, c4, c5, dependencyMap, importDefault;
 
 let Fonts;
 let closure_15;
@@ -72,7 +72,7 @@ let obj9;
 let tmp;
 let tmp5;
 const AvatarUtils = tmp(1402);
-const getGuildEventImageDefault = tmp5(9269);
+const getGuildEventImageDefault = tmp5(9304);
 class GuildEventJoinAndRSVPAction {
   constructor(event) {
     let c1;
@@ -83,76 +83,87 @@ class GuildEventJoinAndRSVPAction {
     importDefault = undefined;
     dependencyMap = undefined;
     let obj = function _handleJoinGuild() {
-      let guild_id;
       obj = _asyncToGenerator(async (arg0, value) => {
         let closure_0;
-        let v1;
-        if (c4 === 2) {
-          c4 = 3;
+        let closure_1;
+        let obj4;
+        if (c5 === 2) {
+          c5 = 3;
           throw new TypeError("Generator functions may not be called on executing generators");
         } else if (tmp3 === 3) {
           if (arg0 === 1) {
             throw value;
           } else if (arg0 === 2) {
-            const obj3 = { value, done: true };
-            return obj3;
+            const obj2 = { value, done: true };
+            return obj2;
           } else {
             return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
           try {
-            c4 = 2;
-            if (0 === c1) {
+            c5 = 2;
+            if (0 === c4) {
               if (arg0 === 1) {
-                c4 = 3;
+                c5 = 3;
                 throw value;
               } else if (arg0 === 2) {
-                c4 = 3;
-                const obj4 = { value, done: true };
-                return obj4;
+                c5 = 3;
+                const obj5 = { value, done: true };
+                return obj5;
               } else {
+                guild_id = tmp4;
                 closure_2_3(true);
-                c3 = 1;
-                const obj5 = { source: constants.DIRECTORY_EVENTS };
-                const obj2 = c1(closure_2[35]);
-                c1 = 2;
-                c4 = 1;
-                const obj6 = { value: obj2.joinGuild(guild_id.guild_id, obj5), done: false };
-                return obj6;
+                c3 = 2;
+                const obj6 = { source: constants.DIRECTORY_EVENTS };
+                c4 = 3;
+                c5 = 1;
+                const obj7 = { value: obj4.joinGuild(guild_id.guild_id, obj6), done: false };
+                obj4 = tmp(closure_2[35]);
+                return obj7;
               }
-            } else if (1 === tmp4) {
+            } else if (1 === c4) {
               c3 = 0;
-              closure_128_3(false);
+              closure_129_3(false);
               throw closure_2;
-            } else if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 0;
-              closure_128_3(false);
-              c4 = 3;
-              obj = { value, done: true };
-              return obj;
             } else {
-              const obj7 = tmp(closure_2[36]);
-              obj7.transitionToGuild(closure_128_0.guild_id);
-              const tmp8 = closure_128_1 || closure_1_16(closure_128_0);
-              if (!tmp8) {
-                closure_128_2();
+              if (2 === c4) {
+                c3 = 1;
+                guild_id = closure_2;
+                const obj3 = guild_id(closure_2[37]);
+                const result = obj3.ignoreJoinGuildRefused(guild_id);
+              } else if (arg0 === 1) {
+                c5 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c3 = 0;
+                closure_129_3(false);
+                c5 = 3;
+                const obj8 = { value, done: true };
+                return obj8;
+              } else {
+                obj = guild_id(closure_2[36]);
+                obj.transitionToGuild(closure_129_0.guild_id);
+                const tmp10 = closure_129_1 || closure_1_16(closure_129_0);
+                if (!tmp10) {
+                  closure_129_2();
+                }
+                c3 = 1;
               }
               c3 = 0;
-              closure_128_3(false);
-              c4 = 3;
+              closure_129_3(false);
+              c5 = 3;
               return { value: "IconComponent", done: null };
             }
-          } catch (tmp29) {
-            closure_2 = tmp29;
+          } catch (tmp42) {
+            closure_2 = tmp42;
             if (0 === c3) {
-              c4 = 3;
-              throw tmp29;
+              c5 = 3;
+              throw tmp42;
+            } else if (1 === tmp44) {
+              c4 = 1;
             } else {
-              c1 = 1;
+              c4 = 2;
             }
           }
         }
@@ -239,7 +250,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
         }
         const _HermesInternal = HermesInternal;
         const combined = "" + tmp10 + ", " + event.name;
-        const tmp4Result = tmp4(tmp5 ? 9265 : 4840);
+        const tmp4Result = tmp4(tmp5 ? 9300 : 4846);
         if (cResult[8] === tmp8) {
           if (cResult[9] === combined) {
             let tmp14;
@@ -250,7 +261,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
           }
         }
         let obj2 = { accessibilityLabel: combined, onPress: tmp8, icon: tmp4Result, variant: "secondary" };
-        const tmp16 = closure_22(event(7575).IconButton, obj2);
+        const tmp16 = closure_22(event(7586).IconButton, obj2);
         cResult[8] = tmp8;
         cResult[9] = combined;
         cResult[10] = tmp4Result;
@@ -275,7 +286,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
     cResult[6] = fn;
     tmp8 = fn;
   }
-  let tmpResult = tmp(9264);
+  let tmpResult = tmp(9299);
   const obj3 = { guildId: event.guild_id, guildEventId: event.id };
   const result = tmpResult.SHARE_EVENT_DETAILS_LINK(obj3);
   cResult[0] = event.guild_id;
@@ -292,7 +303,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
   const tmp = importDefault;
   importDefault = tmp3;
   let obj2 = { guildId: event.guild_id, guildEventId: event.id };
-  const obj = event(9264);
+  const obj = event(9299);
   dependencyMap = obj.SHARE_EVENT_DETAILS_LINK(obj2);
   const obj3 = {
     accessibilityLabel: "" + intl.string(event(1126).t.RDE0Sc) + ", " + event.name,
@@ -307,10 +318,10 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
         obj2.presentLinkCopied();
       }
     },
-    icon: tmp(tmp3 ? 9265 : 4840),
+    icon: tmp(tmp3 ? 9300 : 4846),
     variant: "secondary"
   };
-  const IconButton = event(7575).IconButton;
+  const IconButton = event(7586).IconButton;
   intl = event(1126).intl;
   return closure_22(IconButton, obj3);
 });
@@ -564,9 +575,9 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
     str = "tertiary";
   }
   if (tmp5) {
-    BellIcon = tmp(4577).CheckmarkLargeIcon;
+    BellIcon = tmp(4583).CheckmarkLargeIcon;
   } else {
-    BellIcon = tmp(9266).BellIcon;
+    BellIcon = tmp(9301).BellIcon;
   }
   if (cResult[0] !== tmp5) {
     const obj2 = { checked: tmp5 };
@@ -636,10 +647,10 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
     str = "tertiary";
   }
   if (first) {
-    BellIcon = tmp4(4577).CheckmarkLargeIcon;
+    BellIcon = tmp4(4583).CheckmarkLargeIcon;
     tmp6 = tmp4;
   } else {
-    BellIcon = tmp4(9266).BellIcon;
+    BellIcon = tmp4(9301).BellIcon;
     tmp6 = tmp4;
   }
   const obj = { accessibilityRole: "togglebutton", accessibilityState: { checked: first }, accessibilityLabel: "" + intl.string(tmp6(1126).t.DlcqlU) + ", " + event.name, variant: str, icon: afk(BellIcon, { size: "sm" }), text: intl2.string(tmp6(1126).t.DlcqlU), onPress: tmp3, grow: true };
@@ -893,9 +904,9 @@ let tmp15 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
     str = "tertiary";
   }
   if (tmp5) {
-    BellIcon = tmp(4577).CheckmarkLargeIcon;
+    BellIcon = tmp(4583).CheckmarkLargeIcon;
   } else {
-    BellIcon = tmp(9266).BellIcon;
+    BellIcon = tmp(9301).BellIcon;
   }
   if (cResult[0] !== tmp5) {
     const obj2 = { checked: tmp5 };
@@ -965,10 +976,10 @@ let tmp15 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
     str = "tertiary";
   }
   if (first) {
-    BellIcon = tmp4(4577).CheckmarkLargeIcon;
+    BellIcon = tmp4(4583).CheckmarkLargeIcon;
     tmp6 = tmp4;
   } else {
-    BellIcon = tmp4(9266).BellIcon;
+    BellIcon = tmp4(9301).BellIcon;
     tmp6 = tmp4;
   }
   const obj = { accessibilityRole: "togglebutton", accessibilityState: { checked: first }, accessibilityLabel: "" + intl.string(tmp6(1126).t.DlcqlU) + ", " + event.name, variant: str, icon: afk(BellIcon, { size: "sm" }), text: intl2.string(tmp6(1126).t.DlcqlU), onPress: tmp3, grow: true };
@@ -1019,7 +1030,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   const tmpResult = tmp(recurrenceId[28]);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  let closure_6 = channel_id(onCloseAction(tmp2[37])(), 2)[1];
+  let closure_6 = channel_id(onCloseAction(tmp2[38])(), 2)[1];
   closure_28(event, isConnected);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [PermissionStore];
@@ -1082,7 +1093,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       cancelText: intl3.string(intl12.t.gm1Vej),
       confirmText: intl4.string(intl12.t.p89ACt),
       onConfirm() {
-        const obj = onCloseAction(recurrenceId[39]);
+        const obj = onCloseAction(recurrenceId[40]);
         return obj.endEvent(event.id, event.guild_id);
       },
       confirmColor: AlertDefault.Colors.RED
@@ -1238,7 +1249,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       const obj10 = { event, recurrenceId };
       return closure_22(GuildEventJoinAndRSVPAction, obj10);
     } else {
-      const tmpResult = tmp(recurrenceId[42]);
+      const tmpResult = tmp(recurrenceId[43]);
       tmpResult.assertNever(tmp4);
     }
   }
@@ -1436,8 +1447,8 @@ let tmp19 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
   const tmp4 = undefined === showUserCount || showUserCount;
   const tmp8 = styles();
   let id;
-  const tmp10 = color(tmp2[49])();
-  const tmp11 = color(tmp2[50]);
+  const tmp10 = color(tmp2[50])();
+  const tmp11 = color(tmp2[51]);
   const tmp9 = color;
   if (event != null) {
     id = event.id;
@@ -1449,7 +1460,7 @@ let tmp19 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
   }
   const is_canceled = obj2.is_canceled;
   const tmp13 = undefined !== is_canceled && is_canceled;
-  const tmp14 = tmp9(tmp2[51])(event, recurrenceId);
+  const tmp14 = tmp9(tmp2[52])(event, recurrenceId);
   let startTime1;
   const first = cResult[0];
   if (tmp14 != null) {
@@ -1492,7 +1503,7 @@ let tmp19 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
       }
       const STAGE_INSTANCE = constants.STAGE_INSTANCE;
       const obj3 = { eventTimeData: tmp26, isStage: entity_type === STAGE_INSTANCE, theme: tmp10, event, isCanceled: tmp13, recurrenceId };
-      const tmpResult = tmp(tmp2[52]);
+      const tmpResult = tmp(tmp2[53]);
       const guildScheduledEventHeaderProps = tmpResult.getGuildScheduledEventHeaderProps(obj3);
       color = guildScheduledEventHeaderProps.color;
       ({ text, shouldChangeTextColor } = guildScheduledEventHeaderProps);
@@ -1516,7 +1527,7 @@ let tmp19 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
           let tmp38 = tmp33;
           if (!(undefined !== isPreview && isPreview)) {
             const obj4 = { accessibilityRole: "button", onPress: tmp31, children: tmp33 };
-            tmp38 = closure_22(tmp(tmp2[53]).PressableOpacity, obj4);
+            tmp38 = closure_22(tmp(tmp2[54]).PressableOpacity, obj4);
           }
           cResult[12] = undefined !== isPreview && isPreview;
           cResult[13] = tmp33;
@@ -1625,7 +1636,7 @@ let tmp19 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
             }
           }
           tmp53[0] = tmp8.newBadge;
-          tmp50Result = tmp50(tmp(tmp2[47]).NewTag, tmp53);
+          tmp50Result = tmp50(tmp(tmp2[48]).NewTag, tmp53);
         } else {
           class Z {
             constructor() {
@@ -1634,7 +1645,7 @@ let tmp19 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
           }
           tmp51[1] = color;
           tmp51[2] = tmp8.dateIcon;
-          tmp50Result = tmp50(tmp(tmp2[55]).CalendarIcon, tmp51);
+          tmp50Result = tmp50(tmp(tmp2[56]).CalendarIcon, tmp51);
         }
         cResult[23] = color;
         cResult[24] = undefined !== isNew && isNew;
@@ -1747,7 +1758,7 @@ let tmp19 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
   }
   const is_canceled = obj.is_canceled;
   const tmp7 = undefined !== is_canceled && is_canceled;
-  const tmp8 = tmp2(toISOStringResult1[51])(event, recurrenceId);
+  const tmp8 = tmp2(toISOStringResult1[52])(event, recurrenceId);
   let toISOStringResult;
   if (tmp8 != null) {
     const startTime = tmp8.startTime;
@@ -1772,7 +1783,7 @@ let tmp19 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
     return obj.getEventTimeData(c1, toISOStringResult1);
   }, items);
   const STAGE_INSTANCE = constants.STAGE_INSTANCE;
-  let obj2 = event(tmp3[52]);
+  let obj2 = event(tmp3[53]);
   const obj3 = { eventTimeData: memo, isStage: entity_type === STAGE_INSTANCE, theme: tmp4, event, isCanceled: tmp7, recurrenceId };
   const guildScheduledEventHeaderProps = obj2.getGuildScheduledEventHeaderProps(obj3);
   color = guildScheduledEventHeaderProps.color;
@@ -1792,7 +1803,7 @@ let tmp19 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
             },
         children: tmp18
       };
-      tmp16Result = tmp16(tmp13(tmp3[53]).PressableOpacity, obj5);
+      tmp16Result = tmp16(tmp13(tmp3[54]).PressableOpacity, obj5);
     }
     tmp15 = tmp16Result;
   }
@@ -1825,16 +1836,16 @@ let tmp19 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
   const tmp23 = closure_23;
   if (flag4) {
     const obj8 = { containerStyle: tmp.newBadge, variant: "text-xs/bold" };
-    tmp25Result = tmp25(tmp13(tmp3[47]).NewTag, obj8);
+    tmp25Result = tmp25(tmp13(tmp3[48]).NewTag, obj8);
     tmp27 = tmp25;
   } else {
     const obj9 = { size: "sm", color, style: tmp.dateIcon };
-    tmp25Result = tmp25(tmp13(tmp3[55]).CalendarIcon, obj9);
+    tmp25Result = tmp25(tmp13(tmp3[56]).CalendarIcon, obj9);
     tmp27 = tmp25;
   }
   items4 = [tmp25Result, , , ];
   const obj10 = { style: tmp.dateContainer, children: tmp27(Text, obj12) };
-  Text = tmp13(tmp3[54]).Text;
+  Text = tmp13(tmp3[55]).Text;
   if (null != endDateTimeString && "" !== endDateTimeString) {
     obj12 = { variant: "text-sm/semibold", color: "text-default", children: formatResult };
     const obj11 = { variant: "text-sm/semibold", color: "text-default", children: formatResult };
@@ -1854,8 +1865,8 @@ let tmp19 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
     flag3 = null != stateFromStores;
   }
   if (flag3) {
-    obj14 = { accessible: true, accessibilityLabel: "" + intl2.formatToPlainString(event(toISOStringResult1[24]).t["+3iypQ"], obj15) + ", " + event.name, user: stateFromStores, guildId: event.guild_id, size: event(toISOStringResult1[47]).AvatarSizes.XSMALL_20, style: tmp.creatorAvatar };
-    const Avatar = tmp13(tmp3[47]).Avatar;
+    obj14 = { accessible: true, accessibilityLabel: "" + intl2.formatToPlainString(event(toISOStringResult1[24]).t["+3iypQ"], obj15) + ", " + event.name, user: stateFromStores, guildId: event.guild_id, size: event(toISOStringResult1[48]).AvatarSizes.XSMALL_20, style: tmp.creatorAvatar };
+    const Avatar = tmp13(tmp3[48]).Avatar;
     intl2 = tmp13(tmp3[24]).intl;
     const _HermesInternal = HermesInternal;
     obj15 = { username: stateFromStores.username };
@@ -2233,7 +2244,7 @@ let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
   }
   const tmpResult5 = channel_id(504);
   const stateFromStores1 = tmpResult5.useStateFromStores(tmp10, tmp15, tmp17);
-  const tmp20 = stateFromStores(5043)(stateFromStores);
+  const tmp20 = stateFromStores(5049)(stateFromStores);
   const tmp19 = stateFromStores;
   if (cResult[9] === stateFromStores) {
     if (cResult[10] === tmp20) {
@@ -2316,7 +2327,7 @@ let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
     }
   }
   const forResult = Symbol.for("react.early_return_sentinel");
-  const tmpResult6 = channel_id(9180);
+  const tmpResult6 = channel_id(9215);
   const locationFromEvent = tmpResult6.getLocationFromEvent(event);
   if (null != stateFromStores) {
     if (cResult[25] === stateFromStores) {
@@ -2326,11 +2337,11 @@ let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
           tmp41 = cResult[28];
         }
         if (cResult[29] === tmp41) {
-          const Text = tmp(4886).Text;
+          const Text = tmp(4892).Text;
           const channelText = tmp4.channelText;
           if (null != stateFromStores) {
             const obj4 = { channel: stateFromStores };
-            let combined = tmp19(9260)(obj4);
+            let combined = tmp19(9295)(obj4);
           } else if (null != locationFromEvent) {
             const intl = tmp(1126).intl;
             const _HermesInternal = HermesInternal;
@@ -2340,7 +2351,7 @@ let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
             let result = null;
             if (null != locationFromEvent) {
               const obj5 = { guildId: guild_id };
-              const tmpResult7 = channel_id(9259);
+              const tmpResult7 = channel_id(9294);
               result = tmpResult7.guildEventLocationParser(locationFromEvent, true, obj5);
             }
           }
@@ -2356,7 +2367,7 @@ let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
         cResult[31] = tmp46;
       }
     }
-    const tmpResult8 = channel_id(9258);
+    const tmpResult8 = channel_id(9293);
     const eventLocationIconComponent = tmpResult8.getEventLocationIconComponent(event, stateFromStores, stateFromStores1);
     cResult[25] = stateFromStores;
     cResult[26] = event;
@@ -2415,8 +2426,8 @@ let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
     }
     return isMember(guild_id, id);
   }, items3);
-  let tmp7 = stateFromStores(5043)(stateFromStores);
-  const obj3 = channel_id(9180);
+  let tmp7 = stateFromStores(5049)(stateFromStores);
+  const obj3 = channel_id(9215);
   const locationFromEvent = obj3.getLocationFromEvent(event);
   const tmp6 = stateFromStores;
   if (null == stateFromStores) {
@@ -2424,7 +2435,7 @@ let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
       return null;
     }
   }
-  const tmp2Result = channel_id(9258);
+  const tmp2Result = channel_id(9293);
   const eventLocationIconComponent = tmp2Result.getEventLocationIconComponent(event, stateFromStores, stateFromStores1);
   let tmp12 = null != eventLocationIconComponent;
   const obj4 = { style: tmp.channelContainer, children: items4 };
@@ -2436,11 +2447,11 @@ let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
   }
   items4 = [tmp12, ];
   const obj6 = { style: tmp.channelText, accessibilityLabel: combined, variant: "text-sm/medium", color: "text-default", children: tmp7 };
-  const Text = tmp2(4886).Text;
+  const Text = tmp2(4892).Text;
   const tmp14 = closure_22;
   if (null != stateFromStores) {
     const obj7 = { channel: stateFromStores };
-    combined = tmp6(9260)(obj7);
+    combined = tmp6(9295)(obj7);
   } else if (null != locationFromEvent) {
     const intl = tmp2(1126).intl;
     const _HermesInternal = HermesInternal;
@@ -2450,7 +2461,7 @@ let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
     let result = null;
     if (null != locationFromEvent) {
       const obj8 = { guildId: guild_id };
-      const tmp2Result2 = channel_id(9259);
+      const tmp2Result2 = channel_id(9294);
       result = tmp2Result2.guildEventLocationParser(locationFromEvent, true, obj8);
     }
     tmp7 = result;
@@ -2544,13 +2555,13 @@ let tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
           tmp20 = tmp23;
         }
         const obj4 = { variant: "text-sm/semibold", style: textStyle, children: stateFromStores.name };
-        const tmp19 = closure_22(guild_id(4886).Text, obj4);
+        const tmp19 = closure_22(guild_id(4892).Text, obj4);
         cResult[10] = stateFromStores.name;
         cResult[11] = textStyle;
         cResult[12] = tmp19;
         tmp17 = tmp19;
       }
-      const obj5 = { guild: stateFromStores, size: guild_id(5971).GuildIconSizes.XSMALL_20, style: tmp4.guildIcon };
+      const obj5 = { guild: stateFromStores, size: guild_id(5978).GuildIconSizes.XSMALL_20, style: tmp4.guildIcon };
       const tmp15 = GuildIconDefault;
       const tmp16 = closure_22(tmp15, obj5);
       cResult[7] = stateFromStores;
@@ -2583,10 +2594,10 @@ let tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
   if (null != stateFromStores) {
     const obj2 = { style: items2, children: items3 };
     items2 = [tmp.guildInfoContainer, style];
-    const obj3 = { guild: stateFromStores, size: guild_id(5971).GuildIconSizes.XSMALL_20, style: tmp.guildIcon };
+    const obj3 = { guild: stateFromStores, size: guild_id(5978).GuildIconSizes.XSMALL_20, style: tmp.guildIcon };
     const tmp10 = GuildIconDefault;
     items3 = [closure_22(tmp10, obj3), ];
-    const obj4 = { style: tmp.guildInfo, children: closure_22(guild_id(4886).Text, obj5) };
+    const obj4 = { style: tmp.guildInfo, children: closure_22(guild_id(4892).Text, obj5) };
     obj5 = { variant: "text-sm/semibold", style: textStyle, children: stateFromStores.name };
     items3[1] = closure_22(closure_6, obj4);
     tmp5 = closure_23(closure_6, obj2);
@@ -2739,7 +2750,7 @@ let tmp25 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
   }
   const tmpResult5 = channel_id(stateFromStores[28]);
   const stateFromStores2 = tmpResult5.useStateFromStores(tmp15, tmp18, tmp20);
-  const tmp23 = guild_id(stateFromStores[57])(stateFromStores);
+  const tmp23 = guild_id(stateFromStores[58])(stateFromStores);
   if (null == stateFromStores1) {
     class C {
       constructor() {
@@ -2752,7 +2763,7 @@ let tmp25 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
         return GuildStore.getGuild(guild_id);
       }
     }
-    const tmpResult6 = channel_id(stateFromStores[58]);
+    const tmpResult6 = channel_id(stateFromStores[59]);
     const locationFromEvent = tmpResult6.getLocationFromEvent(event);
     let tmp29 = tmp23;
     if (tmp23 == null) {
@@ -2811,11 +2822,11 @@ let tmp25 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
     }
     return isMember(guild_id, id);
   }, items5);
-  const tmp8 = guild_id(stateFromStores[57])(stateFromStores);
+  const tmp8 = guild_id(stateFromStores[58])(stateFromStores);
   if (null == stateFromStores1) {
     return null;
   } else {
-    const tmp2Result = channel_id(stateFromStores[58]);
+    const tmp2Result = channel_id(stateFromStores[59]);
     const locationFromEvent = tmp2Result.getLocationFromEvent(event);
     let tmp13Result = null != stateFromStores || null != locationFromEvent;
     let tmp10 = tmp8;
@@ -2823,25 +2834,25 @@ let tmp25 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
       let result = null;
       if (null != locationFromEvent) {
         const obj4 = { guildId: guild_id };
-        const tmp2Result3 = channel_id(stateFromStores[56]);
+        const tmp2Result3 = channel_id(stateFromStores[57]);
         result = tmp2Result3.guildEventLocationParser(locationFromEvent, true, obj4);
       }
       tmp10 = result;
     }
-    const tmp2Result4 = channel_id(stateFromStores[59]);
+    const tmp2Result4 = channel_id(stateFromStores[60]);
     const eventLocationIconSource = tmp2Result4.getEventLocationIconSource(event, stateFromStores, stateFromStores2);
     const obj5 = { style: tmp.guildInfoContainer, children: items6 };
-    const obj6 = { guild: stateFromStores1, size: channel_id(stateFromStores[61]).GuildIconSizes.SMALL, style: tmp.guildIcon };
-    const tmp7Result = guild_id(stateFromStores[61]);
+    const obj6 = { guild: stateFromStores1, size: channel_id(stateFromStores[62]).GuildIconSizes.SMALL, style: tmp.guildIcon };
+    const tmp7Result = guild_id(stateFromStores[62]);
     items6 = [closure_22(tmp7Result, obj6), ];
     const obj7 = { style: tmp.guildInfo, children: items7 };
     const obj8 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: stateFromStores1.name };
-    items7 = [closure_22(tmp2(stateFromStores[54]).Text, obj8), ];
+    items7 = [closure_22(tmp2(stateFromStores[55]).Text, obj8), ];
     if (tmp13Result) {
       const obj9 = { style: tmp.guildInfoChannelContainer, accessible: true, accessibilityLabel: combined, children: items8 };
       if (null != stateFromStores) {
         const obj10 = { channel: stateFromStores };
-        combined = tmp7(tmp3[60])(obj10);
+        combined = tmp7(tmp3[61])(obj10);
       } else if (null != locationFromEvent) {
         const intl = tmp2(tmp3[24]).intl;
         const _HermesInternal = HermesInternal;
@@ -2849,13 +2860,13 @@ let tmp25 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
       }
       let tmp15Result = null != eventLocationIconSource;
       if (tmp15Result) {
-        const obj11 = { source: eventLocationIconSource, size: channel_id(stateFromStores[47]).Icon.Sizes.EXTRA_SMALL, style: tmp.channelIcon, disableColor: true };
-        const Icon = tmp2(tmp3[47]).Icon;
+        const obj11 = { source: eventLocationIconSource, size: channel_id(stateFromStores[48]).Icon.Sizes.EXTRA_SMALL, style: tmp.channelIcon, disableColor: true };
+        const Icon = tmp2(tmp3[48]).Icon;
         tmp15Result = tmp15(Icon, obj11);
       }
       items8 = [tmp15Result, ];
       const obj12 = { style: tmp.guildInfoChannelText, variant: "text-xs/medium", color: "text-default", children: tmp10 };
-      items8[1] = closure_22(channel_id(stateFromStores[54]).Text, obj12);
+      items8[1] = closure_22(channel_id(stateFromStores[55]).Text, obj12);
       tmp13Result = tmp13(tmp14, obj9);
     }
     items7[1] = tmp13Result;

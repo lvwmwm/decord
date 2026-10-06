@@ -1,20 +1,20 @@
-// Module ID: 8681
-// Function ID: 8682
+// Module ID: 8716
+// Function ID: 8717
 // Name: UserProfileApplicationWidgetFieldUtils
-// Dependencies: [19, 17, 21, 4890, 587, 1126, 558, 576, 8682, 8683, 4886, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 1126, 558, 576, 8717, 8718, 4892, 2]
 // Exports: formatDurationNarrow
 
-// Module 8681 (UserProfileApplicationWidgetFieldUtils)
+// Module 8716 (UserProfileApplicationWidgetFieldUtils)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 8682 */;
-import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 8683 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 8717 */;
+import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 8718 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

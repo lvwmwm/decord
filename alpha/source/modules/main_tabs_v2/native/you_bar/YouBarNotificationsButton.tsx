@@ -1,23 +1,23 @@
-// Module ID: 16335
-// Function ID: 16336
+// Module ID: 16375
+// Function ID: 16376
 // Name: YouBarNotificationsButton
-// Dependencies: [19, 17, 11283, 14899, 21, 4890, 587, 558, 576, 16336, 4612, 5597, 7485, 504, 4855, 7494, 7495, 1126, 9266, 16334, 1188, 4737, 7575, 2]
+// Dependencies: [19, 17, 11296, 14915, 21, 4896, 587, 558, 576, 16376, 4618, 5604, 7496, 504, 4861, 7505, 7506, 1126, 9301, 16374, 1188, 4743, 7586, 2]
 
-// Module 16335 (YouBarNotificationsButton)
+// Module 16375 (YouBarNotificationsButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import HapticUtils from "HapticUtils" /* 4855 */;
-import spring from "spring" /* 5597 */;
-import ForLaterExperiment from "ForLaterExperiment" /* 7485 */;
-import showForLaterModal from "showForLaterModal" /* 7494 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 7495 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import HapticUtils from "HapticUtils" /* 4861 */;
+import spring from "spring" /* 5604 */;
+import ForLaterExperiment from "ForLaterExperiment" /* 7496 */;
+import showForLaterModal from "showForLaterModal" /* 7505 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 7506 */;
 import react from "react" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11283 */;
-import YouBarConstants from "YouBarConstants" /* 14899 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11296 */;
+import YouBarConstants from "YouBarConstants" /* 14915 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj2;
 let tmp;
 const get_initialized = tmp(504);
 const intl3 = tmp(1126);
-const BellIcon2 = tmp(9266);
+const BellIcon2 = tmp(9301);
 let View = react_native.View;
 ({ YOU_BAR_SPRING_CONFIG: metroRequire, YOU_BAR_BUTTON_HIT_SLOP: metroImportDefault, YOU_BAR_BUTTON_ICON_SIZE } = YouBarConstants);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -55,7 +55,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((h
   const cResult = obj.c(39);
   hasNameplate = hasNameplate.hasNameplate;
   const tmp4 = closure_10();
-  const value = isForLaterExperimentOn(16336)().value;
+  const value = isForLaterExperimentOn(16376)().value;
   require = value;
   let obj2 = ReanimatedRexport;
   const fn = function s() {

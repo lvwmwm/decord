@@ -1,14 +1,14 @@
-// Module ID: 12194
-// Function ID: 12195
+// Module ID: 12209
+// Function ID: 12210
 // Name: useGuildPowerupOnActivate
-// Dependencies: [19, 2074, 6908, 4768, 558, 576, 12195, 504, 12196, 6657, 12197, 7666, 4854, 12174, 5612, 6909, 5093, 6918, 2]
+// Dependencies: [19, 2074, 6918, 4774, 558, 576, 12210, 504, 12211, 6664, 12212, 7677, 4860, 12189, 5619, 6919, 5099, 6929, 2]
 
-// Module 12194 (useGuildPowerupOnActivate)
-import GuildBoostingUtils from "GuildBoostingUtils" /* 7666 */;
+// Module 12209 (useGuildPowerupOnActivate)
+import GuildBoostingUtils from "GuildBoostingUtils" /* 7677 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 6908 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4768 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 6918 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4774 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let _require, closure_4, importDefault;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const BoostingActionCreators = tmp(5612);
+const BoostingActionCreators = tmp(5619);
 ({ BoostPurchaseIntent: metroRequire, GuildPowerupType: metroImportDefault } = GuildPowerupsConstants);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   let closure_0;

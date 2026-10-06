@@ -1,27 +1,27 @@
-// Module ID: 12388
-// Function ID: 12389
+// Module ID: 12403
+// Function ID: 12404
 // Name: InviteError
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 4729, 4791, 12389, 12390, 12391, 1126, 5594, 4886, 1402, 1188, 12392, 5971, 2115, 2]
+// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 4735, 4797, 12404, 12405, 12406, 1126, 5601, 4892, 1402, 1188, 12407, 5978, 2115, 2]
 
-// Module 12388 (InviteError)
+// Module 12403 (InviteError)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import native from "native" /* 1188 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import shared from "shared" /* 4729 */;
-import useThemeDefault from "useTheme" /* 4791 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import GuildIcon from "GuildIcon" /* 5971 */;
-import InviteErrorUtils from "InviteErrorUtils" /* 12391 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12392 */;
+import shared from "shared" /* 4735 */;
+import useThemeDefault from "useTheme" /* 4797 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import components_Button_Button from "components/Button/Button" /* 5601 */;
+import GuildIcon from "GuildIcon" /* 5978 */;
+import InviteErrorUtils from "InviteErrorUtils" /* 12406 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12407 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -72,14 +72,14 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
     tmp5 = cResult[1];
   }
   importDefault = tmp5;
-  const tmpResult = onPressClose(4729);
-  const tmp6Result = importDefault(tmpResult.isThemeDark(useThemeDefault()) ? 12389 : 12390);
+  const tmpResult = onPressClose(4735);
+  const tmp6Result = importDefault(tmpResult.isThemeDark(useThemeDefault()) ? 12404 : 12405);
   let code;
   if (inviteError != null) {
     code = inviteError.code;
   }
   if (cResult[2] !== code) {
-    const tmpResult2 = onPressClose(12391);
+    const tmpResult2 = onPressClose(12406);
     const descriptiveInviteError = tmpResult2.getDescriptiveInviteError(code);
     cResult[2] = code;
     cResult[3] = descriptiveInviteError;
@@ -183,14 +183,14 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
           tmp34 = tmp37;
         }
         const obj3 = { style: tmp4.expiredBody, variant: "text-sm/medium", color: "text-default", children: tmp13 };
-        const tmp31 = closure_8(onPressClose(4886).Text, obj3);
+        const tmp31 = closure_8(onPressClose(4892).Text, obj3);
         cResult[17] = tmp13;
         cResult[18] = tmp4.expiredBody;
         cResult[19] = tmp31;
         tmp29 = tmp31;
       }
       const obj4 = { style: tmp4.expiredTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp23 };
-      const tmp28 = closure_8(onPressClose(4886).Text, obj4);
+      const tmp28 = closure_8(onPressClose(4892).Text, obj4);
       cResult[14] = tmp4.expiredTitle;
       cResult[15] = tmp23;
       cResult[16] = tmp28;
@@ -235,7 +235,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
   const tmp = closure_11();
   const obj = shared;
   let code;
-  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 12389 : 12390);
+  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 12404 : 12405);
   const getDescriptiveInviteError = InviteErrorUtils.getDescriptiveInviteError;
   InviteErrorUtils;
   if (inviteError != null) {
@@ -260,7 +260,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
   items[0] = metroImportAll(_false, obj2);
   const obj3 = { style: tmp.expiredTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: title };
   title = undefined;
-  const Text = tmp2(4886).Text;
+  const Text = tmp2(4892).Text;
   const tmp10 = authStore;
   const tmp11 = React4;
   if (descriptiveInviteError != null) {
@@ -278,7 +278,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
   const obj5 = { style: tmp.expiredBody, variant: "text-sm/medium", color: "text-default", children: stringResult };
   items[2] = metroImportAll(Text_Text.Text, obj5);
   const obj6 = { variant: "primary", size: "lg", text: intl4.string(intl5.t.wcqOoF), onPress: handlePressClose };
-  const Button = tmp2(5594).Button;
+  const Button = tmp2(5601).Button;
   intl4 = tmp2(1126).intl;
   items[3] = metroImportAll(Button, obj6);
   return tmp10(tmp11, obj4);
@@ -391,7 +391,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressClose) 
         cResult[15] = closure_10(closure_4, obj5);
         const tmp21 = closure_10(closure_4, obj5);
       }
-      const obj6 = { style: tmp4.guildIcon, icon: tmp6, size: onPressClose(5971).GuildIconSizes.XLARGE };
+      const obj6 = { style: tmp4.guildIcon, icon: tmp6, size: onPressClose(5978).GuildIconSizes.XLARGE };
       const tmp16 = GuildIconDefault;
       cResult[9] = tmp6;
       cResult[10] = tmp4.guildIcon;

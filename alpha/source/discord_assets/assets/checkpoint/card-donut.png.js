@@ -1,8 +1,8 @@
-// Module ID: 5127
-// Function ID: 5128
+// Module ID: 5134
+// Function ID: 5135
 // Dependencies: [2]
 
-// Module 5127
+// Module 5134
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/card-donut.png.js");

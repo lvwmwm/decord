@@ -1,29 +1,29 @@
-// Module ID: 16577
-// Function ID: 16578
+// Module ID: 16617
+// Function ID: 16618
 // Name: useConjureAppSettingsForm
-// Dependencies: [5, 32, 19, 17, 4507, 2074, 4519, 1377, 12905, 12904, 8699, 21, 4890, 587, 504, 1126, 3723, 8977, 6072, 6071, 6074, 5990, 6098, 4886, 5594, 558, 576, 6746, 5993, 6002, 5043, 4854, 12103, 2]
+// Dependencies: [5, 32, 19, 17, 4513, 2074, 4525, 1377, 12924, 12923, 8734, 21, 4896, 587, 504, 1126, 3753, 9010, 6079, 6078, 6081, 5997, 6105, 4892, 5601, 558, 576, 6756, 6000, 6009, 5049, 4860, 12118, 2]
 // Exports: default
 
-// Module 16577 (useConjureAppSettingsForm)
+// Module 16617 (useConjureAppSettingsForm)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import _modDef3723 from "module_3723" /* 3723 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4854 */;
-import ConjureUtils from "ConjureUtils" /* 6746 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 12103 */;
+import _modDef3753 from "module_3753" /* 3753 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4860 */;
+import ConjureUtils from "ConjureUtils" /* 6756 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 12118 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import GuildChannelStore from "GuildChannelStore" /* 4513 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import RelationshipStore from "RelationshipStore" /* 4525 */;
 import UserStore from "UserStore" /* 1377 */;
-import ConjureChatStore from "ConjureChatStore" /* 12905 */;
-import ConjureConnectionStore_mod from "ConjureConnectionStore" /* 12904 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 8699 */;
+import ConjureChatStore from "ConjureChatStore" /* 12924 */;
+import ConjureConnectionStore_mod from "ConjureConnectionStore" /* 12923 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 8734 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -286,7 +286,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                 guild: GuildStore.getGuild(stateFromStores),
                 channels,
                 selectedChannel: found,
-                noChannelOptionLabel: intl.string(_modDef3723["jtBVV+"]),
+                noChannelOptionLabel: intl.string(_modDef3753["jtBVV+"]),
                 onSelect(id) {
                   let str;
                   const tmp = closure_1_4;
@@ -339,7 +339,7 @@ export default function useConjureAppSettingsForm(projectId) {
   let notifyAgent;
   let obj10;
   let scopeKeys;
-  const f146192 = (item) => null != item;
+  const f146401 = (item) => null != item;
   projectId = projectId.projectId;
   ({ scopeKeys, note, notifyAgent } = projectId);
   if (notifyAgent === undefined) {
@@ -397,7 +397,7 @@ export default function useConjureAppSettingsForm(projectId) {
       stringResult = intl.string(notifyAgent(flag[16])["4kCM6H"]);
     }
     items[1] = stringResult;
-    found = items.filter(f146192);
+    found = items.filter(f146401);
     if (0 !== found.length) {
       joined = found.join(" ");
     }
@@ -561,7 +561,7 @@ export default function useConjureAppSettingsForm(projectId) {
       stringResult = intl.string(notifyAgent(flag[16])["4kCM6H"]);
     }
     items[1] = stringResult;
-    found = items.filter(f146192);
+    found = items.filter(f146401);
     let joined;
     if (0 !== found.length) {
       joined = found.join(" ");

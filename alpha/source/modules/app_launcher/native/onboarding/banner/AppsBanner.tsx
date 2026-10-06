@@ -1,17 +1,17 @@
-// Module ID: 11677
-// Function ID: 11678
+// Module ID: 11691
+// Function ID: 11692
 // Name: AppsBanner
-// Dependencies: [19, 17, 21, 4890, 558, 576, 11678, 1126, 11675, 2]
+// Dependencies: [19, 17, 21, 4896, 558, 576, 11692, 1126, 11689, 2]
 
-// Module 11677 (AppsBanner)
+// Module 11691 (AppsBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import BannerBaseDefault from "BannerBase" /* 11675 */;
-import OnboardingAppsRocketDefault from "OnboardingAppsRocket" /* 11678 */;
+import BannerBaseDefault from "BannerBase" /* 11689 */;
+import OnboardingAppsRocketDefault from "OnboardingAppsRocket" /* 11692 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

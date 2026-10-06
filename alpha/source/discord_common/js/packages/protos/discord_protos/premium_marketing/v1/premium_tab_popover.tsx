@@ -1,14 +1,14 @@
-// Module ID: 10418
-// Function ID: 10419
+// Module ID: 10431
+// Function ID: 10432
 // Name: premium_tab_popover
-// Dependencies: [32, 1198, 10411, 10403, 10402, 10401, 2]
+// Dependencies: [32, 1198, 10424, 10416, 10415, 10414, 2]
 
-// Module 10418 (premium_tab_popover)
+// Module 10431 (premium_tab_popover)
 import _mod1198 from "module_1198" /* 1198 */;
-import localized_string from "localized_string" /* 10401 */;
-import help_article from "help_article" /* 10402 */;
-import cta_button from "cta_button" /* 10403 */;
-import theme_aware_asset from "theme_aware_asset" /* 10411 */;
+import localized_string from "localized_string" /* 10414 */;
+import help_article from "help_article" /* 10415 */;
+import cta_button from "cta_button" /* 10416 */;
+import theme_aware_asset from "theme_aware_asset" /* 10424 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

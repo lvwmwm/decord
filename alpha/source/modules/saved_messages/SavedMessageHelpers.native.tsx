@@ -1,13 +1,13 @@
-// Module ID: 11334
-// Function ID: 11335
+// Module ID: 11347
+// Function ID: 11348
 // Name: SavedMessageHelpers
-// Dependencies: [5, 11283, 1085, 7485, 7480, 7483, 6681, 11335, 11336, 5707, 1126, 7494, 7495, 4568, 4800, 4849, 11337, 2]
+// Dependencies: [5, 11296, 1085, 7496, 7491, 7494, 6688, 11348, 11349, 5714, 1126, 7505, 7506, 4574, 4806, 4855, 11350, 2]
 // Exports: addOrUpdateSavedMessage, removeSavedMessage
 
-// Module 11334 (SavedMessageHelpers)
+// Module 11347 (SavedMessageHelpers)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11283 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11296 */;
 import size from "module_2" /* 2 */;
 
 let content;
@@ -156,7 +156,7 @@ let obj = function _addOrUpdateSavedMessage() {
       await "IconComponent";
       displayToast = displayToast.displayToast;
       tmp = Object.assign(displayToast, Object.assign({ displayToast: 0 }));
-      return "Set";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -203,7 +203,7 @@ obj = function _removeSavedMessage() {
             ClockIcon = undefined;
             content = 1;
             c4 = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === content) {
           if (arg0 === 1) {

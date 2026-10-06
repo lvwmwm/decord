@@ -1,11 +1,11 @@
-// Module ID: 16391
-// Function ID: 16392
+// Module ID: 16431
+// Function ID: 16432
 // Name: ICYMINavigator
-// Dependencies: [21, 7556, 558, 576, 6496, 16392, 16343, 2]
+// Dependencies: [21, 7568, 558, 576, 6503, 16432, 16383, 2]
 
-// Module 16391 (ICYMINavigator)
+// Module 16431 (ICYMINavigator)
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 7556 */;
+import NativeStackView from "NativeStackView" /* 7568 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp8;
   let obj = accessibilityNativeStackOptions(576);
   const cResult = obj.c(6);
-  const obj2 = accessibilityNativeStackOptions(6496);
+  const obj2 = accessibilityNativeStackOptions(6503);
   accessibilityNativeStackOptions = obj2.useAccessibilityNativeStackOptions();
   if (cResult[0] !== accessibilityNativeStackOptions) {
     const fn = function n() {

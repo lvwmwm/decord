@@ -1,17 +1,17 @@
-// Module ID: 11600
-// Function ID: 11601
+// Module ID: 11614
+// Function ID: 11615
 // Name: ScheduledMessageDraftCoachmarkHooks
-// Dependencies: [32, 19, 5436, 7031, 2048, 2036, 558, 576, 4698, 504, 2038, 2]
+// Dependencies: [32, 19, 5443, 7044, 2048, 2036, 558, 576, 4704, 504, 2037, 2]
 
-// Module 11600 (ScheduledMessageDraftCoachmarkHooks)
+// Module 11614 (ScheduledMessageDraftCoachmarkHooks)
 import dismissible_content from "dismissible_content" /* 2036 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2038 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2037 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4698 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4704 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
-import DraftStore from "DraftStore" /* 7031 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5443 */;
+import DraftStore from "DraftStore" /* 7044 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const cResult = obj.c(25);
   channel = channel.channel;
   ({ draftText, isEligible } = channel);
-  let obj2 = channel(4698);
+  let obj2 = channel(4704);
   let result = obj2.useIsDismissibleContentDismissed_UNSAFE(closure_7);
   dependencyMap = result;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -132,7 +132,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let first;
   let connected;
   let isCoachmarkVisible;
-  let obj = channel(4698);
+  let obj = channel(4704);
   let result = obj.useIsDismissibleContentDismissed_UNSAFE(closure_7);
   dependencyMap = result;
   let obj2 = channel(504);

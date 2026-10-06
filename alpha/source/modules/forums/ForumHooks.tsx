@@ -1,10 +1,10 @@
-// Module ID: 7528
-// Function ID: 7529
+// Module ID: 7539
+// Function ID: 7540
 // Name: ForumHooks
-// Dependencies: [5, 19, 5638, 5691, 5692, 6809, 2051, 5583, 2074, 4509, 4905, 1377, 6808, 6780, 7529, 7264, 6776, 1085, 2058, 1125, 558, 576, 504, 6810, 584, 12, 1375, 5590, 11, 7409, 2061, 7530, 5304, 7531, 7540, 7541, 6605, 2]
+// Dependencies: [5, 19, 5645, 5698, 5699, 6819, 2051, 5590, 2074, 4515, 4911, 1377, 6818, 6790, 7540, 7277, 6786, 1085, 2058, 1125, 558, 576, 504, 6820, 584, 12, 1375, 5597, 11, 7420, 2061, 7541, 5311, 7542, 7551, 7552, 6612, 2]
 // Exports: getForumPostAuthor
 
-// Module 7528 (ForumHooks)
+// Module 7539 (ForumHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
@@ -13,29 +13,29 @@ import ThreadConstants from "ThreadConstants" /* 1125 */;
 import GlobalUtils from "GlobalUtils" /* 1375 */;
 import ChannelConstants from "ChannelConstants" /* 2058 */;
 import ThreadSortOrder from "ThreadSortOrder" /* 2061 */;
-import useMessageAuthor from "useMessageAuthor" /* 5304 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 6605 */;
-import ForumConstants from "ForumConstants" /* 6776 */;
-import ForumUtils from "ForumUtils" /* 6810 */;
-import ThreadUtils from "ThreadUtils" /* 7409 */;
-import renderMessageMarkupDefault from "renderMessageMarkup" /* 7531 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 7540 */;
+import useMessageAuthor from "useMessageAuthor" /* 5311 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6612 */;
+import ForumConstants from "ForumConstants" /* 6786 */;
+import ForumUtils from "ForumUtils" /* 6820 */;
+import ThreadUtils from "ThreadUtils" /* 7420 */;
+import renderMessageMarkupDefault from "renderMessageMarkup" /* 7542 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 7551 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5638 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5691 */;
-import ActiveThreadsStore_mod from "ActiveThreadsStore" /* 5692 */;
-import ThreadMessageStore_mod from "ThreadMessageStore" /* 6809 */;
+import EmojiStore from "EmojiStore" /* 5645 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5698 */;
+import ActiveThreadsStore_mod from "ActiveThreadsStore" /* 5699 */;
+import ThreadMessageStore_mod from "ThreadMessageStore" /* 6819 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5583 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5590 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import ReadStateStore from "ReadStateStore" /* 4905 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
+import ReadStateStore from "ReadStateStore" /* 4911 */;
 import UserStore from "UserStore" /* 1377 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 6808 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6780 */;
-import ForumPostUnreadCountStore from "ForumPostUnreadCountStore" /* 7529 */;
-import ForumSearchStore from "ForumSearchStore" /* 7264 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 6818 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6790 */;
+import ForumPostUnreadCountStore from "ForumPostUnreadCountStore" /* 7540 */;
+import ForumSearchStore from "ForumSearchStore" /* 7277 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -47,8 +47,8 @@ let closure_20;
 let closure_21;
 let closure_22;
 let closure_23;
-const f94989 = (count) => count.count + count.burst_count;
-const f94990 = (burst_count) => burst_count.burst_count;
+const f95129 = (count) => count.count + count.burst_count;
+const f95130 = (burst_count) => burst_count.burst_count;
 let _asyncToGenerator = _asyncToGenerator_mod;
 let ActiveThreadsStore = ActiveThreadsStore_mod;
 let ThreadMessageStore = ThreadMessageStore_mod;
@@ -452,7 +452,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((reactions) => {
   if (0 !== arr.length) {
     let tmp7;
     if (cResult[2] !== arr) {
-      const items = [f94989, f94990];
+      const items = [f95129, f95130];
       const obj2 = _modDef12;
       const orderByResult = obj2.orderBy(arr, items, ["desc", "desc"]);
       cResult[2] = arr;
@@ -480,7 +480,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((reactions) => {
       reactions = [];
     }
     if (0 !== reactions.length) {
-      const items = [f94989, f94990];
+      const items = [f95129, f95130];
       const obj = _modDef12;
       return obj.orderBy(reactions, items, ["desc", "desc"])[0];
     }
@@ -716,7 +716,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
         return parentChannel.count + parentChannel.burst_count;
       }
     }
-    const items2 = [f94989, f94990];
+    const items2 = [f95129, f95130];
     const obj2 = _modDef12;
     orderByResult = obj2.orderBy(tmp7, items2, ["desc", "desc"]);
   }
@@ -754,7 +754,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
     }
     let orderByResult = reactions;
     if (flag) {
-      const items = [f94989, f94990];
+      const items = [f95129, f95130];
       const obj = _modDef12;
       orderByResult = obj.orderBy(reactions, items, ["desc", "desc"]);
     }
@@ -812,7 +812,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     tmp6 = cResult[1];
   }
   if (cResult[2] !== tmp6) {
-    const items = [f94989, f94990];
+    const items = [f95129, f95130];
     const obj2 = _modDef12;
     const orderByResult = obj2.orderBy(tmp6, items, ["desc", "desc"]);
     cResult[2] = tmp6;
@@ -919,7 +919,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     if (reactions == null) {
       reactions = [];
     }
-    const items = [f94989, f94990];
+    const items = [f95129, f95130];
     const obj = _modDef12;
     return obj.orderBy(reactions, items, ["desc", "desc"]);
   }, items);
@@ -1202,7 +1202,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((author, getGuildId)
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp9);
-  const tmpResult2 = tmp(5304);
+  const tmpResult2 = tmp(5311);
   const nullableMessageAuthor = tmpResult2.useNullableMessageAuthor(author);
   if (cResult[5] === tmp5) {
     let tmp12;
@@ -1287,7 +1287,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((author, getGuildId)
   const items = [UserStore];
   const obj = id(504);
   const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(id));
-  const obj2 = id(5304);
+  const obj2 = id(5311);
   const nullableMessageAuthor = obj2.useNullableMessageAuthor(author);
   const items1 = [guildId, id];
   const effect = react.useEffect(() => {
@@ -1382,8 +1382,8 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((ownerId) => {
   const tmpResult3 = tmp(504);
   const stateFromStores1 = tmpResult3.useStateFromStores(tmp8, tmp10);
   let author;
-  const useNullableUserAuthor = tmp(5304).useNullableUserAuthor;
-  tmp(5304);
+  const useNullableUserAuthor = tmp(5311).useNullableUserAuthor;
+  tmp(5311);
   if (stateFromStores1 != null) {
     author = stateFromStores1.author;
   }
@@ -2047,8 +2047,8 @@ const tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id, arg1,
                   _setTimeout = setTimeout;
                   tmp12 = closure_3;
                   num = 350;
-                  closure_0 = setTimeout(closure_3(function() { /* body not rendered: F138235 */ }), 350);
-                  return () => { /* body not rendered: F138236 */ };
+                  closure_0 = setTimeout(closure_3(function() { /* body not rendered: F138442 */ }), 350);
+                  return () => { /* body not rendered: F138443 */ };
                 }
               } else {
                 tmp8 = closure_8;

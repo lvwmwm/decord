@@ -1,16 +1,16 @@
-// Module ID: 7821
-// Function ID: 7822
+// Module ID: 7832
+// Function ID: 7833
 // Name: ApplicationAssetUtils
-// Dependencies: [32, 5, 7822, 1085, 38, 3, 1282, 584, 1437, 2]
+// Dependencies: [32, 5, 7833, 1085, 38, 3, 1282, 584, 1437, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 7821 (ApplicationAssetUtils)
+// Module 7832 (ApplicationAssetUtils)
 import _modDef38 from "module_38" /* 38 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1437 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationAssetsStore from "ApplicationAssetsStore" /* 7822 */;
+import ApplicationAssetsStore from "ApplicationAssetsStore" /* 7833 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let PlatformTypes;
 let metroRequire;
 let tmp;
 const LoggerDefault = tmp(3);
-const f95580 = (item) => {
+const f95721 = (item) => {
   let startsWithResult;
   if (item != null) {
     startsWithResult = item.startsWith("http:");
@@ -183,7 +183,7 @@ obj = function _resolveExternalAssets() {
 };
 function updateUrlAssetIds(arr, arg1) {
   let num = 0;
-  if (arr.filter(f95580).length > 0) {
+  if (arr.filter(f95721).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;
@@ -339,7 +339,7 @@ obj = function _fetchAssetIds() {
       if (closure_2 === undefined) {
         num13 = 1;
       }
-      return "Set";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -516,7 +516,7 @@ export { fetchAssetIds };
 export const getAssetIds = function getAssetIds(id, arr) {
   const items = [];
   let num = 0;
-  if (arr.filter(f95580).length > 0) {
+  if (arr.filter(f95721).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;

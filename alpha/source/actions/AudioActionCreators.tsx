@@ -1,24 +1,24 @@
-// Module ID: 9306
-// Function ID: 9307
+// Module ID: 8079
+// Function ID: 8080
 // Name: AudioActionCreators
-// Dependencies: [5, 9307, 2051, 1999, 4913, 2103, 1377, 1085, 9308, 4915, 3, 1252, 551, 584, 9309, 9311, 9312, 9102, 2]
+// Dependencies: [5, 8080, 2051, 1999, 4919, 2103, 1377, 1085, 8081, 4921, 3, 1252, 551, 584, 8082, 8084, 8085, 8101, 2]
 
-// Module 9306 (AudioActionCreators)
+// Module 8079 (AudioActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import debounceDefault from "debounce" /* 551 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Constants2 from "Constants" /* 4915 */;
-import StreamQualityUtils from "StreamQualityUtils" /* 9102 */;
-import Constants3 from "Constants" /* 9308 */;
-import AudioSettingsUtils from "AudioSettingsUtils" /* 9309 */;
-import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 9311 */;
-import applyBackgroundOption from "applyBackgroundOption" /* 9312 */;
+import Constants2 from "Constants" /* 4921 */;
+import Constants3 from "Constants" /* 8081 */;
+import AudioSettingsUtils from "AudioSettingsUtils" /* 8082 */;
+import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 8084 */;
+import applyBackgroundOption from "applyBackgroundOption" /* 8085 */;
+import StreamQualityUtils from "StreamQualityUtils" /* 8101 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CertifiedDeviceStore from "CertifiedDeviceStore" /* 9307 */;
+import CertifiedDeviceStore from "CertifiedDeviceStore" /* 8080 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
 import UserStore from "UserStore" /* 1377 */;
 import Constants from "Constants" /* 1085 */;

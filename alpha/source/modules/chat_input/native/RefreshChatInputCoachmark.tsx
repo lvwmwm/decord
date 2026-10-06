@@ -1,13 +1,13 @@
-// Module ID: 11599
-// Function ID: 11600
+// Module ID: 11613
+// Function ID: 11614
 // Name: RefreshChatInputCoachmark
-// Dependencies: [109, 32, 19, 2048, 558, 576, 2036, 6891, 1126, 4684, 9882, 2]
+// Dependencies: [109, 32, 19, 2048, 558, 576, 2036, 6901, 1126, 4690, 9895, 2]
 
-// Module 11599 (RefreshChatInputCoachmark)
+// Module 11613 (RefreshChatInputCoachmark)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import OmnibuttonCoachmarkRive from "OmnibuttonCoachmarkRive" /* 4684 */;
+import OmnibuttonCoachmarkRive from "OmnibuttonCoachmarkRive" /* 4690 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -18,7 +18,7 @@ const require = globalThis.__r;
 let _require, buttonRef, dependencyMap, disabled;
 
 let tmp;
-const useCoachmark = tmp(9882);
+const useCoachmark = tmp(9895);
 let closure_2 = ["buttonRef"];
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 let ReactCompilerGating = ReactCompilerGating_mod;

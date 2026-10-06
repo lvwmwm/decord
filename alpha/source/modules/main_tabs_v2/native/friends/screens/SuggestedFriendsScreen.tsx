@@ -1,17 +1,17 @@
-// Module ID: 16944
-// Function ID: 16945
+// Module ID: 16970
+// Function ID: 16971
 // Name: SuggestedFriendsScreen
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 6657, 6681, 1252, 15973, 16937, 7850, 16941, 5911, 10598, 10726, 1126, 2]
+// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 6664, 6688, 1252, 16012, 16963, 7861, 16967, 5918, 10611, 10739, 1126, 2]
 
-// Module 16944 (SuggestedFriendsScreen)
+// Module 16970 (SuggestedFriendsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
-import ContactSuggestionRow2 from "ContactSuggestionRow" /* 16941 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
+import ContactSuggestionRow2 from "ContactSuggestionRow" /* 16967 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -155,7 +155,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         itemType: str,
         key: tmp.user.id,
         component() {
-              const obj = { added: added.includes(suggestedFriend), suggestedFriend, start: 0 === closure_0, end, onPress, onAddSuggestion() { /* body not rendered: F153597 */ }, location: metroRequire.FRIENDS_SUGGESTED_FRIENDS_MODAL };
+              const obj = { added: added.includes(suggestedFriend), suggestedFriend, start: 0 === closure_0, end, onPress, onAddSuggestion() { /* body not rendered: F153837 */ }, location: metroRequire.FRIENDS_SUGGESTED_FRIENDS_MODAL };
               const ContactSuggestionRow = ContactSuggestionRow2.ContactSuggestionRow;
               return metroImportDefault(ContactSuggestionRow, obj);
             }

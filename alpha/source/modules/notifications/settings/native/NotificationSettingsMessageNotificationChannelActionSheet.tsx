@@ -1,18 +1,18 @@
-// Module ID: 12509
-// Function ID: 12510
+// Module ID: 12524
+// Function ID: 12525
 // Name: NotificationSettingsMessageNotificationChannelActionSheet
-// Dependencies: [19, 5071, 1085, 5072, 1095, 21, 558, 576, 9851, 1126, 9852, 6614, 6609, 12508, 2]
+// Dependencies: [19, 5077, 1085, 5078, 1095, 21, 558, 576, 9864, 1126, 9865, 6621, 6616, 12523, 2]
 
-// Module 12509 (NotificationSettingsMessageNotificationChannelActionSheet)
+// Module 12524 (NotificationSettingsMessageNotificationChannelActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import ReadStateConstants from "ReadStateConstants" /* 5072 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6609 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6614 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 9852 */;
+import ReadStateConstants from "ReadStateConstants" /* 5078 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6616 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6621 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 9865 */;
 import react from "react" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             return tmp9;
           }
         }
-        const tmp12 = jsx(unread(12508), { context: "channel", value: notification, allMessagesSubLabel: tmp5, onChange: tmp8 });
+        const tmp12 = jsx(unread(12523), { context: "channel", value: notification, allMessagesSubLabel: tmp5, onChange: tmp8 });
         cResult[7] = notification;
         cResult[8] = tmp5;
         cResult[9] = tmp8;
@@ -120,7 +120,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   };
   stringResult = undefined;
   const tmp4 = jsx;
-  const tmp5 = unread(12508);
+  const tmp5 = unread(12523);
   if (notification !== UserNotificationSettings.ALL_MESSAGES) {
     if (unread !== UnreadSetting.ALL_MESSAGES) {
       const intl = tmp(1126).intl;

@@ -1,14 +1,14 @@
-// Module ID: 10023
-// Function ID: 10024
+// Module ID: 10036
+// Function ID: 10037
 // Name: VoiceChannelStartTimeStore
-// Dependencies: [5436, 1102, 504, 1106, 584, 2]
+// Dependencies: [5443, 1102, 504, 1106, 584, 2]
 
-// Module 10023 (VoiceChannelStartTimeStore)
+// Module 10036 (VoiceChannelStartTimeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import ChannelTypes from "ChannelTypes" /* 1106 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5443 */;
 import size from "module_2" /* 2 */;
 
 function _toTimestampMs(arg0) {

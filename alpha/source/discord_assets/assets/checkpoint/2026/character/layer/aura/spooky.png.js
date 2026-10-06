@@ -1,8 +1,8 @@
-// Module ID: 5296
-// Function ID: 5297
+// Module ID: 5303
+// Function ID: 5304
 // Dependencies: [2]
 
-// Module 5296
+// Module 5303
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/aura/spooky.png.js");

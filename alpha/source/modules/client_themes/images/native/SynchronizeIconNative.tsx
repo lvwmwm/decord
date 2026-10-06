@@ -1,11 +1,11 @@
-// Module ID: 15095
-// Function ID: 15096
+// Module ID: 15110
+// Function ID: 15111
 // Name: SynchronizeIconNative
-// Dependencies: [19, 21, 558, 576, 8136, 2]
+// Dependencies: [19, 21, 558, 576, 8169, 2]
 
-// Module 15095 (SynchronizeIconNative)
+// Module 15110 (SynchronizeIconNative)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8136 */;
+import inlineStyles from "inlineStyles" /* 8169 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -30,7 +30,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ fill, iconStyles } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { id: "Frame_-_24px", children: _false(inlineStyles.Rect, { y: "0", fill: "none", width: "24", height: "24" }) };
-    const G = tmp(8136).G;
+    const G = tmp(8169).G;
     const tmp6 = _false(G, obj2);
     cResult[0] = tmp6;
     first = tmp6;
@@ -39,9 +39,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[1] !== fill) {
     const obj3 = { id: "Filled_Icons", children: React3(G3, obj4) };
-    const G2 = tmp(8136).G;
+    const G2 = tmp(8169).G;
     obj4 = { children: items };
-    G3 = tmp(8136).G;
+    G3 = tmp(8169).G;
     const obj5 = { fill, d: "M6.351,6.351C7.824,4.871,9.828,4,12,4c4.411,0,8,3.589,8,8h2c0-5.515-4.486-10-10-10\n\t\t\tC9.285,2,6.779,3.089,4.938,4.938L3,3v6h6L6.351,6.351z" };
     items = [_false(inlineStyles.Path, obj5), ];
     const obj6 = { fill, d: "M17.649,17.649C16.176,19.129,14.173,20,12,20c-4.411,0-8-3.589-8-8H2c0,5.515,4.486,10,10,10\n\t\t\tc2.716,0,5.221-1.089,7.062-2.938L21,21v-6h-6L17.649,17.649z" };

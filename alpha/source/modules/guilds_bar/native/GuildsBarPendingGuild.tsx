@@ -1,22 +1,22 @@
-// Module ID: 16287
-// Function ID: 16288
+// Module ID: 16327
+// Function ID: 16328
 // Name: GuildsBarPendingGuild
-// Dependencies: [19, 4700, 2070, 4699, 5616, 21, 4890, 587, 558, 576, 16234, 4580, 504, 5971, 16268, 16237, 4702, 5917, 16249, 16278, 16226, 4612, 16257, 5974, 2]
+// Dependencies: [19, 4706, 2070, 4705, 5623, 21, 4896, 587, 558, 576, 16274, 4586, 504, 5978, 16308, 16277, 4708, 5924, 16289, 16318, 16266, 4618, 16297, 5981, 2]
 
-// Module 16287 (GuildsBarPendingGuild)
+// Module 16327 (GuildsBarPendingGuild)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4702 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 5917 */;
-import GuildIcon from "GuildIcon" /* 5971 */;
-import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 16226 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16249 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4708 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 5924 */;
+import GuildIcon from "GuildIcon" /* 5978 */;
+import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 16266 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16289 */;
 import react from "react" /* 19 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4700 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4706 */;
 import GuildRecord from "GuildRecord" /* 2070 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
-import SortedGuildStore from "SortedGuildStore" /* 5616 */;
-import createStyles from "createStyles" /* 4890 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
+import SortedGuildStore from "SortedGuildStore" /* 5623 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -574,7 +574,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
     const tmp5Result2 = token(stateFromStores[13]);
     tmp19Result = tmp19(tmp5Result2, obj9);
   }
-  return <tmp5Result id={guildId} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} cutouts={cutouts} selected={stateFromStores} sharedId={sharedValue} circle={!stateFromStores} overState="Set" unread={null} label={str} config={memo} styles={guildsBarAnimatedWrapperStyles} externalChildren={badge} expandedChildren={null}>{tmp19Result}</tmp5Result>;
+  return <tmp5Result id={guildId} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} cutouts={cutouts} selected={stateFromStores} sharedId={sharedValue} circle={!stateFromStores} overState="Reflect" unread={null} label={str} config={memo} styles={guildsBarAnimatedWrapperStyles} externalChildren={badge} expandedChildren={null}>{tmp19Result}</tmp5Result>;
 }));
 size = size_mod;
 let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarPendingGuild.tsx");

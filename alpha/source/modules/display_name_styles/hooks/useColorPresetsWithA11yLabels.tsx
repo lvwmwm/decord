@@ -1,14 +1,14 @@
-// Module ID: 15166
-// Function ID: 15167
+// Module ID: 15181
+// Function ID: 15182
 // Name: useColorPresetsWithA11yLabels
-// Dependencies: [19, 1395, 558, 576, 1126, 2883, 1103, 2]
+// Dependencies: [19, 1395, 558, 576, 1126, 2911, 1103, 2]
 
-// Module 15166 (useColorPresetsWithA11yLabels)
+// Module 15181 (useColorPresetsWithA11yLabels)
 import react2 from "react" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
 import intl2 from "intl" /* 1126 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1395 */;
-import _modDef2883 from "module_2883" /* 2883 */;
+import _modDef2911 from "module_2911" /* 2911 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedEffectId) =>
         const intl = intl2.intl;
         formatToPlainString = intl.formatToPlainString;
         obj2 = { number: arg1 + 1, hexList: mapped.join(", ") };
-        FHfTsV = _modDef2883.FHfTsV;
+        FHfTsV = _modDef2911.FHfTsV;
         mapped = colors.map(utils_ColorUtils.int2hex);
         return obj;
       };

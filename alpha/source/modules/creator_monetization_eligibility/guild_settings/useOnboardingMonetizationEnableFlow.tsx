@@ -1,9 +1,9 @@
-// Module ID: 17907
-// Function ID: 17908
+// Module ID: 17953
+// Function ID: 17954
 // Name: useOnboardingMonetizationEnableFlow
-// Dependencies: [19, 2070, 1377, 1085, 558, 576, 6764, 573, 17908, 17909, 17910, 6756, 1126, 2115, 17911, 2]
+// Dependencies: [19, 2070, 1377, 1085, 558, 576, 6774, 573, 17954, 17955, 17956, 6766, 1126, 2115, 17957, 2]
 
-// Module 17907 (useOnboardingMonetizationEnableFlow)
+// Module 17953 (useOnboardingMonetizationEnableFlow)
 import GuildRecord from "GuildRecord" /* 2070 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1377 */;
@@ -120,7 +120,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
   }
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(tmp17, tmp19);
-  const tmp22 = refresh(17908);
+  const tmp22 = refresh(17954);
   if (features != null) {
     class T {
       constructor() {
@@ -135,7 +135,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
   }
   ({ error, loading, createEnableRequest, submittedRequest } = tmp22(undefined));
   tmp22(undefined);
-  const tmp21Result = refresh(17909);
+  const tmp21Result = refresh(17955);
   if (features != null) {
     class T {
       constructor() {
@@ -151,8 +151,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
   const tmp21ResultResult = tmp21Result(undefined);
   ({ loading: loading2, error: error2, refresh } = tmp21ResultResult);
   const eligibility = tmp21ResultResult.eligibility;
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(17910)(eligibility));
-  refresh(17910)(eligibility);
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(17956)(eligibility));
+  refresh(17956)(eligibility);
   const tmp27 = cResult[7];
   if (features != null) {
     class T {
@@ -246,8 +246,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
       }
     }
   }
-  const useIsMonetizationReapplicationDisabled = tmp(6756).useIsMonetizationReapplicationDisabled;
-  tmp(6756);
+  const useIsMonetizationReapplicationDisabled = tmp(6766).useIsMonetizationReapplicationDisabled;
+  tmp(6766);
   if (features != null) {
     class T {
       constructor() {
@@ -509,23 +509,23 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
     return tmp3;
   });
   let id;
-  const tmp10 = refresh(17908);
+  const tmp10 = refresh(17954);
   if (features != null) {
     id = features.id;
   }
   ({ submittedRequest, error, loading, createEnableRequest } = tmp10(id));
   let id1;
   tmp10(id);
-  const tmp9Result = refresh(17909);
+  const tmp9Result = refresh(17955);
   if (features != null) {
     id1 = features.id;
   }
   const tmp9ResultResult = tmp9Result(id1);
   refresh = tmp9ResultResult.refresh;
   ({ eligibility, loading: loading2, error: error2 } = tmp9ResultResult);
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(17910)(eligibility));
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(17956)(eligibility));
   let hasItem2;
-  refresh(17910)(eligibility);
+  refresh(17956)(eligibility);
   if (features != null) {
     const features3 = features.features;
     hasItem2 = features3.has(constants.CREATOR_MONETIZABLE_RESTRICTED);
@@ -540,8 +540,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
     tmp19 = true === hasItem3;
   }
   let id2;
-  const useIsMonetizationReapplicationDisabled = tmp(6756).useIsMonetizationReapplicationDisabled;
-  tmp(6756);
+  const useIsMonetizationReapplicationDisabled = tmp(6766).useIsMonetizationReapplicationDisabled;
+  tmp(6766);
   if (features != null) {
     id2 = features.id;
   }
@@ -581,7 +581,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
       isExpeditedOnboardingGuild = false === hasItem;
     }
     let formatResult1;
-    const tmpResult4 = tmp(17911);
+    const tmpResult4 = tmp(17957);
     const creatorMonetizationAcceptTermsCheckboxText = tmpResult4.getCreatorMonetizationAcceptTermsCheckboxText();
     if (isApplicationRejected) {
       if (true === canApply) {

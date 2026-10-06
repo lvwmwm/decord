@@ -1,11 +1,11 @@
-// Module ID: 9325
-// Function ID: 9326
+// Module ID: 8099
+// Function ID: 8100
 // Name: isVideoBackgroundSupported
-// Dependencies: [1999, 4915, 2]
+// Dependencies: [1999, 4921, 2]
 // Exports: default
 
-// Module 9325 (isVideoBackgroundSupported)
-import Constants from "Constants" /* 4915 */;
+// Module 8099 (isVideoBackgroundSupported)
+import Constants from "Constants" /* 4921 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
 import size from "module_2" /* 2 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 7715
-// Function ID: 7716
+// Module ID: 7726
+// Function ID: 7727
 // Name: InGameMessageNuxSystemMessage
-// Dependencies: [5118, 1085, 7612, 7619, 7621, 2115, 1126, 7623, 2]
+// Dependencies: [5124, 1085, 7623, 7630, 7632, 2115, 1126, 7634, 2]
 // Exports: createInGameMessageNuxSystemMessage
 
-// Module 7715 (InGameMessageNuxSystemMessage)
+// Module 7726 (InGameMessageNuxSystemMessage)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 7612 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7619 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7621 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 7623 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7630 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7632 */;
+import ApplicationStore from "ApplicationStore" /* 5124 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;
@@ -44,7 +44,7 @@ export const createInGameMessageNuxSystemMessage = function createInGameMessageN
     tmpResult = HelpdeskUtilsDefault;
     const obj5 = { content: intl.formatToParts(intl2.t["92erOB"], obj2) };
     intl = intl2.intl;
-    const merged = Object.assign(tmp(7623)(message));
+    const merged = Object.assign(tmp(7634)(message));
     return obj5;
   }
 };

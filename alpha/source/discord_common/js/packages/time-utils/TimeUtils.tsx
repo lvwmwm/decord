@@ -1,14 +1,14 @@
-// Module ID: 4919
-// Function ID: 4920
+// Module ID: 4925
+// Function ID: 4926
 // Name: TimeUtils
-// Dependencies: [5, 4920, 581, 4921, 2]
+// Dependencies: [5, 4926, 581, 4927, 2]
 // Exports: convertMinutesToGivenTimeUnit, getTimeAndUnit, getTimeUnit
 
-// Module 4919 (TimeUtils)
+// Module 4925 (TimeUtils)
 import navigationStart from "navigationStart" /* 581 */;
-import createFindDefault from "createFind" /* 4921 */;
+import createFindDefault from "createFind" /* 4927 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_4920 from "module_4920" /* 4920 */;
+import module_4926 from "module_4926" /* 4926 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, importDefault, max;
@@ -590,12 +590,12 @@ export const getTimeUnit = function getTimeUnit(arg0, arg1) {
     max = max.max;
     return max.unit === obj.NONE && rounded === max || rounded < max;
   });
-  const tmp2 = createFindDefault(items, (unit) => f89672(unit.unit), findIndexResult);
+  const tmp2 = createFindDefault(items, (unit) => f89810(unit.unit), findIndexResult);
   const arr = items;
   if (null != tmp2) {
     return tmp2.unit;
   } else {
-    const found = arr.find((unit) => f89672(unit.unit));
+    const found = arr.find((unit) => f89810(unit.unit));
     let unit = null;
     if (null != found) {
       unit = found.unit;
@@ -611,17 +611,17 @@ export const getTimeAndUnit = function getTimeAndUnit(rounded, items) {
   } else {
     let unit;
     closure_0 = rounded;
-    const f89672 = (dependencyMap) => closure_0.includes(dependencyMap);
+    const f89810 = (dependencyMap) => closure_0.includes(dependencyMap);
     const findIndexResult = items.findIndex((max) => {
       max = max.max;
       return max.unit === obj.NONE && rounded === max || rounded < max;
     });
-    const tmp11 = f89672(4921)(items, (unit) => f89672(unit.unit), findIndexResult);
+    const tmp11 = f89810(4927)(items, (unit) => f89810(unit.unit), findIndexResult);
     const arr = items;
     if (null != tmp11) {
       unit = tmp11.unit;
     } else {
-      const found = arr.find((unit) => f89672(unit.unit));
+      const found = arr.find((unit) => f89810(unit.unit));
       unit = null;
       if (null != found) {
         unit = found.unit;

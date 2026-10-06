@@ -1,14 +1,14 @@
-// Module ID: 5568
-// Function ID: 5569
+// Module ID: 5575
+// Function ID: 5576
 // Name: SelectedChannelActionCreators
-// Dependencies: [4907, 2051, 1999, 1085, 5569, 584, 1112, 9448, 2]
+// Dependencies: [4913, 2051, 1999, 1085, 5576, 584, 1112, 9461, 2]
 
-// Module 5568 (SelectedChannelActionCreators)
+// Module 5575 (SelectedChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import router_utils from "router_utils" /* 1112 */;
-import SelectedChannelActionCreatorsAdditional from "SelectedChannelActionCreatorsAdditional" /* 5569 */;
-import GameConsoleActionCreatorsAll from "GameConsoleActionCreators" /* 9448 */;
-import GameConsoleStore from "GameConsoleStore" /* 4907 */;
+import SelectedChannelActionCreatorsAdditional from "SelectedChannelActionCreatorsAdditional" /* 5576 */;
+import GameConsoleActionCreatorsAll from "GameConsoleActionCreators" /* 9461 */;
+import GameConsoleStore from "GameConsoleStore" /* 4913 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
 import Constants from "Constants" /* 1085 */;
@@ -23,13 +23,14 @@ let obj = {
     let channelId;
     let fromChannelId;
     let fromGuildId;
+    let isAppStartupNavigation;
     let jumpType;
     let messageId;
     let opensChannel;
     let skipMessageFetch;
     let source;
     guildId = guildId.guildId;
-    ({ channelId, messageId, jumpType, source, skipMessageFetch, opensChannel } = guildId);
+    ({ channelId, messageId, jumpType, source, skipMessageFetch, opensChannel, isAppStartupNavigation } = guildId);
     const obj = SelectedChannelActionCreatorsAdditional;
     const channelSelectionOrigin = obj.getChannelSelectionOrigin();
     ({ fromGuildId, fromChannelId } = channelSelectionOrigin);
@@ -39,7 +40,7 @@ let obj = {
     if (guildId !== metroImportDefault) {
       tmp3 = guildId;
     }
-    dispatch({ type: "CHANNEL_SELECT", guildId: tmp3, channelId, fromGuildId, fromChannelId, messageId, jumpType, source, skipMessageFetch, opensChannel });
+    dispatch({ type: "CHANNEL_SELECT", guildId: tmp3, channelId, fromGuildId, fromChannelId, messageId, jumpType, source, skipMessageFetch, opensChannel, isAppStartupNavigation });
   },
   selectPrivateChannel(id) {
     const obj = router_utils;

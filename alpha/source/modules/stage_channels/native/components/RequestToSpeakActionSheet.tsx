@@ -1,28 +1,28 @@
-// Module ID: 9578
-// Function ID: 9579
+// Module ID: 9591
+// Function ID: 9592
 // Name: RequestToSpeakActionSheet
-// Dependencies: [32, 19, 17, 502, 2051, 5571, 21, 4890, 587, 558, 576, 9579, 1126, 6698, 504, 5037, 5579, 8084, 8086, 4854, 8074, 9580, 9582, 1188, 9584, 5993, 4580, 6681, 6657, 5588, 5582, 6074, 4886, 5593, 9585, 6112, 6645, 2]
+// Dependencies: [32, 19, 17, 502, 2051, 5578, 21, 4896, 587, 558, 576, 9592, 1126, 6705, 504, 5043, 5586, 8117, 8119, 4860, 8107, 9593, 9595, 1188, 9597, 6000, 4586, 6688, 6664, 5595, 5589, 6081, 4892, 5600, 9598, 6119, 6652, 2]
 
-// Module 9578 (RequestToSpeakActionSheet)
+// Module 9591 (RequestToSpeakActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import useAudienceRequestToSpeakStateDefault from "useAudienceRequestToSpeakState" /* 5037 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 5571 */;
-import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5579 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 6698 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 8074 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8084 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8086 */;
-import useRequestToSpeakPermission from "useRequestToSpeakPermission" /* 9579 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import useAudienceRequestToSpeakStateDefault from "useAudienceRequestToSpeakState" /* 5043 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 5578 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5586 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 6705 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 8107 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8117 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8119 */;
+import useRequestToSpeakPermission from "useRequestToSpeakPermission" /* 9592 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let c10;
 let c9;
 let obj2;
 let tmp8;
-const AssetRegistryDefault = tmp8(9584);
+const AssetRegistryDefault = tmp8(9597);
 let react = react_mod;
 const View = react_native.View;
 let closure_8 = StageChannelsConstants.REQUEST_TO_SPEAK_SHEET_KEY;
@@ -163,7 +163,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     id = channel.id;
   }
   const tmp9Result = tmp9(stateFromStores, id);
-  const tmp12 = tmp9Result === tmp(5037).RequestToSpeakStates.ON_STAGE;
+  const tmp12 = tmp9Result === tmp(5043).RequestToSpeakStates.ON_STAGE;
   importDefault = tmp12;
   if (cResult[2] === channel) {
     let tmp13;
@@ -191,9 +191,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       tmp14 = cResult[6];
     }
     if (tmp12) {
-      MicrophoneArrowRightIcon = tmp(9580).GroupArrowDownIcon;
+      MicrophoneArrowRightIcon = tmp(9593).GroupArrowDownIcon;
     } else {
-      MicrophoneArrowRightIcon = tmp(9582).MicrophoneArrowRightIcon;
+      MicrophoneArrowRightIcon = tmp(9595).MicrophoneArrowRightIcon;
     }
     if (cResult[7] !== MicrophoneArrowRightIcon) {
       const tmp18 = closure_9(MicrophoneArrowRightIcon, {});
@@ -223,7 +223,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
     let obj3 = { onPress: tmp13, icon: tmp16, label: tmp14, trailing: tmp19 };
-    const tmp24 = closure_9(tmp(5993).TableRow, obj3);
+    const tmp24 = closure_9(tmp(6000).TableRow, obj3);
     cResult[10] = tmp14;
     cResult[11] = tmp13;
     cResult[12] = tmp16;
@@ -271,7 +271,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     id = channel.id;
   }
   const tmp5Result = tmp5(stateFromStores, id);
-  const tmp8 = tmp5Result === tmp(5037).RequestToSpeakStates.ON_STAGE;
+  const tmp8 = tmp5Result === tmp(5043).RequestToSpeakStates.ON_STAGE;
   importDefault = tmp8;
   const intl = tmp(1126).intl;
   const string = intl.string;
@@ -282,9 +282,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     stringResult = string(t["8Joh+p"]);
   }
   if (tmp8) {
-    MicrophoneArrowRightIcon = tmp(9580).GroupArrowDownIcon;
+    MicrophoneArrowRightIcon = tmp(9593).GroupArrowDownIcon;
   } else {
-    MicrophoneArrowRightIcon = tmp(9582).MicrophoneArrowRightIcon;
+    MicrophoneArrowRightIcon = tmp(9595).MicrophoneArrowRightIcon;
   }
   let obj2 = {
     onPress() {
@@ -308,7 +308,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     label: stringResult,
     trailing: closure_9(Icon, obj3)
   };
-  const TableRow = tmp(5993).TableRow;
+  const TableRow = tmp(6000).TableRow;
   obj3 = { source: AssetRegistryDefault };
   Icon = tmp(1188).Icon;
   return closure_9(TableRow, obj2);
@@ -328,20 +328,20 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const cResult = obj.c(40);
   channelId = channelId.channelId;
   const analyticsLocations = channelId.analyticsLocations;
-  const obj2 = channelId(4580);
+  const obj2 = channelId(4586);
   const token = obj2.useToken(first(587).modules.mobile.TABLE_ROW_PADDING);
   closure_11();
   if (cResult[0] !== analyticsLocations) {
     const items = [];
     const arraySpreadResult = HermesBuiltin.arraySpread(items, analyticsLocations, 0);
-    items[arraySpreadResult] = first(6681).REQUEST_TO_SPEAK;
+    items[arraySpreadResult] = first(6688).REQUEST_TO_SPEAK;
     cResult[0] = analyticsLocations;
     cResult[1] = items;
     tmp8 = items;
   } else {
     tmp8 = cResult[1];
   }
-  const analyticsLocations2 = tmp5(6657)(tmp8).analyticsLocations;
+  const analyticsLocations2 = tmp5(6664)(tmp8).analyticsLocations;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [ChannelStore];
     cResult[2] = items1;
@@ -361,8 +361,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   }
   const tmp2Result = channelId(504);
   const stateFromStores = tmp2Result.useStateFromStores(tmp12, tmp14);
-  const tmp2Result2 = channelId(5588);
-  const stageParticipantsCount = tmp2Result2.useStageParticipantsCount(channelId, tmp2(5582).StageChannelParticipantNamedIndex.ALL_REQUESTED_TO_SPEAK);
+  const tmp2Result2 = channelId(5595);
+  const stageParticipantsCount = tmp2Result2.useStageParticipantsCount(channelId, tmp2(5589).StageChannelParticipantNamedIndex.ALL_REQUESTED_TO_SPEAK);
   const tmp17 = first1(react.useState(0), 2);
   first = tmp17[0];
   dependencyMap = tmp17[1];
@@ -447,7 +447,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       }
       const obj3 = { hasIcons: true, children: items2 };
       const obj4 = { channel: stateFromStores };
-      const TableRowGroup = tmp2(6074).TableRowGroup;
+      const TableRowGroup = tmp2(6081).TableRowGroup;
       items2 = [closure_9(closure_12, obj4), ];
       const obj5 = { channel: stateFromStores };
       items2[1] = closure_9(closure_13, obj5);
@@ -529,8 +529,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       }
       const obj7 = { accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: tmp30 };
       cResult[15] = tmp30;
-      cResult[16] = closure_9(channelId(4886).Text, obj7);
-      const tmp35 = closure_9(channelId(4886).Text, obj7);
+      cResult[16] = closure_9(channelId(4892).Text, obj7);
+      const tmp35 = closure_9(channelId(4892).Text, obj7);
     } else {
       class U {
         constructor(nativeEvent) {
@@ -568,8 +568,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       cResult[20] = tmp21;
       cResult[21] = tmp36;
       cResult[22] = tmp23;
-      cResult[23] = closure_10(channelId(5593).Stack, obj8);
-      const tmp42 = closure_10(channelId(5593).Stack, obj8);
+      cResult[23] = closure_10(channelId(5600).Stack, obj8);
+      const tmp42 = closure_10(channelId(5600).Stack, obj8);
     }
     const obj9 = { style: tmp28, children: tmp34 };
     cResult[17] = tmp34;
@@ -599,19 +599,19 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   let first1;
   react = undefined;
   const analyticsLocations = channelId.analyticsLocations;
-  const obj = channelId(4580);
+  const obj = channelId(4586);
   const token = obj.useToken(first(587).modules.mobile.TABLE_ROW_PADDING);
   const items = [];
   const tmp6 = closure_11();
-  const tmp7 = first(6657);
+  const tmp7 = first(6664);
   const arraySpreadResult = HermesBuiltin.arraySpread(items, analyticsLocations, 0);
-  items[arraySpreadResult] = first(6681).REQUEST_TO_SPEAK;
+  items[arraySpreadResult] = first(6688).REQUEST_TO_SPEAK;
   const analyticsLocations2 = tmp7(items).analyticsLocations;
   const items1 = [ChannelStore];
   const obj2 = channelId(504);
   const stateFromStores = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(channelId));
-  const obj3 = channelId(5588);
-  const stageParticipantsCount = obj3.useStageParticipantsCount(channelId, channelId(5582).StageChannelParticipantNamedIndex.ALL_REQUESTED_TO_SPEAK);
+  const obj3 = channelId(5595);
+  const stageParticipantsCount = obj3.useStageParticipantsCount(channelId, channelId(5589).StageChannelParticipantNamedIndex.ALL_REQUESTED_TO_SPEAK);
   const tmp11 = first1(react.useState(0), 2);
   const tmp4 = first;
   first = tmp11[0];
@@ -622,9 +622,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   let tmp15 = null;
   if (null != stateFromStores) {
     const obj4 = { value: analyticsLocations2, children: closure_9(BottomSheet, obj5) };
-    const AnalyticsLocationProvider = tmp2(6657).AnalyticsLocationProvider;
+    const AnalyticsLocationProvider = tmp2(6664).AnalyticsLocationProvider;
     obj5 = { scrollable: true, startExpanded: stageParticipantsCount >= 5, children: closure_9(BottomSheetScrollView, obj6) };
-    BottomSheet = tmp2(6645).BottomSheet;
+    BottomSheet = tmp2(6652).BottomSheet;
     obj6 = {
       style: tmp6.container,
       onLayout(nativeEvent) {
@@ -636,9 +636,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         },
       children: closure_10(Stack, obj7)
     };
-    BottomSheetScrollView = tmp2(6112).BottomSheetScrollView;
+    BottomSheetScrollView = tmp2(6119).BottomSheetScrollView;
     obj7 = { spacing: 8, children: items4 };
-    Stack = tmp2(5593).Stack;
+    Stack = tmp2(5600).Stack;
     const obj8 = {
       spacing: 8,
       onLayout(nativeEvent) {
@@ -650,10 +650,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         },
       children: items3
     };
-    const Stack2 = tmp2(5593).Stack;
+    const Stack2 = tmp2(5600).Stack;
     const obj10 = { channel: stateFromStores };
     const obj9 = { hasIcons: true, children: items2 };
-    const TableRowGroup = tmp2(6074).TableRowGroup;
+    const TableRowGroup = tmp2(6081).TableRowGroup;
     items2 = [closure_9(closure_12, obj10), ];
     const obj11 = { channel: stateFromStores };
     items2[1] = closure_9(closure_13, obj11);
@@ -661,7 +661,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     const obj12 = { style: obj13, children: closure_9(Text, obj14) };
     obj13 = { paddingHorizontal: token };
     obj14 = { accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: format(v5z7q5a, obj15) };
-    Text = tmp2(4886).Text;
+    Text = tmp2(4892).Text;
     const intl = tmp2(1126).intl;
     format = intl.format;
     const _HermesInternal = HermesInternal;
@@ -671,7 +671,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     items4 = [closure_10(Stack2, obj8), ];
     const _Math = Math;
     const obj16 = { channel: stateFromStores, height: Math.max(first1 - first - 8, 0) };
-    const tmp4Result = tmp4(9585);
+    const tmp4Result = tmp4(9598);
     items4[1] = closure_9(tmp4Result, obj16);
     tmp15 = closure_9(AnalyticsLocationProvider, obj4);
   }

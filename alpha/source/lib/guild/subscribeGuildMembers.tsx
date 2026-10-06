@@ -1,17 +1,17 @@
-// Module ID: 6814
-// Function ID: 6815
+// Module ID: 6824
+// Function ID: 6825
 // Name: subscribeGuildMembers
-// Dependencies: [109, 19, 5583, 1377, 21, 12, 6815, 568, 558, 576, 1242, 2]
+// Dependencies: [109, 19, 5590, 1377, 21, 12, 6825, 568, 558, 576, 1242, 2]
 // Exports: default
 
-// Module 6814 (subscribeGuildMembers)
+// Module 6824 (subscribeGuildMembers)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import react2 from "react" /* 576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5583 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5590 */;
 import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

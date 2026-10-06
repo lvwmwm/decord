@@ -1,9 +1,9 @@
-// Module ID: 13101
-// Function ID: 13102
+// Module ID: 13120
+// Function ID: 13121
 // Name: VideoGuardExperiment
 // Dependencies: [1440, 2]
 
-// Module 13101 (VideoGuardExperiment)
+// Module 13120 (VideoGuardExperiment)
 import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 

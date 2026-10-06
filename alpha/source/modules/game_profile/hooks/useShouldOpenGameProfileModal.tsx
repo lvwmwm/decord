@@ -1,15 +1,15 @@
-// Module ID: 8321
-// Function ID: 8322
+// Module ID: 8354
+// Function ID: 8355
 // Name: useShouldOpenGameProfileModal
-// Dependencies: [19, 2007, 1085, 1252, 1390, 8322, 5897, 558, 576, 8323, 38, 2]
+// Dependencies: [19, 2007, 1085, 1252, 1390, 8355, 5904, 558, 576, 8356, 38, 2]
 // Exports: gameIdIsAcceptable, gameIsAcceptable, trackEntryPoint
 
-// Module 8321 (useShouldOpenGameProfileModal)
+// Module 8354 (useShouldOpenGameProfileModal)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import FlagUtilsAll from "FlagUtils" /* 1390 */;
-import GameFlags from "GameFlags" /* 8322 */;
+import GameFlags from "GameFlags" /* 8355 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2007 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -121,7 +121,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackEntryPointImpre
             items1.push(obj.Disabled);
           }
           tmp14 = items1;
-          const tmp21Result = tmp21(5897);
+          const tmp21Result = tmp21(5904);
           if (tmp21Result.isAgeRestrictedContentClassification(gameRecord.contentClassification)) {
             items1.push(obj.NSFW);
             tmp14 = items1;
@@ -209,7 +209,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackEntryPointImpre
           items1.push(obj.Disabled);
         }
         tmp14 = items1;
-        const tmp21Result = tmp21(5897);
+        const tmp21Result = tmp21(5904);
         if (tmp21Result.isAgeRestrictedContentClassification(gameRecord.contentClassification)) {
           items1.push(obj.NSFW);
           tmp14 = items1;
@@ -244,7 +244,7 @@ function gameIsAcceptable(gameFlags) {
       items1.push(obj.Disabled);
     }
     arr = items1;
-    const tmp8Result = tmp8(5897);
+    const tmp8Result = tmp8(5904);
     if (tmp8Result.isAgeRestrictedContentClassification(gameFlags.contentClassification)) {
       items1.push(obj.NSFW);
       arr = items1;
@@ -272,7 +272,7 @@ export const gameIdIsAcceptable = function gameIdIsAcceptable(gameId) {
       items1.push(obj.Disabled);
     }
     arr = items1;
-    const tmp9Result = tmp9(5897);
+    const tmp9Result = tmp9(5904);
     if (tmp9Result.isAgeRestrictedContentClassification(game.contentClassification)) {
       items1.push(obj.NSFW);
       arr = items1;

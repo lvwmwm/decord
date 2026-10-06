@@ -1,20 +1,20 @@
-// Module ID: 10878
-// Function ID: 10879
+// Module ID: 10891
+// Function ID: 10892
 // Name: OrbsBadgeCoachmark
-// Dependencies: [109, 19, 17, 21, 4890, 558, 576, 10879, 1126, 4737, 9882, 2]
+// Dependencies: [109, 19, 17, 21, 4896, 558, 576, 10892, 1126, 4743, 9895, 2]
 // Exports: default
 
-// Module 10878 (OrbsBadgeCoachmark)
+// Module 10891 (OrbsBadgeCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import RootNavigationRef from "RootNavigationRef" /* 4737 */;
-import useCoachmark from "useCoachmark" /* 9882 */;
-import _modDef10879 from "module_10879" /* 10879 */;
+import RootNavigationRef from "RootNavigationRef" /* 4743 */;
+import useCoachmark from "useCoachmark" /* 9895 */;
+import _modDef10892 from "module_10892" /* 10892 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(6);
   const tmp3 = closure_9();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef10879 };
+    const obj2 = { uri: _modDef10892 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -62,8 +62,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   tmp10 = tmp11;
 }) : (() => {
   const tmp = closure_9();
-  ({ source: { uri: _modDef10879 }, style: tmp.coachmarkImage });
-  ({ uri: _modDef10879 });
+  ({ source: { uri: _modDef10892 }, style: tmp.coachmarkImage });
+  ({ uri: _modDef10892 });
   return <metroRequire style={tmp.coachmarkImageContainer}>{null}</metroRequire>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -177,7 +177,7 @@ export default function OrbsBadgeCoachmark(badgeRef) {
       tmp11 = cResult[1];
       tmp12 = cResult[2];
     }
-    const tmp8Result = tmp8(9882);
+    const tmp8Result = tmp8(9895);
     const coachmark = tmp8Result.useCoachmark(tmp11, tmp12);
   } else {
     badgeRef = badgeRef.badgeRef;

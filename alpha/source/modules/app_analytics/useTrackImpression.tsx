@@ -1,19 +1,19 @@
-// Module ID: 8422
-// Function ID: 8423
+// Module ID: 8455
+// Function ID: 8456
 // Name: useTrackImpression
-// Dependencies: [19, 2051, 2103, 4699, 1253, 1260, 1252, 584, 5070, 558, 576, 1342, 5094, 5590, 2]
+// Dependencies: [19, 2051, 2103, 4705, 1253, 1260, 1252, 584, 5076, 558, 576, 1342, 5100, 5597, 2]
 
-// Module 8422 (useTrackImpression)
+// Module 8455 (useTrackImpression)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtils2 from "AnalyticsUtils" /* 1252 */;
 import _modDef1342 from "module_1342" /* 1342 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5070 */;
-import uniqueIdDefault from "uniqueId" /* 5094 */;
-import useMountEffectDefault from "useMountEffect" /* 5590 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5076 */;
+import uniqueIdDefault from "uniqueId" /* 5100 */;
+import useMountEffectDefault from "useMountEffect" /* 5597 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import SelectedChannelStore_mod from "SelectedChannelStore" /* 2103 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
 import ImpressionStore from "ImpressionStore" /* 1253 */;
 import AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -195,7 +195,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((current, arg1, arg2)
   react = undefined;
   react = react.useRef(undefined);
   const ref2 = react.useRef(undefined);
-  const tmp = obj(5590)(() => {
+  const tmp = obj(5597)(() => {
     if (obj.trackOnInitialLoad) {
       let fn;
       const tmp6 = _modDef1342(ref.current, current);
@@ -239,7 +239,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((current, arg1, arg2)
         tmp8.current = tmp9;
       }
       if (!tmp6) {
-        obj = { sequenceId: tmp2(5094)("impression_") };
+        obj = { sequenceId: tmp2(5100)("impression_") };
         const merged = Object.assign(tmp5);
         trackImpression(obj, tmp.disableTrack);
         fn = () => {

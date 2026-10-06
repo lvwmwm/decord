@@ -1,17 +1,17 @@
-// Module ID: 13102
-// Function ID: 13103
+// Module ID: 13121
+// Function ID: 13122
 // Name: useAppDMChatInputState
-// Dependencies: [19, 8795, 5118, 7111, 2009, 1377, 1085, 1985, 558, 576, 504, 7858, 584, 6663, 2]
+// Dependencies: [19, 8827, 5124, 7124, 2009, 1377, 1085, 1985, 558, 576, 504, 7869, 584, 6670, 2]
 
-// Module 13102 (useAppDMChatInputState)
+// Module 13121 (useAppDMChatInputState)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import Server from "Server" /* 1985 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7858 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8795 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7869 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8827 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
-import UserProfileStore from "UserProfileStore" /* 7111 */;
+import ApplicationStore from "ApplicationStore" /* 5124 */;
+import UserProfileStore from "UserProfileStore" /* 7124 */;
 import ApplicationRecord from "ApplicationRecord" /* 2009 */;
 import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -518,8 +518,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
               }
             }
           }
-          const useGetOrFetchApplication = tmp(6663).useGetOrFetchApplication;
-          tmp(6663);
+          const useGetOrFetchApplication = tmp(6670).useGetOrFetchApplication;
+          tmp(6670);
           if (null == tmp43) {
             class U {
               constructor() {

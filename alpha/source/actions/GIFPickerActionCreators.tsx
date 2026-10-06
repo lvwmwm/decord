@@ -1,22 +1,22 @@
-// Module ID: 10090
-// Function ID: 10091
+// Module ID: 10103
+// Function ID: 10104
 // Name: GIFPickerActionCreators
-// Dependencies: [2116, 10089, 1085, 1095, 5070, 10091, 10092, 1282, 584, 12, 1266, 1371, 7518, 2033, 1232, 5707, 1126, 1252, 2]
+// Dependencies: [2116, 10102, 1085, 1095, 5076, 10104, 10105, 1282, 584, 12, 1266, 1371, 7529, 2033, 1232, 5714, 1126, 1252, 2]
 // Exports: addFavoriteGIF, fetchSuggestions, fetchTrending, fetchTrendingGIFs, fetchTrendingSearchTerms, gifUrlKey, initializeSearch, removeFavoriteGIF, resetSearch, search, trackSearchResultViewed, trackSearchStart, trackSelectGIF
 
-// Module 10090 (GIFPickerActionCreators)
+// Module 10103 (GIFPickerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl3 from "intl" /* 1126 */;
 import frecency_user_settings from "frecency_user_settings" /* 1232 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import URLUtilsDefault from "URLUtils" /* 1371 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
-import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 7518 */;
-import GifProvider from "GifProvider" /* 10091 */;
-import GIFPickerUtils from "GIFPickerUtils" /* 10092 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5076 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5714 */;
+import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 7529 */;
+import GifProvider from "GifProvider" /* 10104 */;
+import GIFPickerUtils from "GIFPickerUtils" /* 10105 */;
 import LocaleStore from "LocaleStore" /* 2116 */;
-import GIFPickerViewStore from "GIFPickerViewStore" /* 10089 */;
+import GIFPickerViewStore from "GIFPickerViewStore" /* 10102 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import module_12 from "module_12" /* 12 */;
@@ -303,7 +303,7 @@ export const gifUrlKey = function gifUrlKey(uri) {
     const obj2 = AttachmentUrlUtilsAll;
     const tmp5 = importAll;
     if (obj2.isAttachmentPathUrl(toURLSafeResult)) {
-      const tmp5Result = tmp5(7518);
+      const tmp5Result = tmp5(7529);
       const str = tmp5Result.removeSignedUrlParameters(toURLSafeResult);
       str1 = str.toString();
     }
@@ -338,7 +338,7 @@ export const addFavoriteGIF = function addFavoriteGIF(size) {
             let result = obj6.isExternalProxiedAttachmentUrl(toURLSafeResult);
             const tmp11 = importAll;
             if (!result) {
-              const tmp11Result = tmp11(7518);
+              const tmp11Result = tmp11(7529);
               result = tmp11Result.isAttachmentPathUrl(toURLSafeResult);
             }
             tmp10 = result;
@@ -392,7 +392,7 @@ export const addFavoriteGIF = function addFavoriteGIF(size) {
             const obj11 = AttachmentUrlUtilsAll;
             const tmp25 = importAll;
             if (obj11.isAttachmentPathUrl(toURLSafeResult1)) {
-              const tmp25Result = tmp25(7518);
+              const tmp25Result = tmp25(7529);
               const str9 = tmp25Result.removeSignedUrlParameters(toURLSafeResult1);
               url = str9.toString();
             }
@@ -432,7 +432,7 @@ export const addFavoriteGIF = function addFavoriteGIF(size) {
       let result3 = obj3.isExternalProxiedAttachmentUrl(toURLSafeResult2);
       const tmp7 = importAll;
       if (!result3) {
-        const tmp7Result = tmp7(7518);
+        const tmp7Result = tmp7(7529);
         result3 = tmp7Result.isAttachmentPathUrl(toURLSafeResult2);
       }
       tmp6 = result3;
@@ -457,7 +457,7 @@ export const removeFavoriteGIF = function removeFavoriteGIF(uri) {
         const obj2 = AttachmentUrlUtilsAll;
         const tmp7 = importAll;
         if (obj2.isAttachmentPathUrl(toURLSafeResult)) {
-          const tmp7Result = tmp7(7518);
+          const tmp7Result = tmp7(7529);
           const str = tmp7Result.removeSignedUrlParameters(toURLSafeResult);
           str1 = str.toString();
         }

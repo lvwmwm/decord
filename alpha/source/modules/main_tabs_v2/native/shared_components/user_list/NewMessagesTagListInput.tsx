@@ -1,19 +1,19 @@
-// Module ID: 11994
-// Function ID: 11995
+// Module ID: 12011
+// Function ID: 12012
 // Name: NewMessagesTagListInput
-// Dependencies: [19, 17, 1377, 21, 4890, 587, 1369, 558, 576, 1375, 10595, 5909, 1126, 11995, 10983, 4886, 4590, 9235, 2]
+// Dependencies: [19, 17, 1377, 21, 4896, 587, 1369, 558, 576, 1375, 10608, 5916, 1126, 12012, 10996, 4892, 4596, 9270, 2]
 
-// Module 11994 (NewMessagesTagListInput)
+// Module 12011 (NewMessagesTagListInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import GlobalUtils from "GlobalUtils" /* 1375 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4590 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10595 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4596 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10608 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1377 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -62,7 +62,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     }
     const mapped = items.map(UserStore.getUser);
     const found = mapped.filter(tmp(1375).isNotNullish);
-    const mapped1 = found.map(tags(10595));
+    const mapped1 = found.map(tags(10608));
     cResult[0] = selectedUserIds;
     cResult[1] = mapped1;
     tags = mapped1;
@@ -90,8 +90,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
           }
           if (cResult[9] !== tmp4.header) {
             cResult[9] = tmp4.header;
-            cResult[10] = jsx(tmp(4886).Text, { style: header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp15 });
-            jsx(tmp(4886).Text, { style: header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp15 });
+            cResult[10] = jsx(tmp(4892).Text, { style: header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp15 });
+            jsx(tmp(4892).Text, { style: header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp15 });
             class F {
               constructor(arg0) {
                 tmp = closure_1[arg0];
@@ -194,7 +194,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
                 return;
               }
             }
-            const tmp26 = jsx(tags(9235), { autoFocus, focusOnAdd: true, footer: null, icon: tmp17, onChangeText, onFocus, onRemove: tmp20, placeholder: tmp21, tags, ref: tagListInputRef });
+            const tmp26 = jsx(tags(9270), { autoFocus, focusOnAdd: true, footer: null, icon: tmp17, onChangeText, onFocus, onRemove: tmp20, placeholder: tmp21, tags, ref: tagListInputRef });
             cResult[15] = autoFocus;
             cResult[16] = onChangeText;
             cResult[17] = onFocus;
@@ -238,7 +238,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     tmp12Result = null;
     if (tags.length > 0) {
       let stringResult2;
-      const PressableOpacity = tmp(5909).PressableOpacity;
+      const PressableOpacity = tmp(5916).PressableOpacity;
       let intl = tmp(1126).intl;
       const string = intl.string;
       const t = tmp(1126).t;
@@ -268,9 +268,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
         }
       }
       if (forceSearchResults) {
-        let CirclePlusIcon = tmp(11995).ChevronLargeRightIcon;
+        let CirclePlusIcon = tmp(12012).ChevronLargeRightIcon;
       } else {
-        CirclePlusIcon = tmp(10983).CirclePlusIcon;
+        CirclePlusIcon = tmp(10996).CirclePlusIcon;
       }
       tmp12Result = tmp12(PressableOpacity, obj5);
     }

@@ -1,20 +1,20 @@
-// Module ID: 16019
-// Function ID: 16020
+// Module ID: 16058
+// Function ID: 16059
 // Name: MessagesItemEmptyState
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4737, 15979, 1126, 4886, 5594, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4743, 16018, 1126, 4892, 5601, 2]
 
-// Module 16019 (MessagesItemEmptyState)
+// Module 16058 (MessagesItemEmptyState)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import RootNavigationRef from "RootNavigationRef" /* 4737 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15979 */;
+import RootNavigationRef from "RootNavigationRef" /* 4743 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import components_Button_Button from "components/Button/Button" /* 5601 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16018 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -120,7 +120,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     const _Symbol3 = Symbol;
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
       const obj5 = { text: intl3.string(intl4.t.zIJnA6), onPress: first, size: "lg" };
-      const Button = tmp(5594).Button;
+      const Button = tmp(5601).Button;
       intl3 = tmp(1126).intl;
       const tmp25 = metroRequire(Button, obj5);
       cResult[12] = tmp25;

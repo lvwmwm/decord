@@ -1,13 +1,13 @@
-// Module ID: 14440
-// Function ID: 14441
+// Module ID: 14456
+// Function ID: 14457
 // Name: UserProfileEditFormTextField
-// Dependencies: [109, 19, 21, 558, 576, 6580, 6098, 2]
+// Dependencies: [109, 19, 21, 558, 576, 6587, 6105, 2]
 
-// Module 14440 (UserProfileEditFormTextField)
+// Module 14456 (UserProfileEditFormTextField)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 6098 */;
-import TextArea2 from "TextArea" /* 6580 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 6105 */;
+import TextArea2 from "TextArea" /* 6587 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -84,7 +84,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 }
                 tmp16 = tmp22;
               }
-              const TextArea = tmp(6580).TextArea;
+              const TextArea = tmp(6587).TextArea;
               const merged = Object.assign(tmp14);
               const tmp27 = <TextArea ref={tmp7} />;
               cResult[15] = tmp14;
@@ -97,7 +97,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   tmp16 = cResult[20];
                 }
               }
-              const TextInput = tmp(6098).TextInput;
+              const TextInput = tmp(6105).TextInput;
               const merged1 = Object.assign(tmp14);
               const tmp21 = <TextInput ref={tmp7} clearable />;
               cResult[18] = tmp14;

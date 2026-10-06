@@ -1,14 +1,14 @@
-// Module ID: 11629
-// Function ID: 11630
+// Module ID: 11643
+// Function ID: 11644
 // Name: ForumPostNewTag
-// Dependencies: [19, 21, 4890, 587, 558, 576, 1188, 2]
+// Dependencies: [19, 21, 4896, 587, 558, 576, 1188, 2]
 
-// Module 11629 (ForumPostNewTag)
+// Module 11643 (ForumPostNewTag)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

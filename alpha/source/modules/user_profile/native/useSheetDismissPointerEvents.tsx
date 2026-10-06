@@ -1,10 +1,10 @@
-// Module ID: 12798
-// Function ID: 12799
+// Module ID: 12817
+// Function ID: 12818
 // Name: useSheetDismissPointerEvents
-// Dependencies: [558, 6112, 4612, 6140, 2]
+// Dependencies: [558, 6119, 4618, 6147, 2]
 
-// Module 12798 (useSheetDismissPointerEvents)
-import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
+// Module 12817 (useSheetDismissPointerEvents)
+import LegacyBaseButton from "LegacyBaseButton" /* 6147 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

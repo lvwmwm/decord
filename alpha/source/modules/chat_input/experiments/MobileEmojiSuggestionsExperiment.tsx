@@ -1,10 +1,10 @@
-// Module ID: 11577
-// Function ID: 11578
+// Module ID: 11590
+// Function ID: 11591
 // Name: MobileEmojiSuggestionsExperiment
 // Dependencies: [1440, 558, 576, 2]
 // Exports: getIsMobileEmojiSuggestionsConfig
 
-// Module 11577 (MobileEmojiSuggestionsExperiment)
+// Module 11590 (MobileEmojiSuggestionsExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1440 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

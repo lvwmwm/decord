@@ -1,13 +1,13 @@
-// Module ID: 10086
-// Function ID: 10087
+// Module ID: 10099
+// Function ID: 10100
 // Name: useExpressionPickerInsets
-// Dependencies: [19, 1085, 558, 576, 1618, 6471, 587, 2]
+// Dependencies: [19, 1085, 558, 576, 1618, 6478, 587, 2]
 
-// Module 10086 (useExpressionPickerInsets)
+// Module 10099 (useExpressionPickerInsets)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6471 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6478 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasCategories) => 
   } else {
     first = cResult[0];
   }
-  const bottom2 = tmp3(6471)(first).insets.bottom;
+  const bottom2 = tmp3(6478)(first).insets.bottom;
   if (cResult[1] !== bottom) {
     const obj3 = { paddingBottom: bottom };
     cResult[1] = bottom;

@@ -1,33 +1,33 @@
-// Module ID: 5102
-// Function ID: 5103
+// Module ID: 5108
+// Function ID: 5109
 // Name: AgeVerificationUtils
-// Dependencies: [5, 32, 19, 5103, 5104, 502, 5110, 1377, 8131, 8085, 1085, 1110, 8075, 8086, 5581, 558, 1985, 576, 504, 5580, 8112, 584, 8084, 8080, 8091, 7946, 1126, 3045, 13575, 2]
+// Dependencies: [5, 32, 19, 5109, 5110, 502, 5116, 1377, 8164, 8118, 1085, 1110, 8108, 8119, 5588, 558, 1985, 576, 504, 5587, 8145, 584, 8117, 8113, 8124, 7957, 1126, 3073, 13591, 2]
 // Exports: ageGateSourceHasLightboxBackdrop, getAgeVerificationGetStartedSubtitle, getAgeVerificationGetStartedTitle, isAgeVerificationMessageWithConnectToTeenCta, isAgeVerificationMessageWithManualReviewCta, isAgeVerificationMessageWithRetryCta, isAgeVerified, isAssignedByDiscord, isFullscreenAgeVerificationEntryPoint, isVerifiedAdult, isVerifiedTeen, maybePerformReactiveCheck, shouldShowTiggerPawtect, useShouldShowTiggerPawtect
 
-// Module 5102 (AgeVerificationUtils)
+// Module 5108 (AgeVerificationUtils)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl7 from "intl" /* 1126 */;
 import Server from "Server" /* 1985 */;
-import _modDef3045 from "module_3045" /* 3045 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5580 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5581 */;
-import usePreviousDefault from "usePrevious" /* 7946 */;
-import Constants2 from "Constants" /* 8075 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 8085 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8086 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8091 */;
-import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 8112 */;
-import ReactiveCheckActionCreators from "ReactiveCheckActionCreators" /* 13575 */;
+import _modDef3073 from "module_3073" /* 3073 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5587 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5588 */;
+import usePreviousDefault from "usePrevious" /* 7957 */;
+import Constants2 from "Constants" /* 8108 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 8118 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8119 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8124 */;
+import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 8145 */;
+import ReactiveCheckActionCreators from "ReactiveCheckActionCreators" /* 13591 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 5103 */;
-import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5104 */;
+import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 5109 */;
+import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5110 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MessageStore from "MessageStore" /* 5110 */;
+import MessageStore from "MessageStore" /* 5116 */;
 import UserStore from "UserStore" /* 1377 */;
-import AgeVerificationStore from "AgeVerificationStore" /* 8131 */;
+import AgeVerificationStore from "AgeVerificationStore" /* 8164 */;
 import Constants from "Constants" /* 1085 */;
 import AgeGateConstants from "AgeGateConstants" /* 1110 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -210,8 +210,8 @@ function shouldCallReactiveCheck() {
   }
   let tmp7 = !tmp5;
   if (tmp7) {
-    tmp7 = RegionalFeatureConfigStore.isFeatureAgeGated(tmp3(5581).AgeGatedFeature.REACTIVE_CHECK) && AgeVerificationStore.shouldCallReactiveCheck();
-    const isFeatureAgeGatedResult = RegionalFeatureConfigStore.isFeatureAgeGated(tmp3(5581).AgeGatedFeature.REACTIVE_CHECK) && AgeVerificationStore.shouldCallReactiveCheck();
+    tmp7 = RegionalFeatureConfigStore.isFeatureAgeGated(tmp3(5588).AgeGatedFeature.REACTIVE_CHECK) && AgeVerificationStore.shouldCallReactiveCheck();
+    const isFeatureAgeGatedResult = RegionalFeatureConfigStore.isFeatureAgeGated(tmp3(5588).AgeGatedFeature.REACTIVE_CHECK) && AgeVerificationStore.shouldCallReactiveCheck();
   }
   return tmp7;
 }
@@ -380,43 +380,6 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 let closure_19 = tmp8;
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  let currentUser;
-  let tmp4;
-  let tmp5;
-  obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function t() {
-      return currentUser.getCurrentUser();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  let prop;
-  if (stateFromStores != null) {
-    prop = stateFromStores.ageVerificationStatus;
-  }
-  return prop === Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT;
-}) : (() => {
-  let currentUser;
-  const items = [UserStore];
-  obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let prop;
-  if (stateFromStores != null) {
-    prop = stateFromStores.ageVerificationStatus;
-  }
-  return prop === Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp4;
   let tmp5;
   obj = react2;
@@ -454,11 +417,11 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return tmp5;
   });
 });
-let closure_20 = tmp10;
+let closure_20 = tmp9;
 ReactCompilerGating = ReactCompilerGating_mod;
 obj = { CTAS: "ctas", CONTENT_TYPE: "content_type" };
 let obj2 = { RETRY: "retry", CONNECT_TO_TEEN: "connect_to_teen", REQUEST_MANUAL_REVIEW: "request_manual_review" };
-const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp = closure_20();
   obj = RegionalFeatureConfigUtils;
   const tmp2 = obj.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.REACTIVE_CHECK) && tmp;
@@ -470,7 +433,7 @@ const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let currentUser;
   let tmp4;
   let tmp5;
@@ -522,9 +485,9 @@ const tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   return tmp5;
 });
-let closure_23 = tmp12;
+let closure_23 = tmp11;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let classificationId;
   let entryPoint;
   let loading;
@@ -566,7 +529,7 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           constructor(arg0, arg1) {
             closure_0 = arg0;
             closure_1 = arg1;
-            return closure_1(() => { /* body not rendered: F136688 */ });
+            return closure_1(() => { /* body not rendered: F136896 */ });
           }
         }
         cResult[9] = obj2;
@@ -576,7 +539,7 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         constructor(arg0, arg1) {
           closure_0 = arg0;
           closure_1 = arg1;
-          return closure_1(() => { /* body not rendered: F136688 */ });
+          return closure_1(() => { /* body not rendered: F136896 */ });
         }
       }
       cResult[4] = tmp3;
@@ -622,7 +585,7 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let entryPoint;
   let loading;
   let onComplete;
@@ -693,7 +656,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let closure_0;
   let closure_1;
   let closure_2;
@@ -838,7 +801,7 @@ const tmp15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let closure_0;
   let first;
   let tmp = _require;
@@ -898,9 +861,35 @@ const tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return tmp;
   }, items1);
 });
-let closure_25 = tmp16;
+let closure_25 = tmp15;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+function isVerifiedAdult() {
+  const currentUser = UserStore.getCurrentUser();
+  let prop;
+  if (currentUser != null) {
+    prop = currentUser.ageVerificationStatus;
+  }
+  const tmp5 = prop === Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT || prop === Server.AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
+  return tmp5;
+}
+function isAgeVerified() {
+  const currentUser = UserStore.getCurrentUser();
+  let prop;
+  if (currentUser != null) {
+    prop = currentUser.ageVerificationStatus;
+  }
+  let tmp5 = prop !== Server.AgeVerificationStatusUkAndAusOnly.UNVERIFIED;
+  if (tmp5) {
+    let prop1;
+    if (currentUser != null) {
+      prop1 = currentUser.ageVerificationStatus;
+    }
+    tmp5 = prop1 !== Server.AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
+  }
+  return tmp5;
+}
+let fn = () => !closure_19();
+const tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let closure_0;
   _require = arg0;
   obj = require("react");
@@ -943,32 +932,6 @@ let tmp17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }, items);
 });
-function isVerifiedAdult() {
-  const currentUser = UserStore.getCurrentUser();
-  let prop;
-  if (currentUser != null) {
-    prop = currentUser.ageVerificationStatus;
-  }
-  const tmp5 = prop === Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT || prop === Server.AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
-  return tmp5;
-}
-function isAgeVerified() {
-  const currentUser = UserStore.getCurrentUser();
-  let prop;
-  if (currentUser != null) {
-    prop = currentUser.ageVerificationStatus;
-  }
-  let tmp5 = prop !== Server.AgeVerificationStatusUkAndAusOnly.UNVERIFIED;
-  if (tmp5) {
-    let prop1;
-    if (currentUser != null) {
-      prop1 = currentUser.ageVerificationStatus;
-    }
-    tmp5 = prop1 !== Server.AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
-  }
-  return tmp5;
-}
-let fn = () => !closure_19();
 const result1 = size.fileFinishedImporting("modules/age_assurance/AgeVerificationUtils.tsx");
 
 export const ageGateSourceHasLightboxBackdrop = function ageGateSourceHasLightboxBackdrop(arg0) {
@@ -996,7 +959,6 @@ export const isVerifiedTeen = function isVerifiedTeen() {
 export const useIsVerifiedTeen = tmp7;
 export { isVerifiedAdult };
 export const useIsVerifiedAdult = tmp8;
-export const useIsExplicitlyVerifiedAdult = tmp9;
 export const isAssignedByDiscord = function isAssignedByDiscord() {
   const currentUser = UserStore.getCurrentUser();
   let prop;
@@ -1006,8 +968,8 @@ export const isAssignedByDiscord = function isAssignedByDiscord() {
   const tmp5 = prop === Server.AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT || prop === Server.AgeVerificationStatusUkAndAusOnly.INFERRED_TEEN;
   return tmp5;
 };
-export const useIsAssignedByDiscord = tmp10;
-export const useShowAssignedAgeGroupSettings = tmp11;
+export const useIsAssignedByDiscord = tmp9;
+export const useShowAssignedAgeGroupSettings = tmp10;
 export const AgeVerificationSystemNotificationEmbedKeys = obj;
 export const AgeVerificationSystemNotificationCtaTypes = obj2;
 export const AgeVerificationSystemNotificationContentType = { VERIFIED_ADULT: "verified_adult", VERIFIED_TEEN: "verified_teen", ERROR: "error", FAE_FAILED: "fae_failed", ID_FAILED: "id_failed", UNDERAGE: "underage", MANUAL_REVIEW_SUBMITTED: "manual_review_submitted" };
@@ -1090,10 +1052,10 @@ export const isAgeVerificationMessageWithConnectToTeenCta = function isAgeVerifi
   }
 };
 export { isAgeVerified };
-export const useIsAgeVerified = tmp12;
-export const useInitiateAgeVerification = tmp13;
-export const useInitiateAgeVerificationV2 = tmp14;
-export const useWatchAgeVerificationStatusChange = tmp15;
+export const useIsAgeVerified = tmp11;
+export const useInitiateAgeVerification = tmp12;
+export const useInitiateAgeVerificationV2 = tmp13;
+export const useWatchAgeVerificationStatusChange = tmp14;
 export const isFullscreenAgeVerificationEntryPoint = function isFullscreenAgeVerificationEntryPoint(arg0) {
   const hasItem = null != arg0 && set.has(arg0);
   return hasItem;
@@ -1110,7 +1072,7 @@ export const getAgeVerificationGetStartedTitle = function getAgeVerificationGetS
   if (hasItem) {
     stringResult = string(tmp2(1126).t.lSWVTM);
   } else if (flag) {
-    stringResult = string(_modDef3045["/kgWIg"]);
+    stringResult = string(_modDef3073["/kgWIg"]);
   } else {
     stringResult = string(tmp2(1126).t.xYXsr6);
   }
@@ -1131,14 +1093,14 @@ export const getAgeVerificationGetStartedSubtitle = function getAgeVerificationG
     stringResult = intl6.string(intl7.t["S/xS/w"]);
   } else if (flag) {
     const intl5 = intl7.intl;
-    stringResult = intl5.string(_modDef3045.h7qzoa);
+    stringResult = intl5.string(_modDef3073.h7qzoa);
   } else {
     if (flag2) {
       if (null != handleOnHelpUrlHook) {
         if (null != fn) {
           const intl4 = intl7.intl;
           obj2 = { handleOnHelpUrlHook, handleOnTrustedProvidersHook: fn };
-          stringResult = intl4.format(_modDef3045["+Ft5ch"], obj2);
+          stringResult = intl4.format(_modDef3073["+Ft5ch"], obj2);
         }
       }
     }
@@ -1146,13 +1108,13 @@ export const getAgeVerificationGetStartedSubtitle = function getAgeVerificationG
       if (null != handleOnHelpUrlHook) {
         const intl3 = intl7.intl;
         const obj3 = { handleOnHelpUrlHook };
-        stringResult = intl3.format(_modDef3045["22HSSI"], obj3);
+        stringResult = intl3.format(_modDef3073["22HSSI"], obj3);
       }
     }
     if (null != handleOnHelpUrlHook) {
       const intl2 = intl7.intl;
       obj = { handleOnHelpUrlHook };
-      stringResult = intl2.format(_modDef3045.RpMIT0, obj);
+      stringResult = intl2.format(_modDef3073.RpMIT0, obj);
     } else {
       const intl = intl7.intl;
       stringResult = intl.string(intl7.t.HxS3oQ);
@@ -1160,8 +1122,8 @@ export const getAgeVerificationGetStartedSubtitle = function getAgeVerificationG
   }
   return stringResult;
 };
-export const useShouldCallReactiveCheck = tmp16;
-export const useMaybePerformReactiveCheckForSource = tmp17;
+export const useShouldCallReactiveCheck = tmp15;
+export const useMaybePerformReactiveCheckForSource = tmp16;
 export { shouldCallReactiveCheck };
 export const maybePerformReactiveCheck = function maybePerformReactiveCheck() {
   return obj(...arguments);

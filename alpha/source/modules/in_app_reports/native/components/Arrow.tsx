@@ -1,16 +1,16 @@
-// Module ID: 8288
-// Function ID: 8289
+// Module ID: 8321
+// Function ID: 8322
 // Name: Arrow
-// Dependencies: [19, 21, 4890, 587, 558, 576, 1188, 8289, 2]
+// Dependencies: [19, 21, 4896, 587, 558, 576, 1188, 8322, 2]
 
-// Module 8288 (Arrow)
+// Module 8321 (Arrow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1188 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8289 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8322 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

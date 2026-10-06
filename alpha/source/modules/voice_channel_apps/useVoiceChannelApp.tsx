@@ -1,12 +1,12 @@
-// Module ID: 16992
-// Function ID: 16993
+// Module ID: 17018
+// Function ID: 17019
 // Name: useVoiceChannelApp
-// Dependencies: [2074, 4509, 1085, 558, 576, 504, 6748, 2]
+// Dependencies: [2074, 4515, 1085, 558, 576, 504, 6758, 2]
 // Exports: useVoiceChannelApplicationId
 
-// Module 16992 (useVoiceChannelApp)
+// Module 17018 (useVoiceChannelApp)
 import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

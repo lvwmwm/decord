@@ -1,28 +1,28 @@
-// Module ID: 6781
-// Function ID: 6782
+// Module ID: 6791
+// Function ID: 6792
 // Name: GuildSubscriptionsStore
-// Dependencies: [32, 4776, 4510, 5439, 502, 6782, 6783, 2051, 5618, 2112, 2074, 4913, 4519, 2103, 4699, 1085, 6787, 584, 12, 2077, 504, 2]
+// Dependencies: [32, 4782, 4516, 5446, 502, 6792, 6793, 2051, 5625, 2112, 2074, 4919, 4525, 2103, 4705, 1085, 6797, 584, 12, 2077, 504, 2]
 
-// Module 6781 (GuildSubscriptionsStore)
+// Module 6791 (GuildSubscriptionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import FavoritesUtils from "FavoritesUtils" /* 2077 */;
-import ChannelMemberStore from "ChannelMemberStore" /* 6782 */;
-import GuildSubscriptionsDefault from "GuildSubscriptions" /* 6787 */;
+import ChannelMemberStore from "ChannelMemberStore" /* 6792 */;
+import GuildSubscriptionsDefault from "GuildSubscriptions" /* 6797 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 4776 */;
-import LurkingStore from "LurkingStore" /* 4510 */;
-import SpotifyStore from "SpotifyStore" /* 5439 */;
+import ExperimentStore from "ExperimentStore" /* 4782 */;
+import LurkingStore from "LurkingStore" /* 4516 */;
+import SpotifyStore from "SpotifyStore" /* 5446 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6783 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6793 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5618 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5625 */;
 import GuildMemberStore from "GuildMemberStore" /* 2112 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
+import RelationshipStore from "RelationshipStore" /* 4525 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -388,15 +388,15 @@ let subscriptions = {
   },
   GUILD_SUBSCRIPTIONS_CHANNEL: function handleChannel(arg0) {
     let channelId;
-    let flag;
+    let flag3;
     let guildId;
     let ranges;
     ({ guildId, channelId, ranges } = arg0);
     if (channelId === EVERYONE_CHANNEL_ID) {
-      flag = closure_20.subscribeChannel(guildId, channelId, ranges);
+      flag3 = closure_20.subscribeChannel(guildId, channelId, ranges, false);
     } else {
       const channel = ChannelStore.getChannel(channelId);
-      flag = false;
+      flag3 = false;
       if (null != channel) {
         let subscribeChannelResult1;
         const guildId1 = channel.getGuildId();
@@ -415,18 +415,18 @@ let subscriptions = {
         if (isThreadResult) {
           let subscribeChannelResult;
           if (channel.type === constants.ANNOUNCEMENT_THREAD) {
-            subscribeChannelResult = closure_20.subscribeChannel(guildId1, channel.parent_id, ranges);
+            subscribeChannelResult = closure_20.subscribeChannel(guildId1, channel.parent_id, ranges, false);
           } else {
             subscribeChannelResult = channel.isActiveThread() && closure_20.subscribeThreadMemberList(guildId1, channelId, SelectedChannelStore.getChannelId());
           }
           subscribeChannelResult1 = subscribeChannelResult;
         } else {
-          subscribeChannelResult1 = closure_20.subscribeChannel(guildId1, channelId, ranges);
+          subscribeChannelResult1 = closure_20.subscribeChannel(guildId1, channelId, ranges, false);
         }
-        flag = subscribeChannelResult1;
+        flag3 = subscribeChannelResult1;
       }
     }
-    return flag;
+    return flag3;
   },
   GUILD_SUBSCRIPTIONS: function handleGuild(guildId) {
     return closure_20.subscribeToGuild(guildId.guildId);

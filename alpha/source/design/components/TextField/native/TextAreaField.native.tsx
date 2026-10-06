@@ -1,21 +1,21 @@
-// Module ID: 6581
-// Function ID: 6582
+// Module ID: 6588
+// Function ID: 6589
 // Name: TextAreaField
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 6105, 6101, 4582, 1126, 6582, 6108, 6109, 4886, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 6112, 6108, 4588, 1126, 6589, 6115, 6116, 4892, 2]
 
-// Module 6581 (TextAreaField)
+// Module 6588 (TextAreaField)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import native from "native" /* 4582 */;
-import useTextField from "useTextField" /* 6101 */;
-import InputFieldContainer2 from "InputFieldContainer" /* 6105 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 6108 */;
-import useCharacterLimitAnnouncement2 from "useCharacterLimitAnnouncement" /* 6582 */;
+import native from "native" /* 4588 */;
+import useTextField from "useTextField" /* 6108 */;
+import InputFieldContainer2 from "InputFieldContainer" /* 6112 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 6115 */;
+import useCharacterLimitAnnouncement2 from "useCharacterLimitAnnouncement" /* 6589 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -82,7 +82,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     }
     const tmpResult10 = useCharacterLimitAnnouncement2;
     const characterLimitAnnouncement = tmpResult10.useCharacterLimitAnnouncement(tmp13);
-    const InputFieldContainer = tmp(6105).InputFieldContainer;
+    const InputFieldContainer = tmp(6112).InputFieldContainer;
     if (cResult[6] === focusProps) {
       let tmp15;
       if (cResult[7] === inputProps) {
@@ -106,7 +106,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
                   let str3 = "text-muted";
                   let str = "text-muted";
                   const obj3 = { style: tmp6.maxLengthIndicator, children: _false(Text, obj4) };
-                  Text = tmp(4886).Text;
+                  Text = tmp(4892).Text;
                   const tmp34 = View;
                   if (null != maxLength) {
                     str = str3;
@@ -161,7 +161,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
             }
           }
           const obj8 = { ref: innerRef, style: tmp18, placeholderTextColor: inputStyles.placeholderText.color, multiline: true };
-          const NativeTextInput = tmp(6109).NativeTextInput;
+          const NativeTextInput = tmp(6116).NativeTextInput;
           const merged1 = Object.assign(tmp15);
           const tmp24 = _false(NativeTextInput, obj8);
           cResult[13] = innerRef;
@@ -230,10 +230,10 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   intl = tmp(1126).intl;
   const characterLimitAnnouncement = useCharacterLimitAnnouncement(obj5);
   const obj6 = { isFocused, children: items1 };
-  const InputFieldContainer = tmp(6105).InputFieldContainer;
+  const InputFieldContainer = tmp(6112).InputFieldContainer;
   const merged = Object.assign(disabled);
   const obj7 = { ref: innerRef, style: items, placeholderTextColor: inputStyles.placeholderText.color, multiline: true };
-  const NativeTextInput = tmp(6109).NativeTextInput;
+  const NativeTextInput = tmp(6116).NativeTextInput;
   const propsForNativeTextInput = _objectWithoutProperties.propsForNativeTextInput;
   _objectWithoutProperties;
   const tmpResult6 = native;
@@ -248,7 +248,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     let str3 = "text-muted";
     let str = "text-muted";
     const obj8 = { style: tmp4.maxLengthIndicator, children: _false(Text, obj9) };
-    Text = tmp(4886).Text;
+    Text = tmp(4892).Text;
     const tmp18 = View;
     if (null != maxLength) {
       str = str3;

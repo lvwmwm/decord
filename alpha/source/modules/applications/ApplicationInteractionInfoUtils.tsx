@@ -1,13 +1,15 @@
-// Module ID: 11242
-// Function ID: 11243
+// Module ID: 11255
+// Function ID: 11256
 // Name: ApplicationInteractionInfoUtils
-// Dependencies: [1985, 2]
+// Dependencies: [5126, 1985, 2]
 // Exports: canViewInteractionInfo, isPrimaryEntryPointCommandMessage
 
-// Module 11242 (ApplicationInteractionInfoUtils)
-import Server from "Server" /* 1985 */;
+// Module 11255 (ApplicationInteractionInfoUtils)
+import InteractionTypes from "InteractionTypes" /* 5126 */;
 import size from "module_2" /* 2 */;
 
+let tmp2;
+const Server = tmp2(1985);
 const result = size.fileFinishedImporting("modules/applications/ApplicationInteractionInfoUtils.tsx");
 
 export const canViewInteractionInfo = function canViewInteractionInfo(message) {
@@ -19,7 +21,7 @@ export const isPrimaryEntryPointCommandMessage = function isPrimaryEntryPointCom
   if (interactionMetadata != null) {
     type = interactionMetadata.type;
   }
-  let tmp4 = type === Server.InteractionTypes.APPLICATION_COMMAND;
+  let tmp4 = type === InteractionTypes.InteractionTypes.APPLICATION_COMMAND;
   if (tmp4) {
     const interactionMetadata2 = message.interactionMetadata;
     let command_type;

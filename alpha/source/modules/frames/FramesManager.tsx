@@ -1,17 +1,17 @@
-// Module ID: 8980
-// Function ID: 8981
+// Module ID: 9013
+// Function ID: 9014
 // Name: FramesManager
-// Dependencies: [8703, 1085, 5316, 6613, 8981, 8514, 1252, 584, 2]
+// Dependencies: [9000, 1085, 5323, 6620, 9014, 8547, 1252, 584, 2]
 
-// Module 8980 (FramesManager)
+// Module 9013 (FramesManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Constants2 from "Constants" /* 5316 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8514 */;
-import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 8981 */;
-import FramesStore from "FramesStore" /* 8703 */;
+import Constants2 from "Constants" /* 5323 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8547 */;
+import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 9014 */;
+import FramesStore from "FramesStore" /* 9000 */;
 import Constants from "Constants" /* 1085 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6620 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

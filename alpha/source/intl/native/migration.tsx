@@ -1,15 +1,15 @@
-// Module ID: 13948
-// Function ID: 13949
+// Module ID: 9075
+// Function ID: 9076
 // Name: migration
-// Dependencies: [19, 21, 4890, 587, 558, 576, 4596, 4565, 1936, 1188, 2]
+// Dependencies: [19, 21, 4896, 587, 558, 576, 4602, 4571, 1936, 1188, 2]
 
-// Module 13948 (migration)
+// Module 9075 (migration)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef1936 from "module_1936" /* 1936 */;
-import LinkingDefault from "Linking" /* 4565 */;
+import LinkingDefault from "Linking" /* 4571 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((target) => {
   const cResult = obj.c(7);
   target = target.target;
   const children = target.children;
-  const tmp4 = closure_5(react.useContext(target(4596).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  const tmp4 = closure_5(react.useContext(target(4602).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
   if (typeof target === "string") {
     let tmp6;
     if (cResult[0] !== target) {
@@ -96,7 +96,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((target) => {
   target = target.target;
   const children = target.children;
   const tmp = target;
-  const tmp3 = closure_5(react.useContext(target(4596).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  const tmp3 = closure_5(react.useContext(target(4602).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
   if (typeof target === "string") {
     fn = function k() {
       const openURL = LinkingDefault.openURL;

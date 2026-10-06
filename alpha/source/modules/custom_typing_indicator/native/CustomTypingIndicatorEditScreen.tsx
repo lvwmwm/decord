@@ -1,18 +1,18 @@
-// Module ID: 15179
-// Function ID: 15180
+// Module ID: 15194
+// Function ID: 15195
 // Name: CustomTypingIndicatorEditScreen
-// Dependencies: [5, 32, 19, 17, 1377, 1085, 21, 4890, 587, 1385, 1126, 3725, 1490, 1491, 504, 4528, 6657, 1252, 11587, 1398, 5010, 4854, 15180, 1987, 15181, 7838, 7835, 6477, 5312, 14431, 8914, 11594, 5042, 4886, 15182, 6074, 5993, 2115, 5593, 5594, 8488, 7588, 15227, 9648, 2]
+// Dependencies: [5, 32, 19, 17, 1377, 1085, 21, 4896, 587, 1385, 1126, 3755, 1490, 1491, 504, 4534, 6664, 1252, 11600, 1398, 5016, 4860, 15195, 1987, 15196, 7849, 7846, 6484, 5319, 14447, 8943, 11607, 5048, 4892, 15197, 6081, 6000, 2115, 5600, 5601, 8521, 7599, 15242, 9661, 2]
 // Exports: default
 
-// Module 15179 (CustomTypingIndicatorEditScreen)
+// Module 15194 (CustomTypingIndicatorEditScreen)
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import user from "user" /* 1385 */;
 import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1398 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import openPremiumModalDefault from "openPremiumModal" /* 8914 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 11587 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import openPremiumModalDefault from "openPremiumModal" /* 8943 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 11600 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -20,7 +20,7 @@ import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1377 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4;
@@ -162,12 +162,12 @@ export default function CustomTypingIndicatorEditScreen() {
   const callback1 = first1.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { initialValue: first2, onChange };
-    obj.openLazy(asyncRequire(15180, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", obj2);
+    obj.openLazy(asyncRequire(15195, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", obj2);
   }, items4);
   const callback2 = first1.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { emojis: memo, initialAnimation: first3, onChange: onChange2 };
-    obj.openLazy(asyncRequire(15181, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
+    obj.openLazy(asyncRequire(15196, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
   }, items5);
   const ref = first1.useRef(null);
   const callback3 = first1.useCallback(() => {

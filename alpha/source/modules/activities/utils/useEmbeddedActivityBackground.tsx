@@ -1,9 +1,9 @@
-// Module ID: 9149
-// Function ID: 9150
+// Module ID: 9184
+// Function ID: 9185
 // Name: useEmbeddedActivityBackground
-// Dependencies: [32, 19, 558, 576, 7821, 2]
+// Dependencies: [32, 19, 558, 576, 7832, 2]
 
-// Module 9149 (useEmbeddedActivityBackground)
+// Module 9184 (useEmbeddedActivityBackground)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

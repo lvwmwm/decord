@@ -1,13 +1,13 @@
-// Module ID: 12262
-// Function ID: 12263
+// Module ID: 12277
+// Function ID: 12278
 // Name: UserSettingsAuthedAppDeleteWarningModal
-// Dependencies: [21, 558, 576, 11148, 1126, 12263, 9459, 5713, 2]
+// Dependencies: [21, 558, 576, 11161, 1126, 12278, 9472, 5720, 2]
 
-// Module 12262 (UserSettingsAuthedAppDeleteWarningModal)
+// Module 12277 (UserSettingsAuthedAppDeleteWarningModal)
 import intl7 from "intl" /* 1126 */;
-import InfoBox from "InfoBox" /* 9459 */;
-import isSocialLayerApplication from "isSocialLayerApplication" /* 11148 */;
-import shouldWarnAuthorizedAppTwoWayDefault from "shouldWarnAuthorizedAppTwoWay" /* 12263 */;
+import InfoBox from "InfoBox" /* 9472 */;
+import isSocialLayerApplication from "isSocialLayerApplication" /* 11161 */;
+import shouldWarnAuthorizedAppTwoWayDefault from "shouldWarnAuthorizedAppTwoWay" /* 12278 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -279,8 +279,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
             let obj2 = { variant: "destructive", text: tmp18, onPress: onDelete };
             cResult[15] = onDelete;
-            cResult[16] = closure_3(tmp(5713).AlertActionButton, obj2, "confirm");
-            const tmp21 = closure_3(tmp(5713).AlertActionButton, obj2, "confirm");
+            cResult[16] = closure_3(tmp(5720).AlertActionButton, obj2, "confirm");
+            const tmp21 = closure_3(tmp(5720).AlertActionButton, obj2, "confirm");
           } else {
             class S {
               constructor(arg0) {
@@ -356,7 +356,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
             }
             let obj3 = { variant: "secondary", text: intl3.string(tmp(1126).t["ETE/oC"]) };
-            const AlertActionButton = tmp(5713).AlertActionButton;
+            const AlertActionButton = tmp(5720).AlertActionButton;
             intl3 = tmp(1126).intl;
             const tmp23 = closure_3(AlertActionButton, obj3, "cancel");
             cResult[17] = tmp23;
@@ -518,8 +518,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           cResult[21] = tmp15;
           cResult[22] = tmp24;
           cResult[23] = tmp6;
-          cResult[24] = closure_3(tmp(5713).AlertModal, obj6);
-          const tmp29 = closure_3(tmp(5713).AlertModal, obj6);
+          cResult[24] = closure_3(tmp(5720).AlertModal, obj6);
+          const tmp29 = closure_3(tmp(5720).AlertModal, obj6);
         }
         cResult[11] = application;
         cResult[12] = tmp14;
@@ -693,7 +693,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[5] = tmp7Result;
     tmp6 = tmp7Result;
   }
-  const tmpResult = tmp(11148);
+  const tmpResult = tmp(11161);
   const result = tmpResult.isSocialLayerSDKAuthorization(application, scopes);
   cResult[0] = application;
   cResult[1] = scopes;
@@ -751,13 +751,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items[1] = tmp12;
   const obj8 = { title: formatToPlainStringResult, content: formatToPlainStringResult1, extraContent: hasOwnProperty(React3, { children: items }), actions: hasOwnProperty(React3, obj9) };
   obj9 = { children: items1 };
-  const AlertModal = tmp(5713).AlertModal;
+  const AlertModal = tmp(5720).AlertModal;
   const obj10 = { variant: "destructive", text: intl5.string(intl7.t.xUqheM), onPress: onDelete };
-  const AlertActionButton = tmp(5713).AlertActionButton;
+  const AlertActionButton = tmp(5720).AlertActionButton;
   intl5 = tmp(1126).intl;
   items1 = [_false(AlertActionButton, obj10, "confirm"), ];
   const obj11 = { variant: "secondary", text: intl6.string(intl7.t["ETE/oC"]) };
-  const AlertActionButton2 = tmp(5713).AlertActionButton;
+  const AlertActionButton2 = tmp(5720).AlertActionButton;
   intl6 = tmp(1126).intl;
   items1[1] = _false(AlertActionButton2, obj11, "cancel");
   return _false(AlertModal, obj8);

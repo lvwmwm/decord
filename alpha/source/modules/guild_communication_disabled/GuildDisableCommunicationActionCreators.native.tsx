@@ -1,14 +1,14 @@
-// Module ID: 11451
-// Function ID: 11452
+// Module ID: 11464
+// Function ID: 11465
 // Name: GuildDisableCommunicationActionCreators
-// Dependencies: [19, 1377, 21, 5093, 11452, 1987, 5708, 11455, 2]
+// Dependencies: [19, 1377, 21, 5099, 11465, 1987, 5715, 11468, 2]
 // Exports: openDisableCommunication, openEnableCommunication
 
-// Module 11451 (GuildDisableCommunicationActionCreators)
+// Module 11464 (GuildDisableCommunicationActionCreators)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5715 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1377 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ export const openDisableCommunication = function openDisableCommunication(userId
   if (null != user) {
     const obj2 = { guildId, user, cancelButtonCallback };
     const obj = ModalActionCreatorsDefault;
-    obj.pushLazy(asyncRequire(11452, dependencyMap.paths), obj2);
+    obj.pushLazy(asyncRequire(11465, dependencyMap.paths), obj2);
   }
 };
 export const openEnableCommunication = function openEnableCommunication(arg0) {
@@ -35,7 +35,7 @@ export const openEnableCommunication = function openEnableCommunication(arg0) {
       let guildId;
       let onCancel;
       let userId;
-      const promise = asyncRequire(11455, dependencyMap.paths);
+      const promise = asyncRequire(11468, dependencyMap.paths);
       return promise.then((result) => {
         let closure_0 = result.default;
         return (arg0) => {

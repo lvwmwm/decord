@@ -1,11 +1,11 @@
-// Module ID: 12008
-// Function ID: 12009
+// Module ID: 12023
+// Function ID: 12024
 // Name: GuildInvitesDisabledUtils
-// Dependencies: [11160, 4509, 1085, 558, 576, 504, 2]
+// Dependencies: [11173, 4515, 1085, 558, 576, 504, 2]
 
-// Module 12008 (GuildInvitesDisabledUtils)
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11160 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
+// Module 12023 (GuildInvitesDisabledUtils)
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11173 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

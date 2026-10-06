@@ -1,15 +1,15 @@
-// Module ID: 11501
-// Function ID: 11502
+// Module ID: 11514
+// Function ID: 11515
 // Name: AppealIngestionActivitySummary
-// Dependencies: [19, 17, 21, 4890, 558, 576, 11502, 2]
+// Dependencies: [19, 17, 21, 4896, 558, 576, 11515, 2]
 
-// Module 11501 (AppealIngestionActivitySummary)
+// Module 11514 (AppealIngestionActivitySummary)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ClassificationEvidenceDefault from "ClassificationEvidence" /* 11502 */;
+import ClassificationEvidenceDefault from "ClassificationEvidence" /* 11515 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 7600
-// Function ID: 7601
+// Module ID: 7611
+// Function ID: 7612
 // Name: InteractionStore
-// Dependencies: [32, 502, 2051, 1102, 5120, 1985, 6965, 504, 584, 2]
+// Dependencies: [32, 502, 2051, 1102, 5127, 5126, 6978, 504, 584, 2]
 
-// Module 7600 (InteractionStore)
+// Module 7611 (InteractionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import Server from "Server" /* 1985 */;
-import InteractionTypes from "InteractionTypes" /* 5120 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6965 */;
+import InteractionTypes from "InteractionTypes" /* 5126 */;
+import interactions_InteractionTypes from "interactions/InteractionTypes" /* 5127 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 6978 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
@@ -68,10 +68,10 @@ class InteractionStore extends Store {
     return obj;
   }
   canQueueInteraction(c1, arg1) {
-    let tmp2 = null != tmp && null != closure_8[tmp] && closure_8[tmp].state !== InteractionTypes.InteractionState.FAILED;
+    let tmp2 = null != tmp && null != closure_8[tmp] && closure_8[tmp].state !== interactions_InteractionTypes.InteractionState.FAILED;
     if (!tmp2) {
-      tmp2 = null != closure_8[arg1] && closure_8[arg1].state !== InteractionTypes.InteractionState.FAILED;
-      const tmp9 = null != closure_8[arg1] && closure_8[arg1].state !== InteractionTypes.InteractionState.FAILED;
+      tmp2 = null != closure_8[arg1] && closure_8[arg1].state !== interactions_InteractionTypes.InteractionState.FAILED;
+      const tmp9 = null != closure_8[arg1] && closure_8[arg1].state !== interactions_InteractionTypes.InteractionState.FAILED;
     }
     return !tmp2;
   }
@@ -132,8 +132,8 @@ let obj = {
       closure_9[messageId] = nonce;
       closure_10[nonce] = messageId;
     }
-    closure_8[nonce] = { state: InteractionTypes.InteractionState.QUEUED, data, onCreate, onCancel, onSuccess, onFailure };
-    ({ state: InteractionTypes.InteractionState.QUEUED, data, onCreate, onCancel, onSuccess, onFailure });
+    closure_8[nonce] = { state: interactions_InteractionTypes.InteractionState.QUEUED, data, onCreate, onCancel, onSuccess, onFailure };
+    ({ state: interactions_InteractionTypes.InteractionState.QUEUED, data, onCreate, onCancel, onSuccess, onFailure });
   },
   INTERACTION_CREATE: function handleInteractionCreate(nonce) {
     nonce = nonce.nonce;
@@ -142,8 +142,8 @@ let obj = {
     } else {
       if (null != closure_8[nonce]) {
         const tmp4 = require;
-        if (closure_8[nonce].state === InteractionTypes.InteractionState.QUEUED) {
-          closure_8[nonce].state = tmp4(5120).InteractionState.CREATED;
+        if (closure_8[nonce].state === interactions_InteractionTypes.InteractionState.QUEUED) {
+          closure_8[nonce].state = tmp4(5127).InteractionState.CREATED;
           const onCreate = tmp3.onCreate;
           if (onCreate != null) {
             onCreate(tmp);
@@ -194,7 +194,7 @@ let obj = {
         onFailure(errorCode, errorMessage, status, reasonCode);
       }
       const tmp7 = require;
-      if (closure_8[nonce].data.interactionType === Server.InteractionTypes.APPLICATION_COMMAND) {
+      if (closure_8[nonce].data.interactionType === InteractionTypes.InteractionTypes.APPLICATION_COMMAND) {
         if (null == closure_13[nonce]) {
           const tmp15 = closure_8[nonce];
           delete closure_8[nonce];
@@ -209,7 +209,7 @@ let obj = {
           delete closure_13[nonce];
         }
       } else {
-        const obj = { state: tmp7(5120).InteractionState.FAILED, errorCode, errorMessage, reasonCode };
+        const obj = { state: tmp7(5127).InteractionState.FAILED, errorCode, errorMessage, reasonCode };
         const merged = Object.assign(tmp21);
         closure_8[nonce] = obj;
       }
@@ -252,7 +252,7 @@ let obj = {
       while (tmp16 !== undefined) {
         let tmp5 = _slicedToArray(tmp2, 2);
         let first = tmp5[0];
-        if (tmp5[1].state === InteractionTypes.InteractionState.FAILED) {
+        if (tmp5[1].state === interactions_InteractionTypes.InteractionState.FAILED) {
           let tmp11 = deleteNonce(first);
         }
         continue;

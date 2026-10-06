@@ -1,9 +1,9 @@
-// Module ID: 16173
-// Function ID: 16174
+// Module ID: 16213
+// Function ID: 16214
 // Name: IAPUpsellActionSheet
-// Dependencies: [19, 1085, 2058, 2048, 21, 558, 576, 1112, 1126, 16174, 16175, 2]
+// Dependencies: [19, 1085, 2058, 2048, 21, 558, 576, 1112, 1126, 16214, 16215, 2]
 
-// Module 16173 (IAPUpsellActionSheet)
+// Module 16213 (IAPUpsellActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import router_utils from "router_utils" /* 1112 */;
@@ -59,8 +59,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
       return tmp12;
     }
-    markAsDismissed(16174);
-    const tmp16 = <tmp15 imageSource={markAsDismissed(16175)} header={tmp6} body={tmp7} cta={tmp8} onCTAPress={tmp4} markAsDismissed={markAsDismissed} />;
+    markAsDismissed(16214);
+    const tmp16 = <tmp15 imageSource={markAsDismissed(16215)} header={tmp6} body={tmp7} cta={tmp8} onCTAPress={tmp4} markAsDismissed={markAsDismissed} />;
     cResult[6] = tmp4;
     cResult[7] = markAsDismissed;
     cResult[8] = tmp16;
@@ -78,11 +78,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
 }) : ((arg0) => {
   let markAsDismissed;
   ({ guildId: require, markAsDismissed } = arg0);
-  markAsDismissed(16174);
+  markAsDismissed(16214);
   const intl = intl4.intl;
   const intl2 = intl4.intl;
   const intl3 = intl4.intl;
-  return <tmp imageSource={markAsDismissed(16175)} header={intl.string(intl4.t.rBw4cE)} body={intl2.string(intl4.t.mKHibc)} cta={intl3.string(intl4.t.RzWDqY)} onCTAPress={function onCTAPress() {
+  return <tmp imageSource={markAsDismissed(16215)} header={intl.string(intl4.t.rBw4cE)} body={intl2.string(intl4.t.mKHibc)} cta={intl3.string(intl4.t.RzWDqY)} onCTAPress={function onCTAPress() {
     const obj = router_utils;
     obj.transitionTo(Routes.CHANNEL(require, StaticChannelRoute.ROLE_SUBSCRIPTIONS));
     markAsDismissed(ContentDismissActionType.UNKNOWN);

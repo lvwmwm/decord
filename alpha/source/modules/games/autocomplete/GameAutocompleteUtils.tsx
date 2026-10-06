@@ -1,11 +1,11 @@
-// Module ID: 5894
-// Function ID: 5895
+// Module ID: 5901
+// Function ID: 5902
 // Name: GameAutocompleteUtils
-// Dependencies: [5895, 2]
+// Dependencies: [5902, 2]
 // Exports: isGameAutocompleteResultAllowedInGameWidgets, normalizeGameAutocompleteQuery, shouldSuppressAutocompleteFetch
 
-// Module 5894 (GameAutocompleteUtils)
-import GameWidgetLimits from "GameWidgetLimits" /* 5895 */;
+// Module 5901 (GameAutocompleteUtils)
+import GameWidgetLimits from "GameWidgetLimits" /* 5902 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/games/autocomplete/GameAutocompleteUtils.tsx");
@@ -23,11 +23,11 @@ export const shouldSuppressAutocompleteFetch = function shouldSuppressAutocomple
   }
   return false;
 };
-export const normalizeGameAutocompleteQuery = function normalizeGameAutocompleteQuery(query) {
-  if (null == query) {
+export const normalizeGameAutocompleteQuery = function normalizeGameAutocompleteQuery(name) {
+  if (null == name) {
     return null;
   } else {
-    const str = query.trim();
+    const str = name.trim();
     const formatted = str.toLowerCase();
     const replaced = formatted.replaceAll("_", " ");
     const substr = replaced.slice(0, 100);

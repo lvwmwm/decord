@@ -1,14 +1,14 @@
-// Module ID: 13579
-// Function ID: 13580
+// Module ID: 13595
+// Function ID: 13596
 // Name: NUFChannelsActionSheet
-// Dependencies: [19, 2048, 21, 558, 576, 4854, 13580, 1126, 13587, 6645, 2]
+// Dependencies: [19, 2048, 21, 558, 576, 4860, 13596, 1126, 13603, 6652, 2]
 
-// Module 13579 (NUFChannelsActionSheet)
+// Module 13595 (NUFChannelsActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import NUFChannelIllustrationDefault from "NUFChannelIllustration" /* 13580 */;
-import NUFTemplateV2Default from "NUFTemplateV2" /* 13587 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import NUFChannelIllustrationDefault from "NUFChannelIllustration" /* 13596 */;
+import NUFTemplateV2Default from "NUFTemplateV2" /* 13603 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -95,7 +95,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
     }
     return tmp20;
   }
-  const tmp21 = jsx(tmp(6645).BottomSheet, { onDismiss: tmp5, startExpanded: true, children: tmp16 });
+  const tmp21 = jsx(tmp(6652).BottomSheet, { onDismiss: tmp5, startExpanded: true, children: tmp16 });
   cResult[10] = tmp5;
   cResult[11] = tmp16;
   cResult[12] = tmp21;
@@ -113,7 +113,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
       tmp2(ContentDismissActionType.UNKNOWN);
     }
   }, items);
-  BottomSheet = markAsDismissed(6645).BottomSheet;
+  BottomSheet = markAsDismissed(6652).BottomSheet;
   ({ illustration: null, title: intl.string(markAsDismissed(1126).t.Ay9424), description: intl2.string(markAsDismissed(1126).t.mufH2P), CTALabel: intl3.string(markAsDismissed(1126).t.BddRzS), onCTAPress: callback });
   const tmp2 = NUFTemplateV2Default;
   intl = markAsDismissed(1126).intl;

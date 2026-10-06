@@ -1,16 +1,16 @@
-// Module ID: 14369
-// Function ID: 14370
+// Module ID: 14387
+// Function ID: 14388
 // Name: RPCServer
-// Dependencies: [5, 5316, 1085, 12, 9032, 9026, 14343, 1252, 38, 8975, 1102, 2]
+// Dependencies: [5, 5323, 1085, 12, 9065, 9059, 14361, 1252, 38, 9008, 1102, 2]
 
-// Module 14369 (RPCServer)
+// Module 14387 (RPCServer)
 import _modDef12 from "module_12" /* 12 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Constants2 from "Constants" /* 5316 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 8975 */;
-import RPCErrorDefault from "RPCError" /* 9026 */;
-import transformUserDefault from "transformUser" /* 9032 */;
-import validateScopeDefault from "validateScope" /* 14343 */;
+import Constants2 from "Constants" /* 5323 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 9008 */;
+import RPCErrorDefault from "RPCError" /* 9059 */;
+import transformUserDefault from "transformUser" /* 9065 */;
+import validateScopeDefault from "validateScope" /* 14361 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;

@@ -1,21 +1,21 @@
-// Module ID: 15810
-// Function ID: 15811
+// Module ID: 15847
+// Function ID: 15848
 // Name: ParentalControlsGoreMediaFiltersFriendsDMsSetting
-// Dependencies: [7048, 7634, 558, 576, 14625, 7109, 14629, 14634, 1126, 1197, 11129, 2]
+// Dependencies: [7061, 7645, 558, 576, 14641, 7122, 14645, 14650, 1126, 1197, 11142, 2]
 
-// Module 15810 (ParentalControlsGoreMediaFiltersFriendsDMsSetting)
+// Module 15847 (ParentalControlsGoreMediaFiltersFriendsDMsSetting)
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14625 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 14629 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7048 */;
+import SettingsConstants from "SettingsConstants" /* 7645 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14641 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 14645 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7061 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 11142 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ExplicitMediaRedactionUtils = tmp(7109);
+const ExplicitMediaRedactionUtils = tmp(7122);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 function getTitle() {
   const intl = intl3.intl;
@@ -69,7 +69,7 @@ let obj = {
     let items;
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
     if (null != selectedTeenId) {
-      let obj = selectedTeenId(14629);
+      let obj = selectedTeenId(14645);
       const goreContentFriendDm = obj.getGoreContentSettingOrDefault(selectedTeenId).goreContentFriendDm;
       let obj2 = {
         title: intl.string(selectedTeenId(1126).t["16/3Bi"]),
@@ -82,8 +82,8 @@ let obj = {
         currentValue: goreContentFriendDm,
         excluded: items
       };
-      const handleSensitiveMediaFilterPress = selectedTeenId(14634).handleSensitiveMediaFilterPress;
-      selectedTeenId(14634);
+      const handleSensitiveMediaFilterPress = selectedTeenId(14650).handleSensitiveMediaFilterPress;
+      selectedTeenId(14650);
       intl = selectedTeenId(1126).intl;
       intl2 = selectedTeenId(1126).intl;
       items = [selectedTeenId(1197).ExplicitContentRedaction.SHOW];

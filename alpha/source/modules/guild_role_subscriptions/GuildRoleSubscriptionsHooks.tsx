@@ -1,20 +1,20 @@
-// Module ID: 15030
-// Function ID: 15031
+// Module ID: 15045
+// Function ID: 15046
 // Name: GuildRoleSubscriptionsHooks
-// Dependencies: [5, 32, 19, 5436, 4502, 558, 576, 504, 6758, 5973, 15031, 15032, 11832, 1375, 2]
+// Dependencies: [5, 32, 19, 5443, 4508, 558, 576, 504, 6768, 5980, 15046, 15047, 11846, 1375, 2]
 // Exports: useCreateSubscriptionGroupListing, useDeleteSubscriptionGroupListing, useDeleteSubscriptionListing, useFetchSubscriptionsSettings, usePublishSubscriptionListing, useUpdateSubscriptionGroupListing, useUpdateSubscriptionsSettings, useUpdateSubscriptionsTrial
 
-// Module 15030 (GuildRoleSubscriptionsHooks)
+// Module 15045 (GuildRoleSubscriptionsHooks)
 import react2 from "react" /* 576 */;
 import GlobalUtils from "GlobalUtils" /* 1375 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4502 */;
-import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6758 */;
-import useRequestDefault from "useRequest" /* 11832 */;
-import subscriptionUtils from "subscriptionUtils" /* 15032 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4508 */;
+import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6768 */;
+import useRequestDefault from "useRequest" /* 11846 */;
+import subscriptionUtils from "subscriptionUtils" /* 15047 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5443 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -1343,7 +1343,7 @@ export const usePublishSubscriptionListing = function usePublishSubscriptionList
                 ({ guildId: c0, groupListingId: c1, listingId: c2 } = closure_0);
                 c5 = 1;
                 c6 = 1;
-                return { value: "Set", done: true };
+                return { value: "Reflect", done: true };
               }
             } else if (1 === c5) {
               if (arg0 === 1) {

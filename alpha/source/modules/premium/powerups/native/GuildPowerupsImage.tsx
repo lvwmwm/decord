@@ -1,17 +1,17 @@
-// Module ID: 12180
-// Function ID: 12181
+// Module ID: 12195
+// Function ID: 12196
 // Name: GuildPowerupsImage
-// Dependencies: [4879, 21, 4890, 558, 576, 504, 1370, 8465, 5974, 2]
+// Dependencies: [4885, 21, 4896, 558, 576, 504, 1370, 8498, 5981, 2]
 
-// Module 12180 (GuildPowerupsImage)
+// Module 12195 (GuildPowerupsImage)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import APNGDecorationNativeComponentDefault from "APNGDecorationNativeComponent" /* 8465 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import createStyles from "createStyles" /* 4890 */;
+import FastImageDefault from "FastImage" /* 5981 */;
+import APNGDecorationNativeComponentDefault from "APNGDecorationNativeComponent" /* 8498 */;
+import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 6685
-// Function ID: 6686
+// Module ID: 6692
+// Function ID: 6693
 // Name: useRoleIconProps
-// Dependencies: [19, 2106, 2074, 558, 576, 504, 6686, 2]
+// Dependencies: [19, 2106, 2074, 558, 576, 504, 6693, 2]
 // Exports: computeRoleIconRole, getRoleIconProps
 
-// Module 6685 (useRoleIconProps)
-import RoleIconUtils from "RoleIconUtils" /* 6686 */;
+// Module 6692 (useRoleIconProps)
+import RoleIconUtils from "RoleIconUtils" /* 6693 */;
 import react from "react" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2106 */;
 import GuildStore from "GuildStore" /* 2074 */;

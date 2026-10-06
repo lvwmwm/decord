@@ -1,18 +1,18 @@
-// Module ID: 16334
-// Function ID: 16335
+// Module ID: 16374
+// Function ID: 16375
 // Name: YouBarButton
-// Dependencies: [19, 17, 14899, 21, 4890, 587, 558, 576, 8469, 7503, 7575, 2]
+// Dependencies: [19, 17, 14915, 21, 4896, 587, 558, 576, 8502, 7514, 7586, 2]
 
-// Module 16334 (YouBarButton)
+// Module 16374 (YouBarButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import shared_components_BadgeDefault from "shared_components/Badge" /* 7503 */;
-import ClipViewDefault from "ClipView" /* 8469 */;
+import shared_components_BadgeDefault from "shared_components/Badge" /* 7514 */;
+import ClipViewDefault from "ClipView" /* 8502 */;
 import react from "react" /* 19 */;
-import YouBarConstants from "YouBarConstants" /* 14899 */;
+import YouBarConstants from "YouBarConstants" /* 14915 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,8 +24,8 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const IconButton2 = tmp(7575);
-const ClipView = tmp(8469);
+const IconButton2 = tmp(7586);
+const ClipView = tmp(8502);
 const View = react_native.View;
 ({ YOU_BAR_BUTTON_HIT_SLOP: hasOwnProperty, YOU_BAR_BUTTON_ICON_SIZE: metroRequire } = YouBarConstants);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -133,7 +133,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return tmp6;
   }
-  const rect = { position: "absolute", left: sum, top: sum1, right: "concat", bottom: "lj", padding: "key", minWidth: "userId" };
+  const rect = { position: "absolute", left: sum, top: sum1, right: "concat", bottom: "TypeError", padding: "keys", minWidth: "ind" };
   cResult[0] = sum;
   cResult[1] = sum1;
   cResult[2] = rect;
@@ -151,7 +151,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const items = [size, badgeSize, num2, num];
   return react.useMemo(() => {
-    const rect = { position: "absolute", left: size - badgeSize + num, top: size - badgeSize + num2, right: "concat", bottom: "lj", padding: "key", minWidth: "userId" };
+    const rect = { position: "absolute", left: size - badgeSize + num, top: size - badgeSize + num2, right: "concat", bottom: "TypeError", padding: "keys", minWidth: "ind" };
     return rect;
   }, items);
 });

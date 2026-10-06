@@ -1,12 +1,12 @@
-// Module ID: 9717
-// Function ID: 9718
+// Module ID: 9730
+// Function ID: 9731
 // Name: useMyCurrentStageChannelRole
-// Dependencies: [502, 2103, 5578, 558, 576, 504, 2]
+// Dependencies: [502, 2103, 5585, 558, 576, 504, 2]
 
-// Module 9717 (useMyCurrentStageChannelRole)
+// Module 9730 (useMyCurrentStageChannelRole)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5578 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5585 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

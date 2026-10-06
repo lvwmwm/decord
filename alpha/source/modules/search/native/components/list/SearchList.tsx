@@ -1,38 +1,39 @@
-// Module ID: 16820
-// Function ID: 16821
+// Module ID: 16841
+// Function ID: 16842
 // Name: SearchList
-// Dependencies: [19, 17, 7513, 21, 4890, 16821, 16822, 16823, 16838, 16817, 16840, 16842, 16837, 16824, 16843, 16847, 16848, 16851, 16852, 16853, 16854, 16855, 16856, 16806, 16868, 558, 576, 1618, 16808, 1126, 8371, 2]
+// Dependencies: [19, 17, 7524, 21, 4896, 16842, 16843, 16844, 16859, 16838, 16861, 16863, 16858, 16845, 16864, 16868, 16869, 16872, 16873, 16874, 16875, 16876, 16877, 16827, 16892, 558, 576, 1618, 16829, 1126, 8404, 16893, 2]
 
-// Module 16820 (SearchList)
+// Module 16841 (SearchList)
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 8371 */;
-import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 16806 */;
-import MediaGridPlaceholderDefault from "MediaGridPlaceholder" /* 16817 */;
-import DMRowDefault from "DMRow" /* 16821 */;
-import rows_GroupDMRowDefault from "rows/GroupDMRow" /* 16822 */;
-import SearchHistoryRowDefault from "SearchHistoryRow" /* 16823 */;
-import GuildVoiceOrStageChannelRowDefault from "GuildVoiceOrStageChannelRow" /* 16824 */;
-import GuildTextChannelRowDefault from "GuildTextChannelRow" /* 16837 */;
-import MediaGridItemDefault from "MediaGridItem" /* 16838 */;
-import FileOrLinkGridPlaceholderDefault from "FileOrLinkGridPlaceholder" /* 16840 */;
-import MediaGridDefault from "MediaGrid" /* 16842 */;
-import MessageRowDefault from "MessageRow" /* 16843 */;
-import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 16847 */;
-import LinkGridItemDefault from "LinkGridItem" /* 16848 */;
-import FileGridItemDefault from "FileGridItem" /* 16851 */;
-import GuildChannelMemberRowDefault from "GuildChannelMemberRow" /* 16852 */;
-import MemberRowPlaceholderDefault from "MemberRowPlaceholder" /* 16853 */;
-import GenericTextRowDefault from "GenericTextRow" /* 16854 */;
-import SearchListSectionDefault from "SearchListSection" /* 16855 */;
-import SmartSearchRowDefault from "SmartSearchRow" /* 16856 */;
-import SuggestedSearchSkeletonDefault from "SuggestedSearchSkeleton" /* 16868 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 8404 */;
+import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 16827 */;
+import MediaGridPlaceholderDefault from "MediaGridPlaceholder" /* 16838 */;
+import DMRowDefault from "DMRow" /* 16842 */;
+import rows_GroupDMRowDefault from "rows/GroupDMRow" /* 16843 */;
+import SearchHistoryRowDefault from "SearchHistoryRow" /* 16844 */;
+import GuildVoiceOrStageChannelRowDefault from "GuildVoiceOrStageChannelRow" /* 16845 */;
+import GuildTextChannelRowDefault from "GuildTextChannelRow" /* 16858 */;
+import MediaGridItemDefault from "MediaGridItem" /* 16859 */;
+import FileOrLinkGridPlaceholderDefault from "FileOrLinkGridPlaceholder" /* 16861 */;
+import MediaGridDefault from "MediaGrid" /* 16863 */;
+import MessageRowDefault from "MessageRow" /* 16864 */;
+import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 16868 */;
+import LinkGridItemDefault from "LinkGridItem" /* 16869 */;
+import FileGridItemDefault from "FileGridItem" /* 16872 */;
+import GuildChannelMemberRowDefault from "GuildChannelMemberRow" /* 16873 */;
+import MemberRowPlaceholderDefault from "MemberRowPlaceholder" /* 16874 */;
+import GenericTextRowDefault from "GenericTextRow" /* 16875 */;
+import SearchListSectionDefault from "SearchListSection" /* 16876 */;
+import SmartSearchRowDefault from "SmartSearchRow" /* 16877 */;
+import SuggestedSearchSkeletonDefault from "SuggestedSearchSkeleton" /* 16892 */;
+import smartSearchViewabilityConfig from "smartSearchViewabilityConfig" /* 16893 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SearchConstants from "SearchConstants" /* 7513 */;
+import SearchConstants from "SearchConstants" /* 7524 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +44,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp6;
-const ErrorScreenDefault = tmp6(16808);
+const ErrorScreenDefault = tmp6(16829);
 function keyExtractor(type) {
   let key;
   const type2 = type.type;
@@ -342,8 +343,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
         }
       }
     }
-    const obj6 = { ref, overrideProps: tmp14, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "handled", data, renderItem, onEndReachedThreshold: num, onEndReached, scrollsToTop: true, contentContainerStyle: tmp16, keyExtractor, getItemType, ListHeaderComponent, ListFooterComponent, ItemSeparatorComponent, numColumns };
-    const tmp23 = metroImportAll(defaultMVCPConfig.AnimatedFlashList, obj6);
+    const obj6 = { ref, overrideProps: tmp14, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "handled", data, renderItem, onEndReachedThreshold: num, onEndReached, scrollsToTop: true, contentContainerStyle: tmp16, keyExtractor, getItemType, ListHeaderComponent, ListFooterComponent, ItemSeparatorComponent, numColumns, viewabilityConfigCallbackPairs: smartSearchViewabilityConfig.smartSearchViewabilityConfig };
+    const AnimatedFlashList = tmp(8404).AnimatedFlashList;
+    const tmp23 = metroImportAll(AnimatedFlashList, obj6);
     cResult[7] = ItemSeparatorComponent;
     cResult[8] = ListFooterComponent;
     cResult[9] = ListHeaderComponent;
@@ -404,7 +406,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     tmp8 = metroImportAll(tmp7, obj2);
   }
   items = [tmp8, ];
-  const obj4 = { ref, overrideProps: obj5, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "handled", data, renderItem, onEndReachedThreshold: num, onEndReached, scrollsToTop: true, contentContainerStyle: obj6, keyExtractor, getItemType, ListHeaderComponent, ListFooterComponent, ItemSeparatorComponent, numColumns };
+  const obj4 = { ref, overrideProps: obj5, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "handled", data, renderItem, onEndReachedThreshold: num, onEndReached, scrollsToTop: true, contentContainerStyle: obj6, keyExtractor, getItemType, ListHeaderComponent, ListFooterComponent, ItemSeparatorComponent, numColumns, viewabilityConfigCallbackPairs: smartSearchViewabilityConfig.smartSearchViewabilityConfig };
   obj5 = undefined;
   const AnimatedFlashList = defaultMVCPConfig.AnimatedFlashList;
   const tmp13 = metroImportAll;

@@ -1,27 +1,27 @@
-// Module ID: 16295
-// Function ID: 16296
+// Module ID: 16335
+// Function ID: 16336
 // Name: GuildsBarUnreadBars
-// Dependencies: [32, 19, 17, 7121, 4699, 5616, 16222, 14899, 21, 4890, 6569, 558, 576, 1618, 14892, 14901, 551, 568, 504, 4612, 16296, 2]
+// Dependencies: [32, 19, 17, 7134, 4705, 5623, 16262, 14915, 21, 4896, 6576, 558, 576, 1618, 14908, 14917, 551, 568, 504, 4618, 16336, 2]
 
-// Module 16295 (GuildsBarUnreadBars)
+// Module 16335 (GuildsBarUnreadBars)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import debounceDefault from "debounce" /* 551 */;
 import react2 from "react" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 5616 */;
-import FastList from "FastList" /* 6569 */;
-import QuestHooks from "QuestHooks" /* 14892 */;
-import useYouBarTotalHeight2 from "useYouBarTotalHeight" /* 14901 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 5623 */;
+import FastList from "FastList" /* 6576 */;
+import QuestHooks from "QuestHooks" /* 14908 */;
+import useYouBarTotalHeight2 from "useYouBarTotalHeight" /* 14917 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7121 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 16222 */;
-import YouBarConstants from "YouBarConstants" /* 14899 */;
-import createStyles from "createStyles" /* 4890 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7134 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 16262 */;
+import YouBarConstants from "YouBarConstants" /* 14915 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -149,7 +149,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               ({ section, item: item2 } = tmp4);
             }
             let type = tmp4.type;
-            if (tmp41(6569).FastListItemTypes.SECTION === type) {
+            if (tmp41(6576).FastListItemTypes.SECTION === type) {
               let node = guildsTree.getNode(tmp4.recyclerKey);
               let element = node;
               if (null != node) {
@@ -173,7 +173,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               }
               continue;
             } else {
-              if (tmp41(6569).FastListItemTypes.ITEM === type) {
+              if (tmp41(6576).FastListItemTypes.ITEM === type) {
                 let node1 = guildsTree.getNode(tmp4.recyclerKey);
                 let tmp12 = node1;
                 if (null != node1) {
@@ -233,7 +233,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               }
               return tmp37;
             }
-            let obj6 = { beforeItem: obj7, afterItem: "r" };
+            let obj6 = { beforeItem: obj7, afterItem: "Array" };
             obj7 = { section: sum, row: tmp32.item, mention: true };
             return obj6;
           }
@@ -252,8 +252,8 @@ const GuildsNodeType = SortedGuildStore2.GuildsNodeType;
 const jsx = Fragment.jsx;
 let obj = { wrapper: { position: "absolute", top: 0, left: 0, bottom: 0, width: GUILD_LIST_WIDTH } };
 let closure_15 = createStyles.createStyles(obj);
-let closure_17 = { beforeItem: "Array", afterItem: "Set" };
-let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "r" };
+let closure_17 = { beforeItem: "start", afterItem: "unicodeVersion" };
+let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "Array" };
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj = react2;
@@ -398,7 +398,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
           }
           const effect = obj2.useEffect(tmp12, tmp13);
           const scrollPosValue = fastList.scrollPosValue;
-          const tmpResult = tmp(4612);
+          const tmpResult = tmp(4618);
           class C {
             constructor() {
               return scrollPosValue.get();
@@ -417,10 +417,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
             }
           }
           const useAnimatedReaction = tmpResult.useAnimatedReaction;
-          B.__closure = { runOnJS: tmp(4612).runOnJS, debouncedUpdate: tmp10 };
+          B.__closure = { runOnJS: tmp(4618).runOnJS, debouncedUpdate: tmp10 };
           B.__workletHash = 13727289405147;
           B.__initData = __initData2;
-          const obj4 = { runOnJS: tmp(4612).runOnJS, debouncedUpdate: tmp10 };
+          const obj4 = { runOnJS: tmp(4618).runOnJS, debouncedUpdate: tmp10 };
           const animatedReaction = useAnimatedReaction(C, B);
           const tmp20 = closure_20();
           ({ style, paddingStart } = tmp20);
@@ -591,7 +591,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
     };
   }, items1);
   const scrollPosValue = fastList.scrollPosValue;
-  let obj = fastList(4612);
+  let obj = fastList(4618);
   class M {
     constructor() {
       return scrollPosValue.get();
@@ -608,10 +608,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((f
       }
     }
   }
-  O.__closure = { runOnJS: fastList(4612).runOnJS, debouncedUpdate: memo };
+  O.__closure = { runOnJS: fastList(4618).runOnJS, debouncedUpdate: memo };
   O.__workletHash = 3399641848221;
   O.__initData = __initData4;
-  ({ runOnJS: fastList(4612).runOnJS, debouncedUpdate: memo });
+  ({ runOnJS: fastList(4618).runOnJS, debouncedUpdate: memo });
   const animatedReaction = obj.useAnimatedReaction(M, O);
   const tmp7 = closure_20();
   paddingStart = tmp7.paddingStart;

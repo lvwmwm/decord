@@ -1,10 +1,10 @@
-// Module ID: 13055
-// Function ID: 13056
+// Module ID: 13074
+// Function ID: 13075
 // Name: useEmbeddedActivityParticipantAvatarUris
 // Dependencies: [19, 2050, 1377, 1375, 558, 576, 573, 2]
 // Exports: getEmbeddedActivityParticipantAvatarUris
 
-// Module 13055 (useEmbeddedActivityParticipantAvatarUris)
+// Module 13074 (useEmbeddedActivityParticipantAvatarUris)
 import GlobalUtils from "GlobalUtils" /* 1375 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;

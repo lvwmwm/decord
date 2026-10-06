@@ -1,25 +1,25 @@
-// Module ID: 9615
-// Function ID: 9616
+// Module ID: 9628
+// Function ID: 9629
 // Name: FocusedControlsBottomControls
-// Dependencies: [32, 19, 17, 9050, 9051, 1085, 21, 1369, 4890, 587, 5915, 1188, 558, 576, 1618, 4612, 9616, 1105, 1126, 6649, 4891, 6140, 9618, 1484, 9077, 1121, 4589, 4729, 5773, 9619, 2]
+// Dependencies: [32, 19, 17, 9086, 9087, 1085, 21, 1369, 4896, 587, 5922, 1188, 558, 576, 1618, 4618, 9629, 1105, 1126, 6656, 4897, 6147, 9631, 1484, 9113, 1121, 4595, 4735, 5780, 9632, 2]
 
-// Module 9615 (FocusedControlsBottomControls)
+// Module 9628 (FocusedControlsBottomControls)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import native from "native" /* 1188 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import CallPTTButtonDefault from "CallPTTButton" /* 9619 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import timing from "timing" /* 4897 */;
+import CallPTTButtonDefault from "CallPTTButton" /* 9632 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelCallStore from "ChannelCallStore" /* 9050 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 9051 */;
+import ChannelCallStore from "ChannelCallStore" /* 9086 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 9087 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import TextStyles from "TextStyles" /* 5915 */;
+import createStyles_mod from "createStyles" /* 4896 */;
+import TextStyles from "TextStyles" /* 5922 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ let obj3;
 let rect;
 let tmp;
 let unpackModuleId;
-const CallPTTButton = tmp(9619);
+const CallPTTButton = tmp(9632);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, TouchableWithoutFeedback: metroRequire, ScrollView: metroImportDefault, StyleSheet } = react_native);
 ({ clearFocusTimer: metroImportAll, resetFocusTimer: c9 } = ChannelCallStore);
@@ -286,7 +286,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
   const cResult = obj.c(8);
   positionY = positionY.positionY;
   const tmp4 = closure_19();
-  const obj2 = positionY(9616);
+  const obj2 = positionY(9629);
   const canShowTooltip = obj2.useCanShowTooltip(positionY(1105).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
   const fn = function o() {
     const obj = { opacity: 1 - Math.min(-1 * positionY.get() / c16, 1) };
@@ -296,7 +296,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
   fn.__closure = obj4;
   fn.__workletHash = 15386908151356;
   fn.__initData = __initData3;
-  const obj3 = positionY(4612);
+  const obj3 = positionY(4618);
   const animatedStyle = obj3.useAnimatedStyle(fn);
   if (canShowTooltip) {
     let first;
@@ -348,9 +348,9 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
   let obj7;
   positionY = positionY.positionY;
   const tmp = closure_19();
-  let obj = positionY(9616);
+  let obj = positionY(9629);
   const canShowTooltip = obj.useCanShowTooltip(positionY(1105).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
-  positionY(4612);
+  positionY(4618);
   const fn = function o() {
     const obj = { opacity: 1 - Math.min(-1 * positionY.get() / c16, 1) };
     return obj;
@@ -398,7 +398,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
   fn.__closure = obj3;
   fn.__workletHash = 16821998405506;
   fn.__initData = __initData5;
-  const obj2 = positionY(4612);
+  const obj2 = positionY(4618);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   if (cResult[0] !== isExpanded) {
     obj4 = { expanded: isExpanded };
@@ -418,7 +418,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
     tmp7 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp13 = closure_13(tmp(6649).ActionSheetHeaderBar, {});
+    const tmp13 = closure_13(tmp(6656).ActionSheetHeaderBar, {});
     cResult[4] = tmp13;
     tmp11 = tmp13;
   } else {
@@ -468,7 +468,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
   if (tmp15) {
     const obj8 = { style: items1, children: aboveActionBar };
     items1 = [tmp4.aboveActionBarChildrenContainer, animatedStyle];
-    tmp15 = closure_13(offsetY(4612).View, obj8);
+    tmp15 = closure_13(offsetY(4618).View, obj8);
   }
   cResult[5] = aboveActionBar;
   cResult[6] = animatedStyle;
@@ -487,7 +487,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
   const aboveActionBar = positionY.aboveActionBar;
   ({ onPressHeader, isExpanded } = positionY);
   const tmp = closure_19();
-  let obj = positionY(4612);
+  let obj = positionY(4618);
   const fn = function u() {
     const obj = { opacity: 2 - Math.max(Math.abs(positionY.get()) / (offsetY / 3 - c16), 0) };
     return obj;
@@ -499,7 +499,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
   const obj3 = { accessible: true, onPress: onPressHeader, accessibilityRole: "button", accessibilityLabel: "Group DM", accessibilityHint: "Press to start a new conversation", accessibilityState: { expanded: isExpanded }, children: tmp6(tmp7, obj4) };
   obj4 = { style: tmp.aboveActionBarContainer, children: items };
   const animatedStyle = obj.useAnimatedStyle(fn);
-  items = [closure_13(closure_27, { positionY }), closure_13(positionY(6649).ActionSheetHeaderBar, {}), ];
+  items = [closure_13(closure_27, { positionY }), closure_13(positionY(6656).ActionSheetHeaderBar, {}), ];
   let tmp4Result = null != aboveActionBar;
   const tmp5 = closure_6;
   tmp6 = closure_14;
@@ -507,7 +507,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
   if (tmp4Result) {
     obj5 = { style: items1, children: aboveActionBar };
     items1 = [tmp.aboveActionBarChildrenContainer, animatedStyle];
-    tmp4Result = tmp4(offsetY(4612).View, obj5);
+    tmp4Result = tmp4(offsetY(4618).View, obj5);
   }
   items[2] = tmp4Result;
   return closure_13(tmp5, obj3);

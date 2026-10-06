@@ -1,12 +1,12 @@
-// Module ID: 5095
-// Function ID: 5096
+// Module ID: 5101
+// Function ID: 5102
 // Name: getDeprecatedModalData
-// Dependencies: [4879, 1085, 2]
+// Dependencies: [4885, 1085, 2]
 // Exports: default
 
-// Module 5095 (getDeprecatedModalData)
+// Module 5101 (getDeprecatedModalData)
 import Constants from "Constants" /* 1085 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 4885 */;
 import size from "module_2" /* 2 */;
 
 const ModalAnimation = Constants.ModalAnimation;

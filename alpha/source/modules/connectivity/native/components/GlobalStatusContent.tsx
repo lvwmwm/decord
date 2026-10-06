@@ -1,26 +1,26 @@
-// Module ID: 9613
-// Function ID: 9614
+// Module ID: 9626
+// Function ID: 9627
 // Name: GlobalStatusContent
-// Dependencies: [19, 17, 2051, 2074, 4913, 4908, 9608, 1085, 21, 4890, 587, 558, 576, 9445, 504, 9082, 9606, 4791, 4729, 5912, 4736, 9056, 1369, 1618, 9060, 9614, 2]
+// Dependencies: [19, 17, 2051, 2074, 4919, 4914, 9621, 1085, 21, 4896, 587, 558, 576, 9458, 504, 9118, 9619, 4797, 4735, 5919, 4742, 9092, 1369, 1618, 9096, 9627, 2]
 
-// Module 9613 (GlobalStatusContent)
+// Module 9626 (GlobalStatusContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import useThemeDefault from "useTheme" /* 4791 */;
-import StatusBarDefault from "StatusBar" /* 9060 */;
-import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 9082 */;
-import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 9445 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 9606 */;
-import ConnectivityConstants from "ConnectivityConstants" /* 9608 */;
-import GlobalStageChannelStatusDefault from "GlobalStageChannelStatus" /* 9614 */;
+import useThemeDefault from "useTheme" /* 4797 */;
+import StatusBarDefault from "StatusBar" /* 9096 */;
+import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 9118 */;
+import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 9458 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 9619 */;
+import ConnectivityConstants from "ConnectivityConstants" /* 9621 */;
+import GlobalStageChannelStatusDefault from "GlobalStageChannelStatus" /* 9627 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
-import SessionsStore from "SessionsStore" /* 4908 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
+import SessionsStore from "SessionsStore" /* 4914 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj3;
 let tmp2;
 let unpackModuleId;
 const useSafeAreaInsetsDefault = tmp2(1618);
-const ChannelCallModalDefault = tmp2(9056);
+const ChannelCallModalDefault = tmp2(9092);
 const View = react_native.View;
 const RTC_PANEL_HEIGHT = ConnectivityConstants.RTC_PANEL_HEIGHT;
 const RTCConnectionStates = Constants.RTCConnectionStates;
@@ -180,7 +180,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               let isModalOpenResult = isScreenLandscape;
               if (isModalOpenResult) {
                 const tmpResult7 = require("NavigationRouteUtils");
-                isModalOpenResult = tmpResult7.isModalOpen(tmp5(9056));
+                isModalOpenResult = tmpResult7.isModalOpen(tmp5(9092));
               }
               if (isModalOpenResult) {
                 const tmpResult8 = require("PlatformUtils");

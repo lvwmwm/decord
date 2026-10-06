@@ -1,12 +1,12 @@
-// Module ID: 9039
-// Function ID: 9040
+// Module ID: 9073
+// Function ID: 9074
 // Name: LocationMetadataStore
-// Dependencies: [5105, 504, 584, 2]
+// Dependencies: [5111, 504, 584, 2]
 
-// Module 9039 (LocationMetadataStore)
+// Module 9073 (LocationMetadataStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 5105 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5111 */;
 import size from "module_2" /* 2 */;
 
 let _window;

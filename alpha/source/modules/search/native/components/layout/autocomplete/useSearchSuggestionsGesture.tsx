@@ -1,12 +1,12 @@
-// Module ID: 16789
-// Function ID: 16790
+// Module ID: 16810
+// Function ID: 16811
 // Name: useSearchSuggestionsGesture
-// Dependencies: [19, 558, 576, 4612, 11966, 6140, 2]
+// Dependencies: [19, 558, 576, 4618, 11980, 6147, 2]
 
-// Module 16789 (useSearchSuggestionsGesture)
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11966 */;
+// Module 16810 (useSearchSuggestionsGesture)
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6147 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11980 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -135,7 +135,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       const measureResult = obj.measure(animatedRef1);
                       const tmp3 = require;
                       if (null != measureResult) {
-                        const tmp3Result = tmp3(4612);
+                        const tmp3Result = tmp3(4618);
                         const measureResult1 = tmp3Result.measure(animatedRef);
                         if (null != measureResult1) {
                           if (typeof measureRelativeTo === "function") {
@@ -182,7 +182,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 const measureResult = obj.measure(animatedRef1);
                 const tmp3 = require;
                 if (null != measureResult) {
-                  const tmp3Result = tmp3(4612);
+                  const tmp3Result = tmp3(4618);
                   const measureResult1 = tmp3Result.measure(animatedRef);
                   if (null != measureResult1) {
                     if (typeof measureRelativeTo === "function") {

@@ -1,20 +1,20 @@
-// Module ID: 13323
-// Function ID: 13324
+// Module ID: 13342
+// Function ID: 13343
 // Name: NitroCreditEducationActionSheet
-// Dependencies: [17, 1085, 21, 4890, 587, 558, 576, 4800, 4886, 1126, 2115, 6645, 2]
+// Dependencies: [17, 1085, 21, 4896, 587, 558, 576, 4806, 4892, 1126, 2115, 6652, 2]
 
-// Module 13323 (NitroCreditEducationActionSheet)
+// Module 13342 (NitroCreditEducationActionSheet)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 4800 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 4806 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6652 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -107,7 +107,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((aboutText) => {
         const obj6 = { children: metroRequire(View, obj8) };
         obj8 = { style: container, children: items };
         items = [tmp13, tmp22];
-        BottomSheet = tmp(6645).BottomSheet;
+        BottomSheet = tmp(6652).BottomSheet;
         const tmp29 = hasOwnProperty(BottomSheet, obj6);
         cResult[14] = tmp4.container;
         cResult[15] = tmp13;

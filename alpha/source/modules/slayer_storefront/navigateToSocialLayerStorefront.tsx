@@ -1,16 +1,16 @@
-// Module ID: 13233
-// Function ID: 13234
+// Module ID: 13252
+// Function ID: 13253
 // Name: navigateToSocialLayerStorefront
-// Dependencies: [5, 2074, 6729, 1085, 10532, 6727, 1112, 6844, 8054, 2]
+// Dependencies: [5, 2074, 6743, 1085, 10545, 6741, 1112, 6854, 8064, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 13233 (navigateToSocialLayerStorefront)
+// Module 13252 (navigateToSocialLayerStorefront)
 import router_utils from "router_utils" /* 1112 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6727 */;
-import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10532 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6741 */;
+import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10545 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6729 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6743 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ let obj = function _navigateToSocialLayerStorefrontWithGuildPreview() {
             joinedAt = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else {
           if (1 === c3) {

@@ -1,9 +1,9 @@
-// Module ID: 6720
-// Function ID: 6721
+// Module ID: 6734
+// Function ID: 6735
 // Name: MessageRequestStore
 // Dependencies: [2051, 1084, 2]
 
-// Module 6720 (MessageRequestStore)
+// Module 6734 (MessageRequestStore)
 import ChannelStore from "ChannelStore" /* 2051 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1084 */;
 import size from "module_2" /* 2 */;

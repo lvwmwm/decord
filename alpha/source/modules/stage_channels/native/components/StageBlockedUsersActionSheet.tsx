@@ -1,24 +1,24 @@
-// Module ID: 8275
-// Function ID: 8276
+// Module ID: 8308
+// Function ID: 8309
 // Name: StageBlockedUsersActionSheet
-// Dependencies: [32, 19, 17, 4519, 5578, 5571, 21, 4890, 587, 558, 576, 504, 1126, 1188, 8276, 4886, 4854, 8277, 5594, 6619, 6569, 6645, 2]
+// Dependencies: [32, 19, 17, 4525, 5585, 5578, 21, 4896, 587, 558, 576, 504, 1126, 1188, 8309, 4892, 4860, 8310, 5601, 6626, 6576, 6652, 2]
 
-// Module 8275 (StageBlockedUsersActionSheet)
+// Module 8308 (StageBlockedUsersActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
 import native from "native" /* 1188 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 5571 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 5578 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5578 */;
+import RelationshipStore from "RelationshipStore" /* 4525 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5585 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -170,7 +170,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           const obj2 = { style: items2, children: closure_9(Icon, obj3) };
           items2 = [tmp4.iconContainer];
-          obj3 = { style: tmp4.icon, source: user(8276), color: user(587).unsafe_rawColors.WHITE };
+          obj3 = { style: tmp4.icon, source: user(8309), color: user(587).unsafe_rawColors.WHITE };
           Icon = tmp(1188).Icon;
           tmp23 = closure_9(View, obj2);
         }
@@ -243,7 +243,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (speaker) {
     const obj6 = { style: items3, children: closure_9(Icon, obj7) };
     items3 = [tmp.iconContainer];
-    obj7 = { style: tmp.icon, source: user(8276), color: user(587).unsafe_rawColors.WHITE };
+    obj7 = { style: tmp.icon, source: user(8309), color: user(587).unsafe_rawColors.WHITE };
     Icon = tmp2(1188).Icon;
     speaker = tmp11(tmp10, obj6);
   }
@@ -252,7 +252,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj8 = { style: tmp.flex, children: items5 };
   const obj9 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: str.toString() };
   str = participant.user;
-  const Text = tmp2(4886).Text;
+  const Text = tmp2(4892).Text;
   items5 = [closure_9(Text, obj9), ];
   const user2 = participant.user;
   let tmp9Result = !user2.hasUniqueUsername();
@@ -260,7 +260,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (tmp9Result) {
     const obj10 = { variant: "text-sm/medium", color: "text-default", children: items6 };
     items6 = ["#", participant.user.discriminator];
-    tmp9Result = tmp9(tmp2(4886).Text, obj10);
+    tmp9Result = tmp9(tmp2(4892).Text, obj10);
   }
   items5[1] = tmp9Result;
   const items7 = [closure_10(View, obj8), ];
@@ -587,9 +587,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     if (cResult[2] === onAccept) {
       tmp8 = cResult[3];
     }
-    const tmp2Result = channel(8277);
+    const tmp2Result = channel(8310);
     const stageBlockedUsers = tmp2Result.useStageBlockedUsers(channel.id);
-    const tmp2Result2 = channel(8277);
+    const tmp2Result2 = channel(8310);
     const stageIgnoredUsers = tmp2Result2.useStageIgnoredUsers(channel.id);
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
@@ -632,8 +632,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
       const obj2 = { text: tmp10, onPress: tmp8 };
       cResult[6] = tmp8;
-      cResult[7] = closure_9(channel(5594).Button, obj2);
-      const tmp13 = closure_9(channel(5594).Button, obj2);
+      cResult[7] = closure_9(channel(5601).Button, obj2);
+      const tmp13 = closure_9(channel(5601).Button, obj2);
     } else {
       class E {
         constructor(nativeEvent) {
@@ -649,7 +649,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
       }
       const obj3 = { variant: "secondary", text: intl.string(channel(1126).t.CZGqeT), onPress };
-      const Button = tmp2(5594).Button;
+      const Button = tmp2(5601).Button;
       intl = tmp2(1126).intl;
       const tmp15 = closure_9(Button, obj3);
       cResult[8] = tmp15;
@@ -765,8 +765,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             cResult[25] = tmp26;
             cResult[26] = tmp5.container;
             cResult[27] = tmp33;
-            cResult[28] = closure_9(onAccept(6569), obj5);
-            const tmp38 = closure_9(onAccept(6569), obj5);
+            cResult[28] = closure_9(onAccept(6576), obj5);
+            const tmp38 = closure_9(onAccept(6576), obj5);
           }
           class Z {
             constructor(arg0, arg1) {
@@ -833,9 +833,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const tmp3 = items1(react.useState(0), 2);
   dependencyMap = tmp3[1];
   const first = tmp3[0];
-  let obj = channel(8277);
+  let obj = channel(8310);
   const stageBlockedUsers = obj.useStageBlockedUsers(channel.id);
-  const obj2 = channel(8277);
+  const obj2 = channel(8310);
   const stageIgnoredUsers = obj2.useStageIgnoredUsers(channel.id);
   const length = stageBlockedUsers.length;
   const length2 = stageIgnoredUsers.length;
@@ -843,7 +843,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     closure_2(nativeEvent.nativeEvent.layout.height);
   }, []);
   const obj3 = { bottom: true, style: tmp2.buttons, onLayout: callback, children: items };
-  const SafeAreaPaddingView = channel(6619).SafeAreaPaddingView;
+  const SafeAreaPaddingView = channel(6626).SafeAreaPaddingView;
   const obj4 = {
     text: intl.string(channel(1126).t.mbD50D),
     onPress() {
@@ -852,7 +852,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       obj.hideActionSheet(closure_8);
     }
   };
-  const Button = channel(5594).Button;
+  const Button = channel(5601).Button;
   intl = channel(1126).intl;
   items = [closure_9(Button, obj4), ];
   const obj5 = {
@@ -863,14 +863,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       obj.hideActionSheet(closure_1_8);
     }
   };
-  const Button2 = channel(5594).Button;
+  const Button2 = channel(5601).Button;
   intl2 = channel(1126).intl;
   items[1] = closure_9(Button2, obj5);
   items1 = [];
   const tmp6 = closure_10(SafeAreaPaddingView, obj3);
   HermesBuiltin.arraySpread(items1, stageIgnoredUsers, HermesBuiltin.arraySpread(items1, stageBlockedUsers, 0));
   const obj6 = { scrollable: true, header: closure_9(closure_13, { blockedUserCount: length, ignoredUserCount: length2 }), footer: tmp6, children: items3 };
-  BottomSheet = channel(6645).BottomSheet;
+  BottomSheet = channel(6652).BottomSheet;
   const obj7 = {
     inActionSheet: true,
     contentContainerStyle: tmp2.container,
@@ -884,7 +884,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       return 48;
     }
   };
-  const tmp8 = onAccept(6569);
+  const tmp8 = onAccept(6576);
   intl3 = channel(1126).intl;
   items2 = [items1.length];
   items3 = [closure_9(tmp8, obj7), ];

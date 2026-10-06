@@ -1,10 +1,10 @@
-// Module ID: 9311
-// Function ID: 9312
+// Module ID: 8084
+// Function ID: 8085
 // Name: trackVoiceAndVideoSettingsUpdate
 // Dependencies: [1085, 1252, 2]
 // Exports: default
 
-// Module 9311 (trackVoiceAndVideoSettingsUpdate)
+// Module 8084 (trackVoiceAndVideoSettingsUpdate)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import size from "module_2" /* 2 */;

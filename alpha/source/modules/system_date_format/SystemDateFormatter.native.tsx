@@ -1,12 +1,12 @@
-// Module ID: 4555
-// Function ID: 4556
+// Module ID: 4561
+// Function ID: 4562
 // Name: SystemDateFormatter
-// Dependencies: [17, 1369, 4556, 2]
+// Dependencies: [17, 1369, 4562, 2]
 // Exports: supportsSystemDateFormatter
 
-// Module 4555 (SystemDateFormatter)
+// Module 4561 (SystemDateFormatter)
 import PlatformUtils from "PlatformUtils" /* 1369 */;
-import react_nativeDefault from "react-native" /* 4556 */;
+import react_nativeDefault from "react-native" /* 4562 */;
 import size from "module_2" /* 2 */;
 
 let __DiscordCreateDateFormatter;

@@ -1,21 +1,21 @@
-// Module ID: 17929
-// Function ID: 17930
+// Module ID: 17975
+// Function ID: 17976
 // Name: GuildSettingsRoleSubscriptionContainer
-// Dependencies: [19, 17, 2074, 1085, 21, 4890, 558, 576, 504, 17907, 11852, 17880, 1126, 15031, 17921, 2]
+// Dependencies: [19, 17, 2074, 1085, 21, 4896, 558, 576, 504, 17953, 11866, 17926, 1126, 15046, 17967, 2]
 
-// Module 17929 (GuildSettingsRoleSubscriptionContainer)
+// Module 17975 (GuildSettingsRoleSubscriptionContainer)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import ErrorBlockDefault from "ErrorBlock" /* 11852 */;
-import GroupListingsFetchContext from "GroupListingsFetchContext" /* 15031 */;
-import WarningNoticeDefault from "WarningNotice" /* 17880 */;
-import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 17907 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 17921 */;
+import ErrorBlockDefault from "ErrorBlock" /* 11866 */;
+import GroupListingsFetchContext from "GroupListingsFetchContext" /* 15046 */;
+import WarningNoticeDefault from "WarningNotice" /* 17926 */;
+import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 17953 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 17967 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 2074 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -229,7 +229,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     tmp14 = closure_7(tmp9Result, obj2);
   } else if (null != requestRejectedNoticeText) {
     const obj3 = { notice: requestRejectedNoticeText };
-    tmp14 = closure_7(tmp9(17880), obj3);
+    tmp14 = closure_7(tmp9(17926), obj3);
   } else if (tmp13) {
     const obj4 = { notice: intl3.string(guildId(1126).t.MyJpJT) };
     const tmp9Result5 = WarningNoticeDefault;

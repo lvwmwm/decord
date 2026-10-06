@@ -1,17 +1,17 @@
-// Module ID: 17547
-// Function ID: 17548
+// Module ID: 17592
+// Function ID: 17593
 // Name: codedLinkQueue
-// Dependencies: [3, 17548, 2]
+// Dependencies: [3, 17593, 2]
 // Exports: queueMessageLinkFetch
 
-// Module 17547 (codedLinkQueue)
+// Module 17592 (codedLinkQueue)
 import LoggerDefault from "Logger" /* 3 */;
-import _modDef17548 from "module_17548" /* 17548 */;
+import _modDef17593 from "module_17593" /* 17593 */;
 import size from "module_2" /* 2 */;
 
 const logger = new LoggerDefault("codedLinkQueue");
 const tmp2 = new LoggerDefault("codedLinkQueue");
-const obj = new _modDef17548({ concurrency: 5, intervalCap: 10, interval: 2000 });
+const obj = new _modDef17593({ concurrency: 5, intervalCap: 10, interval: 2000 });
 obj.on("add", () => {
   if (obj.size > 0) {
     logger.warn("Message link fetch queue backlog:", tmp.size);

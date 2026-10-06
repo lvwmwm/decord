@@ -1,20 +1,20 @@
-// Module ID: 5983
-// Function ID: 5984
+// Module ID: 5990
+// Function ID: 5991
 // Name: MemberVerificationForm
-// Dependencies: [5, 32, 19, 17, 5963, 1085, 21, 4890, 4568, 1126, 4807, 558, 576, 5965, 4702, 5984, 504, 5842, 5937, 5985, 6428, 5594, 2]
+// Dependencies: [5, 32, 19, 17, 5970, 1085, 21, 4896, 4574, 1126, 4813, 558, 576, 5972, 4708, 5991, 504, 5849, 5944, 5992, 6435, 5601, 2]
 // Exports: default
 
-// Module 5983 (MemberVerificationForm)
+// Module 5990 (MemberVerificationForm)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4702 */;
-import MemberVerificationFormStore2 from "MemberVerificationFormStore" /* 5963 */;
-import useInitialValueDefault from "useInitialValue" /* 5984 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4708 */;
+import MemberVerificationFormStore2 from "MemberVerificationFormStore" /* 5970 */;
+import useInitialValueDefault from "useInitialValue" /* 5991 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     if (tmp4 === phone) {
       tmp7 = cResult[2];
     }
-    return initialVerification(5984)(tmp7);
+    return initialVerification(5991)(tmp7);
   }
   cResult[0] = id.verificationLevel;
   let phone1;

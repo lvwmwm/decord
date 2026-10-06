@@ -1,16 +1,16 @@
 // Module ID: 2104
 // Function ID: 2105
 // Name: GatedChannelStore
-// Dependencies: [2105, 2055, 2107, 2051, 2112, 2106, 2074, 1377, 1085, 4499, 4500, 4501, 504, 584, 2]
+// Dependencies: [2105, 2055, 2107, 2051, 2112, 2106, 2074, 1377, 1085, 4505, 4506, 4507, 504, 584, 2]
 
 // Module 2104 (GatedChannelStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
 import GuildRoleRecord from "GuildRoleRecord" /* 2107 */;
-import PremiumRoleUtils from "PremiumRoleUtils" /* 4499 */;
-import RolePermissionUtils from "RolePermissionUtils" /* 4500 */;
-import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4501 */;
+import PremiumRoleUtils from "PremiumRoleUtils" /* 4505 */;
+import RolePermissionUtils from "RolePermissionUtils" /* 4506 */;
+import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4507 */;
 import ImpersonateStore from "ImpersonateStore" /* 2105 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildMemberStore from "GuildMemberStore" /* 2112 */;
@@ -32,7 +32,7 @@ function isSubscriptionGated(role) {
   if (isSubscriptionRoleResult) {
     let tmp4 = isPreviewingRoles;
     if (!tmp4) {
-      const isSubscriptionRoleAvailableForPurchase = tmp(4499).isSubscriptionRoleAvailableForPurchase;
+      const isSubscriptionRoleAvailableForPurchase = tmp(4505).isSubscriptionRoleAvailableForPurchase;
       PremiumRoleUtils;
       let result = isSubscriptionRoleAvailableForPurchase(role);
       if (!result) {

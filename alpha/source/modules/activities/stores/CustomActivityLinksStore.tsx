@@ -1,12 +1,12 @@
-// Module ID: 12744
-// Function ID: 12745
+// Module ID: 12759
+// Function ID: 12760
 // Name: CustomActivityLinksStore
-// Dependencies: [12745, 504, 584, 2]
+// Dependencies: [12760, 504, 584, 2]
 
-// Module 12744 (CustomActivityLinksStore)
+// Module 12759 (CustomActivityLinksStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import CustomActivityLinkRecord from "CustomActivityLinkRecord" /* 12745 */;
+import CustomActivityLinkRecord from "CustomActivityLinkRecord" /* 12760 */;
 import size from "module_2" /* 2 */;
 
 let closure_1;

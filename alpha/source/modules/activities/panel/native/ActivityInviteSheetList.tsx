@@ -1,23 +1,23 @@
-// Module ID: 17181
-// Function ID: 17182
+// Module ID: 17210
+// Function ID: 17211
 // Name: ActivityInviteSheetList
-// Dependencies: [19, 1085, 21, 4890, 5915, 587, 558, 576, 1126, 1188, 4854, 4737, 5909, 4886, 17182, 6471, 6112, 2]
+// Dependencies: [19, 1085, 21, 4896, 5922, 587, 558, 576, 1126, 1188, 4860, 4743, 5916, 4892, 17211, 6478, 6119, 2]
 
-// Module 17181 (ActivityInviteSheetList)
+// Module 17210 (ActivityInviteSheetList)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
 import native from "native" /* 1188 */;
-import RootNavigationRef from "RootNavigationRef" /* 4737 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Pressables from "Pressables" /* 5909 */;
-import ActivityInviteSheetRowDefault from "ActivityInviteSheetRow" /* 17182 */;
+import RootNavigationRef from "RootNavigationRef" /* 4743 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import Pressables from "Pressables" /* 5916 */;
+import ActivityInviteSheetRowDefault from "ActivityInviteSheetRow" /* 17211 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import TextStyles_mod from "TextStyles" /* 5915 */;
+import createStyles_mod from "createStyles" /* 4896 */;
+import TextStyles_mod from "TextStyles" /* 5922 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -124,7 +124,7 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() =>
     }
     if (cResult[11] !== tmp15) {
       let obj2 = { onPress: tmp11, accessibilityRole: "link", accessibilityLabel: tmp12, hitSlop: tmp13, children: React3(Text_Text.Text, obj3) };
-      const PressableOpacity = tmp(5909).PressableOpacity;
+      const PressableOpacity = tmp(5916).PressableOpacity;
       obj3 = { style: tmp15, variant: "text-sm/semibold", color: "text-link", children: tmp16 };
       const tmp20 = React3(PressableOpacity, obj2);
       cResult[11] = tmp15;

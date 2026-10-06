@@ -1,15 +1,15 @@
-// Module ID: 10048
-// Function ID: 10049
+// Module ID: 10061
+// Function ID: 10062
 // Name: FavoritesGuildIntroPopover
-// Dependencies: [32, 19, 2042, 2054, 1085, 570, 558, 576, 2036, 10036, 504, 10049, 6891, 2]
+// Dependencies: [32, 19, 2042, 2054, 1085, 570, 558, 576, 2036, 10049, 504, 10062, 6901, 2]
 // Exports: hasOfferedFavoritesGuildOnboarding, isFavoritesIntroPopoverShown, resetHasOfferedFavoritesGuildOnboarding
 
-// Module 10048 (FavoritesGuildIntroPopover)
+// Module 10061 (FavoritesGuildIntroPopover)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import dismissible_content from "dismissible_content" /* 2036 */;
-import FavoritesHooks from "FavoritesHooks" /* 10036 */;
-import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10049 */;
+import FavoritesHooks from "FavoritesHooks" /* 10049 */;
+import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10062 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import DismissibleContentShownStateStore_mod from "DismissibleContentShownStateStore" /* 2042 */;
@@ -171,8 +171,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
           const tmp10 = _slicedToArray(tmp8(items1), 2);
           _require = tmp12;
           const first = tmp10[0];
-          const useSelectedDismissibleContent = tmp(6891).useSelectedDismissibleContent;
-          tmp(6891);
+          const useSelectedDismissibleContent = tmp(6901).useSelectedDismissibleContent;
+          tmp(6901);
           const tmp9 = _slicedToArray;
           if (first === tmp(2036).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) {
             const items2 = [tmp(2036).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM];

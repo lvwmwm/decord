@@ -1,18 +1,18 @@
-// Module ID: 8539
-// Function ID: 8540
+// Module ID: 8572
+// Function ID: 8573
 // Name: StorefrontCollectionActionCreators
-// Dependencies: [5, 2116, 8537, 7071, 1085, 7891, 584, 5322, 5313, 2]
+// Dependencies: [5, 2116, 8570, 7084, 1085, 7902, 584, 5329, 5320, 2]
 // Exports: maybeFetchCollectionsAfter, maybeFetchCollectionsForApplication, maybeFetchCollectionsForApplicationPage, maybeFetchCollectionsWithProducts
 
-// Module 8539 (StorefrontCollectionActionCreators)
+// Module 8572 (StorefrontCollectionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import StoreUtils from "StoreUtils" /* 5322 */;
-import StorefrontCacheUtils from "StorefrontCacheUtils" /* 7891 */;
+import StoreUtils from "StoreUtils" /* 5329 */;
+import StorefrontCacheUtils from "StorefrontCacheUtils" /* 7902 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2116 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 8537 */;
-import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7071 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 8570 */;
+import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7084 */;
 import size from "module_2" /* 2 */;
 
 let collectionPageFetchState, collectionsAfterFetchState, requestKey;
@@ -100,7 +100,7 @@ let obj = function _maybeFetchCollectionsWithProducts() {
     flag = tmp54.includeUnpublishedCollections ?? false;
     flag2 = tmp54.ignoreCache ?? false;
     flag3 = tmp54.includePricing ?? false;
-    return "Set";
+    return "Reflect";
   });
   return obj(...arguments);
 };
@@ -536,7 +536,7 @@ obj = function _maybeFetchCollectionsForApplication() {
     if (includePricing === undefined) {
       includePricing = false;
     }
-    return "Set";
+    return "Reflect";
   });
   return obj(...arguments);
 };

@@ -1,16 +1,16 @@
-// Module ID: 7926
-// Function ID: 7927
+// Module ID: 7937
+// Function ID: 7938
 // Name: Banner
-// Dependencies: [19, 17, 1085, 21, 4890, 558, 576, 1103, 5974, 2]
+// Dependencies: [19, 17, 1085, 21, 4896, 558, 576, 1103, 5981, 2]
 
-// Module 7926 (Banner)
+// Module 7937 (Banner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import FastImageDefault from "FastImage" /* 5974 */;
+import FastImageDefault from "FastImage" /* 5981 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

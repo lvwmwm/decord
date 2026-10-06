@@ -1,17 +1,17 @@
-// Module ID: 8069
-// Function ID: 8070
+// Module ID: 8102
+// Function ID: 8103
 // Name: StageChannelModalActionCreators
-// Dependencies: [5, 4912, 2051, 2074, 4509, 2103, 2060, 8070, 6825, 5705, 12731, 5568, 4942, 5032, 12732, 2]
+// Dependencies: [5, 4918, 2051, 2074, 4515, 2103, 2060, 8103, 6835, 5712, 12746, 5575, 4948, 5038, 12747, 2]
 // Exports: connectOrLurkStage, navigateToStage, showUserProfile
 
-// Module 8069 (StageChannelModalActionCreators)
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5568 */;
-import StageChannelActionCreatorExtrasAll from "StageChannelActionCreatorExtras" /* 8070 */;
+// Module 8102 (StageChannelModalActionCreators)
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5575 */;
+import StageChannelActionCreatorExtrasAll from "StageChannelActionCreatorExtras" /* 8103 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4918 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ function connectToStage(channel, flag) {
       let num = obj2.shouldShowBlockedUsers(channel.id) && tmp !== channel.id;
       const tmp7 = importAll;
       if (num) {
-        const tmp7Result = tmp7(8070);
+        const tmp7Result = tmp7(8103);
         const result = tmp7Result.openStageBlockedUsersSheet(channel, () => {
           connectAndOpen(channel, true);
         });
@@ -81,14 +81,14 @@ function connectAndOpen(channel, flag, flag2, arg3) {
     result = obj.shouldShowVoiceChannelChangeConfirmation(channel);
   }
   if (result) {
-    const obj2 = flag2(8070);
+    const obj2 = flag2(8103);
     result = obj2.showChannelChangeConfirmationAlert(channel, () => {
       connectAndOpen(channel, flag, flag2, true);
     });
   }
   if (!result) {
     if (connectToStage(channel, flag)) {
-      const obj3 = flag2(8070);
+      const obj3 = flag2(8103);
       obj3.navigateToStage(channel, voiceChannelId);
     }
   }

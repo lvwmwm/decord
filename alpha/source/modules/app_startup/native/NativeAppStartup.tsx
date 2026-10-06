@@ -1,10 +1,10 @@
-// Module ID: 17415
-// Function ID: 17416
+// Module ID: 17444
+// Function ID: 17445
 // Name: NativeAppStartup
-// Dependencies: [32, 5, 17416, 17418, 17, 17439, 2117, 2103, 1986, 6969, 17440, 1085, 9, 3, 18089, 7001, 18090, 11401, 504, 1259, 1244, 18092, 1990, 1369, 10, 18093, 8979, 584, 18094, 6984, 1242, 18095, 18096, 8966, 510, 1252, 13448, 2095, 8798, 2128, 1165, 18097, 1987, 8008, 18099, 14154, 7158, 18116, 18117, 18118, 7517, 6997, 6985, 4738, 1193, 4879, 14278, 17143, 17144, 1111, 13955, 6968, 14283, 14297, 7121, 18119, 6140, 6970, 6985, 2]
+// Dependencies: [32, 5, 17445, 17447, 17, 17468, 2117, 2103, 1986, 6982, 17469, 1085, 9, 3, 18134, 7014, 18135, 11414, 504, 1259, 1244, 18137, 1990, 1369, 10, 18138, 9012, 584, 18139, 6997, 1242, 18140, 18141, 8995, 510, 1252, 13975, 2095, 8830, 2128, 1165, 18142, 1987, 8018, 18144, 14172, 7171, 18162, 18163, 18164, 7528, 7010, 6998, 4744, 1193, 4885, 14296, 17172, 17173, 1111, 13972, 6981, 14301, 14315, 7134, 18165, 6147, 6983, 6998, 2]
 // Exports: init, initHeadlessTask
 
-// Module 17415 (NativeAppStartup)
+// Module 17444 (NativeAppStartup)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import Storage4 from "Storage" /* 510 */;
@@ -13,19 +13,19 @@ import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import DatabaseManagerDefault from "DatabaseManager" /* 2095 */;
 import IntlLoaderStore from "IntlLoaderStore" /* 2117 */;
-import timeRequireDefault from "timeRequire" /* 7001 */;
-import Future from "Future" /* 8798 */;
-import react_nativeDefault from "react-native" /* 13448 */;
+import timeRequireDefault from "timeRequire" /* 7014 */;
+import Future from "Future" /* 8830 */;
+import react_nativeDefault from "react-native" /* 13975 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_17416 from "module_17416" /* 17416 */;
-import superagentPatch from "superagentPatch" /* 17418 */;
+import module_17445 from "module_17445" /* 17445 */;
+import superagentPatch from "superagentPatch" /* 17447 */;
 import react_native from "react-native" /* 17 */;
-import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 17439 */;
+import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 17468 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
 import AppStateStore from "AppStateStore" /* 1986 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 6969 */;
-import ManagerRegistry from "ManagerRegistry" /* 17440 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 6982 */;
+import ManagerRegistry from "ManagerRegistry" /* 17469 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -123,11 +123,11 @@ let obj = function _getInitialURLs() {
 function sharedInit() {
   let _true;
   let closure_1;
-  const f148566 = () => _true(handleNotification[31]);
+  const f148791 = () => _true(handleNotification[31]);
   function handleNotification(arg0) {
     const tmp = c0;
     if (tmp) {
-      timeRequireDefault("receiveNotification", f148566).default(arg0, false);
+      timeRequireDefault("receiveNotification", f148791).default(arg0, false);
       TTITrackerDefault.extraProperties.tapped_notification = true;
     } else {
       closure_1.push(arg0);
@@ -269,7 +269,7 @@ function sharedInit() {
     if (state !== constants.ACTIVE) {
       const tmp4 = c0;
       if (tmp4) {
-        timeRequireDefault("receiveNotification", f148566).default(arg0, false);
+        timeRequireDefault("receiveNotification", f148791).default(arg0, false);
         TTITrackerDefault.extraProperties.tapped_notification = true;
       } else {
         closure_1.push(arg0);
@@ -500,7 +500,7 @@ obj = function _initializeIntl() {
               tmp = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {

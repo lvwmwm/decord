@@ -1,12 +1,12 @@
-// Module ID: 13769
-// Function ID: 13770
+// Module ID: 13787
+// Function ID: 13788
 // Name: GuildBadgeCaterpillar
-// Dependencies: [109, 19, 21, 558, 576, 13730, 8136, 2]
+// Dependencies: [109, 19, 21, 558, 576, 13748, 8169, 2]
 
-// Module 13769 (GuildBadgeCaterpillar)
+// Module 13787 (GuildBadgeCaterpillar)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8136 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 13730 */;
+import inlineStyles from "inlineStyles" /* 8169 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 13748 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -143,7 +143,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj5 = { width: num7, height: num8, viewBox: "0 0 16 16", fill: "none", children: items };
-    const Svg = tmp(8136).Svg;
+    const Svg = tmp(8169).Svg;
     const merged = Object.assign(tmp5);
     items = [tmp14, tmp18, tmp21, tmp27, tmp30];
     const tmp38 = hasOwnProperty(Svg, obj5);

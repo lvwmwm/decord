@@ -1,17 +1,17 @@
-// Module ID: 10999
-// Function ID: 11000
+// Module ID: 11012
+// Function ID: 11013
 // Name: NameplatePreview
-// Dependencies: [19, 17, 4879, 2112, 21, 4890, 587, 558, 576, 1977, 7887, 7830, 504, 4722, 5305, 1188, 8474, 10633, 10634, 4886, 2]
+// Dependencies: [19, 17, 4885, 2112, 21, 4896, 587, 558, 576, 1977, 7898, 7841, 504, 4728, 5312, 1188, 8507, 10646, 10647, 4892, 2]
 
-// Module 10999 (NameplatePreview)
+// Module 11012 (NameplatePreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1188 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 4885 */;
 import GuildMemberStore from "GuildMemberStore" /* 2112 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp15;
     let tmp14;
     let tmp18;
-    const tmpResult = tmp(7887);
+    const tmpResult = tmp(7898);
     let avatarDecoration = tmpResult.useAvatarDecoration(user, guildId);
     if (cResult[3] !== guildId) {
       const obj2 = { guildId };
@@ -75,7 +75,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       tmp11 = cResult[4];
     }
-    const pendingAvatarDecoration = guildId(7830)(tmp11).pendingAvatarDecoration;
+    const pendingAvatarDecoration = guildId(7841)(tmp11).pendingAvatarDecoration;
     const _Symbol = Symbol;
     const tmp12 = guildId;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
@@ -145,7 +145,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           if (cResult[13] === user.id) {
             tmp25 = cResult[14];
           }
-          tmp12(5305)(tmp25);
+          tmp12(5312)(tmp25);
           class O {
             constructor() {
               return useReducedMotion.useReducedMotion;
@@ -222,9 +222,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let obj = user(1977);
     nameplateData = obj.getNameplateData(nameplate);
   }
-  const obj2 = user(7887);
+  const obj2 = user(7898);
   const avatarDecoration = obj2.useAvatarDecoration(user, guildId);
-  pendingAvatarDecoration = guildId(7830)({ guildId }).pendingAvatarDecoration;
+  pendingAvatarDecoration = guildId(7841)({ guildId }).pendingAvatarDecoration;
   const items = [AccessibilityStore];
   const obj3 = user(504);
   stateFromStores = obj3.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
@@ -240,7 +240,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return member;
   });
-  const obj5 = guildId(4722);
+  const obj5 = guildId(4728);
   const name = obj5.useName(user);
   if (pendingGlobalName == null) {
     let tmp12 = name;
@@ -266,7 +266,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   pendingAvatarDecoration = tmp15;
   const obj6 = { userId: user.id, guildId, pendingDisplayNameStyles };
-  const tmp16 = guildId(5305)(obj6);
+  const tmp16 = guildId(5312)(obj6);
   const items2 = [tmp2.avatar, user, guildId, tmp15, stateFromStores];
   const obj7 = { style: tmp2.container, "aria-hidden": prop, children: items3 };
   const memo = stateFromStores.useMemo(() => {
@@ -276,21 +276,21 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items2);
   items3 = [, , ];
   const obj8 = { nameplate: nameplateData, style: tmp2.nameplate, fullOpacity: true, animate: flag2 };
-  items3[0] = closure_7(guildId(8474), obj8);
+  items3[0] = closure_7(guildId(8507), obj8);
   const obj9 = { style: tmp2.avatar, children: memo };
   items3[1] = closure_7(pendingAvatarDecoration, obj9);
   let tmp20Result = null != tmp16;
   const obj10 = { style: tmp2.content, children: items4 };
   if (tmp20Result) {
-    const obj11 = { userId: user.id, guildId, userName: pendingGlobalName, variant: "text-md/semibold", effectDisplayType: user(10634).EffectDisplayType.STATIC, lineClamp: 1, pendingDisplayNameStyles };
-    const tmp8Result = guildId(10633);
+    const obj11 = { userId: user.id, guildId, userName: pendingGlobalName, variant: "text-md/semibold", effectDisplayType: user(10647).EffectDisplayType.STATIC, lineClamp: 1, pendingDisplayNameStyles };
+    const tmp8Result = guildId(10646);
     tmp20Result = tmp20(tmp8Result, obj11);
   }
   items4 = [tmp20Result, ];
   let tmp20Result2 = null == tmp16;
   if (tmp20Result2) {
     const obj12 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: pendingGlobalName };
-    tmp20Result2 = tmp20(tmp5(4886).Text, obj12);
+    tmp20Result2 = tmp20(tmp5(4892).Text, obj12);
   }
   items4[1] = tmp20Result2;
   items3[2] = closure_8(pendingAvatarDecoration, obj10);

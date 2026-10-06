@@ -1,17 +1,17 @@
-// Module ID: 10362
-// Function ID: 10363
+// Module ID: 10375
+// Function ID: 10376
 // Name: showUploadPreviewActionSheet
-// Dependencies: [4854, 10363, 1987, 2]
+// Dependencies: [4860, 10376, 1987, 2]
 // Exports: default
 
-// Module 10362 (showUploadPreviewActionSheet)
+// Module 10375 (showUploadPreviewActionSheet)
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/media_uploads/native/showUploadPreviewActionSheet.tsx");
 
 export default function showUploadPreviewActionSheet(arg0) {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(10363, dependencyMap.paths), "UploadPreviewActionSheet", arg0);
+  obj.openLazy(asyncRequire(10376, dependencyMap.paths), "UploadPreviewActionSheet", arg0);
 };

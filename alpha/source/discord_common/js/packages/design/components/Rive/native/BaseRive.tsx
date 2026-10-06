@@ -1,15 +1,15 @@
-// Module ID: 4606
-// Function ID: 4607
+// Module ID: 4612
+// Function ID: 4613
 // Name: BaseRive
-// Dependencies: [19, 17, 21, 4607, 4596, 4655, 4656, 4657, 558, 576, 2]
+// Dependencies: [19, 17, 21, 4613, 4602, 4661, 4662, 4663, 558, 576, 2]
 // Exports: useArtboardBinding
 
-// Module 4606 (BaseRive)
+// Module 4612 (BaseRive)
 import react2 from "react" /* 576 */;
-import DataBindByName from "DataBindByName" /* 4607 */;
-import ManaContext from "ManaContext" /* 4655 */;
-import useRivePlayback2 from "useRivePlayback" /* 4656 */;
-import RiveTypes from "RiveTypes" /* 4657 */;
+import DataBindByName from "DataBindByName" /* 4613 */;
+import ManaContext from "ManaContext" /* 4661 */;
+import useRivePlayback2 from "useRivePlayback" /* 4662 */;
+import RiveTypes from "RiveTypes" /* 4663 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -67,7 +67,7 @@ const forwardRefResult = react.forwardRef(function BaseRiveInner(renderDataBindi
   const rive = tmpResult.useRive();
   const riveViewRef = rive.riveViewRef;
   const setHybridRef = rive.setHybridRef;
-  const enabled = react.useContext(tmp(4596).AccessibilityPreferencesContext).reducedMotion.enabled;
+  const enabled = react.useContext(tmp(4602).AccessibilityPreferencesContext).reducedMotion.enabled;
   const tmpResult4 = ManaContext;
   const experiments = tmpResult4.useManaContext().experiments;
   let flag;
@@ -102,7 +102,7 @@ const forwardRefResult = react.forwardRef(function BaseRiveInner(renderDataBindi
   let instance = useViewModelInstance(tmp13, { artboardName: artboard, instanceName: memo }).instance;
   let None = instance;
   if (instance == null) {
-    None = tmp(4607).DataBindMode.None;
+    None = tmp(4613).DataBindMode.None;
   }
   let reducedMotion;
   if (artboardProperties[artboard] != null) {
@@ -142,7 +142,7 @@ const forwardRefResult = react.forwardRef(function BaseRiveInner(renderDataBindi
     let obj13;
     const obj5 = { file: riveFile, hybridRef: setHybridRef, artboardName: artboard, autoPlay: true, dataBind: None, style: items3 };
     items3 = [container.fill, style];
-    const RiveView = tmp(4607).RiveView;
+    const RiveView = tmp(4613).RiveView;
     const tmp28 = metroRequire;
     if (null != stateMachine) {
       obj7 = { stateMachineName: stateMachine };

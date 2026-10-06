@@ -1,16 +1,16 @@
-// Module ID: 10916
-// Function ID: 10917
+// Module ID: 10929
+// Function ID: 10930
 // Name: ContentImpressionTrackerHooks
-// Dependencies: [19, 7187, 558, 576, 5630, 504, 7212, 7946, 10917, 2]
+// Dependencies: [19, 7200, 558, 576, 5637, 504, 7225, 7957, 10930, 2]
 // Exports: useQuestImpressionId
 
-// Module 10916 (ContentImpressionTrackerHooks)
+// Module 10929 (ContentImpressionTrackerHooks)
 import react2 from "react" /* 576 */;
-import AdCreativeType from "AdCreativeType" /* 5630 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7212 */;
-import react3 from "react" /* 10917 */;
+import AdCreativeType from "AdCreativeType" /* 5637 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7225 */;
+import react3 from "react" /* 10930 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 7187 */;
+import QuestStore from "QuestStore" /* 7200 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -120,7 +120,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((questOrQuests) => {
   }
   const tmp4Result = tmp4(questOrQuests, adContentId);
   if ("questOrQuests" in questOrQuests) {
-    adCreativeType = tmp(5630).AdCreativeType.QUEST;
+    adCreativeType = tmp(5637).AdCreativeType.QUEST;
   } else {
     adCreativeType = questOrQuests.adCreativeType;
   }
@@ -228,7 +228,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((adContentIds) => {
     if (null != stateFromStores) {
       let tmp10;
       if (cResult[5] !== stateFromStores) {
-        const tmpResult2 = adContentIds(7212);
+        const tmpResult2 = adContentIds(7225);
         const questStatus = tmpResult2.getQuestStatus(stateFromStores);
         cResult[5] = stateFromStores;
         cResult[6] = questStatus;
@@ -238,7 +238,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((adContentIds) => {
       }
       tmp9 = tmp10;
     }
-    return tmp9 !== adCreativeType(7946)(tmp9);
+    return tmp9 !== adCreativeType(7957)(tmp9);
   }
   const fn = function u() {
     let quest = null;

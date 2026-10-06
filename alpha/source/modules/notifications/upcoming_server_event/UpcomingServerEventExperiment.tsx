@@ -1,10 +1,10 @@
-// Module ID: 15336
-// Function ID: 15337
+// Module ID: 15351
+// Function ID: 15352
 // Name: UpcomingServerEventExperiment
 // Dependencies: [1440, 558, 576, 2]
 // Exports: isEligibleForUpcomingServerEventNotifications
 
-// Module 15336 (UpcomingServerEventExperiment)
+// Module 15351 (UpcomingServerEventExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1440 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,25 +1,25 @@
-// Module ID: 16163
-// Function ID: 16164
+// Module ID: 16202
+// Function ID: 16203
 // Name: VoiceChannel
-// Dependencies: [5, 19, 17, 7038, 4509, 4905, 5071, 4914, 11697, 1085, 21, 587, 5841, 5960, 1987, 5097, 558, 576, 9160, 16161, 16164, 9054, 504, 16156, 10613, 4877, 9260, 7610, 5035, 16053, 16044, 1252, 16157, 10651, 1126, 16054, 11673, 2]
+// Dependencies: [5, 19, 17, 7051, 4515, 4911, 5077, 4920, 11711, 1085, 21, 587, 5848, 5967, 1987, 5103, 558, 576, 9195, 16200, 16203, 9090, 504, 16195, 10626, 4883, 9295, 7621, 5041, 16092, 16083, 1252, 16196, 10664, 1126, 16093, 11687, 2]
 
-// Module 16163 (VoiceChannel)
+// Module 16202 (VoiceChannel)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import SortedVoiceStateStore2 from "SortedVoiceStateStore" /* 4914 */;
-import ChannelUtils from "ChannelUtils" /* 5035 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9260 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10651 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 11673 */;
+import SortedVoiceStateStore2 from "SortedVoiceStateStore" /* 4920 */;
+import ChannelUtils from "ChannelUtils" /* 5041 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9295 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10664 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 11687 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7038 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import ReadStateStore from "ReadStateStore" /* 4905 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11697 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7051 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
+import ReadStateStore from "ReadStateStore" /* 4911 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11711 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

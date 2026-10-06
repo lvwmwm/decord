@@ -1,15 +1,15 @@
-// Module ID: 4902
-// Function ID: 4903
+// Module ID: 4908
+// Function ID: 4909
 // Name: useGuildIdForChannelRoute
-// Dependencies: [2054, 4699, 1085, 558, 576, 504, 2077, 2]
+// Dependencies: [2054, 4705, 1085, 558, 576, 504, 2077, 2]
 // Exports: getGuildIdForGenericRedirect
 
-// Module 4902 (useGuildIdForChannelRoute)
+// Module 4908 (useGuildIdForChannelRoute)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import FavoritesUtils from "FavoritesUtils" /* 2077 */;
 import FavoriteStore from "FavoriteStore" /* 2054 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

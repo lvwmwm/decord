@@ -1,25 +1,25 @@
-// Module ID: 11634
-// Function ID: 11635
+// Module ID: 11648
+// Function ID: 11649
 // Name: ForumPostContainer
-// Dependencies: [19, 17, 21, 4890, 587, 6571, 558, 576, 4612, 10031, 5995, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 6578, 558, 576, 4618, 10044, 6002, 2]
 // Exports: useForumPostContainerPressedIn
 
-// Module 11634 (ForumPostContainer)
+// Module 11648 (ForumPostContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10031 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10044 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
-import ReanimatedHelperTypes from "ReanimatedHelperTypes" /* 6571 */;
+import createStyles from "createStyles" /* 4896 */;
+import ReanimatedHelperTypes from "ReanimatedHelperTypes" /* 6578 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const Card_Card = tmp(5995);
+const Card_Card = tmp(6002);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { childContainer: { position: "relative", minHeight: 110, padding: 12 }, card: { marginBottom: 12 }, disabledContainer: obj2 };

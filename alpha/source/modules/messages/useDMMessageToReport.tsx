@@ -1,21 +1,21 @@
-// Module ID: 12252
-// Function ID: 12253
+// Module ID: 12267
+// Function ID: 12268
 // Name: useDMMessageToReport
-// Dependencies: [558, 576, 12253, 12254, 12255, 12092, 12259, 2]
+// Dependencies: [558, 576, 12268, 12269, 12270, 12107, 12274, 2]
 
-// Module 12252 (useDMMessageToReport)
+// Module 12267 (useDMMessageToReport)
 import react from "react" /* 576 */;
-import useLongestChannelMessageBeforeReply from "useLongestChannelMessageBeforeReply" /* 12092 */;
-import useIsRelationshipTypeSpamReportable from "useIsRelationshipTypeSpamReportable" /* 12253 */;
-import getApplicationFromBotUserIdDefault from "getApplicationFromBotUserId" /* 12254 */;
-import useMessageRequestPreview from "useMessageRequestPreview" /* 12259 */;
+import useLongestChannelMessageBeforeReply from "useLongestChannelMessageBeforeReply" /* 12107 */;
+import useIsRelationshipTypeSpamReportable from "useIsRelationshipTypeSpamReportable" /* 12268 */;
+import getApplicationFromBotUserIdDefault from "getApplicationFromBotUserId" /* 12269 */;
+import useMessageRequestPreview from "useMessageRequestPreview" /* 12274 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let id;
 
 let tmp5;
-const useIsApplicationDeveloperDefault = tmp5(12255);
+const useIsApplicationDeveloperDefault = tmp5(12270);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) => {
   let error;
   let loaded;

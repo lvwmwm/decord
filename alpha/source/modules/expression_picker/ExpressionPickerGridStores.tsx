@@ -1,21 +1,21 @@
-// Module ID: 9871
-// Function ID: 9872
+// Module ID: 9884
+// Function ID: 9885
 // Name: ExpressionPickerGridStores
-// Dependencies: [1254, 4750, 1259, 2]
+// Dependencies: [1254, 4756, 1259, 2]
 // Exports: default
 
-// Module 9871 (ExpressionPickerGridStores)
+// Module 9884 (ExpressionPickerGridStores)
 import react_native from "react-native" /* 1259 */;
 import module_1254_mod from "module_1254" /* 1254 */;
-import combine_mod from "combine" /* 4750 */;
+import combine_mod from "combine" /* 4756 */;
 import size from "module_2" /* 2 */;
 
-const f101949 = () => closure_1_2;
+const f102101 = () => closure_1_2;
 let closure_2 = Object.freeze({ inspectedExpressionPosition: { rowIndex: 0, columnIndex: 0 }, hasInteracted: false, activeCategoryIndex: 0, searchPlaceholder: null, bottomPosition: null, analyticsId: null });
 let module_1254 = module_1254_mod;
 module_1254 = module_1254.createWithEqualityFn();
 let combine = combine_mod;
-let withEqualityFnResult = module_1254(combine.subscribeWithSelector(f101949));
+let withEqualityFnResult = module_1254(combine.subscribeWithSelector(f102101));
 let store = {
   useStore: withEqualityFnResult,
   getState() {
@@ -74,7 +74,7 @@ let store = {
 module_1254 = module_1254_mod;
 module_1254 = module_1254.createWithEqualityFn();
 combine = combine_mod;
-const withEqualityFn1Result = module_1254(combine.subscribeWithSelector(f101949));
+const withEqualityFn1Result = module_1254(combine.subscribeWithSelector(f102101));
 const store1 = {
   useStore: withEqualityFn1Result,
   getState() {
@@ -133,7 +133,7 @@ const store1 = {
 module_1254 = module_1254_mod;
 module_1254 = module_1254.createWithEqualityFn();
 combine = combine_mod;
-const withEqualityFn2Result = module_1254(combine.subscribeWithSelector(f101949));
+const withEqualityFn2Result = module_1254(combine.subscribeWithSelector(f102101));
 const store2 = {
   useStore: withEqualityFn2Result,
   getState() {
@@ -192,7 +192,7 @@ const store2 = {
 module_1254 = module_1254_mod;
 module_1254 = module_1254.createWithEqualityFn();
 combine = combine_mod;
-const withEqualityFn3Result = module_1254(combine.subscribeWithSelector(f101949));
+const withEqualityFn3Result = module_1254(combine.subscribeWithSelector(f102101));
 let c0 = withEqualityFn3Result;
 const store3 = {
   useStore: withEqualityFn3Result,
@@ -255,7 +255,7 @@ export default function createStore() {
   let obj = module_1254;
   const withEqualityFn = obj.createWithEqualityFn();
   let obj2 = combine;
-  const withEqualityFnResult = withEqualityFn(obj2.subscribeWithSelector(f101949));
+  const withEqualityFnResult = withEqualityFn(obj2.subscribeWithSelector(f102101));
   require = withEqualityFnResult;
   const store = {
     useStore: withEqualityFnResult,

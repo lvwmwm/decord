@@ -1,21 +1,21 @@
-// Module ID: 16933
-// Function ID: 16934
+// Module ID: 16959
+// Function ID: 16960
 // Name: GroupDMRecipientLimitTitle
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 1369, 558, 576, 11213, 4580, 1126, 4886, 8313, 11814, 2]
+// Dependencies: [19, 17, 1085, 21, 4896, 587, 1369, 558, 576, 11226, 4586, 1126, 4892, 8346, 11828, 2]
 
-// Module 16933 (GroupDMRecipientLimitTitle)
+// Module 16959 (GroupDMRecipientLimitTitle)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import useToken from "useToken" /* 4580 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11213 */;
-import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 11814 */;
+import useToken from "useToken" /* 4586 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11226 */;
+import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 11828 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -179,7 +179,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp20Result = null;
         if ("entitled" === groupDMNitroAudience && recipientLimit > MAX_GROUP_DM_PARTICIPANTS) {
           let tmp21 = token2;
-          const NitroWheelIcon = tmp(8313).NitroWheelIcon;
+          const NitroWheelIcon = tmp(8346).NitroWheelIcon;
           const tmp20 = metroRequire;
           if (memberCount > MAX_GROUP_DM_PARTICIPANTS) {
             tmp21 = token1;
@@ -249,7 +249,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj6 = { style: tmp.subtitleRow, children: items1 };
   const tmp14 = metroImportAll;
   if ("entitled" === groupDMNitroAudience && recipientLimit > MAX_GROUP_DM_PARTICIPANTS) {
-    const NitroWheelIcon = tmp2(8313).NitroWheelIcon;
+    const NitroWheelIcon = tmp2(8346).NitroWheelIcon;
     if (memberCount > MAX_GROUP_DM_PARTICIPANTS) {
       token2 = token1;
     }

@@ -1,23 +1,23 @@
-// Module ID: 15091
-// Function ID: 15092
+// Module ID: 15106
+// Function ID: 15107
 // Name: SettingsAppearanceThemeCarousel
-// Dependencies: [19, 17, 15092, 1085, 21, 4612, 1188, 4890, 587, 558, 576, 5770, 12, 4855, 1241, 1126, 15093, 4891, 4894, 8865, 4886, 1615, 10491, 15096, 2]
+// Dependencies: [19, 17, 15107, 1085, 21, 4618, 1188, 4896, 587, 558, 576, 5777, 12, 4861, 1241, 1126, 15108, 4897, 4900, 8894, 4892, 1615, 10504, 15111, 2]
 
-// Module 15091 (SettingsAppearanceThemeCarousel)
+// Module 15106 (SettingsAppearanceThemeCarousel)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
 import native from "native" /* 1188 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1241 */;
-import HapticUtils from "HapticUtils" /* 4855 */;
-import timing from "timing" /* 4891 */;
+import HapticUtils from "HapticUtils" /* 4861 */;
+import timing from "timing" /* 4897 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15092 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15107 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let obj6;
 let obj7;
 let size;
 let tmp;
-const timingPresets = tmp(4894);
+const timingPresets = tmp(4900);
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
 const ThemeTypes = Constants.ThemeTypes;
 ({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = Fragment);
@@ -225,8 +225,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((themes) => {
   }
   class P {
     constructor() {
-      closure_0 = setTimeout(() => { /* body not rendered: F144573 */ }, 5500);
-      return () => { /* body not rendered: F144574 */ };
+      closure_0 = setTimeout(() => { /* body not rendered: F144777 */ }, 5500);
+      return () => { /* body not rendered: F144778 */ };
     }
   }
   items = [sharedValue, sharedValue1];

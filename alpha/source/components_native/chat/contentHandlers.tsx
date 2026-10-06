@@ -1,18 +1,18 @@
-// Module ID: 11203
-// Function ID: 11204
+// Module ID: 11216
+// Function ID: 11217
 // Name: contentHandlers
-// Dependencies: [5, 11201, 7518, 8051, 4565, 11204, 11164, 7850, 6681, 4854, 11209, 1987, 11, 2028, 1126, 6688, 4567, 5707, 9933, 2]
+// Dependencies: [5, 11214, 7529, 8061, 4571, 11217, 11177, 7861, 6688, 4860, 11222, 1987, 11, 2028, 1126, 6695, 4573, 5714, 9946, 2]
 
-// Module 11203 (contentHandlers)
+// Module 11216 (contentHandlers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ToastUtils from "ToastUtils" /* 4567 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
-import ClipboardUtils from "ClipboardUtils" /* 6688 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
-import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 11201 */;
+import ToastUtils from "ToastUtils" /* 4573 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5714 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6688 */;
+import ClipboardUtils from "ClipboardUtils" /* 6695 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
+import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 11214 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ let obj = {
     let roleId;
     let roleName;
     let userId;
-    let obj = parsedUserId(11164);
+    let obj = parsedUserId(11177);
     const nativeSyntheticEventData = obj.getNativeSyntheticEventData(nativeEvent);
     ({ userId, channelId, roleName, parsedUserId } = nativeSyntheticEventData);
     ({ roleId, guildId } = nativeSyntheticEventData);
@@ -64,7 +64,7 @@ let obj = {
         if (null != guildId) {
           const obj3 = { guildId, roleId, channelId };
           const obj7 = ActionSheetActionCreatorsDefault;
-          obj7.openLazy(parsedUserId(1987)(11209, dependencyMap.paths), "RoleMembersActionSheet", obj3);
+          obj7.openLazy(parsedUserId(1987)(11222, dependencyMap.paths), "RoleMembersActionSheet", obj3);
         }
       }
       if ("@everyone" === roleName) {
@@ -72,7 +72,7 @@ let obj = {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           const obj4 = { guildId, roleId: obj6.castGuildIdAsEveryoneGuildRoleId(guildId), channelId };
           ActionSheetActionCreatorsDefault;
-          const tmp12 = parsedUserId(1987)(11209, dependencyMap.paths);
+          const tmp12 = parsedUserId(1987)(11222, dependencyMap.paths);
           obj6 = SnowflakeUtilsDefault;
           openLazy(tmp12, "RoleMembersActionSheet", obj4);
         }
@@ -125,7 +125,7 @@ let obj = {
   onTapEmoji(nativeEvent) {
     const node = nativeEvent.nativeEvent.node;
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequire(9933, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: node });
+    obj.openLazy(asyncRequire(9946, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: node });
   }
 };
 let closure_6 = _asyncToGenerator(async (arg0) => {
@@ -168,7 +168,7 @@ let closure_6 = _asyncToGenerator(async (arg0) => {
     await "IconComponent";
     closure_1 = tmp;
     attachmentUrl = nativeEvent.nativeEvent.data.attachmentUrl;
-    return "Set";
+    return "Reflect";
   })();
   iter.next();
   return iter;
@@ -217,7 +217,7 @@ let closure_5 = _asyncToGenerator(async (arg0) => {
     await "IconComponent";
     url = tmp;
     ({ attachmentUrl: c0, fileName: c1 } = nativeEvent.nativeEvent.data);
-    return "Set";
+    return "Reflect";
   })();
   iter.next();
   return iter;
@@ -260,7 +260,7 @@ let closure_4 = _asyncToGenerator(async (arg0) => {
     await "IconComponent";
     urlString = tmp;
     attachmentUrl = nativeEvent.nativeEvent.data.attachmentUrl;
-    return "Set";
+    return "Reflect";
   })();
   iter.next();
   return iter;

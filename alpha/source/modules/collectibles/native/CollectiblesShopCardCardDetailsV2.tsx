@@ -1,33 +1,33 @@
-// Module ID: 8505
-// Function ID: 8506
+// Module ID: 8538
+// Function ID: 8539
 // Name: CollectiblesShopCardCardDetailsV2
-// Dependencies: [19, 17, 6739, 1085, 21, 4890, 587, 558, 576, 8419, 7064, 8506, 7065, 8508, 8523, 1126, 4886, 8491, 1369, 8524, 8313, 7849, 4528, 4580, 4727, 8526, 504, 8527, 5605, 2]
+// Dependencies: [19, 17, 6931, 1085, 21, 4896, 587, 558, 576, 8452, 7077, 8539, 7078, 8541, 8556, 1126, 4892, 8524, 1369, 8557, 8346, 7860, 4534, 4586, 4733, 8559, 504, 8560, 5612, 2]
 
-// Module 8505 (CollectiblesShopCardCardDetailsV2)
+// Module 8538 (CollectiblesShopCardCardDetailsV2)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4528 */;
-import useToken from "useToken" /* 4580 */;
-import ColorUtils from "ColorUtils" /* 4727 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7064 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7065 */;
-import useCurrentUser from "useCurrentUser" /* 7849 */;
-import useDefaultVariantIndex from "useDefaultVariantIndex" /* 8419 */;
-import OrbsIcon from "OrbsIcon" /* 8491 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8506 */;
-import _mod8508 from "module_8508" /* 8508 */;
-import CollectiblesShopPricePlaceholder from "CollectiblesShopPricePlaceholder" /* 8523 */;
-import getProductName from "getProductName" /* 8526 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4534 */;
+import useToken from "useToken" /* 4586 */;
+import ColorUtils from "ColorUtils" /* 4733 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7077 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7078 */;
+import useCurrentUser from "useCurrentUser" /* 7860 */;
+import useDefaultVariantIndex from "useDefaultVariantIndex" /* 8452 */;
+import OrbsIcon from "OrbsIcon" /* 8524 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8539 */;
+import _mod8541 from "module_8541" /* 8541 */;
+import CollectiblesShopPricePlaceholder from "CollectiblesShopPricePlaceholder" /* 8556 */;
+import getProductName from "getProductName" /* 8559 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 6739 */;
+import IAPStore from "IAPStore" /* 6931 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -39,8 +39,8 @@ let obj2;
 let size;
 let tmp11;
 let tmp4;
-const LinearGradientDefault = tmp11(5605);
-const CollectiblesShopCardVariantsDefault = tmp4(8527);
+const LinearGradientDefault = tmp11(5612);
+const CollectiblesShopCardVariantsDefault = tmp4(8560);
 const View = react_native.View;
 ({ CurrencyCodes: metroRequire, VerticalGradient: metroImportDefault } = Constants);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -103,7 +103,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
               tmp13 = cResult[13];
             }
             const discountPercentage2 = tmp13.discountPercentage;
-            const tmpResult = _mod8508;
+            const tmpResult = _mod8541;
             const balance = tmpResult.useFetchVirtualCurrencyBalance().balance;
             let tmp17 = null;
             if (null != tmp9) {
@@ -394,11 +394,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                               }
                             }
                           }
-                          let tmp53Result = discountPercentage2 >= tmp(7065).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
+                          let tmp53Result = discountPercentage2 >= tmp(7078).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
                           if (tmp53Result) {
                             const items1 = [, , ];
                             ({ discountPercentage: arr6[0], text: arr6[1] } = styles);
-                            const Text2 = tmp(4886).Text;
+                            const Text2 = tmp(4892).Text;
                             let androidTextPadding;
                             const tmp53 = metroImportAll;
                             const tmpResult11 = PlatformUtils;
@@ -495,11 +495,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                           }
                         }
                       }
-                      let tmp31Result = discountPercentage >= tmp(7065).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
+                      let tmp31Result = discountPercentage >= tmp(7078).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
                       if (tmp31Result) {
                         const items5 = [, , ];
                         ({ discountPercentage: arr2[0], text: arr2[1] } = styles);
-                        const Text = tmp(4886).Text;
+                        const Text = tmp(4892).Text;
                         let androidTextPadding1;
                         const tmp31 = metroImportAll;
                         const tmpResult13 = PlatformUtils;
@@ -537,10 +537,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                 let tmp21;
                 if (discountSource === CollectiblesUtils.ShopDiscountSource.THIRDPARTY) {
                   const obj22 = { size: "xs", color: "mobile-text-heading-primary", style: styles.wheelIcon };
-                  tmp21 = metroImportAll(tmp(8524).TagIcon, obj22);
+                  tmp21 = metroImportAll(tmp(8557).TagIcon, obj22);
                 } else {
                   const obj23 = { size: "xs", color: "mobile-text-heading-primary", style: styles.wheelIcon };
-                  tmp21 = metroImportAll(tmp(8313).NitroWheelIcon, obj23);
+                  tmp21 = metroImportAll(tmp(8346).NitroWheelIcon, obj23);
                 }
                 tmp19 = tmp21;
               }

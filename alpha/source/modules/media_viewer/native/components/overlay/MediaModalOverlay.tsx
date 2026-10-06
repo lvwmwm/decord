@@ -1,31 +1,31 @@
-// Module ID: 12759
-// Function ID: 12760
+// Module ID: 12774
+// Function ID: 12775
 // Name: MediaModalOverlay
-// Dependencies: [109, 32, 19, 17, 21, 4890, 587, 558, 576, 1126, 12760, 9694, 6619, 9442, 12761, 12762, 12763, 7937, 10931, 1369, 5773, 12764, 7968, 12766, 12770, 7936, 12771, 12772, 4612, 12765, 7934, 7939, 2]
+// Dependencies: [109, 32, 19, 17, 21, 4896, 587, 558, 576, 1126, 12775, 9707, 6626, 9455, 12776, 12777, 12778, 7948, 10944, 1369, 5780, 12779, 7978, 12781, 12785, 7947, 12786, 12787, 4618, 12780, 7945, 7950, 2]
 
-// Module 12759 (MediaModalOverlay)
+// Module 12774 (MediaModalOverlay)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5773 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
-import useMediaViewerSources from "useMediaViewerSources" /* 7934 */;
-import useVideoControls from "useVideoControls" /* 7936 */;
-import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 7937 */;
-import MediaViewerDimensionsContext from "MediaViewerDimensionsContext" /* 7968 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9442 */;
-import useMediaModalFooterAction from "useMediaModalFooterAction" /* 10931 */;
-import useOverlayLayoutDriver from "useOverlayLayoutDriver" /* 12763 */;
-import MediaViewerThumbnailsDefault from "MediaViewerThumbnails" /* 12764 */;
-import MediaModalOverlayHeader from "MediaModalOverlayHeader" /* 12766 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4618 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5780 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6626 */;
+import useMediaViewerSources from "useMediaViewerSources" /* 7945 */;
+import useVideoControls from "useVideoControls" /* 7947 */;
+import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 7948 */;
+import MediaViewerDimensionsContext from "MediaViewerDimensionsContext" /* 7978 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9455 */;
+import useMediaModalFooterAction from "useMediaModalFooterAction" /* 10944 */;
+import useOverlayLayoutDriver from "useOverlayLayoutDriver" /* 12778 */;
+import MediaViewerThumbnailsDefault from "MediaViewerThumbnails" /* 12779 */;
+import MediaModalOverlayHeader from "MediaModalOverlayHeader" /* 12781 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,8 +40,8 @@ let rect;
 let tmp;
 let tmp23;
 let unpackModuleId;
-const MediaSourceUtil = tmp(7939);
-const MediaModalOverlayAltTextDefault = tmp23(12770);
+const MediaSourceUtil = tmp(7950);
+const MediaModalOverlayAltTextDefault = tmp23(12785);
 let closure_3 = ["onIndexChange"];
 const StyleSheet = react_native.StyleSheet;
 let View = react_native.View;
@@ -72,7 +72,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onToggleMute) 
   } else {
     first = cResult[0];
   }
-  const tmp7Result = importDefault(isMuted ? 12760 : 9694);
+  const tmp7Result = importDefault(isMuted ? 12775 : 9707);
   if (cResult[1] === onToggleMute) {
     if (cResult[2] === tmp4.overlayButton) {
       if (cResult[3] === tmp4.overlayButtonIcon) {
@@ -85,7 +85,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onToggleMute) 
     }
   }
   const rect = { left: true, right: true, children: React4(tmp7Result2, obj2) };
-  const SafeAreaPaddingView = tmp(6619).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp(6626).SafeAreaPaddingView;
   obj2 = { accessibilityRole: "button", accessibilityLabel: first, source: tmp7Result, color: nativeDefault.unsafe_rawColors.WHITE, onPress: onToggleMute, style: null, iconStyle: null };
   ({ overlayButton: obj3.style, overlayButtonIcon: obj3.iconStyle } = tmp4);
   tmp7Result2 = TouchableHitBoxDefault;
@@ -103,7 +103,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onToggleMute) 
   ({ isMuted, onToggleMute } = arg0);
   const tmp = closure_12();
   const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
-  const obj = { accessibilityRole: "button", accessibilityLabel: intl.string(intl2.t.w4m945), source: importDefault(isMuted ? 12760 : 9694), color: nativeDefault.unsafe_rawColors.WHITE, onPress: onToggleMute, style: null, iconStyle: null };
+  const obj = { accessibilityRole: "button", accessibilityLabel: intl.string(intl2.t.w4m945), source: importDefault(isMuted ? 12775 : 9707), color: nativeDefault.unsafe_rawColors.WHITE, onPress: onToggleMute, style: null, iconStyle: null };
   const tmp5 = TouchableHitBoxDefault;
   intl = intl2.intl;
   const rect = { left: true, right: true, children: React4(tmp5, obj) };
@@ -128,7 +128,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onToggleObscur
   } else {
     first = cResult[0];
   }
-  const tmp7Result = importDefault(spoilerActive ? 12761 : 12762);
+  const tmp7Result = importDefault(spoilerActive ? 12776 : 12777);
   if (cResult[1] === onToggleObscure) {
     if (cResult[2] === tmp4.overlayButton) {
       if (cResult[3] === tmp4.overlayButtonIcon) {
@@ -141,7 +141,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onToggleObscur
     }
   }
   const rect = { left: true, right: true, children: React4(tmp7Result2, obj2) };
-  const SafeAreaPaddingView = tmp(6619).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp(6626).SafeAreaPaddingView;
   obj2 = { accessibilityRole: "button", accessibilityLabel: first, source: tmp7Result, color: nativeDefault.unsafe_rawColors.WHITE, onPress: onToggleObscure, style: null, iconStyle: null };
   ({ overlayButton: obj3.style, overlayButtonIcon: obj3.iconStyle } = tmp4);
   tmp7Result2 = TouchableHitBoxDefault;
@@ -159,7 +159,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onToggleObscur
   ({ spoilerActive, onToggleObscure } = arg0);
   const tmp = closure_12();
   const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
-  const obj = { accessibilityRole: "button", accessibilityLabel: intl.string(intl2.t.UIsxUw), source: importDefault(spoilerActive ? 12761 : 12762), color: nativeDefault.unsafe_rawColors.WHITE, onPress: onToggleObscure, style: null, iconStyle: null };
+  const obj = { accessibilityRole: "button", accessibilityLabel: intl.string(intl2.t.UIsxUw), source: importDefault(spoilerActive ? 12776 : 12777), color: nativeDefault.unsafe_rawColors.WHITE, onPress: onToggleObscure, style: null, iconStyle: null };
   const tmp5 = TouchableHitBoxDefault;
   intl = intl2.intl;
   const rect = { left: true, right: true, children: React4(tmp5, obj) };
@@ -258,7 +258,7 @@ let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
       }
     }
     const rect = { bottom: true, left: true, right: true, style: { paddingTop: 8 }, children: items };
-    const SafeAreaPaddingView = tmp(6619).SafeAreaPaddingView;
+    const SafeAreaPaddingView = tmp(6626).SafeAreaPaddingView;
     const tmpResult6 = PlatformUtils;
     let isIOSResult = tmpResult6.isIOS();
     if (isIOSResult) {
@@ -332,7 +332,7 @@ let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
   const mediaModalFooterActionStore = obj4.useMediaModalFooterActionStore((footerAction) => footerAction.footerAction);
   if (null != slider) {
     const rect = { bottom: true, left: true, right: true, style: { paddingTop: 8 }, children: items };
-    const SafeAreaPaddingView = tmp2(6619).SafeAreaPaddingView;
+    const SafeAreaPaddingView = tmp2(6626).SafeAreaPaddingView;
     const tmp2Result = PlatformUtils;
     let isIOSResult = tmp2Result.isIOS();
     const tmp12 = authStore;
@@ -388,14 +388,14 @@ let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
   items3[1] = tmp20Result;
   if (null != mediaModalFooterActionStore) {
     const obj13 = { footerAction: mediaModalFooterActionStore, sliderElement: slider, syncer };
-    tmp22Result5 = tmp22(tmp2(12771).MediaModalOverlayFooterAction, obj13);
+    tmp22Result5 = tmp22(tmp2(12786).MediaModalOverlayFooterAction, obj13);
   } else if (disableMediaOverlayFooter) {
     const obj14 = { bottom: true, style: tmp.invisibleFooter };
-    tmp22Result5 = tmp22(tmp2(6619).SafeAreaPaddingView, obj14);
+    tmp22Result5 = tmp22(tmp2(6626).SafeAreaPaddingView, obj14);
   } else if (height >= 600) {
     const obj15 = { sliderElement: slider, syncer, guildId: null, channelId: null, messageId: null, onClose, onFullViewToggled: tmp8, overlayEnabled };
     ({ guildId: obj16.guildId, channelId: obj16.channelId, messageId: obj16.messageId } = source);
-    tmp22Result5 = tmp22(tmp2(12772).MediaModalOverlayFooter, obj15);
+    tmp22Result5 = tmp22(tmp2(12787).MediaModalOverlayFooter, obj15);
   }
   const obj17 = { children: items1 };
   items3[2] = tmp22Result5;
@@ -423,7 +423,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       importDefault = tmp4;
       const tmp7 = useVideoControlsDefault(index, source, tmp4);
-      const tmpResult = tmp(12765);
+      const tmpResult = tmp(12780);
       const first = _slicedToArray(tmpResult.useMediaItemSpoilerState(index), 1)[0];
       if (cResult[4] !== index) {
         const fn = function b() {
@@ -500,8 +500,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let source;
   ({ source, index } = getVideoControls);
   const videoControls = getVideoControls.getVideoControls(index, source);
-  const tmp2 = videoControls(7936)(index, source, videoControls);
-  let obj = index(12765);
+  const tmp2 = videoControls(7947)(index, source, videoControls);
+  let obj = index(12780);
   const items = [index];
   const first = _slicedToArray(obj.useMediaItemSpoilerState(index), 1)[0];
   const items1 = [videoControls];

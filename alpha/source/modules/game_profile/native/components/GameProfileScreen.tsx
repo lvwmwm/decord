@@ -1,25 +1,25 @@
-// Module ID: 8326
-// Function ID: 8327
+// Module ID: 8359
+// Function ID: 8360
 // Name: GameProfileScreen
-// Dependencies: [32, 19, 17, 8327, 21, 4890, 587, 558, 576, 1126, 5594, 7841, 8328, 4565, 8319, 6812, 5896, 4612, 8331, 4891, 8332, 8337, 4854, 8354, 6112, 8355, 8357, 8566, 6649, 6645, 2]
+// Dependencies: [32, 19, 17, 8360, 21, 4896, 587, 558, 576, 1126, 5601, 7852, 8361, 4571, 8352, 6822, 5903, 4618, 8364, 4897, 8365, 8370, 4860, 8387, 6119, 8388, 8390, 8601, 6656, 6652, 2]
 
-// Module 8326 (GameProfileScreen)
+// Module 8359 (GameProfileScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4854 */;
-import timing from "timing" /* 4891 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8319 */;
-import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 8337 */;
-import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 8354 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4860 */;
+import timing from "timing" /* 4897 */;
+import components_Button_Button from "components/Button/Button" /* 5601 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8352 */;
+import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 8370 */;
+import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 8387 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameProfileStore from "GameProfileStore" /* 8327 */;
+import GameProfileStore from "GameProfileStore" /* 8360 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

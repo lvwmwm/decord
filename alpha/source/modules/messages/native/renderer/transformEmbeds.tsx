@@ -1,25 +1,25 @@
-// Module ID: 7789
-// Function ID: 7790
+// Module ID: 7800
+// Function ID: 7801
 // Name: transformEmbeds
-// Dependencies: [17, 1085, 7790, 7791, 5426, 7792, 1369, 7605, 5040, 1126, 7761, 4552, 6795, 6800, 5102, 2]
+// Dependencies: [17, 1085, 7801, 7802, 5433, 7803, 1369, 7616, 5046, 1126, 7772, 4558, 6805, 6810, 5108, 2]
 // Exports: default
 
-// Module 7789 (transformEmbeds)
+// Module 7800 (transformEmbeds)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
-import DateUtils from "DateUtils" /* 4552 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5040 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5102 */;
-import EmbedUtils from "EmbedUtils" /* 5426 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6795 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6800 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7605 */;
-import MarkupParsers from "MarkupParsers" /* 7761 */;
-import sanitizeMediaDimension from "sanitizeMediaDimension" /* 7790 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 7791 */;
-import utils from "utils" /* 7792 */;
+import DateUtils from "DateUtils" /* 4558 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5046 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5108 */;
+import EmbedUtils from "EmbedUtils" /* 5433 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6805 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6810 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7616 */;
+import MarkupParsers from "MarkupParsers" /* 7772 */;
+import sanitizeMediaDimension from "sanitizeMediaDimension" /* 7801 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 7802 */;
+import utils from "utils" /* 7803 */;
 import size from "module_2" /* 2 */;
 
 let borderLeftColor, type;
@@ -182,7 +182,7 @@ export default function transformEmbeds(arg0) {
                             }
                             ({ proxyURL: proxyURL4, url: url4 } = type.video);
                             let tmp52 = url4;
-                            const isWebPlayerVideoUrl = tmp3(5040).isWebPlayerVideoUrl;
+                            const isWebPlayerVideoUrl = tmp3(5046).isWebPlayerVideoUrl;
                             MediaFormatTesters;
                             if (null != proxyURL4) {
                               tmp52 = url4;
@@ -203,7 +203,7 @@ export default function transformEmbeds(arg0) {
                             if (null == type.video.proxyURL) {
                               const provider2 = type.provider;
                               let name;
-                              const getEffectiveVideoProvider = tmp3(5426).getEffectiveVideoProvider;
+                              const getEffectiveVideoProvider = tmp3(5433).getEffectiveVideoProvider;
                               EmbedUtils;
                               if (provider2 != null) {
                                 name = provider2.name;
@@ -250,7 +250,7 @@ export default function transformEmbeds(arg0) {
                     if (null != type.url) {
                       let parseEmbedTitleMarkup;
                       if ("" !== type.url) {
-                        parseEmbedTitleMarkup = tmp3(7761).parseEmbedTitleMarkupWithoutLinks;
+                        parseEmbedTitleMarkup = tmp3(7772).parseEmbedTitleMarkupWithoutLinks;
                       }
                       if (type.type === MessageEmbedTypes.RICH) {
                         let rawTitle;
@@ -362,14 +362,14 @@ export default function transformEmbeds(arg0) {
                           tmp88 = closure_13(mapped2);
                         }
                         const obj13 = { type: ExplicitMediaRedactionModels.ObscuredMediaTypes.Embed, media: type };
-                        const getMediaObscuredReasonFromBitmask = tmp3(6795).getMediaObscuredReasonFromBitmask;
+                        const getMediaObscuredReasonFromBitmask = tmp3(6805).getMediaObscuredReasonFromBitmask;
                         ObscuredMediaUtils;
                         let isMediaScanPendingResult = !closure_10;
                         const mediaObscuredReasonFromBitmask = getMediaObscuredReasonFromBitmask(obj13, closure_9);
                         const tmp93 = closure_9;
                         if (!closure_10) {
                           const obj14 = { type: ExplicitMediaRedactionModels.ObscuredMediaTypes.Embed, media: type };
-                          const isMediaScanPending = tmp3(6795).isMediaScanPending;
+                          const isMediaScanPending = tmp3(6805).isMediaScanPending;
                           ObscuredMediaUtils;
                           isMediaScanPendingResult = isMediaScanPending(obj14, tmp93);
                         }
@@ -409,7 +409,7 @@ export default function transformEmbeds(arg0) {
                       }
                       rawTitle = type.rawTitle;
                     }
-                    parseEmbedTitleMarkup = tmp3(7761).parseEmbedTitleMarkup;
+                    parseEmbedTitleMarkup = tmp3(7772).parseEmbedTitleMarkup;
                   }
                   let tmp28 = null == tmp26;
                   if (!tmp28) {

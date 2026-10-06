@@ -1,31 +1,31 @@
-// Module ID: 10360
-// Function ID: 10361
+// Module ID: 10373
+// Function ID: 10374
 // Name: ImageCarousel
-// Dependencies: [19, 17, 7031, 7267, 10361, 21, 4890, 587, 558, 576, 4612, 4891, 1188, 5597, 38, 7247, 504, 10362, 1126, 11042, 7917, 4886, 7948, 6458, 11043, 5909, 6427, 1484, 8812, 10364, 7269, 2]
+// Dependencies: [19, 17, 7044, 7280, 10374, 21, 4896, 587, 558, 576, 4618, 4897, 1188, 5604, 38, 7260, 504, 10375, 1126, 11055, 7928, 4892, 7959, 6465, 11056, 5916, 6434, 1484, 8842, 10377, 7282, 2]
 
-// Module 10360 (ImageCarousel)
+// Module 10373 (ImageCarousel)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import native from "native" /* 1188 */;
 import useWindowDimensions from "useWindowDimensions" /* 1484 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import spring from "spring" /* 5597 */;
-import Pressables from "Pressables" /* 5909 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6427 */;
-import DraftStore from "DraftStore" /* 7031 */;
-import Upload from "Upload" /* 7269 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8812 */;
-import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10362 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10364 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 11043 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4618 */;
+import timing from "timing" /* 4897 */;
+import spring from "spring" /* 5604 */;
+import Pressables from "Pressables" /* 5916 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6434 */;
+import DraftStore from "DraftStore" /* 7044 */;
+import Upload from "Upload" /* 7282 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8842 */;
+import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10375 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10377 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 11056 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7267 */;
-import ImageCarouselConstants from "ImageCarouselConstants" /* 10361 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7280 */;
+import ImageCarouselConstants from "ImageCarouselConstants" /* 10374 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -79,7 +79,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp = sharedValue;
   let obj = sharedValue(576);
   const cResult = obj.c(5);
-  let obj2 = sharedValue(4612);
+  let obj2 = sharedValue(4618);
   sharedValue = obj2.useSharedValue(0);
   if (cResult[0] !== sharedValue) {
     const fn = function o() {
@@ -113,9 +113,9 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       obj4 = spring;
       return obj;
     };
-    let obj3 = { withTiming: tmp(4891).withTiming, animatedStylePropValue: sharedValue, STANDARD_EASING: tmp(1188).STANDARD_EASING, withSpring: tmp(5597).withSpring };
-    const useAnimatedStyle = tmp(4612).useAnimatedStyle;
-    tmp(4612);
+    let obj3 = { withTiming: tmp(4897).withTiming, animatedStylePropValue: sharedValue, STANDARD_EASING: tmp(1188).STANDARD_EASING, withSpring: tmp(5604).withSpring };
+    const useAnimatedStyle = tmp(4618).useAnimatedStyle;
+    tmp(4618);
     fn2.__closure = obj3;
     fn2.__workletHash = 14689938623095;
     fn2.__initData = __initData;
@@ -128,13 +128,13 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   tmp6 = items;
 }) : ((arg0) => {
   let sharedValue;
-  let obj = sharedValue(4612);
+  let obj = sharedValue(4618);
   sharedValue = obj.useSharedValue(0);
   let items = [sharedValue, arg0];
   const effect = react.useEffect(() => {
     const result = sharedValue.set(1);
   }, items);
-  let obj2 = sharedValue(4612);
+  let obj2 = sharedValue(4618);
   const fn = function o() {
     let items;
     let obj2;
@@ -151,7 +151,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj4 = spring;
     return obj;
   };
-  let obj3 = { withTiming: sharedValue(4891).withTiming, animatedStylePropValue: sharedValue, STANDARD_EASING: sharedValue(1188).STANDARD_EASING, withSpring: sharedValue(5597).withSpring };
+  let obj3 = { withTiming: sharedValue(4897).withTiming, animatedStylePropValue: sharedValue, STANDARD_EASING: sharedValue(1188).STANDARD_EASING, withSpring: sharedValue(5604).withSpring };
   fn.__closure = obj3;
   fn.__workletHash = 1893609222612;
   fn.__initData = __initData2;
@@ -1360,7 +1360,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   items4 = [unpackModuleId(tmp14, size), children];
   items5 = [unpackModuleId(PressableOpacity, obj2), ];
   const obj5 = { accessibilityRole: "button", accessibilityLabel: removeAccessibilityLabel, style: tmp.closeButton, onPress: onRemove, hitSlop: { top: 4, bottom: 4, left: 4, right: 4 }, children: unpackModuleId(View2, obj6) };
-  const PressableOpacity2 = tmp9(5909).PressableOpacity;
+  const PressableOpacity2 = tmp9(5916).PressableOpacity;
   obj6 = { style: items6, children: unpackModuleId(Icon, obj7) };
   items6 = [tmp.closeContainer, tmp8];
   View2 = ReanimatedRexportDefault.View;

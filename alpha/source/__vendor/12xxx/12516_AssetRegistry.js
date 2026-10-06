@@ -1,0 +1,10 @@
+// Module ID: 12516
+// Function ID: 12517
+// Name: AssetRegistry
+// Dependencies: [1132]
+
+// Module 12516 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1132 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "bbba3abb9f8c7848e1476bd19131aa3a", name: "MagicWandIcon", type: "png" });

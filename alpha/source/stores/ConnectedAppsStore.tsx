@@ -1,9 +1,9 @@
-// Module ID: 6603
-// Function ID: 6604
+// Module ID: 6610
+// Function ID: 6611
 // Name: ConnectedAppsStore
 // Dependencies: [504, 12, 584, 2]
 
-// Module 6603 (ConnectedAppsStore)
+// Module 6610 (ConnectedAppsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

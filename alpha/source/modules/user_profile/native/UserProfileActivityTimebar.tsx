@@ -1,17 +1,17 @@
-// Module ID: 12845
-// Function ID: 12846
+// Module ID: 12864
+// Function ID: 12865
 // Name: UserProfileActivityTimebar
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 12846, 4886, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 12865, 4892, 2]
 
-// Module 12845 (UserProfileActivityTimebar)
+// Module 12864 (UserProfileActivityTimebar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import useActivityTimer from "useActivityTimer" /* 12846 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import useActivityTimer from "useActivityTimer" /* 12865 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

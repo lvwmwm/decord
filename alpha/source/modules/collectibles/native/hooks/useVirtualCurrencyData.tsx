@@ -1,12 +1,12 @@
-// Module ID: 12986
-// Function ID: 12987
+// Module ID: 13005
+// Function ID: 13006
 // Name: useVirtualCurrencyData
-// Dependencies: [19, 558, 576, 7064, 8508, 2]
+// Dependencies: [19, 558, 576, 7077, 8541, 2]
 
-// Module 12986 (useVirtualCurrencyData)
+// Module 13005 (useVirtualCurrencyData)
 import react2 from "react" /* 576 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7064 */;
-import _mod8508 from "module_8508" /* 8508 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7077 */;
+import _mod8541 from "module_8541" /* 8541 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product, hasShopDisc
     if (cResult[1] === product) {
       tmp4 = cResult[2];
     }
-    const tmpResult = _mod8508;
+    const tmpResult = _mod8541;
     const balance = tmpResult.useFetchVirtualCurrencyBalance().balance;
     let tmp7 = null;
     if (null != tmp4) {
@@ -55,7 +55,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product, hasShopDisc
   const obj = CollectiblesProductUtils;
   const obj2 = { product, hasShopDiscount };
   const productOrbPrice = obj.getProductOrbPrice(obj2);
-  const obj3 = _mod8508;
+  const obj3 = _mod8541;
   const balance = obj3.useFetchVirtualCurrencyBalance().balance;
   const items = [productOrbPrice, balance];
   const obj4 = {

@@ -1,9 +1,9 @@
-// Module ID: 8518
-// Function ID: 8519
+// Module ID: 8551
+// Function ID: 8552
 // Name: OrbRedemptionOrdersExperiment
 // Dependencies: [1440, 2]
 
-// Module 8518 (OrbRedemptionOrdersExperiment)
+// Module 8551 (OrbRedemptionOrdersExperiment)
 import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 

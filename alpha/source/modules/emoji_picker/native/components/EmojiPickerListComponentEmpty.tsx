@@ -1,19 +1,19 @@
-// Module ID: 9920
-// Function ID: 9921
+// Module ID: 9933
+// Function ID: 9934
 // Name: EmojiPickerListComponentEmpty
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 9921, 9925, 6112, 1126, 1188, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 9934, 9938, 6119, 1126, 1188, 2]
 
-// Module 9920 (EmojiPickerListComponentEmpty)
+// Module 9933 (EmojiPickerListComponentEmpty)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1188 */;
-import SearchEmpty from "SearchEmpty" /* 9921 */;
-import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9925 */;
+import SearchEmpty from "SearchEmpty" /* 9934 */;
+import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9938 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     const tmpResult2 = useModalDismissGuardRefreshControl;
     const modalDismissGuardRefreshControl = tmpResult2.useModalDismissGuardRefreshControl();
     if (inActionSheet) {
-      BottomSheetScrollView = tmp(6112).BottomSheetScrollView;
+      BottomSheetScrollView = tmp(6119).BottomSheetScrollView;
     } else {
       BottomSheetScrollView = ScrollView;
     }
@@ -116,7 +116,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   const obj2 = useModalDismissGuardRefreshControl;
   const modalDismissGuardRefreshControl = obj2.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp3(6112).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp3(6119).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }

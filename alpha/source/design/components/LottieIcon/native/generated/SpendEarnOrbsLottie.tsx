@@ -1,13 +1,13 @@
-// Module ID: 11006
-// Function ID: 11007
+// Module ID: 11019
+// Function ID: 11020
 // Name: SpendEarnOrbsLottie
-// Dependencies: [19, 21, 558, 576, 11007, 9629, 2]
+// Dependencies: [19, 21, 558, 576, 11020, 9642, 2]
 
-// Module 11006 (SpendEarnOrbsLottie)
+// Module 11019 (SpendEarnOrbsLottie)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import LottieIcon2 from "LottieIcon" /* 9629 */;
-import AssetRegistry from "AssetRegistry" /* 11007 */;
+import LottieIcon2 from "LottieIcon" /* 9642 */;
+import AssetRegistry from "AssetRegistry" /* 11020 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -34,7 +34,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     }
     return tmp6;
   }
-  const LottieIcon = tmp(9629).LottieIcon;
+  const LottieIcon = tmp(9642).LottieIcon;
   const merged = Object.assign(arg0);
   const tmp8 = <LottieIcon dotLottie={first} ref={arg1} layers={layers} markers={items} />;
   cResult[1] = arg0;

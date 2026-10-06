@@ -1,27 +1,27 @@
-// Module ID: 14322
-// Function ID: 14323
+// Module ID: 14340
+// Function ID: 14341
 // Name: links
-// Dependencies: [5, 2050, 5118, 5316, 1085, 2011, 14302, 14323, 1369, 4884, 1252, 9048, 4498, 14324, 4559, 8047, 14325, 9026, 9029, 9031, 6885, 14317, 2016, 14326, 2]
+// Dependencies: [5, 2050, 5124, 5323, 1085, 2011, 14320, 14341, 1369, 4890, 1252, 9084, 4504, 14342, 4565, 8057, 14343, 9059, 9062, 9064, 6895, 14335, 2016, 14344, 2]
 
-// Module 14322 (links)
+// Module 14340 (links)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4498 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4884 */;
-import RPCErrorDefault from "RPCError" /* 9026 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9029 */;
-import RPCHelpers from "RPCHelpers" /* 9031 */;
-import ActivityPopoutUtils from "ActivityPopoutUtils" /* 9048 */;
-import validateEmbeddedAppFrame from "validateEmbeddedAppFrame" /* 14302 */;
-import internalDeepLinks from "internalDeepLinks" /* 14323 */;
-import openActivityShareLinkModal from "openActivityShareLinkModal" /* 14326 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4504 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4890 */;
+import RPCErrorDefault from "RPCError" /* 9059 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9062 */;
+import RPCHelpers from "RPCHelpers" /* 9064 */;
+import ActivityPopoutUtils from "ActivityPopoutUtils" /* 9084 */;
+import validateEmbeddedAppFrame from "validateEmbeddedAppFrame" /* 14320 */;
+import internalDeepLinks from "internalDeepLinks" /* 14341 */;
+import openActivityShareLinkModal from "openActivityShareLinkModal" /* 14344 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
-import Constants_mod from "Constants" /* 5316 */;
+import ApplicationStore from "ApplicationStore" /* 5124 */;
+import Constants_mod from "Constants" /* 5323 */;
 import Constants_mod2 from "Constants" /* 1085 */;
 import Constants_mod3 from "Constants" /* 2011 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14317 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14335 */;
 import size from "module_2" /* 2 */;
 
 let _Promise, c2, currentEmbeddedActivity, getApplication;
@@ -41,7 +41,7 @@ let obj2;
 let obj3;
 let tmp;
 const EmbeddedSurfaceUtils = tmp(2016);
-const openUserSettings = tmp(6885);
+const openUserSettings = tmp(6895);
 let obj = function _openExternalLink() {
   obj = _asyncToGenerator(async (arg0, url) => {
     let closure_3;

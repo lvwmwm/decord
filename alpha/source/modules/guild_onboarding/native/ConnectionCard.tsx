@@ -1,14 +1,14 @@
-// Module ID: 6655
-// Function ID: 6656
+// Module ID: 6662
+// Function ID: 6663
 // Name: ConnectionCard
-// Dependencies: [19, 6596, 21, 558, 576, 6656, 6673, 2]
+// Dependencies: [19, 6603, 21, 558, 576, 6663, 6680, 2]
 
-// Module 6655 (ConnectionCard)
+// Module 6662 (ConnectionCard)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6596 */;
-import ApplicationConnectionCardDefault from "ApplicationConnectionCard" /* 6656 */;
-import ProviderConnectionCardDefault from "ProviderConnectionCard" /* 6673 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6603 */;
+import ApplicationConnectionCardDefault from "ApplicationConnectionCard" /* 6663 */;
+import ProviderConnectionCardDefault from "ProviderConnectionCard" /* 6680 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

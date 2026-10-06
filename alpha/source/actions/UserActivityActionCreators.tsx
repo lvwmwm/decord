@@ -1,14 +1,14 @@
-// Module ID: 11384
-// Function ID: 11385
+// Module ID: 11397
+// Function ID: 11398
 // Name: UserActivityActionCreators
-// Dependencies: [5, 4930, 1085, 584, 11381, 1282, 2]
+// Dependencies: [5, 4936, 1085, 584, 11394, 1987, 1282, 2]
 // Exports: getMetadata, play, sync
 
-// Module 11384 (UserActivityActionCreators)
+// Module 11397 (UserActivityActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PresenceStore from "PresenceStore" /* 4930 */;
+import PresenceStore from "PresenceStore" /* 4936 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -65,17 +65,16 @@ export const sync = function sync(activity, userId) {
   const obj2 = { type: "ACTIVITY_SYNC", activity, userId };
   obj.dispatch(obj2);
 };
-export const play = function play(result, userId) {
-  let activity;
-  _require = result;
-  obj = require("SpotifyUtils");
-  const spotifyMetadataFromActivity = obj.getSpotifyMetadataFromActivity(result, userId);
-  const nextPromise = spotifyMetadataFromActivity.then((metadata) => {
+export const play = function play(activity, userId) {
+  _require = activity;
+  const promise = require("asyncRequire")(11394, dependencyMap.paths);
+  const nextPromise = promise.then((getSpotifyMetadataFromActivity) => getSpotifyMetadataFromActivity.getSpotifyMetadataFromActivity(activity, userId));
+  const nextPromise1 = nextPromise.then((metadata) => {
     obj = DispatcherDefault;
     const obj2 = { type: "ACTIVITY_PLAY", activity, userId, metadata };
     return obj.dispatch(obj2);
   });
-  nextPromise.catch(() => {
+  nextPromise1.catch(() => {
     obj = DispatcherDefault;
     const obj2 = { type: "ACTIVITY_PLAY", activity, userId };
     return obj.dispatch(obj2);

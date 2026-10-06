@@ -1,17 +1,17 @@
-// Module ID: 14349
-// Function ID: 14350
+// Module ID: 14367
+// Function ID: 14368
 // Name: conjureLivePreview
-// Dependencies: [5118, 8699, 8703, 5316, 1085, 14317, 14302, 9026, 14350, 2]
+// Dependencies: [5124, 8734, 9000, 5323, 1085, 14335, 14320, 9059, 14368, 2]
 
-// Module 14349 (conjureLivePreview)
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 14302 */;
-import conjureLiveRelaunch from "conjureLiveRelaunch" /* 14350 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 8699 */;
-import FramesStore from "FramesStore" /* 8703 */;
-import Constants_mod from "Constants" /* 5316 */;
+// Module 14367 (conjureLivePreview)
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 14320 */;
+import conjureLiveRelaunch from "conjureLiveRelaunch" /* 14368 */;
+import ApplicationStore from "ApplicationStore" /* 5124 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 8734 */;
+import FramesStore from "FramesStore" /* 9000 */;
+import Constants_mod from "Constants" /* 5323 */;
 import Constants_mod2 from "Constants" /* 1085 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14317 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14335 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;
@@ -20,7 +20,7 @@ let RPC_EMBEDDED_APP_SCOPE;
 let RPC_SCOPE_CONFIG;
 let metroRequire;
 let tmp;
-const RPCErrorDefault = tmp(9026);
+const RPCErrorDefault = tmp(9059);
 let Constants = Constants_mod2;
 ({ RPC_AUTHENTICATED_SCOPE, RPC_EMBEDDED_APP_SCOPE, RPC_SCOPE_CONFIG } = Constants);
 Constants = Constants_mod2;

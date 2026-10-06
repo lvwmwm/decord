@@ -1,13 +1,13 @@
-// Module ID: 17539
-// Function ID: 17540
+// Module ID: 17584
+// Function ID: 17585
 // Name: JankNavigationReporter
-// Dependencies: [4737, 15938, 15934, 15939, 4739, 2]
+// Dependencies: [4743, 15977, 15973, 15978, 4745, 2]
 
-// Module 17539 (JankNavigationReporter)
-import RootNavigationRef from "RootNavigationRef" /* 4737 */;
-import getJankScreenName from "getJankScreenName" /* 15934 */;
-import react_nativeDefault from "react-native" /* 15938 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 15939 */;
+// Module 17584 (JankNavigationReporter)
+import RootNavigationRef from "RootNavigationRef" /* 4743 */;
+import getJankScreenName from "getJankScreenName" /* 15973 */;
+import react_nativeDefault from "react-native" /* 15977 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 15978 */;
 import size from "module_2" /* 2 */;
 
 const getJankScreenNameDefault = getJankScreenName;
@@ -92,7 +92,7 @@ class JankNavigationReporter {
       let isChatLockedOpen = name === getJankScreenName.CHAT_PANEL_ROUTE;
       const tmp4 = require;
       if (isChatLockedOpen) {
-        const tmp4Result = tmp4(4739);
+        const tmp4Result = tmp4(4745);
         isChatLockedOpen = tmp4Result.getChatLayout().isChatLockedOpen;
       }
       tmp2 = isChatLockedOpen;

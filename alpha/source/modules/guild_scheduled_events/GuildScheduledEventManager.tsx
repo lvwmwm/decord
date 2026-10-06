@@ -1,14 +1,14 @@
-// Module ID: 9271
-// Function ID: 9272
+// Module ID: 9306
+// Function ID: 9307
 // Name: GuildScheduledEventManager
-// Dependencies: [5, 4699, 7037, 9178, 6613, 2]
+// Dependencies: [5, 4705, 7050, 9213, 6620, 2]
 
-// Module 9271 (GuildScheduledEventManager)
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9178 */;
+// Module 9306 (GuildScheduledEventManager)
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9213 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7037 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7050 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6620 */;
 import size from "module_2" /* 2 */;
 
 let _self, c1, c7, c9;
@@ -342,7 +342,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
     let self = this;
     return (async function(arg0, value) {
       let closure_0;
-      const f152053 = (arg0) => setTimeout(arg0, 200 * Math.random() + 50);
+      const f152289 = (arg0) => setTimeout(arg0, 200 * Math.random() + 50);
       if (c9 === 2) {
         c9 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -390,7 +390,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
               let _Promise3 = Promise;
               let self5 = this;
               let self6 = this;
-              let promise = new Promise(f152053);
+              let promise = new Promise(f152289);
               c8 = 3;
               c9 = 1;
               let obj4 = { value: promise, done: false };
@@ -417,7 +417,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
                 let _Promise2 = Promise;
                 let self3 = this;
                 let self4 = this;
-                let promise3 = new Promise(f152053);
+                let promise3 = new Promise(f152289);
                 c8 = 5;
                 c9 = 1;
                 let obj6 = { value: promise3, done: false };
@@ -427,7 +427,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
                 let _Promise = Promise;
                 self = this;
                 let self2 = this;
-                let promise4 = new Promise(f152053);
+                let promise4 = new Promise(f152289);
                 c8 = 6;
                 c9 = 1;
                 let obj7 = { value: promise4, done: false };

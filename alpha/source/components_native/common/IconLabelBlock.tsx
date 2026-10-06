@@ -1,20 +1,20 @@
-// Module ID: 17030
-// Function ID: 17031
+// Module ID: 17056
+// Function ID: 17057
 // Name: IconLabelBlock
-// Dependencies: [109, 19, 17, 21, 4890, 587, 4589, 1188, 4886, 10665, 4729, 2]
+// Dependencies: [109, 19, 17, 21, 4896, 587, 4595, 1188, 4892, 10678, 4735, 2]
 
-// Module 17030 (IconLabelBlock)
+// Module 17056 (IconLabelBlock)
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1188 */;
-import native2 from "native" /* 4589 */;
-import shared from "shared" /* 4729 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import IconUploaderDefault from "IconUploader" /* 10665 */;
+import native2 from "native" /* 4595 */;
+import shared from "shared" /* 4735 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import IconUploaderDefault from "IconUploader" /* 10678 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

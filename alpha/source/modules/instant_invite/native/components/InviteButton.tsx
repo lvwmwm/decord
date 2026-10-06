@@ -1,17 +1,17 @@
-// Module ID: 9556
-// Function ID: 9557
+// Module ID: 9569
+// Function ID: 9570
 // Name: InviteButton
-// Dependencies: [19, 17, 7226, 21, 4890, 558, 576, 1126, 5594, 2]
+// Dependencies: [19, 17, 7239, 21, 4896, 558, 576, 1126, 5601, 2]
 
-// Module 9556 (InviteButton)
+// Module 9569 (InviteButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1126 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import Constants from "Constants" /* 7226 */;
+import components_Button_Button from "components/Button/Button" /* 5601 */;
+import Constants from "Constants" /* 7239 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -147,7 +147,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     stringResult1 = intl2.string(tmp2(1126).t.jYnGPG);
     flag = false;
   }
-  const Button = tmp2(5594).Button;
+  const Button = tmp2(5601).Button;
   if (!disabled) {
     disabled = flag;
   }

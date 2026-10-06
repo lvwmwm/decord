@@ -1,10 +1,10 @@
-// Module ID: 8873
-// Function ID: 8874
+// Module ID: 8902
+// Function ID: 8903
 // Name: GPlayAnalyticsStore
 // Dependencies: [570, 1259, 2]
 // Exports: deleteGPlayAnalytics, setGPlayAnalytics
 
-// Module 8873 (GPlayAnalyticsStore)
+// Module 8902 (GPlayAnalyticsStore)
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 

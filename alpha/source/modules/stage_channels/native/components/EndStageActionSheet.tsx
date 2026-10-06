@@ -1,20 +1,20 @@
-// Module ID: 12730
-// Function ID: 12731
+// Module ID: 12745
+// Function ID: 12746
 // Name: EndStageActionSheet
-// Dependencies: [19, 17, 5571, 1085, 21, 4890, 587, 558, 576, 4854, 9299, 8074, 1126, 1188, 4886, 5594, 9466, 2]
+// Dependencies: [19, 17, 5578, 1085, 21, 4896, 587, 558, 576, 4860, 9334, 8107, 1126, 1188, 4892, 5601, 9479, 2]
 
-// Module 12730 (EndStageActionSheet)
+// Module 12745 (EndStageActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 5571 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 8074 */;
-import CallsUtils from "CallsUtils" /* 9299 */;
-import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 9466 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 5578 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 8107 */;
+import CallsUtils from "CallsUtils" /* 9334 */;
+import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 9479 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -97,7 +97,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
     if (cResult[9] !== tmp4.subtitle) {
       const obj3 = { style: subtitle, variant: "text-md/medium", color: "text-default", children: tmp13 };
-      const tmp17 = closure_5(channel(4886).Text, obj3);
+      const tmp17 = closure_5(channel(4892).Text, obj3);
       cResult[9] = tmp4.subtitle;
       cResult[10] = tmp17;
       tmp15 = tmp17;
@@ -116,7 +116,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
     if (cResult[12] !== tmp5) {
       const obj4 = { variant: "secondary", text: tmp18, onPress: tmp5 };
-      const tmp22 = closure_5(channel(5594).Button, obj4);
+      const tmp22 = closure_5(channel(5601).Button, obj4);
       cResult[12] = tmp5;
       cResult[13] = tmp22;
       tmp20 = tmp22;
@@ -142,7 +142,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
       if (cResult[18] !== tmp6) {
         const obj5 = { variant: "destructive", text: tmp27, onPress: tmp6 };
-        const tmp31 = closure_5(channel(5594).Button, obj5);
+        const tmp31 = closure_5(channel(5601).Button, obj5);
         cResult[18] = tmp6;
         cResult[19] = tmp31;
         tmp29 = tmp31;
@@ -224,7 +224,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   intl = channel(1126).intl;
   items = [closure_5(LegacyText, obj3), , , ];
   const obj4 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: intl2.string(channel(1126).t.mT7jwN) };
-  const Text = channel(4886).Text;
+  const Text = channel(4892).Text;
   intl2 = channel(1126).intl;
   items[1] = closure_5(Text, obj4);
   const obj5 = { style: tmp.cancelButton, children: closure_5(Button, obj6) };
@@ -238,7 +238,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       obj2.handleDisconnect(channel);
     }
   };
-  Button = channel(5594).Button;
+  Button = channel(5601).Button;
   intl3 = channel(1126).intl;
   items[2] = closure_5(View, obj5);
   const obj7 = { style: tmp.confirmButton, children: closure_5(Button2, obj8) };
@@ -254,7 +254,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       obj3.handleDisconnect(channel);
     }
   };
-  Button2 = channel(5594).Button;
+  Button2 = channel(5601).Button;
   intl4 = channel(1126).intl;
   items[3] = closure_5(View, obj7);
   return closure_5(tmp2, obj);

@@ -1,17 +1,17 @@
-// Module ID: 12059
-// Function ID: 12060
+// Module ID: 12074
+// Function ID: 12075
 // Name: MultiAccountActionCreators
-// Dependencies: [5, 502, 12056, 1085, 3, 1111, 584, 1282, 1252, 6082, 2]
+// Dependencies: [5, 502, 12071, 1085, 3, 1111, 584, 1282, 1252, 6089, 2]
 // Exports: invalidatePushSyncTokens, moveAccount, removeAccount, reportAccountSwitchTimeout, switchAccount, updatePushSyncToken, validateMultiAccountTokens
 
-// Module 12059 (MultiAccountActionCreators)
+// Module 12074 (MultiAccountActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import TokenManagerAll from "TokenManager" /* 1111 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MultiAccountStore from "MultiAccountStore" /* 12056 */;
+import MultiAccountStore from "MultiAccountStore" /* 12071 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -137,7 +137,7 @@ export const validateMultiAccountTokens = function validateMultiAccountTokens() 
     closure_3 = tmp;
     closure_2 = tmp4;
     id = closure_0.id;
-    return "Set";
+    return "Reflect";
   });
   const item = forEach(function() {
     return closure_0(...arguments);
@@ -166,7 +166,7 @@ export const switchAccount = function switchAccount(id, switchSynchronously, CHO
       tmp4 = null;
     }
     dispatch(obj5);
-    const tmp5Result = tmp5(6082);
+    const tmp5Result = tmp5(6089);
     resolved = tmp5Result.switchAccountToken(token, switchSynchronously);
   }
   return resolved;

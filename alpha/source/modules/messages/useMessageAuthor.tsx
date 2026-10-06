@@ -1,19 +1,19 @@
-// Module ID: 5304
-// Function ID: 5305
+// Module ID: 5311
+// Function ID: 5312
 // Name: useMessageAuthor
-// Dependencies: [2051, 2112, 2106, 2074, 4519, 1377, 558, 38, 576, 504, 4722, 5305, 2]
+// Dependencies: [2051, 2112, 2106, 2074, 4525, 1377, 558, 38, 576, 504, 4728, 5312, 2]
 // Exports: getMessageAuthor
 
-// Module 5304 (useMessageAuthor)
+// Module 5311 (useMessageAuthor)
 import _modDef38 from "module_38" /* 38 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import UserUtilsDefault from "UserUtils" /* 4722 */;
+import UserUtilsDefault from "UserUtils" /* 4728 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildMemberStore from "GuildMemberStore" /* 2112 */;
 import GuildRoleStore from "GuildRoleStore" /* 2106 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import RelationshipStore from "RelationshipStore" /* 4525 */;
 import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -121,8 +121,8 @@ function useNullableMessageAuthor(message) {
       const tmp27Result7 = get_initialized;
       let stateFromStores2 = tmp27Result7.useStateFromStores(tmp42, tmp44, tmp45);
       let bot;
-      const useName2 = stateFromStores6(4722).useName;
-      stateFromStores6(4722);
+      const useName2 = stateFromStores6(4728).useName;
+      stateFromStores6(4728);
       const tmp47 = stateFromStores6;
       if (message != null) {
         bot = message.author.bot;
@@ -230,7 +230,7 @@ function useNullableMessageAuthor(message) {
                 return guild.getGuild(guild_id);
               }
             }
-            const tmp66 = tmp47(5305)(tmp65);
+            const tmp66 = tmp47(5312)(tmp65);
             if (null != message) {
               class I {
                 constructor() {
@@ -386,8 +386,8 @@ function useNullableMessageAuthor(message) {
         return role;
       }
     }
-    const useName = stateFromStores6(4722).useName;
-    stateFromStores6(4722);
+    const useName = stateFromStores6(4728).useName;
+    stateFromStores6(4728);
     if (message != null) {
       class I {
         constructor() {

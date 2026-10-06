@@ -1,20 +1,20 @@
-// Module ID: 15645
-// Function ID: 15646
+// Module ID: 15659
+// Function ID: 15660
 // Name: UserSettingsDesignSystemButtonGroup
-// Dependencies: [19, 17, 21, 4890, 558, 576, 4886, 5594, 5593, 5592, 7575, 6884, 2]
+// Dependencies: [19, 17, 21, 4896, 558, 576, 4892, 5601, 5600, 5599, 7586, 6894, 2]
 
-// Module 15645 (UserSettingsDesignSystemButtonGroup)
+// Module 15659 (UserSettingsDesignSystemButtonGroup)
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ButtonGroup4 from "ButtonGroup" /* 5592 */;
-import Stack_Stack from "Stack/Stack" /* 5593 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6884 */;
-import IconButton4 from "IconButton" /* 7575 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import ButtonGroup4 from "ButtonGroup" /* 5599 */;
+import Stack_Stack from "Stack/Stack" /* 5600 */;
+import components_Button_Button from "components/Button/Button" /* 5601 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6894 */;
+import IconButton4 from "IconButton" /* 7586 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -85,10 +85,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj3 = { children: metroRequire(Stack, obj4) };
     obj4 = { children: items };
     items = [tmp5, tmp6, ];
-    Stack = tmp(5593).Stack;
+    Stack = tmp(5600).Stack;
     const obj5 = { children: items1 };
     items1 = [tmp10, ];
-    const ButtonGroup = tmp(5592).ButtonGroup;
+    const ButtonGroup = tmp(5599).ButtonGroup;
     const obj6 = {
       text: "Cancel",
       variant: "secondary",
@@ -124,7 +124,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 
         }
     };
-    const IconButton = tmp(7575).IconButton;
+    const IconButton = tmp(7586).IconButton;
     const tmp26 = hasOwnProperty(IconButton, obj7);
     cResult[6] = tmp26;
     tmp23 = tmp26;
@@ -135,10 +135,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj8 = { children: metroRequire(Stack2, obj9) };
     obj9 = { children: items2 };
     items2 = [tmp18, tmp19, ];
-    Stack2 = tmp(5593).Stack;
+    Stack2 = tmp(5600).Stack;
     const obj10 = { direction: "horizontal", children: items3 };
     items3 = [tmp23, ];
-    const ButtonGroup2 = tmp(5592).ButtonGroup;
+    const ButtonGroup2 = tmp(5599).ButtonGroup;
     const obj11 = {
       accessibilityLabel: "Settings",
       variant: "secondary",
@@ -147,7 +147,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 
         }
     };
-    const IconButton2 = tmp(7575).IconButton;
+    const IconButton2 = tmp(7586).IconButton;
     items3[1] = hasOwnProperty(IconButton2, obj11);
     items2[2] = metroRequire(ButtonGroup2, obj10);
     const tmp32 = hasOwnProperty(_false, obj8);
@@ -190,13 +190,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj13 = { spacing: 24, children: items4 };
     items4 = [tmp13, tmp27, ];
     const obj14 = { children: metroRequire(Stack4, obj15) };
-    const Stack3 = tmp(5593).Stack;
+    const Stack3 = tmp(5600).Stack;
     obj15 = { children: items5 };
     items5 = [tmp34, tmp35, tmp33, , , ];
-    Stack4 = tmp(5593).Stack;
+    Stack4 = tmp(5600).Stack;
     const obj16 = { direction: "horizontal", children: items6 };
     items6 = [tmp40, ];
-    const ButtonGroup3 = tmp(5592).ButtonGroup;
+    const ButtonGroup3 = tmp(5599).ButtonGroup;
     const obj17 = {
       accessibilityLabel: "Cancel",
       variant: "secondary",
@@ -205,7 +205,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 
         }
     };
-    const IconButton3 = tmp(7575).IconButton;
+    const IconButton3 = tmp(7586).IconButton;
     items6[1] = hasOwnProperty(IconButton3, obj17);
     items5[3] = metroRequire(ButtonGroup3, obj16);
     items5[4] = hasOwnProperty(Text_Text.Text, { variant: "text-sm/medium", color: "text-feedback-critical", children: "More than one text button should not be put in a horizontal group." });

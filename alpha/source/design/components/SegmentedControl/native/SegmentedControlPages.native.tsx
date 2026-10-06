@@ -1,16 +1,16 @@
-// Module ID: 10974
-// Function ID: 10975
+// Module ID: 10987
+// Function ID: 10988
 // Name: SegmentedControlPages
-// Dependencies: [109, 32, 19, 17, 21, 4612, 558, 576, 10975, 1369, 6140, 5779, 5738, 2]
+// Dependencies: [109, 32, 19, 17, 21, 4618, 558, 576, 10988, 1369, 6147, 5786, 5745, 2]
 
-// Module 10974 (SegmentedControlPages)
+// Module 10987 (SegmentedControlPages)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4612 */;
-import react_native2 from "react-native" /* 5779 */;
-import MathUtils from "MathUtils" /* 10975 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4618 */;
+import react_native2 from "react-native" /* 5786 */;
+import MathUtils from "MathUtils" /* 10988 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -197,7 +197,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEndDragWorklet) =>
           }
           if (tmp4) {
             const result2 = sharedValue1.set(obj2.get());
-            const tmp13Result = tmp13(4612);
+            const tmp13Result = tmp13(4618);
             const runOnJSResult = tmp13Result.runOnJS(onPageChanged);
             runOnJSResult(sharedValue.get());
           }
@@ -236,7 +236,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEndDragWorklet) =>
             const result = obj.set(-1);
           } else {
             const value = obj.get();
-            const tmpResult = tmp(4612);
+            const tmpResult = tmp(4618);
             tmpResult.runOnJS(closure_18)(value);
           }
         }
@@ -687,7 +687,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEndDragWorklet) =>
         }
         if (tmp4) {
           const result2 = sharedValue1.set(obj2.get());
-          const tmp13Result = tmp13(4612);
+          const tmp13Result = tmp13(4618);
           const runOnJSResult = tmp13Result.runOnJS(callback1);
           runOnJSResult(sharedValue.get());
         }
@@ -729,7 +729,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEndDragWorklet) =>
         const result = obj.set(-1);
       } else {
         const value = obj.get();
-        const tmpResult = tmp(4612);
+        const tmpResult = tmp(4618);
         tmpResult.runOnJS(callback2)(value);
       }
     }
@@ -948,7 +948,7 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIn
     reportedPageIndex = tmp9;
     closure_5 = cResult[7];
   }
-  const tmpResult = tmp(4612);
+  const tmpResult = tmp(4618);
   class P {
     constructor() {
       let tmp2 = Math.floor(closure_3.get()) === closure_2;
@@ -967,7 +967,7 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIn
   P.__workletHash = 2724531395868;
   P.__initData = __initData13;
   const derivedValue = tmpResult.useDerivedValue(P);
-  const tmpResult3 = tmp(4612);
+  const tmpResult3 = tmp(4618);
   class O {
     constructor() {
       let pointerEvents = "box-none";
@@ -1118,7 +1118,7 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIn
     fn.__closure = obj5;
     fn.__workletHash = 6740536171688;
     fn.__initData = __initData17;
-    const tmpResult4 = tmp(4612);
+    const tmpResult4 = tmp(4618);
     const animatedStyle = tmpResult4.useAnimatedStyle(fn);
     if (cResult[15] === tmp4) {
       class H {

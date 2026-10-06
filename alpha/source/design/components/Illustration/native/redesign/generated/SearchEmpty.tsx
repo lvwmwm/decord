@@ -1,15 +1,15 @@
-// Module ID: 9921
-// Function ID: 9922
+// Module ID: 9934
+// Function ID: 9935
 // Name: SearchEmpty
-// Dependencies: [19, 17, 21, 7905, 9922, 9923, 9924, 558, 576, 4729, 2]
+// Dependencies: [19, 17, 21, 7916, 9935, 9936, 9937, 558, 576, 4735, 2]
 // Exports: getSearchEmptySource
 
-// Module 9921 (SearchEmpty)
+// Module 9934 (SearchEmpty)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 4729 */;
-import _mod7905 from "module_7905" /* 7905 */;
+import shared from "shared" /* 4735 */;
+import _mod7916 from "module_7916" /* 7916 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== theme) {
     const obj3 = { dark, darker, light };
-    const tmpResult = _mod7905;
+    const tmpResult = _mod7916;
     const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
@@ -48,7 +48,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod7905;
+  const obj2 = _mod7916;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 });
@@ -77,7 +77,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return <Image source={tmp} />;
 });
 function getSearchEmptySource(theme) {
-  const obj = _mod7905;
+  const obj = _mod7916;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }

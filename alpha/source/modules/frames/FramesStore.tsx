@@ -1,15 +1,15 @@
-// Module ID: 8703
-// Function ID: 8704
+// Module ID: 9000
+// Function ID: 9001
 // Name: FramesStore
-// Dependencies: [8704, 8705, 1096, 8706, 504, 584, 2]
+// Dependencies: [8738, 9001, 1096, 9002, 504, 584, 2]
 
-// Module 8703 (FramesStore)
+// Module 9000 (FramesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1096 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 8705 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 8706 */;
-import FramesConstants from "FramesConstants" /* 8704 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 9001 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 9002 */;
+import FramesConstants from "FramesConstants" /* 8738 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -59,8 +59,8 @@ class FramesStoreClass extends Store {
       continue;
     }
   }
-  getFrameBySurface(arg0, arg1) {
-    return map.get(metroImportDefault(arg0, arg1));
+  getFrameBySurface(arg0, CONJURE_PREVIEW_SURFACE) {
+    return map.get(metroImportDefault(arg0, CONJURE_PREVIEW_SURFACE));
   }
   getFramesForSurface(arg0) {
     let closure_0 = arg0;

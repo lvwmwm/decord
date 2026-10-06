@@ -1,20 +1,20 @@
-// Module ID: 11721
-// Function ID: 11722
+// Module ID: 11735
+// Function ID: 11736
 // Name: SearchBarBottomBorder
-// Dependencies: [19, 21, 4890, 587, 558, 576, 4612, 5597, 5598, 2]
+// Dependencies: [19, 21, 4896, 587, 558, 576, 4618, 5604, 5605, 2]
 
-// Module 11721 (SearchBarBottomBorder)
+// Module 11735 (SearchBarBottomBorder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import spring from "spring" /* 5597 */;
+import spring from "spring" /* 5604 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const springPresets = tmp(5598);
+const springPresets = tmp(5605);
 const jsx = Fragment.jsx;
 let obj = { border: obj2 };
 obj2 = { borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1 };
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num = triggerScrollHeight;
   }
   const tmp4 = closure_5();
-  const tmpResult = tmp(4612);
+  const tmpResult = tmp(4618);
   const sharedValue = tmpResult.useSharedValue(0);
   if (cResult[0] !== sharedValue) {
     const fn = function c() {
@@ -74,9 +74,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj = { opacity: withSpring(num, springPresets.springStandard) };
       return obj;
     };
-    const obj2 = { withSpring: tmp(5597).withSpring, scrollPosition: sharedValue, triggerScrollHeight: num, springStandard: tmp(5598).springStandard };
-    const useAnimatedStyle = tmp(4612).useAnimatedStyle;
-    tmp(4612);
+    const obj2 = { withSpring: tmp(5604).withSpring, scrollPosition: sharedValue, triggerScrollHeight: num, springStandard: tmp(5605).springStandard };
+    const useAnimatedStyle = tmp(4618).useAnimatedStyle;
+    tmp(4618);
     fn3.__closure = obj2;
     fn3.__workletHash = 5466161440826;
     fn3.__initData = __initData;
@@ -104,7 +104,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         cResult[15] = obj3;
         tmp19 = obj3;
       }
-      const tmp18 = jsx(sharedValue(4612).View, { style: tmp14 }, key);
+      const tmp18 = jsx(sharedValue(4618).View, { style: tmp14 }, key);
       cResult[10] = key;
       cResult[11] = tmp14;
       cResult[12] = tmp18;
@@ -129,7 +129,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     triggerScrollHeight = 1;
   }
   let tmp = closure_5();
-  let obj = triggerScrollHeight(4612);
+  let obj = triggerScrollHeight(4618);
   const sharedValue = obj.useSharedValue(0);
   const items = [key, sharedValue];
   const effect = react.useEffect(() => {
@@ -149,12 +149,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj = { opacity: withSpring(num, springPresets.springStandard) };
     return obj;
   };
-  const obj2 = triggerScrollHeight(4612);
-  fn.__closure = { withSpring: triggerScrollHeight(5597).withSpring, scrollPosition: sharedValue, triggerScrollHeight, springStandard: triggerScrollHeight(5598).springStandard };
+  const obj2 = triggerScrollHeight(4618);
+  fn.__closure = { withSpring: triggerScrollHeight(5604).withSpring, scrollPosition: sharedValue, triggerScrollHeight, springStandard: triggerScrollHeight(5605).springStandard };
   fn.__workletHash = 17305021520857;
   fn.__initData = __initData2;
   const obj4 = { scrollHandler: callback, bottomBorderComponent: null };
-  ({ withSpring: triggerScrollHeight(5597).withSpring, scrollPosition: sharedValue, triggerScrollHeight, springStandard: triggerScrollHeight(5598).springStandard });
+  ({ withSpring: triggerScrollHeight(5604).withSpring, scrollPosition: sharedValue, triggerScrollHeight, springStandard: triggerScrollHeight(5605).springStandard });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const items2 = [tmp.border, animatedStyle];
   return obj4;

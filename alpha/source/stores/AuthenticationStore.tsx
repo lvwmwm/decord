@@ -1,7 +1,7 @@
 // Module ID: 502
 // Function ID: 503
 // Name: AuthenticationStore
-// Dependencies: [503, 1084, 1085, 1110, 3, 1111, 510, 1112, 1252, 13954, 584, 13955, 6436, 5313, 1265, 13956, 1242, 12058, 504, 11141, 13957, 7152, 1985, 2]
+// Dependencies: [503, 1084, 1085, 1110, 3, 1111, 510, 1112, 1252, 13971, 584, 13972, 6443, 5320, 1265, 13973, 1242, 12073, 504, 11154, 1987, 13974, 7165, 1985, 2]
 
 // Module 502 (AuthenticationStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -14,21 +14,20 @@ import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import FingerprintUtils from "FingerprintUtils" /* 1265 */;
 import Server from "Server" /* 1985 */;
-import APIErrorDefault from "APIError" /* 5313 */;
-import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIError" /* 6436 */;
-import AuthenticationUtils from "AuthenticationUtils" /* 7152 */;
-import ApexActionCreators from "ApexActionCreators" /* 11141 */;
-import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 12058 */;
-import fetchExperiments2 from "fetchExperiments" /* 13954 */;
-import awaitExperiments from "awaitExperiments" /* 13955 */;
-import TrackingConsentUtilsDefault from "TrackingConsentUtils" /* 13956 */;
-import react_native from "react-native" /* 13957 */;
+import APIErrorDefault from "APIError" /* 5320 */;
+import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIError" /* 6443 */;
+import AuthenticationUtils from "AuthenticationUtils" /* 7165 */;
+import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 12073 */;
+import fetchExperiments2 from "fetchExperiments" /* 13971 */;
+import awaitExperiments from "awaitExperiments" /* 13972 */;
+import TrackingConsentUtilsDefault from "TrackingConsentUtils" /* 13973 */;
 import BrowserHandoffStore from "BrowserHandoffStore" /* 503 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1084 */;
 import Constants from "Constants" /* 1085 */;
 import AgeGateConstants from "AgeGateConstants" /* 1110 */;
 import size from "module_2" /* 2 */;
 
+const require = globalThis.__r;
 const Dispatcher = Dispatcher2;
 let _null, c33, c4, c5, challenge;
 
@@ -39,7 +38,7 @@ let c10;
 let closure_12;
 let metroImportAll;
 let unpackModuleId;
-const f81422 = (body) => {
+const f81555 = (body) => {
   let assignments;
   let guild_experiments;
   body = body.body;
@@ -65,12 +64,12 @@ const f81422 = (body) => {
   const obj6 = awaitExperiments;
   obj6.onExperimentsLoaded();
 };
-const f81423 = () => {
+const f81556 = () => {
   c33 = null;
   const obj = Dispatcher;
   obj.dispatch({ type: "EXPERIMENTS_FETCH_FAILURE" });
 };
-const f81424 = () => {
+const f81557 = () => {
   const obj = router_utils;
   obj.transitionTo(constants.REGISTER);
 };
@@ -133,7 +132,7 @@ function fetchFingerprint(arg0) {
           fetchExperiments2;
           tmpResult4 = router_utils;
           const experiments = fetchExperiments(obj3);
-          nextPromise = experiments.then(f81422, f81423);
+          nextPromise = experiments.then(f81555, f81556);
           closure_33 = nextPromise;
         }
         return nextPromise;
@@ -251,6 +250,7 @@ let items = [];
 let Store = get_initializedDefault.Store;
 class AuthenticationStore extends Store {
   initialize() {
+    let paths;
     const Storage = Storage6.Storage;
     id = Storage.get(user_id_cache);
     const Storage2 = Storage6.Storage;
@@ -274,17 +274,17 @@ class AuthenticationStore extends Store {
     let obj = TokenManagerAll;
     if (null == obj.getToken()) {
       const tmp7 = null == installation || 0 === installation.length;
-      const promise = fetchFingerprint();
+      let promise = fetchFingerprint();
       if (tmp7) {
         function fireApex() {
-          const obj = ApexActionCreators;
-          const installationExperiments = obj.fetchInstallationExperiments(null);
+          const promise = require("asyncRequire")(paths[19], paths.paths);
+          promise.then((fetchInstallationExperiments) => fetchInstallationExperiments.fetchInstallationExperiments(null));
         }
         promise.then(fireApex, fireApex);
       }
     }
     this.addChangeListener(() => {
-      const obj = react_native;
+      const obj = require("react-native");
       return obj.setClientState(id);
     });
   }
@@ -467,7 +467,7 @@ let obj = {
         c26 = true;
         handleLogout();
         const obj4 = Dispatcher;
-        obj4.wait(f81424);
+        obj4.wait(f81557);
       } else {
         const obj3 = { user_id: Storage2.get(user_id_cache) };
         const track = AnalyticsUtilsDefault.track;
@@ -775,7 +775,7 @@ let obj = {
     const fetchExperiments = tmp5.fetchExperiments;
     obj5 = router_utils;
     const experiments = fetchExperiments(obj3);
-    closure_33 = experiments.then(f81422, f81423);
+    closure_33 = experiments.then(f81555, f81556);
   },
   CURRENT_USER_UPDATE: function handleUserUpdate(user) {
     user = user.user;
@@ -790,7 +790,7 @@ let obj = {
     c26 = true;
     handleLogout();
     const obj = Dispatcher;
-    obj.wait(f81424);
+    obj.wait(f81557);
   },
   CLOSE_SUSPENDED_USER: function handleSuspendedUserClosed() {
     c34 = null;

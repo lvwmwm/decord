@@ -1,21 +1,21 @@
-// Module ID: 12130
-// Function ID: 12131
+// Module ID: 12145
+// Function ID: 12146
 // Name: GuildProgressUtils
-// Dependencies: [4507, 2074, 4509, 12131, 12125, 1085, 4854, 12132, 1987, 12133, 558, 576, 504, 12128, 1126, 11, 2]
+// Dependencies: [4513, 2074, 4515, 12146, 12140, 1085, 4860, 12147, 1987, 12148, 558, 576, 504, 12143, 1126, 11, 2]
 // Exports: createGuildProgress, hideActionSheet, openActionSheet
 
-// Module 12130 (GuildProgressUtils)
+// Module 12145 (GuildProgressUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react from "react" /* 576 */;
 import intl8 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import GuildProgressConstants from "GuildProgressConstants" /* 12125 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12133 */;
-import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import GuildProgressConstants from "GuildProgressConstants" /* 12140 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12148 */;
+import GuildChannelStore from "GuildChannelStore" /* 4513 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import GuildProgressStore from "GuildProgressStore" /* 12131 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
+import GuildProgressStore from "GuildProgressStore" /* 12146 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -526,7 +526,7 @@ export const openActionSheet = function openActionSheet(guild) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj = { guild };
-  const tmp2 = asyncRequire(12132, dependencyMap.paths);
+  const tmp2 = asyncRequire(12147, dependencyMap.paths);
   openLazy(tmp2, "guild-progress-" + guild.id, obj);
 };
 export const hideActionSheet = function hideActionSheet(arg0) {

@@ -1,18 +1,18 @@
-// Module ID: 14380
-// Function ID: 14381
+// Module ID: 14398
+// Function ID: 14399
 // Name: SoundboardManager
-// Dependencies: [5, 1999, 2103, 5680, 3, 14381, 14382, 14383, 9562, 6841, 2]
+// Dependencies: [5, 1999, 2103, 5687, 3, 14399, 14400, 14401, 9575, 6851, 2]
 
-// Module 14380 (SoundboardManager)
+// Module 14398 (SoundboardManager)
 import LoggerDefault from "Logger" /* 3 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 6841 */;
-import SoundUtils from "SoundUtils" /* 9562 */;
-import getVolumeForSoundDefault from "getVolumeForSound" /* 14382 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 6851 */;
+import SoundUtils from "SoundUtils" /* 9575 */;
+import getVolumeForSoundDefault from "getVolumeForSound" /* 14400 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import SoundboardStore from "SoundboardStore" /* 5680 */;
-import BaseSoundboardManager from "BaseSoundboardManager" /* 14381 */;
+import SoundboardStore from "SoundboardStore" /* 5687 */;
+import BaseSoundboardManager from "BaseSoundboardManager" /* 14399 */;
 import size from "module_2" /* 2 */;
 
 let closure_2;
@@ -46,7 +46,7 @@ class SoundboardManager extends BaseSoundboardManager {
             if (null != value) {
               value.stop();
             }
-            const tmp14 = tmp6(14383)(soundId);
+            const tmp14 = tmp6(14401)(soundId);
             const obj2 = SoundUtils;
             const sound = obj2.createSound(tmp14, "soundboard_sound", tmp8);
             sound.volume = tmp8;
@@ -95,7 +95,7 @@ class SoundboardManager extends BaseSoundboardManager {
       await "IconComponent";
       closure_2 = tmp;
       ({ sound: c0, soundKey: c1, soundId: c2, userId: c3 } = closure_0);
-      return "Set";
+      return "Reflect";
     });
     applyArgumentsResult._playSoundWithListener = function() {
       return closure_0(...arguments);

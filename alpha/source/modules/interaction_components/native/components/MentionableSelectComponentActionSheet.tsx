@@ -1,27 +1,27 @@
-// Module ID: 11433
-// Function ID: 11434
+// Module ID: 11446
+// Function ID: 11447
 // Name: MentionableSelectComponentActionSheet
-// Dependencies: [19, 17, 2106, 2074, 4930, 1377, 1085, 21, 4890, 587, 558, 576, 6622, 7803, 11434, 5122, 1188, 6686, 6704, 9232, 9296, 1126, 4886, 11435, 11432, 2]
+// Dependencies: [19, 17, 2106, 2074, 4936, 1377, 1085, 21, 4896, 587, 558, 576, 6629, 7814, 11447, 5129, 1188, 6693, 6711, 9267, 9331, 1126, 4892, 11448, 11445, 2]
 
-// Module 11433 (MentionableSelectComponentActionSheet)
+// Module 11446 (MentionableSelectComponentActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 5122 */;
-import RoleIconUtils from "RoleIconUtils" /* 6686 */;
-import RoleIconDefault from "RoleIcon" /* 6704 */;
-import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 7803 */;
-import DiscordTagDefault from "DiscordTag" /* 9296 */;
-import UserIcon from "UserIcon" /* 11435 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 5129 */;
+import RoleIconUtils from "RoleIconUtils" /* 6693 */;
+import RoleIconDefault from "RoleIcon" /* 6711 */;
+import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 7814 */;
+import DiscordTagDefault from "DiscordTag" /* 9331 */;
+import UserIcon from "UserIcon" /* 11448 */;
 import react_mod from "react" /* 19 */;
 import GuildRoleStore_mod from "GuildRoleStore" /* 2106 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import PresenceStore from "PresenceStore" /* 4930 */;
+import PresenceStore from "PresenceStore" /* 4936 */;
 import UserStore from "UserStore" /* 1377 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -296,7 +296,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionCompo
                           }
                         }
                         let colorString;
-                        const ShieldUserIcon = tmp(9232).ShieldUserIcon;
+                        const ShieldUserIcon = tmp(9267).ShieldUserIcon;
                         const tmp8 = authStore;
                         if (role != null) {
                           colorString = role.colorString;
@@ -349,7 +349,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionCompo
                         }
                       }
                       let colorString;
-                      const ShieldUserIcon = tmp(9232).ShieldUserIcon;
+                      const ShieldUserIcon = tmp(9267).ShieldUserIcon;
                       const tmp8 = authStore;
                       if (role != null) {
                         colorString = role.colorString;
@@ -456,7 +456,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionCompo
             }
           }
           let colorString;
-          const ShieldUserIcon = tmp(9232).ShieldUserIcon;
+          const ShieldUserIcon = tmp(9267).ShieldUserIcon;
           const tmp8 = authStore;
           if (role != null) {
             colorString = role.colorString;

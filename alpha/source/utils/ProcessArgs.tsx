@@ -1,10 +1,10 @@
-// Module ID: 6714
-// Function ID: 6715
+// Module ID: 6721
+// Function ID: 6722
 // Name: ProcessArgs
-// Dependencies: [4490, 2]
+// Dependencies: [4496, 2]
 
-// Module 6714 (ProcessArgs)
-import DiscordNativeDefault from "DiscordNative" /* 4490 */;
+// Module 6721 (ProcessArgs)
+import DiscordNativeDefault from "DiscordNative" /* 4496 */;
 import size from "module_2" /* 2 */;
 
 class ProcessArgs {

@@ -1,19 +1,19 @@
-// Module ID: 11499
-// Function ID: 11500
+// Module ID: 11512
+// Function ID: 11513
 // Name: AppealIngestionSpeedBump
-// Dependencies: [19, 17, 8106, 8093, 1085, 21, 4890, 558, 576, 504, 11492, 11500, 1126, 11498, 11501, 11511, 11512, 4886, 2]
+// Dependencies: [19, 17, 8139, 8126, 1085, 21, 4896, 558, 576, 504, 11505, 11513, 1126, 11511, 11514, 11524, 11525, 4892, 2]
 
-// Module 11499 (AppealIngestionSpeedBump)
+// Module 11512 (AppealIngestionSpeedBump)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
-import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummary" /* 11501 */;
-import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 11511 */;
-import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 11512 */;
+import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummary" /* 11514 */;
+import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 11524 */;
+import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 11525 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8106 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8093 */;
+import SafetyHubStore from "SafetyHubStore" /* 8139 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8126 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -67,13 +67,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = emitAppealIngestionEvent(504);
   let stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const useSafetyHubClassification = emitAppealIngestionEvent(11492).useSafetyHubClassification;
-  emitAppealIngestionEvent(11492);
+  const useSafetyHubClassification = emitAppealIngestionEvent(11505).useSafetyHubClassification;
+  emitAppealIngestionEvent(11505);
   if (stateFromStores == null) {
     stateFromStores = EMPTY_STRING_SNOWFLAKE_ID;
   }
   const safetyHubClassification = useSafetyHubClassification(stateFromStores);
-  const tmpResult4 = emitAppealIngestionEvent(11500);
+  const tmpResult4 = emitAppealIngestionEvent(11513);
   emitAppealIngestionEvent = tmpResult4.useEmitAppealIngestionEvent();
   ({ isDsaEligible, classification } = safetyHubClassification);
   let str;
@@ -141,7 +141,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return appealClassificationId.getAppealClassificationId();
       }
     }
-    const tmp22 = closure_8(emitAppealIngestionEvent(11498).AppealIngestionModalHeader, obj2);
+    const tmp22 = closure_8(emitAppealIngestionEvent(11511).AppealIngestionModalHeader, obj2);
     cResult[6] = tmp22;
     tmp20 = tmp22;
   } else {
@@ -210,7 +210,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 let tmp44 = isDsaEligible;
                 if (tmp44) {
                   const obj5 = { variant: "text-xs/normal", children: obj9.format(emitAppealIngestionEvent(1126).t.WMUgCX, {}) };
-                  const Text = tmp(4886).Text;
+                  const Text = tmp(4892).Text;
                   class A {
                     constructor() {
                       return appealClassificationId.getAppealClassificationId();
@@ -256,7 +256,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               items1 = [tmp20, ];
               const obj7 = { style: tmp4.container, children: items2 };
               items2 = [tmp23, tmp27, tmp31, tmp37, tmp39, tmp41, tmp43];
-              const AppealIngestionModalScreen = tmp(11498).AppealIngestionModalScreen;
+              const AppealIngestionModalScreen = tmp(11511).AppealIngestionModalScreen;
               items1[1] = closure_9(View, obj7);
               const tmp48 = closure_9(AppealIngestionModalScreen, obj6);
               cResult[27] = tmp4.container;
@@ -373,7 +373,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const stringResult = intl.string(require("intl").t["C5q+pW"]);
   const intl2 = tmp2(1126).intl;
   const stringResult1 = intl2.string(require("intl").t.URt7VI);
-  const AppealIngestionModalScreen = tmp2(11498).AppealIngestionModalScreen;
+  const AppealIngestionModalScreen = tmp2(11511).AppealIngestionModalScreen;
   const items1 = [closure_8(require("AppealIngestionModal").AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
   let tmp10Result = flagged_content.length > 0;
   const obj2 = { style: tmp.container, children: items2 };
@@ -444,7 +444,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items2[5] = tmp10Result4;
   if (isDsaEligible) {
     const obj9 = { variant: "text-xs/normal", children: intl7.format(require("intl").t.WMUgCX, {}) };
-    const Text = tmp2(4886).Text;
+    const Text = tmp2(4892).Text;
     intl7 = tmp2(1126).intl;
     isDsaEligible = tmp10(Text, obj9);
   }

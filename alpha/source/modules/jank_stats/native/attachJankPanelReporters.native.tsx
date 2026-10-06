@@ -1,13 +1,13 @@
-// Module ID: 17540
-// Function ID: 17541
+// Module ID: 17585
+// Function ID: 17586
 // Name: attachJankPanelReporters
-// Dependencies: [2050, 8703, 5098, 2051, 2103, 15939, 1369, 17160, 17541, 2]
+// Dependencies: [2050, 9000, 5104, 2051, 2103, 15978, 1369, 17189, 17586, 2]
 // Exports: default
 
-// Module 17540 (attachJankPanelReporters)
+// Module 17585 (attachJankPanelReporters)
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import FramesStore from "FramesStore" /* 8703 */;
-import VoicePanelStore from "VoicePanelStore" /* 5098 */;
+import FramesStore from "FramesStore" /* 9000 */;
+import VoicePanelStore from "VoicePanelStore" /* 5104 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
 import size from "module_2" /* 2 */;
@@ -18,27 +18,27 @@ let c7 = false;
 let result = size.fileFinishedImporting("modules/jank_stats/native/attachJankPanelReporters.native.tsx");
 
 export default function attachJankPanelReporters() {
-  let f131048;
+  let f131266;
   let voice;
-  const f1310472 = () => {
+  const f1312652 = () => {
     const tmp = closure_1_1();
     if (tmp !== closure_2) {
       closure_2 = tmp;
-      const obj = voice(f131048[5]);
-      obj.setJankPanelOpen(f131047, tmp);
+      const obj = voice(f131266[5]);
+      obj.setJankPanelOpen(f131265, tmp);
     }
   };
-  const f148739 = (addChangeListener) => addChangeListener.addChangeListener(f131047);
+  const f148974 = (addChangeListener) => addChangeListener.addChangeListener(f131265);
   let isAndroidResult = !c7;
   if (isAndroidResult) {
     let tmp2 = voice;
-    let obj = voice(f131048[6]);
+    let obj = voice(f131266[6]);
     isAndroidResult = obj.isAndroid();
   }
   if (isAndroidResult) {
     c7 = true;
     voice = "voice";
-    f131048 = () => {
+    f131266 = () => {
       state = state.getState();
       return state.isAnyVoicePanelOpen();
     };
@@ -47,17 +47,17 @@ export default function attachJankPanelReporters() {
     let c2 = isAnyVoicePanelOpenResult;
     const obj2 = VoicePanelStore;
     if (isAnyVoicePanelOpenResult) {
-      const obj4 = voice(f131048[5]);
+      const obj4 = voice(f131266[5]);
       obj4.setJankPanelOpen("voice", true);
     }
-    const subscription = obj2.subscribe(f1310472);
+    const subscription = obj2.subscribe(f1312652);
     const items = [c2, ChannelStore, SelectedChannelStore];
     const activity = "activity";
-    const f131049 = () => {
-      const obj = activity(f131049[7]);
+    const f131267 = () => {
+      const obj = activity(f131267[7]);
       let result = obj.isConnectedToActivityInText();
       const tmp = activity;
-      const tmp2 = f131049;
+      const tmp2 = f131267;
       if (result) {
         const tmpResult = tmp(tmp2[7]);
         result = tmpResult.isActivityPanelFullscreen();
@@ -65,28 +65,28 @@ export default function attachJankPanelReporters() {
       return result;
     };
     c2 = undefined;
-    const obj5 = voice(f131048[7]);
+    const obj5 = voice(f131266[7]);
     let result = obj5.isConnectedToActivityInText();
     if (result) {
-      const tmp12Result = voice(f131048[7]);
+      const tmp12Result = voice(f131266[7]);
       result = tmp12Result.isActivityPanelFullscreen();
     }
     c2 = result;
     if (c2) {
-      const tmp12Result3 = voice(f131048[5]);
+      const tmp12Result3 = voice(f131266[5]);
       tmp12Result3.setJankPanelOpen("activity", true);
     }
-    let f131047 = f1310472;
-    const item = items.forEach(f148739);
+    let f131265 = f1312652;
+    const item = items.forEach(f148974);
     const isFramePanelFullscreen = tmp12(tmp13[8]).isFramePanelFullscreen;
     const items1 = [FramesStore];
     const frame_str = "frame";
     const result1 = isFramePanelFullscreen();
     if (result1) {
-      const tmp12Result4 = voice(f131048[5]);
+      const tmp12Result4 = voice(f131266[5]);
       tmp12Result4.setJankPanelOpen("frame", true);
     }
-    f131047 = f1310472;
-    const item1 = items1.forEach(f148739);
+    f131265 = f1312652;
+    const item1 = items1.forEach(f148974);
   }
 };

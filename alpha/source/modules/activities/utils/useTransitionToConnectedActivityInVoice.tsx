@@ -1,9 +1,9 @@
-// Module ID: 17364
-// Function ID: 17365
+// Module ID: 17393
+// Function ID: 17394
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 2051, 2103, 1085, 558, 576, 4498, 9014, 9015, 9049, 1121, 2]
+// Dependencies: [5, 19, 2051, 2103, 1085, 558, 576, 4504, 9047, 9048, 9085, 1121, 2]
 
-// Module 17364 (useTransitionToConnectedActivityInVoice)
+// Module 17393 (useTransitionToConnectedActivityInVoice)
 import Constants from "Constants" /* 1085 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -162,7 +162,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTransition) => {
                   guild_id = undefined;
                   c3 = 1;
                   c4 = 1;
-                  return { value: "Set", done: true };
+                  return { value: "Reflect", done: true };
                 }
               } else {
                 if (1 === c3) {

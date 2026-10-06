@@ -1,18 +1,18 @@
-// Module ID: 12068
-// Function ID: 12069
+// Module ID: 12083
+// Function ID: 12084
 // Name: EmojiSuggestionBarUtils
-// Dependencies: [32, 19, 4879, 1085, 21, 1188, 558, 576, 4612, 5597, 4589, 4891, 504, 12034, 12069, 12070, 8818, 2]
+// Dependencies: [32, 19, 4885, 1085, 21, 1188, 558, 576, 4618, 5604, 4595, 4897, 504, 12049, 12084, 12085, 8848, 2]
 // Exports: getEmojiEntranceKey, getEmojiIdentity, sortEmojisForDisplay
 
-// Module 12068 (EmojiSuggestionBarUtils)
+// Module 12083 (EmojiSuggestionBarUtils)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1188 */;
-import native2 from "native" /* 4589 */;
-import spring from "spring" /* 5597 */;
+import native2 from "native" /* 4595 */;
+import spring from "spring" /* 5604 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 4885 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,8 +20,8 @@ const require = globalThis.__r;
 let dependencyMap, obj, replaceRangeResult, set, set2;
 
 let tmp;
-const ReanimatedRexport = tmp(4612);
-const timing = tmp(4891);
+const ReanimatedRexport = tmp(4618);
+const timing = tmp(4897);
 const UpsellTypes = Constants.UpsellTypes;
 const jsx = Fragment.jsx;
 let closure_8 = { focused: false, text: "", selectionStart: 0, selectionEnd: 0 };

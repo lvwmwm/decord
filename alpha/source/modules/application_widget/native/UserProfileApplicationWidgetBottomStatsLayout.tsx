@@ -1,16 +1,16 @@
-// Module ID: 8686
-// Function ID: 8687
+// Module ID: 8721
+// Function ID: 8722
 // Name: UserProfileApplicationWidgetBottomStatsLayout
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 8594, 8681, 4886, 8682, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 8629, 8716, 4892, 8717, 2]
 
-// Module 8686 (UserProfileApplicationWidgetBottomStatsLayout)
+// Module 8721 (UserProfileApplicationWidgetBottomStatsLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import _mod8594 from "module_8594" /* 8594 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 8681 */;
+import _mod8629 from "module_8629" /* 8629 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 8716 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -82,11 +82,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((bottomConfig) => {
           const tmp3 = View;
           if ("value" === value.label.status) {
             const obj3 = { variant: "text-xs/normal", color: "text-muted", children: value.label.text };
-            tmp5Result = tmp5(tmp6(4886).Text, obj3);
+            tmp5Result = tmp5(tmp6(4892).Text, obj3);
           } else {
             tmp5Result = null;
             if ("skeleton" === value.label.status) {
-              tmp5Result = tmp5(tmp6(8682).TextSkeleton, { variant: "text-xs/normal", widthChars: 6 });
+              tmp5Result = tmp5(tmp6(8717).TextSkeleton, { variant: "text-xs/normal", widthChars: 6 });
             }
           }
           items[1] = tmp5Result;
@@ -101,8 +101,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((bottomConfig) => {
     }
   }
   const mapped1 = first.map((item) => {
-    const resolveStatComponentValues = _mod8594.resolveStatComponentValues;
-    _mod8594;
+    const resolveStatComponentValues = _mod8629.resolveStatComponentValues;
+    _mod8629;
     return resolveStatComponentValues(bottomConfig.components["stat_" + item], resolveFieldValue, numberFormat, UserProfileApplicationWidgetFieldUtils.formatDurationNarrow, true);
   });
   cResult[1] = bottomConfig;
@@ -117,8 +117,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((bottomConfig) => {
   const stat = tmp;
   let items = [1, 2, 3, 4, 5, 6];
   const mapped = items.map((item) => {
-    const resolveStatComponentValues = _mod8594.resolveStatComponentValues;
-    _mod8594;
+    const resolveStatComponentValues = _mod8629.resolveStatComponentValues;
+    _mod8629;
     return resolveStatComponentValues(require.components["stat_" + item], dependencyMap, View, UserProfileApplicationWidgetFieldUtils.formatDurationNarrow, true);
   });
   let obj = {
@@ -135,11 +135,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((bottomConfig) => {
         const tmp3 = View;
         if ("value" === value.label.status) {
           const obj3 = { variant: "text-xs/normal", color: "text-muted", children: value.label.text };
-          tmp5Result = tmp5(tmp6(4886).Text, obj3);
+          tmp5Result = tmp5(tmp6(4892).Text, obj3);
         } else {
           tmp5Result = null;
           if ("skeleton" === value.label.status) {
-            tmp5Result = tmp5(tmp6(8682).TextSkeleton, { variant: "text-xs/normal", widthChars: 6 });
+            tmp5Result = tmp5(tmp6(8717).TextSkeleton, { variant: "text-xs/normal", widthChars: 6 });
           }
         }
         items[1] = tmp5Result;

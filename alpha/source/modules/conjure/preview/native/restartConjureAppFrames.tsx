@@ -1,13 +1,13 @@
-// Module ID: 8977
-// Function ID: 8978
+// Module ID: 9010
+// Function ID: 9011
 // Name: restartConjureAppFrames
-// Dependencies: [8703, 8978, 8986, 2]
+// Dependencies: [9000, 9011, 9019, 2]
 // Exports: default
 
-// Module 8977 (restartConjureAppFrames)
-import FramesNativeManagerDefault from "FramesNativeManager" /* 8978 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 8986 */;
-import FramesStore from "FramesStore" /* 8703 */;
+// Module 9010 (restartConjureAppFrames)
+import FramesNativeManagerDefault from "FramesNativeManager" /* 9011 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 9019 */;
+import FramesStore from "FramesStore" /* 9000 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/preview/native/restartConjureAppFrames.tsx");
@@ -37,7 +37,7 @@ export default function restartConjureAppFrames(applicationId) {
 
       });
       if (id1 !== id) {
-        let tmp8Result = tmp8(8986);
+        let tmp8Result = tmp8(9019);
         let demoteMainFrameResult = tmp8Result.demoteMainFrame(tmp3.id);
       }
       continue;

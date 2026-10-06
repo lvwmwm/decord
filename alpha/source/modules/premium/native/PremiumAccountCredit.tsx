@@ -1,21 +1,21 @@
-// Module ID: 13199
-// Function ID: 13200
+// Module ID: 13218
+// Function ID: 13219
 // Name: PremiumAccountCredit
-// Dependencies: [19, 17, 6899, 1085, 21, 4890, 587, 6667, 558, 576, 4528, 1126, 3205, 4826, 4886, 504, 12, 2]
+// Dependencies: [19, 17, 6909, 1085, 21, 4896, 587, 6674, 558, 576, 4534, 1126, 3233, 4832, 4892, 504, 12, 2]
 
-// Module 13199 (PremiumAccountCredit)
+// Module 13218 (PremiumAccountCredit)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
-import PremiumUtils from "PremiumUtils" /* 4528 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import GameIcon from "GameIcon" /* 6667 */;
+import PremiumUtils from "PremiumUtils" /* 4534 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import GameIcon from "GameIcon" /* 6674 */;
 import react from "react" /* 19 */;
-import EntitlementStore from "EntitlementStore" /* 6899 */;
+import EntitlementStore from "EntitlementStore" /* 6909 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -201,7 +201,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
                                 let tmp51 = !tmp15;
                                 if (tmp51) {
                                   const obj8 = { style: tmp4.subText, variant: "text-xs/medium", color: "text-default", children: tmp14 };
-                                  tmp51 = metroRequire(tmp(4886).Text, obj8);
+                                  tmp51 = metroRequire(tmp(4892).Text, obj8);
                                 }
                                 cResult[47] = tmp14;
                                 cResult[48] = tmp15;
@@ -245,7 +245,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
     const _Symbol = Symbol;
     if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
       const intl3 = tmp(1126).intl;
-      const stringResult = intl3.string(tmp23(3205)["5asczk"]);
+      const stringResult = intl3.string(tmp23(3233)["5asczk"]);
       cResult[28] = stringResult;
       tmp34 = stringResult;
     } else {
@@ -322,7 +322,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
           tmp42 = cResult[40];
         }
         const textContainer = tmp4.textContainer;
-        const Text = tmp(4886).Text;
+        const Text = tmp(4892).Text;
         const headerText = tmp4.headerText;
         const intl4 = tmp(1126).intl;
         const obj12 = { planName: displayName };
@@ -368,11 +368,11 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
     if (tmp9) {
       const obj13 = { style: tmp4.boostIcon, children: metroRequire(BoostGemIcon, obj14) };
       obj14 = { size: "md", color: tmp23(587).unsafe_rawColors.GUILD_BOOSTING_PINK };
-      BoostGemIcon = tmp(4826).BoostGemIcon;
+      BoostGemIcon = tmp(4832).BoostGemIcon;
       tmp43Result = tmp43(tmp39, obj13);
     } else {
       const obj15 = { size: GameIcon.GameIconSizes.SMALL, skuId: tmp5 };
-      const tmp23Result = tmp23(6667);
+      const tmp23Result = tmp23(6674);
       tmp43Result = tmp43(tmp23Result, obj15);
     }
     cResult[37] = tmp9;
@@ -420,7 +420,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   }
   if (hasPremiumGroup) {
     const intl3 = tmp2(1126).intl;
-    stringResult = intl3.string(tmp5(3205)["5asczk"]);
+    stringResult = intl3.string(tmp5(3233)["5asczk"]);
   } else {
     if (null != currentSubscription) {
       if (currentSubscription.planId === planId) {
@@ -467,7 +467,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   if (result1) {
     const obj7 = { style: tmp.boostIcon, children: metroRequire(BoostGemIcon, obj8) };
     obj8 = { size: "md", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
-    BoostGemIcon = tmp2(4826).BoostGemIcon;
+    BoostGemIcon = tmp2(4832).BoostGemIcon;
     tmp22Result = tmp22(tmp20, obj7);
     tmp25 = tmp22;
   } else {
@@ -479,18 +479,18 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   items1 = [tmp22Result, , ];
   const obj10 = { style: tmp.textContainer, children: items2 };
   const obj11 = { style: tmp.headerText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl4.format(intl6.t.LzobT9, { planName: displayName }) };
-  const Text = tmp2(4886).Text;
+  const Text = tmp2(4892).Text;
   intl4 = tmp2(1126).intl;
   items2 = [tmp25(Text, obj11), ];
   let tmp25Result = !tmp16;
   if (tmp25Result) {
     const obj12 = { style: tmp.subText, variant: "text-xs/medium", color: "text-default", children: stringResult };
-    tmp25Result = tmp25(tmp2(4886).Text, obj12);
+    tmp25Result = tmp25(tmp2(4892).Text, obj12);
   }
   items2[1] = tmp25Result;
   items1[1] = metroImportDefault(View, obj10);
   const obj13 = { style: tmp.timeText, variant: "text-md/medium", color: "text-default", children: intl5.format(intl6.t["ess/xl"], { count: months }) };
-  const Text2 = tmp2(4886).Text;
+  const Text2 = tmp2(4892).Text;
   intl5 = tmp2(1126).intl;
   items1[2] = tmp25(Text2, obj13);
   return metroImportDefault(View, obj6);
@@ -725,7 +725,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentSubscription)
       c3 = valueResult;
       const obj2 = { style, children: items1 };
       const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: intl.string(currentSubscription(1126).t.YugZY0) };
-      const Text = tmp2(4886).Text;
+      const Text = tmp2(4892).Text;
       intl = tmp2(1126).intl;
       items1 = [closure_6(Text, obj3), , , ];
       const obj4 = {
@@ -741,7 +741,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentSubscription)
       keys = Object.keys(valueResult);
       items1[1] = closure_6(c3, obj4);
       const obj5 = { style: tmp.creditDescription, variant: "text-sm/medium", children: intl2.string(currentSubscription(1126).t.Z5b2Gf) };
-      const Text2 = tmp2(4886).Text;
+      const Text2 = tmp2(4892).Text;
       intl2 = tmp2(1126).intl;
       items1[2] = closure_6(Text2, obj5);
       let tmp9Result = null;
@@ -752,7 +752,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentSubscription)
         tmp9Result = null;
         if (currentSubscription.isPurchasedExternally) {
           const obj6 = { style: tmp.creditDescription, variant: "text-sm/medium", children: intl3.string(currentSubscription(1126).t.azRP0E) };
-          const Text3 = tmp2(4886).Text;
+          const Text3 = tmp2(4892).Text;
           intl3 = tmp2(1126).intl;
           tmp9Result = tmp9(Text3, obj6);
         }

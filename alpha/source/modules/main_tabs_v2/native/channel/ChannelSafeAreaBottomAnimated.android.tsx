@@ -1,14 +1,14 @@
-// Module ID: 12310
-// Function ID: 12311
+// Module ID: 12325
+// Function ID: 12326
 // Name: ChannelSafeAreaBottomAnimated
-// Dependencies: [19, 17, 21, 558, 576, 9772, 9777, 4612, 2]
+// Dependencies: [19, 17, 21, 558, 576, 9785, 9790, 4618, 2]
 
-// Module 12310 (ChannelSafeAreaBottomAnimated)
+// Module 12325 (ChannelSafeAreaBottomAnimated)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import useChannelSafeAreaHeightSharedValueDefault from "useChannelSafeAreaHeightSharedValue" /* 9772 */;
-import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 9777 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import useChannelSafeAreaHeightSharedValueDefault from "useChannelSafeAreaHeightSharedValue" /* 9785 */;
+import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 9790 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -19,7 +19,7 @@ let channelId;
 let c3;
 let closure_4;
 let tmp3;
-const ReanimatedRexportDefault = tmp3(4612);
+const ReanimatedRexportDefault = tmp3(4618);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 const jsx = Fragment.jsx;
 const __initData = { code: "function ChannelSafeAreaBottomAnimatedAndroidTsx1(){const{heightSharedValue}=this.__closure;return{height:heightSharedValue.get()};}" };

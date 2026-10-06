@@ -1,9 +1,9 @@
-// Module ID: 7929
-// Function ID: 7930
+// Module ID: 7940
+// Function ID: 7941
 // Name: HeaderAvatar
-// Dependencies: [109, 19, 17, 4879, 2112, 4930, 1085, 21, 4890, 587, 558, 576, 1188, 504, 7837, 7930, 7931, 7919, 5909, 2]
+// Dependencies: [109, 19, 17, 4885, 2112, 4936, 1085, 21, 4896, 587, 558, 576, 1188, 504, 7848, 7941, 7942, 7930, 5916, 2]
 
-// Module 7929 (HeaderAvatar)
+// Module 7940 (HeaderAvatar)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,10 +11,10 @@ import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1188 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 4885 */;
 import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import PresenceStore from "PresenceStore" /* 4930 */;
-import createStyles from "createStyles" /* 4890 */;
+import PresenceStore from "PresenceStore" /* 4936 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let _require, dependencyMap, tmp3;
 
 let obj2;
 let tmp2;
-const profile_customization_ProfileCustomizationUtils = tmp2(7919);
+const profile_customization_ProfileCustomizationUtils = tmp2(7930);
 let closure_3 = ["user", "guildId", "disableStatus", "pendingAvatarSrc", "pendingAvatarDecoration", "style", "statusStyle", "onPress", "size", "animate"];
 const View = react_native.View;
 const ActivityTypes = Constants.ActivityTypes;
@@ -136,7 +136,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   if (cResult[15] !== id) {
     class E {
       constructor() {
-        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138412 */ }) };
+        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138619 */ }) };
         return obj;
       }
     }
@@ -154,7 +154,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   } else {
     class E {
       constructor() {
-        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138412 */ }) };
+        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138619 */ }) };
         return obj;
       }
     }
@@ -166,7 +166,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
     class E {
       constructor() {
-        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138412 */ }) };
+        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138619 */ }) };
         return obj;
       }
     }
@@ -181,7 +181,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   } else {
     class E {
       constructor() {
-        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138412 */ }) };
+        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138619 */ }) };
         return obj;
       }
     }
@@ -189,7 +189,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   if (cResult[19] === tmp6) {
     class E {
       constructor() {
-        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138412 */ }) };
+        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138619 */ }) };
         return obj;
       }
     }
@@ -203,7 +203,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     if (tmp13 != null) {
       class E {
         constructor() {
-          obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138412 */ }) };
+          obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138619 */ }) };
           return obj;
         }
       }
@@ -211,7 +211,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     if (stateFromStores1 != null) {
       class E {
         constructor() {
-          obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138412 */ }) };
+          obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138619 */ }) };
           return obj;
         }
       }
@@ -219,13 +219,13 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     if (cResult[22] === tmp6) {
       class E {
         constructor() {
-          obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138412 */ }) };
+          obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138619 */ }) };
           return obj;
         }
       }
     }
     let obj2 = { pendingValue: tmp8, userValue: undefined, guildValue: undefined, guildId: tmp6 };
-    const tmpResult6 = tmp(7837);
+    const tmpResult6 = tmp(7848);
     const profilePreviewValue = tmpResult6.getProfilePreviewValue(obj2);
     cResult[22] = tmp6;
     cResult[23] = tmp8;
@@ -307,9 +307,9 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   });
   const obj4 = { pendingValue: pendingAvatarDecoration, userValue: avatarDecoration, guildValue: avatarDecoration1, guildId };
   avatarDecoration = undefined;
-  const tmp11 = id(7930);
-  const getProfilePreviewValue = guildId(7837).getProfilePreviewValue;
-  guildId(7837);
+  const tmp11 = id(7941);
+  const getProfilePreviewValue = guildId(7848).getProfilePreviewValue;
+  guildId(7848);
   const tmp10 = id;
   if (user != null) {
     avatarDecoration = user.avatarDecoration;
@@ -318,7 +318,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   if (stateFromStores1 != null) {
     avatarDecoration1 = stateFromStores1.avatarDecoration;
   }
-  const obj5 = { isMobileOnline, isVROnline, size, status: tmp16, statusStyle: items4, streaming: tmp10(7931)(activities), animate: flag, avatarDecoration: tmp11Result };
+  const obj5 = { isMobileOnline, isVROnline, size, status: tmp16, statusStyle: items4, streaming: tmp10(7942)(activities), animate: flag, avatarDecoration: tmp11Result };
   tmp16 = null;
   tmp11Result = tmp11(getProfilePreviewValue(obj4));
   if (!disableStatus) {
@@ -330,12 +330,12 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   }
   if (null != onPress) {
     const obj6 = { ref, onPress, onLongPress: onPress, style, activeOpacity: 0.8, accessibilityRole: "imagebutton", children: <Avatar {...obj8} /> };
-    const PressableOpacity = tmp5(5909).PressableOpacity;
+    const PressableOpacity = tmp5(5916).PressableOpacity;
     const merged1 = Object.assign(merged);
     const Avatar = tmp5(1188).Avatar;
     if (undefined !== pendingAvatarSrc) {
       const obj7 = { source: tmp5Result.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores) };
-      tmp5Result = guildId(7919);
+      tmp5Result = guildId(7930);
       const merged2 = Object.assign(obj5);
       obj8 = obj7;
     } else {
@@ -350,7 +350,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     const tmp45 = View;
     if (undefined !== pendingAvatarSrc) {
       const obj10 = { source: tmp5Result2.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores) };
-      tmp5Result2 = guildId(7919);
+      tmp5Result2 = guildId(7930);
       const merged5 = Object.assign(obj5);
       obj11 = obj10;
     } else {

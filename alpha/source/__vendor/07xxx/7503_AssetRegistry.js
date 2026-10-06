@@ -1,0 +1,10 @@
+// Module ID: 7503
+// Function ID: 7504
+// Name: AssetRegistry
+// Dependencies: [1132]
+
+// Module 7503 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1132 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/roadblocks/images", width: 552, height: 336, scales: [1], hash: "f59c66d6f542b08761b44d6d5de547c8", name: "client_themes_upsell", type: "png" });

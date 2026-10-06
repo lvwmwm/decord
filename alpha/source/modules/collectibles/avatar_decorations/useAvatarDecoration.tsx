@@ -1,10 +1,10 @@
-// Module ID: 7887
-// Function ID: 7888
+// Module ID: 7898
+// Function ID: 7899
 // Name: useAvatarDecoration
 // Dependencies: [32, 2112, 558, 576, 573, 2]
 // Exports: getAvatarDecoration
 
-// Module 7887 (useAvatarDecoration)
+// Module 7898 (useAvatarDecoration)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GuildMemberStore from "GuildMemberStore" /* 2112 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

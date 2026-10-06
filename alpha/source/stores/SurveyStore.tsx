@@ -1,20 +1,20 @@
-// Module ID: 5081
-// Function ID: 5082
+// Module ID: 5087
+// Function ID: 5088
 // Name: SurveyStore
-// Dependencies: [4780, 2074, 4509, 4699, 1377, 1085, 1102, 5082, 1097, 510, 4461, 504, 584, 2]
+// Dependencies: [4786, 2074, 4515, 4705, 1377, 1085, 1102, 5088, 1097, 510, 4467, 504, 584, 2]
 
-// Module 5081 (SurveyStore)
+// Module 5087 (SurveyStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import _modDef4461 from "module_4461" /* 4461 */;
-import surveyFetch from "surveyFetch" /* 5082 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4780 */;
+import _modDef4467 from "module_4467" /* 4467 */;
+import surveyFetch from "surveyFetch" /* 5088 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4786 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
 import UserStore from "UserStore" /* 1377 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
@@ -181,7 +181,7 @@ function setSurvey(survey) {
   const value = Storage.get(unpackModuleId);
   let tmp9 = null == value;
   if (!tmp9) {
-    obj = _modDef4461();
+    obj = _modDef4467();
     tmp9 = obj.diff(value, "day") < 7;
   }
   let tmp11 = null;

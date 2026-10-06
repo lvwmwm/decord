@@ -1,16 +1,16 @@
-// Module ID: 9073
-// Function ID: 9074
+// Module ID: 9109
+// Function ID: 9110
 // Name: useDraggablePip
-// Dependencies: [32, 9050, 9057, 558, 576, 4612, 4891, 1188, 9074, 6140, 5597, 2]
+// Dependencies: [32, 9086, 9093, 558, 576, 4618, 4897, 1188, 9110, 6147, 5604, 2]
 
-// Module 9073 (useDraggablePip)
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import spring from "spring" /* 5597 */;
-import ChannelCallStore from "ChannelCallStore" /* 9050 */;
-import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9074 */;
+// Module 9109 (useDraggablePip)
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import timing from "timing" /* 4897 */;
+import spring from "spring" /* 5604 */;
+import ChannelCallStore from "ChannelCallStore" /* 9086 */;
+import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9110 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import Constants from "Constants" /* 9057 */;
+import Constants from "Constants" /* 9093 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

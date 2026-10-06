@@ -1,10 +1,10 @@
-// Module ID: 4951
-// Function ID: 4952
+// Module ID: 4957
+// Function ID: 4958
 // Name: DirectVideoStream
 // Dependencies: [2001, 2]
 // Exports: acquireDirectVideoStream, getDirectVideoStreamConsumerCount, supportsDirectVideoStreams
 
-// Module 4951 (DirectVideoStream)
+// Module 4957 (DirectVideoStream)
 import inject from "inject" /* 2001 */;
 import size from "module_2" /* 2 */;
 

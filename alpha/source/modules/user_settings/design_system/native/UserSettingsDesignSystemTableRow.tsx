@@ -1,33 +1,33 @@
-// Module ID: 15651
-// Function ID: 15652
+// Module ID: 15665
+// Function ID: 15666
 // Name: UserSettingsDesignSystemTableRow
-// Dependencies: [32, 19, 17, 4699, 1377, 1085, 21, 558, 576, 5993, 6883, 504, 1618, 4886, 1402, 6074, 1188, 6698, 5990, 6072, 6071, 5999, 13927, 13924, 13925, 13926, 8897, 5593, 5605, 2]
+// Dependencies: [32, 19, 17, 4705, 1377, 1085, 21, 558, 576, 6000, 6893, 504, 1618, 4892, 1402, 6081, 1188, 6705, 5997, 6079, 6078, 6006, 13945, 13942, 13943, 13944, 8926, 5600, 5612, 2]
 
-// Module 15651 (UserSettingsDesignSystemTableRow)
+// Module 15665 (UserSettingsDesignSystemTableRow)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import native from "native" /* 1188 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Stack_Stack from "Stack/Stack" /* 5593 */;
-import LinearGradientDefault from "LinearGradient" /* 5605 */;
-import TableCheckboxRow3 from "TableCheckboxRow" /* 5990 */;
-import TableRow16 from "TableRow" /* 5993 */;
-import TableRowIcon5 from "TableRowIcon" /* 5999 */;
-import TableRadioRow5 from "TableRadioRow" /* 6071 */;
-import TableRadioGroup3 from "TableRadioGroup" /* 6072 */;
-import TableRowGroup5 from "TableRowGroup" /* 6074 */;
-import TableSwitchRow3 from "TableSwitchRow" /* 6698 */;
-import SettingsIcon from "SettingsIcon" /* 6883 */;
-import RowButton3 from "RowButton" /* 8897 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13924 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13925 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13926 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13927 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import Stack_Stack from "Stack/Stack" /* 5600 */;
+import LinearGradientDefault from "LinearGradient" /* 5612 */;
+import TableCheckboxRow3 from "TableCheckboxRow" /* 5997 */;
+import TableRow16 from "TableRow" /* 6000 */;
+import TableRowIcon5 from "TableRowIcon" /* 6006 */;
+import TableRadioRow5 from "TableRadioRow" /* 6078 */;
+import TableRadioGroup3 from "TableRadioGroup" /* 6079 */;
+import TableRowGroup5 from "TableRowGroup" /* 6081 */;
+import TableSwitchRow3 from "TableSwitchRow" /* 6705 */;
+import SettingsIcon from "SettingsIcon" /* 6893 */;
+import RowButton3 from "RowButton" /* 8926 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13942 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13943 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13944 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13945 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
 import UserStore from "UserStore" /* 1377 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
@@ -57,9 +57,9 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { label: "Notifications", onPress, icon: closure_12(Icon, obj3) };
-    const TableRow = tmp(5993).TableRow;
+    const TableRow = tmp(6000).TableRow;
     obj3 = { IconComponent: SettingsIcon.SettingsIcon };
-    Icon = tmp(5993).TableRow.Icon;
+    Icon = tmp(6000).TableRow.Icon;
     const tmp7 = closure_12(TableRow, obj2);
     cResult[0] = tmp7;
     first = tmp7;
@@ -167,7 +167,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       const obj2 = { IconComponent: SettingsIcon.SettingsIcon };
-      const Icon = tmp(5993).TableRow.Icon;
+      const Icon = tmp(6000).TableRow.Icon;
       const tmp17 = closure_12(Icon, obj2);
       cResult[8] = tmp17;
       tmp16 = tmp17;
@@ -186,7 +186,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       const obj3 = { onPress, icon: tmp16, label: "Boost your Server", subLabel: "Unlock perks for the entire community", trailing: closure_12(TableRow16.TableRow.Arrow, {}) };
-      const TableRow = tmp(5993).TableRow;
+      const TableRow = tmp(6000).TableRow;
       const tmp21 = closure_12(TableRow, obj3);
       const tmp23 = closure_12(closure_14, {});
       cResult[9] = tmp21;
@@ -209,9 +209,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       const obj4 = { icon: closure_12(Icon2, obj5), label: "Add a Friend" };
-      const TableRow2 = tmp(5993).TableRow;
+      const TableRow2 = tmp(6000).TableRow;
       obj5 = { IconComponent: SettingsIcon.SettingsIcon };
-      Icon2 = tmp(5993).TableRow.Icon;
+      Icon2 = tmp(6000).TableRow.Icon;
       const tmp25 = closure_12(TableRow2, obj4);
       cResult[11] = tmp25;
       tmp24 = tmp25;
@@ -230,9 +230,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       const obj6 = { icon: closure_12(Icon3, obj7), label: "A really long label that takes up all of the space and then some", subLabel: "A really long sublabel that takes up all of the space and then some" };
-      const TableRow3 = tmp(5993).TableRow;
+      const TableRow3 = tmp(6000).TableRow;
       obj7 = { IconComponent: SettingsIcon.SettingsIcon };
-      Icon3 = tmp(5993).TableRow.Icon;
+      Icon3 = tmp(6000).TableRow.Icon;
       const tmp27 = closure_12(TableRow3, obj6);
       cResult[12] = tmp27;
       tmp26 = tmp27;
@@ -251,7 +251,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       const obj8 = { IconComponent: SettingsIcon.SettingsIcon };
-      const Icon4 = tmp(5993).TableRow.Icon;
+      const Icon4 = tmp(6000).TableRow.Icon;
       const tmp29 = closure_12(Icon4, obj8);
       cResult[13] = tmp29;
       tmp28 = tmp29;
@@ -270,7 +270,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       const obj9 = { icon: tmp28, label: "A really long label, but next to an arrow, that takes up all of the space and then some", subLabel: "A really long sublabel, but next to an arrow, that takes up all of the space and then some", trailing: closure_12(TableRow16.TableRow.Arrow, {}) };
-      const TableRow4 = tmp(5993).TableRow;
+      const TableRow4 = tmp(6000).TableRow;
       const tmp31 = closure_12(TableRow4, obj9);
       cResult[14] = tmp31;
       tmp30 = tmp31;
@@ -289,7 +289,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       const obj10 = { IconComponent: SettingsIcon.SettingsIcon };
-      const Icon5 = tmp(5993).TableRow.Icon;
+      const Icon5 = tmp(6000).TableRow.Icon;
       const tmp34 = closure_12(Icon5, obj10);
       const tmp35 = closure_12(Text_Text.Text, { variant: "text-md/medium", lineClamp: 1, children: "Custom node for label - A really long label that takes up all of the space and then some" });
       cResult[15] = tmp34;
@@ -350,7 +350,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj13 = { icon: tmp32, label: tmp33, subLabel: closure_13(closure_5, obj14) };
       obj14 = { style: tmp36, children: items1 };
       items1 = [tmp38, ];
-      const TableRow5 = tmp(5993).TableRow;
+      const TableRow5 = tmp(6000).TableRow;
       const obj15 = { variant: "text-md/medium", lineClamp: 1, color: "text-muted", style: { flexShrink: 1 }, children: "Custom node for subLabel - A really long sublabel that takes up all of the space and then some" };
       items1[1] = closure_12(Text_Text.Text, obj15);
       const tmp44 = closure_12(TableRow5, obj13);
@@ -372,11 +372,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       const obj16 = { hasIcons: true, children: items2 };
       items2 = [tmp18, tmp19, tmp24, tmp26, tmp30, tmp41, ];
-      const TableRowGroup = tmp(6074).TableRowGroup;
+      const TableRowGroup = tmp(6081).TableRowGroup;
       const obj17 = { icon: closure_12(Icon6, obj18), label: "A disabled row", subLabel: "you cant do anything with this", disabled: true };
-      const TableRow6 = tmp(5993).TableRow;
+      const TableRow6 = tmp(6000).TableRow;
       obj18 = { IconComponent: SettingsIcon.SettingsIcon };
-      Icon6 = tmp(5993).TableRow.Icon;
+      Icon6 = tmp(6000).TableRow.Icon;
       items2[6] = closure_12(TableRow6, obj17);
       cResult[20] = closure_13(TableRowGroup, obj16);
       const tmp47 = closure_13(TableRowGroup, obj16);

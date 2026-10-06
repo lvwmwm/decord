@@ -1,18 +1,18 @@
-// Module ID: 11146
-// Function ID: 11147
+// Module ID: 11159
+// Function ID: 11160
 // Name: useLoadMessageContentEntries
-// Dependencies: [32, 5, 19, 5118, 2011, 8696, 7852, 6658, 7815, 38, 7821, 1985, 7812, 558, 576, 6805, 2]
+// Dependencies: [32, 5, 19, 5124, 2011, 8731, 7863, 6665, 7826, 38, 7832, 1985, 7823, 558, 576, 6815, 2]
 
-// Module 11146 (useLoadMessageContentEntries)
+// Module 11159 (useLoadMessageContentEntries)
 import _modDef38 from "module_38" /* 38 */;
 import Server from "Server" /* 1985 */;
 import Constants from "Constants" /* 2011 */;
-import useAvatarColor from "useAvatarColor" /* 7815 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 8696 */;
+import useAvatarColor from "useAvatarColor" /* 7826 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 8731 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
+import ApplicationStore from "ApplicationStore" /* 5124 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -682,7 +682,7 @@ function isMessageRenderable(message) {
     let tmp2 = nextResult;
     let tmp3 = require;
     if (nextResult.type === Server.ComponentType.CONTENT_INVENTORY_ENTRY) {
-      let tmp3Result = tmp3(7812);
+      let tmp3Result = tmp3(7823);
       obj = { component: obj2, message };
       obj2 = { contentInventoryEntry: tmp2.contentInventoryEntry };
       if (null == tmp3Result.transformToRowGeneratedContentInventoryEntryComponent(obj)) {
@@ -775,7 +775,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadMessa
   } else {
     tmp19 = cResult[4];
   }
-  const tmpResult = tmp(7815);
+  const tmpResult = tmp(7826);
   const colorStore = tmpResult.useColorStore(tmp19);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     _require = _asyncToGenerator(async (arg0, value) => {

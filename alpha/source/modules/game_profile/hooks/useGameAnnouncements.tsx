@@ -1,12 +1,12 @@
-// Module ID: 8413
-// Function ID: 8414
+// Module ID: 8446
+// Function ID: 8447
 // Name: useGameAnnouncements
-// Dependencies: [19, 8327, 558, 576, 504, 8414, 2]
+// Dependencies: [19, 8360, 558, 576, 504, 8447, 2]
 
-// Module 8413 (useGameAnnouncements)
+// Module 8446 (useGameAnnouncements)
 import react from "react" /* 19 */;
-import GameProfileHttpUtils from "GameProfileHttpUtils" /* 8414 */;
-import GameProfileStore from "GameProfileStore" /* 8327 */;
+import GameProfileHttpUtils from "GameProfileHttpUtils" /* 8447 */;
+import GameProfileStore from "GameProfileStore" /* 8360 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

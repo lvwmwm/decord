@@ -1,25 +1,25 @@
-// Module ID: 15649
-// Function ID: 15650
+// Module ID: 15663
+// Function ID: 15664
 // Name: UserSettingsDesignSystemExperimentalButtons
-// Dependencies: [19, 17, 1085, 21, 558, 576, 4580, 587, 8567, 6074, 6001, 6549, 5593, 4844, 5594, 4886, 4589, 5605, 8897, 6884, 2]
+// Dependencies: [19, 17, 1085, 21, 558, 576, 4586, 587, 8602, 6081, 6008, 6556, 5600, 4850, 5601, 4892, 4595, 5612, 8926, 6894, 2]
 
-// Module 15649 (UserSettingsDesignSystemExperimentalButtons)
+// Module 15663 (UserSettingsDesignSystemExperimentalButtons)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import useToken from "useToken" /* 4580 */;
-import native from "native" /* 4589 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4844 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Stack_Stack from "Stack/Stack" /* 5593 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import LinearGradientDefault from "LinearGradient" /* 5605 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 6001 */;
-import TableRowGroup7 from "TableRowGroup" /* 6074 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 6549 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 6884 */;
-import native2 from "native" /* 8567 */;
-import RowButton2 from "RowButton" /* 8897 */;
+import useToken from "useToken" /* 4586 */;
+import native from "native" /* 4595 */;
+import AssetRegistryDefault from "AssetRegistry" /* 4850 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import Stack_Stack from "Stack/Stack" /* 5600 */;
+import components_Button_Button from "components/Button/Button" /* 5601 */;
+import LinearGradientDefault from "LinearGradient" /* 5612 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 6008 */;
+import TableRowGroup7 from "TableRowGroup" /* 6081 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 6556 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 6894 */;
+import native2 from "native" /* 8602 */;
+import RowButton2 from "RowButton" /* 8926 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -96,7 +96,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj7 = { title: "Header Button", description: "A specialized version of the 'secondary-overlay' Button which functions as both a Header and a button.", hasIcons: false, children: metroRequire(_false, obj8) };
     obj8 = { style: tmp9, children: metroRequire(HeaderButton, obj9) };
-    const TableRowGroup = tmp(6074).TableRowGroup;
+    const TableRowGroup = tmp(6081).TableRowGroup;
     obj9 = {
       onPress() {
 
@@ -107,7 +107,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       accessibilityHint: "double-tap for more options",
       iconOpticalOffsetMargin: -6
     };
-    HeaderButton = tmp(8567).HeaderButton;
+    HeaderButton = tmp(8602).HeaderButton;
     const tmp13 = metroRequire(TableRowGroup, obj7);
     cResult[3] = tmp13;
     tmp10 = tmp13;
@@ -124,7 +124,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       icon: AssetRegistryDefault3,
       round: true
     };
-    const InputButton = tmp(8567).InputButton;
+    const InputButton = tmp(8602).InputButton;
     const tmp16 = metroRequire(InputButton, obj10);
     cResult[4] = tmp16;
     tmp14 = tmp16;
@@ -133,9 +133,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj11 = { title: "Input Button", description: "A specialized button which looks like a text field, but functions as a button.", hasIcons: false, children: metroImportDefault(Stack, obj12) };
-    const TableRowGroup2 = tmp(6074).TableRowGroup;
+    const TableRowGroup2 = tmp(6081).TableRowGroup;
     obj12 = { spacing: nativeDefault.space.PX_24, children: items };
-    Stack = tmp(5593).Stack;
+    Stack = tmp(5600).Stack;
     items = [tmp14, ];
     const obj13 = {
       onPress() {
@@ -147,7 +147,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       iconPosition: "end",
       accessibilityLabel: "Copy, http://discord.com/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     };
-    const InputButton2 = tmp(8567).InputButton;
+    const InputButton2 = tmp(8602).InputButton;
     items[1] = metroRequire(InputButton2, obj13);
     const tmp20 = metroRequire(TableRowGroup2, obj11);
     cResult[5] = tmp20;
@@ -170,10 +170,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj15 = { title: "Twin Buttons", description: "TwinButtons is a specialized layout component, which renders two text buttons horizontally next to each other. A horizontal layout for text buttons is often problematic, since internationalization and font size settings can easily render these buttons unreadable. But TwinButtons will force the two buttons to stack vertically under certain conditions to avoid these issues.", hasIcons: false, children: metroImportDefault(TwinButtons, obj16) };
-    const TableRowGroup3 = tmp(6074).TableRowGroup;
+    const TableRowGroup3 = tmp(6081).TableRowGroup;
     obj16 = { children: items1 };
     items1 = [tmp21, ];
-    TwinButtons = tmp(8567).TwinButtons;
+    TwinButtons = tmp(8602).TwinButtons;
     const obj17 = {
       onPress() {
 
@@ -207,7 +207,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
     const obj19 = { onPress: tmp29, children: metroRequire(_false, obj20) };
     obj20 = { style: { borderColor: "pink", borderWidth: 1, borderRadius: 8, padding: 12 }, children: metroRequire(Text_Text.Text, { variant: "text-md/semibold", children: "This is a custom button" }) };
-    const PressableScale = tmp(8567).PressableScale;
+    const PressableScale = tmp(8602).PressableScale;
     const tmp33 = metroRequire(PressableScale, obj19);
     cResult[11] = tmp33;
     tmp30 = tmp33;
@@ -217,7 +217,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[12] !== tmp28) {
     const obj21 = { title: "PressableScale", description: "If no button in our catelog of components is compatible with a particular design, then PressableScale can fill some gaps. It will apply the same onPress animation to a custom button.", hasIcons: false, children: metroRequire(_false, obj22) };
     obj22 = { style: tmp28, children: tmp30 };
-    const TableRowGroup4 = tmp(6074).TableRowGroup;
+    const TableRowGroup4 = tmp(6081).TableRowGroup;
     const tmp37 = metroRequire(TableRowGroup4, obj21);
     cResult[12] = tmp28;
     cResult[13] = tmp37;
@@ -227,7 +227,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
     const obj23 = { title: "Experimental Blur Background Row Button", description: "Row Button Row Buttons are full-width, high-emphasis buttons that are used as primary CTAs in a page.", hasIcons: false, children: metroRequire(_false, {}) };
-    const TableRowGroup5 = tmp(6074).TableRowGroup;
+    const TableRowGroup5 = tmp(6081).TableRowGroup;
     const tmp41 = metroRequire(TableRowGroup5, obj23);
     cResult[14] = tmp41;
     tmp38 = tmp41;
@@ -255,7 +255,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
     const obj25 = { theme: ThemeTypes.DARK, children: metroRequire(tmp4Result, obj26) };
-    const ThemeContextProvider = tmp(4589).ThemeContextProvider;
+    const ThemeContextProvider = tmp(4595).ThemeContextProvider;
     obj26 = { style: tmp42, start: tmp43, end: tmp44, colors: tmp45, children: metroRequire(RowButton, obj27) };
     obj27 = {
       icon: AssetRegistryDefault4,
@@ -267,7 +267,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
     };
     tmp4Result = LinearGradientDefault;
-    RowButton = tmp(8897).RowButton;
+    RowButton = tmp(8926).RowButton;
     const tmp50 = metroRequire(ThemeContextProvider, obj25);
     cResult[19] = tmp50;
     tmp46 = tmp50;
@@ -277,7 +277,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
     const obj28 = { title: "Collapsible Floating Action Button", description: "A variation of the FloatingActionButton which will display some text until the user scrolls. We currently recommend the use of the FloatingActionButton over the CollapsibleFloatingActionButton, as a singular icon button without animation is more compact, understandable, and predictable.", hasIcons: false, children: metroRequire(_false, obj29) };
     obj29 = { style: { padding: 48 } };
-    const TableRowGroup6 = tmp(6074).TableRowGroup;
+    const TableRowGroup6 = tmp(6081).TableRowGroup;
     const tmp54 = metroRequire(TableRowGroup6, obj28);
     cResult[20] = tmp54;
     tmp51 = tmp54;
@@ -308,7 +308,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       if (cResult[28] !== collapsibleFloatingActionButtonState) {
         const obj30 = { icon: AssetRegistryDefault4, onPress: tmp61, positionBottom: 32, text: "Floating Action Button", state: collapsibleFloatingActionButtonState };
-        const CollapsibleFloatingActionButton = tmp(8567).CollapsibleFloatingActionButton;
+        const CollapsibleFloatingActionButton = tmp(8602).CollapsibleFloatingActionButton;
         const tmp64 = metroRequire(CollapsibleFloatingActionButton, obj30);
         cResult[28] = collapsibleFloatingActionButtonState;
         cResult[29] = tmp64;
@@ -339,7 +339,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp57 = tmp60;
   }
   const obj33 = { spacing: nativeDefault.space.PX_24, style: tmp8, children: items4 };
-  const Stack2 = tmp(5593).Stack;
+  const Stack2 = tmp(5600).Stack;
   items4 = [tmp10, tmp17, tmp24, tmp34, tmp38, tmp46, tmp51];
   const tmp56 = metroImportDefault(Stack2, obj33);
   cResult[21] = tmp8;

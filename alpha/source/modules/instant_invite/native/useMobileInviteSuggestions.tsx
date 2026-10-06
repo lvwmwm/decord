@@ -1,20 +1,20 @@
-// Module ID: 9493
-// Function ID: 9494
+// Module ID: 9506
+// Function ID: 9507
 // Name: useMobileInviteSuggestions
-// Dependencies: [32, 19, 2112, 2074, 9494, 4914, 7226, 1085, 1096, 504, 1252, 9507, 9508, 2]
+// Dependencies: [32, 19, 2112, 2074, 9507, 4920, 7239, 1085, 1096, 504, 1252, 9520, 9521, 2]
 // Exports: default
 
-// Module 9493 (useMobileInviteSuggestions)
+// Module 9506 (useMobileInviteSuggestions)
 import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 1096 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Constants3 from "Constants" /* 7226 */;
+import Constants3 from "Constants" /* 7239 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2112 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9494 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4914 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9507 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4920 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,9 +1,9 @@
-// Module ID: 4595
-// Function ID: 4596
+// Module ID: 4601
+// Function ID: 4602
 // Name: useFieldLabelA11yNative
-// Dependencies: [19, 17, 558, 576, 4584, 2]
+// Dependencies: [19, 17, 558, 576, 4590, 2]
 
-// Module 4595 (useFieldLabelA11yNative)
+// Module 4601 (useFieldLabelA11yNative)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -11,7 +11,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const react3 = tmp(4584);
+const react3 = tmp(4590);
 const Platform = react_native.Platform;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let accessibilityLabel;

@@ -1,46 +1,46 @@
-// Module ID: 14448
-// Function ID: 14449
+// Module ID: 14464
+// Function ID: 14465
 // Name: CustomizeBadgesSheet
-// Dependencies: [19, 17, 7831, 1377, 7863, 1085, 6646, 1379, 21, 4890, 587, 4855, 7581, 14449, 558, 576, 1126, 6458, 6456, 7579, 4812, 10881, 4886, 5995, 10889, 8567, 6452, 4612, 4891, 4894, 12923, 7580, 6140, 4590, 10883, 1618, 504, 4528, 6657, 6681, 6647, 8914, 8867, 7862, 1252, 7868, 4568, 1484, 10725, 14450, 5968, 6645, 6644, 6112, 2]
+// Dependencies: [19, 17, 7842, 1377, 7874, 1085, 6653, 1379, 21, 4896, 587, 4861, 7592, 14465, 558, 576, 1126, 6465, 6463, 7590, 4818, 10894, 4892, 6002, 10902, 8602, 6459, 4618, 4897, 4900, 12942, 7591, 6147, 4596, 10896, 1618, 504, 4534, 6664, 6688, 6654, 8943, 8896, 7873, 1252, 7879, 4574, 1484, 10738, 14466, 5975, 6652, 6651, 6119, 2]
 // Exports: default
 
-// Module 14448 (CustomizeBadgesSheet)
+// Module 14464 (CustomizeBadgesSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PremiumConstants from "PremiumConstants" /* 1379 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4590 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 4812 */;
-import HapticUtils from "HapticUtils" /* 4855 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import timing from "timing" /* 4891 */;
-import timingPresets from "timingPresets" /* 4894 */;
-import Card_Card from "Card/Card" /* 5995 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6646 */;
-import ContextMenu2 from "ContextMenu" /* 7579 */;
-import ContextMenuState from "ContextMenuState" /* 7580 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 7581 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 7862 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7868 */;
-import native from "native" /* 8567 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8867 */;
-import openPremiumModalDefault from "openPremiumModal" /* 8914 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 10725 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10881 */;
-import BadgeUtils from "BadgeUtils" /* 10889 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 12923 */;
-import BadgeGrid from "BadgeGrid" /* 14449 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4596 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 4818 */;
+import HapticUtils from "HapticUtils" /* 4861 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import timing from "timing" /* 4897 */;
+import timingPresets from "timingPresets" /* 4900 */;
+import Card_Card from "Card/Card" /* 6002 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6653 */;
+import ContextMenu2 from "ContextMenu" /* 7590 */;
+import ContextMenuState from "ContextMenuState" /* 7591 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 7592 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 7873 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7879 */;
+import native from "native" /* 8602 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8896 */;
+import openPremiumModalDefault from "openPremiumModal" /* 8943 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 10738 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10894 */;
+import BadgeUtils from "BadgeUtils" /* 10902 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 12942 */;
+import BadgeGrid from "BadgeGrid" /* 14465 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7831 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7842 */;
 import UserStore from "UserStore" /* 1377 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7863 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7874 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -65,8 +65,8 @@ let obj8;
 let size;
 let tmp2;
 let unpackModuleId;
-const EyeSlashIcon2 = tmp2(6456);
-const EyeIcon = tmp2(6458);
+const EyeSlashIcon2 = tmp2(6463);
+const EyeIcon = tmp2(6465);
 ({ Platform, View: closure_4 } = react_native);
 ({ AnalyticEvents: metroImportAll, AnalyticsObjects: c9, AnalyticsPages: c10, AnalyticsSections: unpackModuleId } = Constants);
 let closure_12 = ActionSheetConstants.ACTION_SHEET_MINIMUM_BOTTOM_PADDING;
@@ -113,9 +113,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((badge) => {
     tmp4 = cResult[1];
   }
   if (flag) {
-    EyeSlashIcon = tmp(6458).EyeIcon;
+    EyeSlashIcon = tmp(6465).EyeIcon;
   } else {
-    EyeSlashIcon = tmp(6456).EyeSlashIcon;
+    EyeSlashIcon = tmp(6463).EyeSlashIcon;
   }
   if (cResult[2] === badge) {
     if (cResult[3] === flag) {
@@ -131,7 +131,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((badge) => {
             tmp7 = cResult[9];
           }
           if (cResult[10] !== index) {
-            const result = index % tmp(14449).BADGE_GRID_COLUMNS;
+            const result = index % tmp(14465).BADGE_GRID_COLUMNS;
             let str = "right";
             if (0 !== result) {
               let str2 = "above";
@@ -264,7 +264,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((badge) => {
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-      const CircleInformationIcon = tmp(4812).CircleInformationIcon;
+      const CircleInformationIcon = tmp(4818).CircleInformationIcon;
       const tmp15 = authStore2(CircleInformationIcon, obj2);
       cResult[0] = tmp15;
       first = tmp15;
@@ -279,7 +279,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((badge) => {
       const _Symbol = Symbol;
       if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-        const EyeSlashIcon = tmp(6456).EyeSlashIcon;
+        const EyeSlashIcon = tmp(6463).EyeSlashIcon;
         const tmp10 = authStore2(EyeSlashIcon, obj3);
         cResult[1] = tmp10;
         tmp7 = tmp10;
@@ -535,7 +535,7 @@ let closure_24 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badge) =>
                             obj.onLongPress = fn;
                             obj.delayLongPress = tmp2(tmp3[12]).CONTEXT_MENU_LONG_PRESS_DURATION_MS;
                             obj.style = closure_5;
-                            obj.children = tmp(f67446, { badge: tmp5, alwaysVisible: tmp7 });
+                            obj.children = tmp(f67509, { badge: tmp5, alwaysVisible: tmp7 });
                             return tmp(PressableScale, obj);
                           }
                         }
@@ -615,7 +615,7 @@ let closure_24 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badge) =>
                           obj.onLongPress = fn;
                           obj.delayLongPress = tmp2(tmp3[12]).CONTEXT_MENU_LONG_PRESS_DURATION_MS;
                           obj.style = closure_5;
-                          obj.children = tmp(f67446, { badge: tmp5, alwaysVisible: tmp7 });
+                          obj.children = tmp(f67509, { badge: tmp5, alwaysVisible: tmp7 });
                           return tmp(PressableScale, obj);
                         }
                       }
@@ -681,7 +681,7 @@ let closure_24 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badge) =>
                         obj.onLongPress = fn;
                         obj.delayLongPress = tmp2(tmp3[12]).CONTEXT_MENU_LONG_PRESS_DURATION_MS;
                         obj.style = closure_5;
-                        obj.children = tmp(f67446, { badge: tmp5, alwaysVisible: tmp7 });
+                        obj.children = tmp(f67509, { badge: tmp5, alwaysVisible: tmp7 });
                         return tmp(PressableScale, obj);
                       }
                     }
@@ -749,7 +749,7 @@ let closure_24 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badge) =>
                 obj.onLongPress = fn;
                 obj.delayLongPress = tmp2(tmp3[12]).CONTEXT_MENU_LONG_PRESS_DURATION_MS;
                 obj.style = closure_5;
-                obj.children = tmp(f67446, { badge: tmp5, alwaysVisible: tmp7 });
+                obj.children = tmp(f67509, { badge: tmp5, alwaysVisible: tmp7 });
                 return tmp(PressableScale, obj);
               }
             }
@@ -849,7 +849,7 @@ let closure_24 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badge) =>
         obj.onLongPress = fn;
         obj.delayLongPress = tmp2(tmp3[12]).CONTEXT_MENU_LONG_PRESS_DURATION_MS;
         obj.style = closure_5;
-        obj.children = tmp(f67446, { badge: tmp5, alwaysVisible: tmp7 });
+        obj.children = tmp(f67509, { badge: tmp5, alwaysVisible: tmp7 });
         return tmp(PressableScale, obj);
       }
     }
@@ -1644,7 +1644,7 @@ let closure_49 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((badge) =
         if (result !== value) {
           const result1 = obj.set(result);
           onCommitOrder(result);
-          const AccessibilityAnnouncer = tmp4(4590).AccessibilityAnnouncer;
+          const AccessibilityAnnouncer = tmp4(4596).AccessibilityAnnouncer;
           const announce = AccessibilityAnnouncer.announce;
           const intl = tmp4(1126).intl;
           const obj2 = { from: index + slotOffset + 1, to: clampResult + slotOffset + 1 };

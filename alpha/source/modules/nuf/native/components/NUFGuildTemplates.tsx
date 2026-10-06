@@ -1,31 +1,31 @@
-// Module ID: 12355
-// Function ID: 12356
+// Module ID: 12370
+// Function ID: 12371
 // Name: NUFGuildTemplates
-// Dependencies: [5, 19, 17, 4703, 1085, 12356, 6468, 21, 5705, 12130, 10996, 12357, 12413, 1252, 1260, 6010, 12332, 1112, 12359, 12374, 11961, 1126, 12381, 12382, 12414, 12394, 558, 576, 6496, 2]
+// Dependencies: [5, 19, 17, 4709, 1085, 12371, 6475, 21, 5712, 12145, 11009, 12372, 12428, 1252, 1260, 6017, 12347, 1112, 12374, 12389, 11975, 1126, 12396, 12397, 12429, 12409, 558, 576, 6503, 2]
 
-// Module 12355 (NUFGuildTemplates)
+// Module 12370 (NUFGuildTemplates)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import router_utils from "router_utils" /* 1112 */;
 import intl2 from "intl" /* 1126 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5705 */;
-import NavigatorHeader from "NavigatorHeader" /* 6010 */;
-import Navigator2 from "Navigator" /* 6496 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12332 */;
-import create_guild_CreateGuildConstants from "create_guild/CreateGuildConstants" /* 12356 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 12357 */;
-import GuildTemplatesDefault from "GuildTemplates" /* 12359 */;
-import CreationIntentDefault from "CreationIntent" /* 12374 */;
-import components_JoinServerDefault from "components/JoinServer" /* 12381 */;
-import AcceptInviteContainerDefault from "AcceptInviteContainer" /* 12382 */;
-import HubEmailConnectionModalDefault from "HubEmailConnectionModal" /* 12394 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5712 */;
+import NavigatorHeader from "NavigatorHeader" /* 6017 */;
+import Navigator2 from "Navigator" /* 6503 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12347 */;
+import create_guild_CreateGuildConstants from "create_guild/CreateGuildConstants" /* 12371 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 12372 */;
+import GuildTemplatesDefault from "GuildTemplates" /* 12374 */;
+import CreationIntentDefault from "CreationIntent" /* 12389 */;
+import components_JoinServerDefault from "components/JoinServer" /* 12396 */;
+import AcceptInviteContainerDefault from "AcceptInviteContainer" /* 12397 */;
+import HubEmailConnectionModalDefault from "HubEmailConnectionModal" /* 12409 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 4703 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 4709 */;
 import Constants from "Constants" /* 1085 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 6468 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 6475 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -301,7 +301,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const Navigator = tmp(6496).Navigator;
+    const Navigator = tmp(6503).Navigator;
     const intl = tmp(1126).intl;
     const tmp11 = <Navigator screens={first} onWillFocus={Keyboard.dismiss} headerBackTitle={intl.string(intl2.t["13/7kX"])} initialRouteName={unpackModuleId.GUILD_TEMPLATES} />;
     cResult[1] = tmp11;

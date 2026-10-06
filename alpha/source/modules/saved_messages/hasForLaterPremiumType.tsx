@@ -1,10 +1,10 @@
-// Module ID: 7486
-// Function ID: 7487
+// Module ID: 7497
+// Function ID: 7498
 // Name: hasForLaterPremiumType
 // Dependencies: [1377, 1379, 1976, 558, 576, 504, 2]
 // Exports: default
 
-// Module 7486 (hasForLaterPremiumType)
+// Module 7497 (hasForLaterPremiumType)
 import react from "react" /* 576 */;
 import PremiumConstants from "PremiumConstants" /* 1379 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1976 */;

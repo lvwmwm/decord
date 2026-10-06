@@ -1,18 +1,18 @@
-// Module ID: 16538
-// Function ID: 16539
+// Module ID: 16578
+// Function ID: 16579
 // Name: JoinRequestOtherApplications
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4702, 4792, 4797, 16539, 1126, 4886, 16535, 4552, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4708, 4798, 4803, 16579, 1126, 4892, 16575, 4558, 2]
 
-// Module 16538 (JoinRequestOtherApplications)
+// Module 16578 (JoinRequestOtherApplications)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import DateUtils from "DateUtils" /* 4552 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4702 */;
-import Text_Text from "Text/Text" /* 4886 */;
+import DateUtils from "DateUtils" /* 4558 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4708 */;
+import Text_Text from "Text/Text" /* 4892 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: nativeDefault.colors.STATUS_POSITIVE_TEXT };
-      const CircleCheckIcon = tmp(4792).CircleCheckIcon;
+      const CircleCheckIcon = tmp(4798).CircleCheckIcon;
       const tmp14 = metroRequire(CircleCheckIcon, obj2);
       cResult[0] = tmp14;
       first = tmp14;
@@ -58,7 +58,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
     const _Symbol = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, secondaryColor: nativeDefault.colors.WHITE };
-      const CircleXIcon = tmp(4797).CircleXIcon;
+      const CircleXIcon = tmp(4803).CircleXIcon;
       const tmp9 = metroRequire(CircleXIcon, obj3);
       cResult[1] = tmp9;
       tmp6 = tmp9;
@@ -73,11 +73,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
   status = status.status;
   if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED === status) {
     const obj2 = { size: "sm", color: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: nativeDefault.colors.STATUS_POSITIVE_TEXT };
-    const CircleCheckIcon = tmp(4792).CircleCheckIcon;
+    const CircleCheckIcon = tmp(4798).CircleCheckIcon;
     return metroRequire(CircleCheckIcon, obj2);
   } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED === status) {
     const obj = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, secondaryColor: nativeDefault.colors.WHITE };
-    const CircleXIcon = tmp(4797).CircleXIcon;
+    const CircleXIcon = tmp(4803).CircleXIcon;
     return metroRequire(CircleXIcon, obj);
   } else {
     return null;
@@ -236,7 +236,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   if (0 !== otherGuildJoinRequestsForUser.length) {
     let obj2 = { children: items };
     let obj3 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.label, children: intl.string(tmp2(1126).t["hxa+G3"]) };
-    let Text = tmp2(4886).Text;
+    let Text = tmp2(4892).Text;
     intl = tmp2(1126).intl;
     items = [closure_6(Text, obj3), ];
     let obj4 = {

@@ -1,0 +1,10 @@
+// Module ID: 11386
+// Function ID: 11387
+// Name: AssetRegistry
+// Dependencies: [1132]
+
+// Module 11386 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1132 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "4ca3f49624db00fa92c0d848adcbd326", name: "StampIcon", type: "png" });

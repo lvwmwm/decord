@@ -1,16 +1,16 @@
-// Module ID: 10933
-// Function ID: 10934
+// Module ID: 10946
+// Function ID: 10947
 // Name: AppStoreOverlayAboutSection
-// Dependencies: [32, 19, 17, 21, 587, 4890, 558, 576, 1126, 4886, 2]
+// Dependencies: [32, 19, 17, 21, 587, 4896, 558, 576, 1126, 4892, 2]
 
-// Module 10933 (AppStoreOverlayAboutSection)
+// Module 10946 (AppStoreOverlayAboutSection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let metroRequire;
 let obj2;
 let tmp;
 const intl3 = tmp(1126);
-const Text_Text = tmp(4886);
+const Text_Text = tmp(4892);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const rect = { top: nativeDefault.space.PX_12, bottom: nativeDefault.space.PX_12, left: nativeDefault.space.PX_12, right: nativeDefault.space.PX_12 };
@@ -199,10 +199,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const stringResult = string(tmp3 ? t["6MwJo/"] : t.lBeKY2);
   const obj = { style: tmp.aboutSection, children: items2 };
   const obj2 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl3.t.CI0vSJ) };
-  const Text = tmp8(4886).Text;
+  const Text = tmp8(4892).Text;
   intl2 = tmp8(1126).intl;
   items2 = [metroRequire(Text, obj2), , ];
-  const Text2 = tmp8(4886).Text;
+  const Text2 = tmp8(4892).Text;
   const tmp11 = metroImportDefault;
   const tmp12 = hasOwnProperty;
   items2[1] = metroRequire(Text2, { variant: "text-sm/medium", color: "text-default", lineClamp: num, onTextLayout: callback, children: description });

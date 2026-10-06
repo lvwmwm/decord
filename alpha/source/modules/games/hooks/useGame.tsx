@@ -1,12 +1,12 @@
-// Module ID: 6812
-// Function ID: 6813
+// Module ID: 6822
+// Function ID: 6823
 // Name: useGame
-// Dependencies: [5, 19, 2007, 1085, 504, 1102, 6813, 558, 576, 2]
+// Dependencies: [5, 19, 2007, 1085, 504, 1102, 6823, 558, 576, 2]
 
-// Module 6812 (useGame)
+// Module 6822 (useGame)
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import GameActionCreators from "GameActionCreators" /* 6813 */;
+import GameActionCreators from "GameActionCreators" /* 6823 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2007 */;

@@ -1,21 +1,21 @@
-// Module ID: 7791
-// Function ID: 7792
+// Module ID: 7802
+// Function ID: 7803
 // Name: RowGeneratorUtils
-// Dependencies: [4879, 2051, 2074, 4883, 7592, 1085, 4890, 4727, 587, 6770, 5112, 1432, 1483, 2]
+// Dependencies: [4885, 2051, 2074, 4889, 7603, 1085, 4896, 4733, 587, 6780, 5118, 1432, 1483, 2]
 
-// Module 7791 (RowGeneratorUtils)
+// Module 7802 (RowGeneratorUtils)
 import nativeDefault from "native" /* 587 */;
 import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1483 */;
-import ColorUtils from "ColorUtils" /* 4727 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5112 */;
-import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 6770 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 7592 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import ColorUtils from "ColorUtils" /* 4733 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5118 */;
+import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 6780 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 7603 */;
+import AccessibilityStore from "AccessibilityStore" /* 4885 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import MessageConstants from "MessageConstants" /* 4883 */;
+import MessageConstants from "MessageConstants" /* 4889 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import react_native from "react-native" /* 1432 */;
 import size from "module_2" /* 2 */;
 

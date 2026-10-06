@@ -1,53 +1,53 @@
-// Module ID: 13728
-// Function ID: 13729
+// Module ID: 13746
+// Function ID: 13747
 // Name: badges/GuildBadge
-// Dependencies: [109, 19, 7603, 21, 558, 576, 13729, 13732, 13733, 13734, 13735, 13736, 13737, 13738, 13739, 13740, 13741, 13742, 13743, 13744, 13745, 13746, 13747, 13748, 13749, 13750, 13751, 13752, 13753, 13754, 13755, 13756, 13757, 13758, 13759, 13760, 13761, 13762, 13763, 13764, 13765, 13766, 13767, 13768, 13769, 13770, 13771, 2]
+// Dependencies: [109, 19, 7614, 21, 558, 576, 13747, 13750, 13751, 13752, 13753, 13754, 13755, 13756, 13757, 13758, 13759, 13760, 13761, 13762, 13763, 13764, 13765, 13766, 13767, 13768, 13769, 13770, 13771, 13772, 13773, 13774, 13775, 13776, 13777, 13778, 13779, 13780, 13781, 13782, 13783, 13784, 13785, 13786, 13787, 13788, 13789, 2]
 
-// Module 13728 (badges/GuildBadge)
+// Module 13746 (badges/GuildBadge)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import GuildTagConstants from "GuildTagConstants" /* 7603 */;
-import GuildBadgeSword2 from "GuildBadgeSword" /* 13729 */;
-import GuildBadgeWaterDrop2 from "GuildBadgeWaterDrop" /* 13732 */;
-import GuildBadgeSkull2 from "GuildBadgeSkull" /* 13733 */;
-import GuildBadgeToadstool2 from "GuildBadgeToadstool" /* 13734 */;
-import GuildBadgeMoon2 from "GuildBadgeMoon" /* 13735 */;
-import GuildBadgeLightning2 from "GuildBadgeLightning" /* 13736 */;
-import GuildBadgeLeaf2 from "GuildBadgeLeaf" /* 13737 */;
-import GuildBadgeHeart2 from "GuildBadgeHeart" /* 13738 */;
-import GuildBadgeFire2 from "GuildBadgeFire" /* 13739 */;
-import GuildBadgeCompass2 from "GuildBadgeCompass" /* 13740 */;
-import GuildBadgeCrosshairs2 from "GuildBadgeCrosshairs" /* 13741 */;
-import GuildBadgeFlower2 from "GuildBadgeFlower" /* 13742 */;
-import GuildBadgeForce2 from "GuildBadgeForce" /* 13743 */;
-import GuildBadgeGem2 from "GuildBadgeGem" /* 13744 */;
-import GuildBadgeLava2 from "GuildBadgeLava" /* 13745 */;
-import GuildBadgePsychic2 from "GuildBadgePsychic" /* 13746 */;
-import GuildBadgeSmoke2 from "GuildBadgeSmoke" /* 13747 */;
-import GuildBadgeSnow2 from "GuildBadgeSnow" /* 13748 */;
-import GuildBadgeSound2 from "GuildBadgeSound" /* 13749 */;
-import GuildBadgeSun2 from "GuildBadgeSun" /* 13750 */;
-import GuildBadgeWind2 from "GuildBadgeWind" /* 13751 */;
-import GuildBadgeBunny2 from "GuildBadgeBunny" /* 13752 */;
-import GuildBadgeDog2 from "GuildBadgeDog" /* 13753 */;
-import GuildBadgeFrog2 from "GuildBadgeFrog" /* 13754 */;
-import GuildBadgeGoat2 from "GuildBadgeGoat" /* 13755 */;
-import GuildBadgeCat2 from "GuildBadgeCat" /* 13756 */;
-import GuildBadgeDiamond2 from "GuildBadgeDiamond" /* 13757 */;
-import GuildBadgeCrown2 from "GuildBadgeCrown" /* 13758 */;
-import GuildBadgeTrophy2 from "GuildBadgeTrophy" /* 13759 */;
-import GuildBadgeMoneyBag2 from "GuildBadgeMoneyBag" /* 13760 */;
-import GuildBadgeDollarSign2 from "GuildBadgeDollarSign" /* 13761 */;
-import GuildBadgeClover2 from "GuildBadgeClover" /* 13762 */;
-import GuildBadgeBlossom2 from "GuildBadgeBlossom" /* 13763 */;
-import GuildBadgePottedPlant2 from "GuildBadgePottedPlant" /* 13764 */;
-import GuildBadgeMaple2 from "GuildBadgeMaple" /* 13765 */;
-import GuildBadgeWiltedFlower2 from "GuildBadgeWiltedFlower" /* 13766 */;
-import GuildBadgeButterfly2 from "GuildBadgeButterfly" /* 13767 */;
-import GuildBadgeSnail2 from "GuildBadgeSnail" /* 13768 */;
-import GuildBadgeCaterpillar2 from "GuildBadgeCaterpillar" /* 13769 */;
-import GuildBadgeSpider2 from "GuildBadgeSpider" /* 13770 */;
-import GuildBadgeBee2 from "GuildBadgeBee" /* 13771 */;
+import GuildTagConstants from "GuildTagConstants" /* 7614 */;
+import GuildBadgeSword2 from "GuildBadgeSword" /* 13747 */;
+import GuildBadgeWaterDrop2 from "GuildBadgeWaterDrop" /* 13750 */;
+import GuildBadgeSkull2 from "GuildBadgeSkull" /* 13751 */;
+import GuildBadgeToadstool2 from "GuildBadgeToadstool" /* 13752 */;
+import GuildBadgeMoon2 from "GuildBadgeMoon" /* 13753 */;
+import GuildBadgeLightning2 from "GuildBadgeLightning" /* 13754 */;
+import GuildBadgeLeaf2 from "GuildBadgeLeaf" /* 13755 */;
+import GuildBadgeHeart2 from "GuildBadgeHeart" /* 13756 */;
+import GuildBadgeFire2 from "GuildBadgeFire" /* 13757 */;
+import GuildBadgeCompass2 from "GuildBadgeCompass" /* 13758 */;
+import GuildBadgeCrosshairs2 from "GuildBadgeCrosshairs" /* 13759 */;
+import GuildBadgeFlower2 from "GuildBadgeFlower" /* 13760 */;
+import GuildBadgeForce2 from "GuildBadgeForce" /* 13761 */;
+import GuildBadgeGem2 from "GuildBadgeGem" /* 13762 */;
+import GuildBadgeLava2 from "GuildBadgeLava" /* 13763 */;
+import GuildBadgePsychic2 from "GuildBadgePsychic" /* 13764 */;
+import GuildBadgeSmoke2 from "GuildBadgeSmoke" /* 13765 */;
+import GuildBadgeSnow2 from "GuildBadgeSnow" /* 13766 */;
+import GuildBadgeSound2 from "GuildBadgeSound" /* 13767 */;
+import GuildBadgeSun2 from "GuildBadgeSun" /* 13768 */;
+import GuildBadgeWind2 from "GuildBadgeWind" /* 13769 */;
+import GuildBadgeBunny2 from "GuildBadgeBunny" /* 13770 */;
+import GuildBadgeDog2 from "GuildBadgeDog" /* 13771 */;
+import GuildBadgeFrog2 from "GuildBadgeFrog" /* 13772 */;
+import GuildBadgeGoat2 from "GuildBadgeGoat" /* 13773 */;
+import GuildBadgeCat2 from "GuildBadgeCat" /* 13774 */;
+import GuildBadgeDiamond2 from "GuildBadgeDiamond" /* 13775 */;
+import GuildBadgeCrown2 from "GuildBadgeCrown" /* 13776 */;
+import GuildBadgeTrophy2 from "GuildBadgeTrophy" /* 13777 */;
+import GuildBadgeMoneyBag2 from "GuildBadgeMoneyBag" /* 13778 */;
+import GuildBadgeDollarSign2 from "GuildBadgeDollarSign" /* 13779 */;
+import GuildBadgeClover2 from "GuildBadgeClover" /* 13780 */;
+import GuildBadgeBlossom2 from "GuildBadgeBlossom" /* 13781 */;
+import GuildBadgePottedPlant2 from "GuildBadgePottedPlant" /* 13782 */;
+import GuildBadgeMaple2 from "GuildBadgeMaple" /* 13783 */;
+import GuildBadgeWiltedFlower2 from "GuildBadgeWiltedFlower" /* 13784 */;
+import GuildBadgeButterfly2 from "GuildBadgeButterfly" /* 13785 */;
+import GuildBadgeSnail2 from "GuildBadgeSnail" /* 13786 */;
+import GuildBadgeCaterpillar2 from "GuildBadgeCaterpillar" /* 13787 */;
+import GuildBadgeSpider2 from "GuildBadgeSpider" /* 13788 */;
+import GuildBadgeBee2 from "GuildBadgeBee" /* 13789 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -94,7 +94,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp253;
       }
     }
-    const GuildBadgeSword = tmp(13729).GuildBadgeSword;
+    const GuildBadgeSword = tmp(13747).GuildBadgeSword;
     const merged = Object.assign(tmp6);
     const tmp258 = <GuildBadgeSword primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[5] = tmp5;
@@ -110,7 +110,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       return tmp247;
     }
-    const GuildBadgeWaterDrop = tmp(13732).GuildBadgeWaterDrop;
+    const GuildBadgeWaterDrop = tmp(13750).GuildBadgeWaterDrop;
     const merged1 = Object.assign(tmp6);
     const tmp252 = <GuildBadgeWaterDrop primaryTintColor={tmp5} />;
     cResult[9] = tmp5;
@@ -125,7 +125,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       return tmp241;
     }
-    const GuildBadgeSkull = tmp(13733).GuildBadgeSkull;
+    const GuildBadgeSkull = tmp(13751).GuildBadgeSkull;
     const merged2 = Object.assign(tmp6);
     const tmp246 = <GuildBadgeSkull primaryTintColor={tmp5} />;
     cResult[12] = tmp5;
@@ -142,7 +142,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp235;
       }
     }
-    const GuildBadgeToadstool = tmp(13734).GuildBadgeToadstool;
+    const GuildBadgeToadstool = tmp(13752).GuildBadgeToadstool;
     const merged3 = Object.assign(tmp6);
     const tmp240 = <GuildBadgeToadstool primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[15] = tmp5;
@@ -158,7 +158,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       return tmp229;
     }
-    const GuildBadgeMoon = tmp(13735).GuildBadgeMoon;
+    const GuildBadgeMoon = tmp(13753).GuildBadgeMoon;
     const merged4 = Object.assign(tmp6);
     const tmp234 = <GuildBadgeMoon primaryTintColor={tmp5} />;
     cResult[19] = tmp5;
@@ -173,7 +173,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       return tmp223;
     }
-    const GuildBadgeLightning = tmp(13736).GuildBadgeLightning;
+    const GuildBadgeLightning = tmp(13754).GuildBadgeLightning;
     const merged5 = Object.assign(tmp6);
     const tmp228 = <GuildBadgeLightning primaryTintColor={tmp5} />;
     cResult[22] = tmp5;
@@ -188,7 +188,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       return tmp217;
     }
-    const GuildBadgeLeaf = tmp(13737).GuildBadgeLeaf;
+    const GuildBadgeLeaf = tmp(13755).GuildBadgeLeaf;
     const merged6 = Object.assign(tmp6);
     const tmp222 = <GuildBadgeLeaf primaryTintColor={tmp5} />;
     cResult[25] = tmp5;
@@ -203,7 +203,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       return tmp211;
     }
-    const GuildBadgeHeart = tmp(13738).GuildBadgeHeart;
+    const GuildBadgeHeart = tmp(13756).GuildBadgeHeart;
     const merged7 = Object.assign(tmp6);
     const tmp216 = <GuildBadgeHeart primaryTintColor={tmp5} />;
     cResult[28] = tmp5;
@@ -218,7 +218,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       return tmp205;
     }
-    const GuildBadgeFire = tmp(13739).GuildBadgeFire;
+    const GuildBadgeFire = tmp(13757).GuildBadgeFire;
     const merged8 = Object.assign(tmp6);
     const tmp210 = <GuildBadgeFire primaryTintColor={tmp5} />;
     cResult[31] = tmp5;
@@ -235,7 +235,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp199;
       }
     }
-    const GuildBadgeCompass = tmp(13740).GuildBadgeCompass;
+    const GuildBadgeCompass = tmp(13758).GuildBadgeCompass;
     const merged9 = Object.assign(tmp6);
     const tmp204 = <GuildBadgeCompass primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[34] = tmp5;
@@ -253,7 +253,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp193;
       }
     }
-    const GuildBadgeCrosshairs = tmp(13741).GuildBadgeCrosshairs;
+    const GuildBadgeCrosshairs = tmp(13759).GuildBadgeCrosshairs;
     const merged10 = Object.assign(tmp6);
     const tmp198 = <GuildBadgeCrosshairs primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[38] = tmp5;
@@ -271,7 +271,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp187;
       }
     }
-    const GuildBadgeFlower = tmp(13742).GuildBadgeFlower;
+    const GuildBadgeFlower = tmp(13760).GuildBadgeFlower;
     const merged11 = Object.assign(tmp6);
     const tmp192 = <GuildBadgeFlower primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[42] = tmp5;
@@ -289,7 +289,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp181;
       }
     }
-    const GuildBadgeForce = tmp(13743).GuildBadgeForce;
+    const GuildBadgeForce = tmp(13761).GuildBadgeForce;
     const merged12 = Object.assign(tmp6);
     const tmp186 = <GuildBadgeForce primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[46] = tmp5;
@@ -307,7 +307,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp175;
       }
     }
-    const GuildBadgeGem = tmp(13744).GuildBadgeGem;
+    const GuildBadgeGem = tmp(13762).GuildBadgeGem;
     const merged13 = Object.assign(tmp6);
     const tmp180 = <GuildBadgeGem primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[50] = tmp5;
@@ -325,7 +325,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp169;
       }
     }
-    const GuildBadgeLava = tmp(13745).GuildBadgeLava;
+    const GuildBadgeLava = tmp(13763).GuildBadgeLava;
     const merged14 = Object.assign(tmp6);
     const tmp174 = <GuildBadgeLava primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[54] = tmp5;
@@ -343,7 +343,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp163;
       }
     }
-    const GuildBadgePsychic = tmp(13746).GuildBadgePsychic;
+    const GuildBadgePsychic = tmp(13764).GuildBadgePsychic;
     const merged15 = Object.assign(tmp6);
     const tmp168 = <GuildBadgePsychic primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[58] = tmp5;
@@ -361,7 +361,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp157;
       }
     }
-    const GuildBadgeSmoke = tmp(13747).GuildBadgeSmoke;
+    const GuildBadgeSmoke = tmp(13765).GuildBadgeSmoke;
     const merged16 = Object.assign(tmp6);
     const tmp162 = <GuildBadgeSmoke primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[62] = tmp5;
@@ -379,7 +379,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp151;
       }
     }
-    const GuildBadgeSnow = tmp(13748).GuildBadgeSnow;
+    const GuildBadgeSnow = tmp(13766).GuildBadgeSnow;
     const merged17 = Object.assign(tmp6);
     const tmp156 = <GuildBadgeSnow primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[66] = tmp5;
@@ -397,7 +397,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp145;
       }
     }
-    const GuildBadgeSound = tmp(13749).GuildBadgeSound;
+    const GuildBadgeSound = tmp(13767).GuildBadgeSound;
     const merged18 = Object.assign(tmp6);
     const tmp150 = <GuildBadgeSound primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[70] = tmp5;
@@ -415,7 +415,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp139;
       }
     }
-    const GuildBadgeSun = tmp(13750).GuildBadgeSun;
+    const GuildBadgeSun = tmp(13768).GuildBadgeSun;
     const merged19 = Object.assign(tmp6);
     const tmp144 = <GuildBadgeSun primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[74] = tmp5;
@@ -433,7 +433,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp133;
       }
     }
-    const GuildBadgeWind = tmp(13751).GuildBadgeWind;
+    const GuildBadgeWind = tmp(13769).GuildBadgeWind;
     const merged20 = Object.assign(tmp6);
     const tmp138 = <GuildBadgeWind primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[78] = tmp5;
@@ -449,7 +449,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       return tmp127;
     }
-    const GuildBadgeBunny = tmp(13752).GuildBadgeBunny;
+    const GuildBadgeBunny = tmp(13770).GuildBadgeBunny;
     const merged21 = Object.assign(tmp6);
     const tmp132 = <GuildBadgeBunny primaryTintColor={tmp5} />;
     cResult[82] = tmp5;
@@ -466,7 +466,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp121;
       }
     }
-    const GuildBadgeDog = tmp(13753).GuildBadgeDog;
+    const GuildBadgeDog = tmp(13771).GuildBadgeDog;
     const merged22 = Object.assign(tmp6);
     const tmp126 = <GuildBadgeDog primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[85] = tmp5;
@@ -484,7 +484,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp115;
       }
     }
-    const GuildBadgeFrog = tmp(13754).GuildBadgeFrog;
+    const GuildBadgeFrog = tmp(13772).GuildBadgeFrog;
     const merged23 = Object.assign(tmp6);
     const tmp120 = <GuildBadgeFrog primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[89] = tmp5;
@@ -500,7 +500,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       return tmp109;
     }
-    const GuildBadgeGoat = tmp(13755).GuildBadgeGoat;
+    const GuildBadgeGoat = tmp(13773).GuildBadgeGoat;
     const merged24 = Object.assign(tmp6);
     const tmp114 = <GuildBadgeGoat primaryTintColor={tmp5} />;
     cResult[93] = tmp5;
@@ -515,7 +515,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       return tmp103;
     }
-    const GuildBadgeCat = tmp(13756).GuildBadgeCat;
+    const GuildBadgeCat = tmp(13774).GuildBadgeCat;
     const merged25 = Object.assign(tmp6);
     const tmp108 = <GuildBadgeCat primaryTintColor={tmp5} />;
     cResult[96] = tmp5;
@@ -530,7 +530,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       return tmp97;
     }
-    const GuildBadgeDiamond = tmp(13757).GuildBadgeDiamond;
+    const GuildBadgeDiamond = tmp(13775).GuildBadgeDiamond;
     const merged26 = Object.assign(tmp6);
     const tmp102 = <GuildBadgeDiamond primaryTintColor={tmp5} />;
     cResult[99] = tmp5;
@@ -547,7 +547,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp91;
       }
     }
-    const GuildBadgeCrown = tmp(13758).GuildBadgeCrown;
+    const GuildBadgeCrown = tmp(13776).GuildBadgeCrown;
     const merged27 = Object.assign(tmp6);
     const tmp96 = <GuildBadgeCrown primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[102] = tmp5;
@@ -563,7 +563,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       return tmp85;
     }
-    const GuildBadgeTrophy = tmp(13759).GuildBadgeTrophy;
+    const GuildBadgeTrophy = tmp(13777).GuildBadgeTrophy;
     const merged28 = Object.assign(tmp6);
     const tmp90 = <GuildBadgeTrophy primaryTintColor={tmp5} />;
     cResult[106] = tmp5;
@@ -578,7 +578,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       return tmp79;
     }
-    const GuildBadgeMoneyBag = tmp(13760).GuildBadgeMoneyBag;
+    const GuildBadgeMoneyBag = tmp(13778).GuildBadgeMoneyBag;
     const merged29 = Object.assign(tmp6);
     const tmp84 = <GuildBadgeMoneyBag primaryTintColor={tmp5} />;
     cResult[109] = tmp5;
@@ -593,7 +593,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       return tmp73;
     }
-    const GuildBadgeDollarSign = tmp(13761).GuildBadgeDollarSign;
+    const GuildBadgeDollarSign = tmp(13779).GuildBadgeDollarSign;
     const merged30 = Object.assign(tmp6);
     const tmp78 = <GuildBadgeDollarSign primaryTintColor={tmp5} />;
     cResult[112] = tmp5;
@@ -608,7 +608,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       return tmp67;
     }
-    const GuildBadgeClover = tmp(13762).GuildBadgeClover;
+    const GuildBadgeClover = tmp(13780).GuildBadgeClover;
     const merged31 = Object.assign(tmp6);
     const tmp72 = <GuildBadgeClover primaryTintColor={tmp5} />;
     cResult[115] = tmp5;
@@ -623,7 +623,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       return tmp61;
     }
-    const GuildBadgeBlossom = tmp(13763).GuildBadgeBlossom;
+    const GuildBadgeBlossom = tmp(13781).GuildBadgeBlossom;
     const merged32 = Object.assign(tmp6);
     const tmp66 = <GuildBadgeBlossom primaryTintColor={tmp5} />;
     cResult[118] = tmp5;
@@ -640,7 +640,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp55;
       }
     }
-    const GuildBadgePottedPlant = tmp(13764).GuildBadgePottedPlant;
+    const GuildBadgePottedPlant = tmp(13782).GuildBadgePottedPlant;
     const merged33 = Object.assign(tmp6);
     const tmp60 = <GuildBadgePottedPlant primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[121] = tmp5;
@@ -656,7 +656,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       return tmp49;
     }
-    const GuildBadgeMaple = tmp(13765).GuildBadgeMaple;
+    const GuildBadgeMaple = tmp(13783).GuildBadgeMaple;
     const merged34 = Object.assign(tmp6);
     const tmp54 = <GuildBadgeMaple primaryTintColor={tmp5} />;
     cResult[125] = tmp5;
@@ -673,7 +673,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp43;
       }
     }
-    const GuildBadgeWiltedFlower = tmp(13766).GuildBadgeWiltedFlower;
+    const GuildBadgeWiltedFlower = tmp(13784).GuildBadgeWiltedFlower;
     const merged35 = Object.assign(tmp6);
     const tmp48 = <GuildBadgeWiltedFlower primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[128] = tmp5;
@@ -691,7 +691,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp37;
       }
     }
-    const GuildBadgeButterfly = tmp(13767).GuildBadgeButterfly;
+    const GuildBadgeButterfly = tmp(13785).GuildBadgeButterfly;
     const merged36 = Object.assign(tmp6);
     const tmp42 = <GuildBadgeButterfly primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[132] = tmp5;
@@ -709,7 +709,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp31;
       }
     }
-    const GuildBadgeSnail = tmp(13768).GuildBadgeSnail;
+    const GuildBadgeSnail = tmp(13786).GuildBadgeSnail;
     const merged37 = Object.assign(tmp6);
     const tmp36 = <GuildBadgeSnail primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[136] = tmp5;
@@ -727,7 +727,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp25;
       }
     }
-    const GuildBadgeCaterpillar = tmp(13769).GuildBadgeCaterpillar;
+    const GuildBadgeCaterpillar = tmp(13787).GuildBadgeCaterpillar;
     const merged38 = Object.assign(tmp6);
     const tmp30 = <GuildBadgeCaterpillar primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[140] = tmp5;
@@ -745,7 +745,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp19;
       }
     }
-    const GuildBadgeSpider = tmp(13770).GuildBadgeSpider;
+    const GuildBadgeSpider = tmp(13788).GuildBadgeSpider;
     const merged39 = Object.assign(tmp6);
     const tmp24 = <GuildBadgeSpider primaryTintColor={tmp5} secondaryTintColor={tmp7} />;
     cResult[144] = tmp5;
@@ -761,7 +761,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       return tmp13;
     }
-    const GuildBadgeBee = tmp(13771).GuildBadgeBee;
+    const GuildBadgeBee = tmp(13789).GuildBadgeBee;
     const merged40 = Object.assign(tmp6);
     const tmp18 = <GuildBadgeBee primaryTintColor={tmp5} />;
     cResult[148] = tmp5;

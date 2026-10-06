@@ -1,13 +1,13 @@
-// Module ID: 16148
-// Function ID: 16149
+// Module ID: 16187
+// Function ID: 16188
 // Name: SidebarCoachmarkOverlay
-// Dependencies: [32, 19, 17, 1085, 21, 558, 576, 6652, 5984, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 558, 576, 6659, 5991, 2]
 
-// Module 16148 (SidebarCoachmarkOverlay)
+// Module 16187 (SidebarCoachmarkOverlay)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import useInitialValueDefault from "useInitialValue" /* 5984 */;
-import LayerContext from "LayerContext" /* 6652 */;
+import useInitialValueDefault from "useInitialValue" /* 5991 */;
+import LayerContext from "LayerContext" /* 6659 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

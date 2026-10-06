@@ -1,9 +1,18 @@
 // Module ID: 13856
 // Function ID: 13857
-// Dependencies: [13845]
+// Dependencies: [13848]
 
 // Module 13856
-import _mod13845 from "module_13845" /* 13845 */;
+import _mod13848 from "module_13848" /* 13848 */;
 
 
-export default (arg0, arg1, arg2) => _mod13845(arg0, arg1, arg2) <= 0;
+export default (str, arg1) => {
+  const tmp = _mod13848;
+  str = str.trim();
+  const tmpResult = tmp(str.replace(/^[=v]+/, ""), arg1);
+  let version = null;
+  if (tmpResult) {
+    version = tmpResult.version;
+  }
+  return version;
+};

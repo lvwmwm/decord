@@ -1,21 +1,21 @@
-// Module ID: 10839
-// Function ID: 10840
+// Module ID: 10852
+// Function ID: 10853
 // Name: UserProfileCustomStatusActionSheet
-// Dependencies: [19, 17, 1377, 6707, 21, 4890, 587, 558, 576, 504, 10840, 5042, 1126, 7929, 10827, 10841, 2]
+// Dependencies: [19, 17, 1377, 6714, 21, 4896, 587, 558, 576, 504, 10853, 5048, 1126, 7940, 10840, 10854, 2]
 
-// Module 10839 (UserProfileCustomStatusActionSheet)
+// Module 10852 (UserProfileCustomStatusActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
-import HeaderAvatarDefault from "HeaderAvatar" /* 7929 */;
-import UserProfileCustomStatusBubbleDefault from "UserProfileCustomStatusBubble" /* 10827 */;
-import useCustomStatusActivityForUserDefault from "useCustomStatusActivityForUser" /* 10840 */;
-import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 10841 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5048 */;
+import HeaderAvatarDefault from "HeaderAvatar" /* 7940 */;
+import UserProfileCustomStatusBubbleDefault from "UserProfileCustomStatusBubble" /* 10840 */;
+import useCustomStatusActivityForUserDefault from "useCustomStatusActivityForUser" /* 10853 */;
+import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 10854 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1377 */;
-import Constants from "Constants" /* 6707 */;
+import Constants from "Constants" /* 6714 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

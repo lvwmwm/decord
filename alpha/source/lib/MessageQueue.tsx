@@ -1,22 +1,22 @@
-// Module ID: 7462
-// Function ID: 7463
+// Module ID: 7473
+// Function ID: 7474
 // Name: MessageQueue
-// Dependencies: [109, 4889, 502, 4939, 1085, 4883, 1102, 7463, 3, 5070, 7464, 6968, 1282, 1985, 38, 7268, 7243, 7295, 7270, 2]
+// Dependencies: [109, 4895, 502, 4945, 1085, 4889, 1102, 7474, 3, 5076, 7475, 6981, 1282, 5126, 38, 7281, 7256, 7308, 7283, 2]
 // Exports: getFailedMessageId, isMessageDataCommand, isMessageDataEdit, isMessageDataSend
 
-// Module 7462 (MessageQueue)
+// Module 7473 (MessageQueue)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import MessageConstants from "MessageConstants" /* 4883 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5070 */;
-import NetStats from "NetStats" /* 6968 */;
-import getOverlayMessageAnaylticsLocationDefault from "getOverlayMessageAnaylticsLocation" /* 7464 */;
+import MessageConstants from "MessageConstants" /* 4889 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5076 */;
+import NetStats from "NetStats" /* 6981 */;
+import getOverlayMessageAnaylticsLocationDefault from "getOverlayMessageAnaylticsLocation" /* 7475 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import DevSettingsStore from "DevSettingsStore" /* 4889 */;
+import DevSettingsStore from "DevSettingsStore" /* 4895 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NetworkStore from "NetworkStore" /* 4939 */;
+import NetworkStore from "NetworkStore" /* 4945 */;
 import Constants from "Constants" /* 1085 */;
-import Queue from "Queue" /* 7463 */;
+import Queue from "Queue" /* 7474 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -308,7 +308,7 @@ function handleCommand(message, fn) {
   const guildId = message.guildId;
   const nonce = message.nonce;
   ({ attachments, maxSizeCallback: require } = message);
-  const body = { type: require("Server").InteractionTypes.APPLICATION_COMMAND, application_id: applicationId, guild_id: guildId, channel_id: channelId, session_id: AuthenticationStore.getSessionId(), data, nonce, analytics_location, section_name: sectionName, source };
+  const body = { type: require("InteractionTypes").InteractionTypes.APPLICATION_COMMAND, application_id: applicationId, guild_id: guildId, channel_id: channelId, session_id: AuthenticationStore.getSessionId(), data, nonce, analytics_location, section_name: sectionName, source };
   ({ applicationId, channelId, data, analytics_location, sectionName, source } = message);
   let tmp = require;
   const tmp2 = nonce;

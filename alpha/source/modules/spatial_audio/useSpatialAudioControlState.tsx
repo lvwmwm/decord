@@ -1,15 +1,15 @@
-// Module ID: 13638
-// Function ID: 13639
+// Module ID: 13654
+// Function ID: 13655
 // Name: useSpatialAudioControlState
-// Dependencies: [19, 1999, 4915, 13639, 558, 576, 504, 2]
+// Dependencies: [19, 1999, 4921, 13655, 558, 576, 504, 2]
 // Exports: isSpatialAudioBlocked, isSpatialAudioEligible
 
-// Module 13638 (useSpatialAudioControlState)
+// Module 13654 (useSpatialAudioControlState)
 import react2 from "react" /* 576 */;
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 13639 */;
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 13655 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import Constants from "Constants" /* 4915 */;
+import Constants from "Constants" /* 4921 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

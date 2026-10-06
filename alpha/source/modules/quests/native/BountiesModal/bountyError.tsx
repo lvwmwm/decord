@@ -1,17 +1,17 @@
-// Module ID: 14829
-// Function ID: 14830
+// Module ID: 14845
+// Function ID: 14846
 // Name: bountyError
-// Dependencies: [14815, 1126, 4568, 4807, 2]
+// Dependencies: [14831, 1126, 4574, 4813, 2]
 // Exports: openBountyRewardClaimErrorToast
 
-// Module 14829 (bountyError)
+// Module 14845 (bountyError)
 import intl2 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
-import BountiesModalConstants from "BountiesModalConstants" /* 14815 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
+import BountiesModalConstants from "BountiesModalConstants" /* 14831 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const AssetRegistryDefault = tmp(4807);
+const AssetRegistryDefault = tmp(4813);
 const toastDurationMs = BountiesModalConstants.BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS;
 const set = new Set([260021]);
 const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/bountyError.tsx");

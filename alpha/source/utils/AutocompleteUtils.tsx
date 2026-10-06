@@ -1,10 +1,10 @@
-// Module ID: 5621
-// Function ID: 5622
+// Module ID: 5628
+// Function ID: 5629
 // Name: AutocompleteUtils
-// Dependencies: [32, 5622, 5638, 5680, 5686, 5687, 5691, 4511, 2055, 2107, 1391, 2051, 5694, 4507, 2112, 2106, 2074, 5110, 4509, 4930, 4519, 2103, 4699, 1377, 5695, 1085, 5700, 2058, 3, 5701, 2066, 4874, 5702, 2018, 4722, 5703, 5429, 12, 2026, 1375, 5704, 4514, 5043, 1126, 11, 6834, 2028, 6837, 6723, 6838, 6839, 2033, 6840, 6841, 5803, 6846, 2]
+// Dependencies: [32, 5629, 5645, 5687, 5693, 5694, 5698, 4517, 2055, 2107, 1391, 2051, 5701, 4513, 2112, 2106, 2074, 5116, 4515, 4936, 4525, 2103, 4705, 1377, 5702, 1085, 5707, 2058, 3, 5708, 2066, 4880, 5709, 2018, 4728, 5710, 5436, 12, 2026, 1375, 5711, 4520, 5049, 1126, 11, 6844, 2028, 6847, 6737, 6848, 6849, 2033, 6850, 6851, 5810, 6856, 2]
 // Exports: getBoosterMap, getGameProfileMatchTier
 
-// Module 5621 (AutocompleteUtils)
+// Module 5628 (AutocompleteUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
@@ -14,44 +14,44 @@ import StringUtils from "StringUtils" /* 2018 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2033 */;
 import ChannelConstants from "ChannelConstants" /* 2058 */;
 import GuildRoleRecord from "GuildRoleRecord" /* 2107 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4514 */;
-import UserUtilsDefault from "UserUtils" /* 4722 */;
-import RegexUtilsDefault from "RegexUtils" /* 4874 */;
-import useChannelName from "useChannelName" /* 5043 */;
-import StickersTypes from "StickersTypes" /* 5429 */;
-import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 5700 */;
-import utils_AutocompleteUtils from "utils/AutocompleteUtils" /* 5701 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5702 */;
-import sortByMatchScoreDefault from "sortByMatchScore" /* 5703 */;
-import GuildUtilsDefault from "GuildUtils" /* 5704 */;
-import isSoundValidDefault from "isSoundValid" /* 5803 */;
-import OnboardingHomeUtils from "OnboardingHomeUtils" /* 6723 */;
-import useGuildOnboardingAvailable from "useGuildOnboardingAvailable" /* 6838 */;
-import compareChannelsByScoreAndPositionDefault from "compareChannelsByScoreAndPosition" /* 6839 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4520 */;
+import UserUtilsDefault from "UserUtils" /* 4728 */;
+import RegexUtilsDefault from "RegexUtils" /* 4880 */;
+import useChannelName from "useChannelName" /* 5049 */;
+import StickersTypes from "StickersTypes" /* 5436 */;
+import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 5707 */;
+import utils_AutocompleteUtils from "utils/AutocompleteUtils" /* 5708 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5709 */;
+import sortByMatchScoreDefault from "sortByMatchScore" /* 5710 */;
+import GuildUtilsDefault from "GuildUtils" /* 5711 */;
+import isSoundValidDefault from "isSoundValid" /* 5810 */;
+import OnboardingHomeUtils from "OnboardingHomeUtils" /* 6737 */;
+import useGuildOnboardingAvailable from "useGuildOnboardingAvailable" /* 6848 */;
+import compareChannelsByScoreAndPositionDefault from "compareChannelsByScoreAndPosition" /* 6849 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import InAppNavigationRecord from "InAppNavigationRecord" /* 5622 */;
-import EmojiStore from "EmojiStore" /* 5638 */;
-import SoundboardStore from "SoundboardStore" /* 5680 */;
-import StickersPersistedStore from "StickersPersistedStore" /* 5686 */;
-import StickersStore from "StickersStore" /* 5687 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5691 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4511 */;
+import InAppNavigationRecord from "InAppNavigationRecord" /* 5629 */;
+import EmojiStore from "EmojiStore" /* 5645 */;
+import SoundboardStore from "SoundboardStore" /* 5687 */;
+import StickersPersistedStore from "StickersPersistedStore" /* 5693 */;
+import StickersStore from "StickersStore" /* 5694 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5698 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4517 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
 import UserRecord from "UserRecord" /* 1391 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import FrecencyStore from "FrecencyStore" /* 5694 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4507 */;
+import FrecencyStore from "FrecencyStore" /* 5701 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4513 */;
 import GuildMemberStore from "GuildMemberStore" /* 2112 */;
 import GuildRoleStore from "GuildRoleStore" /* 2106 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import MessageStore from "MessageStore" /* 5110 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import PresenceStore from "PresenceStore" /* 4930 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import MessageStore from "MessageStore" /* 5116 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
+import PresenceStore from "PresenceStore" /* 4936 */;
+import RelationshipStore from "RelationshipStore" /* 4525 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
 import UserStore from "UserStore" /* 1377 */;
-import SKUStore from "SKUStore" /* 5695 */;
+import SKUStore from "SKUStore" /* 5702 */;
 import Constants from "Constants" /* 1085 */;
 import FunctionUtils from "FunctionUtils" /* 2026 */;
 import size from "module_2" /* 2 */;
@@ -73,8 +73,8 @@ let closure_42;
 let hasOwnProperty;
 let map1;
 let metroRequire;
-const f90623 = (author) => author.author.id;
-const f90624 = (author) => user.getUser(author.author.id);
+const f90759 = (author) => author.author.id;
+const f90760 = (author) => user.getUser(author.author.id);
 function NOOP() {
   return true;
 }
@@ -264,21 +264,21 @@ function queryMemberList(allowSnowflake) {
                             if (substr5 !== normalizeResult) {
                               let tmp32 = num < 50;
                               if (num < 50) {
-                                let tmp27 = tmp11(5702)(toLocaleLowerCaseResult, str4) || tmp11(5702)(normalizeResult, str5);
+                                let tmp27 = tmp11(5709)(toLocaleLowerCaseResult, str4) || tmp11(5709)(normalizeResult, str5);
                                 if (!tmp27) {
-                                  let tmp28 = null != str6 && tmp11(5702)(toLocaleLowerCaseResult, str6);
+                                  let tmp28 = null != str6 && tmp11(5709)(toLocaleLowerCaseResult, str6);
                                   tmp27 = tmp28;
                                 }
                                 if (!tmp27) {
-                                  let tmp29 = null != str7 && tmp11(5702)(normalizeResult, str7);
+                                  let tmp29 = null != str7 && tmp11(5709)(normalizeResult, str7);
                                   tmp27 = tmp29;
                                 }
                                 if (!tmp27) {
-                                  let tmp30 = null != str8 && tmp11(5702)(toLocaleLowerCaseResult, str8);
+                                  let tmp30 = null != str8 && tmp11(5709)(toLocaleLowerCaseResult, str8);
                                   tmp27 = tmp30;
                                 }
                                 if (!tmp27) {
-                                  let tmp31 = null != str9 && tmp11(5702)(normalizeResult, str9);
+                                  let tmp31 = null != str9 && tmp11(5709)(normalizeResult, str9);
                                   tmp27 = tmp31;
                                 }
                                 tmp32 = tmp27;
@@ -743,8 +743,8 @@ let obj = {
                   const messages = MessageStore.getMessages(id);
                   const tmp16Result = tmp16(messages.toArray());
                   const reversed = tmp16Result.reverse();
-                  const uniqByResult = reversed.uniqBy(f90623);
-                  const mapped1 = uniqByResult.map(f90624);
+                  const uniqByResult = reversed.uniqBy(f90759);
+                  const mapped1 = uniqByResult.map(f90760);
                   const found = mapped1.filter((isNonUserBot) => {
                     if (null == isNonUserBot) {
                       return false;
@@ -855,8 +855,8 @@ let obj = {
               const messages = MessageStore.getMessages(channelId);
               const tmp14Result = tmp14(messages.toArray());
               const reversed = tmp14Result.reverse();
-              const uniqByResult = reversed.uniqBy(f90623);
-              const mapped = uniqByResult.map(f90624);
+              const uniqByResult = reversed.uniqBy(f90759);
+              const mapped = uniqByResult.map(f90760);
               const found = mapped.filter((isNonUserBot) => {
                 if (null == isNonUserBot) {
                   return false;
@@ -1594,8 +1594,8 @@ let obj = {
         const messages = MessageStore.getMessages(channelId1);
         const tmp6Result = tmp6(messages.toArray());
         const reversed = tmp6Result.reverse();
-        const uniqByResult = reversed.uniqBy(f90623);
-        const mapped = uniqByResult.map(f90624);
+        const uniqByResult = reversed.uniqBy(f90759);
+        const mapped = uniqByResult.map(f90760);
         const found = mapped.filter((isNonUserBot) => {
           if (null == isNonUserBot) {
             return false;

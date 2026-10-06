@@ -1,16 +1,16 @@
-// Module ID: 10748
-// Function ID: 10749
+// Module ID: 10761
+// Function ID: 10762
 // Name: OrbCheckoutAmountTag
-// Dependencies: [17, 21, 4890, 587, 558, 576, 8491, 1126, 4886, 2]
+// Dependencies: [17, 21, 4896, 587, 558, 576, 8524, 1126, 4892, 2]
 
-// Module 10748 (OrbCheckoutAmountTag)
+// Module 10761 (OrbCheckoutAmountTag)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import OrbsIcon from "OrbsIcon" /* 8491 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import OrbsIcon from "OrbsIcon" /* 8524 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

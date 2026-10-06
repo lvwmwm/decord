@@ -1,11 +1,17 @@
 // Module ID: 6257
 // Function ID: 6258
-// Dependencies: [65]
+// Dependencies: [6255, 6206]
+// Exports: useSimultaneousGestures
 
 // Module 6257
-import module_65 from "module_65" /* 65 */;
+import ComposedGestureName from "ComposedGestureName" /* 6206 */;
+import _mod6255 from "module_6255" /* 6255 */;
 
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNGestureHandlerRootView", validAttributes: { moduleId: true, unstable_forceActive: true } };
 
-export default module_65.get("RNGestureHandlerRootView", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export const useSimultaneousGestures = function useSimultaneousGestures() {
+  const items = [...arguments];
+  const useComposedGesture = _mod6255.useComposedGesture;
+  _mod6255;
+  const items1 = [ComposedGestureName.ComposedGestureName.Simultaneous, ...items];
+  return useComposedGesture.apply(items1);
+};

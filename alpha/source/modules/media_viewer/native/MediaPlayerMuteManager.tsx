@@ -1,9 +1,9 @@
-// Module ID: 7937
-// Function ID: 7938
+// Module ID: 7948
+// Function ID: 7949
 // Name: MediaPlayerMuteManager
 // Dependencies: [17, 570, 1259, 2]
 
-// Module 7937 (MediaPlayerMuteManager)
+// Module 7948 (MediaPlayerMuteManager)
 import react_native from "react-native" /* 17 */;
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;

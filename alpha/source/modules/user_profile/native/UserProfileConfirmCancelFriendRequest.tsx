@@ -1,12 +1,12 @@
-// Module ID: 12287
-// Function ID: 12288
+// Module ID: 12302
+// Function ID: 12303
 // Name: UserProfileConfirmCancelFriendRequest
-// Dependencies: [19, 21, 558, 576, 1126, 5713, 5713, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 5720, 5720, 2]
 
-// Module 12287 (UserProfileConfirmCancelFriendRequest)
+// Module 12302 (UserProfileConfirmCancelFriendRequest)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
-import AlertModal2 from "AlertModal" /* 5713 */;
+import AlertModal2 from "AlertModal" /* 5720 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -66,7 +66,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { variant: "secondary", text: intl4.string(intl5.t["eN6+rI"]) };
-    const AlertActionButton = tmp(5713).AlertActionButton;
+    const AlertActionButton = tmp(5720).AlertActionButton;
     intl4 = tmp(1126).intl;
     const tmp15 = React2(AlertActionButton, obj4, "nevermind");
     cResult[6] = tmp15;

@@ -1,16 +1,16 @@
-// Module ID: 10396
-// Function ID: 10397
+// Module ID: 10409
+// Function ID: 10410
 // Name: PromotionsStore
-// Dependencies: [1231, 10397, 1377, 10398, 10428, 504, 10429, 584, 2]
+// Dependencies: [1231, 10410, 1377, 10411, 10441, 504, 10442, 584, 2]
 
-// Module 10396 (PromotionsStore)
+// Module 10409 (PromotionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 10429 */;
+import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 10442 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import PromotionRecord from "PromotionRecord" /* 10397 */;
+import PromotionRecord from "PromotionRecord" /* 10410 */;
 import UserStore from "UserStore" /* 1377 */;
-import MarketingComponentRecord from "MarketingComponentRecord" /* 10398 */;
+import MarketingComponentRecord from "MarketingComponentRecord" /* 10411 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

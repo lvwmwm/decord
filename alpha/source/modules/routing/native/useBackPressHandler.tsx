@@ -1,12 +1,12 @@
-// Module ID: 5780
-// Function ID: 5781
+// Module ID: 5787
+// Function ID: 5788
 // Name: useBackPressHandler
-// Dependencies: [19, 17, 5781, 1369, 558, 576, 2]
+// Dependencies: [19, 17, 5788, 1369, 558, 576, 2]
 // Exports: subscribeToBackPress
 
-// Module 5780 (useBackPressHandler)
+// Module 5787 (useBackPressHandler)
 import PlatformUtils from "PlatformUtils" /* 1369 */;
-import KeyCommands from "KeyCommands" /* 5781 */;
+import KeyCommands from "KeyCommands" /* 5788 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

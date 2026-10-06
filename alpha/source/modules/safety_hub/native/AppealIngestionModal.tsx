@@ -1,25 +1,25 @@
-// Module ID: 11498
-// Function ID: 11499
+// Module ID: 11511
+// Function ID: 11512
 // Name: AppealIngestionModal
-// Dependencies: [5, 32, 19, 17, 8106, 8093, 1085, 21, 4890, 587, 558, 576, 4886, 504, 11492, 1490, 8094, 11497, 11493, 8092, 6619, 1126, 5594, 6010, 11499, 1260, 11513, 11515, 11517, 11519, 11520, 5984, 6496, 2]
+// Dependencies: [5, 32, 19, 17, 8139, 8126, 1085, 21, 4896, 587, 558, 576, 4892, 504, 11505, 1490, 8127, 11510, 11506, 8125, 6626, 1126, 5601, 6017, 11512, 1260, 11526, 11528, 11530, 11532, 11533, 5991, 6503, 2]
 
-// Module 11498 (AppealIngestionModal)
+// Module 11511 (AppealIngestionModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 11497 */;
-import AppealIngestionSpeedBumpDefault from "AppealIngestionSpeedBump" /* 11499 */;
-import AppealIngestionCollectSignalDefault from "AppealIngestionCollectSignal" /* 11513 */;
-import AppealIngestionConfirmSubmissionDefault from "AppealIngestionConfirmSubmission" /* 11515 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 11510 */;
+import AppealIngestionSpeedBumpDefault from "AppealIngestionSpeedBump" /* 11512 */;
+import AppealIngestionCollectSignalDefault from "AppealIngestionCollectSignal" /* 11526 */;
+import AppealIngestionConfirmSubmissionDefault from "AppealIngestionConfirmSubmission" /* 11528 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8106 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8093 */;
+import SafetyHubStore from "SafetyHubStore" /* 8139 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8126 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -187,7 +187,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp10 = null;
       if (subHeaderText.length > 0) {
         const obj3 = { style: tmp4.subheader, variant: "text-md/medium", color: "text-default", children: subHeaderText };
-        tmp10 = closure_12(tmp(4886).Text, obj3);
+        tmp10 = closure_12(tmp(4892).Text, obj3);
       }
     }
     cResult[3] = tmp4.subheader;
@@ -198,7 +198,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp6 = null != headerText && "" !== headerText;
   if (tmp6) {
     const obj4 = { style: tmp4.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: headerText };
-    tmp6 = closure_12(tmp(4886).Text, obj4);
+    tmp6 = closure_12(tmp(4892).Text, obj4);
   }
   cResult[0] = headerText;
   cResult[1] = tmp4.header;

@@ -1,21 +1,21 @@
-// Module ID: 8700
-// Function ID: 8701
+// Module ID: 8735
+// Function ID: 8736
 // Name: ConjureActionCreators
-// Dependencies: [5, 4905, 1377, 8699, 1085, 5072, 584, 8701, 8702, 1282, 4919, 12697, 6747, 6658, 8695, 2]
+// Dependencies: [5, 4911, 1377, 8734, 1085, 5078, 584, 8736, 8737, 1282, 4925, 12712, 6757, 6665, 8730, 2]
 // Exports: createProject, deleteProjectInBackground, fetchProjectLimit, markLogsSeen, refreshPublishedProject, reloadConjureProjectFrames, renameProject, setBuilderPreviewApplicationId, setBuilderPreviewLandscape, setBuilderPreviewMobile, setChatSidebarWidth, setComposerDraft, setGuildHints, setProjectIcon, setSelectedProjectForGuild, trackPublishFailed, updateProjectSettings
 
-// Module 8700 (ConjureActionCreators)
+// Module 8735 (ConjureActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ReadStateConstants from "ReadStateConstants" /* 5072 */;
-import ConjureTypes from "ConjureTypes" /* 6747 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 8701 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 8702 */;
+import ReadStateConstants from "ReadStateConstants" /* 5078 */;
+import ConjureTypes from "ConjureTypes" /* 6757 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 8736 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 8737 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ReadStateStore from "ReadStateStore" /* 4905 */;
+import ReadStateStore from "ReadStateStore" /* 4911 */;
 import UserStore from "UserStore" /* 1377 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 8699 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 8734 */;
 import size from "module_2" /* 2 */;
 
 let c7, closure_10, closure_11, closure_17, currentUser, projectsFetchState, resourceIds;
@@ -717,7 +717,7 @@ obj = function _refreshPublishedProject() {
       obj5.trackConjureDeployed(closure_0, obj13);
       await "IconComponent";
       isPreview = isPreview.isPreview;
-      return "Set";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -755,7 +755,7 @@ export const reloadConjureProjectFrames = function reloadConjureProjectFrames(ar
     if (prop == null) {
       prop = null;
     }
-    const tmp2Result = tmp2(8702);
+    const tmp2Result = tmp2(8737);
     tmp2Result.reloadAppFrames(prop);
   }
 };

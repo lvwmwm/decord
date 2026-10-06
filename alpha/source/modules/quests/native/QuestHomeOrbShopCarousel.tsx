@@ -1,27 +1,27 @@
-// Module ID: 14886
-// Function ID: 14887
+// Module ID: 14902
+// Function ID: 14903
 // Name: QuestHomeOrbShopCarousel
-// Dependencies: [32, 19, 17, 1193, 7186, 5623, 21, 587, 558, 576, 14873, 4890, 504, 1126, 4886, 8534, 8371, 14863, 14887, 8418, 7202, 7212, 8421, 4589, 2]
+// Dependencies: [32, 19, 17, 1193, 7199, 5630, 21, 587, 558, 576, 14889, 4896, 504, 1126, 4892, 8567, 8404, 14879, 14903, 8451, 7215, 7225, 8454, 4595, 2]
 
-// Module 14886 (QuestHomeOrbShopCarousel)
+// Module 14902 (QuestHomeOrbShopCarousel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import QuestConstants from "QuestConstants" /* 5623 */;
-import AnalyticsActions from "AnalyticsActions" /* 7202 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8421 */;
-import SkeletonCardDefault from "SkeletonCard" /* 8534 */;
-import usePopularOrbShopProducts from "usePopularOrbShopProducts" /* 14873 */;
-import QuestHomeOrbShopRewardCardDefault from "QuestHomeOrbShopRewardCard" /* 14887 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import QuestConstants from "QuestConstants" /* 5630 */;
+import AnalyticsActions from "AnalyticsActions" /* 7215 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8454 */;
+import SkeletonCardDefault from "SkeletonCard" /* 8567 */;
+import usePopularOrbShopProducts from "usePopularOrbShopProducts" /* 14889 */;
+import QuestHomeOrbShopRewardCardDefault from "QuestHomeOrbShopRewardCard" /* 14903 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1193 */;
-import BountyStore from "BountyStore" /* 7186 */;
+import BountyStore from "BountyStore" /* 7199 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_12, dependencyMap, width;
@@ -508,17 +508,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult = tmp(504);
   let ONYX = tmpResult.useStateFromStores(tmp8, tmp9);
   if (tmp5) {
-    ONYX = tmp(14863).ThemeTypes.ONYX;
+    ONYX = tmp(14879).ThemeTypes.ONYX;
   }
   if (undefined !== replacesHeaderMedia && replacesHeaderMedia) {
-    COLLECTIBLES_SHOP_CARD_WIDTH = tmp(14887).QUEST_HOME_REPLACE_MEDIA_CARD_WIDTH;
+    COLLECTIBLES_SHOP_CARD_WIDTH = tmp(14903).QUEST_HOME_REPLACE_MEDIA_CARD_WIDTH;
   } else {
-    COLLECTIBLES_SHOP_CARD_WIDTH = tmp(8418).COLLECTIBLES_SHOP_CARD_WIDTH;
+    COLLECTIBLES_SHOP_CARD_WIDTH = tmp(8451).COLLECTIBLES_SHOP_CARD_WIDTH;
   }
   if (undefined !== replacesHeaderMedia && replacesHeaderMedia) {
-    COLLECTIBLES_SHOP_CARD_HEIGHT = tmp(14887).QUEST_HOME_REPLACE_MEDIA_CARD_HEIGHT;
+    COLLECTIBLES_SHOP_CARD_HEIGHT = tmp(14903).QUEST_HOME_REPLACE_MEDIA_CARD_HEIGHT;
   } else {
-    COLLECTIBLES_SHOP_CARD_HEIGHT = tmp(8418).COLLECTIBLES_SHOP_CARD_HEIGHT;
+    COLLECTIBLES_SHOP_CARD_HEIGHT = tmp(8451).COLLECTIBLES_SHOP_CARD_HEIGHT;
   }
   if (cResult[2] !== COLLECTIBLES_SHOP_CARD_WIDTH) {
     const sum = COLLECTIBLES_SHOP_CARD_WIDTH + PX_12;
@@ -728,9 +728,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const trackQuestHomeOrbShopCarouselScroll = AnalyticsActions.trackQuestHomeOrbShopCarouselScroll;
       AnalyticsActions;
       if (rounded > tmp2) {
-        LEFT = tmp3(7212).HorizontalScrollingDirection.RIGHT;
+        LEFT = tmp3(7225).HorizontalScrollingDirection.RIGHT;
       } else {
-        LEFT = tmp3(7212).HorizontalScrollingDirection.LEFT;
+        LEFT = tmp3(7225).HorizontalScrollingDirection.LEFT;
       }
       const obj = { scrollingDirection: LEFT, carouselPosition: rounded, carouselSize: length };
       const result = trackQuestHomeOrbShopCarouselScroll(obj);

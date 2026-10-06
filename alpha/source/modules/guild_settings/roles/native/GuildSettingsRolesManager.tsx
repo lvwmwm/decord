@@ -1,10 +1,10 @@
-// Module ID: 17777
-// Function ID: 17778
+// Module ID: 17823
+// Function ID: 17824
 // Name: GuildSettingsRolesManager
 // Dependencies: [570, 1259, 2]
 // Exports: setRoleJustCreated
 
-// Module 17777 (GuildSettingsRolesManager)
+// Module 17823 (GuildSettingsRolesManager)
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 

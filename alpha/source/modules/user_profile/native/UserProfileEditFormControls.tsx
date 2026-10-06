@@ -1,22 +1,22 @@
-// Module ID: 14445
-// Function ID: 14446
+// Module ID: 14461
+// Function ID: 14462
 // Name: UserProfileEditFormControls
-// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 4886, 8313, 1188, 1126, 6000, 5909, 6423, 1369, 6699, 2]
+// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 4892, 8346, 1188, 1126, 6007, 5916, 6430, 1369, 6706, 2]
 
-// Module 14445 (UserProfileEditFormControls)
+// Module 14461 (UserProfileEditFormControls)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1188 */;
-import Pressables from "Pressables" /* 5909 */;
-import TableRowArrow from "TableRowArrow" /* 6000 */;
-import Input2 from "Input" /* 6423 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8313 */;
+import Pressables from "Pressables" /* 5916 */;
+import TableRowArrow from "TableRowArrow" /* 6007 */;
+import Input2 from "Input" /* 6430 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8346 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,8 +30,8 @@ let obj2;
 let obj3;
 let tmp;
 const PlatformUtils = tmp(1369);
-const Text_Text = tmp(4886);
-const FormSwitch = tmp(6699);
+const Text_Text = tmp(4892);
+const FormSwitch = tmp(6706);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -112,7 +112,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[0] !== (undefined !== showPremiumIcon && showPremiumIcon)) {
       let tmp9 = null;
       if (undefined !== showPremiumIcon && showPremiumIcon) {
-        tmp9 = metroRequire(tmp(8313).NitroWheelIcon, { size: "xs" });
+        tmp9 = metroRequire(tmp(8346).NitroWheelIcon, { size: "xs" });
       }
       cResult[0] = undefined !== showPremiumIcon && showPremiumIcon;
       cResult[1] = tmp9;
@@ -246,7 +246,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               tmp13 = cResult[12];
             }
             if (cResult[13] !== (undefined !== hideArrow && hideArrow)) {
-              const tmp24 = !tmp6 && metroRequire(tmp(6000).TableRowArrow, {});
+              const tmp24 = !tmp6 && metroRequire(tmp(6007).TableRowArrow, {});
               cResult[13] = undefined !== hideArrow && hideArrow;
               cResult[14] = tmp24;
               tmp23 = tmp24;
@@ -635,7 +635,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueChange) => {
     closure_2(value);
   }, items);
   if (isAndroidResult) {
-    PressableHighlight = tmp2(5909).PressableHighlight;
+    PressableHighlight = tmp2(5916).PressableHighlight;
   } else {
     PressableHighlight = React3;
   }
@@ -648,7 +648,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueChange) => {
   }
   let tmp10;
   const obj2 = { label, children: tmp9(PressableHighlight, obj3) };
-  const Input = tmp2(6423).Input;
+  const Input = tmp2(6430).Input;
   tmp9 = metroImportDefault;
   if (isAndroidResult) {
     tmp10 = handleOnPress;
@@ -674,7 +674,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueChange) => {
   if (accessibilityLabel == null) {
     accessibilityLabel = subLabel;
   }
-  items1 = [metroRequire(closure_9, { text: subLabel }), metroRequire(tmp2(6699).FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled })];
+  items1 = [metroRequire(closure_9, { text: subLabel }), metroRequire(tmp2(6706).FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled })];
   return metroRequire(Input, obj2);
 });
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditFormControls.tsx");

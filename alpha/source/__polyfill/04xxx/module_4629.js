@@ -1,7 +1,52 @@
 // Module ID: 4629
 // Function ID: 4630
-// Dependencies: []
+// Dependencies: [4621]
+// Exports: getHybridObjectConstructor
 
 // Module 4629
+import installedNitro1 from "installedNitro1" /* 4621 */;
 
-export default { uiViewClassName: "RiveView", supportsRawText: false, bubblingEventTypes: {}, directEventTypes: {}, validAttributes: { artboardName: true, stateMachineName: true, autoPlay: true, file: true, alignment: true, fit: true, layoutScaleFactor: true, dataBind: true, onError: true, hybridRef: true } };
+const map = new Map();
+
+export const getHybridObjectConstructor = function getHybridObjectConstructor(arg0) {
+  let closure_0 = arg0;
+  if (map.has(arg0)) {
+    return map.get(arg0);
+  } else {
+    function constructorFunc() {
+      const NitroModules = installedNitro1.NitroModules;
+      const hybridObject = NitroModules.createHybridObject(closure_0);
+      const prototypeOf = Object.getPrototypeOf(hybridObject);
+      if (constructorFunc.prototype !== prototypeOf) {
+        constructorFunc.prototype = prototypeOf;
+        constructorFunc.prototypeInitialized = true;
+      }
+      return hybridObject;
+    }
+    constructorFunc.prototypeInitialized = false;
+    let _Object = Object;
+    const _Symbol = Symbol;
+    const obj2 = {
+      value(arg0) {
+          if (!constructorFunc.prototypeInitialized) {
+            const NitroModules = installedNitro1.NitroModules;
+            const _Object = Object;
+            constructorFunc.prototype = Object.getPrototypeOf(NitroModules.createHybridObject(closure_0));
+            constructorFunc.prototypeInitialized = true;
+          }
+          let prototypeOf = Object.getPrototypeOf(arg0);
+          if (null != prototypeOf) {
+            while (prototypeOf !== constructorFunc.prototype) {
+              let _Object2 = Object;
+              prototypeOf = Object.getPrototypeOf(prototypeOf);
+            }
+            return true;
+          }
+          return false;
+        }
+    };
+    Object.defineProperty(constructorFunc, Symbol.hasInstance, obj2);
+    const result = obj.set(arg0, constructorFunc);
+    return constructorFunc;
+  }
+};

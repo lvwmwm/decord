@@ -1,23 +1,23 @@
-// Module ID: 16026
-// Function ID: 16027
+// Module ID: 16065
+// Function ID: 16066
 // Name: MessagesFastestList
-// Dependencies: [19, 21, 4890, 587, 558, 576, 15972, 15957, 16020, 15969, 15967, 16021, 15982, 16019, 16022, 6561, 6559, 6552, 2]
+// Dependencies: [19, 21, 4896, 587, 558, 576, 16011, 15996, 16059, 16008, 16006, 16060, 16021, 16058, 16061, 6568, 6566, 6559, 2]
 
-// Module 16026 (MessagesFastestList)
+// Module 16065 (MessagesFastestList)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6559 */;
-import FastestListItemTypeDefault from "FastestListItemType" /* 6561 */;
-import MessagesItemChannel from "MessagesItemChannel" /* 15957 */;
-import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 15967 */;
-import useMessagesData from "useMessagesData" /* 15972 */;
-import MessagesItemHappeningNow from "MessagesItemHappeningNow" /* 15982 */;
-import MessagesItemEmptyState from "MessagesItemEmptyState" /* 16019 */;
-import MessagesItemSeparator from "MessagesItemSeparator" /* 16020 */;
-import MessagesItemSuggestedFriendsHeaderDefault from "MessagesItemSuggestedFriendsHeader" /* 16021 */;
-import MessagesItemAddFriendsWidget from "MessagesItemAddFriendsWidget" /* 16022 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6566 */;
+import FastestListItemTypeDefault from "FastestListItemType" /* 6568 */;
+import MessagesItemChannel from "MessagesItemChannel" /* 15996 */;
+import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 16006 */;
+import useMessagesData from "useMessagesData" /* 16011 */;
+import MessagesItemHappeningNow from "MessagesItemHappeningNow" /* 16021 */;
+import MessagesItemEmptyState from "MessagesItemEmptyState" /* 16058 */;
+import MessagesItemSeparator from "MessagesItemSeparator" /* 16059 */;
+import MessagesItemSuggestedFriendsHeaderDefault from "MessagesItemSuggestedFriendsHeader" /* 16060 */;
+import MessagesItemAddFriendsWidget from "MessagesItemAddFriendsWidget" /* 16061 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -310,7 +310,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
       return jsx(MessagesItemSeparatorDefault, {});
     } else if (useMessagesData.MessagesDataSections.SuggestedFriends === arg0) {
       const obj4 = { suggestedFriend: friendSuggestions[row], onAddFriendSuggestions: setAddedFriendSuggestions };
-      const MessagesItemSuggestedFriendFast = tmp(15969).MessagesItemSuggestedFriendFast;
+      const MessagesItemSuggestedFriendFast = tmp(16008).MessagesItemSuggestedFriendFast;
       const merged = Object.assign(obj4);
       return <MessagesItemSuggestedFriendFast height={listItemSuggestedFriendHeight} />;
     } else if (useMessagesData.MessagesDataSections.Placeholders === arg0) {
@@ -383,7 +383,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
       return jsx(MessagesItemSeparatorDefault, {});
     } else if (useMessagesData.MessagesDataSections.SuggestedFriends === arg0) {
       const obj4 = { suggestedFriend: friendSuggestions[row], onAddFriendSuggestions: setAddedFriendSuggestions };
-      const MessagesItemSuggestedFriendFast = tmp(15969).MessagesItemSuggestedFriendFast;
+      const MessagesItemSuggestedFriendFast = tmp(16008).MessagesItemSuggestedFriendFast;
       const merged = Object.assign(obj4);
       return <MessagesItemSuggestedFriendFast height={listItemSuggestedFriendHeight} />;
     } else if (useMessagesData.MessagesDataSections.Placeholders === arg0) {
@@ -500,7 +500,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
           const tmp5 = require;
           if (useMessagesData.MessagesDataSections.FavoriteChannels === arg1) {
             return channelFavorites[arg2].channelId;
-          } else if (tmp5(15972).MessagesDataSections.Channels === arg1) {
+          } else if (tmp5(16011).MessagesDataSections.Channels === arg1) {
             return channels[arg2].channelId;
           }
         }

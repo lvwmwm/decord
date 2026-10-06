@@ -1,12 +1,12 @@
-// Module ID: 14495
-// Function ID: 14496
+// Module ID: 14511
+// Function ID: 14512
 // Name: TinyBroncoSettingsPredicate
-// Dependencies: [9421, 558, 9424, 2]
+// Dependencies: [9435, 558, 9437, 2]
 // Exports: useIsTinyBroncoSettingsEnabled
 
-// Module 14495 (TinyBroncoSettingsPredicate)
-import TinyBroncoConstants from "TinyBroncoConstants" /* 9421 */;
-import TinyBroncoExperiment from "TinyBroncoExperiment" /* 9424 */;
+// Module 14511 (TinyBroncoSettingsPredicate)
+import TinyBroncoConstants from "TinyBroncoConstants" /* 9435 */;
+import TinyBroncoExperiment from "TinyBroncoExperiment" /* 9437 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

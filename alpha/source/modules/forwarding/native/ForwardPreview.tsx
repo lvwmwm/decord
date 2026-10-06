@@ -1,29 +1,29 @@
-// Module ID: 11320
-// Function ID: 11321
+// Module ID: 11333
+// Function ID: 11334
 // Name: ForwardPreview
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4791, 7809, 7591, 8303, 11321, 5136, 11322, 12, 1126, 11324, 8368, 5871, 10369, 1483, 5974, 8469, 4886, 11326, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4797, 7820, 7602, 8336, 11334, 5143, 11335, 12, 1126, 11337, 8401, 5878, 10382, 1483, 5981, 8502, 4892, 11339, 2]
 
-// Module 11320 (ForwardPreview)
+// Module 11333 (ForwardPreview)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1483 */;
-import useThemeDefault from "useTheme" /* 4791 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 5136 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import RowGeneratorDefault from "RowGenerator" /* 7591 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 7809 */;
-import ChatItemDefault from "ChatItem" /* 8303 */;
-import CirclePlayIcon2 from "CirclePlayIcon" /* 8368 */;
-import ClipView from "ClipView" /* 8469 */;
-import ForwardPreviewUtils from "ForwardPreviewUtils" /* 11321 */;
-import CheckpointForwardPreviewDefault from "CheckpointForwardPreview" /* 11326 */;
+import useThemeDefault from "useTheme" /* 4797 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 5143 */;
+import FastImageDefault from "FastImage" /* 5981 */;
+import RowGeneratorDefault from "RowGenerator" /* 7602 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 7820 */;
+import ChatItemDefault from "ChatItem" /* 8336 */;
+import CirclePlayIcon2 from "CirclePlayIcon" /* 8401 */;
+import ClipView from "ClipView" /* 8502 */;
+import ForwardPreviewUtils from "ForwardPreviewUtils" /* 11334 */;
+import CheckpointForwardPreviewDefault from "CheckpointForwardPreview" /* 11339 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -132,7 +132,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
     cResult[5] = fn;
     tmp8 = fn;
   }
-  const tmpResult = tmp(4890);
+  const tmpResult = tmp(4896);
   const tmp7 = tmpResult.createNativeStyleProperties({ seeMoreLabelColor: TEXT_SUBTLE })(tmp5);
   cResult[0] = TEXT_SUBTLE;
   cResult[1] = tmp5;
@@ -153,7 +153,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   } else {
     TEXT_SUBTLE = tmp(587).colors.TEXT_SUBTLE;
   }
-  let obj = attachmentCount(4890);
+  let obj = attachmentCount(4896);
   const tmp4 = obj.createNativeStyleProperties({ seeMoreLabelColor: TEXT_SUBTLE })(tmp3);
   importDefault = tmp4;
   const items = [tmp4.seeMoreLabelColor, attachmentCount];
@@ -353,7 +353,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                     let tmp111Result = null != tmp11;
                                     if (tmp111Result) {
                                       let str4 = "text-md/medium";
-                                      const Text2 = tmp(4886).Text;
+                                      const Text2 = tmp(4892).Text;
                                       const tmp111 = hasOwnProperty;
                                       if (hasContent) {
                                         str4 = "text-sm/medium";
@@ -641,7 +641,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           const obj21 = { count: VIDEO };
           formatToPlainStringResult = obj6.formatToPlainString(intl5.t.SJ6pPX, obj21);
-          CirclePlayIcon = tmp(8368).CirclePlayIcon;
+          CirclePlayIcon = tmp(8401).CirclePlayIcon;
         } else {
           class G {
             constructor(arg0) {
@@ -796,7 +796,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const obj26 = { variant: "text-md/medium", children: tmpResult6.getCheckpointLabel(checkpointDataFromMessage) };
-        const Text = tmp(4886).Text;
+        const Text = tmp(4892).Text;
         tmpResult6 = checkpoint_CheckpointMessageComponentUtils;
         tmp98 = hasOwnProperty(Text, obj26);
       }
@@ -901,7 +901,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const intl4 = tmp2(1126).intl;
         const obj3 = { image_count: num, video_count: num2 };
         formatToPlainStringResult = intl4.formatToPlainString(tmp2(1126).t.Lr0Top, obj3);
-        AttachmentIcon = tmp2(11324).ImagesIcon;
+        AttachmentIcon = tmp2(11337).ImagesIcon;
       }
       if (num2 > 0) {
         if (attachments.length === num2) {
@@ -957,16 +957,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const intl3 = tmp2(1126).intl;
       const obj12 = { count: num2 };
       formatToPlainStringResult = intl3.formatToPlainString(tmp2(1126).t.SJ6pPX, obj12);
-      AttachmentIcon = tmp2(8368).CirclePlayIcon;
+      AttachmentIcon = tmp2(8401).CirclePlayIcon;
     } else if (num > 0) {
       let ImagesIcon;
       const intl2 = tmp2(1126).intl;
       const obj13 = { count: num };
       const formatToPlainStringResult1 = intl2.formatToPlainString(intl5.t.h4pFfU, obj13);
       if (1 === num) {
-        ImagesIcon = tmp2(5871).ImageIcon;
+        ImagesIcon = tmp2(5878).ImageIcon;
       } else {
-        ImagesIcon = tmp2(11324).ImagesIcon;
+        ImagesIcon = tmp2(11337).ImagesIcon;
       }
       AttachmentIcon = ImagesIcon;
       formatToPlainStringResult = formatToPlainStringResult1;
@@ -974,7 +974,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const intl = tmp2(1126).intl;
       const obj14 = { count: attachments.length };
       formatToPlainStringResult = intl.formatToPlainString(tmp2(1126).t["89ihS8"], obj14);
-      AttachmentIcon = tmp2(10369).AttachmentIcon;
+      AttachmentIcon = tmp2(10382).AttachmentIcon;
     }
   } else {
     tmp6 = null;
@@ -1004,7 +1004,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj22 = { style: tmp.contentWrapper, children: items6 };
   if (tmp36Result) {
     const obj23 = { variant: "text-md/medium", children: tmp2Result2.getCheckpointLabel(checkpointDataFromMessage) };
-    const Text = tmp2(4886).Text;
+    const Text = tmp2(4892).Text;
     tmp2Result2 = checkpoint_CheckpointMessageComponentUtils;
     tmp36Result = tmp36(Text, obj23);
   }
@@ -1031,7 +1031,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp36Result7 = null != tmp8;
     if (tmp36Result7) {
       let str3 = "text-md/medium";
-      const Text2 = tmp2(4886).Text;
+      const Text2 = tmp2(4892).Text;
       if (hasContent) {
         str3 = "text-sm/medium";
       }

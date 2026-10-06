@@ -1,16 +1,41 @@
 // Module ID: 14123
 // Function ID: 14124
-// Dependencies: [14087, 14061]
+// Dependencies: [14086, 14084, 14102, 14124, 14125]
 
 // Module 14123
-import _mod14061 from "module_14061" /* 14061 */;
-import module_14087 from "module_14087" /* 14087 */;
+import _mod14084 from "module_14084" /* 14084 */;
+import _mod14086 from "module_14086" /* 14086 */;
+import _mod14102 from "module_14102" /* 14102 */;
+import _mod14124 from "module_14124" /* 14124 */;
 
-let _moduleResult = module_14087(_mod14061.WeakMap);
-if (_moduleResult) {
-  const _String = String;
-  const obj = /native code/;
-  _moduleResult = obj.test(String(_mod14061.WeakMap));
-}
+let closure_2 = _mod14086([].push);
 
-export default _moduleResult;
+export default (arg0, arg1) => {
+  let num;
+  const tmp = _mod14084(arg0);
+  const items = [];
+  for (const key10010 in tmp) {
+    let tmp12 = require;
+    let tmp14 = _mod14102;
+    let tmp14Result = tmp14(_mod14124, key10010);
+    let tmp2 = !tmp14Result && tmp12(14102)(tmp, key10010);
+    if (!tmp2) {
+      continue;
+    } else {
+      let tmp4 = closure_2(items, key10010);
+      continue;
+    }
+    continue;
+  }
+  for (let num = 0; arg1.length > num; num = num + 1) {
+    let tmp5 = require;
+    let tmp7 = arg1[num];
+    if (_mod14102(tmp, tmp7)) {
+      let tmp5Result = tmp5(14125);
+      if (!(~tmp5Result.indexOf(items, tmp7))) {
+        let tmp10 = closure_2(items, tmp7);
+      }
+    }
+  }
+  return items;
+};

@@ -1,13 +1,13 @@
-// Module ID: 10049
-// Function ID: 10050
+// Module ID: 10062
+// Function ID: 10063
 // Name: useCanShowFavoritesGuildOnboarding
-// Dependencies: [4561, 2103, 558, 576, 504, 4736, 2]
+// Dependencies: [4567, 2103, 558, 576, 504, 4742, 2]
 
-// Module 10049 (useCanShowFavoritesGuildOnboarding)
+// Module 10062 (useCanShowFavoritesGuildOnboarding)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4736 */;
-import ActionSheetStore from "ActionSheetStore" /* 4561 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4742 */;
+import ActionSheetStore from "ActionSheetStore" /* 4567 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

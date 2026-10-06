@@ -1,12 +1,12 @@
-// Module ID: 5580
-// Function ID: 5581
+// Module ID: 5587
+// Function ID: 5588
 // Name: RegionalFeatureConfigUtils
-// Dependencies: [5104, 558, 576, 504, 2]
+// Dependencies: [5110, 558, 576, 504, 2]
 // Exports: hasAgeGatedFeatures, hasTeenDefaults, isFeatureAgeGated, isSettingTeenByDefault, shouldCollectAppStoreSignal
 
-// Module 5580 (RegionalFeatureConfigUtils)
+// Module 5587 (RegionalFeatureConfigUtils)
 import react from "react" /* 576 */;
-import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5104 */;
+import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5110 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

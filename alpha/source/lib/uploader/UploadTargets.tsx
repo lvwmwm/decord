@@ -1,15 +1,15 @@
-// Module ID: 7307
-// Function ID: 7308
+// Module ID: 7318
+// Function ID: 7319
 // Name: UploadTargets
-// Dependencies: [2051, 1085, 7295, 7270, 7243, 7308, 7310, 2]
+// Dependencies: [2051, 1085, 7308, 7283, 7256, 7319, 7321, 2]
 // Exports: getUploadTarget
 
-// Module 7307 (UploadTargets)
-import UploadUtils from "UploadUtils" /* 7243 */;
-import FileUtilsAll from "FileUtils" /* 7270 */;
-import UploadLimits from "UploadLimits" /* 7295 */;
-import GuildProductAttachmentUploadTargetDefault from "GuildProductAttachmentUploadTarget" /* 7308 */;
-import ICYMIAttachmentUploadTargetDefault from "ICYMIAttachmentUploadTarget" /* 7310 */;
+// Module 7318 (UploadTargets)
+import UploadUtils from "UploadUtils" /* 7256 */;
+import FileUtilsAll from "FileUtils" /* 7283 */;
+import UploadLimits from "UploadLimits" /* 7308 */;
+import GuildProductAttachmentUploadTargetDefault from "GuildProductAttachmentUploadTarget" /* 7319 */;
+import ICYMIAttachmentUploadTargetDefault from "ICYMIAttachmentUploadTarget" /* 7321 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;

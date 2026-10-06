@@ -1,12 +1,12 @@
-// Module ID: 17680
-// Function ID: 17681
+// Module ID: 17726
+// Function ID: 17727
 // Name: guild_automod/ExperimentUtils
-// Dependencies: [558, 576, 17681, 6748, 2]
+// Dependencies: [558, 576, 17727, 6758, 2]
 
-// Module 17680 (guild_automod/ExperimentUtils)
+// Module 17726 (guild_automod/ExperimentUtils)
 import react from "react" /* 576 */;
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6748 */;
-import AutomodExperiment from "AutomodExperiment" /* 17681 */;
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6758 */;
+import AutomodExperiment from "AutomodExperiment" /* 17727 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   } else {
     tmp4 = cResult[1];
   }
-  const AutomodApplicationRules = tmp(17681).AutomodApplicationRules;
+  const AutomodApplicationRules = tmp(17727).AutomodApplicationRules;
   let enabled = AutomodApplicationRules.useConfig(tmp4).enabled;
   if (cResult[2] !== guildId) {
     const obj3 = { guildId, location: "automod_settings" };

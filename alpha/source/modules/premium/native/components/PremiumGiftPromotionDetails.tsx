@@ -1,22 +1,22 @@
-// Module ID: 10488
-// Function ID: 10489
+// Module ID: 10501
+// Function ID: 10502
 // Name: PremiumGiftPromotionDetails
-// Dependencies: [109, 32, 19, 17, 4879, 21, 587, 4890, 558, 576, 4886, 504, 8464, 1370, 10489, 5974, 1980, 8426, 2]
+// Dependencies: [109, 32, 19, 17, 4885, 21, 587, 4896, 558, 576, 4892, 504, 8497, 1370, 10502, 5981, 1980, 8459, 2]
 
-// Module 10488 (PremiumGiftPromotionDetails)
+// Module 10501 (PremiumGiftPromotionDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import SKUPreview from "SKUPreview" /* 8426 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import SKUPreview from "SKUPreview" /* 8459 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 4885 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -555,7 +555,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
   if (tmp15Result) {
     const obj6 = { style: tmp9.preview, children: authStore(CollectiblesPreview, obj11) };
     obj11 = { collectiblesItemData: tmp10, size: rounded };
-    CollectiblesPreview = tmp(8426).CollectiblesPreview;
+    CollectiblesPreview = tmp(8459).CollectiblesPreview;
     const tmp16 = View;
     if ("bundle" === tmp10.type) {
       const _Math2 = Math;

@@ -1,24 +1,24 @@
-// Module ID: 16547
-// Function ID: 16548
+// Module ID: 16587
+// Function ID: 16588
 // Name: ConjurePublishBlockedSheet
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 16548, 1126, 3723, 6644, 4886, 4854, 5594, 6701, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 16588, 1126, 3753, 6651, 4892, 4860, 5601, 6708, 2]
 // Exports: default
 
-// Module 16547 (ConjurePublishBlockedSheet)
+// Module 16587 (ConjurePublishBlockedSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import _modDef3723 from "module_3723" /* 3723 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4854 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6644 */;
-import ActionSheet2 from "ActionSheet" /* 6701 */;
-import conjurePublishBlockedReason from "conjurePublishBlockedReason" /* 16548 */;
+import _modDef3753 from "module_3753" /* 3753 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4860 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import components_Button_Button from "components/Button/Button" /* 5601 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6651 */;
+import ActionSheet2 from "ActionSheet" /* 6708 */;
+import conjurePublishBlockedReason from "conjurePublishBlockedReason" /* 16588 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
   if (cResult[0] !== tmp5) {
     const intl = tmp(1126).intl;
     const string = intl.string;
-    const tmp8 = _modDef3723;
+    const tmp8 = _modDef3753;
     const stringResult = string(tmp5 ? tmp8.wQ4UyJ : tmp8.ZNGLFE);
     cResult[0] = tmp5;
     cResult[1] = stringResult;
@@ -71,7 +71,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
   if (cResult[4] !== tmp5) {
     const intl2 = tmp(1126).intl;
     const string2 = intl2.string;
-    const tmp15 = _modDef3723;
+    const tmp15 = _modDef3753;
     const string2Result = string2(tmp5 ? tmp15.Agqmbt : tmp15.ffxKGK);
     cResult[4] = tmp5;
     cResult[5] = string2Result;
@@ -95,7 +95,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
     if (tmp5) {
       BddRzS = tmp(1126).t.BddRzS;
     } else {
-      BddRzS = _modDef3723["/omTNx"];
+      BddRzS = _modDef3753["/omTNx"];
     }
     const string3Result = string3(BddRzS);
     cResult[8] = tmp5;
@@ -168,7 +168,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
   const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   const intl = intl4.intl;
   const string = intl.string;
-  const tmp7 = _modDef3723;
+  const tmp7 = _modDef3753;
   if (tmp4) {
     ZNGLFE = tmp7.wQ4UyJ;
     tmp8 = tmp6;
@@ -179,14 +179,14 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
   let obj = { header: React3(BottomSheetTitleHeader, obj2), children: tmp9(tmp10, obj3) };
   obj2 = { title: string(ZNGLFE) };
   obj3 = { style: tmp.content, children: items };
-  const Text = tmp2(4886).Text;
+  const Text = tmp2(4892).Text;
   const intl2 = tmp2(1126).intl;
   const string2 = intl2.string;
-  const tmp8Result = tmp8(3723);
+  const tmp8Result = tmp8(3753);
   items = [, ];
   const obj4 = { variant: "text-md/normal", color: "text-muted", children: string2(tmp4 ? tmp8Result.Agqmbt : tmp8Result.ffxKGK) };
   items[0] = React3(Text, obj4);
-  const Button = tmp2(5594).Button;
+  const Button = tmp2(5601).Button;
   const intl3 = tmp2(1126).intl;
   const string3 = intl3.string;
   tmp10 = View;
@@ -194,7 +194,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
   if (tmp4) {
     BddRzS = tmp2(1126).t.BddRzS;
   } else {
-    BddRzS = tmp8(3723)["/omTNx"];
+    BddRzS = tmp8(3753)["/omTNx"];
   }
   const obj5 = {
     variant: "primary",

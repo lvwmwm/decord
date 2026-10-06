@@ -1,21 +1,21 @@
-// Module ID: 16119
-// Function ID: 16120
+// Module ID: 16158
+// Function ID: 16159
 // Name: AccountLinkBanner
-// Dependencies: [19, 17, 1377, 2048, 21, 587, 6667, 10723, 5600, 4890, 558, 576, 573, 6657, 6681, 6017, 5909, 1188, 1126, 4886, 8389, 5594, 5995, 2]
+// Dependencies: [19, 17, 1377, 2048, 21, 587, 6674, 10736, 5607, 4896, 558, 576, 573, 6664, 6688, 6024, 5916, 1188, 1126, 4892, 8422, 5601, 6002, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 16119 (AccountLinkBanner)
+// Module 16158 (AccountLinkBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import ButtonConstants from "ButtonConstants" /* 5600 */;
-import GameIcon from "GameIcon" /* 6667 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10723 */;
+import ButtonConstants from "ButtonConstants" /* 5607 */;
+import GameIcon from "GameIcon" /* 6674 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10736 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -249,7 +249,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((startAuthoriza
     const obj9 = { style: tmp.ellipsisDot };
     items3[2] = closure_6(View, obj9);
     items2[1] = closure_7(View, obj6);
-    const obj10 = { user: stateFromStores, size: require("native").AvatarSizes.LARGE_48, guildId: "r" };
+    const obj10 = { user: stateFromStores, size: require("native").AvatarSizes.LARGE_48, guildId: "Array" };
     const Avatar = tmp2(tmp3[17]).Avatar;
     items2[2] = closure_6(Avatar, obj10);
     items1[1] = closure_7(View, obj4);

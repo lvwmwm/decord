@@ -1,22 +1,22 @@
-// Module ID: 9089
-// Function ID: 9090
+// Module ID: 9125
+// Function ID: 9126
 // Name: ScreenshareTile
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 9090, 1188, 9091, 1126, 4886, 6140, 2]
+// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 9126, 1188, 9127, 1126, 4892, 6147, 2]
 
-// Module 9089 (ScreenshareTile)
+// Module 9125 (ScreenshareTile)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
-import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 9090 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9091 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6147 */;
+import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 9126 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9127 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -76,7 +76,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp12 = cResult[5];
     }
     if (cResult[6] !== tmp4.image) {
-      const obj3 = { source: tmp6(9091), style: tmp4.image, resizeMode: "contain" };
+      const obj3 = { source: tmp6(9127), style: tmp4.image, resizeMode: "contain" };
       const tmp19 = metroRequire(React3, obj3);
       cResult[6] = tmp4.image;
       cResult[7] = tmp19;

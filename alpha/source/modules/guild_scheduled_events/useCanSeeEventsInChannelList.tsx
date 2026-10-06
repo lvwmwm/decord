@@ -1,12 +1,12 @@
-// Module ID: 12009
-// Function ID: 12010
+// Module ID: 12024
+// Function ID: 12025
 // Name: useCanSeeEventsInChannelList
-// Dependencies: [558, 9171, 9160, 12010, 2]
+// Dependencies: [558, 9206, 9195, 12025, 2]
 
-// Module 12009 (useCanSeeEventsInChannelList)
-import useGuildScheduledEventsDefault from "useGuildScheduledEvents" /* 9160 */;
-import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 9171 */;
-import useIsHubForGuildDefault from "useIsHubForGuild" /* 12010 */;
+// Module 12024 (useCanSeeEventsInChannelList)
+import useGuildScheduledEventsDefault from "useGuildScheduledEvents" /* 9195 */;
+import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 9206 */;
+import useIsHubForGuildDefault from "useIsHubForGuild" /* 12025 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

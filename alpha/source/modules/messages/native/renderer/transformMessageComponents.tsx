@@ -1,18 +1,18 @@
-// Module ID: 7793
-// Function ID: 7794
+// Module ID: 7804
+// Function ID: 7805
 // Name: transformMessageComponents
-// Dependencies: [109, 17, 5115, 7794, 7531, 1375, 1985, 5114, 1126, 7795, 7802, 7803, 7805, 7808, 7809, 5102, 7271, 7810, 7812, 7610, 5040, 1390, 5121, 7791, 7790, 1371, 1444, 1102, 4877, 5123, 5136, 2]
+// Dependencies: [109, 17, 5121, 7805, 7542, 1375, 1985, 5120, 1126, 7806, 7813, 7814, 7816, 7819, 7820, 5108, 7284, 7821, 7823, 7621, 5046, 1390, 5128, 7802, 7801, 1371, 1444, 1102, 4883, 5130, 5143, 2]
 // Exports: default, getUnfurledMediaItemType
 
-// Module 7793 (transformMessageComponents)
+// Module 7804 (transformMessageComponents)
 import react_native from "react-native" /* 17 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import URLUtilsDefault from "URLUtils" /* 1371 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5040 */;
-import CheckpointConstants from "CheckpointConstants" /* 5115 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 7791 */;
-import InteractionComponentConstants from "InteractionComponentConstants" /* 7794 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 7809 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5046 */;
+import CheckpointConstants from "CheckpointConstants" /* 5121 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 7802 */;
+import InteractionComponentConstants from "InteractionComponentConstants" /* 7805 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 7820 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import LRUCache from "LRUCache" /* 1444 */;
 import size_mod from "module_2" /* 2 */;
@@ -23,10 +23,10 @@ let _require, importDefault;
 let tmp4;
 const intl6 = tmp4(1126);
 const FlagUtils = tmp4(1390);
-const AgeVerificationUtils = tmp4(5102);
-const MediaTypes = tmp4(5121);
-const sanitizeMediaDimension = tmp4(7790);
-const ExplicitMediaUtils = tmp4(7808);
+const AgeVerificationUtils = tmp4(5108);
+const MediaTypes = tmp4(5128);
+const sanitizeMediaDimension = tmp4(7801);
+const ExplicitMediaUtils = tmp4(7819);
 function transformToRowGeneratedComponent(message, accessory) {
   let colors;
   let contentType;
@@ -84,7 +84,7 @@ function transformToRowGeneratedComponent(message, accessory) {
   function expensive() {
     if (null != found1) {
       if (0 !== found1.length) {
-        const mapped = arr.map(f95518);
+        const mapped = arr.map(f95659);
         const intl = closure_0(message[8]).intl;
         const formatToPlainString = intl.formatToPlainString;
         const obj = { selections: mapped.join(",") };
@@ -147,7 +147,7 @@ function transformToRowGeneratedComponent(message, accessory) {
     const merged2 = Object.assign(accessory);
     tmpResult26 = tmp(tmp2[9]);
     _require = accessory;
-    const f95518 = (arg0) => found1.options[arg0].label;
+    const f95659 = (arg0) => found1.options[arg0].label;
     tmpResult27 = tmp(tmp2[7]);
     obj5 = { expensive, cheap: tmpResult29.getSelectPlaceholder(accessory) };
     getAccessibilityLabelOrCheapFallbackUnsafe2 = tmp(tmp2[19]).getAccessibilityLabelOrCheapFallbackUnsafe;
@@ -271,11 +271,11 @@ function transformToRowGeneratedComponent(message, accessory) {
                       if (height > 0) {
                         const obj = MediaFormatTesters;
                         if (obj.isImageContentType(contentType)) {
-                          VISUAL_PLACEHOLDER = tmp(7809).MediaGalleryItemType.IMAGE;
+                          VISUAL_PLACEHOLDER = tmp(7820).MediaGalleryItemType.IMAGE;
                         } else {
                           const tmpResult = MediaFormatTesters;
                           if (tmpResult.isVideoContentType(contentType)) {
-                            VISUAL_PLACEHOLDER = tmp(7809).MediaGalleryItemType.VIDEO;
+                            VISUAL_PLACEHOLDER = tmp(7820).MediaGalleryItemType.VIDEO;
                           }
                         }
                       }
@@ -378,8 +378,8 @@ function transformToRowGeneratedComponent(message, accessory) {
                 name = intl2.string(tmp(tmp2[8]).t.GnuJ5u);
               }
               num2 = accessory.size;
-              filesize = require("module_7271").filesize;
-              require("module_7271");
+              filesize = require("module_7284").filesize;
+              require("module_7284");
               if (num2 == null) {
                 num2 = 0;
               }
@@ -468,7 +468,7 @@ function transformToRowGeneratedComponent(message, accessory) {
     tmpResult42 = tmp(tmp2[9]);
     tmpResult43 = tmp(tmp2[12]);
     _require = accessory;
-    const f95519 = (label) => label.label;
+    const f95660 = (label) => label.label;
     tmpResult44 = tmp(tmp2[7]);
     obj25 = { expensive, cheap: tmpResult46.getSelectPlaceholder(accessory) };
     getAccessibilityLabelOrCheapFallbackUnsafe = tmp(tmp2[19]).getAccessibilityLabelOrCheapFallbackUnsafe;
@@ -494,11 +494,11 @@ function transformUnfurledMediaItem(media, shouldShowMedia) {
         if (height > 0) {
           const obj = MediaFormatTesters;
           if (obj.isImageContentType(contentType)) {
-            VISUAL_PLACEHOLDER = tmp(7809).MediaGalleryItemType.IMAGE;
+            VISUAL_PLACEHOLDER = tmp(7820).MediaGalleryItemType.IMAGE;
           } else {
             const tmpResult = MediaFormatTesters;
             if (tmpResult.isVideoContentType(contentType)) {
-              VISUAL_PLACEHOLDER = tmp(7809).MediaGalleryItemType.VIDEO;
+              VISUAL_PLACEHOLDER = tmp(7820).MediaGalleryItemType.VIDEO;
             }
           }
         }
@@ -543,7 +543,7 @@ export default function transformMessageComponents(message, arr) {
   let obj2;
   let obj3;
   const obj = { type: "textDisplayComponent", parserState: obj2.getInitialParserStateFromMessage(message.message, closure_7) };
-  obj2 = obj3(7531);
+  obj2 = obj3(7542);
   obj3 = { markdownConfigs: { textDisplayComponent: obj } };
   const merged = Object.assign(message);
   const mapped = arr.map((item) => transformToRowGeneratedComponent(obj3, item));

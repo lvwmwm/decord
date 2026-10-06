@@ -1,31 +1,31 @@
-// Module ID: 17176
-// Function ID: 17177
+// Module ID: 17205
+// Function ID: 17206
 // Name: ActivityPanelFocusedView
-// Dependencies: [19, 17, 4879, 2051, 2050, 2011, 8705, 17171, 1085, 11902, 21, 4890, 587, 558, 576, 1618, 504, 1484, 17166, 16583, 4612, 4589, 4891, 5597, 5767, 4498, 17168, 17177, 8993, 9134, 2]
+// Dependencies: [19, 17, 4885, 2051, 2050, 2011, 9001, 17200, 1085, 11916, 21, 4896, 587, 558, 576, 1618, 504, 1484, 17195, 16621, 4618, 4595, 4897, 5604, 5774, 4504, 17197, 17206, 9026, 9169, 2]
 
-// Module 17176 (ActivityPanelFocusedView)
+// Module 17205 (ActivityPanelFocusedView)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
 import Constants2 from "Constants" /* 2011 */;
-import native from "native" /* 4589 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import spring from "spring" /* 5597 */;
-import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 9134 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11902 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17168 */;
-import ActivityPanelHeaderDefault from "ActivityPanelHeader" /* 17177 */;
+import native from "native" /* 4595 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import timing from "timing" /* 4897 */;
+import spring from "spring" /* 5604 */;
+import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 9169 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11916 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17197 */;
+import ActivityPanelHeaderDefault from "ActivityPanelHeader" /* 17206 */;
 import react from "react" /* 19 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 4885 */;
 import ChannelStore_mod from "ChannelStore" /* 2051 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 8705 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 17171 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 9001 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 17200 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

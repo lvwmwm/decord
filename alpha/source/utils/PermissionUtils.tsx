@@ -1,19 +1,19 @@
-// Module ID: 4514
-// Function ID: 4515
+// Module ID: 4520
+// Function ID: 4521
 // Name: PermissionUtils
-// Dependencies: [2105, 4510, 4511, 2055, 2070, 2107, 502, 2051, 2112, 2106, 2074, 1377, 1085, 1097, 12, 4515, 4496, 11, 1985, 4516, 2110, 2]
+// Dependencies: [2105, 4516, 4517, 2055, 2070, 2107, 502, 2051, 2112, 2106, 2074, 1377, 1085, 1097, 12, 4521, 4502, 11, 1985, 4522, 2110, 2]
 // Exports: areChannelsLocked, can, canEveryone, canEveryoneRole, canManageACategory, getGuildVisualOwnerId, getHighestHoistedRole, getHighestRole, isRoleHigher, makeEveryoneOverwrite
 
-// Module 4514 (PermissionUtils)
+// Module 4520 (PermissionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Server from "Server" /* 1985 */;
 import GuildRoleRecord from "GuildRoleRecord" /* 2107 */;
 import GuildRoleUtils from "GuildRoleUtils" /* 2110 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4515 */;
-import AppChannelPermissions from "AppChannelPermissions" /* 4516 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4521 */;
+import AppChannelPermissions from "AppChannelPermissions" /* 4522 */;
 import ImpersonateStore from "ImpersonateStore" /* 2105 */;
-import LurkingStore from "LurkingStore" /* 4510 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4511 */;
+import LurkingStore from "LurkingStore" /* 4516 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4517 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
 import GuildRecord from "GuildRecord" /* 2070 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -91,7 +91,7 @@ function applyOverwrites(id, member, deserializeResult, overwrites) {
       found = tmp19Result7.filter(addResult4, closure_29);
     }
     found1 = found;
-    const tmp28Result = tmp28(4496);
+    const tmp28Result = tmp28(4502);
     const tmp34 = tmp28Result.isMemberCommunicationDisabled(member) && !hasItem;
     if (tmp34) {
       const tmp19Result8 = BigFlagUtils;

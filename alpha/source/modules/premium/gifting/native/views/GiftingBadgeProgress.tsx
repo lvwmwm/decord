@@ -1,20 +1,20 @@
-// Module ID: 10767
-// Function ID: 10768
+// Module ID: 10780
+// Function ID: 10781
 // Name: GiftingBadgeProgress
-// Dependencies: [19, 17, 7863, 21, 558, 576, 4890, 587, 10475, 10481, 4886, 1126, 2589, 2]
+// Dependencies: [19, 17, 7874, 21, 558, 576, 4896, 587, 10488, 10494, 4892, 1126, 2617, 2]
 
-// Module 10767 (GiftingBadgeProgress)
+// Module 10780 (GiftingBadgeProgress)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef2589 from "module_2589" /* 2589 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7863 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10475 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10481 */;
+import _modDef2617 from "module_2617" /* 2617 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7874 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10488 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10494 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import size from "module_2" /* 2 */;
 
 let percent;
@@ -255,7 +255,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp31 = null != title;
           if (tmp31) {
             const obj6 = { variant: "text-md/semibold", children: title };
-            tmp31 = hasOwnProperty(tmp(4886).Text, obj6);
+            tmp31 = hasOwnProperty(tmp(4892).Text, obj6);
           }
           cResult[27] = title;
           cResult[28] = tmp31;
@@ -275,8 +275,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const labels = tmp4.labels;
         let tmp37 = null != nextTier;
         if (tmp37) {
-          const obj8 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(_modDef2589.iIpfQe, obj9) };
-          const Text = tmp(4886).Text;
+          const obj8 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(_modDef2617.iIpfQe, obj9) };
+          const Text = tmp(4892).Text;
           intl = tmp(1126).intl;
           obj9 = { count: progress, threshold: tmp21 };
           tmp37 = hasOwnProperty(Text, obj8);
@@ -374,14 +374,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj6 = { style: tmp.content, children: items1 };
   if (tmp15) {
     const obj7 = { variant: "text-md/semibold", children: title };
-    tmp15 = hasOwnProperty(tmp2(4886).Text, obj7);
+    tmp15 = hasOwnProperty(tmp2(4892).Text, obj7);
   }
   items1 = [tmp15, hasOwnProperty(closure_7, { percent: num2 }), ];
   const obj8 = { style: tmp.labels, children: tmp17Result };
   tmp17Result = null != nextTier;
   if (tmp17Result) {
-    const obj9 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(_modDef2589.iIpfQe, obj10) };
-    const Text = tmp2(4886).Text;
+    const obj9 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(_modDef2617.iIpfQe, obj10) };
+    const Text = tmp2(4892).Text;
     intl = tmp2(1126).intl;
     obj10 = { count: progress, threshold: tmp7 };
     tmp17Result = tmp17(Text, obj9);

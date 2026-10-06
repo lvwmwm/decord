@@ -1,13 +1,13 @@
-// Module ID: 8025
-// Function ID: 8026
+// Module ID: 8035
+// Function ID: 8036
 // Name: ICYMIUnreadStateStore
-// Dependencies: [1102, 8024, 8026, 504, 584, 2]
+// Dependencies: [1102, 8034, 8036, 504, 584, 2]
 
-// Module 8025 (ICYMIUnreadStateStore)
+// Module 8035 (ICYMIUnreadStateStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import ICYMITypes from "ICYMITypes" /* 8024 */;
+import ICYMITypes from "ICYMITypes" /* 8034 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = 7 * DurationsDefault.Millis.DAY;
@@ -72,7 +72,7 @@ const obj = {
           result = null != prop;
         }
         if (!result) {
-          let tmp3Result = tmp3(8026);
+          let tmp3Result = tmp3(8036);
           result = tmp3Result.isItemUnreadInChannel(tmp2.data.channel_id, tmp2.data.message_id);
         }
         if (!result) {

@@ -1,21 +1,21 @@
-// Module ID: 14773
-// Function ID: 14774
+// Module ID: 14789
+// Function ID: 14790
 // Name: XboxTwoWayLinkUpsell
-// Dependencies: [19, 1085, 21, 4890, 558, 576, 2115, 14774, 1126, 5974, 14775, 8733, 2036, 2]
+// Dependencies: [19, 1085, 21, 4896, 558, 576, 2115, 14790, 1126, 5981, 14791, 8765, 2036, 2]
 
-// Module 14773 (XboxTwoWayLinkUpsell)
+// Module 14789 (XboxTwoWayLinkUpsell)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
 import dismissible_content from "dismissible_content" /* 2036 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 8733 */;
-import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 14774 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14775 */;
+import FastImageDefault from "FastImage" /* 5981 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 8765 */;
+import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 14790 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14791 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = HelpdeskUtilsDefault;
     const articleURL = obj2.getArticleURL(constants.XBOX_CONNECTION);
-    const OneWayToTwoWayLinkUpsell = tmp(14774).OneWayToTwoWayLinkUpsell;
+    const OneWayToTwoWayLinkUpsell = tmp(14790).OneWayToTwoWayLinkUpsell;
     const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t["2okkZV"]);
     const intl2 = tmp(1126).intl;

@@ -1,14 +1,14 @@
-// Module ID: 9710
-// Function ID: 9711
+// Module ID: 9723
+// Function ID: 9724
 // Name: SingleVideoCall
-// Dependencies: [19, 9050, 21, 558, 576, 1618, 6657, 5091, 7850, 9120, 1188, 9105, 2]
+// Dependencies: [19, 9086, 21, 558, 576, 1618, 6664, 5097, 7861, 9155, 1188, 9140, 2]
 
-// Module 9710 (SingleVideoCall)
+// Module 9723 (SingleVideoCall)
 import Fragment from "Fragment" /* 21 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5091 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5097 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
 import react from "react" /* 19 */;
-import ChannelCallStore from "ChannelCallStore" /* 9050 */;
+import ChannelCallStore from "ChannelCallStore" /* 9086 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ bottom, right } = analyticsLocations(1618)());
   analyticsLocations(1618)();
   const tmp4 = analyticsLocations;
-  analyticsLocations = analyticsLocations(6657)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6664)().analyticsLocations;
   if (cResult[0] !== channel.id) {
     const fn = function n() {
       React3();
@@ -63,8 +63,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
       }
-      tmp4(9120);
-      const tmp13 = <tmp4Result gestureEnabled participant={participant} avatarSize={channel(1188).AvatarSizes.PROFILE} resizeMode={channel(9105).ResizeMode.AUTO} statusStyle={tmp8} onSingleTap={onSingleTap} onDoubleTap={tmp6} onLongPress={tmp7} />;
+      tmp4(9155);
+      const tmp13 = <tmp4Result gestureEnabled participant={participant} avatarSize={channel(1188).AvatarSizes.PROFILE} resizeMode={channel(9140).ResizeMode.AUTO} statusStyle={tmp8} onSingleTap={onSingleTap} onDoubleTap={tmp6} onLongPress={tmp7} />;
       cResult[8] = tmp6;
       cResult[9] = tmp7;
       cResult[10] = participant;

@@ -1,27 +1,27 @@
-// Module ID: 12067
-// Function ID: 12068
+// Module ID: 12082
+// Function ID: 12083
 // Name: EmojiSuggestionBarLarge
-// Dependencies: [32, 19, 17, 9869, 21, 4890, 587, 558, 576, 12068, 4612, 9912, 9932, 4589, 2]
+// Dependencies: [32, 19, 17, 9882, 21, 4896, 587, 558, 576, 12083, 4618, 9925, 9945, 4595, 2]
 
-// Module 12067 (EmojiSuggestionBarLarge)
+// Module 12082 (EmojiSuggestionBarLarge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9869 */;
-import EmojiPickerListRow from "EmojiPickerListRow" /* 9912 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9882 */;
+import EmojiPickerListRow from "EmojiPickerListRow" /* 9925 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp;
 let tmp4;
-const native = tmp(4589);
-const ReanimatedRexport = tmp(4612);
-const ReanimatedRexportDefault = tmp4(4612);
-const EmojiSuggestionBarUtils = tmp(12068);
+const native = tmp(4595);
+const ReanimatedRexport = tmp(4618);
+const ReanimatedRexportDefault = tmp4(4618);
+const EmojiSuggestionBarUtils = tmp(12083);
 function renderEmojiSuggestionBarLargeItem(arg0, arg1, transitionState, cleanUp) {
   const merged = Object.assign(arg1);
   return <closure_11 key={arg0} transitionState={arg2} cleanUp={arg3} />;
@@ -133,7 +133,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (locked) {
           openEmojiActionSheet = dependencyMap;
         } else {
-          openEmojiActionSheet = tmp8(9932).openEmojiActionSheet;
+          openEmojiActionSheet = tmp8(9945).openEmojiActionSheet;
         }
         const tmp8Result = EmojiSuggestionBarUtils;
         return tmp7(EmojiEntranceAnimation, obj2, tmp8Result.getEmojiEntranceKey(tmp, index));
@@ -246,7 +246,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (locked) {
           openEmojiActionSheet = dependencyMap;
         } else {
-          openEmojiActionSheet = tmp8(9932).openEmojiActionSheet;
+          openEmojiActionSheet = tmp8(9945).openEmojiActionSheet;
         }
         const tmp8Result = EmojiSuggestionBarUtils;
         return tmp7(EmojiEntranceAnimation, obj2, tmp8Result.getEmojiEntranceKey(tmp, index));

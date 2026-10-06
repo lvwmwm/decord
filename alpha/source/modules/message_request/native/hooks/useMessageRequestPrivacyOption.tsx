@@ -1,13 +1,13 @@
-// Module ID: 13722
-// Function ID: 13723
+// Module ID: 13740
+// Function ID: 13741
 // Name: useMessageRequestPrivacyOption
-// Dependencies: [19, 21, 558, 576, 2028, 6491, 1126, 6697, 12087, 2]
+// Dependencies: [19, 21, 558, 576, 2028, 6498, 1126, 6704, 12102, 2]
 
-// Module 13722 (useMessageRequestPrivacyOption)
+// Module 13740 (useMessageRequestPrivacyOption)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6491 */;
-import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 12087 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6498 */;
+import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 12102 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -158,8 +158,8 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       cResult[10] = tmp8;
       cResult[11] = tmp6;
       cResult[12] = !tmp6 && !tmp4;
-      cResult[13] = jsx(tmp(6697).ActionSheetSwitchRow, { label: tmp10, subLabel: tmp11, value: !tmp6 && !tmp4, onValueChange: tmp8, disabled: tmp6 });
-      const tmp17 = jsx(tmp(6697).ActionSheetSwitchRow, { label: tmp10, subLabel: tmp11, value: !tmp6 && !tmp4, onValueChange: tmp8, disabled: tmp6 });
+      cResult[13] = jsx(tmp(6704).ActionSheetSwitchRow, { label: tmp10, subLabel: tmp11, value: !tmp6 && !tmp4, onValueChange: tmp8, disabled: tmp6 });
+      const tmp17 = jsx(tmp(6704).ActionSheetSwitchRow, { label: tmp10, subLabel: tmp11, value: !tmp6 && !tmp4, onValueChange: tmp8, disabled: tmp6 });
     }
     const hasItem = setting1.includes(guild.id);
     cResult[3] = guild.id;
@@ -197,7 +197,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     MessageRequestRestrictedGuildIds.updateSetting(Array.from(sanitizedMessageRequestRestrictedGuilds));
   }, items);
   let obj = { label: intl.string(id(1126).t["7UgSGP"]), subLabel: intl2.string(id(1126).t.INRaYb), value: !hasItem1 && !hasItem, onValueChange: callback, disabled: hasItem1 };
-  const ActionSheetSwitchRow = id(6697).ActionSheetSwitchRow;
+  const ActionSheetSwitchRow = id(6704).ActionSheetSwitchRow;
   intl = id(1126).intl;
   intl2 = id(1126).intl;
   return jsx(ActionSheetSwitchRow, obj);

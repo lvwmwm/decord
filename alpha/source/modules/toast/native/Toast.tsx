@@ -1,17 +1,17 @@
-// Module ID: 17141
-// Function ID: 17142
+// Module ID: 17170
+// Function ID: 17171
 // Name: Toast
-// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 4580, 1188, 4886, 2]
+// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 4586, 1188, 4892, 2]
 
-// Module 17141 (Toast)
+// Module 17170 (Toast)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken2 from "useToken" /* 4580 */;
+import useToken2 from "useToken" /* 4586 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let obj2;
 let obj3;
 let tmp;
 const native = tmp(1188);
-const Text_Text = tmp(4886);
+const Text_Text = tmp(4892);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;

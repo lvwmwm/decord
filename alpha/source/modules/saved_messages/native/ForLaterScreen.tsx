@@ -1,23 +1,23 @@
-// Module ID: 13123
-// Function ID: 13124
+// Module ID: 13142
+// Function ID: 13143
 // Name: ForLaterScreen
-// Dependencies: [32, 19, 17, 11283, 21, 4890, 587, 558, 576, 4612, 5597, 13124, 7495, 7485, 504, 6657, 6681, 1260, 8422, 1102, 13126, 13132, 8371, 13136, 2]
+// Dependencies: [32, 19, 17, 11296, 21, 4896, 587, 558, 576, 4618, 5604, 13143, 7506, 7496, 504, 6664, 6688, 1260, 8455, 1102, 13145, 13151, 8404, 13155, 2]
 
-// Module 13123 (ForLaterScreen)
+// Module 13142 (ForLaterScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
-import spring from "spring" /* 5597 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6657 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8422 */;
-import useSavedMessagesForPageDefault from "useSavedMessagesForPage" /* 13124 */;
-import ForLaterMessageCardDefault from "ForLaterMessageCard" /* 13126 */;
-import ForLaterIntroDefault from "ForLaterIntro" /* 13132 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4618 */;
+import spring from "spring" /* 5604 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6664 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8455 */;
+import useSavedMessagesForPageDefault from "useSavedMessagesForPage" /* 13143 */;
+import ForLaterMessageCardDefault from "ForLaterMessageCard" /* 13145 */;
+import ForLaterIntroDefault from "ForLaterIntro" /* 13151 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11283 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11296 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((type) =
   const cResult = obj.c(12);
   type = type.type;
   const tmp4 = closure_10();
-  const obj2 = sharedValue(4612);
+  const obj2 = sharedValue(4618);
   const tmp = sharedValue;
   sharedValue = obj2.useSharedValue(0);
   if (cResult[0] !== sharedValue) {
@@ -80,7 +80,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((type) =
   fn2.__closure = { borderOpacity: sharedValue };
   fn2.__workletHash = 16693192032676;
   fn2.__initData = __initData;
-  const tmpResult = tmp(4612);
+  const tmpResult = tmp(4618);
   const animatedStyle = tmpResult.useAnimatedStyle(fn2);
   if (cResult[2] === animatedStyle) {
     let tmp8;
@@ -130,7 +130,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((type) =
   let sharedValue;
   type = type.type;
   const tmp = closure_10();
-  let obj = sharedValue(4612);
+  let obj = sharedValue(4618);
   sharedValue = obj.useSharedValue(0);
   const items = [sharedValue];
   const callback = react.useCallback((nativeEvent) => {
@@ -151,7 +151,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((type) =
   fn.__workletHash = 14855800666151;
   fn.__initData = __initData2;
   const obj3 = { style: tmp.container, children: items2 };
-  const obj2 = sharedValue(4612);
+  const obj2 = sharedValue(4618);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const obj4 = { style: items1 };
   items1 = [tmp.headerBorder, animatedStyle];
@@ -172,10 +172,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
   ({ type, handleScroll } = arg0);
   const tmp4 = closure_10();
   const arr = useSavedMessagesForPageDefault(type);
-  const tmp6 = type === throttledNow(7495).SavedMessageSortTypes.REMINDER;
-  const obj2 = throttledNow(7485);
+  const tmp6 = type === throttledNow(7506).SavedMessageSortTypes.REMINDER;
+  const obj2 = throttledNow(7496);
   const forLaterLimit = obj2.useForLaterLimit(ForLaterScreen, tmp6);
-  const obj3 = throttledNow(7485);
+  const obj3 = throttledNow(7496);
   const isForLaterLimitUpgradable = obj3.useIsForLaterLimitUpgradable(ForLaterScreen);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SavedMessagesStore];
@@ -192,7 +192,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
   const tmpResult = throttledNow(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp11, tmp12);
   const tmp5Result = useAnalyticsLocationsDefault;
-  const analyticsLocations = tmp5Result(tmp5(6681).FOR_LATER_POPOUT).analyticsLocations;
+  const analyticsLocations = tmp5Result(tmp5(6688).FOR_LATER_POPOUT).analyticsLocations;
   if (cResult[2] === stateFromStores) {
     if (cResult[3] === arr.length) {
       if (cResult[4] === (isForLaterLimitUpgradable && arr.length > 0 && !(isForLaterLimitUpgradable && forLaterLimit > 0 && arr.length >= forLaterLimit))) {
@@ -302,7 +302,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
                     tmp36 = tmp38;
                   }
                   const obj5 = { value: analyticsLocations, children: tmp37 };
-                  const tmp40 = closure_7(throttledNow(6657).AnalyticsLocationProvider, obj5);
+                  const tmp40 = closure_7(throttledNow(6664).AnalyticsLocationProvider, obj5);
                   cResult[21] = analyticsLocations;
                   cResult[22] = tmp37;
                   cResult[23] = tmp40;
@@ -319,8 +319,8 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
                   cResult[25] = tmp31;
                   cResult[26] = arr;
                   cResult[27] = tmp4.cardContainer;
-                  cResult[28] = closure_7(throttledNow(8371).FlashList, obj6);
-                  const tmp35 = closure_7(throttledNow(8371).FlashList, obj6);
+                  cResult[28] = closure_7(throttledNow(8404).FlashList, obj6);
+                  const tmp35 = closure_7(throttledNow(8404).FlashList, obj6);
                 }
                 return tmp36;
               }
@@ -359,16 +359,16 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
   const handleScroll = type.handleScroll;
   const tmp = closure_10();
   const arr = useSavedMessagesForPageDefault(type);
-  const tmp5 = type === throttledNow(7495).SavedMessageSortTypes.REMINDER;
-  let obj = throttledNow(7485);
+  const tmp5 = type === throttledNow(7506).SavedMessageSortTypes.REMINDER;
+  let obj = throttledNow(7496);
   const forLaterLimit = obj.useForLaterLimit(ForLaterScreen, tmp5);
-  const obj2 = throttledNow(7485);
+  const obj2 = throttledNow(7496);
   const isForLaterLimitUpgradable = obj2.useIsForLaterLimitUpgradable(ForLaterScreen);
   const items = [SavedMessagesStore];
   const tmp4Result = throttledNow(504);
   const stateFromStores = tmp4Result.useStateFromStores(items, () => overdueMessageReminderCount.getOverdueMessageReminderCount());
   const tmp2Result = useAnalyticsLocationsDefault;
-  const analyticsLocations = tmp2Result(tmp2(6681).FOR_LATER_POPOUT).analyticsLocations;
+  const analyticsLocations = tmp2Result(tmp2(6688).FOR_LATER_POPOUT).analyticsLocations;
   const obj3 = { type: throttledNow(1260).ImpressionTypes.MODAL, name: throttledNow(1260).ImpressionNames.FOR_LATER_LIST_VIEWED, properties: obj4 };
   const items1 = [arr.length, stateFromStores, tmp9, tmp8];
   obj4 = { tab_type: type, total_count: arr.length, overdue_count: stateFromStores, nitro_upsell_bar_shown: isForLaterLimitUpgradable && arr.length > 0 && !(isForLaterLimitUpgradable && forLaterLimit > 0 && arr.length >= forLaterLimit), nitro_roadblock_upsell_bar_shown: isForLaterLimitUpgradable && arr.length > 0 && (isForLaterLimitUpgradable && forLaterLimit > 0 && arr.length >= forLaterLimit) };
@@ -390,13 +390,13 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
   [][0] = throttledNow;
   if (0 === arr.length) {
     const obj5 = { value: analyticsLocations, children: closure_7(ForLaterIntroDefault, obj6) };
-    const AnalyticsLocationProvider = tmp4(6657).AnalyticsLocationProvider;
+    const AnalyticsLocationProvider = tmp4(6664).AnalyticsLocationProvider;
     obj6 = { type };
     tmp22Result = closure_7(AnalyticsLocationProvider, obj5);
   } else {
     const obj7 = { value: analyticsLocations, children: items2 };
-    const obj8 = { style: tmp.listContainer, children: closure_7(throttledNow(8371).FlashList, obj9) };
-    const AnalyticsLocationProvider2 = tmp4(6657).AnalyticsLocationProvider;
+    const obj8 = { style: tmp.listContainer, children: closure_7(throttledNow(8404).FlashList, obj9) };
+    const AnalyticsLocationProvider2 = tmp4(6664).AnalyticsLocationProvider;
     obj9 = { data: arr, renderItem: tmp18, contentContainerStyle: tmp.cardContainer, keyExtractor, onScroll: handleScroll };
     items2 = [closure_7(View, obj8), ];
     let tmp23Result = null;
@@ -404,7 +404,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
     const tmp23 = closure_7;
     if (isForLaterLimitUpgradable && arr.length > 0) {
       const obj10 = { isReminder: tmp5, isAtLimit: isForLaterLimitUpgradable && forLaterLimit > 0 && arr.length >= forLaterLimit };
-      tmp23Result = tmp23(tmp2(13136), obj10);
+      tmp23Result = tmp23(tmp2(13155), obj10);
     }
     items2[1] = tmp23Result;
     tmp22Result = tmp22(AnalyticsLocationProvider2, obj7);

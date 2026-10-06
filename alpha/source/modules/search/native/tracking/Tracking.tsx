@@ -1,17 +1,18 @@
-// Module ID: 11982
-// Function ID: 11983
+// Module ID: 12001
+// Function ID: 12002
 // Name: search/tracking/Tracking
-// Dependencies: [2051, 11967, 7512, 1085, 11983, 11968, 5070, 1266, 2028, 2]
+// Dependencies: [2051, 11994, 7523, 1085, 12002, 11987, 5076, 1266, 2028, 12004, 2]
 
-// Module 11982 (search/tracking/Tracking)
+// Module 12001 (search/tracking/Tracking)
 import v1 from "v1" /* 1266 */;
 import UserSettings from "UserSettings" /* 2028 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
-import TrackingConstants from "TrackingConstants" /* 7512 */;
-import SearchUtils from "SearchUtils" /* 11968 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 11983 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5076 */;
+import TrackingConstants from "TrackingConstants" /* 7523 */;
+import SearchUtils from "SearchUtils" /* 11987 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 12002 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 12004 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import SearchQueryStore from "SearchQueryStore" /* 11967 */;
+import SearchQueryStore from "SearchQueryStore" /* 11994 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -216,8 +217,10 @@ let obj = {
   },
   trackSearchClosed(searchContext) {
     searchContext = searchContext.searchContext;
-    const obj = SearchSessionAnalyticsManagerDefault;
-    obj.terminate(searchContext);
+    const obj = SmartSearchAnalyticsManagerDefault;
+    obj.resetSession(SearchSessionAnalyticsManagerDefault);
+    const obj2 = SearchSessionAnalyticsManagerDefault;
+    obj2.terminate(searchContext);
   },
   trackSearchIndexing(searchContext) {
     let documentsIndexed;

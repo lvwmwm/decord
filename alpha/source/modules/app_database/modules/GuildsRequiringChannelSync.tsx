@@ -1,9 +1,9 @@
-// Module ID: 7136
-// Function ID: 7137
+// Module ID: 7149
+// Function ID: 7150
 // Name: GuildsRequiringChannelSync
-// Dependencies: [2055, 502, 2051, 2112, 2106, 2074, 4509, 1085, 2058, 1096, 1097, 3, 2078, 4499, 1266, 1252, 1390, 2]
+// Dependencies: [2055, 502, 2051, 2112, 2106, 2074, 4515, 1085, 2058, 1096, 1097, 3, 2078, 4505, 1266, 1252, 1390, 2]
 
-// Module 7136 (GuildsRequiringChannelSync)
+// Module 7149 (GuildsRequiringChannelSync)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants2 from "Constants" /* 1096 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -11,14 +11,14 @@ import v1 from "v1" /* 1266 */;
 import FlagUtils from "FlagUtils" /* 1390 */;
 import ChannelConstants from "ChannelConstants" /* 2058 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 2078 */;
-import PremiumRoleUtils from "PremiumRoleUtils" /* 4499 */;
+import PremiumRoleUtils from "PremiumRoleUtils" /* 4505 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildMemberStore from "GuildMemberStore" /* 2112 */;
 import GuildRoleStore from "GuildRoleStore" /* 2106 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
 import Constants from "Constants" /* 1085 */;
 import BigFlagUtils from "BigFlagUtils" /* 1097 */;
 import size from "module_2" /* 2 */;
@@ -120,7 +120,7 @@ class GuildsRequiringChannelSync {
       let obj3 = PremiumRoleUtils;
       let isSubscriptionRoleResult1 = obj3.isSubscriptionRole(tmp17);
       if (isSubscriptionRoleResult1) {
-        let tmp6Result = tmp6(4499);
+        let tmp6Result = tmp6(4505);
         isSubscriptionRoleResult1 = tmp6Result.isSubscriptionRoleAvailableForPurchase(tmp17);
       }
       if (!isSubscriptionRoleResult) {

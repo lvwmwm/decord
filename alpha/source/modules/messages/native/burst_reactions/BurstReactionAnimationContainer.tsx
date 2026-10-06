@@ -1,21 +1,21 @@
-// Module ID: 17093
-// Function ID: 17094
+// Module ID: 17119
+// Function ID: 17120
 // Name: BurstReactionAnimationContainer
-// Dependencies: [32, 19, 17, 2048, 21, 4890, 587, 7412, 558, 576, 4855, 4856, 584, 4612, 4891, 2036, 10354, 1188, 7454, 4886, 1126, 4589, 2]
+// Dependencies: [32, 19, 17, 2048, 21, 4896, 587, 7423, 558, 576, 4861, 4862, 584, 4618, 4897, 2036, 10367, 1188, 7465, 4892, 1126, 4595, 2]
 
-// Module 17093 (BurstReactionAnimationContainer)
+// Module 17119 (BurstReactionAnimationContainer)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 7412 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import timing from "timing" /* 4897 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 7423 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj2;
 let obj3;
 let size;
 let tmp;
-const native = tmp(4589);
+const native = tmp(4595);
 let react = react_mod;
 ({ TouchableOpacity: hasOwnProperty, View: metroRequire, StyleSheet } = react_native);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -118,7 +118,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp12 = cResult[2];
   }
   let closure_7 = tmp12;
-  let tmpResult = tmp(4612);
+  let tmpResult = tmp(4618);
   const fn3 = function x() {
     let obj2;
     if (null == first) {
@@ -150,7 +150,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return obj2;
   };
-  let obj3 = { animationData, showAnimation: first1, withTiming: tmp(4891).withTiming, runOnJS: tmp(4612).runOnJS, handleComponentFinish };
+  let obj3 = { animationData, showAnimation: first1, withTiming: tmp(4897).withTiming, runOnJS: tmp(4618).runOnJS, handleComponentFinish };
   fn3.__closure = obj3;
   fn3.__workletHash = 3096942457868;
   fn3.__initData = __initData;
@@ -252,7 +252,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return tmp(OverlayView, obj);
         }
     };
-    const tmp19 = animatedStyle(animationData(10354), obj4);
+    const tmp19 = animatedStyle(animationData(10367), obj4);
     cResult[4] = animatedStyle;
     cResult[5] = animationData;
     cResult[6] = first1;
@@ -414,7 +414,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return tmp(OverlayView, obj);
         }
     };
-    let tmp11 = animationData(10354);
+    let tmp11 = animationData(10367);
     items = [tmp6(2036).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
     tmp8 = closure_8(tmp11, obj3);
   }

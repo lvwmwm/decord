@@ -1,10 +1,10 @@
-// Module ID: 8033
-// Function ID: 8034
+// Module ID: 8043
+// Function ID: 8044
 // Name: useLabFeature
-// Dependencies: [8031, 558, 576, 504, 2]
+// Dependencies: [8041, 558, 576, 504, 2]
 
-// Module 8033 (useLabFeature)
-import LabFeatureStore from "LabFeatureStore" /* 8031 */;
+// Module 8043 (useLabFeature)
+import LabFeatureStore from "LabFeatureStore" /* 8041 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

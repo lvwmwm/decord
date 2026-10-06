@@ -1,9 +1,9 @@
-// Module ID: 18014
-// Function ID: 18015
+// Module ID: 18059
+// Function ID: 18060
 // Name: VideoStutterMitigationExperiment
 // Dependencies: [1440, 2]
 
-// Module 18014 (VideoStutterMitigationExperiment)
+// Module 18059 (VideoStutterMitigationExperiment)
 import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 

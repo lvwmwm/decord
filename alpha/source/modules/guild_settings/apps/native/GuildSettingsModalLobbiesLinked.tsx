@@ -1,12 +1,12 @@
-// Module ID: 17772
-// Function ID: 17773
+// Module ID: 17818
+// Function ID: 17819
 // Name: GuildSettingsModalLobbiesLinked
-// Dependencies: [19, 4519, 1377, 1085, 21, 558, 576, 1490, 6663, 5993, 5043, 5812, 6074, 4580, 587, 17662, 12, 5593, 8895, 6536, 2]
+// Dependencies: [19, 4525, 1377, 1085, 21, 558, 576, 1490, 6670, 6000, 5049, 5819, 6081, 4586, 587, 17708, 12, 5600, 8924, 6543, 2]
 
-// Module 17772 (GuildSettingsModalLobbiesLinked)
+// Module 17818 (GuildSettingsModalLobbiesLinked)
 import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import RelationshipStore from "RelationshipStore" /* 4525 */;
 import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -121,13 +121,13 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((channels) => {
   const applicationId = channels.applicationId;
   let obj = channels(1490);
   dependencyMap = obj.useNavigation();
-  let obj2 = channels(6663);
+  let obj2 = channels(6670);
   const getOrFetchApplication = obj2.useGetOrFetchApplication(applicationId);
   let tmp5Result = null;
   const tmp = channels;
   if (0 !== channels.length) {
     let name;
-    const TableRowGroup = tmp(6074).TableRowGroup;
+    const TableRowGroup = tmp(6081).TableRowGroup;
     const tmp5 = closure_6;
     if (getOrFetchApplication != null) {
       name = getOrFetchApplication.name;
@@ -293,7 +293,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp21 = tmp23;
     }
     const obj8 = { style: tmp15, spacing: arr(587).space.PX_24, children: tmp16 };
-    const Stack = tmp(5593).Stack;
+    const Stack = tmp(5600).Stack;
     const tmp20 = closure_6(Stack, obj8);
     cResult[13] = tmp15;
     cResult[14] = tmp16;

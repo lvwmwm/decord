@@ -1,11 +1,11 @@
-// Module ID: 14505
-// Function ID: 14506
+// Module ID: 14521
+// Function ID: 14522
 // Name: useHighlightSettingItem
-// Dependencies: [14501, 558, 576, 2]
+// Dependencies: [14517, 558, 576, 2]
 
-// Module 14505 (useHighlightSettingItem)
+// Module 14521 (useHighlightSettingItem)
 import react from "react" /* 576 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14501 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14517 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

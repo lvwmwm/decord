@@ -1,16 +1,16 @@
-// Module ID: 16729
-// Function ID: 16730
+// Module ID: 16750
+// Function ID: 16751
 // Name: chat/ConjureAwaitingUser
-// Dependencies: [19, 4879, 21, 587, 4890, 558, 576, 504, 4612, 4891, 2]
+// Dependencies: [19, 4885, 21, 587, 4896, 558, 576, 504, 4618, 4897, 2]
 
-// Module 16729 (chat/ConjureAwaitingUser)
+// Module 16750 (chat/ConjureAwaitingUser)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import timing from "timing" /* 4897 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import createStyles from "createStyles" /* 4890 */;
+import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = tmp(504);
   stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmpResult3 = tmp(4612);
+  const tmpResult3 = tmp(4618);
   const sharedValue = tmpResult3.useSharedValue(0);
   if (cResult[2] === sharedValue) {
     let tmp10;
@@ -65,7 +65,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     fn3.__closure = obj2;
     fn3.__workletHash = 8512415125100;
     fn3.__initData = __initData;
-    const tmpResult4 = tmp(4612);
+    const tmpResult4 = tmp(4618);
     const animatedStyle = tmpResult4.useAnimatedStyle(fn3);
     if (cResult[6] === animatedStyle) {
       let tmp16;
@@ -75,7 +75,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       return tmp16;
     }
     const items1 = [tmp4.ring, animatedStyle];
-    const tmp19 = jsx(sharedValue(4612).View, { pointerEvents: "none", style: items1 });
+    const tmp19 = jsx(sharedValue(4618).View, { pointerEvents: "none", style: items1 });
     cResult[6] = animatedStyle;
     cResult[7] = tmp4.ring;
     cResult[8] = tmp19;
@@ -119,7 +119,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj = stateFromStores(504);
   const items = [AccessibilityStore];
   stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj2 = stateFromStores(4612);
+  let obj2 = stateFromStores(4618);
   const sharedValue = obj2.useSharedValue(0);
   const items1 = [sharedValue, stateFromStores];
   const effect = react.useEffect(() => {
@@ -153,10 +153,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 4491518532559;
   fn.__initData = __initData2;
-  const obj3 = stateFromStores(4612);
+  const obj3 = stateFromStores(4618);
   const animatedStyle = obj3.useAnimatedStyle(fn);
   const items2 = [tmp.ring, animatedStyle];
-  return jsx(sharedValue(4612).View, { pointerEvents: "none", style: items2 });
+  return jsx(sharedValue(4618).View, { pointerEvents: "none", style: items2 });
 });
 let result = size.fileFinishedImporting("modules/conjure/chat/native/ConjureAwaitingUser.tsx");
 

@@ -1,18 +1,18 @@
-// Module ID: 7643
-// Function ID: 7644
+// Module ID: 7654
+// Function ID: 7655
 // Name: ChannelPinnedMessageSystemMessage
-// Dependencies: [7619, 7621, 1126, 7623, 7626, 2]
+// Dependencies: [7630, 7632, 1126, 7634, 7637, 2]
 // Exports: createChannelPinnedMessageSystemMessage
 
-// Module 7643 (ChannelPinnedMessageSystemMessage)
+// Module 7654 (ChannelPinnedMessageSystemMessage)
 import intl5 from "intl" /* 1126 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7619 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7621 */;
-import MessageAccessibilityActions from "MessageAccessibilityActions" /* 7626 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7630 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7632 */;
+import MessageAccessibilityActions from "MessageAccessibilityActions" /* 7637 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const createCommonMessageDefault = tmp4(7623);
+const createCommonMessageDefault = tmp4(7634);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/ChannelPinnedMessageSystemMessage.tsx");
 
 export const createChannelPinnedMessageSystemMessage = function createChannelPinnedMessageSystemMessage(message) {

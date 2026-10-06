@@ -1,9 +1,9 @@
-// Module ID: 10015
-// Function ID: 10016
+// Module ID: 10028
+// Function ID: 10029
 // Name: DiscordAppState
 // Dependencies: [1986, 558, 576, 504, 2]
 
-// Module 10015 (DiscordAppState)
+// Module 10028 (DiscordAppState)
 import react from "react" /* 576 */;
 import AppStateStore from "AppStateStore" /* 1986 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

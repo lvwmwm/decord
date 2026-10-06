@@ -1,19 +1,19 @@
-// Module ID: 15982
-// Function ID: 15983
+// Module ID: 16021
+// Function ID: 16022
 // Name: MessagesItemHappeningNow
-// Dependencies: [19, 17, 15114, 21, 11813, 587, 4890, 558, 576, 4580, 15983, 8470, 2]
+// Dependencies: [19, 17, 15129, 21, 11827, 587, 4896, 558, 576, 4586, 16022, 8503, 2]
 // Exports: getMessagesItemHappeningNowHeight
 
-// Module 15982 (MessagesItemHappeningNow)
+// Module 16021 (MessagesItemHappeningNow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4580 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 11813 */;
+import useToken from "useToken" /* 4586 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 11827 */;
 import react from "react" /* 19 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15114 */;
-import createStyles from "createStyles" /* 4890 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15129 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,8 +23,8 @@ let HappeningNowItem;
 let closure_4;
 let tmp;
 let tmp4;
-const CutoutBackgroundContext = tmp(8470);
-const HappeningNowDefault = tmp4(15983);
+const CutoutBackgroundContext = tmp(8503);
+const HappeningNowDefault = tmp4(16022);
 const View = react_native.View;
 ({ HAPPENING_NOW_CARD_HEIGHT: closure_4, HappeningNowItem } = HappeningNowConstants);
 const jsx = Fragment.jsx;

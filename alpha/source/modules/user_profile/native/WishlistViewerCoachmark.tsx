@@ -1,17 +1,17 @@
-// Module ID: 12962
-// Function ID: 12963
+// Module ID: 12981
+// Function ID: 12982
 // Name: WishlistViewerCoachmark
-// Dependencies: [19, 17, 2048, 21, 4890, 558, 576, 12963, 1126, 9882, 2]
+// Dependencies: [19, 17, 2048, 21, 4896, 558, 576, 12982, 1126, 9895, 2]
 
-// Module 12962 (WishlistViewerCoachmark)
+// Module 12981 (WishlistViewerCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import _modDef12963 from "module_12963" /* 12963 */;
+import _modDef12982 from "module_12982" /* 12982 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(6);
   const tmp3 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef12963 };
+    const obj2 = { uri: _modDef12982 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -57,8 +57,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   tmp10 = tmp11;
 }) : (() => {
   const tmp = closure_8();
-  ({ source: { uri: _modDef12963 }, style: tmp.image });
-  ({ uri: _modDef12963 });
+  ({ source: { uri: _modDef12982 }, style: tmp.image });
+  ({ uri: _modDef12982 });
   return <React3 style={tmp.imageContainer}>{null}</React3>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -129,7 +129,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onViewWishlist) => {
       if (cResult[10] === tmp9) {
         tmp13 = cResult[11];
       }
-      const tmpResult = markAsDismissed(9882);
+      const tmpResult = markAsDismissed(9895);
       const coachmark = tmpResult.useCoachmark(anchorRef, tmp13);
       return null;
     }

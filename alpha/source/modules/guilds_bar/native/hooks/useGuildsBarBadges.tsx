@@ -1,24 +1,24 @@
-// Module ID: 16269
-// Function ID: 16270
+// Module ID: 16309
+// Function ID: 16310
 // Name: useGuildsBarBadges
-// Dependencies: [109, 19, 11160, 4700, 2112, 2074, 4509, 1377, 1085, 21, 4890, 558, 576, 504, 4701, 16270, 4580, 587, 1188, 16274, 16238, 16237, 2]
+// Dependencies: [109, 19, 11173, 4706, 2112, 2074, 4515, 1377, 1085, 21, 4896, 558, 576, 504, 4707, 16310, 4586, 587, 1188, 16314, 16278, 16277, 2]
 
-// Module 16269 (useGuildsBarBadges)
+// Module 16309 (useGuildsBarBadges)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1188 */;
-import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 4701 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16238 */;
-import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 16274 */;
+import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 4707 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16278 */;
+import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 16314 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11160 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4700 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11173 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4706 */;
 import GuildMemberStore from "GuildMemberStore" /* 2112 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
 import UserStore from "UserStore" /* 1377 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -293,10 +293,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
     }
     const tmpResult6 = tmp(504);
     const stateFromStores2 = tmpResult6.useStateFromStores(tmp13, tmp16, tmp17);
-    const tmp20 = stateFromStores(16270)(arg0);
-    const tmpResult7 = tmp(4580);
+    const tmp20 = stateFromStores(16310)(arg0);
+    const tmpResult7 = tmp(4586);
     const token = tmpResult7.useToken(stateFromStores(587).modules.mobile.GUILD_BAR_ITEM_SIZE);
-    const tmpResult8 = tmp(4580);
+    const tmpResult8 = tmp(4586);
     const token1 = tmpResult8.useToken(stateFromStores(587).modules.mobile.GUILD_BAR_ITEM_MARGIN);
     const diff = token1 - tmp(1188).BADGE_PADDING;
     if (cResult[12] !== diff) {

@@ -1,27 +1,27 @@
-// Module ID: 17736
-// Function ID: 17737
+// Module ID: 17782
+// Function ID: 17783
 // Name: GuildSettingsModalEmoji/EmojiRow
-// Dependencies: [32, 19, 17, 2074, 1377, 21, 4890, 587, 1369, 558, 576, 504, 9169, 9939, 4527, 17737, 5770, 4886, 1188, 4568, 1126, 1402, 5042, 4722, 5909, 17739, 5993, 2]
+// Dependencies: [32, 19, 17, 2074, 1377, 21, 4896, 587, 1369, 558, 576, 504, 9204, 9952, 4533, 17783, 5777, 4892, 1188, 4574, 1126, 1402, 5048, 4728, 5916, 17785, 6000, 2]
 
-// Module 17736 (GuildSettingsModalEmoji/EmojiRow)
+// Module 17782 (GuildSettingsModalEmoji/EmojiRow)
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1188 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4527 */;
-import UserUtilsDefault from "UserUtils" /* 4722 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5770 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9939 */;
-import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 17737 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17739 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4533 */;
+import UserUtilsDefault from "UserUtils" /* 4728 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5048 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5777 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9952 */;
+import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 17783 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17785 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 2074 */;
 import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

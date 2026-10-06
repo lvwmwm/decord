@@ -1,14 +1,14 @@
-// Module ID: 9185
-// Function ID: 9186
+// Module ID: 9220
+// Function ID: 9221
 // Name: GuildEventSchedule
-// Dependencies: [19, 21, 558, 576, 4461, 9163, 1126, 9186, 2]
+// Dependencies: [19, 21, 558, 576, 4467, 9198, 1126, 9221, 2]
 
-// Module 9185 (GuildEventSchedule)
+// Module 9220 (GuildEventSchedule)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
-import _modDef4461 from "module_4461" /* 4461 */;
-import ScheduleUtils from "ScheduleUtils" /* 9163 */;
-import GuildEventModalComponents from "GuildEventModalComponents" /* 9186 */;
+import _modDef4467 from "module_4467" /* 4467 */;
+import ScheduleUtils from "ScheduleUtils" /* 9198 */;
+import GuildEventModalComponents from "GuildEventModalComponents" /* 9221 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -32,7 +32,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
   ({ guildEvent, recurrenceId, schedule } = onChange);
   onChange = onChange.onChange;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = _modDef4461();
+    const tmp6 = _modDef4467();
     cResult[0] = tmp6;
     first = tmp6;
   } else {
@@ -159,7 +159,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
                   return;
                 }
               }
-              const GuildEventDatetime = tmp(9186).GuildEventDatetime;
+              const GuildEventDatetime = tmp(9221).GuildEventDatetime;
               intl2 = tmp(1126).intl;
               intl3 = tmp(1126).intl;
               tmp26 = React3(GuildEventDatetime, obj6);
@@ -209,10 +209,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
     cResult[10] = C;
     tmp15 = C;
   }
-  const obj2 = _modDef4461();
+  const obj2 = _modDef4467();
   const addResult = obj2.add(ScheduleUtils.MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
   if (cResult[6] !== schedule.startDate) {
-    const obj3 = _modDef4461(schedule.startDate);
+    const obj3 = _modDef4467(schedule.startDate);
     class T {
       constructor(arg0) {
         obj = {};
@@ -229,7 +229,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
   } else {
     tmp12 = cResult[7];
   }
-  const obj4 = _modDef4461();
+  const obj4 = _modDef4467();
   const addResult2 = obj4.add(ScheduleUtils.MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days");
   if (null != recurrenceId) {
     const add = addResult.add;
@@ -261,19 +261,19 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
   schedule = schedule.schedule;
   const onChange = schedule.onChange;
   ({ guildEvent, recurrenceId } = schedule);
-  const tmp2 = onChange(4461)();
-  let obj = onChange(4461)();
-  const addResult = obj.add(schedule(9163).MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
+  const tmp2 = onChange(4467)();
+  let obj = onChange(4467)();
+  const addResult = obj.add(schedule(9198).MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
   const items = [schedule.startDate];
   const memo = react.useMemo(() => {
-    const obj = _modDef4461(schedule.startDate);
+    const obj = _modDef4467(schedule.startDate);
     return obj.add(15, "minutes");
   }, items);
-  const obj3 = onChange(4461)();
-  const addResult1 = obj3.add(schedule(9163).MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days");
+  const obj3 = onChange(4467)();
+  const addResult1 = obj3.add(schedule(9198).MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days");
   if (null != recurrenceId) {
-    addResult.add(schedule(9163).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
-    addResult1.add(schedule(9163).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
+    addResult.add(schedule(9198).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
+    addResult1.add(schedule(9198).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
   }
   const obj2 = {
     date: schedule.startDate,
@@ -287,7 +287,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
     dateLabel: intl.string(schedule(1126).t.kKOIwJ),
     timeLabel: intl2.string(schedule(1126).t["6dGmCD"])
   };
-  const GuildEventDatetime = tmp3(9186).GuildEventDatetime;
+  const GuildEventDatetime = tmp3(9221).GuildEventDatetime;
   intl = tmp3(1126).intl;
   intl2 = tmp3(1126).intl;
   const children = [closure_4(GuildEventDatetime, obj2), ];
@@ -308,7 +308,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
       dateLabel: intl3.string(schedule(1126).t.CTLgZJ),
       timeLabel: intl4.string(schedule(1126).t.j2RuXF)
     };
-    const GuildEventDatetime2 = tmp3(9186).GuildEventDatetime;
+    const GuildEventDatetime2 = tmp3(9221).GuildEventDatetime;
     intl3 = tmp3(1126).intl;
     intl4 = tmp3(1126).intl;
     tmp9Result = tmp9(GuildEventDatetime2, obj4);

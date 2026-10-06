@@ -1,11 +1,11 @@
-// Module ID: 10536
-// Function ID: 10537
+// Module ID: 10549
+// Function ID: 10550
 // Name: StorefrontNativeUtils
-// Dependencies: [19, 558, 576, 8872, 6739, 504, 2]
+// Dependencies: [19, 558, 576, 8901, 6931, 504, 2]
 
-// Module 10536 (StorefrontNativeUtils)
-import IAPStoreDefault from "IAPStore" /* 6739 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 8872 */;
+// Module 10549 (StorefrontNativeUtils)
+import IAPStoreDefault from "IAPStore" /* 6931 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 8901 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -134,7 +134,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
   }, items);
   const useStateFromStores = require("get initialized").useStateFromStores;
   const tmp4 = require("get initialized");
-  const items1 = [stateFromStores(6739)];
+  const items1 = [stateFromStores(6931)];
   const items2 = [tmp2];
   stateFromStores = useStateFromStores(items1, () => {
     let product = null;

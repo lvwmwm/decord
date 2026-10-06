@@ -1,9 +1,9 @@
-// Module ID: 7038
-// Function ID: 7039
+// Module ID: 7051
+// Function ID: 7052
 // Name: CollapsedVoiceChannelStore
 // Dependencies: [2051, 11, 504, 584, 2]
 
-// Module 7038 (CollapsedVoiceChannelStore)
+// Module 7051 (CollapsedVoiceChannelStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

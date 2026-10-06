@@ -1,16 +1,16 @@
-// Module ID: 18075
-// Function ID: 18076
+// Module ID: 18120
+// Function ID: 18121
 // Name: usePendingParentRequests
-// Dependencies: [32, 19, 7048, 1377, 7049, 558, 576, 504, 8295, 11528, 2]
+// Dependencies: [32, 19, 7061, 1377, 7062, 558, 576, 504, 8328, 11541, 2]
 
-// Module 18075 (usePendingParentRequests)
+// Module 18120 (usePendingParentRequests)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7049 */;
-import useUserLinks from "useUserLinks" /* 8295 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7062 */;
+import useUserLinks from "useUserLinks" /* 8328 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7048 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7061 */;
 import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ const require = globalThis.__r;
 let _require, currentUser, dependencyMap, map, pendingRequests, set;
 
 let tmp;
-const useFamilyCenterActions = tmp(11528);
+const useFamilyCenterActions = tmp(11541);
 const UserLinkStatus = FamilyCenterConstants.UserLinkStatus;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arr, arg1) {
@@ -511,7 +511,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingRequests) => 
   let tmp15;
   let tmp16;
   let tmp4;
-  const f133091 = () => {
+  const f133307 = () => {
     set = new Set();
     return set;
   };
@@ -540,8 +540,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingRequests) => 
   const declineLinkRequest = familyCenterActions.declineLinkRequest;
   ({ isAcceptLoading, isDeclineLoading } = familyCenterActions);
   let closure_5 = tmp6;
-  [c6, c7] = tmp2(react.useState(f133091), 2);
-  tmp2(react.useState(f133091), 2);
+  [c6, c7] = tmp2(react.useState(f133307), 2);
+  tmp2(react.useState(f133307), 2);
   const callback = obj2.useCallback((arg0) => {
     let closure_0 = arg0;
     let tmp = _undefined3(function(has) {
@@ -720,7 +720,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let stateFromStores;
   let tmp3;
   let tmp4;
-  const f133100 = () => {
+  const f133316 = () => {
     let str = "connected";
     if (stateFromStores !== UserLinkStatus.ACTIVE) {
       let str2;
@@ -744,8 +744,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return link_status;
   });
-  [tmp3, tmp4] = _slicedToArray(react.useState(f133100), 2);
-  const tmp2 = _slicedToArray(react.useState(f133100), 2);
+  [tmp3, tmp4] = _slicedToArray(react.useState(f133316), 2);
+  const tmp2 = _slicedToArray(react.useState(f133316), 2);
   const tmp5 = _slicedToArray(react.useState(stateFromStores), 2);
   const first = tmp5[0];
   if (stateFromStores !== first) {

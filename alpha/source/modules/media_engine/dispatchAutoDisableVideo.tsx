@@ -1,12 +1,12 @@
-// Module ID: 13635
-// Function ID: 13636
+// Module ID: 13651
+// Function ID: 13652
 // Name: dispatchAutoDisableVideo
-// Dependencies: [4915, 584, 2]
+// Dependencies: [4921, 584, 2]
 // Exports: default
 
-// Module 13635 (dispatchAutoDisableVideo)
+// Module 13651 (dispatchAutoDisableVideo)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 4915 */;
+import Constants from "Constants" /* 4921 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;

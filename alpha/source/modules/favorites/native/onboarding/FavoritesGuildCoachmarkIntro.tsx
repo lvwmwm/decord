@@ -1,20 +1,20 @@
-// Module ID: 16254
-// Function ID: 16255
+// Module ID: 16294
+// Function ID: 16295
 // Name: FavoritesGuildCoachmarkIntro
-// Dependencies: [32, 19, 16225, 1085, 2048, 21, 558, 576, 4612, 10044, 16249, 1126, 3367, 16255, 9882, 2]
+// Dependencies: [32, 19, 16265, 1085, 2048, 21, 558, 576, 4618, 10057, 16289, 1126, 3395, 16295, 9895, 2]
 
-// Module 16254 (FavoritesGuildCoachmarkIntro)
+// Module 16294 (FavoritesGuildCoachmarkIntro)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import _modDef3367 from "module_3367" /* 3367 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10044 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16249 */;
+import _modDef3395 from "module_3395" /* 3395 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10057 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16289 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16225 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16265 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
   [tmp9, tmp10] = react.useState(tmp7);
   dependencyMap = tmp10;
   _slicedToArray(react.useState(tmp7), 2);
-  const tmpResult = markAsDismissed(4612);
+  const tmpResult = markAsDismissed(4618);
   class C {
     constructor() {
       return scrollPosition.get() <= 0;
@@ -76,10 +76,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
       obj.runOnJS(dependencyMap)(arg0);
     }
   };
-  fn2.__closure = { runOnJS: markAsDismissed(4612).runOnJS, setScrolledToTop: tmp10 };
+  fn2.__closure = { runOnJS: markAsDismissed(4618).runOnJS, setScrolledToTop: tmp10 };
   fn2.__workletHash = 13648062364539;
   fn2.__initData = __initData2;
-  ({ runOnJS: markAsDismissed(4612).runOnJS, setScrolledToTop: tmp10 });
+  ({ runOnJS: markAsDismissed(4618).runOnJS, setScrolledToTop: tmp10 });
   const animatedReaction = tmpResult.useAnimatedReaction(C, fn2);
   if (cResult[2] !== markAsDismissed) {
     class I {
@@ -126,9 +126,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
         markAsDismissed(ContentDismissActionType.TAKE_ACTION);
       }
     }
-    const stringResult = obj4.string(scrollPosition(3367)["bu/mLv"]);
+    const stringResult = obj4.string(scrollPosition(3395)["bu/mLv"]);
     const intl = tmp(1126).intl;
-    const stringResult1 = intl.string(scrollPosition(3367).kxQJ7q);
+    const stringResult1 = intl.string(scrollPosition(3395).kxQJ7q);
     cResult[6] = stringResult;
     cResult[7] = stringResult1;
     tmp15 = stringResult1;
@@ -151,7 +151,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
       }
     }
     const intl2 = tmp(1126).intl;
-    const stringResult2 = intl2.string(scrollPosition(3367)["vN/KQ9"]);
+    const stringResult2 = intl2.string(scrollPosition(3395)["vN/KQ9"]);
     cResult[8] = R;
     cResult[9] = stringResult2;
     tmp20 = stringResult2;
@@ -225,13 +225,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
     const obj = {
       visible,
       position: "bottom",
-      title: intl.string(_modDef3367["bu/mLv"]),
-      description: intl2.string(_modDef3367.kxQJ7q),
+      title: intl.string(_modDef3395["bu/mLv"]),
+      description: intl2.string(_modDef3395.kxQJ7q),
       onDismiss,
       renderImgComponent() {
         return closure_1_8(scrollPosition(visible[13]), {});
       },
-      buttonLabel: intl3.string(_modDef3367["vN/KQ9"]),
+      buttonLabel: intl3.string(_modDef3395["vN/KQ9"]),
       onButtonPress: callback1
     };
     intl = intl4.intl;

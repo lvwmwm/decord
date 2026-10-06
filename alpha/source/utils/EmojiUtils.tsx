@@ -1,21 +1,21 @@
-// Module ID: 4527
-// Function ID: 4528
+// Module ID: 4533
+// Function ID: 4534
 // Name: EmojiUtils
-// Dependencies: [5, 2055, 4509, 1377, 1085, 1380, 4526, 4528, 5643, 4501, 7411, 1481, 1402, 2]
+// Dependencies: [5, 2055, 4515, 1377, 1085, 1380, 4532, 4534, 5650, 4507, 7422, 1481, 1402, 2]
 // Exports: countEmoji, getAllEmojiNamesString, getEmojiColors, getEmojiUrl
 
-// Module 4527 (EmojiUtils)
+// Module 4533 (EmojiUtils)
 import Constants from "Constants" /* 1085 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
 import ImageUtils from "ImageUtils" /* 1481 */;
-import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4501 */;
-import EmojiTypes from "EmojiTypes" /* 4526 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4528 */;
-import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 5643 */;
-import EmojiUtilsPlatformedDefault from "EmojiUtilsPlatformed" /* 7411 */;
+import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4507 */;
+import EmojiTypes from "EmojiTypes" /* 4532 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4534 */;
+import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 5650 */;
+import EmojiUtilsPlatformedDefault from "EmojiUtilsPlatformed" /* 7422 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
 import UserStore from "UserStore" /* 1377 */;
 import EmojiConstants from "EmojiConstants" /* 1380 */;
 import size from "module_2" /* 2 */;

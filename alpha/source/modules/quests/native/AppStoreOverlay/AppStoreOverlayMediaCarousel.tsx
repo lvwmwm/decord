@@ -1,21 +1,21 @@
-// Module ID: 10928
-// Function ID: 10929
+// Module ID: 10941
+// Function ID: 10942
 // Name: AppStoreOverlayMediaCarousel
-// Dependencies: [32, 19, 17, 4879, 1096, 21, 587, 4890, 10929, 558, 576, 10930, 1126, 5974, 504, 7983, 8368, 7202, 7212, 6140, 2]
+// Dependencies: [32, 19, 17, 4885, 1096, 21, 587, 4896, 10942, 558, 576, 10943, 1126, 5981, 504, 7993, 8401, 7215, 7225, 6147, 2]
 
-// Module 10928 (AppStoreOverlayMediaCarousel)
+// Module 10941 (AppStoreOverlayMediaCarousel)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
-import AnalyticsActions from "AnalyticsActions" /* 7202 */;
-import AppStoreOverlayMediaSize from "AppStoreOverlayMediaSize" /* 10929 */;
-import openAppStoreOverlayMediaModal from "openAppStoreOverlayMediaModal" /* 10930 */;
+import AnalyticsActions from "AnalyticsActions" /* 7215 */;
+import AppStoreOverlayMediaSize from "AppStoreOverlayMediaSize" /* 10942 */;
+import openAppStoreOverlayMediaModal from "openAppStoreOverlayMediaModal" /* 10943 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 4885 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -555,9 +555,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCarouselScroll) =>
                 if (num5 !== current) {
                   const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.MEDIA, scrollingDirection: LEFT, carouselPosition: num5, carouselSize: tmp15 };
                   if (num5 > current) {
-                    LEFT = tmp12(7212).HorizontalScrollingDirection.RIGHT;
+                    LEFT = tmp12(7225).HorizontalScrollingDirection.RIGHT;
                   } else {
-                    LEFT = tmp12(7212).HorizontalScrollingDirection.LEFT;
+                    LEFT = tmp12(7225).HorizontalScrollingDirection.LEFT;
                   }
                   tmp(obj);
                   tmp11.current = num5;
@@ -771,9 +771,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCarouselScroll) =>
           if (num5 !== current) {
             const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.MEDIA, scrollingDirection: LEFT, carouselPosition: num5, carouselSize: tmp15 };
             if (num5 > current) {
-              LEFT = tmp12(7212).HorizontalScrollingDirection.RIGHT;
+              LEFT = tmp12(7225).HorizontalScrollingDirection.RIGHT;
             } else {
-              LEFT = tmp12(7212).HorizontalScrollingDirection.LEFT;
+              LEFT = tmp12(7225).HorizontalScrollingDirection.LEFT;
             }
             tmp(obj);
             tmp11.current = num5;

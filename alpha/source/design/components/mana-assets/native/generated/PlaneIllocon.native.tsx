@@ -1,13 +1,13 @@
-// Module ID: 18079
-// Function ID: 18080
+// Module ID: 18124
+// Function ID: 18125
 // Name: PlaneIllocon
-// Dependencies: [21, 558, 576, 12137, 5974, 2]
+// Dependencies: [21, 558, 576, 12152, 5981, 2]
 
-// Module 18079 (PlaneIllocon)
+// Module 18124 (PlaneIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import _modDef12137 from "module_12137" /* 12137 */;
+import FastImageDefault from "FastImage" /* 5981 */;
+import _modDef12152 from "module_12152" /* 12152 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef12137 };
+    const obj2 = { uri: _modDef12152 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num === undefined) {
     num = 64;
   }
-  const obj2 = { uri: _modDef12137 };
+  const obj2 = { uri: _modDef12152 };
   FastImageDefault;
   const items = [{ width: num, height: num }];
   return <tmp fadeDuration={0} source={obj2} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;

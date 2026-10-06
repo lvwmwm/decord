@@ -1,10 +1,10 @@
-// Module ID: 13001
-// Function ID: 13002
+// Module ID: 13020
+// Function ID: 13021
 // Name: useHandleBuyNow
-// Dependencies: [5, 32, 19, 1085, 3, 10750, 7052, 4854, 10813, 1615, 6820, 4543, 4568, 1126, 2]
+// Dependencies: [5, 32, 19, 1085, 3, 10763, 7065, 4860, 10826, 1615, 6830, 4549, 4574, 1126, 2]
 // Exports: default, useHandleBuyNow
 
-// Module 13001 (useHandleBuyNow)
+// Module 13020 (useHandleBuyNow)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -106,7 +106,7 @@ function useHandleBuyNow(product) {
     },
     orderId
   };
-  const tmp3 = onBuySettled(10750)(obj);
+  const tmp3 = onBuySettled(10763)(obj);
   react = tmp3;
   let obj2 = {
     handleBuyNow: react.useCallback(isBuying(function*(arg0, value) {

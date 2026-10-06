@@ -1,21 +1,21 @@
-// Module ID: 16741
-// Function ID: 16742
+// Module ID: 16762
+// Function ID: 16763
 // Name: ConjureShellGlow
-// Dependencies: [32, 19, 17, 4879, 1193, 21, 1369, 587, 683, 4890, 558, 576, 504, 4730, 4612, 4891, 5605, 16742, 6052, 2]
+// Dependencies: [32, 19, 17, 4885, 1193, 21, 1369, 587, 683, 4896, 558, 576, 504, 4736, 4618, 4897, 5612, 16763, 6059, 2]
 
-// Module 16741 (ConjureShellGlow)
+// Module 16762 (ConjureShellGlow)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import timing from "timing" /* 4897 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 4885 */;
 import ThemeStore from "ThemeStore" /* 1193 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

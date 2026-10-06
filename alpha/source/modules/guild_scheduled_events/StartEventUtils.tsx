@@ -1,10 +1,10 @@
-// Module ID: 9472
-// Function ID: 9473
+// Module ID: 9485
+// Function ID: 9486
 // Name: StartEventUtils
-// Dependencies: [5, 2055, 2051, 2074, 2057, 1085, 9213, 38, 8082, 9178, 2]
+// Dependencies: [5, 2055, 2051, 2074, 2057, 1085, 9248, 38, 8115, 9213, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 9472 (StartEventUtils)
+// Module 9485 (StartEventUtils)
 import Constants from "Constants" /* 1085 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -61,7 +61,7 @@ let obj = function _createStageChannelForEvent() {
               closure_4 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -267,7 +267,7 @@ obj = function _setEventAsActive() {
       if (closure_1 === undefined) {
         flag = false;
       }
-      return "Set";
+      return "Reflect";
     })();
     iter.next();
     return iter;

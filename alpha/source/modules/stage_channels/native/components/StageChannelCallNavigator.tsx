@@ -1,24 +1,24 @@
-// Module ID: 9157
-// Function ID: 9158
+// Module ID: 9192
+// Function ID: 9193
 // Name: StageChannelCallNavigator
-// Dependencies: [32, 19, 17, 1096, 21, 558, 576, 9158, 4612, 5597, 587, 9159, 9623, 9172, 9054, 9053, 7517, 9119, 5091, 9624, 9697, 4589, 9058, 9705, 9706, 9605, 9711, 9721, 9725, 9756, 9757, 4890, 9758, 9558, 2]
+// Dependencies: [32, 19, 17, 1096, 21, 558, 576, 9193, 4618, 5604, 587, 9194, 9636, 9207, 9090, 9089, 7528, 9154, 5097, 9637, 9710, 4595, 9094, 9718, 9719, 9618, 9724, 9734, 9738, 9769, 9770, 4896, 9771, 9571, 2]
 
-// Module 9157 (StageChannelCallNavigator)
+// Module 9192 (StageChannelCallNavigator)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5091 */;
-import spring from "spring" /* 5597 */;
-import MessageManagerDefault from "MessageManager" /* 7517 */;
-import participantHasVideoDefault from "participantHasVideo" /* 9119 */;
-import JoinStageViewDefault from "JoinStageView" /* 9623 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4618 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5097 */;
+import spring from "spring" /* 5604 */;
+import MessageManagerDefault from "MessageManager" /* 7528 */;
+import participantHasVideoDefault from "participantHasVideo" /* 9154 */;
+import JoinStageViewDefault from "JoinStageView" /* 9636 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,8 +31,8 @@ let metroImportAll;
 let metroRequire;
 let obj2;
 let tmp;
-const StageActionBarButtons = tmp(9558);
-const ThemeContextProvider_RootThemeContextProvider = tmp(9758);
+const StageActionBarButtons = tmp(9571);
+const ThemeContextProvider_RootThemeContextProvider = tmp(9771);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ StyleSheet: hasOwnProperty, View: metroRequire } = react_native);
@@ -280,11 +280,11 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     const obj = { opacity: withSpring(num, viewAnimationConfig) };
     return obj;
   };
-  const obj3 = showOverlay(4612);
-  fn.__closure = { withSpring: showOverlay(5597).withSpring, showOverlay, viewAnimationConfig };
+  const obj3 = showOverlay(4618);
+  fn.__closure = { withSpring: showOverlay(5604).withSpring, showOverlay, viewAnimationConfig };
   fn.__workletHash = 3866068723381;
   fn.__initData = __initData3;
-  ({ withSpring: showOverlay(5597).withSpring, showOverlay, viewAnimationConfig });
+  ({ withSpring: showOverlay(5604).withSpring, showOverlay, viewAnimationConfig });
   const animatedStyle = obj3.useAnimatedStyle(fn);
   const obj2 = react;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -351,7 +351,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   importDefault = undefined;
   channel = channel.channel;
   [showOverlay, importDefault] = react.useState(false);
-  let obj = showOverlay(4612);
+  let obj = showOverlay(4618);
   const fn = function c() {
     let num = 0;
     const withSpring = spring.withSpring;
@@ -362,10 +362,10 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     const obj = { opacity: withSpring(num, viewAnimationConfig) };
     return obj;
   };
-  fn.__closure = { withSpring: showOverlay(5597).withSpring, showOverlay, viewAnimationConfig };
+  fn.__closure = { withSpring: showOverlay(5604).withSpring, showOverlay, viewAnimationConfig };
   fn.__workletHash = 17555856853074;
   fn.__initData = __initData4;
-  ({ withSpring: showOverlay(5597).withSpring, showOverlay, viewAnimationConfig });
+  ({ withSpring: showOverlay(5604).withSpring, showOverlay, viewAnimationConfig });
   const animatedStyle = obj.useAnimatedStyle(fn);
   const effect = react.useEffect(() => {
     let closure_0;

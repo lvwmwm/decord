@@ -1,13 +1,13 @@
-// Module ID: 12892
-// Function ID: 12893
+// Module ID: 12911
+// Function ID: 12912
 // Name: StreamingTier10LargeBadge
-// Dependencies: [21, 558, 576, 12893, 5974, 2]
+// Dependencies: [21, 558, 576, 12912, 5981, 2]
 
-// Module 12892 (StreamingTier10LargeBadge)
+// Module 12911 (StreamingTier10LargeBadge)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import _modDef12893 from "module_12893" /* 12893 */;
+import FastImageDefault from "FastImage" /* 5981 */;
+import _modDef12912 from "module_12912" /* 12912 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef12893 };
+    const obj2 = { uri: _modDef12912 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num3 === undefined) {
     num3 = 1;
   }
-  const obj2 = { uri: _modDef12893 };
+  const obj2 = { uri: _modDef12912 };
   FastImageDefault;
   size = { width: num * num3, height: num2 * num3 };
   const items = [size];

@@ -1,11 +1,11 @@
-// Module ID: 11470
-// Function ID: 11471
+// Module ID: 11483
+// Function ID: 11484
 // Name: BanConfirmModal
-// Dependencies: [19, 21, 558, 576, 10660, 1126, 10661, 11463, 2]
+// Dependencies: [19, 21, 558, 576, 10673, 1126, 10674, 11476, 2]
 
-// Module 11470 (BanConfirmModal)
+// Module 11483 (BanConfirmModal)
 import Fragment from "Fragment" /* 21 */;
-import BanConfirmDefault from "BanConfirm" /* 11463 */;
+import BanConfirmDefault from "BanConfirm" /* 11476 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

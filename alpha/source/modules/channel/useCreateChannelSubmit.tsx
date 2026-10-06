@@ -1,10 +1,10 @@
-// Module ID: 9212
-// Function ID: 9213
+// Module ID: 9247
+// Function ID: 9248
 // Name: useCreateChannelSubmit
-// Dependencies: [5, 32, 19, 1085, 1985, 1097, 9213, 4729, 1126, 2]
+// Dependencies: [5, 32, 19, 1085, 1985, 1097, 9248, 4735, 1126, 2]
 // Exports: default
 
-// Module 9212 (useCreateChannelSubmit)
+// Module 9247 (useCreateChannelSubmit)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -82,7 +82,7 @@ export default function useCreateChannelSubmit(arg0) {
               guild_id = undefined;
               c7 = 1;
               applicationId = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

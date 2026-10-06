@@ -1,23 +1,23 @@
-// Module ID: 15631
-// Function ID: 15632
+// Module ID: 15645
+// Function ID: 15646
 // Name: BuildOverrideActiveSetting
-// Dependencies: [11082, 21, 14406, 558, 576, 11399, 504, 14650, 15625, 11129, 14778, 2]
+// Dependencies: [11095, 21, 14422, 558, 576, 11412, 504, 14666, 15639, 11142, 14794, 2]
 
-// Module 15631 (BuildOverrideActiveSetting)
+// Module 15645 (BuildOverrideActiveSetting)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11399 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14406 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14650 */;
-import RefreshIcon from "RefreshIcon" /* 14778 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11082 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11412 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14422 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14666 */;
+import RefreshIcon from "RefreshIcon" /* 14794 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11095 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 11142 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const DevToolsContent = tmp(15625);
+const DevToolsContent = tmp(15639);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {

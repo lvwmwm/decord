@@ -1,15 +1,15 @@
-// Module ID: 12387
-// Function ID: 12388
+// Module ID: 12402
+// Function ID: 12403
 // Name: InviteRolesList
-// Dependencies: [19, 17, 21, 4890, 558, 576, 2110, 4886, 1126, 10685, 5593, 2]
+// Dependencies: [19, 17, 21, 4896, 558, 576, 2110, 4892, 1126, 10698, 5600, 2]
 
-// Module 12387 (InviteRolesList)
+// Module 12402 (InviteRolesList)
 import react_native from "react-native" /* 17 */;
 import GuildRoleUtils from "GuildRoleUtils" /* 2110 */;
-import RolePillDefault from "RolePill" /* 10685 */;
+import RolePillDefault from "RolePill" /* 10698 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -95,7 +95,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
             }
             const obj2 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(guild(1126).t.stcSfI) };
-            const Text = tmp2(4886).Text;
+            const Text = tmp2(4892).Text;
             intl = tmp2(1126).intl;
             const tmp14 = closure_5(Text, obj2);
             cResult[6] = tmp14;
@@ -133,7 +133,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
               const obj3 = { spacing: 4, style, children: items1 };
               items1 = [tmp13, tmp20];
-              const tmp26 = closure_6(guild(5593).Stack, obj3);
+              const tmp26 = closure_6(guild(5600).Stack, obj3);
               cResult[15] = style;
               cResult[16] = tmp20;
               cResult[17] = tmp26;
@@ -220,9 +220,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = null;
     if (0 !== memo.length) {
       let obj = { spacing: 4, style, children: items1 };
-      const Stack = guild(5593).Stack;
+      const Stack = guild(5600).Stack;
       const obj2 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(guild(1126).t.stcSfI) };
-      const Text = guild(4886).Text;
+      const Text = guild(4892).Text;
       intl = guild(1126).intl;
       items1 = [closure_5(Text, obj2), ];
       const obj3 = {

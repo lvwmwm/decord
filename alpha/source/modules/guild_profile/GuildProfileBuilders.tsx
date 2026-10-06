@@ -1,15 +1,15 @@
-// Module ID: 5938
-// Function ID: 5939
+// Module ID: 5945
+// Function ID: 5946
 // Name: GuildProfileBuilders
-// Dependencies: [5638, 4523, 5939, 1375, 5940, 2]
+// Dependencies: [5645, 4529, 5946, 1375, 5947, 2]
 // Exports: buildGuildProfileFromInvite, buildGuildProfileUpdateForServer, buildTopGamesFromServer
 
-// Module 5938 (GuildProfileBuilders)
+// Module 5945 (GuildProfileBuilders)
 import GlobalUtils from "GlobalUtils" /* 1375 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4523 */;
-import EmojiStore from "EmojiStore" /* 5638 */;
-import GuildProfileLimits from "GuildProfileLimits" /* 5939 */;
-import GuildProfileTypes from "GuildProfileTypes" /* 5940 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4529 */;
+import EmojiStore from "EmojiStore" /* 5645 */;
+import GuildProfileLimits from "GuildProfileLimits" /* 5946 */;
+import GuildProfileTypes from "GuildProfileTypes" /* 5947 */;
 import size from "module_2" /* 2 */;
 
 let label;

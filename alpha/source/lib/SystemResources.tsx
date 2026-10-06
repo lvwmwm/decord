@@ -1,12 +1,12 @@
-// Module ID: 7239
-// Function ID: 7240
+// Module ID: 7252
+// Function ID: 7253
 // Name: SystemResources
-// Dependencies: [5, 7233, 1363, 7240, 2]
+// Dependencies: [5, 7246, 1363, 7253, 2]
 
-// Module 7239 (SystemResources)
+// Module 7252 (SystemResources)
 import ProcessUtilsDefault from "ProcessUtils" /* 1363 */;
-import Histogram from "Histogram" /* 7233 */;
-import DeviceState from "DeviceState" /* 7240 */;
+import Histogram from "Histogram" /* 7246 */;
+import DeviceState from "DeviceState" /* 7253 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

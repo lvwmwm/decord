@@ -1,20 +1,20 @@
-// Module ID: 17393
-// Function ID: 17394
+// Module ID: 17422
+// Function ID: 17423
 // Name: SimpleGuildContainer
-// Dependencies: [19, 17, 21, 4890, 558, 576, 7502, 16274, 587, 17392, 4580, 17394, 4612, 5597, 2]
+// Dependencies: [19, 17, 21, 4896, 558, 576, 7513, 16314, 587, 17421, 4586, 17423, 4618, 5604, 2]
 // Exports: SimpleGuildContainer
 
-// Module 17393 (SimpleGuildContainer)
+// Module 17422 (SimpleGuildContainer)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import spring from "spring" /* 5597 */;
-import MaskedBadgeDefault from "MaskedBadge" /* 7502 */;
-import GuildsBarActivityIndicatorDefault from "GuildsBarActivityIndicator" /* 16274 */;
-import CutoutImageDefault from "CutoutImage" /* 17394 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import spring from "spring" /* 5604 */;
+import MaskedBadgeDefault from "MaskedBadge" /* 7513 */;
+import GuildsBarActivityIndicatorDefault from "GuildsBarActivityIndicator" /* 16314 */;
+import CutoutImageDefault from "CutoutImage" /* 17423 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const GuildsBarActivityIndicator = tmp(16274);
+const GuildsBarActivityIndicator = tmp(16314);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let c9 = 48;

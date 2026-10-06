@@ -1,12 +1,12 @@
-// Module ID: 7905
-// Function ID: 7906
-// Dependencies: [1085, 558, 576, 4589, 2]
+// Module ID: 7916
+// Function ID: 7917
+// Dependencies: [1085, 558, 576, 4595, 2]
 // Exports: getIllustrationSource
 
-// Module 7905
+// Module 7916
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 4589 */;
+import native from "native" /* 4595 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

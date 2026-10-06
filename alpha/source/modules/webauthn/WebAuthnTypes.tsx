@@ -1,9 +1,9 @@
-// Module ID: 6438
-// Function ID: 6439
+// Module ID: 6445
+// Function ID: 6446
 // Name: WebAuthnTypes
 // Dependencies: [2]
 
-// Module 6438 (WebAuthnTypes)
+// Module 6445 (WebAuthnTypes)
 import size from "module_2" /* 2 */;
 
 class IgnorableWebAuthnError extends Error {

@@ -1,11 +1,11 @@
-// Module ID: 16541
-// Function ID: 16542
+// Module ID: 16581
+// Function ID: 16582
 // Name: usePaginatedMemberApplications
-// Dependencies: [5, 32, 19, 4702, 11, 5931, 5312, 2]
+// Dependencies: [5, 32, 19, 4708, 11, 5938, 5319, 2]
 // Exports: usePaginatedMemberApplications
 
-// Module 16541 (usePaginatedMemberApplications)
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4702 */;
+// Module 16581 (usePaginatedMemberApplications)
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4708 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

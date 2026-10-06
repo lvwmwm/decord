@@ -1,17 +1,17 @@
-// Module ID: 17240
-// Function ID: 17241
+// Module ID: 17269
+// Function ID: 17270
 // Name: useSoundboardSoundLock
-// Dependencies: [19, 1377, 5682, 558, 576, 504, 6847, 4528, 17241, 7480, 7483, 4568, 4825, 1126, 2]
+// Dependencies: [19, 1377, 5689, 558, 576, 504, 6857, 4534, 17270, 7491, 7494, 4574, 4831, 1126, 2]
 
-// Module 17240 (useSoundboardSoundLock)
+// Module 17269 (useSoundboardSoundLock)
 import intl3 from "intl" /* 1126 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4528 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4825 */;
-import SoundboardConstants from "SoundboardConstants" /* 5682 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 7480 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7483 */;
-import SoundboardSoundPreviewMenuExperiment2 from "SoundboardSoundPreviewMenuExperiment" /* 17241 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4534 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
+import AssetRegistryDefault from "AssetRegistry" /* 4831 */;
+import SoundboardConstants from "SoundboardConstants" /* 5689 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 7491 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7494 */;
+import SoundboardSoundPreviewMenuExperiment2 from "SoundboardSoundPreviewMenuExperiment" /* 17270 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -248,7 +248,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, guild_id)
       tmp11 = tmp13;
     }
   }
-  const tmpResult2 = tmp(6847);
+  const tmpResult2 = tmp(6857);
   const result1 = tmpResult2.canUseSoundboardSound(stateFromStores, guildId, guild_id);
   cResult[2] = guild_id;
   cResult[3] = stateFromStores;

@@ -1,15 +1,15 @@
-// Module ID: 16515
-// Function ID: 16516
+// Module ID: 16555
+// Function ID: 16556
 // Name: OnboardingHomeResourcesSheet
-// Dependencies: [19, 16513, 21, 558, 576, 4580, 587, 16514, 7521, 4854, 1402, 6697, 5974, 6701, 2]
+// Dependencies: [19, 16553, 21, 558, 576, 4586, 587, 16554, 7532, 4860, 1402, 6704, 5981, 6708, 2]
 
-// Module 16515 (OnboardingHomeResourcesSheet)
+// Module 16555 (OnboardingHomeResourcesSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 7521 */;
-import OnboardingHomeConstants from "OnboardingHomeConstants" /* 16513 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 16514 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 7532 */;
+import OnboardingHomeConstants from "OnboardingHomeConstants" /* 16553 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 16554 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -28,9 +28,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let obj = guildId(576);
   const cResult = obj.c(11);
   guildId = guildId.guildId;
-  let obj2 = guildId(4580);
+  let obj2 = guildId(4586);
   token = obj2.useToken(token(587).modules.mobile.TABLE_ROW_ICON_SIZE);
-  const arr = token(16514)(guildId);
+  const arr = token(16554)(guildId);
   if (cResult[0] !== guildId) {
     const fn = function l(channelId) {
       const obj = GuildOnboardingHomeActionCreators;
@@ -52,7 +52,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         tmp6 = cResult[5];
       }
       if (cResult[9] !== tmp6) {
-        const ActionSheet = tmp(6701).ActionSheet;
+        const ActionSheet = tmp(6708).ActionSheet;
         let obj4 = { hasIcons: true, children: tmp6 };
         const tmp11 = <ActionSheet>{null}</ActionSheet>;
         cResult[9] = tmp6;
@@ -113,10 +113,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
 }) : ((guildId) => {
   let closure_1;
   guildId = guildId.guildId;
-  let obj = guildId(4580);
+  let obj = guildId(4586);
   importDefault = obj.useToken(nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE);
   const arr = useResourceChannelsDefault(guildId);
-  const ActionSheet = guildId(6701).ActionSheet;
+  const ActionSheet = guildId(6708).ActionSheet;
   let obj3 = {
     hasIcons: true,
     children: arr.map((label) => {
@@ -141,7 +141,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }} arrow />;
     })
   };
-  const Group = guildId(6697).ActionSheetRow.Group;
+  const Group = guildId(6704).ActionSheetRow.Group;
   return <ActionSheet>{null}</ActionSheet>;
 });
 let size = size_mod;

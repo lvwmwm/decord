@@ -1,20 +1,20 @@
-// Module ID: 9665
-// Function ID: 9666
+// Module ID: 9678
+// Function ID: 9679
 // Name: UserSettingsVoiceOutputOptions
-// Dependencies: [19, 17, 4912, 502, 1999, 4915, 21, 4890, 558, 576, 504, 38, 9306, 1126, 9666, 5993, 9657, 2]
+// Dependencies: [19, 17, 4918, 502, 1999, 4921, 21, 4896, 558, 576, 504, 38, 8079, 1126, 9679, 6000, 9670, 2]
 
-// Module 9665 (UserSettingsVoiceOutputOptions)
+// Module 9678 (UserSettingsVoiceOutputOptions)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
-import Constants from "Constants" /* 4915 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9306 */;
-import VolumeSliderDefault from "VolumeSlider" /* 9666 */;
+import Constants from "Constants" /* 4921 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 8079 */;
+import VolumeSliderDefault from "VolumeSlider" /* 9679 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4918 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -235,7 +235,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
         }
         const obj2 = { label: intl2.string(tmp(1126).t.pEAl4b), subLabel: closure_9(View, obj3) };
-        const TableRow2 = tmp(5993).TableRow;
+        const TableRow2 = tmp(6000).TableRow;
         intl2 = tmp(1126).intl;
         obj3 = { style: tmp4.slider, children: closure_9(tmp37, obj4) };
         obj4 = { value: stateFromStores2, onValueChange: tmp18, accessibilityLabel: intl3.string(tmp(1126).t.pEAl4b) };
@@ -251,7 +251,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const obj7 = { label: tmp21, subLabel: closure_9(View, obj8) };
     obj8 = { style: slider, children: tmp26 };
-    const TableRow = tmp(5993).TableRow;
+    const TableRow = tmp(6000).TableRow;
     cResult[16] = tmp4.slider;
     cResult[17] = tmp26;
     cResult[18] = closure_9(TableRow, obj7);
@@ -311,10 +311,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     obj.setLocalVolume(stateFromStores1.ownerId, arg0, MediaEngineContextTypes.STREAM);
   }, items3);
   const obj4 = { title: intl.string(stateFromStores1(1126).t.UXxPGB), hasIcons: false, children: items4 };
-  const UserSettingsTableRowGroup = stateFromStores1(9657).UserSettingsTableRowGroup;
+  const UserSettingsTableRowGroup = stateFromStores1(9670).UserSettingsTableRowGroup;
   intl = stateFromStores1(1126).intl;
   const obj5 = { label: intl2.string(stateFromStores1(1126).t.xPHVBs), subLabel: closure_9(View, obj6) };
-  const TableRow = stateFromStores1(5993).TableRow;
+  const TableRow = stateFromStores1(6000).TableRow;
   intl2 = stateFromStores1(1126).intl;
   obj6 = { style: tmp.slider, children: closure_9(tmp12, obj7) };
   obj7 = {
@@ -334,7 +334,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp8 = closure_10;
   if (tmp9Result) {
     const obj8 = { label: intl4.string(tmp2(1126).t.pEAl4b), subLabel: closure_9(tmp10, obj9) };
-    const TableRow2 = tmp2(5993).TableRow;
+    const TableRow2 = tmp2(6000).TableRow;
     intl4 = tmp2(1126).intl;
     obj9 = { style: tmp.slider, children: closure_9(tmp11Result, obj10) };
     obj10 = { value: stateFromStores2, onValueChange: callback, accessibilityLabel: intl5.string(tmp2(1126).t.pEAl4b) };

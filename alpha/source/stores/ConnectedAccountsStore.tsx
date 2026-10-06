@@ -1,21 +1,21 @@
-// Module ID: 5440
-// Function ID: 5441
+// Module ID: 5447
+// Function ID: 5448
 // Name: ConnectedAccountsStore
-// Dependencies: [5441, 1085, 5442, 2066, 5565, 5566, 504, 584, 2]
+// Dependencies: [5448, 1085, 5449, 2066, 5572, 5573, 504, 584, 2]
 
-// Module 5440 (ConnectedAccountsStore)
+// Module 5447 (ConnectedAccountsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import PlatformsDefault from "Platforms" /* 5442 */;
-import fetchConnectedAccounts from "fetchConnectedAccounts" /* 5565 */;
-import postConnectionCallback from "postConnectionCallback" /* 5566 */;
-import ConnectedAccountRecord from "ConnectedAccountRecord" /* 5441 */;
+import PlatformsDefault from "Platforms" /* 5449 */;
+import fetchConnectedAccounts from "fetchConnectedAccounts" /* 5572 */;
+import postConnectionCallback from "postConnectionCallback" /* 5573 */;
+import ConnectedAccountRecord from "ConnectedAccountRecord" /* 5448 */;
 import size from "module_2" /* 2 */;
 
 let closure_6, closure_7, integrations;
 
-const f90434 = (type) => {
+const f90570 = (type) => {
   const hasItem = set.has(type.type);
   let isSupportedResult = !hasItem;
   if (isSupportedResult) {
@@ -24,7 +24,7 @@ const f90434 = (type) => {
   }
   return isSupportedResult;
 };
-const f90435 = (type) => set.has(type.type);
+const f90571 = (type) => set.has(type.type);
 const items = [Constants.PlatformTypes.CONTACTS];
 const set = new Set(items);
 let c5 = true;
@@ -82,8 +82,8 @@ let obj = {
       const tmp = new ConnectedAccountRecord(item);
       return tmp;
     });
-    closure_6 = mapped.filter(f90434);
-    closure_7 = mapped.filter(f90435);
+    closure_6 = mapped.filter(f90570);
+    closure_7 = mapped.filter(f90571);
     c5 = false;
   },
   USER_CONNECTIONS_UPDATE: function handleConnectionsUpdate(local) {
@@ -109,8 +109,8 @@ let obj = {
           const tmp2 = new ConnectedAccountRecord(obj);
           return tmp2;
         });
-        closure_6 = mapped.filter(f90434);
-        closure_7 = mapped.filter(f90435);
+        closure_6 = mapped.filter(f90570);
+        closure_7 = mapped.filter(f90571);
         c5 = false;
       }
     }

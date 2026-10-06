@@ -1,10 +1,10 @@
-// Module ID: 6012
-// Function ID: 6013
+// Module ID: 6019
+// Function ID: 6020
 // Name: useDesignToggle
-// Dependencies: [6013, 558, 576, 504, 2]
+// Dependencies: [6020, 558, 576, 504, 2]
 
-// Module 6012 (useDesignToggle)
-import DesignTogglesStore from "DesignTogglesStore" /* 6013 */;
+// Module 6019 (useDesignToggle)
+import DesignTogglesStore from "DesignTogglesStore" /* 6020 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,21 +1,21 @@
-// Module ID: 11788
-// Function ID: 11789
+// Module ID: 11802
+// Function ID: 11803
 // Name: AppLauncherChoicesActionSheet
-// Dependencies: [32, 109, 19, 17, 1489, 21, 4890, 587, 558, 576, 8371, 1618, 1369, 5621, 8895, 4854, 6433, 11789, 11791, 2]
+// Dependencies: [32, 109, 19, 17, 1489, 21, 4896, 587, 558, 576, 8404, 1618, 1369, 5628, 8924, 4860, 6440, 11803, 11805, 2]
 
-// Module 11788 (AppLauncherChoicesActionSheet)
+// Module 11802 (AppLauncherChoicesActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5621 */;
-import Form from "Form" /* 8895 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5628 */;
+import Form from "Form" /* 8924 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,8 +28,8 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const defaultMVCPConfig = tmp(8371);
-const f109170 = (choice, originalIndex) => ({ choice, originalIndex });
+const defaultMVCPConfig = tmp(8404);
+const f109323 = (choice, originalIndex) => ({ choice, originalIndex });
 let length = ["scrollable"];
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
@@ -137,7 +137,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
       if (choices == null) {
         choices = [];
       }
-      return choices.map(f109170);
+      return choices.map(f109323);
     };
     cResult[2] = option.choices;
     cResult[3] = fn;
@@ -281,7 +281,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
     if (choices == null) {
       choices = [];
     }
-    return choices.map(f109170);
+    return choices.map(f109323);
   });
   [first1, react] = react.useState(initChoiceIndex);
   let items = [option.choices];
@@ -353,15 +353,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
   let obj2 = { option, startExpanded: tmp13, onDismiss, scrollable: tmp13, children: items3 };
   let tmp16 = tmp13;
   length = data.length;
-  const AppLauncherCommandOptionActionSheet = tmp3(11791).AppLauncherCommandOptionActionSheet;
+  const AppLauncherCommandOptionActionSheet = tmp3(11805).AppLauncherCommandOptionActionSheet;
   const tmp15 = closure_10;
   if (tmp13) {
     const obj3 = { onChange: callback };
-    tmp16 = closure_9(tmp3(11789).AppLauncherListSearchBar, obj3);
+    tmp16 = closure_9(tmp3(11803).AppLauncherListSearchBar, obj3);
   }
   items3 = [tmp16, ];
   if (0 === length) {
-    tmp20 = closure_9(tmp3(11789).AppLauncherListEmptyState, {});
+    tmp20 = closure_9(tmp3(11803).AppLauncherListEmptyState, {});
   } else {
     const obj4 = {
       scrollable: tmp13,

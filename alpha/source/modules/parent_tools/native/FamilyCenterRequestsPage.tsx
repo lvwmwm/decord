@@ -1,27 +1,27 @@
-// Module ID: 14720
-// Function ID: 14721
+// Module ID: 14736
+// Function ID: 14737
 // Name: FamilyCenterRequestsPage
-// Dependencies: [19, 17, 7049, 9784, 21, 4890, 587, 558, 576, 8295, 8296, 1126, 2493, 11531, 4886, 9827, 14681, 14721, 14723, 14732, 6619, 2]
+// Dependencies: [19, 17, 7062, 9797, 21, 4896, 587, 558, 576, 8328, 8329, 1126, 2521, 11544, 4892, 9840, 14697, 14737, 14739, 14748, 6626, 2]
 
-// Module 14720 (FamilyCenterRequestsPage)
+// Module 14736 (FamilyCenterRequestsPage)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef2493 from "module_2493" /* 2493 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import useUserLinks from "useUserLinks" /* 8295 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8296 */;
-import Constants from "Constants" /* 9784 */;
-import useHelpLineVisibility from "useHelpLineVisibility" /* 9827 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 11531 */;
-import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 14681 */;
-import FamilyCenterLinkingBannerDefault from "FamilyCenterLinkingBanner" /* 14721 */;
-import FamilyCenterAcceptedLinksDefault from "FamilyCenterAcceptedLinks" /* 14723 */;
-import FamilyCenterPendingLinksDefault from "FamilyCenterPendingLinks" /* 14732 */;
+import _modDef2521 from "module_2521" /* 2521 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import useUserLinks from "useUserLinks" /* 8328 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8329 */;
+import Constants from "Constants" /* 9797 */;
+import useHelpLineVisibility from "useHelpLineVisibility" /* 9840 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 11544 */;
+import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 14697 */;
+import FamilyCenterLinkingBannerDefault from "FamilyCenterLinkingBanner" /* 14737 */;
+import FamilyCenterAcceptedLinksDefault from "FamilyCenterAcceptedLinks" /* 14739 */;
+import FamilyCenterPendingLinksDefault from "FamilyCenterPendingLinks" /* 14748 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7049 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7062 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let obj4;
 let obj5;
 let obj7;
 let tmp;
-const common_SafeAreaView = tmp(6619);
+const common_SafeAreaView = tmp(6626);
 ({ View: c3, ScrollView: closure_4 } = react_native);
 ({ MAX_PARENT_TO_TEEN_ACTIVE_CONNECTIONS: hasOwnProperty, MAX_TEEN_TO_PARENT_ACTIVE_CONNECTIONS: metroRequire } = FamilyCenterConstants);
 const THROUGHLINE_URL = Constants.THROUGHLINE_URL;
@@ -58,7 +58,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] !== tmp7) {
     const intl = tmp(1126).intl;
     const obj3 = { maxConnections: tmp7 };
-    const formatToPlainStringResult = intl.formatToPlainString(_modDef2493["1/PzIj"], obj3);
+    const formatToPlainStringResult = intl.formatToPlainString(_modDef2521["1/PzIj"], obj3);
     cResult[0] = tmp7;
     cResult[1] = formatToPlainStringResult;
     tmp8 = formatToPlainStringResult;
@@ -68,7 +68,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[2] !== tmp7) {
     const intl2 = tmp(1126).intl;
     const obj4 = { maxConnections: tmp7 };
-    const formatToPlainStringResult1 = intl2.formatToPlainString(_modDef2493.RcTgiE, obj4);
+    const formatToPlainStringResult1 = intl2.formatToPlainString(_modDef2521.RcTgiE, obj4);
     cResult[2] = tmp7;
     cResult[3] = formatToPlainStringResult1;
     tmp10 = formatToPlainStringResult1;
@@ -112,7 +112,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp6 = useIsInAdultAgeGroupDefault() ? hasOwnProperty : metroRequire;
   useAgeSpecificText;
   const intl = tmp2(1126).intl;
-  intl.formatToPlainString(_modDef2493["1/PzIj"], { maxConnections: tmp6 });
+  intl.formatToPlainString(_modDef2521["1/PzIj"], { maxConnections: tmp6 });
   const intl2 = tmp2(1126).intl;
   let tmp10 = null;
   if (hasMaxConnections) {
@@ -156,7 +156,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       ({ container, supportHeader } = tmp4);
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
         const intl3 = tmp(1126).intl;
-        const stringResult = intl3.string(_modDef2493["7/tVhv"]);
+        const stringResult = intl3.string(_modDef2521["7/tVhv"]);
         cResult[3] = stringResult;
         tmp13 = stringResult;
       } else {
@@ -201,13 +201,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (shouldShowHelplineLink) {
     const intl2 = tmp(1126).intl;
-    formatResult = intl2.format(_modDef2493["KOwsf/"], { helpLink: "https://support.discord.com/hc/articles/7925648993943-Crisis-Text-Line" });
+    formatResult = intl2.format(_modDef2521["KOwsf/"], { helpLink: "https://support.discord.com/hc/articles/7925648993943-Crisis-Text-Line" });
   } else {
     formatResult = null;
     if (shouldShowThroughlineLink) {
       const intl = tmp(1126).intl;
       const obj7 = { helpLink: THROUGHLINE_URL };
-      formatResult = intl.format(_modDef2493["6tsC8u"], obj7);
+      formatResult = intl.format(_modDef2521["6tsC8u"], obj7);
     }
   }
   cResult[0] = shouldShowHelplineLink;
@@ -224,20 +224,20 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   useHelpLineVisibility;
   if (shouldShowHelplineLink) {
     const intl2 = tmp2(1126).intl;
-    formatResult = intl2.format(_modDef2493["KOwsf/"], { helpLink: "https://support.discord.com/hc/articles/7925648993943-Crisis-Text-Line" });
+    formatResult = intl2.format(_modDef2521["KOwsf/"], { helpLink: "https://support.discord.com/hc/articles/7925648993943-Crisis-Text-Line" });
   } else {
     formatResult = null;
     if (tmp6) {
       const intl = tmp2(1126).intl;
       const obj2 = { helpLink: THROUGHLINE_URL };
-      formatResult = intl.format(_modDef2493["6tsC8u"], obj2);
+      formatResult = intl.format(_modDef2521["6tsC8u"], obj2);
     }
   }
   let tmp11 = null;
   if (null != formatResult) {
     const obj3 = { style: tmp.container, children: items };
-    const obj4 = { style: tmp.supportHeader, variant: "heading-sm/semibold", children: intl3.string(_modDef2493["7/tVhv"]) };
-    const Text = tmp2(4886).Text;
+    const obj4 = { style: tmp.supportHeader, variant: "heading-sm/semibold", children: intl3.string(_modDef2521["7/tVhv"]) };
+    const Text = tmp2(4892).Text;
     intl3 = tmp2(1126).intl;
     items = [metroImportAll(Text, obj4), ];
     const obj5 = { variant: "text-xs/medium", color: "text-muted", children: formatResult };

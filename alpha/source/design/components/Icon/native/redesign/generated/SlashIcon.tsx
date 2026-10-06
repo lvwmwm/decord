@@ -1,14 +1,14 @@
-// Module ID: 17015
-// Function ID: 17016
+// Module ID: 17041
+// Function ID: 17042
 // Name: SlashIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 17016, 4579, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 17042, 4585, 2]
 
-// Module 17015 (SlashIcon)
+// Module 17041 (SlashIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4579 */;
-import AssetRegistry from "AssetRegistry" /* 17016 */;
+import BaseIconImage2 from "BaseIconImage" /* 4585 */;
+import AssetRegistry from "AssetRegistry" /* 17042 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4579).BaseIconImage;
+  const BaseIconImage = tmp(4585).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

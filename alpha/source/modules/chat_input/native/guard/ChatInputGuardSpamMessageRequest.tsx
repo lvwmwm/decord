@@ -1,9 +1,9 @@
-// Module ID: 12091
-// Function ID: 12092
+// Module ID: 12106
+// Function ID: 12107
 // Name: ChatInputGuardSpamMessageRequest
-// Dependencies: [19, 1377, 21, 558, 576, 1490, 504, 12092, 4568, 1126, 4807, 12084, 4901, 12090, 2]
+// Dependencies: [19, 1377, 21, 558, 576, 1490, 504, 12107, 4574, 1126, 4813, 12099, 4907, 12105, 2]
 
-// Module 12091 (ChatInputGuardSpamMessageRequest)
+// Module 12106 (ChatInputGuardSpamMessageRequest)
 import Fragment from "Fragment" /* 21 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1377 */;
@@ -157,13 +157,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   const items = [c4];
   const obj2 = channel(504);
   const stateFromStores = obj2.useStateFromStores(items, () => UserStore.getUser(channel.getRecipientId()));
-  const obj3 = channel(12092);
+  const obj3 = channel(12107);
   dependencyMap = obj3.useLongestChannelMessageBeforeReply(channel.id, channel.getRecipientId());
   const items1 = [navigation];
   const callback = react.useCallback(() => {
     navigation.pop();
   }, items1);
-  const obj4 = channel(12084);
+  const obj4 = channel(12099);
   const obj5 = {
     user: stateFromStores,
     onError() {
@@ -202,7 +202,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     buttonSecondaryDisabled: isRejectLoading || isUserProfileLoading || isOptimisticRejected,
     buttonSecondaryLoading: isUserProfileLoading
   };
-  const tmp9 = navigation(12090);
+  const tmp9 = navigation(12105);
   intl = tmp(1126).intl;
   intl2 = tmp(1126).intl;
   intl3 = tmp(1126).intl;

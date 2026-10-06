@@ -1,16 +1,16 @@
-// Module ID: 13537
-// Function ID: 13538
+// Module ID: 13553
+// Function ID: 13554
 // Name: ProgramRewardsUtils
-// Dependencies: [1377, 1379, 4302, 13538, 13541, 558, 13542, 4528, 2]
+// Dependencies: [1377, 1379, 4308, 13554, 13557, 558, 13558, 4534, 2]
 // Exports: canFetchAnyProgramReward, canFetchNitroProgramReward, canFetchXboxProgramReward, hasNecessaryPremiumSubscriptionStatus, isEligibleForProgramReward, isProgramRewardStale
 
-// Module 13537 (ProgramRewardsUtils)
+// Module 13553 (ProgramRewardsUtils)
 import PremiumConstants from "PremiumConstants" /* 1379 */;
-import isPastDefault from "isPast" /* 4302 */;
-import PremiumUtils from "PremiumUtils" /* 4528 */;
-import ProgramRewardsTypes from "ProgramRewardsTypes" /* 13538 */;
-import PremiumRewardsOrbsExperiment from "PremiumRewardsOrbsExperiment" /* 13541 */;
-import useHasXboxMonthlyOrbsPerk from "useHasXboxMonthlyOrbsPerk" /* 13542 */;
+import isPastDefault from "isPast" /* 4308 */;
+import PremiumUtils from "PremiumUtils" /* 4534 */;
+import ProgramRewardsTypes from "ProgramRewardsTypes" /* 13554 */;
+import PremiumRewardsOrbsExperiment from "PremiumRewardsOrbsExperiment" /* 13557 */;
+import useHasXboxMonthlyOrbsPerk from "useHasXboxMonthlyOrbsPerk" /* 13558 */;
 import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

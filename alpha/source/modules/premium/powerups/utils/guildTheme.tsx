@@ -1,13 +1,13 @@
-// Module ID: 12158
-// Function ID: 12159
+// Module ID: 12173
+// Function ID: 12174
 // Name: guildTheme
-// Dependencies: [4767, 4768, 558, 576, 504, 4771, 12159, 4773, 2]
+// Dependencies: [4773, 4774, 558, 576, 504, 4777, 12174, 4779, 2]
 // Exports: shouldShowGuildThemeRollback
 
-// Module 12158 (guildTheme)
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4768 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12159 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4767 */;
+// Module 12173 (guildTheme)
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4774 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12174 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4773 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   let tmp8;
   if (stateFromStores != null) {
-    tmp8 = stateFromStores.allPowerups[tmp(undefined, 4771).GUILD_POWERUP_GUILD_THEME_SKU_ID];
+    tmp8 = stateFromStores.allPowerups[tmp(undefined, 4777).GUILD_POWERUP_GUILD_THEME_SKU_ID];
   }
   const tmp9 = usePowerupActiveStatusDefault(arg0, tmp8);
   const tmpResult2 = require("ServerThemeExperiment");
@@ -84,7 +84,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   const stateFromStores = obj.useStateFromStores(items, () => GuildPowerupsStore.getStateForGuild(closure_0));
   let tmp4;
   if (stateFromStores != null) {
-    tmp4 = stateFromStores.allPowerups[tmp(undefined, 4771).GUILD_POWERUP_GUILD_THEME_SKU_ID];
+    tmp4 = stateFromStores.allPowerups[tmp(undefined, 4777).GUILD_POWERUP_GUILD_THEME_SKU_ID];
   }
   const tmp5 = usePowerupActiveStatusDefault(arg0, tmp4);
   const tmpResult = require("ServerThemeExperiment");

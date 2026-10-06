@@ -1,18 +1,18 @@
-// Module ID: 11461
-// Function ID: 11462
+// Module ID: 11474
+// Function ID: 11475
 // Name: KickConfirm
-// Dependencies: [32, 19, 17, 2074, 1377, 21, 4890, 587, 558, 576, 6471, 10836, 504, 5705, 11462, 4886, 1126, 4722, 6580, 5594, 2]
+// Dependencies: [32, 19, 17, 2074, 1377, 21, 4896, 587, 558, 576, 6478, 10849, 504, 5712, 11475, 4892, 1126, 4728, 6587, 5601, 2]
 
-// Module 11461 (KickConfirm)
+// Module 11474 (KickConfirm)
 import nativeDefault from "native" /* 587 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5705 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5712 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 2074 */;
 import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -200,7 +200,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
         kickUserResult = kickUser(id, id1, closure_5.current);
         tmp12 = onKick;
         nextPromise = kickUserResult.then(onKick);
-        catchPromise = nextPromise.catch(() => { /* body not rendered: F141393 */ });
+        catchPromise = nextPromise.catch(() => { /* body not rendered: F141599 */ });
       }
       return;
     }
@@ -238,7 +238,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
   let tmp4Result3;
   let tmp4Result4;
   let v1Ie87p;
-  const f107869 = () => ({ kicking: false, kickError: false });
+  const f108022 = () => ({ kicking: false, kickError: false });
   ({ guildId: require, userId: importDefault, onKick } = arg0);
   let stateFromStores1;
   c6 = undefined;
@@ -256,10 +256,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
   const obj3 = require("get initialized");
   stateFromStores1 = obj3.useStateFromStores(items2, () => UserStore.getUser(importDefault));
   ref = stateFromStores1.useRef("");
-  [tmp11, c6] = stateFromStores(stateFromStores1.useState(f107869), 2);
+  [tmp11, c6] = stateFromStores(stateFromStores1.useState(f108022), 2);
   const items3 = [stateFromStores, onKick, stateFromStores1];
   let tmp14Result2 = null;
-  stateFromStores(stateFromStores1.useState(f107869), 2);
+  stateFromStores(stateFromStores1.useState(f108022), 2);
   if (null != stateFromStores1) {
     tmp14Result2 = null;
     if (null != stateFromStores) {

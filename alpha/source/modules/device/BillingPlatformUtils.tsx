@@ -1,10 +1,10 @@
-// Module ID: 4541
-// Function ID: 4542
+// Module ID: 4547
+// Function ID: 4548
 // Name: BillingPlatformUtils
 // Dependencies: [1615, 1369, 2]
 // Exports: isCollectibleGiftingSupported, isGooglePlayBillingSupported, isPremiumGiftingSupported, isSocialLayerStorefrontGiftingSupported, isSocialLayerStorefrontPurchaseSupported
 
-// Module 4541 (BillingPlatformUtils)
+// Module 4547 (BillingPlatformUtils)
 import PlatformUtils from "PlatformUtils" /* 1369 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1615 */;
 import size from "module_2" /* 2 */;

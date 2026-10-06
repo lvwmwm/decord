@@ -1,15 +1,15 @@
-// Module ID: 18062
-// Function ID: 18063
+// Module ID: 18107
+// Function ID: 18108
 // Name: SafetyFlowsModal
-// Dependencies: [32, 19, 21, 558, 576, 18059, 18063, 18067, 6010, 18069, 18071, 18072, 18073, 18074, 18080, 18081, 6496, 18065, 14272, 18064, 2]
+// Dependencies: [32, 19, 21, 558, 576, 18104, 18108, 18112, 6017, 18114, 18116, 18117, 18118, 18119, 18125, 18126, 6503, 18110, 14290, 18109, 2]
 
-// Module 18062 (SafetyFlowsModal)
+// Module 18107 (SafetyFlowsModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import NavigatorHeader from "NavigatorHeader" /* 6010 */;
-import StepModal from "StepModal" /* 14272 */;
-import types from "types" /* 18059 */;
-import SafetyFlowsUtils from "SafetyFlowsUtils" /* 18065 */;
+import NavigatorHeader from "NavigatorHeader" /* 6017 */;
+import StepModal from "StepModal" /* 14290 */;
+import types from "types" /* 18104 */;
+import SafetyFlowsUtils from "SafetyFlowsUtils" /* 18110 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 let initialScreen;
 
 let tmp;
-const Navigator = tmp(6496);
+const Navigator = tmp(6503);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -375,7 +375,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialScreen) => 
     }
   }, items);
   const memo1 = react.useMemo(() => ({ task, setTask }), items1);
-  const Provider = task(18064).SafetyFlowTaskContext.Provider;
+  const Provider = task(18109).SafetyFlowTaskContext.Provider;
   return <Provider value={memo1}>{null}</Provider>;
 });
 const result = size.fileFinishedImporting("modules/safety_flows/native/SafetyFlowsModal.tsx");

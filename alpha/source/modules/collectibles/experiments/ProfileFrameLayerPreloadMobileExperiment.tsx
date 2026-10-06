@@ -1,9 +1,9 @@
-// Module ID: 7895
-// Function ID: 7896
+// Module ID: 7906
+// Function ID: 7907
 // Name: ProfileFrameLayerPreloadMobileExperiment
 // Dependencies: [1440, 558, 576, 2]
 
-// Module 7895 (ProfileFrameLayerPreloadMobileExperiment)
+// Module 7906 (ProfileFrameLayerPreloadMobileExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1440 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

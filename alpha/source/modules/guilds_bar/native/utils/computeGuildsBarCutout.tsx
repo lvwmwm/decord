@@ -1,14 +1,14 @@
-// Module ID: 16238
-// Function ID: 16239
+// Module ID: 16278
+// Function ID: 16279
 // Name: computeGuildsBarCutout
-// Dependencies: [17, 16222, 1188, 8469, 2]
+// Dependencies: [17, 16262, 1188, 8502, 2]
 // Exports: default
 
-// Module 16238 (computeGuildsBarCutout)
+// Module 16278 (computeGuildsBarCutout)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 1188 */;
-import ClipView from "ClipView" /* 8469 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 16222 */;
+import ClipView from "ClipView" /* 8502 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 16262 */;
 import size_mod from "module_2" /* 2 */;
 
 const PixelRatio = react_native.PixelRatio;

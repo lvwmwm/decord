@@ -1,16 +1,16 @@
-// Module ID: 16166
-// Function ID: 16167
+// Module ID: 16206
+// Function ID: 16207
 // Name: useStageChannelSpeakerVoiceStates
-// Dependencies: [32, 2054, 2051, 4914, 5575, 558, 576, 2077, 11, 1375, 5582, 504, 5589, 2]
+// Dependencies: [32, 2054, 2051, 4920, 5582, 558, 576, 2077, 11, 1375, 5589, 504, 5596, 2]
 
-// Module 16166 (useStageChannelSpeakerVoiceStates)
+// Module 16206 (useStageChannelSpeakerVoiceStates)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import FavoritesUtils from "FavoritesUtils" /* 2077 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4914 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4920 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import FavoriteStore from "FavoriteStore" /* 2054 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5575 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5582 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -83,7 +83,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp9 = cResult[3];
   }
   const tmpResult = tmp(504);
-  return _slicedToArray(tmpResult.useStateFromStores(first, tmp8, tmp9, tmp(5589).isVersionEqual), 1)[0];
+  return _slicedToArray(tmpResult.useStateFromStores(first, tmp8, tmp9, tmp(5596).isVersionEqual), 1)[0];
 }) : ((arg0) => {
   let closure_0;
   _require = arg0;

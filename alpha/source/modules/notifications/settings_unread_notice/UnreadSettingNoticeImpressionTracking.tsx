@@ -1,12 +1,12 @@
-// Module ID: 11075
-// Function ID: 11076
+// Module ID: 11088
+// Function ID: 11089
 // Name: UnreadSettingNoticeImpressionTracking
-// Dependencies: [558, 576, 1260, 8422, 2]
+// Dependencies: [558, 576, 1260, 8455, 2]
 
-// Module 11075 (UnreadSettingNoticeImpressionTracking)
+// Module 11088 (UnreadSettingNoticeImpressionTracking)
 import react from "react" /* 576 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8422 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

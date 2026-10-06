@@ -1,9 +1,9 @@
-// Module ID: 16768
-// Function ID: 16769
+// Module ID: 16789
+// Function ID: 16790
 // Name: useConjureTraceDetail
-// Dependencies: [32, 19, 558, 576, 16764, 2]
+// Dependencies: [32, 19, 558, 576, 16785, 2]
 
-// Module 16768 (useConjureTraceDetail)
+// Module 16789 (useConjureTraceDetail)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -39,7 +39,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       let tmp9;
       let tmp11;
       if (cResult[4] !== arg1) {
-        const tmpResult = tmp(16764);
+        const tmpResult = tmp(16785);
         const cachedTraceDetailResult = tmpResult.cachedTraceDetail(arg1);
         cResult[4] = arg1;
         cResult[5] = cachedTraceDetailResult;

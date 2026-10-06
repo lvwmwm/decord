@@ -1,20 +1,20 @@
-// Module ID: 9076
-// Function ID: 9077
+// Module ID: 9112
+// Function ID: 9113
 // Name: CallBarAction
-// Dependencies: [109, 19, 17, 9050, 21, 4727, 587, 4890, 558, 576, 9077, 9078, 5909, 4886, 2]
+// Dependencies: [109, 19, 17, 9086, 21, 4733, 587, 4896, 558, 576, 9113, 9114, 5916, 4892, 2]
 
-// Module 9076 (CallBarAction)
+// Module 9112 (CallBarAction)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Pressables from "Pressables" /* 5909 */;
-import ChannelCallStore from "ChannelCallStore" /* 9050 */;
-import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 9078 */;
+import Pressables from "Pressables" /* 5916 */;
+import ChannelCallStore from "ChannelCallStore" /* 9086 */;
+import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 9114 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ColorUtils from "ColorUtils" /* 4727 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import ColorUtils from "ColorUtils" /* 4733 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,8 +29,8 @@ let rect;
 let tmp;
 let tmp8;
 let unpackModuleId;
-const Text_Text = tmp(4886);
-const CircleWithCutoutUtilsDefault = tmp8(9078);
+const Text_Text = tmp(4892);
+const CircleWithCutoutUtilsDefault = tmp8(9114);
 let closure_3 = ["isActive", "disableTint", "showBadge", "isSmallSize", "backgroundColor", "tintColor"];
 let closure_4 = ["isSmallSize"];
 let closure_5 = ["notifications", "isMentioned"];
@@ -195,7 +195,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                                 }
                                               }
                                               const obj3 = { accessibilityLabel, accessibilityRole: "button", accessibilityState, onPress: tmp15, disabled: false, style: tmp16, children: tmp42 };
-                                              const tmp48 = closure_11(onPress(5909).PressableOpacity, obj3);
+                                              const tmp48 = closure_11(onPress(5916).PressableOpacity, obj3);
                                               cResult[46] = accessibilityLabel;
                                               cResult[47] = accessibilityState;
                                               cResult[48] = tmp42;
@@ -226,9 +226,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                 const obj5 = { style: items1 };
                                 items1 = [tmp7.badge, ];
                                 const size1 = { width: result1, height: result1, borderRadius: tmp11.badgeRadius, top: tmpResult.getBadgeTop(tmp11.badgeRadius, tmp11.buttonRadius, cutoutPositionInDegrees), left: tmpResult2.getBadgeLeft(tmp11.badgeRadius, tmp11.buttonRadius, cutoutPositionInDegrees) };
-                                tmpResult = onPress(9078);
+                                tmpResult = onPress(9114);
                                 items1[1] = size1;
-                                tmpResult2 = onPress(9078);
+                                tmpResult2 = onPress(9114);
                                 tmp38 = closure_11(closure_9, obj5);
                               }
                               cResult[34] = tmp11.badgeRadius;

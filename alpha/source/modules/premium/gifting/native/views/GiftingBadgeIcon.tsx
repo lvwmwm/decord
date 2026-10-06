@@ -1,9 +1,9 @@
-// Module ID: 10481
-// Function ID: 10482
+// Module ID: 10494
+// Function ID: 10495
 // Name: GiftingBadgeIcon
 // Dependencies: [19, 17, 21, 558, 576, 2]
 
-// Module 10481 (GiftingBadgeIcon)
+// Module 10494 (GiftingBadgeIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

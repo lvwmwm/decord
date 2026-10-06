@@ -1,18 +1,18 @@
-// Module ID: 11506
-// Function ID: 11507
+// Module ID: 11519
+// Function ID: 11520
 // Name: Chat
-// Dependencies: [19, 4879, 21, 4890, 558, 576, 6140, 11507, 11510, 504, 9990, 2]
+// Dependencies: [19, 4885, 21, 4896, 558, 576, 6147, 11520, 11523, 504, 10003, 2]
 
-// Module 11506 (Chat)
+// Module 11519 (Chat)
 import react2 from "react" /* 576 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
-import ChatNativeComponentDefault from "ChatNativeComponent" /* 9990 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 11507 */;
-import ChatListNativeComponentDefault from "ChatListNativeComponent" /* 11510 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6147 */;
+import ChatNativeComponentDefault from "ChatNativeComponent" /* 10003 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 11520 */;
+import ChatListNativeComponentDefault from "ChatListNativeComponent" /* 11523 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 4885 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(4);
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const Gesture = tmp(6140).Gesture;
+    const Gesture = tmp(6147).Gesture;
     const NativeResult = Gesture.Native();
     const disallowInterruptionResult = NativeResult.disallowInterruption(true);
     const result = disallowInterruptionResult.shouldCancelWhenOutside(false);
@@ -50,7 +50,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] !== tmp4.chatList) {
     const obj2 = { gesture: first, children: hasOwnProperty(ChatListNativeComponentDefault, obj3) };
-    const GestureDetector = tmp(6140).GestureDetector;
+    const GestureDetector = tmp(6147).GestureDetector;
     obj3 = { style: tmp4.chatList, floatingChatInputEnabled: true, children: tmp7 };
     const tmp13 = hasOwnProperty(GestureDetector, obj2);
     cResult[2] = tmp4.chatList;

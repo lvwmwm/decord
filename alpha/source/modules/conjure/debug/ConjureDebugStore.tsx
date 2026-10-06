@@ -1,12 +1,12 @@
-// Module ID: 16752
-// Function ID: 16753
+// Module ID: 16773
+// Function ID: 16774
 // Name: ConjureDebugStore
-// Dependencies: [504, 6747, 584, 2]
+// Dependencies: [504, 6757, 584, 2]
 
-// Module 16752 (ConjureDebugStore)
+// Module 16773 (ConjureDebugStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureTypes from "ConjureTypes" /* 6747 */;
+import ConjureTypes from "ConjureTypes" /* 6757 */;
 import size from "module_2" /* 2 */;
 
 let set;

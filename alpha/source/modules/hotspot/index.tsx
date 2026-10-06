@@ -1,13 +1,13 @@
-// Module ID: 6712
-// Function ID: 6713
+// Module ID: 6719
+// Function ID: 6720
 // Name: HotspotStore
-// Dependencies: [6713, 2, 6715, 6716]
+// Dependencies: [6720, 2, 6722, 6723]
 
-// Module 6712 (HotspotStore)
-import HotspotActionCreators from "HotspotActionCreators" /* 6716 */;
-import HotspotStore from "hotspot/HotspotStore" /* 6713 */;
+// Module 6719 (HotspotStore)
+import HotspotActionCreators from "HotspotActionCreators" /* 6723 */;
+import HotspotStore from "hotspot/HotspotStore" /* 6720 */;
 import size from "module_2" /* 2 */;
-import Constants from "Constants" /* 6715 */;
+import Constants from "Constants" /* 6722 */;
 
 const result = size.fileFinishedImporting("modules/hotspot/index.tsx");
 for (const key10022 in Constants) {

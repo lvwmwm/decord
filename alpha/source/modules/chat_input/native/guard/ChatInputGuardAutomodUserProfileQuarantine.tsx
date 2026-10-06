@@ -1,14 +1,14 @@
-// Module ID: 12120
-// Function ID: 12121
+// Module ID: 12135
+// Function ID: 12136
 // Name: ChatInputGuardAutomodUserProfileQuarantine
-// Dependencies: [19, 502, 2112, 4495, 21, 558, 576, 4515, 504, 11473, 1126, 12121, 12090, 2]
+// Dependencies: [19, 502, 2112, 4501, 21, 558, 576, 4521, 504, 11486, 1126, 12136, 12105, 2]
 
-// Module 12120 (ChatInputGuardAutomodUserProfileQuarantine)
+// Module 12135 (ChatInputGuardAutomodUserProfileQuarantine)
 import Fragment from "Fragment" /* 21 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4495 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4515 */;
-import GuildAutomodActionActionCreators from "GuildAutomodActionActionCreators" /* 11473 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12090 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4501 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4521 */;
+import GuildAutomodActionActionCreators from "GuildAutomodActionActionCreators" /* 11486 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12105 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2112 */;
@@ -173,7 +173,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
         const result = obj.openAutomodProfileQuarantineAlert(guildId);
       }
     }
-    const tmp18 = jsx(tmp(12121).ChatXIcon, {});
+    const tmp18 = jsx(tmp(12136).ChatXIcon, {});
     cResult[12] = tmp18;
   } else {
     class R {
@@ -222,7 +222,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((g
     const obj = GuildAutomodActionActionCreators;
     const result = obj.openAutomodProfileQuarantineAlert(guildId);
   }, items2);
-  const obj2 = guildId(4515);
+  const obj2 = guildId(4521);
   const automodReason = obj2.getAutomodReason(stateFromStores);
   const tmp6 = GuildMemberFlags;
   if (automodReason === GuildMemberFlags.AUTOMOD_QUARANTINED_SERVER_TAG) {

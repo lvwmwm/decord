@@ -1,9 +1,9 @@
-// Module ID: 17245
-// Function ID: 17246
+// Module ID: 17274
+// Function ID: 17275
 // Name: PremiumSoundboardFeatureUpsell
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1618, 1105, 9643, 7483, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1618, 1105, 9656, 7494, 2]
 
-// Module 17245 (PremiumSoundboardFeatureUpsell)
+// Module 17274 (PremiumSoundboardFeatureUpsell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -11,7 +11,7 @@ import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,8 +19,8 @@ let shouldShow;
 
 let tmp;
 let tmp4;
-const EntitlementFeatureNames = tmp(7483);
-const PremiumFeatureUpsellDefault = tmp4(9643);
+const EntitlementFeatureNames = tmp(7494);
+const PremiumFeatureUpsellDefault = tmp4(9656);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles((arg0) => {

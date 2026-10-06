@@ -1,13 +1,13 @@
-// Module ID: 7114
-// Function ID: 7115
+// Module ID: 7127
+// Function ID: 7128
 // Name: UserProfileWidgetConstants
-// Dependencies: [5118, 7112, 1126, 2]
+// Dependencies: [5124, 7125, 1126, 2]
 // Exports: widgetSupportsComment, widgetSupportsTags
 
-// Module 7114 (UserProfileWidgetConstants)
+// Module 7127 (UserProfileWidgetConstants)
 import intl2 from "intl" /* 1126 */;
-import WidgetType from "WidgetType" /* 7112 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
+import WidgetType from "WidgetType" /* 7125 */;
+import ApplicationStore from "ApplicationStore" /* 5124 */;
 import size from "module_2" /* 2 */;
 
 const items = [WidgetType.WidgetType.PERSONAL, WidgetType.WidgetType.CLIPS_GALLERY, WidgetType.WidgetType.APPLICATION, WidgetType.WidgetType.FAVORITE_GAMES, WidgetType.WidgetType.PLAYED_GAMES, WidgetType.WidgetType.CURRENT_GAMES, WidgetType.WidgetType.WANT_TO_PLAY_GAMES];

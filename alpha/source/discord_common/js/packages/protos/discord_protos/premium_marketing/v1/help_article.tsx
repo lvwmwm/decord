@@ -1,11 +1,11 @@
-// Module ID: 10402
-// Function ID: 10403
+// Module ID: 10415
+// Function ID: 10416
 // Name: help_article
-// Dependencies: [32, 1198, 10401, 2]
+// Dependencies: [32, 1198, 10414, 2]
 
-// Module 10402 (help_article)
+// Module 10415 (help_article)
 import _mod1198 from "module_1198" /* 1198 */;
-import localized_string from "localized_string" /* 10401 */;
+import localized_string from "localized_string" /* 10414 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

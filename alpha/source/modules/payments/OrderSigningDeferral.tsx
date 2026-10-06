@@ -1,11 +1,11 @@
-// Module ID: 8520
-// Function ID: 8521
+// Module ID: 8553
+// Function ID: 8554
 // Name: OrderSigningDeferral
-// Dependencies: [5, 8521, 2]
+// Dependencies: [5, 8554, 2]
 // Exports: performSigningDeferralAction
 
-// Module 8520 (OrderSigningDeferral)
-import Stripe3DSChallenge from "Stripe3DSChallenge" /* 8521 */;
+// Module 8553 (OrderSigningDeferral)
+import Stripe3DSChallenge from "Stripe3DSChallenge" /* 8554 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

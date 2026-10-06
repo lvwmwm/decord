@@ -1,25 +1,25 @@
-// Module ID: 17931
-// Function ID: 17932
+// Module ID: 17977
+// Function ID: 17978
 // Name: GuildRoleSubscriptionTierArchiveOrDeleteActionSheet
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1618, 38, 17932, 4886, 1188, 5594, 4854, 1126, 6112, 6645, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1618, 38, 17978, 4892, 1188, 5601, 4860, 1126, 6119, 6652, 2]
 
-// Module 17931 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
+// Module 17977 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1188 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import BottomSheetModal from "BottomSheetModal" /* 6112 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 17932 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import components_Button_Button from "components/Button/Button" /* 5601 */;
+import BottomSheetModal from "BottomSheetModal" /* 6119 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6652 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 17978 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -147,7 +147,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupListingId) =>
           }
         }
         const obj5 = { variant: "text-sm/semibold", color: "interactive-text-active", children: intl.string(intl2.t["ETE/oC"]) };
-        const Text = tmp(4886).Text;
+        const Text = tmp(4892).Text;
         intl = tmp(1126).intl;
         const tmp27 = hasOwnProperty(Text, obj5);
         cResult[14] = tmp27;
@@ -252,7 +252,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupListingId) =>
     children: hasOwnProperty(Text, obj6)
   };
   obj6 = { variant: "text-sm/semibold", color: "interactive-text-active", children: intl.string(intl2.t["ETE/oC"]) };
-  Text = tmp6(4886).Text;
+  Text = tmp6(4892).Text;
   intl = tmp6(1126).intl;
   items[6] = hasOwnProperty(_false, obj5);
   return hasOwnProperty(BottomSheet, obj4);

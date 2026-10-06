@@ -1,35 +1,35 @@
-// Module ID: 17326
-// Function ID: 17327
+// Module ID: 17354
+// Function ID: 17355
 // Name: VoicePanelMicButton
-// Dependencies: [32, 19, 4907, 2105, 502, 2051, 1999, 4509, 1377, 4909, 21, 3, 4890, 558, 576, 6848, 9687, 504, 9702, 11901, 4612, 17203, 4855, 9620, 6140, 17327, 17328, 1126, 9689, 4886, 9341, 9688, 2]
+// Dependencies: [32, 19, 4913, 2105, 502, 2051, 1999, 4515, 1377, 4915, 21, 3, 4896, 558, 576, 6858, 9700, 504, 9715, 11915, 4618, 17232, 4861, 9633, 6147, 17355, 17356, 1126, 9702, 4892, 9355, 9701, 2]
 // Exports: PTTButton
 
-// Module 17326 (VoicePanelMicButton)
+// Module 17354 (VoicePanelMicButton)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import HapticUtils from "HapticUtils" /* 4855 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
-import useMuteStates from "useMuteStates" /* 6848 */;
-import MicrophoneDenyIcon from "MicrophoneDenyIcon" /* 9341 */;
-import MediaEngineActionCreators from "MediaEngineActionCreators" /* 9620 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 9687 */;
-import VoicePanelRiveMicButton2 from "VoicePanelRiveMicButton" /* 9688 */;
-import useDeafStates from "useDeafStates" /* 9702 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11901 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 17327 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import HapticUtils from "HapticUtils" /* 4861 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6147 */;
+import useMuteStates from "useMuteStates" /* 6858 */;
+import MicrophoneDenyIcon from "MicrophoneDenyIcon" /* 9355 */;
+import MediaEngineActionCreators from "MediaEngineActionCreators" /* 9633 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 9700 */;
+import VoicePanelRiveMicButton2 from "VoicePanelRiveMicButton" /* 9701 */;
+import useDeafStates from "useDeafStates" /* 9715 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11915 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 17355 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 4907 */;
+import GameConsoleStore from "GameConsoleStore" /* 4913 */;
 import ImpersonateStore from "ImpersonateStore" /* 2105 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
 import UserStore from "UserStore" /* 1377 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import VoiceStateStore from "VoiceStateStore" /* 4915 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let closure_14;
 let closure_15;
 let map1;
 let tmp4;
-const VoicePanelAnimatedButtonWrapperDefault = tmp4(17328);
+const VoicePanelAnimatedButtonWrapperDefault = tmp4(17356);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = Fragment);
@@ -415,10 +415,10 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
     let tmp3Result;
     if (dominantMuteState === VoiceActionUtils.DominantMuteState.SERVER_MUTE) {
       const obj2 = { color: voicePanelButtonStyles.iconFillRed.color };
-      tmp3Result = map1(tmp(9341).MicrophoneDenyIcon, obj2);
+      tmp3Result = map1(tmp(9355).MicrophoneDenyIcon, obj2);
     } else {
       let color;
-      const VoicePanelRiveMicButton = tmp(9688).VoicePanelRiveMicButton;
+      const VoicePanelRiveMicButton = tmp(9701).VoicePanelRiveMicButton;
       const tmp3 = map1;
       if (mute) {
         color = tmp5.iconFillRed.color;

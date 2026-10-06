@@ -1,9 +1,9 @@
-// Module ID: 16548
-// Function ID: 16549
+// Module ID: 16588
+// Function ID: 16589
 // Name: conjurePublishBlockedReason
 // Dependencies: [2]
 
-// Module 16548 (conjurePublishBlockedReason)
+// Module 16588 (conjurePublishBlockedReason)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishBlockedReason.tsx");

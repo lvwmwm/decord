@@ -1,9 +1,9 @@
-// Module ID: 15746
-// Function ID: 15747
+// Module ID: 15782
+// Function ID: 15783
 // Name: useCollectiblesShopHeader
-// Dependencies: [19, 17, 1377, 1087, 1085, 5623, 7854, 21, 4890, 587, 558, 576, 11762, 1126, 4886, 504, 8509, 10912, 7052, 6681, 6628, 4854, 11011, 1987, 1252, 10908, 5626, 5093, 7850, 11000, 7575, 8428, 7579, 15747, 1490, 2]
+// Dependencies: [19, 17, 1377, 1087, 1085, 5630, 7865, 21, 4896, 587, 558, 576, 11776, 1126, 4892, 504, 8542, 10925, 7065, 6688, 6635, 4860, 11024, 1987, 1252, 10921, 5633, 5099, 7861, 11013, 7586, 8461, 7590, 15783, 1490, 2]
 
-// Module 15746 (useCollectiblesShopHeader)
+// Module 15782 (useCollectiblesShopHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,18 +11,18 @@ import Constants from "Constants" /* 1085 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import intl4 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import QuestConstants from "QuestConstants" /* 5623 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
-import Constants2 from "Constants" /* 7854 */;
-import ShopIcon from "ShopIcon" /* 11762 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
+import QuestConstants from "QuestConstants" /* 5630 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6688 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7861 */;
+import Constants2 from "Constants" /* 7865 */;
+import ShopIcon from "ShopIcon" /* 11776 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj2;
 let obj3;
 let tmp;
 let unpackModuleId;
-const CheckmarkSmallIcon3 = tmp(6628);
+const CheckmarkSmallIcon3 = tmp(6635);
 function CollectiblesShopHeaderRight(currentScreen) {
   let constants2;
   let constants3;

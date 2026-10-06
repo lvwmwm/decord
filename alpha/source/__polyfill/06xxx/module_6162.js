@@ -1,12 +1,9 @@
 // Module ID: 6162
 // Function ID: 6163
-// Dependencies: []
-// Exports: getNextHandlerTag
+// Dependencies: [6163]
 
 // Module 6162
-let closure_0 = 1;
+import _modDef6163 from "module_6163" /* 6163 */;
 
-export const getNextHandlerTag = function getNextHandlerTag() {
-  closure_0 = tmp + 1;
-  return +closure_0;
-};
+
+export default _modDef6163;

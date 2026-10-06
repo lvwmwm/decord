@@ -1,24 +1,24 @@
-// Module ID: 5595
-// Function ID: 5596
+// Module ID: 5602
+// Function ID: 5603
 // Name: BaseTextButton
-// Dependencies: [32, 19, 17, 21, 4890, 587, 4612, 5596, 558, 576, 5597, 5598, 5600, 1369, 5601, 4886, 4596, 4855, 4582, 5603, 5610, 2]
+// Dependencies: [32, 19, 17, 21, 4896, 587, 4618, 5603, 558, 576, 5604, 5605, 5607, 1369, 5608, 4892, 4602, 4861, 4588, 5610, 5617, 2]
 
-// Module 5595 (BaseTextButton)
+// Module 5602 (BaseTextButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4612 */;
-import HapticUtils from "HapticUtils" /* 4855 */;
-import IconDefault from "Icon" /* 5596 */;
-import spring from "spring" /* 5597 */;
-import springPresets from "springPresets" /* 5598 */;
-import ButtonConstants from "ButtonConstants" /* 5600 */;
-import ButtonHooks from "ButtonHooks" /* 5601 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4618 */;
+import HapticUtils from "HapticUtils" /* 4861 */;
+import IconDefault from "Icon" /* 5603 */;
+import spring from "spring" /* 5604 */;
+import springPresets from "springPresets" /* 5605 */;
+import ButtonConstants from "ButtonConstants" /* 5607 */;
+import ButtonHooks from "ButtonHooks" /* 5608 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -290,12 +290,12 @@ let closure_23 = createStyles.createStyles((arg0, marginLeft) => {
 let obj3 = { sm: rect, md: rect1, lg: rect2 };
 const LARGE_BUTTON_HEIGHT = ButtonConstants.LARGE_BUTTON_HEIGHT;
 const bound = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.SMALL_BUTTON_HEIGHT) / 2, 0);
-rect = { top: bound, left: "Array", right: "toCharArray$esjava$1", bottom: bound };
+rect = { top: bound, left: "Array", right: "parent", bottom: bound };
 const LARGE_BUTTON_HEIGHT2 = ButtonConstants.LARGE_BUTTON_HEIGHT;
 const bound1 = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.MEDIUM_BUTTON_HEIGHT) / 2, 0);
-rect1 = { top: bound1, left: "Array", right: "toCharArray$esjava$1", bottom: bound1 };
+rect1 = { top: bound1, left: "Array", right: "parent", bottom: bound1 };
 const bound2 = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.LARGE_BUTTON_HEIGHT) / 2, 0);
-rect2 = { top: bound2, left: "Array", right: "toCharArray$esjava$1", bottom: bound2 };
+rect2 = { top: bound2, left: "Array", right: "parent", bottom: bound2 };
 function getTextPlatformLineHeight(arg0, arg1) {
 
 }

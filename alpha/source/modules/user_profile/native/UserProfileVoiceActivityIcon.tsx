@@ -1,15 +1,15 @@
-// Module ID: 10628
-// Function ID: 10629
+// Module ID: 10641
+// Function ID: 10642
 // Name: UserProfileVoiceActivityIcon
-// Dependencies: [109, 19, 4509, 1096, 21, 558, 576, 504, 7523, 5846, 5880, 5881, 5883, 5882, 5885, 2]
+// Dependencies: [109, 19, 4515, 1096, 21, 558, 576, 504, 7534, 5853, 5887, 5888, 5890, 5889, 5892, 2]
 
-// Module 10628 (UserProfileVoiceActivityIcon)
+// Module 10641 (UserProfileVoiceActivityIcon)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1096 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 5846 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 5853 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -76,7 +76,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         if (tmp13) {
           let tmp39;
           if (cResult[8] !== tmp4) {
-            const StageLockIcon = tmp(5880).StageLockIcon;
+            const StageLockIcon = tmp(5887).StageLockIcon;
             const merged = Object.assign(tmp4);
             const tmp44 = <StageLockIcon />;
             cResult[8] = tmp4;
@@ -92,7 +92,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       if (isGuildStageVoiceResult) {
         let tmp33;
         if (cResult[10] !== tmp4) {
-          const StageIcon = tmp(5881).StageIcon;
+          const StageIcon = tmp(5888).StageIcon;
           const merged1 = Object.assign(tmp4);
           const tmp38 = <StageIcon />;
           cResult[10] = tmp4;
@@ -105,7 +105,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       } else if (obj2.isNSFW()) {
         let tmp27;
         if (cResult[12] !== tmp4) {
-          const VoiceWarningIcon = tmp(5883).VoiceWarningIcon;
+          const VoiceWarningIcon = tmp(5890).VoiceWarningIcon;
           const merged2 = Object.assign(tmp4);
           const tmp32 = <VoiceWarningIcon />;
           cResult[12] = tmp4;
@@ -118,7 +118,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       } else if (tmp13) {
         let tmp21;
         if (cResult[14] !== tmp4) {
-          const VoiceLockIcon = tmp(5882).VoiceLockIcon;
+          const VoiceLockIcon = tmp(5889).VoiceLockIcon;
           const merged3 = Object.assign(tmp4);
           const tmp26 = <VoiceLockIcon />;
           cResult[14] = tmp4;
@@ -129,7 +129,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
         tmp15 = tmp21;
       } else if (cResult[16] !== tmp4) {
-        const VoiceNormalIcon = tmp(5885).VoiceNormalIcon;
+        const VoiceNormalIcon = tmp(5892).VoiceNormalIcon;
         const merged4 = Object.assign(tmp4);
         const tmp20 = <VoiceNormalIcon />;
         cResult[16] = tmp4;
@@ -141,7 +141,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
   }
   if (cResult[6] !== tmp4) {
-    const PhoneCallIcon = tmp(7523).PhoneCallIcon;
+    const PhoneCallIcon = tmp(7534).PhoneCallIcon;
     const merged5 = Object.assign(tmp4);
     const tmp50 = <PhoneCallIcon />;
     cResult[6] = tmp4;
@@ -174,27 +174,27 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
       if (isGuildStageVoiceResult) {
         if (tmp6) {
-          const StageLockIcon = tmp2(5880).StageLockIcon;
+          const StageLockIcon = tmp2(5887).StageLockIcon;
           const merged1 = Object.assign(merged);
           tmp8Result = <StageLockIcon />;
         }
         return tmp8Result;
       }
       if (isGuildStageVoiceResult) {
-        const StageIcon = tmp2(5881).StageIcon;
+        const StageIcon = tmp2(5888).StageIcon;
         const merged2 = Object.assign(merged);
         tmp8Result = <StageIcon />;
       } else if (channel.isNSFW()) {
         const obj4 = {};
-        const VoiceWarningIcon = tmp2(5883).VoiceWarningIcon;
+        const VoiceWarningIcon = tmp2(5890).VoiceWarningIcon;
         const merged3 = Object.assign(merged);
         tmp8Result = tmp8(VoiceWarningIcon, obj4);
       } else {
         let VoiceNormalIcon;
         if (tmp6) {
-          VoiceNormalIcon = tmp2(5882).VoiceLockIcon;
+          VoiceNormalIcon = tmp2(5889).VoiceLockIcon;
         } else {
-          VoiceNormalIcon = tmp2(5885).VoiceNormalIcon;
+          VoiceNormalIcon = tmp2(5892).VoiceNormalIcon;
         }
         const obj5 = {};
         const merged4 = Object.assign(merged);
@@ -202,7 +202,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
   }
-  const PhoneCallIcon = tmp2(7523).PhoneCallIcon;
+  const PhoneCallIcon = tmp2(7534).PhoneCallIcon;
   const merged5 = Object.assign(merged);
   return <PhoneCallIcon />;
 });

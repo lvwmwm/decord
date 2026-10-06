@@ -1,20 +1,20 @@
-// Module ID: 10881
-// Function ID: 10882
+// Module ID: 10894
+// Function ID: 10895
 // Name: BadgeCatalogIcon
-// Dependencies: [32, 19, 17, 21, 558, 576, 5974, 10882, 2]
+// Dependencies: [32, 19, 17, 21, 558, 576, 5981, 10895, 2]
 
-// Module 10881 (BadgeCatalogIcon)
+// Module 10894 (BadgeCatalogIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import BadgeArtImageDefault from "BadgeArtImage" /* 10882 */;
+import FastImageDefault from "FastImage" /* 5981 */;
+import BadgeArtImageDefault from "BadgeArtImage" /* 10895 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const f105471 = (item) => null != item;
+const f105623 = (item) => null != item;
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -34,7 +34,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[0] !== badge) {
     const items = [, , ];
     ({ simple_icon_raster_url: arr[0], complex_icon_static_url: arr[1], complex_icon_animated_url: arr[2] } = badge);
-    const found = items.filter(f105471);
+    const found = items.filter(f105623);
     const joined = found.join("|");
     cResult[0] = badge;
     cResult[1] = joined;
@@ -155,7 +155,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items = [, , ];
   ({ simple_icon_raster_url: arr[0], complex_icon_static_url: arr[1], complex_icon_animated_url: arr[2] } = badge);
   style = style.style;
-  const found = items.filter(f105471);
+  const found = items.filter(f105623);
   const joined = found.join("|");
   [tmp3, tmp4] = react.useState({ urlsKey: joined, candidateIndex: 0 });
   let c0 = tmp4;

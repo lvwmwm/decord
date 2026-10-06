@@ -1,10 +1,10 @@
-// Module ID: 4741
-// Function ID: 4742
+// Module ID: 4747
+// Function ID: 4748
 // Name: useBaseAppContainerDimensions
 // Dependencies: [19, 1484, 1618, 558, 576, 2]
 // Exports: getBaseAppContainerDimensions
 
-// Module 4741 (useBaseAppContainerDimensions)
+// Module 4747 (useBaseAppContainerDimensions)
 import react2 from "react" /* 576 */;
 import useWindowDimensions from "useWindowDimensions" /* 1484 */;
 import useSafeAreaInsets from "useSafeAreaInsets" /* 1618 */;

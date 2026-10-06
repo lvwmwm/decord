@@ -1,11 +1,11 @@
-// Module ID: 8885
-// Function ID: 8886
+// Module ID: 8914
+// Function ID: 8915
 // Name: useDiscountedPremiumPlan
-// Dependencies: [19, 6739, 558, 576, 504, 2]
+// Dependencies: [19, 6931, 558, 576, 504, 2]
 
-// Module 8885 (useDiscountedPremiumPlan)
+// Module 8914 (useDiscountedPremiumPlan)
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 6739 */;
+import IAPStore from "IAPStore" /* 6931 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

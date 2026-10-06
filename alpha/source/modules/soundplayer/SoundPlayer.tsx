@@ -1,40 +1,41 @@
-// Module ID: 17104
-// Function ID: 17105
+// Module ID: 17130
+// Function ID: 17131
 // Name: SoundPlayer
-// Dependencies: [19, 2050, 5118, 8699, 8703, 4907, 2055, 4912, 502, 2051, 2074, 1999, 12466, 4913, 2103, 5576, 4909, 4914, 1085, 8704, 21, 558, 576, 504, 9562, 5037, 4942, 4498, 1375, 6746, 2]
+// Dependencies: [19, 2050, 5124, 8734, 9000, 4913, 2055, 4918, 502, 2051, 2074, 1999, 12481, 4919, 2103, 5583, 4915, 4920, 1085, 8738, 21, 558, 576, 504, 9575, 16204, 5043, 4948, 17131, 4504, 1375, 6756, 2]
 
-// Module 17104 (SoundPlayer)
+// Module 17130 (SoundPlayer)
 import react2 from "react" /* 576 */;
 import EmbeddedActivitiesStore2 from "EmbeddedActivitiesStore" /* 2050 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
-import SoundUtils from "SoundUtils" /* 9562 */;
+import SoundUtils from "SoundUtils" /* 9575 */;
+import VoiceConnectFeedbackExperimentDefault from "VoiceConnectFeedbackExperiment" /* 16204 */;
+import _modDef17131 from "module_17131" /* 17131 */;
 import react_mod from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 8699 */;
-import FramesStore from "FramesStore" /* 8703 */;
-import GameConsoleStore from "GameConsoleStore" /* 4907 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
+import ApplicationStore from "ApplicationStore" /* 5124 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 8734 */;
+import FramesStore from "FramesStore" /* 9000 */;
+import GameConsoleStore from "GameConsoleStore" /* 4913 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4918 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildStore from "GuildStore" /* 2074 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 12466 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 12481 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import SpeakingStore from "SpeakingStore" /* 5576 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4914 */;
+import SpeakingStore from "SpeakingStore" /* 5583 */;
+import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4920 */;
 import Constants from "Constants" /* 1085 */;
-import FramesConstants from "FramesConstants" /* 8704 */;
+import FramesConstants from "FramesConstants" /* 8738 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const EmbeddedActivitiesStore = EmbeddedActivitiesStore2;
-let _require, allActiveStreams, connectedActivityLocation, dependencyMap, guild, isSoundDisabled, mainFrame, userIds, voiceStateForChannel;
+let _require, allActiveStreams, connectedActivityLocation, dependencyMap, isSoundDisabled, mainFrame, voiceStateForChannel;
 
-let closure_21;
 let closure_22;
 let closure_23;
 let closure_24;
@@ -43,21 +44,22 @@ let closure_26;
 let closure_27;
 let closure_28;
 let closure_29;
+let closure_30;
 let react = react_mod;
 const NO_ACTIVITIES = EmbeddedActivitiesStore2.NO_ACTIVITIES;
-let closure_9 = ChannelRecord.SILENT_JOIN_LEAVE_CHANNEL_TYPES;
-({ InputModes: closure_21, ApplicationStreamStates: closure_22, ChannelTypes: closure_23, RTCConnectionStates: closure_24 } = Constants);
-({ getChannelIdForSurface: closure_25, isLaunched: closure_26 } = FramesConstants);
-({ jsx: closure_27, Fragment: closure_28, jsxs: closure_29 } = Fragment);
-let c30 = 25;
+let closure_10 = ChannelRecord.SILENT_JOIN_LEAVE_CHANNEL_TYPES;
+({ InputModes: closure_22, ApplicationStreamStates: closure_23, ChannelTypes: closure_24, RTCConnectionStates: closure_25 } = Constants);
+({ getChannelIdForSurface: closure_26, isLaunched: closure_27 } = FramesConstants);
+({ jsx: closure_28, Fragment: closure_29, jsxs: closure_30 } = Fragment);
+let c31 = 25;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) => {
-  let closure_1;
+let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) => {
   let closure_2;
+  let closure_3;
   _require = arg0;
-  dependencyMap = arg1;
-  react = arg2;
-  let closure_3 = arg3;
+  let closure_1 = arg1;
+  dependencyMap = arg2;
+  react = arg3;
   const obj = require("react");
   const cResult = obj.c(5);
   if (cResult[0] === arg2) {
@@ -74,7 +76,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, ar
   const fn = function o() {
     let batchedStoreListener;
     closure_0 = batchedStoreListener();
-    batchedStoreListener = new closure_0(batchedStoreListener[23]).BatchedStoreListener(closure_0, () => {
+    batchedStoreListener = new closure_0(closure_2[23]).BatchedStoreListener(closure_0, () => {
       const tmp = batchedStoreListener();
       const tmp2 = closure_2(closure_0, tmp);
       const isSoundDisabledResult = null == tmp2 || NotificationSettingsStore.isSoundDisabled(tmp2);
@@ -99,15 +101,15 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, ar
   cResult[4] = fn;
   tmp2 = fn;
 }) : ((arg0, arg1, arg2, arg3) => {
-  let closure_2;
+  let closure_3;
   let closure_0 = arg0;
   let closure_1 = arg1;
-  react = arg2;
-  let closure_3 = arg3;
+  let closure_2 = arg2;
+  react = arg3;
   const effect = react.useEffect(() => {
     let batchedStoreListener;
     closure_0 = batchedStoreListener();
-    batchedStoreListener = new closure_0(batchedStoreListener[23]).BatchedStoreListener(closure_0, () => {
+    batchedStoreListener = new closure_0(closure_2[23]).BatchedStoreListener(closure_0, () => {
       const tmp = batchedStoreListener();
       const tmp2 = closure_2(closure_0, tmp);
       const isSoundDisabledResult = null == tmp2 || NotificationSettingsStore.isSoundDisabled(tmp2);
@@ -127,7 +129,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, ar
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp2;
   let tmp3;
   let tmp4;
@@ -178,12 +180,12 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     [tmp2, tmp3, tmp4] = cResult;
   }
-  closure_31(tmp2, tmp3, tmp4);
+  closure_32(tmp2, tmp3, tmp4);
   return null;
 }) : (() => {
   let voiceChannelId;
   const items = [MediaEngineStore, SelectedChannelStore];
-  const tmp = closure_31(items, () => {
+  const tmp = closure_32(items, () => {
     const obj = { inVoiceChannel: null != voiceChannelId.getVoiceChannelId(), selfMute: MediaEngineStore.isSelfMute(), selfDeaf: MediaEngineStore.isSelfDeaf(), audioPermissionReady: MediaEngineStore.isNativeAudioPermissionReady(), shouldSkipMuteUnmuteSound: MediaEngineStore.shouldSkipMuteUnmuteSound() };
     return obj;
   }, (selfDeaf, arg1) => {
@@ -218,7 +220,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return null;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp2;
   let tmp3;
   let tmp4;
@@ -254,12 +256,12 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     [tmp2, tmp3, tmp4] = cResult;
   }
-  closure_31(tmp2, tmp3, tmp4);
+  closure_32(tmp2, tmp3, tmp4);
   return null;
 }) : (() => {
   let voiceChannelId;
   const items = [MediaEngineStore, SelectedChannelStore];
-  closure_31(items, () => {
+  closure_32(items, () => {
     const obj = { videoEnabled: videoEnabled.isVideoEnabled(), inVoiceChannel: null != voiceChannelId.getVoiceChannelId() };
     return obj;
   }, (videoEnabled, videoEnabled2) => {
@@ -279,7 +281,7 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return null;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp2;
   let tmp3;
   let tmp4;
@@ -306,38 +308,63 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj = { channelType: type, guildId, connected: state === constants.RTC_CONNECTED, connectHasStarted: !wasEverRtcConnected && state !== constants.DISCONNECTED || state === constants.RTC_CONNECTED, awaitingRemote: null != GameConsoleStore.getAwaitingRemoteSessionInfo(), connectedRemote: null != GameConsoleStore.getRemoteSessionId() };
       return obj;
     };
-    const fn2 = function l(channelType, arg1) {
-      let connectedRemote;
-      ({ channelType, connectedRemote } = arg1);
-      const channelType2 = channelType.channelType;
-      if (channelType.connectHasStarted) {
-        if (tmp4) {
+    const fn2 = function l(connectedRemote, arg1) {
+      let awaitingRemote;
+      let channelType;
+      let channelType2;
+      let connectHasStarted;
+      let connected;
+      let connected2;
+      ({ channelType, connected, connectedRemote } = arg1);
+      ({ channelType: channelType2, connected: connected2 } = connectedRemote);
+      let tmp = connectedRemote;
+      ({ connectHasStarted, awaitingRemote } = arg1);
+      if (connectedRemote) {
+        tmp = !connectedRemote.connectedRemote;
+      }
+      let tmp2 = !connectedRemote.connectHasStarted && connectHasStarted;
+      if (!tmp2) {
+        if (!(!connected2 && connected)) {
           if (!tmp) {
-            if (!tmp3) {
-              if (!connectedRemote) {
-                return "disconnect";
+            if (connected2) {
+              if (!connected) {
+                if (!awaitingRemote) {
+                  if (!connectedRemote) {
+                    return "disconnect";
+                  }
+                }
               }
             }
           }
         }
       }
-      return "user_join";
+      if (tmp) {
+        return "user_join";
+      } else {
+        const obj = VoiceConnectFeedbackExperimentDefault;
+        if (obj.getConfig({ location: "RTCConnect" }).rtcConnectionJoinSounds) {
+          tmp2 = tmp3;
+        }
+        if (tmp2) {
+          return "user_join";
+        }
+      }
     };
     cResult[0] = items;
     cResult[1] = fn;
     cResult[2] = fn2;
-    tmp4 = fn2;
     tmp3 = fn;
     tmp2 = items;
+    tmp4 = fn2;
   } else {
     [tmp2, tmp3, tmp4] = cResult;
   }
-  closure_31(tmp2, tmp3, tmp4);
+  closure_32(tmp2, tmp3, tmp4);
   return null;
 }) : (() => {
   let voiceChannelId;
   const items = [ChannelStore, RTCConnectionStore, SelectedChannelStore, GameConsoleStore];
-  const tmp = closure_31(items, () => {
+  let tmp = closure_32(items, () => {
     channel = channel.getChannel(voiceChannelId.getVoiceChannelId());
     let type;
     if (channel != null) {
@@ -351,27 +378,52 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const state = RTCConnectionStore.getState();
     const obj = { channelType: type, guildId, connected: state === constants.RTC_CONNECTED, connectHasStarted: !wasEverRtcConnected && state !== constants.DISCONNECTED || state === constants.RTC_CONNECTED, awaitingRemote: null != GameConsoleStore.getAwaitingRemoteSessionInfo(), connectedRemote: null != GameConsoleStore.getRemoteSessionId() };
     return obj;
-  }, (channelType, arg1) => {
-    let connectedRemote;
-    ({ channelType, connectedRemote } = arg1);
-    const channelType2 = channelType.channelType;
-    if (channelType.connectHasStarted) {
-      if (tmp4) {
+  }, (connectedRemote, arg1) => {
+    let awaitingRemote;
+    let channelType;
+    let channelType2;
+    let connectHasStarted;
+    let connected;
+    let connected2;
+    ({ channelType, connected, connectedRemote } = arg1);
+    ({ channelType: channelType2, connected: connected2 } = connectedRemote);
+    let tmp = connectedRemote;
+    ({ connectHasStarted, awaitingRemote } = arg1);
+    if (connectedRemote) {
+      tmp = !connectedRemote.connectedRemote;
+    }
+    let tmp2 = !connectedRemote.connectHasStarted && connectHasStarted;
+    if (!tmp2) {
+      if (!(!connected2 && connected)) {
         if (!tmp) {
-          if (!tmp3) {
-            if (!connectedRemote) {
-              return "disconnect";
+          if (connected2) {
+            if (!connected) {
+              if (!awaitingRemote) {
+                if (!connectedRemote) {
+                  return "disconnect";
+                }
+              }
             }
           }
         }
       }
     }
-    return "user_join";
+    if (tmp) {
+      return "user_join";
+    } else {
+      const obj = VoiceConnectFeedbackExperimentDefault;
+      if (obj.getConfig({ location: "RTCConnect" }).rtcConnectionJoinSounds) {
+        tmp2 = tmp3;
+      }
+      if (tmp2) {
+        return "user_join";
+      }
+    }
   });
   return null;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let currentUserPTTActive;
   let tmp2;
   let tmp3;
@@ -406,12 +458,12 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     [tmp2, tmp3, tmp4] = cResult;
   }
-  closure_31(tmp2, tmp3, tmp4);
+  closure_32(tmp2, tmp3, tmp4);
   return null;
 }) : (() => {
   let currentUserPTTActive;
   const items = [SpeakingStore];
-  closure_31(items, () => currentUserPTTActive.isCurrentUserPTTActive(), (arg0, arg1) => {
+  closure_32(items, () => currentUserPTTActive.isCurrentUserPTTActive(), (arg0, arg1) => {
     if (arg0 !== arg1) {
       const isSelfMuteResult = MediaEngineStore.isSelfMute();
       if (MediaEngineStore.getMode() === constants.PUSH_TO_TALK) {
@@ -428,7 +480,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return null;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp2;
   let tmp3;
   let tmp4;
@@ -469,11 +521,11 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     [tmp2, tmp3, tmp4] = cResult;
   }
-  closure_31(tmp2, tmp3, tmp4);
+  closure_32(tmp2, tmp3, tmp4);
   return null;
 }) : (() => {
   const items = [MediaEngineStore, NotificationSettingsStore];
-  closure_31(items, () => MediaEngineStore.isSelfMutedTemporarily(), (arg0, arg1) => {
+  closure_32(items, () => MediaEngineStore.isSelfMutedTemporarily(), (arg0, arg1) => {
     if (arg0 !== arg1) {
       const isSelfMuteResult = MediaEngineStore.isSelfMute();
       if (MediaEngineStore.getMode() === constants.VOICE_ACTIVITY) {
@@ -497,7 +549,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return null;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let currentUserPrioritySpeaker;
   let tmp2;
   let tmp3;
@@ -532,12 +584,12 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     [tmp2, tmp3, tmp4] = cResult;
   }
-  closure_31(tmp2, tmp3, tmp4);
+  closure_32(tmp2, tmp3, tmp4);
   return null;
 }) : (() => {
   let currentUserPrioritySpeaker;
   const items = [SpeakingStore];
-  closure_31(items, () => currentUserPrioritySpeaker.isCurrentUserPrioritySpeaker(), (arg0, arg1) => {
+  closure_32(items, () => currentUserPrioritySpeaker.isCurrentUserPrioritySpeaker(), (arg0, arg1) => {
     if (arg0 !== arg1) {
       const isSelfMuteResult = MediaEngineStore.isSelfMute();
       if (MediaEngineStore.getMode() === constants.VOICE_ACTIVITY) {
@@ -554,7 +606,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return null;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp2;
   let tmp3;
   let tmp4;
@@ -579,11 +631,11 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     [tmp2, tmp3, tmp4] = cResult;
   }
-  closure_31(tmp2, tmp3, tmp4);
+  closure_32(tmp2, tmp3, tmp4);
   return null;
 }) : (() => {
   const items = [VoiceStateStore];
-  closure_31(items, () => VoiceStateStore.userHasBeenMovedVersion, (arg0, arg1) => {
+  closure_32(items, () => VoiceStateStore.userHasBeenMovedVersion, (arg0, arg1) => {
     if (arg0 !== arg1) {
       return "user_moved";
     }
@@ -591,7 +643,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return null;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp2;
   let tmp3;
   let tmp4;
@@ -626,11 +678,11 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     [tmp2, tmp3, tmp4] = cResult;
   }
-  closure_31(tmp2, tmp3, tmp4);
+  closure_32(tmp2, tmp3, tmp4);
   return null;
 }) : (() => {
   const items = [SelectedChannelStore, VoiceStateStore];
-  closure_31(items, () => {
+  closure_32(items, () => {
     voiceChannelId = voiceChannelId.getVoiceChannelId();
     if (null == voiceChannelId) {
       return require("useAudienceRequestToSpeakState").RequestToSpeakStates.NONE;
@@ -649,33 +701,52 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return null;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let channelId;
+  let constants2;
+  let first;
   let id;
   let inChannel;
-  let tmp2;
   let tmp3;
   let tmp4;
-  const obj = react2;
-  const cResult = obj.c(3);
+  let tmp5;
+  const obj = require("react");
+  const cResult = obj.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [SelectedChannelStore, , , , ];
-    items[1] = ApplicationStreamingStore;
-    items[2] = AuthenticationStore;
-    const tmp8 = VoiceStateStore;
-    items[3] = VoiceStateStore;
-    items[4] = ChannelStore;
-    const fn = function t() {
+    let items = [];
+    let num = 0;
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  _require = react.useRef(first);
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp6 = SelectedChannelStore;
+    let items1 = [SelectedChannelStore, , , , , ];
+    items1[1] = ApplicationStreamingStore;
+    let tmp8 = AuthenticationStore;
+    items1[2] = AuthenticationStore;
+    items1[3] = VoiceStateStore;
+    let tmp10 = ChannelStore;
+    items1[4] = ChannelStore;
+    items1[5] = RTCConnectionStore;
+    const fn = function c() {
       let first;
       voiceChannelId = voiceChannelId.getVoiceChannelId();
       const currentUserId = id.getId();
-      const items = [];
+      let items = [];
+      const items1 = [];
       allActiveStreams = allActiveStreams.getAllActiveStreams();
+      let rtcUserIds = items1;
+      let rtcConnected = false;
       let streamingUserIds = items;
       let voiceChannelUserCount;
       let channelType;
       if (null != voiceChannelId) {
-        const channel = ChannelStore.getChannel(voiceChannelId);
-        streamingUserIds = items;
+        channel = channel.getChannel(voiceChannelId);
+        let diff;
+        let tmp10;
         if (null != channel) {
           const type = channel.type;
           const result = SortedVoiceStateStore.countVoiceStatesForChannel(channel.id);
@@ -683,10 +754,29 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           if (inChannel.isInChannel(channel.id)) {
             num = 1;
           }
-          voiceChannelUserCount = result - num;
+          diff = result - num;
           const allApplicationStreamsForChannel = obj.getAllApplicationStreamsForChannel(channel.id);
-          streamingUserIds = allApplicationStreamsForChannel.map((ownerId) => ownerId.ownerId);
-          channelType = type;
+          items = allApplicationStreamsForChannel.map((ownerId) => ownerId.ownerId);
+          tmp10 = type;
+        }
+        rtcUserIds = items1;
+        rtcConnected = false;
+        streamingUserIds = items;
+        voiceChannelUserCount = diff;
+        channelType = tmp10;
+        const tmp14 = channelId.getChannelId() === voiceChannelId && obj2.getState() === constants2.RTC_CONNECTED;
+        if (tmp14) {
+          const _Array = Array;
+          let userIds = obj2.getUserIds();
+          if (userIds == null) {
+            userIds = [];
+          }
+          const fromResult = from(userIds);
+          rtcUserIds = fromResult.filter((item) => item !== currentUserId);
+          rtcConnected = true;
+          streamingUserIds = items;
+          voiceChannelUserCount = diff;
+          channelType = tmp10;
         }
       }
       if (1 === allActiveStreams.length) {
@@ -704,82 +794,125 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       let singleActiveStreamViewerCount = 0;
       let singleActiveStreamKey = null;
       if (null != first) {
-        const obj2 = require("StreamKeyUtils");
-        const encodeStreamKeyResult = obj2.encodeStreamKey(first);
+        const obj3 = closure_0(dependencyMap[27]);
+        const encodeStreamKeyResult = obj3.encodeStreamKey(first);
         const viewerIds = obj.getViewerIds(encodeStreamKeyResult);
         singleActiveStreamViewerCount = viewerIds.filter((item) => item !== currentUserId).length;
         singleActiveStreamKey = encodeStreamKeyResult;
       }
-      return { channelType, voiceChannelId, voiceChannelUserCount, streamingUserIds, singleActiveStreamKey, singleActiveStreamViewerCount, currentUserId, allActiveStreams };
+      return { channelType, voiceChannelId, voiceChannelUserCount, streamingUserIds, singleActiveStreamKey, singleActiveStreamViewerCount, currentUserId, allActiveStreams, rtcConnected, rtcUserIds };
     };
-    const fn2 = function l(voiceChannelId, arg1) {
+    const fn2 = function o(rtcConnected, arg1) {
       let channelType;
       let closure_129_2;
+      let keys;
+      let rtcUserIds;
       let singleActiveStreamKey;
       let singleActiveStreamViewerCount;
       let streamingUserIds;
+      let streamingUserIds2;
+      let tmp2;
       let voiceChannelUserCount;
-      let closure_0 = voiceChannelId;
+      let voiceChannelUserCount2;
+      closure_0 = rtcConnected;
       ({ channelType, voiceChannelId, voiceChannelUserCount, streamingUserIds } = arg1);
-      ({ singleActiveStreamKey, singleActiveStreamViewerCount, currentUserId: closure_129_2 } = arg1);
-      if (voiceChannelId.voiceChannelId === voiceChannelId) {
+      ({ singleActiveStreamKey, singleActiveStreamViewerCount, currentUserId: closure_129_2, rtcConnected, rtcUserIds } = arg1);
+      const tmp = closure_0;
+      if (rtcConnected) {
+        let rtcConnected2 = rtcConnected.rtcConnected;
+        if (!rtcConnected2) {
+          rtcConnected2 = null == voiceChannelId;
+        }
+        keys = tmp2;
+        if (!rtcConnected2) {
+          const _Object = Object;
+          keys = Object.keys(VoiceStateStore.getVoiceStatesForChannel(voiceChannelId));
+        }
+      } else {
+        keys = [];
+      }
+      const tmp8 = _modDef17131(rtcUserIds, rtcConnected.rtcUserIds);
+      const rtcConnected3 = rtcConnected.rtcConnected && rtcConnected.rtcUserIds.length <= c31 && tmp6(17131)(tmp8, keys).length > 0;
+      const tmp10 = rtcConnected.rtcConnected && rtcConnected && rtcConnected.rtcUserIds.length <= c31 && tmp6(17131)(rtcConnected.rtcUserIds, rtcUserIds).length > 0;
+      tmp.current = _modDef17131(keys, tmp8);
+      if (rtcConnected.voiceChannelId === voiceChannelId) {
         if (null != voiceChannelId) {
-          const channel = ChannelStore.getChannel(voiceChannelId);
+          channel = ChannelStore.getChannel(voiceChannelId);
           let flag = false;
           if (null != channel) {
             const guildId = channel.getGuildId();
             flag = false;
             if (null != guildId) {
-              guild = guild.getGuild(guildId);
+              const guild = GuildStore.getGuild(guildId);
               flag = null != guild && guild.afkChannelId === channel.id;
             }
           }
           if (!flag) {
-            allActiveStreams = voiceChannelId.allActiveStreams;
+            allActiveStreams = rtcConnected.allActiveStreams;
             const someResult = streamingUserIds.some((item) => {
               streamingUserIds = streamingUserIds.streamingUserIds;
               return !streamingUserIds.includes(item);
             });
             let closure_3 = allActiveStreams.map((ownerId) => ownerId.ownerId);
-            const streamingUserIds2 = voiceChannelId.streamingUserIds;
+            ({ streamingUserIds: streamingUserIds2, voiceChannelUserCount: voiceChannelUserCount2 } = rtcConnected);
+            let tmp20 = null != voiceChannelUserCount2;
+            const someResult1 = streamingUserIds2.some((item) => {
+              const hasItem = streamingUserIds.includes(item);
+              let tmp2 = !hasItem;
+              if (tmp2) {
+                const hasItem1 = item === closure_1_2 || closure_3.includes(item);
+                tmp2 = hasItem1;
+              }
+              return tmp2;
+            });
+            if (tmp20) {
+              tmp20 = null != voiceChannelUserCount;
+            }
+            if (tmp20) {
+              tmp20 = voiceChannelUserCount2 <= c31;
+            }
+            let tmp22 = tmp20 && voiceChannelUserCount > voiceChannelUserCount2;
+            if (tmp20) {
+              tmp20 = voiceChannelUserCount < voiceChannelUserCount2;
+            }
+            let rtcConnectionJoinSounds = tmp22 || tmp20 || rtcConnected3 || tmp10;
+            if (rtcConnectionJoinSounds) {
+              const tmp6Result = VoiceConnectFeedbackExperimentDefault;
+              rtcConnectionJoinSounds = tmp6Result.getConfig({ location: "VoiceChannel" }).rtcConnectionJoinSounds;
+            }
+            if (rtcConnectionJoinSounds) {
+              tmp20 = tmp10;
+              tmp22 = rtcConnected3;
+            }
             let str = "stream_started";
             if (!someResult) {
               let str2 = "stream_ended";
-              if (!tmp8) {
-                let str3;
-                let str4;
-                if (voiceChannelId.singleActiveStreamViewerCount <= closure_1_30) {
-                  if (null != singleActiveStreamKey && voiceChannelId.singleActiveStreamKey === singleActiveStreamKey) {
+              if (!someResult1) {
+                const tmp23 = c31;
+                if (rtcConnected.singleActiveStreamViewerCount <= c31) {
+                  let str3;
+                  if (null != singleActiveStreamKey && rtcConnected.singleActiveStreamKey === singleActiveStreamKey) {
                     str3 = "stream_user_joined";
                   }
                   str2 = str3;
                 }
-                if (null != voiceChannelId.voiceChannelUserCount) {
-                  if (null != voiceChannelUserCount) {
-                    if (voiceChannelId.voiceChannelUserCount <= closure_1_30) {
-                      str4 = "user_join";
+                let str4 = "user_join";
+                if (!tmp22) {
+                  let str5 = "user_leave";
+                  if (!tmp20) {
+                    let str6;
+                    if (rtcConnected.singleActiveStreamViewerCount <= tmp23) {
+                      if (null != singleActiveStreamKey && rtcConnected.singleActiveStreamKey === singleActiveStreamKey) {
+                        if (singleActiveStreamViewerCount < rtcConnected.singleActiveStreamViewerCount) {
+                          str6 = "stream_user_left";
+                        }
+                      }
                     }
-                    str3 = str4;
+                    str5 = str6;
                   }
+                  str4 = str5;
                 }
-                if (null != voiceChannelId.voiceChannelUserCount) {
-                  if (null != voiceChannelUserCount) {
-                    let str5;
-                    if (voiceChannelId.voiceChannelUserCount <= closure_1_30) {
-                      str5 = "user_leave";
-                    }
-                    str4 = str5;
-                  }
-                }
-                let str6;
-                if (voiceChannelId.singleActiveStreamViewerCount <= closure_1_30) {
-                  if (null != singleActiveStreamKey && voiceChannelId.singleActiveStreamKey === singleActiveStreamKey) {
-                    if (singleActiveStreamViewerCount < voiceChannelId.singleActiveStreamViewerCount) {
-                      str6 = "stream_user_left";
-                    }
-                  }
-                }
-                str5 = str6;
+                str3 = str4;
               }
               str = str2;
             }
@@ -788,34 +921,42 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     };
-    let num = 0;
-    cResult[0] = items;
-    cResult[1] = fn;
-    cResult[2] = fn2;
-    tmp4 = fn2;
-    tmp2 = items;
-    tmp3 = fn;
+    cResult[1] = items1;
+    cResult[2] = fn;
+    cResult[3] = fn2;
+    tmp5 = fn2;
+    tmp4 = fn;
+    tmp3 = items1;
   } else {
-    [tmp2, tmp3, tmp4] = cResult;
+    tmp3 = cResult[1];
+    tmp4 = cResult[2];
+    tmp5 = cResult[3];
   }
-  closure_31(tmp2, tmp3, tmp4);
+  closure_32(tmp3, tmp4, tmp5);
   return null;
 }) : (() => {
+  let channelId;
+  let constants2;
   let id;
   let inChannel;
-  let items = [SelectedChannelStore, ApplicationStreamingStore, AuthenticationStore, VoiceStateStore, ChannelStore];
-  closure_31(items, () => {
+  let closure_0 = react.useRef([]);
+  let items = [SelectedChannelStore, ApplicationStreamingStore, AuthenticationStore, VoiceStateStore, ChannelStore, RTCConnectionStore];
+  let tmp = closure_32(items, () => {
     let first;
     voiceChannelId = voiceChannelId.getVoiceChannelId();
     const currentUserId = id.getId();
-    const items = [];
+    let items = [];
+    const items1 = [];
     allActiveStreams = allActiveStreams.getAllActiveStreams();
+    let rtcUserIds = items1;
+    let rtcConnected = false;
     let streamingUserIds = items;
     let voiceChannelUserCount;
     let channelType;
     if (null != voiceChannelId) {
-      const channel = ChannelStore.getChannel(voiceChannelId);
-      streamingUserIds = items;
+      channel = channel.getChannel(voiceChannelId);
+      let diff;
+      let tmp10;
       if (null != channel) {
         const type = channel.type;
         const result = SortedVoiceStateStore.countVoiceStatesForChannel(channel.id);
@@ -823,10 +964,29 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         if (inChannel.isInChannel(channel.id)) {
           num = 1;
         }
-        voiceChannelUserCount = result - num;
+        diff = result - num;
         const allApplicationStreamsForChannel = obj.getAllApplicationStreamsForChannel(channel.id);
-        streamingUserIds = allApplicationStreamsForChannel.map((ownerId) => ownerId.ownerId);
-        channelType = type;
+        items = allApplicationStreamsForChannel.map((ownerId) => ownerId.ownerId);
+        tmp10 = type;
+      }
+      rtcUserIds = items1;
+      rtcConnected = false;
+      streamingUserIds = items;
+      voiceChannelUserCount = diff;
+      channelType = tmp10;
+      const tmp14 = channelId.getChannelId() === voiceChannelId && obj2.getState() === constants2.RTC_CONNECTED;
+      if (tmp14) {
+        const _Array = Array;
+        let userIds = obj2.getUserIds();
+        if (userIds == null) {
+          userIds = [];
+        }
+        const fromResult = from(userIds);
+        rtcUserIds = fromResult.filter((item) => item !== currentUserId);
+        rtcConnected = true;
+        streamingUserIds = items;
+        voiceChannelUserCount = diff;
+        channelType = tmp10;
       }
     }
     if (1 === allActiveStreams.length) {
@@ -844,82 +1004,125 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let singleActiveStreamViewerCount = 0;
     let singleActiveStreamKey = null;
     if (null != first) {
-      const obj2 = require("StreamKeyUtils");
-      const encodeStreamKeyResult = obj2.encodeStreamKey(first);
+      const obj3 = closure_0(dependencyMap[27]);
+      const encodeStreamKeyResult = obj3.encodeStreamKey(first);
       const viewerIds = obj.getViewerIds(encodeStreamKeyResult);
       singleActiveStreamViewerCount = viewerIds.filter((item) => item !== currentUserId).length;
       singleActiveStreamKey = encodeStreamKeyResult;
     }
-    return { channelType, voiceChannelId, voiceChannelUserCount, streamingUserIds, singleActiveStreamKey, singleActiveStreamViewerCount, currentUserId, allActiveStreams };
-  }, (voiceChannelId, arg1) => {
+    return { channelType, voiceChannelId, voiceChannelUserCount, streamingUserIds, singleActiveStreamKey, singleActiveStreamViewerCount, currentUserId, allActiveStreams, rtcConnected, rtcUserIds };
+  }, (rtcConnected, arg1) => {
     let channelType;
     let closure_129_2;
+    let keys;
+    let rtcUserIds;
     let singleActiveStreamKey;
     let singleActiveStreamViewerCount;
     let streamingUserIds;
+    let streamingUserIds2;
+    let tmp2;
     let voiceChannelUserCount;
-    let closure_0 = voiceChannelId;
+    let voiceChannelUserCount2;
+    closure_0 = rtcConnected;
     ({ channelType, voiceChannelId, voiceChannelUserCount, streamingUserIds } = arg1);
-    ({ singleActiveStreamKey, singleActiveStreamViewerCount, currentUserId: closure_129_2 } = arg1);
+    ({ singleActiveStreamKey, singleActiveStreamViewerCount, currentUserId: closure_129_2, rtcConnected, rtcUserIds } = arg1);
     let closure_3;
-    if (voiceChannelId.voiceChannelId === voiceChannelId) {
+    const tmp = closure_0;
+    if (rtcConnected) {
+      let rtcConnected2 = rtcConnected.rtcConnected;
+      if (!rtcConnected2) {
+        rtcConnected2 = null == voiceChannelId;
+      }
+      keys = tmp2;
+      if (!rtcConnected2) {
+        const _Object = Object;
+        keys = Object.keys(VoiceStateStore.getVoiceStatesForChannel(voiceChannelId));
+      }
+    } else {
+      keys = [];
+    }
+    const tmp8 = _modDef17131(rtcUserIds, rtcConnected.rtcUserIds);
+    const rtcConnected3 = rtcConnected.rtcConnected && rtcConnected.rtcUserIds.length <= c31 && tmp6(17131)(tmp8, keys).length > 0;
+    const tmp10 = rtcConnected.rtcConnected && rtcConnected && rtcConnected.rtcUserIds.length <= c31 && tmp6(17131)(rtcConnected.rtcUserIds, rtcUserIds).length > 0;
+    tmp.current = _modDef17131(keys, tmp8);
+    if (rtcConnected.voiceChannelId === voiceChannelId) {
       if (null != voiceChannelId) {
-        const channel = ChannelStore.getChannel(voiceChannelId);
+        channel = ChannelStore.getChannel(voiceChannelId);
         let flag = false;
         if (null != channel) {
           const guildId = channel.getGuildId();
           flag = false;
           if (null != guildId) {
-            guild = guild.getGuild(guildId);
+            const guild = GuildStore.getGuild(guildId);
             flag = null != guild && guild.afkChannelId === channel.id;
           }
         }
         if (!flag) {
-          allActiveStreams = voiceChannelId.allActiveStreams;
+          allActiveStreams = rtcConnected.allActiveStreams;
           const someResult = streamingUserIds.some((item) => {
             streamingUserIds = streamingUserIds.streamingUserIds;
             return !streamingUserIds.includes(item);
           });
           closure_3 = allActiveStreams.map((ownerId) => ownerId.ownerId);
-          const streamingUserIds2 = voiceChannelId.streamingUserIds;
+          ({ streamingUserIds: streamingUserIds2, voiceChannelUserCount: voiceChannelUserCount2 } = rtcConnected);
+          let tmp20 = null != voiceChannelUserCount2;
+          const someResult1 = streamingUserIds2.some((item) => {
+            const hasItem = streamingUserIds.includes(item);
+            let tmp2 = !hasItem;
+            if (tmp2) {
+              const hasItem1 = item === closure_1_2 || closure_3.includes(item);
+              tmp2 = hasItem1;
+            }
+            return tmp2;
+          });
+          if (tmp20) {
+            tmp20 = null != voiceChannelUserCount;
+          }
+          if (tmp20) {
+            tmp20 = voiceChannelUserCount2 <= c31;
+          }
+          let tmp22 = tmp20 && voiceChannelUserCount > voiceChannelUserCount2;
+          if (tmp20) {
+            tmp20 = voiceChannelUserCount < voiceChannelUserCount2;
+          }
+          let rtcConnectionJoinSounds = tmp22 || tmp20 || rtcConnected3 || tmp10;
+          if (rtcConnectionJoinSounds) {
+            const tmp6Result = VoiceConnectFeedbackExperimentDefault;
+            rtcConnectionJoinSounds = tmp6Result.getConfig({ location: "VoiceChannel" }).rtcConnectionJoinSounds;
+          }
+          if (rtcConnectionJoinSounds) {
+            tmp20 = tmp10;
+            tmp22 = rtcConnected3;
+          }
           let str = "stream_started";
           if (!someResult) {
             let str2 = "stream_ended";
-            if (!tmp8) {
-              let str3;
-              let str4;
-              if (voiceChannelId.singleActiveStreamViewerCount <= closure_1_30) {
-                if (null != singleActiveStreamKey && voiceChannelId.singleActiveStreamKey === singleActiveStreamKey) {
+            if (!someResult1) {
+              const tmp23 = c31;
+              if (rtcConnected.singleActiveStreamViewerCount <= c31) {
+                let str3;
+                if (null != singleActiveStreamKey && rtcConnected.singleActiveStreamKey === singleActiveStreamKey) {
                   str3 = "stream_user_joined";
                 }
                 str2 = str3;
               }
-              if (null != voiceChannelId.voiceChannelUserCount) {
-                if (null != voiceChannelUserCount) {
-                  if (voiceChannelId.voiceChannelUserCount <= closure_1_30) {
-                    str4 = "user_join";
+              let str4 = "user_join";
+              if (!tmp22) {
+                let str5 = "user_leave";
+                if (!tmp20) {
+                  let str6;
+                  if (rtcConnected.singleActiveStreamViewerCount <= tmp23) {
+                    if (null != singleActiveStreamKey && rtcConnected.singleActiveStreamKey === singleActiveStreamKey) {
+                      if (singleActiveStreamViewerCount < rtcConnected.singleActiveStreamViewerCount) {
+                        str6 = "stream_user_left";
+                      }
+                    }
                   }
-                  str3 = str4;
+                  str5 = str6;
                 }
+                str4 = str5;
               }
-              if (null != voiceChannelId.voiceChannelUserCount) {
-                if (null != voiceChannelUserCount) {
-                  let str5;
-                  if (voiceChannelId.voiceChannelUserCount <= closure_1_30) {
-                    str5 = "user_leave";
-                  }
-                  str4 = str5;
-                }
-              }
-              let str6;
-              if (voiceChannelId.singleActiveStreamViewerCount <= closure_1_30) {
-                if (null != singleActiveStreamKey && voiceChannelId.singleActiveStreamKey === singleActiveStreamKey) {
-                  if (singleActiveStreamViewerCount < voiceChannelId.singleActiveStreamViewerCount) {
-                    str6 = "stream_user_left";
-                  }
-                }
-              }
-              str5 = str6;
+              str3 = str4;
             }
             str = str2;
           }
@@ -931,7 +1134,7 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return null;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp2;
   let tmp3;
   let tmp4;
@@ -943,7 +1146,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     items[5] = ConjureProjectStore;
     items[6] = ApplicationStore;
     items[7] = GuildStore;
-    const fn = function c() {
+    const fn = function u() {
       let embeddedActivitiesForChannel;
       let embeddedActivitiesForChannel1;
       let embeddedActivitiesForChannel2;
@@ -978,7 +1181,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       mainFrame = mainFrame.getMainFrame();
       let surface;
-      const tmp13 = closure_1_25;
+      const tmp13 = closure_1_26;
       if (mainFrame != null) {
         surface = mainFrame.surface;
       }
@@ -1009,7 +1212,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
         tmp21 = type === constants.GUILD_SPACE;
       }
-      const obj4 = { connectedActivityLocation, voiceChannelId, currentUserId: id, channelActivities: embeddedActivitiesForChannel, connectedChannelActivities: embeddedActivitiesForChannel2, userConnectedActivity: selfEmbeddedActivityForLocation, voiceChannelActivities: embeddedActivitiesForChannel1, hasFrame: closure_1_26(mainFrame), inConjureChannel: result1, isGuildSpaceActivity: tmp21 };
+      const obj4 = { connectedActivityLocation, voiceChannelId, currentUserId: id, channelActivities: embeddedActivitiesForChannel, connectedChannelActivities: embeddedActivitiesForChannel2, userConnectedActivity: selfEmbeddedActivityForLocation, voiceChannelActivities: embeddedActivitiesForChannel1, hasFrame: closure_1_27(mainFrame), inConjureChannel: result1, isGuildSpaceActivity: tmp21 };
       return obj4;
     };
     const fn2 = function v(isGuildSpaceActivity, arg1) {
@@ -1195,11 +1398,11 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     [tmp2, tmp3, tmp4] = cResult;
   }
-  let tmp13 = closure_31(tmp2, tmp3, tmp4);
+  let tmp13 = closure_32(tmp2, tmp3, tmp4);
   return null;
 }) : (() => {
   const items = [SelectedChannelStore, EmbeddedActivitiesStore, FramesStore, AuthenticationStore, ChannelStore, ConjureProjectStore, ApplicationStore, GuildStore];
-  const tmp = closure_31(items, () => {
+  const tmp = closure_32(items, () => {
     let embeddedActivitiesForChannel;
     let embeddedActivitiesForChannel1;
     let embeddedActivitiesForChannel2;
@@ -1234,7 +1437,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     mainFrame = mainFrame.getMainFrame();
     let surface;
-    const tmp13 = closure_1_25;
+    const tmp13 = closure_1_26;
     if (mainFrame != null) {
       surface = mainFrame.surface;
     }
@@ -1265,7 +1468,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       tmp21 = type === constants.GUILD_SPACE;
     }
-    const obj4 = { connectedActivityLocation, voiceChannelId, currentUserId: id, channelActivities: embeddedActivitiesForChannel, connectedChannelActivities: embeddedActivitiesForChannel2, userConnectedActivity: selfEmbeddedActivityForLocation, voiceChannelActivities: embeddedActivitiesForChannel1, hasFrame: closure_1_26(mainFrame), inConjureChannel: result1, isGuildSpaceActivity: tmp21 };
+    const obj4 = { connectedActivityLocation, voiceChannelId, currentUserId: id, channelActivities: embeddedActivitiesForChannel, connectedChannelActivities: embeddedActivitiesForChannel2, userConnectedActivity: selfEmbeddedActivityForLocation, voiceChannelActivities: embeddedActivitiesForChannel1, hasFrame: closure_1_27(mainFrame), inConjureChannel: result1, isGuildSpaceActivity: tmp21 };
     return obj4;
   }, (isGuildSpaceActivity, arg1) => {
     let channelActivities;
@@ -1444,15 +1647,15 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return null;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let first;
   let items;
   const obj = react2;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { children: items };
-    items = [closure_27(closure_32, {}), closure_27(closure_33, {}), closure_27(closure_34, {}), closure_27(closure_35, {}), closure_27(closure_36, {}), closure_27(closure_38, {}), closure_27(closure_40, {}), closure_27(closure_39, {}), closure_27(closure_41, {}), closure_27(closure_37, {})];
-    const tmp16 = set(closure_28, obj2);
+    items = [closure_28(closure_33, {}), closure_28(closure_34, {}), closure_28(closure_35, {}), closure_28(closure_36, {}), closure_28(closure_37, {}), closure_28(closure_39, {}), closure_28(closure_41, {}), closure_28(closure_40, {}), closure_28(closure_42, {}), closure_28(closure_38, {})];
+    const tmp16 = __initData(set, obj2);
     cResult[0] = tmp16;
     first = tmp16;
   } else {
@@ -1462,8 +1665,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   let items;
   const obj = { children: items };
-  items = [closure_27(closure_32, {}), closure_27(closure_33, {}), closure_27(closure_34, {}), closure_27(closure_35, {}), closure_27(closure_36, {}), closure_27(closure_38, {}), closure_27(closure_40, {}), closure_27(closure_39, {}), closure_27(closure_41, {}), closure_27(closure_37, {})];
-  return set(closure_28, obj);
+  items = [closure_28(closure_33, {}), closure_28(closure_34, {}), closure_28(closure_35, {}), closure_28(closure_36, {}), closure_28(closure_37, {}), closure_28(closure_39, {}), closure_28(closure_41, {}), closure_28(closure_40, {}), closure_28(closure_42, {}), closure_28(closure_38, {})];
+  return __initData(set, obj);
 });
 let result = size.fileFinishedImporting("modules/soundplayer/SoundPlayer.tsx");
 

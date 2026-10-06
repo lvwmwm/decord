@@ -1,9 +1,9 @@
 // Module ID: 14145
 // Function ID: 14146
-// Dependencies: [14133]
+// Dependencies: [14079]
 
 // Module 14145
-import _mod14133 from "module_14133" /* 14133 */;
+import _mod14079 from "module_14079" /* 14079 */;
 
 
-export const URLSearchParams = _mod14133.URLSearchParams;
+export default _mod14079;

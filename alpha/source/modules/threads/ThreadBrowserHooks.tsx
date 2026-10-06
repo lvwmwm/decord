@@ -1,25 +1,25 @@
-// Module ID: 12431
-// Function ID: 12432
+// Module ID: 12446
+// Function ID: 12447
 // Name: ThreadBrowserHooks
-// Dependencies: [32, 19, 12432, 2051, 4509, 4905, 5692, 7262, 4511, 1096, 558, 576, 7409, 12, 1375, 504, 11, 7261, 7541, 2]
+// Dependencies: [32, 19, 12447, 2051, 4515, 4911, 5699, 7275, 4517, 1096, 558, 576, 7420, 12, 1375, 504, 11, 7274, 7552, 2]
 
-// Module 12431 (ThreadBrowserHooks)
+// Module 12446 (ThreadBrowserHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1096 */;
 import GlobalUtils from "GlobalUtils" /* 1375 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7261 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 7541 */;
-import ReportToModChannelStore from "ReportToModChannelStore" /* 12432 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7274 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 7552 */;
+import ReportToModChannelStore from "ReportToModChannelStore" /* 12447 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import ReadStateStore from "ReadStateStore" /* 4905 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 5692 */;
-import ArchivedThreadsStore from "ArchivedThreadsStore" /* 7262 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4511 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
+import ReadStateStore from "ReadStateStore" /* 4911 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 5699 */;
+import ArchivedThreadsStore from "ArchivedThreadsStore" /* 7275 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4517 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

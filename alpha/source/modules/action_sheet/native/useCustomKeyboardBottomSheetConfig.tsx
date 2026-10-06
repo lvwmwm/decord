@@ -1,15 +1,15 @@
-// Module ID: 11823
-// Function ID: 11824
+// Module ID: 11837
+// Function ID: 11838
 // Name: useCustomKeyboardBottomSheetConfig
-// Dependencies: [19, 4879, 1369, 1884, 4747, 1616, 558, 576, 1484, 9776, 5984, 9775, 2]
+// Dependencies: [19, 4885, 1369, 1884, 4753, 1616, 558, 576, 1484, 9789, 5991, 9788, 2]
 
-// Module 11823 (useCustomKeyboardBottomSheetConfig)
+// Module 11837 (useCustomKeyboardBottomSheetConfig)
 import PlatformUtils from "PlatformUtils" /* 1369 */;
 import KeyboardTypes from "KeyboardTypes" /* 1616 */;
 import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1884 */;
-import useKeyboardType from "useKeyboardType" /* 4747 */;
+import useKeyboardType from "useKeyboardType" /* 4753 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 4885 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmp8 = minimum(1484)(first);
   _require = tmp8;
-  const tmp9 = minimum(9776)();
+  const tmp9 = minimum(9789)();
   minimum = tmp9.minimum;
   const maximum = tmp9.maximum;
   if (cResult[1] === minimum) {
@@ -47,8 +47,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[2] === tmp8.height) {
       tmp10 = cResult[3];
     }
-    ({ initialPosition, animateOnMount } = minimum(5984)(tmp10));
-    minimum(5984)(tmp10);
+    ({ initialPosition, animateOnMount } = minimum(5991)(tmp10));
+    minimum(5991)(tmp10);
     if (cResult[4] === maximum) {
       if (cResult[5] === minimum) {
         let tmp12;
@@ -136,7 +136,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj2;
   let str;
   let styles;
-  const f109372 = () => {
+  const f109525 = () => {
     const obj = { initialPosition: styles.height - minimum, animateOnMount: false };
     let tmp3 = obj;
     const obj2 = PlatformUtils;
@@ -175,8 +175,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   minimum = tmp3.minimum;
   const maximum = tmp3.maximum;
   let items = [flag, maximum, minimum];
-  ({ initialPosition, animateOnMount } = require("useInitialValue")(f109372));
-  const tmp4 = require("useInitialValue")(f109372);
+  ({ initialPosition, animateOnMount } = require("useInitialValue")(f109525));
+  const tmp4 = require("useInitialValue")(f109525);
   let obj = { animateOnMount, enablePanDownToClose: flag2, accessible: obj2.isAndroid() && undefined, contentHeight: maximum, containerHeight: tmp2.height, enableDynamicSizing: false, initialPosition, keyboardBehavior: "extend", android_keyboardInputMode: str, snapPoints: memo };
   memo = maximum.useMemo(() => {
     let items1;

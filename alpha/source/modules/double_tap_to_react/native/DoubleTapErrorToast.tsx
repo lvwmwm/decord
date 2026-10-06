@@ -1,25 +1,25 @@
-// Module ID: 7631
-// Function ID: 7632
+// Module ID: 7642
+// Function ID: 7643
 // Name: DoubleTapErrorToast
-// Dependencies: [19, 17, 1380, 21, 4890, 587, 558, 576, 7632, 1126, 4574, 4568, 4886, 2]
+// Dependencies: [19, 17, 1380, 21, 4896, 587, 558, 576, 7643, 1126, 4580, 4574, 4892, 2]
 // Exports: showDoubleTapErrorToast
 
-// Module 7631 (DoubleTapErrorToast)
+// Module 7642 (DoubleTapErrorToast)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import EmojiConstants from "EmojiConstants" /* 1380 */;
-import Text_Text from "Text/Text" /* 4886 */;
+import Text_Text from "Text/Text" /* 4892 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const XSmallBoldIcon2 = tmp(7632);
+const XSmallBoldIcon2 = tmp(7643);
 const View = react_native.View;
 const EmojiDisabledReasons = EmojiConstants.EmojiDisabledReasons;
 const jsx = Fragment.jsx;
@@ -60,9 +60,9 @@ export const showDoubleTapErrorToast = function showDoubleTapErrorToast(emojiNam
   emojiName = emojiName.emojiName;
   const reason = emojiName.reason;
   const tmp = emojiName;
-  let obj = emojiName(4574);
+  let obj = emojiName(4580);
   const designSystemsNotificationComponents = obj.getDesignSystemsNotificationComponents("showDoubleTapErrorToast");
-  const obj2 = reason(4568);
+  const obj2 = reason(4574);
   if (designSystemsNotificationComponents) {
     let stringResult;
     const openMana = obj2.openMana;

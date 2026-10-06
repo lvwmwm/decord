@@ -1,21 +1,21 @@
-// Module ID: 9151
-// Function ID: 9152
+// Module ID: 9186
+// Function ID: 9187
 // Name: PopoutMenu
-// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 1188, 8895, 6633, 1484, 1618, 12, 4612, 4891, 4857, 6140, 2]
+// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 1188, 8924, 6640, 1484, 1618, 12, 4618, 4897, 4863, 6147, 2]
 
-// Module 9151 (PopoutMenu)
+// Module 9186 (PopoutMenu)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Patterns from "Patterns" /* 4857 */;
-import timing from "timing" /* 4891 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
-import FormRowDefault from "FormRow" /* 6633 */;
+import Patterns from "Patterns" /* 4863 */;
+import timing from "timing" /* 4897 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6147 */;
+import FormRowDefault from "FormRow" /* 6640 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -27,8 +27,8 @@ let metroRequire;
 let obj2;
 let tmp;
 const native = tmp(1188);
-const ReanimatedRexport = tmp(4612);
-const Form = tmp(8895);
+const ReanimatedRexport = tmp(4618);
+const Form = tmp(8924);
 let react = react_mod;
 let View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
@@ -353,7 +353,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
           closure_6(false);
         }
       }
-      const tmpResult = tmp(4612);
+      const tmpResult = tmp(4618);
       class De {
         constructor() {
           let fn;
@@ -392,7 +392,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
           return obj;
         }
       }
-      const obj3 = { withTiming: tmp(4891).withTiming, animateIn: first > 0 && !first1, STANDARD_EASING: tmp(1188).STANDARD_EASING, ANIMATION_DURATION: v250, runOnJS: tmp(4612).runOnJS, handleClose, EXTRA_PADDING: 8 };
+      const obj3 = { withTiming: tmp(4897).withTiming, animateIn: first > 0 && !first1, STANDARD_EASING: tmp(1188).STANDARD_EASING, ANIMATION_DURATION: v250, runOnJS: tmp(4618).runOnJS, handleClose, EXTRA_PADDING: 8 };
       const useAnimatedStyle = tmpResult.useAnimatedStyle;
       De.__closure = obj3;
       De.__workletHash = 4709130936628;
@@ -457,7 +457,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
               return;
             }
           }
-          let obj4 = { runOnJS: tmp(4612).runOnJS, _setClose: tmp10[1] };
+          let obj4 = { runOnJS: tmp(4618).runOnJS, _setClose: tmp10[1] };
           PopoutMenuTsx4.__closure = obj4;
           PopoutMenuTsx4.__workletHash = 15929711498886;
           PopoutMenuTsx4.__initData = Ie;
@@ -471,13 +471,13 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
             }
           }
         }
-        const Gesture = tmp(6140).Gesture;
+        const Gesture = tmp(6147).Gesture;
         const LongPressResult = Gesture.LongPress();
         function ve() {
           const obj = ReanimatedRexport;
           obj.runOnJS(Oe)();
         }
-        let obj5 = { runOnJS: tmp(4612).runOnJS, handleLongPress: tmp40 };
+        let obj5 = { runOnJS: tmp(4618).runOnJS, handleLongPress: tmp40 };
         const onStart = LongPressResult.onBegin(tmp42).onStart;
         LongPressResult.onBegin(tmp42);
         ve.__closure = obj5;
@@ -552,7 +552,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
         }
         const obj6 = { gesture: tmp41, children: closure_6(first2, obj8) };
         obj8 = { ref, children: trigger };
-        const GestureDetector = tmp(6140).GestureDetector;
+        const GestureDetector = tmp(6147).GestureDetector;
         const items2 = [closure_6(GestureDetector, obj6), ];
         let tmp49Result = null;
         const tmp50 = ref1;
@@ -572,7 +572,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
             debounceResult(nativeEvent.nativeEvent.layout.height);
           };
           let tmp51Result = null;
-          View = tmp5(4612).View;
+          View = tmp5(4618).View;
           if (null != title) {
             class PopoutMenuTsx4 {
               constructor() {

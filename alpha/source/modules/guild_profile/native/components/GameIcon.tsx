@@ -1,16 +1,16 @@
-// Module ID: 9405
-// Function ID: 9406
+// Module ID: 9419
+// Function ID: 9420
 // Name: components/GameIcon
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1402, 9406, 9407, 5909, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1402, 9420, 9421, 5916, 2]
 
-// Module 9405 (components/GameIcon)
+// Module 9419 (components/GameIcon)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -21,9 +21,9 @@ let metroRequire;
 let size;
 let size1;
 let tmp;
-const Pressables = tmp(5909);
-const ClanGameplayActivity = tmp(9406);
-const FireIcon3 = tmp(9407);
+const Pressables = tmp(5916);
+const ClanGameplayActivity = tmp(9420);
+const FireIcon3 = tmp(9421);
 ({ View: closure_4, Image: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -253,13 +253,13 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj2 = { style: items1, onPress: callback, children: items2 };
       items1 = [style, tmp.gameIcon];
       const obj3 = { style: tmp.gameIconImage, source };
-      const PressableHighlight = tmp7(5909).PressableHighlight;
+      const PressableHighlight = tmp7(5916).PressableHighlight;
       items2 = [metroRequire(hasOwnProperty, obj3), ];
       const tmp14 = metroImportDefault;
       if (tmp15Result) {
         const obj4 = { style: tmp.gameIconMask, children: metroRequire(FireIcon2, obj5) };
         obj5 = { style: tmp.fireIcon, color: nativeDefault.unsafe_rawColors.ORANGE_260 };
-        FireIcon2 = tmp7(9407).FireIcon;
+        FireIcon2 = tmp7(9421).FireIcon;
         tmp15Result = tmp15(React3, obj4);
       }
       items2[1] = tmp15Result;
@@ -274,7 +274,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (tmp21Result) {
         const obj8 = { style: tmp.gameIconMask, children: metroRequire(FireIcon, obj9) };
         obj9 = { style: tmp.fireIcon, color: nativeDefault.unsafe_rawColors.ORANGE_330 };
-        FireIcon = tmp7(9407).FireIcon;
+        FireIcon = tmp7(9421).FireIcon;
         tmp21Result = tmp21(tmp20, obj8);
       }
       items4[1] = tmp21Result;

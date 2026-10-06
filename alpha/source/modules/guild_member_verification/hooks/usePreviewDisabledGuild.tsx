@@ -1,13 +1,13 @@
-// Module ID: 5967
-// Function ID: 5968
+// Module ID: 5974
+// Function ID: 5975
 // Name: usePreviewDisabledGuild
-// Dependencies: [19, 2074, 5963, 558, 576, 504, 5937, 2066, 2]
+// Dependencies: [19, 2074, 5970, 558, 576, 504, 5944, 2066, 2]
 
-// Module 5967 (usePreviewDisabledGuild)
-import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 5937 */;
+// Module 5974 (usePreviewDisabledGuild)
+import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 5944 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5963 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5970 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

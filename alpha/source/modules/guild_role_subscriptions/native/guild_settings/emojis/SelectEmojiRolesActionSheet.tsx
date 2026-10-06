@@ -1,21 +1,21 @@
-// Module ID: 17976
-// Function ID: 17977
+// Module ID: 18022
+// Function ID: 18023
 // Name: SelectEmojiRolesActionSheet
-// Dependencies: [32, 19, 17, 1192, 1096, 21, 4890, 587, 5915, 558, 576, 15030, 8895, 4886, 1126, 1188, 5909, 6644, 6569, 6701, 2]
+// Dependencies: [32, 19, 17, 1192, 1096, 21, 4896, 587, 5922, 558, 576, 15045, 8924, 4892, 1126, 1188, 5916, 6651, 6576, 6708, 2]
 
-// Module 17976 (SelectEmojiRolesActionSheet)
+// Module 18022 (SelectEmojiRolesActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import native from "native" /* 1188 */;
 import FormConstants from "FormConstants" /* 1192 */;
-import Pressables from "Pressables" /* 5909 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15030 */;
+import Pressables from "Pressables" /* 5916 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15045 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import TextStyles_mod from "TextStyles" /* 5915 */;
+import createStyles_mod from "createStyles" /* 4896 */;
+import TextStyles_mod from "TextStyles" /* 5922 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,8 +33,8 @@ let obj6;
 let obj7;
 let tmp5;
 const intl5 = tmp5(1126);
-const BottomSheetTitleHeader2 = tmp5(6644);
-const ActionSheet2 = tmp5(6701);
+const BottomSheetTitleHeader2 = tmp5(6651);
+const ActionSheet2 = tmp5(6708);
 let react = react_mod;
 const View = react_native.View;
 const FORM_ROW_VERTICAL_PADDING = FormConstants.FORM_ROW_VERTICAL_PADDING;
@@ -111,7 +111,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSave) => {
   } else {
     tmp11 = cResult[2];
   }
-  const tmpResult = tmp(15030);
+  const tmpResult = tmp(15045);
   const subscriptionListingsForGuild = tmpResult.useSubscriptionListingsForGuild(guildId, tmp11);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class P {
@@ -320,7 +320,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSave) => {
   const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl3 = intl5.intl;
   intl4 = intl5.intl;
-  let obj5 = { scrollable: true, header: tmp7(BottomSheetTitleHeader, obj4), startExpanded: true, onDismiss: onCancel, children: tmp7(emoji(6569), obj6) };
+  let obj5 = { scrollable: true, header: tmp7(BottomSheetTitleHeader, obj4), startExpanded: true, onDismiss: onCancel, children: tmp7(emoji(6576), obj6) };
   tmp7(BottomSheetTitleHeader, obj4);
   const ActionSheet = ActionSheet2.ActionSheet;
   obj6 = {

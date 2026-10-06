@@ -1,21 +1,21 @@
-// Module ID: 14776
-// Function ID: 14777
+// Module ID: 14792
+// Function ID: 14793
 // Name: PlayStationTwoWayLinkUpsell
-// Dependencies: [19, 1085, 21, 4890, 558, 576, 2115, 14774, 1126, 5974, 14777, 8764, 2036, 2]
+// Dependencies: [19, 1085, 21, 4896, 558, 576, 2115, 14790, 1126, 5981, 14793, 8796, 2036, 2]
 
-// Module 14776 (PlayStationTwoWayLinkUpsell)
+// Module 14792 (PlayStationTwoWayLinkUpsell)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
 import dismissible_content from "dismissible_content" /* 2036 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 8764 */;
-import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 14774 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14777 */;
+import FastImageDefault from "FastImage" /* 5981 */;
+import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 8796 */;
+import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 14790 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14793 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = HelpdeskUtilsDefault;
     const articleURL = obj2.getArticleURL(constants.PS_CONNECTION);
-    const OneWayToTwoWayLinkUpsell = tmp(14774).OneWayToTwoWayLinkUpsell;
+    const OneWayToTwoWayLinkUpsell = tmp(14790).OneWayToTwoWayLinkUpsell;
     const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t.v20wwm);
     const intl2 = tmp(1126).intl;

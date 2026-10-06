@@ -1,25 +1,25 @@
-// Module ID: 16433
-// Function ID: 16434
+// Module ID: 16473
+// Function ID: 16474
 // Name: AnnouncementMessageRow
-// Dependencies: [19, 17, 2051, 2074, 4519, 5071, 1377, 16434, 21, 16394, 587, 558, 576, 504, 5705, 8029, 10651, 11280, 16435, 16397, 1126, 11, 9260, 16437, 5909, 16441, 16442, 2]
+// Dependencies: [19, 17, 2051, 2074, 4525, 5077, 1377, 16474, 21, 16434, 587, 558, 576, 504, 5712, 8039, 10664, 11293, 16475, 16437, 1126, 11, 9295, 16477, 5916, 16481, 16482, 2]
 
-// Module 16433 (AnnouncementMessageRow)
+// Module 16473 (AnnouncementMessageRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5705 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8029 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10651 */;
-import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 11280 */;
-import DesignConstants from "DesignConstants" /* 16434 */;
-import ICYMIShared from "ICYMIShared" /* 16435 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5712 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8039 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10664 */;
+import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 11293 */;
+import DesignConstants from "DesignConstants" /* 16474 */;
+import ICYMIShared from "ICYMIShared" /* 16475 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
+import RelationshipStore from "RelationshipStore" /* 4525 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
 import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16394 */;
+import createICYMIStyles from "createICYMIStyles" /* 16434 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -113,7 +113,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
                   if (null != message) {
                     const _Date = Date;
                     const obj4 = { id: message.id, timestamp: Date.now() };
-                    const ackGravityItems = tmp(8029).ackGravityItems;
+                    const ackGravityItems = tmp(8039).ackGravityItems;
                     ICYMIActionCreatorsDefault;
                     const items = [obj4];
                     ackGravityItems(items);
@@ -146,7 +146,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
                     if (null != message) {
                       const _Date = Date;
                       const obj4 = { id: message.id, timestamp: Date.now() };
-                      const ackGravityItems = tmp(8029).ackGravityItems;
+                      const ackGravityItems = tmp(8039).ackGravityItems;
                       ICYMIActionCreatorsDefault;
                       const items = [obj4];
                       ackGravityItems(items);
@@ -184,7 +184,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
                     if (null != message) {
                       const _Date = Date;
                       const obj4 = { id: message.id, timestamp: Date.now() };
-                      const ackGravityItems = tmp(8029).ackGravityItems;
+                      const ackGravityItems = tmp(8039).ackGravityItems;
                       ICYMIActionCreatorsDefault;
                       const items = [obj4];
                       ackGravityItems(items);
@@ -275,7 +275,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
                                             if (null != message) {
                                               const _Date = Date;
                                               const obj4 = { id: message.id, timestamp: Date.now() };
-                                              const ackGravityItems = tmp(8029).ackGravityItems;
+                                              const ackGravityItems = tmp(8039).ackGravityItems;
                                               ICYMIActionCreatorsDefault;
                                               const items = [obj4];
                                               ackGravityItems(items);
@@ -342,7 +342,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
                                           if (null != message) {
                                             const _Date = Date;
                                             const obj4 = { id: message.id, timestamp: Date.now() };
-                                            const ackGravityItems = tmp(8029).ackGravityItems;
+                                            const ackGravityItems = tmp(8039).ackGravityItems;
                                             ICYMIActionCreatorsDefault;
                                             const items = [obj4];
                                             ackGravityItems(items);
@@ -381,7 +381,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
                                       if (null != message) {
                                         const _Date = Date;
                                         const obj4 = { id: message.id, timestamp: Date.now() };
-                                        const ackGravityItems = tmp(8029).ackGravityItems;
+                                        const ackGravityItems = tmp(8039).ackGravityItems;
                                         ICYMIActionCreatorsDefault;
                                         const items = [obj4];
                                         ackGravityItems(items);
@@ -426,7 +426,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
                             if (null != message) {
                               const _Date = Date;
                               const obj4 = { id: message.id, timestamp: Date.now() };
-                              const ackGravityItems = tmp(8029).ackGravityItems;
+                              const ackGravityItems = tmp(8039).ackGravityItems;
                               ICYMIActionCreatorsDefault;
                               const items = [obj4];
                               ackGravityItems(items);
@@ -469,7 +469,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
                       if (null != message) {
                         const _Date = Date;
                         const obj4 = { id: message.id, timestamp: Date.now() };
-                        const ackGravityItems = tmp(8029).ackGravityItems;
+                        const ackGravityItems = tmp(8039).ackGravityItems;
                         ICYMIActionCreatorsDefault;
                         const items = [obj4];
                         ackGravityItems(items);
@@ -508,7 +508,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
                     if (null != message) {
                       const _Date = Date;
                       const obj4 = { id: message.id, timestamp: Date.now() };
-                      const ackGravityItems = tmp(8029).ackGravityItems;
+                      const ackGravityItems = tmp(8039).ackGravityItems;
                       ICYMIActionCreatorsDefault;
                       const items = [obj4];
                       ackGravityItems(items);
@@ -553,7 +553,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
               if (null != message) {
                 const _Date = Date;
                 const obj4 = { id: message.id, timestamp: Date.now() };
-                const ackGravityItems = tmp(8029).ackGravityItems;
+                const ackGravityItems = tmp(8039).ackGravityItems;
                 ICYMIActionCreatorsDefault;
                 const items = [obj4];
                 ackGravityItems(items);
@@ -720,7 +720,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
     if (null != message) {
       const _Date = Date;
       const obj4 = { id: message.id, timestamp: Date.now() };
-      const ackGravityItems = tmp(8029).ackGravityItems;
+      const ackGravityItems = tmp(8039).ackGravityItems;
       ICYMIActionCreatorsDefault;
       const items = [obj4];
       ackGravityItems(items);

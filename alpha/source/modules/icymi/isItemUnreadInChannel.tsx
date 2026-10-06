@@ -1,12 +1,12 @@
-// Module ID: 8026
-// Function ID: 8027
+// Module ID: 8036
+// Function ID: 8037
 // Name: isItemUnreadInChannel
-// Dependencies: [4905, 11, 2]
+// Dependencies: [4911, 11, 2]
 // Exports: isItemUnreadInChannel
 
-// Module 8026 (isItemUnreadInChannel)
+// Module 8036 (isItemUnreadInChannel)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ReadStateStore from "ReadStateStore" /* 4905 */;
+import ReadStateStore from "ReadStateStore" /* 4911 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/icymi/isItemUnreadInChannel.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 9268
-// Function ID: 9269
+// Module ID: 9303
+// Function ID: 9304
 // Name: useSelectStage
-// Dependencies: [5, 32, 19, 2051, 2103, 558, 576, 504, 8069, 2]
+// Dependencies: [5, 32, 19, 2051, 2103, 558, 576, 504, 8102, 2]
 
-// Module 9268 (useSelectStage)
+// Module 9303 (useSelectStage)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

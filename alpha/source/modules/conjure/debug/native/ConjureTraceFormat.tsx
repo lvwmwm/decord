@@ -1,15 +1,15 @@
-// Module ID: 16761
-// Function ID: 16762
+// Module ID: 16782
+// Function ID: 16783
 // Name: ConjureTraceFormat
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 16762, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 16783, 2]
 
-// Module 16761 (ConjureTraceFormat)
+// Module 16782 (ConjureTraceFormat)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let status;
 
 let obj2;
 let tmp;
-const debug_ConjureTraceFormat = tmp(16762);
+const debug_ConjureTraceFormat = tmp(16783);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;

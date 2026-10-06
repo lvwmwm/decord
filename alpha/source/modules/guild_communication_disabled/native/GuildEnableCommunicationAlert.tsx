@@ -1,14 +1,14 @@
-// Module ID: 11455
-// Function ID: 11456
+// Module ID: 11468
+// Function ID: 11469
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 32, 109, 19, 17, 1377, 2114, 1085, 21, 4890, 558, 576, 7636, 10667, 1252, 5590, 5042, 11454, 4568, 1126, 4805, 4886, 5783, 2]
+// Dependencies: [5, 32, 109, 19, 17, 1377, 2114, 1085, 21, 4896, 558, 576, 7647, 10680, 1252, 5597, 5048, 11467, 4574, 1126, 4811, 4892, 5790, 2]
 
-// Module 11455 (GuildEnableCommunicationAlert)
+// Module 11468 (GuildEnableCommunicationAlert)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
-import useUserCommunicationDisabledDefault from "useUserCommunicationDisabled" /* 7636 */;
-import CountDownDefault from "CountDown" /* 10667 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5048 */;
+import useUserCommunicationDisabledDefault from "useUserCommunicationDisabled" /* 7647 */;
+import CountDownDefault from "CountDown" /* 10680 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -17,7 +17,7 @@ import UserStore from "UserStore" /* 1377 */;
 import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2114 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let closure_12;
 let map1;
 let tmp11;
 let unpackModuleId;
-const useMountEffectDefault = tmp11(5590);
+const useMountEffectDefault = tmp11(5597);
 let closure_3 = ["guildId", "userId", "onCancel"];
 const View = react_native.View;
 ({ CLEAR_COMMUNICATION_DISABLED_MODAL_NAME: c9, GUILD_COMMUNICATION_DISABLED_RESOURCE_LINK: c10 } = GuildDisableCommunicationConstants);
@@ -204,8 +204,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const tmp2 = closure_14();
   dependencyMap = tmp2;
   const tmp3 = userId;
-  closure_3 = _slicedToArray(userId(7636)(userId, guildId), 1)[0];
-  userId(5590)(() => {
+  closure_3 = _slicedToArray(userId(7647)(userId, guildId), 1)[0];
+  userId(5597)(() => {
     obj = AnalyticsUtilsDefault;
     const obj2 = { type, guild_id: guildId, other_user_id: userId };
     obj.track(unpackModuleId.OPEN_MODAL, obj2);
@@ -222,7 +222,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     },
     children: tmp11(tmp12, obj2)
   };
-  const tmp7 = userId(5783);
+  const tmp7 = userId(5790);
   const merged1 = Object.assign(merged);
   intl = guildId(1126).intl;
   intl2 = guildId(1126).intl;
@@ -233,12 +233,12 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   intl3 = tmp9(1126).intl;
   obj2 = { style: tmp2.body, children: items };
   let obj3 = { style: tmp2.description, variant: "text-sm/medium", children: format(prop, obj4) };
-  const Text = tmp9(4886).Text;
+  const Text = tmp9(4892).Text;
   const intl4 = tmp9(1126).intl;
   format = intl4.format;
   prop = tmp9(1126).t["t+abNU"];
   const user = UserStore.getUser(userId);
-  const tmp3Result = tmp3(5042);
+  const tmp3Result = tmp3(5048);
   let str = tmp3Result.getName(guildId, null, user);
   tmp11 = closure_13;
   tmp12 = View;
@@ -263,7 +263,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let obj5 = { style: items1, variant: "text-sm/medium", children: intl5.format(tmp9(1126).t.KtENkK, obj6) };
   items1 = [, ];
   ({ cta: arr2[0], description: arr2[1] } = tmp2);
-  const Text2 = tmp9(4886).Text;
+  const Text2 = tmp9(4892).Text;
   intl5 = tmp9(1126).intl;
   obj6 = { link };
   items[1] = closure_12(Text2, obj5);

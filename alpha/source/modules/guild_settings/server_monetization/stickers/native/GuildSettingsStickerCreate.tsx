@@ -1,26 +1,26 @@
-// Module ID: 17751
-// Function ID: 17752
+// Module ID: 17797
+// Function ID: 17798
 // Name: GuildSettingsStickerCreate
-// Dependencies: [5, 32, 19, 17, 5638, 5687, 1085, 1380, 2031, 21, 4890, 587, 6471, 10836, 5984, 4523, 7274, 17752, 10112, 5428, 4886, 1126, 5317, 2115, 5594, 5593, 5909, 10127, 17753, 9866, 6625, 1402, 8411, 6098, 6580, 2]
+// Dependencies: [5, 32, 19, 17, 5645, 5694, 1085, 1380, 2031, 21, 4896, 587, 6478, 10849, 5991, 4529, 7287, 17798, 10125, 5435, 4892, 1126, 5324, 2115, 5601, 5600, 5916, 10140, 17799, 9879, 6632, 1402, 8444, 6105, 6587, 2]
 
-// Module 17751 (GuildSettingsStickerCreate)
+// Module 17797 (GuildSettingsStickerCreate)
 import nativeDefault from "native" /* 587 */;
 import StickersConstants from "StickersConstants" /* 2031 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4523 */;
-import useInitialValueDefault from "useInitialValue" /* 5984 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6471 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9866 */;
-import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 10836 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4529 */;
+import useInitialValueDefault from "useInitialValue" /* 5991 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6478 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9879 */;
+import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 10849 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmojiStore from "EmojiStore" /* 5638 */;
-import StickersStore_mod from "StickersStore" /* 5687 */;
+import EmojiStore from "EmojiStore" /* 5645 */;
+import StickersStore_mod from "StickersStore" /* 5694 */;
 import Constants from "Constants" /* 1085 */;
 import EmojiConstants from "EmojiConstants" /* 1380 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import size_mod from "module_2" /* 2 */;
 
 let c4, stickerId;
@@ -46,8 +46,8 @@ let tmp14;
 let unpackModuleId;
 const AvatarUtilsDefault = tmp14(1402);
 const HelpdeskUtilsDefault = tmp14(2115);
-const EmojiDefault = tmp14(6625);
-const StickerDefault = tmp14(10127);
+const EmojiDefault = tmp14(6632);
+const StickerDefault = tmp14(10140);
 ({ Image: metroRequire, ScrollView: metroImportDefault } = react_native);
 let StickersStore = StickersStore_mod;
 ({ HelpdeskArticles: c10, UPLOAD_STICKER_SIZE: unpackModuleId } = Constants);
@@ -507,19 +507,19 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
   if (null == stickerId) {
     const tmp26 = user;
     let obj6 = { variant: "heading-md/semibold", style: tmp.title, children: intl.string(stickerId(1126).t["9N2OWD"]) };
-    const Text = stickerId(4886).Text;
+    const Text = stickerId(4892).Text;
     intl = stickerId(1126).intl;
     const items2 = [onPressEmoji(Text, obj6), , , ];
     let obj7 = { variant: "text-sm/medium", color: "text-muted", style: tmp.description, children: format(hxLviw, obj8) };
-    const Text2 = stickerId(4886).Text;
+    const Text2 = stickerId(4892).Text;
     const intl2 = stickerId(1126).intl;
     format = intl2.format;
     obj8 = { fileSize: obj9.formatKbSize(first1, { useKibibytes: true }) };
     hxLviw = stickerId(1126).t.hxLviw;
-    obj9 = stickerId(5317);
+    obj9 = stickerId(5324);
     items2[1] = onPressEmoji(Text2, obj7);
     let obj10 = { variant: "text-sm/medium", color: "text-muted", style: tmp.help, children: format2(UBj0aX, obj11) };
-    const Text3 = stickerId(4886).Text;
+    const Text3 = stickerId(4892).Text;
     const intl3 = stickerId(1126).intl;
     format2 = intl3.format;
     obj11 = { articleUrl: tmp14Result.getArticleURL(uri.STICKERS_UPLOAD) };
@@ -527,7 +527,7 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
     tmp14Result = HelpdeskUtilsDefault;
     items2[2] = onPressEmoji(Text3, obj10);
     let obj12 = { text: intl4.string(stickerId(1126).t.O1REe1), onPress: handleImagePicker, variant: str };
-    const Button = stickerId(5594).Button;
+    const Button = stickerId(5601).Button;
     intl4 = stickerId(1126).intl;
     str = "secondary";
     const tmp27 = onPressEmoji;
@@ -540,13 +540,13 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
   }
   items3 = [tmp23Result, ];
   const obj14 = { style: tmp.stack, children: items4 };
-  const Stack = stickerId(5593).Stack;
+  const Stack = stickerId(5600).Stack;
   const obj15 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.stickerPreviewLabel, children: intl5.string(stickerId(1126).t.gjdiKE) };
-  const Text4 = stickerId(4886).Text;
+  const Text4 = stickerId(4892).Text;
   intl5 = stickerId(1126).intl;
   items4 = [onPressEmoji(Text4, obj15), , , , , , ];
   const obj16 = { style: tmp.stickerPreview, disabled: null != tmp16Result, onPress: handleImagePicker, accessibilityRole: "button", accessibilityLabel: intl6.string(stickerId(1126).t.O1REe1), children: tmp32Result };
-  const PressableHighlight = stickerId(5909).PressableHighlight;
+  const PressableHighlight = stickerId(5916).PressableHighlight;
   intl6 = stickerId(1126).intl;
   if (null != tmp16Result) {
     const obj17 = { sticker: tmp16Result, size: nativeDefault.space.PX_96, animated: true };
@@ -558,11 +558,11 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
     obj19 = { uri };
     tmp32Result = tmp32(c6, obj18);
   } else {
-    tmp32Result = tmp32(tmp31(17753).StickerPlusIcon, { size: "lg" });
+    tmp32Result = tmp32(tmp31(17799).StickerPlusIcon, { size: "lg" });
   }
   items4[1] = onPressEmoji(PressableHighlight, obj16);
   const obj20 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.stickerPreviewLabel, children: intl7.string(stickerId(1126).t["3BQmiC"]) };
-  const Text5 = tmp31(4886).Text;
+  const Text5 = tmp31(4892).Text;
   intl7 = tmp31(1126).intl;
   items4[2] = onPressEmoji(Text5, obj20);
   const obj21 = {
@@ -574,7 +574,7 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
     },
     children: items5
   };
-  const PressableHighlight2 = tmp31(5909).PressableHighlight;
+  const PressableHighlight2 = tmp31(5916).PressableHighlight;
   if (null != first1) {
     const obj22 = { fastImageStyle: { width: 24, height: 24 }, name: null == first1.id ? first1.surrogates : first1.name, src: emojiURL };
     emojiURL = undefined;
@@ -588,10 +588,10 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
     }
     tmp32Result2 = tmp32(tmp14Result5, obj22);
   } else {
-    tmp32Result2 = tmp32(tmp31(8411).ReactionIcon, { size: "md", color: "text-subtle" });
+    tmp32Result2 = tmp32(tmp31(8444).ReactionIcon, { size: "md", color: "text-subtle" });
   }
   items5 = [tmp32Result2, ];
-  const Text6 = tmp31(4886).Text;
+  const Text6 = tmp31(4892).Text;
   if (null != first1) {
     const _HermesInternal = HermesInternal;
     combined = ":" + first1.name + ":";
@@ -622,12 +622,12 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
     returnKeyType: "next",
     submitBehavior: "submit"
   };
-  const TextInput = tmp31(6098).TextInput;
+  const TextInput = tmp31(6105).TextInput;
   intl9 = tmp31(1126).intl;
   intl10 = tmp31(1126).intl;
   items4[4] = onPressEmoji(TextInput, obj24);
   const obj26 = { ref: ref2, maxLength: 100, label: intl11.string(stickerId(1126).t.uGccej), placeholder: intl12.string(stickerId(1126).t.zwR0fa), onChange: tmp8, onFocus };
-  const TextArea = tmp31(6580).TextArea;
+  const TextArea = tmp31(6587).TextArea;
   intl11 = tmp31(1126).intl;
   intl12 = tmp31(1126).intl;
   items4[5] = onPressEmoji(TextArea, obj26);
@@ -640,7 +640,7 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
     disabled: !hasUnsavedChanges(false),
     loading: false
   };
-  const Button2 = tmp31(5594).Button;
+  const Button2 = tmp31(5601).Button;
   intl13 = tmp31(1126).intl;
   str3 = "secondary";
   if (hasUnsavedChanges(false)) {

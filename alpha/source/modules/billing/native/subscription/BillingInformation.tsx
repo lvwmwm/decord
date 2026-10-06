@@ -1,9 +1,9 @@
-// Module ID: 13198
-// Function ID: 13199
+// Module ID: 13217
+// Function ID: 13218
 // Name: BillingInformation
-// Dependencies: [5, 1085, 558, 576, 13191, 4528, 1370, 10783, 1126, 2]
+// Dependencies: [5, 1085, 558, 576, 13210, 4534, 1370, 10796, 1126, 2]
 
-// Module 13198 (BillingInformation)
+// Module 13217 (BillingInformation)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -165,7 +165,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPurchasedViaApple,
   if (null == subscriptionPeriodStart) {
     return null;
   } else {
-    const tmp2Result = tmp2(4528);
+    const tmp2Result = tmp2(4534);
     const billingInformationString = tmp2Result.getBillingInformationString(isPurchasedViaApple, subscriptionPeriodStart, tmp, flag, fractionalPremiumInfo);
     let formatResult = billingInformationString;
     const tmp2Result2 = tmp2(1370);

@@ -1,20 +1,20 @@
-// Module ID: 11848
-// Function ID: 11849
+// Module ID: 11862
+// Function ID: 11863
 // Name: ScheduledMessagesIntro
-// Dependencies: [17, 21, 4890, 587, 558, 576, 11849, 1126, 4886, 10369, 11838, 10689, 2]
+// Dependencies: [17, 21, 4896, 587, 558, 576, 11863, 1126, 4892, 10382, 11852, 10702, 2]
 
-// Module 11848 (ScheduledMessagesIntro)
+// Module 11862 (ScheduledMessagesIntro)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import AttachmentIcon from "AttachmentIcon" /* 10369 */;
-import PlusLargeIcon2 from "PlusLargeIcon" /* 10689 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 11838 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11849 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import AttachmentIcon from "AttachmentIcon" /* 10382 */;
+import PlusLargeIcon2 from "PlusLargeIcon" /* 10702 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 11852 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11863 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -167,7 +167,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const _Symbol3 = Symbol;
         if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
           const obj8 = { size: "xs", color: nativeDefault.colors.CHAT_INPUT_ACTION_BUTTON_ICON_DEFAULT_TINT };
-          const PlusLargeIcon = tmp(10689).PlusLargeIcon;
+          const PlusLargeIcon = tmp(10702).PlusLargeIcon;
           const tmp41 = metroRequire(PlusLargeIcon, obj8);
           cResult[19] = tmp41;
           tmp38 = tmp41;
@@ -186,7 +186,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const _Symbol4 = Symbol;
         if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
           const obj10 = { variant: "text-sm/normal", color: "text-muted", children: intl5.string(intl6.t.fxxYiB) };
-          const Text = tmp(4886).Text;
+          const Text = tmp(4892).Text;
           intl5 = tmp(1126).intl;
           const tmp48 = metroRequire(Text, obj10);
           cResult[22] = tmp48;

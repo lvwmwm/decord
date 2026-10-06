@@ -1,20 +1,20 @@
-// Module ID: 12707
-// Function ID: 12708
+// Module ID: 12722
+// Function ID: 12723
 // Name: InAppReportsGuildPreviewElement
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 6469, 4727, 1126, 4886, 5971, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 6476, 4733, 1126, 4892, 5978, 2]
 
-// Module 12707 (InAppReportsGuildPreviewElement)
+// Module 12722 (InAppReportsGuildPreviewElement)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import ColorUtils from "ColorUtils" /* 4727 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import GuildIcon from "GuildIcon" /* 5971 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6469 */;
+import ColorUtils from "ColorUtils" /* 4733 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import GuildIcon from "GuildIcon" /* 5978 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6476 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

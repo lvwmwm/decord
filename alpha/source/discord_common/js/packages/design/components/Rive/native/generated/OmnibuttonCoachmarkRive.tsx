@@ -1,12 +1,12 @@
-// Module ID: 4684
-// Function ID: 4685
+// Module ID: 4690
+// Function ID: 4691
 // Name: OmnibuttonCoachmarkRive
-// Dependencies: [109, 19, 21, 558, 4606, 576, 4685, 4659, 2]
+// Dependencies: [109, 19, 21, 558, 4612, 576, 4691, 4665, 2]
 
-// Module 4684 (OmnibuttonCoachmarkRive)
+// Module 4690 (OmnibuttonCoachmarkRive)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import BaseRive2 from "BaseRive" /* 4606 */;
+import BaseRive2 from "BaseRive" /* 4612 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let dataBinding, importDefault, tmp3, tmp5;
 
 let tmp;
-const RiveErrorBoundary2 = tmp(4659);
+const RiveErrorBoundary2 = tmp(4665);
 let closure_3 = ["fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 let closure_4 = ["fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 const jsx = Fragment.jsx;
@@ -151,7 +151,7 @@ let closure_11 = react.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ?
         }
       }
       let merged = Object.assign(tmp6);
-      const tmp23 = <BaseRive ref={arg1} src={require("module_4685")} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={null} stateMachine={tmp7} renderDataBinding={tmp13} />;
+      const tmp23 = <BaseRive ref={arg1} src={require("module_4691")} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={null} stateMachine={tmp7} renderDataBinding={tmp13} />;
       cResult[11] = str;
       cResult[12] = str2;
       cResult[13] = ref;

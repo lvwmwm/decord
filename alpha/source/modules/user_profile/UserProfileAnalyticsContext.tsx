@@ -1,14 +1,14 @@
-// Module ID: 7861
-// Function ID: 7862
+// Module ID: 7872
+// Function ID: 7873
 // Name: UserProfileAnalyticsContext
-// Dependencies: [19, 21, 6657, 7862, 558, 576, 1266, 2]
+// Dependencies: [19, 21, 6664, 7873, 558, 576, 1266, 2]
 // Exports: UserProfileAnalyticsProvider
 
-// Module 7861 (UserProfileAnalyticsContext)
+// Module 7872 (UserProfileAnalyticsContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6657 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 7862 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6664 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 7873 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -115,7 +115,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj = context(576);
   const cResult = obj.c(18);
   context = react.useContext(closure_5);
-  analyticsLocations = analyticsLocations(6657)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6664)().analyticsLocations;
   if (cResult[0] === analyticsLocations) {
     let tmp3;
     if (cResult[1] === context) {
@@ -222,7 +222,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let items2;
   let items3;
   const context = react.useContext(closure_5);
-  analyticsLocations = analyticsLocations(6657)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6664)().analyticsLocations;
   let obj = {
     context,
     trackUserProfileAction: react.useCallback((arg0) => {

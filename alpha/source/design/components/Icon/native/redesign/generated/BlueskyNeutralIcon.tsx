@@ -1,14 +1,14 @@
-// Module ID: 8555
-// Function ID: 8556
+// Module ID: 8588
+// Function ID: 8589
 // Name: BlueskyNeutralIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8556, 4579, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8589, 4585, 2]
 
-// Module 8555 (BlueskyNeutralIcon)
+// Module 8588 (BlueskyNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4579 */;
-import AssetRegistry from "AssetRegistry" /* 8556 */;
+import BaseIconImage2 from "BaseIconImage" /* 4585 */;
+import AssetRegistry from "AssetRegistry" /* 8589 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4579).BaseIconImage;
+  const BaseIconImage = tmp(4585).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

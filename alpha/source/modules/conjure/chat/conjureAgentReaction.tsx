@@ -1,12 +1,12 @@
-// Module ID: 16708
-// Function ID: 16709
+// Module ID: 16729
+// Function ID: 16730
 // Name: conjureAgentReaction
-// Dependencies: [4523, 1126, 3723, 2]
+// Dependencies: [4529, 1126, 3753, 2]
 // Exports: getConjureAgentReactionLabel
 
-// Module 16708 (conjureAgentReaction)
+// Module 16729 (conjureAgentReaction)
 import intl2 from "intl" /* 1126 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4523 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4529 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/chat/conjureAgentReaction.tsx");
@@ -21,7 +21,7 @@ export const getConjureAgentReactionLabel = function getConjureAgentReactionLabe
       if ("" !== result) {
         const intl = intl2.intl;
         const obj2 = { emojiName: result };
-        formatToPlainStringResult = intl.formatToPlainString(tmp(3723).lxXLho, obj2);
+        formatToPlainStringResult = intl.formatToPlainString(tmp(3753).lxXLho, obj2);
       }
       return formatToPlainStringResult;
     }

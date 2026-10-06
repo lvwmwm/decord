@@ -1,22 +1,22 @@
-// Module ID: 9009
-// Function ID: 9010
+// Module ID: 9042
+// Function ID: 9043
 // Name: confirmExternalAppLaunchAlert
-// Dependencies: [19, 17, 2011, 21, 4890, 558, 576, 9010, 1126, 4886, 4565, 5594, 5707, 2]
+// Dependencies: [19, 17, 2011, 21, 4896, 558, 576, 9043, 1126, 4892, 4571, 5601, 5714, 2]
 // Exports: confirmExternalAppLaunchAlert
 
-// Module 9009 (confirmExternalAppLaunchAlert)
+// Module 9042 (confirmExternalAppLaunchAlert)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import Constants from "Constants" /* 2011 */;
-import LinkingDefault from "Linking" /* 4565 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9010 */;
+import LinkingDefault from "Linking" /* 4571 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import components_Button_Button from "components/Button/Button" /* 5601 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5714 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9043 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -181,7 +181,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "secondary", size: "sm", onPress: first, text: intl.string(intl4.t.E0gf5l) };
-    const Button = tmp(5594).Button;
+    const Button = tmp(5601).Button;
     intl = tmp(1126).intl;
     const tmp8 = metroRequire(Button, obj2);
     cResult[1] = tmp8;

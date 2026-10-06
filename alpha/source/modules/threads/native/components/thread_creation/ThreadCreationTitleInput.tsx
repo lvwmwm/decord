@@ -1,13 +1,13 @@
-// Module ID: 16782
-// Function ID: 16783
+// Module ID: 16803
+// Function ID: 16804
 // Name: ThreadCreationTitleInput
-// Dependencies: [19, 2051, 1085, 21, 558, 576, 16783, 7405, 6777, 1488, 1616, 504, 8810, 1126, 5973, 6098, 2]
+// Dependencies: [19, 2051, 1085, 21, 558, 576, 16804, 7416, 6787, 1488, 1616, 504, 8840, 1126, 5980, 6105, 2]
 
-// Module 16782 (ThreadCreationTitleInput)
+// Module 16803 (ThreadCreationTitleInput)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import sanitizeThreadNameDefault from "sanitizeThreadName" /* 6777 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 7405 */;
+import sanitizeThreadNameDefault from "sanitizeThreadName" /* 6787 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 7416 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -68,7 +68,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
               const tmp2 = importDefault;
               if (tmp4 !== threadSettingsDraft.name) {
                 const obj = { name: tmp4 };
-                const tmp2Result = tmp2(7405);
+                const tmp2Result = tmp2(7416);
                 tmp2Result.changeThreadSettings(threadSettingsDraft.parentChannelId, obj);
               }
             }
@@ -111,7 +111,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
                 const tmp2 = importDefault;
                 if (tmp4 !== threadSettingsDraft.name) {
                   const obj = { name: tmp4 };
-                  const tmp2Result = tmp2(7405);
+                  const tmp2Result = tmp2(7416);
                   tmp2Result.changeThreadSettings(threadSettingsDraft.parentChannelId, obj);
                 }
               }
@@ -134,7 +134,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
         }
         let str2 = "";
         if (null != stateFromStores) {
-          const tmpResult = tmp(8810);
+          const tmpResult = tmp(8840);
           str2 = tmpResult.getDefaultThreadName(stateFromStores, threadSettingsDraft.parentMessageId);
         }
         cResult[18] = stateFromStores;
@@ -170,7 +170,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
             const tmp2 = importDefault;
             if (tmp4 !== threadSettingsDraft.name) {
               const obj = { name: tmp4 };
-              const tmp2Result = tmp2(7405);
+              const tmp2Result = tmp2(7416);
               tmp2Result.changeThreadSettings(threadSettingsDraft.parentChannelId, obj);
             }
           }
@@ -181,7 +181,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
     cResult[7] = E;
   }
   let obj2 = { content: threadSettingsDraft.name };
-  const tmpResult2 = tmp(16783);
+  const tmpResult2 = tmp(16804);
   cResult[0] = threadNameError;
   cResult[1] = threadSettingsDraft.name;
   cResult[2] = tmpResult2.renderError(threadNameError, obj2);
@@ -197,7 +197,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
   const tmp = chatInputRef;
   let tmp2 = dependencyMap;
   const threadNameError = chatInputRef.threadNameError;
-  let obj = chatInputRef(16783);
+  let obj = chatInputRef(16804);
   let obj2 = { content: threadSettingsDraft.name };
   const renderErrorResult = obj.renderError(threadNameError, obj2);
   ref = ref.useRef(threadSettingsDraft.name);
@@ -220,7 +220,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
         const tmp2 = importDefault;
         if (tmp4 !== threadSettingsDraft.name) {
           const obj = { name: tmp4 };
-          const tmp2Result = tmp2(7405);
+          const tmp2Result = tmp2(7416);
           tmp2Result.changeThreadSettings(threadSettingsDraft.parentChannelId, obj);
         }
       }
@@ -255,7 +255,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
   const stateFromStores = obj3.useStateFromStores(items4, () => ChannelStore.getChannel(threadSettingsDraft.parentChannelId));
   let str = "";
   if (null != stateFromStores) {
-    const tmpResult = tmp(8810);
+    const tmpResult = tmp(8840);
     str = tmpResult.getDefaultThreadName(stateFromStores, threadSettingsDraft.parentMessageId);
   }
   const intl = tmp(1126).intl;
@@ -266,8 +266,8 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
   } else {
     stringResult = string(t.j3XWjD);
   }
-  const obj4 = { defaultValue: threadSettingsDraft(5973)(ref), errorMessage: renderErrorResult, label: stringResult, accessibilityHint: stringResult1, required: !optional, clearable: true, autoFocus: true, maxLength: MAX_CHANNEL_NAME_LENGTH, onSubmitEditing: callback3, onFocus: callback2, onBlur: callback1, onChange: callback, placeholder: str, ref, returnKeyType: "next", textContentType: "none" };
-  const TextInput = tmp(6098).TextInput;
+  const obj4 = { defaultValue: threadSettingsDraft(5980)(ref), errorMessage: renderErrorResult, label: stringResult, accessibilityHint: stringResult1, required: !optional, clearable: true, autoFocus: true, maxLength: MAX_CHANNEL_NAME_LENGTH, onSubmitEditing: callback3, onFocus: callback2, onBlur: callback1, onChange: callback, placeholder: str, ref, returnKeyType: "next", textContentType: "none" };
+  const TextInput = tmp(6105).TextInput;
   stringResult1 = undefined;
   const tmp12 = jsx;
   if (!optional) {

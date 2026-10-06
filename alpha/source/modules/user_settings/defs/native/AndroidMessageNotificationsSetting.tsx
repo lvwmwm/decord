@@ -1,19 +1,19 @@
-// Module ID: 15317
-// Function ID: 15318
+// Module ID: 15332
+// Function ID: 15333
 // Name: AndroidMessageNotificationsSetting
-// Dependencies: [15305, 7634, 558, 576, 1369, 11129, 1126, 14290, 2819, 15311, 2]
+// Dependencies: [15320, 7645, 558, 576, 1369, 11142, 1126, 14308, 2847, 15326, 2]
 // Exports: useAndroidMessageNotificationsSettingValue
 
-// Module 15317 (AndroidMessageNotificationsSetting)
+// Module 15332 (AndroidMessageNotificationsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef2819 from "module_2819" /* 2819 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14290 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15311 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15305 */;
+import _modDef2847 from "module_2847" /* 2847 */;
+import SettingsConstants from "SettingsConstants" /* 7645 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14308 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15326 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15320 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11129 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11142 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -79,11 +79,11 @@ const createToggle2 = SettingBuilders.createToggle;
 const obj3 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2819.odJXYJ);
+    return intl.string(_modDef2847.odJXYJ);
   },
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef2819["+jwUmI"]);
+    return intl.string(_modDef2847["+jwUmI"]);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {

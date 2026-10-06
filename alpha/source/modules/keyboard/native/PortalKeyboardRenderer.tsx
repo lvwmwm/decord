@@ -1,15 +1,15 @@
-// Module ID: 16605
-// Function ID: 16606
+// Module ID: 16643
+// Function ID: 16644
 // Name: PortalKeyboardRenderer
-// Dependencies: [19, 1486, 21, 4589, 4747, 1616, 1369, 16606, 558, 576, 4748, 4737, 6722, 11825, 1488, 4751, 9926, 2]
+// Dependencies: [19, 1486, 21, 4595, 4753, 1616, 1369, 16644, 558, 576, 4754, 4743, 6736, 11839, 1488, 4757, 9939, 2]
 
-// Module 16605 (PortalKeyboardRenderer)
+// Module 16643 (PortalKeyboardRenderer)
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
-import native from "native" /* 4589 */;
-import useKeyboardType from "useKeyboardType" /* 4747 */;
-import PortalKeyboardUIStore3 from "PortalKeyboardUIStore" /* 4748 */;
-import PortalKeyboardRendererComponentDefault from "PortalKeyboardRendererComponent" /* 16606 */;
+import native from "native" /* 4595 */;
+import useKeyboardType from "useKeyboardType" /* 4753 */;
+import PortalKeyboardUIStore3 from "PortalKeyboardUIStore" /* 4754 */;
+import PortalKeyboardRendererComponentDefault from "PortalKeyboardRendererComponent" /* 16644 */;
 import react from "react" /* 19 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1486 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -188,9 +188,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((portal) => {
     tmp13 = cResult[6];
   }
   const layoutEffect2 = obj2.useLayoutEffect(tmp12, tmp13);
-  let PortalKeyboardUIStore = tmp(4748).PortalKeyboardUIStore;
+  let PortalKeyboardUIStore = tmp(4754).PortalKeyboardUIStore;
   let field = PortalKeyboardUIStore.useField("keyboard");
-  const PortalKeyboardUIStore2 = tmp(4748).PortalKeyboardUIStore;
+  const PortalKeyboardUIStore2 = tmp(4754).PortalKeyboardUIStore;
   const field1 = PortalKeyboardUIStore2.useField("renderers");
   let tmp16 = 0 === field1.length;
   if (!tmp16) {
@@ -317,8 +317,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((portal) => {
         }
       }
       cResult[10] = tmp17;
-      cResult[11] = jsx(tmp(4589).TransitionGroup, { items: tmp17, getItemKey: transitionGroupGetItemKey, renderItem: transitionGroupRenderItem });
-      const tmp22 = jsx(tmp(4589).TransitionGroup, { items: tmp17, getItemKey: transitionGroupGetItemKey, renderItem: transitionGroupRenderItem });
+      cResult[11] = jsx(tmp(4595).TransitionGroup, { items: tmp17, getItemKey: transitionGroupGetItemKey, renderItem: transitionGroupRenderItem });
+      const tmp22 = jsx(tmp(4595).TransitionGroup, { items: tmp17, getItemKey: transitionGroupGetItemKey, renderItem: transitionGroupRenderItem });
     } else {
       class K {
         constructor() {
@@ -561,9 +561,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((portal) => {
   }, []);
   const tmp5 = id;
   let tmp6 = dependencyMap;
-  let PortalKeyboardUIStore = id(4748).PortalKeyboardUIStore;
+  let PortalKeyboardUIStore = id(4754).PortalKeyboardUIStore;
   let field = PortalKeyboardUIStore.useField("keyboard");
-  const PortalKeyboardUIStore2 = id(4748).PortalKeyboardUIStore;
+  const PortalKeyboardUIStore2 = id(4754).PortalKeyboardUIStore;
   const field1 = PortalKeyboardUIStore2.useField("renderers");
   const tmp8 = 0 === field1.length || field1[field1.length - 1] === id;
   dependencyMap = tmp8;
@@ -580,13 +580,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((portal) => {
     }
     tmp3 = closure_6;
   }, items1);
-  const tmp11 = jsx(tmp5(4589).TransitionGroup, { items: memo, getItemKey: transitionGroupGetItemKey, renderItem: transitionGroupRenderItem });
+  const tmp11 = jsx(tmp5(4595).TransitionGroup, { items: memo, getItemKey: transitionGroupGetItemKey, renderItem: transitionGroupRenderItem });
   if (flag) {
     const obj3 = { children: tmp11 };
-    tmp10Result = tmp10(tmp5(4751).PortalKeyboard, obj3);
+    tmp10Result = tmp10(tmp5(4757).PortalKeyboard, obj3);
   } else {
     const obj4 = { value: true, children: tmp11 };
-    tmp10Result = tmp10(tmp5(9926).PortalKeyboardInModalContext.Provider, obj4);
+    tmp10Result = tmp10(tmp5(9939).PortalKeyboardInModalContext.Provider, obj4);
   }
   return tmp10Result;
 });

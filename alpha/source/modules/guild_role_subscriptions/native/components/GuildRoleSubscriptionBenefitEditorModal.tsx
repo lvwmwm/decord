@@ -1,29 +1,29 @@
-// Module ID: 17948
-// Function ID: 17949
+// Module ID: 17994
+// Function ID: 17995
 // Name: GuildRoleSubscriptionBenefitEditorModal
-// Dependencies: [5, 32, 19, 17, 4519, 1377, 17947, 15023, 1085, 21, 4890, 587, 5915, 558, 576, 13710, 4847, 1126, 1188, 5909, 1618, 17949, 5043, 8895, 17951, 9477, 17952, 2]
+// Dependencies: [5, 32, 19, 17, 4525, 1377, 17993, 15038, 1085, 21, 4896, 587, 5922, 558, 576, 13728, 4853, 1126, 1188, 5916, 1618, 17995, 5049, 8924, 17997, 9490, 17998, 2]
 
-// Module 17948 (GuildRoleSubscriptionBenefitEditorModal)
+// Module 17994 (GuildRoleSubscriptionBenefitEditorModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl10 from "intl" /* 1126 */;
 import native from "native" /* 1188 */;
-import TrashIcon2 from "TrashIcon" /* 4847 */;
-import useChannelName from "useChannelName" /* 5043 */;
-import Pressables from "Pressables" /* 5909 */;
-import FormStylesDefault from "FormStyles" /* 13710 */;
+import TrashIcon2 from "TrashIcon" /* 4853 */;
+import useChannelName from "useChannelName" /* 5049 */;
+import Pressables from "Pressables" /* 5916 */;
+import FormStylesDefault from "FormStyles" /* 13728 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import RelationshipStore from "RelationshipStore" /* 4525 */;
 import UserStore from "UserStore" /* 1377 */;
-import GuildRoleSubscriptionBenefitEditorModalStateStore from "GuildRoleSubscriptionBenefitEditorModalStateStore" /* 17947 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15023 */;
+import GuildRoleSubscriptionBenefitEditorModalStateStore from "GuildRoleSubscriptionBenefitEditorModalStateStore" /* 17993 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15038 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import TextStyles from "TextStyles" /* 5915 */;
+import createStyles_mod from "createStyles" /* 4896 */;
+import TextStyles from "TextStyles" /* 5922 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDelete) => {
     }
     if (cResult[3] !== tmp4.deleteIcon) {
       const obj2 = { style: tmp4.deleteIcon, color: nativeDefault.unsafe_rawColors.RED_400, size: "custom" };
-      const TrashIcon = tmp(4847).TrashIcon;
+      const TrashIcon = tmp(4853).TrashIcon;
       const tmp10 = map1(TrashIcon, obj2);
       cResult[3] = tmp4.deleteIcon;
       cResult[4] = tmp10;
@@ -309,7 +309,7 @@ const forwardRefResult = react.forwardRef((benefitType) => {
   };
   const tmp = closure_15();
   const tmp3 = dependencyMap;
-  const tmp4 = value(13710)();
+  const tmp4 = value(13728)();
   [value, tmp6] = GuildRoleSubscriptionBenefitEditorModalStateStore.useNameState();
   dependencyMap = tmp6;
   [first1, _slicedToArray] = GuildRoleSubscriptionBenefitEditorModalStateStore.useEmojiIdState();
@@ -385,11 +385,11 @@ const forwardRefResult = react.forwardRef((benefitType) => {
           closure_2(obj.computeChannelName(id, UserStore, RelationshipStore));
         }
     };
-    tmp25 = closure_13(tmp2(17949), obj);
+    tmp25 = closure_13(tmp2(17995), obj);
     tmp26 = closure_13;
   } else {
     let obj2 = { style: tmp4.textInput, showTopContainer: false, multiline: false, maxLength, value, placeholder: intl9.string(tmp20(1126).t["kV54/Y"]), onChange: tmp6, autoFocus: true, clearButtonVisibility: tmp20(1188).ClearButtonVisibility.WITH_CONTENT };
-    const FormInput = tmp20(8895).FormInput;
+    const FormInput = tmp20(8924).FormInput;
     intl9 = tmp20(1126).intl;
     tmp25 = closure_13(FormInput, obj2);
     tmp26 = closure_13;
@@ -404,17 +404,17 @@ const forwardRefResult = react.forwardRef((benefitType) => {
     },
     listingId: benefitType.listingId
   };
-  items = [tmp26(tmp2(17951), obj4), ];
+  items = [tmp26(tmp2(17997), obj4), ];
   let obj5 = { keyboardShouldPersistTaps: "handled", showsVerticalScrollIndicator: false, alwaysBounceVertical: false, contentContainerStyle: items1, children: items2 };
   items1 = [tmp.scrollContainer, ];
   const obj6 = { paddingBottom: bottom + 32 + 16 };
   items1[1] = obj6;
   items2 = [, , , , , , ];
   const obj7 = { style: tmp4.header, children: stringResult1 };
-  items2[0] = tmp26(value(9477), obj7);
+  items2[0] = tmp26(value(9490), obj7);
   items2[1] = tmp25;
   const obj8 = { style: tmp4.header, children: intl7.string(tmp20(1126).t.sMOuuS) };
-  const tmp2Result = value(9477);
+  const tmp2Result = value(9490);
   intl7 = tmp20(1126).intl;
   items2[2] = tmp26(tmp2Result, obj8);
   const obj9 = {
@@ -425,13 +425,13 @@ const forwardRefResult = react.forwardRef((benefitType) => {
       closure_6(emojiId.emojiName);
     }
   };
-  items2[3] = tmp26(value(17952), obj9);
+  items2[3] = tmp26(value(17998), obj9);
   const obj10 = { style: tmp4.header, children: intl8.string(tmp20(1126).t["74JctW"]) };
-  const tmp2Result2 = value(9477);
+  const tmp2Result2 = value(9490);
   intl8 = tmp20(1126).intl;
   items2[4] = tmp26(tmp2Result2, obj10);
   const obj11 = { style: tmp4.textInput, showTopContainer: false, multiline: true, maxLength: obj, numberOfLines: 3, value: first3, onChange: tmp11, placeholder: stringResult2 };
-  items2[5] = tmp26(tmp20(8895).FormInput, obj11);
+  items2[5] = tmp26(tmp20(8924).FormInput, obj11);
   let tmp26Result = null;
   const tmp28 = first2;
   const tmp29 = closure_6;

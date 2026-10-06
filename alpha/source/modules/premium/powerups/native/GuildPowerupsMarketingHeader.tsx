@@ -1,22 +1,22 @@
-// Module ID: 13382
-// Function ID: 13383
+// Module ID: 13401
+// Function ID: 13402
 // Name: GuildPowerupsMarketingHeader
-// Dependencies: [19, 17, 4767, 21, 4890, 587, 683, 558, 576, 4886, 13383, 12147, 12170, 13384, 1126, 2525, 2]
+// Dependencies: [19, 17, 4773, 21, 4896, 587, 683, 558, 576, 4892, 13402, 12162, 12185, 13403, 1126, 2553, 2]
 
-// Module 13382 (GuildPowerupsMarketingHeader)
+// Module 13401 (GuildPowerupsMarketingHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import intl3 from "intl" /* 1126 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12147 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12170 */;
-import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 13383 */;
-import orderMarketablePerksForDisplayDefault from "orderMarketablePerksForDisplay" /* 13384 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12162 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12185 */;
+import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 13402 */;
+import orderMarketablePerksForDisplayDefault from "orderMarketablePerksForDisplay" /* 13403 */;
 import react from "react" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4767 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4773 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let alphaResult1;
 let obj2;
 let obj4;
 let tmp;
-const Text_Text = tmp(4886);
+const Text_Text = tmp(4892);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -69,7 +69,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const cResult = obj.c(13);
   guild = guild.guild;
   const tmp4 = closure_7();
-  arr = arr(13383)(guild.id);
+  arr = arr(13402)(guild.id);
   if (cResult[0] !== guild.id) {
     const fn = function s() {
       const tmp = guild;
@@ -89,7 +89,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     tmp7 = cResult[2];
   }
   const effect = react.useEffect(tmp6, tmp7);
-  if (arr(12170)(guild.id)) {
+  if (arr(12185)(guild.id)) {
     let num4;
     if (arr != null) {
       num4 = arr.length;
@@ -112,7 +112,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                   const intl = intl3.intl;
                   const format = intl.format;
                   const obj = { perk1: null, perk2: null };
-                  const MNO3sG = tmp7(2525).MNO3sG;
+                  const MNO3sG = tmp7(2553).MNO3sG;
                   formatResult = format(MNO3sG, obj);
                 }
                 return formatResult;
@@ -137,7 +137,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                   const intl = intl3.intl;
                   const format = intl.format;
                   const obj = { perk1: null, perk2: null };
-                  const MNO3sG = tmp7(2525).MNO3sG;
+                  const MNO3sG = tmp7(2553).MNO3sG;
                   formatResult = format(MNO3sG, obj);
                 }
                 return formatResult;
@@ -162,7 +162,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                   const intl = intl3.intl;
                   const format = intl.format;
                   const obj = { perk1: null, perk2: null };
-                  const MNO3sG = tmp7(2525).MNO3sG;
+                  const MNO3sG = tmp7(2553).MNO3sG;
                   formatResult = format(MNO3sG, obj);
                 }
                 return formatResult;
@@ -173,7 +173,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         }
         let format = tmp12.format;
         const obj2 = { perks: tmp10() };
-        const v7lwpzR = tmp5(2525)["7lwpzR"];
+        const v7lwpzR = tmp5(2553)["7lwpzR"];
         let formatResult = format(v7lwpzR, obj2);
         cResult[5] = tmp10;
         cResult[6] = formatResult;
@@ -191,7 +191,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                   const intl = intl3.intl;
                   const format = intl.format;
                   const obj = { perk1: null, perk2: null };
-                  const MNO3sG = tmp7(2525).MNO3sG;
+                  const MNO3sG = tmp7(2553).MNO3sG;
                   formatResult = format(MNO3sG, obj);
                 }
                 return formatResult;
@@ -215,7 +215,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                   const intl = intl3.intl;
                   const format = intl.format;
                   const obj = { perk1: null, perk2: null };
-                  const MNO3sG = tmp7(2525).MNO3sG;
+                  const MNO3sG = tmp7(2553).MNO3sG;
                   formatResult = format(MNO3sG, obj);
                 }
                 return formatResult;
@@ -238,7 +238,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                     const intl = intl3.intl;
                     const format = intl.format;
                     const obj = { perk1: null, perk2: null };
-                    const MNO3sG = tmp7(2525).MNO3sG;
+                    const MNO3sG = tmp7(2553).MNO3sG;
                     formatResult = format(MNO3sG, obj);
                   }
                   return formatResult;
@@ -257,8 +257,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       }
       cResult[7] = tmp4.text;
       cResult[8] = tmp11;
-      cResult[9] = jsx(tmp(4886).Text, { style: text, variant: "text-sm/semibold", children: tmp11 });
-      const tmp17 = jsx(tmp(4886).Text, { style: text, variant: "text-sm/semibold", children: tmp11 });
+      cResult[9] = jsx(tmp(4892).Text, { style: text, variant: "text-sm/semibold", children: tmp11 });
+      const tmp17 = jsx(tmp(4892).Text, { style: text, variant: "text-sm/semibold", children: tmp11 });
     }
   }
 }) : ((guild) => {
@@ -285,11 +285,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
     if (0 !== num) {
       ({ style: tmp.text, variant: "text-sm/semibold", children: format(v7lwpzR, obj7) });
-      const Text = guild(4886).Text;
+      const Text = guild(4892).Text;
       const intl = guild(1126).intl;
       format = intl.format;
       let str2 = "";
-      v7lwpzR = tmp2(2525)["7lwpzR"];
+      v7lwpzR = tmp2(2553)["7lwpzR"];
       const tmp8 = guild;
       if (null != arr) {
         str2 = "";
@@ -302,7 +302,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
             const intl2 = tmp8(1126).intl;
             const format2 = intl2.format;
             const obj4 = { perk1: null, perk2: null };
-            const MNO3sG = tmp2(2525).MNO3sG;
+            const MNO3sG = tmp2(2553).MNO3sG;
             format2Result = format2(MNO3sG, obj4);
           }
         }

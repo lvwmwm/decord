@@ -1,13 +1,13 @@
-// Module ID: 12234
-// Function ID: 12235
+// Module ID: 12249
+// Function ID: 12250
 // Name: useGameServerPowerupStatus
-// Dependencies: [19, 7672, 558, 576, 504, 12218, 1126, 2525, 2]
+// Dependencies: [19, 7683, 558, 576, 504, 12233, 1126, 2553, 2]
 
-// Module 12234 (useGameServerPowerupStatus)
+// Module 12249 (useGameServerPowerupStatus)
 import intl2 from "intl" /* 1126 */;
-import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 12218 */;
+import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 12233 */;
 import react from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 7672 */;
+import GameServerStore from "GameServerStore" /* 7683 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 let tmp8;
-const _modDef2525 = tmp8(2525);
+const _modDef2553 = tmp8(2553);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let closure_0;
   let first;
@@ -75,7 +75,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp10;
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj3 = { type: "active", statusText: intl.string(_modDef2525.FFLkmx) };
+        const obj3 = { type: "active", statusText: intl.string(_modDef2553.FFLkmx) };
         intl = tmp(1126).intl;
         cResult[6] = obj3;
         tmp10 = obj3;
@@ -101,7 +101,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return entitlements;
   }, items1);
-  const tmp2 = stateFromStores(12218)(arg0);
+  const tmp2 = stateFromStores(12233)(arg0);
   dependencyMap = tmp2;
   const items2 = [tmp2, stateFromStores];
   return react.useMemo(() => {
@@ -117,7 +117,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         obj3 = { type: "expiring", expiringAt: tmp[0].ends_at };
         const obj2 = { type: "expiring", expiringAt: tmp[0].ends_at };
       } else {
-        obj3 = { type: "active", statusText: intl.string(_modDef2525.FFLkmx) };
+        obj3 = { type: "active", statusText: intl.string(_modDef2553.FFLkmx) };
         intl = intl2.intl;
       }
       return obj3;

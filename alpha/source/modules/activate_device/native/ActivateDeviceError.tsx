@@ -1,19 +1,19 @@
-// Module ID: 13698
-// Function ID: 13699
+// Module ID: 13716
+// Function ID: 13717
 // Name: ActivateDeviceError
-// Dependencies: [19, 17, 21, 4890, 558, 576, 8762, 4886, 13696, 1126, 5594, 2]
+// Dependencies: [19, 17, 21, 4896, 558, 576, 8794, 4892, 13714, 1126, 5601, 2]
 
-// Module 13698 (ActivateDeviceError)
+// Module 13716 (ActivateDeviceError)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8762 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 13696 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import components_Button_Button from "components/Button/Button" /* 5601 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8794 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 13714 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onRetry) => {
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: ActivateDeviceSharedStylesDefault.centerText, children: intl.string(intl4.t["3dgwPD"]) };
-    const Text = tmp(4886).Text;
+    const Text = tmp(4892).Text;
     intl = tmp(1126).intl;
     const tmp13 = hasOwnProperty(Text, obj3);
     cResult[2] = tmp13;
@@ -64,7 +64,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onRetry) => {
     const obj4 = { style: ActivateDeviceSharedStylesDefault.innerContent, children: items };
     items = [tmp10, ];
     const obj5 = { variant: "text-md/medium", color: "text-default", style: ActivateDeviceSharedStylesDefault.centerText, children: intl2.string(intl4.t["/GAO1P"]) };
-    const Text2 = tmp(4886).Text;
+    const Text2 = tmp(4892).Text;
     intl2 = tmp(1126).intl;
     items[1] = hasOwnProperty(Text2, obj5);
     const tmp19 = metroRequire(React3, obj4);

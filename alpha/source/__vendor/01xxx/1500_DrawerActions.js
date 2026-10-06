@@ -26,8 +26,8 @@ let merged = Object.assign(TabActions.TabActions);
 export { DrawerActions };
 export const DrawerRouter = function DrawerRouter(defaultStatus) {
   let _undefined;
-  const f134954 = (type) => "drawer" === type.type;
-  const f134955 = (type) => "drawer" !== type.type;
+  const f135171 = (type) => "drawer" === type.type;
+  const f135172 = (type) => "drawer" !== type.type;
   let str = defaultStatus.defaultStatus;
   if (str === undefined) {
     str = "closed";
@@ -57,7 +57,7 @@ export const DrawerRouter = function DrawerRouter(defaultStatus) {
           let someResult;
           const _Boolean2 = Boolean;
           if (history2 != null) {
-            someResult = history2.some(f134954);
+            someResult = history2.some(f135171);
           }
           let tmp17 = history;
           if (!_Boolean2(someResult)) {
@@ -85,11 +85,11 @@ export const DrawerRouter = function DrawerRouter(defaultStatus) {
         let someResult1;
         const _Boolean = Boolean;
         if (history != null) {
-          someResult1 = history.some(f134954);
+          someResult1 = history.some(f135171);
         }
         tmp8 = history;
         if (_Boolean(someResult1)) {
-          const obj = { history: history1.filter(f134955) };
+          const obj = { history: history1.filter(f135172) };
           const merged1 = Object.assign(history);
           history1 = history.history;
           tmp8 = obj;
@@ -130,7 +130,7 @@ export const DrawerRouter = function DrawerRouter(defaultStatus) {
           let someResult;
           const _Boolean = Boolean;
           if (history != null) {
-            someResult = history.some(f134954);
+            someResult = history.some(f135171);
           }
           let tmp7 = obj2;
           if (_Boolean(someResult)) {
@@ -140,11 +140,11 @@ export const DrawerRouter = function DrawerRouter(defaultStatus) {
                 let someResult1;
                 const _Boolean2 = Boolean;
                 if (history2 != null) {
-                  someResult1 = history2.some(f134954);
+                  someResult1 = history2.some(f135171);
                 }
                 let tmp10 = obj2;
                 if (_Boolean2(someResult1)) {
-                  const obj = { history: history1.filter(f134955) };
+                  const obj = { history: history1.filter(f135172) };
                   const merged1 = Object.assign(obj2);
                   history1 = obj2.history;
                   tmp10 = obj;
@@ -155,7 +155,7 @@ export const DrawerRouter = function DrawerRouter(defaultStatus) {
                     let someResult2;
                     const _Boolean3 = Boolean;
                     if (history3 != null) {
-                      someResult2 = history3.some(f134954);
+                      someResult2 = history3.some(f135171);
                     }
                     let tmp16 = tmp10;
                     if (!_Boolean3(someResult2)) {
@@ -211,11 +211,11 @@ export const DrawerRouter = function DrawerRouter(defaultStatus) {
               let someResult;
               const _Boolean7 = Boolean;
               if (history7 != null) {
-                someResult = history7.some(f134954);
+                someResult = history7.some(f135171);
               }
               let tmp58 = history;
               if (_Boolean7(someResult)) {
-                const obj2 = { history: history1.filter(f134955) };
+                const obj2 = { history: history1.filter(f135172) };
                 const merged = Object.assign(history);
                 history1 = history.history;
                 tmp58 = obj2;
@@ -233,7 +233,7 @@ export const DrawerRouter = function DrawerRouter(defaultStatus) {
             let someResult1;
             const _Boolean6 = Boolean;
             if (history6 != null) {
-              someResult1 = history6.some(f134954);
+              someResult1 = history6.some(f135171);
             }
             tmp47 = history;
             if (!_Boolean6(someResult1)) {
@@ -264,7 +264,7 @@ export const DrawerRouter = function DrawerRouter(defaultStatus) {
           let someResult2;
           const _Boolean3 = Boolean;
           if (history3 != null) {
-            someResult2 = history3.some(f134954);
+            someResult2 = history3.some(f135171);
           }
           if (_Boolean3(someResult2)) {
             if (typeof removeDrawerFromHistory === "function") {
@@ -273,11 +273,11 @@ export const DrawerRouter = function DrawerRouter(defaultStatus) {
                 let someResult3;
                 const _Boolean5 = Boolean;
                 if (history5 != null) {
-                  someResult3 = history5.some(f134954);
+                  someResult3 = history5.some(f135171);
                 }
                 let tmp35 = history;
                 if (_Boolean5(someResult3)) {
-                  const obj5 = { history: history8.filter(f134955) };
+                  const obj5 = { history: history8.filter(f135172) };
                   const merged2 = Object.assign(history);
                   history8 = history.history;
                   tmp35 = obj5;
@@ -295,7 +295,7 @@ export const DrawerRouter = function DrawerRouter(defaultStatus) {
               let someResult4;
               const _Boolean4 = Boolean;
               if (history4 != null) {
-                someResult4 = history4.some(f134954);
+                someResult4 = history4.some(f135171);
               }
               tmp26 = history;
               if (!_Boolean4(someResult4)) {
@@ -332,7 +332,7 @@ export const DrawerRouter = function DrawerRouter(defaultStatus) {
                   let someResult5;
                   const _Boolean = Boolean;
                   if (history != null) {
-                    someResult5 = history.some(f134954);
+                    someResult5 = history.some(f135171);
                   }
                   if (_Boolean(someResult5)) {
                     if (typeof removeDrawerFromHistory === "function") {
@@ -341,11 +341,11 @@ export const DrawerRouter = function DrawerRouter(defaultStatus) {
                         let someResult6;
                         const _Boolean2 = Boolean;
                         if (history2 != null) {
-                          someResult6 = history2.some(f134954);
+                          someResult6 = history2.some(f135171);
                         }
                         let tmp11 = history;
                         if (_Boolean2(someResult6)) {
-                          const obj = { history: history9.filter(f134955) };
+                          const obj = { history: history9.filter(f135172) };
                           const merged4 = Object.assign(history);
                           history9 = history.history;
                           tmp11 = obj;

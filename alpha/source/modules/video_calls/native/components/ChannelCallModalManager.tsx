@@ -1,12 +1,12 @@
-// Module ID: 9154
-// Function ID: 9155
+// Module ID: 9189
+// Function ID: 9190
 // Name: ChannelCallModalManager
-// Dependencies: [1377, 4909, 1989, 584, 5097, 2]
+// Dependencies: [1377, 4915, 1989, 584, 5103, 2]
 
-// Module 9154 (ChannelCallModalManager)
+// Module 9189 (ChannelCallModalManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import UserStore from "UserStore" /* 1377 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import VoiceStateStore from "VoiceStateStore" /* 4915 */;
 import LifecycleManager from "LifecycleManager" /* 1989 */;
 import size from "module_2" /* 2 */;
 

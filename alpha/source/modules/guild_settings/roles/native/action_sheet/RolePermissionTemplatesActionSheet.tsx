@@ -1,22 +1,22 @@
-// Module ID: 17804
-// Function ID: 17805
+// Module ID: 17850
+// Function ID: 17851
 // Name: RolePermissionTemplatesActionSheet
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 1252, 4854, 4567, 5707, 1126, 6644, 17784, 6701, 2]
+// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 1252, 4860, 4573, 5714, 1126, 6651, 17830, 6708, 2]
 
-// Module 17804 (RolePermissionTemplatesActionSheet)
+// Module 17850 (RolePermissionTemplatesActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ToastUtils from "ToastUtils" /* 4567 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6644 */;
-import ActionSheet2 from "ActionSheet" /* 6701 */;
+import ToastUtils from "ToastUtils" /* 4573 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5714 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6651 */;
+import ActionSheet2 from "ActionSheet" /* 6708 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -190,8 +190,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((permissionsEdited) =
         obj.cancelText = intl3.string(permissionsEdited(closure_2[12]).t["ETE/oC"]);
         intl4 = permissionsEdited(closure_2[12]).intl;
         obj.confirmText = intl4.string(permissionsEdited(closure_2[12]).t.p89ACt);
-        obj.onConfirm = function onConfirm() { /* body not rendered: F149158 */ };
-        obj.onCancel = function onCancel() { /* body not rendered: F149159 */ };
+        obj.onConfirm = function onConfirm() { /* body not rendered: F149393 */ };
+        obj.onCancel = function onCancel() { /* body not rendered: F149394 */ };
         showResult = show(obj);
       } else {
         tmp2 = closure_2;

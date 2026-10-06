@@ -1,21 +1,21 @@
-// Module ID: 16803
-// Function ID: 16804
+// Module ID: 16824
+// Function ID: 16825
 // Name: SmartSearchEmptyScreen
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 6471, 4590, 1126, 16804, 4886, 3919, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 6478, 4596, 1126, 16825, 4892, 3919, 2]
 
-// Module 16803 (SmartSearchEmptyScreen)
+// Module 16824 (SmartSearchEmptyScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import _modDef3919 from "module_3919" /* 3919 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4590 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6471 */;
-import SuggestedSearchListDefault from "SuggestedSearchList" /* 16804 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4596 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6478 */;
+import SuggestedSearchListDefault from "SuggestedSearchList" /* 16825 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -101,7 +101,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((smartSe
     const _Symbol = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
       const obj5 = { variant: "text-sm/semibold", color: "text-muted", accessibilityRole: "header", children: intl.string(_modDef3919["HX/WYf"]) };
-      const Text = tmp(4886).Text;
+      const Text = tmp(4892).Text;
       intl = tmp(1126).intl;
       const tmp17 = hasOwnProperty(Text, obj5);
       cResult[10] = tmp17;
@@ -112,7 +112,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((smartSe
     const _Symbol2 = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
       const obj6 = { variant: "text-sm/semibold", color: "text-muted", accessibilityRole: "header", children: intl2.string(_modDef3919["0ySxbu"]) };
-      const Text2 = tmp(4886).Text;
+      const Text2 = tmp(4892).Text;
       intl2 = tmp(1126).intl;
       const tmp20 = hasOwnProperty(Text2, obj6);
       cResult[11] = tmp20;

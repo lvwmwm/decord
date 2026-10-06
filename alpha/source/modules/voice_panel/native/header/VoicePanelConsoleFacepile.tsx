@@ -1,20 +1,20 @@
-// Module ID: 17264
-// Function ID: 17265
+// Module ID: 17293
+// Function ID: 17294
 // Name: VoicePanelConsoleFacepile
-// Dependencies: [19, 1085, 21, 4890, 587, 9463, 1126, 558, 576, 9444, 1375, 5976, 1188, 2]
+// Dependencies: [19, 1085, 21, 4896, 587, 9476, 1126, 558, 576, 9457, 1375, 5983, 1188, 2]
 
-// Module 17264 (VoicePanelConsoleFacepile)
+// Module 17293 (VoicePanelConsoleFacepile)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
 import native from "native" /* 1188 */;
 import GlobalUtils from "GlobalUtils" /* 1375 */;
-import NativeViewDefault from "NativeView" /* 5976 */;
-import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 9444 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 9463 */;
+import NativeViewDefault from "NativeView" /* 5983 */;
+import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 9457 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 9476 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 15987
-// Function ID: 15988
+// Module ID: 16026
+// Function ID: 16027
 // Name: useFirstGloballyViewbleGuildChannelId
-// Dependencies: [4507, 1096, 558, 576, 4514, 504, 2]
+// Dependencies: [4513, 1096, 558, 576, 4520, 504, 2]
 
-// Module 15987 (useFirstGloballyViewbleGuildChannelId)
+// Module 16026 (useFirstGloballyViewbleGuildChannelId)
 import Constants from "Constants" /* 1096 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4514 */;
-import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4520 */;
+import GuildChannelStore from "GuildChannelStore" /* 4513 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

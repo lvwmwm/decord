@@ -1,26 +1,26 @@
-// Module ID: 14311
-// Function ID: 14312
+// Module ID: 14329
+// Function ID: 14330
 // Name: channels
-// Dependencies: [2055, 2051, 2074, 4509, 2103, 4909, 5316, 1085, 8015, 9026, 9031, 12, 14312, 9029, 14302, 5568, 5035, 1112, 8054, 2]
+// Dependencies: [2055, 2051, 2074, 4515, 2103, 4915, 5323, 1085, 8025, 9059, 9064, 12, 14330, 9062, 14320, 5575, 5041, 1112, 8064, 2]
 
-// Module 14311 (channels)
+// Module 14329 (channels)
 import _modDef12 from "module_12" /* 12 */;
 import router_utils from "router_utils" /* 1112 */;
-import ChannelUtils from "ChannelUtils" /* 5035 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5568 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8015 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8054 */;
-import RPCErrorDefault from "RPCError" /* 9026 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9029 */;
-import RPCHelpers from "RPCHelpers" /* 9031 */;
-import getCurrentEmbeddedChannelDefault from "getCurrentEmbeddedChannel" /* 14312 */;
+import ChannelUtils from "ChannelUtils" /* 5041 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5575 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8025 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8064 */;
+import RPCErrorDefault from "RPCError" /* 9059 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9062 */;
+import RPCHelpers from "RPCHelpers" /* 9064 */;
+import getCurrentEmbeddedChannelDefault from "getCurrentEmbeddedChannel" /* 14330 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
-import Constants_mod from "Constants" /* 5316 */;
+import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+import Constants_mod from "Constants" /* 5323 */;
 import Constants_mod2 from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -159,7 +159,7 @@ let obj2 = {
         const scopes = socket.authorization.scopes;
         const tmp = require;
         if (!scopes.includes(OAuth2Scopes.OAuth2Scopes.RPC)) {
-          if (!scopes.includes(tmp(8015).OAuth2Scopes.DM_CHANNELS_READ)) {
+          if (!scopes.includes(tmp(8025).OAuth2Scopes.DM_CHANNELS_READ)) {
             const self = this;
             const self2 = this;
             const obj2 = { errorCode: constants2.INVALID_PERMISSIONS };

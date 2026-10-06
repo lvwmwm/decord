@@ -1,19 +1,19 @@
-// Module ID: 12543
-// Function ID: 12544
+// Module ID: 12558
+// Function ID: 12559
 // Name: RestrictedHoursWarningNotification
-// Dependencies: [19, 17, 12478, 1085, 21, 4890, 587, 558, 576, 12544, 5093, 12479, 6885, 4886, 12516, 2]
+// Dependencies: [19, 17, 12493, 1085, 21, 4896, 587, 558, 576, 12559, 5099, 12494, 6895, 4892, 12531, 2]
 
-// Module 12543 (RestrictedHoursWarningNotification)
+// Module 12558 (RestrictedHoursWarningNotification)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import openUserSettings from "openUserSettings" /* 6885 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 12478 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 12479 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
+import openUserSettings from "openUserSettings" /* 6895 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 12493 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 12494 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((n
   const tmp4 = closure_9();
   type = notification.type;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const ThemeDarkIcon = tmp(12544).ThemeDarkIcon;
+    const ThemeDarkIcon = tmp(12559).ThemeDarkIcon;
     const tmp8 = <ThemeDarkIcon size="sm" color={nativeDefault.colors.WHITE} />;
     cResult[0] = tmp8;
     first = tmp8;
@@ -84,7 +84,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((n
     tmp14 = cResult[6];
   }
   if (cResult[7] !== notification.subtitle) {
-    const tmp18 = jsx(type(4886).Text, { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp, children: notification.subtitle });
+    const tmp18 = jsx(type(4892).Text, { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp, children: notification.subtitle });
     cResult[7] = notification.subtitle;
     cResult[8] = tmp18;
     tmp15 = tmp18;
@@ -104,7 +104,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((n
       }
     }
   }
-  const tmp20 = jsx(type(12516).NotificationPressable, { icon: tmp9, header: tmp13, children: tmp15, onPress: tmp14, notification });
+  const tmp20 = jsx(type(12531).NotificationPressable, { icon: tmp9, header: tmp13, children: tmp15, onPress: tmp14, notification });
   cResult[9] = tmp13;
   cResult[10] = tmp9;
   cResult[11] = notification;
@@ -116,7 +116,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((n
   notification = notification.notification;
   const type = notification.type;
   let obj2 = { size: "sm", color: type(587).colors.WHITE };
-  const ThemeDarkIcon = notification(12544).ThemeDarkIcon;
+  const ThemeDarkIcon = notification(12559).ThemeDarkIcon;
   const items = [notification.title];
   const items1 = [type];
   const tmp = <View style={closure_9().iconContainer}>{null}</View>;
@@ -132,7 +132,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((n
     const obj4 = { screen: metroImportDefault.FAMILY_CENTER };
     obj3.openUserSettings(obj4);
   }, items1);
-  const NotificationPressable = notification(12516).NotificationPressable;
+  const NotificationPressable = notification(12531).NotificationPressable;
   let obj4 = { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp, children: notification.subtitle };
   return <NotificationPressable icon={tmp} header={memo} onPress={callback} notification={notification}>{null}</NotificationPressable>;
 }));

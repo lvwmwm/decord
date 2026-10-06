@@ -1,19 +1,19 @@
-// Module ID: 16615
-// Function ID: 16616
+// Module ID: 16653
+// Function ID: 16654
 // Name: openConjurePublishDestination
-// Dependencies: [5118, 4507, 1377, 1085, 8704, 4903, 1112, 6845, 8994, 8986, 2]
+// Dependencies: [5124, 4513, 1377, 1085, 8738, 4909, 1112, 6855, 9027, 9019, 2]
 // Exports: openConjureProductionDm, openConjurePublishDestination
 
-// Module 16615 (openConjurePublishDestination)
+// Module 16653 (openConjurePublishDestination)
 import Constants from "Constants" /* 1085 */;
 import router_utils from "router_utils" /* 1112 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4903 */;
-import transitionToGuild from "transitionToGuild" /* 6845 */;
-import FramesConstants from "FramesConstants" /* 8704 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 8986 */;
-import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 8994 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
-import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4909 */;
+import transitionToGuild from "transitionToGuild" /* 6855 */;
+import FramesConstants from "FramesConstants" /* 8738 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 9019 */;
+import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 9027 */;
+import ApplicationStore from "ApplicationStore" /* 5124 */;
+import GuildChannelStore from "GuildChannelStore" /* 4513 */;
 import UserStore from "UserStore" /* 1377 */;
 import size from "module_2" /* 2 */;
 

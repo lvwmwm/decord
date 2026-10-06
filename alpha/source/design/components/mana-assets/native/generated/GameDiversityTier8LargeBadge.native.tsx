@@ -1,13 +1,13 @@
-// Module ID: 12894
-// Function ID: 12895
+// Module ID: 12913
+// Function ID: 12914
 // Name: GameDiversityTier8LargeBadge
-// Dependencies: [21, 558, 576, 12895, 5974, 2]
+// Dependencies: [21, 558, 576, 12914, 5981, 2]
 
-// Module 12894 (GameDiversityTier8LargeBadge)
+// Module 12913 (GameDiversityTier8LargeBadge)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import _modDef12895 from "module_12895" /* 12895 */;
+import FastImageDefault from "FastImage" /* 5981 */;
+import _modDef12914 from "module_12914" /* 12914 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef12895 };
+    const obj2 = { uri: _modDef12914 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num3 === undefined) {
     num3 = 1;
   }
-  const obj2 = { uri: _modDef12895 };
+  const obj2 = { uri: _modDef12914 };
   FastImageDefault;
   size = { width: num * num3, height: num2 * num3 };
   const items = [size];

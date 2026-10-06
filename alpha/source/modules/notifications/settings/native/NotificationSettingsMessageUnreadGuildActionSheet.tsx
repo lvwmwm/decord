@@ -1,18 +1,18 @@
-// Module ID: 12512
-// Function ID: 12513
+// Module ID: 12527
+// Function ID: 12528
 // Name: NotificationSettingsMessageUnreadGuildActionSheet
-// Dependencies: [19, 5071, 1085, 5072, 1095, 21, 558, 576, 12502, 1126, 6614, 9852, 6609, 12513, 2]
+// Dependencies: [19, 5077, 1085, 5078, 1095, 21, 558, 576, 12517, 1126, 6621, 9865, 6616, 12528, 2]
 
-// Module 12512 (NotificationSettingsMessageUnreadGuildActionSheet)
+// Module 12527 (NotificationSettingsMessageUnreadGuildActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import ReadStateConstants from "ReadStateConstants" /* 5072 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6614 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 9852 */;
-import NotificationSettingsMessageUnreadActionSheetDefault from "NotificationSettingsMessageUnreadActionSheet" /* 12513 */;
+import ReadStateConstants from "ReadStateConstants" /* 5078 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6621 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 9865 */;
+import NotificationSettingsMessageUnreadActionSheetDefault from "NotificationSettingsMessageUnreadActionSheet" /* 12528 */;
 import react from "react" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ const require = globalThis.__r;
 let _require, guildId, tmp2, tmp6, tmp7;
 
 let tmp4;
-const NotificationSettingsUtils = tmp4(6609);
+const NotificationSettingsUtils = tmp4(6616);
 const UserNotificationSettings = Constants.UserNotificationSettings;
 const UnreadSetting = ReadStateConstants.UnreadSetting;
 const constants = UserSettingsConstants.GuildNotificationSettingsFlags;

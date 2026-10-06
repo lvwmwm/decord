@@ -1,23 +1,23 @@
-// Module ID: 15786
-// Function ID: 15787
+// Module ID: 15823
+// Function ID: 15824
 // Name: SafetyGuildSettingDirectMessages
-// Dependencies: [2074, 15778, 7634, 11130, 558, 14625, 576, 15781, 2028, 5707, 1126, 5783, 6491, 15787, 11129, 2]
+// Dependencies: [2074, 15815, 7645, 11143, 558, 14641, 576, 15818, 2028, 5714, 1126, 5790, 6498, 15824, 11142, 2]
 
-// Module 15786 (SafetyGuildSettingDirectMessages)
+// Module 15823 (SafetyGuildSettingDirectMessages)
 import react from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2028 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
-import AlertDefault from "Alert" /* 5783 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11130 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14625 */;
-import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 15781 */;
-import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 15787 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5714 */;
+import AlertDefault from "Alert" /* 5790 */;
+import SettingsConstants from "SettingsConstants" /* 7645 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11143 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14641 */;
+import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 15818 */;
+import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 15824 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 15778 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 15815 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 11142 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

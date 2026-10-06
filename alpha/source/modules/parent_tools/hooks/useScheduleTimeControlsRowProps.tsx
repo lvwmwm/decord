@@ -1,14 +1,14 @@
-// Module ID: 14718
-// Function ID: 14719
+// Module ID: 14734
+// Function ID: 14735
 // Name: useScheduleTimeControlsRowProps
-// Dependencies: [21, 558, 576, 4886, 1126, 2493, 2]
+// Dependencies: [21, 558, 576, 4892, 1126, 2521, 2]
 
-// Module 14718 (useScheduleTimeControlsRowProps)
+// Module 14734 (useScheduleTimeControlsRowProps)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import _modDef2493 from "module_2493" /* 2493 */;
-import Text_Text from "Text/Text" /* 4886 */;
+import _modDef2521 from "module_2521" /* 2521 */;
+import Text_Text from "Text/Text" /* 4892 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,9 +21,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
     let first;
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { subLabel: null, trailing: "r" };
-      ({ variant: "text-xs/medium", color: "text-muted", children: intl3.string(_modDef2493.fOBIZH) });
-      const Text = tmp(4886).Text;
+      const obj2 = { subLabel: null, trailing: "Array" };
+      ({ variant: "text-xs/medium", color: "text-muted", children: intl3.string(_modDef2521.fOBIZH) });
+      const Text = tmp(4892).Text;
       intl3 = tmp(1126).intl;
       cResult[0] = obj2;
       first = obj2;
@@ -58,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
     if (cResult[4] !== arr.length) {
       const intl = tmp(1126).intl;
       const obj4 = { count: arr.length };
-      const formatToPlainStringResult = intl.formatToPlainString(_modDef2493.XfwcpX, obj4);
+      const formatToPlainStringResult = intl.formatToPlainString(_modDef2521.XfwcpX, obj4);
       cResult[4] = arr.length;
       cResult[5] = formatToPlainStringResult;
       tmp8 = formatToPlainStringResult;
@@ -69,7 +69,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
       let stringResult;
       const intl2 = tmp(1126).intl;
       const string = intl2.string;
-      const tmp13 = _modDef2493;
+      const tmp13 = _modDef2521;
       if (tmp4) {
         stringResult = string(tmp13["8vDHRq"]);
       } else {
@@ -109,20 +109,20 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   let obj5;
   let tmp10;
   if (0 === arr.length) {
-    const obj2 = { subLabel: null, trailing: "r" };
-    ({ variant: "text-xs/medium", color: "text-muted", children: intl.string(_modDef2493.fOBIZH) });
+    const obj2 = { subLabel: null, trailing: "Array" };
+    ({ variant: "text-xs/medium", color: "text-muted", children: intl.string(_modDef2521.fOBIZH) });
     const Text = Text_Text.Text;
     intl = intl4.intl;
     return obj2;
   } else {
-    const obj4 = { subLabel: intl2.formatToPlainString(_modDef2493.XfwcpX, obj5), trailing: tmp10(Text2, obj) };
+    const obj4 = { subLabel: intl2.formatToPlainString(_modDef2521.XfwcpX, obj5), trailing: tmp10(Text2, obj) };
     const someResult = arr.some((enabled) => enabled.enabled);
     intl2 = intl4.intl;
     obj5 = { count: arr.length };
     Text2 = Text_Text.Text;
     const intl3 = intl4.intl;
     const string = intl3.string;
-    const tmp11 = _modDef2493;
+    const tmp11 = _modDef2521;
     tmp10 = jsx;
     if (someResult) {
       let stringResult = string(tmp11["8vDHRq"]);

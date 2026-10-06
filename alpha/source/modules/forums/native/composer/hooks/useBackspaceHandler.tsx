@@ -1,9 +1,9 @@
-// Module ID: 10073
-// Function ID: 10074
+// Module ID: 10086
+// Function ID: 10087
 // Name: useBackspaceHandler
 // Dependencies: [19, 558, 576, 2]
 
-// Module 10073 (useBackspaceHandler)
+// Module 10086 (useBackspaceHandler)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

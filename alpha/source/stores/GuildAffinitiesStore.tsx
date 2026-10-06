@@ -1,12 +1,12 @@
-// Module ID: 8021
-// Function ID: 8022
+// Module ID: 8031
+// Function ID: 8032
 // Name: GuildAffinitiesStore
-// Dependencies: [2074, 8022, 504, 584, 2]
+// Dependencies: [2074, 8032, 504, 584, 2]
 
-// Module 8021 (GuildAffinitiesStore)
+// Module 8031 (GuildAffinitiesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GuildAffinitiesActionCreators from "GuildAffinitiesActionCreators" /* 8022 */;
+import GuildAffinitiesActionCreators from "GuildAffinitiesActionCreators" /* 8032 */;
 import GuildStore from "GuildStore" /* 2074 */;
 import size from "module_2" /* 2 */;
 

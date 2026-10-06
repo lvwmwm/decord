@@ -1,21 +1,21 @@
-// Module ID: 9880
-// Function ID: 9881
+// Module ID: 9893
+// Function ID: 9894
 // Name: BurstReactionToggle
-// Dependencies: [19, 17, 4879, 2048, 21, 4612, 558, 576, 504, 4580, 587, 4891, 5597, 4890, 9881, 1126, 8880, 2]
+// Dependencies: [19, 17, 4885, 2048, 21, 4618, 558, 576, 504, 4586, 587, 4897, 5604, 4896, 9894, 1126, 8909, 2]
 
-// Module 9880 (BurstReactionToggle)
+// Module 9893 (BurstReactionToggle)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import spring from "spring" /* 5597 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import timing from "timing" /* 4897 */;
+import spring from "spring" /* 5604 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 4885 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import size_mod from "module_2" /* 2 */;
 
 let importDefault, set, set2;
@@ -212,7 +212,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     tmp6 = tmp5;
   }
   const ref = react.useRef(null);
-  const tmp8 = tmp6(9881)(ref);
+  const tmp8 = tmp6(9894)(ref);
   importDefault = tmp8;
   if (cResult[0] === tmp8) {
     let tmp9;
@@ -253,7 +253,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
         tmp14 = cResult[9];
       }
       if (cResult[10] !== INTERACTIVE_TEXT_DEFAULT) {
-        const tmp17 = jsx(onPress(8880).SuperReactionIcon, { color: INTERACTIVE_TEXT_DEFAULT });
+        const tmp17 = jsx(onPress(8909).SuperReactionIcon, { color: INTERACTIVE_TEXT_DEFAULT });
         cResult[10] = INTERACTIVE_TEXT_DEFAULT;
         cResult[11] = tmp17;
         tmp15 = tmp17;
@@ -284,7 +284,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
         cResult[19] = tmp24;
         tmp21 = tmp24;
       }
-      const tmp20 = jsx(tmp6(4612).View, { style: tmp14, ref, children: tmp15 });
+      const tmp20 = jsx(tmp6(4618).View, { style: tmp14, ref, children: tmp15 });
       cResult[12] = tmp14;
       cResult[13] = tmp15;
       cResult[14] = tmp20;
@@ -322,7 +322,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     tmp5 = tmp2;
   }
   const ref = react.useRef(null);
-  importDefault = tmp5(9881)(ref);
+  importDefault = tmp5(9894)(ref);
   const containerStyle = closure_12(isActive).containerStyle;
   const intl = intl2.intl;
   const string = intl.string;
@@ -333,7 +333,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     stringResult = string(t.buV4av);
   }
   const items = [tmp.container, containerStyle];
-  const View = tmp5(4612).View;
+  const View = tmp5(4618).View;
   return <tmp8 onPress={function onPress() {
     closure_1(ContentDismissActionType.AUTO);
     _require();

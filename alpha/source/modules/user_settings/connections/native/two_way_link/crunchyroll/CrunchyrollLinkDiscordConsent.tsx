@@ -1,14 +1,14 @@
-// Module ID: 8782
-// Function ID: 8783
+// Module ID: 8814
+// Function ID: 8815
 // Name: CrunchyrollLinkDiscordConsent
-// Dependencies: [19, 8777, 1085, 8014, 21, 558, 576, 1490, 8750, 2]
+// Dependencies: [19, 8809, 1085, 8024, 21, 558, 576, 1490, 8782, 2]
 
-// Module 8782 (CrunchyrollLinkDiscordConsent)
+// Module 8814 (CrunchyrollLinkDiscordConsent)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 8777 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 8809 */;
 import react from "react" /* 19 */;
-import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 8014 */;
+import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 8024 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -65,8 +65,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = callbackState;
   cResult[6] = tmp6;
   cResult[7] = tmp5;
-  cResult[8] = jsx(navigation(8750).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId, scopes, onNext: tmp5, onError: tmp6 });
-  jsx(navigation(8750).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId, scopes, onNext: tmp5, onError: tmp6 });
+  cResult[8] = jsx(navigation(8782).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId, scopes, onNext: tmp5, onError: tmp6 });
+  jsx(navigation(8782).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId, scopes, onNext: tmp5, onError: tmp6 });
 }) : ((arg0) => {
   let callbackCode;
   let callbackState;
@@ -82,7 +82,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const callback1 = react.useCallback(() => {
     navigation.push(constants.ERROR);
   }, items1);
-  return jsx(navigation(8750).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId, scopes, onNext: callback, onError: callback1 });
+  return jsx(navigation(8782).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId, scopes, onNext: callback, onError: callback1 });
 });
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkDiscordConsent.tsx");
 

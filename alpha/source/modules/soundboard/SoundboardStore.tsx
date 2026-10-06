@@ -1,9 +1,9 @@
-// Module ID: 5680
-// Function ID: 5681
+// Module ID: 5687
+// Function ID: 5688
 // Name: SoundboardStore
-// Dependencies: [32, 1231, 4913, 1377, 5681, 5682, 1085, 1095, 4927, 4461, 12, 2028, 1252, 5683, 11, 504, 5685, 584, 2]
+// Dependencies: [32, 1231, 4919, 1377, 5688, 5689, 1085, 1095, 4933, 4467, 12, 2028, 1252, 5690, 11, 504, 5692, 584, 2]
 
-// Module 5680 (SoundboardStore)
+// Module 5687 (SoundboardStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -11,16 +11,16 @@ import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import UserSettings from "UserSettings" /* 2028 */;
-import _modDef4461 from "module_4461" /* 4461 */;
-import FrecencyDefault from "Frecency" /* 4927 */;
-import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5683 */;
-import SoundboardFavoritesExperiment2 from "SoundboardFavoritesExperiment" /* 5685 */;
+import _modDef4467 from "module_4467" /* 4467 */;
+import FrecencyDefault from "Frecency" /* 4933 */;
+import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5690 */;
+import SoundboardFavoritesExperiment2 from "SoundboardFavoritesExperiment" /* 5692 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
 import UserStore from "UserStore" /* 1377 */;
-import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 5681 */;
-import SoundboardConstants from "SoundboardConstants" /* 5682 */;
+import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 5688 */;
+import SoundboardConstants from "SoundboardConstants" /* 5689 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -111,7 +111,7 @@ let obj2 = {
     return 100;
   },
   computeWeight(arg0) {
-    const obj = _modDef4461();
+    const obj = _modDef4467();
     if (arg0 > obj.diff(closure_22, "days")) {
       return 0;
     } else {
@@ -510,7 +510,7 @@ const obj3 = {
     const guildId = topSoundsMetadata.guildId;
     const obj = { soundIds: topSoundsMetadata.map((soundId) => soundId.soundId), topSoundsTTL: addResult.valueOf() };
     set = map1.set;
-    const obj2 = _modDef4461();
+    const obj2 = _modDef4467();
     addResult = obj2.add(1, "days");
     const result = set(guildId, obj);
   }

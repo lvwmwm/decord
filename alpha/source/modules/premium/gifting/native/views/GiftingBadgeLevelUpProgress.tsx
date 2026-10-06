@@ -1,19 +1,19 @@
-// Module ID: 10768
-// Function ID: 10769
+// Module ID: 10781
+// Function ID: 10782
 // Name: GiftingBadgeLevelUpProgress
-// Dependencies: [19, 17, 7863, 21, 4890, 587, 558, 576, 10475, 10481, 4886, 1126, 2589, 2]
+// Dependencies: [19, 17, 7874, 21, 4896, 587, 558, 576, 10488, 10494, 4892, 1126, 2617, 2]
 
-// Module 10768 (GiftingBadgeLevelUpProgress)
+// Module 10781 (GiftingBadgeLevelUpProgress)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef2589 from "module_2589" /* 2589 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7863 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10475 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10481 */;
+import _modDef2617 from "module_2617" /* 2617 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7874 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10488 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10494 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -216,10 +216,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     tmp39 = cResult[44];
                   }
                   const labels = tmp4.labels;
-                  const Text = tmp(4886).Text;
+                  const Text = tmp(4892).Text;
                   const intl = tmp(1126).intl;
                   const obj9 = { count: progress, threshold: tmp18 };
-                  const formatResult = intl.format(_modDef2589.iIpfQe, obj9);
+                  const formatResult = intl.format(_modDef2617.iIpfQe, obj9);
                   cResult[6] = tmp6;
                   cResult[7] = newTier;
                   cResult[8] = tmp8;
@@ -346,8 +346,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items1[2] = tmp15Result;
   items3 = [metroRequire(View, obj3), ];
   const obj9 = { style: tmp.labels, children: hasOwnProperty(Text, obj10) };
-  obj10 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(_modDef2589.iIpfQe, { count: progress, threshold: tmp8 }) };
-  Text = tmp2(4886).Text;
+  obj10 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(_modDef2617.iIpfQe, { count: progress, threshold: tmp8 }) };
+  Text = tmp2(4892).Text;
   intl = tmp2(1126).intl;
   items3[1] = hasOwnProperty(View, obj9);
   return metroRequire(View, obj2);

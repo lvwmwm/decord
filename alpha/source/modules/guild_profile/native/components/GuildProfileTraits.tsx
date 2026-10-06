@@ -1,18 +1,18 @@
-// Module ID: 9411
-// Function ID: 9412
+// Module ID: 9425
+// Function ID: 9426
 // Name: GuildProfileTraits
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1402, 4527, 6625, 4886, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1402, 4533, 6632, 4892, 2]
 
-// Module 9411 (GuildProfileTraits)
+// Module 9425 (GuildProfileTraits)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4527 */;
-import EmojiDefault from "Emoji" /* 6625 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4533 */;
+import EmojiDefault from "Emoji" /* 6632 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let hasOwnProperty;
 let metroRequire;
 let obj2;
 let tmp;
-const Text_Text = tmp(4886);
+const Text_Text = tmp(4892);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = { container: { display: "flex", flexDirection: "row", flexWrap: "wrap", gap: 8 }, trait: obj2, emojiImage: { width: 16, height: 16 } };
@@ -55,7 +55,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
         }
       }
       const obj5 = { src: tmp4, name: tmp8, fastImageStyle: tmp3.emojiImage };
-      const tmp11 = hasOwnProperty(tmp7(6625), obj5);
+      const tmp11 = hasOwnProperty(tmp7(6632), obj5);
       cResult[3] = tmp4;
       cResult[4] = tmp8;
       cResult[5] = tmp3.emojiImage;

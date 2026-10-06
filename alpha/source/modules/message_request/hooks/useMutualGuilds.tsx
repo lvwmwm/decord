@@ -1,12 +1,12 @@
-// Module ID: 17060
-// Function ID: 17061
+// Module ID: 17086
+// Function ID: 17087
 // Name: useMutualGuilds
-// Dependencies: [19, 7111, 1377, 558, 576, 504, 584, 7858, 2]
+// Dependencies: [19, 7124, 1377, 558, 576, 504, 584, 7869, 2]
 
-// Module 17060 (useMutualGuilds)
+// Module 17086 (useMutualGuilds)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7111 */;
+import UserProfileStore from "UserProfileStore" /* 7124 */;
 import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

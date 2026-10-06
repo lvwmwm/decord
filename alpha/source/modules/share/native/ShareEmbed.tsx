@@ -1,17 +1,17 @@
-// Module ID: 13717
-// Function ID: 13718
+// Module ID: 13735
+// Function ID: 13736
 // Name: ShareEmbed
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 5968, 4886, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 5975, 4892, 2]
 
-// Module 13717 (ShareEmbed)
+// Module 13735 (ShareEmbed)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5968 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5975 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -143,7 +143,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp28 = null;
     if (null != title) {
       const obj8 = { style: { marginVertical: 1 }, variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, ellipsizeMode: "tail", children: title };
-      tmp28 = hasOwnProperty(tmp(4886).Text, obj8);
+      tmp28 = hasOwnProperty(tmp(4892).Text, obj8);
     }
     cResult[13] = title;
     cResult[14] = tmp28;
@@ -170,7 +170,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp36 = null;
       if (null != url2) {
         const obj9 = { style: { marginVertical: 1 }, variant: "text-xs/medium", color: "text-link", lineClamp: 1, ellipsizeMode: "tail", children: url2 };
-        tmp36 = hasOwnProperty(tmp(4886).Text, obj9);
+        tmp36 = hasOwnProperty(tmp(4892).Text, obj9);
       }
       cResult[18] = url2;
       cResult[19] = tmp36;
@@ -246,7 +246,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp32 = null;
     if (null != description) {
       const obj14 = { style: { marginVertical: 1 }, variant: "text-xs/medium", color: "text-default", lineClamp: 1, ellipsizeMode: "tail", children: description };
-      tmp32 = hasOwnProperty(tmp(4886).Text, obj14);
+      tmp32 = hasOwnProperty(tmp(4892).Text, obj14);
     }
   }
   cResult[15] = description;

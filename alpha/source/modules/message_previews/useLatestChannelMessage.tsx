@@ -1,13 +1,13 @@
-// Module ID: 15138
-// Function ID: 15139
+// Module ID: 15153
+// Function ID: 15154
 // Name: useLatestChannelMessage
-// Dependencies: [32, 19, 13529, 558, 576, 504, 15139, 2]
+// Dependencies: [32, 19, 13545, 558, 576, 504, 15154, 2]
 
-// Module 15138 (useLatestChannelMessage)
+// Module 15153 (useLatestChannelMessage)
 import react from "react" /* 19 */;
-import MessagePreviewManagerDefault from "MessagePreviewManager" /* 15139 */;
+import MessagePreviewManagerDefault from "MessagePreviewManager" /* 15154 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 13529 */;
+import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 13545 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

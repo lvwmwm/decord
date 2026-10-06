@@ -1,9 +1,9 @@
-// Module ID: 2041
-// Function ID: 2042
+// Module ID: 2040
+// Function ID: 2041
 // Name: DismissibleContentFatigueConfig
 // Dependencies: [2036, 2]
 
-// Module 2041 (DismissibleContentFatigueConfig)
+// Module 2040 (DismissibleContentFatigueConfig)
 import dismissible_content from "dismissible_content" /* 2036 */;
 import size from "module_2" /* 2 */;
 

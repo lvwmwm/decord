@@ -1,18 +1,18 @@
-// Module ID: 11061
-// Function ID: 11062
+// Module ID: 11074
+// Function ID: 11075
 // Name: AvailableForumTag
-// Dependencies: [109, 19, 5638, 1380, 21, 4890, 587, 558, 576, 504, 8567, 6625, 1402, 4886, 10357, 2]
+// Dependencies: [109, 19, 5645, 1380, 21, 4896, 587, 558, 576, 504, 8602, 6632, 1402, 4892, 10370, 2]
 
-// Module 11061 (AvailableForumTag)
+// Module 11074 (AvailableForumTag)
 import nativeDefault from "native" /* 587 */;
 import EmojiConstants from "EmojiConstants" /* 1380 */;
-import EmojiDefault from "Emoji" /* 6625 */;
-import native from "native" /* 8567 */;
+import EmojiDefault from "Emoji" /* 6632 */;
+import native from "native" /* 8602 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5638 */;
+import EmojiStore from "EmojiStore" /* 5645 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let metroImportAll;
 let obj2;
 let obj3;
 let tmp3;
-const Text_Text = tmp3(4886);
+const Text_Text = tmp3(4892);
 let closure_3 = ["ref"];
 let _objectWithoutProperties = _objectWithoutProperties_mod;
 let react = react_mod;

@@ -1,9 +1,9 @@
-// Module ID: 8015
-// Function ID: 8016
+// Module ID: 8025
+// Function ID: 8026
 // Name: OAuth2Scopes
 // Dependencies: [2]
 
-// Module 8015 (OAuth2Scopes)
+// Module 8025 (OAuth2Scopes)
 import size from "module_2" /* 2 */;
 
 let obj2;

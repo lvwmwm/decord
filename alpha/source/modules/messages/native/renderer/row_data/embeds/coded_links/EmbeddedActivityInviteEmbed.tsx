@@ -1,28 +1,28 @@
-// Module ID: 13054
-// Function ID: 13055
+// Module ID: 13073
+// Function ID: 13074
 // Name: EmbeddedActivityInviteEmbed
-// Dependencies: [32, 17, 2050, 7822, 5118, 502, 2051, 4871, 4519, 1377, 10024, 7226, 584, 7821, 7604, 5812, 1126, 5043, 13055, 2]
+// Dependencies: [32, 17, 2050, 7833, 5124, 502, 2051, 4877, 4525, 1377, 10037, 7239, 584, 7832, 7615, 5819, 1126, 5049, 13074, 2]
 // Exports: createEmbeddedActivityInviteEmbed
 
-// Module 13054 (EmbeddedActivityInviteEmbed)
+// Module 13073 (EmbeddedActivityInviteEmbed)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl6 from "intl" /* 1126 */;
-import useChannelName from "useChannelName" /* 5043 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5812 */;
-import Constants from "Constants" /* 7226 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7604 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 7821 */;
-import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 7822 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 10024 */;
-import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 13055 */;
+import useChannelName from "useChannelName" /* 5049 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5819 */;
+import Constants from "Constants" /* 7239 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7615 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 7832 */;
+import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 7833 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 10037 */;
+import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 13074 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
+import ApplicationStore from "ApplicationStore" /* 5124 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import InviteStore from "InviteStore" /* 4871 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import InviteStore from "InviteStore" /* 4877 */;
+import RelationshipStore from "RelationshipStore" /* 4525 */;
 import UserStore from "UserStore" /* 1377 */;
 import size from "module_2" /* 2 */;
 

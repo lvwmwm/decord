@@ -1,22 +1,22 @@
-// Module ID: 11596
-// Function ID: 11597
+// Module ID: 11609
+// Function ID: 11610
 // Name: CustomTypingIndicatorAnimatedEmoji
-// Dependencies: [32, 19, 1986, 1085, 21, 4890, 558, 576, 4596, 2028, 4612, 504, 1385, 4891, 1402, 6625, 2]
+// Dependencies: [32, 19, 1986, 1085, 21, 4896, 558, 576, 4602, 11610, 4618, 504, 1385, 4897, 1402, 6632, 2]
 
-// Module 11596 (CustomTypingIndicatorAnimatedEmoji)
+// Module 11609 (CustomTypingIndicatorAnimatedEmoji)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import user from "user" /* 1385 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import timing from "timing" /* 4897 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AppStateStore from "AppStateStore" /* 1986 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let emojiCount, num2, num3, num4, num5, num6, obj1, obj14, obj15, obj16, obj17, obj18, set, set2, set2Result, set3, set3Result, tmp10, tmp14, tmp19, tmp32, tmp8, tmp9, tmp9Result, tmp9Result1, tmp9Result10, tmp9Result11, tmp9Result12, tmp9Result13, tmp9Result14, tmp9Result2, tmp9Result3, tmp9Result4, tmp9Result5, tmp9Result6, tmp9Result7, tmp9Result8, tmp9Result9;
+let emojiCount, num2, num3, num4, num5, num6, obj1, obj14, obj15, obj16, obj17, obj18, set, set2, set2Result, set3, set3Result, tmp10, tmp14, tmp19, tmp32, tmp9, tmp9Result, tmp9Result1, tmp9Result10, tmp9Result11, tmp9Result12, tmp9Result13, tmp9Result14, tmp9Result2, tmp9Result3, tmp9Result4, tmp9Result5, tmp9Result6, tmp9Result7, tmp9Result8, tmp9Result9;
 
 const AppStates = Constants.AppStates;
 const jsx = Fragment.jsx;
@@ -69,8 +69,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiCount) => {
       }
     }
   }
-  const AnimateEmoji = tmp(tmp2[9]).AnimateEmoji;
-  let tmp7 = AnimateEmoji.useSetting() && !enabled;
+  let tmp7 = emojiCount(tmp2[9])();
   const tmpResult = tmp(animation[10]);
   const sharedValue = tmpResult.useSharedValue(1);
   const tmpResult4 = tmp(animation[10]);
@@ -197,7 +196,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiCount) => {
               num6 = -1;
               set3Result = set3(withDelay3(result3, withRepeat3(withSequence2(withTimingResult2, withTimingResult3, tmp9Result14.withTiming(0, obj18)), -1)));
             }
-            return () => { /* body not rendered: F141516 */ };
+            return () => { /* body not rendered: F141722 */ };
           }
         }
       }
@@ -223,7 +222,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiCount) => {
   let emojiURL;
   let index;
   let obj3;
-  let tmp18;
+  let tmp17;
   ({ emoji, index } = emojiCount);
   emojiCount = emojiCount.emojiCount;
   let num = emojiCount.size;
@@ -248,13 +247,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiCount) => {
   }
   const tmp4 = animation(obj.useState(null), 2);
   closure_6 = tmp4[1];
+  let tmp5 = tmp4[0] === name;
   let items = [name];
-  const first = tmp4[0];
   const callback = obj.useCallback(() => {
     closure_6(name);
   }, items);
-  const AnimateEmoji = tmp2(tmp3[9]).AnimateEmoji;
-  let tmp7 = AnimateEmoji.useSetting() && !enabled;
+  let tmp7 = emojiCount;
+  const tmp8 = emojiCount(tmp3[9])();
   const tmp2Result = index(tmp3[10]);
   sharedValue = tmp2Result.useSharedValue(1);
   const tmp2Result5 = index(tmp3[10]);
@@ -360,11 +359,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiCount) => {
   fn.__initData = __initData;
   const tmp2Result8 = index(tmp3[10]);
   const animatedStyle = tmp2Result8.useAnimatedStyle(fn);
-  let obj2 = { style: animatedStyle, children: sharedValue(tmp18, obj3, name) };
+  let obj2 = { style: animatedStyle, children: sharedValue(tmp17, obj3, name) };
   const View = emojiCount(tmp3[10]).View;
   let str = "\u{1F615}";
-  tmp18 = emojiCount(tmp3[15]);
-  if (first !== name) {
+  tmp17 = emojiCount(tmp3[15]);
+  if (!tmp5) {
     let str2 = "";
     if (null == emoji.id) {
       str2 = emoji.name;
@@ -373,17 +372,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiCount) => {
   }
   obj3 = { name: str, src: emojiURL, fastImageStyle: null, textEmojiStyle: null, onError: callback };
   emojiURL = undefined;
-  if (first !== name) {
+  if (!tmp5) {
     if (null != emoji.id) {
       let obj4 = { id: null, animated, size: num };
       ({ id: obj9.id, animated } = emoji);
-      const getEmojiURL = tmp17(tmp3[14]).getEmojiURL;
-      emojiCount(tmp3[14]);
+      const getEmojiURL = tmp7(tmp3[14]).getEmojiURL;
+      tmp7(tmp3[14]);
       if (animated == null) {
         animated = false;
       }
       if (animated) {
-        animated = tmp7;
+        animated = tmp8;
       }
       emojiURL = getEmojiURL(obj4);
     }

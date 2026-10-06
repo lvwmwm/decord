@@ -1,13 +1,13 @@
-// Module ID: 16686
-// Function ID: 16687
+// Module ID: 16707
+// Function ID: 16708
 // Name: CaterpillarIllocon
-// Dependencies: [21, 558, 576, 16687, 5974, 2]
+// Dependencies: [21, 558, 576, 16708, 5981, 2]
 
-// Module 16686 (CaterpillarIllocon)
+// Module 16707 (CaterpillarIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import _modDef16687 from "module_16687" /* 16687 */;
+import FastImageDefault from "FastImage" /* 5981 */;
+import _modDef16708 from "module_16708" /* 16708 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef16687 };
+    const obj2 = { uri: _modDef16708 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num === undefined) {
     num = 64;
   }
-  const obj2 = { uri: _modDef16687 };
+  const obj2 = { uri: _modDef16708 };
   FastImageDefault;
   const items = [{ width: num, height: num }];
   return <tmp fadeDuration={0} source={obj2} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;

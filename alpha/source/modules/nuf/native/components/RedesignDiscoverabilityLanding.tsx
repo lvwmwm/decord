@@ -1,23 +1,23 @@
-// Module ID: 17591
-// Function ID: 17592
+// Module ID: 17637
+// Function ID: 17638
 // Name: RedesignDiscoverabilityLanding
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1618, 6068, 1126, 4886, 5974, 12419, 12329, 5594, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1618, 6075, 1126, 4892, 5981, 12434, 12344, 5601, 2]
 
-// Module 17591 (RedesignDiscoverabilityLanding)
+// Module 17637 (RedesignDiscoverabilityLanding)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import NavigatorConstants from "NavigatorConstants" /* 6068 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12329 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12419 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import components_Button_Button from "components/Button/Button" /* 5601 */;
+import FastImageDefault from "FastImage" /* 5981 */;
+import NavigatorConstants from "NavigatorConstants" /* 6075 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12344 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12434 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 9739
-// Function ID: 9740
+// Module ID: 9752
+// Function ID: 9753
 // Name: StageGridRow
-// Dependencies: [19, 17, 21, 4890, 9731, 5582, 558, 576, 5912, 9740, 9730, 2]
+// Dependencies: [19, 17, 21, 4896, 9744, 5589, 558, 576, 5919, 9753, 9743, 2]
 
-// Module 9739 (StageGridRow)
+// Module 9752 (StageGridRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 5582 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5912 */;
-import SpeakerTileDefault from "SpeakerTile" /* 9730 */;
-import MediaTileDefault from "MediaTile" /* 9740 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 5589 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 5919 */;
+import SpeakerTileDefault from "SpeakerTile" /* 9743 */;
+import MediaTileDefault from "MediaTile" /* 9753 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
   const participants = channel.participants;
   const row = channel.row;
   const tmp4 = closure_5();
-  let obj2 = channel(5912);
+  let obj2 = channel(5919);
   const isScreenLandscape = obj2.useIsScreenLandscape();
   let num = 3;
   if (0 === row) {
@@ -37,11 +37,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
   if (cResult[0] !== num) {
     let THIRD;
     if (1 === num) {
-      THIRD = tmp(9731).StageTileSize.FULL;
+      THIRD = tmp(9744).StageTileSize.FULL;
     } else if (2 === num) {
-      THIRD = tmp(9731).StageTileSize.HALF;
+      THIRD = tmp(9744).StageTileSize.HALF;
     } else {
-      THIRD = tmp(9731).StageTileSize.THIRD;
+      THIRD = tmp(9744).StageTileSize.THIRD;
     }
     cResult[0] = num;
     cResult[1] = THIRD;
@@ -139,11 +139,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
     num = participants.length;
   }
   if (1 === num) {
-    THIRD = tmp2(9731).StageTileSize.FULL;
+    THIRD = tmp2(9744).StageTileSize.FULL;
   } else if (2 === num) {
-    THIRD = tmp2(9731).StageTileSize.HALF;
+    THIRD = tmp2(9744).StageTileSize.HALF;
   } else {
-    THIRD = tmp2(9731).StageTileSize.THIRD;
+    THIRD = tmp2(9744).StageTileSize.THIRD;
   }
   const items = [tmp.container, ];
   const tmp5 = View;

@@ -1,12 +1,12 @@
-// Module ID: 13741
-// Function ID: 13742
+// Module ID: 13759
+// Function ID: 13760
 // Name: GuildBadgeCrosshairs
-// Dependencies: [109, 19, 21, 558, 576, 13730, 8136, 2]
+// Dependencies: [109, 19, 21, 558, 576, 13748, 8169, 2]
 
-// Module 13741 (GuildBadgeCrosshairs)
+// Module 13759 (GuildBadgeCrosshairs)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8136 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 13730 */;
+import inlineStyles from "inlineStyles" /* 8169 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 13748 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -495,7 +495,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj30 = { width: num7, height: num8, viewBox: "0 0 16 16", fill: "none", children: items };
-    const Svg = tmp(8136).Svg;
+    const Svg = tmp(8169).Svg;
     const merged = Object.assign(tmp5);
     items = [tmp14, tmp18, tmp21, tmp24, tmp27, tmp30, tmp33, tmp36, tmp39, tmp42, tmp45, tmp48, tmp51, tmp54, tmp57, tmp60, tmp63, tmp66, tmp69, tmp72, tmp75, tmp78, tmp81, tmp84, tmp87, tmp90, tmp93, tmp96, tmp99, tmp102, tmp105, tmp108, tmp109, tmp113, tmp116, tmp119, tmp122];
     const tmp130 = hasOwnProperty(Svg, obj30);

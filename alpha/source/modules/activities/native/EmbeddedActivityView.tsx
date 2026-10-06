@@ -1,16 +1,16 @@
-// Module ID: 9134
-// Function ID: 9135
+// Module ID: 9169
+// Function ID: 9170
 // Name: EmbeddedActivityView
-// Dependencies: [109, 32, 19, 17, 2050, 2011, 1360, 21, 4890, 558, 576, 9133, 1484, 584, 9135, 9136, 8991, 9138, 9131, 504, 9144, 9145, 5091, 9147, 2]
+// Dependencies: [109, 32, 19, 17, 2050, 2011, 1360, 21, 4896, 558, 576, 9168, 1484, 584, 9170, 9171, 9024, 9173, 9166, 504, 9179, 9180, 5097, 9182, 2]
 
-// Module 9134 (EmbeddedActivityView)
+// Module 9169 (EmbeddedActivityView)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ApplicationConstants from "ApplicationConstants" /* 1360 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5091 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 8991 */;
-import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 9135 */;
-import DiscordEnvironment from "DiscordEnvironment" /* 9136 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5097 */;
+import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 9024 */;
+import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 9170 */;
+import DiscordEnvironment from "DiscordEnvironment" /* 9171 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -18,7 +18,7 @@ import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
 import Constants from "Constants" /* 2011 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let closure_15;
 let metroImportAll;
 let tmp;
 let unpackModuleId;
-const BaseEmbeddedAppWebView2 = tmp(9138);
+const BaseEmbeddedAppWebView2 = tmp(9173);
 function useQueryParams(arg0) {
   let channel;
   let currentEmbeddedActivity;

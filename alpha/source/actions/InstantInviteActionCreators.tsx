@@ -1,10 +1,10 @@
-// Module ID: 8054
-// Function ID: 8055
+// Module ID: 8064
+// Function ID: 8065
 // Name: InstantInviteActionCreators
-// Dependencies: [5, 5948, 7037, 2055, 502, 2051, 4507, 2112, 2074, 8055, 4871, 4509, 4519, 4699, 1377, 1085, 1110, 2058, 4932, 7226, 5571, 1390, 8068, 6723, 1124, 1112, 5568, 1987, 8069, 9306, 4945, 5032, 12733, 7034, 5841, 5960, 9000, 6590, 9279, 584, 12734, 5100, 12735, 5705, 1252, 1282, 5313, 1102, 5083, 1260, 2064, 4872, 5913, 6710, 4551, 12737, 12738, 11090, 5403, 5321, 12739, 12740, 1265, 12742, 2]
+// Dependencies: [5, 5955, 7050, 2055, 502, 2051, 4513, 2112, 2074, 8065, 4877, 4515, 4525, 4705, 1377, 1085, 1110, 2058, 4938, 7239, 5578, 1390, 8078, 6737, 1124, 1112, 5575, 1987, 8079, 8102, 4951, 5038, 12748, 7047, 5848, 5967, 9033, 6597, 9314, 584, 12749, 5106, 12750, 5712, 1252, 1282, 5320, 1102, 5089, 1260, 2064, 4878, 5920, 6717, 6724, 4557, 12752, 12753, 11103, 5410, 5328, 12754, 12755, 1265, 12757, 2]
 // Exports: trackInviteEmbedActioned, trackInviteServerClicked, transitionToGuildFromEventInvite
 
-// Module 8054 (InstantInviteActionCreators)
+// Module 8064 (InstantInviteActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AgeGateConstants from "AgeGateConstants" /* 1110 */;
 import router_utils from "router_utils" /* 1112 */;
@@ -12,31 +12,32 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import FlagUtils from "FlagUtils" /* 1390 */;
 import ChannelConstants from "ChannelConstants" /* 2058 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 4872 */;
-import Constants2 from "Constants" /* 4932 */;
-import _modDef5403 from "module_5403" /* 5403 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 5571 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5705 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 5948 */;
-import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6710 */;
-import GuildScheduledEventStore2 from "GuildScheduledEventStore" /* 7037 */;
-import Constants3 from "Constants" /* 7226 */;
-import GuildInviteFlags from "GuildInviteFlags" /* 8068 */;
-import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 11090 */;
-import generateDynamicLinkDefault from "generateDynamicLink" /* 12740 */;
-import ProtocolUtilsDefault from "ProtocolUtils" /* 12742 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 4878 */;
+import Constants2 from "Constants" /* 4938 */;
+import _modDef5410 from "module_5410" /* 5410 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 5578 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5712 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 5955 */;
+import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6717 */;
+import showNSFWGuildJoinGate2 from "showNSFWGuildJoinGate" /* 6724 */;
+import GuildScheduledEventStore2 from "GuildScheduledEventStore" /* 7050 */;
+import Constants3 from "Constants" /* 7239 */;
+import GuildInviteFlags from "GuildInviteFlags" /* 8078 */;
+import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 11103 */;
+import generateDynamicLinkDefault from "generateDynamicLink" /* 12755 */;
+import ProtocolUtilsDefault from "ProtocolUtils" /* 12757 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import GuildChannelStore from "GuildChannelStore" /* 4513 */;
 import GuildMemberStore from "GuildMemberStore" /* 2112 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import InstantInviteStore from "InstantInviteStore" /* 8055 */;
-import InviteStore from "InviteStore" /* 4871 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import InstantInviteStore from "InstantInviteStore" /* 8065 */;
+import InviteStore from "InviteStore" /* 4877 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
+import RelationshipStore from "RelationshipStore" /* 4525 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
 import UserStore from "UserStore" /* 1377 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
@@ -59,11 +60,11 @@ let closure_32;
 let closure_33;
 let metroImportAll;
 let tmp;
-let tmp6;
+let tmp13;
 let unpackModuleId;
-const errors_V6OrEarlierAPIErrorDefault = tmp6(4551);
-const resolveInviteDefault = tmp(12734);
-const f96252 = () => {
+const errors_V6OrEarlierAPIErrorDefault = tmp13(4557);
+const resolveInviteDefault = tmp(12749);
+const f96393 = () => {
   let c4;
   let guildScheduledEvent;
   let intent;
@@ -81,6 +82,7 @@ const f96252 = () => {
     if (!tmp4) {
       let isGuildVocalOrThreadResult = channel.isGuildVocalOrThread();
       if (isGuildVocalOrThreadResult) {
+        const tmp6 = closure_2_0;
         let obj3 = closure_2_0(paths[41]);
         isGuildVocalOrThreadResult = obj3.maybeOpenAgeGateForVoiceChannel(tmp);
       }
@@ -89,6 +91,8 @@ const f96252 = () => {
     if (!tmp4) {
       let isGuildVocalOrThreadResult1 = channel.isGuildVocalOrThread();
       if (isGuildVocalOrThreadResult1) {
+        let tmp9 = closure_2_0;
+        let tmp10 = paths;
         let obj4 = closure_2_0(paths[42]);
         isGuildVocalOrThreadResult1 = obj4.maybeOpenSpoilerGateForVoiceChannel(tmp);
       }
@@ -96,6 +100,7 @@ const f96252 = () => {
     }
     let flag = !tmp4;
     if (flag) {
+      let tmp11 = obj;
       let guildScheduledEvent1;
       if (obj != null) {
         guildScheduledEvent1 = tmp11.guildScheduledEvent;
@@ -111,7 +116,7 @@ const f96252 = () => {
             if (null != welcomeModalChannelId) {
               obj.welcomeModalChannelId = welcomeModalChannelId;
             }
-            const obj2 = id(paths[38]);
+            const obj2 = id(closure_2_3[38]);
             const result = obj2.transitionToEventDetailsFromInvite(tmp, obj);
           });
           flag = false;
@@ -140,7 +145,7 @@ const f96252 = () => {
           hasItem = features.has(constants2.MEMBER_VERIFICATION_MANUAL_APPROVAL);
         }
         let obj2 = tmp11;
-        if (obj == null) {
+        if (tmp11 == null) {
           obj2 = {};
         }
         ({ targetUserId: c4, targetType } = obj2);
@@ -149,7 +154,7 @@ const f96252 = () => {
         if (!isGuestInvite) {
           if (!obj2.isApplicationBypassInvite) {
             let forceTransition;
-            if (obj != null) {
+            if (tmp11 != null) {
               forceTransition = tmp11.forceTransition;
             }
             if (!forceTransition) {
@@ -162,37 +167,35 @@ const f96252 = () => {
         let type = channel.type;
         let targetChannelId;
         const channel1 = obj.getChannel(channel.id);
-        if (obj != null) {
+        if (tmp11 != null) {
           targetChannelId = tmp11.targetChannelId;
         }
         if (null != targetChannelId) {
           const channel2 = obj.getChannel(targetChannelId);
           if (null != channel2) {
-            let tmp23 = closure_2_20;
             GUILD_HOME = targetChannelId;
           }
           closure_9 = type === constants.GUILD_STAGE_VOICE;
           let targetChannelId1;
           const tmp37 = constants;
-          if (obj != null) {
+          if (tmp11 != null) {
             targetChannelId1 = tmp11.targetChannelId;
           }
           let tmp40;
-          if (null != targetChannelId1 && GUILD_HOME === obj.targetChannelId) {
+          if (null != targetChannelId1 && GUILD_HOME === tmp11.targetChannelId) {
             let targetMessageId;
-            if (obj != null) {
+            if (tmp11 != null) {
               targetMessageId = tmp11.targetMessageId;
             }
             tmp40 = targetMessageId;
           }
+          const tmp42 = closure_2_26;
           const CHANNELResult = closure_2_26.CHANNEL(guildId, GUILD_HOME, tmp40);
           c10 = CHANNELResult;
-          const tmp42 = closure_2_26;
           if (GUILD_HOME === channel.id) {
-            const tmp44 = closure_2_9;
             if (closure_2_9(type)) {
               autoJoin = undefined;
-              if (obj != null) {
+              if (tmp11 != null) {
                 autoJoin = tmp11.autoJoin;
               }
               if (false !== autoJoin) {
@@ -200,59 +203,77 @@ const f96252 = () => {
                   let analyticsLocations;
                   let applicationId;
                   let ownerId;
-                  const promise = id(paths[27])(paths[26], paths.paths);
-                  promise.then((result) => {
-                    let closure_0 = result.default;
+                  items = [id(closure_2_3[27])(closure_2_3[26], closure_2_3.paths), id(closure_2_3[27])(closure_2_3[28], closure_2_3.paths)];
+                  const allResult = all(items);
+                  allResult.then((result) => {
+                    const iter = result[Symbol.iterator]();
+                    let tmp = iter === undefined;
+                    let nextResult;
+                    if (!tmp) {
+                      nextResult = iter.next();
+                    }
+                    let nextResult1;
+                    let tmp4 = tmp;
+                    if (!tmp4) {
+                      tmp4 = tmp6;
+                      if (!tmp4) {
+                        nextResult1 = iter.next();
+                        tmp4 = tmp6;
+                      }
+                    }
+                    nextResult1 = nextResult1.default;
+                    if (!tmp4) {
+                      iter.return();
+                    }
                     function connect() {
                       let intent;
                       let inviterUserId;
                       const tmp = closure_2_9;
                       if (tmp) {
-                        let tmp47;
-                        const connectAndOpen = guildId(items[28]).connectAndOpen;
-                        guildId(items[28]);
+                        let tmp46;
+                        const connectAndOpen = guildId(items[29]).connectAndOpen;
+                        guildId(items[29]);
                         if (closure_2_1 instanceof closure_3_11) {
-                          tmp47 = tmp44;
+                          tmp46 = tmp43;
                         } else {
-                          tmp47 = c10(tmp44);
+                          tmp46 = c10(tmp43);
                         }
-                        connectAndOpen(tmp47);
-                        const obj5 = guildId(items[25]);
-                        obj5.transitionTo(closure_2_10);
+                        connectAndOpen(tmp46);
+                        const obj4 = guildId(items[25]);
+                        obj4.transitionTo(closure_2_10);
                       } else {
                         let prop;
                         if (closure_2_2 != null) {
                           prop = tmp2.muteOnJoinVoiceChannel;
                         }
                         if (prop) {
-                          obj = channel(items[29]);
-                          obj.setSelfMute(guildId(items[30]).MediaEngineContextTypes.DEFAULT, true);
+                          nextResult1.setSelfMute(guildId(items[30]).MediaEngineContextTypes.DEFAULT, true);
                         }
-                        const voiceChannel = closure_0.selectVoiceChannel(GUILD_HOME);
-                        let tmp15 = targetType === constants3.STREAM;
-                        const tmp13 = targetType;
-                        const tmp14 = constants3;
-                        if (tmp15) {
-                          tmp15 = null != ownerId;
+                        const voiceChannel = nextResult.selectVoiceChannel(GUILD_HOME);
+                        let tmp14 = targetType === constants3.STREAM;
+                        const tmp12 = targetType;
+                        const tmp13 = constants3;
+                        if (tmp14) {
+                          tmp14 = null != ownerId;
                         }
-                        if (tmp15) {
-                          const obj3 = { streamType: constants2.GUILD, ownerId, guildId, channelId: GUILD_HOME };
-                          const obj2 = closure_2(items[31]);
-                          const result = obj2.watchStreamAndTransitionToStream(obj3);
+                        if (tmp14) {
+                          const obj2 = { streamType: constants2.GUILD, ownerId, guildId, channelId: GUILD_HOME };
+                          obj = closure_2(items[31]);
+                          const result = obj.watchStreamAndTransitionToStream(obj2);
                         }
-                        const tmp23 = tmp13 === tmp14.EMBEDDED_APPLICATION && null != applicationId;
-                        if (tmp23) {
-                          let tmp29 = guildId;
+                        const tmp22 = tmp12 === tmp13.EMBEDDED_APPLICATION && null != applicationId;
+                        if (tmp22) {
+                          let tmp28 = guildId;
                           const transitionTo = guildId(items[25]).transitionTo;
                           const CHANNEL = constants.CHANNEL;
                           guildId(items[25]);
                           if (guildId == null) {
-                            tmp29 = closure_3_27;
+                            tmp28 = closure_3_27;
                           }
-                          transitionTo(CHANNEL(tmp29, GUILD_HOME));
-                          const obj4 = { channelId: GUILD_HOME, applicationId, intent, inviterUserId, analyticsLocations, commandOrigin: guildId(items[33]).CommandOrigin.CHAT };
+                          transitionTo(CHANNEL(tmp28, GUILD_HOME));
+                          const obj3 = { channelId: GUILD_HOME, applicationId, intent, inviterUserId, analyticsLocations, commandOrigin: guildId(items[33]).CommandOrigin.CHAT };
                           intent = undefined;
-                          const tmp33 = channel(items[32]);
+                          const tmp32 = channel(items[32]);
                           if (closure_2_2 != null) {
                             intent = tmp2.intent;
                           }
@@ -260,29 +281,32 @@ const f96252 = () => {
                           if (closure_2_2 != null) {
                             inviterUserId = tmp2.inviterUserId;
                           }
-                          tmp33(obj4);
+                          tmp32(obj3);
                         }
                       }
                     }
-                    let tmp = closure_7;
-                    if (!tmp) {
-                      const tmp2 = guildId;
+                    const tmp8 = closure_7;
+                    if (!tmp8) {
                       obj = guildId(analyticsLocations[34]);
+                      let tmp12 = closure_1_17;
                       items = [closure_1_17, , ];
+                      let tmp13 = closure_1_23;
                       items[1] = closure_1_23;
+                      let tmp14 = closure_1_16;
                       items[2] = closure_1_16;
-                      const tmp3 = analyticsLocations;
-                      const tmp4 = closure_0;
-                      if (obj.shouldShowMembershipVerificationGate(closure_0, items)) {
-                        const tmp2Result = tmp2(tmp3[35]);
-                        result = tmp2Result.openMemberVerificationModal(tmp4, connect);
+                      const tmp10 = analyticsLocations;
+                      const tmp11 = nextResult.default;
+                      const tmp9 = guildId;
+                      if (obj.shouldShowMembershipVerificationGate(nextResult.default, items)) {
+                        const tmp9Result = tmp9(tmp10[35]);
+                        result = tmp9Result.openMemberVerificationModal(tmp11, connect);
                       }
                     }
                     connect();
                   });
                 });
               }
-              if (null != targetChannelId1 && GUILD_HOME === obj.targetChannelId) {
+              if (null != targetChannelId1 && GUILD_HOME === tmp11.targetChannelId) {
                 if (guildId !== closure_2_27) {
                   function runDeepLinkJump() {
                     let guildScheduledEvent;
@@ -295,9 +319,9 @@ const f96252 = () => {
                       obj = {};
                     }
                     ({ transitionTo, welcomeModalChannelId, guildScheduledEvent } = obj);
-                    const obj2 = { source: closure_2_1(paths[24]).INVITE_ACCEPT, navigationReplace: true, openChannel: true };
+                    const obj2 = { source: closure_2_1(closure_2_3[24]).INVITE_ACCEPT, navigationReplace: true, openChannel: true };
                     const GUILD_STAGE_VOICE = constants.GUILD_STAGE_VOICE;
-                    const tmp = paths;
+                    const tmp = closure_2_3;
                     if (null != welcomeModalChannelId) {
                       obj2.welcomeModalChannelId = welcomeModalChannelId;
                     }
@@ -316,7 +340,7 @@ const f96252 = () => {
                     }
                     return transitionToResult;
                   }
-                  let promise = closure_2_0(paths[27])(paths[37], paths.paths);
+                  const promise = closure_2_0(paths[27])(paths[37], paths.paths);
                   const nextPromise = promise.then((result) => {
                     obj = { guildId };
                     return result.default(obj);
@@ -327,14 +351,14 @@ const f96252 = () => {
               }
               let obj5 = tmp11;
               const type2 = channel.type;
-              if (obj == null) {
+              if (tmp11 == null) {
                 obj5 = {};
               }
               ({ transitionTo: transitionTo2, welcomeModalChannelId, guildScheduledEvent } = obj5);
               const obj8 = { source: closure_2_1(paths[24]).INVITE_ACCEPT, navigationReplace: true };
               let GUILD_STAGE_VOICE = tmp37.GUILD_STAGE_VOICE;
               const tmp62 = paths;
-              if (null != targetChannelId1 && GUILD_HOME === obj.targetChannelId) {
+              if (null != targetChannelId1 && GUILD_HOME === tmp11.targetChannelId) {
                 obj8.openChannel = true;
               }
               if (null != welcomeModalChannelId) {
@@ -357,7 +381,7 @@ const f96252 = () => {
               }
             }
           }
-          let tmp47 = paths;
+          let tmp46 = closure_2_0;
           const obj7 = closure_2_0(paths[36]);
           let result = obj7.isActivityInTextSupportedForChannel(channel1);
           if (result) {
@@ -368,44 +392,44 @@ const f96252 = () => {
           }
           if (result) {
             let tmp51 = guildId;
-            let transitionTo = tmp46(tmp47[25]).transitionTo;
+            let transitionTo = tmp46(paths[25]).transitionTo;
             let CHANNEL = tmp42.CHANNEL;
-            closure_2_0(tmp47[25]);
+            tmp46(paths[25]);
             if (guildId == null) {
               tmp51 = closure_2_27;
             }
             transitionTo(CHANNEL(tmp51, GUILD_HOME));
-            const obj10 = { channelId: GUILD_HOME, applicationId: targetApplicationId, intent, inviterUserId, analyticsLocations: items, commandOrigin: closure_2_0(tmp47[33]).CommandOrigin.CHAT };
+            const obj10 = { channelId: GUILD_HOME, applicationId: targetApplicationId, intent, inviterUserId, analyticsLocations: items, commandOrigin: tmp46(paths[33]).CommandOrigin.CHAT };
             intent = undefined;
-            const tmp54 = closure_2_1(tmp47[32]);
-            if (obj != null) {
+            const tmp54 = closure_2_1(paths[32]);
+            if (tmp11 != null) {
               intent = tmp11.intent;
             }
             inviterUserId = undefined;
-            if (obj != null) {
+            if (tmp11 != null) {
               inviterUserId = tmp11.inviterUserId;
             }
             tmp54(obj10);
           }
         }
         let targetType1;
-        if (obj != null) {
+        if (tmp11 != null) {
           targetType1 = tmp11.targetType;
         }
         if (null == targetType1) {
           if (!closure_2_9(channel.type)) {
+            let tmp28 = paths;
             const obj6 = closure_2_0(paths[23]);
             if (obj6.canSeeOnboardingHome(guildId)) {
-              let tmp29 = constants4;
               GUILD_HOME = constants4.GUILD_HOME;
             }
           }
         }
         const channel3 = obj.getChannel(channel.id);
+        let tmp32 = closure_2_20;
         if (closure_2_20.can(closure_2_12(channel.type), channel3)) {
           id = channel.id;
         } else {
-          let tmp33 = defaultChannel;
           defaultChannel = defaultChannel.getDefaultChannel(guildId, true, constants3.CREATE_INSTANT_INVITE);
           id = undefined;
           if (defaultChannel != null) {
@@ -494,7 +518,7 @@ function generateAcceptInviteOptions(target_type) {
 function transitionToInviteChannelSync(arg0, arg1) {
   let closure_0 = arg0;
   const items = [];
-  const result = ChannelStore.addConditionalChangeListener(f96252);
+  const result = ChannelStore.addConditionalChangeListener(f96393);
 }
 let body = function _transitionToGuildFromEventInvite() {
   let obj = _asyncToGenerator(async (arg0, value) => {
@@ -581,7 +605,7 @@ body = {
   resolveInvite(code, arg1, arg2) {
     let closure_1;
     let nextPromise;
-    const f96254 = () => {
+    const f96395 = () => {
       let nextPromise;
       const tmp = code;
       let obj = DispatcherDefault;
@@ -589,7 +613,7 @@ body = {
       const tmp3 = closure_2;
       if (obj.isDispatching()) {
         const resolved = Promise.resolve();
-        nextPromise = resolved.then(f96254);
+        nextPromise = resolved.then(f96395);
       } else {
         let obj2 = { type: "INVITE_RESOLVE", code: tmp };
         const tmp4Result = DispatcherDefault;
@@ -620,7 +644,7 @@ body = {
     if (obj.isDispatching()) {
       const tmp5 = globalThis;
       let resolved = Promise.resolve();
-      nextPromise = resolved.then(f96254);
+      nextPromise = resolved.then(f96395);
     } else {
       let obj2 = { type: "INVITE_RESOLVE", code };
       const tmpResult = DispatcherDefault;
@@ -1023,7 +1047,7 @@ body = {
     let obj3;
     const code = invite.code;
     const channel = invite.channel;
-    const tmp = channel(5083);
+    const tmp = channel(5089);
     let obj = { url: closure_24.INVITE(code), oldFormErrors: true, trackedActionData: obj2, rejectWithError: obj3.rejectWithMigratedError() };
     const _delete = tmp.delete;
     obj2 = { event: code(1260).NetworkActionNames.INVITE_REVOKE, properties: { uses: invite.uses, max_uses: invite.maxUses, max_age: invite.maxAge, invite_type: invite.type } };
@@ -1051,6 +1075,7 @@ body = {
     let guildScheduledEventId;
     let self = this;
     const tmp = inviteKey;
+    let tmp2 = guild_scheduled_event;
     let obj = inviteKey(guild_scheduled_event[51]);
     let result = obj.parseInviteCodeFromInviteKey(inviteKey);
     let c8 = result;
@@ -1068,7 +1093,7 @@ body = {
       target_message_id = invite.target_message_id;
       tmp8 = id;
     } else {
-      const tmpResult = tmp(guild_scheduled_event[51]);
+      const tmpResult = tmp(tmp2[51]);
       const result1 = tmpResult.parseExtraDataFromInviteKey(inviteKey);
       guildScheduledEventId = result1.guildScheduledEventId;
       ({ targetChannelId: target_channel_id, targetMessageId: target_message_id } = result1);
@@ -1078,11 +1103,12 @@ body = {
     const currentUser = UserStore.getCurrentUser();
     let hasFlagResult;
     if (currentUser != null) {
-      let tmp12 = constants4;
       hasFlagResult = currentUser.hasFlag(constants4.QUARANTINED);
     }
+    let tmp13 = importDefault;
     if (hasFlagResult) {
-      require("openQuarantineModeInfoModal")();
+      tmp13(tmp2[52])();
+      let tmp19 = globalThis;
       self = this;
       const self2 = this;
       promise = new Promise((arg0, fn) => {
@@ -1091,13 +1117,13 @@ body = {
       });
     } else {
       let obj3 = { type: "INVITE_ACCEPT", code: inviteKey };
-      const tmp13Result = require("Dispatcher");
+      const tmp13Result = tmp13(tmp2[39]);
       tmp13Result.dispatch(obj3);
       const HTTP = tmp(tmp2[45]).HTTP;
       const request = { url: closure_24.INVITE(result), context: obj2, oldFormErrors: true, body: obj4, rejectWithError: tmpResult2.rejectWithMigratedError() };
       const post = HTTP.post;
       obj4 = { session_id: sessionId, invite_instance_id: context.invite_instance_id, received_installation_id: receivedInstallationIdForInviteCode };
-      tmpResult2 = tmp(guild_scheduled_event[45]);
+      tmpResult2 = tmp(tmp2[45]);
       const then = post(request).then;
       post(request);
       let closure_0 = target_channel_id((code) => {
@@ -1223,34 +1249,52 @@ body = {
       promise = then(function() {
         return closure_0(...arguments);
       }, (body) => {
-        let code1;
+        let code2;
         let obj3;
         body = body.body;
         let code;
         if (body != null) {
           code = body.code;
         }
+        const tmp2 = constants;
         if (code === constants.USER_GUILD_JOIN_LARGE_GUILD_UNDERAGE_DISALLOWED) {
           const obj = AgeGateModalActionCreators;
           obj.openAgeGateModal(AgeGateSource.JOIN_LARGE_GUILD_UNDERAGE);
         }
         const body2 = body.body;
+        let code1;
+        if (body2 != null) {
+          code1 = body2.code;
+        }
+        if (code1 === tmp2.USER_GUILD_JOIN_AGE_RESTRICTED_IOS_DISALLOWED) {
+          let id;
+          const showNSFWGuildJoinGate = showNSFWGuildJoinGate2.showNSFWGuildJoinGate;
+          showNSFWGuildJoinGate2;
+          if (invite != null) {
+            const guild = invite.guild;
+            if (guild != null) {
+              id = guild.id;
+            }
+          }
+          const result = showNSFWGuildJoinGate(id);
+        }
+        const body3 = body.body;
         let message;
         const obj2 = { type: "INVITE_ACCEPT_FAILURE", code: inviteKey, error: obj3 };
         const dispatch = DispatcherDefault.dispatch;
         DispatcherDefault;
-        if (body2 != null) {
-          message = body2.message;
-        }
-        const body3 = body.body;
-        obj3 = { message, code: code1 };
-        code1 = undefined;
         if (body3 != null) {
-          code1 = body3.code;
+          message = body3.message;
+        }
+        const body4 = body.body;
+        obj3 = { message, code: code2 };
+        code2 = undefined;
+        if (body4 != null) {
+          code2 = body4.code;
         }
         dispatch(obj2);
-        const tmp12 = new errors_V6OrEarlierAPIErrorDefault(body);
-        throw tmp12;
+        const tmp19 = new errors_V6OrEarlierAPIErrorDefault(body);
+        throw tmp19;
       });
     }
     return promise;
@@ -1269,7 +1313,7 @@ body = {
         if (null != channel.channel) {
           let obj = { autoJoin: importAll };
           let tmp = generateAcceptInviteOptions;
-          let tmp2 = obj;
+          const tmp2 = obj;
           const merged = Object.assign(generateAcceptInviteOptions(channel));
           let tmp4 = importAll;
           let items = _require;
@@ -1280,7 +1324,7 @@ body = {
           if (items === undefined) {
             items = [];
           }
-          let result = ChannelStore.addConditionalChangeListener(f96252);
+          let result = ChannelStore.addConditionalChangeListener(f96393);
         }
         if (null != importDefault) {
           tmp7(channel);
@@ -1313,7 +1357,7 @@ body = {
           }
           if (null != dMFromUserId) {
             let closure_2 = [];
-            const result = ChannelStore.addConditionalChangeListener(f96252);
+            const result = ChannelStore.addConditionalChangeListener(f96393);
           }
         }
       }
@@ -1325,7 +1369,7 @@ body = {
         hasItem = features.includes(constants2.HUB);
       }
       if (hasItem) {
-        const obj6 = obj(12737);
+        const obj6 = obj(12752);
         obj6.onOpenHubInvite(flags);
       }
     }
@@ -1334,17 +1378,17 @@ body = {
       num = 0;
     }
     const obj2 = dMFromUserId(1390);
-    let hasFlagResult = obj2.hasFlag(num, dMFromUserId(8068).GuildInviteFlags.IS_GUEST_INVITE);
+    let hasFlagResult = obj2.hasFlag(num, dMFromUserId(8078).GuildInviteFlags.IS_GUEST_INVITE);
     if (!hasFlagResult) {
       const tmp6Result = dMFromUserId(1390);
-      hasFlagResult = tmp6Result.hasFlag(num, tmp6(8068).GuildInviteFlags.IS_APPLICATION_BYPASS);
+      hasFlagResult = tmp6Result.hasFlag(num, tmp6(8078).GuildInviteFlags.IS_APPLICATION_BYPASS);
     }
     if (null != guild) {
       if (!hasFlagResult) {
         if (flags.new_member) {
-          const tmp6Result3 = dMFromUserId(12738);
+          const tmp6Result3 = dMFromUserId(12753);
           if (tmp6Result3.inviteGuildHasPendingMemberDisabledVerification(guild)) {
-            const tmp6Result4 = dMFromUserId(12738);
+            const tmp6Result4 = dMFromUserId(12753);
             const result1 = tmp6Result4.openVerificationModalOrTransitionToApplication(guild.id);
           }
         }
@@ -1367,7 +1411,7 @@ body = {
       const id = channel.id;
       let closure_1 = tmp18;
       closure_2 = [];
-      const result2 = ChannelStore.addConditionalChangeListener(f96252);
+      const result2 = ChannelStore.addConditionalChangeListener(f96393);
     }
   },
   openNativeAppModal(inviteKey) {
@@ -1433,8 +1477,8 @@ body = {
     let obj2 = DispatcherDefault;
     const obj3 = { type: "INVITE_APP_OPENING", code };
     obj2.dispatch(obj3);
-    if (null != _modDef5403.ua) {
-      const str = _modDef5403.ua;
+    if (null != _modDef5410.ua) {
+      const str = _modDef5410.ua;
       const formatted = str.toLowerCase();
       if (formatted.indexOf("googlebot") > -1) {
         const obj6 = { type: "INVITE_APP_NOT_OPENED", code };
@@ -1442,13 +1486,13 @@ body = {
         tmp7Result.dispatch(obj6);
       }
     }
-    const os = tmp7(5403).os;
+    const os = tmp7(5410).os;
     let family;
     if (os != null) {
       family = os.family;
     }
     if ("Android" !== family) {
-      const os2 = tmp7(5403).os;
+      const os2 = tmp7(5410).os;
       let family1;
       if (os2 != null) {
         family1 = os2.family;
@@ -1495,7 +1539,7 @@ body = {
       const obj4 = require("DynamicLinkTemplates");
       inviteDynamicLinkTemplate = obj4.getDefaultDynamicLinkTemplate();
     }
-    const tmp18Result = tmp18(12740);
+    const tmp18Result = tmp18(12755);
     const attemptId = tmp18Result.generateAttemptId();
     inviteType = undefined;
     const tmp7Result5 = generateDynamicLinkDefault;

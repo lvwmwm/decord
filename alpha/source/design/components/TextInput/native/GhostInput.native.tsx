@@ -1,21 +1,21 @@
-// Module ID: 14267
-// Function ID: 14268
+// Module ID: 14285
+// Function ID: 14286
 // Name: GhostInput
-// Dependencies: [109, 19, 21, 4890, 4886, 587, 558, 576, 6105, 4595, 6101, 6108, 6099, 6109, 6423, 2]
+// Dependencies: [109, 19, 21, 4896, 4892, 587, 558, 576, 6112, 4601, 6108, 6115, 6106, 6116, 6430, 2]
 
-// Module 14267 (GhostInput)
+// Module 14285 (GhostInput)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4595 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6099 */;
-import useTextField from "useTextField" /* 6101 */;
-import InputFieldContainer from "InputFieldContainer" /* 6105 */;
-import _objectWithoutProperties2 from "_objectWithoutProperties" /* 6108 */;
+import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4601 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6106 */;
+import useTextField from "useTextField" /* 6108 */;
+import InputFieldContainer from "InputFieldContainer" /* 6112 */;
+import _objectWithoutProperties2 from "_objectWithoutProperties" /* 6115 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -143,7 +143,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
                       }
                     }
                   }
-                  const Input = tmp(6423).Input;
+                  const Input = tmp(6430).Input;
                   const merged = Object.assign(size);
                   const tmp39 = <Input labelId={tmp12} containerStyle={tmp18}>{tmp25}</Input>;
                   cResult[24] = tmp12;
@@ -158,7 +158,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
           }
         }
       }
-      const NativeTextInput = tmp(6109).NativeTextInput;
+      const NativeTextInput = tmp(6116).NativeTextInput;
       const merged1 = Object.assign(tmp19);
       const merged2 = Object.assign(tmp11);
       const tmp33 = <NativeTextInput accessibilityLabel={tmp21} ref={innerRef} style={tmp24} placeholderTextColor={inputStyles.placeholderText.color} spellCheck={false} autoFocus={undefined === autoFocus || autoFocus} />;
@@ -210,7 +210,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
   const tmpResult4 = useTextField;
   const textField = tmpResult4.useTextField(size, undefined);
   ({ innerRef, inputProps } = textField);
-  const Input = tmp(6423).Input;
+  const Input = tmp(6430).Input;
   const merged = Object.assign(size);
   const items = [size.containerStyle, ];
   let prop;
@@ -218,7 +218,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
     prop = tmp4.centeredContainerStyle;
   }
   items[1] = prop;
-  const NativeTextInput = tmp(6109).NativeTextInput;
+  const NativeTextInput = tmp(6116).NativeTextInput;
   const tmpResult5 = _objectWithoutProperties2;
   const merged1 = Object.assign(tmpResult5.propsForNativeTextInput(inputProps));
   const merged2 = Object.assign(tmp8);

@@ -1,22 +1,22 @@
-// Module ID: 12480
-// Function ID: 12481
+// Module ID: 12495
+// Function ID: 12496
 // Name: GuildAntiRaidHooks
-// Dependencies: [1231, 2074, 4509, 4699, 1377, 11160, 7686, 1085, 558, 576, 573, 11, 7685, 1097, 4514, 12481, 2]
+// Dependencies: [1231, 2074, 4515, 4705, 1377, 11173, 7697, 1085, 558, 576, 573, 11, 7696, 1097, 4520, 12496, 2]
 // Exports: getDisabledActions, shouldShowRaidInAppNotification, shouldShowRaidNotificationNagbar
 
-// Module 12480 (GuildAntiRaidHooks)
+// Module 12495 (GuildAntiRaidHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4514 */;
-import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 7685 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 7686 */;
-import GuildAntiRaidPermissionsUtils from "GuildAntiRaidPermissionsUtils" /* 12481 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4520 */;
+import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 7696 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 7697 */;
+import GuildAntiRaidPermissionsUtils from "GuildAntiRaidPermissionsUtils" /* 12496 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4705 */;
 import UserStore from "UserStore" /* 1377 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11160 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11173 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -44,7 +44,7 @@ function getFirstGuildIncidentId(guildId) {
         let tmp20 = require;
         let obj6 = GuildAntiRaidUtils;
         if (obj6.hasDetectedActivity(tmp19)) {
-          let tmp20Result = tmp20(7685);
+          let tmp20Result = tmp20(7696);
           if (!tmp20Result.isUnderLockdown(tmp19)) {
             let tmp13 = BigFlagUtilsAll;
             let hasAny = tmp13.hasAny;
@@ -57,7 +57,7 @@ function getFirstGuildIncidentId(guildId) {
             }
           }
         } else {
-          let tmp20Result2 = tmp20(7685);
+          let tmp20Result2 = tmp20(7696);
         }
       }
     }
@@ -202,7 +202,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       let tmp17 = tmp16;
       if (null != tmp16) {
         let tmp19 = stateFromStores1;
-        let obj7 = stateFromStores1(7685);
+        let obj7 = stateFromStores1(7696);
         if (obj7.hasDetectedActivity(tmp17)) {
           let tmp11 = BigFlagUtilsAll;
           let hasAny = tmp11.hasAny;
@@ -214,7 +214,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             return id;
           }
         } else {
-          let tmp19Result = tmp19(7685);
+          let tmp19Result = tmp19(7696);
         }
       }
     }
@@ -291,7 +291,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[6] !== stateFromStores1) {
     let isUnderLockdownResult = null != stateFromStores1;
     if (isUnderLockdownResult) {
-      const tmpResult4 = tmp(7685);
+      const tmpResult4 = tmp(7696);
       isUnderLockdownResult = tmpResult4.isUnderLockdown(stateFromStores1);
     }
     cResult[6] = stateFromStores1;
@@ -348,7 +348,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj3 = { shouldShowIncidentActions: stateFromStores, incidentData: stateFromStores1, isUnderLockdown: isUnderLockdownResult };
   isUnderLockdownResult = null != stateFromStores1;
   if (isUnderLockdownResult) {
-    const tmpResult = tmp(7685);
+    const tmpResult = tmp(7696);
     isUnderLockdownResult = tmpResult.isUnderLockdown(stateFromStores1);
   }
   return obj3;

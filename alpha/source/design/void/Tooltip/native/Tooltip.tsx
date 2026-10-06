@@ -1,9 +1,9 @@
-// Module ID: 13916
-// Function ID: 13917
+// Module ID: 13934
+// Function ID: 13935
 // Name: Tooltip/Tooltip
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 1375, 4886, 1188, 2]
+// Dependencies: [19, 17, 1085, 21, 4896, 587, 558, 576, 1375, 4892, 1188, 2]
 
-// Module 13916 (Tooltip/Tooltip)
+// Module 13934 (Tooltip/Tooltip)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import Constants from "Constants" /* 1085 */;
 import GlobalUtils from "GlobalUtils" /* 1375 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -229,7 +229,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               let tmp20 = null;
               if (null != title) {
                 const obj10 = { style: tmp6.title, variant: "text-md/semibold", color: "text-overlay-light", children: title };
-                tmp20 = React3(tmp(4886).Heading, obj10);
+                tmp20 = React3(tmp(4892).Heading, obj10);
               }
               cResult[15] = tmp6.title;
               cResult[16] = title;

@@ -1,20 +1,20 @@
-// Module ID: 17220
-// Function ID: 17221
+// Module ID: 17249
+// Function ID: 17250
 // Name: VoicePanelHeaderUserState
-// Dependencies: [19, 4906, 21, 4612, 8567, 4890, 587, 558, 576, 17221, 17219, 9335, 5976, 11901, 504, 4891, 2]
+// Dependencies: [19, 4912, 21, 4618, 8602, 4896, 587, 558, 576, 17250, 17248, 9349, 5983, 11915, 504, 4897, 2]
 
-// Module 17220 (VoicePanelHeaderUserState)
+// Module 17249 (VoicePanelHeaderUserState)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import timing from "timing" /* 4891 */;
-import NativeViewDefault from "NativeView" /* 5976 */;
-import native from "native" /* 8567 */;
-import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 17221 */;
+import timing from "timing" /* 4897 */;
+import NativeViewDefault from "NativeView" /* 5983 */;
+import native from "native" /* 8602 */;
+import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 17250 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let rect;
 let size;
 let size1;
 let tmp2;
-const useStableParticipant = tmp2(17219);
+const useStableParticipant = tmp2(17248);
 const jsx = Fragment.jsx;
 let closure_6 = ReanimatedRexport.createAnimatedComponent(native.BackgroundBlurView);
 const OPACITY_TIMING = { duration: 100 };
@@ -92,21 +92,21 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((type, arg1, arg2) 
     let tmp14 = require;
     if (nextResult.type === useVoicePanelCardUserStateIcons.VoicePanelCardUserStateIconType.USER_VIDEO_ICON) {
       let push = items1.push;
-      let BackgroundBlurView = tmp14(8567).BackgroundBlurView;
+      let BackgroundBlurView = tmp14(8602).BackgroundBlurView;
       let obj4 = { style: tmp6.floatingIcon, state: tmp12.videoIconState };
       let arr2 = push(<BackgroundBlurView key="video" blurTheme="dark" style={tmp6.floatingIconWrapper}>{null}</BackgroundBlurView>);
     }
-    if (tmp12.type === tmp14(17221).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
+    if (tmp12.type === tmp14(17250).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
       let tmp41 = jsx;
       let push2 = items1.push;
       let tmp42 = jsx;
       let items2 = [tmp6.floatingIconWrapper, ];
       let leftMargin;
-      let BackgroundBlurView2 = tmp14(8567).BackgroundBlurView;
+      let BackgroundBlurView2 = tmp14(8602).BackgroundBlurView;
       if (tmp12.withLeftMargin) {
         leftMargin = tmp6.leftMargin;
       }
-      let obj5 = { blurTheme: "dark", style: items2, children: tmp42(tmp14(9335).MuteDeafenIcon, obj6) };
+      let obj5 = { blurTheme: "dark", style: items2, children: tmp42(tmp14(9349).MuteDeafenIcon, obj6) };
       items2[1] = leftMargin;
       obj6 = { style: tmp6.floatingIcon, state: tmp12.muteDeafenIconState };
       let push2Result = push2(tmp41(BackgroundBlurView2, obj5, "mute-deafen"));
@@ -139,21 +139,21 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((type, arg1, arg2) 
     let tmp11 = require;
     if (nextResult.type === useVoicePanelCardUserStateIcons.VoicePanelCardUserStateIconType.USER_VIDEO_ICON) {
       let push = items.push;
-      let BackgroundBlurView = tmp11(8567).BackgroundBlurView;
+      let BackgroundBlurView = tmp11(8602).BackgroundBlurView;
       let obj3 = { style: tmp.floatingIcon, state: tmp9.videoIconState };
       let arr = push(<BackgroundBlurView key="video" blurTheme="dark" style={tmp.floatingIconWrapper}>{null}</BackgroundBlurView>);
     }
-    if (tmp9.type === tmp11(17221).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
+    if (tmp9.type === tmp11(17250).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
       let tmp35 = jsx;
       let push2 = items.push;
       let tmp36 = jsx;
       let items1 = [tmp.floatingIconWrapper, ];
       let leftMargin;
-      let BackgroundBlurView2 = tmp11(8567).BackgroundBlurView;
+      let BackgroundBlurView2 = tmp11(8602).BackgroundBlurView;
       if (tmp9.withLeftMargin) {
         leftMargin = tmp.leftMargin;
       }
-      let obj4 = { blurTheme: "dark", style: items1, children: tmp36(tmp11(9335).MuteDeafenIcon, obj5) };
+      let obj4 = { blurTheme: "dark", style: items1, children: tmp36(tmp11(9349).MuteDeafenIcon, obj5) };
       items1[1] = leftMargin;
       obj5 = { style: tmp.floatingIcon, state: tmp9.muteDeafenIconState };
       let push2Result = push2(tmp35(BackgroundBlurView2, obj4, "mute-deafen"));
@@ -177,7 +177,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
   let obj = isHeaderHidden(576);
   const cResult = obj.c(9);
   isHeaderHidden = isHeaderHidden.isHeaderHidden;
-  const context = react.useContext(channelId(11901));
+  const context = react.useContext(channelId(11915));
   const tmp4 = channelId;
   channelId = context.channelId;
   const guildId = context.guildId;
@@ -207,7 +207,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp9);
-  const tmp11 = closure_9(tmp4(17219)(stateFromStores, channelId, guildId), guildId);
+  const tmp11 = closure_9(tmp4(17248)(stateFromStores, channelId, guildId), guildId);
   const fn2 = function w() {
     const withTiming = timing.withTiming;
     let num = 0;
@@ -218,11 +218,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
     const obj = { opacity: withTiming(num, OPACITY_TIMING) };
     return obj;
   };
-  const tmpResult2 = tmp(4612);
-  fn2.__closure = { withTiming: tmp(4891).withTiming, isHeaderHidden, OPACITY_TIMING };
+  const tmpResult2 = tmp(4618);
+  fn2.__closure = { withTiming: tmp(4897).withTiming, isHeaderHidden, OPACITY_TIMING };
   fn2.__workletHash = 7032221979181;
   fn2.__initData = __initData;
-  ({ withTiming: tmp(4891).withTiming, isHeaderHidden, OPACITY_TIMING });
+  ({ withTiming: tmp(4897).withTiming, isHeaderHidden, OPACITY_TIMING });
   const animatedStyle = tmpResult2.useAnimatedStyle(fn2);
   let tmp13 = null;
   if (null != tmp11) {
@@ -254,7 +254,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
 }) : ((isHeaderHidden) => {
   isHeaderHidden = isHeaderHidden.isHeaderHidden;
   let channelId;
-  const context = react.useContext(channelId(11901));
+  const context = react.useContext(channelId(11915));
   channelId = context.channelId;
   const guildId = context.guildId;
   const tmp2 = closure_8();
@@ -268,8 +268,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
     }
     return id;
   });
-  const tmp4 = closure_9(channelId(17219)(stateFromStores, channelId, guildId), guildId);
-  isHeaderHidden(4612);
+  const tmp4 = closure_9(channelId(17248)(stateFromStores, channelId, guildId), guildId);
+  isHeaderHidden(4618);
   const fn = function f() {
     const withTiming = timing.withTiming;
     let num = 0;
@@ -280,11 +280,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
     const obj = { opacity: withTiming(num, OPACITY_TIMING) };
     return obj;
   };
-  fn.__closure = { withTiming: isHeaderHidden(4891).withTiming, isHeaderHidden, OPACITY_TIMING };
+  fn.__closure = { withTiming: isHeaderHidden(4897).withTiming, isHeaderHidden, OPACITY_TIMING };
   fn.__workletHash = 1281074829646;
   fn.__initData = __initData2;
   let tmp7 = null;
-  ({ withTiming: isHeaderHidden(4891).withTiming, isHeaderHidden, OPACITY_TIMING });
+  ({ withTiming: isHeaderHidden(4897).withTiming, isHeaderHidden, OPACITY_TIMING });
   if (null != tmp4) {
     const items1 = [tmp2.container, tmp6];
     tmp7 = <closure_6 blurTheme="dark" style={items1} pointerEvents="none">{tmp4}</closure_6>;

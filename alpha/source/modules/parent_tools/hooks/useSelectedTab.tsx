@@ -1,15 +1,15 @@
-// Module ID: 14679
-// Function ID: 14680
+// Module ID: 14695
+// Function ID: 14696
 // Name: useSelectedTab
-// Dependencies: [7048, 7049, 1085, 558, 576, 573, 7050, 1252, 2]
+// Dependencies: [7061, 7062, 1085, 558, 576, 573, 7063, 1252, 2]
 
-// Module 14679 (useSelectedTab)
+// Module 14695 (useSelectedTab)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7050 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7048 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7049 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7063 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7061 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7062 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

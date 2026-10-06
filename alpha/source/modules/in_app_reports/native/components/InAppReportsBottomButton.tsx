@@ -1,20 +1,20 @@
-// Module ID: 12725
-// Function ID: 12726
+// Module ID: 12740
+// Function ID: 12741
 // Name: InAppReportsBottomButton
-// Dependencies: [19, 17, 1096, 21, 4890, 587, 558, 576, 1126, 2625, 4886, 5594, 1188, 2]
+// Dependencies: [19, 17, 1096, 21, 4896, 587, 558, 576, 1126, 2653, 4892, 5601, 1188, 2]
 
-// Module 12725 (InAppReportsBottomButton)
+// Module 12740 (InAppReportsBottomButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import intl8 from "intl" /* 1126 */;
 import native from "native" /* 1188 */;
-import _modDef2625 from "module_2625" /* 2625 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
+import _modDef2653 from "module_2653" /* 2653 */;
+import components_Button_Button from "components/Button/Button" /* 5601 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
         const _Symbol4 = Symbol;
         if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
           const intl6 = tmp(1126).intl;
-          const stringResult1 = intl6.string(_modDef2625.ZUyreS);
+          const stringResult1 = intl6.string(_modDef2653.ZUyreS);
           cResult[1] = stringResult1;
           tmp16 = stringResult1;
         } else {
@@ -125,7 +125,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
       const intl7 = tmp(1126).intl;
       const string = intl7.string;
       if (isModeratorReport) {
-        stringResult5 = string(_modDef2625.psKFdJ);
+        stringResult5 = string(_modDef2653.psKFdJ);
       } else {
         stringResult5 = string(tmp(1126).t.h6D8Vy);
       }
@@ -270,7 +270,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
           return onPress(button);
         }
       }
-      tmp27 = React3(tmp(4886).Text, obj7);
+      tmp27 = React3(tmp(4892).Text, obj7);
     }
     cResult[10] = tmp7;
     cResult[11] = tmp4.descriptionText;
@@ -300,7 +300,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
       const intl2 = tmp15(1126).intl;
       const string = intl2.string;
       if (isModeratorReport) {
-        stringResult = string(_modDef2625.ZUyreS);
+        stringResult = string(_modDef2653.ZUyreS);
       } else {
         const stringResult1 = string(intl8.t["G+vU89"]);
         const intl3 = tmp15(1126).intl;
@@ -323,7 +323,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
     const intl4 = tmp15(1126).intl;
     const string2 = intl4.string;
     if (isModeratorReport) {
-      string2Result = string2(_modDef2625.psKFdJ);
+      string2Result = string2(_modDef2653.psKFdJ);
     } else {
       string2Result = string2(tmp15(1126).t.h6D8Vy);
     }
@@ -334,7 +334,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
     const obj3 = { style: tmp.paddingHorizontal, children: items1 };
     if (null != tmp3) {
       const obj4 = { style: tmp.descriptionText, variant: "text-xs/medium", color: "text-default", children: tmp3 };
-      tmp12Result = tmp12(tmp15(4886).Text, obj4);
+      tmp12Result = tmp12(tmp15(4892).Text, obj4);
     }
     items1 = [tmp12Result, , ];
     const obj5 = {

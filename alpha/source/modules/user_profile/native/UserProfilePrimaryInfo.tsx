@@ -1,41 +1,41 @@
-// Module ID: 10843
-// Function ID: 10844
+// Module ID: 10856
+// Function ID: 10857
 // Name: UserProfilePrimaryInfo
-// Dependencies: [19, 17, 1377, 7854, 6707, 1085, 7603, 7865, 21, 4890, 587, 558, 576, 10633, 10634, 8961, 10844, 5909, 4886, 10846, 7218, 4737, 10878, 7855, 6885, 4574, 4568, 7914, 7224, 7213, 7223, 5626, 1252, 7212, 1369, 1126, 10880, 10881, 10883, 10884, 10886, 10889, 10977, 1484, 10978, 7836, 9395, 4722, 2]
+// Dependencies: [19, 17, 1377, 7865, 6714, 1085, 7614, 7876, 21, 4896, 587, 558, 576, 10646, 10647, 8990, 10857, 5916, 4892, 10859, 7231, 4743, 10891, 7866, 6895, 4580, 4574, 7925, 7237, 7226, 7236, 5633, 1252, 7225, 1369, 1126, 10893, 10894, 10896, 10897, 10899, 10902, 10990, 1484, 10991, 7847, 9409, 4728, 2]
 
-// Module 10843 (UserProfilePrimaryInfo)
+// Module 10856 (UserProfilePrimaryInfo)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4574 */;
-import UserUtilsDefault from "UserUtils" /* 4722 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import QuestTypes from "QuestTypes" /* 5626 */;
-import openUserSettings from "openUserSettings" /* 6885 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7212 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 7213 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7223 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7224 */;
-import GuildTagConstants from "GuildTagConstants" /* 7603 */;
-import GuildTagUtils from "GuildTagUtils" /* 7836 */;
-import Constants2 from "Constants" /* 7854 */;
-import BadgeId from "BadgeId" /* 7855 */;
-import Constants3 from "Constants" /* 7865 */;
-import useBadges from "useBadges" /* 7914 */;
-import BotTagDefault from "BotTag" /* 8961 */;
-import GuildTagDefault from "GuildTag" /* 9395 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10633 */;
-import types from "types" /* 10634 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 10886 */;
-import BadgeUtils from "BadgeUtils" /* 10889 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4580 */;
+import UserUtilsDefault from "UserUtils" /* 4728 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import QuestTypes from "QuestTypes" /* 5633 */;
+import openUserSettings from "openUserSettings" /* 6895 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7225 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 7226 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7236 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7237 */;
+import GuildTagConstants from "GuildTagConstants" /* 7614 */;
+import GuildTagUtils from "GuildTagUtils" /* 7847 */;
+import Constants2 from "Constants" /* 7865 */;
+import BadgeId from "BadgeId" /* 7866 */;
+import Constants3 from "Constants" /* 7876 */;
+import useBadges from "useBadges" /* 7925 */;
+import BotTagDefault from "BotTag" /* 8990 */;
+import GuildTagDefault from "GuildTag" /* 9409 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10646 */;
+import types from "types" /* 10647 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 10899 */;
+import BadgeUtils from "BadgeUtils" /* 10902 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1377 */;
-import Constants_mod from "Constants" /* 6707 */;
+import Constants_mod from "Constants" /* 6714 */;
 import Constants_mod2 from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -263,7 +263,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   if (null == onPress) {
     let tmp5 = closure_15;
     const obj = { children: items };
-    let obj3 = { userId: user.id, guildId, userName: name, variant: headingVariant, effectDisplayType: user(10634).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles, defaultColor: "mobile-text-heading-primary", accessibilityRole: displayNameAccessibilityRole, style: null, containerStyle: null };
+    let obj3 = { userId: user.id, guildId, userName: name, variant: headingVariant, effectDisplayType: user(10647).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles, defaultColor: "mobile-text-heading-primary", accessibilityRole: displayNameAccessibilityRole, style: null, containerStyle: null };
     ({ displayNameText: obj2.style, displayNameText: obj2.containerStyle } = tmp);
     const tmp10 = UsernameWithEffectsDefault;
     items = [closure_14(tmp10, obj3), renderBotTag()];
@@ -271,15 +271,15 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   } else {
     let tmp12 = closure_15;
     const obj7 = { onPress, accessibilityRole: "button", accessibilityLabel: name, accessibilityHint, style: tmp.displayName, children: items1 };
-    const PressableOpacity = user(5909).PressableOpacity;
-    const obj8 = { userId: user.id, guildId, userName: name, variant: headingVariant, effectDisplayType: user(10634).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles, defaultColor: "mobile-text-heading-primary", accessibilityRole: displayNameAccessibilityRole, style: null, containerStyle: null };
+    const PressableOpacity = user(5916).PressableOpacity;
+    const obj8 = { userId: user.id, guildId, userName: name, variant: headingVariant, effectDisplayType: user(10647).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles, defaultColor: "mobile-text-heading-primary", accessibilityRole: displayNameAccessibilityRole, style: null, containerStyle: null };
     ({ displayNameText: obj4.style, displayNameText: obj4.containerStyle } = tmp);
     const tmp17 = UsernameWithEffectsDefault;
     items1 = [closure_14(tmp17, obj8), renderBotTag(), ];
     const tmp13 = user;
     const tmp15 = closure_14;
     if (showChevron) {
-      showChevron = tmp15(tmp13(10844).ChevronSmallDownIcon, { size: "sm", color: "icon-muted" });
+      showChevron = tmp15(tmp13(10857).ChevronSmallDownIcon, { size: "sm", color: "icon-muted" });
     }
     items1[2] = showChevron;
     tmp12Result = tmp12(PressableOpacity, obj7);
@@ -514,7 +514,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((userTag) => {
         const tmp6 = require;
         if (null != onPressUserTag) {
           const obj3 = { onPress: tmp10, accessibilityRole: "button", accessibilityLabel: userTag, accessibilityHint: userTagAccessibilityHint, children: tmp9 };
-          tmp5Result = tmp5(tmp6(5909).PressableOpacity, obj3);
+          tmp5Result = tmp5(tmp6(5916).PressableOpacity, obj3);
         } else {
           const obj = { children: tmp9 };
           tmp5Result = tmp5(hasOwnProperty, obj);
@@ -786,7 +786,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
             const QUEST_CONTENT_VIEWED = unpackModuleId.QUEST_CONTENT_VIEWED;
             tmp15(1252);
             const tmp5Result9 = AnalyticsTypes;
-            const merged = Object.assign(tmp5Result9.getContentProperties(tmp5(5626).QuestContent.QUEST_BADGE));
+            const merged = Object.assign(tmp5Result9.getContentProperties(tmp5(5633).QuestContent.QUEST_BADGE));
             advertisingId = null;
             if (null != adUser) {
               advertisingId = null;
@@ -970,7 +970,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
                   const QUEST_CONTENT_VIEWED = unpackModuleId.QUEST_CONTENT_VIEWED;
                   tmp15(1252);
                   const tmp5Result9 = AnalyticsTypes;
-                  const merged = Object.assign(tmp5Result9.getContentProperties(tmp5(5626).QuestContent.QUEST_BADGE));
+                  const merged = Object.assign(tmp5Result9.getContentProperties(tmp5(5633).QuestContent.QUEST_BADGE));
                   advertisingId = null;
                   if (null != closure_4) {
                     advertisingId = null;
@@ -2081,7 +2081,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (tmpResult2.isAndroid()) {
     num3 = 2;
   }
-  const sum1 = tmp(4886).TextStyleSheet[guildTagTextVariant].fontSize + num3;
+  const sum1 = tmp(4892).TextStyleSheet[guildTagTextVariant].fontSize + num3;
   if (null != tag) {
     if (null != guildId) {
       if (cResult[2] === guildTagHorizontalPadding) {

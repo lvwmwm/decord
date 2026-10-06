@@ -1,26 +1,26 @@
-// Module ID: 11685
-// Function ID: 11686
+// Module ID: 11699
+// Function ID: 11700
 // Name: ApplicationDirectoryActionCreators
-// Dependencies: [5, 4889, 2116, 1357, 6659, 11686, 11687, 11682, 11688, 11689, 1085, 584, 569, 1282, 11683, 1369, 11690, 11691, 11692, 2]
+// Dependencies: [5, 4895, 2116, 1357, 6666, 11700, 11701, 11696, 11702, 11703, 1085, 584, 569, 1282, 11697, 1369, 11704, 11705, 11706, 2]
 // Exports: fetchCollections, fetchIntegrationApplicationIdsForMyGuilds, getApplication, getCategories, getEmbedApplication, getSimilarApplications, search
 
-// Module 11685 (ApplicationDirectoryActionCreators)
+// Module 11699 (ApplicationDirectoryActionCreators)
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ApplicationDirectoryApplicationsStore2 from "ApplicationDirectoryApplicationsStore" /* 6659 */;
-import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 11682 */;
-import ApplicationDirectoryCollectionsStore2 from "ApplicationDirectoryCollectionsStore" /* 11687 */;
-import ApplicationDirectorySimilarApplicationsStore2 from "ApplicationDirectorySimilarApplicationsStore" /* 11688 */;
-import MyGuildApplicationsStore2 from "MyGuildApplicationsStore" /* 11689 */;
-import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 11691 */;
-import ApplicationCollectionActiveState from "ApplicationCollectionActiveState" /* 11692 */;
+import ApplicationDirectoryApplicationsStore2 from "ApplicationDirectoryApplicationsStore" /* 6666 */;
+import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 11696 */;
+import ApplicationDirectoryCollectionsStore2 from "ApplicationDirectoryCollectionsStore" /* 11701 */;
+import ApplicationDirectorySimilarApplicationsStore2 from "ApplicationDirectorySimilarApplicationsStore" /* 11702 */;
+import MyGuildApplicationsStore2 from "MyGuildApplicationsStore" /* 11703 */;
+import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 11705 */;
+import ApplicationCollectionActiveState from "ApplicationCollectionActiveState" /* 11706 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevSettingsStore from "DevSettingsStore" /* 4889 */;
+import DevSettingsStore from "DevSettingsStore" /* 4895 */;
 import LocaleStore from "LocaleStore" /* 2116 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1357 */;
-import ApplicationDirectoryCategoriesStore from "ApplicationDirectoryCategoriesStore" /* 11686 */;
+import ApplicationDirectoryCategoriesStore from "ApplicationDirectoryCategoriesStore" /* 11700 */;
 import size from "module_2" /* 2 */;
 
 const MyGuildApplicationsStore = MyGuildApplicationsStore2;
@@ -215,7 +215,7 @@ obj = function _getApplication() {
       if (closure_1 === undefined) {
         obj5 = {};
       }
-      return "Set";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -362,7 +362,7 @@ obj = function _getSimilarApplications() {
       }
       await "IconComponent";
       ({ applicationId: c0, guildId: c1, options: c2 } = closure_0);
-      return "Set";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -468,7 +468,7 @@ obj = function _search() {
       }
       await "IconComponent";
       ({ query: c0, guildId: c1, options: c2, onSuccessCallback: c3 } = closure_0);
-      return "Set";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -557,7 +557,7 @@ obj = function _fetchCollections() {
     }
     APPLICATION_DIRECTORY = obj5.surface ?? ApplicationCollectionSurface.ApplicationCollectionSurface.APPLICATION_DIRECTORY;
     ACTIVE = obj5.activeState ?? ApplicationCollectionActiveState.ApplicationCollectionActiveState.ACTIVE;
-    return "Set";
+    return "Reflect";
   });
   return obj(...arguments);
 };

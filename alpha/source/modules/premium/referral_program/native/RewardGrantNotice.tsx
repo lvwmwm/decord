@@ -1,21 +1,21 @@
-// Module ID: 13259
-// Function ID: 13260
+// Module ID: 13278
+// Function ID: 13279
 // Name: RewardGrantNotice
-// Dependencies: [19, 17, 13241, 21, 4890, 587, 558, 576, 13243, 11000, 4886, 1126, 6628, 2]
+// Dependencies: [19, 17, 13260, 21, 4896, 587, 558, 576, 13262, 11013, 4892, 1126, 6635, 2]
 
-// Module 13259 (RewardGrantNotice)
+// Module 13278 (RewardGrantNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 6628 */;
-import BalanceWidgetPill from "BalanceWidgetPill" /* 11000 */;
-import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 13243 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 6635 */;
+import BalanceWidgetPill from "BalanceWidgetPill" /* 11013 */;
+import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 13262 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 13241 */;
+import Constants from "Constants" /* 13260 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -88,7 +88,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp4 = metroRequire(closure_9, obj2);
     } else {
       tmp4 = null;
-      if (referralRewardType === tmp2(13243).ReferralRewardType.DISCOUNT) {
+      if (referralRewardType === tmp2(13262).ReferralRewardType.DISCOUNT) {
         const obj = { nRewardsGranted };
         tmp4 = metroRequire(closure_10, obj);
       }
@@ -115,7 +115,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((nRewardsGranted
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { variant: "text-sm/medium", color: "text-strong", children: items };
-      const Text = tmp(4886).Text;
+      const Text = tmp(4892).Text;
       const intl = tmp(1126).intl;
       items = [" ", intl.string(intl3.t.UhguER)];
       const tmp11 = metroImportDefault(Text, obj2);
@@ -185,7 +185,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((nRewardsGrante
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE, size: "xs" };
-    const CheckmarkSmallIcon = tmp(6628).CheckmarkSmallIcon;
+    const CheckmarkSmallIcon = tmp(6635).CheckmarkSmallIcon;
     const tmp11 = metroRequire(CheckmarkSmallIcon, obj3);
     cResult[2] = tmp11;
     tmp8 = tmp11;

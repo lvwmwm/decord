@@ -1,11 +1,11 @@
-// Module ID: 14346
-// Function ID: 14347
+// Module ID: 14364
+// Function ID: 14365
 // Name: userSettings
-// Dependencies: [2116, 1085, 8015, 2]
+// Dependencies: [2116, 1085, 8025, 2]
 
-// Module 14346 (userSettings)
+// Module 14364 (userSettings)
 import Constants from "Constants" /* 1085 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8015 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8025 */;
 import LocaleStore from "LocaleStore" /* 2116 */;
 import size from "module_2" /* 2 */;
 

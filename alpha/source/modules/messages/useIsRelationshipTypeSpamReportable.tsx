@@ -1,11 +1,11 @@
-// Module ID: 12253
-// Function ID: 12254
+// Module ID: 12268
+// Function ID: 12269
 // Name: useIsRelationshipTypeSpamReportable
-// Dependencies: [4519, 1085, 558, 576, 504, 2]
+// Dependencies: [4525, 1085, 558, 576, 504, 2]
 
-// Module 12253 (useIsRelationshipTypeSpamReportable)
+// Module 12268 (useIsRelationshipTypeSpamReportable)
 import Constants from "Constants" /* 1085 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import RelationshipStore from "RelationshipStore" /* 4525 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

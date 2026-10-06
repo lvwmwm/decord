@@ -1,14 +1,14 @@
-// Module ID: 4507
-// Function ID: 4508
+// Module ID: 4513
+// Function ID: 4514
 // Name: GuildChannelStore
-// Dependencies: [2104, 2054, 4508, 2055, 502, 2051, 2112, 2074, 4509, 4519, 1377, 1085, 2077, 12, 5043, 1097, 4514, 504, 584, 2]
+// Dependencies: [2104, 2054, 4514, 2055, 502, 2051, 2112, 2074, 4515, 4525, 1377, 1085, 2077, 12, 5049, 1097, 4520, 504, 584, 2]
 
-// Module 4507 (GuildChannelStore)
+// Module 4513 (GuildChannelStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import createFavoritesGuildChannelRecord from "createFavoritesGuildChannelRecord" /* 4508 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4514 */;
+import createFavoritesGuildChannelRecord from "createFavoritesGuildChannelRecord" /* 4514 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4520 */;
 import GatedChannelStore from "GatedChannelStore" /* 2104 */;
 import FavoriteStore from "FavoriteStore" /* 2054 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
@@ -16,8 +16,8 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildMemberStore from "GuildMemberStore" /* 2112 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
+import RelationshipStore from "RelationshipStore" /* 4525 */;
 import UserStore from "UserStore" /* 1377 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;

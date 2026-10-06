@@ -1,9 +1,9 @@
-// Module ID: 8271
-// Function ID: 8272
+// Module ID: 8304
+// Function ID: 8305
 // Name: ManualReviewInconclusiveCopyExperiment
 // Dependencies: [1440, 558, 576, 2]
 
-// Module 8271 (ManualReviewInconclusiveCopyExperiment)
+// Module 8304 (ManualReviewInconclusiveCopyExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1440 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,11 +1,11 @@
-// Module ID: 16733
-// Function ID: 16734
+// Module ID: 16754
+// Function ID: 16755
 // Name: conjurePendingPlan
-// Dependencies: [12905, 2]
+// Dependencies: [12924, 2]
 // Exports: pendingPlanRenderId, planCardExpanded, planVersions, togglePlanCard
 
-// Module 16733 (conjurePendingPlan)
-import ConjureChatStore from "ConjureChatStore" /* 12905 */;
+// Module 16754 (conjurePendingPlan)
+import ConjureChatStore from "ConjureChatStore" /* 12924 */;
 import size from "module_2" /* 2 */;
 
 let map, set;

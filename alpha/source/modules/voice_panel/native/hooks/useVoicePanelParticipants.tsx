@@ -1,19 +1,19 @@
-// Module ID: 17301
-// Function ID: 17302
+// Module ID: 17329
+// Function ID: 17330
 // Name: useVoicePanelParticipants
-// Dependencies: [32, 19, 4906, 502, 2051, 4913, 4909, 4914, 11902, 1085, 558, 576, 17190, 504, 16164, 11901, 11904, 2]
+// Dependencies: [32, 19, 4912, 502, 2051, 4919, 4915, 4920, 11916, 1085, 558, 576, 17219, 504, 16203, 11915, 11918, 2]
 
-// Module 17301 (useVoicePanelParticipants)
+// Module 17329 (useVoicePanelParticipants)
 import Constants from "Constants" /* 1085 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4914 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11902 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
+import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4920 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11916 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -457,7 +457,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   if (cResult[2] !== first1) {
     class T {
       constructor() {
-        return () => { /* body not rendered: F148307 */ };
+        return () => { /* body not rendered: F148532 */ };
       }
     }
     let items = [first1];
@@ -469,7 +469,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   } else {
     class T {
       constructor() {
-        return () => { /* body not rendered: F148307 */ };
+        return () => { /* body not rendered: F148532 */ };
       }
     }
     tmp11 = cResult[4];
@@ -478,7 +478,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     class T {
       constructor() {
-        return () => { /* body not rendered: F148307 */ };
+        return () => { /* body not rendered: F148532 */ };
       }
     }
     let items1 = [VoiceStateStore, ];
@@ -487,14 +487,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   } else {
     class T {
       constructor() {
-        return () => { /* body not rendered: F148307 */ };
+        return () => { /* body not rendered: F148532 */ };
       }
     }
   }
   if (cResult[6] === first1) {
     class T {
       constructor() {
-        return () => { /* body not rendered: F148307 */ };
+        return () => { /* body not rendered: F148532 */ };
       }
     }
   }
@@ -513,7 +513,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
           _Set = Set;
           self = this;
           self2 = this;
-          set = new Set((() => { /* body not rendered: F148308 */ })());
+          set = new Set((() => { /* body not rendered: F148533 */ })());
           tmp3 = set;
           tmp4 = set;
           for (const item10013 of set) {

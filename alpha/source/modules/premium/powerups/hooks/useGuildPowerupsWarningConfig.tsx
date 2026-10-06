@@ -1,14 +1,14 @@
-// Module ID: 12220
-// Function ID: 12221
+// Module ID: 12235
+// Function ID: 12236
 // Name: useGuildPowerupsWarningConfig
-// Dependencies: [19, 12221, 558, 576, 7671, 504, 1126, 2525, 2]
+// Dependencies: [19, 12236, 558, 576, 7682, 504, 1126, 2553, 2]
 
-// Module 12220 (useGuildPowerupsWarningConfig)
+// Module 12235 (useGuildPowerupsWarningConfig)
 import intl3 from "intl" /* 1126 */;
-import _modDef2525 from "module_2525" /* 2525 */;
-import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 7671 */;
+import _modDef2553 from "module_2553" /* 2553 */;
+import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 7682 */;
 import react_mod from "react" /* 19 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 12221 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 12236 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -88,7 +88,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, join) => {
     const _Symbol2 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp(1126).intl;
-      const stringResult = intl.string(_modDef2525.n5hQhc);
+      const stringResult = intl.string(_modDef2553.n5hQhc);
       cResult[7] = stringResult;
       tmp12 = stringResult;
     } else {
@@ -113,7 +113,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, join) => {
     const intl2 = tmp(1126).intl;
     const formatToPlainString = intl2.formatToPlainString;
     const obj4 = { boostCount: diff, perksString: join.join(", ") };
-    const iAaAiG = tmp4(2525).iAaAiG;
+    const iAaAiG = tmp4(2553).iAaAiG;
     const formatToPlainStringResult = formatToPlainString(iAaAiG, obj4);
     cResult[8] = join;
     cResult[9] = diff;
@@ -161,12 +161,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, join) => {
     if (react <= 0) {
       obj = { shouldShow: false, title: "", description: "", requiredBoostCount: 0 };
     } else {
-      obj = { shouldShow: true, title: intl.string(_modDef2525.n5hQhc), description: formatToPlainString(iAaAiG, obj2), requiredBoostCount: react };
+      obj = { shouldShow: true, title: intl.string(_modDef2553.n5hQhc), description: formatToPlainString(iAaAiG, obj2), requiredBoostCount: react };
       intl = intl3.intl;
       const intl2 = intl3.intl;
       formatToPlainString = intl2.formatToPlainString;
       obj2 = { boostCount: react, perksString: closure_1.join(", ") };
-      iAaAiG = _modDef2525.iAaAiG;
+      iAaAiG = _modDef2553.iAaAiG;
     }
     return obj;
   }, items3);

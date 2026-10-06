@@ -1,12 +1,12 @@
-// Module ID: 16086
-// Function ID: 16087
+// Module ID: 16125
+// Function ID: 16126
 // Name: GuildThemeNuxUtils
-// Dependencies: [5, 1231, 4787, 2033, 2]
+// Dependencies: [5, 1231, 4793, 2033, 2]
 // Exports: getInitialGuildThemeNuxSelection, saveGuildThemeNuxPreference
 
-// Module 16086 (GuildThemeNuxUtils)
+// Module 16125 (GuildThemeNuxUtils)
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2033 */;
-import flow_Client from "flow/Client" /* 4787 */;
+import flow_Client from "flow/Client" /* 4793 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import size from "module_2" /* 2 */;
@@ -98,9 +98,9 @@ export const getInitialGuildThemeNuxSelection = function getInitialGuildThemeNux
   let GUILD;
   const defaultGuildThemePreference = UserSettingsProtoStore.getDefaultGuildThemePreference();
   if (defaultGuildThemePreference === flow_Client.GuildThemeSourcePreference.PERSONAL) {
-    GUILD = tmp2(4787).GuildThemeSourcePreference.PERSONAL;
+    GUILD = tmp2(4793).GuildThemeSourcePreference.PERSONAL;
   } else {
-    GUILD = tmp2(4787).GuildThemeSourcePreference.GUILD;
+    GUILD = tmp2(4793).GuildThemeSourcePreference.GUILD;
   }
   return GUILD;
 };

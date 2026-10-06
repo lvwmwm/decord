@@ -1,12 +1,12 @@
-// Module ID: 16505
-// Function ID: 16506
+// Module ID: 16545
+// Function ID: 16546
 // Name: CancelSubscriptionModal
-// Dependencies: [109, 19, 17, 21, 558, 576, 1618, 15044, 6010, 5984, 6496, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 1618, 15059, 6017, 5991, 6503, 2]
 
-// Module 16505 (CancelSubscriptionModal)
+// Module 16545 (CancelSubscriptionModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import NavigatorHeader from "NavigatorHeader" /* 6010 */;
+import NavigatorHeader from "NavigatorHeader" /* 6017 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -40,7 +40,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
       constructor() {
         obj = { screens: null, initialStack: null };
         obj1 = {};
-        obj6 = { render() { /* body not rendered: F146059 */ }, title: "Subscriptions", headerLeft: null };
+        obj6 = { render() { /* body not rendered: F146269 */ }, title: "Subscriptions", headerLeft: null };
         CANCEL_SUBSCRIPTION = closure_7.CANCEL_SUBSCRIPTION;
         obj4 = closure_0(closure_2[8]);
         obj6.headerLeft = obj4.getHeaderCloseButton(closure_0);
@@ -79,7 +79,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
         constructor() {
           obj = { screens: null, initialStack: null };
           obj1 = {};
-          obj6 = { render() { /* body not rendered: F146059 */ }, title: "Subscriptions", headerLeft: null };
+          obj6 = { render() { /* body not rendered: F146269 */ }, title: "Subscriptions", headerLeft: null };
           CANCEL_SUBSCRIPTION = closure_7.CANCEL_SUBSCRIPTION;
           obj4 = closure_0(closure_2[8]);
           obj6.headerLeft = obj4.getHeaderCloseButton(closure_0);
@@ -101,7 +101,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
     constructor() {
       obj = { screens: null, initialStack: null };
       obj1 = {};
-      obj6 = { render() { /* body not rendered: F146059 */ }, title: "Subscriptions", headerLeft: null };
+      obj6 = { render() { /* body not rendered: F146269 */ }, title: "Subscriptions", headerLeft: null };
       CANCEL_SUBSCRIPTION = closure_7.CANCEL_SUBSCRIPTION;
       obj4 = closure_0(closure_2[8]);
       obj6.headerLeft = obj4.getHeaderCloseButton(closure_0);

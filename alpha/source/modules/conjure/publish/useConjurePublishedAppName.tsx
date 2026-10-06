@@ -1,11 +1,11 @@
-// Module ID: 16702
-// Function ID: 16703
+// Module ID: 16723
+// Function ID: 16724
 // Name: useConjurePublishedAppName
-// Dependencies: [5118, 8699, 558, 576, 504, 2]
+// Dependencies: [5124, 8734, 558, 576, 504, 2]
 
-// Module 16702 (useConjurePublishedAppName)
-import ApplicationStore from "ApplicationStore" /* 5118 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 8699 */;
+// Module 16723 (useConjurePublishedAppName)
+import ApplicationStore from "ApplicationStore" /* 5124 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 8734 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

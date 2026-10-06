@@ -1,70 +1,70 @@
-// Module ID: 11081
-// Function ID: 11082
+// Module ID: 11094
+// Function ID: 11095
 // Name: Messages
-// Dependencies: [32, 19, 4879, 2050, 7822, 5118, 11082, 6985, 4906, 10023, 5638, 4776, 6796, 11083, 6659, 7614, 7597, 7037, 6966, 7796, 7600, 11085, 7601, 6602, 5103, 11086, 6961, 11087, 7164, 7102, 9765, 4511, 6809, 2116, 1193, 502, 2051, 7165, 11088, 2112, 2074, 5570, 4871, 5110, 4509, 4930, 4913, 4905, 4908, 7466, 1377, 4909, 5695, 11115, 4914, 1085, 1379, 21, 558, 576, 12, 504, 568, 6658, 1375, 2028, 11124, 11131, 11135, 11138, 10911, 6958, 4528, 7640, 5589, 9787, 9788, 9854, 7636, 6923, 11142, 4747, 9767, 7548, 7566, 10717, 10019, 7945, 5102, 10020, 7795, 11143, 11146, 7815, 7225, 11147, 5911, 11150, 11571, 2]
+// Dependencies: [32, 19, 4885, 2050, 7833, 5124, 11095, 6998, 4912, 10036, 5645, 4782, 6806, 11096, 6666, 7625, 7608, 7050, 6979, 7807, 7611, 11098, 7612, 6609, 5109, 11099, 6974, 11100, 7177, 7115, 9778, 4517, 6819, 2116, 1193, 502, 2051, 7178, 11101, 2112, 2074, 5577, 4877, 5116, 4515, 4936, 4919, 4911, 4914, 7477, 1377, 4915, 5702, 11128, 4920, 1085, 1379, 21, 558, 576, 12, 504, 568, 6665, 1375, 2028, 11137, 11144, 11148, 11151, 10924, 6971, 4534, 7651, 5596, 9800, 9801, 9867, 7647, 6936, 11155, 4753, 9780, 7559, 7578, 10730, 10032, 7956, 5108, 10033, 7806, 11156, 11159, 7826, 7238, 11160, 5918, 11163, 11584, 2]
 
-// Module 11081 (Messages)
+// Module 11094 (Messages)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqual from "shallowEqual" /* 568 */;
 import GlobalUtils from "GlobalUtils" /* 1375 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6658 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9854 */;
-import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 10717 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6665 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9867 */;
+import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 10730 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 4885 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ApplicationAssetsStore from "ApplicationAssetsStore" /* 7822 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11082 */;
-import CacheStore from "CacheStore" /* 6985 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
-import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10023 */;
-import EmojiStore from "EmojiStore" /* 5638 */;
-import ExperimentStore from "ExperimentStore" /* 4776 */;
-import ExplicitMediaStore from "ExplicitMediaStore" /* 6796 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11083 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6659 */;
-import BasicGuildStore from "BasicGuildStore" /* 7614 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7597 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7037 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 6966 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 7796 */;
-import InteractionStore from "InteractionStore" /* 7600 */;
-import MediaPostEmbedStore from "MediaPostEmbedStore" /* 11085 */;
-import MediaPostSharePromptStore from "MediaPostSharePromptStore" /* 7601 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6602 */;
-import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 5103 */;
-import PollsInteractionStore from "PollsInteractionStore" /* 11086 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 6961 */;
-import PushFeedbackStore from "PushFeedbackStore" /* 11087 */;
-import PendingReplyStore from "PendingReplyStore" /* 7164 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 7102 */;
-import SummaryStore from "SummaryStore" /* 9765 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4511 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 6809 */;
+import ApplicationAssetsStore from "ApplicationAssetsStore" /* 7833 */;
+import ApplicationStore from "ApplicationStore" /* 5124 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11095 */;
+import CacheStore from "CacheStore" /* 6998 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4912 */;
+import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10036 */;
+import EmojiStore from "EmojiStore" /* 5645 */;
+import ExperimentStore from "ExperimentStore" /* 4782 */;
+import ExplicitMediaStore from "ExplicitMediaStore" /* 6806 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11096 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6666 */;
+import BasicGuildStore from "BasicGuildStore" /* 7625 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7608 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7050 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 6979 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 7807 */;
+import InteractionStore from "InteractionStore" /* 7611 */;
+import MediaPostEmbedStore from "MediaPostEmbedStore" /* 11098 */;
+import MediaPostSharePromptStore from "MediaPostSharePromptStore" /* 7612 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6609 */;
+import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 5109 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 11099 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 6974 */;
+import PushFeedbackStore from "PushFeedbackStore" /* 11100 */;
+import PendingReplyStore from "PendingReplyStore" /* 7177 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 7115 */;
+import SummaryStore from "SummaryStore" /* 9778 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4517 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 6819 */;
 import LocaleStore from "LocaleStore" /* 2116 */;
 import ThemeStore from "ThemeStore" /* 1193 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import EditMessageStore from "EditMessageStore" /* 7165 */;
-import GiftCodeStore from "GiftCodeStore" /* 11088 */;
+import EditMessageStore from "EditMessageStore" /* 7178 */;
+import GiftCodeStore from "GiftCodeStore" /* 11101 */;
 import GuildMemberStore from "GuildMemberStore" /* 2112 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5570 */;
-import InviteStore from "InviteStore" /* 4871 */;
-import MessageStore from "MessageStore" /* 5110 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import PresenceStore from "PresenceStore" /* 4930 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
-import ReadStateStore from "ReadStateStore" /* 4905 */;
-import SessionsStore from "SessionsStore" /* 4908 */;
-import UploadStore from "UploadStore" /* 7466 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5577 */;
+import InviteStore from "InviteStore" /* 4877 */;
+import MessageStore from "MessageStore" /* 5116 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
+import PresenceStore from "PresenceStore" /* 4936 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
+import ReadStateStore from "ReadStateStore" /* 4911 */;
+import SessionsStore from "SessionsStore" /* 4914 */;
+import UploadStore from "UploadStore" /* 7477 */;
 import UserStore from "UserStore" /* 1377 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
-import SKUStore from "SKUStore" /* 5695 */;
-import ActivityLauncherStore from "ActivityLauncherStore" /* 11115 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4914 */;
+import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+import SKUStore from "SKUStore" /* 5702 */;
+import ActivityLauncherStore from "ActivityLauncherStore" /* 11128 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4920 */;
 import Constants from "Constants" /* 1085 */;
 import PremiumConstants from "PremiumConstants" /* 1379 */;
 import Fragment from "Fragment" /* 21 */;
@@ -723,7 +723,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           const userIds = iter.userIds;
           findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152336 */ });
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152568 */ });
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -755,7 +755,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           const userIds = iter.userIds;
           findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152336 */ });
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152568 */ });
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -787,7 +787,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           const userIds = iter.userIds;
           findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152336 */ });
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152568 */ });
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -813,7 +813,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
         embeddedActivitiesByChannel = closure_6.getEmbeddedActivitiesByChannel();
         item = embeddedActivitiesByChannel.forEach((arr, index) => {
           let closure_0 = index;
-          let item = arr.forEach(() => { /* body not rendered: F152337 */ });
+          let item = arr.forEach(() => { /* body not rendered: F152569 */ });
         });
         return Array.from(set);
       }
@@ -833,7 +833,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           const userIds = iter.userIds;
           findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152336 */ });
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152568 */ });
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -866,7 +866,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           const userIds = iter.userIds;
           findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152336 */ });
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152568 */ });
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -925,7 +925,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           const userIds = iter.userIds;
           findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152336 */ });
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152568 */ });
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -958,7 +958,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           const userIds = iter.userIds;
           findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152336 */ });
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152568 */ });
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1017,7 +1017,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           const userIds = iter.userIds;
           findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152336 */ });
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152568 */ });
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1050,7 +1050,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           const userIds = iter.userIds;
           findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152336 */ });
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152568 */ });
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1112,7 +1112,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           const userIds = iter.userIds;
           findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152336 */ });
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152568 */ });
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1146,7 +1146,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           const userIds = iter.userIds;
           findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152336 */ });
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152568 */ });
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1208,7 +1208,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           const userIds = iter.userIds;
           findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152336 */ });
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152568 */ });
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1242,7 +1242,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           const userIds = iter.userIds;
           findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152336 */ });
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152568 */ });
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1304,7 +1304,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           const userIds = iter.userIds;
           findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152336 */ });
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152568 */ });
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1340,7 +1340,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           const userIds = iter.userIds;
           findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152336 */ });
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152568 */ });
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1395,7 +1395,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           const userIds = iter.userIds;
           findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152336 */ });
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152568 */ });
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1428,7 +1428,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           const userIds = iter.userIds;
           findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152336 */ });
+          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F152568 */ });
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -2347,7 +2347,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let unloadedContentEntryMessageIds;
   let useReducedMotion;
   let version;
-  const f106322 = () => {
+  const f106474 = () => {
     const items = [LocalInteractionComponentStateStore.getInteractionComponentStates(), LocalInteractionComponentStateStore.getInteractionComponentStateVersion()];
     return items;
   };
@@ -2627,8 +2627,8 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   const stateFromStoresObject3 = tmpResult112.useStateFromStoresObject(items46, () => messageInteractionStates.getMessageInteractionStates());
   const items47 = [LocalInteractionComponentStateStore];
   const tmpResult113 = tmp(tmp2[61]);
-  [tmp66, tmp67] = guildId(tmpResult113.useStateFromStores(items47, f106322, [], tmp(tmp2[74]).isVersionEqual), 2);
-  guildId(tmpResult113.useStateFromStores(items47, f106322, [], tmp(tmp2[74]).isVersionEqual), 2);
+  [tmp66, tmp67] = guildId(tmpResult113.useStateFromStores(items47, f106474, [], tmp(tmp2[74]).isVersionEqual), 2);
+  guildId(tmpResult113.useStateFromStores(items47, f106474, [], tmp(tmp2[74]).isVersionEqual), 2);
   const items48 = [ExperimentStore];
   const tmpResult114 = tmp(tmp2[61]);
   let stateFromStores22 = tmpResult114.useStateFromStores(items48, () => hasLoadedExperiments.hasLoadedExperiments);

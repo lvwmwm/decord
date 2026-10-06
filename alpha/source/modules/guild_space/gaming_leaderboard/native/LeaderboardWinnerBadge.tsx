@@ -1,17 +1,17 @@
-// Module ID: 10642
-// Function ID: 10643
+// Module ID: 10655
+// Function ID: 10656
 // Name: LeaderboardWinnerBadge
-// Dependencies: [19, 17, 21, 4890, 558, 576, 10643, 10644, 8364, 587, 2]
+// Dependencies: [19, 17, 21, 4896, 558, 576, 10656, 10657, 8397, 587, 2]
 
-// Module 10642 (LeaderboardWinnerBadge)
+// Module 10655 (LeaderboardWinnerBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import TrophyIcon2 from "TrophyIcon" /* 8364 */;
-import useActiveLeaderboardWinnerDataDefault from "useActiveLeaderboardWinnerData" /* 10643 */;
-import GuildLeaderboardUtils from "GuildLeaderboardUtils" /* 10644 */;
+import TrophyIcon2 from "TrophyIcon" /* 8397 */;
+import useActiveLeaderboardWinnerDataDefault from "useActiveLeaderboardWinnerData" /* 10656 */;
+import GuildLeaderboardUtils from "GuildLeaderboardUtils" /* 10657 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const TrophyIcon = tmp(8364).TrophyIcon;
+      const TrophyIcon = tmp(8397).TrophyIcon;
       const tmp12 = <TrophyIcon size="xs" color={nativeDefault.colors.TEXT_FEEDBACK_WARNING} />;
       cResult[2] = tmp12;
       tmp10 = tmp12;

@@ -1,25 +1,25 @@
-// Module ID: 12904
-// Function ID: 12905
+// Module ID: 12923
+// Function ID: 12924
 // Name: ConjureConnectionStore
-// Dependencies: [32, 5, 1377, 12905, 8699, 12907, 584, 8701, 12908, 12910, 8702, 12911, 1126, 3723, 8700, 8973, 12912, 569, 7249, 12913, 12914, 504, 2]
+// Dependencies: [32, 5, 1377, 12924, 8734, 12926, 584, 8736, 12927, 12929, 8737, 12930, 1126, 3753, 8735, 9006, 12931, 569, 7262, 12932, 12933, 504, 2]
 // Exports: closeConnection, createDatabaseRestorePoint, deleteStagedAttachment, draftPatchNotes, ensureConnection, exportProjectArchive, fetchDatabaseRestorePoints, fetchDatabaseRestoreWindow, fetchProjectMcpConnection, fetchSourceHistory, forceCompaction, formatMcpConnectionExpiry, getPreviewScreenshotUrl, importAttachmentFromUrl, interruptTurn, isAttachmentAvailable, publishProject, remixProjectWorkspace, requestDebugStatus, requestExternalAuthorizeUrl, requestProjectRebuild, resetHistoryPaging, restoreDatabaseToPoint, restoreDatabaseToTimestamp, restoreSourceHistoryEntry, sendLiveReload, sendModelSettings, sendUserMessage, stageModelSettings, submitProjectSecrets, submitProjectSettings, uploadAttachment
 
-// Module 12904 (ConjureConnectionStore)
+// Module 12923 (ConjureConnectionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import createNonce from "createNonce" /* 7249 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 8700 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 8701 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 8702 */;
-import ConjureChatStore2 from "ConjureChatStore" /* 12905 */;
-import conjurePreviewClaims from "conjurePreviewClaims" /* 12911 */;
-import ConjureWebSocket from "ConjureWebSocket" /* 12912 */;
+import createNonce from "createNonce" /* 7262 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 8735 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 8736 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 8737 */;
+import ConjureChatStore2 from "ConjureChatStore" /* 12924 */;
+import conjurePreviewClaims from "conjurePreviewClaims" /* 12930 */;
+import ConjureWebSocket from "ConjureWebSocket" /* 12931 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1377 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 8699 */;
-import ConjureLiveReloadStore from "ConjureLiveReloadStore" /* 12907 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 8734 */;
+import ConjureLiveReloadStore from "ConjureLiveReloadStore" /* 12926 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -788,7 +788,7 @@ function handleEvent(projectId, pendingEvents, type) {
         obj64.dispatch(obj28);
       } else {
         const intl2 = require("intl").intl;
-        sendFailedStep(projectId, intl2.string(attachment_id(3723)["913RMa"]), obj2);
+        sendFailedStep(projectId, intl2.string(attachment_id(3753)["913RMa"]), obj2);
       }
     } else if ("thinking_lifecycle" === type.kind) {
       ({ phase, session, seq, ticks, elapsed_ms, text } = type);
@@ -897,7 +897,7 @@ function handleEvent(projectId, pendingEvents, type) {
         obj51.dispatch(obj50);
       } else {
         const intl = require("intl").intl;
-        sendFailedStep(projectId, intl.string(attachment_id(3723)["0+RUWx"]), obj2);
+        sendFailedStep(projectId, intl.string(attachment_id(3753)["0+RUWx"]), obj2);
       }
     } else if ("ideas" === type.kind) {
       const tmp140 = null != type.ideas && type.ideas.length > 0;
@@ -1145,7 +1145,7 @@ function handleEvent(projectId, pendingEvents, type) {
 
     });
   } else if ("control_abort" === type.type) {
-    const obj20 = attachment_id(8702);
+    const obj20 = attachment_id(8737);
     obj20.abortPreviewControl(projectId);
   } else {
     if ("control_claim" !== type.type) {
@@ -1154,12 +1154,12 @@ function handleEvent(projectId, pendingEvents, type) {
           if ("begin" === type.phase) {
             const obj18 = require("conjurePreviewControlLease");
             const result2 = obj18.setConjureControlTuning(projectId, "tuning" === type.mode);
-            const obj19 = attachment_id(8702);
+            const obj19 = attachment_id(8737);
             const result3 = obj19.beginPreviewOperation(projectId);
           } else {
             const obj16 = require("conjurePreviewControlLease");
             const result4 = obj16.setConjureControlTuning(projectId, false);
-            const obj17 = attachment_id(8702);
+            const obj17 = attachment_id(8737);
             obj17.endPreviewOperation(projectId);
           }
         } else if ("live_reload" === type.type) {
@@ -1280,7 +1280,7 @@ function handleEvent(projectId, pendingEvents, type) {
     if ("capture_claim" === type.type) {
       upload_token = type.upload_token;
     }
-    const conjurePreviewClaim = resolveConjurePreviewClaim(id, upload_token);
+    const conjurePreviewClaim = resolveConjurePreviewClaim(projectId, id, upload_token);
   }
 }
 obj = function _openWithFreshTicket() {
@@ -3303,7 +3303,7 @@ obj = function _fetchProjectMcpConnection() {
             expiresAtMs = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {
@@ -3773,7 +3773,7 @@ obj = function _getAttachmentUrl() {
             uRLSearchParams = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {

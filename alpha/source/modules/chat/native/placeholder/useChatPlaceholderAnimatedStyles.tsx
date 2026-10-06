@@ -1,14 +1,14 @@
-// Module ID: 12305
-// Function ID: 12306
+// Module ID: 12320
+// Function ID: 12321
 // Name: useChatPlaceholderAnimatedStyles
-// Dependencies: [4879, 1188, 558, 576, 504, 4612, 4891, 4894, 2]
+// Dependencies: [4885, 1188, 558, 576, 504, 4618, 4897, 4900, 2]
 
-// Module 12305 (useChatPlaceholderAnimatedStyles)
+// Module 12320 (useChatPlaceholderAnimatedStyles)
 import native from "native" /* 1188 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import timingPresets from "timingPresets" /* 4894 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import timing from "timing" /* 4897 */;
+import timingPresets from "timingPresets" /* 4900 */;
+import AccessibilityStore from "AccessibilityStore" /* 4885 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

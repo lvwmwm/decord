@@ -1,22 +1,22 @@
-// Module ID: 7132
-// Function ID: 7133
+// Module ID: 7145
+// Function ID: 7146
 // Name: GuildBasicChannels
-// Dependencies: [32, 5, 5436, 2055, 502, 2051, 2106, 2074, 4509, 2052, 3, 2078, 7133, 1097, 4518, 2]
+// Dependencies: [32, 5, 5443, 2055, 502, 2051, 2106, 2074, 4515, 2052, 3, 2078, 7146, 1097, 4524, 2]
 
-// Module 7132 (GuildBasicChannels)
+// Module 7145 (GuildBasicChannels)
 import LoggerDefault from "Logger" /* 3 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import ChannelStore2 from "ChannelStore" /* 2051 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 2078 */;
-import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4518 */;
+import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4524 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5443 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildRoleStore from "GuildRoleStore" /* 2106 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
 import BasicChannelCacheStore from "BasicChannelCacheStore" /* 2052 */;
 import size from "module_2" /* 2 */;
 

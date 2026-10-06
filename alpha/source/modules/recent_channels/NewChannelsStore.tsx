@@ -1,23 +1,23 @@
-// Module ID: 7043
-// Function ID: 7044
+// Module ID: 7056
+// Function ID: 7057
 // Name: NewChannelsStore
-// Dependencies: [1231, 502, 2051, 4507, 2112, 2074, 4905, 5071, 1085, 1102, 6785, 584, 6605, 11, 504, 2]
+// Dependencies: [1231, 502, 2051, 4513, 2112, 2074, 4911, 5077, 1085, 1102, 6795, 584, 6612, 11, 504, 2]
 
-// Module 7043 (NewChannelsStore)
+// Module 7056 (NewChannelsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4507 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 6605 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6785 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4513 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6612 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6795 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildMemberStore from "GuildMemberStore" /* 2112 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import ReadStateStore from "ReadStateStore" /* 4905 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
+import ReadStateStore from "ReadStateStore" /* 4911 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -147,11 +147,11 @@ function pruneNewChannels() {
   const obj = SnowflakeUtilsDefault;
   const keys = obj.keys(closure_16);
   const item = keys.forEach((item) => {
-    const f137933 = (item) => !channelOrParentOptedIn.isChannelOrParentOptedIn(item, item);
+    const f138141 = (item) => !channelOrParentOptedIn.isChannelOrParentOptedIn(item, item);
     let closure_0 = item;
     const items = [...closure_16[item]];
-    closure_16[item] = new Set(items.filter(f137933));
-    new Set(items.filter(f137933));
+    closure_16[item] = new Set(items.filter(f138141));
+    new Set(items.filter(f138141));
   });
 }
 let closure_7 = GuildChannelStore2.GUILD_SELECTABLE_CHANNELS_KEY;

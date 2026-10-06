@@ -1,15 +1,15 @@
-// Module ID: 12248
-// Function ID: 12249
+// Module ID: 12263
+// Function ID: 12264
 // Name: GuildProgressItem
-// Dependencies: [19, 21, 4890, 558, 576, 12130, 12133, 12249, 1126, 12250, 12135, 2]
+// Dependencies: [19, 21, 4896, 558, 576, 12145, 12148, 12264, 1126, 12265, 12150, 2]
 
-// Module 12248 (GuildProgressItem)
+// Module 12263 (GuildProgressItem)
 import Fragment from "Fragment" /* 21 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 12130 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12133 */;
-import GuildProgressCircleDefault from "GuildProgressCircle" /* 12250 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 12145 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12148 */;
+import GuildProgressCircleDefault from "GuildProgressCircle" /* 12265 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

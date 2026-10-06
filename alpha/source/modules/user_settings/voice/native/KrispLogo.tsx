@@ -1,16 +1,16 @@
-// Module ID: 9677
-// Function ID: 9678
+// Module ID: 9690
+// Function ID: 9691
 // Name: KrispLogo
-// Dependencies: [19, 17, 1193, 1085, 21, 2115, 1252, 1126, 4565, 558, 576, 504, 4729, 9678, 9679, 4886, 2]
+// Dependencies: [19, 17, 1193, 1085, 21, 2115, 1252, 1126, 4571, 558, 576, 504, 4735, 9691, 9692, 4892, 2]
 
-// Module 9677 (KrispLogo)
+// Module 9690 (KrispLogo)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import LinkingDefault from "Linking" /* 4565 */;
-import shared from "shared" /* 4729 */;
+import LinkingDefault from "Linking" /* 4571 */;
+import shared from "shared" /* 4735 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1193 */;
@@ -79,9 +79,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   const tmpResult2 = shared;
   if (tmpResult2.isThemeLight(stateFromStores)) {
-    tmp8Result = tmp8(9678);
+    tmp8Result = tmp8(9691);
   } else {
-    tmp8Result = tmp8(9679);
+    tmp8Result = tmp8(9692);
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
@@ -111,7 +111,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { accessibilityRole: "link", accessibilityLabel: tmp17, onPress: handleKrispLinkPressed, children: unpackModuleId(Text, obj4) };
     obj4 = { variant: "text-sm/medium", color: "text-link", children: intl3.string(intl4.t.hvVgAZ) };
-    Text = tmp(4886).Text;
+    Text = tmp(4892).Text;
     intl3 = tmp(1126).intl;
     const tmp23 = unpackModuleId(hasOwnProperty, obj3);
     cResult[6] = tmp23;
@@ -144,9 +144,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
   const obj2 = shared;
   if (obj2.isThemeLight(stateFromStores)) {
-    tmp4Result = tmp4(9678);
+    tmp4Result = tmp4(9691);
   } else {
-    tmp4Result = tmp4(9679);
+    tmp4Result = tmp4(9692);
   }
   const obj3 = { style: closure_13.detailsView, children: items1 };
   const obj4 = { style: closure_13.logo, source: tmp4Result, accessibilityLabel: intl.string(intl4.t.vFiCSx) };
@@ -155,7 +155,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj5 = { accessibilityRole: "link", accessibilityLabel: intl2.string(intl4.t.hvVgAZ), onPress: handleKrispLinkPressed, children: unpackModuleId(Text, obj6) };
   intl2 = tmp(1126).intl;
   obj6 = { variant: "text-sm/medium", color: "text-link", children: intl3.string(intl4.t.hvVgAZ) };
-  Text = tmp(4886).Text;
+  Text = tmp(4892).Text;
   intl3 = tmp(1126).intl;
   items1[1] = unpackModuleId(hasOwnProperty, obj5);
   return closure_12(React3, obj3);

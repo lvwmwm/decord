@@ -1,10 +1,10 @@
-// Module ID: 14979
-// Function ID: 14980
+// Module ID: 14994
+// Function ID: 14995
 // Name: UserSettingsAppearanceThemeUtils
-// Dependencies: [1238, 1193, 1196, 1085, 1240, 1379, 1241, 1197, 14980, 11559, 8863, 1239, 4726, 14981, 1252, 2]
+// Dependencies: [1238, 1193, 1196, 1085, 1240, 1379, 1241, 1197, 14995, 11572, 8091, 1239, 4732, 14996, 1252, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme, getSyncedModeThemeIndex, getUserThemeIndex, handleSaveSyncedModeTheme, handleSaveTheme, trackClientThemeUpdated
 
-// Module 14979 (UserSettingsAppearanceThemeUtils)
+// Module 14994 (UserSettingsAppearanceThemeUtils)
 import Constants from "Constants" /* 1085 */;
 import ThemeConstants from "ThemeConstants" /* 1196 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
@@ -12,11 +12,11 @@ import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1241 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PremiumConstants from "PremiumConstants" /* 1379 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 4726 */;
-import UserSettingsActionCreators from "UserSettingsActionCreators" /* 8863 */;
-import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 11559 */;
-import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 14980 */;
-import SameAsDeviceThemeUtils from "SameAsDeviceThemeUtils" /* 14981 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 4732 */;
+import UserSettingsActionCreators from "UserSettingsActionCreators" /* 8091 */;
+import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 11572 */;
+import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 14995 */;
+import SameAsDeviceThemeUtils from "SameAsDeviceThemeUtils" /* 14996 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1238 */;
 import ThemeStore from "ThemeStore" /* 1193 */;
 import size from "module_2" /* 2 */;

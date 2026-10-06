@@ -1,17 +1,17 @@
-// Module ID: 9443
-// Function ID: 9444
+// Module ID: 9456
+// Function ID: 9457
 // Name: GameActivityIcon
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4589, 4729, 8248, 5974, 1402, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4595, 4735, 8281, 5981, 1402, 2]
 
-// Module 9443 (GameActivityIcon)
+// Module 9456 (GameActivityIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 4589 */;
-import FastImageDefault from "FastImage" /* 5974 */;
+import native from "native" /* 4595 */;
+import FastImageDefault from "FastImage" /* 5981 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,8 +20,8 @@ let style;
 let obj2;
 let tmp;
 const AvatarUtils = tmp(1402);
-const shared = tmp(4729);
-const UnknownGameIcon2 = tmp(8248);
+const shared = tmp(4735);
+const UnknownGameIcon2 = tmp(8281);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { icon: obj2 };
@@ -151,7 +151,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
     } else {
       const obj2 = { size: "custom", style: items1, color: isThemeDarkResult ? colors.WHITE : colors.BLACK };
       items1 = [tmp.icon, size1];
-      const UnknownGameIcon = tmp2(8248).UnknownGameIcon;
+      const UnknownGameIcon = tmp2(8281).UnknownGameIcon;
       const tmp2Result = shared;
       isThemeDarkResult = tmp2Result.isThemeDark(theme);
       colors = nativeDefault.colors;

@@ -1,8 +1,8 @@
-// Module ID: 5164
-// Function ID: 5165
+// Module ID: 5171
+// Function ID: 5172
 // Dependencies: [2]
 
-// Module 5164
+// Module 5171
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/shoes/kitty_paws.png.js");

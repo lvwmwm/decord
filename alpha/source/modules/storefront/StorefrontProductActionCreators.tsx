@@ -1,16 +1,16 @@
-// Module ID: 7889
-// Function ID: 7890
+// Module ID: 7900
+// Function ID: 7901
 // Name: StorefrontProductActionCreators
-// Dependencies: [5, 2116, 7890, 7073, 1085, 7891, 584, 5322, 5313, 2]
+// Dependencies: [5, 2116, 7901, 7086, 1085, 7902, 584, 5329, 5320, 2]
 // Exports: maybeFetchProductsBySkuIds, maybeFetchProductsWithSkus
 
-// Module 7889 (StorefrontProductActionCreators)
+// Module 7900 (StorefrontProductActionCreators)
 import Constants from "Constants" /* 1085 */;
-import StorefrontCacheUtils from "StorefrontCacheUtils" /* 7891 */;
+import StorefrontCacheUtils from "StorefrontCacheUtils" /* 7902 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2116 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 7890 */;
-import StorefrontProductRecord from "StorefrontProductRecord" /* 7073 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 7901 */;
+import StorefrontProductRecord from "StorefrontProductRecord" /* 7086 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _maybeFetchProductsWithSkus() {
@@ -91,7 +91,7 @@ let obj = function _maybeFetchProductsWithSkus() {
     if (ignoreCache === undefined) {
       ignoreCache = false;
     }
-    return "Set";
+    return "Reflect";
   });
   return obj(...arguments);
 };
@@ -189,7 +189,7 @@ obj = function _maybeFetchProductsBySkuIds() {
     if (ignoreCache === undefined) {
       ignoreCache = false;
     }
-    return "Set";
+    return "Reflect";
   });
   return obj(...arguments);
 };

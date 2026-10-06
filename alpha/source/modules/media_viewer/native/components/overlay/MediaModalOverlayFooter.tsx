@@ -1,21 +1,21 @@
-// Module ID: 12772
-// Function ID: 12773
+// Module ID: 12787
+// Function ID: 12788
 // Name: MediaModalOverlayFooter
-// Dependencies: [32, 19, 17, 21, 4890, 587, 4612, 11153, 4891, 1188, 12773, 6140, 4613, 6619, 6649, 12774, 12764, 2]
+// Dependencies: [32, 19, 17, 21, 4896, 587, 4618, 11166, 4897, 1188, 12788, 6147, 4619, 6626, 6656, 12789, 12779, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 12772 (MediaModalOverlayFooter)
+// Module 12787 (MediaModalOverlayFooter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1188 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11153 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import timing from "timing" /* 4897 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6147 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11166 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import size from "module_2" /* 2 */;
 
 let __initData4, __initData5, set, set2, set3;
@@ -25,7 +25,7 @@ let metroRequire;
 let obj2;
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "Boolean" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "r" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
+let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "filter" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "r" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
 obj2 = { width: 40, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 };
 let closure_8 = createStyles.createStyles(obj);
 let c9 = -1;

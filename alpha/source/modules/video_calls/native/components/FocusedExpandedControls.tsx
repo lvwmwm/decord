@@ -1,32 +1,32 @@
-// Module ID: 9698
-// Function ID: 9699
+// Module ID: 9711
+// Function ID: 9712
 // Name: FocusedExpandedControls
-// Dependencies: [19, 17, 4912, 502, 4915, 21, 4890, 587, 558, 576, 1188, 9699, 9700, 8895, 504, 9701, 1126, 1369, 9666, 9299, 9330, 9631, 9702, 9687, 9703, 9704, 2]
+// Dependencies: [19, 17, 4918, 502, 4921, 21, 4896, 587, 558, 576, 1188, 9712, 9713, 8924, 504, 9714, 1126, 1369, 9679, 9334, 9344, 9644, 9715, 9700, 9716, 9717, 2]
 
-// Module 9698 (FocusedExpandedControls)
+// Module 9711 (FocusedExpandedControls)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import native from "native" /* 1188 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
-import Constants from "Constants" /* 4915 */;
-import Form from "Form" /* 8895 */;
-import CallsUtils from "CallsUtils" /* 9299 */;
-import showAudioOutputSelector from "showAudioOutputSelector" /* 9330 */;
-import useScreenshareUtilsDefault from "useScreenshareUtils" /* 9631 */;
-import VolumeSliderDefault from "VolumeSlider" /* 9666 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 9687 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9699 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9700 */;
-import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 9701 */;
-import useDeafStatesDefault from "useDeafStates" /* 9702 */;
+import Constants from "Constants" /* 4921 */;
+import Form from "Form" /* 8924 */;
+import CallsUtils from "CallsUtils" /* 9334 */;
+import showAudioOutputSelector from "showAudioOutputSelector" /* 9344 */;
+import useScreenshareUtilsDefault from "useScreenshareUtils" /* 9644 */;
+import VolumeSliderDefault from "VolumeSlider" /* 9679 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 9700 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9712 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9713 */;
+import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 9714 */;
+import useDeafStatesDefault from "useDeafStates" /* 9715 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4918 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -164,7 +164,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj2 = { tintColor: nativeDefault.unsafe_rawColors.BRAND_500, renderIosBackground: true, value: switchValue, disabled, onValueChange: onSwitchValueChange };
-    const FormSwitch = tmp(8895).FormSwitch;
+    const FormSwitch = tmp(8924).FormSwitch;
     const tmp10 = metroImportAll(FormSwitch, obj2);
     cResult[0] = disabled;
     cResult[1] = onSwitchValueChange;
@@ -359,7 +359,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       let tmp31 = null;
       if (null != stateFromStores) {
         const obj4 = { label: tmp26 };
-        tmp31 = metroImportAll(tmp(8895).FormRow, obj4);
+        tmp31 = metroImportAll(tmp(8924).FormRow, obj4);
       }
       cResult[14] = stateFromStores;
       cResult[15] = tmp26;
@@ -438,7 +438,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const cResult = obj.c(7);
   channelId = channelId.channelId;
   const isConnectedToVoiceChannel = channelId.isConnectedToVoiceChannel;
-  const obj2 = channelId(9299);
+  const obj2 = channelId(9334);
   const routeSource = obj2.useMaskedSpeakerStates().routeSource;
   if (cResult[0] === channelId) {
     let tmp4;
@@ -569,7 +569,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
     tmp7 = cResult[1];
   }
   const onPress = tmp7.onPress;
-  const tmp5Result = tmp5(tmp7.deaf ? 9703 : 9704);
+  const tmp5Result = tmp5(tmp7.deaf ? 9716 : 9717);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t.wjcRFX);
@@ -603,7 +603,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
   const tmp3 = useDeafStatesDefault(channel);
   const obj = VoiceActionUtils;
   const deafHandler = obj.createDeafHandler(tmp3);
-  const obj2 = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(deafHandler.deaf ? 9703 : 9704), label: intl.string(intl3.t.wjcRFX) };
+  const obj2 = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(deafHandler.deaf ? 9716 : 9717), label: intl.string(intl3.t.wjcRFX) };
   intl = tmp4(1126).intl;
   return metroImportAll(closure_13, obj2);
 });

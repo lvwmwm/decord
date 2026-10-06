@@ -1,10 +1,10 @@
-// Module ID: 7178
-// Function ID: 7179
+// Module ID: 7191
+// Function ID: 7192
 // Name: appMessageEmbedTracking
-// Dependencies: [19, 1085, 1252, 558, 576, 7179, 7180, 2]
+// Dependencies: [19, 1085, 1252, 558, 576, 7192, 7193, 2]
 // Exports: trackAppEmbedClick, trackAppEmbedLinkSent, trackAppEmbedViewed
 
-// Module 7178 (appMessageEmbedTracking)
+// Module 7191 (appMessageEmbedTracking)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import react from "react" /* 19 */;
@@ -23,7 +23,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   let obj = require("react");
   const cResult = obj.c(4);
   if (cResult[0] !== id) {
-    const tmpResult = tmp(7179);
+    const tmpResult = tmp(7192);
     const result = tmpResult.trackingConfigWithDefaults(id);
     cResult[0] = id;
     cResult[1] = result;
@@ -68,7 +68,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   } else {
     tmp6 = cResult[3];
   }
-  const tmpResult2 = tmp(7180);
+  const tmpResult2 = tmp(7193);
   return tmpResult2.useIsVisible(tmp6, undefined);
 }) : ((id) => {
   let obj = require("appMessageEmbedTrackingConfig");

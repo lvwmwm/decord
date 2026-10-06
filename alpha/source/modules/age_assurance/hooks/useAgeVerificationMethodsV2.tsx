@@ -1,15 +1,15 @@
-// Module ID: 8130
-// Function ID: 8131
+// Module ID: 8163
+// Function ID: 8164
 // Name: useAgeVerificationMethodsV2
-// Dependencies: [5, 32, 19, 8131, 8092, 8113, 584, 2]
+// Dependencies: [5, 32, 19, 8164, 8125, 8146, 584, 2]
 // Exports: useAgeVerificationMethodsV2
 
-// Module 8130 (useAgeVerificationMethodsV2)
+// Module 8163 (useAgeVerificationMethodsV2)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AgeVerificationStore from "AgeVerificationStore" /* 8131 */;
+import AgeVerificationStore from "AgeVerificationStore" /* 8164 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, c6;
@@ -27,7 +27,7 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
   let tmp2;
   let tmp4;
   let tmp6;
-  const f96423 = () => callback.methodsV2OutageBannerMessage;
+  const f96603 = () => callback.methodsV2OutageBannerMessage;
   const tmp = _slicedToArray(react.useState(() => {
     let methodsV2 = callback.methodsV2;
     if (methodsV2 == null) {
@@ -38,8 +38,8 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
   [tmp2, require] = tmp;
   const tmp3 = _slicedToArray(react.useState(() => callback.methodsV2FooterMessage), 2);
   [tmp4, importDefault] = tmp3;
-  [tmp6, dependencyMap] = _slicedToArray(react.useState(f96423), 2);
-  const tmp5 = _slicedToArray(react.useState(f96423), 2);
+  [tmp6, dependencyMap] = _slicedToArray(react.useState(f96603), 2);
+  const tmp5 = _slicedToArray(react.useState(f96603), 2);
   [first, _asyncToGenerator] = react.useState(() => null == callback.methodsV2);
   [first1, _slicedToArray] = react.useState(false);
   react = react.useRef(true);

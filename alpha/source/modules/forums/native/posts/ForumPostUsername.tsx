@@ -1,29 +1,29 @@
-// Module ID: 11619
-// Function ID: 11620
+// Module ID: 11633
+// Function ID: 11634
 // Name: ForumPostUsername
-// Dependencies: [19, 17, 4879, 11615, 21, 4890, 558, 576, 7528, 2062, 11143, 11620, 504, 7620, 1188, 4886, 2]
+// Dependencies: [19, 17, 4885, 11629, 21, 4896, 558, 576, 7539, 2062, 11156, 11634, 504, 7631, 1188, 4892, 2]
 
-// Module 11619 (ForumPostUsername)
+// Module 11633 (ForumPostUsername)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import native from "native" /* 1188 */;
 import ForumLayout from "ForumLayout" /* 2062 */;
-import ForumHooks from "ForumHooks" /* 7528 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7620 */;
-import useChatWidthDefault from "useChatWidth" /* 11143 */;
-import ForumChannelStore from "ForumChannelStore" /* 11615 */;
+import ForumHooks from "ForumHooks" /* 7539 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7631 */;
+import useChatWidthDefault from "useChatWidth" /* 11156 */;
+import ForumChannelStore from "ForumChannelStore" /* 11629 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 4885 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ForumPostGridBody = tmp(11620);
+const ForumPostGridBody = tmp(11634);
 const View = react_native.View;
 const useForumChannelStore = ForumChannelStore.useForumChannelStore;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -473,7 +473,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       items3 = [tmp23, ];
       let tmp25;
-      const Text = tmp3(4886).Text;
+      const Text = tmp3(4892).Text;
       if (tmp17) {
         tmp25 = processColorStringsArray;
       }

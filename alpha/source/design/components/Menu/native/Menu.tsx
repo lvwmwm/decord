@@ -1,24 +1,24 @@
-// Module ID: 14205
-// Function ID: 14206
+// Module ID: 14223
+// Function ID: 14224
 // Name: Menu
-// Dependencies: [32, 19, 17, 1085, 21, 13935, 4890, 587, 4612, 4596, 1618, 1484, 1369, 4590, 1126, 5779, 4891, 13939, 13933, 5597, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 13953, 4896, 587, 4618, 4602, 1618, 1484, 1369, 4596, 1126, 5786, 4897, 13957, 13951, 5604, 2]
 // Exports: Menu
 
-// Module 14205 (Menu)
+// Module 14223 (Menu)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import spring from "spring" /* 5597 */;
-import react_native from "react-native" /* 5779 */;
-import Easing from "Easing" /* 13935 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import timing from "timing" /* 4897 */;
+import spring from "spring" /* 5604 */;
+import react_native from "react-native" /* 5786 */;
+import Easing from "Easing" /* 13953 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -112,7 +112,7 @@ export const Menu = function Menu(toggleButtonRef) {
   function openMenuCallback() {
     const obj = PlatformUtils;
     if (obj.isAndroid()) {
-      const AccessibilityAnnouncer = tmp(4590).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = tmp(4596).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
       const intl = tmp(1126).intl;
       announce(intl.string(intl2.t.ZqK0uI));
@@ -297,7 +297,7 @@ export const Menu = function Menu(toggleButtonRef) {
         items1[1] = num4;
         items = [{ translateX: interpolate(value, [0, 1], items1) }, , ];
         const obj5 = { translateX: interpolate(value, [0, 1], items1) };
-        const interpolate2 = tmp2(4612).interpolate;
+        const interpolate2 = tmp2(4618).interpolate;
         ReanimatedRexport;
         const value8 = obj2.get();
         if ("top" === closure_11) {

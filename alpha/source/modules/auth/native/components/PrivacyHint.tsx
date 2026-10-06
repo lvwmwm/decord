@@ -1,21 +1,21 @@
-// Module ID: 15904
-// Function ID: 15905
+// Module ID: 15943
+// Function ID: 15944
 // Name: PrivacyHint
-// Dependencies: [19, 17, 6083, 15867, 1085, 21, 4890, 558, 576, 1126, 4886, 4594, 5991, 8895, 15905, 2]
+// Dependencies: [19, 17, 6090, 15906, 1085, 21, 4896, 558, 576, 1126, 4892, 4600, 5998, 8924, 15944, 2]
 
-// Module 15904 (PrivacyHint)
+// Module 15943 (PrivacyHint)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import react_native from "react-native" /* 4594 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6083 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 15867 */;
-import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 15905 */;
+import react_native from "react-native" /* 4600 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6090 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 15906 */;
+import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 15944 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -167,10 +167,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (undefined !== asCheckbox && asCheckbox) {
     const obj6 = { checked: consent };
-    tmp13Result = tmp13(tmp(5991).FormCheckbox, obj6);
+    tmp13Result = tmp13(tmp(5998).FormCheckbox, obj6);
   } else {
     const obj8 = { selected: consent };
-    tmp13Result = tmp13(tmp(8895).FormRow.Radio, obj8);
+    tmp13Result = tmp13(tmp(8924).FormRow.Radio, obj8);
   }
   cResult[4] = undefined !== asCheckbox && asCheckbox;
   cResult[5] = consent;
@@ -199,16 +199,16 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp6 = React3;
   if (asCheckbox) {
     const obj3 = { checked: consent };
-    tmp7Result = tmp7(tmp2(5991).FormCheckbox, obj3);
+    tmp7Result = tmp7(tmp2(5998).FormCheckbox, obj3);
     tmp9 = tmp7;
   } else {
     const obj4 = { selected: consent };
-    tmp7Result = tmp7(tmp2(8895).FormRow.Radio, obj4);
+    tmp7Result = tmp7(tmp2(8924).FormRow.Radio, obj4);
     tmp9 = tmp7;
   }
   items = [tmp7Result, ];
   const obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.checkboxLabel, children: intl2.format(intl3.t.qMDAP0, obj6) };
-  const Text = tmp2(4886).Text;
+  const Text = tmp2(4892).Text;
   intl2 = tmp2(1126).intl;
   obj6 = { termsURL: MarketingURLs.TERMS, privacyURL: MarketingURLs.PRIVACY };
   items[1] = tmp9(Text, obj5);

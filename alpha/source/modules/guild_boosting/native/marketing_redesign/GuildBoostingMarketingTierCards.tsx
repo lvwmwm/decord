@@ -1,43 +1,43 @@
-// Module ID: 13393
-// Function ID: 13394
+// Module ID: 13412
+// Function ID: 13413
 // Name: GuildBoostingMarketingTierCards
-// Dependencies: [32, 19, 17, 1085, 1379, 21, 8411, 1126, 12190, 12189, 5885, 5881, 10105, 13394, 8878, 4839, 13396, 4890, 587, 13388, 5620, 558, 576, 4612, 4891, 4886, 4791, 4729, 7666, 13397, 13399, 5909, 5605, 4727, 1188, 13401, 13402, 6473, 12227, 2]
+// Dependencies: [32, 19, 17, 1085, 1379, 21, 8444, 1126, 12205, 12204, 5892, 5888, 10118, 13413, 8907, 4845, 13415, 4896, 587, 13407, 5627, 558, 576, 4618, 4897, 4892, 4797, 4735, 7677, 13416, 13418, 5916, 5612, 4733, 1188, 13420, 13421, 6480, 12242, 2]
 
-// Module 13393 (GuildBoostingMarketingTierCards)
+// Module 13412 (GuildBoostingMarketingTierCards)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import PremiumConstants from "PremiumConstants" /* 1379 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import ColorUtils from "ColorUtils" /* 4727 */;
-import shared from "shared" /* 4729 */;
-import useThemeDefault from "useTheme" /* 4791 */;
-import LinkIcon from "LinkIcon" /* 4839 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import timing from "timing" /* 4891 */;
-import LinearGradientDefault from "LinearGradient" /* 5605 */;
-import LegacyTokens from "LegacyTokens" /* 5620 */;
-import StageIcon from "StageIcon" /* 5881 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 5885 */;
-import Pressables from "Pressables" /* 5909 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6473 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 7666 */;
-import ReactionIcon from "ReactionIcon" /* 8411 */;
-import UploadIcon from "UploadIcon" /* 8878 */;
-import GifIcon from "GifIcon" /* 10105 */;
-import ScreenArrowIcon from "ScreenArrowIcon" /* 12189 */;
-import StickerIcon from "StickerIcon" /* 12190 */;
-import GuildBoostingMarketingProgressBar from "GuildBoostingMarketingProgressBar" /* 13388 */;
-import ServerGridIcon from "ServerGridIcon" /* 13394 */;
-import ServerBoostStreamQualityMarketingExperiment from "ServerBoostStreamQualityMarketingExperiment" /* 13396 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13401 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13402 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import ColorUtils from "ColorUtils" /* 4733 */;
+import shared from "shared" /* 4735 */;
+import useThemeDefault from "useTheme" /* 4797 */;
+import LinkIcon from "LinkIcon" /* 4845 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import timing from "timing" /* 4897 */;
+import LinearGradientDefault from "LinearGradient" /* 5612 */;
+import LegacyTokens from "LegacyTokens" /* 5627 */;
+import StageIcon from "StageIcon" /* 5888 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 5892 */;
+import Pressables from "Pressables" /* 5916 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6480 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 7677 */;
+import ReactionIcon from "ReactionIcon" /* 8444 */;
+import UploadIcon from "UploadIcon" /* 8907 */;
+import GifIcon from "GifIcon" /* 10118 */;
+import ScreenArrowIcon from "ScreenArrowIcon" /* 12204 */;
+import StickerIcon from "StickerIcon" /* 12205 */;
+import GuildBoostingMarketingProgressBar from "GuildBoostingMarketingProgressBar" /* 13407 */;
+import ServerGridIcon from "ServerGridIcon" /* 13413 */;
+import ServerBoostStreamQualityMarketingExperiment from "ServerBoostStreamQualityMarketingExperiment" /* 13415 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13420 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13421 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -439,7 +439,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
     }
     const obj = { opacity: withDelay(num, withTiming(num2, obj2)) };
     obj2 = { duration, easing: Easing.inOut(ReanimatedRexport.Easing.quad) };
-    Easing = tmp(4612).Easing;
+    Easing = tmp(4618).Easing;
     return obj;
   };
   let obj3 = { withDelay: require("ReanimatedRexport").withDelay, isVisible, TIER_FEATURE_ANIMATION_DURATION_MS, withTiming: require("timing").withTiming, Easing: require("ReanimatedRexport").Easing };
@@ -583,7 +583,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
     }
     const obj = { opacity: withDelay(num, withTiming(num2, obj2)) };
     obj2 = { duration, easing: Easing.inOut(ReanimatedRexport.Easing.quad) };
-    Easing = tmp(4612).Easing;
+    Easing = tmp(4618).Easing;
     return obj;
   };
   let obj2 = { withDelay: require("ReanimatedRexport").withDelay, isVisible, TIER_FEATURE_ANIMATION_DURATION_MS, withTiming: require("timing").withTiming, Easing: require("ReanimatedRexport").Easing };
@@ -999,7 +999,7 @@ let closure_18 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
                                           items12[0] = nativeDefault.unsafe_rawColors.GUILD_BOOSTING_BLUE;
                                           items12[1] = nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PURPLE;
                                           obj14 = { color: "text-overlay-light", style: tmp4.cardTierBadgeCopy, variant: "text-xs/bold", children: string2Result };
-                                          Text = tmp(4886).Text;
+                                          Text = tmp(4892).Text;
                                           const intl3 = tmp(1126).intl;
                                           const string2 = intl3.string;
                                           const t2 = tmp(1126).t;
@@ -1062,9 +1062,9 @@ let closure_18 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
                   }
                   const tmp52 = React4;
                   if (isExpanded) {
-                    ChevronLargeDownIcon = tmp(13397).ChevronLargeUpIcon;
+                    ChevronLargeDownIcon = tmp(13416).ChevronLargeUpIcon;
                   } else {
-                    ChevronLargeDownIcon = tmp(13399).ChevronLargeDownIcon;
+                    ChevronLargeDownIcon = tmp(13418).ChevronLargeDownIcon;
                   }
                   const obj19 = { color: nativeDefault.colors.WHITE, style: tmp4.cardFooterIcon };
                   const tmp52Result = tmp52(ChevronLargeDownIcon, obj19);
@@ -1199,13 +1199,13 @@ let closure_18 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
   obj4 = { style: tmp.pressableWrapper, children: authStore(PressableHighlight, obj5) };
   obj5 = { onPress: onCardPress, style: tmp.cardContent, accessibilityRole: "button", accessibilityState: { expanded: isExpanded }, accessibilityLabel: stringResult, children: items3 };
   const obj6 = { style: tmp.cardHeading, children: items2 };
-  PressableHighlight = tmp7(5909).PressableHighlight;
+  PressableHighlight = tmp7(5916).PressableHighlight;
   const obj7 = { color: "text-overlay-light", style: tmp.cardTierName, variant: "heading-xxl/extrabold", children: tmp7Result.getTierName(tier, { useLevels: false }) };
-  const Text = tmp7(4886).Text;
+  const Text = tmp7(4892).Text;
   tmp7Result = GuildBoostingUtils;
   items2 = [React4(Text, obj7), ];
   const obj8 = { color: "text-overlay-light", style: tmp.cardTierBoostcount, variant: "text-md/medium", children: intl2.format(intl4.t.gDsyB9, obj9) };
-  const Text2 = tmp7(4886).Text;
+  const Text2 = tmp7(4892).Text;
   intl2 = tmp7(1126).intl;
   obj9 = { numSubscriptions: metroRequire[tier] };
   items2[1] = React4(Text2, obj8);
@@ -1219,9 +1219,9 @@ let closure_18 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
   const obj12 = { style: tmp.cardFooter, children: items5 };
   items5 = [React4(Text_Text.Text, { color: "text-overlay-light", variant: "text-md/semibold", children: stringResult }), ];
   if (isExpanded) {
-    ChevronLargeDownIcon = tmp7(13397).ChevronLargeUpIcon;
+    ChevronLargeDownIcon = tmp7(13416).ChevronLargeUpIcon;
   } else {
-    ChevronLargeDownIcon = tmp7(13399).ChevronLargeDownIcon;
+    ChevronLargeDownIcon = tmp7(13418).ChevronLargeDownIcon;
   }
   const obj13 = { color: nativeDefault.colors.WHITE, style: tmp.cardFooterIcon };
   items5[1] = React4(ChevronLargeDownIcon, obj13);
@@ -1239,7 +1239,7 @@ let closure_18 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     items7[0] = nativeDefault.unsafe_rawColors.GUILD_BOOSTING_BLUE;
     items7[1] = nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PURPLE;
     obj15 = { color: "text-overlay-light", style: tmp.cardTierBadgeCopy, variant: "text-xs/bold", children: string2Result };
-    Text3 = tmp7(4886).Text;
+    Text3 = tmp7(4892).Text;
     const intl3 = tmp7(1126).intl;
     const string2 = intl3.string;
     const t2 = tmp7(1126).t;
@@ -1467,7 +1467,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       return React4(closure_18, obj, tier);
     })
   };
-  const MarketingCardsScroller = guild(12227).MarketingCardsScroller;
+  const MarketingCardsScroller = guild(12242).MarketingCardsScroller;
   let closure_0 = Math.min(BoostedGuildTiers.TIER_3, guild.premiumTier + 1);
   let findIndexResult = items1.findIndex((tier) => tier.tier === closure_0);
   num = 0;

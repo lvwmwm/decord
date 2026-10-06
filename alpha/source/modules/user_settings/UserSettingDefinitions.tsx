@@ -48,18 +48,18 @@ export const defineProtoSetting = function defineProtoSetting(textAndImages, act
     return tmp(tmp3);
   }
   const obj2 = require("ReactCompilerGating");
-  const f85642 = (favorites) => {
+  const f85776 = (favorites) => {
     let closure_0 = favorites;
     const PreloadedUserSettingsActionCreators = getSetting(explicitContentFromProto[6]).PreloadedUserSettingsActionCreators;
     return PreloadedUserSettingsActionCreators.updateAsync(closure_0, async (arg0) => {
-      arg0[f85642] = explicitContentToProto(favorites, arg0[f85642]);
+      arg0[f85776] = explicitContentToProto(favorites, arg0[f85776]);
     }, closure_4);
   };
   const obj3 = {
     getSetting,
     updateSetting: (fn) => {
       let tmp2 = fn;
-      const tmp = f85648;
+      const tmp = f85782;
       if (typeof fn === "function") {
         tmp2 = fn(getSetting());
       }
@@ -121,19 +121,19 @@ export function wrapSettingWithSelectiveSyncing(UserSettingDefinitions, text, in
     },
     updateSetting: (fn) => {
       let tmp2 = fn;
-      const tmp = f85648;
+      const tmp = f85782;
       if (typeof fn === "function") {
         tmp2 = fn(getSetting());
       }
       return tmp(tmp2);
     }
   };
-  const f85645 = (arg0) => {
+  const f85779 = (arg0) => {
     let obj3;
     let obj5;
     let updateSettingResult;
-    const tmp = f85645;
-    if (SelectivelySyncedUserSettingsStore.shouldSync(f85645)) {
+    const tmp = f85779;
+    if (SelectivelySyncedUserSettingsStore.shouldSync(f85779)) {
       updateSettingResult = getSetting.updateSetting(arg0);
     } else {
       const obj2 = { type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE", changes: obj3 };
@@ -174,17 +174,17 @@ export function wrapSettingWithOverride(arg0, gifAutoPlay, arg2, arg3) {
     },
     updateSetting: (fn) => {
       let tmp2 = fn;
-      const tmp = f85648;
+      const tmp = f85782;
       if (typeof fn === "function") {
         tmp2 = fn(getSetting());
       }
       return tmp(tmp2);
     }
   };
-  const f85648 = (arg0) => {
+  const f85782 = (arg0) => {
     let items;
     const obj2 = { type: "USER_SETTINGS_OVERRIDE_CLEAR", settings: items };
-    items = [f85648];
+    items = [f85782];
     const obj = gifAutoPlay(closure_2[7]);
     obj.dispatch(obj2);
     return getSetting.updateSetting(arg0);

@@ -1,17 +1,17 @@
-// Module ID: 8359
-// Function ID: 8360
+// Module ID: 8392
+// Function ID: 8393
 // Name: useGameProfileInvite
-// Dependencies: [5, 19, 2007, 2053, 4871, 1085, 8333, 504, 1102, 8054, 6812, 558, 576, 2]
+// Dependencies: [5, 19, 2007, 2053, 4877, 1085, 8366, 504, 1102, 8064, 6822, 558, 576, 2]
 // Exports: hasGameProfileDiscordWebsite, preloadGameProfileInvite
 
-// Module 8359 (useGameProfileInvite)
+// Module 8392 (useGameProfileInvite)
 import DurationsDefault from "Durations" /* 1102 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8054 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8064 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2007 */;
 import GuildMembershipStore from "GuildMembershipStore" /* 2053 */;
-import InviteStore from "InviteStore" /* 4871 */;
+import InviteStore from "InviteStore" /* 4877 */;
 import Constants from "Constants" /* 1085 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -22,7 +22,7 @@ let _require, c3, c4, current;
 
 let QueryIds;
 let metroImportDefault;
-const f97085 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
+const f97266 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
 function isUsableGameProfileInvite(state) {
   let tmp = null != state && state.state !== metroImportDefault.RESOLVING;
   if (tmp) {
@@ -180,7 +180,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((websites, cResult)
     if (websites != null) {
       websites = websites.websites;
       if (websites != null) {
-        found = websites.find(f97085);
+        found = websites.find(f97266);
       }
     }
     let arr;
@@ -363,7 +363,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((websites, cResult)
   if (websites != null) {
     websites = websites.websites;
     if (websites != null) {
-      found = websites.find(f97085);
+      found = websites.find(f97266);
     }
   }
   let arr;
@@ -454,7 +454,7 @@ export const preloadGameProfileInvite = function preloadGameProfileInvite(arg0) 
     if (game != null) {
       const websites = game.websites;
       if (websites != null) {
-        found = websites.find(f97085);
+        found = websites.find(f97266);
       }
     }
     let arr;

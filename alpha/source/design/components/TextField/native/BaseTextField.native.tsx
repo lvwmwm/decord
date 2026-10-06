@@ -1,15 +1,15 @@
-// Module ID: 6107
-// Function ID: 6108
+// Module ID: 6114
+// Function ID: 6115
 // Name: BaseTextField
-// Dependencies: [19, 21, 1369, 558, 576, 6105, 4586, 6108, 4585, 6109, 2]
+// Dependencies: [19, 21, 1369, 558, 576, 6112, 4592, 6115, 4591, 6116, 2]
 
-// Module 6107 (BaseTextField)
+// Module 6114 (BaseTextField)
 import react2 from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
-import mergeProps from "mergeProps" /* 4585 */;
-import useFocus from "useFocus" /* 4586 */;
-import InputFieldContainer2 from "InputFieldContainer" /* 6105 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 6108 */;
+import mergeProps from "mergeProps" /* 4591 */;
+import useFocus from "useFocus" /* 4592 */;
+import InputFieldContainer2 from "InputFieldContainer" /* 6112 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 6115 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -141,7 +141,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
                                   }
                                 }
                                 const obj2 = { isFocused, children: items };
-                                const InputFieldContainer = tmp(6105).InputFieldContainer;
+                                const InputFieldContainer = tmp(6112).InputFieldContainer;
                                 const merged = Object.assign(leadingIcon);
                                 items = [tmp14, tmp26, leadingIcon.trailing];
                                 const tmp40 = React3(InputFieldContainer, obj2);
@@ -158,7 +158,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
                     }
                   }
                   const obj3 = { value: tmp18, defaultValue: tmp20, onChangeText: tmp13, ref: tmp23, style: tmp25, placeholderTextColor: inputStyles.placeholderText.color };
-                  const NativeTextInput = tmp(6109).NativeTextInput;
+                  const NativeTextInput = tmp(6116).NativeTextInput;
                   const merged1 = Object.assign(tmp10);
                   const merged2 = Object.assign(tmp15);
                   const tmp34 = _false(NativeTextInput, obj3);
@@ -296,11 +296,11 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     }
   }, items);
   const obj6 = { isFocused, children: items1 };
-  const InputFieldContainer = tmp(6105).InputFieldContainer;
+  const InputFieldContainer = tmp(6112).InputFieldContainer;
   const merged = Object.assign(size);
   items1 = [size.leading, , ];
   const obj7 = { value: replaced, defaultValue: replaced1, onChangeText: callback, ref: tmpResult10.mergeRefs(ref, ref2), style: items2, placeholderTextColor: inputStyles.placeholderText.color };
-  const NativeTextInput = tmp(6109).NativeTextInput;
+  const NativeTextInput = tmp(6116).NativeTextInput;
   const merged1 = Object.assign(tmp6);
   const propsForNativeTextInput = _objectWithoutProperties.propsForNativeTextInput;
   _objectWithoutProperties;

@@ -1,10 +1,10 @@
-// Module ID: 14964
-// Function ID: 14965
+// Module ID: 14979
+// Function ID: 14980
 // Name: QuestBottomSheetTaskSelect
-// Dependencies: [19, 5623, 21, 558, 576, 8544, 1126, 5993, 8739, 6074, 2]
+// Dependencies: [19, 5630, 21, 558, 576, 8577, 1126, 6000, 8771, 6081, 2]
 
-// Module 14964 (QuestBottomSheetTaskSelect)
-import QuestConstants from "QuestConstants" /* 5623 */;
+// Module 14979 (QuestBottomSheetTaskSelect)
+import QuestConstants from "QuestConstants" /* 5630 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -29,7 +29,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTaskSelect) => {
   const cResult = obj.c(11);
   onTaskSelect = onTaskSelect.onTaskSelect;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = closure_3(tmp(8544).ScreenIcon, {});
+    const tmp7 = closure_3(tmp(8577).ScreenIcon, {});
     const intl = tmp(1126).intl;
     const stringResult = intl.string(tmp(1126).t["QXc01+"]);
     cResult[0] = tmp7;
@@ -52,7 +52,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTaskSelect) => {
           return tmpResult;
         }
     };
-    const tmp11 = closure_3(tmp(5993).TableRow, obj2);
+    const tmp11 = closure_3(tmp(6000).TableRow, obj2);
     cResult[2] = onTaskSelect;
     cResult[3] = tmp11;
     tmp9 = tmp11;
@@ -60,7 +60,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTaskSelect) => {
     tmp9 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp15 = closure_3(tmp(8739).GameControllerIcon, {});
+    const tmp15 = closure_3(tmp(8771).GameControllerIcon, {});
     const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(tmp(1126).t["8lAfuB"]);
     cResult[4] = tmp15;
@@ -84,7 +84,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTaskSelect) => {
           return tmpResult;
         }
     };
-    const tmp19 = closure_3(tmp(5993).TableRow, obj3);
+    const tmp19 = closure_3(tmp(6000).TableRow, obj3);
     cResult[6] = onTaskSelect;
     cResult[7] = tmp19;
     tmp17 = tmp19;
@@ -100,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTaskSelect) => {
   }
   const obj4 = { hasIcons: true, children: items };
   items = [tmp9, tmp17];
-  const tmp21 = closure_4(tmp(6074).TableRowGroup, obj4);
+  const tmp21 = closure_4(tmp(6081).TableRowGroup, obj4);
   cResult[8] = tmp9;
   cResult[9] = tmp17;
   cResult[10] = tmp21;
@@ -111,10 +111,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTaskSelect) => {
   let items;
   onTaskSelect = onTaskSelect.onTaskSelect;
   const obj = { hasIcons: true, children: items };
-  const TableRowGroup = onTaskSelect(6074).TableRowGroup;
+  const TableRowGroup = onTaskSelect(6081).TableRowGroup;
   const obj2 = {
     arrow: true,
-    icon: closure_3(onTaskSelect(8544).ScreenIcon, {}),
+    icon: closure_3(onTaskSelect(8577).ScreenIcon, {}),
     label: intl.string(onTaskSelect(1126).t["QXc01+"]),
     onPress() {
       let tmpResult;
@@ -124,12 +124,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTaskSelect) => {
       return tmpResult;
     }
   };
-  const TableRow = onTaskSelect(5993).TableRow;
+  const TableRow = onTaskSelect(6000).TableRow;
   intl = onTaskSelect(1126).intl;
   items = [closure_3(TableRow, obj2), ];
   const obj3 = {
     arrow: true,
-    icon: closure_3(onTaskSelect(8739).GameControllerIcon, {}),
+    icon: closure_3(onTaskSelect(8771).GameControllerIcon, {}),
     label: intl2.string(onTaskSelect(1126).t["8lAfuB"]),
     onPress() {
       let tmpResult;
@@ -139,7 +139,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTaskSelect) => {
       return tmpResult;
     }
   };
-  const TableRow2 = onTaskSelect(5993).TableRow;
+  const TableRow2 = onTaskSelect(6000).TableRow;
   intl2 = onTaskSelect(1126).intl;
   items[1] = closure_3(TableRow2, obj3);
   return closure_4(TableRowGroup, obj);

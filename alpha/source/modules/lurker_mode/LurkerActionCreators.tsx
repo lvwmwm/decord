@@ -1,15 +1,15 @@
-// Module ID: 6825
-// Function ID: 6826
+// Module ID: 6835
+// Function ID: 6836
 // Name: LurkerActionCreators
-// Dependencies: [5, 4913, 4510, 1085, 584, 1282, 1375, 2]
+// Dependencies: [5, 4919, 4516, 1085, 584, 1282, 1375, 2]
 // Exports: stopLurking
 
-// Module 6825 (LurkerActionCreators)
+// Module 6835 (LurkerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
-import LurkingStore from "LurkingStore" /* 4510 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
+import LurkingStore from "LurkingStore" /* 4516 */;
 import size from "module_2" /* 2 */;
 
 let c0, c2, c3, closure_3, closure_4, length, lurkingSource, map;
@@ -206,7 +206,7 @@ obj = function _stopLurking() {
       tmp18 = null;
     }
     c0 = tmp18;
-    return "Set";
+    return "Reflect";
   });
   return obj(...arguments);
 };

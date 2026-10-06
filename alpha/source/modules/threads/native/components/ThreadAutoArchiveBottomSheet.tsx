@@ -1,12 +1,12 @@
-// Module ID: 16989
-// Function ID: 16990
+// Module ID: 17015
+// Function ID: 17016
 // Name: ThreadAutoArchiveBottomSheet
-// Dependencies: [19, 2058, 21, 558, 576, 8811, 6072, 1126, 6071, 2]
+// Dependencies: [19, 2058, 21, 558, 576, 8841, 6079, 1126, 6078, 2]
 
-// Module 16989 (ThreadAutoArchiveBottomSheet)
+// Module 17015 (ThreadAutoArchiveBottomSheet)
 import Fragment from "Fragment" /* 21 */;
 import ChannelConstants from "ChannelConstants" /* 2058 */;
-import TableRadioRow from "TableRadioRow" /* 6071 */;
+import TableRadioRow from "TableRadioRow" /* 6078 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -97,7 +97,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     tmp11 = cResult[14];
   }
   _require = tmp11;
-  const TableRadioGroup = tmp(6072).TableRadioGroup;
+  const TableRadioGroup = tmp(6079).TableRadioGroup;
   if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
     const stringResult = intl.string(require("intl").t.H4mGfI);
@@ -151,7 +151,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   const autoArchiveOptions = obj.getAutoArchiveOptions();
   _require = null != channel && channel.isForumPost() && channel.hasFlag(ChannelFlags.PINNED);
   const hasFlagResult = null != channel && channel.isForumPost() && channel.hasFlag(ChannelFlags.PINNED);
-  const TableRadioGroup = tmp(6072).TableRadioGroup;
+  const TableRadioGroup = tmp(6079).TableRadioGroup;
   const intl = tmp(1126).intl;
   return <TableRadioGroup value={selected} title={title} description={description} accessibilityLabel={intl.string(require("intl").t.H4mGfI)} onChange={onSelectDuration} hasIcons={false}>{autoArchiveOptions.map((value) => jsx(TableRadioRow.TableRadioRow, { value: value.value, disabled, label: value.label }, value.value))}</TableRadioGroup>;
 }));

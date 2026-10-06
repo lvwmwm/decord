@@ -1,18 +1,18 @@
-// Module ID: 12972
-// Function ID: 12973
+// Module ID: 12991
+// Function ID: 12992
 // Name: AvatarDecorationProductPreview
-// Dependencies: [19, 17, 21, 4890, 558, 576, 7849, 7842, 1126, 1188, 2]
+// Dependencies: [19, 17, 21, 4896, 558, 576, 7860, 7853, 1126, 1188, 2]
 
-// Module 12972 (AvatarDecorationProductPreview)
+// Module 12991 (AvatarDecorationProductPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1188 */;
-import useShopProductItems from "useShopProductItems" /* 7842 */;
-import useCurrentUser from "useCurrentUser" /* 7849 */;
+import useShopProductItems from "useShopProductItems" /* 7853 */;
+import useCurrentUser from "useCurrentUser" /* 7860 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

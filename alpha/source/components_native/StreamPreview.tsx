@@ -1,21 +1,21 @@
-// Module ID: 9743
-// Function ID: 9744
+// Module ID: 9756
+// Function ID: 9757
 // Name: StreamPreview
-// Dependencies: [19, 17, 1193, 21, 4890, 587, 4589, 4729, 9744, 9745, 1126, 5909, 558, 576, 9746, 504, 2]
+// Dependencies: [19, 17, 1193, 21, 4896, 587, 4595, 4735, 9757, 9758, 1126, 5916, 558, 576, 9759, 504, 2]
 
-// Module 9743 (StreamPreview)
+// Module 9756 (StreamPreview)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 4589 */;
-import shared from "shared" /* 4729 */;
-import Pressables from "Pressables" /* 5909 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 9746 */;
+import native from "native" /* 4595 */;
+import shared from "shared" /* 4735 */;
+import Pressables from "Pressables" /* 5916 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 9759 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1193 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -52,9 +52,9 @@ class DefaultFallback extends PureComponent {
     const tmp3 = React3;
     tmp4 = _false;
     if (obj3.isThemeDark(theme)) {
-      tmp6Result = tmp6(9744);
+      tmp6Result = tmp6(9757);
     } else {
-      tmp6Result = tmp6(9745);
+      tmp6Result = tmp6(9758);
     }
     return metroRequire(tmp3, obj);
   }
@@ -63,7 +63,7 @@ const prototype = DefaultFallback.prototype;
 DefaultFallback.contextType = native.ThemeContext;
 createStyles = createStyles_mod;
 let obj4 = { touchable: size, imageContainer: { flex: 1, backgroundColor: nativeDefault.unsafe_rawColors.BLACK }, image: { flex: 1 } };
-size = { flex: 1, width: "100%", height: "filter", aspectRatio: true, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
+size = { flex: 1, width: "100%", height: "__initData", aspectRatio: true, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 const createLegacyClassComponentStyles2 = createStyles.createLegacyClassComponentStyles;
 ({ flex: 1, backgroundColor: nativeDefault.unsafe_rawColors.BLACK });
 const authStore = createLegacyClassComponentStyles2(obj4);

@@ -1,13 +1,13 @@
-// Module ID: 9633
-// Function ID: 9634
+// Module ID: 9646
+// Function ID: 9647
 // Name: getStreamSettingsForPreset
-// Dependencies: [4937, 9634, 1369, 5028, 2]
+// Dependencies: [4943, 9647, 1369, 5034, 2]
 // Exports: canStreamWithPreset, getMaxSettingsForPreset
 
-// Module 9633 (getStreamSettingsForPreset)
+// Module 9646 (getStreamSettingsForPreset)
 import PlatformUtils from "PlatformUtils" /* 1369 */;
-import canStreamWithSettingsDefault from "canStreamWithSettings" /* 9634 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 4937 */;
+import canStreamWithSettingsDefault from "canStreamWithSettings" /* 9647 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 4943 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -50,7 +50,7 @@ function getStreamSettingsForPreset(arg0, user, guildPremiumTier, arg3) {
             let tmp26Result = tmp26(1369);
             if (tmp26Result.isDesktop()) {
               let str = "getStreamSettingsForPreset";
-              let tmp11 = tmp4(5028)("getStreamSettingsForPreset", user, arg3);
+              let tmp11 = tmp4(5034)("getStreamSettingsForPreset", user, arg3);
               let tmp12 = tmp11;
               let maxResolution;
               if (tmp11 != null) {

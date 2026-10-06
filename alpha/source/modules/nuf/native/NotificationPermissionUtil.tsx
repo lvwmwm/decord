@@ -1,21 +1,21 @@
-// Module ID: 12054
-// Function ID: 12055
+// Module ID: 12069
+// Function ID: 12070
 // Name: NotificationPermissionUtil
-// Dependencies: [32, 5, 19, 17, 12052, 12053, 1085, 5099, 7282, 8969, 1252, 12055, 12060, 558, 576, 12061, 504, 2]
+// Dependencies: [32, 5, 19, 17, 12067, 12068, 1085, 5105, 7295, 8998, 1252, 12070, 12075, 558, 576, 12076, 504, 2]
 // Exports: enableProvisionalPushNotification, requestPushNotificationPermission
 
-// Module 12054 (NotificationPermissionUtil)
+// Module 12069 (NotificationPermissionUtil)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 5099 */;
-import react_nativeDefault from "react-native" /* 7282 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12053 */;
-import RegionalTeenUtils from "RegionalTeenUtils" /* 12061 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 5105 */;
+import react_nativeDefault from "react-native" /* 7295 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12068 */;
+import RegionalTeenUtils from "RegionalTeenUtils" /* 12076 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12052 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12067 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

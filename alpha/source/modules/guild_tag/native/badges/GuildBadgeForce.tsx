@@ -1,13 +1,13 @@
-// Module ID: 13743
-// Function ID: 13744
+// Module ID: 13761
+// Function ID: 13762
 // Name: GuildBadgeForce
-// Dependencies: [109, 19, 21, 558, 576, 1266, 13730, 8136, 2]
+// Dependencies: [109, 19, 21, 558, 576, 1266, 13748, 8169, 2]
 
-// Module 13743 (GuildBadgeForce)
+// Module 13761 (GuildBadgeForce)
 import react2 from "react" /* 576 */;
 import v1 from "v1" /* 1266 */;
-import inlineStyles from "inlineStyles" /* 8136 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 13730 */;
+import inlineStyles from "inlineStyles" /* 8169 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 13748 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -342,7 +342,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const obj16 = { width: num7, height: num8, viewBox: "0 0 16 16", fill: "none", children: items };
-        const Svg = tmp(8136).Svg;
+        const Svg = tmp(8169).Svg;
         const merged = Object.assign(tmp5);
         items = [tmp18, tmp21, tmp24, tmp27, tmp30, tmp33, tmp36, tmp39, tmp42, tmp45, tmp48, tmp51, tmp54, tmp57, tmp61, tmp64, tmp67, tmp70, tmp73, tmp76, tmp79];
         const tmp88 = metroRequire(Svg, obj16);
@@ -371,9 +371,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp80 = tmp17;
     if (tmp80) {
       const obj17 = { children: metroRequire(RadialGradient, obj18) };
-      const Defs = tmp(8136).Defs;
+      const Defs = tmp(8169).Defs;
       obj18 = { id: combined, cx: 0.75, cy: 0.5, r: 1, fx: 0.75, fy: 0.5, children: items1 };
-      RadialGradient = tmp(8136).RadialGradient;
+      RadialGradient = tmp(8169).RadialGradient;
       const obj19 = { stopColor: primaryColorsTransformed[1], offset: "30%" };
       items1 = [hasOwnProperty(inlineStyles.Stop, obj19), ];
       const obj20 = { stopColor: secondaryColorsTransformed[1], offset: "70%" };
@@ -430,7 +430,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp9Result = num2 > 0;
   }
   const obj3 = { width: num, height: num2, viewBox: "0 0 16 16", fill: "none", children: items };
-  const Svg = tmp3(8136).Svg;
+  const Svg = tmp3(8169).Svg;
   const merged1 = Object.assign(merged);
   items = [hasOwnProperty(inlineStyles.Path, { d: "M7 0H4v1h3V0ZM11 1H7v1h4V1ZM9 6H8v4h1V6ZM1 5H0v6h1V5ZM15 2h-4v1h4V2Z", fill: "#000" }), , , , , , , , , , , , , , , , , , , , ];
   const obj4 = { d: "M7 1H4v1h3V1ZM11 2H7v1h4V2Z", fill: secondaryColorsTransformed[2] };
@@ -455,7 +455,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items[12] = hasOwnProperty(inlineStyles.Path, obj11);
   const obj12 = { d: "M6 2H5v1h1V2ZM9 4H8v2h1V4ZM10 3H9v1h1V3ZM5 11H4v1h1v-1ZM4 13H3v1h1v-1ZM3 11H2v2h1v-2ZM8 13v-1H7v-1H6v2h1v1h4v-1H8ZM9 10H8v1h1v-1Z", fill: secondaryColorsTransformed[0] };
   items[13] = hasOwnProperty(inlineStyles.Path, obj12);
-  const Path = tmp3(8136).Path;
+  const Path = tmp3(8169).Path;
   if (tmp9Result) {
     const _HermesInternal = HermesInternal;
     combined = "url(#" + memo + ")";
@@ -474,9 +474,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items[19] = hasOwnProperty(inlineStyles.Path, { d: "M10 4H9v2h1V4ZM7 13H6v1h1v-1ZM6 11H5v2h1v-2ZM11 12h-1v1h1v-1ZM10 10H9v2h1v-2Z", fill: "#000" });
   if (tmp9Result) {
     const obj17 = { children: metroRequire(RadialGradient, obj18) };
-    const Defs = tmp3(8136).Defs;
+    const Defs = tmp3(8169).Defs;
     obj18 = { id: memo, cx: 0.75, cy: 0.5, r: 1, fx: 0.75, fy: 0.5, children: items1 };
-    RadialGradient = tmp3(8136).RadialGradient;
+    RadialGradient = tmp3(8169).RadialGradient;
     const obj19 = { stopColor: primaryColorsTransformed[1], offset: "30%" };
     items1 = [hasOwnProperty(inlineStyles.Stop, obj19), ];
     const obj20 = { stopColor: secondaryColorsTransformed[1], offset: "70%" };

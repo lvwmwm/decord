@@ -1,21 +1,21 @@
-// Module ID: 11166
-// Function ID: 11167
+// Module ID: 11179
+// Function ID: 11180
 // Name: ChannelsAndRolesModal
-// Dependencies: [32, 19, 17, 2074, 6596, 21, 4890, 587, 558, 576, 573, 6838, 1126, 9282, 9283, 11167, 11173, 10661, 2]
+// Dependencies: [32, 19, 17, 2074, 6603, 21, 4896, 587, 558, 576, 573, 6848, 1126, 9317, 9318, 11180, 11186, 10674, 2]
 
-// Module 11166 (ChannelsAndRolesModal)
+// Module 11179 (ChannelsAndRolesModal)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6596 */;
-import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 6838 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10661 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6603 */;
+import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 6848 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10674 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2074 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -241,7 +241,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }
   const tmpResult = guildId(573);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  const tmp9 = defaultTab(6838)(stateFromStores);
+  const tmp9 = defaultTab(6848)(stateFromStores);
   const tmp8 = defaultTab;
   if (cResult[3] !== tmp9) {
     let stringResult;
@@ -272,7 +272,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       return tmp13;
     }
     const obj2 = { screenKey: "channelAndRolesModal", title: tmp10, render: tmp12 };
-    const tmp15 = closure_8(tmp8(10661), obj2);
+    const tmp15 = closure_8(tmp8(10674), obj2);
     cResult[8] = tmp10;
     cResult[9] = tmp12;
     cResult[10] = tmp15;

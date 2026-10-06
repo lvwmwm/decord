@@ -1,21 +1,21 @@
-// Module ID: 8299
-// Function ID: 8300
+// Module ID: 8332
+// Function ID: 8333
 // Name: InAppReportsShieldElement
-// Dependencies: [19, 17, 21, 4890, 558, 576, 8097, 2]
+// Dependencies: [19, 17, 21, 4896, 558, 576, 8130, 2]
 
-// Module 8299 (InAppReportsShieldElement)
+// Module 8332 (InAppReportsShieldElement)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let element;
 
 let tmp;
-const ShieldSpotIllustration = tmp(8097);
+const ShieldSpotIllustration = tmp(8130);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ container: { flex: 0, alignSelf: "center", marginBottom: 16 } });

@@ -1,16 +1,16 @@
-// Module ID: 13003
-// Function ID: 13004
+// Module ID: 13022
+// Function ID: 13023
 // Name: useAvatarDecorationSections
-// Dependencies: [32, 19, 7053, 7068, 558, 576, 573, 7065, 1126, 13004, 2]
+// Dependencies: [32, 19, 7066, 7081, 558, 576, 573, 7078, 1126, 13023, 2]
 
-// Module 13003 (useAvatarDecorationSections)
+// Module 13022 (useAvatarDecorationSections)
 import react from "react" /* 19 */;
 import intl4 from "intl" /* 1126 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7065 */;
-import useRecommendedCollectiblesSectionsDefault from "useRecommendedCollectiblesSections" /* 13004 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7078 */;
+import useRecommendedCollectiblesSectionsDefault from "useRecommendedCollectiblesSections" /* 13023 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7053 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7068 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7066 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7081 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -152,7 +152,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp27 = obj4;
     }
   }
-  const tmp2Result4 = stateFromStores(7065);
+  const tmp2Result4 = stateFromStores(7078);
   const avatarDecorations = tmp2Result4.getAvatarDecorations(stateFromStores, tmp13);
   if (cResult[10] === tmp14) {
     let tmp18;
@@ -284,7 +284,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     items1[2] = obj4;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
-  return first(13004)(tmp5, obj.PREVIEW);
+  return first(13023)(tmp5, obj.PREVIEW);
 });
 let result = size.fileFinishedImporting("modules/collectibles/avatar_decorations/useAvatarDecorationSections.tsx");
 

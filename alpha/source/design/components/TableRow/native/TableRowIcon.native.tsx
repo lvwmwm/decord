@@ -1,17 +1,17 @@
-// Module ID: 5999
-// Function ID: 6000
+// Module ID: 6006
+// Function ID: 6007
 // Name: TableRowIcon
-// Dependencies: [109, 19, 17, 21, 4890, 587, 5596, 558, 576, 2]
+// Dependencies: [109, 19, 17, 21, 4896, 587, 5603, 558, 576, 2]
 
-// Module 5999 (TableRowIcon)
+// Module 6006 (TableRowIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Icon from "Icon" /* 5596 */;
+import Icon from "Icon" /* 5603 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -78,9 +78,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[6] !== str) {
       let REFRESH_SMALL_16;
       if ("default" === str) {
-        REFRESH_SMALL_16 = tmp(5596).IconSizes.MEDIUM;
+        REFRESH_SMALL_16 = tmp(5603).IconSizes.MEDIUM;
       } else {
-        REFRESH_SMALL_16 = tmp(5596).IconSizes.REFRESH_SMALL_16;
+        REFRESH_SMALL_16 = tmp(5603).IconSizes.REFRESH_SMALL_16;
       }
       cResult[6] = str;
       cResult[7] = REFRESH_SMALL_16;

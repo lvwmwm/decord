@@ -1,14 +1,14 @@
-// Module ID: 8565
-// Function ID: 8566
+// Module ID: 8599
+// Function ID: 8600
 // Name: GameAutocompleteActionCreators
-// Dependencies: [5, 5892, 1085, 5893, 5894, 584, 1282, 2]
+// Dependencies: [5, 5899, 1085, 5900, 5901, 584, 1282, 2]
 // Exports: fetchGameAutocomplete
 
-// Module 8565 (GameAutocompleteActionCreators)
+// Module 8599 (GameAutocompleteActionCreators)
 import Constants from "Constants" /* 1085 */;
-import GameAutocompleteTypes from "GameAutocompleteTypes" /* 5893 */;
+import GameAutocompleteTypes from "GameAutocompleteTypes" /* 5900 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 5892 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 5899 */;
 import size from "module_2" /* 2 */;
 
 let c7;
@@ -90,7 +90,7 @@ let obj = function _fetchGameAutocomplete() {
     if (closure_1 === undefined) {
       DEFAULT = GameAutocompleteTypes.GameAutocompleteProfile.DEFAULT;
     }
-    return "Set";
+    return "Reflect";
   });
   return obj(...arguments);
 };

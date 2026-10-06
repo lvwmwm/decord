@@ -1,10 +1,10 @@
-// Module ID: 11400
-// Function ID: 11401
+// Module ID: 11413
+// Function ID: 11414
 // Name: ApplyBuildOverrideUtils
-// Dependencies: [5, 502, 11401, 1282, 1366, 2]
+// Dependencies: [5, 502, 11414, 1282, 1366, 2]
 // Exports: applyPublicBuildOverride, applyStaffBuildOverride, clearBuildOverride, getPublicBuildOverrideLink
 
-// Module 11400 (ApplyBuildOverrideUtils)
+// Module 11413 (ApplyBuildOverrideUtils)
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import BuildOverrideUtils from "BuildOverrideUtils" /* 1366 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -207,11 +207,11 @@ obj = function _clearBuildOverride() {
     let c2;
     let c3;
     let closure_1;
-    let obj6;
+    let obj9;
     const HTTP = HTTPUtils.HTTP;
-    const obj4 = { url: obj6.getAPIEndpoint(closure_2_5), oldFormErrors: true, rejectWithError: false };
+    const obj4 = { url: obj9.getAPIEndpoint(closure_2_5), oldFormErrors: true, rejectWithError: false };
     const del = HTTP.del;
-    obj6 = BuildOverrideUtils;
+    obj9 = BuildOverrideUtils;
     const value = await del(obj4);
     await closure_129_2(value);
     return value;
@@ -268,7 +268,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
     }
   }
 });
-const f107553 = function() {
+const f107706 = function() {
   return closure_0(...arguments);
 };
 const result = size.fileFinishedImporting("modules/build_overrides/ApplyBuildOverrideUtils.tsx");

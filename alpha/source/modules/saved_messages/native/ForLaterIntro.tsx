@@ -1,21 +1,21 @@
-// Module ID: 13132
-// Function ID: 13133
+// Module ID: 13151
+// Function ID: 13152
 // Name: ForLaterIntro
-// Dependencies: [17, 6646, 21, 4890, 587, 558, 576, 7495, 13133, 13134, 1126, 4886, 13135, 11337, 4849, 6708, 2]
+// Dependencies: [17, 6653, 21, 4896, 587, 558, 576, 7506, 13152, 13153, 1126, 4892, 13154, 11350, 4855, 6715, 2]
 
-// Module 13132 (ForLaterIntro)
+// Module 13151 (ForLaterIntro)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import ClockIcon from "ClockIcon" /* 4849 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6646 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 7495 */;
-import BookmarkIcon from "BookmarkIcon" /* 11337 */;
-import _modDef13135 from "module_13135" /* 13135 */;
+import ClockIcon from "ClockIcon" /* 4855 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6653 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 7506 */;
+import BookmarkIcon from "BookmarkIcon" /* 11350 */;
+import _modDef13154 from "module_13154" /* 13154 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let size;
 let size1;
 let size2;
 let tmp8;
-const ChevronSmallRightIcon2 = tmp8(6708);
+const ChevronSmallRightIcon2 = tmp8(6715);
 ({ Image: c3, ScrollView: closure_4, View: hasOwnProperty } = react_native);
 const ACTION_SHEET_BORDER_RADIUS = ActionSheetConstants.ACTION_SHEET_BORDER_RADIUS;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -72,7 +72,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
   const tmp4 = closure_8();
   const tmp5 = type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER;
   ({ scrollView, pageContainer, container } = tmp4);
-  const tmp6 = importDefault(tmp5 ? 13133 : 13134);
+  const tmp6 = importDefault(tmp5 ? 13152 : 13153);
   if (cResult[0] === tmp4.upsellImage) {
     let tmp7;
     let tmp9;
@@ -216,17 +216,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
   const obj = { style: tmp.scrollView, contentContainerStyle: tmp.pageContainer, children: metroImportDefault(hasOwnProperty, obj2) };
   obj2 = { style: tmp.container, children: items };
   items = [, , ];
-  const obj3 = { source: importDefault(tmp4 ? 13133 : 13134), style: tmp.upsellImage };
+  const obj3 = { source: importDefault(tmp4 ? 13152 : 13153), style: tmp.upsellImage };
   items[0] = metroRequire(_false, obj3);
   const obj4 = { style: tmp.textContainer, children: items1 };
   const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: tmp.text, children: string(tmp4 ? t["5Iw19e"] : t["93WOd1"]) };
-  const Heading = tmp2(4886).Heading;
+  const Heading = tmp2(4892).Heading;
   const intl = tmp2(1126).intl;
   string = intl.string;
   t = tmp2(1126).t;
   items1 = [metroRequire(Heading, obj5), ];
   const obj6 = { variant: "text-sm/medium", color: "text-default", style: tmp.text, includeFontPadding: true, children: format(tmp10, obj7) };
-  const Text = tmp2(4886).Text;
+  const Text = tmp2(4892).Text;
   const intl2 = tmp2(1126).intl;
   format = intl2.format;
   const t2 = tmp2(1126).t;
@@ -263,7 +263,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => 
   const tmp4 = closure_8();
   const demo = tmp4.demo;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef13135 };
+    const obj2 = { uri: _modDef13154 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -280,7 +280,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => 
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(intl7.t.cqpybK) };
-    const Text = tmp(4886).Text;
+    const Text = tmp(4892).Text;
     intl = tmp(1126).intl;
     const tmp13 = metroRequire(Text, obj4);
     cResult[3] = tmp13;
@@ -290,7 +290,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => 
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { variant: "text-sm/normal", color: "text-default", children: intl2.string(intl7.t["h+KPxy"]) };
-    const Text2 = tmp(4886).Text;
+    const Text2 = tmp(4892).Text;
     intl2 = tmp(1126).intl;
     const tmp16 = metroRequire(Text2, obj5);
     cResult[4] = tmp16;
@@ -300,7 +300,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => 
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj6 = { variant: "text-sm/normal", color: "text-default", children: intl3.string(intl7.t["63EVpI"]) };
-    const Text3 = tmp(4886).Text;
+    const Text3 = tmp(4892).Text;
     intl3 = tmp(1126).intl;
     const tmp19 = metroRequire(Text3, obj6);
     cResult[5] = tmp19;
@@ -310,7 +310,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => 
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj7 = { variant: "text-sm/normal", color: "text-default", children: intl4.string(intl7.t["KT/TDX"]) };
-    const Text4 = tmp(4886).Text;
+    const Text4 = tmp(4892).Text;
     intl4 = tmp(1126).intl;
     const tmp22 = metroRequire(Text4, obj7);
     cResult[6] = tmp22;
@@ -447,8 +447,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => 
   const obj = { style: tmp.demo, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: items2 };
   const obj2 = { style: tmp.messages, children: items };
   items = [, ];
-  const obj3 = { source: { uri: _modDef13135 }, style: tmp.avatar };
-  ({ uri: _modDef13135 });
+  const obj3 = { source: { uri: _modDef13154 }, style: tmp.avatar };
+  ({ uri: _modDef13154 });
   items[0] = metroRequire(_false, obj3);
   const obj5 = { style: tmp.messageLines, children: items1 };
   const obj6 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(intl7.t.cqpybK) };
@@ -526,7 +526,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlighted) =
         let tmp16 = null;
         if (tmp4) {
           const obj3 = { size: "sm", color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
-          const ChevronSmallRightIcon = tmp(6708).ChevronSmallRightIcon;
+          const ChevronSmallRightIcon = tmp(6715).ChevronSmallRightIcon;
           tmp16 = metroRequire(ChevronSmallRightIcon, obj3);
         }
         cResult[8] = tmp4;

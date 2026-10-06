@@ -1,18 +1,18 @@
-// Module ID: 14577
-// Function ID: 14578
+// Module ID: 14593
+// Function ID: 14594
 // Name: TwoFASetupSuccess
-// Dependencies: [5, 32, 19, 17, 21, 4890, 587, 558, 576, 6086, 1126, 14566, 6437, 14578, 4886, 1188, 5594, 14567, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4896, 587, 558, 576, 6093, 1126, 14582, 6444, 14594, 4892, 1188, 5601, 14583, 2]
 
-// Module 14577 (TwoFASetupSuccess)
+// Module 14593 (TwoFASetupSuccess)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 6437 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 6444 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,10 +29,10 @@ let size;
 let tmp;
 const intl5 = tmp(1126);
 const native = tmp(1188);
-const Text_Text = tmp(4886);
-const components_Button_Button = tmp(5594);
-const TwoFASetupModal = tmp(14567);
-const AssetRegistry = tmp(14578);
+const Text_Text = tmp(4892);
+const components_Button_Button = tmp(5601);
+const TwoFASetupModal = tmp(14583);
+const AssetRegistry = tmp(14594);
 ({ View: metroRequire, Image: metroImportDefault } = react_native);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let createStyles = createStyles_mod;
@@ -391,7 +391,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
         await "IconComponent";
         ({ ticket: c0, credential: c1 } = closure_0);
-        return "Set";
+        return "Reflect";
       });
       return obj(...arguments);
     };

@@ -1,19 +1,19 @@
-// Module ID: 15994
-// Function ID: 15995
+// Module ID: 16033
+// Function ID: 16034
 // Name: HappeningNowCardPlaceholder
-// Dependencies: [19, 17, 15114, 21, 4890, 587, 558, 576, 4612, 4891, 15115, 2]
+// Dependencies: [19, 17, 15129, 21, 4896, 587, 558, 576, 4618, 4897, 15130, 2]
 
-// Module 15994 (HappeningNowCardPlaceholder)
+// Module 16033 (HappeningNowCardPlaceholder)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15114 */;
-import HappeningNowCardDefault from "HappeningNowCard" /* 15115 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import timing from "timing" /* 4897 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15129 */;
+import HappeningNowCardDefault from "HappeningNowCard" /* 15130 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

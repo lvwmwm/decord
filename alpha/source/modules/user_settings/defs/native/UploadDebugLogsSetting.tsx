@@ -1,21 +1,21 @@
-// Module ID: 15363
-// Function ID: 15364
+// Module ID: 15378
+// Function ID: 15379
 // Name: UploadDebugLogsSetting
-// Dependencies: [5, 17, 1085, 21, 570, 1259, 558, 576, 1369, 12528, 4568, 4812, 1126, 11129, 2]
+// Dependencies: [5, 17, 1085, 21, 570, 1259, 558, 576, 1369, 12543, 4574, 4818, 1126, 11142, 2]
 
-// Module 15363 (UploadDebugLogsSetting)
+// Module 15378 (UploadDebugLogsSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4812 */;
-import DebugUploadManager from "DebugUploadManager" /* 12528 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4818 */;
+import DebugUploadManager from "DebugUploadManager" /* 12543 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 11142 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2;
@@ -136,7 +136,7 @@ const jsx = Fragment.jsx;
 let closure_7 = module_570.create(() => ({ isDisabled: false, isUploading: false }));
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const f70398 = () => {
+const f70461 = () => {
 
 };
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -145,7 +145,7 @@ ReactCompilerGating = ReactCompilerGating_mod;
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj = react;
   const cResult = obj.c(2);
-  if (typeof f70398 === "function") {
+  if (typeof f70461 === "function") {
     let tmp3;
     const isUploading = closure_7().isUploading;
     if (cResult[0] !== isUploading) {
@@ -164,7 +164,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     throw new TypeError("Trying to call a non-function");
   }
 }) : (() => {
-  if (typeof f70398 === "function") {
+  if (typeof f70461 === "function") {
     let tmp2 = null;
     if (closure_7().isUploading) {
       tmp2 = <ActivityIndicator />;

@@ -1,25 +1,25 @@
-// Module ID: 6429
-// Function ID: 6430
+// Module ID: 6436
+// Function ID: 6437
 // Name: Login
-// Dependencies: [5, 32, 19, 17, 6430, 502, 1085, 21, 4890, 558, 576, 4886, 5909, 5708, 1126, 1369, 6431, 6432, 1490, 504, 1493, 6082, 6434, 5709, 6435, 6436, 6437, 5312, 6438, 6442, 6443, 6445, 6439, 5594, 6446, 1615, 6448, 6450, 6098, 6456, 6458, 6460, 5593, 6467, 6428, 2]
+// Dependencies: [5, 32, 19, 17, 6437, 502, 1085, 21, 4896, 558, 576, 4892, 5916, 5715, 1126, 1369, 6438, 6439, 1490, 504, 1493, 6089, 6441, 5716, 6442, 6443, 6444, 5319, 6445, 6449, 6450, 6452, 6446, 5601, 6453, 1615, 6455, 6457, 6105, 6463, 6465, 6467, 5600, 6474, 6435, 2]
 // Exports: default
 
-// Module 6429 (Login)
+// Module 6436 (Login)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl11 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1369 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
-import Pressables from "Pressables" /* 5909 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5715 */;
+import Pressables from "Pressables" /* 5916 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PhoneStore from "PhoneStore" /* 6430 */;
+import PhoneStore from "PhoneStore" /* 6437 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -399,7 +399,7 @@ export default function Login(isMultiAccount) {
               authenticationErrorsFromV6OrEarlierAPIError = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

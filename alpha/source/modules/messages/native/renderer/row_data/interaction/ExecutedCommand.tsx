@@ -1,22 +1,22 @@
-// Module ID: 13027
-// Function ID: 13028
+// Module ID: 13046
+// Function ID: 13047
 // Name: ExecutedCommand
-// Dependencies: [17, 1391, 2051, 1377, 1085, 1405, 1402, 5304, 11242, 587, 7030, 1985, 7620, 7622, 9000, 1126, 8794, 2]
+// Dependencies: [17, 1391, 2051, 1377, 1085, 1405, 1402, 5311, 11255, 587, 7043, 5126, 7631, 7633, 9033, 1126, 8826, 2]
 // Exports: createExecutedCommand
 
-// Module 13027 (ExecutedCommand)
+// Module 13046 (ExecutedCommand)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import Server from "Server" /* 1985 */;
-import useMessageAuthor from "useMessageAuthor" /* 5304 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7030 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7620 */;
-import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 7622 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 8794 */;
-import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 9000 */;
-import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 11242 */;
+import InteractionTypes from "InteractionTypes" /* 5126 */;
+import useMessageAuthor from "useMessageAuthor" /* 5311 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7043 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 7631 */;
+import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 7633 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 8826 */;
+import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 9033 */;
+import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 11255 */;
 import UserRecord from "UserRecord" /* 1391 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import UserStore from "UserStore" /* 1377 */;
@@ -92,7 +92,7 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
       type = initialInteractionMetadata.type;
     }
     let tmp25 = null;
-    if (type === Server.InteractionTypes.APPLICATION_COMMAND) {
+    if (type === InteractionTypes.InteractionTypes.APPLICATION_COMMAND) {
       tmp25 = null;
       if (null != initialInteractionMetadata.target_user) {
         const self = this;

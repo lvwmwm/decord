@@ -1,12 +1,12 @@
-// Module ID: 8597
-// Function ID: 8598
+// Module ID: 8632
+// Function ID: 8633
 // Name: resolvedValues
-// Dependencies: [8598, 8599, 2]
+// Dependencies: [8633, 8634, 2]
 // Exports: bindResolveFieldValue
 
-// Module 8597 (resolvedValues)
-import ApplicationWidgetFieldPresentationType from "ApplicationWidgetFieldPresentationType" /* 8598 */;
-import ApplicationWidgetFieldValueType from "ApplicationWidgetFieldValueType" /* 8599 */;
+// Module 8632 (resolvedValues)
+import ApplicationWidgetFieldPresentationType from "ApplicationWidgetFieldPresentationType" /* 8633 */;
+import ApplicationWidgetFieldValueType from "ApplicationWidgetFieldValueType" /* 8634 */;
 import size_mod from "module_2" /* 2 */;
 
 function resolveFieldValue(image, items, applicationAssets) {

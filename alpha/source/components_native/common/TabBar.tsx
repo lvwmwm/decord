@@ -1,10 +1,10 @@
-// Module ID: 9980
-// Function ID: 9981
+// Module ID: 9993
+// Function ID: 9994
 // Name: TabBar
-// Dependencies: [32, 19, 17, 1085, 21, 4890, 587, 558, 576, 6140, 1126, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 4896, 587, 558, 576, 6147, 1126, 2]
 // Exports: default
 
-// Module 9980 (TabBar)
+// Module 9993 (TabBar)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,7 +12,7 @@ import Constants from "Constants" /* 1085 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -149,16 +149,16 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tabStyleSelected;
   let tmp3;
   let tmp4;
-  const f102267 = () => false;
+  const f102419 = () => false;
   index = index.index;
   ({ isSelected, onSelect } = index);
   ({ children, tabStyle, tabStyleActive, tabStyleSelected } = index);
   const tmp = closure_9();
-  [tmp3, tmp4] = react.useState(f102267);
+  [tmp3, tmp4] = react.useState(f102419);
   let c2 = tmp4;
   const items = [tmp4];
   const items1 = [tmp4];
-  _slicedToArray(react.useState(f102267), 2);
+  _slicedToArray(react.useState(f102419), 2);
   const callback = react.useCallback(() => _undefined(true), items);
   const items2 = [onSelect, index];
   const callback1 = react.useCallback(() => _undefined(false), items1);

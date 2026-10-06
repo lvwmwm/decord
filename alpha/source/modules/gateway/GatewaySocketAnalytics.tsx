@@ -1,10 +1,10 @@
-// Module ID: 13454
-// Function ID: 13455
+// Module ID: 13470
+// Function ID: 13471
 // Name: GatewaySocketAnalytics
 // Dependencies: [109, 1377, 1085, 10, 9, 1252, 2]
 // Exports: createResumeAnalytics, getConnectionPath, getReadyPayloadByteSizeAnalytics, logGatewayConnected, logReadyPayloadReceived, logResumeAnalytics, reportDevtoolsEvent
 
-// Module 13454 (GatewaySocketAnalytics)
+// Module 13470 (GatewaySocketAnalytics)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -400,13 +400,12 @@ export const getReadyPayloadByteSizeAnalytics = function getReadyPayloadByteSize
   }
 };
 export const logGatewayConnected = function logGatewayConnected(gatewayUrl) {
-  let altGateway;
   let now;
   let socket;
-  ({ socket, altGateway, now } = gatewayUrl);
+  ({ socket, now } = gatewayUrl);
   gatewayUrl = gatewayUrl.gatewayUrl;
   const obj = AnalyticsUtilsDefault;
-  const obj2 = { num_failed_connect_attempts: socket.failedConnectAttempts, gateway_url: gatewayUrl, assigned_to_alt_gateway: altGateway.isAssignedToAltGateway(), did_fall_back_from_alt_gateway: altGateway.getDidFallBack(), is_reconnect: socket.hasConnectedOnce, is_fast_connect: socket.isFastConnect, duration_ms_since_first_connect_attempt: now - socket.firstConnectAttemptStartTime, duration_ms_since_connect_attempt_start: now - socket.connectionStartTime };
+  const obj2 = { num_failed_connect_attempts: socket.failedConnectAttempts, gateway_url: gatewayUrl, is_reconnect: socket.hasConnectedOnce, is_fast_connect: socket.isFastConnect, duration_ms_since_first_connect_attempt: now - socket.firstConnectAttemptStartTime, duration_ms_since_connect_attempt_start: now - socket.connectionStartTime };
   obj.track(metroImportDefault.GATEWAY_CONNECTED, obj2, { logEventProperties: true });
 };
 export const createResumeAnalytics = function createResumeAnalytics(arg0) {

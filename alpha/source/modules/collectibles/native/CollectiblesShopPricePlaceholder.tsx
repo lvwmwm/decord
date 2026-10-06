@@ -1,15 +1,15 @@
-// Module ID: 8523
-// Function ID: 8524
+// Module ID: 8556
+// Function ID: 8557
 // Name: CollectiblesShopPricePlaceholder
-// Dependencies: [19, 21, 4890, 587, 558, 576, 4612, 4891, 2]
+// Dependencies: [19, 21, 4896, 587, 558, 576, 4618, 4897, 2]
 
-// Module 8523 (CollectiblesShopPricePlaceholder)
+// Module 8556 (CollectiblesShopPricePlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import timing from "timing" /* 4897 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   const cResult = obj.c(7);
   style = style.style;
   const tmp4 = closure_5();
-  const obj2 = sharedValue(4612);
+  const obj2 = sharedValue(4618);
   sharedValue = obj2.useSharedValue(0.3);
   if (cResult[0] !== sharedValue) {
     const fn = function n() {
@@ -60,7 +60,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   fn2.__closure = { opacity: sharedValue };
   fn2.__workletHash = 10107093534072;
   fn2.__initData = __initData;
-  const tmpResult = tmp(4612);
+  const tmpResult = tmp(4618);
   const animatedStyle = tmpResult.useAnimatedStyle(fn2);
   if (cResult[3] === animatedStyle) {
     if (cResult[4] === style) {
@@ -82,7 +82,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   let sharedValue;
   style = style.style;
   const tmp = closure_5();
-  let obj = sharedValue(4612);
+  let obj = sharedValue(4618);
   sharedValue = obj.useSharedValue(0.3);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
@@ -99,7 +99,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 5265836727291;
   fn.__initData = __initData2;
-  const obj2 = sharedValue(4612);
+  const obj2 = sharedValue(4618);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const items1 = [tmp.skeletonContainer, style, animatedStyle];
   return jsx(ReanimatedRexportDefault.View, { style: items1 });

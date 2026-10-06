@@ -1,15 +1,15 @@
-// Module ID: 7679
-// Function ID: 7680
+// Module ID: 7690
+// Function ID: 7691
 // Name: ApplicationCommandSourceSystemMessage
-// Dependencies: [1085, 5789, 7680, 7619, 1126, 7621, 7623, 2]
+// Dependencies: [1085, 5796, 7691, 7630, 1126, 7632, 7634, 2]
 // Exports: createApplicationCommandSourceSystemMessage
 
-// Module 7679 (ApplicationCommandSourceSystemMessage)
+// Module 7690 (ApplicationCommandSourceSystemMessage)
 import Constants from "Constants" /* 1085 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5789 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7619 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7621 */;
-import _slicedToArray from "_slicedToArray" /* 7680 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5796 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7630 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7632 */;
+import _slicedToArray from "_slicedToArray" /* 7691 */;
 import size from "module_2" /* 2 */;
 
 const MessageTypes = Constants.MessageTypes;
@@ -45,7 +45,7 @@ export const createApplicationCommandSourceSystemMessage = function createApplic
         name2 = applicationCommand.name;
       }
       const obj4 = { content: formatToParts(prop, obj2) };
-      const merged = Object.assign(tmp10(7623)(message));
+      const merged = Object.assign(tmp10(7634)(message));
       return obj4;
     }
   }

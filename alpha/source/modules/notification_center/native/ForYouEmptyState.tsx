@@ -1,17 +1,17 @@
-// Module ID: 16388
-// Function ID: 16389
+// Module ID: 16428
+// Function ID: 16429
 // Name: ForYouEmptyState
-// Dependencies: [19, 17, 21, 4890, 558, 576, 16389, 1126, 4886, 2]
+// Dependencies: [19, 17, 21, 4896, 558, 576, 16429, 1126, 4892, 2]
 
-// Module 16388 (ForYouEmptyState)
+// Module 16428 (ForYouEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import MailboxSpotIllustration from "MailboxSpotIllustration" /* 16389 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import MailboxSpotIllustration from "MailboxSpotIllustration" /* 16429 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

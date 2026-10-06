@@ -1,10 +1,10 @@
 // Module ID: 10323
 // Function ID: 10324
-// Dependencies: [41, 42, 93, 95, 98, 10185, 10317]
+// Dependencies: [41, 42, 93, 95, 98, 10198, 10181]
 
 // Module 10323
-import now2 from "now" /* 10185 */;
-import _mod10317 from "module_10317" /* 10317 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10181 */;
+import now2 from "now" /* 10198 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import map from "_possibleConstructorReturn" /* 93 */;
@@ -124,12 +124,12 @@ if (!fn) {
   };
 }
 const now = fn(now2);
-class UKCasualDateParser {
+class ESCasualDateParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, UKCasualDateParser);
-    const obj = _getPrototypeOf(UKCasualDateParser);
+    _classCallCheck(this, ESCasualDateParser);
+    const obj = _getPrototypeOf(ESCasualDateParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = map;
     if (_isNativeReflectConstruct()) {
@@ -141,11 +141,11 @@ class UKCasualDateParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(UKCasualDateParser, _mod10317.AbstractParserWithLeftRightBoundaryChecking);
+_inherits(ESCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPatternString",
-  value: function innerPatternString(arg0) {
-    return "(?:\u0437|\u0456\u0437|\u0432\u0456\u0434)?\\s*(\u0441\u044C\u043E\u0433\u043E\u0434\u043D\u0456|\u0432\u0447\u043E\u0440\u0430|\u0437\u0430\u0432\u0442\u0440\u0430|\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430|\u043F\u0456\u0441\u043B\u044F\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430|\u043F\u043E\u0437\u0430\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430|\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430)";
+  key: "innerPattern",
+  value: function innerPattern(arg0) {
+    return /(ahora|hoy|mañana|ayer)(?=\W|$)/i;
   }
 };
 let items = [
@@ -153,22 +153,16 @@ let items = [
   {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      const str = arg1[1];
+      const str = arg1[0];
       const formatted = str.toLowerCase();
-      if ("\u0441\u044C\u043E\u0433\u043E\u0434\u043D\u0456" === formatted) {
+      if ("ahora" === formatted) {
+        return now.now(reference.reference);
+      } else if ("hoy" === formatted) {
         return now.today(reference.reference);
-      } else if ("\u0432\u0447\u043E\u0440\u0430" === formatted) {
-        return now.yesterday(reference.reference);
-      } else if ("\u0437\u0430\u0432\u0442\u0440\u0430" === formatted) {
+      } else if ("ma\u00F1ana" === formatted) {
         return now.tomorrow(reference.reference);
-      } else if ("\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430" === formatted) {
-        return now.theDayAfter(reference.reference, 2);
-      } else if ("\u043F\u0456\u0441\u043B\u044F\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430" === formatted) {
-        return now.theDayAfter(reference.reference, 3);
-      } else if ("\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430" === formatted) {
-        return now.theDayBefore(reference.reference, 2);
-      } else if ("\u043F\u043E\u0437\u0430\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430" === formatted) {
-        return now.theDayBefore(reference.reference, 3);
+      } else if ("ayer" === formatted) {
+        return now.yesterday(reference.reference);
       } else {
         return tmp2;
       }
@@ -176,4 +170,4 @@ let items = [
   }
 ];
 
-export default _createClass(UKCasualDateParser, items);
+export default _createClass(ESCasualDateParser, items);

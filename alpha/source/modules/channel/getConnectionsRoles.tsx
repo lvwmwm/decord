@@ -1,10 +1,10 @@
-// Module ID: 6680
-// Function ID: 6681
+// Module ID: 6687
+// Function ID: 6688
 // Name: getConnectionsRoles
 // Dependencies: [2106, 2074, 1085, 1097, 2]
 // Exports: default
 
-// Module 6680 (getConnectionsRoles)
+// Module 6687 (getConnectionsRoles)
 import GuildRoleStore from "GuildRoleStore" /* 2106 */;
 import GuildStore from "GuildStore" /* 2074 */;
 import Constants from "Constants" /* 1085 */;

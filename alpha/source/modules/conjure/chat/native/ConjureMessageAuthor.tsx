@@ -1,23 +1,23 @@
-// Module ID: 16657
-// Function ID: 16658
+// Module ID: 16673
+// Function ID: 16674
 // Name: ConjureMessageAuthor
-// Dependencies: [19, 17, 1377, 21, 4890, 587, 16654, 558, 576, 16658, 504, 16659, 4886, 5909, 1126, 4722, 16660, 3723, 1188, 5890, 2]
+// Dependencies: [19, 17, 1377, 21, 4896, 587, 16670, 558, 576, 16674, 504, 16675, 4892, 5916, 1126, 4728, 16676, 3753, 1188, 5897, 2]
 
-// Module 16657 (ConjureMessageAuthor)
+// Module 16673 (ConjureMessageAuthor)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef3723 from "module_3723" /* 3723 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 16654 */;
-import conjureMessageAuthors from "conjureMessageAuthors" /* 16658 */;
-import ConjureMessageTime from "ConjureMessageTime" /* 16659 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 16660 */;
+import _modDef3753 from "module_3753" /* 3753 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 16670 */;
+import conjureMessageAuthors from "conjureMessageAuthors" /* 16674 */;
+import ConjureMessageTime from "ConjureMessageTime" /* 16675 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 16676 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let metroRequire;
 let obj2;
 let size;
 let tmp;
-const AppsIcon2 = tmp(5890);
+const AppsIcon2 = tmp(5897);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -180,7 +180,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             let tmp14 = null;
             if (null != tmp5) {
               const obj3 = { variant: "text-xs/medium", color: "text-muted", style: tmp4.time, children: tmp5 };
-              tmp14 = metroRequire(tmp(4886).Text, obj3);
+              tmp14 = metroRequire(tmp(4892).Text, obj3);
             }
             cResult[11] = tmp4.time;
             cResult[12] = tmp5;
@@ -192,7 +192,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp11 = tmp7;
       if (null != onPressName) {
         const obj4 = { style: tmp4.name, onPress: onPressName, onLongPress: onPressName, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(intl2.t.uCenkh, obj5), children: tmp7 };
-        const PressableOpacity = tmp(5909).PressableOpacity;
+        const PressableOpacity = tmp(5916).PressableOpacity;
         intl = tmp(1126).intl;
         obj5 = { username: name };
         tmp11 = metroRequire(PressableOpacity, obj4);
@@ -233,7 +233,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp8 = View;
   if (null != onPressName) {
     const obj4 = { style: tmp.name, onPress: onPressName, onLongPress: onPressName, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(intl2.t.uCenkh, obj5), children: tmp6 };
-    const PressableOpacity = tmp2(5909).PressableOpacity;
+    const PressableOpacity = tmp2(5916).PressableOpacity;
     intl = tmp2(1126).intl;
     obj5 = { username: name };
     tmp5Result = tmp5(PressableOpacity, obj4);
@@ -242,7 +242,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp5Result2 = null;
   if (null != describeMessageTimeResult) {
     const obj6 = { variant: "text-xs/medium", color: "text-muted", style: tmp.time, children: describeMessageTimeResult };
-    tmp5Result2 = tmp5(tmp2(4886).Text, obj6);
+    tmp5Result2 = tmp5(tmp2(4892).Text, obj6);
   }
   items[1] = tmp5Result2;
   return tmp7(tmp8, obj3);
@@ -322,7 +322,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const at = arg0.at;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = intl2.intl;
-    const stringResult = intl.string(_modDef3723.uk6jhJ);
+    const stringResult = intl.string(_modDef3753.uk6jhJ);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -341,7 +341,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 }) : ((arg0) => {
   let at;
   let intl;
-  const obj = { name: intl.string(_modDef3723.uk6jhJ), color: "text-brand", at };
+  const obj = { name: intl.string(_modDef3753.uk6jhJ), color: "text-brand", at };
   at = arg0.at;
   intl = intl2.intl;
   return metroRequire(closure_10, obj);
@@ -398,13 +398,13 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp6 = tmp13;
       }
       const obj2 = { onPress: tmp5, onLongPress: tmp5, accessibilityRole: "button", accessibilityLabel: tmp8, children: tmp10 };
-      const tmp15 = closure_6(tmp(5909).PressableOpacity, obj2);
+      const tmp15 = closure_6(tmp(5916).PressableOpacity, obj2);
       cResult[6] = tmp5;
       cResult[7] = tmp10;
       cResult[8] = tmp15;
       tmp13 = tmp15;
     }
-    const obj3 = { size, user: tmp4, guildId: "r" };
+    const obj3 = { size, user: tmp4, guildId: "Array" };
     const tmp12 = closure_6(tmp(1188).Avatar, obj3);
     cResult[3] = size;
     cResult[4] = tmp4;
@@ -436,7 +436,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let obj = { onPress: callback, onLongPress: callback, accessibilityRole: "button", accessibilityLabel: intl.string(require("intl").t.iXAna6), children: closure_6(require("native").Avatar, obj2) };
     const PressableOpacity = require("Pressables").PressableOpacity;
     intl = require("intl").intl;
-    obj2 = { size: NORMAL, user: tmp3, guildId: "r" };
+    obj2 = { size: NORMAL, user: tmp3, guildId: "Array" };
     tmp5 = closure_6(PressableOpacity, obj);
   }
   return tmp5;

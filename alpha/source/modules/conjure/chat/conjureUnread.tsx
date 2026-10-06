@@ -1,19 +1,19 @@
-// Module ID: 16142
-// Function ID: 16143
+// Module ID: 16181
+// Function ID: 16182
 // Name: conjureUnread
-// Dependencies: [19, 1231, 4905, 5072, 584, 11, 16143, 558, 576, 12906, 504, 16144, 2]
+// Dependencies: [19, 1231, 4911, 5078, 584, 11, 16182, 558, 576, 12925, 504, 16183, 2]
 // Exports: ackConjureProject
 
-// Module 16142 (conjureUnread)
+// Module 16181 (conjureUnread)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ReadStateConstants from "ReadStateConstants" /* 5072 */;
-import conjureProjectMute from "conjureProjectMute" /* 12906 */;
-import VibegrationsReadStateFlags from "VibegrationsReadStateFlags" /* 16143 */;
+import ReadStateConstants from "ReadStateConstants" /* 5078 */;
+import conjureProjectMute from "conjureProjectMute" /* 12925 */;
+import VibegrationsReadStateFlags from "VibegrationsReadStateFlags" /* 16182 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ReadStateStore from "ReadStateStore" /* 4905 */;
+import ReadStateStore from "ReadStateStore" /* 4911 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ function unreadStatus(arg0, arg1, arg2) {
         const nonTimestampBits = obj.getNonTimestampBits(arg1);
         const tmp6 = require;
         if (nonTimestampBits & VibegrationsReadStateFlags.VibegrationsReadStateFlags.NEEDS_INPUT) {
-          FINISHED = tmp6(16143).VibegrationsReadStateFlags.NEEDS_INPUT;
+          FINISHED = tmp6(16182).VibegrationsReadStateFlags.NEEDS_INPUT;
         }
         tmp = FINISHED;
       }
@@ -77,11 +77,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               const obj2 = SnowflakeUtilsDefault;
               const nonTimestampBits = obj2.getNonTimestampBits(ackMessageIdResult);
               if (nonTimestampBits & VibegrationsReadStateFlags.VibegrationsReadStateFlags.NEEDS_INPUT) {
-                FINISHED = tmp7(16143).VibegrationsReadStateFlags.NEEDS_INPUT;
+                FINISHED = tmp7(16182).VibegrationsReadStateFlags.NEEDS_INPUT;
               }
               tmp10 = FINISHED;
             }
-            FINISHED = tmp7(16143).VibegrationsReadStateFlags.FINISHED;
+            FINISHED = tmp7(16182).VibegrationsReadStateFlags.FINISHED;
           }
         }
         tmp2 = tmp10;
@@ -121,11 +121,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const obj2 = SnowflakeUtilsDefault;
             const nonTimestampBits = obj2.getNonTimestampBits(ackMessageIdResult);
             if (nonTimestampBits & VibegrationsReadStateFlags.VibegrationsReadStateFlags.NEEDS_INPUT) {
-              FINISHED = tmp7(16143).VibegrationsReadStateFlags.NEEDS_INPUT;
+              FINISHED = tmp7(16182).VibegrationsReadStateFlags.NEEDS_INPUT;
             }
             tmp10 = FINISHED;
           }
-          FINISHED = tmp7(16143).VibegrationsReadStateFlags.FINISHED;
+          FINISHED = tmp7(16182).VibegrationsReadStateFlags.FINISHED;
         }
       }
       tmp2 = tmp10;
@@ -238,7 +238,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const tmp9 = stateFromStores(16144)();
+  const tmp9 = stateFromStores(16183)();
   dependencyMap = tmp9;
   if (cResult[4] === tmp9) {
     if (cResult[5] === arg0) {
@@ -287,7 +287,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmp2 = null != closure_0 && ReadStateStore.getMentionCount(tmp, ReadStateTypes.CONJURING_PROJECT) > 0;
     return tmp2;
   }, items1);
-  let tmp2 = stateFromStores(16144)();
+  let tmp2 = stateFromStores(16183)();
   dependencyMap = tmp2;
   const items2 = [arg0, stateFromStores, tmp2];
   const effect = react.useEffect(() => {

@@ -1,18 +1,18 @@
-// Module ID: 10588
-// Function ID: 10589
+// Module ID: 10601
+// Function ID: 10602
 // Name: LockedRecipientField
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1188, 4722, 4886, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 1188, 4728, 4892, 2]
 
-// Module 10588 (LockedRecipientField)
+// Module 10601 (LockedRecipientField)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1188 */;
-import UserUtilsDefault from "UserUtils" /* 4722 */;
-import Text_Text from "Text/Text" /* 4886 */;
+import UserUtilsDefault from "UserUtils" /* 4728 */;
+import Text_Text from "Text/Text" /* 4892 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

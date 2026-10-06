@@ -1,20 +1,20 @@
-// Module ID: 7983
-// Function ID: 7984
+// Module ID: 7993
+// Function ID: 7994
 // Name: common/Video
-// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 7984, 4589, 7933, 6534, 1126, 2]
+// Dependencies: [32, 19, 17, 21, 4896, 587, 558, 576, 7994, 4595, 7944, 6541, 1126, 2]
 // Exports: createVideoControls
 
-// Module 7983 (common/Video)
+// Module 7993 (common/Video)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 4589 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6534 */;
-import openMediaModal2 from "openMediaModal" /* 7933 */;
+import native from "native" /* 4595 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6541 */;
+import openMediaModal2 from "openMediaModal" /* 7944 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -72,7 +72,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   _require = tmp6;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(7984);
+    const tmpResult = tmp(7994);
     cResult[0] = tmpResult;
     let first = tmpResult;
   } else {
@@ -88,8 +88,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (tmp) {
           tmp2 = closure_1_7;
           str = "change";
-          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F138492 */ });
-          return () => { /* body not rendered: F138493 */ };
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F138699 */ });
+          return () => { /* body not rendered: F138700 */ };
         } else {
           return;
         }
@@ -108,8 +108,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (tmp) {
           tmp2 = closure_1_7;
           str = "change";
-          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F138492 */ });
-          return () => { /* body not rendered: F138493 */ };
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F138699 */ });
+          return () => { /* body not rendered: F138700 */ };
         } else {
           return;
         }
@@ -125,8 +125,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (tmp) {
           tmp2 = closure_1_7;
           str = "change";
-          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F138492 */ });
-          return () => { /* body not rendered: F138493 */ };
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F138699 */ });
+          return () => { /* body not rendered: F138700 */ };
         } else {
           return;
         }
@@ -141,8 +141,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (tmp) {
           tmp2 = closure_1_7;
           str = "change";
-          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F138492 */ });
-          return () => { /* body not rendered: F138493 */ };
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F138699 */ });
+          return () => { /* body not rendered: F138700 */ };
         } else {
           return;
         }
@@ -156,8 +156,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (tmp) {
           tmp2 = closure_1_7;
           str = "change";
-          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F138492 */ });
-          return () => { /* body not rendered: F138493 */ };
+          closure_0 = closure_1_7.addEventListener("change", () => { /* body not rendered: F138699 */ });
+          return () => { /* body not rendered: F138700 */ };
         } else {
           return;
         }
@@ -234,7 +234,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   dependencyMap = undefined;
   const httpEngine = paused.httpEngine;
-  const _default = pauseWhileAppInactive(7984).default;
+  const _default = pauseWhileAppInactive(7994).default;
   [first, dependencyMap] = react.useState("active" === closure_7.currentState);
   const items = [pauseWhileAppInactive];
   const effect = react.useEffect(() => {

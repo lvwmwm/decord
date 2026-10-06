@@ -1,40 +1,40 @@
-// Module ID: 11098
-// Function ID: 11099
+// Module ID: 11111
+// Function ID: 11112
 // Name: GiftCodeRedeemStart
-// Dependencies: [32, 19, 17, 11088, 1377, 5695, 1085, 21, 5310, 6727, 1126, 5075, 1980, 4890, 587, 558, 576, 1490, 504, 4722, 11099, 11100, 6663, 10778, 7065, 7842, 6660, 10742, 6657, 6681, 1252, 10532, 6841, 4886, 11104, 6667, 8453, 1188, 10824, 10998, 10999, 11105, 5594, 11097, 5093, 8389, 11091, 11109, 11110, 6619, 2]
+// Dependencies: [32, 19, 17, 11101, 1377, 5702, 1085, 21, 5317, 6741, 1126, 5081, 1980, 4896, 587, 558, 576, 1490, 504, 4728, 11112, 11113, 6670, 10791, 7078, 7853, 6667, 10755, 6664, 6688, 1252, 10545, 6851, 4892, 11117, 6674, 8486, 1188, 10837, 11011, 11012, 11118, 5601, 11110, 5099, 8422, 11104, 11122, 11123, 6626, 2]
 
-// Module 11098 (GiftCodeRedeemStart)
+// Module 11111 (GiftCodeRedeemStart)
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
 import native from "native" /* 1188 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
-import UserUtilsDefault from "UserUtils" /* 4722 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import merged5 from "merged5" /* 5075 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 5310 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import GameIcon from "GameIcon" /* 6667 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6727 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 6841 */;
-import ExperimentalGameControllerLinkIcon2 from "ExperimentalGameControllerLinkIcon" /* 8389 */;
-import BundleSampleV2Default from "BundleSampleV2" /* 8453 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10824 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10998 */;
-import NameplatePreview from "NameplatePreview" /* 10999 */;
-import actions_GiftCodeActionCreatorsDefault from "actions/GiftCodeActionCreators" /* 11091 */;
-import GiftCodeRedeemModal from "GiftCodeRedeemModal" /* 11097 */;
-import SlayerStorefrontGiftPreviewDefault from "SlayerStorefrontGiftPreview" /* 11104 */;
-import GiftBoxAnimationDefault from "GiftBoxAnimation" /* 11105 */;
+import UserUtilsDefault from "UserUtils" /* 4728 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import merged5 from "merged5" /* 5081 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5317 */;
+import components_Button_Button from "components/Button/Button" /* 5601 */;
+import GameIcon from "GameIcon" /* 6674 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6741 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 6851 */;
+import ExperimentalGameControllerLinkIcon2 from "ExperimentalGameControllerLinkIcon" /* 8422 */;
+import BundleSampleV2Default from "BundleSampleV2" /* 8486 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10837 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11011 */;
+import NameplatePreview from "NameplatePreview" /* 11012 */;
+import actions_GiftCodeActionCreatorsDefault from "actions/GiftCodeActionCreators" /* 11104 */;
+import GiftCodeRedeemModal from "GiftCodeRedeemModal" /* 11110 */;
+import SlayerStorefrontGiftPreviewDefault from "SlayerStorefrontGiftPreview" /* 11117 */;
+import GiftBoxAnimationDefault from "GiftBoxAnimation" /* 11118 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GiftCodeStore from "GiftCodeStore" /* 11088 */;
+import GiftCodeStore from "GiftCodeStore" /* 11101 */;
 import UserStore from "UserStore" /* 1377 */;
-import SKUStore from "SKUStore" /* 5695 */;
+import SKUStore from "SKUStore" /* 5702 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ let metroRequire;
 let obj2;
 let tmp;
 let unpackModuleId;
-const SocialLayerStorefrontActionCreators = tmp(10532);
+const SocialLayerStorefrontActionCreators = tmp(10545);
 function getGiftCodeHeaderText(isSubscription) {
   let P;
   let P2;
@@ -62,44 +62,44 @@ function getGiftCodeHeaderText(isSubscription) {
   let sku;
   let subscriptionGiftStartHeaderText;
   let subscriptionPlan;
-  const f106386 = () => {
+  const f106538 = () => {
     const intl = intl7.intl;
     const obj = { sender };
     return intl.formatToPlainString(intl7.t.JUV1tL, obj);
   };
-  const f106387 = () => {
+  const f106539 = () => {
     const intl = sender(dependencyMap[10]).intl;
     return intl.string(sender(dependencyMap[10]).t.iJ8823);
   };
-  const f106388 = () => {
+  const f106540 = () => {
     const intl = intl7.intl;
     const obj = { sender };
     return intl.formatToPlainString(intl7.t.SKduyh, obj);
   };
-  const f106389 = () => {
+  const f106541 = () => {
     const intl = intl7.intl;
     const obj = { sender };
     return intl.formatToPlainString(intl7.t["1w42T2"], obj);
   };
-  const f106390 = () => {
+  const f106542 = () => {
     const intl = intl7.intl;
     const obj = { sender };
     return intl.formatToPlainString(intl7.t.vFiQlU, obj);
   };
-  const f106391 = () => {
+  const f106543 = () => {
     const intl = intl7.intl;
     const obj = { sender };
     return intl.formatToPlainString(intl7.t["UH/EQL"], obj);
   };
-  const f106392 = () => {
+  const f106544 = () => {
     const intl = sender(dependencyMap[10]).intl;
     return intl.string(sender(dependencyMap[10]).t["2ZO6CC"]);
   };
-  const f106393 = () => {
+  const f106545 = () => {
     const intl = sender(dependencyMap[10]).intl;
     return intl.string(sender(dependencyMap[10]).t["2NxdjX"]);
   };
-  const f106394 = () => {
+  const f106546 = () => {
     const intl = sender(dependencyMap[10]).intl;
     return intl.string(sender(dependencyMap[10]).t.v7F232);
   };
@@ -108,8 +108,8 @@ function getGiftCodeHeaderText(isSubscription) {
   if (isSubscription.isSubscription) {
     if (null != subscriptionPlan) {
       let name;
-      const getSubscriptionGiftStartHeaderText = sender(5310).getSubscriptionGiftStartHeaderText;
-      sender(5310);
+      const getSubscriptionGiftStartHeaderText = sender(5317).getSubscriptionGiftStartHeaderText;
+      sender(5317);
       if (sku != null) {
         name = sku.name;
       }
@@ -117,48 +117,48 @@ function getGiftCodeHeaderText(isSubscription) {
     }
     return subscriptionGiftStartHeaderText;
   }
-  let obj = sender(6727);
+  let obj = sender(6741);
   if (obj.isGameItemSKU(sku)) {
     let intl = tmp2(1126).intl;
     subscriptionGiftStartHeaderText = intl.string(tmp2(1126).t["Bn1J+a"]);
   } else {
     const obj2 = { type: itemType, isBundle, sender };
-    const str = sender(5075);
+    const str = sender(5081);
     const match = str.match(obj2);
-    const obj3 = { isBundle: true, sender: P.not(sender(5075).P.nullish) };
+    const obj3 = { isBundle: true, sender: P.not(sender(5081).P.nullish) };
     const _with = match.with;
-    P = tmp2(5075).P;
-    const obj4 = { isBundle: true, sender: sender(5075).P.nullish };
-    const _with2 = _with(obj3, f106386).with;
-    _with(obj3, f106386);
-    const obj5 = { type: sender(1980).CollectiblesItemType.AVATAR_DECORATION, sender: P2.not(sender(5075).P.nullish) };
-    const _with3 = _with2(obj4, f106387).with;
-    _with2(obj4, f106387);
-    P2 = tmp2(5075).P;
-    const obj6 = { type: sender(1980).CollectiblesItemType.PROFILE_EFFECT, sender: P3.not(sender(5075).P.nullish) };
-    const _with4 = _with3(obj5, f106388).with;
-    _with3(obj5, f106388);
-    P3 = tmp2(5075).P;
-    const obj7 = { type: sender(1980).CollectiblesItemType.NAMEPLATE, sender: P4.not(sender(5075).P.nullish) };
-    const _with5 = _with4(obj6, f106389).with;
-    _with4(obj6, f106389);
-    P4 = tmp2(5075).P;
-    const obj8 = { type: sender(1980).CollectiblesItemType.PROFILE_FRAME, sender: P5.not(sender(5075).P.nullish) };
-    const _with6 = _with5(obj7, f106390).with;
-    _with5(obj7, f106390);
-    P5 = tmp2(5075).P;
-    const obj9 = { type: sender(1980).CollectiblesItemType.AVATAR_DECORATION, sender: sender(5075).P.nullish };
-    const _with7 = _with6(obj8, f106391).with;
-    _with6(obj8, f106391);
-    const obj10 = { type: sender(1980).CollectiblesItemType.PROFILE_EFFECT, sender: sender(5075).P.nullish };
-    const _with8 = _with7(obj9, f106392).with;
-    _with7(obj9, f106392);
-    const obj11 = { type: sender(1980).CollectiblesItemType.NAMEPLATE, sender: sender(5075).P.nullish };
-    const _with9 = _with8(obj10, f106393).with;
-    _with8(obj10, f106393);
-    const obj12 = { type: sender(1980).CollectiblesItemType.PROFILE_FRAME, sender: sender(5075).P.nullish };
-    const _with10 = _with9(obj11, f106394).with;
-    _with9(obj11, f106394);
+    P = tmp2(5081).P;
+    const obj4 = { isBundle: true, sender: sender(5081).P.nullish };
+    const _with2 = _with(obj3, f106538).with;
+    _with(obj3, f106538);
+    const obj5 = { type: sender(1980).CollectiblesItemType.AVATAR_DECORATION, sender: P2.not(sender(5081).P.nullish) };
+    const _with3 = _with2(obj4, f106539).with;
+    _with2(obj4, f106539);
+    P2 = tmp2(5081).P;
+    const obj6 = { type: sender(1980).CollectiblesItemType.PROFILE_EFFECT, sender: P3.not(sender(5081).P.nullish) };
+    const _with4 = _with3(obj5, f106540).with;
+    _with3(obj5, f106540);
+    P3 = tmp2(5081).P;
+    const obj7 = { type: sender(1980).CollectiblesItemType.NAMEPLATE, sender: P4.not(sender(5081).P.nullish) };
+    const _with5 = _with4(obj6, f106541).with;
+    _with4(obj6, f106541);
+    P4 = tmp2(5081).P;
+    const obj8 = { type: sender(1980).CollectiblesItemType.PROFILE_FRAME, sender: P5.not(sender(5081).P.nullish) };
+    const _with6 = _with5(obj7, f106542).with;
+    _with5(obj7, f106542);
+    P5 = tmp2(5081).P;
+    const obj9 = { type: sender(1980).CollectiblesItemType.AVATAR_DECORATION, sender: sender(5081).P.nullish };
+    const _with7 = _with6(obj8, f106543).with;
+    _with6(obj8, f106543);
+    const obj10 = { type: sender(1980).CollectiblesItemType.PROFILE_EFFECT, sender: sender(5081).P.nullish };
+    const _with8 = _with7(obj9, f106544).with;
+    _with7(obj9, f106544);
+    const obj11 = { type: sender(1980).CollectiblesItemType.NAMEPLATE, sender: sender(5081).P.nullish };
+    const _with9 = _with8(obj10, f106545).with;
+    _with8(obj10, f106545);
+    const obj12 = { type: sender(1980).CollectiblesItemType.PROFILE_FRAME, sender: sender(5081).P.nullish };
+    const _with10 = _with9(obj11, f106546).with;
+    _with9(obj11, f106546);
     const _with10Result = _with10(obj12, () => {
       const intl = sender(dependencyMap[10]).intl;
       return intl.string(sender(dependencyMap[10]).t["1+tgC0"]);

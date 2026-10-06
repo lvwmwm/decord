@@ -1,13 +1,13 @@
-// Module ID: 15616
-// Function ID: 15617
+// Module ID: 15630
+// Function ID: 15631
 // Name: BenchmarkResultsList
-// Dependencies: [19, 21, 558, 576, 5993, 15612, 6074, 2]
+// Dependencies: [19, 21, 558, 576, 6000, 15626, 6081, 2]
 
-// Module 15616 (BenchmarkResultsList)
+// Module 15630 (BenchmarkResultsList)
 import react2 from "react" /* 576 */;
-import TableRow3 from "TableRow" /* 5993 */;
-import TableRowGroup2 from "TableRowGroup" /* 6074 */;
-import startFrameMonitor from "startFrameMonitor" /* 15612 */;
+import TableRow3 from "TableRow" /* 6000 */;
+import TableRowGroup2 from "TableRowGroup" /* 6081 */;
+import startFrameMonitor from "startFrameMonitor" /* 15626 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

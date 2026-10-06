@@ -1,12 +1,12 @@
-// Module ID: 4943
-// Function ID: 4944
+// Module ID: 4949
+// Function ID: 4950
 // Name: VideoStreamStats
-// Dependencies: [4936, 1085, 2046, 4919, 2]
+// Dependencies: [4942, 1085, 2046, 4925, 2]
 
-// Module 4943 (VideoStreamStats)
+// Module 4949 (VideoStreamStats)
 import Constants from "Constants" /* 1085 */;
-import TimeUtils from "TimeUtils" /* 4919 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4936 */;
+import TimeUtils from "TimeUtils" /* 4925 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4942 */;
 import size from "module_2" /* 2 */;
 
 const StreamLayouts = Constants.StreamLayouts;

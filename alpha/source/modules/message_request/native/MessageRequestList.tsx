@@ -1,18 +1,18 @@
-// Module ID: 17055
-// Function ID: 17056
+// Module ID: 17081
+// Function ID: 17082
 // Name: MessageRequestList
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 1126, 558, 576, 4568, 4807, 4901, 5093, 12084, 1252, 17056, 1188, 4805, 5909, 14731, 8895, 1618, 17061, 17063, 12083, 17066, 4886, 1369, 2]
+// Dependencies: [19, 17, 1085, 21, 4896, 587, 1126, 558, 576, 4574, 4813, 4907, 5099, 12099, 1252, 17082, 1188, 4811, 5916, 14747, 8924, 1618, 17087, 17089, 12098, 17092, 4892, 1369, 2]
 
-// Module 17055 (MessageRequestList)
+// Module 17081 (MessageRequestList)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import transitionToChannel from "transitionToChannel" /* 4901 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import transitionToChannel from "transitionToChannel" /* 4907 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5099 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -801,7 +801,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
             tmp3 = closure_1_13;
             obj = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null, isRestricted: null };
             obj.messageRequest = item;
-            obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F147915 */ };
+            obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F148138 */ };
             obj.isLastRow = id === id1;
             tmp4 = closure_3;
             obj.hasSingleMessageRequest = closure_3;
@@ -863,7 +863,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
                     tmp3 = closure_1_13;
                     obj = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null, isRestricted: null };
                     obj.messageRequest = item;
-                    obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F147915 */ };
+                    obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F148138 */ };
                     obj.isLastRow = id === id1;
                     tmp4 = closure_3;
                     obj.hasSingleMessageRequest = closure_3;
@@ -911,7 +911,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
                   tmp3 = closure_1_13;
                   obj = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null, isRestricted: null };
                   obj.messageRequest = item;
-                  obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F147915 */ };
+                  obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F148138 */ };
                   obj.isLastRow = id === id1;
                   tmp4 = closure_3;
                   obj.hasSingleMessageRequest = closure_3;
@@ -963,7 +963,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
                     tmp3 = closure_1_13;
                     obj = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null, isRestricted: null };
                     obj.messageRequest = item;
-                    obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F147915 */ };
+                    obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F148138 */ };
                     obj.isLastRow = id === id1;
                     tmp4 = closure_3;
                     obj.hasSingleMessageRequest = closure_3;
@@ -1010,7 +1010,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
                       tmp3 = closure_1_13;
                       obj = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null, isRestricted: null };
                       obj.messageRequest = item;
-                      obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F147915 */ };
+                      obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F148138 */ };
                       obj.isLastRow = id === id1;
                       tmp4 = closure_3;
                       obj.hasSingleMessageRequest = closure_3;
@@ -1061,7 +1061,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
                       tmp3 = closure_1_13;
                       obj = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null, isRestricted: null };
                       obj.messageRequest = item;
-                      obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F147915 */ };
+                      obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F148138 */ };
                       obj.isLastRow = id === id1;
                       tmp4 = closure_3;
                       obj.hasSingleMessageRequest = closure_3;
@@ -1141,7 +1141,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
           tmp3 = closure_1_13;
           obj = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null, isRestricted: null };
           obj.messageRequest = item;
-          obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F147915 */ };
+          obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F148138 */ };
           obj.isLastRow = id === id1;
           tmp4 = closure_3;
           obj.hasSingleMessageRequest = closure_3;

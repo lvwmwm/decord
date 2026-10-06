@@ -1,13 +1,13 @@
-// Module ID: 9574
-// Function ID: 9575
+// Module ID: 9587
+// Function ID: 9588
 // Name: shouldShowEndStageModal
-// Dependencies: [502, 5575, 5578, 2056, 5582, 2]
+// Dependencies: [502, 5582, 5585, 2056, 5589, 2]
 // Exports: default
 
-// Module 9574 (shouldShowEndStageModal)
+// Module 9587 (shouldShowEndStageModal)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5575 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5578 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5582 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5585 */;
 import StageInstanceStore from "StageInstanceStore" /* 2056 */;
 import size from "module_2" /* 2 */;
 

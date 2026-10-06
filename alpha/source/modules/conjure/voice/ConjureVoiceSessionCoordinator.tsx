@@ -1,24 +1,24 @@
-// Module ID: 14299
-// Function ID: 14300
+// Module ID: 14317
+// Function ID: 14318
 // Name: ConjureVoiceSessionCoordinator
-// Dependencies: [14300, 8703, 502, 1999, 4913, 1377, 4909, 1085, 4915, 9026, 13639, 1266, 9306, 14301, 14302, 2]
+// Dependencies: [14318, 9000, 502, 1999, 4919, 1377, 4915, 1085, 4921, 9059, 13655, 1266, 8079, 14319, 14320, 2]
 
-// Module 14299 (ConjureVoiceSessionCoordinator)
+// Module 14317 (ConjureVoiceSessionCoordinator)
 import Constants2 from "Constants" /* 1085 */;
 import v1 from "v1" /* 1266 */;
-import RPCErrorDefault from "RPCError" /* 9026 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9306 */;
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 13639 */;
-import ConjureVoiceGeometry from "ConjureVoiceGeometry" /* 14301 */;
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 14302 */;
-import FrameVisibilityStore from "FrameVisibilityStore" /* 14300 */;
-import FramesStore from "FramesStore" /* 8703 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 8079 */;
+import RPCErrorDefault from "RPCError" /* 9059 */;
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 13655 */;
+import ConjureVoiceGeometry from "ConjureVoiceGeometry" /* 14319 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 14320 */;
+import FrameVisibilityStore from "FrameVisibilityStore" /* 14318 */;
+import FramesStore from "FramesStore" /* 9000 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
 import UserStore from "UserStore" /* 1377 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
-import Constants from "Constants" /* 4915 */;
+import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+import Constants from "Constants" /* 4921 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, set, user, user_id;

@@ -1,17 +1,17 @@
-// Module ID: 9296
-// Function ID: 9297
+// Module ID: 9331
+// Function ID: 9332
 // Name: DiscordTag
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4886, 8961, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 4892, 8990, 2]
 
-// Module 9296 (DiscordTag)
+// Module 9331 (DiscordTag)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import BotTagDefault from "BotTag" /* 8961 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import BotTagDefault from "BotTag" /* 8990 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -95,19 +95,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (null != nick) {
     const obj4 = { variant: "text-md/semibold", maxFontSizeMultiplier: 2, style: nicknameStyle, lineClamp: 1, children: nick };
-    tmp7Result2 = React3(tmp(4886).Text, obj4);
+    tmp7Result2 = React3(tmp(4892).Text, obj4);
   } else {
     tmp7Result2 = null;
     if (null != user) {
       const obj5 = { variant: "text-md/semibold", style: usernameStyle, lineClamp: 1, maxFontSizeMultiplier: 2, children: items1 };
-      const Text = tmp(4886).Text;
+      const Text = tmp(4892).Text;
       items1 = [user.toString(), ];
       let tmp7Result = !user.hasUniqueUsername();
       user.hasUniqueUsername();
       if (tmp7Result) {
         const obj6 = { variant: "text-md/semibold", color: "text-muted", style: discriminatorStyle, children: items2 };
         items2 = ["#", user.discriminator];
-        tmp7Result = tmp7(tmp(4886).Text, obj6);
+        tmp7Result = tmp7(tmp(4892).Text, obj6);
       }
       items1[1] = tmp7Result;
       tmp7Result2 = tmp7(Text, obj5);
@@ -154,7 +154,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (tmp2Result) {
         const obj4 = { variant: "text-md/semibold", color: "text-muted", style: discriminatorStyle, children: items1 };
         items1 = ["#", user.discriminator];
-        tmp2Result = tmp2(tmp4(4886).Text, obj4);
+        tmp2Result = tmp2(tmp4(4892).Text, obj4);
       }
       items[1] = tmp2Result;
       tmp2Result2 = tmp2(Text, obj3);

@@ -1,9 +1,9 @@
-// Module ID: 10710
-// Function ID: 10711
+// Module ID: 10723
+// Function ID: 10724
 // Name: useTrackFavoritesGuildAddModalOpened
 // Dependencies: [19, 1085, 558, 576, 1252, 2]
 
-// Module 10710 (useTrackFavoritesGuildAddModalOpened)
+// Module 10723 (useTrackFavoritesGuildAddModalOpened)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import react from "react" /* 19 */;

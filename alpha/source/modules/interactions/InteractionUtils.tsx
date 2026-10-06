@@ -1,19 +1,20 @@
-// Module ID: 7799
-// Function ID: 7800
+// Module ID: 7810
+// Function ID: 7811
 // Name: InteractionUtils
-// Dependencies: [5, 502, 7600, 1085, 11, 7261, 7800, 1985, 1282, 6965, 7801, 584, 5120, 2, 5117]
+// Dependencies: [5, 502, 7611, 1085, 11, 7274, 7811, 5126, 1282, 1985, 6978, 7812, 584, 5127, 2, 5123]
 // Exports: canRetryInteractionData, executeMessageComponentInteraction, getInteractionInitialResponseDeadlineTimestamp, getInteractionStatusViewState, getInteractionTimeoutTimestamp
 
-// Module 7799 (InteractionUtils)
+// Module 7810 (InteractionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Server from "Server" /* 1985 */;
-import interactionCallbackErrorReason from "interactionCallbackErrorReason" /* 5117 */;
-import InteractionActionCreators from "InteractionActionCreators" /* 7800 */;
-import _slicedToArray from "_slicedToArray" /* 7801 */;
+import interactionCallbackErrorReason from "interactionCallbackErrorReason" /* 5123 */;
+import InteractionTypes from "InteractionTypes" /* 5126 */;
+import InteractionActionCreators from "InteractionActionCreators" /* 7811 */;
+import _slicedToArray from "_slicedToArray" /* 7812 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import InteractionStore from "InteractionStore" /* 7600 */;
+import InteractionStore from "InteractionStore" /* 7611 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -90,7 +91,7 @@ let obj = function _executeMessageComponentInteraction() {
                     tmp2 = null != code;
                   }
                   if (tmp2) {
-                    obj = closure_1(message_flags[9]);
+                    obj = closure_1(message_flags[10]);
                     obj.sendClydeError(tmp, code);
                   }
                 }
@@ -130,7 +131,7 @@ let obj = function _executeMessageComponentInteraction() {
       }
       await "IconComponent";
       ({ componentType: c0, messageId: c1, messageFlags: c2, customId: c3, componentId: c4, applicationId: c5, channelId: c6, guildId: c7, localState: c8 } = closure_0);
-      return "Set";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -202,7 +203,7 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, guildId)
                   dispatch2(obj2);
                 }
                 let message;
-                const setFailed2 = tmp26(7800).setFailed;
+                const setFailed2 = tmp26(7811).setFailed;
                 InteractionActionCreators;
                 if (firstSkemaError != null) {
                   message = firstSkemaError.message;
@@ -323,7 +324,7 @@ export const getInteractionStatusViewState = function getInteractionStatusViewSt
   if (state2 != null) {
     interactionType = state2.data.interactionType;
   }
-  const tmp19 = interactionType === Server.InteractionTypes.APPLICATION_COMMAND;
+  const tmp19 = interactionType === InteractionTypes.InteractionTypes.APPLICATION_COMMAND;
   const isCommandTypeResult = state.isCommandType();
   if (!tmp19) {
     if (isCommandTypeResult) {

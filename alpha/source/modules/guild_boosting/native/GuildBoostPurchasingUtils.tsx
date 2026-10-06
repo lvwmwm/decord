@@ -1,12 +1,12 @@
-// Module ID: 6909
-// Function ID: 6910
+// Module ID: 6919
+// Function ID: 6920
 // Name: GuildBoostPurchasingUtils
-// Dependencies: [5, 4534, 1085, 1379, 5708, 1126, 1252, 5404, 6910, 6915, 6742, 6916, 6917, 4528, 2]
+// Dependencies: [5, 4540, 1085, 1379, 5715, 1126, 1252, 5411, 6920, 6925, 6926, 6927, 6928, 4534, 2]
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 6909 (GuildBoostPurchasingUtils)
+// Module 6919 (GuildBoostPurchasingUtils)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SubscriptionStore from "SubscriptionStore" /* 4534 */;
+import SubscriptionStore from "SubscriptionStore" /* 4540 */;
 import Constants from "Constants" /* 1085 */;
 import PremiumConstants from "PremiumConstants" /* 1379 */;
 import size from "module_2" /* 2 */;
@@ -87,7 +87,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
               mobileBoostingEnabled = undefined;
               onPaymentDismiss = 1;
               c6 = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else {
             if (1 === onPaymentDismiss) {

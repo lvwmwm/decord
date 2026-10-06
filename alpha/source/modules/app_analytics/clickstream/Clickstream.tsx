@@ -1,17 +1,17 @@
-// Module ID: 6974
-// Function ID: 6975
+// Module ID: 6987
+// Function ID: 6988
 // Name: Clickstream
-// Dependencies: [32, 502, 4913, 11, 6975, 1252, 6976, 2]
+// Dependencies: [32, 502, 4919, 11, 6988, 1252, 6989, 2]
 // Exports: trackClickstream
 
-// Module 6974 (Clickstream)
+// Module 6987 (Clickstream)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ClickstreamExperiment from "ClickstreamExperiment" /* 6975 */;
-import ClickstreamEvents from "ClickstreamEvents" /* 6976 */;
+import ClickstreamExperiment from "ClickstreamExperiment" /* 6988 */;
+import ClickstreamEvents from "ClickstreamEvents" /* 6989 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4919 */;
 import size from "module_2" /* 2 */;
 
 function isClickstreamEnabled(flag) {

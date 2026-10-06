@@ -1,17 +1,17 @@
-// Module ID: 17732
-// Function ID: 17733
+// Module ID: 17778
+// Function ID: 17779
 // Name: GuildSettingsModalIntegrations
-// Dependencies: [19, 17, 4509, 9248, 1085, 21, 4890, 587, 558, 576, 4580, 1490, 504, 4791, 17662, 8895, 5593, 6074, 5993, 1126, 16907, 17018, 14778, 5442, 1402, 4729, 6536, 2]
+// Dependencies: [19, 17, 4515, 9283, 1085, 21, 4896, 587, 558, 576, 4586, 1490, 504, 4797, 17708, 8924, 5600, 6081, 6000, 1126, 16933, 17044, 14794, 5449, 1402, 4735, 6543, 2]
 
-// Module 17732 (GuildSettingsModalIntegrations)
+// Module 17778 (GuildSettingsModalIntegrations)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9248 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9283 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 15285
-// Function ID: 15286
+// Module ID: 15300
+// Function ID: 15301
 // Name: UserSettingsText
-// Dependencies: [19, 17, 1377, 4534, 1194, 1195, 1085, 21, 4890, 587, 1252, 2028, 8863, 558, 576, 4580, 504, 4528, 1490, 6487, 6074, 1126, 6698, 1188, 10124, 4886, 6072, 6071, 8895, 5593, 2]
+// Dependencies: [19, 17, 1377, 4540, 1194, 1195, 1085, 21, 4896, 587, 1252, 2028, 8091, 558, 576, 4586, 504, 4534, 1490, 6494, 6081, 1126, 6705, 1188, 10137, 4892, 6079, 6078, 8924, 5600, 2]
 // Exports: setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 15285 (UserSettingsText)
+// Module 15300 (UserSettingsText)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl23 from "intl" /* 1126 */;
@@ -12,21 +12,21 @@ import native from "native" /* 1188 */;
 import UnsyncedUserSettingsStore2 from "UnsyncedUserSettingsStore" /* 1195 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import UserSettings from "UserSettings" /* 2028 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import TableRadioRow4 from "TableRadioRow" /* 6071 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 6072 */;
-import TableRowGroup7 from "TableRowGroup" /* 6074 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6487 */;
-import TableSwitchRow8 from "TableSwitchRow" /* 6698 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8863 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10124 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import TableRadioRow4 from "TableRadioRow" /* 6078 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 6079 */;
+import TableRowGroup7 from "TableRowGroup" /* 6081 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6494 */;
+import TableSwitchRow8 from "TableSwitchRow" /* 6705 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8091 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10137 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1377 */;
-import SubscriptionStore from "SubscriptionStore" /* 4534 */;
+import SubscriptionStore from "SubscriptionStore" /* 4540 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 17094
-// Function ID: 17095
+// Module ID: 17120
+// Function ID: 17121
 // Name: NativeMenuPresenter
-// Dependencies: [19, 9612, 558, 576, 504, 10381, 5780, 2]
+// Dependencies: [19, 9625, 558, 576, 504, 10394, 5787, 2]
 
-// Module 17094 (NativeMenuPresenter)
-import useBackPressHandlerDefault from "useBackPressHandler" /* 5780 */;
-import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10381 */;
+// Module 17120 (NativeMenuPresenter)
+import useBackPressHandlerDefault from "useBackPressHandler" /* 5787 */;
+import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10394 */;
 import react from "react" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 9612 */;
+import NativeMenuStore from "NativeMenuStore" /* 9625 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

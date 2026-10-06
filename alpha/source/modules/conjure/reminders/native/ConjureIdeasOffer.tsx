@@ -1,16 +1,16 @@
-// Module ID: 16706
-// Function ID: 16707
+// Module ID: 16727
+// Function ID: 16728
 // Name: ConjureIdeasOffer
-// Dependencies: [19, 17, 21, 558, 576, 16667, 1126, 3723, 5593, 5594, 2]
+// Dependencies: [19, 17, 21, 558, 576, 16686, 1126, 3753, 5600, 5601, 2]
 
-// Module 16706 (ConjureIdeasOffer)
+// Module 16727 (ConjureIdeasOffer)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import _modDef3723 from "module_3723" /* 3723 */;
-import Stack_Stack from "Stack/Stack" /* 5593 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import ConjureNativeMarkdownDefault from "ConjureNativeMarkdown" /* 16667 */;
+import _modDef3753 from "module_3753" /* 3753 */;
+import Stack_Stack from "Stack/Stack" /* 5600 */;
+import components_Button_Button from "components/Button/Button" /* 5601 */;
+import ConjureNativeMarkdownDefault from "ConjureNativeMarkdown" /* 16686 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -32,7 +32,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(9);
   ({ style, attribution, onAsk } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { source: intl.string(_modDef3723.s96AWB) };
+    const obj2 = { source: intl.string(_modDef3753.s96AWB) };
     const tmp7 = ConjureNativeMarkdownDefault;
     intl = tmp(1126).intl;
     const tmp8 = React3(tmp7, obj2);
@@ -43,7 +43,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const intl2 = tmp(1126).intl;
-    const stringResult = intl2.string(_modDef3723["U/bLzU"]);
+    const stringResult = intl2.string(_modDef3753["U/bLzU"]);
     cResult[1] = stringResult;
     tmp10 = stringResult;
   } else {
@@ -73,7 +73,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp15 = tmp18;
   }
   const obj4 = { direction: "horizontal", children: React3(components_Button_Button.Button, { variant: "secondary", size: "sm", disabled: null == onAsk, onPress: onAsk, text: tmp10 }) };
-  const Stack = tmp(5593).Stack;
+  const Stack = tmp(5600).Stack;
   const tmp14 = React3(Stack, obj4);
   cResult[2] = onAsk;
   cResult[3] = null == onAsk;
@@ -88,13 +88,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   onAsk = onAsk.onAsk;
   const obj = { style: onAsk.style, children: items };
   items = [onAsk.attribution, , ];
-  const obj2 = { source: intl.string(_modDef3723.s96AWB) };
+  const obj2 = { source: intl.string(_modDef3753.s96AWB) };
   const tmp = ConjureNativeMarkdownDefault;
   intl = intl3.intl;
   items[1] = React3(tmp, obj2);
   const obj3 = { direction: "horizontal", children: React3(Button, obj4) };
   const Stack = Stack_Stack.Stack;
-  obj4 = { variant: "secondary", size: "sm", disabled: null == onAsk, onPress: onAsk, text: intl2.string(_modDef3723["U/bLzU"]) };
+  obj4 = { variant: "secondary", size: "sm", disabled: null == onAsk, onPress: onAsk, text: intl2.string(_modDef3753["U/bLzU"]) };
   Button = components_Button_Button.Button;
   intl2 = intl3.intl;
   items[2] = React3(Stack, obj3);

@@ -1,13 +1,13 @@
-// Module ID: 15510
-// Function ID: 15511
+// Module ID: 15526
+// Function ID: 15527
 // Name: BackupScreen
-// Dependencies: [5, 32, 19, 21, 15508, 4886, 1126, 558, 576, 6432, 15509, 15503, 15504, 2]
+// Dependencies: [5, 32, 19, 21, 15524, 4892, 1126, 558, 576, 6439, 15525, 15519, 15520, 2]
 
-// Module 15510 (BackupScreen)
+// Module 15526 (BackupScreen)
 import intl6 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 6432 */;
-import MFA from "MFA" /* 15508 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 6439 */;
+import MFA from "MFA" /* 15524 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -22,7 +22,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp4;
-const ClipboardCopyInputDefault = tmp4(15509);
+const ClipboardCopyInputDefault = tmp4(15525);
 function removeDashes(str) {
   return str.replace(/-/g, "");
 }
@@ -306,7 +306,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-  let obj5 = { label: tmp26, placeholder: tmp27, isValidClipboardCode, maxLength: tmp(15508).BACKUP_CODE_MAX_LENGTH, onChangeCode: tmp18, error: tmp10, isDisabled: tmp30, autoFocus: tmp31 };
+  let obj5 = { label: tmp26, placeholder: tmp27, isValidClipboardCode, maxLength: tmp(15524).BACKUP_CODE_MAX_LENGTH, onChangeCode: tmp18, error: tmp10, isDisabled: tmp30, autoFocus: tmp31 };
   const tmp4Result = ClipboardCopyInputDefault;
   cResult[12] = tmp10;
   cResult[13] = tmp7 || tmp12;

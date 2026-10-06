@@ -1,17 +1,17 @@
-// Module ID: 14209
-// Function ID: 14210
+// Module ID: 14227
+// Function ID: 14228
 // Name: AILoader
-// Dependencies: [19, 17, 14210, 21, 4890, 558, 576, 4612, 4891, 14211, 4589, 2]
+// Dependencies: [19, 17, 14228, 21, 4896, 558, 576, 4618, 4897, 14229, 4595, 2]
 
-// Module 14209 (AILoader)
+// Module 14227 (AILoader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import AIGlyphText from "AIGlyphText" /* 14211 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import timing from "timing" /* 4897 */;
+import AIGlyphText from "AIGlyphText" /* 14229 */;
 import react from "react" /* 19 */;
-import AILoaderConstants from "AILoaderConstants" /* 14210 */;
-import createStyles from "createStyles" /* 4890 */;
+import AILoaderConstants from "AILoaderConstants" /* 14228 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -221,7 +221,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   const stagger = index.stagger;
   const tmp = closure_16(size);
   const glyph = tmp;
-  let obj = index(4612);
+  let obj = index(4618);
   const sharedValue = obj.useSharedValue(0);
   let items = [cycle, index, sharedValue, stagger];
   const effect = cycle.useEffect(() => {
@@ -240,7 +240,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
       return obj.cancelAnimation(sharedValue);
     };
   }, items);
-  let obj2 = index(4612);
+  let obj2 = index(4618);
   class R {
     constructor() {
       let items;
@@ -268,7 +268,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   R.__initData = __initData2;
   const animatedStyle = obj2.useAnimatedStyle(R);
   ({ style: animatedStyle, children: closure_7.map((children) => jsx(AIGlyphText.AIGlyphText, { size, color: dependencyMap, allowFontScaling: false, style: glyph.glyph, children }, children)) });
-  View = size(4612).View;
+  View = size(4618).View;
   return <stagger style={tmp.slot}>{null}</stagger>;
 });
 const memo = react.memo;
@@ -293,7 +293,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     str = color;
   }
   const tmp4 = closure_16(num);
-  const reducedMotion = num2.useContext(tmp(4589).AccessibilityPreferencesContext).reducedMotion;
+  const reducedMotion = num2.useContext(tmp(4595).AccessibilityPreferencesContext).reducedMotion;
   const tmp5 = reducedMotion.enabled ? closure_8 : closure_5;
   dependencyMap = tmp5;
   num2 = 0;
@@ -379,7 +379,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   let num2;
   const style = size.style;
   const tmp = closure_16(num);
-  const reducedMotion = num2.useContext(num(4589).AccessibilityPreferencesContext).reducedMotion;
+  const reducedMotion = num2.useContext(num(4595).AccessibilityPreferencesContext).reducedMotion;
   dependencyMap = reducedMotion.enabled ? closure_8 : closure_5;
   num2 = 0;
   if (!reducedMotion.enabled) {

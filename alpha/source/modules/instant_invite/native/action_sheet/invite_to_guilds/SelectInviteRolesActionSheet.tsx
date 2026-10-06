@@ -1,15 +1,15 @@
-// Module ID: 17994
-// Function ID: 17995
+// Module ID: 18040
+// Function ID: 18041
 // Name: SelectInviteRolesActionSheet
-// Dependencies: [32, 19, 21, 4890, 558, 576, 10600, 6546, 4854, 12, 8895, 11449, 4886, 1126, 5909, 6644, 6552, 6701, 2]
+// Dependencies: [32, 19, 21, 4896, 558, 576, 10613, 6553, 4860, 12, 8924, 11462, 4892, 1126, 5916, 6651, 6559, 6708, 2]
 
-// Module 17994 (SelectInviteRolesActionSheet)
+// Module 18040 (SelectInviteRolesActionSheet)
 import _mod12 from "module_12" /* 12 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

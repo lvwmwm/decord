@@ -1,16 +1,16 @@
-// Module ID: 18050
-// Function ID: 18051
+// Module ID: 18095
+// Function ID: 18096
 // Name: StreamFullAlert
-// Dependencies: [19, 17, 21, 558, 576, 9095, 1126, 4886, 18051, 5783, 2]
+// Dependencies: [19, 17, 21, 558, 576, 9131, 1126, 4892, 18096, 5790, 2]
 
-// Module 18050 (StreamFullAlert)
+// Module 18095 (StreamFullAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import AlertDefault from "Alert" /* 5783 */;
-import AVError from "AVError" /* 9095 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18051 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import AlertDefault from "Alert" /* 5790 */;
+import AVError from "AVError" /* 9131 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18096 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -34,7 +34,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(7);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const tmpResult = AVError;
-    const errorInfo = tmpResult.getErrorInfo(tmp(9095).AVError.STREAM_FULL);
+    const errorInfo = tmpResult.getErrorInfo(tmp(9131).AVError.STREAM_FULL);
     let errorCode;
     if (errorInfo != null) {
       errorCode = errorInfo.errorCode;
@@ -57,7 +57,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-md/normal", style: closure_6.body, children: intl3.string(intl4.t.VVZDBL) };
-    const Text = tmp(4886).Text;
+    const Text = tmp(4892).Text;
     intl3 = tmp(1126).intl;
     const tmp16 = React3(Text, obj3);
     const obj4 = { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_6.body, children: first };
@@ -105,7 +105,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const merged = Object.assign(arg0);
   intl2 = tmp(1126).intl;
   const obj3 = { variant: "text-md/normal", style: closure_6.body, children: intl3.string(intl4.t.VVZDBL) };
-  const Text = tmp(4886).Text;
+  const Text = tmp(4892).Text;
   intl3 = tmp(1126).intl;
   items = [React3(Text, obj3), , ];
   const obj4 = { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_6.body, children: formatToPlainStringResult };

@@ -1,23 +1,23 @@
-// Module ID: 11362
-// Function ID: 11363
+// Module ID: 11375
+// Function ID: 11376
 // Name: EmojiReactionRowButton
-// Dependencies: [19, 17, 1380, 21, 4890, 587, 558, 576, 4729, 1126, 8411, 5909, 6625, 1402, 4526, 2]
+// Dependencies: [19, 17, 1380, 21, 4896, 587, 558, 576, 4735, 1126, 8444, 5916, 6632, 1402, 4532, 2]
 // Exports: getEmojiKey
 
-// Module 11362 (EmojiReactionRowButton)
+// Module 11375 (EmojiReactionRowButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import EmojiConstants from "EmojiConstants" /* 1380 */;
-import EmojiTypes from "EmojiTypes" /* 4526 */;
-import shared from "shared" /* 4729 */;
-import Pressables from "Pressables" /* 5909 */;
-import EmojiDefault from "Emoji" /* 6625 */;
-import ReactionIcon2 from "ReactionIcon" /* 8411 */;
+import EmojiTypes from "EmojiTypes" /* 4532 */;
+import shared from "shared" /* 4735 */;
+import Pressables from "Pressables" /* 5916 */;
+import EmojiDefault from "Emoji" /* 6632 */;
+import ReactionIcon2 from "ReactionIcon" /* 8444 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -112,10 +112,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiContainerSize) 
   const isThemeLightResult = obj2.isThemeLight(theme);
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   const tmp5 = isThemeLightResult ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300;
-  const PressableOpacity = tmp2(5909).PressableOpacity;
+  const PressableOpacity = tmp2(5916).PressableOpacity;
   const intl = tmp2(1126).intl;
   const items = [tmp.emojiContainer, styles];
-  const ReactionIcon = tmp2(8411).ReactionIcon;
+  const ReactionIcon = tmp2(8444).ReactionIcon;
   if (str == null) {
     str = "md";
   }

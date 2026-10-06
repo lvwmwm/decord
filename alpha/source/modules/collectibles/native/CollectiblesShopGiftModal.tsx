@@ -1,27 +1,27 @@
-// Module ID: 10744
-// Function ID: 10745
+// Module ID: 10757
+// Function ID: 10758
 // Name: CollectiblesShopGiftModal
-// Dependencies: [19, 7053, 1085, 1096, 21, 558, 576, 8870, 1369, 4541, 10745, 10743, 10746, 10749, 10558, 10551, 10538, 10471, 7868, 7855, 504, 6681, 6657, 2018, 7052, 1126, 10554, 2]
+// Dependencies: [19, 7066, 1085, 1096, 21, 558, 576, 8899, 1369, 4547, 10758, 10756, 10759, 10762, 10571, 10564, 10551, 10484, 7879, 7866, 504, 6688, 6664, 2018, 7065, 1126, 10567, 2]
 
-// Module 10744 (CollectiblesShopGiftModal)
+// Module 10757 (CollectiblesShopGiftModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 1096 */;
 import StringUtils from "StringUtils" /* 2018 */;
-import BadgeId from "BadgeId" /* 7855 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7868 */;
-import openGiftModal from "openGiftModal" /* 10743 */;
-import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 10746 */;
-import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 10749 */;
+import BadgeId from "BadgeId" /* 7866 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7879 */;
+import openGiftModal from "openGiftModal" /* 10756 */;
+import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 10759 */;
+import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 10762 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7053 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7066 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let product, skuId;
 
 let tmp;
-const CollectiblesActionCreators = tmp(7052);
+const CollectiblesActionCreators = tmp(7065);
 const application_id = Constants.COLLECTIBLES_APPLICATION_ID;
 const PaymentGateways = Constants2.PaymentGateways;
 const jsx = Fragment.jsx;

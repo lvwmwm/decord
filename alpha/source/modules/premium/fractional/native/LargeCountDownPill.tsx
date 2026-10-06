@@ -1,17 +1,17 @@
-// Module ID: 13269
-// Function ID: 13270
+// Module ID: 13288
+// Function ID: 13289
 // Name: LargeCountDownPill
-// Dependencies: [17, 21, 4890, 587, 558, 576, 4574, 4568, 1126, 4812, 4886, 2]
+// Dependencies: [17, 21, 4896, 587, 558, 576, 4580, 4574, 1126, 4818, 4892, 2]
 
-// Module 13269 (LargeCountDownPill)
+// Module 13288 (LargeCountDownPill)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4574 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 4812 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4574 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4580 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 4818 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -95,7 +95,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((countdownText) => {
     }
     if (cResult[7] !== tmp4.iconStyle) {
       let obj2 = { style: tmp4.iconStyle, color: nativeDefault.colors.TEXT_STATUS_IDLE };
-      let CircleInformationIcon = tmp(4812).CircleInformationIcon;
+      let CircleInformationIcon = tmp(4818).CircleInformationIcon;
       const tmp13 = closure_5(CircleInformationIcon, obj2);
       cResult[7] = tmp4.iconStyle;
       cResult[8] = tmp13;
@@ -133,7 +133,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((countdownText) => {
     cResult[12] = tmp17;
     tmp14 = tmp17;
   }
-  const tmp9 = closure_5(tmp(4886).Text, { variant: "text-xs/bold", style: largeCountdownPillText, children: tmp6 });
+  const tmp9 = closure_5(tmp(4892).Text, { variant: "text-xs/bold", style: largeCountdownPillText, children: tmp6 });
   cResult[4] = tmp4.largeCountdownPillText;
   cResult[5] = tmp6;
   cResult[6] = tmp9;

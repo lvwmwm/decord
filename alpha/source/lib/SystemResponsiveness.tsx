@@ -1,11 +1,11 @@
-// Module ID: 13631
-// Function ID: 13632
+// Module ID: 13647
+// Function ID: 13648
 // Name: SystemResponsiveness
-// Dependencies: [7233, 4945, 12, 2]
+// Dependencies: [7246, 4951, 12, 2]
 
-// Module 13631 (SystemResponsiveness)
+// Module 13647 (SystemResponsiveness)
 import _modDef12 from "module_12" /* 12 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4945 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4951 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/SystemResponsiveness.tsx");
@@ -32,7 +32,7 @@ class SystemResponsiveness {
       }
     };
     obj.connection = connection;
-    const histogram = new obj(7233).Histogram();
+    const histogram = new obj(7246).Histogram();
     obj.pttQueueLatencyHistogram = histogram;
     return obj;
   }

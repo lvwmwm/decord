@@ -1,27 +1,27 @@
-// Module ID: 10650
-// Function ID: 10651
+// Module ID: 10663
+// Function ID: 10664
 // Name: ChannelRow
-// Dependencies: [109, 19, 17, 2051, 2074, 4905, 4519, 1377, 10592, 5072, 21, 4890, 587, 558, 576, 504, 5043, 10651, 10738, 5872, 5864, 4886, 4552, 4461, 5990, 5993, 2]
+// Dependencies: [109, 19, 17, 2051, 2074, 4911, 4525, 1377, 10605, 5078, 21, 4896, 587, 558, 576, 504, 5049, 10664, 10751, 5879, 5871, 4892, 4558, 4467, 5997, 6000, 2]
 
-// Module 10650 (ChannelRow)
+// Module 10663 (ChannelRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import DateUtils from "DateUtils" /* 4552 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import useChannelName from "useChannelName" /* 5043 */;
-import ReadStateConstants from "ReadStateConstants" /* 5072 */;
-import UserRowConstants from "UserRowConstants" /* 10592 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10651 */;
-import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 10738 */;
+import DateUtils from "DateUtils" /* 4558 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import useChannelName from "useChannelName" /* 5049 */;
+import ReadStateConstants from "ReadStateConstants" /* 5078 */;
+import UserRowConstants from "UserRowConstants" /* 10605 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10664 */;
+import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 10751 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import ReadStateStore from "ReadStateStore" /* 4905 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import ReadStateStore from "ReadStateStore" /* 4911 */;
+import RelationshipStore from "RelationshipStore" /* 4525 */;
 import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -251,7 +251,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
             return closure_9.lastMessageTimestamp(closure_0.id, ReadStateTypes.CHANNEL);
           }
         }
-        let obj2 = { "aria-label": "", style: null, guild: stateFromStores, channel: tmp4, size: tmp(10738).GuildIconWithChannelTypeSizes.SMALL_32 };
+        let obj2 = { "aria-label": "", style: null, guild: stateFromStores, channel: tmp4, size: tmp(10751).GuildIconWithChannelTypeSizes.SMALL_32 };
         class J {
           constructor() {
             if (null == closure_1) {
@@ -267,7 +267,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
             return;
           }
         }
-        const GuildIconWithChannelType = tmp(10738).GuildIconWithChannelType;
+        const GuildIconWithChannelType = tmp(10751).GuildIconWithChannelType;
         tmp34 = closure_14(GuildIconWithChannelType, obj2);
       }
       cResult[26] = tmp4;
@@ -418,9 +418,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
         }
       }
       if (channel.isForumPost()) {
-        TextIcon = tmp3(5872).ForumIcon;
+        TextIcon = tmp3(5879).ForumIcon;
       } else {
-        TextIcon = tmp3(5864).TextIcon;
+        TextIcon = tmp3(5871).TextIcon;
       }
       const obj = { style: closure_7.subLabel, children: items };
       const obj2 = { color: nativeDefault.colors.TEXT_SUBTLE, style: closure_7.subLabelIcon };
@@ -435,7 +435,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
         const obj4 = { children: items1 };
         const obj5 = { style: tmp7.subLabelSeparator, variant: "text-xs/medium", color: "text-subtle", children: "\u2022" };
         items1 = [authStore2(Text_Text.Text, obj5), ];
-        const obj6 = { variant: "text-xs/medium", color: "text-subtle", children: obj7.calendarFormatCompact(tmp9(4461)(tmp14)) };
+        const obj6 = { variant: "text-xs/medium", color: "text-subtle", children: obj7.calendarFormatCompact(tmp9(4467)(tmp14)) };
         const Text = Text_Text.Text;
         obj7 = DateUtils;
         items1[1] = authStore2(Text, obj6);

@@ -1,19 +1,19 @@
-// Module ID: 10386
-// Function ID: 10387
+// Module ID: 10399
+// Function ID: 10400
 // Name: MediaKeyboardFooter
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 10375, 1126, 4886, 5594, 10387, 2]
+// Dependencies: [19, 17, 21, 4896, 587, 558, 576, 10388, 1126, 4892, 5601, 10400, 2]
 
-// Module 10386 (MediaKeyboardFooter)
+// Module 10399 (MediaKeyboardFooter)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import DeviceMediaDefault from "DeviceMedia" /* 10375 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import components_Button_Button from "components/Button/Button" /* 5601 */;
+import DeviceMediaDefault from "DeviceMedia" /* 10388 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp5;
-const AssetRegistryDefault = tmp5(10387);
+const AssetRegistryDefault = tmp5(10400);
 ({ View: c3, Image: closure_4, ActivityIndicator: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;

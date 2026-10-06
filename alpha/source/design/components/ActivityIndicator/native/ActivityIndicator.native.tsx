@@ -1,14 +1,14 @@
-// Module ID: 5968
-// Function ID: 5969
+// Module ID: 5975
+// Function ID: 5976
 // Name: ActivityIndicator/ActivityIndicator
-// Dependencies: [109, 17, 21, 558, 576, 4580, 587, 2]
+// Dependencies: [109, 17, 21, 558, 576, 4586, 587, 2]
 
-// Module 5968 (ActivityIndicator/ActivityIndicator)
+// Module 5975 (ActivityIndicator/ActivityIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken2 from "useToken" /* 4580 */;
+import useToken2 from "useToken" /* 4586 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (undefined !== tmp5) {
     str = tmp5;
   }
-  const useToken = tmp(4580).useToken;
+  const useToken = tmp(4586).useToken;
   let color = tmp4.color;
   useToken2;
   if (color == null) {

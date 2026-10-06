@@ -1,16 +1,16 @@
-// Module ID: 17654
-// Function ID: 17655
+// Module ID: 17700
+// Function ID: 17701
 // Name: NewTermsModal
-// Dependencies: [5, 32, 19, 17, 2044, 1085, 21, 4890, 587, 6693, 1126, 6082, 558, 576, 1618, 6016, 5780, 7852, 1260, 8422, 4886, 5594, 9442, 9290, 2]
+// Dependencies: [5, 32, 19, 17, 2044, 1085, 21, 4896, 587, 6700, 1126, 6089, 558, 576, 1618, 6023, 5787, 7863, 1260, 8455, 4892, 5601, 9455, 9325, 2]
 
-// Module 17654 (NewTermsModal)
+// Module 17700 (NewTermsModal)
 import nativeDefault from "native" /* 587 */;
 import intl10 from "intl" /* 1126 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6082 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 6693 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9290 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9442 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6089 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 6700 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9325 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9455 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -18,7 +18,7 @@ import react_native from "react-native" /* 17 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2044 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj6;
 let obj7;
 let tmp5;
 let unpackModuleId;
-const useTrackImpressionDefault = tmp5(8422);
+const useTrackImpressionDefault = tmp5(8455);
 function handleTouch() {
   metroImportDefault.dismiss();
 }
@@ -97,8 +97,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   [r10034, importDefault] = _slicedToArray(react.useState(false), 2);
   const tmp10 = _slicedToArray(react.useState(false), 2);
-  const tmpResult = tmp(6016);
-  tmpResult.useNavigatorBackPressHandler(tmp(5780).BackPressHandler.minimize);
+  const tmpResult = tmp(6023);
+  tmpResult.useNavigatorBackPressHandler(tmp(5787).BackPressHandler.minimize);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     required_action = _asyncToGenerator(async (arg0, value) => {
       let closure_1;
@@ -269,8 +269,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const bottom = rect.bottom;
   const memo = react.useMemo(() => action.getAction(), []);
   [first, importDefault] = react.useState(false);
-  let obj = memo(6016);
-  obj.useNavigatorBackPressHandler(memo(5780).BackPressHandler.minimize);
+  let obj = memo(6023);
+  obj.useNavigatorBackPressHandler(memo(5787).BackPressHandler.minimize);
   dependencyMap = react.useCallback(_asyncToGenerator(async (arg0, value) => {
     let closure_0;
     if (c3 === 2) {
@@ -338,36 +338,36 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let obj5 = { style: items1, contentContainerStyle: tmp.contentContainer, onTouchStart: handleTouch, children: items2 };
     items1 = [tmp.scrollView];
     const obj6 = { maxFontSizeMultiplier: 2, variant: "heading-xxl/bold", children: intl.string(memo(1126).t["7glvXu"]) };
-    const Text = tmp7(4886).Text;
+    const Text = tmp7(4892).Text;
     intl = tmp7(1126).intl;
     items2 = [closure_12(Text, obj6), , , , , , ];
     const obj7 = { variant: "text-md/normal", style: tmp.description, children: intl2.format(memo(1126).t.CN0Hvb, obj8) };
-    const Text2 = tmp7(4886).Text;
+    const Text2 = tmp7(4892).Text;
     intl2 = tmp7(1126).intl;
     obj8 = { url: constants.TERMS_SUMMARY };
     items2[1] = closure_12(Text2, obj7);
     const obj9 = { variant: "text-md/normal", children: intl3.format(memo(1126).t.iw0hFi, obj10) };
-    const Text3 = tmp7(4886).Text;
+    const Text3 = tmp7(4892).Text;
     intl3 = tmp7(1126).intl;
     obj10 = { url: constants.TERMS };
     items2[2] = closure_12(Text3, obj9);
     const obj11 = { variant: "text-md/normal", children: intl4.format(memo(1126).t["36klnD"], obj12) };
-    const Text4 = tmp7(4886).Text;
+    const Text4 = tmp7(4892).Text;
     intl4 = tmp7(1126).intl;
     obj12 = { url: constants.PAID_TERMS };
     items2[3] = closure_12(Text4, obj11);
     const obj13 = { variant: "text-md/normal", children: intl5.format(memo(1126).t.TquFBF, obj14) };
-    const Text5 = tmp7(4886).Text;
+    const Text5 = tmp7(4892).Text;
     intl5 = tmp7(1126).intl;
     obj14 = { url: constants.PRIVACY };
     items2[4] = closure_12(Text5, obj13);
     const obj15 = { variant: "text-md/normal", children: intl6.format(memo(1126).t.ia96Tb, obj16) };
-    const Text6 = tmp7(4886).Text;
+    const Text6 = tmp7(4892).Text;
     intl6 = tmp7(1126).intl;
     obj16 = { url: constants.GUIDELINES };
     items2[5] = closure_12(Text6, obj15);
     const obj17 = { variant: "text-md/normal", style: tmp.agreementDescription, children: intl7.string(memo(1126).t["+USXQE"]) };
-    const Text7 = tmp7(4886).Text;
+    const Text7 = tmp7(4892).Text;
     intl7 = tmp7(1126).intl;
     items2[6] = closure_12(Text7, obj17);
     items3 = [closure_13(closure_8, obj5), , ];
@@ -381,7 +381,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         },
       text: intl8.string(memo(1126).t["+TBKL1"])
     };
-    Button = tmp7(5594).Button;
+    Button = tmp7(5601).Button;
     intl8 = tmp7(1126).intl;
     items3[1] = closure_12(closure_6, obj18);
     const obj20 = { style: items4, source: AssetRegistryDefault, color: tmp.navbarRight.tintColor, onPress: handleMoreActions, accessibilityRole: "button", accessibilityLabel: intl9.string(memo(1126).t["UKOtz+"]) };

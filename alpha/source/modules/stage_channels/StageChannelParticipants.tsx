@@ -1,25 +1,25 @@
-// Module ID: 5582
-// Function ID: 5583
+// Module ID: 5589
+// Function ID: 5590
 // Name: StageChannelParticipants
-// Dependencies: [4912, 2051, 5583, 2112, 4519, 1377, 4909, 4914, 5578, 2056, 5585, 5037, 4504, 5042, 5586, 4942, 2]
+// Dependencies: [4918, 2051, 5590, 2112, 4525, 1377, 4915, 4920, 5585, 2056, 5592, 5043, 4510, 5048, 5593, 4948, 2]
 // Exports: isRequestedToSpeakAll
 
-// Module 5582 (StageChannelParticipants)
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4504 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4914 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4942 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5037 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
-import getParticipantUserKeyDefault from "getParticipantUserKey" /* 5585 */;
-import useGuildMemberDisplayRole from "useGuildMemberDisplayRole" /* 5586 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
+// Module 5589 (StageChannelParticipants)
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4510 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4920 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 4948 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5043 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5048 */;
+import getParticipantUserKeyDefault from "getParticipantUserKey" /* 5592 */;
+import useGuildMemberDisplayRole from "useGuildMemberDisplayRole" /* 5593 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4918 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5583 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5590 */;
 import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import RelationshipStore from "RelationshipStore" /* 4525 */;
 import UserStore from "UserStore" /* 1377 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5578 */;
+import VoiceStateStore from "VoiceStateStore" /* 4915 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5585 */;
 import StageInstanceStore from "StageInstanceStore" /* 2056 */;
 import size from "module_2" /* 2 */;
 

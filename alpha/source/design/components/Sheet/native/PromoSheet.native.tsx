@@ -1,16 +1,16 @@
-// Module ID: 10045
-// Function ID: 10046
+// Module ID: 10058
+// Function ID: 10059
 // Name: PromoSheet
-// Dependencies: [109, 19, 17, 21, 4890, 587, 558, 576, 9892, 9891, 4886, 5593, 6645, 2]
+// Dependencies: [109, 19, 17, 21, 4896, 587, 558, 576, 9905, 9904, 4892, 5600, 6652, 2]
 
-// Module 10045 (PromoSheet)
+// Module 10058 (PromoSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ExpressiveGradient2 from "ExpressiveGradient" /* 9892 */;
+import ExpressiveGradient2 from "ExpressiveGradient" /* 9905 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -129,7 +129,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((actions) => {
                     }
                   }
                   let obj2 = { startExpanded: true, contentStyles: tmp14.content, backgroundComponent: tmp15, children: tmp34 };
-                  BottomSheet = tmp(6645).BottomSheet;
+                  BottomSheet = tmp(6652).BottomSheet;
                   let merged = Object.assign(tmp9);
                   const tmp42 = closure_8(BottomSheet, obj2);
                   cResult[28] = tmp15;
@@ -160,7 +160,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((actions) => {
           let tmp29 = null;
           if (null != tmp5) {
             const obj5 = { variant: "redesign/heading-18/medium", color: "text-subtle", style: tmp14.description, children: tmp5 };
-            tmp29 = closure_8(tmp(4886).Text, obj5);
+            tmp29 = closure_8(tmp(4892).Text, obj5);
           }
           cResult[18] = tmp5;
           cResult[19] = tmp14.description;
@@ -178,7 +178,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((actions) => {
   }
   if (null != tmp7) {
     const obj7 = { style: tmp14.graphic };
-    const Graphic = tmp(9891).Graphic;
+    const Graphic = tmp(9904).Graphic;
     const merged1 = Object.assign(tmp7);
     tmp18 = closure_8(Graphic, obj7);
   } else {
@@ -222,12 +222,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((actions) => {
     }) : undefined;
   }, items);
   let obj = { startExpanded: true, contentStyles: tmp2.content, backgroundComponent: memo, children: closure_9(Stack, obj6) };
-  BottomSheet = gradientColor(6645).BottomSheet;
+  BottomSheet = gradientColor(6652).BottomSheet;
   let merged = Object.assign(tmp);
-  Stack = gradientColor(5593).Stack;
+  Stack = gradientColor(5600).Stack;
   if (null != graphic) {
     let obj2 = { style: tmp2.graphic };
-    const Graphic = tmp5(9891).Graphic;
+    const Graphic = tmp5(9904).Graphic;
     const merged1 = Object.assign(graphic);
     tmp4Result = tmp4(Graphic, obj2);
   } else {
@@ -238,14 +238,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((actions) => {
     }
   }
   const items1 = [tmp4Result, , ];
-  const Stack2 = tmp5(5593).Stack;
+  const Stack2 = tmp5(5600).Stack;
   const items2 = [, ];
   const obj4 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp2.title, children: title };
-  items2[0] = closure_8(gradientColor(4886).Text, obj4);
+  items2[0] = closure_8(gradientColor(4892).Text, obj4);
   let tmp4Result2 = null;
   if (null != description) {
     const obj5 = { variant: "redesign/heading-18/medium", color: "text-subtle", style: tmp2.description, children: description };
-    tmp4Result2 = tmp4(tmp5(4886).Text, obj5);
+    tmp4Result2 = tmp4(tmp5(4892).Text, obj5);
   }
   obj6 = { spacing: 24, children: items1 };
   items2[1] = tmp4Result2;

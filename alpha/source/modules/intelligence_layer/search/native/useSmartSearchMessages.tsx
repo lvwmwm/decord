@@ -1,14 +1,14 @@
-// Module ID: 16896
-// Function ID: 16897
+// Module ID: 16921
+// Function ID: 16922
 // Name: useSmartSearchMessages
-// Dependencies: [19, 12004, 7513, 558, 576, 11997, 16802, 12005, 504, 11989, 2]
+// Dependencies: [19, 11981, 7524, 558, 576, 11983, 16823, 12020, 504, 11985, 2]
 
-// Module 16896 (useSmartSearchMessages)
-import SearchConstants from "SearchConstants" /* 7513 */;
-import SmartSearchTypes from "SmartSearchTypes" /* 11989 */;
-import SmartSearchUtils from "SmartSearchUtils" /* 11997 */;
+// Module 16921 (useSmartSearchMessages)
+import SearchConstants from "SearchConstants" /* 7524 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 11983 */;
+import SmartSearchTypes from "SmartSearchTypes" /* 11985 */;
 import react from "react" /* 19 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 12004 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 11981 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,11 +32,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp5 = cResult[2];
     }
     _require = tmp5;
-    const tmpResult = tmp(16802);
+    const tmpResult = tmp(16823);
     const smartSearchStatus = tmpResult.useSmartSearchStatus(tmp5);
     let guildId;
-    const useIsNlpSearchEnabled = tmp(12005).useIsNlpSearchEnabled;
-    tmp(12005);
+    const useIsNlpSearchEnabled = tmp(12020).useIsNlpSearchEnabled;
+    tmp(12020);
     if (tmp5 != null) {
       guildId = tmp5.guildId;
     }
@@ -48,7 +48,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[4] !== tmp5) {
       const fn = function p() {
-        const hasSuggestionsResult = null != closure_0 && SuggestedSearchStore.hasSuggestions(tmp.guildId, tmp.channelIds);
+        const hasSuggestionsResult = null != closure_0 && SuggestedSearchStore.hasSuggestions(tmp);
         return hasSuggestionsResult;
       };
       const items1 = [tmp5];
@@ -64,8 +64,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp20 = null;
         if (!tmp4) {
           tmp20 = null;
-          if (smartSearchStatus !== tmp(11989).SmartSearchStatus.NOT_QUALIFIED) {
-            const tmpResult7 = tmp(11997);
+          if (smartSearchStatus !== tmp(11985).SmartSearchStatus.NOT_QUALIFIED) {
+            const tmpResult7 = tmp(11983);
             if (!tmpResult7.isSmartSearchEmptyOrErrored(smartSearchStatus)) {
               if (cResult[7] === hasKeywordResults) {
                 let tmp21;
@@ -100,7 +100,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[12] = obj3;
     tmp23 = obj3;
   }
-  const tmpResult8 = tmp(11997);
+  const tmpResult8 = tmp(11983);
   const smartSearchQuery = tmpResult8.getSmartSearchQuery(searchContext, searchQueryString);
   cResult[0] = searchContext;
   cResult[1] = searchQueryString;
@@ -135,7 +135,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items2 = [memo];
   const tmp2Result = tmp2(tmp3[8]);
   stateFromStores = tmp2Result.useStateFromStores(items1, () => {
-    const hasSuggestionsResult = null != memo && SuggestedSearchStore.hasSuggestions(tmp.guildId, tmp.channelIds);
+    const hasSuggestionsResult = null != memo && SuggestedSearchStore.hasSuggestions(tmp);
     return hasSuggestionsResult;
   }, items2);
   const obj3 = {
@@ -151,7 +151,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const tmp5 = smartSearchStatus;
             const tmp6 = require;
             if (smartSearchStatus !== SmartSearchTypes.SmartSearchStatus.NOT_QUALIFIED) {
-              const tmp6Result = tmp6(11997);
+              const tmp6Result = tmp6(11983);
               if (!tmp6Result.isSmartSearchEmptyOrErrored(tmp5)) {
                 const element = { type: SearchListItemTypes.SMART_SEARCH, props: obj };
                 tmp2 = element;

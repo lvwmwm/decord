@@ -1,10 +1,10 @@
-// Module ID: 12906
-// Function ID: 12907
+// Module ID: 12925
+// Function ID: 12926
 // Name: conjureProjectMute
 // Dependencies: [1231, 558, 576, 504, 2033, 1197, 2]
 // Exports: isConjureProjectMuted, setConjureProjectMuted
 
-// Module 12906 (conjureProjectMute)
+// Module 12925 (conjureProjectMute)
 import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

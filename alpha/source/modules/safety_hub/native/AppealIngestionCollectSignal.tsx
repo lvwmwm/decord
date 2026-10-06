@@ -1,22 +1,22 @@
-// Module ID: 11513
-// Function ID: 11514
+// Module ID: 11526
+// Function ID: 11527
 // Name: AppealIngestionCollectSignal
-// Dependencies: [19, 17, 8093, 21, 4890, 587, 558, 576, 4594, 8092, 8895, 11492, 584, 4854, 11514, 1987, 1126, 11498, 4886, 2]
+// Dependencies: [19, 17, 8126, 21, 4896, 587, 558, 576, 4600, 8125, 8924, 11505, 584, 4860, 11527, 1987, 1126, 11511, 4892, 2]
 // Exports: default
 
-// Module 11513 (AppealIngestionCollectSignal)
+// Module 11526 (AppealIngestionCollectSignal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import react_native2 from "react-native" /* 4594 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8092 */;
-import Form2 from "Form" /* 8895 */;
+import react_native2 from "react-native" /* 4600 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8125 */;
+import Form2 from "Form" /* 8924 */;
 import react from "react" /* 19 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8093 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8126 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const ActionSheetActionCreatorsDefault = tmp(4854);
+const ActionSheetActionCreatorsDefault = tmp(4860);
 const View = react_native.View;
 ({ AppealIngestionSignal: closure_4, AppealIngestionSignalOrder: hasOwnProperty } = SafetyHubConstants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -195,23 +195,23 @@ export default function AppealIngestionCollectSignal(isDsaEligible) {
           }
       };
       const tmpResult = ActionSheetActionCreatorsDefault;
-      tmpResult.openLazy(asyncRequire(11514, tmp2.paths), "AppealIngestionFreeTextAppealReasonActionSheet", obj3);
+      tmpResult.openLazy(asyncRequire(11527, tmp2.paths), "AppealIngestionFreeTextAppealReasonActionSheet", obj3);
     }
   }
   let tmp = closure_8();
   const formRow = tmp;
-  let obj = isDsaEligible(11492);
+  let obj = isDsaEligible(11505);
   dependencyMap = obj.useSafetyHubAppealSignal();
   const intl = isDsaEligible(1126).intl;
   const stringResult = intl.string(isDsaEligible(1126).t["C5q+pW"]);
   const intl2 = isDsaEligible(1126).intl;
   let obj2 = { children: items };
   const stringResult1 = intl2.string(isDsaEligible(1126).t.VEcRhw);
-  const AppealIngestionModalScreen = isDsaEligible(11498).AppealIngestionModalScreen;
-  items = [closure_6(isDsaEligible(11498).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
+  const AppealIngestionModalScreen = isDsaEligible(11511).AppealIngestionModalScreen;
+  items = [closure_6(isDsaEligible(11511).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
   let obj3 = { style: tmp.container, children: closure_7(Form, obj4) };
   obj4 = { style: tmp.form, children: items1 };
-  Form = isDsaEligible(8895).Form;
+  Form = isDsaEligible(8924).Form;
   const obj5 = {
     sectionBodyStyle: tmp.formSection,
     accessibilityRole: "radiogroup",
@@ -220,11 +220,11 @@ export default function AppealIngestionCollectSignal(isDsaEligible) {
       return metroRequire(closure_9, obj, "formrow-" + index);
     })
   };
-  const FormSection = isDsaEligible(8895).FormSection;
+  const FormSection = isDsaEligible(8924).FormSection;
   items1 = [closure_6(FormSection, obj5), ];
   const obj6 = { style: tmp.disclaimer, children: closure_6(Text, obj7) };
   obj7 = { variant: "text-sm/normal", children: intl3.format(isDsaEligible(1126).t["8k9GCW"], {}) };
-  Text = isDsaEligible(4886).Text;
+  Text = isDsaEligible(4892).Text;
   intl3 = isDsaEligible(1126).intl;
   items1[1] = closure_6(handleAppealSignalSelect, obj6);
   items[1] = closure_6(handleAppealSignalSelect, obj3);

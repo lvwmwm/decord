@@ -1,21 +1,21 @@
-// Module ID: 7920
-// Function ID: 7921
+// Module ID: 7931
+// Function ID: 7932
 // Name: VideoBackground
-// Dependencies: [109, 32, 19, 17, 1085, 21, 4890, 12, 7921, 7922, 4727, 587, 1886, 558, 576, 7923, 1188, 5605, 2]
+// Dependencies: [109, 32, 19, 17, 1085, 21, 4896, 12, 7932, 7933, 4733, 587, 1886, 558, 576, 7934, 1188, 5612, 2]
 
-// Module 7920 (VideoBackground)
+// Module 7931 (VideoBackground)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1188 */;
 import react_nativeDefault from "react-native" /* 1886 */;
-import VideoBackgroundManagerDefault from "VideoBackgroundManager" /* 7922 */;
-import useProfileTileGradientDefault from "useProfileTileGradient" /* 7923 */;
+import VideoBackgroundManagerDefault from "VideoBackgroundManager" /* 7933 */;
+import useProfileTileGradientDefault from "useProfileTileGradient" /* 7934 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import module_12 from "module_12" /* 12 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let metroImportAll;
 let metroImportDefault;
 let tmp5;
 let unpackModuleId;
-const LinearGradientDefault = tmp5(5605);
+const LinearGradientDefault = tmp5(5612);
 function useDominantRGBFromImage(assetImage, cResult) {
   let closure_2;
   let first1;
@@ -40,13 +40,13 @@ function useDominantRGBFromImage(assetImage, cResult) {
     tmp = first;
   }
   let tmp3 = first;
-  const tmp5 = first(7921)();
+  const tmp5 = first(7932)();
   dependencyMap = tmp5;
   let obj = react;
   let hexToRgbResult;
   const useState = react.useState;
   if (null != assetImage) {
-    hexToRgbResult = tmp3(7922).cachedDominantColors[assetImage];
+    hexToRgbResult = tmp3(7933).cachedDominantColors[assetImage];
   }
   if (hexToRgbResult == null) {
     const obj2 = require("ColorUtils");
@@ -270,7 +270,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                             }
                             const obj2 = { colors: tmp24, start: tmp46, end: tmp47, style: tmp31, children: items };
                             items = [tmp35, tmp26];
-                            const tmp50 = unpackModuleId(tmp23(5605), obj2);
+                            const tmp50 = unpackModuleId(tmp23(5612), obj2);
                             cResult[38] = tmp35;
                             cResult[39] = tmp31;
                             cResult[40] = tmp24;

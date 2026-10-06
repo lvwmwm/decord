@@ -1,13 +1,13 @@
-// Module ID: 12255
-// Function ID: 12256
+// Module ID: 12270
+// Function ID: 12271
 // Name: useIsApplicationDeveloper
-// Dependencies: [19, 12256, 12257, 558, 576, 2028, 504, 12258, 2]
+// Dependencies: [19, 12271, 12272, 558, 576, 2028, 504, 12273, 2]
 
-// Module 12255 (useIsApplicationDeveloper)
-import DeveloperApplicationsConstants from "DeveloperApplicationsConstants" /* 12257 */;
-import DeveloperApplicationsActionCreators from "DeveloperApplicationsActionCreators" /* 12258 */;
+// Module 12270 (useIsApplicationDeveloper)
+import DeveloperApplicationsConstants from "DeveloperApplicationsConstants" /* 12272 */;
+import DeveloperApplicationsActionCreators from "DeveloperApplicationsActionCreators" /* 12273 */;
 import react from "react" /* 19 */;
-import DeveloperApplicationsStore from "DeveloperApplicationsStore" /* 12256 */;
+import DeveloperApplicationsStore from "DeveloperApplicationsStore" /* 12271 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

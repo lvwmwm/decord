@@ -1,13 +1,13 @@
-// Module ID: 9047
-// Function ID: 9048
+// Module ID: 9083
+// Function ID: 9084
 // Name: handleJoinEmbeddedActivity
-// Dependencies: [5, 5118, 2051, 2103, 1377, 2050, 2011, 9048, 8990, 4498, 9049, 9004, 9003, 9014, 9015, 9000, 12696, 8993, 2]
+// Dependencies: [5, 5124, 2051, 2103, 1377, 2050, 2011, 9084, 9023, 4504, 9085, 9037, 9036, 9047, 9048, 9033, 12711, 9026, 2]
 // Exports: default
 
-// Module 9047 (handleJoinEmbeddedActivity)
+// Module 9083 (handleJoinEmbeddedActivity)
 import Constants from "Constants" /* 2011 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
+import ApplicationStore from "ApplicationStore" /* 5124 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
 import UserStore from "UserStore" /* 1377 */;
@@ -81,7 +81,7 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
               let closure_18;
               analyticsLocations = 1;
               componentId = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === analyticsLocations) {
             if (arg0 === 1) {

@@ -1,14 +1,14 @@
-// Module ID: 5858
-// Function ID: 5859
+// Module ID: 5865
+// Function ID: 5866
 // Name: FolderIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 5815, 4579, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 5822, 4585, 2]
 
-// Module 5858 (FolderIcon)
+// Module 5865 (FolderIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4579 */;
-import AssetRegistry from "AssetRegistry" /* 5815 */;
+import BaseIconImage2 from "BaseIconImage" /* 4585 */;
+import AssetRegistry from "AssetRegistry" /* 5822 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4579).BaseIconImage;
+  const BaseIconImage = tmp(4585).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

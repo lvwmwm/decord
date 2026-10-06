@@ -1,10 +1,10 @@
-// Module ID: 9074
-// Function ID: 9075
+// Module ID: 9110
+// Function ID: 9111
 // Name: cheapWorkletShallowEqual
 // Dependencies: [2]
 // Exports: cheapWorkletArrayShallowEqual, cheapWorkletShallowEqual
 
-// Module 9074 (cheapWorkletShallowEqual)
+// Module 9110 (cheapWorkletShallowEqual)
 import size from "module_2" /* 2 */;
 
 function cheapWorkletShallowEqual(safeAreaState, safeAreaState2) {

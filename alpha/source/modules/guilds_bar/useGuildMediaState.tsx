@@ -1,25 +1,25 @@
-// Module ID: 16271
-// Function ID: 16272
+// Module ID: 16311
+// Function ID: 16312
 // Name: useGuildMediaState
-// Dependencies: [2050, 2056, 2055, 4912, 502, 2051, 2074, 4509, 4519, 2103, 5071, 4909, 1085, 1106, 558, 576, 504, 13521, 9160, 4498, 13522, 9000, 11, 5573, 2]
+// Dependencies: [2050, 2056, 2055, 4918, 502, 2051, 2074, 4515, 4525, 2103, 5077, 4915, 1085, 1106, 558, 576, 504, 13537, 9195, 4504, 13538, 9033, 11, 5580, 2]
 
-// Module 16271 (useGuildMediaState)
+// Module 16311 (useGuildMediaState)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1085 */;
 import ChannelTypes from "ChannelTypes" /* 1106 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
-import BlockedUserUtils from "BlockedUserUtils" /* 13522 */;
+import BlockedUserUtils from "BlockedUserUtils" /* 13538 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
 import StageInstanceStore from "StageInstanceStore" /* 2056 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4918 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import PermissionStore from "PermissionStore" /* 4515 */;
+import RelationshipStore from "RelationshipStore" /* 4525 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5077 */;
+import VoiceStateStore from "VoiceStateStore" /* 4915 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -243,7 +243,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
       }
-      obj1 = { guildHasVoice: flag, guildHasVideo: (() => { /* body not rendered: F145755 */ })(), selectedVoiceChannelHasVideo: null };
+      obj1 = { guildHasVoice: flag, guildHasVideo: (() => { /* body not rendered: F145965 */ })(), selectedVoiceChannelHasVideo: null };
       hasVideoResult = null != voiceChannelId;
       if (hasVideoResult) {
         tmp21 = closure_1_14;

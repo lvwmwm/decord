@@ -1,12 +1,12 @@
-// Module ID: 17063
-// Function ID: 17064
+// Module ID: 17089
+// Function ID: 17090
 // Name: useListHasSingleMessageRequest
-// Dependencies: [19, 6720, 6721, 558, 576, 17064, 504, 5973, 17065, 2]
+// Dependencies: [19, 6734, 6735, 558, 576, 17090, 504, 5980, 17091, 2]
 
-// Module 17063 (useListHasSingleMessageRequest)
+// Module 17089 (useListHasSingleMessageRequest)
 import react_mod from "react" /* 19 */;
-import MessageRequestStore from "MessageRequestStore" /* 6720 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6721 */;
+import MessageRequestStore from "MessageRequestStore" /* 6734 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6735 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

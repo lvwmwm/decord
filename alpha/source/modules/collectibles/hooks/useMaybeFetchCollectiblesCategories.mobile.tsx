@@ -1,12 +1,12 @@
-// Module ID: 10467
-// Function ID: 10468
-// Dependencies: [4889, 558, 576, 504, 10468, 2]
+// Module ID: 10480
+// Function ID: 10481
+// Dependencies: [4895, 558, 576, 504, 10481, 2]
 
-// Module 10467
+// Module 10480
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import useMaybeFetchCollectiblesCategoriesShared2 from "useMaybeFetchCollectiblesCategoriesShared" /* 10468 */;
-import DevSettingsStore from "DevSettingsStore" /* 4889 */;
+import useMaybeFetchCollectiblesCategoriesShared2 from "useMaybeFetchCollectiblesCategoriesShared" /* 10481 */;
+import DevSettingsStore from "DevSettingsStore" /* 4895 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

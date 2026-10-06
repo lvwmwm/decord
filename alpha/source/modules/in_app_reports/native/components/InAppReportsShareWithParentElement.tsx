@@ -1,12 +1,12 @@
-// Module ID: 12714
-// Function ID: 12715
+// Module ID: 12729
+// Function ID: 12730
 // Name: InAppReportsShareWithParentElement
-// Dependencies: [32, 19, 21, 558, 576, 7050, 4567, 1126, 8080, 12715, 12713, 2]
+// Dependencies: [32, 19, 21, 558, 576, 7063, 4573, 1126, 8113, 12730, 12728, 2]
 
-// Module 12714 (InAppReportsShareWithParentElement)
+// Module 12729 (InAppReportsShareWithParentElement)
 import Fragment from "Fragment" /* 21 */;
-import FamilyCenterActionCreators from "FamilyCenterActionCreators" /* 7050 */;
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 12713 */;
+import FamilyCenterActionCreators from "FamilyCenterActionCreators" /* 7063 */;
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 12728 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -87,7 +87,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((parents) => {
                       }
                       const _Symbol = Symbol;
                       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-                        const tmp58 = jsx(tmp(12715).ShareIcon, {});
+                        const tmp58 = jsx(tmp(12730).ShareIcon, {});
                         const intl3 = tmp(1126).intl;
                         const stringResult = intl3.string(tmp(1126).t["5l/hlt"]);
                         cResult[15] = tmp58;
@@ -255,7 +255,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((parents) => {
     if (tmp5 != null) {
       username1 = tmp5.username;
     }
-    let obj = { title: formatToPlainString2(HqyWeO, obj2), disabledTitle: formatToPlainString(BlAMme, obj3), icon: tmp8(parents(12715).ShareIcon, {}), description: intl2.string(parents(1126).t["5l/hlt"]), disabled: first, onPress: tmp3 };
+    let obj = { title: formatToPlainString2(HqyWeO, obj2), disabledTitle: formatToPlainString(BlAMme, obj3), icon: tmp8(parents(12730).ShareIcon, {}), description: intl2.string(parents(1126).t["5l/hlt"]), disabled: first, onPress: tmp3 };
     formatToPlainString2(HqyWeO, obj2);
     const tmp10 = InAppReportsUpsellsTableRowDefault;
     let intl = tmp16(1126).intl;

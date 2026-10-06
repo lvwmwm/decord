@@ -1,22 +1,22 @@
-// Module ID: 17108
-// Function ID: 17109
+// Module ID: 17137
+// Function ID: 17138
 // Name: GiftingPromotionCoachmark
-// Dependencies: [19, 17, 4879, 10396, 1085, 2048, 21, 4890, 587, 558, 576, 504, 10485, 10469, 10486, 7946, 4854, 6657, 6681, 10392, 1369, 8464, 5974, 10487, 4886, 10766, 1126, 5594, 6645, 2]
+// Dependencies: [19, 17, 4885, 10409, 1085, 2048, 21, 4896, 587, 558, 576, 504, 10498, 10482, 10499, 7957, 4860, 6664, 6688, 10405, 1369, 8497, 5981, 10500, 4892, 10779, 1126, 5601, 6652, 2]
 
-// Module 17108 (GiftingPromotionCoachmark)
+// Module 17137 (GiftingPromotionCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6657 */;
-import usePreviousDefault from "usePrevious" /* 7946 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10392 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6664 */;
+import usePreviousDefault from "usePrevious" /* 7957 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10405 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import PromotionsStore from "PromotionsStore" /* 10396 */;
+import AccessibilityStore from "AccessibilityStore" /* 4885 */;
+import PromotionsStore from "PromotionsStore" /* 10409 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj4;
 let size;
 let tmp21;
 let unpackModuleId;
-const AnalyticsLocationDefault = tmp21(6681);
+const AnalyticsLocationDefault = tmp21(6688);
 let react = react_mod;
 const View = react_native.View;
 ({ AnalyticsSections: metroImportDefault, AnalyticsObjects: metroImportAll, AnalyticsPages: c9 } = Constants);
@@ -80,8 +80,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   let asset;
-  const useThemeAndReducedMotionAwareAssetUrl = tmp(10485).useThemeAndReducedMotionAwareAssetUrl;
-  tmp(10485);
+  const useThemeAndReducedMotionAwareAssetUrl = tmp(10498).useThemeAndReducedMotionAwareAssetUrl;
+  tmp(10498);
   if (coachmarkComponent != null) {
     asset = coachmarkComponent.asset;
   }
@@ -93,7 +93,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     tmp12 = cResult[2];
   }
-  const GiftPromotionReminderExperiment = tmp(10469).GiftPromotionReminderExperiment;
+  const GiftPromotionReminderExperiment = tmp(10482).GiftPromotionReminderExperiment;
   const enabled = GiftPromotionReminderExperiment.useConfig(tmp12).enabled;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [PromotionsStore];
@@ -113,8 +113,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult5 = tmp(504);
   const stateFromStores1 = tmpResult5.useStateFromStores(tmp13, tmp14);
   let endDate;
-  const useTickingFormattedLimitedOfferTimeLeft = tmp(10486).useTickingFormattedLimitedOfferTimeLeft;
-  tmp(10486);
+  const useTickingFormattedLimitedOfferTimeLeft = tmp(10499).useTickingFormattedLimitedOfferTimeLeft;
+  tmp(10499);
   if (stateFromStores1 != null) {
     endDate = stateFromStores1.endDate;
   }
@@ -271,20 +271,20 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items = [analyticsLocations];
   const stateFromStores = obj.useStateFromStores(items, () => analyticsLocations.useReducedMotion);
   let asset;
-  const useThemeAndReducedMotionAwareAssetUrl = markAsDismissed(10485).useThemeAndReducedMotionAwareAssetUrl;
-  markAsDismissed(10485);
+  const useThemeAndReducedMotionAwareAssetUrl = markAsDismissed(10498).useThemeAndReducedMotionAwareAssetUrl;
+  markAsDismissed(10498);
   if (coachmarkComponent != null) {
     asset = coachmarkComponent.asset;
   }
   const themeAndReducedMotionAwareAssetUrl = useThemeAndReducedMotionAwareAssetUrl(asset);
-  const GiftPromotionReminderExperiment = tmp2(10469).GiftPromotionReminderExperiment;
+  const GiftPromotionReminderExperiment = tmp2(10482).GiftPromotionReminderExperiment;
   let enabled = GiftPromotionReminderExperiment.useConfig({ location: "GiftingPromotionCoachmarkActionSheet" }).enabled;
   const items1 = [PromotionsStore];
   const tmp2Result = tmp2(504);
   const stateFromStores1 = tmp2Result.useStateFromStores(items1, () => giftPromotion.getGiftPromotion());
   let endDate;
-  const useTickingFormattedLimitedOfferTimeLeft = tmp2(10486).useTickingFormattedLimitedOfferTimeLeft;
-  tmp2(10486);
+  const useTickingFormattedLimitedOfferTimeLeft = tmp2(10499).useTickingFormattedLimitedOfferTimeLeft;
+  tmp2(10499);
   if (stateFromStores1 != null) {
     endDate = stateFromStores1.endDate;
   }
@@ -326,13 +326,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     };
     obj3 = { style: tmp.container, children: items5 };
     let tmp24 = null != themeAndReducedMotionAwareAssetUrl;
-    BottomSheet = tmp2(6645).BottomSheet;
+    BottomSheet = tmp2(6652).BottomSheet;
     if (tmp24) {
       const tmp2Result4 = tmp2(1369);
       if (tmp2Result4.isAndroid()) {
         let tmp21Result;
         if (!stateFromStores) {
-          let obj4 = { style: items4, children: closure_11(tmp2(8464).APNGPlayer, obj5) };
+          let obj4 = { style: items4, children: closure_11(tmp2(8497).APNGPlayer, obj5) };
           items4 = [, ];
           ({ imageShared: arr5[0], imageWrapperAndroid: arr5[1] } = tmp);
           obj5 = { url: themeAndReducedMotionAwareAssetUrl, style: tmp.imageShared, autoplay: true };
@@ -342,7 +342,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const obj6 = { source: obj7, style: tmp.imageShared };
       obj7 = { uri: themeAndReducedMotionAwareAssetUrl };
-      tmp21Result = tmp21(tmp13(5974), obj6);
+      tmp21Result = tmp21(tmp13(5981), obj6);
     }
     items5 = [tmp24, , , ];
     if (enabled) {
@@ -350,19 +350,19 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (enabled) {
       const obj8 = { text: tickingFormattedLimitedOfferTimeLeft, style: tmp.countdownBadge };
-      enabled = tmp21(tmp13(10487), obj8);
+      enabled = tmp21(tmp13(10500), obj8);
     }
     items5[1] = enabled;
     const obj10 = { style: tmp.text, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: coachmarkComponent.header };
     const obj9 = { style: tmp.textContainer, children: items6 };
-    items6 = [closure_11(tmp2(4886).Heading, obj10), ];
+    items6 = [closure_11(tmp2(4892).Heading, obj10), ];
     const obj11 = { style: tmp.text, variant: "text-md/normal", color: "text-default", children: coachmarkComponent.body };
-    items6[1] = closure_11(tmp2(4886).Text, obj11);
+    items6[1] = closure_11(tmp2(4892).Text, obj11);
     items5[2] = closure_12(closure_4, obj9);
     const obj12 = { grow: true, icon: closure_11(GiftIcon, obj13), text: intl.string(tmp2(1126).t.Ve9Ge6), onPress: tmp19 };
-    const Button = tmp2(5594).Button;
+    const Button = tmp2(5601).Button;
     obj13 = { size: "sm", color: nativeDefault.colors.WHITE };
-    GiftIcon = tmp2(10766).GiftIcon;
+    GiftIcon = tmp2(10779).GiftIcon;
     intl = tmp2(1126).intl;
     items5[3] = closure_11(Button, obj12);
     tmp21Result2 = tmp21(BottomSheet, obj2);

@@ -1,8 +1,8 @@
-// Module ID: 4665
-// Function ID: 4666
+// Module ID: 4671
+// Function ID: 4672
 // Dependencies: [2]
 
-// Module 4665
+// Module 4671
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/rive/native/BountiesScrollIndicator.riv.js");

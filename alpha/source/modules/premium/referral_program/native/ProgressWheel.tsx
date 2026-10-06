@@ -1,20 +1,20 @@
-// Module ID: 13256
-// Function ID: 13257
+// Module ID: 13275
+// Function ID: 13276
 // Name: ProgressWheel
-// Dependencies: [19, 17, 21, 4890, 558, 576, 4580, 587, 13242, 5974, 13257, 8136, 13258, 2]
+// Dependencies: [19, 17, 21, 4896, 558, 576, 4586, 587, 13261, 5981, 13276, 8169, 13277, 2]
 
-// Module 13256 (ProgressWheel)
+// Module 13275 (ProgressWheel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4580 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import inlineStyles from "inlineStyles" /* 8136 */;
-import useReferralProgramBannerDetails from "useReferralProgramBannerDetails" /* 13242 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13257 */;
+import useToken from "useToken" /* 4586 */;
+import FastImageDefault from "FastImage" /* 5981 */;
+import inlineStyles from "inlineStyles" /* 8169 */;
+import useReferralProgramBannerDetails from "useReferralProgramBannerDetails" /* 13261 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13276 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp23 = cResult[10];
         }
         if (altImage == null) {
-          altImage = tmp5(13258);
+          altImage = tmp5(13277);
         }
         if (cResult[11] !== altImage) {
           const obj5 = { uri: altImage };
@@ -169,7 +169,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp13 = React3;
   const tmp4Result4 = FastImageDefault;
   if (altImage == null) {
-    altImage = tmp4(13258);
+    altImage = tmp4(13277);
   }
   const obj6 = { source: { uri: altImage }, style: tmp.progressCircleImage };
   items[2] = tmp13(tmp4Result4, obj6);

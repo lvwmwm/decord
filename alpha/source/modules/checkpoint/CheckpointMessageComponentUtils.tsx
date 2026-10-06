@@ -1,18 +1,18 @@
-// Module ID: 5136
-// Function ID: 5137
+// Module ID: 5143
+// Function ID: 5144
 // Name: checkpoint/CheckpointMessageComponentUtils
-// Dependencies: [5115, 11, 5137, 5138, 5139, 5303, 1126, 5124, 3043, 4523, 1885, 1985, 3011, 2]
+// Dependencies: [5121, 11, 5144, 5145, 5146, 5310, 1126, 5131, 3071, 4529, 1885, 1985, 3039, 2]
 // Exports: getCheckpointDataFromMessage, getCheckpointLabel, transformCheckpoint2026CardComponent, transformCheckpoint2026CardToRowGeneratedComponent
 
-// Module 5136 (checkpoint/CheckpointMessageComponentUtils)
+// Module 5143 (checkpoint/CheckpointMessageComponentUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl8 from "intl" /* 1126 */;
 import Server from "Server" /* 1985 */;
-import _modDef3011 from "module_3011" /* 3011 */;
-import CheckpointExperiment from "CheckpointExperiment" /* 5137 */;
-import CheckpointTrait from "CheckpointTrait" /* 5138 */;
-import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 5139 */;
-import CheckpointConstants from "CheckpointConstants" /* 5115 */;
+import _modDef3039 from "module_3039" /* 3039 */;
+import CheckpointExperiment from "CheckpointExperiment" /* 5144 */;
+import CheckpointTrait from "CheckpointTrait" /* 5145 */;
+import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 5146 */;
+import CheckpointConstants from "CheckpointConstants" /* 5121 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -206,7 +206,7 @@ export const getCheckpointDataFromMessage = function getCheckpointDataFromMessag
 export const getCheckpointLabel = function getCheckpointLabel(checkpointDataFromMessage) {
   if (V2025.V2025 === checkpointDataFromMessage.version) {
     const intl = intl8.intl;
-    return intl.string(_modDef3011.goiR2u);
+    return intl.string(_modDef3039.goiR2u);
   } else {
     const V2026 = tmp.V2026;
     return null;

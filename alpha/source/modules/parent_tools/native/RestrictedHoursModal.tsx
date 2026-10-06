@@ -1,23 +1,23 @@
-// Module ID: 17435
-// Function ID: 17436
+// Module ID: 17464
+// Function ID: 17465
 // Name: RestrictedHoursModal
-// Dependencies: [32, 19, 17, 1377, 21, 4890, 587, 558, 576, 5968, 1618, 17436, 504, 4612, 4891, 1126, 2493, 17437, 4690, 4886, 8095, 6496, 17438, 6082, 17434, 5780, 10976, 2]
+// Dependencies: [32, 19, 17, 1377, 21, 4896, 587, 558, 576, 5975, 1618, 17465, 504, 4618, 4897, 1126, 2521, 17466, 4696, 4892, 8128, 6503, 17467, 6089, 17463, 5787, 10989, 2]
 
-// Module 17435 (RestrictedHoursModal)
+// Module 17464 (RestrictedHoursModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import timing from "timing" /* 4891 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6082 */;
-import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 17434 */;
-import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 17438 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4618 */;
+import Text_Text from "Text/Text" /* 4892 */;
+import timing from "timing" /* 4897 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6089 */;
+import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 17463 */;
+import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 17467 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,8 +37,8 @@ let obj7;
 let obj8;
 let tmp;
 let tmp4;
-const useBackPressHandlerDefault = tmp4(5780);
-const ActivityIndicator_ActivityIndicator = tmp(5968);
+const useBackPressHandlerDefault = tmp4(5787);
+const ActivityIndicator_ActivityIndicator = tmp(5975);
 ({ StyleSheet, View: hasOwnProperty } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let c9 = "rgb(0, 3, 40)";
@@ -822,7 +822,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
       tmp4 = cResult[2];
       tmp5 = cResult[3];
     }
-    const tmpResult = tmp(6496);
+    const tmpResult = tmp(6503);
     return tmpResult.useNavigatorScreens(tmp4, tmp5);
   }
   const fn = function o() {
@@ -966,7 +966,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const obj3 = { screens: tmp12, initialRouteName: constants.MAIN };
-    const tmp20 = closure_7(tmp(10976).Modal, obj3);
+    const tmp20 = closure_7(tmp(10989).Modal, obj3);
     cResult[7] = tmp12;
     cResult[8] = tmp20;
     tmp18 = tmp20;

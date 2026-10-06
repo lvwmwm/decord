@@ -1,10 +1,10 @@
-// Module ID: 6443
-// Function ID: 6444
+// Module ID: 6450
+// Function ID: 6451
 // Name: useWithPostLoginRouting
-// Dependencies: [5, 32, 19, 502, 1085, 558, 576, 504, 1126, 6444, 6082, 2]
+// Dependencies: [5, 32, 19, 502, 1085, 558, 576, 504, 1126, 6451, 6089, 2]
 
-// Module 6443 (useWithPostLoginRouting)
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6082 */;
+// Module 6450 (useWithPostLoginRouting)
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6089 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -182,7 +182,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, handleLogin) =
                 return obj;
               } else {
                 const routes = closure_0.getState().routes;
-                closure_0 = routes.findIndex(() => { /* body not rendered: F154407 */ });
+                closure_0 = routes.findIndex(() => { /* body not rendered: F154651 */ });
                 if (closure_0 >= 0) {
                   closure_0.pop(closure_0);
                 } else {

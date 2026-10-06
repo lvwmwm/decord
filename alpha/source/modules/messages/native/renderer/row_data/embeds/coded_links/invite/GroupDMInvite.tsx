@@ -1,16 +1,16 @@
-// Module ID: 13050
-// Function ID: 13051
+// Module ID: 13069
+// Function ID: 13070
 // Name: GroupDMInvite
-// Dependencies: [2051, 4519, 1377, 7226, 7604, 10025, 1126, 12853, 1405, 5043, 2]
+// Dependencies: [2051, 4525, 1377, 7239, 7615, 10038, 1126, 12872, 1405, 5049, 2]
 // Exports: createGroupDMInvite
 
-// Module 13050 (GroupDMInvite)
+// Module 13069 (GroupDMInvite)
 import intl7 from "intl" /* 1126 */;
-import Constants from "Constants" /* 7226 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7604 */;
-import getChannelAndRecipientsFromInviteDefault from "getChannelAndRecipientsFromInvite" /* 10025 */;
+import Constants from "Constants" /* 7239 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7615 */;
+import getChannelAndRecipientsFromInviteDefault from "getChannelAndRecipientsFromInvite" /* 10038 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import RelationshipStore from "RelationshipStore" /* 4525 */;
 import UserStore from "UserStore" /* 1377 */;
 import size from "module_2" /* 2 */;
 
@@ -72,7 +72,7 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, th
   }
   let channelIconSource = null;
   if (null != channel) {
-    const tmp8Result = tmp8(12853);
+    const tmp8Result = tmp8(12872);
     channelIconSource = tmp8Result.getChannelIconSource(channel);
   }
   let uri = null;
@@ -84,7 +84,7 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, th
   if (flag) {
     channelName = null;
     if (null != channel) {
-      const tmp8Result5 = tmp8(5043);
+      const tmp8Result5 = tmp8(5049);
       channelName = tmp8Result5.computeChannelName(channel, UserStore, RelationshipStore);
     }
   }
@@ -127,7 +127,7 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, th
   if (flag) {
     channelName1 = channelName;
     if (null != channel) {
-      const tmp8Result6 = tmp8(5043);
+      const tmp8Result6 = tmp8(5049);
       channelName1 = tmp8Result6.computeChannelName(channel, UserStore, RelationshipStore);
     }
   }

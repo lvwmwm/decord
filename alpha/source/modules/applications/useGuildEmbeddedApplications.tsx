@@ -1,16 +1,16 @@
-// Module ID: 9221
-// Function ID: 9222
+// Module ID: 9256
+// Function ID: 9257
 // Name: useGuildEmbeddedApplications
-// Dependencies: [5, 19, 5118, 1085, 504, 1102, 1375, 6658, 558, 576, 2]
+// Dependencies: [5, 19, 5124, 1085, 504, 1102, 1375, 6665, 558, 576, 2]
 
-// Module 9221 (useGuildEmbeddedApplications)
+// Module 9256 (useGuildEmbeddedApplications)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6658 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6665 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
+import ApplicationStore from "ApplicationStore" /* 5124 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

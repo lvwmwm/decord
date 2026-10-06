@@ -1,24 +1,24 @@
-// Module ID: 6489
-// Function ID: 6490
+// Module ID: 6496
+// Function ID: 6497
 // Name: UserSettingsConfirmPassword
-// Dependencies: [5, 32, 19, 17, 1377, 1085, 21, 4890, 587, 558, 576, 6490, 504, 6491, 5312, 1242, 1126, 6494, 4886, 6097, 6428, 5594, 2]
+// Dependencies: [5, 32, 19, 17, 1377, 1085, 21, 4896, 587, 558, 576, 6497, 504, 6498, 5319, 1242, 1126, 6501, 4892, 6104, 6435, 5601, 2]
 
-// Module 6489 (UserSettingsConfirmPassword)
+// Module 6496 (UserSettingsConfirmPassword)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6097 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6490 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6491 */;
-import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 6494 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6104 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6497 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6498 */;
+import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 6501 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,8 +34,8 @@ let obj4;
 let tmp3;
 let unpackModuleId;
 const intl5 = tmp3(1126);
-const Text_Text = tmp3(4886);
-const components_Button_Button = tmp3(5594);
+const Text_Text = tmp3(4892);
+const components_Button_Button = tmp3(5601);
 let react = react_mod;
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 const UserSettingsSections = Constants.UserSettingsSections;
@@ -276,7 +276,7 @@ const forwardRefResult = react.forwardRef((arg0, ref) => {
       tmp20Result = null;
       if (null == obj2.getFieldMessage("password")) {
         const obj9 = { style: tmp.hint, children: obj2.message };
-        tmp20Result = tmp20(tmp21(6428), obj9);
+        tmp20Result = tmp20(tmp21(6435), obj9);
       }
     }
     items3[3] = tmp20Result;

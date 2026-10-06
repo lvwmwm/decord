@@ -1,9 +1,9 @@
-// Module ID: 16273
-// Function ID: 16274
+// Module ID: 16313
+// Function ID: 16314
 // Name: GuildMediaStateStoreExperiment
 // Dependencies: [1441, 558, 576, 2]
 
-// Module 16273 (GuildMediaStateStoreExperiment)
+// Module 16313 (GuildMediaStateStoreExperiment)
 import react from "react" /* 576 */;
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1441 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

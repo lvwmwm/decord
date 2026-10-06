@@ -1,24 +1,24 @@
-// Module ID: 15174
-// Function ID: 15175
+// Module ID: 15189
+// Function ID: 15190
 // Name: DisplayNameStylesColorPickerSheet
-// Dependencies: [32, 19, 17, 1395, 1085, 21, 1103, 15171, 4890, 587, 558, 576, 7841, 10637, 1394, 4855, 4854, 14421, 1252, 1126, 2883, 15163, 5594, 4577, 12, 15172, 6645, 2]
+// Dependencies: [32, 19, 17, 1395, 1085, 21, 1103, 15186, 4896, 587, 558, 576, 7852, 10650, 1394, 4861, 4860, 14437, 1252, 1126, 2911, 15178, 5601, 4583, 12, 15187, 6652, 2]
 
-// Module 15174 (DisplayNameStylesColorPickerSheet)
+// Module 15189 (DisplayNameStylesColorPickerSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1394 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1395 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import HapticUtils from "HapticUtils" /* 4855 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14421 */;
-import ColorPickerConsts from "ColorPickerConsts" /* 15171 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4860 */;
+import HapticUtils from "HapticUtils" /* 4861 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14437 */;
+import ColorPickerConsts from "ColorPickerConsts" /* 15186 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 4896 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -325,7 +325,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColor) => {
           if (tmp) {
             const obj4 = { style: presetColor.checkmarkOverlay, pointerEvents: "none", children: React4(CheckmarkLargeIcon, obj5) };
             obj5 = { size: "custom", style: presetColor.checkmark, color: str };
-            CheckmarkLargeIcon = tmp5(4577).CheckmarkLargeIcon;
+            CheckmarkLargeIcon = tmp5(4583).CheckmarkLargeIcon;
             const tmp5Result2 = utils_ColorUtils;
             const darkness = tmp5Result2.getDarkness(item);
             str = "black";

@@ -1,12 +1,12 @@
-// Module ID: 14472
-// Function ID: 14473
+// Module ID: 14488
+// Function ID: 14489
 // Name: UserProfileLegacyUsernameSwitch
-// Dependencies: [19, 21, 558, 576, 2028, 1126, 6477, 7835, 14445, 2]
+// Dependencies: [19, 21, 558, 576, 2028, 1126, 6484, 7846, 14461, 2]
 
-// Module 14472 (UserProfileLegacyUsernameSwitch)
+// Module 14488 (UserProfileLegacyUsernameSwitch)
 import Fragment from "Fragment" /* 21 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6477 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 7835 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6484 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 7846 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -77,7 +77,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp14;
       }
     }
-    const tmp16 = jsx(setting(14445).UserProfileEditFormSwitch, { value: !tmp5, label: first, subLabel: tmp9, accessibilityLabel: tmp11, onValueChange: tmp13 });
+    const tmp16 = jsx(setting(14461).UserProfileEditFormSwitch, { value: !tmp5, label: first, subLabel: tmp9, accessibilityLabel: tmp11, onValueChange: tmp13 });
     cResult[7] = !tmp5;
     cResult[8] = tmp9;
     cResult[9] = tmp13;
@@ -124,7 +124,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   };
-  const UserProfileEditFormSwitch = tmp(14445).UserProfileEditFormSwitch;
+  const UserProfileEditFormSwitch = tmp(14461).UserProfileEditFormSwitch;
   intl = tmp(1126).intl;
   const intl2 = tmp(1126).intl;
   const tmp5 = jsx;
